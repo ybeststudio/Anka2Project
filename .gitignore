@@ -33,3 +33,14 @@
 *.out
 *.app
 /Client
+
+# Visual Studio cache files
+.vs/
+*.ipch
+*.db
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.db-shm
+*.db-wal
