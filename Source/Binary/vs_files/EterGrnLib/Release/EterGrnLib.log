@@ -13,7 +13,7 @@
   Thing.cpp
   ThingInstance.cpp
   Util.cpp
-C:\M2Project_1.2\Source\Binary\source\EterGrnLib\LODController.cpp(433,129): warning C5055: '+' işleci: numaralandırmalar ile kayan nokta türleri arasında kullanım dışı
+C:\Anka2Project\Anka2Project\Source\Binary\source\EterGrnLib\LODController.cpp(433,129): warning C5055: '+' işleci: numaralandırmalar ile kayan nokta türleri arasında kullanım dışı
   ('/source/EterGrnLib/LODController.cpp' kaynak dosyası derleniyor)
   
-  EterGrnLib.vcxproj -> C:\M2Project_1.2\Source\Binary\vs_files\EterGrnLib\Release\EterGrnLib.lib
+  EterGrnLib.vcxproj -> C:\Anka2Project\Anka2Project\Source\Binary\vs_files\EterGrnLib\Release\EterGrnLib.lib

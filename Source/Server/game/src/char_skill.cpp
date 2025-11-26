@@ -755,14 +755,7 @@ void CHARACTER::SkillLevelUp(DWORD dwVnum, BYTE bMethod)
 		switch (GetSkillMasterType(pkSk->dwVnum))
 		{
 			case SKILL_NORMAL:
-#ifdef ENABLE_SKILL_MASTER_LEVEL
 				if (GetSkillLevel(pkSk->dwVnum) >= 17)
-				{
-					SetSkillLevel(pkSk->dwVnum, 20);
-				}
-				break;
-#else
-				if (GetSkillLevel(pkSk->dwVnum) >= 20)
 				{
 					if (GetQuestFlag("reset_scroll.force_to_master_skill") > 0)
 					{
@@ -771,12 +764,10 @@ void CHARACTER::SkillLevelUp(DWORD dwVnum, BYTE bMethod)
 					}
 					else
 					{
-						if (number(1, 21 - MIN(20, GetSkillLevel(pkSk->dwVnum))) == 1)
-							SetSkillLevel(pkSk->dwVnum, 20);
+						SetSkillLevel(pkSk->dwVnum, 20);
 					}
 				}
 				break;
-#endif
 
 			case SKILL_MASTER:
 				if (GetSkillLevel(pkSk->dwVnum) >= 30)
@@ -1329,15 +1320,6 @@ struct FuncSplashDamage
 				int iDur2 = (int) m_pkSk->kDurationPoly2.Eval();
 				iDur2 += m_pkChr->GetPoint(POINT_PARTY_BUFFER_BONUS);
 
-				int chance = iAmount2;
-
-				if (m_pkChr && m_pkChr->GetLevel() < pkChrVictim->GetLevel())
-				{
-					int delta = pkChrVictim->GetLevel() - m_pkChr->GetLevel();
-					if (delta >= 15)
-						chance = 0;
-				}
-
 				if (number(1, 100) <= iAmount2)
 				{
 					pkChrVictim->RemoveGoodAffect();
@@ -1417,23 +1399,6 @@ struct FuncSplashDamage
 
 				long endX = (long)(pkChrVictim->GetX() + fx);
 				long endY = (long)(pkChrVictim->GetY() + fy);
-
-#ifdef ENABLE_BOSS_WALL_CLIP_FIX
-				long tx = endX;
-				long ty = endY;
-				while (pkChrVictim->GetSectree()->GetAttribute(tx, ty) & (ATTR_BLOCK | ATTR_OBJECT) && fCrushSlidingLength > 0)
-				{
-					if (fCrushSlidingLength >= 10)
-						fCrushSlidingLength -= 10;
-					else
-						fCrushSlidingLength = 0;
-					GetDeltaByDegree(degree, fCrushSlidingLength, &fx, &fy);
-					tx = (long)(pkChrVictim->GetX() + fx);
-					ty = (long)(pkChrVictim->GetY() + fy);
-				}
-				endX = tx;
-				endY = ty;
-#endif
 
 				// Baþlangýç ve bitiþ noktasý arasýndaki tüm konumlarýn hareketli olduðunu varsayýyoruz.
 				bool allPositionsMovable = true;
@@ -1960,25 +1925,6 @@ int CHARACTER::ComputeSkill(DWORD dwVnum, LPCHARACTER pkVictim, BYTE bSkillLevel
 
 	const bool bCanUseHorseSkill = CanUseHorseSkill();
 
-#ifdef ENABLE_MOUNT_FIRE_SPIRIT_ATTACK_FIX
-	if(dwVnum!=SKILL_MUYEONG)
-	{
-#ifdef ENABLE_STANDING_MOUNT
-		if (!IS_STANDING_MOUNT_VNUM(GetMountVnum()))
-		{
-			if (false == bCanUseHorseSkill && true == IsRiding())
-			{
-				return BATTLE_NONE;
-			}
-		}
-#else
-		if (false == bCanUseHorseSkill && true == IsRiding())
-		{
-			return BATTLE_NONE;
-		}
-#endif
-	}
-#else
 #ifdef ENABLE_STANDING_MOUNT
 	if (!IS_STANDING_MOUNT_VNUM(GetMountVnum()))
 	{
@@ -1993,7 +1939,6 @@ int CHARACTER::ComputeSkill(DWORD dwVnum, LPCHARACTER pkVictim, BYTE bSkillLevel
 		return BATTLE_NONE;
 	}
 #endif
-#endif
 
 	if (IsPolymorphed())
 		return BATTLE_NONE;
@@ -2006,34 +1951,6 @@ int CHARACTER::ComputeSkill(DWORD dwVnum, LPCHARACTER pkVictim, BYTE bSkillLevel
 	if (!pkSk)
 		return BATTLE_NONE;
 
-#ifdef ENABLE_MOUNT_FIRE_SPIRIT_ATTACK_FIX
-	if(dwVnum!=SKILL_MUYEONG)
-	{
-#ifdef ENABLE_STANDING_MOUNT
-		if (IS_STANDING_MOUNT_VNUM(GetMountVnum()))
-		{
-			// Surfboard'dayken horse becerileri kullanýlamaz
-			if (pkSk->dwType == SKILL_TYPE_HORSE)
-				return BATTLE_NONE;
-		}
-		else if (bCanUseHorseSkill && pkSk->dwType != SKILL_TYPE_HORSE)
-		{
-			return BATTLE_NONE;
-		}
-
-		if (!bCanUseHorseSkill && pkSk->dwType == SKILL_TYPE_HORSE)
-			return BATTLE_NONE;
-#else
-		if (bCanUseHorseSkill && pkSk->dwType != SKILL_TYPE_HORSE)
-		{
-			return BATTLE_NONE;
-		}
-
-		if (!bCanUseHorseSkill && pkSk->dwType == SKILL_TYPE_HORSE)
-			return BATTLE_NONE;
-#endif
-	}
-#else
 #ifdef ENABLE_STANDING_MOUNT
 	if (IS_STANDING_MOUNT_VNUM(GetMountVnum()))
 	{
@@ -2056,7 +1973,6 @@ int CHARACTER::ComputeSkill(DWORD dwVnum, LPCHARACTER pkVictim, BYTE bSkillLevel
 
 	if (!bCanUseHorseSkill && pkSk->dwType == SKILL_TYPE_HORSE)
 		return BATTLE_NONE;
-#endif
 #endif
 
 	// If it's not written to the other person, it should be written to me.

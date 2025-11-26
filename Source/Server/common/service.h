@@ -183,7 +183,6 @@
 #define ENABLE_BERSERKER_MODE_FIX               	// Berserker / sersemlik ile ilgili bilinen oyun içi hatalarý giderir
 #define ENABLE_DEMON_TOWER_SMALL_FIX            	// Þeytan Kulesi gibi küçük edge-case hatalarýný düzeltir
 #define ENABLE_STONE_ITEM_BUG_FIX               	// Taþ/soket itemleriyle ilgili kullaným/istif/bellek hatalarýný giderir
-#define ENABLE_TEXTURE_SCALE_FIX                	// Texture %100 / scaling kaynaklý hatalarý düzeltir
 #define ENABLE_WAR_CRASHER_PROTECTION_FIX       	// Savaþ (war) sýrasýnda crash/exploit korumalarý ekler
 #define HORSE_FIX									// At/binek sistemindeki spawn, hareket, saldýrý ve pozisyon hatalarýný giderir; exploit risklerini azaltýr
 /*** DÜZELTMELER ***/

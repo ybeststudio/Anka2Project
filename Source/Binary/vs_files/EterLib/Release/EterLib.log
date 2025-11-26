@@ -72,7 +72,7 @@
   Util.cpp
   lineintersect_utils.cpp
   parser.cpp
-C:\M2Project_1.2\Source\Binary\source\EterLib\GrpTextInstance.cpp(1566,28): warning C4267: 'return': 'size_t' - 'WORD' dönüşümü; veri kaybı olabilir
+C:\Anka2Project\Anka2Project\Source\Binary\source\EterLib\GrpTextInstance.cpp(1566,28): warning C4267: 'return': 'size_t' - 'WORD' dönüşümü; veri kaybı olabilir
   ('/source/EterLib/GrpTextInstance.cpp' kaynak dosyası derleniyor)
   
-  EterLib.vcxproj -> C:\M2Project_1.2\Source\Binary\vs_files\EterLib\Release\EterLib.lib
+  EterLib.vcxproj -> C:\Anka2Project\Anka2Project\Source\Binary\vs_files\EterLib\Release\EterLib.lib

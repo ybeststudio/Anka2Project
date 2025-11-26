@@ -2818,19 +2818,19 @@ typedef struct command_script_select_item
 #ifdef ENABLE_DAMAGE_EFFECT_ACCUMULATION_FIX
 typedef struct packet_damage_info
 {
-    BYTE header;
-    DWORD dwVictimVID;
-    DWORD dwAttackerVID;
-    BYTE flag;
-    int damage;
+	BYTE header;
+	DWORD dwVictimVID;
+	DWORD dwAttackerVID;
+	BYTE flag;
+	int damage;
 } TPacketGCDamageInfo;
 #else
 typedef struct packet_damage_info
 {
-    BYTE header;
-    DWORD dwVID;
-    BYTE flag;
-    int damage;
+	BYTE header;
+	DWORD dwVID;
+	BYTE flag;
+	int damage;
 } TPacketGCDamageInfo;
 #endif
 

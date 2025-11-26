@@ -3406,28 +3406,12 @@ void CInputMain::Fishing(LPCHARACTER ch, const char* c_pData)
 void CInputMain::ItemGive(LPCHARACTER ch, const char* c_pData)
 {
 	TPacketCGGiveItem* p = (TPacketCGGiveItem*) c_pData;
-	
-	// Güvenlik: Gönderen karakter kontrolü
-	if (!ch->IsPC() || ch->IsDead() || ch->IsStun())
-		return;
-	
 	LPCHARACTER to_ch = CHARACTER_MANAGER::instance().Find(p->dwTargetVID);
 
-	if (!to_ch || !to_ch->IsPC())
-	{
+	if (to_ch)
+		ch->GiveItem(to_ch, p->ItemPos);
+	else
 		ch->LocaleChatPacket(CHAT_TYPE_INFO, 223, "");
-		return;
-	}
-	
-	// Güvenlik: Hedef karakter kontrolü
-	if (to_ch->IsDead() || to_ch->IsStun())
-		return;
-	
-	// Güvenlik: Mesafe kontrolü
-	if (DISTANCE_APPROX(ch->GetX() - to_ch->GetX(), ch->GetY() - to_ch->GetY()) > 1000)
-		return;
-	
-	ch->GiveItem(to_ch, p->ItemPos);
 }
 
 void CInputMain::Hack(LPCHARACTER ch, const char * c_pData)

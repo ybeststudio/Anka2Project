@@ -4,4 +4,4 @@
   dllmain.cpp
   rpc_connection.cpp
   serialization.cpp
-  Discord.vcxproj -> C:\M2Project_1.2\Source\Binary\extern\library\Discord_r.lib
+  Discord.vcxproj -> C:\Anka2Project\Anka2Project\Source\Binary\extern\library\Discord_r.lib

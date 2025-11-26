@@ -1,74 +1,74 @@
-Module Name: C:\M2Project_1.2\Client\Metin2Release.exe
-Time Stamp: 0x00000082 - Thu Nov 20 16:24:18 2025
+Module Name: C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+Time Stamp: 0x0000000c - Tue Nov 25 22:14:20 2025
 
 
 Exception Type: 0xc0000005
 
-eax: 0x00000008	ebx: 0x0000000b
-ecx: 0x00000004	edx: 0x3150b0b8
-esi: 0x4ae41578	edi: 0x00000008
-ebp: 0x00f3d764	esp: 0x00f3d758
+eax: 0x00000008	ebx: 0x00000007
+ecx: 0x00000003	edx: 0x42912d68
+esi: 0x4bec53e0	edi: 0x00000008
+ebp: 0x016fd734	esp: 0x016fd728
 
-0x005822b0	C:\M2Project_1.2\Client\Metin2Release.exe
-0x0064f8ff	C:\M2Project_1.2\Client\Metin2Release.exe
-0x0064cb0b	C:\M2Project_1.2\Client\Metin2Release.exe
-0x0059059b	C:\M2Project_1.2\Client\Metin2Release.exe
-0x005947ff	C:\M2Project_1.2\Client\Metin2Release.exe
-0x1e0a89a7	C:\M2Project_1.2\Client\python27.dll
-0x1e0eb707	C:\M2Project_1.2\Client\python27.dll
-0x1e0ed98e	C:\M2Project_1.2\Client\python27.dll
-0x1e0ea211	C:\M2Project_1.2\Client\python27.dll
-0x1e0eb784	C:\M2Project_1.2\Client\python27.dll
-0x1e0ed98e	C:\M2Project_1.2\Client\python27.dll
-0x1e0ee8fa	C:\M2Project_1.2\Client\python27.dll
-0x1e09c601	C:\M2Project_1.2\Client\python27.dll
-0x1e07a7dc	C:\M2Project_1.2\Client\python27.dll
-0x1e086420	C:\M2Project_1.2\Client\python27.dll
-0x1e07a7dc	C:\M2Project_1.2\Client\python27.dll
-0x1e0ea04c	C:\M2Project_1.2\Client\python27.dll
-0x1e07a782	C:\M2Project_1.2\Client\python27.dll
-0x007ea41b	C:\M2Project_1.2\Client\Metin2Release.exe
-0x007e9d38	C:\M2Project_1.2\Client\Metin2Release.exe
-0x0061fdef	C:\M2Project_1.2\Client\Metin2Release.exe
-0x0061f33f	C:\M2Project_1.2\Client\Metin2Release.exe
-0x005f99eb	C:\M2Project_1.2\Client\Metin2Release.exe
-0x0058f57e	C:\M2Project_1.2\Client\Metin2Release.exe
-0x0058ff80	C:\M2Project_1.2\Client\Metin2Release.exe
-0x1e0eb707	C:\M2Project_1.2\Client\python27.dll
-0x1e0ed98e	C:\M2Project_1.2\Client\python27.dll
-0x1e0ea211	C:\M2Project_1.2\Client\python27.dll
-0x1e0eb784	C:\M2Project_1.2\Client\python27.dll
-0x1e0ed98e	C:\M2Project_1.2\Client\python27.dll
-0x1e0ee8fa	C:\M2Project_1.2\Client\python27.dll
-0x1e0ee952	C:\M2Project_1.2\Client\python27.dll
-0x1e0eeb36	C:\M2Project_1.2\Client\python27.dll
-0x1e0ecb94	C:\M2Project_1.2\Client\python27.dll
-0x1e0ee8fa	C:\M2Project_1.2\Client\python27.dll
-0x1e0ea273	C:\M2Project_1.2\Client\python27.dll
-0x1e0eb784	C:\M2Project_1.2\Client\python27.dll
-0x1e0ed98e	C:\M2Project_1.2\Client\python27.dll
-0x1e0ea211	C:\M2Project_1.2\Client\python27.dll
-0x1e0eb784	C:\M2Project_1.2\Client\python27.dll
-0x1e0ed98e	C:\M2Project_1.2\Client\python27.dll
-0x1e0ea211	C:\M2Project_1.2\Client\python27.dll
-0x1e0eb784	C:\M2Project_1.2\Client\python27.dll
-0x1e0ed98e	C:\M2Project_1.2\Client\python27.dll
-0x1e0ee8fa	C:\M2Project_1.2\Client\python27.dll
-0x1e0ee952	C:\M2Project_1.2\Client\python27.dll
-0x1e0eeb36	C:\M2Project_1.2\Client\python27.dll
-0x1e0ecb94	C:\M2Project_1.2\Client\python27.dll
-0x1e0ee8fa	C:\M2Project_1.2\Client\python27.dll
-0x1e0ee952	C:\M2Project_1.2\Client\python27.dll
-0x1e1151cb	C:\M2Project_1.2\Client\python27.dll
-0x1e11621c	C:\M2Project_1.2\Client\python27.dll
-0x007eb208	C:\M2Project_1.2\Client\Metin2Release.exe
-0x007eb488	C:\M2Project_1.2\Client\Metin2Release.exe
-0x007eb1b9	C:\M2Project_1.2\Client\Metin2Release.exe
-0x00698cb3	C:\M2Project_1.2\Client\Metin2Release.exe
-0x006990f4	C:\M2Project_1.2\Client\Metin2Release.exe
-0x006995c8	C:\M2Project_1.2\Client\Metin2Release.exe
-0x007f796b	C:\M2Project_1.2\Client\Metin2Release.exe
-0x75b8fcc9	C:\Windows\System32\KERNEL32.DLL
-0x775a82ae	C:\Windows\SYSTEM32\ntdll.dll
-0x775a827e	C:\Windows\SYSTEM32\ntdll.dll
+0x00ce3190	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00db56cf	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00db296b	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00cf159b	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00cf57ff	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x1e0a89a7	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0eb707	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ed98e	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ea211	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0eb784	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ed98e	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ee8fa	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e09c601	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e07a7dc	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e086420	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e07a7dc	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ea04c	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e07a782	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x00f536fb	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00f53018	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00d8341f	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00d8295f	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00d5ce3b	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00cf055e	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00cf0f60	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x1e0eb707	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ed98e	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ea211	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0eb784	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ed98e	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ee8fa	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ee952	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0eeb36	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ecb94	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ee8fa	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ea273	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0eb784	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ed98e	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ea211	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0eb784	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ed98e	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ea211	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0eb784	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ed98e	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ee8fa	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ee952	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0eeb36	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ecb94	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ee8fa	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e0ee952	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e1151cb	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x1e11621c	C:\Anka2Project\Anka2Project\Client\python27.dll
+0x00f54518	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00f54798	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00f544c9	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00e00f53	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00e01394	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00e01868	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x00f60c8b	C:\Anka2Project\Anka2Project\Client\Metin2Release.exe
+0x76eafcc9	C:\Windows\System32\KERNEL32.DLL
+0x772782ae	C:\Windows\SYSTEM32\ntdll.dll
+0x7727827e	C:\Windows\SYSTEM32\ntdll.dll
 

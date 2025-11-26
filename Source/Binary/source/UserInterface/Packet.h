@@ -2497,6 +2497,7 @@ typedef struct packet_target
 #endif
 } TPacketGCTarget;
 
+#ifdef ENABLE_DAMAGE_EFFECT_ACCUMULATION_FIX
 typedef struct packet_damage_info
 {
 	BYTE header;
@@ -2505,6 +2506,15 @@ typedef struct packet_damage_info
 	BYTE flag;
 	int damage;
 } TPacketGCDamageInfo;
+#else
+typedef struct packet_damage_info
+{
+	BYTE header;
+	DWORD dwVID;
+	BYTE flag;
+	int damage;
+} TPacketGCDamageInfo;
+#endif
 
 typedef struct packet_mount
 {

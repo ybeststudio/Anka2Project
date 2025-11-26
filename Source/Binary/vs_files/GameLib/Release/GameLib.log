@@ -36,10 +36,10 @@
   MapOutdoorLoad.cpp
   MapOutdoorQuadtree.cpp
   MapOutdoorRender.cpp
-C:\M2Project_1.2\Source\Binary\source\GameLib\ActorInstanceAttach.cpp(43,1): warning C4715: 'CActorInstance::__IsLeftHandWeapon': tüm denetim yolları değer döndürmez
-C:\M2Project_1.2\Source\Binary\source\GameLib\ActorInstanceAttach.cpp(66,1): warning C4715: 'CActorInstance::__IsRightHandWeapon': tüm denetim yolları değer döndürmez
   MapOutdoorRenderHTP.cpp
   MapOutdoorRenderSTP.cpp
+C:\Anka2Project\Anka2Project\Source\Binary\source\GameLib\ActorInstanceAttach.cpp(66,1): warning C4715: 'CActorInstance::__IsRightHandWeapon': tüm denetim yolları değer döndürmez
+C:\Anka2Project\Anka2Project\Source\Binary\source\GameLib\ActorInstanceAttach.cpp(43,1): warning C4715: 'CActorInstance::__IsLeftHandWeapon': tüm denetim yolları değer döndürmez
   MapOutdoorUpdate.cpp
   MapOutdoorWater.cpp
   MapType.cpp
@@ -59,4 +59,4 @@ C:\M2Project_1.2\Source\Binary\source\GameLib\ActorInstanceAttach.cpp(66,1): war
   TerrainPatch.cpp
   TerrainQuadtree.cpp
   WeaponTrace.cpp
-  GameLib.vcxproj -> C:\M2Project_1.2\Source\Binary\vs_files\GameLib\Release\GameLib.lib
+  GameLib.vcxproj -> C:\Anka2Project\Anka2Project\Source\Binary\vs_files\GameLib\Release\GameLib.lib

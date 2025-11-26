@@ -2568,11 +2568,11 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type)
 	// ------------------------
 	// German premium mode
 	// -----------------------
-	if (pAttacker && (pAttacker->IsPC()
+	if (pAttacker && pAttacker->IsPC()
 #ifdef ENABLE_BOT_PLAYER
 		|| pAttacker->IsBotCharacter()
 #endif
-		))
+		)
 	{
 		int iDmgPct = CHARACTER_MANAGER::instance().GetUserDamageRate(pAttacker);
 		dam = dam * iDmgPct / 100;

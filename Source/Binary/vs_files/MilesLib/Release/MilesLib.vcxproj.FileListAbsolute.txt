@@ -1,1 +1,2 @@
 C:\M2Project_1.2\Source\Binary\vs_files\MilesLib\Release\MilesLib.lib
+C:\Anka2Project\Anka2Project\Source\Binary\vs_files\MilesLib\Release\MilesLib.lib

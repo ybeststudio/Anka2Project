@@ -112,7 +112,6 @@ bool battle_is_attackable(LPCHARACTER ch, LPCHARACTER victim)
 
 	if (CArenaManager::instance().CanAttack(ch, victim))
 		return true;
-		return true;
 
 	return CPVPManager::instance().CanAttack(ch, victim);
 }

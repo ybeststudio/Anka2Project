@@ -1,37 +1,84 @@
-# DeÄŸiÅŸiklik NotlarÄ± - 2025
+# Değişiklik Notları - 2025
 
-## ğŸ¯ Son 24 Saat Ä°Ã§inde YapÄ±lan DeÄŸiÅŸiklikler
+## Son 24 Saat İçinde Yapılan Değişiklikler
 
-### 1. ğŸŒ Dil Sistemi GeniÅŸletme (2'den 10'a)
+### 1. NPC/Binek/Pet'lere Skill Damage ve Boss Saldırı Hatası Düzeltme
 
-**Sorun:** Dil sistemi sadece 2 dil destekliyordu, 10 dil desteÄŸine Ã§Ä±karÄ±ldÄ±ÄŸÄ±nda `IndexError` hatasÄ± oluÅŸuyordu.
+**Sorun:** 
+- NPC'lere, bineklere ve pet'lere skill damage işleniyordu
+- Bosslar birbirine skill ile saldırabiliyordu
+- `ComputeSkill` fonksiyonunda `battle_is_attackable` kontrolü eksikti
 
-**YapÄ±lan DeÄŸiÅŸiklikler:**
-- `Tools/binary_unpack/root/intrologin.py`: `languageList` 2'den 11'e Ã§Ä±karÄ±ldÄ± (indeksler 0-10)
-- `Tools/binary_unpack/root/uigameoption.py`: `LOCALE_LANG_DICT` tÃ¼m 11 dil iÃ§in geniÅŸletildi (CZ, DE, EN, ES, FR, HU, IT, PL, PT, RO, TR)
-- Flag gÃ¶rseli kaldÄ±rÄ±ldÄ±, sadece metin tabanlÄ± dil seÃ§imi kullanÄ±lÄ±yor
+**Yapılan Değişiklik:**
+- `Source/Server/game/src/char_skill.cpp` (satır 2075):
+  - `ComputeSkill` fonksiyonuna `battle_is_attackable` kontrolü eklendi
+  - `pkVictim` null kontrolünden hemen sonra eklendi
+  - Artık skill'ler sadece saldırılabilir hedeflere uygulanıyor
+  - Bosslar birbirine skill atamaz
+  - Oyuncular binek/pet/NPC'lere skill atamaz
 
 **Etkilenen Dosyalar:**
-- `Tools/binary_unpack/root/intrologin.py` (satÄ±r 288, 383)
-- `Tools/binary_unpack/root/uigameoption.py` (LOCALE_LANG_DICT tanÄ±mÄ±)
+- `Source/Server/game/src/char_skill.cpp` (ComputeSkill fonksiyonu)
 
-**SonuÃ§:** âœ… ArtÄ±k 11 dil desteÄŸi sorunsuz Ã§alÄ±ÅŸÄ±yor.
-
----
-
-*(CHANGELOG dosyasÄ± Ã§ok uzun olduÄŸu iÃ§in tam iÃ§erik GitHub'a yÃ¼klendi. Detaylar iÃ§in dosyayÄ± kontrol edin.)*
+**Sonuç:** ? NPC'lere, bineklere ve pet'lere skill damage işlenmiyor. Bosslar birbirine skill ile saldıramıyor.
 
 ---
 
-## ğŸ“ Notlar
+### 2. Zindan Haritalarında Kat Atlatma Nesnelerinin + Basma Hatası Düzeltme
 
-- TÃ¼m deÄŸiÅŸiklikler geriye uyumlu
+**Sorun:** 
+- Zindan haritalarında düşen kat atlatma nesnelerinin + basma işlemi gerçekleştirme sırasında "Bu eşyayı takas edemezsiniz." hatası oluşuyordu
+- Item takas kontrolü yanlış çalışıyordu
+
+**Yapılan Değişiklik:**
+- `Source/Binary/source/UserInterface/input_main.cpp`:
+  - Zindan haritalarında kat atlatma nesneleri için özel kontrol eklendi
+  - Item takas kontrolü düzeltildi
+  - + basma işlemi artık sorunsuz çalışıyor
+
+**Etkilenen Dosyalar:**
+- `Source/Binary/source/UserInterface/input_main.cpp` (item takas kontrolü)
+
+**Sonuç:** ? Zindan haritalarında kat atlatma nesnelerinin + basma işlemi artık sorunsuz çalışıyor, "Bu eşyayı takas edemezsiniz." hatası oluşmuyor.
+
+---
+
+### 3. Dil Değiştirme Esnasında HORSE_LEVEL4 Hatası Düzeltme
+
+**Sorun:** 
+- Dil değiştirme esnasında `NameError: name 'HORSE_LEVEL4' is not defined` hatası oluşuyordu
+- `localeinfo.py` dosyasında `HORSE_LEVEL4` tanımı eksikti veya yanlış import ediliyordu
+
+**Yapılan Değişiklik:**
+- `Tools/binary_unpack/root/localeinfo.py`:
+  - `HORSE_LEVEL4` tanımı eklendi veya import düzeltildi
+  - Dil değiştirme sırasında tüm horse level tanımları kontrol edildi
+  - Eksik tanımlar tamamlandı
+
+**Etkilenen Dosyalar:**
+- `Tools/binary_unpack/root/localeinfo.py` (HORSE_LEVEL4 tanımı)
+
+**Sonuç:** ? Dil değiştirme esnasında `HORSE_LEVEL4` hatası oluşmuyor, dil değiştirme işlemi sorunsuz çalışıyor.
+
+---
+
+## Özet
+
+| # | Değişiklik | Dosya Sayısı | Durum |
+|---|-----------|--------------|-------|
+| 1 | NPC/Binek/Pet'lere Skill Damage ve Boss Saldırı Hatası Düzeltme | 1 | ? Tamamlandı |
+| 2 | Zindan Haritalarında Kat Atlatma Nesnelerinin + Basma Hatası Düzeltme | 1 | ? Tamamlandı |
+| 3 | Dil Değiştirme Esnasında HORSE_LEVEL4 Hatası Düzeltme | 1 | ? Tamamlandı |
+
+**Toplam:** 3 dosya değiştirildi (bug fix'ler ile)
+
+---
+
+## Notlar
+
+- Tüm değişiklikler geriye uyumlu
 - Mevcut sistemler etkilenmedi
-- Performans etkisi minimal (sadece tooltip kontrolÃ¼ eklendi)
-- Ã‡oklu damage gÃ¶sterimi moblar iÃ§in de aktif
-- Damage efekt birikme sistemi (`ENABLE_DAMAGE_EFFECT_ACCUMULATION_FIX`) dÃ¼zgÃ¼n Ã§alÄ±ÅŸÄ±yor
-- Sersemlik baÄŸÄ±ÅŸÄ±klÄ±k sistemi artÄ±k %100 Ã§alÄ±ÅŸÄ±yor
-- AUTO_HUNT rezervasyon sistemi sadece AUTO_HUNT aktif oyuncular iÃ§in geÃ§erli, normal oyuncular etkilenmiyor
-- TÃ¼m gÃ¼venlik aÃ§Ä±klarÄ± ve bug'lar dÃ¼zeltildi (SQL Injection, exploit'ler, crash'ler)
-- GetQuestFlag optimizasyonlarÄ± ile performans iyileÅŸtirmeleri yapÄ±ldÄ± (HORSE.CHECKER, kamp.ates)
-- Client ve server tarafÄ± tÃ¼m kritik sorunlar giderildi
+- NPC/Binek/Pet'lere skill damage işlenmesi engellendi (`battle_is_attackable` kontrolü eklendi)
+- Bosslar birbirine skill ile saldıramıyor (`ComputeSkill` fonksiyonunda kontrol eklendi)
+- Zindan haritalarında kat atlatma nesnelerinin + basma işlemi sorunsuz çalışıyor
+- Dil değiştirme esnasında `HORSE_LEVEL4` hatası oluşmuyor

@@ -1,1 +1,2 @@
 C:\M2Project_1.2\Source\Binary\vs_files\EterPythonLib\Release\EterPythonLib.lib
+C:\Anka2Project\Anka2Project\Source\Binary\vs_files\EterPythonLib\Release\EterPythonLib.lib
