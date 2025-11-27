@@ -8,34 +8,47 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_1LK@PGLBBCJE@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
 PUBLIC	??_C@_1CG@KEIABLLO@?$AAw?$AAM?$AAo?$AAt?$AAi?$AAo?$AAn?$AAI?$AAn?$AAd?$AAe?$AAx?$AA?5?$AA?$DM?$AA?5@ ; `string'
+PUBLIC	??_C@_1LK@PGLBBCJE@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
 PUBLIC	??_C@_0CL@BHCKMNDC@Shoot?5?3?5?$LE?Y?$LI?$KF?5target?$LP?$KB?5?$LI?B?$LO?R?$LN?$MA?$LE?O?$LE@ ; `string'
-PUBLIC	??_R2CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8 ; CPythonPlayerEventHandler::CNormalBowAttack_FlyEventHandler_AutoClear::`RTTI Base Class Array'
 PUBLIC	??_R2CPythonPlayerEventHandler@@8		; CPythonPlayerEventHandler::`RTTI Base Class Array'
+PUBLIC	??_R2CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8 ; CPythonPlayerEventHandler::CNormalBowAttack_FlyEventHandler_AutoClear::`RTTI Base Class Array'
 PUBLIC	??_R2IEventHandler@CActorInstance@@8		; CActorInstance::IEventHandler::`RTTI Base Class Array'
 PUBLIC	??_R2IFlyEventHandler@@8			; IFlyEventHandler::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8 ; CPythonPlayerEventHandler::CNormalBowAttack_FlyEventHandler_AutoClear::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R1A@?0A@EA@CPythonPlayerEventHandler@@8	; CPythonPlayerEventHandler::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R1A@?0A@EA@CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8 ; CPythonPlayerEventHandler::CNormalBowAttack_FlyEventHandler_AutoClear::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R1A@?0A@EA@IEventHandler@CActorInstance@@8	; CActorInstance::IEventHandler::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R1A@?0A@EA@IFlyEventHandler@@8		; IFlyEventHandler::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R0?AVCNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@@8 ; CPythonPlayerEventHandler::CNormalBowAttack_FlyEventHandler_AutoClear `RTTI Type Descriptor'
 PUBLIC	??_R3CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8 ; CPythonPlayerEventHandler::CNormalBowAttack_FlyEventHandler_AutoClear::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AVCPythonPlayerEventHandler@@@8		; CPythonPlayerEventHandler `RTTI Type Descriptor'
 PUBLIC	??_R3CPythonPlayerEventHandler@@8		; CPythonPlayerEventHandler::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AVIEventHandler@CActorInstance@@@8	; CActorInstance::IEventHandler `RTTI Type Descriptor'
+PUBLIC	??_R0?AVCNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@@8 ; CPythonPlayerEventHandler::CNormalBowAttack_FlyEventHandler_AutoClear `RTTI Type Descriptor'
+PUBLIC	??_R0?AVCPythonPlayerEventHandler@@@8		; CPythonPlayerEventHandler `RTTI Type Descriptor'
 PUBLIC	??_R3IEventHandler@CActorInstance@@8		; CActorInstance::IEventHandler::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AVIFlyEventHandler@@@8			; IFlyEventHandler `RTTI Type Descriptor'
+PUBLIC	??_R0?AVIEventHandler@CActorInstance@@@8	; CActorInstance::IEventHandler `RTTI Type Descriptor'
 PUBLIC	??_R3IFlyEventHandler@@8			; IFlyEventHandler::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R0?AVIFlyEventHandler@@@8			; IFlyEventHandler `RTTI Type Descriptor'
 PUBLIC	??_R4CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@6B@ ; CPythonPlayerEventHandler::CNormalBowAttack_FlyEventHandler_AutoClear::`RTTI Complete Object Locator'
 PUBLIC	??_R4CPythonPlayerEventHandler@@6B@		; CPythonPlayerEventHandler::`RTTI Complete Object Locator'
 PUBLIC	??_R4IEventHandler@CActorInstance@@6B@		; CActorInstance::IEventHandler::`RTTI Complete Object Locator'
 PUBLIC	??_R4IFlyEventHandler@@6B@			; IFlyEventHandler::`RTTI Complete Object Locator'
 PUBLIC	??_7CPythonPlayerEventHandler@@6B@		; CPythonPlayerEventHandler::`vftable'
-PUBLIC	??_7IFlyEventHandler@@6B@			; IFlyEventHandler::`vftable'
 PUBLIC	??_7CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@6B@ ; CPythonPlayerEventHandler::CNormalBowAttack_FlyEventHandler_AutoClear::`vftable'
 PUBLIC	??_7IEventHandler@CActorInstance@@6B@		; CActorInstance::IEventHandler::`vftable'
+PUBLIC	??_7IFlyEventHandler@@6B@			; IFlyEventHandler::`vftable'
 EXTRN	?IS_HUGE_RACE@@YA_NI@Z:PROC			; IS_HUGE_RACE
+;	COMDAT ??_7IFlyEventHandler@@6B@
+CONST	SEGMENT
+??_7IFlyEventHandler@@6B@ DD FLAT:??_R4IFlyEventHandler@@6B@ ; IFlyEventHandler::`vftable'
+	DD	FLAT:??_EIFlyEventHandler@@UAEPAXI@Z
+	DD	FLAT:?OnSetFlyTarget@IFlyEventHandler@@UAEXXZ
+	DD	FLAT:?OnShoot@IFlyEventHandler@@UAEXK@Z
+	DD	FLAT:?OnNoTarget@IFlyEventHandler@@UAEXXZ
+	DD	FLAT:?OnNoArrow@IFlyEventHandler@@UAEXXZ
+	DD	FLAT:?OnExplodingOutOfRange@IFlyEventHandler@@UAEXXZ
+	DD	FLAT:?OnExplodingAtBackground@IFlyEventHandler@@UAEXXZ
+	DD	FLAT:?OnExplodingAtAnotherTarget@IFlyEventHandler@@UAEXKK@Z
+	DD	FLAT:?OnExplodingAtTarget@IFlyEventHandler@@UAEXK@Z
+CONST	ENDS
 ;	COMDAT ??_7IEventHandler@CActorInstance@@6B@
 CONST	SEGMENT
 ??_7IEventHandler@CActorInstance@@6B@ DD FLAT:??_R4IEventHandler@CActorInstance@@6B@ ; CActorInstance::IEventHandler::`vftable'
@@ -66,19 +79,6 @@ CONST	SEGMENT
 	DD	FLAT:?OnExplodingAtBackground@CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@UAEXXZ
 	DD	FLAT:?OnExplodingAtAnotherTarget@CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@UAEXKK@Z
 	DD	FLAT:?OnExplodingAtTarget@CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@UAEXK@Z
-CONST	ENDS
-;	COMDAT ??_7IFlyEventHandler@@6B@
-CONST	SEGMENT
-??_7IFlyEventHandler@@6B@ DD FLAT:??_R4IFlyEventHandler@@6B@ ; IFlyEventHandler::`vftable'
-	DD	FLAT:??_EIFlyEventHandler@@UAEPAXI@Z
-	DD	FLAT:?OnSetFlyTarget@IFlyEventHandler@@UAEXXZ
-	DD	FLAT:?OnShoot@IFlyEventHandler@@UAEXK@Z
-	DD	FLAT:?OnNoTarget@IFlyEventHandler@@UAEXXZ
-	DD	FLAT:?OnNoArrow@IFlyEventHandler@@UAEXXZ
-	DD	FLAT:?OnExplodingOutOfRange@IFlyEventHandler@@UAEXXZ
-	DD	FLAT:?OnExplodingAtBackground@IFlyEventHandler@@UAEXXZ
-	DD	FLAT:?OnExplodingAtAnotherTarget@IFlyEventHandler@@UAEXKK@Z
-	DD	FLAT:?OnExplodingAtTarget@IFlyEventHandler@@UAEXK@Z
 CONST	ENDS
 ;	COMDAT ??_7CPythonPlayerEventHandler@@6B@
 CONST	SEGMENT
@@ -131,6 +131,12 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AVCNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@@8
 	DD	FLAT:??_R3CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8
 rdata$r	ENDS
+;	COMDAT ??_R0?AVIFlyEventHandler@@@8
+data$rs	SEGMENT
+??_R0?AVIFlyEventHandler@@@8 DD FLAT:??_7type_info@@6B@	; IFlyEventHandler `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVIFlyEventHandler@@', 00H
+data$rs	ENDS
 ;	COMDAT ??_R3IFlyEventHandler@@8
 rdata$r	SEGMENT
 ??_R3IFlyEventHandler@@8 DD 00H				; IFlyEventHandler::`RTTI Class Hierarchy Descriptor'
@@ -138,11 +144,11 @@ rdata$r	SEGMENT
 	DD	01H
 	DD	FLAT:??_R2IFlyEventHandler@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVIFlyEventHandler@@@8
+;	COMDAT ??_R0?AVIEventHandler@CActorInstance@@@8
 data$rs	SEGMENT
-??_R0?AVIFlyEventHandler@@@8 DD FLAT:??_7type_info@@6B@	; IFlyEventHandler `RTTI Type Descriptor'
+??_R0?AVIEventHandler@CActorInstance@@@8 DD FLAT:??_7type_info@@6B@ ; CActorInstance::IEventHandler `RTTI Type Descriptor'
 	DD	00H
-	DB	'.?AVIFlyEventHandler@@', 00H
+	DB	'.?AVIEventHandler@CActorInstance@@', 00H
 data$rs	ENDS
 ;	COMDAT ??_R3IEventHandler@CActorInstance@@8
 rdata$r	SEGMENT
@@ -151,11 +157,18 @@ rdata$r	SEGMENT
 	DD	01H
 	DD	FLAT:??_R2IEventHandler@CActorInstance@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVIEventHandler@CActorInstance@@@8
+;	COMDAT ??_R0?AVCPythonPlayerEventHandler@@@8
 data$rs	SEGMENT
-??_R0?AVIEventHandler@CActorInstance@@@8 DD FLAT:??_7type_info@@6B@ ; CActorInstance::IEventHandler `RTTI Type Descriptor'
+??_R0?AVCPythonPlayerEventHandler@@@8 DD FLAT:??_7type_info@@6B@ ; CPythonPlayerEventHandler `RTTI Type Descriptor'
 	DD	00H
-	DB	'.?AVIEventHandler@CActorInstance@@', 00H
+	DB	'.?AVCPythonPlayerEventHandler@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R0?AVCNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@@8
+data$rs	SEGMENT
+??_R0?AVCNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@@8 DD FLAT:??_7type_info@@6B@ ; CPythonPlayerEventHandler::CNormalBowAttack_FlyEventHandler_AutoClear `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCNormalBowAttack_FlyEventHandler_AutoClear@CPythonPl'
+	DB	'ayerEventHandler@@', 00H
 data$rs	ENDS
 ;	COMDAT ??_R3CPythonPlayerEventHandler@@8
 rdata$r	SEGMENT
@@ -164,12 +177,6 @@ rdata$r	SEGMENT
 	DD	02H
 	DD	FLAT:??_R2CPythonPlayerEventHandler@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonPlayerEventHandler@@@8
-data$rs	SEGMENT
-??_R0?AVCPythonPlayerEventHandler@@@8 DD FLAT:??_7type_info@@6B@ ; CPythonPlayerEventHandler `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCPythonPlayerEventHandler@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R3CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8
 rdata$r	SEGMENT
 ??_R3CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8 DD 00H ; CPythonPlayerEventHandler::CNormalBowAttack_FlyEventHandler_AutoClear::`RTTI Class Hierarchy Descriptor'
@@ -177,13 +184,6 @@ rdata$r	SEGMENT
 	DD	02H
 	DD	FLAT:??_R2CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@@8
-data$rs	SEGMENT
-??_R0?AVCNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@@8 DD FLAT:??_7type_info@@6B@ ; CPythonPlayerEventHandler::CNormalBowAttack_FlyEventHandler_AutoClear `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCNormalBowAttack_FlyEventHandler_AutoClear@CPythonPl'
-	DB	'ayerEventHandler@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R1A@?0A@EA@IFlyEventHandler@@8
 rdata$r	SEGMENT
 ??_R1A@?0A@EA@IFlyEventHandler@@8 DD FLAT:??_R0?AVIFlyEventHandler@@@8 ; IFlyEventHandler::`RTTI Base Class Descriptor at (0,-1,0,64)'
@@ -204,16 +204,6 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3IEventHandler@CActorInstance@@8
 rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@CPythonPlayerEventHandler@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@CPythonPlayerEventHandler@@8 DD FLAT:??_R0?AVCPythonPlayerEventHandler@@@8 ; CPythonPlayerEventHandler::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	01H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3CPythonPlayerEventHandler@@8
-rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8
 rdata$r	SEGMENT
 ??_R1A@?0A@EA@CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8 DD FLAT:??_R0?AVCNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@@8 ; CPythonPlayerEventHandler::CNormalBowAttack_FlyEventHandler_AutoClear::`RTTI Base Class Descriptor at (0,-1,0,64)'
@@ -224,6 +214,16 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8
 rdata$r	ENDS
+;	COMDAT ??_R1A@?0A@EA@CPythonPlayerEventHandler@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@CPythonPlayerEventHandler@@8 DD FLAT:??_R0?AVCPythonPlayerEventHandler@@@8 ; CPythonPlayerEventHandler::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3CPythonPlayerEventHandler@@8
+rdata$r	ENDS
 ;	COMDAT ??_R2IFlyEventHandler@@8
 rdata$r	SEGMENT
 ??_R2IFlyEventHandler@@8 DD FLAT:??_R1A@?0A@EA@IFlyEventHandler@@8 ; IFlyEventHandler::`RTTI Base Class Array'
@@ -232,15 +232,15 @@ rdata$r	ENDS
 rdata$r	SEGMENT
 ??_R2IEventHandler@CActorInstance@@8 DD FLAT:??_R1A@?0A@EA@IEventHandler@CActorInstance@@8 ; CActorInstance::IEventHandler::`RTTI Base Class Array'
 rdata$r	ENDS
-;	COMDAT ??_R2CPythonPlayerEventHandler@@8
-rdata$r	SEGMENT
-??_R2CPythonPlayerEventHandler@@8 DD FLAT:??_R1A@?0A@EA@CPythonPlayerEventHandler@@8 ; CPythonPlayerEventHandler::`RTTI Base Class Array'
-	DD	FLAT:??_R1A@?0A@EA@IEventHandler@CActorInstance@@8
-rdata$r	ENDS
 ;	COMDAT ??_R2CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8
 rdata$r	SEGMENT
 ??_R2CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8 DD FLAT:??_R1A@?0A@EA@CNormalBowAttack_FlyEventHandler_AutoClear@CPythonPlayerEventHandler@@8 ; CPythonPlayerEventHandler::CNormalBowAttack_FlyEventHandler_AutoClear::`RTTI Base Class Array'
 	DD	FLAT:??_R1A@?0A@EA@IFlyEventHandler@@8
+rdata$r	ENDS
+;	COMDAT ??_R2CPythonPlayerEventHandler@@8
+rdata$r	SEGMENT
+??_R2CPythonPlayerEventHandler@@8 DD FLAT:??_R1A@?0A@EA@CPythonPlayerEventHandler@@8 ; CPythonPlayerEventHandler::`RTTI Base Class Array'
+	DD	FLAT:??_R1A@?0A@EA@IEventHandler@CActorInstance@@8
 rdata$r	ENDS
 ;	COMDAT ??_C@_0CL@BHCKMNDC@Shoot?5?3?5?$LE?Y?$LI?$KF?5target?$LP?$KB?5?$LI?B?$LO?R?$LN?$MA?$LE?O?$LE@
 CONST	SEGMENT
@@ -248,13 +248,6 @@ CONST	SEGMENT
 	DB	'hoot : ', 0b4H, 0d9H, 0b8H, 0a5H, ' target', 0bfH, 0a1H, ' ', 0b8H
 	DB	0c2H, 0beH, 0d2H, 0bdH, 0c0H, 0b4H, 0cfH, 0b4H, 0d9H, ' : %d, '
 	DB	'%d', 0aH, 00H				; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1CG@KEIABLLO@?$AAw?$AAM?$AAo?$AAt?$AAi?$AAo?$AAn?$AAI?$AAn?$AAd?$AAe?$AAx?$AA?5?$AA?$DM?$AA?5@
-CONST	SEGMENT
-??_C@_1CG@KEIABLLO@?$AAw?$AAM?$AAo?$AAt?$AAi?$AAo?$AAn?$AAI?$AAn?$AAd?$AAe?$AAx?$AA?5?$AA?$DM?$AA?5@ DB 'w'
-	DB	00H, 'M', 00H, 'o', 00H, 't', 00H, 'i', 00H, 'o', 00H, 'n', 00H
-	DB	'I', 00H, 'n', 00H, 'd', 00H, 'e', 00H, 'x', 00H, ' ', 00H, '<'
-	DB	00H, ' ', 00H, '2', 00H, '5', 00H, '5', 00H, 00H, 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_1LK@PGLBBCJE@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
 CONST	SEGMENT
@@ -274,6 +267,13 @@ CONST	SEGMENT
 	DB	00H, 'n', 00H, 't', 00H, 'H', 00H, 'a', 00H, 'n', 00H, 'd', 00H
 	DB	'l', 00H, 'e', 00H, 'r', 00H, '.', 00H, 'c', 00H, 'p', 00H, 'p'
 	DB	00H, 00H, 00H				; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1CG@KEIABLLO@?$AAw?$AAM?$AAo?$AAt?$AAi?$AAo?$AAn?$AAI?$AAn?$AAd?$AAe?$AAx?$AA?5?$AA?$DM?$AA?5@
+CONST	SEGMENT
+??_C@_1CG@KEIABLLO@?$AAw?$AAM?$AAo?$AAt?$AAi?$AAo?$AAn?$AAI?$AAn?$AAd?$AAe?$AAx?$AA?5?$AA?$DM?$AA?5@ DB 'w'
+	DB	00H, 'M', 00H, 'o', 00H, 't', 00H, 'i', 00H, 'o', 00H, 'n', 00H
+	DB	'I', 00H, 'n', 00H, 'd', 00H, 'e', 00H, 'x', 00H, ' ', 00H, '<'
+	DB	00H, ' ', 00H, '2', 00H, '5', 00H, '5', 00H, 00H, 00H ; `string'
 PUBLIC	??$construct_at@USVictim@CPythonPlayerEventHandler@@U12@@std@@YAPAUSVictim@CPythonPlayerEventHandler@@QAU12@$$QAU12@@Z ; std::construct_at<CPythonPlayerEventHandler::SVictim,CPythonPlayerEventHandler::SVictim>
 PUBLIC	?_Get_first@?$_Compressed_pair@V?$allocator@USVictim@CPythonPlayerEventHandler@@@std@@V?$_Vector_val@U?$_Simple_types@USVictim@CPythonPlayerEventHandler@@@std@@@2@$00@std@@QBEABV?$allocator@USVictim@CPythonPlayerEventHandler@@@2@XZ ; std::_Compressed_pair<std::allocator<CPythonPlayerEventHandler::SVictim>,std::_Vector_val<std::_Simple_types<CPythonPlayerEventHandler::SVictim> >,1>::_Get_first
 PUBLIC	??$construct@USVictim@CPythonPlayerEventHandler@@U12@@?$_Default_allocator_traits@V?$allocator@USVictim@CPythonPlayerEventHandler@@@std@@@std@@SAXAAV?$allocator@USVictim@CPythonPlayerEventHandler@@@1@QAUSVictim@CPythonPlayerEventHandler@@$$QAU34@@Z ; std::_Default_allocator_traits<std::allocator<CPythonPlayerEventHandler::SVictim> >::construct<CPythonPlayerEventHandler::SVictim,CPythonPlayerEventHandler::SVictim>

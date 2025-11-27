@@ -8,242 +8,242 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0EE@CPCFCFHF@netSendGuildRemoveMemberPacket?$CI@ ; `string'
-PUBLIC	??_C@_1LM@DEDABKEH@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
 PUBLIC	??_C@_0EC@PJNHBNOL@netSendRequestRefineInfoPacket?5@ ; `string'
-PUBLIC	??_C@_03JELCABFN@iOO@				; `string'
+PUBLIC	??_C@_0EE@CPCFCFHF@netSendGuildRemoveMemberPacket?$CI@ ; `string'
 PUBLIC	??_C@_1IK@MBMLBACD@?$AA?$CB?$AA?$CC?$AAn?$AAe?$AAt?$AAS?$AAe?$AAn?$AAd?$AAR?$AAe?$AAq?$AAu?$AAe?$AAs@ ; `string'
-PUBLIC	??_C@_0BH@LKCAJGCH@EnableChatInsultFilter@	; `string'
+PUBLIC	??_C@_1LM@DEDABKEH@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
 PUBLIC	??_C@_0BI@HFMJEOAC@GetBettingGuildWarValue@	; `string'
-PUBLIC	??_C@_0O@ODBJLKOA@GetServerInfo@		; `string'
+PUBLIC	??_C@_03JELCABFN@iOO@				; `string'
 PUBLIC	??_C@_0O@JMAHAJJH@SetServerInfo@		; `string'
-PUBLIC	??_C@_0BK@PJDKKIPH@GetPreservedServerCommand@	; `string'
+PUBLIC	??_C@_0BH@LKCAJGCH@EnableChatInsultFilter@	; `string'
 PUBLIC	??_C@_0BG@NJCKCHAI@PreserveServerCommand@	; `string'
-PUBLIC	??_C@_04EIDOEOJH@Warp@				; `string'
+PUBLIC	??_C@_0O@ODBJLKOA@GetServerInfo@		; `string'
 PUBLIC	??_C@_09CFNAMFEF@StartGame@			; `string'
-PUBLIC	??_C@_0P@EPNPIBON@IsChatInsultIn@		; `string'
+PUBLIC	??_C@_0BK@PJDKKIPH@GetPreservedServerCommand@	; `string'
 PUBLIC	??_C@_0O@OFMEOEDD@SetMarkServer@		; `string'
-PUBLIC	??_C@_0P@NAIDDMMD@LoadInsultList@		; `string'
+PUBLIC	??_C@_04EIDOEOJH@Warp@				; `string'
 PUBLIC	??_C@_0L@CJJGFLBC@IsInsultIn@			; `string'
-PUBLIC	??_C@_0N@OBKBFHKO@UploadSymbol@			; `string'
+PUBLIC	??_C@_0P@EPNPIBON@IsChatInsultIn@		; `string'
 PUBLIC	??_C@_0L@JEGFHCJL@UploadMark@			; `string'
-PUBLIC	??_C@_0BA@BPHKBGOL@GetMainActorVID@		; `string'
+PUBLIC	??_C@_0P@NAIDDMMD@LoadInsultList@		; `string'
 PUBLIC	??_C@_0M@GGDMINDM@GetEmpireID@			; `string'
-PUBLIC	??_C@_0BD@JOIEFGML@GetMainActorEmpire@		; `string'
+PUBLIC	??_C@_0N@OBKBFHKO@UploadSymbol@			; `string'
 PUBLIC	??_C@_0BB@ICEJKPHA@GetMainActorRace@		; `string'
-PUBLIC	??_C@_0CD@PJJNPONG@GetAccountCharacterSlotDataInte@ ; `string'
+PUBLIC	??_C@_0BA@BPHKBGOL@GetMainActorVID@		; `string'
 PUBLIC	??_C@_0BH@GCCMJIJB@GetMainActorSkillGroup@	; `string'
-PUBLIC	??_C@_0BG@NAMIDKHD@GetFieldMusicFileName@	; `string'
+PUBLIC	??_C@_0BD@JOIEFGML@GetMainActorEmpire@		; `string'
 PUBLIC	??_C@_0CC@DLIFIOE@GetAccountCharacterSlotDataStri@ ; `string'
-PUBLIC	??_C@_0BE@BCCLDKB@ToggleGameDebugInfo@		; `string'
+PUBLIC	??_C@_0CD@PJJNPONG@GetAccountCharacterSlotDataInte@ ; `string'
 PUBLIC	??_C@_0BE@MHKBLINM@GetFieldMusicVolume@		; `string'
-PUBLIC	??_C@_0P@EKNNFAK@SetPhaseWindow@		; `string'
+PUBLIC	??_C@_0BG@NAMIDKHD@GetFieldMusicFileName@	; `string'
 PUBLIC	??_C@_0N@GLEGMFLM@SetLoginInfo@			; `string'
-PUBLIC	??_C@_0BN@KOOLAHFA@SetServerCommandParserWindow@ ; `string'
+PUBLIC	??_C@_0BE@BCCLDKB@ToggleGameDebugInfo@		; `string'
 PUBLIC	??_C@_0BB@NNDKGCIK@ClearPhaseWindow@		; `string'
-PUBLIC	??_C@_0L@EELFNDHB@SetHandler@			; `string'
+PUBLIC	??_C@_0P@EKNNFAK@SetPhaseWindow@		; `string'
 PUBLIC	??_C@_0BL@NJAILJBB@SetAccountConnectorHandler@	; `string'
-PUBLIC	??_C@_0BF@LOLMIHDO@SetTCPSendBufferSize@	; `string'
+PUBLIC	??_C@_0BN@KOOLAHFA@SetServerCommandParserWindow@ ; `string'
 PUBLIC	??_C@_0BF@KAEIEPML@SetTCPRecvBufferSize@	; `string'
-PUBLIC	??_C@_0M@PAACKIAL@DirectEnter@			; `string'
+PUBLIC	??_C@_0L@EELFNDHB@SetHandler@			; `string'
 PUBLIC	??_C@_0BF@GPIIIFGB@SetUDPRecvBufferSize@	; `string'
-PUBLIC	??_C@_08ENBHLCHD@ExitGame@			; `string'
+PUBLIC	??_C@_0BF@LOLMIHDO@SetTCPSendBufferSize@	; `string'
 PUBLIC	??_C@_0L@LPFGMFBP@LogOutGame@			; `string'
-PUBLIC	??_C@_0L@HNEKCIDO@ConnectTCP@			; `string'
+PUBLIC	??_C@_0M@PAACKIAL@DirectEnter@			; `string'
 PUBLIC	??_C@_0BA@ILFBLEPH@ExitApplication@		; `string'
-PUBLIC	??_C@_0BH@CIOLKAIG@ConnectToAccountServer@	; `string'
+PUBLIC	??_C@_08ENBHLCHD@ExitGame@			; `string'
 PUBLIC	??_C@_0L@MALJFJNO@ConnectUDP@			; `string'
-PUBLIC	??_C@_0BH@IIELEKKA@SendSelectEmpirePacket@	; `string'
+PUBLIC	??_C@_0L@HNEKCIDO@ConnectTCP@			; `string'
 PUBLIC	??_C@_0BA@CNDIKGCL@SendLoginPacket@		; `string'
-PUBLIC	??_C@_0BF@ODLJDBF@SendChangeNamePacket@		; `string'
+PUBLIC	??_C@_0BH@CIOLKAIG@ConnectToAccountServer@	; `string'
 PUBLIC	??_C@_0BK@MIKAHKDI@SendSelectCharacterPacket@	; `string'
-PUBLIC	??_C@_0BL@PMHPNGGJ@SendDestroyCharacterPacket@	; `string'
+PUBLIC	??_C@_0BH@IIELEKKA@SendSelectEmpirePacket@	; `string'
 PUBLIC	??_C@_0BK@NPKEAJJ@SendCreateCharacterPacket@	; `string'
-PUBLIC	??_C@_0BC@NHAKBOCP@SendItemUsePacket@		; `string'
+PUBLIC	??_C@_0BF@ODLJDBF@SendChangeNamePacket@		; `string'
 PUBLIC	??_C@_0BE@NBECPFPH@SendEnterGamePacket@		; `string'
-PUBLIC	??_C@_0BD@ICCAOJBA@SendItemDropPacket@		; `string'
+PUBLIC	??_C@_0BL@PMHPNGGJ@SendDestroyCharacterPacket@	; `string'
 PUBLIC	??_C@_0BI@OBDMDOIB@SendItemUseToItemPacket@	; `string'
-PUBLIC	??_C@_0BC@NEDFAOHK@SendElkDropPacket@		; `string'
+PUBLIC	??_C@_0BC@NHAKBOCP@SendItemUsePacket@		; `string'
 PUBLIC	??_C@_0BG@PNFNACGL@SendItemDropPacketNew@	; `string'
-PUBLIC	??_C@_0BD@BPAFBGKI@SendItemMovePacket@		; `string'
+PUBLIC	??_C@_0BD@ICCAOJBA@SendItemDropPacket@		; `string'
 PUBLIC	??_C@_0BG@ONKCIEDE@SendGoldDropPacketNew@	; `string'
-PUBLIC	??_C@_0BD@FMAJCJM@SendGiveItemPacket@		; `string'
+PUBLIC	??_C@_0BC@NEDFAOHK@SendElkDropPacket@		; `string'
 PUBLIC	??_C@_0BF@PJHEIMI@SendItemPickUpPacket@		; `string'
-PUBLIC	??_C@_0L@CMGJAGDM@Disconnect@			; `string'
+PUBLIC	??_C@_0BD@BPAFBGKI@SendItemMovePacket@		; `string'
 PUBLIC	??_C@_0BA@NKMDDBDL@SetOfflinePhase@		; `string'
-PUBLIC	??_C@_0P@FJOINOIH@SendChatPacket@		; `string'
+PUBLIC	??_C@_0BD@FMAJCJM@SendGiveItemPacket@		; `string'
 PUBLIC	??_C@_09HENONEEN@IsConnect@			; `string'
-PUBLIC	??_C@_0BC@KNMEABPD@SendWhisperPacket@		; `string'
+PUBLIC	??_C@_0L@CMGJAGDM@Disconnect@			; `string'
 PUBLIC	??_C@_0N@BJHGOHPC@SendEmoticon@			; `string'
-PUBLIC	??_C@_0BC@HEOMKCAE@SendShopEndPacket@		; `string'
+PUBLIC	??_C@_0P@FJOINOIH@SendChatPacket@		; `string'
 PUBLIC	??_C@_0BM@KAMAKIKL@SendCharacterPositionPacket@	; `string'
-PUBLIC	??_C@_0BD@BFMEHPEE@SendShopSellPacket@		; `string'
+PUBLIC	??_C@_0BC@KNMEABPD@SendWhisperPacket@		; `string'
 PUBLIC	??_C@_0BC@FPBLEBCL@SendShopBuyPacket@		; `string'
-PUBLIC	??_C@_0BI@BGNKGFKO@SendExchangeStartPacket@	; `string'
+PUBLIC	??_C@_0BC@HEOMKCAE@SendShopEndPacket@		; `string'
 PUBLIC	??_C@_0BG@BGJEIPGN@SendShopSellPacketNew@	; `string'
-PUBLIC	??_C@_0BK@KKOEHGGC@SendExchangeItemDelPacket@	; `string'
+PUBLIC	??_C@_0BD@BFMEHPEE@SendShopSellPacket@		; `string'
 PUBLIC	??_C@_0BK@IIFDLCNA@SendExchangeItemAddPacket@	; `string'
-PUBLIC	??_C@_0BJ@OFKJBLDC@SendExchangeAcceptPacket@	; `string'
+PUBLIC	??_C@_0BI@BGNKGFKO@SendExchangeStartPacket@	; `string'
 PUBLIC	??_C@_0BJ@CGGGIOGM@SendExchangeElkAddPacket@	; `string'
-PUBLIC	??_C@_0BC@FMJHAGEI@SendOnClickPacket@		; `string'
+PUBLIC	??_C@_0BK@KKOEHGGC@SendExchangeItemDelPacket@	; `string'
 PUBLIC	??_C@_0BH@NCONKHHB@SendExchangeExitPacket@	; `string'
-PUBLIC	??_C@_0BM@CFLPIFFM@SendMessengerAddByVIDPacket@	; `string'
+PUBLIC	??_C@_0BJ@OFKJBLDC@SendExchangeAcceptPacket@	; `string'
 PUBLIC	??_C@_0BH@MCKLKDJM@RegisterEmoticonString@	; `string'
-PUBLIC	??_C@_0BK@GIIDGGBB@SendMessengerRemovePacket@	; `string'
+PUBLIC	??_C@_0BC@FMJHAGEI@SendOnClickPacket@		; `string'
 PUBLIC	??_C@_0BN@MPMOLLL@SendMessengerAddByNamePacket@	; `string'
-PUBLIC	??_C@_0BP@CFBLDODE@SendMessengerBlockRemovePacket@ ; `string'
+PUBLIC	??_C@_0BM@CFLPIFFM@SendMessengerAddByVIDPacket@	; `string'
 PUBLIC	??_C@_0CB@KIPMMBOF@SendMessengerBlockAddByVIDPacke@ ; `string'
-PUBLIC	??_C@_0CE@JAGCNDAI@SendMessengerBlockRemoveByVIDPa@ ; `string'
+PUBLIC	??_C@_0BK@GIIDGGBB@SendMessengerRemovePacket@	; `string'
 PUBLIC	??_C@_0CC@LOMMKDNH@SendMessengerBlockAddByNamePack@ ; `string'
-PUBLIC	??_C@_0BM@PFAFFBJO@SendPartyInviteAnswerPacket@	; `string'
+PUBLIC	??_C@_0BP@CFBLDODE@SendMessengerBlockRemovePacket@ ; `string'
 PUBLIC	??_C@_0BG@IFGKMOED@SendPartyInvitePacket@	; `string'
-PUBLIC	??_C@_0BG@JAJGIHK@SendPartyRemovePacket@	; `string'
+PUBLIC	??_C@_0CE@JAGCNDAI@SendMessengerBlockRemoveByVIDPa@ ; `string'
 PUBLIC	??_C@_0BE@JHFPDGFP@SendPartyExitPacket@		; `string'
-PUBLIC	??_C@_0BI@EONDHFJL@SendPartyUseSkillPacket@	; `string'
+PUBLIC	??_C@_0BM@PFAFFBJO@SendPartyInviteAnswerPacket@	; `string'
 PUBLIC	??_C@_0BI@LNEGCCFH@SendPartySetStatePacket@	; `string'
-PUBLIC	??_C@_0BL@CAAOLIHO@SendSafeboxSaveMoneyPacket@	; `string'
+PUBLIC	??_C@_0BG@JAJGIHK@SendPartyRemovePacket@	; `string'
 PUBLIC	??_C@_0BJ@JGBOMHFI@SendPartyParameterPacket@	; `string'
-PUBLIC	??_C@_0BJ@HNJCKALG@SendSafeboxCheckinPacket@	; `string'
+PUBLIC	??_C@_0BI@EONDHFJL@SendPartyUseSkillPacket@	; `string'
 PUBLIC	??_C@_0BP@MLAJADAA@SendSafeboxWithdrawMoneyPacket@ ; `string'
-PUBLIC	??_C@_0BK@JMMAEJFJ@SendSafeboxItemMovePacket@	; `string'
+PUBLIC	??_C@_0BL@CAAOLIHO@SendSafeboxSaveMoneyPacket@	; `string'
 PUBLIC	??_C@_0BK@LJAMACPE@SendSafeboxCheckoutPacket@	; `string'
-PUBLIC	??_C@_0BL@BJLFPMAE@SendQuestInputStringPacket@	; `string'
+PUBLIC	??_C@_0BJ@HNJCKALG@SendSafeboxCheckinPacket@	; `string'
 PUBLIC	??_C@_0BH@BDNDNKGE@SendMallCheckoutPacket@	; `string'
-PUBLIC	??_C@_0BJ@MFJNIJIJ@SendGuildAddMemberPacket@	; `string'
+PUBLIC	??_C@_0BK@JMMAEJFJ@SendSafeboxItemMovePacket@	; `string'
 PUBLIC	??_C@_0BH@HMDNFHNB@SendQuestConfirmPacket@	; `string'
-PUBLIC	??_C@_0BP@ODLEJFMG@SendGuildChangeGradeNamePacket@ ; `string'
+PUBLIC	??_C@_0BL@BJLFPMAE@SendQuestInputStringPacket@	; `string'
 PUBLIC	??_C@_0BM@GAJEHHNG@SendGuildRemoveMemberPacket@	; `string'
-PUBLIC	??_C@_0BF@OAFAHAKB@SendGuildOfferPacket@	; `string'
+PUBLIC	??_C@_0BJ@MFJNIJIJ@SendGuildAddMemberPacket@	; `string'
 PUBLIC	??_C@_0CE@EFLFPPCO@SendGuildChangeGradeAuthorityPa@ ; `string'
-PUBLIC	??_C@_0BN@MBNLMFLO@SendGuildDeleteCommentPacket@ ; `string'
+PUBLIC	??_C@_0BP@ODLEJFMG@SendGuildChangeGradeNamePacket@ ; `string'
 PUBLIC	??_C@_0BL@JLEHIONL@SendGuildPostCommentPacket@	; `string'
-PUBLIC	??_C@_0CB@KOIDGNFC@SendGuildChangeMemberGradePacke@ ; `string'
+PUBLIC	??_C@_0BF@OAFAHAKB@SendGuildOfferPacket@	; `string'
 PUBLIC	??_C@_0BP@BKEOCNGM@SendGuildRefreshCommentsPacket@ ; `string'
-PUBLIC	??_C@_0CD@BMLIKMKL@SendGuildChangeMemberGeneralPac@ ; `string'
+PUBLIC	??_C@_0BN@MBNLMFLO@SendGuildDeleteCommentPacket@ ; `string'
 PUBLIC	??_C@_0BI@HICDMLJH@SendGuildUseSkillPacket@	; `string'
-PUBLIC	??_C@_0BJ@LKJGDIEE@SendGuildChargeGSPPacket@	; `string'
+PUBLIC	??_C@_0CB@KOIDGNFC@SendGuildChangeMemberGradePacke@ ; `string'
 PUBLIC	??_C@_0BM@KLBFEJBI@SendGuildInviteAnswerPacket@	; `string'
-PUBLIC	??_C@_0BN@BPJGBHPL@SendGuildWithdrawMoneyPacket@ ; `string'
+PUBLIC	??_C@_0CD@BMLIKMKL@SendGuildChangeMemberGeneralPac@ ; `string'
 PUBLIC	??_C@_0BM@HDHMFNNO@SendGuildDepositMoneyPacket@	; `string'
-PUBLIC	??_C@_0BB@MBCAEHJO@SendRefinePacket@		; `string'
+PUBLIC	??_C@_0BJ@LKJGDIEE@SendGuildChargeGSPPacket@	; `string'
 PUBLIC	??_C@_0BM@NLIMKJKK@SendRequestRefineInfoPacket@	; `string'
-PUBLIC	??_C@_0BG@HLIDKLKJ@SetPacketSequenceMode@	; `string'
+PUBLIC	??_C@_0BN@BPJGBHPL@SendGuildWithdrawMoneyPacket@ ; `string'
 PUBLIC	??_C@_0BF@HEJDCMFH@SendSelectItemPacket@	; `string'
-PUBLIC	??_C@_0BC@NOAKHLIH@SetSkillGroupFake@		; `string'
+PUBLIC	??_C@_0BB@MBCAEHJO@SendRefinePacket@		; `string'
 PUBLIC	??_C@_0BG@KCIMJDEA@SetEmpireLanguageMode@	; `string'
-PUBLIC	??_C@_0BL@HLJICMNL@SendItemNewAttributePacket@	; `string'
+PUBLIC	??_C@_0BG@HLIDKLKJ@SetPacketSequenceMode@	; `string'
 PUBLIC	??_C@_0BB@CABIEEGM@RegisterErrorLog@		; `string'
-PUBLIC	??_C@_0BD@NCAGLKGI@SendItemSellPacket@		; `string'
+PUBLIC	??_C@_0BC@NOAKHLIH@SetSkillGroupFake@		; `string'
 PUBLIC	??_C@_0BG@LMAHKAGJ@SendItemDestroyPacket@	; `string'
-PUBLIC	??_C@_0M@BMMLELAG@SetLanguage@			; `string'
+PUBLIC	??_C@_0BL@HLJICMNL@SendItemNewAttributePacket@	; `string'
 PUBLIC	??_C@_0BJ@JLPIJBCL@SendChangeLanguagePacket@	; `string'
-PUBLIC	??_C@_0BD@CADFDBKC@SendWhisperDetails@		; `string'
+PUBLIC	??_C@_0BD@NCAGLKGI@SendItemSellPacket@		; `string'
 PUBLIC	??_C@_0M@BDNFJNIF@GetLanguage@			; `string'
-PUBLIC	??_C@_0CA@DMDCCOLJ@SendMessengerSummonByNamePacket@ ; `string'
+PUBLIC	??_C@_0M@BMMLELAG@SetLanguage@			; `string'
 PUBLIC	??_C@_0CF@DBCMLGOB@SendMessengerRequestWarpByNameP@ ; `string'
-PUBLIC	??_C@_0BC@MKMPHPEO@SendChestDropInfo@		; `string'
+PUBLIC	??_C@_0BD@CADFDBKC@SendWhisperDetails@		; `string'
 PUBLIC	??_C@_0BD@FJEJICMG@SendTargetInfoLoad@		; `string'
-PUBLIC	??_C@_0BF@EGLLPLHB@SendRequestEventData@	; `string'
+PUBLIC	??_C@_0CA@DMDCCOLJ@SendMessengerSummonByNamePacket@ ; `string'
 PUBLIC	??_C@_0BG@FNGLKDCN@SendRequestEventQuest@	; `string'
-PUBLIC	??_C@_0BN@FGANJKPC@SendExtBattlePassPremiumItem@ ; `string'
+PUBLIC	??_C@_0BC@MKMPHPEO@SendChestDropInfo@		; `string'
 PUBLIC	??_C@_0BI@OCAOJHPJ@SendExtBattlePassAction@	; `string'
-PUBLIC	??_C@_0BJ@IPOHLOKL@SendOfflineShopBuyPacket@	; `string'
+PUBLIC	??_C@_0BF@EGLLPLHB@SendRequestEventData@	; `string'
 PUBLIC	??_C@_0BJ@KEBAFNIE@SendOfflineShopEndPacket@	; `string'
-PUBLIC	??_C@_0BK@MHCHACHJ@SendRemoveOfflineShopItem@	; `string'
+PUBLIC	??_C@_0BN@FGANJKPC@SendExtBattlePassPremiumItem@ ; `string'
 PUBLIC	??_C@_0BH@OAFMCCNO@SendAddOfflineShopItem@	; `string'
-PUBLIC	??_C@_0BF@FGMFPANA@SendTakeOfflineMoney@	; `string'
+PUBLIC	??_C@_0BJ@IPOHLOKL@SendOfflineShopBuyPacket@	; `string'
 PUBLIC	??_C@_0BH@MIDGLPNJ@SendDestroyOfflineShop@	; `string'
-PUBLIC	??_C@_0BF@IDFHMEFI@SendOfflineShopCheck@	; `string'
+PUBLIC	??_C@_0BK@MHCHACHJ@SendRemoveOfflineShopItem@	; `string'
 PUBLIC	??_C@_0BL@IBEDKCND@SendOfflineShopChangeTitle@	; `string'
-PUBLIC	??_C@_0BK@BHBMOPGA@SendOfflineShopRemoveLogs@	; `string'
+PUBLIC	??_C@_0BF@FGMFPANA@SendTakeOfflineMoney@	; `string'
 PUBLIC	??_C@_0BG@BADFKLBC@SendOfflineShopButton@	; `string'
-PUBLIC	??_C@_0BB@CCPJMAB@SendGetBackItems@		; `string'
+PUBLIC	??_C@_0BF@IDFHMEFI@SendOfflineShopCheck@	; `string'
 PUBLIC	??_C@_0BB@DODFFFJG@SendOpenShopSlot@		; `string'
-PUBLIC	??_C@_0BA@GINOFKMH@SendOpenWithVID@		; `string'
+PUBLIC	??_C@_0BK@BHBMOPGA@SendOfflineShopRemoveLogs@	; `string'
 PUBLIC	??_C@_0M@PKHOJOKH@SendAddTime@			; `string'
-PUBLIC	??_C@_0BP@EMBKKKAC@SendQuestInputStringLongPacket@ ; `string'
+PUBLIC	??_C@_0BB@CCPJMAB@SendGetBackItems@		; `string'
 PUBLIC	??_C@_0BK@MFBNGEKH@SendPrivateShopSearchInfo@	; `string'
-PUBLIC	??_C@_0P@HANGMIDD@RegisterSkills@		; `string'
+PUBLIC	??_C@_0BA@GINOFKMH@SendOpenWithVID@		; `string'
 PUBLIC	??_C@_0BF@IBLIMNKE@LoadResourcesInCache@	; `string'
-PUBLIC	??_C@_0BH@DAGPIIGN@SendAuraRefineCheckOut@	; `string'
+PUBLIC	??_C@_0BP@EMBKKKAC@SendQuestInputStringLongPacket@ ; `string'
 PUBLIC	??_C@_0BG@CAKEIGOC@SendAuraRefineCheckIn@	; `string'
-PUBLIC	??_C@_0BF@NDLLIABO@SendAuraRefineCancel@	; `string'
+PUBLIC	??_C@_0P@HANGMIDD@RegisterSkills@		; `string'
 PUBLIC	??_C@_0BF@EMOBFCJD@SendAuraRefineAccept@	; `string'
-PUBLIC	??_C@_0BC@DPPMLCAB@SendPetFeedPacket@		; `string'
+PUBLIC	??_C@_0BH@DAGPIIGN@SendAuraRefineCheckOut@	; `string'
 PUBLIC	??_C@_0BA@EKELKFID@CheckUsePetItem@		; `string'
-PUBLIC	??_C@_0BM@GAONBPGD@SendPetHatchingWindowPacket@	; `string'
+PUBLIC	??_C@_0BF@NDLLIABO@SendAuraRefineCancel@	; `string'
 PUBLIC	??_C@_0BG@CAPLAGOH@SendPetHatchingPacket@	; `string'
-PUBLIC	??_C@_0BO@CHBKNLKN@SendPetNameChangeWindowPacket@ ; `string'
+PUBLIC	??_C@_0BC@DPPMLCAB@SendPetFeedPacket@		; `string'
 PUBLIC	??_C@_0BI@EBDKMLFG@SendPetNameChangePacket@	; `string'
-PUBLIC	??_C@_0BC@JMDGNLBA@SendPetLearnSkill@		; `string'
+PUBLIC	??_C@_0BM@GAONBPGD@SendPetHatchingWindowPacket@	; `string'
 PUBLIC	??_C@_0BC@ODGMFKGN@SendPetWindowType@		; `string'
-PUBLIC	??_C@_0BD@GMMPELPL@SendPetDeleteSkill@		; `string'
+PUBLIC	??_C@_0BO@CHBKNLKN@SendPetNameChangeWindowPacket@ ; `string'
 PUBLIC	??_C@_0BL@KHAOMOFC@SendPetSkillUpgradeRequest@	; `string'
-PUBLIC	??_C@_0BF@IELOFHOB@SendPetAttrDetermine@	; `string'
+PUBLIC	??_C@_0BC@JMDGNLBA@SendPetLearnSkill@		; `string'
 PUBLIC	??_C@_0BG@PCKLFOPF@SendPetDeleteAllSkill@	; `string'
-PUBLIC	??_C@_0O@FEFPMGMH@SendPetRevive@		; `string'
+PUBLIC	??_C@_0BD@GMMPELPL@SendPetDeleteSkill@		; `string'
 PUBLIC	??_C@_0BC@LDLOKAHN@SendPetAttrChange@		; `string'
-PUBLIC	??_C@_0BH@BFIJMALG@SendChangeLookCheckOut@	; `string'
+PUBLIC	??_C@_0BF@IELOFHOB@SendPetAttrDetermine@	; `string'
 PUBLIC	??_C@_0BG@KJDOPNFA@SendChangeLookCheckIn@	; `string'
-PUBLIC	??_C@_0CD@CGFABPFC@SendChangeLookCheckOutFreeYangI@ ; `string'
+PUBLIC	??_C@_0O@FEFPMGMH@SendPetRevive@		; `string'
 PUBLIC	??_C@_0CC@KAHMBMII@SendChangeLookCheckInFreeYangIt@ ; `string'
-PUBLIC	??_C@_0BF@OEMKPNHP@SendChangeLookCanCle@	; `string'
+PUBLIC	??_C@_0BH@BFIJMALG@SendChangeLookCheckOut@	; `string'
 PUBLIC	??_C@_0BF@FLBAAAK@SendChangeLookAccept@		; `string'
-PUBLIC	??_C@_0L@LILDODAP@ERROR_NONE@			; `string'
+PUBLIC	??_C@_0CD@CGFABPFC@SendChangeLookCheckOutFreeYangI@ ; `string'
 PUBLIC	??_C@_0BC@BHMNHCBE@SendHuntingAction@		; `string'
-PUBLIC	??_C@_0BA@NEJKKBEJ@ERROR_LOAD_MARK@		; `string'
+PUBLIC	??_C@_0BF@OEMKPNHP@SendChangeLookCanCle@	; `string'
 PUBLIC	??_C@_0BK@BILAANNF@ERROR_CONNECT_MARK_SERVER@	; `string'
-PUBLIC	??_C@_0BC@GOIIBBEJ@ERROR_MARK_HEIGHT@		; `string'
+PUBLIC	??_C@_0L@LILDODAP@ERROR_NONE@			; `string'
 PUBLIC	??_C@_0BB@FEGLKDMB@ERROR_MARK_WIDTH@		; `string'
-PUBLIC	??_C@_0CA@JMHMMKLO@ERROR_MARK_CHECK_NEED_RECONNECT@ ; `string'
+PUBLIC	??_C@_0BA@NEJKKBEJ@ERROR_LOAD_MARK@		; `string'
 PUBLIC	??_C@_0CB@BOPIDGGI@ERROR_MARK_UPLOAD_NEED_RECONNEC@ ; `string'
-PUBLIC	??_C@_0BE@EBCKEIDN@PHASE_WINDOW_SELECT@		; `string'
+PUBLIC	??_C@_0BC@GOIIBBEJ@ERROR_MARK_HEIGHT@		; `string'
 PUBLIC	??_C@_0BD@JBLBGAIB@PHASE_WINDOW_LOGIN@		; `string'
-PUBLIC	??_C@_0BC@PFELHICG@PHASE_WINDOW_LOAD@		; `string'
+PUBLIC	??_C@_0CA@JMHMMKLO@ERROR_MARK_CHECK_NEED_RECONNECT@ ; `string'
 PUBLIC	??_C@_0BE@PAOFIFBD@PHASE_WINDOW_CREATE@		; `string'
-PUBLIC	??_C@_0BE@IIMEMMI@PHASE_WINDOW_EMPIRE@		; `string'
+PUBLIC	??_C@_0BE@EBCKEIDN@PHASE_WINDOW_SELECT@		; `string'
 PUBLIC	??_C@_0BC@HCEFPGCB@PHASE_WINDOW_GAME@		; `string'
-PUBLIC	??_C@_0BK@HDGGAJBJ@ACCOUNT_CHARACTER_SLOT_ID@	; `string'
+PUBLIC	??_C@_0BC@PFELHICG@PHASE_WINDOW_LOAD@		; `string'
 PUBLIC	??_C@_0BC@BCDCNNFP@PHASE_WINDOW_LOGO@		; `string'
-PUBLIC	??_C@_0BM@DNOALMKC@ACCOUNT_CHARACTER_SLOT_RACE@	; `string'
+PUBLIC	??_C@_0BE@IIMEMMI@PHASE_WINDOW_EMPIRE@		; `string'
 PUBLIC	??_C@_0BM@JCGOOLCL@ACCOUNT_CHARACTER_SLOT_NAME@	; `string'
-PUBLIC	??_C@_0BL@MPBHOFJE@ACCOUNT_CHARACTER_SLOT_STR@	; `string'
+PUBLIC	??_C@_0BK@HDGGAJBJ@ACCOUNT_CHARACTER_SLOT_ID@	; `string'
 PUBLIC	??_C@_0BN@MPLCEAPH@ACCOUNT_CHARACTER_SLOT_LEVEL@ ; `string'
-PUBLIC	??_C@_0BL@LHFINDEP@ACCOUNT_CHARACTER_SLOT_INT@	; `string'
+PUBLIC	??_C@_0BM@DNOALMKC@ACCOUNT_CHARACTER_SLOT_RACE@	; `string'
 PUBLIC	??_C@_0BL@OFNCKLHP@ACCOUNT_CHARACTER_SLOT_DEX@	; `string'
-PUBLIC	??_C@_0CA@KFILFMPG@ACCOUNT_CHARACTER_SLOT_PLAYTIME@ ; `string'
+PUBLIC	??_C@_0BL@MPBHOFJE@ACCOUNT_CHARACTER_SLOT_STR@	; `string'
 PUBLIC	??_C@_0BL@PICCMPNB@ACCOUNT_CHARACTER_SLOT_HTH@	; `string'
-PUBLIC	??_C@_0BM@CNLCDDNB@ACCOUNT_CHARACTER_SLOT_ADDR@	; `string'
+PUBLIC	??_C@_0BL@LHFINDEP@ACCOUNT_CHARACTER_SLOT_INT@	; `string'
 PUBLIC	??_C@_0BM@JNGCLJJM@ACCOUNT_CHARACTER_SLOT_FORM@	; `string'
-PUBLIC	??_C@_0CA@GFKKICFN@ACCOUNT_CHARACTER_SLOT_GUILD_ID@ ; `string'
+PUBLIC	??_C@_0CA@KFILFMPG@ACCOUNT_CHARACTER_SLOT_PLAYTIME@ ; `string'
 PUBLIC	??_C@_0BM@OJMCHCKG@ACCOUNT_CHARACTER_SLOT_PORT@	; `string'
-PUBLIC	??_C@_0CI@NIHCCHJE@ACCOUNT_CHARACTER_SLOT_CHANGE_N@ ; `string'
+PUBLIC	??_C@_0BM@CNLCDDNB@ACCOUNT_CHARACTER_SLOT_ADDR@	; `string'
 PUBLIC	??_C@_0CC@HMBBCNEO@ACCOUNT_CHARACTER_SLOT_GUILD_NA@ ; `string'
-PUBLIC	??_C@_0BM@LAKJJJHL@ACCOUNT_CHARACTER_SLOT_ACCE@	; `string'
+PUBLIC	??_C@_0CA@GFKKICFN@ACCOUNT_CHARACTER_SLOT_GUILD_ID@ ; `string'
 PUBLIC	??_C@_0BM@BPKEDCMB@ACCOUNT_CHARACTER_SLOT_HAIR@	; `string'
-PUBLIC	??_C@_0CF@GNEHPDHB@ACCOUNT_CHARACTER_SLOT_LAST_PLA@ ; `string'
+PUBLIC	??_C@_0CI@NIHCCHJE@ACCOUNT_CHARACTER_SLOT_CHANGE_N@ ; `string'
 PUBLIC	??_C@_0BM@LMFDJNHL@ACCOUNT_CHARACTER_SLOT_AURA@	; `string'
-PUBLIC	??_C@_0BH@IJCJGIEO@SERVER_COMMAND_LOG_OUT@	; `string'
+PUBLIC	??_C@_0BM@LAKJJJHL@ACCOUNT_CHARACTER_SLOT_ACCE@	; `string'
 PUBLIC	??_C@_0CA@IIDLBDLK@ACCOUNT_CHARACTER_SLOT_MAPINDEX@ ; `string'
-PUBLIC	??_C@_0BE@FCDHFIHM@SERVER_COMMAND_QUIT@		; `string'
+PUBLIC	??_C@_0CF@GNEHPDHB@ACCOUNT_CHARACTER_SLOT_LAST_PLA@ ; `string'
 PUBLIC	??_C@_0CK@IDBHOJE@SERVER_COMMAND_RETURN_TO_SELECT@ ; `string'
-PUBLIC	??_C@_08HPFPLIJI@EMPIRE_B@			; `string'
+PUBLIC	??_C@_0BH@IJCJGIEO@SERVER_COMMAND_LOG_OUT@	; `string'
 PUBLIC	??_C@_08FEHCOLFL@EMPIRE_A@			; `string'
-PUBLIC	??_C@_0BK@IMPJEABP@DS_SUB_HEADER_REFINE_FAIL@	; `string'
+PUBLIC	??_C@_0BE@FCDHFIHM@SERVER_COMMAND_QUIT@		; `string'
 PUBLIC	??_C@_08GGEEIJNJ@EMPIRE_C@			; `string'
-PUBLIC	??_C@_0CL@CHMHFOOJ@DS_SUB_HEADER_REFINE_FAIL_INVAL@ ; `string'
+PUBLIC	??_C@_08HPFPLIJI@EMPIRE_B@			; `string'
 PUBLIC	??_C@_0CF@NHMIOPGD@DS_SUB_HEADER_REFINE_FAIL_MAX_R@ ; `string'
-PUBLIC	??_C@_0CO@HIKHGDBM@DS_SUB_HEADER_REFINE_FAIL_NOT_E@ ; `string'
+PUBLIC	??_C@_0BK@IMPJEABP@DS_SUB_HEADER_REFINE_FAIL@	; `string'
 PUBLIC	??_C@_0CL@DKLCPNME@DS_SUB_HEADER_REFINE_FAIL_NOT_E@ ; `string'
-PUBLIC	??_C@_0BN@OJONLPHM@DS_SUB_HEADER_REFINE_SUCCEED@ ; `string'
+PUBLIC	??_C@_0CL@CHMHFOOJ@DS_SUB_HEADER_REFINE_FAIL_INVAL@ ; `string'
 PUBLIC	??_C@_0CM@PJCLJBCJ@DS_SUB_HEADER_REFINE_FAIL_TOO_M@ ; `string'
-PUBLIC	??_C@_0BE@JDFPADGF@BIOLOG_MANAGER_SEND@		; `string'
+PUBLIC	??_C@_0CO@HIKHGDBM@DS_SUB_HEADER_REFINE_FAIL_NOT_E@ ; `string'
 PUBLIC	??_C@_0BE@KHDCNJCA@BIOLOG_MANAGER_OPEN@		; `string'
+PUBLIC	??_C@_0BN@OJONLPHM@DS_SUB_HEADER_REFINE_SUCCEED@ ; `string'
 PUBLIC	??_C@_0BF@HOEEONGC@BIOLOG_MANAGER_TIMER@	; `string'
+PUBLIC	??_C@_0BE@JDFPADGF@BIOLOG_MANAGER_SEND@		; `string'
 EXTRN	__Cnd_do_broadcast_at_thread_exit:PROC
 EXTRN	__beginthreadex:PROC
-EXTRN	__imp__PyList_GetItem:PROC
 EXTRN	__imp__PyList_Size:PROC
+EXTRN	__imp__PyList_GetItem:PROC
 EXTRN	__imp__PyArg_ParseTuple:PROC
 EXTRN	?SetPacketSequenceMode@CNetworkStream@@QAEX_N@Z:PROC ; CNetworkStream::SetPacketSequenceMode
 EXTRN	?PyTuple_GetLongLong@@YA_NPAU_object@@HPA_J@Z:PROC ; PyTuple_GetLongLong
@@ -972,528 +972,518 @@ _DATA	SEGMENT
 	DD	00H
 	ORG $+8
 _DATA	ENDS
-;	COMDAT ??_C@_0BF@HOEEONGC@BIOLOG_MANAGER_TIMER@
-CONST	SEGMENT
-??_C@_0BF@HOEEONGC@BIOLOG_MANAGER_TIMER@ DB 'BIOLOG_MANAGER_TIMER', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BE@KHDCNJCA@BIOLOG_MANAGER_OPEN@
-CONST	SEGMENT
-??_C@_0BE@KHDCNJCA@BIOLOG_MANAGER_OPEN@ DB 'BIOLOG_MANAGER_OPEN', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BE@JDFPADGF@BIOLOG_MANAGER_SEND@
 CONST	SEGMENT
 ??_C@_0BE@JDFPADGF@BIOLOG_MANAGER_SEND@ DB 'BIOLOG_MANAGER_SEND', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CM@PJCLJBCJ@DS_SUB_HEADER_REFINE_FAIL_TOO_M@
+;	COMDAT ??_C@_0BF@HOEEONGC@BIOLOG_MANAGER_TIMER@
 CONST	SEGMENT
-??_C@_0CM@PJCLJBCJ@DS_SUB_HEADER_REFINE_FAIL_TOO_M@ DB 'DS_SUB_HEADER_REF'
-	DB	'INE_FAIL_TOO_MUCH_MATERIAL', 00H		; `string'
+??_C@_0BF@HOEEONGC@BIOLOG_MANAGER_TIMER@ DB 'BIOLOG_MANAGER_TIMER', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@OJONLPHM@DS_SUB_HEADER_REFINE_SUCCEED@
 CONST	SEGMENT
 ??_C@_0BN@OJONLPHM@DS_SUB_HEADER_REFINE_SUCCEED@ DB 'DS_SUB_HEADER_REFINE'
 	DB	'_SUCCEED', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CL@DKLCPNME@DS_SUB_HEADER_REFINE_FAIL_NOT_E@
+;	COMDAT ??_C@_0BE@KHDCNJCA@BIOLOG_MANAGER_OPEN@
 CONST	SEGMENT
-??_C@_0CL@DKLCPNME@DS_SUB_HEADER_REFINE_FAIL_NOT_E@ DB 'DS_SUB_HEADER_REF'
-	DB	'INE_FAIL_NOT_ENOUGH_MONEY', 00H		; `string'
+??_C@_0BE@KHDCNJCA@BIOLOG_MANAGER_OPEN@ DB 'BIOLOG_MANAGER_OPEN', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CO@HIKHGDBM@DS_SUB_HEADER_REFINE_FAIL_NOT_E@
 CONST	SEGMENT
 ??_C@_0CO@HIKHGDBM@DS_SUB_HEADER_REFINE_FAIL_NOT_E@ DB 'DS_SUB_HEADER_REF'
 	DB	'INE_FAIL_NOT_ENOUGH_MATERIAL', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CF@NHMIOPGD@DS_SUB_HEADER_REFINE_FAIL_MAX_R@
+;	COMDAT ??_C@_0CM@PJCLJBCJ@DS_SUB_HEADER_REFINE_FAIL_TOO_M@
 CONST	SEGMENT
-??_C@_0CF@NHMIOPGD@DS_SUB_HEADER_REFINE_FAIL_MAX_R@ DB 'DS_SUB_HEADER_REF'
-	DB	'INE_FAIL_MAX_REFINE', 00H			; `string'
+??_C@_0CM@PJCLJBCJ@DS_SUB_HEADER_REFINE_FAIL_TOO_M@ DB 'DS_SUB_HEADER_REF'
+	DB	'INE_FAIL_TOO_MUCH_MATERIAL', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CL@CHMHFOOJ@DS_SUB_HEADER_REFINE_FAIL_INVAL@
 CONST	SEGMENT
 ??_C@_0CL@CHMHFOOJ@DS_SUB_HEADER_REFINE_FAIL_INVAL@ DB 'DS_SUB_HEADER_REF'
 	DB	'INE_FAIL_INVALID_MATERIAL', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08GGEEIJNJ@EMPIRE_C@
+;	COMDAT ??_C@_0CL@DKLCPNME@DS_SUB_HEADER_REFINE_FAIL_NOT_E@
 CONST	SEGMENT
-??_C@_08GGEEIJNJ@EMPIRE_C@ DB 'EMPIRE_C', 00H		; `string'
+??_C@_0CL@DKLCPNME@DS_SUB_HEADER_REFINE_FAIL_NOT_E@ DB 'DS_SUB_HEADER_REF'
+	DB	'INE_FAIL_NOT_ENOUGH_MONEY', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@IMPJEABP@DS_SUB_HEADER_REFINE_FAIL@
 CONST	SEGMENT
 ??_C@_0BK@IMPJEABP@DS_SUB_HEADER_REFINE_FAIL@ DB 'DS_SUB_HEADER_REFINE_FA'
 	DB	'IL', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08FEHCOLFL@EMPIRE_A@
+;	COMDAT ??_C@_0CF@NHMIOPGD@DS_SUB_HEADER_REFINE_FAIL_MAX_R@
 CONST	SEGMENT
-??_C@_08FEHCOLFL@EMPIRE_A@ DB 'EMPIRE_A', 00H		; `string'
+??_C@_0CF@NHMIOPGD@DS_SUB_HEADER_REFINE_FAIL_MAX_R@ DB 'DS_SUB_HEADER_REF'
+	DB	'INE_FAIL_MAX_REFINE', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08HPFPLIJI@EMPIRE_B@
 CONST	SEGMENT
 ??_C@_08HPFPLIJI@EMPIRE_B@ DB 'EMPIRE_B', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_08GGEEIJNJ@EMPIRE_C@
+CONST	SEGMENT
+??_C@_08GGEEIJNJ@EMPIRE_C@ DB 'EMPIRE_C', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BE@FCDHFIHM@SERVER_COMMAND_QUIT@
+CONST	SEGMENT
+??_C@_0BE@FCDHFIHM@SERVER_COMMAND_QUIT@ DB 'SERVER_COMMAND_QUIT', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_08FEHCOLFL@EMPIRE_A@
+CONST	SEGMENT
+??_C@_08FEHCOLFL@EMPIRE_A@ DB 'EMPIRE_A', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BH@IJCJGIEO@SERVER_COMMAND_LOG_OUT@
+CONST	SEGMENT
+??_C@_0BH@IJCJGIEO@SERVER_COMMAND_LOG_OUT@ DB 'SERVER_COMMAND_LOG_OUT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CK@IDBHOJE@SERVER_COMMAND_RETURN_TO_SELECT@
 CONST	SEGMENT
 ??_C@_0CK@IDBHOJE@SERVER_COMMAND_RETURN_TO_SELECT@ DB 'SERVER_COMMAND_RET'
 	DB	'URN_TO_SELECT_CHARACTER', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@FCDHFIHM@SERVER_COMMAND_QUIT@
+;	COMDAT ??_C@_0CF@GNEHPDHB@ACCOUNT_CHARACTER_SLOT_LAST_PLA@
 CONST	SEGMENT
-??_C@_0BE@FCDHFIHM@SERVER_COMMAND_QUIT@ DB 'SERVER_COMMAND_QUIT', 00H ; `string'
+??_C@_0CF@GNEHPDHB@ACCOUNT_CHARACTER_SLOT_LAST_PLA@ DB 'ACCOUNT_CHARACTER'
+	DB	'_SLOT_LAST_PLAYTIME', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@IIDLBDLK@ACCOUNT_CHARACTER_SLOT_MAPINDEX@
 CONST	SEGMENT
 ??_C@_0CA@IIDLBDLK@ACCOUNT_CHARACTER_SLOT_MAPINDEX@ DB 'ACCOUNT_CHARACTER'
 	DB	'_SLOT_MAPINDEX', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@IJCJGIEO@SERVER_COMMAND_LOG_OUT@
+;	COMDAT ??_C@_0BM@LAKJJJHL@ACCOUNT_CHARACTER_SLOT_ACCE@
 CONST	SEGMENT
-??_C@_0BH@IJCJGIEO@SERVER_COMMAND_LOG_OUT@ DB 'SERVER_COMMAND_LOG_OUT', 00H ; `string'
+??_C@_0BM@LAKJJJHL@ACCOUNT_CHARACTER_SLOT_ACCE@ DB 'ACCOUNT_CHARACTER_SLO'
+	DB	'T_ACCE', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@LMFDJNHL@ACCOUNT_CHARACTER_SLOT_AURA@
 CONST	SEGMENT
 ??_C@_0BM@LMFDJNHL@ACCOUNT_CHARACTER_SLOT_AURA@ DB 'ACCOUNT_CHARACTER_SLO'
 	DB	'T_AURA', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CF@GNEHPDHB@ACCOUNT_CHARACTER_SLOT_LAST_PLA@
+;	COMDAT ??_C@_0CI@NIHCCHJE@ACCOUNT_CHARACTER_SLOT_CHANGE_N@
 CONST	SEGMENT
-??_C@_0CF@GNEHPDHB@ACCOUNT_CHARACTER_SLOT_LAST_PLA@ DB 'ACCOUNT_CHARACTER'
-	DB	'_SLOT_LAST_PLAYTIME', 00H			; `string'
+??_C@_0CI@NIHCCHJE@ACCOUNT_CHARACTER_SLOT_CHANGE_N@ DB 'ACCOUNT_CHARACTER'
+	DB	'_SLOT_CHANGE_NAME_FLAG', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@BPKEDCMB@ACCOUNT_CHARACTER_SLOT_HAIR@
 CONST	SEGMENT
 ??_C@_0BM@BPKEDCMB@ACCOUNT_CHARACTER_SLOT_HAIR@ DB 'ACCOUNT_CHARACTER_SLO'
 	DB	'T_HAIR', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BM@LAKJJJHL@ACCOUNT_CHARACTER_SLOT_ACCE@
+;	COMDAT ??_C@_0CA@GFKKICFN@ACCOUNT_CHARACTER_SLOT_GUILD_ID@
 CONST	SEGMENT
-??_C@_0BM@LAKJJJHL@ACCOUNT_CHARACTER_SLOT_ACCE@ DB 'ACCOUNT_CHARACTER_SLO'
-	DB	'T_ACCE', 00H				; `string'
+??_C@_0CA@GFKKICFN@ACCOUNT_CHARACTER_SLOT_GUILD_ID@ DB 'ACCOUNT_CHARACTER'
+	DB	'_SLOT_GUILD_ID', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CC@HMBBCNEO@ACCOUNT_CHARACTER_SLOT_GUILD_NA@
 CONST	SEGMENT
 ??_C@_0CC@HMBBCNEO@ACCOUNT_CHARACTER_SLOT_GUILD_NA@ DB 'ACCOUNT_CHARACTER'
 	DB	'_SLOT_GUILD_NAME', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CI@NIHCCHJE@ACCOUNT_CHARACTER_SLOT_CHANGE_N@
+;	COMDAT ??_C@_0BM@CNLCDDNB@ACCOUNT_CHARACTER_SLOT_ADDR@
 CONST	SEGMENT
-??_C@_0CI@NIHCCHJE@ACCOUNT_CHARACTER_SLOT_CHANGE_N@ DB 'ACCOUNT_CHARACTER'
-	DB	'_SLOT_CHANGE_NAME_FLAG', 00H		; `string'
+??_C@_0BM@CNLCDDNB@ACCOUNT_CHARACTER_SLOT_ADDR@ DB 'ACCOUNT_CHARACTER_SLO'
+	DB	'T_ADDR', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@OJMCHCKG@ACCOUNT_CHARACTER_SLOT_PORT@
 CONST	SEGMENT
 ??_C@_0BM@OJMCHCKG@ACCOUNT_CHARACTER_SLOT_PORT@ DB 'ACCOUNT_CHARACTER_SLO'
 	DB	'T_PORT', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CA@GFKKICFN@ACCOUNT_CHARACTER_SLOT_GUILD_ID@
+;	COMDAT ??_C@_0CA@KFILFMPG@ACCOUNT_CHARACTER_SLOT_PLAYTIME@
 CONST	SEGMENT
-??_C@_0CA@GFKKICFN@ACCOUNT_CHARACTER_SLOT_GUILD_ID@ DB 'ACCOUNT_CHARACTER'
-	DB	'_SLOT_GUILD_ID', 00H			; `string'
+??_C@_0CA@KFILFMPG@ACCOUNT_CHARACTER_SLOT_PLAYTIME@ DB 'ACCOUNT_CHARACTER'
+	DB	'_SLOT_PLAYTIME', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@JNGCLJJM@ACCOUNT_CHARACTER_SLOT_FORM@
 CONST	SEGMENT
 ??_C@_0BM@JNGCLJJM@ACCOUNT_CHARACTER_SLOT_FORM@ DB 'ACCOUNT_CHARACTER_SLO'
 	DB	'T_FORM', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BM@CNLCDDNB@ACCOUNT_CHARACTER_SLOT_ADDR@
+;	COMDAT ??_C@_0BL@LHFINDEP@ACCOUNT_CHARACTER_SLOT_INT@
 CONST	SEGMENT
-??_C@_0BM@CNLCDDNB@ACCOUNT_CHARACTER_SLOT_ADDR@ DB 'ACCOUNT_CHARACTER_SLO'
-	DB	'T_ADDR', 00H				; `string'
+??_C@_0BL@LHFINDEP@ACCOUNT_CHARACTER_SLOT_INT@ DB 'ACCOUNT_CHARACTER_SLOT'
+	DB	'_INT', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@PICCMPNB@ACCOUNT_CHARACTER_SLOT_HTH@
 CONST	SEGMENT
 ??_C@_0BL@PICCMPNB@ACCOUNT_CHARACTER_SLOT_HTH@ DB 'ACCOUNT_CHARACTER_SLOT'
 	DB	'_HTH', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CA@KFILFMPG@ACCOUNT_CHARACTER_SLOT_PLAYTIME@
+;	COMDAT ??_C@_0BL@MPBHOFJE@ACCOUNT_CHARACTER_SLOT_STR@
 CONST	SEGMENT
-??_C@_0CA@KFILFMPG@ACCOUNT_CHARACTER_SLOT_PLAYTIME@ DB 'ACCOUNT_CHARACTER'
-	DB	'_SLOT_PLAYTIME', 00H			; `string'
+??_C@_0BL@MPBHOFJE@ACCOUNT_CHARACTER_SLOT_STR@ DB 'ACCOUNT_CHARACTER_SLOT'
+	DB	'_STR', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@OFNCKLHP@ACCOUNT_CHARACTER_SLOT_DEX@
 CONST	SEGMENT
 ??_C@_0BL@OFNCKLHP@ACCOUNT_CHARACTER_SLOT_DEX@ DB 'ACCOUNT_CHARACTER_SLOT'
 	DB	'_DEX', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@LHFINDEP@ACCOUNT_CHARACTER_SLOT_INT@
+;	COMDAT ??_C@_0BM@DNOALMKC@ACCOUNT_CHARACTER_SLOT_RACE@
 CONST	SEGMENT
-??_C@_0BL@LHFINDEP@ACCOUNT_CHARACTER_SLOT_INT@ DB 'ACCOUNT_CHARACTER_SLOT'
-	DB	'_INT', 00H					; `string'
+??_C@_0BM@DNOALMKC@ACCOUNT_CHARACTER_SLOT_RACE@ DB 'ACCOUNT_CHARACTER_SLO'
+	DB	'T_RACE', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@MPLCEAPH@ACCOUNT_CHARACTER_SLOT_LEVEL@
 CONST	SEGMENT
 ??_C@_0BN@MPLCEAPH@ACCOUNT_CHARACTER_SLOT_LEVEL@ DB 'ACCOUNT_CHARACTER_SL'
 	DB	'OT_LEVEL', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@MPBHOFJE@ACCOUNT_CHARACTER_SLOT_STR@
+;	COMDAT ??_C@_0BK@HDGGAJBJ@ACCOUNT_CHARACTER_SLOT_ID@
 CONST	SEGMENT
-??_C@_0BL@MPBHOFJE@ACCOUNT_CHARACTER_SLOT_STR@ DB 'ACCOUNT_CHARACTER_SLOT'
-	DB	'_STR', 00H					; `string'
+??_C@_0BK@HDGGAJBJ@ACCOUNT_CHARACTER_SLOT_ID@ DB 'ACCOUNT_CHARACTER_SLOT_'
+	DB	'ID', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@JCGOOLCL@ACCOUNT_CHARACTER_SLOT_NAME@
 CONST	SEGMENT
 ??_C@_0BM@JCGOOLCL@ACCOUNT_CHARACTER_SLOT_NAME@ DB 'ACCOUNT_CHARACTER_SLO'
 	DB	'T_NAME', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BM@DNOALMKC@ACCOUNT_CHARACTER_SLOT_RACE@
+;	COMDAT ??_C@_0BE@IIMEMMI@PHASE_WINDOW_EMPIRE@
 CONST	SEGMENT
-??_C@_0BM@DNOALMKC@ACCOUNT_CHARACTER_SLOT_RACE@ DB 'ACCOUNT_CHARACTER_SLO'
-	DB	'T_RACE', 00H				; `string'
+??_C@_0BE@IIMEMMI@PHASE_WINDOW_EMPIRE@ DB 'PHASE_WINDOW_EMPIRE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@BCDCNNFP@PHASE_WINDOW_LOGO@
 CONST	SEGMENT
 ??_C@_0BC@BCDCNNFP@PHASE_WINDOW_LOGO@ DB 'PHASE_WINDOW_LOGO', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BK@HDGGAJBJ@ACCOUNT_CHARACTER_SLOT_ID@
+;	COMDAT ??_C@_0BC@PFELHICG@PHASE_WINDOW_LOAD@
 CONST	SEGMENT
-??_C@_0BK@HDGGAJBJ@ACCOUNT_CHARACTER_SLOT_ID@ DB 'ACCOUNT_CHARACTER_SLOT_'
-	DB	'ID', 00H					; `string'
+??_C@_0BC@PFELHICG@PHASE_WINDOW_LOAD@ DB 'PHASE_WINDOW_LOAD', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@HCEFPGCB@PHASE_WINDOW_GAME@
 CONST	SEGMENT
 ??_C@_0BC@HCEFPGCB@PHASE_WINDOW_GAME@ DB 'PHASE_WINDOW_GAME', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@IIMEMMI@PHASE_WINDOW_EMPIRE@
-CONST	SEGMENT
-??_C@_0BE@IIMEMMI@PHASE_WINDOW_EMPIRE@ DB 'PHASE_WINDOW_EMPIRE', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BE@PAOFIFBD@PHASE_WINDOW_CREATE@
-CONST	SEGMENT
-??_C@_0BE@PAOFIFBD@PHASE_WINDOW_CREATE@ DB 'PHASE_WINDOW_CREATE', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BC@PFELHICG@PHASE_WINDOW_LOAD@
-CONST	SEGMENT
-??_C@_0BC@PFELHICG@PHASE_WINDOW_LOAD@ DB 'PHASE_WINDOW_LOAD', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BD@JBLBGAIB@PHASE_WINDOW_LOGIN@
-CONST	SEGMENT
-??_C@_0BD@JBLBGAIB@PHASE_WINDOW_LOGIN@ DB 'PHASE_WINDOW_LOGIN', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BE@EBCKEIDN@PHASE_WINDOW_SELECT@
 CONST	SEGMENT
 ??_C@_0BE@EBCKEIDN@PHASE_WINDOW_SELECT@ DB 'PHASE_WINDOW_SELECT', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CB@BOPIDGGI@ERROR_MARK_UPLOAD_NEED_RECONNEC@
+;	COMDAT ??_C@_0BE@PAOFIFBD@PHASE_WINDOW_CREATE@
 CONST	SEGMENT
-??_C@_0CB@BOPIDGGI@ERROR_MARK_UPLOAD_NEED_RECONNEC@ DB 'ERROR_MARK_UPLOAD'
-	DB	'_NEED_RECONNECT', 00H			; `string'
+??_C@_0BE@PAOFIFBD@PHASE_WINDOW_CREATE@ DB 'PHASE_WINDOW_CREATE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@JMHMMKLO@ERROR_MARK_CHECK_NEED_RECONNECT@
 CONST	SEGMENT
 ??_C@_0CA@JMHMMKLO@ERROR_MARK_CHECK_NEED_RECONNECT@ DB 'ERROR_MARK_CHECK_'
 	DB	'NEED_RECONNECT', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@FEGLKDMB@ERROR_MARK_WIDTH@
+;	COMDAT ??_C@_0BD@JBLBGAIB@PHASE_WINDOW_LOGIN@
 CONST	SEGMENT
-??_C@_0BB@FEGLKDMB@ERROR_MARK_WIDTH@ DB 'ERROR_MARK_WIDTH', 00H ; `string'
+??_C@_0BD@JBLBGAIB@PHASE_WINDOW_LOGIN@ DB 'PHASE_WINDOW_LOGIN', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@GOIIBBEJ@ERROR_MARK_HEIGHT@
 CONST	SEGMENT
 ??_C@_0BC@GOIIBBEJ@ERROR_MARK_HEIGHT@ DB 'ERROR_MARK_HEIGHT', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0CB@BOPIDGGI@ERROR_MARK_UPLOAD_NEED_RECONNEC@
+CONST	SEGMENT
+??_C@_0CB@BOPIDGGI@ERROR_MARK_UPLOAD_NEED_RECONNEC@ DB 'ERROR_MARK_UPLOAD'
+	DB	'_NEED_RECONNECT', 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BA@NEJKKBEJ@ERROR_LOAD_MARK@
+CONST	SEGMENT
+??_C@_0BA@NEJKKBEJ@ERROR_LOAD_MARK@ DB 'ERROR_LOAD_MARK', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BB@FEGLKDMB@ERROR_MARK_WIDTH@
+CONST	SEGMENT
+??_C@_0BB@FEGLKDMB@ERROR_MARK_WIDTH@ DB 'ERROR_MARK_WIDTH', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0L@LILDODAP@ERROR_NONE@
+CONST	SEGMENT
+??_C@_0L@LILDODAP@ERROR_NONE@ DB 'ERROR_NONE', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@BILAANNF@ERROR_CONNECT_MARK_SERVER@
 CONST	SEGMENT
 ??_C@_0BK@BILAANNF@ERROR_CONNECT_MARK_SERVER@ DB 'ERROR_CONNECT_MARK_SERV'
 	DB	'ER', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@NEJKKBEJ@ERROR_LOAD_MARK@
-CONST	SEGMENT
-??_C@_0BA@NEJKKBEJ@ERROR_LOAD_MARK@ DB 'ERROR_LOAD_MARK', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BC@BHMNHCBE@SendHuntingAction@
-CONST	SEGMENT
-??_C@_0BC@BHMNHCBE@SendHuntingAction@ DB 'SendHuntingAction', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0L@LILDODAP@ERROR_NONE@
-CONST	SEGMENT
-??_C@_0L@LILDODAP@ERROR_NONE@ DB 'ERROR_NONE', 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BF@FLBAAAK@SendChangeLookAccept@
-CONST	SEGMENT
-??_C@_0BF@FLBAAAK@SendChangeLookAccept@ DB 'SendChangeLookAccept', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BF@OEMKPNHP@SendChangeLookCanCle@
 CONST	SEGMENT
 ??_C@_0BF@OEMKPNHP@SendChangeLookCanCle@ DB 'SendChangeLookCanCle', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CC@KAHMBMII@SendChangeLookCheckInFreeYangIt@
+;	COMDAT ??_C@_0BC@BHMNHCBE@SendHuntingAction@
 CONST	SEGMENT
-??_C@_0CC@KAHMBMII@SendChangeLookCheckInFreeYangIt@ DB 'SendChangeLookChe'
-	DB	'ckInFreeYangItem', 00H			; `string'
+??_C@_0BC@BHMNHCBE@SendHuntingAction@ DB 'SendHuntingAction', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CD@CGFABPFC@SendChangeLookCheckOutFreeYangI@
 CONST	SEGMENT
 ??_C@_0CD@CGFABPFC@SendChangeLookCheckOutFreeYangI@ DB 'SendChangeLookChe'
 	DB	'ckOutFreeYangItem', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@KJDOPNFA@SendChangeLookCheckIn@
+;	COMDAT ??_C@_0BF@FLBAAAK@SendChangeLookAccept@
 CONST	SEGMENT
-??_C@_0BG@KJDOPNFA@SendChangeLookCheckIn@ DB 'SendChangeLookCheckIn', 00H ; `string'
+??_C@_0BF@FLBAAAK@SendChangeLookAccept@ DB 'SendChangeLookAccept', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@BFIJMALG@SendChangeLookCheckOut@
 CONST	SEGMENT
 ??_C@_0BH@BFIJMALG@SendChangeLookCheckOut@ DB 'SendChangeLookCheckOut', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@LDLOKAHN@SendPetAttrChange@
+;	COMDAT ??_C@_0CC@KAHMBMII@SendChangeLookCheckInFreeYangIt@
 CONST	SEGMENT
-??_C@_0BC@LDLOKAHN@SendPetAttrChange@ DB 'SendPetAttrChange', 00H ; `string'
+??_C@_0CC@KAHMBMII@SendChangeLookCheckInFreeYangIt@ DB 'SendChangeLookChe'
+	DB	'ckInFreeYangItem', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@FEFPMGMH@SendPetRevive@
 CONST	SEGMENT
 ??_C@_0O@FEFPMGMH@SendPetRevive@ DB 'SendPetRevive', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@PCKLFOPF@SendPetDeleteAllSkill@
+;	COMDAT ??_C@_0BG@KJDOPNFA@SendChangeLookCheckIn@
 CONST	SEGMENT
-??_C@_0BG@PCKLFOPF@SendPetDeleteAllSkill@ DB 'SendPetDeleteAllSkill', 00H ; `string'
+??_C@_0BG@KJDOPNFA@SendChangeLookCheckIn@ DB 'SendChangeLookCheckIn', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@IELOFHOB@SendPetAttrDetermine@
 CONST	SEGMENT
 ??_C@_0BF@IELOFHOB@SendPetAttrDetermine@ DB 'SendPetAttrDetermine', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BC@LDLOKAHN@SendPetAttrChange@
+CONST	SEGMENT
+??_C@_0BC@LDLOKAHN@SendPetAttrChange@ DB 'SendPetAttrChange', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BD@GMMPELPL@SendPetDeleteSkill@
+CONST	SEGMENT
+??_C@_0BD@GMMPELPL@SendPetDeleteSkill@ DB 'SendPetDeleteSkill', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BG@PCKLFOPF@SendPetDeleteAllSkill@
+CONST	SEGMENT
+??_C@_0BG@PCKLFOPF@SendPetDeleteAllSkill@ DB 'SendPetDeleteAllSkill', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BC@JMDGNLBA@SendPetLearnSkill@
+CONST	SEGMENT
+??_C@_0BC@JMDGNLBA@SendPetLearnSkill@ DB 'SendPetLearnSkill', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@KHAOMOFC@SendPetSkillUpgradeRequest@
 CONST	SEGMENT
 ??_C@_0BL@KHAOMOFC@SendPetSkillUpgradeRequest@ DB 'SendPetSkillUpgradeReq'
 	DB	'uest', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@GMMPELPL@SendPetDeleteSkill@
-CONST	SEGMENT
-??_C@_0BD@GMMPELPL@SendPetDeleteSkill@ DB 'SendPetDeleteSkill', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BC@ODGMFKGN@SendPetWindowType@
-CONST	SEGMENT
-??_C@_0BC@ODGMFKGN@SendPetWindowType@ DB 'SendPetWindowType', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BC@JMDGNLBA@SendPetLearnSkill@
-CONST	SEGMENT
-??_C@_0BC@JMDGNLBA@SendPetLearnSkill@ DB 'SendPetLearnSkill', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BI@EBDKMLFG@SendPetNameChangePacket@
-CONST	SEGMENT
-??_C@_0BI@EBDKMLFG@SendPetNameChangePacket@ DB 'SendPetNameChangePacket', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BO@CHBKNLKN@SendPetNameChangeWindowPacket@
 CONST	SEGMENT
 ??_C@_0BO@CHBKNLKN@SendPetNameChangeWindowPacket@ DB 'SendPetNameChangeWi'
 	DB	'ndowPacket', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@CAPLAGOH@SendPetHatchingPacket@
+;	COMDAT ??_C@_0BC@ODGMFKGN@SendPetWindowType@
 CONST	SEGMENT
-??_C@_0BG@CAPLAGOH@SendPetHatchingPacket@ DB 'SendPetHatchingPacket', 00H ; `string'
+??_C@_0BC@ODGMFKGN@SendPetWindowType@ DB 'SendPetWindowType', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@GAONBPGD@SendPetHatchingWindowPacket@
 CONST	SEGMENT
 ??_C@_0BM@GAONBPGD@SendPetHatchingWindowPacket@ DB 'SendPetHatchingWindow'
 	DB	'Packet', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@EKELKFID@CheckUsePetItem@
+;	COMDAT ??_C@_0BI@EBDKMLFG@SendPetNameChangePacket@
 CONST	SEGMENT
-??_C@_0BA@EKELKFID@CheckUsePetItem@ DB 'CheckUsePetItem', 00H ; `string'
+??_C@_0BI@EBDKMLFG@SendPetNameChangePacket@ DB 'SendPetNameChangePacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@DPPMLCAB@SendPetFeedPacket@
 CONST	SEGMENT
 ??_C@_0BC@DPPMLCAB@SendPetFeedPacket@ DB 'SendPetFeedPacket', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@EMOBFCJD@SendAuraRefineAccept@
+;	COMDAT ??_C@_0BG@CAPLAGOH@SendPetHatchingPacket@
 CONST	SEGMENT
-??_C@_0BF@EMOBFCJD@SendAuraRefineAccept@ DB 'SendAuraRefineAccept', 00H ; `string'
+??_C@_0BG@CAPLAGOH@SendPetHatchingPacket@ DB 'SendPetHatchingPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@NDLLIABO@SendAuraRefineCancel@
 CONST	SEGMENT
 ??_C@_0BF@NDLLIABO@SendAuraRefineCancel@ DB 'SendAuraRefineCancel', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@CAKEIGOC@SendAuraRefineCheckIn@
+;	COMDAT ??_C@_0BA@EKELKFID@CheckUsePetItem@
 CONST	SEGMENT
-??_C@_0BG@CAKEIGOC@SendAuraRefineCheckIn@ DB 'SendAuraRefineCheckIn', 00H ; `string'
+??_C@_0BA@EKELKFID@CheckUsePetItem@ DB 'CheckUsePetItem', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@DAGPIIGN@SendAuraRefineCheckOut@
 CONST	SEGMENT
 ??_C@_0BH@DAGPIIGN@SendAuraRefineCheckOut@ DB 'SendAuraRefineCheckOut', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@IBLIMNKE@LoadResourcesInCache@
+;	COMDAT ??_C@_0BF@EMOBFCJD@SendAuraRefineAccept@
 CONST	SEGMENT
-??_C@_0BF@IBLIMNKE@LoadResourcesInCache@ DB 'LoadResourcesInCache', 00H ; `string'
+??_C@_0BF@EMOBFCJD@SendAuraRefineAccept@ DB 'SendAuraRefineAccept', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@HANGMIDD@RegisterSkills@
 CONST	SEGMENT
 ??_C@_0P@HANGMIDD@RegisterSkills@ DB 'RegisterSkills', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BK@MFBNGEKH@SendPrivateShopSearchInfo@
+;	COMDAT ??_C@_0BG@CAKEIGOC@SendAuraRefineCheckIn@
 CONST	SEGMENT
-??_C@_0BK@MFBNGEKH@SendPrivateShopSearchInfo@ DB 'SendPrivateShopSearchIn'
-	DB	'fo', 00H					; `string'
+??_C@_0BG@CAKEIGOC@SendAuraRefineCheckIn@ DB 'SendAuraRefineCheckIn', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BP@EMBKKKAC@SendQuestInputStringLongPacket@
 CONST	SEGMENT
 ??_C@_0BP@EMBKKKAC@SendQuestInputStringLongPacket@ DB 'SendQuestInputStri'
 	DB	'ngLongPacket', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@PKHOJOKH@SendAddTime@
+;	COMDAT ??_C@_0BF@IBLIMNKE@LoadResourcesInCache@
 CONST	SEGMENT
-??_C@_0M@PKHOJOKH@SendAddTime@ DB 'SendAddTime', 00H	; `string'
+??_C@_0BF@IBLIMNKE@LoadResourcesInCache@ DB 'LoadResourcesInCache', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@GINOFKMH@SendOpenWithVID@
 CONST	SEGMENT
 ??_C@_0BA@GINOFKMH@SendOpenWithVID@ DB 'SendOpenWithVID', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@DODFFFJG@SendOpenShopSlot@
+;	COMDAT ??_C@_0BK@MFBNGEKH@SendPrivateShopSearchInfo@
 CONST	SEGMENT
-??_C@_0BB@DODFFFJG@SendOpenShopSlot@ DB 'SendOpenShopSlot', 00H ; `string'
+??_C@_0BK@MFBNGEKH@SendPrivateShopSearchInfo@ DB 'SendPrivateShopSearchIn'
+	DB	'fo', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@CCPJMAB@SendGetBackItems@
 CONST	SEGMENT
 ??_C@_0BB@CCPJMAB@SendGetBackItems@ DB 'SendGetBackItems', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@BADFKLBC@SendOfflineShopButton@
+;	COMDAT ??_C@_0M@PKHOJOKH@SendAddTime@
 CONST	SEGMENT
-??_C@_0BG@BADFKLBC@SendOfflineShopButton@ DB 'SendOfflineShopButton', 00H ; `string'
+??_C@_0M@PKHOJOKH@SendAddTime@ DB 'SendAddTime', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@BHBMOPGA@SendOfflineShopRemoveLogs@
 CONST	SEGMENT
 ??_C@_0BK@BHBMOPGA@SendOfflineShopRemoveLogs@ DB 'SendOfflineShopRemoveLo'
 	DB	'gs', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@IBEDKCND@SendOfflineShopChangeTitle@
+;	COMDAT ??_C@_0BB@DODFFFJG@SendOpenShopSlot@
 CONST	SEGMENT
-??_C@_0BL@IBEDKCND@SendOfflineShopChangeTitle@ DB 'SendOfflineShopChangeT'
-	DB	'itle', 00H					; `string'
+??_C@_0BB@DODFFFJG@SendOpenShopSlot@ DB 'SendOpenShopSlot', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@IDFHMEFI@SendOfflineShopCheck@
 CONST	SEGMENT
 ??_C@_0BF@IDFHMEFI@SendOfflineShopCheck@ DB 'SendOfflineShopCheck', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@MIDGLPNJ@SendDestroyOfflineShop@
+;	COMDAT ??_C@_0BG@BADFKLBC@SendOfflineShopButton@
 CONST	SEGMENT
-??_C@_0BH@MIDGLPNJ@SendDestroyOfflineShop@ DB 'SendDestroyOfflineShop', 00H ; `string'
+??_C@_0BG@BADFKLBC@SendOfflineShopButton@ DB 'SendOfflineShopButton', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@FGMFPANA@SendTakeOfflineMoney@
 CONST	SEGMENT
 ??_C@_0BF@FGMFPANA@SendTakeOfflineMoney@ DB 'SendTakeOfflineMoney', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@OAFMCCNO@SendAddOfflineShopItem@
+;	COMDAT ??_C@_0BL@IBEDKCND@SendOfflineShopChangeTitle@
 CONST	SEGMENT
-??_C@_0BH@OAFMCCNO@SendAddOfflineShopItem@ DB 'SendAddOfflineShopItem', 00H ; `string'
+??_C@_0BL@IBEDKCND@SendOfflineShopChangeTitle@ DB 'SendOfflineShopChangeT'
+	DB	'itle', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@MHCHACHJ@SendRemoveOfflineShopItem@
 CONST	SEGMENT
 ??_C@_0BK@MHCHACHJ@SendRemoveOfflineShopItem@ DB 'SendRemoveOfflineShopIt'
 	DB	'em', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@KEBAFNIE@SendOfflineShopEndPacket@
+;	COMDAT ??_C@_0BH@MIDGLPNJ@SendDestroyOfflineShop@
 CONST	SEGMENT
-??_C@_0BJ@KEBAFNIE@SendOfflineShopEndPacket@ DB 'SendOfflineShopEndPacket'
-	DB	00H						; `string'
+??_C@_0BH@MIDGLPNJ@SendDestroyOfflineShop@ DB 'SendDestroyOfflineShop', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@IPOHLOKL@SendOfflineShopBuyPacket@
 CONST	SEGMENT
 ??_C@_0BJ@IPOHLOKL@SendOfflineShopBuyPacket@ DB 'SendOfflineShopBuyPacket'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@OCAOJHPJ@SendExtBattlePassAction@
+;	COMDAT ??_C@_0BH@OAFMCCNO@SendAddOfflineShopItem@
 CONST	SEGMENT
-??_C@_0BI@OCAOJHPJ@SendExtBattlePassAction@ DB 'SendExtBattlePassAction', 00H ; `string'
+??_C@_0BH@OAFMCCNO@SendAddOfflineShopItem@ DB 'SendAddOfflineShopItem', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@FGANJKPC@SendExtBattlePassPremiumItem@
 CONST	SEGMENT
 ??_C@_0BN@FGANJKPC@SendExtBattlePassPremiumItem@ DB 'SendExtBattlePassPre'
 	DB	'miumItem', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@FNGLKDCN@SendRequestEventQuest@
+;	COMDAT ??_C@_0BJ@KEBAFNIE@SendOfflineShopEndPacket@
 CONST	SEGMENT
-??_C@_0BG@FNGLKDCN@SendRequestEventQuest@ DB 'SendRequestEventQuest', 00H ; `string'
+??_C@_0BJ@KEBAFNIE@SendOfflineShopEndPacket@ DB 'SendOfflineShopEndPacket'
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@EGLLPLHB@SendRequestEventData@
 CONST	SEGMENT
 ??_C@_0BF@EGLLPLHB@SendRequestEventData@ DB 'SendRequestEventData', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@FJEJICMG@SendTargetInfoLoad@
+;	COMDAT ??_C@_0BI@OCAOJHPJ@SendExtBattlePassAction@
 CONST	SEGMENT
-??_C@_0BD@FJEJICMG@SendTargetInfoLoad@ DB 'SendTargetInfoLoad', 00H ; `string'
+??_C@_0BI@OCAOJHPJ@SendExtBattlePassAction@ DB 'SendExtBattlePassAction', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@MKMPHPEO@SendChestDropInfo@
 CONST	SEGMENT
 ??_C@_0BC@MKMPHPEO@SendChestDropInfo@ DB 'SendChestDropInfo', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CF@DBCMLGOB@SendMessengerRequestWarpByNameP@
+;	COMDAT ??_C@_0BG@FNGLKDCN@SendRequestEventQuest@
 CONST	SEGMENT
-??_C@_0CF@DBCMLGOB@SendMessengerRequestWarpByNameP@ DB 'SendMessengerRequ'
-	DB	'estWarpByNamePacket', 00H			; `string'
+??_C@_0BG@FNGLKDCN@SendRequestEventQuest@ DB 'SendRequestEventQuest', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@DMDCCOLJ@SendMessengerSummonByNamePacket@
 CONST	SEGMENT
 ??_C@_0CA@DMDCCOLJ@SendMessengerSummonByNamePacket@ DB 'SendMessengerSumm'
 	DB	'onByNamePacket', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@BDNFJNIF@GetLanguage@
+;	COMDAT ??_C@_0BD@FJEJICMG@SendTargetInfoLoad@
 CONST	SEGMENT
-??_C@_0M@BDNFJNIF@GetLanguage@ DB 'GetLanguage', 00H	; `string'
+??_C@_0BD@FJEJICMG@SendTargetInfoLoad@ DB 'SendTargetInfoLoad', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@CADFDBKC@SendWhisperDetails@
 CONST	SEGMENT
 ??_C@_0BD@CADFDBKC@SendWhisperDetails@ DB 'SendWhisperDetails', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0CF@DBCMLGOB@SendMessengerRequestWarpByNameP@
+CONST	SEGMENT
+??_C@_0CF@DBCMLGOB@SendMessengerRequestWarpByNameP@ DB 'SendMessengerRequ'
+	DB	'estWarpByNamePacket', 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0M@BMMLELAG@SetLanguage@
+CONST	SEGMENT
+??_C@_0M@BMMLELAG@SetLanguage@ DB 'SetLanguage', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0M@BDNFJNIF@GetLanguage@
+CONST	SEGMENT
+??_C@_0M@BDNFJNIF@GetLanguage@ DB 'GetLanguage', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BD@NCAGLKGI@SendItemSellPacket@
+CONST	SEGMENT
+??_C@_0BD@NCAGLKGI@SendItemSellPacket@ DB 'SendItemSellPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@JLPIJBCL@SendChangeLanguagePacket@
 CONST	SEGMENT
 ??_C@_0BJ@JLPIJBCL@SendChangeLanguagePacket@ DB 'SendChangeLanguagePacket'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@BMMLELAG@SetLanguage@
-CONST	SEGMENT
-??_C@_0M@BMMLELAG@SetLanguage@ DB 'SetLanguage', 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BG@LMAHKAGJ@SendItemDestroyPacket@
-CONST	SEGMENT
-??_C@_0BG@LMAHKAGJ@SendItemDestroyPacket@ DB 'SendItemDestroyPacket', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BD@NCAGLKGI@SendItemSellPacket@
-CONST	SEGMENT
-??_C@_0BD@NCAGLKGI@SendItemSellPacket@ DB 'SendItemSellPacket', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BB@CABIEEGM@RegisterErrorLog@
-CONST	SEGMENT
-??_C@_0BB@CABIEEGM@RegisterErrorLog@ DB 'RegisterErrorLog', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BL@HLJICMNL@SendItemNewAttributePacket@
 CONST	SEGMENT
 ??_C@_0BL@HLJICMNL@SendItemNewAttributePacket@ DB 'SendItemNewAttributePa'
 	DB	'cket', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@KCIMJDEA@SetEmpireLanguageMode@
+;	COMDAT ??_C@_0BG@LMAHKAGJ@SendItemDestroyPacket@
 CONST	SEGMENT
-??_C@_0BG@KCIMJDEA@SetEmpireLanguageMode@ DB 'SetEmpireLanguageMode', 00H ; `string'
+??_C@_0BG@LMAHKAGJ@SendItemDestroyPacket@ DB 'SendItemDestroyPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@NOAKHLIH@SetSkillGroupFake@
 CONST	SEGMENT
 ??_C@_0BC@NOAKHLIH@SetSkillGroupFake@ DB 'SetSkillGroupFake', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@HEJDCMFH@SendSelectItemPacket@
+;	COMDAT ??_C@_0BB@CABIEEGM@RegisterErrorLog@
 CONST	SEGMENT
-??_C@_0BF@HEJDCMFH@SendSelectItemPacket@ DB 'SendSelectItemPacket', 00H ; `string'
+??_C@_0BB@CABIEEGM@RegisterErrorLog@ DB 'RegisterErrorLog', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@HLIDKLKJ@SetPacketSequenceMode@
 CONST	SEGMENT
 ??_C@_0BG@HLIDKLKJ@SetPacketSequenceMode@ DB 'SetPacketSequenceMode', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BM@NLIMKJKK@SendRequestRefineInfoPacket@
+;	COMDAT ??_C@_0BG@KCIMJDEA@SetEmpireLanguageMode@
 CONST	SEGMENT
-??_C@_0BM@NLIMKJKK@SendRequestRefineInfoPacket@ DB 'SendRequestRefineInfo'
-	DB	'Packet', 00H				; `string'
+??_C@_0BG@KCIMJDEA@SetEmpireLanguageMode@ DB 'SetEmpireLanguageMode', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@MBCAEHJO@SendRefinePacket@
 CONST	SEGMENT
 ??_C@_0BB@MBCAEHJO@SendRefinePacket@ DB 'SendRefinePacket', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BM@HDHMFNNO@SendGuildDepositMoneyPacket@
+;	COMDAT ??_C@_0BF@HEJDCMFH@SendSelectItemPacket@
 CONST	SEGMENT
-??_C@_0BM@HDHMFNNO@SendGuildDepositMoneyPacket@ DB 'SendGuildDepositMoney'
-	DB	'Packet', 00H				; `string'
+??_C@_0BF@HEJDCMFH@SendSelectItemPacket@ DB 'SendSelectItemPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@BPJGBHPL@SendGuildWithdrawMoneyPacket@
 CONST	SEGMENT
 ??_C@_0BN@BPJGBHPL@SendGuildWithdrawMoneyPacket@ DB 'SendGuildWithdrawMon'
 	DB	'eyPacket', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BM@KLBFEJBI@SendGuildInviteAnswerPacket@
+;	COMDAT ??_C@_0BM@NLIMKJKK@SendRequestRefineInfoPacket@
 CONST	SEGMENT
-??_C@_0BM@KLBFEJBI@SendGuildInviteAnswerPacket@ DB 'SendGuildInviteAnswer'
+??_C@_0BM@NLIMKJKK@SendRequestRefineInfoPacket@ DB 'SendRequestRefineInfo'
 	DB	'Packet', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@LKJGDIEE@SendGuildChargeGSPPacket@
@@ -1501,501 +1491,488 @@ CONST	SEGMENT
 ??_C@_0BJ@LKJGDIEE@SendGuildChargeGSPPacket@ DB 'SendGuildChargeGSPPacket'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@HICDMLJH@SendGuildUseSkillPacket@
+;	COMDAT ??_C@_0BM@HDHMFNNO@SendGuildDepositMoneyPacket@
 CONST	SEGMENT
-??_C@_0BI@HICDMLJH@SendGuildUseSkillPacket@ DB 'SendGuildUseSkillPacket', 00H ; `string'
+??_C@_0BM@HDHMFNNO@SendGuildDepositMoneyPacket@ DB 'SendGuildDepositMoney'
+	DB	'Packet', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CD@BMLIKMKL@SendGuildChangeMemberGeneralPac@
 CONST	SEGMENT
 ??_C@_0CD@BMLIKMKL@SendGuildChangeMemberGeneralPac@ DB 'SendGuildChangeMe'
 	DB	'mberGeneralPacket', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BP@BKEOCNGM@SendGuildRefreshCommentsPacket@
+;	COMDAT ??_C@_0BM@KLBFEJBI@SendGuildInviteAnswerPacket@
 CONST	SEGMENT
-??_C@_0BP@BKEOCNGM@SendGuildRefreshCommentsPacket@ DB 'SendGuildRefreshCo'
-	DB	'mmentsPacket', 00H				; `string'
+??_C@_0BM@KLBFEJBI@SendGuildInviteAnswerPacket@ DB 'SendGuildInviteAnswer'
+	DB	'Packet', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CB@KOIDGNFC@SendGuildChangeMemberGradePacke@
 CONST	SEGMENT
 ??_C@_0CB@KOIDGNFC@SendGuildChangeMemberGradePacke@ DB 'SendGuildChangeMe'
 	DB	'mberGradePacket', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@JLEHIONL@SendGuildPostCommentPacket@
+;	COMDAT ??_C@_0BI@HICDMLJH@SendGuildUseSkillPacket@
 CONST	SEGMENT
-??_C@_0BL@JLEHIONL@SendGuildPostCommentPacket@ DB 'SendGuildPostCommentPa'
-	DB	'cket', 00H					; `string'
+??_C@_0BI@HICDMLJH@SendGuildUseSkillPacket@ DB 'SendGuildUseSkillPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@MBNLMFLO@SendGuildDeleteCommentPacket@
 CONST	SEGMENT
 ??_C@_0BN@MBNLMFLO@SendGuildDeleteCommentPacket@ DB 'SendGuildDeleteComme'
 	DB	'ntPacket', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CE@EFLFPPCO@SendGuildChangeGradeAuthorityPa@
+;	COMDAT ??_C@_0BP@BKEOCNGM@SendGuildRefreshCommentsPacket@
 CONST	SEGMENT
-??_C@_0CE@EFLFPPCO@SendGuildChangeGradeAuthorityPa@ DB 'SendGuildChangeGr'
-	DB	'adeAuthorityPacket', 00H			; `string'
+??_C@_0BP@BKEOCNGM@SendGuildRefreshCommentsPacket@ DB 'SendGuildRefreshCo'
+	DB	'mmentsPacket', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@OAFAHAKB@SendGuildOfferPacket@
 CONST	SEGMENT
 ??_C@_0BF@OAFAHAKB@SendGuildOfferPacket@ DB 'SendGuildOfferPacket', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BM@GAJEHHNG@SendGuildRemoveMemberPacket@
+;	COMDAT ??_C@_0BL@JLEHIONL@SendGuildPostCommentPacket@
 CONST	SEGMENT
-??_C@_0BM@GAJEHHNG@SendGuildRemoveMemberPacket@ DB 'SendGuildRemoveMember'
-	DB	'Packet', 00H				; `string'
+??_C@_0BL@JLEHIONL@SendGuildPostCommentPacket@ DB 'SendGuildPostCommentPa'
+	DB	'cket', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BP@ODLEJFMG@SendGuildChangeGradeNamePacket@
 CONST	SEGMENT
 ??_C@_0BP@ODLEJFMG@SendGuildChangeGradeNamePacket@ DB 'SendGuildChangeGra'
 	DB	'deNamePacket', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@HMDNFHNB@SendQuestConfirmPacket@
+;	COMDAT ??_C@_0CE@EFLFPPCO@SendGuildChangeGradeAuthorityPa@
 CONST	SEGMENT
-??_C@_0BH@HMDNFHNB@SendQuestConfirmPacket@ DB 'SendQuestConfirmPacket', 00H ; `string'
+??_C@_0CE@EFLFPPCO@SendGuildChangeGradeAuthorityPa@ DB 'SendGuildChangeGr'
+	DB	'adeAuthorityPacket', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@MFJNIJIJ@SendGuildAddMemberPacket@
 CONST	SEGMENT
 ??_C@_0BJ@MFJNIJIJ@SendGuildAddMemberPacket@ DB 'SendGuildAddMemberPacket'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@BDNDNKGE@SendMallCheckoutPacket@
+;	COMDAT ??_C@_0BM@GAJEHHNG@SendGuildRemoveMemberPacket@
 CONST	SEGMENT
-??_C@_0BH@BDNDNKGE@SendMallCheckoutPacket@ DB 'SendMallCheckoutPacket', 00H ; `string'
+??_C@_0BM@GAJEHHNG@SendGuildRemoveMemberPacket@ DB 'SendGuildRemoveMember'
+	DB	'Packet', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@BJLFPMAE@SendQuestInputStringPacket@
 CONST	SEGMENT
 ??_C@_0BL@BJLFPMAE@SendQuestInputStringPacket@ DB 'SendQuestInputStringPa'
 	DB	'cket', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BK@LJAMACPE@SendSafeboxCheckoutPacket@
+;	COMDAT ??_C@_0BH@HMDNFHNB@SendQuestConfirmPacket@
 CONST	SEGMENT
-??_C@_0BK@LJAMACPE@SendSafeboxCheckoutPacket@ DB 'SendSafeboxCheckoutPack'
-	DB	'et', 00H					; `string'
+??_C@_0BH@HMDNFHNB@SendQuestConfirmPacket@ DB 'SendQuestConfirmPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@JMMAEJFJ@SendSafeboxItemMovePacket@
 CONST	SEGMENT
 ??_C@_0BK@JMMAEJFJ@SendSafeboxItemMovePacket@ DB 'SendSafeboxItemMovePack'
 	DB	'et', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BP@MLAJADAA@SendSafeboxWithdrawMoneyPacket@
+;	COMDAT ??_C@_0BH@BDNDNKGE@SendMallCheckoutPacket@
 CONST	SEGMENT
-??_C@_0BP@MLAJADAA@SendSafeboxWithdrawMoneyPacket@ DB 'SendSafeboxWithdra'
-	DB	'wMoneyPacket', 00H				; `string'
+??_C@_0BH@BDNDNKGE@SendMallCheckoutPacket@ DB 'SendMallCheckoutPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@HNJCKALG@SendSafeboxCheckinPacket@
 CONST	SEGMENT
 ??_C@_0BJ@HNJCKALG@SendSafeboxCheckinPacket@ DB 'SendSafeboxCheckinPacket'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@JGBOMHFI@SendPartyParameterPacket@
+;	COMDAT ??_C@_0BK@LJAMACPE@SendSafeboxCheckoutPacket@
 CONST	SEGMENT
-??_C@_0BJ@JGBOMHFI@SendPartyParameterPacket@ DB 'SendPartyParameterPacket'
-	DB	00H						; `string'
+??_C@_0BK@LJAMACPE@SendSafeboxCheckoutPacket@ DB 'SendSafeboxCheckoutPack'
+	DB	'et', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@CAAOLIHO@SendSafeboxSaveMoneyPacket@
 CONST	SEGMENT
 ??_C@_0BL@CAAOLIHO@SendSafeboxSaveMoneyPacket@ DB 'SendSafeboxSaveMoneyPa'
 	DB	'cket', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@LNEGCCFH@SendPartySetStatePacket@
+;	COMDAT ??_C@_0BP@MLAJADAA@SendSafeboxWithdrawMoneyPacket@
 CONST	SEGMENT
-??_C@_0BI@LNEGCCFH@SendPartySetStatePacket@ DB 'SendPartySetStatePacket', 00H ; `string'
+??_C@_0BP@MLAJADAA@SendSafeboxWithdrawMoneyPacket@ DB 'SendSafeboxWithdra'
+	DB	'wMoneyPacket', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@EONDHFJL@SendPartyUseSkillPacket@
 CONST	SEGMENT
 ??_C@_0BI@EONDHFJL@SendPartyUseSkillPacket@ DB 'SendPartyUseSkillPacket', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@JHFPDGFP@SendPartyExitPacket@
+;	COMDAT ??_C@_0BJ@JGBOMHFI@SendPartyParameterPacket@
 CONST	SEGMENT
-??_C@_0BE@JHFPDGFP@SendPartyExitPacket@ DB 'SendPartyExitPacket', 00H ; `string'
+??_C@_0BJ@JGBOMHFI@SendPartyParameterPacket@ DB 'SendPartyParameterPacket'
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@JAJGIHK@SendPartyRemovePacket@
 CONST	SEGMENT
 ??_C@_0BG@JAJGIHK@SendPartyRemovePacket@ DB 'SendPartyRemovePacket', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@IFGKMOED@SendPartyInvitePacket@
+;	COMDAT ??_C@_0BI@LNEGCCFH@SendPartySetStatePacket@
 CONST	SEGMENT
-??_C@_0BG@IFGKMOED@SendPartyInvitePacket@ DB 'SendPartyInvitePacket', 00H ; `string'
+??_C@_0BI@LNEGCCFH@SendPartySetStatePacket@ DB 'SendPartySetStatePacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@PFAFFBJO@SendPartyInviteAnswerPacket@
 CONST	SEGMENT
 ??_C@_0BM@PFAFFBJO@SendPartyInviteAnswerPacket@ DB 'SendPartyInviteAnswer'
 	DB	'Packet', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CC@LOMMKDNH@SendMessengerBlockAddByNamePack@
+;	COMDAT ??_C@_0BE@JHFPDGFP@SendPartyExitPacket@
 CONST	SEGMENT
-??_C@_0CC@LOMMKDNH@SendMessengerBlockAddByNamePack@ DB 'SendMessengerBloc'
-	DB	'kAddByNamePacket', 00H			; `string'
+??_C@_0BE@JHFPDGFP@SendPartyExitPacket@ DB 'SendPartyExitPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CE@JAGCNDAI@SendMessengerBlockRemoveByVIDPa@
 CONST	SEGMENT
 ??_C@_0CE@JAGCNDAI@SendMessengerBlockRemoveByVIDPa@ DB 'SendMessengerBloc'
 	DB	'kRemoveByVIDPacket', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CB@KIPMMBOF@SendMessengerBlockAddByVIDPacke@
+;	COMDAT ??_C@_0BG@IFGKMOED@SendPartyInvitePacket@
 CONST	SEGMENT
-??_C@_0CB@KIPMMBOF@SendMessengerBlockAddByVIDPacke@ DB 'SendMessengerBloc'
-	DB	'kAddByVIDPacket', 00H			; `string'
+??_C@_0BG@IFGKMOED@SendPartyInvitePacket@ DB 'SendPartyInvitePacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BP@CFBLDODE@SendMessengerBlockRemovePacket@
 CONST	SEGMENT
 ??_C@_0BP@CFBLDODE@SendMessengerBlockRemovePacket@ DB 'SendMessengerBlock'
 	DB	'RemovePacket', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BN@MPMOLLL@SendMessengerAddByNamePacket@
+;	COMDAT ??_C@_0CC@LOMMKDNH@SendMessengerBlockAddByNamePack@
 CONST	SEGMENT
-??_C@_0BN@MPMOLLL@SendMessengerAddByNamePacket@ DB 'SendMessengerAddByNam'
-	DB	'ePacket', 00H				; `string'
+??_C@_0CC@LOMMKDNH@SendMessengerBlockAddByNamePack@ DB 'SendMessengerBloc'
+	DB	'kAddByNamePacket', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@GIIDGGBB@SendMessengerRemovePacket@
 CONST	SEGMENT
 ??_C@_0BK@GIIDGGBB@SendMessengerRemovePacket@ DB 'SendMessengerRemovePack'
 	DB	'et', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@MCKLKDJM@RegisterEmoticonString@
+;	COMDAT ??_C@_0CB@KIPMMBOF@SendMessengerBlockAddByVIDPacke@
 CONST	SEGMENT
-??_C@_0BH@MCKLKDJM@RegisterEmoticonString@ DB 'RegisterEmoticonString', 00H ; `string'
+??_C@_0CB@KIPMMBOF@SendMessengerBlockAddByVIDPacke@ DB 'SendMessengerBloc'
+	DB	'kAddByVIDPacket', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@CFLPIFFM@SendMessengerAddByVIDPacket@
 CONST	SEGMENT
 ??_C@_0BM@CFLPIFFM@SendMessengerAddByVIDPacket@ DB 'SendMessengerAddByVID'
 	DB	'Packet', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@NCONKHHB@SendExchangeExitPacket@
+;	COMDAT ??_C@_0BN@MPMOLLL@SendMessengerAddByNamePacket@
 CONST	SEGMENT
-??_C@_0BH@NCONKHHB@SendExchangeExitPacket@ DB 'SendExchangeExitPacket', 00H ; `string'
+??_C@_0BN@MPMOLLL@SendMessengerAddByNamePacket@ DB 'SendMessengerAddByNam'
+	DB	'ePacket', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@FMJHAGEI@SendOnClickPacket@
 CONST	SEGMENT
 ??_C@_0BC@FMJHAGEI@SendOnClickPacket@ DB 'SendOnClickPacket', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@CGGGIOGM@SendExchangeElkAddPacket@
+;	COMDAT ??_C@_0BH@MCKLKDJM@RegisterEmoticonString@
 CONST	SEGMENT
-??_C@_0BJ@CGGGIOGM@SendExchangeElkAddPacket@ DB 'SendExchangeElkAddPacket'
-	DB	00H						; `string'
+??_C@_0BH@MCKLKDJM@RegisterEmoticonString@ DB 'RegisterEmoticonString', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@OFKJBLDC@SendExchangeAcceptPacket@
 CONST	SEGMENT
 ??_C@_0BJ@OFKJBLDC@SendExchangeAcceptPacket@ DB 'SendExchangeAcceptPacket'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BK@IIFDLCNA@SendExchangeItemAddPacket@
+;	COMDAT ??_C@_0BH@NCONKHHB@SendExchangeExitPacket@
 CONST	SEGMENT
-??_C@_0BK@IIFDLCNA@SendExchangeItemAddPacket@ DB 'SendExchangeItemAddPack'
-	DB	'et', 00H					; `string'
+??_C@_0BH@NCONKHHB@SendExchangeExitPacket@ DB 'SendExchangeExitPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@KKOEHGGC@SendExchangeItemDelPacket@
 CONST	SEGMENT
 ??_C@_0BK@KKOEHGGC@SendExchangeItemDelPacket@ DB 'SendExchangeItemDelPack'
 	DB	'et', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@BGJEIPGN@SendShopSellPacketNew@
+;	COMDAT ??_C@_0BJ@CGGGIOGM@SendExchangeElkAddPacket@
 CONST	SEGMENT
-??_C@_0BG@BGJEIPGN@SendShopSellPacketNew@ DB 'SendShopSellPacketNew', 00H ; `string'
+??_C@_0BJ@CGGGIOGM@SendExchangeElkAddPacket@ DB 'SendExchangeElkAddPacket'
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@BGNKGFKO@SendExchangeStartPacket@
 CONST	SEGMENT
 ??_C@_0BI@BGNKGFKO@SendExchangeStartPacket@ DB 'SendExchangeStartPacket', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@FPBLEBCL@SendShopBuyPacket@
+;	COMDAT ??_C@_0BK@IIFDLCNA@SendExchangeItemAddPacket@
 CONST	SEGMENT
-??_C@_0BC@FPBLEBCL@SendShopBuyPacket@ DB 'SendShopBuyPacket', 00H ; `string'
+??_C@_0BK@IIFDLCNA@SendExchangeItemAddPacket@ DB 'SendExchangeItemAddPack'
+	DB	'et', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@BFMEHPEE@SendShopSellPacket@
 CONST	SEGMENT
 ??_C@_0BD@BFMEHPEE@SendShopSellPacket@ DB 'SendShopSellPacket', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BG@BGJEIPGN@SendShopSellPacketNew@
+CONST	SEGMENT
+??_C@_0BG@BGJEIPGN@SendShopSellPacketNew@ DB 'SendShopSellPacketNew', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BC@HEOMKCAE@SendShopEndPacket@
+CONST	SEGMENT
+??_C@_0BC@HEOMKCAE@SendShopEndPacket@ DB 'SendShopEndPacket', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BC@FPBLEBCL@SendShopBuyPacket@
+CONST	SEGMENT
+??_C@_0BC@FPBLEBCL@SendShopBuyPacket@ DB 'SendShopBuyPacket', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BC@KNMEABPD@SendWhisperPacket@
+CONST	SEGMENT
+??_C@_0BC@KNMEABPD@SendWhisperPacket@ DB 'SendWhisperPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@KAMAKIKL@SendCharacterPositionPacket@
 CONST	SEGMENT
 ??_C@_0BM@KAMAKIKL@SendCharacterPositionPacket@ DB 'SendCharacterPosition'
 	DB	'Packet', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@HEOMKCAE@SendShopEndPacket@
+;	COMDAT ??_C@_0P@FJOINOIH@SendChatPacket@
 CONST	SEGMENT
-??_C@_0BC@HEOMKCAE@SendShopEndPacket@ DB 'SendShopEndPacket', 00H ; `string'
+??_C@_0P@FJOINOIH@SendChatPacket@ DB 'SendChatPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@BJHGOHPC@SendEmoticon@
 CONST	SEGMENT
 ??_C@_0N@BJHGOHPC@SendEmoticon@ DB 'SendEmoticon', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@KNMEABPD@SendWhisperPacket@
+;	COMDAT ??_C@_0L@CMGJAGDM@Disconnect@
 CONST	SEGMENT
-??_C@_0BC@KNMEABPD@SendWhisperPacket@ DB 'SendWhisperPacket', 00H ; `string'
+??_C@_0L@CMGJAGDM@Disconnect@ DB 'Disconnect', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09HENONEEN@IsConnect@
 CONST	SEGMENT
 ??_C@_09HENONEEN@IsConnect@ DB 'IsConnect', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@FJOINOIH@SendChatPacket@
+;	COMDAT ??_C@_0BD@FMAJCJM@SendGiveItemPacket@
 CONST	SEGMENT
-??_C@_0P@FJOINOIH@SendChatPacket@ DB 'SendChatPacket', 00H ; `string'
+??_C@_0BD@FMAJCJM@SendGiveItemPacket@ DB 'SendGiveItemPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@NKMDDBDL@SetOfflinePhase@
 CONST	SEGMENT
 ??_C@_0BA@NKMDDBDL@SetOfflinePhase@ DB 'SetOfflinePhase', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@CMGJAGDM@Disconnect@
+;	COMDAT ??_C@_0BD@BPAFBGKI@SendItemMovePacket@
 CONST	SEGMENT
-??_C@_0L@CMGJAGDM@Disconnect@ DB 'Disconnect', 00H	; `string'
+??_C@_0BD@BPAFBGKI@SendItemMovePacket@ DB 'SendItemMovePacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@PJHEIMI@SendItemPickUpPacket@
 CONST	SEGMENT
 ??_C@_0BF@PJHEIMI@SendItemPickUpPacket@ DB 'SendItemPickUpPacket', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@FMAJCJM@SendGiveItemPacket@
+;	COMDAT ??_C@_0BC@NEDFAOHK@SendElkDropPacket@
 CONST	SEGMENT
-??_C@_0BD@FMAJCJM@SendGiveItemPacket@ DB 'SendGiveItemPacket', 00H ; `string'
+??_C@_0BC@NEDFAOHK@SendElkDropPacket@ DB 'SendElkDropPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@ONKCIEDE@SendGoldDropPacketNew@
 CONST	SEGMENT
 ??_C@_0BG@ONKCIEDE@SendGoldDropPacketNew@ DB 'SendGoldDropPacketNew', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@BPAFBGKI@SendItemMovePacket@
+;	COMDAT ??_C@_0BD@ICCAOJBA@SendItemDropPacket@
 CONST	SEGMENT
-??_C@_0BD@BPAFBGKI@SendItemMovePacket@ DB 'SendItemMovePacket', 00H ; `string'
+??_C@_0BD@ICCAOJBA@SendItemDropPacket@ DB 'SendItemDropPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@PNFNACGL@SendItemDropPacketNew@
 CONST	SEGMENT
 ??_C@_0BG@PNFNACGL@SendItemDropPacketNew@ DB 'SendItemDropPacketNew', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@NEDFAOHK@SendElkDropPacket@
-CONST	SEGMENT
-??_C@_0BC@NEDFAOHK@SendElkDropPacket@ DB 'SendElkDropPacket', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BI@OBDMDOIB@SendItemUseToItemPacket@
-CONST	SEGMENT
-??_C@_0BI@OBDMDOIB@SendItemUseToItemPacket@ DB 'SendItemUseToItemPacket', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BD@ICCAOJBA@SendItemDropPacket@
-CONST	SEGMENT
-??_C@_0BD@ICCAOJBA@SendItemDropPacket@ DB 'SendItemDropPacket', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BE@NBECPFPH@SendEnterGamePacket@
-CONST	SEGMENT
-??_C@_0BE@NBECPFPH@SendEnterGamePacket@ DB 'SendEnterGamePacket', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BC@NHAKBOCP@SendItemUsePacket@
 CONST	SEGMENT
 ??_C@_0BC@NHAKBOCP@SendItemUsePacket@ DB 'SendItemUsePacket', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BK@NPKEAJJ@SendCreateCharacterPacket@
+;	COMDAT ??_C@_0BI@OBDMDOIB@SendItemUseToItemPacket@
 CONST	SEGMENT
-??_C@_0BK@NPKEAJJ@SendCreateCharacterPacket@ DB 'SendCreateCharacterPacke'
-	DB	't', 00H					; `string'
+??_C@_0BI@OBDMDOIB@SendItemUseToItemPacket@ DB 'SendItemUseToItemPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@PMHPNGGJ@SendDestroyCharacterPacket@
 CONST	SEGMENT
 ??_C@_0BL@PMHPNGGJ@SendDestroyCharacterPacket@ DB 'SendDestroyCharacterPa'
 	DB	'cket', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BK@MIKAHKDI@SendSelectCharacterPacket@
+;	COMDAT ??_C@_0BE@NBECPFPH@SendEnterGamePacket@
 CONST	SEGMENT
-??_C@_0BK@MIKAHKDI@SendSelectCharacterPacket@ DB 'SendSelectCharacterPack'
-	DB	'et', 00H					; `string'
+??_C@_0BE@NBECPFPH@SendEnterGamePacket@ DB 'SendEnterGamePacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@ODLJDBF@SendChangeNamePacket@
 CONST	SEGMENT
 ??_C@_0BF@ODLJDBF@SendChangeNamePacket@ DB 'SendChangeNamePacket', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@CNDIKGCL@SendLoginPacket@
+;	COMDAT ??_C@_0BK@NPKEAJJ@SendCreateCharacterPacket@
 CONST	SEGMENT
-??_C@_0BA@CNDIKGCL@SendLoginPacket@ DB 'SendLoginPacket', 00H ; `string'
+??_C@_0BK@NPKEAJJ@SendCreateCharacterPacket@ DB 'SendCreateCharacterPacke'
+	DB	't', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@IIELEKKA@SendSelectEmpirePacket@
 CONST	SEGMENT
 ??_C@_0BH@IIELEKKA@SendSelectEmpirePacket@ DB 'SendSelectEmpirePacket', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@MALJFJNO@ConnectUDP@
+;	COMDAT ??_C@_0BK@MIKAHKDI@SendSelectCharacterPacket@
 CONST	SEGMENT
-??_C@_0L@MALJFJNO@ConnectUDP@ DB 'ConnectUDP', 00H	; `string'
+??_C@_0BK@MIKAHKDI@SendSelectCharacterPacket@ DB 'SendSelectCharacterPack'
+	DB	'et', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@CIOLKAIG@ConnectToAccountServer@
 CONST	SEGMENT
 ??_C@_0BH@CIOLKAIG@ConnectToAccountServer@ DB 'ConnectToAccountServer', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@ILFBLEPH@ExitApplication@
+;	COMDAT ??_C@_0BA@CNDIKGCL@SendLoginPacket@
 CONST	SEGMENT
-??_C@_0BA@ILFBLEPH@ExitApplication@ DB 'ExitApplication', 00H ; `string'
+??_C@_0BA@CNDIKGCL@SendLoginPacket@ DB 'SendLoginPacket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@HNEKCIDO@ConnectTCP@
 CONST	SEGMENT
 ??_C@_0L@HNEKCIDO@ConnectTCP@ DB 'ConnectTCP', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@LPFGMFBP@LogOutGame@
+;	COMDAT ??_C@_0L@MALJFJNO@ConnectUDP@
 CONST	SEGMENT
-??_C@_0L@LPFGMFBP@LogOutGame@ DB 'LogOutGame', 00H	; `string'
+??_C@_0L@MALJFJNO@ConnectUDP@ DB 'ConnectUDP', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08ENBHLCHD@ExitGame@
 CONST	SEGMENT
 ??_C@_08ENBHLCHD@ExitGame@ DB 'ExitGame', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@GPIIIFGB@SetUDPRecvBufferSize@
+;	COMDAT ??_C@_0BA@ILFBLEPH@ExitApplication@
 CONST	SEGMENT
-??_C@_0BF@GPIIIFGB@SetUDPRecvBufferSize@ DB 'SetUDPRecvBufferSize', 00H ; `string'
+??_C@_0BA@ILFBLEPH@ExitApplication@ DB 'ExitApplication', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@PAACKIAL@DirectEnter@
 CONST	SEGMENT
 ??_C@_0M@PAACKIAL@DirectEnter@ DB 'DirectEnter', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@KAEIEPML@SetTCPRecvBufferSize@
+;	COMDAT ??_C@_0L@LPFGMFBP@LogOutGame@
 CONST	SEGMENT
-??_C@_0BF@KAEIEPML@SetTCPRecvBufferSize@ DB 'SetTCPRecvBufferSize', 00H ; `string'
+??_C@_0L@LPFGMFBP@LogOutGame@ DB 'LogOutGame', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@LOLMIHDO@SetTCPSendBufferSize@
 CONST	SEGMENT
 ??_C@_0BF@LOLMIHDO@SetTCPSendBufferSize@ DB 'SetTCPSendBufferSize', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@NJAILJBB@SetAccountConnectorHandler@
+;	COMDAT ??_C@_0BF@GPIIIFGB@SetUDPRecvBufferSize@
 CONST	SEGMENT
-??_C@_0BL@NJAILJBB@SetAccountConnectorHandler@ DB 'SetAccountConnectorHan'
-	DB	'dler', 00H					; `string'
+??_C@_0BF@GPIIIFGB@SetUDPRecvBufferSize@ DB 'SetUDPRecvBufferSize', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@EELFNDHB@SetHandler@
 CONST	SEGMENT
 ??_C@_0L@EELFNDHB@SetHandler@ DB 'SetHandler', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@NNDKGCIK@ClearPhaseWindow@
+;	COMDAT ??_C@_0BF@KAEIEPML@SetTCPRecvBufferSize@
 CONST	SEGMENT
-??_C@_0BB@NNDKGCIK@ClearPhaseWindow@ DB 'ClearPhaseWindow', 00H ; `string'
+??_C@_0BF@KAEIEPML@SetTCPRecvBufferSize@ DB 'SetTCPRecvBufferSize', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@KOOLAHFA@SetServerCommandParserWindow@
 CONST	SEGMENT
 ??_C@_0BN@KOOLAHFA@SetServerCommandParserWindow@ DB 'SetServerCommandPars'
 	DB	'erWindow', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@GLEGMFLM@SetLoginInfo@
+;	COMDAT ??_C@_0BL@NJAILJBB@SetAccountConnectorHandler@
 CONST	SEGMENT
-??_C@_0N@GLEGMFLM@SetLoginInfo@ DB 'SetLoginInfo', 00H	; `string'
+??_C@_0BL@NJAILJBB@SetAccountConnectorHandler@ DB 'SetAccountConnectorHan'
+	DB	'dler', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@EKNNFAK@SetPhaseWindow@
 CONST	SEGMENT
 ??_C@_0P@EKNNFAK@SetPhaseWindow@ DB 'SetPhaseWindow', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@MHKBLINM@GetFieldMusicVolume@
+;	COMDAT ??_C@_0BB@NNDKGCIK@ClearPhaseWindow@
 CONST	SEGMENT
-??_C@_0BE@MHKBLINM@GetFieldMusicVolume@ DB 'GetFieldMusicVolume', 00H ; `string'
+??_C@_0BB@NNDKGCIK@ClearPhaseWindow@ DB 'ClearPhaseWindow', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@BCCLDKB@ToggleGameDebugInfo@
 CONST	SEGMENT
 ??_C@_0BE@BCCLDKB@ToggleGameDebugInfo@ DB 'ToggleGameDebugInfo', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CC@DLIFIOE@GetAccountCharacterSlotDataStri@
+;	COMDAT ??_C@_0N@GLEGMFLM@SetLoginInfo@
 CONST	SEGMENT
-??_C@_0CC@DLIFIOE@GetAccountCharacterSlotDataStri@ DB 'GetAccountCharacte'
-	DB	'rSlotDataString', 00H			; `string'
+??_C@_0N@GLEGMFLM@SetLoginInfo@ DB 'SetLoginInfo', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@NAMIDKHD@GetFieldMusicFileName@
 CONST	SEGMENT
 ??_C@_0BG@NAMIDKHD@GetFieldMusicFileName@ DB 'GetFieldMusicFileName', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@GCCMJIJB@GetMainActorSkillGroup@
+;	COMDAT ??_C@_0BE@MHKBLINM@GetFieldMusicVolume@
 CONST	SEGMENT
-??_C@_0BH@GCCMJIJB@GetMainActorSkillGroup@ DB 'GetMainActorSkillGroup', 00H ; `string'
+??_C@_0BE@MHKBLINM@GetFieldMusicVolume@ DB 'GetFieldMusicVolume', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CD@PJJNPONG@GetAccountCharacterSlotDataInte@
 CONST	SEGMENT
 ??_C@_0CD@PJJNPONG@GetAccountCharacterSlotDataInte@ DB 'GetAccountCharact'
 	DB	'erSlotDataInteger', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@ICEJKPHA@GetMainActorRace@
+;	COMDAT ??_C@_0CC@DLIFIOE@GetAccountCharacterSlotDataStri@
 CONST	SEGMENT
-??_C@_0BB@ICEJKPHA@GetMainActorRace@ DB 'GetMainActorRace', 00H ; `string'
+??_C@_0CC@DLIFIOE@GetAccountCharacterSlotDataStri@ DB 'GetAccountCharacte'
+	DB	'rSlotDataString', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@JOIEFGML@GetMainActorEmpire@
 CONST	SEGMENT
 ??_C@_0BD@JOIEFGML@GetMainActorEmpire@ DB 'GetMainActorEmpire', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@GGDMINDM@GetEmpireID@
+;	COMDAT ??_C@_0BH@GCCMJIJB@GetMainActorSkillGroup@
 CONST	SEGMENT
-??_C@_0M@GGDMINDM@GetEmpireID@ DB 'GetEmpireID', 00H	; `string'
+??_C@_0BH@GCCMJIJB@GetMainActorSkillGroup@ DB 'GetMainActorSkillGroup', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@BPHKBGOL@GetMainActorVID@
 CONST	SEGMENT
 ??_C@_0BA@BPHKBGOL@GetMainActorVID@ DB 'GetMainActorVID', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@JEGFHCJL@UploadMark@
+;	COMDAT ??_C@_0BB@ICEJKPHA@GetMainActorRace@
 CONST	SEGMENT
-??_C@_0L@JEGFHCJL@UploadMark@ DB 'UploadMark', 00H	; `string'
+??_C@_0BB@ICEJKPHA@GetMainActorRace@ DB 'GetMainActorRace', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@OBKBFHKO@UploadSymbol@
 CONST	SEGMENT
 ??_C@_0N@OBKBFHKO@UploadSymbol@ DB 'UploadSymbol', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@CJJGFLBC@IsInsultIn@
+;	COMDAT ??_C@_0M@GGDMINDM@GetEmpireID@
 CONST	SEGMENT
-??_C@_0L@CJJGFLBC@IsInsultIn@ DB 'IsInsultIn', 00H	; `string'
+??_C@_0M@GGDMINDM@GetEmpireID@ DB 'GetEmpireID', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@NAIDDMMD@LoadInsultList@
 CONST	SEGMENT
 ??_C@_0P@NAIDDMMD@LoadInsultList@ DB 'LoadInsultList', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@OFMEOEDD@SetMarkServer@
+;	COMDAT ??_C@_0L@JEGFHCJL@UploadMark@
 CONST	SEGMENT
-??_C@_0O@OFMEOEDD@SetMarkServer@ DB 'SetMarkServer', 00H ; `string'
+??_C@_0L@JEGFHCJL@UploadMark@ DB 'UploadMark', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@EPNPIBON@IsChatInsultIn@
 CONST	SEGMENT
 ??_C@_0P@EPNPIBON@IsChatInsultIn@ DB 'IsChatInsultIn', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09CFNAMFEF@StartGame@
+;	COMDAT ??_C@_0L@CJJGFLBC@IsInsultIn@
 CONST	SEGMENT
-??_C@_09CFNAMFEF@StartGame@ DB 'StartGame', 00H		; `string'
+??_C@_0L@CJJGFLBC@IsInsultIn@ DB 'IsInsultIn', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04EIDOEOJH@Warp@
 CONST	SEGMENT
 ??_C@_04EIDOEOJH@Warp@ DB 'Warp', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@NJCKCHAI@PreserveServerCommand@
+;	COMDAT ??_C@_0O@OFMEOEDD@SetMarkServer@
 CONST	SEGMENT
-??_C@_0BG@NJCKCHAI@PreserveServerCommand@ DB 'PreserveServerCommand', 00H ; `string'
+??_C@_0O@OFMEOEDD@SetMarkServer@ DB 'SetMarkServer', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@PJDKKIPH@GetPreservedServerCommand@
 CONST	SEGMENT
 ??_C@_0BK@PJDKKIPH@GetPreservedServerCommand@ DB 'GetPreservedServerComma'
 	DB	'nd', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@JMAHAJJH@SetServerInfo@
+;	COMDAT ??_C@_09CFNAMFEF@StartGame@
 CONST	SEGMENT
-??_C@_0O@JMAHAJJH@SetServerInfo@ DB 'SetServerInfo', 00H ; `string'
+??_C@_09CFNAMFEF@StartGame@ DB 'StartGame', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@ODBJLKOA@GetServerInfo@
 CONST	SEGMENT
 ??_C@_0O@ODBJLKOA@GetServerInfo@ DB 'GetServerInfo', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@HFMJEOAC@GetBettingGuildWarValue@
+;	COMDAT ??_C@_0BG@NJCKCHAI@PreserveServerCommand@
 CONST	SEGMENT
-??_C@_0BI@HFMJEOAC@GetBettingGuildWarValue@ DB 'GetBettingGuildWarValue', 00H ; `string'
+??_C@_0BG@NJCKCHAI@PreserveServerCommand@ DB 'PreserveServerCommand', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@LKCAJGCH@EnableChatInsultFilter@
 CONST	SEGMENT
 ??_C@_0BH@LKCAJGCH@EnableChatInsultFilter@ DB 'EnableChatInsultFilter', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_1IK@MBMLBACD@?$AA?$CB?$AA?$CC?$AAn?$AAe?$AAt?$AAS?$AAe?$AAn?$AAd?$AAR?$AAe?$AAq?$AAu?$AAe?$AAs@
+;	COMDAT ??_C@_0O@JMAHAJJH@SetServerInfo@
 CONST	SEGMENT
-??_C@_1IK@MBMLBACD@?$AA?$CB?$AA?$CC?$AAn?$AAe?$AAt?$AAS?$AAe?$AAn?$AAd?$AAR?$AAe?$AAq?$AAu?$AAe?$AAs@ DB '!'
-	DB	00H, '"', 00H, 'n', 00H, 'e', 00H, 't', 00H, 'S', 00H, 'e', 00H
-	DB	'n', 00H, 'd', 00H, 'R', 00H, 'e', 00H, 'q', 00H, 'u', 00H, 'e'
-	DB	00H, 's', 00H, 't', 00H, 'R', 00H, 'e', 00H, 'f', 00H, 'i', 00H
-	DB	'n', 00H, 'e', 00H, 'I', 00H, 'n', 00H, 'f', 00H, 'o', 00H, 'P'
-	DB	00H, 'a', 00H, 'c', 00H, 'k', 00H, 'e', 00H, 't', 00H, ' ', 00H
-	DB	'-', 00H, ' ', 00H, 0b4H, 00H, 0f5H, 00H, 0c0H, 00H, 0ccH, 00H
-	DB	0bbH, 00H, 0f3H, 00H, ' ', 00H, 0bbH, 00H, 0e7H, 00H, 0bfH, 00H
-	DB	0ebH, 00H, 0c7H, 00H, 0cfH, 00H, 0c1H, 00H, 0f6H, 00H, ' ', 00H
-	DB	0beH, 00H, 0caH, 00H, 0b4H, 00H, 0c2H, 00H, ' ', 00H, 0c7H, 00H
-	DB	0d4H, 00H, 0bcH, 00H, 0f6H, 00H, ' ', 00H, 0c0H, 00H, 0d4H, 00H
-	DB	0b4H, 00H, 0cfH, 00H, 0b4H, 00H, 0d9H, 00H, '"', 00H, 00H, 00H ; `string'
+??_C@_0O@JMAHAJJH@SetServerInfo@ DB 'SetServerInfo', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_03JELCABFN@iOO@
 CONST	SEGMENT
 ??_C@_03JELCABFN@iOO@ DB 'iOO', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EC@PJNHBNOL@netSendRequestRefineInfoPacket?5@
+;	COMDAT ??_C@_0BI@HFMJEOAC@GetBettingGuildWarValue@
 CONST	SEGMENT
-??_C@_0EC@PJNHBNOL@netSendRequestRefineInfoPacket?5@ DB 'netSendRequestRe'
-	DB	'fineInfoPacket - ', 0b4H, 0f5H, 0c0H, 0ccH, 0bbH, 0f3H, ' ', 0bbH
-	DB	0e7H, 0bfH, 0ebH, 0c7H, 0cfH, 0c1H, 0f6H, ' ', 0beH, 0caH, 0b4H
-	DB	0c2H, ' ', 0c7H, 0d4H, 0bcH, 0f6H, ' ', 0c0H, 0d4H, 0b4H, 0cfH
-	DB	0b4H, 0d9H, 00H				; `string'
+??_C@_0BI@HFMJEOAC@GetBettingGuildWarValue@ DB 'GetBettingGuildWarValue', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_1LM@DEDABKEH@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
 CONST	SEGMENT
@@ -2016,10 +1993,33 @@ CONST	SEGMENT
 	DB	'd', 00H, 'u', 00H, 'l', 00H, 'e', 00H, '.', 00H, 'c', 00H, 'p'
 	DB	00H, 'p', 00H, 00H, 00H			; `string'
 CONST	ENDS
+;	COMDAT ??_C@_1IK@MBMLBACD@?$AA?$CB?$AA?$CC?$AAn?$AAe?$AAt?$AAS?$AAe?$AAn?$AAd?$AAR?$AAe?$AAq?$AAu?$AAe?$AAs@
+CONST	SEGMENT
+??_C@_1IK@MBMLBACD@?$AA?$CB?$AA?$CC?$AAn?$AAe?$AAt?$AAS?$AAe?$AAn?$AAd?$AAR?$AAe?$AAq?$AAu?$AAe?$AAs@ DB '!'
+	DB	00H, '"', 00H, 'n', 00H, 'e', 00H, 't', 00H, 'S', 00H, 'e', 00H
+	DB	'n', 00H, 'd', 00H, 'R', 00H, 'e', 00H, 'q', 00H, 'u', 00H, 'e'
+	DB	00H, 's', 00H, 't', 00H, 'R', 00H, 'e', 00H, 'f', 00H, 'i', 00H
+	DB	'n', 00H, 'e', 00H, 'I', 00H, 'n', 00H, 'f', 00H, 'o', 00H, 'P'
+	DB	00H, 'a', 00H, 'c', 00H, 'k', 00H, 'e', 00H, 't', 00H, ' ', 00H
+	DB	'-', 00H, ' ', 00H, 0b4H, 00H, 0f5H, 00H, 0c0H, 00H, 0ccH, 00H
+	DB	0bbH, 00H, 0f3H, 00H, ' ', 00H, 0bbH, 00H, 0e7H, 00H, 0bfH, 00H
+	DB	0ebH, 00H, 0c7H, 00H, 0cfH, 00H, 0c1H, 00H, 0f6H, 00H, ' ', 00H
+	DB	0beH, 00H, 0caH, 00H, 0b4H, 00H, 0c2H, 00H, ' ', 00H, 0c7H, 00H
+	DB	0d4H, 00H, 0bcH, 00H, 0f6H, 00H, ' ', 00H, 0c0H, 00H, 0d4H, 00H
+	DB	0b4H, 00H, 0cfH, 00H, 0b4H, 00H, 0d9H, 00H, '"', 00H, 00H, 00H ; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0EE@CPCFCFHF@netSendGuildRemoveMemberPacket?$CI@
 CONST	SEGMENT
 ??_C@_0EE@CPCFCFHF@netSendGuildRemoveMemberPacket?$CI@ DB 'netSendGuildRe'
 	DB	'moveMemberPacket(szKey=%s) - Can''t Find Guild Member', 0aH, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0EC@PJNHBNOL@netSendRequestRefineInfoPacket?5@
+CONST	SEGMENT
+??_C@_0EC@PJNHBNOL@netSendRequestRefineInfoPacket?5@ DB 'netSendRequestRe'
+	DB	'fineInfoPacket - ', 0b4H, 0f5H, 0c0H, 0ccH, 0bbH, 0f3H, ' ', 0bbH
+	DB	0e7H, 0bfH, 0ebH, 0c7H, 0cfH, 0c1H, 0f6H, ' ', 0beH, 0caH, 0b4H
+	DB	0c2H, ' ', 0c7H, 0d4H, 0bcH, 0f6H, ' ', 0c0H, 0d4H, 0b4H, 0cfH
+	DB	0b4H, 0d9H, 00H				; `string'
 PUBLIC	??0SItemPos@@QAE@EG@Z				; SItemPos::SItemPos
 PUBLIC	??$?0PAVCPythonPlayerSettingsModule@@@?$_Tuple_val@PAVCPythonPlayerSettingsModule@@@std@@QAE@$$QAPAVCPythonPlayerSettingsModule@@@Z ; std::_Tuple_val<CPythonPlayerSettingsModule *>::_Tuple_val<CPythonPlayerSettingsModule *><CPythonPlayerSettingsModule *>
 PUBLIC	?_Get_first@?$_Compressed_pair@V?$allocator@U?$pair@GG@std@@@std@@V?$_Vector_val@U?$_Simple_types@U?$pair@GG@std@@@std@@@2@$00@std@@QBEABV?$allocator@U?$pair@GG@std@@@2@XZ ; std::_Compressed_pair<std::allocator<std::pair<unsigned short,unsigned short> >,std::_Vector_val<std::_Simple_types<std::pair<unsigned short,unsigned short> > >,1>::_Get_first

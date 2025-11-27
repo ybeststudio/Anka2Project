@@ -8,10 +8,10 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_03DEFKFCAB@?4py@				; `string'
-PUBLIC	??_C@_04LCMACLFG@?4txt@				; `string'
 PUBLIC	??_C@_04DJODFCKA@?4pyc@				; `string'
+PUBLIC	??_C@_03DEFKFCAB@?4py@				; `string'
 PUBLIC	??_C@_05IDMALMPP@Exist@				; `string'
+PUBLIC	??_C@_04LCMACLFG@?4txt@				; `string'
 PUBLIC	?g_adwDecryptKey@@3PAKA				; g_adwDecryptKey
 PUBLIC	?g_adwEncryptKey@@3PAKA				; g_adwEncryptKey
 ?g_adwDecryptKey@@3PAKA DD 04H DUP (?)			; g_adwDecryptKey
@@ -31,21 +31,21 @@ _DATA	SEGMENT
 	DD	00H
 	ORG $+8
 _DATA	ENDS
-;	COMDAT ??_C@_05IDMALMPP@Exist@
-CONST	SEGMENT
-??_C@_05IDMALMPP@Exist@ DB 'Exist', 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_04DJODFCKA@?4pyc@
-CONST	SEGMENT
-??_C@_04DJODFCKA@?4pyc@ DB '.pyc', 00H			; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_04LCMACLFG@?4txt@
 CONST	SEGMENT
 ??_C@_04LCMACLFG@?4txt@ DB '.txt', 00H			; `string'
 CONST	ENDS
+;	COMDAT ??_C@_05IDMALMPP@Exist@
+CONST	SEGMENT
+??_C@_05IDMALMPP@Exist@ DB 'Exist', 00H			; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_03DEFKFCAB@?4py@
 CONST	SEGMENT
 ??_C@_03DEFKFCAB@?4py@ DB '.py', 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_04DJODFCKA@?4pyc@
+CONST	SEGMENT
+??_C@_04DJODFCKA@?4pyc@ DB '.pyc', 00H			; `string'
 PUBLIC	?strrchr@@YAPADQADH@Z				; strrchr
 PUBLIC	?initpack@@YAXXZ				; initpack
 PUBLIC	?packGet@@YAPAU_object@@PAU1@0@Z		; packGet

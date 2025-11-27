@@ -8,9 +8,9 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_03HJACNKKK@Pop@				; `string'
 PUBLIC	??_C@_04KGLMKACB@Push@				; `string'
 PUBLIC	??_C@_08BCLECBBK@profiler@			; `string'
+PUBLIC	??_C@_03HJACNKKK@Pop@				; `string'
 ;	COMDAT ?s_methods@?1??initProfiler@@YAXXZ@4PAUPyMethodDef@@A
 _DATA	SEGMENT
 ?s_methods@?1??initProfiler@@YAXXZ@4PAUPyMethodDef@@A DD FLAT:??_C@_04KGLMKACB@Push@ ; `initProfiler'::`2'::s_methods
@@ -26,6 +26,10 @@ _DATA	SEGMENT
 	DD	00H
 	ORG $+4
 _DATA	ENDS
+;	COMDAT ??_C@_03HJACNKKK@Pop@
+CONST	SEGMENT
+??_C@_03HJACNKKK@Pop@ DB 'Pop', 00H			; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_08BCLECBBK@profiler@
 CONST	SEGMENT
 ??_C@_08BCLECBBK@profiler@ DB 'profiler', 00H		; `string'
@@ -33,10 +37,6 @@ CONST	ENDS
 ;	COMDAT ??_C@_04KGLMKACB@Push@
 CONST	SEGMENT
 ??_C@_04KGLMKACB@Push@ DB 'Push', 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_03HJACNKKK@Pop@
-CONST	SEGMENT
-??_C@_03HJACNKKK@Pop@ DB 'Pop', 00H			; `string'
 PUBLIC	?initProfiler@@YAXXZ				; initProfiler
 PUBLIC	?profilerPop@@YAPAU_object@@PAU1@0@Z		; profilerPop
 PUBLIC	?profilerPush@@YAPAU_object@@PAU1@0@Z		; profilerPush

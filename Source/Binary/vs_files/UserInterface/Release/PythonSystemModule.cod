@@ -8,81 +8,81 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_08OMBILDHM@GetWidth@			; `string'
-PUBLIC	??_C@_0BI@NBDOAHCB@DestroyInterfaceHandler@	; `string'
 PUBLIC	??_C@_0BE@LHLPPLCA@SetInterfaceHandler@		; `string'
-PUBLIC	??_C@_0BC@GGDBAEOO@isInterfaceConfig@		; `string'
+PUBLIC	??_C@_08OMBILDHM@GetWidth@			; `string'
 PUBLIC	??_C@_0BA@DGMEINM@ReserveResource@		; `string'
-PUBLIC	??_C@_0BA@OIPDIACO@GetWindowStatus@		; `string'
+PUBLIC	??_C@_0BI@NBDOAHCB@DestroyInterfaceHandler@	; `string'
 PUBLIC	??_C@_0BB@DOCGKHHO@SaveWindowStatus@		; `string'
-PUBLIC	??_C@_0BC@MMLDLJCA@GetFrequencyCount@		; `string'
+PUBLIC	??_C@_0BC@GGDBAEOO@isInterfaceConfig@		; `string'
 PUBLIC	??_C@_0BD@PNJEEMA@GetResolutionCount@		; `string'
-PUBLIC	??_C@_0O@MCJGAEI@GetResolution@			; `string'
+PUBLIC	??_C@_0BA@OIPDIACO@GetWindowStatus@		; `string'
 PUBLIC	??_C@_0BF@GJHGOKBH@GetCurrentResolution@	; `string'
-PUBLIC	??_C@_0M@PHHLFDDI@ApplyConfig@			; `string'
+PUBLIC	??_C@_0BC@MMLDLJCA@GetFrequencyCount@		; `string'
 PUBLIC	??_C@_0N@DEDCKOKK@GetFrequency@			; `string'
-PUBLIC	??_C@_0L@IJAHDAKP@SaveConfig@			; `string'
+PUBLIC	??_C@_0O@MCJGAEI@GetResolution@			; `string'
 PUBLIC	??_C@_09KJAMEPBE@SetConfig@			; `string'
-PUBLIC	??_C@_09DABJPAIG@SetSaveID@			; `string'
+PUBLIC	??_C@_0M@PHHLFDDI@ApplyConfig@			; `string'
 PUBLIC	??_C@_09IHEJGOIG@GetConfig@			; `string'
-PUBLIC	??_C@_09BOFMNBBE@GetSaveID@			; `string'
+PUBLIC	??_C@_0L@IJAHDAKP@SaveConfig@			; `string'
 PUBLIC	??_C@_08ILEIELBI@isSaveID@			; `string'
-PUBLIC	??_C@_0P@LCENEDPB@GetSoundVolume@		; `string'
+PUBLIC	??_C@_09DABJPAIG@SetSaveID@			; `string'
 PUBLIC	??_C@_0P@HIIHPFML@GetMusicVolume@		; `string'
-PUBLIC	??_C@_0BA@MFKECAML@SetViewChatFlag@		; `string'
+PUBLIC	??_C@_09BOFMNBBE@GetSaveID@			; `string'
 PUBLIC	??_C@_0BB@BFMNFHIM@IsSoftwareCursor@		; `string'
-PUBLIC	??_C@_0BG@GMBDCOC@SetAlwaysShowNameFlag@	; `string'
+PUBLIC	??_C@_0P@LCENEDPB@GetSoundVolume@		; `string'
 PUBLIC	??_C@_0L@MGMBGKCF@IsViewChat@			; `string'
-PUBLIC	??_C@_0BC@JHKGLKC@SetShowDamageFlag@		; `string'
+PUBLIC	??_C@_0BA@MFKECAML@SetViewChatFlag@		; `string'
 PUBLIC	??_C@_0BB@NKNDCIFA@IsAlwaysShowName@		; `string'
-PUBLIC	??_C@_0BF@IKKCKDDD@SetShowSalesTextFlag@	; `string'
+PUBLIC	??_C@_0BG@GMBDCOC@SetAlwaysShowNameFlag@	; `string'
 PUBLIC	??_C@_0N@FLKCLECP@IsShowDamage@			; `string'
-PUBLIC	??_C@_0P@FFPBIDPG@GetShadowLevel@		; `string'
+PUBLIC	??_C@_0BC@JHKGLKC@SetShowDamageFlag@		; `string'
 PUBLIC	??_C@_0BA@GPLIEFHC@IsShowSalesText@		; `string'
-PUBLIC	??_C@_09KEHLALME@IsFogMode@			; `string'
+PUBLIC	??_C@_0BF@IKKCKDDD@SetShowSalesTextFlag@	; `string'
 PUBLIC	??_C@_0L@PMCKOHOM@SetFogMode@			; `string'
-PUBLIC	??_C@_0BA@JJFEPBJE@IsENBModeStatus@		; `string'
+PUBLIC	??_C@_0P@FFPBIDPG@GetShadowLevel@		; `string'
 PUBLIC	??_C@_0BF@BNPEAANC@SetENBModeStatusFlag@	; `string'
-PUBLIC	??_C@_0BC@CEPPPPMH@SetSnowModeOption@		; `string'
+PUBLIC	??_C@_09KEHLALME@IsFogMode@			; `string'
 PUBLIC	??_C@_0BD@HJAMJMPF@GetNightModeOption@		; `string'
-PUBLIC	??_C@_0BJ@KONCKJHB@SetSnowTextureModeOption@	; `string'
+PUBLIC	??_C@_0BA@JJFEPBJE@IsENBModeStatus@		; `string'
 PUBLIC	??_C@_0BC@BPEHENJ@GetSnowModeOption@		; `string'
-PUBLIC	??_C@_0P@HHECOAAE@GetEffectLevel@		; `string'
+PUBLIC	??_C@_0BC@CEPPPPMH@SetSnowModeOption@		; `string'
 PUBLIC	??_C@_0BJ@NHIMEOE@GetSnowTextureModeOption@	; `string'
-PUBLIC	??_C@_0BE@OCLJOJFI@GetPrivateShopLevel@		; `string'
+PUBLIC	??_C@_0BJ@KONCKJHB@SetSnowTextureModeOption@	; `string'
 PUBLIC	??_C@_0P@LJFMBKCI@SetEffectLevel@		; `string'
-PUBLIC	??_C@_0BB@PPGHDFEP@GetDropItemLevel@		; `string'
+PUBLIC	??_C@_0P@HHECOAAE@GetEffectLevel@		; `string'
 PUBLIC	??_C@_0BE@EMJCKJCE@SetPrivateShopLevel@		; `string'
-PUBLIC	??_C@_0BB@HIMOPDMG@SetPetStatusFlag@		; `string'
+PUBLIC	??_C@_0BE@OCLJOJFI@GetPrivateShopLevel@		; `string'
 PUBLIC	??_C@_0BB@JLDOILPN@SetDropItemLevel@		; `string'
-PUBLIC	??_C@_0BF@HMNBPPFA@SetNpcNameStatusFlag@	; `string'
+PUBLIC	??_C@_0BB@PPGHDFEP@GetDropItemLevel@		; `string'
 PUBLIC	??_C@_0M@FNHDAIIP@IsPetStatus@			; `string'
-PUBLIC	??_C@_0BB@BHHBOMIC@SetShowMobAIFlag@		; `string'
+PUBLIC	??_C@_0BB@HIMOPDMG@SetPetStatusFlag@		; `string'
 PUBLIC	??_C@_0BA@IDOPFMJI@IsNpcNameStatus@		; `string'
-PUBLIC	??_C@_0BA@OHHPFJNN@SetShowMobLevel@		; `string'
+PUBLIC	??_C@_0BF@HMNBPPFA@SetNpcNameStatusFlag@	; `string'
 PUBLIC	??_C@_0BA@LEFGMI@IsShowMobAIFlag@		; `string'
-PUBLIC	??_C@_0BD@LMAHLJGH@SetShowOutlineFlag@		; `string'
+PUBLIC	??_C@_0BB@BHHBOMIC@SetShowMobAIFlag@		; `string'
 PUBLIC	??_C@_0P@JFHLFAED@IsShowMobLevel@		; `string'
-PUBLIC	??_C@_06NJNDMID@SetFOV@				; `string'
+PUBLIC	??_C@_0BA@OHHPFJNN@SetShowMobLevel@		; `string'
 PUBLIC	??_C@_0O@ENDIKLLE@IsShowOutline@		; `string'
-PUBLIC	??_C@_0O@EOCAPAMF@SetStoneScale@		; `string'
+PUBLIC	??_C@_0BD@LMAHLJGH@SetShowOutlineFlag@		; `string'
 PUBLIC	??_C@_06JOAMIEFO@GetFOV@			; `string'
-PUBLIC	??_C@_0BA@BPFCEPJN@SetDungeonTrack@		; `string'
+PUBLIC	??_C@_06NJNDMID@SetFOV@				; `string'
 PUBLIC	??_C@_0O@DBDOEDLC@GetStoneScale@		; `string'
-PUBLIC	??_C@_0N@HAELDLL@SetBossTrack@			; `string'
+PUBLIC	??_C@_0O@EOCAPAMF@SetStoneScale@		; `string'
 PUBLIC	??_C@_0BA@CNEEDNIE@GetDungeonTrack@		; `string'
-PUBLIC	??_C@_0O@LCPLIAAE@systemSetting@		; `string'
+PUBLIC	??_C@_0BA@BPFCEPJN@SetDungeonTrack@		; `string'
 PUBLIC	??_C@_0N@HDLKHPPH@GetBossTrack@			; `string'
-PUBLIC	??_C@_0BB@CHCHLBGG@WINDOW_INVENTORY@		; `string'
+PUBLIC	??_C@_0N@HAELDLL@SetBossTrack@			; `string'
 PUBLIC	??_C@_0O@EDOCFBFG@WINDOW_STATUS@		; `string'
-PUBLIC	??_C@_0P@MAFILJL@WINDOW_SOCIETY@		; `string'
+PUBLIC	??_C@_0O@LCPLIAAE@systemSetting@		; `string'
 PUBLIC	??_C@_0P@HAOBMPKD@WINDOW_ABILITY@		; `string'
-PUBLIC	??_C@_0P@NOILKAON@WINDOW_COMMAND@		; `string'
+PUBLIC	??_C@_0BB@CHCHLBGG@WINDOW_INVENTORY@		; `string'
 PUBLIC	??_C@_0P@FHBHOGAA@WINDOW_JOURNAL@		; `string'
-PUBLIC	??_C@_0N@MCEEKLOJ@WINDOW_GAUGE@			; `string'
+PUBLIC	??_C@_0P@MAFILJL@WINDOW_SOCIETY@		; `string'
 PUBLIC	??_C@_0N@BOOBGFI@WINDOW_QUICK@			; `string'
-PUBLIC	??_C@_0M@GHKKFINH@WINDOW_CHAT@			; `string'
+PUBLIC	??_C@_0P@NOILKAON@WINDOW_COMMAND@		; `string'
 PUBLIC	??_C@_0P@LEOBHMFL@WINDOW_MINIMAP@		; `string'
+PUBLIC	??_C@_0N@MCEEKLOJ@WINDOW_GAUGE@			; `string'
+PUBLIC	??_C@_0M@GHKKFINH@WINDOW_CHAT@			; `string'
 EXTRN	?PushBackgroundLoadingSet@CResourceManager@@QAEXAAV?$set@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@Z:PROC ; CResourceManager::PushBackgroundLoadingSet
 ;	COMDAT ?s_methods@?1??initsystem@@YAXXZ@4PAUPyMethodDef@@A
 _DATA	SEGMENT
@@ -366,306 +366,306 @@ _DATA	SEGMENT
 	DD	00H
 	ORG $+8
 _DATA	ENDS
-;	COMDAT ??_C@_0P@LEOBHMFL@WINDOW_MINIMAP@
-CONST	SEGMENT
-??_C@_0P@LEOBHMFL@WINDOW_MINIMAP@ DB 'WINDOW_MINIMAP', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0M@GHKKFINH@WINDOW_CHAT@
 CONST	SEGMENT
 ??_C@_0M@GHKKFINH@WINDOW_CHAT@ DB 'WINDOW_CHAT', 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0N@BOOBGFI@WINDOW_QUICK@
-CONST	SEGMENT
-??_C@_0N@BOOBGFI@WINDOW_QUICK@ DB 'WINDOW_QUICK', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@MCEEKLOJ@WINDOW_GAUGE@
 CONST	SEGMENT
 ??_C@_0N@MCEEKLOJ@WINDOW_GAUGE@ DB 'WINDOW_GAUGE', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@FHBHOGAA@WINDOW_JOURNAL@
+;	COMDAT ??_C@_0P@LEOBHMFL@WINDOW_MINIMAP@
 CONST	SEGMENT
-??_C@_0P@FHBHOGAA@WINDOW_JOURNAL@ DB 'WINDOW_JOURNAL', 00H ; `string'
+??_C@_0P@LEOBHMFL@WINDOW_MINIMAP@ DB 'WINDOW_MINIMAP', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@NOILKAON@WINDOW_COMMAND@
 CONST	SEGMENT
 ??_C@_0P@NOILKAON@WINDOW_COMMAND@ DB 'WINDOW_COMMAND', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@HAOBMPKD@WINDOW_ABILITY@
+;	COMDAT ??_C@_0N@BOOBGFI@WINDOW_QUICK@
 CONST	SEGMENT
-??_C@_0P@HAOBMPKD@WINDOW_ABILITY@ DB 'WINDOW_ABILITY', 00H ; `string'
+??_C@_0N@BOOBGFI@WINDOW_QUICK@ DB 'WINDOW_QUICK', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@MAFILJL@WINDOW_SOCIETY@
 CONST	SEGMENT
 ??_C@_0P@MAFILJL@WINDOW_SOCIETY@ DB 'WINDOW_SOCIETY', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@EDOCFBFG@WINDOW_STATUS@
+;	COMDAT ??_C@_0P@FHBHOGAA@WINDOW_JOURNAL@
 CONST	SEGMENT
-??_C@_0O@EDOCFBFG@WINDOW_STATUS@ DB 'WINDOW_STATUS', 00H ; `string'
+??_C@_0P@FHBHOGAA@WINDOW_JOURNAL@ DB 'WINDOW_JOURNAL', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@CHCHLBGG@WINDOW_INVENTORY@
 CONST	SEGMENT
 ??_C@_0BB@CHCHLBGG@WINDOW_INVENTORY@ DB 'WINDOW_INVENTORY', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@HDLKHPPH@GetBossTrack@
+;	COMDAT ??_C@_0P@HAOBMPKD@WINDOW_ABILITY@
 CONST	SEGMENT
-??_C@_0N@HDLKHPPH@GetBossTrack@ DB 'GetBossTrack', 00H	; `string'
+??_C@_0P@HAOBMPKD@WINDOW_ABILITY@ DB 'WINDOW_ABILITY', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@LCPLIAAE@systemSetting@
 CONST	SEGMENT
 ??_C@_0O@LCPLIAAE@systemSetting@ DB 'systemSetting', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@CNEEDNIE@GetDungeonTrack@
+;	COMDAT ??_C@_0O@EDOCFBFG@WINDOW_STATUS@
 CONST	SEGMENT
-??_C@_0BA@CNEEDNIE@GetDungeonTrack@ DB 'GetDungeonTrack', 00H ; `string'
+??_C@_0O@EDOCFBFG@WINDOW_STATUS@ DB 'WINDOW_STATUS', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@HAELDLL@SetBossTrack@
 CONST	SEGMENT
 ??_C@_0N@HAELDLL@SetBossTrack@ DB 'SetBossTrack', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@DBDOEDLC@GetStoneScale@
+;	COMDAT ??_C@_0N@HDLKHPPH@GetBossTrack@
 CONST	SEGMENT
-??_C@_0O@DBDOEDLC@GetStoneScale@ DB 'GetStoneScale', 00H ; `string'
+??_C@_0N@HDLKHPPH@GetBossTrack@ DB 'GetBossTrack', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@BPFCEPJN@SetDungeonTrack@
 CONST	SEGMENT
 ??_C@_0BA@BPFCEPJN@SetDungeonTrack@ DB 'SetDungeonTrack', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06JOAMIEFO@GetFOV@
+;	COMDAT ??_C@_0BA@CNEEDNIE@GetDungeonTrack@
 CONST	SEGMENT
-??_C@_06JOAMIEFO@GetFOV@ DB 'GetFOV', 00H		; `string'
+??_C@_0BA@CNEEDNIE@GetDungeonTrack@ DB 'GetDungeonTrack', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@EOCAPAMF@SetStoneScale@
 CONST	SEGMENT
 ??_C@_0O@EOCAPAMF@SetStoneScale@ DB 'SetStoneScale', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@ENDIKLLE@IsShowOutline@
+;	COMDAT ??_C@_0O@DBDOEDLC@GetStoneScale@
 CONST	SEGMENT
-??_C@_0O@ENDIKLLE@IsShowOutline@ DB 'IsShowOutline', 00H ; `string'
+??_C@_0O@DBDOEDLC@GetStoneScale@ DB 'GetStoneScale', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06NJNDMID@SetFOV@
 CONST	SEGMENT
 ??_C@_06NJNDMID@SetFOV@ DB 'SetFOV', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@JFHLFAED@IsShowMobLevel@
+;	COMDAT ??_C@_06JOAMIEFO@GetFOV@
 CONST	SEGMENT
-??_C@_0P@JFHLFAED@IsShowMobLevel@ DB 'IsShowMobLevel', 00H ; `string'
+??_C@_06JOAMIEFO@GetFOV@ DB 'GetFOV', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@LMAHLJGH@SetShowOutlineFlag@
 CONST	SEGMENT
 ??_C@_0BD@LMAHLJGH@SetShowOutlineFlag@ DB 'SetShowOutlineFlag', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@LEFGMI@IsShowMobAIFlag@
+;	COMDAT ??_C@_0O@ENDIKLLE@IsShowOutline@
 CONST	SEGMENT
-??_C@_0BA@LEFGMI@IsShowMobAIFlag@ DB 'IsShowMobAIFlag', 00H ; `string'
+??_C@_0O@ENDIKLLE@IsShowOutline@ DB 'IsShowOutline', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@OHHPFJNN@SetShowMobLevel@
 CONST	SEGMENT
 ??_C@_0BA@OHHPFJNN@SetShowMobLevel@ DB 'SetShowMobLevel', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@IDOPFMJI@IsNpcNameStatus@
+;	COMDAT ??_C@_0P@JFHLFAED@IsShowMobLevel@
 CONST	SEGMENT
-??_C@_0BA@IDOPFMJI@IsNpcNameStatus@ DB 'IsNpcNameStatus', 00H ; `string'
+??_C@_0P@JFHLFAED@IsShowMobLevel@ DB 'IsShowMobLevel', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@BHHBOMIC@SetShowMobAIFlag@
 CONST	SEGMENT
 ??_C@_0BB@BHHBOMIC@SetShowMobAIFlag@ DB 'SetShowMobAIFlag', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@FNHDAIIP@IsPetStatus@
+;	COMDAT ??_C@_0BA@LEFGMI@IsShowMobAIFlag@
 CONST	SEGMENT
-??_C@_0M@FNHDAIIP@IsPetStatus@ DB 'IsPetStatus', 00H	; `string'
+??_C@_0BA@LEFGMI@IsShowMobAIFlag@ DB 'IsShowMobAIFlag', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@HMNBPPFA@SetNpcNameStatusFlag@
 CONST	SEGMENT
 ??_C@_0BF@HMNBPPFA@SetNpcNameStatusFlag@ DB 'SetNpcNameStatusFlag', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@JLDOILPN@SetDropItemLevel@
+;	COMDAT ??_C@_0BA@IDOPFMJI@IsNpcNameStatus@
 CONST	SEGMENT
-??_C@_0BB@JLDOILPN@SetDropItemLevel@ DB 'SetDropItemLevel', 00H ; `string'
+??_C@_0BA@IDOPFMJI@IsNpcNameStatus@ DB 'IsNpcNameStatus', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@HIMOPDMG@SetPetStatusFlag@
 CONST	SEGMENT
 ??_C@_0BB@HIMOPDMG@SetPetStatusFlag@ DB 'SetPetStatusFlag', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@EMJCKJCE@SetPrivateShopLevel@
+;	COMDAT ??_C@_0M@FNHDAIIP@IsPetStatus@
 CONST	SEGMENT
-??_C@_0BE@EMJCKJCE@SetPrivateShopLevel@ DB 'SetPrivateShopLevel', 00H ; `string'
+??_C@_0M@FNHDAIIP@IsPetStatus@ DB 'IsPetStatus', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@PPGHDFEP@GetDropItemLevel@
 CONST	SEGMENT
 ??_C@_0BB@PPGHDFEP@GetDropItemLevel@ DB 'GetDropItemLevel', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@LJFMBKCI@SetEffectLevel@
+;	COMDAT ??_C@_0BB@JLDOILPN@SetDropItemLevel@
 CONST	SEGMENT
-??_C@_0P@LJFMBKCI@SetEffectLevel@ DB 'SetEffectLevel', 00H ; `string'
+??_C@_0BB@JLDOILPN@SetDropItemLevel@ DB 'SetDropItemLevel', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@OCLJOJFI@GetPrivateShopLevel@
 CONST	SEGMENT
 ??_C@_0BE@OCLJOJFI@GetPrivateShopLevel@ DB 'GetPrivateShopLevel', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@NHIMEOE@GetSnowTextureModeOption@
+;	COMDAT ??_C@_0BE@EMJCKJCE@SetPrivateShopLevel@
 CONST	SEGMENT
-??_C@_0BJ@NHIMEOE@GetSnowTextureModeOption@ DB 'GetSnowTextureModeOption', 00H ; `string'
+??_C@_0BE@EMJCKJCE@SetPrivateShopLevel@ DB 'SetPrivateShopLevel', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@HHECOAAE@GetEffectLevel@
 CONST	SEGMENT
 ??_C@_0P@HHECOAAE@GetEffectLevel@ DB 'GetEffectLevel', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@BPEHENJ@GetSnowModeOption@
+;	COMDAT ??_C@_0P@LJFMBKCI@SetEffectLevel@
 CONST	SEGMENT
-??_C@_0BC@BPEHENJ@GetSnowModeOption@ DB 'GetSnowModeOption', 00H ; `string'
+??_C@_0P@LJFMBKCI@SetEffectLevel@ DB 'SetEffectLevel', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@KONCKJHB@SetSnowTextureModeOption@
 CONST	SEGMENT
 ??_C@_0BJ@KONCKJHB@SetSnowTextureModeOption@ DB 'SetSnowTextureModeOption'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@HJAMJMPF@GetNightModeOption@
+;	COMDAT ??_C@_0BJ@NHIMEOE@GetSnowTextureModeOption@
 CONST	SEGMENT
-??_C@_0BD@HJAMJMPF@GetNightModeOption@ DB 'GetNightModeOption', 00H ; `string'
+??_C@_0BJ@NHIMEOE@GetSnowTextureModeOption@ DB 'GetSnowTextureModeOption', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@CEPPPPMH@SetSnowModeOption@
 CONST	SEGMENT
 ??_C@_0BC@CEPPPPMH@SetSnowModeOption@ DB 'SetSnowModeOption', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@BNPEAANC@SetENBModeStatusFlag@
+;	COMDAT ??_C@_0BC@BPEHENJ@GetSnowModeOption@
 CONST	SEGMENT
-??_C@_0BF@BNPEAANC@SetENBModeStatusFlag@ DB 'SetENBModeStatusFlag', 00H ; `string'
+??_C@_0BC@BPEHENJ@GetSnowModeOption@ DB 'GetSnowModeOption', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@JJFEPBJE@IsENBModeStatus@
 CONST	SEGMENT
 ??_C@_0BA@JJFEPBJE@IsENBModeStatus@ DB 'IsENBModeStatus', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@PMCKOHOM@SetFogMode@
+;	COMDAT ??_C@_0BD@HJAMJMPF@GetNightModeOption@
 CONST	SEGMENT
-??_C@_0L@PMCKOHOM@SetFogMode@ DB 'SetFogMode', 00H	; `string'
+??_C@_0BD@HJAMJMPF@GetNightModeOption@ DB 'GetNightModeOption', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09KEHLALME@IsFogMode@
 CONST	SEGMENT
 ??_C@_09KEHLALME@IsFogMode@ DB 'IsFogMode', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@GPLIEFHC@IsShowSalesText@
+;	COMDAT ??_C@_0BF@BNPEAANC@SetENBModeStatusFlag@
 CONST	SEGMENT
-??_C@_0BA@GPLIEFHC@IsShowSalesText@ DB 'IsShowSalesText', 00H ; `string'
+??_C@_0BF@BNPEAANC@SetENBModeStatusFlag@ DB 'SetENBModeStatusFlag', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@FFPBIDPG@GetShadowLevel@
 CONST	SEGMENT
 ??_C@_0P@FFPBIDPG@GetShadowLevel@ DB 'GetShadowLevel', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@FLKCLECP@IsShowDamage@
+;	COMDAT ??_C@_0L@PMCKOHOM@SetFogMode@
 CONST	SEGMENT
-??_C@_0N@FLKCLECP@IsShowDamage@ DB 'IsShowDamage', 00H	; `string'
+??_C@_0L@PMCKOHOM@SetFogMode@ DB 'SetFogMode', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@IKKCKDDD@SetShowSalesTextFlag@
 CONST	SEGMENT
 ??_C@_0BF@IKKCKDDD@SetShowSalesTextFlag@ DB 'SetShowSalesTextFlag', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@NKNDCIFA@IsAlwaysShowName@
+;	COMDAT ??_C@_0BA@GPLIEFHC@IsShowSalesText@
 CONST	SEGMENT
-??_C@_0BB@NKNDCIFA@IsAlwaysShowName@ DB 'IsAlwaysShowName', 00H ; `string'
+??_C@_0BA@GPLIEFHC@IsShowSalesText@ DB 'IsShowSalesText', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@JHKGLKC@SetShowDamageFlag@
 CONST	SEGMENT
 ??_C@_0BC@JHKGLKC@SetShowDamageFlag@ DB 'SetShowDamageFlag', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@MGMBGKCF@IsViewChat@
+;	COMDAT ??_C@_0N@FLKCLECP@IsShowDamage@
 CONST	SEGMENT
-??_C@_0L@MGMBGKCF@IsViewChat@ DB 'IsViewChat', 00H	; `string'
+??_C@_0N@FLKCLECP@IsShowDamage@ DB 'IsShowDamage', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@GMBDCOC@SetAlwaysShowNameFlag@
 CONST	SEGMENT
 ??_C@_0BG@GMBDCOC@SetAlwaysShowNameFlag@ DB 'SetAlwaysShowNameFlag', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@BFMNFHIM@IsSoftwareCursor@
+;	COMDAT ??_C@_0BB@NKNDCIFA@IsAlwaysShowName@
 CONST	SEGMENT
-??_C@_0BB@BFMNFHIM@IsSoftwareCursor@ DB 'IsSoftwareCursor', 00H ; `string'
+??_C@_0BB@NKNDCIFA@IsAlwaysShowName@ DB 'IsAlwaysShowName', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@MFKECAML@SetViewChatFlag@
 CONST	SEGMENT
 ??_C@_0BA@MFKECAML@SetViewChatFlag@ DB 'SetViewChatFlag', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@HIIHPFML@GetMusicVolume@
+;	COMDAT ??_C@_0L@MGMBGKCF@IsViewChat@
 CONST	SEGMENT
-??_C@_0P@HIIHPFML@GetMusicVolume@ DB 'GetMusicVolume', 00H ; `string'
+??_C@_0L@MGMBGKCF@IsViewChat@ DB 'IsViewChat', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@LCENEDPB@GetSoundVolume@
 CONST	SEGMENT
 ??_C@_0P@LCENEDPB@GetSoundVolume@ DB 'GetSoundVolume', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08ILEIELBI@isSaveID@
+;	COMDAT ??_C@_0BB@BFMNFHIM@IsSoftwareCursor@
 CONST	SEGMENT
-??_C@_08ILEIELBI@isSaveID@ DB 'isSaveID', 00H		; `string'
+??_C@_0BB@BFMNFHIM@IsSoftwareCursor@ DB 'IsSoftwareCursor', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09BOFMNBBE@GetSaveID@
 CONST	SEGMENT
 ??_C@_09BOFMNBBE@GetSaveID@ DB 'GetSaveID', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09IHEJGOIG@GetConfig@
+;	COMDAT ??_C@_0P@HIIHPFML@GetMusicVolume@
 CONST	SEGMENT
-??_C@_09IHEJGOIG@GetConfig@ DB 'GetConfig', 00H		; `string'
+??_C@_0P@HIIHPFML@GetMusicVolume@ DB 'GetMusicVolume', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09DABJPAIG@SetSaveID@
 CONST	SEGMENT
 ??_C@_09DABJPAIG@SetSaveID@ DB 'SetSaveID', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09KJAMEPBE@SetConfig@
+;	COMDAT ??_C@_08ILEIELBI@isSaveID@
 CONST	SEGMENT
-??_C@_09KJAMEPBE@SetConfig@ DB 'SetConfig', 00H		; `string'
+??_C@_08ILEIELBI@isSaveID@ DB 'isSaveID', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@IJAHDAKP@SaveConfig@
 CONST	SEGMENT
 ??_C@_0L@IJAHDAKP@SaveConfig@ DB 'SaveConfig', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@DEDCKOKK@GetFrequency@
+;	COMDAT ??_C@_09IHEJGOIG@GetConfig@
 CONST	SEGMENT
-??_C@_0N@DEDCKOKK@GetFrequency@ DB 'GetFrequency', 00H	; `string'
+??_C@_09IHEJGOIG@GetConfig@ DB 'GetConfig', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@PHHLFDDI@ApplyConfig@
 CONST	SEGMENT
 ??_C@_0M@PHHLFDDI@ApplyConfig@ DB 'ApplyConfig', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@GJHGOKBH@GetCurrentResolution@
+;	COMDAT ??_C@_09KJAMEPBE@SetConfig@
 CONST	SEGMENT
-??_C@_0BF@GJHGOKBH@GetCurrentResolution@ DB 'GetCurrentResolution', 00H ; `string'
+??_C@_09KJAMEPBE@SetConfig@ DB 'SetConfig', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@MCJGAEI@GetResolution@
 CONST	SEGMENT
 ??_C@_0O@MCJGAEI@GetResolution@ DB 'GetResolution', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@PNJEEMA@GetResolutionCount@
+;	COMDAT ??_C@_0N@DEDCKOKK@GetFrequency@
 CONST	SEGMENT
-??_C@_0BD@PNJEEMA@GetResolutionCount@ DB 'GetResolutionCount', 00H ; `string'
+??_C@_0N@DEDCKOKK@GetFrequency@ DB 'GetFrequency', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@MMLDLJCA@GetFrequencyCount@
 CONST	SEGMENT
 ??_C@_0BC@MMLDLJCA@GetFrequencyCount@ DB 'GetFrequencyCount', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@DOCGKHHO@SaveWindowStatus@
+;	COMDAT ??_C@_0BF@GJHGOKBH@GetCurrentResolution@
 CONST	SEGMENT
-??_C@_0BB@DOCGKHHO@SaveWindowStatus@ DB 'SaveWindowStatus', 00H ; `string'
+??_C@_0BF@GJHGOKBH@GetCurrentResolution@ DB 'GetCurrentResolution', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@OIPDIACO@GetWindowStatus@
 CONST	SEGMENT
 ??_C@_0BA@OIPDIACO@GetWindowStatus@ DB 'GetWindowStatus', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@DGMEINM@ReserveResource@
+;	COMDAT ??_C@_0BD@PNJEEMA@GetResolutionCount@
 CONST	SEGMENT
-??_C@_0BA@DGMEINM@ReserveResource@ DB 'ReserveResource', 00H ; `string'
+??_C@_0BD@PNJEEMA@GetResolutionCount@ DB 'GetResolutionCount', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@GGDBAEOO@isInterfaceConfig@
 CONST	SEGMENT
 ??_C@_0BC@GGDBAEOO@isInterfaceConfig@ DB 'isInterfaceConfig', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@LHLPPLCA@SetInterfaceHandler@
+;	COMDAT ??_C@_0BB@DOCGKHHO@SaveWindowStatus@
 CONST	SEGMENT
-??_C@_0BE@LHLPPLCA@SetInterfaceHandler@ DB 'SetInterfaceHandler', 00H ; `string'
+??_C@_0BB@DOCGKHHO@SaveWindowStatus@ DB 'SaveWindowStatus', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@NBDOAHCB@DestroyInterfaceHandler@
 CONST	SEGMENT
 ??_C@_0BI@NBDOAHCB@DestroyInterfaceHandler@ DB 'DestroyInterfaceHandler', 00H ; `string'
 CONST	ENDS
+;	COMDAT ??_C@_0BA@DGMEINM@ReserveResource@
+CONST	SEGMENT
+??_C@_0BA@DGMEINM@ReserveResource@ DB 'ReserveResource', 00H ; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_08OMBILDHM@GetWidth@
 CONST	SEGMENT
 ??_C@_08OMBILDHM@GetWidth@ DB 'GetWidth', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BE@LHLPPLCA@SetInterfaceHandler@
+CONST	SEGMENT
+??_C@_0BE@LHLPPLCA@SetInterfaceHandler@ DB 'SetInterfaceHandler', 00H ; `string'
 PUBLIC	?initsystem@@YAXXZ				; initsystem
 PUBLIC	?systemGetBossTrack@@YAPAU_object@@PAU1@0@Z	; systemGetBossTrack
 PUBLIC	?systemSetBossTrack@@YAPAU_object@@PAU1@0@Z	; systemSetBossTrack

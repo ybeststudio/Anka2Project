@@ -8,542 +8,542 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0DF@ILFGGFEI@CPythonPlayer?3?3RegisterEffect?$CIe@ ; `string'
-PUBLIC	??_C@_0EJ@BNKMOLIP@playerSetSingleDIKKeyState?$CIeDIK@ ; `string'
 PUBLIC	??_C@_0EA@OHLDKNFC@playerSetAttackKeyState?$CIisPress@ ; `string'
-PUBLIC	??_C@_02HPEDFNFO@ff@				; `string'
+PUBLIC	??_C@_0DF@ILFGGFEI@CPythonPlayer?3?3RegisterEffect?$CIe@ ; `string'
 PUBLIC	??_C@_0EK@IDBGKDBN@playerSetSingleDIKKeyState?$CIeDIK@ ; `string'
-PUBLIC	??_C@_0BK@MCOKCAKI@?5?$HMh?$HMr?$FL?$CFs?$FN?$HMcffffc700?$HMH?$CFs?$HMh@ ; `string'
+PUBLIC	??_C@_0EJ@BNKMOLIP@playerSetSingleDIKKeyState?$CIeDIK@ ; `string'
 PUBLIC	??_C@_01HHGOMJKL@l@				; `string'
-PUBLIC	??_C@_0BK@MGKBEPOF@?5?$HMh?$HMr?$FL?$CFs?$FN?$HMcfff1e6c0?$HMH?$CFs?$HMh@ ; `string'
+PUBLIC	??_C@_02HPEDFNFO@ff@				; `string'
 PUBLIC	??_C@_06FAMCNHHL@?3?$CFx?3?$CFd@		; `string'
-PUBLIC	??_C@_0BF@IBGKLIMC@can?8t?5find?5item?5data@	; `string'
+PUBLIC	??_C@_0BK@MCOKCAKI@?5?$HMh?$HMr?$FL?$CFs?$FN?$HMcffffc700?$HMH?$CFs?$HMh@ ; `string'
 PUBLIC	??_C@_0BF@BGKCJNBK@Can?8t?5find?5item?5data@	; `string'
-PUBLIC	??_C@_04GPDILEAH@biii@				; `string'
+PUBLIC	??_C@_0BK@MGKBEPOF@?5?$HMh?$HMr?$FL?$CFs?$FN?$HMcfff1e6c0?$HMH?$CFs?$HMh@ ; `string'
 PUBLIC	??_C@_07EFJJEBFG@iiiiiii@			; `string'
-PUBLIC	??_C@_0L@LNJHJPCL@iiiiiiiiii@			; `string'
+PUBLIC	??_C@_0BF@IBGKLIMC@can?8t?5find?5item?5data@	; `string'
 PUBLIC	??_C@_05EAPDINDK@iiiii@				; `string'
-PUBLIC	??_C@_07LLGOIFNB@iiisfff@			; `string'
+PUBLIC	??_C@_04GPDILEAH@biii@				; `string'
 PUBLIC	??_C@_09BOADOOAM@iiiiiiiii@			; `string'
-PUBLIC	??_C@_0BC@CILJOCG@SetAutoPotionInfo@		; `string'
+PUBLIC	??_C@_0L@LNJHJPCL@iiiiiiiiii@			; `string'
 PUBLIC	??_C@_0BC@CHIABFDI@GetAutoPotionInfo@		; `string'
-PUBLIC	??_C@_0BE@EFMODMFG@PickCloseItemVector@		; `string'
+PUBLIC	??_C@_07LLGOIFNB@iiisfff@			; `string'
 PUBLIC	??_C@_0O@MAEJALBO@PickCloseItem@		; `string'
-PUBLIC	??_C@_0O@MNPFFDEJ@SetGameWindow@		; `string'
+PUBLIC	??_C@_0BC@CILJOCG@SetAutoPotionInfo@		; `string'
 PUBLIC	??_C@_0BI@JOKOCOKN@PickCloseItemAutoVector@	; `string'
-PUBLIC	??_C@_0N@LEJNPCGM@SetMouseFunc@			; `string'
+PUBLIC	??_C@_0BE@EFMODMFG@PickCloseItemVector@		; `string'
 PUBLIC	??_C@_0O@HDELDAFI@SetMouseState@		; `string'
-PUBLIC	??_C@_0BK@JBJLNCBH@SetMouseMiddleButtonState@	; `string'
+PUBLIC	??_C@_0O@MNPFFDEJ@SetGameWindow@		; `string'
 PUBLIC	??_C@_0N@MACDDOCA@GetMouseFunc@			; `string'
-PUBLIC	??_C@_0BG@GHIKDJGB@GetMainCharacterIndex@	; `string'
+PUBLIC	??_C@_0N@LEJNPCGM@SetMouseFunc@			; `string'
 PUBLIC	??_C@_0BG@JCNMOACA@SetMainCharacterIndex@	; `string'
-PUBLIC	??_C@_0BJ@GIKFEPMH@GetMainCharacterPosition@	; `string'
+PUBLIC	??_C@_0BK@JBJLNCBH@SetMouseMiddleButtonState@	; `string'
 PUBLIC	??_C@_0BF@OMDPKDFM@GetMainCharacterName@	; `string'
-PUBLIC	??_C@_0BC@FLPEGJDD@CanAttackInstance@		; `string'
+PUBLIC	??_C@_0BG@GHIKDJGB@GetMainCharacterIndex@	; `string'
 PUBLIC	??_C@_0BF@GALHNOAL@IsMainCharacterIndex@	; `string'
-PUBLIC	??_C@_0O@ECCODAC@IsPVPInstance@			; `string'
+PUBLIC	??_C@_0BJ@GIKFEPMH@GetMainCharacterPosition@	; `string'
 PUBLIC	??_C@_0BA@ODCBPOEF@IsActingEmotion@		; `string'
-PUBLIC	??_C@_0BE@FOIPHJLO@IsChallengeInstance@		; `string'
+PUBLIC	??_C@_0BC@FLPEGJDD@CanAttackInstance@		; `string'
 PUBLIC	??_C@_0N@CBEDFALN@IsSameEmpire@			; `string'
-PUBLIC	??_C@_0BE@HJOMPGKI@IsCantFightInstance@		; `string'
+PUBLIC	??_C@_0O@ECCODAC@IsPVPInstance@			; `string'
 PUBLIC	??_C@_0BC@IKOEAPGC@IsRevengeInstance@		; `string'
-PUBLIC	??_C@_0N@IKPCBCPA@IsInSafeArea@			; `string'
+PUBLIC	??_C@_0BE@FOIPHJLO@IsChallengeInstance@		; `string'
 PUBLIC	??_C@_0BF@DABJOKIF@GetCharacterDistance@	; `string'
-PUBLIC	??_C@_0P@LDENHACE@IsObserverMode@		; `string'
+PUBLIC	??_C@_0BE@HJOMPGKI@IsCantFightInstance@		; `string'
 PUBLIC	??_C@_0BA@GFJLKENO@IsMountingHorse@		; `string'
-PUBLIC	??_C@_0L@CPMIOCIM@ShowPlayer@			; `string'
+PUBLIC	??_C@_0N@IKPCBCPA@IsInSafeArea@			; `string'
 PUBLIC	??_C@_0L@JEBGMNAH@ActEmotion@			; `string'
-PUBLIC	??_C@_0M@GOCDIKPN@ComboAttack@			; `string'
+PUBLIC	??_C@_0P@LDENHACE@IsObserverMode@		; `string'
 PUBLIC	??_C@_0L@PBBGGCLG@HidePlayer@			; `string'
-PUBLIC	??_C@_0BC@DAIEHFBH@SetAttackKeyState@		; `string'
+PUBLIC	??_C@_0L@CPMIOCIM@ShowPlayer@			; `string'
 PUBLIC	??_C@_0BL@IEKDAKHC@SetAutoCameraRotationSpeed@	; `string'
-PUBLIC	??_C@_0BJ@HGLJKHIH@EndKeyWalkingImmediately@	; `string'
+PUBLIC	??_C@_0M@GOCDIKPN@ComboAttack@			; `string'
 PUBLIC	??_C@_0BF@PNJNANBI@SetSingleDIKKeyState@	; `string'
-PUBLIC	??_C@_0BA@JEOKFDLP@EndMouseWalking@		; `string'
+PUBLIC	??_C@_0BC@DAIEHFBH@SetAttackKeyState@		; `string'
 PUBLIC	??_C@_0BC@NCHFPCDM@StartMouseWalking@		; `string'
-PUBLIC	??_C@_0BD@DPHLFGPP@SetQuickCameraMode@		; `string'
+PUBLIC	??_C@_0BJ@HGLJKHIH@EndKeyWalkingImmediately@	; `string'
 PUBLIC	??_C@_0BE@MCFGJOPA@ResetCameraRotation@		; `string'
-PUBLIC	??_C@_0BC@HNJMANI@GetSkillSlotIndex@		; `string'
+PUBLIC	??_C@_0BA@JEOKFDLP@EndMouseWalking@		; `string'
 PUBLIC	??_C@_08HIFGFOGG@SetSkill@			; `string'
-PUBLIC	??_C@_0CD@EFGGIKHI@GetSkillCurrentEfficientPercent@ ; `string'
+PUBLIC	??_C@_0BD@DPHLFGPP@SetQuickCameraMode@		; `string'
 PUBLIC	??_C@_0O@IIOIANPE@GetSkillGrade@		; `string'
-PUBLIC	??_C@_0P@IGNHDBHH@ClickSkillSlot@		; `string'
+PUBLIC	??_C@_0BC@HNJMANI@GetSkillSlotIndex@		; `string'
 PUBLIC	??_C@_0CA@JHGONPGM@GetSkillNextEfficientPercentage@ ; `string'
-PUBLIC	??_C@_0P@MJOJKOJJ@ClearSkillDict@		; `string'
+PUBLIC	??_C@_0CD@EFGGIKHI@GetSkillCurrentEfficientPercent@ ; `string'
 PUBLIC	??_C@_0BN@BPJDEKED@ChangeCurrentSkillNumberOnly@ ; `string'
-PUBLIC	??_C@_0N@GABOCBEH@GetItemIndex@			; `string'
+PUBLIC	??_C@_0P@IGNHDBHH@ClickSkillSlot@		; `string'
 PUBLIC	??_C@_0BD@GCOFLJAB@DisableToggleSkill@		; `string'
-PUBLIC	??_C@_0N@LEKALLIG@GetItemCount@			; `string'
+PUBLIC	??_C@_0P@MJOJKOJJ@ClearSkillDict@		; `string'
 PUBLIC	??_C@_0N@DMCGDNGF@GetItemFlags@			; `string'
-PUBLIC	??_C@_0BD@JBOBKHIE@GetItemMetinSocket@		; `string'
+PUBLIC	??_C@_0N@GABOCBEH@GetItemIndex@			; `string'
 PUBLIC	??_C@_0BD@DBLILMFK@GetItemCountByVnum@		; `string'
-PUBLIC	??_C@_08MHJANHDM@MoveItem@			; `string'
+PUBLIC	??_C@_0N@LEKALLIG@GetItemCount@			; `string'
 PUBLIC	??_C@_0BB@GOKPPDHH@GetItemAttribute@		; `string'
-PUBLIC	??_C@_06FHLNIOPB@GetJob@			; `string'
+PUBLIC	??_C@_0BD@JBOBKHIE@GetItemMetinSocket@		; `string'
 PUBLIC	??_C@_0BE@DBIFLBAC@SendClickItemPacket@		; `string'
-PUBLIC	??_C@_0M@DGCMFHDN@SetPlayTime@			; `string'
+PUBLIC	??_C@_08MHJANHDM@MoveItem@			; `string'
 PUBLIC	??_C@_0M@DJDCIBLO@GetPlayTime@			; `string'
-PUBLIC	??_C@_0BB@CNGGKNGL@GetSkillCoolTime@		; `string'
+PUBLIC	??_C@_06FHLNIOPB@GetJob@			; `string'
 PUBLIC	??_C@_0BA@FOPKKJJD@IsSkillCoolTime@		; `string'
-PUBLIC	??_C@_0O@HHBOBCLE@UseGuildSkill@		; `string'
+PUBLIC	??_C@_0M@DGCMFHDN@SetPlayTime@			; `string'
 PUBLIC	??_C@_0O@IAPCJJAC@IsSkillActive@		; `string'
-PUBLIC	??_C@_06MDIKDJMD@GetEXP@			; `string'
+PUBLIC	??_C@_0BB@CNGGKNGL@GetSkillCoolTime@		; `string'
 PUBLIC	??_C@_0BI@JIGEMOFF@AffectIndexToSkillIndex@	; `string'
-PUBLIC	??_C@_09MKFEIFJE@GetStatus@			; `string'
+PUBLIC	??_C@_0O@HHBOBCLE@UseGuildSkill@		; `string'
 PUBLIC	??_C@_08MDGBDPHC@GetLevel@			; `string'
-PUBLIC	??_C@_06NMFKJLLH@GetElk@			; `string'
+PUBLIC	??_C@_06MDIKDJMD@GetEXP@			; `string'
 PUBLIC	??_C@_09OEBBKEAG@SetStatus@			; `string'
-PUBLIC	??_C@_08LBPCDDLA@GetCoins@			; `string'
+PUBLIC	??_C@_09MKFEIFJE@GetStatus@			; `string'
 PUBLIC	??_C@_08OAJFGNBC@GetMoney@			; `string'
-PUBLIC	??_C@_0BJ@DNLGAMEO@RequestAddLocalQuickSlot@	; `string'
+PUBLIC	??_C@_06NMFKJLLH@GetElk@			; `string'
 PUBLIC	??_C@_0BB@LANDCIKG@GetAlignmentData@		; `string'
-PUBLIC	??_C@_0BN@NACLJDMA@RequestDeleteGlobalQuickSlot@ ; `string'
+PUBLIC	??_C@_08LBPCDDLA@GetCoins@			; `string'
 PUBLIC	??_C@_0CA@JMFCJJPL@RequestAddToEmptyLocalQuickSlot@ ; `string'
-PUBLIC	??_C@_0BJ@IBBGPDPH@RequestUseLocalQuickSlot@	; `string'
+PUBLIC	??_C@_0BJ@DNLGAMEO@RequestAddLocalQuickSlot@	; `string'
 PUBLIC	??_C@_0CL@IEMBKGLN@RequestMoveGlobalQuickSlotToLoc@ ; `string'
-PUBLIC	??_C@_0BB@JKIMCMDG@IsAntiFlagBySlot@		; `string'
+PUBLIC	??_C@_0BN@NACLJDMA@RequestDeleteGlobalQuickSlot@ ; `string'
 PUBLIC	??_C@_0CK@GNGKFIDB@LocalQuickSlotIndexToGlobalQuic@ ; `string'
-PUBLIC	??_C@_0BF@HFKGNAOK@GetItemSubTypeBySlot@	; `string'
+PUBLIC	??_C@_0BJ@IBBGPDPH@RequestUseLocalQuickSlot@	; `string'
 PUBLIC	??_C@_0BC@PGIBMCKF@GetItemTypeBySlot@		; `string'
-PUBLIC	??_C@_0N@NLMPHAJA@GetQuickPage@			; `string'
+PUBLIC	??_C@_0BB@JKIMCMDG@IsAntiFlagBySlot@		; `string'
 PUBLIC	??_C@_0P@HAJODJLN@IsSameItemVnum@		; `string'
-PUBLIC	??_C@_0BC@LNKMMBDG@GetLocalQuickSlot@		; `string'
+PUBLIC	??_C@_0BF@HFKGNAOK@GetItemSubTypeBySlot@	; `string'
 PUBLIC	??_C@_0N@KPHBLMNM@SetQuickPage@			; `string'
-PUBLIC	??_C@_0BH@JNCIKJMC@RemoveQuickSlotByValue@	; `string'
+PUBLIC	??_C@_0N@NLMPHAJA@GetQuickPage@			; `string'
 PUBLIC	??_C@_0BD@ECGPDHPA@GetGlobalQuickSlot@		; `string'
-PUBLIC	??_C@_0BA@EMKHGGAL@IsEquipmentSlot@		; `string'
+PUBLIC	??_C@_0BC@LNKMMBDG@GetLocalQuickSlot@		; `string'
 PUBLIC	??_C@_06NOPKEHAK@isItem@			; `string'
-PUBLIC	??_C@_0O@KCAGNEAI@IsCostumeSlot@		; `string'
+PUBLIC	??_C@_0BH@JNCIKJMC@RemoveQuickSlotByValue@	; `string'
 PUBLIC	??_C@_0BC@DDCIGDKO@IsDSEquipmentSlot@		; `string'
-PUBLIC	??_C@_0BC@DCFDMADN@IsOpenPrivateShop@		; `string'
+PUBLIC	??_C@_0BA@EMKHGGAL@IsEquipmentSlot@		; `string'
 PUBLIC	??_C@_0P@LAJFBPPH@IsValuableItem@		; `string'
-PUBLIC	??_C@_0BA@OBALOJLG@IsEquippingBelt@		; `string'
+PUBLIC	??_C@_0O@KCAGNEAI@IsCostumeSlot@		; `string'
 PUBLIC	??_C@_0BE@HECMLJG@IsBeltInventorySlot@		; `string'
-PUBLIC	??_C@_0BJ@CPJJHAGD@IsSkillBookInventorySlot@	; `string'
+PUBLIC	??_C@_0BC@DCFDMADN@IsOpenPrivateShop@		; `string'
 PUBLIC	??_C@_0BN@DKGNHJIB@IsAvailableBeltInventoryCell@ ; `string'
-PUBLIC	??_C@_0BF@LJHNJJLN@IsStoneInventorySlot@	; `string'
+PUBLIC	??_C@_0BA@OBALOJLG@IsEquippingBelt@		; `string'
 PUBLIC	??_C@_0BM@FCEMHHI@IsUpgradeItemsInventorySlot@	; `string'
-PUBLIC	??_C@_0BI@FMKBEPGC@IsChangersInventorySlot@	; `string'
+PUBLIC	??_C@_0BJ@CPJJHAGD@IsSkillBookInventorySlot@	; `string'
 PUBLIC	??_C@_0BH@IDMOLEIA@IsGiftBoxInventorySlot@	; `string'
-PUBLIC	??_C@_09BGNCJJP@CanRefine@			; `string'
+PUBLIC	??_C@_0BF@LJHNJJLN@IsStoneInventorySlot@	; `string'
 PUBLIC	??_C@_0N@DGHEMMKN@GetItemGrade@			; `string'
-PUBLIC	??_C@_09FHINBOHC@CanUnlock@			; `string'
+PUBLIC	??_C@_0BI@FMKBEPGC@IsChangersInventorySlot@	; `string'
 PUBLIC	??_C@_09GHIBIBHI@CanDetach@			; `string'
-PUBLIC	??_C@_0BE@ELNKJPMC@IsRefineGradeScroll@		; `string'
+PUBLIC	??_C@_09BGNCJJP@CanRefine@			; `string'
 PUBLIC	??_C@_0P@BLOGPKFO@CanAttachMetin@		; `string'
-PUBLIC	??_C@_09EECGCJDE@SetTarget@			; `string'
+PUBLIC	??_C@_09FHINBOHC@CanUnlock@			; `string'
 PUBLIC	??_C@_0M@DPCEEMCG@ClearTarget@			; `string'
-PUBLIC	??_C@_0O@BPMJGNAC@IsPartyLeader@		; `string'
+PUBLIC	??_C@_0BE@ELNKJPMC@IsRefineGradeScroll@		; `string'
 PUBLIC	??_C@_0BC@HAEJEFBP@OpenCharacterMenu@		; `string'
-PUBLIC	??_C@_0BL@EPAFEFHI@GetPartyMemberHPPercentage@	; `string'
+PUBLIC	??_C@_09EECGCJDE@SetTarget@			; `string'
 PUBLIC	??_C@_0BD@HGKJMFNK@IsPartyLeaderByPID@		; `string'
-PUBLIC	??_C@_0BG@EEFAFMJC@GetPartyMemberAffects@	; `string'
+PUBLIC	??_C@_0O@BPMJGNAC@IsPartyLeader@		; `string'
 PUBLIC	??_C@_0BE@HKIJMBKK@GetPartyMemberState@		; `string'
-PUBLIC	??_C@_09IMMFEEHK@GetPKMode@			; `string'
+PUBLIC	??_C@_0BL@EPAFEFHI@GetPartyMemberHPPercentage@	; `string'
 PUBLIC	??_C@_09DMPBEJCG@ExitParty@			; `string'
-PUBLIC	??_C@_0BE@FELKHKJF@GetEmotionIconImage@		; `string'
+PUBLIC	??_C@_0BG@EEFAFMJC@GetPartyMemberAffects@	; `string'
 PUBLIC	??_C@_0BE@PMDABIKP@RegisterEmotionIcon@		; `string'
-PUBLIC	??_C@_0P@ILOOLMDH@ToggleCoolTime@		; `string'
+PUBLIC	??_C@_09IMMFEEHK@GetPKMode@			; `string'
 PUBLIC	??_C@_0BJ@CFCMHNHB@SetWeaponAttackBonusFlag@	; `string'
-PUBLIC	??_C@_0N@MEKPPHGC@GetTargetVID@			; `string'
+PUBLIC	??_C@_0BE@FELKHKJF@GetEmotionIconImage@		; `string'
 PUBLIC	??_C@_0BB@DJKKOCLB@ToggleLevelLimit@		; `string'
-PUBLIC	??_C@_0BD@GLMLJBGM@SetItemMetinSocket@		; `string'
+PUBLIC	??_C@_0P@ILOOLMDH@ToggleCoolTime@		; `string'
 PUBLIC	??_C@_0M@CHNGAPIB@SetItemData@			; `string'
-PUBLIC	??_C@_0N@MABOHHMK@SetItemCount@			; `string'
+PUBLIC	??_C@_0N@MEKPPHGC@GetTargetVID@			; `string'
 PUBLIC	??_C@_0BB@KPGENMF@SetItemAttribute@		; `string'
-PUBLIC	??_C@_0BE@IOMKCPHN@SlotTypeToInvenType@		; `string'
+PUBLIC	??_C@_0BD@GLMLJBGM@SetItemMetinSocket@		; `string'
 PUBLIC	??_C@_0M@DGFCHEAA@GetItemLink@			; `string'
-PUBLIC	??_C@_0BN@OIIJKMFD@ClearAutoAttackTargetActorID@ ; `string'
+PUBLIC	??_C@_0N@MABOHHMK@SetItemCount@			; `string'
 PUBLIC	??_C@_0BF@PLGNHJMH@SendDragonSoulRefine@	; `string'
-PUBLIC	??_C@_0BF@HHEMENOC@GetMainCharacterPart@	; `string'
+PUBLIC	??_C@_0BE@IOMKCPHN@SlotTypeToInvenType@		; `string'
 PUBLIC	??_C@_04PPEDCFAC@NPOS@				; `string'
-PUBLIC	??_C@_0M@GLKHKGON@CanInteract@			; `string'
+PUBLIC	??_C@_0BN@OIIJKMFD@ClearAutoAttackTargetActorID@ ; `string'
 PUBLIC	??_C@_0BB@NAJMCHBK@GetItemSlotIndex@		; `string'
-PUBLIC	??_C@_0O@PKLBMAM@SetSkillColor@			; `string'
+PUBLIC	??_C@_0BF@HHEMENOC@GetMainCharacterPart@	; `string'
 PUBLIC	??_C@_0BH@KNFAMLNM@GetPremiumBattlePassID@	; `string'
-PUBLIC	??_C@_0O@MJPCFPJK@GetAuraItemID@		; `string'
+PUBLIC	??_C@_0M@GLKHKGON@CanInteract@			; `string'
 PUBLIC	??_C@_0O@HALFKPHL@GetSkillColor@		; `string'
-PUBLIC	??_C@_0BH@EEMJAALJ@GetAuraItemMetinSocket@	; `string'
+PUBLIC	??_C@_0O@PKLBMAM@SetSkillColor@			; `string'
 PUBLIC	??_C@_0BB@NMGFNIEB@GetAuraItemCount@		; `string'
-PUBLIC	??_C@_0BI@PBPNGBAE@IsAuraRefineWindowEmpty@	; `string'
+PUBLIC	??_C@_0O@MJPCFPJK@GetAuraItemID@		; `string'
 PUBLIC	??_C@_0BF@DKEAJKNA@GetAuraItemAttribute@	; `string'
-PUBLIC	??_C@_0BH@ECFJIDOK@IsAuraRefineWindowOpen@	; `string'
+PUBLIC	??_C@_0BH@EEMJAALJ@GetAuraItemMetinSocket@	; `string'
 PUBLIC	??_C@_0BM@BKGGJDBO@GetAuraCurrentItemSlotCount@	; `string'
-PUBLIC	??_C@_0BF@DGBJCLPP@FineMoveAuraItemSlot@	; `string'
+PUBLIC	??_C@_0BI@PBPNGBAE@IsAuraRefineWindowEmpty@	; `string'
 PUBLIC	??_C@_0BI@HAAECBGI@GetAuraRefineWindowType@	; `string'
-PUBLIC	??_C@_0BG@EEFNBJPF@FindActivatedAuraSlot@	; `string'
+PUBLIC	??_C@_0BH@ECFJIDOK@IsAuraRefineWindowOpen@	; `string'
 PUBLIC	??_C@_0BJ@FDMBJLDG@SetAuraActivatedItemSlot@	; `string'
-PUBLIC	??_C@_0BC@GPJMKBHD@GetAuraRefineInfo@		; `string'
+PUBLIC	??_C@_0BF@DGBJCLPP@FineMoveAuraItemSlot@	; `string'
 PUBLIC	??_C@_0BC@FMKOGNDO@FindUsingAuraSlot@		; `string'
-PUBLIC	??_C@_0BH@LNIBDCIJ@GetAuraRefineInfoLevel@	; `string'
+PUBLIC	??_C@_0BG@EEFNBJPF@FindActivatedAuraSlot@	; `string'
 PUBLIC	??_C@_0BI@OEGEDDOI@GetAuraRefineInfoExpPer@	; `string'
-PUBLIC	??_C@_0BL@CJGAAMKA@SetOpenPetNameChangeWindow@	; `string'
+PUBLIC	??_C@_0BC@GPJMKBHD@GetAuraRefineInfo@		; `string'
 PUBLIC	??_C@_0BJ@OLOKCKBJ@SetOpenPetHatchingWindow@	; `string'
-PUBLIC	??_C@_0BI@EEFHCAEH@IsOpenPetHatchingWindow@	; `string'
+PUBLIC	??_C@_0BH@LNIBDCIJ@GetAuraRefineInfoLevel@	; `string'
 PUBLIC	??_C@_0BF@LBMFBLG@SetOpenPetFeedWindow@		; `string'
-PUBLIC	??_C@_0BK@ONINDKNJ@IsOpenPetNameChangeWindow@	; `string'
+PUBLIC	??_C@_0BL@CJGAAMKA@SetOpenPetNameChangeWindow@	; `string'
 PUBLIC	??_C@_0BE@CCCDEOF@IsOpenPetFeedWindow@		; `string'
-PUBLIC	??_C@_0P@DGCGCCCO@SetOpenSafeBox@		; `string'
+PUBLIC	??_C@_0BI@EEFHCAEH@IsOpenPetHatchingWindow@	; `string'
 PUBLIC	??_C@_0M@PMJJOEKL@SetOpenMall@			; `string'
-PUBLIC	??_C@_0BD@FFNGMGDE@GetActivePetItemId@		; `string'
+PUBLIC	??_C@_0BK@ONINDKNJ@IsOpenPetNameChangeWindow@	; `string'
 PUBLIC	??_C@_0L@MJHEBNLN@IsOpenMall@			; `string'
-PUBLIC	??_C@_0M@EGNNPBIF@GetPetSkill@			; `string'
+PUBLIC	??_C@_0P@DGCGCCCO@SetOpenSafeBox@		; `string'
 PUBLIC	??_C@_0BE@HIAGDJGO@GetPetItemVNumInBag@		; `string'
-PUBLIC	??_C@_0BF@GGHLDBPM@GetActivePetItemVNum@	; `string'
+PUBLIC	??_C@_0BD@FFNGMGDE@GetActivePetItemId@		; `string'
 PUBLIC	??_C@_0BD@MKFJOLGB@GetPetSkillByIndex@		; `string'
-PUBLIC	??_C@_0L@MCGANBBD@GetPetItem@			; `string'
+PUBLIC	??_C@_0M@EGNNPBIF@GetPetSkill@			; `string'
 PUBLIC	??_C@_0BA@OIMHGHDP@GetPetExpPoints@		; `string'
-PUBLIC	??_C@_0BJ@DBAIPPKB@CanUseGrowthPetQuickSlot@	; `string'
+PUBLIC	??_C@_0BF@GGHLDBPM@GetActivePetItemVNum@	; `string'
 PUBLIC	??_C@_0P@HNNKIABL@GetPetLifeTime@		; `string'
-PUBLIC	??_C@_0BC@LHBNPKGI@GetChangeLookVnum@		; `string'
+PUBLIC	??_C@_0L@MCGANBBD@GetPetItem@			; `string'
 PUBLIC	??_C@_0N@GALPMGNA@LoadNewRegen@			; `string'
-PUBLIC	??_C@_0BI@PJOOIALB@GetChangeLookWindowOpen@	; `string'
+PUBLIC	??_C@_0BJ@DBAIPPKB@CanUseGrowthPetQuickSlot@	; `string'
 PUBLIC	??_C@_0BE@KMNILMPF@SetChangeLookWindow@		; `string'
-PUBLIC	??_C@_0BE@EICJCLKG@GetChangeLookItemID@		; `string'
+PUBLIC	??_C@_0BC@LHBNPKGI@GetChangeLookVnum@		; `string'
 PUBLIC	??_C@_0BI@HMKCDAJK@SetChangeLookWindowType@	; `string'
-PUBLIC	??_C@_0BM@DIBDFBNF@GetChangeLookFreeYangItemID@	; `string'
+PUBLIC	??_C@_0BI@PJOOIALB@GetChangeLookWindowOpen@	; `string'
 PUBLIC	??_C@_0BL@ELGKHOAL@GetChangeLookItemInvenSlot@	; `string'
-PUBLIC	??_C@_0BH@BELNGOAK@CanChangeLookClearItem@	; `string'
+PUBLIC	??_C@_0BE@EICJCLKG@GetChangeLookItemID@		; `string'
 PUBLIC	??_C@_0CC@EICEGDNO@GetChangeLookFreeYangInvenSlotP@ ; `string'
-PUBLIC	??_C@_0BJ@NKLEKMEH@GetChangeChangeLookPrice@	; `string'
+PUBLIC	??_C@_0BM@DIBDFBNF@GetChangeLookFreeYangItemID@	; `string'
 PUBLIC	??_C@_0BO@IEIPICAI@GetChangeWIndowChangeLookVnum@ ; `string'
-PUBLIC	??_C@_05FHIHOFEA@VOICE@				; `string'
+PUBLIC	??_C@_0BH@BELNGOAK@CanChangeLookClearItem@	; `string'
 PUBLIC	??_C@_05GCEPFMCO@LEVEL@				; `string'
-PUBLIC	??_C@_08CHGDMADF@NEXT_EXP@			; `string'
+PUBLIC	??_C@_0BJ@NKLEKMEH@GetChangeChangeLookPrice@	; `string'
 PUBLIC	??_C@_03KKGFKKLA@EXP@				; `string'
-PUBLIC	??_C@_06NMHEPHCD@MAX_HP@			; `string'
+PUBLIC	??_C@_05FHIHOFEA@VOICE@				; `string'
 PUBLIC	??_C@_02MEIMKHMB@HP@				; `string'
-PUBLIC	??_C@_06MMAHLLLC@MAX_SP@			; `string'
+PUBLIC	??_C@_08CHGDMADF@NEXT_EXP@			; `string'
 PUBLIC	??_C@_02NEPPOLFA@SP@				; `string'
-PUBLIC	??_C@_0M@CHCGLEDD@MAX_STAMINA@			; `string'
+PUBLIC	??_C@_06NMHEPHCD@MAX_HP@			; `string'
 PUBLIC	??_C@_07IHPDJFBP@STAMINA@			; `string'
-PUBLIC	??_C@_02LAJDCOFE@ST@				; `string'
+PUBLIC	??_C@_06MMAHLLLC@MAX_SP@			; `string'
 PUBLIC	??_C@_03BIHMGKIG@ELK@				; `string'
-PUBLIC	??_C@_02FEPNEKN@DX@				; `string'
+PUBLIC	??_C@_0M@CHCGLEDD@MAX_STAMINA@			; `string'
 PUBLIC	??_C@_02KAOAGCMF@HT@				; `string'
-PUBLIC	??_C@_09DIGJAPIG@ATT_POWER@			; `string'
+PUBLIC	??_C@_02LAJDCOFE@ST@				; `string'
 PUBLIC	??_C@_02NMFFPMLH@IQ@				; `string'
-PUBLIC	??_C@_07OPGIINPB@ATT_MAX@			; `string'
+PUBLIC	??_C@_02FEPNEKN@DX@				; `string'
 PUBLIC	??_C@_07PNODGJJO@ATT_MIN@			; `string'
-PUBLIC	??_C@_0O@JAPECJBK@MAX_MAGIC_WEP@		; `string'
+PUBLIC	??_C@_09DIGJAPIG@ATT_POWER@			; `string'
 PUBLIC	??_C@_0O@CJNCLCGL@MIN_MAGIC_WEP@		; `string'
-PUBLIC	??_C@_09FOFLCGDC@ATT_BONUS@			; `string'
+PUBLIC	??_C@_07OPGIINPB@ATT_MAX@			; `string'
 PUBLIC	??_C@_09LKMFFHLI@ATT_SPEED@			; `string'
-PUBLIC	??_C@_0N@KGGLAJKM@MOVING_SPEED@			; `string'
+PUBLIC	??_C@_0O@JAPECJBK@MAX_MAGIC_WEP@		; `string'
 PUBLIC	??_C@_0L@IPHIKIMB@EVADE_RATE@			; `string'
-PUBLIC	??_C@_09DNFHINBC@DEF_BONUS@			; `string'
+PUBLIC	??_C@_09FOFLCGDC@ATT_BONUS@			; `string'
 PUBLIC	??_C@_09KMPFCDFE@DEF_GRADE@			; `string'
-PUBLIC	??_C@_07PEONMKMN@MAG_ATT@			; `string'
+PUBLIC	??_C@_0N@KGGLAJKM@MOVING_SPEED@			; `string'
 PUBLIC	??_C@_0O@IOLIEEIE@CASTING_SPEED@		; `string'
-PUBLIC	??_C@_0N@JIFCAIPA@EMPIRE_POINT@			; `string'
+PUBLIC	??_C@_09DNFHINBC@DEF_BONUS@			; `string'
 PUBLIC	??_C@_07KGCDIDGL@MAG_DEF@			; `string'
-PUBLIC	??_C@_0O@DGEPJFAK@SKILL_PASSIVE@		; `string'
+PUBLIC	??_C@_07PEONMKMN@MAG_ATT@			; `string'
 PUBLIC	??_C@_04KNIOFKKL@STAT@				; `string'
-PUBLIC	??_C@_0N@DNBJLBPA@SKILL_ACTIVE@			; `string'
+PUBLIC	??_C@_0N@JIFCAIPA@EMPIRE_POINT@			; `string'
 PUBLIC	??_C@_0O@JLNOPGFK@SKILL_SUPPORT@		; `string'
-PUBLIC	??_C@_08CKIIBBI@PLAYTIME@			; `string'
+PUBLIC	??_C@_0O@DGEPJFAK@SKILL_PASSIVE@		; `string'
 PUBLIC	??_C@_0M@HAFIBGFL@SKILL_HORSE@			; `string'
-PUBLIC	??_C@_0M@CLAIAEPM@HP_RECOVERY@			; `string'
+PUBLIC	??_C@_0N@DNBJLBPA@SKILL_ACTIVE@			; `string'
 PUBLIC	??_C@_0N@KHDDEEFG@BOW_DISTANCE@			; `string'
-PUBLIC	??_C@_0P@GAAMLPFK@ATTACKER_BONUS@		; `string'
+PUBLIC	??_C@_08CKIIBBI@PLAYTIME@			; `string'
 PUBLIC	??_C@_0M@FGICENAO@SP_RECOVERY@			; `string'
-PUBLIC	??_C@_0BD@CPEECKKP@POINT_CRITICAL_PCT@		; `string'
+PUBLIC	??_C@_0M@CLAIAEPM@HP_RECOVERY@			; `string'
 PUBLIC	??_C@_07MEMMKJPK@MAX_NUM@			; `string'
-PUBLIC	??_C@_0BE@FDGMKOPN@POINT_MALL_ATTBONUS@		; `string'
+PUBLIC	??_C@_0P@GAAMLPFK@ATTACKER_BONUS@		; `string'
 PUBLIC	??_C@_0BE@BGNEFMNJ@POINT_PENETRATE_PCT@		; `string'
-PUBLIC	??_C@_0BE@KNGAMOKN@POINT_MALL_EXPBONUS@		; `string'
+PUBLIC	??_C@_0BD@CPEECKKP@POINT_CRITICAL_PCT@		; `string'
 PUBLIC	??_C@_0BE@FJKLFHOA@POINT_MALL_DEFBONUS@		; `string'
-PUBLIC	??_C@_0BF@LPKHMJJF@POINT_MALL_GOLDBONUS@	; `string'
+PUBLIC	??_C@_0BE@FDGMKOPN@POINT_MALL_ATTBONUS@		; `string'
 PUBLIC	??_C@_0BF@FCMHLHC@POINT_MALL_ITEMBONUS@		; `string'
-PUBLIC	??_C@_0BB@IHDKAICM@POINT_MAX_SP_PCT@		; `string'
+PUBLIC	??_C@_0BE@KNGAMOKN@POINT_MALL_EXPBONUS@		; `string'
 PUBLIC	??_C@_0BB@OCODMABI@POINT_MAX_HP_PCT@		; `string'
-PUBLIC	??_C@_0BJ@PGEFOCDG@POINT_SKILL_DAMAGE_BONUS@	; `string'
+PUBLIC	??_C@_0BF@LPKHMJJF@POINT_MALL_GOLDBONUS@	; `string'
 PUBLIC	??_C@_0BA@HLPPKIKO@POINT_ATT_BONUS@		; `string'
-PUBLIC	??_C@_0BJ@LPIAEILC@POINT_SKILL_DEFEND_BONUS@	; `string'
+PUBLIC	??_C@_0BB@IHDKAICM@POINT_MAX_SP_PCT@		; `string'
 PUBLIC	??_C@_0BO@GNDIKOOF@POINT_NORMAL_HIT_DAMAGE_BONUS@ ; `string'
-PUBLIC	??_C@_0N@IJMJNHHP@RESIST_MAGIC@			; `string'
+PUBLIC	??_C@_0BJ@PGEFOCDG@POINT_SKILL_DAMAGE_BONUS@	; `string'
 PUBLIC	??_C@_0BO@CEPNAEGB@POINT_NORMAL_HIT_DEFEND_BONUS@ ; `string'
-PUBLIC	??_C@_06KOEJHMAL@ENERGY@			; `string'
+PUBLIC	??_C@_0BJ@LPIAEILC@POINT_SKILL_DEFEND_BONUS@	; `string'
 PUBLIC	??_C@_0BH@PDEJPPI@POINT_ATTBONUS_MONSTER@	; `string'
-PUBLIC	??_C@_0BJ@PLDLOAKE@POINT_COSTUME_ATTR_BONUS@	; `string'
+PUBLIC	??_C@_0N@IJMJNHHP@RESIST_MAGIC@			; `string'
 PUBLIC	??_C@_0BA@PIHNCBED@ENERGY_END_TIME@		; `string'
-PUBLIC	??_C@_0CA@GOGOBLID@POINT_MELEE_MAGIC_ATT_BONUS_PER@ ; `string'
+PUBLIC	??_C@_06KOEJHMAL@ENERGY@			; `string'
 PUBLIC	??_C@_0BK@IHLHEPKN@POINT_MAGIC_ATT_BONUS_PER@	; `string'
-PUBLIC	??_C@_0BD@HIHOAICI@SKILL_GRADE_MASTER@		; `string'
+PUBLIC	??_C@_0BJ@PLDLOAKE@POINT_COSTUME_ATTR_BONUS@	; `string'
 PUBLIC	??_C@_0BD@LAKFNFGD@SKILL_GRADE_NORMAL@		; `string'
-PUBLIC	??_C@_0BL@DCIPLDCA@SKILL_GRADE_PERFECT_MASTER@	; `string'
+PUBLIC	??_C@_0CA@GOGOBLID@POINT_MELEE_MAGIC_ATT_BONUS_PER@ ; `string'
 PUBLIC	??_C@_0BJ@CFOEIGCN@SKILL_GRADE_GRAND_MASTER@	; `string'
-PUBLIC	??_C@_0BB@HCMEALJK@CATEGORY_PASSIVE@		; `string'
+PUBLIC	??_C@_0BD@HIHOAICI@SKILL_GRADE_MASTER@		; `string'
 PUBLIC	??_C@_0BA@LCKKFCJM@CATEGORY_ACTIVE@		; `string'
-PUBLIC	??_C@_0BF@NFIFHHOM@INVENTORY_PAGE_COUNT@	; `string'
+PUBLIC	??_C@_0BL@DCIPLDCA@SKILL_GRADE_PERFECT_MASTER@	; `string'
 PUBLIC	??_C@_0BE@CEBDMLGH@INVENTORY_PAGE_SIZE@		; `string'
-PUBLIC	??_C@_0BF@HJEBPPMM@EQUIPMENT_SLOT_START@	; `string'
+PUBLIC	??_C@_0BB@HCMEALJK@CATEGORY_PASSIVE@		; `string'
 PUBLIC	??_C@_0BF@LCFAAJPA@INVENTORY_SLOT_COUNT@	; `string'
-PUBLIC	??_C@_0BJ@COKKCHPJ@NEW_EQUIPMENT_SLOT_START@	; `string'
+PUBLIC	??_C@_0BF@NFIFHHOM@INVENTORY_PAGE_COUNT@	; `string'
 PUBLIC	??_C@_0BF@MADFLPAE@EQUIPMENT_PAGE_COUNT@	; `string'
-PUBLIC	??_C@_0BM@JDPNNKAI@SPECIAL_INVENTORY_PAGE_SIZE@	; `string'
+PUBLIC	??_C@_0BF@HJEBPPMM@EQUIPMENT_SLOT_START@	; `string'
 PUBLIC	??_C@_0BJ@PAALBJCN@NEW_EQUIPMENT_SLOT_COUNT@	; `string'
-PUBLIC	??_C@_0CA@LILLGBFC@SKILL_BOOK_INVENTORY_SLOT_COUNT@ ; `string'
+PUBLIC	??_C@_0BJ@COKKCHPJ@NEW_EQUIPMENT_SLOT_START@	; `string'
 PUBLIC	??_C@_0BN@IDPOFDE@SPECIAL_INVENTORY_PAGE_COUNT@	; `string'
-PUBLIC	??_C@_0BL@NOCNFKMC@STONE_INVENTORY_SLOT_COUNT@	; `string'
+PUBLIC	??_C@_0BM@JDPNNKAI@SPECIAL_INVENTORY_PAGE_SIZE@	; `string'
 PUBLIC	??_C@_0CD@PILBODE@UPGRADE_ITEMS_INVENTORY_SLOT_CO@ ; `string'
-PUBLIC	??_C@_0BO@HDBPIDOG@CHANGERS_INVENTORY_SLOT_COUNT@ ; `string'
+PUBLIC	??_C@_0CA@LILLGBFC@SKILL_BOOK_INVENTORY_SLOT_COUNT@ ; `string'
 PUBLIC	??_C@_0BO@KGEOCGGA@GIFT_BOX_INVENTORY_SLOT_COUNT@ ; `string'
-PUBLIC	??_C@_0L@MIGMJBKJ@MBF_ATTACK@			; `string'
+PUBLIC	??_C@_0BL@NOCNFKMC@STONE_INVENTORY_SLOT_COUNT@	; `string'
 PUBLIC	??_C@_09NLFDBCDH@MBF_SKILL@			; `string'
-PUBLIC	??_C@_09FAENJFL@MBF_SMART@			; `string'
+PUBLIC	??_C@_0BO@HDBPIDOG@CHANGERS_INVENTORY_SLOT_COUNT@ ; `string'
 PUBLIC	??_C@_0L@JHBFAMB@MBF_CAMERA@			; `string'
-PUBLIC	??_C@_08CIEGLDP@MBF_AUTO@			; `string'
+PUBLIC	??_C@_0L@MIGMJBKJ@MBF_ATTACK@			; `string'
 PUBLIC	??_C@_08BLLANCB@MBF_MOVE@			; `string'
-PUBLIC	??_C@_09BKODCCAJ@MBS_CLICK@			; `string'
+PUBLIC	??_C@_09FAENJFL@MBF_SMART@			; `string'
 PUBLIC	??_C@_09JEJKPPEO@MBS_PRESS@			; `string'
-PUBLIC	??_C@_08OMNIMJHC@MBT_LEFT@			; `string'
+PUBLIC	??_C@_08CIEGLDP@MBF_AUTO@			; `string'
 PUBLIC	??_C@_09DBJMODBC@MBT_RIGHT@			; `string'
-PUBLIC	??_C@_0BE@BNOEBHPE@SLOT_TYPE_INVENTORY@		; `string'
+PUBLIC	??_C@_09BKODCCAJ@MBS_CLICK@			; `string'
 PUBLIC	??_C@_0P@JBDPGPGM@SLOT_TYPE_NONE@		; `string'
-PUBLIC	??_C@_0P@KCOPIIMF@SLOT_TYPE_SHOP@		; `string'
+PUBLIC	??_C@_08OMNIMJHC@MBT_LEFT@			; `string'
 PUBLIC	??_C@_0BA@MAJHKGKG@SLOT_TYPE_SKILL@		; `string'
-PUBLIC	??_C@_0BK@KJHLAGBH@SLOT_TYPE_EXCHANGE_TARGET@	; `string'
+PUBLIC	??_C@_0BE@BNOEBHPE@SLOT_TYPE_INVENTORY@		; `string'
 PUBLIC	??_C@_0BJ@DBNHPJKE@SLOT_TYPE_EXCHANGE_OWNER@	; `string'
-PUBLIC	??_C@_0BC@HGKFDIFN@SLOT_TYPE_SAFEBOX@		; `string'
+PUBLIC	??_C@_0P@KCOPIIMF@SLOT_TYPE_SHOP@		; `string'
 PUBLIC	??_C@_0BF@CPPFMLHN@SLOT_TYPE_QUICK_SLOT@	; `string'
-PUBLIC	??_C@_0P@OEAGANKI@SLOT_TYPE_MALL@		; `string'
+PUBLIC	??_C@_0BK@KJHLAGBH@SLOT_TYPE_EXCHANGE_TARGET@	; `string'
 PUBLIC	??_C@_0BH@MJAEADNE@SLOT_TYPE_PRIVATE_SHOP@	; `string'
-PUBLIC	??_C@_0CA@FHKIPOOP@SLOT_TYPE_DRAGON_SOUL_INVENTORY@ ; `string'
+PUBLIC	??_C@_0BC@HGKFDIFN@SLOT_TYPE_SAFEBOX@		; `string'
 PUBLIC	??_C@_0BC@LKMHLHKJ@SLOT_TYPE_EMOTION@		; `string'
-PUBLIC	??_C@_0BP@KGAMMBDG@SLOT_TYPE_SKILL_BOOK_INVENTORY@ ; `string'
+PUBLIC	??_C@_0P@OEAGANKI@SLOT_TYPE_MALL@		; `string'
 PUBLIC	??_C@_0BJ@BIEENKEI@SLOT_TYPE_BELT_INVENTORY@	; `string'
-PUBLIC	??_C@_0BK@OKEJBABA@SLOT_TYPE_STONE_INVENTORY@	; `string'
+PUBLIC	??_C@_0CA@FHKIPOOP@SLOT_TYPE_DRAGON_SOUL_INVENTORY@ ; `string'
 PUBLIC	??_C@_0CC@PPMGELGN@SLOT_TYPE_UPGRADE_ITEMS_INVENTO@ ; `string'
-PUBLIC	??_C@_0BN@CIDENILN@SLOT_TYPE_CHANGERS_INVENTORY@ ; `string'
+PUBLIC	??_C@_0BP@KGAMMBDG@SLOT_TYPE_SKILL_BOOK_INVENTORY@ ; `string'
 PUBLIC	??_C@_0BN@HAJHAAOF@SLOT_TYPE_GIFT_BOX_INVENTORY@ ; `string'
-PUBLIC	??_C@_09NCAHJFFG@INVENTORY@			; `string'
+PUBLIC	??_C@_0BK@OKEJBABA@SLOT_TYPE_STONE_INVENTORY@	; `string'
 PUBLIC	??_C@_0BA@NKAFFIGF@RESERVED_WINDOW@		; `string'
-PUBLIC	??_C@_07NCKDBJCB@SAFEBOX@			; `string'
+PUBLIC	??_C@_0BN@CIDENILN@SLOT_TYPE_CHANGERS_INVENTORY@ ; `string'
 PUBLIC	??_C@_09GJGOMHMK@EQUIPMENT@			; `string'
-PUBLIC	??_C@_0BG@FHEDCCNN@DRAGON_SOUL_INVENTORY@	; `string'
+PUBLIC	??_C@_09NCAHJFFG@INVENTORY@			; `string'
 PUBLIC	??_C@_04JPFKNPOP@MALL@				; `string'
-PUBLIC	??_C@_06GKBINIEJ@GROUND@			; `string'
+PUBLIC	??_C@_07NCKDBJCB@SAFEBOX@			; `string'
 PUBLIC	??_C@_0P@LCDFMNHG@BELT_INVENTORY@		; `string'
-PUBLIC	??_C@_0BE@DINLJOM@SLOT_TYPE_SWITCHBOT@		; `string'
+PUBLIC	??_C@_0BG@FHEDCCNN@DRAGON_SOUL_INVENTORY@	; `string'
 PUBLIC	??_C@_09MMGODLEO@SWITCHBOT@			; `string'
-PUBLIC	??_C@_0BA@POJPOEAE@ITEM_SLOT_COUNT@		; `string'
+PUBLIC	??_C@_06GKBINIEJ@GROUND@			; `string'
 PUBLIC	??_C@_0BG@KJHPGJKN@SLOT_TYPE_CHANGE_LOOK@	; `string'
-PUBLIC	??_C@_0BI@HKKDBHO@TRANSMUTATION_TYPE_ITEM@	; `string'
+PUBLIC	??_C@_0BE@DINLJOM@SLOT_TYPE_SWITCHBOT@		; `string'
 PUBLIC	??_C@_0BJ@LHJDGDBJ@TRANSMUTATION_TYPE_MOUNT@	; `string'
-PUBLIC	??_C@_0BB@IOEKBHAE@SKILL_SLOT_COUNT@		; `string'
+PUBLIC	??_C@_0BA@POJPOEAE@ITEM_SLOT_COUNT@		; `string'
 PUBLIC	??_C@_0L@HFAEBHHD@ITEM_MONEY@			; `string'
-PUBLIC	??_C@_0BH@FCKCIMBH@METIN_SOCKET_TYPE_NONE@	; `string'
+PUBLIC	??_C@_0BI@HKKDBHO@TRANSMUTATION_TYPE_ITEM@	; `string'
 PUBLIC	??_C@_0M@CHLINENA@EFFECT_PICK@			; `string'
-PUBLIC	??_C@_0BH@EFCNALEJ@METIN_SOCKET_TYPE_GOLD@	; `string'
+PUBLIC	??_C@_0BB@IOEKBHAE@SKILL_SLOT_COUNT@		; `string'
 PUBLIC	??_C@_0BJ@PHGNNMMA@METIN_SOCKET_TYPE_SILVER@	; `string'
-PUBLIC	??_C@_0BI@BJGENDOO@ATTRIBUTE_SLOT_NORM_NUM@	; `string'
+PUBLIC	??_C@_0BH@FCKCIMBH@METIN_SOCKET_TYPE_NONE@	; `string'
 PUBLIC	??_C@_0BF@HOKBLOCN@METIN_SOCKET_MAX_NUM@	; `string'
-PUBLIC	??_C@_0BK@KGDGKBKL@ATTRIBUTE_SLOT_NORM_START@	; `string'
+PUBLIC	??_C@_0BH@EFCNALEJ@METIN_SOCKET_TYPE_GOLD@	; `string'
 PUBLIC	??_C@_0BI@KKEJPCNE@ATTRIBUTE_SLOT_RARE_NUM@	; `string'
-PUBLIC	??_C@_0BK@MPPGNMKB@ATTRIBUTE_SLOT_RARE_START@	; `string'
+PUBLIC	??_C@_0BI@BJGENDOO@ATTRIBUTE_SLOT_NORM_NUM@	; `string'
 PUBLIC	??_C@_0BI@PNEKDDH@ATTRIBUTE_SLOT_NORM_END@	; `string'
-PUBLIC	??_C@_0BH@BPEONNLD@ATTRIBUTE_SLOT_MAX_NUM@	; `string'
+PUBLIC	??_C@_0BK@KGDGKBKL@ATTRIBUTE_SLOT_NORM_START@	; `string'
 PUBLIC	??_C@_0BI@LMPJICAN@ATTRIBUTE_SLOT_RARE_END@	; `string'
-PUBLIC	??_C@_0M@FNDEJPGN@REFINE_CANT@			; `string'
+PUBLIC	??_C@_0BK@MPPGNMKB@ATTRIBUTE_SLOT_RARE_START@	; `string'
 PUBLIC	??_C@_0BK@MOFNOJPN@COSTUME_ATTRIBUTE_MAX_NUM@	; `string'
-PUBLIC	??_C@_0CA@CPLGFHBD@REFINE_ALREADY_MAX_SOCKET_COUNT@ ; `string'
+PUBLIC	??_C@_0BH@BPEONNLD@ATTRIBUTE_SLOT_MAX_NUM@	; `string'
 PUBLIC	??_C@_09FFJEIDJG@REFINE_OK@			; `string'
-PUBLIC	??_C@_0BN@JPDLJDPD@REFINE_CANT_MAKE_SOCKET_ITEM@ ; `string'
+PUBLIC	??_C@_0M@FNDEJPGN@REFINE_CANT@			; `string'
 PUBLIC	??_C@_0BN@FMBLMMOD@REFINE_NEED_MORE_GOOD_SCROLL@ ; `string'
-PUBLIC	??_C@_0CG@LFLLDFCE@REFINE_CANT_REFINE_METIN_TO_EQU@ ; `string'
+PUBLIC	??_C@_0CA@CPLGFHBD@REFINE_ALREADY_MAX_SOCKET_COUNT@ ; `string'
 PUBLIC	??_C@_0BL@EILCCEPE@REFINE_NOT_NEXT_GRADE_ITEM@	; `string'
-PUBLIC	??_C@_0BC@CBCJMHP@ATTACH_METIN_CANT@		; `string'
+PUBLIC	??_C@_0BN@JPDLJDPD@REFINE_CANT_MAKE_SOCKET_ITEM@ ; `string'
 PUBLIC	??_C@_0BH@OENPPLJB@REFINE_CANT_REFINE_ROD@	; `string'
-PUBLIC	??_C@_0CA@OFAKGLFM@ATTACH_METIN_NOT_MATCHABLE_ITEM@ ; `string'
+PUBLIC	??_C@_0CG@LFLLDFCE@REFINE_CANT_REFINE_METIN_TO_EQU@ ; `string'
 PUBLIC	??_C@_0BA@HOJAFGB@ATTACH_METIN_OK@		; `string'
-PUBLIC	??_C@_0CD@JNOPKOFJ@ATTACH_METIN_NOT_EXIST_GOLD_SOC@ ; `string'
+PUBLIC	??_C@_0BC@CBCJMHP@ATTACH_METIN_CANT@		; `string'
 PUBLIC	??_C@_0CB@MAILDNNI@ATTACH_METIN_NO_MATCHABLE_SOCKE@ ; `string'
-PUBLIC	??_C@_0BC@HGBPKPKG@DETACH_METIN_CANT@		; `string'
+PUBLIC	??_C@_0CA@OFAKGLFM@ATTACH_METIN_NOT_MATCHABLE_ITEM@ ; `string'
 PUBLIC	??_C@_0CG@BCIFDNEM@ATTACH_METIN_CANT_ATTACH_TO_EQU@ ; `string'
-PUBLIC	??_C@_0BD@PNFBHDHD@PARTY_STATE_NORMAL@		; `string'
+PUBLIC	??_C@_0CD@JNOPKOFJ@ATTACH_METIN_NOT_EXIST_GOLD_SOC@ ; `string'
 PUBLIC	??_C@_0BA@IACJJMNA@DETACH_METIN_OK@		; `string'
-PUBLIC	??_C@_0BF@DOKPPLCL@PARTY_STATE_ATTACKER@	; `string'
+PUBLIC	??_C@_0BC@HGBPKPKG@DETACH_METIN_CANT@		; `string'
 PUBLIC	??_C@_0BD@ECFFHEOH@PARTY_STATE_LEADER@		; `string'
-PUBLIC	??_C@_0BD@JJFBJLK@PARTY_STATE_BUFFER@		; `string'
+PUBLIC	??_C@_0BD@PNFBHDHD@PARTY_STATE_NORMAL@		; `string'
 PUBLIC	??_C@_0BD@FHMGGDNP@PARTY_STATE_TANKER@		; `string'
-PUBLIC	??_C@_0BG@LCNEBE@PARTY_STATE_BERSERKER@		; `string'
+PUBLIC	??_C@_0BF@DOKPPLCL@PARTY_STATE_ATTACKER@	; `string'
 PUBLIC	??_C@_0BJ@EIPCPJKC@PARTY_STATE_SKILL_MASTER@	; `string'
-PUBLIC	??_C@_0BE@KCLJFDCO@PARTY_STATE_MAX_NUM@		; `string'
+PUBLIC	??_C@_0BD@JJFBJLK@PARTY_STATE_BUFFER@		; `string'
 PUBLIC	??_C@_0BF@PAKJEMH@PARTY_STATE_DEFENDER@		; `string'
-PUBLIC	??_C@_0BE@HANBCKAH@SKILL_INDEX_FISHING@		; `string'
+PUBLIC	??_C@_0BG@LCNEBE@PARTY_STATE_BERSERKER@		; `string'
 PUBLIC	??_C@_0BE@MNBFKLPI@SKILL_INDEX_TONGSOL@		; `string'
-PUBLIC	??_C@_0BD@IBJDJMEL@SKILL_INDEX_MAKING@		; `string'
+PUBLIC	??_C@_0BE@KCLJFDCO@PARTY_STATE_MAX_NUM@		; `string'
 PUBLIC	??_C@_0BD@KFCAJBFG@SKILL_INDEX_MINING@		; `string'
-PUBLIC	??_C@_0BG@GPLOFEKK@SKILL_INDEX_LANGUAGE1@	; `string'
+PUBLIC	??_C@_0BE@HANBCKAH@SKILL_INDEX_FISHING@		; `string'
 PUBLIC	??_C@_0BC@HACNAMIK@SKILL_INDEX_COMBO@		; `string'
-PUBLIC	??_C@_0BG@FNIIDGCI@SKILL_INDEX_LANGUAGE3@	; `string'
+PUBLIC	??_C@_0BD@IBJDJMEL@SKILL_INDEX_MAKING@		; `string'
 PUBLIC	??_C@_0BG@EEJDAHGJ@SKILL_INDEX_LANGUAGE2@	; `string'
-PUBLIC	??_C@_0BD@HOAGGFNA@SKILL_INDEX_RIDING@		; `string'
+PUBLIC	??_C@_0BG@GPLOFEKK@SKILL_INDEX_LANGUAGE1@	; `string'
 PUBLIC	??_C@_0BG@DMEIDEKO@SKILL_INDEX_POLYMORPH@	; `string'
-PUBLIC	??_C@_0O@BIPAMBIG@PK_MODE_PEACE@		; `string'
+PUBLIC	??_C@_0BG@FNIIDGCI@SKILL_INDEX_LANGUAGE3@	; `string'
 PUBLIC	??_C@_0BD@POBHIINM@SKILL_INDEX_SUMMON@		; `string'
-PUBLIC	??_C@_0N@DCANEGJG@PK_MODE_FREE@			; `string'
+PUBLIC	??_C@_0BD@HOAGGFNA@SKILL_INDEX_RIDING@		; `string'
 PUBLIC	??_C@_0BA@HNNGLCOB@PK_MODE_REVENGE@		; `string'
-PUBLIC	??_C@_0O@LBDADKLE@PK_MODE_GUILD@		; `string'
+PUBLIC	??_C@_0O@BIPAMBIG@PK_MODE_PEACE@		; `string'
 PUBLIC	??_C@_0BA@GHACPGHA@PK_MODE_PROTECT@		; `string'
-PUBLIC	??_C@_0P@CDMGAFPE@BLOCK_EXCHANGE@		; `string'
+PUBLIC	??_C@_0N@DCANEGJG@PK_MODE_FREE@			; `string'
 PUBLIC	??_C@_0BA@OLCDKGDA@PK_MODE_MAX_NUM@		; `string'
-PUBLIC	??_C@_0M@EEMDCMKA@BLOCK_GUILD@			; `string'
+PUBLIC	??_C@_0O@LBDADKLE@PK_MODE_GUILD@		; `string'
 PUBLIC	??_C@_0M@KFDBGBIL@BLOCK_PARTY@			; `string'
-PUBLIC	??_C@_0N@IJGKBLJF@BLOCK_FRIEND@			; `string'
+PUBLIC	??_C@_0P@CDMGAFPE@BLOCK_EXCHANGE@		; `string'
 PUBLIC	??_C@_0O@CFHKOIIK@BLOCK_WHISPER@		; `string'
-PUBLIC	??_C@_0BD@ICDJFAGE@BLOCK_WARP_REQUEST@		; `string'
+PUBLIC	??_C@_0M@EEMDCMKA@BLOCK_GUILD@			; `string'
 PUBLIC	??_C@_0BE@NDGMABKO@BLOCK_PARTY_REQUEST@		; `string'
-PUBLIC	??_C@_0BO@CBJBDFJC@PARTY_EXP_DISTRIBUTION_PARITY@ ; `string'
+PUBLIC	??_C@_0N@IJGKBLJF@BLOCK_FRIEND@			; `string'
 PUBLIC	??_C@_0BL@OELLICOI@PARTY_EXP_NON_DISTRIBUTION@	; `string'
-PUBLIC	??_C@_0BB@MCMBOGFC@EMOTION_CHEERS_1@		; `string'
+PUBLIC	??_C@_0BD@ICDJFAGE@BLOCK_WARP_REQUEST@		; `string'
 PUBLIC	??_C@_0N@GFLIEIGE@EMOTION_CLAP@			; `string'
-PUBLIC	??_C@_0BA@CLHGMEE@EMOTION_DANCE_1@		; `string'
+PUBLIC	??_C@_0BO@CBJBDFJC@PARTY_EXP_DISTRIBUTION_PARITY@ ; `string'
 PUBLIC	??_C@_0BB@OJOMLFJB@EMOTION_CHEERS_2@		; `string'
-PUBLIC	??_C@_0BA@DAIBAOMG@EMOTION_DANCE_3@		; `string'
+PUBLIC	??_C@_0BB@MCMBOGFC@EMOTION_CHEERS_1@		; `string'
 PUBLIC	??_C@_0BA@CJJKDPIH@EMOTION_DANCE_2@		; `string'
-PUBLIC	??_C@_0BA@GGNLKJEA@EMOTION_DANCE_5@		; `string'
+PUBLIC	??_C@_0BA@CLHGMEE@EMOTION_DANCE_1@		; `string'
 PUBLIC	??_C@_0BA@HPMAJIAB@EMOTION_DANCE_4@		; `string'
-PUBLIC	??_C@_0BH@FIIEKKHF@EMOTION_CONGRATULATION@	; `string'
+PUBLIC	??_C@_0BA@DAIBAOMG@EMOTION_DANCE_3@		; `string'
 PUBLIC	??_C@_0BA@ENPGPKID@EMOTION_DANCE_6@		; `string'
-PUBLIC	??_C@_0BA@FEONMLMC@EMOTION_DANCE_7@		; `string'
+PUBLIC	??_C@_0BA@GGNLKJEA@EMOTION_DANCE_5@		; `string'
 PUBLIC	??_C@_0P@EGOAAOEC@EMOTION_SELFIE@		; `string'
-PUBLIC	??_C@_0BB@PDNONAIP@EMOTION_EXERCISE@		; `string'
+PUBLIC	??_C@_0BH@FIIEKKHF@EMOTION_CONGRATULATION@	; `string'
 PUBLIC	??_C@_0N@OCOLJBBP@EMOTION_DOZE@			; `string'
-PUBLIC	??_C@_0BC@DCPHBGDN@EMOTION_EMOTION_1@		; `string'
+PUBLIC	??_C@_0BA@FEONMLMC@EMOTION_DANCE_7@		; `string'
 PUBLIC	??_C@_0P@FEDINNCE@EMOTION_PUSHUP@		; `string'
-PUBLIC	??_C@_0BC@MBHELP@EMOTION_EMOTION_3@		; `string'
+PUBLIC	??_C@_0BB@PDNONAIP@EMOTION_EXERCISE@		; `string'
 PUBLIC	??_C@_0BC@BJNKEFPO@EMOTION_EMOTION_2@		; `string'
-PUBLIC	??_C@_0BC@FGJLNDDJ@EMOTION_EMOTION_5@		; `string'
+PUBLIC	??_C@_0BC@DCPHBGDN@EMOTION_EMOTION_1@		; `string'
 PUBLIC	??_C@_0BC@EPIAOCHI@EMOTION_EMOTION_4@		; `string'
-PUBLIC	??_C@_0BC@GEKNLBLL@EMOTION_EMOTION_7@		; `string'
+PUBLIC	??_C@_0BC@MBHELP@EMOTION_EMOTION_3@		; `string'
 PUBLIC	??_C@_0BC@HNLGIAPK@EMOTION_EMOTION_6@		; `string'
-PUBLIC	??_C@_0BC@PKCOJMDF@EMOTION_EMOTION_9@		; `string'
+PUBLIC	??_C@_0BC@FGJLNDDJ@EMOTION_EMOTION_5@		; `string'
 PUBLIC	??_C@_0BC@ODDFKNHE@EMOTION_EMOTION_8@		; `string'
-PUBLIC	??_C@_0BD@JOAHLMLF@EMOTION_EMOTION_11@		; `string'
+PUBLIC	??_C@_0BC@GEKNLBLL@EMOTION_EMOTION_7@		; `string'
 PUBLIC	??_C@_0BD@IHBMINPE@EMOTION_EMOTION_10@		; `string'
-PUBLIC	??_C@_0BD@KMDBNODH@EMOTION_EMOTION_13@		; `string'
+PUBLIC	??_C@_0BC@PKCOJMDF@EMOTION_EMOTION_9@		; `string'
 PUBLIC	??_C@_0BD@LFCKOPHG@EMOTION_EMOTION_12@		; `string'
-PUBLIC	??_C@_0BD@PKGLHJLB@EMOTION_EMOTION_15@		; `string'
+PUBLIC	??_C@_0BD@JOAHLMLF@EMOTION_EMOTION_11@		; `string'
 PUBLIC	??_C@_0BD@ODHAEIPA@EMOTION_EMOTION_14@		; `string'
-PUBLIC	??_C@_0BD@MIFNBLDD@EMOTION_EMOTION_17@		; `string'
+PUBLIC	??_C@_0BD@KMDBNODH@EMOTION_EMOTION_13@		; `string'
 PUBLIC	??_C@_0BD@NBEGCKHC@EMOTION_EMOTION_16@		; `string'
-PUBLIC	??_C@_0BD@FGNODGLN@EMOTION_EMOTION_19@		; `string'
+PUBLIC	??_C@_0BD@PKGLHJLB@EMOTION_EMOTION_15@		; `string'
 PUBLIC	??_C@_0BD@EPMFAHPM@EMOTION_EMOTION_18@		; `string'
-PUBLIC	??_C@_0BD@JMEBACOM@EMOTION_EMOTION_21@		; `string'
+PUBLIC	??_C@_0BD@MIFNBLDD@EMOTION_EMOTION_17@		; `string'
 PUBLIC	??_C@_0BD@IFFKDDKN@EMOTION_EMOTION_20@		; `string'
-PUBLIC	??_C@_0O@DACEICMN@EMOTION_ANGRY@		; `string'
+PUBLIC	??_C@_0BD@FGNODGLN@EMOTION_EMOTION_19@		; `string'
 PUBLIC	??_C@_0BA@JPGNEMIB@EMOTION_FORGIVE@		; `string'
-PUBLIC	??_C@_0M@EGEMMDCF@EMOTION_SAD@			; `string'
+PUBLIC	??_C@_0BD@JMEBACOM@EMOTION_EMOTION_21@		; `string'
 PUBLIC	??_C@_0BD@FLNIBF@EMOTION_ATTRACTIVE@		; `string'
-PUBLIC	??_C@_0BA@MENCJFPL@EMOTION_CHEERUP@		; `string'
+PUBLIC	??_C@_0O@DACEICMN@EMOTION_ANGRY@		; `string'
 PUBLIC	??_C@_0M@LGPBJELG@EMOTION_SHY@			; `string'
-PUBLIC	??_C@_0M@JOKPJKCG@EMOTION_JOY@			; `string'
+PUBLIC	??_C@_0M@EGEMMDCF@EMOTION_SAD@			; `string'
 PUBLIC	??_C@_0P@JAJBGKKI@EMOTION_BANTER@		; `string'
-PUBLIC	??_C@_0BE@KCAKKBPE@EMOTION_FRENCH_KISS@		; `string'
+PUBLIC	??_C@_0BA@MENCJFPL@EMOTION_CHEERUP@		; `string'
 PUBLIC	??_C@_0N@FGJJNHEK@EMOTION_KISS@			; `string'
-PUBLIC	??_C@_0BE@LLABJENL@AUTO_POTION_TYPE_HP@		; `string'
+PUBLIC	??_C@_0M@JOKPJKCG@EMOTION_JOY@			; `string'
 PUBLIC	??_C@_0N@FFINPOG@EMOTION_SLAP@			; `string'
-PUBLIC	??_C@_0BG@FEPFCIIM@DRAGON_SOUL_PAGE_SIZE@	; `string'
+PUBLIC	??_C@_0BE@KCAKKBPE@EMOTION_FRENCH_KISS@		; `string'
 PUBLIC	??_C@_0BE@KLHCNIEK@AUTO_POTION_TYPE_SP@		; `string'
-PUBLIC	??_C@_0BH@IFPINEOD@DRAGON_SOUL_SLOT_COUNT@	; `string'
+PUBLIC	??_C@_0BE@LLABJENL@AUTO_POTION_TYPE_HP@		; `string'
 PUBLIC	??_C@_0BH@OCCNKKPP@DRAGON_SOUL_PAGE_COUNT@	; `string'
-PUBLIC	??_C@_0CB@GAHKEECK@DRAGON_SOUL_EQUIPMENT_PAGE_COUN@ ; `string'
+PUBLIC	??_C@_0BG@FEPFCIIM@DRAGON_SOUL_PAGE_SIZE@	; `string'
 PUBLIC	??_C@_0CB@NJAOAEOC@DRAGON_SOUL_EQUIPMENT_SLOT_STAR@ ; `string'
-PUBLIC	??_C@_0BJ@MMGGGOHJ@DRAGON_SOUL_REFINE_CLOSE@	; `string'
+PUBLIC	??_C@_0BH@IFPINEOD@DRAGON_SOUL_SLOT_COUNT@	; `string'
 PUBLIC	??_C@_0CB@OIFHBJMG@DRAGON_SOUL_EQUIPMENT_FIRST_SIZ@ ; `string'
-PUBLIC	??_C@_0BN@PCPINHKH@DS_SUB_HEADER_DO_IMPROVEMENT@ ; `string'
+PUBLIC	??_C@_0CB@GAHKEECK@DRAGON_SOUL_EQUIPMENT_PAGE_COUN@ ; `string'
 PUBLIC	??_C@_0BJ@JKFAJIJN@DS_SUB_HEADER_DO_UPGRADE@	; `string'
-PUBLIC	??_C@_0BB@KDMFEIAD@REVIVE_TYPE_HERE@		; `string'
+PUBLIC	??_C@_0BJ@MMGGGOHJ@DRAGON_SOUL_REFINE_CLOSE@	; `string'
 PUBLIC	??_C@_0BI@NHBOLMGK@DS_SUB_HEADER_DO_REFINE@	; `string'
-PUBLIC	??_C@_0BG@MNLBEPAN@REVIVE_TYPE_AUTO_TOWN@	; `string'
+PUBLIC	??_C@_0BN@PCPINHKH@DS_SUB_HEADER_DO_IMPROVEMENT@ ; `string'
 PUBLIC	??_C@_0BB@IMFHMJME@REVIVE_TYPE_TOWN@		; `string'
-PUBLIC	??_C@_05BANMFAOM@COINS@				; `string'
+PUBLIC	??_C@_0BB@KDMFEIAD@REVIVE_TYPE_HERE@		; `string'
 PUBLIC	??_C@_0BA@LFMGHCBJ@REVIVE_TYPE_MAX@		; `string'
-PUBLIC	??_C@_0BA@DMHIDAHJ@HORSE_MAX_LEVEL@		; `string'
+PUBLIC	??_C@_0BG@MNLBEPAN@REVIVE_TYPE_AUTO_TOWN@	; `string'
 PUBLIC	??_C@_0BL@MNIINOMA@AUTOMATIC_PICK_UP_ACTIVATE@	; `string'
-PUBLIC	??_C@_0BA@NJHEAJMG@ON_TOP_WND_SHOP@		; `string'
+PUBLIC	??_C@_05BANMFAOM@COINS@				; `string'
 PUBLIC	??_C@_0BA@OKKEOOGP@ON_TOP_WND_NONE@		; `string'
-PUBLIC	??_C@_0BD@DBKGGFLJ@ON_TOP_WND_SAFEBOX@		; `string'
+PUBLIC	??_C@_0BA@DMHIDAHJ@HORSE_MAX_LEVEL@		; `string'
 PUBLIC	??_C@_0BE@IFGMMCHH@ON_TOP_WND_EXCHANGE@		; `string'
-PUBLIC	??_C@_0BF@GOBPEOGN@ON_TOP_WND_ITEM_COMB@	; `string'
+PUBLIC	??_C@_0BA@NJHEAJMG@ON_TOP_WND_SHOP@		; `string'
 PUBLIC	??_C@_0BI@JAEJNCCP@ON_TOP_WND_PRIVATE_SHOP@	; `string'
-PUBLIC	??_C@_0BI@GLAKGGPH@ON_TOP_WND_ACCE_COMBINE@	; `string'
+PUBLIC	??_C@_0BD@DBKGGFLJ@ON_TOP_WND_SAFEBOX@		; `string'
 PUBLIC	??_C@_0BE@EHJBMPOO@ON_TOP_WND_PET_FEED@		; `string'
-PUBLIC	??_C@_0BL@KJLPEENL@ON_TOP_WND_PET_ATTR_CHANGE@	; `string'
+PUBLIC	??_C@_0BF@GOBPEOGN@ON_TOP_WND_ITEM_COMB@	; `string'
 PUBLIC	??_C@_0BH@NNPMEGBL@ON_TOP_WND_ACCE_ABSORB@	; `string'
-PUBLIC	??_C@_0BN@ELAPKHPA@REFINE_CANT_REFINE_AURA_ITEM@ ; `string'
+PUBLIC	??_C@_0BI@GLAKGGPH@ON_TOP_WND_ACCE_COMBINE@	; `string'
 PUBLIC	??_C@_0CB@NFMKANIJ@ON_TOP_WND_PET_PRIMIUM_FEEDSTUF@ ; `string'
-PUBLIC	??_C@_0M@PDHBNBKH@AURA_REFINE@			; `string'
+PUBLIC	??_C@_0BL@KJLPEENL@ON_TOP_WND_PET_ATTR_CHANGE@	; `string'
 PUBLIC	??_C@_0P@FNJLNAFG@SLOT_TYPE_AURA@		; `string'
-PUBLIC	??_C@_0P@PDNCLEMB@AURA_SLOT_MAIN@		; `string'
+PUBLIC	??_C@_0BN@ELAPKHPA@REFINE_CANT_REFINE_AURA_ITEM@ ; `string'
 PUBLIC	??_C@_0P@MFDEBDB@AURA_MAX_LEVEL@		; `string'
-PUBLIC	??_C@_0BB@BOPFHPDA@AURA_SLOT_RESULT@		; `string'
+PUBLIC	??_C@_0M@PDHBNBKH@AURA_REFINE@			; `string'
 PUBLIC	??_C@_0O@LCLMBHEO@AURA_SLOT_SUB@		; `string'
-PUBLIC	??_C@_0BI@IFHNBPDE@AURA_WINDOW_TYPE_ABSORB@	; `string'
+PUBLIC	??_C@_0P@PDNCLEMB@AURA_SLOT_MAIN@		; `string'
 PUBLIC	??_C@_0O@KJHIMGJF@AURA_SLOT_MAX@		; `string'
-PUBLIC	??_C@_0BI@BGJIJANM@AURA_WINDOW_TYPE_EVOLVE@	; `string'
+PUBLIC	??_C@_0BB@BOPFHPDA@AURA_SLOT_RESULT@		; `string'
 PUBLIC	??_C@_0BI@CLKELJFO@AURA_WINDOW_TYPE_GROWTH@	; `string'
-PUBLIC	??_C@_0BO@JIFCGECJ@AURA_REFINE_INFO_SLOT_CURRENT@ ; `string'
+PUBLIC	??_C@_0BI@IFHNBPDE@AURA_WINDOW_TYPE_ABSORB@	; `string'
 PUBLIC	??_C@_0BF@DEACKNDL@AURA_WINDOW_TYPE_MAX@	; `string'
-PUBLIC	??_C@_0BO@LHGEKFE@AURA_REFINE_INFO_SLOT_EVOLVED@ ; `string'
+PUBLIC	??_C@_0BI@BGJIJANM@AURA_WINDOW_TYPE_EVOLVE@	; `string'
 PUBLIC	??_C@_0BL@LDIPHABL@AURA_REFINE_INFO_SLOT_NEXT@	; `string'
-PUBLIC	??_C@_0BL@NLGLHECL@AURA_REFINE_INFO_LEVEL_MIN@	; `string'
+PUBLIC	??_C@_0BO@JIFCGECJ@AURA_REFINE_INFO_SLOT_CURRENT@ ; `string'
 PUBLIC	??_C@_0BG@LFHCGDMM@AURA_REFINE_INFO_STEP@	; `string'
-PUBLIC	??_C@_0BK@GLEMHOOH@AURA_REFINE_INFO_NEED_EXP@	; `string'
+PUBLIC	??_C@_0BO@LHGEKFE@AURA_REFINE_INFO_SLOT_EVOLVED@ ; `string'
 PUBLIC	??_C@_0BL@MJOAJAEE@AURA_REFINE_INFO_LEVEL_MAX@	; `string'
-PUBLIC	??_C@_0CA@GCLPEEL@AURA_REFINE_INFO_MATERIAL_COUNT@ ; `string'
+PUBLIC	??_C@_0BL@NLGLHECL@AURA_REFINE_INFO_LEVEL_MIN@	; `string'
 PUBLIC	??_C@_0BP@MKNGONPM@AURA_REFINE_INFO_MATERIAL_VNUM@ ; `string'
-PUBLIC	??_C@_0BM@IEECEMNC@AURA_REFINE_INFO_EVOLVE_PCT@	; `string'
+PUBLIC	??_C@_0BK@GLEMHOOH@AURA_REFINE_INFO_NEED_EXP@	; `string'
 PUBLIC	??_C@_0BL@ICCNHPG@AURA_REFINE_INFO_NEED_GOLD@	; `string'
-PUBLIC	??_C@_0BP@EMKIFIGK@ITEM_SOCKET_AURA_CURRENT_LEVEL@ ; `string'
+PUBLIC	??_C@_0CA@GCLPEEL@AURA_REFINE_INFO_MATERIAL_COUNT@ ; `string'
 PUBLIC	??_C@_0CB@DCOODGCM@ITEM_SOCKET_AURA_DRAIN_ITEM_VNU@ ; `string'
-PUBLIC	??_C@_0BN@NPMDAJNF@ITEM_VALUE_AURA_MATERIAL_EXP@ ; `string'
+PUBLIC	??_C@_0BM@IEECEMNC@AURA_REFINE_INFO_EVOLVE_PCT@	; `string'
 PUBLIC	??_C@_0BH@LAHGBIBJ@ITEM_SOCKET_AURA_BOOST@	; `string'
-PUBLIC	??_C@_0BL@BAPFGKOD@ITEM_VALUE_AURA_BOOST_TIME@	; `string'
+PUBLIC	??_C@_0BP@EMKIFIGK@ITEM_SOCKET_AURA_CURRENT_LEVEL@ ; `string'
 PUBLIC	??_C@_0BO@MPFCFKKC@ITEM_VALUE_AURA_BOOST_PERCENT@ ; `string'
-PUBLIC	??_C@_08LJKGNBOE@PET_FEED@			; `string'
+PUBLIC	??_C@_0BN@NPMDAJNF@ITEM_VALUE_AURA_MATERIAL_EXP@ ; `string'
 PUBLIC	??_C@_0CA@CIFBLEK@ITEM_VALUE_AURA_BOOST_UNLIMITED@ ; `string'
-PUBLIC	??_C@_0BE@NFLCMMDA@PET_GROWTH_EVOL_MAX@		; `string'
+PUBLIC	??_C@_0BL@BAPFGKOD@ITEM_VALUE_AURA_BOOST_TIME@	; `string'
 PUBLIC	??_C@_0BC@DMHKNCHI@PET_FEED_SLOT_MAX@		; `string'
-PUBLIC	??_C@_0CB@OBCGFKLG@PET_GROWTH_SKILL_OPEN_EVOL_LEVE@ ; `string'
+PUBLIC	??_C@_08LJKGNBOE@PET_FEED@			; `string'
 PUBLIC	??_C@_0BL@EIFGHGIE@PET_GROWTH_SKILL_LEVEL_MAX@	; `string'
-PUBLIC	??_C@_0BE@JMKAEJNF@PET_SKILL_COUNT_MAX@		; `string'
+PUBLIC	??_C@_0BE@NFLCMMDA@PET_GROWTH_EVOL_MAX@		; `string'
 PUBLIC	??_C@_0BN@BPMCNOMH@PET_REVIVE_MATERIAL_SLOT_MAX@ ; `string'
-PUBLIC	??_C@_0BF@OGHAJJKA@SPECIAL_EVOL_MIN_AGE@	; `string'
+PUBLIC	??_C@_0CB@OBCGFKLG@PET_GROWTH_SKILL_OPEN_EVOL_LEVE@ ; `string'
 PUBLIC	??_C@_0BJ@JJGKAJLE@LIFE_TIME_FLASH_MIN_TIME@	; `string'
-PUBLIC	??_C@_0P@KMMLDJON@FEED_EXP_EVENT@		; `string'
+PUBLIC	??_C@_0BE@JMKAEJNF@PET_SKILL_COUNT_MAX@		; `string'
 PUBLIC	??_C@_0BF@FPKOBLCK@FEED_LIFE_TIME_EVENT@	; `string'
-PUBLIC	??_C@_0BA@BJMLMPCH@FEED_BUTTON_MAX@		; `string'
+PUBLIC	??_C@_0BF@OGHAJJKA@SPECIAL_EVOL_MIN_AGE@	; `string'
 PUBLIC	??_C@_0BA@DIFILJDH@FEED_EVOL_EVENT@		; `string'
-PUBLIC	??_C@_0BH@DNHCPKPA@PET_WINDOW_ATTR_CHANGE@	; `string'
+PUBLIC	??_C@_0P@KMMLDJON@FEED_EXP_EVENT@		; `string'
 PUBLIC	??_C@_0BA@BCBOOENP@PET_WINDOW_INFO@		; `string'
-PUBLIC	??_C@_0BJ@NBIJKGHG@PET_WND_SLOT_ATTR_CHANGE@	; `string'
+PUBLIC	??_C@_0BA@BJMLMPCH@FEED_BUTTON_MAX@		; `string'
 PUBLIC	??_C@_0BN@GJGLGIPO@PET_WINDOW_PRIMIUM_FEEDSTUFF@ ; `string'
-PUBLIC	??_C@_0CA@CBANDPKJ@PET_WND_SLOT_ATTR_CHANGE_RESULT@ ; `string'
+PUBLIC	??_C@_0BH@DNHCPKPA@PET_WINDOW_ATTR_CHANGE@	; `string'
 PUBLIC	??_C@_0BO@LHIHOBGL@PET_WND_SLOT_ATTR_CHANGE_ITEM@ ; `string'
-PUBLIC	??_C@_0BI@NPPIBKMK@PET_ATTR_DETERMINE_ITEM@	; `string'
+PUBLIC	??_C@_0BJ@NBIJKGHG@PET_WND_SLOT_ATTR_CHANGE@	; `string'
 PUBLIC	??_C@_0BN@FIDDPHID@PET_WND_SLOT_ATTR_CHANGE_MAX@ ; `string'
-PUBLIC	??_C@_0BF@IOMDMJJH@QUICK_SLOT_POS_ERROR@	; `string'
+PUBLIC	??_C@_0CA@CBANDPKJ@PET_WND_SLOT_ATTR_CHANGE_RESULT@ ; `string'
 PUBLIC	??_C@_0BF@EGOKNPMG@PET_ATTR_CHANGE_ITEM@	; `string'
-PUBLIC	??_C@_0BH@JPEBDBOE@QUICK_SLOT_IS_NOT_ITEM@	; `string'
+PUBLIC	??_C@_0BI@NPPIBKMK@PET_ATTR_DETERMINE_ITEM@	; `string'
 PUBLIC	??_C@_0BM@CGLKDAAA@QUICK_SLOT_ITEM_USE_SUCCESS@	; `string'
-PUBLIC	??_C@_0BP@DJAPKJMJ@QUICK_SLOT_PET_ITEM_USE_FAILED@ ; `string'
+PUBLIC	??_C@_0BF@IOMDMJJH@QUICK_SLOT_POS_ERROR@	; `string'
 PUBLIC	??_C@_0CA@OOHPPNPK@QUICK_SLOT_PET_ITEM_USE_SUCCESS@ ; `string'
-PUBLIC	??_C@_0BJ@MEMDNOBC@POINT_BLUE_PLAYER_KILLED@	; `string'
+PUBLIC	??_C@_0BH@JPEBDBOE@QUICK_SLOT_IS_NOT_ITEM@	; `string'
 PUBLIC	??_C@_0CA@GCEIFJNM@QUICK_SLOT_CAN_NOT_USE_PET_ITEM@ ; `string'
-PUBLIC	??_C@_0BI@GLOEPCDD@POINT_RED_PLAYER_KILLED@	; `string'
+PUBLIC	??_C@_0BP@DJAPKJMJ@QUICK_SLOT_PET_ITEM_USE_FAILED@ ; `string'
 PUBLIC	??_C@_0BL@DJJNJMIM@POINT_YELLOW_PLAYER_KILLED@	; `string'
-PUBLIC	??_C@_0BD@CPMCNAMN@POINT_KILL_DUELWON@		; `string'
+PUBLIC	??_C@_0BJ@MEMDNOBC@POINT_BLUE_PLAYER_KILLED@	; `string'
 PUBLIC	??_C@_0BI@LNGEGINL@POINT_ALL_PLAYER_KILLED@	; `string'
-PUBLIC	??_C@_0BF@IKAAIKND@POINT_MONSTER_KILLED@	; `string'
+PUBLIC	??_C@_0BI@GLOEPCDD@POINT_RED_PLAYER_KILLED@	; `string'
 PUBLIC	??_C@_0BE@DIODHCDN@POINT_KILL_DUELLOST@		; `string'
-PUBLIC	??_C@_0BC@JPBCPPBB@POINT_BOSS_KILLED@		; `string'
+PUBLIC	??_C@_0BD@CPMCNAMN@POINT_KILL_DUELWON@		; `string'
 PUBLIC	??_C@_0BD@OGBKIAOM@POINT_STONE_KILLED@		; `string'
+PUBLIC	??_C@_0BF@IKAAIKND@POINT_MONSTER_KILLED@	; `string'
+PUBLIC	??_C@_0BC@JPBCPPBB@POINT_BOSS_KILLED@		; `string'
 PUBLIC	?availableRuleByGrade@?1??GetAvailableRuleTableByGrade@CBeltInventoryHelper@@SAPBEXZ@4PAEA ; `CBeltInventoryHelper::GetAvailableRuleTableByGrade'::`2'::availableRuleByGrade
-EXTRN	__imp__PyDict_Size:PROC
 EXTRN	__imp__PyDict_Next:PROC
+EXTRN	__imp__PyDict_Size:PROC
 EXTRN	?PyTuple_GetLong@@YA_NPAU_object@@HPAJ@Z:PROC	; PyTuple_GetLong
 EXTRN	?GetWearFlags@CItemData@@QBEKXZ:PROC		; CItemData::GetWearFlags
 EXTRN	?HasNextGrade@CItemData@@QBEHXZ:PROC		; CItemData::HasNextGrade
@@ -1357,1877 +1357,1887 @@ _DATA	SEGMENT
 	DD	00H
 	ORG $+8
 _DATA	ENDS
-;	COMDAT ??_C@_0BD@OGBKIAOM@POINT_STONE_KILLED@
-CONST	SEGMENT
-??_C@_0BD@OGBKIAOM@POINT_STONE_KILLED@ DB 'POINT_STONE_KILLED', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BC@JPBCPPBB@POINT_BOSS_KILLED@
 CONST	SEGMENT
 ??_C@_0BC@JPBCPPBB@POINT_BOSS_KILLED@ DB 'POINT_BOSS_KILLED', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BE@DIODHCDN@POINT_KILL_DUELLOST@
-CONST	SEGMENT
-??_C@_0BE@DIODHCDN@POINT_KILL_DUELLOST@ DB 'POINT_KILL_DUELLOST', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@IKAAIKND@POINT_MONSTER_KILLED@
 CONST	SEGMENT
 ??_C@_0BF@IKAAIKND@POINT_MONSTER_KILLED@ DB 'POINT_MONSTER_KILLED', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@LNGEGINL@POINT_ALL_PLAYER_KILLED@
+;	COMDAT ??_C@_0BD@OGBKIAOM@POINT_STONE_KILLED@
 CONST	SEGMENT
-??_C@_0BI@LNGEGINL@POINT_ALL_PLAYER_KILLED@ DB 'POINT_ALL_PLAYER_KILLED', 00H ; `string'
+??_C@_0BD@OGBKIAOM@POINT_STONE_KILLED@ DB 'POINT_STONE_KILLED', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@CPMCNAMN@POINT_KILL_DUELWON@
 CONST	SEGMENT
 ??_C@_0BD@CPMCNAMN@POINT_KILL_DUELWON@ DB 'POINT_KILL_DUELWON', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@DJJNJMIM@POINT_YELLOW_PLAYER_KILLED@
+;	COMDAT ??_C@_0BE@DIODHCDN@POINT_KILL_DUELLOST@
 CONST	SEGMENT
-??_C@_0BL@DJJNJMIM@POINT_YELLOW_PLAYER_KILLED@ DB 'POINT_YELLOW_PLAYER_KI'
-	DB	'LLED', 00H					; `string'
+??_C@_0BE@DIODHCDN@POINT_KILL_DUELLOST@ DB 'POINT_KILL_DUELLOST', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@GLOEPCDD@POINT_RED_PLAYER_KILLED@
 CONST	SEGMENT
 ??_C@_0BI@GLOEPCDD@POINT_RED_PLAYER_KILLED@ DB 'POINT_RED_PLAYER_KILLED', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CA@GCEIFJNM@QUICK_SLOT_CAN_NOT_USE_PET_ITEM@
+;	COMDAT ??_C@_0BI@LNGEGINL@POINT_ALL_PLAYER_KILLED@
 CONST	SEGMENT
-??_C@_0CA@GCEIFJNM@QUICK_SLOT_CAN_NOT_USE_PET_ITEM@ DB 'QUICK_SLOT_CAN_NO'
-	DB	'T_USE_PET_ITEM', 00H			; `string'
+??_C@_0BI@LNGEGINL@POINT_ALL_PLAYER_KILLED@ DB 'POINT_ALL_PLAYER_KILLED', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@MEMDNOBC@POINT_BLUE_PLAYER_KILLED@
 CONST	SEGMENT
 ??_C@_0BJ@MEMDNOBC@POINT_BLUE_PLAYER_KILLED@ DB 'POINT_BLUE_PLAYER_KILLED'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CA@OOHPPNPK@QUICK_SLOT_PET_ITEM_USE_SUCCESS@
+;	COMDAT ??_C@_0BL@DJJNJMIM@POINT_YELLOW_PLAYER_KILLED@
 CONST	SEGMENT
-??_C@_0CA@OOHPPNPK@QUICK_SLOT_PET_ITEM_USE_SUCCESS@ DB 'QUICK_SLOT_PET_IT'
-	DB	'EM_USE_SUCCESS', 00H			; `string'
+??_C@_0BL@DJJNJMIM@POINT_YELLOW_PLAYER_KILLED@ DB 'POINT_YELLOW_PLAYER_KI'
+	DB	'LLED', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BP@DJAPKJMJ@QUICK_SLOT_PET_ITEM_USE_FAILED@
 CONST	SEGMENT
 ??_C@_0BP@DJAPKJMJ@QUICK_SLOT_PET_ITEM_USE_FAILED@ DB 'QUICK_SLOT_PET_ITE'
 	DB	'M_USE_FAILED', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BM@CGLKDAAA@QUICK_SLOT_ITEM_USE_SUCCESS@
+;	COMDAT ??_C@_0CA@GCEIFJNM@QUICK_SLOT_CAN_NOT_USE_PET_ITEM@
 CONST	SEGMENT
-??_C@_0BM@CGLKDAAA@QUICK_SLOT_ITEM_USE_SUCCESS@ DB 'QUICK_SLOT_ITEM_USE_S'
-	DB	'UCCESS', 00H				; `string'
+??_C@_0CA@GCEIFJNM@QUICK_SLOT_CAN_NOT_USE_PET_ITEM@ DB 'QUICK_SLOT_CAN_NO'
+	DB	'T_USE_PET_ITEM', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@JPEBDBOE@QUICK_SLOT_IS_NOT_ITEM@
 CONST	SEGMENT
 ??_C@_0BH@JPEBDBOE@QUICK_SLOT_IS_NOT_ITEM@ DB 'QUICK_SLOT_IS_NOT_ITEM', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@EGOKNPMG@PET_ATTR_CHANGE_ITEM@
+;	COMDAT ??_C@_0CA@OOHPPNPK@QUICK_SLOT_PET_ITEM_USE_SUCCESS@
 CONST	SEGMENT
-??_C@_0BF@EGOKNPMG@PET_ATTR_CHANGE_ITEM@ DB 'PET_ATTR_CHANGE_ITEM', 00H ; `string'
+??_C@_0CA@OOHPPNPK@QUICK_SLOT_PET_ITEM_USE_SUCCESS@ DB 'QUICK_SLOT_PET_IT'
+	DB	'EM_USE_SUCCESS', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@IOMDMJJH@QUICK_SLOT_POS_ERROR@
 CONST	SEGMENT
 ??_C@_0BF@IOMDMJJH@QUICK_SLOT_POS_ERROR@ DB 'QUICK_SLOT_POS_ERROR', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BN@FIDDPHID@PET_WND_SLOT_ATTR_CHANGE_MAX@
+;	COMDAT ??_C@_0BM@CGLKDAAA@QUICK_SLOT_ITEM_USE_SUCCESS@
 CONST	SEGMENT
-??_C@_0BN@FIDDPHID@PET_WND_SLOT_ATTR_CHANGE_MAX@ DB 'PET_WND_SLOT_ATTR_CH'
-	DB	'ANGE_MAX', 00H				; `string'
+??_C@_0BM@CGLKDAAA@QUICK_SLOT_ITEM_USE_SUCCESS@ DB 'QUICK_SLOT_ITEM_USE_S'
+	DB	'UCCESS', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@NPPIBKMK@PET_ATTR_DETERMINE_ITEM@
 CONST	SEGMENT
 ??_C@_0BI@NPPIBKMK@PET_ATTR_DETERMINE_ITEM@ DB 'PET_ATTR_DETERMINE_ITEM', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BO@LHIHOBGL@PET_WND_SLOT_ATTR_CHANGE_ITEM@
+;	COMDAT ??_C@_0BF@EGOKNPMG@PET_ATTR_CHANGE_ITEM@
 CONST	SEGMENT
-??_C@_0BO@LHIHOBGL@PET_WND_SLOT_ATTR_CHANGE_ITEM@ DB 'PET_WND_SLOT_ATTR_C'
-	DB	'HANGE_ITEM', 00H				; `string'
+??_C@_0BF@EGOKNPMG@PET_ATTR_CHANGE_ITEM@ DB 'PET_ATTR_CHANGE_ITEM', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@CBANDPKJ@PET_WND_SLOT_ATTR_CHANGE_RESULT@
 CONST	SEGMENT
 ??_C@_0CA@CBANDPKJ@PET_WND_SLOT_ATTR_CHANGE_RESULT@ DB 'PET_WND_SLOT_ATTR'
 	DB	'_CHANGE_RESULT', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BN@GJGLGIPO@PET_WINDOW_PRIMIUM_FEEDSTUFF@
+;	COMDAT ??_C@_0BN@FIDDPHID@PET_WND_SLOT_ATTR_CHANGE_MAX@
 CONST	SEGMENT
-??_C@_0BN@GJGLGIPO@PET_WINDOW_PRIMIUM_FEEDSTUFF@ DB 'PET_WINDOW_PRIMIUM_F'
-	DB	'EEDSTUFF', 00H				; `string'
+??_C@_0BN@FIDDPHID@PET_WND_SLOT_ATTR_CHANGE_MAX@ DB 'PET_WND_SLOT_ATTR_CH'
+	DB	'ANGE_MAX', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@NBIJKGHG@PET_WND_SLOT_ATTR_CHANGE@
 CONST	SEGMENT
 ??_C@_0BJ@NBIJKGHG@PET_WND_SLOT_ATTR_CHANGE@ DB 'PET_WND_SLOT_ATTR_CHANGE'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@BCBOOENP@PET_WINDOW_INFO@
+;	COMDAT ??_C@_0BO@LHIHOBGL@PET_WND_SLOT_ATTR_CHANGE_ITEM@
 CONST	SEGMENT
-??_C@_0BA@BCBOOENP@PET_WINDOW_INFO@ DB 'PET_WINDOW_INFO', 00H ; `string'
+??_C@_0BO@LHIHOBGL@PET_WND_SLOT_ATTR_CHANGE_ITEM@ DB 'PET_WND_SLOT_ATTR_C'
+	DB	'HANGE_ITEM', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@DNHCPKPA@PET_WINDOW_ATTR_CHANGE@
 CONST	SEGMENT
 ??_C@_0BH@DNHCPKPA@PET_WINDOW_ATTR_CHANGE@ DB 'PET_WINDOW_ATTR_CHANGE', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@DIFILJDH@FEED_EVOL_EVENT@
+;	COMDAT ??_C@_0BN@GJGLGIPO@PET_WINDOW_PRIMIUM_FEEDSTUFF@
 CONST	SEGMENT
-??_C@_0BA@DIFILJDH@FEED_EVOL_EVENT@ DB 'FEED_EVOL_EVENT', 00H ; `string'
+??_C@_0BN@GJGLGIPO@PET_WINDOW_PRIMIUM_FEEDSTUFF@ DB 'PET_WINDOW_PRIMIUM_F'
+	DB	'EEDSTUFF', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@BJMLMPCH@FEED_BUTTON_MAX@
 CONST	SEGMENT
 ??_C@_0BA@BJMLMPCH@FEED_BUTTON_MAX@ DB 'FEED_BUTTON_MAX', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@FPKOBLCK@FEED_LIFE_TIME_EVENT@
+;	COMDAT ??_C@_0BA@BCBOOENP@PET_WINDOW_INFO@
 CONST	SEGMENT
-??_C@_0BF@FPKOBLCK@FEED_LIFE_TIME_EVENT@ DB 'FEED_LIFE_TIME_EVENT', 00H ; `string'
+??_C@_0BA@BCBOOENP@PET_WINDOW_INFO@ DB 'PET_WINDOW_INFO', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@KMMLDJON@FEED_EXP_EVENT@
 CONST	SEGMENT
 ??_C@_0P@KMMLDJON@FEED_EXP_EVENT@ DB 'FEED_EXP_EVENT', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BA@DIFILJDH@FEED_EVOL_EVENT@
+CONST	SEGMENT
+??_C@_0BA@DIFILJDH@FEED_EVOL_EVENT@ DB 'FEED_EVOL_EVENT', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BF@OGHAJJKA@SPECIAL_EVOL_MIN_AGE@
+CONST	SEGMENT
+??_C@_0BF@OGHAJJKA@SPECIAL_EVOL_MIN_AGE@ DB 'SPECIAL_EVOL_MIN_AGE', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BF@FPKOBLCK@FEED_LIFE_TIME_EVENT@
+CONST	SEGMENT
+??_C@_0BF@FPKOBLCK@FEED_LIFE_TIME_EVENT@ DB 'FEED_LIFE_TIME_EVENT', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BE@JMKAEJNF@PET_SKILL_COUNT_MAX@
+CONST	SEGMENT
+??_C@_0BE@JMKAEJNF@PET_SKILL_COUNT_MAX@ DB 'PET_SKILL_COUNT_MAX', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@JJGKAJLE@LIFE_TIME_FLASH_MIN_TIME@
 CONST	SEGMENT
 ??_C@_0BJ@JJGKAJLE@LIFE_TIME_FLASH_MIN_TIME@ DB 'LIFE_TIME_FLASH_MIN_TIME'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@OGHAJJKA@SPECIAL_EVOL_MIN_AGE@
+;	COMDAT ??_C@_0CB@OBCGFKLG@PET_GROWTH_SKILL_OPEN_EVOL_LEVE@
 CONST	SEGMENT
-??_C@_0BF@OGHAJJKA@SPECIAL_EVOL_MIN_AGE@ DB 'SPECIAL_EVOL_MIN_AGE', 00H ; `string'
+??_C@_0CB@OBCGFKLG@PET_GROWTH_SKILL_OPEN_EVOL_LEVE@ DB 'PET_GROWTH_SKILL_'
+	DB	'OPEN_EVOL_LEVEL', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@BPMCNOMH@PET_REVIVE_MATERIAL_SLOT_MAX@
 CONST	SEGMENT
 ??_C@_0BN@BPMCNOMH@PET_REVIVE_MATERIAL_SLOT_MAX@ DB 'PET_REVIVE_MATERIAL_'
 	DB	'SLOT_MAX', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@JMKAEJNF@PET_SKILL_COUNT_MAX@
+;	COMDAT ??_C@_0BE@NFLCMMDA@PET_GROWTH_EVOL_MAX@
 CONST	SEGMENT
-??_C@_0BE@JMKAEJNF@PET_SKILL_COUNT_MAX@ DB 'PET_SKILL_COUNT_MAX', 00H ; `string'
+??_C@_0BE@NFLCMMDA@PET_GROWTH_EVOL_MAX@ DB 'PET_GROWTH_EVOL_MAX', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@EIFGHGIE@PET_GROWTH_SKILL_LEVEL_MAX@
 CONST	SEGMENT
 ??_C@_0BL@EIFGHGIE@PET_GROWTH_SKILL_LEVEL_MAX@ DB 'PET_GROWTH_SKILL_LEVEL'
 	DB	'_MAX', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CB@OBCGFKLG@PET_GROWTH_SKILL_OPEN_EVOL_LEVE@
-CONST	SEGMENT
-??_C@_0CB@OBCGFKLG@PET_GROWTH_SKILL_OPEN_EVOL_LEVE@ DB 'PET_GROWTH_SKILL_'
-	DB	'OPEN_EVOL_LEVEL', 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BC@DMHKNCHI@PET_FEED_SLOT_MAX@
-CONST	SEGMENT
-??_C@_0BC@DMHKNCHI@PET_FEED_SLOT_MAX@ DB 'PET_FEED_SLOT_MAX', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BE@NFLCMMDA@PET_GROWTH_EVOL_MAX@
-CONST	SEGMENT
-??_C@_0BE@NFLCMMDA@PET_GROWTH_EVOL_MAX@ DB 'PET_GROWTH_EVOL_MAX', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0CA@CIFBLEK@ITEM_VALUE_AURA_BOOST_UNLIMITED@
-CONST	SEGMENT
-??_C@_0CA@CIFBLEK@ITEM_VALUE_AURA_BOOST_UNLIMITED@ DB 'ITEM_VALUE_AURA_BO'
-	DB	'OST_UNLIMITED', 00H				; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_08LJKGNBOE@PET_FEED@
 CONST	SEGMENT
 ??_C@_08LJKGNBOE@PET_FEED@ DB 'PET_FEED', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BO@MPFCFKKC@ITEM_VALUE_AURA_BOOST_PERCENT@
+;	COMDAT ??_C@_0BC@DMHKNCHI@PET_FEED_SLOT_MAX@
 CONST	SEGMENT
-??_C@_0BO@MPFCFKKC@ITEM_VALUE_AURA_BOOST_PERCENT@ DB 'ITEM_VALUE_AURA_BOO'
-	DB	'ST_PERCENT', 00H				; `string'
+??_C@_0BC@DMHKNCHI@PET_FEED_SLOT_MAX@ DB 'PET_FEED_SLOT_MAX', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@BAPFGKOD@ITEM_VALUE_AURA_BOOST_TIME@
 CONST	SEGMENT
 ??_C@_0BL@BAPFGKOD@ITEM_VALUE_AURA_BOOST_TIME@ DB 'ITEM_VALUE_AURA_BOOST_'
 	DB	'TIME', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@LAHGBIBJ@ITEM_SOCKET_AURA_BOOST@
+;	COMDAT ??_C@_0CA@CIFBLEK@ITEM_VALUE_AURA_BOOST_UNLIMITED@
 CONST	SEGMENT
-??_C@_0BH@LAHGBIBJ@ITEM_SOCKET_AURA_BOOST@ DB 'ITEM_SOCKET_AURA_BOOST', 00H ; `string'
+??_C@_0CA@CIFBLEK@ITEM_VALUE_AURA_BOOST_UNLIMITED@ DB 'ITEM_VALUE_AURA_BO'
+	DB	'OST_UNLIMITED', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@NPMDAJNF@ITEM_VALUE_AURA_MATERIAL_EXP@
 CONST	SEGMENT
 ??_C@_0BN@NPMDAJNF@ITEM_VALUE_AURA_MATERIAL_EXP@ DB 'ITEM_VALUE_AURA_MATE'
 	DB	'RIAL_EXP', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CB@DCOODGCM@ITEM_SOCKET_AURA_DRAIN_ITEM_VNU@
+;	COMDAT ??_C@_0BO@MPFCFKKC@ITEM_VALUE_AURA_BOOST_PERCENT@
 CONST	SEGMENT
-??_C@_0CB@DCOODGCM@ITEM_SOCKET_AURA_DRAIN_ITEM_VNU@ DB 'ITEM_SOCKET_AURA_'
-	DB	'DRAIN_ITEM_VNUM', 00H			; `string'
+??_C@_0BO@MPFCFKKC@ITEM_VALUE_AURA_BOOST_PERCENT@ DB 'ITEM_VALUE_AURA_BOO'
+	DB	'ST_PERCENT', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BP@EMKIFIGK@ITEM_SOCKET_AURA_CURRENT_LEVEL@
 CONST	SEGMENT
 ??_C@_0BP@EMKIFIGK@ITEM_SOCKET_AURA_CURRENT_LEVEL@ DB 'ITEM_SOCKET_AURA_C'
 	DB	'URRENT_LEVEL', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@ICCNHPG@AURA_REFINE_INFO_NEED_GOLD@
+;	COMDAT ??_C@_0BH@LAHGBIBJ@ITEM_SOCKET_AURA_BOOST@
 CONST	SEGMENT
-??_C@_0BL@ICCNHPG@AURA_REFINE_INFO_NEED_GOLD@ DB 'AURA_REFINE_INFO_NEED_G'
-	DB	'OLD', 00H					; `string'
+??_C@_0BH@LAHGBIBJ@ITEM_SOCKET_AURA_BOOST@ DB 'ITEM_SOCKET_AURA_BOOST', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@IEECEMNC@AURA_REFINE_INFO_EVOLVE_PCT@
 CONST	SEGMENT
 ??_C@_0BM@IEECEMNC@AURA_REFINE_INFO_EVOLVE_PCT@ DB 'AURA_REFINE_INFO_EVOL'
 	DB	'VE_PCT', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BP@MKNGONPM@AURA_REFINE_INFO_MATERIAL_VNUM@
+;	COMDAT ??_C@_0CB@DCOODGCM@ITEM_SOCKET_AURA_DRAIN_ITEM_VNU@
 CONST	SEGMENT
-??_C@_0BP@MKNGONPM@AURA_REFINE_INFO_MATERIAL_VNUM@ DB 'AURA_REFINE_INFO_M'
-	DB	'ATERIAL_VNUM', 00H				; `string'
+??_C@_0CB@DCOODGCM@ITEM_SOCKET_AURA_DRAIN_ITEM_VNU@ DB 'ITEM_SOCKET_AURA_'
+	DB	'DRAIN_ITEM_VNUM', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@GCLPEEL@AURA_REFINE_INFO_MATERIAL_COUNT@
 CONST	SEGMENT
 ??_C@_0CA@GCLPEEL@AURA_REFINE_INFO_MATERIAL_COUNT@ DB 'AURA_REFINE_INFO_M'
 	DB	'ATERIAL_COUNT', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@MJOAJAEE@AURA_REFINE_INFO_LEVEL_MAX@
+;	COMDAT ??_C@_0BL@ICCNHPG@AURA_REFINE_INFO_NEED_GOLD@
 CONST	SEGMENT
-??_C@_0BL@MJOAJAEE@AURA_REFINE_INFO_LEVEL_MAX@ DB 'AURA_REFINE_INFO_LEVEL'
-	DB	'_MAX', 00H					; `string'
+??_C@_0BL@ICCNHPG@AURA_REFINE_INFO_NEED_GOLD@ DB 'AURA_REFINE_INFO_NEED_G'
+	DB	'OLD', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@GLEMHOOH@AURA_REFINE_INFO_NEED_EXP@
 CONST	SEGMENT
 ??_C@_0BK@GLEMHOOH@AURA_REFINE_INFO_NEED_EXP@ DB 'AURA_REFINE_INFO_NEED_E'
 	DB	'XP', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@LFHCGDMM@AURA_REFINE_INFO_STEP@
+;	COMDAT ??_C@_0BP@MKNGONPM@AURA_REFINE_INFO_MATERIAL_VNUM@
 CONST	SEGMENT
-??_C@_0BG@LFHCGDMM@AURA_REFINE_INFO_STEP@ DB 'AURA_REFINE_INFO_STEP', 00H ; `string'
+??_C@_0BP@MKNGONPM@AURA_REFINE_INFO_MATERIAL_VNUM@ DB 'AURA_REFINE_INFO_M'
+	DB	'ATERIAL_VNUM', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@NLGLHECL@AURA_REFINE_INFO_LEVEL_MIN@
 CONST	SEGMENT
 ??_C@_0BL@NLGLHECL@AURA_REFINE_INFO_LEVEL_MIN@ DB 'AURA_REFINE_INFO_LEVEL'
 	DB	'_MIN', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@LDIPHABL@AURA_REFINE_INFO_SLOT_NEXT@
+;	COMDAT ??_C@_0BL@MJOAJAEE@AURA_REFINE_INFO_LEVEL_MAX@
 CONST	SEGMENT
-??_C@_0BL@LDIPHABL@AURA_REFINE_INFO_SLOT_NEXT@ DB 'AURA_REFINE_INFO_SLOT_'
-	DB	'NEXT', 00H					; `string'
+??_C@_0BL@MJOAJAEE@AURA_REFINE_INFO_LEVEL_MAX@ DB 'AURA_REFINE_INFO_LEVEL'
+	DB	'_MAX', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BO@LHGEKFE@AURA_REFINE_INFO_SLOT_EVOLVED@
 CONST	SEGMENT
 ??_C@_0BO@LHGEKFE@AURA_REFINE_INFO_SLOT_EVOLVED@ DB 'AURA_REFINE_INFO_SLO'
 	DB	'T_EVOLVED', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@DEACKNDL@AURA_WINDOW_TYPE_MAX@
+;	COMDAT ??_C@_0BG@LFHCGDMM@AURA_REFINE_INFO_STEP@
 CONST	SEGMENT
-??_C@_0BF@DEACKNDL@AURA_WINDOW_TYPE_MAX@ DB 'AURA_WINDOW_TYPE_MAX', 00H ; `string'
+??_C@_0BG@LFHCGDMM@AURA_REFINE_INFO_STEP@ DB 'AURA_REFINE_INFO_STEP', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BO@JIFCGECJ@AURA_REFINE_INFO_SLOT_CURRENT@
 CONST	SEGMENT
 ??_C@_0BO@JIFCGECJ@AURA_REFINE_INFO_SLOT_CURRENT@ DB 'AURA_REFINE_INFO_SL'
 	DB	'OT_CURRENT', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@CLKELJFO@AURA_WINDOW_TYPE_GROWTH@
+;	COMDAT ??_C@_0BL@LDIPHABL@AURA_REFINE_INFO_SLOT_NEXT@
 CONST	SEGMENT
-??_C@_0BI@CLKELJFO@AURA_WINDOW_TYPE_GROWTH@ DB 'AURA_WINDOW_TYPE_GROWTH', 00H ; `string'
+??_C@_0BL@LDIPHABL@AURA_REFINE_INFO_SLOT_NEXT@ DB 'AURA_REFINE_INFO_SLOT_'
+	DB	'NEXT', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@BGJIJANM@AURA_WINDOW_TYPE_EVOLVE@
 CONST	SEGMENT
 ??_C@_0BI@BGJIJANM@AURA_WINDOW_TYPE_EVOLVE@ DB 'AURA_WINDOW_TYPE_EVOLVE', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@KJHIMGJF@AURA_SLOT_MAX@
+;	COMDAT ??_C@_0BF@DEACKNDL@AURA_WINDOW_TYPE_MAX@
 CONST	SEGMENT
-??_C@_0O@KJHIMGJF@AURA_SLOT_MAX@ DB 'AURA_SLOT_MAX', 00H ; `string'
+??_C@_0BF@DEACKNDL@AURA_WINDOW_TYPE_MAX@ DB 'AURA_WINDOW_TYPE_MAX', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@IFHNBPDE@AURA_WINDOW_TYPE_ABSORB@
 CONST	SEGMENT
 ??_C@_0BI@IFHNBPDE@AURA_WINDOW_TYPE_ABSORB@ DB 'AURA_WINDOW_TYPE_ABSORB', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@LCLMBHEO@AURA_SLOT_SUB@
+;	COMDAT ??_C@_0BI@CLKELJFO@AURA_WINDOW_TYPE_GROWTH@
 CONST	SEGMENT
-??_C@_0O@LCLMBHEO@AURA_SLOT_SUB@ DB 'AURA_SLOT_SUB', 00H ; `string'
+??_C@_0BI@CLKELJFO@AURA_WINDOW_TYPE_GROWTH@ DB 'AURA_WINDOW_TYPE_GROWTH', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@BOPFHPDA@AURA_SLOT_RESULT@
 CONST	SEGMENT
 ??_C@_0BB@BOPFHPDA@AURA_SLOT_RESULT@ DB 'AURA_SLOT_RESULT', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@MFDEBDB@AURA_MAX_LEVEL@
+;	COMDAT ??_C@_0O@KJHIMGJF@AURA_SLOT_MAX@
 CONST	SEGMENT
-??_C@_0P@MFDEBDB@AURA_MAX_LEVEL@ DB 'AURA_MAX_LEVEL', 00H ; `string'
+??_C@_0O@KJHIMGJF@AURA_SLOT_MAX@ DB 'AURA_SLOT_MAX', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@PDNCLEMB@AURA_SLOT_MAIN@
 CONST	SEGMENT
 ??_C@_0P@PDNCLEMB@AURA_SLOT_MAIN@ DB 'AURA_SLOT_MAIN', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@FNJLNAFG@SLOT_TYPE_AURA@
+;	COMDAT ??_C@_0O@LCLMBHEO@AURA_SLOT_SUB@
 CONST	SEGMENT
-??_C@_0P@FNJLNAFG@SLOT_TYPE_AURA@ DB 'SLOT_TYPE_AURA', 00H ; `string'
+??_C@_0O@LCLMBHEO@AURA_SLOT_SUB@ DB 'AURA_SLOT_SUB', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@PDHBNBKH@AURA_REFINE@
 CONST	SEGMENT
 ??_C@_0M@PDHBNBKH@AURA_REFINE@ DB 'AURA_REFINE', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CB@NFMKANIJ@ON_TOP_WND_PET_PRIMIUM_FEEDSTUF@
+;	COMDAT ??_C@_0P@MFDEBDB@AURA_MAX_LEVEL@
 CONST	SEGMENT
-??_C@_0CB@NFMKANIJ@ON_TOP_WND_PET_PRIMIUM_FEEDSTUF@ DB 'ON_TOP_WND_PET_PR'
-	DB	'IMIUM_FEEDSTUFF', 00H			; `string'
+??_C@_0P@MFDEBDB@AURA_MAX_LEVEL@ DB 'AURA_MAX_LEVEL', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@ELAPKHPA@REFINE_CANT_REFINE_AURA_ITEM@
 CONST	SEGMENT
 ??_C@_0BN@ELAPKHPA@REFINE_CANT_REFINE_AURA_ITEM@ DB 'REFINE_CANT_REFINE_A'
 	DB	'URA_ITEM', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@NNPMEGBL@ON_TOP_WND_ACCE_ABSORB@
+;	COMDAT ??_C@_0P@FNJLNAFG@SLOT_TYPE_AURA@
 CONST	SEGMENT
-??_C@_0BH@NNPMEGBL@ON_TOP_WND_ACCE_ABSORB@ DB 'ON_TOP_WND_ACCE_ABSORB', 00H ; `string'
+??_C@_0P@FNJLNAFG@SLOT_TYPE_AURA@ DB 'SLOT_TYPE_AURA', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@KJLPEENL@ON_TOP_WND_PET_ATTR_CHANGE@
 CONST	SEGMENT
 ??_C@_0BL@KJLPEENL@ON_TOP_WND_PET_ATTR_CHANGE@ DB 'ON_TOP_WND_PET_ATTR_CH'
 	DB	'ANGE', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@EHJBMPOO@ON_TOP_WND_PET_FEED@
+;	COMDAT ??_C@_0CB@NFMKANIJ@ON_TOP_WND_PET_PRIMIUM_FEEDSTUF@
 CONST	SEGMENT
-??_C@_0BE@EHJBMPOO@ON_TOP_WND_PET_FEED@ DB 'ON_TOP_WND_PET_FEED', 00H ; `string'
+??_C@_0CB@NFMKANIJ@ON_TOP_WND_PET_PRIMIUM_FEEDSTUF@ DB 'ON_TOP_WND_PET_PR'
+	DB	'IMIUM_FEEDSTUFF', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@GLAKGGPH@ON_TOP_WND_ACCE_COMBINE@
 CONST	SEGMENT
 ??_C@_0BI@GLAKGGPH@ON_TOP_WND_ACCE_COMBINE@ DB 'ON_TOP_WND_ACCE_COMBINE', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@JAEJNCCP@ON_TOP_WND_PRIVATE_SHOP@
+;	COMDAT ??_C@_0BH@NNPMEGBL@ON_TOP_WND_ACCE_ABSORB@
 CONST	SEGMENT
-??_C@_0BI@JAEJNCCP@ON_TOP_WND_PRIVATE_SHOP@ DB 'ON_TOP_WND_PRIVATE_SHOP', 00H ; `string'
+??_C@_0BH@NNPMEGBL@ON_TOP_WND_ACCE_ABSORB@ DB 'ON_TOP_WND_ACCE_ABSORB', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@GOBPEOGN@ON_TOP_WND_ITEM_COMB@
 CONST	SEGMENT
 ??_C@_0BF@GOBPEOGN@ON_TOP_WND_ITEM_COMB@ DB 'ON_TOP_WND_ITEM_COMB', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@IFGMMCHH@ON_TOP_WND_EXCHANGE@
+;	COMDAT ??_C@_0BE@EHJBMPOO@ON_TOP_WND_PET_FEED@
 CONST	SEGMENT
-??_C@_0BE@IFGMMCHH@ON_TOP_WND_EXCHANGE@ DB 'ON_TOP_WND_EXCHANGE', 00H ; `string'
+??_C@_0BE@EHJBMPOO@ON_TOP_WND_PET_FEED@ DB 'ON_TOP_WND_PET_FEED', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@DBKGGFLJ@ON_TOP_WND_SAFEBOX@
 CONST	SEGMENT
 ??_C@_0BD@DBKGGFLJ@ON_TOP_WND_SAFEBOX@ DB 'ON_TOP_WND_SAFEBOX', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@OKKEOOGP@ON_TOP_WND_NONE@
+;	COMDAT ??_C@_0BI@JAEJNCCP@ON_TOP_WND_PRIVATE_SHOP@
 CONST	SEGMENT
-??_C@_0BA@OKKEOOGP@ON_TOP_WND_NONE@ DB 'ON_TOP_WND_NONE', 00H ; `string'
+??_C@_0BI@JAEJNCCP@ON_TOP_WND_PRIVATE_SHOP@ DB 'ON_TOP_WND_PRIVATE_SHOP', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@NJHEAJMG@ON_TOP_WND_SHOP@
 CONST	SEGMENT
 ??_C@_0BA@NJHEAJMG@ON_TOP_WND_SHOP@ DB 'ON_TOP_WND_SHOP', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BE@IFGMMCHH@ON_TOP_WND_EXCHANGE@
+CONST	SEGMENT
+??_C@_0BE@IFGMMCHH@ON_TOP_WND_EXCHANGE@ DB 'ON_TOP_WND_EXCHANGE', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BA@DMHIDAHJ@HORSE_MAX_LEVEL@
+CONST	SEGMENT
+??_C@_0BA@DMHIDAHJ@HORSE_MAX_LEVEL@ DB 'HORSE_MAX_LEVEL', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BA@OKKEOOGP@ON_TOP_WND_NONE@
+CONST	SEGMENT
+??_C@_0BA@OKKEOOGP@ON_TOP_WND_NONE@ DB 'ON_TOP_WND_NONE', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_05BANMFAOM@COINS@
+CONST	SEGMENT
+??_C@_05BANMFAOM@COINS@ DB 'COINS', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@MNIINOMA@AUTOMATIC_PICK_UP_ACTIVATE@
 CONST	SEGMENT
 ??_C@_0BL@MNIINOMA@AUTOMATIC_PICK_UP_ACTIVATE@ DB 'AUTOMATIC_PICK_UP_ACTI'
 	DB	'VATE', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@DMHIDAHJ@HORSE_MAX_LEVEL@
+;	COMDAT ??_C@_0BG@MNLBEPAN@REVIVE_TYPE_AUTO_TOWN@
 CONST	SEGMENT
-??_C@_0BA@DMHIDAHJ@HORSE_MAX_LEVEL@ DB 'HORSE_MAX_LEVEL', 00H ; `string'
+??_C@_0BG@MNLBEPAN@REVIVE_TYPE_AUTO_TOWN@ DB 'REVIVE_TYPE_AUTO_TOWN', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@LFMGHCBJ@REVIVE_TYPE_MAX@
 CONST	SEGMENT
 ??_C@_0BA@LFMGHCBJ@REVIVE_TYPE_MAX@ DB 'REVIVE_TYPE_MAX', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05BANMFAOM@COINS@
-CONST	SEGMENT
-??_C@_05BANMFAOM@COINS@ DB 'COINS', 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BB@IMFHMJME@REVIVE_TYPE_TOWN@
-CONST	SEGMENT
-??_C@_0BB@IMFHMJME@REVIVE_TYPE_TOWN@ DB 'REVIVE_TYPE_TOWN', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BG@MNLBEPAN@REVIVE_TYPE_AUTO_TOWN@
-CONST	SEGMENT
-??_C@_0BG@MNLBEPAN@REVIVE_TYPE_AUTO_TOWN@ DB 'REVIVE_TYPE_AUTO_TOWN', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BI@NHBOLMGK@DS_SUB_HEADER_DO_REFINE@
-CONST	SEGMENT
-??_C@_0BI@NHBOLMGK@DS_SUB_HEADER_DO_REFINE@ DB 'DS_SUB_HEADER_DO_REFINE', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BB@KDMFEIAD@REVIVE_TYPE_HERE@
 CONST	SEGMENT
 ??_C@_0BB@KDMFEIAD@REVIVE_TYPE_HERE@ DB 'REVIVE_TYPE_HERE', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@JKFAJIJN@DS_SUB_HEADER_DO_UPGRADE@
+;	COMDAT ??_C@_0BB@IMFHMJME@REVIVE_TYPE_TOWN@
 CONST	SEGMENT
-??_C@_0BJ@JKFAJIJN@DS_SUB_HEADER_DO_UPGRADE@ DB 'DS_SUB_HEADER_DO_UPGRADE'
-	DB	00H						; `string'
+??_C@_0BB@IMFHMJME@REVIVE_TYPE_TOWN@ DB 'REVIVE_TYPE_TOWN', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@PCPINHKH@DS_SUB_HEADER_DO_IMPROVEMENT@
 CONST	SEGMENT
 ??_C@_0BN@PCPINHKH@DS_SUB_HEADER_DO_IMPROVEMENT@ DB 'DS_SUB_HEADER_DO_IMP'
 	DB	'ROVEMENT', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CB@OIFHBJMG@DRAGON_SOUL_EQUIPMENT_FIRST_SIZ@
+;	COMDAT ??_C@_0BI@NHBOLMGK@DS_SUB_HEADER_DO_REFINE@
 CONST	SEGMENT
-??_C@_0CB@OIFHBJMG@DRAGON_SOUL_EQUIPMENT_FIRST_SIZ@ DB 'DRAGON_SOUL_EQUIP'
-	DB	'MENT_FIRST_SIZE', 00H			; `string'
+??_C@_0BI@NHBOLMGK@DS_SUB_HEADER_DO_REFINE@ DB 'DS_SUB_HEADER_DO_REFINE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@MMGGGOHJ@DRAGON_SOUL_REFINE_CLOSE@
 CONST	SEGMENT
 ??_C@_0BJ@MMGGGOHJ@DRAGON_SOUL_REFINE_CLOSE@ DB 'DRAGON_SOUL_REFINE_CLOSE'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CB@NJAOAEOC@DRAGON_SOUL_EQUIPMENT_SLOT_STAR@
+;	COMDAT ??_C@_0BJ@JKFAJIJN@DS_SUB_HEADER_DO_UPGRADE@
 CONST	SEGMENT
-??_C@_0CB@NJAOAEOC@DRAGON_SOUL_EQUIPMENT_SLOT_STAR@ DB 'DRAGON_SOUL_EQUIP'
-	DB	'MENT_SLOT_START', 00H			; `string'
+??_C@_0BJ@JKFAJIJN@DS_SUB_HEADER_DO_UPGRADE@ DB 'DS_SUB_HEADER_DO_UPGRADE'
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CB@GAHKEECK@DRAGON_SOUL_EQUIPMENT_PAGE_COUN@
 CONST	SEGMENT
 ??_C@_0CB@GAHKEECK@DRAGON_SOUL_EQUIPMENT_PAGE_COUN@ DB 'DRAGON_SOUL_EQUIP'
 	DB	'MENT_PAGE_COUNT', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@OCCNKKPP@DRAGON_SOUL_PAGE_COUNT@
+;	COMDAT ??_C@_0CB@OIFHBJMG@DRAGON_SOUL_EQUIPMENT_FIRST_SIZ@
 CONST	SEGMENT
-??_C@_0BH@OCCNKKPP@DRAGON_SOUL_PAGE_COUNT@ DB 'DRAGON_SOUL_PAGE_COUNT', 00H ; `string'
+??_C@_0CB@OIFHBJMG@DRAGON_SOUL_EQUIPMENT_FIRST_SIZ@ DB 'DRAGON_SOUL_EQUIP'
+	DB	'MENT_FIRST_SIZE', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@IFPINEOD@DRAGON_SOUL_SLOT_COUNT@
 CONST	SEGMENT
 ??_C@_0BH@IFPINEOD@DRAGON_SOUL_SLOT_COUNT@ DB 'DRAGON_SOUL_SLOT_COUNT', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@KLHCNIEK@AUTO_POTION_TYPE_SP@
+;	COMDAT ??_C@_0CB@NJAOAEOC@DRAGON_SOUL_EQUIPMENT_SLOT_STAR@
 CONST	SEGMENT
-??_C@_0BE@KLHCNIEK@AUTO_POTION_TYPE_SP@ DB 'AUTO_POTION_TYPE_SP', 00H ; `string'
+??_C@_0CB@NJAOAEOC@DRAGON_SOUL_EQUIPMENT_SLOT_STAR@ DB 'DRAGON_SOUL_EQUIP'
+	DB	'MENT_SLOT_START', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@FEPFCIIM@DRAGON_SOUL_PAGE_SIZE@
 CONST	SEGMENT
 ??_C@_0BG@FEPFCIIM@DRAGON_SOUL_PAGE_SIZE@ DB 'DRAGON_SOUL_PAGE_SIZE', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@FFINPOG@EMOTION_SLAP@
+;	COMDAT ??_C@_0BH@OCCNKKPP@DRAGON_SOUL_PAGE_COUNT@
 CONST	SEGMENT
-??_C@_0N@FFINPOG@EMOTION_SLAP@ DB 'EMOTION_SLAP', 00H	; `string'
+??_C@_0BH@OCCNKKPP@DRAGON_SOUL_PAGE_COUNT@ DB 'DRAGON_SOUL_PAGE_COUNT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@LLABJENL@AUTO_POTION_TYPE_HP@
 CONST	SEGMENT
 ??_C@_0BE@LLABJENL@AUTO_POTION_TYPE_HP@ DB 'AUTO_POTION_TYPE_HP', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@FGJJNHEK@EMOTION_KISS@
+;	COMDAT ??_C@_0BE@KLHCNIEK@AUTO_POTION_TYPE_SP@
 CONST	SEGMENT
-??_C@_0N@FGJJNHEK@EMOTION_KISS@ DB 'EMOTION_KISS', 00H	; `string'
+??_C@_0BE@KLHCNIEK@AUTO_POTION_TYPE_SP@ DB 'AUTO_POTION_TYPE_SP', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@KCAKKBPE@EMOTION_FRENCH_KISS@
 CONST	SEGMENT
 ??_C@_0BE@KCAKKBPE@EMOTION_FRENCH_KISS@ DB 'EMOTION_FRENCH_KISS', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@JAJBGKKI@EMOTION_BANTER@
+;	COMDAT ??_C@_0N@FFINPOG@EMOTION_SLAP@
 CONST	SEGMENT
-??_C@_0P@JAJBGKKI@EMOTION_BANTER@ DB 'EMOTION_BANTER', 00H ; `string'
+??_C@_0N@FFINPOG@EMOTION_SLAP@ DB 'EMOTION_SLAP', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@JOKPJKCG@EMOTION_JOY@
 CONST	SEGMENT
 ??_C@_0M@JOKPJKCG@EMOTION_JOY@ DB 'EMOTION_JOY', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@LGPBJELG@EMOTION_SHY@
+;	COMDAT ??_C@_0N@FGJJNHEK@EMOTION_KISS@
 CONST	SEGMENT
-??_C@_0M@LGPBJELG@EMOTION_SHY@ DB 'EMOTION_SHY', 00H	; `string'
+??_C@_0N@FGJJNHEK@EMOTION_KISS@ DB 'EMOTION_KISS', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@MENCJFPL@EMOTION_CHEERUP@
 CONST	SEGMENT
 ??_C@_0BA@MENCJFPL@EMOTION_CHEERUP@ DB 'EMOTION_CHEERUP', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@FLNIBF@EMOTION_ATTRACTIVE@
+;	COMDAT ??_C@_0P@JAJBGKKI@EMOTION_BANTER@
 CONST	SEGMENT
-??_C@_0BD@FLNIBF@EMOTION_ATTRACTIVE@ DB 'EMOTION_ATTRACTIVE', 00H ; `string'
+??_C@_0P@JAJBGKKI@EMOTION_BANTER@ DB 'EMOTION_BANTER', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@EGEMMDCF@EMOTION_SAD@
 CONST	SEGMENT
 ??_C@_0M@EGEMMDCF@EMOTION_SAD@ DB 'EMOTION_SAD', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@JPGNEMIB@EMOTION_FORGIVE@
+;	COMDAT ??_C@_0M@LGPBJELG@EMOTION_SHY@
 CONST	SEGMENT
-??_C@_0BA@JPGNEMIB@EMOTION_FORGIVE@ DB 'EMOTION_FORGIVE', 00H ; `string'
+??_C@_0M@LGPBJELG@EMOTION_SHY@ DB 'EMOTION_SHY', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@DACEICMN@EMOTION_ANGRY@
 CONST	SEGMENT
 ??_C@_0O@DACEICMN@EMOTION_ANGRY@ DB 'EMOTION_ANGRY', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@IFFKDDKN@EMOTION_EMOTION_20@
+;	COMDAT ??_C@_0BD@FLNIBF@EMOTION_ATTRACTIVE@
 CONST	SEGMENT
-??_C@_0BD@IFFKDDKN@EMOTION_EMOTION_20@ DB 'EMOTION_EMOTION_20', 00H ; `string'
+??_C@_0BD@FLNIBF@EMOTION_ATTRACTIVE@ DB 'EMOTION_ATTRACTIVE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@JMEBACOM@EMOTION_EMOTION_21@
 CONST	SEGMENT
 ??_C@_0BD@JMEBACOM@EMOTION_EMOTION_21@ DB 'EMOTION_EMOTION_21', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@EPMFAHPM@EMOTION_EMOTION_18@
+;	COMDAT ??_C@_0BA@JPGNEMIB@EMOTION_FORGIVE@
 CONST	SEGMENT
-??_C@_0BD@EPMFAHPM@EMOTION_EMOTION_18@ DB 'EMOTION_EMOTION_18', 00H ; `string'
+??_C@_0BA@JPGNEMIB@EMOTION_FORGIVE@ DB 'EMOTION_FORGIVE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@FGNODGLN@EMOTION_EMOTION_19@
 CONST	SEGMENT
 ??_C@_0BD@FGNODGLN@EMOTION_EMOTION_19@ DB 'EMOTION_EMOTION_19', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@NBEGCKHC@EMOTION_EMOTION_16@
+;	COMDAT ??_C@_0BD@IFFKDDKN@EMOTION_EMOTION_20@
 CONST	SEGMENT
-??_C@_0BD@NBEGCKHC@EMOTION_EMOTION_16@ DB 'EMOTION_EMOTION_16', 00H ; `string'
+??_C@_0BD@IFFKDDKN@EMOTION_EMOTION_20@ DB 'EMOTION_EMOTION_20', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@MIFNBLDD@EMOTION_EMOTION_17@
 CONST	SEGMENT
 ??_C@_0BD@MIFNBLDD@EMOTION_EMOTION_17@ DB 'EMOTION_EMOTION_17', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@ODHAEIPA@EMOTION_EMOTION_14@
+;	COMDAT ??_C@_0BD@EPMFAHPM@EMOTION_EMOTION_18@
 CONST	SEGMENT
-??_C@_0BD@ODHAEIPA@EMOTION_EMOTION_14@ DB 'EMOTION_EMOTION_14', 00H ; `string'
+??_C@_0BD@EPMFAHPM@EMOTION_EMOTION_18@ DB 'EMOTION_EMOTION_18', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@PKGLHJLB@EMOTION_EMOTION_15@
 CONST	SEGMENT
 ??_C@_0BD@PKGLHJLB@EMOTION_EMOTION_15@ DB 'EMOTION_EMOTION_15', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@LFCKOPHG@EMOTION_EMOTION_12@
+;	COMDAT ??_C@_0BD@NBEGCKHC@EMOTION_EMOTION_16@
 CONST	SEGMENT
-??_C@_0BD@LFCKOPHG@EMOTION_EMOTION_12@ DB 'EMOTION_EMOTION_12', 00H ; `string'
+??_C@_0BD@NBEGCKHC@EMOTION_EMOTION_16@ DB 'EMOTION_EMOTION_16', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@KMDBNODH@EMOTION_EMOTION_13@
 CONST	SEGMENT
 ??_C@_0BD@KMDBNODH@EMOTION_EMOTION_13@ DB 'EMOTION_EMOTION_13', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@IHBMINPE@EMOTION_EMOTION_10@
+;	COMDAT ??_C@_0BD@ODHAEIPA@EMOTION_EMOTION_14@
 CONST	SEGMENT
-??_C@_0BD@IHBMINPE@EMOTION_EMOTION_10@ DB 'EMOTION_EMOTION_10', 00H ; `string'
+??_C@_0BD@ODHAEIPA@EMOTION_EMOTION_14@ DB 'EMOTION_EMOTION_14', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@JOAHLMLF@EMOTION_EMOTION_11@
 CONST	SEGMENT
 ??_C@_0BD@JOAHLMLF@EMOTION_EMOTION_11@ DB 'EMOTION_EMOTION_11', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@ODDFKNHE@EMOTION_EMOTION_8@
+;	COMDAT ??_C@_0BD@LFCKOPHG@EMOTION_EMOTION_12@
 CONST	SEGMENT
-??_C@_0BC@ODDFKNHE@EMOTION_EMOTION_8@ DB 'EMOTION_EMOTION_8', 00H ; `string'
+??_C@_0BD@LFCKOPHG@EMOTION_EMOTION_12@ DB 'EMOTION_EMOTION_12', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@PKCOJMDF@EMOTION_EMOTION_9@
 CONST	SEGMENT
 ??_C@_0BC@PKCOJMDF@EMOTION_EMOTION_9@ DB 'EMOTION_EMOTION_9', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@HNLGIAPK@EMOTION_EMOTION_6@
+;	COMDAT ??_C@_0BD@IHBMINPE@EMOTION_EMOTION_10@
 CONST	SEGMENT
-??_C@_0BC@HNLGIAPK@EMOTION_EMOTION_6@ DB 'EMOTION_EMOTION_6', 00H ; `string'
+??_C@_0BD@IHBMINPE@EMOTION_EMOTION_10@ DB 'EMOTION_EMOTION_10', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@GEKNLBLL@EMOTION_EMOTION_7@
 CONST	SEGMENT
 ??_C@_0BC@GEKNLBLL@EMOTION_EMOTION_7@ DB 'EMOTION_EMOTION_7', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@EPIAOCHI@EMOTION_EMOTION_4@
+;	COMDAT ??_C@_0BC@ODDFKNHE@EMOTION_EMOTION_8@
 CONST	SEGMENT
-??_C@_0BC@EPIAOCHI@EMOTION_EMOTION_4@ DB 'EMOTION_EMOTION_4', 00H ; `string'
+??_C@_0BC@ODDFKNHE@EMOTION_EMOTION_8@ DB 'EMOTION_EMOTION_8', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@FGJLNDDJ@EMOTION_EMOTION_5@
 CONST	SEGMENT
 ??_C@_0BC@FGJLNDDJ@EMOTION_EMOTION_5@ DB 'EMOTION_EMOTION_5', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@BJNKEFPO@EMOTION_EMOTION_2@
+;	COMDAT ??_C@_0BC@HNLGIAPK@EMOTION_EMOTION_6@
 CONST	SEGMENT
-??_C@_0BC@BJNKEFPO@EMOTION_EMOTION_2@ DB 'EMOTION_EMOTION_2', 00H ; `string'
+??_C@_0BC@HNLGIAPK@EMOTION_EMOTION_6@ DB 'EMOTION_EMOTION_6', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@MBHELP@EMOTION_EMOTION_3@
 CONST	SEGMENT
 ??_C@_0BC@MBHELP@EMOTION_EMOTION_3@ DB 'EMOTION_EMOTION_3', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@FEDINNCE@EMOTION_PUSHUP@
+;	COMDAT ??_C@_0BC@EPIAOCHI@EMOTION_EMOTION_4@
 CONST	SEGMENT
-??_C@_0P@FEDINNCE@EMOTION_PUSHUP@ DB 'EMOTION_PUSHUP', 00H ; `string'
+??_C@_0BC@EPIAOCHI@EMOTION_EMOTION_4@ DB 'EMOTION_EMOTION_4', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@DCPHBGDN@EMOTION_EMOTION_1@
 CONST	SEGMENT
 ??_C@_0BC@DCPHBGDN@EMOTION_EMOTION_1@ DB 'EMOTION_EMOTION_1', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@OCOLJBBP@EMOTION_DOZE@
+;	COMDAT ??_C@_0BC@BJNKEFPO@EMOTION_EMOTION_2@
 CONST	SEGMENT
-??_C@_0N@OCOLJBBP@EMOTION_DOZE@ DB 'EMOTION_DOZE', 00H	; `string'
+??_C@_0BC@BJNKEFPO@EMOTION_EMOTION_2@ DB 'EMOTION_EMOTION_2', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@PDNONAIP@EMOTION_EXERCISE@
 CONST	SEGMENT
 ??_C@_0BB@PDNONAIP@EMOTION_EXERCISE@ DB 'EMOTION_EXERCISE', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@EGOAAOEC@EMOTION_SELFIE@
+;	COMDAT ??_C@_0P@FEDINNCE@EMOTION_PUSHUP@
 CONST	SEGMENT
-??_C@_0P@EGOAAOEC@EMOTION_SELFIE@ DB 'EMOTION_SELFIE', 00H ; `string'
+??_C@_0P@FEDINNCE@EMOTION_PUSHUP@ DB 'EMOTION_PUSHUP', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@FEONMLMC@EMOTION_DANCE_7@
 CONST	SEGMENT
 ??_C@_0BA@FEONMLMC@EMOTION_DANCE_7@ DB 'EMOTION_DANCE_7', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@ENPGPKID@EMOTION_DANCE_6@
+;	COMDAT ??_C@_0N@OCOLJBBP@EMOTION_DOZE@
 CONST	SEGMENT
-??_C@_0BA@ENPGPKID@EMOTION_DANCE_6@ DB 'EMOTION_DANCE_6', 00H ; `string'
+??_C@_0N@OCOLJBBP@EMOTION_DOZE@ DB 'EMOTION_DOZE', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@FIIEKKHF@EMOTION_CONGRATULATION@
 CONST	SEGMENT
 ??_C@_0BH@FIIEKKHF@EMOTION_CONGRATULATION@ DB 'EMOTION_CONGRATULATION', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@HPMAJIAB@EMOTION_DANCE_4@
+;	COMDAT ??_C@_0P@EGOAAOEC@EMOTION_SELFIE@
 CONST	SEGMENT
-??_C@_0BA@HPMAJIAB@EMOTION_DANCE_4@ DB 'EMOTION_DANCE_4', 00H ; `string'
+??_C@_0P@EGOAAOEC@EMOTION_SELFIE@ DB 'EMOTION_SELFIE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@GGNLKJEA@EMOTION_DANCE_5@
 CONST	SEGMENT
 ??_C@_0BA@GGNLKJEA@EMOTION_DANCE_5@ DB 'EMOTION_DANCE_5', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@CJJKDPIH@EMOTION_DANCE_2@
+;	COMDAT ??_C@_0BA@ENPGPKID@EMOTION_DANCE_6@
 CONST	SEGMENT
-??_C@_0BA@CJJKDPIH@EMOTION_DANCE_2@ DB 'EMOTION_DANCE_2', 00H ; `string'
+??_C@_0BA@ENPGPKID@EMOTION_DANCE_6@ DB 'EMOTION_DANCE_6', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@DAIBAOMG@EMOTION_DANCE_3@
 CONST	SEGMENT
 ??_C@_0BA@DAIBAOMG@EMOTION_DANCE_3@ DB 'EMOTION_DANCE_3', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@OJOMLFJB@EMOTION_CHEERS_2@
+;	COMDAT ??_C@_0BA@HPMAJIAB@EMOTION_DANCE_4@
 CONST	SEGMENT
-??_C@_0BB@OJOMLFJB@EMOTION_CHEERS_2@ DB 'EMOTION_CHEERS_2', 00H ; `string'
+??_C@_0BA@HPMAJIAB@EMOTION_DANCE_4@ DB 'EMOTION_DANCE_4', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@CLHGMEE@EMOTION_DANCE_1@
 CONST	SEGMENT
 ??_C@_0BA@CLHGMEE@EMOTION_DANCE_1@ DB 'EMOTION_DANCE_1', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@GFLIEIGE@EMOTION_CLAP@
+;	COMDAT ??_C@_0BA@CJJKDPIH@EMOTION_DANCE_2@
 CONST	SEGMENT
-??_C@_0N@GFLIEIGE@EMOTION_CLAP@ DB 'EMOTION_CLAP', 00H	; `string'
+??_C@_0BA@CJJKDPIH@EMOTION_DANCE_2@ DB 'EMOTION_DANCE_2', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@MCMBOGFC@EMOTION_CHEERS_1@
 CONST	SEGMENT
 ??_C@_0BB@MCMBOGFC@EMOTION_CHEERS_1@ DB 'EMOTION_CHEERS_1', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@OELLICOI@PARTY_EXP_NON_DISTRIBUTION@
+;	COMDAT ??_C@_0BB@OJOMLFJB@EMOTION_CHEERS_2@
 CONST	SEGMENT
-??_C@_0BL@OELLICOI@PARTY_EXP_NON_DISTRIBUTION@ DB 'PARTY_EXP_NON_DISTRIBU'
-	DB	'TION', 00H					; `string'
+??_C@_0BB@OJOMLFJB@EMOTION_CHEERS_2@ DB 'EMOTION_CHEERS_2', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BO@CBJBDFJC@PARTY_EXP_DISTRIBUTION_PARITY@
 CONST	SEGMENT
 ??_C@_0BO@CBJBDFJC@PARTY_EXP_DISTRIBUTION_PARITY@ DB 'PARTY_EXP_DISTRIBUT'
 	DB	'ION_PARITY', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@NDGMABKO@BLOCK_PARTY_REQUEST@
+;	COMDAT ??_C@_0N@GFLIEIGE@EMOTION_CLAP@
 CONST	SEGMENT
-??_C@_0BE@NDGMABKO@BLOCK_PARTY_REQUEST@ DB 'BLOCK_PARTY_REQUEST', 00H ; `string'
+??_C@_0N@GFLIEIGE@EMOTION_CLAP@ DB 'EMOTION_CLAP', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@ICDJFAGE@BLOCK_WARP_REQUEST@
 CONST	SEGMENT
 ??_C@_0BD@ICDJFAGE@BLOCK_WARP_REQUEST@ DB 'BLOCK_WARP_REQUEST', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@CFHKOIIK@BLOCK_WHISPER@
+;	COMDAT ??_C@_0BL@OELLICOI@PARTY_EXP_NON_DISTRIBUTION@
 CONST	SEGMENT
-??_C@_0O@CFHKOIIK@BLOCK_WHISPER@ DB 'BLOCK_WHISPER', 00H ; `string'
+??_C@_0BL@OELLICOI@PARTY_EXP_NON_DISTRIBUTION@ DB 'PARTY_EXP_NON_DISTRIBU'
+	DB	'TION', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@IJGKBLJF@BLOCK_FRIEND@
 CONST	SEGMENT
 ??_C@_0N@IJGKBLJF@BLOCK_FRIEND@ DB 'BLOCK_FRIEND', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@KFDBGBIL@BLOCK_PARTY@
+;	COMDAT ??_C@_0BE@NDGMABKO@BLOCK_PARTY_REQUEST@
 CONST	SEGMENT
-??_C@_0M@KFDBGBIL@BLOCK_PARTY@ DB 'BLOCK_PARTY', 00H	; `string'
+??_C@_0BE@NDGMABKO@BLOCK_PARTY_REQUEST@ DB 'BLOCK_PARTY_REQUEST', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@EEMDCMKA@BLOCK_GUILD@
 CONST	SEGMENT
 ??_C@_0M@EEMDCMKA@BLOCK_GUILD@ DB 'BLOCK_GUILD', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@OLCDKGDA@PK_MODE_MAX_NUM@
+;	COMDAT ??_C@_0O@CFHKOIIK@BLOCK_WHISPER@
 CONST	SEGMENT
-??_C@_0BA@OLCDKGDA@PK_MODE_MAX_NUM@ DB 'PK_MODE_MAX_NUM', 00H ; `string'
+??_C@_0O@CFHKOIIK@BLOCK_WHISPER@ DB 'BLOCK_WHISPER', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@CDMGAFPE@BLOCK_EXCHANGE@
 CONST	SEGMENT
 ??_C@_0P@CDMGAFPE@BLOCK_EXCHANGE@ DB 'BLOCK_EXCHANGE', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@GHACPGHA@PK_MODE_PROTECT@
+;	COMDAT ??_C@_0M@KFDBGBIL@BLOCK_PARTY@
 CONST	SEGMENT
-??_C@_0BA@GHACPGHA@PK_MODE_PROTECT@ DB 'PK_MODE_PROTECT', 00H ; `string'
+??_C@_0M@KFDBGBIL@BLOCK_PARTY@ DB 'BLOCK_PARTY', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@LBDADKLE@PK_MODE_GUILD@
 CONST	SEGMENT
 ??_C@_0O@LBDADKLE@PK_MODE_GUILD@ DB 'PK_MODE_GUILD', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@HNNGLCOB@PK_MODE_REVENGE@
+;	COMDAT ??_C@_0BA@OLCDKGDA@PK_MODE_MAX_NUM@
 CONST	SEGMENT
-??_C@_0BA@HNNGLCOB@PK_MODE_REVENGE@ DB 'PK_MODE_REVENGE', 00H ; `string'
+??_C@_0BA@OLCDKGDA@PK_MODE_MAX_NUM@ DB 'PK_MODE_MAX_NUM', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@DCANEGJG@PK_MODE_FREE@
 CONST	SEGMENT
 ??_C@_0N@DCANEGJG@PK_MODE_FREE@ DB 'PK_MODE_FREE', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@POBHIINM@SKILL_INDEX_SUMMON@
+;	COMDAT ??_C@_0BA@GHACPGHA@PK_MODE_PROTECT@
 CONST	SEGMENT
-??_C@_0BD@POBHIINM@SKILL_INDEX_SUMMON@ DB 'SKILL_INDEX_SUMMON', 00H ; `string'
+??_C@_0BA@GHACPGHA@PK_MODE_PROTECT@ DB 'PK_MODE_PROTECT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@BIPAMBIG@PK_MODE_PEACE@
 CONST	SEGMENT
 ??_C@_0O@BIPAMBIG@PK_MODE_PEACE@ DB 'PK_MODE_PEACE', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@DMEIDEKO@SKILL_INDEX_POLYMORPH@
+;	COMDAT ??_C@_0BA@HNNGLCOB@PK_MODE_REVENGE@
 CONST	SEGMENT
-??_C@_0BG@DMEIDEKO@SKILL_INDEX_POLYMORPH@ DB 'SKILL_INDEX_POLYMORPH', 00H ; `string'
+??_C@_0BA@HNNGLCOB@PK_MODE_REVENGE@ DB 'PK_MODE_REVENGE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@HOAGGFNA@SKILL_INDEX_RIDING@
 CONST	SEGMENT
 ??_C@_0BD@HOAGGFNA@SKILL_INDEX_RIDING@ DB 'SKILL_INDEX_RIDING', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@EEJDAHGJ@SKILL_INDEX_LANGUAGE2@
+;	COMDAT ??_C@_0BD@POBHIINM@SKILL_INDEX_SUMMON@
 CONST	SEGMENT
-??_C@_0BG@EEJDAHGJ@SKILL_INDEX_LANGUAGE2@ DB 'SKILL_INDEX_LANGUAGE2', 00H ; `string'
+??_C@_0BD@POBHIINM@SKILL_INDEX_SUMMON@ DB 'SKILL_INDEX_SUMMON', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@FNIIDGCI@SKILL_INDEX_LANGUAGE3@
 CONST	SEGMENT
 ??_C@_0BG@FNIIDGCI@SKILL_INDEX_LANGUAGE3@ DB 'SKILL_INDEX_LANGUAGE3', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@HACNAMIK@SKILL_INDEX_COMBO@
+;	COMDAT ??_C@_0BG@DMEIDEKO@SKILL_INDEX_POLYMORPH@
 CONST	SEGMENT
-??_C@_0BC@HACNAMIK@SKILL_INDEX_COMBO@ DB 'SKILL_INDEX_COMBO', 00H ; `string'
+??_C@_0BG@DMEIDEKO@SKILL_INDEX_POLYMORPH@ DB 'SKILL_INDEX_POLYMORPH', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@GPLOFEKK@SKILL_INDEX_LANGUAGE1@
 CONST	SEGMENT
 ??_C@_0BG@GPLOFEKK@SKILL_INDEX_LANGUAGE1@ DB 'SKILL_INDEX_LANGUAGE1', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@KFCAJBFG@SKILL_INDEX_MINING@
+;	COMDAT ??_C@_0BG@EEJDAHGJ@SKILL_INDEX_LANGUAGE2@
 CONST	SEGMENT
-??_C@_0BD@KFCAJBFG@SKILL_INDEX_MINING@ DB 'SKILL_INDEX_MINING', 00H ; `string'
+??_C@_0BG@EEJDAHGJ@SKILL_INDEX_LANGUAGE2@ DB 'SKILL_INDEX_LANGUAGE2', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@IBJDJMEL@SKILL_INDEX_MAKING@
 CONST	SEGMENT
 ??_C@_0BD@IBJDJMEL@SKILL_INDEX_MAKING@ DB 'SKILL_INDEX_MAKING', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@MNBFKLPI@SKILL_INDEX_TONGSOL@
+;	COMDAT ??_C@_0BC@HACNAMIK@SKILL_INDEX_COMBO@
 CONST	SEGMENT
-??_C@_0BE@MNBFKLPI@SKILL_INDEX_TONGSOL@ DB 'SKILL_INDEX_TONGSOL', 00H ; `string'
+??_C@_0BC@HACNAMIK@SKILL_INDEX_COMBO@ DB 'SKILL_INDEX_COMBO', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@HANBCKAH@SKILL_INDEX_FISHING@
 CONST	SEGMENT
 ??_C@_0BE@HANBCKAH@SKILL_INDEX_FISHING@ DB 'SKILL_INDEX_FISHING', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@PAKJEMH@PARTY_STATE_DEFENDER@
+;	COMDAT ??_C@_0BD@KFCAJBFG@SKILL_INDEX_MINING@
 CONST	SEGMENT
-??_C@_0BF@PAKJEMH@PARTY_STATE_DEFENDER@ DB 'PARTY_STATE_DEFENDER', 00H ; `string'
+??_C@_0BD@KFCAJBFG@SKILL_INDEX_MINING@ DB 'SKILL_INDEX_MINING', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@KCLJFDCO@PARTY_STATE_MAX_NUM@
 CONST	SEGMENT
 ??_C@_0BE@KCLJFDCO@PARTY_STATE_MAX_NUM@ DB 'PARTY_STATE_MAX_NUM', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BE@MNBFKLPI@SKILL_INDEX_TONGSOL@
+CONST	SEGMENT
+??_C@_0BE@MNBFKLPI@SKILL_INDEX_TONGSOL@ DB 'SKILL_INDEX_TONGSOL', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BG@LCNEBE@PARTY_STATE_BERSERKER@
+CONST	SEGMENT
+??_C@_0BG@LCNEBE@PARTY_STATE_BERSERKER@ DB 'PARTY_STATE_BERSERKER', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BF@PAKJEMH@PARTY_STATE_DEFENDER@
+CONST	SEGMENT
+??_C@_0BF@PAKJEMH@PARTY_STATE_DEFENDER@ DB 'PARTY_STATE_DEFENDER', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BD@JJFBJLK@PARTY_STATE_BUFFER@
+CONST	SEGMENT
+??_C@_0BD@JJFBJLK@PARTY_STATE_BUFFER@ DB 'PARTY_STATE_BUFFER', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@EIPCPJKC@PARTY_STATE_SKILL_MASTER@
 CONST	SEGMENT
 ??_C@_0BJ@EIPCPJKC@PARTY_STATE_SKILL_MASTER@ DB 'PARTY_STATE_SKILL_MASTER'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@LCNEBE@PARTY_STATE_BERSERKER@
+;	COMDAT ??_C@_0BF@DOKPPLCL@PARTY_STATE_ATTACKER@
 CONST	SEGMENT
-??_C@_0BG@LCNEBE@PARTY_STATE_BERSERKER@ DB 'PARTY_STATE_BERSERKER', 00H ; `string'
+??_C@_0BF@DOKPPLCL@PARTY_STATE_ATTACKER@ DB 'PARTY_STATE_ATTACKER', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@FHMGGDNP@PARTY_STATE_TANKER@
 CONST	SEGMENT
 ??_C@_0BD@FHMGGDNP@PARTY_STATE_TANKER@ DB 'PARTY_STATE_TANKER', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@JJFBJLK@PARTY_STATE_BUFFER@
+;	COMDAT ??_C@_0BD@PNFBHDHD@PARTY_STATE_NORMAL@
 CONST	SEGMENT
-??_C@_0BD@JJFBJLK@PARTY_STATE_BUFFER@ DB 'PARTY_STATE_BUFFER', 00H ; `string'
+??_C@_0BD@PNFBHDHD@PARTY_STATE_NORMAL@ DB 'PARTY_STATE_NORMAL', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@ECFFHEOH@PARTY_STATE_LEADER@
 CONST	SEGMENT
 ??_C@_0BD@ECFFHEOH@PARTY_STATE_LEADER@ DB 'PARTY_STATE_LEADER', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@DOKPPLCL@PARTY_STATE_ATTACKER@
-CONST	SEGMENT
-??_C@_0BF@DOKPPLCL@PARTY_STATE_ATTACKER@ DB 'PARTY_STATE_ATTACKER', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BA@IACJJMNA@DETACH_METIN_OK@
-CONST	SEGMENT
-??_C@_0BA@IACJJMNA@DETACH_METIN_OK@ DB 'DETACH_METIN_OK', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BD@PNFBHDHD@PARTY_STATE_NORMAL@
-CONST	SEGMENT
-??_C@_0BD@PNFBHDHD@PARTY_STATE_NORMAL@ DB 'PARTY_STATE_NORMAL', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0CG@BCIFDNEM@ATTACH_METIN_CANT_ATTACH_TO_EQU@
-CONST	SEGMENT
-??_C@_0CG@BCIFDNEM@ATTACH_METIN_CANT_ATTACH_TO_EQU@ DB 'ATTACH_METIN_CANT'
-	DB	'_ATTACH_TO_EQUIPMENT', 00H			; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BC@HGBPKPKG@DETACH_METIN_CANT@
 CONST	SEGMENT
 ??_C@_0BC@HGBPKPKG@DETACH_METIN_CANT@ DB 'DETACH_METIN_CANT', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CB@MAILDNNI@ATTACH_METIN_NO_MATCHABLE_SOCKE@
+;	COMDAT ??_C@_0BA@IACJJMNA@DETACH_METIN_OK@
 CONST	SEGMENT
-??_C@_0CB@MAILDNNI@ATTACH_METIN_NO_MATCHABLE_SOCKE@ DB 'ATTACH_METIN_NO_M'
-	DB	'ATCHABLE_SOCKET', 00H			; `string'
+??_C@_0BA@IACJJMNA@DETACH_METIN_OK@ DB 'DETACH_METIN_OK', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CD@JNOPKOFJ@ATTACH_METIN_NOT_EXIST_GOLD_SOC@
 CONST	SEGMENT
 ??_C@_0CD@JNOPKOFJ@ATTACH_METIN_NOT_EXIST_GOLD_SOC@ DB 'ATTACH_METIN_NOT_'
 	DB	'EXIST_GOLD_SOCKET', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@HOJAFGB@ATTACH_METIN_OK@
+;	COMDAT ??_C@_0CG@BCIFDNEM@ATTACH_METIN_CANT_ATTACH_TO_EQU@
 CONST	SEGMENT
-??_C@_0BA@HOJAFGB@ATTACH_METIN_OK@ DB 'ATTACH_METIN_OK', 00H ; `string'
+??_C@_0CG@BCIFDNEM@ATTACH_METIN_CANT_ATTACH_TO_EQU@ DB 'ATTACH_METIN_CANT'
+	DB	'_ATTACH_TO_EQUIPMENT', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@OFAKGLFM@ATTACH_METIN_NOT_MATCHABLE_ITEM@
 CONST	SEGMENT
 ??_C@_0CA@OFAKGLFM@ATTACH_METIN_NOT_MATCHABLE_ITEM@ DB 'ATTACH_METIN_NOT_'
 	DB	'MATCHABLE_ITEM', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@OENPPLJB@REFINE_CANT_REFINE_ROD@
+;	COMDAT ??_C@_0CB@MAILDNNI@ATTACH_METIN_NO_MATCHABLE_SOCKE@
 CONST	SEGMENT
-??_C@_0BH@OENPPLJB@REFINE_CANT_REFINE_ROD@ DB 'REFINE_CANT_REFINE_ROD', 00H ; `string'
+??_C@_0CB@MAILDNNI@ATTACH_METIN_NO_MATCHABLE_SOCKE@ DB 'ATTACH_METIN_NO_M'
+	DB	'ATCHABLE_SOCKET', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@CBCJMHP@ATTACH_METIN_CANT@
 CONST	SEGMENT
 ??_C@_0BC@CBCJMHP@ATTACH_METIN_CANT@ DB 'ATTACH_METIN_CANT', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@EILCCEPE@REFINE_NOT_NEXT_GRADE_ITEM@
+;	COMDAT ??_C@_0BA@HOJAFGB@ATTACH_METIN_OK@
 CONST	SEGMENT
-??_C@_0BL@EILCCEPE@REFINE_NOT_NEXT_GRADE_ITEM@ DB 'REFINE_NOT_NEXT_GRADE_'
-	DB	'ITEM', 00H					; `string'
+??_C@_0BA@HOJAFGB@ATTACH_METIN_OK@ DB 'ATTACH_METIN_OK', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CG@LFLLDFCE@REFINE_CANT_REFINE_METIN_TO_EQU@
 CONST	SEGMENT
 ??_C@_0CG@LFLLDFCE@REFINE_CANT_REFINE_METIN_TO_EQU@ DB 'REFINE_CANT_REFIN'
 	DB	'E_METIN_TO_EQUIPMENT', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BN@FMBLMMOD@REFINE_NEED_MORE_GOOD_SCROLL@
+;	COMDAT ??_C@_0BH@OENPPLJB@REFINE_CANT_REFINE_ROD@
 CONST	SEGMENT
-??_C@_0BN@FMBLMMOD@REFINE_NEED_MORE_GOOD_SCROLL@ DB 'REFINE_NEED_MORE_GOO'
-	DB	'D_SCROLL', 00H				; `string'
+??_C@_0BH@OENPPLJB@REFINE_CANT_REFINE_ROD@ DB 'REFINE_CANT_REFINE_ROD', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@JPDLJDPD@REFINE_CANT_MAKE_SOCKET_ITEM@
 CONST	SEGMENT
 ??_C@_0BN@JPDLJDPD@REFINE_CANT_MAKE_SOCKET_ITEM@ DB 'REFINE_CANT_MAKE_SOC'
 	DB	'KET_ITEM', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09FFJEIDJG@REFINE_OK@
+;	COMDAT ??_C@_0BL@EILCCEPE@REFINE_NOT_NEXT_GRADE_ITEM@
 CONST	SEGMENT
-??_C@_09FFJEIDJG@REFINE_OK@ DB 'REFINE_OK', 00H		; `string'
+??_C@_0BL@EILCCEPE@REFINE_NOT_NEXT_GRADE_ITEM@ DB 'REFINE_NOT_NEXT_GRADE_'
+	DB	'ITEM', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@CPLGFHBD@REFINE_ALREADY_MAX_SOCKET_COUNT@
 CONST	SEGMENT
 ??_C@_0CA@CPLGFHBD@REFINE_ALREADY_MAX_SOCKET_COUNT@ DB 'REFINE_ALREADY_MA'
 	DB	'X_SOCKET_COUNT', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BK@MOFNOJPN@COSTUME_ATTRIBUTE_MAX_NUM@
+;	COMDAT ??_C@_0BN@FMBLMMOD@REFINE_NEED_MORE_GOOD_SCROLL@
 CONST	SEGMENT
-??_C@_0BK@MOFNOJPN@COSTUME_ATTRIBUTE_MAX_NUM@ DB 'COSTUME_ATTRIBUTE_MAX_N'
-	DB	'UM', 00H					; `string'
+??_C@_0BN@FMBLMMOD@REFINE_NEED_MORE_GOOD_SCROLL@ DB 'REFINE_NEED_MORE_GOO'
+	DB	'D_SCROLL', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@FNDEJPGN@REFINE_CANT@
 CONST	SEGMENT
 ??_C@_0M@FNDEJPGN@REFINE_CANT@ DB 'REFINE_CANT', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@LMPJICAN@ATTRIBUTE_SLOT_RARE_END@
+;	COMDAT ??_C@_09FFJEIDJG@REFINE_OK@
 CONST	SEGMENT
-??_C@_0BI@LMPJICAN@ATTRIBUTE_SLOT_RARE_END@ DB 'ATTRIBUTE_SLOT_RARE_END', 00H ; `string'
+??_C@_09FFJEIDJG@REFINE_OK@ DB 'REFINE_OK', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@BPEONNLD@ATTRIBUTE_SLOT_MAX_NUM@
 CONST	SEGMENT
 ??_C@_0BH@BPEONNLD@ATTRIBUTE_SLOT_MAX_NUM@ DB 'ATTRIBUTE_SLOT_MAX_NUM', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@PNEKDDH@ATTRIBUTE_SLOT_NORM_END@
+;	COMDAT ??_C@_0BK@MOFNOJPN@COSTUME_ATTRIBUTE_MAX_NUM@
 CONST	SEGMENT
-??_C@_0BI@PNEKDDH@ATTRIBUTE_SLOT_NORM_END@ DB 'ATTRIBUTE_SLOT_NORM_END', 00H ; `string'
+??_C@_0BK@MOFNOJPN@COSTUME_ATTRIBUTE_MAX_NUM@ DB 'COSTUME_ATTRIBUTE_MAX_N'
+	DB	'UM', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@MPPGNMKB@ATTRIBUTE_SLOT_RARE_START@
 CONST	SEGMENT
 ??_C@_0BK@MPPGNMKB@ATTRIBUTE_SLOT_RARE_START@ DB 'ATTRIBUTE_SLOT_RARE_STA'
 	DB	'RT', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@KKEJPCNE@ATTRIBUTE_SLOT_RARE_NUM@
+;	COMDAT ??_C@_0BI@LMPJICAN@ATTRIBUTE_SLOT_RARE_END@
 CONST	SEGMENT
-??_C@_0BI@KKEJPCNE@ATTRIBUTE_SLOT_RARE_NUM@ DB 'ATTRIBUTE_SLOT_RARE_NUM', 00H ; `string'
+??_C@_0BI@LMPJICAN@ATTRIBUTE_SLOT_RARE_END@ DB 'ATTRIBUTE_SLOT_RARE_END', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@KGDGKBKL@ATTRIBUTE_SLOT_NORM_START@
 CONST	SEGMENT
 ??_C@_0BK@KGDGKBKL@ATTRIBUTE_SLOT_NORM_START@ DB 'ATTRIBUTE_SLOT_NORM_STA'
 	DB	'RT', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@HOKBLOCN@METIN_SOCKET_MAX_NUM@
+;	COMDAT ??_C@_0BI@PNEKDDH@ATTRIBUTE_SLOT_NORM_END@
 CONST	SEGMENT
-??_C@_0BF@HOKBLOCN@METIN_SOCKET_MAX_NUM@ DB 'METIN_SOCKET_MAX_NUM', 00H ; `string'
+??_C@_0BI@PNEKDDH@ATTRIBUTE_SLOT_NORM_END@ DB 'ATTRIBUTE_SLOT_NORM_END', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@BJGENDOO@ATTRIBUTE_SLOT_NORM_NUM@
 CONST	SEGMENT
 ??_C@_0BI@BJGENDOO@ATTRIBUTE_SLOT_NORM_NUM@ DB 'ATTRIBUTE_SLOT_NORM_NUM', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BI@KKEJPCNE@ATTRIBUTE_SLOT_RARE_NUM@
+CONST	SEGMENT
+??_C@_0BI@KKEJPCNE@ATTRIBUTE_SLOT_RARE_NUM@ DB 'ATTRIBUTE_SLOT_RARE_NUM', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BH@EFCNALEJ@METIN_SOCKET_TYPE_GOLD@
+CONST	SEGMENT
+??_C@_0BH@EFCNALEJ@METIN_SOCKET_TYPE_GOLD@ DB 'METIN_SOCKET_TYPE_GOLD', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BF@HOKBLOCN@METIN_SOCKET_MAX_NUM@
+CONST	SEGMENT
+??_C@_0BF@HOKBLOCN@METIN_SOCKET_MAX_NUM@ DB 'METIN_SOCKET_MAX_NUM', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BH@FCKCIMBH@METIN_SOCKET_TYPE_NONE@
+CONST	SEGMENT
+??_C@_0BH@FCKCIMBH@METIN_SOCKET_TYPE_NONE@ DB 'METIN_SOCKET_TYPE_NONE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@PHGNNMMA@METIN_SOCKET_TYPE_SILVER@
 CONST	SEGMENT
 ??_C@_0BJ@PHGNNMMA@METIN_SOCKET_TYPE_SILVER@ DB 'METIN_SOCKET_TYPE_SILVER'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@EFCNALEJ@METIN_SOCKET_TYPE_GOLD@
+;	COMDAT ??_C@_0BB@IOEKBHAE@SKILL_SLOT_COUNT@
 CONST	SEGMENT
-??_C@_0BH@EFCNALEJ@METIN_SOCKET_TYPE_GOLD@ DB 'METIN_SOCKET_TYPE_GOLD', 00H ; `string'
+??_C@_0BB@IOEKBHAE@SKILL_SLOT_COUNT@ DB 'SKILL_SLOT_COUNT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@CHLINENA@EFFECT_PICK@
 CONST	SEGMENT
 ??_C@_0M@CHLINENA@EFFECT_PICK@ DB 'EFFECT_PICK', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@FCKCIMBH@METIN_SOCKET_TYPE_NONE@
+;	COMDAT ??_C@_0BI@HKKDBHO@TRANSMUTATION_TYPE_ITEM@
 CONST	SEGMENT
-??_C@_0BH@FCKCIMBH@METIN_SOCKET_TYPE_NONE@ DB 'METIN_SOCKET_TYPE_NONE', 00H ; `string'
+??_C@_0BI@HKKDBHO@TRANSMUTATION_TYPE_ITEM@ DB 'TRANSMUTATION_TYPE_ITEM', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@HFAEBHHD@ITEM_MONEY@
 CONST	SEGMENT
 ??_C@_0L@HFAEBHHD@ITEM_MONEY@ DB 'ITEM_MONEY', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@IOEKBHAE@SKILL_SLOT_COUNT@
+;	COMDAT ??_C@_0BA@POJPOEAE@ITEM_SLOT_COUNT@
 CONST	SEGMENT
-??_C@_0BB@IOEKBHAE@SKILL_SLOT_COUNT@ DB 'SKILL_SLOT_COUNT', 00H ; `string'
+??_C@_0BA@POJPOEAE@ITEM_SLOT_COUNT@ DB 'ITEM_SLOT_COUNT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@LHJDGDBJ@TRANSMUTATION_TYPE_MOUNT@
 CONST	SEGMENT
 ??_C@_0BJ@LHJDGDBJ@TRANSMUTATION_TYPE_MOUNT@ DB 'TRANSMUTATION_TYPE_MOUNT'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@HKKDBHO@TRANSMUTATION_TYPE_ITEM@
+;	COMDAT ??_C@_0BE@DINLJOM@SLOT_TYPE_SWITCHBOT@
 CONST	SEGMENT
-??_C@_0BI@HKKDBHO@TRANSMUTATION_TYPE_ITEM@ DB 'TRANSMUTATION_TYPE_ITEM', 00H ; `string'
+??_C@_0BE@DINLJOM@SLOT_TYPE_SWITCHBOT@ DB 'SLOT_TYPE_SWITCHBOT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@KJHPGJKN@SLOT_TYPE_CHANGE_LOOK@
 CONST	SEGMENT
 ??_C@_0BG@KJHPGJKN@SLOT_TYPE_CHANGE_LOOK@ DB 'SLOT_TYPE_CHANGE_LOOK', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@POJPOEAE@ITEM_SLOT_COUNT@
+;	COMDAT ??_C@_06GKBINIEJ@GROUND@
 CONST	SEGMENT
-??_C@_0BA@POJPOEAE@ITEM_SLOT_COUNT@ DB 'ITEM_SLOT_COUNT', 00H ; `string'
+??_C@_06GKBINIEJ@GROUND@ DB 'GROUND', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09MMGODLEO@SWITCHBOT@
 CONST	SEGMENT
 ??_C@_09MMGODLEO@SWITCHBOT@ DB 'SWITCHBOT', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@DINLJOM@SLOT_TYPE_SWITCHBOT@
+;	COMDAT ??_C@_0BG@FHEDCCNN@DRAGON_SOUL_INVENTORY@
 CONST	SEGMENT
-??_C@_0BE@DINLJOM@SLOT_TYPE_SWITCHBOT@ DB 'SLOT_TYPE_SWITCHBOT', 00H ; `string'
+??_C@_0BG@FHEDCCNN@DRAGON_SOUL_INVENTORY@ DB 'DRAGON_SOUL_INVENTORY', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@LCDFMNHG@BELT_INVENTORY@
 CONST	SEGMENT
 ??_C@_0P@LCDFMNHG@BELT_INVENTORY@ DB 'BELT_INVENTORY', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06GKBINIEJ@GROUND@
+;	COMDAT ??_C@_07NCKDBJCB@SAFEBOX@
 CONST	SEGMENT
-??_C@_06GKBINIEJ@GROUND@ DB 'GROUND', 00H		; `string'
+??_C@_07NCKDBJCB@SAFEBOX@ DB 'SAFEBOX', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04JPFKNPOP@MALL@
 CONST	SEGMENT
 ??_C@_04JPFKNPOP@MALL@ DB 'MALL', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@FHEDCCNN@DRAGON_SOUL_INVENTORY@
-CONST	SEGMENT
-??_C@_0BG@FHEDCCNN@DRAGON_SOUL_INVENTORY@ DB 'DRAGON_SOUL_INVENTORY', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_09GJGOMHMK@EQUIPMENT@
-CONST	SEGMENT
-??_C@_09GJGOMHMK@EQUIPMENT@ DB 'EQUIPMENT', 00H		; `string'
-CONST	ENDS
-;	COMDAT ??_C@_07NCKDBJCB@SAFEBOX@
-CONST	SEGMENT
-??_C@_07NCKDBJCB@SAFEBOX@ DB 'SAFEBOX', 00H		; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BA@NKAFFIGF@RESERVED_WINDOW@
-CONST	SEGMENT
-??_C@_0BA@NKAFFIGF@RESERVED_WINDOW@ DB 'RESERVED_WINDOW', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_09NCAHJFFG@INVENTORY@
 CONST	SEGMENT
 ??_C@_09NCAHJFFG@INVENTORY@ DB 'INVENTORY', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BN@HAJHAAOF@SLOT_TYPE_GIFT_BOX_INVENTORY@
+;	COMDAT ??_C@_09GJGOMHMK@EQUIPMENT@
 CONST	SEGMENT
-??_C@_0BN@HAJHAAOF@SLOT_TYPE_GIFT_BOX_INVENTORY@ DB 'SLOT_TYPE_GIFT_BOX_I'
-	DB	'NVENTORY', 00H				; `string'
+??_C@_09GJGOMHMK@EQUIPMENT@ DB 'EQUIPMENT', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@CIDENILN@SLOT_TYPE_CHANGERS_INVENTORY@
 CONST	SEGMENT
 ??_C@_0BN@CIDENILN@SLOT_TYPE_CHANGERS_INVENTORY@ DB 'SLOT_TYPE_CHANGERS_I'
 	DB	'NVENTORY', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CC@PPMGELGN@SLOT_TYPE_UPGRADE_ITEMS_INVENTO@
+;	COMDAT ??_C@_0BA@NKAFFIGF@RESERVED_WINDOW@
 CONST	SEGMENT
-??_C@_0CC@PPMGELGN@SLOT_TYPE_UPGRADE_ITEMS_INVENTO@ DB 'SLOT_TYPE_UPGRADE'
-	DB	'_ITEMS_INVENTORY', 00H			; `string'
+??_C@_0BA@NKAFFIGF@RESERVED_WINDOW@ DB 'RESERVED_WINDOW', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@OKEJBABA@SLOT_TYPE_STONE_INVENTORY@
 CONST	SEGMENT
 ??_C@_0BK@OKEJBABA@SLOT_TYPE_STONE_INVENTORY@ DB 'SLOT_TYPE_STONE_INVENTO'
 	DB	'RY', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@BIEENKEI@SLOT_TYPE_BELT_INVENTORY@
+;	COMDAT ??_C@_0BN@HAJHAAOF@SLOT_TYPE_GIFT_BOX_INVENTORY@
 CONST	SEGMENT
-??_C@_0BJ@BIEENKEI@SLOT_TYPE_BELT_INVENTORY@ DB 'SLOT_TYPE_BELT_INVENTORY'
-	DB	00H						; `string'
+??_C@_0BN@HAJHAAOF@SLOT_TYPE_GIFT_BOX_INVENTORY@ DB 'SLOT_TYPE_GIFT_BOX_I'
+	DB	'NVENTORY', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BP@KGAMMBDG@SLOT_TYPE_SKILL_BOOK_INVENTORY@
 CONST	SEGMENT
 ??_C@_0BP@KGAMMBDG@SLOT_TYPE_SKILL_BOOK_INVENTORY@ DB 'SLOT_TYPE_SKILL_BO'
 	DB	'OK_INVENTORY', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@LKMHLHKJ@SLOT_TYPE_EMOTION@
+;	COMDAT ??_C@_0CC@PPMGELGN@SLOT_TYPE_UPGRADE_ITEMS_INVENTO@
 CONST	SEGMENT
-??_C@_0BC@LKMHLHKJ@SLOT_TYPE_EMOTION@ DB 'SLOT_TYPE_EMOTION', 00H ; `string'
+??_C@_0CC@PPMGELGN@SLOT_TYPE_UPGRADE_ITEMS_INVENTO@ DB 'SLOT_TYPE_UPGRADE'
+	DB	'_ITEMS_INVENTORY', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@FHKIPOOP@SLOT_TYPE_DRAGON_SOUL_INVENTORY@
 CONST	SEGMENT
 ??_C@_0CA@FHKIPOOP@SLOT_TYPE_DRAGON_SOUL_INVENTORY@ DB 'SLOT_TYPE_DRAGON_'
 	DB	'SOUL_INVENTORY', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@MJAEADNE@SLOT_TYPE_PRIVATE_SHOP@
+;	COMDAT ??_C@_0BJ@BIEENKEI@SLOT_TYPE_BELT_INVENTORY@
 CONST	SEGMENT
-??_C@_0BH@MJAEADNE@SLOT_TYPE_PRIVATE_SHOP@ DB 'SLOT_TYPE_PRIVATE_SHOP', 00H ; `string'
+??_C@_0BJ@BIEENKEI@SLOT_TYPE_BELT_INVENTORY@ DB 'SLOT_TYPE_BELT_INVENTORY'
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@OEAGANKI@SLOT_TYPE_MALL@
 CONST	SEGMENT
 ??_C@_0P@OEAGANKI@SLOT_TYPE_MALL@ DB 'SLOT_TYPE_MALL', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@CPPFMLHN@SLOT_TYPE_QUICK_SLOT@
+;	COMDAT ??_C@_0BC@LKMHLHKJ@SLOT_TYPE_EMOTION@
 CONST	SEGMENT
-??_C@_0BF@CPPFMLHN@SLOT_TYPE_QUICK_SLOT@ DB 'SLOT_TYPE_QUICK_SLOT', 00H ; `string'
+??_C@_0BC@LKMHLHKJ@SLOT_TYPE_EMOTION@ DB 'SLOT_TYPE_EMOTION', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@HGKFDIFN@SLOT_TYPE_SAFEBOX@
 CONST	SEGMENT
 ??_C@_0BC@HGKFDIFN@SLOT_TYPE_SAFEBOX@ DB 'SLOT_TYPE_SAFEBOX', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@DBNHPJKE@SLOT_TYPE_EXCHANGE_OWNER@
+;	COMDAT ??_C@_0BH@MJAEADNE@SLOT_TYPE_PRIVATE_SHOP@
 CONST	SEGMENT
-??_C@_0BJ@DBNHPJKE@SLOT_TYPE_EXCHANGE_OWNER@ DB 'SLOT_TYPE_EXCHANGE_OWNER'
-	DB	00H						; `string'
+??_C@_0BH@MJAEADNE@SLOT_TYPE_PRIVATE_SHOP@ DB 'SLOT_TYPE_PRIVATE_SHOP', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@KJHLAGBH@SLOT_TYPE_EXCHANGE_TARGET@
 CONST	SEGMENT
 ??_C@_0BK@KJHLAGBH@SLOT_TYPE_EXCHANGE_TARGET@ DB 'SLOT_TYPE_EXCHANGE_TARG'
 	DB	'ET', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@MAJHKGKG@SLOT_TYPE_SKILL@
+;	COMDAT ??_C@_0BF@CPPFMLHN@SLOT_TYPE_QUICK_SLOT@
 CONST	SEGMENT
-??_C@_0BA@MAJHKGKG@SLOT_TYPE_SKILL@ DB 'SLOT_TYPE_SKILL', 00H ; `string'
+??_C@_0BF@CPPFMLHN@SLOT_TYPE_QUICK_SLOT@ DB 'SLOT_TYPE_QUICK_SLOT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@KCOPIIMF@SLOT_TYPE_SHOP@
 CONST	SEGMENT
 ??_C@_0P@KCOPIIMF@SLOT_TYPE_SHOP@ DB 'SLOT_TYPE_SHOP', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@JBDPGPGM@SLOT_TYPE_NONE@
+;	COMDAT ??_C@_0BJ@DBNHPJKE@SLOT_TYPE_EXCHANGE_OWNER@
 CONST	SEGMENT
-??_C@_0P@JBDPGPGM@SLOT_TYPE_NONE@ DB 'SLOT_TYPE_NONE', 00H ; `string'
+??_C@_0BJ@DBNHPJKE@SLOT_TYPE_EXCHANGE_OWNER@ DB 'SLOT_TYPE_EXCHANGE_OWNER'
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@BNOEBHPE@SLOT_TYPE_INVENTORY@
 CONST	SEGMENT
 ??_C@_0BE@BNOEBHPE@SLOT_TYPE_INVENTORY@ DB 'SLOT_TYPE_INVENTORY', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09DBJMODBC@MBT_RIGHT@
+;	COMDAT ??_C@_0BA@MAJHKGKG@SLOT_TYPE_SKILL@
 CONST	SEGMENT
-??_C@_09DBJMODBC@MBT_RIGHT@ DB 'MBT_RIGHT', 00H		; `string'
+??_C@_0BA@MAJHKGKG@SLOT_TYPE_SKILL@ DB 'SLOT_TYPE_SKILL', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08OMNIMJHC@MBT_LEFT@
 CONST	SEGMENT
 ??_C@_08OMNIMJHC@MBT_LEFT@ DB 'MBT_LEFT', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09JEJKPPEO@MBS_PRESS@
+;	COMDAT ??_C@_0P@JBDPGPGM@SLOT_TYPE_NONE@
 CONST	SEGMENT
-??_C@_09JEJKPPEO@MBS_PRESS@ DB 'MBS_PRESS', 00H		; `string'
+??_C@_0P@JBDPGPGM@SLOT_TYPE_NONE@ DB 'SLOT_TYPE_NONE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09BKODCCAJ@MBS_CLICK@
 CONST	SEGMENT
 ??_C@_09BKODCCAJ@MBS_CLICK@ DB 'MBS_CLICK', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08BLLANCB@MBF_MOVE@
+;	COMDAT ??_C@_09DBJMODBC@MBT_RIGHT@
 CONST	SEGMENT
-??_C@_08BLLANCB@MBF_MOVE@ DB 'MBF_MOVE', 00H		; `string'
+??_C@_09DBJMODBC@MBT_RIGHT@ DB 'MBT_RIGHT', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08CIEGLDP@MBF_AUTO@
 CONST	SEGMENT
 ??_C@_08CIEGLDP@MBF_AUTO@ DB 'MBF_AUTO', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@JHBFAMB@MBF_CAMERA@
+;	COMDAT ??_C@_09JEJKPPEO@MBS_PRESS@
 CONST	SEGMENT
-??_C@_0L@JHBFAMB@MBF_CAMERA@ DB 'MBF_CAMERA', 00H	; `string'
+??_C@_09JEJKPPEO@MBS_PRESS@ DB 'MBS_PRESS', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09FAENJFL@MBF_SMART@
 CONST	SEGMENT
 ??_C@_09FAENJFL@MBF_SMART@ DB 'MBF_SMART', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09NLFDBCDH@MBF_SKILL@
+;	COMDAT ??_C@_08BLLANCB@MBF_MOVE@
 CONST	SEGMENT
-??_C@_09NLFDBCDH@MBF_SKILL@ DB 'MBF_SKILL', 00H		; `string'
+??_C@_08BLLANCB@MBF_MOVE@ DB 'MBF_MOVE', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@MIGMJBKJ@MBF_ATTACK@
 CONST	SEGMENT
 ??_C@_0L@MIGMJBKJ@MBF_ATTACK@ DB 'MBF_ATTACK', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BO@KGEOCGGA@GIFT_BOX_INVENTORY_SLOT_COUNT@
+;	COMDAT ??_C@_0L@JHBFAMB@MBF_CAMERA@
 CONST	SEGMENT
-??_C@_0BO@KGEOCGGA@GIFT_BOX_INVENTORY_SLOT_COUNT@ DB 'GIFT_BOX_INVENTORY_'
-	DB	'SLOT_COUNT', 00H				; `string'
+??_C@_0L@JHBFAMB@MBF_CAMERA@ DB 'MBF_CAMERA', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BO@HDBPIDOG@CHANGERS_INVENTORY_SLOT_COUNT@
 CONST	SEGMENT
 ??_C@_0BO@HDBPIDOG@CHANGERS_INVENTORY_SLOT_COUNT@ DB 'CHANGERS_INVENTORY_'
 	DB	'SLOT_COUNT', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CD@PILBODE@UPGRADE_ITEMS_INVENTORY_SLOT_CO@
+;	COMDAT ??_C@_09NLFDBCDH@MBF_SKILL@
 CONST	SEGMENT
-??_C@_0CD@PILBODE@UPGRADE_ITEMS_INVENTORY_SLOT_CO@ DB 'UPGRADE_ITEMS_INVE'
-	DB	'NTORY_SLOT_COUNT', 00H			; `string'
+??_C@_09NLFDBCDH@MBF_SKILL@ DB 'MBF_SKILL', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@NOCNFKMC@STONE_INVENTORY_SLOT_COUNT@
 CONST	SEGMENT
 ??_C@_0BL@NOCNFKMC@STONE_INVENTORY_SLOT_COUNT@ DB 'STONE_INVENTORY_SLOT_C'
 	DB	'OUNT', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BN@IDPOFDE@SPECIAL_INVENTORY_PAGE_COUNT@
+;	COMDAT ??_C@_0BO@KGEOCGGA@GIFT_BOX_INVENTORY_SLOT_COUNT@
 CONST	SEGMENT
-??_C@_0BN@IDPOFDE@SPECIAL_INVENTORY_PAGE_COUNT@ DB 'SPECIAL_INVENTORY_PAG'
-	DB	'E_COUNT', 00H				; `string'
+??_C@_0BO@KGEOCGGA@GIFT_BOX_INVENTORY_SLOT_COUNT@ DB 'GIFT_BOX_INVENTORY_'
+	DB	'SLOT_COUNT', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@LILLGBFC@SKILL_BOOK_INVENTORY_SLOT_COUNT@
 CONST	SEGMENT
 ??_C@_0CA@LILLGBFC@SKILL_BOOK_INVENTORY_SLOT_COUNT@ DB 'SKILL_BOOK_INVENT'
 	DB	'ORY_SLOT_COUNT', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@PAALBJCN@NEW_EQUIPMENT_SLOT_COUNT@
+;	COMDAT ??_C@_0CD@PILBODE@UPGRADE_ITEMS_INVENTORY_SLOT_CO@
 CONST	SEGMENT
-??_C@_0BJ@PAALBJCN@NEW_EQUIPMENT_SLOT_COUNT@ DB 'NEW_EQUIPMENT_SLOT_COUNT'
-	DB	00H						; `string'
+??_C@_0CD@PILBODE@UPGRADE_ITEMS_INVENTORY_SLOT_CO@ DB 'UPGRADE_ITEMS_INVE'
+	DB	'NTORY_SLOT_COUNT', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@JDPNNKAI@SPECIAL_INVENTORY_PAGE_SIZE@
 CONST	SEGMENT
 ??_C@_0BM@JDPNNKAI@SPECIAL_INVENTORY_PAGE_SIZE@ DB 'SPECIAL_INVENTORY_PAG'
 	DB	'E_SIZE', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@MADFLPAE@EQUIPMENT_PAGE_COUNT@
+;	COMDAT ??_C@_0BN@IDPOFDE@SPECIAL_INVENTORY_PAGE_COUNT@
 CONST	SEGMENT
-??_C@_0BF@MADFLPAE@EQUIPMENT_PAGE_COUNT@ DB 'EQUIPMENT_PAGE_COUNT', 00H ; `string'
+??_C@_0BN@IDPOFDE@SPECIAL_INVENTORY_PAGE_COUNT@ DB 'SPECIAL_INVENTORY_PAG'
+	DB	'E_COUNT', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@COKKCHPJ@NEW_EQUIPMENT_SLOT_START@
 CONST	SEGMENT
 ??_C@_0BJ@COKKCHPJ@NEW_EQUIPMENT_SLOT_START@ DB 'NEW_EQUIPMENT_SLOT_START'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@LCFAAJPA@INVENTORY_SLOT_COUNT@
+;	COMDAT ??_C@_0BJ@PAALBJCN@NEW_EQUIPMENT_SLOT_COUNT@
 CONST	SEGMENT
-??_C@_0BF@LCFAAJPA@INVENTORY_SLOT_COUNT@ DB 'INVENTORY_SLOT_COUNT', 00H ; `string'
+??_C@_0BJ@PAALBJCN@NEW_EQUIPMENT_SLOT_COUNT@ DB 'NEW_EQUIPMENT_SLOT_COUNT'
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@HJEBPPMM@EQUIPMENT_SLOT_START@
 CONST	SEGMENT
 ??_C@_0BF@HJEBPPMM@EQUIPMENT_SLOT_START@ DB 'EQUIPMENT_SLOT_START', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@CEBDMLGH@INVENTORY_PAGE_SIZE@
+;	COMDAT ??_C@_0BF@MADFLPAE@EQUIPMENT_PAGE_COUNT@
 CONST	SEGMENT
-??_C@_0BE@CEBDMLGH@INVENTORY_PAGE_SIZE@ DB 'INVENTORY_PAGE_SIZE', 00H ; `string'
+??_C@_0BF@MADFLPAE@EQUIPMENT_PAGE_COUNT@ DB 'EQUIPMENT_PAGE_COUNT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@NFIFHHOM@INVENTORY_PAGE_COUNT@
 CONST	SEGMENT
 ??_C@_0BF@NFIFHHOM@INVENTORY_PAGE_COUNT@ DB 'INVENTORY_PAGE_COUNT', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@LCKKFCJM@CATEGORY_ACTIVE@
+;	COMDAT ??_C@_0BF@LCFAAJPA@INVENTORY_SLOT_COUNT@
 CONST	SEGMENT
-??_C@_0BA@LCKKFCJM@CATEGORY_ACTIVE@ DB 'CATEGORY_ACTIVE', 00H ; `string'
+??_C@_0BF@LCFAAJPA@INVENTORY_SLOT_COUNT@ DB 'INVENTORY_SLOT_COUNT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@HCMEALJK@CATEGORY_PASSIVE@
 CONST	SEGMENT
 ??_C@_0BB@HCMEALJK@CATEGORY_PASSIVE@ DB 'CATEGORY_PASSIVE', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@CFOEIGCN@SKILL_GRADE_GRAND_MASTER@
+;	COMDAT ??_C@_0BE@CEBDMLGH@INVENTORY_PAGE_SIZE@
 CONST	SEGMENT
-??_C@_0BJ@CFOEIGCN@SKILL_GRADE_GRAND_MASTER@ DB 'SKILL_GRADE_GRAND_MASTER'
-	DB	00H						; `string'
+??_C@_0BE@CEBDMLGH@INVENTORY_PAGE_SIZE@ DB 'INVENTORY_PAGE_SIZE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@DCIPLDCA@SKILL_GRADE_PERFECT_MASTER@
 CONST	SEGMENT
 ??_C@_0BL@DCIPLDCA@SKILL_GRADE_PERFECT_MASTER@ DB 'SKILL_GRADE_PERFECT_MA'
 	DB	'STER', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@LAKFNFGD@SKILL_GRADE_NORMAL@
+;	COMDAT ??_C@_0BA@LCKKFCJM@CATEGORY_ACTIVE@
 CONST	SEGMENT
-??_C@_0BD@LAKFNFGD@SKILL_GRADE_NORMAL@ DB 'SKILL_GRADE_NORMAL', 00H ; `string'
+??_C@_0BA@LCKKFCJM@CATEGORY_ACTIVE@ DB 'CATEGORY_ACTIVE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@HIHOAICI@SKILL_GRADE_MASTER@
 CONST	SEGMENT
 ??_C@_0BD@HIHOAICI@SKILL_GRADE_MASTER@ DB 'SKILL_GRADE_MASTER', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BK@IHLHEPKN@POINT_MAGIC_ATT_BONUS_PER@
+;	COMDAT ??_C@_0BJ@CFOEIGCN@SKILL_GRADE_GRAND_MASTER@
 CONST	SEGMENT
-??_C@_0BK@IHLHEPKN@POINT_MAGIC_ATT_BONUS_PER@ DB 'POINT_MAGIC_ATT_BONUS_P'
-	DB	'ER', 00H					; `string'
+??_C@_0BJ@CFOEIGCN@SKILL_GRADE_GRAND_MASTER@ DB 'SKILL_GRADE_GRAND_MASTER'
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@GOGOBLID@POINT_MELEE_MAGIC_ATT_BONUS_PER@
 CONST	SEGMENT
 ??_C@_0CA@GOGOBLID@POINT_MELEE_MAGIC_ATT_BONUS_PER@ DB 'POINT_MELEE_MAGIC'
 	DB	'_ATT_BONUS_PER', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@PIHNCBED@ENERGY_END_TIME@
+;	COMDAT ??_C@_0BD@LAKFNFGD@SKILL_GRADE_NORMAL@
 CONST	SEGMENT
-??_C@_0BA@PIHNCBED@ENERGY_END_TIME@ DB 'ENERGY_END_TIME', 00H ; `string'
+??_C@_0BD@LAKFNFGD@SKILL_GRADE_NORMAL@ DB 'SKILL_GRADE_NORMAL', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@PLDLOAKE@POINT_COSTUME_ATTR_BONUS@
 CONST	SEGMENT
 ??_C@_0BJ@PLDLOAKE@POINT_COSTUME_ATTR_BONUS@ DB 'POINT_COSTUME_ATTR_BONUS'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@PDEJPPI@POINT_ATTBONUS_MONSTER@
+;	COMDAT ??_C@_0BK@IHLHEPKN@POINT_MAGIC_ATT_BONUS_PER@
 CONST	SEGMENT
-??_C@_0BH@PDEJPPI@POINT_ATTBONUS_MONSTER@ DB 'POINT_ATTBONUS_MONSTER', 00H ; `string'
+??_C@_0BK@IHLHEPKN@POINT_MAGIC_ATT_BONUS_PER@ DB 'POINT_MAGIC_ATT_BONUS_P'
+	DB	'ER', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06KOEJHMAL@ENERGY@
 CONST	SEGMENT
 ??_C@_06KOEJHMAL@ENERGY@ DB 'ENERGY', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BO@CEPNAEGB@POINT_NORMAL_HIT_DEFEND_BONUS@
+;	COMDAT ??_C@_0BA@PIHNCBED@ENERGY_END_TIME@
 CONST	SEGMENT
-??_C@_0BO@CEPNAEGB@POINT_NORMAL_HIT_DEFEND_BONUS@ DB 'POINT_NORMAL_HIT_DE'
-	DB	'FEND_BONUS', 00H				; `string'
+??_C@_0BA@PIHNCBED@ENERGY_END_TIME@ DB 'ENERGY_END_TIME', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@IJMJNHHP@RESIST_MAGIC@
 CONST	SEGMENT
 ??_C@_0N@IJMJNHHP@RESIST_MAGIC@ DB 'RESIST_MAGIC', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BO@GNDIKOOF@POINT_NORMAL_HIT_DAMAGE_BONUS@
+;	COMDAT ??_C@_0BH@PDEJPPI@POINT_ATTBONUS_MONSTER@
 CONST	SEGMENT
-??_C@_0BO@GNDIKOOF@POINT_NORMAL_HIT_DAMAGE_BONUS@ DB 'POINT_NORMAL_HIT_DA'
-	DB	'MAGE_BONUS', 00H				; `string'
+??_C@_0BH@PDEJPPI@POINT_ATTBONUS_MONSTER@ DB 'POINT_ATTBONUS_MONSTER', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@LPIAEILC@POINT_SKILL_DEFEND_BONUS@
 CONST	SEGMENT
 ??_C@_0BJ@LPIAEILC@POINT_SKILL_DEFEND_BONUS@ DB 'POINT_SKILL_DEFEND_BONUS'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@HLPPKIKO@POINT_ATT_BONUS@
+;	COMDAT ??_C@_0BO@CEPNAEGB@POINT_NORMAL_HIT_DEFEND_BONUS@
 CONST	SEGMENT
-??_C@_0BA@HLPPKIKO@POINT_ATT_BONUS@ DB 'POINT_ATT_BONUS', 00H ; `string'
+??_C@_0BO@CEPNAEGB@POINT_NORMAL_HIT_DEFEND_BONUS@ DB 'POINT_NORMAL_HIT_DE'
+	DB	'FEND_BONUS', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@PGEFOCDG@POINT_SKILL_DAMAGE_BONUS@
 CONST	SEGMENT
 ??_C@_0BJ@PGEFOCDG@POINT_SKILL_DAMAGE_BONUS@ DB 'POINT_SKILL_DAMAGE_BONUS'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@OCODMABI@POINT_MAX_HP_PCT@
+;	COMDAT ??_C@_0BO@GNDIKOOF@POINT_NORMAL_HIT_DAMAGE_BONUS@
 CONST	SEGMENT
-??_C@_0BB@OCODMABI@POINT_MAX_HP_PCT@ DB 'POINT_MAX_HP_PCT', 00H ; `string'
+??_C@_0BO@GNDIKOOF@POINT_NORMAL_HIT_DAMAGE_BONUS@ DB 'POINT_NORMAL_HIT_DA'
+	DB	'MAGE_BONUS', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@IHDKAICM@POINT_MAX_SP_PCT@
 CONST	SEGMENT
 ??_C@_0BB@IHDKAICM@POINT_MAX_SP_PCT@ DB 'POINT_MAX_SP_PCT', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@FCMHLHC@POINT_MALL_ITEMBONUS@
+;	COMDAT ??_C@_0BA@HLPPKIKO@POINT_ATT_BONUS@
 CONST	SEGMENT
-??_C@_0BF@FCMHLHC@POINT_MALL_ITEMBONUS@ DB 'POINT_MALL_ITEMBONUS', 00H ; `string'
+??_C@_0BA@HLPPKIKO@POINT_ATT_BONUS@ DB 'POINT_ATT_BONUS', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@LPKHMJJF@POINT_MALL_GOLDBONUS@
 CONST	SEGMENT
 ??_C@_0BF@LPKHMJJF@POINT_MALL_GOLDBONUS@ DB 'POINT_MALL_GOLDBONUS', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@FJKLFHOA@POINT_MALL_DEFBONUS@
+;	COMDAT ??_C@_0BB@OCODMABI@POINT_MAX_HP_PCT@
 CONST	SEGMENT
-??_C@_0BE@FJKLFHOA@POINT_MALL_DEFBONUS@ DB 'POINT_MALL_DEFBONUS', 00H ; `string'
+??_C@_0BB@OCODMABI@POINT_MAX_HP_PCT@ DB 'POINT_MAX_HP_PCT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@KNGAMOKN@POINT_MALL_EXPBONUS@
 CONST	SEGMENT
 ??_C@_0BE@KNGAMOKN@POINT_MALL_EXPBONUS@ DB 'POINT_MALL_EXPBONUS', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@BGNEFMNJ@POINT_PENETRATE_PCT@
+;	COMDAT ??_C@_0BF@FCMHLHC@POINT_MALL_ITEMBONUS@
 CONST	SEGMENT
-??_C@_0BE@BGNEFMNJ@POINT_PENETRATE_PCT@ DB 'POINT_PENETRATE_PCT', 00H ; `string'
+??_C@_0BF@FCMHLHC@POINT_MALL_ITEMBONUS@ DB 'POINT_MALL_ITEMBONUS', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@FDGMKOPN@POINT_MALL_ATTBONUS@
 CONST	SEGMENT
 ??_C@_0BE@FDGMKOPN@POINT_MALL_ATTBONUS@ DB 'POINT_MALL_ATTBONUS', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07MEMMKJPK@MAX_NUM@
+;	COMDAT ??_C@_0BE@FJKLFHOA@POINT_MALL_DEFBONUS@
 CONST	SEGMENT
-??_C@_07MEMMKJPK@MAX_NUM@ DB 'MAX_NUM', 00H		; `string'
+??_C@_0BE@FJKLFHOA@POINT_MALL_DEFBONUS@ DB 'POINT_MALL_DEFBONUS', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@CPEECKKP@POINT_CRITICAL_PCT@
 CONST	SEGMENT
 ??_C@_0BD@CPEECKKP@POINT_CRITICAL_PCT@ DB 'POINT_CRITICAL_PCT', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@FGICENAO@SP_RECOVERY@
+;	COMDAT ??_C@_0BE@BGNEFMNJ@POINT_PENETRATE_PCT@
 CONST	SEGMENT
-??_C@_0M@FGICENAO@SP_RECOVERY@ DB 'SP_RECOVERY', 00H	; `string'
+??_C@_0BE@BGNEFMNJ@POINT_PENETRATE_PCT@ DB 'POINT_PENETRATE_PCT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@GAAMLPFK@ATTACKER_BONUS@
 CONST	SEGMENT
 ??_C@_0P@GAAMLPFK@ATTACKER_BONUS@ DB 'ATTACKER_BONUS', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@KHDDEEFG@BOW_DISTANCE@
+;	COMDAT ??_C@_07MEMMKJPK@MAX_NUM@
 CONST	SEGMENT
-??_C@_0N@KHDDEEFG@BOW_DISTANCE@ DB 'BOW_DISTANCE', 00H	; `string'
+??_C@_07MEMMKJPK@MAX_NUM@ DB 'MAX_NUM', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@CLAIAEPM@HP_RECOVERY@
 CONST	SEGMENT
 ??_C@_0M@CLAIAEPM@HP_RECOVERY@ DB 'HP_RECOVERY', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@HAFIBGFL@SKILL_HORSE@
+;	COMDAT ??_C@_0M@FGICENAO@SP_RECOVERY@
 CONST	SEGMENT
-??_C@_0M@HAFIBGFL@SKILL_HORSE@ DB 'SKILL_HORSE', 00H	; `string'
+??_C@_0M@FGICENAO@SP_RECOVERY@ DB 'SP_RECOVERY', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08CKIIBBI@PLAYTIME@
 CONST	SEGMENT
 ??_C@_08CKIIBBI@PLAYTIME@ DB 'PLAYTIME', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@JLNOPGFK@SKILL_SUPPORT@
+;	COMDAT ??_C@_0N@KHDDEEFG@BOW_DISTANCE@
 CONST	SEGMENT
-??_C@_0O@JLNOPGFK@SKILL_SUPPORT@ DB 'SKILL_SUPPORT', 00H ; `string'
+??_C@_0N@KHDDEEFG@BOW_DISTANCE@ DB 'BOW_DISTANCE', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@DNBJLBPA@SKILL_ACTIVE@
 CONST	SEGMENT
 ??_C@_0N@DNBJLBPA@SKILL_ACTIVE@ DB 'SKILL_ACTIVE', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04KNIOFKKL@STAT@
+;	COMDAT ??_C@_0M@HAFIBGFL@SKILL_HORSE@
 CONST	SEGMENT
-??_C@_04KNIOFKKL@STAT@ DB 'STAT', 00H			; `string'
+??_C@_0M@HAFIBGFL@SKILL_HORSE@ DB 'SKILL_HORSE', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@DGEPJFAK@SKILL_PASSIVE@
 CONST	SEGMENT
 ??_C@_0O@DGEPJFAK@SKILL_PASSIVE@ DB 'SKILL_PASSIVE', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07KGCDIDGL@MAG_DEF@
+;	COMDAT ??_C@_0O@JLNOPGFK@SKILL_SUPPORT@
 CONST	SEGMENT
-??_C@_07KGCDIDGL@MAG_DEF@ DB 'MAG_DEF', 00H		; `string'
+??_C@_0O@JLNOPGFK@SKILL_SUPPORT@ DB 'SKILL_SUPPORT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@JIFCAIPA@EMPIRE_POINT@
 CONST	SEGMENT
 ??_C@_0N@JIFCAIPA@EMPIRE_POINT@ DB 'EMPIRE_POINT', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@IOLIEEIE@CASTING_SPEED@
+;	COMDAT ??_C@_04KNIOFKKL@STAT@
 CONST	SEGMENT
-??_C@_0O@IOLIEEIE@CASTING_SPEED@ DB 'CASTING_SPEED', 00H ; `string'
+??_C@_04KNIOFKKL@STAT@ DB 'STAT', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07PEONMKMN@MAG_ATT@
 CONST	SEGMENT
 ??_C@_07PEONMKMN@MAG_ATT@ DB 'MAG_ATT', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09KMPFCDFE@DEF_GRADE@
+;	COMDAT ??_C@_07KGCDIDGL@MAG_DEF@
 CONST	SEGMENT
-??_C@_09KMPFCDFE@DEF_GRADE@ DB 'DEF_GRADE', 00H		; `string'
+??_C@_07KGCDIDGL@MAG_DEF@ DB 'MAG_DEF', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09DNFHINBC@DEF_BONUS@
 CONST	SEGMENT
 ??_C@_09DNFHINBC@DEF_BONUS@ DB 'DEF_BONUS', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@IPHIKIMB@EVADE_RATE@
+;	COMDAT ??_C@_0O@IOLIEEIE@CASTING_SPEED@
 CONST	SEGMENT
-??_C@_0L@IPHIKIMB@EVADE_RATE@ DB 'EVADE_RATE', 00H	; `string'
+??_C@_0O@IOLIEEIE@CASTING_SPEED@ DB 'CASTING_SPEED', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@KGGLAJKM@MOVING_SPEED@
 CONST	SEGMENT
 ??_C@_0N@KGGLAJKM@MOVING_SPEED@ DB 'MOVING_SPEED', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09LKMFFHLI@ATT_SPEED@
+;	COMDAT ??_C@_09KMPFCDFE@DEF_GRADE@
 CONST	SEGMENT
-??_C@_09LKMFFHLI@ATT_SPEED@ DB 'ATT_SPEED', 00H		; `string'
+??_C@_09KMPFCDFE@DEF_GRADE@ DB 'DEF_GRADE', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09FOFLCGDC@ATT_BONUS@
 CONST	SEGMENT
 ??_C@_09FOFLCGDC@ATT_BONUS@ DB 'ATT_BONUS', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@CJNCLCGL@MIN_MAGIC_WEP@
+;	COMDAT ??_C@_0L@IPHIKIMB@EVADE_RATE@
 CONST	SEGMENT
-??_C@_0O@CJNCLCGL@MIN_MAGIC_WEP@ DB 'MIN_MAGIC_WEP', 00H ; `string'
+??_C@_0L@IPHIKIMB@EVADE_RATE@ DB 'EVADE_RATE', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@JAPECJBK@MAX_MAGIC_WEP@
 CONST	SEGMENT
 ??_C@_0O@JAPECJBK@MAX_MAGIC_WEP@ DB 'MAX_MAGIC_WEP', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07PNODGJJO@ATT_MIN@
+;	COMDAT ??_C@_09LKMFFHLI@ATT_SPEED@
 CONST	SEGMENT
-??_C@_07PNODGJJO@ATT_MIN@ DB 'ATT_MIN', 00H		; `string'
+??_C@_09LKMFFHLI@ATT_SPEED@ DB 'ATT_SPEED', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07OPGIINPB@ATT_MAX@
 CONST	SEGMENT
 ??_C@_07OPGIINPB@ATT_MAX@ DB 'ATT_MAX', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_02NMFFPMLH@IQ@
+;	COMDAT ??_C@_0O@CJNCLCGL@MIN_MAGIC_WEP@
 CONST	SEGMENT
-??_C@_02NMFFPMLH@IQ@ DB 'IQ', 00H			; `string'
+??_C@_0O@CJNCLCGL@MIN_MAGIC_WEP@ DB 'MIN_MAGIC_WEP', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09DIGJAPIG@ATT_POWER@
 CONST	SEGMENT
 ??_C@_09DIGJAPIG@ATT_POWER@ DB 'ATT_POWER', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_02KAOAGCMF@HT@
+;	COMDAT ??_C@_07PNODGJJO@ATT_MIN@
 CONST	SEGMENT
-??_C@_02KAOAGCMF@HT@ DB 'HT', 00H			; `string'
+??_C@_07PNODGJJO@ATT_MIN@ DB 'ATT_MIN', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_02FEPNEKN@DX@
 CONST	SEGMENT
 ??_C@_02FEPNEKN@DX@ DB 'DX', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03BIHMGKIG@ELK@
+;	COMDAT ??_C@_02NMFFPMLH@IQ@
 CONST	SEGMENT
-??_C@_03BIHMGKIG@ELK@ DB 'ELK', 00H			; `string'
+??_C@_02NMFFPMLH@IQ@ DB 'IQ', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_02LAJDCOFE@ST@
 CONST	SEGMENT
 ??_C@_02LAJDCOFE@ST@ DB 'ST', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07IHPDJFBP@STAMINA@
+;	COMDAT ??_C@_02KAOAGCMF@HT@
 CONST	SEGMENT
-??_C@_07IHPDJFBP@STAMINA@ DB 'STAMINA', 00H		; `string'
+??_C@_02KAOAGCMF@HT@ DB 'HT', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@CHCGLEDD@MAX_STAMINA@
 CONST	SEGMENT
 ??_C@_0M@CHCGLEDD@MAX_STAMINA@ DB 'MAX_STAMINA', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_02NEPPOLFA@SP@
+;	COMDAT ??_C@_03BIHMGKIG@ELK@
 CONST	SEGMENT
-??_C@_02NEPPOLFA@SP@ DB 'SP', 00H			; `string'
+??_C@_03BIHMGKIG@ELK@ DB 'ELK', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06MMAHLLLC@MAX_SP@
 CONST	SEGMENT
 ??_C@_06MMAHLLLC@MAX_SP@ DB 'MAX_SP', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_02MEIMKHMB@HP@
+;	COMDAT ??_C@_07IHPDJFBP@STAMINA@
 CONST	SEGMENT
-??_C@_02MEIMKHMB@HP@ DB 'HP', 00H			; `string'
+??_C@_07IHPDJFBP@STAMINA@ DB 'STAMINA', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06NMHEPHCD@MAX_HP@
 CONST	SEGMENT
 ??_C@_06NMHEPHCD@MAX_HP@ DB 'MAX_HP', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03KKGFKKLA@EXP@
+;	COMDAT ??_C@_02NEPPOLFA@SP@
 CONST	SEGMENT
-??_C@_03KKGFKKLA@EXP@ DB 'EXP', 00H			; `string'
+??_C@_02NEPPOLFA@SP@ DB 'SP', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08CHGDMADF@NEXT_EXP@
 CONST	SEGMENT
 ??_C@_08CHGDMADF@NEXT_EXP@ DB 'NEXT_EXP', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05GCEPFMCO@LEVEL@
+;	COMDAT ??_C@_02MEIMKHMB@HP@
 CONST	SEGMENT
-??_C@_05GCEPFMCO@LEVEL@ DB 'LEVEL', 00H			; `string'
+??_C@_02MEIMKHMB@HP@ DB 'HP', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05FHIHOFEA@VOICE@
 CONST	SEGMENT
 ??_C@_05FHIHOFEA@VOICE@ DB 'VOICE', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BO@IEIPICAI@GetChangeWIndowChangeLookVnum@
+;	COMDAT ??_C@_03KKGFKKLA@EXP@
 CONST	SEGMENT
-??_C@_0BO@IEIPICAI@GetChangeWIndowChangeLookVnum@ DB 'GetChangeWIndowChan'
-	DB	'geLookVnum', 00H				; `string'
+??_C@_03KKGFKKLA@EXP@ DB 'EXP', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@NKLEKMEH@GetChangeChangeLookPrice@
 CONST	SEGMENT
 ??_C@_0BJ@NKLEKMEH@GetChangeChangeLookPrice@ DB 'GetChangeChangeLookPrice'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CC@EICEGDNO@GetChangeLookFreeYangInvenSlotP@
+;	COMDAT ??_C@_05GCEPFMCO@LEVEL@
 CONST	SEGMENT
-??_C@_0CC@EICEGDNO@GetChangeLookFreeYangInvenSlotP@ DB 'GetChangeLookFree'
-	DB	'YangInvenSlotPos', 00H			; `string'
+??_C@_05GCEPFMCO@LEVEL@ DB 'LEVEL', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@BELNGOAK@CanChangeLookClearItem@
 CONST	SEGMENT
 ??_C@_0BH@BELNGOAK@CanChangeLookClearItem@ DB 'CanChangeLookClearItem', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@ELGKHOAL@GetChangeLookItemInvenSlot@
+;	COMDAT ??_C@_0BO@IEIPICAI@GetChangeWIndowChangeLookVnum@
 CONST	SEGMENT
-??_C@_0BL@ELGKHOAL@GetChangeLookItemInvenSlot@ DB 'GetChangeLookItemInven'
-	DB	'Slot', 00H					; `string'
+??_C@_0BO@IEIPICAI@GetChangeWIndowChangeLookVnum@ DB 'GetChangeWIndowChan'
+	DB	'geLookVnum', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@DIBDFBNF@GetChangeLookFreeYangItemID@
 CONST	SEGMENT
 ??_C@_0BM@DIBDFBNF@GetChangeLookFreeYangItemID@ DB 'GetChangeLookFreeYang'
 	DB	'ItemID', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@HMKCDAJK@SetChangeLookWindowType@
+;	COMDAT ??_C@_0CC@EICEGDNO@GetChangeLookFreeYangInvenSlotP@
 CONST	SEGMENT
-??_C@_0BI@HMKCDAJK@SetChangeLookWindowType@ DB 'SetChangeLookWindowType', 00H ; `string'
+??_C@_0CC@EICEGDNO@GetChangeLookFreeYangInvenSlotP@ DB 'GetChangeLookFree'
+	DB	'YangInvenSlotPos', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@EICJCLKG@GetChangeLookItemID@
 CONST	SEGMENT
 ??_C@_0BE@EICJCLKG@GetChangeLookItemID@ DB 'GetChangeLookItemID', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@KMNILMPF@SetChangeLookWindow@
+;	COMDAT ??_C@_0BL@ELGKHOAL@GetChangeLookItemInvenSlot@
 CONST	SEGMENT
-??_C@_0BE@KMNILMPF@SetChangeLookWindow@ DB 'SetChangeLookWindow', 00H ; `string'
+??_C@_0BL@ELGKHOAL@GetChangeLookItemInvenSlot@ DB 'GetChangeLookItemInven'
+	DB	'Slot', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@PJOOIALB@GetChangeLookWindowOpen@
 CONST	SEGMENT
 ??_C@_0BI@PJOOIALB@GetChangeLookWindowOpen@ DB 'GetChangeLookWindowOpen', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@GALPMGNA@LoadNewRegen@
+;	COMDAT ??_C@_0BI@HMKCDAJK@SetChangeLookWindowType@
 CONST	SEGMENT
-??_C@_0N@GALPMGNA@LoadNewRegen@ DB 'LoadNewRegen', 00H	; `string'
+??_C@_0BI@HMKCDAJK@SetChangeLookWindowType@ DB 'SetChangeLookWindowType', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@LHBNPKGI@GetChangeLookVnum@
 CONST	SEGMENT
 ??_C@_0BC@LHBNPKGI@GetChangeLookVnum@ DB 'GetChangeLookVnum', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@HNNKIABL@GetPetLifeTime@
+;	COMDAT ??_C@_0BE@KMNILMPF@SetChangeLookWindow@
 CONST	SEGMENT
-??_C@_0P@HNNKIABL@GetPetLifeTime@ DB 'GetPetLifeTime', 00H ; `string'
+??_C@_0BE@KMNILMPF@SetChangeLookWindow@ DB 'SetChangeLookWindow', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@DBAIPPKB@CanUseGrowthPetQuickSlot@
 CONST	SEGMENT
 ??_C@_0BJ@DBAIPPKB@CanUseGrowthPetQuickSlot@ DB 'CanUseGrowthPetQuickSlot'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@OIMHGHDP@GetPetExpPoints@
+;	COMDAT ??_C@_0N@GALPMGNA@LoadNewRegen@
 CONST	SEGMENT
-??_C@_0BA@OIMHGHDP@GetPetExpPoints@ DB 'GetPetExpPoints', 00H ; `string'
+??_C@_0N@GALPMGNA@LoadNewRegen@ DB 'LoadNewRegen', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@MCGANBBD@GetPetItem@
 CONST	SEGMENT
 ??_C@_0L@MCGANBBD@GetPetItem@ DB 'GetPetItem', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@MKFJOLGB@GetPetSkillByIndex@
+;	COMDAT ??_C@_0P@HNNKIABL@GetPetLifeTime@
 CONST	SEGMENT
-??_C@_0BD@MKFJOLGB@GetPetSkillByIndex@ DB 'GetPetSkillByIndex', 00H ; `string'
+??_C@_0P@HNNKIABL@GetPetLifeTime@ DB 'GetPetLifeTime', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@GGHLDBPM@GetActivePetItemVNum@
 CONST	SEGMENT
 ??_C@_0BF@GGHLDBPM@GetActivePetItemVNum@ DB 'GetActivePetItemVNum', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@HIAGDJGO@GetPetItemVNumInBag@
+;	COMDAT ??_C@_0BA@OIMHGHDP@GetPetExpPoints@
 CONST	SEGMENT
-??_C@_0BE@HIAGDJGO@GetPetItemVNumInBag@ DB 'GetPetItemVNumInBag', 00H ; `string'
+??_C@_0BA@OIMHGHDP@GetPetExpPoints@ DB 'GetPetExpPoints', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@EGNNPBIF@GetPetSkill@
 CONST	SEGMENT
 ??_C@_0M@EGNNPBIF@GetPetSkill@ DB 'GetPetSkill', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@MJHEBNLN@IsOpenMall@
+;	COMDAT ??_C@_0BD@MKFJOLGB@GetPetSkillByIndex@
 CONST	SEGMENT
-??_C@_0L@MJHEBNLN@IsOpenMall@ DB 'IsOpenMall', 00H	; `string'
+??_C@_0BD@MKFJOLGB@GetPetSkillByIndex@ DB 'GetPetSkillByIndex', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@FFNGMGDE@GetActivePetItemId@
 CONST	SEGMENT
 ??_C@_0BD@FFNGMGDE@GetActivePetItemId@ DB 'GetActivePetItemId', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@PMJJOEKL@SetOpenMall@
+;	COMDAT ??_C@_0BE@HIAGDJGO@GetPetItemVNumInBag@
 CONST	SEGMENT
-??_C@_0M@PMJJOEKL@SetOpenMall@ DB 'SetOpenMall', 00H	; `string'
+??_C@_0BE@HIAGDJGO@GetPetItemVNumInBag@ DB 'GetPetItemVNumInBag', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@DGCGCCCO@SetOpenSafeBox@
 CONST	SEGMENT
 ??_C@_0P@DGCGCCCO@SetOpenSafeBox@ DB 'SetOpenSafeBox', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@CCCDEOF@IsOpenPetFeedWindow@
+;	COMDAT ??_C@_0L@MJHEBNLN@IsOpenMall@
 CONST	SEGMENT
-??_C@_0BE@CCCDEOF@IsOpenPetFeedWindow@ DB 'IsOpenPetFeedWindow', 00H ; `string'
+??_C@_0L@MJHEBNLN@IsOpenMall@ DB 'IsOpenMall', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@ONINDKNJ@IsOpenPetNameChangeWindow@
 CONST	SEGMENT
 ??_C@_0BK@ONINDKNJ@IsOpenPetNameChangeWindow@ DB 'IsOpenPetNameChangeWind'
 	DB	'ow', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@LBMFBLG@SetOpenPetFeedWindow@
+;	COMDAT ??_C@_0M@PMJJOEKL@SetOpenMall@
 CONST	SEGMENT
-??_C@_0BF@LBMFBLG@SetOpenPetFeedWindow@ DB 'SetOpenPetFeedWindow', 00H ; `string'
+??_C@_0M@PMJJOEKL@SetOpenMall@ DB 'SetOpenMall', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@EEFHCAEH@IsOpenPetHatchingWindow@
 CONST	SEGMENT
 ??_C@_0BI@EEFHCAEH@IsOpenPetHatchingWindow@ DB 'IsOpenPetHatchingWindow', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@OLOKCKBJ@SetOpenPetHatchingWindow@
+;	COMDAT ??_C@_0BE@CCCDEOF@IsOpenPetFeedWindow@
 CONST	SEGMENT
-??_C@_0BJ@OLOKCKBJ@SetOpenPetHatchingWindow@ DB 'SetOpenPetHatchingWindow'
-	DB	00H						; `string'
+??_C@_0BE@CCCDEOF@IsOpenPetFeedWindow@ DB 'IsOpenPetFeedWindow', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@CJGAAMKA@SetOpenPetNameChangeWindow@
 CONST	SEGMENT
 ??_C@_0BL@CJGAAMKA@SetOpenPetNameChangeWindow@ DB 'SetOpenPetNameChangeWi'
 	DB	'ndow', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@OEGEDDOI@GetAuraRefineInfoExpPer@
+;	COMDAT ??_C@_0BF@LBMFBLG@SetOpenPetFeedWindow@
 CONST	SEGMENT
-??_C@_0BI@OEGEDDOI@GetAuraRefineInfoExpPer@ DB 'GetAuraRefineInfoExpPer', 00H ; `string'
+??_C@_0BF@LBMFBLG@SetOpenPetFeedWindow@ DB 'SetOpenPetFeedWindow', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@LNIBDCIJ@GetAuraRefineInfoLevel@
 CONST	SEGMENT
 ??_C@_0BH@LNIBDCIJ@GetAuraRefineInfoLevel@ DB 'GetAuraRefineInfoLevel', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@FMKOGNDO@FindUsingAuraSlot@
+;	COMDAT ??_C@_0BJ@OLOKCKBJ@SetOpenPetHatchingWindow@
 CONST	SEGMENT
-??_C@_0BC@FMKOGNDO@FindUsingAuraSlot@ DB 'FindUsingAuraSlot', 00H ; `string'
+??_C@_0BJ@OLOKCKBJ@SetOpenPetHatchingWindow@ DB 'SetOpenPetHatchingWindow'
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@GPJMKBHD@GetAuraRefineInfo@
 CONST	SEGMENT
 ??_C@_0BC@GPJMKBHD@GetAuraRefineInfo@ DB 'GetAuraRefineInfo', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BI@OEGEDDOI@GetAuraRefineInfoExpPer@
+CONST	SEGMENT
+??_C@_0BI@OEGEDDOI@GetAuraRefineInfoExpPer@ DB 'GetAuraRefineInfoExpPer', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BG@EEFNBJPF@FindActivatedAuraSlot@
+CONST	SEGMENT
+??_C@_0BG@EEFNBJPF@FindActivatedAuraSlot@ DB 'FindActivatedAuraSlot', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BC@FMKOGNDO@FindUsingAuraSlot@
+CONST	SEGMENT
+??_C@_0BC@FMKOGNDO@FindUsingAuraSlot@ DB 'FindUsingAuraSlot', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BF@DGBJCLPP@FineMoveAuraItemSlot@
+CONST	SEGMENT
+??_C@_0BF@DGBJCLPP@FineMoveAuraItemSlot@ DB 'FineMoveAuraItemSlot', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@FDMBJLDG@SetAuraActivatedItemSlot@
 CONST	SEGMENT
 ??_C@_0BJ@FDMBJLDG@SetAuraActivatedItemSlot@ DB 'SetAuraActivatedItemSlot'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@EEFNBJPF@FindActivatedAuraSlot@
+;	COMDAT ??_C@_0BH@ECFJIDOK@IsAuraRefineWindowOpen@
 CONST	SEGMENT
-??_C@_0BG@EEFNBJPF@FindActivatedAuraSlot@ DB 'FindActivatedAuraSlot', 00H ; `string'
+??_C@_0BH@ECFJIDOK@IsAuraRefineWindowOpen@ DB 'IsAuraRefineWindowOpen', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@HAAECBGI@GetAuraRefineWindowType@
 CONST	SEGMENT
 ??_C@_0BI@HAAECBGI@GetAuraRefineWindowType@ DB 'GetAuraRefineWindowType', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@DGBJCLPP@FineMoveAuraItemSlot@
+;	COMDAT ??_C@_0BI@PBPNGBAE@IsAuraRefineWindowEmpty@
 CONST	SEGMENT
-??_C@_0BF@DGBJCLPP@FineMoveAuraItemSlot@ DB 'FineMoveAuraItemSlot', 00H ; `string'
+??_C@_0BI@PBPNGBAE@IsAuraRefineWindowEmpty@ DB 'IsAuraRefineWindowEmpty', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@BKGGJDBO@GetAuraCurrentItemSlotCount@
 CONST	SEGMENT
 ??_C@_0BM@BKGGJDBO@GetAuraCurrentItemSlotCount@ DB 'GetAuraCurrentItemSlo'
 	DB	'tCount', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@ECFJIDOK@IsAuraRefineWindowOpen@
+;	COMDAT ??_C@_0BH@EEMJAALJ@GetAuraItemMetinSocket@
 CONST	SEGMENT
-??_C@_0BH@ECFJIDOK@IsAuraRefineWindowOpen@ DB 'IsAuraRefineWindowOpen', 00H ; `string'
+??_C@_0BH@EEMJAALJ@GetAuraItemMetinSocket@ DB 'GetAuraItemMetinSocket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@DKEAJKNA@GetAuraItemAttribute@
 CONST	SEGMENT
 ??_C@_0BF@DKEAJKNA@GetAuraItemAttribute@ DB 'GetAuraItemAttribute', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@PBPNGBAE@IsAuraRefineWindowEmpty@
+;	COMDAT ??_C@_0O@MJPCFPJK@GetAuraItemID@
 CONST	SEGMENT
-??_C@_0BI@PBPNGBAE@IsAuraRefineWindowEmpty@ DB 'IsAuraRefineWindowEmpty', 00H ; `string'
+??_C@_0O@MJPCFPJK@GetAuraItemID@ DB 'GetAuraItemID', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@NMGFNIEB@GetAuraItemCount@
 CONST	SEGMENT
 ??_C@_0BB@NMGFNIEB@GetAuraItemCount@ DB 'GetAuraItemCount', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@EEMJAALJ@GetAuraItemMetinSocket@
+;	COMDAT ??_C@_0O@PKLBMAM@SetSkillColor@
 CONST	SEGMENT
-??_C@_0BH@EEMJAALJ@GetAuraItemMetinSocket@ DB 'GetAuraItemMetinSocket', 00H ; `string'
+??_C@_0O@PKLBMAM@SetSkillColor@ DB 'SetSkillColor', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@HALFKPHL@GetSkillColor@
 CONST	SEGMENT
 ??_C@_0O@HALFKPHL@GetSkillColor@ DB 'GetSkillColor', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@MJPCFPJK@GetAuraItemID@
+;	COMDAT ??_C@_0M@GLKHKGON@CanInteract@
 CONST	SEGMENT
-??_C@_0O@MJPCFPJK@GetAuraItemID@ DB 'GetAuraItemID', 00H ; `string'
+??_C@_0M@GLKHKGON@CanInteract@ DB 'CanInteract', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@KNFAMLNM@GetPremiumBattlePassID@
 CONST	SEGMENT
 ??_C@_0BH@KNFAMLNM@GetPremiumBattlePassID@ DB 'GetPremiumBattlePassID', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@PKLBMAM@SetSkillColor@
-CONST	SEGMENT
-??_C@_0O@PKLBMAM@SetSkillColor@ DB 'SetSkillColor', 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BB@NAJMCHBK@GetItemSlotIndex@
-CONST	SEGMENT
-??_C@_0BB@NAJMCHBK@GetItemSlotIndex@ DB 'GetItemSlotIndex', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0M@GLKHKGON@CanInteract@
-CONST	SEGMENT
-??_C@_0M@GLKHKGON@CanInteract@ DB 'CanInteract', 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_04PPEDCFAC@NPOS@
-CONST	SEGMENT
-??_C@_04PPEDCFAC@NPOS@ DB 'NPOS', 00H			; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BF@HHEMENOC@GetMainCharacterPart@
 CONST	SEGMENT
 ??_C@_0BF@HHEMENOC@GetMainCharacterPart@ DB 'GetMainCharacterPart', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@PLGNHJMH@SendDragonSoulRefine@
+;	COMDAT ??_C@_0BB@NAJMCHBK@GetItemSlotIndex@
 CONST	SEGMENT
-??_C@_0BF@PLGNHJMH@SendDragonSoulRefine@ DB 'SendDragonSoulRefine', 00H ; `string'
+??_C@_0BB@NAJMCHBK@GetItemSlotIndex@ DB 'GetItemSlotIndex', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@OIIJKMFD@ClearAutoAttackTargetActorID@
 CONST	SEGMENT
 ??_C@_0BN@OIIJKMFD@ClearAutoAttackTargetActorID@ DB 'ClearAutoAttackTarge'
 	DB	'tActorID', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@DGFCHEAA@GetItemLink@
+;	COMDAT ??_C@_04PPEDCFAC@NPOS@
 CONST	SEGMENT
-??_C@_0M@DGFCHEAA@GetItemLink@ DB 'GetItemLink', 00H	; `string'
+??_C@_04PPEDCFAC@NPOS@ DB 'NPOS', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@IOMKCPHN@SlotTypeToInvenType@
 CONST	SEGMENT
 ??_C@_0BE@IOMKCPHN@SlotTypeToInvenType@ DB 'SlotTypeToInvenType', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@KPGENMF@SetItemAttribute@
+;	COMDAT ??_C@_0BF@PLGNHJMH@SendDragonSoulRefine@
 CONST	SEGMENT
-??_C@_0BB@KPGENMF@SetItemAttribute@ DB 'SetItemAttribute', 00H ; `string'
+??_C@_0BF@PLGNHJMH@SendDragonSoulRefine@ DB 'SendDragonSoulRefine', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@MABOHHMK@SetItemCount@
 CONST	SEGMENT
 ??_C@_0N@MABOHHMK@SetItemCount@ DB 'SetItemCount', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@CHNGAPIB@SetItemData@
+;	COMDAT ??_C@_0M@DGFCHEAA@GetItemLink@
 CONST	SEGMENT
-??_C@_0M@CHNGAPIB@SetItemData@ DB 'SetItemData', 00H	; `string'
+??_C@_0M@DGFCHEAA@GetItemLink@ DB 'GetItemLink', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@GLMLJBGM@SetItemMetinSocket@
 CONST	SEGMENT
 ??_C@_0BD@GLMLJBGM@SetItemMetinSocket@ DB 'SetItemMetinSocket', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@DJKKOCLB@ToggleLevelLimit@
+;	COMDAT ??_C@_0BB@KPGENMF@SetItemAttribute@
 CONST	SEGMENT
-??_C@_0BB@DJKKOCLB@ToggleLevelLimit@ DB 'ToggleLevelLimit', 00H ; `string'
+??_C@_0BB@KPGENMF@SetItemAttribute@ DB 'SetItemAttribute', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@MEKPPHGC@GetTargetVID@
 CONST	SEGMENT
 ??_C@_0N@MEKPPHGC@GetTargetVID@ DB 'GetTargetVID', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0M@CHNGAPIB@SetItemData@
+CONST	SEGMENT
+??_C@_0M@CHNGAPIB@SetItemData@ DB 'SetItemData', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0P@ILOOLMDH@ToggleCoolTime@
+CONST	SEGMENT
+??_C@_0P@ILOOLMDH@ToggleCoolTime@ DB 'ToggleCoolTime', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BB@DJKKOCLB@ToggleLevelLimit@
+CONST	SEGMENT
+??_C@_0BB@DJKKOCLB@ToggleLevelLimit@ DB 'ToggleLevelLimit', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BE@FELKHKJF@GetEmotionIconImage@
+CONST	SEGMENT
+??_C@_0BE@FELKHKJF@GetEmotionIconImage@ DB 'GetEmotionIconImage', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@CFCMHNHB@SetWeaponAttackBonusFlag@
 CONST	SEGMENT
 ??_C@_0BJ@CFCMHNHB@SetWeaponAttackBonusFlag@ DB 'SetWeaponAttackBonusFlag'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@ILOOLMDH@ToggleCoolTime@
+;	COMDAT ??_C@_09IMMFEEHK@GetPKMode@
 CONST	SEGMENT
-??_C@_0P@ILOOLMDH@ToggleCoolTime@ DB 'ToggleCoolTime', 00H ; `string'
+??_C@_09IMMFEEHK@GetPKMode@ DB 'GetPKMode', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@PMDABIKP@RegisterEmotionIcon@
 CONST	SEGMENT
 ??_C@_0BE@PMDABIKP@RegisterEmotionIcon@ DB 'RegisterEmotionIcon', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@FELKHKJF@GetEmotionIconImage@
-CONST	SEGMENT
-??_C@_0BE@FELKHKJF@GetEmotionIconImage@ DB 'GetEmotionIconImage', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_09DMPBEJCG@ExitParty@
-CONST	SEGMENT
-??_C@_09DMPBEJCG@ExitParty@ DB 'ExitParty', 00H		; `string'
-CONST	ENDS
-;	COMDAT ??_C@_09IMMFEEHK@GetPKMode@
-CONST	SEGMENT
-??_C@_09IMMFEEHK@GetPKMode@ DB 'GetPKMode', 00H		; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BE@HKIJMBKK@GetPartyMemberState@
-CONST	SEGMENT
-??_C@_0BE@HKIJMBKK@GetPartyMemberState@ DB 'GetPartyMemberState', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BG@EEFAFMJC@GetPartyMemberAffects@
 CONST	SEGMENT
 ??_C@_0BG@EEFAFMJC@GetPartyMemberAffects@ DB 'GetPartyMemberAffects', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@HGKJMFNK@IsPartyLeaderByPID@
+;	COMDAT ??_C@_09DMPBEJCG@ExitParty@
 CONST	SEGMENT
-??_C@_0BD@HGKJMFNK@IsPartyLeaderByPID@ DB 'IsPartyLeaderByPID', 00H ; `string'
+??_C@_09DMPBEJCG@ExitParty@ DB 'ExitParty', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@EPAFEFHI@GetPartyMemberHPPercentage@
 CONST	SEGMENT
 ??_C@_0BL@EPAFEFHI@GetPartyMemberHPPercentage@ DB 'GetPartyMemberHPPercen'
 	DB	'tage', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@HAEJEFBP@OpenCharacterMenu@
+;	COMDAT ??_C@_0BE@HKIJMBKK@GetPartyMemberState@
 CONST	SEGMENT
-??_C@_0BC@HAEJEFBP@OpenCharacterMenu@ DB 'OpenCharacterMenu', 00H ; `string'
+??_C@_0BE@HKIJMBKK@GetPartyMemberState@ DB 'GetPartyMemberState', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@BPMJGNAC@IsPartyLeader@
 CONST	SEGMENT
 ??_C@_0O@BPMJGNAC@IsPartyLeader@ DB 'IsPartyLeader', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@DPCEEMCG@ClearTarget@
+;	COMDAT ??_C@_0BD@HGKJMFNK@IsPartyLeaderByPID@
 CONST	SEGMENT
-??_C@_0M@DPCEEMCG@ClearTarget@ DB 'ClearTarget', 00H	; `string'
+??_C@_0BD@HGKJMFNK@IsPartyLeaderByPID@ DB 'IsPartyLeaderByPID', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09EECGCJDE@SetTarget@
 CONST	SEGMENT
 ??_C@_09EECGCJDE@SetTarget@ DB 'SetTarget', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@BLOGPKFO@CanAttachMetin@
+;	COMDAT ??_C@_0BC@HAEJEFBP@OpenCharacterMenu@
 CONST	SEGMENT
-??_C@_0P@BLOGPKFO@CanAttachMetin@ DB 'CanAttachMetin', 00H ; `string'
+??_C@_0BC@HAEJEFBP@OpenCharacterMenu@ DB 'OpenCharacterMenu', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@ELNKJPMC@IsRefineGradeScroll@
 CONST	SEGMENT
 ??_C@_0BE@ELNKJPMC@IsRefineGradeScroll@ DB 'IsRefineGradeScroll', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09GHIBIBHI@CanDetach@
+;	COMDAT ??_C@_0M@DPCEEMCG@ClearTarget@
 CONST	SEGMENT
-??_C@_09GHIBIBHI@CanDetach@ DB 'CanDetach', 00H		; `string'
+??_C@_0M@DPCEEMCG@ClearTarget@ DB 'ClearTarget', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09FHINBOHC@CanUnlock@
 CONST	SEGMENT
 ??_C@_09FHINBOHC@CanUnlock@ DB 'CanUnlock', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@DGHEMMKN@GetItemGrade@
+;	COMDAT ??_C@_0P@BLOGPKFO@CanAttachMetin@
 CONST	SEGMENT
-??_C@_0N@DGHEMMKN@GetItemGrade@ DB 'GetItemGrade', 00H	; `string'
+??_C@_0P@BLOGPKFO@CanAttachMetin@ DB 'CanAttachMetin', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09BGNCJJP@CanRefine@
 CONST	SEGMENT
 ??_C@_09BGNCJJP@CanRefine@ DB 'CanRefine', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@IDMOLEIA@IsGiftBoxInventorySlot@
+;	COMDAT ??_C@_09GHIBIBHI@CanDetach@
 CONST	SEGMENT
-??_C@_0BH@IDMOLEIA@IsGiftBoxInventorySlot@ DB 'IsGiftBoxInventorySlot', 00H ; `string'
+??_C@_09GHIBIBHI@CanDetach@ DB 'CanDetach', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@FMKBEPGC@IsChangersInventorySlot@
 CONST	SEGMENT
 ??_C@_0BI@FMKBEPGC@IsChangersInventorySlot@ DB 'IsChangersInventorySlot', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BM@FCEMHHI@IsUpgradeItemsInventorySlot@
+;	COMDAT ??_C@_0N@DGHEMMKN@GetItemGrade@
 CONST	SEGMENT
-??_C@_0BM@FCEMHHI@IsUpgradeItemsInventorySlot@ DB 'IsUpgradeItemsInventor'
-	DB	'ySlot', 00H					; `string'
+??_C@_0N@DGHEMMKN@GetItemGrade@ DB 'GetItemGrade', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@LJHNJJLN@IsStoneInventorySlot@
 CONST	SEGMENT
 ??_C@_0BF@LJHNJJLN@IsStoneInventorySlot@ DB 'IsStoneInventorySlot', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BN@DKGNHJIB@IsAvailableBeltInventoryCell@
+;	COMDAT ??_C@_0BH@IDMOLEIA@IsGiftBoxInventorySlot@
 CONST	SEGMENT
-??_C@_0BN@DKGNHJIB@IsAvailableBeltInventoryCell@ DB 'IsAvailableBeltInven'
-	DB	'toryCell', 00H				; `string'
+??_C@_0BH@IDMOLEIA@IsGiftBoxInventorySlot@ DB 'IsGiftBoxInventorySlot', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@CPJJHAGD@IsSkillBookInventorySlot@
 CONST	SEGMENT
 ??_C@_0BJ@CPJJHAGD@IsSkillBookInventorySlot@ DB 'IsSkillBookInventorySlot'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@HECMLJG@IsBeltInventorySlot@
+;	COMDAT ??_C@_0BM@FCEMHHI@IsUpgradeItemsInventorySlot@
 CONST	SEGMENT
-??_C@_0BE@HECMLJG@IsBeltInventorySlot@ DB 'IsBeltInventorySlot', 00H ; `string'
+??_C@_0BM@FCEMHHI@IsUpgradeItemsInventorySlot@ DB 'IsUpgradeItemsInventor'
+	DB	'ySlot', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@OBALOJLG@IsEquippingBelt@
 CONST	SEGMENT
 ??_C@_0BA@OBALOJLG@IsEquippingBelt@ DB 'IsEquippingBelt', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@LAJFBPPH@IsValuableItem@
+;	COMDAT ??_C@_0BN@DKGNHJIB@IsAvailableBeltInventoryCell@
 CONST	SEGMENT
-??_C@_0P@LAJFBPPH@IsValuableItem@ DB 'IsValuableItem', 00H ; `string'
+??_C@_0BN@DKGNHJIB@IsAvailableBeltInventoryCell@ DB 'IsAvailableBeltInven'
+	DB	'toryCell', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@DCFDMADN@IsOpenPrivateShop@
 CONST	SEGMENT
 ??_C@_0BC@DCFDMADN@IsOpenPrivateShop@ DB 'IsOpenPrivateShop', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@DDCIGDKO@IsDSEquipmentSlot@
+;	COMDAT ??_C@_0BE@HECMLJG@IsBeltInventorySlot@
 CONST	SEGMENT
-??_C@_0BC@DDCIGDKO@IsDSEquipmentSlot@ DB 'IsDSEquipmentSlot', 00H ; `string'
+??_C@_0BE@HECMLJG@IsBeltInventorySlot@ DB 'IsBeltInventorySlot', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@KCAGNEAI@IsCostumeSlot@
 CONST	SEGMENT
 ??_C@_0O@KCAGNEAI@IsCostumeSlot@ DB 'IsCostumeSlot', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06NOPKEHAK@isItem@
+;	COMDAT ??_C@_0P@LAJFBPPH@IsValuableItem@
 CONST	SEGMENT
-??_C@_06NOPKEHAK@isItem@ DB 'isItem', 00H		; `string'
+??_C@_0P@LAJFBPPH@IsValuableItem@ DB 'IsValuableItem', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@EMKHGGAL@IsEquipmentSlot@
 CONST	SEGMENT
 ??_C@_0BA@EMKHGGAL@IsEquipmentSlot@ DB 'IsEquipmentSlot', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@ECGPDHPA@GetGlobalQuickSlot@
+;	COMDAT ??_C@_0BC@DDCIGDKO@IsDSEquipmentSlot@
 CONST	SEGMENT
-??_C@_0BD@ECGPDHPA@GetGlobalQuickSlot@ DB 'GetGlobalQuickSlot', 00H ; `string'
+??_C@_0BC@DDCIGDKO@IsDSEquipmentSlot@ DB 'IsDSEquipmentSlot', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@JNCIKJMC@RemoveQuickSlotByValue@
 CONST	SEGMENT
 ??_C@_0BH@JNCIKJMC@RemoveQuickSlotByValue@ DB 'RemoveQuickSlotByValue', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@KPHBLMNM@SetQuickPage@
+;	COMDAT ??_C@_06NOPKEHAK@isItem@
 CONST	SEGMENT
-??_C@_0N@KPHBLMNM@SetQuickPage@ DB 'SetQuickPage', 00H	; `string'
+??_C@_06NOPKEHAK@isItem@ DB 'isItem', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@LNKMMBDG@GetLocalQuickSlot@
 CONST	SEGMENT
 ??_C@_0BC@LNKMMBDG@GetLocalQuickSlot@ DB 'GetLocalQuickSlot', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@HAJODJLN@IsSameItemVnum@
+;	COMDAT ??_C@_0BD@ECGPDHPA@GetGlobalQuickSlot@
 CONST	SEGMENT
-??_C@_0P@HAJODJLN@IsSameItemVnum@ DB 'IsSameItemVnum', 00H ; `string'
+??_C@_0BD@ECGPDHPA@GetGlobalQuickSlot@ DB 'GetGlobalQuickSlot', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@NLMPHAJA@GetQuickPage@
 CONST	SEGMENT
 ??_C@_0N@NLMPHAJA@GetQuickPage@ DB 'GetQuickPage', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@PGIBMCKF@GetItemTypeBySlot@
+;	COMDAT ??_C@_0N@KPHBLMNM@SetQuickPage@
 CONST	SEGMENT
-??_C@_0BC@PGIBMCKF@GetItemTypeBySlot@ DB 'GetItemTypeBySlot', 00H ; `string'
+??_C@_0N@KPHBLMNM@SetQuickPage@ DB 'SetQuickPage', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@HFKGNAOK@GetItemSubTypeBySlot@
 CONST	SEGMENT
 ??_C@_0BF@HFKGNAOK@GetItemSubTypeBySlot@ DB 'GetItemSubTypeBySlot', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0P@HAJODJLN@IsSameItemVnum@
+CONST	SEGMENT
+??_C@_0P@HAJODJLN@IsSameItemVnum@ DB 'IsSameItemVnum', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BB@JKIMCMDG@IsAntiFlagBySlot@
+CONST	SEGMENT
+??_C@_0BB@JKIMCMDG@IsAntiFlagBySlot@ DB 'IsAntiFlagBySlot', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BC@PGIBMCKF@GetItemTypeBySlot@
+CONST	SEGMENT
+??_C@_0BC@PGIBMCKF@GetItemTypeBySlot@ DB 'GetItemTypeBySlot', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BJ@IBBGPDPH@RequestUseLocalQuickSlot@
+CONST	SEGMENT
+??_C@_0BJ@IBBGPDPH@RequestUseLocalQuickSlot@ DB 'RequestUseLocalQuickSlot'
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CK@GNGKFIDB@LocalQuickSlotIndexToGlobalQuic@
 CONST	SEGMENT
 ??_C@_0CK@GNGKFIDB@LocalQuickSlotIndexToGlobalQuic@ DB 'LocalQuickSlotInd'
 	DB	'exToGlobalQuickSlotIndex', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@JKIMCMDG@IsAntiFlagBySlot@
+;	COMDAT ??_C@_0BN@NACLJDMA@RequestDeleteGlobalQuickSlot@
 CONST	SEGMENT
-??_C@_0BB@JKIMCMDG@IsAntiFlagBySlot@ DB 'IsAntiFlagBySlot', 00H ; `string'
+??_C@_0BN@NACLJDMA@RequestDeleteGlobalQuickSlot@ DB 'RequestDeleteGlobalQ'
+	DB	'uickSlot', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CL@IEMBKGLN@RequestMoveGlobalQuickSlotToLoc@
 CONST	SEGMENT
 ??_C@_0CL@IEMBKGLN@RequestMoveGlobalQuickSlotToLoc@ DB 'RequestMoveGlobal'
 	DB	'QuickSlotToLocalQuickSlot', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@IBBGPDPH@RequestUseLocalQuickSlot@
+;	COMDAT ??_C@_0BJ@DNLGAMEO@RequestAddLocalQuickSlot@
 CONST	SEGMENT
-??_C@_0BJ@IBBGPDPH@RequestUseLocalQuickSlot@ DB 'RequestUseLocalQuickSlot'
+??_C@_0BJ@DNLGAMEO@RequestAddLocalQuickSlot@ DB 'RequestAddLocalQuickSlot'
 	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@JMFCJJPL@RequestAddToEmptyLocalQuickSlot@
@@ -3235,380 +3245,370 @@ CONST	SEGMENT
 ??_C@_0CA@JMFCJJPL@RequestAddToEmptyLocalQuickSlot@ DB 'RequestAddToEmpty'
 	DB	'LocalQuickSlot', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BN@NACLJDMA@RequestDeleteGlobalQuickSlot@
+;	COMDAT ??_C@_08LBPCDDLA@GetCoins@
 CONST	SEGMENT
-??_C@_0BN@NACLJDMA@RequestDeleteGlobalQuickSlot@ DB 'RequestDeleteGlobalQ'
-	DB	'uickSlot', 00H				; `string'
+??_C@_08LBPCDDLA@GetCoins@ DB 'GetCoins', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@LANDCIKG@GetAlignmentData@
 CONST	SEGMENT
 ??_C@_0BB@LANDCIKG@GetAlignmentData@ DB 'GetAlignmentData', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@DNLGAMEO@RequestAddLocalQuickSlot@
+;	COMDAT ??_C@_06NMFKJLLH@GetElk@
 CONST	SEGMENT
-??_C@_0BJ@DNLGAMEO@RequestAddLocalQuickSlot@ DB 'RequestAddLocalQuickSlot'
-	DB	00H						; `string'
+??_C@_06NMFKJLLH@GetElk@ DB 'GetElk', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08OAJFGNBC@GetMoney@
 CONST	SEGMENT
 ??_C@_08OAJFGNBC@GetMoney@ DB 'GetMoney', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08LBPCDDLA@GetCoins@
+;	COMDAT ??_C@_09MKFEIFJE@GetStatus@
 CONST	SEGMENT
-??_C@_08LBPCDDLA@GetCoins@ DB 'GetCoins', 00H		; `string'
+??_C@_09MKFEIFJE@GetStatus@ DB 'GetStatus', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09OEBBKEAG@SetStatus@
 CONST	SEGMENT
 ??_C@_09OEBBKEAG@SetStatus@ DB 'SetStatus', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06NMFKJLLH@GetElk@
+;	COMDAT ??_C@_06MDIKDJMD@GetEXP@
 CONST	SEGMENT
-??_C@_06NMFKJLLH@GetElk@ DB 'GetElk', 00H		; `string'
+??_C@_06MDIKDJMD@GetEXP@ DB 'GetEXP', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08MDGBDPHC@GetLevel@
 CONST	SEGMENT
 ??_C@_08MDGBDPHC@GetLevel@ DB 'GetLevel', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09MKFEIFJE@GetStatus@
+;	COMDAT ??_C@_0O@HHBOBCLE@UseGuildSkill@
 CONST	SEGMENT
-??_C@_09MKFEIFJE@GetStatus@ DB 'GetStatus', 00H		; `string'
+??_C@_0O@HHBOBCLE@UseGuildSkill@ DB 'UseGuildSkill', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@JIGEMOFF@AffectIndexToSkillIndex@
 CONST	SEGMENT
 ??_C@_0BI@JIGEMOFF@AffectIndexToSkillIndex@ DB 'AffectIndexToSkillIndex', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06MDIKDJMD@GetEXP@
+;	COMDAT ??_C@_0BB@CNGGKNGL@GetSkillCoolTime@
 CONST	SEGMENT
-??_C@_06MDIKDJMD@GetEXP@ DB 'GetEXP', 00H		; `string'
+??_C@_0BB@CNGGKNGL@GetSkillCoolTime@ DB 'GetSkillCoolTime', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@IAPCJJAC@IsSkillActive@
 CONST	SEGMENT
 ??_C@_0O@IAPCJJAC@IsSkillActive@ DB 'IsSkillActive', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@HHBOBCLE@UseGuildSkill@
+;	COMDAT ??_C@_0M@DGCMFHDN@SetPlayTime@
 CONST	SEGMENT
-??_C@_0O@HHBOBCLE@UseGuildSkill@ DB 'UseGuildSkill', 00H ; `string'
+??_C@_0M@DGCMFHDN@SetPlayTime@ DB 'SetPlayTime', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@FOPKKJJD@IsSkillCoolTime@
 CONST	SEGMENT
 ??_C@_0BA@FOPKKJJD@IsSkillCoolTime@ DB 'IsSkillCoolTime', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@CNGGKNGL@GetSkillCoolTime@
+;	COMDAT ??_C@_06FHLNIOPB@GetJob@
 CONST	SEGMENT
-??_C@_0BB@CNGGKNGL@GetSkillCoolTime@ DB 'GetSkillCoolTime', 00H ; `string'
+??_C@_06FHLNIOPB@GetJob@ DB 'GetJob', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@DJDCIBLO@GetPlayTime@
 CONST	SEGMENT
 ??_C@_0M@DJDCIBLO@GetPlayTime@ DB 'GetPlayTime', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@DGCMFHDN@SetPlayTime@
+;	COMDAT ??_C@_08MHJANHDM@MoveItem@
 CONST	SEGMENT
-??_C@_0M@DGCMFHDN@SetPlayTime@ DB 'SetPlayTime', 00H	; `string'
+??_C@_08MHJANHDM@MoveItem@ DB 'MoveItem', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@DBIFLBAC@SendClickItemPacket@
 CONST	SEGMENT
 ??_C@_0BE@DBIFLBAC@SendClickItemPacket@ DB 'SendClickItemPacket', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06FHLNIOPB@GetJob@
+;	COMDAT ??_C@_0BD@JBOBKHIE@GetItemMetinSocket@
 CONST	SEGMENT
-??_C@_06FHLNIOPB@GetJob@ DB 'GetJob', 00H		; `string'
+??_C@_0BD@JBOBKHIE@GetItemMetinSocket@ DB 'GetItemMetinSocket', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@GOKPPDHH@GetItemAttribute@
 CONST	SEGMENT
 ??_C@_0BB@GOKPPDHH@GetItemAttribute@ DB 'GetItemAttribute', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08MHJANHDM@MoveItem@
+;	COMDAT ??_C@_0N@LEKALLIG@GetItemCount@
 CONST	SEGMENT
-??_C@_08MHJANHDM@MoveItem@ DB 'MoveItem', 00H		; `string'
+??_C@_0N@LEKALLIG@GetItemCount@ DB 'GetItemCount', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@DBLILMFK@GetItemCountByVnum@
 CONST	SEGMENT
 ??_C@_0BD@DBLILMFK@GetItemCountByVnum@ DB 'GetItemCountByVnum', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@JBOBKHIE@GetItemMetinSocket@
+;	COMDAT ??_C@_0N@GABOCBEH@GetItemIndex@
 CONST	SEGMENT
-??_C@_0BD@JBOBKHIE@GetItemMetinSocket@ DB 'GetItemMetinSocket', 00H ; `string'
+??_C@_0N@GABOCBEH@GetItemIndex@ DB 'GetItemIndex', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@DMCGDNGF@GetItemFlags@
 CONST	SEGMENT
 ??_C@_0N@DMCGDNGF@GetItemFlags@ DB 'GetItemFlags', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@LEKALLIG@GetItemCount@
+;	COMDAT ??_C@_0P@MJOJKOJJ@ClearSkillDict@
 CONST	SEGMENT
-??_C@_0N@LEKALLIG@GetItemCount@ DB 'GetItemCount', 00H	; `string'
+??_C@_0P@MJOJKOJJ@ClearSkillDict@ DB 'ClearSkillDict', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@GCOFLJAB@DisableToggleSkill@
 CONST	SEGMENT
 ??_C@_0BD@GCOFLJAB@DisableToggleSkill@ DB 'DisableToggleSkill', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@GABOCBEH@GetItemIndex@
+;	COMDAT ??_C@_0P@IGNHDBHH@ClickSkillSlot@
 CONST	SEGMENT
-??_C@_0N@GABOCBEH@GetItemIndex@ DB 'GetItemIndex', 00H	; `string'
+??_C@_0P@IGNHDBHH@ClickSkillSlot@ DB 'ClickSkillSlot', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@BPJDEKED@ChangeCurrentSkillNumberOnly@
 CONST	SEGMENT
 ??_C@_0BN@BPJDEKED@ChangeCurrentSkillNumberOnly@ DB 'ChangeCurrentSkillNu'
 	DB	'mberOnly', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@MJOJKOJJ@ClearSkillDict@
+;	COMDAT ??_C@_0CD@EFGGIKHI@GetSkillCurrentEfficientPercent@
 CONST	SEGMENT
-??_C@_0P@MJOJKOJJ@ClearSkillDict@ DB 'ClearSkillDict', 00H ; `string'
+??_C@_0CD@EFGGIKHI@GetSkillCurrentEfficientPercent@ DB 'GetSkillCurrentEf'
+	DB	'ficientPercentage', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@JHGONPGM@GetSkillNextEfficientPercentage@
 CONST	SEGMENT
 ??_C@_0CA@JHGONPGM@GetSkillNextEfficientPercentage@ DB 'GetSkillNextEffic'
 	DB	'ientPercentage', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@IGNHDBHH@ClickSkillSlot@
+;	COMDAT ??_C@_0BC@HNJMANI@GetSkillSlotIndex@
 CONST	SEGMENT
-??_C@_0P@IGNHDBHH@ClickSkillSlot@ DB 'ClickSkillSlot', 00H ; `string'
+??_C@_0BC@HNJMANI@GetSkillSlotIndex@ DB 'GetSkillSlotIndex', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@IIOIANPE@GetSkillGrade@
 CONST	SEGMENT
 ??_C@_0O@IIOIANPE@GetSkillGrade@ DB 'GetSkillGrade', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CD@EFGGIKHI@GetSkillCurrentEfficientPercent@
+;	COMDAT ??_C@_0BD@DPHLFGPP@SetQuickCameraMode@
 CONST	SEGMENT
-??_C@_0CD@EFGGIKHI@GetSkillCurrentEfficientPercent@ DB 'GetSkillCurrentEf'
-	DB	'ficientPercentage', 00H			; `string'
+??_C@_0BD@DPHLFGPP@SetQuickCameraMode@ DB 'SetQuickCameraMode', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08HIFGFOGG@SetSkill@
 CONST	SEGMENT
 ??_C@_08HIFGFOGG@SetSkill@ DB 'SetSkill', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@HNJMANI@GetSkillSlotIndex@
-CONST	SEGMENT
-??_C@_0BC@HNJMANI@GetSkillSlotIndex@ DB 'GetSkillSlotIndex', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BE@MCFGJOPA@ResetCameraRotation@
-CONST	SEGMENT
-??_C@_0BE@MCFGJOPA@ResetCameraRotation@ DB 'ResetCameraRotation', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BD@DPHLFGPP@SetQuickCameraMode@
-CONST	SEGMENT
-??_C@_0BD@DPHLFGPP@SetQuickCameraMode@ DB 'SetQuickCameraMode', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BC@NCHFPCDM@StartMouseWalking@
-CONST	SEGMENT
-??_C@_0BC@NCHFPCDM@StartMouseWalking@ DB 'StartMouseWalking', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BA@JEOKFDLP@EndMouseWalking@
 CONST	SEGMENT
 ??_C@_0BA@JEOKFDLP@EndMouseWalking@ DB 'EndMouseWalking', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@PNJNANBI@SetSingleDIKKeyState@
+;	COMDAT ??_C@_0BE@MCFGJOPA@ResetCameraRotation@
 CONST	SEGMENT
-??_C@_0BF@PNJNANBI@SetSingleDIKKeyState@ DB 'SetSingleDIKKeyState', 00H ; `string'
+??_C@_0BE@MCFGJOPA@ResetCameraRotation@ DB 'ResetCameraRotation', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@HGLJKHIH@EndKeyWalkingImmediately@
 CONST	SEGMENT
 ??_C@_0BJ@HGLJKHIH@EndKeyWalkingImmediately@ DB 'EndKeyWalkingImmediately'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@IEKDAKHC@SetAutoCameraRotationSpeed@
+;	COMDAT ??_C@_0BC@NCHFPCDM@StartMouseWalking@
 CONST	SEGMENT
-??_C@_0BL@IEKDAKHC@SetAutoCameraRotationSpeed@ DB 'SetAutoCameraRotationS'
-	DB	'peed', 00H					; `string'
+??_C@_0BC@NCHFPCDM@StartMouseWalking@ DB 'StartMouseWalking', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@DAIEHFBH@SetAttackKeyState@
 CONST	SEGMENT
 ??_C@_0BC@DAIEHFBH@SetAttackKeyState@ DB 'SetAttackKeyState', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@PBBGGCLG@HidePlayer@
+;	COMDAT ??_C@_0BF@PNJNANBI@SetSingleDIKKeyState@
 CONST	SEGMENT
-??_C@_0L@PBBGGCLG@HidePlayer@ DB 'HidePlayer', 00H	; `string'
+??_C@_0BF@PNJNANBI@SetSingleDIKKeyState@ DB 'SetSingleDIKKeyState', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@GOCDIKPN@ComboAttack@
 CONST	SEGMENT
 ??_C@_0M@GOCDIKPN@ComboAttack@ DB 'ComboAttack', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@JEBGMNAH@ActEmotion@
+;	COMDAT ??_C@_0BL@IEKDAKHC@SetAutoCameraRotationSpeed@
 CONST	SEGMENT
-??_C@_0L@JEBGMNAH@ActEmotion@ DB 'ActEmotion', 00H	; `string'
+??_C@_0BL@IEKDAKHC@SetAutoCameraRotationSpeed@ DB 'SetAutoCameraRotationS'
+	DB	'peed', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@CPMIOCIM@ShowPlayer@
 CONST	SEGMENT
 ??_C@_0L@CPMIOCIM@ShowPlayer@ DB 'ShowPlayer', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@GFJLKENO@IsMountingHorse@
+;	COMDAT ??_C@_0L@PBBGGCLG@HidePlayer@
 CONST	SEGMENT
-??_C@_0BA@GFJLKENO@IsMountingHorse@ DB 'IsMountingHorse', 00H ; `string'
+??_C@_0L@PBBGGCLG@HidePlayer@ DB 'HidePlayer', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@LDENHACE@IsObserverMode@
 CONST	SEGMENT
 ??_C@_0P@LDENHACE@IsObserverMode@ DB 'IsObserverMode', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@DABJOKIF@GetCharacterDistance@
+;	COMDAT ??_C@_0L@JEBGMNAH@ActEmotion@
 CONST	SEGMENT
-??_C@_0BF@DABJOKIF@GetCharacterDistance@ DB 'GetCharacterDistance', 00H ; `string'
+??_C@_0L@JEBGMNAH@ActEmotion@ DB 'ActEmotion', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@IKPCBCPA@IsInSafeArea@
 CONST	SEGMENT
 ??_C@_0N@IKPCBCPA@IsInSafeArea@ DB 'IsInSafeArea', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@IKOEAPGC@IsRevengeInstance@
+;	COMDAT ??_C@_0BA@GFJLKENO@IsMountingHorse@
 CONST	SEGMENT
-??_C@_0BC@IKOEAPGC@IsRevengeInstance@ DB 'IsRevengeInstance', 00H ; `string'
+??_C@_0BA@GFJLKENO@IsMountingHorse@ DB 'IsMountingHorse', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@HJOMPGKI@IsCantFightInstance@
 CONST	SEGMENT
 ??_C@_0BE@HJOMPGKI@IsCantFightInstance@ DB 'IsCantFightInstance', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@CBEDFALN@IsSameEmpire@
+;	COMDAT ??_C@_0BF@DABJOKIF@GetCharacterDistance@
 CONST	SEGMENT
-??_C@_0N@CBEDFALN@IsSameEmpire@ DB 'IsSameEmpire', 00H	; `string'
+??_C@_0BF@DABJOKIF@GetCharacterDistance@ DB 'GetCharacterDistance', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@FOIPHJLO@IsChallengeInstance@
 CONST	SEGMENT
 ??_C@_0BE@FOIPHJLO@IsChallengeInstance@ DB 'IsChallengeInstance', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@ODCBPOEF@IsActingEmotion@
+;	COMDAT ??_C@_0BC@IKOEAPGC@IsRevengeInstance@
 CONST	SEGMENT
-??_C@_0BA@ODCBPOEF@IsActingEmotion@ DB 'IsActingEmotion', 00H ; `string'
+??_C@_0BC@IKOEAPGC@IsRevengeInstance@ DB 'IsRevengeInstance', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@ECCODAC@IsPVPInstance@
 CONST	SEGMENT
 ??_C@_0O@ECCODAC@IsPVPInstance@ DB 'IsPVPInstance', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@GALHNOAL@IsMainCharacterIndex@
+;	COMDAT ??_C@_0N@CBEDFALN@IsSameEmpire@
 CONST	SEGMENT
-??_C@_0BF@GALHNOAL@IsMainCharacterIndex@ DB 'IsMainCharacterIndex', 00H ; `string'
+??_C@_0N@CBEDFALN@IsSameEmpire@ DB 'IsSameEmpire', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@FLPEGJDD@CanAttackInstance@
 CONST	SEGMENT
 ??_C@_0BC@FLPEGJDD@CanAttackInstance@ DB 'CanAttackInstance', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@OMDPKDFM@GetMainCharacterName@
+;	COMDAT ??_C@_0BA@ODCBPOEF@IsActingEmotion@
 CONST	SEGMENT
-??_C@_0BF@OMDPKDFM@GetMainCharacterName@ DB 'GetMainCharacterName', 00H ; `string'
+??_C@_0BA@ODCBPOEF@IsActingEmotion@ DB 'IsActingEmotion', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@GIKFEPMH@GetMainCharacterPosition@
 CONST	SEGMENT
 ??_C@_0BJ@GIKFEPMH@GetMainCharacterPosition@ DB 'GetMainCharacterPosition'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@JCNMOACA@SetMainCharacterIndex@
+;	COMDAT ??_C@_0BF@GALHNOAL@IsMainCharacterIndex@
 CONST	SEGMENT
-??_C@_0BG@JCNMOACA@SetMainCharacterIndex@ DB 'SetMainCharacterIndex', 00H ; `string'
+??_C@_0BF@GALHNOAL@IsMainCharacterIndex@ DB 'IsMainCharacterIndex', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@GHIKDJGB@GetMainCharacterIndex@
 CONST	SEGMENT
 ??_C@_0BG@GHIKDJGB@GetMainCharacterIndex@ DB 'GetMainCharacterIndex', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@MACDDOCA@GetMouseFunc@
+;	COMDAT ??_C@_0BF@OMDPKDFM@GetMainCharacterName@
 CONST	SEGMENT
-??_C@_0N@MACDDOCA@GetMouseFunc@ DB 'GetMouseFunc', 00H	; `string'
+??_C@_0BF@OMDPKDFM@GetMainCharacterName@ DB 'GetMainCharacterName', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@JBJLNCBH@SetMouseMiddleButtonState@
 CONST	SEGMENT
 ??_C@_0BK@JBJLNCBH@SetMouseMiddleButtonState@ DB 'SetMouseMiddleButtonSta'
 	DB	'te', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@HDELDAFI@SetMouseState@
+;	COMDAT ??_C@_0BG@JCNMOACA@SetMainCharacterIndex@
 CONST	SEGMENT
-??_C@_0O@HDELDAFI@SetMouseState@ DB 'SetMouseState', 00H ; `string'
+??_C@_0BG@JCNMOACA@SetMainCharacterIndex@ DB 'SetMainCharacterIndex', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@LEJNPCGM@SetMouseFunc@
 CONST	SEGMENT
 ??_C@_0N@LEJNPCGM@SetMouseFunc@ DB 'SetMouseFunc', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@JOKOCOKN@PickCloseItemAutoVector@
+;	COMDAT ??_C@_0N@MACDDOCA@GetMouseFunc@
 CONST	SEGMENT
-??_C@_0BI@JOKOCOKN@PickCloseItemAutoVector@ DB 'PickCloseItemAutoVector', 00H ; `string'
+??_C@_0N@MACDDOCA@GetMouseFunc@ DB 'GetMouseFunc', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@MNPFFDEJ@SetGameWindow@
 CONST	SEGMENT
 ??_C@_0O@MNPFFDEJ@SetGameWindow@ DB 'SetGameWindow', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@MAEJALBO@PickCloseItem@
+;	COMDAT ??_C@_0O@HDELDAFI@SetMouseState@
 CONST	SEGMENT
-??_C@_0O@MAEJALBO@PickCloseItem@ DB 'PickCloseItem', 00H ; `string'
+??_C@_0O@HDELDAFI@SetMouseState@ DB 'SetMouseState', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@EFMODMFG@PickCloseItemVector@
 CONST	SEGMENT
 ??_C@_0BE@EFMODMFG@PickCloseItemVector@ DB 'PickCloseItemVector', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@CHIABFDI@GetAutoPotionInfo@
+;	COMDAT ??_C@_0BI@JOKOCOKN@PickCloseItemAutoVector@
 CONST	SEGMENT
-??_C@_0BC@CHIABFDI@GetAutoPotionInfo@ DB 'GetAutoPotionInfo', 00H ; `string'
+??_C@_0BI@JOKOCOKN@PickCloseItemAutoVector@ DB 'PickCloseItemAutoVector', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@CILJOCG@SetAutoPotionInfo@
 CONST	SEGMENT
 ??_C@_0BC@CILJOCG@SetAutoPotionInfo@ DB 'SetAutoPotionInfo', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09BOADOOAM@iiiiiiiii@
+;	COMDAT ??_C@_0O@MAEJALBO@PickCloseItem@
 CONST	SEGMENT
-??_C@_09BOADOOAM@iiiiiiiii@ DB 'iiiiiiiii', 00H		; `string'
+??_C@_0O@MAEJALBO@PickCloseItem@ DB 'PickCloseItem', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07LLGOIFNB@iiisfff@
 CONST	SEGMENT
 ??_C@_07LLGOIFNB@iiisfff@ DB 'iiisfff', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05EAPDINDK@iiiii@
+;	COMDAT ??_C@_0BC@CHIABFDI@GetAutoPotionInfo@
 CONST	SEGMENT
-??_C@_05EAPDINDK@iiiii@ DB 'iiiii', 00H			; `string'
+??_C@_0BC@CHIABFDI@GetAutoPotionInfo@ DB 'GetAutoPotionInfo', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@LNJHJPCL@iiiiiiiiii@
 CONST	SEGMENT
 ??_C@_0L@LNJHJPCL@iiiiiiiiii@ DB 'iiiiiiiiii', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07EFJJEBFG@iiiiiii@
+;	COMDAT ??_C@_09BOADOOAM@iiiiiiiii@
 CONST	SEGMENT
-??_C@_07EFJJEBFG@iiiiiii@ DB 'iiiiiii', 00H		; `string'
+??_C@_09BOADOOAM@iiiiiiiii@ DB 'iiiiiiiii', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04GPDILEAH@biii@
 CONST	SEGMENT
 ??_C@_04GPDILEAH@biii@ DB 'biii', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@BGKCJNBK@Can?8t?5find?5item?5data@
+;	COMDAT ??_C@_05EAPDINDK@iiiii@
 CONST	SEGMENT
-??_C@_0BF@BGKCJNBK@Can?8t?5find?5item?5data@ DB 'Can''t find item data', 00H ; `string'
+??_C@_05EAPDINDK@iiiii@ DB 'iiiii', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@IBGKLIMC@can?8t?5find?5item?5data@
 CONST	SEGMENT
 ??_C@_0BF@IBGKLIMC@can?8t?5find?5item?5data@ DB 'can''t find item data', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06FAMCNHHL@?3?$CFx?3?$CFd@
+;	COMDAT ??_C@_07EFJJEBFG@iiiiiii@
 CONST	SEGMENT
-??_C@_06FAMCNHHL@?3?$CFx?3?$CFd@ DB ':%x:%d', 00H	; `string'
+??_C@_07EFJJEBFG@iiiiiii@ DB 'iiiiiii', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@MGKBEPOF@?5?$HMh?$HMr?$FL?$CFs?$FN?$HMcfff1e6c0?$HMH?$CFs?$HMh@
 CONST	SEGMENT
 ??_C@_0BK@MGKBEPOF@?5?$HMh?$HMr?$FL?$CFs?$FN?$HMcfff1e6c0?$HMH?$CFs?$HMh@ DB ' '
 	DB	'|h|r[%s]|cfff1e6c0|H%s|h', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_01HHGOMJKL@l@
+;	COMDAT ??_C@_0BF@BGKCJNBK@Can?8t?5find?5item?5data@
 CONST	SEGMENT
-??_C@_01HHGOMJKL@l@ DB 'l', 00H				; `string'
+??_C@_0BF@BGKCJNBK@Can?8t?5find?5item?5data@ DB 'Can''t find item data', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@MCOKCAKI@?5?$HMh?$HMr?$FL?$CFs?$FN?$HMcffffc700?$HMH?$CFs?$HMh@
 CONST	SEGMENT
 ??_C@_0BK@MCOKCAKI@?5?$HMh?$HMr?$FL?$CFs?$FN?$HMcffffc700?$HMH?$CFs?$HMh@ DB ' '
 	DB	'|h|r[%s]|cffffc700|H%s|h', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EK@IDBGKDBN@playerSetSingleDIKKeyState?$CIeDIK@
+;	COMDAT ??_C@_06FAMCNHHL@?3?$CFx?3?$CFd@
 CONST	SEGMENT
-??_C@_0EK@IDBGKDBN@playerSetSingleDIKKeyState?$CIeDIK@ DB 'playerSetSingl'
-	DB	'eDIKKeyState(eDIK, isPressed) - There is no second argument', 00H ; `string'
+??_C@_06FAMCNHHL@?3?$CFx?3?$CFd@ DB ':%x:%d', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_02HPEDFNFO@ff@
 CONST	SEGMENT
 ??_C@_02HPEDFNFO@ff@ DB 'ff', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EA@OHLDKNFC@playerSetAttackKeyState?$CIisPress@
+;	COMDAT ??_C@_01HHGOMJKL@l@
 CONST	SEGMENT
-??_C@_0EA@OHLDKNFC@playerSetAttackKeyState?$CIisPress@ DB 'playerSetAttac'
-	DB	'kKeyState(isPressed) - There is no first argument', 00H ; `string'
+??_C@_01HHGOMJKL@l@ DB 'l', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EJ@BNKMOLIP@playerSetSingleDIKKeyState?$CIeDIK@
 CONST	SEGMENT
 ??_C@_0EJ@BNKMOLIP@playerSetSingleDIKKeyState?$CIeDIK@ DB 'playerSetSingl'
 	DB	'eDIKKeyState(eDIK, isPressed) - There is no first argument', 00H ; `string'
 CONST	ENDS
+;	COMDAT ??_C@_0EK@IDBGKDBN@playerSetSingleDIKKeyState?$CIeDIK@
+CONST	SEGMENT
+??_C@_0EK@IDBGKDBN@playerSetSingleDIKKeyState?$CIeDIK@ DB 'playerSetSingl'
+	DB	'eDIKKeyState(eDIK, isPressed) - There is no second argument', 00H ; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0DF@ILFGGFEI@CPythonPlayer?3?3RegisterEffect?$CIe@
 CONST	SEGMENT
 ??_C@_0DF@ILFGGFEI@CPythonPlayer?3?3RegisterEffect?$CIe@ DB 'CPythonPlaye'
 	DB	'r::RegisterEffect(eEft=%d, szFileName=%s', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0EA@OHLDKNFC@playerSetAttackKeyState?$CIisPress@
+CONST	SEGMENT
+??_C@_0EA@OHLDKNFC@playerSetAttackKeyState?$CIisPress@ DB 'playerSetAttac'
+	DB	'kKeyState(isPressed) - There is no first argument', 00H ; `string'
 PUBLIC	??$forward@PAVCGraphicImage@@@std@@YA$$QAPAVCGraphicImage@@AAPAV1@@Z ; std::forward<CGraphicImage *>
 PUBLIC	??$?0V?$tuple@ABH@std@@V?$tuple@$$V@1@$0A@$$Z$S@?$pair@$$CBHPAVCGraphicImage@@@std@@AAE@AAV?$tuple@ABH@1@AAV?$tuple@$$V@1@U?$integer_sequence@I$0A@@1@U?$integer_sequence@I$S@1@@Z ; std::pair<int const ,CGraphicImage *>::pair<int const ,CGraphicImage *><std::tuple<int const &>,std::tuple<>,0>
 PUBLIC	??$?0HPAVCGraphicImage@@$0A@@?$pair@$$CBHPAVCGraphicImage@@@std@@QAE@$$QAU?$pair@HPAVCGraphicImage@@@1@@Z ; std::pair<int const ,CGraphicImage *>::pair<int const ,CGraphicImage *><int,CGraphicImage *,0>

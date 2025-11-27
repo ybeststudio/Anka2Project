@@ -8,91 +8,91 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0BJ@NLDABMC@minimap_image_filter?4dds@	; `string'
 PUBLIC	??_C@_0BB@FOBBAEMC@D?3?1ymir?5work?1ui?1@	; `string'
-PUBLIC	??_C@_0BH@IALDDMEN@minimap?1playermark?4sub@	; `string'
 PUBLIC	??_C@_0BD@BAIINCPI@minimap_camera?4dds@		; `string'
-PUBLIC	??_C@_0BF@GEPACMNN@minimap?1bossmark?4tga@	; `string'
+PUBLIC	??_C@_0BJ@NLDABMC@minimap_image_filter?4dds@	; `string'
 PUBLIC	??_C@_0BK@GFJGCNLI@minimap?1whitemark_new?4tga@	; `string'
-PUBLIC	??_C@_0BB@KFCGGOBN@minimap?1star?4tga@		; `string'
+PUBLIC	??_C@_0BH@IALDDMEN@minimap?1playermark?4sub@	; `string'
 PUBLIC	??_C@_0BC@FFCJCGGB@minimap_range?4tga@		; `string'
-PUBLIC	??_C@_0BL@CILDCNBH@?$CFsminimap?1waypoint?$CF02d?4sub@ ; `string'
+PUBLIC	??_C@_0BF@GEPACMNN@minimap?1bossmark?4tga@	; `string'
 PUBLIC	??_C@_0CA@MEBBNPAF@?$CFsminimap?1mini_waypoint?$CF02d?4sub@ ; `string'
-PUBLIC	??_C@_0CI@EODFAHAD@d?3?1ymir?5work?1ui?1minimap?1GuildAr@ ; `string'
+PUBLIC	??_C@_0BB@KFCGGOBN@minimap?1star?4tga@		; `string'
 PUBLIC	??_C@_0BN@MHOOKNLA@?$CFsminimap?1targetmark?$CF02d?4sub@ ; `string'
-PUBLIC	??_C@_0DJ@IGENJIBL@?5CPythonMiniMap?3?3__LoadAtlasMar@ ; `string'
+PUBLIC	??_C@_0BL@CILDCNBH@?$CFsminimap?1waypoint?$CF02d?4sub@ ; `string'
 PUBLIC	??_C@_0BP@BKFPNPKI@locale?1common?1map?1?$CFs_point?4txt@ ; `string'
-PUBLIC	??_C@_0N@KOLJCEFK@?$CFs?1atlas?4sub@		; `string'
+PUBLIC	??_C@_0CI@EODFAHAD@d?3?1ymir?5work?1ui?1minimap?1GuildAr@ ; `string'
 PUBLIC	??_C@_0CH@JMBNEHDO@d?3?1ymir?5work?1ui?1minimap?1playerm@ ; `string'
-PUBLIC	??_C@_0BB@MMPFNHIC@empty_guild_area@		; `string'
+PUBLIC	??_C@_0DJ@IGENJIBL@?5CPythonMiniMap?3?3__LoadAtlasMar@ ; `string'
 PUBLIC	??_C@_0CD@LPCJKMM@d?3?1ymir?5work?1ui?1atlas?1?$CFs?1atlas?4@ ; `string'
-PUBLIC	??_C@_0CM@FEJKJGNF@d?3?1ymir?5work?1ui?1minimap?1playerp@ ; `string'
+PUBLIC	??_C@_0N@KOLJCEFK@?$CFs?1atlas?4sub@		; `string'
 PUBLIC	??_C@_0BI@DPOECPOI@SetCenterPositionAdjust@	; `string'
+PUBLIC	??_C@_0BB@MMPFNHIC@empty_guild_area@		; `string'
 PUBLIC	??_C@_0DK@DPEMBCDB@?5CPythonMiniMap?3?3AddPartyPositi@ ; `string'
+PUBLIC	??_C@_0CM@FEJKJGNF@d?3?1ymir?5work?1ui?1minimap?1playerp@ ; `string'
 PUBLIC	??_R2?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8 ; std::_Ref_count<CPythonMiniMap::SPartyPlayerPosition>::`RTTI Base Class Array'
-PUBLIC	??_R2?$CSingleton@VCPythonMiniMap@@@@8		; CSingleton<CPythonMiniMap>::`RTTI Base Class Array'
 PUBLIC	??_R2CPythonMiniMap@@8				; CPythonMiniMap::`RTTI Base Class Array'
+PUBLIC	??_R2?$CSingleton@VCPythonMiniMap@@@@8		; CSingleton<CPythonMiniMap>::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8 ; std::_Ref_count<CPythonMiniMap::SPartyPlayerPosition>::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R1A@?0A@EA@CPythonMiniMap@@8			; CPythonMiniMap::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R13?0A@EA@?$CSingleton@VCPythonMiniMap@@@@8	; CSingleton<CPythonMiniMap>::`RTTI Base Class Descriptor at (4,-1,0,64)'
 PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonMiniMap@@@@8	; CSingleton<CPythonMiniMap>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R1A@?0A@EA@CPythonMiniMap@@8			; CPythonMiniMap::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R0?AV?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@@8 ; std::_Ref_count<CPythonMiniMap::SPartyPlayerPosition> `RTTI Type Descriptor'
 PUBLIC	??_R3?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8 ; std::_Ref_count<CPythonMiniMap::SPartyPlayerPosition>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AV?$CSingleton@VCPythonMiniMap@@@@@8	; CSingleton<CPythonMiniMap> `RTTI Type Descriptor'
+PUBLIC	??_R0?AV?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@@8 ; std::_Ref_count<CPythonMiniMap::SPartyPlayerPosition> `RTTI Type Descriptor'
 PUBLIC	??_R3?$CSingleton@VCPythonMiniMap@@@@8		; CSingleton<CPythonMiniMap>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AVCPythonMiniMap@@@8			; CPythonMiniMap `RTTI Type Descriptor'
 PUBLIC	??_R3CPythonMiniMap@@8				; CPythonMiniMap::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R0?AV?$CSingleton@VCPythonMiniMap@@@@@8	; CSingleton<CPythonMiniMap> `RTTI Type Descriptor'
+PUBLIC	??_R0?AVCPythonMiniMap@@@8			; CPythonMiniMap `RTTI Type Descriptor'
 PUBLIC	??_R4?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@6B@ ; std::_Ref_count<CPythonMiniMap::SPartyPlayerPosition>::`RTTI Complete Object Locator'
-PUBLIC	??_R4CPythonMiniMap@@6B?$CSingleton@VCPythonMiniMap@@@@@ ; CPythonMiniMap::`RTTI Complete Object Locator'
 PUBLIC	??_R4?$CSingleton@VCPythonMiniMap@@@@6B@	; CSingleton<CPythonMiniMap>::`RTTI Complete Object Locator'
 PUBLIC	??_R4CPythonMiniMap@@6BCScreen@@@		; CPythonMiniMap::`RTTI Complete Object Locator'
+PUBLIC	??_R4CPythonMiniMap@@6B?$CSingleton@VCPythonMiniMap@@@@@ ; CPythonMiniMap::`RTTI Complete Object Locator'
 PUBLIC	??_7?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@6B@ ; std::_Ref_count<CPythonMiniMap::SPartyPlayerPosition>::`vftable'
 PUBLIC	??_7?$CSingleton@VCPythonMiniMap@@@@6B@		; CSingleton<CPythonMiniMap>::`vftable'
-PUBLIC	??_7CPythonMiniMap@@6BCScreen@@@		; CPythonMiniMap::`vftable'
 PUBLIC	??_7CPythonMiniMap@@6B?$CSingleton@VCPythonMiniMap@@@@@ ; CPythonMiniMap::`vftable'
-PUBLIC	??_R0?AVCResource@@@8				; CResource `RTTI Type Descriptor'
+PUBLIC	??_7CPythonMiniMap@@6BCScreen@@@		; CPythonMiniMap::`vftable'
 PUBLIC	??_R0?AVCGraphicImage@@@8			; CGraphicImage `RTTI Type Descriptor'
+PUBLIC	??_R0?AVCResource@@@8				; CResource `RTTI Type Descriptor'
 PUBLIC	?_Min_buckets@?$_Hash@V?$_Umap_traits@KV?$shared_ptr@USPartyPlayerPosition@CPythonMiniMap@@@std@@V?$_Uhash_compare@KU?$hash@K@std@@U?$equal_to@K@2@@2@V?$allocator@U?$pair@$$CBKV?$shared_ptr@USPartyPlayerPosition@CPythonMiniMap@@@std@@@std@@@2@$0A@@std@@@std@@2IB ; std::_Hash<std::_Umap_traits<unsigned long,std::shared_ptr<CPythonMiniMap::SPartyPlayerPosition>,std::_Uhash_compare<unsigned long,std::hash<unsigned long>,std::equal_to<unsigned long> >,std::allocator<std::pair<unsigned long const ,std::shared_ptr<CPythonMiniMap::SPartyPlayerPosition> > >,0> >::_Min_buckets
 EXTRN	??1CGraphicIndexBuffer@@UAE@XZ:PROC		; CGraphicIndexBuffer::~CGraphicIndexBuffer
 EXTRN	??0CGraphicIndexBuffer@@QAE@XZ:PROC		; CGraphicIndexBuffer::CGraphicIndexBuffer
 EXTRN	??0CGraphicExpandedImageInstance@@QAE@XZ:PROC	; CGraphicExpandedImageInstance::CGraphicExpandedImageInstance
-EXTRN	?Destroy@CGraphicIndexBuffer@@QAEXXZ:PROC	; CGraphicIndexBuffer::Destroy
 EXTRN	?Destroy@CGraphicVertexBuffer@@QAEXXZ:PROC	; CGraphicVertexBuffer::Destroy
-EXTRN	?IsEmpty@CResource@@QBE_NXZ:PROC		; CResource::IsEmpty
-EXTRN	?Destroy@CGraphicImageInstance@@QAEXXZ:PROC	; CGraphicImageInstance::Destroy
+EXTRN	?Destroy@CGraphicIndexBuffer@@QAEXXZ:PROC	; CGraphicIndexBuffer::Destroy
 EXTRN	?SetScale@CGraphicImageInstance@@QAEXMM@Z:PROC	; CGraphicImageInstance::SetScale
 EXTRN	?LoadMultipleTextData@@YA_NPBDAAV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@2@@std@@@2@@std@@@Z:PROC ; LoadMultipleTextData
-EXTRN	?Create@CGraphicIndexBuffer@@QAE_NHW4_D3DFORMAT@@@Z:PROC ; CGraphicIndexBuffer::Create
-EXTRN	?Unlock@CGraphicVertexBuffer@@QAE_NXZ:PROC	; CGraphicVertexBuffer::Unlock
+EXTRN	?IsEmpty@CResource@@QBE_NXZ:PROC		; CResource::IsEmpty
+EXTRN	?Destroy@CGraphicImageInstance@@QAEXXZ:PROC	; CGraphicImageInstance::Destroy
 EXTRN	?Unlock@CGraphicIndexBuffer@@QAEXXZ:PROC	; CGraphicIndexBuffer::Unlock
 EXTRN	?Lock@CGraphicIndexBuffer@@QAE_NPAPAX@Z:PROC	; CGraphicIndexBuffer::Lock
+EXTRN	?Create@CGraphicIndexBuffer@@QAE_NHW4_D3DFORMAT@@@Z:PROC ; CGraphicIndexBuffer::Create
+EXTRN	?Unlock@CGraphicVertexBuffer@@QAE_NXZ:PROC	; CGraphicVertexBuffer::Unlock
 EXTRN	?SetRenderingMode@CGraphicExpandedImageInstance@@QAEXH@Z:PROC ; CGraphicExpandedImageInstance::SetRenderingMode
 EXTRN	?GetWidth@CGraphicImage@@QBEHXZ:PROC		; CGraphicImage::GetWidth
-EXTRN	?RenderMiniMapFilter@CScreen@@QAEXMMMMHMMABUD3DXVECTOR3@@@Z:PROC ; CScreen::RenderMiniMapFilter
-EXTRN	?SetDiffuseColor@CGraphicImageInstance@@QAEXMMMM@Z:PROC ; CGraphicImageInstance::SetDiffuseColor
-EXTRN	?SetScale@CGraphicExpandedImageInstance@@QAEXMM@Z:PROC ; CGraphicExpandedImageInstance::SetScale
 EXTRN	?SetDiffuseColor@CScreen@@QAEXK@Z:PROC		; CScreen::SetDiffuseColor
 EXTRN	?SetRotation@CGraphicExpandedImageInstance@@QAEXM@Z:PROC ; CGraphicExpandedImageInstance::SetRotation
-EXTRN	?Render@CGraphicImageInstance@@QAEXPAUtagRECT@@@Z:PROC ; CGraphicImageInstance::Render
+EXTRN	?RenderMiniMapFilter@CScreen@@QAEXMMMMHMMABUD3DXVECTOR3@@@Z:PROC ; CScreen::RenderMiniMapFilter
 EXTRN	?IsEmpty@CGraphicImageInstance@@QBE_NXZ:PROC	; CGraphicImageInstance::IsEmpty
-EXTRN	?DrawIndexedPrimitive@CStateManager@@QAEJW4_D3DPRIMITIVETYPE@@IIII@Z:PROC ; CStateManager::DrawIndexedPrimitive
-EXTRN	?GetD3DIndexBuffer@CGraphicIndexBuffer@@QBEPAUIDirect3DIndexBuffer8@@XZ:PROC ; CGraphicIndexBuffer::GetD3DIndexBuffer
+EXTRN	?SetDiffuseColor@CGraphicImageInstance@@QAEXMMMM@Z:PROC ; CGraphicImageInstance::SetDiffuseColor
+EXTRN	?SetScale@CGraphicExpandedImageInstance@@QAEXMM@Z:PROC ; CGraphicExpandedImageInstance::SetScale
 EXTRN	?SetPosition@CGraphicImageInstance@@QAEXMM@Z:PROC ; CGraphicImageInstance::SetPosition
 EXTRN	?RestoreTextureStageState@CStateManager@@QAEXKW4_D3DTEXTURESTAGESTATETYPE@@@Z:PROC ; CStateManager::RestoreTextureStageState
-EXTRN	?SetStreamSource@CStateManager@@QAEXIPAUIDirect3DVertexBuffer8@@I@Z:PROC ; CStateManager::SetStreamSource
+EXTRN	?Render@CGraphicImageInstance@@QAEXPAUtagRECT@@@Z:PROC ; CGraphicImageInstance::Render
 EXTRN	?SetIndices@CStateManager@@QAEXPAUIDirect3DIndexBuffer8@@I@Z:PROC ; CStateManager::SetIndices
-EXTRN	?SaveTextureStageState@CStateManager@@QAEXKW4_D3DTEXTURESTAGESTATETYPE@@K@Z:PROC ; CStateManager::SaveTextureStageState
+EXTRN	?DrawIndexedPrimitive@CStateManager@@QAEJW4_D3DPRIMITIVETYPE@@IIII@Z:PROC ; CStateManager::DrawIndexedPrimitive
+EXTRN	?GetD3DIndexBuffer@CGraphicIndexBuffer@@QBEPAUIDirect3DIndexBuffer8@@XZ:PROC ; CGraphicIndexBuffer::GetD3DIndexBuffer
 EXTRN	?SetVertexShader@CStateManager@@QAEXK@Z:PROC	; CStateManager::SetVertexShader
 EXTRN	?GetTexturePointer@CGraphicImageInstance@@QAEPAVCGraphicTexture@@XZ:PROC ; CGraphicImageInstance::GetTexturePointer
-EXTRN	?GetHeight@CGraphicImageInstance@@QAEHXZ:PROC	; CGraphicImageInstance::GetHeight
-EXTRN	?GetWidth@CGraphicImageInstance@@QAEHXZ:PROC	; CGraphicImageInstance::GetWidth
+EXTRN	?SetStreamSource@CStateManager@@QAEXIPAUIDirect3DVertexBuffer8@@I@Z:PROC ; CStateManager::SetStreamSource
+EXTRN	?SaveTextureStageState@CStateManager@@QAEXKW4_D3DTEXTURESTAGESTATETYPE@@K@Z:PROC ; CStateManager::SaveTextureStageState
 EXTRN	?GetLinearInterpolation@@YAMMMM@Z:PROC		; GetLinearInterpolation
 EXTRN	?IsMapOutdoor@CMapManager@@QAE_NXZ:PROC		; CMapManager::IsMapOutdoor
+EXTRN	?GetHeight@CGraphicImageInstance@@QAEHXZ:PROC	; CGraphicImageInstance::GetHeight
+EXTRN	?GetWidth@CGraphicImageInstance@@QAEHXZ:PROC	; CGraphicImageInstance::GetWidth
 EXTRN	?GetTerrainPointer@CMapOutdoor@@QAEHEPAPAVCTerrain@@@Z:PROC ; CMapOutdoor::GetTerrainPointer
 EXTRN	?Destroy@CGraphicExpandedImageInstance@@QAEXXZ:PROC ; CGraphicExpandedImageInstance::Destroy
 EXTRN	??1CGraphicExpandedImageInstance@@UAE@XZ:PROC	; CGraphicExpandedImageInstance::~CGraphicExpandedImageInstance
-EXTRN	??0CGraphicVertexBuffer@@QAE@XZ:PROC		; CGraphicVertexBuffer::CGraphicVertexBuffer
 EXTRN	??1CGraphicVertexBuffer@@UAE@XZ:PROC		; CGraphicVertexBuffer::~CGraphicVertexBuffer
+EXTRN	??0CGraphicVertexBuffer@@QAE@XZ:PROC		; CGraphicVertexBuffer::CGraphicVertexBuffer
 EXTRN	??1CGraphicImageInstance@@UAE@XZ:PROC		; CGraphicImageInstance::~CGraphicImageInstance
 EXTRN	??0CGraphicImageInstance@@QAE@XZ:PROC		; CGraphicImageInstance::CGraphicImageInstance
 ;	COMDAT ?_Min_buckets@?$_Hash@V?$_Umap_traits@KV?$shared_ptr@USPartyPlayerPosition@CPythonMiniMap@@@std@@V?$_Uhash_compare@KU?$hash@K@std@@U?$equal_to@K@2@@2@V?$allocator@U?$pair@$$CBKV?$shared_ptr@USPartyPlayerPosition@CPythonMiniMap@@@std@@@std@@@2@$0A@@std@@@std@@2IB
@@ -103,31 +103,31 @@ CONST	ENDS
 _DATA	SEGMENT
 ?g_id@?1??AddSignalPoint@CPythonMiniMap@@QAEXMM@Z@4IA DD 0ffH ; `CPythonMiniMap::AddSignalPoint'::`2'::g_id
 _DATA	ENDS
-;	COMDAT ??_R0?AVCGraphicImage@@@8
-data$r	SEGMENT
-??_R0?AVCGraphicImage@@@8 DD FLAT:??_7type_info@@6B@	; CGraphicImage `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCGraphicImage@@', 00H
-data$r	ENDS
-;	COMDAT ?playerPartyMarkFileName@?4??AddPartyPositionInfo@CPythonMiniMap@@QAEXABUTPartyPosition@@@Z@4PBDB
-CONST	SEGMENT
-?playerPartyMarkFileName@?4??AddPartyPositionInfo@CPythonMiniMap@@QAEXABUTPartyPosition@@@Z@4PBDB DD FLAT:??_C@_0CM@FEJKJGNF@d?3?1ymir?5work?1ui?1minimap?1playerp@ ; `CPythonMiniMap::AddPartyPositionInfo'::`5'::playerPartyMarkFileName
-CONST	ENDS
 ;	COMDAT ??_R0?AVCResource@@@8
 data$r	SEGMENT
 ??_R0?AVCResource@@@8 DD FLAT:??_7type_info@@6B@	; CResource `RTTI Type Descriptor'
 	DD	00H
 	DB	'.?AVCResource@@', 00H
 data$r	ENDS
-;	COMDAT ??_7CPythonMiniMap@@6B?$CSingleton@VCPythonMiniMap@@@@@
-CONST	SEGMENT
-??_7CPythonMiniMap@@6B?$CSingleton@VCPythonMiniMap@@@@@ DD FLAT:??_R4CPythonMiniMap@@6B?$CSingleton@VCPythonMiniMap@@@@@ ; CPythonMiniMap::`vftable'
-	DD	FLAT:??_ECPythonMiniMap@@W3AEPAXI@Z
-CONST	ENDS
+;	COMDAT ??_R0?AVCGraphicImage@@@8
+data$r	SEGMENT
+??_R0?AVCGraphicImage@@@8 DD FLAT:??_7type_info@@6B@	; CGraphicImage `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCGraphicImage@@', 00H
+data$r	ENDS
 ;	COMDAT ??_7CPythonMiniMap@@6BCScreen@@@
 CONST	SEGMENT
 ??_7CPythonMiniMap@@6BCScreen@@@ DD FLAT:??_R4CPythonMiniMap@@6BCScreen@@@ ; CPythonMiniMap::`vftable'
 	DD	FLAT:??_ECPythonMiniMap@@UAEPAXI@Z
+CONST	ENDS
+;	COMDAT ?playerPartyMarkFileName@?4??AddPartyPositionInfo@CPythonMiniMap@@QAEXABUTPartyPosition@@@Z@4PBDB
+CONST	SEGMENT
+?playerPartyMarkFileName@?4??AddPartyPositionInfo@CPythonMiniMap@@QAEXABUTPartyPosition@@@Z@4PBDB DD FLAT:??_C@_0CM@FEJKJGNF@d?3?1ymir?5work?1ui?1minimap?1playerp@ ; `CPythonMiniMap::AddPartyPositionInfo'::`5'::playerPartyMarkFileName
+CONST	ENDS
+;	COMDAT ??_7CPythonMiniMap@@6B?$CSingleton@VCPythonMiniMap@@@@@
+CONST	SEGMENT
+??_7CPythonMiniMap@@6B?$CSingleton@VCPythonMiniMap@@@@@ DD FLAT:??_R4CPythonMiniMap@@6B?$CSingleton@VCPythonMiniMap@@@@@ ; CPythonMiniMap::`vftable'
+	DD	FLAT:??_ECPythonMiniMap@@W3AEPAXI@Z
 CONST	ENDS
 ;	COMDAT ??_7?$CSingleton@VCPythonMiniMap@@@@6B@
 CONST	SEGMENT
@@ -142,6 +142,14 @@ CONST	SEGMENT
 	DD	FLAT:??_E?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@UAEPAXI@Z
 	DD	FLAT:?_Get_deleter@_Ref_count_base@std@@UBEPAXABVtype_info@@@Z
 CONST	ENDS
+;	COMDAT ??_R4CPythonMiniMap@@6B?$CSingleton@VCPythonMiniMap@@@@@
+rdata$r	SEGMENT
+??_R4CPythonMiniMap@@6B?$CSingleton@VCPythonMiniMap@@@@@ DD 00H ; CPythonMiniMap::`RTTI Complete Object Locator'
+	DD	04H
+	DD	00H
+	DD	FLAT:??_R0?AVCPythonMiniMap@@@8
+	DD	FLAT:??_R3CPythonMiniMap@@8
+rdata$r	ENDS
 ;	COMDAT ??_R4CPythonMiniMap@@6BCScreen@@@
 rdata$r	SEGMENT
 ??_R4CPythonMiniMap@@6BCScreen@@@ DD 00H		; CPythonMiniMap::`RTTI Complete Object Locator'
@@ -158,14 +166,6 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$CSingleton@VCPythonMiniMap@@@@@8
 	DD	FLAT:??_R3?$CSingleton@VCPythonMiniMap@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R4CPythonMiniMap@@6B?$CSingleton@VCPythonMiniMap@@@@@
-rdata$r	SEGMENT
-??_R4CPythonMiniMap@@6B?$CSingleton@VCPythonMiniMap@@@@@ DD 00H ; CPythonMiniMap::`RTTI Complete Object Locator'
-	DD	04H
-	DD	00H
-	DD	FLAT:??_R0?AVCPythonMiniMap@@@8
-	DD	FLAT:??_R3CPythonMiniMap@@8
-rdata$r	ENDS
 ;	COMDAT ??_R4?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@6B@
 rdata$r	SEGMENT
 ??_R4?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@6B@ DD 00H ; std::_Ref_count<CPythonMiniMap::SPartyPlayerPosition>::`RTTI Complete Object Locator'
@@ -174,6 +174,18 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@@8
 	DD	FLAT:??_R3?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8
 rdata$r	ENDS
+;	COMDAT ??_R0?AVCPythonMiniMap@@@8
+data$rs	SEGMENT
+??_R0?AVCPythonMiniMap@@@8 DD FLAT:??_7type_info@@6B@	; CPythonMiniMap `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCPythonMiniMap@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCPythonMiniMap@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCPythonMiniMap@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonMiniMap> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCPythonMiniMap@@@@', 00H
+data$rs	ENDS
 ;	COMDAT ??_R3CPythonMiniMap@@8
 rdata$r	SEGMENT
 ??_R3CPythonMiniMap@@8 DD 00H				; CPythonMiniMap::`RTTI Class Hierarchy Descriptor'
@@ -181,31 +193,12 @@ rdata$r	SEGMENT
 	DD	05H
 	DD	FLAT:??_R2CPythonMiniMap@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonMiniMap@@@8
-data$rs	SEGMENT
-??_R0?AVCPythonMiniMap@@@8 DD FLAT:??_7type_info@@6B@	; CPythonMiniMap `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCPythonMiniMap@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R3?$CSingleton@VCPythonMiniMap@@@@8
 rdata$r	SEGMENT
 ??_R3?$CSingleton@VCPythonMiniMap@@@@8 DD 00H		; CSingleton<CPythonMiniMap>::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	01H
 	DD	FLAT:??_R2?$CSingleton@VCPythonMiniMap@@@@8
-rdata$r	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCPythonMiniMap@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCPythonMiniMap@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonMiniMap> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AV?$CSingleton@VCPythonMiniMap@@@@', 00H
-data$rs	ENDS
-;	COMDAT ??_R3?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8
-rdata$r	SEGMENT
-??_R3?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8 DD 00H ; std::_Ref_count<CPythonMiniMap::SPartyPlayerPosition>::`RTTI Class Hierarchy Descriptor'
-	DD	00H
-	DD	02H
-	DD	FLAT:??_R2?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8
 rdata$r	ENDS
 ;	COMDAT ??_R0?AV?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@@8
 data$rs	SEGMENT
@@ -214,15 +207,12 @@ data$rs	SEGMENT
 	DB	'.?AV?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@'
 	DB	'std@@', 00H
 data$rs	ENDS
-;	COMDAT ??_R1A@?0A@EA@CPythonMiniMap@@8
+;	COMDAT ??_R3?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8
 rdata$r	SEGMENT
-??_R1A@?0A@EA@CPythonMiniMap@@8 DD FLAT:??_R0?AVCPythonMiniMap@@@8 ; CPythonMiniMap::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	04H
+??_R3?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8 DD 00H ; std::_Ref_count<CPythonMiniMap::SPartyPlayerPosition>::`RTTI Class Hierarchy Descriptor'
 	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3CPythonMiniMap@@8
+	DD	02H
+	DD	FLAT:??_R2?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonMiniMap@@@@8
 rdata$r	SEGMENT
@@ -244,6 +234,16 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$CSingleton@VCPythonMiniMap@@@@8
 rdata$r	ENDS
+;	COMDAT ??_R1A@?0A@EA@CPythonMiniMap@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@CPythonMiniMap@@8 DD FLAT:??_R0?AVCPythonMiniMap@@@8 ; CPythonMiniMap::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	04H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3CPythonMiniMap@@8
+rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8
 rdata$r	SEGMENT
 ??_R1A@?0A@EA@?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8 DD FLAT:??_R0?AV?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@@8 ; std::_Ref_count<CPythonMiniMap::SPartyPlayerPosition>::`RTTI Base Class Descriptor at (0,-1,0,64)'
@@ -254,6 +254,10 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8
 rdata$r	ENDS
+;	COMDAT ??_R2?$CSingleton@VCPythonMiniMap@@@@8
+rdata$r	SEGMENT
+??_R2?$CSingleton@VCPythonMiniMap@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonMiniMap@@@@8 ; CSingleton<CPythonMiniMap>::`RTTI Base Class Array'
+rdata$r	ENDS
 ;	COMDAT ??_R2CPythonMiniMap@@8
 rdata$r	SEGMENT
 ??_R2CPythonMiniMap@@8 DD FLAT:??_R1A@?0A@EA@CPythonMiniMap@@8 ; CPythonMiniMap::`RTTI Base Class Array'
@@ -262,110 +266,106 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R1A@?0A@EA@CGraphicBase@@8
 	DD	FLAT:??_R13?0A@EA@?$CSingleton@VCPythonMiniMap@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R2?$CSingleton@VCPythonMiniMap@@@@8
-rdata$r	SEGMENT
-??_R2?$CSingleton@VCPythonMiniMap@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonMiniMap@@@@8 ; CSingleton<CPythonMiniMap>::`RTTI Base Class Array'
-rdata$r	ENDS
 ;	COMDAT ??_R2?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8
 rdata$r	SEGMENT
 ??_R2?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8 DD FLAT:??_R1A@?0A@EA@?$_Ref_count@USPartyPlayerPosition@CPythonMiniMap@@@std@@8 ; std::_Ref_count<CPythonMiniMap::SPartyPlayerPosition>::`RTTI Base Class Array'
 	DD	FLAT:??_R1A@?0A@EA@_Ref_count_base@std@@8
 rdata$r	ENDS
+;	COMDAT ??_C@_0CM@FEJKJGNF@d?3?1ymir?5work?1ui?1minimap?1playerp@
+CONST	SEGMENT
+??_C@_0CM@FEJKJGNF@d?3?1ymir?5work?1ui?1minimap?1playerp@ DB 'd:/ymir wor'
+	DB	'k/ui/minimap/playerpartymark.tga', 00H	; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0DK@DPEMBCDB@?5CPythonMiniMap?3?3AddPartyPositi@
 CONST	SEGMENT
 ??_C@_0DK@DPEMBCDB@?5CPythonMiniMap?3?3AddPartyPositi@ DB ' CPythonMiniMa'
 	DB	'p::AddPartyPositionInfo File Load %s ERROR', 0aH, 00H ; `string'
 CONST	ENDS
+;	COMDAT ??_C@_0BB@MMPFNHIC@empty_guild_area@
+CONST	SEGMENT
+??_C@_0BB@MMPFNHIC@empty_guild_area@ DB 'empty_guild_area', 00H ; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0BI@DPOECPOI@SetCenterPositionAdjust@
 CONST	SEGMENT
 ??_C@_0BI@DPOECPOI@SetCenterPositionAdjust@ DB 'SetCenterPositionAdjust', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CM@FEJKJGNF@d?3?1ymir?5work?1ui?1minimap?1playerp@
+;	COMDAT ??_C@_0N@KOLJCEFK@?$CFs?1atlas?4sub@
 CONST	SEGMENT
-??_C@_0CM@FEJKJGNF@d?3?1ymir?5work?1ui?1minimap?1playerp@ DB 'd:/ymir wor'
-	DB	'k/ui/minimap/playerpartymark.tga', 00H	; `string'
+??_C@_0N@KOLJCEFK@?$CFs?1atlas?4sub@ DB '%s/atlas.sub', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CD@LPCJKMM@d?3?1ymir?5work?1ui?1atlas?1?$CFs?1atlas?4@
 CONST	SEGMENT
 ??_C@_0CD@LPCJKMM@d?3?1ymir?5work?1ui?1atlas?1?$CFs?1atlas?4@ DB 'd:/ymir'
 	DB	' work/ui/atlas/%s/atlas.sub', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@MMPFNHIC@empty_guild_area@
+;	COMDAT ??_C@_0DJ@IGENJIBL@?5CPythonMiniMap?3?3__LoadAtlasMar@
 CONST	SEGMENT
-??_C@_0BB@MMPFNHIC@empty_guild_area@ DB 'empty_guild_area', 00H ; `string'
+??_C@_0DJ@IGENJIBL@?5CPythonMiniMap?3?3__LoadAtlasMar@ DB ' CPythonMiniMa'
+	DB	'p::__LoadAtlasMarkInfo File Load %s ERROR', 0aH, 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CH@JMBNEHDO@d?3?1ymir?5work?1ui?1minimap?1playerm@
 CONST	SEGMENT
 ??_C@_0CH@JMBNEHDO@d?3?1ymir?5work?1ui?1minimap?1playerm@ DB 'd:/ymir wor'
 	DB	'k/ui/minimap/playermark.sub', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@KOLJCEFK@?$CFs?1atlas?4sub@
+;	COMDAT ??_C@_0CI@EODFAHAD@d?3?1ymir?5work?1ui?1minimap?1GuildAr@
 CONST	SEGMENT
-??_C@_0N@KOLJCEFK@?$CFs?1atlas?4sub@ DB '%s/atlas.sub', 00H ; `string'
+??_C@_0CI@EODFAHAD@d?3?1ymir?5work?1ui?1minimap?1GuildAr@ DB 'd:/ymir wor'
+	DB	'k/ui/minimap/GuildArea01.sub', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BP@BKFPNPKI@locale?1common?1map?1?$CFs_point?4txt@
 CONST	SEGMENT
 ??_C@_0BP@BKFPNPKI@locale?1common?1map?1?$CFs_point?4txt@ DB 'locale/comm'
 	DB	'on/map/%s_point.txt', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DJ@IGENJIBL@?5CPythonMiniMap?3?3__LoadAtlasMar@
+;	COMDAT ??_C@_0BL@CILDCNBH@?$CFsminimap?1waypoint?$CF02d?4sub@
 CONST	SEGMENT
-??_C@_0DJ@IGENJIBL@?5CPythonMiniMap?3?3__LoadAtlasMar@ DB ' CPythonMiniMa'
-	DB	'p::__LoadAtlasMarkInfo File Load %s ERROR', 0aH, 00H ; `string'
+??_C@_0BL@CILDCNBH@?$CFsminimap?1waypoint?$CF02d?4sub@ DB '%sminimap/wayp'
+	DB	'oint%02d.sub', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@MHOOKNLA@?$CFsminimap?1targetmark?$CF02d?4sub@
 CONST	SEGMENT
 ??_C@_0BN@MHOOKNLA@?$CFsminimap?1targetmark?$CF02d?4sub@ DB '%sminimap/ta'
 	DB	'rgetmark%02d.sub', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CI@EODFAHAD@d?3?1ymir?5work?1ui?1minimap?1GuildAr@
+;	COMDAT ??_C@_0BB@KFCGGOBN@minimap?1star?4tga@
 CONST	SEGMENT
-??_C@_0CI@EODFAHAD@d?3?1ymir?5work?1ui?1minimap?1GuildAr@ DB 'd:/ymir wor'
-	DB	'k/ui/minimap/GuildArea01.sub', 00H		; `string'
+??_C@_0BB@KFCGGOBN@minimap?1star?4tga@ DB 'minimap/star.tga', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@MEBBNPAF@?$CFsminimap?1mini_waypoint?$CF02d?4sub@
 CONST	SEGMENT
 ??_C@_0CA@MEBBNPAF@?$CFsminimap?1mini_waypoint?$CF02d?4sub@ DB '%sminimap'
 	DB	'/mini_waypoint%02d.sub', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@CILDCNBH@?$CFsminimap?1waypoint?$CF02d?4sub@
+;	COMDAT ??_C@_0BF@GEPACMNN@minimap?1bossmark?4tga@
 CONST	SEGMENT
-??_C@_0BL@CILDCNBH@?$CFsminimap?1waypoint?$CF02d?4sub@ DB '%sminimap/wayp'
-	DB	'oint%02d.sub', 00H				; `string'
+??_C@_0BF@GEPACMNN@minimap?1bossmark?4tga@ DB 'minimap/bossmark.tga', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@FFCJCGGB@minimap_range?4tga@
 CONST	SEGMENT
 ??_C@_0BC@FFCJCGGB@minimap_range?4tga@ DB 'minimap_range.tga', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@KFCGGOBN@minimap?1star?4tga@
+;	COMDAT ??_C@_0BH@IALDDMEN@minimap?1playermark?4sub@
 CONST	SEGMENT
-??_C@_0BB@KFCGGOBN@minimap?1star?4tga@ DB 'minimap/star.tga', 00H ; `string'
+??_C@_0BH@IALDDMEN@minimap?1playermark?4sub@ DB 'minimap/playermark.sub', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@GFJGCNLI@minimap?1whitemark_new?4tga@
 CONST	SEGMENT
 ??_C@_0BK@GFJGCNLI@minimap?1whitemark_new?4tga@ DB 'minimap/whitemark_new'
 	DB	'.tga', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@GEPACMNN@minimap?1bossmark?4tga@
+;	COMDAT ??_C@_0BJ@NLDABMC@minimap_image_filter?4dds@
 CONST	SEGMENT
-??_C@_0BF@GEPACMNN@minimap?1bossmark?4tga@ DB 'minimap/bossmark.tga', 00H ; `string'
+??_C@_0BJ@NLDABMC@minimap_image_filter?4dds@ DB 'minimap_image_filter.dds'
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@BAIINCPI@minimap_camera?4dds@
 CONST	SEGMENT
 ??_C@_0BD@BAIINCPI@minimap_camera?4dds@ DB 'minimap_camera.dds', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@IALDDMEN@minimap?1playermark?4sub@
-CONST	SEGMENT
-??_C@_0BH@IALDDMEN@minimap?1playermark?4sub@ DB 'minimap/playermark.sub', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BB@FOBBAEMC@D?3?1ymir?5work?1ui?1@
 CONST	SEGMENT
 ??_C@_0BB@FOBBAEMC@D?3?1ymir?5work?1ui?1@ DB 'D:/ymir work/ui/', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BJ@NLDABMC@minimap_image_filter?4dds@
-CONST	SEGMENT
-??_C@_0BJ@NLDABMC@minimap_image_filter?4dds@ DB 'minimap_image_filter.dds'
-	DB	00H						; `string'
 PUBLIC	_asinf
 PUBLIC	?GetD3DVertexBuffer@CGraphicVertexBuffer@@QBEPAUIDirect3DVertexBuffer8@@XZ ; CGraphicVertexBuffer::GetD3DVertexBuffer
 PUBLIC	?D3DXColorModulate@@YAPAUD3DXCOLOR@@PAU1@PBU1@1@Z ; D3DXColorModulate

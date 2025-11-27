@@ -8,27 +8,27 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0CB@KNIDBLNN@Failed?5to?5find?5quest?5by?5index?5?$CF@ ; `string'
-PUBLIC	??_C@_0BF@OENOJEH@icon?1scroll_open?4tga@	; `string'
 PUBLIC	??_C@_0CG@FJJGJNND@d?3?1ymir?5work?1ui?1game?1quest?1ques@ ; `string'
-PUBLIC	??_C@_0CD@DHNDOAPK@Quest?5with?5index?5?$CFd?5already?5exi@ ; `string'
+PUBLIC	??_C@_0CB@KNIDBLNN@Failed?5to?5find?5quest?5by?5index?5?$CF@ ; `string'
 PUBLIC	??_C@_06MBIPPNIK@isiisi@			; `string'
-PUBLIC	??_C@_0N@PGFCKADA@GetQuestData@			; `string'
+PUBLIC	??_C@_0BF@OENOJEH@icon?1scroll_open?4tga@	; `string'
 PUBLIC	??_C@_0O@HMKJHAHP@GetQuestCount@		; `string'
-PUBLIC	??_C@_0BB@LFMNEJD@GetQuestLastTime@		; `string'
+PUBLIC	??_C@_0CD@DHNDOAPK@Quest?5with?5index?5?$CFd?5already?5exi@ ; `string'
 PUBLIC	??_C@_0O@KIBHOKLO@GetQuestIndex@		; `string'
-PUBLIC	??_C@_0O@IKHMHCIN@QUEST_MAX_NUM@		; `string'
+PUBLIC	??_C@_0N@PGFCKADA@GetQuestData@			; `string'
 PUBLIC	??_C@_05KOGNICEN@quest@				; `string'
+PUBLIC	??_C@_0BB@LFMNEJD@GetQuestLastTime@		; `string'
 PUBLIC	??_C@_0BH@LHJHNOKA@QUEST_CATEGORY_MAX_NUM@	; `string'
-PUBLIC	??_R2CPythonQuest@@8				; CPythonQuest::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@CPythonQuest@@8			; CPythonQuest::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_C@_0O@IKHMHCIN@QUEST_MAX_NUM@		; `string'
 PUBLIC	??_R2?$CSingleton@VCPythonQuest@@@@8		; CSingleton<CPythonQuest>::`RTTI Base Class Array'
-PUBLIC	??_R3?$CSingleton@VCPythonQuest@@@@8		; CSingleton<CPythonQuest>::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2CPythonQuest@@8				; CPythonQuest::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonQuest@@@@8	; CSingleton<CPythonQuest>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R3CPythonQuest@@8				; CPythonQuest::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R1A@?0A@EA@CPythonQuest@@8			; CPythonQuest::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R0?AV?$CSingleton@VCPythonQuest@@@@@8	; CSingleton<CPythonQuest> `RTTI Type Descriptor'
-PUBLIC	??_R4?$CSingleton@VCPythonQuest@@@@6B@		; CSingleton<CPythonQuest>::`RTTI Complete Object Locator'
+PUBLIC	??_R3?$CSingleton@VCPythonQuest@@@@8		; CSingleton<CPythonQuest>::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R0?AVCPythonQuest@@@8			; CPythonQuest `RTTI Type Descriptor'
+PUBLIC	??_R3CPythonQuest@@8				; CPythonQuest::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R4?$CSingleton@VCPythonQuest@@@@6B@		; CSingleton<CPythonQuest>::`RTTI Complete Object Locator'
 PUBLIC	??_R4CPythonQuest@@6B@				; CPythonQuest::`RTTI Complete Object Locator'
 PUBLIC	??_7?$CSingleton@VCPythonQuest@@@@6B@		; CSingleton<CPythonQuest>::`vftable'
 PUBLIC	??_7CPythonQuest@@6B@				; CPythonQuest::`vftable'
@@ -36,6 +36,11 @@ PUBLIC	??_7CPythonQuest@@6B@				; CPythonQuest::`vftable'
 CONST	SEGMENT
 ??_7CPythonQuest@@6B@ DD FLAT:??_R4CPythonQuest@@6B@	; CPythonQuest::`vftable'
 	DD	FLAT:??_ECPythonQuest@@UAEPAXI@Z
+CONST	ENDS
+;	COMDAT ??_7?$CSingleton@VCPythonQuest@@@@6B@
+CONST	SEGMENT
+??_7?$CSingleton@VCPythonQuest@@@@6B@ DD FLAT:??_R4?$CSingleton@VCPythonQuest@@@@6B@ ; CSingleton<CPythonQuest>::`vftable'
+	DD	FLAT:??_E?$CSingleton@VCPythonQuest@@@@UAEPAXI@Z
 CONST	ENDS
 ;	COMDAT ?s_methods@?1??initquest@@YAXXZ@4PAUPyMethodDef@@A
 _DATA	SEGMENT
@@ -67,11 +72,6 @@ _DATA	SEGMENT
 	DD	00H
 	ORG $+8
 _DATA	ENDS
-;	COMDAT ??_7?$CSingleton@VCPythonQuest@@@@6B@
-CONST	SEGMENT
-??_7?$CSingleton@VCPythonQuest@@@@6B@ DD FLAT:??_R4?$CSingleton@VCPythonQuest@@@@6B@ ; CSingleton<CPythonQuest>::`vftable'
-	DD	FLAT:??_E?$CSingleton@VCPythonQuest@@@@UAEPAXI@Z
-CONST	ENDS
 ;	COMDAT ??_R4CPythonQuest@@6B@
 rdata$r	SEGMENT
 ??_R4CPythonQuest@@6B@ DD 00H				; CPythonQuest::`RTTI Complete Object Locator'
@@ -80,12 +80,6 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AVCPythonQuest@@@8
 	DD	FLAT:??_R3CPythonQuest@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonQuest@@@8
-data$rs	SEGMENT
-??_R0?AVCPythonQuest@@@8 DD FLAT:??_7type_info@@6B@	; CPythonQuest `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCPythonQuest@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R4?$CSingleton@VCPythonQuest@@@@6B@
 rdata$r	SEGMENT
 ??_R4?$CSingleton@VCPythonQuest@@@@6B@ DD 00H		; CSingleton<CPythonQuest>::`RTTI Complete Object Locator'
@@ -94,18 +88,41 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$CSingleton@VCPythonQuest@@@@@8
 	DD	FLAT:??_R3?$CSingleton@VCPythonQuest@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCPythonQuest@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCPythonQuest@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonQuest> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AV?$CSingleton@VCPythonQuest@@@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R3CPythonQuest@@8
 rdata$r	SEGMENT
 ??_R3CPythonQuest@@8 DD 00H				; CPythonQuest::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	02H
 	DD	FLAT:??_R2CPythonQuest@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AVCPythonQuest@@@8
+data$rs	SEGMENT
+??_R0?AVCPythonQuest@@@8 DD FLAT:??_7type_info@@6B@	; CPythonQuest `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCPythonQuest@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R3?$CSingleton@VCPythonQuest@@@@8
+rdata$r	SEGMENT
+??_R3?$CSingleton@VCPythonQuest@@@@8 DD 00H		; CSingleton<CPythonQuest>::`RTTI Class Hierarchy Descriptor'
+	DD	00H
+	DD	01H
+	DD	FLAT:??_R2?$CSingleton@VCPythonQuest@@@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCPythonQuest@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCPythonQuest@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonQuest> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCPythonQuest@@@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R1A@?0A@EA@CPythonQuest@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@CPythonQuest@@8 DD FLAT:??_R0?AVCPythonQuest@@@8 ; CPythonQuest::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3CPythonQuest@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonQuest@@@@8
 rdata$r	SEGMENT
@@ -117,82 +134,65 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$CSingleton@VCPythonQuest@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R3?$CSingleton@VCPythonQuest@@@@8
-rdata$r	SEGMENT
-??_R3?$CSingleton@VCPythonQuest@@@@8 DD 00H		; CSingleton<CPythonQuest>::`RTTI Class Hierarchy Descriptor'
-	DD	00H
-	DD	01H
-	DD	FLAT:??_R2?$CSingleton@VCPythonQuest@@@@8
-rdata$r	ENDS
-;	COMDAT ??_R2?$CSingleton@VCPythonQuest@@@@8
-rdata$r	SEGMENT
-??_R2?$CSingleton@VCPythonQuest@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonQuest@@@@8 ; CSingleton<CPythonQuest>::`RTTI Base Class Array'
-rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@CPythonQuest@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@CPythonQuest@@8 DD FLAT:??_R0?AVCPythonQuest@@@8 ; CPythonQuest::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	01H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3CPythonQuest@@8
-rdata$r	ENDS
 ;	COMDAT ??_R2CPythonQuest@@8
 rdata$r	SEGMENT
 ??_R2CPythonQuest@@8 DD FLAT:??_R1A@?0A@EA@CPythonQuest@@8 ; CPythonQuest::`RTTI Base Class Array'
 	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonQuest@@@@8
 rdata$r	ENDS
-;	COMDAT ??_C@_0BH@LHJHNOKA@QUEST_CATEGORY_MAX_NUM@
-CONST	SEGMENT
-??_C@_0BH@LHJHNOKA@QUEST_CATEGORY_MAX_NUM@ DB 'QUEST_CATEGORY_MAX_NUM', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_05KOGNICEN@quest@
-CONST	SEGMENT
-??_C@_05KOGNICEN@quest@ DB 'quest', 00H			; `string'
-CONST	ENDS
+;	COMDAT ??_R2?$CSingleton@VCPythonQuest@@@@8
+rdata$r	SEGMENT
+??_R2?$CSingleton@VCPythonQuest@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonQuest@@@@8 ; CSingleton<CPythonQuest>::`RTTI Base Class Array'
+rdata$r	ENDS
 ;	COMDAT ??_C@_0O@IKHMHCIN@QUEST_MAX_NUM@
 CONST	SEGMENT
 ??_C@_0O@IKHMHCIN@QUEST_MAX_NUM@ DB 'QUEST_MAX_NUM', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@KIBHOKLO@GetQuestIndex@
+;	COMDAT ??_C@_0BH@LHJHNOKA@QUEST_CATEGORY_MAX_NUM@
 CONST	SEGMENT
-??_C@_0O@KIBHOKLO@GetQuestIndex@ DB 'GetQuestIndex', 00H ; `string'
+??_C@_0BH@LHJHNOKA@QUEST_CATEGORY_MAX_NUM@ DB 'QUEST_CATEGORY_MAX_NUM', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@LFMNEJD@GetQuestLastTime@
 CONST	SEGMENT
 ??_C@_0BB@LFMNEJD@GetQuestLastTime@ DB 'GetQuestLastTime', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@HMKJHAHP@GetQuestCount@
+;	COMDAT ??_C@_05KOGNICEN@quest@
 CONST	SEGMENT
-??_C@_0O@HMKJHAHP@GetQuestCount@ DB 'GetQuestCount', 00H ; `string'
+??_C@_05KOGNICEN@quest@ DB 'quest', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@PGFCKADA@GetQuestData@
 CONST	SEGMENT
 ??_C@_0N@PGFCKADA@GetQuestData@ DB 'GetQuestData', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06MBIPPNIK@isiisi@
+;	COMDAT ??_C@_0O@KIBHOKLO@GetQuestIndex@
 CONST	SEGMENT
-??_C@_06MBIPPNIK@isiisi@ DB 'isiisi', 00H		; `string'
+??_C@_0O@KIBHOKLO@GetQuestIndex@ DB 'GetQuestIndex', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CD@DHNDOAPK@Quest?5with?5index?5?$CFd?5already?5exi@
 CONST	SEGMENT
 ??_C@_0CD@DHNDOAPK@Quest?5with?5index?5?$CFd?5already?5exi@ DB 'Quest wit'
 	DB	'h index %d already exists', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CG@FJJGJNND@d?3?1ymir?5work?1ui?1game?1quest?1ques@
+;	COMDAT ??_C@_0O@HMKJHAHP@GetQuestCount@
 CONST	SEGMENT
-??_C@_0CG@FJJGJNND@d?3?1ymir?5work?1ui?1game?1quest?1ques@ DB 'd:/ymir wo'
-	DB	'rk/ui/game/quest/questicon/', 00H		; `string'
+??_C@_0O@HMKJHAHP@GetQuestCount@ DB 'GetQuestCount', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@OENOJEH@icon?1scroll_open?4tga@
 CONST	SEGMENT
 ??_C@_0BF@OENOJEH@icon?1scroll_open?4tga@ DB 'icon/scroll_open.tga', 00H ; `string'
 CONST	ENDS
+;	COMDAT ??_C@_06MBIPPNIK@isiisi@
+CONST	SEGMENT
+??_C@_06MBIPPNIK@isiisi@ DB 'isiisi', 00H		; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0CB@KNIDBLNN@Failed?5to?5find?5quest?5by?5index?5?$CF@
 CONST	SEGMENT
 ??_C@_0CB@KNIDBLNN@Failed?5to?5find?5quest?5by?5index?5?$CF@ DB 'Failed t'
 	DB	'o find quest by index %d', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0CG@FJJGJNND@d?3?1ymir?5work?1ui?1game?1quest?1ques@
+CONST	SEGMENT
+??_C@_0CG@FJJGJNND@d?3?1ymir?5work?1ui?1game?1quest?1ques@ DB 'd:/ymir wo'
+	DB	'rk/ui/game/quest/questicon/', 00H		; `string'
 PUBLIC	?_Get_first@?$_Compressed_pair@V?$allocator@USQuestInstance@CPythonQuest@@@std@@V?$_Vector_val@U?$_Simple_types@USQuestInstance@CPythonQuest@@@std@@@2@$00@std@@QBEABV?$allocator@USQuestInstance@CPythonQuest@@@2@XZ ; std::_Compressed_pair<std::allocator<CPythonQuest::SQuestInstance>,std::_Vector_val<std::_Simple_types<CPythonQuest::SQuestInstance> >,1>::_Get_first
 PUBLIC	??$_Get_size_of_n@$0HE@@std@@YAII@Z		; std::_Get_size_of_n<116>
 PUBLIC	??0SQuestInstance@CPythonQuest@@QAE@ABU01@@Z	; CPythonQuest::SQuestInstance::SQuestInstance

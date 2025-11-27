@@ -9,7 +9,6 @@
 INCLUDELIB OLDNAMES
 
 EXTRN	?isExistInPack@CEterPackManager@@QAE_NPBD@Z:PROC ; CEterPackManager::isExistInPack
-EXTRN	__imp__PyString_AsString:PROC
 EXTRN	__imp__PyThreadState_Get:PROC
 ;	COMDAT ?s_methods@?1??initPythonApi@@YAXXZ@4PAUPyMethodDef@@A
 _BSS	SEGMENT

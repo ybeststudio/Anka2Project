@@ -1656,7 +1656,19 @@ class ItemToolTip(ToolTip):
 			self.AppendWearableInformation()
 
 			if itemSubType in (item.ARMOR_WRIST, item.ARMOR_NECK, item.ARMOR_EAR):
-				self.__AppendAccessoryMetinSlotInfo(metinSlot, constInfo.GET_ACCESSORY_MATERIAL_VNUM(itemVnum, itemSubType))
+				materialVnum = constInfo.GET_ACCESSORY_MATERIAL_VNUM(itemVnum, itemSubType)
+				self.__AppendAccessoryMetinSlotInfo(metinSlot, materialVnum)
+
+				cur = min(metinSlot[0] if len(metinSlot) > 0 else 0, constInfo.ACCESSORY_SOCKET_MAX_SIZE)
+				end = min(metinSlot[1] if len(metinSlot) > 1 else 0, constInfo.ACCESSORY_SOCKET_MAX_SIZE)
+
+				if materialVnum > 0 and (cur == 0 or end == 0):
+					self.AppendSpace(2)
+					self.AppendTextLine(localeInfo.POSSIBLE_ORE, 0xFFFFFFD3)
+					item.SelectItem(materialVnum)
+					ore_name = item.GetItemName()
+					self.AppendTextLine(ore_name, 0xFFEA7D00)
+					self.__AppendOreIcon(materialVnum)
 			elif itemSubType == item.ARMOR_BELT:
 				self.__AppendAccessoryMetinSlotInfo(metinSlot, constInfo.GET_BELT_MATERIAL_VNUM(itemVnum))
 			else:
@@ -2484,6 +2496,21 @@ class ItemToolTip(ToolTip):
 			self.AppendTextLine(localeInfo.TOOLTIP_FISHINGROD_UPGRADE1, self.NORMAL_COLOR)
 			self.AppendTextLine(localeInfo.TOOLTIP_FISHINGROD_UPGRADE2, self.NORMAL_COLOR)
 			self.AppendTextLine(localeInfo.TOOLTIP_FISHINGROD_UPGRADE3, self.NORMAL_COLOR)
+
+	def __AppendOreIcon(self, materialVnum):
+		itemImage = ui.ImageBox()
+		itemImage.SetParent(self)
+		itemImage.LoadImage("icon/item/%d.tga" % materialVnum)
+		itemImage.Show()
+
+		imageWidth = itemImage.GetWidth()
+		indentX = (self.toolTipWidth - imageWidth) / 2
+
+		itemImage.SetPosition(indentX, self.toolTipHeight)
+
+		self.toolTipHeight += itemImage.GetHeight()
+		self.childrenList.append(itemImage)
+		self.ResizeToolTip()
 
 	def __AppendLimitInformation(self):
 

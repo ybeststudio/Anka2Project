@@ -154,6 +154,31 @@ void CPythonApplication::GetInfo(UINT eInfo, std::string* pstInfo)
 	}
 }
 
+#ifdef ENABLE_ABORT_TRACEBACK_WITH_LINE
+void CPythonApplication::Abort()
+{
+    TraceError("============================================================================================================");
+    TraceError("Abort!!!!\n\n");
+
+    PyThreadState* tstate = PyThreadState_GET();
+    if (tstate)
+    {
+        for (PyFrameObject* frame = tstate->frame; frame; frame = frame->f_back)
+        {
+            PyCodeObject* f_code = frame->f_code;
+            if (!f_code || !f_code->co_filename || !f_code->co_name)
+                continue;
+
+            const char* filename = PyString_AsString(f_code->co_filename);
+            const char* funcname = PyString_AsString(f_code->co_name);
+            int line = PyFrame_GetLineNumber(frame);
+            TraceError("filename=%s, name=%s, line=%d", filename, funcname, line);
+        }
+    }
+
+    PostQuitMessage(0);
+}
+#else
 void CPythonApplication::Abort()
 {
 	TraceError("============================================================================================================");
@@ -161,6 +186,7 @@ void CPythonApplication::Abort()
 
 	PostQuitMessage(0);
 }
+#endif
 
 void CPythonApplication::Exit()
 {

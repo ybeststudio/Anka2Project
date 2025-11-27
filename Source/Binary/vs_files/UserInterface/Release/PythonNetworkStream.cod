@@ -8,70 +8,70 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_05CMMBDMDD@?1quit@			; `string'
-PUBLIC	??_C@_07FOABJBDD@?1logout@			; `string'
 PUBLIC	??_C@_0O@ODIJHOCP@?1phase_select@		; `string'
-PUBLIC	??_C@_0CH@LALGPME@Unknown?5packet?5header?3?5?$CFd?0?5last@ ; `string'
+PUBLIC	??_C@_05CMMBDMDD@?1quit@			; `string'
 PUBLIC	??_C@_0M@PCENNPGA@?$CFd?4?$CFd?4?$CFd?4?$CFd@	; `string'
-PUBLIC	??_C@_0GF@BNCBJFEH@CPythonNetworkStream?3?3CheckPack@ ; `string'
+PUBLIC	??_C@_07FOABJBDD@?1logout@			; `string'
 PUBLIC	??_C@_0FP@JGOINIOH@CPythonNetworkStream?3?3CheckPack@ ; `string'
-PUBLIC	??_C@_0CF@JLNGLGD@recv?5ping?5packet?4?5?$CIsecuritymode@ ; `string'
+PUBLIC	??_C@_0CH@LALGPME@Unknown?5packet?5header?3?5?$CFd?0?5last@ ; `string'
 PUBLIC	??_C@_0EA@JMANDMEJ@Phase?5?$CFs?5does?5not?5handle?5this?5h@ ; `string'
-PUBLIC	??_C@_0N@HHLEGKEL@SetGamePhase@			; `string'
+PUBLIC	??_C@_0GF@BNCBJFEH@CPythonNetworkStream?3?3CheckPack@ ; `string'
 PUBLIC	??_C@_0CG@PEEMFFFJ@?C?$LD?$LI?$KO?$LF?G?A?v?5?$LO?J?$MA?$LK?5?F?$DP?E?$LG?5?G?l?$LE?u?5?$CFd?0?5sta@ ; `string'
-PUBLIC	??_C@_0BO@NMFMGDDG@?$CD?$CD?5Network?5?9?5OffLine?5Phase?5?$CD?$CD@ ; `string'
+PUBLIC	??_C@_0CF@JLNGLGD@recv?5ping?5packet?4?5?$CIsecuritymode@ ; `string'
 PUBLIC	??_C@_07NNEFBBEG@OffLine@			; `string'
-PUBLIC	??_C@_0P@MDCECFOM@OBSERVER_COUNT@		; `string'
+PUBLIC	??_C@_0N@HHLEGKEL@SetGamePhase@			; `string'
 PUBLIC	??_C@_0O@PJEEOCNO@SetLoginPhase@		; `string'
-PUBLIC	??_C@_1LA@DBDAGDHI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
+PUBLIC	??_C@_0BO@NMFMGDDG@?$CD?$CD?5Network?5?9?5OffLine?5Phase?5?$CD?$CD@ ; `string'
 PUBLIC	??_C@_0O@FEJHKOEO@BETTING_MONEY@		; `string'
-PUBLIC	??_C@_04IBBNLEM@Game@				; `string'
+PUBLIC	??_C@_0P@MDCECFOM@OBSERVER_COUNT@		; `string'
 PUBLIC	??_C@_1DM@BDGGMHHL@?$AAf?$AAa?$AAl?$AAs?$AAe?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CC?$AAS?$AAe?$AAn?$AAd?$AAE@ ; `string'
-PUBLIC	??_C@_1IA@GOBOKLKL@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
+PUBLIC	??_C@_1LA@DBDAGDHI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
 PUBLIC	??_C@_0BO@OMGIOKNA@PythonNetworkMainStream?5Clear@ ; `string'
+PUBLIC	??_C@_04IBBNLEM@Game@				; `string'
 PUBLIC	??_C@_1CK@DKKCJALE@?$AAm?$AA_?$AAp?$AAO?$AAb?$AAj?$AAe?$AAc?$AAt?$AA?5?$AA?$CB?$AA?$DN?$AA?5?$AAn?$AAu@ ; `string'
-PUBLIC	??_R2CMainPacketHeaderMap@@8			; CMainPacketHeaderMap::`RTTI Base Class Array'
+PUBLIC	??_C@_1IA@GOBOKLKL@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
 PUBLIC	??_R2CNetworkPacketHeaderMap@@8			; CNetworkPacketHeaderMap::`RTTI Base Class Array'
+PUBLIC	??_R2CMainPacketHeaderMap@@8			; CMainPacketHeaderMap::`RTTI Base Class Array'
+PUBLIC	??_R2CPythonNetworkStream@@8			; CPythonNetworkStream::`RTTI Base Class Array'
 PUBLIC	??_R2?$CFuncObject@VCPythonNetworkStream@@@@8	; CFuncObject<CPythonNetworkStream>::`RTTI Base Class Array'
 PUBLIC	??_R2?$CSingleton@VCPythonNetworkStream@@@@8	; CSingleton<CPythonNetworkStream>::`RTTI Base Class Array'
-PUBLIC	??_R2CPythonNetworkStream@@8			; CPythonNetworkStream::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@CNetworkPacketHeaderMap@@8	; CNetworkPacketHeaderMap::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R1A@?0A@EA@CMainPacketHeaderMap@@8		; CMainPacketHeaderMap::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R1HI@?0A@EA@?$CSingleton@VCPythonNetworkStream@@@@8 ; CSingleton<CPythonNetworkStream>::`RTTI Base Class Descriptor at (120,-1,0,64)'
+PUBLIC	??_R1A@?0A@EA@CNetworkPacketHeaderMap@@8	; CNetworkPacketHeaderMap::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R1A@?0A@EA@?$CFuncObject@VCPythonNetworkStream@@@@8 ; CFuncObject<CPythonNetworkStream>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonNetworkStream@@@@8 ; CSingleton<CPythonNetworkStream>::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R1A@?0A@EA@CPythonNetworkStream@@8		; CPythonNetworkStream::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R0?AVCNetworkPacketHeaderMap@@@8		; CNetworkPacketHeaderMap `RTTI Type Descriptor'
+PUBLIC	??_R1HI@?0A@EA@?$CSingleton@VCPythonNetworkStream@@@@8 ; CSingleton<CPythonNetworkStream>::`RTTI Base Class Descriptor at (120,-1,0,64)'
+PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonNetworkStream@@@@8 ; CSingleton<CPythonNetworkStream>::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R3CNetworkPacketHeaderMap@@8			; CNetworkPacketHeaderMap::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AVCMainPacketHeaderMap@@@8		; CMainPacketHeaderMap `RTTI Type Descriptor'
 PUBLIC	??_R3CMainPacketHeaderMap@@8			; CMainPacketHeaderMap::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AV?$CFuncObject@VCPythonNetworkStream@@@@@8 ; CFuncObject<CPythonNetworkStream> `RTTI Type Descriptor'
+PUBLIC	??_R0?AVCNetworkPacketHeaderMap@@@8		; CNetworkPacketHeaderMap `RTTI Type Descriptor'
+PUBLIC	??_R0?AVCMainPacketHeaderMap@@@8		; CMainPacketHeaderMap `RTTI Type Descriptor'
 PUBLIC	??_R3?$CFuncObject@VCPythonNetworkStream@@@@8	; CFuncObject<CPythonNetworkStream>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AV?$CSingleton@VCPythonNetworkStream@@@@@8 ; CSingleton<CPythonNetworkStream> `RTTI Type Descriptor'
 PUBLIC	??_R3?$CSingleton@VCPythonNetworkStream@@@@8	; CSingleton<CPythonNetworkStream>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AVCPythonNetworkStream@@@8		; CPythonNetworkStream `RTTI Type Descriptor'
+PUBLIC	??_R0?AV?$CFuncObject@VCPythonNetworkStream@@@@@8 ; CFuncObject<CPythonNetworkStream> `RTTI Type Descriptor'
 PUBLIC	??_R3CPythonNetworkStream@@8			; CPythonNetworkStream::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R0?AV?$CSingleton@VCPythonNetworkStream@@@@@8 ; CSingleton<CPythonNetworkStream> `RTTI Type Descriptor'
+PUBLIC	??_R0?AVCPythonNetworkStream@@@8		; CPythonNetworkStream `RTTI Type Descriptor'
 PUBLIC	??_R4CMainPacketHeaderMap@@6B@			; CMainPacketHeaderMap::`RTTI Complete Object Locator'
 PUBLIC	??_R4?$CFuncObject@VCPythonNetworkStream@@@@6B@	; CFuncObject<CPythonNetworkStream>::`RTTI Complete Object Locator'
-PUBLIC	??_R4CPythonNetworkStream@@6B?$CSingleton@VCPythonNetworkStream@@@@@ ; CPythonNetworkStream::`RTTI Complete Object Locator'
 PUBLIC	??_R4?$CSingleton@VCPythonNetworkStream@@@@6B@	; CSingleton<CPythonNetworkStream>::`RTTI Complete Object Locator'
+PUBLIC	??_R4CPythonNetworkStream@@6B?$CSingleton@VCPythonNetworkStream@@@@@ ; CPythonNetworkStream::`RTTI Complete Object Locator'
 PUBLIC	??_R4CPythonNetworkStream@@6BCNetworkStream@@@	; CPythonNetworkStream::`RTTI Complete Object Locator'
-PUBLIC	??_7?$CFuncObject@VCPythonNetworkStream@@@@6B@	; CFuncObject<CPythonNetworkStream>::`vftable'
 PUBLIC	??_7?$CSingleton@VCPythonNetworkStream@@@@6B@	; CSingleton<CPythonNetworkStream>::`vftable'
-PUBLIC	??_7CPythonNetworkStream@@6B?$CSingleton@VCPythonNetworkStream@@@@@ ; CPythonNetworkStream::`vftable'
+PUBLIC	??_7?$CFuncObject@VCPythonNetworkStream@@@@6B@	; CFuncObject<CPythonNetworkStream>::`vftable'
 PUBLIC	??_7CPythonNetworkStream@@6BCNetworkStream@@@	; CPythonNetworkStream::`vftable'
-PUBLIC	??_7CMainPacketHeaderMap@@6B@			; CMainPacketHeaderMap::`vftable'
+PUBLIC	??_7CPythonNetworkStream@@6B?$CSingleton@VCPythonNetworkStream@@@@@ ; CPythonNetworkStream::`vftable'
 PUBLIC	?g_iLastPacket@@3PAHA				; g_iLastPacket
+PUBLIC	??_7CMainPacketHeaderMap@@6B@			; CMainPacketHeaderMap::`vftable'
 EXTRN	?OnConnectSuccess@CNetworkStream@@MAEXXZ:PROC	; CNetworkStream::OnConnectSuccess
-EXTRN	??1CNetworkAddress@@QAE@XZ:PROC			; CNetworkAddress::~CNetworkAddress
 EXTRN	??0CNetworkAddress@@QAE@XZ:PROC			; CNetworkAddress::CNetworkAddress
+EXTRN	??1CNetworkAddress@@QAE@XZ:PROC			; CNetworkAddress::~CNetworkAddress
 EXTRN	__stricmp:PROC
-EXTRN	?ClearRecvBuffer@CNetworkStream@@QAEXXZ:PROC	; CNetworkStream::ClearRecvBuffer
 EXTRN	?Get@CNetworkPacketHeaderMap@@QAE_NHPAUSPacketType@1@@Z:PROC ; CNetworkPacketHeaderMap::Get
-EXTRN	?Connect@CNetworkStream@@QAE_NKHH@Z:PROC	; CNetworkStream::Connect
+EXTRN	?ClearRecvBuffer@CNetworkStream@@QAEXXZ:PROC	; CNetworkStream::ClearRecvBuffer
 EXTRN	?Set@CNetworkAddress@@QAE_NPBDH@Z:PROC		; CNetworkAddress::Set
-EXTRN	?IsOnline@CNetworkStream@@QAE_NXZ:PROC		; CNetworkStream::IsOnline
+EXTRN	?Connect@CNetworkStream@@QAE_NKHH@Z:PROC	; CNetworkStream::Connect
 EXTRN	?Set@CNetworkPacketHeaderMap@@QAEXHUSPacketType@1@@Z:PROC ; CNetworkPacketHeaderMap::Set
+EXTRN	?IsOnline@CNetworkStream@@QAE_NXZ:PROC		; CNetworkStream::IsOnline
 EXTRN	??1CNetworkPacketHeaderMap@@UAE@XZ:PROC		; CNetworkPacketHeaderMap::~CNetworkPacketHeaderMap
 EXTRN	??0CNetworkPacketHeaderMap@@QAE@XZ:PROC		; CNetworkPacketHeaderMap::CNetworkPacketHeaderMap
 ?g_iLastPacket@@3PAHA DD 02H DUP (?)			; g_iLastPacket
@@ -85,6 +85,11 @@ CONST	ENDS
 CONST	SEGMENT
 ?sc_szEmpty@?1??GetAccountCharacterSlotDataz@CPythonNetworkStream@@QAEPBDII@Z@4PBDB DD FLAT:??_C@_00CNPNBAHC@@ ; `CPythonNetworkStream::GetAccountCharacterSlotDataz'::`2'::sc_szEmpty
 CONST	ENDS
+;	COMDAT ??_7CPythonNetworkStream@@6B?$CSingleton@VCPythonNetworkStream@@@@@
+CONST	SEGMENT
+??_7CPythonNetworkStream@@6B?$CSingleton@VCPythonNetworkStream@@@@@ DD FLAT:??_R4CPythonNetworkStream@@6B?$CSingleton@VCPythonNetworkStream@@@@@ ; CPythonNetworkStream::`vftable'
+	DD	FLAT:??_ECPythonNetworkStream@@WHI@AEPAXI@Z
+CONST	ENDS
 ;	COMDAT ??_7CPythonNetworkStream@@6BCNetworkStream@@@
 CONST	SEGMENT
 ??_7CPythonNetworkStream@@6BCNetworkStream@@@ DD FLAT:??_R4CPythonNetworkStream@@6BCNetworkStream@@@ ; CPythonNetworkStream::`vftable'
@@ -95,25 +100,28 @@ CONST	SEGMENT
 	DD	FLAT:?OnDisconnect@CPythonNetworkStream@@MAEXXZ
 	DD	FLAT:?OnProcess@CPythonNetworkStream@@MAE_NXZ
 CONST	ENDS
-;	COMDAT ??_7CPythonNetworkStream@@6B?$CSingleton@VCPythonNetworkStream@@@@@
+;	COMDAT ??_7?$CFuncObject@VCPythonNetworkStream@@@@6B@
 CONST	SEGMENT
-??_7CPythonNetworkStream@@6B?$CSingleton@VCPythonNetworkStream@@@@@ DD FLAT:??_R4CPythonNetworkStream@@6B?$CSingleton@VCPythonNetworkStream@@@@@ ; CPythonNetworkStream::`vftable'
-	DD	FLAT:??_ECPythonNetworkStream@@WHI@AEPAXI@Z
+??_7?$CFuncObject@VCPythonNetworkStream@@@@6B@ DD FLAT:??_R4?$CFuncObject@VCPythonNetworkStream@@@@6B@ ; CFuncObject<CPythonNetworkStream>::`vftable'
+	DD	FLAT:??_E?$CFuncObject@VCPythonNetworkStream@@@@UAEPAXI@Z
 CONST	ENDS
 ;	COMDAT ??_7?$CSingleton@VCPythonNetworkStream@@@@6B@
 CONST	SEGMENT
 ??_7?$CSingleton@VCPythonNetworkStream@@@@6B@ DD FLAT:??_R4?$CSingleton@VCPythonNetworkStream@@@@6B@ ; CSingleton<CPythonNetworkStream>::`vftable'
 	DD	FLAT:??_E?$CSingleton@VCPythonNetworkStream@@@@UAEPAXI@Z
 CONST	ENDS
-;	COMDAT ??_7?$CFuncObject@VCPythonNetworkStream@@@@6B@
-CONST	SEGMENT
-??_7?$CFuncObject@VCPythonNetworkStream@@@@6B@ DD FLAT:??_R4?$CFuncObject@VCPythonNetworkStream@@@@6B@ ; CFuncObject<CPythonNetworkStream>::`vftable'
-	DD	FLAT:??_E?$CFuncObject@VCPythonNetworkStream@@@@UAEPAXI@Z
-CONST	ENDS
 ;	COMDAT ??_R4CPythonNetworkStream@@6BCNetworkStream@@@
 rdata$r	SEGMENT
 ??_R4CPythonNetworkStream@@6BCNetworkStream@@@ DD 00H	; CPythonNetworkStream::`RTTI Complete Object Locator'
 	DD	00H
+	DD	00H
+	DD	FLAT:??_R0?AVCPythonNetworkStream@@@8
+	DD	FLAT:??_R3CPythonNetworkStream@@8
+rdata$r	ENDS
+;	COMDAT ??_R4CPythonNetworkStream@@6B?$CSingleton@VCPythonNetworkStream@@@@@
+rdata$r	SEGMENT
+??_R4CPythonNetworkStream@@6B?$CSingleton@VCPythonNetworkStream@@@@@ DD 00H ; CPythonNetworkStream::`RTTI Complete Object Locator'
+	DD	078H
 	DD	00H
 	DD	FLAT:??_R0?AVCPythonNetworkStream@@@8
 	DD	FLAT:??_R3CPythonNetworkStream@@8
@@ -125,14 +133,6 @@ rdata$r	SEGMENT
 	DD	00H
 	DD	FLAT:??_R0?AV?$CSingleton@VCPythonNetworkStream@@@@@8
 	DD	FLAT:??_R3?$CSingleton@VCPythonNetworkStream@@@@8
-rdata$r	ENDS
-;	COMDAT ??_R4CPythonNetworkStream@@6B?$CSingleton@VCPythonNetworkStream@@@@@
-rdata$r	SEGMENT
-??_R4CPythonNetworkStream@@6B?$CSingleton@VCPythonNetworkStream@@@@@ DD 00H ; CPythonNetworkStream::`RTTI Complete Object Locator'
-	DD	078H
-	DD	00H
-	DD	FLAT:??_R0?AVCPythonNetworkStream@@@8
-	DD	FLAT:??_R3CPythonNetworkStream@@8
 rdata$r	ENDS
 ;	COMDAT ??_R4?$CFuncObject@VCPythonNetworkStream@@@@6B@
 rdata$r	SEGMENT
@@ -150,6 +150,18 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AVCMainPacketHeaderMap@@@8
 	DD	FLAT:??_R3CMainPacketHeaderMap@@8
 rdata$r	ENDS
+;	COMDAT ??_R0?AVCPythonNetworkStream@@@8
+data$rs	SEGMENT
+??_R0?AVCPythonNetworkStream@@@8 DD FLAT:??_7type_info@@6B@ ; CPythonNetworkStream `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCPythonNetworkStream@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCPythonNetworkStream@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCPythonNetworkStream@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonNetworkStream> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCPythonNetworkStream@@@@', 00H
+data$rs	ENDS
 ;	COMDAT ??_R3CPythonNetworkStream@@8
 rdata$r	SEGMENT
 ??_R3CPythonNetworkStream@@8 DD 00H			; CPythonNetworkStream::`RTTI Class Hierarchy Descriptor'
@@ -157,11 +169,11 @@ rdata$r	SEGMENT
 	DD	03H
 	DD	FLAT:??_R2CPythonNetworkStream@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonNetworkStream@@@8
+;	COMDAT ??_R0?AV?$CFuncObject@VCPythonNetworkStream@@@@@8
 data$rs	SEGMENT
-??_R0?AVCPythonNetworkStream@@@8 DD FLAT:??_7type_info@@6B@ ; CPythonNetworkStream `RTTI Type Descriptor'
+??_R0?AV?$CFuncObject@VCPythonNetworkStream@@@@@8 DD FLAT:??_7type_info@@6B@ ; CFuncObject<CPythonNetworkStream> `RTTI Type Descriptor'
 	DD	00H
-	DB	'.?AVCPythonNetworkStream@@', 00H
+	DB	'.?AV?$CFuncObject@VCPythonNetworkStream@@@@', 00H
 data$rs	ENDS
 ;	COMDAT ??_R3?$CSingleton@VCPythonNetworkStream@@@@8
 rdata$r	SEGMENT
@@ -170,12 +182,6 @@ rdata$r	SEGMENT
 	DD	01H
 	DD	FLAT:??_R2?$CSingleton@VCPythonNetworkStream@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCPythonNetworkStream@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCPythonNetworkStream@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonNetworkStream> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AV?$CSingleton@VCPythonNetworkStream@@@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R3?$CFuncObject@VCPythonNetworkStream@@@@8
 rdata$r	SEGMENT
 ??_R3?$CFuncObject@VCPythonNetworkStream@@@@8 DD 00H	; CFuncObject<CPythonNetworkStream>::`RTTI Class Hierarchy Descriptor'
@@ -183,11 +189,17 @@ rdata$r	SEGMENT
 	DD	01H
 	DD	FLAT:??_R2?$CFuncObject@VCPythonNetworkStream@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AV?$CFuncObject@VCPythonNetworkStream@@@@@8
+;	COMDAT ??_R0?AVCMainPacketHeaderMap@@@8
 data$rs	SEGMENT
-??_R0?AV?$CFuncObject@VCPythonNetworkStream@@@@@8 DD FLAT:??_7type_info@@6B@ ; CFuncObject<CPythonNetworkStream> `RTTI Type Descriptor'
+??_R0?AVCMainPacketHeaderMap@@@8 DD FLAT:??_7type_info@@6B@ ; CMainPacketHeaderMap `RTTI Type Descriptor'
 	DD	00H
-	DB	'.?AV?$CFuncObject@VCPythonNetworkStream@@@@', 00H
+	DB	'.?AVCMainPacketHeaderMap@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R0?AVCNetworkPacketHeaderMap@@@8
+data$rs	SEGMENT
+??_R0?AVCNetworkPacketHeaderMap@@@8 DD FLAT:??_7type_info@@6B@ ; CNetworkPacketHeaderMap `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCNetworkPacketHeaderMap@@', 00H
 data$rs	ENDS
 ;	COMDAT ??_R3CMainPacketHeaderMap@@8
 rdata$r	SEGMENT
@@ -196,34 +208,12 @@ rdata$r	SEGMENT
 	DD	02H
 	DD	FLAT:??_R2CMainPacketHeaderMap@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCMainPacketHeaderMap@@@8
-data$rs	SEGMENT
-??_R0?AVCMainPacketHeaderMap@@@8 DD FLAT:??_7type_info@@6B@ ; CMainPacketHeaderMap `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCMainPacketHeaderMap@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R3CNetworkPacketHeaderMap@@8
 rdata$r	SEGMENT
 ??_R3CNetworkPacketHeaderMap@@8 DD 00H			; CNetworkPacketHeaderMap::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	01H
 	DD	FLAT:??_R2CNetworkPacketHeaderMap@@8
-rdata$r	ENDS
-;	COMDAT ??_R0?AVCNetworkPacketHeaderMap@@@8
-data$rs	SEGMENT
-??_R0?AVCNetworkPacketHeaderMap@@@8 DD FLAT:??_7type_info@@6B@ ; CNetworkPacketHeaderMap `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCNetworkPacketHeaderMap@@', 00H
-data$rs	ENDS
-;	COMDAT ??_R1A@?0A@EA@CPythonNetworkStream@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@CPythonNetworkStream@@8 DD FLAT:??_R0?AVCPythonNetworkStream@@@8 ; CPythonNetworkStream::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	02H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3CPythonNetworkStream@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonNetworkStream@@@@8
 rdata$r	SEGMENT
@@ -235,16 +225,6 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$CSingleton@VCPythonNetworkStream@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@?$CFuncObject@VCPythonNetworkStream@@@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@?$CFuncObject@VCPythonNetworkStream@@@@8 DD FLAT:??_R0?AV?$CFuncObject@VCPythonNetworkStream@@@@@8 ; CFuncObject<CPythonNetworkStream>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	00H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3?$CFuncObject@VCPythonNetworkStream@@@@8
-rdata$r	ENDS
 ;	COMDAT ??_R1HI@?0A@EA@?$CSingleton@VCPythonNetworkStream@@@@8
 rdata$r	SEGMENT
 ??_R1HI@?0A@EA@?$CSingleton@VCPythonNetworkStream@@@@8 DD FLAT:??_R0?AV?$CSingleton@VCPythonNetworkStream@@@@@8 ; CSingleton<CPythonNetworkStream>::`RTTI Base Class Descriptor at (120,-1,0,64)'
@@ -255,15 +235,25 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$CSingleton@VCPythonNetworkStream@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@CMainPacketHeaderMap@@8
+;	COMDAT ??_R1A@?0A@EA@CPythonNetworkStream@@8
 rdata$r	SEGMENT
-??_R1A@?0A@EA@CMainPacketHeaderMap@@8 DD FLAT:??_R0?AVCMainPacketHeaderMap@@@8 ; CMainPacketHeaderMap::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	01H
+??_R1A@?0A@EA@CPythonNetworkStream@@8 DD FLAT:??_R0?AVCPythonNetworkStream@@@8 ; CPythonNetworkStream::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	02H
 	DD	00H
 	DD	0ffffffffH
 	DD	00H
 	DD	040H
-	DD	FLAT:??_R3CMainPacketHeaderMap@@8
+	DD	FLAT:??_R3CPythonNetworkStream@@8
+rdata$r	ENDS
+;	COMDAT ??_R1A@?0A@EA@?$CFuncObject@VCPythonNetworkStream@@@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@?$CFuncObject@VCPythonNetworkStream@@@@8 DD FLAT:??_R0?AV?$CFuncObject@VCPythonNetworkStream@@@@@8 ; CFuncObject<CPythonNetworkStream>::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	00H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3?$CFuncObject@VCPythonNetworkStream@@@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@CNetworkPacketHeaderMap@@8
 rdata$r	SEGMENT
@@ -275,11 +265,15 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3CNetworkPacketHeaderMap@@8
 rdata$r	ENDS
-;	COMDAT ??_R2CPythonNetworkStream@@8
+;	COMDAT ??_R1A@?0A@EA@CMainPacketHeaderMap@@8
 rdata$r	SEGMENT
-??_R2CPythonNetworkStream@@8 DD FLAT:??_R1A@?0A@EA@CPythonNetworkStream@@8 ; CPythonNetworkStream::`RTTI Base Class Array'
-	DD	FLAT:??_R1A@?0A@EA@CNetworkStream@@8
-	DD	FLAT:??_R1HI@?0A@EA@?$CSingleton@VCPythonNetworkStream@@@@8
+??_R1A@?0A@EA@CMainPacketHeaderMap@@8 DD FLAT:??_R0?AVCMainPacketHeaderMap@@@8 ; CMainPacketHeaderMap::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3CMainPacketHeaderMap@@8
 rdata$r	ENDS
 ;	COMDAT ??_R2?$CSingleton@VCPythonNetworkStream@@@@8
 rdata$r	SEGMENT
@@ -289,28 +283,21 @@ rdata$r	ENDS
 rdata$r	SEGMENT
 ??_R2?$CFuncObject@VCPythonNetworkStream@@@@8 DD FLAT:??_R1A@?0A@EA@?$CFuncObject@VCPythonNetworkStream@@@@8 ; CFuncObject<CPythonNetworkStream>::`RTTI Base Class Array'
 rdata$r	ENDS
-;	COMDAT ??_R2CNetworkPacketHeaderMap@@8
+;	COMDAT ??_R2CPythonNetworkStream@@8
 rdata$r	SEGMENT
-??_R2CNetworkPacketHeaderMap@@8 DD FLAT:??_R1A@?0A@EA@CNetworkPacketHeaderMap@@8 ; CNetworkPacketHeaderMap::`RTTI Base Class Array'
+??_R2CPythonNetworkStream@@8 DD FLAT:??_R1A@?0A@EA@CPythonNetworkStream@@8 ; CPythonNetworkStream::`RTTI Base Class Array'
+	DD	FLAT:??_R1A@?0A@EA@CNetworkStream@@8
+	DD	FLAT:??_R1HI@?0A@EA@?$CSingleton@VCPythonNetworkStream@@@@8
 rdata$r	ENDS
 ;	COMDAT ??_R2CMainPacketHeaderMap@@8
 rdata$r	SEGMENT
 ??_R2CMainPacketHeaderMap@@8 DD FLAT:??_R1A@?0A@EA@CMainPacketHeaderMap@@8 ; CMainPacketHeaderMap::`RTTI Base Class Array'
 	DD	FLAT:??_R1A@?0A@EA@CNetworkPacketHeaderMap@@8
 rdata$r	ENDS
-;	COMDAT ??_C@_1CK@DKKCJALE@?$AAm?$AA_?$AAp?$AAO?$AAb?$AAj?$AAe?$AAc?$AAt?$AA?5?$AA?$CB?$AA?$DN?$AA?5?$AAn?$AAu@
-CONST	SEGMENT
-??_C@_1CK@DKKCJALE@?$AAm?$AA_?$AAp?$AAO?$AAb?$AAj?$AAe?$AAc?$AAt?$AA?5?$AA?$CB?$AA?$DN?$AA?5?$AAn?$AAu@ DB 'm'
-	DB	00H, '_', 00H, 'p', 00H, 'O', 00H, 'b', 00H, 'j', 00H, 'e', 00H
-	DB	'c', 00H, 't', 00H, ' ', 00H, '!', 00H, '=', 00H, ' ', 00H, 'n'
-	DB	00H, 'u', 00H, 'l', 00H, 'l', 00H, 'p', 00H, 't', 00H, 'r', 00H
-	DB	00H, 00H					; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BO@OMGIOKNA@PythonNetworkMainStream?5Clear@
-CONST	SEGMENT
-??_C@_0BO@OMGIOKNA@PythonNetworkMainStream?5Clear@ DB 'PythonNetworkMainS'
-	DB	'tream Clear', 00H				; `string'
-CONST	ENDS
+;	COMDAT ??_R2CNetworkPacketHeaderMap@@8
+rdata$r	SEGMENT
+??_R2CNetworkPacketHeaderMap@@8 DD FLAT:??_R1A@?0A@EA@CNetworkPacketHeaderMap@@8 ; CNetworkPacketHeaderMap::`RTTI Base Class Array'
+rdata$r	ENDS
 ;	COMDAT ??_C@_1IA@GOBOKLKL@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
 CONST	SEGMENT
 ??_C@_1IA@GOBOKLKL@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ DB 'C'
@@ -325,22 +312,22 @@ CONST	SEGMENT
 	DB	00H, 'r', 00H, 'l', 00H, 'i', 00H, 'b', 00H, '\', 00H, 'R', 00H
 	DB	'e', 00H, 'f', 00H, '.', 00H, 'h', 00H, 00H, 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_1DM@BDGGMHHL@?$AAf?$AAa?$AAl?$AAs?$AAe?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CC?$AAS?$AAe?$AAn?$AAd?$AAE@
+;	COMDAT ??_C@_1CK@DKKCJALE@?$AAm?$AA_?$AAp?$AAO?$AAb?$AAj?$AAe?$AAc?$AAt?$AA?5?$AA?$CB?$AA?$DN?$AA?5?$AAn?$AAu@
 CONST	SEGMENT
-??_C@_1DM@BDGGMHHL@?$AAf?$AAa?$AAl?$AAs?$AAe?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CC?$AAS?$AAe?$AAn?$AAd?$AAE@ DB 'f'
-	DB	00H, 'a', 00H, 'l', 00H, 's', 00H, 'e', 00H, ' ', 00H, '&', 00H
-	DB	'&', 00H, ' ', 00H, '"', 00H, 'S', 00H, 'e', 00H, 'n', 00H, 'd'
-	DB	00H, 'E', 00H, 'm', 00H, 'o', 00H, 't', 00H, 'i', 00H, 'c', 00H
-	DB	'o', 00H, 'n', 00H, ' ', 00H, 'E', 00H, 'r', 00H, 'r', 00H, 'o'
-	DB	00H, 'r', 00H, '"', 00H, 00H, 00H		; `string'
+??_C@_1CK@DKKCJALE@?$AAm?$AA_?$AAp?$AAO?$AAb?$AAj?$AAe?$AAc?$AAt?$AA?5?$AA?$CB?$AA?$DN?$AA?5?$AAn?$AAu@ DB 'm'
+	DB	00H, '_', 00H, 'p', 00H, 'O', 00H, 'b', 00H, 'j', 00H, 'e', 00H
+	DB	'c', 00H, 't', 00H, ' ', 00H, '!', 00H, '=', 00H, ' ', 00H, 'n'
+	DB	00H, 'u', 00H, 'l', 00H, 'l', 00H, 'p', 00H, 't', 00H, 'r', 00H
+	DB	00H, 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04IBBNLEM@Game@
 CONST	SEGMENT
 ??_C@_04IBBNLEM@Game@ DB 'Game', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@FEJHKOEO@BETTING_MONEY@
+;	COMDAT ??_C@_0BO@OMGIOKNA@PythonNetworkMainStream?5Clear@
 CONST	SEGMENT
-??_C@_0O@FEJHKOEO@BETTING_MONEY@ DB 'BETTING_MONEY', 00H ; `string'
+??_C@_0BO@OMGIOKNA@PythonNetworkMainStream?5Clear@ DB 'PythonNetworkMainS'
+	DB	'tream Clear', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_1LA@DBDAGDHI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
 CONST	SEGMENT
@@ -360,22 +347,44 @@ CONST	SEGMENT
 	DB	00H, 'r', 00H, 'e', 00H, 'a', 00H, 'm', 00H, '.', 00H, 'c', 00H
 	DB	'p', 00H, 'p', 00H, 00H, 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@PJEEOCNO@SetLoginPhase@
+;	COMDAT ??_C@_1DM@BDGGMHHL@?$AAf?$AAa?$AAl?$AAs?$AAe?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CC?$AAS?$AAe?$AAn?$AAd?$AAE@
 CONST	SEGMENT
-??_C@_0O@PJEEOCNO@SetLoginPhase@ DB 'SetLoginPhase', 00H ; `string'
+??_C@_1DM@BDGGMHHL@?$AAf?$AAa?$AAl?$AAs?$AAe?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AA?$CC?$AAS?$AAe?$AAn?$AAd?$AAE@ DB 'f'
+	DB	00H, 'a', 00H, 'l', 00H, 's', 00H, 'e', 00H, ' ', 00H, '&', 00H
+	DB	'&', 00H, ' ', 00H, '"', 00H, 'S', 00H, 'e', 00H, 'n', 00H, 'd'
+	DB	00H, 'E', 00H, 'm', 00H, 'o', 00H, 't', 00H, 'i', 00H, 'c', 00H
+	DB	'o', 00H, 'n', 00H, ' ', 00H, 'E', 00H, 'r', 00H, 'r', 00H, 'o'
+	DB	00H, 'r', 00H, '"', 00H, 00H, 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@MDCECFOM@OBSERVER_COUNT@
 CONST	SEGMENT
 ??_C@_0P@MDCECFOM@OBSERVER_COUNT@ DB 'OBSERVER_COUNT', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07NNEFBBEG@OffLine@
+;	COMDAT ??_C@_0O@FEJHKOEO@BETTING_MONEY@
 CONST	SEGMENT
-??_C@_07NNEFBBEG@OffLine@ DB 'OffLine', 00H		; `string'
+??_C@_0O@FEJHKOEO@BETTING_MONEY@ DB 'BETTING_MONEY', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BO@NMFMGDDG@?$CD?$CD?5Network?5?9?5OffLine?5Phase?5?$CD?$CD@
 CONST	SEGMENT
 ??_C@_0BO@NMFMGDDG@?$CD?$CD?5Network?5?9?5OffLine?5Phase?5?$CD?$CD@ DB '#'
 	DB	'# Network - OffLine Phase ##', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0O@PJEEOCNO@SetLoginPhase@
+CONST	SEGMENT
+??_C@_0O@PJEEOCNO@SetLoginPhase@ DB 'SetLoginPhase', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0N@HHLEGKEL@SetGamePhase@
+CONST	SEGMENT
+??_C@_0N@HHLEGKEL@SetGamePhase@ DB 'SetGamePhase', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_07NNEFBBEG@OffLine@
+CONST	SEGMENT
+??_C@_07NNEFBBEG@OffLine@ DB 'OffLine', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0CF@JLNGLGD@recv?5ping?5packet?4?5?$CIsecuritymode@
+CONST	SEGMENT
+??_C@_0CF@JLNGLGD@recv?5ping?5packet?4?5?$CIsecuritymode@ DB 'recv ping p'
+	DB	'acket. (securitymode %u)', 0aH, 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CG@PEEMFFFJ@?C?$LD?$LI?$KO?$LF?G?A?v?5?$LO?J?$MA?$LK?5?F?$DP?E?$LG?5?G?l?$LE?u?5?$CFd?0?5sta@
 CONST	SEGMENT
@@ -384,19 +393,21 @@ CONST	SEGMENT
 	DB	0baH, ' ', 0c6H, '?', 0c5H, 0b6H, ' ', 0c7H, 0ecH, 0b4H, 0f5H, ' '
 	DB	'%d, state %s', 0aH, 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@HHLEGKEL@SetGamePhase@
+;	COMDAT ??_C@_0GF@BNCBJFEH@CPythonNetworkStream?3?3CheckPack@
 CONST	SEGMENT
-??_C@_0N@HHLEGKEL@SetGamePhase@ DB 'SetGamePhase', 00H	; `string'
+??_C@_0GF@BNCBJFEH@CPythonNetworkStream?3?3CheckPack@ DB 'CPythonNetworkS'
+	DB	'tream::CheckPacket - Not enough LARGE dynamic packet size: he'
+	DB	'ader %d packet size: %d', 0aH, 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EA@JMANDMEJ@Phase?5?$CFs?5does?5not?5handle?5this?5h@
 CONST	SEGMENT
 ??_C@_0EA@JMANDMEJ@Phase?5?$CFs?5does?5not?5handle?5this?5h@ DB 'Phase %s'
 	DB	' does not handle this header (header: %d, last: %d, %d)', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CF@JLNGLGD@recv?5ping?5packet?4?5?$CIsecuritymode@
+;	COMDAT ??_C@_0CH@LALGPME@Unknown?5packet?5header?3?5?$CFd?0?5last@
 CONST	SEGMENT
-??_C@_0CF@JLNGLGD@recv?5ping?5packet?4?5?$CIsecuritymode@ DB 'recv ping p'
-	DB	'acket. (securitymode %u)', 0aH, 00H		; `string'
+??_C@_0CH@LALGPME@Unknown?5packet?5header?3?5?$CFd?0?5last@ DB 'Unknown p'
+	DB	'acket header: %d, last: %d %d', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FP@JGOINIOH@CPythonNetworkStream?3?3CheckPack@
 CONST	SEGMENT
@@ -404,32 +415,21 @@ CONST	SEGMENT
 	DB	'tream::CheckPacket - Not enough dynamic packet size: header %'
 	DB	'd packet size: %d', 0aH, 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0GF@BNCBJFEH@CPythonNetworkStream?3?3CheckPack@
+;	COMDAT ??_C@_07FOABJBDD@?1logout@
 CONST	SEGMENT
-??_C@_0GF@BNCBJFEH@CPythonNetworkStream?3?3CheckPack@ DB 'CPythonNetworkS'
-	DB	'tream::CheckPacket - Not enough LARGE dynamic packet size: he'
-	DB	'ader %d packet size: %d', 0aH, 00H		; `string'
+??_C@_07FOABJBDD@?1logout@ DB '/logout', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@PCENNPGA@?$CFd?4?$CFd?4?$CFd?4?$CFd@
 CONST	SEGMENT
 ??_C@_0M@PCENNPGA@?$CFd?4?$CFd?4?$CFd?4?$CFd@ DB '%d.%d.%d.%d', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CH@LALGPME@Unknown?5packet?5header?3?5?$CFd?0?5last@
+;	COMDAT ??_C@_05CMMBDMDD@?1quit@
 CONST	SEGMENT
-??_C@_0CH@LALGPME@Unknown?5packet?5header?3?5?$CFd?0?5last@ DB 'Unknown p'
-	DB	'acket header: %d, last: %d %d', 00H		; `string'
+??_C@_05CMMBDMDD@?1quit@ DB '/quit', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@ODIJHOCP@?1phase_select@
 CONST	SEGMENT
 ??_C@_0O@ODIJHOCP@?1phase_select@ DB '/phase_select', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_07FOABJBDD@?1logout@
-CONST	SEGMENT
-??_C@_07FOABJBDD@?1logout@ DB '/logout', 00H		; `string'
-CONST	ENDS
-;	COMDAT ??_C@_05CMMBDMDD@?1quit@
-CONST	SEGMENT
-??_C@_05CMMBDMDD@?1quit@ DB '/quit', 00H		; `string'
 PUBLIC	??_ECPythonNetworkStream@@WHI@AEPAXI@Z		; [thunk]:CPythonNetworkStream::`vector deleting destructor'
 PUBLIC	?_Get_data@?$deque@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@ABEABV?$_Deque_val@U?$_Deque_simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@XZ ; std::deque<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Get_data
 PUBLIC	?_Getblock@?$_Deque_val@U?$_Deque_simple_types@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@QBEHI@Z ; std::_Deque_val<std::_Deque_simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::_Getblock

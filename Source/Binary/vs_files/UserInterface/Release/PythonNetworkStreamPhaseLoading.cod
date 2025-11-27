@@ -8,42 +8,32 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0FB@EBHCNDED@CPythonNetworkStream?3?3LoadLocal@ ; `string'
-PUBLIC	??_C@_0FF@CDAAOMKD@CPythonNetworkStream?3?3LoadLocal@ ; `string'
 PUBLIC	??_C@_0FB@IFBMBLGI@CPythonNetworkStream?3?3LoadLocal@ ; `string'
-PUBLIC	??_C@_0BO@GPONOGFJ@?$CD?$CD?5Network?5?9?5Loading?5Phase?5?$CD?$CD@ ; `string'
+PUBLIC	??_C@_0FB@EBHCNDED@CPythonNetworkStream?3?3LoadLocal@ ; `string'
 PUBLIC	??_C@_07BINAGFIJ@Loading@			; `string'
+PUBLIC	??_C@_0FF@CDAAOMKD@CPythonNetworkStream?3?3LoadLocal@ ; `string'
 PUBLIC	??_C@_0BK@DINNAMGH@Send?5EnterFrontGamePacket@	; `string'
+PUBLIC	??_C@_0BO@GPONOGFJ@?$CD?$CD?5Network?5?9?5Loading?5Phase?5?$CD?$CD@ ; `string'
 EXTRN	?DeleteAllInstances@CEffectManager@@QAEXXZ:PROC	; CEffectManager::DeleteAllInstances
 EXTRN	?DeleteAllInstances@CFlyingManager@@QAEXXZ:PROC	; CFlyingManager::DeleteAllInstances
 EXTRN	?SplitLineByTab@CMemoryTextFileLoader@@QAE_NKPAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@Z:PROC ; CMemoryTextFileLoader::SplitLineByTab
-;	COMDAT ?s_szChat@?1??GetLocaleChatVnum@CPythonNetworkStream@@QAEPBDK@Z@4PADA
-_BSS	SEGMENT
-?s_szChat@?1??GetLocaleChatVnum@CPythonNetworkStream@@QAEPBDK@Z@4PADA DB 0401H DUP (?) ; `CPythonNetworkStream::GetLocaleChatVnum'::`2'::s_szChat
-_BSS	ENDS
 ;	COMDAT ?s_szChat@?1??GetLocaleQuizVnum@CPythonNetworkStream@@QAEPBDK@Z@4PADA
 _BSS	SEGMENT
 ?s_szChat@?1??GetLocaleQuizVnum@CPythonNetworkStream@@QAEPBDK@Z@4PADA DB 0401H DUP (?) ; `CPythonNetworkStream::GetLocaleQuizVnum'::`2'::s_szChat
 _BSS	ENDS
-;	COMDAT ??_C@_0BK@DINNAMGH@Send?5EnterFrontGamePacket@
-CONST	SEGMENT
-??_C@_0BK@DINNAMGH@Send?5EnterFrontGamePacket@ DB 'Send EnterFrontGamePac'
-	DB	'ket', 00H					; `string'
-CONST	ENDS
-;	COMDAT ??_C@_07BINAGFIJ@Loading@
-CONST	SEGMENT
-??_C@_07BINAGFIJ@Loading@ DB 'Loading', 00H		; `string'
-CONST	ENDS
+;	COMDAT ?s_szChat@?1??GetLocaleChatVnum@CPythonNetworkStream@@QAEPBDK@Z@4PADA
+_BSS	SEGMENT
+?s_szChat@?1??GetLocaleChatVnum@CPythonNetworkStream@@QAEPBDK@Z@4PADA DB 0401H DUP (?) ; `CPythonNetworkStream::GetLocaleChatVnum'::`2'::s_szChat
+_BSS	ENDS
 ;	COMDAT ??_C@_0BO@GPONOGFJ@?$CD?$CD?5Network?5?9?5Loading?5Phase?5?$CD?$CD@
 CONST	SEGMENT
 ??_C@_0BO@GPONOGFJ@?$CD?$CD?5Network?5?9?5Loading?5Phase?5?$CD?$CD@ DB '#'
 	DB	'# Network - Loading Phase ##', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0FB@IFBMBLGI@CPythonNetworkStream?3?3LoadLocal@
+;	COMDAT ??_C@_0BK@DINNAMGH@Send?5EnterFrontGamePacket@
 CONST	SEGMENT
-??_C@_0FB@IFBMBLGI@CPythonNetworkStream?3?3LoadLocal@ DB 'CPythonNetworkS'
-	DB	'tream::LoadLocaleChatVnum(c_szLocaleChatFileName=%s) - Load E'
-	DB	'rror', 00H					; `string'
+??_C@_0BK@DINNAMGH@Send?5EnterFrontGamePacket@ DB 'Send EnterFrontGamePac'
+	DB	'ket', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FF@CDAAOMKD@CPythonNetworkStream?3?3LoadLocal@
 CONST	SEGMENT
@@ -51,10 +41,20 @@ CONST	SEGMENT
 	DB	'tream::LoadLocaleStringVnum(c_szLocaleStringFileName=%s) - Lo'
 	DB	'ad Error', 00H				; `string'
 CONST	ENDS
+;	COMDAT ??_C@_07BINAGFIJ@Loading@
+CONST	SEGMENT
+??_C@_07BINAGFIJ@Loading@ DB 'Loading', 00H		; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0FB@EBHCNDED@CPythonNetworkStream?3?3LoadLocal@
 CONST	SEGMENT
 ??_C@_0FB@EBHCNDED@CPythonNetworkStream?3?3LoadLocal@ DB 'CPythonNetworkS'
 	DB	'tream::LoadLocaleQuizVnum(c_szLocaleQuizFileName=%s) - Load E'
+	DB	'rror', 00H					; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0FB@IFBMBLGI@CPythonNetworkStream?3?3LoadLocal@
+CONST	SEGMENT
+??_C@_0FB@IFBMBLGI@CPythonNetworkStream?3?3LoadLocal@ DB 'CPythonNetworkS'
+	DB	'tream::LoadLocaleChatVnum(c_szLocaleChatFileName=%s) - Load E'
 	DB	'rror', 00H					; `string'
 PUBLIC	??$?0_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@$0A@@?$pair@$$CBKV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QAE@$$QAU?$pair@_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@@Z ; std::pair<unsigned long const ,std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::pair<unsigned long const ,std::basic_string<char,std::char_traits<char>,std::allocator<char> > ><__int64,std::basic_string<char,std::char_traits<char>,std::allocator<char> >,0>
 PUBLIC	??$construct_at@U?$pair@$$CBKV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@U?$pair@_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@YAPAU?$pair@$$CBKV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@QAU10@$$QAU?$pair@_JV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@0@@Z ; std::construct_at<std::pair<unsigned long const ,std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::pair<__int64,std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >

@@ -8,362 +8,357 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_08CCLMAODE@walk?4msa@			; `string'
 PUBLIC	??_C@_08ICAEJBNN@wait?4msa@			; `string'
-PUBLIC	??_C@_0L@HAPJNMOH@damage?4msa@			; `string'
 PUBLIC	??_C@_07GFOKBFIJ@run?4msa@			; `string'
-PUBLIC	??_C@_0N@IJJJNCLN@damage_2?4msa@		; `string'
+PUBLIC	??_C@_08CCLMAODE@walk?4msa@			; `string'
 PUBLIC	??_C@_0N@PANKABD@damage_1?4msa@			; `string'
-PUBLIC	??_C@_0BC@EMKDCHDA@damage_flying?4msa@		; `string'
+PUBLIC	??_C@_0L@HAPJNMOH@damage?4msa@			; `string'
 PUBLIC	??_C@_0N@ECMFABBI@damage_3?4msa@		; `string'
-PUBLIC	??_C@_0BH@POMMBPPP@back_damage_flying?4msa@	; `string'
+PUBLIC	??_C@_0N@IJJJNCLN@damage_2?4msa@		; `string'
 PUBLIC	??_C@_0BC@ENKCEEH@falling_stand?4msa@		; `string'
-PUBLIC	??_C@_08KDDKKNGP@dead?4msa@			; `string'
+PUBLIC	??_C@_0BC@EMKDCHDA@damage_flying?4msa@		; `string'
 PUBLIC	??_C@_0BH@LGLFBMII@back_falling_stand?4msa@	; `string'
-PUBLIC	??_C@_08EAFDJLAA@clap?4msa@			; `string'
+PUBLIC	??_C@_0BH@POMMBPPP@back_damage_flying?4msa@	; `string'
 PUBLIC	??_C@_07FIEPIKFH@dig?4msa@			; `string'
-PUBLIC	??_C@_0N@IGOIJANJ@cheers_2?4msa@		; `string'
+PUBLIC	??_C@_08KDDKKNGP@dead?4msa@			; `string'
 PUBLIC	??_C@_0N@HMOCHH@cheers_1?4msa@			; `string'
-PUBLIC	??_C@_0M@NCMANMO@dance_2?4msa@			; `string'
+PUBLIC	??_C@_08EAFDJLAA@clap?4msa@			; `string'
 PUBLIC	??_C@_0M@ILLIHPGA@dance_1?4msa@			; `string'
-PUBLIC	??_C@_0M@NLHFOOND@dance_4?4msa@			; `string'
+PUBLIC	??_C@_0N@IGOIJANJ@cheers_2?4msa@		; `string'
 PUBLIC	??_C@_0M@MGHANOGL@dance_3?4msa@			; `string'
-PUBLIC	??_C@_0M@JGLNEPNI@dance_6?4msa@			; `string'
+PUBLIC	??_C@_0M@NCMANMO@dance_2?4msa@			; `string'
 PUBLIC	??_C@_0M@BACJDNHG@dance_5?4msa@			; `string'
-PUBLIC	??_C@_0M@FNOBJMHN@dance_7?4msa@			; `string'
+PUBLIC	??_C@_0M@NLHFOOND@dance_4?4msa@			; `string'
 PUBLIC	??_C@_0BD@KHKAFLEJ@congratulation?4msa@		; `string'
-PUBLIC	??_C@_08JMHPKKDG@doze?4msa@			; `string'
+PUBLIC	??_C@_0M@JGLNEPNI@dance_6?4msa@			; `string'
 PUBLIC	??_C@_0L@LDFOMLNC@selfie?4msa@			; `string'
-PUBLIC	??_C@_0L@JIIENGDL@pushup?4msa@			; `string'
+PUBLIC	??_C@_0M@FNOBJMHN@dance_7?4msa@			; `string'
 PUBLIC	??_C@_0N@KADBCIBP@exercise?4msa@		; `string'
-PUBLIC	??_C@_0N@ONDPICMI@backflip?4msa@		; `string'
+PUBLIC	??_C@_08JMHPKKDG@doze?4msa@			; `string'
 PUBLIC	??_C@_08KIDMJOJE@amin?4msa@			; `string'
-PUBLIC	??_C@_0M@BIIBKDDJ@cocalar?4msa@			; `string'
+PUBLIC	??_C@_0L@JIIENGDL@pushup?4msa@			; `string'
 PUBLIC	??_C@_09FNCHIMNE@break?4msa@			; `string'
-PUBLIC	??_C@_0N@JKOAMICF@facepalm?4msa@		; `string'
+PUBLIC	??_C@_0N@ONDPICMI@backflip?4msa@		; `string'
 PUBLIC	??_C@_07DLGNFFID@dab?4msa@			; `string'
-PUBLIC	??_C@_08PNINIKKD@laba?4msa@			; `string'
+PUBLIC	??_C@_0M@BIIBKDDJ@cocalar?4msa@			; `string'
 PUBLIC	??_C@_0M@CADELGFC@fuckyou?4msa@			; `string'
-PUBLIC	??_C@_0BE@JGGHACGM@ridack_animoney?4msa@	; `string'
+PUBLIC	??_C@_0N@JKOAMICF@facepalm?4msa@		; `string'
 PUBLIC	??_C@_0N@HOIOLBIM@oriental?4msa@		; `string'
-PUBLIC	??_C@_09GLDGLOGH@twerk?4msa@			; `string'
+PUBLIC	??_C@_08PNINIKKD@laba?4msa@			; `string'
 PUBLIC	??_C@_09FHIPELCK@pingu?4msa@			; `string'
-PUBLIC	??_C@_0L@NBAGPPII@shimmy?4msa@			; `string'
+PUBLIC	??_C@_0BE@JGGHACGM@ridack_animoney?4msa@	; `string'
 PUBLIC	??_C@_09EDJADKPI@samba?4msa@			; `string'
-PUBLIC	??_C@_0O@MDMLHNLA@bestmates?4msa@		; `string'
+PUBLIC	??_C@_09GLDGLOGH@twerk?4msa@			; `string'
 PUBLIC	??_C@_08KBKJJCJE@slow?4msa@			; `string'
-PUBLIC	??_C@_09GBAGGLOH@horon?4msa@			; `string'
+PUBLIC	??_C@_0L@NBAGPPII@shimmy?4msa@			; `string'
 PUBLIC	??_C@_09KDLCKGID@flair?4msa@			; `string'
-PUBLIC	??_C@_0N@CBHHDINN@snowball?4msa@		; `string'
+PUBLIC	??_C@_0O@MDMLHNLA@bestmates?4msa@		; `string'
 PUBLIC	??_C@_0P@PNDGIEG@robotdance?4msa@		; `string'
-PUBLIC	??_C@_0M@MPBONJHC@forgive?4msa@			; `string'
+PUBLIC	??_C@_09GBAGGLOH@horon?4msa@			; `string'
 PUBLIC	??_C@_0P@NOBNLAJN@surprised2?4msa@		; `string'
-PUBLIC	??_C@_0P@BBBKMBFK@attractive?4msa@		; `string'
+PUBLIC	??_C@_0N@CBHHDINN@snowball?4msa@		; `string'
 PUBLIC	??_C@_09KGOJKEAM@angry?4msa@			; `string'
-PUBLIC	??_C@_07LBJKNKDK@shy?4msa@			; `string'
+PUBLIC	??_C@_0M@MPBONJHC@forgive?4msa@			; `string'
 PUBLIC	??_C@_07JLEKIOKM@sad?4msa@			; `string'
-PUBLIC	??_C@_0L@BMNGDGCE@banter?4msa@			; `string'
+PUBLIC	??_C@_0P@BBBKMBFK@attractive?4msa@		; `string'
 PUBLIC	??_C@_0M@NGCAKNDO@cheerup?4msa@			; `string'
-PUBLIC	??_C@_0BN@LHHKIHL@french_kiss_with_warrior?4msa@ ; `string'
+PUBLIC	??_C@_07LBJKNKDK@shy?4msa@			; `string'
 PUBLIC	??_C@_07BHMJMOLE@joy?4msa@			; `string'
-PUBLIC	??_C@_0BK@OHJJLAOB@french_kiss_with_sura?4msa@	; `string'
+PUBLIC	??_C@_0L@BMNGDGCE@banter?4msa@			; `string'
 PUBLIC	??_C@_0BO@IKKADBEN@french_kiss_with_assassin?4msa@ ; `string'
-PUBLIC	??_C@_0BG@KMOAFEGF@kiss_with_warrior?4msa@	; `string'
+PUBLIC	??_C@_0BN@LHHKIHL@french_kiss_with_warrior?4msa@ ; `string'
 PUBLIC	??_C@_0BM@IGFLIAI@french_kiss_with_shaman?4msa@	; `string'
-PUBLIC	??_C@_0BD@GLHIMEMD@kiss_with_sura?4msa@		; `string'
+PUBLIC	??_C@_0BK@OHJJLAOB@french_kiss_with_sura?4msa@	; `string'
 PUBLIC	??_C@_0BH@HAAIJLNC@kiss_with_assassin?4msa@	; `string'
-PUBLIC	??_C@_0N@GKAFMC@slap_hit?4msa@			; `string'
+PUBLIC	??_C@_0BG@KMOAFEGF@kiss_with_warrior?4msa@	; `string'
 PUBLIC	??_C@_0BF@PILPMHOM@kiss_with_shaman?4msa@	; `string'
-PUBLIC	??_C@_0N@LALHEHLF@selected?4msa@		; `string'
+PUBLIC	??_C@_0BD@GLHIMEMD@kiss_with_sura?4msa@		; `string'
 PUBLIC	??_C@_0O@FMGKNMJL@slap_hurt?4msa@		; `string'
-PUBLIC	??_C@_09BMCMDEBL@throw?4msa@			; `string'
+PUBLIC	??_C@_0N@GKAFMC@slap_hit?4msa@			; `string'
 PUBLIC	??_C@_0BB@OPJHFAL@not_selected?4msa@		; `string'
-PUBLIC	??_C@_0BD@PJPEJNEN@fishing_cancel?4msa@		; `string'
+PUBLIC	??_C@_0N@LALHEHLF@selected?4msa@		; `string'
 PUBLIC	??_C@_0BB@EMFJAHIF@fishing_wait?4msa@		; `string'
-PUBLIC	??_C@_0BC@ODMMEPDM@fishing_catch?4msa@		; `string'
+PUBLIC	??_C@_09BMCMDEBL@throw?4msa@			; `string'
 PUBLIC	??_C@_0BC@DGADAJEJ@fishing_react?4msa@		; `string'
-PUBLIC	??_C@_0BG@FFNKAIII@guild_yongsinuipi?4msa@	; `string'
+PUBLIC	??_C@_0BD@PJPEJNEN@fishing_cancel?4msa@		; `string'
 PUBLIC	??_C@_0BB@BIGHNBEB@fishing_fail?4msa@		; `string'
-PUBLIC	??_C@_0BG@HDNJOADD@guild_seonghwigap?4msa@	; `string'
+PUBLIC	??_C@_0BC@ODMMEPDM@fishing_catch?4msa@		; `string'
 PUBLIC	??_C@_0BL@JEOHKJJH@guild_yongsinuichukbok?4msa@	; `string'
-PUBLIC	??_C@_0BJ@HNIJGNCG@guild_yongsinuibunno?4msa@	; `string'
+PUBLIC	??_C@_0BG@FFNKAIII@guild_yongsinuipi?4msa@	; `string'
 PUBLIC	??_C@_0BD@DBNCDDCI@guild_gasokhwa?4msa@		; `string'
-PUBLIC	??_C@_0BJ@EONHLAEO@d?3?1ymir?5work?1pc?1warrior?1@ ; `string'
+PUBLIC	??_C@_0BG@HDNJOADD@guild_seonghwigap?4msa@	; `string'
 PUBLIC	??_C@_0BD@PFKLBBPM@guild_jumunsul?4msa@		; `string'
-PUBLIC	??_C@_0BK@EADBPCMI@d?3?1ymir?5work?1pc?1assassin?1@ ; `string'
+PUBLIC	??_C@_0BJ@HNIJGNCG@guild_yongsinuibunno?4msa@	; `string'
 PUBLIC	??_C@_0BK@EBDPPEFA@d?3?1ymir?5work?1pc2?1warrior?1@ ; `string'
-PUBLIC	??_C@_0BG@FABILPII@d?3?1ymir?5work?1pc?1sura?1@	; `string'
+PUBLIC	??_C@_0BJ@EONHLAEO@d?3?1ymir?5work?1pc?1warrior?1@ ; `string'
 PUBLIC	??_C@_0BL@LKDBCHOP@d?3?1ymir?5work?1pc2?1assassin?1@ ; `string'
-PUBLIC	??_C@_0BI@MFKBHNDF@d?3?1ymir?5work?1pc?1shaman?1@ ; `string'
+PUBLIC	??_C@_0BK@EADBPCMI@d?3?1ymir?5work?1pc?1assassin?1@ ; `string'
 PUBLIC	??_C@_0BH@KODFOLEP@d?3?1ymir?5work?1pc2?1sura?1@ ; `string'
-PUBLIC	??_C@_0L@MHPJJBMF@PVP_LEVEL0@			; `string'
+PUBLIC	??_C@_0BG@FABILPII@d?3?1ymir?5work?1pc?1sura?1@	; `string'
 PUBLIC	??_C@_0BJ@CNBMFHHM@d?3?1ymir?5work?1pc2?1shaman?1@ ; `string'
-PUBLIC	??_C@_0L@PFMPPDEH@PVP_LEVEL2@			; `string'
+PUBLIC	??_C@_0BI@MFKBHNDF@d?3?1ymir?5work?1pc?1shaman?1@ ; `string'
 PUBLIC	??_C@_0L@NOOCKAIE@PVP_LEVEL1@			; `string'
-PUBLIC	??_C@_0L@KDJFFEMB@PVP_LEVEL4@			; `string'
+PUBLIC	??_C@_0L@MHPJJBMF@PVP_LEVEL0@			; `string'
 PUBLIC	??_C@_0L@OMNEMCAG@PVP_LEVEL3@			; `string'
-PUBLIC	??_C@_0L@JBKDDGED@PVP_LEVEL6@			; `string'
+PUBLIC	??_C@_0L@PFMPPDEH@PVP_LEVEL2@			; `string'
 PUBLIC	??_C@_0L@LKIOGFIA@PVP_LEVEL5@			; `string'
-PUBLIC	??_C@_0L@PCABLMN@PVP_LEVEL8@			; `string'
+PUBLIC	??_C@_0L@KDJFFEMB@PVP_LEVEL4@			; `string'
 PUBLIC	??_C@_0L@IILIAHAC@PVP_LEVEL7@			; `string'
-PUBLIC	??_C@_0BE@NBMHLOAL@TITLE_SYSTEM_NAME_1@		; `string'
+PUBLIC	??_C@_0L@JBKDDGED@PVP_LEVEL6@			; `string'
 PUBLIC	??_C@_0BE@MINMIPEK@TITLE_SYSTEM_NAME_0@		; `string'
-PUBLIC	??_C@_0BE@ODPBNMIJ@TITLE_SYSTEM_NAME_3@		; `string'
+PUBLIC	??_C@_0L@PCABLMN@PVP_LEVEL8@			; `string'
 PUBLIC	??_C@_0BE@PKOKONMI@TITLE_SYSTEM_NAME_2@		; `string'
-PUBLIC	??_C@_0BE@LFKLHLAP@TITLE_SYSTEM_NAME_5@		; `string'
+PUBLIC	??_C@_0BE@NBMHLOAL@TITLE_SYSTEM_NAME_1@		; `string'
 PUBLIC	??_C@_0BE@KMLAEKEO@TITLE_SYSTEM_NAME_4@		; `string'
-PUBLIC	??_C@_0BE@IHJNBJIN@TITLE_SYSTEM_NAME_7@		; `string'
+PUBLIC	??_C@_0BE@ODPBNMIJ@TITLE_SYSTEM_NAME_3@		; `string'
 PUBLIC	??_C@_0BE@JOIGCIMM@TITLE_SYSTEM_NAME_6@		; `string'
-PUBLIC	??_C@_0BE@BJBODEAD@TITLE_SYSTEM_NAME_9@		; `string'
+PUBLIC	??_C@_0BE@LFKLHLAP@TITLE_SYSTEM_NAME_5@		; `string'
 PUBLIC	??_C@_0BE@FAFEC@TITLE_SYSTEM_NAME_8@		; `string'
-PUBLIC	??_C@_0BF@FBFOBJIE@TITLE_SYSTEM_NAME_11@	; `string'
+PUBLIC	??_C@_0BE@IHJNBJIN@TITLE_SYSTEM_NAME_7@		; `string'
 PUBLIC	??_C@_0BF@EIEFCIMF@TITLE_SYSTEM_NAME_10@	; `string'
-PUBLIC	??_C@_0BF@GDGIHLAG@TITLE_SYSTEM_NAME_13@	; `string'
+PUBLIC	??_C@_0BE@BJBODEAD@TITLE_SYSTEM_NAME_9@		; `string'
 PUBLIC	??_C@_0BF@HKHDEKEH@TITLE_SYSTEM_NAME_12@	; `string'
-PUBLIC	??_C@_0BF@DFDCNMIA@TITLE_SYSTEM_NAME_15@	; `string'
+PUBLIC	??_C@_0BF@FBFOBJIE@TITLE_SYSTEM_NAME_11@	; `string'
 PUBLIC	??_C@_0BF@CMCJONMB@TITLE_SYSTEM_NAME_14@	; `string'
-PUBLIC	??_C@_0BF@HAELOAC@TITLE_SYSTEM_NAME_17@		; `string'
+PUBLIC	??_C@_0BF@GDGIHLAG@TITLE_SYSTEM_NAME_13@	; `string'
 PUBLIC	??_C@_0BF@BOBPIPED@TITLE_SYSTEM_NAME_16@	; `string'
-PUBLIC	??_C@_0BF@JJIHJDIM@TITLE_SYSTEM_NAME_19@	; `string'
+PUBLIC	??_C@_0BF@DFDCNMIA@TITLE_SYSTEM_NAME_15@	; `string'
 PUBLIC	??_C@_0BF@IAJMKCMN@TITLE_SYSTEM_NAME_18@	; `string'
+PUBLIC	??_C@_0BF@HAELOAC@TITLE_SYSTEM_NAME_17@		; `string'
 PUBLIC	??_C@_0BF@EKADJGJM@TITLE_SYSTEM_NAME_20@	; `string'
-PUBLIC	??_C@_0BO@HKHPGMPA@call?5to?5empty?5boost?3?3function@ ; `string'
-PUBLIC	??_C@_1LO@MFPGNBAB@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
+PUBLIC	??_C@_0BF@JJIHJDIM@TITLE_SYSTEM_NAME_19@	; `string'
 PUBLIC	??_C@_0L@KDPPMKNP@localeInfo@			; `string'
-PUBLIC	??_C@_0BJ@ODDICDAB@Can?8t?5import?5localeInfo?4@ ; `string'
+PUBLIC	??_C@_0BO@HKHPGMPA@call?5to?5empty?5boost?3?3function@ ; `string'
 PUBLIC	??_C@_1CM@HKLDGJNG@?$AAl?$AAo?$AAc?$AAa?$AAl?$AAe?$AAI?$AAn?$AAf?$AAo?$AA?5?$AA?$CB?$AA?$DN?$AA?5?$AAn@ ; `string'
-PUBLIC	??_C@_04HHCDBDLF@?5?7?$AN?6@			; `string'
+PUBLIC	??_C@_1LO@MFPGNBAB@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
 PUBLIC	??_C@_0BN@LCAJBDFE@unknown?5locale?5string?5key?5?$CFs@ ; `string'
-PUBLIC	??_C@_0BC@NHKKFAHJ@msm?1warrior_w?4msm@		; `string'
+PUBLIC	??_C@_0BJ@ODDICDAB@Can?8t?5import?5localeInfo?4@ ; `string'
 PUBLIC	??_C@_0BC@HFOHHBIE@msm?1warrior_m?4msm@		; `string'
-PUBLIC	??_C@_0BD@MGMOPDDK@msm?1assassin_w?4msm@	; `string'
+PUBLIC	??_C@_04HHCDBDLF@?5?7?$AN?6@			; `string'
 PUBLIC	??_C@_0BD@GEIDNCMH@msm?1assassin_m?4msm@	; `string'
-PUBLIC	??_C@_0P@GEDPELOH@msm?1sura_w?4msm@		; `string'
+PUBLIC	??_C@_0BC@NHKKFAHJ@msm?1warrior_w?4msm@		; `string'
 PUBLIC	??_C@_0P@MGHCGKBK@msm?1sura_m?4msm@		; `string'
-PUBLIC	??_C@_0BB@GEJMDEOB@msm?1shaman_w?4msm@		; `string'
+PUBLIC	??_C@_0BD@MGMOPDDK@msm?1assassin_w?4msm@	; `string'
 PUBLIC	??_C@_0BB@MGNBBFBM@msm?1shaman_m?4msm@		; `string'
-PUBLIC	??_C@_0L@CCMJLBLK@wait_1?4msa@			; `string'
+PUBLIC	??_C@_0P@GEDPELOH@msm?1sura_w?4msm@		; `string'
 PUBLIC	??_C@_06NCLANNPF@intro?1@			; `string'
-PUBLIC	??_C@_0N@KCFDBPPH@combo_01?4msa@		; `string'
+PUBLIC	??_C@_0BB@GEJMDEOB@msm?1shaman_w?4msm@		; `string'
 PUBLIC	??_C@_0L@OAPILEA@attack?4msa@			; `string'
-PUBLIC	??_C@_0N@OPJLLOPM@combo_03?4msa@		; `string'
+PUBLIC	??_C@_0L@CCMJLBLK@wait_1?4msa@			; `string'
 PUBLIC	??_C@_0N@CEMHGNFJ@combo_02?4msa@		; `string'
-PUBLIC	??_C@_0N@DJMCFNOB@combo_05?4msa@		; `string'
+PUBLIC	??_C@_0N@KCFDBPPH@combo_01?4msa@		; `string'
 PUBLIC	??_C@_0N@PCJOIOEE@combo_04?4msa@		; `string'
-PUBLIC	??_C@_0N@HEAKPMOK@combo_07?4msa@		; `string'
+PUBLIC	??_C@_0N@OPJLLOPM@combo_03?4msa@		; `string'
 PUBLIC	??_C@_0N@LPFGCPEP@combo_06?4msa@		; `string'
-PUBLIC	??_C@_08GJBGCJFC@general?1@			; `string'
+PUBLIC	??_C@_0N@DJMCFNOB@combo_05?4msa@		; `string'
 PUBLIC	??_C@_0N@IFFMEODP@combo_08?4msa@		; `string'
-PUBLIC	??_C@_06GLCDECAA@skill?1@			; `string'
+PUBLIC	??_C@_0N@HEAKPMOK@combo_07?4msa@		; `string'
 PUBLIC	??_C@_0N@BLEEDAJM@attack_1?4msa@		; `string'
-PUBLIC	??_C@_04KEDBDKLG@?4msa@				; `string'
+PUBLIC	??_C@_08GJBGCJFC@general?1@			; `string'
 PUBLIC	??_C@_01IDAFKMJL@_@				; `string'
-PUBLIC	??_C@_07GMOHJGHH@palbang@			; `string'
+PUBLIC	??_C@_06GLCDECAA@skill?1@			; `string'
 PUBLIC	??_C@_07GBGGKCIL@samyeon@			; `string'
-PUBLIC	??_C@_0L@CKDDNDMD@geomgyeong@			; `string'
+PUBLIC	??_C@_04KEDBDKLG@?4msa@				; `string'
 PUBLIC	??_C@_07JOKIOKIF@jeongwi@			; `string'
-PUBLIC	??_C@_0L@IGJCNCLO@gigongcham@			; `string'
+PUBLIC	??_C@_07GMOHJGHH@palbang@			; `string'
 PUBLIC	??_C@_07EADJNFBA@tanhwan@			; `string'
-PUBLIC	??_C@_06GHPDMNFE@daejin@			; `string'
+PUBLIC	??_C@_0L@CKDDNDMD@geomgyeong@			; `string'
 PUBLIC	??_C@_08JHMEPNFK@gyeoksan@			; `string'
-PUBLIC	??_C@_08LNKNCCEA@geompung@			; `string'
+PUBLIC	??_C@_0L@IGJCNCLO@gigongcham@			; `string'
 PUBLIC	??_C@_09JILLLHEB@cheongeun@			; `string'
-PUBLIC	??_C@_0L@KEFNMDBE@wait_2?4msa@			; `string'
+PUBLIC	??_C@_06GHPDMNFE@daejin@			; `string'
 PUBLIC	??_C@_06IFPABCPH@horse?1@			; `string'
-PUBLIC	??_C@_0BF@LGGJGGGG@horse_onehand_sword?1@	; `string'
+PUBLIC	??_C@_08LNKNCCEA@geompung@			; `string'
 PUBLIC	??_C@_0BB@PMJLOLO@skill_charge?4msa@		; `string'
-PUBLIC	??_C@_0BB@LJDCMBPF@skill_splash?4msa@		; `string'
+PUBLIC	??_C@_0L@KEFNMDBE@wait_2?4msa@			; `string'
 PUBLIC	??_C@_0BF@IEFBNLND@skill_wildattack?4msa@	; `string'
-PUBLIC	??_C@_0P@NLJCLLFI@onehand_sword?1@		; `string'
+PUBLIC	??_C@_0BF@LGGJGGGG@horse_onehand_sword?1@	; `string'
 PUBLIC	??_C@_0BF@NOEEPKNN@horse_twohand_sword?1@	; `string'
-PUBLIC	??_C@_06DELHDFDH@amseup@			; `string'
+PUBLIC	??_C@_0BB@LJDCMBPF@skill_splash?4msa@		; `string'
 PUBLIC	??_C@_0P@LDLPCHOD@twohand_sword?1@		; `string'
-PUBLIC	??_C@_07IDCJOJJI@charyun@			; `string'
+PUBLIC	??_C@_0P@NLJCLLFI@onehand_sword?1@		; `string'
 PUBLIC	??_C@_07CCLNAKDL@gungsin@			; `string'
-PUBLIC	??_C@_07IHJPMINM@sangong@			; `string'
+PUBLIC	??_C@_06DELHDFDH@amseup@			; `string'
 PUBLIC	??_C@_09JKPIDGAH@eunhyeong@			; `string'
-PUBLIC	??_C@_09FEANDFBN@gwangyeok@			; `string'
+PUBLIC	??_C@_07IDCJOJJI@charyun@			; `string'
 PUBLIC	??_C@_06KJJAMHND@yeonsa@			; `string'
-PUBLIC	??_C@_0L@BGCOEKBO@gyeonggong@			; `string'
+PUBLIC	??_C@_07IHJPMINM@sangong@			; `string'
 PUBLIC	??_C@_05MFNHEGEM@hwajo@				; `string'
-PUBLIC	??_C@_0BG@DOOKIINL@horse_dualhand_sword?1@	; `string'
+PUBLIC	??_C@_09FEANDFBN@gwangyeok@			; `string'
 PUBLIC	??_C@_09LEMOANFL@dokgigung@			; `string'
-PUBLIC	??_C@_0BA@PPOGGOKN@dualhand_sword?1@		; `string'
+PUBLIC	??_C@_0L@BGCOEKBO@gyeonggong@			; `string'
 PUBLIC	??_C@_0L@EFEKEHBD@horse_bow?1@			; `string'
-PUBLIC	??_C@_0L@JPGDFLNB@equip_left@			; `string'
+PUBLIC	??_C@_0BG@DOOKIINL@horse_dualhand_sword?1@	; `string'
 PUBLIC	??_C@_04PKMIINCC@bow?1@				; `string'
-PUBLIC	??_C@_08OHEKNNNO@yonggwon@			; `string'
+PUBLIC	??_C@_0BA@PPOGGOKN@dualhand_sword?1@		; `string'
 PUBLIC	??_C@_0L@DJIGEGBB@swaeryeong@			; `string'
-PUBLIC	??_C@_06ODEHPGML@gongpo@			; `string'
+PUBLIC	??_C@_0L@JPGDFLNB@equip_left@			; `string'
 PUBLIC	??_C@_07PCPFAMJI@gwigeom@			; `string'
-PUBLIC	??_C@_06MOONPKKC@pabeop@			; `string'
+PUBLIC	??_C@_08OHEKNNNO@yonggwon@			; `string'
 PUBLIC	??_C@_07LFEFDGEL@jumagap@			; `string'
-PUBLIC	??_C@_07BIFGLFLK@hwayeom@			; `string'
+PUBLIC	??_C@_06ODEHPGML@gongpo@			; `string'
 PUBLIC	??_C@_08KFCDLEKO@maryeong@			; `string'
-PUBLIC	??_C@_07DAKCJLAA@heuksin@			; `string'
+PUBLIC	??_C@_06MOONPKKC@pabeop@			; `string'
 PUBLIC	??_C@_07BJCMDCFL@muyeong@			; `string'
-PUBLIC	??_C@_06KGJLJCMM@mahwan@			; `string'
+PUBLIC	??_C@_07BIFGLFLK@hwayeom@			; `string'
 PUBLIC	??_C@_05FDLEEPDH@tusok@				; `string'
-PUBLIC	??_C@_0L@MNFILAIM@yongpa?4msa@			; `string'
+PUBLIC	??_C@_07DAKCJLAA@heuksin@			; `string'
 PUBLIC	??_C@_0L@IHPKNOEK@bipabu?4msa@			; `string'
-PUBLIC	??_C@_0BB@DLGKDNEP@hosin_target?4msa@		; `string'
+PUBLIC	??_C@_06KGJLJCMM@mahwan@			; `string'
 PUBLIC	??_C@_0N@CMOIHHNG@paeryong?4msa@		; `string'
-PUBLIC	??_C@_0BD@MANOCIDD@gicheon_target?4msa@		; `string'
+PUBLIC	??_C@_0L@MNFILAIM@yongpa?4msa@			; `string'
 PUBLIC	??_C@_0BA@MDIPNDDG@boho_target?4msa@		; `string'
-PUBLIC	??_C@_0M@ENFDDKEB@byeorak?4msa@			; `string'
+PUBLIC	??_C@_0BB@DLGKDNEP@hosin_target?4msa@		; `string'
 PUBLIC	??_C@_0M@DCABOONL@noejeon?4msa@			; `string'
-PUBLIC	??_C@_0BE@MFGPPOME@jeongeop_target?4msa@	; `string'
+PUBLIC	??_C@_0BD@MANOCIDD@gicheon_target?4msa@		; `string'
 PUBLIC	??_C@_0L@MCNOFKDI@pokroe?4msa@			; `string'
-PUBLIC	??_C@_0BG@GPIGKLGF@jeungryeok_target?4msa@	; `string'
+PUBLIC	??_C@_0M@ENFDDKEB@byeorak?4msa@			; `string'
 PUBLIC	??_C@_0BD@LBFIFMPF@kwaesok_target?4msa@		; `string'
-PUBLIC	??_C@_06EKCFDMNG@yongpa@			; `string'
+PUBLIC	??_C@_0BE@MFGPPOME@jeongeop_target?4msa@	; `string'
 PUBLIC	??_C@_06DCBCMBIL@bipabu@			; `string'
-PUBLIC	??_C@_05HEAKIKAD@hosin@				; `string'
+PUBLIC	??_C@_0BG@GPIGKLGF@jeungryeok_target?4msa@	; `string'
 PUBLIC	??_C@_08JFACDJII@paeryong@			; `string'
-PUBLIC	??_C@_07MNPCAMHP@gicheon@			; `string'
+PUBLIC	??_C@_06EKCFDMNG@yongpa@			; `string'
 PUBLIC	??_C@_04BNMLCGGK@boho@				; `string'
-PUBLIC	??_C@_07DMJCBHLB@byeorak@			; `string'
+PUBLIC	??_C@_05HEAKIKAD@hosin@				; `string'
 PUBLIC	??_C@_07BNPEJCBD@noejeon@			; `string'
-PUBLIC	??_C@_08EMOOEFBF@jeongeop@			; `string'
+PUBLIC	??_C@_07MNPCAMHP@gicheon@			; `string'
 PUBLIC	??_C@_06DIMHAJB@pokroe@				; `string'
-PUBLIC	??_C@_0L@FLNLBONH@jeungryeok@			; `string'
+PUBLIC	??_C@_07DMJCBHLB@byeorak@			; `string'
 PUBLIC	??_C@_07BAOBGHBP@kwaesok@			; `string'
-PUBLIC	??_C@_0M@CJJDMIFC@horse_bell?1@			; `string'
+PUBLIC	??_C@_08EMOOEFBF@jeongeop@			; `string'
 PUBLIC	??_C@_0L@EDOCAOBP@horse_fan?1@			; `string'
-PUBLIC	??_C@_05HPFOEPJE@Bell?1@			; `string'
+PUBLIC	??_C@_0L@FLNLBONH@jeungryeok@			; `string'
 PUBLIC	??_C@_04PMGAMECO@fan?1@				; `string'
-PUBLIC	??_C@_08OJPMLOOM@wedding?1@			; `string'
+PUBLIC	??_C@_0M@CJJDMIFC@horse_bell?1@			; `string'
 PUBLIC	??_C@_08NAFDJPKK@fishing?1@			; `string'
-PUBLIC	??_C@_0DN@INCCPAIG@d?3?1ymir?5work?1effect?1etc?1gatheri@ ; `string'
+PUBLIC	??_C@_05HPFOEPJE@Bell?1@			; `string'
 PUBLIC	??_C@_07LEDLFDC@action?1@			; `string'
-PUBLIC	??_C@_0DH@OHFANMIM@d?3?1ymir?5work?1effect?1etc?1gatheri@ ; `string'
+PUBLIC	??_C@_08OJPMLOOM@wedding?1@			; `string'
 PUBLIC	??_C@_0DJ@CBOGDNBD@d?3?1ymir?5work?1effect?1etc?1gatheri@ ; `string'
-PUBLIC	??_C@_0DK@PFLLCILA@d?3?1ymir?5work?1effect?1etc?1gatheri@ ; `string'
+PUBLIC	??_C@_0DN@INCCPAIG@d?3?1ymir?5work?1effect?1etc?1gatheri@ ; `string'
 PUBLIC	??_C@_0EC@KFOGKHEB@d?3?1ymir?5work?1effect?1etc?1gatheri@ ; `string'
-PUBLIC	??_C@_0DG@HCIELDG@d?3?1ymir?5work?1effect?1etc?1firecra@ ; `string'
+PUBLIC	??_C@_0DH@OHFANMIM@d?3?1ymir?5work?1effect?1etc?1gatheri@ ; `string'
 PUBLIC	??_C@_0DI@KBENLOMD@d?3?1ymir?5work?1effect?1etc?1gatheri@ ; `string'
-PUBLIC	??_C@_0DG@EKOAOKDN@d?3?1ymir?5work?1effect?1etc?1firecra@ ; `string'
+PUBLIC	??_C@_0DK@PFLLCILA@d?3?1ymir?5work?1effect?1etc?1gatheri@ ; `string'
 PUBLIC	??_C@_0DG@IBLMDJJI@d?3?1ymir?5work?1effect?1etc?1firecra@ ; `string'
-PUBLIC	??_C@_0DG@JMLJAJCA@d?3?1ymir?5work?1effect?1etc?1firecra@ ; `string'
+PUBLIC	??_C@_0DG@HCIELDG@d?3?1ymir?5work?1effect?1etc?1firecra@ ; `string'
 PUBLIC	??_C@_0DG@FHOFNKIF@d?3?1ymir?5work?1effect?1etc?1firecra@ ; `string'
-PUBLIC	??_C@_0DJ@NAICJLEJ@d?3?1ymir?5work?1effect?1etc?1firecra@ ; `string'
+PUBLIC	??_C@_0DG@EKOAOKDN@d?3?1ymir?5work?1effect?1etc?1firecra@ ; `string'
 PUBLIC	??_C@_0DG@BKCNHLIO@d?3?1ymir?5work?1effect?1etc?1firecra@ ; `string'
-PUBLIC	??_C@_0DM@KHCNDNBF@d?3?1ymir?5work?1effect?1etc?1gatheri@ ; `string'
+PUBLIC	??_C@_0DG@JMLJAJCA@d?3?1ymir?5work?1effect?1etc?1firecra@ ; `string'
 PUBLIC	??_C@_0CJ@BHJKPJMH@d?3?1ymir?5work?1pc?1shaman?1effect?1p@ ; `string'
-PUBLIC	??_C@_0CL@HGBMDFHD@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
+PUBLIC	??_C@_0DJ@NAICJLEJ@d?3?1ymir?5work?1effect?1etc?1firecra@ ; `string'
 PUBLIC	??_C@_0CM@JIGBGINO@d?3?1ymir?5work?1pc?1sura?1effect?1muy@ ; `string'
-PUBLIC	??_C@_0CL@ENNIEPNK@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
+PUBLIC	??_C@_0DM@KHCNDNBF@d?3?1ymir?5work?1effect?1etc?1gatheri@ ; `string'
 PUBLIC	??_C@_05IGMHAHDI@sweat@				; `string'
-PUBLIC	??_C@_0CL@DPOEMPHM@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
+PUBLIC	??_C@_0CL@HGBMDFHD@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
 PUBLIC	??_C@_05IKCNOJAA@money@				; `string'
-PUBLIC	??_C@_0CM@DBEIJLG@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
+PUBLIC	??_C@_0CL@ENNIEPNK@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
 PUBLIC	??_C@_05MPPLIHOF@happy@				; `string'
-PUBLIC	??_C@_0CM@PBJEDJPI@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
+PUBLIC	??_C@_0CL@DPOEMPHM@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
 PUBLIC	??_C@_06MOLPOKHJ@love_s@			; `string'
-PUBLIC	??_C@_0CL@PNKJACHM@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
+PUBLIC	??_C@_0CM@DBEIJLG@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
 PUBLIC	??_C@_06DOFOEOH@love_l@				; `string'
-PUBLIC	??_C@_03GHADHAPL@aha@				; `string'
+PUBLIC	??_C@_0CM@PBJEDJPI@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
 PUBLIC	??_C@_0CJ@GIBFLFJN@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
-PUBLIC	??_C@_05PHJDIFFA@gloom@				; `string'
+PUBLIC	??_C@_0CL@PNKJACHM@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
 PUBLIC	??_C@_0CL@JDOKPMIL@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
-PUBLIC	??_C@_05LAFHNHDJ@sorry@				; `string'
+PUBLIC	??_C@_03GHADHAPL@aha@				; `string'
 PUBLIC	??_C@_0CL@PNNCHIKF@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
-PUBLIC	??_C@_0CK@KAOJLBJI@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
+PUBLIC	??_C@_05PHJDIFFA@gloom@				; `string'
 PUBLIC	??_C@_0CO@OMGGPGHC@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
-PUBLIC	??_C@_0CI@INHKNPIJ@d?3?1ymir?5work?1effect?1etc?1click?1c@ ; `string'
+PUBLIC	??_C@_05LAFHNHDJ@sorry@				; `string'
 PUBLIC	??_C@_04JCBCAFCA@fish@				; `string'
-PUBLIC	??_C@_0BJ@BKIINAGF@metin2_map_spiderdungeon@	; `string'
+PUBLIC	??_C@_0CK@KAOJLBJI@d?3?1ymir?5work?1effect?1etc?1emotico@ ; `string'
 PUBLIC	??_C@_0ED@KIGBLDJL@CPythonPlayerSettingsModule?3?3Lo@ ; `string'
-PUBLIC	??_C@_0BM@PEINEOGE@metin2_map_monkeydungeon_02@	; `string'
+PUBLIC	??_C@_0CI@INHKNPIJ@d?3?1ymir?5work?1effect?1etc?1click?1c@ ; `string'
 PUBLIC	??_C@_0BJ@EBODEJPC@metin2_map_monkeydungeon@	; `string'
-PUBLIC	??_C@_0L@FPFMPDDA@0123456789@			; `string'
+PUBLIC	??_C@_0BJ@BKIINAGF@metin2_map_spiderdungeon@	; `string'
 PUBLIC	??_C@_0BM@ONJGHPCF@metin2_map_monkeydungeon_03@	; `string'
-PUBLIC	??_C@_01GBGANLPD@0@				; `string'
+PUBLIC	??_C@_0BM@PEINEOGE@metin2_map_monkeydungeon_02@	; `string'
 PUBLIC	??_C@_0FA@PBJKGCMA@RegisterGuildBuildingList?$CI?$CFs?$CJ?5?9@ ; `string'
-PUBLIC	??_C@_04NKOFMAJE@VNUM@				; `string'
+PUBLIC	??_C@_0L@FPFMPDDA@0123456789@			; `string'
 PUBLIC	??_C@_0CB@GAOEGFK@Found?5strange?5guild?5material?3?5?$CF@ ; `string'
-PUBLIC	??_C@_04IPKHEEB@NAME@				; `string'
+PUBLIC	??_C@_01GBGANLPD@0@				; `string'
 PUBLIC	??_C@_04KDPJLEDB@TYPE@				; `string'
-PUBLIC	??_C@_0M@ILLJMJB@X_ROT_LIMIT@			; `string'
+PUBLIC	??_C@_04NKOFMAJE@VNUM@				; `string'
 PUBLIC	??_C@_0L@GKOHLNCL@LOCAL_NAME@			; `string'
-PUBLIC	??_C@_0M@OEIAACAO@Z_ROT_LIMIT@			; `string'
+PUBLIC	??_C@_04IPKHEEB@NAME@				; `string'
 PUBLIC	??_C@_0M@JDBONAPO@Y_ROT_LIMIT@			; `string'
-PUBLIC	??_C@_08NCEIPHOL@MATERIAL@			; `string'
+PUBLIC	??_C@_0M@ILLJMJB@X_ROT_LIMIT@			; `string'
 PUBLIC	??_C@_05BJKOFFGO@PRICE@				; `string'
-PUBLIC	??_C@_0BM@KEIKDNAE@BINARY_SetGuildBuildingList@	; `string'
+PUBLIC	??_C@_0M@OEIAACAO@Z_ROT_LIMIT@			; `string'
 PUBLIC	??_C@_04JGPCMMEF@SHOW@				; `string'
+PUBLIC	??_C@_08NCEIPHOL@MATERIAL@			; `string'
 PUBLIC	??_C@_0BG@BBKNOMOH@invalid?5map?$DMK?0?5T?$DO?5key@ ; `string'
-PUBLIC	??_R2?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8 ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Base Class Array'
+PUBLIC	??_C@_0BM@KEIKDNAE@BINARY_SetGuildBuildingList@	; `string'
 PUBLIC	??_R2?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8 ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`RTTI Base Class Array'
+PUBLIC	??_R2?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8 ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Base Class Array'
 PUBLIC	??_R2bad_function_call@boost@@8			; boost::bad_function_call::`RTTI Base Class Array'
 PUBLIC	??_R2clone_base@exception_detail@boost@@8	; boost::exception_detail::clone_base::`RTTI Base Class Array'
 PUBLIC	??_R2exception@boost@@8				; boost::exception::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8 ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R1A@?0A@EA@?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8 ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R1A@?0A@EA@?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8 ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R1A@CA@3FA@clone_base@exception_detail@boost@@8 ; boost::exception_detail::clone_base::`RTTI Base Class Descriptor at (0,32,4,80)'
 PUBLIC	??_R1M@?0A@EA@exception@boost@@8		; boost::exception::`RTTI Base Class Descriptor at (12,-1,0,64)'
 PUBLIC	??_R1A@?0A@EA@bad_function_call@boost@@8	; boost::bad_function_call::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R1A@?0A@EA@clone_base@exception_detail@boost@@8 ; boost::exception_detail::clone_base::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R1A@?0A@EA@exception@boost@@8		; boost::exception::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R3?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8 ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R3?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8 ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R3?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8 ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R3bad_function_call@boost@@8			; boost::bad_function_call::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R3clone_base@exception_detail@boost@@8	; boost::exception_detail::clone_base::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R3exception@boost@@8				; boost::exception::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6B@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Complete Object Locator'
-PUBLIC	??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bbad_function_call@2@@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Complete Object Locator'
 PUBLIC	??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bexception@2@@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Complete Object Locator'
+PUBLIC	??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6B@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Complete Object Locator'
 PUBLIC	??_R4?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bexception@2@@ ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`RTTI Complete Object Locator'
+PUBLIC	??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bbad_function_call@2@@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Complete Object Locator'
 PUBLIC	??_R4?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bbad_function_call@2@@ ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`RTTI Complete Object Locator'
 PUBLIC	??_R4bad_function_call@boost@@6B@		; boost::bad_function_call::`RTTI Complete Object Locator'
 PUBLIC	??_R4clone_base@exception_detail@boost@@6B@	; boost::exception_detail::clone_base::`RTTI Complete Object Locator'
 PUBLIC	??_R4exception@boost@@6B@			; boost::exception::`RTTI Complete Object Locator'
-PUBLIC	??_7?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bexception@2@@ ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`vftable'
 PUBLIC	??_R0?AU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@8 ; boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> > `RTTI Type Descriptor'
-PUBLIC	??_7?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6B@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`vftable'
 PUBLIC	??_7?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bbad_function_call@2@@ ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`vftable'
-PUBLIC	??_7?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bbad_function_call@2@@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`vftable'
+PUBLIC	??_7?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bexception@2@@ ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`vftable'
 PUBLIC	??_7?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bexception@2@@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`vftable'
-PUBLIC	__CTA7?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@
+PUBLIC	??_7?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6B@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`vftable'
 PUBLIC	??_8?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@7B@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`vbtable'
-PUBLIC	__CT??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@8??0?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@QAE@ABU012@@Z32
+PUBLIC	??_7?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bbad_function_call@2@@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`vftable'
 PUBLIC	__CT??_R0?AVbad_function_call@boost@@@8??0bad_function_call@boost@@QAE@ABV01@@Z12
-PUBLIC	??_R0?AVbad_function_call@boost@@@8		; boost::bad_function_call `RTTI Type Descriptor'
+PUBLIC	__CTA7?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@
 PUBLIC	__CT??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8??0?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@QAE@ABV012@@Z44
-PUBLIC	??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8 ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> > `RTTI Type Descriptor'
+PUBLIC	__CT??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@8??0?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@QAE@ABU012@@Z32
 PUBLIC	??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@8 ; boost::exception_detail::error_info_injector<boost::bad_function_call> `RTTI Type Descriptor'
+PUBLIC	??_R0?AVbad_function_call@boost@@@8		; boost::bad_function_call `RTTI Type Descriptor'
 PUBLIC	__TI7?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@
-PUBLIC	?data@?1???B?$integral_constant@_N$00@boost@@QBEABU?$bool_@$00@mpl@2@XZ@4QBDB ;  ?? ::QBDB::mpl::XZ::`boost::integral_constant<bool,1>::operator boost::mpl::bool_<1> const &'::`2'::data
+PUBLIC	??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8 ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> > `RTTI Type Descriptor'
 PUBLIC	?pdata@?1???B?$integral_constant@_N$00@boost@@QBEABU?$bool_@$00@mpl@2@XZ@4PBXB ;  ?? ::PBXB::mpl::XZ::`boost::integral_constant<bool,1>::operator boost::mpl::bool_<1> const &'::`2'::pdata
-PUBLIC	?stored_vtable@?1???$assign_to@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@?$function2@V?$iterator_range@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@@boost@@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@V34@@boost@@AAEXU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@2@@Z@4U?$basic_vtable2@V?$iterator_range@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@@boost@@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@V34@@function@42@B ; `boost::function2<boost::iterator_range<std::_String_const_iterator<std::_String_val<std::_Simple_types<char> > > >,std::_String_const_iterator<std::_String_val<std::_Simple_types<char> > >,std::_String_const_iterator<std::_String_val<std::_Simple_types<char> > > >::assign_to<boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> > >'::`2'::stored_vtable
+PUBLIC	?data@?1???B?$integral_constant@_N$00@boost@@QBEABU?$bool_@$00@mpl@2@XZ@4QBDB ;  ?? ::QBDB::mpl::XZ::`boost::integral_constant<bool,1>::operator boost::mpl::bool_<1> const &'::`2'::data
 PUBLIC	?stored_vtable@?1???$assign_to@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@?$function2@V?$iterator_range@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@@boost@@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@V34@@boost@@AAEXU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@2@@Z@4U?$basic_vtable2@V?$iterator_range@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@@boost@@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@V34@@function@42@B ; `boost::function2<boost::iterator_range<std::_String_view_iterator<std::char_traits<char> > >,std::_String_view_iterator<std::char_traits<char> >,std::_String_view_iterator<std::char_traits<char> > >::assign_to<boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> > >'::`2'::stored_vtable
-PUBLIC	__CT??_R0?AVexception@boost@@@8??0exception@boost@@QAE@ABV01@@Z2012
+PUBLIC	?stored_vtable@?1???$assign_to@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@?$function2@V?$iterator_range@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@@boost@@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@V34@@boost@@AAEXU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@2@@Z@4U?$basic_vtable2@V?$iterator_range@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@@boost@@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@V34@@function@42@B ; `boost::function2<boost::iterator_range<std::_String_const_iterator<std::_String_val<std::_Simple_types<char> > > >,std::_String_const_iterator<std::_String_val<std::_Simple_types<char> > >,std::_String_const_iterator<std::_String_val<std::_Simple_types<char> > > >::assign_to<boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> > >'::`2'::stored_vtable
 PUBLIC	__CT??_R0?AVclone_base@exception_detail@boost@@@8??0clone_base@exception_detail@boost@@QAE@ABV012@@Z40324
+PUBLIC	__CT??_R0?AVexception@boost@@@8??0exception@boost@@QAE@ABV01@@Z2012
 PUBLIC	__CT??_R0?AVruntime_error@std@@@8??0runtime_error@std@@QAE@ABV01@@Z12
-PUBLIC	??_R0?AVexception@boost@@@8			; boost::exception `RTTI Type Descriptor'
 PUBLIC	??_R0?AVclone_base@exception_detail@boost@@@8	; boost::exception_detail::clone_base `RTTI Type Descriptor'
+PUBLIC	??_R0?AVexception@boost@@@8			; boost::exception `RTTI Type Descriptor'
 PUBLIC	??_7bad_function_call@boost@@6B@		; boost::bad_function_call::`vftable'
-PUBLIC	??_R0?AVruntime_error@std@@@8			; std::runtime_error `RTTI Type Descriptor'
-PUBLIC	??_R2runtime_error@std@@8			; std::runtime_error::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@runtime_error@std@@8		; std::runtime_error::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R4runtime_error@std@@6B@			; std::runtime_error::`RTTI Complete Object Locator'
+PUBLIC	??_R0?AVruntime_error@std@@@8			; std::runtime_error `RTTI Type Descriptor'
 PUBLIC	??_R3runtime_error@std@@8			; std::runtime_error::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2runtime_error@std@@8			; std::runtime_error::`RTTI Base Class Array'
+PUBLIC	??_R4runtime_error@std@@6B@			; std::runtime_error::`RTTI Complete Object Locator'
 PUBLIC	??_7runtime_error@std@@6B@			; std::runtime_error::`vftable'
-PUBLIC	??_7clone_base@exception_detail@boost@@6B@	; boost::exception_detail::clone_base::`vftable'
 PUBLIC	??_7exception@boost@@6B@			; boost::exception::`vftable'
+PUBLIC	??_7clone_base@exception_detail@boost@@6B@	; boost::exception_detail::clone_base::`vftable'
+EXTRN	__imp__PyDict_New:PROC
 EXTRN	__imp__PyDict_SetItem:PROC
 EXTRN	__imp__PyList_SetItem:PROC
-EXTRN	__imp__PyDict_New:PROC
 EXTRN	?GenerateColor@CPythonGraphic@@QAEJMMMM@Z:PROC	; CPythonGraphic::GenerateColor
+EXTRN	__imp__PyObject_HasAttrString:PROC
 EXTRN	__imp__PyObject_GetAttrString:PROC
 EXTRN	__imp__PyImport_ImportModule:PROC
-EXTRN	__imp__PyObject_HasAttrString:PROC
 EXTRN	___std_type_info_compare:PROC
-;	COMDAT ??_7exception@boost@@6B@
-CONST	SEGMENT
-??_7exception@boost@@6B@ DD FLAT:??_R4exception@boost@@6B@ ; boost::exception::`vftable'
-	DD	FLAT:__purecall
-CONST	ENDS
 ;	COMDAT ??_7clone_base@exception_detail@boost@@6B@
 CONST	SEGMENT
 ??_7clone_base@exception_detail@boost@@6B@ DD FLAT:??_R4clone_base@exception_detail@boost@@6B@ ; boost::exception_detail::clone_base::`vftable'
@@ -371,19 +366,17 @@ CONST	SEGMENT
 	DD	FLAT:__purecall
 	DD	FLAT:??_Eclone_base@exception_detail@boost@@UAEPAXI@Z
 CONST	ENDS
+;	COMDAT ??_7exception@boost@@6B@
+CONST	SEGMENT
+??_7exception@boost@@6B@ DD FLAT:??_R4exception@boost@@6B@ ; boost::exception::`vftable'
+	DD	FLAT:__purecall
+CONST	ENDS
 ;	COMDAT ??_7runtime_error@std@@6B@
 CONST	SEGMENT
 ??_7runtime_error@std@@6B@ DD FLAT:??_R4runtime_error@std@@6B@ ; std::runtime_error::`vftable'
 	DD	FLAT:??_Eruntime_error@std@@UAEPAXI@Z
 	DD	FLAT:?what@exception@std@@UBEPBDXZ
 CONST	ENDS
-;	COMDAT ??_R3runtime_error@std@@8
-rdata$r	SEGMENT
-??_R3runtime_error@std@@8 DD 00H			; std::runtime_error::`RTTI Class Hierarchy Descriptor'
-	DD	00H
-	DD	02H
-	DD	FLAT:??_R2runtime_error@std@@8
-rdata$r	ENDS
 ;	COMDAT ??_R4runtime_error@std@@6B@
 rdata$r	SEGMENT
 ??_R4runtime_error@std@@6B@ DD 00H			; std::runtime_error::`RTTI Complete Object Locator'
@@ -392,6 +385,24 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AVruntime_error@std@@@8
 	DD	FLAT:??_R3runtime_error@std@@8
 rdata$r	ENDS
+;	COMDAT ??_R2runtime_error@std@@8
+rdata$r	SEGMENT
+??_R2runtime_error@std@@8 DD FLAT:??_R1A@?0A@EA@runtime_error@std@@8 ; std::runtime_error::`RTTI Base Class Array'
+	DD	FLAT:??_R1A@?0A@EA@exception@std@@8
+rdata$r	ENDS
+;	COMDAT ??_R3runtime_error@std@@8
+rdata$r	SEGMENT
+??_R3runtime_error@std@@8 DD 00H			; std::runtime_error::`RTTI Class Hierarchy Descriptor'
+	DD	00H
+	DD	02H
+	DD	FLAT:??_R2runtime_error@std@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AVruntime_error@std@@@8
+data$r	SEGMENT
+??_R0?AVruntime_error@std@@@8 DD FLAT:??_7type_info@@6B@ ; std::runtime_error `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVruntime_error@std@@', 00H
+data$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@runtime_error@std@@8
 rdata$r	SEGMENT
 ??_R1A@?0A@EA@runtime_error@std@@8 DD FLAT:??_R0?AVruntime_error@std@@@8 ; std::runtime_error::`RTTI Base Class Descriptor at (0,-1,0,64)'
@@ -402,17 +413,6 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3runtime_error@std@@8
 rdata$r	ENDS
-;	COMDAT ??_R2runtime_error@std@@8
-rdata$r	SEGMENT
-??_R2runtime_error@std@@8 DD FLAT:??_R1A@?0A@EA@runtime_error@std@@8 ; std::runtime_error::`RTTI Base Class Array'
-	DD	FLAT:??_R1A@?0A@EA@exception@std@@8
-rdata$r	ENDS
-;	COMDAT ??_R0?AVruntime_error@std@@@8
-data$r	SEGMENT
-??_R0?AVruntime_error@std@@@8 DD FLAT:??_7type_info@@6B@ ; std::runtime_error `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVruntime_error@std@@', 00H
-data$r	ENDS
 ;	COMDAT ??_7bad_function_call@boost@@6B@
 CONST	SEGMENT
 ??_7bad_function_call@boost@@6B@ DD FLAT:??_R4bad_function_call@boost@@6B@ ; boost::bad_function_call::`vftable'
@@ -423,17 +423,17 @@ CONST	ENDS
 CONST	SEGMENT
 ?whitespace@?1??trim@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4PBDB DD FLAT:??_C@_04HHCDBDLF@?5?7?$AN?6@ ; `trim'::`2'::whitespace
 CONST	ENDS
-;	COMDAT ??_R0?AVclone_base@exception_detail@boost@@@8
-data$r	SEGMENT
-??_R0?AVclone_base@exception_detail@boost@@@8 DD FLAT:??_7type_info@@6B@ ; boost::exception_detail::clone_base `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVclone_base@exception_detail@boost@@', 00H
-data$r	ENDS
 ;	COMDAT ??_R0?AVexception@boost@@@8
 data$r	SEGMENT
 ??_R0?AVexception@boost@@@8 DD FLAT:??_7type_info@@6B@	; boost::exception `RTTI Type Descriptor'
 	DD	00H
 	DB	'.?AVexception@boost@@', 00H
+data$r	ENDS
+;	COMDAT ??_R0?AVclone_base@exception_detail@boost@@@8
+data$r	SEGMENT
+??_R0?AVclone_base@exception_detail@boost@@@8 DD FLAT:??_7type_info@@6B@ ; boost::exception_detail::clone_base `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVclone_base@exception_detail@boost@@', 00H
 data$r	ENDS
 ;	COMDAT __CT??_R0?AVruntime_error@std@@@8??0runtime_error@std@@QAE@ABV01@@Z12
 xdata$x	SEGMENT
@@ -445,16 +445,6 @@ __CT??_R0?AVruntime_error@std@@@8??0runtime_error@std@@QAE@ABV01@@Z12 DD 00H
 	DD	0cH
 	DD	FLAT:??0runtime_error@std@@QAE@ABV01@@Z
 xdata$x	ENDS
-;	COMDAT __CT??_R0?AVclone_base@exception_detail@boost@@@8??0clone_base@exception_detail@boost@@QAE@ABV012@@Z40324
-xdata$x	SEGMENT
-__CT??_R0?AVclone_base@exception_detail@boost@@@8??0clone_base@exception_detail@boost@@QAE@ABV012@@Z40324 DD 00H
-	DD	FLAT:??_R0?AVclone_base@exception_detail@boost@@@8
-	DD	00H
-	DD	020H
-	DD	04H
-	DD	04H
-	DD	FLAT:??0clone_base@exception_detail@boost@@QAE@ABV012@@Z
-xdata$x	ENDS
 ;	COMDAT __CT??_R0?AVexception@boost@@@8??0exception@boost@@QAE@ABV01@@Z2012
 xdata$x	SEGMENT
 __CT??_R0?AVexception@boost@@@8??0exception@boost@@QAE@ABV01@@Z2012 DD 00H
@@ -465,38 +455,34 @@ __CT??_R0?AVexception@boost@@@8??0exception@boost@@QAE@ABV01@@Z2012 DD 00H
 	DD	014H
 	DD	FLAT:??0exception@boost@@QAE@ABV01@@Z
 xdata$x	ENDS
-;	COMDAT ?stored_vtable@?1???$assign_to@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@?$function2@V?$iterator_range@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@@boost@@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@V34@@boost@@AAEXU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@2@@Z@4U?$basic_vtable2@V?$iterator_range@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@@boost@@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@V34@@function@42@B
-CONST	SEGMENT
-?stored_vtable@?1???$assign_to@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@?$function2@V?$iterator_range@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@@boost@@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@V34@@boost@@AAEXU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@2@@Z@4U?$basic_vtable2@V?$iterator_range@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@@boost@@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@V34@@function@42@B DD FLAT:?manage@?$functor_manager@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@function@detail@boost@@SAXABTfunction_buffer@234@AAT5234@W4functor_manager_operation_type@234@@Z ; `boost::function2<boost::iterator_range<std::_String_view_iterator<std::char_traits<char> > >,std::_String_view_iterator<std::char_traits<char> >,std::_String_view_iterator<std::char_traits<char> > >::assign_to<boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> > >'::`2'::stored_vtable
-	DD	FLAT:?invoke@?$function_obj_invoker2@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@V?$iterator_range@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@@4@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@V67@@function@detail@boost@@SA?AV?$iterator_range@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@@4@AATfunction_buffer@234@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@1@Z
-CONST	ENDS
+;	COMDAT __CT??_R0?AVclone_base@exception_detail@boost@@@8??0clone_base@exception_detail@boost@@QAE@ABV012@@Z40324
+xdata$x	SEGMENT
+__CT??_R0?AVclone_base@exception_detail@boost@@@8??0clone_base@exception_detail@boost@@QAE@ABV012@@Z40324 DD 00H
+	DD	FLAT:??_R0?AVclone_base@exception_detail@boost@@@8
+	DD	00H
+	DD	020H
+	DD	04H
+	DD	04H
+	DD	FLAT:??0clone_base@exception_detail@boost@@QAE@ABV012@@Z
+xdata$x	ENDS
 ;	COMDAT ?stored_vtable@?1???$assign_to@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@?$function2@V?$iterator_range@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@@boost@@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@V34@@boost@@AAEXU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@2@@Z@4U?$basic_vtable2@V?$iterator_range@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@@boost@@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@V34@@function@42@B
 CONST	SEGMENT
 ?stored_vtable@?1???$assign_to@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@?$function2@V?$iterator_range@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@@boost@@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@V34@@boost@@AAEXU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@2@@Z@4U?$basic_vtable2@V?$iterator_range@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@@boost@@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@V34@@function@42@B DD FLAT:?manage@?$functor_manager@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@function@detail@boost@@SAXABTfunction_buffer@234@AAT5234@W4functor_manager_operation_type@234@@Z ; `boost::function2<boost::iterator_range<std::_String_const_iterator<std::_String_val<std::_Simple_types<char> > > >,std::_String_const_iterator<std::_String_val<std::_Simple_types<char> > >,std::_String_const_iterator<std::_String_val<std::_Simple_types<char> > > >::assign_to<boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> > >'::`2'::stored_vtable
 	DD	FLAT:?invoke@?$function_obj_invoker2@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@V?$iterator_range@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@@4@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@V67@@function@detail@boost@@SA?AV?$iterator_range@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@@4@AATfunction_buffer@234@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@1@Z
 CONST	ENDS
-;	COMDAT ?pdata@?1???B?$integral_constant@_N$00@boost@@QBEABU?$bool_@$00@mpl@2@XZ@4PBXB
+;	COMDAT ?stored_vtable@?1???$assign_to@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@?$function2@V?$iterator_range@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@@boost@@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@V34@@boost@@AAEXU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@2@@Z@4U?$basic_vtable2@V?$iterator_range@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@@boost@@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@V34@@function@42@B
 CONST	SEGMENT
-?pdata@?1???B?$integral_constant@_N$00@boost@@QBEABU?$bool_@$00@mpl@2@XZ@4PBXB DD FLAT:?data@?1???B?$integral_constant@_N$00@boost@@QBEABU?$bool_@$00@mpl@2@XZ@4QBDB ;  ?? ::PBXB::mpl::XZ::`boost::integral_constant<bool,1>::operator boost::mpl::bool_<1> const &'::`2'::pdata
+?stored_vtable@?1???$assign_to@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@?$function2@V?$iterator_range@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@@boost@@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@V34@@boost@@AAEXU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@2@@Z@4U?$basic_vtable2@V?$iterator_range@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@@boost@@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@V34@@function@42@B DD FLAT:?manage@?$functor_manager@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@function@detail@boost@@SAXABTfunction_buffer@234@AAT5234@W4functor_manager_operation_type@234@@Z ; `boost::function2<boost::iterator_range<std::_String_view_iterator<std::char_traits<char> > >,std::_String_view_iterator<std::char_traits<char> >,std::_String_view_iterator<std::char_traits<char> > >::assign_to<boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> > >'::`2'::stored_vtable
+	DD	FLAT:?invoke@?$function_obj_invoker2@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@V?$iterator_range@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@@4@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@V67@@function@detail@boost@@SA?AV?$iterator_range@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@@4@AATfunction_buffer@234@V?$_String_view_iterator@U?$char_traits@D@std@@@std@@1@Z
 CONST	ENDS
 ;	COMDAT ?data@?1???B?$integral_constant@_N$00@boost@@QBEABU?$bool_@$00@mpl@2@XZ@4QBDB
 CONST	SEGMENT
 ?data@?1???B?$integral_constant@_N$00@boost@@QBEABU?$bool_@$00@mpl@2@XZ@4QBDB	ORG $+4 ;  ?? ::QBDB::mpl::XZ::`boost::integral_constant<bool,1>::operator boost::mpl::bool_<1> const &'::`2'::data
 CONST	ENDS
-;	COMDAT __TI7?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@
-xdata$x	SEGMENT
-__TI7?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@ DD 00H
-	DD	FLAT:??_D?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@QAEXXZ
-	DD	00H
-	DD	FLAT:__CTA7?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@
-xdata$x	ENDS
-;	COMDAT ??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@8
-data$r	SEGMENT
-??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@8 DD FLAT:??_7type_info@@6B@ ; boost::exception_detail::error_info_injector<boost::bad_function_call> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AU?$error_info_injector@Vbad_function_call@boost@@@exc'
-	DB	'eption_detail@boost@@', 00H
-data$r	ENDS
+;	COMDAT ?pdata@?1???B?$integral_constant@_N$00@boost@@QBEABU?$bool_@$00@mpl@2@XZ@4PBXB
+CONST	SEGMENT
+?pdata@?1???B?$integral_constant@_N$00@boost@@QBEABU?$bool_@$00@mpl@2@XZ@4PBXB DD FLAT:?data@?1???B?$integral_constant@_N$00@boost@@QBEABU?$bool_@$00@mpl@2@XZ@4QBDB ;  ?? ::PBXB::mpl::XZ::`boost::integral_constant<bool,1>::operator boost::mpl::bool_<1> const &'::`2'::pdata
+CONST	ENDS
 ;	COMDAT ??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8
 data$r	SEGMENT
 ??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8 DD FLAT:??_7type_info@@6B@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> > `RTTI Type Descriptor'
@@ -504,15 +490,12 @@ data$r	SEGMENT
 	DB	'.?AV?$clone_impl@U?$error_info_injector@Vbad_function_ca'
 	DB	'll@boost@@@exception_detail@boost@@@exception_detail@boost@@', 00H
 data$r	ENDS
-;	COMDAT __CT??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8??0?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@QAE@ABV012@@Z44
+;	COMDAT __TI7?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@
 xdata$x	SEGMENT
-__CT??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8??0?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@QAE@ABV012@@Z44 DD 04H
-	DD	FLAT:??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8
+__TI7?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@ DD 00H
+	DD	FLAT:??_D?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@QAEXXZ
 	DD	00H
-	DD	0ffffffffH
-	ORG $+4
-	DD	02cH
-	DD	FLAT:??0?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@QAE@ABV012@@Z
+	DD	FLAT:__CTA7?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@
 xdata$x	ENDS
 ;	COMDAT ??_R0?AVbad_function_call@boost@@@8
 data$r	SEGMENT
@@ -520,16 +503,13 @@ data$r	SEGMENT
 	DD	00H
 	DB	'.?AVbad_function_call@boost@@', 00H
 data$r	ENDS
-;	COMDAT __CT??_R0?AVbad_function_call@boost@@@8??0bad_function_call@boost@@QAE@ABV01@@Z12
-xdata$x	SEGMENT
-__CT??_R0?AVbad_function_call@boost@@@8??0bad_function_call@boost@@QAE@ABV01@@Z12 DD 00H
-	DD	FLAT:??_R0?AVbad_function_call@boost@@@8
+;	COMDAT ??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@8
+data$r	SEGMENT
+??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@8 DD FLAT:??_7type_info@@6B@ ; boost::exception_detail::error_info_injector<boost::bad_function_call> `RTTI Type Descriptor'
 	DD	00H
-	DD	0ffffffffH
-	ORG $+4
-	DD	0cH
-	DD	FLAT:??0bad_function_call@boost@@QAE@ABV01@@Z
-xdata$x	ENDS
+	DB	'.?AU?$error_info_injector@Vbad_function_call@boost@@@exc'
+	DB	'eption_detail@boost@@', 00H
+data$r	ENDS
 ;	COMDAT __CT??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@8??0?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@QAE@ABU012@@Z32
 xdata$x	SEGMENT
 __CT??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@8??0?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@QAE@ABU012@@Z32 DD 00H
@@ -540,11 +520,16 @@ __CT??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@bo
 	DD	020H
 	DD	FLAT:??0?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@QAE@ABU012@@Z
 xdata$x	ENDS
-;	COMDAT ??_8?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@7B@
-CONST	SEGMENT
-??_8?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@7B@ DD 0ffffffe0H ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`vbtable'
-	DD	08H
-CONST	ENDS
+;	COMDAT __CT??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8??0?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@QAE@ABV012@@Z44
+xdata$x	SEGMENT
+__CT??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8??0?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@QAE@ABV012@@Z44 DD 04H
+	DD	FLAT:??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8
+	DD	00H
+	DD	0ffffffffH
+	ORG $+4
+	DD	02cH
+	DD	FLAT:??0?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@QAE@ABV012@@Z
+xdata$x	ENDS
 ;	COMDAT __CTA7?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@
 xdata$x	SEGMENT
 __CTA7?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@ DD 07H
@@ -556,22 +541,26 @@ __CTA7?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exceptio
 	DD	FLAT:__CT??_R0?AVexception@boost@@@8??0exception@boost@@QAE@ABV01@@Z2012
 	DD	FLAT:__CT??_R0?AVclone_base@exception_detail@boost@@@8??0clone_base@exception_detail@boost@@QAE@ABV012@@Z40324
 xdata$x	ENDS
-;	COMDAT ??_7?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bexception@2@@
-CONST	SEGMENT
-??_7?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bexception@2@@ DD FLAT:??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bexception@2@@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`vftable'
-	DD	FLAT:??_E?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@WM@AEPAXI@Z
-CONST	ENDS
+;	COMDAT __CT??_R0?AVbad_function_call@boost@@@8??0bad_function_call@boost@@QAE@ABV01@@Z12
+xdata$x	SEGMENT
+__CT??_R0?AVbad_function_call@boost@@@8??0bad_function_call@boost@@QAE@ABV01@@Z12 DD 00H
+	DD	FLAT:??_R0?AVbad_function_call@boost@@@8
+	DD	00H
+	DD	0ffffffffH
+	ORG $+4
+	DD	0cH
+	DD	FLAT:??0bad_function_call@boost@@QAE@ABV01@@Z
+xdata$x	ENDS
 ;	COMDAT ??_7?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bbad_function_call@2@@
 CONST	SEGMENT
 ??_7?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bbad_function_call@2@@ DD FLAT:??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bbad_function_call@2@@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`vftable'
 	DD	FLAT:??_E?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@UAEPAXI@Z
 	DD	FLAT:?what@exception@std@@UBEPBDXZ
 CONST	ENDS
-;	COMDAT ??_7?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bbad_function_call@2@@
+;	COMDAT ??_8?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@7B@
 CONST	SEGMENT
-??_7?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bbad_function_call@2@@ DD FLAT:??_R4?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bbad_function_call@2@@ ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`vftable'
-	DD	FLAT:??_E?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@UAEPAXI@Z
-	DD	FLAT:?what@exception@std@@UBEPBDXZ
+??_8?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@7B@ DD 0ffffffe0H ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`vbtable'
+	DD	08H
 CONST	ENDS
 ;	COMDAT ??_7?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6B@
 CONST	SEGMENT
@@ -580,6 +569,22 @@ CONST	SEGMENT
 	DD	FLAT:?rethrow@?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@$0PPPPPPPM@A@BEXXZ
 	DD	FLAT:??_E?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@$4PPPPPPPM@CI@AEPAXI@Z
 CONST	ENDS
+;	COMDAT ??_7?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bexception@2@@
+CONST	SEGMENT
+??_7?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bexception@2@@ DD FLAT:??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bexception@2@@ ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`vftable'
+	DD	FLAT:??_E?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@WM@AEPAXI@Z
+CONST	ENDS
+;	COMDAT ??_7?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bexception@2@@
+CONST	SEGMENT
+??_7?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bexception@2@@ DD FLAT:??_R4?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bexception@2@@ ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`vftable'
+	DD	FLAT:??_E?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@WM@AEPAXI@Z
+CONST	ENDS
+;	COMDAT ??_7?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bbad_function_call@2@@
+CONST	SEGMENT
+??_7?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bbad_function_call@2@@ DD FLAT:??_R4?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bbad_function_call@2@@ ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`vftable'
+	DD	FLAT:??_E?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@UAEPAXI@Z
+	DD	FLAT:?what@exception@std@@UBEPBDXZ
+CONST	ENDS
 ;	COMDAT ??_R0?AU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@8
 data$r	SEGMENT
 ??_R0?AU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@8 DD FLAT:??_7type_info@@6B@ ; boost::algorithm::detail::token_finderF<boost::algorithm::detail::is_any_ofF<char> > `RTTI Type Descriptor'
@@ -587,11 +592,6 @@ data$r	SEGMENT
 	DB	'.?AU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boo'
 	DB	'st@@@detail@algorithm@boost@@', 00H
 data$r	ENDS
-;	COMDAT ??_7?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bexception@2@@
-CONST	SEGMENT
-??_7?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bexception@2@@ DD FLAT:??_R4?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bexception@2@@ ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`vftable'
-	DD	FLAT:??_E?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@WM@AEPAXI@Z
-CONST	ENDS
 ;	COMDAT ??_R4exception@boost@@6B@
 rdata$r	SEGMENT
 ??_R4exception@boost@@6B@ DD 00H			; boost::exception::`RTTI Complete Object Locator'
@@ -624,22 +624,6 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@8
 	DD	FLAT:??_R3?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8
 rdata$r	ENDS
-;	COMDAT ??_R4?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bexception@2@@
-rdata$r	SEGMENT
-??_R4?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bexception@2@@ DD 00H ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`RTTI Complete Object Locator'
-	DD	0cH
-	DD	00H
-	DD	FLAT:??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@8
-	DD	FLAT:??_R3?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8
-rdata$r	ENDS
-;	COMDAT ??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bexception@2@@
-rdata$r	SEGMENT
-??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bexception@2@@ DD 00H ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Complete Object Locator'
-	DD	0cH
-	DD	00H
-	DD	FLAT:??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8
-	DD	FLAT:??_R3?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8
-rdata$r	ENDS
 ;	COMDAT ??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bbad_function_call@2@@
 rdata$r	SEGMENT
 ??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bbad_function_call@2@@ DD 00H ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Complete Object Locator'
@@ -648,11 +632,27 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8
 	DD	FLAT:??_R3?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8
 rdata$r	ENDS
+;	COMDAT ??_R4?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bexception@2@@
+rdata$r	SEGMENT
+??_R4?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@6Bexception@2@@ DD 00H ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`RTTI Complete Object Locator'
+	DD	0cH
+	DD	00H
+	DD	FLAT:??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@8
+	DD	FLAT:??_R3?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8
+rdata$r	ENDS
 ;	COMDAT ??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6B@
 rdata$r	SEGMENT
 ??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6B@ DD 00H ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Complete Object Locator'
 	DD	028H
 	DD	04H
+	DD	FLAT:??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8
+	DD	FLAT:??_R3?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8
+rdata$r	ENDS
+;	COMDAT ??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bexception@2@@
+rdata$r	SEGMENT
+??_R4?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@6Bexception@2@@ DD 00H ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Complete Object Locator'
+	DD	0cH
+	DD	00H
 	DD	FLAT:??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8
 	DD	FLAT:??_R3?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8
 rdata$r	ENDS
@@ -677,19 +677,19 @@ rdata$r	SEGMENT
 	DD	03H
 	DD	FLAT:??_R2bad_function_call@boost@@8
 rdata$r	ENDS
-;	COMDAT ??_R3?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8
-rdata$r	SEGMENT
-??_R3?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8 DD 00H ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`RTTI Class Hierarchy Descriptor'
-	DD	01H
-	DD	05H
-	DD	FLAT:??_R2?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8
-rdata$r	ENDS
 ;	COMDAT ??_R3?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8
 rdata$r	SEGMENT
 ??_R3?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8 DD 00H ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Class Hierarchy Descriptor'
 	DD	03H
 	DD	07H
 	DD	FLAT:??_R2?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8
+rdata$r	ENDS
+;	COMDAT ??_R3?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8
+rdata$r	SEGMENT
+??_R3?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8 DD 00H ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`RTTI Class Hierarchy Descriptor'
+	DD	01H
+	DD	05H
+	DD	FLAT:??_R2?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@exception@boost@@8
 rdata$r	SEGMENT
@@ -741,16 +741,6 @@ rdata$r	SEGMENT
 	DD	050H
 	DD	FLAT:??_R3clone_base@exception_detail@boost@@8
 rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8 DD FLAT:??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@8 ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	04H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8
-rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8
 rdata$r	SEGMENT
 ??_R1A@?0A@EA@?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8 DD FLAT:??_R0?AV?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@@8 ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Base Class Descriptor at (0,-1,0,64)'
@@ -760,6 +750,16 @@ rdata$r	SEGMENT
 	DD	00H
 	DD	040H
 	DD	FLAT:??_R3?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8
+rdata$r	ENDS
+;	COMDAT ??_R1A@?0A@EA@?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8 DD FLAT:??_R0?AU?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@8 ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	04H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8
 rdata$r	ENDS
 ;	COMDAT ??_R2exception@boost@@8
 rdata$r	SEGMENT
@@ -775,14 +775,6 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R1A@?0A@EA@runtime_error@std@@8
 	DD	FLAT:??_R1A@?0A@EA@exception@std@@8
 rdata$r	ENDS
-;	COMDAT ??_R2?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8
-rdata$r	SEGMENT
-??_R2?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8 DD FLAT:??_R1A@?0A@EA@?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8 ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`RTTI Base Class Array'
-	DD	FLAT:??_R1A@?0A@EA@bad_function_call@boost@@8
-	DD	FLAT:??_R1A@?0A@EA@runtime_error@std@@8
-	DD	FLAT:??_R1A@?0A@EA@exception@std@@8
-	DD	FLAT:??_R1M@?0A@EA@exception@boost@@8
-rdata$r	ENDS
 ;	COMDAT ??_R2?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8
 rdata$r	SEGMENT
 ??_R2?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8 DD FLAT:??_R1A@?0A@EA@?$clone_impl@U?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@@exception_detail@boost@@8 ; boost::exception_detail::clone_impl<boost::exception_detail::error_info_injector<boost::bad_function_call> >::`RTTI Base Class Array'
@@ -793,60 +785,76 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R1M@?0A@EA@exception@boost@@8
 	DD	FLAT:??_R1A@CA@3FA@clone_base@exception_detail@boost@@8
 rdata$r	ENDS
-;	COMDAT ??_C@_0BG@BBKNOMOH@invalid?5map?$DMK?0?5T?$DO?5key@
-CONST	SEGMENT
-??_C@_0BG@BBKNOMOH@invalid?5map?$DMK?0?5T?$DO?5key@ DB 'invalid map<K, T>'
-	DB	' key', 00H					; `string'
-CONST	ENDS
-;	COMDAT ??_C@_04JGPCMMEF@SHOW@
-CONST	SEGMENT
-??_C@_04JGPCMMEF@SHOW@ DB 'SHOW', 00H			; `string'
-CONST	ENDS
+;	COMDAT ??_R2?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8
+rdata$r	SEGMENT
+??_R2?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8 DD FLAT:??_R1A@?0A@EA@?$error_info_injector@Vbad_function_call@boost@@@exception_detail@boost@@8 ; boost::exception_detail::error_info_injector<boost::bad_function_call>::`RTTI Base Class Array'
+	DD	FLAT:??_R1A@?0A@EA@bad_function_call@boost@@8
+	DD	FLAT:??_R1A@?0A@EA@runtime_error@std@@8
+	DD	FLAT:??_R1A@?0A@EA@exception@std@@8
+	DD	FLAT:??_R1M@?0A@EA@exception@boost@@8
+rdata$r	ENDS
 ;	COMDAT ??_C@_0BM@KEIKDNAE@BINARY_SetGuildBuildingList@
 CONST	SEGMENT
 ??_C@_0BM@KEIKDNAE@BINARY_SetGuildBuildingList@ DB 'BINARY_SetGuildBuildi'
 	DB	'ngList', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05BJKOFFGO@PRICE@
+;	COMDAT ??_C@_0BG@BBKNOMOH@invalid?5map?$DMK?0?5T?$DO?5key@
 CONST	SEGMENT
-??_C@_05BJKOFFGO@PRICE@ DB 'PRICE', 00H			; `string'
+??_C@_0BG@BBKNOMOH@invalid?5map?$DMK?0?5T?$DO?5key@ DB 'invalid map<K, T>'
+	DB	' key', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08NCEIPHOL@MATERIAL@
 CONST	SEGMENT
 ??_C@_08NCEIPHOL@MATERIAL@ DB 'MATERIAL', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@JDBONAPO@Y_ROT_LIMIT@
+;	COMDAT ??_C@_04JGPCMMEF@SHOW@
 CONST	SEGMENT
-??_C@_0M@JDBONAPO@Y_ROT_LIMIT@ DB 'Y_ROT_LIMIT', 00H	; `string'
+??_C@_04JGPCMMEF@SHOW@ DB 'SHOW', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@OEIAACAO@Z_ROT_LIMIT@
 CONST	SEGMENT
 ??_C@_0M@OEIAACAO@Z_ROT_LIMIT@ DB 'Z_ROT_LIMIT', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@GKOHLNCL@LOCAL_NAME@
+;	COMDAT ??_C@_05BJKOFFGO@PRICE@
 CONST	SEGMENT
-??_C@_0L@GKOHLNCL@LOCAL_NAME@ DB 'LOCAL_NAME', 00H	; `string'
+??_C@_05BJKOFFGO@PRICE@ DB 'PRICE', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@ILLJMJB@X_ROT_LIMIT@
 CONST	SEGMENT
 ??_C@_0M@ILLJMJB@X_ROT_LIMIT@ DB 'X_ROT_LIMIT', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04KDPJLEDB@TYPE@
+;	COMDAT ??_C@_0M@JDBONAPO@Y_ROT_LIMIT@
 CONST	SEGMENT
-??_C@_04KDPJLEDB@TYPE@ DB 'TYPE', 00H			; `string'
+??_C@_0M@JDBONAPO@Y_ROT_LIMIT@ DB 'Y_ROT_LIMIT', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04IPKHEEB@NAME@
 CONST	SEGMENT
 ??_C@_04IPKHEEB@NAME@ DB 'NAME', 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0L@GKOHLNCL@LOCAL_NAME@
+CONST	SEGMENT
+??_C@_0L@GKOHLNCL@LOCAL_NAME@ DB 'LOCAL_NAME', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_04NKOFMAJE@VNUM@
+CONST	SEGMENT
+??_C@_04NKOFMAJE@VNUM@ DB 'VNUM', 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_04KDPJLEDB@TYPE@
+CONST	SEGMENT
+??_C@_04KDPJLEDB@TYPE@ DB 'TYPE', 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_01GBGANLPD@0@
+CONST	SEGMENT
+??_C@_01GBGANLPD@0@ DB '0', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CB@GAOEGFK@Found?5strange?5guild?5material?3?5?$CF@
 CONST	SEGMENT
 ??_C@_0CB@GAOEGFK@Found?5strange?5guild?5material?3?5?$CF@ DB 'Found stra'
 	DB	'nge guild material: %d', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04NKOFMAJE@VNUM@
+;	COMDAT ??_C@_0L@FPFMPDDA@0123456789@
 CONST	SEGMENT
-??_C@_04NKOFMAJE@VNUM@ DB 'VNUM', 00H			; `string'
+??_C@_0L@FPFMPDDA@0123456789@ DB '0123456789', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FA@PBJKGCMA@RegisterGuildBuildingList?$CI?$CFs?$CJ?5?9@
 CONST	SEGMENT
@@ -854,644 +862,624 @@ CONST	SEGMENT
 	DB	'erGuildBuildingList(%s) - StrangeLine in %d TokenVector size '
 	DB	'too long: %d', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_01GBGANLPD@0@
+;	COMDAT ??_C@_0BM@PEINEOGE@metin2_map_monkeydungeon_02@
 CONST	SEGMENT
-??_C@_01GBGANLPD@0@ DB '0', 00H				; `string'
+??_C@_0BM@PEINEOGE@metin2_map_monkeydungeon_02@ DB 'metin2_map_monkeydung'
+	DB	'eon_02', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@ONJGHPCF@metin2_map_monkeydungeon_03@
 CONST	SEGMENT
 ??_C@_0BM@ONJGHPCF@metin2_map_monkeydungeon_03@ DB 'metin2_map_monkeydung'
 	DB	'eon_03', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@FPFMPDDA@0123456789@
+;	COMDAT ??_C@_0BJ@BKIINAGF@metin2_map_spiderdungeon@
 CONST	SEGMENT
-??_C@_0L@FPFMPDDA@0123456789@ DB '0123456789', 00H	; `string'
+??_C@_0BJ@BKIINAGF@metin2_map_spiderdungeon@ DB 'metin2_map_spiderdungeon'
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@EBODEJPC@metin2_map_monkeydungeon@
 CONST	SEGMENT
 ??_C@_0BJ@EBODEJPC@metin2_map_monkeydungeon@ DB 'metin2_map_monkeydungeon'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BM@PEINEOGE@metin2_map_monkeydungeon_02@
+;	COMDAT ??_C@_0CI@INHKNPIJ@d?3?1ymir?5work?1effect?1etc?1click?1c@
 CONST	SEGMENT
-??_C@_0BM@PEINEOGE@metin2_map_monkeydungeon_02@ DB 'metin2_map_monkeydung'
-	DB	'eon_02', 00H				; `string'
+??_C@_0CI@INHKNPIJ@d?3?1ymir?5work?1effect?1etc?1click?1c@ DB 'd:/ymir wo'
+	DB	'rk/effect/etc/click/click.mse', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0ED@KIGBLDJL@CPythonPlayerSettingsModule?3?3Lo@
 CONST	SEGMENT
 ??_C@_0ED@KIGBLDJL@CPythonPlayerSettingsModule?3?3Lo@ DB 'CPythonPlayerSe'
 	DB	'ttingsModule::LoadGameNPC(fileName=%s) - Load Error', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@BKIINAGF@metin2_map_spiderdungeon@
+;	COMDAT ??_C@_0CK@KAOJLBJI@d?3?1ymir?5work?1effect?1etc?1emotico@
 CONST	SEGMENT
-??_C@_0BJ@BKIINAGF@metin2_map_spiderdungeon@ DB 'metin2_map_spiderdungeon'
-	DB	00H						; `string'
+??_C@_0CK@KAOJLBJI@d?3?1ymir?5work?1effect?1etc?1emotico@ DB 'd:/ymir wor'
+	DB	'k/effect/etc/emoticon/fish.mse', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04JCBCAFCA@fish@
 CONST	SEGMENT
 ??_C@_04JCBCAFCA@fish@ DB 'fish', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CI@INHKNPIJ@d?3?1ymir?5work?1effect?1etc?1click?1c@
+;	COMDAT ??_C@_05LAFHNHDJ@sorry@
 CONST	SEGMENT
-??_C@_0CI@INHKNPIJ@d?3?1ymir?5work?1effect?1etc?1click?1c@ DB 'd:/ymir wo'
-	DB	'rk/effect/etc/click/click.mse', 00H		; `string'
+??_C@_05LAFHNHDJ@sorry@ DB 'sorry', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CO@OMGGPGHC@d?3?1ymir?5work?1effect?1etc?1emotico@
 CONST	SEGMENT
 ??_C@_0CO@OMGGPGHC@d?3?1ymir?5work?1effect?1etc?1emotico@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/emoticon/question.mse', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CK@KAOJLBJI@d?3?1ymir?5work?1effect?1etc?1emotico@
+;	COMDAT ??_C@_05PHJDIFFA@gloom@
 CONST	SEGMENT
-??_C@_0CK@KAOJLBJI@d?3?1ymir?5work?1effect?1etc?1emotico@ DB 'd:/ymir wor'
-	DB	'k/effect/etc/emoticon/fish.mse', 00H	; `string'
+??_C@_05PHJDIFFA@gloom@ DB 'gloom', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CL@PNNCHIKF@d?3?1ymir?5work?1effect?1etc?1emotico@
 CONST	SEGMENT
 ??_C@_0CL@PNNCHIKF@d?3?1ymir?5work?1effect?1etc?1emotico@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/emoticon/sorry.mse', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05LAFHNHDJ@sorry@
+;	COMDAT ??_C@_03GHADHAPL@aha@
 CONST	SEGMENT
-??_C@_05LAFHNHDJ@sorry@ DB 'sorry', 00H			; `string'
+??_C@_03GHADHAPL@aha@ DB 'aha', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CL@JDOKPMIL@d?3?1ymir?5work?1effect?1etc?1emotico@
 CONST	SEGMENT
 ??_C@_0CL@JDOKPMIL@d?3?1ymir?5work?1effect?1etc?1emotico@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/emoticon/gloom.mse', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05PHJDIFFA@gloom@
+;	COMDAT ??_C@_0CL@PNKJACHM@d?3?1ymir?5work?1effect?1etc?1emotico@
 CONST	SEGMENT
-??_C@_05PHJDIFFA@gloom@ DB 'gloom', 00H			; `string'
+??_C@_0CL@PNKJACHM@d?3?1ymir?5work?1effect?1etc?1emotico@ DB 'd:/ymir wor'
+	DB	'k/effect/etc/emoticon/angry.mse', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CJ@GIBFLFJN@d?3?1ymir?5work?1effect?1etc?1emotico@
 CONST	SEGMENT
 ??_C@_0CJ@GIBFLFJN@d?3?1ymir?5work?1effect?1etc?1emotico@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/emoticon/aha.mse', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03GHADHAPL@aha@
-CONST	SEGMENT
-??_C@_03GHADHAPL@aha@ DB 'aha', 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_06DOFOEOH@love_l@
-CONST	SEGMENT
-??_C@_06DOFOEOH@love_l@ DB 'love_l', 00H		; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0CL@PNKJACHM@d?3?1ymir?5work?1effect?1etc?1emotico@
-CONST	SEGMENT
-??_C@_0CL@PNKJACHM@d?3?1ymir?5work?1effect?1etc?1emotico@ DB 'd:/ymir wor'
-	DB	'k/effect/etc/emoticon/angry.mse', 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_06MOLPOKHJ@love_s@
-CONST	SEGMENT
-??_C@_06MOLPOKHJ@love_s@ DB 'love_s', 00H		; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0CM@PBJEDJPI@d?3?1ymir?5work?1effect?1etc?1emotico@
 CONST	SEGMENT
 ??_C@_0CM@PBJEDJPI@d?3?1ymir?5work?1effect?1etc?1emotico@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/emoticon/love_l.mse', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05MPPLIHOF@happy@
+;	COMDAT ??_C@_06DOFOEOH@love_l@
 CONST	SEGMENT
-??_C@_05MPPLIHOF@happy@ DB 'happy', 00H			; `string'
+??_C@_06DOFOEOH@love_l@ DB 'love_l', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CM@DBEIJLG@d?3?1ymir?5work?1effect?1etc?1emotico@
 CONST	SEGMENT
 ??_C@_0CM@DBEIJLG@d?3?1ymir?5work?1effect?1etc?1emotico@ DB 'd:/ymir work'
 	DB	'/effect/etc/emoticon/love_s.mse', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05IKCNOJAA@money@
+;	COMDAT ??_C@_06MOLPOKHJ@love_s@
 CONST	SEGMENT
-??_C@_05IKCNOJAA@money@ DB 'money', 00H			; `string'
+??_C@_06MOLPOKHJ@love_s@ DB 'love_s', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CL@DPOEMPHM@d?3?1ymir?5work?1effect?1etc?1emotico@
 CONST	SEGMENT
 ??_C@_0CL@DPOEMPHM@d?3?1ymir?5work?1effect?1etc?1emotico@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/emoticon/happy.mse', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05IGMHAHDI@sweat@
+;	COMDAT ??_C@_05MPPLIHOF@happy@
 CONST	SEGMENT
-??_C@_05IGMHAHDI@sweat@ DB 'sweat', 00H			; `string'
+??_C@_05MPPLIHOF@happy@ DB 'happy', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CL@ENNIEPNK@d?3?1ymir?5work?1effect?1etc?1emotico@
 CONST	SEGMENT
 ??_C@_0CL@ENNIEPNK@d?3?1ymir?5work?1effect?1etc?1emotico@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/emoticon/money.mse', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CM@JIGBGINO@d?3?1ymir?5work?1pc?1sura?1effect?1muy@
+;	COMDAT ??_C@_05IKCNOJAA@money@
 CONST	SEGMENT
-??_C@_0CM@JIGBGINO@d?3?1ymir?5work?1pc?1sura?1effect?1muy@ DB 'd:/ymir wo'
-	DB	'rk/pc/sura/effect/muyeong_fly.msf', 00H	; `string'
+??_C@_05IKCNOJAA@money@ DB 'money', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CL@HGBMDFHD@d?3?1ymir?5work?1effect?1etc?1emotico@
 CONST	SEGMENT
 ??_C@_0CL@HGBMDFHD@d?3?1ymir?5work?1effect?1etc?1emotico@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/emoticon/sweat.mse', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CJ@BHJKPJMH@d?3?1ymir?5work?1pc?1shaman?1effect?1p@
+;	COMDAT ??_C@_05IGMHAHDI@sweat@
 CONST	SEGMENT
-??_C@_0CJ@BHJKPJMH@d?3?1ymir?5work?1pc?1shaman?1effect?1p@ DB 'd:/ymir wo'
-	DB	'rk/pc/shaman/effect/pokroe.msf', 00H	; `string'
+??_C@_05IGMHAHDI@sweat@ DB 'sweat', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DM@KHCNDNBF@d?3?1ymir?5work?1effect?1etc?1gatheri@
 CONST	SEGMENT
 ??_C@_0DM@KHCNDNBF@d?3?1ymir?5work?1effect?1etc?1gatheri@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/gathering/ga_piece_red_smallest.msf', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DG@BKCNHLIO@d?3?1ymir?5work?1effect?1etc?1firecra@
+;	COMDAT ??_C@_0CM@JIGBGINO@d?3?1ymir?5work?1pc?1sura?1effect?1muy@
 CONST	SEGMENT
-??_C@_0DG@BKCNHLIO@d?3?1ymir?5work?1effect?1etc?1firecra@ DB 'd:/ymir wor'
-	DB	'k/effect/etc/firecracker/firecracker_6.msf', 00H ; `string'
+??_C@_0CM@JIGBGINO@d?3?1ymir?5work?1pc?1sura?1effect?1muy@ DB 'd:/ymir wo'
+	DB	'rk/pc/sura/effect/muyeong_fly.msf', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DJ@NAICJLEJ@d?3?1ymir?5work?1effect?1etc?1firecra@
 CONST	SEGMENT
 ??_C@_0DJ@NAICJLEJ@d?3?1ymir?5work?1effect?1etc?1firecra@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/firecracker/firecracker_xmas.msf', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DG@FHOFNKIF@d?3?1ymir?5work?1effect?1etc?1firecra@
+;	COMDAT ??_C@_0CJ@BHJKPJMH@d?3?1ymir?5work?1pc?1shaman?1effect?1p@
 CONST	SEGMENT
-??_C@_0DG@FHOFNKIF@d?3?1ymir?5work?1effect?1etc?1firecra@ DB 'd:/ymir wor'
-	DB	'k/effect/etc/firecracker/firecracker_4.msf', 00H ; `string'
+??_C@_0CJ@BHJKPJMH@d?3?1ymir?5work?1pc?1shaman?1effect?1p@ DB 'd:/ymir wo'
+	DB	'rk/pc/shaman/effect/pokroe.msf', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DG@JMLJAJCA@d?3?1ymir?5work?1effect?1etc?1firecra@
 CONST	SEGMENT
 ??_C@_0DG@JMLJAJCA@d?3?1ymir?5work?1effect?1etc?1firecra@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/firecracker/firecracker_5.msf', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DG@IBLMDJJI@d?3?1ymir?5work?1effect?1etc?1firecra@
+;	COMDAT ??_C@_0DG@BKCNHLIO@d?3?1ymir?5work?1effect?1etc?1firecra@
 CONST	SEGMENT
-??_C@_0DG@IBLMDJJI@d?3?1ymir?5work?1effect?1etc?1firecra@ DB 'd:/ymir wor'
-	DB	'k/effect/etc/firecracker/firecracker_2.msf', 00H ; `string'
+??_C@_0DG@BKCNHLIO@d?3?1ymir?5work?1effect?1etc?1firecra@ DB 'd:/ymir wor'
+	DB	'k/effect/etc/firecracker/firecracker_6.msf', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DG@EKOAOKDN@d?3?1ymir?5work?1effect?1etc?1firecra@
 CONST	SEGMENT
 ??_C@_0DG@EKOAOKDN@d?3?1ymir?5work?1effect?1etc?1firecra@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/firecracker/firecracker_3.msf', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DI@KBENLOMD@d?3?1ymir?5work?1effect?1etc?1gatheri@
+;	COMDAT ??_C@_0DG@FHOFNKIF@d?3?1ymir?5work?1effect?1etc?1firecra@
 CONST	SEGMENT
-??_C@_0DI@KBENLOMD@d?3?1ymir?5work?1effect?1etc?1gatheri@ DB 'd:/ymir wor'
-	DB	'k/effect/etc/gathering/ga_piece_blue_big.msf', 00H ; `string'
+??_C@_0DG@FHOFNKIF@d?3?1ymir?5work?1effect?1etc?1firecra@ DB 'd:/ymir wor'
+	DB	'k/effect/etc/firecracker/firecracker_4.msf', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DG@HCIELDG@d?3?1ymir?5work?1effect?1etc?1firecra@
 CONST	SEGMENT
 ??_C@_0DG@HCIELDG@d?3?1ymir?5work?1effect?1etc?1firecra@ DB 'd:/ymir work'
 	DB	'/effect/etc/firecracker/firecracker_1.msf', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EC@KFOGKHEB@d?3?1ymir?5work?1effect?1etc?1gatheri@
+;	COMDAT ??_C@_0DG@IBLMDJJI@d?3?1ymir?5work?1effect?1etc?1firecra@
 CONST	SEGMENT
-??_C@_0EC@KFOGKHEB@d?3?1ymir?5work?1effect?1etc?1gatheri@ DB 'd:/ymir wor'
-	DB	'k/effect/etc/gathering/ga_piece_blue_warrior_small.msf', 00H ; `string'
+??_C@_0DG@IBLMDJJI@d?3?1ymir?5work?1effect?1etc?1firecra@ DB 'd:/ymir wor'
+	DB	'k/effect/etc/firecracker/firecracker_2.msf', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DK@PFLLCILA@d?3?1ymir?5work?1effect?1etc?1gatheri@
 CONST	SEGMENT
 ??_C@_0DK@PFLLCILA@d?3?1ymir?5work?1effect?1etc?1gatheri@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/gathering/ga_piece_blue_small.msf', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DJ@CBOGDNBD@d?3?1ymir?5work?1effect?1etc?1gatheri@
+;	COMDAT ??_C@_0DI@KBENLOMD@d?3?1ymir?5work?1effect?1etc?1gatheri@
 CONST	SEGMENT
-??_C@_0DJ@CBOGDNBD@d?3?1ymir?5work?1effect?1etc?1gatheri@ DB 'd:/ymir wor'
-	DB	'k/effect/etc/gathering/ga_piece_red_small.msf', 00H ; `string'
+??_C@_0DI@KBENLOMD@d?3?1ymir?5work?1effect?1etc?1gatheri@ DB 'd:/ymir wor'
+	DB	'k/effect/etc/gathering/ga_piece_blue_big.msf', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DH@OHFANMIM@d?3?1ymir?5work?1effect?1etc?1gatheri@
 CONST	SEGMENT
 ??_C@_0DH@OHFANMIM@d?3?1ymir?5work?1effect?1etc?1gatheri@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/gathering/ga_piece_red_big.msf', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07LEDLFDC@action?1@
+;	COMDAT ??_C@_0EC@KFOGKHEB@d?3?1ymir?5work?1effect?1etc?1gatheri@
 CONST	SEGMENT
-??_C@_07LEDLFDC@action?1@ DB 'action/', 00H		; `string'
+??_C@_0EC@KFOGKHEB@d?3?1ymir?5work?1effect?1etc?1gatheri@ DB 'd:/ymir wor'
+	DB	'k/effect/etc/gathering/ga_piece_blue_warrior_small.msf', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DN@INCCPAIG@d?3?1ymir?5work?1effect?1etc?1gatheri@
 CONST	SEGMENT
 ??_C@_0DN@INCCPAIG@d?3?1ymir?5work?1effect?1etc?1gatheri@ DB 'd:/ymir wor'
 	DB	'k/effect/etc/gathering/ga_piece_yellow_small2.msf', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08NAFDJPKK@fishing?1@
+;	COMDAT ??_C@_0DJ@CBOGDNBD@d?3?1ymir?5work?1effect?1etc?1gatheri@
 CONST	SEGMENT
-??_C@_08NAFDJPKK@fishing?1@ DB 'fishing/', 00H		; `string'
+??_C@_0DJ@CBOGDNBD@d?3?1ymir?5work?1effect?1etc?1gatheri@ DB 'd:/ymir wor'
+	DB	'k/effect/etc/gathering/ga_piece_red_small.msf', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08OJPMLOOM@wedding?1@
 CONST	SEGMENT
 ??_C@_08OJPMLOOM@wedding?1@ DB 'wedding/', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04PMGAMECO@fan?1@
+;	COMDAT ??_C@_07LEDLFDC@action?1@
 CONST	SEGMENT
-??_C@_04PMGAMECO@fan?1@ DB 'fan/', 00H			; `string'
+??_C@_07LEDLFDC@action?1@ DB 'action/', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05HPFOEPJE@Bell?1@
 CONST	SEGMENT
 ??_C@_05HPFOEPJE@Bell?1@ DB 'Bell/', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@EDOCAOBP@horse_fan?1@
+;	COMDAT ??_C@_08NAFDJPKK@fishing?1@
 CONST	SEGMENT
-??_C@_0L@EDOCAOBP@horse_fan?1@ DB 'horse_fan/', 00H	; `string'
+??_C@_08NAFDJPKK@fishing?1@ DB 'fishing/', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@CJJDMIFC@horse_bell?1@
 CONST	SEGMENT
 ??_C@_0M@CJJDMIFC@horse_bell?1@ DB 'horse_bell/', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07BAOBGHBP@kwaesok@
+;	COMDAT ??_C@_04PMGAMECO@fan?1@
 CONST	SEGMENT
-??_C@_07BAOBGHBP@kwaesok@ DB 'kwaesok', 00H		; `string'
+??_C@_04PMGAMECO@fan?1@ DB 'fan/', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@FLNLBONH@jeungryeok@
 CONST	SEGMENT
 ??_C@_0L@FLNLBONH@jeungryeok@ DB 'jeungryeok', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06DIMHAJB@pokroe@
+;	COMDAT ??_C@_0L@EDOCAOBP@horse_fan?1@
 CONST	SEGMENT
-??_C@_06DIMHAJB@pokroe@ DB 'pokroe', 00H		; `string'
+??_C@_0L@EDOCAOBP@horse_fan?1@ DB 'horse_fan/', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08EMOOEFBF@jeongeop@
 CONST	SEGMENT
 ??_C@_08EMOOEFBF@jeongeop@ DB 'jeongeop', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07BNPEJCBD@noejeon@
+;	COMDAT ??_C@_07BAOBGHBP@kwaesok@
 CONST	SEGMENT
-??_C@_07BNPEJCBD@noejeon@ DB 'noejeon', 00H		; `string'
+??_C@_07BAOBGHBP@kwaesok@ DB 'kwaesok', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07DMJCBHLB@byeorak@
 CONST	SEGMENT
 ??_C@_07DMJCBHLB@byeorak@ DB 'byeorak', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04BNMLCGGK@boho@
+;	COMDAT ??_C@_06DIMHAJB@pokroe@
 CONST	SEGMENT
-??_C@_04BNMLCGGK@boho@ DB 'boho', 00H			; `string'
+??_C@_06DIMHAJB@pokroe@ DB 'pokroe', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07MNPCAMHP@gicheon@
 CONST	SEGMENT
 ??_C@_07MNPCAMHP@gicheon@ DB 'gicheon', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08JFACDJII@paeryong@
+;	COMDAT ??_C@_07BNPEJCBD@noejeon@
 CONST	SEGMENT
-??_C@_08JFACDJII@paeryong@ DB 'paeryong', 00H		; `string'
+??_C@_07BNPEJCBD@noejeon@ DB 'noejeon', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05HEAKIKAD@hosin@
 CONST	SEGMENT
 ??_C@_05HEAKIKAD@hosin@ DB 'hosin', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06DCBCMBIL@bipabu@
+;	COMDAT ??_C@_04BNMLCGGK@boho@
 CONST	SEGMENT
-??_C@_06DCBCMBIL@bipabu@ DB 'bipabu', 00H		; `string'
+??_C@_04BNMLCGGK@boho@ DB 'boho', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06EKCFDMNG@yongpa@
 CONST	SEGMENT
 ??_C@_06EKCFDMNG@yongpa@ DB 'yongpa', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@LBFIFMPF@kwaesok_target?4msa@
+;	COMDAT ??_C@_08JFACDJII@paeryong@
 CONST	SEGMENT
-??_C@_0BD@LBFIFMPF@kwaesok_target?4msa@ DB 'kwaesok_target.msa', 00H ; `string'
+??_C@_08JFACDJII@paeryong@ DB 'paeryong', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@GPIGKLGF@jeungryeok_target?4msa@
 CONST	SEGMENT
 ??_C@_0BG@GPIGKLGF@jeungryeok_target?4msa@ DB 'jeungryeok_target.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@MCNOFKDI@pokroe?4msa@
+;	COMDAT ??_C@_06DCBCMBIL@bipabu@
 CONST	SEGMENT
-??_C@_0L@MCNOFKDI@pokroe?4msa@ DB 'pokroe.msa', 00H	; `string'
+??_C@_06DCBCMBIL@bipabu@ DB 'bipabu', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@MFGPPOME@jeongeop_target?4msa@
 CONST	SEGMENT
 ??_C@_0BE@MFGPPOME@jeongeop_target?4msa@ DB 'jeongeop_target.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@DCABOONL@noejeon?4msa@
+;	COMDAT ??_C@_0BD@LBFIFMPF@kwaesok_target?4msa@
 CONST	SEGMENT
-??_C@_0M@DCABOONL@noejeon?4msa@ DB 'noejeon.msa', 00H	; `string'
+??_C@_0BD@LBFIFMPF@kwaesok_target?4msa@ DB 'kwaesok_target.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@ENFDDKEB@byeorak?4msa@
 CONST	SEGMENT
 ??_C@_0M@ENFDDKEB@byeorak?4msa@ DB 'byeorak.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@MDIPNDDG@boho_target?4msa@
+;	COMDAT ??_C@_0L@MCNOFKDI@pokroe?4msa@
 CONST	SEGMENT
-??_C@_0BA@MDIPNDDG@boho_target?4msa@ DB 'boho_target.msa', 00H ; `string'
+??_C@_0L@MCNOFKDI@pokroe?4msa@ DB 'pokroe.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@MANOCIDD@gicheon_target?4msa@
 CONST	SEGMENT
 ??_C@_0BD@MANOCIDD@gicheon_target?4msa@ DB 'gicheon_target.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@CMOIHHNG@paeryong?4msa@
+;	COMDAT ??_C@_0M@DCABOONL@noejeon?4msa@
 CONST	SEGMENT
-??_C@_0N@CMOIHHNG@paeryong?4msa@ DB 'paeryong.msa', 00H	; `string'
+??_C@_0M@DCABOONL@noejeon?4msa@ DB 'noejeon.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@DLGKDNEP@hosin_target?4msa@
 CONST	SEGMENT
 ??_C@_0BB@DLGKDNEP@hosin_target?4msa@ DB 'hosin_target.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@IHPKNOEK@bipabu?4msa@
+;	COMDAT ??_C@_0BA@MDIPNDDG@boho_target?4msa@
 CONST	SEGMENT
-??_C@_0L@IHPKNOEK@bipabu?4msa@ DB 'bipabu.msa', 00H	; `string'
+??_C@_0BA@MDIPNDDG@boho_target?4msa@ DB 'boho_target.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@MNFILAIM@yongpa?4msa@
 CONST	SEGMENT
 ??_C@_0L@MNFILAIM@yongpa?4msa@ DB 'yongpa.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05FDLEEPDH@tusok@
+;	COMDAT ??_C@_0N@CMOIHHNG@paeryong?4msa@
 CONST	SEGMENT
-??_C@_05FDLEEPDH@tusok@ DB 'tusok', 00H			; `string'
+??_C@_0N@CMOIHHNG@paeryong?4msa@ DB 'paeryong.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06KGJLJCMM@mahwan@
 CONST	SEGMENT
 ??_C@_06KGJLJCMM@mahwan@ DB 'mahwan', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07BJCMDCFL@muyeong@
+;	COMDAT ??_C@_0L@IHPKNOEK@bipabu?4msa@
 CONST	SEGMENT
-??_C@_07BJCMDCFL@muyeong@ DB 'muyeong', 00H		; `string'
+??_C@_0L@IHPKNOEK@bipabu?4msa@ DB 'bipabu.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07DAKCJLAA@heuksin@
 CONST	SEGMENT
 ??_C@_07DAKCJLAA@heuksin@ DB 'heuksin', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08KFCDLEKO@maryeong@
+;	COMDAT ??_C@_05FDLEEPDH@tusok@
 CONST	SEGMENT
-??_C@_08KFCDLEKO@maryeong@ DB 'maryeong', 00H		; `string'
+??_C@_05FDLEEPDH@tusok@ DB 'tusok', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07BIFGLFLK@hwayeom@
 CONST	SEGMENT
 ??_C@_07BIFGLFLK@hwayeom@ DB 'hwayeom', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07LFEFDGEL@jumagap@
+;	COMDAT ??_C@_07BJCMDCFL@muyeong@
 CONST	SEGMENT
-??_C@_07LFEFDGEL@jumagap@ DB 'jumagap', 00H		; `string'
+??_C@_07BJCMDCFL@muyeong@ DB 'muyeong', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06MOONPKKC@pabeop@
 CONST	SEGMENT
 ??_C@_06MOONPKKC@pabeop@ DB 'pabeop', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07PCPFAMJI@gwigeom@
+;	COMDAT ??_C@_08KFCDLEKO@maryeong@
 CONST	SEGMENT
-??_C@_07PCPFAMJI@gwigeom@ DB 'gwigeom', 00H		; `string'
+??_C@_08KFCDLEKO@maryeong@ DB 'maryeong', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06ODEHPGML@gongpo@
 CONST	SEGMENT
 ??_C@_06ODEHPGML@gongpo@ DB 'gongpo', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@DJIGEGBB@swaeryeong@
+;	COMDAT ??_C@_07LFEFDGEL@jumagap@
 CONST	SEGMENT
-??_C@_0L@DJIGEGBB@swaeryeong@ DB 'swaeryeong', 00H	; `string'
+??_C@_07LFEFDGEL@jumagap@ DB 'jumagap', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08OHEKNNNO@yonggwon@
 CONST	SEGMENT
 ??_C@_08OHEKNNNO@yonggwon@ DB 'yonggwon', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04PKMIINCC@bow?1@
+;	COMDAT ??_C@_07PCPFAMJI@gwigeom@
 CONST	SEGMENT
-??_C@_04PKMIINCC@bow?1@ DB 'bow/', 00H			; `string'
+??_C@_07PCPFAMJI@gwigeom@ DB 'gwigeom', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@JPGDFLNB@equip_left@
 CONST	SEGMENT
 ??_C@_0L@JPGDFLNB@equip_left@ DB 'equip_left', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@EFEKEHBD@horse_bow?1@
+;	COMDAT ??_C@_0L@DJIGEGBB@swaeryeong@
 CONST	SEGMENT
-??_C@_0L@EFEKEHBD@horse_bow?1@ DB 'horse_bow/', 00H	; `string'
+??_C@_0L@DJIGEGBB@swaeryeong@ DB 'swaeryeong', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@PPOGGOKN@dualhand_sword?1@
 CONST	SEGMENT
 ??_C@_0BA@PPOGGOKN@dualhand_sword?1@ DB 'dualhand_sword/', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09LEMOANFL@dokgigung@
+;	COMDAT ??_C@_04PKMIINCC@bow?1@
 CONST	SEGMENT
-??_C@_09LEMOANFL@dokgigung@ DB 'dokgigung', 00H		; `string'
+??_C@_04PKMIINCC@bow?1@ DB 'bow/', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@DOOKIINL@horse_dualhand_sword?1@
 CONST	SEGMENT
 ??_C@_0BG@DOOKIINL@horse_dualhand_sword?1@ DB 'horse_dualhand_sword/', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05MFNHEGEM@hwajo@
+;	COMDAT ??_C@_0L@EFEKEHBD@horse_bow?1@
 CONST	SEGMENT
-??_C@_05MFNHEGEM@hwajo@ DB 'hwajo', 00H			; `string'
+??_C@_0L@EFEKEHBD@horse_bow?1@ DB 'horse_bow/', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@BGCOEKBO@gyeonggong@
 CONST	SEGMENT
 ??_C@_0L@BGCOEKBO@gyeonggong@ DB 'gyeonggong', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06KJJAMHND@yeonsa@
+;	COMDAT ??_C@_09LEMOANFL@dokgigung@
 CONST	SEGMENT
-??_C@_06KJJAMHND@yeonsa@ DB 'yeonsa', 00H		; `string'
+??_C@_09LEMOANFL@dokgigung@ DB 'dokgigung', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09FEANDFBN@gwangyeok@
 CONST	SEGMENT
 ??_C@_09FEANDFBN@gwangyeok@ DB 'gwangyeok', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09JKPIDGAH@eunhyeong@
+;	COMDAT ??_C@_05MFNHEGEM@hwajo@
 CONST	SEGMENT
-??_C@_09JKPIDGAH@eunhyeong@ DB 'eunhyeong', 00H		; `string'
+??_C@_05MFNHEGEM@hwajo@ DB 'hwajo', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07IHJPMINM@sangong@
 CONST	SEGMENT
 ??_C@_07IHJPMINM@sangong@ DB 'sangong', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07CCLNAKDL@gungsin@
+;	COMDAT ??_C@_06KJJAMHND@yeonsa@
 CONST	SEGMENT
-??_C@_07CCLNAKDL@gungsin@ DB 'gungsin', 00H		; `string'
+??_C@_06KJJAMHND@yeonsa@ DB 'yeonsa', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07IDCJOJJI@charyun@
 CONST	SEGMENT
 ??_C@_07IDCJOJJI@charyun@ DB 'charyun', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@LDLPCHOD@twohand_sword?1@
+;	COMDAT ??_C@_09JKPIDGAH@eunhyeong@
 CONST	SEGMENT
-??_C@_0P@LDLPCHOD@twohand_sword?1@ DB 'twohand_sword/', 00H ; `string'
+??_C@_09JKPIDGAH@eunhyeong@ DB 'eunhyeong', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06DELHDFDH@amseup@
 CONST	SEGMENT
 ??_C@_06DELHDFDH@amseup@ DB 'amseup', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@NOEEPKNN@horse_twohand_sword?1@
+;	COMDAT ??_C@_07CCLNAKDL@gungsin@
 CONST	SEGMENT
-??_C@_0BF@NOEEPKNN@horse_twohand_sword?1@ DB 'horse_twohand_sword/', 00H ; `string'
+??_C@_07CCLNAKDL@gungsin@ DB 'gungsin', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@NLJCLLFI@onehand_sword?1@
 CONST	SEGMENT
 ??_C@_0P@NLJCLLFI@onehand_sword?1@ DB 'onehand_sword/', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@IEFBNLND@skill_wildattack?4msa@
+;	COMDAT ??_C@_0P@LDLPCHOD@twohand_sword?1@
 CONST	SEGMENT
-??_C@_0BF@IEFBNLND@skill_wildattack?4msa@ DB 'skill_wildattack.msa', 00H ; `string'
+??_C@_0P@LDLPCHOD@twohand_sword?1@ DB 'twohand_sword/', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@LJDCMBPF@skill_splash?4msa@
 CONST	SEGMENT
 ??_C@_0BB@LJDCMBPF@skill_splash?4msa@ DB 'skill_splash.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@PMJLOLO@skill_charge?4msa@
+;	COMDAT ??_C@_0BF@NOEEPKNN@horse_twohand_sword?1@
 CONST	SEGMENT
-??_C@_0BB@PMJLOLO@skill_charge?4msa@ DB 'skill_charge.msa', 00H ; `string'
+??_C@_0BF@NOEEPKNN@horse_twohand_sword?1@ DB 'horse_twohand_sword/', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@LGGJGGGG@horse_onehand_sword?1@
 CONST	SEGMENT
 ??_C@_0BF@LGGJGGGG@horse_onehand_sword?1@ DB 'horse_onehand_sword/', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06IFPABCPH@horse?1@
+;	COMDAT ??_C@_0BF@IEFBNLND@skill_wildattack?4msa@
 CONST	SEGMENT
-??_C@_06IFPABCPH@horse?1@ DB 'horse/', 00H		; `string'
+??_C@_0BF@IEFBNLND@skill_wildattack?4msa@ DB 'skill_wildattack.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@KEFNMDBE@wait_2?4msa@
 CONST	SEGMENT
 ??_C@_0L@KEFNMDBE@wait_2?4msa@ DB 'wait_2.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09JILLLHEB@cheongeun@
+;	COMDAT ??_C@_0BB@PMJLOLO@skill_charge?4msa@
 CONST	SEGMENT
-??_C@_09JILLLHEB@cheongeun@ DB 'cheongeun', 00H		; `string'
+??_C@_0BB@PMJLOLO@skill_charge?4msa@ DB 'skill_charge.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08LNKNCCEA@geompung@
 CONST	SEGMENT
 ??_C@_08LNKNCCEA@geompung@ DB 'geompung', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08JHMEPNFK@gyeoksan@
+;	COMDAT ??_C@_06IFPABCPH@horse?1@
 CONST	SEGMENT
-??_C@_08JHMEPNFK@gyeoksan@ DB 'gyeoksan', 00H		; `string'
+??_C@_06IFPABCPH@horse?1@ DB 'horse/', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06GHPDMNFE@daejin@
 CONST	SEGMENT
 ??_C@_06GHPDMNFE@daejin@ DB 'daejin', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07EADJNFBA@tanhwan@
+;	COMDAT ??_C@_09JILLLHEB@cheongeun@
 CONST	SEGMENT
-??_C@_07EADJNFBA@tanhwan@ DB 'tanhwan', 00H		; `string'
+??_C@_09JILLLHEB@cheongeun@ DB 'cheongeun', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@IGJCNCLO@gigongcham@
 CONST	SEGMENT
 ??_C@_0L@IGJCNCLO@gigongcham@ DB 'gigongcham', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07JOKIOKIF@jeongwi@
+;	COMDAT ??_C@_08JHMEPNFK@gyeoksan@
 CONST	SEGMENT
-??_C@_07JOKIOKIF@jeongwi@ DB 'jeongwi', 00H		; `string'
+??_C@_08JHMEPNFK@gyeoksan@ DB 'gyeoksan', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@CKDDNDMD@geomgyeong@
 CONST	SEGMENT
 ??_C@_0L@CKDDNDMD@geomgyeong@ DB 'geomgyeong', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07GBGGKCIL@samyeon@
+;	COMDAT ??_C@_07EADJNFBA@tanhwan@
 CONST	SEGMENT
-??_C@_07GBGGKCIL@samyeon@ DB 'samyeon', 00H		; `string'
+??_C@_07EADJNFBA@tanhwan@ DB 'tanhwan', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07GMOHJGHH@palbang@
 CONST	SEGMENT
 ??_C@_07GMOHJGHH@palbang@ DB 'palbang', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_01IDAFKMJL@_@
+;	COMDAT ??_C@_07JOKIOKIF@jeongwi@
 CONST	SEGMENT
-??_C@_01IDAFKMJL@_@ DB '_', 00H				; `string'
+??_C@_07JOKIOKIF@jeongwi@ DB 'jeongwi', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04KEDBDKLG@?4msa@
 CONST	SEGMENT
 ??_C@_04KEDBDKLG@?4msa@ DB '.msa', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@BLEEDAJM@attack_1?4msa@
+;	COMDAT ??_C@_07GBGGKCIL@samyeon@
 CONST	SEGMENT
-??_C@_0N@BLEEDAJM@attack_1?4msa@ DB 'attack_1.msa', 00H	; `string'
+??_C@_07GBGGKCIL@samyeon@ DB 'samyeon', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06GLCDECAA@skill?1@
 CONST	SEGMENT
 ??_C@_06GLCDECAA@skill?1@ DB 'skill/', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@IFFMEODP@combo_08?4msa@
+;	COMDAT ??_C@_01IDAFKMJL@_@
 CONST	SEGMENT
-??_C@_0N@IFFMEODP@combo_08?4msa@ DB 'combo_08.msa', 00H	; `string'
+??_C@_01IDAFKMJL@_@ DB '_', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08GJBGCJFC@general?1@
 CONST	SEGMENT
 ??_C@_08GJBGCJFC@general?1@ DB 'general/', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@LPFGCPEP@combo_06?4msa@
+;	COMDAT ??_C@_0N@BLEEDAJM@attack_1?4msa@
 CONST	SEGMENT
-??_C@_0N@LPFGCPEP@combo_06?4msa@ DB 'combo_06.msa', 00H	; `string'
+??_C@_0N@BLEEDAJM@attack_1?4msa@ DB 'attack_1.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@HEAKPMOK@combo_07?4msa@
 CONST	SEGMENT
 ??_C@_0N@HEAKPMOK@combo_07?4msa@ DB 'combo_07.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@PCJOIOEE@combo_04?4msa@
+;	COMDAT ??_C@_0N@IFFMEODP@combo_08?4msa@
 CONST	SEGMENT
-??_C@_0N@PCJOIOEE@combo_04?4msa@ DB 'combo_04.msa', 00H	; `string'
+??_C@_0N@IFFMEODP@combo_08?4msa@ DB 'combo_08.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@DJMCFNOB@combo_05?4msa@
 CONST	SEGMENT
 ??_C@_0N@DJMCFNOB@combo_05?4msa@ DB 'combo_05.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@CEMHGNFJ@combo_02?4msa@
+;	COMDAT ??_C@_0N@LPFGCPEP@combo_06?4msa@
 CONST	SEGMENT
-??_C@_0N@CEMHGNFJ@combo_02?4msa@ DB 'combo_02.msa', 00H	; `string'
+??_C@_0N@LPFGCPEP@combo_06?4msa@ DB 'combo_06.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@OPJLLOPM@combo_03?4msa@
 CONST	SEGMENT
 ??_C@_0N@OPJLLOPM@combo_03?4msa@ DB 'combo_03.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@OAPILEA@attack?4msa@
+;	COMDAT ??_C@_0N@PCJOIOEE@combo_04?4msa@
 CONST	SEGMENT
-??_C@_0L@OAPILEA@attack?4msa@ DB 'attack.msa', 00H	; `string'
+??_C@_0N@PCJOIOEE@combo_04?4msa@ DB 'combo_04.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@KCFDBPPH@combo_01?4msa@
 CONST	SEGMENT
 ??_C@_0N@KCFDBPPH@combo_01?4msa@ DB 'combo_01.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06NCLANNPF@intro?1@
+;	COMDAT ??_C@_0N@CEMHGNFJ@combo_02?4msa@
 CONST	SEGMENT
-??_C@_06NCLANNPF@intro?1@ DB 'intro/', 00H		; `string'
+??_C@_0N@CEMHGNFJ@combo_02?4msa@ DB 'combo_02.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@CCMJLBLK@wait_1?4msa@
 CONST	SEGMENT
 ??_C@_0L@CCMJLBLK@wait_1?4msa@ DB 'wait_1.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@MGNBBFBM@msm?1shaman_m?4msm@
+;	COMDAT ??_C@_0L@OAPILEA@attack?4msa@
 CONST	SEGMENT
-??_C@_0BB@MGNBBFBM@msm?1shaman_m?4msm@ DB 'msm/shaman_m.msm', 00H ; `string'
+??_C@_0L@OAPILEA@attack?4msa@ DB 'attack.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@GEJMDEOB@msm?1shaman_w?4msm@
 CONST	SEGMENT
 ??_C@_0BB@GEJMDEOB@msm?1shaman_w?4msm@ DB 'msm/shaman_w.msm', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@MGHCGKBK@msm?1sura_m?4msm@
+;	COMDAT ??_C@_06NCLANNPF@intro?1@
 CONST	SEGMENT
-??_C@_0P@MGHCGKBK@msm?1sura_m?4msm@ DB 'msm/sura_m.msm', 00H ; `string'
+??_C@_06NCLANNPF@intro?1@ DB 'intro/', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@GEDPELOH@msm?1sura_w?4msm@
 CONST	SEGMENT
 ??_C@_0P@GEDPELOH@msm?1sura_w?4msm@ DB 'msm/sura_w.msm', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@GEIDNCMH@msm?1assassin_m?4msm@
+;	COMDAT ??_C@_0BB@MGNBBFBM@msm?1shaman_m?4msm@
 CONST	SEGMENT
-??_C@_0BD@GEIDNCMH@msm?1assassin_m?4msm@ DB 'msm/assassin_m.msm', 00H ; `string'
+??_C@_0BB@MGNBBFBM@msm?1shaman_m?4msm@ DB 'msm/shaman_m.msm', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@MGMOPDDK@msm?1assassin_w?4msm@
 CONST	SEGMENT
 ??_C@_0BD@MGMOPDDK@msm?1assassin_w?4msm@ DB 'msm/assassin_w.msm', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@HFOHHBIE@msm?1warrior_m?4msm@
+;	COMDAT ??_C@_0P@MGHCGKBK@msm?1sura_m?4msm@
 CONST	SEGMENT
-??_C@_0BC@HFOHHBIE@msm?1warrior_m?4msm@ DB 'msm/warrior_m.msm', 00H ; `string'
+??_C@_0P@MGHCGKBK@msm?1sura_m?4msm@ DB 'msm/sura_m.msm', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@NHKKFAHJ@msm?1warrior_w?4msm@
 CONST	SEGMENT
 ??_C@_0BC@NHKKFAHJ@msm?1warrior_w?4msm@ DB 'msm/warrior_w.msm', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BN@LCAJBDFE@unknown?5locale?5string?5key?5?$CFs@
+;	COMDAT ??_C@_0BD@GEIDNCMH@msm?1assassin_m?4msm@
 CONST	SEGMENT
-??_C@_0BN@LCAJBDFE@unknown?5locale?5string?5key?5?$CFs@ DB 'unknown local'
-	DB	'e string key %s', 00H			; `string'
+??_C@_0BD@GEIDNCMH@msm?1assassin_m?4msm@ DB 'msm/assassin_m.msm', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04HHCDBDLF@?5?7?$AN?6@
 CONST	SEGMENT
 ??_C@_04HHCDBDLF@?5?7?$AN?6@ DB ' ', 09H, 0dH, 0aH, 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_1CM@HKLDGJNG@?$AAl?$AAo?$AAc?$AAa?$AAl?$AAe?$AAI?$AAn?$AAf?$AAo?$AA?5?$AA?$CB?$AA?$DN?$AA?5?$AAn@
+;	COMDAT ??_C@_0BC@HFOHHBIE@msm?1warrior_m?4msm@
 CONST	SEGMENT
-??_C@_1CM@HKLDGJNG@?$AAl?$AAo?$AAc?$AAa?$AAl?$AAe?$AAI?$AAn?$AAf?$AAo?$AA?5?$AA?$CB?$AA?$DN?$AA?5?$AAn@ DB 'l'
-	DB	00H, 'o', 00H, 'c', 00H, 'a', 00H, 'l', 00H, 'e', 00H, 'I', 00H
-	DB	'n', 00H, 'f', 00H, 'o', 00H, ' ', 00H, '!', 00H, '=', 00H, ' '
-	DB	00H, 'n', 00H, 'u', 00H, 'l', 00H, 'l', 00H, 'p', 00H, 't', 00H
-	DB	'r', 00H, 00H, 00H				; `string'
+??_C@_0BC@HFOHHBIE@msm?1warrior_m?4msm@ DB 'msm/warrior_m.msm', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@ODDICDAB@Can?8t?5import?5localeInfo?4@
 CONST	SEGMENT
 ??_C@_0BJ@ODDICDAB@Can?8t?5import?5localeInfo?4@ DB 'Can''t import locale'
 	DB	'Info.', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@KDPPMKNP@localeInfo@
+;	COMDAT ??_C@_0BN@LCAJBDFE@unknown?5locale?5string?5key?5?$CFs@
 CONST	SEGMENT
-??_C@_0L@KDPPMKNP@localeInfo@ DB 'localeInfo', 00H	; `string'
+??_C@_0BN@LCAJBDFE@unknown?5locale?5string?5key?5?$CFs@ DB 'unknown local'
+	DB	'e string key %s', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_1LO@MFPGNBAB@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
 CONST	SEGMENT
@@ -1512,500 +1500,512 @@ CONST	SEGMENT
 	DB	'o', 00H, 'd', 00H, 'u', 00H, 'l', 00H, 'e', 00H, '.', 00H, 'c'
 	DB	00H, 'p', 00H, 'p', 00H, 00H, 00H		; `string'
 CONST	ENDS
+;	COMDAT ??_C@_1CM@HKLDGJNG@?$AAl?$AAo?$AAc?$AAa?$AAl?$AAe?$AAI?$AAn?$AAf?$AAo?$AA?5?$AA?$CB?$AA?$DN?$AA?5?$AAn@
+CONST	SEGMENT
+??_C@_1CM@HKLDGJNG@?$AAl?$AAo?$AAc?$AAa?$AAl?$AAe?$AAI?$AAn?$AAf?$AAo?$AA?5?$AA?$CB?$AA?$DN?$AA?5?$AAn@ DB 'l'
+	DB	00H, 'o', 00H, 'c', 00H, 'a', 00H, 'l', 00H, 'e', 00H, 'I', 00H
+	DB	'n', 00H, 'f', 00H, 'o', 00H, ' ', 00H, '!', 00H, '=', 00H, ' '
+	DB	00H, 'n', 00H, 'u', 00H, 'l', 00H, 'l', 00H, 'p', 00H, 't', 00H
+	DB	'r', 00H, 00H, 00H				; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0BO@HKHPGMPA@call?5to?5empty?5boost?3?3function@
 CONST	SEGMENT
 ??_C@_0BO@HKHPGMPA@call?5to?5empty?5boost?3?3function@ DB 'call to empty '
 	DB	'boost::function', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@EKADJGJM@TITLE_SYSTEM_NAME_20@
+;	COMDAT ??_C@_0L@KDPPMKNP@localeInfo@
 CONST	SEGMENT
-??_C@_0BF@EKADJGJM@TITLE_SYSTEM_NAME_20@ DB 'TITLE_SYSTEM_NAME_20', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BF@IAJMKCMN@TITLE_SYSTEM_NAME_18@
-CONST	SEGMENT
-??_C@_0BF@IAJMKCMN@TITLE_SYSTEM_NAME_18@ DB 'TITLE_SYSTEM_NAME_18', 00H ; `string'
+??_C@_0L@KDPPMKNP@localeInfo@ DB 'localeInfo', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@JJIHJDIM@TITLE_SYSTEM_NAME_19@
 CONST	SEGMENT
 ??_C@_0BF@JJIHJDIM@TITLE_SYSTEM_NAME_19@ DB 'TITLE_SYSTEM_NAME_19', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@BOBPIPED@TITLE_SYSTEM_NAME_16@
+;	COMDAT ??_C@_0BF@EKADJGJM@TITLE_SYSTEM_NAME_20@
 CONST	SEGMENT
-??_C@_0BF@BOBPIPED@TITLE_SYSTEM_NAME_16@ DB 'TITLE_SYSTEM_NAME_16', 00H ; `string'
+??_C@_0BF@EKADJGJM@TITLE_SYSTEM_NAME_20@ DB 'TITLE_SYSTEM_NAME_20', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@HAELOAC@TITLE_SYSTEM_NAME_17@
 CONST	SEGMENT
 ??_C@_0BF@HAELOAC@TITLE_SYSTEM_NAME_17@ DB 'TITLE_SYSTEM_NAME_17', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@CMCJONMB@TITLE_SYSTEM_NAME_14@
+;	COMDAT ??_C@_0BF@IAJMKCMN@TITLE_SYSTEM_NAME_18@
 CONST	SEGMENT
-??_C@_0BF@CMCJONMB@TITLE_SYSTEM_NAME_14@ DB 'TITLE_SYSTEM_NAME_14', 00H ; `string'
+??_C@_0BF@IAJMKCMN@TITLE_SYSTEM_NAME_18@ DB 'TITLE_SYSTEM_NAME_18', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@DFDCNMIA@TITLE_SYSTEM_NAME_15@
 CONST	SEGMENT
 ??_C@_0BF@DFDCNMIA@TITLE_SYSTEM_NAME_15@ DB 'TITLE_SYSTEM_NAME_15', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@HKHDEKEH@TITLE_SYSTEM_NAME_12@
+;	COMDAT ??_C@_0BF@BOBPIPED@TITLE_SYSTEM_NAME_16@
 CONST	SEGMENT
-??_C@_0BF@HKHDEKEH@TITLE_SYSTEM_NAME_12@ DB 'TITLE_SYSTEM_NAME_12', 00H ; `string'
+??_C@_0BF@BOBPIPED@TITLE_SYSTEM_NAME_16@ DB 'TITLE_SYSTEM_NAME_16', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@GDGIHLAG@TITLE_SYSTEM_NAME_13@
 CONST	SEGMENT
 ??_C@_0BF@GDGIHLAG@TITLE_SYSTEM_NAME_13@ DB 'TITLE_SYSTEM_NAME_13', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@EIEFCIMF@TITLE_SYSTEM_NAME_10@
+;	COMDAT ??_C@_0BF@CMCJONMB@TITLE_SYSTEM_NAME_14@
 CONST	SEGMENT
-??_C@_0BF@EIEFCIMF@TITLE_SYSTEM_NAME_10@ DB 'TITLE_SYSTEM_NAME_10', 00H ; `string'
+??_C@_0BF@CMCJONMB@TITLE_SYSTEM_NAME_14@ DB 'TITLE_SYSTEM_NAME_14', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@FBFOBJIE@TITLE_SYSTEM_NAME_11@
 CONST	SEGMENT
 ??_C@_0BF@FBFOBJIE@TITLE_SYSTEM_NAME_11@ DB 'TITLE_SYSTEM_NAME_11', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@FAFEC@TITLE_SYSTEM_NAME_8@
+;	COMDAT ??_C@_0BF@HKHDEKEH@TITLE_SYSTEM_NAME_12@
 CONST	SEGMENT
-??_C@_0BE@FAFEC@TITLE_SYSTEM_NAME_8@ DB 'TITLE_SYSTEM_NAME_8', 00H ; `string'
+??_C@_0BF@HKHDEKEH@TITLE_SYSTEM_NAME_12@ DB 'TITLE_SYSTEM_NAME_12', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@BJBODEAD@TITLE_SYSTEM_NAME_9@
 CONST	SEGMENT
 ??_C@_0BE@BJBODEAD@TITLE_SYSTEM_NAME_9@ DB 'TITLE_SYSTEM_NAME_9', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@JOIGCIMM@TITLE_SYSTEM_NAME_6@
+;	COMDAT ??_C@_0BF@EIEFCIMF@TITLE_SYSTEM_NAME_10@
 CONST	SEGMENT
-??_C@_0BE@JOIGCIMM@TITLE_SYSTEM_NAME_6@ DB 'TITLE_SYSTEM_NAME_6', 00H ; `string'
+??_C@_0BF@EIEFCIMF@TITLE_SYSTEM_NAME_10@ DB 'TITLE_SYSTEM_NAME_10', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@IHJNBJIN@TITLE_SYSTEM_NAME_7@
 CONST	SEGMENT
 ??_C@_0BE@IHJNBJIN@TITLE_SYSTEM_NAME_7@ DB 'TITLE_SYSTEM_NAME_7', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@KMLAEKEO@TITLE_SYSTEM_NAME_4@
+;	COMDAT ??_C@_0BE@FAFEC@TITLE_SYSTEM_NAME_8@
 CONST	SEGMENT
-??_C@_0BE@KMLAEKEO@TITLE_SYSTEM_NAME_4@ DB 'TITLE_SYSTEM_NAME_4', 00H ; `string'
+??_C@_0BE@FAFEC@TITLE_SYSTEM_NAME_8@ DB 'TITLE_SYSTEM_NAME_8', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@LFKLHLAP@TITLE_SYSTEM_NAME_5@
 CONST	SEGMENT
 ??_C@_0BE@LFKLHLAP@TITLE_SYSTEM_NAME_5@ DB 'TITLE_SYSTEM_NAME_5', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@PKOKONMI@TITLE_SYSTEM_NAME_2@
+;	COMDAT ??_C@_0BE@JOIGCIMM@TITLE_SYSTEM_NAME_6@
 CONST	SEGMENT
-??_C@_0BE@PKOKONMI@TITLE_SYSTEM_NAME_2@ DB 'TITLE_SYSTEM_NAME_2', 00H ; `string'
+??_C@_0BE@JOIGCIMM@TITLE_SYSTEM_NAME_6@ DB 'TITLE_SYSTEM_NAME_6', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@ODPBNMIJ@TITLE_SYSTEM_NAME_3@
 CONST	SEGMENT
 ??_C@_0BE@ODPBNMIJ@TITLE_SYSTEM_NAME_3@ DB 'TITLE_SYSTEM_NAME_3', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@MINMIPEK@TITLE_SYSTEM_NAME_0@
+;	COMDAT ??_C@_0BE@KMLAEKEO@TITLE_SYSTEM_NAME_4@
 CONST	SEGMENT
-??_C@_0BE@MINMIPEK@TITLE_SYSTEM_NAME_0@ DB 'TITLE_SYSTEM_NAME_0', 00H ; `string'
+??_C@_0BE@KMLAEKEO@TITLE_SYSTEM_NAME_4@ DB 'TITLE_SYSTEM_NAME_4', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@NBMHLOAL@TITLE_SYSTEM_NAME_1@
 CONST	SEGMENT
 ??_C@_0BE@NBMHLOAL@TITLE_SYSTEM_NAME_1@ DB 'TITLE_SYSTEM_NAME_1', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@IILIAHAC@PVP_LEVEL7@
+;	COMDAT ??_C@_0BE@PKOKONMI@TITLE_SYSTEM_NAME_2@
 CONST	SEGMENT
-??_C@_0L@IILIAHAC@PVP_LEVEL7@ DB 'PVP_LEVEL7', 00H	; `string'
+??_C@_0BE@PKOKONMI@TITLE_SYSTEM_NAME_2@ DB 'TITLE_SYSTEM_NAME_2', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@PCABLMN@PVP_LEVEL8@
 CONST	SEGMENT
 ??_C@_0L@PCABLMN@PVP_LEVEL8@ DB 'PVP_LEVEL8', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@LKIOGFIA@PVP_LEVEL5@
+;	COMDAT ??_C@_0BE@MINMIPEK@TITLE_SYSTEM_NAME_0@
 CONST	SEGMENT
-??_C@_0L@LKIOGFIA@PVP_LEVEL5@ DB 'PVP_LEVEL5', 00H	; `string'
+??_C@_0BE@MINMIPEK@TITLE_SYSTEM_NAME_0@ DB 'TITLE_SYSTEM_NAME_0', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@JBKDDGED@PVP_LEVEL6@
 CONST	SEGMENT
 ??_C@_0L@JBKDDGED@PVP_LEVEL6@ DB 'PVP_LEVEL6', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@OMNEMCAG@PVP_LEVEL3@
+;	COMDAT ??_C@_0L@IILIAHAC@PVP_LEVEL7@
 CONST	SEGMENT
-??_C@_0L@OMNEMCAG@PVP_LEVEL3@ DB 'PVP_LEVEL3', 00H	; `string'
+??_C@_0L@IILIAHAC@PVP_LEVEL7@ DB 'PVP_LEVEL7', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@KDJFFEMB@PVP_LEVEL4@
 CONST	SEGMENT
 ??_C@_0L@KDJFFEMB@PVP_LEVEL4@ DB 'PVP_LEVEL4', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@NOOCKAIE@PVP_LEVEL1@
+;	COMDAT ??_C@_0L@LKIOGFIA@PVP_LEVEL5@
 CONST	SEGMENT
-??_C@_0L@NOOCKAIE@PVP_LEVEL1@ DB 'PVP_LEVEL1', 00H	; `string'
+??_C@_0L@LKIOGFIA@PVP_LEVEL5@ DB 'PVP_LEVEL5', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@PFMPPDEH@PVP_LEVEL2@
 CONST	SEGMENT
 ??_C@_0L@PFMPPDEH@PVP_LEVEL2@ DB 'PVP_LEVEL2', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@CNBMFHHM@d?3?1ymir?5work?1pc2?1shaman?1@
+;	COMDAT ??_C@_0L@OMNEMCAG@PVP_LEVEL3@
 CONST	SEGMENT
-??_C@_0BJ@CNBMFHHM@d?3?1ymir?5work?1pc2?1shaman?1@ DB 'd:/ymir work/pc2/s'
-	DB	'haman/', 00H				; `string'
+??_C@_0L@OMNEMCAG@PVP_LEVEL3@ DB 'PVP_LEVEL3', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@MHPJJBMF@PVP_LEVEL0@
 CONST	SEGMENT
 ??_C@_0L@MHPJJBMF@PVP_LEVEL0@ DB 'PVP_LEVEL0', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@KODFOLEP@d?3?1ymir?5work?1pc2?1sura?1@
+;	COMDAT ??_C@_0L@NOOCKAIE@PVP_LEVEL1@
 CONST	SEGMENT
-??_C@_0BH@KODFOLEP@d?3?1ymir?5work?1pc2?1sura?1@ DB 'd:/ymir work/pc2/sur'
-	DB	'a/', 00H					; `string'
+??_C@_0L@NOOCKAIE@PVP_LEVEL1@ DB 'PVP_LEVEL1', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@MFKBHNDF@d?3?1ymir?5work?1pc?1shaman?1@
 CONST	SEGMENT
 ??_C@_0BI@MFKBHNDF@d?3?1ymir?5work?1pc?1shaman?1@ DB 'd:/ymir work/pc/sha'
 	DB	'man/', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@LKDBCHOP@d?3?1ymir?5work?1pc2?1assassin?1@
+;	COMDAT ??_C@_0BJ@CNBMFHHM@d?3?1ymir?5work?1pc2?1shaman?1@
 CONST	SEGMENT
-??_C@_0BL@LKDBCHOP@d?3?1ymir?5work?1pc2?1assassin?1@ DB 'd:/ymir work/pc2'
-	DB	'/assassin/', 00H				; `string'
+??_C@_0BJ@CNBMFHHM@d?3?1ymir?5work?1pc2?1shaman?1@ DB 'd:/ymir work/pc2/s'
+	DB	'haman/', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@FABILPII@d?3?1ymir?5work?1pc?1sura?1@
 CONST	SEGMENT
 ??_C@_0BG@FABILPII@d?3?1ymir?5work?1pc?1sura?1@ DB 'd:/ymir work/pc/sura/'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BK@EBDPPEFA@d?3?1ymir?5work?1pc2?1warrior?1@
+;	COMDAT ??_C@_0BH@KODFOLEP@d?3?1ymir?5work?1pc2?1sura?1@
 CONST	SEGMENT
-??_C@_0BK@EBDPPEFA@d?3?1ymir?5work?1pc2?1warrior?1@ DB 'd:/ymir work/pc2/'
-	DB	'warrior/', 00H				; `string'
+??_C@_0BH@KODFOLEP@d?3?1ymir?5work?1pc2?1sura?1@ DB 'd:/ymir work/pc2/sur'
+	DB	'a/', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@EADBPCMI@d?3?1ymir?5work?1pc?1assassin?1@
 CONST	SEGMENT
 ??_C@_0BK@EADBPCMI@d?3?1ymir?5work?1pc?1assassin?1@ DB 'd:/ymir work/pc/a'
 	DB	'ssassin/', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@PFKLBBPM@guild_jumunsul?4msa@
+;	COMDAT ??_C@_0BL@LKDBCHOP@d?3?1ymir?5work?1pc2?1assassin?1@
 CONST	SEGMENT
-??_C@_0BD@PFKLBBPM@guild_jumunsul?4msa@ DB 'guild_jumunsul.msa', 00H ; `string'
+??_C@_0BL@LKDBCHOP@d?3?1ymir?5work?1pc2?1assassin?1@ DB 'd:/ymir work/pc2'
+	DB	'/assassin/', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@EONHLAEO@d?3?1ymir?5work?1pc?1warrior?1@
 CONST	SEGMENT
 ??_C@_0BJ@EONHLAEO@d?3?1ymir?5work?1pc?1warrior?1@ DB 'd:/ymir work/pc/wa'
 	DB	'rrior/', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@DBNCDDCI@guild_gasokhwa?4msa@
+;	COMDAT ??_C@_0BK@EBDPPEFA@d?3?1ymir?5work?1pc2?1warrior?1@
 CONST	SEGMENT
-??_C@_0BD@DBNCDDCI@guild_gasokhwa?4msa@ DB 'guild_gasokhwa.msa', 00H ; `string'
+??_C@_0BK@EBDPPEFA@d?3?1ymir?5work?1pc2?1warrior?1@ DB 'd:/ymir work/pc2/'
+	DB	'warrior/', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@HNIJGNCG@guild_yongsinuibunno?4msa@
 CONST	SEGMENT
 ??_C@_0BJ@HNIJGNCG@guild_yongsinuibunno?4msa@ DB 'guild_yongsinuibunno.ms'
 	DB	'a', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@JEOHKJJH@guild_yongsinuichukbok?4msa@
+;	COMDAT ??_C@_0BD@PFKLBBPM@guild_jumunsul?4msa@
 CONST	SEGMENT
-??_C@_0BL@JEOHKJJH@guild_yongsinuichukbok?4msa@ DB 'guild_yongsinuichukbo'
-	DB	'k.msa', 00H					; `string'
+??_C@_0BD@PFKLBBPM@guild_jumunsul?4msa@ DB 'guild_jumunsul.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@HDNJOADD@guild_seonghwigap?4msa@
 CONST	SEGMENT
 ??_C@_0BG@HDNJOADD@guild_seonghwigap?4msa@ DB 'guild_seonghwigap.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@BIGHNBEB@fishing_fail?4msa@
+;	COMDAT ??_C@_0BD@DBNCDDCI@guild_gasokhwa?4msa@
 CONST	SEGMENT
-??_C@_0BB@BIGHNBEB@fishing_fail?4msa@ DB 'fishing_fail.msa', 00H ; `string'
+??_C@_0BD@DBNCDDCI@guild_gasokhwa?4msa@ DB 'guild_gasokhwa.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@FFNKAIII@guild_yongsinuipi?4msa@
 CONST	SEGMENT
 ??_C@_0BG@FFNKAIII@guild_yongsinuipi?4msa@ DB 'guild_yongsinuipi.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@DGADAJEJ@fishing_react?4msa@
+;	COMDAT ??_C@_0BL@JEOHKJJH@guild_yongsinuichukbok?4msa@
 CONST	SEGMENT
-??_C@_0BC@DGADAJEJ@fishing_react?4msa@ DB 'fishing_react.msa', 00H ; `string'
+??_C@_0BL@JEOHKJJH@guild_yongsinuichukbok?4msa@ DB 'guild_yongsinuichukbo'
+	DB	'k.msa', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@ODMMEPDM@fishing_catch?4msa@
 CONST	SEGMENT
 ??_C@_0BC@ODMMEPDM@fishing_catch?4msa@ DB 'fishing_catch.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@EMFJAHIF@fishing_wait?4msa@
+;	COMDAT ??_C@_0BB@BIGHNBEB@fishing_fail?4msa@
 CONST	SEGMENT
-??_C@_0BB@EMFJAHIF@fishing_wait?4msa@ DB 'fishing_wait.msa', 00H ; `string'
+??_C@_0BB@BIGHNBEB@fishing_fail?4msa@ DB 'fishing_fail.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@PJPEJNEN@fishing_cancel?4msa@
 CONST	SEGMENT
 ??_C@_0BD@PJPEJNEN@fishing_cancel?4msa@ DB 'fishing_cancel.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@OPJHFAL@not_selected?4msa@
+;	COMDAT ??_C@_0BC@DGADAJEJ@fishing_react?4msa@
 CONST	SEGMENT
-??_C@_0BB@OPJHFAL@not_selected?4msa@ DB 'not_selected.msa', 00H ; `string'
+??_C@_0BC@DGADAJEJ@fishing_react?4msa@ DB 'fishing_react.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09BMCMDEBL@throw?4msa@
 CONST	SEGMENT
 ??_C@_09BMCMDEBL@throw?4msa@ DB 'throw.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@FMGKNMJL@slap_hurt?4msa@
+;	COMDAT ??_C@_0BB@EMFJAHIF@fishing_wait?4msa@
 CONST	SEGMENT
-??_C@_0O@FMGKNMJL@slap_hurt?4msa@ DB 'slap_hurt.msa', 00H ; `string'
+??_C@_0BB@EMFJAHIF@fishing_wait?4msa@ DB 'fishing_wait.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@LALHEHLF@selected?4msa@
 CONST	SEGMENT
 ??_C@_0N@LALHEHLF@selected?4msa@ DB 'selected.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@PILPMHOM@kiss_with_shaman?4msa@
+;	COMDAT ??_C@_0BB@OPJHFAL@not_selected?4msa@
 CONST	SEGMENT
-??_C@_0BF@PILPMHOM@kiss_with_shaman?4msa@ DB 'kiss_with_shaman.msa', 00H ; `string'
+??_C@_0BB@OPJHFAL@not_selected?4msa@ DB 'not_selected.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@GKAFMC@slap_hit?4msa@
 CONST	SEGMENT
 ??_C@_0N@GKAFMC@slap_hit?4msa@ DB 'slap_hit.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@HAAIJLNC@kiss_with_assassin?4msa@
+;	COMDAT ??_C@_0O@FMGKNMJL@slap_hurt?4msa@
 CONST	SEGMENT
-??_C@_0BH@HAAIJLNC@kiss_with_assassin?4msa@ DB 'kiss_with_assassin.msa', 00H ; `string'
+??_C@_0O@FMGKNMJL@slap_hurt?4msa@ DB 'slap_hurt.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@GLHIMEMD@kiss_with_sura?4msa@
 CONST	SEGMENT
 ??_C@_0BD@GLHIMEMD@kiss_with_sura?4msa@ DB 'kiss_with_sura.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BM@IGFLIAI@french_kiss_with_shaman?4msa@
+;	COMDAT ??_C@_0BF@PILPMHOM@kiss_with_shaman?4msa@
 CONST	SEGMENT
-??_C@_0BM@IGFLIAI@french_kiss_with_shaman?4msa@ DB 'french_kiss_with_sham'
-	DB	'an.msa', 00H				; `string'
+??_C@_0BF@PILPMHOM@kiss_with_shaman?4msa@ DB 'kiss_with_shaman.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@KMOAFEGF@kiss_with_warrior?4msa@
 CONST	SEGMENT
 ??_C@_0BG@KMOAFEGF@kiss_with_warrior?4msa@ DB 'kiss_with_warrior.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BO@IKKADBEN@french_kiss_with_assassin?4msa@
+;	COMDAT ??_C@_0BH@HAAIJLNC@kiss_with_assassin?4msa@
 CONST	SEGMENT
-??_C@_0BO@IKKADBEN@french_kiss_with_assassin?4msa@ DB 'french_kiss_with_a'
-	DB	'ssassin.msa', 00H				; `string'
+??_C@_0BH@HAAIJLNC@kiss_with_assassin?4msa@ DB 'kiss_with_assassin.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@OHJJLAOB@french_kiss_with_sura?4msa@
 CONST	SEGMENT
 ??_C@_0BK@OHJJLAOB@french_kiss_with_sura?4msa@ DB 'french_kiss_with_sura.'
 	DB	'msa', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07BHMJMOLE@joy?4msa@
+;	COMDAT ??_C@_0BM@IGFLIAI@french_kiss_with_shaman?4msa@
 CONST	SEGMENT
-??_C@_07BHMJMOLE@joy?4msa@ DB 'joy.msa', 00H		; `string'
+??_C@_0BM@IGFLIAI@french_kiss_with_shaman?4msa@ DB 'french_kiss_with_sham'
+	DB	'an.msa', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@LHHKIHL@french_kiss_with_warrior?4msa@
 CONST	SEGMENT
 ??_C@_0BN@LHHKIHL@french_kiss_with_warrior?4msa@ DB 'french_kiss_with_war'
 	DB	'rior.msa', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@NGCAKNDO@cheerup?4msa@
+;	COMDAT ??_C@_0BO@IKKADBEN@french_kiss_with_assassin?4msa@
 CONST	SEGMENT
-??_C@_0M@NGCAKNDO@cheerup?4msa@ DB 'cheerup.msa', 00H	; `string'
+??_C@_0BO@IKKADBEN@french_kiss_with_assassin?4msa@ DB 'french_kiss_with_a'
+	DB	'ssassin.msa', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@BMNGDGCE@banter?4msa@
 CONST	SEGMENT
 ??_C@_0L@BMNGDGCE@banter?4msa@ DB 'banter.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07JLEKIOKM@sad?4msa@
+;	COMDAT ??_C@_07BHMJMOLE@joy?4msa@
 CONST	SEGMENT
-??_C@_07JLEKIOKM@sad?4msa@ DB 'sad.msa', 00H		; `string'
+??_C@_07BHMJMOLE@joy?4msa@ DB 'joy.msa', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07LBJKNKDK@shy?4msa@
 CONST	SEGMENT
 ??_C@_07LBJKNKDK@shy?4msa@ DB 'shy.msa', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09KGOJKEAM@angry?4msa@
+;	COMDAT ??_C@_0M@NGCAKNDO@cheerup?4msa@
 CONST	SEGMENT
-??_C@_09KGOJKEAM@angry?4msa@ DB 'angry.msa', 00H	; `string'
+??_C@_0M@NGCAKNDO@cheerup?4msa@ DB 'cheerup.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@BBBKMBFK@attractive?4msa@
 CONST	SEGMENT
 ??_C@_0P@BBBKMBFK@attractive?4msa@ DB 'attractive.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@NOBNLAJN@surprised2?4msa@
+;	COMDAT ??_C@_07JLEKIOKM@sad?4msa@
 CONST	SEGMENT
-??_C@_0P@NOBNLAJN@surprised2?4msa@ DB 'surprised2.msa', 00H ; `string'
+??_C@_07JLEKIOKM@sad?4msa@ DB 'sad.msa', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@MPBONJHC@forgive?4msa@
 CONST	SEGMENT
 ??_C@_0M@MPBONJHC@forgive?4msa@ DB 'forgive.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@PNDGIEG@robotdance?4msa@
+;	COMDAT ??_C@_09KGOJKEAM@angry?4msa@
 CONST	SEGMENT
-??_C@_0P@PNDGIEG@robotdance?4msa@ DB 'robotdance.msa', 00H ; `string'
+??_C@_09KGOJKEAM@angry?4msa@ DB 'angry.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@CBHHDINN@snowball?4msa@
 CONST	SEGMENT
 ??_C@_0N@CBHHDINN@snowball?4msa@ DB 'snowball.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09KDLCKGID@flair?4msa@
+;	COMDAT ??_C@_0P@NOBNLAJN@surprised2?4msa@
 CONST	SEGMENT
-??_C@_09KDLCKGID@flair?4msa@ DB 'flair.msa', 00H	; `string'
+??_C@_0P@NOBNLAJN@surprised2?4msa@ DB 'surprised2.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09GBAGGLOH@horon?4msa@
 CONST	SEGMENT
 ??_C@_09GBAGGLOH@horon?4msa@ DB 'horon.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08KBKJJCJE@slow?4msa@
+;	COMDAT ??_C@_0P@PNDGIEG@robotdance?4msa@
 CONST	SEGMENT
-??_C@_08KBKJJCJE@slow?4msa@ DB 'slow.msa', 00H		; `string'
+??_C@_0P@PNDGIEG@robotdance?4msa@ DB 'robotdance.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@MDMLHNLA@bestmates?4msa@
 CONST	SEGMENT
 ??_C@_0O@MDMLHNLA@bestmates?4msa@ DB 'bestmates.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09EDJADKPI@samba?4msa@
+;	COMDAT ??_C@_09KDLCKGID@flair?4msa@
 CONST	SEGMENT
-??_C@_09EDJADKPI@samba?4msa@ DB 'samba.msa', 00H	; `string'
+??_C@_09KDLCKGID@flair?4msa@ DB 'flair.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@NBAGPPII@shimmy?4msa@
 CONST	SEGMENT
 ??_C@_0L@NBAGPPII@shimmy?4msa@ DB 'shimmy.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09FHIPELCK@pingu?4msa@
+;	COMDAT ??_C@_08KBKJJCJE@slow?4msa@
 CONST	SEGMENT
-??_C@_09FHIPELCK@pingu?4msa@ DB 'pingu.msa', 00H	; `string'
+??_C@_08KBKJJCJE@slow?4msa@ DB 'slow.msa', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09GLDGLOGH@twerk?4msa@
 CONST	SEGMENT
 ??_C@_09GLDGLOGH@twerk?4msa@ DB 'twerk.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@HOIOLBIM@oriental?4msa@
+;	COMDAT ??_C@_09EDJADKPI@samba?4msa@
 CONST	SEGMENT
-??_C@_0N@HOIOLBIM@oriental?4msa@ DB 'oriental.msa', 00H	; `string'
+??_C@_09EDJADKPI@samba?4msa@ DB 'samba.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@JGGHACGM@ridack_animoney?4msa@
 CONST	SEGMENT
 ??_C@_0BE@JGGHACGM@ridack_animoney?4msa@ DB 'ridack_animoney.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@CADELGFC@fuckyou?4msa@
+;	COMDAT ??_C@_09FHIPELCK@pingu?4msa@
 CONST	SEGMENT
-??_C@_0M@CADELGFC@fuckyou?4msa@ DB 'fuckyou.msa', 00H	; `string'
+??_C@_09FHIPELCK@pingu?4msa@ DB 'pingu.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08PNINIKKD@laba?4msa@
 CONST	SEGMENT
 ??_C@_08PNINIKKD@laba?4msa@ DB 'laba.msa', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07DLGNFFID@dab?4msa@
+;	COMDAT ??_C@_0N@HOIOLBIM@oriental?4msa@
 CONST	SEGMENT
-??_C@_07DLGNFFID@dab?4msa@ DB 'dab.msa', 00H		; `string'
+??_C@_0N@HOIOLBIM@oriental?4msa@ DB 'oriental.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@JKOAMICF@facepalm?4msa@
 CONST	SEGMENT
 ??_C@_0N@JKOAMICF@facepalm?4msa@ DB 'facepalm.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09FNCHIMNE@break?4msa@
+;	COMDAT ??_C@_0M@CADELGFC@fuckyou?4msa@
 CONST	SEGMENT
-??_C@_09FNCHIMNE@break?4msa@ DB 'break.msa', 00H	; `string'
+??_C@_0M@CADELGFC@fuckyou?4msa@ DB 'fuckyou.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@BIIBKDDJ@cocalar?4msa@
 CONST	SEGMENT
 ??_C@_0M@BIIBKDDJ@cocalar?4msa@ DB 'cocalar.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08KIDMJOJE@amin?4msa@
+;	COMDAT ??_C@_07DLGNFFID@dab?4msa@
 CONST	SEGMENT
-??_C@_08KIDMJOJE@amin?4msa@ DB 'amin.msa', 00H		; `string'
+??_C@_07DLGNFFID@dab?4msa@ DB 'dab.msa', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@ONDPICMI@backflip?4msa@
 CONST	SEGMENT
 ??_C@_0N@ONDPICMI@backflip?4msa@ DB 'backflip.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@KADBCIBP@exercise?4msa@
+;	COMDAT ??_C@_09FNCHIMNE@break?4msa@
 CONST	SEGMENT
-??_C@_0N@KADBCIBP@exercise?4msa@ DB 'exercise.msa', 00H	; `string'
+??_C@_09FNCHIMNE@break?4msa@ DB 'break.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@JIIENGDL@pushup?4msa@
 CONST	SEGMENT
 ??_C@_0L@JIIENGDL@pushup?4msa@ DB 'pushup.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@LDFOMLNC@selfie?4msa@
+;	COMDAT ??_C@_08KIDMJOJE@amin?4msa@
 CONST	SEGMENT
-??_C@_0L@LDFOMLNC@selfie?4msa@ DB 'selfie.msa', 00H	; `string'
+??_C@_08KIDMJOJE@amin?4msa@ DB 'amin.msa', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08JMHPKKDG@doze?4msa@
 CONST	SEGMENT
 ??_C@_08JMHPKKDG@doze?4msa@ DB 'doze.msa', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@KHKAFLEJ@congratulation?4msa@
+;	COMDAT ??_C@_0N@KADBCIBP@exercise?4msa@
 CONST	SEGMENT
-??_C@_0BD@KHKAFLEJ@congratulation?4msa@ DB 'congratulation.msa', 00H ; `string'
+??_C@_0N@KADBCIBP@exercise?4msa@ DB 'exercise.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@FNOBJMHN@dance_7?4msa@
 CONST	SEGMENT
 ??_C@_0M@FNOBJMHN@dance_7?4msa@ DB 'dance_7.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@BACJDNHG@dance_5?4msa@
+;	COMDAT ??_C@_0L@LDFOMLNC@selfie?4msa@
 CONST	SEGMENT
-??_C@_0M@BACJDNHG@dance_5?4msa@ DB 'dance_5.msa', 00H	; `string'
+??_C@_0L@LDFOMLNC@selfie?4msa@ DB 'selfie.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@JGLNEPNI@dance_6?4msa@
 CONST	SEGMENT
 ??_C@_0M@JGLNEPNI@dance_6?4msa@ DB 'dance_6.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@MGHANOGL@dance_3?4msa@
+;	COMDAT ??_C@_0BD@KHKAFLEJ@congratulation?4msa@
 CONST	SEGMENT
-??_C@_0M@MGHANOGL@dance_3?4msa@ DB 'dance_3.msa', 00H	; `string'
+??_C@_0BD@KHKAFLEJ@congratulation?4msa@ DB 'congratulation.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@NLHFOOND@dance_4?4msa@
 CONST	SEGMENT
 ??_C@_0M@NLHFOOND@dance_4?4msa@ DB 'dance_4.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@ILLIHPGA@dance_1?4msa@
+;	COMDAT ??_C@_0M@BACJDNHG@dance_5?4msa@
 CONST	SEGMENT
-??_C@_0M@ILLIHPGA@dance_1?4msa@ DB 'dance_1.msa', 00H	; `string'
+??_C@_0M@BACJDNHG@dance_5?4msa@ DB 'dance_5.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@NCMANMO@dance_2?4msa@
 CONST	SEGMENT
 ??_C@_0M@NCMANMO@dance_2?4msa@ DB 'dance_2.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@HMOCHH@cheers_1?4msa@
+;	COMDAT ??_C@_0M@MGHANOGL@dance_3?4msa@
 CONST	SEGMENT
-??_C@_0N@HMOCHH@cheers_1?4msa@ DB 'cheers_1.msa', 00H	; `string'
+??_C@_0M@MGHANOGL@dance_3?4msa@ DB 'dance_3.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@IGOIJANJ@cheers_2?4msa@
 CONST	SEGMENT
 ??_C@_0N@IGOIJANJ@cheers_2?4msa@ DB 'cheers_2.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07FIEPIKFH@dig?4msa@
+;	COMDAT ??_C@_0M@ILLIHPGA@dance_1?4msa@
 CONST	SEGMENT
-??_C@_07FIEPIKFH@dig?4msa@ DB 'dig.msa', 00H		; `string'
+??_C@_0M@ILLIHPGA@dance_1?4msa@ DB 'dance_1.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08EAFDJLAA@clap?4msa@
 CONST	SEGMENT
 ??_C@_08EAFDJLAA@clap?4msa@ DB 'clap.msa', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@LGLFBMII@back_falling_stand?4msa@
+;	COMDAT ??_C@_0N@HMOCHH@cheers_1?4msa@
 CONST	SEGMENT
-??_C@_0BH@LGLFBMII@back_falling_stand?4msa@ DB 'back_falling_stand.msa', 00H ; `string'
+??_C@_0N@HMOCHH@cheers_1?4msa@ DB 'cheers_1.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08KDDKKNGP@dead?4msa@
 CONST	SEGMENT
 ??_C@_08KDDKKNGP@dead?4msa@ DB 'dead.msa', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@ENKCEEH@falling_stand?4msa@
+;	COMDAT ??_C@_07FIEPIKFH@dig?4msa@
 CONST	SEGMENT
-??_C@_0BC@ENKCEEH@falling_stand?4msa@ DB 'falling_stand.msa', 00H ; `string'
+??_C@_07FIEPIKFH@dig?4msa@ DB 'dig.msa', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@POMMBPPP@back_damage_flying?4msa@
 CONST	SEGMENT
 ??_C@_0BH@POMMBPPP@back_damage_flying?4msa@ DB 'back_damage_flying.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@ECMFABBI@damage_3?4msa@
+;	COMDAT ??_C@_0BH@LGLFBMII@back_falling_stand?4msa@
 CONST	SEGMENT
-??_C@_0N@ECMFABBI@damage_3?4msa@ DB 'damage_3.msa', 00H	; `string'
+??_C@_0BH@LGLFBMII@back_falling_stand?4msa@ DB 'back_falling_stand.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@EMKDCHDA@damage_flying?4msa@
 CONST	SEGMENT
 ??_C@_0BC@EMKDCHDA@damage_flying?4msa@ DB 'damage_flying.msa', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@PANKABD@damage_1?4msa@
+;	COMDAT ??_C@_0BC@ENKCEEH@falling_stand?4msa@
 CONST	SEGMENT
-??_C@_0N@PANKABD@damage_1?4msa@ DB 'damage_1.msa', 00H	; `string'
+??_C@_0BC@ENKCEEH@falling_stand?4msa@ DB 'falling_stand.msa', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@IJJJNCLN@damage_2?4msa@
 CONST	SEGMENT
 ??_C@_0N@IJJJNCLN@damage_2?4msa@ DB 'damage_2.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07GFOKBFIJ@run?4msa@
+;	COMDAT ??_C@_0N@ECMFABBI@damage_3?4msa@
 CONST	SEGMENT
-??_C@_07GFOKBFIJ@run?4msa@ DB 'run.msa', 00H		; `string'
+??_C@_0N@ECMFABBI@damage_3?4msa@ DB 'damage_3.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@HAPJNMOH@damage?4msa@
 CONST	SEGMENT
 ??_C@_0L@HAPJNMOH@damage?4msa@ DB 'damage.msa', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08ICAEJBNN@wait?4msa@
+;	COMDAT ??_C@_0N@PANKABD@damage_1?4msa@
 CONST	SEGMENT
-??_C@_08ICAEJBNN@wait?4msa@ DB 'wait.msa', 00H		; `string'
+??_C@_0N@PANKABD@damage_1?4msa@ DB 'damage_1.msa', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08CCLMAODE@walk?4msa@
 CONST	SEGMENT
 ??_C@_08CCLMAODE@walk?4msa@ DB 'walk.msa', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_07GFOKBFIJ@run?4msa@
+CONST	SEGMENT
+??_C@_07GFOKBFIJ@run?4msa@ DB 'run.msa', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_08ICAEJBNN@wait?4msa@
+CONST	SEGMENT
+??_C@_08ICAEJBNN@wait?4msa@ DB 'wait.msa', 00H		; `string'
 ?supportSkillIndexes@@3V?$array@E$0M@@std@@B DB 07aH	; supportSkillIndexes
 	DB	07bH
 	DB	079H
@@ -2019,31 +2019,6 @@ CONST	SEGMENT
 	DB	08bH
 	DB	08cH
 ?NPC_LIST_FILE_NAME@@3PBDB DD FLAT:??_C@_0M@DCGGAEPD@npclist?4txt@ ; NPC_LIST_FILE_NAME
-?vecRaceData@@3V?$array@U?$pair@KPBD@std@@$07@std@@B DD 00H ; vecRaceData
-	DD	FLAT:??_C@_0BJ@EONHLAEO@d?3?1ymir?5work?1pc?1warrior?1@
-	DD	04H
-	DD	FLAT:??_C@_0BK@EBDPPEFA@d?3?1ymir?5work?1pc2?1warrior?1@
-	DD	01H
-	DD	FLAT:??_C@_0BK@EADBPCMI@d?3?1ymir?5work?1pc?1assassin?1@
-	DD	05H
-	DD	FLAT:??_C@_0BL@LKDBCHOP@d?3?1ymir?5work?1pc2?1assassin?1@
-	DD	02H
-	DD	FLAT:??_C@_0BG@FABILPII@d?3?1ymir?5work?1pc?1sura?1@
-	DD	06H
-	DD	FLAT:??_C@_0BH@KODFOLEP@d?3?1ymir?5work?1pc2?1sura?1@
-	DD	03H
-	DD	FLAT:??_C@_0BI@MFKBHNDF@d?3?1ymir?5work?1pc?1shaman?1@
-	DD	07H
-	DD	FLAT:??_C@_0BJ@CNBMFHHM@d?3?1ymir?5work?1pc2?1shaman?1@
-?titleNameList@@3V?$array@PBD$08@std@@B DD FLAT:??_C@_0L@MHPJJBMF@PVP_LEVEL0@ ; titleNameList
-	DD	FLAT:??_C@_0L@NOOCKAIE@PVP_LEVEL1@
-	DD	FLAT:??_C@_0L@PFMPPDEH@PVP_LEVEL2@
-	DD	FLAT:??_C@_0L@OMNEMCAG@PVP_LEVEL3@
-	DD	FLAT:??_C@_0L@KDJFFEMB@PVP_LEVEL4@
-	DD	FLAT:??_C@_0L@LKIOGFIA@PVP_LEVEL5@
-	DD	FLAT:??_C@_0L@JBKDDGED@PVP_LEVEL6@
-	DD	FLAT:??_C@_0L@IILIAHAC@PVP_LEVEL7@
-	DD	FLAT:??_C@_0L@PCABLMN@PVP_LEVEL8@
 ?titleSystemNameList@@3V?$array@PBD$0BF@@std@@B DD FLAT:??_C@_0BE@MINMIPEK@TITLE_SYSTEM_NAME_0@ ; titleSystemNameList
 	DD	FLAT:??_C@_0BE@NBMHLOAL@TITLE_SYSTEM_NAME_1@
 	DD	FLAT:??_C@_0BE@PKOKONMI@TITLE_SYSTEM_NAME_2@
@@ -2065,7 +2040,6 @@ CONST	SEGMENT
 	DD	FLAT:??_C@_0BF@IAJMKCMN@TITLE_SYSTEM_NAME_18@
 	DD	FLAT:??_C@_0BF@JJIHJDIM@TITLE_SYSTEM_NAME_19@
 	DD	FLAT:??_C@_0BF@EKADJGJM@TITLE_SYSTEM_NAME_20@
-	ORG $+4
 ?vecFishing@@3V?$array@U?$pair@KPBD@std@@$07@std@@B DD 01H ; vecFishing
 	DD	FLAT:??_C@_08ICAEJBNN@wait?4msa@
 	DD	02H
@@ -2094,58 +2068,31 @@ CONST	SEGMENT
 	DD	FLAT:??_C@_0BJ@HNIJGNCG@guild_yongsinuibunno?4msa@
 	DD	0a2H
 	DD	FLAT:??_C@_0BD@PFKLBBPM@guild_jumunsul?4msa@
-?vecGeneralMotions@@3V?$array@V?$tuple@KPBD$$CBE@std@@$0N@@std@@B DB 064H ; vecGeneralMotions
-	ORG $+3
-	DD	FLAT:??_C@_08ICAEJBNN@wait?4msa@
+?vecRaceData@@3V?$array@U?$pair@KPBD@std@@$07@std@@B DD 00H ; vecRaceData
+	DD	FLAT:??_C@_0BJ@EONHLAEO@d?3?1ymir?5work?1pc?1warrior?1@
+	DD	04H
+	DD	FLAT:??_C@_0BK@EBDPPEFA@d?3?1ymir?5work?1pc2?1warrior?1@
 	DD	01H
-	DB	064H
-	ORG $+3
-	DD	FLAT:??_C@_08CCLMAODE@walk?4msa@
+	DD	FLAT:??_C@_0BK@EADBPCMI@d?3?1ymir?5work?1pc?1assassin?1@
+	DD	05H
+	DD	FLAT:??_C@_0BL@LKDBCHOP@d?3?1ymir?5work?1pc2?1assassin?1@
 	DD	02H
-	DB	064H
-	ORG $+3
-	DD	FLAT:??_C@_07GFOKBFIJ@run?4msa@
-	DD	03H
-	DB	032H
-	ORG $+3
-	DD	FLAT:??_C@_0L@HAPJNMOH@damage?4msa@
-	DD	05H
-	DB	032H
-	ORG $+3
-	DD	FLAT:??_C@_0N@PANKABD@damage_1?4msa@
-	DD	05H
-	DB	032H
-	ORG $+3
-	DD	FLAT:??_C@_0N@IJJJNCLN@damage_2?4msa@
-	DD	08H
-	DB	032H
-	ORG $+3
-	DD	FLAT:??_C@_0N@ECMFABBI@damage_3?4msa@
-	DD	08H
-	DB	064H
-	ORG $+3
-	DD	FLAT:??_C@_0BC@EMKDCHDA@damage_flying?4msa@
+	DD	FLAT:??_C@_0BG@FABILPII@d?3?1ymir?5work?1pc?1sura?1@
 	DD	06H
-	DB	064H
-	ORG $+3
-	DD	FLAT:??_C@_0BC@ENKCEEH@falling_stand?4msa@
+	DD	FLAT:??_C@_0BH@KODFOLEP@d?3?1ymir?5work?1pc2?1sura?1@
+	DD	03H
+	DD	FLAT:??_C@_0BI@MFKBHNDF@d?3?1ymir?5work?1pc?1shaman?1@
 	DD	07H
-	DB	064H
-	ORG $+3
-	DD	FLAT:??_C@_0BH@POMMBPPP@back_damage_flying?4msa@
-	DD	09H
-	DB	064H
-	ORG $+3
-	DD	FLAT:??_C@_0BH@LGLFBMII@back_falling_stand?4msa@
-	DD	0aH
-	DB	064H
-	ORG $+3
-	DD	FLAT:??_C@_08KDDKKNGP@dead?4msa@
-	DD	0bH
-	DB	064H
-	ORG $+3
-	DD	FLAT:??_C@_07FIEPIKFH@dig?4msa@
-	DD	0145H
+	DD	FLAT:??_C@_0BJ@CNBMFHHM@d?3?1ymir?5work?1pc2?1shaman?1@
+?titleNameList@@3V?$array@PBD$08@std@@B DD FLAT:??_C@_0L@MHPJJBMF@PVP_LEVEL0@ ; titleNameList
+	DD	FLAT:??_C@_0L@NOOCKAIE@PVP_LEVEL1@
+	DD	FLAT:??_C@_0L@PFMPPDEH@PVP_LEVEL2@
+	DD	FLAT:??_C@_0L@OMNEMCAG@PVP_LEVEL3@
+	DD	FLAT:??_C@_0L@KDJFFEMB@PVP_LEVEL4@
+	DD	FLAT:??_C@_0L@LKIOGFIA@PVP_LEVEL5@
+	DD	FLAT:??_C@_0L@JBKDDGED@PVP_LEVEL6@
+	DD	FLAT:??_C@_0L@IILIAHAC@PVP_LEVEL7@
+	DD	FLAT:??_C@_0L@PCABLMN@PVP_LEVEL8@
 ?vecWeddingList@@3V?$array@U?$pair@KPBD@std@@$02@std@@B DD 01H ; vecWeddingList
 	DD	FLAT:??_C@_08ICAEJBNN@wait?4msa@
 	DD	02H
@@ -2273,6 +2220,58 @@ CONST	SEGMENT
 	DD	FLAT:??_C@_0O@FMGKNMJL@slap_hurt?4msa@
 	DD	0144H
 	DD	FLAT:??_C@_0O@FMGKNMJL@slap_hurt?4msa@
+?vecGeneralMotions@@3V?$array@V?$tuple@KPBD$$CBE@std@@$0N@@std@@B DB 064H ; vecGeneralMotions
+	ORG $+3
+	DD	FLAT:??_C@_08ICAEJBNN@wait?4msa@
+	DD	01H
+	DB	064H
+	ORG $+3
+	DD	FLAT:??_C@_08CCLMAODE@walk?4msa@
+	DD	02H
+	DB	064H
+	ORG $+3
+	DD	FLAT:??_C@_07GFOKBFIJ@run?4msa@
+	DD	03H
+	DB	032H
+	ORG $+3
+	DD	FLAT:??_C@_0L@HAPJNMOH@damage?4msa@
+	DD	05H
+	DB	032H
+	ORG $+3
+	DD	FLAT:??_C@_0N@PANKABD@damage_1?4msa@
+	DD	05H
+	DB	032H
+	ORG $+3
+	DD	FLAT:??_C@_0N@IJJJNCLN@damage_2?4msa@
+	DD	08H
+	DB	032H
+	ORG $+3
+	DD	FLAT:??_C@_0N@ECMFABBI@damage_3?4msa@
+	DD	08H
+	DB	064H
+	ORG $+3
+	DD	FLAT:??_C@_0BC@EMKDCHDA@damage_flying?4msa@
+	DD	06H
+	DB	064H
+	ORG $+3
+	DD	FLAT:??_C@_0BC@ENKCEEH@falling_stand?4msa@
+	DD	07H
+	DB	064H
+	ORG $+3
+	DD	FLAT:??_C@_0BH@POMMBPPP@back_damage_flying?4msa@
+	DD	09H
+	DB	064H
+	ORG $+3
+	DD	FLAT:??_C@_0BH@LGLFBMII@back_falling_stand?4msa@
+	DD	0aH
+	DB	064H
+	ORG $+3
+	DD	FLAT:??_C@_08KDDKKNGP@dead?4msa@
+	DD	0bH
+	DB	064H
+	ORG $+3
+	DD	FLAT:??_C@_07FIEPIKFH@dig?4msa@
+	DD	0145H
 PUBLIC	??8type_info@@QBE_NABV0@@Z			; type_info::operator==
 PUBLIC	??0runtime_error@std@@QAE@PBD@Z			; std::runtime_error::runtime_error
 PUBLIC	??_Gruntime_error@std@@UAEPAXI@Z		; std::runtime_error::`scalar deleting destructor'

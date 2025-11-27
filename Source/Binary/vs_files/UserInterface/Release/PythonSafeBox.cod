@@ -8,47 +8,42 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0EB@NFGEBKNF@CPythonSafeBox?3?3SetItemData?$CIdwS@ ; `string'
-PUBLIC	??_C@_0ED@OIOPNNLC@CPythonSafeBox?3?3GetSlotItemID?$CId@ ; `string'
 PUBLIC	??_C@_0EB@ILLOPJOM@CPythonSafeBox?3?3DelItemData?$CIdwS@ ; `string'
-PUBLIC	??_C@_0EF@BFNMLNFN@CPythonSafeBox?3?3SetMallItemData@ ; `string'
+PUBLIC	??_C@_0EB@NFGEBKNF@CPythonSafeBox?3?3SetItemData?$CIdwS@ ; `string'
 PUBLIC	??_C@_0EB@BNCIHACH@CPythonSafeBox?3?3GetItemData?$CIdwS@ ; `string'
-PUBLIC	??_C@_0EH@BNEMANLE@CPythonSafeBox?3?3GetMallSlotItem@ ; `string'
+PUBLIC	??_C@_0ED@OIOPNNLC@CPythonSafeBox?3?3GetSlotItemID?$CId@ ; `string'
 PUBLIC	??_C@_0EF@MEFPDFOJ@CPythonSafeBox?3?3DelMallItemData@ ; `string'
-PUBLIC	??_C@_09GMBNEEAB@GetItemID@			; `string'
+PUBLIC	??_C@_0EF@BFNMLNFN@CPythonSafeBox?3?3SetMallItemData@ ; `string'
 PUBLIC	??_C@_0BG@JANGHGIO@GetCurrentSafeboxSize@	; `string'
-PUBLIC	??_C@_0BB@KMJDPGMF@GetMallItemCount@		; `string'
+PUBLIC	??_C@_0EH@BNEMANLE@CPythonSafeBox?3?3GetMallSlotItem@ ; `string'
 PUBLIC	??_C@_0O@BCKKGAPN@GetMallItemID@		; `string'
-PUBLIC	??_C@_0BF@HIELOHFB@GetMallItemAttribute@	; `string'
+PUBLIC	??_C@_09GMBNEEAB@GetItemID@			; `string'
 PUBLIC	??_C@_0BH@EIOFOGDJ@GetMallItemMetinSocket@	; `string'
-PUBLIC	??_C@_0BG@IJOJLONA@GetItemChangeLookVnum@	; `string'
+PUBLIC	??_C@_0BB@KMJDPGMF@GetMallItemCount@		; `string'
 PUBLIC	??_C@_0M@GGDNKKEE@GetMallSize@			; `string'
-PUBLIC	??_C@_07CPPOKFKF@safebox@			; `string'
+PUBLIC	??_C@_0BF@HIELOHFB@GetMallItemAttribute@	; `string'
 PUBLIC	??_C@_0BK@KKGAGJBH@GetMallItemChangeLookVnum@	; `string'
-PUBLIC	??_C@_0BF@PAKLFMNK@SAFEBOX_SLOT_Y_COUNT@	; `string'
+PUBLIC	??_C@_0BG@IJOJLONA@GetItemChangeLookVnum@	; `string'
 PUBLIC	??_C@_0BF@DMABFMEE@SAFEBOX_SLOT_X_COUNT@	; `string'
+PUBLIC	??_C@_07CPPOKFKF@safebox@			; `string'
 PUBLIC	??_C@_0BC@JOOAEPKL@SAFEBOX_PAGE_SIZE@		; `string'
-PUBLIC	??_R2CPythonSafeBox@@8				; CPythonSafeBox::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@CPythonSafeBox@@8			; CPythonSafeBox::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_C@_0BF@PAKLFMNK@SAFEBOX_SLOT_Y_COUNT@	; `string'
 PUBLIC	??_R2?$CSingleton@VCPythonSafeBox@@@@8		; CSingleton<CPythonSafeBox>::`RTTI Base Class Array'
-PUBLIC	??_R3?$CSingleton@VCPythonSafeBox@@@@8		; CSingleton<CPythonSafeBox>::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2CPythonSafeBox@@8				; CPythonSafeBox::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonSafeBox@@@@8	; CSingleton<CPythonSafeBox>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R3CPythonSafeBox@@8				; CPythonSafeBox::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R1A@?0A@EA@CPythonSafeBox@@8			; CPythonSafeBox::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R0?AV?$CSingleton@VCPythonSafeBox@@@@@8	; CSingleton<CPythonSafeBox> `RTTI Type Descriptor'
+PUBLIC	??_R3?$CSingleton@VCPythonSafeBox@@@@8		; CSingleton<CPythonSafeBox>::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R0?AVCPythonSafeBox@@@8			; CPythonSafeBox `RTTI Type Descriptor'
-PUBLIC	??_R4CPythonSafeBox@@6B@			; CPythonSafeBox::`RTTI Complete Object Locator'
+PUBLIC	??_R3CPythonSafeBox@@8				; CPythonSafeBox::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R4?$CSingleton@VCPythonSafeBox@@@@6B@	; CSingleton<CPythonSafeBox>::`RTTI Complete Object Locator'
 PUBLIC	??_7?$CSingleton@VCPythonSafeBox@@@@6B@		; CSingleton<CPythonSafeBox>::`vftable'
+PUBLIC	??_R4CPythonSafeBox@@6B@			; CPythonSafeBox::`RTTI Complete Object Locator'
 PUBLIC	??_7CPythonSafeBox@@6B@				; CPythonSafeBox::`vftable'
 ;	COMDAT ??_7CPythonSafeBox@@6B@
 CONST	SEGMENT
 ??_7CPythonSafeBox@@6B@ DD FLAT:??_R4CPythonSafeBox@@6B@ ; CPythonSafeBox::`vftable'
 	DD	FLAT:??_ECPythonSafeBox@@UAEPAXI@Z
-CONST	ENDS
-;	COMDAT ??_7?$CSingleton@VCPythonSafeBox@@@@6B@
-CONST	SEGMENT
-??_7?$CSingleton@VCPythonSafeBox@@@@6B@ DD FLAT:??_R4?$CSingleton@VCPythonSafeBox@@@@6B@ ; CSingleton<CPythonSafeBox>::`vftable'
-	DD	FLAT:??_E?$CSingleton@VCPythonSafeBox@@@@UAEPAXI@Z
 CONST	ENDS
 ;	COMDAT ?s_methods@?1??initsafebox@@YAXXZ@4PAUPyMethodDef@@A
 _DATA	SEGMENT
@@ -112,14 +107,6 @@ _DATA	SEGMENT
 	DD	00H
 	ORG $+8
 _DATA	ENDS
-;	COMDAT ??_R4?$CSingleton@VCPythonSafeBox@@@@6B@
-rdata$r	SEGMENT
-??_R4?$CSingleton@VCPythonSafeBox@@@@6B@ DD 00H		; CSingleton<CPythonSafeBox>::`RTTI Complete Object Locator'
-	DD	00H
-	DD	00H
-	DD	FLAT:??_R0?AV?$CSingleton@VCPythonSafeBox@@@@@8
-	DD	FLAT:??_R3?$CSingleton@VCPythonSafeBox@@@@8
-rdata$r	ENDS
 ;	COMDAT ??_R4CPythonSafeBox@@6B@
 rdata$r	SEGMENT
 ??_R4CPythonSafeBox@@6B@ DD 00H				; CPythonSafeBox::`RTTI Complete Object Locator'
@@ -128,24 +115,54 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AVCPythonSafeBox@@@8
 	DD	FLAT:??_R3CPythonSafeBox@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonSafeBox@@@8
-data$rs	SEGMENT
-??_R0?AVCPythonSafeBox@@@8 DD FLAT:??_7type_info@@6B@	; CPythonSafeBox `RTTI Type Descriptor'
+;	COMDAT ??_7?$CSingleton@VCPythonSafeBox@@@@6B@
+CONST	SEGMENT
+??_7?$CSingleton@VCPythonSafeBox@@@@6B@ DD FLAT:??_R4?$CSingleton@VCPythonSafeBox@@@@6B@ ; CSingleton<CPythonSafeBox>::`vftable'
+	DD	FLAT:??_E?$CSingleton@VCPythonSafeBox@@@@UAEPAXI@Z
+CONST	ENDS
+;	COMDAT ??_R4?$CSingleton@VCPythonSafeBox@@@@6B@
+rdata$r	SEGMENT
+??_R4?$CSingleton@VCPythonSafeBox@@@@6B@ DD 00H		; CSingleton<CPythonSafeBox>::`RTTI Complete Object Locator'
 	DD	00H
-	DB	'.?AVCPythonSafeBox@@', 00H
-data$rs	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCPythonSafeBox@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCPythonSafeBox@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonSafeBox> `RTTI Type Descriptor'
 	DD	00H
-	DB	'.?AV?$CSingleton@VCPythonSafeBox@@@@', 00H
-data$rs	ENDS
+	DD	FLAT:??_R0?AV?$CSingleton@VCPythonSafeBox@@@@@8
+	DD	FLAT:??_R3?$CSingleton@VCPythonSafeBox@@@@8
+rdata$r	ENDS
 ;	COMDAT ??_R3CPythonSafeBox@@8
 rdata$r	SEGMENT
 ??_R3CPythonSafeBox@@8 DD 00H				; CPythonSafeBox::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	02H
 	DD	FLAT:??_R2CPythonSafeBox@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AVCPythonSafeBox@@@8
+data$rs	SEGMENT
+??_R0?AVCPythonSafeBox@@@8 DD FLAT:??_7type_info@@6B@	; CPythonSafeBox `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCPythonSafeBox@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R3?$CSingleton@VCPythonSafeBox@@@@8
+rdata$r	SEGMENT
+??_R3?$CSingleton@VCPythonSafeBox@@@@8 DD 00H		; CSingleton<CPythonSafeBox>::`RTTI Class Hierarchy Descriptor'
+	DD	00H
+	DD	01H
+	DD	FLAT:??_R2?$CSingleton@VCPythonSafeBox@@@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCPythonSafeBox@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCPythonSafeBox@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonSafeBox> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCPythonSafeBox@@@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R1A@?0A@EA@CPythonSafeBox@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@CPythonSafeBox@@8 DD FLAT:??_R0?AVCPythonSafeBox@@@8 ; CPythonSafeBox::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3CPythonSafeBox@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonSafeBox@@@@8
 rdata$r	SEGMENT
@@ -157,119 +174,102 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$CSingleton@VCPythonSafeBox@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R3?$CSingleton@VCPythonSafeBox@@@@8
-rdata$r	SEGMENT
-??_R3?$CSingleton@VCPythonSafeBox@@@@8 DD 00H		; CSingleton<CPythonSafeBox>::`RTTI Class Hierarchy Descriptor'
-	DD	00H
-	DD	01H
-	DD	FLAT:??_R2?$CSingleton@VCPythonSafeBox@@@@8
-rdata$r	ENDS
-;	COMDAT ??_R2?$CSingleton@VCPythonSafeBox@@@@8
-rdata$r	SEGMENT
-??_R2?$CSingleton@VCPythonSafeBox@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonSafeBox@@@@8 ; CSingleton<CPythonSafeBox>::`RTTI Base Class Array'
-rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@CPythonSafeBox@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@CPythonSafeBox@@8 DD FLAT:??_R0?AVCPythonSafeBox@@@8 ; CPythonSafeBox::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	01H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3CPythonSafeBox@@8
-rdata$r	ENDS
 ;	COMDAT ??_R2CPythonSafeBox@@8
 rdata$r	SEGMENT
 ??_R2CPythonSafeBox@@8 DD FLAT:??_R1A@?0A@EA@CPythonSafeBox@@8 ; CPythonSafeBox::`RTTI Base Class Array'
 	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonSafeBox@@@@8
 rdata$r	ENDS
+;	COMDAT ??_R2?$CSingleton@VCPythonSafeBox@@@@8
+rdata$r	SEGMENT
+??_R2?$CSingleton@VCPythonSafeBox@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonSafeBox@@@@8 ; CSingleton<CPythonSafeBox>::`RTTI Base Class Array'
+rdata$r	ENDS
+;	COMDAT ??_C@_0BF@PAKLFMNK@SAFEBOX_SLOT_Y_COUNT@
+CONST	SEGMENT
+??_C@_0BF@PAKLFMNK@SAFEBOX_SLOT_Y_COUNT@ DB 'SAFEBOX_SLOT_Y_COUNT', 00H ; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0BC@JOOAEPKL@SAFEBOX_PAGE_SIZE@
 CONST	SEGMENT
 ??_C@_0BC@JOOAEPKL@SAFEBOX_PAGE_SIZE@ DB 'SAFEBOX_PAGE_SIZE', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_07CPPOKFKF@safebox@
+CONST	SEGMENT
+??_C@_07CPPOKFKF@safebox@ DB 'safebox', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@DMABFMEE@SAFEBOX_SLOT_X_COUNT@
 CONST	SEGMENT
 ??_C@_0BF@DMABFMEE@SAFEBOX_SLOT_X_COUNT@ DB 'SAFEBOX_SLOT_X_COUNT', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@PAKLFMNK@SAFEBOX_SLOT_Y_COUNT@
+;	COMDAT ??_C@_0BG@IJOJLONA@GetItemChangeLookVnum@
 CONST	SEGMENT
-??_C@_0BF@PAKLFMNK@SAFEBOX_SLOT_Y_COUNT@ DB 'SAFEBOX_SLOT_Y_COUNT', 00H ; `string'
+??_C@_0BG@IJOJLONA@GetItemChangeLookVnum@ DB 'GetItemChangeLookVnum', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@KKGAGJBH@GetMallItemChangeLookVnum@
 CONST	SEGMENT
 ??_C@_0BK@KKGAGJBH@GetMallItemChangeLookVnum@ DB 'GetMallItemChangeLookVn'
 	DB	'um', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07CPPOKFKF@safebox@
+;	COMDAT ??_C@_0BF@HIELOHFB@GetMallItemAttribute@
 CONST	SEGMENT
-??_C@_07CPPOKFKF@safebox@ DB 'safebox', 00H		; `string'
+??_C@_0BF@HIELOHFB@GetMallItemAttribute@ DB 'GetMallItemAttribute', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@GGDNKKEE@GetMallSize@
 CONST	SEGMENT
 ??_C@_0M@GGDNKKEE@GetMallSize@ DB 'GetMallSize', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@IJOJLONA@GetItemChangeLookVnum@
+;	COMDAT ??_C@_0BB@KMJDPGMF@GetMallItemCount@
 CONST	SEGMENT
-??_C@_0BG@IJOJLONA@GetItemChangeLookVnum@ DB 'GetItemChangeLookVnum', 00H ; `string'
+??_C@_0BB@KMJDPGMF@GetMallItemCount@ DB 'GetMallItemCount', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@EIOFOGDJ@GetMallItemMetinSocket@
 CONST	SEGMENT
 ??_C@_0BH@EIOFOGDJ@GetMallItemMetinSocket@ DB 'GetMallItemMetinSocket', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@HIELOHFB@GetMallItemAttribute@
-CONST	SEGMENT
-??_C@_0BF@HIELOHFB@GetMallItemAttribute@ DB 'GetMallItemAttribute', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0O@BCKKGAPN@GetMallItemID@
-CONST	SEGMENT
-??_C@_0O@BCKKGAPN@GetMallItemID@ DB 'GetMallItemID', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BB@KMJDPGMF@GetMallItemCount@
-CONST	SEGMENT
-??_C@_0BB@KMJDPGMF@GetMallItemCount@ DB 'GetMallItemCount', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BG@JANGHGIO@GetCurrentSafeboxSize@
-CONST	SEGMENT
-??_C@_0BG@JANGHGIO@GetCurrentSafeboxSize@ DB 'GetCurrentSafeboxSize', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_09GMBNEEAB@GetItemID@
 CONST	SEGMENT
 ??_C@_09GMBNEEAB@GetItemID@ DB 'GetItemID', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EF@MEFPDFOJ@CPythonSafeBox?3?3DelMallItemData@
+;	COMDAT ??_C@_0O@BCKKGAPN@GetMallItemID@
 CONST	SEGMENT
-??_C@_0EF@MEFPDFOJ@CPythonSafeBox?3?3DelMallItemData@ DB 'CPythonSafeBox:'
-	DB	':DelMallItemData(dwSlotIndex=%d) - Strange slot index', 00H ; `string'
+??_C@_0O@BCKKGAPN@GetMallItemID@ DB 'GetMallItemID', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EH@BNEMANLE@CPythonSafeBox?3?3GetMallSlotItem@
 CONST	SEGMENT
 ??_C@_0EH@BNEMANLE@CPythonSafeBox?3?3GetMallSlotItem@ DB 'CPythonSafeBox:'
 	DB	':GetMallSlotItemID(dwSlotIndex=%d) - Strange slot index', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EB@BNCIHACH@CPythonSafeBox?3?3GetItemData?$CIdwS@
+;	COMDAT ??_C@_0BG@JANGHGIO@GetCurrentSafeboxSize@
 CONST	SEGMENT
-??_C@_0EB@BNCIHACH@CPythonSafeBox?3?3GetItemData?$CIdwS@ DB 'CPythonSafeB'
-	DB	'ox::GetItemData(dwSlotIndex=%d) - Strange slot index', 00H ; `string'
+??_C@_0BG@JANGHGIO@GetCurrentSafeboxSize@ DB 'GetCurrentSafeboxSize', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EF@BFNMLNFN@CPythonSafeBox?3?3SetMallItemData@
 CONST	SEGMENT
 ??_C@_0EF@BFNMLNFN@CPythonSafeBox?3?3SetMallItemData@ DB 'CPythonSafeBox:'
 	DB	':SetMallItemData(dwSlotIndex=%d) - Strange slot index', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EB@ILLOPJOM@CPythonSafeBox?3?3DelItemData?$CIdwS@
+;	COMDAT ??_C@_0EF@MEFPDFOJ@CPythonSafeBox?3?3DelMallItemData@
 CONST	SEGMENT
-??_C@_0EB@ILLOPJOM@CPythonSafeBox?3?3DelItemData?$CIdwS@ DB 'CPythonSafeB'
-	DB	'ox::DelItemData(dwSlotIndex=%d) - Strange slot index', 00H ; `string'
+??_C@_0EF@MEFPDFOJ@CPythonSafeBox?3?3DelMallItemData@ DB 'CPythonSafeBox:'
+	DB	':DelMallItemData(dwSlotIndex=%d) - Strange slot index', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0ED@OIOPNNLC@CPythonSafeBox?3?3GetSlotItemID?$CId@
 CONST	SEGMENT
 ??_C@_0ED@OIOPNNLC@CPythonSafeBox?3?3GetSlotItemID?$CId@ DB 'CPythonSafeB'
 	DB	'ox::GetSlotItemID(dwSlotIndex=%d) - Strange slot index', 00H ; `string'
 CONST	ENDS
+;	COMDAT ??_C@_0EB@BNCIHACH@CPythonSafeBox?3?3GetItemData?$CIdwS@
+CONST	SEGMENT
+??_C@_0EB@BNCIHACH@CPythonSafeBox?3?3GetItemData?$CIdwS@ DB 'CPythonSafeB'
+	DB	'ox::GetItemData(dwSlotIndex=%d) - Strange slot index', 00H ; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0EB@NFGEBKNF@CPythonSafeBox?3?3SetItemData?$CIdwS@
 CONST	SEGMENT
 ??_C@_0EB@NFGEBKNF@CPythonSafeBox?3?3SetItemData?$CIdwS@ DB 'CPythonSafeB'
 	DB	'ox::SetItemData(dwSlotIndex=%d) - Strange slot index', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0EB@ILLOPJOM@CPythonSafeBox?3?3DelItemData?$CIdwS@
+CONST	SEGMENT
+??_C@_0EB@ILLOPJOM@CPythonSafeBox?3?3DelItemData?$CIdwS@ DB 'CPythonSafeB'
+	DB	'ox::DelItemData(dwSlotIndex=%d) - Strange slot index', 00H ; `string'
 PUBLIC	??_G?$CSingleton@VCPythonSafeBox@@@@UAEPAXI@Z	; CSingleton<CPythonSafeBox>::`scalar deleting destructor'
 PUBLIC	??0?$CSingleton@VCPythonSafeBox@@@@QAE@XZ	; CSingleton<CPythonSafeBox>::CSingleton<CPythonSafeBox>
 PUBLIC	??1?$CSingleton@VCPythonSafeBox@@@@UAE@XZ	; CSingleton<CPythonSafeBox>::~CSingleton<CPythonSafeBox>

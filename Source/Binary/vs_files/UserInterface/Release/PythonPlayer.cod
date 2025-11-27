@@ -8,115 +8,111 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0P@KCGJBOBB@RefreshStamina@		; `string'
-PUBLIC	??_C@_0BL@KCKDPCFN@BINARY_Guild_ExitGuildArea@	; `string'
 PUBLIC	??_C@_0BM@OMJPBBKE@BINARY_Guild_EnterGuildArea@	; `string'
-PUBLIC	??_C@_1KC@HELPMOMK@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
+PUBLIC	??_C@_0P@KCGJBOBB@RefreshStamina@		; `string'
 PUBLIC	??_C@_0DB@KOFJEMCK@?5CPythonPlayer?3?3SetStatus?5?9?5Str@ ; `string'
-PUBLIC	??_C@_0DC@HBNJHHEJ@CPythonPlayer?3?3SetStatus?5?9?5Set?5@ ; `string'
+PUBLIC	??_C@_0BL@KCKDPCFN@BINARY_Guild_ExitGuildArea@	; `string'
 PUBLIC	??_C@_1GI@OFLJIIGE@?$AA?$CB?$AA?$CC?$AA?5?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAP?$AAl?$AAa?$AAy?$AAe@ ; `string'
-PUBLIC	??_C@_1GI@EPFCHDMI@?$AA?$CB?$AA?$CC?$AA?5?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAP?$AAl?$AAa?$AAy?$AAe@ ; `string'
+PUBLIC	??_C@_1KC@HELPMOMK@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
 PUBLIC	??_C@_0DB@KMFIAMFE@?5CPythonPlayer?3?3GetStatus?5?9?5Str@ ; `string'
-PUBLIC	??_C@_0P@PDEFNCOA@OnChangePKMode@		; `string'
+PUBLIC	??_C@_0DC@HBNJHHEJ@CPythonPlayer?3?3SetStatus?5?9?5Set?5@ ; `string'
 PUBLIC	??_C@_0DC@LHJHEHHP@CPythonPlayer?3?3GetStatus?5?9?5Get?5@ ; `string'
-PUBLIC	??_C@_1CC@MKEJNEIO@?$AAp?$AAI?$AAt?$AAe?$AAm?$AA?5?$AA?$CB?$AA?$DN?$AA?5?$AAn?$AAu?$AAl?$AAl?$AAp?$AAt@ ; `string'
+PUBLIC	??_C@_1GI@EPFCHDMI@?$AA?$CB?$AA?$CC?$AA?5?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAP?$AAl?$AAa?$AAy?$AAe@ ; `string'
 PUBLIC	??_C@_0GC@FMCMFPCN@CPythonPlayer?3?3SetItemData?$CIwind@ ; `string'
-PUBLIC	??_C@_0EJ@CAEHGKMP@FAILED?7?7CPythonPlayer?3?3GetItemS@ ; `string'
+PUBLIC	??_C@_0P@PDEFNCOA@OnChangePKMode@		; `string'
 PUBLIC	??_C@_0EG@NGMFHMLF@FAILED?7?7CPythonPlayer?3?3GetItemT@ ; `string'
-PUBLIC	??_C@_0FF@PCELILMJ@Failed?5to?5find?5ItemData?5?9?5CPyth@ ; `string'
+PUBLIC	??_C@_1CC@MKEJNEIO@?$AAp?$AAI?$AAt?$AAe?$AAm?$AA?5?$AA?$CB?$AA?$DN?$AA?5?$AAn?$AAu?$AAl?$AAl?$AAp?$AAt@ ; `string'
 PUBLIC	??_C@_0BC@GAEKBOHM@BINARY_ActEmotion@		; `string'
-PUBLIC	??_C@_1GK@DIIIFKJL@?$AA?$CB?$AA?$CC?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAP?$AAl?$AAa?$AAy?$AAe?$AAr@ ; `string'
+PUBLIC	??_C@_0EJ@CAEHGKMP@FAILED?7?7CPythonPlayer?3?3GetItemS@ ; `string'
 PUBLIC	??_C@_0DC@OJMPNPJD@CPythonPlayer?3?3SetSkillLevel?5?9?5@ ; `string'
-PUBLIC	??_C@_0ED@OIFHNIC@CPythonPlayer?3?3SetSkillCoolTime@ ; `string'
+PUBLIC	??_C@_0FF@PCELILMJ@Failed?5to?5find?5ItemData?5?9?5CPyth@ ; `string'
 PUBLIC	??_C@_0DK@OJMDGNKA@CPythonPlayer?3?3SetSkillLevel?$CISl@ ; `string'
-PUBLIC	??_C@_0ED@MHHIIPAM@CPythonPlayer?3?3EndSkillCoolTime@ ; `string'
+PUBLIC	??_C@_1GK@DIIIFKJL@?$AA?$CB?$AA?$CC?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAP?$AAl?$AAa?$AAy?$AAe?$AAr@ ; `string'
 PUBLIC	??_C@_0FC@CAEKCLMF@CPythonPlayer?3?3SetSkillCoolTime@ ; `string'
-PUBLIC	??_C@_0EA@BNHLOMGN@CPythonPlayer?3?3ActivavteSkill?$CId@ ; `string'
+PUBLIC	??_C@_0ED@OIFHNIC@CPythonPlayer?3?3SetSkillCoolTime@ ; `string'
 PUBLIC	??_C@_0FC@JLHDIAGN@CPythonPlayer?3?3EndSkillCoolTime@ ; `string'
-PUBLIC	??_C@_0EC@BHLLACII@CPythonPlayer?3?3DeactivavteSkill@ ; `string'
+PUBLIC	??_C@_0ED@MHHIIPAM@CPythonPlayer?3?3EndSkillCoolTime@ ; `string'
 PUBLIC	??_C@_0BC@GDFCJBCP@ActivateSkillSlot@		; `string'
-PUBLIC	??_C@_0DP@MLLABPNJ@CPythonPlayer?3?3SendClickItemPac@ ; `string'
+PUBLIC	??_C@_0EA@BNHLOMGN@CPythonPlayer?3?3ActivavteSkill?$CId@ ; `string'
 PUBLIC	??_C@_0BE@HIMJCBBG@DeactivateSkillSlot@		; `string'
-PUBLIC	??_C@_0P@CGBLDLHF@OnCannotMining@		; `string'
+PUBLIC	??_C@_0EC@BHLLACII@CPythonPlayer?3?3DeactivavteSkill@ ; `string'
 PUBLIC	??_C@_0BB@DNNBDACF@OnCannotPickItem@		; `string'
-PUBLIC	??_C@_0BC@FKINMGLI@OnCannotShotError@		; `string'
+PUBLIC	??_C@_0DP@MLLABPNJ@CPythonPlayer?3?3SendClickItemPac@ ; `string'
 PUBLIC	??_C@_0M@HCIEKIGP@NEED_TARGET@			; `string'
-PUBLIC	??_C@_0FC@JHEGNFED@?5CPythonPlayer?3?3LinkPartyMember@ ; `string'
+PUBLIC	??_C@_0P@CGBLDLHF@OnCannotMining@		; `string'
 PUBLIC	??_C@_08HOHDPHII@?1kiss?5?$CFs@			; `string'
-PUBLIC	??_C@_0GK@FIFNELKC@?5CPythonPlayer?3?3UpdatePartyMemb@ ; `string'
+PUBLIC	??_C@_0BC@FKINMGLI@OnCannotShotError@		; `string'
 PUBLIC	??_C@_0EK@OICEDEOK@?5CPythonPlayer?3?3UnlinkPartyMemb@ ; `string'
-PUBLIC	??_C@_0HF@NJGIGGLI@?5CPythonPlayer?3?3UpdatePartyMemb@ ; `string'
+PUBLIC	??_C@_0FC@JHEGNFED@?5CPythonPlayer?3?3LinkPartyMember@ ; `string'
 PUBLIC	??_C@_0HG@LLGBHOIA@?5CPythonPlayer?3?3UpdatePartyMemb@ ; `string'
-PUBLIC	??_C@_0BD@MKOGDJP@SkillClearCoolTime@		; `string'
+PUBLIC	??_C@_0GK@FIFNELKC@?5CPythonPlayer?3?3UpdatePartyMemb@ ; `string'
 PUBLIC	??_C@_0BH@PIKHDMAM@BINARY_CheckGameButton@	; `string'
-PUBLIC	??_C@_0EE@PBMCAMBM@CPythonPlayer?3?3DelAuraItemData?$CI@ ; `string'
+PUBLIC	??_C@_0HF@NJGIGGLI@?5CPythonPlayer?3?3UpdatePartyMemb@ ; `string'
 PUBLIC	??_C@_0EE@CAEBIEKI@CPythonPlayer?3?3SetAuraItemData?$CI@ ; `string'
-PUBLIC	??_C@_0BL@LPACNALE@locale?1common?1newregen?4txt@ ; `string'
+PUBLIC	??_C@_0BD@MKOGDJP@SkillClearCoolTime@		; `string'
 PUBLIC	??_C@_0EH@FCHBPEOF@CPythonPlayer?3?3GetAuraItemDataP@ ; `string'
-PUBLIC	??_C@_0P@FGAIANEO@DeactivateSlot@		; `string'
+PUBLIC	??_C@_0EE@PBMCAMBM@CPythonPlayer?3?3DelAuraItemData?$CI@ ; `string'
 PUBLIC	??_C@_0N@HFCIPMIE@ActivateSlot@			; `string'
-PUBLIC	??_C@_05FAGFPHJG@start@				; `string'
+PUBLIC	??_C@_0BL@LPACNALE@locale?1common?1newregen?4txt@ ; `string'
 PUBLIC	??_C@_03JBJLGPFL@end@				; `string'
-PUBLIC	??_C@_01HIHLOKLC@1@				; `string'
+PUBLIC	??_C@_0P@FGAIANEO@DeactivateSlot@		; `string'
 PUBLIC	??_C@_05LBJMNBOG@empty@				; `string'
+PUBLIC	??_C@_05FAGFPHJG@start@				; `string'
 PUBLIC	??_C@_0O@ONFINMKA@?1restart_here@		; `string'
-PUBLIC	??_R2?$CSingleton@VCPythonPlayer@@@@8		; CSingleton<CPythonPlayer>::`RTTI Base Class Array'
+PUBLIC	??_C@_01HIHLOKLC@1@				; `string'
 PUBLIC	??_R2CPythonPlayer@@8				; CPythonPlayer::`RTTI Base Class Array'
-PUBLIC	??_R2IAbstractPlayer@@8				; IAbstractPlayer::`RTTI Base Class Array'
+PUBLIC	??_R2?$CSingleton@VCPythonPlayer@@@@8		; CSingleton<CPythonPlayer>::`RTTI Base Class Array'
 PUBLIC	??_R2?$TAbstractSingleton@VIAbstractPlayer@@@@8	; TAbstractSingleton<IAbstractPlayer>::`RTTI Base Class Array'
-PUBLIC	??_R13?0A@EA@IAbstractPlayer@@8			; IAbstractPlayer::`RTTI Base Class Descriptor at (4,-1,0,64)'
+PUBLIC	??_R2IAbstractPlayer@@8				; IAbstractPlayer::`RTTI Base Class Array'
 PUBLIC	??_R13?0A@EA@?$TAbstractSingleton@VIAbstractPlayer@@@@8 ; TAbstractSingleton<IAbstractPlayer>::`RTTI Base Class Descriptor at (4,-1,0,64)'
-PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonPlayer@@@@8	; CSingleton<CPythonPlayer>::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R1A@?0A@EA@CPythonPlayer@@8			; CPythonPlayer::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R1A@?0A@EA@IAbstractPlayer@@8		; IAbstractPlayer::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R13?0A@EA@IAbstractPlayer@@8			; IAbstractPlayer::`RTTI Base Class Descriptor at (4,-1,0,64)'
+PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonPlayer@@@@8	; CSingleton<CPythonPlayer>::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R1A@?0A@EA@?$TAbstractSingleton@VIAbstractPlayer@@@@8 ; TAbstractSingleton<IAbstractPlayer>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R3?$CSingleton@VCPythonPlayer@@@@8		; CSingleton<CPythonPlayer>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R3CPythonPlayer@@8				; CPythonPlayer::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R1A@?0A@EA@IAbstractPlayer@@8		; IAbstractPlayer::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R0?AV?$CSingleton@VCPythonPlayer@@@@@8	; CSingleton<CPythonPlayer> `RTTI Type Descriptor'
+PUBLIC	??_R3?$CSingleton@VCPythonPlayer@@@@8		; CSingleton<CPythonPlayer>::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R0?AVCPythonPlayer@@@8			; CPythonPlayer `RTTI Type Descriptor'
-PUBLIC	??_R3?$TAbstractSingleton@VIAbstractPlayer@@@@8	; TAbstractSingleton<IAbstractPlayer>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R3IAbstractPlayer@@8				; IAbstractPlayer::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R3CPythonPlayer@@8				; CPythonPlayer::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R0?AV?$TAbstractSingleton@VIAbstractPlayer@@@@@8 ; TAbstractSingleton<IAbstractPlayer> `RTTI Type Descriptor'
+PUBLIC	??_R3?$TAbstractSingleton@VIAbstractPlayer@@@@8	; TAbstractSingleton<IAbstractPlayer>::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R0?AVIAbstractPlayer@@@8			; IAbstractPlayer `RTTI Type Descriptor'
-PUBLIC	??_R4?$CSingleton@VCPythonPlayer@@@@6B@		; CSingleton<CPythonPlayer>::`RTTI Complete Object Locator'
+PUBLIC	??_R3IAbstractPlayer@@8				; IAbstractPlayer::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R4CPythonPlayer@@6BIAbstractPlayer@@@	; CPythonPlayer::`RTTI Complete Object Locator'
+PUBLIC	??_R4?$CSingleton@VCPythonPlayer@@@@6B@		; CSingleton<CPythonPlayer>::`RTTI Complete Object Locator'
 PUBLIC	??_R4CPythonPlayer@@6B?$CSingleton@VCPythonPlayer@@@@@ ; CPythonPlayer::`RTTI Complete Object Locator'
-PUBLIC	??_R4?$TAbstractSingleton@VIAbstractPlayer@@@@6B@ ; TAbstractSingleton<IAbstractPlayer>::`RTTI Complete Object Locator'
 PUBLIC	??_R4IAbstractPlayer@@6B@			; IAbstractPlayer::`RTTI Complete Object Locator'
+PUBLIC	??_R4?$TAbstractSingleton@VIAbstractPlayer@@@@6B@ ; TAbstractSingleton<IAbstractPlayer>::`RTTI Complete Object Locator'
 PUBLIC	??_7?$TAbstractSingleton@VIAbstractPlayer@@@@6B@ ; TAbstractSingleton<IAbstractPlayer>::`vftable'
 PUBLIC	??_7?$CSingleton@VCPythonPlayer@@@@6B@		; CSingleton<CPythonPlayer>::`vftable'
-PUBLIC	??_7CPythonPlayer@@6BIAbstractPlayer@@@		; CPythonPlayer::`vftable'
 PUBLIC	??_7CPythonPlayer@@6B?$CSingleton@VCPythonPlayer@@@@@ ; CPythonPlayer::`vftable'
-PUBLIC	?c_iSkillIndex_Summon@@3KB			; c_iSkillIndex_Summon
-PUBLIC	?c_iSkillIndex_Language3@@3KB			; c_iSkillIndex_Language3
-PUBLIC	?c_iSkillIndex_Language2@@3KB			; c_iSkillIndex_Language2
+PUBLIC	??_7CPythonPlayer@@6BIAbstractPlayer@@@		; CPythonPlayer::`vftable'
 PUBLIC	?c_iSkillIndex_Riding@@3KB			; c_iSkillIndex_Riding
 PUBLIC	?c_iSkillIndex_Polymorph@@3KB			; c_iSkillIndex_Polymorph
-PUBLIC	?c_iSkillIndex_Mining@@3KB			; c_iSkillIndex_Mining
-PUBLIC	?c_iSkillIndex_Fishing@@3KB			; c_iSkillIndex_Fishing
+PUBLIC	?c_iSkillIndex_Summon@@3KB			; c_iSkillIndex_Summon
 PUBLIC	?c_iSkillIndex_Language1@@3KB			; c_iSkillIndex_Language1
 PUBLIC	?c_iSkillIndex_Making@@3KB			; c_iSkillIndex_Making
+PUBLIC	?c_iSkillIndex_Language3@@3KB			; c_iSkillIndex_Language3
+PUBLIC	?c_iSkillIndex_Language2@@3KB			; c_iSkillIndex_Language2
 PUBLIC	?c_iSkillIndex_Combo@@3KB			; c_iSkillIndex_Combo
 PUBLIC	?c_iSkillIndex_Tongsol@@3KB			; c_iSkillIndex_Tongsol
-PUBLIC	??_7IAbstractPlayer@@6B@			; IAbstractPlayer::`vftable'
+PUBLIC	?c_iSkillIndex_Mining@@3KB			; c_iSkillIndex_Mining
+PUBLIC	?c_iSkillIndex_Fishing@@3KB			; c_iSkillIndex_Fishing
 PUBLIC	?_Min_buckets@?$_Hash@V?$_Umap_traits@KUSPetData@CPythonPlayer@@V?$_Uhash_compare@KU?$hash@K@std@@U?$equal_to@K@2@@std@@V?$allocator@U?$pair@$$CBKUSPetData@CPythonPlayer@@@std@@@4@$0A@@std@@@std@@2IB ; std::_Hash<std::_Umap_traits<unsigned long,CPythonPlayer::SPetData,std::_Uhash_compare<unsigned long,std::hash<unsigned long>,std::equal_to<unsigned long> >,std::allocator<std::pair<unsigned long const ,CPythonPlayer::SPetData> >,0> >::_Min_buckets
+PUBLIC	??_7IAbstractPlayer@@6B@			; IAbstractPlayer::`vftable'
 EXTRN	__mktime32:PROC
 ;	COMDAT ?RequireSkillSlotIndex@?1??GetHorseSkillSlotIndex@CPythonPlayer@@QAEKXZ@4KA
 _BSS	SEGMENT
 ?RequireSkillSlotIndex@?1??GetHorseSkillSlotIndex@CPythonPlayer@@QAEKXZ@4KA DD 01H DUP (?) ; `CPythonPlayer::GetHorseSkillSlotIndex'::`2'::RequireSkillSlotIndex
 _BSS	ENDS
-;	COMDAT ?s_dwNextTCPTime@?1??__SendClickActorPacket@CPythonPlayer@@IAEXAAVCInstanceBase@@@Z@4KA
-_BSS	SEGMENT
-?s_dwNextTCPTime@?1??__SendClickActorPacket@CPythonPlayer@@IAEXAAVCInstanceBase@@@Z@4KA DD 01H DUP (?) ; `CPythonPlayer::__SendClickActorPacket'::`2'::s_dwNextTCPTime
-_BSS	ENDS
 ;	COMDAT ?s_dwNextTCPTime@?1??SendPickUPItemPacket@CPythonPlayer@@QAEXV?$vector@KV?$allocator@K@std@@@std@@@Z@4IA
 _BSS	SEGMENT
 ?s_dwNextTCPTime@?1??SendPickUPItemPacket@CPythonPlayer@@QAEXV?$vector@KV?$allocator@K@std@@@std@@@Z@4IA DD 01H DUP (?) ; `CPythonPlayer::SendPickUPItemPacket'::`2'::s_dwNextTCPTime
 _BSS	ENDS
-;	COMDAT ?_Min_buckets@?$_Hash@V?$_Umap_traits@KUSPetData@CPythonPlayer@@V?$_Uhash_compare@KU?$hash@K@std@@U?$equal_to@K@2@@std@@V?$allocator@U?$pair@$$CBKUSPetData@CPythonPlayer@@@std@@@4@$0A@@std@@@std@@2IB
-CONST	SEGMENT
-?_Min_buckets@?$_Hash@V?$_Umap_traits@KUSPetData@CPythonPlayer@@V?$_Uhash_compare@KU?$hash@K@std@@U?$equal_to@K@2@@std@@V?$allocator@U?$pair@$$CBKUSPetData@CPythonPlayer@@@std@@@4@$0A@@std@@@std@@2IB DD 08H ; std::_Hash<std::_Umap_traits<unsigned long,CPythonPlayer::SPetData,std::_Uhash_compare<unsigned long,std::hash<unsigned long>,std::equal_to<unsigned long> >,std::allocator<std::pair<unsigned long const ,CPythonPlayer::SPetData> >,0> >::_Min_buckets
-CONST	ENDS
+;	COMDAT ?s_dwNextTCPTime@?1??__SendClickActorPacket@CPythonPlayer@@IAEXAAVCInstanceBase@@@Z@4KA
+_BSS	SEGMENT
+?s_dwNextTCPTime@?1??__SendClickActorPacket@CPythonPlayer@@IAEXAAVCInstanceBase@@@Z@4KA DD 01H DUP (?) ; `CPythonPlayer::__SendClickActorPacket'::`2'::s_dwNextTCPTime
+_BSS	ENDS
 ;	COMDAT ??_7IAbstractPlayer@@6B@
 CONST	SEGMENT
 ??_7IAbstractPlayer@@6B@ DD FLAT:??_R4IAbstractPlayer@@6B@ ; IAbstractPlayer::`vftable'
@@ -157,10 +153,9 @@ CONST	SEGMENT
 	DD	FLAT:__purecall
 	DD	FLAT:__purecall
 CONST	ENDS
-;	COMDAT ??_7CPythonPlayer@@6B?$CSingleton@VCPythonPlayer@@@@@
+;	COMDAT ?_Min_buckets@?$_Hash@V?$_Umap_traits@KUSPetData@CPythonPlayer@@V?$_Uhash_compare@KU?$hash@K@std@@U?$equal_to@K@2@@std@@V?$allocator@U?$pair@$$CBKUSPetData@CPythonPlayer@@@std@@@4@$0A@@std@@@std@@2IB
 CONST	SEGMENT
-??_7CPythonPlayer@@6B?$CSingleton@VCPythonPlayer@@@@@ DD FLAT:??_R4CPythonPlayer@@6B?$CSingleton@VCPythonPlayer@@@@@ ; CPythonPlayer::`vftable'
-	DD	FLAT:??_ECPythonPlayer@@UAEPAXI@Z
+?_Min_buckets@?$_Hash@V?$_Umap_traits@KUSPetData@CPythonPlayer@@V?$_Uhash_compare@KU?$hash@K@std@@U?$equal_to@K@2@@std@@V?$allocator@U?$pair@$$CBKUSPetData@CPythonPlayer@@@std@@@4@$0A@@std@@@std@@2IB DD 08H ; std::_Hash<std::_Umap_traits<unsigned long,CPythonPlayer::SPetData,std::_Uhash_compare<unsigned long,std::hash<unsigned long>,std::equal_to<unsigned long> >,std::allocator<std::pair<unsigned long const ,CPythonPlayer::SPetData> >,0> >::_Min_buckets
 CONST	ENDS
 ;	COMDAT ??_7CPythonPlayer@@6BIAbstractPlayer@@@
 CONST	SEGMENT
@@ -202,6 +197,11 @@ CONST	SEGMENT
 	DD	FLAT:?EndEmotionProcess@CPythonPlayer@@UAEXXZ
 	DD	FLAT:?NEW_GetMainActorPtr@CPythonPlayer@@UAEPAVCInstanceBase@@XZ
 CONST	ENDS
+;	COMDAT ??_7CPythonPlayer@@6B?$CSingleton@VCPythonPlayer@@@@@
+CONST	SEGMENT
+??_7CPythonPlayer@@6B?$CSingleton@VCPythonPlayer@@@@@ DD FLAT:??_R4CPythonPlayer@@6B?$CSingleton@VCPythonPlayer@@@@@ ; CPythonPlayer::`vftable'
+	DD	FLAT:??_ECPythonPlayer@@UAEPAXI@Z
+CONST	ENDS
 ;	COMDAT ??_7?$CSingleton@VCPythonPlayer@@@@6B@
 CONST	SEGMENT
 ??_7?$CSingleton@VCPythonPlayer@@@@6B@ DD FLAT:??_R4?$CSingleton@VCPythonPlayer@@@@6B@ ; CSingleton<CPythonPlayer>::`vftable'
@@ -212,14 +212,6 @@ CONST	SEGMENT
 ??_7?$TAbstractSingleton@VIAbstractPlayer@@@@6B@ DD FLAT:??_R4?$TAbstractSingleton@VIAbstractPlayer@@@@6B@ ; TAbstractSingleton<IAbstractPlayer>::`vftable'
 	DD	FLAT:??_E?$TAbstractSingleton@VIAbstractPlayer@@@@UAEPAXI@Z
 CONST	ENDS
-;	COMDAT ??_R4IAbstractPlayer@@6B@
-rdata$r	SEGMENT
-??_R4IAbstractPlayer@@6B@ DD 00H			; IAbstractPlayer::`RTTI Complete Object Locator'
-	DD	00H
-	DD	00H
-	DD	FLAT:??_R0?AVIAbstractPlayer@@@8
-	DD	FLAT:??_R3IAbstractPlayer@@8
-rdata$r	ENDS
 ;	COMDAT ??_R4?$TAbstractSingleton@VIAbstractPlayer@@@@6B@
 rdata$r	SEGMENT
 ??_R4?$TAbstractSingleton@VIAbstractPlayer@@@@6B@ DD 00H ; TAbstractSingleton<IAbstractPlayer>::`RTTI Complete Object Locator'
@@ -228,18 +220,18 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$TAbstractSingleton@VIAbstractPlayer@@@@@8
 	DD	FLAT:??_R3?$TAbstractSingleton@VIAbstractPlayer@@@@8
 rdata$r	ENDS
+;	COMDAT ??_R4IAbstractPlayer@@6B@
+rdata$r	SEGMENT
+??_R4IAbstractPlayer@@6B@ DD 00H			; IAbstractPlayer::`RTTI Complete Object Locator'
+	DD	00H
+	DD	00H
+	DD	FLAT:??_R0?AVIAbstractPlayer@@@8
+	DD	FLAT:??_R3IAbstractPlayer@@8
+rdata$r	ENDS
 ;	COMDAT ??_R4CPythonPlayer@@6B?$CSingleton@VCPythonPlayer@@@@@
 rdata$r	SEGMENT
 ??_R4CPythonPlayer@@6B?$CSingleton@VCPythonPlayer@@@@@ DD 00H ; CPythonPlayer::`RTTI Complete Object Locator'
 	DD	00H
-	DD	00H
-	DD	FLAT:??_R0?AVCPythonPlayer@@@8
-	DD	FLAT:??_R3CPythonPlayer@@8
-rdata$r	ENDS
-;	COMDAT ??_R4CPythonPlayer@@6BIAbstractPlayer@@@
-rdata$r	SEGMENT
-??_R4CPythonPlayer@@6BIAbstractPlayer@@@ DD 00H		; CPythonPlayer::`RTTI Complete Object Locator'
-	DD	04H
 	DD	00H
 	DD	FLAT:??_R0?AVCPythonPlayer@@@8
 	DD	FLAT:??_R3CPythonPlayer@@8
@@ -252,18 +244,14 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$CSingleton@VCPythonPlayer@@@@@8
 	DD	FLAT:??_R3?$CSingleton@VCPythonPlayer@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVIAbstractPlayer@@@8
-data$rs	SEGMENT
-??_R0?AVIAbstractPlayer@@@8 DD FLAT:??_7type_info@@6B@	; IAbstractPlayer `RTTI Type Descriptor'
+;	COMDAT ??_R4CPythonPlayer@@6BIAbstractPlayer@@@
+rdata$r	SEGMENT
+??_R4CPythonPlayer@@6BIAbstractPlayer@@@ DD 00H		; CPythonPlayer::`RTTI Complete Object Locator'
+	DD	04H
 	DD	00H
-	DB	'.?AVIAbstractPlayer@@', 00H
-data$rs	ENDS
-;	COMDAT ??_R0?AV?$TAbstractSingleton@VIAbstractPlayer@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$TAbstractSingleton@VIAbstractPlayer@@@@@8 DD FLAT:??_7type_info@@6B@ ; TAbstractSingleton<IAbstractPlayer> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AV?$TAbstractSingleton@VIAbstractPlayer@@@@', 00H
-data$rs	ENDS
+	DD	FLAT:??_R0?AVCPythonPlayer@@@8
+	DD	FLAT:??_R3CPythonPlayer@@8
+rdata$r	ENDS
 ;	COMDAT ??_R3IAbstractPlayer@@8
 rdata$r	SEGMENT
 ??_R3IAbstractPlayer@@8 DD 00H				; IAbstractPlayer::`RTTI Class Hierarchy Descriptor'
@@ -271,6 +259,12 @@ rdata$r	SEGMENT
 	DD	02H
 	DD	FLAT:??_R2IAbstractPlayer@@8
 rdata$r	ENDS
+;	COMDAT ??_R0?AVIAbstractPlayer@@@8
+data$rs	SEGMENT
+??_R0?AVIAbstractPlayer@@@8 DD FLAT:??_7type_info@@6B@	; IAbstractPlayer `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVIAbstractPlayer@@', 00H
+data$rs	ENDS
 ;	COMDAT ??_R3?$TAbstractSingleton@VIAbstractPlayer@@@@8
 rdata$r	SEGMENT
 ??_R3?$TAbstractSingleton@VIAbstractPlayer@@@@8 DD 00H	; TAbstractSingleton<IAbstractPlayer>::`RTTI Class Hierarchy Descriptor'
@@ -278,17 +272,11 @@ rdata$r	SEGMENT
 	DD	01H
 	DD	FLAT:??_R2?$TAbstractSingleton@VIAbstractPlayer@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonPlayer@@@8
+;	COMDAT ??_R0?AV?$TAbstractSingleton@VIAbstractPlayer@@@@@8
 data$rs	SEGMENT
-??_R0?AVCPythonPlayer@@@8 DD FLAT:??_7type_info@@6B@	; CPythonPlayer `RTTI Type Descriptor'
+??_R0?AV?$TAbstractSingleton@VIAbstractPlayer@@@@@8 DD FLAT:??_7type_info@@6B@ ; TAbstractSingleton<IAbstractPlayer> `RTTI Type Descriptor'
 	DD	00H
-	DB	'.?AVCPythonPlayer@@', 00H
-data$rs	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCPythonPlayer@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCPythonPlayer@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonPlayer> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AV?$CSingleton@VCPythonPlayer@@@@', 00H
+	DB	'.?AV?$TAbstractSingleton@VIAbstractPlayer@@@@', 00H
 data$rs	ENDS
 ;	COMDAT ??_R3CPythonPlayer@@8
 rdata$r	SEGMENT
@@ -297,12 +285,34 @@ rdata$r	SEGMENT
 	DD	04H
 	DD	FLAT:??_R2CPythonPlayer@@8
 rdata$r	ENDS
+;	COMDAT ??_R0?AVCPythonPlayer@@@8
+data$rs	SEGMENT
+??_R0?AVCPythonPlayer@@@8 DD FLAT:??_7type_info@@6B@	; CPythonPlayer `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCPythonPlayer@@', 00H
+data$rs	ENDS
 ;	COMDAT ??_R3?$CSingleton@VCPythonPlayer@@@@8
 rdata$r	SEGMENT
 ??_R3?$CSingleton@VCPythonPlayer@@@@8 DD 00H		; CSingleton<CPythonPlayer>::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	01H
 	DD	FLAT:??_R2?$CSingleton@VCPythonPlayer@@@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCPythonPlayer@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCPythonPlayer@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonPlayer> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCPythonPlayer@@@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R1A@?0A@EA@IAbstractPlayer@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@IAbstractPlayer@@8 DD FLAT:??_R0?AVIAbstractPlayer@@@8 ; IAbstractPlayer::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3IAbstractPlayer@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@?$TAbstractSingleton@VIAbstractPlayer@@@@8
 rdata$r	SEGMENT
@@ -314,11 +324,21 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$TAbstractSingleton@VIAbstractPlayer@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@IAbstractPlayer@@8
+;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonPlayer@@@@8
 rdata$r	SEGMENT
-??_R1A@?0A@EA@IAbstractPlayer@@8 DD FLAT:??_R0?AVIAbstractPlayer@@@8 ; IAbstractPlayer::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	01H
+??_R1A@?0A@EA@?$CSingleton@VCPythonPlayer@@@@8 DD FLAT:??_R0?AV?$CSingleton@VCPythonPlayer@@@@@8 ; CSingleton<CPythonPlayer>::`RTTI Base Class Descriptor at (0,-1,0,64)'
 	DD	00H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3?$CSingleton@VCPythonPlayer@@@@8
+rdata$r	ENDS
+;	COMDAT ??_R13?0A@EA@IAbstractPlayer@@8
+rdata$r	SEGMENT
+??_R13?0A@EA@IAbstractPlayer@@8 DD FLAT:??_R0?AVIAbstractPlayer@@@8 ; IAbstractPlayer::`RTTI Base Class Descriptor at (4,-1,0,64)'
+	DD	01H
+	DD	04H
 	DD	0ffffffffH
 	DD	00H
 	DD	040H
@@ -334,16 +354,6 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3CPythonPlayer@@8
 rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonPlayer@@@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@?$CSingleton@VCPythonPlayer@@@@8 DD FLAT:??_R0?AV?$CSingleton@VCPythonPlayer@@@@@8 ; CSingleton<CPythonPlayer>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	00H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3?$CSingleton@VCPythonPlayer@@@@8
-rdata$r	ENDS
 ;	COMDAT ??_R13?0A@EA@?$TAbstractSingleton@VIAbstractPlayer@@@@8
 rdata$r	SEGMENT
 ??_R13?0A@EA@?$TAbstractSingleton@VIAbstractPlayer@@@@8 DD FLAT:??_R0?AV?$TAbstractSingleton@VIAbstractPlayer@@@@@8 ; TAbstractSingleton<IAbstractPlayer>::`RTTI Base Class Descriptor at (4,-1,0,64)'
@@ -354,24 +364,18 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$TAbstractSingleton@VIAbstractPlayer@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R13?0A@EA@IAbstractPlayer@@8
+;	COMDAT ??_R2IAbstractPlayer@@8
 rdata$r	SEGMENT
-??_R13?0A@EA@IAbstractPlayer@@8 DD FLAT:??_R0?AVIAbstractPlayer@@@8 ; IAbstractPlayer::`RTTI Base Class Descriptor at (4,-1,0,64)'
-	DD	01H
-	DD	04H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3IAbstractPlayer@@8
+??_R2IAbstractPlayer@@8 DD FLAT:??_R1A@?0A@EA@IAbstractPlayer@@8 ; IAbstractPlayer::`RTTI Base Class Array'
+	DD	FLAT:??_R1A@?0A@EA@?$TAbstractSingleton@VIAbstractPlayer@@@@8
 rdata$r	ENDS
 ;	COMDAT ??_R2?$TAbstractSingleton@VIAbstractPlayer@@@@8
 rdata$r	SEGMENT
 ??_R2?$TAbstractSingleton@VIAbstractPlayer@@@@8 DD FLAT:??_R1A@?0A@EA@?$TAbstractSingleton@VIAbstractPlayer@@@@8 ; TAbstractSingleton<IAbstractPlayer>::`RTTI Base Class Array'
 rdata$r	ENDS
-;	COMDAT ??_R2IAbstractPlayer@@8
+;	COMDAT ??_R2?$CSingleton@VCPythonPlayer@@@@8
 rdata$r	SEGMENT
-??_R2IAbstractPlayer@@8 DD FLAT:??_R1A@?0A@EA@IAbstractPlayer@@8 ; IAbstractPlayer::`RTTI Base Class Array'
-	DD	FLAT:??_R1A@?0A@EA@?$TAbstractSingleton@VIAbstractPlayer@@@@8
+??_R2?$CSingleton@VCPythonPlayer@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonPlayer@@@@8 ; CSingleton<CPythonPlayer>::`RTTI Base Class Array'
 rdata$r	ENDS
 ;	COMDAT ??_R2CPythonPlayer@@8
 rdata$r	SEGMENT
@@ -380,71 +384,57 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R13?0A@EA@IAbstractPlayer@@8
 	DD	FLAT:??_R13?0A@EA@?$TAbstractSingleton@VIAbstractPlayer@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R2?$CSingleton@VCPythonPlayer@@@@8
-rdata$r	SEGMENT
-??_R2?$CSingleton@VCPythonPlayer@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonPlayer@@@@8 ; CSingleton<CPythonPlayer>::`RTTI Base Class Array'
-rdata$r	ENDS
-;	COMDAT ??_C@_0O@ONFINMKA@?1restart_here@
-CONST	SEGMENT
-??_C@_0O@ONFINMKA@?1restart_here@ DB '/restart_here', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_05LBJMNBOG@empty@
-CONST	SEGMENT
-??_C@_05LBJMNBOG@empty@ DB 'empty', 00H			; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_01HIHLOKLC@1@
 CONST	SEGMENT
 ??_C@_01HIHLOKLC@1@ DB '1', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03JBJLGPFL@end@
+;	COMDAT ??_C@_0O@ONFINMKA@?1restart_here@
 CONST	SEGMENT
-??_C@_03JBJLGPFL@end@ DB 'end', 00H			; `string'
+??_C@_0O@ONFINMKA@?1restart_here@ DB '/restart_here', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05FAGFPHJG@start@
 CONST	SEGMENT
 ??_C@_05FAGFPHJG@start@ DB 'start', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@HFCIPMIE@ActivateSlot@
+;	COMDAT ??_C@_05LBJMNBOG@empty@
 CONST	SEGMENT
-??_C@_0N@HFCIPMIE@ActivateSlot@ DB 'ActivateSlot', 00H	; `string'
+??_C@_05LBJMNBOG@empty@ DB 'empty', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@FGAIANEO@DeactivateSlot@
 CONST	SEGMENT
 ??_C@_0P@FGAIANEO@DeactivateSlot@ DB 'DeactivateSlot', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EH@FCHBPEOF@CPythonPlayer?3?3GetAuraItemDataP@
+;	COMDAT ??_C@_03JBJLGPFL@end@
 CONST	SEGMENT
-??_C@_0EH@FCHBPEOF@CPythonPlayer?3?3GetAuraItemDataP@ DB 'CPythonPlayer::'
-	DB	'GetAuraItemDataPtr(bySlotIndex=%u) - Strange slot index', 00H ; `string'
+??_C@_03JBJLGPFL@end@ DB 'end', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@LPACNALE@locale?1common?1newregen?4txt@
 CONST	SEGMENT
 ??_C@_0BL@LPACNALE@locale?1common?1newregen?4txt@ DB 'locale/common/newre'
 	DB	'gen.txt', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EE@CAEBIEKI@CPythonPlayer?3?3SetAuraItemData?$CI@
+;	COMDAT ??_C@_0N@HFCIPMIE@ActivateSlot@
 CONST	SEGMENT
-??_C@_0EE@CAEBIEKI@CPythonPlayer?3?3SetAuraItemData?$CI@ DB 'CPythonPlaye'
-	DB	'r::SetAuraItemData(bySlotIndex=%u) - Strange slot index', 00H ; `string'
+??_C@_0N@HFCIPMIE@ActivateSlot@ DB 'ActivateSlot', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EE@PBMCAMBM@CPythonPlayer?3?3DelAuraItemData?$CI@
 CONST	SEGMENT
 ??_C@_0EE@PBMCAMBM@CPythonPlayer?3?3DelAuraItemData?$CI@ DB 'CPythonPlaye'
 	DB	'r::DelAuraItemData(bySlotIndex=%u) - Strange slot index', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@PIKHDMAM@BINARY_CheckGameButton@
+;	COMDAT ??_C@_0EH@FCHBPEOF@CPythonPlayer?3?3GetAuraItemDataP@
 CONST	SEGMENT
-??_C@_0BH@PIKHDMAM@BINARY_CheckGameButton@ DB 'BINARY_CheckGameButton', 00H ; `string'
+??_C@_0EH@FCHBPEOF@CPythonPlayer?3?3GetAuraItemDataP@ DB 'CPythonPlayer::'
+	DB	'GetAuraItemDataPtr(bySlotIndex=%u) - Strange slot index', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@MKOGDJP@SkillClearCoolTime@
 CONST	SEGMENT
 ??_C@_0BD@MKOGDJP@SkillClearCoolTime@ DB 'SkillClearCoolTime', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0HG@LLGBHOIA@?5CPythonPlayer?3?3UpdatePartyMemb@
+;	COMDAT ??_C@_0EE@CAEBIEKI@CPythonPlayer?3?3SetAuraItemData?$CI@
 CONST	SEGMENT
-??_C@_0HG@LLGBHOIA@?5CPythonPlayer?3?3UpdatePartyMemb@ DB ' CPythonPlayer'
-	DB	'::UpdatePartyMemberAffect(dwPID=%d, byAffectSlotIndex=%d, sAf'
-	DB	'fectNumber=%d) - Strange affect slot index', 00H ; `string'
+??_C@_0EE@CAEBIEKI@CPythonPlayer?3?3SetAuraItemData?$CI@ DB 'CPythonPlaye'
+	DB	'r::SetAuraItemData(bySlotIndex=%u) - Strange slot index', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0HF@NJGIGGLI@?5CPythonPlayer?3?3UpdatePartyMemb@
 CONST	SEGMENT
@@ -452,10 +442,9 @@ CONST	SEGMENT
 	DB	'::UpdatePartyMemberAffect(dwPID=%d, byAffectSlotIndex=%d, sAf'
 	DB	'fectNumber=%d) - Failed to find character', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EK@OICEDEOK@?5CPythonPlayer?3?3UnlinkPartyMemb@
+;	COMDAT ??_C@_0BH@PIKHDMAM@BINARY_CheckGameButton@
 CONST	SEGMENT
-??_C@_0EK@OICEDEOK@?5CPythonPlayer?3?3UnlinkPartyMemb@ DB ' CPythonPlayer'
-	DB	'::UnlinkPartyMember(dwPID=%d) - Failed to find party member', 00H ; `string'
+??_C@_0BH@PIKHDMAM@BINARY_CheckGameButton@ DB 'BINARY_CheckGameButton', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0GK@FIFNELKC@?5CPythonPlayer?3?3UpdatePartyMemb@
 CONST	SEGMENT
@@ -463,9 +452,11 @@ CONST	SEGMENT
 	DB	'::UpdatePartyMemberInfo(dwPID=%d, byState=%d, byHPPercentage='
 	DB	'%d) - Failed to find character', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08HOHDPHII@?1kiss?5?$CFs@
+;	COMDAT ??_C@_0HG@LLGBHOIA@?5CPythonPlayer?3?3UpdatePartyMemb@
 CONST	SEGMENT
-??_C@_08HOHDPHII@?1kiss?5?$CFs@ DB '/kiss %s', 00H	; `string'
+??_C@_0HG@LLGBHOIA@?5CPythonPlayer?3?3UpdatePartyMemb@ DB ' CPythonPlayer'
+	DB	'::UpdatePartyMemberAffect(dwPID=%d, byAffectSlotIndex=%d, sAf'
+	DB	'fectNumber=%d) - Strange affect slot index', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FC@JHEGNFED@?5CPythonPlayer?3?3LinkPartyMember@
 CONST	SEGMENT
@@ -473,39 +464,58 @@ CONST	SEGMENT
 	DB	'::LinkPartyMember(dwPID=%d, dwVID=%d) - Failed to find party '
 	DB	'member', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@HCIEKIGP@NEED_TARGET@
+;	COMDAT ??_C@_0EK@OICEDEOK@?5CPythonPlayer?3?3UnlinkPartyMemb@
 CONST	SEGMENT
-??_C@_0M@HCIEKIGP@NEED_TARGET@ DB 'NEED_TARGET', 00H	; `string'
+??_C@_0EK@OICEDEOK@?5CPythonPlayer?3?3UnlinkPartyMemb@ DB ' CPythonPlayer'
+	DB	'::UnlinkPartyMember(dwPID=%d) - Failed to find party member', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@FKINMGLI@OnCannotShotError@
 CONST	SEGMENT
 ??_C@_0BC@FKINMGLI@OnCannotShotError@ DB 'OnCannotShotError', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@DNNBDACF@OnCannotPickItem@
+;	COMDAT ??_C@_08HOHDPHII@?1kiss?5?$CFs@
 CONST	SEGMENT
-??_C@_0BB@DNNBDACF@OnCannotPickItem@ DB 'OnCannotPickItem', 00H ; `string'
+??_C@_08HOHDPHII@?1kiss?5?$CFs@ DB '/kiss %s', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@CGBLDLHF@OnCannotMining@
 CONST	SEGMENT
 ??_C@_0P@CGBLDLHF@OnCannotMining@ DB 'OnCannotMining', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@HIMJCBBG@DeactivateSkillSlot@
+;	COMDAT ??_C@_0M@HCIEKIGP@NEED_TARGET@
 CONST	SEGMENT
-??_C@_0BE@HIMJCBBG@DeactivateSkillSlot@ DB 'DeactivateSkillSlot', 00H ; `string'
+??_C@_0M@HCIEKIGP@NEED_TARGET@ DB 'NEED_TARGET', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DP@MLLABPNJ@CPythonPlayer?3?3SendClickItemPac@
 CONST	SEGMENT
 ??_C@_0DP@MLLABPNJ@CPythonPlayer?3?3SendClickItemPac@ DB 'CPythonPlayer::'
 	DB	'SendClickItemPacket(dwIID=%d) : Non-exist item.', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@GDFCJBCP@ActivateSkillSlot@
+;	COMDAT ??_C@_0BB@DNNBDACF@OnCannotPickItem@
 CONST	SEGMENT
-??_C@_0BC@GDFCJBCP@ActivateSkillSlot@ DB 'ActivateSkillSlot', 00H ; `string'
+??_C@_0BB@DNNBDACF@OnCannotPickItem@ DB 'OnCannotPickItem', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EC@BHLLACII@CPythonPlayer?3?3DeactivavteSkill@
 CONST	SEGMENT
 ??_C@_0EC@BHLLACII@CPythonPlayer?3?3DeactivavteSkill@ DB 'CPythonPlayer::'
 	DB	'DeactivavteSkill(dwSlotIndex=%d/%d) - OUT OF RANGE', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BE@HIMJCBBG@DeactivateSkillSlot@
+CONST	SEGMENT
+??_C@_0BE@HIMJCBBG@DeactivateSkillSlot@ DB 'DeactivateSkillSlot', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0EA@BNHLOMGN@CPythonPlayer?3?3ActivavteSkill?$CId@
+CONST	SEGMENT
+??_C@_0EA@BNHLOMGN@CPythonPlayer?3?3ActivavteSkill?$CId@ DB 'CPythonPlaye'
+	DB	'r::ActivavteSkill(dwSlotIndex=%d/%d) - OUT OF RANGE', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BC@GDFCJBCP@ActivateSkillSlot@
+CONST	SEGMENT
+??_C@_0BC@GDFCJBCP@ActivateSkillSlot@ DB 'ActivateSkillSlot', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0ED@MHHIIPAM@CPythonPlayer?3?3EndSkillCoolTime@
+CONST	SEGMENT
+??_C@_0ED@MHHIIPAM@CPythonPlayer?3?3EndSkillCoolTime@ DB 'CPythonPlayer::'
+	DB	'EndSkillCoolTime(dwSkillIndex=%d) - FIND SLOT ERROR', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FC@JLHDIAGN@CPythonPlayer?3?3EndSkillCoolTime@
 CONST	SEGMENT
@@ -513,38 +523,16 @@ CONST	SEGMENT
 	DB	'EndSkillCoolTime(dwSkillIndex=%d) - dwSlotIndex=%d/%d OUT OF '
 	DB	'RANGE', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EA@BNHLOMGN@CPythonPlayer?3?3ActivavteSkill?$CId@
+;	COMDAT ??_C@_0ED@OIFHNIC@CPythonPlayer?3?3SetSkillCoolTime@
 CONST	SEGMENT
-??_C@_0EA@BNHLOMGN@CPythonPlayer?3?3ActivavteSkill?$CId@ DB 'CPythonPlaye'
-	DB	'r::ActivavteSkill(dwSlotIndex=%d/%d) - OUT OF RANGE', 00H ; `string'
+??_C@_0ED@OIFHNIC@CPythonPlayer?3?3SetSkillCoolTime@ DB 'CPythonPlayer::S'
+	DB	'etSkillCoolTime(dwSkillIndex=%d) - FIND SLOT ERROR', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FC@CAEKCLMF@CPythonPlayer?3?3SetSkillCoolTime@
 CONST	SEGMENT
 ??_C@_0FC@CAEKCLMF@CPythonPlayer?3?3SetSkillCoolTime@ DB 'CPythonPlayer::'
 	DB	'SetSkillCoolTime(dwSkillIndex=%d) - dwSlotIndex=%d/%d OUT OF '
 	DB	'RANGE', 00H					; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0ED@MHHIIPAM@CPythonPlayer?3?3EndSkillCoolTime@
-CONST	SEGMENT
-??_C@_0ED@MHHIIPAM@CPythonPlayer?3?3EndSkillCoolTime@ DB 'CPythonPlayer::'
-	DB	'EndSkillCoolTime(dwSkillIndex=%d) - FIND SLOT ERROR', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0DK@OJMDGNKA@CPythonPlayer?3?3SetSkillLevel?$CISl@
-CONST	SEGMENT
-??_C@_0DK@OJMDGNKA@CPythonPlayer?3?3SetSkillLevel?$CISl@ DB 'CPythonPlaye'
-	DB	'r::SetSkillLevel(SlotIndex=%d, SkillLevel=%d)', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0ED@OIFHNIC@CPythonPlayer?3?3SetSkillCoolTime@
-CONST	SEGMENT
-??_C@_0ED@OIFHNIC@CPythonPlayer?3?3SetSkillCoolTime@ DB 'CPythonPlayer::S'
-	DB	'etSkillCoolTime(dwSkillIndex=%d) - FIND SLOT ERROR', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0DC@OJMPNPJD@CPythonPlayer?3?3SetSkillLevel?5?9?5@
-CONST	SEGMENT
-??_C@_0DC@OJMPNPJD@CPythonPlayer?3?3SetSkillLevel?5?9?5@ DB 'CPythonPlaye'
-	DB	'r::SetSkillLevel - ', 0bbH, 0e7H, 0bfH, 0ebH, 0c7H, 0cfH, 0c1H
-	DB	0f6H, ' ', 0beH, 0caH, 0b4H, 0c2H, ' ', 0c7H, 0d4H, 0bcH, 0f6H
-	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_1GK@DIIIFKJL@?$AA?$CB?$AA?$CC?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAP?$AAl?$AAa?$AAy?$AAe?$AAr@
 CONST	SEGMENT
@@ -559,9 +547,10 @@ CONST	SEGMENT
 	DB	0c2H, 00H, ' ', 00H, 0c7H, 00H, 0d4H, 00H, 0bcH, 00H, 0f6H, 00H
 	DB	'"', 00H, 00H, 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@GAEKBOHM@BINARY_ActEmotion@
+;	COMDAT ??_C@_0DK@OJMDGNKA@CPythonPlayer?3?3SetSkillLevel?$CISl@
 CONST	SEGMENT
-??_C@_0BC@GAEKBOHM@BINARY_ActEmotion@ DB 'BINARY_ActEmotion', 00H ; `string'
+??_C@_0DK@OJMDGNKA@CPythonPlayer?3?3SetSkillLevel?$CISl@ DB 'CPythonPlaye'
+	DB	'r::SetSkillLevel(SlotIndex=%d, SkillLevel=%d)', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FF@PCELILMJ@Failed?5to?5find?5ItemData?5?9?5CPyth@
 CONST	SEGMENT
@@ -569,11 +558,12 @@ CONST	SEGMENT
 	DB	'ind ItemData - CPythonPlayer::IsEquipItem(window_type=%d, iSl'
 	DB	'otindex=%d)', 0aH, 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EG@NGMFHMLF@FAILED?7?7CPythonPlayer?3?3GetItemT@
+;	COMDAT ??_C@_0DC@OJMPNPJD@CPythonPlayer?3?3SetSkillLevel?5?9?5@
 CONST	SEGMENT
-??_C@_0EG@NGMFHMLF@FAILED?7?7CPythonPlayer?3?3GetItemT@ DB 'FAILED', 09H, 09H
-	DB	'CPythonPlayer::GetItemTypeBySlot()', 09H, 09H, 'Cell(%d, %d) '
-	DB	'item is null', 00H				; `string'
+??_C@_0DC@OJMPNPJD@CPythonPlayer?3?3SetSkillLevel?5?9?5@ DB 'CPythonPlaye'
+	DB	'r::SetSkillLevel - ', 0bbH, 0e7H, 0bfH, 0ebH, 0c7H, 0cfH, 0c1H
+	DB	0f6H, ' ', 0beH, 0caH, 0b4H, 0c2H, ' ', 0c7H, 0d4H, 0bcH, 0f6H
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EJ@CAEHGKMP@FAILED?7?7CPythonPlayer?3?3GetItemS@
 CONST	SEGMENT
@@ -581,11 +571,9 @@ CONST	SEGMENT
 	DB	'CPythonPlayer::GetItemSubTypeBySlot()', 09H, 09H, 'Cell(%d, %'
 	DB	'd) item is null', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0GC@FMCMFPCN@CPythonPlayer?3?3SetItemData?$CIwind@
+;	COMDAT ??_C@_0BC@GAEKBOHM@BINARY_ActEmotion@
 CONST	SEGMENT
-??_C@_0GC@FMCMFPCN@CPythonPlayer?3?3SetItemData?$CIwind@ DB 'CPythonPlaye'
-	DB	'r::SetItemData(window_type : %d, dwSlotIndex=%d, itemIndex=%d'
-	DB	') - Failed to item data', 0aH, 00H		; `string'
+??_C@_0BC@GAEKBOHM@BINARY_ActEmotion@ DB 'BINARY_ActEmotion', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_1CC@MKEJNEIO@?$AAp?$AAI?$AAt?$AAe?$AAm?$AA?5?$AA?$CB?$AA?$DN?$AA?5?$AAn?$AAu?$AAl?$AAl?$AAp?$AAt@
 CONST	SEGMENT
@@ -594,19 +582,21 @@ CONST	SEGMENT
 	DB	'=', 00H, ' ', 00H, 'n', 00H, 'u', 00H, 'l', 00H, 'l', 00H, 'p'
 	DB	00H, 't', 00H, 'r', 00H, 00H, 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DC@LHJHEHHP@CPythonPlayer?3?3GetStatus?5?9?5Get?5@
+;	COMDAT ??_C@_0EG@NGMFHMLF@FAILED?7?7CPythonPlayer?3?3GetItemT@
 CONST	SEGMENT
-??_C@_0DC@LHJHEHHP@CPythonPlayer?3?3GetStatus?5?9?5Get?5@ DB 'CPythonPlay'
-	DB	'er::GetStatus - Get Status Type Error', 0aH, 00H ; `string'
+??_C@_0EG@NGMFHMLF@FAILED?7?7CPythonPlayer?3?3GetItemT@ DB 'FAILED', 09H, 09H
+	DB	'CPythonPlayer::GetItemTypeBySlot()', 09H, 09H, 'Cell(%d, %d) '
+	DB	'item is null', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@PDEFNCOA@OnChangePKMode@
 CONST	SEGMENT
 ??_C@_0P@PDEFNCOA@OnChangePKMode@ DB 'OnChangePKMode', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DB@KMFIAMFE@?5CPythonPlayer?3?3GetStatus?5?9?5Str@
+;	COMDAT ??_C@_0GC@FMCMFPCN@CPythonPlayer?3?3SetItemData?$CIwind@
 CONST	SEGMENT
-??_C@_0DB@KMFIAMFE@?5CPythonPlayer?3?3GetStatus?5?9?5Str@ DB ' CPythonPla'
-	DB	'yer::GetStatus - Strange Status Type!', 00H	; `string'
+??_C@_0GC@FMCMFPCN@CPythonPlayer?3?3SetItemData?$CIwind@ DB 'CPythonPlaye'
+	DB	'r::SetItemData(window_type : %d, dwSlotIndex=%d, itemIndex=%d'
+	DB	') - Failed to item data', 0aH, 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_1GI@EPFCHDMI@?$AA?$CB?$AA?$CC?$AA?5?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAP?$AAl?$AAa?$AAy?$AAe@
 CONST	SEGMENT
@@ -620,27 +610,20 @@ CONST	SEGMENT
 	DB	00H, 'a', 00H, 't', 00H, 'u', 00H, 's', 00H, ' ', 00H, 'T', 00H
 	DB	'y', 00H, 'p', 00H, 'e', 00H, '!', 00H, '"', 00H, 00H, 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_1GI@OFLJIIGE@?$AA?$CB?$AA?$CC?$AA?5?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAP?$AAl?$AAa?$AAy?$AAe@
+;	COMDAT ??_C@_0DC@LHJHEHHP@CPythonPlayer?3?3GetStatus?5?9?5Get?5@
 CONST	SEGMENT
-??_C@_1GI@OFLJIIGE@?$AA?$CB?$AA?$CC?$AA?5?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAP?$AAl?$AAa?$AAy?$AAe@ DB '!'
-	DB	00H, '"', 00H, ' ', 00H, 'C', 00H, 'P', 00H, 'y', 00H, 't', 00H
-	DB	'h', 00H, 'o', 00H, 'n', 00H, 'P', 00H, 'l', 00H, 'a', 00H, 'y'
-	DB	00H, 'e', 00H, 'r', 00H, ':', 00H, ':', 00H, 'S', 00H, 'e', 00H
-	DB	't', 00H, 'S', 00H, 't', 00H, 'a', 00H, 't', 00H, 'u', 00H, 's'
-	DB	00H, ' ', 00H, '-', 00H, ' ', 00H, 'S', 00H, 't', 00H, 'r', 00H
-	DB	'a', 00H, 'n', 00H, 'g', 00H, 'e', 00H, ' ', 00H, 'S', 00H, 't'
-	DB	00H, 'a', 00H, 't', 00H, 'u', 00H, 's', 00H, ' ', 00H, 'T', 00H
-	DB	'y', 00H, 'p', 00H, 'e', 00H, '!', 00H, '"', 00H, 00H, 00H ; `string'
+??_C@_0DC@LHJHEHHP@CPythonPlayer?3?3GetStatus?5?9?5Get?5@ DB 'CPythonPlay'
+	DB	'er::GetStatus - Get Status Type Error', 0aH, 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DC@HBNJHHEJ@CPythonPlayer?3?3SetStatus?5?9?5Set?5@
 CONST	SEGMENT
 ??_C@_0DC@HBNJHHEJ@CPythonPlayer?3?3SetStatus?5?9?5Set?5@ DB 'CPythonPlay'
 	DB	'er::SetStatus - Set Status Type Error', 0aH, 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DB@KOFJEMCK@?5CPythonPlayer?3?3SetStatus?5?9?5Str@
+;	COMDAT ??_C@_0DB@KMFIAMFE@?5CPythonPlayer?3?3GetStatus?5?9?5Str@
 CONST	SEGMENT
-??_C@_0DB@KOFJEMCK@?5CPythonPlayer?3?3SetStatus?5?9?5Str@ DB ' CPythonPla'
-	DB	'yer::SetStatus - Strange Status Type!', 00H	; `string'
+??_C@_0DB@KMFIAMFE@?5CPythonPlayer?3?3GetStatus?5?9?5Str@ DB ' CPythonPla'
+	DB	'yer::GetStatus - Strange Status Type!', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_1KC@HELPMOMK@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
 CONST	SEGMENT
@@ -659,30 +642,47 @@ CONST	SEGMENT
 	DB	'a', 00H, 'y', 00H, 'e', 00H, 'r', 00H, '.', 00H, 'c', 00H, 'p'
 	DB	00H, 'p', 00H, 00H, 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BM@OMJPBBKE@BINARY_Guild_EnterGuildArea@
+;	COMDAT ??_C@_1GI@OFLJIIGE@?$AA?$CB?$AA?$CC?$AA?5?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAP?$AAl?$AAa?$AAy?$AAe@
 CONST	SEGMENT
-??_C@_0BM@OMJPBBKE@BINARY_Guild_EnterGuildArea@ DB 'BINARY_Guild_EnterGui'
-	DB	'ldArea', 00H				; `string'
+??_C@_1GI@OFLJIIGE@?$AA?$CB?$AA?$CC?$AA?5?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAP?$AAl?$AAa?$AAy?$AAe@ DB '!'
+	DB	00H, '"', 00H, ' ', 00H, 'C', 00H, 'P', 00H, 'y', 00H, 't', 00H
+	DB	'h', 00H, 'o', 00H, 'n', 00H, 'P', 00H, 'l', 00H, 'a', 00H, 'y'
+	DB	00H, 'e', 00H, 'r', 00H, ':', 00H, ':', 00H, 'S', 00H, 'e', 00H
+	DB	't', 00H, 'S', 00H, 't', 00H, 'a', 00H, 't', 00H, 'u', 00H, 's'
+	DB	00H, ' ', 00H, '-', 00H, ' ', 00H, 'S', 00H, 't', 00H, 'r', 00H
+	DB	'a', 00H, 'n', 00H, 'g', 00H, 'e', 00H, ' ', 00H, 'S', 00H, 't'
+	DB	00H, 'a', 00H, 't', 00H, 'u', 00H, 's', 00H, ' ', 00H, 'T', 00H
+	DB	'y', 00H, 'p', 00H, 'e', 00H, '!', 00H, '"', 00H, 00H, 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@KCKDPCFN@BINARY_Guild_ExitGuildArea@
 CONST	SEGMENT
 ??_C@_0BL@KCKDPCFN@BINARY_Guild_ExitGuildArea@ DB 'BINARY_Guild_ExitGuild'
 	DB	'Area', 00H					; `string'
 CONST	ENDS
+;	COMDAT ??_C@_0DB@KOFJEMCK@?5CPythonPlayer?3?3SetStatus?5?9?5Str@
+CONST	SEGMENT
+??_C@_0DB@KOFJEMCK@?5CPythonPlayer?3?3SetStatus?5?9?5Str@ DB ' CPythonPla'
+	DB	'yer::SetStatus - Strange Status Type!', 00H	; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0P@KCGJBOBB@RefreshStamina@
 CONST	SEGMENT
 ??_C@_0P@KCGJBOBB@RefreshStamina@ DB 'RefreshStamina', 00H ; `string'
-?c_iSkillIndex_Summon@@3KB DD 083H			; c_iSkillIndex_Summon
-?c_iSkillIndex_Language3@@3KB DD 080H			; c_iSkillIndex_Language3
-?c_iSkillIndex_Language2@@3KB DD 07fH			; c_iSkillIndex_Language2
+CONST	ENDS
+;	COMDAT ??_C@_0BM@OMJPBBKE@BINARY_Guild_EnterGuildArea@
+CONST	SEGMENT
+??_C@_0BM@OMJPBBKE@BINARY_Guild_EnterGuildArea@ DB 'BINARY_Guild_EnterGui'
+	DB	'ldArea', 00H				; `string'
 ?c_iSkillIndex_Riding@@3KB DD 082H			; c_iSkillIndex_Riding
 ?c_iSkillIndex_Polymorph@@3KB DD 081H			; c_iSkillIndex_Polymorph
-?c_iSkillIndex_Mining@@3KB DD 07cH			; c_iSkillIndex_Mining
-?c_iSkillIndex_Fishing@@3KB DD 07bH			; c_iSkillIndex_Fishing
+?c_iSkillIndex_Summon@@3KB DD 083H			; c_iSkillIndex_Summon
 ?c_iSkillIndex_Language1@@3KB DD 07eH			; c_iSkillIndex_Language1
 ?c_iSkillIndex_Making@@3KB DD 07dH			; c_iSkillIndex_Making
+?c_iSkillIndex_Language3@@3KB DD 080H			; c_iSkillIndex_Language3
+?c_iSkillIndex_Language2@@3KB DD 07fH			; c_iSkillIndex_Language2
 ?c_iSkillIndex_Combo@@3KB DD 07aH			; c_iSkillIndex_Combo
 ?c_iSkillIndex_Tongsol@@3KB DD 079H			; c_iSkillIndex_Tongsol
+?c_iSkillIndex_Mining@@3KB DD 07cH			; c_iSkillIndex_Mining
+?c_iSkillIndex_Fishing@@3KB DD 07bH			; c_iSkillIndex_Fishing
 PUBLIC	?IsBeltInventoryCell@SItemPos@@QAE_NXZ		; SItemPos::IsBeltInventoryCell
 PUBLIC	?IsSkillBookInventoryCell@SItemPos@@QAE_NXZ	; SItemPos::IsSkillBookInventoryCell
 PUBLIC	?IsUpgradeItemsInventoryCell@SItemPos@@QAE_NXZ	; SItemPos::IsUpgradeItemsInventoryCell

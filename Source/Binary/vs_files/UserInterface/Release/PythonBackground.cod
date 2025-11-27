@@ -1470,7 +1470,7 @@ _BSS	ENDS
 _BSS	SEGMENT
 ?vMapName@?1??IsBoomMap@CPythonBackground@@QBE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@4V?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@4@B DB 0cH DUP (?) ; `CPythonBackground::IsBoomMap'::`2'::vMapName
 _BSS	ENDS
-	ORG $+4736
+	ORG $+4740
 ?c_v3TreePos@@3UD3DXVECTOR3@@B DQ 0c76de40047956a00r ; -1.24161e+36 ; c_v3TreePos
 	DD	0469dee00H
 CONST	ENDS

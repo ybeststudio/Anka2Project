@@ -12,6 +12,7 @@ PUBLIC	??_C@_1KI@NDOHEKDB@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$
 PUBLIC	??_C@_1DA@IANAENLC@?$AAm?$AAs?$AA_?$AAp?$AAI?$AAn?$AAs?$AAt?$AAa?$AAn?$AAc?$AAe?$AA?5?$AA?$CB?$AA?$DN@ ; `string'
 PUBLIC	??_C@_0GN@LLBDNFAM@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@ ; `string'
 PUBLIC	??_C@_0M@EHJKIBDK@Abort?$CB?$CB?$CB?$CB?6?6@	; `string'
+PUBLIC	??_C@_0BO@MEEJODCE@filename?$DN?$CFs?0?5name?$DN?$CFs?0?5line?$DN?$CFd@ ; `string'
 PUBLIC	??_C@_0BL@GHJOJKGG@FrameSkip?5Adjusting?4?4?4?5?$CFd?6@ ; `string'
 PUBLIC	??_C@_0CF@LOPCCCAL@DEVICESTATE_NEEDS_RESET?5?9?5attem@ ; `string'
 PUBLIC	??_C@_0BN@OAKBEJJN@CREATE_NO_APPROPRIATE_DEVICE@ ; `string'
@@ -236,6 +237,9 @@ EXTRN	?SetPerspective@CGraphicBase@@QAEXMMMM@Z:PROC	; CGraphicBase::SetPerspecti
 EXTRN	?GetAspect@CWindowManager@UI@@QAEMXZ:PROC	; UI::CWindowManager::GetAspect
 EXTRN	?RenderBackgrounds@CRenderTargetManager@@QAEXXZ:PROC ; CRenderTargetManager::RenderBackgrounds
 EXTRN	__imp__PostQuitMessage@4:PROC
+EXTRN	__imp__PyFrame_GetLineNumber:PROC
+EXTRN	__imp__PyString_AsString:PROC
+EXTRN	__imp___PyThreadState_Current:DWORD
 EXTRN	?GetInfo@CEffectManager@@QAEXPAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z:PROC ; CEffectManager::GetInfo
 EXTRN	?GetMousePosition@CMSWindow@@QAEXPAUtagPOINT@@@Z:PROC ; CMSWindow::GetMousePosition
 EXTRN	?AddCamera@CCameraManager@@QAE_NE@Z:PROC	; CCameraManager::AddCamera
@@ -949,6 +953,11 @@ CONST	SEGMENT
 ??_C@_0BL@GHJOJKGG@FrameSkip?5Adjusting?4?4?4?5?$CFd?6@ DB 'FrameSkip Adj'
 	DB	'usting... %d', 0aH, 00H			; `string'
 CONST	ENDS
+;	COMDAT ??_C@_0BO@MEEJODCE@filename?$DN?$CFs?0?5name?$DN?$CFs?0?5line?$DN?$CFd@
+CONST	SEGMENT
+??_C@_0BO@MEEJODCE@filename?$DN?$CFs?0?5name?$DN?$CFs?0?5line?$DN?$CFd@ DB 'f'
+	DB	'ilename=%s, name=%s, line=%d', 00H		; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0M@EHJKIBDK@Abort?$CB?$CB?$CB?$CB?6?6@
 CONST	SEGMENT
 ??_C@_0M@EHJKIBDK@Abort?$CB?$CB?$CB?$CB?6?6@ DB 'Abort!!!!', 0aH, 0aH, 00H ; `string'
@@ -1422,11 +1431,13 @@ __unwindtable$?UpdateGame@CPythonApplication@@QAEXXZ DD 0ffffffffH
 xdata$x	ENDS
 ;	COMDAT xdata$x
 xdata$x	SEGMENT
-__ehfuncinfo$?Process@CPythonApplication@@QAE_NXZ DQ 00000000219930522r ; 4.45598e-314
+__ehfuncinfo$?Process@CPythonApplication@@QAE_NXZ DD 019930522H
+	DD	02H
 	DD	FLAT:__unwindtable$?Process@CPythonApplication@@QAE_NXZ
-	DQ	00000000000000000r		; 0
-	DQ	00000000000000000r		; 0
-	DQ	00000000100000000r		; 2.122e-314
+	DD	2 DUP(00H)
+	DD	2 DUP(00H)
+	DD	00H
+	DD	01H
 __unwindtable$?Process@CPythonApplication@@QAE_NXZ DD 0ffffffffH
 	DD	FLAT:__unwindfunclet$?Process@CPythonApplication@@QAE_NXZ$0
 	DD	0ffffffffH
@@ -1466,4 +1477,2828 @@ __unwindtable$?Process@CPythonApplication@@QAE_NXZ DD 0ffffffffH
 ?emotionIcons$initializer$@@3P6AXXZA DD FLAT:??__EemotionIcons@@YAXXZ ; emotionIcons$initializer$
 ?skillIndexes$initializer$@@3P6AXXZA DD FLAT:??__EskillIndexes@@YAXXZ ; skillIndexes$initializer$
 ?guildSkills$initializer$@@3P6AXXZA DD FLAT:??__EguildSkills@@YAXXZ ; guildSkills$initializer$
+; Function compile flags: /Ogtp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+;	COMDAT ?Abort@CPythonApplication@@QAEXXZ
+_TEXT	SEGMENT
+?Abort@CPythonApplication@@QAEXXZ PROC			; CPythonApplication::Abort, COMDAT
+; _this$dead$ = ecx
+
+; 159  : {
+
+  00000	56		 push	 esi
+
+; 160  :     TraceError("============================================================================================================");
+
+  00001	68 00 00 00 00	 push	 OFFSET ??_C@_0GN@LLBDNFAM@?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@
+  00006	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
+
+; 161  :     TraceError("Abort!!!!\n\n");
+
+  0000b	68 00 00 00 00	 push	 OFFSET ??_C@_0M@EHJKIBDK@Abort?$CB?$CB?$CB?$CB?6?6@
+  00010	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
+
+; 162  : 
+; 163  :     PyThreadState* tstate = PyThreadState_GET();
+
+  00015	a1 00 00 00 00	 mov	 eax, DWORD PTR __imp___PyThreadState_Current
+  0001a	83 c4 08	 add	 esp, 8
+  0001d	8b 30		 mov	 esi, DWORD PTR [eax]
+
+; 164  :     if (tstate)
+
+  0001f	85 f6		 test	 esi, esi
+  00021	74 55		 je	 SHORT $LN3@Abort
+
+; 165  :     {
+; 166  :         for (PyFrameObject* frame = tstate->frame; frame; frame = frame->f_back)
+
+  00023	8b 76 08	 mov	 esi, DWORD PTR [esi+8]
+  00026	85 f6		 test	 esi, esi
+  00028	74 4e		 je	 SHORT $LN3@Abort
+  0002a	53		 push	 ebx
+  0002b	57		 push	 edi
+  0002c	0f 1f 40 00	 npad	 4
+$LL4@Abort:
+
+; 167  :         {
+; 168  :             PyCodeObject* f_code = frame->f_code;
+
+  00030	8b 7e 10	 mov	 edi, DWORD PTR [esi+16]
+
+; 169  :             if (!f_code || !f_code->co_filename || !f_code->co_name)
+
+  00033	85 ff		 test	 edi, edi
+  00035	74 38		 je	 SHORT $LN2@Abort
+  00037	8b 47 30	 mov	 eax, DWORD PTR [edi+48]
+  0003a	85 c0		 test	 eax, eax
+  0003c	74 31		 je	 SHORT $LN2@Abort
+  0003e	83 7f 34 00	 cmp	 DWORD PTR [edi+52], 0
+  00042	74 2b		 je	 SHORT $LN2@Abort
+
+; 170  :                 continue;
+; 171  : 
+; 172  :             const char* filename = PyString_AsString(f_code->co_filename);
+
+  00044	50		 push	 eax
+  00045	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__PyString_AsString
+
+; 173  :             const char* funcname = PyString_AsString(f_code->co_name);
+
+  0004b	ff 77 34	 push	 DWORD PTR [edi+52]
+  0004e	8b d8		 mov	 ebx, eax
+  00050	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__PyString_AsString
+
+; 174  :             int line = PyFrame_GetLineNumber(frame);
+
+  00056	56		 push	 esi
+  00057	8b f8		 mov	 edi, eax
+  00059	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__PyFrame_GetLineNumber
+
+; 175  :             TraceError("filename=%s, name=%s, line=%d", filename, funcname, line);
+
+  0005f	50		 push	 eax
+  00060	57		 push	 edi
+  00061	53		 push	 ebx
+  00062	68 00 00 00 00	 push	 OFFSET ??_C@_0BO@MEEJODCE@filename?$DN?$CFs?0?5name?$DN?$CFs?0?5line?$DN?$CFd@
+  00067	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
+  0006c	83 c4 1c	 add	 esp, 28			; 0000001cH
+$LN2@Abort:
+
+; 165  :     {
+; 166  :         for (PyFrameObject* frame = tstate->frame; frame; frame = frame->f_back)
+
+  0006f	8b 76 0c	 mov	 esi, DWORD PTR [esi+12]
+  00072	85 f6		 test	 esi, esi
+  00074	75 ba		 jne	 SHORT $LL4@Abort
+  00076	5f		 pop	 edi
+  00077	5b		 pop	 ebx
+$LN3@Abort:
+
+; 176  :         }
+; 177  :     }
+; 178  : 
+; 179  :     PostQuitMessage(0);
+
+  00078	6a 00		 push	 0
+  0007a	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__PostQuitMessage@4
+  00080	5e		 pop	 esi
+
+; 180  : }
+
+  00081	c3		 ret	 0
+?Abort@CPythonApplication@@QAEXXZ ENDP			; CPythonApplication::Abort
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+;	COMDAT ?Exit@CPythonApplication@@QAEXXZ
+_TEXT	SEGMENT
+?Exit@CPythonApplication@@QAEXXZ PROC			; CPythonApplication::Exit, COMDAT
+; _this$dead$ = ecx
+
+; 193  : 	PostQuitMessage(0);
+
+  00000	6a 00		 push	 0
+  00002	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__PostQuitMessage@4
+
+; 194  : }
+
+  00008	c3		 ret	 0
+?Exit@CPythonApplication@@QAEXXZ ENDP			; CPythonApplication::Exit
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+;	COMDAT ?Process@CPythonApplication@@QAE_NXZ
+_TEXT	SEGMENT
+_Point$ = -40						; size = 8
+_dwStart$1$ = -32					; size = 4
+_fCurRenderTime$1$ = -28				; size = 4
+_fRatio$9 = -24						; size = 4
+_dwRenderStartTime$1$ = -20				; size = 4
+_dwCurFaceCount$1$ = -20				; size = 4
+$T10 = -16						; size = 4
+__$EHRec$ = -12						; size = 12
+?Process@CPythonApplication@@QAE_NXZ PROC		; CPythonApplication::Process, COMDAT
+; _this$ = ecx
+
+; 312  : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	6a ff		 push	 -1
+  00005	68 00 00 00 00	 push	 __ehhandler$?Process@CPythonApplication@@QAE_NXZ
+  0000a	64 a1 00 00 00
+	00		 mov	 eax, DWORD PTR fs:0
+  00010	50		 push	 eax
+  00011	83 ec 1c	 sub	 esp, 28			; 0000001cH
+  00014	53		 push	 ebx
+  00015	56		 push	 esi
+  00016	57		 push	 edi
+  00017	a1 00 00 00 00	 mov	 eax, DWORD PTR ___security_cookie
+  0001c	33 c5		 xor	 eax, ebp
+  0001e	50		 push	 eax
+  0001f	8d 45 f4	 lea	 eax, DWORD PTR __$EHRec$[ebp]
+  00022	64 a3 00 00 00
+	00		 mov	 DWORD PTR fs:0, eax
+  00028	8b f1		 mov	 esi, ecx
+
+; 313  : 	ELTimer_SetFrameMSec();
+
+  0002a	e8 00 00 00 00	 call	 ?ELTimer_SetFrameMSec@@YAXXZ ; ELTimer_SetFrameMSec
+
+; 314  : 
+; 315  : 	DWORD dwStart = ELTimer_GetMSec();
+
+  0002f	e8 00 00 00 00	 call	 ?ELTimer_GetMSec@@YAKXZ	; ELTimer_GetMSec
+
+; 316  : 
+; 317  : 	///////////////////////////////////////////////////////////////////////////////////////////////////
+; 318  : 	static DWORD	s_dwUpdateFrameCount = 0;
+; 319  : 	static DWORD	s_dwRenderFrameCount = 0;
+; 320  : 	static DWORD	s_dwFaceCount = 0;
+; 321  : 	static UINT		s_uiLoad = 0;
+; 322  : 	static DWORD	s_dwCheckTime = ELTimer_GetMSec();
+
+  00034	64 8b 0d 00 00
+	00 00		 mov	 ecx, DWORD PTR fs:__tls_array
+  0003b	89 45 e0	 mov	 DWORD PTR _dwStart$1$[ebp], eax
+  0003e	8b 11		 mov	 edx, DWORD PTR [ecx]
+  00040	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?$TSS0@?1??Process@CPythonApplication@@QAE_NXZ@4HA
+  00046	3b 8a 00 00 00
+	00		 cmp	 ecx, DWORD PTR __Init_thread_epoch[edx]
+  0004c	7e 3b		 jle	 SHORT $LN2@Process
+  0004e	68 00 00 00 00	 push	 OFFSET ?$TSS0@?1??Process@CPythonApplication@@QAE_NXZ@4HA
+  00053	e8 00 00 00 00	 call	 __Init_thread_header
+  00058	83 c4 04	 add	 esp, 4
+  0005b	83 3d 00 00 00
+	00 ff		 cmp	 DWORD PTR ?$TSS0@?1??Process@CPythonApplication@@QAE_NXZ@4HA, -1
+  00062	75 25		 jne	 SHORT $LN2@Process
+  00064	c7 45 fc 00 00
+	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 0
+  0006b	e8 00 00 00 00	 call	 ?ELTimer_GetMSec@@YAKXZ	; ELTimer_GetMSec
+  00070	68 00 00 00 00	 push	 OFFSET ?$TSS0@?1??Process@CPythonApplication@@QAE_NXZ@4HA
+  00075	a3 00 00 00 00	 mov	 DWORD PTR ?s_dwCheckTime@?1??Process@CPythonApplication@@QAE_NXZ@4KA, eax
+  0007a	c7 45 fc ff ff
+	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
+  00081	e8 00 00 00 00	 call	 __Init_thread_footer
+  00086	83 c4 04	 add	 esp, 4
+$LN2@Process:
+
+; 323  : 
+; 324  : 	if (ELTimer_GetMSec() - s_dwCheckTime > 1000)
+
+  00089	e8 00 00 00 00	 call	 ?ELTimer_GetMSec@@YAKXZ	; ELTimer_GetMSec
+  0008e	2b 05 00 00 00
+	00		 sub	 eax, DWORD PTR ?s_dwCheckTime@?1??Process@CPythonApplication@@QAE_NXZ@4KA
+  00094	3d e8 03 00 00	 cmp	 eax, 1000		; 000003e8H
+  00099	76 6d		 jbe	 SHORT $LN5@Process
+
+; 325  : 	{
+; 326  : 		m_dwUpdateFPS		= s_dwUpdateFrameCount;
+
+  0009b	a1 00 00 00 00	 mov	 eax, DWORD PTR ?s_dwUpdateFrameCount@?1??Process@CPythonApplication@@QAE_NXZ@4KA
+
+; 327  : 		m_dwRenderFPS		= s_dwRenderFrameCount;
+
+  000a0	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?s_dwRenderFrameCount@?1??Process@CPythonApplication@@QAE_NXZ@4KA
+  000a6	89 86 a4 d7 03
+	00		 mov	 DWORD PTR [esi+251812], eax
+
+; 328  : 		m_dwLoad			= s_uiLoad;
+
+  000ac	a1 00 00 00 00	 mov	 eax, DWORD PTR ?s_uiLoad@?1??Process@CPythonApplication@@QAE_NXZ@4IA
+  000b1	89 86 c0 d6 03
+	00		 mov	 DWORD PTR [esi+251584], eax
+
+; 329  : 
+; 330  : 		m_dwFaceCount		= s_dwFaceCount / max(1, s_dwRenderFrameCount);
+
+  000b7	b8 01 00 00 00	 mov	 eax, 1
+  000bc	3b c8		 cmp	 ecx, eax
+  000be	89 8e a8 d7 03
+	00		 mov	 DWORD PTR [esi+251816], ecx
+  000c4	0f 42 c8	 cmovb	 ecx, eax
+  000c7	a1 00 00 00 00	 mov	 eax, DWORD PTR ?s_dwFaceCount@?1??Process@CPythonApplication@@QAE_NXZ@4KA
+  000cc	33 d2		 xor	 edx, edx
+  000ce	f7 f1		 div	 ecx
+  000d0	89 86 ac d7 03
+	00		 mov	 DWORD PTR [esi+251820], eax
+
+; 331  : 
+; 332  : 		s_dwCheckTime		= ELTimer_GetMSec();
+
+  000d6	e8 00 00 00 00	 call	 ?ELTimer_GetMSec@@YAKXZ	; ELTimer_GetMSec
+  000db	a3 00 00 00 00	 mov	 DWORD PTR ?s_dwCheckTime@?1??Process@CPythonApplication@@QAE_NXZ@4KA, eax
+
+; 333  : 
+; 334  : 		s_uiLoad = s_dwFaceCount = s_dwUpdateFrameCount = s_dwRenderFrameCount = 0;
+
+  000e0	c7 05 00 00 00
+	00 00 00 00 00	 mov	 DWORD PTR ?s_dwRenderFrameCount@?1??Process@CPythonApplication@@QAE_NXZ@4KA, 0
+  000ea	c7 05 00 00 00
+	00 00 00 00 00	 mov	 DWORD PTR ?s_dwUpdateFrameCount@?1??Process@CPythonApplication@@QAE_NXZ@4KA, 0
+  000f4	c7 05 00 00 00
+	00 00 00 00 00	 mov	 DWORD PTR ?s_dwFaceCount@?1??Process@CPythonApplication@@QAE_NXZ@4KA, 0
+  000fe	c7 05 00 00 00
+	00 00 00 00 00	 mov	 DWORD PTR ?s_uiLoad@?1??Process@CPythonApplication@@QAE_NXZ@4IA, 0
+$LN5@Process:
+
+; 335  : 	}
+; 336  : 
+; 337  : 	// Update Time
+; 338  : 	static BOOL s_bFrameSkip = false;
+; 339  : 	static UINT s_uiNextFrameTime = ELTimer_GetMSec();
+
+  00108	64 a1 00 00 00
+	00		 mov	 eax, DWORD PTR fs:__tls_array
+  0010e	8b 08		 mov	 ecx, DWORD PTR [eax]
+  00110	a1 00 00 00 00	 mov	 eax, DWORD PTR ?$TSS1@?1??Process@CPythonApplication@@QAE_NXZ@4HA
+  00115	3b 81 00 00 00
+	00		 cmp	 eax, DWORD PTR __Init_thread_epoch[ecx]
+  0011b	7e 3b		 jle	 SHORT $LN3@Process
+  0011d	68 00 00 00 00	 push	 OFFSET ?$TSS1@?1??Process@CPythonApplication@@QAE_NXZ@4HA
+  00122	e8 00 00 00 00	 call	 __Init_thread_header
+  00127	83 c4 04	 add	 esp, 4
+  0012a	83 3d 00 00 00
+	00 ff		 cmp	 DWORD PTR ?$TSS1@?1??Process@CPythonApplication@@QAE_NXZ@4HA, -1
+  00131	75 25		 jne	 SHORT $LN3@Process
+  00133	c7 45 fc 01 00
+	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 1
+  0013a	e8 00 00 00 00	 call	 ?ELTimer_GetMSec@@YAKXZ	; ELTimer_GetMSec
+  0013f	68 00 00 00 00	 push	 OFFSET ?$TSS1@?1??Process@CPythonApplication@@QAE_NXZ@4HA
+  00144	a3 00 00 00 00	 mov	 DWORD PTR ?s_uiNextFrameTime@?1??Process@CPythonApplication@@QAE_NXZ@4IA, eax
+  00149	c7 45 fc ff ff
+	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
+  00150	e8 00 00 00 00	 call	 __Init_thread_footer
+  00155	83 c4 04	 add	 esp, 4
+$LN3@Process:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  00158	8b 3d 00 00 00
+	00		 mov	 edi, DWORD PTR ?ms_singleton@?$CSingleton@VCTimer@@@@0PAVCTimer@@A ; CSingleton<CTimer>::ms_singleton
+  0015e	85 ff		 test	 edi, edi
+  00160	75 1a		 jne	 SHORT $LN48@Process
+  00162	6a 1a		 push	 26			; 0000001aH
+  00164	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  00169	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  0016e	e8 00 00 00 00	 call	 __wassert
+  00173	8b 3d 00 00 00
+	00		 mov	 edi, DWORD PTR ?ms_singleton@?$CSingleton@VCTimer@@@@0PAVCTimer@@A ; CSingleton<CTimer>::ms_singleton
+  00179	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN48@Process:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 342  : 	rkTimer.Advance();
+
+  0017c	8b cf		 mov	 ecx, edi
+  0017e	e8 00 00 00 00	 call	 ?Advance@CTimer@@QAEXXZ	; CTimer::Advance
+
+; 343  : 
+; 344  : 	m_fGlobalTime = rkTimer.GetCurrentSecond();
+
+  00183	8b cf		 mov	 ecx, edi
+  00185	e8 00 00 00 00	 call	 ?GetCurrentSecond@CTimer@@QAEMXZ ; CTimer::GetCurrentSecond
+  0018a	d9 9e dc d6 03
+	00		 fstp	 DWORD PTR [esi+251612]
+
+; 345  : 	m_fGlobalElapsedTime = rkTimer.GetElapsedSecond();
+
+  00190	8b cf		 mov	 ecx, edi
+  00192	e8 00 00 00 00	 call	 ?GetElapsedSecond@CTimer@@QAEMXZ ; CTimer::GetElapsedSecond
+
+; 346  : 
+; 347  : 	UINT uiFrameTime = rkTimer.GetElapsedMilliecond();
+
+  00197	8b cf		 mov	 ecx, edi
+  00199	d9 9e e0 d6 03
+	00		 fstp	 DWORD PTR [esi+251616]
+  0019f	e8 00 00 00 00	 call	 ?GetElapsedMilliecond@CTimer@@QAEKXZ ; CTimer::GetElapsedMilliecond
+  001a4	8b f8		 mov	 edi, eax
+
+; 348  : 	s_uiNextFrameTime += uiFrameTime;
+
+  001a6	01 3d 00 00 00
+	00		 add	 DWORD PTR ?s_uiNextFrameTime@?1??Process@CPythonApplication@@QAE_NXZ@4IA, edi
+
+; 349  : 
+; 350  : 	DWORD updatestart = ELTimer_GetMSec();
+
+  001ac	e8 00 00 00 00	 call	 ?ELTimer_GetMSec@@YAKXZ	; ELTimer_GetMSec
+
+; 351  : 	// Network I/O
+; 352  : 	m_pyNetworkStream.Process();
+
+  001b1	8d 8e 28 08 00
+	00		 lea	 ecx, DWORD PTR [esi+2088]
+  001b7	8b d8		 mov	 ebx, eax
+  001b9	e8 00 00 00 00	 call	 ?Process@CNetworkStream@@QAEXXZ ; CNetworkStream::Process
+
+; 353  : 	//m_pyNetworkDatagram.Process();
+; 354  : 
+; 355  : 	m_kGuildMarkUploader.Process();
+
+  001be	8d 8e 38 a6 03
+	00		 lea	 ecx, DWORD PTR [esi+239160]
+  001c4	e8 00 00 00 00	 call	 ?Process@CGuildMarkUploader@@QAEXXZ ; CGuildMarkUploader::Process
+
+; 356  : 
+; 357  : 	m_kGuildMarkDownloader.Process();
+
+  001c9	8d 8e 88 a5 03
+	00		 lea	 ecx, DWORD PTR [esi+238984]
+  001cf	e8 00 00 00 00	 call	 ?Process@CGuildMarkDownloader@@QAEXXZ ; CGuildMarkDownloader::Process
+
+; 358  : 	m_kAccountConnector.Process();
+
+  001d4	8d 8e e0 a9 03
+	00		 lea	 ecx, DWORD PTR [esi+240096]
+  001da	e8 00 00 00 00	 call	 ?Process@CAccountConnector@@QAEXXZ ; CAccountConnector::Process
+
+; 359  : 
+; 360  : 	//////////////////////
+; 361  : 	// Input Process
+; 362  : 	// Keyboard
+; 363  : 	UpdateKeyboard();
+
+  001df	8d 4e 1c	 lea	 ecx, DWORD PTR [esi+28]
+  001e2	e8 00 00 00 00	 call	 ?UpdateKeyboard@CInputKeyboard@@QAEXXZ ; CInputKeyboard::UpdateKeyboard
+
+; 364  : 
+; 365  : 	// Mouse
+; 366  : 	POINT Point;
+; 367  : 	if (GetCursorPos(&Point))
+
+  001e7	8d 45 d8	 lea	 eax, DWORD PTR _Point$[ebp]
+  001ea	50		 push	 eax
+  001eb	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__GetCursorPos@4
+  001f1	85 c0		 test	 eax, eax
+  001f3	74 1a		 je	 SHORT $LN6@Process
+
+; 368  : 	{
+; 369  : 		ScreenToClient(m_hWnd, &Point);
+
+  001f5	8d 45 d8	 lea	 eax, DWORD PTR _Point$[ebp]
+  001f8	50		 push	 eax
+  001f9	ff 76 04	 push	 DWORD PTR [esi+4]
+  001fc	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__ScreenToClient@8
+
+; 370  : 		OnMouseMove(Point.x, Point.y);
+
+  00202	ff 75 dc	 push	 DWORD PTR _Point$[ebp+4]
+  00205	8b ce		 mov	 ecx, esi
+  00207	ff 75 d8	 push	 DWORD PTR _Point$[ebp]
+  0020a	e8 00 00 00 00	 call	 ?OnMouseMove@CPythonApplication@@IAEXHH@Z ; CPythonApplication::OnMouseMove
+$LN6@Process:
+
+; 371  : 	}
+; 372  : 	//////////////////////
+; 373  : 	//if (m_isActivateWnd)
+; 374  : 	__UpdateCamera();
+
+  0020f	8b ce		 mov	 ecx, esi
+  00211	e8 00 00 00 00	 call	 ?__UpdateCamera@CPythonApplication@@IAEXXZ ; CPythonApplication::__UpdateCamera
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  00216	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCResourceManager@@@@0PAVCResourceManager@@A ; CSingleton<CResourceManager>::ms_singleton
+  0021c	85 c9		 test	 ecx, ecx
+  0021e	75 1a		 jne	 SHORT $LN51@Process
+  00220	6a 1a		 push	 26			; 0000001aH
+  00222	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  00227	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  0022c	e8 00 00 00 00	 call	 __wassert
+  00231	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCResourceManager@@@@0PAVCResourceManager@@A ; CSingleton<CResourceManager>::ms_singleton
+  00237	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN51@Process:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 376  : 	CResourceManager::Instance().Update();
+
+  0023a	e8 00 00 00 00	 call	 ?Update@CResourceManager@@QAEXXZ ; CResourceManager::Update
+
+; 377  : 	OnCameraUpdate();
+
+  0023f	8b ce		 mov	 ecx, esi
+  00241	e8 00 00 00 00	 call	 ?OnCameraUpdate@CPythonApplication@@IAEXXZ ; CPythonApplication::OnCameraUpdate
+
+; 378  : 	OnMouseUpdate();
+
+  00246	8b ce		 mov	 ecx, esi
+  00248	e8 00 00 00 00	 call	 ?OnMouseUpdate@CPythonApplication@@IAEXXZ ; CPythonApplication::OnMouseUpdate
+
+; 379  : 	OnUIUpdate();
+
+  0024d	e8 00 00 00 00	 call	 ?OnUIUpdate@CPythonApplication@@IAEXXZ ; CPythonApplication::OnUIUpdate
+
+; 380  : 
+; 381  : 	m_dwCurUpdateTime = ELTimer_GetMSec() - updatestart;
+
+  00252	e8 00 00 00 00	 call	 ?ELTimer_GetMSec@@YAKXZ	; ELTimer_GetMSec
+  00257	2b c3		 sub	 eax, ebx
+  00259	89 86 bc d6 03
+	00		 mov	 DWORD PTR [esi+251580], eax
+
+; 382  : 
+; 383  : 	DWORD dwCurrentTime = ELTimer_GetMSec();
+
+  0025f	e8 00 00 00 00	 call	 ?ELTimer_GetMSec@@YAKXZ	; ELTimer_GetMSec
+
+; 384  : 	BOOL  bCurrentLateUpdate = FALSE;
+; 385  : 
+; 386  : 	s_bFrameSkip = false;
+; 387  : 
+; 388  : 	if (dwCurrentTime > s_uiNextFrameTime)
+
+  00264	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?s_uiNextFrameTime@?1??Process@CPythonApplication@@QAE_NXZ@4IA
+  0026a	33 db		 xor	 ebx, ebx
+  0026c	89 5d f0	 mov	 DWORD PTR $T10[ebp], ebx
+  0026f	89 1d 00 00 00
+	00		 mov	 DWORD PTR ?s_bFrameSkip@?1??Process@CPythonApplication@@QAE_NXZ@4HA, ebx
+  00275	3b c1		 cmp	 eax, ecx
+  00277	0f 86 86 00 00
+	00		 jbe	 $LN7@Process
+
+; 389  : 	{
+; 390  : 		int dt = dwCurrentTime - s_uiNextFrameTime;
+
+  0027d	66 0f 6e c7	 movd	 xmm0, edi
+  00281	2b c1		 sub	 eax, ecx
+
+; 391  : 		int nAdjustTime = ((float)dt / (float)uiFrameTime) * uiFrameTime;
+
+  00283	f3 0f e6 c0	 cvtdq2pd xmm0, xmm0
+  00287	c1 ef 1f	 shr	 edi, 31			; 0000001fH
+  0028a	f2 0f 58 04 fd
+	00 00 00 00	 addsd	 xmm0, QWORD PTR __xmm@41f00000000000000000000000000000[edi*8]
+  00293	66 0f 5a c8	 cvtpd2ps xmm1, xmm0
+  00297	66 0f 6e c0	 movd	 xmm0, eax
+  0029b	0f 5b c0	 cvtdq2ps xmm0, xmm0
+  0029e	f3 0f 5e c1	 divss	 xmm0, xmm1
+  002a2	f3 0f 59 c1	 mulss	 xmm0, xmm1
+  002a6	f3 0f 2c f8	 cvttss2si edi, xmm0
+
+; 392  : 
+; 393  : 		if ( dt >= 500 )
+
+  002aa	3d f4 01 00 00	 cmp	 eax, 500		; 000001f4H
+  002af	7c 40		 jl	 SHORT $LN8@Process
+
+; 394  : 		{
+; 395  : 			s_uiNextFrameTime += nAdjustTime;
+
+  002b1	03 cf		 add	 ecx, edi
+
+; 396  : 			printf("FrameSkip Adjusting... %d\n",nAdjustTime);
+
+  002b3	57		 push	 edi
+  002b4	68 00 00 00 00	 push	 OFFSET ??_C@_0BL@GHJOJKGG@FrameSkip?5Adjusting?4?4?4?5?$CFd?6@
+  002b9	89 0d 00 00 00
+	00		 mov	 DWORD PTR ?s_uiNextFrameTime@?1??Process@CPythonApplication@@QAE_NXZ@4IA, ecx
+  002bf	e8 00 00 00 00	 call	 _printf
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  002c4	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCTimer@@@@0PAVCTimer@@A ; CSingleton<CTimer>::ms_singleton
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 396  : 			printf("FrameSkip Adjusting... %d\n",nAdjustTime);
+
+  002ca	83 c4 08	 add	 esp, 8
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  002cd	85 c9		 test	 ecx, ecx
+  002cf	75 1a		 jne	 SHORT $LN54@Process
+  002d1	6a 1a		 push	 26			; 0000001aH
+  002d3	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  002d8	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  002dd	e8 00 00 00 00	 call	 __wassert
+  002e2	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCTimer@@@@0PAVCTimer@@A ; CSingleton<CTimer>::ms_singleton
+  002e8	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN54@Process:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 397  : 			CTimer::Instance().Adjust(nAdjustTime);
+
+  002eb	57		 push	 edi
+  002ec	e8 00 00 00 00	 call	 ?Adjust@CTimer@@QAEXH@Z	; CTimer::Adjust
+$LN8@Process:
+
+; 398  : 		}
+; 399  : 
+; 400  : 		s_bFrameSkip = true;
+; 401  : 		bCurrentLateUpdate = TRUE;
+
+  002f1	bb 01 00 00 00	 mov	 ebx, 1
+  002f6	c7 05 00 00 00
+	00 01 00 00 00	 mov	 DWORD PTR ?s_bFrameSkip@?1??Process@CPythonApplication@@QAE_NXZ@4HA, 1
+  00300	89 5d f0	 mov	 DWORD PTR $T10[ebp], ebx
+$LN7@Process:
+
+; 402  : 	}
+; 403  : 
+; 404  : 	if (m_isFrameSkipDisable)
+
+  00303	80 be d1 d7 03
+	00 00		 cmp	 BYTE PTR [esi+251857], 0
+  0030a	74 0c		 je	 SHORT $LN9@Process
+
+; 405  : 		s_bFrameSkip = false;
+
+  0030c	c7 05 00 00 00
+	00 00 00 00 00	 mov	 DWORD PTR ?s_bFrameSkip@?1??Process@CPythonApplication@@QAE_NXZ@4HA, 0
+
+; 468  : 		{
+; 469  : 			SkipRenderBuffering(3000);
+
+  00316	eb 08		 jmp	 SHORT $LN69@Process
+$LN9@Process:
+
+; 406  : 
+; 407  : 	if (!s_bFrameSkip)
+
+  00318	85 db		 test	 ebx, ebx
+  0031a	0f 85 51 04 00
+	00		 jne	 $LN19@Process
+$LN69@Process:
+  00320	f2 0f 10 05 00
+	00 00 00	 movsd	 xmm0, QWORD PTR ?g_specularSpd@@3NA
+
+; 408  : 	{
+; 409  : 		CGrannyMaterial::TranslateSpecularMatrix(g_specularSpd, g_specularSpd, 0.0f);
+
+  00328	83 ec 0c	 sub	 esp, 12			; 0000000cH
+  0032b	66 0f 5a c0	 cvtpd2ps xmm0, xmm0
+  0032f	c7 44 24 08 00
+	00 00 00	 mov	 DWORD PTR [esp+8], 0
+  00337	f3 0f 11 44 24
+	04		 movss	 DWORD PTR [esp+4], xmm0
+  0033d	f3 0f 11 04 24	 movss	 DWORD PTR [esp], xmm0
+  00342	e8 00 00 00 00	 call	 ?TranslateSpecularMatrix@CGrannyMaterial@@SAXMMM@Z ; CGrannyMaterial::TranslateSpecularMatrix
+  00347	83 c4 0c	 add	 esp, 12			; 0000000cH
+
+; 410  : 
+; 411  : 		DWORD dwRenderStartTime = ELTimer_GetMSec();
+
+  0034a	e8 00 00 00 00	 call	 ?ELTimer_GetMSec@@YAKXZ	; ELTimer_GetMSec
+
+; 412  : 
+; 413  : 		bool canRender = true;
+; 414  : 
+; 415  : 		if (m_isMinimizedWnd)
+
+  0034f	80 be f0 d7 03
+	00 00		 cmp	 BYTE PTR [esi+251888], 0
+  00356	b3 01		 mov	 bl, 1
+  00358	89 45 ec	 mov	 DWORD PTR _dwRenderStartTime$1$[ebp], eax
+  0035b	0f 85 a0 00 00
+	00		 jne	 $LN14@Process
+
+; 416  : 		{
+; 417  : 			canRender = false;
+; 418  : 		}
+; 419  : 		else
+; 420  : 		{
+; 421  : #ifdef ENABLE_FIX_MOBS_LAG
+; 422  : 			if (DEVICE_STATE_OK != CheckDeviceState())
+
+  00361	8b ce		 mov	 ecx, esi
+  00363	e8 00 00 00 00	 call	 ?CheckDeviceState@CPythonApplication@@IAEHXZ ; CPythonApplication::CheckDeviceState
+  00368	83 f8 02	 cmp	 eax, 2
+  0036b	0f 84 92 00 00
+	00		 je	 $LN15@Process
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  00371	8b 3d 00 00 00
+	00		 mov	 edi, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonBackground@@@@0PAVCPythonBackground@@A ; CSingleton<CPythonBackground>::ms_singleton
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 424  : 				canRender = false;
+
+  00377	32 db		 xor	 bl, bl
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  00379	85 ff		 test	 edi, edi
+  0037b	75 1a		 jne	 SHORT $LN57@Process
+  0037d	6a 1a		 push	 26			; 0000001aH
+  0037f	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  00384	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  00389	e8 00 00 00 00	 call	 __wassert
+  0038e	8b 3d 00 00 00
+	00		 mov	 edi, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonBackground@@@@0PAVCPythonBackground@@A ; CSingleton<CPythonBackground>::ms_singleton
+  00394	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN57@Process:
+  00397	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCRenderTargetManager@@@@0PAVCRenderTargetManager@@A ; CSingleton<CRenderTargetManager>::ms_singleton
+  0039d	85 c9		 test	 ecx, ecx
+  0039f	75 1a		 jne	 SHORT $LN60@Process
+  003a1	6a 1a		 push	 26			; 0000001aH
+  003a3	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  003a8	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  003ad	e8 00 00 00 00	 call	 __wassert
+  003b2	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCRenderTargetManager@@@@0PAVCRenderTargetManager@@A ; CSingleton<CRenderTargetManager>::ms_singleton
+  003b8	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN60@Process:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 428  : 				CRenderTargetManager::Instance().ReleaseRenderTargetTextures();
+
+  003bb	e8 00 00 00 00	 call	 ?ReleaseRenderTargetTextures@CRenderTargetManager@@QAEXXZ ; CRenderTargetManager::ReleaseRenderTargetTextures
+
+; 429  : #endif
+; 430  : 
+; 431  : 				if (m_pyGraphic.RestoreDevice())
+
+  003c0	8d 8e 84 07 00
+	00		 lea	 ecx, DWORD PTR [esi+1924]
+  003c6	e8 00 00 00 00	 call	 ?RestoreDevice@CScreen@@QAEHXZ ; CScreen::RestoreDevice
+  003cb	85 c0		 test	 eax, eax
+  003cd	74 32		 je	 SHORT $LN14@Process
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  003cf	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCRenderTargetManager@@@@0PAVCRenderTargetManager@@A ; CSingleton<CRenderTargetManager>::ms_singleton
+  003d5	85 c9		 test	 ecx, ecx
+  003d7	75 1a		 jne	 SHORT $LN63@Process
+  003d9	6a 1a		 push	 26			; 0000001aH
+  003db	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  003e0	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  003e5	e8 00 00 00 00	 call	 __wassert
+  003ea	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCRenderTargetManager@@@@0PAVCRenderTargetManager@@A ; CSingleton<CRenderTargetManager>::ms_singleton
+  003f0	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN63@Process:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 434  : 					CRenderTargetManager::Instance().CreateRenderTargetTextures();
+
+  003f3	e8 00 00 00 00	 call	 ?CreateRenderTargetTextures@CRenderTargetManager@@QAEXXZ ; CRenderTargetManager::CreateRenderTargetTextures
+
+; 435  : #endif
+; 436  : 					rkBG.CreateCharacterShadowTexture();
+
+  003f8	8b cf		 mov	 ecx, edi
+  003fa	e8 00 00 00 00	 call	 ?CreateCharacterShadowTexture@CPythonBackground@@QAEXXZ ; CPythonBackground::CreateCharacterShadowTexture
+
+; 437  : 				}
+
+  003ff	eb 02		 jmp	 SHORT $LN15@Process
+$LN14@Process:
+
+; 438  : 				else
+; 439  : 				{
+; 440  : 					canRender = false;
+; 441  : 				}
+; 442  : 			}
+; 443  : #else
+; 444  : 			if (m_pyGraphic.IsLostDevice())
+; 445  : 			{
+; 446  : 				CPythonBackground& rkBG = CPythonBackground::Instance();
+; 447  : 				rkBG.ReleaseCharacterShadowTexture();
+; 448  : #ifdef ENABLE_RENDER_TARGET
+; 449  : 				CRenderTargetManager::Instance().ReleaseRenderTargetTextures();
+; 450  : #endif
+; 451  : 
+; 452  : 				if (m_pyGraphic.RestoreDevice())
+; 453  : 				{
+; 454  : #ifdef ENABLE_RENDER_TARGET
+; 455  : 					CRenderTargetManager::Instance().CreateRenderTargetTextures();
+; 456  : #endif
+; 457  : 					rkBG.CreateCharacterShadowTexture();
+; 458  : 				}
+; 459  : 				else
+; 460  : 				{
+; 461  : 					canRender = false;
+; 462  : 				}
+; 463  : 			}
+; 464  : #endif
+; 465  : 		}
+; 466  : 
+; 467  : 		if (!IsActive())
+
+  00401	32 db		 xor	 bl, bl
+$LN15@Process:
+  00403	8b ce		 mov	 ecx, esi
+  00405	e8 00 00 00 00	 call	 ?IsActive@CMSWindow@@QAE_NXZ ; CMSWindow::IsActive
+  0040a	8d 7e 20	 lea	 edi, DWORD PTR [esi+32]
+  0040d	84 c0		 test	 al, al
+  0040f	75 0c		 jne	 SHORT $LN16@Process
+
+; 468  : 		{
+; 469  : 			SkipRenderBuffering(3000);
+
+  00411	8b 07		 mov	 eax, DWORD PTR [edi]
+  00413	8b cf		 mov	 ecx, edi
+  00415	68 b8 0b 00 00	 push	 3000			; 00000bb8H
+  0041a	ff 50 10	 call	 DWORD PTR [eax+16]
+$LN16@Process:
+
+; 470  : 		}
+; 471  : 
+; 472  : 		if (!canRender)
+
+  0041d	84 db		 test	 bl, bl
+  0041f	75 11		 jne	 SHORT $LN17@Process
+
+; 473  : 		{
+; 474  : 			SkipRenderBuffering(3000);
+
+  00421	8b 07		 mov	 eax, DWORD PTR [edi]
+  00423	8b cf		 mov	 ecx, edi
+  00425	68 b8 0b 00 00	 push	 3000			; 00000bb8H
+  0042a	ff 50 10	 call	 DWORD PTR [eax+16]
+
+; 475  : 		}
+
+  0042d	e9 3c 03 00 00	 jmp	 $LN70@Process
+$LN17@Process:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  00432	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCCullingManager@@@@0PAVCCullingManager@@A ; CSingleton<CCullingManager>::ms_singleton
+  00438	85 c9		 test	 ecx, ecx
+  0043a	75 1a		 jne	 SHORT $LN66@Process
+  0043c	6a 1a		 push	 26			; 0000001aH
+  0043e	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  00443	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  00448	e8 00 00 00 00	 call	 __wassert
+  0044d	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCCullingManager@@@@0PAVCCullingManager@@A ; CSingleton<CCullingManager>::ms_singleton
+  00453	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN66@Process:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 478  : 			CCullingManager::Instance().Update();
+
+  00456	e8 00 00 00 00	 call	 ?Update@CCullingManager@@QAEXXZ ; CCullingManager::Update
+
+; 479  : 			if (m_pyGraphic.Begin())
+
+  0045b	8d be 84 07 00
+	00		 lea	 edi, DWORD PTR [esi+1924]
+  00461	8b cf		 mov	 ecx, edi
+  00463	e8 00 00 00 00	 call	 ?Begin@CScreen@@QAE_NXZ	; CScreen::Begin
+  00468	84 c0		 test	 al, al
+  0046a	0f 84 fe 02 00
+	00		 je	 $LN70@Process
+
+; 480  : 			{
+; 481  : 
+; 482  : 				m_pyGraphic.ClearDepthBuffer();
+
+  00470	8b cf		 mov	 ecx, edi
+  00472	e8 00 00 00 00	 call	 ?ClearDepthBuffer@CScreen@@QAEXXZ ; CScreen::ClearDepthBuffer
+
+; 483  : 
+; 484  : #ifdef _DEBUG
+; 485  : 				m_pyGraphic.SetClearColor(0.3f, 0.3f, 0.3f);
+; 486  : 				m_pyGraphic.Clear();
+; 487  : #endif
+; 488  : 
+; 489  : 				/////////////////////
+; 490  : 				// Interface
+; 491  : 				m_pyGraphic.SetInterfaceRenderState();
+
+  00477	8b cf		 mov	 ecx, edi
+  00479	e8 00 00 00 00	 call	 ?SetInterfaceRenderState@CPythonGraphic@@QAEXXZ ; CPythonGraphic::SetInterfaceRenderState
+
+; 492  : 
+; 493  : 				OnUIRender();
+
+  0047e	e8 00 00 00 00	 call	 ?OnUIRender@CPythonApplication@@IAEXXZ ; CPythonApplication::OnUIRender
+
+; 494  : 				OnMouseRender();
+
+  00483	8b ce		 mov	 ecx, esi
+  00485	e8 00 00 00 00	 call	 ?OnMouseRender@CPythonApplication@@IAEXXZ ; CPythonApplication::OnMouseRender
+
+; 495  : 				/////////////////////
+; 496  : 
+; 497  : 				m_pyGraphic.End();
+
+  0048a	8b cf		 mov	 ecx, edi
+  0048c	e8 00 00 00 00	 call	 ?End@CScreen@@QAEXXZ	; CScreen::End
+
+; 498  : 
+; 499  : 				//DWORD t1 = ELTimer_GetMSec();
+; 500  : 				m_pyGraphic.Show();
+
+  00491	6a 00		 push	 0
+  00493	8b cf		 mov	 ecx, edi
+  00495	e8 00 00 00 00	 call	 ?Show@CScreen@@QAEXPAUHWND__@@@Z ; CScreen::Show
+
+; 501  : 				//DWORD t2 = ELTimer_GetMSec();
+; 502  : 
+; 503  : 				DWORD dwRenderEndTime = ELTimer_GetMSec();
+
+  0049a	e8 00 00 00 00	 call	 ?ELTimer_GetMSec@@YAKXZ	; ELTimer_GetMSec
+
+; 504  : 
+; 505  : 				static DWORD s_dwRenderCheckTime = dwRenderEndTime;
+
+  0049f	64 8b 0d 00 00
+	00 00		 mov	 ecx, DWORD PTR fs:__tls_array
+  004a6	8b d8		 mov	 ebx, eax
+  004a8	8b 11		 mov	 edx, DWORD PTR [ecx]
+  004aa	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?$TSS2@?CL@??Process@CPythonApplication@@QAE_NXZ@4HA
+  004b0	3b 8a 00 00 00
+	00		 cmp	 ecx, DWORD PTR __Init_thread_epoch[edx]
+  004b6	7e 29		 jle	 SHORT $LN4@Process
+  004b8	68 00 00 00 00	 push	 OFFSET ?$TSS2@?CL@??Process@CPythonApplication@@QAE_NXZ@4HA
+  004bd	e8 00 00 00 00	 call	 __Init_thread_header
+  004c2	83 c4 04	 add	 esp, 4
+  004c5	83 3d 00 00 00
+	00 ff		 cmp	 DWORD PTR ?$TSS2@?CL@??Process@CPythonApplication@@QAE_NXZ@4HA, -1
+  004cc	75 13		 jne	 SHORT $LN4@Process
+  004ce	68 00 00 00 00	 push	 OFFSET ?$TSS2@?CL@??Process@CPythonApplication@@QAE_NXZ@4HA
+  004d3	89 1d 00 00 00
+	00		 mov	 DWORD PTR ?s_dwRenderCheckTime@?CL@??Process@CPythonApplication@@QAE_NXZ@4KA, ebx
+  004d9	e8 00 00 00 00	 call	 __Init_thread_footer
+  004de	83 c4 04	 add	 esp, 4
+$LN4@Process:
+
+; 506  : 				static DWORD s_dwRenderRangeTime = 0;
+; 507  : 				static DWORD s_dwRenderRangeFrame = 0;
+; 508  : 
+; 509  : 				m_dwCurRenderTime = dwRenderEndTime - dwRenderStartTime;			
+; 510  : 				s_dwRenderRangeTime += m_dwCurRenderTime;				
+; 511  : 				++s_dwRenderRangeFrame;			
+
+  004e1	8b 15 00 00 00
+	00		 mov	 edx, DWORD PTR ?s_dwRenderRangeFrame@?CL@??Process@CPythonApplication@@QAE_NXZ@4KA
+  004e7	8b cb		 mov	 ecx, ebx
+  004e9	2b 4d ec	 sub	 ecx, DWORD PTR _dwRenderStartTime$1$[ebp]
+
+; 512  : 
+; 513  : 				if (dwRenderEndTime-s_dwRenderCheckTime>1000)
+
+  004ec	8b c3		 mov	 eax, ebx
+  004ee	2b 05 00 00 00
+	00		 sub	 eax, DWORD PTR ?s_dwRenderCheckTime@?CL@??Process@CPythonApplication@@QAE_NXZ@4KA
+  004f4	42		 inc	 edx
+  004f5	89 8e b8 d6 03
+	00		 mov	 DWORD PTR [esi+251576], ecx
+  004fb	03 0d 00 00 00
+	00		 add	 ecx, DWORD PTR ?s_dwRenderRangeTime@?CL@??Process@CPythonApplication@@QAE_NXZ@4KA
+  00501	89 0d 00 00 00
+	00		 mov	 DWORD PTR ?s_dwRenderRangeTime@?CL@??Process@CPythonApplication@@QAE_NXZ@4KA, ecx
+  00507	89 15 00 00 00
+	00		 mov	 DWORD PTR ?s_dwRenderRangeFrame@?CL@??Process@CPythonApplication@@QAE_NXZ@4KA, edx
+  0050d	3d e8 03 00 00	 cmp	 eax, 1000		; 000003e8H
+  00512	76 56		 jbe	 SHORT $LN20@Process
+
+; 514  : 				{
+; 515  : 					m_fAveRenderTime=float(double(s_dwRenderRangeTime)/double(s_dwRenderRangeFrame));
+
+  00514	66 0f 6e c9	 movd	 xmm1, ecx
+  00518	66 0f 6e c2	 movd	 xmm0, edx
+  0051c	f3 0f e6 c9	 cvtdq2pd xmm1, xmm1
+  00520	c1 e9 1f	 shr	 ecx, 31			; 0000001fH
+  00523	c1 ea 1f	 shr	 edx, 31			; 0000001fH
+  00526	f3 0f e6 c0	 cvtdq2pd xmm0, xmm0
+  0052a	f2 0f 58 0c cd
+	00 00 00 00	 addsd	 xmm1, QWORD PTR __xmm@41f00000000000000000000000000000[ecx*8]
+  00533	f2 0f 58 04 d5
+	00 00 00 00	 addsd	 xmm0, QWORD PTR __xmm@41f00000000000000000000000000000[edx*8]
+  0053c	f2 0f 5e c8	 divsd	 xmm1, xmm0
+  00540	66 0f 5a c1	 cvtpd2ps xmm0, xmm1
+  00544	f3 0f 11 86 b4
+	d6 03 00	 movss	 DWORD PTR [esi+251572], xmm0
+
+; 516  : 
+; 517  : 					s_dwRenderCheckTime=ELTimer_GetMSec();
+
+  0054c	e8 00 00 00 00	 call	 ?ELTimer_GetMSec@@YAKXZ	; ELTimer_GetMSec
+  00551	a3 00 00 00 00	 mov	 DWORD PTR ?s_dwRenderCheckTime@?CL@??Process@CPythonApplication@@QAE_NXZ@4KA, eax
+
+; 518  : 					s_dwRenderRangeTime=0;
+
+  00556	c7 05 00 00 00
+	00 00 00 00 00	 mov	 DWORD PTR ?s_dwRenderRangeTime@?CL@??Process@CPythonApplication@@QAE_NXZ@4KA, 0
+
+; 519  : 					s_dwRenderRangeFrame=0;
+
+  00560	c7 05 00 00 00
+	00 00 00 00 00	 mov	 DWORD PTR ?s_dwRenderRangeFrame@?CL@??Process@CPythonApplication@@QAE_NXZ@4KA, 0
+$LN20@Process:
+
+; 520  : 				}										
+; 521  : 
+; 522  : 				DWORD dwCurFaceCount=m_pyGraphic.GetFaceCount();
+
+  0056a	8b cf		 mov	 ecx, edi
+  0056c	e8 00 00 00 00	 call	 ?GetFaceCount@CGraphicBase@@QAEKXZ ; CGraphicBase::GetFaceCount
+
+; 523  : 				m_pyGraphic.ResetFaceCount();
+
+  00571	8b cf		 mov	 ecx, edi
+  00573	89 45 ec	 mov	 DWORD PTR _dwCurFaceCount$1$[ebp], eax
+  00576	e8 00 00 00 00	 call	 ?ResetFaceCount@CGraphicBase@@QAEXXZ ; CGraphicBase::ResetFaceCount
+
+; 524  : 				s_dwFaceCount += dwCurFaceCount;
+
+  0057b	8b 4d ec	 mov	 ecx, DWORD PTR _dwCurFaceCount$1$[ebp]
+  0057e	01 0d 00 00 00
+	00		 add	 DWORD PTR ?s_dwFaceCount@?1??Process@CPythonApplication@@QAE_NXZ@4KA, ecx
+
+; 525  : 
+; 526  : 				if (dwCurFaceCount > 5000)
+
+  00584	81 f9 88 13 00
+	00		 cmp	 ecx, 5000		; 00001388H
+  0058a	0f 86 c1 01 00
+	00		 jbe	 $LN21@Process
+
+; 527  : 				{
+; 528  : 					// 프레임 완충 처리
+; 529  : 					if (dwRenderEndTime > m_dwBufSleepSkipTime)
+
+  00590	f3 0f 10 1d 00
+	00 00 00	 movss	 xmm3, DWORD PTR __real@42c80000
+  00598	3b 9e fc d7 03
+	00		 cmp	 ebx, DWORD PTR [esi+251900]
+  0059e	0f 86 c2 00 00
+	00		 jbe	 $LN67@Process
+
+; 530  : 					{	
+; 531  : 						static float s_fBufRenderTime = 0.0f;
+; 532  : 
+; 533  : 						float fCurRenderTime = m_dwCurRenderTime;
+
+  005a4	8b 86 b8 d6 03
+	00		 mov	 eax, DWORD PTR [esi+251576]
+
+; 534  : 
+; 535  : 						if (fCurRenderTime > s_fBufRenderTime)
+
+  005aa	f3 0f 10 0d 00
+	00 00 00	 movss	 xmm1, DWORD PTR ?s_fBufRenderTime@?DE@??Process@CPythonApplication@@QAE_NXZ@4MA
+  005b2	66 0f 6e c0	 movd	 xmm0, eax
+  005b6	f3 0f e6 c0	 cvtdq2pd xmm0, xmm0
+  005ba	c1 e8 1f	 shr	 eax, 31			; 0000001fH
+  005bd	f2 0f 58 04 c5
+	00 00 00 00	 addsd	 xmm0, QWORD PTR __xmm@41f00000000000000000000000000000[eax*8]
+  005c6	66 0f 5a c0	 cvtpd2ps xmm0, xmm0
+  005ca	0f 2f c1	 comiss	 xmm0, xmm1
+  005cd	f3 0f 11 45 e4	 movss	 DWORD PTR _fCurRenderTime$1$[ebp], xmm0
+  005d2	76 5a		 jbe	 SHORT $LN24@Process
+
+; 536  : 						{
+; 537  : 							float fRatio = fMAX(0.5f, (fCurRenderTime - s_fBufRenderTime) / 30.0f);
+
+  005d4	f3 0f 5c c1	 subss	 xmm0, xmm1
+  005d8	83 ec 08	 sub	 esp, 8
+  005db	f3 0f 5e 05 00
+	00 00 00	 divss	 xmm0, DWORD PTR __real@41f00000
+  005e3	f3 0f 11 44 24
+	04		 movss	 DWORD PTR [esp+4], xmm0
+  005e9	c7 04 24 00 00
+	00 3f		 mov	 DWORD PTR [esp], 1056964608 ; 3f000000H
+  005f0	e8 00 00 00 00	 call	 ?fMAX@@YAMMM@Z		; fMAX
+
+; 538  : 							s_fBufRenderTime = (s_fBufRenderTime * (100.0f - fRatio) + (fCurRenderTime + 5) * fRatio) / 100.0f;
+
+  005f5	f3 0f 10 1d 00
+	00 00 00	 movss	 xmm3, DWORD PTR __real@42c80000
+  005fd	83 c4 08	 add	 esp, 8
+  00600	f3 0f 10 55 e4	 movss	 xmm2, DWORD PTR _fCurRenderTime$1$[ebp]
+  00605	0f 28 cb	 movaps	 xmm1, xmm3
+  00608	f3 0f 58 15 00
+	00 00 00	 addss	 xmm2, DWORD PTR __real@40a00000
+
+; 539  : 						}
+
+  00610	8b 4d ec	 mov	 ecx, DWORD PTR _dwCurFaceCount$1$[ebp]
+  00613	d9 5d e8	 fstp	 DWORD PTR _fRatio$9[ebp]
+  00616	f3 0f 5c 4d e8	 subss	 xmm1, DWORD PTR _fRatio$9[ebp]
+  0061b	f3 0f 59 55 e8	 mulss	 xmm2, DWORD PTR _fRatio$9[ebp]
+  00620	f3 0f 59 0d 00
+	00 00 00	 mulss	 xmm1, DWORD PTR ?s_fBufRenderTime@?DE@??Process@CPythonApplication@@QAE_NXZ@4MA
+  00628	f3 0f 58 ca	 addss	 xmm1, xmm2
+  0062c	eb 14		 jmp	 SHORT $LN72@Process
+$LN24@Process:
+
+; 540  : 						else
+; 541  : 						{
+; 542  : 							float fRatio = 0.5f;
+; 543  : 							s_fBufRenderTime = (s_fBufRenderTime * (100.0f - fRatio) + fCurRenderTime * fRatio) / 100.0f;
+
+  0062e	f3 0f 59 0d 00
+	00 00 00	 mulss	 xmm1, DWORD PTR __real@42c70000
+  00636	f3 0f 59 05 00
+	00 00 00	 mulss	 xmm0, DWORD PTR __real@3f000000
+  0063e	f3 0f 58 c8	 addss	 xmm1, xmm0
+$LN72@Process:
+
+; 544  : 						}
+; 545  : 
+; 546  : 						// 한계치를 정한다
+; 547  : 						if (s_fBufRenderTime > 100.0f)
+
+  00642	f3 0f 5e cb	 divss	 xmm1, xmm3
+  00646	0f 2f cb	 comiss	 xmm1, xmm3
+  00649	f3 0f 11 0d 00
+	00 00 00	 movss	 DWORD PTR ?s_fBufRenderTime@?DE@??Process@CPythonApplication@@QAE_NXZ@4MA, xmm1
+  00651	76 0b		 jbe	 SHORT $LN26@Process
+
+; 548  : 							s_fBufRenderTime = 100.0f;
+
+  00653	0f 28 cb	 movaps	 xmm1, xmm3
+  00656	f3 0f 11 0d 00
+	00 00 00	 movss	 DWORD PTR ?s_fBufRenderTime@?DE@??Process@CPythonApplication@@QAE_NXZ@4MA, xmm1
+$LN26@Process:
+
+; 549  : 
+; 550  : 						DWORD dwBufRenderTime = s_fBufRenderTime;
+; 551  : 
+; 552  : 						if (m_isWindowed)
+; 553  : 						{						
+; 554  : 							if (dwBufRenderTime>58)
+; 555  : 								dwBufRenderTime=64;
+; 556  : 							else if (dwBufRenderTime>42)
+; 557  : 								dwBufRenderTime=48;
+; 558  : 							else if (dwBufRenderTime>26)
+; 559  : 								dwBufRenderTime=32;
+; 560  : 							else if (dwBufRenderTime>10)
+; 561  : 								dwBufRenderTime=16;
+; 562  : 							else
+; 563  : 								dwBufRenderTime=8;
+; 564  : 						}
+; 565  : 
+; 566  : 						// 일정 프레임 속도에 맞추어주는쪽에 눈에 편하다
+; 567  : 						// 아래에서 한번 하면 ?榮?
+; 568  : 						//if (m_dwCurRenderTime<dwBufRenderTime)
+; 569  : 						//	Sleep(dwBufRenderTime-m_dwCurRenderTime);			
+; 570  : 
+; 571  : 						m_fAveRenderTime=s_fBufRenderTime;
+
+  0065e	f3 0f 11 8e b4
+	d6 03 00	 movss	 DWORD PTR [esi+251572], xmm1
+$LN67@Process:
+
+; 572  : 					}
+; 573  : 
+; 574  : 					m_dwFaceAccCount += dwCurFaceCount;
+
+  00666	01 8e 9c d7 03
+	00		 add	 DWORD PTR [esi+251804], ecx
+
+; 575  : 					m_dwFaceAccTime += m_dwCurRenderTime;
+; 576  : 
+; 577  : 					m_fFaceSpd=(m_dwFaceAccCount/m_dwFaceAccTime);
+
+  0066c	33 d2		 xor	 edx, edx
+  0066e	8b 8e b8 d6 03
+	00		 mov	 ecx, DWORD PTR [esi+251576]
+  00674	01 8e a0 d7 03
+	00		 add	 DWORD PTR [esi+251808], ecx
+  0067a	8b 86 9c d7 03
+	00		 mov	 eax, DWORD PTR [esi+251804]
+  00680	f7 b6 a0 d7 03
+	00		 div	 DWORD PTR [esi+251808]
+  00686	66 0f 6e c0	 movd	 xmm0, eax
+  0068a	f3 0f e6 c0	 cvtdq2pd xmm0, xmm0
+  0068e	c1 e8 1f	 shr	 eax, 31			; 0000001fH
+  00691	f2 0f 58 04 c5
+	00 00 00 00	 addsd	 xmm0, QWORD PTR __xmm@41f00000000000000000000000000000[eax*8]
+
+; 578  : 
+; 579  : 					// 거리 자동 조�?
+; 580  : 					if (-1 == m_iForceSightRange)
+
+  0069a	8b 86 00 d8 03
+	00		 mov	 eax, DWORD PTR [esi+251904]
+  006a0	66 0f 5a c0	 cvtpd2ps xmm0, xmm0
+  006a4	f3 0f 11 86 90
+	d7 03 00	 movss	 DWORD PTR [esi+251792], xmm0
+  006ac	83 f8 ff	 cmp	 eax, -1
+  006af	0f 85 93 00 00
+	00		 jne	 $LN36@Process
+
+; 581  : 					{
+; 582  : 						static float s_fAveRenderTime = 16.0f;
+; 583  : 						float fRatio=0.3f;
+; 584  : 						s_fAveRenderTime=(s_fAveRenderTime*(100.0f-fRatio)+max(16.0f, m_dwCurRenderTime)*fRatio)/100.0f;
+
+  006b5	f3 0f 10 15 00
+	00 00 00	 movss	 xmm2, DWORD PTR __real@41800000
+  006bd	0f 57 c0	 xorps	 xmm0, xmm0
+  006c0	f2 0f 2a c1	 cvtsi2sd xmm0, ecx
+  006c4	c1 e9 1f	 shr	 ecx, 31			; 0000001fH
+
+; 585  : 
+; 586  : 
+; 587  : 						float fFar=25600.0f;
+; 588  : 						float fNear=MIN_FOG;
+
+  006c7	f3 0f 10 0d 00
+	00 00 00	 movss	 xmm1, DWORD PTR ?MIN_FOG@@3MA
+  006cf	f2 0f 58 04 cd
+	00 00 00 00	 addsd	 xmm0, QWORD PTR __xmm@41f00000000000000000000000000000[ecx*8]
+  006d8	66 0f 5a c0	 cvtpd2ps xmm0, xmm0
+  006dc	f3 0f 5f d0	 maxss	 xmm2, xmm0
+  006e0	f3 0f 10 05 00
+	00 00 00	 movss	 xmm0, DWORD PTR ?s_fAveRenderTime@?EN@??Process@CPythonApplication@@QAE_NXZ@4MA
+  006e8	f3 0f 59 05 00
+	00 00 00	 mulss	 xmm0, DWORD PTR __real@42c76666
+  006f0	f3 0f 59 15 00
+	00 00 00	 mulss	 xmm2, DWORD PTR __real@3e99999a
+  006f8	f3 0f 58 d0	 addss	 xmm2, xmm0
+  006fc	f3 0f 10 05 00
+	00 00 00	 movss	 xmm0, DWORD PTR __real@447a0000
+  00704	f3 0f 5e d3	 divss	 xmm2, xmm3
+
+; 589  : 						double dbAvePow=double(1000.0f/s_fAveRenderTime);
+; 590  : 						double dbMaxPow=60.0;
+; 591  : 						float fDistance=max(fNear+(fFar-fNear)*(dbAvePow)/dbMaxPow, fNear);
+
+  00708	0f 5a d9	 cvtps2pd xmm3, xmm1
+  0070b	f3 0f 5e c2	 divss	 xmm0, xmm2
+  0070f	f3 0f 11 15 00
+	00 00 00	 movss	 DWORD PTR ?s_fAveRenderTime@?EN@??Process@CPythonApplication@@QAE_NXZ@4MA, xmm2
+  00717	0f 5a d0	 cvtps2pd xmm2, xmm0
+  0071a	f3 0f 10 05 00
+	00 00 00	 movss	 xmm0, DWORD PTR __real@46c80000
+  00722	f3 0f 5c c1	 subss	 xmm0, xmm1
+  00726	0f 5a c0	 cvtps2pd xmm0, xmm0
+  00729	f2 0f 59 d0	 mulsd	 xmm2, xmm0
+  0072d	f2 0f 5e 15 00
+	00 00 00	 divsd	 xmm2, QWORD PTR __real@404e000000000000
+  00735	f2 0f 58 d3	 addsd	 xmm2, xmm3
+  00739	66 0f 2f d3	 comisd	 xmm2, xmm3
+  0073d	77 03		 ja	 SHORT $LN43@Process
+  0073f	0f 28 d3	 movaps	 xmm2, xmm3
+$LN43@Process:
+  00742	66 0f 5a d2	 cvtpd2ps xmm2, xmm2
+
+; 592  : 						m_pyBackground.SetViewDistanceSet(0, fDistance);
+; 593  : 					}
+
+  00746	eb 11		 jmp	 SHORT $LN37@Process
+$LN36@Process:
+  00748	66 0f 6e d0	 movd	 xmm2, eax
+
+; 594  : 					// 거리 강제 설정시
+; 595  : 					else
+; 596  : 					{
+; 597  : 						m_pyBackground.SetViewDistanceSet(0, float(m_iForceSightRange));
+
+  0074c	0f 5b d2	 cvtdq2ps xmm2, xmm2
+
+; 598  : 					}
+; 599  : 				}
+
+  0074f	eb 08		 jmp	 SHORT $LN37@Process
+$LN21@Process:
+
+; 600  : 				else
+; 601  : 				{
+; 602  : 					// 10000 폴리곤 보다 적을때는 가장 멀리 보이게 한다
+; 603  : 					m_pyBackground.SetViewDistanceSet(0, 25600.0f);
+
+  00751	f3 0f 10 15 00
+	00 00 00	 movss	 xmm2, DWORD PTR __real@46c80000
+$LN37@Process:
+
+; 604  : 				}
+; 605  : 
+; 606  : 				++s_dwRenderFrameCount;
+
+  00759	b8 b8 8d 03 00	 mov	 eax, 232888		; 00038db8H
+  0075e	6a 00		 push	 0
+  00760	8d 0c 06	 lea	 ecx, DWORD PTR [esi+eax]
+  00763	e8 00 00 00 00	 call	 ?SetViewDistanceSet@CPythonBackground@@QAEXHM@Z ; CPythonBackground::SetViewDistanceSet
+  00768	ff 05 00 00 00
+	00		 inc	 DWORD PTR ?s_dwRenderFrameCount@?1??Process@CPythonApplication@@QAE_NXZ@4KA
+$LN70@Process:
+
+; 607  : 			}
+; 608  : 		}
+; 609  : 	}
+; 610  : 
+; 611  : 	int rest = s_uiNextFrameTime - ELTimer_GetMSec();
+
+  0076e	8b 5d f0	 mov	 ebx, DWORD PTR $T10[ebp]
+$LN19@Process:
+  00771	e8 00 00 00 00	 call	 ?ELTimer_GetMSec@@YAKXZ	; ELTimer_GetMSec
+  00776	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?s_uiNextFrameTime@?1??Process@CPythonApplication@@QAE_NXZ@4IA
+  0077c	2b c8		 sub	 ecx, eax
+
+; 612  : 
+; 613  : 	if (rest > 0 && !bCurrentLateUpdate )
+
+  0077e	85 c9		 test	 ecx, ecx
+  00780	7e 11		 jle	 SHORT $LN38@Process
+  00782	85 db		 test	 ebx, ebx
+  00784	75 0d		 jne	 SHORT $LN38@Process
+
+; 614  : 	{
+; 615  : 		s_uiLoad -= rest;	// 쉰 시간은 로드에서 뺀다..
+
+  00786	29 0d 00 00 00
+	00		 sub	 DWORD PTR ?s_uiLoad@?1??Process@CPythonApplication@@QAE_NXZ@4IA, ecx
+
+; 616  : 		Sleep(rest);
+
+  0078c	51		 push	 ecx
+  0078d	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__Sleep@4
+$LN38@Process:
+
+; 617  : 	}	
+; 618  : 
+; 619  : 	++s_dwUpdateFrameCount;
+
+  00793	ff 05 00 00 00
+	00		 inc	 DWORD PTR ?s_dwUpdateFrameCount@?1??Process@CPythonApplication@@QAE_NXZ@4KA
+
+; 620  : 
+; 621  : 	s_uiLoad += ELTimer_GetMSec() - dwStart;
+
+  00799	e8 00 00 00 00	 call	 ?ELTimer_GetMSec@@YAKXZ	; ELTimer_GetMSec
+  0079e	2b 45 e0	 sub	 eax, DWORD PTR _dwStart$1$[ebp]
+  007a1	01 05 00 00 00
+	00		 add	 DWORD PTR ?s_uiLoad@?1??Process@CPythonApplication@@QAE_NXZ@4IA, eax
+
+; 622  : 	//m_Profiler.ProfileByScreen();	
+; 623  : 	return true;
+
+  007a7	b0 01		 mov	 al, 1
+
+; 624  : }
+
+  007a9	8b 4d f4	 mov	 ecx, DWORD PTR __$EHRec$[ebp]
+  007ac	64 89 0d 00 00
+	00 00		 mov	 DWORD PTR fs:0, ecx
+  007b3	59		 pop	 ecx
+  007b4	5f		 pop	 edi
+  007b5	5e		 pop	 esi
+  007b6	5b		 pop	 ebx
+  007b7	8b e5		 mov	 esp, ebp
+  007b9	5d		 pop	 ebp
+  007ba	c3		 ret	 0
+_TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+__unwindfunclet$?Process@CPythonApplication@@QAE_NXZ$0:
+  00000	68 00 00 00 00	 push	 OFFSET ?$TSS0@?1??Process@CPythonApplication@@QAE_NXZ@4HA
+  00005	e8 00 00 00 00	 call	 __Init_thread_abort
+  0000a	59		 pop	 ecx
+  0000b	c3		 ret	 0
+__unwindfunclet$?Process@CPythonApplication@@QAE_NXZ$1:
+  0000c	68 00 00 00 00	 push	 OFFSET ?$TSS1@?1??Process@CPythonApplication@@QAE_NXZ@4HA
+  00011	e8 00 00 00 00	 call	 __Init_thread_abort
+  00016	59		 pop	 ecx
+  00017	c3		 ret	 0
+  00018	cc		 int	 3
+  00019	cc		 int	 3
+  0001a	cc		 int	 3
+  0001b	cc		 int	 3
+  0001c	cc		 int	 3
+__ehhandler$?Process@CPythonApplication@@QAE_NXZ:
+  0001d	90		 npad	 1
+  0001e	90		 npad	 1
+  0001f	8b 54 24 08	 mov	 edx, DWORD PTR [esp+8]
+  00023	8d 42 0c	 lea	 eax, DWORD PTR [edx+12]
+  00026	8b 4a d4	 mov	 ecx, DWORD PTR [edx-44]
+  00029	33 c8		 xor	 ecx, eax
+  0002b	e8 00 00 00 00	 call	 @__security_check_cookie@4
+  00030	b8 00 00 00 00	 mov	 eax, OFFSET __ehfuncinfo$?Process@CPythonApplication@@QAE_NXZ
+  00035	e9 00 00 00 00	 jmp	 ___CxxFrameHandler3
+text$x	ENDS
+?Process@CPythonApplication@@QAE_NXZ ENDP		; CPythonApplication::Process
+; Function compile flags: /Ogtp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Timer.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Timer.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Timer.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Timer.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+;	COMDAT ?CreateDevice@CPythonApplication@@QAE_NHHHHH@Z
+_TEXT	SEGMENT
+_$S13$ = -12						; size = 8
+_width$ = 8						; size = 4
+_height$ = 12						; size = 4
+_Windowed$ = 16						; size = 4
+_bit$ = 20						; size = 4
+_frequency$ = 24					; size = 4
+?CreateDevice@CPythonApplication@@QAE_NHHHHH@Z PROC	; CPythonApplication::CreateDevice, COMDAT
+; _this$ = ecx
+
+; 715  : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 10	 sub	 esp, 16			; 00000010H
+  00006	53		 push	 ebx
+  00007	56		 push	 esi
+  00008	57		 push	 edi
+  00009	8b f9		 mov	 edi, ecx
+
+; 716  : 	int iRet;
+; 717  : 
+; 718  : 	m_grpDevice.InitBackBufferCount(2);
+
+  0000b	6a 02		 push	 2
+  0000d	8d 8f b4 aa 03
+	00		 lea	 ecx, DWORD PTR [edi+240308]
+  00013	e8 00 00 00 00	 call	 ?InitBackBufferCount@CGraphicDevice@@QAEXI@Z ; CGraphicDevice::InitBackBufferCount
+
+; 719  : 
+; 720  : #ifdef ENABLE_MORE_FPS
+; 721  : 	g_fGameFPS = static_cast<float>(frequency);
+
+  00018	8b 75 18	 mov	 esi, DWORD PTR _frequency$[ebp]
+
+; 722  : 
+; 723  : 	const auto diff = 0.42f;
+; 724  : 	g_specularSpd = (diff / frequency);
+; 725  : 
+; 726  : 	auto [first, sec] = GetTimer(frequency);
+
+  0001b	8d 4d f4	 lea	 ecx, DWORD PTR _$S13$[ebp]
+  0001e	f3 0f 10 05 00
+	00 00 00	 movss	 xmm0, DWORD PTR __real@3ed70a3d
+  00026	8b d6		 mov	 edx, esi
+  00028	66 0f 6e ce	 movd	 xmm1, esi
+  0002c	0f 5b c9	 cvtdq2ps xmm1, xmm1
+  0002f	f3 0f 5e c1	 divss	 xmm0, xmm1
+  00033	f3 0f 11 0d 00
+	00 00 00	 movss	 DWORD PTR ?g_fGameFPS@@3MA, xmm1
+  0003b	0f 5a c0	 cvtps2pd xmm0, xmm0
+  0003e	f2 0f 11 05 00
+	00 00 00	 movsd	 QWORD PTR ?g_specularSpd@@3NA, xmm0
+  00046	e8 00 00 00 00	 call	 ?GetTimer@@YA?AV?$tuple@HH@std@@H@Z ; GetTimer
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  0004b	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCTimer@@@@0PAVCTimer@@A ; CSingleton<CTimer>::ms_singleton
+  00051	85 c9		 test	 ecx, ecx
+  00053	75 1a		 jne	 SHORT $LN23@CreateDevi
+  00055	6a 1a		 push	 26			; 0000001aH
+  00057	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  0005c	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  00061	e8 00 00 00 00	 call	 __wassert
+  00066	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCTimer@@@@0PAVCTimer@@A ; CSingleton<CTimer>::ms_singleton
+  0006c	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN23@CreateDevi:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Timer.h
+
+; 34   : 	void SetUpdateTime(uint32_t frequency, uint8_t first, uint8_t sec) { m_freq = frequency; m_firstArg = first; m_SecondArg = sec; }
+
+  0006f	0f b6 45 f8	 movzx	 eax, BYTE PTR _$S13$[ebp+4]
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 731  : 	iRet = m_grpDevice.Create(GetWindowHandle(), width, height, Windowed ? true : false, bit,frequency);
+
+  00073	83 7d 10 00	 cmp	 DWORD PTR _Windowed$[ebp], 0
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Timer.h
+
+; 34   : 	void SetUpdateTime(uint32_t frequency, uint8_t first, uint8_t sec) { m_freq = frequency; m_firstArg = first; m_SecondArg = sec; }
+
+  00077	88 41 1c	 mov	 BYTE PTR [ecx+28], al
+  0007a	0f b6 45 f4	 movzx	 eax, BYTE PTR _$S13$[ebp]
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 731  : 	iRet = m_grpDevice.Create(GetWindowHandle(), width, height, Windowed ? true : false, bit,frequency);
+
+  0007e	56		 push	 esi
+  0007f	ff 75 14	 push	 DWORD PTR _bit$[ebp]
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Timer.h
+
+; 34   : 	void SetUpdateTime(uint32_t frequency, uint8_t first, uint8_t sec) { m_freq = frequency; m_firstArg = first; m_SecondArg = sec; }
+
+  00082	88 41 1d	 mov	 BYTE PTR [ecx+29], al
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 731  : 	iRet = m_grpDevice.Create(GetWindowHandle(), width, height, Windowed ? true : false, bit,frequency);
+
+  00085	0f 95 c0	 setne	 al
+  00088	0f b6 c0	 movzx	 eax, al
+  0008b	50		 push	 eax
+  0008c	ff 75 0c	 push	 DWORD PTR _height$[ebp]
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Timer.h
+
+; 34   : 	void SetUpdateTime(uint32_t frequency, uint8_t first, uint8_t sec) { m_freq = frequency; m_firstArg = first; m_SecondArg = sec; }
+
+  0008f	89 71 20	 mov	 DWORD PTR [ecx+32], esi
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 731  : 	iRet = m_grpDevice.Create(GetWindowHandle(), width, height, Windowed ? true : false, bit,frequency);
+
+  00092	8b cf		 mov	 ecx, edi
+  00094	ff 75 08	 push	 DWORD PTR _width$[ebp]
+  00097	e8 00 00 00 00	 call	 ?GetWindowHandle@CMSWindow@@QAEPAUHWND__@@XZ ; CMSWindow::GetWindowHandle
+  0009c	50		 push	 eax
+  0009d	8d 8f b4 aa 03
+	00		 lea	 ecx, DWORD PTR [edi+240308]
+  000a3	e8 00 00 00 00	 call	 ?Create@CGraphicDevice@@QAEHPAUHWND__@@HH_NHH@Z ; CGraphicDevice::Create
+
+; 732  : 
+; 733  : 	switch (iRet)
+
+  000a8	83 f8 10	 cmp	 eax, 16			; 00000010H
+  000ab	0f 8f c1 00 00
+	00		 jg	 $LN17@CreateDevi
+  000b1	0f 84 91 00 00
+	00		 je	 $LN9@CreateDevi
+  000b7	8d 48 ff	 lea	 ecx, DWORD PTR [eax-1]
+  000ba	83 f9 07	 cmp	 ecx, 7
+  000bd	0f 87 f3 00 00
+	00		 ja	 $LN13@CreateDevi
+  000c3	ff 24 8d 00 00
+	00 00		 jmp	 DWORD PTR $LN26@CreateDevi[ecx*4]
+$LN8@CreateDevi:
+
+; 745  : 		return false;
+; 746  : 
+; 747  : 	case CGraphicDevice::CREATE_NO_DIRECTX:
+; 748  : 		//PyErr_SetString(PyExc_RuntimeError, "DirectX 8.1 or greater required to run game");
+; 749  : 		SET_EXCEPTION(CREATE_NO_DIRECTX);
+
+  000ca	a1 00 00 00 00	 mov	 eax, DWORD PTR __imp__PyExc_RuntimeError
+  000cf	68 00 00 00 00	 push	 OFFSET ??_C@_0BC@NKAKBNDM@CREATE_NO_DIRECTX@
+  000d4	ff 30		 push	 DWORD PTR [eax]
+  000d6	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__PyErr_SetString
+
+; 750  : 		TraceError("CreateDevice: DirectX 8.1 or greater required to run game");
+
+  000dc	68 00 00 00 00	 push	 OFFSET ??_C@_0DK@GACPAJMM@CreateDevice?3?5DirectX?58?41?5or?5gr@
+
+; 792  : 		return false;
+; 793  : 	}
+; 794  : }
+
+  000e1	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
+  000e6	83 c4 0c	 add	 esp, 12			; 0000000cH
+  000e9	32 c0		 xor	 al, al
+  000eb	5f		 pop	 edi
+  000ec	5e		 pop	 esi
+  000ed	5b		 pop	 ebx
+  000ee	8b e5		 mov	 esp, ebp
+  000f0	5d		 pop	 ebp
+  000f1	c2 14 00	 ret	 20			; 00000014H
+$LN11@CreateDevi:
+
+; 762  : 		return false;
+; 763  : 
+; 764  : 		/*case CGraphicDevice::CREATE_GET_ADAPTER_DISPLAY_MODE:
+; 765  : 		//PyErr_SetString(PyExc_RuntimeError, "GetAdapterDisplayMode failed");
+; 766  : 		SET_EXCEPTION(CREATE_GET_ADAPTER_DISPLAY_MODE);
+; 767  : 		TraceError("CreateDevice: GetAdapterDisplayMode failed");
+; 768  : 		return false;*/
+; 769  : 
+; 770  : 	case CGraphicDevice::CREATE_GET_DEVICE_CAPS:
+; 771  : 		PyErr_SetString(PyExc_RuntimeError, "GetDevCaps failed");
+
+  000f4	a1 00 00 00 00	 mov	 eax, DWORD PTR __imp__PyExc_RuntimeError
+  000f9	68 00 00 00 00	 push	 OFFSET ??_C@_0BC@IMJEDJEA@GetDevCaps?5failed@
+  000fe	ff 30		 push	 DWORD PTR [eax]
+  00100	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__PyErr_SetString
+
+; 772  : 		TraceError("CreateDevice: GetDevCaps failed");
+
+  00106	68 00 00 00 00	 push	 OFFSET ??_C@_0CA@DLHDILBB@CreateDevice?3?5GetDevCaps?5failed@
+
+; 792  : 		return false;
+; 793  : 	}
+; 794  : }
+
+  0010b	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
+  00110	83 c4 0c	 add	 esp, 12			; 0000000cH
+  00113	32 c0		 xor	 al, al
+  00115	5f		 pop	 edi
+  00116	5e		 pop	 esi
+  00117	5b		 pop	 ebx
+  00118	8b e5		 mov	 esp, ebp
+  0011a	5d		 pop	 ebp
+  0011b	c2 14 00	 ret	 20			; 00000014H
+$LN12@CreateDevi:
+
+; 773  : 		return false;
+; 774  : 
+; 775  : 	case CGraphicDevice::CREATE_GET_DEVICE_CAPS2:
+; 776  : 		PyErr_SetString(PyExc_RuntimeError, "GetDevCaps2 failed");
+
+  0011e	a1 00 00 00 00	 mov	 eax, DWORD PTR __imp__PyExc_RuntimeError
+  00123	68 00 00 00 00	 push	 OFFSET ??_C@_0BD@IHNLMMLJ@GetDevCaps2?5failed@
+  00128	ff 30		 push	 DWORD PTR [eax]
+  0012a	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__PyErr_SetString
+
+; 777  : 		TraceError("CreateDevice: GetDevCaps2 failed");
+
+  00130	68 00 00 00 00	 push	 OFFSET ??_C@_0CB@JLAAEKGJ@CreateDevice?3?5GetDevCaps2?5faile@
+
+; 792  : 		return false;
+; 793  : 	}
+; 794  : }
+
+  00135	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
+  0013a	83 c4 0c	 add	 esp, 12			; 0000000cH
+  0013d	32 c0		 xor	 al, al
+  0013f	5f		 pop	 edi
+  00140	5e		 pop	 esi
+  00141	5b		 pop	 ebx
+  00142	8b e5		 mov	 esp, ebp
+  00144	5d		 pop	 ebp
+  00145	c2 14 00	 ret	 20			; 00000014H
+$LN9@CreateDevi:
+
+; 751  : 		return false;
+; 752  : 
+; 753  : 	case CGraphicDevice::CREATE_DEVICE:
+; 754  : 		//PyErr_SetString(PyExc_RuntimeError, "GraphicDevice create failed");
+; 755  : 		SET_EXCEPTION(CREATE_DEVICE);
+
+  00148	a1 00 00 00 00	 mov	 eax, DWORD PTR __imp__PyExc_RuntimeError
+  0014d	68 00 00 00 00	 push	 OFFSET ??_C@_0O@CMPMDOEH@CREATE_DEVICE@
+  00152	ff 30		 push	 DWORD PTR [eax]
+  00154	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__PyErr_SetString
+
+; 756  : 		TraceError("CreateDevice: GraphicDevice create failed");
+
+  0015a	68 00 00 00 00	 push	 OFFSET ??_C@_0CK@KMPBIDGP@CreateDevice?3?5GraphicDevice?5cre@
+
+; 792  : 		return false;
+; 793  : 	}
+; 794  : }
+
+  0015f	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
+  00164	83 c4 0c	 add	 esp, 12			; 0000000cH
+  00167	32 c0		 xor	 al, al
+  00169	5f		 pop	 edi
+  0016a	5e		 pop	 esi
+  0016b	5b		 pop	 ebx
+  0016c	8b e5		 mov	 esp, ebp
+  0016e	5d		 pop	 ebp
+  0016f	c2 14 00	 ret	 20			; 00000014H
+$LN17@CreateDevi:
+
+; 732  : 
+; 733  : 	switch (iRet)
+
+  00172	3d 80 00 00 00	 cmp	 eax, 128		; 00000080H
+  00177	7f 36		 jg	 SHORT $LN18@CreateDevi
+  00179	74 0a		 je	 SHORT $LN6@CreateDevi
+  0017b	83 f8 20	 cmp	 eax, 32			; 00000020H
+  0017e	74 4b		 je	 SHORT $LN15@CreateDevi
+  00180	83 f8 40	 cmp	 eax, 64			; 00000040H
+  00183	75 31		 jne	 SHORT $LN13@CreateDevi
+$LN6@CreateDevi:
+
+; 734  : 	{
+; 735  : 	case CGraphicDevice::CREATE_OK:
+; 736  : 		return true;
+; 737  : 
+; 738  : 	case CGraphicDevice::CREATE_REFRESHRATE:
+; 739  : 		return true;
+; 740  : 
+; 741  : 	case CGraphicDevice::CREATE_ENUM:
+; 742  : 	case CGraphicDevice::CREATE_DETECT:
+; 743  : 		SET_EXCEPTION(CREATE_NO_APPROPRIATE_DEVICE);
+
+  00185	a1 00 00 00 00	 mov	 eax, DWORD PTR __imp__PyExc_RuntimeError
+  0018a	68 00 00 00 00	 push	 OFFSET ??_C@_0BN@OAKBEJJN@CREATE_NO_APPROPRIATE_DEVICE@
+  0018f	ff 30		 push	 DWORD PTR [eax]
+  00191	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__PyErr_SetString
+
+; 744  : 		TraceError("CreateDevice: Enum & Detect failed");
+
+  00197	68 00 00 00 00	 push	 OFFSET ??_C@_0CD@GGLEAAKE@CreateDevice?3?5Enum?5?$CG?5Detect?5fai@
+
+; 792  : 		return false;
+; 793  : 	}
+; 794  : }
+
+  0019c	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
+  001a1	83 c4 0c	 add	 esp, 12			; 0000000cH
+  001a4	32 c0		 xor	 al, al
+  001a6	5f		 pop	 edi
+  001a7	5e		 pop	 esi
+  001a8	5b		 pop	 ebx
+  001a9	8b e5		 mov	 esp, ebp
+  001ab	5d		 pop	 ebp
+  001ac	c2 14 00	 ret	 20			; 00000014H
+$LN18@CreateDevi:
+
+; 732  : 
+; 733  : 	switch (iRet)
+
+  001af	3d 00 04 00 00	 cmp	 eax, 1024		; 00000400H
+  001b4	74 4a		 je	 SHORT $LN10@CreateDevi
+$LN13@CreateDevi:
+
+; 778  : 		return false;
+; 779  : 
+; 780  : 	default:
+; 781  : 		if (iRet & CGraphicDevice::CREATE_OK)
+
+  001b6	a8 01		 test	 al, 1
+  001b8	74 1c		 je	 SHORT $LN14@CreateDevi
+
+; 782  : 		{
+; 783  : 			if (iRet & CGraphicDevice::CREATE_NO_TNL)
+
+  001ba	a9 00 01 00 00	 test	 eax, 256		; 00000100H
+  001bf	74 0a		 je	 SHORT $LN15@CreateDevi
+
+; 784  : 			{
+; 785  : 				CGrannyLODController::SetMinLODMode(true);
+
+  001c1	6a 01		 push	 1
+  001c3	e8 00 00 00 00	 call	 ?SetMinLODMode@CGrannyLODController@@SAX_N@Z ; CGrannyLODController::SetMinLODMode
+  001c8	83 c4 04	 add	 esp, 4
+$LN15@CreateDevi:
+
+; 786  : 			}
+; 787  : 			return true;
+
+  001cb	b0 01		 mov	 al, 1
+
+; 792  : 		return false;
+; 793  : 	}
+; 794  : }
+
+  001cd	5f		 pop	 edi
+  001ce	5e		 pop	 esi
+  001cf	5b		 pop	 ebx
+  001d0	8b e5		 mov	 esp, ebp
+  001d2	5d		 pop	 ebp
+  001d3	c2 14 00	 ret	 20			; 00000014H
+$LN14@CreateDevi:
+
+; 788  : 		}
+; 789  : 
+; 790  : 		SET_EXCEPTION(UNKNOWN_ERROR);
+
+  001d6	a1 00 00 00 00	 mov	 eax, DWORD PTR __imp__PyExc_RuntimeError
+  001db	68 00 00 00 00	 push	 OFFSET ??_C@_0O@BAEJJDKB@UNKNOWN_ERROR@
+  001e0	ff 30		 push	 DWORD PTR [eax]
+  001e2	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__PyErr_SetString
+
+; 791  : 		TraceError("CreateDevice: Unknown Error!");
+
+  001e8	68 00 00 00 00	 push	 OFFSET ??_C@_0BN@JAHEKIGK@CreateDevice?3?5Unknown?5Error?$CB@
+
+; 792  : 		return false;
+; 793  : 	}
+; 794  : }
+
+  001ed	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
+  001f2	83 c4 0c	 add	 esp, 12			; 0000000cH
+  001f5	32 c0		 xor	 al, al
+  001f7	5f		 pop	 edi
+  001f8	5e		 pop	 esi
+  001f9	5b		 pop	 ebx
+  001fa	8b e5		 mov	 esp, ebp
+  001fc	5d		 pop	 ebp
+  001fd	c2 14 00	 ret	 20			; 00000014H
+$LN10@CreateDevi:
+
+; 757  : 		return false;
+; 758  : 
+; 759  : 	case CGraphicDevice::CREATE_FORMAT:
+; 760  : 		SET_EXCEPTION(CREATE_FORMAT);
+
+  00200	a1 00 00 00 00	 mov	 eax, DWORD PTR __imp__PyExc_RuntimeError
+  00205	68 00 00 00 00	 push	 OFFSET ??_C@_0O@DAEHMKOB@CREATE_FORMAT@
+  0020a	ff 30		 push	 DWORD PTR [eax]
+  0020c	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__PyErr_SetString
+
+; 761  : 		TraceError("CreateDevice: Change the screen format");
+
+  00212	68 00 00 00 00	 push	 OFFSET ??_C@_0CH@DEBFNBPL@CreateDevice?3?5Change?5the?5screen@
+
+; 792  : 		return false;
+; 793  : 	}
+; 794  : }
+
+  00217	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
+  0021c	83 c4 0c	 add	 esp, 12			; 0000000cH
+  0021f	32 c0		 xor	 al, al
+  00221	5f		 pop	 edi
+  00222	5e		 pop	 esi
+  00223	5b		 pop	 ebx
+  00224	8b e5		 mov	 esp, ebp
+  00226	5d		 pop	 ebp
+  00227	c2 14 00	 ret	 20			; 00000014H
+  0022a	66 90		 npad	 2
+$LN26@CreateDevi:
+  0022c	00 00 00 00	 DD	 $LN15@CreateDevi
+  00230	00 00 00 00	 DD	 $LN8@CreateDevi
+  00234	00 00 00 00	 DD	 $LN13@CreateDevi
+  00238	00 00 00 00	 DD	 $LN11@CreateDevi
+  0023c	00 00 00 00	 DD	 $LN13@CreateDevi
+  00240	00 00 00 00	 DD	 $LN13@CreateDevi
+  00244	00 00 00 00	 DD	 $LN13@CreateDevi
+  00248	00 00 00 00	 DD	 $LN12@CreateDevi
+?CreateDevice@CPythonApplication@@QAE_NHHHHH@Z ENDP	; CPythonApplication::CreateDevice
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+;	COMDAT ?Create@CPythonApplication@@QAE_NPAU_object@@PBDHHH@Z
+_TEXT	SEGMENT
+_sStickKeys$ = -36					; size = 8
+_Windowed$1$ = -28					; size = 4
+_this$1$ = -24						; size = 4
+_rc$6 = -20						; size = 16
+__$ArrayPad$ = -4					; size = 4
+_poSelf$ = 8						; size = 4
+_c_szName$ = 12						; size = 4
+_width$ = 16						; size = 4
+_height$ = 20						; size = 4
+_Windowed$ = 24						; size = 4
+?Create@CPythonApplication@@QAE_NPAU_object@@PBDHHH@Z PROC ; CPythonApplication::Create, COMDAT
+; _this$ = ecx
+
+; 1066 : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 24	 sub	 esp, 36			; 00000024H
+  00006	a1 00 00 00 00	 mov	 eax, DWORD PTR ___security_cookie
+  0000b	33 c5		 xor	 eax, ebp
+  0000d	89 45 fc	 mov	 DWORD PTR __$ArrayPad$[ebp], eax
+  00010	53		 push	 ebx
+  00011	56		 push	 esi
+  00012	57		 push	 edi
+  00013	89 4d e8	 mov	 DWORD PTR _this$1$[ebp], ecx
+
+; 1067 : 	NANOBEGIN
+
+  00016	eb		 DB	 -21			; ffffffebH
+  00017	03		 DB	 3
+  00018	d6		 DB	 -42			; ffffffd6H
+  00019	d7		 DB	 -41			; ffffffd7H
+  0001a	01		 DB	 1
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  0001b	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonSystem@@@@0PAVCPythonSystem@@A ; CSingleton<CPythonSystem>::ms_singleton
+  00021	85 c9		 test	 ecx, ecx
+  00023	75 1a		 jne	 SHORT $LN21@Create
+  00025	6a 1a		 push	 26			; 0000001aH
+  00027	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  0002c	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  00031	e8 00 00 00 00	 call	 __wassert
+  00036	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonSystem@@@@0PAVCPythonSystem@@A ; CSingleton<CPythonSystem>::ms_singleton
+  0003c	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN21@Create:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 1067 : 	NANOBEGIN
+
+  0003f	e8 00 00 00 00	 call	 ?IsWindowed@CPythonSystem@@QAE_NXZ ; CPythonSystem::IsWindowed
+
+; 1068 : 		Windowed = CPythonSystem::Instance().IsWindowed() ? 1 : 0;
+; 1069 : 
+; 1070 : 	bool bAnotherWindow = false;
+; 1071 : 
+; 1072 : 	if (FindWindow(nullptr, c_szName))
+
+  00044	8b 75 0c	 mov	 esi, DWORD PTR _c_szName$[ebp]
+  00047	8a d8		 mov	 bl, al
+  00049	56		 push	 esi
+  0004a	0f b6 c3	 movzx	 eax, bl
+  0004d	6a 00		 push	 0
+  0004f	89 45 e4	 mov	 DWORD PTR _Windowed$1$[ebp], eax
+  00052	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__FindWindowA@8
+
+; 1073 : 		bAnotherWindow = true;
+; 1074 : 
+; 1075 : 	m_dwWidth = width;
+
+  00058	8b 4d 10	 mov	 ecx, DWORD PTR _width$[ebp]
+  0005b	8b f8		 mov	 edi, eax
+  0005d	8b 45 e8	 mov	 eax, DWORD PTR _this$1$[ebp]
+
+; 1076 : 	m_dwHeight = height;
+; 1077 : 
+; 1078 : 	// Window
+; 1079 : 	UINT WindowMode = __GetWindowMode(Windowed ? true : false);
+; 1080 : 
+; 1081 : 	if (!CMSWindow::Create(c_szName, 4, 0, WindowMode, ::LoadIcon( GetInstance(), MAKEINTRESOURCE( IDI_METIN2 ) ), IDC_CURSOR_NORMAL))
+
+  00060	6a 66		 push	 102			; 00000066H
+  00062	6a 64		 push	 100			; 00000064H
+  00064	89 88 c4 d6 03
+	00		 mov	 DWORD PTR [eax+251588], ecx
+  0006a	8b 4d 14	 mov	 ecx, DWORD PTR _height$[ebp]
+  0006d	89 88 c8 d6 03
+	00		 mov	 DWORD PTR [eax+251592], ecx
+  00073	8b c8		 mov	 ecx, eax
+  00075	e8 00 00 00 00	 call	 ?GetInstance@CMSWindow@@QAEPAUHINSTANCE__@@XZ ; CMSWindow::GetInstance
+  0007a	50		 push	 eax
+  0007b	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__LoadIconA@8
+  00081	50		 push	 eax
+  00082	8a cb		 mov	 cl, bl
+  00084	e8 00 00 00 00	 call	 ?__GetWindowMode@@YAI_N@Z ; __GetWindowMode
+  00089	8b 5d e8	 mov	 ebx, DWORD PTR _this$1$[ebp]
+  0008c	8b cb		 mov	 ecx, ebx
+  0008e	50		 push	 eax
+  0008f	6a 00		 push	 0
+  00091	6a 04		 push	 4
+  00093	56		 push	 esi
+  00094	e8 00 00 00 00	 call	 ?Create@CMSWindow@@QAE_NPBDHKKPAUHICON__@@H@Z ; CMSWindow::Create
+  00099	84 c0		 test	 al, al
+  0009b	75 37		 jne	 SHORT $LN3@Create
+
+; 1082 : 	{
+; 1083 : 		TraceError("CMSWindow::Create failed");
+
+  0009d	68 00 00 00 00	 push	 OFFSET ??_C@_0BJ@DBNNLGNG@CMSWindow?3?3Create?5failed@
+  000a2	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
+  000a7	83 c4 04	 add	 esp, 4
+
+; 1084 : 		SET_EXCEPTION(CREATE_WINDOW);
+
+  000aa	68 00 00 00 00	 push	 OFFSET ??_C@_0O@NOBMPFEG@CREATE_WINDOW@
+$LN36@Create:
+
+; 1198 : 	return true;
+; 1199 : }
+
+  000af	a1 00 00 00 00	 mov	 eax, DWORD PTR __imp__PyExc_RuntimeError
+  000b4	ff 30		 push	 DWORD PTR [eax]
+  000b6	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__PyErr_SetString
+  000bc	83 c4 08	 add	 esp, 8
+$LN34@Create:
+  000bf	32 c0		 xor	 al, al
+  000c1	5f		 pop	 edi
+  000c2	5e		 pop	 esi
+  000c3	5b		 pop	 ebx
+  000c4	8b 4d fc	 mov	 ecx, DWORD PTR __$ArrayPad$[ebp]
+  000c7	33 cd		 xor	 ecx, ebp
+  000c9	e8 00 00 00 00	 call	 @__security_check_cookie@4
+  000ce	8b e5		 mov	 esp, ebp
+  000d0	5d		 pop	 ebp
+  000d1	c2 14 00	 ret	 20			; 00000014H
+$LN3@Create:
+
+; 1085 : 		return false;
+; 1086 : 	}
+; 1087 : 
+; 1088 : 	if (m_pySystem.IsUseDefaultIME())
+
+  000d4	8d b3 d0 aa 03
+	00		 lea	 esi, DWORD PTR [ebx+240336]
+  000da	8b ce		 mov	 ecx, esi
+  000dc	e8 00 00 00 00	 call	 ?IsUseDefaultIME@CPythonSystem@@QAE_NXZ ; CPythonSystem::IsUseDefaultIME
+  000e1	84 c0		 test	 al, al
+  000e3	74 2c		 je	 SHORT $LN4@Create
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  000e5	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonIME@@@@0PAVCPythonIME@@A ; CSingleton<CPythonIME>::ms_singleton
+  000eb	85 c9		 test	 ecx, ecx
+  000ed	75 1a		 jne	 SHORT $LN24@Create
+  000ef	6a 1a		 push	 26			; 0000001aH
+  000f1	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  000f6	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  000fb	e8 00 00 00 00	 call	 __wassert
+  00100	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonIME@@@@0PAVCPythonIME@@A ; CSingleton<CPythonIME>::ms_singleton
+  00106	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN24@Create:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 1090 : 		CPythonIME::Instance().UseDefaultIME();
+
+  00109	83 c1 04	 add	 ecx, 4
+  0010c	e8 00 00 00 00	 call	 ?UseDefaultIME@CIME@@QAEXXZ ; CIME::UseDefaultIME
+$LN4@Create:
+
+; 1091 : 	}
+; 1092 : 
+; 1093 : #ifdef ENABLE_DISCORD_RPC
+; 1094 : 	m_pyNetworkStream.Discord_Start();
+
+  00111	e8 00 00 00 00	 call	 ?Discord_Start@CPythonNetworkStream@@QAEXXZ ; CPythonNetworkStream::Discord_Start
+
+; 1095 : #endif
+; 1096 : 
+; 1097 : 	AdjustSize(m_pySystem.GetWidth(), m_pySystem.GetHeight());
+
+  00116	8b ce		 mov	 ecx, esi
+  00118	e8 00 00 00 00	 call	 ?GetHeight@CPythonSystem@@QAEKXZ ; CPythonSystem::GetHeight
+  0011d	50		 push	 eax
+  0011e	e8 00 00 00 00	 call	 ?GetWidth@CPythonSystem@@QAEKXZ ; CPythonSystem::GetWidth
+  00123	50		 push	 eax
+  00124	8b cb		 mov	 ecx, ebx
+  00126	e8 00 00 00 00	 call	 ?AdjustSize@CMSWindow@@QAEXHH@Z ; CMSWindow::AdjustSize
+
+; 1098 : 
+; 1099 : 	if (Windowed)
+
+  0012b	83 7d e4 00	 cmp	 DWORD PTR _Windowed$1$[ebp], 0
+  0012f	74 56		 je	 SHORT $LN5@Create
+
+; 1100 : 	{
+; 1101 : 		m_isWindowed = true;
+
+  00131	c6 83 d0 d7 03
+	00 01		 mov	 BYTE PTR [ebx+251856], 1
+
+; 1102 : 
+; 1103 : 		if (bAnotherWindow)
+
+  00138	85 ff		 test	 edi, edi
+  0013a	74 44		 je	 SHORT $LN7@Create
+
+; 1104 : 		{
+; 1105 : 			RECT rc;
+; 1106 : 
+; 1107 : 			GetClientRect(&rc);
+
+  0013c	8d 45 ec	 lea	 eax, DWORD PTR _rc$6[ebp]
+  0013f	8b cb		 mov	 ecx, ebx
+  00141	50		 push	 eax
+  00142	e8 00 00 00 00	 call	 ?GetClientRect@CMSWindow@@QAEXPAUtagRECT@@@Z ; CMSWindow::GetClientRect
+
+; 1108 : 
+; 1109 : 			int windowWidth = rc.right - rc.left;
+
+  00147	8b 5d f4	 mov	 ebx, DWORD PTR _rc$6[ebp+8]
+
+; 1110 : 			int windowHeight = (rc.bottom - rc.top);
+
+  0014a	8b 75 f8	 mov	 esi, DWORD PTR _rc$6[ebp+12]
+
+; 1111 : 
+; 1112 : 			CMSApplication::SetPosition(GetScreenWidth() - windowWidth, GetScreenHeight() - 60 - windowHeight);
+
+  0014d	8b 4d e8	 mov	 ecx, DWORD PTR _this$1$[ebp]
+  00150	2b 5d ec	 sub	 ebx, DWORD PTR _rc$6[ebp]
+  00153	2b 75 f0	 sub	 esi, DWORD PTR _rc$6[ebp+4]
+  00156	e8 00 00 00 00	 call	 ?GetScreenHeight@CMSWindow@@QAEHXZ ; CMSWindow::GetScreenHeight
+  0015b	8b 4d e8	 mov	 ecx, DWORD PTR _this$1$[ebp]
+  0015e	bf c4 ff ff ff	 mov	 edi, -60		; ffffffc4H
+  00163	2b fe		 sub	 edi, esi
+  00165	03 f8		 add	 edi, eax
+  00167	e8 00 00 00 00	 call	 ?GetScreenWidth@CMSWindow@@QAEHXZ ; CMSWindow::GetScreenWidth
+  0016c	2b c3		 sub	 eax, ebx
+  0016e	8b 5d e8	 mov	 ebx, DWORD PTR _this$1$[ebp]
+  00171	57		 push	 edi
+  00172	50		 push	 eax
+  00173	8b cb		 mov	 ecx, ebx
+  00175	e8 00 00 00 00	 call	 ?SetPosition@CMSWindow@@QAEXHH@Z ; CMSWindow::SetPosition
+  0017a	8d b3 d0 aa 03
+	00		 lea	 esi, DWORD PTR [ebx+240336]
+$LN7@Create:
+
+; 1113 : 		}
+; 1114 : 		SetPosition(-8, 0); //Fix
+
+  00180	b8 f8 ff ff ff	 mov	 eax, -8			; fffffff8H
+
+; 1115 : 	}
+
+  00185	eb 09		 jmp	 SHORT $LN6@Create
+$LN5@Create:
+
+; 1116 : 	else
+; 1117 : 	{
+; 1118 : 		m_isWindowed = false;
+
+  00187	c6 83 d0 d7 03
+	00 00		 mov	 BYTE PTR [ebx+251856], 0
+
+; 1119 : 		SetPosition(0, 0);
+
+  0018e	33 c0		 xor	 eax, eax
+$LN6@Create:
+
+; 1120 : 	}
+; 1121 : 
+; 1122 : 	if (!CreateCursors())
+
+  00190	6a 00		 push	 0
+  00192	50		 push	 eax
+  00193	8b cb		 mov	 ecx, ebx
+  00195	e8 00 00 00 00	 call	 ?SetPosition@CMSWindow@@QAEXHH@Z ; CMSWindow::SetPosition
+  0019a	8b cb		 mov	 ecx, ebx
+  0019c	e8 00 00 00 00	 call	 ?CreateCursors@CPythonApplication@@QAE_NXZ ; CPythonApplication::CreateCursors
+  001a1	84 c0		 test	 al, al
+  001a3	75 17		 jne	 SHORT $LN8@Create
+
+; 1123 : 	{
+; 1124 : 		TraceError("CMSWindow::Cursors Create Error");
+
+  001a5	68 00 00 00 00	 push	 OFFSET ??_C@_0CA@FFOMJBHN@CMSWindow?3?3Cursors?5Create?5Error@
+  001aa	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
+  001af	83 c4 04	 add	 esp, 4
+
+; 1125 : 		SET_EXCEPTION("CREATE_CURSOR");
+
+  001b2	68 00 00 00 00	 push	 OFFSET ??_C@_0BA@GLLECKCO@?$CCCREATE_CURSOR?$CC@
+
+; 1126 : 		return false;
+
+  001b7	e9 f3 fe ff ff	 jmp	 $LN36@Create
+$LN8@Create:
+
+; 1127 : 	}
+; 1128 : 
+; 1129 : 	if (!m_pySystem.IsNoSoundCard())
+
+  001bc	8b ce		 mov	 ecx, esi
+  001be	e8 00 00 00 00	 call	 ?IsNoSoundCard@CPythonSystem@@QAE_NXZ ; CPythonSystem::IsNoSoundCard
+  001c3	84 c0		 test	 al, al
+  001c5	75 0b		 jne	 SHORT $LN10@Create
+
+; 1130 : 	{
+; 1131 : 		// Sound
+; 1132 : 		if (!m_SoundManager.Create())
+
+  001c7	8d 8b f0 00 00
+	00		 lea	 ecx, DWORD PTR [ebx+240]
+  001cd	e8 00 00 00 00	 call	 ?Create@CSoundManager@@QAEHXZ ; CSoundManager::Create
+$LN10@Create:
+
+; 1133 : 		{
+; 1134 : 		}
+; 1135 : 	}
+; 1136 : 
+; 1137 : 	// Device
+; 1138 : 	if (!CreateDevice(m_pySystem.GetWidth(), m_pySystem.GetHeight(), Windowed, m_pySystem.GetBPP(), m_pySystem.GetFrequency()))
+
+  001d2	8b ce		 mov	 ecx, esi
+  001d4	e8 00 00 00 00	 call	 ?GetFrequency@CPythonSystem@@QAEKXZ ; CPythonSystem::GetFrequency
+  001d9	8b f8		 mov	 edi, eax
+  001db	e8 00 00 00 00	 call	 ?GetBPP@CPythonSystem@@QAEKXZ ; CPythonSystem::GetBPP
+  001e0	8d 8b d0 aa 03
+	00		 lea	 ecx, DWORD PTR [ebx+240336]
+  001e6	8b f0		 mov	 esi, eax
+  001e8	e8 00 00 00 00	 call	 ?GetHeight@CPythonSystem@@QAEKXZ ; CPythonSystem::GetHeight
+  001ed	8b d0		 mov	 edx, eax
+  001ef	e8 00 00 00 00	 call	 ?GetWidth@CPythonSystem@@QAEKXZ ; CPythonSystem::GetWidth
+  001f4	57		 push	 edi
+  001f5	56		 push	 esi
+  001f6	ff 75 e4	 push	 DWORD PTR _Windowed$1$[ebp]
+  001f9	8b cb		 mov	 ecx, ebx
+  001fb	52		 push	 edx
+  001fc	50		 push	 eax
+  001fd	e8 00 00 00 00	 call	 ?CreateDevice@CPythonApplication@@QAE_NHHHHH@Z ; CPythonApplication::CreateDevice
+  00202	84 c0		 test	 al, al
+  00204	0f 84 b5 fe ff
+	ff		 je	 $LN34@Create
+
+; 1139 : 		return false;
+; 1140 : 
+; 1141 : 	GrannyCreateSharedDeformBuffer();
+
+  0020a	e8 00 00 00 00	 call	 ?GrannyCreateSharedDeformBuffer@@YAXXZ ; GrannyCreateSharedDeformBuffer
+
+; 1142 : 
+; 1143 : 	SetVisibleMode(true);
+
+  0020f	6a 01		 push	 1
+  00211	8b cb		 mov	 ecx, ebx
+  00213	e8 00 00 00 00	 call	 ?SetVisibleMode@CMSWindow@@QAEX_N@Z ; CMSWindow::SetVisibleMode
+
+; 1144 : 
+; 1145 : 	if (m_isWindowFullScreenEnable)
+
+  00218	83 bb f4 d7 03
+	00 00		 cmp	 DWORD PTR [ebx+251892], 0
+  0021f	74 1c		 je	 SHORT $LN12@Create
+
+; 1146 : 	{
+; 1147 : 		SetWindowPos(GetWindowHandle(), HWND_TOP, 0, 0, width, height, SWP_SHOWWINDOW);
+
+  00221	6a 40		 push	 64			; 00000040H
+  00223	ff 75 14	 push	 DWORD PTR _height$[ebp]
+  00226	8b cb		 mov	 ecx, ebx
+  00228	ff 75 10	 push	 DWORD PTR _width$[ebp]
+  0022b	6a 00		 push	 0
+  0022d	6a 00		 push	 0
+  0022f	6a 00		 push	 0
+  00231	e8 00 00 00 00	 call	 ?GetWindowHandle@CMSWindow@@QAEPAUHWND__@@XZ ; CMSWindow::GetWindowHandle
+  00236	50		 push	 eax
+  00237	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__SetWindowPos@28
+$LN12@Create:
+
+; 1148 : 	}
+; 1149 : 
+; 1150 : 	if (!InitializeKeyboard(GetWindowHandle()))
+
+  0023d	8b cb		 mov	 ecx, ebx
+  0023f	e8 00 00 00 00	 call	 ?GetWindowHandle@CMSWindow@@QAEPAUHWND__@@XZ ; CMSWindow::GetWindowHandle
+  00244	50		 push	 eax
+  00245	8d 4b 1c	 lea	 ecx, DWORD PTR [ebx+28]
+  00248	e8 00 00 00 00	 call	 ?InitializeKeyboard@CInputKeyboard@@QAE_NPAUHWND__@@@Z ; CInputKeyboard::InitializeKeyboard
+  0024d	84 c0		 test	 al, al
+  0024f	0f 84 6a fe ff
+	ff		 je	 $LN34@Create
+
+; 1151 : 		return false;
+; 1152 : 
+; 1153 : 	m_pySystem.GetDisplaySettings();
+
+  00255	8d 8b d0 aa 03
+	00		 lea	 ecx, DWORD PTR [ebx+240336]
+  0025b	e8 00 00 00 00	 call	 ?GetDisplaySettings@CPythonSystem@@QAEXXZ ; CPythonSystem::GetDisplaySettings
+
+; 1154 : 
+; 1155 : 	// Mouse
+; 1156 : 	if (m_pySystem.IsSoftwareCursor())
+
+  00260	8d 8b d0 aa 03
+	00		 lea	 ecx, DWORD PTR [ebx+240336]
+  00266	e8 00 00 00 00	 call	 ?IsSoftwareCursor@CPythonSystem@@QAE_NXZ ; CPythonSystem::IsSoftwareCursor
+
+; 1157 : 		SetCursorMode(CURSOR_MODE_SOFTWARE);
+; 1158 : 	else
+; 1159 : 		SetCursorMode(CURSOR_MODE_HARDWARE);
+; 1160 : 
+; 1161 : 	// Network
+; 1162 : 	if (!m_netDevice.Create())
+
+  0026b	0f b6 c0	 movzx	 eax, al
+  0026e	8b cb		 mov	 ecx, ebx
+  00270	50		 push	 eax
+  00271	e8 00 00 00 00	 call	 ?SetCursorMode@CPythonApplication@@QAEXH@Z ; CPythonApplication::SetCursorMode
+  00276	8d 8b c8 aa 03
+	00		 lea	 ecx, DWORD PTR [ebx+240328]
+  0027c	e8 00 00 00 00	 call	 ?Create@CNetworkDevice@@QAE_NXZ ; CNetworkDevice::Create
+  00281	84 c0		 test	 al, al
+  00283	75 17		 jne	 SHORT $LN16@Create
+
+; 1163 : 	{
+; 1164 : 		TraceError("NetDevice::Create failed");
+
+  00285	68 00 00 00 00	 push	 OFFSET ??_C@_0BJ@CJEBNOLC@NetDevice?3?3Create?5failed@
+  0028a	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
+  0028f	83 c4 04	 add	 esp, 4
+
+; 1165 : 		SET_EXCEPTION("CREATE_NETWORK");
+
+  00292	68 00 00 00 00	 push	 OFFSET ??_C@_0BB@EJLMKODK@?$CCCREATE_NETWORK?$CC@
+
+; 1166 : 		return false;
+
+  00297	e9 13 fe ff ff	 jmp	 $LN36@Create
+$LN16@Create:
+
+; 1167 : 	}
+; 1168 : 
+; 1169 : 	if (!m_grpDevice.IsFastTNL())
+
+  0029c	e8 00 00 00 00	 call	 ?IsFastTNL@CGraphicBase@@SA_NXZ ; CGraphicBase::IsFastTNL
+  002a1	84 c0		 test	 al, al
+  002a3	75 0a		 jne	 SHORT $LN17@Create
+
+; 1170 : 		CGrannyLODController::SetMinLODMode(true);
+
+  002a5	6a 01		 push	 1
+  002a7	e8 00 00 00 00	 call	 ?SetMinLODMode@CGrannyLODController@@SAX_N@Z ; CGrannyLODController::SetMinLODMode
+  002ac	83 c4 04	 add	 esp, 4
+$LN17@Create:
+
+; 1171 : 
+; 1172 : 	m_pyItem.Create();
+
+  002af	8d 8b 34 3f 02
+	00		 lea	 ecx, DWORD PTR [ebx+147252]
+  002b5	e8 00 00 00 00	 call	 ?Create@CPythonItem@@QAEXXZ ; CPythonItem::Create
+
+; 1173 : 
+; 1174 : 	// Other Modules
+; 1175 : 	DefaultFont_Startup();
+
+  002ba	e8 00 00 00 00	 call	 ?DefaultFont_Startup@@YAXXZ ; DefaultFont_Startup
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  002bf	8b 35 00 00 00
+	00		 mov	 esi, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonIME@@@@0PAVCPythonIME@@A ; CSingleton<CPythonIME>::ms_singleton
+  002c5	85 f6		 test	 esi, esi
+  002c7	75 1a		 jne	 SHORT $LN27@Create
+  002c9	6a 1a		 push	 26			; 0000001aH
+  002cb	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  002d0	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  002d5	e8 00 00 00 00	 call	 __wassert
+  002da	8b 35 00 00 00
+	00		 mov	 esi, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonIME@@@@0PAVCPythonIME@@A ; CSingleton<CPythonIME>::ms_singleton
+  002e0	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN27@Create:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 1177 : 	CPythonIME::Instance().Create(GetWindowHandle());
+
+  002e3	8b cb		 mov	 ecx, ebx
+  002e5	e8 00 00 00 00	 call	 ?GetWindowHandle@CMSWindow@@QAEPAUHWND__@@XZ ; CMSWindow::GetWindowHandle
+  002ea	50		 push	 eax
+  002eb	8b ce		 mov	 ecx, esi
+  002ed	e8 00 00 00 00	 call	 ?Create@CPythonIME@@QAEXPAUHWND__@@@Z ; CPythonIME::Create
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  002f2	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonIME@@@@0PAVCPythonIME@@A ; CSingleton<CPythonIME>::ms_singleton
+  002f8	85 c9		 test	 ecx, ecx
+  002fa	75 1a		 jne	 SHORT $LN30@Create
+  002fc	6a 1a		 push	 26			; 0000001aH
+  002fe	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  00303	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  00308	e8 00 00 00 00	 call	 __wassert
+  0030d	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonIME@@@@0PAVCPythonIME@@A ; CSingleton<CPythonIME>::ms_singleton
+  00313	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN30@Create:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 1178 : 	CPythonIME::Instance().SetText("", 0);
+
+  00316	6a 00		 push	 0
+  00318	68 00 00 00 00	 push	 OFFSET ??_C@_00CNPNBAHC@@
+  0031d	83 c1 04	 add	 ecx, 4
+  00320	e8 00 00 00 00	 call	 ?SetText@CIME@@QAEXPBDH@Z ; CIME::SetText
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  00325	83 3d 00 00 00
+	00 00		 cmp	 DWORD PTR ?ms_singleton@?$CSingleton@VCPythonTextTail@@@@0PAVCPythonTextTail@@A, 0 ; CSingleton<CPythonTextTail>::ms_singleton
+  0032c	75 14		 jne	 SHORT $LN33@Create
+  0032e	6a 1a		 push	 26			; 0000001aH
+  00330	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  00335	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  0033a	e8 00 00 00 00	 call	 __wassert
+  0033f	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN33@Create:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 1179 : 	CPythonTextTail::Instance().Initialize();
+
+  00342	e8 00 00 00 00	 call	 ?Initialize@CPythonTextTail@@QAEXXZ ; CPythonTextTail::Initialize
+
+; 1180 : 
+; 1181 : 	// Light Manager
+; 1182 : 	m_LightManager.Initialize();
+
+  00347	8d 8b 84 00 00
+	00		 lea	 ecx, DWORD PTR [ebx+132]
+  0034d	e8 00 00 00 00	 call	 ?Initialize@CLightManager@@QAEXXZ ; CLightManager::Initialize
+
+; 1183 : 
+; 1184 : 	CGraphicImageInstance::CreateSystem(32);
+
+  00352	6a 20		 push	 32			; 00000020H
+  00354	e8 00 00 00 00	 call	 ?CreateSystem@CGraphicImageInstance@@SAXI@Z ; CGraphicImageInstance::CreateSystem
+
+; 1185 : 
+; 1186 : 	STICKYKEYS sStickKeys;
+; 1187 : 	memset(&sStickKeys, 0, sizeof(sStickKeys));
+; 1188 : 	sStickKeys.cbSize = sizeof(sStickKeys);
+; 1189 : 	SystemParametersInfo( SPI_GETSTICKYKEYS, sizeof(sStickKeys), &sStickKeys, 0 );
+
+  00359	8b 35 00 00 00
+	00		 mov	 esi, DWORD PTR __imp__SystemParametersInfoA@16
+  0035f	8d 45 dc	 lea	 eax, DWORD PTR _sStickKeys$[ebp]
+  00362	83 c4 04	 add	 esp, 4
+  00365	0f 57 c0	 xorps	 xmm0, xmm0
+  00368	66 0f 13 45 dc	 movlpd	 QWORD PTR _sStickKeys$[ebp], xmm0
+  0036d	c7 45 dc 08 00
+	00 00		 mov	 DWORD PTR _sStickKeys$[ebp], 8
+  00374	6a 00		 push	 0
+  00376	50		 push	 eax
+  00377	6a 08		 push	 8
+  00379	6a 3a		 push	 58			; 0000003aH
+  0037b	ff d6		 call	 esi
+
+; 1190 : 	m_dwStickyKeysFlag = sStickKeys.dwFlags;
+
+  0037d	8b 45 e0	 mov	 eax, DWORD PTR _sStickKeys$[ebp+4]
+  00380	89 83 f8 d7 03
+	00		 mov	 DWORD PTR [ebx+251896], eax
+
+; 1191 : 
+; 1192 : 	sStickKeys.dwFlags &= ~(SKF_AVAILABLE|SKF_HOTKEYACTIVE);
+
+  00386	83 e0 f9	 and	 eax, -7			; fffffff9H
+
+; 1193 : 	SystemParametersInfo( SPI_SETSTICKYKEYS, sizeof(sStickKeys), &sStickKeys, 0 );
+
+  00389	6a 00		 push	 0
+  0038b	89 45 e0	 mov	 DWORD PTR _sStickKeys$[ebp+4], eax
+  0038e	8d 45 dc	 lea	 eax, DWORD PTR _sStickKeys$[ebp]
+  00391	50		 push	 eax
+  00392	6a 08		 push	 8
+  00394	6a 3b		 push	 59			; 0000003bH
+  00396	ff d6		 call	 esi
+
+; 1194 : 
+; 1195 : 	// SphereMap
+; 1196 : 	CGrannyMaterial::CreateSphereMap(0, "d:/ymir work/special/spheremap.jpg");
+
+  00398	68 00 00 00 00	 push	 OFFSET ??_C@_0CD@KIIBIHOG@d?3?1ymir?5work?1special?1spheremap?4@
+  0039d	6a 00		 push	 0
+  0039f	e8 00 00 00 00	 call	 ?CreateSphereMap@CGrannyMaterial@@SAXIPBD@Z ; CGrannyMaterial::CreateSphereMap
+
+; 1197 : 	CGrannyMaterial::CreateSphereMap(1, "d:/ymir work/special/spheremap01.jpg");
+
+  003a4	68 00 00 00 00	 push	 OFFSET ??_C@_0CF@CBFEMJII@d?3?1ymir?5work?1special?1spheremap0@
+  003a9	6a 01		 push	 1
+  003ab	e8 00 00 00 00	 call	 ?CreateSphereMap@CGrannyMaterial@@SAXIPBD@Z ; CGrannyMaterial::CreateSphereMap
+
+; 1198 : 	return true;
+; 1199 : }
+
+  003b0	8b 4d fc	 mov	 ecx, DWORD PTR __$ArrayPad$[ebp]
+  003b3	83 c4 10	 add	 esp, 16			; 00000010H
+  003b6	33 cd		 xor	 ecx, ebp
+  003b8	b0 01		 mov	 al, 1
+  003ba	5f		 pop	 edi
+  003bb	5e		 pop	 esi
+  003bc	5b		 pop	 ebx
+  003bd	e8 00 00 00 00	 call	 @__security_check_cookie@4
+  003c2	8b e5		 mov	 esp, ebp
+  003c4	5d		 pop	 ebp
+  003c5	c2 14 00	 ret	 20			; 00000014H
+?Create@CPythonApplication@@QAE_NPAU_object@@PBDHHH@Z ENDP ; CPythonApplication::Create
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+;	COMDAT ?FlashApplication@CPythonApplication@@QAEXXZ
+_TEXT	SEGMENT
+_fi$ = -20						; size = 20
+?FlashApplication@CPythonApplication@@QAEXXZ PROC	; CPythonApplication::FlashApplication, COMDAT
+; _this$ = ecx
+
+; 1304 : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 14	 sub	 esp, 20			; 00000014H
+
+; 1305 : 	HWND hWnd = GetWindowHandle();
+
+  00006	e8 00 00 00 00	 call	 ?GetWindowHandle@CMSWindow@@QAEPAUHWND__@@XZ ; CMSWindow::GetWindowHandle
+
+; 1306 : 	FLASHWINFO fi;
+; 1307 : 	fi.cbSize = sizeof(FLASHWINFO);
+; 1308 : 	fi.hwnd = hWnd;
+
+  0000b	89 45 f0	 mov	 DWORD PTR _fi$[ebp+4], eax
+
+; 1309 : 	fi.dwFlags = FLASHW_ALL | FLASHW_TIMERNOFG;
+; 1310 : 	fi.uCount = 0;
+; 1311 : 	fi.dwTimeout = 0;
+; 1312 : 	FlashWindowEx(&fi);
+
+  0000e	8d 45 ec	 lea	 eax, DWORD PTR _fi$[ebp]
+  00011	50		 push	 eax
+  00012	c7 45 ec 14 00
+	00 00		 mov	 DWORD PTR _fi$[ebp], 20	; 00000014H
+  00019	c7 45 f4 0f 00
+	00 00		 mov	 DWORD PTR _fi$[ebp+8], 15 ; 0000000fH
+  00020	c7 45 f8 00 00
+	00 00		 mov	 DWORD PTR _fi$[ebp+12], 0
+  00027	c7 45 fc 00 00
+	00 00		 mov	 DWORD PTR _fi$[ebp+16], 0
+  0002e	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__FlashWindowEx@4
+
+; 1313 : }
+
+  00034	8b e5		 mov	 esp, ebp
+  00036	5d		 pop	 ebp
+  00037	c3		 ret	 0
+?FlashApplication@CPythonApplication@@QAEXXZ ENDP	; CPythonApplication::FlashApplication
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+;	COMDAT ?MultiFarmBlockIcon@CPythonApplication@@QAEXE@Z
+_TEXT	SEGMENT
+_bStatus$ = 8						; size = 1
+?MultiFarmBlockIcon@CPythonApplication@@QAEXE@Z PROC	; CPythonApplication::MultiFarmBlockIcon, COMDAT
+; _this$ = ecx
+
+; 1318 : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+
+; 1319 : 	HICON exeIcon = bStatus ? LoadIcon(ms_hInstance, MAKEINTRESOURCE(IDI_METIN2)) : LoadIcon(ms_hInstance, MAKEINTRESOURCE(BLOCK_METIN2));
+
+  00003	80 7d 08 00	 cmp	 BYTE PTR _bStatus$[ebp], 0
+  00007	56		 push	 esi
+  00008	8b f1		 mov	 esi, ecx
+  0000a	74 04		 je	 SHORT $LN3@MultiFarmB
+  0000c	6a 64		 push	 100			; 00000064H
+  0000e	eb 05		 jmp	 SHORT $LN6@MultiFarmB
+$LN3@MultiFarmB:
+  00010	68 c7 00 00 00	 push	 199			; 000000c7H
+$LN6@MultiFarmB:
+
+; 1320 : 	SendMessage(GetWindowHandle(), WM_SETICON, ICON_BIG, (LPARAM)exeIcon);
+
+  00015	ff 35 00 00 00
+	00		 push	 DWORD PTR ?ms_hInstance@CMSWindow@@1PAUHINSTANCE__@@A ; CMSWindow::ms_hInstance
+  0001b	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__LoadIconA@8
+  00021	50		 push	 eax
+  00022	6a 01		 push	 1
+  00024	68 80 00 00 00	 push	 128			; 00000080H
+  00029	8b ce		 mov	 ecx, esi
+  0002b	e8 00 00 00 00	 call	 ?GetWindowHandle@CMSWindow@@QAEPAUHWND__@@XZ ; CMSWindow::GetWindowHandle
+  00030	50		 push	 eax
+  00031	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__SendMessageA@16
+  00037	5e		 pop	 esi
+
+; 1321 : }
+
+  00038	5d		 pop	 ebp
+  00039	c2 04 00	 ret	 4
+?MultiFarmBlockIcon@CPythonApplication@@QAEXE@Z ENDP	; CPythonApplication::MultiFarmBlockIcon
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+;	COMDAT ?Destroy@CPythonApplication@@QAEXXZ
+_TEXT	SEGMENT
+_sStickKeys$ = -8					; size = 8
+?Destroy@CPythonApplication@@QAEXXZ PROC		; CPythonApplication::Destroy, COMDAT
+; _this$ = ecx
+
+; 1325 : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 0c	 sub	 esp, 12			; 0000000cH
+  00006	56		 push	 esi
+  00007	8b f1		 mov	 esi, ecx
+
+; 1326 : 	WebBrowser_Destroy();
+
+  00009	e8 00 00 00 00	 call	 _WebBrowser_Destroy
+
+; 1327 : 
+; 1328 : 	CGrannyMaterial::DestroySphereMap();
+
+  0000e	e8 00 00 00 00	 call	 ?DestroySphereMap@CGrannyMaterial@@SAXXZ ; CGrannyMaterial::DestroySphereMap
+
+; 1329 : 
+; 1330 : 	m_kWndMgr.Destroy();
+
+  00013	8d 8e f8 01 00
+	00		 lea	 ecx, DWORD PTR [esi+504]
+  00019	e8 00 00 00 00	 call	 ?Destroy@CWindowManager@UI@@QAEXXZ ; UI::CWindowManager::Destroy
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  0001e	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonSystem@@@@0PAVCPythonSystem@@A ; CSingleton<CPythonSystem>::ms_singleton
+  00024	85 c9		 test	 ecx, ecx
+  00026	75 1a		 jne	 SHORT $LN5@Destroy
+  00028	6a 1a		 push	 26			; 0000001aH
+  0002a	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  0002f	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  00034	e8 00 00 00 00	 call	 __wassert
+  00039	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonSystem@@@@0PAVCPythonSystem@@A ; CSingleton<CPythonSystem>::ms_singleton
+  0003f	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN5@Destroy:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.cpp
+
+; 1332 : 	CPythonSystem::Instance().SaveConfig();
+
+  00042	e8 00 00 00 00	 call	 ?SaveConfig@CPythonSystem@@QAE_NXZ ; CPythonSystem::SaveConfig
+
+; 1333 : 
+; 1334 : #ifdef ENABLE_RENDER_TARGET
+; 1335 : 	m_kRenderTargetManager.Destroy();
+
+  00047	8d 8e 50 d3 03
+	00		 lea	 ecx, DWORD PTR [esi+250704]
+  0004d	e8 00 00 00 00	 call	 ?Destroy@CRenderTargetManager@@QAEXXZ ; CRenderTargetManager::Destroy
+
+; 1336 : #endif
+; 1337 : 
+; 1338 : 	DestroyCollisionInstanceSystem();
+
+  00052	e8 00 00 00 00	 call	 ?DestroyCollisionInstanceSystem@@YAXXZ ; DestroyCollisionInstanceSystem
+
+; 1339 : 
+; 1340 : 	m_pySystem.SaveInterfaceStatus();
+
+  00057	8d 8e d0 aa 03
+	00		 lea	 ecx, DWORD PTR [esi+240336]
+  0005d	e8 00 00 00 00	 call	 ?SaveInterfaceStatus@CPythonSystem@@QAEXXZ ; CPythonSystem::SaveInterfaceStatus
+
+; 1341 : 
+; 1342 : 	m_pyEventManager.Destroy();
+
+  00062	8d 8e 38 8d 03
+	00		 lea	 ecx, DWORD PTR [esi+232760]
+  00068	e8 00 00 00 00	 call	 ?Destroy@CPythonEventManager@@QAEXXZ ; CPythonEventManager::Destroy
+
+; 1343 : 	m_FlyingManager.Destroy();
+
+  0006d	8d 8e 64 01 00
+	00		 lea	 ecx, DWORD PTR [esi+356]
+  00073	e8 00 00 00 00	 call	 ?Destroy@CFlyingManager@@QAEXXZ ; CFlyingManager::Destroy
+
+; 1344 : 
+; 1345 : 	m_pyMiniMap.Destroy();
+
+  00078	8d 8e 2c 7f 03
+	00		 lea	 ecx, DWORD PTR [esi+229164]
+  0007e	e8 00 00 00 00	 call	 ?Destroy@CPythonMiniMap@@QAEXXZ ; CPythonMiniMap::Destroy
+
+; 1346 : 
+; 1347 : 	m_pyTextTail.Destroy();
+
+  00083	8d 8e c0 7e 03
+	00		 lea	 ecx, DWORD PTR [esi+229056]
+  00089	e8 00 00 00 00	 call	 ?Destroy@CPythonTextTail@@QAEXXZ ; CPythonTextTail::Destroy
+
+; 1348 : 	m_pyChat.Destroy();
+
+  0008e	8d 8e 90 7d 03
+	00		 lea	 ecx, DWORD PTR [esi+228752]
+  00094	e8 00 00 00 00	 call	 ?Destroy@CPythonChat@@QAEXXZ ; CPythonChat::Destroy
+
+; 1349 : 	m_kChrMgr.Destroy();
+
+  00099	8b 86 c8 02 00
+	00		 mov	 eax, DWORD PTR [esi+712]
+  0009f	8d 8e c8 02 00
+	00		 lea	 ecx, DWORD PTR [esi+712]
+  000a5	ff 50 04	 call	 DWORD PTR [eax+4]
+
+; 1350 : 	m_RaceManager.Destroy();
+
+  000a8	8d 8e 88 01 00
+	00		 lea	 ecx, DWORD PTR [esi+392]
+  000ae	e8 00 00 00 00	 call	 ?Destroy@CRaceManager@@QAEXXZ ; CRaceManager::Destroy
+
+; 1351 : 
+; 1352 : 	m_pyItem.Destroy();
+
+  000b3	8d 8e 34 3f 02
+	00		 lea	 ecx, DWORD PTR [esi+147252]
+  000b9	e8 00 00 00 00	 call	 ?Destroy@CPythonItem@@QAEXXZ ; CPythonItem::Destroy
+
+; 1353 : 	m_kItemMgr.Destroy();
+
+  000be	8d 8e dc 01 00
+	00		 lea	 ecx, DWORD PTR [esi+476]
+  000c4	e8 00 00 00 00	 call	 ?Destroy@CItemManager@@QAEXXZ ; CItemManager::Destroy
+
+; 1354 : 
+; 1355 : 	m_pyBackground.Destroy();
+
+  000c9	8d 8e b8 8d 03
+	00		 lea	 ecx, DWORD PTR [esi+232888]
+  000cf	e8 00 00 00 00	 call	 ?Destroy@CPythonBackground@@QAEXXZ ; CPythonBackground::Destroy
+
+; 1356 : 
+; 1357 : 	m_kEftMgr.Destroy();
+
+  000d4	8d 8e 9c 02 00
+	00		 lea	 ecx, DWORD PTR [esi+668]
+  000da	e8 00 00 00 00	 call	 ?Destroy@CEffectManager@@QAEXXZ ; CEffectManager::Destroy
+
+; 1358 : 	m_LightManager.Destroy();
+
+  000df	8d 8e 84 00 00
+	00		 lea	 ecx, DWORD PTR [esi+132]
+  000e5	e8 00 00 00 00	 call	 ?Destroy@CLightManager@@QAEXXZ ; CLightManager::Destroy
+
+; 1359 : 
+; 1360 : 	DefaultFont_Cleanup();
+
+  000ea	e8 00 00 00 00	 call	 ?DefaultFont_Cleanup@@YAXXZ ; DefaultFont_Cleanup
+
+; 1361 : 
+; 1362 : 	GrannyDestroySharedDeformBuffer();
+
+  000ef	e8 00 00 00 00	 call	 ?GrannyDestroySharedDeformBuffer@@YAXXZ ; GrannyDestroySharedDeformBuffer
+
+; 1363 : 
+; 1364 : 	m_pyGraphic.Destroy();
+
+  000f4	8d 8e 84 07 00
+	00		 lea	 ecx, DWORD PTR [esi+1924]
+  000fa	e8 00 00 00 00	 call	 ?Destroy@CPythonGraphic@@QAEXXZ ; CPythonGraphic::Destroy
+
+; 1365 : 
+; 1366 : #ifdef ENABLE_DISCORD_RPC
+; 1367 : 	m_pyNetworkStream.Discord_Close();
+
+  000ff	e8 00 00 00 00	 call	 ?Discord_Close@CPythonNetworkStream@@QAEXXZ ; CPythonNetworkStream::Discord_Close
+
+; 1368 : #endif
+; 1369 : 
+; 1370 : 	m_pyRes.Destroy();
+
+  00104	8d 8e 14 a4 03
+	00		 lea	 ecx, DWORD PTR [esi+238612]
+  0010a	e8 00 00 00 00	 call	 ?Destroy@CPythonResource@@QAEXXZ ; CPythonResource::Destroy
+
+; 1371 : 
+; 1372 : 	m_kGuildMarkDownloader.Disconnect();
+
+  0010f	8d 8e 88 a5 03
+	00		 lea	 ecx, DWORD PTR [esi+238984]
+  00115	e8 00 00 00 00	 call	 ?Disconnect@CNetworkStream@@QAEXXZ ; CNetworkStream::Disconnect
+
+; 1373 : 
+; 1374 : 	CGrannyModelInstance::DestroySystem();
+
+  0011a	e8 00 00 00 00	 call	 ?DestroySystem@CGrannyModelInstance@@SAXXZ ; CGrannyModelInstance::DestroySystem
+
+; 1375 : 	CGraphicImageInstance::DestroySystem();
+
+  0011f	e8 00 00 00 00	 call	 ?DestroySystem@CGraphicImageInstance@@SAXXZ ; CGraphicImageInstance::DestroySystem
+
+; 1376 : 
+; 1377 : 	m_SoundManager.Destroy();
+
+  00124	8d 8e f0 00 00
+	00		 lea	 ecx, DWORD PTR [esi+240]
+  0012a	e8 00 00 00 00	 call	 ?Destroy@CSoundManager@@QAEXXZ ; CSoundManager::Destroy
+
+; 1378 : 	m_grpDevice.Destroy();
+
+  0012f	8d 8e b4 aa 03
+	00		 lea	 ecx, DWORD PTR [esi+240308]
+  00135	e8 00 00 00 00	 call	 ?Destroy@CGraphicDevice@@QAEXXZ ; CGraphicDevice::Destroy
+
+; 1379 : 
+; 1380 : 	CAttributeInstance::DestroySystem();
+
+  0013a	e8 00 00 00 00	 call	 ?DestroySystem@CAttributeInstance@@SAXXZ ; CAttributeInstance::DestroySystem
+
+; 1381 : 	CTextFileLoader::DestroySystem();
+
+  0013f	e8 00 00 00 00	 call	 ?DestroySystem@CTextFileLoader@@SAXXZ ; CTextFileLoader::DestroySystem
+
+; 1382 : 	DestroyCursors();
+
+  00144	8b ce		 mov	 ecx, esi
+  00146	e8 00 00 00 00	 call	 ?DestroyCursors@CPythonApplication@@QAEXXZ ; CPythonApplication::DestroyCursors
+
+; 1383 : 
+; 1384 : 	CMSApplication::Destroy();
+
+  0014b	8b ce		 mov	 ecx, esi
+  0014d	e8 00 00 00 00	 call	 ?Destroy@CMSWindow@@QAEXXZ ; CMSWindow::Destroy
+
+; 1385 : 
+; 1386 : 	STICKYKEYS sStickKeys;
+; 1387 : 	memset(&sStickKeys, 0, sizeof(sStickKeys));
+; 1388 : 	sStickKeys.cbSize = sizeof(sStickKeys);
+; 1389 : 	sStickKeys.dwFlags = m_dwStickyKeysFlag;
+
+  00152	8b 86 f8 d7 03
+	00		 mov	 eax, DWORD PTR [esi+251896]
+
+; 1390 : 	SystemParametersInfo( SPI_SETSTICKYKEYS, sizeof(sStickKeys), &sStickKeys, 0 );
+
+  00158	6a 00		 push	 0
+  0015a	89 45 fc	 mov	 DWORD PTR _sStickKeys$[ebp+4], eax
+  0015d	8d 45 f8	 lea	 eax, DWORD PTR _sStickKeys$[ebp]
+  00160	50		 push	 eax
+  00161	6a 08		 push	 8
+  00163	6a 3b		 push	 59			; 0000003bH
+  00165	c7 45 f8 08 00
+	00 00		 mov	 DWORD PTR _sStickKeys$[ebp], 8
+  0016c	ff 15 00 00 00
+	00		 call	 DWORD PTR __imp__SystemParametersInfoA@16
+
+; 1391 : }
+
+  00172	5e		 pop	 esi
+  00173	8b e5		 mov	 esp, ebp
+  00175	5d		 pop	 ebp
+  00176	c3		 ret	 0
+?Destroy@CPythonApplication@@QAEXXZ ENDP		; CPythonApplication::Destroy
+_TEXT	ENDS
 END

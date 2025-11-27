@@ -8,34 +8,34 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_05DHEMANOL@Login@				; `string'
-PUBLIC	??_C@_0N@GCHAFKJJ@OnLoginStart@			; `string'
 PUBLIC	??_C@_0BM@GIOJNFMI@?$CD?$CD?5Network?5?9?5Login?5Phase?5?$CD?$CD@ ; `string'
-PUBLIC	??_C@_0BA@HGDBLFFH@SendLogin?5Error@		; `string'
+PUBLIC	??_C@_05DHEMANOL@Login@				; `string'
 PUBLIC	??_C@_0BA@HOEIMIKO@SendDirectEnter@		; `string'
+PUBLIC	??_C@_0N@GCHAFKJJ@OnLoginStart@			; `string'
+PUBLIC	??_C@_0BA@HGDBLFFH@SendLogin?5Error@		; `string'
 EXTRN	?SetSecurityMode@CNetworkStream@@QAEX_NPBD1@Z:PROC ; CNetworkStream::SetSecurityMode
 EXTRN	__Thrd_join:PROC
 EXTRN	__Thrd_id:PROC
-;	COMDAT ??_C@_0BA@HOEIMIKO@SendDirectEnter@
-CONST	SEGMENT
-??_C@_0BA@HOEIMIKO@SendDirectEnter@ DB 'SendDirectEnter', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BA@HGDBLFFH@SendLogin?5Error@
 CONST	SEGMENT
 ??_C@_0BA@HGDBLFFH@SendLogin?5Error@ DB 'SendLogin Error', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BM@GIOJNFMI@?$CD?$CD?5Network?5?9?5Login?5Phase?5?$CD?$CD@
-CONST	SEGMENT
-??_C@_0BM@GIOJNFMI@?$CD?$CD?5Network?5?9?5Login?5Phase?5?$CD?$CD@ DB '## '
-	DB	'Network - Login Phase ##', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@GCHAFKJJ@OnLoginStart@
 CONST	SEGMENT
 ??_C@_0N@GCHAFKJJ@OnLoginStart@ DB 'OnLoginStart', 00H	; `string'
 CONST	ENDS
+;	COMDAT ??_C@_0BA@HOEIMIKO@SendDirectEnter@
+CONST	SEGMENT
+??_C@_0BA@HOEIMIKO@SendDirectEnter@ DB 'SendDirectEnter', 00H ; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_05DHEMANOL@Login@
 CONST	SEGMENT
 ??_C@_05DHEMANOL@Login@ DB 'Login', 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BM@GIOJNFMI@?$CD?$CD?5Network?5?9?5Login?5Phase?5?$CD?$CD@
+CONST	SEGMENT
+??_C@_0BM@GIOJNFMI@?$CD?$CD?5Network?5?9?5Login?5Phase?5?$CD?$CD@ DB '## '
+	DB	'Network - Login Phase ##', 00H		; `string'
 PUBLIC	?__RecvLoginKeyPacket@CPythonNetworkStream@@IAE_NXZ ; CPythonNetworkStream::__RecvLoginKeyPacket
 PUBLIC	?SendLoginPacketNew@CPythonNetworkStream@@QAE_NPBD0@Z ; CPythonNetworkStream::SendLoginPacketNew
 PUBLIC	?__RecvLoginFailurePacket@CPythonNetworkStream@@IAE_NXZ ; CPythonNetworkStream::__RecvLoginFailurePacket

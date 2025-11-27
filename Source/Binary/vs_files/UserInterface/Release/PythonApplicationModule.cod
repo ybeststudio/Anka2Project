@@ -2959,4 +2959,37 @@ __unwindtable$?appOpenTextFile@@YAPAU_object@@PAU1@0@Z DD 0ffffffffH
 ?emotionIcons$initializer$@@3P6AXXZA DD FLAT:??__EemotionIcons@@YAXXZ ; emotionIcons$initializer$
 ?skillIndexes$initializer$@@3P6AXXZA DD FLAT:??__EskillIndexes@@YAXXZ ; skillIndexes$initializer$
 ?guildSkills$initializer$@@3P6AXXZA DD FLAT:??__EguildSkills@@YAXXZ ; guildSkills$initializer$
+; Function compile flags: /Ogtp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplicationModule.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplicationModule.cpp
+;	COMDAT ?appAbort@@YAPAU_object@@PAU1@0@Z
+_TEXT	SEGMENT
+_poSelf$ = 8						; size = 4
+_poArgs$ = 12						; size = 4
+?appAbort@@YAPAU_object@@PAU1@0@Z PROC			; appAbort, COMDAT
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplication.h
+
+; 213  : 			assert(ms_pInstance != nullptr);
+
+  00000	83 3d 00 00 00
+	00 00		 cmp	 DWORD PTR ?ms_pInstance@CPythonApplication@@1PAV1@A, 0 ; CPythonApplication::ms_pInstance
+  00007	75 17		 jne	 SHORT $LN5@appAbort
+  00009	68 d5 00 00 00	 push	 213			; 000000d5H
+  0000e	68 00 00 00 00	 push	 OFFSET ??_C@_1KI@NDOHEKDB@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  00013	68 00 00 00 00	 push	 OFFSET ??_C@_1DA@IANAENLC@?$AAm?$AAs?$AA_?$AAp?$AAI?$AAn?$AAs?$AAt?$AAa?$AAn?$AAc?$AAe?$AA?5?$AA?$CB?$AA?$DN@
+  00018	e8 00 00 00 00	 call	 __wassert
+  0001d	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN5@appAbort:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonApplicationModule.cpp
+
+; 403  : 	CPythonApplication::Instance().Abort();
+
+  00020	e8 00 00 00 00	 call	 ?Abort@CPythonApplication@@QAEXXZ ; CPythonApplication::Abort
+
+; 404  : 	return Py_BuildNone();
+
+  00025	e9 00 00 00 00	 jmp	 ?Py_BuildNone@@YAPAU_object@@XZ ; Py_BuildNone
+?appAbort@@YAPAU_object@@PAU1@0@Z ENDP			; appAbort
+_TEXT	ENDS
 END

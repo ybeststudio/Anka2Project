@@ -400,31 +400,31 @@ PUBLIC	??_C@_0BC@JKCMILIM@PET_NAME_MAX_SIZE@		; `string'
 PUBLIC	??_C@_0BC@ENMHDJMN@PET_NAME_MIN_SIZE@		; `string'
 PUBLIC	??_C@_0BO@FKOEFAAC@E_SEAL_DATE_DEFAULT_TIMESTAMP@ ; `string'
 PUBLIC	??_C@_0BH@NDKLMGIH@GUILD_SLOT_START_INDEX@	; `string'
+EXTRN	_tolower:PROC
+EXTRN	?GetRefinedVnum@CItemData@@QBEGXZ:PROC		; CItemData::GetRefinedVnum
 EXTRN	__imp__PyInt_FromLong:PROC
 EXTRN	?GetTable@CItemData@@QBEPBUSItemTable@1@XZ:PROC	; CItemData::GetTable
 EXTRN	?GetRefinedSet@CItemData@@QBEGXZ:PROC		; CItemData::GetRefinedSet
 EXTRN	?PyTuple_GetUnsignedLong@@YA_NPAU_object@@HPAK@Z:PROC ; PyTuple_GetUnsignedLong
-EXTRN	_tolower:PROC
-EXTRN	?GetRefinedVnum@CItemData@@QBEGXZ:PROC		; CItemData::GetRefinedVnum
-EXTRN	?GetUseTypeString@CItemData@@QBEPBDXZ:PROC	; CItemData::GetUseTypeString
-EXTRN	?IsEquipment@CItemData@@QBEHXZ:PROC		; CItemData::IsEquipment
-EXTRN	?New@CGraphicImageInstance@@SAPAV1@XZ:PROC	; CGraphicImageInstance::New
-EXTRN	?GetSocket@CItemData@@QBEJE@Z:PROC		; CItemData::GetSocket
 EXTRN	?Delete@CGraphicImageInstance@@SAXPAV1@@Z:PROC	; CGraphicImageInstance::Delete
 EXTRN	?SetImagePointer@CGraphicImageInstance@@QAEXPAVCGraphicImage@@@Z:PROC ; CGraphicImageInstance::SetImagePointer
-EXTRN	?GetLimit@CItemData@@QBEHEPAUSItemLimit@1@@Z:PROC ; CItemData::GetLimit
+EXTRN	?GetUseTypeString@CItemData@@QBEPBDXZ:PROC	; CItemData::GetUseTypeString
+EXTRN	?IsEquipment@CItemData@@QBEHXZ:PROC		; CItemData::IsEquipment
 EXTRN	?GetApply@CItemData@@QBEHEPAUSItemApply@1@@Z:PROC ; CItemData::GetApply
-EXTRN	?IsAntiFlag@CItemData@@QBEHK@Z:PROC		; CItemData::IsAntiFlag
-EXTRN	?GetISellItemPrice@CItemData@@QBEKXZ:PROC	; CItemData::GetISellItemPrice
+EXTRN	?New@CGraphicImageInstance@@SAPAV1@XZ:PROC	; CGraphicImageInstance::New
+EXTRN	?GetSocket@CItemData@@QBEJE@Z:PROC		; CItemData::GetSocket
 EXTRN	?IsWearableFlag@CItemData@@QBEHK@Z:PROC		; CItemData::IsWearableFlag
 EXTRN	?IsFlag@CItemData@@QBEHK@Z:PROC			; CItemData::IsFlag
-EXTRN	?GetIconImage@CItemData@@QAEPAVCGraphicSubImage@@XZ:PROC ; CItemData::GetIconImage
-EXTRN	?GetSummary@CItemData@@QBEPBDXZ:PROC		; CItemData::GetSummary
+EXTRN	?GetLimit@CItemData@@QBEHEPAUSItemLimit@1@@Z:PROC ; CItemData::GetLimit
 EXTRN	?GetIBuyItemPrice@CItemData@@QBEKXZ:PROC	; CItemData::GetIBuyItemPrice
 EXTRN	?GetSize@CItemData@@QBEEXZ:PROC			; CItemData::GetSize
-EXTRN	?SelectItemData@CItemManager@@QAEHK@Z:PROC	; CItemManager::SelectItemData
+EXTRN	?IsAntiFlag@CItemData@@QBEHK@Z:PROC		; CItemData::IsAntiFlag
+EXTRN	?GetISellItemPrice@CItemData@@QBEKXZ:PROC	; CItemData::GetISellItemPrice
 EXTRN	?GetDescription@CItemData@@QBEPBDXZ:PROC	; CItemData::GetDescription
 EXTRN	?GetSelectedItemDataPointer@CItemManager@@QAEPAVCItemData@@XZ:PROC ; CItemManager::GetSelectedItemDataPointer
+EXTRN	?GetIconImage@CItemData@@QAEPAVCGraphicSubImage@@XZ:PROC ; CItemData::GetIconImage
+EXTRN	?GetSummary@CItemData@@QBEPBDXZ:PROC		; CItemData::GetSummary
+EXTRN	?SelectItemData@CItemManager@@QAEHK@Z:PROC	; CItemManager::SelectItemData
 ;	COMDAT ??_C@_0BH@NDKLMGIH@GUILD_SLOT_START_INDEX@
 CONST	SEGMENT
 ??_C@_0BH@NDKLMGIH@GUILD_SLOT_START_INDEX@ DB 'GUILD_SLOT_START_INDEX', 00H ; `string'

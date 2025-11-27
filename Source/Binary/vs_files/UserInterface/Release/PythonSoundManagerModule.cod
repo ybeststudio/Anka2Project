@@ -8,32 +8,32 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0M@FNHMFBEI@PlaySound3D@			; `string'
 PUBLIC	??_C@_09PEMGNEEO@PlaySound@			; `string'
-PUBLIC	??_C@_0M@BLCFFNFD@FadeInMusic@			; `string'
 PUBLIC	??_C@_09IICPOHBI@PlayMusic@			; `string'
-PUBLIC	??_C@_0BA@NBPABKIH@FadeOutAllMusic@		; `string'
+PUBLIC	??_C@_0M@FNHMFBEI@PlaySound3D@			; `string'
 PUBLIC	??_C@_0N@IGMDOLEM@FadeOutMusic@			; `string'
-PUBLIC	??_C@_0N@NKBILJOM@StopAllSound@			; `string'
+PUBLIC	??_C@_0M@BLCFFNFD@FadeInMusic@			; `string'
 PUBLIC	??_C@_0BC@MLGHBKAP@FadeLimitOutMusic@		; `string'
-PUBLIC	??_C@_0P@LGJJAPOH@SetMusicVolume@		; `string'
+PUBLIC	??_C@_0BA@NBPABKIH@FadeOutAllMusic@		; `string'
 PUBLIC	??_C@_0BA@NHPCCPF@SetMusicVolumef@		; `string'
-PUBLIC	??_C@_0P@HMFDLJNN@SetSoundVolume@		; `string'
+PUBLIC	??_C@_0N@NKBILJOM@StopAllSound@			; `string'
 PUBLIC	??_C@_0BA@MLLJDBPB@SetSoundVolumef@		; `string'
-PUBLIC	??_C@_0BG@NFCFIEJP@SetAmbienceSoundScale@	; `string'
+PUBLIC	??_C@_0P@LGJJAPOH@SetMusicVolume@		; `string'
 PUBLIC	??_C@_0O@OPHEJIB@SetSoundScale@			; `string'
+PUBLIC	??_C@_0P@HMFDLJNN@SetSoundVolume@		; `string'
 PUBLIC	??_C@_03OEOJGHBI@snd@				; `string'
-EXTRN	?SetSoundVolumeRatio@CSoundManager@@QAEXM@Z:PROC ; CSoundManager::SetSoundVolumeRatio
-EXTRN	?SetSoundVolumeGrade@CSoundManager@@QAEXH@Z:PROC ; CSoundManager::SetSoundVolumeGrade
+PUBLIC	??_C@_0BG@NFCFIEJP@SetAmbienceSoundScale@	; `string'
 EXTRN	?SetSoundScale@CSoundManager@@QAEXM@Z:PROC	; CSoundManager::SetSoundScale
 EXTRN	?SetAmbienceSoundScale@CSoundManager@@QAEXM@Z:PROC ; CSoundManager::SetAmbienceSoundScale
-EXTRN	?FadeOutAllMusic@CSoundManager@@QAEXXZ:PROC	; CSoundManager::FadeOutAllMusic
-EXTRN	?FadeLimitOutMusic@CSoundManager@@QAEXPBDMM@Z:PROC ; CSoundManager::FadeLimitOutMusic
 EXTRN	?StopAllSound3D@CSoundManager@@QAEXXZ:PROC	; CSoundManager::StopAllSound3D
 EXTRN	?SetMusicVolume@CSoundManager@@QAEXM@Z:PROC	; CSoundManager::SetMusicVolume
-EXTRN	?PlayMusic@CSoundManager@@QAEXPBD@Z:PROC	; CSoundManager::PlayMusic
+EXTRN	?SetSoundVolumeRatio@CSoundManager@@QAEXM@Z:PROC ; CSoundManager::SetSoundVolumeRatio
+EXTRN	?SetSoundVolumeGrade@CSoundManager@@QAEXH@Z:PROC ; CSoundManager::SetSoundVolumeGrade
 EXTRN	?FadeInMusic@CSoundManager@@QAEXPBDM@Z:PROC	; CSoundManager::FadeInMusic
 EXTRN	?FadeOutMusic@CSoundManager@@QAEXPBDM@Z:PROC	; CSoundManager::FadeOutMusic
+EXTRN	?FadeOutAllMusic@CSoundManager@@QAEXXZ:PROC	; CSoundManager::FadeOutAllMusic
+EXTRN	?FadeLimitOutMusic@CSoundManager@@QAEXPBDMM@Z:PROC ; CSoundManager::FadeLimitOutMusic
+EXTRN	?PlayMusic@CSoundManager@@QAEXPBD@Z:PROC	; CSoundManager::PlayMusic
 ;	COMDAT ?s_methods@?1??initsnd@@YAXXZ@4PAUPyMethodDef@@A
 _DATA	SEGMENT
 ?s_methods@?1??initsnd@@YAXXZ@4PAUPyMethodDef@@A DD FLAT:??_C@_09PEMGNEEO@PlaySound@ ; `initsnd'::`2'::s_methods
@@ -96,65 +96,65 @@ _DATA	SEGMENT
 	DD	00H
 	ORG $+8
 _DATA	ENDS
-;	COMDAT ??_C@_03OEOJGHBI@snd@
-CONST	SEGMENT
-??_C@_03OEOJGHBI@snd@ DB 'snd', 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0O@OPHEJIB@SetSoundScale@
-CONST	SEGMENT
-??_C@_0O@OPHEJIB@SetSoundScale@ DB 'SetSoundScale', 00H	; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BG@NFCFIEJP@SetAmbienceSoundScale@
 CONST	SEGMENT
 ??_C@_0BG@NFCFIEJP@SetAmbienceSoundScale@ DB 'SetAmbienceSoundScale', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@MLLJDBPB@SetSoundVolumef@
+;	COMDAT ??_C@_03OEOJGHBI@snd@
 CONST	SEGMENT
-??_C@_0BA@MLLJDBPB@SetSoundVolumef@ DB 'SetSoundVolumef', 00H ; `string'
+??_C@_03OEOJGHBI@snd@ DB 'snd', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@HMFDLJNN@SetSoundVolume@
 CONST	SEGMENT
 ??_C@_0P@HMFDLJNN@SetSoundVolume@ DB 'SetSoundVolume', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@NHPCCPF@SetMusicVolumef@
+;	COMDAT ??_C@_0O@OPHEJIB@SetSoundScale@
 CONST	SEGMENT
-??_C@_0BA@NHPCCPF@SetMusicVolumef@ DB 'SetMusicVolumef', 00H ; `string'
+??_C@_0O@OPHEJIB@SetSoundScale@ DB 'SetSoundScale', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@LGJJAPOH@SetMusicVolume@
 CONST	SEGMENT
 ??_C@_0P@LGJJAPOH@SetMusicVolume@ DB 'SetMusicVolume', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@MLGHBKAP@FadeLimitOutMusic@
+;	COMDAT ??_C@_0BA@MLLJDBPB@SetSoundVolumef@
 CONST	SEGMENT
-??_C@_0BC@MLGHBKAP@FadeLimitOutMusic@ DB 'FadeLimitOutMusic', 00H ; `string'
+??_C@_0BA@MLLJDBPB@SetSoundVolumef@ DB 'SetSoundVolumef', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@NKBILJOM@StopAllSound@
 CONST	SEGMENT
 ??_C@_0N@NKBILJOM@StopAllSound@ DB 'StopAllSound', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@IGMDOLEM@FadeOutMusic@
+;	COMDAT ??_C@_0BA@NHPCCPF@SetMusicVolumef@
 CONST	SEGMENT
-??_C@_0N@IGMDOLEM@FadeOutMusic@ DB 'FadeOutMusic', 00H	; `string'
+??_C@_0BA@NHPCCPF@SetMusicVolumef@ DB 'SetMusicVolumef', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@NBPABKIH@FadeOutAllMusic@
 CONST	SEGMENT
 ??_C@_0BA@NBPABKIH@FadeOutAllMusic@ DB 'FadeOutAllMusic', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09IICPOHBI@PlayMusic@
+;	COMDAT ??_C@_0BC@MLGHBKAP@FadeLimitOutMusic@
 CONST	SEGMENT
-??_C@_09IICPOHBI@PlayMusic@ DB 'PlayMusic', 00H		; `string'
+??_C@_0BC@MLGHBKAP@FadeLimitOutMusic@ DB 'FadeLimitOutMusic', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@BLCFFNFD@FadeInMusic@
 CONST	SEGMENT
 ??_C@_0M@BLCFFNFD@FadeInMusic@ DB 'FadeInMusic', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09PEMGNEEO@PlaySound@
+;	COMDAT ??_C@_0N@IGMDOLEM@FadeOutMusic@
 CONST	SEGMENT
-??_C@_09PEMGNEEO@PlaySound@ DB 'PlaySound', 00H		; `string'
+??_C@_0N@IGMDOLEM@FadeOutMusic@ DB 'FadeOutMusic', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@FNHMFBEI@PlaySound3D@
 CONST	SEGMENT
 ??_C@_0M@FNHMFBEI@PlaySound3D@ DB 'PlaySound3D', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_09IICPOHBI@PlayMusic@
+CONST	SEGMENT
+??_C@_09IICPOHBI@PlayMusic@ DB 'PlayMusic', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_09PEMGNEEO@PlaySound@
+CONST	SEGMENT
+??_C@_09PEMGNEEO@PlaySound@ DB 'PlaySound', 00H		; `string'
 PUBLIC	?initsnd@@YAXXZ					; initsnd
 PUBLIC	?sndSetAmbienceSoundScale@@YAPAU_object@@PAU1@0@Z ; sndSetAmbienceSoundScale
 PUBLIC	?sndSetSoundScale@@YAPAU_object@@PAU1@0@Z	; sndSetSoundScale

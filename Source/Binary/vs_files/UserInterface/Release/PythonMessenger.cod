@@ -8,41 +8,36 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_07MIJIJENI@OnLogin@			; `string'
 PUBLIC	??_C@_0N@JKGCBAC@OnRemoveList@			; `string'
-PUBLIC	??_C@_06EKCGEEDK@?$CIisii?$CJ@			; `string'
 PUBLIC	??_C@_08PGILGNMN@OnLogout@			; `string'
-PUBLIC	??_C@_0BB@OLLKOOGB@OnLogoutWithLang@		; `string'
+PUBLIC	??_C@_07MIJIJENI@OnLogin@			; `string'
 PUBLIC	??_C@_0BA@LFFENIPG@OnLoginWithLang@		; `string'
-PUBLIC	??_C@_0N@DDIBAGBA@RemoveFriend@			; `string'
+PUBLIC	??_C@_06EKCGEEDK@?$CIisii?$CJ@			; `string'
 PUBLIC	??_C@_0BA@EBIIGMFE@OnRemoveAllList@		; `string'
-PUBLIC	??_C@_0BE@FCHEBADF@IsBlockFriendByName@		; `string'
+PUBLIC	??_C@_0BB@OLLKOOGB@OnLogoutWithLang@		; `string'
 PUBLIC	??_C@_0P@MIIAENPB@IsFriendByName@		; `string'
-PUBLIC	??_C@_0BE@HJGPMMFC@SetMessengerHandler@		; `string'
+PUBLIC	??_C@_0N@DDIBAGBA@RemoveFriend@			; `string'
 PUBLIC	??_C@_0BD@OFJPBLFD@RefreshGuildMember@		; `string'
+PUBLIC	??_C@_0BE@FCHEBADF@IsBlockFriendByName@		; `string'
 PUBLIC	??_C@_09FKBIAKKH@messenger@			; `string'
-PUBLIC	??_R2CPythonMessenger@@8			; CPythonMessenger::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@CPythonMessenger@@8		; CPythonMessenger::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_C@_0BE@HJGPMMFC@SetMessengerHandler@		; `string'
 PUBLIC	??_R2?$CSingleton@VCPythonMessenger@@@@8	; CSingleton<CPythonMessenger>::`RTTI Base Class Array'
-PUBLIC	??_R3?$CSingleton@VCPythonMessenger@@@@8	; CSingleton<CPythonMessenger>::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2CPythonMessenger@@8			; CPythonMessenger::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonMessenger@@@@8 ; CSingleton<CPythonMessenger>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R3CPythonMessenger@@8			; CPythonMessenger::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R1A@?0A@EA@CPythonMessenger@@8		; CPythonMessenger::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R0?AV?$CSingleton@VCPythonMessenger@@@@@8	; CSingleton<CPythonMessenger> `RTTI Type Descriptor'
-PUBLIC	??_R4?$CSingleton@VCPythonMessenger@@@@6B@	; CSingleton<CPythonMessenger>::`RTTI Complete Object Locator'
+PUBLIC	??_R3?$CSingleton@VCPythonMessenger@@@@8	; CSingleton<CPythonMessenger>::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R0?AVCPythonMessenger@@@8			; CPythonMessenger `RTTI Type Descriptor'
+PUBLIC	??_R3CPythonMessenger@@8			; CPythonMessenger::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R4?$CSingleton@VCPythonMessenger@@@@6B@	; CSingleton<CPythonMessenger>::`RTTI Complete Object Locator'
 PUBLIC	??_R4CPythonMessenger@@6B@			; CPythonMessenger::`RTTI Complete Object Locator'
-PUBLIC	??_7?$CSingleton@VCPythonMessenger@@@@6B@	; CSingleton<CPythonMessenger>::`vftable'
 PUBLIC	?ms_singleton@?$CSingleton@VCPythonMessenger@@@@0PAVCPythonMessenger@@A ; CSingleton<CPythonMessenger>::ms_singleton
+PUBLIC	??_7?$CSingleton@VCPythonMessenger@@@@6B@	; CSingleton<CPythonMessenger>::`vftable'
 PUBLIC	??_7CPythonMessenger@@6B@			; CPythonMessenger::`vftable'
 ;	COMDAT ?ms_singleton@?$CSingleton@VCPythonMessenger@@@@0PAVCPythonMessenger@@A
 _BSS	SEGMENT
 ?ms_singleton@?$CSingleton@VCPythonMessenger@@@@0PAVCPythonMessenger@@A DD 01H DUP (?) ; CSingleton<CPythonMessenger>::ms_singleton
 _BSS	ENDS
-;	COMDAT ??_7CPythonMessenger@@6B@
-CONST	SEGMENT
-??_7CPythonMessenger@@6B@ DD FLAT:??_R4CPythonMessenger@@6B@ ; CPythonMessenger::`vftable'
-	DD	FLAT:??_ECPythonMessenger@@UAEPAXI@Z
-CONST	ENDS
 ;	COMDAT ?s_methods@?1??initMessenger@@YAXXZ@4PAUPyMethodDef@@A
 _DATA	SEGMENT
 ?s_methods@?1??initMessenger@@YAXXZ@4PAUPyMethodDef@@A DD FLAT:??_C@_0N@DDIBAGBA@RemoveFriend@ ; `initMessenger'::`2'::s_methods
@@ -74,6 +69,11 @@ _DATA	SEGMENT
 	DD	00H
 	ORG $+4
 _DATA	ENDS
+;	COMDAT ??_7CPythonMessenger@@6B@
+CONST	SEGMENT
+??_7CPythonMessenger@@6B@ DD FLAT:??_R4CPythonMessenger@@6B@ ; CPythonMessenger::`vftable'
+	DD	FLAT:??_ECPythonMessenger@@UAEPAXI@Z
+CONST	ENDS
 ;	COMDAT ??_7?$CSingleton@VCPythonMessenger@@@@6B@
 CONST	SEGMENT
 ??_7?$CSingleton@VCPythonMessenger@@@@6B@ DD FLAT:??_R4?$CSingleton@VCPythonMessenger@@@@6B@ ; CSingleton<CPythonMessenger>::`vftable'
@@ -87,12 +87,6 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AVCPythonMessenger@@@8
 	DD	FLAT:??_R3CPythonMessenger@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonMessenger@@@8
-data$rs	SEGMENT
-??_R0?AVCPythonMessenger@@@8 DD FLAT:??_7type_info@@6B@	; CPythonMessenger `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCPythonMessenger@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R4?$CSingleton@VCPythonMessenger@@@@6B@
 rdata$r	SEGMENT
 ??_R4?$CSingleton@VCPythonMessenger@@@@6B@ DD 00H	; CSingleton<CPythonMessenger>::`RTTI Complete Object Locator'
@@ -101,18 +95,41 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$CSingleton@VCPythonMessenger@@@@@8
 	DD	FLAT:??_R3?$CSingleton@VCPythonMessenger@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCPythonMessenger@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCPythonMessenger@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonMessenger> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AV?$CSingleton@VCPythonMessenger@@@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R3CPythonMessenger@@8
 rdata$r	SEGMENT
 ??_R3CPythonMessenger@@8 DD 00H				; CPythonMessenger::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	02H
 	DD	FLAT:??_R2CPythonMessenger@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AVCPythonMessenger@@@8
+data$rs	SEGMENT
+??_R0?AVCPythonMessenger@@@8 DD FLAT:??_7type_info@@6B@	; CPythonMessenger `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCPythonMessenger@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R3?$CSingleton@VCPythonMessenger@@@@8
+rdata$r	SEGMENT
+??_R3?$CSingleton@VCPythonMessenger@@@@8 DD 00H		; CSingleton<CPythonMessenger>::`RTTI Class Hierarchy Descriptor'
+	DD	00H
+	DD	01H
+	DD	FLAT:??_R2?$CSingleton@VCPythonMessenger@@@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCPythonMessenger@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCPythonMessenger@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonMessenger> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCPythonMessenger@@@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R1A@?0A@EA@CPythonMessenger@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@CPythonMessenger@@8 DD FLAT:??_R0?AVCPythonMessenger@@@8 ; CPythonMessenger::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3CPythonMessenger@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonMessenger@@@@8
 rdata$r	SEGMENT
@@ -124,83 +141,66 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$CSingleton@VCPythonMessenger@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R3?$CSingleton@VCPythonMessenger@@@@8
-rdata$r	SEGMENT
-??_R3?$CSingleton@VCPythonMessenger@@@@8 DD 00H		; CSingleton<CPythonMessenger>::`RTTI Class Hierarchy Descriptor'
-	DD	00H
-	DD	01H
-	DD	FLAT:??_R2?$CSingleton@VCPythonMessenger@@@@8
-rdata$r	ENDS
-;	COMDAT ??_R2?$CSingleton@VCPythonMessenger@@@@8
-rdata$r	SEGMENT
-??_R2?$CSingleton@VCPythonMessenger@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonMessenger@@@@8 ; CSingleton<CPythonMessenger>::`RTTI Base Class Array'
-rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@CPythonMessenger@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@CPythonMessenger@@8 DD FLAT:??_R0?AVCPythonMessenger@@@8 ; CPythonMessenger::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	01H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3CPythonMessenger@@8
-rdata$r	ENDS
 ;	COMDAT ??_R2CPythonMessenger@@8
 rdata$r	SEGMENT
 ??_R2CPythonMessenger@@8 DD FLAT:??_R1A@?0A@EA@CPythonMessenger@@8 ; CPythonMessenger::`RTTI Base Class Array'
 	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonMessenger@@@@8
 rdata$r	ENDS
-;	COMDAT ??_C@_09FKBIAKKH@messenger@
-CONST	SEGMENT
-??_C@_09FKBIAKKH@messenger@ DB 'messenger', 00H		; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BD@OFJPBLFD@RefreshGuildMember@
-CONST	SEGMENT
-??_C@_0BD@OFJPBLFD@RefreshGuildMember@ DB 'RefreshGuildMember', 00H ; `string'
-CONST	ENDS
+;	COMDAT ??_R2?$CSingleton@VCPythonMessenger@@@@8
+rdata$r	SEGMENT
+??_R2?$CSingleton@VCPythonMessenger@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonMessenger@@@@8 ; CSingleton<CPythonMessenger>::`RTTI Base Class Array'
+rdata$r	ENDS
 ;	COMDAT ??_C@_0BE@HJGPMMFC@SetMessengerHandler@
 CONST	SEGMENT
 ??_C@_0BE@HJGPMMFC@SetMessengerHandler@ DB 'SetMessengerHandler', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@MIIAENPB@IsFriendByName@
+;	COMDAT ??_C@_09FKBIAKKH@messenger@
 CONST	SEGMENT
-??_C@_0P@MIIAENPB@IsFriendByName@ DB 'IsFriendByName', 00H ; `string'
+??_C@_09FKBIAKKH@messenger@ DB 'messenger', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@FCHEBADF@IsBlockFriendByName@
 CONST	SEGMENT
 ??_C@_0BE@FCHEBADF@IsBlockFriendByName@ DB 'IsBlockFriendByName', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@EBIIGMFE@OnRemoveAllList@
+;	COMDAT ??_C@_0BD@OFJPBLFD@RefreshGuildMember@
 CONST	SEGMENT
-??_C@_0BA@EBIIGMFE@OnRemoveAllList@ DB 'OnRemoveAllList', 00H ; `string'
+??_C@_0BD@OFJPBLFD@RefreshGuildMember@ DB 'RefreshGuildMember', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@DDIBAGBA@RemoveFriend@
 CONST	SEGMENT
 ??_C@_0N@DDIBAGBA@RemoveFriend@ DB 'RemoveFriend', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@LFFENIPG@OnLoginWithLang@
+;	COMDAT ??_C@_0P@MIIAENPB@IsFriendByName@
 CONST	SEGMENT
-??_C@_0BA@LFFENIPG@OnLoginWithLang@ DB 'OnLoginWithLang', 00H ; `string'
+??_C@_0P@MIIAENPB@IsFriendByName@ DB 'IsFriendByName', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@OLLKOOGB@OnLogoutWithLang@
 CONST	SEGMENT
 ??_C@_0BB@OLLKOOGB@OnLogoutWithLang@ DB 'OnLogoutWithLang', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08PGILGNMN@OnLogout@
+;	COMDAT ??_C@_0BA@EBIIGMFE@OnRemoveAllList@
 CONST	SEGMENT
-??_C@_08PGILGNMN@OnLogout@ DB 'OnLogout', 00H		; `string'
+??_C@_0BA@EBIIGMFE@OnRemoveAllList@ DB 'OnRemoveAllList', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06EKCGEEDK@?$CIisii?$CJ@
 CONST	SEGMENT
 ??_C@_06EKCGEEDK@?$CIisii?$CJ@ DB '(isii)', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@JKGCBAC@OnRemoveList@
+;	COMDAT ??_C@_0BA@LFFENIPG@OnLoginWithLang@
 CONST	SEGMENT
-??_C@_0N@JKGCBAC@OnRemoveList@ DB 'OnRemoveList', 00H	; `string'
+??_C@_0BA@LFFENIPG@OnLoginWithLang@ DB 'OnLoginWithLang', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07MIJIJENI@OnLogin@
 CONST	SEGMENT
 ??_C@_07MIJIJENI@OnLogin@ DB 'OnLogin', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_08PGILGNMN@OnLogout@
+CONST	SEGMENT
+??_C@_08PGILGNMN@OnLogout@ DB 'OnLogout', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0N@JKGCBAC@OnRemoveList@
+CONST	SEGMENT
+??_C@_0N@JKGCBAC@OnRemoveList@ DB 'OnRemoveList', 00H	; `string'
 PUBLIC	??$?0V?$tuple@$$QAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@V?$tuple@$$V@1@$0A@$$Z$S@?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@E@std@@AAE@AAV?$tuple@$$QAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AAV?$tuple@$$V@1@U?$integer_sequence@I$0A@@1@U?$integer_sequence@I$S@1@@Z ; std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,unsigned char>::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,unsigned char><std::tuple<std::basic_string<char,std::char_traits<char>,std::allocator<char> > &&>,std::tuple<>,0>
 PUBLIC	?_Max@?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@E@std@@@std@@@std@@SAPAU?$_Tree_node@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@E@std@@PAX@2@PAU32@@Z ; std::_Tree_val<std::_Tree_simple_types<std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,unsigned char> > >::_Max
 PUBLIC	?_Get_first@?$_Compressed_pair@V?$allocator@U?$_Tree_node@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@E@std@@PAX@std@@@std@@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@E@std@@@std@@@2@$00@std@@QBEABV?$allocator@U?$_Tree_node@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@E@std@@PAX@std@@@2@XZ ; std::_Compressed_pair<std::allocator<std::_Tree_node<std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,unsigned char>,void *> >,std::_Tree_val<std::_Tree_simple_types<std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,unsigned char> > >,1>::_Get_first

@@ -1503,3 +1503,4 @@ NEW_AFFECT_AUTO_HUNT	Auto Hunt	SNA
 OTO_SATIS	|Eemoji/key_ctrl|e + |Eemoji/key_x|e + |Eemoji/key_rclick|e - Otomatik Sat.
 OTOMATIK_SAT_UYARI	<Otomatik Satma> 1 den fazla itemi ekleyemezsin, önce itemi ayır!
 OTOMATIK_SAT_UYARI_SANDIK	<Otomatik Satma> Sandıkları otomatik satmaya ekleyemezsin!
+POSSIBLE_ORE	Suitable Ore:

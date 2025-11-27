@@ -165,6 +165,8 @@
 #define ENABLE_AUTO_ATTACK_ARCHER_NINJA_FIX     	// Otomatik saldýrýda okçu/ninja sýnýflarýna özel hatalarý giderir
 #define ENABLE_TEXTURE_SCALE_FIX                	// Texture %100 / scaling kaynaklý hatalarý düzeltir
 #define ENABLE_TIMESTAMPED_EXCEPTION_DUMP   		// Her bir istisna için "errorlog" klasörüne zaman damgalý (ErrorLog_DD-MM-YYYY_HH-MM-SS.txt) bir hata dökümü dosyasý yazar ve errorlog.exe'yi çalýþtýrýr
+#define ENABLE_NEW_STOP_ON_BLOCK    				// Engelleyici (ATTRIBUTE_BLOCK) tespit edildiðinde mevcut BlockMovement() çaðrýsýna ek olarak NEW_Stop() fonksiyonunu çaðýrýr (çarpýþma sonrasý hareket durdurma iyileþtirmesi)
+#define ENABLE_ABORT_TRACEBACK_WITH_LINE   			// Abort sýrasýnda Python traceback bilgilerini (filename, funcname, line) loglar. Kullanýlmazsa standart abort davranýþý korunur
 /*** DÜZELTMELER ***/
 
 /*** TAMAMLANMAMIÞ SÝSTEMLER (YAKINDA) ***/

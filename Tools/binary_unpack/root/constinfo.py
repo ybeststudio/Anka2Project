@@ -200,6 +200,9 @@ import item
 
 ACCESSORY_MATERIAL_LIST = [50623, 50624, 50625, 50626, 50627, 50628, 50629, 50630, 50631, 50632, 50633, 50634, 50635, 50636, 50637, 50638]
 
+# Cevher socket sayýsý - cevher_bilgisi.txt'ye göre deðiþtirilebilir
+ACCESSORY_SOCKET_MAX_SIZE = 3
+
 JewelAccessoryInfos = [
 		# jewel		wrist	neck	ear
 		[ 50634,	14420,	16220,	17220 ],

@@ -3389,6 +3389,7 @@ __unwindtable$??$_Buynode@V?$allocator@U?$_Tree_node@U?$pair@$$CBEV?$vector@EV?$
 	DQ	00000000000000000r		; 0
 	DQ	00000000000000000r		; 0
 	DD	00H
+	ORG $+4
 ?ms_astAffectEffectAttachBone@CInstanceBase@@1PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A DB 00H ; CInstanceBase::ms_astAffectEffectAttachBone
 	DB	00H
 	DB	00H

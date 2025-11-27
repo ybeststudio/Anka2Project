@@ -8,33 +8,33 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0O@HOPGOEEN@SetVisibility@		; `string'
 PUBLIC	??_C@_0M@OOJEEMHJ@SelectModel@			; `string'
-PUBLIC	??_C@_08CPFKDPFN@SetMount@			; `string'
 PUBLIC	??_C@_0O@BFHAFDEO@SetBackground@		; `string'
-PUBLIC	??_C@_0O@HKCKKFMF@SetModelV3Eye@		; `string'
+PUBLIC	??_C@_0O@HOPGOEEN@SetVisibility@		; `string'
 PUBLIC	??_C@_0L@FBNCPECP@ResetModel@			; `string'
-PUBLIC	??_C@_0N@NBOAENCH@GetFreeIndex@			; `string'
+PUBLIC	??_C@_08CPFKDPFN@SetMount@			; `string'
 PUBLIC	??_C@_0BB@MAPNPDDG@SetModelV3Target@		; `string'
-PUBLIC	??_C@_09BPLKFLCD@AddAffect@			; `string'
+PUBLIC	??_C@_0O@HKCKKFMF@SetModelV3Eye@		; `string'
 PUBLIC	??_C@_0P@MMIHFJEA@SetModelRender@		; `string'
-PUBLIC	??_C@_0M@CMCDEKIM@ClearAffect@			; `string'
+PUBLIC	??_C@_0N@NBOAENCH@GetFreeIndex@			; `string'
 PUBLIC	??_C@_0N@KOCLGOMA@RemoveAffect@			; `string'
-PUBLIC	??_C@_04LLODKBCK@Zoom@				; `string'
+PUBLIC	??_C@_09BPLKFLCD@AddAffect@			; `string'
 PUBLIC	??_C@_06JMGCGGJP@IsShow@			; `string'
-PUBLIC	??_C@_0BG@OOAGALNL@RotateEyeAroundTarget@	; `string'
+PUBLIC	??_C@_0M@CMCDEKIM@ClearAffect@			; `string'
 PUBLIC	??_C@_07IKHHFBOO@SetZoom@			; `string'
+PUBLIC	??_C@_04LLODKBCK@Zoom@				; `string'
 PUBLIC	??_C@_0N@IMGDPIOP@renderTarget@			; `string'
-EXTRN	?RotateEyeAroundTarget@CRenderTarget@@QAEXMM@Z:PROC ; CRenderTarget::RotateEyeAroundTarget
-EXTRN	?SetScale@CRenderTarget@@QAEXM@Z:PROC		; CRenderTarget::SetScale
+PUBLIC	??_C@_0BG@OOAGALNL@RotateEyeAroundTarget@	; `string'
 EXTRN	?SetZoom@CRenderTarget@@QAEX_N@Z:PROC		; CRenderTarget::SetZoom
-EXTRN	?ResetModel@CRenderTarget@@QAEXXZ:PROC		; CRenderTarget::ResetModel
-EXTRN	?SetModelV3Eye@CRenderTarget@@QAEXMMM@Z:PROC	; CRenderTarget::SetModelV3Eye
 EXTRN	?SetModelV3Target@CRenderTarget@@QAEXMMM@Z:PROC	; CRenderTarget::SetModelV3Target
 EXTRN	?Zoom@CRenderTarget@@QAEXM@Z:PROC		; CRenderTarget::Zoom
-EXTRN	?GetRenderTarget@CRenderTargetManager@@QAE?AV?$shared_ptr@VCRenderTarget@@@std@@H@Z:PROC ; CRenderTargetManager::GetRenderTarget
+EXTRN	?RotateEyeAroundTarget@CRenderTarget@@QAEXMM@Z:PROC ; CRenderTarget::RotateEyeAroundTarget
+EXTRN	?SetScale@CRenderTarget@@QAEXM@Z:PROC		; CRenderTarget::SetScale
 EXTRN	?SelectModel@CRenderTarget@@QAEXH_N@Z:PROC	; CRenderTarget::SelectModel
 EXTRN	?CreateBackground@CRenderTarget@@QAE_NPBDKK@Z:PROC ; CRenderTarget::CreateBackground
+EXTRN	?ResetModel@CRenderTarget@@QAEXXZ:PROC		; CRenderTarget::ResetModel
+EXTRN	?SetModelV3Eye@CRenderTarget@@QAEXMMM@Z:PROC	; CRenderTarget::SetModelV3Eye
+EXTRN	?GetRenderTarget@CRenderTargetManager@@QAE?AV?$shared_ptr@VCRenderTarget@@@std@@H@Z:PROC ; CRenderTargetManager::GetRenderTarget
 ;	COMDAT ?s_methods@?1??initRenderTarget@@YAXXZ@4PAUPyMethodDef@@A
 _DATA	SEGMENT
 ?s_methods@?1??initRenderTarget@@YAXXZ@4PAUPyMethodDef@@A DD FLAT:??_C@_0M@OOJEEMHJ@SelectModel@ ; `initRenderTarget'::`2'::s_methods
@@ -134,73 +134,73 @@ _DATA	SEGMENT
 	DD	00H
 	ORG $+4
 _DATA	ENDS
-;	COMDAT ??_C@_0N@IMGDPIOP@renderTarget@
-CONST	SEGMENT
-??_C@_0N@IMGDPIOP@renderTarget@ DB 'renderTarget', 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_07IKHHFBOO@SetZoom@
-CONST	SEGMENT
-??_C@_07IKHHFBOO@SetZoom@ DB 'SetZoom', 00H		; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BG@OOAGALNL@RotateEyeAroundTarget@
 CONST	SEGMENT
 ??_C@_0BG@OOAGALNL@RotateEyeAroundTarget@ DB 'RotateEyeAroundTarget', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06JMGCGGJP@IsShow@
+;	COMDAT ??_C@_0N@IMGDPIOP@renderTarget@
 CONST	SEGMENT
-??_C@_06JMGCGGJP@IsShow@ DB 'IsShow', 00H		; `string'
+??_C@_0N@IMGDPIOP@renderTarget@ DB 'renderTarget', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04LLODKBCK@Zoom@
 CONST	SEGMENT
 ??_C@_04LLODKBCK@Zoom@ DB 'Zoom', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@KOCLGOMA@RemoveAffect@
+;	COMDAT ??_C@_07IKHHFBOO@SetZoom@
 CONST	SEGMENT
-??_C@_0N@KOCLGOMA@RemoveAffect@ DB 'RemoveAffect', 00H	; `string'
+??_C@_07IKHHFBOO@SetZoom@ DB 'SetZoom', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@CMCDEKIM@ClearAffect@
 CONST	SEGMENT
 ??_C@_0M@CMCDEKIM@ClearAffect@ DB 'ClearAffect', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@MMIHFJEA@SetModelRender@
+;	COMDAT ??_C@_06JMGCGGJP@IsShow@
 CONST	SEGMENT
-??_C@_0P@MMIHFJEA@SetModelRender@ DB 'SetModelRender', 00H ; `string'
+??_C@_06JMGCGGJP@IsShow@ DB 'IsShow', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09BPLKFLCD@AddAffect@
 CONST	SEGMENT
 ??_C@_09BPLKFLCD@AddAffect@ DB 'AddAffect', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@MAPNPDDG@SetModelV3Target@
+;	COMDAT ??_C@_0N@KOCLGOMA@RemoveAffect@
 CONST	SEGMENT
-??_C@_0BB@MAPNPDDG@SetModelV3Target@ DB 'SetModelV3Target', 00H ; `string'
+??_C@_0N@KOCLGOMA@RemoveAffect@ DB 'RemoveAffect', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@NBOAENCH@GetFreeIndex@
 CONST	SEGMENT
 ??_C@_0N@NBOAENCH@GetFreeIndex@ DB 'GetFreeIndex', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@FBNCPECP@ResetModel@
+;	COMDAT ??_C@_0P@MMIHFJEA@SetModelRender@
 CONST	SEGMENT
-??_C@_0L@FBNCPECP@ResetModel@ DB 'ResetModel', 00H	; `string'
+??_C@_0P@MMIHFJEA@SetModelRender@ DB 'SetModelRender', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@HKCKKFMF@SetModelV3Eye@
 CONST	SEGMENT
 ??_C@_0O@HKCKKFMF@SetModelV3Eye@ DB 'SetModelV3Eye', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@BFHAFDEO@SetBackground@
+;	COMDAT ??_C@_0BB@MAPNPDDG@SetModelV3Target@
 CONST	SEGMENT
-??_C@_0O@BFHAFDEO@SetBackground@ DB 'SetBackground', 00H ; `string'
+??_C@_0BB@MAPNPDDG@SetModelV3Target@ DB 'SetModelV3Target', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08CPFKDPFN@SetMount@
 CONST	SEGMENT
 ??_C@_08CPFKDPFN@SetMount@ DB 'SetMount', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@OOJEEMHJ@SelectModel@
+;	COMDAT ??_C@_0L@FBNCPECP@ResetModel@
 CONST	SEGMENT
-??_C@_0M@OOJEEMHJ@SelectModel@ DB 'SelectModel', 00H	; `string'
+??_C@_0L@FBNCPECP@ResetModel@ DB 'ResetModel', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@HOPGOEEN@SetVisibility@
 CONST	SEGMENT
 ??_C@_0O@HOPGOEEN@SetVisibility@ DB 'SetVisibility', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0O@BFHAFDEO@SetBackground@
+CONST	SEGMENT
+??_C@_0O@BFHAFDEO@SetBackground@ DB 'SetBackground', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0M@OOJEEMHJ@SelectModel@
+CONST	SEGMENT
+??_C@_0M@OOJEEMHJ@SelectModel@ DB 'SelectModel', 00H	; `string'
 PUBLIC	?get@?$_Ptr_base@VCRenderTarget@@@std@@IBEPAVCRenderTarget@@XZ ; std::_Ptr_base<CRenderTarget>::get
 PUBLIC	?_Decref@?$_Ptr_base@VCRenderTarget@@@std@@IAEXXZ ; std::_Ptr_base<CRenderTarget>::_Decref
 PUBLIC	??C?$unique_ptr@VCInstanceBase@@U?$default_delete@VCInstanceBase@@@std@@@std@@QBEPAVCInstanceBase@@XZ ; std::unique_ptr<CInstanceBase,std::default_delete<CInstanceBase> >::operator->

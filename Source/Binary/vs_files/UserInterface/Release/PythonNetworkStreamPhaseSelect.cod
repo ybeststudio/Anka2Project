@@ -8,35 +8,44 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0BA@FHNDCDDK@SetLoadingPhase@		; `string'
 PUBLIC	??_C@_0BN@HMHBDFBF@?$CD?$CD?5Network?5?9?5Select?5Phase?5?$CD?$CD@ ; `string'
-PUBLIC	??_C@_0BF@BJJJIJOC@SetSelectEmpirePhase@	; `string'
 PUBLIC	??_C@_0BI@OHJNHIAD@SetSelectCharacterPhase@	; `string'
-PUBLIC	??_C@_0CC@LCEFGOOP@SendSelectCharacterPacket?5?9?5Err@ ; `string'
+PUBLIC	??_C@_0BA@FHNDCDDK@SetLoadingPhase@		; `string'
 PUBLIC	??_C@_0BP@MCDDNHPB@SendSelectEmpirePacket?5?9?5Error@ ; `string'
-PUBLIC	??_C@_0BP@NACAEM@Failed?5to?5SendChangeNamePacket@ ; `string'
+PUBLIC	??_C@_0BF@BJJJIJOC@SetSelectEmpirePhase@	; `string'
 PUBLIC	??_C@_0CE@MAKBOJI@Failed?5to?5SendCreateCharacterPa@ ; `string'
-PUBLIC	??_C@_0BA@FIEGFADN@OnCreateSuccess@		; `string'
+PUBLIC	??_C@_0CC@LCEFGOOP@SendSelectCharacterPacket?5?9?5Err@ ; `string'
 PUBLIC	??_C@_0GF@HIGNNGB@CPythonNetworkStream?3?3RecvPlaye@ ; `string'
-PUBLIC	??_C@_0BA@NJIPBDGM@OnDeleteSuccess@		; `string'
+PUBLIC	??_C@_0BP@NACAEM@Failed?5to?5SendChangeNamePacket@ ; `string'
 PUBLIC	??_C@_0BA@JBAEOLGH@OnCreateFailure@		; `string'
-PUBLIC	??_C@_0N@ICACADKM@OnChangeName@			; `string'
+PUBLIC	??_C@_0BA@FIEGFADN@OnCreateSuccess@		; `string'
 PUBLIC	??_C@_0BA@BAMNKIDG@OnDeleteFailure@		; `string'
+PUBLIC	??_C@_0BA@NJIPBDGM@OnDeleteSuccess@		; `string'
+PUBLIC	??_C@_0N@ICACADKM@OnChangeName@			; `string'
+;	COMDAT ??_C@_0N@ICACADKM@OnChangeName@
+CONST	SEGMENT
+??_C@_0N@ICACADKM@OnChangeName@ DB 'OnChangeName', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BA@NJIPBDGM@OnDeleteSuccess@
+CONST	SEGMENT
+??_C@_0BA@NJIPBDGM@OnDeleteSuccess@ DB 'OnDeleteSuccess', 00H ; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0BA@BAMNKIDG@OnDeleteFailure@
 CONST	SEGMENT
 ??_C@_0BA@BAMNKIDG@OnDeleteFailure@ DB 'OnDeleteFailure', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@ICACADKM@OnChangeName@
+;	COMDAT ??_C@_0BA@FIEGFADN@OnCreateSuccess@
 CONST	SEGMENT
-??_C@_0N@ICACADKM@OnChangeName@ DB 'OnChangeName', 00H	; `string'
+??_C@_0BA@FIEGFADN@OnCreateSuccess@ DB 'OnCreateSuccess', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@JBAEOLGH@OnCreateFailure@
 CONST	SEGMENT
 ??_C@_0BA@JBAEOLGH@OnCreateFailure@ DB 'OnCreateFailure', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@NJIPBDGM@OnDeleteSuccess@
+;	COMDAT ??_C@_0BP@NACAEM@Failed?5to?5SendChangeNamePacket@
 CONST	SEGMENT
-??_C@_0BA@NJIPBDGM@OnDeleteSuccess@ DB 'OnDeleteSuccess', 00H ; `string'
+??_C@_0BP@NACAEM@Failed?5to?5SendChangeNamePacket@ DB 'Failed to SendChan'
+	DB	'geNamePacket', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0GF@HIGNNGB@CPythonNetworkStream?3?3RecvPlaye@
 CONST	SEGMENT
@@ -44,46 +53,37 @@ CONST	SEGMENT
 	DB	'ream::RecvPlayerCreateSuccessPacket - OUT OF RANGE SLOT(%d) >'
 	DB	' PLATER_PER_ACCOUNT(%d)', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@FIEGFADN@OnCreateSuccess@
+;	COMDAT ??_C@_0CC@LCEFGOOP@SendSelectCharacterPacket?5?9?5Err@
 CONST	SEGMENT
-??_C@_0BA@FIEGFADN@OnCreateSuccess@ DB 'OnCreateSuccess', 00H ; `string'
+??_C@_0CC@LCEFGOOP@SendSelectCharacterPacket?5?9?5Err@ DB 'SendSelectChar'
+	DB	'acterPacket - Error', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CE@MAKBOJI@Failed?5to?5SendCreateCharacterPa@
 CONST	SEGMENT
 ??_C@_0CE@MAKBOJI@Failed?5to?5SendCreateCharacterPa@ DB 'Failed to SendCr'
 	DB	'eateCharacterPacket', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BP@NACAEM@Failed?5to?5SendChangeNamePacket@
+;	COMDAT ??_C@_0BF@BJJJIJOC@SetSelectEmpirePhase@
 CONST	SEGMENT
-??_C@_0BP@NACAEM@Failed?5to?5SendChangeNamePacket@ DB 'Failed to SendChan'
-	DB	'geNamePacket', 00H				; `string'
+??_C@_0BF@BJJJIJOC@SetSelectEmpirePhase@ DB 'SetSelectEmpirePhase', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BP@MCDDNHPB@SendSelectEmpirePacket?5?9?5Error@
 CONST	SEGMENT
 ??_C@_0BP@MCDDNHPB@SendSelectEmpirePacket?5?9?5Error@ DB 'SendSelectEmpir'
 	DB	'ePacket - Error', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CC@LCEFGOOP@SendSelectCharacterPacket?5?9?5Err@
+;	COMDAT ??_C@_0BA@FHNDCDDK@SetLoadingPhase@
 CONST	SEGMENT
-??_C@_0CC@LCEFGOOP@SendSelectCharacterPacket?5?9?5Err@ DB 'SendSelectChar'
-	DB	'acterPacket - Error', 00H			; `string'
+??_C@_0BA@FHNDCDDK@SetLoadingPhase@ DB 'SetLoadingPhase', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@OHJNHIAD@SetSelectCharacterPhase@
 CONST	SEGMENT
 ??_C@_0BI@OHJNHIAD@SetSelectCharacterPhase@ DB 'SetSelectCharacterPhase', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@BJJJIJOC@SetSelectEmpirePhase@
-CONST	SEGMENT
-??_C@_0BF@BJJJIJOC@SetSelectEmpirePhase@ DB 'SetSelectEmpirePhase', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BN@HMHBDFBF@?$CD?$CD?5Network?5?9?5Select?5Phase?5?$CD?$CD@
 CONST	SEGMENT
 ??_C@_0BN@HMHBDFBF@?$CD?$CD?5Network?5?9?5Select?5Phase?5?$CD?$CD@ DB '##'
 	DB	' Network - Select Phase ##', 00H		; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BA@FHNDCDDK@SetLoadingPhase@
-CONST	SEGMENT
-??_C@_0BA@FHNDCDDK@SetLoadingPhase@ DB 'SetLoadingPhase', 00H ; `string'
 PUBLIC	?__RecvChangeName@CPythonNetworkStream@@IAE_NXZ	; CPythonNetworkStream::__RecvChangeName
 PUBLIC	?__RecvPlayerDestroyFailurePacket@CPythonNetworkStream@@IAE_NXZ ; CPythonNetworkStream::__RecvPlayerDestroyFailurePacket
 PUBLIC	?__RecvPlayerDestroySuccessPacket@CPythonNetworkStream@@IAE_NXZ ; CPythonNetworkStream::__RecvPlayerDestroySuccessPacket

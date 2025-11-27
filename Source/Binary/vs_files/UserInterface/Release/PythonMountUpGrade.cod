@@ -8,50 +8,50 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_04NKFKOIHC@Chat@				; `string'
 PUBLIC	??_C@_0CL@ONJHGFJI@CPythonMountUpGrade?3?3Chat?5inval@ ; `string'
-PUBLIC	??_C@_05CCGMLFNG@Reset@				; `string'
 PUBLIC	??_C@_04JEOPCEB@Send@				; `string'
-PUBLIC	??_C@_0BF@NDJLEEGN@GetMountUpGradePrice@	; `string'
+PUBLIC	??_C@_04NKFKOIHC@Chat@				; `string'
 PUBLIC	??_C@_0O@LHILFBPA@GetHorseLevel@		; `string'
-PUBLIC	??_C@_0BE@LNOBKKDO@GetMountExistingExp@		; `string'
+PUBLIC	??_C@_05CCGMLFNG@Reset@				; `string'
 PUBLIC	??_C@_0BD@HMPOLNFM@IsMountUpGradeFail@		; `string'
-PUBLIC	??_C@_09IICLCLM@SetWindow@			; `string'
+PUBLIC	??_C@_0BF@NDJLEEGN@GetMountUpGradePrice@	; `string'
 PUBLIC	??_C@_0BF@BHEIPIMF@GetMountNecessaryExp@	; `string'
-PUBLIC	??_C@_06NKNKKMDO@mupgrd@			; `string'
+PUBLIC	??_C@_0BE@LNOBKKDO@GetMountExistingExp@		; `string'
 PUBLIC	??_C@_0O@MCOBDHHO@DestroyWindow@		; `string'
-PUBLIC	??_C@_0BI@HFGFBNDI@MOUNT_UP_GRADE_LEVEL_UP@	; `string'
+PUBLIC	??_C@_09IICLCLM@SetWindow@			; `string'
 PUBLIC	??_C@_0BD@PBDICIML@MOUNT_UP_GRADE_EXP@		; `string'
-PUBLIC	??_C@_0CL@FGAPGPAG@CHAT_TYPE_LEVEL_UP_YANG_OR_FEED@ ; `string'
+PUBLIC	??_C@_06NKNKKMDO@mupgrd@			; `string'
 PUBLIC	??_C@_0BO@GDHHJMOB@CHAT_TYPE_BANN_WHILE_MOUNTING@ ; `string'
-PUBLIC	??_C@_0CG@EPAIHKCH@CHAT_TYPE_LEVEL_UP_PERCENT_SUCC@ ; `string'
+PUBLIC	??_C@_0BI@HFGFBNDI@MOUNT_UP_GRADE_LEVEL_UP@	; `string'
 PUBLIC	??_C@_0CC@KGCCKOBD@CHAT_TYPE_LEVEL_UP_GEM_NOT_ENOU@ ; `string'
-PUBLIC	??_C@_0BJ@CJFJIHI@CHAT_TYPE_EXP_HORSE_FEED@	; `string'
+PUBLIC	??_C@_0CL@FGAPGPAG@CHAT_TYPE_LEVEL_UP_YANG_OR_FEED@ ; `string'
 PUBLIC	??_C@_0CA@HCAAACPK@CHAT_TYPE_LEVEL_UP_PERCENT_FAIL@ ; `string'
-PUBLIC	??_C@_0BI@KHDJDGIA@MOUNT_UP_GRADE_FAIL_OFF@	; `string'
+PUBLIC	??_C@_0CG@EPAIHKCH@CHAT_TYPE_LEVEL_UP_PERCENT_SUCC@ ; `string'
 PUBLIC	??_C@_0BD@KDKAHPPK@CHAT_TYPE_NO_VALUE@		; `string'
-PUBLIC	??_C@_0BD@JEHGJLMJ@HORSE_FEED_ITEM_ID@		; `string'
+PUBLIC	??_C@_0BJ@CJFJIHI@CHAT_TYPE_EXP_HORSE_FEED@	; `string'
 PUBLIC	??_C@_0BH@JHGIPEJ@MOUNT_UP_GRADE_FAIL_ON@	; `string'
-PUBLIC	??_C@_0BF@PCNFCMKP@HORSE_FEED_EXP_COUNT@	; `string'
+PUBLIC	??_C@_0BI@KHDJDGIA@MOUNT_UP_GRADE_FAIL_OFF@	; `string'
 PUBLIC	??_C@_0BH@JNACCMEO@HORSE_FEED_LEVEL_COUNT@	; `string'
-PUBLIC	??_C@_0M@CKIHJKGI@TOOLTIP_GEM@			; `string'
+PUBLIC	??_C@_0BD@JEHGJLMJ@HORSE_FEED_ITEM_ID@		; `string'
 PUBLIC	??_C@_0N@KOIPLHNP@TOOLTIP_YANG@			; `string'
-PUBLIC	??_C@_0CB@BGHCFJKM@HORSE_LOWER_LEVEL_RETRY_GEM_COS@ ; `string'
+PUBLIC	??_C@_0BF@PCNFCMKP@HORSE_FEED_EXP_COUNT@	; `string'
 PUBLIC	??_C@_0CA@JHMKHENJ@HORSE_LEVEL_DETERMINES_GEM_COST@ ; `string'
-PUBLIC	??_C@_05OOFGFHKO@RESET@				; `string'
+PUBLIC	??_C@_0M@CKIHJKGI@TOOLTIP_GEM@			; `string'
 PUBLIC	??_C@_0CB@NOAMOHI@HORSE_UPPER_LEVEL_RETRY_GEM_COS@ ; `string'
-PUBLIC	??_R2CPythonMountUpGrade@@8			; CPythonMountUpGrade::`RTTI Base Class Array'
+PUBLIC	??_C@_0CB@BGHCFJKM@HORSE_LOWER_LEVEL_RETRY_GEM_COS@ ; `string'
+PUBLIC	??_C@_05OOFGFHKO@RESET@				; `string'
 PUBLIC	??_R2?$CSingleton@VCPythonMountUpGrade@@@@8	; CSingleton<CPythonMountUpGrade>::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@CPythonMountUpGrade@@8		; CPythonMountUpGrade::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R2CPythonMountUpGrade@@8			; CPythonMountUpGrade::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonMountUpGrade@@@@8 ; CSingleton<CPythonMountUpGrade>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R3?$CSingleton@VCPythonMountUpGrade@@@@8	; CSingleton<CPythonMountUpGrade>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R3CPythonMountUpGrade@@8			; CPythonMountUpGrade::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R1A@?0A@EA@CPythonMountUpGrade@@8		; CPythonMountUpGrade::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R0?AV?$CSingleton@VCPythonMountUpGrade@@@@@8	; CSingleton<CPythonMountUpGrade> `RTTI Type Descriptor'
+PUBLIC	??_R3?$CSingleton@VCPythonMountUpGrade@@@@8	; CSingleton<CPythonMountUpGrade>::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R0?AVCPythonMountUpGrade@@@8			; CPythonMountUpGrade `RTTI Type Descriptor'
-PUBLIC	??_R4CPythonMountUpGrade@@6B@			; CPythonMountUpGrade::`RTTI Complete Object Locator'
+PUBLIC	??_R3CPythonMountUpGrade@@8			; CPythonMountUpGrade::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R4?$CSingleton@VCPythonMountUpGrade@@@@6B@	; CSingleton<CPythonMountUpGrade>::`RTTI Complete Object Locator'
-PUBLIC	?ms_singleton@?$CSingleton@VCPythonMountUpGrade@@@@0PAVCPythonMountUpGrade@@A ; CSingleton<CPythonMountUpGrade>::ms_singleton
 PUBLIC	??_7?$CSingleton@VCPythonMountUpGrade@@@@6B@	; CSingleton<CPythonMountUpGrade>::`vftable'
+PUBLIC	??_R4CPythonMountUpGrade@@6B@			; CPythonMountUpGrade::`RTTI Complete Object Locator'
+PUBLIC	?ms_singleton@?$CSingleton@VCPythonMountUpGrade@@@@0PAVCPythonMountUpGrade@@A ; CSingleton<CPythonMountUpGrade>::ms_singleton
 PUBLIC	??_7CPythonMountUpGrade@@6B@			; CPythonMountUpGrade::`vftable'
 ;	COMDAT ?ms_singleton@?$CSingleton@VCPythonMountUpGrade@@@@0PAVCPythonMountUpGrade@@A
 _BSS	SEGMENT
@@ -105,6 +105,14 @@ _DATA	SEGMENT
 	DD	00H
 	ORG $+4
 _DATA	ENDS
+;	COMDAT ??_R4CPythonMountUpGrade@@6B@
+rdata$r	SEGMENT
+??_R4CPythonMountUpGrade@@6B@ DD 00H			; CPythonMountUpGrade::`RTTI Complete Object Locator'
+	DD	00H
+	DD	00H
+	DD	FLAT:??_R0?AVCPythonMountUpGrade@@@8
+	DD	FLAT:??_R3CPythonMountUpGrade@@8
+rdata$r	ENDS
 ;	COMDAT ??_7?$CSingleton@VCPythonMountUpGrade@@@@6B@
 CONST	SEGMENT
 ??_7?$CSingleton@VCPythonMountUpGrade@@@@6B@ DD FLAT:??_R4?$CSingleton@VCPythonMountUpGrade@@@@6B@ ; CSingleton<CPythonMountUpGrade>::`vftable'
@@ -118,26 +126,6 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$CSingleton@VCPythonMountUpGrade@@@@@8
 	DD	FLAT:??_R3?$CSingleton@VCPythonMountUpGrade@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R4CPythonMountUpGrade@@6B@
-rdata$r	SEGMENT
-??_R4CPythonMountUpGrade@@6B@ DD 00H			; CPythonMountUpGrade::`RTTI Complete Object Locator'
-	DD	00H
-	DD	00H
-	DD	FLAT:??_R0?AVCPythonMountUpGrade@@@8
-	DD	FLAT:??_R3CPythonMountUpGrade@@8
-rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonMountUpGrade@@@8
-data$rs	SEGMENT
-??_R0?AVCPythonMountUpGrade@@@8 DD FLAT:??_7type_info@@6B@ ; CPythonMountUpGrade `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCPythonMountUpGrade@@', 00H
-data$rs	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCPythonMountUpGrade@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCPythonMountUpGrade@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonMountUpGrade> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AV?$CSingleton@VCPythonMountUpGrade@@@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R3CPythonMountUpGrade@@8
 rdata$r	SEGMENT
 ??_R3CPythonMountUpGrade@@8 DD 00H			; CPythonMountUpGrade::`RTTI Class Hierarchy Descriptor'
@@ -145,12 +133,34 @@ rdata$r	SEGMENT
 	DD	02H
 	DD	FLAT:??_R2CPythonMountUpGrade@@8
 rdata$r	ENDS
+;	COMDAT ??_R0?AVCPythonMountUpGrade@@@8
+data$rs	SEGMENT
+??_R0?AVCPythonMountUpGrade@@@8 DD FLAT:??_7type_info@@6B@ ; CPythonMountUpGrade `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCPythonMountUpGrade@@', 00H
+data$rs	ENDS
 ;	COMDAT ??_R3?$CSingleton@VCPythonMountUpGrade@@@@8
 rdata$r	SEGMENT
 ??_R3?$CSingleton@VCPythonMountUpGrade@@@@8 DD 00H	; CSingleton<CPythonMountUpGrade>::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	01H
 	DD	FLAT:??_R2?$CSingleton@VCPythonMountUpGrade@@@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCPythonMountUpGrade@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCPythonMountUpGrade@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonMountUpGrade> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCPythonMountUpGrade@@@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R1A@?0A@EA@CPythonMountUpGrade@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@CPythonMountUpGrade@@8 DD FLAT:??_R0?AVCPythonMountUpGrade@@@8 ; CPythonMountUpGrade::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3CPythonMountUpGrade@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonMountUpGrade@@@@8
 rdata$r	SEGMENT
@@ -162,161 +172,151 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$CSingleton@VCPythonMountUpGrade@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@CPythonMountUpGrade@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@CPythonMountUpGrade@@8 DD FLAT:??_R0?AVCPythonMountUpGrade@@@8 ; CPythonMountUpGrade::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	01H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3CPythonMountUpGrade@@8
-rdata$r	ENDS
-;	COMDAT ??_R2?$CSingleton@VCPythonMountUpGrade@@@@8
-rdata$r	SEGMENT
-??_R2?$CSingleton@VCPythonMountUpGrade@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonMountUpGrade@@@@8 ; CSingleton<CPythonMountUpGrade>::`RTTI Base Class Array'
-rdata$r	ENDS
 ;	COMDAT ??_R2CPythonMountUpGrade@@8
 rdata$r	SEGMENT
 ??_R2CPythonMountUpGrade@@8 DD FLAT:??_R1A@?0A@EA@CPythonMountUpGrade@@8 ; CPythonMountUpGrade::`RTTI Base Class Array'
 	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonMountUpGrade@@@@8
 rdata$r	ENDS
-;	COMDAT ??_C@_0CB@NOAMOHI@HORSE_UPPER_LEVEL_RETRY_GEM_COS@
-CONST	SEGMENT
-??_C@_0CB@NOAMOHI@HORSE_UPPER_LEVEL_RETRY_GEM_COS@ DB 'HORSE_UPPER_LEVEL_'
-	DB	'RETRY_GEM_COST', 00H			; `string'
-CONST	ENDS
+;	COMDAT ??_R2?$CSingleton@VCPythonMountUpGrade@@@@8
+rdata$r	SEGMENT
+??_R2?$CSingleton@VCPythonMountUpGrade@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonMountUpGrade@@@@8 ; CSingleton<CPythonMountUpGrade>::`RTTI Base Class Array'
+rdata$r	ENDS
 ;	COMDAT ??_C@_05OOFGFHKO@RESET@
 CONST	SEGMENT
 ??_C@_05OOFGFHKO@RESET@ DB 'RESET', 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0CA@JHMKHENJ@HORSE_LEVEL_DETERMINES_GEM_COST@
-CONST	SEGMENT
-??_C@_0CA@JHMKHENJ@HORSE_LEVEL_DETERMINES_GEM_COST@ DB 'HORSE_LEVEL_DETER'
-	DB	'MINES_GEM_COST', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CB@BGHCFJKM@HORSE_LOWER_LEVEL_RETRY_GEM_COS@
 CONST	SEGMENT
 ??_C@_0CB@BGHCFJKM@HORSE_LOWER_LEVEL_RETRY_GEM_COS@ DB 'HORSE_LOWER_LEVEL'
 	DB	'_RETRY_GEM_COST', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@KOIPLHNP@TOOLTIP_YANG@
+;	COMDAT ??_C@_0CB@NOAMOHI@HORSE_UPPER_LEVEL_RETRY_GEM_COS@
 CONST	SEGMENT
-??_C@_0N@KOIPLHNP@TOOLTIP_YANG@ DB 'TOOLTIP_YANG', 00H	; `string'
+??_C@_0CB@NOAMOHI@HORSE_UPPER_LEVEL_RETRY_GEM_COS@ DB 'HORSE_UPPER_LEVEL_'
+	DB	'RETRY_GEM_COST', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@CKIHJKGI@TOOLTIP_GEM@
 CONST	SEGMENT
 ??_C@_0M@CKIHJKGI@TOOLTIP_GEM@ DB 'TOOLTIP_GEM', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@JNACCMEO@HORSE_FEED_LEVEL_COUNT@
+;	COMDAT ??_C@_0CA@JHMKHENJ@HORSE_LEVEL_DETERMINES_GEM_COST@
 CONST	SEGMENT
-??_C@_0BH@JNACCMEO@HORSE_FEED_LEVEL_COUNT@ DB 'HORSE_FEED_LEVEL_COUNT', 00H ; `string'
+??_C@_0CA@JHMKHENJ@HORSE_LEVEL_DETERMINES_GEM_COST@ DB 'HORSE_LEVEL_DETER'
+	DB	'MINES_GEM_COST', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@PCNFCMKP@HORSE_FEED_EXP_COUNT@
 CONST	SEGMENT
 ??_C@_0BF@PCNFCMKP@HORSE_FEED_EXP_COUNT@ DB 'HORSE_FEED_EXP_COUNT', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@JHGIPEJ@MOUNT_UP_GRADE_FAIL_ON@
+;	COMDAT ??_C@_0N@KOIPLHNP@TOOLTIP_YANG@
 CONST	SEGMENT
-??_C@_0BH@JHGIPEJ@MOUNT_UP_GRADE_FAIL_ON@ DB 'MOUNT_UP_GRADE_FAIL_ON', 00H ; `string'
+??_C@_0N@KOIPLHNP@TOOLTIP_YANG@ DB 'TOOLTIP_YANG', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@JEHGJLMJ@HORSE_FEED_ITEM_ID@
 CONST	SEGMENT
 ??_C@_0BD@JEHGJLMJ@HORSE_FEED_ITEM_ID@ DB 'HORSE_FEED_ITEM_ID', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@KDKAHPPK@CHAT_TYPE_NO_VALUE@
+;	COMDAT ??_C@_0BH@JNACCMEO@HORSE_FEED_LEVEL_COUNT@
 CONST	SEGMENT
-??_C@_0BD@KDKAHPPK@CHAT_TYPE_NO_VALUE@ DB 'CHAT_TYPE_NO_VALUE', 00H ; `string'
+??_C@_0BH@JNACCMEO@HORSE_FEED_LEVEL_COUNT@ DB 'HORSE_FEED_LEVEL_COUNT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@KHDJDGIA@MOUNT_UP_GRADE_FAIL_OFF@
 CONST	SEGMENT
 ??_C@_0BI@KHDJDGIA@MOUNT_UP_GRADE_FAIL_OFF@ DB 'MOUNT_UP_GRADE_FAIL_OFF', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CA@HCAAACPK@CHAT_TYPE_LEVEL_UP_PERCENT_FAIL@
+;	COMDAT ??_C@_0BH@JHGIPEJ@MOUNT_UP_GRADE_FAIL_ON@
 CONST	SEGMENT
-??_C@_0CA@HCAAACPK@CHAT_TYPE_LEVEL_UP_PERCENT_FAIL@ DB 'CHAT_TYPE_LEVEL_U'
-	DB	'P_PERCENT_FAIL', 00H			; `string'
+??_C@_0BH@JHGIPEJ@MOUNT_UP_GRADE_FAIL_ON@ DB 'MOUNT_UP_GRADE_FAIL_ON', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@CJFJIHI@CHAT_TYPE_EXP_HORSE_FEED@
 CONST	SEGMENT
 ??_C@_0BJ@CJFJIHI@CHAT_TYPE_EXP_HORSE_FEED@ DB 'CHAT_TYPE_EXP_HORSE_FEED', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CC@KGCCKOBD@CHAT_TYPE_LEVEL_UP_GEM_NOT_ENOU@
+;	COMDAT ??_C@_0BD@KDKAHPPK@CHAT_TYPE_NO_VALUE@
 CONST	SEGMENT
-??_C@_0CC@KGCCKOBD@CHAT_TYPE_LEVEL_UP_GEM_NOT_ENOU@ DB 'CHAT_TYPE_LEVEL_U'
-	DB	'P_GEM_NOT_ENOUGH', 00H			; `string'
+??_C@_0BD@KDKAHPPK@CHAT_TYPE_NO_VALUE@ DB 'CHAT_TYPE_NO_VALUE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CG@EPAIHKCH@CHAT_TYPE_LEVEL_UP_PERCENT_SUCC@
 CONST	SEGMENT
 ??_C@_0CG@EPAIHKCH@CHAT_TYPE_LEVEL_UP_PERCENT_SUCC@ DB 'CHAT_TYPE_LEVEL_U'
 	DB	'P_PERCENT_SUCCESSFUL', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BO@GDHHJMOB@CHAT_TYPE_BANN_WHILE_MOUNTING@
+;	COMDAT ??_C@_0CA@HCAAACPK@CHAT_TYPE_LEVEL_UP_PERCENT_FAIL@
 CONST	SEGMENT
-??_C@_0BO@GDHHJMOB@CHAT_TYPE_BANN_WHILE_MOUNTING@ DB 'CHAT_TYPE_BANN_WHIL'
-	DB	'E_MOUNTING', 00H				; `string'
+??_C@_0CA@HCAAACPK@CHAT_TYPE_LEVEL_UP_PERCENT_FAIL@ DB 'CHAT_TYPE_LEVEL_U'
+	DB	'P_PERCENT_FAIL', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CL@FGAPGPAG@CHAT_TYPE_LEVEL_UP_YANG_OR_FEED@
 CONST	SEGMENT
 ??_C@_0CL@FGAPGPAG@CHAT_TYPE_LEVEL_UP_YANG_OR_FEED@ DB 'CHAT_TYPE_LEVEL_U'
 	DB	'P_YANG_OR_FEED_NOT_ENOUGH', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@PBDICIML@MOUNT_UP_GRADE_EXP@
+;	COMDAT ??_C@_0CC@KGCCKOBD@CHAT_TYPE_LEVEL_UP_GEM_NOT_ENOU@
 CONST	SEGMENT
-??_C@_0BD@PBDICIML@MOUNT_UP_GRADE_EXP@ DB 'MOUNT_UP_GRADE_EXP', 00H ; `string'
+??_C@_0CC@KGCCKOBD@CHAT_TYPE_LEVEL_UP_GEM_NOT_ENOU@ DB 'CHAT_TYPE_LEVEL_U'
+	DB	'P_GEM_NOT_ENOUGH', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@HFGFBNDI@MOUNT_UP_GRADE_LEVEL_UP@
 CONST	SEGMENT
 ??_C@_0BI@HFGFBNDI@MOUNT_UP_GRADE_LEVEL_UP@ DB 'MOUNT_UP_GRADE_LEVEL_UP', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@MCOBDHHO@DestroyWindow@
+;	COMDAT ??_C@_0BO@GDHHJMOB@CHAT_TYPE_BANN_WHILE_MOUNTING@
 CONST	SEGMENT
-??_C@_0O@MCOBDHHO@DestroyWindow@ DB 'DestroyWindow', 00H ; `string'
+??_C@_0BO@GDHHJMOB@CHAT_TYPE_BANN_WHILE_MOUNTING@ DB 'CHAT_TYPE_BANN_WHIL'
+	DB	'E_MOUNTING', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06NKNKKMDO@mupgrd@
 CONST	SEGMENT
 ??_C@_06NKNKKMDO@mupgrd@ DB 'mupgrd', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@BHEIPIMF@GetMountNecessaryExp@
+;	COMDAT ??_C@_0BD@PBDICIML@MOUNT_UP_GRADE_EXP@
 CONST	SEGMENT
-??_C@_0BF@BHEIPIMF@GetMountNecessaryExp@ DB 'GetMountNecessaryExp', 00H ; `string'
+??_C@_0BD@PBDICIML@MOUNT_UP_GRADE_EXP@ DB 'MOUNT_UP_GRADE_EXP', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09IICLCLM@SetWindow@
 CONST	SEGMENT
 ??_C@_09IICLCLM@SetWindow@ DB 'SetWindow', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@HMPOLNFM@IsMountUpGradeFail@
+;	COMDAT ??_C@_0O@MCOBDHHO@DestroyWindow@
 CONST	SEGMENT
-??_C@_0BD@HMPOLNFM@IsMountUpGradeFail@ DB 'IsMountUpGradeFail', 00H ; `string'
+??_C@_0O@MCOBDHHO@DestroyWindow@ DB 'DestroyWindow', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@LNOBKKDO@GetMountExistingExp@
 CONST	SEGMENT
 ??_C@_0BE@LNOBKKDO@GetMountExistingExp@ DB 'GetMountExistingExp', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@LHILFBPA@GetHorseLevel@
+;	COMDAT ??_C@_0BF@BHEIPIMF@GetMountNecessaryExp@
 CONST	SEGMENT
-??_C@_0O@LHILFBPA@GetHorseLevel@ DB 'GetHorseLevel', 00H ; `string'
+??_C@_0BF@BHEIPIMF@GetMountNecessaryExp@ DB 'GetMountNecessaryExp', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@NDJLEEGN@GetMountUpGradePrice@
 CONST	SEGMENT
 ??_C@_0BF@NDJLEEGN@GetMountUpGradePrice@ DB 'GetMountUpGradePrice', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04JEOPCEB@Send@
+;	COMDAT ??_C@_0BD@HMPOLNFM@IsMountUpGradeFail@
 CONST	SEGMENT
-??_C@_04JEOPCEB@Send@ DB 'Send', 00H			; `string'
+??_C@_0BD@HMPOLNFM@IsMountUpGradeFail@ DB 'IsMountUpGradeFail', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05CCGMLFNG@Reset@
 CONST	SEGMENT
 ??_C@_05CCGMLFNG@Reset@ DB 'Reset', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CL@ONJHGFJI@CPythonMountUpGrade?3?3Chat?5inval@
+;	COMDAT ??_C@_0O@LHILFBPA@GetHorseLevel@
 CONST	SEGMENT
-??_C@_0CL@ONJHGFJI@CPythonMountUpGrade?3?3Chat?5inval@ DB 'CPythonMountUp'
-	DB	'Grade::Chat invalid type: %d', 00H		; `string'
+??_C@_0O@LHILFBPA@GetHorseLevel@ DB 'GetHorseLevel', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04NKFKOIHC@Chat@
 CONST	SEGMENT
 ??_C@_04NKFKOIHC@Chat@ DB 'Chat', 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_04JEOPCEB@Send@
+CONST	SEGMENT
+??_C@_04JEOPCEB@Send@ DB 'Send', 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0CL@ONJHGFJI@CPythonMountUpGrade?3?3Chat?5inval@
+CONST	SEGMENT
+??_C@_0CL@ONJHGFJI@CPythonMountUpGrade?3?3Chat?5inval@ DB 'CPythonMountUp'
+	DB	'Grade::Chat invalid type: %d', 00H		; `string'
 ?mount_up_grade_price_table@@3QBIB DD 00H		; mount_up_grade_price_table
 	DD	00H
 	DD	00H

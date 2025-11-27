@@ -8,56 +8,45 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0M@HBOAHMLO@ResetAffect@			; `string'
 PUBLIC	??_C@_0N@OADAMGHE@ClearAffects@			; `string'
-PUBLIC	??_C@_0BA@MEPOIIPE@NOT_HORSE_SKILL@		; `string'
 PUBLIC	??_C@_0BD@IOEPNDLO@ChangeCurrentSkill@		; `string'
-PUBLIC	??_C@_0BC@DDKDAKLO@NEED_EMPTY_BOTTLE@		; `string'
+PUBLIC	??_C@_0M@HBOAHMLO@ResetAffect@			; `string'
 PUBLIC	??_C@_0N@DJBFACMO@HAVE_TO_RIDE@			; `string'
-PUBLIC	??_C@_0BD@LIIMHBCN@REMOVE_FISHING_ROD@		; `string'
+PUBLIC	??_C@_0BA@MEPOIIPE@NOT_HORSE_SKILL@		; `string'
 PUBLIC	??_C@_0BD@HPCMPHGF@NEED_POISON_BOTTLE@		; `string'
-PUBLIC	??_C@_0BF@KPLOMIJE@NOT_MATCHABLE_WEAPON@	; `string'
+PUBLIC	??_C@_0BC@DDKDAKLO@NEED_EMPTY_BOTTLE@		; `string'
 PUBLIC	??_C@_0O@PFLGBNMN@NOT_YET_LEARN@		; `string'
-PUBLIC	??_C@_0O@CILBJNOC@NOT_ENOUGH_HP@		; `string'
+PUBLIC	??_C@_0BD@LIIMHBCN@REMOVE_FISHING_ROD@		; `string'
 PUBLIC	??_C@_0O@CCJDKKCC@WAIT_COOLTIME@		; `string'
-PUBLIC	??_C@_0DF@OHCKPFBO@?$CB?$CB?$CB?5Find?5strange?5game?5data?4?5Ple@ ; `string'
+PUBLIC	??_C@_0BF@KPLOMIJE@NOT_MATCHABLE_WEAPON@	; `string'
 PUBLIC	??_C@_0O@DIMCNBHD@NOT_ENOUGH_SP@		; `string'
-PUBLIC	??_C@_0EP@OENNGPFB@CPythonPlayer?3?3__UseSkill?$CIdwSlo@ ; `string'
+PUBLIC	??_C@_0O@CILBJNOC@NOT_ENOUGH_HP@		; `string'
 PUBLIC	??_C@_0BA@CFBPJACC@CANNOT_APPROACH@		; `string'
-PUBLIC	??_C@_0EC@MMFCNDJC@CPythonPlayer?3?3__UseSkill?$CIdwSlo@ ; `string'
+PUBLIC	??_C@_0DF@OHCKPFBO@?$CB?$CB?$CB?5Find?5strange?5game?5data?4?5Ple@ ; `string'
 PUBLIC	??_C@_0EB@JKMJGFLB@CPythonPlayer?3?3__UseSkill?$CIdwSlo@ ; `string'
-PUBLIC	??_C@_0FC@NMOECDOK@?5?$FLALERT?$FN?5?$LF?$LP?$LH?a?$LP?$KB?$LA?T?5?$LL?g?$LP?k?G?O?$LE?B?5?$LB?b?$LM?z@ ; `string'
+PUBLIC	??_C@_0EP@OENNGPFB@CPythonPlayer?3?3__UseSkill?$CIdwSlo@ ; `string'
 PUBLIC	??_C@_0BA@GMGJKDGM@CANNOT_USE_SELF@		; `string'
-PUBLIC	??_C@_0CB@HEDIGIHC@CANNOT_ATTACK_ENEMY_IN_SAFE_ARE@ ; `string'
+PUBLIC	??_C@_0EC@MMFCNDJC@CPythonPlayer?3?3__UseSkill?$CIdwSlo@ ; `string'
 PUBLIC	??_C@_0BC@CKDFNGK@ONLY_FOR_ALLIANCE@		; `string'
-PUBLIC	??_C@_0CI@EKHACINO@?5?$FLALERT?$FN?5The?5target?5is?5set?5to?5y@ ; `string'
+PUBLIC	??_C@_0FC@NMOECDOK@?5?$FLALERT?$FN?5?$LF?$LP?$LH?a?$LP?$KB?$LA?T?5?$LL?g?$LP?k?G?O?$LE?B?5?$LB?b?$LM?z@ ; `string'
 PUBLIC	??_C@_0O@BIOLCACO@CANNOT_ATTACK@		; `string'
-PUBLIC	??_C@_0DN@DLLIDDMA@CPythonPlayer?3?3__UseSkill?$CI?$CFd?$CJ?5?9@ ; `string'
+PUBLIC	??_C@_0CB@HEDIGIHC@CANNOT_ATTACK_ENEMY_IN_SAFE_ARE@ ; `string'
 PUBLIC	??_C@_0BA@FPMNLALM@ONLY_FOR_CORPSE@		; `string'
-PUBLIC	??_C@_0DP@EKGIGFIO@CPythonPlayer?3?3__SendUseSkill?$CId@ ; `string'
+PUBLIC	??_C@_0CI@EKHACINO@?5?$FLALERT?$FN?5The?5target?5is?5set?5to?5y@ ; `string'
 PUBLIC	??_C@_0EB@LKBFGOEE@CPythonPlayer?3?3__UseSkill?$CI?$CFd?$CJ?5?9@ ; `string'
-PUBLIC	??_C@_0BB@GJACMMFG@RunUseSkillEvent@		; `string'
+PUBLIC	??_C@_0DN@DLLIDDMA@CPythonPlayer?3?3__UseSkill?$CI?$CFd?$CJ?5?9@ ; `string'
 PUBLIC	??_C@_04IGFOPMNH@?$CIif?$CJ@			; `string'
-PUBLIC	??_C@_0BD@OHHCPGPG@ONLY_FOR_GUILD_WAR@		; `string'
+PUBLIC	??_C@_0DP@EKGIGFIO@CPythonPlayer?3?3__SendUseSkill?$CId@ ; `string'
 PUBLIC	??_C@_0FH@CAACOELN@CPythonPlayer?3?3UseGuildSkill?$CIdw@ ; `string'
-PUBLIC	??_C@_0EI@OMJBNOHB@CPythonPlayer?3?3SetComboSkillFla@ ; `string'
+PUBLIC	??_C@_0BB@GJACMMFG@RunUseSkillEvent@		; `string'
 PUBLIC	??_C@_0EE@GICPADML@CPythonPlayer?3?3UseGuildSkill?$CI?$CFd@ ; `string'
-PUBLIC	??_C@_0BC@ENEHNNJB@EQUIP_FISHING_ROD@		; `string'
+PUBLIC	??_C@_0BD@OHHCPGPG@ONLY_FOR_GUILD_WAR@		; `string'
 PUBLIC	??_C@_0FM@DHHFNKGI@CPythonPlayer?3?3SetComboSkillFla@ ; `string'
-;	COMDAT ??_C@_0FM@DHHFNKGI@CPythonPlayer?3?3SetComboSkillFla@
-CONST	SEGMENT
-??_C@_0FM@DHHFNKGI@CPythonPlayer?3?3SetComboSkillFla@ DB 'CPythonPlayer::'
-	DB	'SetComboSkillFlag(skillIndex=%d, skillLevel=%d) - Invalid Com'
-	DB	'bo Skill Level', 0aH, 00H			; `string'
-CONST	ENDS
+PUBLIC	??_C@_0EI@OMJBNOHB@CPythonPlayer?3?3SetComboSkillFla@ ; `string'
+PUBLIC	??_C@_0BC@ENEHNNJB@EQUIP_FISHING_ROD@		; `string'
 ;	COMDAT ??_C@_0BC@ENEHNNJB@EQUIP_FISHING_ROD@
 CONST	SEGMENT
 ??_C@_0BC@ENEHNNJB@EQUIP_FISHING_ROD@ DB 'EQUIP_FISHING_ROD', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0EE@GICPADML@CPythonPlayer?3?3UseGuildSkill?$CI?$CFd@
-CONST	SEGMENT
-??_C@_0EE@GICPADML@CPythonPlayer?3?3UseGuildSkill?$CI?$CFd@ DB 'CPythonPl'
-	DB	'ayer::UseGuildSkill(%d) - pkInstMain->NEW_UseSkill - ERROR', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EI@OMJBNOHB@CPythonPlayer?3?3SetComboSkillFla@
 CONST	SEGMENT
@@ -65,37 +54,39 @@ CONST	SEGMENT
 	DB	'SetComboSkillFlag(killIndex=%d) - Can''t Find Slot Index', 0aH
 	DB	00H						; `string'
 CONST	ENDS
+;	COMDAT ??_C@_0FM@DHHFNKGI@CPythonPlayer?3?3SetComboSkillFla@
+CONST	SEGMENT
+??_C@_0FM@DHHFNKGI@CPythonPlayer?3?3SetComboSkillFla@ DB 'CPythonPlayer::'
+	DB	'SetComboSkillFlag(skillIndex=%d, skillLevel=%d) - Invalid Com'
+	DB	'bo Skill Level', 0aH, 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BD@OHHCPGPG@ONLY_FOR_GUILD_WAR@
+CONST	SEGMENT
+??_C@_0BD@OHHCPGPG@ONLY_FOR_GUILD_WAR@ DB 'ONLY_FOR_GUILD_WAR', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0EE@GICPADML@CPythonPlayer?3?3UseGuildSkill?$CI?$CFd@
+CONST	SEGMENT
+??_C@_0EE@GICPADML@CPythonPlayer?3?3UseGuildSkill?$CI?$CFd@ DB 'CPythonPl'
+	DB	'ayer::UseGuildSkill(%d) - pkInstMain->NEW_UseSkill - ERROR', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BB@GJACMMFG@RunUseSkillEvent@
+CONST	SEGMENT
+??_C@_0BB@GJACMMFG@RunUseSkillEvent@ DB 'RunUseSkillEvent', 00H ; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0FH@CAACOELN@CPythonPlayer?3?3UseGuildSkill?$CIdw@
 CONST	SEGMENT
 ??_C@_0FH@CAACOELN@CPythonPlayer?3?3UseGuildSkill?$CIdw@ DB 'CPythonPlaye'
 	DB	'r::UseGuildSkill(dwSkillSlotIndex=%d) It''s not available ski'
 	DB	'll slot number', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@OHHCPGPG@ONLY_FOR_GUILD_WAR@
-CONST	SEGMENT
-??_C@_0BD@OHHCPGPG@ONLY_FOR_GUILD_WAR@ DB 'ONLY_FOR_GUILD_WAR', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_04IGFOPMNH@?$CIif?$CJ@
-CONST	SEGMENT
-??_C@_04IGFOPMNH@?$CIif?$CJ@ DB '(if)', 00H		; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BB@GJACMMFG@RunUseSkillEvent@
-CONST	SEGMENT
-??_C@_0BB@GJACMMFG@RunUseSkillEvent@ DB 'RunUseSkillEvent', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0EB@LKBFGOEE@CPythonPlayer?3?3__UseSkill?$CI?$CFd?$CJ?5?9@
-CONST	SEGMENT
-??_C@_0EB@LKBFGOEE@CPythonPlayer?3?3__UseSkill?$CI?$CFd?$CJ?5?9@ DB 'CPyt'
-	DB	'honPlayer::__UseSkill(%d) - pkInstMain->NEW_UseSkill - ERROR', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0DP@EKGIGFIO@CPythonPlayer?3?3__SendUseSkill?$CId@
 CONST	SEGMENT
 ??_C@_0DP@EKGIGFIO@CPythonPlayer?3?3__SendUseSkill?$CId@ DB 'CPythonPlaye'
 	DB	'r::__SendUseSkill(dwSkillSlotIndex=%d) - NOT CHECK', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@FPMNLALM@ONLY_FOR_CORPSE@
+;	COMDAT ??_C@_04IGFOPMNH@?$CIif?$CJ@
 CONST	SEGMENT
-??_C@_0BA@FPMNLALM@ONLY_FOR_CORPSE@ DB 'ONLY_FOR_CORPSE', 00H ; `string'
+??_C@_04IGFOPMNH@?$CIif?$CJ@ DB '(if)', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DN@DLLIDDMA@CPythonPlayer?3?3__UseSkill?$CI?$CFd?$CJ?5?9@
 CONST	SEGMENT
@@ -105,27 +96,28 @@ CONST	SEGMENT
 	DB	0c1H, 0a4H, 0c0H, 0bbH, ' ', 0c7H, 0d8H, 0beH, 0dfH, 0c7H, 0d4H
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@BIOLCACO@CANNOT_ATTACK@
+;	COMDAT ??_C@_0EB@LKBFGOEE@CPythonPlayer?3?3__UseSkill?$CI?$CFd?$CJ?5?9@
 CONST	SEGMENT
-??_C@_0O@BIOLCACO@CANNOT_ATTACK@ DB 'CANNOT_ATTACK', 00H ; `string'
+??_C@_0EB@LKBFGOEE@CPythonPlayer?3?3__UseSkill?$CI?$CFd?$CJ?5?9@ DB 'CPyt'
+	DB	'honPlayer::__UseSkill(%d) - pkInstMain->NEW_UseSkill - ERROR', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CI@EKHACINO@?5?$FLALERT?$FN?5The?5target?5is?5set?5to?5y@
 CONST	SEGMENT
 ??_C@_0CI@EKHACINO@?5?$FLALERT?$FN?5The?5target?5is?5set?5to?5y@ DB ' [AL'
 	DB	'ERT] The target is set to yourself', 0aH, 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@CKDFNGK@ONLY_FOR_ALLIANCE@
+;	COMDAT ??_C@_0BA@FPMNLALM@ONLY_FOR_CORPSE@
 CONST	SEGMENT
-??_C@_0BC@CKDFNGK@ONLY_FOR_ALLIANCE@ DB 'ONLY_FOR_ALLIANCE', 00H ; `string'
+??_C@_0BA@FPMNLALM@ONLY_FOR_CORPSE@ DB 'ONLY_FOR_CORPSE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CB@HEDIGIHC@CANNOT_ATTACK_ENEMY_IN_SAFE_ARE@
 CONST	SEGMENT
 ??_C@_0CB@HEDIGIHC@CANNOT_ATTACK_ENEMY_IN_SAFE_ARE@ DB 'CANNOT_ATTACK_ENE'
 	DB	'MY_IN_SAFE_AREA', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@GMGJKDGM@CANNOT_USE_SELF@
+;	COMDAT ??_C@_0O@BIOLCACO@CANNOT_ATTACK@
 CONST	SEGMENT
-??_C@_0BA@GMGJKDGM@CANNOT_USE_SELF@ DB 'CANNOT_USE_SELF', 00H ; `string'
+??_C@_0O@BIOLCACO@CANNOT_ATTACK@ DB 'CANNOT_ATTACK', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FC@NMOECDOK@?5?$FLALERT?$FN?5?$LF?$LP?$LH?a?$LP?$KB?$LA?T?5?$LL?g?$LP?k?G?O?$LE?B?5?$LB?b?$LM?z@
 CONST	SEGMENT
@@ -138,19 +130,18 @@ CONST	SEGMENT
 	DB	' ', 0c0H, 0daH, 0bdH, 0c5H, 0bfH, 0a1H, 0b0H, 0d4H, 0b7H, 0ceH
 	DB	' ', 0c0H, 0e7H, 0bcH, 0b3H, 0c1H, 0a4H, 0aH, 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EB@JKMJGFLB@CPythonPlayer?3?3__UseSkill?$CIdwSlo@
+;	COMDAT ??_C@_0BC@CKDFNGK@ONLY_FOR_ALLIANCE@
 CONST	SEGMENT
-??_C@_0EB@JKMJGFLB@CPythonPlayer?3?3__UseSkill?$CIdwSlo@ DB 'CPythonPlaye'
-	DB	'r::__UseSkill(dwSlotIndex=%d) There is no skill data', 00H ; `string'
+??_C@_0BC@CKDFNGK@ONLY_FOR_ALLIANCE@ DB 'ONLY_FOR_ALLIANCE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EC@MMFCNDJC@CPythonPlayer?3?3__UseSkill?$CIdwSlo@
 CONST	SEGMENT
 ??_C@_0EC@MMFCNDJC@CPythonPlayer?3?3__UseSkill?$CIdwSlo@ DB 'CPythonPlaye'
 	DB	'r::__UseSkill(dwSlotIndex=%d) There is no main player', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@CFBPJACC@CANNOT_APPROACH@
+;	COMDAT ??_C@_0BA@GMGJKDGM@CANNOT_USE_SELF@
 CONST	SEGMENT
-??_C@_0BA@CFBPJACC@CANNOT_APPROACH@ DB 'CANNOT_APPROACH', 00H ; `string'
+??_C@_0BA@GMGJKDGM@CANNOT_USE_SELF@ DB 'CANNOT_USE_SELF', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EP@OENNGPFB@CPythonPlayer?3?3__UseSkill?$CIdwSlo@
 CONST	SEGMENT
@@ -158,62 +149,71 @@ CONST	SEGMENT
 	DB	'r::__UseSkill(dwSlotIndex=%d) It''s not available skill slot '
 	DB	'number', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@DIMCNBHD@NOT_ENOUGH_SP@
+;	COMDAT ??_C@_0EB@JKMJGFLB@CPythonPlayer?3?3__UseSkill?$CIdwSlo@
 CONST	SEGMENT
-??_C@_0O@DIMCNBHD@NOT_ENOUGH_SP@ DB 'NOT_ENOUGH_SP', 00H ; `string'
+??_C@_0EB@JKMJGFLB@CPythonPlayer?3?3__UseSkill?$CIdwSlo@ DB 'CPythonPlaye'
+	DB	'r::__UseSkill(dwSlotIndex=%d) There is no skill data', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DF@OHCKPFBO@?$CB?$CB?$CB?5Find?5strange?5game?5data?4?5Ple@
 CONST	SEGMENT
 ??_C@_0DF@OHCKPFBO@?$CB?$CB?$CB?5Find?5strange?5game?5data?4?5Ple@ DB '!!'
 	DB	'! Find strange game data. Please reinstall metin2.', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@CCJDKKCC@WAIT_COOLTIME@
+;	COMDAT ??_C@_0BA@CFBPJACC@CANNOT_APPROACH@
 CONST	SEGMENT
-??_C@_0O@CCJDKKCC@WAIT_COOLTIME@ DB 'WAIT_COOLTIME', 00H ; `string'
+??_C@_0BA@CFBPJACC@CANNOT_APPROACH@ DB 'CANNOT_APPROACH', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@CILBJNOC@NOT_ENOUGH_HP@
 CONST	SEGMENT
 ??_C@_0O@CILBJNOC@NOT_ENOUGH_HP@ DB 'NOT_ENOUGH_HP', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@PFLGBNMN@NOT_YET_LEARN@
+;	COMDAT ??_C@_0O@DIMCNBHD@NOT_ENOUGH_SP@
 CONST	SEGMENT
-??_C@_0O@PFLGBNMN@NOT_YET_LEARN@ DB 'NOT_YET_LEARN', 00H ; `string'
+??_C@_0O@DIMCNBHD@NOT_ENOUGH_SP@ DB 'NOT_ENOUGH_SP', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@KPLOMIJE@NOT_MATCHABLE_WEAPON@
 CONST	SEGMENT
 ??_C@_0BF@KPLOMIJE@NOT_MATCHABLE_WEAPON@ DB 'NOT_MATCHABLE_WEAPON', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@HPCMPHGF@NEED_POISON_BOTTLE@
+;	COMDAT ??_C@_0O@CCJDKKCC@WAIT_COOLTIME@
 CONST	SEGMENT
-??_C@_0BD@HPCMPHGF@NEED_POISON_BOTTLE@ DB 'NEED_POISON_BOTTLE', 00H ; `string'
+??_C@_0O@CCJDKKCC@WAIT_COOLTIME@ DB 'WAIT_COOLTIME', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@LIIMHBCN@REMOVE_FISHING_ROD@
 CONST	SEGMENT
 ??_C@_0BD@LIIMHBCN@REMOVE_FISHING_ROD@ DB 'REMOVE_FISHING_ROD', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@DJBFACMO@HAVE_TO_RIDE@
+;	COMDAT ??_C@_0O@PFLGBNMN@NOT_YET_LEARN@
 CONST	SEGMENT
-??_C@_0N@DJBFACMO@HAVE_TO_RIDE@ DB 'HAVE_TO_RIDE', 00H	; `string'
+??_C@_0O@PFLGBNMN@NOT_YET_LEARN@ DB 'NOT_YET_LEARN', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@DDKDAKLO@NEED_EMPTY_BOTTLE@
 CONST	SEGMENT
 ??_C@_0BC@DDKDAKLO@NEED_EMPTY_BOTTLE@ DB 'NEED_EMPTY_BOTTLE', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@IOEPNDLO@ChangeCurrentSkill@
+;	COMDAT ??_C@_0BD@HPCMPHGF@NEED_POISON_BOTTLE@
 CONST	SEGMENT
-??_C@_0BD@IOEPNDLO@ChangeCurrentSkill@ DB 'ChangeCurrentSkill', 00H ; `string'
+??_C@_0BD@HPCMPHGF@NEED_POISON_BOTTLE@ DB 'NEED_POISON_BOTTLE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@MEPOIIPE@NOT_HORSE_SKILL@
 CONST	SEGMENT
 ??_C@_0BA@MEPOIIPE@NOT_HORSE_SKILL@ DB 'NOT_HORSE_SKILL', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@OADAMGHE@ClearAffects@
+;	COMDAT ??_C@_0N@DJBFACMO@HAVE_TO_RIDE@
 CONST	SEGMENT
-??_C@_0N@OADAMGHE@ClearAffects@ DB 'ClearAffects', 00H	; `string'
+??_C@_0N@DJBFACMO@HAVE_TO_RIDE@ DB 'HAVE_TO_RIDE', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@HBOAHMLO@ResetAffect@
 CONST	SEGMENT
 ??_C@_0M@HBOAHMLO@ResetAffect@ DB 'ResetAffect', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BD@IOEPNDLO@ChangeCurrentSkill@
+CONST	SEGMENT
+??_C@_0BD@IOEPNDLO@ChangeCurrentSkill@ DB 'ChangeCurrentSkill', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0N@OADAMGHE@ClearAffects@
+CONST	SEGMENT
+??_C@_0N@OADAMGHE@ClearAffects@ DB 'ClearAffects', 00H	; `string'
 PUBLIC	?Instance@?$CSingleton@VIBackground@@@@SAAAVIBackground@@XZ ; CSingleton<IBackground>::Instance
 PUBLIC	?__CheckSpecialSkill@CPythonPlayer@@IAE_NK@Z	; CPythonPlayer::__CheckSpecialSkill
 PUBLIC	?__HasItem@CPythonPlayer@@IAE_NK@Z		; CPythonPlayer::__HasItem

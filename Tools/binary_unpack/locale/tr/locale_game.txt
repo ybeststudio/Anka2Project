@@ -4537,3 +4537,4 @@ NEW_AFFECT_AUTO_HUNT	Otomatik Av	SNA
 OTO_SATIS	|Eemoji/key_ctrl|e + |Eemoji/key_x|e + |Eemoji/key_rclick|e - Otomatik Sat.
 OTOMATIK_SAT_UYARI	<Otomatik Satma> 1 den fazla itemi ekleyemezsin, önce itemi ayýr!
 OTOMATIK_SAT_UYARI_SANDIK	<Otomatik Satma> Sandýklarý otomatik satmaya ekleyemezsin!
+POSSIBLE_ORE    Uygun Cevher:

@@ -8,15 +8,15 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0DD@MNMGJOCJ@CPythonPlayer?3?3__OnPressItem?5?9?5@ ; `string'
 PUBLIC	??_C@_0BB@KPNAHCEN@SetPCTargetBoard@		; `string'
-PUBLIC	??_C@_0BB@BOHMBBJL@OnCannotUseSkill@		; `string'
 PUBLIC	??_C@_0BE@DLANHBIF@OnFishingWrongPlace@		; `string'
-PUBLIC	??_C@_0N@OPOOJDCJ@OnCannotShot@			; `string'
+PUBLIC	??_C@_0DD@MNMGJOCJ@CPythonPlayer?3?3__OnPressItem?5?9?5@ ; `string'
 PUBLIC	??_C@_0M@FBIHMJDM@EMPTY_ARROW@			; `string'
-PUBLIC	??_C@_0N@KDALDMKB@DEST_IN_SAFE@			; `string'
+PUBLIC	??_C@_0BB@BOHMBBJL@OnCannotUseSkill@		; `string'
 PUBLIC	??_C@_07OAOBINCH@IN_SAFE@			; `string'
+PUBLIC	??_C@_0N@OPOOJDCJ@OnCannotShot@			; `string'
 PUBLIC	??_C@_0P@BFHKDLNH@OnCannotAttack@		; `string'
+PUBLIC	??_C@_0N@KDALDMKB@DEST_IN_SAFE@			; `string'
 EXTRN	?CameraRotationToCharacterRotation@@YAMM@Z:PROC	; CameraRotationToCharacterRotation
 EXTRN	?Logn@@YAXIPBD@Z:PROC				; Logn
 EXTRN	?SetFlyEventHandler@CActorInstance@@QAEXPAVIFlyEventHandler@@@Z:PROC ; CActorInstance::SetFlyEventHandler
@@ -28,42 +28,42 @@ _BSS	ENDS
 _BSS	SEGMENT
 ?s_dwLastPickItemID@?1??__OnPressItem@CPythonPlayer@@IAEXAAVCInstanceBase@@K@Z@4KA DD 01H DUP (?) ; `CPythonPlayer::__OnPressItem'::`2'::s_dwLastPickItemID
 _BSS	ENDS
-;	COMDAT ??_C@_0P@BFHKDLNH@OnCannotAttack@
-CONST	SEGMENT
-??_C@_0P@BFHKDLNH@OnCannotAttack@ DB 'OnCannotAttack', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_07OAOBINCH@IN_SAFE@
-CONST	SEGMENT
-??_C@_07OAOBINCH@IN_SAFE@ DB 'IN_SAFE', 00H		; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0N@KDALDMKB@DEST_IN_SAFE@
 CONST	SEGMENT
 ??_C@_0N@KDALDMKB@DEST_IN_SAFE@ DB 'DEST_IN_SAFE', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@FBIHMJDM@EMPTY_ARROW@
+;	COMDAT ??_C@_0P@BFHKDLNH@OnCannotAttack@
 CONST	SEGMENT
-??_C@_0M@FBIHMJDM@EMPTY_ARROW@ DB 'EMPTY_ARROW', 00H	; `string'
+??_C@_0P@BFHKDLNH@OnCannotAttack@ DB 'OnCannotAttack', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@OPOOJDCJ@OnCannotShot@
 CONST	SEGMENT
 ??_C@_0N@OPOOJDCJ@OnCannotShot@ DB 'OnCannotShot', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@DLANHBIF@OnFishingWrongPlace@
+;	COMDAT ??_C@_07OAOBINCH@IN_SAFE@
 CONST	SEGMENT
-??_C@_0BE@DLANHBIF@OnFishingWrongPlace@ DB 'OnFishingWrongPlace', 00H ; `string'
+??_C@_07OAOBINCH@IN_SAFE@ DB 'IN_SAFE', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@BOHMBBJL@OnCannotUseSkill@
 CONST	SEGMENT
 ??_C@_0BB@BOHMBBJL@OnCannotUseSkill@ DB 'OnCannotUseSkill', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@KPNAHCEN@SetPCTargetBoard@
+;	COMDAT ??_C@_0M@FBIHMJDM@EMPTY_ARROW@
 CONST	SEGMENT
-??_C@_0BB@KPNAHCEN@SetPCTargetBoard@ DB 'SetPCTargetBoard', 00H ; `string'
+??_C@_0M@FBIHMJDM@EMPTY_ARROW@ DB 'EMPTY_ARROW', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DD@MNMGJOCJ@CPythonPlayer?3?3__OnPressItem?5?9?5@
 CONST	SEGMENT
 ??_C@_0DD@MNMGJOCJ@CPythonPlayer?3?3__OnPressItem?5?9?5@ DB 'CPythonPlaye'
 	DB	'r::__OnPressItem - ALREADY PICKED ITEM', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BE@DLANHBIF@OnFishingWrongPlace@
+CONST	SEGMENT
+??_C@_0BE@DLANHBIF@OnFishingWrongPlace@ DB 'OnFishingWrongPlace', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BB@KPNAHCEN@SetPCTargetBoard@
+CONST	SEGMENT
+??_C@_0BB@KPNAHCEN@SetPCTargetBoard@ DB 'SetPCTargetBoard', 00H ; `string'
 PUBLIC	?GetScreenWidth@CWindowManager@UI@@QAEJXZ	; UI::CWindowManager::GetScreenWidth
 PUBLIC	?GetScreenHeight@CWindowManager@UI@@QAEJXZ	; UI::CWindowManager::GetScreenHeight
 PUBLIC	?__SetAutoAttackTargetActorID@CPythonPlayer@@IAEXK@Z ; CPythonPlayer::__SetAutoAttackTargetActorID

@@ -664,3 +664,6 @@ if app.ENABLE_GROWTH_PET_SYSTEM:
 		text += str(hour)
 
 		return text
+
+# Cevher bilgisi için locale tanýmý
+POSSIBLE_ORE = "Kullanýlabilir Cevher:"

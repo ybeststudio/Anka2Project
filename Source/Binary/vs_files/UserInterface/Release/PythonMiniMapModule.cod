@@ -8,42 +8,42 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0CO@JOBACLFH@CPythonMiniMap?3?3Instance?$CI?$CJ?4Load@ ; `string'
 PUBLIC	??_C@_05BHNEPGFM@isiil@				; `string'
-PUBLIC	??_C@_03LMKNDPCK@bii@				; `string'
 PUBLIC	??_C@_07LBOJHCOE@isiilii@			; `string'
-PUBLIC	??_C@_07CNPAFGOE@ScaleUp@			; `string'
+PUBLIC	??_C@_0CO@JOBACLFH@CPythonMiniMap?3?3Instance?$CI?$CJ?4Load@ ; `string'
 PUBLIC	??_C@_08FMFAIGAB@SetScale@			; `string'
-PUBLIC	??_C@_0P@JDEKHKMA@SetMiniMapSize@		; `string'
+PUBLIC	??_C@_03LMKNDPCK@bii@				; `string'
 PUBLIC	??_C@_09EHCACONO@ScaleDown@			; `string'
-PUBLIC	??_C@_09IMDAKKFO@LoadAtlas@			; `string'
+PUBLIC	??_C@_07CNPAFGOE@ScaleUp@			; `string'
 PUBLIC	??_C@_06FDNPFPAD@isShow@			; `string'
-PUBLIC	??_C@_0M@KMBFBAJA@RenderAtlas@			; `string'
+PUBLIC	??_C@_0P@JDEKHKMA@SetMiniMapSize@		; `string'
 PUBLIC	??_C@_0M@EIPBNHOF@UpdateAtlas@			; `string'
-PUBLIC	??_C@_09BIFGHGHO@HideAtlas@			; `string'
+PUBLIC	??_C@_09IMDAKKFO@LoadAtlas@			; `string'
 PUBLIC	??_C@_09HNEIIJJD@ShowAtlas@			; `string'
-PUBLIC	??_C@_07IFCOGPLJ@IsAtlas@			; `string'
+PUBLIC	??_C@_0M@KMBFBAJA@RenderAtlas@			; `string'
 PUBLIC	??_C@_0M@DHCMEFOB@isShowAtlas@			; `string'
-PUBLIC	??_C@_0N@ENAKBIJM@GetAtlasSize@			; `string'
+PUBLIC	??_C@_09BIFGHGHO@HideAtlas@			; `string'
 PUBLIC	??_C@_0N@BFFOBNJI@GetAtlasInfo@			; `string'
-PUBLIC	??_C@_0P@BPFHEFHK@RemoveWayPoint@		; `string'
+PUBLIC	??_C@_07IFCOGPLJ@IsAtlas@			; `string'
 PUBLIC	??_C@_0M@DMLHJAOH@AddWayPoint@			; `string'
-PUBLIC	??_C@_0BG@BMPPHBMB@UnregisterAtlasWindow@	; `string'
+PUBLIC	??_C@_0N@ENAKBIJM@GetAtlasSize@			; `string'
 PUBLIC	??_C@_0BE@DJCJPBHI@RegisterAtlasWindow@		; `string'
-PUBLIC	??_C@_0O@FMBJAKFC@SetAtlasScale@		; `string'
+PUBLIC	??_C@_0P@BPFHEFHK@RemoveWayPoint@		; `string'
 PUBLIC	??_C@_0P@JOOPKKLO@GetGuildAreaID@		; `string'
-PUBLIC	??_C@_0BB@POEIPFHN@SetAutoHuntRange@		; `string'
+PUBLIC	??_C@_0BG@BMPPHBMB@UnregisterAtlasWindow@	; `string'
 PUBLIC	??_C@_0BH@ECDLLKHP@SetAutoHuntRangeStatus@	; `string'
-PUBLIC	??_C@_08MOLNEDKJ@TYPE_OPC@			; `string'
+PUBLIC	??_C@_0O@FMBJAKFC@SetAtlasScale@		; `string'
 PUBLIC	??_C@_07GGJFLPNN@miniMap@			; `string'
-PUBLIC	??_C@_0BA@DAENBNGA@TYPE_OPCPVPSELF@		; `string'
+PUBLIC	??_C@_0BB@POEIPFHN@SetAutoHuntRange@		; `string'
 PUBLIC	??_C@_0M@KBKKLFCC@TYPE_OPCPVP@			; `string'
-PUBLIC	??_C@_0N@MFCFPPMD@TYPE_MONSTER@			; `string'
+PUBLIC	??_C@_08MOLNEDKJ@TYPE_OPC@			; `string'
 PUBLIC	??_C@_08HGABCEMM@TYPE_NPC@			; `string'
-PUBLIC	??_C@_0O@JMCMGHKJ@TYPE_WAYPOINT@		; `string'
+PUBLIC	??_C@_0BA@DAENBNGA@TYPE_OPCPVPSELF@		; `string'
 PUBLIC	??_C@_09LAKONOKF@TYPE_WARP@			; `string'
-PUBLIC	??_C@_0M@IAHPEAKG@TYPE_EMPIRE@			; `string'
+PUBLIC	??_C@_0N@MFCFPPMD@TYPE_MONSTER@			; `string'
 PUBLIC	??_C@_0L@NHHJIHMA@TYPE_PARTY@			; `string'
+PUBLIC	??_C@_0O@JMCMGHKJ@TYPE_WAYPOINT@		; `string'
+PUBLIC	??_C@_0M@IAHPEAKG@TYPE_EMPIRE@			; `string'
 EXTRN	?PR_ICNV@@3JA:DWORD				; PR_ICNV
 EXTRN	?PR_FCNV@@3MA:DWORD				; PR_FCNV
 ;	COMDAT ?s_methods@?1??initMiniMap@@YAXXZ@4PAUPyMethodDef@@A
@@ -172,150 +172,150 @@ _DATA	SEGMENT
 	DD	00H
 	ORG $+8
 _DATA	ENDS
-;	COMDAT ??_C@_0L@NHHJIHMA@TYPE_PARTY@
-CONST	SEGMENT
-??_C@_0L@NHHJIHMA@TYPE_PARTY@ DB 'TYPE_PARTY', 00H	; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0M@IAHPEAKG@TYPE_EMPIRE@
 CONST	SEGMENT
 ??_C@_0M@IAHPEAKG@TYPE_EMPIRE@ DB 'TYPE_EMPIRE', 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_09LAKONOKF@TYPE_WARP@
-CONST	SEGMENT
-??_C@_09LAKONOKF@TYPE_WARP@ DB 'TYPE_WARP', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@JMCMGHKJ@TYPE_WAYPOINT@
 CONST	SEGMENT
 ??_C@_0O@JMCMGHKJ@TYPE_WAYPOINT@ DB 'TYPE_WAYPOINT', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08HGABCEMM@TYPE_NPC@
+;	COMDAT ??_C@_0L@NHHJIHMA@TYPE_PARTY@
 CONST	SEGMENT
-??_C@_08HGABCEMM@TYPE_NPC@ DB 'TYPE_NPC', 00H		; `string'
+??_C@_0L@NHHJIHMA@TYPE_PARTY@ DB 'TYPE_PARTY', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@MFCFPPMD@TYPE_MONSTER@
 CONST	SEGMENT
 ??_C@_0N@MFCFPPMD@TYPE_MONSTER@ DB 'TYPE_MONSTER', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@KBKKLFCC@TYPE_OPCPVP@
+;	COMDAT ??_C@_09LAKONOKF@TYPE_WARP@
 CONST	SEGMENT
-??_C@_0M@KBKKLFCC@TYPE_OPCPVP@ DB 'TYPE_OPCPVP', 00H	; `string'
+??_C@_09LAKONOKF@TYPE_WARP@ DB 'TYPE_WARP', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@DAENBNGA@TYPE_OPCPVPSELF@
 CONST	SEGMENT
 ??_C@_0BA@DAENBNGA@TYPE_OPCPVPSELF@ DB 'TYPE_OPCPVPSELF', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07GGJFLPNN@miniMap@
+;	COMDAT ??_C@_08HGABCEMM@TYPE_NPC@
 CONST	SEGMENT
-??_C@_07GGJFLPNN@miniMap@ DB 'miniMap', 00H		; `string'
+??_C@_08HGABCEMM@TYPE_NPC@ DB 'TYPE_NPC', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08MOLNEDKJ@TYPE_OPC@
 CONST	SEGMENT
 ??_C@_08MOLNEDKJ@TYPE_OPC@ DB 'TYPE_OPC', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@ECDLLKHP@SetAutoHuntRangeStatus@
+;	COMDAT ??_C@_0M@KBKKLFCC@TYPE_OPCPVP@
 CONST	SEGMENT
-??_C@_0BH@ECDLLKHP@SetAutoHuntRangeStatus@ DB 'SetAutoHuntRangeStatus', 00H ; `string'
+??_C@_0M@KBKKLFCC@TYPE_OPCPVP@ DB 'TYPE_OPCPVP', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@POEIPFHN@SetAutoHuntRange@
 CONST	SEGMENT
 ??_C@_0BB@POEIPFHN@SetAutoHuntRange@ DB 'SetAutoHuntRange', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@JOOPKKLO@GetGuildAreaID@
+;	COMDAT ??_C@_07GGJFLPNN@miniMap@
 CONST	SEGMENT
-??_C@_0P@JOOPKKLO@GetGuildAreaID@ DB 'GetGuildAreaID', 00H ; `string'
+??_C@_07GGJFLPNN@miniMap@ DB 'miniMap', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@FMBJAKFC@SetAtlasScale@
 CONST	SEGMENT
 ??_C@_0O@FMBJAKFC@SetAtlasScale@ DB 'SetAtlasScale', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@DJCJPBHI@RegisterAtlasWindow@
+;	COMDAT ??_C@_0BH@ECDLLKHP@SetAutoHuntRangeStatus@
 CONST	SEGMENT
-??_C@_0BE@DJCJPBHI@RegisterAtlasWindow@ DB 'RegisterAtlasWindow', 00H ; `string'
+??_C@_0BH@ECDLLKHP@SetAutoHuntRangeStatus@ DB 'SetAutoHuntRangeStatus', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@BMPPHBMB@UnregisterAtlasWindow@
 CONST	SEGMENT
 ??_C@_0BG@BMPPHBMB@UnregisterAtlasWindow@ DB 'UnregisterAtlasWindow', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@DMLHJAOH@AddWayPoint@
+;	COMDAT ??_C@_0P@JOOPKKLO@GetGuildAreaID@
 CONST	SEGMENT
-??_C@_0M@DMLHJAOH@AddWayPoint@ DB 'AddWayPoint', 00H	; `string'
+??_C@_0P@JOOPKKLO@GetGuildAreaID@ DB 'GetGuildAreaID', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@BPFHEFHK@RemoveWayPoint@
 CONST	SEGMENT
 ??_C@_0P@BPFHEFHK@RemoveWayPoint@ DB 'RemoveWayPoint', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@BFFOBNJI@GetAtlasInfo@
+;	COMDAT ??_C@_0BE@DJCJPBHI@RegisterAtlasWindow@
 CONST	SEGMENT
-??_C@_0N@BFFOBNJI@GetAtlasInfo@ DB 'GetAtlasInfo', 00H	; `string'
+??_C@_0BE@DJCJPBHI@RegisterAtlasWindow@ DB 'RegisterAtlasWindow', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@ENAKBIJM@GetAtlasSize@
 CONST	SEGMENT
 ??_C@_0N@ENAKBIJM@GetAtlasSize@ DB 'GetAtlasSize', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@DHCMEFOB@isShowAtlas@
+;	COMDAT ??_C@_0M@DMLHJAOH@AddWayPoint@
 CONST	SEGMENT
-??_C@_0M@DHCMEFOB@isShowAtlas@ DB 'isShowAtlas', 00H	; `string'
+??_C@_0M@DMLHJAOH@AddWayPoint@ DB 'AddWayPoint', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07IFCOGPLJ@IsAtlas@
 CONST	SEGMENT
 ??_C@_07IFCOGPLJ@IsAtlas@ DB 'IsAtlas', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09HNEIIJJD@ShowAtlas@
+;	COMDAT ??_C@_0N@BFFOBNJI@GetAtlasInfo@
 CONST	SEGMENT
-??_C@_09HNEIIJJD@ShowAtlas@ DB 'ShowAtlas', 00H		; `string'
+??_C@_0N@BFFOBNJI@GetAtlasInfo@ DB 'GetAtlasInfo', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09BIFGHGHO@HideAtlas@
 CONST	SEGMENT
 ??_C@_09BIFGHGHO@HideAtlas@ DB 'HideAtlas', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@EIPBNHOF@UpdateAtlas@
+;	COMDAT ??_C@_0M@DHCMEFOB@isShowAtlas@
 CONST	SEGMENT
-??_C@_0M@EIPBNHOF@UpdateAtlas@ DB 'UpdateAtlas', 00H	; `string'
+??_C@_0M@DHCMEFOB@isShowAtlas@ DB 'isShowAtlas', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@KMBFBAJA@RenderAtlas@
 CONST	SEGMENT
 ??_C@_0M@KMBFBAJA@RenderAtlas@ DB 'RenderAtlas', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06FDNPFPAD@isShow@
+;	COMDAT ??_C@_09HNEIIJJD@ShowAtlas@
 CONST	SEGMENT
-??_C@_06FDNPFPAD@isShow@ DB 'isShow', 00H		; `string'
+??_C@_09HNEIIJJD@ShowAtlas@ DB 'ShowAtlas', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09IMDAKKFO@LoadAtlas@
 CONST	SEGMENT
 ??_C@_09IMDAKKFO@LoadAtlas@ DB 'LoadAtlas', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09EHCACONO@ScaleDown@
+;	COMDAT ??_C@_0M@EIPBNHOF@UpdateAtlas@
 CONST	SEGMENT
-??_C@_09EHCACONO@ScaleDown@ DB 'ScaleDown', 00H		; `string'
+??_C@_0M@EIPBNHOF@UpdateAtlas@ DB 'UpdateAtlas', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@JDEKHKMA@SetMiniMapSize@
 CONST	SEGMENT
 ??_C@_0P@JDEKHKMA@SetMiniMapSize@ DB 'SetMiniMapSize', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08FMFAIGAB@SetScale@
+;	COMDAT ??_C@_06FDNPFPAD@isShow@
 CONST	SEGMENT
-??_C@_08FMFAIGAB@SetScale@ DB 'SetScale', 00H		; `string'
+??_C@_06FDNPFPAD@isShow@ DB 'isShow', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07CNPAFGOE@ScaleUp@
 CONST	SEGMENT
 ??_C@_07CNPAFGOE@ScaleUp@ DB 'ScaleUp', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07LBOJHCOE@isiilii@
+;	COMDAT ??_C@_09EHCACONO@ScaleDown@
 CONST	SEGMENT
-??_C@_07LBOJHCOE@isiilii@ DB 'isiilii', 00H		; `string'
+??_C@_09EHCACONO@ScaleDown@ DB 'ScaleDown', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_03LMKNDPCK@bii@
 CONST	SEGMENT
 ??_C@_03LMKNDPCK@bii@ DB 'bii', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05BHNEPGFM@isiil@
+;	COMDAT ??_C@_08FMFAIGAB@SetScale@
 CONST	SEGMENT
-??_C@_05BHNEPGFM@isiil@ DB 'isiil', 00H			; `string'
+??_C@_08FMFAIGAB@SetScale@ DB 'SetScale', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CO@JOBACLFH@CPythonMiniMap?3?3Instance?$CI?$CJ?4Load@
 CONST	SEGMENT
 ??_C@_0CO@JOBACLFH@CPythonMiniMap?3?3Instance?$CI?$CJ?4Load@ DB 'CPythonM'
 	DB	'iniMap::Instance().LoadAtlas() Failed', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_07LBOJHCOE@isiilii@
+CONST	SEGMENT
+??_C@_07LBOJHCOE@isiilii@ DB 'isiilii', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_05BHNEPGFM@isiil@
+CONST	SEGMENT
+??_C@_05BHNEPGFM@isiil@ DB 'isiil', 00H			; `string'
 PUBLIC	?initMiniMap@@YAXXZ				; initMiniMap
 PUBLIC	?miniMapSetAutoHuntRange@@YAPAU_object@@PAU1@0@Z ; miniMapSetAutoHuntRange
 PUBLIC	?miniMapSetAutoHuntRangeStatus@@YAPAU_object@@PAU1@0@Z ; miniMapSetAutoHuntRangeStatus

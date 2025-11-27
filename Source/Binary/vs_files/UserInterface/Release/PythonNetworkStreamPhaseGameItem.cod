@@ -8,167 +8,158 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0EC@GGOCNHNP@CPythonNetworkStream?3?3SendSafeB@ ; `string'
-PUBLIC	??_C@_1IK@DDJDFHDO@?$AA?$CB?$AA?$CC?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr@ ; `string'
 PUBLIC	??_C@_1MK@OOIHIAGH@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
-PUBLIC	??_C@_0BC@GDFDGKCD@OpenSafeboxWindow@		; `string'
+PUBLIC	??_C@_0EC@GGOCNHNP@CPythonNetworkStream?3?3SendSafeB@ ; `string'
 PUBLIC	??_C@_0P@BMBKKGBC@OnSafeBoxError@		; `string'
-PUBLIC	??_C@_0P@OIFPJOPL@OpenMallWindow@		; `string'
+PUBLIC	??_C@_1IK@DDJDFHDO@?$AA?$CB?$AA?$CC?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr@ ; `string'
 PUBLIC	??_C@_0BE@OHCDIKPF@RefreshSafeboxMoney@		; `string'
-PUBLIC	??_C@_0BG@ELBKFGDM@BINARY_Highlight_Item@	; `string'
+PUBLIC	??_C@_0BC@GDFDGKCD@OpenSafeboxWindow@		; `string'
 PUBLIC	??_C@_0DB@JMGJIAKF@?5?$DO?$DO?5CPythonNetworkStream?3?3RecvM@ ; `string'
-PUBLIC	??_C@_0BJ@GJICJJME@SendShopBuyPacket?5Error?6@	; `string'
+PUBLIC	??_C@_0P@OIFPJOPL@OpenMallWindow@		; `string'
 PUBLIC	??_C@_0BJ@ENIABNOP@SendShopEndPacket?5Error?6@	; `string'
-PUBLIC	??_C@_0BN@PEGCCLIG@SendShopAddSellPacket?5Error?6@ ; `string'
+PUBLIC	??_C@_0BG@ELBKFGDM@BINARY_Highlight_Item@	; `string'
 PUBLIC	??_C@_0BK@NFAAJDME@SendShopSellPacket?5Error?6@	; `string'
-PUBLIC	??_C@_0BG@KBOLGOPL@CANNOT_EQUIP_EXCHANGE@	; `string'
+PUBLIC	??_C@_0BJ@GJICJJME@SendShopBuyPacket?5Error?6@	; `string'
 PUBLIC	??_C@_0CP@LICKGIJF@?5SendShopSellPacketNew?$CIbySlot?$DN?$CF@ ; `string'
-PUBLIC	??_C@_0BC@GKDHAPBC@CANNOT_EQUIP_SHOP@		; `string'
+PUBLIC	??_C@_0BN@PEGCCLIG@SendShopAddSellPacket?5Error?6@ ; `string'
 PUBLIC	??_C@_0BL@HGBMODPD@BINARY_AppendNotifyMessage@	; `string'
-PUBLIC	??_C@_0BO@FFKONCIG@SendItemUseToItemPacket?5Error@ ; `string'
+PUBLIC	??_C@_0BG@KBOLGOPL@CANNOT_EQUIP_EXCHANGE@	; `string'
 PUBLIC	??_C@_0BI@ECNPLDED@SendItemUsePacket?5Error@	; `string'
-PUBLIC	??_C@_0BM@ICMBBAFL@SendItemDestroyPacket?5Error@ ; `string'
+PUBLIC	??_C@_0BC@GKDHAPBC@CANNOT_EQUIP_SHOP@		; `string'
 PUBLIC	??_C@_0BJ@OIBPCJHH@SendItemDropPacket?5Error@	; `string'
-PUBLIC	??_C@_0BL@DCHNPPOD@SendItemPickUpPacket?5Error@	; `string'
+PUBLIC	??_C@_0BO@FFKONCIG@SendItemUseToItemPacket?5Error@ ; `string'
 PUBLIC	??_C@_0BJ@LGMFALEM@SendItemMovePacket?5Error@	; `string'
-PUBLIC	??_C@_0BN@BNCAGMGN@SendQuickSlotDelPacket?5Error@ ; `string'
+PUBLIC	??_C@_0BM@ICMBBAFL@SendItemDestroyPacket?5Error@ ; `string'
 PUBLIC	??_C@_0BN@ONNLHEKF@SendQuickSlotAddPacket?5Error@ ; `string'
-PUBLIC	??_C@_0DL@PLJBBCEI@?$CFd?5?$LE?B?5?$LO?x?$LE?B?5?$LN?$LK?F?d?$LM?H?5?$MA?L?F?e?F?$KO?5?$LJ?x?H?$KD?$MA?T@ ; `string'
+PUBLIC	??_C@_0BL@DCHNPPOD@SendItemPickUpPacket?5Error@	; `string'
 PUBLIC	??_C@_0BO@MHEMOJBJ@SendQuickSlotSwapPacket?5Error@ ; `string'
-PUBLIC	??_C@_0BM@PCGGGFKG@sound?1ambience?1gm_alert?4wav@ ; `string'
+PUBLIC	??_C@_0BN@BNCAGMGN@SendQuickSlotDelPacket?5Error@ ; `string'
 PUBLIC	??_C@_0BF@HCHHHOJB@yellow_tigerman_24_1@	; `string'
-PUBLIC	??_C@_0CJ@JCBKPBPN@BINARY_DragonSoulRefineWindow_R@ ; `string'
+PUBLIC	??_C@_0DL@PLJBBCEI@?$CFd?5?$LE?B?5?$LO?x?$LE?B?5?$LN?$LK?F?d?$LM?H?5?$MA?L?F?e?F?$KO?5?$LJ?x?H?$KD?$MA?T@ ; `string'
 PUBLIC	??_C@_0CD@JEDDBPLN@BINARY_DragonSoulRefineWindow_O@ ; `string'
-PUBLIC	??_C@_0CA@IKMCFIBE@SendOfflineShopEndPacket?5Error?6@ ; `string'
+PUBLIC	??_C@_0BM@PCGGGFKG@sound?1ambience?1gm_alert?4wav@ ; `string'
 PUBLIC	??_C@_0CM@IKKNFKOL@BINARY_DragonSoulRefineWindow_R@ ; `string'
-PUBLIC	??_C@_0BO@HOGGCLNL@SendAddOfflineShopItem?5Error?6@ ; `string'
+PUBLIC	??_C@_0CJ@JCBKPBPN@BINARY_DragonSoulRefineWindow_R@ ; `string'
 PUBLIC	??_C@_0CA@KOMANMDP@SendOfflineShopBuyPacket?5Error?6@ ; `string'
-PUBLIC	??_C@_0CI@OOCPGCHH@SendRemoveOfflineShopItem?5Packe@ ; `string'
+PUBLIC	??_C@_0CA@IKMCFIBE@SendOfflineShopEndPacket?5Error?6@ ; `string'
 PUBLIC	??_C@_0CB@EICBIFFE@SendRemoveOfflineShopItem?5Error@ ; `string'
-PUBLIC	??_C@_0BP@NBEBKNOJ@SendOpenShopSlot?5Packet?5Error?6@ ; `string'
+PUBLIC	??_C@_0BO@HOGGCLNL@SendAddOfflineShopItem?5Error?6@ ; `string'
 PUBLIC	??_C@_0BI@ENAMPGCK@SendOpenShopSlot?5Error?6@	; `string'
-PUBLIC	??_C@_0CK@KGEOCJID@SendRefreshOfflineShopMoney?5Pac@ ; `string'
+PUBLIC	??_C@_0CI@OOCPGCHH@SendRemoveOfflineShopItem?5Packe@ ; `string'
 PUBLIC	??_C@_0CF@EEECAIFO@SendDestroyOfflineShop?5Packet?5E@ ; `string'
-PUBLIC	??_C@_0CD@IOCAECLN@SendOfflineShopCheck?5Packet?5err@ ; `string'
+PUBLIC	??_C@_0BP@NBEBKNOJ@SendOpenShopSlot?5Packet?5Error?6@ ; `string'
 PUBLIC	??_C@_0CJ@HELCMFOP@SendOfflineShopChangeTitle?5Pack@ ; `string'
-PUBLIC	??_C@_0CF@IBLCDDNC@SendOfflineOpenWithVID?5Packet?5E@ ; `string'
+PUBLIC	??_C@_0CK@KGEOCJID@SendRefreshOfflineShopMoney?5Pac@ ; `string'
 PUBLIC	??_C@_0CF@EOAPAKEO@SendOfflineOpenWithVID?5Packet?5e@ ; `string'
-PUBLIC	??_C@_0CO@KEMJGEBN@SendOfflineShopChangeDecoration@ ; `string'
+PUBLIC	??_C@_0CD@IOCAECLN@SendOfflineShopCheck?5Packet?5err@ ; `string'
 PUBLIC	??_C@_0CO@GLHEFNIB@SendOfflineShopChangeDecoration@ ; `string'
+PUBLIC	??_C@_0CF@IBLCDDNC@SendOfflineOpenWithVID?5Packet?5E@ ; `string'
 PUBLIC	??_C@_0CB@NABGIOIB@SendItemNewAttributePacket?5Erro@ ; `string'
+PUBLIC	??_C@_0CO@KEMJGEBN@SendOfflineShopChangeDecoration@ ; `string'
 PUBLIC	?ms_singleton@?$CSingleton@VCPythonSafeBox@@@@0PAVCPythonSafeBox@@A ; CSingleton<CPythonSafeBox>::ms_singleton
 ;	COMDAT ?ms_singleton@?$CSingleton@VCPythonSafeBox@@@@0PAVCPythonSafeBox@@A
 _BSS	SEGMENT
 ?ms_singleton@?$CSingleton@VCPythonSafeBox@@@@0PAVCPythonSafeBox@@A DD 01H DUP (?) ; CSingleton<CPythonSafeBox>::ms_singleton
 _BSS	ENDS
-;	COMDAT ??_C@_0CB@NABGIOIB@SendItemNewAttributePacket?5Erro@
-CONST	SEGMENT
-??_C@_0CB@NABGIOIB@SendItemNewAttributePacket?5Erro@ DB 'SendItemNewAttri'
-	DB	'butePacket Error', 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0CO@GLHEFNIB@SendOfflineShopChangeDecoration@
-CONST	SEGMENT
-??_C@_0CO@GLHEFNIB@SendOfflineShopChangeDecoration@ DB 'SendOfflineShopCh'
-	DB	'angeDecoration Packet error', 0aH, 00H	; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0CO@KEMJGEBN@SendOfflineShopChangeDecoration@
 CONST	SEGMENT
 ??_C@_0CO@KEMJGEBN@SendOfflineShopChangeDecoration@ DB 'SendOfflineShopCh'
 	DB	'angeDecoration Packet Error', 0aH, 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CF@EOAPAKEO@SendOfflineOpenWithVID?5Packet?5e@
+;	COMDAT ??_C@_0CB@NABGIOIB@SendItemNewAttributePacket?5Erro@
 CONST	SEGMENT
-??_C@_0CF@EOAPAKEO@SendOfflineOpenWithVID?5Packet?5e@ DB 'SendOfflineOpen'
-	DB	'WithVID Packet error', 0aH, 00H		; `string'
+??_C@_0CB@NABGIOIB@SendItemNewAttributePacket?5Erro@ DB 'SendItemNewAttri'
+	DB	'butePacket Error', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CF@IBLCDDNC@SendOfflineOpenWithVID?5Packet?5E@
 CONST	SEGMENT
 ??_C@_0CF@IBLCDDNC@SendOfflineOpenWithVID?5Packet?5E@ DB 'SendOfflineOpen'
 	DB	'WithVID Packet Error', 0aH, 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CJ@HELCMFOP@SendOfflineShopChangeTitle?5Pack@
+;	COMDAT ??_C@_0CO@GLHEFNIB@SendOfflineShopChangeDecoration@
 CONST	SEGMENT
-??_C@_0CJ@HELCMFOP@SendOfflineShopChangeTitle?5Pack@ DB 'SendOfflineShopC'
-	DB	'hangeTitle Packet Error', 0aH, 00H		; `string'
+??_C@_0CO@GLHEFNIB@SendOfflineShopChangeDecoration@ DB 'SendOfflineShopCh'
+	DB	'angeDecoration Packet error', 0aH, 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CD@IOCAECLN@SendOfflineShopCheck?5Packet?5err@
 CONST	SEGMENT
 ??_C@_0CD@IOCAECLN@SendOfflineShopCheck?5Packet?5err@ DB 'SendOfflineShop'
 	DB	'Check Packet error', 0aH, 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CF@EEECAIFO@SendDestroyOfflineShop?5Packet?5E@
+;	COMDAT ??_C@_0CF@EOAPAKEO@SendOfflineOpenWithVID?5Packet?5e@
 CONST	SEGMENT
-??_C@_0CF@EEECAIFO@SendDestroyOfflineShop?5Packet?5E@ DB 'SendDestroyOffl'
-	DB	'ineShop Packet Error', 0aH, 00H		; `string'
+??_C@_0CF@EOAPAKEO@SendOfflineOpenWithVID?5Packet?5e@ DB 'SendOfflineOpen'
+	DB	'WithVID Packet error', 0aH, 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CK@KGEOCJID@SendRefreshOfflineShopMoney?5Pac@
 CONST	SEGMENT
 ??_C@_0CK@KGEOCJID@SendRefreshOfflineShopMoney?5Pac@ DB 'SendRefreshOffli'
 	DB	'neShopMoney Packet Error', 0aH, 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@ENAMPGCK@SendOpenShopSlot?5Error?6@
+;	COMDAT ??_C@_0CJ@HELCMFOP@SendOfflineShopChangeTitle?5Pack@
 CONST	SEGMENT
-??_C@_0BI@ENAMPGCK@SendOpenShopSlot?5Error?6@ DB 'SendOpenShopSlot Error', 0aH
-	DB	00H						; `string'
+??_C@_0CJ@HELCMFOP@SendOfflineShopChangeTitle?5Pack@ DB 'SendOfflineShopC'
+	DB	'hangeTitle Packet Error', 0aH, 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BP@NBEBKNOJ@SendOpenShopSlot?5Packet?5Error?6@
 CONST	SEGMENT
 ??_C@_0BP@NBEBKNOJ@SendOpenShopSlot?5Packet?5Error?6@ DB 'SendOpenShopSlo'
 	DB	't Packet Error', 0aH, 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CB@EICBIFFE@SendRemoveOfflineShopItem?5Error@
+;	COMDAT ??_C@_0CF@EEECAIFO@SendDestroyOfflineShop?5Packet?5E@
 CONST	SEGMENT
-??_C@_0CB@EICBIFFE@SendRemoveOfflineShopItem?5Error@ DB 'SendRemoveOfflin'
-	DB	'eShopItem Error', 0aH, 00H			; `string'
+??_C@_0CF@EEECAIFO@SendDestroyOfflineShop?5Packet?5E@ DB 'SendDestroyOffl'
+	DB	'ineShop Packet Error', 0aH, 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CI@OOCPGCHH@SendRemoveOfflineShopItem?5Packe@
 CONST	SEGMENT
 ??_C@_0CI@OOCPGCHH@SendRemoveOfflineShopItem?5Packe@ DB 'SendRemoveOfflin'
 	DB	'eShopItem Packet Error', 0aH, 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CA@KOMANMDP@SendOfflineShopBuyPacket?5Error?6@
+;	COMDAT ??_C@_0BI@ENAMPGCK@SendOpenShopSlot?5Error?6@
 CONST	SEGMENT
-??_C@_0CA@KOMANMDP@SendOfflineShopBuyPacket?5Error?6@ DB 'SendOfflineShop'
-	DB	'BuyPacket Error', 0aH, 00H			; `string'
+??_C@_0BI@ENAMPGCK@SendOpenShopSlot?5Error?6@ DB 'SendOpenShopSlot Error', 0aH
+	DB	00H						; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BO@HOGGCLNL@SendAddOfflineShopItem?5Error?6@
 CONST	SEGMENT
 ??_C@_0BO@HOGGCLNL@SendAddOfflineShopItem?5Error?6@ DB 'SendAddOfflineSho'
 	DB	'pItem Error', 0aH, 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CM@IKKNFKOL@BINARY_DragonSoulRefineWindow_R@
+;	COMDAT ??_C@_0CB@EICBIFFE@SendRemoveOfflineShopItem?5Error@
 CONST	SEGMENT
-??_C@_0CM@IKKNFKOL@BINARY_DragonSoulRefineWindow_R@ DB 'BINARY_DragonSoul'
-	DB	'RefineWindow_RefineSucceed', 00H		; `string'
+??_C@_0CB@EICBIFFE@SendRemoveOfflineShopItem?5Error@ DB 'SendRemoveOfflin'
+	DB	'eShopItem Error', 0aH, 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CA@IKMCFIBE@SendOfflineShopEndPacket?5Error?6@
 CONST	SEGMENT
 ??_C@_0CA@IKMCFIBE@SendOfflineShopEndPacket?5Error?6@ DB 'SendOfflineShop'
 	DB	'EndPacket Error', 0aH, 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CD@JEDDBPLN@BINARY_DragonSoulRefineWindow_O@
+;	COMDAT ??_C@_0CA@KOMANMDP@SendOfflineShopBuyPacket?5Error?6@
 CONST	SEGMENT
-??_C@_0CD@JEDDBPLN@BINARY_DragonSoulRefineWindow_O@ DB 'BINARY_DragonSoul'
-	DB	'RefineWindow_Open', 00H			; `string'
+??_C@_0CA@KOMANMDP@SendOfflineShopBuyPacket?5Error?6@ DB 'SendOfflineShop'
+	DB	'BuyPacket Error', 0aH, 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CJ@JCBKPBPN@BINARY_DragonSoulRefineWindow_R@
 CONST	SEGMENT
 ??_C@_0CJ@JCBKPBPN@BINARY_DragonSoulRefineWindow_R@ DB 'BINARY_DragonSoul'
 	DB	'RefineWindow_RefineFail', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@HCHHHOJB@yellow_tigerman_24_1@
+;	COMDAT ??_C@_0CM@IKKNFKOL@BINARY_DragonSoulRefineWindow_R@
 CONST	SEGMENT
-??_C@_0BF@HCHHHOJB@yellow_tigerman_24_1@ DB 'yellow_tigerman_24_1', 00H ; `string'
+??_C@_0CM@IKKNFKOL@BINARY_DragonSoulRefineWindow_R@ DB 'BINARY_DragonSoul'
+	DB	'RefineWindow_RefineSucceed', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@PCGGGFKG@sound?1ambience?1gm_alert?4wav@
 CONST	SEGMENT
 ??_C@_0BM@PCGGGFKG@sound?1ambience?1gm_alert?4wav@ DB 'sound/ambience/gm_'
 	DB	'alert.wav', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BO@MHEMOJBJ@SendQuickSlotSwapPacket?5Error@
+;	COMDAT ??_C@_0CD@JEDDBPLN@BINARY_DragonSoulRefineWindow_O@
 CONST	SEGMENT
-??_C@_0BO@MHEMOJBJ@SendQuickSlotSwapPacket?5Error@ DB 'SendQuickSlotSwapP'
-	DB	'acket Error', 00H				; `string'
+??_C@_0CD@JEDDBPLN@BINARY_DragonSoulRefineWindow_O@ DB 'BINARY_DragonSoul'
+	DB	'RefineWindow_Open', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DL@PLJBBCEI@?$CFd?5?$LE?B?5?$LO?x?$LE?B?5?$LN?$LK?F?d?$LM?H?5?$MA?L?F?e?F?$KO?5?$LJ?x?H?$KD?$MA?T@
 CONST	SEGMENT
@@ -178,107 +169,138 @@ CONST	SEGMENT
 	DB	' ', 0b9H, 0f8H, 0c8H, 0a3H, 0c0H, 0d4H, 0b4H, 0cfH, 0b4H, 0d9H
 	DB	'.TPacketGCSpecialEffect', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BN@ONNLHEKF@SendQuickSlotAddPacket?5Error@
+;	COMDAT ??_C@_0BF@HCHHHOJB@yellow_tigerman_24_1@
 CONST	SEGMENT
-??_C@_0BN@ONNLHEKF@SendQuickSlotAddPacket?5Error@ DB 'SendQuickSlotAddPac'
-	DB	'ket Error', 00H				; `string'
+??_C@_0BF@HCHHHOJB@yellow_tigerman_24_1@ DB 'yellow_tigerman_24_1', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@BNCAGMGN@SendQuickSlotDelPacket?5Error@
 CONST	SEGMENT
 ??_C@_0BN@BNCAGMGN@SendQuickSlotDelPacket?5Error@ DB 'SendQuickSlotDelPac'
 	DB	'ket Error', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@LGMFALEM@SendItemMovePacket?5Error@
+;	COMDAT ??_C@_0BO@MHEMOJBJ@SendQuickSlotSwapPacket?5Error@
 CONST	SEGMENT
-??_C@_0BJ@LGMFALEM@SendItemMovePacket?5Error@ DB 'SendItemMovePacket Erro'
-	DB	'r', 00H					; `string'
+??_C@_0BO@MHEMOJBJ@SendQuickSlotSwapPacket?5Error@ DB 'SendQuickSlotSwapP'
+	DB	'acket Error', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@DCHNPPOD@SendItemPickUpPacket?5Error@
 CONST	SEGMENT
 ??_C@_0BL@DCHNPPOD@SendItemPickUpPacket?5Error@ DB 'SendItemPickUpPacket '
 	DB	'Error', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@OIBPCJHH@SendItemDropPacket?5Error@
+;	COMDAT ??_C@_0BN@ONNLHEKF@SendQuickSlotAddPacket?5Error@
 CONST	SEGMENT
-??_C@_0BJ@OIBPCJHH@SendItemDropPacket?5Error@ DB 'SendItemDropPacket Erro'
-	DB	'r', 00H					; `string'
+??_C@_0BN@ONNLHEKF@SendQuickSlotAddPacket?5Error@ DB 'SendQuickSlotAddPac'
+	DB	'ket Error', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BM@ICMBBAFL@SendItemDestroyPacket?5Error@
 CONST	SEGMENT
 ??_C@_0BM@ICMBBAFL@SendItemDestroyPacket?5Error@ DB 'SendItemDestroyPacke'
 	DB	't Error', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@ECNPLDED@SendItemUsePacket?5Error@
+;	COMDAT ??_C@_0BJ@LGMFALEM@SendItemMovePacket?5Error@
 CONST	SEGMENT
-??_C@_0BI@ECNPLDED@SendItemUsePacket?5Error@ DB 'SendItemUsePacket Error', 00H ; `string'
+??_C@_0BJ@LGMFALEM@SendItemMovePacket?5Error@ DB 'SendItemMovePacket Erro'
+	DB	'r', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BO@FFKONCIG@SendItemUseToItemPacket?5Error@
 CONST	SEGMENT
 ??_C@_0BO@FFKONCIG@SendItemUseToItemPacket?5Error@ DB 'SendItemUseToItemP'
 	DB	'acket Error', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@HGBMODPD@BINARY_AppendNotifyMessage@
+;	COMDAT ??_C@_0BJ@OIBPCJHH@SendItemDropPacket?5Error@
 CONST	SEGMENT
-??_C@_0BL@HGBMODPD@BINARY_AppendNotifyMessage@ DB 'BINARY_AppendNotifyMes'
-	DB	'sage', 00H					; `string'
+??_C@_0BJ@OIBPCJHH@SendItemDropPacket?5Error@ DB 'SendItemDropPacket Erro'
+	DB	'r', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@GKDHAPBC@CANNOT_EQUIP_SHOP@
 CONST	SEGMENT
 ??_C@_0BC@GKDHAPBC@CANNOT_EQUIP_SHOP@ DB 'CANNOT_EQUIP_SHOP', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CP@LICKGIJF@?5SendShopSellPacketNew?$CIbySlot?$DN?$CF@
+;	COMDAT ??_C@_0BI@ECNPLDED@SendItemUsePacket?5Error@
 CONST	SEGMENT
-??_C@_0CP@LICKGIJF@?5SendShopSellPacketNew?$CIbySlot?$DN?$CF@ DB ' SendSh'
-	DB	'opSellPacketNew(bySlot=%d, byCount=%u)', 0aH, 00H ; `string'
+??_C@_0BI@ECNPLDED@SendItemUsePacket?5Error@ DB 'SendItemUsePacket Error', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@KBOLGOPL@CANNOT_EQUIP_EXCHANGE@
 CONST	SEGMENT
 ??_C@_0BG@KBOLGOPL@CANNOT_EQUIP_EXCHANGE@ DB 'CANNOT_EQUIP_EXCHANGE', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BK@NFAAJDME@SendShopSellPacket?5Error?6@
+;	COMDAT ??_C@_0BL@HGBMODPD@BINARY_AppendNotifyMessage@
 CONST	SEGMENT
-??_C@_0BK@NFAAJDME@SendShopSellPacket?5Error?6@ DB 'SendShopSellPacket Er'
-	DB	'ror', 0aH, 00H				; `string'
+??_C@_0BL@HGBMODPD@BINARY_AppendNotifyMessage@ DB 'BINARY_AppendNotifyMes'
+	DB	'sage', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@PEGCCLIG@SendShopAddSellPacket?5Error?6@
 CONST	SEGMENT
 ??_C@_0BN@PEGCCLIG@SendShopAddSellPacket?5Error?6@ DB 'SendShopAddSellPac'
 	DB	'ket Error', 0aH, 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@ENIABNOP@SendShopEndPacket?5Error?6@
+;	COMDAT ??_C@_0CP@LICKGIJF@?5SendShopSellPacketNew?$CIbySlot?$DN?$CF@
 CONST	SEGMENT
-??_C@_0BJ@ENIABNOP@SendShopEndPacket?5Error?6@ DB 'SendShopEndPacket Erro'
-	DB	'r', 0aH, 00H				; `string'
+??_C@_0CP@LICKGIJF@?5SendShopSellPacketNew?$CIbySlot?$DN?$CF@ DB ' SendSh'
+	DB	'opSellPacketNew(bySlot=%d, byCount=%u)', 0aH, 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@GJICJJME@SendShopBuyPacket?5Error?6@
 CONST	SEGMENT
 ??_C@_0BJ@GJICJJME@SendShopBuyPacket?5Error?6@ DB 'SendShopBuyPacket Erro'
 	DB	'r', 0aH, 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DB@JMGJIAKF@?5?$DO?$DO?5CPythonNetworkStream?3?3RecvM@
+;	COMDAT ??_C@_0BK@NFAAJDME@SendShopSellPacket?5Error?6@
 CONST	SEGMENT
-??_C@_0DB@JMGJIAKF@?5?$DO?$DO?5CPythonNetworkStream?3?3RecvM@ DB ' >> CPy'
-	DB	'thonNetworkStream::RecvMallItemDelPacket', 0aH, 00H ; `string'
+??_C@_0BK@NFAAJDME@SendShopSellPacket?5Error?6@ DB 'SendShopSellPacket Er'
+	DB	'ror', 0aH, 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@ELBKFGDM@BINARY_Highlight_Item@
 CONST	SEGMENT
 ??_C@_0BG@ELBKFGDM@BINARY_Highlight_Item@ DB 'BINARY_Highlight_Item', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@OHCDIKPF@RefreshSafeboxMoney@
+;	COMDAT ??_C@_0BJ@ENIABNOP@SendShopEndPacket?5Error?6@
 CONST	SEGMENT
-??_C@_0BE@OHCDIKPF@RefreshSafeboxMoney@ DB 'RefreshSafeboxMoney', 00H ; `string'
+??_C@_0BJ@ENIABNOP@SendShopEndPacket?5Error?6@ DB 'SendShopEndPacket Erro'
+	DB	'r', 0aH, 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@OIFPJOPL@OpenMallWindow@
 CONST	SEGMENT
 ??_C@_0P@OIFPJOPL@OpenMallWindow@ DB 'OpenMallWindow', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@BMBKKGBC@OnSafeBoxError@
+;	COMDAT ??_C@_0DB@JMGJIAKF@?5?$DO?$DO?5CPythonNetworkStream?3?3RecvM@
 CONST	SEGMENT
-??_C@_0P@BMBKKGBC@OnSafeBoxError@ DB 'OnSafeBoxError', 00H ; `string'
+??_C@_0DB@JMGJIAKF@?5?$DO?$DO?5CPythonNetworkStream?3?3RecvM@ DB ' >> CPy'
+	DB	'thonNetworkStream::RecvMallItemDelPacket', 0aH, 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@GDFDGKCD@OpenSafeboxWindow@
 CONST	SEGMENT
 ??_C@_0BC@GDFDGKCD@OpenSafeboxWindow@ DB 'OpenSafeboxWindow', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BE@OHCDIKPF@RefreshSafeboxMoney@
+CONST	SEGMENT
+??_C@_0BE@OHCDIKPF@RefreshSafeboxMoney@ DB 'RefreshSafeboxMoney', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1IK@DDJDFHDO@?$AA?$CB?$AA?$CC?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr@
+CONST	SEGMENT
+??_C@_1IK@DDJDFHDO@?$AA?$CB?$AA?$CC?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr@ DB '!'
+	DB	00H, '"', 00H, 'C', 00H, 'P', 00H, 'y', 00H, 't', 00H, 'h', 00H
+	DB	'o', 00H, 'n', 00H, 'N', 00H, 'e', 00H, 't', 00H, 'w', 00H, 'o'
+	DB	00H, 'r', 00H, 'k', 00H, 'S', 00H, 't', 00H, 'r', 00H, 'e', 00H
+	DB	'a', 00H, 'm', 00H, ':', 00H, ':', 00H, 'S', 00H, 'e', 00H, 'n'
+	DB	00H, 'd', 00H, 'S', 00H, 'a', 00H, 'f', 00H, 'e', 00H, 'B', 00H
+	DB	'o', 00H, 'x', 00H, 'M', 00H, 'o', 00H, 'n', 00H, 'e', 00H, 'y'
+	DB	00H, 'P', 00H, 'a', 00H, 'c', 00H, 'k', 00H, 'e', 00H, 't', 00H
+	DB	' ', 00H, '-', 00H, ' ', 00H, 0bbH, 00H, 0e7H, 00H, 0bfH, 00H, 0ebH
+	DB	00H, 0c7H, 00H, 0cfH, 00H, 0c1H, 00H, 0f6H, 00H, ' ', 00H, 0beH
+	DB	00H, 0caH, 00H, 0b4H, 00H, 0c2H, 00H, ' ', 00H, 0c7H, 00H, 0d4H
+	DB	00H, 0bcH, 00H, 0f6H, 00H, '"', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0P@BMBKKGBC@OnSafeBoxError@
+CONST	SEGMENT
+??_C@_0P@BMBKKGBC@OnSafeBoxError@ DB 'OnSafeBoxError', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0EC@GGOCNHNP@CPythonNetworkStream?3?3SendSafeB@
+CONST	SEGMENT
+??_C@_0EC@GGOCNHNP@CPythonNetworkStream?3?3SendSafeB@ DB 'CPythonNetworkS'
+	DB	'tream::SendSafeBoxMoneyPacket - ', 0bbH, 0e7H, 0bfH, 0ebH, 0c7H
+	DB	0cfH, 0c1H, 0f6H, ' ', 0beH, 0caH, 0b4H, 0c2H, ' ', 0c7H, 0d4H
+	DB	0bcH, 0f6H, 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_1MK@OOIHIAGH@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
 CONST	SEGMENT
@@ -299,28 +321,6 @@ CONST	SEGMENT
 	DB	'a', 00H, 's', 00H, 'e', 00H, 'G', 00H, 'a', 00H, 'm', 00H, 'e'
 	DB	00H, 'I', 00H, 't', 00H, 'e', 00H, 'm', 00H, '.', 00H, 'c', 00H
 	DB	'p', 00H, 'p', 00H, 00H, 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1IK@DDJDFHDO@?$AA?$CB?$AA?$CC?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr@
-CONST	SEGMENT
-??_C@_1IK@DDJDFHDO@?$AA?$CB?$AA?$CC?$AAC?$AAP?$AAy?$AAt?$AAh?$AAo?$AAn?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr@ DB '!'
-	DB	00H, '"', 00H, 'C', 00H, 'P', 00H, 'y', 00H, 't', 00H, 'h', 00H
-	DB	'o', 00H, 'n', 00H, 'N', 00H, 'e', 00H, 't', 00H, 'w', 00H, 'o'
-	DB	00H, 'r', 00H, 'k', 00H, 'S', 00H, 't', 00H, 'r', 00H, 'e', 00H
-	DB	'a', 00H, 'm', 00H, ':', 00H, ':', 00H, 'S', 00H, 'e', 00H, 'n'
-	DB	00H, 'd', 00H, 'S', 00H, 'a', 00H, 'f', 00H, 'e', 00H, 'B', 00H
-	DB	'o', 00H, 'x', 00H, 'M', 00H, 'o', 00H, 'n', 00H, 'e', 00H, 'y'
-	DB	00H, 'P', 00H, 'a', 00H, 'c', 00H, 'k', 00H, 'e', 00H, 't', 00H
-	DB	' ', 00H, '-', 00H, ' ', 00H, 0bbH, 00H, 0e7H, 00H, 0bfH, 00H, 0ebH
-	DB	00H, 0c7H, 00H, 0cfH, 00H, 0c1H, 00H, 0f6H, 00H, ' ', 00H, 0beH
-	DB	00H, 0caH, 00H, 0b4H, 00H, 0c2H, 00H, ' ', 00H, 0c7H, 00H, 0d4H
-	DB	00H, 0bcH, 00H, 0f6H, 00H, '"', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0EC@GGOCNHNP@CPythonNetworkStream?3?3SendSafeB@
-CONST	SEGMENT
-??_C@_0EC@GGOCNHNP@CPythonNetworkStream?3?3SendSafeB@ DB 'CPythonNetworkS'
-	DB	'tream::SendSafeBoxMoneyPacket - ', 0bbH, 0e7H, 0bfH, 0ebH, 0c7H
-	DB	0cfH, 0c1H, 0f6H, ' ', 0beH, 0caH, 0b4H, 0c2H, ' ', 0c7H, 0d4H
-	DB	0bcH, 0f6H, 00H				; `string'
 PUBLIC	?Instance@?$CSingleton@VCPythonSafeBox@@@@SAAAVCPythonSafeBox@@XZ ; CSingleton<CPythonSafeBox>::Instance
 PUBLIC	??0command_item_new_attribute@@QAE@XZ		; command_item_new_attribute::command_item_new_attribute
 PUBLIC	?SendOfflineShopChangeDecoration@CPythonNetworkStream@@QAE_NPBDKK@Z ; CPythonNetworkStream::SendOfflineShopChangeDecoration

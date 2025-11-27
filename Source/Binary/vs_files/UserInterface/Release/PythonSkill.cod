@@ -8,259 +8,259 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0EO@GJJLGCC@CPythonSkill?3?3RegisterSkillTabl@ ; `string'
 PUBLIC	??_C@_0FG@JMHDMKFK@CPythonSkill?3?3RegisterSkillTabl@ ; `string'
-PUBLIC	??_C@_04MPLEFDAG@mwep@				; `string'
 PUBLIC	??_C@_03IINAMCGF@atk@				; `string'
-PUBLIC	??_C@_03KLIPLJLL@min@				; `string'
+PUBLIC	??_C@_0EO@GJJLGCC@CPythonSkill?3?3RegisterSkillTabl@ ; `string'
 PUBLIC	??_C@_06EBGNBFIA@number@			; `string'
-PUBLIC	??_C@_07LIKKJAE@minmwep@			; `string'
+PUBLIC	??_C@_04MPLEFDAG@mwep@				; `string'
 PUBLIC	??_C@_06NHGAHIJM@minatk@			; `string'
-PUBLIC	??_C@_06NEJDJIND@maxatk@			; `string'
+PUBLIC	??_C@_03KLIPLJLL@min@				; `string'
 PUBLIC	??_C@_03LJAEFNNE@max@				; `string'
-PUBLIC	??_C@_03NNBCEMGJ@?$CK?53@			; `string'
+PUBLIC	??_C@_07LIKKJAE@minmwep@			; `string'
 PUBLIC	??_C@_07ONOKAGOF@maxmwep@			; `string'
-PUBLIC	??_C@_04DLFHDFGL@?4sub@				; `string'
+PUBLIC	??_C@_06NEJDJIND@maxatk@			; `string'
 PUBLIC	??_C@_05GMJBCDPG@_?$CF02d@			; `string'
-PUBLIC	??_C@_0CD@PBEIPNPF@SkillDesc?4line?$CI?$CFd?$CJ?4NO_INDEX_ERR@ ; `string'
+PUBLIC	??_C@_03NNBCEMGJ@?$CK?53@			; `string'
 PUBLIC	??_C@_0CC@GCKFPEAL@SkillDesc?4line?$CI?$CFd?$CJ?4NO_VNUM_ERRO@ ; `string'
-PUBLIC	??_C@_0FA@HKALFJMK@CPythonSkill?3?3RegisterSkillDesc@ ; `string'
+PUBLIC	??_C@_04DLFHDFGL@?4sub@				; `string'
 PUBLIC	??_C@_0CB@DMLPIAAA@SkillDesc?4line?$CI?$CFd?$CJ?4NO_JOB_ERROR@ ; `string'
-PUBLIC	??_C@_0EP@BPIIEGNI@CPythonSkill?3?3RegisterSkillDesc@ ; `string'
+PUBLIC	??_C@_0CD@PBEIPNPF@SkillDesc?4line?$CI?$CFd?$CJ?4NO_INDEX_ERR@ ; `string'
 PUBLIC	??_C@_01DNKMNLPK@?$HM@				; `string'
-PUBLIC	??_C@_0BI@FJJHCJFN@?$CFsskill?1common?1support?1@ ; `string'
+PUBLIC	??_C@_0FA@HKALFJMK@CPythonSkill?3?3RegisterSkillDesc@ ; `string'
 PUBLIC	??_C@_0FB@LIPAFJME@CPythonSkill?3?3RegisterSkillDesc@ ; `string'
-PUBLIC	??_C@_0CN@EGOMLGLD@?$CFs?$FL?$CFs?$FN?5Skill?5grade?5motion?5?$FL?$CFd?$FN?5@ ; `string'
+PUBLIC	??_C@_0EP@BPIIEGNI@CPythonSkill?3?3RegisterSkillDesc@ ; `string'
 PUBLIC	??_C@_0M@MMGCNLPF@?$CFsskill?1?$CFs?1@		; `string'
-PUBLIC	??_C@_0EH@DDJGPANA@CPythonSkill?3?3RegisterPetSkillT@ ; `string'
+PUBLIC	??_C@_0BI@FJJHCJFN@?$CFsskill?1common?1support?1@ ; `string'
 PUBLIC	??_C@_0EA@HLDJPOAF@CPythonSkill?3?3RegisterPetSkillT@ ; `string'
-PUBLIC	??_C@_0EL@PCKBGLGB@CPythonSkill?3?3RegisterPetSkillT@ ; `string'
+PUBLIC	??_C@_0CN@EGOMLGLD@?$CFs?$FL?$CFs?$FN?5Skill?5grade?5motion?5?$FL?$CFd?$FN?5@ ; `string'
 PUBLIC	??_C@_0EG@CECMJFJD@CPythonSkill?3?3RegisterPetSkillT@ ; `string'
-PUBLIC	??_C@_04LMMJFDCN@AUTO@				; `string'
+PUBLIC	??_C@_0EH@DDJGPANA@CPythonSkill?3?3RegisterPetSkillT@ ; `string'
 PUBLIC	??_C@_0BL@GJNFLNHG@d?3?1ymir?5work?1ui?1skill?1pet?1@ ; `string'
-PUBLIC	??_C@_0EN@CCBMGIML@CPythonSkill?3?3RegisterPetSkillT@ ; `string'
+PUBLIC	??_C@_0EL@PCKBGLGB@CPythonSkill?3?3RegisterPetSkillT@ ; `string'
 PUBLIC	??_C@_0EG@FEBECLPE@CPythonSkill?3?3RegisterPetSkillT@ ; `string'
-PUBLIC	??_C@_04GPMDFGEJ@type@				; `string'
+PUBLIC	??_C@_04LMMJFDCN@AUTO@				; `string'
 PUBLIC	??_C@_0FE@DNAFFMLK@CPythonSkill?3?3RegisterSkill?$CIdwS@ ; `string'
-PUBLIC	??_C@_0FK@GEMIAIHM@CPythonSkill?3?3RegisterSkill?$CIdwS@ ; `string'
+PUBLIC	??_C@_0EN@CCBMGIML@CPythonSkill?3?3RegisterPetSkillT@ ; `string'
 PUBLIC	??_C@_0FD@BPAOEOEO@Strange?5Skill?5Type?5?9?5CPythonSki@ ; `string'
-PUBLIC	??_C@_0FI@NGLMACOA@Strange?5Skill?5Attribute?5?9?5CPyth@ ; `string'
+PUBLIC	??_C@_04GPMDFGEJ@type@				; `string'
 PUBLIC	??_C@_09HGIEBAJ@attribute@			; `string'
-PUBLIC	??_C@_0FK@CIMCNNKO@Strange?5Skill?5Need?5Weapon?5?9?5CPy@ ; `string'
+PUBLIC	??_C@_0FK@GEMIAIHM@CPythonSkill?3?3RegisterSkill?$CIdwS@ ; `string'
 PUBLIC	??_C@_0L@OFCPBCKK@needweapon@			; `string'
-PUBLIC	??_C@_0FE@LFJDJPLO@CPythonSkill?3?3RegisterSkill?$CIdwS@ ; `string'
+PUBLIC	??_C@_0FI@NGLMACOA@Strange?5Skill?5Attribute?5?9?5CPyth@ ; `string'
 PUBLIC	??_C@_06JBGOOFCN@?$CFdname@			; `string'
-PUBLIC	??_C@_0M@PPJNHBMP@description@			; `string'
+PUBLIC	??_C@_0FK@CIMCNNKO@Strange?5Skill?5Need?5Weapon?5?9?5CPy@ ; `string'
 PUBLIC	??_C@_0O@NCHOGIBK@?$CFddescription@		; `string'
-PUBLIC	??_C@_0FO@BPLAJAHG@CPythonSkill?3?3RegisterSkill?$CIdwS@ ; `string'
+PUBLIC	??_C@_0FE@LFJDJPLO@CPythonSkill?3?3RegisterSkill?$CIdwS@ ; `string'
 PUBLIC	??_C@_0N@CDMMOEBD@iconfilename@			; `string'
-PUBLIC	??_C@_0O@BGDKPGFJ@conditiondata@		; `string'
+PUBLIC	??_C@_0M@PPJNHBMP@description@			; `string'
 PUBLIC	??_C@_0BA@IOBOECCA@?$CFdconditiondata@		; `string'
-PUBLIC	??_C@_0L@IEHCOHAD@affectdata@			; `string'
+PUBLIC	??_C@_0FO@BPLAJAHG@CPythonSkill?3?3RegisterSkill?$CIdwS@ ; `string'
 PUBLIC	??_C@_0N@GFIELPPM@?$CFdaffectdata@		; `string'
-PUBLIC	??_C@_0FJ@NEGDHIMM@CPythonSkill?3?3RegisterSkill?$CIdwS@ ; `string'
+PUBLIC	??_C@_0O@BGDKPGFJ@conditiondata@		; `string'
 PUBLIC	??_C@_0M@PCGMAJCD@?$CFdgradedata@		; `string'
-PUBLIC	??_C@_0BD@GDJBKHMN@targetcountformula@		; `string'
+PUBLIC	??_C@_0L@IEHCOHAD@affectdata@			; `string'
 PUBLIC	??_C@_0BA@EILLLIMM@cooltimeformula@		; `string'
-PUBLIC	??_C@_0O@OKAHIEDK@needspformula@		; `string'
+PUBLIC	??_C@_0FJ@NEGDHIMM@CPythonSkill?3?3RegisterSkill?$CIdwS@ ; `string'
 PUBLIC	??_C@_0BH@DAEIJFBL@motionloopcountformula@	; `string'
-PUBLIC	??_C@_05CCGOGOBM@range@				; `string'
+PUBLIC	??_C@_0BD@GDJBKHMN@targetcountformula@		; `string'
 PUBLIC	??_C@_0BG@DFAOMADI@continuationspformula@	; `string'
-PUBLIC	??_C@_0N@BIJBKECH@leveluppoint@			; `string'
+PUBLIC	??_C@_0O@OKAHIEDK@needspformula@		; `string'
 PUBLIC	??_C@_08JAPIFGPH@maxlevel@			; `string'
-PUBLIC	??_C@_0BB@FIGDLACA@motionindexforme@		; `string'
+PUBLIC	??_C@_05CCGOGOBM@range@				; `string'
 PUBLIC	??_C@_0M@DIJMKMOF@motionindex@			; `string'
-PUBLIC	??_C@_06MDLIGPKC@active@			; `string'
+PUBLIC	??_C@_0N@BIJBKECH@leveluppoint@			; `string'
 PUBLIC	??_C@_04CGFJFPFD@none@				; `string'
-PUBLIC	??_C@_07MMNNMPML@warrior@			; `string'
+PUBLIC	??_C@_0BB@FIGDLACA@motionindexforme@		; `string'
 PUBLIC	??_C@_07ILMBEDPO@support@			; `string'
-PUBLIC	??_C@_04PANNCEIL@sura@				; `string'
+PUBLIC	??_C@_06MDLIGPKC@active@			; `string'
 PUBLIC	??_C@_08BFJJNNGH@assassin@			; `string'
-PUBLIC	??_C@_07CGFACAKO@passive@			; `string'
+PUBLIC	??_C@_07MMNNMPML@warrior@			; `string'
 PUBLIC	??_C@_06IEMBPBBN@shaman@			; `string'
-PUBLIC	??_C@_09IHHGJKF@FAN_RANGE@			; `string'
+PUBLIC	??_C@_04PANNCEIL@sura@				; `string'
 PUBLIC	??_C@_0BG@KFFKABFH@CAN_USE_IF_NOT_ENOUGH@	; `string'
-PUBLIC	??_C@_06FDJJHOKF@TOGGLE@			; `string'
+PUBLIC	??_C@_07CGFACAKO@passive@			; `string'
 PUBLIC	??_C@_0M@GMELPIKL@NEED_CORPSE@			; `string'
-PUBLIC	??_C@_0N@OECBKPIO@MELEE_ATTACK@			; `string'
+PUBLIC	??_C@_09IHHGJKF@FAN_RANGE@			; `string'
 PUBLIC	??_C@_0BC@NOPFFPJN@WEAPON_LIMITATION@		; `string'
-PUBLIC	??_C@_06FOCLNFCJ@USE_HP@			; `string'
+PUBLIC	??_C@_06FDJJHOKF@TOGGLE@			; `string'
 PUBLIC	??_C@_0O@OBGKPFHN@CHARGE_ATTACK@		; `string'
-PUBLIC	??_C@_0P@LCOEKGDG@STANDING_SKILL@		; `string'
+PUBLIC	??_C@_0N@OECBKPIO@MELEE_ATTACK@			; `string'
 PUBLIC	??_C@_0BF@KAHLCFKD@CAN_CHANGE_DIRECTION@	; `string'
-PUBLIC	??_C@_0N@DGOOFKCE@ATTACK_SKILL@			; `string'
+PUBLIC	??_C@_06FOCLNFCJ@USE_HP@			; `string'
 PUBLIC	??_C@_0P@JIHFJGIE@CAN_USE_FOR_ME@		; `string'
-PUBLIC	??_C@_0M@NDECBLLN@HORSE_SKILL@			; `string'
+PUBLIC	??_C@_0P@LCOEKGDG@STANDING_SKILL@		; `string'
 PUBLIC	??_C@_0N@DMIFKBAA@MOVING_SKILL@			; `string'
-PUBLIC	??_C@_0BA@PANOFCME@CANNOT_LEVEL_UP@		; `string'
+PUBLIC	??_C@_0N@DGOOFKCE@ATTACK_SKILL@			; `string'
 PUBLIC	??_C@_0BE@PHFCBKJJ@TIME_INCREASE_SKILL@		; `string'
-PUBLIC	??_C@_0O@DNFBBGFD@SEARCH_TARGET@		; `string'
+PUBLIC	??_C@_0M@NDECBLLN@HORSE_SKILL@			; `string'
 PUBLIC	??_C@_0N@CDNKGDPF@CIRCLE_RANGE@			; `string'
-PUBLIC	??_C@_06EBPDMAC@DAGGER@				; `string'
+PUBLIC	??_C@_0BA@PANOFCME@CANNOT_LEVEL_UP@		; `string'
 PUBLIC	??_C@_05HGEOAPGK@SWORD@				; `string'
-PUBLIC	??_C@_0L@CIOLFOIH@TWO_HANDED@			; `string'
+PUBLIC	??_C@_0O@DNFBBGFD@SEARCH_TARGET@		; `string'
 PUBLIC	??_C@_03GBJKLBDL@BOW@				; `string'
-PUBLIC	??_C@_04JCGINPGJ@BELL@				; `string'
+PUBLIC	??_C@_06EBPDMAC@DAGGER@				; `string'
 PUBLIC	??_C@_0N@OINLDIMI@DOUBLE_SWORD@			; `string'
-PUBLIC	??_C@_05CHNCNNHJ@ARROW@				; `string'
+PUBLIC	??_C@_0L@CIOLFOIH@TWO_HANDED@			; `string'
 PUBLIC	??_C@_03HPGGKCHO@FAN@				; `string'
-PUBLIC	??_C@_05FGPNDJME@chain@				; `string'
+PUBLIC	??_C@_04JCGINPGJ@BELL@				; `string'
 PUBLIC	??_C@_0L@BFLCNLLJ@EMPTY_HAND@			; `string'
-PUBLIC	??_C@_02JFNPKIJL@LV@				; `string'
+PUBLIC	??_C@_05CHNCNNHJ@ARROW@				; `string'
 PUBLIC	??_C@_02PGLKMFED@HR@				; `string'
-PUBLIC	??_C@_05DDBABAEM@MaxHP@				; `string'
+PUBLIC	??_C@_05FGPNDJME@chain@				; `string'
 PUBLIC	??_C@_05KOHFLOFG@Level@				; `string'
-PUBLIC	??_C@_07DOMGCJCK@MinMWEP@			; `string'
+PUBLIC	??_C@_02JFNPKIJL@LV@				; `string'
 PUBLIC	??_C@_05CDGDFMNN@MaxSP@				; `string'
-PUBLIC	??_C@_06NEIGIGOC@MinWEP@			; `string'
+PUBLIC	??_C@_05DDBABAEM@MaxHP@				; `string'
 PUBLIC	??_C@_07NIKGIGML@MaxMWEP@			; `string'
-PUBLIC	??_C@_06BFCGIMHM@MinATK@			; `string'
+PUBLIC	??_C@_07DOMGCJCK@MinMWEP@			; `string'
 PUBLIC	??_C@_06NHHFGGKN@MaxWEP@			; `string'
-PUBLIC	??_C@_06BJMCHJAI@ATKSPD@			; `string'
+PUBLIC	??_C@_06NEIGIGOC@MinWEP@			; `string'
 PUBLIC	??_C@_06BGNFGMDD@MaxATK@			; `string'
-PUBLIC	??_C@_06CLLIGBKB@AtkMin@			; `string'
+PUBLIC	??_C@_06BFCGIMHM@MinATK@			; `string'
 PUBLIC	??_C@_0M@LAGJIOMN@AttackPower@			; `string'
-PUBLIC	??_C@_0N@BDLLDGMK@DefencePower@			; `string'
+PUBLIC	??_C@_06BJMCHJAI@ATKSPD@			; `string'
 PUBLIC	??_C@_06DJDDIFMO@AtkMax@			; `string'
-PUBLIC	??_C@_04DIOLBHO@MWEP@				; `string'
+PUBLIC	??_C@_06CLLIGBKB@AtkMin@			; `string'
 PUBLIC	??_C@_03BKLPEICB@DEF@				; `string'
-PUBLIC	??_C@_03JMHEAPMO@INT@				; `string'
+PUBLIC	??_C@_0N@BDLLDGMK@DefencePower@			; `string'
 PUBLIC	??_C@_0BB@JCAPOPOP@MagicAttackPower@		; `string'
-PUBLIC	??_C@_03MOPOHHPO@DEX@				; `string'
+PUBLIC	??_C@_04DIOLBHO@MWEP@				; `string'
 PUBLIC	??_C@_03OEDLDJBF@STR@				; `string'
-PUBLIC	??_C@_06JNLGMHCE@minmtk@			; `string'
+PUBLIC	??_C@_03JMHEAPMO@INT@				; `string'
 PUBLIC	??_C@_03ECCGHPEG@CON@				; `string'
-PUBLIC	??_C@_05JJHFHHDI@maxhp@				; `string'
+PUBLIC	??_C@_03MOPOHHPO@DEX@				; `string'
 PUBLIC	??_C@_06JOEFCHGL@maxmtk@			; `string'
-PUBLIC	??_C@_04OLEAENMA@odef@				; `string'
+PUBLIC	??_C@_06JNLGMHCE@minmtk@			; `string'
 PUBLIC	??_C@_05IJAGDLKJ@maxsp@				; `string'
-PUBLIC	??_C@_06BFDDJCEN@maxwep@			; `string'
+PUBLIC	??_C@_05JJHFHHDI@maxhp@				; `string'
 PUBLIC	??_C@_06BGMAHCAC@minwep@			; `string'
-PUBLIC	??_C@_02FEKCJMIO@ar@				; `string'
+PUBLIC	??_C@_04OLEAENMA@odef@				; `string'
 PUBLIC	??_C@_02DIBGMKNJ@lv@				; `string'
-PUBLIC	??_C@_03OJMAPEGJ@str@				; `string'
+PUBLIC	??_C@_06BFDDJCEN@maxwep@			; `string'
 PUBLIC	??_C@_02HBJMJOPF@iq@				; `string'
-PUBLIC	??_C@_03EPNNLCDK@con@				; `string'
+PUBLIC	??_C@_02FEKCJMIO@ar@				; `string'
 PUBLIC	??_C@_03MDAFLKIC@dex@				; `string'
-PUBLIC	??_C@_03EJHAMIPL@wep@				; `string'
+PUBLIC	??_C@_03OJMAPEGJ@str@				; `string'
 PUBLIC	??_C@_03MCAGHNNN@mtk@				; `string'
-PUBLIC	??_C@_08GKDFODEA@ASSASSIN@			; `string'
+PUBLIC	??_C@_03EPNNLCDK@con@				; `string'
 PUBLIC	??_C@_07DBIAHDEP@WARRIOR@			; `string'
-PUBLIC	??_C@_06IAOKCPMP@SHAMAN@			; `string'
+PUBLIC	??_C@_03EJHAMIPL@wep@				; `string'
 PUBLIC	??_C@_04DMOHMGPD@SURA@				; `string'
-PUBLIC	??_C@_07HGJMPPHK@SUPPORT@			; `string'
+PUBLIC	??_C@_08GKDFODEA@ASSASSIN@			; `string'
 PUBLIC	??_C@_0P@BOFCEHLM@common?1support@		; `string'
-PUBLIC	??_C@_05KHBKMNCB@GUILD@				; `string'
+PUBLIC	??_C@_06IAOKCPMP@SHAMAN@			; `string'
 PUBLIC	??_C@_0N@PLNCGJNB@common?1guild@		; `string'
-PUBLIC	??_C@_05PFGFPFEF@HORSE@				; `string'
+PUBLIC	??_C@_07HGJMPPHK@SUPPORT@			; `string'
 PUBLIC	??_C@_0N@KJKNFBLF@common?1horse@		; `string'
-PUBLIC	??_C@_0L@DPGJKEBB@SkillPoint@			; `string'
+PUBLIC	??_C@_05KHBKMNCB@GUILD@				; `string'
 PUBLIC	??_C@_07OJCANPON@JeungJi@			; `string'
-PUBLIC	??_C@_0CG@HMNMMGCM@skillGetAffect?5?9?5Strange?5Formul@ ; `string'
+PUBLIC	??_C@_05PFGFPFEF@HORSE@				; `string'
 PUBLIC	??_C@_01DICPFPGM@k@				; `string'
-PUBLIC	??_C@_1KA@DODJLJEA@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
+PUBLIC	??_C@_0L@DPGJKEBB@SkillPoint@			; `string'
 PUBLIC	??_C@_04GHNNFJCK@?$CF?40f@			; `string'
-PUBLIC	??_C@_0DO@CIPJKINI@skill?4RegisterSkill?5?9?5Failed?5to@ ; `string'
+PUBLIC	??_C@_0CG@HMNMMGCM@skillGetAffect?5?9?5Strange?5Formul@ ; `string'
 PUBLIC	??_C@_1FG@PJFMKMMA@?$AAi?$AAG?$AAr?$AAa?$AAd?$AAe?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0?$AA?5?$AA?$CG?$AA?$CG?$AA?5@ ; `string'
-PUBLIC	??_C@_0DA@NFCGPBGN@skill?4GetSkillName?5?9?5Failed?5to?5@ ; `string'
+PUBLIC	??_C@_1KA@DODJLJEA@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
 PUBLIC	??_C@_0BK@EHEHLDPB@Failed?5to?5load?5Skill?5Desc@ ; `string'
-PUBLIC	??_C@_0DA@INMEACAF@skill?4GetSkillType?5?9?5Failed?5to?5@ ; `string'
+PUBLIC	??_C@_0DO@CIPJKINI@skill?4RegisterSkill?5?9?5Failed?5to@ ; `string'
 PUBLIC	??_C@_0DH@IPEMHLCJ@skill?4GetSkillDescription?5?9?5Fai@ ; `string'
-PUBLIC	??_C@_0EC@BBPGDICG@skill?4GetSkillConditionDescript@ ; `string'
+PUBLIC	??_C@_0DA@NFCGPBGN@skill?4GetSkillName?5?9?5Failed?5to?5@ ; `string'
 PUBLIC	??_C@_0EF@FCDOKCFE@skill?4GetSkillConditionDescript@ ; `string'
-PUBLIC	??_C@_0DN@GOILKJOL@skill?4GetSkillAffectDescription@ ; `string'
+PUBLIC	??_C@_0DA@INMEACAF@skill?4GetSkillType?5?9?5Failed?5to?5@ ; `string'
 PUBLIC	??_C@_0EC@GNHMANKN@skill?4GetSkillAffectDescription@ ; `string'
-PUBLIC	??_C@_0DA@JCGHCILN@skill?4GetSkillNeedSP?5Failed?5to?5@ ; `string'
+PUBLIC	??_C@_0EC@BBPGDICG@skill?4GetSkillConditionDescript@ ; `string'
 PUBLIC	??_C@_0DE@OPJBIDNE@skill?4GetSkillCoolTime?5?9?5Failed@ ; `string'
-PUBLIC	??_C@_0DE@GMCGPCPN@skill?4GetSkillMaxLevel?5?9?5Failed@ ; `string'
+PUBLIC	??_C@_0DN@GOILKJOL@skill?4GetSkillAffectDescription@ ; `string'
 PUBLIC	??_C@_0DK@KAOLKAON@skill?4GetSkillContinuationSP?5?9?5@ ; `string'
-PUBLIC	??_C@_0DG@NOMBCANI@skill?4GetSkillLevelLimit?5?9?5Fail@ ; `string'
+PUBLIC	??_C@_0DA@JCGHCILN@skill?4GetSkillNeedSP?5Failed?5to?5@ ; `string'
 PUBLIC	??_C@_0DI@BIBFKFFF@skill?4GetSkillLevelUpPoint?5?9?5Fa@ ; `string'
-PUBLIC	??_C@_0EL@ICHNDOAM@skill?4IsSkillRequirement?5?9?5Fail@ ; `string'
+PUBLIC	??_C@_0DE@GMCGPCPN@skill?4GetSkillMaxLevel?5?9?5Failed@ ; `string'
 PUBLIC	??_C@_0DG@KGFIMNPN@skill?4IsSkillRequirement?5?9?5Fail@ ; `string'
-PUBLIC	??_C@_0DM@OIJBJLGH@skill?4GetSkillRequireStatCount?5@ ; `string'
+PUBLIC	??_C@_0DG@NOMBCANI@skill?4GetSkillLevelLimit?5?9?5Fail@ ; `string'
 PUBLIC	??_C@_0DL@ONFGMLIM@skill?4GetSkillRequirementData?5?9@ ; `string'
-PUBLIC	??_C@_0DD@IKLGIIBP@skill?4CanLevelUpSkill?5?9?5Failed?5@ ; `string'
+PUBLIC	??_C@_0EL@ICHNDOAM@skill?4IsSkillRequirement?5?9?5Fail@ ; `string'
 PUBLIC	??_C@_0DL@KJNPLMH@skill?4GetSkillRequireStatData?5?9@ ; `string'
-PUBLIC	??_C@_0DJ@LIKJDHHI@skill?4GetNeedCharacterLevel?5?9?5F@ ; `string'
+PUBLIC	??_C@_0DM@OIJBJLGH@skill?4GetSkillRequireStatCount?5@ ; `string'
 PUBLIC	??_C@_0DM@ECFJDING@skill?4CheckRequirementSueccess?5@ ; `string'
-PUBLIC	??_C@_0DA@MJDGFODH@skill?4IsUseHPSkill?5?9?5Failed?5to?5@ ; `string'
+PUBLIC	??_C@_0DD@IKLGIIBP@skill?4CanLevelUpSkill?5?9?5Failed?5@ ; `string'
 PUBLIC	??_C@_0DB@CHHDEPFC@skill?4IsToggleSkill?5?9?5Failed?5to@ ; `string'
-PUBLIC	??_C@_0CP@NNBFAJHG@skill?4CanUseSkill?5?9?5Failed?5to?5f@ ; `string'
+PUBLIC	??_C@_0DJ@LIKJDHHI@skill?4GetNeedCharacterLevel?5?9?5F@ ; `string'
 PUBLIC	??_C@_0DD@MABMBDPO@skill?4IsStandingSkill?5?9?5Failed?5@ ; `string'
-PUBLIC	??_C@_0DD@KEMABJPN@skill?4GetIconInstance?5?9?5Failed?5@ ; `string'
+PUBLIC	??_C@_0DA@MJDGFODH@skill?4IsUseHPSkill?5?9?5Failed?5to?5@ ; `string'
 PUBLIC	??_C@_0DC@CENGELDK@skill?4IsLevelUpSkill?5?9?5Failed?5t@ ; `string'
-PUBLIC	??_C@_0DA@KDCMPJNE@skill?4GetGradeData?5?9?5Failed?5to?5@ ; `string'
+PUBLIC	??_C@_0CP@NNBFAJHG@skill?4CanUseSkill?5?9?5Failed?5to?5f@ ; `string'
 PUBLIC	??_C@_0DG@FIBFEPFG@skill?4GetIconInstanceNew?5?9?5Fail@ ; `string'
-PUBLIC	??_C@_0DJ@CIKNCBHD@skill?4GetNewAffectDataCount?5?9?5F@ ; `string'
+PUBLIC	??_C@_0DD@KEMABJPN@skill?4GetIconInstance?5?9?5Failed?5@ ; `string'
 PUBLIC	??_C@_0BJ@JFEABPIC@Strange?5grade?5index?5?$FL?$CFd?$FN@ ; `string'
-PUBLIC	??_C@_0DB@HOKFKPGM@?5skill?4GetNewAffectData?5?9?5Stran@ ; `string'
+PUBLIC	??_C@_0DA@KDCMPJNE@skill?4GetGradeData?5?9?5Failed?5to?5@ ; `string'
 PUBLIC	??_C@_0DE@OAOBJMAB@skill?4GetNewAffectData?5?9?5Failed@ ; `string'
-PUBLIC	??_C@_0CP@PIJHMHNL@skill?4GetDuration?5?9?5Failed?5to?5f@ ; `string'
+PUBLIC	??_C@_0DJ@CIKNCBHD@skill?4GetNewAffectDataCount?5?9?5F@ ; `string'
 PUBLIC	??_C@_03NIMMFECC@sff@				; `string'
-PUBLIC	??_C@_04NBMLNMO@ssii@				; `string'
+PUBLIC	??_C@_0DB@HOKFKPGM@?5skill?4GetNewAffectData?5?9?5Stran@ ; `string'
 PUBLIC	??_C@_0DF@DFOMMGAB@d?3?1ymir?5work?1ui?1game?1windows?1sk@ ; `string'
-PUBLIC	??_C@_0O@EOBHKOMF@LoadSkillData@		; `string'
+PUBLIC	??_C@_0CP@PIJHMHNL@skill?4GetDuration?5?9?5Failed?5to?5f@ ; `string'
 PUBLIC	??_C@_0O@HFDAJMID@RegisterSkill@		; `string'
-PUBLIC	??_C@_0N@ICDCNFCK@GetSkillName@			; `string'
+PUBLIC	??_C@_04NBMLNMO@ssii@				; `string'
 PUBLIC	??_C@_0P@CCIBNFJH@ClearSkillData@		; `string'
-PUBLIC	??_C@_0N@CJDBBFFK@GetSkillType@			; `string'
+PUBLIC	??_C@_0O@EOBHKOMF@LoadSkillData@		; `string'
 PUBLIC	??_C@_0BE@KMOMILIC@GetSkillDescription@		; `string'
-PUBLIC	??_C@_0BN@HCEIODN@GetSkillConditionDescription@	; `string'
+PUBLIC	??_C@_0N@ICDCNFCK@GetSkillName@			; `string'
 PUBLIC	??_C@_0CC@ODGHFHOM@GetSkillConditionDescriptionCou@ ; `string'
-PUBLIC	??_C@_0BK@LKIJJIBH@GetSkillAffectDescription@	; `string'
+PUBLIC	??_C@_0N@CJDBBFFK@GetSkillType@			; `string'
 PUBLIC	??_C@_0BP@JNKPHGMM@GetSkillAffectDescriptionCount@ ; `string'
-PUBLIC	??_C@_0BH@KCKIGPBP@GetSkillContinuationSP@	; `string'
+PUBLIC	??_C@_0BN@HCEIODN@GetSkillConditionDescription@	; `string'
 PUBLIC	??_C@_0P@FOMOMLEO@GetSkillNeedSP@		; `string'
-PUBLIC	??_C@_0BF@OOHFIPJA@GetSkillLevelUpPoint@	; `string'
+PUBLIC	??_C@_0BK@LKIJJIBH@GetSkillAffectDescription@	; `string'
 PUBLIC	??_C@_0BB@BOBBPPLD@GetSkillMaxLevel@		; `string'
-PUBLIC	??_C@_0BD@DDDOLMOO@IsSkillRequirement@		; `string'
+PUBLIC	??_C@_0BH@KCKIGPBP@GetSkillContinuationSP@	; `string'
 PUBLIC	??_C@_0BD@EFBEHGJD@GetSkillLevelLimit@		; `string'
-PUBLIC	??_C@_0BJ@MFDNCGMA@GetSkillRequireStatCount@	; `string'
+PUBLIC	??_C@_0BF@OOHFIPJA@GetSkillLevelUpPoint@	; `string'
 PUBLIC	??_C@_0BI@KEHKEMFK@GetSkillRequirementData@	; `string'
-PUBLIC	??_C@_0BA@PPEEBLJG@CanLevelUpSkill@		; `string'
+PUBLIC	??_C@_0BD@DDDOLMOO@IsSkillRequirement@		; `string'
 PUBLIC	??_C@_0BI@ENABGEG@GetSkillRequireStatData@	; `string'
-PUBLIC	??_C@_0BJ@IKLDBFHG@CheckRequirementSueccess@	; `string'
+PUBLIC	??_C@_0BJ@MFDNCGMA@GetSkillRequireStatCount@	; `string'
 PUBLIC	??_C@_0P@FFJOKPAC@IsLevelUpSkill@		; `string'
-PUBLIC	??_C@_0O@MFGECKPP@IsToggleSkill@		; `string'
+PUBLIC	??_C@_0BA@PPEEBLJG@CanLevelUpSkill@		; `string'
 PUBLIC	??_C@_0BG@FNHMFCFA@GetNeedCharacterLevel@	; `string'
-PUBLIC	??_C@_0BA@GOPNFICC@IsStandingSkill@		; `string'
+PUBLIC	??_C@_0BJ@IKLDBFHG@CheckRequirementSueccess@	; `string'
 PUBLIC	??_C@_0N@OINKFIKA@IsUseHPSkill@			; `string'
-PUBLIC	??_C@_0M@EBHJIJIK@GetIconName@			; `string'
+PUBLIC	??_C@_0O@MFGECKPP@IsToggleSkill@		; `string'
 PUBLIC	??_C@_0M@PEGEECMA@CanUseSkill@			; `string'
-PUBLIC	??_C@_0BD@OKNMGMMK@GetIconInstanceNew@		; `string'
+PUBLIC	??_C@_0BA@GOPNFICC@IsStandingSkill@		; `string'
 PUBLIC	??_C@_0BA@COPLEHNJ@GetIconImageNew@		; `string'
-PUBLIC	??_C@_0BB@BKIHFCCH@GetNewAffectData@		; `string'
+PUBLIC	??_C@_0M@EBHJIJIK@GetIconName@			; `string'
 PUBLIC	??_C@_0BG@IBOHFBML@GetNewAffectDataCount@	; `string'
-PUBLIC	??_C@_0O@LGLMGJIG@GetEmptySkill@		; `string'
+PUBLIC	??_C@_0BD@OKNMGMMK@GetIconInstanceNew@		; `string'
 PUBLIC	??_C@_0M@DDOIJMMH@GetDuration@			; `string'
-PUBLIC	??_C@_0BF@EGGIPEPN@GetPetSkillIconImage@	; `string'
+PUBLIC	??_C@_0BB@BKIHFCCH@GetNewAffectData@		; `string'
 PUBLIC	??_C@_0BF@NEAFKJCC@GetSkillPowerByLevel@	; `string'
-PUBLIC	??_C@_0BA@OFINHKOL@GetPetSkillInfo@		; `string'
+PUBLIC	??_C@_0O@LGLMGJIG@GetEmptySkill@		; `string'
 PUBLIC	??_C@_0BE@IGMBCGGH@GetPetSkillIconPath@		; `string'
-PUBLIC	??_C@_0BA@PDFAJBCB@SKILL_TYPE_NONE@		; `string'
+PUBLIC	??_C@_0BF@EGGIPEPN@GetPetSkillIconImage@	; `string'
 PUBLIC	??_C@_05ODMCMJAJ@skill@				; `string'
-PUBLIC	??_C@_0BD@PNOKHAAN@SKILL_TYPE_SUPPORT@		; `string'
+PUBLIC	??_C@_0BA@OFINHKOL@GetPetSkillInfo@		; `string'
 PUBLIC	??_C@_0BC@PKECMCK@SKILL_TYPE_ACTIVE@		; `string'
-PUBLIC	??_C@_0BB@BFKJCPHH@SKILL_TYPE_HORSE@		; `string'
+PUBLIC	??_C@_0BA@PDFAJBCB@SKILL_TYPE_NONE@		; `string'
 PUBLIC	??_C@_0BB@EHNGBHBD@SKILL_TYPE_GUILD@		; `string'
-PUBLIC	??_C@_0BC@BOJNDPOL@SKILL_GRADE_COUNT@		; `string'
+PUBLIC	??_C@_0BD@PNOKHAAN@SKILL_TYPE_SUPPORT@		; `string'
 PUBLIC	??_C@_0BD@EPLKCGIN@SKILL_TYPE_MAX_NUM@		; `string'
-PUBLIC	??_C@_0P@KEADCIEM@SKILL_GRADEGAP@		; `string'
+PUBLIC	??_C@_0BB@BFKJCPHH@SKILL_TYPE_HORSE@		; `string'
 PUBLIC	??_C@_0BH@GLOHPBFD@SKILL_GRADE_STEP_COUNT@	; `string'
-PUBLIC	??_C@_0BI@EEICPOHM@PET_SKILL_USE_TYPE_NONE@	; `string'
+PUBLIC	??_C@_0BC@BOJNDPOL@SKILL_GRADE_COUNT@		; `string'
 PUBLIC	??_C@_0BD@FJPAJOM@SKILL_EFFECT_COUNT@		; `string'
-PUBLIC	??_C@_0BI@BCCIBAHK@PET_SKILL_USE_TYPE_AUTO@	; `string'
+PUBLIC	??_C@_0P@KEADCIEM@SKILL_GRADEGAP@		; `string'
 PUBLIC	??_C@_0BL@LOKHGKJJ@PET_SKILL_USE_TYPE_PASSIVE@	; `string'
+PUBLIC	??_C@_0BI@EEICPOHM@PET_SKILL_USE_TYPE_NONE@	; `string'
 PUBLIC	??_C@_0BH@IENGINEA@PET_SKILL_USE_TYPE_MAX@	; `string'
-PUBLIC	??_R2?$CSingleton@VCPythonSkill@@@@8		; CSingleton<CPythonSkill>::`RTTI Base Class Array'
+PUBLIC	??_C@_0BI@BCCIBAHK@PET_SKILL_USE_TYPE_AUTO@	; `string'
 PUBLIC	??_R2CPythonSkill@@8				; CPythonSkill::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonSkill@@@@8	; CSingleton<CPythonSkill>::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R2?$CSingleton@VCPythonSkill@@@@8		; CSingleton<CPythonSkill>::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@CPythonSkill@@8			; CPythonSkill::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R0?AV?$CSingleton@VCPythonSkill@@@@@8	; CSingleton<CPythonSkill> `RTTI Type Descriptor'
+PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonSkill@@@@8	; CSingleton<CPythonSkill>::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R3?$CSingleton@VCPythonSkill@@@@8		; CSingleton<CPythonSkill>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AVCPythonSkill@@@8			; CPythonSkill `RTTI Type Descriptor'
 PUBLIC	??_R3CPythonSkill@@8				; CPythonSkill::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R0?AV?$CSingleton@VCPythonSkill@@@@@8	; CSingleton<CPythonSkill> `RTTI Type Descriptor'
+PUBLIC	??_R0?AVCPythonSkill@@@8			; CPythonSkill `RTTI Type Descriptor'
 PUBLIC	??_R4?$CSingleton@VCPythonSkill@@@@6B@		; CSingleton<CPythonSkill>::`RTTI Complete Object Locator'
 PUBLIC	??_R4CPythonSkill@@6B@				; CPythonSkill::`RTTI Complete Object Locator'
 PUBLIC	??_7?$CSingleton@VCPythonSkill@@@@6B@		; CSingleton<CPythonSkill>::`vftable'
@@ -269,17 +269,17 @@ PUBLIC	?MELEE_SKILL_TARGET_RANGE@SSkillData@CPythonSkill@@2KA ; CPythonSkill::SS
 PUBLIC	?SKILL_EFFECT_UPGRADE_ENABLE@@3HA		; SKILL_EFFECT_UPGRADE_ENABLE
 EXTRN	??__C@YGXPAX0IIP6EX00@ZP6EX0@Z@Z:PROC		; `eh vector copy constructor iterator'
 EXTRN	?SetRandom@CPoly@@QAEXH@Z:PROC			; CPoly::SetRandom
-EXTRN	??1CPoly@@UAE@XZ:PROC				; CPoly::~CPoly
-EXTRN	?SetStr@CPoly@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z:PROC ; CPoly::SetStr
-EXTRN	?GetVarName@CPoly@@QAEPBDI@Z:PROC		; CPoly::GetVarName
-EXTRN	?SetVar@CPoly@@QAEHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@N@Z:PROC ; CPoly::SetVar
 EXTRN	?Eval@CPoly@@QAEMXZ:PROC			; CPoly::Eval
 EXTRN	??0CPoly@@QAE@XZ:PROC				; CPoly::CPoly
+EXTRN	??1CPoly@@UAE@XZ:PROC				; CPoly::~CPoly
+EXTRN	?SetStr@CPoly@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z:PROC ; CPoly::SetStr
 EXTRN	?Analyze@CPoly@@QAEHPBD@Z:PROC			; CPoly::Analyze
 EXTRN	?GetVarCount@CPoly@@QAEHXZ:PROC			; CPoly::GetVarCount
+EXTRN	?GetVarName@CPoly@@QAEPBDI@Z:PROC		; CPoly::GetVarName
+EXTRN	?SetVar@CPoly@@QAEHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@N@Z:PROC ; CPoly::SetVar
+EXTRN	?GetTokenWord@CTextFileLoader@@QAEHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAG@Z:PROC ; CTextFileLoader::GetTokenWord
 EXTRN	?GetTokenDoubleWord@CTextFileLoader@@QAEHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAK@Z:PROC ; CTextFileLoader::GetTokenDoubleWord
 EXTRN	?GetTokenByte@CTextFileLoader@@QAEHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAE@Z:PROC ; CTextFileLoader::GetTokenByte
-EXTRN	?GetTokenWord@CTextFileLoader@@QAEHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAG@Z:PROC ; CTextFileLoader::GetTokenWord
 EXTRN	?stl_lowers@@YAXAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z:PROC ; stl_lowers
 EXTRN	?GetTokenString@CTextFileLoader@@QAEHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAV23@@Z:PROC ; CTextFileLoader::GetTokenString
 ?SKILL_EFFECT_UPGRADE_ENABLE@@3HA DD 01H DUP (?)	; SKILL_EFFECT_UPGRADE_ENABLE
@@ -513,6 +513,18 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$CSingleton@VCPythonSkill@@@@@8
 	DD	FLAT:??_R3?$CSingleton@VCPythonSkill@@@@8
 rdata$r	ENDS
+;	COMDAT ??_R0?AVCPythonSkill@@@8
+data$rs	SEGMENT
+??_R0?AVCPythonSkill@@@8 DD FLAT:??_7type_info@@6B@	; CPythonSkill `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCPythonSkill@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCPythonSkill@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCPythonSkill@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonSkill> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCPythonSkill@@@@', 00H
+data$rs	ENDS
 ;	COMDAT ??_R3CPythonSkill@@8
 rdata$r	SEGMENT
 ??_R3CPythonSkill@@8 DD 00H				; CPythonSkill::`RTTI Class Hierarchy Descriptor'
@@ -520,34 +532,12 @@ rdata$r	SEGMENT
 	DD	02H
 	DD	FLAT:??_R2CPythonSkill@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonSkill@@@8
-data$rs	SEGMENT
-??_R0?AVCPythonSkill@@@8 DD FLAT:??_7type_info@@6B@	; CPythonSkill `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCPythonSkill@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R3?$CSingleton@VCPythonSkill@@@@8
 rdata$r	SEGMENT
 ??_R3?$CSingleton@VCPythonSkill@@@@8 DD 00H		; CSingleton<CPythonSkill>::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	01H
 	DD	FLAT:??_R2?$CSingleton@VCPythonSkill@@@@8
-rdata$r	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCPythonSkill@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCPythonSkill@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonSkill> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AV?$CSingleton@VCPythonSkill@@@@', 00H
-data$rs	ENDS
-;	COMDAT ??_R1A@?0A@EA@CPythonSkill@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@CPythonSkill@@8 DD FLAT:??_R0?AVCPythonSkill@@@8 ; CPythonSkill::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	01H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3CPythonSkill@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonSkill@@@@8
 rdata$r	SEGMENT
@@ -559,346 +549,346 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$CSingleton@VCPythonSkill@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R2CPythonSkill@@8
+;	COMDAT ??_R1A@?0A@EA@CPythonSkill@@8
 rdata$r	SEGMENT
-??_R2CPythonSkill@@8 DD FLAT:??_R1A@?0A@EA@CPythonSkill@@8 ; CPythonSkill::`RTTI Base Class Array'
-	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonSkill@@@@8
+??_R1A@?0A@EA@CPythonSkill@@8 DD FLAT:??_R0?AVCPythonSkill@@@8 ; CPythonSkill::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3CPythonSkill@@8
 rdata$r	ENDS
 ;	COMDAT ??_R2?$CSingleton@VCPythonSkill@@@@8
 rdata$r	SEGMENT
 ??_R2?$CSingleton@VCPythonSkill@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonSkill@@@@8 ; CSingleton<CPythonSkill>::`RTTI Base Class Array'
 rdata$r	ENDS
+;	COMDAT ??_R2CPythonSkill@@8
+rdata$r	SEGMENT
+??_R2CPythonSkill@@8 DD FLAT:??_R1A@?0A@EA@CPythonSkill@@8 ; CPythonSkill::`RTTI Base Class Array'
+	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonSkill@@@@8
+rdata$r	ENDS
+;	COMDAT ??_C@_0BI@BCCIBAHK@PET_SKILL_USE_TYPE_AUTO@
+CONST	SEGMENT
+??_C@_0BI@BCCIBAHK@PET_SKILL_USE_TYPE_AUTO@ DB 'PET_SKILL_USE_TYPE_AUTO', 00H ; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0BH@IENGINEA@PET_SKILL_USE_TYPE_MAX@
 CONST	SEGMENT
 ??_C@_0BH@IENGINEA@PET_SKILL_USE_TYPE_MAX@ DB 'PET_SKILL_USE_TYPE_MAX', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BI@EEICPOHM@PET_SKILL_USE_TYPE_NONE@
+CONST	SEGMENT
+??_C@_0BI@EEICPOHM@PET_SKILL_USE_TYPE_NONE@ DB 'PET_SKILL_USE_TYPE_NONE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BL@LOKHGKJJ@PET_SKILL_USE_TYPE_PASSIVE@
 CONST	SEGMENT
 ??_C@_0BL@LOKHGKJJ@PET_SKILL_USE_TYPE_PASSIVE@ DB 'PET_SKILL_USE_TYPE_PAS'
 	DB	'SIVE', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@BCCIBAHK@PET_SKILL_USE_TYPE_AUTO@
+;	COMDAT ??_C@_0P@KEADCIEM@SKILL_GRADEGAP@
 CONST	SEGMENT
-??_C@_0BI@BCCIBAHK@PET_SKILL_USE_TYPE_AUTO@ DB 'PET_SKILL_USE_TYPE_AUTO', 00H ; `string'
+??_C@_0P@KEADCIEM@SKILL_GRADEGAP@ DB 'SKILL_GRADEGAP', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@FJPAJOM@SKILL_EFFECT_COUNT@
 CONST	SEGMENT
 ??_C@_0BD@FJPAJOM@SKILL_EFFECT_COUNT@ DB 'SKILL_EFFECT_COUNT', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@EEICPOHM@PET_SKILL_USE_TYPE_NONE@
+;	COMDAT ??_C@_0BC@BOJNDPOL@SKILL_GRADE_COUNT@
 CONST	SEGMENT
-??_C@_0BI@EEICPOHM@PET_SKILL_USE_TYPE_NONE@ DB 'PET_SKILL_USE_TYPE_NONE', 00H ; `string'
+??_C@_0BC@BOJNDPOL@SKILL_GRADE_COUNT@ DB 'SKILL_GRADE_COUNT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@GLOHPBFD@SKILL_GRADE_STEP_COUNT@
 CONST	SEGMENT
 ??_C@_0BH@GLOHPBFD@SKILL_GRADE_STEP_COUNT@ DB 'SKILL_GRADE_STEP_COUNT', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@KEADCIEM@SKILL_GRADEGAP@
+;	COMDAT ??_C@_0BB@BFKJCPHH@SKILL_TYPE_HORSE@
 CONST	SEGMENT
-??_C@_0P@KEADCIEM@SKILL_GRADEGAP@ DB 'SKILL_GRADEGAP', 00H ; `string'
+??_C@_0BB@BFKJCPHH@SKILL_TYPE_HORSE@ DB 'SKILL_TYPE_HORSE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@EPLKCGIN@SKILL_TYPE_MAX_NUM@
 CONST	SEGMENT
 ??_C@_0BD@EPLKCGIN@SKILL_TYPE_MAX_NUM@ DB 'SKILL_TYPE_MAX_NUM', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@BOJNDPOL@SKILL_GRADE_COUNT@
+;	COMDAT ??_C@_0BD@PNOKHAAN@SKILL_TYPE_SUPPORT@
 CONST	SEGMENT
-??_C@_0BC@BOJNDPOL@SKILL_GRADE_COUNT@ DB 'SKILL_GRADE_COUNT', 00H ; `string'
+??_C@_0BD@PNOKHAAN@SKILL_TYPE_SUPPORT@ DB 'SKILL_TYPE_SUPPORT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@EHNGBHBD@SKILL_TYPE_GUILD@
 CONST	SEGMENT
 ??_C@_0BB@EHNGBHBD@SKILL_TYPE_GUILD@ DB 'SKILL_TYPE_GUILD', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@BFKJCPHH@SKILL_TYPE_HORSE@
+;	COMDAT ??_C@_0BA@PDFAJBCB@SKILL_TYPE_NONE@
 CONST	SEGMENT
-??_C@_0BB@BFKJCPHH@SKILL_TYPE_HORSE@ DB 'SKILL_TYPE_HORSE', 00H ; `string'
+??_C@_0BA@PDFAJBCB@SKILL_TYPE_NONE@ DB 'SKILL_TYPE_NONE', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@PKECMCK@SKILL_TYPE_ACTIVE@
 CONST	SEGMENT
 ??_C@_0BC@PKECMCK@SKILL_TYPE_ACTIVE@ DB 'SKILL_TYPE_ACTIVE', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@PNOKHAAN@SKILL_TYPE_SUPPORT@
+;	COMDAT ??_C@_0BA@OFINHKOL@GetPetSkillInfo@
 CONST	SEGMENT
-??_C@_0BD@PNOKHAAN@SKILL_TYPE_SUPPORT@ DB 'SKILL_TYPE_SUPPORT', 00H ; `string'
+??_C@_0BA@OFINHKOL@GetPetSkillInfo@ DB 'GetPetSkillInfo', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05ODMCMJAJ@skill@
 CONST	SEGMENT
 ??_C@_05ODMCMJAJ@skill@ DB 'skill', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@PDFAJBCB@SKILL_TYPE_NONE@
+;	COMDAT ??_C@_0BF@EGGIPEPN@GetPetSkillIconImage@
 CONST	SEGMENT
-??_C@_0BA@PDFAJBCB@SKILL_TYPE_NONE@ DB 'SKILL_TYPE_NONE', 00H ; `string'
+??_C@_0BF@EGGIPEPN@GetPetSkillIconImage@ DB 'GetPetSkillIconImage', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@IGMBCGGH@GetPetSkillIconPath@
 CONST	SEGMENT
 ??_C@_0BE@IGMBCGGH@GetPetSkillIconPath@ DB 'GetPetSkillIconPath', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@OFINHKOL@GetPetSkillInfo@
+;	COMDAT ??_C@_0O@LGLMGJIG@GetEmptySkill@
 CONST	SEGMENT
-??_C@_0BA@OFINHKOL@GetPetSkillInfo@ DB 'GetPetSkillInfo', 00H ; `string'
+??_C@_0O@LGLMGJIG@GetEmptySkill@ DB 'GetEmptySkill', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@NEAFKJCC@GetSkillPowerByLevel@
 CONST	SEGMENT
 ??_C@_0BF@NEAFKJCC@GetSkillPowerByLevel@ DB 'GetSkillPowerByLevel', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@EGGIPEPN@GetPetSkillIconImage@
+;	COMDAT ??_C@_0BB@BKIHFCCH@GetNewAffectData@
 CONST	SEGMENT
-??_C@_0BF@EGGIPEPN@GetPetSkillIconImage@ DB 'GetPetSkillIconImage', 00H ; `string'
+??_C@_0BB@BKIHFCCH@GetNewAffectData@ DB 'GetNewAffectData', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@DDOIJMMH@GetDuration@
 CONST	SEGMENT
 ??_C@_0M@DDOIJMMH@GetDuration@ DB 'GetDuration', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@LGLMGJIG@GetEmptySkill@
+;	COMDAT ??_C@_0BD@OKNMGMMK@GetIconInstanceNew@
 CONST	SEGMENT
-??_C@_0O@LGLMGJIG@GetEmptySkill@ DB 'GetEmptySkill', 00H ; `string'
+??_C@_0BD@OKNMGMMK@GetIconInstanceNew@ DB 'GetIconInstanceNew', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@IBOHFBML@GetNewAffectDataCount@
 CONST	SEGMENT
 ??_C@_0BG@IBOHFBML@GetNewAffectDataCount@ DB 'GetNewAffectDataCount', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@BKIHFCCH@GetNewAffectData@
+;	COMDAT ??_C@_0M@EBHJIJIK@GetIconName@
 CONST	SEGMENT
-??_C@_0BB@BKIHFCCH@GetNewAffectData@ DB 'GetNewAffectData', 00H ; `string'
+??_C@_0M@EBHJIJIK@GetIconName@ DB 'GetIconName', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@COPLEHNJ@GetIconImageNew@
 CONST	SEGMENT
 ??_C@_0BA@COPLEHNJ@GetIconImageNew@ DB 'GetIconImageNew', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@OKNMGMMK@GetIconInstanceNew@
+;	COMDAT ??_C@_0BA@GOPNFICC@IsStandingSkill@
 CONST	SEGMENT
-??_C@_0BD@OKNMGMMK@GetIconInstanceNew@ DB 'GetIconInstanceNew', 00H ; `string'
+??_C@_0BA@GOPNFICC@IsStandingSkill@ DB 'IsStandingSkill', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@PEGEECMA@CanUseSkill@
 CONST	SEGMENT
 ??_C@_0M@PEGEECMA@CanUseSkill@ DB 'CanUseSkill', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@EBHJIJIK@GetIconName@
-CONST	SEGMENT
-??_C@_0M@EBHJIJIK@GetIconName@ DB 'GetIconName', 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0N@OINKFIKA@IsUseHPSkill@
-CONST	SEGMENT
-??_C@_0N@OINKFIKA@IsUseHPSkill@ DB 'IsUseHPSkill', 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BA@GOPNFICC@IsStandingSkill@
-CONST	SEGMENT
-??_C@_0BA@GOPNFICC@IsStandingSkill@ DB 'IsStandingSkill', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BG@FNHMFCFA@GetNeedCharacterLevel@
-CONST	SEGMENT
-??_C@_0BG@FNHMFCFA@GetNeedCharacterLevel@ DB 'GetNeedCharacterLevel', 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0O@MFGECKPP@IsToggleSkill@
 CONST	SEGMENT
 ??_C@_0O@MFGECKPP@IsToggleSkill@ DB 'IsToggleSkill', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@FFJOKPAC@IsLevelUpSkill@
+;	COMDAT ??_C@_0N@OINKFIKA@IsUseHPSkill@
 CONST	SEGMENT
-??_C@_0P@FFJOKPAC@IsLevelUpSkill@ DB 'IsLevelUpSkill', 00H ; `string'
+??_C@_0N@OINKFIKA@IsUseHPSkill@ DB 'IsUseHPSkill', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@IKLDBFHG@CheckRequirementSueccess@
 CONST	SEGMENT
 ??_C@_0BJ@IKLDBFHG@CheckRequirementSueccess@ DB 'CheckRequirementSueccess'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@ENABGEG@GetSkillRequireStatData@
+;	COMDAT ??_C@_0BG@FNHMFCFA@GetNeedCharacterLevel@
 CONST	SEGMENT
-??_C@_0BI@ENABGEG@GetSkillRequireStatData@ DB 'GetSkillRequireStatData', 00H ; `string'
+??_C@_0BG@FNHMFCFA@GetNeedCharacterLevel@ DB 'GetNeedCharacterLevel', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@PPEEBLJG@CanLevelUpSkill@
 CONST	SEGMENT
 ??_C@_0BA@PPEEBLJG@CanLevelUpSkill@ DB 'CanLevelUpSkill', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BI@KEHKEMFK@GetSkillRequirementData@
+;	COMDAT ??_C@_0P@FFJOKPAC@IsLevelUpSkill@
 CONST	SEGMENT
-??_C@_0BI@KEHKEMFK@GetSkillRequirementData@ DB 'GetSkillRequirementData', 00H ; `string'
+??_C@_0P@FFJOKPAC@IsLevelUpSkill@ DB 'IsLevelUpSkill', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@MFDNCGMA@GetSkillRequireStatCount@
 CONST	SEGMENT
 ??_C@_0BJ@MFDNCGMA@GetSkillRequireStatCount@ DB 'GetSkillRequireStatCount'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BD@EFBEHGJD@GetSkillLevelLimit@
+;	COMDAT ??_C@_0BI@ENABGEG@GetSkillRequireStatData@
 CONST	SEGMENT
-??_C@_0BD@EFBEHGJD@GetSkillLevelLimit@ DB 'GetSkillLevelLimit', 00H ; `string'
+??_C@_0BI@ENABGEG@GetSkillRequireStatData@ DB 'GetSkillRequireStatData', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@DDDOLMOO@IsSkillRequirement@
 CONST	SEGMENT
 ??_C@_0BD@DDDOLMOO@IsSkillRequirement@ DB 'IsSkillRequirement', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@BOBBPPLD@GetSkillMaxLevel@
+;	COMDAT ??_C@_0BI@KEHKEMFK@GetSkillRequirementData@
 CONST	SEGMENT
-??_C@_0BB@BOBBPPLD@GetSkillMaxLevel@ DB 'GetSkillMaxLevel', 00H ; `string'
+??_C@_0BI@KEHKEMFK@GetSkillRequirementData@ DB 'GetSkillRequirementData', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@OOHFIPJA@GetSkillLevelUpPoint@
 CONST	SEGMENT
 ??_C@_0BF@OOHFIPJA@GetSkillLevelUpPoint@ DB 'GetSkillLevelUpPoint', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@FOMOMLEO@GetSkillNeedSP@
+;	COMDAT ??_C@_0BD@EFBEHGJD@GetSkillLevelLimit@
 CONST	SEGMENT
-??_C@_0P@FOMOMLEO@GetSkillNeedSP@ DB 'GetSkillNeedSP', 00H ; `string'
+??_C@_0BD@EFBEHGJD@GetSkillLevelLimit@ DB 'GetSkillLevelLimit', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@KCKIGPBP@GetSkillContinuationSP@
 CONST	SEGMENT
 ??_C@_0BH@KCKIGPBP@GetSkillContinuationSP@ DB 'GetSkillContinuationSP', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BP@JNKPHGMM@GetSkillAffectDescriptionCount@
+;	COMDAT ??_C@_0BB@BOBBPPLD@GetSkillMaxLevel@
 CONST	SEGMENT
-??_C@_0BP@JNKPHGMM@GetSkillAffectDescriptionCount@ DB 'GetSkillAffectDesc'
-	DB	'riptionCount', 00H				; `string'
+??_C@_0BB@BOBBPPLD@GetSkillMaxLevel@ DB 'GetSkillMaxLevel', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@LKIJJIBH@GetSkillAffectDescription@
 CONST	SEGMENT
 ??_C@_0BK@LKIJJIBH@GetSkillAffectDescription@ DB 'GetSkillAffectDescripti'
 	DB	'on', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CC@ODGHFHOM@GetSkillConditionDescriptionCou@
+;	COMDAT ??_C@_0P@FOMOMLEO@GetSkillNeedSP@
 CONST	SEGMENT
-??_C@_0CC@ODGHFHOM@GetSkillConditionDescriptionCou@ DB 'GetSkillCondition'
-	DB	'DescriptionCount', 00H			; `string'
+??_C@_0P@FOMOMLEO@GetSkillNeedSP@ DB 'GetSkillNeedSP', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@HCEIODN@GetSkillConditionDescription@
 CONST	SEGMENT
 ??_C@_0BN@HCEIODN@GetSkillConditionDescription@ DB 'GetSkillConditionDesc'
 	DB	'ription', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@KMOMILIC@GetSkillDescription@
+;	COMDAT ??_C@_0BP@JNKPHGMM@GetSkillAffectDescriptionCount@
 CONST	SEGMENT
-??_C@_0BE@KMOMILIC@GetSkillDescription@ DB 'GetSkillDescription', 00H ; `string'
+??_C@_0BP@JNKPHGMM@GetSkillAffectDescriptionCount@ DB 'GetSkillAffectDesc'
+	DB	'riptionCount', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@CJDBBFFK@GetSkillType@
 CONST	SEGMENT
 ??_C@_0N@CJDBBFFK@GetSkillType@ DB 'GetSkillType', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@CCIBNFJH@ClearSkillData@
+;	COMDAT ??_C@_0CC@ODGHFHOM@GetSkillConditionDescriptionCou@
 CONST	SEGMENT
-??_C@_0P@CCIBNFJH@ClearSkillData@ DB 'ClearSkillData', 00H ; `string'
+??_C@_0CC@ODGHFHOM@GetSkillConditionDescriptionCou@ DB 'GetSkillCondition'
+	DB	'DescriptionCount', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@ICDCNFCK@GetSkillName@
 CONST	SEGMENT
 ??_C@_0N@ICDCNFCK@GetSkillName@ DB 'GetSkillName', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@HFDAJMID@RegisterSkill@
+;	COMDAT ??_C@_0BE@KMOMILIC@GetSkillDescription@
 CONST	SEGMENT
-??_C@_0O@HFDAJMID@RegisterSkill@ DB 'RegisterSkill', 00H ; `string'
+??_C@_0BE@KMOMILIC@GetSkillDescription@ DB 'GetSkillDescription', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@EOBHKOMF@LoadSkillData@
 CONST	SEGMENT
 ??_C@_0O@EOBHKOMF@LoadSkillData@ DB 'LoadSkillData', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DF@DFOMMGAB@d?3?1ymir?5work?1ui?1game?1windows?1sk@
+;	COMDAT ??_C@_0P@CCIBNFJH@ClearSkillData@
 CONST	SEGMENT
-??_C@_0DF@DFOMMGAB@d?3?1ymir?5work?1ui?1game?1windows?1sk@ DB 'd:/ymir wo'
-	DB	'rk/ui/game/windows/skill_enable_button.sub', 00H ; `string'
+??_C@_0P@CCIBNFJH@ClearSkillData@ DB 'ClearSkillData', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04NBMLNMO@ssii@
 CONST	SEGMENT
 ??_C@_04NBMLNMO@ssii@ DB 'ssii', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03NIMMFECC@sff@
+;	COMDAT ??_C@_0O@HFDAJMID@RegisterSkill@
 CONST	SEGMENT
-??_C@_03NIMMFECC@sff@ DB 'sff', 00H			; `string'
+??_C@_0O@HFDAJMID@RegisterSkill@ DB 'RegisterSkill', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CP@PIJHMHNL@skill?4GetDuration?5?9?5Failed?5to?5f@
 CONST	SEGMENT
 ??_C@_0CP@PIJHMHNL@skill?4GetDuration?5?9?5Failed?5to?5f@ DB 'skill.GetDu'
 	DB	'ration - Failed to find skill by %d', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DE@OAOBJMAB@skill?4GetNewAffectData?5?9?5Failed@
+;	COMDAT ??_C@_0DF@DFOMMGAB@d?3?1ymir?5work?1ui?1game?1windows?1sk@
 CONST	SEGMENT
-??_C@_0DE@OAOBJMAB@skill?4GetNewAffectData?5?9?5Failed@ DB 'skill.GetNewA'
-	DB	'ffectData - Failed to find skill by %d', 00H ; `string'
+??_C@_0DF@DFOMMGAB@d?3?1ymir?5work?1ui?1game?1windows?1sk@ DB 'd:/ymir wo'
+	DB	'rk/ui/game/windows/skill_enable_button.sub', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DB@HOKFKPGM@?5skill?4GetNewAffectData?5?9?5Stran@
 CONST	SEGMENT
 ??_C@_0DB@HOKFKPGM@?5skill?4GetNewAffectData?5?9?5Stran@ DB ' skill.GetNe'
 	DB	'wAffectData - Strange AffectIndex %d', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@JFEABPIC@Strange?5grade?5index?5?$FL?$CFd?$FN@
+;	COMDAT ??_C@_03NIMMFECC@sff@
 CONST	SEGMENT
-??_C@_0BJ@JFEABPIC@Strange?5grade?5index?5?$FL?$CFd?$FN@ DB 'Strange grad'
-	DB	'e index [%d]', 00H				; `string'
+??_C@_03NIMMFECC@sff@ DB 'sff', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DJ@CIKNCBHD@skill?4GetNewAffectDataCount?5?9?5F@
 CONST	SEGMENT
 ??_C@_0DJ@CIKNCBHD@skill?4GetNewAffectDataCount?5?9?5F@ DB 'skill.GetNewA'
 	DB	'ffectDataCount - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DG@FIBFEPFG@skill?4GetIconInstanceNew?5?9?5Fail@
+;	COMDAT ??_C@_0DE@OAOBJMAB@skill?4GetNewAffectData?5?9?5Failed@
 CONST	SEGMENT
-??_C@_0DG@FIBFEPFG@skill?4GetIconInstanceNew?5?9?5Fail@ DB 'skill.GetIcon'
-	DB	'InstanceNew - Failed to find skill by %d', 00H ; `string'
+??_C@_0DE@OAOBJMAB@skill?4GetNewAffectData?5?9?5Failed@ DB 'skill.GetNewA'
+	DB	'ffectData - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DA@KDCMPJNE@skill?4GetGradeData?5?9?5Failed?5to?5@
 CONST	SEGMENT
 ??_C@_0DA@KDCMPJNE@skill?4GetGradeData?5?9?5Failed?5to?5@ DB 'skill.GetGr'
 	DB	'adeData - Failed to find skill by %d', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DC@CENGELDK@skill?4IsLevelUpSkill?5?9?5Failed?5t@
+;	COMDAT ??_C@_0BJ@JFEABPIC@Strange?5grade?5index?5?$FL?$CFd?$FN@
 CONST	SEGMENT
-??_C@_0DC@CENGELDK@skill?4IsLevelUpSkill?5?9?5Failed?5t@ DB 'skill.IsLeve'
-	DB	'lUpSkill - Failed to find skill by %d', 00H	; `string'
+??_C@_0BJ@JFEABPIC@Strange?5grade?5index?5?$FL?$CFd?$FN@ DB 'Strange grad'
+	DB	'e index [%d]', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DD@KEMABJPN@skill?4GetIconInstance?5?9?5Failed?5@
 CONST	SEGMENT
 ??_C@_0DD@KEMABJPN@skill?4GetIconInstance?5?9?5Failed?5@ DB 'skill.GetIco'
 	DB	'nInstance - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DD@MABMBDPO@skill?4IsStandingSkill?5?9?5Failed?5@
+;	COMDAT ??_C@_0DG@FIBFEPFG@skill?4GetIconInstanceNew?5?9?5Fail@
 CONST	SEGMENT
-??_C@_0DD@MABMBDPO@skill?4IsStandingSkill?5?9?5Failed?5@ DB 'skill.IsStan'
-	DB	'dingSkill - Failed to find skill by %d', 00H ; `string'
+??_C@_0DG@FIBFEPFG@skill?4GetIconInstanceNew?5?9?5Fail@ DB 'skill.GetIcon'
+	DB	'InstanceNew - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CP@NNBFAJHG@skill?4CanUseSkill?5?9?5Failed?5to?5f@
 CONST	SEGMENT
 ??_C@_0CP@NNBFAJHG@skill?4CanUseSkill?5?9?5Failed?5to?5f@ DB 'skill.CanUs'
 	DB	'eSkill - Failed to find skill by %d', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DB@CHHDEPFC@skill?4IsToggleSkill?5?9?5Failed?5to@
+;	COMDAT ??_C@_0DC@CENGELDK@skill?4IsLevelUpSkill?5?9?5Failed?5t@
 CONST	SEGMENT
-??_C@_0DB@CHHDEPFC@skill?4IsToggleSkill?5?9?5Failed?5to@ DB 'skill.IsTogg'
-	DB	'leSkill - Failed to find skill by %d', 00H	; `string'
+??_C@_0DC@CENGELDK@skill?4IsLevelUpSkill?5?9?5Failed?5t@ DB 'skill.IsLeve'
+	DB	'lUpSkill - Failed to find skill by %d', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DA@MJDGFODH@skill?4IsUseHPSkill?5?9?5Failed?5to?5@
 CONST	SEGMENT
 ??_C@_0DA@MJDGFODH@skill?4IsUseHPSkill?5?9?5Failed?5to?5@ DB 'skill.IsUse'
 	DB	'HPSkill - Failed to find skill by %d', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DM@ECFJDING@skill?4CheckRequirementSueccess?5@
+;	COMDAT ??_C@_0DD@MABMBDPO@skill?4IsStandingSkill?5?9?5Failed?5@
 CONST	SEGMENT
-??_C@_0DM@ECFJDING@skill?4CheckRequirementSueccess?5@ DB 'skill.CheckRequ'
-	DB	'irementSueccess - Failed to find skill by %d', 00H ; `string'
+??_C@_0DD@MABMBDPO@skill?4IsStandingSkill?5?9?5Failed?5@ DB 'skill.IsStan'
+	DB	'dingSkill - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DJ@LIKJDHHI@skill?4GetNeedCharacterLevel?5?9?5F@
 CONST	SEGMENT
 ??_C@_0DJ@LIKJDHHI@skill?4GetNeedCharacterLevel?5?9?5F@ DB 'skill.GetNeed'
 	DB	'CharacterLevel - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DL@KJNPLMH@skill?4GetSkillRequireStatData?5?9@
+;	COMDAT ??_C@_0DB@CHHDEPFC@skill?4IsToggleSkill?5?9?5Failed?5to@
 CONST	SEGMENT
-??_C@_0DL@KJNPLMH@skill?4GetSkillRequireStatData?5?9@ DB 'skill.GetSkillR'
-	DB	'equireStatData - Failed to find skill by %d', 00H ; `string'
+??_C@_0DB@CHHDEPFC@skill?4IsToggleSkill?5?9?5Failed?5to@ DB 'skill.IsTogg'
+	DB	'leSkill - Failed to find skill by %d', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DD@IKLGIIBP@skill?4CanLevelUpSkill?5?9?5Failed?5@
 CONST	SEGMENT
 ??_C@_0DD@IKLGIIBP@skill?4CanLevelUpSkill?5?9?5Failed?5@ DB 'skill.CanLev'
 	DB	'elUpSkill - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DL@ONFGMLIM@skill?4GetSkillRequirementData?5?9@
+;	COMDAT ??_C@_0DM@ECFJDING@skill?4CheckRequirementSueccess?5@
 CONST	SEGMENT
-??_C@_0DL@ONFGMLIM@skill?4GetSkillRequirementData?5?9@ DB 'skill.GetSkill'
-	DB	'RequirementData - Failed to find skill by %d', 00H ; `string'
+??_C@_0DM@ECFJDING@skill?4CheckRequirementSueccess?5@ DB 'skill.CheckRequ'
+	DB	'irementSueccess - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DM@OIJBJLGH@skill?4GetSkillRequireStatCount?5@
 CONST	SEGMENT
 ??_C@_0DM@OIJBJLGH@skill?4GetSkillRequireStatCount?5@ DB 'skill.GetSkillR'
 	DB	'equireStatCount - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DG@KGFIMNPN@skill?4IsSkillRequirement?5?9?5Fail@
+;	COMDAT ??_C@_0DL@KJNPLMH@skill?4GetSkillRequireStatData?5?9@
 CONST	SEGMENT
-??_C@_0DG@KGFIMNPN@skill?4IsSkillRequirement?5?9?5Fail@ DB 'skill.IsSkill'
-	DB	'Requirement - Failed to find skill by %d', 00H ; `string'
+??_C@_0DL@KJNPLMH@skill?4GetSkillRequireStatData?5?9@ DB 'skill.GetSkillR'
+	DB	'equireStatData - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EL@ICHNDOAM@skill?4IsSkillRequirement?5?9?5Fail@
 CONST	SEGMENT
@@ -906,95 +896,90 @@ CONST	SEGMENT
 	DB	'Requirement - Failed to find skill : [%d/%s] can''t find [%s]'
 	DB	0aH, 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DI@BIBFKFFF@skill?4GetSkillLevelUpPoint?5?9?5Fa@
+;	COMDAT ??_C@_0DL@ONFGMLIM@skill?4GetSkillRequirementData?5?9@
 CONST	SEGMENT
-??_C@_0DI@BIBFKFFF@skill?4GetSkillLevelUpPoint?5?9?5Fa@ DB 'skill.GetSkil'
-	DB	'lLevelUpPoint - Failed to find skill by %d', 00H ; `string'
+??_C@_0DL@ONFGMLIM@skill?4GetSkillRequirementData?5?9@ DB 'skill.GetSkill'
+	DB	'RequirementData - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DG@NOMBCANI@skill?4GetSkillLevelLimit?5?9?5Fail@
 CONST	SEGMENT
 ??_C@_0DG@NOMBCANI@skill?4GetSkillLevelLimit?5?9?5Fail@ DB 'skill.GetSkil'
 	DB	'lLevelLimit - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DK@KAOLKAON@skill?4GetSkillContinuationSP?5?9?5@
+;	COMDAT ??_C@_0DG@KGFIMNPN@skill?4IsSkillRequirement?5?9?5Fail@
 CONST	SEGMENT
-??_C@_0DK@KAOLKAON@skill?4GetSkillContinuationSP?5?9?5@ DB 'skill.GetSkil'
-	DB	'lContinuationSP - Failed to find skill by %d', 00H ; `string'
+??_C@_0DG@KGFIMNPN@skill?4IsSkillRequirement?5?9?5Fail@ DB 'skill.IsSkill'
+	DB	'Requirement - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DE@GMCGPCPN@skill?4GetSkillMaxLevel?5?9?5Failed@
 CONST	SEGMENT
 ??_C@_0DE@GMCGPCPN@skill?4GetSkillMaxLevel?5?9?5Failed@ DB 'skill.GetSkil'
 	DB	'lMaxLevel - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DE@OPJBIDNE@skill?4GetSkillCoolTime?5?9?5Failed@
+;	COMDAT ??_C@_0DI@BIBFKFFF@skill?4GetSkillLevelUpPoint?5?9?5Fa@
 CONST	SEGMENT
-??_C@_0DE@OPJBIDNE@skill?4GetSkillCoolTime?5?9?5Failed@ DB 'skill.GetSkil'
-	DB	'lCoolTime - Failed to find skill by %d', 00H ; `string'
+??_C@_0DI@BIBFKFFF@skill?4GetSkillLevelUpPoint?5?9?5Fa@ DB 'skill.GetSkil'
+	DB	'lLevelUpPoint - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DA@JCGHCILN@skill?4GetSkillNeedSP?5Failed?5to?5@
 CONST	SEGMENT
 ??_C@_0DA@JCGHCILN@skill?4GetSkillNeedSP?5Failed?5to?5@ DB 'skill.GetSkil'
 	DB	'lNeedSP Failed to find skill by %d', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EC@GNHMANKN@skill?4GetSkillAffectDescription@
+;	COMDAT ??_C@_0DK@KAOLKAON@skill?4GetSkillContinuationSP?5?9?5@
 CONST	SEGMENT
-??_C@_0EC@GNHMANKN@skill?4GetSkillAffectDescription@ DB 'skill.GetSkillAf'
-	DB	'fectDescriptionCount - Failed to find skill by %d', 00H ; `string'
+??_C@_0DK@KAOLKAON@skill?4GetSkillContinuationSP?5?9?5@ DB 'skill.GetSkil'
+	DB	'lContinuationSP - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DN@GOILKJOL@skill?4GetSkillAffectDescription@
 CONST	SEGMENT
 ??_C@_0DN@GOILKJOL@skill?4GetSkillAffectDescription@ DB 'skill.GetSkillAf'
 	DB	'fectDescription - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EF@FCDOKCFE@skill?4GetSkillConditionDescript@
+;	COMDAT ??_C@_0DE@OPJBIDNE@skill?4GetSkillCoolTime?5?9?5Failed@
 CONST	SEGMENT
-??_C@_0EF@FCDOKCFE@skill?4GetSkillConditionDescript@ DB 'skill.GetSkillCo'
-	DB	'nditionDescriptionCount - Failed to find skill by %d', 00H ; `string'
+??_C@_0DE@OPJBIDNE@skill?4GetSkillCoolTime?5?9?5Failed@ DB 'skill.GetSkil'
+	DB	'lCoolTime - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EC@BBPGDICG@skill?4GetSkillConditionDescript@
 CONST	SEGMENT
 ??_C@_0EC@BBPGDICG@skill?4GetSkillConditionDescript@ DB 'skill.GetSkillCo'
 	DB	'nditionDescription() - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DH@IPEMHLCJ@skill?4GetSkillDescription?5?9?5Fai@
+;	COMDAT ??_C@_0EC@GNHMANKN@skill?4GetSkillAffectDescription@
 CONST	SEGMENT
-??_C@_0DH@IPEMHLCJ@skill?4GetSkillDescription?5?9?5Fai@ DB 'skill.GetSkil'
-	DB	'lDescription - Failed to find skill by %d', 00H ; `string'
+??_C@_0EC@GNHMANKN@skill?4GetSkillAffectDescription@ DB 'skill.GetSkillAf'
+	DB	'fectDescriptionCount - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DA@INMEACAF@skill?4GetSkillType?5?9?5Failed?5to?5@
 CONST	SEGMENT
 ??_C@_0DA@INMEACAF@skill?4GetSkillType?5?9?5Failed?5to?5@ DB 'skill.GetSk'
 	DB	'illType - Failed to find skill by %d', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BK@EHEHLDPB@Failed?5to?5load?5Skill?5Desc@
+;	COMDAT ??_C@_0EF@FCDOKCFE@skill?4GetSkillConditionDescript@
 CONST	SEGMENT
-??_C@_0BK@EHEHLDPB@Failed?5to?5load?5Skill?5Desc@ DB 'Failed to load Skil'
-	DB	'l Desc', 00H				; `string'
+??_C@_0EF@FCDOKCFE@skill?4GetSkillConditionDescript@ DB 'skill.GetSkillCo'
+	DB	'nditionDescriptionCount - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DA@NFCGPBGN@skill?4GetSkillName?5?9?5Failed?5to?5@
 CONST	SEGMENT
 ??_C@_0DA@NFCGPBGN@skill?4GetSkillName?5?9?5Failed?5to?5@ DB 'skill.GetSk'
 	DB	'illName - Failed to find skill by %d', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_1FG@PJFMKMMA@?$AAi?$AAG?$AAr?$AAa?$AAd?$AAe?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0?$AA?5?$AA?$CG?$AA?$CG?$AA?5@
+;	COMDAT ??_C@_0DH@IPEMHLCJ@skill?4GetSkillDescription?5?9?5Fai@
 CONST	SEGMENT
-??_C@_1FG@PJFMKMMA@?$AAi?$AAG?$AAr?$AAa?$AAd?$AAe?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0?$AA?5?$AA?$CG?$AA?$CG?$AA?5@ DB 'i'
-	DB	00H, 'G', 00H, 'r', 00H, 'a', 00H, 'd', 00H, 'e', 00H, ' ', 00H
-	DB	'>', 00H, '=', 00H, ' ', 00H, '0', 00H, ' ', 00H, '&', 00H, '&'
-	DB	00H, ' ', 00H, 'i', 00H, 'G', 00H, 'r', 00H, 'a', 00H, 'd', 00H
-	DB	'e', 00H, ' ', 00H, '<', 00H, ' ', 00H, 'S', 00H, 'K', 00H, 'I'
-	DB	00H, 'L', 00H, 'L', 00H, '_', 00H, 'E', 00H, 'F', 00H, 'F', 00H
-	DB	'E', 00H, 'C', 00H, 'T', 00H, '_', 00H, 'C', 00H, 'O', 00H, 'U'
-	DB	00H, 'N', 00H, 'T', 00H, 00H, 00H		; `string'
+??_C@_0DH@IPEMHLCJ@skill?4GetSkillDescription?5?9?5Fai@ DB 'skill.GetSkil'
+	DB	'lDescription - Failed to find skill by %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DO@CIPJKINI@skill?4RegisterSkill?5?9?5Failed?5to@
 CONST	SEGMENT
 ??_C@_0DO@CIPJKINI@skill?4RegisterSkill?5?9?5Failed?5to@ DB 'skill.Regist'
 	DB	'erSkill - Failed to find skill data file : %d, %s', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04GHNNFJCK@?$CF?40f@
+;	COMDAT ??_C@_0BK@EHEHLDPB@Failed?5to?5load?5Skill?5Desc@
 CONST	SEGMENT
-??_C@_04GHNNFJCK@?$CF?40f@ DB '%.0f', 00H		; `string'
+??_C@_0BK@EHEHLDPB@Failed?5to?5load?5Skill?5Desc@ DB 'Failed to load Skil'
+	DB	'l Desc', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_1KA@DODJLJEA@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
 CONST	SEGMENT
@@ -1013,402 +998,409 @@ CONST	SEGMENT
 	DB	'i', 00H, 'l', 00H, 'l', 00H, '.', 00H, 'c', 00H, 'p', 00H, 'p'
 	DB	00H, 00H, 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_01DICPFPGM@k@
+;	COMDAT ??_C@_1FG@PJFMKMMA@?$AAi?$AAG?$AAr?$AAa?$AAd?$AAe?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0?$AA?5?$AA?$CG?$AA?$CG?$AA?5@
 CONST	SEGMENT
-??_C@_01DICPFPGM@k@ DB 'k', 00H				; `string'
+??_C@_1FG@PJFMKMMA@?$AAi?$AAG?$AAr?$AAa?$AAd?$AAe?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0?$AA?5?$AA?$CG?$AA?$CG?$AA?5@ DB 'i'
+	DB	00H, 'G', 00H, 'r', 00H, 'a', 00H, 'd', 00H, 'e', 00H, ' ', 00H
+	DB	'>', 00H, '=', 00H, ' ', 00H, '0', 00H, ' ', 00H, '&', 00H, '&'
+	DB	00H, ' ', 00H, 'i', 00H, 'G', 00H, 'r', 00H, 'a', 00H, 'd', 00H
+	DB	'e', 00H, ' ', 00H, '<', 00H, ' ', 00H, 'S', 00H, 'K', 00H, 'I'
+	DB	00H, 'L', 00H, 'L', 00H, '_', 00H, 'E', 00H, 'F', 00H, 'F', 00H
+	DB	'E', 00H, 'C', 00H, 'T', 00H, '_', 00H, 'C', 00H, 'O', 00H, 'U'
+	DB	00H, 'N', 00H, 'T', 00H, 00H, 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CG@HMNMMGCM@skillGetAffect?5?9?5Strange?5Formul@
 CONST	SEGMENT
 ??_C@_0CG@HMNMMGCM@skillGetAffect?5?9?5Strange?5Formul@ DB 'skillGetAffec'
 	DB	't - Strange Formula [%s]', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07OJCANPON@JeungJi@
+;	COMDAT ??_C@_04GHNNFJCK@?$CF?40f@
 CONST	SEGMENT
-??_C@_07OJCANPON@JeungJi@ DB 'JeungJi', 00H		; `string'
+??_C@_04GHNNFJCK@?$CF?40f@ DB '%.0f', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@DPGJKEBB@SkillPoint@
 CONST	SEGMENT
 ??_C@_0L@DPGJKEBB@SkillPoint@ DB 'SkillPoint', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@KJKNFBLF@common?1horse@
+;	COMDAT ??_C@_01DICPFPGM@k@
 CONST	SEGMENT
-??_C@_0N@KJKNFBLF@common?1horse@ DB 'common/horse', 00H	; `string'
+??_C@_01DICPFPGM@k@ DB 'k', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05PFGFPFEF@HORSE@
 CONST	SEGMENT
 ??_C@_05PFGFPFEF@HORSE@ DB 'HORSE', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@PLNCGJNB@common?1guild@
+;	COMDAT ??_C@_07OJCANPON@JeungJi@
 CONST	SEGMENT
-??_C@_0N@PLNCGJNB@common?1guild@ DB 'common/guild', 00H	; `string'
+??_C@_07OJCANPON@JeungJi@ DB 'JeungJi', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05KHBKMNCB@GUILD@
 CONST	SEGMENT
 ??_C@_05KHBKMNCB@GUILD@ DB 'GUILD', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@BOFCEHLM@common?1support@
+;	COMDAT ??_C@_0N@KJKNFBLF@common?1horse@
 CONST	SEGMENT
-??_C@_0P@BOFCEHLM@common?1support@ DB 'common/support', 00H ; `string'
+??_C@_0N@KJKNFBLF@common?1horse@ DB 'common/horse', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07HGJMPPHK@SUPPORT@
 CONST	SEGMENT
 ??_C@_07HGJMPPHK@SUPPORT@ DB 'SUPPORT', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04DMOHMGPD@SURA@
+;	COMDAT ??_C@_0N@PLNCGJNB@common?1guild@
 CONST	SEGMENT
-??_C@_04DMOHMGPD@SURA@ DB 'SURA', 00H			; `string'
+??_C@_0N@PLNCGJNB@common?1guild@ DB 'common/guild', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06IAOKCPMP@SHAMAN@
 CONST	SEGMENT
 ??_C@_06IAOKCPMP@SHAMAN@ DB 'SHAMAN', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07DBIAHDEP@WARRIOR@
+;	COMDAT ??_C@_0P@BOFCEHLM@common?1support@
 CONST	SEGMENT
-??_C@_07DBIAHDEP@WARRIOR@ DB 'WARRIOR', 00H		; `string'
+??_C@_0P@BOFCEHLM@common?1support@ DB 'common/support', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08GKDFODEA@ASSASSIN@
 CONST	SEGMENT
 ??_C@_08GKDFODEA@ASSASSIN@ DB 'ASSASSIN', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03MCAGHNNN@mtk@
+;	COMDAT ??_C@_04DMOHMGPD@SURA@
 CONST	SEGMENT
-??_C@_03MCAGHNNN@mtk@ DB 'mtk', 00H			; `string'
+??_C@_04DMOHMGPD@SURA@ DB 'SURA', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_03EJHAMIPL@wep@
 CONST	SEGMENT
 ??_C@_03EJHAMIPL@wep@ DB 'wep', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03MDAFLKIC@dex@
+;	COMDAT ??_C@_07DBIAHDEP@WARRIOR@
 CONST	SEGMENT
-??_C@_03MDAFLKIC@dex@ DB 'dex', 00H			; `string'
+??_C@_07DBIAHDEP@WARRIOR@ DB 'WARRIOR', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_03EPNNLCDK@con@
 CONST	SEGMENT
 ??_C@_03EPNNLCDK@con@ DB 'con', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_02HBJMJOPF@iq@
+;	COMDAT ??_C@_03MCAGHNNN@mtk@
 CONST	SEGMENT
-??_C@_02HBJMJOPF@iq@ DB 'iq', 00H			; `string'
+??_C@_03MCAGHNNN@mtk@ DB 'mtk', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_03OJMAPEGJ@str@
 CONST	SEGMENT
 ??_C@_03OJMAPEGJ@str@ DB 'str', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_02DIBGMKNJ@lv@
+;	COMDAT ??_C@_03MDAFLKIC@dex@
 CONST	SEGMENT
-??_C@_02DIBGMKNJ@lv@ DB 'lv', 00H			; `string'
+??_C@_03MDAFLKIC@dex@ DB 'dex', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_02FEKCJMIO@ar@
 CONST	SEGMENT
 ??_C@_02FEKCJMIO@ar@ DB 'ar', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06BGMAHCAC@minwep@
+;	COMDAT ??_C@_02HBJMJOPF@iq@
 CONST	SEGMENT
-??_C@_06BGMAHCAC@minwep@ DB 'minwep', 00H		; `string'
+??_C@_02HBJMJOPF@iq@ DB 'iq', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06BFDDJCEN@maxwep@
 CONST	SEGMENT
 ??_C@_06BFDDJCEN@maxwep@ DB 'maxwep', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05IJAGDLKJ@maxsp@
+;	COMDAT ??_C@_02DIBGMKNJ@lv@
 CONST	SEGMENT
-??_C@_05IJAGDLKJ@maxsp@ DB 'maxsp', 00H			; `string'
+??_C@_02DIBGMKNJ@lv@ DB 'lv', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04OLEAENMA@odef@
 CONST	SEGMENT
 ??_C@_04OLEAENMA@odef@ DB 'odef', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06JOEFCHGL@maxmtk@
+;	COMDAT ??_C@_06BGMAHCAC@minwep@
 CONST	SEGMENT
-??_C@_06JOEFCHGL@maxmtk@ DB 'maxmtk', 00H		; `string'
+??_C@_06BGMAHCAC@minwep@ DB 'minwep', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05JJHFHHDI@maxhp@
 CONST	SEGMENT
 ??_C@_05JJHFHHDI@maxhp@ DB 'maxhp', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03ECCGHPEG@CON@
+;	COMDAT ??_C@_05IJAGDLKJ@maxsp@
 CONST	SEGMENT
-??_C@_03ECCGHPEG@CON@ DB 'CON', 00H			; `string'
+??_C@_05IJAGDLKJ@maxsp@ DB 'maxsp', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06JNLGMHCE@minmtk@
 CONST	SEGMENT
 ??_C@_06JNLGMHCE@minmtk@ DB 'minmtk', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03OEDLDJBF@STR@
+;	COMDAT ??_C@_06JOEFCHGL@maxmtk@
 CONST	SEGMENT
-??_C@_03OEDLDJBF@STR@ DB 'STR', 00H			; `string'
+??_C@_06JOEFCHGL@maxmtk@ DB 'maxmtk', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_03MOPOHHPO@DEX@
 CONST	SEGMENT
 ??_C@_03MOPOHHPO@DEX@ DB 'DEX', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@JCAPOPOP@MagicAttackPower@
+;	COMDAT ??_C@_03ECCGHPEG@CON@
 CONST	SEGMENT
-??_C@_0BB@JCAPOPOP@MagicAttackPower@ DB 'MagicAttackPower', 00H ; `string'
+??_C@_03ECCGHPEG@CON@ DB 'CON', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_03JMHEAPMO@INT@
 CONST	SEGMENT
 ??_C@_03JMHEAPMO@INT@ DB 'INT', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03BKLPEICB@DEF@
+;	COMDAT ??_C@_03OEDLDJBF@STR@
 CONST	SEGMENT
-??_C@_03BKLPEICB@DEF@ DB 'DEF', 00H			; `string'
+??_C@_03OEDLDJBF@STR@ DB 'STR', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04DIOLBHO@MWEP@
 CONST	SEGMENT
 ??_C@_04DIOLBHO@MWEP@ DB 'MWEP', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06DJDDIFMO@AtkMax@
+;	COMDAT ??_C@_0BB@JCAPOPOP@MagicAttackPower@
 CONST	SEGMENT
-??_C@_06DJDDIFMO@AtkMax@ DB 'AtkMax', 00H		; `string'
+??_C@_0BB@JCAPOPOP@MagicAttackPower@ DB 'MagicAttackPower', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@BDLLDGMK@DefencePower@
 CONST	SEGMENT
 ??_C@_0N@BDLLDGMK@DefencePower@ DB 'DefencePower', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@LAGJIOMN@AttackPower@
+;	COMDAT ??_C@_03BKLPEICB@DEF@
 CONST	SEGMENT
-??_C@_0M@LAGJIOMN@AttackPower@ DB 'AttackPower', 00H	; `string'
+??_C@_03BKLPEICB@DEF@ DB 'DEF', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06CLLIGBKB@AtkMin@
 CONST	SEGMENT
 ??_C@_06CLLIGBKB@AtkMin@ DB 'AtkMin', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06BGNFGMDD@MaxATK@
+;	COMDAT ??_C@_06DJDDIFMO@AtkMax@
 CONST	SEGMENT
-??_C@_06BGNFGMDD@MaxATK@ DB 'MaxATK', 00H		; `string'
+??_C@_06DJDDIFMO@AtkMax@ DB 'AtkMax', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06BJMCHJAI@ATKSPD@
 CONST	SEGMENT
 ??_C@_06BJMCHJAI@ATKSPD@ DB 'ATKSPD', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06NHHFGGKN@MaxWEP@
+;	COMDAT ??_C@_0M@LAGJIOMN@AttackPower@
 CONST	SEGMENT
-??_C@_06NHHFGGKN@MaxWEP@ DB 'MaxWEP', 00H		; `string'
+??_C@_0M@LAGJIOMN@AttackPower@ DB 'AttackPower', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06BFCGIMHM@MinATK@
 CONST	SEGMENT
 ??_C@_06BFCGIMHM@MinATK@ DB 'MinATK', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07NIKGIGML@MaxMWEP@
+;	COMDAT ??_C@_06BGNFGMDD@MaxATK@
 CONST	SEGMENT
-??_C@_07NIKGIGML@MaxMWEP@ DB 'MaxMWEP', 00H		; `string'
+??_C@_06BGNFGMDD@MaxATK@ DB 'MaxATK', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06NEIGIGOC@MinWEP@
 CONST	SEGMENT
 ??_C@_06NEIGIGOC@MinWEP@ DB 'MinWEP', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05CDGDFMNN@MaxSP@
+;	COMDAT ??_C@_06NHHFGGKN@MaxWEP@
 CONST	SEGMENT
-??_C@_05CDGDFMNN@MaxSP@ DB 'MaxSP', 00H			; `string'
+??_C@_06NHHFGGKN@MaxWEP@ DB 'MaxWEP', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07DOMGCJCK@MinMWEP@
 CONST	SEGMENT
 ??_C@_07DOMGCJCK@MinMWEP@ DB 'MinMWEP', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05KOHFLOFG@Level@
+;	COMDAT ??_C@_07NIKGIGML@MaxMWEP@
 CONST	SEGMENT
-??_C@_05KOHFLOFG@Level@ DB 'Level', 00H			; `string'
+??_C@_07NIKGIGML@MaxMWEP@ DB 'MaxMWEP', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05DDBABAEM@MaxHP@
 CONST	SEGMENT
 ??_C@_05DDBABAEM@MaxHP@ DB 'MaxHP', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_02PGLKMFED@HR@
+;	COMDAT ??_C@_05CDGDFMNN@MaxSP@
 CONST	SEGMENT
-??_C@_02PGLKMFED@HR@ DB 'HR', 00H			; `string'
+??_C@_05CDGDFMNN@MaxSP@ DB 'MaxSP', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_02JFNPKIJL@LV@
 CONST	SEGMENT
 ??_C@_02JFNPKIJL@LV@ DB 'LV', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@BFLCNLLJ@EMPTY_HAND@
+;	COMDAT ??_C@_05KOHFLOFG@Level@
 CONST	SEGMENT
-??_C@_0L@BFLCNLLJ@EMPTY_HAND@ DB 'EMPTY_HAND', 00H	; `string'
+??_C@_05KOHFLOFG@Level@ DB 'Level', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05FGPNDJME@chain@
 CONST	SEGMENT
 ??_C@_05FGPNDJME@chain@ DB 'chain', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03HPGGKCHO@FAN@
+;	COMDAT ??_C@_02PGLKMFED@HR@
 CONST	SEGMENT
-??_C@_03HPGGKCHO@FAN@ DB 'FAN', 00H			; `string'
+??_C@_02PGLKMFED@HR@ DB 'HR', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05CHNCNNHJ@ARROW@
 CONST	SEGMENT
 ??_C@_05CHNCNNHJ@ARROW@ DB 'ARROW', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@OINLDIMI@DOUBLE_SWORD@
+;	COMDAT ??_C@_0L@BFLCNLLJ@EMPTY_HAND@
 CONST	SEGMENT
-??_C@_0N@OINLDIMI@DOUBLE_SWORD@ DB 'DOUBLE_SWORD', 00H	; `string'
+??_C@_0L@BFLCNLLJ@EMPTY_HAND@ DB 'EMPTY_HAND', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04JCGINPGJ@BELL@
 CONST	SEGMENT
 ??_C@_04JCGINPGJ@BELL@ DB 'BELL', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03GBJKLBDL@BOW@
+;	COMDAT ??_C@_03HPGGKCHO@FAN@
 CONST	SEGMENT
-??_C@_03GBJKLBDL@BOW@ DB 'BOW', 00H			; `string'
+??_C@_03HPGGKCHO@FAN@ DB 'FAN', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@CIOLFOIH@TWO_HANDED@
 CONST	SEGMENT
 ??_C@_0L@CIOLFOIH@TWO_HANDED@ DB 'TWO_HANDED', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05HGEOAPGK@SWORD@
+;	COMDAT ??_C@_0N@OINLDIMI@DOUBLE_SWORD@
 CONST	SEGMENT
-??_C@_05HGEOAPGK@SWORD@ DB 'SWORD', 00H			; `string'
+??_C@_0N@OINLDIMI@DOUBLE_SWORD@ DB 'DOUBLE_SWORD', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06EBPDMAC@DAGGER@
 CONST	SEGMENT
 ??_C@_06EBPDMAC@DAGGER@ DB 'DAGGER', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@CDNKGDPF@CIRCLE_RANGE@
+;	COMDAT ??_C@_03GBJKLBDL@BOW@
 CONST	SEGMENT
-??_C@_0N@CDNKGDPF@CIRCLE_RANGE@ DB 'CIRCLE_RANGE', 00H	; `string'
+??_C@_03GBJKLBDL@BOW@ DB 'BOW', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@DNFBBGFD@SEARCH_TARGET@
 CONST	SEGMENT
 ??_C@_0O@DNFBBGFD@SEARCH_TARGET@ DB 'SEARCH_TARGET', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@PHFCBKJJ@TIME_INCREASE_SKILL@
+;	COMDAT ??_C@_05HGEOAPGK@SWORD@
 CONST	SEGMENT
-??_C@_0BE@PHFCBKJJ@TIME_INCREASE_SKILL@ DB 'TIME_INCREASE_SKILL', 00H ; `string'
+??_C@_05HGEOAPGK@SWORD@ DB 'SWORD', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@PANOFCME@CANNOT_LEVEL_UP@
 CONST	SEGMENT
 ??_C@_0BA@PANOFCME@CANNOT_LEVEL_UP@ DB 'CANNOT_LEVEL_UP', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@DMIFKBAA@MOVING_SKILL@
+;	COMDAT ??_C@_0N@CDNKGDPF@CIRCLE_RANGE@
 CONST	SEGMENT
-??_C@_0N@DMIFKBAA@MOVING_SKILL@ DB 'MOVING_SKILL', 00H	; `string'
+??_C@_0N@CDNKGDPF@CIRCLE_RANGE@ DB 'CIRCLE_RANGE', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@NDECBLLN@HORSE_SKILL@
 CONST	SEGMENT
 ??_C@_0M@NDECBLLN@HORSE_SKILL@ DB 'HORSE_SKILL', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@JIHFJGIE@CAN_USE_FOR_ME@
+;	COMDAT ??_C@_0BE@PHFCBKJJ@TIME_INCREASE_SKILL@
 CONST	SEGMENT
-??_C@_0P@JIHFJGIE@CAN_USE_FOR_ME@ DB 'CAN_USE_FOR_ME', 00H ; `string'
+??_C@_0BE@PHFCBKJJ@TIME_INCREASE_SKILL@ DB 'TIME_INCREASE_SKILL', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@DGOOFKCE@ATTACK_SKILL@
 CONST	SEGMENT
 ??_C@_0N@DGOOFKCE@ATTACK_SKILL@ DB 'ATTACK_SKILL', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BF@KAHLCFKD@CAN_CHANGE_DIRECTION@
+;	COMDAT ??_C@_0N@DMIFKBAA@MOVING_SKILL@
 CONST	SEGMENT
-??_C@_0BF@KAHLCFKD@CAN_CHANGE_DIRECTION@ DB 'CAN_CHANGE_DIRECTION', 00H ; `string'
+??_C@_0N@DMIFKBAA@MOVING_SKILL@ DB 'MOVING_SKILL', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@LCOEKGDG@STANDING_SKILL@
 CONST	SEGMENT
 ??_C@_0P@LCOEKGDG@STANDING_SKILL@ DB 'STANDING_SKILL', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@OBGKPFHN@CHARGE_ATTACK@
+;	COMDAT ??_C@_0P@JIHFJGIE@CAN_USE_FOR_ME@
 CONST	SEGMENT
-??_C@_0O@OBGKPFHN@CHARGE_ATTACK@ DB 'CHARGE_ATTACK', 00H ; `string'
+??_C@_0P@JIHFJGIE@CAN_USE_FOR_ME@ DB 'CAN_USE_FOR_ME', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06FOCLNFCJ@USE_HP@
 CONST	SEGMENT
 ??_C@_06FOCLNFCJ@USE_HP@ DB 'USE_HP', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@NOPFFPJN@WEAPON_LIMITATION@
+;	COMDAT ??_C@_0BF@KAHLCFKD@CAN_CHANGE_DIRECTION@
 CONST	SEGMENT
-??_C@_0BC@NOPFFPJN@WEAPON_LIMITATION@ DB 'WEAPON_LIMITATION', 00H ; `string'
+??_C@_0BF@KAHLCFKD@CAN_CHANGE_DIRECTION@ DB 'CAN_CHANGE_DIRECTION', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@OECBKPIO@MELEE_ATTACK@
 CONST	SEGMENT
 ??_C@_0N@OECBKPIO@MELEE_ATTACK@ DB 'MELEE_ATTACK', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@GMELPIKL@NEED_CORPSE@
+;	COMDAT ??_C@_0O@OBGKPFHN@CHARGE_ATTACK@
 CONST	SEGMENT
-??_C@_0M@GMELPIKL@NEED_CORPSE@ DB 'NEED_CORPSE', 00H	; `string'
+??_C@_0O@OBGKPFHN@CHARGE_ATTACK@ DB 'CHARGE_ATTACK', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06FDJJHOKF@TOGGLE@
 CONST	SEGMENT
 ??_C@_06FDJJHOKF@TOGGLE@ DB 'TOGGLE', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@KFFKABFH@CAN_USE_IF_NOT_ENOUGH@
+;	COMDAT ??_C@_0BC@NOPFFPJN@WEAPON_LIMITATION@
 CONST	SEGMENT
-??_C@_0BG@KFFKABFH@CAN_USE_IF_NOT_ENOUGH@ DB 'CAN_USE_IF_NOT_ENOUGH', 00H ; `string'
+??_C@_0BC@NOPFFPJN@WEAPON_LIMITATION@ DB 'WEAPON_LIMITATION', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09IHHGJKF@FAN_RANGE@
 CONST	SEGMENT
 ??_C@_09IHHGJKF@FAN_RANGE@ DB 'FAN_RANGE', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06IEMBPBBN@shaman@
+;	COMDAT ??_C@_0M@GMELPIKL@NEED_CORPSE@
 CONST	SEGMENT
-??_C@_06IEMBPBBN@shaman@ DB 'shaman', 00H		; `string'
+??_C@_0M@GMELPIKL@NEED_CORPSE@ DB 'NEED_CORPSE', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07CGFACAKO@passive@
 CONST	SEGMENT
 ??_C@_07CGFACAKO@passive@ DB 'passive', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08BFJJNNGH@assassin@
+;	COMDAT ??_C@_0BG@KFFKABFH@CAN_USE_IF_NOT_ENOUGH@
 CONST	SEGMENT
-??_C@_08BFJJNNGH@assassin@ DB 'assassin', 00H		; `string'
+??_C@_0BG@KFFKABFH@CAN_USE_IF_NOT_ENOUGH@ DB 'CAN_USE_IF_NOT_ENOUGH', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04PANNCEIL@sura@
 CONST	SEGMENT
 ??_C@_04PANNCEIL@sura@ DB 'sura', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07ILMBEDPO@support@
+;	COMDAT ??_C@_06IEMBPBBN@shaman@
 CONST	SEGMENT
-??_C@_07ILMBEDPO@support@ DB 'support', 00H		; `string'
+??_C@_06IEMBPBBN@shaman@ DB 'shaman', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07MMNNMPML@warrior@
 CONST	SEGMENT
 ??_C@_07MMNNMPML@warrior@ DB 'warrior', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04CGFJFPFD@none@
+;	COMDAT ??_C@_08BFJJNNGH@assassin@
 CONST	SEGMENT
-??_C@_04CGFJFPFD@none@ DB 'none', 00H			; `string'
+??_C@_08BFJJNNGH@assassin@ DB 'assassin', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06MDLIGPKC@active@
 CONST	SEGMENT
 ??_C@_06MDLIGPKC@active@ DB 'active', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@DIJMKMOF@motionindex@
+;	COMDAT ??_C@_07ILMBEDPO@support@
 CONST	SEGMENT
-??_C@_0M@DIJMKMOF@motionindex@ DB 'motionindex', 00H	; `string'
+??_C@_07ILMBEDPO@support@ DB 'support', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@FIGDLACA@motionindexforme@
 CONST	SEGMENT
 ??_C@_0BB@FIGDLACA@motionindexforme@ DB 'motionindexforme', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08JAPIFGPH@maxlevel@
+;	COMDAT ??_C@_04CGFJFPFD@none@
 CONST	SEGMENT
-??_C@_08JAPIFGPH@maxlevel@ DB 'maxlevel', 00H		; `string'
+??_C@_04CGFJFPFD@none@ DB 'none', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@BIJBKECH@leveluppoint@
 CONST	SEGMENT
 ??_C@_0N@BIJBKECH@leveluppoint@ DB 'leveluppoint', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BG@DFAOMADI@continuationspformula@
+;	COMDAT ??_C@_0M@DIJMKMOF@motionindex@
 CONST	SEGMENT
-??_C@_0BG@DFAOMADI@continuationspformula@ DB 'continuationspformula', 00H ; `string'
+??_C@_0M@DIJMKMOF@motionindex@ DB 'motionindex', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05CCGOGOBM@range@
 CONST	SEGMENT
 ??_C@_05CCGOGOBM@range@ DB 'range', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@DAEIJFBL@motionloopcountformula@
+;	COMDAT ??_C@_08JAPIFGPH@maxlevel@
 CONST	SEGMENT
-??_C@_0BH@DAEIJFBL@motionloopcountformula@ DB 'motionloopcountformula', 00H ; `string'
+??_C@_08JAPIFGPH@maxlevel@ DB 'maxlevel', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@OKAHIEDK@needspformula@
 CONST	SEGMENT
 ??_C@_0O@OKAHIEDK@needspformula@ DB 'needspformula', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@EILLLIMM@cooltimeformula@
+;	COMDAT ??_C@_0BG@DFAOMADI@continuationspformula@
 CONST	SEGMENT
-??_C@_0BA@EILLLIMM@cooltimeformula@ DB 'cooltimeformula', 00H ; `string'
+??_C@_0BG@DFAOMADI@continuationspformula@ DB 'continuationspformula', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BD@GDJBKHMN@targetcountformula@
 CONST	SEGMENT
 ??_C@_0BD@GDJBKHMN@targetcountformula@ DB 'targetcountformula', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@PCGMAJCD@?$CFdgradedata@
+;	COMDAT ??_C@_0BH@DAEIJFBL@motionloopcountformula@
 CONST	SEGMENT
-??_C@_0M@PCGMAJCD@?$CFdgradedata@ DB '%dgradedata', 00H	; `string'
+??_C@_0BH@DAEIJFBL@motionloopcountformula@ DB 'motionloopcountformula', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FJ@NEGDHIMM@CPythonSkill?3?3RegisterSkill?$CIdwS@
 CONST	SEGMENT
@@ -1416,25 +1408,25 @@ CONST	SEGMENT
 	DB	'::RegisterSkill(dwSkillIndex=%d, c_szFileName=%s) - Strange G'
 	DB	'rade Data Count', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@GFIELPPM@?$CFdaffectdata@
+;	COMDAT ??_C@_0BA@EILLLIMM@cooltimeformula@
 CONST	SEGMENT
-??_C@_0N@GFIELPPM@?$CFdaffectdata@ DB '%daffectdata', 00H ; `string'
+??_C@_0BA@EILLLIMM@cooltimeformula@ DB 'cooltimeformula', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@IEHCOHAD@affectdata@
 CONST	SEGMENT
 ??_C@_0L@IEHCOHAD@affectdata@ DB 'affectdata', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@IOBOECCA@?$CFdconditiondata@
+;	COMDAT ??_C@_0M@PCGMAJCD@?$CFdgradedata@
 CONST	SEGMENT
-??_C@_0BA@IOBOECCA@?$CFdconditiondata@ DB '%dconditiondata', 00H ; `string'
+??_C@_0M@PCGMAJCD@?$CFdgradedata@ DB '%dgradedata', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@BGDKPGFJ@conditiondata@
 CONST	SEGMENT
 ??_C@_0O@BGDKPGFJ@conditiondata@ DB 'conditiondata', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@CDMMOEBD@iconfilename@
+;	COMDAT ??_C@_0N@GFIELPPM@?$CFdaffectdata@
 CONST	SEGMENT
-??_C@_0N@CDMMOEBD@iconfilename@ DB 'iconfilename', 00H	; `string'
+??_C@_0N@GFIELPPM@?$CFdaffectdata@ DB '%daffectdata', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FO@BPLAJAHG@CPythonSkill?3?3RegisterSkill?$CIdwS@
 CONST	SEGMENT
@@ -1442,17 +1434,17 @@ CONST	SEGMENT
 	DB	'::RegisterSkill(dwSkillIndex=%d, c_szFileName=%s) - Failed to'
 	DB	' find [iconfilename]', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@NCHOGIBK@?$CFddescription@
+;	COMDAT ??_C@_0BA@IOBOECCA@?$CFdconditiondata@
 CONST	SEGMENT
-??_C@_0O@NCHOGIBK@?$CFddescription@ DB '%ddescription', 00H ; `string'
+??_C@_0BA@IOBOECCA@?$CFdconditiondata@ DB '%dconditiondata', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@PPJNHBMP@description@
 CONST	SEGMENT
 ??_C@_0M@PPJNHBMP@description@ DB 'description', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06JBGOOFCN@?$CFdname@
+;	COMDAT ??_C@_0N@CDMMOEBD@iconfilename@
 CONST	SEGMENT
-??_C@_06JBGOOFCN@?$CFdname@ DB '%dname', 00H		; `string'
+??_C@_0N@CDMMOEBD@iconfilename@ DB 'iconfilename', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FE@LFJDJPLO@CPythonSkill?3?3RegisterSkill?$CIdwS@
 CONST	SEGMENT
@@ -1460,9 +1452,9 @@ CONST	SEGMENT
 	DB	'::RegisterSkill(dwSkillIndex=%d, c_szFileName=%s) - Failed to'
 	DB	' find [%s]', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@OFCPBCKK@needweapon@
+;	COMDAT ??_C@_0O@NCHOGIBK@?$CFddescription@
 CONST	SEGMENT
-??_C@_0L@OFCPBCKK@needweapon@ DB 'needweapon', 00H	; `string'
+??_C@_0O@NCHOGIBK@?$CFddescription@ DB '%ddescription', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FK@CIMCNNKO@Strange?5Skill?5Need?5Weapon?5?9?5CPy@
 CONST	SEGMENT
@@ -1470,9 +1462,9 @@ CONST	SEGMENT
 	DB	'll Need Weapon - CPythonSkill::RegisterSkill(dwSkillIndex=%d,'
 	DB	' c_szFileName=%s)', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09HGIEBAJ@attribute@
+;	COMDAT ??_C@_06JBGOOFCN@?$CFdname@
 CONST	SEGMENT
-??_C@_09HGIEBAJ@attribute@ DB 'attribute', 00H		; `string'
+??_C@_06JBGOOFCN@?$CFdname@ DB '%dname', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FI@NGLMACOA@Strange?5Skill?5Attribute?5?9?5CPyth@
 CONST	SEGMENT
@@ -1480,11 +1472,9 @@ CONST	SEGMENT
 	DB	'l Attribute - CPythonSkill::RegisterSkill(dwSkillIndex=%d, c_'
 	DB	'szFileName=%s)', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0FD@BPAOEOEO@Strange?5Skill?5Type?5?9?5CPythonSki@
+;	COMDAT ??_C@_0L@OFCPBCKK@needweapon@
 CONST	SEGMENT
-??_C@_0FD@BPAOEOEO@Strange?5Skill?5Type?5?9?5CPythonSki@ DB 'Strange Skil'
-	DB	'l Type - CPythonSkill::RegisterSkill(dwSkillIndex=%d, c_szFil'
-	DB	'eName=%s)', 00H				; `string'
+??_C@_0L@OFCPBCKK@needweapon@ DB 'needweapon', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FK@GEMIAIHM@CPythonSkill?3?3RegisterSkill?$CIdwS@
 CONST	SEGMENT
@@ -1492,20 +1482,19 @@ CONST	SEGMENT
 	DB	'::RegisterSkill(dwSkillIndex=%d, c_szFileName=%s) - Failed to'
 	DB	' find key [type]', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0FE@DNAFFMLK@CPythonSkill?3?3RegisterSkill?$CIdwS@
+;	COMDAT ??_C@_09HGIEBAJ@attribute@
 CONST	SEGMENT
-??_C@_0FE@DNAFFMLK@CPythonSkill?3?3RegisterSkill?$CIdwS@ DB 'CPythonSkill'
-	DB	'::RegisterSkill(dwSkillIndex=%d, c_szFileName=%s) - Failed to'
-	DB	' find file', 00H				; `string'
+??_C@_09HGIEBAJ@attribute@ DB 'attribute', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04GPMDFGEJ@type@
 CONST	SEGMENT
 ??_C@_04GPMDFGEJ@type@ DB 'type', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EG@FEBECLPE@CPythonSkill?3?3RegisterPetSkillT@
+;	COMDAT ??_C@_0FD@BPAOEOEO@Strange?5Skill?5Type?5?9?5CPythonSki@
 CONST	SEGMENT
-??_C@_0EG@FEBECLPE@CPythonSkill?3?3RegisterPetSkillT@ DB 'CPythonSkill::R'
-	DB	'egisterPetSkillTable strange skill type value line: %d', 00H ; `string'
+??_C@_0FD@BPAOEOEO@Strange?5Skill?5Type?5?9?5CPythonSki@ DB 'Strange Skil'
+	DB	'l Type - CPythonSkill::RegisterSkill(dwSkillIndex=%d, c_szFil'
+	DB	'eName=%s)', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EN@CCBMGIML@CPythonSkill?3?3RegisterPetSkillT@
 CONST	SEGMENT
@@ -1513,58 +1502,59 @@ CONST	SEGMENT
 	DB	'egisterPetSkillTable strange skill description value line: %d'
 	DB	00H						; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BL@GJNFLNHG@d?3?1ymir?5work?1ui?1skill?1pet?1@
+;	COMDAT ??_C@_0FE@DNAFFMLK@CPythonSkill?3?3RegisterSkill?$CIdwS@
 CONST	SEGMENT
-??_C@_0BL@GJNFLNHG@d?3?1ymir?5work?1ui?1skill?1pet?1@ DB 'd:/ymir work/ui'
-	DB	'/skill/pet/', 00H				; `string'
+??_C@_0FE@DNAFFMLK@CPythonSkill?3?3RegisterSkill?$CIdwS@ DB 'CPythonSkill'
+	DB	'::RegisterSkill(dwSkillIndex=%d, c_szFileName=%s) - Failed to'
+	DB	' find file', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04LMMJFDCN@AUTO@
 CONST	SEGMENT
 ??_C@_04LMMJFDCN@AUTO@ DB 'AUTO', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EG@CECMJFJD@CPythonSkill?3?3RegisterPetSkillT@
+;	COMDAT ??_C@_0EG@FEBECLPE@CPythonSkill?3?3RegisterPetSkillT@
 CONST	SEGMENT
-??_C@_0EG@CECMJFJD@CPythonSkill?3?3RegisterPetSkillT@ DB 'CPythonSkill::R'
-	DB	'egisterPetSkillTable strange skill name value line: %d', 00H ; `string'
+??_C@_0EG@FEBECLPE@CPythonSkill?3?3RegisterPetSkillT@ DB 'CPythonSkill::R'
+	DB	'egisterPetSkillTable strange skill type value line: %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EL@PCKBGLGB@CPythonSkill?3?3RegisterPetSkillT@
 CONST	SEGMENT
 ??_C@_0EL@PCKBGLGB@CPythonSkill?3?3RegisterPetSkillT@ DB 'CPythonSkill::R'
 	DB	'egisterPetSkillTable strange skill icon name value line: %d', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0EA@HLDJPOAF@CPythonSkill?3?3RegisterPetSkillT@
+;	COMDAT ??_C@_0BL@GJNFLNHG@d?3?1ymir?5work?1ui?1skill?1pet?1@
 CONST	SEGMENT
-??_C@_0EA@HLDJPOAF@CPythonSkill?3?3RegisterPetSkillT@ DB 'CPythonSkill::R'
-	DB	'egisterPetSkillTable strange token size line: %d', 00H ; `string'
+??_C@_0BL@GJNFLNHG@d?3?1ymir?5work?1ui?1skill?1pet?1@ DB 'd:/ymir work/ui'
+	DB	'/skill/pet/', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EH@DDJGPANA@CPythonSkill?3?3RegisterPetSkillT@
 CONST	SEGMENT
 ??_C@_0EH@DDJGPANA@CPythonSkill?3?3RegisterPetSkillT@ DB 'CPythonSkill::R'
 	DB	'egisterPetSkillTable strange skill index value line: %d', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@MMGCNLPF@?$CFsskill?1?$CFs?1@
+;	COMDAT ??_C@_0EG@CECMJFJD@CPythonSkill?3?3RegisterPetSkillT@
 CONST	SEGMENT
-??_C@_0M@MMGCNLPF@?$CFsskill?1?$CFs?1@ DB '%sskill/%s/', 00H ; `string'
+??_C@_0EG@CECMJFJD@CPythonSkill?3?3RegisterPetSkillT@ DB 'CPythonSkill::R'
+	DB	'egisterPetSkillTable strange skill name value line: %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CN@EGOMLGLD@?$CFs?$FL?$CFs?$FN?5Skill?5grade?5motion?5?$FL?$CFd?$FN?5@
 CONST	SEGMENT
 ??_C@_0CN@EGOMLGLD@?$CFs?$FL?$CFs?$FN?5Skill?5grade?5motion?5?$FL?$CFd?$FN?5@ DB '%'
 	DB	's[%s] Skill grade motion [%d] Out Of Range.', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0FB@LIPAFJME@CPythonSkill?3?3RegisterSkillDesc@
+;	COMDAT ??_C@_0EA@HLDJPOAF@CPythonSkill?3?3RegisterPetSkillT@
 CONST	SEGMENT
-??_C@_0FB@LIPAFJME@CPythonSkill?3?3RegisterSkillDesc@ DB 'CPythonSkill::R'
-	DB	'egisterSkillDesc(dwSkillIndex=%d) - Strange Skill Need Weapon'
-	DB	'(%s)', 00H					; `string'
+??_C@_0EA@HLDJPOAF@CPythonSkill?3?3RegisterPetSkillT@ DB 'CPythonSkill::R'
+	DB	'egisterPetSkillTable strange token size line: %d', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BI@FJJHCJFN@?$CFsskill?1common?1support?1@
 CONST	SEGMENT
 ??_C@_0BI@FJJHCJFN@?$CFsskill?1common?1support?1@ DB '%sskill/common/supp'
 	DB	'ort/', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_01DNKMNLPK@?$HM@
+;	COMDAT ??_C@_0M@MMGCNLPF@?$CFsskill?1?$CFs?1@
 CONST	SEGMENT
-??_C@_01DNKMNLPK@?$HM@ DB '|', 00H			; `string'
+??_C@_0M@MMGCNLPF@?$CFsskill?1?$CFs?1@ DB '%sskill/%s/', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EP@BPIIEGNI@CPythonSkill?3?3RegisterSkillDesc@
 CONST	SEGMENT
@@ -1572,10 +1562,11 @@ CONST	SEGMENT
 	DB	'egisterSkillDesc(dwSkillIndex=%d) - Strange Skill Attribute(%'
 	DB	's)', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CB@DMLPIAAA@SkillDesc?4line?$CI?$CFd?$CJ?4NO_JOB_ERROR@
+;	COMDAT ??_C@_0FB@LIPAFJME@CPythonSkill?3?3RegisterSkillDesc@
 CONST	SEGMENT
-??_C@_0CB@DMLPIAAA@SkillDesc?4line?$CI?$CFd?$CJ?4NO_JOB_ERROR@ DB 'SkillD'
-	DB	'esc.line(%d).NO_JOB_ERROR', 0aH, 00H	; `string'
+??_C@_0FB@LIPAFJME@CPythonSkill?3?3RegisterSkillDesc@ DB 'CPythonSkill::R'
+	DB	'egisterSkillDesc(dwSkillIndex=%d) - Strange Skill Need Weapon'
+	DB	'(%s)', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0FA@HKALFJMK@CPythonSkill?3?3RegisterSkillDesc@
 CONST	SEGMENT
@@ -1583,75 +1574,84 @@ CONST	SEGMENT
 	DB	'egisterSkillDesc(dwSkillIndex=%d, strType=%s).STRANGE_SKILL_T'
 	DB	'YPE', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CC@GCKFPEAL@SkillDesc?4line?$CI?$CFd?$CJ?4NO_VNUM_ERRO@
+;	COMDAT ??_C@_01DNKMNLPK@?$HM@
 CONST	SEGMENT
-??_C@_0CC@GCKFPEAL@SkillDesc?4line?$CI?$CFd?$CJ?4NO_VNUM_ERRO@ DB 'SkillD'
-	DB	'esc.line(%d).NO_VNUM_ERROR', 0aH, 00H	; `string'
+??_C@_01DNKMNLPK@?$HM@ DB '|', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CD@PBEIPNPF@SkillDesc?4line?$CI?$CFd?$CJ?4NO_INDEX_ERR@
 CONST	SEGMENT
 ??_C@_0CD@PBEIPNPF@SkillDesc?4line?$CI?$CFd?$CJ?4NO_INDEX_ERR@ DB 'SkillD'
 	DB	'esc.line(%d).NO_INDEX_ERROR', 0aH, 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05GMJBCDPG@_?$CF02d@
+;	COMDAT ??_C@_0CB@DMLPIAAA@SkillDesc?4line?$CI?$CFd?$CJ?4NO_JOB_ERROR@
 CONST	SEGMENT
-??_C@_05GMJBCDPG@_?$CF02d@ DB '_%02d', 00H		; `string'
+??_C@_0CB@DMLPIAAA@SkillDesc?4line?$CI?$CFd?$CJ?4NO_JOB_ERROR@ DB 'SkillD'
+	DB	'esc.line(%d).NO_JOB_ERROR', 0aH, 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04DLFHDFGL@?4sub@
 CONST	SEGMENT
 ??_C@_04DLFHDFGL@?4sub@ DB '.sub', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07ONOKAGOF@maxmwep@
+;	COMDAT ??_C@_0CC@GCKFPEAL@SkillDesc?4line?$CI?$CFd?$CJ?4NO_VNUM_ERRO@
 CONST	SEGMENT
-??_C@_07ONOKAGOF@maxmwep@ DB 'maxmwep', 00H		; `string'
+??_C@_0CC@GCKFPEAL@SkillDesc?4line?$CI?$CFd?$CJ?4NO_VNUM_ERRO@ DB 'SkillD'
+	DB	'esc.line(%d).NO_VNUM_ERROR', 0aH, 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_03NNBCEMGJ@?$CK?53@
 CONST	SEGMENT
 ??_C@_03NNBCEMGJ@?$CK?53@ DB '* 3', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03LJAEFNNE@max@
+;	COMDAT ??_C@_05GMJBCDPG@_?$CF02d@
 CONST	SEGMENT
-??_C@_03LJAEFNNE@max@ DB 'max', 00H			; `string'
+??_C@_05GMJBCDPG@_?$CF02d@ DB '_%02d', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06NEJDJIND@maxatk@
 CONST	SEGMENT
 ??_C@_06NEJDJIND@maxatk@ DB 'maxatk', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06NHGAHIJM@minatk@
+;	COMDAT ??_C@_07ONOKAGOF@maxmwep@
 CONST	SEGMENT
-??_C@_06NHGAHIJM@minatk@ DB 'minatk', 00H		; `string'
+??_C@_07ONOKAGOF@maxmwep@ DB 'maxmwep', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07LIKKJAE@minmwep@
 CONST	SEGMENT
 ??_C@_07LIKKJAE@minmwep@ DB 'minmwep', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06EBGNBFIA@number@
+;	COMDAT ??_C@_03LJAEFNNE@max@
 CONST	SEGMENT
-??_C@_06EBGNBFIA@number@ DB 'number', 00H		; `string'
+??_C@_03LJAEFNNE@max@ DB 'max', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_03KLIPLJLL@min@
 CONST	SEGMENT
 ??_C@_03KLIPLJLL@min@ DB 'min', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03IINAMCGF@atk@
+;	COMDAT ??_C@_06NHGAHIJM@minatk@
 CONST	SEGMENT
-??_C@_03IINAMCGF@atk@ DB 'atk', 00H			; `string'
+??_C@_06NHGAHIJM@minatk@ DB 'minatk', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04MPLEFDAG@mwep@
 CONST	SEGMENT
 ??_C@_04MPLEFDAG@mwep@ DB 'mwep', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0FG@JMHDMKFK@CPythonSkill?3?3RegisterSkillTabl@
+;	COMDAT ??_C@_06EBGNBFIA@number@
 CONST	SEGMENT
-??_C@_0FG@JMHDMKFK@CPythonSkill?3?3RegisterSkillTabl@ DB 'CPythonSkill::R'
-	DB	'egisterSkillTable(%s) - Strange Token Count [Line:%d / TokenC'
-	DB	'ount:%d]', 0aH, 00H				; `string'
+??_C@_06EBGNBFIA@number@ DB 'number', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EO@GJJLGCC@CPythonSkill?3?3RegisterSkillTabl@
 CONST	SEGMENT
 ??_C@_0EO@GJJLGCC@CPythonSkill?3?3RegisterSkillTabl@ DB 'CPythonSkill::Re'
 	DB	'gisterSkillTable(%s) - NOT EXIST SkillDesc [Vnum:%d Line:%d]', 0aH
 	DB	00H						; `string'
+CONST	ENDS
+;	COMDAT ??_C@_03IINAMCGF@atk@
+CONST	SEGMENT
+??_C@_03IINAMCGF@atk@ DB 'atk', 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0FG@JMHDMKFK@CPythonSkill?3?3RegisterSkillTabl@
+CONST	SEGMENT
+??_C@_0FG@JMHDMKFK@CPythonSkill?3?3RegisterSkillTabl@ DB 'CPythonSkill::R'
+	DB	'egisterSkillTable(%s) - Strange Token Count [Line:%d / TokenC'
+	DB	'ount:%d]', 0aH, 00H				; `string'
 ?MELEE_SKILL_TARGET_RANGE@SSkillData@CPythonSkill@@2KA DD 0aaH ; CPythonSkill::SSkillData::MELEE_SKILL_TARGET_RANGE
 PUBLIC	??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@ABV10@0@Z ; std::operator+<char,std::char_traits<char>,std::allocator<char> >
 PUBLIC	?ceil@@YAMM@Z					; ceil

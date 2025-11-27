@@ -8,45 +8,31 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_1MM@JLFAGGBG@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
 PUBLIC	??_C@_0BJ@KOHJIAEM@Failed?5Sending?5Handshake@	; `string'
-PUBLIC	??_C@_09JMFCPCNF@HandShake@			; `string'
 PUBLIC	??_C@_1DI@CKGKJOEO@?$AA?$CB?$AA?$CC?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAS?$AAe?$AAn?$AAd?$AAi?$AAn@ ; `string'
-PUBLIC	??_C@_0M@EEFIMJHD@OnHandShake@			; `string'
+PUBLIC	??_C@_1MM@JLFAGGBG@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
 PUBLIC	??_C@_0CB@IOMBLCGI@?$CD?$CD?5Network?5?9?5Hand?5Shake?5Phase?5?$CD@ ; `string'
+PUBLIC	??_C@_09JMFCPCNF@HandShake@			; `string'
 PUBLIC	??_C@_0BI@JCCALMCB@HANDSHAKE?5OK?5RECV?5?$CFu?5?$CFu@ ; `string'
+PUBLIC	??_C@_0M@EEFIMJHD@OnHandShake@			; `string'
 EXTRN	?SetBaseTime@CTimer@@QAEXXZ:PROC		; CTimer::SetBaseTime
+;	COMDAT ??_C@_0M@EEFIMJHD@OnHandShake@
+CONST	SEGMENT
+??_C@_0M@EEFIMJHD@OnHandShake@ DB 'OnHandShake', 00H	; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0BI@JCCALMCB@HANDSHAKE?5OK?5RECV?5?$CFu?5?$CFu@
 CONST	SEGMENT
 ??_C@_0BI@JCCALMCB@HANDSHAKE?5OK?5RECV?5?$CFu?5?$CFu@ DB 'HANDSHAKE OK RE'
 	DB	'CV %u %u', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CB@IOMBLCGI@?$CD?$CD?5Network?5?9?5Hand?5Shake?5Phase?5?$CD@
-CONST	SEGMENT
-??_C@_0CB@IOMBLCGI@?$CD?$CD?5Network?5?9?5Hand?5Shake?5Phase?5?$CD@ DB '#'
-	DB	'# Network - Hand Shake Phase ##', 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0M@EEFIMJHD@OnHandShake@
-CONST	SEGMENT
-??_C@_0M@EEFIMJHD@OnHandShake@ DB 'OnHandShake', 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1DI@CKGKJOEO@?$AA?$CB?$AA?$CC?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAS?$AAe?$AAn?$AAd?$AAi?$AAn@
-CONST	SEGMENT
-??_C@_1DI@CKGKJOEO@?$AA?$CB?$AA?$CC?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAS?$AAe?$AAn?$AAd?$AAi?$AAn@ DB '!'
-	DB	00H, '"', 00H, 'F', 00H, 'a', 00H, 'i', 00H, 'l', 00H, 'e', 00H
-	DB	'd', 00H, ' ', 00H, 'S', 00H, 'e', 00H, 'n', 00H, 'd', 00H, 'i'
-	DB	00H, 'n', 00H, 'g', 00H, ' ', 00H, 'H', 00H, 'a', 00H, 'n', 00H
-	DB	'd', 00H, 's', 00H, 'h', 00H, 'a', 00H, 'k', 00H, 'e', 00H, '"'
-	DB	00H, 00H, 00H				; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_09JMFCPCNF@HandShake@
 CONST	SEGMENT
 ??_C@_09JMFCPCNF@HandShake@ DB 'HandShake', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BJ@KOHJIAEM@Failed?5Sending?5Handshake@
+;	COMDAT ??_C@_0CB@IOMBLCGI@?$CD?$CD?5Network?5?9?5Hand?5Shake?5Phase?5?$CD@
 CONST	SEGMENT
-??_C@_0BJ@KOHJIAEM@Failed?5Sending?5Handshake@ DB 'Failed Sending Handsha'
-	DB	'ke', 00H					; `string'
+??_C@_0CB@IOMBLCGI@?$CD?$CD?5Network?5?9?5Hand?5Shake?5Phase?5?$CD@ DB '#'
+	DB	'# Network - Hand Shake Phase ##', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_1MM@JLFAGGBG@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
 CONST	SEGMENT
@@ -67,6 +53,20 @@ CONST	SEGMENT
 	DB	'a', 00H, 's', 00H, 'e', 00H, 'H', 00H, 'a', 00H, 'n', 00H, 'd'
 	DB	00H, 'S', 00H, 'h', 00H, 'a', 00H, 'k', 00H, 'e', 00H, '.', 00H
 	DB	'c', 00H, 'p', 00H, 'p', 00H, 00H, 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1DI@CKGKJOEO@?$AA?$CB?$AA?$CC?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAS?$AAe?$AAn?$AAd?$AAi?$AAn@
+CONST	SEGMENT
+??_C@_1DI@CKGKJOEO@?$AA?$CB?$AA?$CC?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAS?$AAe?$AAn?$AAd?$AAi?$AAn@ DB '!'
+	DB	00H, '"', 00H, 'F', 00H, 'a', 00H, 'i', 00H, 'l', 00H, 'e', 00H
+	DB	'd', 00H, ' ', 00H, 'S', 00H, 'e', 00H, 'n', 00H, 'd', 00H, 'i'
+	DB	00H, 'n', 00H, 'g', 00H, ' ', 00H, 'H', 00H, 'a', 00H, 'n', 00H
+	DB	'd', 00H, 's', 00H, 'h', 00H, 'a', 00H, 'k', 00H, 'e', 00H, '"'
+	DB	00H, 00H, 00H				; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BJ@KOHJIAEM@Failed?5Sending?5Handshake@
+CONST	SEGMENT
+??_C@_0BJ@KOHJIAEM@Failed?5Sending?5Handshake@ DB 'Failed Sending Handsha'
+	DB	'ke', 00H					; `string'
 PUBLIC	?HandShakePhase@CPythonNetworkStream@@IAEXXZ	; CPythonNetworkStream::HandShakePhase
 PUBLIC	?__LeaveHandshakePhase@CPythonNetworkStream@@IAEXXZ ; CPythonNetworkStream::__LeaveHandshakePhase
 PUBLIC	?RecvHandshakePacket@CPythonNetworkStream@@QAE_NXZ ; CPythonNetworkStream::RecvHandshakePacket

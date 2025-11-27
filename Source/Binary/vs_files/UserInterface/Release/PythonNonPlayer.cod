@@ -8,47 +8,47 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0DP@FMDCKFI@CPythonNonPlayer?3?3LoadNonPlayer@ ; `string'
-PUBLIC	??_C@_0EI@EHJJMNEK@CPythonNonPlayer?3?3LoadNonPlayer@ ; `string'
 PUBLIC	??_C@_0DP@FIGKBDCC@CPythonNonPlayer?3?3LoadNonPlayer@ ; `string'
-PUBLIC	??_C@_06MCNILGPN@UNDEAD@			; `string'
+PUBLIC	??_C@_0DP@FMDCKFI@CPythonNonPlayer?3?3LoadNonPlayer@ ; `string'
 PUBLIC	??_C@_06KELEGIHG@ANIMAL@			; `string'
-PUBLIC	??_C@_05CLBJJDHK@HUMAN@				; `string'
+PUBLIC	??_C@_0EI@EHJJMNEK@CPythonNonPlayer?3?3LoadNonPlayer@ ; `string'
 PUBLIC	??_C@_05IHAGCHCH@DEVIL@				; `string'
-PUBLIC	??_C@_06OAFEPMKF@MILGYO@			; `string'
+PUBLIC	??_C@_06MCNILGPN@UNDEAD@			; `string'
 PUBLIC	??_C@_03KJKAIOJA@ORC@				; `string'
-PUBLIC	??_C@_04OKEEPDCC@FIRE@				; `string'
+PUBLIC	??_C@_05CLBJJDHK@HUMAN@				; `string'
 PUBLIC	??_C@_06PJCAMNOK@INSECT@			; `string'
-PUBLIC	??_C@_06OPNEJFKO@DESERT@			; `string'
+PUBLIC	??_C@_06OAFEPMKF@MILGYO@			; `string'
 PUBLIC	??_C@_03MHHFLPIN@ICE@				; `string'
-PUBLIC	??_C@_08MHOFBFPO@ATT_ELEC@			; `string'
+PUBLIC	??_C@_04OKEEPDCC@FIRE@				; `string'
 PUBLIC	??_C@_04GOBFFCKL@TREE@				; `string'
-PUBLIC	??_C@_07JMOCKCNE@ATT_ICE@			; `string'
+PUBLIC	??_C@_06OPNEJFKO@DESERT@			; `string'
 PUBLIC	??_C@_08PIKIINGP@ATT_FIRE@			; `string'
-PUBLIC	??_C@_09EOFFOBGB@ATT_EARTH@			; `string'
+PUBLIC	??_C@_08MHOFBFPO@ATT_ELEC@			; `string'
 PUBLIC	??_C@_08KJAPFIAI@ATT_WIND@			; `string'
-PUBLIC	??_C@_01IHBHIGKO@?0@				; `string'
+PUBLIC	??_C@_07JMOCKCNE@ATT_ICE@			; `string'
 PUBLIC	??_C@_08NJFPNLGO@ATT_DARK@			; `string'
-PUBLIC	??_C@_01GPOEFGEJ@?7@				; `string'
+PUBLIC	??_C@_09EOFFOBGB@ATT_EARTH@			; `string'
 PUBLIC	??_C@_0CE@MBAPEHGB@LoadMobScale?3?5invalid?5line?5?$CFd?5?$CI@ ; `string'
+PUBLIC	??_C@_01IHBHIGKO@?0@				; `string'
 PUBLIC	??_C@_03NFKEKGGK@all@				; `string'
-PUBLIC	??_R2?$CSingleton@VCPythonNonPlayer@@@@8	; CSingleton<CPythonNonPlayer>::`RTTI Base Class Array'
+PUBLIC	??_C@_01GPOEFGEJ@?7@				; `string'
 PUBLIC	??_R2CPythonNonPlayer@@8			; CPythonNonPlayer::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@CPythonNonPlayer@@8		; CPythonNonPlayer::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R2?$CSingleton@VCPythonNonPlayer@@@@8	; CSingleton<CPythonNonPlayer>::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8 ; CSingleton<CPythonNonPlayer>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8	; CSingleton<CPythonNonPlayer> `RTTI Type Descriptor'
+PUBLIC	??_R1A@?0A@EA@CPythonNonPlayer@@8		; CPythonNonPlayer::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R3?$CSingleton@VCPythonNonPlayer@@@@8	; CSingleton<CPythonNonPlayer>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AVCPythonNonPlayer@@@8			; CPythonNonPlayer `RTTI Type Descriptor'
 PUBLIC	??_R3CPythonNonPlayer@@8			; CPythonNonPlayer::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8	; CSingleton<CPythonNonPlayer> `RTTI Type Descriptor'
+PUBLIC	??_R0?AVCPythonNonPlayer@@@8			; CPythonNonPlayer `RTTI Type Descriptor'
 PUBLIC	??_R4?$CSingleton@VCPythonNonPlayer@@@@6B@	; CSingleton<CPythonNonPlayer>::`RTTI Complete Object Locator'
 PUBLIC	??_R4CPythonNonPlayer@@6B@			; CPythonNonPlayer::`RTTI Complete Object Locator'
 PUBLIC	??_7?$CSingleton@VCPythonNonPlayer@@@@6B@	; CSingleton<CPythonNonPlayer>::`vftable'
 PUBLIC	??_7CPythonNonPlayer@@6B@			; CPythonNonPlayer::`vftable'
 EXTRN	?SplitLine@CMemoryTextFileLoader@@QAE_NKPAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@PBD@Z:PROC ; CMemoryTextFileLoader::SplitLine
+EXTRN	?Decompress@CLZO@@QAE_NAAVCLZObject@@PBEPAK@Z:PROC ; CLZO::Decompress
 EXTRN	?GetSize@CLZObject@@QAEKXZ:PROC			; CLZObject::GetSize
 EXTRN	??1CLZObject@@QAE@XZ:PROC			; CLZObject::~CLZObject
 EXTRN	??0CLZObject@@QAE@XZ:PROC			; CLZObject::CLZObject
-EXTRN	?Decompress@CLZO@@QAE_NAAVCLZObject@@PBEPAK@Z:PROC ; CLZO::Decompress
 ;	COMDAT ?s_adwMobProtoKey@?1??LoadNonPlayerData@CPythonNonPlayer@@QAE_NPBD@Z@4PAKA
 _DATA	SEGMENT
 ?s_adwMobProtoKey@?1??LoadNonPlayerData@CPythonNonPlayer@@QAE_NPBD@Z@4PAKA DD 0497446H ; `CPythonNonPlayer::LoadNonPlayerData'::`2'::s_adwMobProtoKey
@@ -86,6 +86,18 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8
 	DD	FLAT:??_R3?$CSingleton@VCPythonNonPlayer@@@@8
 rdata$r	ENDS
+;	COMDAT ??_R0?AVCPythonNonPlayer@@@8
+data$rs	SEGMENT
+??_R0?AVCPythonNonPlayer@@@8 DD FLAT:??_7type_info@@6B@	; CPythonNonPlayer `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCPythonNonPlayer@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonNonPlayer> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCPythonNonPlayer@@@@', 00H
+data$rs	ENDS
 ;	COMDAT ??_R3CPythonNonPlayer@@8
 rdata$r	SEGMENT
 ??_R3CPythonNonPlayer@@8 DD 00H				; CPythonNonPlayer::`RTTI Class Hierarchy Descriptor'
@@ -93,34 +105,12 @@ rdata$r	SEGMENT
 	DD	02H
 	DD	FLAT:??_R2CPythonNonPlayer@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonNonPlayer@@@8
-data$rs	SEGMENT
-??_R0?AVCPythonNonPlayer@@@8 DD FLAT:??_7type_info@@6B@	; CPythonNonPlayer `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCPythonNonPlayer@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R3?$CSingleton@VCPythonNonPlayer@@@@8
 rdata$r	SEGMENT
 ??_R3?$CSingleton@VCPythonNonPlayer@@@@8 DD 00H		; CSingleton<CPythonNonPlayer>::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	01H
 	DD	FLAT:??_R2?$CSingleton@VCPythonNonPlayer@@@@8
-rdata$r	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonNonPlayer> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AV?$CSingleton@VCPythonNonPlayer@@@@', 00H
-data$rs	ENDS
-;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8 DD FLAT:??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8 ; CSingleton<CPythonNonPlayer>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	00H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3?$CSingleton@VCPythonNonPlayer@@@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@CPythonNonPlayer@@8
 rdata$r	SEGMENT
@@ -132,114 +122,124 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3CPythonNonPlayer@@8
 rdata$r	ENDS
-;	COMDAT ??_R2CPythonNonPlayer@@8
+;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8
 rdata$r	SEGMENT
-??_R2CPythonNonPlayer@@8 DD FLAT:??_R1A@?0A@EA@CPythonNonPlayer@@8 ; CPythonNonPlayer::`RTTI Base Class Array'
-	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8
+??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8 DD FLAT:??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8 ; CSingleton<CPythonNonPlayer>::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	00H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3?$CSingleton@VCPythonNonPlayer@@@@8
 rdata$r	ENDS
 ;	COMDAT ??_R2?$CSingleton@VCPythonNonPlayer@@@@8
 rdata$r	SEGMENT
 ??_R2?$CSingleton@VCPythonNonPlayer@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8 ; CSingleton<CPythonNonPlayer>::`RTTI Base Class Array'
 rdata$r	ENDS
+;	COMDAT ??_R2CPythonNonPlayer@@8
+rdata$r	SEGMENT
+??_R2CPythonNonPlayer@@8 DD FLAT:??_R1A@?0A@EA@CPythonNonPlayer@@8 ; CPythonNonPlayer::`RTTI Base Class Array'
+	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8
+rdata$r	ENDS
+;	COMDAT ??_C@_01GPOEFGEJ@?7@
+CONST	SEGMENT
+??_C@_01GPOEFGEJ@?7@ DB 09H, 00H			; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_03NFKEKGGK@all@
 CONST	SEGMENT
 ??_C@_03NFKEKGGK@all@ DB 'all', 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_01IHBHIGKO@?0@
+CONST	SEGMENT
+??_C@_01IHBHIGKO@?0@ DB ',', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CE@MBAPEHGB@LoadMobScale?3?5invalid?5line?5?$CFd?5?$CI@
 CONST	SEGMENT
 ??_C@_0CE@MBAPEHGB@LoadMobScale?3?5invalid?5line?5?$CFd?5?$CI@ DB 'LoadMo'
 	DB	'bScale: invalid line %d (%s).', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_01GPOEFGEJ@?7@
+;	COMDAT ??_C@_09EOFFOBGB@ATT_EARTH@
 CONST	SEGMENT
-??_C@_01GPOEFGEJ@?7@ DB 09H, 00H			; `string'
+??_C@_09EOFFOBGB@ATT_EARTH@ DB 'ATT_EARTH', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08NJFPNLGO@ATT_DARK@
 CONST	SEGMENT
 ??_C@_08NJFPNLGO@ATT_DARK@ DB 'ATT_DARK', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_01IHBHIGKO@?0@
+;	COMDAT ??_C@_07JMOCKCNE@ATT_ICE@
 CONST	SEGMENT
-??_C@_01IHBHIGKO@?0@ DB ',', 00H			; `string'
+??_C@_07JMOCKCNE@ATT_ICE@ DB 'ATT_ICE', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08KJAPFIAI@ATT_WIND@
 CONST	SEGMENT
 ??_C@_08KJAPFIAI@ATT_WIND@ DB 'ATT_WIND', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09EOFFOBGB@ATT_EARTH@
+;	COMDAT ??_C@_08MHOFBFPO@ATT_ELEC@
 CONST	SEGMENT
-??_C@_09EOFFOBGB@ATT_EARTH@ DB 'ATT_EARTH', 00H		; `string'
+??_C@_08MHOFBFPO@ATT_ELEC@ DB 'ATT_ELEC', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08PIKIINGP@ATT_FIRE@
 CONST	SEGMENT
 ??_C@_08PIKIINGP@ATT_FIRE@ DB 'ATT_FIRE', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07JMOCKCNE@ATT_ICE@
+;	COMDAT ??_C@_06OPNEJFKO@DESERT@
 CONST	SEGMENT
-??_C@_07JMOCKCNE@ATT_ICE@ DB 'ATT_ICE', 00H		; `string'
+??_C@_06OPNEJFKO@DESERT@ DB 'DESERT', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04GOBFFCKL@TREE@
 CONST	SEGMENT
 ??_C@_04GOBFFCKL@TREE@ DB 'TREE', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08MHOFBFPO@ATT_ELEC@
+;	COMDAT ??_C@_04OKEEPDCC@FIRE@
 CONST	SEGMENT
-??_C@_08MHOFBFPO@ATT_ELEC@ DB 'ATT_ELEC', 00H		; `string'
+??_C@_04OKEEPDCC@FIRE@ DB 'FIRE', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_03MHHFLPIN@ICE@
 CONST	SEGMENT
 ??_C@_03MHHFLPIN@ICE@ DB 'ICE', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06OPNEJFKO@DESERT@
+;	COMDAT ??_C@_06OAFEPMKF@MILGYO@
 CONST	SEGMENT
-??_C@_06OPNEJFKO@DESERT@ DB 'DESERT', 00H		; `string'
+??_C@_06OAFEPMKF@MILGYO@ DB 'MILGYO', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06PJCAMNOK@INSECT@
 CONST	SEGMENT
 ??_C@_06PJCAMNOK@INSECT@ DB 'INSECT', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04OKEEPDCC@FIRE@
+;	COMDAT ??_C@_05CLBJJDHK@HUMAN@
 CONST	SEGMENT
-??_C@_04OKEEPDCC@FIRE@ DB 'FIRE', 00H			; `string'
+??_C@_05CLBJJDHK@HUMAN@ DB 'HUMAN', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_03KJKAIOJA@ORC@
 CONST	SEGMENT
 ??_C@_03KJKAIOJA@ORC@ DB 'ORC', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06OAFEPMKF@MILGYO@
-CONST	SEGMENT
-??_C@_06OAFEPMKF@MILGYO@ DB 'MILGYO', 00H		; `string'
-CONST	ENDS
-;	COMDAT ??_C@_05IHAGCHCH@DEVIL@
-CONST	SEGMENT
-??_C@_05IHAGCHCH@DEVIL@ DB 'DEVIL', 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_05CLBJJDHK@HUMAN@
-CONST	SEGMENT
-??_C@_05CLBJJDHK@HUMAN@ DB 'HUMAN', 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_06KELEGIHG@ANIMAL@
-CONST	SEGMENT
-??_C@_06KELEGIHG@ANIMAL@ DB 'ANIMAL', 00H		; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_06MCNILGPN@UNDEAD@
 CONST	SEGMENT
 ??_C@_06MCNILGPN@UNDEAD@ DB 'UNDEAD', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0DP@FIGKBDCC@CPythonNonPlayer?3?3LoadNonPlayer@
+;	COMDAT ??_C@_05IHAGCHCH@DEVIL@
 CONST	SEGMENT
-??_C@_0DP@FIGKBDCC@CPythonNonPlayer?3?3LoadNonPlayer@ DB 'CPythonNonPlaye'
-	DB	'r::LoadNonPlayerData: invalid Mob proto type %s', 00H ; `string'
+??_C@_05IHAGCHCH@DEVIL@ DB 'DEVIL', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0EI@EHJJMNEK@CPythonNonPlayer?3?3LoadNonPlayer@
 CONST	SEGMENT
 ??_C@_0EI@EHJJMNEK@CPythonNonPlayer?3?3LoadNonPlayer@ DB 'CPythonNonPlaye'
 	DB	'r::LoadNonPlayerData: invalid size %u check data format.', 00H ; `string'
 CONST	ENDS
+;	COMDAT ??_C@_06KELEGIHG@ANIMAL@
+CONST	SEGMENT
+??_C@_06KELEGIHG@ANIMAL@ DB 'ANIMAL', 00H		; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0DP@FMDCKFI@CPythonNonPlayer?3?3LoadNonPlayer@
 CONST	SEGMENT
 ??_C@_0DP@FMDCKFI@CPythonNonPlayer?3?3LoadNonPlayer@ DB 'CPythonNonPlayer'
 	DB	'::LoadNonPlayerData: %s, sizeof(TMobTable)=%u', 0aH, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0DP@FIGKBDCC@CPythonNonPlayer?3?3LoadNonPlayer@
+CONST	SEGMENT
+??_C@_0DP@FIGKBDCC@CPythonNonPlayer?3?3LoadNonPlayer@ DB 'CPythonNonPlaye'
+	DB	'r::LoadNonPlayerData: invalid Mob proto type %s', 00H ; `string'
 PUBLIC	?GetBuffer@CLZObject@@QAEPAEXZ			; CLZObject::GetBuffer
 PUBLIC	??0?$pair@$$CBKV?$vector@HV?$allocator@H@std@@@std@@@std@@QAE@ABU01@@Z ; std::pair<unsigned long const ,std::vector<int,std::allocator<int> > >::pair<unsigned long const ,std::vector<int,std::allocator<int> > >
 PUBLIC	??$construct_at@U?$pair@$$CBKV?$vector@HV?$allocator@H@std@@@std@@@std@@AAU12@@std@@YAPAU?$pair@$$CBKV?$vector@HV?$allocator@H@std@@@std@@@0@QAU10@AAU10@@Z ; std::construct_at<std::pair<unsigned long const ,std::vector<int,std::allocator<int> > >,std::pair<unsigned long const ,std::vector<int,std::allocator<int> > > &>

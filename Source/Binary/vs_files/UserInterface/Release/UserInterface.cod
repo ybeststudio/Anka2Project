@@ -8,127 +8,127 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0N@CMMKLLC@UserDict?4pyc@			; `string'
-PUBLIC	??_C@_0N@GCNFBOJN@copy_reg?4pyc@		; `string'
 PUBLIC	??_C@_0P@KBODAEKE@__future__?4pyc@		; `string'
-PUBLIC	??_C@_0L@HJCEJGHC@ntpath?4pyc@			; `string'
+PUBLIC	??_C@_0N@CMMKLLC@UserDict?4pyc@			; `string'
 PUBLIC	??_C@_0O@COBIIGAD@linecache?4pyc@		; `string'
-PUBLIC	??_C@_08FPFMJPEC@site?4pyc@			; `string'
+PUBLIC	??_C@_0N@GCNFBOJN@copy_reg?4pyc@		; `string'
 PUBLIC	??_C@_06JCOFDJKA@os?4pyc@			; `string'
-PUBLIC	??_C@_0L@NDKNFNNI@string?4pyc@			; `string'
+PUBLIC	??_C@_0L@HJCEJGHC@ntpath?4pyc@			; `string'
 PUBLIC	??_C@_08EFIONJOP@stat?4pyc@			; `string'
-PUBLIC	??_C@_09EHIBBABK@types?4pyc@			; `string'
+PUBLIC	??_C@_08FPFMJPEC@site?4pyc@			; `string'
 PUBLIC	??_C@_0O@PMKHJGGH@traceback?4pyc@		; `string'
-PUBLIC	??_C@_08GCAMGOFC@pack?1bgm@			; `string'
+PUBLIC	??_C@_0L@NDKNFNNI@string?4pyc@			; `string'
 PUBLIC	??_C@_04HOGMCHDB@lib?2@				; `string'
-PUBLIC	??_C@_0L@KHFEEPGE@pack?1guild@			; `string'
+PUBLIC	??_C@_09EHIBBABK@types?4pyc@			; `string'
 PUBLIC	??_C@_0M@OJOBOCDO@pack?1effect@			; `string'
-PUBLIC	??_C@_09GODLLBIE@pack?1item@			; `string'
+PUBLIC	??_C@_08GCAMGOFC@pack?1bgm@			; `string'
 PUBLIC	??_C@_09IFEPAILH@pack?1icon@			; `string'
-PUBLIC	??_C@_0N@EJCFPPHF@pack?1monster@		; `string'
+PUBLIC	??_C@_0L@KHFEEPGE@pack?1guild@			; `string'
 PUBLIC	??_C@_0M@EEHBIKCP@pack?1locale@			; `string'
-PUBLIC	??_C@_08KPDAEJJB@pack?1npc@			; `string'
+PUBLIC	??_C@_09GODLLBIE@pack?1item@			; `string'
 PUBLIC	??_C@_0O@MNFGPEDN@pack?1monster2@		; `string'
-PUBLIC	??_C@_0N@DHKLPFLL@pack?1npc_pet@		; `string'
+PUBLIC	??_C@_0N@EJCFPPHF@pack?1monster@		; `string'
 PUBLIC	??_C@_0P@IOLIHCBC@pack?1npc_mount@		; `string'
-PUBLIC	??_C@_0M@OOBKPPAB@pack?1others@			; `string'
+PUBLIC	??_C@_08KPDAEJJB@pack?1npc@			; `string'
 PUBLIC	??_C@_09GKNHMHOK@pack?1npc2@			; `string'
-PUBLIC	??_C@_07JJLOCCKD@pack?1pc@			; `string'
+PUBLIC	??_C@_0N@DHKLPFLL@pack?1npc_pet@		; `string'
 PUBLIC	??_C@_0N@DCKMAEKP@pack?1outdoor@		; `string'
-PUBLIC	??_C@_0L@MAILMID@pack?1sound@			; `string'
+PUBLIC	??_C@_0M@OOBKPPAB@pack?1others@			; `string'
 PUBLIC	??_C@_08KCDGBIAB@pack?1pc2@			; `string'
-PUBLIC	??_C@_0BA@ILDNBDOM@pack?1textureset@		; `string'
+PUBLIC	??_C@_07JJLOCCKD@pack?1pc@			; `string'
 PUBLIC	??_C@_0BB@GJEJEBHI@pack?1terrainmaps@		; `string'
-PUBLIC	??_C@_09KOPOJKB@pack?1zone@			; `string'
+PUBLIC	??_C@_0L@MAILMID@pack?1sound@			; `string'
 PUBLIC	??_C@_09BLPJDHGD@pack?1tree@			; `string'
-PUBLIC	??_C@_0M@EILMOIBE@__builtin__@			; `string'
+PUBLIC	??_C@_0BA@ILDNBDOM@pack?1textureset@		; `string'
 PUBLIC	??_C@_04NBFCGMPH@root@				; `string'
-PUBLIC	??_C@_0BH@NBEHHPDF@__USE_DYNAMIC_MODULE__@	; `string'
+PUBLIC	??_C@_09KOPOJKB@pack?1zone@			; `string'
 PUBLIC	??_C@_09KMAGPBGM@__DEBUG__@			; `string'
-PUBLIC	??_C@_04JFPGDMCL@?9ncs@				; `string'
+PUBLIC	??_C@_0M@EILMOIBE@__builtin__@			; `string'
 PUBLIC	??_C@_03MCGAAIEM@?9cs@				; `string'
-PUBLIC	??_C@_0BK@DPMNHJLC@RegisterCommandLine?5Error@	; `string'
+PUBLIC	??_C@_0BH@NBEHHPDF@__USE_DYNAMIC_MODULE__@	; `string'
 PUBLIC	??_C@_0BE@FPKDPBJI@__COMMAND_LINE__?5?$DN?5@	; `string'
-PUBLIC	??_C@_05PDJBBECF@pause@				; `string'
+PUBLIC	??_C@_04JFPGDMCL@?9ncs@				; `string'
 PUBLIC	??_C@_0BN@KIGJPBEF@?9?9pause?9before?9create?9window@ ; `string'
-PUBLIC	??_C@_0O@BEEPKJML@RunMain?5Error@		; `string'
+PUBLIC	??_C@_0BK@DPMNHJLC@RegisterCommandLine?5Error@	; `string'
 PUBLIC	??_C@_09LEIJOBCA@system?4py@			; `string'
-PUBLIC	??_C@_04IPANLPFO@pack@				; `string'
+PUBLIC	??_C@_05PDJBBECF@pause@				; `string'
 PUBLIC	??_C@_0L@MFNMKHHD@config?4cfg@			; `string'
-PUBLIC	??_C@_0M@PFDHIIAP@eter?4python@			; `string'
+PUBLIC	??_C@_0O@BEEPKJML@RunMain?5Error@		; `string'
 PUBLIC	??_C@_0DB@BGMLOPGB@Pack?5Initialization?5failed?4?5Che@ ; `string'
-PUBLIC	??_C@_0M@DDFJOLIE@HEADQUARTER@			; `string'
+PUBLIC	??_C@_04IPANLPFO@pack@				; `string'
 PUBLIC	??_C@_0M@JNAFICFM@headquarter@			; `string'
-PUBLIC	??_C@_08HHCOKFGB@FACILITY@			; `string'
+PUBLIC	??_C@_0M@PFDHIIAP@eter?4python@			; `string'
 PUBLIC	??_C@_08IICJLEG@facility@			; `string'
-PUBLIC	??_C@_06IAMCMNFI@OBJECT@			; `string'
+PUBLIC	??_C@_0M@DDFJOLIE@HEADQUARTER@			; `string'
 PUBLIC	??_C@_06IEOJBDIK@object@			; `string'
-PUBLIC	??_C@_04LFAKFAMM@WALL@				; `string'
+PUBLIC	??_C@_08HHCOKFGB@FACILITY@			; `string'
 PUBLIC	??_C@_05EIKACAIN@fence@				; `string'
-PUBLIC	??_C@_0CN@OHDPHKKH@FATAL?5ERROR?$CB?$CB?5Python?5Library?5fi@ ; `string'
+PUBLIC	??_C@_06IAMCMNFI@OBJECT@			; `string'
 PUBLIC	??_C@_0BA@OEEELOKH@Metin2GameMutex@		; `string'
-PUBLIC	??_C@_0BJ@PLHBCABC@Sun?5Nov?523?520?327?349?52025@ ; `string'
+PUBLIC	??_C@_04LFAKFAMM@WALL@				; `string'
 PUBLIC	??_C@_0L@HBFAHJLE@?1timestamp@			; `string'
-PUBLIC	??_C@_08LJMAFCGB@?9?9locale@			; `string'
+PUBLIC	??_C@_0CN@OHDPHKKH@FATAL?5ERROR?$CB?$CB?5Python?5Library?5fi@ ; `string'
 PUBLIC	??_C@_0DL@IHCMKBOK@METIN2?5BINARY?5DISTRIBUTE?5VERSIO@ ; `string'
+PUBLIC	??_C@_0BJ@PLHBCABC@Sun?5Nov?523?520?327?349?52025@ ; `string'
 PUBLIC	??_C@_0BE@FJLABEAB@?9?9perforce?9revision@	; `string'
-PUBLIC	??_R2?$CSingleton@VCPythonPlayerSettingsModule@@@@8 ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Base Class Array'
+PUBLIC	??_C@_08LJMAFCGB@?9?9locale@			; `string'
 PUBLIC	??_R2CPythonPlayerSettingsModule@@8		; CPythonPlayerSettingsModule::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonPlayerSettingsModule@@@@8 ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R2?$CSingleton@VCPythonPlayerSettingsModule@@@@8 ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@CPythonPlayerSettingsModule@@8	; CPythonPlayerSettingsModule::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R0?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@@8 ; CSingleton<CPythonPlayerSettingsModule> `RTTI Type Descriptor'
+PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonPlayerSettingsModule@@@@8 ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R3?$CSingleton@VCPythonPlayerSettingsModule@@@@8 ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AVCPythonPlayerSettingsModule@@@8		; CPythonPlayerSettingsModule `RTTI Type Descriptor'
 PUBLIC	??_R3CPythonPlayerSettingsModule@@8		; CPythonPlayerSettingsModule::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R0?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@@8 ; CSingleton<CPythonPlayerSettingsModule> `RTTI Type Descriptor'
+PUBLIC	??_R0?AVCPythonPlayerSettingsModule@@@8		; CPythonPlayerSettingsModule `RTTI Type Descriptor'
 PUBLIC	??_R4?$CSingleton@VCPythonPlayerSettingsModule@@@@6B@ ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Complete Object Locator'
 PUBLIC	??_R4CPythonPlayerSettingsModule@@6B@		; CPythonPlayerSettingsModule::`RTTI Complete Object Locator'
 PUBLIC	??_7?$CSingleton@VCPythonPlayerSettingsModule@@@@6B@ ; CSingleton<CPythonPlayerSettingsModule>::`vftable'
 PUBLIC	??_7CPythonPlayerSettingsModule@@6B@		; CPythonPlayerSettingsModule::`vftable'
 PUBLIC	_NvOptimusEnablement
 PUBLIC	_AmdPowerXpressRequestHighPerformance
-EXTRN	__imp__GrannySetLogCallback@4:PROC
-EXTRN	__imp__timeGetDevCaps@8:PROC
 EXTRN	?MINMAX@@YAHHHH@Z:PROC				; MINMAX
 EXTRN	__imp__timeBeginPeriod@4:PROC
-EXTRN	__imp__CoUninitialize@0:PROC
+EXTRN	__imp__GrannySetLogCallback@4:PROC
 EXTRN	__imp__GlobalFree@4:PROC
-EXTRN	?LogBoxf@@YAXPBDZZ:PROC				; LogBoxf
-EXTRN	?CommandLineToArgv@@YAPAPADPADPAH@Z:PROC	; CommandLineToArgv
+EXTRN	__imp__timeGetDevCaps@8:PROC
 EXTRN	_WebBrowser_Startup:PROC
 EXTRN	_WebBrowser_Cleanup:PROC
-EXTRN	__imp__CreateMutexA@12:PROC
+EXTRN	__imp__CoUninitialize@0:PROC
 EXTRN	__imp__ReleaseMutex@4:PROC
+EXTRN	?LogBoxf@@YAXPBDZZ:PROC				; LogBoxf
+EXTRN	?CommandLineToArgv@@YAPAPADPADPAH@Z:PROC	; CommandLineToArgv
+EXTRN	__imp__CreateMutexA@12:PROC
+EXTRN	?Clear@CPythonLauncher@@QAEXXZ:PROC		; CPythonLauncher::Clear
 EXTRN	??1CEterPackManager@@UAE@XZ:PROC		; CEterPackManager::~CEterPackManager
 EXTRN	??1CLZO@@UAE@XZ:PROC				; CLZO::~CLZO
-EXTRN	?Create@CPythonLauncher@@QAE_NPBD@Z:PROC	; CPythonLauncher::Create
-EXTRN	__imp__timeEndPeriod@4:PROC
-EXTRN	?Clear@CPythonLauncher@@QAEXXZ:PROC		; CPythonLauncher::Clear
-EXTRN	?Initialize@CMSApplication@@QAEXPAUHINSTANCE__@@@Z:PROC ; CMSApplication::Initialize
-EXTRN	??0CPythonLauncher@@QAE@XZ:PROC			; CPythonLauncher::CPythonLauncher
 EXTRN	??1CPythonLauncher@@UAE@XZ:PROC			; CPythonLauncher::~CPythonLauncher
 EXTRN	?SetExceptionSender@@YAXPAVIPythonExceptionSender@@@Z:PROC ; SetExceptionSender
+EXTRN	?Create@CPythonLauncher@@QAE_NPBD@Z:PROC	; CPythonLauncher::Create
+EXTRN	__imp__timeEndPeriod@4:PROC
+EXTRN	?Initialize@CMSApplication@@QAEXPAUHINSTANCE__@@@Z:PROC ; CMSApplication::Initialize
+EXTRN	??0CPythonLauncher@@QAE@XZ:PROC			; CPythonLauncher::CPythonLauncher
 EXTRN	??0CEterPackManager@@QAE@XZ:PROC		; CEterPackManager::CEterPackManager
 EXTRN	??0CLZO@@QAE@XZ:PROC				; CLZO::CLZO
+EXTRN	__imp__ilInit@0:PROC
 EXTRN	?OpenLogFile@@YAX_N@Z:PROC			; OpenLogFile
+EXTRN	?srandom@@YAXK@Z:PROC				; srandom
 EXTRN	_srand:PROC
 EXTRN	?SetLogLevel@@YAXI@Z:PROC			; SetLogLevel
-EXTRN	__imp__ilInit@0:PROC
-EXTRN	_system:PROC
-EXTRN	?srandom@@YAXK@Z:PROC				; srandom
-EXTRN	?initwndMgr@@YAXXZ:PROC				; initwndMgr
-EXTRN	?SplitLine@@YA_NPBD0PAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@Z:PROC ; SplitLine
 EXTRN	?base64_decode@@YAXPBDPAD@Z:PROC		; base64_decode
 EXTRN	?RunLine@CPythonLauncher@@QAE_NPBD@Z:PROC	; CPythonLauncher::RunLine
-EXTRN	?initdbg@@YAXXZ:PROC				; initdbg
-EXTRN	?initgrp@@YAXXZ:PROC				; initgrp
+EXTRN	_system:PROC
 EXTRN	?initgrpImage@@YAXXZ:PROC			; initgrpImage
 EXTRN	?initgrpText@@YAXXZ:PROC			; initgrpText
-EXTRN	?SetSearchMode@CEterPackManager@@QAEX_N@Z:PROC	; CEterPackManager::SetSearchMode
-EXTRN	?SetPackMode@CSoundData@@SAXXZ:PROC		; CSoundData::SetPackMode
+EXTRN	?initwndMgr@@YAXXZ:PROC				; initwndMgr
+EXTRN	?SplitLine@@YA_NPBD0PAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@Z:PROC ; SplitLine
 EXTRN	?RegisterPack@CEterPackManager@@QAE_NPBD0PBE@Z:PROC ; CEterPackManager::RegisterPack
 EXTRN	?RegisterRootPack@CEterPackManager@@QAEXPBD@Z:PROC ; CEterPackManager::RegisterRootPack
+EXTRN	?initdbg@@YAXXZ:PROC				; initdbg
+EXTRN	?initgrp@@YAXXZ:PROC				; initgrp
 EXTRN	?SetCacheMode@CTextFileLoader@@SAXXZ:PROC	; CTextFileLoader::SetCacheMode
 EXTRN	?SetCacheMode@CEterPackManager@@QAEXXZ:PROC	; CEterPackManager::SetCacheMode
+EXTRN	?SetSearchMode@CEterPackManager@@QAEX_N@Z:PROC	; CEterPackManager::SetSearchMode
+EXTRN	?SetPackMode@CSoundData@@SAXXZ:PROC		; CSoundData::SetPackMode
 EXTRN	__imp__MoveFileA@8:PROC
 EXTRN	__fltused:DWORD
 ;	COMDAT ??_7CPythonPlayerSettingsModule@@6B@
@@ -157,6 +157,18 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@@8
 	DD	FLAT:??_R3?$CSingleton@VCPythonPlayerSettingsModule@@@@8
 rdata$r	ENDS
+;	COMDAT ??_R0?AVCPythonPlayerSettingsModule@@@8
+data$rs	SEGMENT
+??_R0?AVCPythonPlayerSettingsModule@@@8 DD FLAT:??_7type_info@@6B@ ; CPythonPlayerSettingsModule `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCPythonPlayerSettingsModule@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonPlayerSettingsModule> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@', 00H
+data$rs	ENDS
 ;	COMDAT ??_R3CPythonPlayerSettingsModule@@8
 rdata$r	SEGMENT
 ??_R3CPythonPlayerSettingsModule@@8 DD 00H		; CPythonPlayerSettingsModule::`RTTI Class Hierarchy Descriptor'
@@ -164,34 +176,12 @@ rdata$r	SEGMENT
 	DD	02H
 	DD	FLAT:??_R2CPythonPlayerSettingsModule@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonPlayerSettingsModule@@@8
-data$rs	SEGMENT
-??_R0?AVCPythonPlayerSettingsModule@@@8 DD FLAT:??_7type_info@@6B@ ; CPythonPlayerSettingsModule `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCPythonPlayerSettingsModule@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R3?$CSingleton@VCPythonPlayerSettingsModule@@@@8
 rdata$r	SEGMENT
 ??_R3?$CSingleton@VCPythonPlayerSettingsModule@@@@8 DD 00H ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	01H
 	DD	FLAT:??_R2?$CSingleton@VCPythonPlayerSettingsModule@@@@8
-rdata$r	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonPlayerSettingsModule> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@', 00H
-data$rs	ENDS
-;	COMDAT ??_R1A@?0A@EA@CPythonPlayerSettingsModule@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@CPythonPlayerSettingsModule@@8 DD FLAT:??_R0?AVCPythonPlayerSettingsModule@@@8 ; CPythonPlayerSettingsModule::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	01H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3CPythonPlayerSettingsModule@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonPlayerSettingsModule@@@@8
 rdata$r	SEGMENT
@@ -203,276 +193,286 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$CSingleton@VCPythonPlayerSettingsModule@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R2CPythonPlayerSettingsModule@@8
+;	COMDAT ??_R1A@?0A@EA@CPythonPlayerSettingsModule@@8
 rdata$r	SEGMENT
-??_R2CPythonPlayerSettingsModule@@8 DD FLAT:??_R1A@?0A@EA@CPythonPlayerSettingsModule@@8 ; CPythonPlayerSettingsModule::`RTTI Base Class Array'
-	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonPlayerSettingsModule@@@@8
+??_R1A@?0A@EA@CPythonPlayerSettingsModule@@8 DD FLAT:??_R0?AVCPythonPlayerSettingsModule@@@8 ; CPythonPlayerSettingsModule::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3CPythonPlayerSettingsModule@@8
 rdata$r	ENDS
 ;	COMDAT ??_R2?$CSingleton@VCPythonPlayerSettingsModule@@@@8
 rdata$r	SEGMENT
 ??_R2?$CSingleton@VCPythonPlayerSettingsModule@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonPlayerSettingsModule@@@@8 ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Base Class Array'
 rdata$r	ENDS
-;	COMDAT ??_C@_0BE@FJLABEAB@?9?9perforce?9revision@
-CONST	SEGMENT
-??_C@_0BE@FJLABEAB@?9?9perforce?9revision@ DB '--perforce-revision', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0DL@IHCMKBOK@METIN2?5BINARY?5DISTRIBUTE?5VERSIO@
-CONST	SEGMENT
-??_C@_0DL@IHCMKBOK@METIN2?5BINARY?5DISTRIBUTE?5VERSIO@ DB 'METIN2 BINARY '
-	DB	'DISTRIBUTE VERSION %s ( MS C++ %d Compiled )', 00H ; `string'
-CONST	ENDS
+;	COMDAT ??_R2CPythonPlayerSettingsModule@@8
+rdata$r	SEGMENT
+??_R2CPythonPlayerSettingsModule@@8 DD FLAT:??_R1A@?0A@EA@CPythonPlayerSettingsModule@@8 ; CPythonPlayerSettingsModule::`RTTI Base Class Array'
+	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonPlayerSettingsModule@@@@8
+rdata$r	ENDS
 ;	COMDAT ??_C@_08LJMAFCGB@?9?9locale@
 CONST	SEGMENT
 ??_C@_08LJMAFCGB@?9?9locale@ DB '--locale', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@HBFAHJLE@?1timestamp@
+;	COMDAT ??_C@_0BE@FJLABEAB@?9?9perforce?9revision@
 CONST	SEGMENT
-??_C@_0L@HBFAHJLE@?1timestamp@ DB '/timestamp', 00H	; `string'
+??_C@_0BE@FJLABEAB@?9?9perforce?9revision@ DB '--perforce-revision', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BJ@PLHBCABC@Sun?5Nov?523?520?327?349?52025@
 CONST	SEGMENT
 ??_C@_0BJ@PLHBCABC@Sun?5Nov?523?520?327?349?52025@ DB 'Sun Nov 23 20:27:4'
 	DB	'9 2025', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@OEEELOKH@Metin2GameMutex@
+;	COMDAT ??_C@_0DL@IHCMKBOK@METIN2?5BINARY?5DISTRIBUTE?5VERSIO@
 CONST	SEGMENT
-??_C@_0BA@OEEELOKH@Metin2GameMutex@ DB 'Metin2GameMutex', 00H ; `string'
+??_C@_0DL@IHCMKBOK@METIN2?5BINARY?5DISTRIBUTE?5VERSIO@ DB 'METIN2 BINARY '
+	DB	'DISTRIBUTE VERSION %s ( MS C++ %d Compiled )', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CN@OHDPHKKH@FATAL?5ERROR?$CB?$CB?5Python?5Library?5fi@
 CONST	SEGMENT
 ??_C@_0CN@OHDPHKKH@FATAL?5ERROR?$CB?$CB?5Python?5Library?5fi@ DB 'FATAL E'
 	DB	'RROR!! Python Library file not exist!', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05EIKACAIN@fence@
+;	COMDAT ??_C@_0L@HBFAHJLE@?1timestamp@
 CONST	SEGMENT
-??_C@_05EIKACAIN@fence@ DB 'fence', 00H			; `string'
+??_C@_0L@HBFAHJLE@?1timestamp@ DB '/timestamp', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04LFAKFAMM@WALL@
 CONST	SEGMENT
 ??_C@_04LFAKFAMM@WALL@ DB 'WALL', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06IEOJBDIK@object@
+;	COMDAT ??_C@_0BA@OEEELOKH@Metin2GameMutex@
 CONST	SEGMENT
-??_C@_06IEOJBDIK@object@ DB 'object', 00H		; `string'
+??_C@_0BA@OEEELOKH@Metin2GameMutex@ DB 'Metin2GameMutex', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06IAMCMNFI@OBJECT@
 CONST	SEGMENT
 ??_C@_06IAMCMNFI@OBJECT@ DB 'OBJECT', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08IICJLEG@facility@
+;	COMDAT ??_C@_05EIKACAIN@fence@
 CONST	SEGMENT
-??_C@_08IICJLEG@facility@ DB 'facility', 00H		; `string'
+??_C@_05EIKACAIN@fence@ DB 'fence', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08HHCOKFGB@FACILITY@
 CONST	SEGMENT
 ??_C@_08HHCOKFGB@FACILITY@ DB 'FACILITY', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@JNAFICFM@headquarter@
+;	COMDAT ??_C@_06IEOJBDIK@object@
 CONST	SEGMENT
-??_C@_0M@JNAFICFM@headquarter@ DB 'headquarter', 00H	; `string'
+??_C@_06IEOJBDIK@object@ DB 'object', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@DDFJOLIE@HEADQUARTER@
 CONST	SEGMENT
 ??_C@_0M@DDFJOLIE@HEADQUARTER@ DB 'HEADQUARTER', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_08IICJLEG@facility@
+CONST	SEGMENT
+??_C@_08IICJLEG@facility@ DB 'facility', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0M@PFDHIIAP@eter?4python@
+CONST	SEGMENT
+??_C@_0M@PFDHIIAP@eter?4python@ DB 'eter.python', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0M@JNAFICFM@headquarter@
+CONST	SEGMENT
+??_C@_0M@JNAFICFM@headquarter@ DB 'headquarter', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_04IPANLPFO@pack@
+CONST	SEGMENT
+??_C@_04IPANLPFO@pack@ DB 'pack', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DB@BGMLOPGB@Pack?5Initialization?5failed?4?5Che@
 CONST	SEGMENT
 ??_C@_0DB@BGMLOPGB@Pack?5Initialization?5failed?4?5Che@ DB 'Pack Initiali'
 	DB	'zation failed. Check log.txt file..', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@PFDHIIAP@eter?4python@
+;	COMDAT ??_C@_0O@BEEPKJML@RunMain?5Error@
 CONST	SEGMENT
-??_C@_0M@PFDHIIAP@eter?4python@ DB 'eter.python', 00H	; `string'
+??_C@_0O@BEEPKJML@RunMain?5Error@ DB 'RunMain Error', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@MFNMKHHD@config?4cfg@
 CONST	SEGMENT
 ??_C@_0L@MFNMKHHD@config?4cfg@ DB 'config.cfg', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04IPANLPFO@pack@
-CONST	SEGMENT
-??_C@_04IPANLPFO@pack@ DB 'pack', 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_09LEIJOBCA@system?4py@
-CONST	SEGMENT
-??_C@_09LEIJOBCA@system?4py@ DB 'system.py', 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0O@BEEPKJML@RunMain?5Error@
-CONST	SEGMENT
-??_C@_0O@BEEPKJML@RunMain?5Error@ DB 'RunMain Error', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BN@KIGJPBEF@?9?9pause?9before?9create?9window@
-CONST	SEGMENT
-??_C@_0BN@KIGJPBEF@?9?9pause?9before?9create?9window@ DB '--pause-before-'
-	DB	'create-window', 00H				; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_05PDJBBECF@pause@
 CONST	SEGMENT
 ??_C@_05PDJBBECF@pause@ DB 'pause', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@FPKDPBJI@__COMMAND_LINE__?5?$DN?5@
+;	COMDAT ??_C@_09LEIJOBCA@system?4py@
 CONST	SEGMENT
-??_C@_0BE@FPKDPBJI@__COMMAND_LINE__?5?$DN?5@ DB '__COMMAND_LINE__ = ', 00H ; `string'
+??_C@_09LEIJOBCA@system?4py@ DB 'system.py', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@DPMNHJLC@RegisterCommandLine?5Error@
 CONST	SEGMENT
 ??_C@_0BK@DPMNHJLC@RegisterCommandLine?5Error@ DB 'RegisterCommandLine Er'
 	DB	'ror', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_03MCGAAIEM@?9cs@
+;	COMDAT ??_C@_0BN@KIGJPBEF@?9?9pause?9before?9create?9window@
 CONST	SEGMENT
-??_C@_03MCGAAIEM@?9cs@ DB '-cs', 00H			; `string'
+??_C@_0BN@KIGJPBEF@?9?9pause?9before?9create?9window@ DB '--pause-before-'
+	DB	'create-window', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04JFPGDMCL@?9ncs@
 CONST	SEGMENT
 ??_C@_04JFPGDMCL@?9ncs@ DB '-ncs', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09KMAGPBGM@__DEBUG__@
+;	COMDAT ??_C@_0BE@FPKDPBJI@__COMMAND_LINE__?5?$DN?5@
 CONST	SEGMENT
-??_C@_09KMAGPBGM@__DEBUG__@ DB '__DEBUG__', 00H		; `string'
+??_C@_0BE@FPKDPBJI@__COMMAND_LINE__?5?$DN?5@ DB '__COMMAND_LINE__ = ', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BH@NBEHHPDF@__USE_DYNAMIC_MODULE__@
 CONST	SEGMENT
 ??_C@_0BH@NBEHHPDF@__USE_DYNAMIC_MODULE__@ DB '__USE_DYNAMIC_MODULE__', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04NBFCGMPH@root@
+;	COMDAT ??_C@_03MCGAAIEM@?9cs@
 CONST	SEGMENT
-??_C@_04NBFCGMPH@root@ DB 'root', 00H			; `string'
+??_C@_03MCGAAIEM@?9cs@ DB '-cs', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@EILMOIBE@__builtin__@
 CONST	SEGMENT
 ??_C@_0M@EILMOIBE@__builtin__@ DB '__builtin__', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09BLPJDHGD@pack?1tree@
+;	COMDAT ??_C@_09KMAGPBGM@__DEBUG__@
 CONST	SEGMENT
-??_C@_09BLPJDHGD@pack?1tree@ DB 'pack/tree', 00H	; `string'
+??_C@_09KMAGPBGM@__DEBUG__@ DB '__DEBUG__', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09KOPOJKB@pack?1zone@
 CONST	SEGMENT
 ??_C@_09KOPOJKB@pack?1zone@ DB 'pack/zone', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@GJEJEBHI@pack?1terrainmaps@
+;	COMDAT ??_C@_04NBFCGMPH@root@
 CONST	SEGMENT
-??_C@_0BB@GJEJEBHI@pack?1terrainmaps@ DB 'pack/terrainmaps', 00H ; `string'
+??_C@_04NBFCGMPH@root@ DB 'root', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@ILDNBDOM@pack?1textureset@
 CONST	SEGMENT
 ??_C@_0BA@ILDNBDOM@pack?1textureset@ DB 'pack/textureset', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08KCDGBIAB@pack?1pc2@
+;	COMDAT ??_C@_09BLPJDHGD@pack?1tree@
 CONST	SEGMENT
-??_C@_08KCDGBIAB@pack?1pc2@ DB 'pack/pc2', 00H		; `string'
+??_C@_09BLPJDHGD@pack?1tree@ DB 'pack/tree', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@MAILMID@pack?1sound@
 CONST	SEGMENT
 ??_C@_0L@MAILMID@pack?1sound@ DB 'pack/sound', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@DCKMAEKP@pack?1outdoor@
+;	COMDAT ??_C@_0BB@GJEJEBHI@pack?1terrainmaps@
 CONST	SEGMENT
-??_C@_0N@DCKMAEKP@pack?1outdoor@ DB 'pack/outdoor', 00H	; `string'
+??_C@_0BB@GJEJEBHI@pack?1terrainmaps@ DB 'pack/terrainmaps', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_07JJLOCCKD@pack?1pc@
 CONST	SEGMENT
 ??_C@_07JJLOCCKD@pack?1pc@ DB 'pack/pc', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09GKNHMHOK@pack?1npc2@
+;	COMDAT ??_C@_08KCDGBIAB@pack?1pc2@
 CONST	SEGMENT
-??_C@_09GKNHMHOK@pack?1npc2@ DB 'pack/npc2', 00H	; `string'
+??_C@_08KCDGBIAB@pack?1pc2@ DB 'pack/pc2', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@OOBKPPAB@pack?1others@
 CONST	SEGMENT
 ??_C@_0M@OOBKPPAB@pack?1others@ DB 'pack/others', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@IOLIHCBC@pack?1npc_mount@
+;	COMDAT ??_C@_0N@DCKMAEKP@pack?1outdoor@
 CONST	SEGMENT
-??_C@_0P@IOLIHCBC@pack?1npc_mount@ DB 'pack/npc_mount', 00H ; `string'
+??_C@_0N@DCKMAEKP@pack?1outdoor@ DB 'pack/outdoor', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@DHKLPFLL@pack?1npc_pet@
 CONST	SEGMENT
 ??_C@_0N@DHKLPFLL@pack?1npc_pet@ DB 'pack/npc_pet', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@MNFGPEDN@pack?1monster2@
+;	COMDAT ??_C@_09GKNHMHOK@pack?1npc2@
 CONST	SEGMENT
-??_C@_0O@MNFGPEDN@pack?1monster2@ DB 'pack/monster2', 00H ; `string'
+??_C@_09GKNHMHOK@pack?1npc2@ DB 'pack/npc2', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08KPDAEJJB@pack?1npc@
 CONST	SEGMENT
 ??_C@_08KPDAEJJB@pack?1npc@ DB 'pack/npc', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@EEHBIKCP@pack?1locale@
+;	COMDAT ??_C@_0P@IOLIHCBC@pack?1npc_mount@
 CONST	SEGMENT
-??_C@_0M@EEHBIKCP@pack?1locale@ DB 'pack/locale', 00H	; `string'
+??_C@_0P@IOLIHCBC@pack?1npc_mount@ DB 'pack/npc_mount', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@EJCFPPHF@pack?1monster@
 CONST	SEGMENT
 ??_C@_0N@EJCFPPHF@pack?1monster@ DB 'pack/monster', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09IFEPAILH@pack?1icon@
+;	COMDAT ??_C@_0O@MNFGPEDN@pack?1monster2@
 CONST	SEGMENT
-??_C@_09IFEPAILH@pack?1icon@ DB 'pack/icon', 00H	; `string'
+??_C@_0O@MNFGPEDN@pack?1monster2@ DB 'pack/monster2', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09GODLLBIE@pack?1item@
 CONST	SEGMENT
 ??_C@_09GODLLBIE@pack?1item@ DB 'pack/item', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@OJOBOCDO@pack?1effect@
+;	COMDAT ??_C@_0M@EEHBIKCP@pack?1locale@
 CONST	SEGMENT
-??_C@_0M@OJOBOCDO@pack?1effect@ DB 'pack/effect', 00H	; `string'
+??_C@_0M@EEHBIKCP@pack?1locale@ DB 'pack/locale', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@KHFEEPGE@pack?1guild@
 CONST	SEGMENT
 ??_C@_0L@KHFEEPGE@pack?1guild@ DB 'pack/guild', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04HOGMCHDB@lib?2@
+;	COMDAT ??_C@_09IFEPAILH@pack?1icon@
 CONST	SEGMENT
-??_C@_04HOGMCHDB@lib?2@ DB 'lib\', 00H			; `string'
+??_C@_09IFEPAILH@pack?1icon@ DB 'pack/icon', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08GCAMGOFC@pack?1bgm@
 CONST	SEGMENT
 ??_C@_08GCAMGOFC@pack?1bgm@ DB 'pack/bgm', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@PMKHJGGH@traceback?4pyc@
+;	COMDAT ??_C@_0M@OJOBOCDO@pack?1effect@
 CONST	SEGMENT
-??_C@_0O@PMKHJGGH@traceback?4pyc@ DB 'traceback.pyc', 00H ; `string'
+??_C@_0M@OJOBOCDO@pack?1effect@ DB 'pack/effect', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09EHIBBABK@types?4pyc@
 CONST	SEGMENT
 ??_C@_09EHIBBABK@types?4pyc@ DB 'types.pyc', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08EFIONJOP@stat?4pyc@
+;	COMDAT ??_C@_04HOGMCHDB@lib?2@
 CONST	SEGMENT
-??_C@_08EFIONJOP@stat?4pyc@ DB 'stat.pyc', 00H		; `string'
+??_C@_04HOGMCHDB@lib?2@ DB 'lib\', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@NDKNFNNI@string?4pyc@
 CONST	SEGMENT
 ??_C@_0L@NDKNFNNI@string?4pyc@ DB 'string.pyc', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06JCOFDJKA@os?4pyc@
+;	COMDAT ??_C@_0O@PMKHJGGH@traceback?4pyc@
 CONST	SEGMENT
-??_C@_06JCOFDJKA@os?4pyc@ DB 'os.pyc', 00H		; `string'
+??_C@_0O@PMKHJGGH@traceback?4pyc@ DB 'traceback.pyc', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08FPFMJPEC@site?4pyc@
 CONST	SEGMENT
 ??_C@_08FPFMJPEC@site?4pyc@ DB 'site.pyc', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@COBIIGAD@linecache?4pyc@
+;	COMDAT ??_C@_08EFIONJOP@stat?4pyc@
 CONST	SEGMENT
-??_C@_0O@COBIIGAD@linecache?4pyc@ DB 'linecache.pyc', 00H ; `string'
+??_C@_08EFIONJOP@stat?4pyc@ DB 'stat.pyc', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@HJCEJGHC@ntpath?4pyc@
 CONST	SEGMENT
 ??_C@_0L@HJCEJGHC@ntpath?4pyc@ DB 'ntpath.pyc', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0P@KBODAEKE@__future__?4pyc@
+;	COMDAT ??_C@_06JCOFDJKA@os?4pyc@
 CONST	SEGMENT
-??_C@_0P@KBODAEKE@__future__?4pyc@ DB '__future__.pyc', 00H ; `string'
+??_C@_06JCOFDJKA@os?4pyc@ DB 'os.pyc', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@GCNFBOJN@copy_reg?4pyc@
 CONST	SEGMENT
 ??_C@_0N@GCNFBOJN@copy_reg?4pyc@ DB 'copy_reg.pyc', 00H	; `string'
 CONST	ENDS
+;	COMDAT ??_C@_0O@COBIIGAD@linecache?4pyc@
+CONST	SEGMENT
+??_C@_0O@COBIIGAD@linecache?4pyc@ DB 'linecache.pyc', 00H ; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0N@CMMKLLC@UserDict?4pyc@
 CONST	SEGMENT
 ??_C@_0N@CMMKLLC@UserDict?4pyc@ DB 'UserDict.pyc', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0P@KBODAEKE@__future__?4pyc@
+CONST	SEGMENT
+??_C@_0P@KBODAEKE@__future__?4pyc@ DB '__future__.pyc', 00H ; `string'
 _NvOptimusEnablement DD 01H
 _AmdPowerXpressRequestHighPerformance DD 01H
 ?sc_apszPythonLibraryFilenames@@3PAPBDA DD FLAT:??_C@_0N@CMMKLLC@UserDict?4pyc@ ; sc_apszPythonLibraryFilenames

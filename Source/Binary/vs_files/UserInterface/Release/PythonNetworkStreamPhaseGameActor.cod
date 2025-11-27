@@ -8,28 +8,28 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_07FCJAGJJB@?$CFs?5?9?5?$CFs@		; `string'
-PUBLIC	??_C@_0DN@ILCEHFKM@CPythonNetworkStream?3?3RecvChara@ ; `string'
 PUBLIC	??_C@_0DO@OHBFGBBC@TPacketGCCharacterAdditionalInf@ ; `string'
+PUBLIC	??_C@_07FCJAGJJB@?$CFs?5?9?5?$CFs@		; `string'
 PUBLIC	??_C@_0EC@LELEANAH@CPythonNetworkStream?3?3RecvChara@ ; `string'
-;	COMDAT ??_C@_0EC@LELEANAH@CPythonNetworkStream?3?3RecvChara@
-CONST	SEGMENT
-??_C@_0EC@LELEANAH@CPythonNetworkStream?3?3RecvChara@ DB 'CPythonNetworkS'
-	DB	'tream::RecvCharacterMovePacket - PACKET READ ERROR', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0DO@OHBFGBBC@TPacketGCCharacterAdditionalInf@
-CONST	SEGMENT
-??_C@_0DO@OHBFGBBC@TPacketGCCharacterAdditionalInf@ DB 'TPacketGCCharacte'
-	DB	'rAdditionalInfo name=%s vid=%d race=%d Error', 00H ; `string'
-CONST	ENDS
+PUBLIC	??_C@_0DN@ILCEHFKM@CPythonNetworkStream?3?3RecvChara@ ; `string'
 ;	COMDAT ??_C@_0DN@ILCEHFKM@CPythonNetworkStream?3?3RecvChara@
 CONST	SEGMENT
 ??_C@_0DN@ILCEHFKM@CPythonNetworkStream?3?3RecvChara@ DB 'CPythonNetworkS'
 	DB	'tream::RecvCharacterDeletePacket - Recv Error', 00H ; `string'
 CONST	ENDS
+;	COMDAT ??_C@_0EC@LELEANAH@CPythonNetworkStream?3?3RecvChara@
+CONST	SEGMENT
+??_C@_0EC@LELEANAH@CPythonNetworkStream?3?3RecvChara@ DB 'CPythonNetworkS'
+	DB	'tream::RecvCharacterMovePacket - PACKET READ ERROR', 00H ; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_07FCJAGJJB@?$CFs?5?9?5?$CFs@
 CONST	SEGMENT
 ??_C@_07FCJAGJJB@?$CFs?5?9?5?$CFs@ DB '%s - %s', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0DO@OHBFGBBC@TPacketGCCharacterAdditionalInf@
+CONST	SEGMENT
+??_C@_0DO@OHBFGBBC@TPacketGCCharacterAdditionalInf@ DB 'TPacketGCCharacte'
+	DB	'rAdditionalInfo name=%s vid=%d race=%d Error', 00H ; `string'
 PUBLIC	?__RecvCharacterUpdatePacket@CPythonNetworkStream@@IAEXPAUSNetworkUpdateActorData@@@Z ; CPythonNetworkStream::__RecvCharacterUpdatePacket
 PUBLIC	?__RecvCharacterAppendPacket@CPythonNetworkStream@@IAEXPAUSNetworkActorData@@@Z ; CPythonNetworkStream::__RecvCharacterAppendPacket
 PUBLIC	??1SNetworkUpdateActorData@@QAE@XZ		; SNetworkUpdateActorData::~SNetworkUpdateActorData

@@ -8,32 +8,32 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0L@LNDABNEO@IsFinished@			; `string'
 PUBLIC	??_C@_08CHIOLOMB@IsActive@			; `string'
-PUBLIC	??_C@_0N@OOIBANPL@SetAttribute@			; `string'
 PUBLIC	??_C@_0N@JKDPMBLH@GetAttribute@			; `string'
-PUBLIC	??_C@_0BF@HBBNNDIE@GetAttributeMaxValue@	; `string'
+PUBLIC	??_C@_0L@LNDABNEO@IsFinished@			; `string'
 PUBLIC	??_C@_0BE@GNKJFPMN@GetAttributesForSet@		; `string'
-PUBLIC	??_C@_05FHMJPCKA@Start@				; `string'
+PUBLIC	??_C@_0N@OOIBANPL@SetAttribute@			; `string'
 PUBLIC	??_C@_09CGBENBJB@ClearSlot@			; `string'
-PUBLIC	??_C@_09PMJPAGLJ@switchbot@			; `string'
+PUBLIC	??_C@_0BF@HBBNNDIE@GetAttributeMaxValue@	; `string'
 PUBLIC	??_C@_04MOIHHPNJ@Stop@				; `string'
-PUBLIC	??_C@_0BC@NOLGEMIA@ALTERNATIVE_COUNT@		; `string'
+PUBLIC	??_C@_05FHMJPCKA@Start@				; `string'
 PUBLIC	??_C@_0L@PPBHMKPM@SLOT_COUNT@			; `string'
-PUBLIC	??_R2?$CSingleton@VCPythonSwitchbot@@@@8	; CSingleton<CPythonSwitchbot>::`RTTI Base Class Array'
+PUBLIC	??_C@_09PMJPAGLJ@switchbot@			; `string'
+PUBLIC	??_C@_0BC@NOLGEMIA@ALTERNATIVE_COUNT@		; `string'
 PUBLIC	??_R2CPythonSwitchbot@@8			; CPythonSwitchbot::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@CPythonSwitchbot@@8		; CPythonSwitchbot::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R2?$CSingleton@VCPythonSwitchbot@@@@8	; CSingleton<CPythonSwitchbot>::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonSwitchbot@@@@8 ; CSingleton<CPythonSwitchbot>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R3?$CSingleton@VCPythonSwitchbot@@@@8	; CSingleton<CPythonSwitchbot>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R3CPythonSwitchbot@@8			; CPythonSwitchbot::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R1A@?0A@EA@CPythonSwitchbot@@8		; CPythonSwitchbot::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R0?AV?$CSingleton@VCPythonSwitchbot@@@@@8	; CSingleton<CPythonSwitchbot> `RTTI Type Descriptor'
+PUBLIC	??_R3?$CSingleton@VCPythonSwitchbot@@@@8	; CSingleton<CPythonSwitchbot>::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R0?AVCPythonSwitchbot@@@8			; CPythonSwitchbot `RTTI Type Descriptor'
+PUBLIC	??_R3CPythonSwitchbot@@8			; CPythonSwitchbot::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R4?$CSingleton@VCPythonSwitchbot@@@@6B@	; CSingleton<CPythonSwitchbot>::`RTTI Complete Object Locator'
 PUBLIC	??_R4CPythonSwitchbot@@6B@			; CPythonSwitchbot::`RTTI Complete Object Locator'
 PUBLIC	??_7?$CSingleton@VCPythonSwitchbot@@@@6B@	; CSingleton<CPythonSwitchbot>::`vftable'
 PUBLIC	??_7CPythonSwitchbot@@6B@			; CPythonSwitchbot::`vftable'
-EXTRN	__errno:PROC
 EXTRN	__invalid_parameter_noinfo:PROC
+EXTRN	__errno:PROC
 ;	COMDAT ??_7CPythonSwitchbot@@6B@
 CONST	SEGMENT
 ??_7CPythonSwitchbot@@6B@ DD FLAT:??_R4CPythonSwitchbot@@6B@ ; CPythonSwitchbot::`vftable'
@@ -102,18 +102,6 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$CSingleton@VCPythonSwitchbot@@@@@8
 	DD	FLAT:??_R3?$CSingleton@VCPythonSwitchbot@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonSwitchbot@@@8
-data$rs	SEGMENT
-??_R0?AVCPythonSwitchbot@@@8 DD FLAT:??_7type_info@@6B@	; CPythonSwitchbot `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCPythonSwitchbot@@', 00H
-data$rs	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCPythonSwitchbot@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCPythonSwitchbot@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonSwitchbot> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AV?$CSingleton@VCPythonSwitchbot@@@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R3CPythonSwitchbot@@8
 rdata$r	SEGMENT
 ??_R3CPythonSwitchbot@@8 DD 00H				; CPythonSwitchbot::`RTTI Class Hierarchy Descriptor'
@@ -121,12 +109,34 @@ rdata$r	SEGMENT
 	DD	02H
 	DD	FLAT:??_R2CPythonSwitchbot@@8
 rdata$r	ENDS
+;	COMDAT ??_R0?AVCPythonSwitchbot@@@8
+data$rs	SEGMENT
+??_R0?AVCPythonSwitchbot@@@8 DD FLAT:??_7type_info@@6B@	; CPythonSwitchbot `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCPythonSwitchbot@@', 00H
+data$rs	ENDS
 ;	COMDAT ??_R3?$CSingleton@VCPythonSwitchbot@@@@8
 rdata$r	SEGMENT
 ??_R3?$CSingleton@VCPythonSwitchbot@@@@8 DD 00H		; CSingleton<CPythonSwitchbot>::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	01H
 	DD	FLAT:??_R2?$CSingleton@VCPythonSwitchbot@@@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCPythonSwitchbot@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCPythonSwitchbot@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonSwitchbot> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCPythonSwitchbot@@@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R1A@?0A@EA@CPythonSwitchbot@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@CPythonSwitchbot@@8 DD FLAT:??_R0?AVCPythonSwitchbot@@@8 ; CPythonSwitchbot::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3CPythonSwitchbot@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonSwitchbot@@@@8
 rdata$r	SEGMENT
@@ -138,72 +148,62 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$CSingleton@VCPythonSwitchbot@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@CPythonSwitchbot@@8
+;	COMDAT ??_R2?$CSingleton@VCPythonSwitchbot@@@@8
 rdata$r	SEGMENT
-??_R1A@?0A@EA@CPythonSwitchbot@@8 DD FLAT:??_R0?AVCPythonSwitchbot@@@8 ; CPythonSwitchbot::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	01H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3CPythonSwitchbot@@8
+??_R2?$CSingleton@VCPythonSwitchbot@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonSwitchbot@@@@8 ; CSingleton<CPythonSwitchbot>::`RTTI Base Class Array'
 rdata$r	ENDS
 ;	COMDAT ??_R2CPythonSwitchbot@@8
 rdata$r	SEGMENT
 ??_R2CPythonSwitchbot@@8 DD FLAT:??_R1A@?0A@EA@CPythonSwitchbot@@8 ; CPythonSwitchbot::`RTTI Base Class Array'
 	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonSwitchbot@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R2?$CSingleton@VCPythonSwitchbot@@@@8
-rdata$r	SEGMENT
-??_R2?$CSingleton@VCPythonSwitchbot@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonSwitchbot@@@@8 ; CSingleton<CPythonSwitchbot>::`RTTI Base Class Array'
-rdata$r	ENDS
-;	COMDAT ??_C@_0L@PPBHMKPM@SLOT_COUNT@
-CONST	SEGMENT
-??_C@_0L@PPBHMKPM@SLOT_COUNT@ DB 'SLOT_COUNT', 00H	; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BC@NOLGEMIA@ALTERNATIVE_COUNT@
 CONST	SEGMENT
 ??_C@_0BC@NOLGEMIA@ALTERNATIVE_COUNT@ DB 'ALTERNATIVE_COUNT', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_04MOIHHPNJ@Stop@
-CONST	SEGMENT
-??_C@_04MOIHHPNJ@Stop@ DB 'Stop', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09PMJPAGLJ@switchbot@
 CONST	SEGMENT
 ??_C@_09PMJPAGLJ@switchbot@ DB 'switchbot', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09CGBENBJB@ClearSlot@
+;	COMDAT ??_C@_0L@PPBHMKPM@SLOT_COUNT@
 CONST	SEGMENT
-??_C@_09CGBENBJB@ClearSlot@ DB 'ClearSlot', 00H		; `string'
+??_C@_0L@PPBHMKPM@SLOT_COUNT@ DB 'SLOT_COUNT', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05FHMJPCKA@Start@
 CONST	SEGMENT
 ??_C@_05FHMJPCKA@Start@ DB 'Start', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BE@GNKJFPMN@GetAttributesForSet@
+;	COMDAT ??_C@_04MOIHHPNJ@Stop@
 CONST	SEGMENT
-??_C@_0BE@GNKJFPMN@GetAttributesForSet@ DB 'GetAttributesForSet', 00H ; `string'
+??_C@_04MOIHHPNJ@Stop@ DB 'Stop', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BF@HBBNNDIE@GetAttributeMaxValue@
 CONST	SEGMENT
 ??_C@_0BF@HBBNNDIE@GetAttributeMaxValue@ DB 'GetAttributeMaxValue', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@JKDPMBLH@GetAttribute@
+;	COMDAT ??_C@_09CGBENBJB@ClearSlot@
 CONST	SEGMENT
-??_C@_0N@JKDPMBLH@GetAttribute@ DB 'GetAttribute', 00H	; `string'
+??_C@_09CGBENBJB@ClearSlot@ DB 'ClearSlot', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@OOIBANPL@SetAttribute@
 CONST	SEGMENT
 ??_C@_0N@OOIBANPL@SetAttribute@ DB 'SetAttribute', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08CHIOLOMB@IsActive@
+;	COMDAT ??_C@_0BE@GNKJFPMN@GetAttributesForSet@
 CONST	SEGMENT
-??_C@_08CHIOLOMB@IsActive@ DB 'IsActive', 00H		; `string'
+??_C@_0BE@GNKJFPMN@GetAttributesForSet@ DB 'GetAttributesForSet', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@LNDABNEO@IsFinished@
 CONST	SEGMENT
 ??_C@_0L@LNDABNEO@IsFinished@ DB 'IsFinished', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0N@JKDPMBLH@GetAttribute@
+CONST	SEGMENT
+??_C@_0N@JKDPMBLH@GetAttribute@ DB 'GetAttribute', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_08CHIOLOMB@IsActive@
+CONST	SEGMENT
+??_C@_08CHIOLOMB@IsActive@ DB 'IsActive', 00H		; `string'
 PUBLIC	??$move@AAPAU?$_Tree_node@U?$pair@$$CBEJ@std@@PAX@std@@@std@@YA$$QAPAU?$_Tree_node@U?$pair@$$CBEJ@std@@PAX@0@AAPAU10@@Z ; std::move<std::_Tree_node<std::pair<unsigned char const ,long>,void *> * &>
 PUBLIC	??$swap@PAU?$_Tree_node@U?$pair@$$CBEJ@std@@PAX@std@@$0A@@std@@YAXAAPAU?$_Tree_node@U?$pair@$$CBEJ@std@@PAX@0@0@Z ; std::swap<std::_Tree_node<std::pair<unsigned char const ,long>,void *> *,0>
 PUBLIC	??$construct_at@U?$pair@$$CBEJ@std@@AAU12@@std@@YAPAU?$pair@$$CBEJ@0@QAU10@AAU10@@Z ; std::construct_at<std::pair<unsigned char const ,long>,std::pair<unsigned char const ,long> &>

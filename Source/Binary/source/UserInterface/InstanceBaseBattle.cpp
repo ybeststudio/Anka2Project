@@ -559,6 +559,33 @@ BOOL CInstanceBase::CheckAdvancing()
 		}
 	}
 
+#ifdef ENABLE_NEW_STOP_ON_BLOCK
+	CPythonBackground& rkBG=CPythonBackground::Instance();
+	const D3DXVECTOR3 & rv3Position = m_GraphicThingInstance.GetPosition();
+	const D3DXVECTOR3 & rv3MoveDirection = m_GraphicThingInstance.GetMovementVectorRef();
+
+	int iStep = int(D3DXVec3Length(&rv3MoveDirection) / 10.0f);
+	D3DXVECTOR3 v3CheckStep = rv3MoveDirection / float(iStep);
+	D3DXVECTOR3 v3CheckPosition = rv3Position;
+	for (int j = 0; j < iStep; ++j)
+	{
+		v3CheckPosition += v3CheckStep;
+
+		if (rkBG.isAttrOn(v3CheckPosition.x, -v3CheckPosition.y, CTerrainImpl::ATTRIBUTE_BLOCK))
+		{
+			NEW_Stop();
+			BlockMovement();
+		}
+	}
+
+	D3DXVECTOR3 v3NextPosition = rv3Position + rv3MoveDirection;
+	if (rkBG.isAttrOn(v3NextPosition.x, -v3NextPosition.y, CTerrainImpl::ATTRIBUTE_BLOCK))
+	{
+		NEW_Stop();
+		BlockMovement();
+		return TRUE;
+	}
+#else
 	CPythonBackground& rkBG=CPythonBackground::Instance();
 	const D3DXVECTOR3 & rv3Position = m_GraphicThingInstance.GetPosition();
 	const D3DXVECTOR3 & rv3MoveDirection = m_GraphicThingInstance.GetMovementVectorRef();
@@ -582,6 +609,7 @@ BOOL CInstanceBase::CheckAdvancing()
 		BlockMovement();
 		return TRUE;
 	}
+#endif
 
 	return FALSE;
 }
