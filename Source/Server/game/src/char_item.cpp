@@ -8483,8 +8483,17 @@ void CHARACTER::AutoGiveItem(LPITEM item, bool longOwnerShip)
 			if (!item2)
 				continue;
 
+			// Beceri kitaplarý için socket kontrolü de yapýlmalý (socket[0]'daki skill vnum'ý)
+			// Farklý skill vnum'larýna sahip beceri kitaplarý birleþtirilmemeli
 			if (item2->GetVnum() == item->GetVnum())
 			{
+				// Beceri kitaplarý için socket[0] kontrolü (skill vnum)
+				if (item->IsSkillBook())
+				{
+					if (item2->GetSocket(0) != item->GetSocket(0))
+						continue;
+				}
+
 #ifdef ENABLE_STACK_LIMIT
 				WORD bCount2 = MIN(ITEM_MAX_COUNT - item2->GetCount(), bCount);
 #else

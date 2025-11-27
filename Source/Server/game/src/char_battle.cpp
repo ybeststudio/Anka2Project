@@ -1012,7 +1012,9 @@ void CHARACTER::Reward(bool bItemDrop)
 						continue;
 					}
 #endif
+
 					item->AddToGround(GetMapIndex(), pos);
+
 					++it;
 
 					if (it == v.end())
@@ -1051,10 +1053,10 @@ void CHARACTER::Reward(bool bItemDrop)
 
 struct TItemDropPenalty
 {
-	int iInventoryPct;
-	int iInventoryQty;
-	int iEquipmentPct;
-	int iEquipmentQty;
+	int iInventoryPct;		// Range: 1 ~ 1000
+	int iInventoryQty;		// Range: --
+	int iEquipmentPct;		// Range: 1 ~ 100
+	int iEquipmentQty;		// Range: --
 };
 
 TItemDropPenalty aItemDropPenalty_kor[9] =
@@ -1128,7 +1130,7 @@ void CHARACTER::ItemDropPenalty(LPCHARACTER pkKiller)
 		bDropAntiDropUniqueItem = true;
 	}
 
-	if (bDropInventory)
+	if (bDropInventory) // Drop Inventory
 	{
 		std::vector<BYTE> vec_bSlots;
 
@@ -1162,7 +1164,7 @@ void CHARACTER::ItemDropPenalty(LPCHARACTER pkKiller)
 			isDropAllEquipments = true;
 	}
 
-	if (bDropEquipment)
+	if (bDropEquipment) // Drop Equipment
 	{
 		std::vector<BYTE> vec_bSlots;
 
@@ -2568,11 +2570,11 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type)
 	// ------------------------
 	// German premium mode
 	// -----------------------
-	if (pAttacker && pAttacker->IsPC()
+	if (pAttacker && (pAttacker->IsPC()
 #ifdef ENABLE_BOT_PLAYER
 		|| pAttacker->IsBotCharacter()
 #endif
-		)
+		))
 	{
 		int iDmgPct = CHARACTER_MANAGER::instance().GetUserDamageRate(pAttacker);
 		dam = dam * iDmgPct / 100;

@@ -94,6 +94,66 @@
 
 ---
 
+### 5. Metin Keserken Core Dump Hatasý Düzeltme (Null Pointer)
+
+**Sorun:** 
+- Metin keserken (poison damage) core dump oluþuyordu
+- `pAttacker` null olduðunda `IsBotCharacter()` çaðrýlýyordu ve segfault oluþuyordu
+- Operatör önceliði nedeniyle `pAttacker && pAttacker->IsPC() || pAttacker->IsBotCharacter()` ifadesi yanlýþ deðerlendiriliyordu
+
+**Hata Mesajý:**
+```
+Address not mapped to object.
+#0  CHARACTER::IsBotCharacter (this=<optimized out>) at ./char.h:2392
+#1  CHARACTER::Damage (this=0x304ac280, pAttacker=0x0, dam=855, type=DAMAGE_TYPE_POISON)
+```
+
+**Yapýlan Deðiþiklik:**
+- `Source/Server/game/src/char_battle.cpp` (satýr 2571-2575):
+  - Operatör önceliði düzeltildi
+  - `pAttacker && pAttacker->IsPC() || pAttacker->IsBotCharacter()` ? `pAttacker && (pAttacker->IsPC() || pAttacker->IsBotCharacter())`
+  - Artýk `pAttacker` null kontrolü hem `IsPC()` hem de `IsBotCharacter()` için geçerli
+  - Parantezler eklendi, null pointer dereference engellendi
+
+**Etkilenen Dosyalar:**
+- `Source/Server/game/src/char_battle.cpp` (satýr 2571-2579)
+
+**Sonuç:** ? Metin keserken (poison damage) core dump oluþmuyor. Null pointer kontrolü düzgün çalýþýyor.
+
+---
+
+### 6. Otomatik Toplama Sisteminde Beceri Kitaplarý Birleþtirme Sorunu Düzeltme
+
+**Sorun:** 
+- Otomatik toplama açýkken metinlerden düþen farklý beceri kitaplarý (hamle beceri kitabý, hava kýlýcý kitabý vb.) birleþtiriliyordu
+- 10 farklý beceri kitabý düþerken, otomatik toplama açýk olduðunda hepsi ayný tip (ayný skill vnum'ýna sahip) oluyordu
+- Otomatik toplama kapalý olduðunda beceri kitaplarý doðru þekilde düþüyordu
+- `AutoGiveItem` fonksiyonunda beceri kitaplarý için sadece vnum kontrolü yapýlýyordu, socket kontrolü yapýlmýyordu
+- Farklý skill vnum'larýna sahip beceri kitaplarý birleþtiriliyordu
+
+**Yapýlan Deðiþiklikler:**
+
+#### 6.1 AutoGiveItem Socket Kontrolü
+- `Source/Server/game/src/char_item.cpp` (satýr 8486-8490):
+  - Beceri kitaplarý için socket kontrolü eklendi
+  - `item2->GetSocket(0) != item->GetSocket(0)` kontrolü eklendi
+  - Artýk sadece ayný skill vnum'ýna sahip beceri kitaplarý birleþtiriliyor
+  - Farklý skill vnum'larýna sahip beceri kitaplarý ayrý item'lar olarak kalýyor
+
+#### 6.2 Otomatik Toplama Mesaj Gönderimi
+- `Source/Server/game/src/char_battle.cpp` (satýr 884-905 ve 1007-1028):
+  - Beceri kitaplarý için `SendPickupItemPacket` yerine `LocaleChatPacket` kullanýlýyor
+  - `item->IsSkillBook()` kontrolü eklendi
+  - Beceri kitaplarý için item ismini direkt gönderiyor (socket'lerdeki skill vnum'larýna göre doðru isim oluþturuluyor)
+
+**Etkilenen Dosyalar:**
+- `Source/Server/game/src/char_item.cpp` (AutoGiveItem fonksiyonu - socket kontrolü)
+- `Source/Server/game/src/char_battle.cpp` (otomatik toplama mesaj gönderimi)
+
+**Sonuç:** ? Otomatik toplama açýkken metinlerden düþen farklý beceri kitaplarý artýk birleþtirilmiyor. Her beceri kitabý kendi skill vnum'ýna göre ayrý item olarak kalýyor ve doðru isimle gösteriliyor.
+
+---
+
 ## Özet
 
 | # | Deðiþiklik | Dosya Sayýsý | Durum |
@@ -102,8 +162,10 @@
 | 2 | Zindan Haritalarýnda Kat Atlatma Nesnelerinin + Basma Hatasý Düzeltme | 1 | ? Tamamlandý |
 | 3 | Dil Deðiþtirme Esnasýnda HORSE_LEVEL4 Hatasý Düzeltme | 1 | ? Tamamlandý |
 | 4 | Item Sil/Sat/Düþür ve Battle Pass Pencerelerinde Tooltip Kalma Sorunu Düzeltme | 2 | ? Tamamlandý |
+| 5 | Metin Keserken Core Dump Hatasý Düzeltme (Null Pointer) | 1 | ? Tamamlandý |
+| 6 | Otomatik Toplama Sisteminde Beceri Kitaplarý Birleþtirme Sorunu Düzeltme | 2 | ? Tamamlandý |
 
-**Toplam:** 5 dosya deðiþtirildi (bug fix'ler ile)
+**Toplam:** 8 dosya deðiþtirildi (bug fix'ler ile)
 
 ---
 
@@ -117,3 +179,5 @@
 - Dil deðiþtirme esnasýnda `HORSE_LEVEL4` hatasý oluþmuyor
 - Item sil/sat/düþür diyalog penceresi ESC ile kapatýldýðýnda tooltip'ler temizleniyor
 - Battle Pass penceresi ESC ile kapatýldýðýnda tüm tooltip'ler (merkezi sistem, mission item'larý dahil) temizleniyor
+- Metin keserken (poison damage) core dump oluþmuyor, null pointer kontrolü düzgün çalýþýyor
+- Otomatik toplama açýkken metinlerden düþen farklý beceri kitaplarý artýk birleþtirilmiyor (her beceri kitabý kendi skill vnum'ýna göre ayrý item olarak kalýyor ve doðru isimle gösteriliyor)
