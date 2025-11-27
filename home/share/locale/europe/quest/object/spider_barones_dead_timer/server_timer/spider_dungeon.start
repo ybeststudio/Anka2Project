@@ -1,0 +1,17 @@
+local arg = get_server_timer_arg ( ) 
+if d . select ( arg ) then 
+if d . getf ( "DungeonBlock" ) == 1 then 
+GetMissionInfo ( 1 , 60 ) 
+d . global_warp_all_to_base ( 68900 , 611100 , arg , 60 ) 
+d . notice ( arg , 673 , "" , false ) 
+d . setqf2 ( "spider_dungeon" , "cooldown" , get_global_time ( ) + 60 * 60 ) 
+d . track_update ( 2092 ) 
+d . setf ( "level" , 0 ) 
+d . setf ( "king_vid" , 0 ) 
+d . setf ( "remain_egg" , 0 ) 
+d . setf ( "real_time" , 0 ) 
+d . setf ( "DungeonBlock" , 0 ) 
+clear_server_timer ( "spider_full_timer" , arg ) 
+clear_server_timer ( "barones_1" , arg ) 
+end 
+end 

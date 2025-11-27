@@ -1,0 +1,163 @@
+quest diary_pages begin
+	state start begin
+	end
+	
+	state run begin
+		when letter with pc.level >= 66 begin
+		set_state(info)
+		end
+	end
+	
+	state info begin
+		when letter begin
+		local v = find_npc_by_vnum(20011)
+			if v != 0 then
+			target.vid("__TARGET1__", v, "Uriel")
+			end
+		send_letter("Günlük")
+		end
+		
+		when 20011.chat."Günlük" begin
+		target.delete("__TARGET1__")
+		say_title("Uriel:")
+		say("")
+		say("Ah seni böyle saðlýklý durumda görmek ne güzel.")
+		say("Yeni maceraya hazýr mýsýn? Karanlýk millet ve")
+		say("yedi Ejderha Rahibesiyle ilgili hala önemli")
+		say("bilgilerimiz eksik. Son Ejderha Rahibesi kara")
+		say("büyüyü yapmadan önce günlüðü Þeytan Kulesi'ne")
+		say("gizlemiþ olmalý. Yola koyul ve bana o günlüðü ")
+		say("getir. Þeytan Kralý onu elinde tutuyor olabilir.")
+		say("")
+		end
+		
+		when button or info begin
+		say_title("Günlük")
+		say("")
+		say("Uriel'in hayatta kalan son Ejderha Rahibesiyle")
+		say("ilgili haberleri var. Günlüðü Þeytan Kulesi'nde")
+		say("olmalý. Konuyla ilgili ayrýntýlý bilgi almak için")
+		say("Uriel'e git.")
+		say("")
+		end
+	end
+	
+	state kestimla begin
+		when letter with pc.get_level() >= 66 begin
+		local v = find_npc_by_vnum(20011)
+			if v != 0 then
+			target.vid("__TARGET2__", v, "Uriel")
+			end
+		send_letter("Günlük")
+		end
+		
+		when button or info begin
+		say_title("Günlük")
+		say("")
+		say("Þeytan Kralý'ný alt ettin ve Ejderha")
+		say("Rahibesi'nin günlüðünü ele geçirdin. Bunu Bilge")
+		say("Uriel'e götür. O inceler.")
+		end
+		
+		when 20011.chat."Günlük" begin
+		target.delete("__TARGET2__")
+		say_title("Uriel:")
+		say("")
+		say("Buldun! Son Ejderha Rahibesi'nin günlüðü!")
+		say("Ellerim heyecandan tir tir titriyor. Ýçindekileri")
+		say("incelemek için biraz zamana ihtiyacým olacak. Sen")
+		say("bu arada dinlen. Daha çok þey öðrendiðim zaman")
+		say("seni çaðýrýrým.")
+		set_state(bulmaca)
+		end
+	end
+	
+	state bulmaca begin
+		when letter with pc.get_level() >= 66 begin
+		local v = find_npc_by_vnum(20011)
+			if v != 0 then
+			target.vid("__TARGET3__", v, "Uriel")
+			end
+		send_letter("Bulmacanýn Çözümü ")
+		end
+		
+		when button or info begin
+		say_title("Bulmacanýn Çözümü ")
+		say("")
+		say("Uriel seni arýyor. Günlüðü okudu.")
+		say("")
+		end
+		
+		when 20011.chat."Bulmacanýn Çözümü " begin
+		target.delete("__TARGET3__")
+		say_title("Uriel:")
+		say("")
+		say("Ah çok güzel! Ýþte buradasýn. Son Ejderha")
+		say("Rahibesinin yazdýklarý gerçekten hayret verici.")
+		say("Ýyi dinle:")
+		say("")
+		wait()
+		say_title("Uriel:")
+		say("")
+		say("Kaderim mühürlü! Kendimi bu kulenin en üst katýna")
+		say("kilitledim. Lee Seops'un  adamlarý hapishanemin")
+		say("önündeki son kapýyý da kýrmak üzere. Çýkýþým")
+		say("yok... Yenildim...")
+		say("Hayýr, böyle sona eremez! Her þey boþa gidemez!")
+		say("Kötülerin eski gücü kara büyüyü tek baþýma")
+		say("yenmek ve karanlýk güçleri yanýma çaðýrmak")
+		say("zorundayým.")
+		say("Bu ölüm fermaným demek. Ama kendimle birlikte")
+		say("düþmanlarýmý da yok oluþa göndereceðim - yaptýðým")
+		say("en son þey bu olsa da!")
+		say("")
+		wait()
+		say_title("Uriel:")
+		say("")
+		say("Ýnanýlmaz! Bunun ne anlama geldiðini anlýyor")
+		say("musun? Þeytan Kulesi'nde aslýnda hiç þeytan ve")
+		say("hayaletler yoktu. Bu Ejderha Rahibesinin mirasý.")
+		say("Lee Seops'un süvari sýnýfýný ümitsiz son bir")
+		say("denemeyle yok etme çabasý þeytanlara bu karanlýk")
+		say("ritüel nedeniyle dünyamýzýn kapýsýný açtý.")
+		say("Sonunda bunu hayatýyla ödedi.")
+		say("")
+		wait()
+		say_title("Uriel:")
+		say("")
+		say("Demekki Lusifer, þeytan heyetiyle birlikte bu")
+		say("þekilde dünyamýza geldi. Yine de karanlýk")
+		say("milletin ve Ejderha Rahibeleri'nin büyük görevi")
+		say("baþarýsýz oldu: Sung Mahi'nin büyüsü ")
+		say("gerçekleþmedi, Lee Seop ise güç kazandý ve bir")
+		say("dünya krallýðý daha kurdu.")
+		say("Yardýmýn sayesinde hayatýmýn büyük gizemini")
+		say("çözdüm!")
+		say("")
+		wait()
+		say_title("Uriel:")
+		say("")
+		say("Ödül olarak sana kutsanmýþ parþömen vermek")
+		say("istiyorum. Lütfen hediyemi kabul et, çok rica")
+		say("ediyorum.")
+		say("")
+		wait()
+		say_reward("5800000 deneyim puaný kazandýn.")
+		say_reward("Kutsama Kaðýdý 3 adet kazandýn.")
+		say_reward("Akrep Kuyruðu kazandýn.")
+		pc.give_item2("25040",1)
+		pc.give_item2("25040",1)
+		pc.give_item2("25040",1)
+		pc.give_item2("30046",1)
+		pc.give_exp2("5800000")
+		clear_letter()
+		set_quest_state("anonymous_letter", "run")
+		set_state(complete)
+		return
+		end
+	end
+	
+	state complete begin
+	end
+end
+		

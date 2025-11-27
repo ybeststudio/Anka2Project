@@ -1,0 +1,6 @@
+say_title ( "Kikloplar" ) 
+say ( "Öldürdüðün her 100 kiklop için Konfüçyüs" ) 
+say ( "sana 1 bilet verecek. O biletle Kýrmýzý " ) 
+say ( "Ejderha Kalesi'ne gidip kaderinle" ) 
+say ( "yüzleþebileceksin." ) 
+q . set_counter ( "Öldürülen Kiklop:" , pc . getqf ( "kiklop_count" ) ) 

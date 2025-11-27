@@ -1,0 +1,323 @@
+#Red tau
+section
+npc	20022
+item	50901	10
+item	50814	20
+reward	50821	10
+gold	2500000
+percent	100
+category	OUTROS
+end
+
+#Orange tau
+section
+npc	20022
+item	50901	10
+item	50813	20
+reward	50822	10
+gold	2500000
+percent	100
+category	OUTROS
+end
+
+#Yellow tau
+section
+npc	20022
+item	50901	10
+item	50820	20
+reward	50823	10
+gold	2500000
+percent	100
+category	OUTROS
+end
+
+#Green tau
+section
+npc	20022
+item	50901	10
+item	50819	20
+reward	50824	10
+gold	2500000
+percent	100
+category	OUTROS
+end
+
+#Blue tau
+section
+npc	20022
+item	50901	10
+item	50817	20
+reward	50825	10
+gold	2500000
+percent	100
+category	OUTROS
+end
+
+#White tau
+section
+npc	20022
+item	50901	10
+item	50818	20
+reward	50826	10
+gold	2500000
+percent	100
+category	OUTROS
+end
+
+section
+npc	20016
+item	149	1
+item	30500	10
+item	30505	10
+reward	460	1
+gold	100000
+percent	50
+allowCopy	1
+category	WEAPON
+end
+
+section
+npc	20016
+item	159	1
+item	30503	10
+item	30502	10
+reward	470	1
+gold	100000
+percent	50
+category	WEAPON
+end
+
+section
+npc	20016
+item	1109	1
+item	30506	10
+item	30507	10
+reward	1340	1
+gold	100000
+percent	50
+category	WEAPON
+end
+
+section
+npc	20016
+item	2149	1
+item	30501	10
+item	30506	10
+reward	2370	1
+gold	100000
+percent	50
+category	WEAPON
+end
+
+section
+npc	20016
+item	3149	1
+item	30504	10
+item	30508	10
+reward	3190	1
+gold	100000
+percent	50
+category	WEAPON
+end
+
+section
+npc	20016
+item	5109	1
+item	30507	10
+item	30503	10
+reward	5340	1
+gold	100000
+percent	50
+category	WEAPON
+end
+
+section
+npc	20016
+item	7149	1
+item	30508	10
+item	30504	10
+reward	7370	1
+gold	100000
+percent	50
+category	WEAPON
+end
+
+section
+npc	20016
+item	11299	1
+item	30509	10
+item	30516	10
+item	30514	10
+reward	20000	1
+gold	100000
+percent	50
+category	ARMOR
+end
+
+section
+npc	20016
+item	11499	1
+item	30512	10
+item	30513	10
+item	30517	10
+reward	20250	1
+gold	100000
+percent	50
+category	ARMOR
+end
+
+section
+npc	20016
+item	11699	1
+item	30515	10
+item	30510	10
+item	30511	10
+reward	20500	1
+gold	100000
+percent	50
+category	ARMOR
+end
+
+section
+npc	20016
+item	11899	1
+item	30509	10
+item	30517	10
+item	30510	10
+reward	20750	1
+gold	100000
+percent	50
+category	ARMOR
+end
+
+section
+npc	20016
+item	50635	3
+item	30518	10
+item	30523	10
+reward	14500	1
+gold	100000
+percent	30
+category	ETC
+end
+
+section
+npc	20016
+item	50635	3
+item	30519	10
+item	30520	10
+reward	16500	1
+gold	100000
+percent	30
+category	ETC
+end
+
+section
+npc	20016
+item	50635	3
+item	30520	10
+item	30521	10
+reward	17500	1
+gold	100000
+percent	30
+category	ETC
+end
+
+section
+npc	20016
+item	50636	3
+item	30518	10
+item	30522	10
+reward	14520	1
+gold	100000
+percent	30
+category	ETC
+end
+
+section
+npc	20016
+item	50636	3
+item	30519	10
+item	30521	10
+reward	16520	1
+gold	100000
+percent	30
+category	ETC
+end
+
+section
+npc	20016
+item	50636	3
+item	30520	10
+item	30523	10
+reward	17520	1
+gold	100000
+percent	30
+category	ETC
+end
+
+section
+npc	20016
+item	50637	3
+item	30518	10
+item	30521	10
+reward	14540	1
+gold	100000
+percent	30
+category	ETC
+end
+
+section
+npc	20016
+item	50637	3
+item	30519	10
+item	30523	10
+reward	16540	1
+gold	100000
+percent	30
+category	ETC
+end
+
+section
+npc	20016
+item	50637	3
+item	30520	10
+item	30522	10
+reward	17540	1
+gold	100000
+percent	30
+category	ETC
+end
+
+section
+npc	20016
+item	50638	3
+item	30518	10
+item	30519	10
+reward	14560	1
+gold	100000
+percent	30
+category	ETC
+end
+
+section
+npc	20016
+item	50638	3
+item	30519	10
+item	30522	10
+reward	16560	1
+gold	100000
+percent	30
+category	ETC
+end
+
+section
+npc	20016
+item	50638	3
+item	30520	10
+item	30518	10
+reward	17560	1
+gold	100000
+percent	30
+category	ETC
+end

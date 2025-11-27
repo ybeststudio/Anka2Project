@@ -1,0 +1,8 @@
+#!/usr/local/bin/python
+import os
+os.system('rm -rf object')
+for line in file('quest_list'):
+	if os.system('./qc ' + line):
+		print 'Error occured on compile -> ' + line
+		import sys
+		sys.exit(-1)

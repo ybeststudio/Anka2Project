@@ -1,0 +1,17 @@
+say_title ( gameforge . reset_scroll . _10_sayTitle ) 
+say ( gameforge . reset_scroll . _20_say ) 
+local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+if 2 == s then 
+return 
+end 
+say_title ( gameforge . reset_scroll . _30_sayTitle ) 
+say ( gameforge . reset_scroll . _40_say ) 
+local c = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+if 2 == c then 
+return 
+end 
+char_log ( 0 , "RESET_ALL" , "USE_ITEM(71002 or 76001)" ) 
+item . remove ( ) 
+char_log ( 0 , "RESET_ALL" , "RESET_STAT_POINTS" ) 
+pc . reset_point ( ) 
+char_log ( 0 , "RESET_ALL" , "RESET_END" ) 

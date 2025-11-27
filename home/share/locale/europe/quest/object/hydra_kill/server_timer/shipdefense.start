@@ -1,0 +1,7 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+d . clear_regen ( ) 
+d . new_kill_all ( ) 
+d . setf ( "rudder" , 1 ) 
+d . regen_file ( "data/dungeon/hydra/wall.txt" ) 
+d . regen_file ( "data/dungeon/hydra/dumen.txt" ) 
+end 

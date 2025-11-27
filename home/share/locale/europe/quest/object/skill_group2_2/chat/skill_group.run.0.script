@@ -1,0 +1,5 @@
+target . delete ( "teacher2" ) 
+if skill_group . join ( 0 , 2 , "Zihinsel Savas Ögretmeni" , "Zihinsel savaþ eðitimi sana düþmanlarýna nasýl[ENTER]güçlü chi-saldýrýlarý yapabileceðini ve kendini[ENTER]düþman saldýrýlarýndan koruyabileceðini öðretir.[ENTER]Gereksinim: Seviye 5 ve üstü bir savaþçý olmak." ) then 
+say_title ( "-- " .. mob_name ( 20301 ) .. " --" ) 
+skill_group . chat_end ( ) 
+end 

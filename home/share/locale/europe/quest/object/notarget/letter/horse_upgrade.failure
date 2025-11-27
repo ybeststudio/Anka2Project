@@ -1,0 +1,4 @@
+setskin ( NOWINDOW ) 
+makequestbutton ( "Süre bitti!" ) 
+q . set_title ( "Süre bitti!" ) 
+q . start ( ) 

@@ -1,0 +1,48 @@
+pc . give_item2 ( 52034 , 1 ) 
+pc . give_item2 ( 53007 , 1 ) 
+pc . give_item2 ( 39120 , 1 ) 
+pc . give_item2 ( 72726 , 1 ) 
+pc . give_item2 ( 72730 , 1 ) 
+pc . give_item2 ( 70038 , 1 ) 
+pc . give_item2 ( 27102 , 50 ) 
+pc . give_item2 ( 27105 , 50 ) 
+pc . give_item2 ( 71027 , 30 ) 
+pc . give_item2 ( 71028 , 30 ) 
+pc . give_item2 ( 71029 , 30 ) 
+pc . give_item2 ( 71030 , 30 ) 
+pc . give_item2 ( 71044 , 30 ) 
+pc . give_item2 ( 71045 , 30 ) 
+if pc . get_sex ( ) == 0 then 
+pc . give_item2 ( 41003 , 1 ) 
+pc . give_item2 ( 45005 , 1 ) 
+elseif pc . get_sex ( ) == 1 then 
+pc . give_item2 ( 41004 , 1 ) 
+pc . give_item2 ( 45006 , 1 ) 
+end 
+if pc . get_job ( ) == 0 then 
+pc . give_item2 ( 19 , 1 ) 
+pc . give_item2 ( 3009 , 1 ) 
+pc . make_item0 ( { 11209 , 1 } , { 28442 } , { 1 , 2000 , 9 , 20 , 53 , 50 , 23 , 10 } , 0 ) 
+pc . make_item0 ( { 12209 , 1 } , { } , { 18 , 20 , 19 , 20 , 20 , 20 , 10 , 30 , 12 , 8 } , 0 ) 
+elseif pc . get_job ( ) == 1 then 
+pc . give_item2 ( 1009 , 1 ) 
+pc . give_item2 ( 2009 , 1 ) 
+pc . give_item2 ( 8009 , 1 ) 
+pc . make_item0 ( { 12349 , 1 } , { } , { 18 , 20 , 19 , 20 , 20 , 20 , 10 , 30 , 12 , 8 } , 0 ) 
+pc . make_item0 ( { 11409 , 1 } , { 28442 } , { 1 , 2000 , 9 , 20 , 53 , 50 , 23 , 10 } , 0 ) 
+elseif pc . get_job ( ) == 2 then 
+pc . give_item2 ( 19 , 1 ) 
+pc . make_item0 ( { 11609 , 1 } , { 28442 } , { 1 , 2000 , 9 , 20 , 53 , 50 , 23 , 10 } , 0 ) 
+pc . make_item0 ( { 12489 , 1 } , { } , { 18 , 20 , 19 , 20 , 20 , 20 , 10 , 30 , 12 , 8 } , 0 ) 
+elseif pc . get_job ( ) == 3 then 
+pc . give_item2 ( 7009 , 1 ) 
+pc . make_item0 ( { 11809 , 1 } , { 28442 } , { 1 , 2000 , 9 , 20 , 53 , 50 , 23 , 10 } , 0 ) 
+pc . make_item0 ( { 12629 , 1 } , { } , { 18 , 20 , 19 , 20 , 20 , 20 , 10 , 30 , 12 , 8 } , 0 ) 
+end 
+pc . make_item0 ( { 13009 , 1 } , { } , { 5 , 12 , 43 , 20 , 18 , 20 , 19 , 20 , 48 , 1 } , 0 ) 
+pc . make_item0 ( { 14009 , 1 } , { } , { 1 , 2000 , 16 , 10 , 18 , 20 , 19 , 20 , 21 , 20 } , 0 ) 
+pc . make_item0 ( { 16009 , 1 } , { } , { 1 , 2000 , 43 , 20 , 15 , 10 , 16 , 10 , 10 , 30 } , 0 ) 
+pc . make_item0 ( { 15009 , 1 } , { } , { 1 , 2000 , 15 , 10 , 43 , 20 , 13 , 8 , 7 , 8 } , 0 ) 
+pc . make_item0 ( { 17009 , 1 } , { } , { 8 , 20 , 41 , 8 , 18 , 20 , 19 , 20 , 21 , 20 } , 0 ) 
+notice_all ( 613 , pc . get_name ( ) ) 
+set_state ( "__COMPLETE__" ) 

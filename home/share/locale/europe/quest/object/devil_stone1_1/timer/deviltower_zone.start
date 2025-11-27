@@ -1,0 +1,4 @@
+if pc . get_map_index ( ) == 66 then d . new_jump_all ( 66 , special . devil_tower [ 1 ] [ 1 ] , special . devil_tower [ 1 ] [ 2 ] ) 
+d . setf ( "level" , 2 ) 
+d . setf ( "DungeonBlock" , 1 ) 
+ return end 

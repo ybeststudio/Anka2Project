@@ -1,0 +1,12 @@
+ScriptType	MapSetting
+
+CellScale	200
+HeightScale	0.500000
+
+ViewRadius	256
+
+MapSize	2	2
+BasePosition	9183100	9217300
+TextureSet	textureset\metin2_map_oxevent.txt
+Environment	a1.msenv
+

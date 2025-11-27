@@ -1,0 +1,157 @@
+ Group BattlePass
+{
+	#--#	BattlePassName	BattlePassID	StartTime	EndTime
+	1	premium_january_2023_week_1	1	1763158980	1863158980
+}
+
+Group premium_january_2023_week_1
+{
+	Group Reward
+	{
+		#--#	ItemVnum	ItemCount
+		1	71027	10
+		2	71028	10
+		3	71029	10
+		4	71030	10
+	}
+	Group Mission_1
+	{
+		#--#	InfoDesc	InfoName
+		1	type	KILL_BOSS
+		2	mob_vnum	0
+		3	value	25
+		#--#	Rewards
+		4	39133	1
+		5	80013	3
+	}
+	Group Mission_2
+	{
+		#--#	InfoDesc	InfoName
+		1	type	KILL_MONSTER
+		2	mob_vnum	0
+		3	value	50000
+		#--#	Rewards
+		4	39123	1
+		5	86035	2
+	}
+	Group Mission_3
+	{
+		#--#	InfoDesc	InfoName
+		1	type	DAMAGE_MONSTER
+		2	mob_vnum	0
+		3	value	2500000
+		#--#	Rewards
+		4	71084	2000
+		5	71085	750
+	}
+	Group Mission_4
+	{
+		#--#	InfoDesc	InfoName
+		1	type	KILL_PLAYER
+		2	min_level	0
+		3	value	100
+		#--#	Rewards
+		4	50011	1200
+	}
+	Group Mission_5
+	{
+		#--#	InfoDesc	InfoName
+		1	type	KILL_STONE
+		2	mob_vnum	0
+		3	value	1000
+		#--#	Rewards
+		4	39123	1
+		5	85001	2
+	}
+	Group Mission_6
+	{
+		#--#	InfoDesc	InfoName
+		1	type	DAMAGE_PLAYER
+		2	min_level	0
+		3	value	10000000
+		#--#	Rewards
+		4	50037	600
+	}
+	Group Mission_7
+	{
+		#--#	InfoDesc	InfoName
+		1	type	BP_ITEM_USE
+		2	item_vnum	50082
+		3	count	1
+		#--#	Rewards
+		4	30319	5
+	}
+	Group Mission_8
+	{
+		#--#	InfoDesc	InfoName
+		1	type	BP_ITEM_SELL
+		2	item_vnum	0
+		3	count	3
+		#--#	Rewards
+		4	25041	75
+	}
+	Group Mission_9
+	{
+		#--#	InfoDesc	InfoName
+		1	type	BP_ITEM_REFINE
+		2	item_vnum	0
+		3	count	1
+		#--#	Rewards
+		4	70024	75
+	}
+	Group Mission_10
+	{
+		#--#	InfoDesc	InfoName
+		1	type	FISH_FISHING
+		2	item_vnum	0
+		3	count	3
+		#--#	Rewards
+		4	25040	15
+	}
+	Group Mission_11
+	{
+		#--#	InfoDesc	InfoName
+		1	type	FISH_GRILL
+		2	item_vnum	0
+		3	count	7
+		#--#	Rewards
+		4	25040	15
+	}
+	Group Mission_12
+	{
+		#--#	InfoDesc	InfoName
+		1	type	FISH_CATCH
+		2	item_vnum	0
+		3	count	5
+		#--#	Rewards
+		4	80007	2
+	}
+	Group Mission_13
+	{
+		#--#	InfoDesc	InfoName
+		1	type	YANG_COLLECT
+		2	map_idx	0
+		3	value	1000000000
+		#--#	Rewards
+	}
+	Group Mission_14
+	{
+		#--#	InfoDesc	InfoName
+		1	type	GUILD_PLAY_GUILDWAR
+		2	war_type	0
+		3	count	3
+		#--#	Rewards
+		4	90010	300
+		5	90011	300
+		6	90012	300
+	}
+	Group Mission_15
+	{
+		#--#	InfoDesc	InfoName
+		1	type	COMPLETE_DUNGEON
+		2	dungeon_id	0
+		3	count	8
+		#--#	Rewards
+		4	39139	1
+	}
+}

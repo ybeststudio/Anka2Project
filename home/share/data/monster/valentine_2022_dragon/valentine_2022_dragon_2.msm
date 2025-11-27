@@ -1,0 +1,20 @@
+ScriptType            RaceDataScript
+
+BaseModelFileName     "D:\Ymir Work\npc_pet\valentine_2022_dragon\valentine_2022_dragon.GR2"
+
+Group ShapeData
+{
+    PathName 		 ""
+    ShapeDataCount 		 1
+    Group ShapeData00
+    {
+        ShapeIndex 		 0
+        Model 		 "D:\Ymir Work\npc_pet\valentine_2022_dragon\valentine_2022_dragon.GR2"
+        SourceSkin 		 "D:\Ymir Work\npc_pet\valentine_2022_dragon\valentine_2022_dragon_1.dds"
+        TargetSkin 		 "D:\Ymir Work\npc_pet\valentine_2022_dragon\valentine_2022_dragon_2.dds"
+    }
+}
+Group AttachingData
+{
+    AttachingDataCount       0
+}

@@ -1,0 +1,11 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 1 then 
+d . clear_regen ( ) 
+d . purge ( ) 
+d . setf ( "level" , 2 ) 
+d . jump_all ( ( 5120 + 761 ) , ( 1536 + 270 ) ) 
+d . set_regen_file ( "data/dungeon/ice_dungeon/zone_2.txt" ) 
+d . notice ( d . get_map_index ( ) , 721 , "" , false ) 
+GetMissionInfo ( d . getf ( "level" ) , d . getf ( "real_time" ) - get_global_time ( ) ) 
+end 
+end 

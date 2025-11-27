@@ -1,0 +1,13 @@
+local arg = get_server_timer_arg ( ) 
+if d . select ( arg ) then 
+if d . getf ( "level" ) == 9 then 
+d . clear_regen ( ) 
+d . purge ( ) 
+d . spawn_group ( 6062 , 928 , 335 , 5 , 1 , 1 ) 
+d . setf ( "level" , 10 ) 
+d . jump_all ( ( 5120 + 927 ) , ( 1536 + 391 ) ) 
+d . regen_file ( "data/dungeon/ice_dungeon/zone_boss.txt" ) 
+d . notice ( d . get_map_index ( ) , 726 , "" , false ) 
+GetMissionInfo ( d . getf ( "level" ) , d . getf ( "real_time" ) - get_global_time ( ) ) 
+end 
+end 

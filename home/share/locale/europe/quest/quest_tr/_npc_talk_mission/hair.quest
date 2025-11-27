@@ -1,0 +1,520 @@
+quest hair begin
+	state start begin
+		function get_start_index_by_race(race)
+			--[[
+			--	0	¹«»ç ³²
+			--	1	ÀÚ°´ ¿©
+			--	2	¼ö¶ó ³²
+			--	3	¹«´ç ¿©
+			--	4	¹«»ç ¿©
+			--	5	ÀÚ°´ ³²
+			--	6	¼ö¶ó ¿©
+			--	7	¹«´ç ³²
+			--]]
+			race_list = {}
+			race_list[1] = 74001
+			race_list[2] = 74251
+			race_list[3] = 74501
+			race_list[4] = 74751
+			race_list[5] = 75001
+			race_list[6] = 75201
+			race_list[7] = 75401
+			race_list[8] = 75601
+
+			return race_list[race]
+		end
+
+		function point_to_apply(applyOn)
+			apply_list = {}
+			apply_list[53] = apply.ATTBONUS_MONSTER 
+			apply_list[54] = apply.ATTBONUS_WARRIOR
+			apply_list[55] = apply.ATTBONUS_ASSASSIN
+			apply_list[56] = apply.ATTBONUS_SURA
+			apply_list[57] = apply.ATTBONUS_SHAMAN
+			apply_list[119] = apply.MAX_HP_PCT
+			apply_list[120] = apply.MAX_SP_PCT
+
+			if nil == apply_list[applyOn] then
+				return nil
+			end
+
+			return apply_list[applyOn]
+
+		end
+
+		function My_hair_item(vnum,index)	
+			hair_list={}
+			     --   vnum    /hair/ option  /  howmuch / duration 
+			-- ¹«»ç ³²
+			hair_list [74001] = {1001, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [74002] = {1002, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [74003] = {1003, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [74004] = {1004, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [74005] = {1005, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [74006] = {1006, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [74007] = {1007, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [74008] = {1008, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [74009] = {1009, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [74010] = {1010, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [74011] = {1011, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [74012] = {1012, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [74013] =	{1013, apply.MAX_HP_PCT,	1,  604800}
+			hair_list [74014] =	{1013, apply.MAX_SP_PCT,	1,  604800}
+			hair_list [74015] =	{1014, apply.MAX_HP_PCT,	1,  604800}
+			hair_list [74016] =	{1014, apply.MAX_SP_PCT,	1,  604800}
+			hair_list [74017] =	{1015, apply.ATTBONUS_MONSTER,	10,  604800}  
+			hair_list [74018] =	{1016, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [74019] =	{1017, apply.ATTBONUS_MONSTER,	10,  604800}
+
+			-- ÀÚ°´ ¿©
+			hair_list [74251] = {2001, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [74252] = {2002, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [74253] = {2003, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [74254] = {2004, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [74255] = {2005, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [74256] = {2006, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [74257] = {2007, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [74258] = {2008, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [74259] = {2009, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [74260] = {2010, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [74261] = {2011, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [74262] = {2012, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [74263] =	{2013, apply.MAX_HP_PCT,	1, 604800}
+			hair_list [74264] =	{2013, apply.MAX_SP_PCT,	1, 604800}
+			hair_list [74265] =	{2014, apply.MAX_HP_PCT,	1, 604800}
+			hair_list [74266] =	{2014, apply.MAX_SP_PCT,	1, 604800}
+			hair_list [74267] =	{2015, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [74268] =	{2016, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [74269] =	{2017, apply.ATTBONUS_MONSTER,	10,  604800}
+	
+ 			-- ¼ö¶ó ³²
+			hair_list [74501] = {3001,  apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [74502] = {3002,  apply.ATTBONUS_ASSASSIN,10, 2592000}
+			hair_list [74503] = {3003,  apply.ATTBONUS_SURA,	10, 2592000}
+			hair_list [74504] = {3004,  apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [74505] = {3005,  apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [74506] = {3006,  apply.ATTBONUS_ASSASSIN,10, 2592000}
+			hair_list [74507] = {3007,  apply.ATTBONUS_SURA,	10, 2592000}
+			hair_list [74508] = {3008,  apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [74509] = {3009,  apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [74510] = {3010, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [74511] = {3011, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [74512] = {3012, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [74513] =	{3013, apply.MAX_HP_PCT,	1, 604800}
+			hair_list [74514] =	{3013, apply.MAX_SP_PCT,	1, 604800}
+			hair_list [74515] =	{3014, apply.MAX_HP_PCT,	1, 604800}
+			hair_list [74516] =	{3014, apply.MAX_SP_PCT,	1, 604800}
+			hair_list [74517] =	{3015, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [74518] =	{3016, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [74519] =	{3017, apply.ATTBONUS_MONSTER,	10,  604800}
+
+			-- ¹«´ç ¿©
+			hair_list [74751] = {4001, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [74752] = {4002, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [74753] = {4003, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [74754] = {4004, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [74755] = {4005, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [74756] = {4006, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [74757] = {4007, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [74758] = {4008, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [74759] = {4009, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [74760] = {4010, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [74761] = {4011, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [74762] = {4012, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [74763] =	{4013, apply.MAX_HP_PCT,	1,	604800}
+			hair_list [74764] =	{4013, apply.MAX_SP_PCT,	1,	604800}
+			hair_list [74765] =	{4014, apply.MAX_HP_PCT,	1,	604800}
+			hair_list [74766] =	{4014, apply.MAX_SP_PCT,	1,	604800}
+			hair_list [74767] =	{4015, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [74768] =	{4016, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [74769] =	{4017, apply.ATTBONUS_MONSTER,	10,  604800}
+		
+			-- ¹«»ç ¿©
+			hair_list [75001] = {1001, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [75002] = {1002, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [75003] = {1003, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [75004] = {1004, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [75005] = {1005, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [75006] = {1006, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [75007] = {1007, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [75008] = {1008, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [75009] = {1009, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [75010] = {1010, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [75011] = {1011, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [75012] = {1012, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [75013] =	{1013, apply.MAX_HP_PCT,	1,	604800}
+			hair_list [75014] =	{1013, apply.MAX_SP_PCT,	1,	604800}
+			hair_list [75015] =	{1014, apply.MAX_HP_PCT,	1,	604800}
+			hair_list [75016] =	{1014, apply.MAX_SP_PCT,	1,	604800}
+			hair_list [75017] =	{1015, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [75018] =	{1016, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [75019] =	{1017, apply.ATTBONUS_MONSTER,	10,  604800}
+
+			-- ÀÚ°´ ³²
+			hair_list [75201] = {2001, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [75202] = {2002, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [75203] = {2003, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [75204] = {2004, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [75205] = {2005, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [75206] = {2006, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [75207] = {2007, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [75208] = {2008, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [75209] = {2009, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [75210] = {2010, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [75211] = {2011, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [75212] = {2012, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [75213] =	{2013, apply.MAX_HP_PCT,	1,	604800}
+			hair_list [75214] =	{2013, apply.MAX_SP_PCT,	1,	604800}
+			hair_list [75215] =	{2014, apply.MAX_HP_PCT,	1,	604800}
+			hair_list [75216] =	{2014, apply.MAX_SP_PCT,	1,	604800}
+			hair_list [75217] =	{2015, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [75218] =	{2016, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [75219] =	{2017, apply.ATTBONUS_MONSTER,	10,  604800}
+ 
+			-- ¼ö¶ó ¿©
+			hair_list [75401] = {3001,  apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [75402] = {3002,  apply.ATTBONUS_ASSASSIN,10, 2592000}
+			hair_list [75403] = {3003,  apply.ATTBONUS_SURA,	10, 2592000}
+			hair_list [75404] = {3004,  apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [75405] = {3005,  apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [75406] = {3006,  apply.ATTBONUS_ASSASSIN,10, 2592000}
+			hair_list [75407] = {3007,  apply.ATTBONUS_SURA,	10, 2592000}
+			hair_list [75408] = {3008,  apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [75409] = {3009,  apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [75410] = {3010, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [75411] = {3011, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [75412] = {3012, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [75413] =	{3013, apply.MAX_HP_PCT,	1,	604800}
+			hair_list [75414] =	{3013, apply.MAX_SP_PCT,	1,	604800}
+			hair_list [75415] =	{3014, apply.MAX_HP_PCT,	1,	604800}
+			hair_list [75416] =	{3014, apply.MAX_SP_PCT,	1,	604800}
+			hair_list [75417] =	{3015, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [75418] =	{3016, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [75419] =	{3017, apply.ATTBONUS_MONSTER,	10,  604800}
+
+			-- ¹«´ç ³²
+			hair_list [75601] = {4001, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [75602] = {4002, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [75603] = {4003, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [75604] = {4004, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [75605] = {4005, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [75606] = {4006, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [75607] = {4007, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [75608] = {4008, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [75609] = {4009, apply.ATTBONUS_WARRIOR,	10, 2592000}
+			hair_list [75610] = {4010, apply.ATTBONUS_ASSASSIN,	10, 2592000}
+			hair_list [75611] = {4011, apply.ATTBONUS_SURA,		10, 2592000}
+			hair_list [75612] = {4012, apply.ATTBONUS_SHAMAN,	10, 2592000}
+			hair_list [75613] =	{4013, apply.MAX_HP_PCT,	1,	604800}
+			hair_list [75614] =	{4013, apply.MAX_SP_PCT,	1,	604800}
+			hair_list [75615] =	{4014, apply.MAX_HP_PCT,	1,	604800}
+			hair_list [75616] =	{4014, apply.MAX_SP_PCT,	1,	604800}
+			hair_list [75617] =	{4015, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [75618] =	{4016, apply.ATTBONUS_MONSTER,	10,  604800}
+			hair_list [75619] =	{4017, apply.ATTBONUS_MONSTER,	10,  604800}
+
+			if nil == hair_list[vnum] then
+				return nil
+			end
+
+			return hair_list[vnum][index]
+		end
+		
+		function leave_log(item_vnum)
+			char_log(0, "CHANGE_HAIR", string.format("USE_ITEM(%d)",item_vnum)) -- ¾ÆÀÌÅÛ ·Î±× ¼³Á¤
+			char_log(0, "CHANGE_HAIR", string.format("END_SEC(%d)",get_time()+ hair.My_hair_item(item_vnum,4)) ) -- »ç¿ë±â°£ ·Î±×
+			char_log(0, "CHANGE_HAIR", "CHANGE_HAIR_END") -- Á¾·á ·Î±×
+		end
+	
+        when login begin
+            -- Announce Mention
+            if pc.getqf("limit_time") > get_time() then
+                notice_multiline(gameforge.hair._110_notice,notice)
+            else
+                if pc.get_part( PART_HAIR ) > 1000 and nil == pc.get_wear(20) then
+					--pc.set_part( PART_HAIR , 0 )
+                    pc.setqf( "limit_time", 0 )
+                end
+            end
+        end
+
+
+		when 74001.use or 74002.use or 74003.use or 74004.use or 74005.use or 74006.use or 
+			74007.use or 74008.use or 74009.use or 74010.use or 74011.use or 74012.use or 74013.use or 74014.use or 74015.use or 74016.use or
+			74017.use or 74018.use or 74019.use or 
+			75001.use or 75002.use or 75003.use or 75004.use or 75005.use or 75006.use or 
+			75007.use or 75008.use or 75009.use or 75010.use or 75011.use or 75012.use or 75013.use or 75014.use or 75015.use or 75016.use or 
+			75017.use or 75018.use or 75019.use with pc.get_job()==0 begin
+
+			pc.set_part(PART_HAIR, hair.My_hair_item(item.vnum,1))
+			affect.remove_hair()
+			affect.add_hair(hair.My_hair_item(item.vnum,2),hair.My_hair_item(item.vnum,3) , hair.My_hair_item(item.vnum,4))
+
+			pc.setqf("limit_time",get_time()+ hair.My_hair_item(item.vnum,4))
+			hair.leave_log(item.vnum)
+			item.remove()
+		end
+	
+		when 74251.use or 74252.use or 74253.use or 74254.use or 74255.use or 74256.use or 
+			74257.use or 74258.use or 74259.use or 74260.use or 74261.use or 74262.use or 74263.use or 74264.use or 74265.use or 74266.use or
+			74267.use or 74268.use or 74269.use or
+			75201.use or 75202.use or 75203.use or 75204.use or 75205.use or 75206.use or 
+			75207.use or 75208.use or 75209.use or 75210.use or 75211.use or 75212.use or 75213.use or 75214.use or 75215.use or 75216.use or 
+			75217.use or 75218.use or 75219.use   with pc.get_job()==1 begin
+
+			pc.set_part(PART_HAIR, hair.My_hair_item(item.vnum,1))
+			affect.remove_hair()
+			affect.add_hair(hair.My_hair_item(item.vnum,2),hair.My_hair_item(item.vnum,3) , hair.My_hair_item(item.vnum,4))
+
+			pc.setqf("limit_time",get_time()+hair.My_hair_item(item.vnum,4))
+
+			hair.leave_log(item.vnum)
+			item.remove()
+		end
+
+		when 74501.use or 74502.use or 74503.use or 74504.use or 74505.use or 74506.use or 
+			74507.use or 74508.use or 74509.use or 74510.use or 74511.use or 74512.use or 74513.use or 74514.use or 74515.use or 74516.use or
+			74517.use or 74518.use or 74519.use or 
+			75401.use or 75402.use or 75403.use or 75404.use or 75405.use or 75406.use or 
+			75407.use or 75408.use or 75409.use or 75410.use or 75411.use or 75412.use or 75413.use or 75414.use or 75415.use or 75416.use or  
+			75417.use or 75418.use or 75419.use  with pc.get_job()==2 begin
+
+
+			pc.set_part(PART_HAIR, hair.My_hair_item(item.vnum,1))
+			affect.remove_hair()
+			affect.add_hair(hair.My_hair_item(item.vnum,2),hair.My_hair_item(item.vnum,3) , hair.My_hair_item(item.vnum,4))
+
+			pc.setqf("limit_time",get_time()+hair.My_hair_item(item.vnum,4))
+
+			hair.leave_log(item.vnum)
+			item.remove()
+		end
+
+		when 74751.use or 74752.use or 74753.use or 74754.use or 74755.use or 74756.use or 
+			74757.use or 74758.use or 74759.use or 74760.use or 74761.use or 74762.use or 74763.use or 74764.use or 74765.use or 74766.use or
+			74767.use or 74768.use or 74769.use or 
+			75601.use or 75602.use or 75603.use or 75604.use or 75605.use or 75606.use or 
+			75607.use or 75608.use or 75609.use or 75610.use or 75611.use or 75612.use or 75613.use or 75614.use  or 75615.use or 75616.use  or
+			75617.use or 75618.use or 75619.use with pc.get_job()==3 begin
+
+			pc.set_part(PART_HAIR, hair.My_hair_item(item.vnum,1))
+			affect.remove_hair()
+			affect.add_hair(hair.My_hair_item(item.vnum,2),hair.My_hair_item(item.vnum,3) , hair.My_hair_item(item.vnum,4))
+
+			pc.setqf("limit_time",get_time()+ hair.My_hair_item(item.vnum,4))
+
+			hair.leave_log(item.vnum)
+			item.remove()
+		end
+
+		when 20355.chat.gameforge.hair._010_npcChat with is_test_server() begin
+			say_title(gameforge.hair._011_sayTitle)
+			say(gameforge.hair._012_say)
+			say("")
+
+			local vnum = input_number()
+			say_item_vnum(vnum)
+			wait()
+
+			if hair.My_hair_item(vnum, 1) == nil and hair.My_hair_item(vnum - 1000, 1) then
+				say("VNUM : " .. vnum .. gameforge.hair._013_say)
+				return
+			end
+
+			local race = pc.get_race() + 1
+			local start_index = hair.get_start_index_by_race(race)
+
+			-- USING "AFFECT_HAIR" items.1261440000
+			if vnum > 74000 then
+				for i = 0, 20 do 
+					if start_index + i == vnum then
+						pc.set_part(PART_HAIR, hair.My_hair_item(vnum,1))
+						affect.remove_hair()
+						affect.add_hair(hair.My_hair_item(vnum,2),hair.My_hair_item(vnum,3) , hair.My_hair_item(vnum,4))
+
+						pc.setqf("limit_time",get_time()+ hair.My_hair_item(vnum,4))
+
+						hair.leave_log(vnum)
+
+						return
+					end
+				end
+			-- Just set to hair part.
+			elseif vnum > 73000 and vnum <= 73762 then
+
+				local model = 0	-- hair model
+
+				start_index = start_index - 1000
+				for i = 0, 12 do 
+					local index = start_index + i
+
+					if index == vnum then
+						if 1 == race then
+							model = vnum - 72000
+						elseif 2 == race then
+							model = vnum - 71250
+						elseif 3 == race then
+							model = vnum - 70500
+						elseif 4 == race then
+							model = vnum - 69750
+						end
+
+						if 0 != model then
+							pc.set_part(PART_HAIR, model)
+							return
+						end
+					end
+				end
+
+			end
+
+			syschat(gameforge.hair._014_say)
+
+		end
+
+
+		when 20355.chat.gameforge.hair._030_npcChat with pc.get_part(3) >= 1000 and pc.getqf("original_vnum") == 0 and nil == pc.get_wear(20) begin
+			-- 514 : AFFECT_HAIR
+			local applyOn = affect.get_apply_on(514)
+
+			local race = pc.get_race() + 1			-- PC's JOB
+			local currentModel = pc.get_part(3)		-- hair model type
+			local start_index = hair.get_start_index_by_race(race)
+			local vnum = 0
+			local bFound = false
+			local optionValue = 0
+			local limitTime = pc.getqf("limit_time")
+
+			if pc.getqf("original_vnum") != 0 then
+					notice("hier wäre schluss später vielleicht!")
+			end
+
+	 	 notice(string.format("vnum: %d", vnum))
+      notice( string.format("pc.get_wear: %d ", pc.get_wear(20)))
+      notice(string.format("qf origianl_vnum: %d ", pc.getqf("original_vnum")))
+      notice(string.format("pc.get_part: %d ",  pc.get_part(3)))
+
+
+			say_title(mob_name(20355))
+			say(gameforge.hair._040_say)
+			say("")
+
+			local s = select(gameforge.locale.confirm, gameforge.locale.cancel)
+			
+			if s == 2 then
+				return
+			end
+
+			if 0 == currentModel or pc.getqf("original_vnum") != 0 then
+				say_title(mob_name(20355))
+				say(gameforge.hair._090_say) 
+				say("")
+				return
+			end
+
+			if nil == applyOn then
+				local wearCostumeHair = pc.get_wear(20)
+
+				if 0 == currentModel or nil != wearCostumeHair then
+					say_title(mob_name(20355))
+					say(gameforge.hair._050_say) 
+					say("")
+				end
+				
+				if pc.getqf("original_vnum") != 0 then
+			        say_title(mob_name(20355))
+			        say(gameforge.hair._050_say)
+			        say("")
+					return
+				end
+								
+				vnum = currentModel
+
+				if 1 == race or 5== race  then	vnum = vnum + 72000 
+				elseif 2 == race or 6 == race then	vnum = vnum + 71250
+				elseif 3 == race or 7 == race then	vnum = vnum + 70500
+				elseif 4 == race or 8 == race then	vnum = vnum + 69750
+				else
+					say_title(mob_name(20355))
+					say(gameforge.hair._060_say)
+					return
+				end
+
+				bFound = true
+			end
+
+			if false == bFound then
+				local applyType = hair.point_to_apply(applyOn)
+
+				if nil == applyType then
+					say(gameforge.hair._070_say)
+					return
+				end
+
+
+				for i = 0, 20 do 
+					local tempVnum = start_index + i
+					modelType = hair.My_hair_item(tempVnum, 1)
+					optionType = hair.My_hair_item(tempVnum, 2)
+					optionValue = hair.My_hair_item(tempVnum, 3)
+
+					if modelType == currentModel and optionType == applyType then
+						vnum = tempVnum
+						bFound = true
+						break
+					end
+				end
+
+				if false == bFound then
+					say_title(mob_name(20355))
+					say(gameforge.hair._060_say)
+					return
+				end
+
+				if true == is_test_server() then
+					say("This message only appears on Test Mode.")
+					say("	Effect : " .. applyOn .. ", Value : " .. optionValue)
+					say("	Model : " .. pc.get_part(3))
+					say("	Left time (in second) : " .. (limitTime - get_time()))
+					say("	VNUM : " .. vnum)
+					say("")
+					say("")
+					local s = select("Next")
+				end
+			end
+
+			if vnum < 74000 then
+				-- ¿µ±¸ Çì¾î¸¦ Âø¿µÁßÀÎ °æ¿ì, Âø¿ë½Ã°£ ±â¹ÝÀ¸·Î 10³âµÚ¿¡ ¸¸·áµÇ´Â ÄÚ½ºÆ¬ ¾ÆÀÌÅÛÀ» ÁØ´Ù. -_-;
+				limitTime = 1261440000 
+			end
+
+
+      local wearCostumeHair_check = pc.get_wear(20)
+            
+      if nil == wearCostumeHair_check then
+        return
+      end
+
+ notice(string.format("vnum: %d", vnum))
+      notice( string.format("pc.get_wear: %d ", pc.get_wear(20)))
+      notice(string.format("qf origianl_vnum: %d ", pc.getqf("original_vnum")))
+      notice(string.format("pc.get_part: %d ",  pc.get_part(3)))
+
+
+			local ret = pc.give_item2_select(vnum)
+			item.set_socket(0, limitTime)
+			item.set_socket(1, 1)
+			item.start_realtime_expire()
+			affect.remove_hair()
+			pc.set_part(3, 0)
+			pc.setqf( "limit_time", 0 )
+			pc.setqf( "original_vnum", vnum )
+			say_title(mob_name(20355))
+			say(gameforge.hair._80_say)
+			say_show_item(vnum)
+			say(" " ..  item_name(vnum) .. gameforge.hair._090_say)
+			say("")
+			say(gameforge.hair._100_say)
+		end
+	end
+end

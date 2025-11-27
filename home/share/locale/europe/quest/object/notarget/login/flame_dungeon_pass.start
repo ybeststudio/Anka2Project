@@ -1,0 +1,7 @@
+if pc . get_level ( ) >= 100 then local v = find_npc_by_vnum ( 20381 ) 
+if 0 == v then 
+else 
+target . vid ( "__TARGET__" , v , "konfucyus" ) 
+end 
+send_letter ( "Konfüçyüs" ) 
+ return end 

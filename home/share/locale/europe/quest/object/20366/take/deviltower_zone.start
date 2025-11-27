@@ -1,0 +1,14 @@
+if item . get_vnum ( ) == 30304 and d . getf ( "level" ) == 8 then if d . getf ( "Sa_Soe" ) == 0 then 
+item . remove ( ) 
+d . new_kill_all ( ) 
+d . clear_regen ( ) 
+d . setf ( "Sa_Soe" , 1 ) 
+server_timer ( "Devil_9" , 10 , d . get_map_index ( ) ) 
+GetMissionInfo ( 8 , 10 ) 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+d . dungeon_remove_all ( 30304 ) 
+else 
+d . notice ( d . get_map_index ( ) , 672 , "" , false ) 
+return 
+end 
+ return end 

@@ -1,0 +1,7 @@
+say_title ( mob_name ( 9012 ) ) 
+say ( "" ) 
+say ( "Iþýnlanmak istiyor musun?" ) 
+local s = select ( "Evet" , "Hayýr" ) 
+if s == 1 then 
+pc . warp ( 537500 , 492700 ) 
+end 

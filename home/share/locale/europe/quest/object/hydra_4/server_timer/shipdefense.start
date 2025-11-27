@@ -1,0 +1,21 @@
+local index = get_server_timer_arg ( ) 
+if d . select ( index ) then 
+if d . getf ( "DungeonBlock" ) == 1 then 
+d . notice ( index , 673 , "" , false ) 
+d . global_warp_all_to_base ( 1.1082e+06 , 1.7824e+06 , index , 60 ) 
+GetMissionInfo ( 3 , 60 * 1 ) 
+d . setf ( "real_time" , 0 ) 
+d . setf ( "level" , 0 ) 
+d . setqf2 ( "shipdefense" , "cooldown" , get_global_time ( ) + 3 * 60 * 60 ) 
+d . track_update ( 9018 ) 
+clear_server_timer ( "hydra_full_timer" , index ) 
+clear_server_timer ( "hydra_0" , index ) 
+clear_server_timer ( "hydra_1" , index ) 
+clear_server_timer ( "hydra_2" , index ) 
+clear_server_timer ( "hydra_3" , index ) 
+clear_server_timer ( "defensawe_clear" , index ) 
+clear_server_timer ( "jump_all" , index ) 
+clear_server_timer ( "defensawe_clear_end" , index ) 
+d . setf ( "DungeonBlock" , 0 ) 
+end 
+end 

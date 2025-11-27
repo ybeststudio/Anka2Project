@@ -1,0 +1,14 @@
+ScriptType            RaceDataScript
+
+BaseModelFileName     "d:/ymir work/npc_pet/pet_ice_snow_insect/pet_ice_snow_insect.gr2"
+
+Group ShapeData
+{
+    PathName 		 ""
+    ShapeDataCount 		 0
+}
+Group AttachingData
+{
+    AttachingDataCount       0
+    
+}

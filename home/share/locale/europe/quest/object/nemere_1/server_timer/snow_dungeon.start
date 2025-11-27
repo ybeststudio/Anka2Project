@@ -1,0 +1,13 @@
+local arg = get_server_timer_arg ( ) 
+if d . select ( arg ) then 
+if d . getf ( "first_regen" ) == 1 then 
+d . setf ( "first_regen" , 0 ) 
+server_loop_timer ( "nemere_loop_timer" , 10 , arg ) 
+d . regen_file ( "data/dungeon/ice_dungeon/zone_1.txt" ) 
+server_timer ( "nemere_full_timer" , 60 * 60 , arg ) 
+d . setf ( "real_time" , get_global_time ( ) + 60 * 60 ) 
+d . setf ( "level" , 1 ) 
+GetMissionInfo ( 1 , 60 * 60 ) 
+d . notice ( arg , 657 , "" , false ) 
+end 
+end 

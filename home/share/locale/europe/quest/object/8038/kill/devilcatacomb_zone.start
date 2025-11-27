@@ -1,0 +1,29 @@
+if pc . get_map_index ( ) >= 2.16e+06 and pc . get_map_index ( ) <= 2.16999e+06 then if d . select ( pc . get_map_index ( ) ) then 
+local level = d . getf ( "level" ) 
+if level == 3 then 
+local new = d . getf ( "stones" ) + 1 
+d . setf ( "stones" , new ) 
+if new == 7 then 
+d . setf ( "stones" , 0 ) 
+server_timer ( "devilcatacomb_3" , 5 , d . get_map_index ( ) ) 
+end 
+elseif level == 5 then 
+local q_level = d . getf ( "q_level" ) 
+if q_level == 1 then 
+local new = d . getf ( "stones" ) + 1 
+d . setf ( "stones" , new ) 
+if new == 5 then 
+d . setf ( "stones" , 0 ) 
+game . drop_item ( 50084 , 1 ) 
+end 
+elseif q_level == 4 then 
+local new = d . getf ( "stones" ) + 1 
+d . setf ( "stones" , new ) 
+if new == 10 then 
+d . setf ( "stones" , 0 ) 
+game . drop_item ( 50084 , 1 ) 
+end 
+end 
+end 
+end 
+ return end 

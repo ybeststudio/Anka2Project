@@ -1,0 +1,29 @@
+if pc . get_map_index ( ) >= 3.52e+06 and pc . get_map_index ( ) <= 3.52999e+06 then if d . select ( pc . get_map_index ( ) ) then 
+local dwLevel = d . getf ( "level" ) 
+local dwRace = npc . get_race ( ) 
+if dwLevel == 2 and dwRace >= 6101 and dwRace <= 6108 and 1 == number ( 1 , 10 ) then 
+game . drop_item ( 30331 , 1 ) 
+elseif dwLevel == 5 and dwRace >= 6101 and dwRace <= 6108 and 1 == number ( 1 , 15 ) then 
+game . drop_item ( 30332 , 1 ) 
+elseif dwLevel == 6 and dwRace == 8058 then 
+server_timer ( "Jp_7" , 5 , d . get_map_index ( ) ) 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+GetMissionInfo ( 7 , 5 ) 
+elseif dwLevel == 8 and dwRace >= 6101 and dwRace <= 6108 and 1 == number ( 1 , 15 ) then 
+game . drop_item ( 30333 , 1 ) 
+elseif dwLevel == 9 and dwRace == 20399 then 
+server_timer ( "Jp_Boss" , 5 , d . get_map_index ( ) ) 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+GetMissionInfo ( 9 , 5 ) 
+elseif dwLevel == 7 and dwRace == 6151 then 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+server_timer ( "Jp_8" , 5 , d . get_map_index ( ) ) 
+GetMissionInfo ( 7 , 5 ) 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+elseif dwLevel == 10 and dwRace == 6191 then 
+d . spawn_mob ( 30130 , pc . get_local_x ( ) , pc . get_local_y ( ) ) 
+server_timer ( "nemere_dead_timer" , 1 , d . get_map_index ( ) ) 
+d . setf ( "dungeon_empire" , pc . get_empire ( ) ) 
+end 
+end 
+ return end 

@@ -1,0 +1,15 @@
+say_title ( "Seyis:" ) 
+say ( "" ) 
+say ( "iyi sonuç!" ) 
+say ( "Eger atini simdi gelistirmek istiyorsan," ) 
+say ( "at madalyonunu, silah-at kitabi ile " ) 
+say ( "degistirmelisin. Bu oldukça uzun sürüyor," ) 
+say ( "yarin tekrar gelsen daha iyi olur." ) 
+say ( "Neyse, ayrica silah-at kitabi satin almak için" ) 
+say ( "500.000 Yang getirmen gerekiyor." ) 
+if is_test_server ( ) then 
+pc . setqf ( "make_time" , get_time ( ) + 10 ) 
+else 
+pc . setqf ( "make_time" , get_time ( ) + number ( 8 , 16 ) * 60 * 60 ) 
+end 
+setstate ( "wait" ) 

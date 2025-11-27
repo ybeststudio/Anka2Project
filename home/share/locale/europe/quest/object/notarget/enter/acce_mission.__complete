@@ -1,0 +1,4 @@
+notice ( "Yeterli miktarda ince kumaþ topladýn. Teovahdan'a" ) 
+notice ( "geri dön ve ona kumaþlarý teslim et." ) 
+pc . delqf ( "time_to_wait" ) 
+pc . delqf ( "collect_count" ) 

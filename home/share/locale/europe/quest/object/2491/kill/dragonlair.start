@@ -1,0 +1,5 @@
+if pc . get_map_index ( ) >= 2.08e+06 and pc . get_map_index ( ) <= 2.08999e+06 then d . spawn_mob ( 8034 , 188 , 178 ) 
+d . spawn_mob ( 8034 , 177 , 178 ) 
+d . spawn_mob ( 8034 , 177 , 168 ) 
+d . spawn_mob ( 8034 , 188 , 168 ) 
+ return end 

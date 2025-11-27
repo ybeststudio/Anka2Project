@@ -1,0 +1,11 @@
+if pc . get_map_index ( ) >= 660000 and pc . get_map_index ( ) < 670000 and d . getf ( "level" ) == 4 then if d . is_unique_dead ( "real" ) then 
+d . notice ( d . get_map_index ( ) , 666 , "" , false ) 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+d . new_kill_all ( ) 
+d . clear_regen ( ) 
+server_timer ( "Devil_5" , 10 , d . get_map_index ( ) ) 
+GetMissionInfo ( 4 , 10 ) 
+else 
+d . notice ( d . get_map_index ( ) , 667 , "" , false ) 
+end 
+ return end 

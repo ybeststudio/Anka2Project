@@ -1,0 +1,5 @@
+local v = find_npc_by_vnum ( 20011 ) 
+if v ~= 0 then 
+target . vid ( "__TARGET1__" , v , "Uriel" ) 
+end 
+send_letter ( "Günlük" ) 

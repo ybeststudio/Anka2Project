@@ -1,0 +1,82 @@
+local stat = oxevent . get_status ( ) 
+if stat == 0 then 
+say_title ( "OX Yarismasi Paneli" ) 
+say_new ( "[ENTER]OX baslatilsin mi? [ENTER]" ) 
+local s = select ( "Evet" , "Hayir" ) 
+if s == 2 then 
+return 
+end 
+local v = oxevent . open ( ) 
+if v == 0 then 
+say_title ( "OX Yarismasi Paneli" ) 
+say_new ( "[ENTER]Sorulari yükleyemedim. [ENTER]" ) 
+return 
+elseif v == 1 then 
+say_title ( "OX Yarismasi Paneli" ) 
+say_new ( "[ENTER]OX Yarismasi basladi. [ENTER]" ) 
+notice_all ( 635 , "" ) 
+else 
+say_new ( "[ENTER]Hata [ENTER]" ) 
+return 
+end 
+elseif stat == 1 then 
+say_title ( "OX Yarismasi Paneli" ) 
+say_new ( "[ENTER]Kapilar hala açik.[ENTER]Oyuncular: " .. oxevent . get_attender ( ) ) 
+local s = select ( "Kapilari kapat" , "Iptal" ) 
+if s == 1 then 
+notice_all ( 636 , "" ) 
+oxevent . close ( ) 
+end 
+elseif stat == 2 then 
+say_title ( "OX Yarismasi Paneli" ) 
+say_new ( "[ENTER]Ne yapmak istiyorsunuz? [ENTER]" ) 
+local s = select ( "Soru sor" , "Katilimcilara ödül teklif et" , "Yarismayi kapat" , "Yarismayi iptal et" , "Iptal" ) 
+if s == 1 then 
+local v = oxevent . quiz ( 1 , 30 ) 
+if v == 0 then 
+say_title ( "OX Yarismasi Paneli" ) 
+say_new ( "[ENTER]Soru hatasi [ENTER]" ) 
+return 
+else 
+say_title ( "OX Yarismasi Paneli" ) 
+say_new ( "[ENTER]Soru basariyla soruldu. [ENTER]" ) 
+return 
+end 
+elseif s == 2 then 
+say_title ( "OX Yarismasi Paneli" ) 
+say_new ( "[ENTER]Sifre: [ENTER]" ) 
+local sname = input ( ) 
+if sname == "m2project" then 
+say_title ( "OX Yarismasi Paneli" ) 
+say_new ( "[ENTER]Esya ekle: [ENTER]" ) 
+local item_vnum = input ( ) 
+say_title ( "OX Yarismasi Paneli" ) 
+say_new ( "[ENTER]Miktar ekle: [ENTER]" ) 
+local item_count = input ( ) 
+oxevent . give_item ( item_vnum , item_count ) 
+say_title ( "OX Yarismasi Paneli" ) 
+say_new ( "[ENTER]Katilimcilar sunu aldi: " .. item_name ( item_vnum ) ) 
+notice_all ( 637 , string . format ( "%s#%s" , item_count , item_name ( item_vnum ) ) ) 
+end 
+elseif s == 3 then 
+oxevent . end_event ( ) 
+notice_all ( 638 , "" ) 
+setskin ( 0 ) 
+elseif s == 4 then 
+say_title ( "OX Yarismasi Paneli" ) 
+say_new ( "[ENTER]Yarismayi durdurmak istediginizden emin misiniz? [ENTER]" ) 
+local s = select ( "Evet" , "Hayir" ) 
+if s == 1 then 
+oxevent . end_event_force ( ) 
+end 
+elseif s == 5 then 
+return 
+end 
+elseif stat == 3 then 
+say_title ( "OX Yarismasi Paneli" ) 
+say_new ( "[ENTER]Su anda sorulmakta olan bir soru var [ENTER]" ) 
+else 
+say_title ( "OX Yarismasi Paneli" ) 
+say_new ( "[ENTER]Hata [ENTER]" ) 
+return 
+end 

@@ -1,0 +1,64 @@
+skill_group={["start"]=0,["run"]=1349952704,chat_end= function ()if not pc . is_clear_skill_group ( ) then 
+local point = pc . get_level ( ) - 1 
+say ( "" ) 
+say ( "Doðru bir Seçim yaptýn." ) 
+say ( "" .. point .. " Beceri puaný kazandýn." ) 
+say ( "Artýk becerini Kullanabilirsin." ) 
+say ( "" ) 
+pc . set_skill_level ( 137 , 29 ) 
+pc . set_skill_level ( 138 , 29 ) 
+pc . set_skill_level ( 139 , 29 ) 
+pc . set_skill_level ( 140 , 29 ) 
+pc . set_skill_level ( 124 , 40 ) 
+pc . set_skill_level ( 131 , 10 ) 
+pc . set_skill_level ( 121 , 40 ) 
+pc . set_skill_level ( 122 , 2 ) 
+pc . set_skill_level ( 129 , 40 ) 
+pc . set_skill_level ( 126 , 29 ) 
+pc . set_skill_level ( 127 , 29 ) 
+pc . set_skill_level ( 128 , 29 ) 
+horse . set_level ( 30 ) 
+end 
+clear_letter ( ) 
+end ,join= function (job,group,title,text)local pc_job = pc . get_job ( ) 
+if pc_job ~= job then 
+say ( title ) 
+say ( "" ) 
+say ( "Yanlýþ Eðitim!" ) 
+if pc_job == 0 then 
+say ( "Bir Savaþçý,  Zihinsel Savaþý veya" ) 
+say ( "Bedensel Savaþý seçebilir." ) 
+say ( "" ) 
+elseif pc_job == 1 then 
+say ( "Bir Ninja, Yakin Dövüþ veya" ) 
+say ( "Uzak Dövüþ eðitimini seçebilir." ) 
+say ( "" ) 
+elseif pc_job == 2 then 
+say ( "Bir Sura, Büyülü Silah veya " ) 
+say ( "Kara Büyü eðitimini seçebilir." ) 
+say ( "" ) 
+elseif pc_job == 3 then 
+say ( "Bir Þaman, Ejderha Gücü eðitimini" ) 
+say ( "veya Ýyileþtirme eðitimini seçebilir." ) 
+say ( "" ) 
+elseif pc_job == 4 then 
+say ( "Bir Lycan, Ýçgüdü Eðitimini seçebilir." ) 
+end 
+else 
+say_title ( title ) 
+say ( "" ) 
+say ( text ) 
+say ( "" ) 
+local s = select ( "Öðren!" , "Daha Sonra." ) 
+if s == 1 then 
+if pc . get_skill_group ( ) == 0 and pc . get_job ( ) == job then 
+set_state ( "start" ) 
+pc . set_skill_group ( group ) 
+pc . clear_skill ( ) 
+char_log ( 0 , "CLEAR_SKILL" , "Becerilerimi Temizle" ) 
+return true 
+end 
+end 
+end 
+return false 
+end }

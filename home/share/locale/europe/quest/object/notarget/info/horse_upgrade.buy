@@ -1,0 +1,7 @@
+say_title ( "Seyis'in yanina git." ) 
+say ( "" ) 
+say_reward ( "Seyis'in yanina git ve silah-at" ) 
+say_reward ( "kitabini al." ) 
+say_reward ( "Silah-at kitabi için" ) 
+say_reward ( "500.000 Yang ve at madalyonuna ihtiyacin var." ) 
+say ( "" ) 

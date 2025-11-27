@@ -1,0 +1,4 @@
+if game . get_event_flag ( "fish_event" ) > 0 then say_title ( "Gizemli Kutu Etkinligi" ) 
+say_new ( "[ENTER]3 adet Minnow'u bir Balikçi'ya getirin ve onlari, açarak baska esyalar alabileceginiz Gizemli Kutu ile degistireceksiniz. Kutunun içinde vahsi canavarlar olabileceginin farkinda olun! [ENTER]" ) 
+say_reward_new ( "Etkinligin tadini çikarin ve balik tutarken iyi sanslar! [ENTER]" ) 
+ return end 

@@ -1,0 +1,25 @@
+deviltower_zone={["start"]=0,clear_deviltower_flags= function ()d . setf ( "stone_destroy" , 0 ) 
+d . setf ( "bug_1" , 0 ) 
+d . setf ( "IsOn" , 0 ) 
+d . setf ( "stone_count" , 0 ) 
+d . setf ( "real_time" , 0 ) 
+d . setf ( "level" , 0 ) 
+d . setf ( "Sa_Soe" , 0 ) 
+d . setf ( "Zin_Sa_Gui" , 0 ) 
+d . setf ( "7_stone_kill" , 0 ) 
+d . setqf2 ( "deviltower_zone" , "can_refine" , 0 ) 
+end ,get_4floor_stone_pos= function ()local positions = 
+{ 
+{ 368 , 629 } , { 419 , 630 } , { 428 , 653 } , { 422 , 679 } , 
+{ 395 , 689 } , { 369 , 679 } , { 361 , 658 } , 
+} 
+for i = 1 , 6 begin 
+local j = number ( i , 7 ) 
+if i ~= j then 
+local t = positions [ i ] ; 
+positions [ i ] = positions [ j ] ; 
+positions [ j ] = t ; 
+end 
+end 
+return positions 
+end }

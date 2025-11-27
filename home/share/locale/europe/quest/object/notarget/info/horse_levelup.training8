@@ -1,0 +1,4 @@
+say_title ( "Buz Golemi'ni öldür!" ) 
+say ( "Buz Golemi'ni at üzerinden öldür!" ) 
+say ( "inersen isin bitti!" ) 
+say ( "" ) 

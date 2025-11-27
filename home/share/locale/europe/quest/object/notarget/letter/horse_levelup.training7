@@ -1,0 +1,5 @@
+q . set_counter ( "Kalan Çöl Haydutu:" , 20 - pc . getqf ( "kill_count" ) ) 
+setskin ( NOWINDOW ) 
+makequestbutton ( "Çöl Haydutu öldür!" ) 
+q . set_title ( "Çöl Haydutu öldür!" ) 
+q . start ( ) 

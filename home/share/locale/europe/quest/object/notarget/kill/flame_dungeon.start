@@ -1,0 +1,40 @@
+if pc . get_map_index ( ) >= 3.51e+06 and pc . get_map_index ( ) <= 3.51999e+06 and d . getf ( "level" ) == 1 then if d . select ( pc . get_map_index ( ) ) then 
+local counter = d . getf ( "counter_11" ) 
+if counter == 0 then 
+d . notice ( d . get_map_index ( ) , 720 , "" , false ) 
+d . setf ( "level" , 2 ) 
+d . clear_regen ( ) 
+timer ( "Purge" , 2 ) 
+d . setf ( "is_on" , 0 ) 
+else 
+d . setf ( "counter_11" , counter - 1 ) 
+end 
+end 
+ return end if pc . get_map_index ( ) >= 3.51e+06 and pc . get_map_index ( ) <= 3.51999e+06 and d . getf ( "level" ) == 2 then if d . select ( pc . get_map_index ( ) ) then 
+if d . getf ( "is_on" ) == 1 then 
+local i = number ( 1 , 125 ) 
+if i == 1 then 
+game . drop_item ( 30329 , 1 ) 
+end 
+end 
+end 
+ return end if pc . get_map_index ( ) >= 3.51e+06 and pc . get_map_index ( ) <= 3.51999e+06 and d . getf ( "level" ) == 3 then if d . select ( pc . get_map_index ( ) ) then 
+if d . getf ( "counter_13" ) == 0 then 
+d . clear_regen ( ) 
+d . notice ( d . get_map_index ( ) , 720 , "" , false ) 
+d . setf ( "level" , 4 ) 
+d . setf ( "is_on" , 0 ) 
+timer ( "Purge" , 2 ) 
+else 
+d . setf ( "counter_13" , d . getf ( "counter_13" ) - 1 ) 
+end 
+end 
+ return end if pc . get_map_index ( ) >= 3.51e+06 and pc . get_map_index ( ) <= 3.51999e+06 and d . getf ( "level" ) == 5 then if d . select ( pc . get_map_index ( ) ) then 
+if d . getf ( "is_on" ) == 1 then 
+local i = number ( 1 , 30 ) 
+if i == 1 then 
+game . drop_item ( 30330 , 1 ) 
+end 
+end 
+end 
+ return end 

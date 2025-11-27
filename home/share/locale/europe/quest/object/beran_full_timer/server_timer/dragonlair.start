@@ -1,0 +1,9 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+d . setf ( "DungeonBlock" , 0 ) 
+d . setf ( "IsOn" , 0 ) 
+d . setf ( "step" , 0 ) 
+d . setf ( "stones" , 0 ) 
+d . setf ( "level" , 0 ) 
+d . setf ( "real_time" , 0 ) 
+d . global_warp_all_to_base ( 1800 * 100 , 12199 * 100 , get_server_timer_arg ( ) , 1 ) 
+end 

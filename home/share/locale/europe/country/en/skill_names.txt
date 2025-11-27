@@ -1,0 +1,68 @@
+Vnum	LocaleName
+1	Three-Way Cut
+2	Sword Spin
+3	Berserk
+4	Aura of the Sword
+5	Dash
+16	Spirit Strike (W)
+17	Bash
+18	Stump
+19	Strong Body
+20	Sword Strike
+31	Ambush
+32	Fast Attack
+33	Rolling Dagger
+34	Stealth
+35	Poisonous Cloud
+46	Repetitive Shot
+47	Arrow Shower
+48	Fire Arrow
+49	Feather Walk
+50	Poison Arrow
+6	Life Force
+61	Finger Strike
+62	Dragon Swirl
+63	Enchanted Blade
+64	Fear
+65	Enchanted Armour
+66	Dispel
+76	Dark Strike
+77	Flame Strike
+78	Flame Spirit
+79	Dark Protection
+80	Spirit Strike (S)
+81	Dark Orb
+91	Flying Talisman
+92	Shooting Dragon
+93	Dragon's Roar
+94	Blessing
+95	Reflect
+96	Dragon's Aid
+106	Lightning Throw
+107	Summon Lightning
+108	Lightning Claw
+109	Cure
+110	Swiftness
+111	Attack Up
+121	Leadership
+122	Combo
+123	Fishing
+124	Mining
+125	Item Creation
+126	Shinsoo Language
+127	Chunjo Language
+128	Jinno Language
+129	Polymorph
+130	Horse Riding
+131	Call Horse
+137	Horseback Slash
+138	Horse Stump
+139	Power Wave
+140	Arrow Storm
+151	Dragon Eyes
+152	Blood of Dragon God
+153	Benediction of Dragon God
+154	Holy Armour
+155	Acceleration
+156	Wrath of the Dragon God
+157	Casting Aid

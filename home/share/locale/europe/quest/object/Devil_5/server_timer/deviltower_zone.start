@@ -1,0 +1,16 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 4 then 
+clear_server_timer ( "Devil_4_1" , get_server_timer_arg ( ) ) 
+d . setf ( "level" , 5 ) 
+d . setf ( "stone_count" , 5 ) 
+d . jump_all ( special . devil_tower [ 4 ] [ 1 ] , special . devil_tower [ 4 ] [ 2 ] ) 
+d . set_regen_file ( "data/dungeon/deviltower/deviltower5_regen.txt" ) 
+d . notice ( d . get_map_index ( ) , 661 , "" , false ) 
+GetMissionInfo ( 5 , d . getf ( "real_time" ) - get_global_time ( ) ) 
+d . spawn_mob ( 20073 , 421 , 452 ) 
+d . spawn_mob ( 20073 , 380 , 460 ) 
+d . spawn_mob ( 20073 , 428 , 414 ) 
+d . spawn_mob ( 20073 , 398 , 392 ) 
+d . spawn_mob ( 20073 , 359 , 426 ) 
+end 
+end 

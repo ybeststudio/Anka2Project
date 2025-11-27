@@ -1,0 +1,20 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 4 then 
+d . clear_regen ( ) 
+d . purge ( ) 
+d . setf ( "level" , 5 ) 
+d . jump_all ( ( 5120 + 419 ) , ( 1536 + 530 ) ) 
+d . set_regen_file ( "data/dungeon/ice_dungeon/zone_5.txt" ) 
+d . notice ( d . get_map_index ( ) , 723 , "" , false ) 
+local c = { 
+{ 432 , 508 } , { 437 , 493 } , { 448 , 492 } , { 448 , 476 } , { 467 , 475 } , { 466 , 464 } , { 462 , 450 } , 
+{ 458 , 428 } , { 446 , 439 } , { 431 , 431 } , { 415 , 416 } , { 402 , 427 } , { 397 , 438 } , { 375 , 434 } , 
+{ 374 , 456 } , { 390 , 468 } , { 385 , 492 } , { 402 , 505 } , { 404 , 489 } , { 386 , 482 } } 
+for i = 1 , 6 , 1 begin 
+local n = number ( 1 , table . getn ( c ) ) 
+d . set_unique ( "stone5_" .. i , d . spawn_mob ( 20398 , c [ n ] [ 1 ] , c [ n ] [ 2 ] ) ) 
+table . remove ( c , n ) 
+end 
+GetMissionInfo ( d . getf ( "level" ) , d . getf ( "real_time" ) - get_global_time ( ) ) 
+end 
+end 

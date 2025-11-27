@@ -1,0 +1,5 @@
+local v = find_npc_by_vnum ( 20355 ) 
+if v ~= 0 then 
+target . vid ( "captain" , v , "Captain" ) 
+end 
+send_letter ( "Kendi gücünü artýr" ) 

@@ -1,0 +1,14 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 8 then 
+d . clear_regen ( ) 
+d . purge ( ) 
+d . setf ( "level" , 9 ) 
+d . setf ( "Frostflower_Key" , 0 ) 
+d . regen_file ( "data/dungeon/ice_dungeon/zone_9.txt" ) 
+d . dungeon_remove_all ( 30333 ) 
+d . jump_all ( ( 5120 + 848 ) , ( 1536 + 693 ) ) 
+d . notice ( d . get_map_index ( ) , 725 , "" , false ) 
+d . spawn_mob ( 20399 , 849 , 655 ) 
+GetMissionInfo ( d . getf ( "level" ) , d . getf ( "real_time" ) - get_global_time ( ) ) 
+end 
+end 

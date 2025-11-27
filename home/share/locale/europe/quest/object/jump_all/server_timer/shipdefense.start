@@ -1,0 +1,3 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+d . jump_all ( 4929 , 6515 ) 
+end 

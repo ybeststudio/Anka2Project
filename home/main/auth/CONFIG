@@ -1,0 +1,17 @@
+CHANNEL: 1
+HOSTNAME: auth
+PORT: 30001
+P2P_PORT: 30002
+DB_ADDR: localhost
+DB_PORT: 15000
+PLAYER_SQL: localhost beststudio !@#bestprodesinq#@! account
+COMMON_SQL: localhost beststudio !@#bestprodesinq#@! common
+LOG_SQL: localhost beststudio !@#bestprodesinq#@! log
+TABLE_POSTFIX: 
+PASSES_PER_SEC: 25
+PING_EVENT_SECOND_CYCLE: 180
+ADMINPAGE_PASSWORD: metin2adminpass
+ADMINPAGE_IP: 127.0.0.1
+AUTH_SERVER: master
+TRAFFIC_PROFILE: 
+TEST_SERVER: 0

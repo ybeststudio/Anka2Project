@@ -1,0 +1,12 @@
+ScriptType	MapSetting
+
+CellScale	200
+HeightScale	0.500000
+
+ViewRadius	128
+
+MapSize	5	6
+BasePosition	1676800	2252800
+TextureSet	textureset\plechito_shadow_deviltower.txt
+Environment	plechito_shadow_dungeon.msenv
+

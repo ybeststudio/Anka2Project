@@ -1,0 +1,22 @@
+if pc . get_map_index ( ) >= 2.16e+06 and pc . get_map_index ( ) <= 2.16999e+06 then pc . set_warp_location_local ( 65 , 5918 , 993 ) 
+local real_time = get_global_time ( ) 
+local index = pc . get_map_index ( ) 
+if index >= 2.16e+06 and index <= 2.16999e+06 then 
+if d . select ( index ) then 
+if d . getf ( "DungeonBlock" ) == 1 then 
+if d . getf ( "first_regen" ) == 1 then 
+if d . getf ( "ticket" ) == 1 then 
+server_timer ( "devilcatacomb_2" , 1 , index ) 
+else 
+server_timer ( "devilcatacomb_1" , 1 , index ) 
+end 
+cmdchat ( string . format ( "RefreshDungeonTimer %d %d" , 1 , d . getf ( "real_time" ) - real_time ) ) 
+else 
+cmdchat ( string . format ( "RefreshDungeonTimer %d %d" , d . getf ( "level" ) , d . getf ( "real_time" ) - real_time ) ) 
+end 
+else 
+pc . warp ( 591400 , 99200 ) 
+end 
+end 
+end 
+ return end 

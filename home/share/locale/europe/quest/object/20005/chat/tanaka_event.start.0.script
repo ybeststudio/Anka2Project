@@ -1,0 +1,17 @@
+if pc . count_item ( 30202 ) < 1 then 
+say_title ( mob_name ( 20005 ) ) 
+say_new ( "[ENTER]Arghh, öylece durmayi birak ve bana Tanaka'nin Kulagini getir! [ENTER]" ) 
+else 
+say_title ( mob_name ( 20005 ) ) 
+say_new ( "[ENTER]Görünüse göre bu hirsizlari avlamakla mesgulmüssün. Tanaka'nin Kulagi karsiliginda seni bir seyle ödüllendirecegim, sadece ne istediginden emin degilim. [ENTER]" ) 
+say_reward_new ( "Tanaka'nin Kulagini rastgele bir esya ile degistirmek ister misiniz? [ENTER]" ) 
+if select ( "Evet" , "Hayir" ) == 1 then 
+local Reward = { 
+[ 1 ] = { 11299 , 1 } , 
+[ 2 ] = { 11299 , 1 } , 
+} 
+local item = math . random ( 1 , 2 ) 
+pc . remove_item ( 30202 , 1 ) 
+pc . give_item ( Reward [ item ] [ 1 ] , Reward [ item ] [ 2 ] ) 
+end 
+end 

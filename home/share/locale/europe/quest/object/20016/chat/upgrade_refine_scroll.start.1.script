@@ -1,0 +1,51 @@
+say_title ( "Demirci:" ) 
+say ( "Ejderha Tanrýsý kaðýdý geliþtirmelerinde baþarý " ) 
+say ( "yüzdeni artýrýr. Eðer baþarýsýz olursan, sadece" ) 
+say ( "1 seviye düþer. Bu gizemli eþya bir tür kutsama" ) 
+say ( "kaðýdý olarak görülebilir." ) 
+say ( "" ) 
+wait ( ) 
+if pc . count_item ( 71026 ) == 0 then 
+say_title ( "Demirci:" ) 
+say ( "" ) 
+say ( "Bunu yapmak için büyülü metale" ) 
+say ( "ihtiyacýn var." ) 
+say ( "" ) 
+say_item ( "Büyülü Metal" , 71026 , "" ) 
+say ( "" ) 
+wait ( ) 
+end 
+if pc . count_item ( 25040 ) == 0 then 
+say_title ( "Demirci:" ) 
+say ( "Bunu üretebilmen için, kutsama kaðýdý gerekli." ) 
+say ( "" ) 
+say_item ( "Kutsama kaðýdý " , 25040 , "" ) 
+say ( "" ) 
+wait ( ) 
+end 
+say_title ( "Demirci:" ) 
+say ( "Tüm gereken eþyalara sahip misin? Bunlardan" ) 
+say ( "birini üretmek istiyor musun? Eðer kutsama kaðýdý " ) 
+say ( "ve büyülü demir madeni kullanýrsan, Ejderha" ) 
+say ( "Tanrýsý kaðýdý yapabilirsin." ) 
+say ( "" ) 
+local ss = select ( "Evet" , "Hayýr" ) 
+if 1 == ss then 
+if pc . count_item ( 71026 ) > 0 and pc . count_item ( 25040 ) > 0 then 
+pc . remove_item ( 71026 ) 
+pc . remove_item ( 25040 ) 
+pc . give_item2 ( 71032 ) 
+say_title ( "Demirci:" ) 
+say ( "Bir Ejderha Tanrýsý kaðýdý ürettin! " ) 
+say ( "Büyülü metal kullandýðýn zaman," ) 
+say ( "çok kolay bir Ejderha Tanrýsý kaðýdý " ) 
+say ( "yaparsýn." ) 
+say ( "" ) 
+say_item ( "Ejderha Tanrýsý kaðýdý " , 71032 , "" ) 
+else 
+say_title ( "Demirci:" ) 
+say ( "Ejderha Tanrýsý kaðýdý üretme iþlemi baþarýsýz" ) 
+say ( "oldu, çünkü gereken tüm eþyalara sahip deðilsin. " ) 
+say ( "" ) 
+end 
+end 

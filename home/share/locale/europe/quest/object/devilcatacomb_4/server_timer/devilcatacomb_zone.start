@@ -1,0 +1,21 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 4 then 
+d . clear_regen ( ) 
+d . purge ( ) 
+d . setf ( "level" , 5 ) 
+d . setf ( "q_level" , 1 ) 
+d . notice ( d . get_map_index ( ) , 681 , "" , false ) 
+GetMissionInfo ( d . getf ( "level" ) , d . getf ( "real_time" ) - get_global_time ( ) ) 
+d . jump_all ( 1362 + 3072 , 666 + 12032 ) 
+d . spawn_mob ( 20073 , 1260 , 674 ) 
+d . spawn_mob ( 20073 , 1302 , 661 ) 
+d . spawn_mob ( 20073 , 1337 , 691 ) 
+d . spawn_mob ( 20073 , 1312 , 727 ) 
+d . spawn_mob ( 20073 , 1261 , 706 ) 
+d . spawn_mob ( 8038 , 1302 , 681 ) 
+d . spawn_mob ( 8038 , 1320 , 699 ) 
+d . spawn_mob ( 8038 , 1308 , 712 ) 
+d . spawn_mob ( 8038 , 1285 , 713 ) 
+d . spawn_mob ( 8038 , 1275 , 687 ) 
+end 
+end 

@@ -1,0 +1,11 @@
+if d . select ( pc . get_map_index ( ) ) then 
+say_npc ( ) 
+say_new ( "[ENTER]Baslamak istiyor musunuz? [ENTER]" ) 
+local c = select ( "Evet" , "Iptal" ) 
+if c == 1 then 
+server_timer ( "nemere_1" , 1 , d . get_map_index ( ) ) 
+npc . purge ( ) 
+else 
+return 
+end 
+end 

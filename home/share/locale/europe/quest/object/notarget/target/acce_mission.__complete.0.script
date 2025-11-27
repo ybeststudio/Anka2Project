@@ -1,0 +1,18 @@
+target . delete ( "theowahdan_reward" ) 
+if pc . count_item ( 80019 ) < 40 then 
+say ( "Ne? Yeterli malzeme yok!" ) 
+say ( "" ) 
+say ( "Tekrar Yüzbaþý'yla konuþ!" ) 
+say ( "" ) 
+set_state ( "go_to_disciple" ) 
+else 
+say ( "Selam. Görüyorum ki ihtiyaç duyduðumuz bütün" ) 
+say ( "kumaþlarý toplamýþsýn. Artýk Sung Mahi'ye karþý " ) 
+say ( "savaþma gücüne sahip olduðun için çok mutluyum." ) 
+say ( "Tekrar görüþeceðiz!" ) 
+say_item_vnum ( 85005 ) 
+pc . remove_item ( 80019 , 40 ) 
+pc . give_item2_select ( 85005 , 1 ) 
+item . set_socket ( 1 , 1 ) 
+set_state ( "information" ) 
+end 

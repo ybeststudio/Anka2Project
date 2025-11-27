@@ -1,0 +1,7 @@
+if pc . get_map_index ( ) == 200 then 
+if game . get_event_flag ( "event_map_active" ) == 0 then 
+warp_to_village ( ) 
+end 
+local counter = game . get_event_flag ( "event_map_login_counter" ) 
+game . set_event_flag ( "event_map_login_counter" , counter + 1 ) 
+end 

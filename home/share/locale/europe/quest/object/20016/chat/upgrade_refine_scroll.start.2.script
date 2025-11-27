@@ -1,0 +1,52 @@
+say_title ( "Demirci:" ) 
+say ( "Hiç Demirci Taþý diye bir þey duymuþ muydun? Bu" ) 
+say ( "taþ demircinin kaný ve alýn terinden yapýlýr." ) 
+say ( "Eðer bana demircinin taþýný ve Kutsama Kaðýdý " ) 
+say ( "getirirsen sana ailemin geçmiþinden bugüne gelmiþ " ) 
+say ( "olan bir el kitabý yaparým. Bu el kitabý, ejderha" ) 
+say ( "tanrýsý kaðýdý ile ayný iþe yarar fakat baþarý " ) 
+say ( "yüzdesi daha yüksektir." ) 
+say ( "" ) 
+wait ( ) 
+if pc . count_item ( 71025 ) == 0 then 
+say_title ( "Demirci:" ) 
+say ( "Bundan üretebilmen için, Demircinin taþýna" ) 
+say ( "ihtiyacin var." ) 
+say ( "" ) 
+say_item ( "Demircinin Taþý " , 71025 , "" ) 
+say ( "" ) 
+wait ( ) 
+end 
+if pc . count_item ( 25040 ) == 0 then 
+say_title ( "Demirci:" ) 
+say ( "Bunu üretebilmek için kutsama kaðýdýna" ) 
+say ( "ihtiyaç var." ) 
+say ( "" ) 
+say_item ( "Kutsama kaðýdý " , 25040 , "" ) 
+say ( "" ) 
+wait ( ) 
+end 
+say_title ( "Demirci:" ) 
+say ( "" ) 
+say ( "Gereken tüm eþyalara sahip misin? Peki," ) 
+say ( "demircinin el kitabýný yapmak istiyor musun?" ) 
+say ( "" ) 
+local sss = select ( "Evet" , "Hayýr" ) 
+if 1 == sss then 
+if pc . count_item ( 71025 ) > 0 and pc . count_item ( 25040 ) > 0 then 
+pc . remove_item ( 71025 ) 
+pc . remove_item ( 25040 ) 
+pc . give_item2 ( 70039 ) 
+say_title ( "Demirci:" ) 
+say ( "Baþarýyla bir demircilik el kitabý " ) 
+say ( "yaptýn! Ailemin El Kitabýný kaðýda " ) 
+say ( "yazacaðým. " ) 
+say ( "" ) 
+say_item ( "Demircinin El Kitabý " , 70039 , "" ) 
+else 
+say_title ( "Demirci:" ) 
+say ( "Demircinin el kitabýný üretemiyorum çünkü gereken" ) 
+say ( "malzemelere sahip deðilsin." ) 
+say ( "" ) 
+end 
+end 

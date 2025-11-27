@@ -1,0 +1,14 @@
+local index = get_server_timer_arg ( ) 
+if d . select ( index ) then 
+d . new_kill_all ( ) 
+d . notice ( index , 733 , "" , false ) 
+d . setf ( "level" , 2 ) 
+d . regen_file ( "data/dungeon/hydra/second.txt" ) 
+server_timer ( "hydra_full_timer" , 60 * 10 , index ) 
+GetMissionInfo ( 2 , 60 * 10 ) 
+d . setf ( "real_time" , get_global_time ( ) + 60 * 10 ) 
+d . regen_file ( "data/dungeon/hydra/spawn3.txt" ) 
+d . regen_file ( "data/dungeon/hydra/spawn1.txt" ) 
+d . regen_file ( "data/dungeon/hydra/spawn2.txt" ) 
+d . clear_regen ( ) 
+end 

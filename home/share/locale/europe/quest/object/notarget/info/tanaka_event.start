@@ -1,0 +1,4 @@
+if game . get_event_flag ( "tanaka_event" ) > 0 then say_title ( "Korsan Tanaka Etkinligi" ) 
+say_new ( "[ENTER]Korsan Tanaka, Yongbi Çölü'nde rastgele yerlerde görünmeye baslayacak. Amaciniz onlari bulup avlamak. Tanaka hala hareket halinde, bu yüzden yeterince hizli ve çevik olmalisiniz. Etkinlik sona erdiginde, topladiginiz esyalari Yonah'a teslim edip baska esyalar alabileceksiniz. [ENTER]" ) 
+say_reward_new ( "Iyi avlar ve etkinligin tadini çikarin! [ENTER]" ) 
+ return end 

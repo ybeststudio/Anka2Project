@@ -1,0 +1,21 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+local level = d . getf ( "level" ) 
+local mob_count = d . count_monster ( ) 
+if level == 1 and mob_count <= 5 then 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+server_timer ( "Jp_2" , 5 , d . get_map_index ( ) ) 
+GetMissionInfo ( 1 , 5 ) 
+elseif level == 3 and mob_count <= 5 then 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+server_timer ( "Jp_4" , 5 , d . get_map_index ( ) ) 
+GetMissionInfo ( 3 , 5 ) 
+elseif level == 4 and mob_count <= 5 then 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+server_timer ( "Jp_5" , 5 , d . get_map_index ( ) ) 
+GetMissionInfo ( 5 , 5 ) 
+elseif level == 6 and mob_count <= 5 then 
+d . notice ( d . get_map_index ( ) , 659 , "" , false ) 
+d . regen_file ( "data/dungeon/ice_dungeon/zone_6.txt" ) 
+d . spawn_mob ( 8058 , 570 , 649 ) 
+end 
+end 

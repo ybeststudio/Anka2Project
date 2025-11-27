@@ -1,0 +1,244 @@
+say_title ( gameforge . map_warp . _20_sayTitle ) 
+say ( gameforge . map_warp . _30_say ) 
+local main_set = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+if main_set == 2 then 
+return 
+end 
+if pc . get_level ( ) <= 10 then 
+say_title ( gameforge . map_warp . _20_sayTitle ) 
+say ( gameforge . map_warp . _40_say ) 
+return 
+end 
+local map = pc . get_map_index ( ) 
+local empire = pc . get_empire ( ) 
+local level = pc . get_level ( ) 
+local cost = math . floor ( level / 5 ) * 1000 
+if cost < 1000 then 
+cost = 1000 
+end 
+say_title ( gameforge . map_warp . _20_sayTitle ) 
+say ( gameforge . map_warp . _50_say ) 
+say_reward ( string . format ( gameforge . map_warp . _60_sayReward , cost ) ) 
+if map == 1 or map == 3 or map == 21 or map == 23 or map == 41 or map == 43 then 
+local guild_map_names = { 
+gameforge . map_warp . _11_array , 
+gameforge . map_warp . _12_array , 
+gameforge . map_warp . _13_array , 
+} 
+guild_map_name = guild_map_names [ empire ] 
+local added_guild_map = { 
+gameforge . map_warp . _17_array , 
+gameforge . map_warp . _18_array , 
+gameforge . map_warp . _19_array , 
+} 
+added_guild_map = added_guild_map [ empire ] 
+local empire_castle = { 
+gameforge . map_warp . _14_array , 
+gameforge . map_warp . _15_array , 
+gameforge . map_warp . _16_array , 
+} 
+empire_castle = empire_castle [ empire ] 
+local sub_set = 0 
+if level < 60 then 
+if pc . count_item ( 30180 ) == 0 then 
+sub_set = select ( guild_map_name , gameforge . locale . map_name_4 , gameforge . locale . map_name_3 , gameforge . locale . map_name_1 , added_guild_map , gameforge . arena_manager . _200_tableInsert ) 
+if sub_set == 6 then 
+return 
+end 
+else 
+sub_set = select ( guild_map_name , gameforge . locale . map_name_4 , gameforge . locale . map_name_3 , gameforge . locale . map_name_1 , added_guild_map , gameforge . map_warp . _97_select , gameforge . arena_manager . _200_tableInsert ) 
+if sub_set == 7 then 
+return 
+end 
+end 
+else 
+if pc . count_item ( 30180 ) == 0 then 
+sub_set = select ( guild_map_name , gameforge . locale . map_name_4 , gameforge . locale . map_name_3 , gameforge . locale . map_name_1 , added_guild_map , gameforge . locale . levelup . prev_quest_go ) 
+else 
+sub_set = select ( guild_map_name , gameforge . locale . map_name_4 , gameforge . locale . map_name_3 , gameforge . locale . map_name_1 , added_guild_map , gameforge . map_warp . _97_select , gameforge . locale . levelup . prev_quest_go ) 
+end 
+if sub_set == 6 and pc . count_item ( 30180 ) == 0 then 
+sub_set = sub_set + 1 
+end 
+if sub_set == 7 then 
+say_title ( gameforge . map_warp . _20_sayTitle ) 
+say ( gameforge . map_warp . _70_say ) 
+say_reward ( string . format ( gameforge . map_warp . _80_sayReward , cost ) ) 
+sub_set = select ( gameforge . locale . map_name_2 , gameforge . map_warp . _90_select , gameforge . map_warp . _94_select , gameforge . map_warp . _95_select , gameforge . map_warp . _96_select , gameforge . arena_manager . _200_tableInsert ) + 6 
+if sub_set == 12 then 
+return 
+end 
+if sub_set == 11 then 
+say_title ( gameforge . map_warp . _20_sayTitle ) 
+say ( gameforge . map_warp . _100_say ) 
+say_reward ( string . format ( gameforge . map_warp . _110_sayReward , cost ) ) 
+say ( gameforge . map_warp . _120_sayReward ) 
+if pc . count_item ( 30180 ) == 0 then 
+sub_set = select ( guild_map_name , gameforge . locale . map_name_4 , gameforge . locale . map_name_3 , gameforge . locale . map_name_1 , added_guild_map , gameforge . locale . levelup . prev_quest_go ) 
+else 
+sub_set = select ( guild_map_name , gameforge . locale . map_name_4 , gameforge . locale . map_name_3 , gameforge . locale . map_name_1 , added_guild_map , gameforge . map_warp . _97_select , gameforge . locale . levelup . prev_quest_go ) 
+end 
+if sub_set == 6 and pc . count_item ( 30180 ) == 0 then 
+sub_set = sub_set + 1 
+end 
+if sub_set == 7 then 
+say_title ( gameforge . map_warp . _20_sayTitle ) 
+say ( gameforge . map_warp . _130_say ) 
+say_reward ( string . format ( gameforge . map_warp . _140_sayReward , cost ) ) 
+sub_set = select ( gameforge . locale . map_name_2 , gameforge . map_warp . _90_select , gameforge . map_warp . _94_select , gameforge . map_warp . _95_select , gameforge . arena_manager . _200_tableInsert ) + 6 
+if sub_set == 11 then 
+return 
+end 
+end 
+end 
+end 
+end 
+if pc . gold < cost then 
+say_title ( gameforge . map_warp . _20_sayTitle ) 
+say ( gameforge . map_warp . _150_say ) 
+say_reward ( string . format ( gameforge . map_warp . _160_sayReward , cost ) ) 
+return 
+end 
+pc . changegold ( - cost ) 
+local warp = { 
+{ 
+{ 135600 , 4300 } , 
+{ 179500 , 1000 } , 
+{ 271800 , 13000 } , 
+} , 
+{ 
+{ 402100 , 673900 } , 
+{ 270400 , 739900 } , 
+{ 321300 , 808000 } , 
+} , 
+{ 
+{ 217800 , 627200 } , 
+{ 221900 , 502700 } , 
+{ 344000 , 502500 } , 
+} , 
+{ 
+{ 434200 , 290600 } , 
+{ 375200 , 174900 } , 
+{ 491800 , 173600 } , 
+} , 
+{ 
+{ 204800 , 204800 } , 
+{ 614400 , 384000 } , 
+{ 256000 , 819200 } , 
+} , 
+{ 
+{ 287800 , 799700 } , 
+{ 275500 , 800000 } , 
+{ 277000 , 788000 } , 
+} , 
+{ 
+{ 599400 , 756300 } , 
+{ 597800 , 622200 } , 
+{ 730700 , 689800 } , 
+} , 
+{ 
+{ 590500 , 110500 } , 
+{ 590500 , 110500 } , 
+{ 590500 , 110500 } , 
+} , 
+{ 
+{ 290000 , 5600 } , 
+{ 290000 , 5600 } , 
+{ 290000 , 5600 } , 
+} , 
+{ 
+{ 1.1195e+06 , 70200 } , 
+{ 1.1195e+06 , 70200 } , 
+{ 1.1195e+06 , 70200 } , 
+} , 
+} 
+test_chat ( warp [ sub_set ] [ empire ] [ 1 ] .. warp [ sub_set ] [ empire ] [ 2 ] ) 
+say_title ( gameforge . map_warp . _20_sayTitle ) 
+say ( gameforge . map_warp . _170_say ) 
+wait ( ) 
+if pc . is_dead ( ) == false then 
+pc . warp ( warp [ sub_set ] [ empire ] [ 1 ] , warp [ sub_set ] [ empire ] [ 2 ] ) 
+else 
+return 
+end 
+else 
+local sub_set2 = 4 
+if pc . count_item ( 30180 ) == 0 then 
+if empire == 1 then 
+sub_set2 = select ( gameforge . map_warp . _180_select , gameforge . map_warp . _190_select , gameforge . arena_manager . _200_tableInsert ) 
+elseif empire == 2 then 
+sub_set2 = select ( gameforge . map_warp . _200_select , gameforge . map_warp . _210_select , gameforge . arena_manager . _200_tableInsert ) 
+elseif empire == 3 then 
+sub_set2 = select ( gameforge . map_warp . _220_select , gameforge . map_warp . _230_select , gameforge . arena_manager . _200_tableInsert ) 
+end 
+if sub_set2 == 3 then 
+return 
+end 
+else 
+if empire == 1 then 
+sub_set2 = select ( gameforge . map_warp . _180_select , gameforge . map_warp . _190_select , gameforge . map_warp . _97_select , gameforge . arena_manager . _200_tableInsert ) 
+elseif empire == 2 then 
+sub_set2 = select ( gameforge . map_warp . _200_select , gameforge . map_warp . _210_select , gameforge . map_warp . _97_select , gameforge . arena_manager . _200_tableInsert ) 
+elseif empire == 3 then 
+sub_set2 = select ( gameforge . map_warp . _220_select , gameforge . map_warp . _230_select , gameforge . map_warp . _97_select , gameforge . arena_manager . _200_tableInsert ) 
+end 
+if sub_set2 == 4 then 
+return 
+end 
+end 
+if sub_set2 ~= 4 then 
+if pc . gold < cost then 
+say_title ( gameforge . map_warp . _20_sayTitle ) 
+say ( gameforge . map_warp . _150_say ) 
+say_reward ( string . format ( gameforge . map_warp . _160_sayReward , cost ) ) 
+else 
+if sub_set2 == 1 then 
+say_title ( gameforge . map_warp . _20_sayTitle ) 
+say ( gameforge . map_warp . _240_say ) 
+wait ( ) 
+if pc . is_dead ( ) == false then 
+if empire == 1 then 
+pc . warp ( 474300 , 954800 ) 
+elseif empire == 2 then 
+pc . warp ( 63800 , 166400 ) 
+elseif empire == 3 then 
+pc . warp ( 959900 , 269200 ) 
+end 
+else 
+return 
+end 
+elseif sub_set2 == 2 then 
+say_title ( gameforge . map_warp . _20_sayTitle ) 
+say ( gameforge . map_warp . _250_say ) 
+wait ( ) 
+if pc . is_dead ( ) == false then 
+if empire == 1 then 
+pc . warp ( 353100 , 882900 ) 
+elseif empire == 2 then 
+pc . warp ( 145500 , 240000 ) 
+elseif empire == 3 then 
+pc . warp ( 863900 , 246000 ) 
+end 
+else 
+return 
+end 
+elseif sub_set2 == 3 then 
+say_title ( gameforge . map_warp . _20_sayTitle ) 
+say ( gameforge . map_warp . _250_say ) 
+wait ( ) 
+if pc . is_dead ( ) == false then 
+if empire == 1 then 
+pc . warp ( 287800 , 799700 ) 
+elseif empire == 2 then 
+pc . warp ( 275500 , 800000 ) 
+elseif empire == 3 then 
+pc . warp ( 277000 , 788000 ) 
+end 
+else 
+return 
+end 
+end 
+pc . changegold ( - cost ) 
+end 
+end 
+end 

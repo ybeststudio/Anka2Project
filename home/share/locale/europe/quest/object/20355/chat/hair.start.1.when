@@ -1,0 +1,1 @@
+return pc . get_part ( 3 ) >= 1000 and pc . getqf ( "original_vnum" ) == 0 and nil == pc . get_wear ( 20 )

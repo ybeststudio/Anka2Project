@@ -1,0 +1,39 @@
+if pc . get_map_index ( ) >= 2.16e+06 and pc . get_map_index ( ) <= 2.16999e+06 and item . get_vnum ( ) == 50084 then if d . select ( pc . get_map_index ( ) ) then 
+local q_level = d . getf ( "q_level" ) 
+if q_level == 1 then 
+d . setf ( "stones" , 15 ) 
+d . setf ( "q_level" , 2 ) 
+d . spawn_group ( 2521 , 1299 , 709 , 0 , 1 , 1 ) 
+d . spawn_group ( 2521 , 1305 , 711 , 0 , 1 , 1 ) 
+d . spawn_group ( 2521 , 1295 , 720 , 0 , 1 , 1 ) 
+elseif q_level == 2 then 
+d . setf ( "q_level" , 3 ) 
+d . spawn_mob ( 2591 , 1302 , 681 ) 
+d . spawn_mob ( 2591 , 1320 , 699 ) 
+d . spawn_mob ( 2591 , 1308 , 712 ) 
+d . spawn_mob ( 2591 , 1285 , 713 ) 
+d . spawn_mob ( 2591 , 1275 , 687 ) 
+elseif q_level == 3 then 
+d . setf ( "q_level" , 4 ) 
+d . spawn_mob ( 8038 , 1302 , 681 ) 
+d . spawn_mob ( 8038 , 1320 , 699 ) 
+d . spawn_mob ( 8038 , 1308 , 712 ) 
+d . spawn_mob ( 8038 , 1285 , 713 ) 
+d . spawn_mob ( 8038 , 1275 , 687 ) 
+d . spawn_mob ( 8038 , 1324 , 660 ) 
+d . spawn_mob ( 8038 , 1262 , 659 ) 
+d . spawn_mob ( 8038 , 1290 , 733 ) 
+d . spawn_mob ( 8038 , 1350 , 697 ) 
+d . spawn_mob ( 8038 , 1297 , 700 ) 
+elseif q_level == 4 then 
+d . setf ( "q_level" , 5 ) 
+d . spawn_mob ( 2597 , 1303 , 704 ) 
+elseif q_level == 5 then 
+d . jump_all ( 3146 , 13189 ) 
+d . notice ( d . get_map_index ( ) , 682 , "" , false ) 
+d . setf ( "level" , 6 ) 
+end 
+item . remove ( ) 
+npc . purge ( ) 
+end 
+ return end 

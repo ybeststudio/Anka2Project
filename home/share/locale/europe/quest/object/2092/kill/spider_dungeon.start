@@ -1,0 +1,4 @@
+if pc . get_map_index ( ) >= 2.17e+06 and pc . get_map_index ( ) <= 2.17999e+06 then server_timer ( "spider_barones_dead_timer" , 1 , d . get_map_index ( ) ) 
+d . spawn_mob ( 30130 , pc . get_local_x ( ) - 5 , pc . get_local_y ( ) + 5 ) 
+d . setf ( "dungeon_empire" , pc . get_empire ( ) ) 
+ return end 

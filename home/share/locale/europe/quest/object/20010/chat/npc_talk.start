@@ -1,0 +1,11 @@
+if pc . get_map_index ( ) ~= 1 or pc . get_map_index ( ) ~= 21 or pc . get_map_index ( ) ~= 41 then say_title ( "Seyyar Satýcý:" ) 
+say ( "" ) 
+say ( "Savas baþladýðýndan beri iþlerim" ) 
+say ( "çok kötü gitmeye baþladý. " ) 
+say ( "Daha önceleri tüccarlar birliði " ) 
+say ( "çok güçlüydü, fakat þimdi her þey " ) 
+say ( "tersine döndü. Vahþi hayvanlara," ) 
+say ( "Savasçýlara ve Siyah Rüzgar çetesine" ) 
+say ( "daha fazla aldýrmamazlýk edemiyoruz." ) 
+say ( "Sanki bizi kullanýyorlar..." ) 
+ return end 

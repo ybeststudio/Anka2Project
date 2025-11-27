@@ -1,0 +1,91 @@
+say_title ( mob_name ( 20348 ) ) 
+say_new ( "[ENTER]Zindana girmek istiyor musunuz? [ENTER]" ) 
+local playerSelect = select ( "Yalniz" , "Grupla" , "Iptal" ) 
+if playerSelect == 1 then 
+say_title ( mob_name ( 20348 ) ) 
+say_new ( "[ENTER]Baslamak istiyor musunuz? [ENTER]" ) 
+local x = select ( "Evet" , "Iptal" ) 
+if x == 1 then 
+if not pc . is_gm ( ) and pc . getf ( "deviltower_zone" , "cooldown" ) > get_global_time ( ) then 
+local r_cooldown = pc . getf ( "deviltower_zone" , "cooldown" ) - get_global_time ( ) 
+say_title ( mob_name ( 20348 ) ) 
+say_new ( "" ) 
+say_new ( r_cooldown .. " saniye kaldi tekrar girmek için! [ENTER]" ) 
+return 
+end 
+d . new_jump ( 66 , 2174 * 100 , 7040 * 100 ) 
+d . setf ( "DungeonBlock" , 1 ) 
+d . setf ( "level" , 2 ) 
+else 
+return 
+end 
+elseif playerSelect == 2 then 
+say_title ( mob_name ( 20348 ) ) 
+say_new ( "[ENTER]Grupla girmek istiyor musunuz? [ENTER]" ) 
+local x = select ( "Evet" , "Iptal" ) 
+if x == 1 then 
+if not party . is_party ( ) then 
+say_title ( mob_name ( 20348 ) ) 
+say_new ( "[ENTER]Bir grupta degilsiniz! [ENTER]" ) 
+return 
+end 
+if party . get_near_count ( ) < 2 then 
+say_title ( mob_name ( 20348 ) ) 
+say_new ( "[ENTER]Bir grup üyesi müsait degil! [ENTER]" ) 
+return 
+end 
+local user_fail_level = { } 
+local user_fail_ticket = { } 
+local user_fail_cooldown = { } 
+local LevelCheck = true 
+local CooldownCheck = true 
+local pids = { party . get_member_pids ( ) } 
+for i , pid in next , pids , nil begin 
+q . begin_other_pc_block ( pid ) 
+if pc . get_level ( ) < 40 then 
+table . insert ( user_fail_level , pc . get_name ( ) ) 
+LevelCheck = false 
+end 
+if not pc . is_gm ( ) and pc . getf ( "deviltower_zone" , "cooldown" ) > get_global_time ( ) then 
+table . insert ( user_fail_cooldown , pc . get_name ( ) ) 
+CooldownCheck = false 
+end 
+q . end_other_pc_block ( ) 
+end 
+if LevelCheck == false then 
+say_new ( "Oyuncunun seviyesi çok düsük: [ENTER]" ) 
+local a = 1 
+for i , name in next , user_fail_level , nil begin 
+say_new ( string . format ( "%d. %s" , a , name ) ) 
+a = a + 1 
+end 
+say_new ( "" ) 
+return 
+end 
+if CooldownCheck == false then 
+say_new ( "Oyuncu beklemeli: [ENTER]" ) 
+local a = 1 
+for i , name in next , user_fail_cooldown , nil begin 
+say_new ( string . format ( "%d. %s" , a , name ) ) 
+a = a + 1 
+end 
+return 
+end 
+if LevelCheck == true and CooldownCheck == true then 
+for i , pid in next , pids , nil begin 
+q . begin_other_pc_block ( pid ) 
+q . end_other_pc_block ( ) 
+end 
+d . new_jump_party ( 66 , 2174 , 7040 ) 
+if d . select ( d . get_map_index ( ) ) then 
+d . spawn_mob_dir ( 20397 , 173 , 262 , 1 ) 
+d . setf ( "DungeonBlock" , 1 ) 
+d . setf ( "level" , 2 ) 
+end 
+end 
+else 
+return 
+end 
+else 
+return 
+end 

@@ -1,0 +1,128 @@
+if pc . get_level ( ) < 70 then 
+say_title ( mob_name ( 20371 ) ) 
+say_new ( "[ENTER]Minimum seviye 70 ve maksimum 90'dir. [ENTER]" ) 
+return 
+end 
+local cooldown = pc . getf ( "spider_dungeon" , "cooldown" ) 
+local real_time = get_global_time ( ) 
+local r_cooldown = pc . getf ( "spider_dungeon" , "cooldown" ) - real_time 
+if not pc . is_gm ( ) and cooldown > real_time then 
+say_title ( mob_name ( 20371 ) ) 
+say_new ( "" ) 
+say_new ( r_cooldown .. " saniye kaldi tekrar girmek için! [ENTER]" ) 
+return 
+end 
+say_title ( mob_name ( 20371 ) ) 
+say_new ( "[ENTER]Zindana girmek istiyor musunuz? [ENTER]" ) 
+local x = select ( "Yalniz" , "Grupla" , "Iptal" ) 
+if x == 1 then 
+say_title ( mob_name ( 20371 ) ) 
+say_new ( "[ENTER]Baslamak istiyor musunuz? [ENTER]" ) 
+local c = select ( "Evet" , "Iptal" ) 
+if c == 1 then 
+if pc . count_item ( 30324 ) < 1 then 
+say_title ( mob_name ( 20371 ) ) 
+say_new ( "[ENTER]Girmek için anahtariniz yok! [ENTER]" ) 
+say_item_vnum ( 30324 , 1 ) 
+return 
+else 
+pc . remove_item ( 30324 , 1 ) 
+d . new_jump ( 217 , 881 * 100 , 6148 * 100 ) 
+if d . select ( d . get_map_index ( ) ) then 
+d . setf ( "DungeonBlock" , 1 ) 
+d . setf ( "first_regen" , 1 ) 
+end 
+end 
+else 
+return 
+end 
+elseif x == 2 then 
+if party . is_party ( ) then 
+if party . get_near_count ( ) < 2 then 
+say_title ( mob_name ( 20371 ) ) 
+say_new ( "[ENTER]Bir grupta degilsiniz! [ENTER]" ) 
+return 
+end 
+say_title ( mob_name ( 20371 ) ) 
+say_new ( "[ENTER]Grupla girmek istiyor musunuz? [ENTER]" ) 
+local c = select ( "Evet" , "Iptal" ) 
+if c == 1 then 
+if pc . count_item ( 30324 ) < 1 then 
+say_title ( mob_name ( 20371 ) ) 
+say_new ( "[ENTER]Girmek için anahtariniz yok! [ENTER]" ) 
+say_item_vnum ( 30324 , 1 ) 
+return 
+else 
+local user_fail_level = { } 
+local user_fail_cooldown = { } 
+local user_fail_ticket = { } 
+local LevelCheck = true 
+local CooldownCheck = true 
+local TicketCheck = true 
+local pids = { party . get_member_pids ( ) } 
+for i , pid in next , pids , nil begin 
+q . begin_other_pc_block ( pid ) 
+if pc . get_level ( ) < 50 then 
+table . insert ( user_fail_level , pc . get_name ( ) ) 
+LevelCheck = false 
+end 
+if pc . getf ( "spider_dungeon" , "cooldown" ) > get_global_time ( ) then 
+table . insert ( user_fail_cooldown , pc . get_name ( ) ) 
+CooldownCheck = false 
+end 
+if pc . count_item ( 30324 ) < 1 then 
+table . insert ( user_fail_ticket , pc . get_name ( ) ) 
+TicketCheck = false 
+end 
+q . end_other_pc_block ( ) 
+end 
+if LevelCheck == false then 
+say_new ( "Oyuncunun seviyesi çok düsük: [ENTER]" ) 
+local a = 1 
+for i , name in next , user_fail_level , nil begin 
+say_new ( string . format ( "%d. %s" , a , name ) ) 
+a = a + 1 
+end 
+return 
+end 
+if CooldownCheck == false then 
+say_new ( "Oyuncu beklemeli: [ENTER]" ) 
+local a = 1 
+for i , name in next , user_fail_cooldown , nil begin 
+say_new ( string . format ( "%d. %s" , a , name ) ) 
+a = a + 1 
+end 
+return 
+end 
+if TicketCheck == false then 
+say_new ( "Oyuncunun anahtari yok: [ENTER]" ) 
+local a = 1 
+for i , name in next , user_fail_ticket , nil begin 
+say_new ( string . format ( "%d. %s" , a , name ) ) 
+a = a + 1 
+end 
+return 
+else 
+for i , pid in next , pids , nil begin 
+q . begin_other_pc_block ( pid ) 
+pc . remove_item ( 30324 , 1 ) 
+q . end_other_pc_block ( ) 
+end 
+end 
+d . new_jump_party ( 217 , 881 , 6148 ) 
+if d . select ( d . get_map_index ( ) ) then 
+d . setf ( "DungeonBlock" , 1 ) 
+d . setf ( "first_regen" , 1 ) 
+end 
+end 
+else 
+return 
+end 
+else 
+say_title ( mob_name ( 20371 ) ) 
+say_new ( "[ENTER]Bir grupta degilsiniz! [ENTER]" ) 
+return 
+end 
+else 
+return 
+end 

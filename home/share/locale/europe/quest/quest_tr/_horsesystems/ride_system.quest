@@ -1,0 +1,763 @@
+quest binek_sistemi begin
+	state start begin
+		when 20349.chat."Yeni bir bineğe binmek istiyorum!" begin
+		say_title("Seyis")
+		say("Şiişt! Hala at sırtında mı gidiyorsun?")
+		say("İnanamıyorum?! Artık yabani hayvanı ehlileştirme")
+		say("diye bir şey var, hiç duymadın mı?")
+		say("")
+		wait()
+		say_title("Seyis")
+		say("Ehlileştirilmiş yaban hayvanlarını savaş için")
+		say("eğitebilmen için derin binicilik bilgisine sahip")
+		say("olmalısın. Ayrıca şu eşyalar da sana lazım")
+		say("olacak: bineğini yabani binek hayvanı yapmak için")
+		say("evrim parşömeni; bineğini cesur binek hayvanı ")
+		say("yapmak için de mutasyon parşömeni gerekir.")
+		say("")
+		wait()
+		say_title("Seyis")
+		say("Daha fazla soruların olursa dilediğin zaman")
+		say("yanıma gelebilirsin. Sana elimden geldiği kadar")
+		say("yardımcı olacağım.")
+		say("")
+		set_state(binek_basla)
+		end
+	end
+	
+	state binek_basla begin
+		when 20349.chat."Sertifikayı binek ile değiştir" with pc.count_item("52701") >0 or pc.count_item("52702") >0 or pc.count_item("52703") >0 or pc.count_item("52704") >0 or pc.count_item("52705") >0 or pc.count_item("52706") >0 or pc.count_item("52707") >0 or pc.count_item("52708") >0 begin
+		say_title("Seyis")
+		say("Sertifikanı bir binek ile mi değiştirmek")
+		say("istiyorsun? Bakalım hangisini getirdin. Çok")
+		say("sayıda sertifikaya sahipsen, önümüzdeki adımlarda")
+		say("aralarından bir tane seçebilirsin.")
+		wait()
+			if pc.count_item(52701) >0 then
+			say_title("Seyis")
+			say("Bu bineği almak istiyorsun, öyle mi? Öyleyse")
+			say("'Evet' ile onayla ve bir sonraki adımda onun")
+			say("için bir bonus seç. Sonraki sertifikaya gitmek")
+			say("için 'Hayır' seç.")
+			say_item_vnum(52701)
+			say("Emin misin?")
+			local s = select("Evet","Hayır","Vazgeç ")
+				if s == 3 then
+				return
+				elseif s == 1 then
+				say_title("Seyis")
+				say("Şimdi de bir bonus seç.")
+				local a = select ("Canavarlara karşı güçlü ","Tecrübe (EXP)","Hayat Puanı (HP)","Savunma (Sav)","Saldırı değeri (SD)","Kalsın, teşekkür ederim.")						
+					if a == 1 then				
+					pc.remove_item("52701",1)				
+					pc.give_item2("52031",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 2 then
+					pc.remove_item("52701",1)
+					pc.give_item2("52032",1)				
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 3 then
+					pc.remove_item("52701",1)
+					pc.give_item2("52033",1)					
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 4 then
+					pc.remove_item("52701",1)
+					pc.give_item2("52034",1)					
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 5 then
+					pc.remove_item("52701",1)
+					pc.give_item2("52035",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 6 then
+					say_title("Seyis")
+					say("Henüz karar veremiyorsun galiba. Hazır olduğunda")
+					say("tekrar gel.")
+					return
+					end
+				else
+					if pc.count_item("52702") + pc.count_item("52703") + pc.count_item("52704") + pc.count_item("52705") + pc.count_item("52706") + pc.count_item("52707") + pc.count_item("52708") == 0 then
+					say_title("Seyis")
+					say("Demek sertifikanı değiştirmek istemiyorsun. Hazır")
+					say("olduğunda tekrar gel.")
+					return
+					end
+				end
+			end
+			if pc.count_item(52702) >0 then
+			say_title("Seyis")
+			say("Bu bineği almak istiyorsun, öyle mi? Öyleyse")
+			say("'Evet' ile onayla ve bir sonraki adımda onun")
+			say("için bir bonus seç. Sonraki sertifikaya gitmek")
+			say("için 'Hayır' seç.")
+			say_item_vnum(52702)
+			say("Emin misin?")
+			local s = select("Evet","Hayır","Vazgeç ")
+				if s == 3 then
+				return
+				elseif s == 1 then
+				say_title("Seyis")
+				say("Şimdi de bir bonus seç.")
+				local a = select ("Canavarlara karşı güçlü ","Tecrübe (EXP)","Hayat Puanı (HP)","Savunma (Sav)","Saldırı değeri (SD)","Kalsın, teşekkür ederim.")						
+					if a == 1 then
+					pc.remove_item("52702",1)					
+					pc.give_item2("52046",1)		
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 2 then
+					pc.remove_item("52702",1)
+					pc.give_item2("52047",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 3 then
+					pc.remove_item("52702",1)
+					pc.give_item2("52048",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 4 then
+					pc.remove_item("52702",1)
+					pc.give_item2("52049",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 5 then
+					pc.remove_item("52702",1)
+					pc.give_item2("52050",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 6 then
+					say_title("Seyis")
+					say("Henüz karar veremiyorsun galiba. Hazır olduğunda")
+					say("tekrar gel.")
+					return
+					end
+				else
+					if pc.count_item("52703") + pc.count_item("52704") + pc.count_item("52705") + pc.count_item("52706") + pc.count_item("52707") + pc.count_item("52708") == 0 then
+					say_title("Seyis")
+					say("Demek sertifikanı değiştirmek istemiyorsun. Hazır")
+					say("olduğunda tekrar gel.")
+					return
+					end
+				end
+			end
+			if pc.count_item(52703) >0 then
+			say_title("Seyis")
+			say("Bu bineği almak istiyorsun, öyle mi? Öyleyse")
+			say("'Evet' ile onayla ve bir sonraki adımda onun")
+			say("için bir bonus seç. Sonraki sertifikaya gitmek")
+			say("için 'Hayır' seç.")
+			say_item_vnum(52703)
+			say("Emin misin?")
+			local s = select("Evet","Hayır","Vazgeç ")
+				if s == 3 then
+				return
+				elseif s == 1 then
+				say_title("Seyis")
+				say("Şimdi de bir bonus seç.")
+				local a = select ("Canavarlara karşı güçlü ","Tecrübe (EXP)","Hayat Puanı (HP)","Savunma (Sav)","Saldırı değeri (SD)","Kalsın, teşekkür ederim.")						
+					if a == 1 then
+					pc.remove_item("52703",1)					
+					pc.give_item2("52001",1)				
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 2 then
+					pc.remove_item("52703",1)
+					pc.give_item2("52002",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 3 then
+					pc.remove_item("52703",1)
+					pc.give_item2("52003",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 4 then
+					pc.remove_item("52703",1)
+					pc.give_item2("52004",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 5 then
+					pc.remove_item("52703",1)
+					pc.give_item2("52005",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 6 then
+					say_title("Seyis")
+					say("Henüz karar veremiyorsun galiba. Hazır olduğunda")
+					say("tekrar gel.")
+					return
+					end
+				else
+					if pc.count_item("52704") + pc.count_item("52705") + pc.count_item("52706") + pc.count_item("52707") + pc.count_item("52708") == 0 then
+					say_title("Seyis")
+					say("Demek sertifikanı değiştirmek istemiyorsun. Hazır")
+					say("olduğunda tekrar gel.")
+					return
+					end
+				end
+			end
+			if pc.count_item(52704) >0 then
+			say_title("Seyis")
+			say("Bu bineği almak istiyorsun, öyle mi? Öyleyse")
+			say("'Evet' ile onayla ve bir sonraki adımda onun")
+			say("için bir bonus seç. Sonraki sertifikaya gitmek")
+			say("için 'Hayır' seç.")
+			say_item_vnum(52704)
+			say("Emin misin?")
+			local s = select("Evet","Hayır","Vazgeç ")
+				if s == 3 then
+				return
+				elseif s == 1 then
+				say_title("Seyis")
+				say("Şimdi de bir bonus seç.")
+				local a = select ("Canavarlara karşı güçlü ","Tecrübe (EXP)","Hayat Puanı (HP)","Savunma (Sav)","Saldırı değeri (SD)","Kalsın, teşekkür ederim.")						
+					if a == 1 then
+					pc.remove_item("52704",1)
+					pc.give_item2("52016",1)					
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 2 then
+					pc.remove_item("52704",1)
+					pc.give_item2("52017",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 3 then
+					pc.remove_item("52704",1)
+					pc.give_item2("52018",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 4 then
+					pc.remove_item("52704",1)
+					pc.give_item2("52019",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 5 then
+					pc.remove_item("52704",1)
+					pc.give_item2("52020",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 6 then
+					say_title("Seyis")
+					say("Henüz karar veremiyorsun galiba. Hazır olduğunda")
+					say("tekrar gel.")
+					return
+					end
+				else
+					if pc.count_item("52705") + pc.count_item("52706") + pc.count_item("52707") + pc.count_item("52708") == 0 then
+					say_title("Seyis")
+					say("Demek sertifikanı değiştirmek istemiyorsun. Hazır")
+					say("olduğunda tekrar gel.")
+					return
+					end
+				end
+			end
+			if pc.count_item(52705) >0 then
+			say_title("Seyis")
+			say("Bu bineği almak istiyorsun, öyle mi? Öyleyse")
+			say("'Evet' ile onayla ve bir sonraki adımda onun")
+			say("için bir bonus seç. Sonraki sertifikaya gitmek")
+			say("için 'Hayır' seç.")
+			say_item_vnum(52705)
+			say("Emin misin?")
+			local s = select("Evet","Hayır","Vazgeç ")
+				if s == 3 then
+				return
+				elseif s == 1 then
+				say_title("Seyis")
+				say("Şimdi de bir bonus seç.")
+				local a = select ("Canavarlara karşı güçlü ","Tecrübe (EXP)","Hayat Puanı (HP)","Savunma (Sav)","Saldırı değeri (SD)","Kalsın, teşekkür ederim.")						
+					if a == 1 then
+					pc.remove_item("52705",1)
+					pc.give_item2("52061",1)				
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 2 then
+					pc.remove_item("52705",1)
+					pc.give_item2("52062",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 3 then
+					pc.remove_item("52705",1)
+					pc.give_item2("52063",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 4 then
+					pc.remove_item("52705",1)
+					pc.give_item2("52064",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 5 then
+					pc.remove_item("52705",1)
+					pc.give_item2("52065",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 6 then
+					say_title("Seyis")
+					say("Henüz karar veremiyorsun galiba. Hazır olduğunda")
+					say("tekrar gel.")
+					return
+					end
+				else
+					if pc.count_item("52706") + pc.count_item("52707") + pc.count_item("52708") == 0 then
+					say_title("Seyis")
+					say("Demek sertifikanı değiştirmek istemiyorsun. Hazır")
+					say("olduğunda tekrar gel.")
+					return
+					end
+				end
+			end
+			if pc.count_item(52706) >0 then
+			say_title("Seyis")
+			say("Bu bineği almak istiyorsun, öyle mi? Öyleyse")
+			say("'Evet' ile onayla ve bir sonraki adımda onun")
+			say("için bir bonus seç. Sonraki sertifikaya gitmek")
+			say("için 'Hayır' seç.")
+			say_item_vnum(52706)
+			say("Emin misin?")
+			local s = select("Evet","Hayır","Vazgeç ")
+				if s == 3 then
+				return
+				elseif s == 1 then
+				say_title("Seyis")
+				say("Şimdi de bir bonus seç.")
+				local a = select ("Canavarlara karşı güçlü ","Tecrübe (EXP)","Hayat Puanı (HP)","Savunma (Sav)","Saldırı değeri (SD)","Kalsın, teşekkür ederim.")						
+					if a == 1 then
+					pc.remove_item("52706",1)
+					pc.give_item2("52076",1)				
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 2 then
+					pc.remove_item("52706",1)
+					pc.give_item2("52077",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 3 then
+					pc.remove_item("52706",1)
+					pc.give_item2("52078",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 4 then
+					pc.remove_item("52706",1)
+					pc.give_item2("52079",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 5 then
+					pc.remove_item("52706",1)
+					pc.give_item2("52080",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 6 then
+					say_title("Seyis")
+					say("Henüz karar veremiyorsun galiba. Hazır olduğunda")
+					say("tekrar gel.")
+					return
+					end
+				else
+					if pc.count_item("52707") + pc.count_item("52708") == 0 then
+					say_title("Seyis")
+					say("Demek sertifikanı değiştirmek istemiyorsun. Hazır")
+					say("olduğunda tekrar gel.")
+					return
+					end
+				end
+			end
+			if pc.count_item(52707) >0 then
+			say_title("Seyis")
+			say("Bu bineği almak istiyorsun, öyle mi? Öyleyse")
+			say("'Evet' ile onayla ve bir sonraki adımda onun")
+			say("için bir bonus seç. Sonraki sertifikaya gitmek")
+			say("için 'Hayır' seç.")
+			say_item_vnum(52707)
+			say("Emin misin?")
+			local s = select("Evet","Hayır","Vazgeç ")
+				if s == 3 then
+				return
+				elseif s == 1 then
+				say_title("Seyis")
+				say("Şimdi de bir bonus seç.")
+				local a = select ("Canavarlara karşı güçlü ","Tecrübe (EXP)","Hayat Puanı (HP)","Savunma (Sav)","Saldırı değeri (SD)","Kalsın, teşekkür ederim.")						
+					if a == 1 then
+					pc.remove_item("52707",1)
+					pc.give_item2("52091",1)				
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 2 then
+					pc.remove_item("52707",1)
+					pc.give_item2("52092",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 3 then
+					pc.remove_item("52707",1)
+					pc.give_item2("52093",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 4 then
+					pc.remove_item("52707",1)
+					pc.give_item2("52094",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 5 then
+					pc.remove_item("52707",1)
+					pc.give_item2("52095",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 6 then
+					say_title("Seyis")
+					say("Henüz karar veremiyorsun galiba. Hazır olduğunda")
+					say("tekrar gel.")
+					return
+					end
+				else
+					if pc.count_item("52708") == 0 then
+					say_title("Seyis")
+					say("Demek sertifikanı değiştirmek istemiyorsun. Hazır")
+					say("olduğunda tekrar gel.")
+					return
+					end
+				end
+			end
+			if pc.count_item(52708) >0 then
+			say_title("Seyis")
+			say("Bu bineği almak istiyorsun, öyle mi? Öyleyse")
+			say("'Evet' ile onayla ve bir sonraki adımda onun")
+			say("için bir bonus seç. Sonraki sertifikaya gitmek")
+			say("için 'Hayır' seç.")
+			say_item_vnum(52708)
+			say("Emin misin?")
+			local s = select("Evet","Hayır","Vazgeç ")
+				if s == 3 then
+				return
+				elseif s == 1 then
+				say_title("Seyis")
+				say("Şimdi de bir bonus seç.")
+				local a = select ("Canavarlara karşı güçlü ","Tecrübe (EXP)","Hayat Puanı (HP)","Savunma (Sav)","Saldırı değeri (SD)","Kalsın, teşekkür ederim.")						
+					if a == 1 then
+					pc.remove_item("52708",1)
+					pc.give_item2("52106",1)				
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 2 then
+					pc.remove_item("52708",1)
+					pc.give_item2("52107",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 3 then
+					pc.remove_item("52708",1)
+					pc.give_item2("52108",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 4 then
+					pc.remove_item("52708",1)
+					pc.give_item2("52109",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 5 then
+					pc.remove_item("52708",1)
+					pc.give_item2("52110",1)
+					say_title("Seyis")
+					say("İyi bir seçim. Başarılar!")
+					return
+					elseif a == 6 then
+					say_title("Seyis")
+					say("Henüz karar veremiyorsun galiba. Hazır olduğunda")
+					say("tekrar gel.")
+					return
+					end
+				else
+				say_title("Seyis")
+				say("Demek sertifikanı değiştirmek istemiyorsun. Hazır")
+				say("olduğunda tekrar gel.")
+				return
+				end
+			end
+		end
+		
+		when 20349.chat."Bineğimi geliştirmek istiyorum!" begin
+		say_title("Seyis")
+		say("Demek bineğini geliştirmek istiyorsun, öyle mi?")
+		say("Nasıl yapıldığını biliyor musun? Hadi gel")
+		say("anlatayım.")
+		wait()
+		say_title("Seyis")
+		say("Bineğini geliştirip yabani binek hayvanı ")
+		say("yapabilmen için evrim parşömeni arayışına")
+		say("çıkmalısın. Sonra yaban hayvanını eğitip cesur")
+		say("binek hayvanı yapabilmen içinde mutasyon")
+		say("parşömeni bulmalısın. Tehlikeli")
+		say("devlerin yaşadığı çok uzak bir diyarda saklı ")
+		say("oldukları söyleniyor!")
+		wait()
+		say_title("Seyis")
+		say("Bana o parşömenlerden birini getirirsen bineğini")
+		say("geliştireceğim. Getirdin mi yoksa?")
+		local a = select ("Evet, bineğimi geliştirmek istiyorum!","Hayır, şimdi değil.")
+			if a == 2 then
+			return
+			else
+				if pc.countitem("50067") > 0 or pc.countitem("50068") > 0 then
+				say_title("Seyis")
+				say("Ah, parşömenlerden birini getirmişsin. Hangisini")
+				say("getirdin? Evrim parşömeniyle tecrübesiz yavru")
+				say("hayvanını savaş için eğitiyorsun. Sonra da")
+				say("mutasyon parşömeniyle geliştirip cesur binek")
+				say("hayvanı yapabiliyorsun.")
+				local b = select("Evrim parşömeni bende.","Mutasyon parşömeni bende.","Parşömen getirmedim.")
+					if b == 3 then
+					return
+					elseif b == 1 then
+					say_title("Seyis")
+					say("Ah işte evrim parşömeni! Binek hayvanı mührüne")
+					say("bir göz atayım. Sahtesiyle beni kandırmaya")
+					say("çalışan nicelerini gördüm! İlk önce gerçek olup")
+					say("olmadığına bakacağım. Ver bakalım. (Mührü seyisin")
+					say("üzerine çek.) ")
+					elseif b == 2 then
+					say_title("Seyis")
+					say("Ah işte mutasyon parşömeni! Binek hayvanı mührüne")
+					say("bir göz atayım. Sahtesiyle beni kandırmaya")
+					say("çalışan nicelerini gördüm! İlk önce gerçek olup")
+					say("olmadığına bakacağım. Ver bakalım. (Mührü seyisin")
+					say("üzerine çek.) ")
+					end
+				else
+				say_title("Seyis")
+				say("Kusura bakma ama doğru belgeler olmadan sana")
+				say("yardımcı olamam. Yine beni işletmeye kalkışma")
+				say("yoksa fena yaparım.")
+				say("")
+				end
+			end
+		end
+		
+		when 20349.chat."At becerileri kullanabilir miyim?" begin
+		say_title("Seyis")
+		say("At becerilerini kullanmak istiyorsun, öyle mi?")
+		say("Senin de isteklerin bitmiyor Gerçi onu ben bile")
+		say("isterim... Neyse, onu öğrenebilmek için bir takım")
+		say("kurallara uymalısın.")
+		wait()
+		say_title("Seyis")
+		say("İlk olarak at binmeyi öğrenmelisin, aksi takdirde")
+		say("senin için çok tehlikeli olabilir. Bunun dışında,")
+		say("savaşta kullanmaya elverişli bir bineğin olması ")
+		say("gerekir. Ancak o zaman at becerilerini kullanacak")
+		say("durumunda olur.")
+		wait()
+		say_title("Seyis")
+		say("Bineğin, at becerilerini kullanabilecek durumda")
+		say("mı? Değilse eğitime izin veremeyeceğim. Ne")
+		say("yapmayı düşünüyorsun?")
+		local abc = select("Evet","Hayır")
+			if abc == 1 then
+			say_title("Seyis")
+			say("Anlıyorum. Şimdi de gücünü ve binicilik bilgini")
+			say("tahmin edeceğim. Bekle bir saniye.")
+			wait()
+			say_title("Seyis")
+			say("Korkarım bineğin henüz hazır değil. Savaşmaya")
+			say("daha hevesli olduğunda tekrar gel.")
+			end
+		end
+		
+		when 20349.take with item.vnum >= 52031 and item.vnum <= 52035 or item.vnum >= 52001 and item.vnum <= 52005 or item.vnum >= 52016 and item.vnum <= 52020 or item.vnum >= 52046 and item.vnum <= 52050 or item.vnum >= 52061 and item.vnum <= 52065 or item.vnum >= 52031 and item.vnum <= 52036 or item.vnum >= 52076 and item.vnum <= 52080 or item.vnum >= 52091 and item.vnum <= 52095 or item.vnum >= 52106 and item.vnum <= 52110 begin
+		local vnum = item.get_vnum()
+			if pc.is_mount() then
+			say_title("Seyis")
+			say("Konuşurken bineğinden iner misin lütfen? Boynum")
+			say("tutuldu. Durmadan yukarı bakarak konuşmak zor")
+			say("oluyor.")
+			else
+				if pc.count_item(50067) >0 then
+				say_title("Seyis")
+				say("Binek hayvanı mührünün ahı gitmiş vahı kalmış.")
+				say("Bekle yenisiyle değiştireyim.")
+				say("Buyur alabilirsin. Şimdi yabani binek hayvanını ")
+				say("çağırabilirsin. Mutasyon parşömenini keşfeder")
+				say("keşfetmez de yanıma dön. Sana daha güçlü bir")
+				say("binek hayvanı mührü hazırlayacağım.")
+				wait()
+				say_title("Seyis")
+				say("Bu mühür, dönüşmüş bineğini çağırmanı sağlar. Ona")
+				say("gözün gibi bak, değeri paha biçilemez!")
+				item.remove()
+				pc.remove_item("50067",1)
+				pc.give_item2(vnum+5,1)
+				else
+				say_title("Seyis")
+				say("Kusura bakma ama doğru belgeler olmadan sana")
+				say("yardımcı olamam. Yine beni işletmeye kalkışma")
+				say("yoksa fena yaparım.")
+				end
+			end
+		end
+		
+		when 20349.take with item.vnum >= 52036 and item.vnum <= 52040 or item.vnum >= 52006 and item.vnum <= 52010 or item.vnum >= 52021 and item.vnum <= 52025 or item.vnum >= 52051 and item.vnum <= 52055 or item.vnum >= 52066 and item.vnum <= 52070 or item.vnum >= 52036 and item.vnum <= 52040 or item.vnum >= 52081 and item.vnum <= 52085 or item.vnum >= 52096 and item.vnum <= 52100 or item.vnum >= 52111 and item.vnum <= 52115 begin
+			local vnum = item.get_vnum()
+			if pc.is_mount() then
+			say_title("Seyis")
+			say("Konuşurken bineğinden iner misin lütfen? Boynum")
+			say("tutuldu. Durmadan yukarı bakarak konuşmak zor")
+			say("oluyor.")
+			else
+				if pc.count_item(50068) >0 then
+				say_title("Seyis")
+				say("İşte sana bir müddet önce verdiğim binek hayvanı ")
+				say("mührü. Ama bayağı kullanılmış. Onu bana geri ver,")
+				say("sana daha güçlü bir binek hayvanı mührü ")
+				say("hazırlayacağım.")
+				wait()
+				say_title("Seyis")
+				say("Bu mühür dönüşmüş bineğini çağırmanı sağlar. Ona")
+				say("gözün gibi bak, değeri paha biçilemez!")
+				item.remove()
+				pc.remove_item("50068",1)
+				pc.give_item2(vnum+5,1)
+				else
+				say_title("Seyis")
+				say("Kusura bakma ama doğru belgeler olmadan sana")
+				say("yardımcı olamam. Yine beni işletmeye kalkışma")
+				say("yoksa fena yaparım.")
+				end
+			end
+		end
+		
+		when 20349.take with item.vnum >= 52041 and item.vnum <= 52045 or item.vnum >= 52011 and item.vnum <= 52015 or item.vnum >= 52026 and item.vnum <= 52030 or item.vnum >= 52056 and item.vnum <= 52060 or item.vnum >= 52071 and item.vnum <= 52075 or item.vnum >= 52041 and item.vnum <= 52045 or item.vnum >= 52086 and item.vnum <= 52090 or item.vnum >= 52101 and item.vnum <= 52105 or item.vnum >= 52116 and item.vnum <= 52120 begin
+		local vnum = item.get_vnum()
+			if pc.is_mount() then
+			say_title("Seyis")
+			say("Konuşurken bineğinden iner misin lütfen? Boynum")
+			say("tutuldu. Durmadan yukarı bakarak konuşmak zor")
+			say("oluyor.")
+			else
+			say_title("Seyis")
+			say("Mutasyon Parşömeni büyük bir güce sahiptir. Cesur")
+			say("bineğinin ömrünü dört güne kadar uzatabilir. Bir")
+			say("deneme sana 200.000 Yang'a mal olur. Ancak bunun")
+			say("için bineğin çok yorulmuş olmalı ve ömrü bir")
+			say("günden daha az olmalı. Ayrıca tabi biraz da")
+			say("şansın olmalı! Eğer uzatma başarısız olursa ona")
+			say("güçlü bir atıştırmalık yedir. Bunu dönen paranın")
+			say("arkasında bulabilirsin.")
+			local uz = select("Uzat","Vazgeç ")
+				if uz == 2 then
+				return
+				else
+				local uz2 = select("7 Gün","15 Gün","30 Gün","Mutasyon Parşömeni + 200k Yang","Vazgeç ")
+					if uz2 == 1 then
+						if pc.count_item("38100") < 1 then
+						say_title("Seyis")
+						say("Seçtiğin süreye uygun atıştırmalığın ne")
+						say("yazık ki yok. Ama bunu dönen paraya")
+						say("tıklayarak alabilirsin.")
+						else
+						pc.remove_item("38100",1)
+						item.set_socket(0,item.get_socket(0) + 60*60*24*7)
+						end
+					elseif uz2 == 2 then
+						if pc.count_item("38101") < 1 then
+						say_title("Seyis")
+						say("Seçtiğin süreye uygun atıştırmalığın ne")
+						say("yazık ki yok. Ama bunu dönen paraya")
+						say("tıklayarak alabilirsin.")
+						else
+						pc.remove_item("38101",1)
+						item.set_socket(0,item.get_socket(0) + 60*60*24*15)
+						end
+					elseif uz2 == 3 then
+						if pc.count_item("38102") < 1 then
+						say_title("Seyis")
+						say("Seçtiğin süreye uygun atıştırmalığın ne")
+						say("yazık ki yok. Ama bunu dönen paraya")
+						say("tıklayarak alabilirsin.")
+						else
+						pc.remove_item("38102",1)
+						item.set_socket(0,item.get_socket(0) + 60*60*24*30)
+						end
+					elseif uz2 == 4 then
+						local time_remaining = item.get_socket(0) - get_time()
+						if time_remaining > 60*60*24 then
+						say_title("Seyis")
+						say("Güçlü bineğin henüz çok güçlü. Mutasyon parşömeni")
+						say("burada hiçbir etki sağlamaz. Bir günden az ömrü ")
+						say("kaldığında yine gel.")
+						say_reward("10 ya da daha az binme hakkın kalmalı.")
+						else
+							if pc.count_item("50068") < 1 or pc.get_money() < 200000 then
+							say_title("Seyis")
+							say("Sana ne yazık ki yardım edemeyeceğim. Ya mutasyon")
+							say("parşömeni yanında değil ya da 200.000 Yang'ın")
+							say("yok.")
+							else
+							local chance = number(1,10)
+								if chance > 5 then
+								local chance2 = number(1,4)
+									if chance2 == 1 then
+									item.set_socket(0,item.get_socket(0) + 60*60*24*1)
+									pc.remove_item("50068",1)
+									pc.change_gold(-200000)
+									elseif chance2 == 2 then
+									item.set_socket(0,item.get_socket(0) + 60*60*24*2)
+									pc.remove_item("50068",1)
+									pc.change_gold(-200000)
+									elseif chance2 == 3 then
+									item.set_socket(0,item.get_socket(0) + 60*60*24*3)
+									pc.remove_item("50068",1)
+									pc.change_gold(-200000)
+									elseif chance2 == 4 then
+									item.set_socket(0,item.get_socket(0) + 60*60*24*4)
+									pc.remove_item("50068",1)
+									pc.change_gold(-200000)
+									end
+								else
+								pc.remove_item("50068",1)
+								pc.change_gold(-200000)
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+end						

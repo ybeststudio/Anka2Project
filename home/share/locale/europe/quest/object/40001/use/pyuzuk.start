@@ -1,0 +1,36 @@
+say_title ( "Perfect Master beceri eðitimi" ) 
+if pc . skillgroup == 0 then 
+say ( "Bu yüzüðü kullanabilmen için öncelikle" ) 
+say ( "beceri öðretmenlerinden eðitimini alman" ) 
+say ( "gerekir." ) 
+return 
+end 
+local result = pyuzuk . BuildMasterSkillList ( pc . get_job ( ) , pc . get_skill_group ( ) ) 
+local vnum_list = result [ 1 ] 
+local name_list = result [ 2 ] 
+if table . getn ( vnum_list ) == 0 then 
+say ( "Becerilerininin hiç biri master seviyesinde deðil." ) 
+return 
+end 
+say ( "Perfect master seviyesine ulaþtýrmak istediðin" ) 
+say ( "beceriyi seç." ) 
+local menu_list = { } 
+table . foreach ( name_list , function ( i , name ) table . insert ( menu_list , name ) end ) 
+table . insert ( menu_list , "Kapat" ) 
+local s = select_table ( menu_list ) 
+if table . getn ( menu_list ) == s then 
+return 
+end 
+local skill_name = name_list [ s ] 
+local skill_vnum = vnum_list [ s ] 
+say_title ( "Perfect Master beceri eðitimi" ) 
+say ( skill_name .. " becerin perfect master olacak ve bu" ) 
+say ( "yüzük yok olacak. Onaylýyor musun?" ) 
+if select ( "Evet" , "Hayýr" ) == 2 then 
+return 
+end 
+if pc . count_item ( "40001" ) == 0 then 
+return 
+end 
+pc . remove_item ( "40001" , 1 ) 
+pc . set_skill_level ( skill_vnum , 40 ) 

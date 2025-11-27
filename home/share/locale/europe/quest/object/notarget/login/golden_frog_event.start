@@ -1,0 +1,8 @@
+if game . get_event_flag ( "golden_frog_event" ) > 0 then if pc . get_map_index ( ) == 230 then 
+notice_all ( 644 , "" ) 
+notice_all ( 645 , "" ) 
+notice_all ( 646 , "" ) 
+notice_all ( 647 , "" ) 
+end 
+send_letter ( "Altin Kurbaga Etkinligi" ) 
+ return end 

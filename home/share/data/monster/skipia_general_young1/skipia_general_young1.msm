@@ -1,0 +1,14 @@
+ScriptType            RaceDataScript
+
+BaseModelFileName     "D:\Ymir Work\npc_pet\skipia_general_young1\skipia_general_young1.GR2"
+
+Group ShapeData
+{
+    PathName 		 ""
+    ShapeDataCount 		 0
+}
+Group AttachingData
+{
+    AttachingDataCount       0
+    
+}

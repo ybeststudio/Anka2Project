@@ -1,0 +1,4 @@
+say_title ( "Kendi gücünü artýr" ) 
+say ( "" ) 
+say ( "" .. mob_name ( 20355 ) .. "'yý bul ve malzemeyi al." ) 
+say ( "" ) 

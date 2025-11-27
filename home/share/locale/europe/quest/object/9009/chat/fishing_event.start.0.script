@@ -1,0 +1,10 @@
+if pc . count_item ( 27802 ) < 3 then 
+say_new ( "[ENTER]Üzgünüm ama ödül için yeterli baliga sahip degilsiniz![ENTER]Lütfen Gizemli Kutu almak için en az 3 Minnow ile geri gelin![ENTER]Iyi sanslar! [ENTER]" ) 
+else 
+say_new ( "[ENTER]Görüyorum ki balik tutmussunuz ve size takas için bir teklifim var. Bana 3 Minnow'unuzu verin ve sizi Gizemli Kutu ile ödüllendireyim. Içinde ya degerli esyalar var ya da içinden canavarlar çikiyor. [ENTER]" ) 
+say_reward_new ( "Takas yapmak ister misiniz? [ENTER]" ) 
+if select ( "Evet" , "Hayir" ) == 1 then 
+pc . remove_item ( 27802 , 3 ) 
+pc . give_item2 ( 50033 ) 
+end 
+end 

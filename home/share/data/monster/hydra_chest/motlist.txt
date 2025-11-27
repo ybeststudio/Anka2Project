@@ -1,0 +1,2 @@
+GENERAL WAIT attack.msa
+GENERAL DEAD drop.msa

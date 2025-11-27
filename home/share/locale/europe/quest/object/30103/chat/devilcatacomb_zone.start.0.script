@@ -1,0 +1,17 @@
+say_title ( mob_name ( 30103 ) ) 
+say_new ( "[ENTER]Gerekli her seye sahip misiniz? [ENTER]" ) 
+say_item_vnum ( 30319 , 1 ) 
+say_new ( "" ) 
+local s = select ( "Evet" , "Iptal" ) 
+if s == 2 then 
+return 
+else 
+if pc . count_item ( 30319 ) < 1 then 
+say_new ( "[ENTER]Gerekli her seye sahip degilsiniz! [ENTER]" ) 
+say_item_vnum ( 30319 , 1 ) 
+else 
+pc . remove_item ( 30319 , 1 ) 
+pc . jump ( 314600 , 1.3189e+06 ) 
+pc . setf ( "devilcatacomb_zone" , "catacombkey" , 1 ) 
+end 
+end 

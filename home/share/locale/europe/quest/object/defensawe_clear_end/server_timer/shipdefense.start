@@ -1,0 +1,5 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+d . new_kill_all ( ) 
+d . regen_file ( "data/dungeon/hydra/sandik.txt" ) 
+d . clear_regen ( ) 
+end 

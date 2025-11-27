@@ -1,0 +1,23 @@
+local arg = get_server_timer_arg ( ) 
+if d . select ( arg ) then 
+if d . getf ( "first_regen" ) == 1 then 
+d . setf ( "first_regen" , 0 ) 
+d . spawn_mob ( 2095 , 400 , 566 ) 
+d . spawn_mob ( 2095 , 400 , 594 ) 
+d . spawn_mob ( 2095 , 362 , 600 ) 
+d . spawn_mob ( 2095 , 337 , 599 ) 
+d . spawn_mob ( 2095 , 335 , 581 ) 
+d . spawn_mob ( 2095 , 344 , 562 ) 
+d . spawn_mob ( 2095 , 364 , 588 ) 
+d . spawn_mob ( 2095 , 379 , 562 ) 
+d . spawn_mob ( 2095 , 368 , 525 ) 
+local kingVid = d . spawn_mob ( 2092 , 367 , 588 ) 
+d . setf ( "king_vid" , kingVid ) 
+d . setf ( "remain_egg" , 9 ) 
+d . notice ( arg , 674 , "" , false ) 
+GetMissionInfo ( 1 , 20 * 60 ) 
+d . setf ( "real_time" , get_global_time ( ) + 20 * 60 ) 
+d . setf ( "DungeonBlock" , 1 ) 
+server_timer ( "spider_full_timer" , 60 * 20 , arg ) 
+end 
+end 

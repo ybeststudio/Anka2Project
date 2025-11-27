@@ -1,0 +1,13 @@
+ScriptType            RaceDataScript
+
+BaseModelFileName     "D:\Ymir Work\npc_pet\red_dragon_young1\red_dragon_young1.GR2"
+
+Group ShapeData
+{
+    PathName 		 ""
+    ShapeDataCount 		 0
+}
+Group AttachingData
+{
+    AttachingDataCount       0
+}

@@ -1,0 +1,15 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . count_monster ( ) < 1 then 
+if d . getf ( "level" ) == 2 and d . getf ( "IsOn" ) == 1 then 
+server_timer ( "Devil_3" , 10 , d . get_map_index ( ) ) 
+GetMissionInfo ( 2 , 10 ) 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+d . setf ( "IsOn" , 0 ) 
+elseif d . getf ( "level" ) == 3 and d . getf ( "IsOn" ) == 1 then 
+server_timer ( "Devil_4" , 10 , d . get_map_index ( ) ) 
+GetMissionInfo ( 3 , 10 ) 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+d . setf ( "IsOn" , 0 ) 
+end 
+end 
+end 

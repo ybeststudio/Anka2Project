@@ -1,0 +1,11 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 8 then 
+clear_server_timer ( "Devil_8" , get_server_timer_arg ( ) ) 
+d . setf ( "level" , 9 ) 
+d . jump_all ( 2048 + 590 , 6656 + 155 ) 
+d . regen_file ( "data/dungeon/deviltower/deviltower9_regen.txt" ) 
+d . clear_regen ( ) 
+GetMissionInfo ( 9 , d . getf ( "real_time" ) - get_global_time ( ) ) 
+d . notice ( d . get_map_index ( ) , 665 , "" , false ) 
+end 
+end 

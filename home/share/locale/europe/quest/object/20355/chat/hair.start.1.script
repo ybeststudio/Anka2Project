@@ -1,0 +1,111 @@
+local applyOn = affect . get_apply_on ( 514 ) 
+local race = pc . get_race ( ) + 1 
+local currentModel = pc . get_part ( 3 ) 
+local start_index = hair . get_start_index_by_race ( race ) 
+local vnum = 0 
+local bFound = false 
+local optionValue = 0 
+local limitTime = pc . getqf ( "limit_time" ) 
+if pc . getqf ( "original_vnum" ) ~= 0 then 
+notice ( "hier wäre schluss später vielleicht!" ) 
+end 
+notice ( string . format ( "vnum: %d" , vnum ) ) 
+notice ( string . format ( "pc.get_wear: %d " , pc . get_wear ( 20 ) ) ) 
+notice ( string . format ( "qf origianl_vnum: %d " , pc . getqf ( "original_vnum" ) ) ) 
+notice ( string . format ( "pc.get_part: %d " , pc . get_part ( 3 ) ) ) 
+say_title ( mob_name ( 20355 ) ) 
+say ( gameforge . hair . _040_say ) 
+say ( "" ) 
+local s = select ( gameforge . locale . confirm , gameforge . locale . cancel ) 
+if s == 2 then 
+return 
+end 
+if 0 == currentModel or pc . getqf ( "original_vnum" ) ~= 0 then 
+say_title ( mob_name ( 20355 ) ) 
+say ( gameforge . hair . _090_say ) 
+say ( "" ) 
+return 
+end 
+if nil == applyOn then 
+local wearCostumeHair = pc . get_wear ( 20 ) 
+if 0 == currentModel or nil ~= wearCostumeHair then 
+say_title ( mob_name ( 20355 ) ) 
+say ( gameforge . hair . _050_say ) 
+say ( "" ) 
+end 
+if pc . getqf ( "original_vnum" ) ~= 0 then 
+say_title ( mob_name ( 20355 ) ) 
+say ( gameforge . hair . _050_say ) 
+say ( "" ) 
+return 
+end 
+vnum = currentModel 
+if 1 == race or 5 == race then vnum = vnum + 72000 
+elseif 2 == race or 6 == race then vnum = vnum + 71250 
+elseif 3 == race or 7 == race then vnum = vnum + 70500 
+elseif 4 == race or 8 == race then vnum = vnum + 69750 
+else 
+say_title ( mob_name ( 20355 ) ) 
+say ( gameforge . hair . _060_say ) 
+return 
+end 
+bFound = true 
+end 
+if false == bFound then 
+local applyType = hair . point_to_apply ( applyOn ) 
+if nil == applyType then 
+say ( gameforge . hair . _070_say ) 
+return 
+end 
+for i = 0 , 20 begin 
+local tempVnum = start_index + i 
+modelType = hair . My_hair_item ( tempVnum , 1 ) 
+optionType = hair . My_hair_item ( tempVnum , 2 ) 
+optionValue = hair . My_hair_item ( tempVnum , 3 ) 
+if modelType == currentModel and optionType == applyType then 
+vnum = tempVnum 
+bFound = true 
+break 
+end 
+end 
+if false == bFound then 
+say_title ( mob_name ( 20355 ) ) 
+say ( gameforge . hair . _060_say ) 
+return 
+end 
+if true == is_test_server ( ) then 
+say ( "This message only appears on Test Mode." ) 
+say ( "	Effect : " .. applyOn .. ", Value : " .. optionValue ) 
+say ( "	Model : " .. pc . get_part ( 3 ) ) 
+say ( "	Left time (in second) : " .. ( limitTime - get_time ( ) ) ) 
+say ( "	VNUM : " .. vnum ) 
+say ( "" ) 
+say ( "" ) 
+local s = select ( "Next" ) 
+end 
+end 
+if vnum < 74000 then 
+limitTime = 1.26144e+09 
+end 
+local wearCostumeHair_check = pc . get_wear ( 20 ) 
+if nil == wearCostumeHair_check then 
+return 
+end 
+notice ( string . format ( "vnum: %d" , vnum ) ) 
+notice ( string . format ( "pc.get_wear: %d " , pc . get_wear ( 20 ) ) ) 
+notice ( string . format ( "qf origianl_vnum: %d " , pc . getqf ( "original_vnum" ) ) ) 
+notice ( string . format ( "pc.get_part: %d " , pc . get_part ( 3 ) ) ) 
+local ret = pc . give_item2_select ( vnum ) 
+item . set_socket ( 0 , limitTime ) 
+item . set_socket ( 1 , 1 ) 
+item . start_realtime_expire ( ) 
+affect . remove_hair ( ) 
+pc . set_part ( 3 , 0 ) 
+pc . setqf ( "limit_time" , 0 ) 
+pc . setqf ( "original_vnum" , vnum ) 
+say_title ( mob_name ( 20355 ) ) 
+say ( gameforge . hair . _80_say ) 
+say_show_item ( vnum ) 
+say ( " " .. item_name ( vnum ) .. gameforge . hair . _090_say ) 
+say ( "" ) 
+say ( gameforge . hair . _100_say ) 

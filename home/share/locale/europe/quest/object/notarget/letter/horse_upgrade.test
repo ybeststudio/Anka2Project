@@ -1,0 +1,6 @@
+q . set_counter ( "Kalan Akrep Okçusu:" , 50 - pc . getqf ( "kill_count" ) ) 
+q . set_clock ( "Kalan süre:" , pc . getqf ( "limit_time" ) - get_time ( ) ) 
+setskin ( NOWINDOW ) 
+makequestbutton ( "Silah-at Kitabi Sinavi" ) 
+q . set_title ( "Silah-at Kitabi Sinavi" ) 
+q . start ( ) 

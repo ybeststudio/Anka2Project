@@ -1,0 +1,2 @@
+if game . get_event_flag ( "moon_drop" ) > 0 then send_letter ( "Meshure Hazineleri" ) 
+ return end 

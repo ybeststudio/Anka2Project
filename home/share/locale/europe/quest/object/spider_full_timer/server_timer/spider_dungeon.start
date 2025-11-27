@@ -1,0 +1,6 @@
+local index = get_server_timer_arg ( ) 
+if d . select ( index ) then 
+d . purge ( ) 
+d . setf ( "DungeonBlock" , 0 ) 
+d . global_warp_all_to_base ( 689 * 100 , 6111 * 100 , index , 1 ) 
+end 

@@ -1,0 +1,34 @@
+ScriptType            RaceDataScript
+
+BaseModelFileName     "D:\Ymir Work\npc_pet\halloween_2019_3eyecat\halloween_2019_3eyecat.GR2"
+
+Group ShapeData
+{
+    PathName 		 ""
+    ShapeDataCount 		 1
+	Group ShapeData00
+	{
+		ShapeIndex			0
+
+		Model				"D:\Ymir Work\npc_pet\halloween_2019_3eyecat\halloween_2019_3eyecat.GR2"
+		SourceSkin			"D:\Ymir Work\npc_pet\halloween_2019_3eyecat\halloween_2019_3eyecat_01.dds"
+		TargetSkin			"D:\Ymir Work\npc_pet\halloween_2019_3eyecat\halloween_2019_3eyecat_02.dds"
+	}
+}
+Group AttachingData
+{
+    AttachingDataCount       1
+    
+    Group AttachingData00
+    {
+        AttachingDataType    2
+        
+        isAttaching          1
+        AttachingModelIndex  0
+        AttachingBoneName    "Bone06"
+        
+        EffectScriptName     "D:\Ymir Work\effect\pet\pet_cat3eye_fire_blue.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+        EffectRotation       0.000000 0.000000 0.000000
+    }
+}

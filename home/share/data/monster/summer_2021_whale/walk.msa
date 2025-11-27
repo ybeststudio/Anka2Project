@@ -1,0 +1,5 @@
+ScriptType               MotionData
+
+MotionFileName           "D:\Ymir Work\npc_pet\summer_2021_whale\walk.GR2"
+MotionDuration           1.000000
+Accumulation             0.00	-130.000000	0.00

@@ -1,0 +1,4 @@
+setskin ( NOWINDOW ) 
+makequestbutton ( "Eðitim baþarýsýz" ) 
+q . set_title ( "Eðitim baþarýsýz" ) 
+q . start ( ) 

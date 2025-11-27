@@ -1,0 +1,186 @@
+quest forked_road begin
+    state start begin
+        when login with forked.isforkedmapindex( pc.get_map_index() ) == true begin
+            if game.get_event_flag("threeway_war") == 0 then
+                warp_to_village()
+            else
+                local noticeShow = false
+
+                if forked.is_registered_user() == false then
+                    forked.register_user()
+                    forked.setdeadcount()
+                    pc.remove_item(50089)
+                    noticeShow = true
+                end
+
+                if forked.getdeadcount() <= 0 then
+                    warp_to_village()
+                elseif true == noticeShow then
+                    if forked.issungzimapindex( pc.get_map_index() ) == true then
+                        say( locale.forked_condition2 )
+                        say( locale.NOTICE_COLOR..locale.forked_rule_sungzi )
+                    else
+                        say( locale.forked_condition )
+                        say( locale.NOTICE_COLOR..locale.forked_rule )
+                        say_item_vnum(50089)
+                                end
+                        end
+                end
+        end
+        when 11001.chat.locale.forked_man_chat or 11003.chat.locale.forked_man_chat or 11005.chat.locale.forked_man_chat begin
+            if game.get_event_flag("threeway_war") == 0 then
+                        say(locale.forked_man_say_cant)
+            else
+                        say(locale.forked_man_say)
+                        local s = select(locale.forked_enter,locale.forked_no_enter)
+                        if s == 1 then
+                    local limit = math.min(game.get_event_flag("threeway_war_level"), 30)
+
+                    if pc.get_level() < limit then
+                        say("Üç imparatorluk savaþýna girmek için "..limit.."") 
+				say("level üzerinde olman gerekiyor.")    
+                        return
+                    end
+
+                    local canJoin = false
+
+                    if (pc.getempire() == 1 and game.get_event_flag("threeway_war_open_gate1" ) != 0) or
+                        (pc.getempire() == 2 and game.get_event_flag("threeway_war_open_gate2" ) != 0) or
+                        (pc.getempire() == 3 and game.get_event_flag("threeway_war_open_gate3" ) != 0) then
+                        canJoin = true
+                    else
+                        say( locale.forked_man_say_you_cant2 )
+                    end
+
+                    if true == canJoin then
+                        pc.warp( forked.get_pass_start_pos() )
+                    else
+                        say("Kapý kutsal alana açýldý.")
+                        say("Senin bu savasa katýlma iznin yok!")
+                        say("Kutsal alandaki savaþý imparatorluðunun")
+                        say("kazanmasý için dua et!")
+                        end
+                        end
+                end
+        end
+        
+        when kill begin
+		if npc.get_race() == 1306 and forked.issungzimapindex(pc.get_map_index()) == true then
+            game.drop_item(50089, 1)
+        ----"12345678901234567890123456789012345678901234567890"|
+                say("Kutsal alana giden kapý açýlmadan ")
+                say("önce savaþa katýlamazsýn!")
+                say("Kutsal alanda imparatorluðunun ")
+                say("kazanmasý için dua et!")
+                say("")
+        end
+		end
+
+        when kill begin
+		 if npc.get_race() == 1902 and forked.issungzimapindex(pc.get_map_index()) == true then
+		 
+            if 0 == game.get_event_flag("threeway_war") then
+                return
+            end
+
+            local remainBossCount = game.get_event_flag("threeway_war_boss_count") - 1
+
+            game.set_event_flag("threeway_war_boss_count", remainBossCount)
+
+            if remainBossCount > 1 then
+                return
+        end
+
+            game.set_event_flag("threeway_war", 0)
+            local nation = { "Shinsoo","Chunjo","Jinno" }
+            notice_all("Üçyol savaþýnýn galibi "..nation[pc.getempire()])
+
+            warp_all_to_village(forked.getsungzimapindex(), 30)
+            warp_all_to_village(forked.getpassmapindexbyempire(1), 30)
+            warp_all_to_village(forked.getpassmapindexbyempire(2), 30)
+            warp_all_to_village(forked.getpassmapindexbyempire(3), 30)
+        end
+		end
+
+        when 20081.take with item.vnum == 50089 begin
+            say_in_map(pc.get_map_index(), locale.forked_open_gate)
+                npc.purge()
+                item.remove()
+
+                forked.initkillcount()
+
+                if pc.getempire() == 1 then
+                game.set_event_flag("threeway_war_open_gate1", 0)
+                       notice_all("Shinsoo Ýmparatorluðu kutsal alana giriþ yapýyor." )
+                elseif pc.getempire() == 2 then
+                game.set_event_flag("threeway_war_open_gate2", 0)
+                    notice_all("Chunjo Ýmparatorluðu kutsal alana giriþ yapýyor." )
+                elseif pc.getempire() == 3 then
+                game.set_event_flag("threeway_war_open_gate3", 0)
+                        notice_all("Jinno Ýmparatorluðu kutsal alana giriþ yapýyor." )
+                else
+                        say(locale.forked_man_say_you_cant2 )
+                end
+
+            local x, y = forked.get_sungzi_start_pos()
+            forked.warp_all_in_map( pc.get_map_index(), forked.getsungzimapindex(), x, y, 10)
+        end
+
+        when 11001.chat."GM; Üç Ýmparatorluk Savaþý " or 11003.chat."GM; Üç Ýmparatorluk Savaþý " or 11005.chat."GM; Üç Ýmparatorluk Savaþý " with pc.is_gm() begin
+           local s = select( "Üç imparatorluk savaþýný baþlat" , "Üç imparatorluk savaþýný bitir" );
+
+            if s == 1 then
+                -- ±âÁ¸¿¡ ÀÖ´ø ¸÷À» ¸&#287;µÎ Á×ÀÎ´Ù
+                forked.purge_all_monsters()
+
+                -- ÃÊ±âÈ*
+                forked.initforked()
+
+                -- ½ÃÀÛ ÇÃ·¡±× ¼³Á¤
+                game.set_event_flag("threeway_war", 1)
+
+                -- »ï°Å¸® ÀüÅõ Å³ Á¦ÇÑ ¼³Á¤
+                game.set_event_flag("threeway_war_dead_count", 25)    -- ºÎÈ° °¡´É ¼ö
+
+                if true == is_test_server() then
+                    game.set_event_flag("threeway_war_kill_count", 5)    -- PC ¸î ¸í Á×ÀÌ¸é ¼øÀ§ ¸Ô¿© Å»¶ô½ÃÅ³ °ÍÀÎ°¡
+                else
+                    game.set_event_flag("threeway_war_kill_count", 250)    -- PC ¸î ¸í Á×ÀÌ¸é ¼øÀ§ ¸Ô¿© Å»¶ô½ÃÅ³ °ÍÀÎ°¡
+                end
+
+                game.set_event_flag("threeway_war_boss_count", 5)    -- ÃÖÁ¾ º¸½º ¸î ¸¶¸® ¼ÒÈ¯ÇÒ °ÍÀÎ°¡
+
+                -- »ï°Å¸® ÀÔ±¸ ¿*°í/´&#304;±â ¼³Á¤
+                game.set_event_flag("threeway_war_open_gate1", 1)
+                game.set_event_flag("threeway_war_open_gate2", 1)
+                game.set_event_flag("threeway_war_open_gate3", 1)
+                say("Üçyol Savaþý baþladý.")
+                say("")
+
+                wait()
+
+                -- ¸ó½ºÅÍ »õ·Ó°Ô ¸®Á¨
+                regen_in_map( forked.getpassmapindexbyempire(1), forked.getpasspathbyempire(1) .."regen.txt" )
+                regen_in_map( forked.getpassmapindexbyempire(1), forked.getpasspathbyempire(1) .."npc.txt" )
+                regen_in_map( forked.getpassmapindexbyempire(2), forked.getpasspathbyempire(2) .."regen.txt" )
+                regen_in_map( forked.getpassmapindexbyempire(2), forked.getpasspathbyempire(2) .."npc.txt" )
+                regen_in_map( forked.getpassmapindexbyempire(3), forked.getpasspathbyempire(3) .."regen.txt" )
+                regen_in_map( forked.getpassmapindexbyempire(3), forked.getpasspathbyempire(3) .."npc.txt" )
+
+                notice_all("Üç imparatorluðun savaþý baþlýyor.")
+                notice_all("Katýlmak istiyorsanýz, Savaþ Sorumlusu ile konuþun.")
+
+            elseif 2 == s then
+                game.set_event_flag("threeway_war", 0)
+
+                notice_all("Üç imparatorluk savaþý bitiyor.")
+                forked.purge_all_monsters()
+
+                warp_all_to_village(forked.getsungzimapindex(), 1)
+                warp_all_to_village(forked.getpassmapindexbyempire(1), 1)
+                warp_all_to_village(forked.getpassmapindexbyempire(2), 1)
+                warp_all_to_village(forked.getpassmapindexbyempire(3), 1)
+                end
+        end
+        end
+        end  

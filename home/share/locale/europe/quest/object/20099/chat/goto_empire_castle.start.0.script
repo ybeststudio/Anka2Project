@@ -1,0 +1,21 @@
+local empire = pc . get_empire ( ) 
+if empire == 3 then 
+a = select ( gameforge . goto_empire_castle . _20_select , gameforge . goto_empire_castle . _30_select , gameforge . goto_empire_castle . _35_select , gameforge . locale . cancel ) 
+if 1 == a then 
+say ( gameforge . goto_empire_castle . _90_say ) 
+wait ( ) 
+pc . warp ( 1.0189e+06 , 148400 ) 
+elseif 2 == a then 
+say ( gameforge . goto_empire_castle . _100_say ) 
+wait ( ) 
+pc . warp ( 1.019e+06 , 200200 ) 
+elseif 3 == a then 
+say ( gameforge . goto_empire_castle . _60_say ) 
+wait ( ) 
+pc . warp ( 923900 , 183600 ) 
+else 
+return 
+end 
+else 
+say ( gameforge . goto_empire_castle . _120_say ) 
+end 

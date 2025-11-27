@@ -1,0 +1,116 @@
+local s = select ( 
+"Meshure Hazineleri" , 
+"Altigen Kutu Etkinligi" , 
+"Gizemli Kutu Etkinligi" , 
+"Madencilik Etkinligi" , 
+"Metin Yagmuru Etkinligi" , 
+"Boss Etkinligi" , 
+"Altin Kurbaga Etkinligi" , 
+"Saklambaç Etkinligi" , 
+"Korsan Tanaka Etkinligi" , 
+"Tecrübe Etkinligi" , 
+"Drop Etkinligi" , 
+"OX Etkinligi" , 
+"Yang Etkinligi" , 
+"Okey Karti" , 
+"Kapat" 
+) 
+if s == 1 then 
+say_title ( "Meshure Hazineleri" ) 
+say ( ) 
+say_reward ( "Durum: " .. event_panel . get_state ( "moon_drop" ) ) 
+say ( ) 
+local s = select ( "Etkinligi Etkinlestir" , "Etkinligi Devre Disi Birak" , "Kapat" ) 
+event_panel . set_event ( s , EVENT_TYPE_MOONLIGHT ) 
+elseif s == 2 then 
+say_title ( "Altigen Kutu Etkinligi" ) 
+say ( ) 
+say_reward ( "Durum: " .. event_panel . get_state ( "hexegonal_drop" ) ) 
+say ( ) 
+local s = select ( "Etkinligi Etkinlestir" , "Etkinligi Devre Disi Birak" , "Kapat" ) 
+event_panel . set_event ( s , EVENT_TYPE_HEXEGONAL_CHEST ) 
+elseif s == 3 then 
+say_title ( "Gizemli Kutu Etkinligi" ) 
+say ( ) 
+say_reward ( "Durum: " .. event_panel . get_state ( "fish_event" ) ) 
+say ( ) 
+local s = select ( "Etkinligi Etkinlestir" , "Etkinligi Devre Disi Birak" , "Kapat" ) 
+event_panel . set_event ( s , EVENT_TYPE_FISHING ) 
+elseif s == 4 then 
+say_title ( "Madencilik Etkinligi" ) 
+say ( ) 
+say_reward ( "Durum: " .. event_panel . get_state ( "mining_event" ) ) 
+say ( ) 
+local s = select ( "Etkinligi Etkinlestir" , "Etkinligi Devre Disi Birak" , "Kapat" ) 
+event_panel . set_event ( s , EVENT_TYPE_MINING ) 
+elseif s == 5 then 
+say_title ( "Metin Yagmuru Etkinligi" ) 
+say ( ) 
+say_reward ( "Durum: " .. event_panel . get_state ( "metin_event" ) ) 
+say ( ) 
+local s = select ( "Etkinligi Etkinlestir" , "Etkinligi Devre Disi Birak" , "Kapat" ) 
+event_panel . set_event ( s , EVENT_TYPE_METIN ) 
+elseif s == 6 then 
+say_title ( "Boss Etkinligi" ) 
+say ( ) 
+say_reward ( "Durum: " .. event_panel . get_state ( "boss_event" ) ) 
+say ( ) 
+local s = select ( "Etkinligi Etkinlestir" , "Etkinligi Devre Disi Birak" , "Kapat" ) 
+event_panel . set_event ( s , EVENT_TYPE_BOSS ) 
+elseif s == 7 then 
+say_title ( "Altin Kurbaga Etkinligi" ) 
+say ( ) 
+say_reward ( "Durum: " .. event_panel . get_state ( "golden_frog_event" ) ) 
+say ( ) 
+local s = select ( "Etkinligi Etkinlestir" , "Etkinligi Devre Disi Birak" , "Kurbaga Dogur" , "Kapat" ) 
+event_panel . set_event ( s , EVENT_TYPE_GOLD_FROG ) 
+elseif s == 8 then 
+say_title ( "Saklambaç Etkinligi" ) 
+say ( ) 
+say_reward ( "Durum: " .. event_panel . get_state ( "hide_seek_event" ) ) 
+say ( ) 
+local s = select ( "Etkinligi Etkinlestir" , "Etkinligi Devre Disi Birak" , "Kapat" ) 
+event_panel . set_event ( s , EVENT_TYPE_HIDE_AND_SEEK ) 
+elseif s == 9 then 
+say_title ( "Korsan Tanaka Etkinligi" ) 
+say ( ) 
+say_reward ( "Durum: " .. event_panel . get_state ( "tanaka_event" ) ) 
+say ( ) 
+local s = select ( "Etkinligi Etkinlestir" , "Etkinligi Devre Disi Birak" , "Kapat" ) 
+event_panel . set_event ( s , EVENT_TYPE_TANAKA ) 
+elseif s == 10 then 
+say_title ( "Tecrübe Etkinligi" ) 
+say ( ) 
+say_reward ( "Durum: " .. event_panel . get_state ( "exp_event" ) ) 
+say ( ) 
+local s = select ( "Etkinligi Etkinlestir" , "Etkinligi Devre Disi Birak" , "Kapat" ) 
+event_panel . set_event ( s , EVENT_TYPE_EXPERIENCE ) 
+elseif s == 11 then 
+say_title ( "Drop Etkinligi" ) 
+say ( ) 
+say_reward ( "Durum: " .. event_panel . get_state ( "item_drop_event" ) ) 
+say ( ) 
+local s = select ( "Etkinligi Etkinlestir" , "Etkinligi Devre Disi Birak" , "Kapat" ) 
+event_panel . set_event ( s , EVENT_TYPE_ITEM_DROP ) 
+elseif s == 12 then 
+say_title ( "OX Etkinligi" ) 
+say ( ) 
+say_reward ( "Durum: " .. event_panel . get_state ( "oxevent_status" ) ) 
+say ( ) 
+local s = select ( "Etkinligi Etkinlestir" , "Etkinligi Devre Disi Birak" , "Isinlan" , "Kapat" ) 
+event_panel . set_event ( s , EVENT_TYPE_OX ) 
+elseif s == 13 then 
+say_title ( "Yang Etkinligi" ) 
+say ( ) 
+say_reward ( "Durum: " .. event_panel . get_state ( "yang_event" ) ) 
+say ( ) 
+local s = select ( "Etkinligi Etkinlestir" , "Etkinligi Devre Disi Birak" , "Kapat" ) 
+event_panel . set_event ( s , EVENT_TYPE_YANG ) 
+elseif s == 14 then 
+say_title ( "Okey Karti" ) 
+say ( ) 
+say_reward ( "Durum: " .. event_panel . get_state ( "okey_cards_drop" ) ) 
+say ( ) 
+local s = select ( "Etkinligi Etkinlestir" , "Etkinligi Devre Disi Birak" , "Kapat" ) 
+event_panel . set_event ( s , EVENT_TYPE_OKEY_CARDS ) 
+end 

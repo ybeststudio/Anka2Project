@@ -1,0 +1,114 @@
+say_title ( "Iþýnlanma Yüzüðü " ) 
+say ( "Nereye gitmek istiyorsun?" ) 
+local s = select ( "Köyler" , "Orman Bölgeleri" , "Örümcek Zindaný " , "Sürgün Maðarasý " , "Diðer Bölgeler" , "Beta Bölgeler" , "Kapat " ) 
+if s == 1 then 
+say_title ( "Iþýnlanma Yüzüðü " ) 
+local ss = select ( "Kýrmýzý Bayrak (1.Köy)" , "Kýrmýzý Bayrak (2.Köy)" , "Sarý Bayrak (1.Köy)" , "Sarý Bayrak (2.Köy)" , "Mavi Bayrak (1.Köy)" , "Mavi Bayrak (2.Köy)" , "Vazgeç " ) 
+if ss == 1 then 
+pc . warp ( 469200 , 964200 ) 
+elseif ss == 2 then 
+pc . warp ( 360800 , 877600 ) 
+elseif ss == 3 then 
+pc . warp ( 55800 , 157900 ) 
+elseif ss == 4 then 
+pc . warp ( 138500 , 234900 ) 
+elseif ss == 5 then 
+pc . warp ( 969600 , 278300 ) 
+elseif ss == 6 then 
+pc . warp ( 873100 , 242600 ) 
+end 
+elseif s == 2 then 
+say_title ( "Iþýnlanma Yüzüðü " ) 
+local sss = select ( "Hayalet Orman" , "Kýzýl Orman Baþlangýcý " , "Vazgeç " ) 
+if sss == 1 then 
+pc . warp ( 288700 , 5700 ) 
+elseif sss == 2 then 
+pc . warp ( 1.1199e+06 , 70800 ) 
+end 
+elseif s == 3 then 
+say_title ( "Iþýnlanma Yüzüðü " ) 
+local zindan = select ( "Örümcek Zindaný 1. Kat Baþý " , "Vazgeç " ) 
+if zindan == 1 then 
+pc . warp ( 59800 , 497300 ) 
+end 
+elseif s == 4 then 
+say_title ( "Iþýnlanma Yüzüðü " ) 
+say ( "Sürgün Maðarasý giriþine ýþýnlanýyorsun..." ) 
+wait ( ) 
+pc . warp ( 284400 , 810700 ) 
+elseif s == 5 then 
+say_title ( "Iþýnlanma Yüzüðü " ) 
+local sssssss = select ( "Seungryong Vadisi" , "Sohan Daðý " , "Yongbi Çölü " , "Doyyumhwan" , "Devler Diyarý " , "Þeytan Kulesi" , "Vazgeç " ) 
+if sssssss == 1 then 
+pc . warp ( 336000 , 755600 ) 
+elseif sssssss == 2 then 
+pc . warp ( 436400 , 215600 ) 
+elseif sssssss == 3 then 
+pc . warp ( 296800 , 547400 ) 
+elseif sssssss == 4 then 
+pc . warp ( 600800 , 687400 ) 
+elseif sssssss == 5 then 
+pc . warp ( 829900 , 763300 ) 
+elseif sssssss == 6 then 
+pc . warp ( 590500 , 110500 ) 
+end 
+elseif s == 6 then 
+say_title ( "Iþýnlanma Yüzüðü " ) 
+local aaaa = select ( "Karanlýk Ejderha Kayasý(+90) " , "Nefrit Körfezi(+95) " , "Yýldýrým Daðlarý(+95) " , "Gautamal(+95)" , "Zinkon Cehennemi(+115) " , "Kayýp Bölgeler(+80) " , "Vazgeç " ) 
+if aaaa == 1 then 
+if pc . get_level ( ) >= 90 then 
+pc . warp ( 1.1043e+06 , 1.7885e+06 ) 
+else 
+say_title ( "Iþýnlanma Yüzüðü " ) 
+say ( "" ) 
+say_reward ( "Seviyen yetersiz.!" ) 
+say_reward ( "Gerekli Seviye:+90" ) 
+end 
+elseif aaaa == 2 then 
+if pc . get_level ( ) >= 95 then 
+pc . warp ( 1.0869e+06 , 1.6558e+06 ) 
+else 
+say_title ( "Iþýnlanma Yüzüðü " ) 
+say ( "" ) 
+say_reward ( "Seviyen yetersiz.!" ) 
+say_reward ( "Gerekli Seviye:+95" ) 
+end 
+elseif aaaa == 3 then 
+if pc . get_level ( ) >= 95 then 
+pc . warp ( 1.1345e+06 , 1.6546e+06 ) 
+else 
+say_title ( "Iþýnlanma Yüzüðü " ) 
+say ( "" ) 
+say_reward ( "Seviyen yetersiz.!" ) 
+say_reward ( "Gerekli Seviye:+95" ) 
+end 
+elseif aaaa == 4 then 
+if pc . get_level ( ) >= 95 then 
+pc . warp ( 1.2263e+06 , 1.6811e+06 ) 
+else 
+say_title ( "Iþýnlanma Yüzüðü " ) 
+say ( "" ) 
+say_reward ( "Seviyen yetersiz.!" ) 
+say_reward ( "Gerekli Seviye:+95" ) 
+end 
+elseif aaaa == 5 then 
+if pc . get_level ( ) >= 115 then 
+pc . warp ( 593200 , 779900 ) 
+else 
+say_title ( "Iþýnlanma Yüzüðü " ) 
+say ( "" ) 
+say_reward ( "Seviyen yetersiz.!" ) 
+say_reward ( "Gerekli Seviye:+115" ) 
+end 
+elseif aaaa == 6 then 
+if pc . get_level ( ) >= 80 then 
+pc . warp ( 63800 , 974200 ) 
+else 
+say_title ( "Iþýnlanma Yüzüðü " ) 
+say ( "" ) 
+say_reward ( "Seviyen yetersiz.!" ) 
+say_reward ( "Gerekli Seviye:+80" ) 
+end 
+end 
+elseif s == 7 then 
+end 

@@ -1,0 +1,12 @@
+3	event_panel
+3	moonlight_drop_event
+3	hexegonal_drop_event
+3	hide_seek_event
+3	metin_event
+3	boss_event
+3	fishing_event
+3	golden_frog_event
+3	mining_event
+3	tanaka_event
+3	cards_drop_event
+5	guild_war_join

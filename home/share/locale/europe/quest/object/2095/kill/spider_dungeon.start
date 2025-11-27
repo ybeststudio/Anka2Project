@@ -1,0 +1,10 @@
+if pc . get_map_index ( ) >= 2.17e+06 and pc . get_map_index ( ) <= 2.17999e+06 then if d . select ( pc . get_map_index ( ) ) then 
+d . notice ( index , 675 , "" , false ) 
+d . notice ( index , 676 , "" , false ) 
+local kingVid = d . getf ( "king_vid" ) 
+local remain_egg = d . getf ( "remain_egg" ) 
+d . setf ( "remain_egg" , remain_egg - 1 ) 
+npc . set_vid_attack_mul ( kingVid , 3 / ( remain_egg + 1 ) ) 
+npc . set_vid_damage_mul ( kingVid , 10 / ( remain_egg + 1 ) ) 
+end 
+ return end 

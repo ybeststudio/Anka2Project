@@ -1,0 +1,12 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 7 then 
+if d . getf ( "spawn" ) == 0 then 
+d . setf ( "spawn" , 1 ) 
+d . spawn_mob ( 6091 , 686 , 637 ) 
+d . notice ( d . get_map_index ( ) , 719 , "" , false ) 
+else 
+return 
+end 
+d . jump_all ( 8109 , 6867 ) 
+end 
+end 

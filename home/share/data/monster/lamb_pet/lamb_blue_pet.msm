@@ -1,0 +1,26 @@
+ScriptType            RaceDataScript
+
+BaseModelFileName     "D:\Ymir Work\npc_pet\lamb_pet\lamb_pet.GR2"
+
+Group ShapeData
+{
+    PathName 		 ""
+    ShapeDataCount 		 1
+	Group ShapeData00
+	{
+		ShapeIndex			0
+
+		Model				"D:\Ymir Work\npc_pet\lamb_pet\lamb_pet.GR2"
+		SourceSkin			"D:\Ymir Work\npc_pet\lamb_pet\lamb_white_pet.dds"
+		TargetSkin			"D:\Ymir Work\npc_pet\lamb_pet\lamb_blue_pet.dds"
+	}
+}
+Group ShapeData
+{
+    PathName 		 ""
+    ShapeDataCount 		 0
+}
+Group AttachingData
+{
+    AttachingDataCount       0
+}

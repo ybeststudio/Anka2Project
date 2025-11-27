@@ -1,0 +1,7 @@
+say_title ( "Eğitim başarısız" ) 
+say ( "" ) 
+say ( "Düstün veya indin." ) 
+say ( "Görev basarisiz." ) 
+say ( "" ) 
+setstate ( "start" ) 
+q . done ( ) 

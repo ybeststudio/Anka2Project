@@ -1,0 +1,6 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+d . new_kill_all ( ) 
+d . clear_regen ( ) 
+d . regen_file ( "data/dungeon/hydra/wall.txt" ) 
+d . clear_regen ( ) 
+end 

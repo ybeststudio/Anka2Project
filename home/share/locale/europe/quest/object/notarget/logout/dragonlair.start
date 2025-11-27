@@ -1,0 +1,10 @@
+if pc . get_map_index ( ) >= 2.08e+06 and pc . get_map_index ( ) <= 2.08999e+06 then if d . getf ( "DungeonBlock" ) == 1 then 
+pc . setf ( "dragonlair" , "map" , d . get_map_index ( ) ) 
+pc . setf ( "dragonlair" , "time" , get_global_time ( ) + 15 * 60 ) 
+pc . setf ( "dragonlair" , "channel" , pc . get_channel_id ( ) ) 
+else 
+pc . setf ( "dragonlair" , "map" , 0 ) 
+pc . setf ( "dragonlair" , "time" , 0 ) 
+pc . setf ( "dragonlair" , "channel" , 0 ) 
+end 
+ return end 

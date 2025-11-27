@@ -1,0 +1,101 @@
+guild_building_melt={["start"]=0,GetOreRefineCost= function (cost)if pc . empire ~= npc . empire then 
+return 3 * cost 
+end 
+if pc . get_guild ( ) == npc . get_guild ( ) then 
+return cost * 0.9 
+end 
+return cost 
+end ,GetOreRefineGoodPct= function ()return 60 
+end ,GetOreRefineBadPct= function ()return 30 
+end ,GetMyRefineNum= function (race)return race - 20060 + 50601 
+end ,IsRefinableRawOre= function (vnum)return vnum >= 50601 and vnum <= 50613 
+end ,DoRefineDiamond= function (pct)local from_postfix 
+local from_name = item_name ( item . vnum ) 
+local to_vnum = item . vnum + 20 
+local to_name = item_name ( to_vnum ) 
+local to_postfix 
+if under_han ( from_name ) then 
+from_postfix = "" 
+else 
+from_postfix = "" 
+end 
+if under_han ( to_name ) then 
+to_postfix = "" 
+else 
+to_postfix = "" 
+end 
+say ( "100 " .. from_name .. from_postfix .. " toplaman lazým ki " ) 
+say ( to_name .. to_postfix .. "üretimi yapabilesin." ) 
+if item . count >= 100 then 
+say ( "Baþarý ihtimalin " .. pct .. "%." ) 
+say ( "" .. guild_building_melt . GetOreRefineCost ( 10000 ) .. " Yang gerekli." ) 
+say ( "Denemek istiyormusun?" ) 
+local s = select ( "Evet" , "Hayýr" ) 
+if s == 1 then 
+if pc . get_gold ( ) < guild_building_melt . GetOreRefineCost ( 10000 ) then 
+say ( "Yeterli yang yok." ) 
+return 
+end 
+if pc . diamond_refine ( 10000 , pct ) then 
+say ( "Tebrikler! Cevherler baþarýyla iþlendi. þimdi senin:" ) 
+say_item ( to_name , to_vnum , "" ) 
+else 
+say ( "Cevher iþleme baþarýsýz oldu." ) 
+end 
+end 
+else 
+say ( "100 tane topla..." ) 
+end 
+end ,DoRefine= function (pct)local from_postfix 
+local from_name = item_name ( item . vnum ) 
+local to_vnum = item . vnum + 20 
+local to_name = item_name ( to_vnum ) 
+local to_postfix 
+if under_han ( from_name ) then 
+from_postfix = "" 
+else 
+from_postfix = "" 
+end 
+if under_han ( to_name ) then 
+to_postfix = "" 
+else 
+to_postfix = "" 
+end 
+say ( "Önce 100 " .. from_name .. from_postfix .. "toplaman lazým ki" ) 
+say ( "Ruh Taþý +0, Ruh Taþý +1 veya Ruh Taþý +2" ) 
+say ( to_name .. to_postfix .. "üretebilesin." ) 
+if item . count >= 100 then 
+say ( "Baþarý ihtimalin" .. pct .. "%." .. guild_building_melt . GetOreRefineCost ( 3000 ) .. " Yang ödemen gerekiyor." ) 
+say ( "Denemek istiyor musun?" ) 
+local s = select ( "Evet" , "Hayýr" ) 
+if s == 1 then 
+if pc . get_gold ( ) < guild_building_melt . GetOreRefineCost ( 3000 ) then 
+say ( "Yeterli Yang yok." ) 
+return 
+end 
+local selected_item_cell = select_item ( ) 
+if selected_item_cell == 0 then 
+say ( "Bana meteoridleri göster." ) 
+return 
+end 
+local old_item = item . get_id ( ) 
+if not item . select_cell ( selected_item_cell ) then 
+say ( "Bu istediðimiz malzeme deðil." ) 
+return 
+end 
+if item . vnum < 28000 or item . vnum >= 28300 then 
+say ( "Bu doðru madde deðil." ) 
+return 
+end 
+item . select ( old_item ) 
+if pc . ore_refine ( 3000 , pct , selected_item_cell ) then 
+say ( "Tebrik ederim, islem tamamlandi.Sonuç:" ) 
+say_item ( to_name , to_vnum , "" ) 
+else 
+say ( "Ýþlem baþarýlý olmadý." ) 
+end 
+end 
+else 
+say ( "100 tane topla." ) 
+end 
+end }

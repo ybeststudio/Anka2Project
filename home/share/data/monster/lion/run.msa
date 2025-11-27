@@ -1,0 +1,5 @@
+ScriptType               MotionData
+
+MotionFileName           "D:\ymir work\npc\lion\run.GR2"
+MotionDuration           0.666666
+Accumulation             0.00	-589.625915	0.00

@@ -1,0 +1,2 @@
+if game . get_event_flag ( "hide_seek_event" ) > 0 then send_letter ( "Saklambaç Etkinligi" ) 
+ return end 

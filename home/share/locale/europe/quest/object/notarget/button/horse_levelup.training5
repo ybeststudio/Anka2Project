@@ -1,0 +1,5 @@
+say_title ( "Mistik iskenceci'yi öldür!" ) 
+say ( "" ) 
+say ( "Mistik iskenceci'yi at üzerinden öldür!" ) 
+say ( "Attan inersen kaybedersin." ) 
+say ( "" ) 

@@ -1,0 +1,4 @@
+if game . get_event_flag ( "moon_drop" ) > 0 then say_title ( "Meshure Hazineleri" ) 
+say_new ( "[ENTER]Merhaba genç kahraman! Bugün ay en parlak halinde parliyor. Ve bunun nedeni bugün dolunay olmasi. Bu özel günde, avladiginiz her canavardan Meshure Kutulari elde edebilirsiniz. [ENTER]" ) 
+say_reward_new ( "Dolunayin ve sizin için sakladigi hazinenin tadini çikarin! [ENTER]" ) 
+ return end 

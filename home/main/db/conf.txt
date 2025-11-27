@@ -1,0 +1,14 @@
+WELCOME_MSG = "DB Server has been started"
+BIND_PORT = 15000
+SQL_ACCOUNT = "localhost account beststudio !@#bestprodesinq#@! 0"
+SQL_COMMON = "localhost common beststudio !@#bestprodesinq#@! 0"
+SQL_PLAYER = "localhost player beststudio !@#bestprodesinq#@! 0"
+TABLE_POSTFIX = " "
+DB_SLEEP_MSEC = 10
+CLIENT_HEART_FPS = 10
+HASH_PLAYER_LIFE_SEC = 600
+PLAYER_DELETE_LEVEL_LIMIT = 70
+PLAYER_ID_START = 3
+BACKUP_LIMIT_SEC = 3600
+ITEM_ID_RANGE = 10000001 20000000
+TEST_SERVER = 0

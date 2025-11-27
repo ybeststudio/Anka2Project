@@ -1,0 +1,7 @@
+if pc . get_job ( ) == 0 then pc . set_part ( PART_HAIR , hair . My_hair_item ( item . vnum , 1 ) ) 
+affect . remove_hair ( ) 
+affect . add_hair ( hair . My_hair_item ( item . vnum , 2 ) , hair . My_hair_item ( item . vnum , 3 ) , hair . My_hair_item ( item . vnum , 4 ) ) 
+pc . setqf ( "limit_time" , get_time ( ) + hair . My_hair_item ( item . vnum , 4 ) ) 
+hair . leave_log ( item . vnum ) 
+item . remove ( ) 
+ return end 

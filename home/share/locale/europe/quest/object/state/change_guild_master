@@ -1,0 +1,23 @@
+change_guild_master={["start"]=0,change_master= function (name,level_limit,time_resign_limit,time_be_other_leader,time_be_other_member,iscacheitem)local ret = guild . change_master_with_limit ( name , level_limit , time_resign_limit , time_be_other_leader , time_be_other_member , iscacheitem ) 
+local result = false 
+if ret == 0 then 
+say ( gameforge . change_guild_master . _30_say ) 
+elseif ret == 1 then 
+say ( gameforge . change_guild_master . _40_say ) 
+elseif ret == 2 then 
+say ( gameforge . change_guild_master . _50_say ) 
+elseif ret == 3 then 
+say ( gameforge . change_guild_master . _60_say ) 
+result = true 
+pc . remove_item ( 71099 ) 
+elseif ret == 4 then 
+say ( gameforge . change_guild_master . _70_say ) 
+elseif ret == 5 then 
+say ( gameforge . change_guild_master . _90_say ) 
+elseif ret == 6 then 
+say ( gameforge . change_guild_master . _100_say ) 
+elseif ret == 7 then 
+say ( gameforge . change_guild_master . _110_say ) 
+end 
+return result 
+end }

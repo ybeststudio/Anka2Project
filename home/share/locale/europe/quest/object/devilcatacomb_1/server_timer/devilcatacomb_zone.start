@@ -1,0 +1,16 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "first_regen" ) == 1 then 
+d . setqf2 ( "devilcatacomb_zone" , "catacombkey" , 0 ) 
+d . purge ( ) 
+d . clear_regen ( ) 
+d . setf ( "first_regen" , 0 ) 
+d . setf ( "level" , 2 ) 
+d . setf ( "tortoise_timer" , 1 ) 
+server_timer ( "devilcatacomb_full_timer" , 60 * 60 , d . get_map_index ( ) ) 
+d . setf ( "real_time" , get_global_time ( ) + 60 * 60 ) 
+d . regen_file ( "data/dungeon/devilcatacomb/dc_2f_regen.txt" ) 
+d . regen_file ( "data/dungeon/devilcatacomb/devilcatacomb_floor4_regen2.txt" ) 
+GetMissionInfo ( d . getf ( "level" ) , d . getf ( "real_time" ) - get_global_time ( ) ) 
+d . notice ( d . get_map_index ( ) , 679 , "" , false ) 
+end 
+end 

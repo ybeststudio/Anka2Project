@@ -1,0 +1,8 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 5 then 
+d . setf ( "level" , 6 ) 
+GetMissionInfo ( d . getf ( "level" ) , d . getf ( "real_time" ) - get_global_time ( ) ) 
+d . regen_file ( "data/dungeon/devilcatacomb/dc_7f_regen.txt" ) 
+d . spawn_mob ( 2598 , 74 , 1103 ) 
+end 
+end 

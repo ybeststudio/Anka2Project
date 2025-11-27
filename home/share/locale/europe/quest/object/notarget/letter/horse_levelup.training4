@@ -1,0 +1,5 @@
+q . set_counter ( "Kalan Siyah Ork:" , 10 - pc . getqf ( "kill_count" ) ) 
+setskin ( NOWINDOW ) 
+makequestbutton ( "Siyah Ork öldür!" ) 
+q . set_title ( "Siyah Ork öldür!" ) 
+q . start ( ) 

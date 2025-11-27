@@ -1,0 +1,152 @@
+if item . vnum >= 52031 and item . vnum <= 52035 or item . vnum >= 52001 and item . vnum <= 52005 or item . vnum >= 52016 and item . vnum <= 52020 or item . vnum >= 52046 and item . vnum <= 52050 or item . vnum >= 52061 and item . vnum <= 52065 or item . vnum >= 52031 and item . vnum <= 52036 or item . vnum >= 52076 and item . vnum <= 52080 or item . vnum >= 52091 and item . vnum <= 52095 or item . vnum >= 52106 and item . vnum <= 52110 then local vnum = item . get_vnum ( ) 
+if pc . is_mount ( ) then 
+say_title ( "Seyis" ) 
+say ( "Konuşurken bineğinden iner misin lütfen? Boynum" ) 
+say ( "tutuldu. Durmadan yukarı bakarak konuşmak zor" ) 
+say ( "oluyor." ) 
+else 
+if pc . count_item ( 50067 ) > 0 then 
+say_title ( "Seyis" ) 
+say ( "Binek hayvanı mührünün ahı gitmiş vahı kalmış." ) 
+say ( "Bekle yenisiyle değiştireyim." ) 
+say ( "Buyur alabilirsin. Şimdi yabani binek hayvanını " ) 
+say ( "çağırabilirsin. Mutasyon parşömenini keşfeder" ) 
+say ( "keşfetmez de yanıma dön. Sana daha güçlü bir" ) 
+say ( "binek hayvanı mührü hazırlayacağım." ) 
+wait ( ) 
+say_title ( "Seyis" ) 
+say ( "Bu mühür, dönüşmüş bineğini çağırmanı sağlar. Ona" ) 
+say ( "gözün gibi bak, değeri paha biçilemez!" ) 
+item . remove ( ) 
+pc . remove_item ( "50067" , 1 ) 
+pc . give_item2 ( vnum + 5 , 1 ) 
+else 
+say_title ( "Seyis" ) 
+say ( "Kusura bakma ama doğru belgeler olmadan sana" ) 
+say ( "yardımcı olamam. Yine beni işletmeye kalkışma" ) 
+say ( "yoksa fena yaparım." ) 
+end 
+end 
+ return end if item . vnum >= 52036 and item . vnum <= 52040 or item . vnum >= 52006 and item . vnum <= 52010 or item . vnum >= 52021 and item . vnum <= 52025 or item . vnum >= 52051 and item . vnum <= 52055 or item . vnum >= 52066 and item . vnum <= 52070 or item . vnum >= 52036 and item . vnum <= 52040 or item . vnum >= 52081 and item . vnum <= 52085 or item . vnum >= 52096 and item . vnum <= 52100 or item . vnum >= 52111 and item . vnum <= 52115 then local vnum = item . get_vnum ( ) 
+if pc . is_mount ( ) then 
+say_title ( "Seyis" ) 
+say ( "Konuşurken bineğinden iner misin lütfen? Boynum" ) 
+say ( "tutuldu. Durmadan yukarı bakarak konuşmak zor" ) 
+say ( "oluyor." ) 
+else 
+if pc . count_item ( 50068 ) > 0 then 
+say_title ( "Seyis" ) 
+say ( "İşte sana bir müddet önce verdiğim binek hayvanı " ) 
+say ( "mührü. Ama bayağı kullanılmış. Onu bana geri ver," ) 
+say ( "sana daha güçlü bir binek hayvanı mührü " ) 
+say ( "hazırlayacağım." ) 
+wait ( ) 
+say_title ( "Seyis" ) 
+say ( "Bu mühür dönüşmüş bineğini çağırmanı sağlar. Ona" ) 
+say ( "gözün gibi bak, değeri paha biçilemez!" ) 
+item . remove ( ) 
+pc . remove_item ( "50068" , 1 ) 
+pc . give_item2 ( vnum + 5 , 1 ) 
+else 
+say_title ( "Seyis" ) 
+say ( "Kusura bakma ama doğru belgeler olmadan sana" ) 
+say ( "yardımcı olamam. Yine beni işletmeye kalkışma" ) 
+say ( "yoksa fena yaparım." ) 
+end 
+end 
+ return end if item . vnum >= 52041 and item . vnum <= 52045 or item . vnum >= 52011 and item . vnum <= 52015 or item . vnum >= 52026 and item . vnum <= 52030 or item . vnum >= 52056 and item . vnum <= 52060 or item . vnum >= 52071 and item . vnum <= 52075 or item . vnum >= 52041 and item . vnum <= 52045 or item . vnum >= 52086 and item . vnum <= 52090 or item . vnum >= 52101 and item . vnum <= 52105 or item . vnum >= 52116 and item . vnum <= 52120 then local vnum = item . get_vnum ( ) 
+if pc . is_mount ( ) then 
+say_title ( "Seyis" ) 
+say ( "Konuşurken bineğinden iner misin lütfen? Boynum" ) 
+say ( "tutuldu. Durmadan yukarı bakarak konuşmak zor" ) 
+say ( "oluyor." ) 
+else 
+say_title ( "Seyis" ) 
+say ( "Mutasyon Parşömeni büyük bir güce sahiptir. Cesur" ) 
+say ( "bineğinin ömrünü dört güne kadar uzatabilir. Bir" ) 
+say ( "deneme sana 200.000 Yang'a mal olur. Ancak bunun" ) 
+say ( "için bineğin çok yorulmuş olmalı ve ömrü bir" ) 
+say ( "günden daha az olmalı. Ayrıca tabi biraz da" ) 
+say ( "şansın olmalı! Eğer uzatma başarısız olursa ona" ) 
+say ( "güçlü bir atıştırmalık yedir. Bunu dönen paranın" ) 
+say ( "arkasında bulabilirsin." ) 
+local uz = select ( "Uzat" , "Vazgeç " ) 
+if uz == 2 then 
+return 
+else 
+local uz2 = select ( "7 Gün" , "15 Gün" , "30 Gün" , "Mutasyon Parşömeni + 200k Yang" , "Vazgeç " ) 
+if uz2 == 1 then 
+if pc . count_item ( "38100" ) < 1 then 
+say_title ( "Seyis" ) 
+say ( "Seçtiğin süreye uygun atıştırmalığın ne" ) 
+say ( "yazık ki yok. Ama bunu dönen paraya" ) 
+say ( "tıklayarak alabilirsin." ) 
+else 
+pc . remove_item ( "38100" , 1 ) 
+item . set_socket ( 0 , item . get_socket ( 0 ) + 60 * 60 * 24 * 7 ) 
+end 
+elseif uz2 == 2 then 
+if pc . count_item ( "38101" ) < 1 then 
+say_title ( "Seyis" ) 
+say ( "Seçtiğin süreye uygun atıştırmalığın ne" ) 
+say ( "yazık ki yok. Ama bunu dönen paraya" ) 
+say ( "tıklayarak alabilirsin." ) 
+else 
+pc . remove_item ( "38101" , 1 ) 
+item . set_socket ( 0 , item . get_socket ( 0 ) + 60 * 60 * 24 * 15 ) 
+end 
+elseif uz2 == 3 then 
+if pc . count_item ( "38102" ) < 1 then 
+say_title ( "Seyis" ) 
+say ( "Seçtiğin süreye uygun atıştırmalığın ne" ) 
+say ( "yazık ki yok. Ama bunu dönen paraya" ) 
+say ( "tıklayarak alabilirsin." ) 
+else 
+pc . remove_item ( "38102" , 1 ) 
+item . set_socket ( 0 , item . get_socket ( 0 ) + 60 * 60 * 24 * 30 ) 
+end 
+elseif uz2 == 4 then 
+local time_remaining = item . get_socket ( 0 ) - get_time ( ) 
+if time_remaining > 60 * 60 * 24 then 
+say_title ( "Seyis" ) 
+say ( "Güçlü bineğin henüz çok güçlü. Mutasyon parşömeni" ) 
+say ( "burada hiçbir etki sağlamaz. Bir günden az ömrü " ) 
+say ( "kaldığında yine gel." ) 
+say_reward ( "10 ya da daha az binme hakkın kalmalı." ) 
+else 
+if pc . count_item ( "50068" ) < 1 or pc . get_money ( ) < 200000 then 
+say_title ( "Seyis" ) 
+say ( "Sana ne yazık ki yardım edemeyeceğim. Ya mutasyon" ) 
+say ( "parşömeni yanında değil ya da 200.000 Yang'ın" ) 
+say ( "yok." ) 
+else 
+local chance = number ( 1 , 10 ) 
+if chance > 5 then 
+local chance2 = number ( 1 , 4 ) 
+if chance2 == 1 then 
+item . set_socket ( 0 , item . get_socket ( 0 ) + 60 * 60 * 24 * 1 ) 
+pc . remove_item ( "50068" , 1 ) 
+pc . change_gold ( - 200000 ) 
+elseif chance2 == 2 then 
+item . set_socket ( 0 , item . get_socket ( 0 ) + 60 * 60 * 24 * 2 ) 
+pc . remove_item ( "50068" , 1 ) 
+pc . change_gold ( - 200000 ) 
+elseif chance2 == 3 then 
+item . set_socket ( 0 , item . get_socket ( 0 ) + 60 * 60 * 24 * 3 ) 
+pc . remove_item ( "50068" , 1 ) 
+pc . change_gold ( - 200000 ) 
+elseif chance2 == 4 then 
+item . set_socket ( 0 , item . get_socket ( 0 ) + 60 * 60 * 24 * 4 ) 
+pc . remove_item ( "50068" , 1 ) 
+pc . change_gold ( - 200000 ) 
+end 
+else 
+pc . remove_item ( "50068" , 1 ) 
+pc . change_gold ( - 200000 ) 
+end 
+end 
+end 
+end 
+end 
+end 
+ return end 

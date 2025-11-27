@@ -1,0 +1,26 @@
+local arg = get_server_timer_arg ( ) 
+if d . select ( arg ) then 
+if d . getf ( "DungeonBlock" ) == 1 then 
+d . notice ( arg , 673 , "" , false ) 
+d . setqf2 ( "snow_dungeon" , "cooldown" , get_global_time ( ) + 60 * 60 ) 
+d . track_update ( 6191 ) 
+d . setf ( "DungeonBlock" , 0 ) 
+d . global_warp_all_to_base ( 4319 * 100 , 1647 * 100 , arg , 60 ) 
+GetMissionInfo ( 10 , 60 ) 
+clear_server_timer ( "nemere_1" , arg ) 
+clear_server_timer ( "Jp_2" , arg ) 
+clear_server_timer ( "Jp_3" , arg ) 
+clear_server_timer ( "Jp_4" , arg ) 
+clear_server_timer ( "Jp_5" , arg ) 
+clear_server_timer ( "Jp_6" , arg ) 
+clear_server_timer ( "Jp_7" , arg ) 
+clear_server_timer ( "Jp_8" , arg ) 
+clear_server_timer ( "Jp_Boss" , arg ) 
+clear_server_timer ( "nemere_full_timer" , arg ) 
+clear_server_timer ( "nemere_loop_timer" , arg ) 
+d . setf ( "real_time" , 0 ) 
+d . setf ( "level" , 0 ) 
+d . setf ( "Frost_Key" , 0 ) 
+d . setf ( "Frostflower_Key" , 0 ) 
+end 
+end 

@@ -1,0 +1,9 @@
+if pc . get_map_index ( ) >= 660000 and pc . get_map_index ( ) < 670000 and d . getf ( "level" ) == 6 then d . kill_all ( ) 
+d . clear_regen ( ) 
+d . notice ( d . get_map_index ( ) , 668 , "" , false ) 
+d . check_eliminated ( ) 
+server_timer ( "Devil_7" , 10 , d . get_map_index ( ) ) 
+d . new_kill_all ( ) 
+d . clear_regen ( ) 
+GetMissionInfo ( 5 , 10 ) 
+ return end 

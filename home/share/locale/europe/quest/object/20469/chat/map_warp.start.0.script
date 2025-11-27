@@ -1,0 +1,10 @@
+say_title ( mob_name ( 20469 ) ) 
+say ( "" ) 
+say ( "Buralar sensiz çok sessiz kalacak.." ) 
+say ( "" ) 
+say ( "Bölgeden gerçekten çýkmak istiyor musun?" ) 
+say ( "" ) 
+local s = select ( "Evet" , "Hayýr" ) 
+if s == 1 then 
+warp_to_village ( ) 
+end 

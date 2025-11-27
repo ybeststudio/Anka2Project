@@ -1,0 +1,24 @@
+say_title ( mob_name ( npc . get_race ( ) ) ) 
+say ( "Öldürdüğün her 100 Kiklop için:" ) 
+say_item_vnum ( 71175 ) 
+say ( "Yalnız her gün 1 tane verebilirim." ) 
+wait ( ) 
+say_title ( mob_name ( npc . get_race ( ) ) ) 
+if pc . getqf ( "kiklop_time" ) - get_time ( ) > 0 then 
+say ( "Başka bir bilet hazırlamam için bana biraz" ) 
+say ( "zaman ver. Yarın tekrar uğra." ) 
+return 
+end 
+if pc . getqf ( "kiklop_count" ) < 100 then 
+say ( "Yeterince Kiklop avlayamamışsın. 100" ) 
+say ( "tane öldürmeden sana bunu veremem." ) 
+return 
+end 
+say ( "Harika! İsteğimi yerine getirdiğin için" ) 
+say ( "sana bu ödülü veriyorum." ) 
+say_reward ( "Geçit Bileti Kazandın." ) 
+pc . give_item2 ( "71175" , 1 ) 
+pc . setqf ( "kiklop_time" , get_time ( ) + 24 * 60 * 60 ) 
+pc . setqf ( "kiklop_count" , pc . getqf ( "kiklop_count" ) - 100 ) 
+q . set_counter ( "Öldürülen Kiklop:" , pc . getqf ( "kiklop_count" ) ) 
+return 

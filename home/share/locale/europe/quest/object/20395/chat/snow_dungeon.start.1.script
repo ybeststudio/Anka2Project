@@ -1,0 +1,46 @@
+local dungeonChannel = pc . getf ( "snow_dungeon" , "channel" ) 
+if dungeonChannel == pc . get_channel_id ( ) then 
+local dungeonMapIndex = pc . getf ( "snow_dungeon" , "map" ) 
+if d . select ( dungeonMapIndex ) then 
+local level = d . getf_from_map_index ( "level" , dungeonMapIndex ) 
+if get_global_time ( ) > pc . getf ( "snow_dungeon" , "time" ) then 
+say_new ( "[ENTER]Geri dönmek için 15 dakikaniz vardi! [ENTER]" ) 
+pc . setf ( "snow_dungeon" , "map" , 0 ) 
+pc . setf ( "snow_dungeon" , "time" , 0 ) 
+pc . setf ( "snow_dungeon" , "channel" , 0 ) 
+return 
+end 
+local warp_to_level = { 171 , 271 } 
+if level == 1 then 
+warp_to_level = { 171 , 271 } 
+elseif level == 2 then 
+warp_to_level = { 761 , 270 } 
+elseif level == 3 then 
+warp_to_level = { 187 , 491 } 
+elseif level == 4 then 
+warp_to_level = { 421 , 259 } 
+elseif level == 5 then 
+warp_to_level = { 419 , 530 } 
+elseif level == 6 then 
+warp_to_level = { 571 , 706 } 
+elseif level == 7 then 
+warp_to_level = { 746 , 534 } 
+elseif level == 8 then 
+warp_to_level = { 303 , 710 } 
+elseif level == 9 then 
+warp_to_level = { 848 , 693 } 
+elseif level == 10 then 
+warp_to_level = { 927 , 391 } 
+end 
+pc . warp ( ( 5120 + warp_to_level [ 1 ] ) * 100 , ( 1536 + warp_to_level [ 2 ] ) * 100 , dungeonMapIndex ) 
+else 
+say_new ( "Müsait degil, tekrar baslayabilirsiniz. [ENTER]" ) 
+pc . setf ( "snow_dungeon" , "map" , 0 ) 
+pc . setf ( "snow_dungeon" , "time" , 0 ) 
+pc . setf ( "snow_dungeon" , "channel" , 0 ) 
+end 
+else 
+say_new ( "Zindan bu kanalda açilmadi! [ENTER]" ) 
+say_new ( string . format ( "Girmek için, %d kanalina gidin. [ENTER]" , dungeonChannel ) ) 
+return 
+end 

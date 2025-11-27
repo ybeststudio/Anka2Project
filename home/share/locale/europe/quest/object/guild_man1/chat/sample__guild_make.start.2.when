@@ -1,0 +1,1 @@
+return pc . hasguild ( ) and pc . isguildmaster ( ) and ( pc . is_gm ( ) or npc . empire == pc . empire )

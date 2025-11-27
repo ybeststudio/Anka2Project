@@ -1,0 +1,79 @@
+local s = select ( gameforge . entry_event_map . _100_select , gameforge . entry_event_map . _110_select , gameforge . entry_event_map . _120_select , gameforge . locale . cancel ) 
+if s == 3 then 
+if entry_event_map . gm_exit_check ( ) == 1 then 
+say_title ( "GM: " .. gameforge . entry_event_map . _010_sayTitle ) 
+say ( gameforge . entry_event_map . _130_say ) 
+game . set_event_flag ( "event_map_active" , 0 ) 
+game . set_event_flag ( "event_map_choice" , 0 ) 
+game . set_event_flag ( "event_map_level_min" , 0 ) 
+game . set_event_flag ( "event_map_level_max" , 0 ) 
+game . set_event_flag ( "event_map_player_max" , 0 ) 
+game . set_event_flag ( "event_map_empire" , 0 ) 
+game . set_event_flag ( "event_map_login_counter" , 0 ) 
+warp_all_to_village ( 200 , 30 ) 
+else 
+say_title ( "GM: " .. gameforge . entry_event_map . _010_sayTitle ) 
+say ( gameforge . entry_event_map . _140_say ) 
+return 
+end 
+end 
+if s == 1 then 
+say_title ( "GM: " .. gameforge . entry_event_map . _010_sayTitle ) 
+say ( gameforge . entry_event_map . _150_say ) 
+local choice = select ( "1> min " .. entry_event_map . enter_level ( 1 , 1 ) .. " max " .. entry_event_map . enter_level ( 1 , 2 ) , "2> min " .. entry_event_map . enter_level ( 2 , 1 ) .. " max " .. entry_event_map . enter_level ( 2 , 2 ) , "3> min " .. entry_event_map . enter_level ( 3 , 1 ) .. " max " .. entry_event_map . enter_level ( 3 , 2 ) , "4> min " .. entry_event_map . enter_level ( 4 , 1 ) .. " max " .. entry_event_map . enter_level ( 4 , 2 ) , "5> min " .. entry_event_map . enter_level ( 5 , 1 ) .. " max " .. entry_event_map . enter_level ( 5 , 2 ) , gameforge . locale . cancel ) 
+if choice == 6 then 
+return 
+end 
+say_title ( "GM: " .. gameforge . entry_event_map . _010_sayTitle ) 
+say ( gameforge . entry_event_map . _160_say ) 
+local amount_choice = input_number ( gameforge . entry_event_map . _240_say ) 
+if amount_choice > 200 or amount_choice <= 0 then 
+say_title ( "GM: " .. gameforge . entry_event_map . _010_sayTitle ) 
+say ( gameforge . entry_event_map . _250_say ) 
+return 
+end 
+local empire_names = 
+{ 
+[ 0 ] = gameforge . priv_empire . _33_array , 
+[ 1 ] = gameforge . locale . empire_names_2 , 
+[ 2 ] = gameforge . locale . empire_names_3 , 
+[ 3 ] = gameforge . locale . empire_names_4 , 
+} 
+say_title ( "GM: " .. gameforge . entry_event_map . _010_sayTitle ) 
+say ( gameforge . entry_event_map . _170_say ) 
+local kingdom_sub_set = select ( empire_names [ 1 ] , empire_names [ 2 ] , empire_names [ 3 ] , empire_names [ 0 ] , gameforge . locale . cancel ) 
+if kingdom_sub_set == 5 then 
+return 
+end 
+if kingdom_sub_set == 4 then 
+kingdom_sub_set = 0 
+end 
+say_title ( "GM: " .. gameforge . entry_event_map . _010_sayTitle ) 
+say ( gameforge . entry_event_map . _180_say ) 
+say ( gameforge . entry_event_map . _190_say .. " " .. entry_event_map . enter_level ( choice , 1 ) .. " - " .. entry_event_map . enter_level ( choice , 2 ) ) 
+say ( gameforge . entry_event_map . _200_say .. " " .. amount_choice ) 
+say ( gameforge . entry_event_map . _210_say .. " " .. empire_names [ kingdom_sub_set ] ) 
+local t = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+if t == 2 then 
+return 
+end 
+game . set_event_flag ( "event_map_active" , 1 ) 
+game . set_event_flag ( "event_map_choice" , choice ) 
+game . set_event_flag ( "event_map_level_min" , entry_event_map . enter_level ( choice , 1 ) ) 
+game . set_event_flag ( "event_map_level_max" , entry_event_map . enter_level ( choice , 2 ) ) 
+game . set_event_flag ( "event_map_player_max" , amount_choice ) 
+game . set_event_flag ( "event_map_empire" , kingdom_sub_set ) 
+if kingdom_sub_set == 0 then 
+notice_multiline ( string . format ( gameforge . entry_event_map . _220_notice_all , entry_event_map . enter_level ( choice , 1 ) , entry_event_map . enter_level ( choice , 2 ) ) , notice_all ) 
+else 
+notice_multiline ( string . format ( gameforge . entry_event_map . _230_notice_all , empire_names [ kingdom_sub_set ] , entry_event_map . enter_level ( choice , 1 ) , entry_event_map . enter_level ( choice , 2 ) ) , notice_all ) 
+end 
+elseif s == 2 then 
+game . set_event_flag ( "event_map_active" , 0 ) 
+game . set_event_flag ( "event_map_choice" , 0 ) 
+game . set_event_flag ( "event_map_level_min" , 0 ) 
+game . set_event_flag ( "event_map_level_max" , 0 ) 
+game . set_event_flag ( "event_map_player_max" , 0 ) 
+game . set_event_flag ( "event_map_empire" , 0 ) 
+game . set_event_flag ( "event_map_login_counter" , 0 ) 
+end 

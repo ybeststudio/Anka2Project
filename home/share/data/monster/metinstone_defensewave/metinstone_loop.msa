@@ -1,0 +1,5 @@
+ScriptType               MotionData
+
+MotionFileName           "D:/Ymir Work/monster/metinstone_defensewave/metinstone_loop.GR2"
+MotionDuration           0.666667
+Accumulation             0.00	0.001	0.00

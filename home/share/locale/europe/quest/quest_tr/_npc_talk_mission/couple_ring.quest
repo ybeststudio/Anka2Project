@@ -1,0 +1,180 @@
+quest couple_ring begin
+    state start begin
+        when 9006.chat."Gümüþçünün intikamýný al!" with pc.get_level()>=25 begin
+
+            say_title("Yaþlý Kadýn:")
+            say("")
+            ----"12345678901234567890123456789012345678901234567890"|
+            say("Artýk köydeki savaþçýlardan birisin. Becerilerini")
+            say("nasýl kullandýðýný merak ediyorum. Jin-Hee'leri")
+            say("hiç duydun mu? Onlar çok güçlü savaþçýlardýr.")
+            say("Ýçlerinden biri köyümüzün yüzük tüccarýný ")
+            say("öldürdü. Bu adam sadece benim yakýn bir arkadaþým")
+            say("deðil ayný zamanda evlenmek isteyen gençlere ")
+            say("mücevher satan iyi bir adamdý. Onun intikamýný ")
+            say("almaya hazýr mýsýn? Hazýrsan 30 Jin-Hee")
+            say("öldürmelisin...")
+
+            local s=select("Gümüþçünün intikamýný alacaðým.","Hayýr, Jin-Hee'ler benim için fazla güçlü.")
+
+            if s==1 then
+                say_title("Yaþlý kadýn:")
+                say("")
+                ----"12345678901234567890123456789012345678901234567890"|
+                say("Bu çok onurlu ve akýllýca bir karar! Ama unutma-")
+                say("30 Jin-Hee öldürmelisin. Dikkatli ol, kendilerini")
+                say("saklama konusunda çok ustadýrlar!")
+                say("")
+                set_state(kill)
+            elseif s==2 then
+                say_title("Yaþlý kadýn:")
+                say("")
+                ----"12345678901234567890123456789012345678901234567890"|
+                say("Bu piþman olabileceðin bir karar, ama sen")
+                say("bilirsin. Sonuçta, kendine fazla güven ölümcül")
+                say("olabiliyor. Kendine iyi bak!")
+                say("")
+            end
+        end
+    end
+    state kill begin
+        when enter begin
+            pc.setqf("kill_count", 0)
+        end
+        when leave begin
+            pc.setqf("kill_count", 0)
+            q.done()
+        end
+        when letter begin
+            q.set_counter("Kalan Jin-Hee", couple_ring.get_rest_count());
+        end
+		when kill with npc.get_race() == 394 begin
+            local kill_count=pc.getqf("kill_count")+1
+            pc.setqf("kill_count", kill_count)
+            q.set_counter("Kalan Jin-Hee", couple_ring.get_rest_count());
+
+            if couple_ring.is_completed() then
+                say_title("Hepsini öldürdün. ")
+                say("")
+                say("Bence gümüþçünün intikamýný ")
+                say("aldýn.")
+                say("")
+                ----"12345678901234567890123456789012345678901234567890"|
+                say("Yaþlý Kadýna gidip ona hepsini bitirdiðini")
+                say("söyle. ")
+                say("")
+                set_state(report)
+            end
+        end
+        function get_rest_count()
+            return 30-pc.getqf("kill_count")
+        end
+        function is_completed()
+                return pc.getqf("kill_count")>=30
+        end
+
+        when letter begin
+            send_letter("Jin-Hee'leri yen")
+        end
+        when button or info begin
+            say_title("Bilgi:")
+            say("Yaþlý kadýn yardýmýný istiyor:")
+            say("arkadaþý olan gümüþçü Beyaz Yeminlilerden bir")
+			say("Jin-Hee tarafýndan öldürüldü. 30 tane Jin-Hee")
+			say("öldürerek Gümüþçü'nün intikamýný al.")
+            say_reward(string.format("Kalan Jin-Hee sayýsý: %d", couple_ring.get_rest_count()))
+            say("")
+        end
+        when 9006.chat."Gümüþçünün intikamýný al!" begin
+            say_title("Yaþlý Kadýn:")
+            say("")
+            say("Oh,Jin-Hee'leri öldürdün mü? ")
+            say("Galiba hepsini öldürmedin.")
+            say("Sana zor geliyorsa, söyle.")
+            say("")
+            local s=select("Devam","Vazgeç ")
+            if s==1 then
+                say_title("Yaþlý kadýn:")
+                say("")
+                say("Gümüþcünün ailesi intikam istiyor!")
+                say("Onlara yardým edersen")
+                say("seni ödüllendirecekler!")
+                say("")
+                say("")
+            else
+                say_title("Yaþlý kadýn:")
+                say("")
+                ----"12345678901234567890123456789012345678901234567890"|
+                say("Ne yazýk ki intikam almak istemiyorsun.")
+                say("Hmm, ama hayatýný seviyorsun.")
+                say("Nasýl istersen. Her hayat mühim.")
+                say("")
+                wait()
+                say_title("Bilgi:")
+                say("")
+                say("Gördüðün gibi Yaþlý Kadýnýn ,elinde")
+                say("bir þey vardý. Parlak")
+                say("bir parça. ")
+                say("(Elmas taþ gibi.)")
+                say("")
+                local s = select("Ýntikam al", "Bitir")
+                if s==1 then
+                say_title("Yaþlý kadýn:")
+                say("")
+                ----"12345678901234567890123456789012345678901234567890"|
+                say("Elmas taþlar")
+                say("beni ilgilerdirmiyor. Ben gümüþçünün ")
+                say("intikamýný istiyorum.")
+                say("Ýyi ki bu kararý verdin.")
+                say("")
+                elseif s==2 then
+                say_title("Yaþlý kadýn:")
+                say("")
+                ----"12345678901234567890123456789012345678901234567890"|
+                say(".")
+                say("Ne yazýk, ama intikam almak istemiyorsun.")
+                say("")
+                set_state(start)
+                    q.done()
+                end
+            end
+        end
+    end
+    state report begin
+        when letter begin
+            send_letter("Yaþlý Kadýna dön. ")
+        end
+        when button or info begin
+            say_title("Bilgi:")
+            say("")
+            ----"12345678901234567890123456789012345678901234567890"|
+            say("Yaþlý Kadýna dön ve ona ")
+            say("Gümüþçünün intikamýný ")
+            say("Jin-Hee'leri öldürerek aldýðýný söyle. ")
+            say("")
+        end
+        when 9006.chat." 30 Jin-Hee öldürdün!" begin
+            say_title("Yaþlý kadýn:")
+            say("")
+            say("Bütün  Jin-Heeleri öldürdün. Ýyi yaptýn! ")
+            say("Gümüþçünün ruhu artýk ")
+            say("rahat. Bu yüzük ondan bana kalma.")
+            say("Onu sana veriyorum. Bu onun intikamýný ")
+            say("aldýðýn için senin ödülün. Onun")
+            say("da bunu istediðinden, eminim.")
+            say("")
+            say_reward("Ödül:")
+            say_item("Niþan yüzüðü kazandýn. ", 70301, "Evlemek için gerekli.")
+            pc.give_item2(70301)
+            set_state(__COMPLETE__ )
+            q.done()
+        end
+    end
+        state __COMPLETE__ begin
+                when enter begin
+                        q.done()
+                end
+        end
+    state failure begin
+    end
+end

@@ -1,0 +1,6815 @@
+VNUM	LOCALE_NAME
+1	Yang
+2	Türkçe Sürüm
+10	Kýlýç+0
+11	Kýlýç+1
+12	Kýlýç+2
+13	Kýlýç+3
+14	Kýlýç+4
+15	Kýlýç+5
+16	Kýlýç+6
+17	Kýlýç+7
+18	Kýlýç+8
+19	Kýlýç+9
+20	Uzun Kýlýç+0
+21	Uzun Kýlýç+1
+22	Uzun Kýlýç+2
+23	Uzun Kýlýç+3
+24	Uzun Kýlýç+4
+25	Uzun Kýlýç+5
+26	Uzun Kýlýç+6
+27	Uzun Kýlýç+7
+28	Uzun Kýlýç+8
+29	Uzun Kýlýç+9
+30	Hilal kýlýç+0
+31	Hilal kýlýç+1
+32	Hilal kýlýç+2
+33	Hilal kýlýç+3
+34	Hilal kýlýç+4
+35	Hilal kýlýç+5
+36	Hilal kýlýç+6
+37	Hilal kýlýç+7
+38	Hilal kýlýç+8
+39	Hilal kýlýç+9
+40	Bambu Kýlýcý+0
+41	Bambu Kýlýcý+1
+42	Bambu Kýlýcý+2
+43	Bambu Kýlýcý+3
+44	Bambu Kýlýcý+4
+45	Bambu Kýlýcý+5
+46	Bambu Kýlýcý+6
+47	Bambu Kýlýcý+7
+48	Bambu Kýlýcý+8
+49	Bambu Kýlýcý+9
+50	Geniþ kýlýç+0
+51	Geniþ kýlýç+1
+52	Geniþ kýlýç+2
+53	Geniþ kýlýç+3
+54	Geniþ kýlýç+4
+55	Geniþ kýlýç+5
+56	Geniþ kýlýç+6
+57	Geniþ kýlýç+7
+58	Geniþ kýlýç+8
+59	Geniþ kýlýç+9
+60	Gümüþ Kýlýç+0
+61	Gümüþ Kýlýç+1
+62	Gümüþ Kýlýç+2
+63	Gümüþ Kýlýç+3
+64	Gümüþ Kýlýç+4
+65	Gümüþ Kýlýç+5
+66	Gümüþ Kýlýç+6
+67	Gümüþ Kýlýç+7
+68	Gümüþ Kýlýç+8
+69	Gümüþ Kýlýç+9
+70	Orkide Kýlýcý+0
+71	Orkide Kýlýcý+1
+72	Orkide Kýlýcý+2
+73	Orkide Kýlýcý+3
+74	Orkide Kýlýcý+4
+75	Orkide Kýlýcý+5
+76	Orkide Kýlýcý+6
+77	Orkide Kýlýcý+7
+78	Orkide Kýlýcý+8
+79	Orkide Kýlýcý+9
+80	Sahte Kýlýç+0
+81	Sahte Kýlýç+1
+82	Sahte Kýlýç+2
+83	Sahte Kýlýç+3
+84	Sahte Kýlýç+4
+85	Sahte Kýlýç+5
+86	Sahte Kýlýç+6
+87	Sahte Kýlýç+7
+88	Sahte Kýlýç+8
+89	Sahte Kýlýç+9
+90	Barbar Kýlýcý+0
+91	Barbar Kýlýcý+1
+92	Barbar Kýlýcý+2
+93	Barbar Kýlýcý+3
+94	Barbar Kýlýcý+4
+95	Barbar Kýlýcý+5
+96	Barbar Kýlýcý+6
+97	Barbar Kýlýcý+7
+98	Barbar Kýlýcý+8
+99	Barbar Kýlýcý+9
+100	Kanlý Kýlýç+0
+101	Kanlý Kýlýç+1
+102	Kanlý Kýlýç+2
+103	Kanlý Kýlýç+3
+104	Kanlý Kýlýç+4
+105	Kanlý Kýlýç+5
+106	Kanlý Kýlýç+6
+107	Kanlý Kýlýç+7
+108	Kanlý Kýlýç+8
+109	Kanlý Kýlýç+9
+110	Büyük Kýlýç+0
+111	Büyük Kýlýç+1
+112	Büyük Kýlýç+2
+113	Büyük Kýlýç+3
+114	Büyük Kýlýç+4
+115	Büyük Kýlýç+5
+116	Büyük Kýlýç+6
+117	Büyük Kýlýç+7
+118	Büyük Kýlýç+8
+119	Büyük Kýlýç+9
+120	Uçan Büyücü Kýlýcý+0
+121	Uçan Büyücü Kýlýcý+1
+122	Uçan Büyücü Kýlýcý+2
+123	Uçan Büyücü Kýlýcý+3
+124	Uçan Büyücü Kýlýcý+4
+125	Uçan Büyücü Kýlýcý+5
+126	Uçan Büyücü Kýlýcý+6
+127	Uçan Büyücü Kýlýcý+7
+128	Uçan Büyücü Kýlýcý+8
+129	Uçan Büyücü Kýlýcý+9
+130	Yarýmay Kýlýcý+0
+131	Yarýmay Kýlýcý+1
+132	Yarýmay Kýlýcý+2
+133	Yarýmay Kýlýcý+3
+134	Yarýmay Kýlýcý+4
+135	Yarýmay Kýlýcý+5
+136	Yarýmay Kýlýcý+6
+137	Yarýmay Kýlýcý+7
+138	Yarýmay Kýlýcý+8
+139	Yarýmay Kýlýcý+9
+140	Muharebe Kýlýcý+0
+141	Muharebe Kýlýcý+1
+142	Muharebe Kýlýcý+2
+143	Muharebe Kýlýcý+3
+144	Muharebe Kýlýcý+4
+145	Muharebe Kýlýcý+5
+146	Muharebe Kýlýcý+6
+147	Muharebe Kýlýcý+7
+148	Muharebe Kýlýcý+8
+149	Muharebe Kýlýcý+9
+150	Hortlak Diþi Kýlýcý+0
+151	Hortlak Diþi Kýlýcý+1
+152	Hortlak Diþi Kýlýcý+2
+153	Hortlak Diþi Kýlýcý+3
+154	Hortlak Diþi Kýlýcý+4
+155	Hortlak Diþi Kýlýcý+5
+156	Hortlak Diþi Kýlýcý+6
+157	Hortlak Diþi Kýlýcý+7
+158	Hortlak Diþi Kýlýcý+8
+159	Hortlak Diþi Kýlýcý+9
+160	Su Perisi Kýlýcý+0
+161	Su Perisi Kýlýcý+1
+162	Su Perisi Kýlýcý+2
+163	Su Perisi Kýlýcý+3
+164	Su Perisi Kýlýcý+4
+165	Su Perisi Kýlýcý+5
+166	Su Perisi Kýlýcý+6
+167	Su Perisi Kýlýcý+7
+168	Su Perisi Kýlýcý+8
+169	Su Perisi Kýlýcý+9
+170	Azap Kýlýcý+0
+171	Azap Kýlýcý+1
+172	Azap Kýlýcý+2
+173	Azap Kýlýcý+3
+174	Azap Kýlýcý+4
+175	Azap Kýlýcý+5
+176	Azap Kýlýcý+6
+177	Azap Kýlýcý+7
+178	Azap Kýlýcý+8
+179	Azap Kýlýcý+9
+180	Zehir Kýlýcý+0
+181	Zehir Kýlýcý+1
+182	Zehir Kýlýcý+2
+183	Zehir Kýlýcý+3
+184	Zehir Kýlýcý+4
+185	Zehir Kýlýcý+5
+186	Zehir Kýlýcý+6
+187	Zehir Kýlýcý+7
+188	Zehir Kýlýcý+8
+189	Zehir Kýlýcý+9
+190	Aslan Kýlýcý+0
+191	Aslan Kýlýcý+1
+192	Aslan Kýlýcý+2
+193	Aslan Kýlýcý+3
+194	Aslan Kýlýcý+4
+195	Aslan Kýlýcý+5
+196	Aslan Kýlýcý+6
+197	Aslan Kýlýcý+7
+198	Aslan Kýlýcý+8
+199	Aslan Kýlýcý+9
+200	Keskin Pala+0
+201	Keskin Pala+1
+202	Keskin Pala+2
+203	Keskin Pala+3
+204	Keskin Pala+4
+205	Keskin Pala+5
+206	Keskin Pala+6
+207	Keskin Pala+7
+208	Keskin Pala+8
+209	Keskin Pala+9
+210	Öldürücü Pala+0
+211	Öldürücü Pala+1
+212	Öldürücü Pala+2
+213	Öldürücü Pala+3
+214	Öldürücü Pala+4
+215	Öldürücü Pala+5
+216	Öldürücü Pala+6
+217	Öldürücü Pala+7
+218	Öldürücü Pala+8
+219	Öldürücü Pala+9
+220	Ay Kýlýcý+0
+221	Ay Kýlýcý+1
+222	Ay Kýlýcý+2
+223	Ay Kýlýcý+3
+224	Ay Kýlýcý+4
+225	Ay Kýlýcý+5
+226	Ay Kýlýcý+6
+227	Ay Kýlýcý+7
+228	Ay Kýlýcý+8
+229	Ay Kýlýcý+9
+230	Ýlahi Kýlýç+0
+231	Ýlahi Kýlýç+1
+232	Ýlahi Kýlýç+2
+233	Ýlahi Kýlýç+3
+234	Ýlahi Kýlýç+4
+235	Ýlahi Kýlýç+5
+236	Ýlahi Kýlýç+6
+237	Ýlahi Kýlýç+7
+238	Ýlahi Kýlýç+8
+239	Ýlahi Kýlýç+9
+240	Þeytan Çýkarma Kýlýcý+0
+241	Þeytan Çýkarma Kýlýcý+1
+242	Þeytan Çýkarma Kýlýcý+2
+243	Þeytan Çýkarma Kýlýcý+3
+244	Þeytan Çýkarma Kýlýcý+4
+245	Þeytan Çýkarma Kýlýcý+5
+246	Þeytan Çýkarma Kýlýcý+6
+247	Þeytan Çýkarma Kýlýcý+7
+248	Þeytan Çýkarma Kýlýcý+8
+249	Þeytan Çýkarma Kýlýcý+9
+250	Þeytani Pala+0
+251	Þeytani Pala+1
+252	Þeytani Pala+2
+253	Þeytani Pala+3
+254	Þeytani Pala+4
+255	Þeytani Pala+5
+256	Þeytani Pala+6
+257	Þeytani Pala+7
+258	Þeytani Pala+8
+259	Þeytani Pala+9
+260	Baron Kýlýcý+0
+261	Baron Kýlýcý+1
+262	Baron Kýlýcý+2
+263	Baron Kýlýcý+3
+264	Baron Kýlýcý+4
+265	Baron Kýlýcý+5
+266	Baron Kýlýcý+6
+267	Baron Kýlýcý+7
+268	Baron Kýlýcý+8
+269	Baron Kýlýcý+9
+270	Triton Kýlýcý+0
+271	Triton Kýlýcý+1
+272	Triton Kýlýcý+2
+273	Triton Kýlýcý+3
+274	Triton Kýlýcý+4
+275	Triton Kýlýcý+5
+276	Triton Kýlýcý+6
+277	Triton Kýlýcý+7
+278	Triton Kýlýcý+8
+279	Triton Kýlýcý+9
+280	Kutsal Kýlýç+0
+281	Kutsal Kýlýç+1
+282	Kutsal Kýlýç+2
+283	Kutsal Kýlýç+3
+284	Kutsal Kýlýç+4
+285	Kutsal Kýlýç+5
+286	Kutsal Kýlýç+6
+287	Kutsal Kýlýç+7
+288	Kutsal Kýlýç+8
+289	Kutsal Kýlýç+9
+290	Dolunay Kýlýcý+0
+291	Dolunay Kýlýcý+1
+292	Dolunay Kýlýcý+2
+293	Dolunay Kýlýcý+3
+294	Dolunay Kýlýcý+4
+295	Dolunay Kýlýcý+5
+296	Dolunay Kýlýcý+6
+297	Dolunay Kýlýcý+7
+298	Dolunay Kýlýcý+8
+299	Dolunay Kýlýcý+9
+300	Zodyak Býçak+0
+301	Zodyak Býçak+1
+302	Zodyak Býçak+2
+303	Zodyak Býçak+3
+304	Zodyak Býçak+4
+305	Zodyak Býçak+5
+306	Zodyak Býçak+6
+307	Zodyak Býçak+7
+308	Zodyak Býçak+8
+309	Zodyak Býçak+9
+310	Zodyak Kýlýç+0
+311	Zodyak Kýlýç+1
+312	Zodyak Kýlýç+2
+313	Zodyak Kýlýç+3
+314	Zodyak Kýlýç+4
+315	Zodyak Kýlýç+5
+316	Zodyak Kýlýç+6
+317	Zodyak Kýlýç+7
+318	Zodyak Kýlýç+8
+319	Zodyak Kýlýç+9
+320	Kara ejderha kýlýcý+0
+321	Kara ejderha kýlýcý+1
+322	Kara ejderha kýlýcý+2
+323	Kara ejderha kýlýcý+3
+324	Kara ejderha kýlýcý+4
+325	Kara ejderha kýlýcý+5
+326	Kara ejderha kýlýcý+6
+327	Kara ejderha kýlýcý+7
+328	Kara ejderha kýlýcý+8
+329	Kara ejderha kýlýcý+9
+330	Kara ejderha kýlýcý+10
+331	Kara ejderha kýlýcý+11
+332	Kara ejderha kýlýcý+12
+333	Kara ejderha kýlýcý+13
+334	Kara ejderha kýlýcý+14
+335	Kara ejderha kýlýcý+15
+340	Kara ejderha jileti+0
+341	Kara ejderha jileti+1
+342	Kara ejderha jileti+2
+343	Kara ejderha jileti+3
+344	Kara ejderha jileti+4
+345	Kara ejderha jileti+5
+346	Kara ejderha jileti+6
+347	Kara ejderha jileti+7
+348	Kara ejderha jileti+8
+349	Kara ejderha jileti+9
+350	Kara ejderha jileti+10
+351	Kara ejderha jileti+11
+352	Kara ejderha jileti+12
+353	Kara ejderha jileti+13
+354	Kara ejderha jileti+14
+355	Kara ejderha jileti+15
+360	Yýlan kýlýcý+0
+361	Yýlan kýlýcý+1
+362	Yýlan kýlýcý+2
+363	Yýlan kýlýcý+3
+364	Yýlan kýlýcý+4
+365	Yýlan kýlýcý+5
+366	Yýlan kýlýcý+6
+367	Yýlan kýlýcý+7
+368	Yýlan kýlýcý+8
+369	Yýlan kýlýcý+9
+370	Yýlan kýlýcý+10
+371	Yýlan kýlýcý+11
+372	Yýlan kýlýcý+12
+373	Yýlan kýlýcý+13
+374	Yýlan kýlýcý+14
+375	Yýlan kýlýcý+15
+376	Yýlan kýlýcý(ürtm.)
+380	Yýlan býçaðý+0
+381	Yýlan býçaðý+1
+382	Yýlan býçaðý+2
+383	Yýlan býçaðý+3
+384	Yýlan býçaðý+4
+385	Yýlan býçaðý+5
+386	Yýlan býçaðý+6
+387	Yýlan býçaðý+7
+388	Yýlan býçaðý+8
+389	Yýlan býçaðý+9
+390	Yýlan býçaðý+10
+391	Yýlan býçaðý+11
+392	Yýlan býçaðý+12
+393	Yýlan býçaðý+13
+394	Yýlan býçaðý+14
+395	Yýlan býçaðý+15
+396	Yýlan býçaðý(ürtm.)
+460	Runik Kýlýç +0
+461	Runik Kýlýç +1
+462	Runik Kýlýç +2
+463	Runik Kýlýç +3
+464	Runik Kýlýç +4
+465	Runik Kýlýç +5
+466	Runik Kýlýç +6
+467	Runik Kýlýç +7
+468	Runik Kýlýç +8
+469	Runik Kýlýç +9
+470	Ejderha Diþi Kýlýcý +0
+471	Ejderha Diþi Kýlýcý +1
+472	Ejderha Diþi Kýlýcý +2
+473	Ejderha Diþi Kýlýcý +3
+474	Ejderha Diþi Kýlýcý +4
+475	Ejderha Diþi Kýlýcý +5
+476	Ejderha Diþi Kýlýcý +6
+477	Ejderha Diþi Kýlýcý +7
+478	Ejderha Diþi Kýlýcý +8
+479	Ejderha Diþi Kýlýcý +9
+500	Kyanit Kýlýcý+0
+501	Kyanit Kýlýcý+1
+502	Kyanit Kýlýcý+2
+503	Kyanit Kýlýcý+3
+504	Kyanit Kýlýcý+4
+505	Kyanit Kýlýcý+5
+506	Kyanit Kýlýcý+6
+507	Kyanit Kýlýcý+7
+508	Kyanit Kýlýcý+8
+509	Kyanit Kýlýcý+9
+1000	Hançer+0
+1001	Hançer+1
+1002	Hançer+2
+1003	Hançer+3
+1004	Hançer+4
+1005	Hançer+5
+1006	Hançer+6
+1007	Hançer+7
+1008	Hançer+8
+1009	Hançer+9
+1010	Kobra Hançeri+0
+1011	Kobra Hançeri+1
+1012	Kobra Hançeri+2
+1013	Kobra Hançeri+3
+1014	Kobra Hançeri+4
+1015	Kobra Hançeri+5
+1016	Kobra Hançeri+6
+1017	Kobra Hançeri+7
+1018	Kobra Hançeri+8
+1019	Kobra Hançeri+9
+1020	Makas Hançer+0
+1021	Makas Hançer+1
+1022	Makas Hançer+2
+1023	Makas Hançer+3
+1024	Makas Hançer+4
+1025	Makas Hançer+5
+1026	Makas Hançer+6
+1027	Makas Hançer+7
+1028	Makas Hançer+8
+1029	Makas Hançer+9
+1030	Þanslý Býçak+0
+1031	Þanslý Býçak+1
+1032	Þanslý Býçak+2
+1033	Þanslý Býçak+3
+1034	Þanslý Býçak+4
+1035	Þanslý Býçak+5
+1036	Þanslý Býçak+6
+1037	Þanslý Býçak+7
+1038	Þanslý Býçak+8
+1039	Þanslý Býçak+9
+1040	Kedi Isýrýðý Býçak+0
+1041	Kedi Isýrýðý Býçak+1
+1042	Kedi Isýrýðý Býçak+2
+1043	Kedi Isýrýðý Býçak+3
+1044	Kedi Isýrýðý Býçak+4
+1045	Kedi Isýrýðý Býçak+5
+1046	Kedi Isýrýðý Býçak+6
+1047	Kedi Isýrýðý Býçak+7
+1048	Kedi Isýrýðý Býçak+8
+1049	Kedi Isýrýðý Býçak+9
+1050	Þeytan Surat Hançer+0
+1051	Þeytan Surat Hançer+1
+1052	Þeytan Surat Hançer+2
+1053	Þeytan Surat Hançer+3
+1054	Þeytan Surat Hançer+4
+1055	Þeytan Surat Hançer+5
+1056	Þeytan Surat Hançer+6
+1057	Þeytan Surat Hançer+7
+1058	Þeytan Surat Hançer+8
+1059	Þeytan Surat Hançer+9
+1060	Þeytan Yumruðu Hançeri+0
+1061	Þeytan Yumruðu Hançeri+1
+1062	Þeytan Yumruðu Hançeri+2
+1063	Þeytan Yumruðu Hançeri+3
+1064	Þeytan Yumruðu Hançeri+4
+1065	Þeytan Yumruðu Hançeri+5
+1066	Þeytan Yumruðu Hançeri+6
+1067	Þeytan Yumruðu Hançeri+7
+1068	Þeytan Yumruðu Hançeri+8
+1069	Þeytan Yumruðu Hançeri+9
+1070	Kanlý Hançer+0
+1071	Kanlý Hançer+1
+1072	Kanlý Hançer+2
+1073	Kanlý Hançer+3
+1074	Kanlý Hançer+4
+1075	Kanlý Hançer+5
+1076	Kanlý Hançer+6
+1077	Kanlý Hançer+7
+1078	Kanlý Hançer+8
+1079	Kanlý Hançer+9
+1080	Kaburga Býçak+0
+1081	Kaburga Býçak+1
+1082	Kaburga Býçak+2
+1083	Kaburga Býçak+3
+1084	Kaburga Býçak+4
+1085	Kaburga Býçak+5
+1086	Kaburga Býçak+6
+1087	Kaburga Býçak+7
+1088	Kaburga Býçak+8
+1089	Kaburga Býçak+9
+1090	Çakram+0
+1091	Çakram+1
+1092	Çakram+2
+1093	Çakram+3
+1094	Çakram+4
+1095	Çakram+5
+1096	Çakram+6
+1097	Çakram+7
+1098	Çakram+8
+1099	Çakram+9
+1100	Ejderha Býçaðý+0
+1101	Ejderha Býçaðý+1
+1102	Ejderha Býçaðý+2
+1103	Ejderha Býçaðý+3
+1104	Ejderha Býçaðý+4
+1105	Ejderha Býçaðý+5
+1106	Ejderha Býçaðý+6
+1107	Ejderha Býçaðý+7
+1108	Ejderha Býçaðý+8
+1109	Ejderha Býçaðý+9
+1110	Þimþek Býçaðý+0
+1111	Þimþek Býçaðý+1
+1112	Þimþek Býçaðý+2
+1113	Þimþek Býçaðý+3
+1114	Þimþek Býçaðý+4
+1115	Þimþek Býçaðý+5
+1116	Þimþek Býçaðý+6
+1117	Þimþek Býçaðý+7
+1118	Þimþek Býçaðý+8
+1119	Þimþek Býçaðý+9
+1120	Siam Býçaðý+0
+1121	Siam Býçaðý+1
+1122	Siam Býçaðý+2
+1123	Siam Býçaðý+3
+1124	Siam Býçaðý+4
+1125	Siam Býçaðý+5
+1126	Siam Býçaðý+6
+1127	Siam Býçaðý+7
+1128	Siam Býçaðý+8
+1129	Siam Býçaðý+9
+1130	Þeytan Kanadý Çakram+0
+1131	Þeytan Kanadý Çakram+1
+1132	Þeytan Kanadý Çakram+2
+1133	Þeytan Kanadý Çakram+3
+1134	Þeytan Kanadý Çakram+4
+1135	Þeytan Kanadý Çakram+5
+1136	Þeytan Kanadý Çakram+6
+1137	Þeytan Kanadý Çakram+7
+1138	Þeytan Kanadý Çakram+8
+1139	Þeytan Kanadý Çakram+9
+1140	Testere Diþ Býçaðý+0
+1141	Testere Diþ Býçaðý+1
+1142	Testere Diþ Býçaðý+2
+1143	Testere Diþ Býçaðý+3
+1144	Testere Diþ Býçaðý+4
+1145	Testere Diþ Býçaðý+5
+1146	Testere Diþ Býçaðý+6
+1147	Testere Diþ Býçaðý+7
+1148	Testere Diþ Býçaðý+8
+1149	Testere Diþ Býçaðý+9
+1150	Gün Iþýðý Býçaðý+0
+1151	Gün Iþýðý Býçaðý+1
+1152	Gün Iþýðý Býçaðý+2
+1153	Gün Iþýðý Býçaðý+3
+1154	Gün Iþýðý Býçaðý+4
+1155	Gün Iþýðý Býçaðý+5
+1156	Gün Iþýðý Býçaðý+6
+1157	Gün Iþýðý Býçaðý+7
+1158	Gün Iþýðý Býçaðý+8
+1159	Gün Iþýðý Býçaðý+9
+1160	Rivulet Býçaðý+0
+1161	Rivulet Býçaðý+1
+1162	Rivulet Býçaðý+2
+1163	Rivulet Býçaðý+3
+1164	Rivulet Býçaðý+4
+1165	Rivulet Býçaðý+5
+1166	Rivulet Býçaðý+6
+1167	Rivulet Býçaðý+7
+1168	Rivulet Býçaðý+8
+1169	Rivulet Býçaðý+9
+1170	Siyah Yaprak Hançeri+0
+1171	Siyah Yaprak Hançeri+1
+1172	Siyah Yaprak Hançeri+2
+1173	Siyah Yaprak Hançeri+3
+1174	Siyah Yaprak Hançeri+4
+1175	Siyah Yaprak Hançeri+5
+1176	Siyah Yaprak Hançeri+6
+1177	Siyah Yaprak Hançeri+7
+1178	Siyah Yaprak Hançeri+8
+1179	Siyah Yaprak Hançeri+9
+1180	Zodyak Hançeri+0
+1181	Zodyak Hançeri+1
+1182	Zodyak Hançeri+2
+1183	Zodyak Hançeri+3
+1184	Zodyak Hançeri+4
+1185	Zodyak Hançeri+5
+1186	Zodyak Hançeri+6
+1187	Zodyak Hançeri+7
+1188	Zodyak Hançeri+8
+1189	Zodyak Hançeri+9
+1190	Kara ejderha hançeri+0
+1191	Kara ejderha hançeri+1
+1192	Kara ejderha hançeri+2
+1193	Kara ejderha hançeri+3
+1194	Kara ejderha hançeri+4
+1195	Kara ejderha hançeri+5
+1196	Kara ejderha hançeri+6
+1197	Kara ejderha hançeri+7
+1198	Kara ejderha hançeri+8
+1199	Kara ejderha hançeri+9
+1200	Kara ejderha hançeri+10
+1201	Kara ejderha hançeri+11
+1202	Kara ejderha hançeri+12
+1203	Kara ejderha hançeri+13
+1204	Kara ejderha hançeri+14
+1205	Kara ejderha hançeri+15
+1210	Yýlan hançeri+0
+1211	Yýlan hançeri+1
+1212	Yýlan hançeri+2
+1213	Yýlan hançeri+3
+1214	Yýlan hançeri+4
+1215	Yýlan hançeri+5
+1216	Yýlan hançeri+6
+1217	Yýlan hançeri+7
+1218	Yýlan hançeri+8
+1219	Yýlan hançeri+9
+1220	Yýlan hançeri+10
+1221	Yýlan hançeri+11
+1222	Yýlan hançeri+12
+1223	Yýlan hançeri+13
+1224	Yýlan hançeri+14
+1225	Yýlan hançeri+15
+1226	Yýlan hançeri(ürtm.)
+1340	Beþ Element Kýlýcý +0
+1341	Beþ Element Kýlýcý +1
+1342	Beþ Element Kýlýcý +2
+1343	Beþ Element Kýlýcý +3
+1344	Beþ Element Kýlýcý +4
+1345	Beþ Element Kýlýcý +5
+1346	Beþ Element Kýlýcý +6
+1347	Beþ Element Kýlýcý +7
+1348	Beþ Element Kýlýcý +8
+1349	Beþ Element Kýlýcý +9
+1500	Kyanit Hançer+0
+1501	Kyanit Hançer+1
+1502	Kyanit Hançer+2
+1503	Kyanit Hançer+3
+1504	Kyanit Hançer+4
+1505	Kyanit Hançer+5
+1506	Kyanit Hançer+6
+1507	Kyanit Hançer+7
+1508	Kyanit Hançer+8
+1509	Kyanit Hançer+9
+2000	Yay+0
+2001	Yay+1
+2002	Yay+2
+2003	Yay+3
+2004	Yay+4
+2005	Yay+5
+2006	Yay+6
+2007	Yay+7
+2008	Yay+8
+2009	Yay+9
+2010	Uzun Yay +0
+2011	Uzun Yay +1
+2012	Uzun Yay +2
+2013	Uzun Yay +3
+2014	Uzun Yay +4
+2015	Uzun Yay +5
+2016	Uzun Yay +6
+2017	Uzun Yay +7
+2018	Uzun Yay +8
+2019	Uzun Yay +9
+2020	Birleþik Yay+0
+2021	Birleþik Yay+1
+2022	Birleþik Yay+2
+2023	Birleþik Yay+3
+2024	Birleþik Yay+4
+2025	Birleþik Yay+5
+2026	Birleþik Yay+6
+2027	Birleþik Yay+7
+2028	Birleþik Yay+8
+2029	Birleþik Yay+9
+2030	Harp Yayý+0
+2031	Harp Yayý+1
+2032	Harp Yayý+2
+2033	Harp Yayý+3
+2034	Harp Yayý+4
+2035	Harp Yayý+5
+2036	Harp Yayý+6
+2037	Harp Yayý+7
+2038	Harp Yayý+8
+2039	Harp Yayý+9
+2040	Atsýrtý Uzun Yay+0
+2041	Atsýrtý Uzun Yay+1
+2042	Atsýrtý Uzun Yay+2
+2043	Atsýrtý Uzun Yay+3
+2044	Atsýrtý Uzun Yay+4
+2045	Atsýrtý Uzun Yay+5
+2046	Atsýrtý Uzun Yay+6
+2047	Atsýrtý Uzun Yay+7
+2048	Atsýrtý Uzun Yay+8
+2049	Atsýrtý Uzun Yay+9
+2050	Atsýrtý Savaþ+0
+2051	Atsýrtý Savaþ+1
+2052	Atsýrtý Savaþ+2
+2053	Atsýrtý Savaþ+3
+2054	Atsýrtý Savaþ+4
+2055	Atsýrtý Savaþ+5
+2056	Atsýrtý Savaþ+6
+2057	Atsýrtý Savaþ+7
+2058	Atsýrtý Savaþ+8
+2059	Atsýrtý Savaþ+9
+2060	Bakýr Ýþçiliði Yay+0
+2061	Bakýr Ýþçiliði Yay+1
+2062	Bakýr Ýþçiliði Yay+2
+2063	Bakýr Ýþçiliði Yay+3
+2064	Bakýr Ýþçiliði Yay+4
+2065	Bakýr Ýþçiliði Yay+5
+2066	Bakýr Ýþçiliði Yay+6
+2067	Bakýr Ýþçiliði Yay+7
+2068	Bakýr Ýþçiliði Yay+8
+2069	Bakýr Ýþçiliði Yay+9
+2070	Kara Yýkým Yayý+0
+2071	Kara Yýkým Yayý+1
+2072	Kara Yýkým Yayý+2
+2073	Kara Yýkým Yayý+3
+2074	Kara Yýkým Yayý+4
+2075	Kara Yýkým Yayý+5
+2076	Kara Yýkým Yayý+6
+2077	Kara Yýkým Yayý+7
+2078	Kara Yýkým Yayý+8
+2079	Kara Yýkým Yayý+9
+2080	Kýrmýzý Göz Yay+0
+2081	Kýrmýzý Göz Yay+1
+2082	Kýrmýzý Göz Yay+2
+2083	Kýrmýzý Göz Yay+3
+2084	Kýrmýzý Göz Yay+4
+2085	Kýrmýzý Göz Yay+5
+2086	Kýrmýzý Göz Yay+6
+2087	Kýrmýzý Göz Yay+7
+2088	Kýrmýzý Göz Yay+8
+2089	Kýrmýzý Göz Yay+9
+2090	Dikenli Yaprak Yayý+0
+2091	Dikenli Yaprak Yayý+1
+2092	Dikenli Yaprak Yayý+2
+2093	Dikenli Yaprak Yayý+3
+2094	Dikenli Yaprak Yayý+4
+2095	Dikenli Yaprak Yayý+5
+2096	Dikenli Yaprak Yayý+6
+2097	Dikenli Yaprak Yayý+7
+2098	Dikenli Yaprak Yayý+8
+2099	Dikenli Yaprak Yayý+9
+2100	Boða Boynuzu Yay+0
+2101	Boða Boynuzu Yay+1
+2102	Boða Boynuzu Yay+2
+2103	Boða Boynuzu Yay+3
+2104	Boða Boynuzu Yay+4
+2105	Boða Boynuzu Yay+5
+2106	Boða Boynuzu Yay+6
+2107	Boða Boynuzu Yay+7
+2108	Boða Boynuzu Yay+8
+2109	Boða Boynuzu Yay+9
+2110	Tek Boynuzlu Yay+0
+2111	Tek Boynuzlu Yay+1
+2112	Tek Boynuzlu Yay+2
+2113	Tek Boynuzlu Yay+3
+2114	Tek Boynuzlu Yay+4
+2115	Tek Boynuzlu Yay+5
+2116	Tek Boynuzlu Yay+6
+2117	Tek Boynuzlu Yay+7
+2118	Tek Boynuzlu Yay+8
+2119	Tek Boynuzlu Yay+9
+2120	Dev Kanatlý Yay+0
+2121	Dev Kanatlý Yay+1
+2122	Dev Kanatlý Yay+2
+2123	Dev Kanatlý Yay+3
+2124	Dev Kanatlý Yay+4
+2125	Dev Kanatlý Yay+5
+2126	Dev Kanatlý Yay+6
+2127	Dev Kanatlý Yay+7
+2128	Dev Kanatlý Yay+8
+2129	Dev Kanatlý Yay+9
+2130	Kutsal Sert Yay+0
+2131	Kutsal Sert Yay+1
+2132	Kutsal Sert Yay+2
+2133	Kutsal Sert Yay+3
+2134	Kutsal Sert Yay+4
+2135	Kutsal Sert Yay+5
+2136	Kutsal Sert Yay+6
+2137	Kutsal Sert Yay+7
+2138	Kutsal Sert Yay+8
+2139	Kutsal Sert Yay+9
+2140	Sarý EjderhaYayý+0
+2141	Sarý EjderhaYayý+1
+2142	Sarý EjderhaYayý+2
+2143	Sarý EjderhaYayý+3
+2144	Sarý EjderhaYayý+4
+2145	Sarý EjderhaYayý+5
+2146	Sarý EjderhaYayý+6
+2147	Sarý EjderhaYayý+7
+2148	Sarý EjderhaYayý+8
+2149	Sarý EjderhaYayý+9
+2150	Geyik Boynuzu Yay+0
+2151	Geyik Boynuzu Yay+1
+2152	Geyik Boynuzu Yay+2
+2153	Geyik Boynuzu Yay+3
+2154	Geyik Boynuzu Yay+4
+2155	Geyik Boynuzu Yay+5
+2156	Geyik Boynuzu Yay+6
+2157	Geyik Boynuzu Yay+7
+2158	Geyik Boynuzu Yay+8
+2159	Geyik Boynuzu Yay+9
+2160	Büyük Þeytan Yayý+0
+2161	Büyük Þeytan Yayý+1
+2162	Büyük Þeytan Yayý+2
+2163	Büyük Þeytan Yayý+3
+2164	Büyük Þeytan Yayý+4
+2165	Büyük Þeytan Yayý+5
+2166	Büyük Þeytan Yayý+6
+2167	Büyük Þeytan Yayý+7
+2168	Büyük Þeytan Yayý+8
+2169	Büyük Þeytan Yayý+9
+2170	Havalý Çelik Yay+0
+2171	Havalý Çelik Yay+1
+2172	Havalý Çelik Yay+2
+2173	Havalý Çelik Yay+3
+2174	Havalý Çelik Yay+4
+2175	Havalý Çelik Yay+5
+2176	Havalý Çelik Yay+6
+2177	Havalý Çelik Yay+7
+2178	Havalý Çelik Yay+8
+2179	Havalý Çelik Yay+9
+2180	Mavi Ejderha Yayý+0
+2181	Mavi Ejderha Yayý+1
+2182	Mavi Ejderha Yayý+2
+2183	Mavi Ejderha Yayý+3
+2184	Mavi Ejderha Yayý+4
+2185	Mavi Ejderha Yayý+5
+2186	Mavi Ejderha Yayý+6
+2187	Mavi Ejderha Yayý+7
+2188	Mavi Ejderha Yayý+8
+2189	Mavi Ejderha Yayý+9
+2190	Hayalet Yay+0
+2191	Hayalet Yay+1
+2192	Hayalet Yay+2
+2193	Hayalet Yay+3
+2194	Hayalet Yay+4
+2195	Hayalet Yay+5
+2196	Hayalet Yay+6
+2197	Hayalet Yay+7
+2198	Hayalet Yay+8
+2199	Hayalet Yay+9
+2200	Zodyak Yay+0
+2201	Zodyak Yay+1
+2202	Zodyak Yay+2
+2203	Zodyak Yay+3
+2204	Zodyak Yay+4
+2205	Zodyak Yay+5
+2206	Zodyak Yay+6
+2207	Zodyak Yay+7
+2208	Zodyak Yay+8
+2209	Zodyak Yay+9
+2210	Kara ejderha yayý+0
+2211	Kara ejderha yayý+1
+2212	Kara ejderha yayý+2
+2213	Kara ejderha yayý+3
+2214	Kara ejderha yayý+4
+2215	Kara ejderha yayý+5
+2216	Kara ejderha yayý+6
+2217	Kara ejderha yayý+7
+2218	Kara ejderha yayý+8
+2219	Kara ejderha yayý+9
+2220	Kara ejderha yayý+10
+2221	Kara ejderha yayý+11
+2222	Kara ejderha yayý+12
+2223	Kara ejderha yayý+13
+2224	Kara ejderha yayý+14
+2225	Kara ejderha yayý+15
+2230	Yýlan yayý+0
+2231	Yýlan yayý+1
+2232	Yýlan yayý+2
+2233	Yýlan yayý+3
+2234	Yýlan yayý+4
+2235	Yýlan yayý+5
+2236	Yýlan yayý+6
+2237	Yýlan yayý+7
+2238	Yýlan yayý+8
+2239	Yýlan yayý+9
+2240	Yýlan yayý+10
+2241	Yýlan yayý+11
+2242	Yýlan yayý+12
+2243	Yýlan yayý+13
+2244	Yýlan yayý+14
+2245	Yýlan yayý+15
+2246	Yýlan yayý(ürtm.)
+2370	Anka Yayý +0
+2371	Anka Yayý +1
+2372	Anka Yayý +2
+2373	Anka Yayý +3
+2374	Anka Yayý +4
+2375	Anka Yayý +5
+2376	Anka Yayý +6
+2377	Anka Yayý +7
+2378	Anka Yayý +8
+2379	Anka Yayý +9
+2500	Kyanit Yay+0
+2501	Kyanit Yay+1
+2502	Kyanit Yay+2
+2503	Kyanit Yay+3
+2504	Kyanit Yay+4
+2505	Kyanit Yay+5
+2506	Kyanit Yay+6
+2507	Kyanit Yay+7
+2508	Kyanit Yay+8
+2509	Kyanit Yay+9
+3000	Geniþ Mýzrak+0
+3001	Geniþ Mýzrak+1
+3002	Geniþ Mýzrak+2
+3003	Geniþ Mýzrak+3
+3004	Geniþ Mýzrak+4
+3005	Geniþ Mýzrak+5
+3006	Geniþ Mýzrak+6
+3007	Geniþ Mýzrak+7
+3008	Geniþ Mýzrak+8
+3009	Geniþ Mýzrak+9
+3010	Mýzrak+0
+3011	Mýzrak+1
+3012	Mýzrak+2
+3013	Mýzrak+3
+3014	Mýzrak+4
+3015	Mýzrak+5
+3016	Mýzrak+6
+3017	Mýzrak+7
+3018	Mýzrak+8
+3019	Mýzrak+9
+3020	Giyotin Pala+0
+3021	Giyotin Pala+1
+3022	Giyotin Pala+2
+3023	Giyotin Pala+3
+3024	Giyotin Pala+4
+3025	Giyotin Pala+5
+3026	Giyotin Pala+6
+3027	Giyotin Pala+7
+3028	Giyotin Pala+8
+3029	Giyotin Pala+9
+3030	Örümcek Mýzraðý+0
+3031	Örümcek Mýzraðý+1
+3032	Örümcek Mýzraðý+2
+3033	Örümcek Mýzraðý+3
+3034	Örümcek Mýzraðý+4
+3035	Örümcek Mýzraðý+5
+3036	Örümcek Mýzraðý+6
+3037	Örümcek Mýzraðý+7
+3038	Örümcek Mýzraðý+8
+3039	Örümcek Mýzraðý+9
+3040	Kargý+0
+3041	Kargý+1
+3042	Kargý+2
+3043	Kargý+3
+3044	Kargý+4
+3045	Kargý+5
+3046	Kargý+6
+3047	Kargý+7
+3048	Kargý+8
+3049	Kargý+9
+3050	Savaþ Týrpaný+0
+3051	Savaþ Týrpaný+1
+3052	Savaþ Týrpaný+2
+3053	Savaþ Týrpaný+3
+3054	Savaþ Týrpaný+4
+3055	Savaþ Týrpaný+5
+3056	Savaþ Týrpaný+6
+3057	Savaþ Týrpaný+7
+3058	Savaþ Týrpaný+8
+3059	Savaþ Týrpaný+9
+3060	Askeri Týrmýk+0
+3061	Askeri Týrmýk+1
+3062	Askeri Týrmýk+2
+3063	Askeri Týrmýk+3
+3064	Askeri Týrmýk+4
+3065	Askeri Týrmýk+5
+3066	Askeri Týrmýk+6
+3067	Askeri Týrmýk+7
+3068	Askeri Týrmýk+8
+3069	Askeri Týrmýk+9
+3070	Baltalý Mýzrak+0
+3071	Baltalý Mýzrak+1
+3072	Baltalý Mýzrak+2
+3073	Baltalý Mýzrak+3
+3074	Baltalý Mýzrak+4
+3075	Baltalý Mýzrak+5
+3076	Baltalý Mýzrak+6
+3077	Baltalý Mýzrak+7
+3078	Baltalý Mýzrak+8
+3079	Baltalý Mýzrak+9
+3080	Büyük Balta+0
+3081	Büyük Balta+1
+3082	Büyük Balta+2
+3083	Büyük Balta+3
+3084	Büyük Balta+4
+3085	Büyük Balta+5
+3086	Büyük Balta+6
+3087	Büyük Balta+7
+3088	Büyük Balta+8
+3089	Büyük Balta+9
+3090	Buzlu Uç+0
+3091	Buzlu Uç+1
+3092	Buzlu Uç+2
+3093	Buzlu Uç+3
+3094	Buzlu Uç+4
+3095	Buzlu Uç+5
+3096	Buzlu Uç+6
+3097	Buzlu Uç+7
+3098	Buzlu Uç+8
+3099	Buzlu Uç+9
+3100	Oniki Ruh Kýlýcý+0
+3101	Oniki Ruh Kýlýcý+1
+3102	Oniki Ruh Kýlýcý+2
+3103	Oniki Ruh Kýlýcý+3
+3104	Oniki Ruh Kýlýcý+4
+3105	Oniki Ruh Kýlýcý+5
+3106	Oniki Ruh Kýlýcý+6
+3107	Oniki Ruh Kýlýcý+7
+3108	Oniki Ruh Kýlýcý+8
+3109	Oniki Ruh Kýlýcý+9
+3110	Kurtuluþ Palasý+0
+3111	Kurtuluþ Palasý+1
+3112	Kurtuluþ Palasý+2
+3113	Kurtuluþ Palasý+3
+3114	Kurtuluþ Palasý+4
+3115	Kurtuluþ Palasý+5
+3116	Kurtuluþ Palasý+6
+3117	Kurtuluþ Palasý+7
+3118	Kurtuluþ Palasý+8
+3119	Kurtuluþ Palasý+9
+3120	Aslan Katleden+0
+3121	Aslan Katleden+1
+3122	Aslan Katleden+2
+3123	Aslan Katleden+3
+3124	Aslan Katleden+4
+3125	Aslan Katleden+5
+3126	Aslan Katleden+6
+3127	Aslan Katleden+7
+3128	Aslan Katleden+8
+3129	Aslan Katleden+9
+3130	Partizan+0
+3131	Partizan+1
+3132	Partizan+2
+3133	Partizan+3
+3134	Partizan+4
+3135	Partizan+5
+3136	Partizan+6
+3137	Partizan+7
+3138	Partizan+8
+3139	Partizan+9
+3140	Elektromanyetik Pala+0
+3141	Elektromanyetik Pala+1
+3142	Elektromanyetik Pala+2
+3143	Elektromanyetik Pala+3
+3144	Elektromanyetik Pala+4
+3145	Elektromanyetik Pala+5
+3146	Elektromanyetik Pala+6
+3147	Elektromanyetik Pala+7
+3148	Elektromanyetik Pala+8
+3149	Elektromanyetik Pala+9
+3150	Yarý-Ýnsan Kýlýç+0
+3151	Yarý-Ýnsan Kýlýç+1
+3152	Yarý-Ýnsan Kýlýç+2
+3153	Yarý-Ýnsan Kýlýç+3
+3154	Yarý-Ýnsan Kýlýç+4
+3155	Yarý-Ýnsan Kýlýç+5
+3156	Yarý-Ýnsan Kýlýç+6
+3157	Yarý-Ýnsan Kýlýç+7
+3158	Yarý-Ýnsan Kýlýç+8
+3159	Yarý-Ýnsan Kýlýç+9
+3160	Kin Kýlýcý+0
+3161	Kin Kýlýcý+1
+3162	Kin Kýlýcý+2
+3163	Kin Kýlýcý+3
+3164	Kin Kýlýcý+4
+3165	Kin Kýlýcý+5
+3166	Kin Kýlýcý+6
+3167	Kin Kýlýcý+7
+3168	Kin Kýlýcý+8
+3169	Kin Kýlýcý+9
+3170	Sarý Ejderha Katleden+0
+3171	Sarý Ejderha Katleden+1
+3172	Sarý Ejderha Katleden+2
+3173	Sarý Ejderha Katleden+3
+3174	Sarý Ejderha Katleden+4
+3175	Sarý Ejderha Katleden+5
+3176	Sarý Ejderha Katleden+6
+3177	Sarý Ejderha Katleden+7
+3178	Sarý Ejderha Katleden+8
+3179	Sarý Ejderha Katleden+9
+3180	Mavi Ejderha Katleden+0
+3181	Mavi Ejderha Katleden+1
+3182	Mavi Ejderha Katleden+2
+3183	Mavi Ejderha Katleden+3
+3184	Mavi Ejderha Katleden+4
+3185	Mavi Ejderha Katleden+5
+3186	Mavi Ejderha Katleden+6
+3187	Mavi Ejderha Katleden+7
+3188	Mavi Ejderha Katleden+8
+3189	Mavi Ejderha Katleden+9
+3190	Güneþ Kýlýcý +0
+3191	Güneþ Kýlýcý +1
+3192	Güneþ Kýlýcý +2
+3193	Güneþ Kýlýcý +3
+3194	Güneþ Kýlýcý +4
+3195	Güneþ Kýlýcý +5
+3196	Güneþ Kýlýcý +6
+3197	Güneþ Kýlýcý +7
+3198	Güneþ Kýlýcý +8
+3199	Güneþ Kýlýcý +9
+3200	Ejderha Tanrýsý Palasý+0
+3201	Ejderha Tanrýsý Palasý+1
+3202	Ejderha Tanrýsý Palasý+2
+3203	Ejderha Tanrýsý Palasý+3
+3204	Ejderha Tanrýsý Palasý+4
+3205	Ejderha Tanrýsý Palasý+5
+3206	Ejderha Tanrýsý Palasý+6
+3207	Ejderha Tanrýsý Palasý+7
+3208	Ejderha Tanrýsý Palasý+8
+3209	Ejderha Tanrýsý Palasý+9
+3210	Kýrmýzý Demir Pala+0
+3211	Kýrmýzý Demir Pala+1
+3212	Kýrmýzý Demir Pala+2
+3213	Kýrmýzý Demir Pala+3
+3214	Kýrmýzý Demir Pala+4
+3215	Kýrmýzý Demir Pala+5
+3216	Kýrmýzý Demir Pala+6
+3217	Kýrmýzý Demir Pala+7
+3218	Kýrmýzý Demir Pala+8
+3219	Kýrmýzý Demir Pala+9
+3220	Zodyak Oraðý+0
+3221	Zodyak Oraðý+1
+3222	Zodyak Oraðý+2
+3223	Zodyak Oraðý+3
+3224	Zodyak Oraðý+4
+3225	Zodyak Oraðý+5
+3226	Zodyak Oraðý+6
+3227	Zodyak Oraðý+7
+3228	Zodyak Oraðý+8
+3229	Zodyak Oraðý+9
+3230	Kara ejderha býçaðý+0
+3231	Kara ejderha býçaðý+1
+3232	Kara ejderha býçaðý+2
+3233	Kara ejderha býçaðý+3
+3234	Kara ejderha býçaðý+4
+3235	Kara ejderha býçaðý+5
+3236	Kara ejderha býçaðý+6
+3237	Kara ejderha býçaðý+7
+3238	Kara ejderha býçaðý+8
+3239	Kara ejderha býçaðý+9
+3240	Kara ejderha býçaðý+10
+3241	Kara ejderha býçaðý+11
+3242	Kara ejderha býçaðý+12
+3243	Kara ejderha býçaðý+13
+3244	Kara ejderha býçaðý+14
+3245	Kara ejderha býçaðý+15
+3250	Yýlan büyük kýlýcý+0
+3251	Yýlan büyük kýlýcý+1
+3252	Yýlan büyük kýlýcý+2
+3253	Yýlan büyük kýlýcý+3
+3254	Yýlan büyük kýlýcý+4
+3255	Yýlan büyük kýlýcý+5
+3256	Yýlan büyük kýlýcý+6
+3257	Yýlan büyük kýlýcý+7
+3258	Yýlan büyük kýlýcý+8
+3259	Yýlan büyük kýlýcý+9
+3260	Yýlan büyük kýlýcý+10
+3261	Yýlan büyük kýlýcý+11
+3262	Yýlan büyük kýlýcý+12
+3263	Yýlan büyük kýlýcý+13
+3264	Yýlan büyük kýlýcý+14
+3265	Yýlan büyük kýlýcý+15
+3266	Yýlan büyük kýlýcý(ürt.)
+3500	Kyanit Býçaðý+0
+3501	Kyanit Býçaðý+1
+3502	Kyanit Býçaðý+2
+3503	Kyanit Býçaðý+3
+3504	Kyanit Býçaðý+4
+3505	Kyanit Býçaðý+5
+3506	Kyanit Býçaðý+6
+3507	Kyanit Býçaðý+7
+3508	Kyanit Býçaðý+8
+3509	Kyanit Býçaðý+9
+4000	Amija+0
+4001	Amija+1
+4002	Amija+2
+4003	Amija+3
+4004	Amija+4
+4005	Amija+5
+4006	Amija+6
+4007	Amija+7
+4008	Amija+8
+4009	Amija+9
+4010	Dokuz Pala+0
+4011	Dokuz Pala+1
+4012	Dokuz Pala+2
+4013	Dokuz Pala+3
+4014	Dokuz Pala+4
+4015	Dokuz Pala+5
+4016	Dokuz Pala+6
+4017	Dokuz Pala+7
+4018	Dokuz Pala+8
+4019	Dokuz Pala+9
+4020	Kýsa Býçak+0
+4021	Kýsa Býçak+1
+4022	Kýsa Býçak+2
+4023	Kýsa Býçak+3
+4024	Kýsa Býçak+4
+4025	Kýsa Býçak+5
+4026	Kýsa Býçak+6
+4027	Kýsa Býçak+7
+4028	Kýsa Býçak+8
+4029	Kýsa Býçak+9
+4030	Ýkiz Ay Hançeri+0
+4031	Ýkiz Ay Hançeri+1
+4032	Ýkiz Ay Hançeri+2
+4033	Ýkiz Ay Hançeri+3
+4034	Ýkiz Ay Hançeri+4
+4035	Ýkiz Ay Hançeri+5
+4036	Ýkiz Ay Hançeri+6
+4037	Ýkiz Ay Hançeri+7
+4038	Ýkiz Ay Hançeri+8
+4039	Ýkiz Ay Hançeri+9
+4040	Ruhsuz Býçak+0
+4041	Ruhsuz Býçak+1
+4042	Ruhsuz Býçak+2
+4043	Ruhsuz Býçak+3
+4044	Ruhsuz Býçak+4
+4045	Ruhsuz Býçak+5
+4046	Ruhsuz Býçak+6
+4047	Ruhsuz Býçak+7
+4048	Ruhsuz Býçak+8
+4049	Ruhsuz Býçak+9
+5000	Bakýr Çan+0
+5001	Bakýr Çan+1
+5002	Bakýr Çan+2
+5003	Bakýr Çan+3
+5004	Bakýr Çan+4
+5005	Bakýr Çan+5
+5006	Bakýr Çan+6
+5007	Bakýr Çan+7
+5008	Bakýr Çan+8
+5009	Bakýr Çan+9
+5010	Gümüþ Çan+0
+5011	Gümüþ Çan+1
+5012	Gümüþ Çan+2
+5013	Gümüþ Çan+3
+5014	Gümüþ Çan+4
+5015	Gümüþ Çan+5
+5016	Gümüþ Çan+6
+5017	Gümüþ Çan+7
+5018	Gümüþ Çan+8
+5019	Gümüþ Çan+9
+5020	Altýn Çan+0
+5021	Altýn Çan+1
+5022	Altýn Çan+2
+5023	Altýn Çan+3
+5024	Altýn Çan+4
+5025	Altýn Çan+5
+5026	Altýn Çan+6
+5027	Altýn Çan+7
+5028	Altýn Çan+8
+5029	Altýn Çan+9
+5030	YeþimTaþý Çan+0
+5031	YeþimTaþý Çan+1
+5032	YeþimTaþý Çan+2
+5033	YeþimTaþý Çan+3
+5034	YeþimTaþý Çan+4
+5035	YeþimTaþý Çan+5
+5036	YeþimTaþý Çan+6
+5037	YeþimTaþý Çan+7
+5038	YeþimTaþý Çan+8
+5039	YeþimTaþý Çan+9
+5040	Kaynak Çan+0
+5041	Kaynak Çan+1
+5042	Kaynak Çan+2
+5043	Kaynak Çan+3
+5044	Kaynak Çan+4
+5045	Kaynak Çan+5
+5046	Kaynak Çan+6
+5047	Kaynak Çan+7
+5048	Kaynak Çan+8
+5049	Kaynak Çan+9
+5050	Kayýsý Aðacý Çan+0
+5051	Kayýsý Aðacý Çan+1
+5052	Kayýsý Aðacý Çan+2
+5053	Kayýsý Aðacý Çan+3
+5054	Kayýsý Aðacý Çan+4
+5055	Kayýsý Aðacý Çan+5
+5056	Kayýsý Aðacý Çan+6
+5057	Kayýsý Aðacý Çan+7
+5058	Kayýsý Aðacý Çan+8
+5059	Kayýsý Aðacý Çan+9
+5060	Büyülü Çan+0
+5061	Büyülü Çan+1
+5062	Büyülü Çan+2
+5063	Büyülü Çan+3
+5064	Büyülü Çan+4
+5065	Büyülü Çan+5
+5066	Büyülü Çan+6
+5067	Büyülü Çan+7
+5068	Büyülü Çan+8
+5069	Büyülü Çan+9
+5070	Altýn Böcek Çaný+0
+5071	Altýn Böcek Çaný+1
+5072	Altýn Böcek Çaný+2
+5073	Altýn Böcek Çaný+3
+5074	Altýn Böcek Çaný+4
+5075	Altýn Böcek Çaný+5
+5076	Altýn Böcek Çaný+6
+5077	Altýn Böcek Çaný+7
+5078	Altýn Böcek Çaný+8
+5079	Altýn Böcek Çaný+9
+5080	Çelik Böcek Çaný+0
+5081	Çelik Böcek Çaný+1
+5082	Çelik Böcek Çaný+2
+5083	Çelik Böcek Çaný+3
+5084	Çelik Böcek Çaný+4
+5085	Çelik Böcek Çaný+5
+5086	Çelik Böcek Çaný+6
+5087	Çelik Böcek Çaný+7
+5088	Çelik Böcek Çaný+8
+5089	Çelik Böcek Çaný+9
+5090	Yýldýrým Kuþu Çaný+0
+5091	Yýldýrým Kuþu Çaný+1
+5092	Yýldýrým Kuþu Çaný+2
+5093	Yýldýrým Kuþu Çaný+3
+5094	Yýldýrým Kuþu Çaný+4
+5095	Yýldýrým Kuþu Çaný+5
+5096	Yýldýrým Kuþu Çaný+6
+5097	Yýldýrým Kuþu Çaný+7
+5098	Yýldýrým Kuþu Çaný+8
+5099	Yýldýrým Kuþu Çaný+9
+5100	Cennet ve Dünya Çaný+0
+5101	Cennet ve Dünya Çaný+1
+5102	Cennet ve Dünya Çaný+2
+5103	Cennet ve Dünya Çaný+3
+5104	Cennet ve Dünya Çaný+4
+5105	Cennet ve Dünya Çaný+5
+5106	Cennet ve Dünya Çaný+6
+5107	Cennet ve Dünya Çaný+7
+5108	Cennet ve Dünya Çaný+8
+5109	Cennet ve Dünya Çaný+9
+5110	Antik Çan+0
+5111	Antik Çan+1
+5112	Antik Çan+2
+5113	Antik Çan+3
+5114	Antik Çan+4
+5115	Antik Çan+5
+5116	Antik Çan+6
+5117	Antik Çan+7
+5118	Antik Çan+8
+5119	Antik Çan+9
+5120	Orkide Çan+0
+5121	Orkide Çan+1
+5122	Orkide Çan+2
+5123	Orkide Çan+3
+5124	Orkide Çan+4
+5125	Orkide Çan+5
+5126	Orkide Çan+6
+5127	Orkide Çan+7
+5128	Orkide Çan+8
+5129	Orkide Çan+9
+5130	Sert Biçici Çan+0
+5131	Sert Biçici Çan+1
+5132	Sert Biçici Çan+2
+5133	Sert Biçici Çan+3
+5134	Sert Biçici Çan+4
+5135	Sert Biçici Çan+5
+5136	Sert Biçici Çan+6
+5137	Sert Biçici Çan+7
+5138	Sert Biçici Çan+8
+5139	Sert Biçici Çan+9
+5140	Ejderha Çaný+0
+5141	Ejderha Çaný+1
+5142	Ejderha Çaný+2
+5143	Ejderha Çaný+3
+5144	Ejderha Çaný+4
+5145	Ejderha Çaný+5
+5146	Ejderha Çaný+6
+5147	Ejderha Çaný+7
+5148	Ejderha Çaný+8
+5149	Ejderha Çaný+9
+5150	Hibiskus Çaný+0
+5151	Hibiskus Çaný+1
+5152	Hibiskus Çaný+2
+5153	Hibiskus Çaný+3
+5154	Hibiskus Çaný+4
+5155	Hibiskus Çaný+5
+5156	Hibiskus Çaný+6
+5157	Hibiskus Çaný+7
+5158	Hibiskus Çaný+8
+5159	Hibiskus Çaný+9
+5160	Zodyak Çaný+0
+5161	Zodyak Çaný+1
+5162	Zodyak Çaný+2
+5163	Zodyak Çaný+3
+5164	Zodyak Çaný+4
+5165	Zodyak Çaný+5
+5166	Zodyak Çaný+6
+5167	Zodyak Çaný+7
+5168	Zodyak Çaný+8
+5169	Zodyak Çaný+9
+5170	Kara ejderha çaný+0
+5171	Kara ejderha çaný+1
+5172	Kara ejderha çaný+2
+5173	Kara ejderha çaný+3
+5174	Kara ejderha çaný+4
+5175	Kara ejderha çaný+5
+5176	Kara ejderha çaný+6
+5177	Kara ejderha çaný+7
+5178	Kara ejderha çaný+8
+5179	Kara ejderha çaný+9
+5180	Kara ejderha çaný+10
+5181	Kara ejderha çaný+11
+5182	Kara ejderha çaný+12
+5183	Kara ejderha çaný+13
+5184	Kara ejderha çaný+14
+5185	Kara ejderha çaný+15
+5200	Yýlan çaný+0
+5201	Yýlan çaný+1
+5202	Yýlan çaný+2
+5203	Yýlan çaný+3
+5204	Yýlan çaný+4
+5205	Yýlan çaný+5
+5206	Yýlan çaný+6
+5207	Yýlan çaný+7
+5208	Yýlan çaný+8
+5209	Yýlan çaný+9
+5210	Yýlan çaný+10
+5211	Yýlan çaný+11
+5212	Yýlan çaný+12
+5213	Yýlan çaný+13
+5214	Yýlan çaný+14
+5215	Yýlan çaný+15
+5216	Yýlan çaný(ürtm.)
+5330	Ejder Çenesi Çaný+0
+5331	Ejder Çenesi Çaný+1
+5332	Ejder Çenesi Çaný+2
+5333	Ejder Çenesi Çaný+3
+5334	Ejder Çenesi Çaný+4
+5335	Ejder Çenesi Çaný+5
+5336	Ejder Çenesi Çaný+6
+5337	Ejder Çenesi Çaný+7
+5338	Ejder Çenesi Çaný+8
+5339	Ejder Çenesi Çaný+9
+5340	Ejderha Hayaleti Çaný +0
+5341	Ejderha Hayaleti Çaný +1
+5342	Ejderha Hayaleti Çaný +2
+5343	Ejderha Hayaleti Çaný +3
+5344	Ejderha Hayaleti Çaný +4
+5345	Ejderha Hayaleti Çaný +5
+5346	Ejderha Hayaleti Çaný +6
+5347	Ejderha Hayaleti Çaný +7
+5348	Ejderha Hayaleti Çaný +8
+5349	Ejderha Hayaleti Çaný +9
+5500	Kyanit Çaný+0
+5501	Kyanit Çaný+1
+5502	Kyanit Çaný+2
+5503	Kyanit Çaný+3
+5504	Kyanit Çaný+4
+5505	Kyanit Çaný+5
+5506	Kyanit Çaný+6
+5507	Kyanit Çaný+7
+5508	Kyanit Çaný+8
+5509	Kyanit Çaný+9
+7000	Yelpaze+0
+7001	Yelpaze+1
+7002	Yelpaze+2
+7003	Yelpaze+3
+7004	Yelpaze+4
+7005	Yelpaze+5
+7006	Yelpaze+6
+7007	Yelpaze+7
+7008	Yelpaze+8
+7009	Yelpaze+9
+7010	Demir Yelpaze+0
+7011	Demir Yelpaze+1
+7012	Demir Yelpaze+2
+7013	Demir Yelpaze+3
+7014	Demir Yelpaze+4
+7015	Demir Yelpaze+5
+7016	Demir Yelpaze+6
+7017	Demir Yelpaze+7
+7018	Demir Yelpaze+8
+7019	Demir Yelpaze+9
+7020	Siyah Kaplan Yelpazesi+0
+7021	Siyah Kaplan Yelpazesi+1
+7022	Siyah Kaplan Yelpazesi+2
+7023	Siyah Kaplan Yelpazesi+3
+7024	Siyah Kaplan Yelpazesi+4
+7025	Siyah Kaplan Yelpazesi+5
+7026	Siyah Kaplan Yelpazesi+6
+7027	Siyah Kaplan Yelpazesi+7
+7028	Siyah Kaplan Yelpazesi+8
+7029	Siyah Kaplan Yelpazesi+9
+7030	Turna Kanadý Yelpaze+0
+7031	Turna Kanadý Yelpaze+1
+7032	Turna Kanadý Yelpaze+2
+7033	Turna Kanadý Yelpaze+3
+7034	Turna Kanadý Yelpaze+4
+7035	Turna Kanadý Yelpaze+5
+7036	Turna Kanadý Yelpaze+6
+7037	Turna Kanadý Yelpaze+7
+7038	Turna Kanadý Yelpaze+8
+7039	Turna Kanadý Yelpaze+9
+7040	Tavuskuþu Yelpaze+0
+7041	Tavuskuþu Yelpaze+1
+7042	Tavuskuþu Yelpaze+2
+7043	Tavuskuþu Yelpaze+3
+7044	Tavuskuþu Yelpaze+4
+7045	Tavuskuþu Yelpaze+5
+7046	Tavuskuþu Yelpaze+6
+7047	Tavuskuþu Yelpaze+7
+7048	Tavuskuþu Yelpaze+8
+7049	Tavuskuþu Yelpaze+9
+7050	Su Yelpazesi+0
+7051	Su Yelpazesi+1
+7052	Su Yelpazesi+2
+7053	Su Yelpazesi+3
+7054	Su Yelpazesi+4
+7055	Su Yelpazesi+5
+7056	Su Yelpazesi+6
+7057	Su Yelpazesi+7
+7058	Su Yelpazesi+8
+7059	Su Yelpazesi+9
+7060	Taþ Yelpaze+0
+7061	Taþ Yelpaze+1
+7062	Taþ Yelpaze+2
+7063	Taþ Yelpaze+3
+7064	Taþ Yelpaze+4
+7065	Taþ Yelpaze+5
+7066	Taþ Yelpaze+6
+7067	Taþ Yelpaze+7
+7068	Taþ Yelpaze+8
+7069	Taþ Yelpaze+9
+7070	Okyanus Yelpazesi+0
+7071	Okyanus Yelpazesi+1
+7072	Okyanus Yelpazesi+2
+7073	Okyanus Yelpazesi+3
+7074	Okyanus Yelpazesi+4
+7075	Okyanus Yelpazesi+5
+7076	Okyanus Yelpazesi+6
+7077	Okyanus Yelpazesi+7
+7078	Okyanus Yelpazesi+8
+7079	Okyanus Yelpazesi+9
+7080	Azap Yelpazesi+0
+7081	Azap Yelpazesi+1
+7082	Azap Yelpazesi+2
+7083	Azap Yelpazesi+3
+7084	Azap Yelpazesi+4
+7085	Azap Yelpazesi+5
+7086	Azap Yelpazesi+6
+7087	Azap Yelpazesi+7
+7088	Azap Yelpazesi+8
+7089	Azap Yelpazesi+9
+7090	Anka Kuþu Yelpaze+0
+7091	Anka Kuþu Yelpaze+1
+7092	Anka Kuþu Yelpaze+2
+7093	Anka Kuþu Yelpaze+3
+7094	Anka Kuþu Yelpaze+4
+7095	Anka Kuþu Yelpaze+5
+7096	Anka Kuþu Yelpaze+6
+7097	Anka Kuþu Yelpaze+7
+7098	Anka Kuþu Yelpaze+8
+7099	Anka Kuþu Yelpaze+9
+7100	Üçlü Yelpaze+0
+7101	Üçlü Yelpaze+1
+7102	Üçlü Yelpaze+2
+7103	Üçlü Yelpaze+3
+7104	Üçlü Yelpaze+4
+7105	Üçlü Yelpaze+5
+7106	Üçlü Yelpaze+6
+7107	Üçlü Yelpaze+7
+7108	Üçlü Yelpaze+8
+7109	Üçlü Yelpaze+9
+7110	Kaþ Yelpaze+0
+7111	Kaþ Yelpaze+1
+7112	Kaþ Yelpaze+2
+7113	Kaþ Yelpaze+3
+7114	Kaþ Yelpaze+4
+7115	Kaþ Yelpaze+5
+7116	Kaþ Yelpaze+6
+7117	Kaþ Yelpaze+7
+7118	Kaþ Yelpaze+8
+7119	Kaþ Yelpaze+9
+7120	Güneþ Yelpazesi+0
+7121	Güneþ Yelpazesi+1
+7122	Güneþ Yelpazesi+2
+7123	Güneþ Yelpazesi+3
+7124	Güneþ Yelpazesi+4
+7125	Güneþ Yelpazesi+5
+7126	Güneþ Yelpazesi+6
+7127	Güneþ Yelpazesi+7
+7128	Güneþ Yelpazesi+8
+7129	Güneþ Yelpazesi+9
+7130	Cennet Kuþu Yelpaze+0
+7131	Cennet Kuþu Yelpaze+1
+7132	Cennet Kuþu Yelpaze+2
+7133	Cennet Kuþu Yelpaze+3
+7134	Cennet Kuþu Yelpaze+4
+7135	Cennet Kuþu Yelpaze+5
+7136	Cennet Kuþu Yelpaze+6
+7137	Cennet Kuþu Yelpaze+7
+7138	Cennet Kuþu Yelpaze+8
+7139	Cennet Kuþu Yelpaze+9
+7140	Kurtuluþ Yelpazesi+0
+7141	Kurtuluþ Yelpazesi+1
+7142	Kurtuluþ Yelpazesi+2
+7143	Kurtuluþ Yelpazesi+3
+7144	Kurtuluþ Yelpazesi+4
+7145	Kurtuluþ Yelpazesi+5
+7146	Kurtuluþ Yelpazesi+6
+7147	Kurtuluþ Yelpazesi+7
+7148	Kurtuluþ Yelpazesi+8
+7149	Kurtuluþ Yelpazesi+9
+7150	Mutluluk Yelpazesi+0
+7151	Mutluluk Yelpazesi+1
+7152	Mutluluk Yelpazesi+2
+7153	Mutluluk Yelpazesi+3
+7154	Mutluluk Yelpazesi+4
+7155	Mutluluk Yelpazesi+5
+7156	Mutluluk Yelpazesi+6
+7157	Mutluluk Yelpazesi+7
+7158	Mutluluk Yelpazesi+8
+7159	Mutluluk Yelpazesi+9
+7160	Sonbahar Yelpazesi+0
+7161	Sonbahar Yelpazesi+1
+7162	Sonbahar Yelpazesi+2
+7163	Sonbahar Yelpazesi+3
+7164	Sonbahar Yelpazesi+4
+7165	Sonbahar Yelpazesi+5
+7166	Sonbahar Yelpazesi+6
+7167	Sonbahar Yelpazesi+7
+7168	Sonbahar Yelpazesi+8
+7169	Sonbahar Yelpazesi+9
+7170	Sekiz Trigram Yelpaze+0
+7171	Sekiz Trigram Yelpaze+1
+7172	Sekiz Trigram Yelpaze+2
+7173	Sekiz Trigram Yelpaze+3
+7174	Sekiz Trigram Yelpaze+4
+7175	Sekiz Trigram Yelpaze+5
+7176	Sekiz Trigram Yelpaze+6
+7177	Sekiz Trigram Yelpaze+7
+7178	Sekiz Trigram Yelpaze+8
+7179	Sekiz Trigram Yelpaze+9
+7180	Uyuyan Ejder Yelpazesi+0
+7181	Uyuyan Ejder Yelpazesi+1
+7182	Uyuyan Ejder Yelpazesi+2
+7183	Uyuyan Ejder Yelpazesi+3
+7184	Uyuyan Ejder Yelpazesi+4
+7185	Uyuyan Ejder Yelpazesi+5
+7186	Uyuyan Ejder Yelpazesi+6
+7187	Uyuyan Ejder Yelpazesi+7
+7188	Uyuyan Ejder Yelpazesi+8
+7189	Uyuyan Ejder Yelpazesi+9
+7190	Ýblisin Yelpazesi+0
+7191	Ýblisin Yelpazesi+1
+7192	Ýblisin Yelpazesi+2
+7193	Ýblisin Yelpazesi+3
+7194	Ýblisin Yelpazesi+4
+7195	Ýblisin Yelpazesi+5
+7196	Ýblisin Yelpazesi+6
+7197	Ýblisin Yelpazesi+7
+7198	Ýblisin Yelpazesi+8
+7199	Ýblisin Yelpazesi+9
+7200	Mýzrak+0
+7201	Mýzrak+1
+7202	Mýzrak+2
+7203	Mýzrak+3
+7204	Mýzrak+4
+7205	Mýzrak+5
+7206	Mýzrak+6
+7207	Mýzrak+7
+7208	Mýzrak+8
+7209	Mýzrak+9
+7300	Zodyak yelpazesi+0
+7301	Zodyak yelpazesi+1
+7302	Zodyak yelpazesi+2
+7303	Zodyak yelpazesi+3
+7304	Zodyak yelpazesi+4
+7305	Zodyak yelpazesi+5
+7306	Zodyak yelpazesi+6
+7307	Zodyak yelpazesi+7
+7308	Zodyak yelpazesi+8
+7309	Zodyak yelpazesi+9
+7310	Kara ejder. yelpazesi+0
+7311	Kara ejder. yelpazesi+1
+7312	Kara ejder. yelpazesi+2
+7313	Kara ejder. yelpazesi+3
+7314	Kara ejder. yelpazesi+4
+7315	Kara ejder. yelpazesi+5
+7316	Kara ejder. yelpazesi+6
+7317	Kara ejder. yelpazesi+7
+7318	Kara ejder. yelpazesi+8
+7319	Kara ejder. yelpazesi+9
+7320	Kara ejder. yelpazesi+10
+7321	Kara ejder. yelpazesi+11
+7322	Kara ejder. yelpazesi+12
+7323	Kara ejder. yelpazesi+13
+7324	Kara ejder. yelpazesi+14
+7325	Kara ejder. yelpazesi+15
+7330	Yýlan yelpazesi+0
+7331	Yýlan yelpazesi+1
+7332	Yýlan yelpazesi+2
+7333	Yýlan yelpazesi+3
+7334	Yýlan yelpazesi+4
+7335	Yýlan yelpazesi+5
+7336	Yýlan yelpazesi+6
+7337	Yýlan yelpazesi+7
+7338	Yýlan yelpazesi+8
+7339	Yýlan yelpazesi+9
+7340	Yýlan yelpazesi+10
+7341	Yýlan yelpazesi+11
+7342	Yýlan yelpazesi+12
+7343	Yýlan yelpazesi+13
+7344	Yýlan yelpazesi+14
+7345	Yýlan yelpazesi+15
+7346	Yýlan yelpazesi(ürtm.)
+7370	Uyuyan Ejder Yelpazesi+0
+7371	Uyuyan Ejder Yelpazesi+1
+7372	Uyuyan Ejder Yelpazesi+2
+7373	Uyuyan Ejder Yelpazesi+3
+7374	Uyuyan Ejder Yelpazesi+4
+7375	Uyuyan Ejder Yelpazesi+5
+7376	Uyuyan Ejder Yelpazesi+6
+7377	Uyuyan Ejder Yelpazesi+7
+7378	Uyuyan Ejder Yelpazesi+8
+7379	Uyuyan Ejder Yelpazesi+9
+7500	Kyanit Yelpaze+0
+7501	Kyanit Yelpaze+1
+7502	Kyanit Yelpaze+2
+7503	Kyanit Yelpaze+3
+7504	Kyanit Yelpaze+4
+7505	Kyanit Yelpaze+5
+7506	Kyanit Yelpaze+6
+7507	Kyanit Yelpaze+7
+7508	Kyanit Yelpaze+8
+7509	Kyanit Yelpaze+9
+8000	Tahta Ok
+8001	Bambu Ok
+8002	Taþ Ok
+8003	Demir Ok
+8004	Çelik Ok
+8005	Gümüþ Ok
+8006	Ateþli Ok
+8007	Zehirli Ok
+8008	Buzdan Ok
+8009	Lanetli Ok
+9600	Ateþ Týlsýmý+0
+9601	Ateþ Týlsýmý+1
+9602	Ateþ Týlsýmý+2
+9603	Ateþ Týlsýmý+3
+9604	Ateþ Týlsýmý+4
+9605	Ateþ Týlsýmý+5
+9606	Ateþ Týlsýmý+6
+9607	Ateþ Týlsýmý+7
+9608	Ateþ Týlsýmý+8
+9609	Ateþ Týlsýmý+9
+9610	Ateþ Týlsýmý+10
+9611	Ateþ Týlsýmý+11
+9612	Ateþ Týlsýmý+12
+9613	Ateþ Týlsýmý+13
+9614	Ateþ Týlsýmý+14
+9615	Ateþ Týlsýmý+15
+9616	Ateþ Týlsýmý+16
+9617	Ateþ Týlsýmý+17
+9618	Ateþ Týlsýmý+18
+9619	Ateþ Týlsýmý+19
+9620	Ateþ Týlsýmý+20
+9830	Buz Týlsýmý+0
+9831	Buz Týlsýmý+1
+9832	Buz Týlsýmý+2
+9833	Buz Týlsýmý+3
+9834	Buz Týlsýmý+4
+9835	Buz Týlsýmý+5
+9836	Buz Týlsýmý+6
+9837	Buz Týlsýmý+7
+9838	Buz Týlsýmý+8
+9839	Buz Týlsýmý+9
+9840	Buz Týlsýmý+10
+9841	Buz Týlsýmý+11
+9842	Buz Týlsýmý+12
+9843	Buz Týlsýmý+13
+9844	Buz Týlsýmý+14
+9845	Buz Týlsýmý+15
+9846	Buz Týlsýmý+16
+9847	Buz Týlsýmý+17
+9848	Buz Týlsýmý+18
+9849	Buz Týlsýmý+19
+9850	Buz Týlsýmý+20
+10060	Toprak Týlsýmý+0
+10061	Toprak Týlsýmý+1
+10062	Toprak Týlsýmý+2
+10063	Toprak Týlsýmý+3
+10064	Toprak Týlsýmý+4
+10065	Toprak Týlsýmý+5
+10066	Toprak Týlsýmý+6
+10067	Toprak Týlsýmý+7
+10068	Toprak Týlsýmý+8
+10069	Toprak Týlsýmý+9
+10070	Toprak Týlsýmý+10
+10071	Toprak Týlsýmý+11
+10072	Toprak Týlsýmý+12
+10073	Toprak Týlsýmý+13
+10074	Toprak Týlsýmý+14
+10075	Toprak Týlsýmý+15
+10076	Toprak Týlsýmý+16
+10077	Toprak Týlsýmý+17
+10078	Toprak Týlsýmý+18
+10079	Toprak Týlsýmý+19
+10080	Toprak Týlsýmý+20
+10290	Karanlýk Týlsým+0
+10291	Karanlýk Týlsým+1
+10292	Karanlýk Týlsým+2
+10293	Karanlýk Týlsým+3
+10294	Karanlýk Týlsým+4
+10295	Karanlýk Týlsým+5
+10296	Karanlýk Týlsým+6
+10297	Karanlýk Týlsým+7
+10298	Karanlýk Týlsým+8
+10299	Karanlýk Týlsým+9
+10300	Karanlýk Týlsým+10
+10301	Karanlýk Týlsým+11
+10302	Karanlýk Týlsým+12
+10303	Karanlýk Týlsým+13
+10304	Karanlýk Týlsým+14
+10305	Karanlýk Týlsým+15
+10306	Karanlýk Týlsým+16
+10307	Karanlýk Týlsým+17
+10308	Karanlýk Týlsým+18
+10309	Karanlýk Týlsým+19
+10310	Karanlýk Týlsým+20
+10520	Rüzgar Týlsýmý+0
+10521	Rüzgar Týlsýmý+1
+10522	Rüzgar Týlsýmý+2
+10523	Rüzgar Týlsýmý+3
+10524	Rüzgar Týlsýmý+4
+10525	Rüzgar Týlsýmý+5
+10526	Rüzgar Týlsýmý+6
+10527	Rüzgar Týlsýmý+7
+10528	Rüzgar Týlsýmý+8
+10529	Rüzgar Týlsýmý+9
+10530	Rüzgar Týlsýmý+10
+10531	Rüzgar Týlsýmý+11
+10532	Rüzgar Týlsýmý+12
+10533	Rüzgar Týlsýmý+13
+10534	Rüzgar Týlsýmý+14
+10535	Rüzgar Týlsýmý+15
+10536	Rüzgar Týlsýmý+16
+10537	Rüzgar Týlsýmý+17
+10538	Rüzgar Týlsýmý+18
+10539	Rüzgar Týlsýmý+19
+10540	Rüzgar Týlsýmý+20
+10750	Þimþek Týlsýmý+0
+10751	Þimþek Týlsýmý+1
+10752	Þimþek Týlsýmý+2
+10753	Þimþek Týlsýmý+3
+10754	Þimþek Týlsýmý+4
+10755	Þimþek Týlsýmý+5
+10756	Þimþek Týlsýmý+6
+10757	Þimþek Týlsýmý+7
+10758	Þimþek Týlsýmý+8
+10759	Þimþek Týlsýmý+9
+10760	Þimþek Týlsýmý+10
+10761	Þimþek Týlsýmý+11
+10762	Þimþek Týlsýmý+12
+10763	Þimþek Týlsýmý+13
+10764	Þimþek Týlsýmý+14
+10765	Þimþek Týlsýmý+15
+10766	Þimþek Týlsýmý+16
+10767	Þimþek Týlsýmý+17
+10768	Þimþek Týlsýmý+18
+10769	Þimþek Týlsýmý+19
+10770	Þimþek Týlsýmý+20
+11200	Keþiþ Plaka Zýrh+0
+11201	Keþiþ Plaka Zýrh+1
+11202	Keþiþ Plaka Zýrh+2
+11203	Keþiþ Plaka Zýrh+3
+11204	Keþiþ Plaka Zýrh+4
+11205	Keþiþ Plaka Zýrh+5
+11206	Keþiþ Plaka Zýrh+6
+11207	Keþiþ Plaka Zýrh+7
+11208	Keþiþ Plaka Zýrh+8
+11209	Keþiþ Plaka Zýrh+9
+11210	Demir Plaka Zýrh+0
+11211	Demir Plaka Zýrh+1
+11212	Demir Plaka Zýrh+2
+11213	Demir Plaka Zýrh+3
+11214	Demir Plaka Zýrh+4
+11215	Demir Plaka Zýrh+5
+11216	Demir Plaka Zýrh+6
+11217	Demir Plaka Zýrh+7
+11218	Demir Plaka Zýrh+8
+11219	Demir Plaka Zýrh+9
+11220	Kaplan Plaka Zýrh+0
+11221	Kaplan Plaka Zýrh+1
+11222	Kaplan Plaka Zýrh+2
+11223	Kaplan Plaka Zýrh+3
+11224	Kaplan Plaka Zýrh+4
+11225	Kaplan Plaka Zýrh+5
+11226	Kaplan Plaka Zýrh+6
+11227	Kaplan Plaka Zýrh+7
+11228	Kaplan Plaka Zýrh+8
+11229	Kaplan Plaka Zýrh+9
+11230	Aslan Plaka Zýrh+0
+11231	Aslan Plaka Zýrh+1
+11232	Aslan Plaka Zýrh+2
+11233	Aslan Plaka Zýrh+3
+11234	Aslan Plaka Zýrh+4
+11235	Aslan Plaka Zýrh+5
+11236	Aslan Plaka Zýrh+6
+11237	Aslan Plaka Zýrh+7
+11238	Aslan Plaka Zýrh+8
+11239	Aslan Plaka Zýrh+9
+11240	Ölümcül Plaka Zýrh+0
+11241	Ölümcül Plaka Zýrh+1
+11242	Ölümcül Plaka Zýrh+2
+11243	Ölümcül Plaka Zýrh+3
+11244	Ölümcül Plaka Zýrh+4
+11245	Ölümcül Plaka Zýrh+5
+11246	Ölümcül Plaka Zýrh+6
+11247	Ölümcül Plaka Zýrh+7
+11248	Ölümcül Plaka Zýrh+8
+11249	Ölümcül Plaka Zýrh+9
+11250	Ejderha Plaka Zýrh+0
+11251	Ejderha Plaka Zýrh+1
+11252	Ejderha Plaka Zýrh+2
+11253	Ejderha Plaka Zýrh+3
+11254	Ejderha Plaka Zýrh+4
+11255	Ejderha Plaka Zýrh+5
+11256	Ejderha Plaka Zýrh+6
+11257	Ejderha Plaka Zýrh+7
+11258	Ejderha Plaka Zýrh+8
+11259	Ejderha Plaka Zýrh+9
+11260	Mavi Taþ Zýrh+0
+11261	Mavi Taþ Zýrh+1
+11262	Mavi Taþ Zýrh+2
+11263	Mavi Taþ Zýrh+3
+11264	Mavi Taþ Zýrh+4
+11265	Mavi Taþ Zýrh+5
+11266	Mavi Taþ Zýrh+6
+11267	Mavi Taþ Zýrh+7
+11268	Mavi Taþ Zýrh+8
+11269	Mavi Taþ Zýrh+9
+11270	Altýn Taþ Zýrh+0
+11271	Altýn Taþ Zýrh+1
+11272	Altýn Taþ Zýrh+2
+11273	Altýn Taþ Zýrh+3
+11274	Altýn Taþ Zýrh+4
+11275	Altýn Taþ Zýrh+5
+11276	Altýn Taþ Zýrh+6
+11277	Altýn Taþ Zýrh+7
+11278	Altýn Taþ Zýrh+8
+11279	Altýn Taþ Zýrh+9
+11280	Ejderha Tanrýsý Zýrhý+0
+11281	Ejderha Tanrýsý Zýrhý+1
+11282	Ejderha Tanrýsý Zýrhý+2
+11283	Ejderha Tanrýsý Zýrhý+3
+11284	Ejderha Tanrýsý Zýrhý+4
+11285	Ejderha Tanrýsý Zýrhý+5
+11286	Ejderha Tanrýsý Zýrhý+6
+11287	Ejderha Tanrýsý Zýrhý+7
+11288	Ejderha Tanrýsý Zýrhý+8
+11289	Ejderha Tanrýsý Zýrhý+9
+11290	Siyah Çelik Zýrh+0
+11291	Siyah Çelik Zýrh+1
+11292	Siyah Çelik Zýrh+2
+11293	Siyah Çelik Zýrh+3
+11294	Siyah Çelik Zýrh+4
+11295	Siyah Çelik Zýrh+5
+11296	Siyah Çelik Zýrh+6
+11297	Siyah Çelik Zýrh+7
+11298	Siyah Çelik Zýrh+8
+11299	Siyah Çelik Zýrh+9
+11300	Safir Çelik Zýrh+0
+11301	Safir Çelik Zýrh+1
+11302	Safir Çelik Zýrh+2
+11303	Safir Çelik Zýrh+3
+11304	Safir Çelik Zýrh+4
+11305	Safir Çelik Zýrh+5
+11306	Safir Çelik Zýrh+6
+11307	Safir Çelik Zýrh+7
+11308	Safir Çelik Zýrh+8
+11309	Safir Çelik Zýrh+9
+11400	Gök Mavisi Takým+0
+11401	Gök Mavisi Takým+1
+11402	Gök Mavisi Takým+2
+11403	Gök Mavisi Takým+3
+11404	Gök Mavisi Takým+4
+11405	Gök Mavisi Takým+5
+11406	Gök Mavisi Takým+6
+11407	Gök Mavisi Takým+7
+11408	Gök Mavisi Takým+8
+11409	Gök Mavisi Takým+9
+11410	Fildiþi Takým+0
+11411	Fildiþi Takým+1
+11412	Fildiþi Takým+2
+11413	Fildiþi Takým+3
+11414	Fildiþi Takým+4
+11415	Fildiþi Takým+5
+11416	Fildiþi Takým+6
+11417	Fildiþi Takým+7
+11418	Fildiþi Takým+8
+11419	Fildiþi Takým+9
+11420	Koyu Kýrmýzý Takým+0
+11421	Koyu Kýrmýzý Takým+1
+11422	Koyu Kýrmýzý Takým+2
+11423	Koyu Kýrmýzý Takým+3
+11424	Koyu Kýrmýzý Takým+4
+11425	Koyu Kýrmýzý Takým+5
+11426	Koyu Kýrmýzý Takým+6
+11427	Koyu Kýrmýzý Takým+7
+11428	Koyu Kýrmýzý Takým+8
+11429	Koyu Kýrmýzý Takým+9
+11430	Kýrmýzý Karýnca Takým+0
+11431	Kýrmýzý Karýnca Takým+1
+11432	Kýrmýzý Karýnca Takým+2
+11433	Kýrmýzý Karýnca Takým+3
+11434	Kýrmýzý Karýnca Takým+4
+11435	Kýrmýzý Karýnca Takým+5
+11436	Kýrmýzý Karýnca Takým+6
+11437	Kýrmýzý Karýnca Takým+7
+11438	Kýrmýzý Karýnca Takým+8
+11439	Kýrmýzý Karýnca Takým+9
+11440	Karýnca Aslan Takýmý+0
+11441	Karýnca Aslan Takýmý+1
+11442	Karýnca Aslan Takýmý+2
+11443	Karýnca Aslan Takýmý+3
+11444	Karýnca Aslan Takýmý+4
+11445	Karýnca Aslan Takýmý+5
+11446	Karýnca Aslan Takýmý+6
+11447	Karýnca Aslan Takýmý+7
+11448	Karýnca Aslan Takýmý+8
+11449	Karýnca Aslan Takýmý+9
+11450	Ninja Takýmý+0
+11451	Ninja Takýmý+1
+11452	Ninja Takýmý+2
+11453	Ninja Takýmý+3
+11454	Ninja Takýmý+4
+11455	Ninja Takýmý+5
+11456	Ninja Takýmý+6
+11457	Ninja Takýmý+7
+11458	Ninja Takýmý+8
+11459	Ninja Takýmý+9
+11460	Genç Ejderha Takýmý +0
+11461	Genç Ejderha Takýmý +1
+11462	Genç Ejderha Takýmý +2
+11463	Genç Ejderha Takýmý +3
+11464	Genç Ejderha Takýmý +4
+11465	Genç Ejderha Takýmý +5
+11466	Genç Ejderha Takýmý +6
+11467	Genç Ejderha Takýmý +7
+11468	Genç Ejderha Takýmý +8
+11469	Genç Ejderha Takýmý +9
+11470	Öldürücü Rüzgar Takýmý+0
+11471	Öldürücü Rüzgar Takýmý+1
+11472	Öldürücü Rüzgar Takýmý+2
+11473	Öldürücü Rüzgar Takýmý+3
+11474	Öldürücü Rüzgar Takýmý+4
+11475	Öldürücü Rüzgar Takýmý+5
+11476	Öldürücü Rüzgar Takýmý+6
+11477	Öldürücü Rüzgar Takýmý+7
+11478	Öldürücü Rüzgar Takýmý+8
+11479	Öldürücü Rüzgar Takýmý+9
+11480	Küpeçiçeði Takým+0
+11481	Küpeçiçeði Takým+1
+11482	Küpeçiçeði Takým+2
+11483	Küpeçiçeði Takým+3
+11484	Küpeçiçeði Takým+4
+11485	Küpeçiçeði Takým+5
+11486	Küpeçiçeði Takým+6
+11487	Küpeçiçeði Takým+7
+11488	Küpeçiçeði Takým+8
+11489	Küpeçiçeði Takým+9
+11490	Siyah Rüzgar Takýmý+0
+11491	Siyah Rüzgar Takýmý+1
+11492	Siyah Rüzgar Takýmý+2
+11493	Siyah Rüzgar Takýmý+3
+11494	Siyah Rüzgar Takýmý+4
+11495	Siyah Rüzgar Takýmý+5
+11496	Siyah Rüzgar Takýmý+6
+11497	Siyah Rüzgar Takýmý+7
+11498	Siyah Rüzgar Takýmý+8
+11499	Siyah Rüzgar Takýmý+9
+11500	Safir Rüzgar Takýmý+0
+11501	Safir Rüzgar Takýmý+1
+11502	Safir Rüzgar Takýmý+2
+11503	Safir Rüzgar Takýmý+3
+11504	Safir Rüzgar Takýmý+4
+11505	Safir Rüzgar Takýmý+5
+11506	Safir Rüzgar Takýmý+6
+11507	Safir Rüzgar Takýmý+7
+11508	Safir Rüzgar Takýmý+8
+11509	Safir Rüzgar Takýmý+9
+11600	Aðýt Plaka Zýrh+0
+11601	Aðýt Plaka Zýrh+1
+11602	Aðýt Plaka Zýrh+2
+11603	Aðýt Plaka Zýrh+3
+11604	Aðýt Plaka Zýrh+4
+11605	Aðýt Plaka Zýrh+5
+11606	Aðýt Plaka Zýrh+6
+11607	Aðýt Plaka Zýrh+7
+11608	Aðýt Plaka Zýrh+8
+11609	Aðýt Plaka Zýrh+9
+11610	Fýrtýna Plaka Zýrh+0
+11611	Fýrtýna Plaka Zýrh+1
+11612	Fýrtýna Plaka Zýrh+2
+11613	Fýrtýna Plaka Zýrh+3
+11614	Fýrtýna Plaka Zýrh+4
+11615	Fýrtýna Plaka Zýrh+5
+11616	Fýrtýna Plaka Zýrh+6
+11617	Fýrtýna Plaka Zýrh+7
+11618	Fýrtýna Plaka Zýrh+8
+11619	Fýrtýna Plaka Zýrh+9
+11620	Kötü Þans Zýrhý+0
+11621	Kötü Þans Zýrhý+1
+11622	Kötü Þans Zýrhý+2
+11623	Kötü Þans Zýrhý+3
+11624	Kötü Þans Zýrhý+4
+11625	Kötü Þans Zýrhý+5
+11626	Kötü Þans Zýrhý+6
+11627	Kötü Þans Zýrhý+7
+11628	Kötü Þans Zýrhý+8
+11629	Kötü Þans Zýrhý+9
+11630	Hayalet Plaka Zýrh+0
+11631	Hayalet Plaka Zýrh+1
+11632	Hayalet Plaka Zýrh+2
+11633	Hayalet Plaka Zýrh+3
+11634	Hayalet Plaka Zýrh+4
+11635	Hayalet Plaka Zýrh+5
+11636	Hayalet Plaka Zýrh+6
+11637	Hayalet Plaka Zýrh+7
+11638	Hayalet Plaka Zýrh+8
+11639	Hayalet Plaka Zýrh+9
+11640	Yin-Yang Zýrh+0
+11641	Yin-Yang Zýrh+1
+11642	Yin-Yang Zýrh+2
+11643	Yin-Yang Zýrh+3
+11644	Yin-Yang Zýrh+4
+11645	Yin-Yang Zýrh+5
+11646	Yin-Yang Zýrh+6
+11647	Yin-Yang Zýrh+7
+11648	Yin-Yang Zýrh+8
+11649	Yin-Yang Zýrh+9
+11650	Mistik Plaka Zýrh+0
+11651	Mistik Plaka Zýrh+1
+11652	Mistik Plaka Zýrh+2
+11653	Mistik Plaka Zýrh+3
+11654	Mistik Plaka Zýrh+4
+11655	Mistik Plaka Zýrh+5
+11656	Mistik Plaka Zýrh+6
+11657	Mistik Plaka Zýrh+7
+11658	Mistik Plaka Zýrh+8
+11659	Mistik Plaka Zýrh+9
+11660	Belirsiz Plaka Zýrh+0
+11661	Belirsiz Plaka Zýrh+1
+11662	Belirsiz Plaka Zýrh+2
+11663	Belirsiz Plaka Zýrh+3
+11664	Belirsiz Plaka Zýrh+4
+11665	Belirsiz Plaka Zýrh+5
+11666	Belirsiz Plaka Zýrh+6
+11667	Belirsiz Plaka Zýrh+7
+11668	Belirsiz Plaka Zýrh+8
+11669	Belirsiz Plaka Zýrh+9
+11670	Hayalet Surat Zýrh+0
+11671	Hayalet Surat Zýrh+1
+11672	Hayalet Surat Zýrh+2
+11673	Hayalet Surat Zýrh+3
+11674	Hayalet Surat Zýrh+4
+11675	Hayalet Surat Zýrh+5
+11676	Hayalet Surat Zýrh+6
+11677	Hayalet Surat Zýrh+7
+11678	Hayalet Surat Zýrh+8
+11679	Hayalet Surat Zýrh+9
+11680	Ruh Plaka Zýrh+0
+11681	Ruh Plaka Zýrh+1
+11682	Ruh Plaka Zýrh+2
+11683	Ruh Plaka Zýrh+3
+11684	Ruh Plaka Zýrh+4
+11685	Ruh Plaka Zýrh+5
+11686	Ruh Plaka Zýrh+6
+11687	Ruh Plaka Zýrh+7
+11688	Ruh Plaka Zýrh+8
+11689	Ruh Plaka Zýrh+9
+11690	Kara Büyü Zýrh+0
+11691	Kara Büyü Zýrh+1
+11692	Kara Büyü Zýrh+2
+11693	Kara Büyü Zýrh+3
+11694	Kara Büyü Zýrh+4
+11695	Kara Büyü Zýrh+5
+11696	Kara Büyü Zýrh+6
+11697	Kara Büyü Zýrh+7
+11698	Kara Büyü Zýrh+8
+11699	Kara Büyü Zýrh+9
+11700	Safir Büyü Zýrh+0
+11701	Safir Büyü Zýrh+1
+11702	Safir Büyü Zýrh+2
+11703	Safir Büyü Zýrh+3
+11704	Safir Büyü Zýrh+4
+11705	Safir Büyü Zýrh+5
+11706	Safir Büyü Zýrh+6
+11707	Safir Büyü Zýrh+7
+11708	Safir Büyü Zýrh+8
+11709	Safir Büyü Zýrh+9
+11800	Gök Mavisi Elbise+0
+11801	Gök Mavisi Elbise+1
+11802	Gök Mavisi Elbise+2
+11803	Gök Mavisi Elbise+3
+11804	Gök Mavisi Elbise+4
+11805	Gök Mavisi Elbise+5
+11806	Gök Mavisi Elbise+6
+11807	Gök Mavisi Elbise+7
+11808	Gök Mavisi Elbise+8
+11809	Gök Mavisi Elbise+9
+11810	Turkuaz Elbise+0
+11811	Turkuaz Elbise+1
+11812	Turkuaz Elbise+2
+11813	Turkuaz Elbise+3
+11814	Turkuaz Elbise+4
+11815	Turkuaz Elbise+5
+11816	Turkuaz Elbise+6
+11817	Turkuaz Elbise+7
+11818	Turkuaz Elbise+8
+11819	Turkuaz Elbise+9
+11820	Pembe Elbise+0
+11821	Pembe Elbise+1
+11822	Pembe Elbise+2
+11823	Pembe Elbise+3
+11824	Pembe Elbise+4
+11825	Pembe Elbise+5
+11826	Pembe Elbise+6
+11827	Pembe Elbise+7
+11828	Pembe Elbise+8
+11829	Pembe Elbise+9
+11830	Sevgi Elbisesi+0
+11831	Sevgi Elbisesi+1
+11832	Sevgi Elbisesi+2
+11833	Sevgi Elbisesi+3
+11834	Sevgi Elbisesi+4
+11835	Sevgi Elbisesi+5
+11836	Sevgi Elbisesi+6
+11837	Sevgi Elbisesi+7
+11838	Sevgi Elbisesi+8
+11839	Sevgi Elbisesi+9
+11840	Sema Elbisesi+0
+11841	Sema Elbisesi+1
+11842	Sema Elbisesi+2
+11843	Sema Elbisesi+3
+11844	Sema Elbisesi+4
+11845	Sema Elbisesi+5
+11846	Sema Elbisesi+6
+11847	Sema Elbisesi+7
+11848	Sema Elbisesi+8
+11849	Sema Elbisesi+9
+11850	Güneþ Elbisesi+0
+11851	Güneþ Elbisesi+1
+11852	Güneþ Elbisesi+2
+11853	Güneþ Elbisesi+3
+11854	Güneþ Elbisesi+4
+11855	Güneþ Elbisesi+5
+11856	Güneþ Elbisesi+6
+11857	Güneþ Elbisesi+7
+11858	Güneþ Elbisesi+8
+11859	Güneþ Elbisesi+9
+11860	Manevi Elbise+0
+11861	Manevi Elbise+1
+11862	Manevi Elbise+2
+11863	Manevi Elbise+3
+11864	Manevi Elbise+4
+11865	Manevi Elbise+5
+11866	Manevi Elbise+6
+11867	Manevi Elbise+7
+11868	Manevi Elbise+8
+11869	Manevi Elbise+9
+11870	Turuncu Kedi Elbisesi+0
+11871	Turuncu Kedi Elbisesi+1
+11872	Turuncu Kedi Elbisesi+2
+11873	Turuncu Kedi Elbisesi+3
+11874	Turuncu Kedi Elbisesi+4
+11875	Turuncu Kedi Elbisesi+5
+11876	Turuncu Kedi Elbisesi+6
+11877	Turuncu Kedi Elbisesi+7
+11878	Turuncu Kedi Elbisesi+8
+11879	Turuncu Kedi Elbisesi+9
+11880	Soylu Kadýn Elbisesi+0
+11881	Soylu Kadýn Elbisesi+1
+11882	Soylu Kadýn Elbisesi+2
+11883	Soylu Kadýn Elbisesi+3
+11884	Soylu Kadýn Elbisesi+4
+11885	Soylu Kadýn Elbisesi+5
+11886	Soylu Kadýn Elbisesi+6
+11887	Soylu Kadýn Elbisesi+7
+11888	Soylu Kadýn Elbisesi+8
+11889	Soylu Kadýn Elbisesi+9
+11890	Siyah Elbise+0
+11891	Siyah Elbise+1
+11892	Siyah Elbise+2
+11893	Siyah Elbise+3
+11894	Siyah Elbise+4
+11895	Siyah Elbise+5
+11896	Siyah Elbise+6
+11897	Siyah Elbise+7
+11898	Siyah Elbise+8
+11899	Siyah Elbise+9
+11980	Safir Elbise+0
+11981	Safir Elbise+1
+11982	Safir Elbise+2
+11983	Safir Elbise+3
+11984	Safir Elbise+4
+11985	Safir Elbise+5
+11986	Safir Elbise+6
+11987	Safir Elbise+7
+11988	Safir Elbise+8
+11989	Safir Elbise+9
+11901	Smokin
+11902	Smokin
+11903	Gelinlik
+11904	Gelinlik
+11911	Smokin
+11912	Smokin
+11913	Gelinlik
+11914	Gelinlik
+11971	Hwang-Zýrh
+11972	Kýrmýzý Hwang Zýrh
+11973	Zin-Hwang-Zýrh
+11974	Sang-Hwang-Zýrh
+11975	Kral Zýrhý
+11976	Kral Kýyafeti
+11977	Kral Plaka Zýrhý
+11978	Kral Giysisi
+12010	Mavi plaka zýrhý+0
+12011	Mavi plaka zýrhý+1
+12012	Mavi plaka zýrhý+2
+12013	Mavi plaka zýrhý+3
+12014	Mavi plaka zýrhý+4
+12015	Mavi plaka zýrhý+5
+12016	Mavi plaka zýrhý+6
+12017	Mavi plaka zýrhý+7
+12018	Mavi plaka zýrhý+8
+12019	Mavi plaka zýrhý+9
+12020	Mavi Ejderha Suiti +0
+12021	Mavi Ejderha Suiti +1
+12022	Mavi Ejderha Suiti +2
+12023	Mavi Ejderha Suiti +3
+12024	Mavi Ejderha Suiti +4
+12025	Mavi Ejderha Suiti +5
+12026	Mavi Ejderha Suiti +6
+12027	Mavi Ejderha Suiti +7
+12028	Mavi Ejderha Suiti +8
+12029	Mavi Ejderha Suiti +9
+12030	Aura Taþ Zýrhý +0
+12031	Aura Taþ Zýrhý +1
+12032	Aura Taþ Zýrhý +2
+12033	Aura Taþ Zýrhý +3
+12034	Aura Taþ Zýrhý +4
+12035	Aura Taþ Zýrhý +5
+12036	Aura Taþ Zýrhý +6
+12037	Aura Taþ Zýrhý +7
+12038	Aura Taþ Zýrhý +8
+12039	Aura Taþ Zýrhý +9
+12040	Ejderha Elbisesi +0
+12041	Ejderha Elbisesi +1
+12042	Ejderha Elbisesi +2
+12043	Ejderha Elbisesi +3
+12044	Ejderha Elbisesi +4
+12045	Ejderha Elbisesi +5
+12046	Ejderha Elbisesi +6
+12047	Ejderha Elbisesi +7
+12048	Ejderha Elbisesi +8
+12049	Ejderha Elbisesi +9
+12050	Kyanit Zýrh+0
+12051	Kyanit Zýrh+1
+12052	Kyanit Zýrh+2
+12053	Kyanit Zýrh+3
+12054	Kyanit Zýrh+4
+12055	Kyanit Zýrh+5
+12056	Kyanit Zýrh+6
+12057	Kyanit Zýrh+7
+12058	Kyanit Zýrh+8
+12059	Kyanit Zýrh+9
+12060	Kyanit Giysi+0
+12061	Kyanit Giysi+1
+12062	Kyanit Giysi+2
+12063	Kyanit Giysi+3
+12064	Kyanit Giysi+4
+12065	Kyanit Giysi+5
+12066	Kyanit Giysi+6
+12067	Kyanit Giysi+7
+12068	Kyanit Giysi+8
+12069	Kyanit Giysi+9
+12070	Kyanit Plaka Zýrhý+0
+12071	Kyanit Plaka Zýrhý+1
+12072	Kyanit Plaka Zýrhý+2
+12073	Kyanit Plaka Zýrhý+3
+12074	Kyanit Plaka Zýrhý+4
+12075	Kyanit Plaka Zýrhý+5
+12076	Kyanit Plaka Zýrhý+6
+12077	Kyanit Plaka Zýrhý+7
+12078	Kyanit Plaka Zýrhý+8
+12079	Kyanit Plaka Zýrhý+9
+12080	Kyanit Kýyafet+0
+12081	Kyanit Kýyafet+1
+12082	Kyanit Kýyafet+2
+12083	Kyanit Kýyafet+3
+12084	Kyanit Kýyafet+4
+12085	Kyanit Kýyafet+5
+12086	Kyanit Kýyafet+6
+12087	Kyanit Kýyafet+7
+12088	Kyanit Kýyafet+8
+12089	Kyanit Kýyafet+9
+12200	Geleneksel Miðfer+0
+12201	Geleneksel Miðfer+1
+12202	Geleneksel Miðfer+2
+12203	Geleneksel Miðfer+3
+12204	Geleneksel Miðfer+4
+12205	Geleneksel Miðfer+5
+12206	Geleneksel Miðfer+6
+12207	Geleneksel Miðfer+7
+12208	Geleneksel Miðfer+8
+12209	Geleneksel Miðfer+9
+12220	Demir Kask+0
+12221	Demir Kask+1
+12222	Demir Kask+2
+12223	Demir Kask+3
+12224	Demir Kask+4
+12225	Demir Kask+5
+12226	Demir Kask+6
+12227	Demir Kask+7
+12228	Demir Kask+8
+12229	Demir Kask+9
+12240	Hayalet Maske Baþlýk+0
+12241	Hayalet Maske Baþlýk+1
+12242	Hayalet Maske Baþlýk+2
+12243	Hayalet Maske Baþlýk+3
+12244	Hayalet Maske Baþlýk+4
+12245	Hayalet Maske Baþlýk+5
+12246	Hayalet Maske Baþlýk+6
+12247	Hayalet Maske Baþlýk+7
+12248	Hayalet Maske Baþlýk+8
+12249	Hayalet Maske Baþlýk+9
+12260	Korku Maskesi +0
+12261	Korku Maskesi +1
+12262	Korku Maskesi +2
+12263	Korku Maskesi +3
+12264	Korku Maskesi +4
+12265	Korku Maskesi +5
+12266	Korku Maskesi +6
+12267	Korku Maskesi +7
+12268	Korku Maskesi +8
+12269	Korku Maskesi +9
+12280	Usta Savaþçý Kaský +0
+12281	Usta Savaþçý Kaský +1
+12282	Usta Savaþçý Kaský +2
+12283	Usta Savaþçý Kaský +3
+12284	Usta Savaþçý Kaský +4
+12285	Usta Savaþçý Kaský +5
+12286	Usta Savaþçý Kaský +6
+12287	Usta Savaþçý Kaský +7
+12288	Usta Savaþçý Kaský +8
+12289	Usta Savaþçý Kaský +9
+12340	Deri Kapþon+0
+12341	Deri Kapþon+1
+12342	Deri Kapþon+2
+12343	Deri Kapþon+3
+12344	Deri Kapþon+4
+12345	Deri Kapþon+5
+12346	Deri Kapþon+6
+12347	Deri Kapþon+7
+12348	Deri Kapþon+8
+12349	Deri Kapþon+9
+12360	Zincir Kapþon+0
+12361	Zincir Kapþon+1
+12362	Zincir Kapþon+2
+12363	Zincir Kapþon+3
+12364	Zincir Kapþon+4
+12365	Zincir Kapþon+5
+12366	Zincir Kapþon+6
+12367	Zincir Kapþon+7
+12368	Zincir Kapþon+8
+12369	Zincir Kapþon+9
+12380	Çelik Kapþon+0
+12381	Çelik Kapþon+1
+12382	Çelik Kapþon+2
+12383	Çelik Kapþon+3
+12384	Çelik Kapþon+4
+12385	Çelik Kapþon+5
+12386	Çelik Kapþon+6
+12387	Çelik Kapþon+7
+12388	Çelik Kapþon+8
+12389	Çelik Kapþon+9
+12390	Ork Kapþonu +0
+12391	Ork Kapþonu +1
+12392	Ork Kapþonu +2
+12393	Ork Kapþonu +3
+12394	Ork Kapþonu +4
+12395	Ork Kapþonu +5
+12396	Ork Kapþonu +6
+12397	Ork Kapþonu +7
+12398	Ork Kapþonu +8
+12399	Ork Kapþonu +9
+12400	Örümcek Kapþon +0
+12401	Örümcek Kapþon +1
+12402	Örümcek Kapþon +2
+12403	Örümcek Kapþon +3
+12404	Örümcek Kapþon +4
+12405	Örümcek Kapþon +5
+12406	Örümcek Kapþon +6
+12407	Örümcek Kapþon +7
+12408	Örümcek Kapþon +8
+12409	Örümcek Kapþon +9
+12480	Kanlý Kask+0
+12481	Kanlý Kask+1
+12482	Kanlý Kask+2
+12483	Kanlý Kask+3
+12484	Kanlý Kask+4
+12485	Kanlý Kask+5
+12486	Kanlý Kask+6
+12487	Kanlý Kask+7
+12488	Kanlý Kask+8
+12489	Kanlý Kask+9
+12500	Alaycý Kask+0
+12501	Alaycý Kask+1
+12502	Alaycý Kask+2
+12503	Alaycý Kask+3
+12504	Alaycý Kask+4
+12505	Alaycý Kask+5
+12506	Alaycý Kask+6
+12507	Alaycý Kask+7
+12508	Alaycý Kask+8
+12509	Alaycý Kask+9
+12520	Kale Kask+0
+12521	Kale Kask+1
+12522	Kale Kask+2
+12523	Kale Kask+3
+12524	Kale Kask+4
+12525	Kale Kask+5
+12526	Kale Kask+6
+12527	Kale Kask+7
+12528	Kale Kask+8
+12529	Kale Kask+9
+12530	Boynuzlu Kask +0
+12531	Boynuzlu Kask +1
+12532	Boynuzlu Kask +2
+12533	Boynuzlu Kask +3
+12534	Boynuzlu Kask +4
+12535	Boynuzlu Kask +5
+12536	Boynuzlu Kask +6
+12537	Boynuzlu Kask +7
+12538	Boynuzlu Kask +8
+12539	Boynuzlu Kask +9
+12540	Büyülü Kask +0
+12541	Büyülü Kask +1
+12542	Büyülü Kask +2
+12543	Büyülü Kask +3
+12544	Büyülü Kask +4
+12545	Büyülü Kask +5
+12546	Büyülü Kask +6
+12547	Büyülü Kask +7
+12548	Büyülü Kask +8
+12549	Büyülü Kask +9
+12620	Keþiþ Þapkasý+0
+12621	Keþiþ Þapkasý+1
+12622	Keþiþ Þapkasý+2
+12623	Keþiþ Þapkasý+3
+12624	Keþiþ Þapkasý+4
+12625	Keþiþ Þapkasý+5
+12626	Keþiþ Þapkasý+6
+12627	Keþiþ Þapkasý+7
+12628	Keþiþ Þapkasý+8
+12629	Keþiþ Þapkasý+9
+12640	Anka Þapkasý+0
+12641	Anka Þapkasý+1
+12642	Anka Þapkasý+2
+12643	Anka Þapkasý+3
+12644	Anka Þapkasý+4
+12645	Anka Þapkasý+5
+12646	Anka Þapkasý+6
+12647	Anka Þapkasý+7
+12648	Anka Þapkasý+8
+12649	Anka Þapkasý+9
+12660	Günýþýðý Þapka+0
+12661	Günýþýðý Þapka+1
+12662	Günýþýðý Þapka+2
+12663	Günýþýðý Þapka+3
+12664	Günýþýðý Þapka+4
+12665	Günýþýðý Þapka+5
+12666	Günýþýðý Þapka+6
+12667	Günýþýðý Þapka+7
+12668	Günýþýðý Þapka+8
+12669	Günýþýðý Þapka+9
+12670	Kardinal Þapkasý +0
+12671	Kardinal Þapkasý +1
+12672	Kardinal Þapkasý +2
+12673	Kardinal Þapkasý +3
+12674	Kardinal Þapkasý +4
+12675	Kardinal Þapkasý +5
+12676	Kardinal Þapkasý +6
+12677	Kardinal Þapkasý +7
+12678	Kardinal Þapkasý +8
+12679	Kardinal Þapkasý +9
+12680	Ruh Yongasý Þapkasý +0
+12681	Ruh Yongasý Þapkasý +1
+12682	Ruh Yongasý Þapkasý +2
+12683	Ruh Yongasý Þapkasý +3
+12684	Ruh Yongasý Þapkasý +4
+12685	Ruh Yongasý Þapkasý +5
+12686	Ruh Yongasý Þapkasý +6
+12687	Ruh Yongasý Þapkasý +7
+12688	Ruh Yongasý Þapkasý +8
+12689	Ruh Yongasý Þapkasý +9
+12690	Ejderha Çeliði Kaský +0
+12691	Ejderha Çeliði Kaský +1
+12692	Ejderha Çeliði Kaský +2
+12693	Ejderha Çeliði Kaský +3
+12694	Ejderha Çeliði Kaský +4
+12695	Ejderha Çeliði Kaský +5
+12696	Ejderha Çeliði Kaský +6
+12697	Ejderha Çeliði Kaský +7
+12698	Ejderha Çeliði Kaský +8
+12699	Ejderha Çeliði Kaský +9
+12700	Ejderha Kapüþonu +0
+12701	Ejderha Kapüþonu +1
+12702	Ejderha Kapüþonu +2
+12703	Ejderha Kapüþonu +3
+12704	Ejderha Kapüþonu +4
+12705	Ejderha Kapüþonu +5
+12706	Ejderha Kapüþonu +6
+12707	Ejderha Kapüþonu +7
+12708	Ejderha Kapüþonu +8
+12709	Ejderha Kapüþonu +9
+12710	Ejderha Zýrhý Kaský +0
+12711	Ejderha Zýrhý Kaský +1
+12712	Ejderha Zýrhý Kaský +2
+12713	Ejderha Zýrhý Kaský +3
+12714	Ejderha Zýrhý Kaský +4
+12715	Ejderha Zýrhý Kaský +5
+12716	Ejderha Zýrhý Kaský +6
+12717	Ejderha Zýrhý Kaský +7
+12718	Ejderha Zýrhý Kaský +8
+12719	Ejderha Zýrhý Kaský +9
+12720	Ejderha Þapkasý +0
+12721	Ejderha Þapkasý +1
+12722	Ejderha Þapkasý +2
+12723	Ejderha Þapkasý +3
+12724	Ejderha Þapkasý +4
+12725	Ejderha Þapkasý +5
+12726	Ejderha Þapkasý +6
+12727	Ejderha Þapkasý +7
+12728	Ejderha Þapkasý +8
+12729	Ejderha Þapkasý +9
+12730	Dragon Çelik Baþlýk+0
+12731	Dragon Çelik Baþlýk+1
+12732	Dragon Çelik Baþlýk+2
+12733	Dragon Çelik Baþlýk+3
+12734	Dragon Çelik Baþlýk+4
+12735	Dragon Çelik Baþlýk+5
+12736	Dragon Çelik Baþlýk+6
+12737	Dragon Çelik Baþlýk+7
+12738	Dragon Çelik Baþlýk+8
+12739	Dragon Çelik Baþlýk+9
+12740	Dragon Kapüþonu+0
+12741	Dragon Kapüþonu+1
+12742	Dragon Kapüþonu+2
+12743	Dragon Kapüþonu+3
+12744	Dragon Kapüþonu+4
+12745	Dragon Kapüþonu+5
+12746	Dragon Kapüþonu+6
+12747	Dragon Kapüþonu+7
+12748	Dragon Kapüþonu+8
+12749	Dragon Kapüþonu+9
+12750	Dragon Zýrhlý Baþlýk+0
+12751	Dragon Zýrhlý Baþlýk+1
+12752	Dragon Zýrhlý Baþlýk+2
+12753	Dragon Zýrhlý Baþlýk+3
+12754	Dragon Zýrhlý Baþlýk+4
+12755	Dragon Zýrhlý Baþlýk+5
+12756	Dragon Zýrhlý Baþlýk+6
+12757	Dragon Zýrhlý Baþlýk+7
+12758	Dragon Zýrhlý Baþlýk+8
+12759	Dragon Zýrhlý Baþlýk+9
+12760	Dragon Þapkasý+0
+12761	Dragon Þapkasý+1
+12762	Dragon Þapkasý+2
+12763	Dragon Þapkasý+3
+12764	Dragon Þapkasý+4
+12765	Dragon Þapkasý+5
+12766	Dragon Þapkasý+6
+12767	Dragon Þapkasý+7
+12768	Dragon Þapkasý+8
+12769	Dragon Þapkasý+9
+12780	Kara ejderha kaský+0
+12781	Kara ejderha kaský+1
+12782	Kara ejderha kaský+2
+12783	Kara ejderha kaský+3
+12784	Kara ejderha kaský+4
+12785	Kara ejderha kaský+5
+12786	Kara ejderha kaský+6
+12787	Kara ejderha kaský+7
+12788	Kara ejderha kaský+8
+12789	Kara ejderha kaský+9
+12790	Kara ejderha kaský+10
+12791	Kara ejderha kaský+11
+12792	Kara ejderha kaský+12
+12793	Kara ejderha kaský+13
+12794	Kara ejderha kaský+14
+12795	Kara ejderha kaský+15
+12800	Rüzgar ejderha. kaský+0
+12801	Rüzgar ejderha. kaský+1
+12802	Rüzgar ejderha. kaský+2
+12803	Rüzgar ejderha. kaský+3
+12804	Rüzgar ejderha. kaský+4
+12805	Rüzgar ejderha. kaský+5
+12806	Rüzgar ejderha. kaský+6
+12807	Rüzgar ejderha. kaský+7
+12808	Rüzgar ejderha. kaský+8
+12809	Rüzgar ejderha. kaský+9
+12810	Rüzgar ejderha. kaský+10
+12811	Rüzgar ejderha. kaský+11
+12812	Rüzgar ejderha. kaský+12
+12813	Rüzgar ejderha. kaský+13
+12814	Rüzgar ejderha. kaský+14
+12815	Rüzgar ejderha. kaský+15
+12820	Büyü ejderhasý kaský+0
+12821	Büyü ejderhasý kaský+1
+12822	Büyü ejderhasý kaský+2
+12823	Büyü ejderhasý kaský+3
+12824	Büyü ejderhasý kaský+4
+12825	Büyü ejderhasý kaský+5
+12826	Büyü ejderhasý kaský+6
+12827	Büyü ejderhasý kaský+7
+12828	Büyü ejderhasý kaský+8
+12829	Büyü ejderhasý kaský+9
+12830	Büyü ejderhasý kaský+10
+12831	Büyü ejderhasý kaský+11
+12832	Büyü ejderhasý kaský+12
+12833	Büyü ejderhasý kaský+13
+12834	Büyü ejderhasý kaský+14
+12835	Büyü ejderhasý kaský+15
+12840	Tanrýlar ejder. kaský+0
+12841	Tanrýlar ejder. kaský+1
+12842	Tanrýlar ejder. kaský+2
+12843	Tanrýlar ejder. kaský+3
+12844	Tanrýlar ejder. kaský+4
+12845	Tanrýlar ejder. kaský+5
+12846	Tanrýlar ejder. kaský+6
+12847	Tanrýlar ejder. kaský+7
+12848	Tanrýlar ejder. kaský+8
+12849	Tanrýlar ejder. kaský+9
+12850	Tanrýlar ejder. kaský+10
+12851	Tanrýlar ejder. kaský+11
+12852	Tanrýlar ejder. kaský+12
+12853	Tanrýlar ejder. kaský+13
+12854	Tanrýlar ejder. kaský+14
+12855	Tanrýlar ejder. kaský+15
+13000	Savaþ Kalkaný+0
+13001	Savaþ Kalkaný+1
+13002	Savaþ Kalkaný+2
+13003	Savaþ Kalkaný+3
+13004	Savaþ Kalkaný+4
+13005	Savaþ Kalkaný+5
+13006	Savaþ Kalkaný+6
+13007	Savaþ Kalkaný+7
+13008	Savaþ Kalkaný+8
+13009	Savaþ Kalkaný+9
+13020	Beþgen Kalkan+0
+13021	Beþgen Kalkan+1
+13022	Beþgen Kalkan+2
+13023	Beþgen Kalkan+3
+13024	Beþgen Kalkan+4
+13025	Beþgen Kalkan+5
+13026	Beþgen Kalkan+6
+13027	Beþgen Kalkan+7
+13028	Beþgen Kalkan+8
+13029	Beþgen Kalkan+9
+13040	Siyah Yuvarlak Kalkan+0
+13041	Siyah Yuvarlak Kalkan+1
+13042	Siyah Yuvarlak Kalkan+2
+13043	Siyah Yuvarlak Kalkan+3
+13044	Siyah Yuvarlak Kalkan+4
+13045	Siyah Yuvarlak Kalkan+5
+13046	Siyah Yuvarlak Kalkan+6
+13047	Siyah Yuvarlak Kalkan+7
+13048	Siyah Yuvarlak Kalkan+8
+13049	Siyah Yuvarlak Kalkan+9
+13060	Þahin Kalkaný+0
+13061	Þahin Kalkaný+1
+13062	Þahin Kalkaný+2
+13063	Þahin Kalkaný+3
+13064	Þahin Kalkaný+4
+13065	Þahin Kalkaný+5
+13066	Þahin Kalkaný+6
+13067	Þahin Kalkaný+7
+13068	Þahin Kalkaný+8
+13069	Þahin Kalkaný+9
+13080	Kaplan Kalkaný+0
+13081	Kaplan Kalkaný+1
+13082	Kaplan Kalkaný+2
+13083	Kaplan Kalkaný+3
+13084	Kaplan Kalkaný+4
+13085	Kaplan Kalkaný+5
+13086	Kaplan Kalkaný+6
+13087	Kaplan Kalkaný+7
+13088	Kaplan Kalkaný+8
+13089	Kaplan Kalkaný+9
+13100	Aslan Aðzý Kalkan+0
+13101	Aslan Aðzý Kalkan+1
+13102	Aslan Aðzý Kalkan+2
+13103	Aslan Aðzý Kalkan+3
+13104	Aslan Aðzý Kalkan+4
+13105	Aslan Aðzý Kalkan+5
+13106	Aslan Aðzý Kalkan+6
+13107	Aslan Aðzý Kalkan+7
+13108	Aslan Aðzý Kalkan+8
+13109	Aslan Aðzý Kalkan+9
+13120	Ejderha Pulu Kalkan+0
+13121	Ejderha Pulu Kalkan+1
+13122	Ejderha Pulu Kalkan+2
+13123	Ejderha Pulu Kalkan+3
+13124	Ejderha Pulu Kalkan+4
+13125	Ejderha Pulu Kalkan+5
+13126	Ejderha Pulu Kalkan+6
+13127	Ejderha Pulu Kalkan+7
+13128	Ejderha Pulu Kalkan+8
+13129	Ejderha Pulu Kalkan+9
+13140	Titan Kalkaný+0
+13141	Titan Kalkaný+1
+13142	Titan Kalkaný+2
+13143	Titan Kalkaný+3
+13144	Titan Kalkaný+4
+13145	Titan Kalkaný+5
+13146	Titan Kalkaný+6
+13147	Titan Kalkaný+7
+13148	Titan Kalkaný+8
+13149	Titan Kalkaný+9
+13160	Üç Ýmparator Kalkaný+0
+13161	Üç Ýmparator Kalkaný+1
+13162	Üç Ýmparator Kalkaný+2
+13163	Üç Ýmparator Kalkaný+3
+13164	Üç Ýmparator Kalkaný+4
+13165	Üç Ýmparator Kalkaný+5
+13166	Üç Ýmparator Kalkaný+6
+13167	Üç Ýmparator Kalkaný+7
+13168	Üç Ýmparator Kalkaný+8
+13169	Üç Ýmparator Kalkaný+9
+13180	Parlak Kalkan+0
+13181	Parlak Kalkan+1
+13182	Parlak Kalkan+2
+13183	Parlak Kalkan+3
+13184	Parlak Kalkan+4
+13185	Parlak Kalkan+5
+13186	Parlak Kalkan+6
+13187	Parlak Kalkan+7
+13188	Parlak Kalkan+8
+13189	Parlak Kalkan+9
+14000	Tahta Bilezik+0
+14001	Tahta Bilezik+1
+14002	Tahta Bilezik+2
+14003	Tahta Bilezik+3
+14004	Tahta Bilezik+4
+14005	Tahta Bilezik+5
+14006	Tahta Bilezik+6
+14007	Tahta Bilezik+7
+14008	Tahta Bilezik+8
+14009	Tahta Bilezik+9
+14020	Bakýr Bilezik+0
+14021	Bakýr Bilezik+1
+14022	Bakýr Bilezik+2
+14023	Bakýr Bilezik+3
+14024	Bakýr Bilezik+4
+14025	Bakýr Bilezik+5
+14026	Bakýr Bilezik+6
+14027	Bakýr Bilezik+7
+14028	Bakýr Bilezik+8
+14029	Bakýr Bilezik+9
+14040	Gümüþ Bilezik+0
+14041	Gümüþ Bilezik+1
+14042	Gümüþ Bilezik+2
+14043	Gümüþ Bilezik+3
+14044	Gümüþ Bilezik+4
+14045	Gümüþ Bilezik+5
+14046	Gümüþ Bilezik+6
+14047	Gümüþ Bilezik+7
+14048	Gümüþ Bilezik+8
+14049	Gümüþ Bilezik+9
+14060	Altýn Bilezik+0
+14061	Altýn Bilezik+1
+14062	Altýn Bilezik+2
+14063	Altýn Bilezik+3
+14064	Altýn Bilezik+4
+14065	Altýn Bilezik+5
+14066	Altýn Bilezik+6
+14067	Altýn Bilezik+7
+14068	Altýn Bilezik+8
+14069	Altýn Bilezik+9
+14080	YeþimTaþý Bilezik+0
+14081	YeþimTaþý Bilezik+1
+14082	YeþimTaþý Bilezik+2
+14083	YeþimTaþý Bilezik+3
+14084	YeþimTaþý Bilezik+4
+14085	YeþimTaþý Bilezik+5
+14086	YeþimTaþý Bilezik+6
+14087	YeþimTaþý Bilezik+7
+14088	YeþimTaþý Bilezik+8
+14089	YeþimTaþý Bilezik+9
+14100	Abanoz Bilezik+0
+14101	Abanoz Bilezik+1
+14102	Abanoz Bilezik+2
+14103	Abanoz Bilezik+3
+14104	Abanoz Bilezik+4
+14105	Abanoz Bilezik+5
+14106	Abanoz Bilezik+6
+14107	Abanoz Bilezik+7
+14108	Abanoz Bilezik+8
+14109	Abanoz Bilezik+9
+14120	Ýnci Bilezik+0
+14121	Ýnci Bilezik+1
+14122	Ýnci Bilezik+2
+14123	Ýnci Bilezik+3
+14124	Ýnci Bilezik+4
+14125	Ýnci Bilezik+5
+14126	Ýnci Bilezik+6
+14127	Ýnci Bilezik+7
+14128	Ýnci Bilezik+8
+14129	Ýnci Bilezik+9
+14140	Beyaz Altýn Bilezik+0
+14141	Beyaz Altýn Bilezik+1
+14142	Beyaz Altýn Bilezik+2
+14143	Beyaz Altýn Bilezik+3
+14144	Beyaz Altýn Bilezik+4
+14145	Beyaz Altýn Bilezik+5
+14146	Beyaz Altýn Bilezik+6
+14147	Beyaz Altýn Bilezik+7
+14148	Beyaz Altýn Bilezik+8
+14149	Beyaz Altýn Bilezik+9
+14160	Kristal Bilezik+0
+14161	Kristal Bilezik+1
+14162	Kristal Bilezik+2
+14163	Kristal Bilezik+3
+14164	Kristal Bilezik+4
+14165	Kristal Bilezik+5
+14166	Kristal Bilezik+6
+14167	Kristal Bilezik+7
+14168	Kristal Bilezik+8
+14169	Kristal Bilezik+9
+14180	Ametist Bilezik+0
+14181	Ametist Bilezik+1
+14182	Ametist Bilezik+2
+14183	Ametist Bilezik+3
+14184	Ametist Bilezik+4
+14185	Ametist Bilezik+5
+14186	Ametist Bilezik+6
+14187	Ametist Bilezik+7
+14188	Ametist Bilezik+8
+14189	Ametist Bilezik+9
+14200	Cennetin Gözy. Bilezik+0
+14201	Cennetin Gözy. Bilezik+1
+14202	Cennetin Gözy. Bilezik+2
+14203	Cennetin Gözy. Bilezik+3
+14204	Cennetin Gözy. Bilezik+4
+14205	Cennetin Gözy. Bilezik+5
+14206	Cennetin Gözy. Bilezik+6
+14207	Cennetin Gözy. Bilezik+7
+14208	Cennetin Gözy. Bilezik+8
+14209	Cennetin Gözy. Bilezik+9
+14220	Ruh Kristali Bilekliði+0
+14221	Ruh Kristali Bilekliði+1
+14222	Ruh Kristali Bilekliði+2
+14223	Ruh Kristali Bilekliði+3
+14224	Ruh Kristali Bilekliði+4
+14225	Ruh Kristali Bilekliði+5
+14226	Ruh Kristali Bilekliði+6
+14227	Ruh Kristali Bilekliði+7
+14228	Ruh Kristali Bilekliði+8
+14229	Ruh Kristali Bilekliði+9
+14500	Yakut Bileklik +0
+14501	Yakut Bileklik +1
+14502	Yakut Bileklik +2
+14503	Yakut Bileklik +3
+14504	Yakut Bileklik +4
+14505	Yakut Bileklik +5
+14506	Yakut Bileklik +6
+14507	Yakut Bileklik +7
+14508	Yakut Bileklik +8
+14509	Yakut Bileklik +9
+14520	Grena Bileklik +0
+14521	Grena Bileklik +1
+14522	Grena Bileklik +2
+14523	Grena Bileklik +3
+14524	Grena Bileklik +4
+14525	Grena Bileklik +5
+14526	Grena Bileklik +6
+14527	Grena Bileklik +7
+14528	Grena Bileklik +8
+14529	Grena Bileklik +9
+14540	Zümrüt Bileklik +0
+14541	Zümrüt Bileklik +1
+14542	Zümrüt Bileklik +2
+14543	Zümrüt Bileklik +3
+14544	Zümrüt Bileklik +4
+14545	Zümrüt Bileklik +5
+14546	Zümrüt Bileklik +6
+14547	Zümrüt Bileklik +7
+14548	Zümrüt Bileklik +8
+14549	Zümrüt Bileklik +9
+14560	Safir Bileklik +0
+14561	Safir Bileklik +1
+14562	Safir Bileklik +2
+14563	Safir Bileklik +3
+14564	Safir Bileklik +4
+14565	Safir Bileklik +5
+14566	Safir Bileklik +6
+14567	Safir Bileklik +7
+14568	Safir Bileklik +8
+14569	Safir Bileklik +9
+14580	Sis jediti bilekliði+0
+14581	Sis jediti bilekliði+1
+14582	Sis jediti bilekliði+2
+14583	Sis jediti bilekliði+3
+14584	Sis jediti bilekliði+4
+14585	Sis jediti bilekliði+5
+14586	Sis jediti bilekliði+6
+14587	Sis jediti bilekliði+7
+14588	Sis jediti bilekliði+8
+14589	Sis jediti bilekliði+9
+14590	Güneþ jediti bilekliði+0
+14591	Güneþ jediti bilekliði+1
+14592	Güneþ jediti bilekliði+2
+14593	Güneþ jediti bilekliði+3
+14594	Güneþ jediti bilekliði+4
+14595	Güneþ jediti bilekliði+5
+14596	Güneþ jediti bilekliði+6
+14597	Güneþ jediti bilekliði+7
+14598	Güneþ jediti bilekliði+8
+14599	Güneþ jediti bilekliði+9
+14600	Gece jediti bilekliði+0
+14601	Gece jediti bilekliði+1
+14602	Gece jediti bilekliði+2
+14603	Gece jediti bilekliði+3
+14604	Gece jediti bilekliði+4
+14605	Gece jediti bilekliði+5
+14606	Gece jediti bilekliði+6
+14607	Gece jediti bilekliði+7
+14608	Gece jediti bilekliði+8
+14609	Gece jediti bilekliði+9
+14610	Duman jediti bilekliði+0
+14611	Duman jediti bilekliði+1
+14612	Duman jediti bilekliði+2
+14613	Duman jediti bilekliði+3
+14614	Duman jediti bilekliði+4
+14615	Duman jediti bilekliði+5
+14616	Duman jediti bilekliði+6
+14617	Duman jediti bilekliði+7
+14618	Duman jediti bilekliði+8
+14619	Duman jediti bilekliði+9
+15000	Deri Ayakkabý+0
+15001	Deri Ayakkabý+1
+15002	Deri Ayakkabý+2
+15003	Deri Ayakkabý+3
+15004	Deri Ayakkabý+4
+15005	Deri Ayakkabý+5
+15006	Deri Ayakkabý+6
+15007	Deri Ayakkabý+7
+15008	Deri Ayakkabý+8
+15009	Deri Ayakkabý+9
+15020	Bambu Derisi Ayakkabý+0
+15021	Bambu Derisi Ayakkabý+1
+15022	Bambu Derisi Ayakkabý+2
+15023	Bambu Derisi Ayakkabý+3
+15024	Bambu Derisi Ayakkabý+4
+15025	Bambu Derisi Ayakkabý+5
+15026	Bambu Derisi Ayakkabý+6
+15027	Bambu Derisi Ayakkabý+7
+15028	Bambu Derisi Ayakkabý+8
+15029	Bambu Derisi Ayakkabý+9
+15040	Tahta Ayakkabý+0
+15041	Tahta Ayakkabý+1
+15042	Tahta Ayakkabý+2
+15043	Tahta Ayakkabý+3
+15044	Tahta Ayakkabý+4
+15045	Tahta Ayakkabý+5
+15046	Tahta Ayakkabý+6
+15047	Tahta Ayakkabý+7
+15048	Tahta Ayakkabý+8
+15049	Tahta Ayakkabý+9
+15060	Altýn Bezeli Ayakkabý+0
+15061	Altýn Bezeli Ayakkabý+1
+15062	Altýn Bezeli Ayakkabý+2
+15063	Altýn Bezeli Ayakkabý+3
+15064	Altýn Bezeli Ayakkabý+4
+15065	Altýn Bezeli Ayakkabý+5
+15066	Altýn Bezeli Ayakkabý+6
+15067	Altýn Bezeli Ayakkabý+7
+15068	Altýn Bezeli Ayakkabý+8
+15069	Altýn Bezeli Ayakkabý+9
+15080	Deri çizme+0
+15081	Deri çizme+1
+15082	Deri çizme+2
+15083	Deri çizme+3
+15084	Deri çizme+4
+15085	Deri çizme+5
+15086	Deri çizme+6
+15087	Deri çizme+7
+15088	Deri çizme+8
+15089	Deri çizme+9
+15100	Altýn Ayakkabý+0
+15101	Altýn Ayakkabý+1
+15102	Altýn Ayakkabý+2
+15103	Altýn Ayakkabý+3
+15104	Altýn Ayakkabý+4
+15105	Altýn Ayakkabý+5
+15106	Altýn Ayakkabý+6
+15107	Altýn Ayakkabý+7
+15108	Altýn Ayakkabý+8
+15109	Altýn Ayakkabý+9
+15120	Tunç Ayakkabý+0
+15121	Tunç Ayakkabý+1
+15122	Tunç Ayakkabý+2
+15123	Tunç Ayakkabý+3
+15124	Tunç Ayakkabý+4
+15125	Tunç Ayakkabý+5
+15126	Tunç Ayakkabý+6
+15127	Tunç Ayakkabý+7
+15128	Tunç Ayakkabý+8
+15129	Tunç Ayakkabý+9
+15140	YeþimTaþý Ayakkabý+0
+15141	YeþimTaþý Ayakkabý+1
+15142	YeþimTaþý Ayakkabý+2
+15143	YeþimTaþý Ayakkabý+3
+15144	YeþimTaþý Ayakkabý+4
+15145	YeþimTaþý Ayakkabý+5
+15146	YeþimTaþý Ayakkabý+6
+15147	YeþimTaþý Ayakkabý+7
+15148	YeþimTaþý Ayakkabý+8
+15149	YeþimTaþý Ayakkabý+9
+15160	Mest Eden Ayakkabý+0
+15161	Mest Eden Ayakkabý+1
+15162	Mest Eden Ayakkabý+2
+15163	Mest Eden Ayakkabý+3
+15164	Mest Eden Ayakkabý+4
+15165	Mest Eden Ayakkabý+5
+15166	Mest Eden Ayakkabý+6
+15167	Mest Eden Ayakkabý+7
+15168	Mest Eden Ayakkabý+8
+15169	Mest Eden Ayakkabý+9
+15180	Iþýk Saçan Çizme+0
+15181	Iþýk Saçan Çizme+1
+15182	Iþýk Saçan Çizme+2
+15183	Iþýk Saçan Çizme+3
+15184	Iþýk Saçan Çizme+4
+15185	Iþýk Saçan Çizme+5
+15186	Iþýk Saçan Çizme+6
+15187	Iþýk Saçan Çizme+7
+15188	Iþýk Saçan Çizme+8
+15189	Iþýk Saçan Çizme+9
+15200	Anka Ayakkabý+0
+15201	Anka Ayakkabý+1
+15202	Anka Ayakkabý+2
+15203	Anka Ayakkabý+3
+15204	Anka Ayakkabý+4
+15205	Anka Ayakkabý+5
+15206	Anka Ayakkabý+6
+15207	Anka Ayakkabý+7
+15208	Anka Ayakkabý+8
+15209	Anka Ayakkabý+9
+15220	Ateþ Kuþu Çizmesi+0
+15221	Ateþ Kuþu Çizmesi+1
+15222	Ateþ Kuþu Çizmesi+2
+15223	Ateþ Kuþu Çizmesi+3
+15224	Ateþ Kuþu Çizmesi+4
+15225	Ateþ Kuþu Çizmesi+5
+15226	Ateþ Kuþu Çizmesi+6
+15227	Ateþ Kuþu Çizmesi+7
+15228	Ateþ Kuþu Çizmesi+8
+15229	Ateþ Kuþu Çizmesi+9
+15240	Ejder Derisi Ayakkabý+0
+15241	Ejder Derisi Ayakkabý+1
+15242	Ejder Derisi Ayakkabý+2
+15243	Ejder Derisi Ayakkabý+3
+15244	Ejder Derisi Ayakkabý+4
+15245	Ejder Derisi Ayakkabý+5
+15246	Ejder Derisi Ayakkabý+6
+15247	Ejder Derisi Ayakkabý+7
+15248	Ejder Derisi Ayakkabý+8
+15249	Ejder Derisi Ayakkabý+9
+15370	Coþku Ayakkabýsý +0
+15371	Coþku Ayakkabýsý +1
+15372	Coþku Ayakkabýsý +2
+15373	Coþku Ayakkabýsý +3
+15374	Coþku Ayakkabýsý +4
+15375	Coþku Ayakkabýsý +5
+15376	Coþku Ayakkabýsý +6
+15377	Coþku Ayakkabýsý +7
+15378	Coþku Ayakkabýsý +8
+15379	Coþku Ayakkabýsý +9
+15390	Þöhret Çizmesi +0
+15391	Þöhret Çizmesi +1
+15392	Þöhret Çizmesi +2
+15393	Þöhret Çizmesi +3
+15394	Þöhret Çizmesi +4
+15395	Þöhret Çizmesi +5
+15396	Þöhret Çizmesi +6
+15397	Þöhret Çizmesi +7
+15398	Þöhret Çizmesi +8
+15399	Þöhret Çizmesi +9
+15410	Kirin Ayakkabý +0
+15411	Kirin Ayakkabý +1
+15412	Kirin Ayakkabý +2
+15413	Kirin Ayakkabý +3
+15414	Kirin Ayakkabý +4
+15415	Kirin Ayakkabý +5
+15416	Kirin Ayakkabý +6
+15417	Kirin Ayakkabý +7
+15418	Kirin Ayakkabý +8
+15419	Kirin Ayakkabý +9
+15430	Yalýçapkýný Ayyakkabý +0
+15431	Yalýçapkýný Ayyakkabý +1
+15432	Yalýçapkýný Ayyakkabý +2
+15433	Yalýçapkýný Ayyakkabý +3
+15434	Yalýçapkýný Ayyakkabý +4
+15435	Yalýçapkýný Ayyakkabý +5
+15436	Yalýçapkýný Ayyakkabý +6
+15437	Yalýçapkýný Ayyakkabý +7
+15438	Yalýçapkýný Ayyakkabý +8
+15439	Yalýçapkýný Ayyakkabý +9
+15440	Ateþ Ayakkabýsý+0
+15441	Ateþ Ayakkabýsý+1
+15442	Ateþ Ayakkabýsý+2
+15443	Ateþ Ayakkabýsý+3
+15444	Ateþ Ayakkabýsý+4
+15445	Ateþ Ayakkabýsý+5
+15446	Ateþ Ayakkabýsý+6
+15447	Ateþ Ayakkabýsý+7
+15448	Ateþ Ayakkabýsý+8
+15449	Ateþ Ayakkabýsý+9
+15450	Okyanus Ayakkabýsý+0
+15451	Okyanus Ayakkabýsý+1
+15452	Okyanus Ayakkabýsý+2
+15453	Okyanus Ayakkabýsý+3
+15454	Okyanus Ayakkabýsý+4
+15455	Okyanus Ayakkabýsý+5
+15456	Okyanus Ayakkabýsý+6
+15457	Okyanus Ayakkabýsý+7
+15458	Okyanus Ayakkabýsý+8
+15459	Okyanus Ayakkabýsý+9
+16000	Tahta Kolye+0
+16001	Tahta Kolye+1
+16002	Tahta Kolye+2
+16003	Tahta Kolye+3
+16004	Tahta Kolye+4
+16005	Tahta Kolye+5
+16006	Tahta Kolye+6
+16007	Tahta Kolye+7
+16008	Tahta Kolye+8
+16009	Tahta Kolye+9
+16020	Bakýr Kolye+0
+16021	Bakýr Kolye+1
+16022	Bakýr Kolye+2
+16023	Bakýr Kolye+3
+16024	Bakýr Kolye+4
+16025	Bakýr Kolye+5
+16026	Bakýr Kolye+6
+16027	Bakýr Kolye+7
+16028	Bakýr Kolye+8
+16029	Bakýr Kolye+9
+16040	Gümüþ Kolye+0
+16041	Gümüþ Kolye+1
+16042	Gümüþ Kolye+2
+16043	Gümüþ Kolye+3
+16044	Gümüþ Kolye+4
+16045	Gümüþ Kolye+5
+16046	Gümüþ Kolye+6
+16047	Gümüþ Kolye+7
+16048	Gümüþ Kolye+8
+16049	Gümüþ Kolye+9
+16060	Altýn Kolye+0
+16061	Altýn Kolye+1
+16062	Altýn Kolye+2
+16063	Altýn Kolye+3
+16064	Altýn Kolye+4
+16065	Altýn Kolye+5
+16066	Altýn Kolye+6
+16067	Altýn Kolye+7
+16068	Altýn Kolye+8
+16069	Altýn Kolye+9
+16080	YeþimTaþý Kolye+0
+16081	YeþimTaþý Kolye+1
+16082	YeþimTaþý Kolye+2
+16083	YeþimTaþý Kolye+3
+16084	YeþimTaþý Kolye+4
+16085	YeþimTaþý Kolye+5
+16086	YeþimTaþý Kolye+6
+16087	YeþimTaþý Kolye+7
+16088	YeþimTaþý Kolye+8
+16089	YeþimTaþý Kolye+9
+16100	Abanoz Kolye+0
+16101	Abanoz Kolye+1
+16102	Abanoz Kolye+2
+16103	Abanoz Kolye+3
+16104	Abanoz Kolye+4
+16105	Abanoz Kolye+5
+16106	Abanoz Kolye+6
+16107	Abanoz Kolye+7
+16108	Abanoz Kolye+8
+16109	Abanoz Kolye+9
+16120	Ýnci Kolye+0
+16121	Ýnci Kolye+1
+16122	Ýnci Kolye+2
+16123	Ýnci Kolye+3
+16124	Ýnci Kolye+4
+16125	Ýnci Kolye+5
+16126	Ýnci Kolye+6
+16127	Ýnci Kolye+7
+16128	Ýnci Kolye+8
+16129	Ýnci Kolye+9
+16140	Beyaz Altýn Kolye+0
+16141	Beyaz Altýn Kolye+1
+16142	Beyaz Altýn Kolye+2
+16143	Beyaz Altýn Kolye+3
+16144	Beyaz Altýn Kolye+4
+16145	Beyaz Altýn Kolye+5
+16146	Beyaz Altýn Kolye+6
+16147	Beyaz Altýn Kolye+7
+16148	Beyaz Altýn Kolye+8
+16149	Beyaz Altýn Kolye+9
+16160	Kristal Kolye+0
+16161	Kristal Kolye+1
+16162	Kristal Kolye+2
+16163	Kristal Kolye+3
+16164	Kristal Kolye+4
+16165	Kristal Kolye+5
+16166	Kristal Kolye+6
+16167	Kristal Kolye+7
+16168	Kristal Kolye+8
+16169	Kristal Kolye+9
+16180	Ametist Kolye+0
+16181	Ametist Kolye+1
+16182	Ametist Kolye+2
+16183	Ametist Kolye+3
+16184	Ametist Kolye+4
+16185	Ametist Kolye+5
+16186	Ametist Kolye+6
+16187	Ametist Kolye+7
+16188	Ametist Kolye+8
+16189	Ametist Kolye+9
+16200	Cennetin Gözyaþý Kolye+0
+16201	Cennetin Gözyaþý Kolye+1
+16202	Cennetin Gözyaþý Kolye+2
+16203	Cennetin Gözyaþý Kolye+3
+16204	Cennetin Gözyaþý Kolye+4
+16205	Cennetin Gözyaþý Kolye+5
+16206	Cennetin Gözyaþý Kolye+6
+16207	Cennetin Gözyaþý Kolye+7
+16208	Cennetin Gözyaþý Kolye+8
+16209	Cennetin Gözyaþý Kolye+9
+16220	Ruh Kristali Kolyesi+0
+16221	Ruh Kristali Kolyesi+1
+16222	Ruh Kristali Kolyesi+2
+16223	Ruh Kristali Kolyesi+3
+16224	Ruh Kristali Kolyesi+4
+16225	Ruh Kristali Kolyesi+5
+16226	Ruh Kristali Kolyesi+6
+16227	Ruh Kristali Kolyesi+7
+16228	Ruh Kristali Kolyesi+8
+16229	Ruh Kristali Kolyesi+9
+16500	Yakut Kolye +0
+16501	Yakut Kolye +1
+16502	Yakut Kolye +2
+16503	Yakut Kolye +3
+16504	Yakut Kolye +4
+16505	Yakut Kolye +5
+16506	Yakut Kolye +6
+16507	Yakut Kolye +7
+16508	Yakut Kolye +8
+16509	Yakut Kolye +9
+16520	Grena Kolye +0
+16521	Grena Kolye +1
+16522	Grena Kolye +2
+16523	Grena Kolye +3
+16524	Grena Kolye +4
+16525	Grena Kolye +5
+16526	Grena Kolye +6
+16527	Grena Kolye +7
+16528	Grena Kolye +8
+16529	Grena Kolye +9
+16540	Zümrüt Kolye +0
+16541	Zümrüt Kolye +1
+16542	Zümrüt Kolye +2
+16543	Zümrüt Kolye +3
+16544	Zümrüt Kolye +4
+16545	Zümrüt Kolye +5
+16546	Zümrüt Kolye +6
+16547	Zümrüt Kolye +7
+16548	Zümrüt Kolye +8
+16549	Zümrüt Kolye +9
+16560	Safir Kolye +0
+16561	Safir Kolye +1
+16562	Safir Kolye +2
+16563	Safir Kolye +3
+16564	Safir Kolye +4
+16565	Safir Kolye +5
+16566	Safir Kolye +6
+16567	Safir Kolye +7
+16568	Safir Kolye +8
+16569	Safir Kolye +9
+16580	Sis jediti kolyesi+0
+16581	Sis jediti kolyesi+1
+16582	Sis jediti kolyesi+2
+16583	Sis jediti kolyesi+3
+16584	Sis jediti kolyesi+4
+16585	Sis jediti kolyesi+5
+16586	Sis jediti kolyesi+6
+16587	Sis jediti kolyesi+7
+16588	Sis jediti kolyesi+8
+16589	Sis jediti kolyesi+9
+16590	Güneþ jediti kolyesi+0
+16591	Güneþ jediti kolyesi+1
+16592	Güneþ jediti kolyesi+2
+16593	Güneþ jediti kolyesi+3
+16594	Güneþ jediti kolyesi+4
+16595	Güneþ jediti kolyesi+5
+16596	Güneþ jediti kolyesi+6
+16597	Güneþ jediti kolyesi+7
+16598	Güneþ jediti kolyesi+8
+16599	Güneþ jediti kolyesi+9
+16600	Gece jediti kolyesi+0
+16601	Gece jediti kolyesi+1
+16602	Gece jediti kolyesi+2
+16603	Gece jediti kolyesi+3
+16604	Gece jediti kolyesi+4
+16605	Gece jediti kolyesi+5
+16606	Gece jediti kolyesi+6
+16607	Gece jediti kolyesi+7
+16608	Gece jediti kolyesi+8
+16609	Gece jediti kolyesi+9
+16610	Duman jediti kolyesi+0
+16611	Duman jediti kolyesi+1
+16612	Duman jediti kolyesi+2
+16613	Duman jediti kolyesi+3
+16614	Duman jediti kolyesi+4
+16615	Duman jediti kolyesi+5
+16616	Duman jediti kolyesi+6
+16617	Duman jediti kolyesi+7
+16618	Duman jediti kolyesi+8
+16619	Duman jediti kolyesi+9
+17000	Tahta Küpe+0
+17001	Tahta Küpe+1
+17002	Tahta Küpe+2
+17003	Tahta Küpe+3
+17004	Tahta Küpe+4
+17005	Tahta Küpe+5
+17006	Tahta Küpe+6
+17007	Tahta Küpe+7
+17008	Tahta Küpe+8
+17009	Tahta Küpe+9
+17020	Bakýr Küpe+0
+17021	Bakýr Küpe+1
+17022	Bakýr Küpe+2
+17023	Bakýr Küpe+3
+17024	Bakýr Küpe+4
+17025	Bakýr Küpe+5
+17026	Bakýr Küpe+6
+17027	Bakýr Küpe+7
+17028	Bakýr Küpe+8
+17029	Bakýr Küpe+9
+17040	Gümüþ Küpe+0
+17041	Gümüþ Küpe+1
+17042	Gümüþ Küpe+2
+17043	Gümüþ Küpe+3
+17044	Gümüþ Küpe+4
+17045	Gümüþ Küpe+5
+17046	Gümüþ Küpe+6
+17047	Gümüþ Küpe+7
+17048	Gümüþ Küpe+8
+17049	Gümüþ Küpe+9
+17060	Altýn Küpe+0
+17061	Altýn Küpe+1
+17062	Altýn Küpe+2
+17063	Altýn Küpe+3
+17064	Altýn Küpe+4
+17065	Altýn Küpe+5
+17066	Altýn Küpe+6
+17067	Altýn Küpe+7
+17068	Altýn Küpe+8
+17069	Altýn Küpe+9
+17080	YeþimTaþý Küpe+0
+17081	YeþimTaþý Küpe+1
+17082	YeþimTaþý Küpe+2
+17083	YeþimTaþý Küpe+3
+17084	YeþimTaþý Küpe+4
+17085	YeþimTaþý Küpe+5
+17086	YeþimTaþý Küpe+6
+17087	YeþimTaþý Küpe+7
+17088	YeþimTaþý Küpe+8
+17089	YeþimTaþý Küpe+9
+17100	Abanoz Küpe+0
+17101	Abanoz Küpe+1
+17102	Abanoz Küpe+2
+17103	Abanoz Küpe+3
+17104	Abanoz Küpe+4
+17105	Abanoz Küpe+5
+17106	Abanoz Küpe+6
+17107	Abanoz Küpe+7
+17108	Abanoz Küpe+8
+17109	Abanoz Küpe+9
+17120	Ýnci Küpe+0
+17121	Ýnci Küpe+1
+17122	Ýnci Küpe+2
+17123	Ýnci Küpe+3
+17124	Ýnci Küpe+4
+17125	Ýnci Küpe+5
+17126	Ýnci Küpe+6
+17127	Ýnci Küpe+7
+17128	Ýnci Küpe+8
+17129	Ýnci Küpe+9
+17140	Beyaz Altýn Küpe+0
+17141	Beyaz Altýn Küpe+1
+17142	Beyaz Altýn Küpe+2
+17143	Beyaz Altýn Küpe+3
+17144	Beyaz Altýn Küpe+4
+17145	Beyaz Altýn Küpe+5
+17146	Beyaz Altýn Küpe+6
+17147	Beyaz Altýn Küpe+7
+17148	Beyaz Altýn Küpe+8
+17149	Beyaz Altýn Küpe+9
+17160	Kristal Küpe+0
+17161	Kristal Küpe+1
+17162	Kristal Küpe+2
+17163	Kristal Küpe+3
+17164	Kristal Küpe+4
+17165	Kristal Küpe+5
+17166	Kristal Küpe+6
+17167	Kristal Küpe+7
+17168	Kristal Küpe+8
+17169	Kristal Küpe+9
+17180	Ametist Küpe+0
+17181	Ametist Küpe+1
+17182	Ametist Küpe+2
+17183	Ametist Küpe+3
+17184	Ametist Küpe+4
+17185	Ametist Küpe+5
+17186	Ametist Küpe+6
+17187	Ametist Küpe+7
+17188	Ametist Küpe+8
+17189	Ametist Küpe+9
+17200	Cennetin Gözyaþý Küpe+0
+17201	Cennetin Gözyaþý Küpe+1
+17202	Cennetin Gözyaþý Küpe+2
+17203	Cennetin Gözyaþý Küpe+3
+17204	Cennetin Gözyaþý Küpe+4
+17205	Cennetin Gözyaþý Küpe+5
+17206	Cennetin Gözyaþý Küpe+6
+17207	Cennetin Gözyaþý Küpe+7
+17208	Cennetin Gözyaþý Küpe+8
+17209	Cennetin Gözyaþý Küpe+9
+17220	Ruh Kristali Küpeleri+0
+17221	Ruh Kristali Küpeleri+1
+17222	Ruh Kristali Küpeleri+2
+17223	Ruh Kristali Küpeleri+3
+17224	Ruh Kristali Küpeleri+4
+17225	Ruh Kristali Küpeleri+5
+17226	Ruh Kristali Küpeleri+6
+17227	Ruh Kristali Küpeleri+7
+17228	Ruh Kristali Küpeleri+8
+17229	Ruh Kristali Küpeleri+9
+17500	Yakut Küpeler +0
+17501	Yakut Küpeler +1
+17502	Yakut Küpeler +2
+17503	Yakut Küpeler +3
+17504	Yakut Küpeler +4
+17505	Yakut Küpeler +5
+17506	Yakut Küpeler +6
+17507	Yakut Küpeler +7
+17508	Yakut Küpeler +8
+17509	Yakut Küpeler +9
+17520	Grena Küpeler +0
+17521	Grena Küpeler +1
+17522	Grena Küpeler +2
+17523	Grena Küpeler +3
+17524	Grena Küpeler +4
+17525	Grena Küpeler +5
+17526	Grena Küpeler +6
+17527	Grena Küpeler +7
+17528	Grena Küpeler +8
+17529	Grena Küpeler +9
+17540	Zümrüt Küpeler +0
+17541	Zümrüt Küpeler +1
+17542	Zümrüt Küpeler +2
+17543	Zümrüt Küpeler +3
+17544	Zümrüt Küpeler +4
+17545	Zümrüt Küpeler +5
+17546	Zümrüt Küpeler +6
+17547	Zümrüt Küpeler +7
+17548	Zümrüt Küpeler +8
+17549	Zümrüt Küpeler +9
+17560	Safir Küpeler +0
+17561	Safir Küpeler +1
+17562	Safir Küpeler +2
+17563	Safir Küpeler +3
+17564	Safir Küpeler +4
+17565	Safir Küpeler +5
+17566	Safir Küpeler +6
+17567	Safir Küpeler +7
+17568	Safir Küpeler +8
+17569	Safir Küpeler +9
+17570	Sis jediti küpesi+0
+17571	Sis jediti küpesi+1
+17572	Sis jediti küpesi+2
+17573	Sis jediti küpesi+3
+17574	Sis jediti küpesi+4
+17575	Sis jediti küpesi+5
+17576	Sis jediti küpesi+6
+17577	Sis jediti küpesi+7
+17578	Sis jediti küpesi+8
+17579	Sis jediti küpesi+9
+17580	Güneþ jediti küpesi+0
+17581	Güneþ jediti küpesi+1
+17582	Güneþ jediti küpesi+2
+17583	Güneþ jediti küpesi+3
+17584	Güneþ jediti küpesi+4
+17585	Güneþ jediti küpesi+5
+17586	Güneþ jediti küpesi+6
+17587	Güneþ jediti küpesi+7
+17588	Güneþ jediti küpesi+8
+17589	Güneþ jediti küpesi+9
+17590	Gece jediti küpesi+0
+17591	Gece jediti küpesi+1
+17592	Gece jediti küpesi+2
+17593	Gece jediti küpesi+3
+17594	Gece jediti küpesi+4
+17595	Gece jediti küpesi+5
+17596	Gece jediti küpesi+6
+17597	Gece jediti küpesi+7
+17598	Gece jediti küpesi+8
+17599	Gece jediti küpesi+9
+17600	Duman jediti küpesi+0
+17601	Duman jediti küpesi+1
+17602	Duman jediti küpesi+2
+17603	Duman jediti küpesi+3
+17604	Duman jediti küpesi+4
+17605	Duman jediti küpesi+5
+17606	Duman jediti küpesi+6
+17607	Duman jediti küpesi+7
+17608	Duman jediti küpesi+8
+17609	Duman jediti küpesi+9
+18000	Keten Kemer +0
+18001	Keten Kemer +1
+18002	Keten Kemer +2
+18003	Keten Kemer +3
+18004	Keten Kemer +4
+18005	Keten Kemer +5
+18006	Keten Kemer +6
+18007	Keten Kemer +7
+18008	Keten Kemer +8
+18009	Keten Kemer +9
+18010	Deri Kemer +0
+18011	Deri Kemer +1
+18012	Deri Kemer +2
+18013	Deri Kemer +3
+18014	Deri Kemer +4
+18015	Deri Kemer +5
+18016	Deri Kemer +6
+18017	Deri Kemer +7
+18018	Deri Kemer +8
+18019	Deri Kemer +9
+18020	Gösteriþli Kemer +0
+18021	Gösteriþli Kemer +1
+18022	Gösteriþli Kemer +2
+18023	Gösteriþli Kemer +3
+18024	Gösteriþli Kemer +4
+18025	Gösteriþli Kemer +5
+18026	Gösteriþli Kemer +6
+18027	Gösteriþli Kemer +7
+18028	Gösteriþli Kemer +8
+18029	Gösteriþli Kemer +9
+18030	Bilgeliðin Kemeri +0
+18031	Bilgeliðin Kemeri +1
+18032	Bilgeliðin Kemeri +2
+18033	Bilgeliðin Kemeri +3
+18034	Bilgeliðin Kemeri +4
+18035	Bilgeliðin Kemeri +5
+18036	Bilgeliðin Kemeri +6
+18037	Bilgeliðin Kemeri +7
+18038	Bilgeliðin Kemeri +8
+18039	Bilgeliðin Kemeri +9
+18040	Kral Kemeri +0
+18041	Kral Kemeri +1
+18042	Kral Kemeri +2
+18043	Kral Kemeri +3
+18044	Kral Kemeri +4
+18045	Kral Kemeri +5
+18046	Kral Kemeri +6
+18047	Kral Kemeri +7
+18048	Kral Kemeri +8
+18049	Kral Kemeri +9
+18050	Gölge Kemeri +0
+18051	Gölge Kemeri +1
+18052	Gölge Kemeri +2
+18053	Gölge Kemeri +3
+18054	Gölge Kemeri +4
+18055	Gölge Kemeri +5
+18056	Gölge Kemeri +6
+18057	Gölge Kemeri +7
+18058	Gölge Kemeri +8
+18059	Gölge Kemeri +9
+18060	Runik Kemer +0
+18061	Runik Kemer +1
+18062	Runik Kemer +2
+18063	Runik Kemer +3
+18064	Runik Kemer +4
+18065	Runik Kemer +5
+18066	Runik Kemer +6
+18067	Runik Kemer +7
+18068	Runik Kemer +8
+18069	Runik Kemer +9
+18070	Büyükayý Kemeri +0
+18071	Büyükayý Kemeri +1
+18072	Büyükayý Kemeri +2
+18073	Büyükayý Kemeri +3
+18074	Büyükayý Kemeri +4
+18075	Büyükayý Kemeri +5
+18076	Büyükayý Kemeri +6
+18077	Büyükayý Kemeri +7
+18078	Büyükayý Kemeri +8
+18079	Büyükayý Kemeri +9
+18080	Ruh Kemeri+0
+18081	Ruh Kemeri+1
+18082	Ruh Kemeri+2
+18083	Ruh Kemeri+3
+18084	Ruh Kemeri+4
+18085	Ruh Kemeri+5
+18086	Ruh Kemeri+6
+18087	Ruh Kemeri+7
+18088	Ruh Kemeri+8
+18089	Ruh Kemeri+9
+18900	Kýzýl Alev Taþý
+19290	Zodyak Zýrhý+0
+19291	Zodyak Zýrhý+1
+19292	Zodyak Zýrhý+2
+19293	Zodyak Zýrhý+3
+19294	Zodyak Zýrhý+4
+19295	Zodyak Zýrhý+5
+19296	Zodyak Zýrhý+6
+19297	Zodyak Zýrhý+7
+19298	Zodyak Zýrhý+8
+19299	Zodyak Zýrhý+9
+19490	Zodyak Kýyafeti+0
+19491	Zodyak Kýyafeti+1
+19492	Zodyak Kýyafeti+2
+19493	Zodyak Kýyafeti+3
+19494	Zodyak Kýyafeti+4
+19495	Zodyak Kýyafeti+5
+19496	Zodyak Kýyafeti+6
+19497	Zodyak Kýyafeti+7
+19498	Zodyak Kýyafeti+8
+19499	Zodyak Kýyafeti+9
+19690	Zodyak Plaka Zýrh+0
+19691	Zodyak Plaka Zýrh+1
+19692	Zodyak Plaka Zýrh+2
+19693	Zodyak Plaka Zýrh+3
+19694	Zodyak Plaka Zýrh+4
+19695	Zodyak Plaka Zýrh+5
+19696	Zodyak Plaka Zýrh+6
+19697	Zodyak Plaka Zýrh+7
+19698	Zodyak Plaka Zýrh+8
+19699	Zodyak Plaka Zýrh+9
+19890	Zodyak kýyafeti+0
+19891	Zodyak kýyafeti+1
+19892	Zodyak kýyafeti+2
+19893	Zodyak kýyafeti+3
+19894	Zodyak kýyafeti+4
+19895	Zodyak kýyafeti+5
+19896	Zodyak kýyafeti+6
+19897	Zodyak kýyafeti+7
+19898	Zodyak kýyafeti+8
+19899	Zodyak kýyafeti+9
+20000	Þeytan Boynuzu Zýrhý +0
+20001	Þeytan Boynuzu Zýrhý +1
+20002	Þeytan Boynuzu Zýrhý +2
+20003	Þeytan Boynuzu Zýrhý +3
+20004	Þeytan Boynuzu Zýrhý +4
+20005	Þeytan Boynuzu Zýrhý +5
+20006	Þeytan Boynuzu Zýrhý +6
+20007	Þeytan Boynuzu Zýrhý +7
+20008	Þeytan Boynuzu Zýrhý +8
+20009	Þeytan Boynuzu Zýrhý +9
+20250	Ejder Süvari Giysisi +0
+20251	Ejder Süvari Giysisi +1
+20252	Ejder Süvari Giysisi +2
+20253	Ejder Süvari Giysisi +3
+20254	Ejder Süvari Giysisi +4
+20255	Ejder Süvari Giysisi +5
+20256	Ejder Süvari Giysisi +6
+20257	Ejder Süvari Giysisi +7
+20258	Ejder Süvari Giysisi +8
+20259	Ejder Süvari Giysisi +9
+20500	Kemik Plaka Zýrh +0
+20501	Kemik Plaka Zýrh +1
+20502	Kemik Plaka Zýrh +2
+20503	Kemik Plaka Zýrh +3
+20504	Kemik Plaka Zýrh +4
+20505	Kemik Plaka Zýrh +5
+20506	Kemik Plaka Zýrh +6
+20507	Kemik Plaka Zýrh +7
+20508	Kemik Plaka Zýrh +8
+20509	Kemik Plaka Zýrh +9
+20750	Altýn Giysi +0
+20751	Altýn Giysi +1
+20752	Altýn Giysi +2
+20753	Altýn Giysi +3
+20754	Altýn Giysi +4
+20755	Altýn Giysi +5
+20756	Altýn Giysi +6
+20757	Altýn Giysi +7
+20758	Altýn Giysi +8
+20759	Altýn Giysi +9
+20760	Kutup Iþýðý Zýrhý+0
+20761	Kutup Iþýðý Zýrhý+1
+20762	Kutup Iþýðý Zýrhý+2
+20763	Kutup Iþýðý Zýrhý+3
+20764	Kutup Iþýðý Zýrhý+4
+20765	Kutup Iþýðý Zýrhý+5
+20766	Kutup Iþýðý Zýrhý+6
+20767	Kutup Iþýðý Zýrhý+7
+20768	Kutup Iþýðý Zýrhý+8
+20769	Kutup Iþýðý Zýrhý+9
+20770	Suikast Kýyafeti+0
+20771	Suikast Kýyafeti+1
+20772	Suikast Kýyafeti+2
+20773	Suikast Kýyafeti+3
+20774	Suikast Kýyafeti+4
+20775	Suikast Kýyafeti+5
+20776	Suikast Kýyafeti+6
+20777	Suikast Kýyafeti+7
+20778	Suikast Kýyafeti+8
+20779	Suikast Kýyafeti+9
+20780	Þeytan Pençesi Zýrhý+0
+20781	Þeytan Pençesi Zýrhý+1
+20782	Þeytan Pençesi Zýrhý+2
+20783	Þeytan Pençesi Zýrhý+3
+20784	Þeytan Pençesi Zýrhý+4
+20785	Þeytan Pençesi Zýrhý+5
+20786	Þeytan Pençesi Zýrhý+6
+20787	Þeytan Pençesi Zýrhý+7
+20788	Þeytan Pençesi Zýrhý+8
+20789	Þeytan Pençesi Zýrhý+9
+20790	Ýnanç Kýyafeti+0
+20791	Ýnanç Kýyafeti+1
+20792	Ýnanç Kýyafeti+2
+20793	Ýnanç Kýyafeti+3
+20794	Ýnanç Kýyafeti+4
+20795	Ýnanç Kýyafeti+5
+20796	Ýnanç Kýyafeti+6
+20797	Ýnanç Kýyafeti+7
+20798	Ýnanç Kýyafeti+8
+20799	Ýnanç Kýyafeti+9
+20810	Magma Koru Zýrhý+0
+20811	Magma Koru Zýrhý+1
+20812	Magma Koru Zýrhý+2
+20813	Magma Koru Zýrhý+3
+20814	Magma Koru Zýrhý+4
+20815	Magma Koru Zýrhý+5
+20816	Magma Koru Zýrhý+6
+20817	Magma Koru Zýrhý+7
+20818	Magma Koru Zýrhý+8
+20819	Magma Koru Zýrhý+9
+20820	Kanlý Ay Kýyafeti+0
+20821	Kanlý Ay Kýyafeti+1
+20822	Kanlý Ay Kýyafeti+2
+20823	Kanlý Ay Kýyafeti+3
+20824	Kanlý Ay Kýyafeti+4
+20825	Kanlý Ay Kýyafeti+5
+20826	Kanlý Ay Kýyafeti+6
+20827	Kanlý Ay Kýyafeti+7
+20828	Kanlý Ay Kýyafeti+8
+20829	Kanlý Ay Kýyafeti+9
+20830	Cehennem Koþucu Zýrhý+0
+20831	Cehennem Koþucu Zýrhý+1
+20832	Cehennem Koþucu Zýrhý+2
+20833	Cehennem Koþucu Zýrhý+3
+20834	Cehennem Koþucu Zýrhý+4
+20835	Cehennem Koþucu Zýrhý+5
+20836	Cehennem Koþucu Zýrhý+6
+20837	Cehennem Koþucu Zýrhý+7
+20838	Cehennem Koþucu Zýrhý+8
+20839	Cehennem Koþucu Zýrhý+9
+20840	Ateþ Kýyafeti+0
+20841	Ateþ Kýyafeti+1
+20842	Ateþ Kýyafeti+2
+20843	Ateþ Kýyafeti+3
+20844	Ateþ Kýyafeti+4
+20845	Ateþ Kýyafeti+5
+20846	Ateþ Kýyafeti+6
+20847	Ateþ Kýyafeti+7
+20848	Ateþ Kýyafeti+8
+20849	Ateþ Kýyafeti+9
+20860	Balina Kemiði Zýrhý+0
+20861	Balina Kemiði Zýrhý+1
+20862	Balina Kemiði Zýrhý+2
+20863	Balina Kemiði Zýrhý+3
+20864	Balina Kemiði Zýrhý+4
+20865	Balina Kemiði Zýrhý+5
+20866	Balina Kemiði Zýrhý+6
+20867	Balina Kemiði Zýrhý+7
+20868	Balina Kemiði Zýrhý+8
+20869	Balina Kemiði Zýrhý+9
+20870	Dönüþüm Kýyafeti+0
+20871	Dönüþüm Kýyafeti+1
+20872	Dönüþüm Kýyafeti+2
+20873	Dönüþüm Kýyafeti+3
+20874	Dönüþüm Kýyafeti+4
+20875	Dönüþüm Kýyafeti+5
+20876	Dönüþüm Kýyafeti+6
+20877	Dönüþüm Kýyafeti+7
+20878	Dönüþüm Kýyafeti+8
+20879	Dönüþüm Kýyafeti+9
+20880	Yanýltýcý Iþýk Zýrhý+0
+20881	Yanýltýcý Iþýk Zýrhý+1
+20882	Yanýltýcý Iþýk Zýrhý+2
+20883	Yanýltýcý Iþýk Zýrhý+3
+20884	Yanýltýcý Iþýk Zýrhý+4
+20885	Yanýltýcý Iþýk Zýrhý+5
+20886	Yanýltýcý Iþýk Zýrhý+6
+20887	Yanýltýcý Iþýk Zýrhý+7
+20888	Yanýltýcý Iþýk Zýrhý+8
+20889	Yanýltýcý Iþýk Zýrhý+9
+20890	Ahenk Kýyafeti+0
+20891	Ahenk Kýyafeti+1
+20892	Ahenk Kýyafeti+2
+20893	Ahenk Kýyafeti+3
+20894	Ahenk Kýyafeti+4
+20895	Ahenk Kýyafeti+5
+20896	Ahenk Kýyafeti+6
+20897	Ahenk Kýyafeti+7
+20898	Ahenk Kýyafeti+8
+20899	Ahenk Kýyafeti+9
+20910	Kül Yaðmuru Zýrhý+0
+20911	Kül Yaðmuru Zýrhý+1
+20912	Kül Yaðmuru Zýrhý+2
+20913	Kül Yaðmuru Zýrhý+3
+20914	Kül Yaðmuru Zýrhý+4
+20915	Kül Yaðmuru Zýrhý+5
+20916	Kül Yaðmuru Zýrhý+6
+20917	Kül Yaðmuru Zýrhý+7
+20918	Kül Yaðmuru Zýrhý+8
+20919	Kül Yaðmuru Zýrhý+9
+20920	Ölüm Gecesi Kýyafeti+0
+20921	Ölüm Gecesi Kýyafeti+1
+20922	Ölüm Gecesi Kýyafeti+2
+20923	Ölüm Gecesi Kýyafeti+3
+20924	Ölüm Gecesi Kýyafeti+4
+20925	Ölüm Gecesi Kýyafeti+5
+20926	Ölüm Gecesi Kýyafeti+6
+20927	Ölüm Gecesi Kýyafeti+7
+20928	Ölüm Gecesi Kýyafeti+8
+20929	Ölüm Gecesi Kýyafeti+9
+20930	Kara Ateþ Zýrhý+0
+20931	Kara Ateþ Zýrhý+1
+20932	Kara Ateþ Zýrhý+2
+20933	Kara Ateþ Zýrhý+3
+20934	Kara Ateþ Zýrhý+4
+20935	Kara Ateþ Zýrhý+5
+20936	Kara Ateþ Zýrhý+6
+20937	Kara Ateþ Zýrhý+7
+20938	Kara Ateþ Zýrhý+8
+20939	Kara Ateþ Zýrhý+9
+20940	Ay Kýyafeti+0
+20941	Ay Kýyafeti+1
+20942	Ay Kýyafeti+2
+20943	Ay Kýyafeti+3
+20944	Ay Kýyafeti+4
+20945	Ay Kýyafeti+5
+20946	Ay Kýyafeti+6
+20947	Ay Kýyafeti+7
+20948	Ay Kýyafeti+8
+20949	Ay Kýyafeti+9
+21210	Kara ejderha zýrhý+0
+21211	Kara ejderha zýrhý+1
+21212	Kara ejderha zýrhý+2
+21213	Kara ejderha zýrhý+3
+21214	Kara ejderha zýrhý+4
+21215	Kara ejderha zýrhý+5
+21216	Kara ejderha zýrhý+6
+21217	Kara ejderha zýrhý+7
+21218	Kara ejderha zýrhý+8
+21219	Kara ejderha zýrhý+9
+21220	Kara ejderha zýrhý+10
+21221	Kara ejderha zýrhý+11
+21222	Kara ejderha zýrhý+12
+21223	Kara ejderha zýrhý+13
+21224	Kara ejderha zýrhý+14
+21225	Kara ejderha zýrhý+15
+21230	Rüzgar ejderha. zýrhý+0
+21231	Rüzgar ejderha. zýrhý+1
+21232	Rüzgar ejderha. zýrhý+2
+21233	Rüzgar ejderha. zýrhý+3
+21234	Rüzgar ejderha. zýrhý+4
+21235	Rüzgar ejderha. zýrhý+5
+21236	Rüzgar ejderha. zýrhý+6
+21237	Rüzgar ejderha. zýrhý+7
+21238	Rüzgar ejderha. zýrhý+8
+21239	Rüzgar ejderha. zýrhý+9
+21240	Rüzgar ejderha. zýrhý+10
+21241	Rüzgar ejderha. zýrhý+11
+21242	Rüzgar ejderha. zýrhý+12
+21243	Rüzgar ejderha. zýrhý+13
+21244	Rüzgar ejderha. zýrhý+14
+21245	Rüzgar ejderha. zýrhý+15
+21250	Büyü ejderhasý zýrhý+0
+21251	Büyü ejderhasý zýrhý+1
+21252	Büyü ejderhasý zýrhý+2
+21253	Büyü ejderhasý zýrhý+3
+21254	Büyü ejderhasý zýrhý+4
+21255	Büyü ejderhasý zýrhý+5
+21256	Büyü ejderhasý zýrhý+6
+21257	Büyü ejderhasý zýrhý+7
+21258	Büyü ejderhasý zýrhý+8
+21259	Büyü ejderhasý zýrhý+9
+21260	Büyü ejderhasý zýrhý+10
+21261	Büyü ejderhasý zýrhý+11
+21262	Büyü ejderhasý zýrhý+12
+21263	Büyü ejderhasý zýrhý+13
+21264	Büyü ejderhasý zýrhý+14
+21265	Büyü ejderhasý zýrhý+15
+21270	Tanrýlar ejder. zýrhý+0
+21271	Tanrýlar ejder. zýrhý+1
+21272	Tanrýlar ejder. zýrhý+2
+21273	Tanrýlar ejder. zýrhý+3
+21274	Tanrýlar ejder. zýrhý+4
+21275	Tanrýlar ejder. zýrhý+5
+21276	Tanrýlar ejder. zýrhý+6
+21277	Tanrýlar ejder. zýrhý+7
+21278	Tanrýlar ejder. zýrhý+8
+21279	Tanrýlar ejder. zýrhý+9
+21280	Tanrýlar ejder. zýrhý+10
+21281	Tanrýlar ejder. zýrhý+11
+21282	Tanrýlar ejder. zýrhý+12
+21283	Tanrýlar ejder. zýrhý+13
+21284	Tanrýlar ejder. zýrhý+14
+21285	Tanrýlar ejder. zýrhý+15
+21310	Yýlan mantosu+0
+21311	Yýlan mantosu+1
+21312	Yýlan mantosu+2
+21313	Yýlan mantosu+3
+21314	Yýlan mantosu+4
+21315	Yýlan mantosu+5
+21316	Yýlan mantosu+6
+21317	Yýlan mantosu+7
+21318	Yýlan mantosu+8
+21319	Yýlan mantosu+9
+21320	Yýlan mantosu+10
+21321	Yýlan mantosu+11
+21322	Yýlan mantosu+12
+21323	Yýlan mantosu+13
+21324	Yýlan mantosu+14
+21325	Yýlan mantosu+15
+21326	Yýlan mantosu (üretm.)
+21330	Yýlan yeleði+0
+21331	Yýlan yeleði+1
+21332	Yýlan yeleði+2
+21333	Yýlan yeleði+3
+21334	Yýlan yeleði+4
+21335	Yýlan yeleði+5
+21336	Yýlan yeleði+6
+21337	Yýlan yeleði+7
+21338	Yýlan yeleði+8
+21339	Yýlan yeleði+9
+21340	Yýlan yeleði+10
+21341	Yýlan yeleði+11
+21342	Yýlan yeleði+12
+21343	Yýlan yeleði+13
+21344	Yýlan yeleði+14
+21345	Yýlan yeleði+15
+21346	Yýlan yeleði
+21350	Kötü yýlan mantosu+0
+21351	Kötü yýlan mantosu+1
+21352	Kötü yýlan mantosu+2
+21353	Kötü yýlan mantosu+3
+21354	Kötü yýlan mantosu+4
+21355	Kötü yýlan mantosu+5
+21356	Kötü yýlan mantosu+6
+21357	Kötü yýlan mantosu+7
+21358	Kötü yýlan mantosu+8
+21359	Kötü yýlan mantosu+9
+21360	Kötü yýlan mantosu+10
+21361	Kötü yýlan mantosu+11
+21362	Kötü yýlan mantosu+12
+21363	Kötü yýlan mantosu+13
+21364	Kötü yýlan mantosu+14
+21365	Kötü yýlan mantosu+15
+21366	K. Yýlan m. (üretm.)
+21370	Saf yýlan mantosu+0
+21371	Saf yýlan mantosu+1
+21372	Saf yýlan mantosu+2
+21373	Saf yýlan mantosu+3
+21374	Saf yýlan mantosu+4
+21375	Saf yýlan mantosu+5
+21376	Saf yýlan mantosu+6
+21377	Saf yýlan mantosu+7
+21378	Saf yýlan mantosu+8
+21379	Saf yýlan mantosu+9
+21380	Saf yýlan mantosu+10
+21381	Saf yýlan mantosu+11
+21382	Saf yýlan mantosu+12
+21383	Saf yýlan mantosu+13
+21384	Saf yýlan mantosu+14
+21385	Saf yýlan mantosu+15
+21386	S. Yýlan m. (üretm.)
+22000	Þehre Dönüþ Kaðýdý
+22001	Þehre Dönüþ Kaðýdý
+22010	Geri Dönüþ Kaðýdý
+22011	Geri Dönüþ Kaðýdý
+22020	Iþýnlanma Kaðýdý
+22030	Iþýnlanma Kaðýdý
+22040	Life Scroll
+22050	Incarnation Scroll
+25040	Kutsama Kaðýdý
+25041	Büyülü Metal
+25100	Zihin Taþý Kaðýdý
+27001	Kýrmýzý Ýksir(K)
+27002	Kýrmýzý Ýksir(O)
+27003	Kýrmýzý Ýksir(B)
+27004	Mavi Ýksir(K)
+27005	Mavi Ýksir(O)
+27006	Mavi Ýksir(B)
+27051	Kýrmýzý iksir (K)
+27052	Mavi Ýksir (K)
+27053	Yeþil Ýksir (K)
+27054	Mor Ýksir (K)
+27100	Yeþil Ýksir(K)
+27101	Yeþil Ýksir(O)
+27102	Yeþil Ýksir(B)
+27103	Mor Ýksir(K)
+27104	Mor Ýksir(O)
+27105	Mor Ýksir(B)
+27110	Yeþil Ýksir(K)
+27111	Yeþil Ýksir(O)
+27112	Yeþil Ýksir(B)
+27113	Mor Ýksir(K)
+27114	Mor Ýksir(O)
+27115	Mor Ýksir(B)
+27116	Pembe Ýksir(K)
+27117	Pembe Ýksir(O)
+27118	Pembe Ýksir(B)
+27119	Gök Mavisi Ýksir(K)
+27120	Gök Mavisi Ýksir(O)
+27121	Gök Mavisi Ýksir(B)
+27400	Olta+1
+27410	Olta+2
+27420	Olta+3
+27430	Olta+4
+27440	Olta+5
+27450	Olta+6
+27460	Olta+7
+27470	Olta+8
+27480	Olta+9
+27490	Olta+10
+27500	Olta+11
+27510	Olta+12
+27520	Olta+13
+27530	Olta+14
+27540	Olta+15
+27550	Olta+16
+27560	Olta+17
+27570	Olta+18
+27580	Olta+19
+27590	Olta+20
+27600	Kamp Ateþi
+27610	Balýkçýlýk Küresi
+27620	Balýkçýlýk Sýrlarý
+27799	Kýlçýk
+27800	Hamur
+27801	Solucan
+27802	Minik Balýk
+27803	Sudak Balýðý
+27804	Ringa Balýðý
+27805	Büyük Sudak Balýðý
+27806	Sazan
+27807	Som Balýðý
+27808	Ot Sazaný
+27809	Dere Alabalýðý
+27810	Zargana
+27811	Gökkuþaðý Alabalýðý
+27812	Nehir Alabalýðý
+27813	Hamsi
+27814	Levrek
+27815	Tekir Balýðý
+27816	Yayýn Balýðý
+27817	Çopra Balýðý
+27818	Lüfer Balýðý
+27819	Sevimli Balýk
+27820	Palamut Balýðý
+27821	Kadife Balýðý
+27822	Aynalý Sazan
+27823	Altýn Sudak Balýðý
+27833	Ölü Sudak Balýðý
+27834	Ölü Ringa Balýðý
+27835	Ölü Büyük Sudak Balýðý
+27836	Ölü Sazan
+27837	Ölü Som Balýðý
+27838	Ölü Ot Sazaný
+27839	Ölü Dere Alabalýðý
+27840	Ölü Zargana
+27841	Ölü Gökkuþaðý Alabalýðý
+27842	Ölü Nehir Alabalýðý
+27843	Ölü Hamsi
+27844	Ölü Levrek
+27845	Ölü Tekir Balýðý
+27846	Ölü Yayýn Balýðý
+27847	Ölü Çopra Balýðý
+27848	Ölü Lüfer Balýðý
+27849	Ölü Sevimli Balýk
+27850	Ölü Palamut Balýðý
+27851	Ölü Kadife Balýðý
+27852	Ölü Aynalý Sazan
+27853	Ölü Altýn Sudak Balýðý
+27863	Izgara Sudak Balýðý
+27864	Izgara Ringa Balýðý
+27865	Izgara Büyük Sudak
+27866	Izgara Sazan
+27867	Izgara Som Balýðý
+27868	Izgara Ot Sazaný
+27869	Izgara Dere Alabalýðý
+27870	Izgara Zargana
+27871	Izg. Gökkuþaðý Alabalýðý
+27872	Izgara Nehir Alabalýðý
+27873	Izgara Hamsi
+27874	Izgara Levrek
+27875	Izgara Tekir Balýðý
+27876	Izgara Yayýn Balýðý
+27877	Izgara Çopra Balýðý
+27878	Izgara Lüfer Balýðý
+27879	Izgara sevimli balýk
+27880	Izgara palamut balýðý
+27881	Izgara kadife balýðý
+27882	Izgara aynalý sazan
+27883	Izgara altýn sudak
+27987	Ýstiridye
+27988	Define Haritasý
+27989	Metin Taþý Dedektörü
+27990	Taþ Parçasý
+27991	Su Taþý
+27992	Beyaz Ýnci
+27993	Mavi Ýnci
+27994	Kankýrmýzý Ýnci
+27995	Boþ Þiþe
+27996	Zehir Þiþesi
+27997	Canlýlýk Mermeri
+27998	Simya Çantasý
+27999	Zihin Taþý Kesesi
+28030	Kavrama Taþý+0
+28031	Öldürücü Darbe Taþý+0
+28032	Soðutma Taþý+0
+28033	Savaþcýdan Koruyan Taþ+0
+28034	Ninjadan Koruyan Taþ+0
+28035	Suradan KoruyanTaþ+0
+28036	Þamandan Koruyan Taþ+0
+28037	Canavardan Koruyan Taþ+0
+28038	Savuþturma Taþý+0
+28039	Kurnazlýk Taþý+0
+28040	Sihir Taþý+0
+28041	Yaþam Taþý +0
+28042	Savunma Taþý+0
+28043	Hýz Taþý+0
+28130	Kavrama Taþý+1
+28131	Öldürücü Darbe Taþý+1
+28132	Soðutma Taþý+1
+28133	Savaþcýdan Koruyan Taþ+1
+28134	Ninjadan Koruyan Taþ+1
+28135	Suradan KoruyanTaþ+1
+28136	Þamandan Koruyan Taþ+1
+28137	Canavardan Koruyan Taþ+1
+28138	Savuþturma Taþý+1
+28139	Kurnazlýk Taþý+1
+28140	Sihir Taþý+1
+28141	Yaþam Taþý +1
+28142	Savunma Taþý+1
+28143	Hýz Taþý+1
+28230	Kavrama Taþý+2
+28231	Öldürücü Darbe Taþý+2
+28232	Soðutma Taþý+2
+28233	Savaþcýdan Koruyan Taþ+2
+28234	Ninjadan Koruyan Taþ+2
+28235	Suradan KoruyanTaþ+2
+28236	Þamandan Koruyan Taþ+2
+28237	Canavardan Koruyan Taþ+2
+28238	Savuþturma Taþý+2
+28239	Kurnazlýk Taþý+2
+28240	Sihir Taþý+2
+28241	Yaþam Taþý +2
+28242	Savunma Taþý+2
+28243	Hýz Taþý+2
+28330	Kavrama Taþý+3
+28331	Öldürücü Darbe Taþý+3
+28332	Soðutma Taþý+3
+28333	Savaþcýdan Koruyan Taþ+3
+28334	Ninjadan Koruyan Taþ+3
+28335	Suradan KoruyanTaþ+3
+28336	Þamandan Koruyan Taþ+3
+28337	Canavardan Koruyan Taþ+3
+28338	Savuþturma Taþý+3
+28339	Kurnazlýk Taþý+3
+28340	Sihir Taþý+3
+28341	Yaþam Taþý +3
+28342	Savunma Taþý+3
+28343	Hýz Taþý+3
+28430	Kavrama Taþý+4
+28431	Öldürücü Darbe Taþý+4
+28432	Soðutma Taþý+4
+28433	Savaþcýdan Koruyan Taþ+4
+28434	Ninjadan Koruyan Taþ+4
+28435	Suradan KoruyanTaþ+4
+28436	Þamandan Koruyan Taþ+4
+28437	Canavardan Koruyan Taþ+4
+28438	Savuþturma Taþý+4
+28439	Kurnazlýk Taþý+4
+28440	Sihir Taþý+4
+28441	Yaþam Taþý +4
+28442	Savunma Taþý+4
+28443	Hýz Taþý+4
+28960	Kýrýlmýþ Taþ Parçasý
+29101	Kazma+0
+29102	Kazma+1
+29103	Kazma+2
+29104	Kazma+3
+29105	Kazma+4
+29106	Kazma+5
+29107	Kazma+6
+29108	Kazma+7
+29109	Kazma+8
+29110	Kazma+9
+30000	Arpa
+30001	Mektup
+30002	Sosis Þiþ
+30003	Domuz Burnu
+30004	Yaban Domuzu Diþi
+30005	Kýrýk Zýrh Parçasý
+30006	Ork Diþi
+30007	Ork Muskasý
+30008	Baþlangýç Elkitabý
+30009	Bilinmeyen Ýlaç
+30010	Ayý Safrasý
+30011	Çile
+30012	Þarap Þiþesi
+30013	Likör Kabý
+30014	Yeti Postu
+30015	Þeytan Hatýrasý
+30016	Þeytan Mücevheri
+30017	Süslü Saç Tokasý
+30018	K. Domuzkuyruðu Kurdele
+30019	Alev Yelesi
+30020	Þeftali Tohumu
+30021	Deðerli Taþ Parçasý
+30022	Yýlan Kuyruðu
+30023	Beyaz Kaplan Postu
+30024	At Kuyruðu
+30025	Örümceðin Zehir Kesesi
+30026	Kurt Baðýrsaðý
+30027	Kurt Postu
+30028	Kurt Pençesi
+30029	Kurt Karaciðeri
+30030	Paslý Býçak
+30031	Süs Eþyasý
+30032	Yýpranmýþ Siyah Üniforma
+30033	Kýrýk Porselen
+30034	B. Domuzkuyruðu Kurdele
+30035	Yüz Kremi
+30036	Gizemli Bitki
+30037	Kaplan Pençesi
+30038	Kaplan Postu
+30039	Sargý Bezi
+30040	Yaprak
+30041	Shiriken
+30042	Saldýrgan kaplanýn diþi
+30043	Fasulye
+30044	Kil
+30045	Akrep Ýðnesi
+30046	Akrep Kuyruðu
+30047	Lanet Kitabý
+30048	Buz Parçasý
+30049	Katil Buzbalina Boynuzu
+30050	Buz Topu
+30051	Bilinmeyen Týlsým
+30052	Bayrak
+30053	Ayý Ayak Derisi
+30054	Nikah Yüzüðü
+30055	Akrep Kýskacý
+30056	Örümcek Aðý
+30057	Örümcek Gözleri
+30058	Örümcek Yumurta Kesesi
+30059	Örümcek Bacaklarý
+30060	Kurbaða Dili
+30061	Kurbaða Bacaðý
+30062	Ýlaç Kasesi
+30063	Deri Ýlacý
+30064	Sivri Taþ
+30065	Zil
+30066	Acý Biber
+30067	Yýlan Derisi
+30068	Tofu Bifteði
+30069	Kurt Pençesi+
+30070	Kurt Postu+
+30071	Ayý Safrasý+
+30072	Ayý Ayak Derisi+
+30073	B. Domuzkuyruðu Kurdele+
+30074	Siyah Üniforma+
+30075	Shiriken+
+30076	Ork Muskasý+
+30077	Ork Diþi+
+30078	Baþlangýç El Kitabý+
+30079	Bilinmeyen Týlsým+
+30080	Lanet Kitabý+
+30081	Akrep Kuyruðu+
+30082	Yýlan Kuyruðu+
+30083	Bilinmeyen Ýlaç+
+30084	Bilinmeyen Týlsým+
+30085	Sargý Bezi+
+30086	Þeytan Hatýrasý+
+30087	Þeytan Mücevheri+
+30088	Buz Parçasý+
+30089	Yeti Postu+
+30090	Buz Küresi+
+30091	Savaþçý Sembolü
+30092	Yabani Ganimeti
+30093	Uðurlu Kese
+30094	Uðurlu Kese
+30095	Uðurlu Kese
+30096	Uðurlu Kese
+30097	Maðaza Þanslý Kesesi
+30098	Uðurlu Kese
+30099	Uðurlu Kese
+30100	Uðurlu Kese
+30101	Ariyoung'un Nikah Yüzüðü
+30102	Altýn Balta
+30103	Altýn Ork Diþi
+30104	Çöl Örümceði Aðý
+30105	Pinti Akrep Kuyruðu
+30106	Yu-Rang Ýçin Ýlaç
+30107	Ork Azýdiþi
+30108	Seramik Süsleme
+30109	Çöl Örümceði Aðý
+30110	Huahn-So`dan Mektup
+30111	Pinti Akrep Kuyruðu
+30112	Yýlan Balýðý
+30113	Baþlangýç El Kitabý
+30114	Veba
+30115	Veba Tedavisi
+30116	Kurbaða Arka Bacaklarý
+30117	Mektup
+30118	Þeytanýn Mücevher Kutusu
+30119	Zil
+30120	Harita Parçasý
+30121	Harita Parçasý
+30122	Harita Parçasý
+30123	Harita Parçasý
+30124	Harita Parçasý
+30125	Harita Parçasý
+30126	Harita Parçasý
+30127	Harita Parçasý
+30128	Harita Parçasý
+30129	Binicinin Görevleri
+30130	Boþ Þiþe
+30131	Demircinin Mektubu
+30132	Urielin Kitabý
+30133	Çiçek Ayakkabýlar
+30134	Urielin Paketi
+30135	Ariyoungun Mektubu
+30136	Aþýrý Süslü Yay
+30137	Maymun Kaný
+30138	Çöl Kumu
+30139	Unggyinin Azý Diþi
+30140	Ýplik
+30141	Mücevher Parçasý
+30142	Mektup
+30143	Þifalý Bitkiler
+30144	Kaplan Karaciðeri
+30145	Balsonun Ýlacý
+30146	Buz Parçasý
+30147	Tapýnak Tarihçesi
+30148	Tapýnak Atkýsý
+30149	Þuruplu Dondurma
+30150	Günlük Sayfasý
+30151	Kurt Postu
+30152	Ýlaç
+30153	Çiçekler
+30154	Tapýnaðýn Gizli Kitabý
+30155	Mirinenin Dini Kolyesi
+30156	Tapýnaðýn Gizli Kitabý
+30157	Ok Ucu
+30158	Yaþ Pasta
+30159	Kýyafet
+30160	Bildiri
+30161	Koca'ya ait Mýzrak
+30162	Örümceðin Gözü
+30163	Pamuk-Yün Bez
+30164	Lanet Kitabýnýn Çevirisi
+30165	Zelkova Dalý
+30166	Tugyis Tabelasý
+30167	Kýr. Hayalet Aðacý Dalý
+30168	Liderlerin Notlarý
+30169	Kankýrmýzý Çiçek
+30170	Portakal Rengi Çiçek
+30171	Kokulu Sarý Çiçek
+30172	Asil Çiçek Demeti
+30173	Mu-Rang Postu
+30174	Ayý Pençesi
+30175	Elmas-özlü Balina Mýzrað
+30176	Iþýltýlý Kaplan Postu
+30177	Misk Yaðý
+30178	Oyma Taþ
+30179	Kývrýk Anahtar
+30180	Ejderha Tanrý Týlsýmý
+30181	Sayfa
+30182	Efsanevi Günlük
+30183	Karamsar Ahþap Maske
+30184	Efsunlu Küller
+30185	Siyah Buz
+30186	Fosil Gözyaþý
+30187	Kan Damlasý
+30188	Obsidyen
+30189	Tanrýça Gözyaþlarý
+30190	Kan Taþý
+30191	Kan Taþý
+30192	Süt Þerbeti
+30193	Parmak Kemikleri
+30194	Ork Topuzu
+30195	Kuvars Kumu
+30196	Þeytan Külü
+30197	Büyülü Tohum
+30198	Su Kristali
+30199	Mavi Kristal
+30201	Ýntikam Yüzüðü
+30202	Dakananýn Kulaðý
+30203	Kristal
+30204	Kristal Parçasý
+30205	Yapý Malzemesi
+30210	Deðerli Taþ Parçasý
+30211	Deðerli Taþ Parçasý
+30212	Deðerli Taþ Parçasý
+30213	Deðerli Taþ Parçasý
+30214	Deðerli Taþ Parçasý
+30215	Deðerli Taþ Parçasý
+30216	Deðerli Taþ Parçasý
+30217	Deðerli Taþ Parçasý
+30218	Deðerli Taþ Parçasý
+30219	Deðerli Taþ Parçasý
+30220	Jinunggynin Ruh Taþý
+30221	Tapýnaðýn Ruh Taþý
+30222	Sagyinin Ruh Taþý
+30223	Aurtumryunun Ruh Taþý
+30224	Gyimokun Ruh Taþý
+30225	Tugyinin Ruh Taþý
+30226	Orman Ruhu Taþý
+30227	Liderlerin Ruh Taþý
+30228	Beran-Setaou Ruh Taþý
+30251	Kem Göz Mücevheri
+30252	Bilgelik Mücevheri
+30253	Sadakat Mücevheri
+30254	Zümrüt Parçasý
+30265	Madalya Parçasý (1)
+30266	Madalya Parçasý (2)
+30267	Madalya Parçasý (3)
+30268	Madalya Parçasý (4)
+30269	Madalya Parçasý (5)
+30270	Ejderha Taþý Parçasý
+30300	Bilinmeyen Eski Sandýk
+30301	Sa-Gui Kalesi Haritasý
+30302	Zin-Sa-Gui Kale Haritasý
+30303	Bong-In Anahtar
+30304	Zin-Bong-In Anahtar
+30311	Ruh Kristali Anahtarý
+30312	Surat Totemi
+30315	Simit
+30316	Baðýþ Tabaðý
+30317	Ýftar
+30318	Bereket Meyvesi
+30319	Küçülen Kafa
+30320	Küçülen Kafa
+30321	Cadýlar Bayramý Kabaðý
+30322	Büyü Asasý
+30323	J. Pumpkin Maskesi Kartý
+30324	Arachnida Anahtarý
+30325	Arachnida Anahtarý
+30326	Kraliçe Örümcek Zehri
+30327	Arachnida Flütü
+30329	Altýn Diþli Çark
+30330	Maat Taþý
+30331	Buz Anahtarý
+30332	Kuzey Yýldýzý
+30333	Buzçiçeði Anahtarý
+30500	Yakut Oyma Býçaðý
+30501	Altýn Kenet
+30502	Yakut Ýþlemeli
+30503	Ametist Oyma Býçaðý
+30504	Gümüþ Kenet
+30505	Zümrüt Ýþlemeli
+30506	Safir Oyma Býçaðý
+30507	Bronz Kenet
+30508	Safir Ýþlemesi
+30509	Mavi Ejderha Çeliði
+30510	Fiyakalý Apolet
+30511	Kýrmýzý Kumaþ
+30512	Kýrmýzý Ejderha Çeliði
+30513	Kýymetli Apolet
+30514	Eflatun Kumaþ
+30515	Erguvani Ejderha Çeliði
+30516	Antika Apolet
+30517	Altýn Kumaþ
+30518	Altýn Ýplik
+30519	Altýn Kanca
+30520	Altýn Kenet
+30521	Halka Öðesi
+30522	Zincir Halkalar
+30523	Mücevher Öðesi
+30524	Alev Taþý
+30525	Buz Alevi Taþý
+30526	Altýn Çift Yüzük
+30527	Gümüþ Çift Yüzük
+30528	Bronz Çift Yüzük
+30529	Ahþap Çift Yüzük
+30530	Mavi Çift Yüzük
+30531	Yeþil Çift Yüzük
+30532	Kýrmýzý Çift Yüzük
+30533	Mor Çift Yüzük
+30534	Ýþlenmiþ Altýn Yüzük
+30535	Ýþlenmiþ Gümüþ Yüzük
+30536	Ýþlenmiþ Bronz Yüzük
+30537	Ýþlenmiþ Ahþap Yüzük
+30538	Yoruma Bak
+30539	Yoruma Bak
+30540	Yoruma Bak
+30541	Yoruma Bak
+30542	Basit Gümüþ Yüzük
+30543	Basit Bronz Yüzük
+30544	Basit Ahþap Yüzük
+30545	Basit Safir Yüzük
+30546	Basit Zümrüt Yüzük
+30547	Basit Yakut Yüzük
+30548	Basit Kemer (Sarý)
+30549	Basit Kemer (Kahverengi)
+30550	Mavi Kemer
+30551	Basit Kemer (Siyah)
+30552	Basit Kemer (Mor)
+30553	Basit Kemer (Yeþil)
+30554	Parlak Kum (Turuncu)
+30555	Parlak Kum (Siyah)
+30556	Parlak Kum (Mavi)
+30557	Parlak Kum (Yeþil)
+30558	Parlak Kýrmýzý Ýplik
+30559	Parlak Kum (Mor)
+30560	Yoruma Bak
+30561	Yoruma Bak
+30562	Yoruma Bak
+30563	Yoruma Bak
+30564	Yoruma Bak
+30565	Yoruma Bak
+30566	Yoruma Bak
+30567	Yoruma Bak
+30568	Yoruma Bak
+30569	Yoruma Bak
+30570	Yoruma Bak
+30571	Yoruma Bak
+30572	Yoruma Bak
+30573	Yoruma Bak
+30574	Yoruma Bak
+30575	Yoruma Bak
+30576	Yoruma Bak
+30577	Yoruma Bak
+30578	Yoruma Bak
+30579	Yoruma Bak
+30580	Düz Gümüþ Taký
+30581	Düz Bronz Taký
+30582	Düz Ahþap Taký
+30583	Düz Taký (Mavi)
+30584	Düz Taký (Yeþil)
+30585	Düz Taký (Kýrmýzý)
+30586	Düz Taký (Mor)
+30600	Kesim Örneði
+30601	Zýrh Planý
+30602	mavi boya
+30603	kýrmýzý boya
+30604	gri boya
+30605	Altýn Plakalar
+30606	Gümüþ Plakalar
+30607	Bakýr Plakalar
+30608	Çelik Plakalar
+30609	Tunç Plakalar
+30610	Mitril
+30611	Aðýr Kemerler
+30612	Saðlam Ýpler
+30613	Orman Perisi Taþý
+30614	siyah boya
+30615	beyaz boya
+30616	Titandiyoksit
+30617	Akik
+30618	Ay Taþý
+30619	altýn metalik boya
+30620	Kýrmýzý Ejderha Boynuzu
+30621	Kýrmýzý Ejderha Pulu
+30622	Zýrh Planý: Kask
+30623	Hakikat Kitabý
+30624	Hakikat Ruhu
+30625	Padparadscha
+30626	Kyanit
+30627	Tanrýlarýn Meyvesi
+30628	Tanrý Çiçeði
+30629	Tanrýlarýn Özütü
+31001	Yazýt Kopyasý
+31002	Eski Belge
+31003	Panzehir
+31004	Kutsanmýþ Aðaç Reçinesi
+31005	Mavi Kristal Esansý
+31006	Kýrmýzý Cehennem Kuvarsý
+31007	Volkan Topraðý
+31008	Gökyüzü'nün Gözyaþlarý
+31009	Gnoll Mektubu
+31010	Kýzýlhýrsýz Mektubu
+31011	NoNAme
+31012	NoNAme
+31013	Kaðýt
+31014	NoNAme
+31015	Kaptan Kanca'nýn Mektubu
+31016	Lee Chung'un Mektubu
+31017	Mühürlü Mektup
+31018	Kabuk Yazý
+31019	Kabuk Tozu
+31020	Kaya Çiçeði Kökü
+31021	NoNAme
+31022	Oin Pulu
+31023	NoNAme
+31024	Mantikor Derisi
+31025	NoNAme
+31026	Kabuk Zýrhý
+31027	Ýnce Kum
+31028	Kiremit
+31029	Ýç Iþýk
+31030	Ýç Iþýk
+31031	Milenyum Esansý
+31032	Leviathan'ýn Ýncileri
+31033	Reis'in Pelerini
+31034	Devlerin Totemi
+31035	Siyah Taþ
+31036	Kara Altýn
+31037	Deri Kese
+31038	Kutsanmýþ Toprak
+31039	Para Kesesi
+31040	Altýn Klan
+31041	Fosil Toprak
+31042	Triton Mýzraðý
+31043	Lemur Levha
+31044	Gnoll Karabiberi
+31045	Gnoll Acý Tozu
+31046	Carapax Pençe Ayaðý
+31047	Yoruma Bak
+31048	Dilencinin Altýn Kesesi
+31049	Et Demeti
+31050	Týbbi Kese
+31051	Demir
+31052	Ruh Özü Sirkesi
+31053	Gnoll Kürk Yumak
+31054	Mantikor Deri Postu
+31055	Bilinmeyen Otlar
+31056	Siklop Týrnaðý
+31057	Dev Boynuzu
+31058	Ogre Toynaðý
+31059	Ölümsüzlerin Ruh Taþý
+31060	Triton Tütsüsü
+31061	Zelkova Dalý
+31062	Yüksek Kaliteli Demir
+31063	Pirinç Toplarý
+31064	Bilinç Otlarý
+31065	Mantikor Yaðý
+31066	Yeni Yaþam Otlarý
+31067	Yoruma Bak
+31068	Ejderha Kemikleri
+31069	Zelkova Öz Sývýsý
+31070	Ýblisköpek Kolyesi
+31071	Bilinmeyen Ýsimlik Plakasý
+31072	Þeytan Boynuzu
+31073	Altýn Avcý Tasmasý
+31074	Zýmbalý Tasma
+31075	Dikenli Tasma
+31076	Güneþ Bitkileri
+31077	Temel Taþý Tozu
+31078	Saf Lumen
+31079	Yak-Hwan'a Mektup
+31080	Alev Kralý'nýn Kaný
+31081	Kara Madde
+31082	Magma Çemberi
+31083	Samael'in Yüzüðü
+31084	Nimbus Tincture
+31085	Aðýr su
+31086	Mantar Hücresi
+31087	Ateþ ruhu alevi
+31088	Ateþ iksiri
+31089	Büyülü Buz Bloðu
+31090	Nemere'nin kalbi
+31091	Alev Kralýnýn Kaný
+31092	B. canavarý deri parçasý
+31136	Basit Kaos Taþý
+31137	Güzel kaos taþý
+31138	Görkemli kaos taþý
+35000	Þifalý Bitkiler+
+35001	Kaplan Karaciðeri+
+38050	Güç Sandýðý
+38051	Kral Kaplaný Kristali
+38052	Krallar Sandýðý
+38053	Sonsuz Kýþ Sandýðý
+38054	Çöl Fýrtýnasý Sandýðý
+38055	Yavrucuk Kutusu
+38056	Bayram Sandýðý
+38057	Kuzey Kutusu
+38100	Güçlü Atýþtýrmalýk(7 Gn)
+38101	Güçlü atýþtýrmalýk (15g)
+38102	Güçlü Atýþtýrmalk(30 Gn)
+39001	Büyülü Metal
+39002	Tecrübe yüzüðü (1 sa.)
+39003	Þeftali Çiçeði Þurubu
+39004	Kutsama Küresi
+39005	Büyülü Bakýr
+39006	Cesaret Pelerini
+39007	Demircinin El Kitabý
+39008	Kötü Ruh Kovma Kaðýdý
+39009	Beceri Sýfýrlama Kaðýdý
+39010	Saldýrý Ýksiri +10
+39011	Yaþam Kutsamasý
+39012	Sihir Kutsamasý
+39013	Ejderha Kutsamasý
+39014	Savaþ Kaðýdý
+39015	Demirci Taþý
+39016	Büyülü Demir Maden
+39017	Ejderha Tanrý Yaþamý
+39018	Ejderha Tanrý Saldýrýsý
+39019	Ejderha Tanrý Zekasý
+39020	Ejderha Tanrý Savunmasý
+39021	Ejderha Tanrý Desteði
+39022	Ejderha Parþömeni
+39023	Araþtýrmacýnýn Özütü
+39024	Kritik Ýsabet
+39025	Delici Ýsabet
+39026	Hýz Ýksiri
+39027	Taþ Sanatý Kitabý
+39028	Efsun Nesnesi
+39029	Arttýrma Kaðýdý
+39030	Münzevi Tavsiyesi
+39031	Soðutma Ýksiri
+39032	Yaþam Meyvesi
+39033	Düzeltme Kaðýdý
+39034	At Þekeri
+39035	Ýçgörü Küresi
+39036	Rüzgarýn Ayakkabýlarý
+39037	Güneþ Özütü (K)
+39038	Güneþ Özütü (O)
+39039	Güneþ Özütü (B)
+39040	Ay Özütü (K)
+39041	Ay Özütü (O)
+39042	Ay Özütü (B)
+39043	Geri Dönüþ Kaðýdý
+39120	Ünvan Muskasý
+39121	Ünvan Muskasý
+39122	Ünvan Muskasý
+39123	Ünvan Muskasý
+39124	Ünvan Muskasý
+39125	Ünvan Muskasý
+39126	Ünvan Muskasý
+39127	Ünvan Muskasý
+39128	Ünvan Muskasý
+39129	Ünvan Muskasý
+39130	Ünvan Muskasý
+39131	Ünvan Muskasý
+39132	Ünvan Muskasý
+39133	Ünvan Muskasý
+39134	Ünvan Muskasý
+39135	Ünvan Muskasý
+39136	Ünvan Muskasý
+39137	Ünvan Muskasý
+39138	Ünvan Muskasý
+39139	Ünvan Muskasý
+40001	Bilinmeyen Altýn Yüzük
+40002	Levi'nin Yüzüðü
+40003	Thorun Yüzüðü
+40004	Eekin Yüzüðü
+40005	Çýnlayan Zil
+40006	Yýrtýcý Taþýma Faturasý
+40007	Yýrtýcý Patrondan Mektup
+40008	Dolunay Kýlýcý (S)
+40009	Triton Kýlýcý (S)
+40010	Zehir Kýlýcý (S)
+40011	Aslan Kýlýcý (S)
+40012	Keskin Pala (S)
+40013	Kutsal Kýlýç (S)
+40014	Kýrmýzý Demir Pala (S)
+40015	Kin Kýlýcý (S)
+40016	Geyik Boynuzu Yay (S)
+40017	Havalý Çelik Yayý (S)
+40018	Büyük Þeytan Yayý (S)
+40019	Antika Çan (S)
+40020	Orkide Çan (S)
+40021	Ejder Çenesi Çan (S)
+40022	Siyah Yaprak Hançeri (S)
+40023	Þeytan Kanadý Çakram (S)
+40024	Ruhsuz Býçak (S)
+40025	Sonbahar Yelpazesi (S)
+40026	Ýblis Yelpazesi (S)
+40027	Sarý Ejderha Katleden (S)
+40101	Kesici Diþ Býçaðý
+40102	Kesici Diþ Hançeri
+40103	Kesici Diþ Yayý
+40104	Kesici Diþ Mýzraðý
+40105	Kesici Diþ Çaný
+40106	Kesici Diþ Yelpazesi
+40115	Þeker Çubuðu Býçaðý
+40116	Þeker Çubuðu Hançeri
+40117	Elf Yayý
+40118	Kurabiye Geniþ Mýzraðý
+40119	Þeker Çubuðu Çaný
+40120	Buz Yelpazesi
+40129	Aquarus býçaðý
+40130	Aquarus hançeri
+40131	Aquarus yayý
+40132	Aquarus glaive
+40133	Aquarus çaný
+40134	Aquarus yeplazesi
+40143	Dokkaebi Kýlýcý
+40144	Dokkaebi Hançeri
+40145	Dokkaebi Yayý
+40146	Dokkaebi Asa Kýlýcý
+40147	Dokkaebi Çaný
+40148	Dokkaebi Yelpazesi
+40178	Ata bekçisi kýlýcý
+40179	Ata bekçisi hançeri
+40180	Ata bekçisi oku
+40181	Ata bekçisi çift ellisi
+40182	Ata bekçisi çaný
+40183	Ata bekçisi yelpazesi
+41001	Tavþan Kostümü e (kahve)
+41002	Tavþancýk kostümü (kv)
+41003	Çöl Savaþçýsý (e)
+41004	Çöl Savaþçýsý (d)
+41005	Eskrim Giysisi (e)
+41006	Eskrim Giysisi (k)
+41007	Eskrim Giysisi GER (e)
+41008	Eskrim Giysisi GER (k)
+41009	Eskrim Giysisi TUR (e)
+41010	Eskrim Giysisi TUR (k)
+41011	Eskrim Giysisi BRA (e)
+41012	Eskrim Giysisi BRA (k)
+41013	Futbol Formasý (e)
+41014	Futbol Formasý (k)
+41015	Futbol Formasý GER (e)
+41016	Futbol Formasý GER (k)
+41017	Futbol Formasý TUR (e)
+41018	Futbol Formasý TUR (k)
+41019	Futbol Formasý BRA (e)
+41020	Futbol Formasý BRA (k)
+41021	Boksör Giysisi (e)
+41022	Boksör Giysisi (k)
+41023	Boks Giysisi GER (e)
+41024	Boks Giysisi GER (k)
+41025	Boks Giysisi TUR (e)
+41026	Boks Giysisi TUR (k)
+41027	Boks Giysisi BRA (e)
+41028	Boks Giysisi BRA (k)
+41029	Çöl Savaþçýsý (E, Bonus)
+41030	Çöl Savaþçýsý (K, Bonus)
+41031	Eskrim Giysisi (e)
+41032	Eskrim Giysisi (k)
+41033	Eskrim Giysisi GER (e)
+41034	Eskrim Giysisi GER (k)
+41035	Eskrim Giysisi TUR (e)
+41036	Eskrim Giysisi TUR (k)
+41037	Eskrim Giysisi BRA (e)
+41038	Eskrim Giysisi BRA (k)
+41039	Futbol Formasý (e)
+41040	Futbol Formasý (k)
+41041	Futbol Formasý GER (e)
+41042	Futbol Formasý GER (k)
+41043	Futbol Formasý TUR (e)
+41044	Futbol Formasý TUR (k)
+41045	Futbol Formasý BRA (e)
+41046	Futbol Formasý BRA (k)
+41047	Boksör Giysisi (e)
+41048	Boksör Giysisi (k)
+41049	Boks Giysisi GER (e)
+41050	Boks Giysisi GER (k)
+41051	Boks Giysisi TUR (e)
+41052	Boks Giysisi TUR (k)
+41053	Boks Giysisi BRA (e)
+41054	Boks Giysisi BRA (k)
+41055	Eskrim Giysisi FRA (e)
+41056	Eskrim Giysisi FRA (k)
+41057	Eskrim Giysisi ITA (e)
+41058	Eskrim Giysisi ITA (k)
+41059	Eskrim Giysisi POL (e)
+41060	Eskrim Giysisi POL (k)
+41061	Eskrim Giysisi ROU (e)
+41062	Eskrim Giysisi ROU (k)
+41063	Eskrim Giysisi ESP (e)
+41064	Eskrim Giysisi ESP (k)
+41065	Futbol Formasý FRA (e)
+41066	Futbol Formasý FRA (k)
+41067	Futbol Formasý ITA (e)
+41068	Futbol Formasý ITA (k)
+41069	Futbol Formasý POL (e)
+41070	Futbol Formasý POL (k)
+41071	Futbol Formasý ROU (e)
+41072	Futbol Formasý ROU (k)
+41073	Futbol Formasý ESP (e)
+41074	Futbol Formasý ESP (k)
+41075	Boks Giysisi FRA (e)
+41076	Boks Giysisi FRA (k)
+41077	Boks Giysisi ITA (e)
+41078	Boks Giysisi ITA (k)
+41079	Boks Giysisi POL (e)
+41080	Boks Giysisi POL (k)
+41081	Boks Giysisi ROU (e)
+41082	Boks Giysisi ROU (k)
+41083	Boks Giysisi ESP (e)
+41084	Boks Giysisi ESP (k)
+41085	Eskrim Giysisi FRA (e)
+41086	Eskrim Giysisi FRA (k)
+41087	Eskrim Giysisi ITA (e)
+41088	Eskrim Giysisi ITA (k)
+41089	Eskrim Giysisi POL (e)
+41090	Eskrim Giysisi POL (k)
+41091	Eskrim Giysisi ROU (e)
+41092	Eskrim Giysisi ROU (k)
+41093	Eskrim Giysisi ESP (e)
+41094	Eskrim Giysisi ESP (k)
+41095	Futbol Formasý FRA (e)
+41096	Futbol Formasý FRA (k)
+41097	Futbol Formasý ITA (e)
+41098	Futbol Formasý ITA (k)
+41099	Futbol Formasý POL (e)
+41100	Futbol Formasý POL (k)
+41101	Futbol Formasý ROU (e)
+41102	Futbol Formasý ROU (k)
+41103	Futbol Formasý ESP (e)
+41104	Futbol Formasý ESP (k)
+41105	Boks Giysisi FRA (e)
+41106	Boks Giysisi FRA (k)
+41107	Boks Giysisi ITA (e)
+41108	Boks Giysisi ITA (k)
+41109	Boks Giysisi POL (e)
+41110	Boks Giysisi POL (k)
+41111	Boks Giysisi ROU (e)
+41112	Boks Giysisi ROU (k)
+41113	Boks Giysisi ESP (e)
+41114	Boks Giysisi ESP (k)
+41115	Aiolos ekipmaný (e)
+41116	Astraios ekipmaný (e)
+41117	Aiolos ekipmaný (k)
+41118	Astraios ekipmaný (k)
+41119	Ateþ ejderhasý muhafýzý
+41120	Buz ejderhasý muhafýzý
+41121	Ateþ ejderhasý muhafýzý
+41122	Buz ejderhasý muhafýzý
+41123	Ýtfaiye üniformasý (e)
+41124	Ýtfaiye üniformasý (e)
+41125	Ýtfaiye üniformasý (k)
+41126	Ýtfaiye üniformasý (k)
+41127	Þark prensi (kahve)
+41128	Þark prensi (siyah)
+41129	Þark prensesi (kahve)
+41130	Þark prensesi (sb)
+41131	Kara kahin cübbesi (e)
+41132	Parlak kahin cübbesi (e)
+41133	Kara kahin cübbesi (k)
+41134	Parlak kahin cübbesi (k)
+41135	Ay gölgesi zýrhý (e)
+41136	Gümüþ yýldýz zýrhý (e)
+41137	Ay gölgesi zýrhý (k)
+41138	Gümüþ yýldýz zýrhý (k)
+41139	Kýrmz. Azrail zýrhý (e)
+41140	Beyaz Azrail zýrhý (e)
+41141	Beyaz Azrail zýrhý (k)
+41142	Beyaz Azrail zýrhý (k)
+41143	Kara pençe zýrhý (e)
+41144	Gümüþ pençe zýrhý (e)
+41145	Kara pençe zýrhý (k)
+41146	Gümüþ pençe zýrhý (k)
+41147	Cin giysisi (e)
+41148	Sultan giysisi (e)
+41149	Cin giysisi (k)
+41150	Sultan giysisi (k)
+41151	Deniz haydutu (e)
+41152	Korsan (e)
+41153	Deniz haydutu (k)
+41154	Korsan (k)
+41155	Ölüler diyarý zýrhý (e)
+41156	Diðer dünya zýrhý (e)
+41157	Ölüler diyarý zýrhý (k)
+41158	Diðer dünya zýrhý (k)
+41159	K. Yýlbaþý kazaðý (e)
+41160	Y. Yýlbaþý kazaðý (e)
+41161	K. Yýlbaþý kazaðý (k)
+41162	Y. Yýlbaþý kazaðý (k)
+41163	K. h. d. tavþaný (e)
+41164	S. h. d. tavþaný (e)
+41165	K. h. d. tavþaný (k)
+41166	S. h. d. tavþaný (k)
+41167	K. Firavun giysisi (e)
+41168	Y. Firavun giysisi (e)
+41169	K. Firavun giysisi (k)
+41170	Y. Firavun giysisi (k)
+41171	B. Bahriyeli ünif. (e)
+41172	Mv. Bahriyeli ünif. (e)
+41173	B. Bahriyeli ünif. (k)
+41174	Mv. Bahriyeli ünif. (k)
+41175	S. Dokkaebi Kaftaný (e)
+41176	M. Dokkaebi Kaftaný (e)
+41177	S. Dokkaebi Kaftaný (k)
+41178	M. Dokkaebi Kaftaný (k)
+41179	Sýcak Kar Mantosu (e)
+41180	Seçkin Kar Mantosu (e)
+41181	Sýcak Kar Mantosu (k)
+41182	Seçkin Kar Mantosu (k)
+45001	Tavþancýk kulaklarý (kv)
+45002	Tavþan Kulaðý e (kahve)
+45003	Baþlýk (e)
+45004	Baþlýk (k)
+45005	ÜsUzYaKý (e)
+45006	Eskrimci Saç Stili (k)
+45007	Mohawk Kesimi (e)
+45008	Futbolcu Saç St. GER (k)
+45009	Rasta (e)
+45010	Boksör Saç Stili GER (k)
+45011	Baþlýk+ (e)
+45012	Baþlýk+ (k)
+45013	ÜsUzYaKý (e)
+45014	Eskrimci Saç Stili (k)
+45015	Mohawk Kesimi (e)
+45016	Futbolcu Saç St. GER (k)
+45017	Balkabaðý Maskesi
+45018	Balkabaðý Maskesi
+45019	Noel Þapkasý (kýrmýzý)
+45020	Noel Þapkasý (yeþil)
+45021	Noel Þapkasý (siyah)
+45022	Elf Þapkasý
+45023	Ren Baþý (e)
+45024	Ren Baþý (k)
+45025	Bandana (beyaz)
+45026	Bandana (beyaz)
+45027	Bandana (siyah)
+45028	Bandana (siyah)
+45029	Bandana (sarý)
+45030	Bandana (sarý)
+45031	Bandana (turuncu)
+45032	Bandana (turuncu)
+45033	Bandana (mavi)
+45034	Bandana (mavi)
+45035	Tavþan Kulaklarý (siyah)
+45036	Tavþan Kulaklarý (mavi)
+45037	Tavþan Kulaklarý (yeþil)
+45038	Tavþan Kulaklarý (pembe)
+45039	Tavþan Kulaklarý (siyah)
+45040	Tavþan Kulaklarý (mavi)
+45041	Tavþan Kulaklarý (yeþil)
+45042	Tavþan Kulaklarý (pembe)
+45043	Kobra Saç Stili (e)
+45044	Kobra Saç Stili (k)
+45045	Tengu Maskesi
+45046	Venedik Maskesi
+45047	Kifwebe Maskesi
+45048	Maya Maskesi
+45049	Siyah Sarýk (e)
+45050	Siyah Sarýk (k)
+45051	Azrail Miðferi (e)
+45052	Azrail Miðferi (k)
+45053	Balkabaðý Jack Baþý (e)
+45054	Balkabaðý Jack Baþý (k)
+45055	Hilal Saç Stili (e)
+45056	Hilal Saç Stili (k)
+45057	Kar Tavþaný Þapkasý
+45058	Kutup Ayýsý Þapkasý
+45059	Kar Leoparý Þapkasý
+45060	Zombi Balkabaðý Maskesi
+45061	Cadý Þapkasý
+45062	Kardan Adam Maskesi
+45063	Noel Baba Donuk Maskesi
+45064	Pomponlu Þapka (Beyaz)
+45065	Pomponlu Þapka (Kýrmýzý)
+45066	Tüylü Baþlýk (Kýrmýzý)
+45067	Tüylü Baþlýk (Mavi)
+45068	Anka Tacý (Beyaz)
+45069	Anka Tacý (Kýrmýzý)
+45070	Tavþan Kulaklarý (Gri)
+45071	Tavþan Kulaklarý (Kahverengi)
+45072	Paskalya Baþlýðý (Gösteriþli)
+45073	Paskalya Baþlýðý (Mavi)
+45074	Kahverengi Sarýk
+45075	Beyaz Sarýk
+45076	Kahverengi Baþ Örtüsü
+45077	Beyaz Baþ Örtüsü
+45078	Diþli Miðfer
+45079	Diþli Miðfer
+45080	Diþli Miðfer
+45081	Diþli Miðfer
+45082	Kýrmýzý Noel Baba Þapkasý
+45083	Mavi Noel Baba Þapkasý
+45084	Kýrmýzý Noel Baba Kapüþonu
+45085	Mavi Noel Baba Kapüþonu
+45086	Tavþan Kulaklarý (Beyaz)
+45087	Tavþan Kulaklarý (Gül)
+45088	Tavþan Kulaklarý (Lacivert)
+45089	Tavþan Kulaklarý (Macenta)
+45090	Mavi Sarýk
+45091	Kýrmýzý Sarýk
+45092	Kahverengi Baþ Örtüsü
+45093	Yeþil Baþ Örtüsü
+45094	Kan Vampir Miðferi (Gr.)
+45095	Kan Vampir Miðferi (Kýrmýzý)
+45096	Kan Lamia Miðferi (Gri)
+45097	Kan Lamia Miðferi (Kýrmýzý)
+45098	Noel Kapüþonu (Kýrmýzý)
+45099	Noel Kapüþonu (Yeþil)
+45100	Noel Beresi (Kýrmýzý)
+45101	Noel Beresi (Yeþil)
+45102	Altýn Kabuto (e)
+45103	Gümüþ Kabuto (e)
+45104	Altýn Kabuto (k)
+45105	Gümüþ Kabuto (k)
+45106	Samuray Topuzu (Altýn)
+45107	Samuray Topuzu (Gümüþ)
+45108	Samuray Topuzu (Altýn)
+45109	Samuray Topuzu (Gümüþ)
+45110	Dehþet Boynuzlarý (Altýn)
+45111	Dehþet Boynuzlarý (Mavi)
+45112	Dehþet Boynuzlarý (Altýn)
+45113	Dehþet Boynuzlarý (Mavi)
+45114	Buhar Punk Þapkasý (Siyah)
+45115	Buhar Punk Þapkasý (Kýrmýzý)
+45116	Buhar Punk Þapkasý (Siyah)
+45117	Buhar Punk Þapkasý (Kýrmýzý)
+45118	Tüylü Þapka (Mavi)
+45119	Tüylü Þapka (Gri)
+45120	Sungura Klok Þapkasý (Mavi)
+45121	Sungura Klok Þapkasý (Gri)
+45122	Burç Tacý
+45123	Burç Tacý
+45124	Avalon Miðferi (Gümüþ)
+45125	Avalon Miðferi (Kýrmýzý)
+45126	Avalon Miðferi (Gümüþ)
+45127	Avalon Miðferi (Kýrmýzý)
+45128	Ayý Þapkasý (e)
+45129	Kaplan Þapkasý (e)
+45130	Ayý Þapkasý (k)
+45131	Kaplan Þapkasý (k)
+45132	Kahverengi Kurt Þapkasý (e)
+45133	Gri Kurt Þapkasý (e)
+45134	Kahverengi Kurt Þapkasý (k)
+45135	Gri Kurt Þapkasý (k)
+45136	Aeolus Miðferi (e)
+45137	Astraeus Miðferi (e)
+45138	Aeolus Miðferi (k)
+45139	Astraeus Miðferi (k)
+45140	Ateþ Ejderi Muhafýz Miðferi
+45141	Buz Ejderi Muhafýz Miðferi
+45142	Ateþ Ejderi Muhafýz Miðferi
+45143	Buz Ejderi Muhafýz Miðferi
+45144	Ýtfaiyeci Miðferi (e)
+45145	Ýtfaiyeci Miðferi (e)
+45146	Ýtfaiyeci Miðferi (k)
+45147	Ýtfaiyeci Miðferi (k)
+45148	Karanlýk Görücü Kapüþonu (e)
+45149	Iþýk Görücü Kapüþonu (e)
+45150	Ametist Görücü Gözü (k)
+45151	Zümrüt Görücü Gözü (k)
+45152	Yarý Gölge Miðferi (e)
+45153	Gümüþ Yýldýz Miðferi (e)
+45154	Yarý Gölge Miðferi (k)
+45155	Gümüþ Yýldýz Miðferi (k)
+45156	RX: Ejder Miðferi (e)
+45157	RX: Ejder Miðferi (k)
+45158	Kýrmýzý Þemal (e)
+45159	Mavi Þemal (e)
+45160	Kýrmýzý Þemal (k)
+45161	Mavi Þemal (k)
+45162	Kýrmýzý Azrail Miðferi (e)
+45163	Beyaz Azrail Miðferi (e)
+45164	Kýrmýzý Azrail Miðferi (k)
+45165	Beyaz Azrail Miðferi (k)
+45166	Siyah Pençe Miðferi (e)
+45167	Gümüþ Pençe Miðferi (e)
+45168	Siyah Pençe Miðferi (k)
+45169	Gümüþ Pençe Miðferi (k)
+45170	Cin Sarýðý (e)
+45171	Sultan Sarýðý (e)
+45172	Cin Tacý (k)
+45173	Sultana Tacý (k)
+45174	Korsan Üç Köþeli Þapkasý (e)
+45175	Korsan Üç Köþeli Þapkasý (e)
+45176	Korsan Üç Köþeli Þapkasý (k)
+45177	Korsan Üç Köþeli Þapkasý (k)
+45178	Yüz Maskesi (e)
+45179	Yüz Maskesi (k)
+45180	Öteki Dünya Saçý (e)
+45181	Baþka Dünya Saçý (e)
+45182	Öteki Dünya Saçý (k)
+45183	Baþka Dünya Saçý (k)
+45184	Kýrmýzý Noel Þapkasý (e)
+45185	Yeþil Noel Þapkasý (e)
+45186	Kýrmýzý Noel Þapkasý (k)
+45187	Yeþil Noel Þapkasý (k)
+45188	Kýrmýzý Tavþan Silindir Þapkasý (e)
+45189	Mavi Tavþan Silindir Þapkasý (e)
+45190	Kýrmýzý Tavþan Silindir Þapkasý (k)
+45191	Mavi Tavþan Silindir Þapkasý (k)
+45192	Kýrmýzý Firavun Baþlýðý (e)
+45193	Yeþil Firavun Baþlýðý (e)
+45194	Kýrmýzý Firavun Baþlýðý (k)
+45195	Yeþil Firavun Baþlýðý (k)
+45196	Yýlan Miðferi (e)
+45197	Yýlan Miðferi (k)
+45198	Beyaz Denizci Þapkasý (e)
+45199	Mavi Denizci Þapkasý (e)
+45200	Beyaz Denizci Þapkasý (k)
+45201	Mavi Denizci Þapkasý (k)
+45202	Siyah Dokkaebi Boynuzlarý (e)
+45203	Mavi Dokkaebi Boynuzlarý (e)
+45204	Siyah Dokkaebi Boynuzlarý (k)
+45205	Mavi Dokkaebi Boynuzlarý (k)
+45206	Sýcak Kar Þapkasý (e)
+45207	Lüks Kar Þapkasý (e)
+45208	Sýcak Kar Þapkasý (k)
+45209	Lüks Kar Þapkasý (k)
+49001	Genel Aura Giysisi
+49002	Sade Aura Giysisi
+49003	Soylu Aura Giysisi
+49004	Iþýltýlý Aura Giysisi
+49005	Gösteriþli Aura Giysisi
+49006	Parlak Aura Giysisi
+49011	Sýradan Aura Kýyafeti (mor)
+49012	Basit Aura Kýyafeti (mor)
+49013	Asil Aura Kýyafeti (mor)
+49014	Iþýltýlý Aura Kýyafeti (mor)
+49015	Muazzam Aura Kýyafeti (mor)
+49016	Parlak Aura Kýyafeti (mor)
+49021	Sýradan Aura Kýyafeti (siyah)
+49022	Basit Aura Kýyafeti (siyah)
+49023	Asil Aura Kýyafeti (siyah)
+49024	Iþýltýlý Aura Kýyafeti (siyah)
+49025	Muazzam Aura Kýyafeti (siyah)
+49026	Parlak Aura Kýyafeti (siyah)
+49031	Sýradan Aura Kýyafeti (yeþil)
+49032	Basit Aura Kýyafeti (yeþil)
+49033	Asil Aura Kýyafeti (yeþil)
+49034	Iþýltýlý Aura Kýyafeti (yeþil)
+49035	Muazzam Aura Kýyafeti (yeþil)
+49036	Parlak Aura Kýyafeti (yeþil)
+49980	Aura Parþömeni
+49981	Kristalleþmiþ Taþ (zümrüt)
+49982	Kristalleþmiþ Taþ
+49983	Kristalleþmiþ Taþ (lal)
+49984	Kristalleþmiþ Taþ (safir)
+49990	Auranýn Buz Runiði
+49991	Auranýn Ateþ Runiði (10)
+49992	Auranýn Ateþ Run. (50)
+49993	Auranýn Ateþ Run. (100)
+49994	Auranýn Ateþ Run. (250)
+49995	Auranýn Ateþ Run. (500)
+50001	Ýyi Þans Kitabý
+50002	Altýn Yüzük
+50003	Beceri Sýfýrlama Kaðýdý
+50004	Olay Dedektörü
+50005	Binicilik Bileti
+50006	Altýn Define Sandýðý
+50007	Gümüþ Define Sandýðý
+50008	Altýn Anahtar
+50009	Gümüþ Anahtar
+50010	Çorap
+50011	Ayýþýðý Define Sandýðý
+50012	Altýn Define Sandýðý+
+50013	Gümüþ Define Sandýðý+
+50014	Altýn Anahtar+
+50015	Gümüþ Anahtar+
+50016	Fasulyeli Hamur
+50017	Þekerli Hamur
+50018	Meyveli Hamur
+50019	Tatlý Pirinçli Krema
+50020	Fasulyeli Pasta
+50021	Þekerli Pasta
+50022	Meyveli Pasta
+50023	Para Zarfý
+50024	Gül
+50025	Çikolata
+50026	Madeni Para
+50027	Lottery Lot
+50028	24 Ayar Altýn Yüzük
+50029	18 Ayar Altýn Yüzük
+50030	14 Ayar Altýn Yüzük
+50031	Gül
+50032	Lolipop
+50033	Gizemli Sandýk
+50034	Bulmaca Kutusu
+50035	Hediye (sarý)
+50036	Hediye (mor)
+50037	Altýgen Hediye Paketi
+50038	Tunç Sertifika
+50039	Gümüþ Sertifika
+50040	Altýn Sertifika
+50041	Hediye paketi
+50042	Kahraman Madalyonu
+50046	Asil çim
+50047	Kýrmýzý ginseng (Prem.)
+50048	At yemi
+50049	Altýn at kitabý
+50050	At Madalyonu
+50051	At Resmi
+50052	Zýrhlý At Kitabý
+50053	Asker At Kitabý
+50054	Saman
+50055	Havuç
+50056	Kýrmýzý Ginseng
+50057	K.Maymun Zindaný Bitkisi
+50058	N.Maymun Zindaný Bitkisi
+50059	Z.Maymun Zindaný Bitkisi
+50060	Binicilik Klavuzu
+50061	At Evcilleþtirme Kitabý
+50062	Binme Kýlavuzu
+50067	Evrim Parþömeni
+50068	Mutasyon Parþömeni
+50070	Ork Baþkanýnýn Sandýðý
+50071	Öðreti Lideri Sandýðý
+50072	Hayalet Lideri Sandýðý
+50073	Kraliçe Örümcek Sandýðý
+50074	Dev Örümceðin Sandýðý
+50075	DevMikrop Taþýma Sandýðý
+50076	DevÇölkaplumbaða Sandýðý
+50077	Dokuz Kuyruk Sandýðý
+50078	Sarý Kaplan H. Sandýðý
+50079	Ateþ Kral Sandýðý
+50080	Kýrmýzý Ejderha Sandýðý
+50081	Þeytan Kral Sandýðý
+50082	Lusifer Sandýðý
+50083	Binicilik izni
+50084	Kilit Açma Taþý
+50085	Tohum
+50086	Ay Pastasý
+50087	Fasulyeli Pirinç Pastasý
+50088	Misk Otlu Pirinç Pastasý
+50089	Kilit Açma Taþý
+50090	DokuzkuyrukTilki Sandýðý
+50091	Altýn Sudak Balýðý Suþi
+50092	Sudak Balýðý Suþi
+50093	Som Balýðý Suþi
+50094	Yayýn Balýðý Suþi
+50095	Balkabaðý
+50096	Futbol Topu
+50100	Havai Fiþek
+50101	Havai Fiþek
+50102	Havai Fiþek
+50103	Havai Fiþek
+50104	Havai Fiþek
+50105	Havai Fiþek
+50106	Yýlbaþý Havai Fiþekleri
+50107	Çin Havai Fiþekleri
+50108	Havai fiþek topacý
+50109	Kýrmýzý Abanoz Sandýk
+50110	Ýhtiþamlý Abanoz Sandýk
+50111	Sarý Abanoz Sandýk
+50112	Açýk Yeþil Abanoz Sandýk
+50113	Yeþil Abanoz Sandýk
+50114	Mavi Abanoz Sandýk
+50115	Koyu Kýr. Abanoz Sandýk
+50116	Silah Deðiþtirme Bonu
+50117	Mücevher Kutusu
+50118	NoNAme
+50119	NoNAme
+50120	Demir Hazne
+50121	Demir Kutu
+50122	Demir Sandýk
+50123	Dondurma
+50124	Eski Tahta Kutu
+50125	Esrarengiz Sandýk
+50126	Esrarengiz Sandýk
+50127	Mistik Zümrüt Sandýðý
+50128	Mistik Gökyakut Sandýðý
+50129	Mistik Ametist Sandýðý
+50130	Yarýþma Sandýðý
+50131	Mistik Sitrin Sandýðý
+50132	Mistik Yakut Sandýðý
+50133	Mistik Zümrüt Sandýðý
+50134	Mistik Gökyakut Sandýðý
+50135	Mistik Ametist Sandýðý
+50136	Mistik Topaz Sandýðý
+50137	Mistik Sitrin Sandýðý
+50150	Yakut Anahtar
+50151	Zümrüt Anahtar
+50152	Gökyakut Anahtar
+50153	Ametist Anahtar
+50154	Topaz Anahtar
+50155	Sitrin Anahtar
+50156	Elmas Anahtar
+50160	Paskalya Yumurtasý
+50161	Paskalya Yumurtasý
+50162	Paskalya Yumurtasý
+50163	Paskalya Yumurtasý
+50164	Paskalya Yumurtasý
+50165	Paskalya Yumurtasý
+50166	Paskalya Yumurtasý
+50167	Paskalya Yumurtasý
+50168	Paskalya Yumurtasý
+50169	Paskalya Yumurtasý
+50170	Paskalya Yumurtasý
+50171	Paskalya Yumurtasý
+50172	Paskalya Yumurtasý
+50173	Paskalya Yumurtasý
+50174	Paskalya Yumurtasý
+50175	Paskalya Yumurtasý
+50176	Paskalya Yumurtasý
+50177	Paskalya Yumurtasý
+50178	Paskalya Yumurtasý
+50179	Paskalya Yumurtasý
+50180	Boþ Sepet
+50181	Paskalya Yumurtalý Sepet
+50182	Bereket Sandýðý
+50183	Tatlýlar
+50184	NoNAme
+50185	NoNAme
+50186	Azrail'in Sandýðý
+50187	Çýrak Sandýðý I
+50188	Çýrak Sandýðý I I
+50189	Çýrak Sandýðý III
+50190	Uzman Sandýðý I
+50191	Uzman Sandýðý II
+50192	Uzman Sandýðý III
+50193	Usta Sandýðý I
+50194	Usta Sandýðý II
+50195	Usta Sandýðý III
+50196	Büyük Üstat Sandýðý
+50197	Bilinmeyen torba
+50198	NoNAme
+50199	NoNAme
+50200	Paket
+50201	Buket
+50202	Buket
+50215	Cadýlar Bayramý Sandýðý
+50216	Punç
+50249	Zafer Sandýðý
+50253	Mor Yaldýzlý Kutu
+50254	Karanlýk Sandýðý
+50300	Beceri Kitabý
+50301	Sun zi Savaþ Sanatý
+50302	Wu zi Savaþ Sanatý
+50303	WeiLiao Zi Savaþ Sanatý
+50304	Kombo Ustalýðý
+50305	Combo Ustasýnýn Kaydý
+50306	Kombo Sanatý
+50307	Görev Kitabý(Kolay)
+50308	Görev Kitabý(Normal)
+50309	Görev Kitabý(Zor)
+50310	Görev Kitabý(Uzman)
+50311	Shinsoo-Lisan Kitabý
+50312	Chunjo-Lisan Kitabý
+50313	Jinno-Lisan Kitabý
+50314	Dönüþüm Kitabý
+50315	Ýleri Dönüþüm Kitabý
+50316	Master Dönüþüm Kitabý
+50317	Görev Kitabý(Test)
+50318	Görev Kitabý(Kolay)
+50319	Görev Kitabý(Normal)
+50320	Görev Kitabý(Zor)
+50321	Görev Kitabý(Uzman)
+50322	Dönüþüm Aracý
+50401	Üç Yönlü Kesme Klavuzu
+50402	Kýlýç Çevirme Klavuzu
+50403	Öfke Klavuzu
+50404	Hava Kýlýcý Klavuzu
+50405	Hamle Klavuzu
+50416	Ruh Vuruþu Klavuzu
+50417	Þiddetli Vuruþ Klavuzu
+50418	Güçlü Vuruþ Klavuzu
+50419	Güçlü Beden Klavuzu
+50420	Kýlýç Darbesi Klavuzu
+50431	Suikast Klavuzu
+50432	Hýzlý Saldýrý Klavuzu
+50433	Býçak Çevirme Klavuzu
+50434	Kamuflaj Klavuzu
+50435	Zehirli Bulut Klavuzu
+50446	Tekrarlanan Atýþ Klavuzu
+50447	Ok Yaðmuru Klavuzu
+50448	Ateþli Ok Klavuzu
+50449	Hafif Adým Klavuzu
+50450	Zehirli Ok Klavuzu
+50461	Parmak Darbesi Klavuzu
+50462	Ejderha Dönüþü Klavuzu
+50463	Büyülü Keskinlik Klavuzu
+50464	Dehþet Klavuzu
+50465	Büyülü Zýrh Klavuzu
+50466	Büyü Çözme Klavuzu
+50476	Karanlýk Vuruþ Klavuzu
+50477	Ateþ Vuruþ Klavuzu
+50478	Ateþ Hayaleti Klavuzu
+50479	Karanlýk Koruma Klavuzu
+50480	Hayalet Vuruþ Klavuzu
+50481	Karanlýk Küre Klavuzu
+50491	Uçan Týlsým Klavuzu
+50492	Ejderha darbesi kitabý
+50493	Ejder Kükremesi Klavuzu
+50494	Kutsama Klavuzu
+50495	Yansýtma Klavuzu
+50496	Ejderha Yardýmý Kitabý
+50506	Þimþek Atmak Klavuzu
+50507	Þimþek Çaðýrma Klavuzu
+50508	Þimþek Pençesi Klavuzu
+50509	Ýyileþtirme Klavuzu
+50510	Hýz Klavuzu
+50511	Yüksek Saldýrý Klavuzu
+50512	Gökkuþaðý Taþý
+50513	Ruh Taþý
+50600	Madencilik Rehberi
+50601	Elmas Taþý
+50602	Kehribar Taþý
+50603	Fosil Aðaç Gövdesi
+50604	Bakýr Cevheri
+50605	Gümüþ Cevheri
+50606	Altýn Cevheri
+50607	Yeþim Taþý Cevheri
+50608	Abanoz Cevheri
+50609	Ýnci Tanesi
+50610	Beyaz Altýn Cevheri
+50611	Kristal Cevheri
+50612	Ametist Cevheri
+50613	Cennetin Gözyaþý Cevheri
+50614	Ruh Kristali Madeni
+50615	Yakut Madeni
+50616	Grena Madeni
+50617	Zümrüt Madeni
+50618	Safir Madeni
+50621	Elmas
+50622	Kehribar
+50623	Fosil Aðaç Gövdesi
+50624	Bakýr
+50625	Gümüþ
+50626	Altýn
+50627	YeþimTaþý
+50628	Abanoz
+50629	Ýnci
+50630	Beyaz Altýn
+50631	Kristal
+50632	Ametist
+50633	Cennetin Gözyaþý
+50634	Ruh Kristali
+50635	Yakut
+50636	Grena
+50637	Zümrüt
+50638	Safir
+50701	Þeftali Çiçeði
+50702	Çançiçeði
+50703	Kaki Çiçeði
+50704	Gango Kökü
+50705	Leylak
+50706	Tue Mantarý
+50707	Alp Gülü
+50708	Dut
+50709	Hindiba
+50710	Devedikeni
+50711	Hurma
+50712	Sam-Zi Bitkisi
+50721	Þeftali Çiçeði
+50722	Çançiçeði
+50723	Kaki Çiçeði
+50724	Gango Kökü
+50725	Leylak
+50726	Tue Mantarý
+50727	Alp Gülü
+50728	Dut
+50729	Hindiba
+50730	Devedikeni
+50731	Hurma
+50732	Sam-Zi Bitkisi
+50801	Þeftali Çiçeði Suyu
+50802	Çançiçeði Suyu
+50803	Kaki Çiçeði Suyu
+50804	Gango Kökü Suyu
+50805	Leylak Suyu
+50806	Tue Mantar Reçinesi
+50807	Alp Gülü Suyu
+50808	Dut Suyu
+50809	Karahindiba Suyu
+50810	Diken Suyu
+50811	Hurma Özütü
+50812	Sam-Zi Bitkisi Suyu
+50813	Sim suyu
+50814	Dok suyu
+50815	Bo Suyu
+50816	Yöng Suyu
+50817	Zin Suyu
+50818	Sambo Suyu
+50819	Mong Suyu
+50820	Hwal Suyu
+50821	Kýrmýzý Þebnem
+50822	Turuncu Þebnem
+50823	Sarý Þebnem
+50824	Yeþil Þebnem
+50825	Mavi Þebnem
+50826	Beyaz Þebnem
+50827	Kýrmýzý Þebnem+
+50828	Turuncu Þebnem+
+50829	Sarý Þebnem+
+50830	Yeþil Þebnem+
+50831	Mavi Þebnem+
+50832	Beyaz Þebnem+
+50901	Boþ Þiþe
+50902	Baþlangýç Tarifi
+50903	Tarif
+50904	Uzman Tarifi
+50905	Sim Suyu Tarifi
+50906	Dok Suyu Tarifi
+50907	Bo Suyu Tarifi
+50908	Young Suyu Tarifi
+50909	Zin Suyu Tarifi
+50910	Hwal Suyu Tarifi
+51001	Enerji Parçasý
+51002	Enerji Kristali
+52001	Genç yaban domuzu
+52002	Genç yaban domuzu
+52003	Genç yaban domuzu
+52004	Genç yaban domuzu
+52005	Genç yaban domuzu
+52006	Vahþi yaban domuzu
+52007	Vahþi yaban domuzu
+52008	Vahþi yaban domuzu
+52009	Vahþi yaban domuzu
+52010	Vahþi yaban domuzu
+52011	Cesur yaban domuzu
+52012	Cesur yaban domuzu
+52013	Cesur yaban domuzu
+52014	Cesur yaban domuzu
+52015	Cesur yaban domuzu
+52016	Genç kurt
+52017	Genç kurt
+52018	Genç kurt
+52019	Genç kurt
+52020	Genç kurt
+52021	Vahþi kurt
+52022	Vahþi kurt
+52023	Vahþi kurt
+52024	Vahþi kurt
+52025	Vahþi kurt
+52026	Cesur kurt
+52027	Cesur kurt
+52028	Cesur kurt
+52029	Cesur kurt
+52030	Cesur kurt
+52031	Genç aslan
+52032	Genç aslan
+52033	Genç aslan
+52034	Genç aslan
+52035	Genç aslan
+52036	Vahþi aslan
+52037	Vahþi aslan
+52038	Vahþi aslan
+52039	Vahþi aslan
+52040	Vahþi aslan
+52041	Cesur aslan
+52042	Cesur aslan
+52043	Cesur aslan
+52044	Cesur aslan
+52045	Cesur aslan
+52046	Genç kaplan
+52047	Genç kaplan
+52048	Genç kaplan
+52049	Genç kaplan
+52050	Genç kaplan
+52051	Vahþi kaplan
+52052	Vahþi kaplan
+52053	Vahþi kaplan
+52054	Vahþi kaplan
+52055	Vahþi kaplan
+52056	Cesur kaplan
+52057	Cesur kaplan
+52058	Cesur kaplan
+52059	Cesur kaplan
+52060	Cesur kaplan
+52061	Genç ren geyiði
+52062	Genç ren geyiði
+52063	Genç ren geyiði
+52064	Genç ren geyiði
+52065	Genç ren geyiði
+52066	Vahþi ren geyiði
+52067	Vahþi ren geyiði
+52068	Vahþi ren geyiði
+52069	Vahþi ren geyiði
+52070	Vahþi ren geyiði
+52071	Cesur ren geyiði
+52072	Cesur ren geyiði
+52073	Cesur ren geyiði
+52074	Cesur ren geyiði
+52075	Cesur ren geyiði
+52076	Genç ren geyiði
+52077	Genç ren geyiði
+52078	Genç ren geyiði
+52079	Genç ren geyiði
+52080	Genç ren geyiði
+52081	Vahþi ren geyiði
+52082	Vahþi ren geyiði
+52083	Vahþi ren geyiði
+52084	Vahþi ren geyiði
+52085	Vahþi ren geyiði
+52086	Cesur ren geyiði
+52087	Cesur ren geyiði
+52088	Cesur ren geyiði
+52089	Cesur ren geyiði
+52090	Cesur ren geyiði
+52091	Genç ejdercik
+52092	Genç ejdercik
+52093	Genç ejdercik
+52094	Genç ejdercik
+52095	Genç ejdercik
+52096	Vahþi ejdercik
+52097	Vahþi ejdercik
+52098	Vahþi ejdercik
+52099	Vahþi ejdercik
+52100	Vahþi ejdercik
+52101	Cesur ejderjik
+52102	Cesur ejderjik
+52103	Cesur ejderjik
+52104	Cesur ejderjik
+52105	Cesur ejderjik
+52106	Genç Moa
+52107	Genç Moa
+52108	Genç Moa
+52109	Genç Moa
+52110	Genç Moa
+52111	Vahþi Moa
+52112	Vahþi Moa
+52113	Vahþi Moa
+52114	Vahþi Moa
+52115	Vahþi Moa
+52116	Cesur Moa
+52117	Cesur Moa
+52118	Cesur Moa
+52119	Cesur Moa
+52120	Cesur Moa
+52202	Turbo sörf tahtasý
+52204	Wukong'un Fýrtýnasý
+52205	Wukong'un Gürlemesi
+52701	Aslan Sertifikasý
+52702	Kaplan Sertifikasý
+52703	Yaban Domuzu Sertifikasý
+52704	Kurt Sertifikasý
+52705	RenGeyiði Sertifikasý(e)
+52706	RenGeyiði Sertifikasý(k)
+52707	Ejdercik Sertifikasý
+52708	Moa Sertifikasý
+53001	Ateþ Ankasý
+53002	Ren geyiði yavrusu
+53003	Buz Ankasý
+53005	Yavru Azrail
+53006	Yavru Azrail (altýn)
+53007	Bambi
+53008	Knuud
+53009	Bao Bao
+53010	Leonidas
+53011	Khan
+53012	Porki
+53013	Rufus
+53014	Þiþko Cellatcýk
+53015	Þiþko Cellatcýk (altýn)
+53016	Boney
+53017	Yeþim Ankasý
+53018	Kar Leonidas
+53019	Arktik Khan
+53020	Kutup Porki
+53021	Ayaz Rufus
+53022	Sheldon
+53023	Cooper
+53024	Panter Yavrusu (7 gün)
+53025	Leopar Yavrusu (7 gün)
+53026	Pepita
+53218	Panter yavrusu
+53219	Panter Yavrusu (120 gün)
+53220	Leopar Yavrusu
+53221	Leopar Yavrusu (120 gün)
+53222	Balkabaðý kafasý
+53223	Küçük süpürgeci
+53224	Kar tanesi
+53225	Çancýk
+53226	Cupido
+53227	Öfkeli kalp
+53228	Hilal
+53229	Hilal
+53230	Beyaz kuzucuk
+53231	Mavi koç
+53232	Yavru Huashin
+53233	Bruce (yaðma)
+53234	Wayne (yaðma)
+53235	Robin (yaðma)
+53236	Valentino+
+53237	Valentinia+
+53238	Valentino
+53239	Valentinia
+53240	Ay feneri (mavi)
+53241	Ay feneri (turuncu)
+53242	Bonsa (yaðma)
+53243	Bonsa
+53244	Bayan Jiangshi+
+53245	Bay Jiangshi+
+53246	Genç Jiangshi
+53247	Kýrmýzý Elf
+53248	Yeþil Elf
+53249	Yardýmcý Elf
+53250	Donni
+53251	Frank
+53253	Hui
+53254	Buh
+53255	Grusella
+53256	Minik Bonsa
+53257	Minidall
+53258	Renkli fener
+53259	Yeþil fener
+53260	Osvald Bey
+53261	Cobblepot Bey
+53262	Chesterfield Bey
+53263	Griffy
+53264	Nogaj
+53265	Astrabell
+53266	Helexna
+53267	Chaotika
+53268	Lycan Maddäus
+53269	Lycaninho
+53270	Küçük Catenaccio
+53271	K. mavi prlk tavus kuþu
+53272	Pembe parlak tavus kuþu
+53273	Koyu mavi tavus kuþu
+53274	Fýrat Fýndýk
+53275	Cezmi Ceviz
+53276	Bartu Badem
+53277	De-Zooka
+53278	Toplu deve
+53279	Çöl gemiciði
+53280	Havalý böcek+
+53281	Havalý böcek
+53282	Falcý ateþ kedisi
+53283	Falcý buz kedisi
+53284	Üç gözlü ateþ kedisi
+53285	Cüce Burun+ (kýrmýzý)
+53286	Cüce Burun+ (yeþil)
+53287	Cüce Burun
+53288	Kýrmýzý yavru Huashin
+53289	Beyaz yavru Huashin
+53290	Küçük ateþ elementeri
+53291	Küçük buz elementeri
+53292	Küçük þimþek elementeri
+53293	Küçük rüzgar elementeri
+53294	Küçük toprak elementeri
+53295	Küçük karanlk elementeri
+53296	Oyunbaz aþk elçisi
+53297	Sakar aþk elçisi
+53298	Küçük aþk elçisi
+53299	Mini Yengeç Savaþçýsý
+53300	Mini Yengeç
+53301	Oynak mumya
+53302	Titrek mumya
+53303	Sarsak mumya
+53304	Yeþil yýlbaþý aðacý
+53305	Budaklý yýlbaþý aðacý
+53306	Küçük yýlbaþý aðacý
+53307	Gece mavisi Anubis
+53308	Kankýrmýzý Anubis
+53309	Küçük Anubis
+53311	Güçlü katil buz balinasý
+53312	Uysal katil buz balinasý
+53313	Kar Leonidas (ganimet)
+53314	Astrabell (ganimet)
+53315	Ateþ Ankasý (ganimet)
+53316	Soðukkanlý Huzur Bozucu
+53317	Zehirli Huzur Bozucu
+53318	Küçük Huzur Bozucu
+53319	Kurtuluþ Ankasý
+53320	Lapa
+53321	Yapaðý
+53322	Küçük Lapa
+53329	Sevimli Ejder Yavrusu
+53330	Oyunbaz aþk ejderhasý
+53331	Küçük aþk ejderhasý
+53501	Ateþ Ankasý Kafesi
+53502	Ren Geyiði Yavrusu Sand.
+53503	Buz Ankasý Kafesi
+53505	Yavru Azrail Sandýðý
+53506	Yavru Azrail Sand(altýn)
+53507	Bambi Sandýðý
+53508	Knuud Sandýðý
+53509	Bao Bao Sandýðý
+53510	Leonidas Sandýðý
+53511	Khan Sandýðý
+53512	Porki Sandýðý
+53513	Rufus Sandýðý
+53514	Cellatçýk Sandýðý
+53515	Cellatçýk Sandýðý(altýn)
+53516	Kemik Sandýk
+53517	Yeþim Kafesi
+55001	Protein Lokmasý
+55002	Nakliye Kutusu
+55003	Genç Pet Kitabý
+55004	Yabani Pet Kitabý
+55005	Cesur Pet Kitabý
+55006	Geliþmiþ Kitap 2
+55007	Geliþmiþ Kitap 3
+55008	Pet Ýsmi Parþömeni
+55009	Pet Kitabý Sandýðý
+55010	Dayanýklýlýk (Savaþçý)
+55011	Dayanýklýlýk (Sura)
+55012	Dayanýklýlýk (Ninja)
+55013	Dayanýklýlýk (Þaman)
+55015	Berserker Kitabý
+55017	Hýzlandýrma Kitabý
+55018	Talim Kitabý
+55019	Yenileme Kitabý
+55020	Vampir Kitabý
+55021	Hayalet Kitabý
+55022	Engel Kitabý
+55023	Ayna Kitabý
+55024	Yang Düþme Kitabý
+55025	Menzil Kitabý
+55026	Yenilmezlik Kitabý
+55027	Ýyileþtirme Kitabý
+55028	Lezzetli Lokma
+55029	Pet Reverti
+55030	Pet Revertus
+55031	Lezzetli Lokma+
+55032	Pet belirleme küresi
+55033	Pet efsunla
+55034	Mayalama ustasý kitabý
+55035	Canavar avcýsý kitabý
+55036	Kavrayýþ kitabý
+55037	Can çekme kitabý
+55038	Tüy gibi kitap
+55100	Tanrýsal Protein Lokmasý
+55400	Rastgele sandýðý
+55401	Maymun Yumurtasý
+55402	Örümcek Yumurtasý
+55403	Razadör Yumurtasý
+55404	Nemere Yumurtasý
+55405	Mavi Ejderha Yumurtasý
+55406	Kýzýl Ejderha Yumurtasý
+55407	Azrailcik yumurtasý
+55408	Tombk cellatck yumurtasý
+55409	Baashido Yavrusu Yumurt.
+55410	Nessie yumurtasý
+55411	Exedyar Yumurtasý
+55412	Beyaz ejderha yumurtasý
+55610	Çoklu Farm Bileti (+1)
+55701	Küçük Maymun
+55702	Küçük Örümcek
+55703	Küçük Razadör
+55704	Küçük Nemere
+55705	Küçük Ejderha
+55706	Küçük Meley
+55707	Azrailcik
+55708	Tombik cellatcýk
+55709	Baashido Yavrusu
+55710	Nessie
+55711	Exedyar yavrusu
+55712	Öfkeli mini Alastor
+56000	Appaloosa
+60001	Safra
+60002	Depo Bekçisinin Notu
+60003	Kahramanlýk Sembolu
+69000	Bash Sýrrý
+69010	Chi Sýrrý
+69020	Hayalet Darbe Sýrrý
+69030	Saldýrý Darbesi Sýrrý
+69040	Pusu Sýrrý
+69050	Ok Sýrrý
+69060	Tüy Adým Sýrrý
+69070	Hýzlý Saldýrý Sýrrý
+69080	Karanlýk Darbe Sýrrý
+69090	Ejder Dönüþü Sýrrý
+69100	Gök ve Yer Sýrrý
+69110	Büyülü Kýlýç Sýrrý
+69120	Uçan Týlsým Sýrrý
+69130	Þifa Sýrrý
+69140	Ejder Yardýmý Sýrrý
+69150	Kutsama Sýrrý
+70001	Tanrýçanýn Bebeði
+70002	Üçüncü El
+70003	Liderin Kitabý
+70004	Çalýþkanlýk Madalyasý
+70005	Tecrübe yüzüðü (1 sa.)
+70006	Lisan Yüzüðü
+70007	Iþýnlanma Yüzüðü
+70008	Beyaz Bayrak
+70009	Define Sandýðý
+70010	Depo Bileti
+70011	Yükseltme Þiþesi
+70012	Tanrýçanýn Gözyaþý
+70013	Dev Tanrýça Gözyaþý
+70014	Kan Hapý
+70015	Ucuz Fýrça
+70016	Hint Pazubandý
+70017	Deðerli Pazubent
+70018	Anka Küpeleri
+70019	Milyoner Kolyesi
+70020	Þeftali Çiçeði Þurubu
+70021	Meleðin Kutsamasý
+70022	Bera'nýn Kalbi
+70023	Bilge Adamýn Deðneði
+70024	Kutsama Küresi
+70025	Asalet Yüzüðü
+70026	Gizlenme Aynasý
+70027	Demircinin Notu
+70028	Erdemli Adamýn Notu
+70029	Kýrmýzý Tüy Kalem
+70030	Kýrmýzý Monokl
+70031	Eskrim Broþürü
+70032	Çift-El Kýlavuzu
+70033	Kýlýç Kýlavuzu
+70034	Hançer El Kitabý
+70035	Büyülü Bakýr
+70036	Öðrencinin Notu
+70037	Unutkanlýk kitabý
+70038	Cesaret Pelerini
+70039	Demircinin El Kitabý
+70040	Ork Ýnatçýlýðý
+70041	Öðrencinin Yumruðu
+70042	Þeytanýn Kýymýðý
+70043	Hýrsýzýn eldivenleri
+70044	Kara Lordun boynuzu
+70045	Kara Lordun Diþi
+70046	Ejderha Tanrýsýnýn Kabý
+70047	Lisan Yüzüðü(Örnek)
+70048	Görünmezlik pelerini
+70049	Lucy`nin Yüzüðü
+70050	Bilge Kralýn Sembolü
+70051	Bilge Kralýn Eldiveni
+70052	Karma Muskasý1
+70053	Karma Muskasý2
+70054	Karma Muskasý3
+70056	Nar Suyu+
+70057	Cesaret Pelerini
+70058	Iþýnlama yüzüðü
+70063	Kostümü dönüþtür
+70064	Kostümü efsunla
+70101	Kader Kitabý
+70102	Zen Fasulye
+70103	Sutra
+70104	Dönüþüm Küresi
+70105	Dönüþüm Küresi
+70106	Dönüþüm Küresi
+70107	Dönüþüm Küresi
+70201	Saç Boyasý Temizleyici
+70202	Beyaz Saç Boyasý
+70203	Sarý Saç Boyasý
+70204	Kýrmýzý Saç Boyasý
+70205	Kahverengi Saç Boyasý
+70206	Siyah Saç Boyasý
+70207	Aðartýcý
+70208	Kahverengi Boya
+70251	Kýrmýzý Ot
+70252	Mavi Ot
+70253	Yeþil Ot
+70254	Mor Ot
+70301	Söz Yüzüðü
+70302	Nikah Yüzüðü
+71001	Kötü Ruh Kovma Kaðýdý
+71002	Statü Sýfýrlama Kaðýdý
+71003	Beceri Sýfýrlama Kaðýdý
+71004	Ejderha Madalyasý
+71005	Lisan Yüzüðü
+71006	Lisan Yüzüðü
+71007	Lisan Yüzüðü
+71008	Balýkçýlýk Klavuzu
+71009	Geniþletilmiþ Depo
+71010	Üçüncü El
+71011	Duygu Maskesi
+71012	Liderin Kitabý
+71013	Havai Fiþekler
+71014	Saldýrý iksiri +10
+71015	Tecrübe yüzüðü
+71016	Hýrsýzýn eldivenleri
+71017	Þans madalyasý
+71018	Yaþam Kutsamasý
+71019	Sihir Kutsamasý
+71020	Ejderha Kutsamasý
+71021	Savaþ Kaðýdý
+71022	Zeka Yenileme
+71023	Yenilenen Canlýlýk
+71024	Güç Unutma Kitabý
+71025	Demirci Taþý
+71026	Büyülü Demir Maden
+71027	Ejderha tanrý hayatý
+71028	Ejderha tanrý saldýrýsý
+71029	Ejderha tanrý zekasý
+71030	Ejderha tanrý savunmasý
+71031	Ejderha Tanrý Desteði
+71032	Ejderha Parþömeni
+71033	Duygu Maskesi
+71034	Saldýrý iksiri +15
+71035	Araþtýrmacýnýn Özütü
+71036	Kaðýt-Ork Þefi
+71037	Kaðýt-Karanlýk Lider
+71038	Kaðýt-Kraliçe Örümcek
+71039	Kaðýt-Kaplumbaða
+71040	Kaðýt-Alev Kral
+71041	Kaðýt-Dokuz Kuyruk
+71042	Kaðýt-Þeytan Kral
+71043	Sarý Kaplan H. Kaðýdý
+71044	Kritik savaþ
+71045	Delici savaþ
+71047	Ruh Taþý Tentürü
+71048	Deðiþim Týlsýmý
+71049	Ýpek Bohça
+71050	Hýz Ýksiri
+71051	Artýrma Kaðýdý (6/7)
+71052	Efsun Nesnesi (6/7)
+71054	Krallýklarýn Ýzi
+71055	Ýsim Ýzi
+71056	Cennetin Ýzi
+71057	Kaðýt-F.Aðaç Damarý
+71058	Kaðýt-Bakýr Damarý
+71059	Kaðýt-Gümüþ Damarý
+71060	Kaðýt-Altýn Damarý
+71061	Yeþim Damarý Taþý
+71062	Kaðýt-Abanoz Damarý
+71063	Kaðýt-Midye yýðýný
+71064	Kaðýt-BeyazAltýn Damarý
+71065	Kaðýt-Kristal Damarý
+71066	Kuvars Damarý Taþý
+71067	Kaðýt-Cennet Gyþ.Damarý
+71068	Sevgililerin Kuþtüyü
+71069	Uyum Küpesi
+71070	Sevgi Bileziði
+71071	Sevgi Küpesi
+71072	Uyum Bileziði
+71073	Sevgi Kolyesi
+71074	Uyum Kolyesi
+71075	Saç Boyasý (Beyaz)
+71076	Saç Boyasý (Sarý)
+71077	Saç Boyasý (Kýrmýzý)
+71078	Saç Boyasý (Kahverengi)
+71079	Saç Boyasý (Siyah)
+71080	Kaðýt - Metin Taþý(D)
+71081	Kaðýt - Metin Taþý(N)
+71082	Kaðýt - Metin Taþý(Y)
+71083	Taþ Sanatý Kitabý
+71084	Efsun Nesnesi
+71085	Arttýrma Kaðýdý
+71086	Seviye Yük.Görevi(20~29)
+71087	Seviye Yük.Görevi(30~39)
+71088	Görev Kitabý(Kolay)
+71089	Görev Kitabý(Normal)
+71090	Görev Kitabý(Zor)
+71091	Ticaret Tentürü
+71092	Polimorf Kitabý
+71093	Polimorf Mermeri
+71094	Münzevi Tavsiyesi
+71095	Geçit Bileti
+71096	Geçiþ Tahtasý
+71099	Yer Deðiþtirme Yüzüðü
+71100	Bilgi Deðiþim Kaðýdý
+71101	Soðutma iksiri
+71102	Soðutma iksiri+
+71103	Tekrar Daðýtma (VIT)
+71104	Tekrar dðtma kaðýdý(INT)
+71105	Tekrar Daðýtma (STR)
+71106	Tekrar Dðtma Kaðýdý(DEX)
+71107	Yaþam Meyvesi
+71108	Nar Suyu
+71109	Düzeltme Kaðýdý
+71110	At þekeri
+71113	Ýçgörü Küresi
+71114	Yaban domuzu (sarý)
+71115	Yaban domuzu (mavi)
+71116	Kurt (sarý)
+71117	Kurt (mavi)
+71118	Kaplan (sarý)
+71119	Kaplan (mavi)
+71120	Aslan (sarý)
+71121	Aslan (mavi)
+71122	Ejderha tapýnaðý giriþi
+71123	Ejderha Pulu
+71124	Beyaz Aslan
+71125	Savaþ yaban domuzu
+71126	Kýzgýn kurt
+71127	Vahþi kaplan
+71128	Yýrtýcý aslan
+71129	Ejderha Pençesi
+71130	Geçit Bileti
+71131	Siyah at
+71132	Siyah at
+71133	Siyah at
+71134	Siyah at
+71135	Hilal Yüzüðü
+71136	Güçlü Lolipop
+71137	Kral kaplaný (mavi)
+71138	Kral kaplaný (kýrmzý)
+71139	Kral kaplaný (altýn)
+71140	Kral kaplaný (yeþil)
+71141	Kral Kaplaný (gri)
+71142	Kral kaplaný (beyaz)
+71143	Mutluluk Yüzüðü
+71144	Noel Sandýðý
+71145	Ebedi Aþk Týlsýmý
+71146	Amorun Sandýðý (pembe)
+71147	Amorun Sandýðý (mavi)
+71148	Ýrade Gücü Yüzüðü
+71149	Ölümcül Gücün Yüzüðü
+71150	Büyülü Yumurta
+71151	Yeþil Efsun
+71152	Yeþil Güç
+71153	Bilgelik Ýksiri
+71154	Yükseliþ Ýksiri (3 sa.)
+71155	Bilgelik Ýksiri (3 sa.)
+71156	Ruh iksiri
+71157	Tecrübe Ýksiri
+71158	Kahramanlýk Madalyasý
+71159	Milonun Sandýðý
+71160	Athenanýn Sandýðý
+71161	Equus Purpur
+71164	Kuyruklu yýldýz
+71165	Kutup predatörü
+71166	Zýrhlý panda
+71171	Tekboynuz
+71172	Kabus
+71176	Siyah Panter
+71177	Leopar
+71182	Muffin (kahverengi)
+71183	Nugget (kahverengi)
+71184	Muffin (mavi)
+71185	Nugget (mavi)
+71186	Muffin (kahverengi)
+71187	Nugget (yeþil)
+71192	Gürleme
+71193	Þimþek
+71194	Altýn Okey Kutusu
+71195	Gümüþ Okey Kutusu
+71196	Bronz Okey Kutusu
+71197	Nugget (lacivert)
+71198	Muffin (pembe)
+71220	Kizaghan'ýn Atý
+71221	Kaþmir Paketi
+71222	Nirvana ejderhasý
+71223	Samsara ejderhasý
+71224	Manni
+71225	Manu
+71226	Kahverengi dövüþ tülüsü
+71227	Siyah dövüþ tülüsü
+71228	Lav cehennemi keleri
+71229	Buz cehennemi keleri
+71230	Magma ejderi
+71231	Beyaz tavþan
+71232	Ay tavþaný
+71233	Bernie
+71234	Maviþ Barry
+71235	Kerberos (altýn)
+71236	Kerberos (gümüþ)
+71242	Spektral at
+71243	At Nokturnat
+71244	Gece kanadý
+71245	Karanlýk kanat
+71246	Ay gölgesi
+71247	Gümüþ yýldýz
+71248	Altýn savaþ hayvaný
+71249	Gümüþ savaþ hayvaný
+71250	Beyaz Sfenks
+71251	Taþ Sfenks
+71252	Buz kuzgunu
+71253	Gece kuzgunu
+71254	Beyaz kýþ lamasý
+71255	Kahverengi kýþ lamasý
+71256	G. Kuzey Rüzg. ejderhasý
+71257	Y. Kuzey Rüzg. ejderhasý
+71258	Öfkeli K. R. ejderhasý
+71259	Aceleci tavþan (pembe)
+71260	Aceleci tavþan (mavi)
+71261	Kan Kýrmýzý Kitsune
+71262	Buz Mavisi Kitsune
+71263	Kýzýl Kar Kurdu
+71264	Mavi Kar Kurdu
+72001	Tecrübe yüzüðü (10 sa.)
+72002	Tecrübe yüzüðü (30 dk.)
+72003	Tecrübe yüzüðü (3 sa.)
+72004	Hýrsýzýn eldivenleri
+72005	Hýrsýzýn eldivenleri
+72006	Hýrsýzýn eldivenleri
+72007	Ýpek Bohça
+72008	Ýpek Bohça
+72009	Ýpek Bohça
+72010	Sevgi Kuþu Tüyü
+72011	Sevgi Kuþu Tüyü
+72012	Sevgi Kuþu Tüyü
+72013	Balýkçýlýk Klavuzu
+72014	Balýkçýlýk Klavuzu
+72015	Balýkçýlýk Klavuzu
+72016	Üçüncü El
+72017	Üçüncü El
+72018	Üçüncü El
+72019	Geniþletilmiþ Depo
+72020	Geniþletilmiþ Depo
+72021	Geniþletilmiþ Depo
+72022	Altýn Þans Parasý
+72023	Altýn Þans Parasý
+72024	Altýn Þans Parasý
+72025	Delici savaþ
+72026	Delici savaþ
+72027	Delici savaþ
+72028	Duygu Maskesi
+72029	Duygu Maskesi
+72030	Duygu Maskesi
+72031	Ejderha Tanrý Saldýrý
+72032	Ejderha Tanrý Saldýrý
+72033	Ejderha Tanrý Saldýrý
+72034	Ejderha Tanrý Savunma
+72035	Ejderha Tanrý Savunma
+72036	Ejderha Tanrý Savunma
+72037	Ejderha Tanrý Yaþam
+72038	Ejderha Tanrý Yaþam
+72039	Ejderha Tanrý Yaþam
+72040	Ejderha Tanrý Zekasý
+72041	Ejderha Tanrý Zekasý
+72042	Ejderha Tanrý Zekasý
+72043	Liderin kitabý
+72044	Liderin kitabý
+72045	Liderin kitabý
+72046	Kritik savaþ
+72047	Kritik savaþ
+72048	Kritik savaþ
+72049	Tecrübe Yüzüðü
+72050	Tecrübe Yüzüðü
+72301	Kutsama Kaðýdý
+72302	Liderin Kitabý
+72303	Tecrübe Yüzüðü
+72304	Kutsama Küresi
+72305	Gizlenme Aynasý
+72306	Demircinin Notu
+72307	Erdemli Adamýn Notu
+72308	Büyülü Bakýr
+72309	Demircinin El Kitabý
+72310	Kötü Ruh Kovma Kaðýdý
+72311	Ejderha kutsamasý
+72312	Ejderha tanrý saldýrýsý
+72313	Ejderha tanrý savunmasý
+72314	Ejderha Parþömeni
+72319	Dükkân geniþlemesi (s)
+72320	Envanter Geniþletme
+72325	Yansýtmayý Geri Alma
+72326	Yansýtma Bileti
+72341	Yansýtma Bileti
+72501	Anti-Tecrübe Yüzüðü
+72502	Hýrsýz Eldiveni (2s)
+72701	Rüzgarýn Ayakkabýlarý
+72702	Rüzgar ayakb.+(tcrt var)
+72703	Kaplan Kemiði Küpesi
+72704	Ejder Kemiði Küpesi
+72705	Kaplan Kemiði Bilelik
+72706	Ejder Kemiði Bilezik
+72709	Kaplan Kemiði Küpesi
+72710	Ejder Kemiði Küpesi
+72711	Kaplan Kemiði Bilezik
+72712	Ejder Kemiði Bilezik
+72723	Güneþ Özütü (K)
+72724	Güneþ Özütü (O)
+72725	Güneþ Özütü (B)
+72726	Güneþ Özütü (Ö)
+72727	Ay Özütü (K)
+72728	Ay Özütü (O)
+72729	Ay Özütü (B)
+72730	Ay Özütü (Ö)
+72731	Ejderha Tanrý Yaþam +
+72732	Ejderha Tanrý Saldýrý +
+72733	Ejderha Tanrý Zekasý +
+72734	Ejderha Tanrý Savunma +
+72735	Kritik Vuruþ +
+72736	Delici Vuruþ +
+73001	Havalý Kýsa Saç (kýzýl)
+73002	Havalý Kýsa Saç (açýk)
+73003	Havalý Kýsa Saç (mavi)
+73004	Havalý Kýsa Saç (kahve)
+73005	Bandana (kýzýl)
+73006	Bandana (ekoseli kahve)
+73007	Bandana (mavi)
+73008	Bandana (ekoseli yeþil)
+73009	Uzun saç (siyah)
+73010	Uzun saç (kýzýl)
+73011	Uzun saç (açýk kahve)
+73012	Uzun saç (açýk yeþil)
+73251	At kuyruðu (kahve)
+73252	At kuyruðu (yeþil)
+73253	At kuyruðu (mavi)
+73254	At kuyruðu (fildiþi)
+73255	Güzel Kýsa Saç (kýzýl)
+73256	Güzel Kýsa Saç (kahve)
+73257	Güzel Kýsa Saç (açýk)
+73258	Güzel Kýsa Saç (bordo)
+73259	Kýsa Saç stili (kýzýl
+73260	Kýsa Saç stili (mavi)
+73261	Kýsa Saç stili (siyah)
+73262	Kýsa Saç stili (sarý)
+73501	Spor Saç Stili (beyaz)
+73502	Spor Saç Stili (kahve)
+73503	Spor Saç Kesimi (sarý)
+73504	Spor Saç Kesimi (yeþil)
+73505	Karizmatik Saç (beyaz)
+73506	Karizmatik Saç (kýzýl)
+73507	Karizmatik Saç (siyah)
+73508	Karizmatik Saç (bordo)
+73509	Þýk Saç Modeli (Beyaz)
+73510	Þýk Saç Modeli (mavi)
+73511	Þýk Saç Modeli (Siyah)
+73512	Þýk Saç Modeli (kahve)
+73751	Zarif saç stili (kahve)
+73752	Zarif saç stili (siyah)
+73753	Zarif saç stili(mavi)
+73754	Zarif saç stili (beyaz)
+73755	Orta Uz. Saç (kahve)
+73756	Orta Uz. Saç (siyah
+73757	Orta Uz. Saç (sarý)
+73758	Orta Uz. Saç (mor)
+73759	Eski saç stili (kahve)
+73760	Eski saç stili (açýk)
+73761	Eski saç stili (mor)
+73762	Eski saç stili (kýzýl)
+74001	Moda Saç Stili (kýzýl)
+74002	Moda Saç Stili (açýk)
+74003	Moda Saç (mavi)
+74004	Moda Saç (kahve)
+74005	Bandana (kýzýl)
+74006	Bandana (ekoseli kahve)
+74007	Bandana (mavi)
+74008	Bandana (ekoseli yeþil)
+74009	Uzun saç (siyah)
+74010	Uzun saç (kýzýl)
+74011	Uzun saç (kahve)
+74012	Uzun saç (yeþil)
+74013	Savaþçý Afro (e)
+74014	Savaþçý Afro (e)
+74015	Savaþçý(e)Samuray Miðfer
+74016	Savaþçý(e)Samuray Miðfer
+74017	Savaþçý Fesi (e)
+74018	Savaþçý Puþisi (e)
+74019	Savaþçý Kavuðu (e)
+74020	Jack Pumpkin Savaþçý (e)
+74251	At kuyruðu (kahve)
+74252	At kuyruðu (yeþil)
+74253	At kuyruðu (mavi)
+74254	At kuyruðu (fildiþi)
+74255	Omuz hiz. saç (kýzýl)
+74256	Omuz hiz. saç (kahve)
+74257	Omuz hiz. saç/açýk
+74258	Omuz hiz. saç/mor
+74259	Kýsa Saç stili (kýzýl)
+74260	Kýsa Saç stili (mavi)
+74261	Kýsa Saç stili (siyah)
+74262	Kýsa Saç stili (sarý)
+74263	Ninja Afro (k)
+74264	Ninja Afro (k)
+74265	Ninja (k): Çiçekli Þapka
+74266	Ninja (k): Çiçekli Þapka
+74267	Ninja (k): Kum Peçesi
+74268	Ninja (k): Çöl Puþisi
+74269	Ninja Sarýðý (k)
+74270	Jack Pumpkin Ninja (k)
+74501	Spor Saç Stili (beyaz)
+74502	Spor Saç Stili (kahve)
+74503	Spor Saç Kesimi (sarý)
+74504	Spor Saç Kesimi (yeþil)
+74505	Karizmatik Saç (beyaz)
+74506	Karizmatik Saç (kýzýl)
+74507	Karizmatik Saç (siyah)
+74508	Karizmatik Saç (mor)
+74509	Uzun örgü (beyaz)
+74510	Uzun örgü (mavi)
+74511	Uzun örgü (siyah)
+74512	Uzun örgü (kahve)
+74513	Sura Afro (e)
+74514	Sura Afro (e)
+74515	Sura (e):Samuray Miðferi
+74516	Sura (e):Samuray Miðferi
+74517	Sura Fesi (e)
+74518	Sura Puþisi (e)
+74519	Sura Kavuðu (e)
+74520	Jack Pumpkin Sura (e)
+74751	Zarif Saç Modeli (kahve)
+74752	Zarif Saç Modeli (siyah)
+74753	Zarif saç stili (mavi)
+74754	Zarif Saç Modeli (beyaz)
+74755	Orta Uz. Saç (kahve)
+74756	Orta Uz. Saç (siyah)
+74757	Orta Uz. Saç (sarý)
+74758	Orta Uz. Saç (mor)
+74759	Eski Saç Stili (kahve)
+74760	Eski Saç Stili (sarýþýn)
+74761	Eski saç stili (mor)
+74762	Eski saç stili (kýzýl)
+74763	Þaman Afro (d)
+74764	Þaman Afro (d)
+74765	Þaman (d): Çiçekli Þapka
+74766	Þaman (d): Çiçekli Þapka
+74767	Þaman (d): Kum Peçesi
+74768	Þaman (d): Çöl Puþisi
+74769	Þaman Sarýðý (d)
+74770	Jack Pumpkin Þaman (k)
+75001	Modern saç (kýzýl)
+75002	Modern saç (açýk)
+75003	Modern saç (mavi)
+75004	Modern saç (kahve)
+75005	Bandana (kahve)
+75006	Bandana (sarýþýn)
+75007	Bandana (mavi)
+75008	Bandana (yeþil)
+75009	Uzun saç (siyah)
+75010	Uzun saç (kýzýl)
+75011	Uzun saç (kahve)
+75012	Uzun saç (yeþil)
+75013	Savaþçý Afro (d)
+75014	Savaþçý Afro (d)
+75015	Savaþçý(d):Çiçekli Þapka
+75016	Savaþçý(d):Çiçekli Þapka
+75017	Savaþçý (d): Kum Peçesi
+75018	Savaþçý (d): Çöl Puþisi
+75019	Savaþçý Sarýðý (d)
+75020	Jack Pumpkin Savaþçý (k)
+75201	At kuyruðu (kahve)
+75202	At kuyruðu (yeþil)
+75203	At kuyruðu (mavi)
+75204	At kuyruðu (gri)
+75205	Omuz Hiz. Saç (kýrmýzý)
+75206	Omuz Hiz. Saç (kahve)
+75207	Omuz hiz. saç/açýk
+75208	Omuz Hiz. Saç (mor)
+75209	Kýsa saç (kýzýl)
+75210	Kýsa saç (mavi)
+75211	Kýsa saç (siyah)
+75212	Kýsa saç (sarýþýn)
+75213	Ninja Afro (e)
+75214	Ninja Afro (e)
+75215	Ninja(e):Samuray Miðferi
+75216	Ninja(e):Samuray Miðferi
+75217	Ninja Fesi (e)
+75218	Ninja Puþisi (e)
+75219	Ninja Kavuðu (e)
+75220	Jack Pumpkin Ninja (e)
+75401	Spor Saç Stili (gri)
+75402	Spor saç stili (kahve)
+75403	Spor Saç Stili (sarýþýn)
+75404	Spor saç stili (yeþil)
+75405	Karizmatik Saç (beyaz)
+75406	Karizmatik Saç (kýzýl)
+75407	Karizmatik Saç (siyah)
+75408	Karizmatik Saç (mor)
+75409	Uzun örgü (beyaz)
+75410	Uzun örgü (mor)
+75411	Uzun örgü (siyah)
+75412	Uzun örgü (kahve)
+75413	Sura Afro (k)
+75414	Sura Afro (k)
+75415	Sura (k): Çiçekli Þapka
+75416	Sura (k): Çiçekli Þapka
+75417	Sura (k): Kum Peçesi
+75418	Sura (k): Çöl Puþisi
+75419	Sura Sarýðý (k)
+75420	Jack Pumpkin Sura (k)
+75601	Gös. Saç Stili (kahve)
+75602	Zarif saç stili (siyah)
+75603	Zarif saç stili (mavi)
+75604	Zarif saç stili (açýk)
+75605	Orta Uz. Saç (kahve)
+75606	Orta Uz. Saç(siyah)
+75607	Orta Uz. Saç (açýk)
+75608	Orta Uz. Saç(mor)
+75609	Eski saç stili (kahve)
+75610	Eski saç stili (açýk)
+75611	Eski saç stili (mor)
+75612	Eski saç stili (kýzýl)
+75613	Þaman Afro (e)
+75614	Þaman Afro (e)
+75615	Þaman(e):Samuray Miðferi
+75616	Þaman(e):Samuray Miðferi
+75617	Þaman Fesi (e)
+75618	Þaman Puþisi (e)
+75619	Þaman Kavuðu (e)
+75620	Jack Pumpkin Þaman (e)
+76000	Þeftali Çiçeði Þarabý
+76001	Statü Sýfýrlama Kaðýdý
+76002	Küçülen Kafa
+76003	Soðutma iksiri
+76004	Ay Özütü (K)
+76005	Ay Özütü (O)
+76006	Metin Taþý Dedektörü
+76007	Cesaret Pelerini
+76008	Ejderha Madalyasý
+76009	Ejderha Parþömeni
+76010	Kan Taþý
+76011	Liderin Kitabý
+76012	Hýz Ýksiri
+76013	Arttýrma Kaðýdý (m)
+76014	Nesneyi efsunla(m)
+76015	Kutsama Küresi
+76016	Kutsama Parþömeni
+76017	Saldýrý iksiri +15
+76018	Saldýrý iksiri +20
+76019	Geçiþ Bileti
+76020	Araþtýrmacýnýn Özütü
+76021	Güneþ Özütü (K)
+76022	Güneþ Özütü (O)
+76023	Yeþil Efsun
+76024	Yeþil Güç
+79505	Okey Koleksiyon Kartý
+79506	Okey Kart Seti
+80001	Para Kesesi
+80002	Boþ Kaðýt
+80003	Gümüþ Bar(50.000Yang)
+80004	Gümüþ Bar(100.000Yang)
+80005	Altýn Külçe(500.000Yang)
+80006	Altýn külçe(1 mio. Yang)
+80007	Altýn Külçe(2 mio. Yang)
+80008	Altýn Parçasý
+80013	Rulet Bileti
+80014	EP Kuponu (100)
+80015	EP Kuponu (500)
+80016	EP Kuponu (1000)
+80017	EP Kuponu (50)
+80019	Ýnce Kumaþ
+84014	Kostüm Süre Uzatýcý
+84015	Kostüm Süre Uzatýcý
+84016	Kostüm Süre Uzatýcý
+85001	Hakim Kuþaðý (basit)
+85002	Hakim Kuþaðý (zarif)
+85003	Hakim Kuþaðý (asil)
+85004	Hakim Kuþaðý(kiþiye öz.)
+85005	Usta Kuþaðý (basit)
+85006	Usta Kuþaðý (zarif)
+85007	Usta Kuþaðý (asil)
+85008	Usta Kuþaðý (kiþiye öz.)
+85011	Bey Kuþaðý (basit)
+85012	Bey Kuþaðý (zarif)
+85013	Bey Kuþaðý (soylu)
+85014	Bey Kuþaðý (kiþiye özel)
+85015	Kral Kuþaðý (basit)
+85016	Kral Kuþaðý (zarif)
+85017	Kral Kuþaðý (soylu)
+85018	Kral Kuþaðý (kiþiye öze)
+85021	Yýldönümü kuþaðý (basit)
+85022	Yýldönümü kuþaðý (zarif)
+85023	Yýl dönümü kuþaðý (asil)
+85024	Yýldön. kuþaðý (kiþ. ö.)
+86001	Zi Bandý (basit)
+86002	Zi Bandý (zarif)
+86003	Zi Bandý (asil)
+86004	Zi Bandý (kiþiye özel)
+86005	Chou Bandý (basit)
+86006	Chou Bandý (zarif)
+86007	Chou Bandý (asil)
+86008	Chou Bandý (kiþiye özel)
+86011	Yin Bandý (basit)
+86012	Yin Bandý (zarif)
+86013	Yin Bandý (asil)
+86014	Yin Bandý (kiþiye özel)
+86015	Mao Bandý (basit)
+86016	Mao Bandý (zarif)
+86017	Mao Bandý (asil)
+86018	Mao Bandý (kiþiye özel)
+86021	Chen Bandý (basit)
+86022	Chen Bandý (zarif)
+86023	Chen Bandý (asil)
+86024	Chen Bandý (kiþiye özel)
+86025	Si Bandý (basit)
+86026	Si Bandý (zarif)
+86027	Si Bandý (asil)
+86028	Si Bandý (kiþiye özel)
+86031	Wu Bandý (basit)
+86032	Wu Bandý (zarif)
+86033	Wu Bandý (asil)
+86034	Wu Bandý (kiþiye özel)
+86035	Wei Bandý (basit)
+86036	Wei Bandý (zarif)
+86037	Wei Bandý (asil)
+86038	Wei Bandý (kiþiye özel)
+86041	Shen Bandý (basit)
+86042	Shen Bandý (zarif)
+86043	Shen Bandý (asil)
+86044	Shen Bandý (kiþiye özel)
+86045	Yu Bandý (basit)
+86046	Yu Bandý (zarif)
+86047	Yu Bandý (asil)
+86048	Yu Bandý (kiþiye özel)
+86051	Xu Bandý (basit)
+86052	Xu Bandý (zarif)
+86053	Xu Bandý (asil)
+86054	Xu Bandý (kiþiye özel)
+86055	Hai Bandý (basit)
+86056	Hai Bandý (zarif)
+86057	Hai Bandý (asil)
+86058	Hai Bandý (kiþiye özel)
+86061	Kalp kuþaðý (basit)
+86062	Kalp kuþaðý (zarif)
+86063	Kalp kuþaðý (asil)
+86064	Kalp kuþaðý (kiþiye öz.)
+89000	Aura belgesi+
+90001	Boþ Su Þiþesi
+90002	Su Þiþesi
+90003	Kristal
+90004	Mücevher
+90005	Su Taþý
+90006	Ruh Taþý
+90007	Mineral
+90010	Temel Taþý
+90011	Kütük
+90012	Kontrplak
+90013	Premium Bileti (7 gün)
+90014	Premium Bileti (15 gün)
+90015	Premium Bileti (30 gün)
+93100	Savaþ Bileti
+49324	Otomatik Av (7 gün)
+49999	Kadim Efsun Nesnesi
+75888	Ortalama Efsun Nesnesi
+75891	Beceri Efsun Nesnesi

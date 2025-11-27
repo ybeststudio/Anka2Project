@@ -1,0 +1,108 @@
+//regenIndex	mapIndex	mapName	X	Y	DIRECTION	CHANNEL	DAY	HOUR	MINUTE	SECOND	BROADCAST	SAFE_RANGE	DAYS_RANGE	HOURS_RANGE	MINUTE_RANGE	BOSS_VNUM
+//Lykos
+6	91	metin2_map_c1	396	964	0	0	0	0	0	0	0	0	0	0	10	191
+7	90	metin2_map_a1	895	903	0	0	0	0	0	0	0	0	0	0	10	191
+//Scrofa
+8	91	metin2_map_c1	164	1071	0	0	0	0	0	0	0	0	0	0	10	192
+9	90	metin2_map_a1	360	892	0	0	0	0	0	0	0	0	0	0	10	192
+//Bera
+10	91	metin2_map_c1	332	144	0	0	0	0	0	0	0	0	0	0	10	193
+11	90	metin2_map_a1	315	322	0	0	0	0	0	0	0	0	0	0	10	193
+//Tigris
+12	91	metin2_map_c1	102	326	0	0	0	0	0	0	0	0	0	0	10	194
+13	90	metin2_map_a1	286	1100	0	0	0	0	0	0	0	0	0	0	10	194
+//Capitan Bestial
+14	43	metin2_map_c3	879	812	0	0	0	0	0	0	0	0	0	0	10	591
+15	43	metin2_map_c3	666	834	0	0	0	0	0	0	0	0	0	0	10	591
+16	3	metin2_map_a3	350	152	0	0	0	0	0	0	0	0	0	0	10	591
+17	3	metin2_map_a3	249	197	0	0	0	0	0	0	0	0	0	0	10	591
+//Mahon
+18	43	metin2_map_c3	441	135	0	0	0	0	0	0	0	0	0	0	10	491
+19	43	metin2_map_c3	560	196	0	0	0	0	0	0	0	0	0	0	10	491
+20	3	metin2_map_a3	617	683	0	0	0	0	0	0	0	0	0	0	10	491
+21	3	metin2_map_a3	299	851	0	0	0	0	0	0	0	0	0	0	10	491
+//Bo
+22	43	metin2_map_c3	314	195	0	0	0	0	0	0	0	0	0	0	10	492
+23	43	metin2_map_c3	194	450	0	0	0	0	0	0	0	0	0	0	10	492
+24	3	metin2_map_a3	788	686	0	0	0	0	0	0	0	0	0	0	10	492
+25	3	metin2_map_a3	146	590	0	0	0	0	0	0	0	0	0	0	10	492
+//Goo-Pae
+26	43	metin2_map_c3	222	289	0	0	0	0	0	0	0	0	0	0	10	493
+27	43	metin2_map_c3	641	371	0	0	0	0	0	0	0	0	0	0	10	493
+28	3	metin2_map_a3	376	368	0	0	0	0	0	0	0	0	0	0	10	493
+29	3	metin2_map_a3	881	458	0	0	0	0	0	0	0	0	0	0	10	493
+//Chuong
+30	43	metin2_map_c3	624	761	0	0	0	0	0	0	0	0	0	0	10	494
+31	43	metin2_map_c3	624	761	0	0	0	0	0	0	0	0	0	0	10	494
+32	3	metin2_map_a3	537	357	0	0	0	0	0	0	0	0	0	0	10	494
+33	3	metin2_map_a3	465	367	0	0	0	0	0	0	0	0	0	0	10	494
+//Jefe Orco
+34	64	map_n_threeway	842	657	0	0	0	0	0	0	0	0	0	0	25	691
+35	64	map_n_threeway	702	830	0	0	0	0	0	0	0	0	0	0	25	691
+//Tortuga del Desierto
+36	63	metin2_map_n_desert_01	869	658	0	0	0	0	0	0	0	0	0	0	15	2191
+//Nueve colas
+37	61	map_n_snowm_01	749	629	0	0	0	0	0	0	0	0	0	0	15	1901
+//Rey Llama
+38	62	metin2_map_n_flame_01	144	778	0	0	0	0	0	0	0	0	0	0	15	2206
+//Reina Araña
+39	104	metin2_map_spiderdungeon	385	387	0	0	0	0	0	0	0	0	0	0	15	2091
+40	71	metin2_map_spiderdungeon_02	387	867	0	0	0	0	0	0	0	0	0	0	15	2091
+//Arbol Fantasma Gigante
+41	67	metin2_map_trent	73	419	0	0	0	0	0	0	0	0	0	0	15	2306
+42	67	metin2_map_trent	34	341	0	0	0	0	0	0	0	0	0	0	15	2306
+//Señor Arbol Fantasma
+43	68	metin2_map_trent02	695	65	0	0	0	0	0	0	0	0	0	0	35	2307
+//Bruja de Hielo
+47	72	metin2_map_skipia_dungeon_01	1260	1407	0	0	0	0	0	0	0	0	0	0	30	1191
+//Capitan Yonghan
+48	73	metin2_map_skipia_dungeon_02	149	428	0	0	0	0	0	0	0	0	0	0	30	2491
+49	73	metin2_map_skipia_dungeon_02	1346	1307	0	0	0	0	0	0	0	0	0	0	30	2491
+//Señor Gnoll
+50	301	Metin2_map_CapeDragonHead	854	612	0	0	0	0	0	0	0	0	0	0	30	3090
+//Guardian Superior Gnoll
+51	301	Metin2_map_CapeDragonHead	434	374	0	0	0	0	0	0	0	0	0	0	30	3091
+//Raksasa
+52	301	Metin2_map_CapeDragonHead	1106	319	0	0	0	0	0	0	0	0	0	0	30	3290
+//Martyxwar
+53	301	Metin2_map_CapeDragonHead	902	378	0	0	0	0	0	0	0	0	0	0	30	3291
+//Cara de Huesos
+54	301	Metin2_map_CapeDragonHead	1386	1325	0	0	0	0	0	0	0	0	0	0	30	3590
+55	303	metin2_map_BayBlackSand	626	1110	0	0	0	0	0	0	0	0	0	0	30	3590
+//General rojo
+56	301	Metin2_map_CapeDragonHead	1167	1315	0	0	0	0	0	0	0	0	0	0	30	3591
+57	303	metin2_map_BayBlackSand	659	424	0	0	0	0	0	0	0	0	0	0	30	3591
+//General Kappa
+58	303	metin2_map_BayBlackSand	238	864	0	0	0	0	0	0	0	0	0	0	30	3490
+//Triton
+59	303	metin2_map_BayBlackSand	146	895	0	0	0	0	0	0	0	0	0	0	30	3491
+//General Langosta
+60	303	metin2_map_BayBlackSand	288	457	0	0	0	0	0	0	0	0	0	0	30	3690
+//Rey Cangrejo
+61	303	metin2_map_BayBlackSand	209	359	0	0	0	0	0	0	0	0	0	0	30	3691
+//Cara de Huesos Brutal
+62	304	metin2_map_Mt_Thunder	376	1094	0	0	0	0	0	0	0	0	0	0	30	3595
+//General Rojo Brutal
+63	304	metin2_map_Mt_Thunder	346	841	0	0	0	0	0	0	0	0	0	0	30	3596
+//Gargola
+64	304	metin2_map_Mt_Thunder	113	109	0	0	0	0	0	0	0	0	0	0	30	3790
+//Rey Yabba
+65	304	metin2_map_Mt_Thunder	611	1139	0	0	0	0	0	0	0	0	0	0	30	3791
+//Arges
+66	304	metin2_map_Mt_Thunder	533	801	0	0	0	0	0	0	0	0	0	0	30	3190
+//Polifemo
+67	304	metin2_map_Mt_Thunder	910	88	0	0	0	0	0	0	0	0	0	0	30	3191
+//Principe Lemur
+70	302	metin2_map_dawnmistwood	1023	692	0	0	0	0	0	0	0	0	0	0	30	3390
+//Guarda Espaldas Lemur
+71	302	metin2_map_dawnmistwood	776	351	0	0	0	0	0	0	0	0	0	0	30	3391
+//Arquero Bestial
+75	43	metin2_map_c3	219	656	0	0	0	0	0	0	0	0	0	0	10	533
+76	3	metin2_map_a3	229	561	0	0	0	0	0	0	0	0	0	0	10	533
+77	64	map_n_threeway	708	1384	0	0	0	0	0	0	0	0	0	0	10	533
+78	64	map_n_threeway	1300	509	0	0	0	0	0	0	0	0	0	0	10	533
+79	64	map_n_threeway	397	829	0	0	0	0	0	0	0	0	0	0	10	533
+//Especialista bestial
+80	64	map_n_threeway	1066	1051	0	0	0	0	0	0	0	0	0	0	10	534
+81	64	map_n_threeway	207	626	0	0	0	0	0	0	0	0	0	0	10	534
+82	64	map_n_threeway	576	130	0	0	0	0	0	0	0	0	0	0	10	534

@@ -1,0 +1,21 @@
+local index = get_server_timer_arg ( ) 
+if d . select ( index ) then 
+if d . getf ( "DungeonBlock" ) == 1 then 
+d . clear_regen ( ) 
+d . notice ( index , 673 , "" , false ) 
+d . setqf2 ( "flame_dungeon" , "cooldown" , get_global_time ( ) + 60 * 60 ) 
+GetMissionInfo ( 7 , 60 ) 
+d . global_warp_all_to_base ( 5984 * 100 , 7073 * 100 , index , 60 ) 
+d . setf ( "DungeonBlock" , 0 ) 
+d . setf ( "is_on" , 0 ) 
+d . setf ( "level" , 0 ) 
+d . setf ( "real_time" , 0 ) 
+d . setf ( "spawn" , 0 ) 
+d . setf ( "counter_11" , 0 ) 
+d . setf ( "counter_13" , 0 ) 
+cleartimer ( "Purge" ) 
+clear_server_timer ( "razador_1" , index ) 
+clear_server_timer ( "razador_2" , index ) 
+clear_server_timer ( "flame_dungeon_timer" , index ) 
+end 
+end 

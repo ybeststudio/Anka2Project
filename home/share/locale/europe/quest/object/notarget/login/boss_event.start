@@ -1,0 +1,9 @@
+if game . get_event_flag ( "boss_event" ) > 0 then if pc . get_map_index ( ) == 230 then 
+notice_all ( 639 , "" ) 
+notice_all ( 640 , "" ) 
+notice_all ( 641 , "" ) 
+notice_all ( 642 , "" ) 
+notice_all ( 643 , "" ) 
+end 
+send_letter ( "Boss Etkinliði " ) 
+ return end 

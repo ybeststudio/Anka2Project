@@ -1,0 +1,2 @@
+if pc . get_map_index ( ) >= 660000 and pc . get_map_index ( ) < 670000 and d . getf ( "level" ) == 5 then game . drop_item ( 50084 , 1 ) 
+ return end 

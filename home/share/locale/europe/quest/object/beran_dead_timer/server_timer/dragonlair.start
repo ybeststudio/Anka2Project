@@ -1,0 +1,18 @@
+local arg = get_server_timer_arg ( ) 
+if d . select ( arg ) then 
+if d . getf ( "DungeonBlock" ) == 1 then 
+d . setf ( "DungeonBlock" , 0 ) 
+d . notice ( arg , 673 , "" , false ) 
+GetMissionInfo ( 1 , 60 ) 
+d . setf ( "IsOn" , 0 ) 
+d . setf ( "step" , 0 ) 
+d . setf ( "stones" , 0 ) 
+d . setf ( "level" , 0 ) 
+d . setf ( "real_time" , 0 ) 
+d . setqf2 ( "dragonlair" , "cooldown" , get_global_time ( ) + 60 * 60 ) 
+d . track_update ( 2493 ) 
+clear_server_timer ( "beran_full_timer" , arg ) 
+clear_server_timer ( "beran_1" , arg ) 
+d . global_warp_all_to_base ( 1800 * 100 , 12199 * 100 , arg , 60 ) 
+end 
+end 

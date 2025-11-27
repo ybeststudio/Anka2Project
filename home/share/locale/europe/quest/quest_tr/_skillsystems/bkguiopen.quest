@@ -1,0 +1,7 @@
+quest beceriekranac begin
+	state start begin
+		when 50300.use begin
+			cmdchat ( "bkekranac " .. q . getcurrentquestindex ( ) ) 
+		end
+	end
+end

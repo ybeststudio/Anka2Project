@@ -1,0 +1,7 @@
+say_title ( "Bilgi:" ) 
+say ( "Yaþlý kadýn yardýmýný istiyor:" ) 
+say ( "arkadaþý olan gümüþçü Beyaz Yeminlilerden bir" ) 
+say ( "Jin-Hee tarafýndan öldürüldü. 30 tane Jin-Hee" ) 
+say ( "öldürerek Gümüþçü'nün intikamýný al." ) 
+say_reward ( string . format ( "Kalan Jin-Hee sayýsý: %d" , couple_ring . get_rest_count ( ) ) ) 
+say ( "" ) 

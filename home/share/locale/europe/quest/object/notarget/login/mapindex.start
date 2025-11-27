@@ -1,0 +1,2 @@
+if pc . is_gm ( ) then chat ( "Map index: " .. pc . get_map_index ( ) .. "" ) 
+ return end 

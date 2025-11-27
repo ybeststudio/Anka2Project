@@ -1,0 +1,91 @@
+quest flame_dungeon_pass begin
+	state start begin
+		when login with pc.get_level() >= 100 begin
+		local v=find_npc_by_vnum(20381) 
+            if 0==v then 
+            else 
+                target.vid("__TARGET__", v, "konfucyus") 
+            end 
+            send_letter("Konfüçyüs")
+		end
+		
+		when button or info begin
+		say_title("Konfüçyüs")
+		say("Konfüçyüs'ün sana ihtiyacý var.")
+		say("Yanýna git ve neler olduðunu öðren.")
+		end
+		
+		when 20381.chat."Kikloplar" begin
+		target.delete("__TARGET__")
+		say_title(mob_name(npc.get_race()))
+		say("Hey! Geldiðine sevindim. Bu Kikloplarla")
+		say("baþýmýz dertte. Onlarý yenmek için bana")
+		say("yardým edersen sana hoþuna gidecek bir")
+		say("ödül vereceðim.")
+		wait()
+		say_title(mob_name(npc.get_race()))
+		say("Öldürdüðün her 100 Kiklop için:")
+		say_item_vnum(71175)
+		say("Yalnýz her gün 1 tane verebilirim.")
+		wait()
+		say_title(mob_name(npc.get_race()))
+		say("Daha fazla Kiklop öldürürsen sonraki gün")
+		say("onlarýn karþýlýðýnda da ödül alýrsýn.")
+		say("Onlarý zayýflat yeter. Gerisini biz")
+		say("halledeceðiz. Ýyi þanslar.")
+		set_state(kill)
+		end
+	end
+	
+	state kill begin
+		when 20381.chat."Kikloplar" begin
+		say_title(mob_name(npc.get_race()))
+		say("Öldürdüðün her 100 Kiklop için:")
+		say_item_vnum(71175)
+		say("Yalnýz her gün 1 tane verebilirim.")
+		wait()
+		say_title(mob_name(npc.get_race()))
+			if pc.getqf("kiklop_time") - get_time() > 0 then
+			say("Baþka bir bilet hazýrlamam için bana biraz")
+			say("zaman ver. Yarýn tekrar uðra.")
+			return
+			end
+			if pc.getqf("kiklop_count") < 100 then
+			say("Yeterince Kiklop avlayamamýþsýn. 100")
+			say("tane öldürmeden sana bunu veremem.")
+			return
+			end
+		say("Harika! Ýsteðimi yerine getirdiðin için")
+		say("sana bu ödülü veriyorum.")
+			--if pc.getqf("kiklop_count") > 100 then
+			--say("Üstelik yarýn için de "..pc.getqf("kiklop_count") - 100.." tane Kiklop öldürmüþsün.")
+			--end
+		say_reward("Geçit Bileti Kazandýn.")
+		pc.give_item2("71175",1)
+		pc.setqf("kiklop_time",get_time()+24*60*60)
+		pc.setqf("kiklop_count",pc.getqf("kiklop_count")-100)
+		q.set_counter("Öldürülen Kiklop:", pc.getqf("kiklop_count"))
+		return
+		end
+		
+		when kill with npc.get_race() == 3101 or npc.get_race() == 3102 or npc.get_race() == 3103 or npc.get_race() == 3104 or npc.get_race() == 3105 or npc.get_race() == 3190 or npc.get_race() == 3191 begin
+		pc.setqf("kiklop_count",pc.getqf("kiklop_count")+1)
+		q.set_counter("Öldürülen Kiklop:", pc.getqf("kiklop_count"))
+		end
+		
+		when letter begin
+		send_letter("Kikloplar")
+		end
+		
+		when button or info begin
+		say_title("Kikloplar")
+		say("Öldürdüðün her 100 kiklop için Konfüçyüs")
+		say("sana 1 bilet verecek. O biletle Kýrmýzý ")
+		say("Ejderha Kalesi'ne gidip kaderinle")
+		say("yüzleþebileceksin.")
+		q.set_counter("Öldürülen Kiklop:", pc.getqf("kiklop_count"))
+		end
+	end
+end
+		
+		

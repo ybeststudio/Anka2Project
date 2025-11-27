@@ -1,0 +1,41 @@
+local dungeonIndex = pc . getf ( "deviltower_zone" , "map" ) 
+local dungeonChannel = pc . getf ( "deviltower_zone" , "channel" ) 
+if pc . get_channel_id ( ) == dungeonChannel then 
+if d . select ( dungeonIndex ) then 
+local dungeonFloor = d . getf_from_map_index ( "level" , dungeonIndex ) 
+if get_global_time ( ) > pc . getf ( "deviltower_zone" , "time" ) then 
+say_new ( "[ENTER]Geri dönmek için 15 dakikaniz vardi! [ENTER]" ) 
+pc . setf ( "deviltower_zone" , "map" , 0 ) 
+pc . setf ( "deviltower_zone" , "time" , 0 ) 
+pc . setf ( "deviltower_zone" , "channel" , 0 ) 
+return 
+end 
+say_title ( mob_name ( 20348 ) ) 
+say_new ( "[ENTER]Geri dönmek istiyor musunuz? [ENTER]" ) 
+local x = select ( "Evet" , "Iptal" ) 
+if x == 1 then 
+if dungeonFloor == 2 then 
+pc . warp ( special . devil_tower [ 1 ] [ 1 ] * 100 , special . devil_tower [ 1 ] [ 2 ] * 100 , dungeonIndex ) 
+elseif dungeonFloor == 2 then 
+pc . warp ( special . devil_tower [ 2 ] [ 1 ] * 100 , special . devil_tower [ 2 ] [ 2 ] * 100 , dungeonIndex ) 
+elseif dungeonFloor == 3 then 
+pc . warp ( special . devil_tower [ 3 ] [ 1 ] * 100 , special . devil_tower [ 3 ] [ 2 ] * 100 , dungeonIndex ) 
+elseif dungeonFloor >= 4 and dungeonFloor <= 5 then 
+pc . warp ( special . devil_tower [ 4 ] [ 1 ] * 100 , special . devil_tower [ 4 ] [ 2 ] * 100 , dungeonIndex ) 
+else 
+pc . warp ( special . devil_tower [ 5 ] [ 1 ] * 100 , special . devil_tower [ 5 ] [ 2 ] * 100 , dungeonIndex ) 
+end 
+else 
+return 
+end 
+else 
+say_new ( "[ENTER]Geri dönmek için 15 dakikaniz vardi! [ENTER]" ) 
+pc . setf ( "deviltower_zone" , "map" , 0 ) 
+pc . setf ( "deviltower_zone" , "time" , 0 ) 
+pc . setf ( "deviltower_zone" , "channel" , 0 ) 
+end 
+else 
+say_new ( "Zindan bu kanalda açilmadi! [ENTER]" ) 
+say_new ( string . format ( "Girmek için, %d kanalina gidin. [ENTER]" , dungeonChannel ) ) 
+return 
+end 

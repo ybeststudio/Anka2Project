@@ -1,0 +1,8 @@
+if game . get_event_flag ( "mining_event" ) > 0 then if pc . get_map_index ( ) == 230 then 
+notice_all ( 653 , "" ) 
+notice_all ( 654 , "" ) 
+notice_all ( 655 , "" ) 
+notice_all ( 656 , "" ) 
+end 
+send_letter ( "Madencilik Etkinligi" ) 
+ return end 

@@ -1,0 +1,5 @@
+ScriptType               MotionData
+
+MotionFileName           "d:/ymir work/npc/woodcutter/run.gr2"
+MotionDuration           0.600000
+Accumulation             0.00	-331.697387	0.00

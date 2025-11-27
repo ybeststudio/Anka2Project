@@ -1,0 +1,5 @@
+q . set_counter ( "Kalan Buz Golemi:" , 10 - pc . getqf ( "kill_count" ) ) 
+setskin ( NOWINDOW ) 
+makequestbutton ( "Buz Golemi öldür!" ) 
+q . set_title ( "Buz Golemi öldür!" ) 
+q . start ( ) 

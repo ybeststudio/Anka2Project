@@ -1,0 +1,5 @@
+if pc . get_map_index ( ) >= 3.55e+06 and pc . get_map_index ( ) <= 3.55999e+06 then if d . select ( pc . get_map_index ( ) ) then 
+server_timer ( "hydra_4" , 1 , d . get_map_index ( ) ) 
+d . setf ( "dungeon_empire" , pc . get_empire ( ) ) 
+end 
+ return end 

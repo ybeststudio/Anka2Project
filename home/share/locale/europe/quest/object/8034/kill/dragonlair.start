@@ -1,0 +1,14 @@
+if pc . get_map_index ( ) >= 2.08e+06 and pc . get_map_index ( ) <= 2.08999e+06 then local new = d . getf ( "stones" ) + 1 
+d . setf ( "stones" , new ) 
+if new == 4 then 
+d . setf ( "stones" , 0 ) 
+local step = d . getf ( "step" ) + 1 
+d . setf ( "step" , step ) 
+if step == 3 then 
+d . notice ( d . get_map_index ( ) , 678 , "" , false ) 
+d . spawn_group ( 2430 , 183 , 173 , 0 , 1 , 1 ) 
+else 
+d . spawn_mob ( 2491 , 156 , 174 ) 
+end 
+end 
+ return end 

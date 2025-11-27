@@ -1,0 +1,24 @@
+local arg = get_server_timer_arg ( ) 
+if d . select ( arg ) then 
+if d . getf ( "DungeonBlock" ) == 1 then 
+GetMissionInfo ( 6 , 60 ) 
+d . global_warp_all_to_base ( 5918 * 100 , 993 * 100 , arg , 60 ) 
+d . notice ( d . get_map_index ( ) , 673 , "" , false ) 
+d . setqf2 ( "devilcatacomb_zone" , "catacombkey" , 0 ) 
+d . setqf2 ( "devilcatacomb_zone" , "cooldown" , get_global_time ( ) + 60 * 60 ) 
+d . track_update ( 2598 ) 
+d . setf ( "DungeonBlock" , 0 ) 
+d . setf ( "IsOn" , 0 ) 
+d . setf ( "real_time" , 0 ) 
+d . setf ( "stones" , 0 ) 
+d . setf ( "ticket" , 0 ) 
+d . setf ( "q_level" , 0 ) 
+d . setf ( "tortoise_timer" , 0 ) 
+clear_server_timer ( "devilcatacomb_full_timer" , arg ) 
+clear_server_timer ( "devilcatacomb_1" , arg ) 
+clear_server_timer ( "devilcatacomb_2" , arg ) 
+clear_server_timer ( "devilcatacomb_3" , arg ) 
+clear_server_timer ( "devilcatacomb_4" , arg ) 
+clear_server_timer ( "devilcatacomb_5" , arg ) 
+end 
+end 

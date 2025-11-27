@@ -1,0 +1,5 @@
+if pc . get_map_index ( ) >= 660000 and pc . get_map_index ( ) < 670000 then GetMissionInfo ( 4 , 10 ) 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+server_timer ( "Devil_4_1" , 10 , d . get_map_index ( ) ) 
+clear_server_timer ( "devil_one_two_floor" , d . get_map_index ( ) ) 
+ return end 

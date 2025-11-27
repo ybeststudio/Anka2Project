@@ -1,0 +1,18 @@
+say_title ( gameforge . change_empire . _10_npcChat ) 
+say ( gameforge . change_empire . _40_say ) 
+if get_time ( ) < pc . getqf ( "next_use_time" ) then 
+say_title ( gameforge . change_empire . _50_sayTitle ) 
+say_reward ( gameforge . change_empire . _60_sayReward ) 
+if pc . is_gm ( ) then 
+say ( gameforge . change_empire . _70_say ) 
+local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+if s == 1 then 
+say ( gameforge . change_empire . _80_say ) 
+pc . setqf ( "next_use_time" , 0 ) 
+end 
+end 
+return 
+end 
+if change_empire . move_pc ( ) == true then 
+pc . setqf ( "next_use_time" , get_time ( ) + 86400 * 7 ) 
+end 

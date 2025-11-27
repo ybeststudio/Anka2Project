@@ -1,0 +1,54 @@
+say_title ( "Seyis" ) 
+say ( "Demek bineðini geliþtirmek istiyorsun, öyle mi?" ) 
+say ( "Nasýl yapýldýðýný biliyor musun? Hadi gel" ) 
+say ( "anlatayým." ) 
+wait ( ) 
+say_title ( "Seyis" ) 
+say ( "Bineðini geliþtirip yabani binek hayvaný " ) 
+say ( "yapabilmen için evrim parþömeni arayýþýna" ) 
+say ( "çýkmalýsýn. Sonra yaban hayvanýný eðitip cesur" ) 
+say ( "binek hayvaný yapabilmen içinde mutasyon" ) 
+say ( "parþömeni bulmalýsýn. Tehlikeli" ) 
+say ( "devlerin yaþadýðý çok uzak bir diyarda saklý " ) 
+say ( "olduklarý söyleniyor!" ) 
+wait ( ) 
+say_title ( "Seyis" ) 
+say ( "Bana o parþömenlerden birini getirirsen bineðini" ) 
+say ( "geliþtireceðim. Getirdin mi yoksa?" ) 
+local a = select ( "Evet, bineðimi geliþtirmek istiyorum!" , "Hayýr, þimdi deðil." ) 
+if a == 2 then 
+return 
+else 
+if pc . countitem ( "50067" ) > 0 or pc . countitem ( "50068" ) > 0 then 
+say_title ( "Seyis" ) 
+say ( "Ah, parþömenlerden birini getirmiþsin. Hangisini" ) 
+say ( "getirdin? Evrim parþömeniyle tecrübesiz yavru" ) 
+say ( "hayvanýný savaþ için eðitiyorsun. Sonra da" ) 
+say ( "mutasyon parþömeniyle geliþtirip cesur binek" ) 
+say ( "hayvaný yapabiliyorsun." ) 
+local b = select ( "Evrim parþömeni bende." , "Mutasyon parþömeni bende." , "Parþömen getirmedim." ) 
+if b == 3 then 
+return 
+elseif b == 1 then 
+say_title ( "Seyis" ) 
+say ( "Ah iþte evrim parþömeni! Binek hayvaný mührüne" ) 
+say ( "bir göz atayým. Sahtesiyle beni kandýrmaya" ) 
+say ( "çalýþan nicelerini gördüm! Ýlk önce gerçek olup" ) 
+say ( "olmadýðýna bakacaðým. Ver bakalým. (Mührü seyisin" ) 
+say ( "üzerine çek.) " ) 
+elseif b == 2 then 
+say_title ( "Seyis" ) 
+say ( "Ah iþte mutasyon parþömeni! Binek hayvaný mührüne" ) 
+say ( "bir göz atayým. Sahtesiyle beni kandýrmaya" ) 
+say ( "çalýþan nicelerini gördüm! Ýlk önce gerçek olup" ) 
+say ( "olmadýðýna bakacaðým. Ver bakalým. (Mührü seyisin" ) 
+say ( "üzerine çek.) " ) 
+end 
+else 
+say_title ( "Seyis" ) 
+say ( "Kusura bakma ama doðru belgeler olmadan sana" ) 
+say ( "yardýmcý olamam. Yine beni iþletmeye kalkýþma" ) 
+say ( "yoksa fena yaparým." ) 
+say ( "" ) 
+end 
+end 

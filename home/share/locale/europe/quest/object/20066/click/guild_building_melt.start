@@ -1,0 +1,32 @@
+if npc . get_guild ( ) == pc . get_guild ( ) and pc . isguildmaster ( ) then say ( " 3.000.000 Yang karşılığında iyi bir kimyager" ) 
+say ( "kullanabilirsin." ) 
+if pc . get_gold ( ) < 3e+06 then 
+say ( "3.000.000 Yang getir." ) 
+else 
+say ( "Hangi tür üzerinde çalışan kimyager istiyorsun?" ) 
+local sel = 0 
+local timetable1 = { "Elmas" , "Fosiller" , "Bakır" , "Gümüş" , "Altın" , "Yeşim" , "Devam" , "Kapat" } 
+local valuetable1 = { 14043 , 14045 , 14046 , 14047 , 14048 , 14049 , 0 , - 1 } 
+local timetable2 = { "Abanoz" , "İnci" , "Beyaz Altın" , "Kristal" , "Ametist" , "Elmas" , "Devam" , "Kapat" } 
+local valuetable2 = { 14050 , 10451 , 14052 , 14053 , 14054 , 14055 , 0 , - 1 } 
+repeat 
+local s = select_table ( timetable1 ) 
+sel = valuetable1 [ s ] 
+if sel == 0 then 
+local s = select_table ( timetable2 ) 
+sel = valuetable2 [ s ] 
+end 
+until sel ~= 0 
+if sel ~= - 1 then 
+npc_num = sel + 20060 - 14043 
+if npc_num == npc . get_race ( ) then 
+say ( "Bu malzeme ile çalısması mümkün değil." ) 
+else 
+pc . changegold ( - 3e+06 ) 
+building . reconstruct ( sel ) 
+end 
+else 
+say ( "Kapat" ) 
+end 
+end 
+ return end 

@@ -1,0 +1,21 @@
+if pc . get_map_index ( ) >= 2.08e+06 and pc . get_map_index ( ) <= 2.08999e+06 then pc . set_warp_location_local ( 73 , 1800 , 12199 ) 
+local real_time = get_global_time ( ) 
+local index = d . get_map_index ( ) 
+if index >= 2.08e+06 and index <= 2.08999e+06 then 
+if not pc . is_gm ( ) and pc . getf ( "dragonlair" , "cooldown" ) > get_global_time ( ) then 
+pc . setf ( "dragonlair" , "map" , 0 ) 
+pc . setf ( "dragonlair" , "time" , 0 ) 
+pc . setf ( "dragonlair" , "channel" , 0 ) 
+pc . warp ( 1800 * 100 , 12199 * 100 ) 
+return 
+end 
+if d . getf ( "DungeonBlock" ) == 1 then 
+if d . getf ( "first_regen" ) == 1 then 
+server_timer ( "beran_1" , 1 , index ) 
+end 
+cmdchat ( string . format ( "RefreshDungeonTimer %d %d" , 1 , d . getf ( "real_time" ) - real_time ) ) 
+else 
+pc . warp ( 1800 * 100 , 12199 * 100 ) 
+end 
+end 
+ return end 

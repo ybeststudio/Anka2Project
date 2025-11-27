@@ -1,0 +1,70 @@
+quest horse_summon begin
+	state start begin
+		function get_horse_summon_prob_pct()
+			local skill_level=pc.get_skill_level(131)
+			if skill_level==1 then
+				return 15
+			elseif skill_level==2 then
+				return 20
+			elseif skill_level==3 then
+				return 30
+			elseif skill_level==4 then
+				return 40
+			elseif skill_level==5 then
+				return 50
+			elseif skill_level==6 then
+				return 60
+			elseif skill_level==7 then
+				return 70
+			elseif skill_level==8 then
+				return 80
+			elseif skill_level==9 then
+				return 90
+			elseif skill_level>=10 then
+				return 100
+			end
+			return 10
+		end
+		when 50051.use with horse.get_grade()==0 begin
+			syschat("Acemi atý çaðýrmak için önce acemi at görevini yapman gerek.")
+		end
+		when 50051.use with horse.get_grade()==1 begin
+			horse.summon()
+		end
+		when 50051.use with horse.get_grade()==2 begin
+			syschat("Zýrhlý atý çaðýrmak için zýrhlý at kitabýna ihtiyacýn var.")
+		end
+		when 50051.use with horse.get_grade()==3 begin
+			syschat("Asker atý çaðýrmak için asker at kitabýna ihtiyacýn var.")
+		end
+		when 50052.use with horse.get_grade()==0 begin
+			syschat("Zýrhlý atý çaðýrmak için önce acemi at görevini yapman gerek.")
+		end
+		when 50052.use with horse.get_grade()==1 begin
+			syschat("Acemi atý çaðýrmak için at resmine ihtiyacýn var.")
+		end
+		when 50052.use with horse.get_grade()==2 begin
+			horse.summon()
+		end
+		when 50052.use with horse.get_grade()==3 begin
+			syschat("Asker atý çaðýrmak için asker at kitabýna ihtiyacýn var.")
+		end
+		when 50053.use with horse.get_grade()==0 begin
+			syschat("Asker atý çaðýrmak için önce acemi at görevini yapman gerek.")
+		end
+		when 50053.use with horse.get_grade()==1 begin
+			syschat("Acemi atý çaðýrmak için at resmine ihtiyacýn var.")
+		end
+		when 50053.use with horse.get_grade()==2 begin
+			syschat("Zýrhlý atý çaðýrmak için zýrhlý at kitabýna ihtiyacýn var.")
+		end
+		when 50053.use with horse.get_grade()==3 begin
+			horse.summon()
+		end
+	end
+	state __COMPLETE__ begin
+		 when enter begin
+			q.done()
+		end
+	end
+end

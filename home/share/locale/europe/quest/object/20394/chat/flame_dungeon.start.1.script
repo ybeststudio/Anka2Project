@@ -1,0 +1,29 @@
+local dungeonChannel = pc . getf ( "flame_dungeon" , "channel" ) 
+if dungeonChannel == pc . get_channel_id ( ) then 
+local dungeonMapIndex = pc . getf ( "flame_dungeon" , "map" ) 
+if d . select ( dungeonMapIndex ) then 
+local dwLevel = d . getf_from_map_index ( "level" , dungeonMapIndex ) 
+if get_global_time ( ) > pc . getf ( "flame_dungeon" , "time" ) then 
+say_new ( "[ENTER]Geri dönmek için 15 dakikaniz vardi! [ENTER]" ) 
+pc . setf ( "flame_dungeon" , "map" , 0 ) 
+pc . setf ( "flame_dungeon" , "time" , 0 ) 
+pc . setf ( "flame_dungeon" , "channel" , 0 ) 
+return 
+end 
+if dwLevel == 7 then 
+pc . warp ( 8109 * 100 , 6867 * 100 , dungeonMapIndex ) 
+else 
+pc . warp ( 7766 * 100 , 6719 * 100 , dungeonMapIndex ) 
+end 
+else 
+say_new ( "Müsait degil, tekrar baslayabilirsiniz. [ENTER]" ) 
+pc . setf ( "flame_dungeon" , "map" , 0 ) 
+pc . setf ( "flame_dungeon" , "time" , 0 ) 
+pc . setf ( "flame_dungeon" , "channel" , 0 ) 
+return 
+end 
+else 
+say_new ( "Zindan bu kanalda açilmadi! [ENTER]" ) 
+say_new ( string . format ( "Girmek için, %d kanalina gidin. [ENTER]" , dungeonChannel ) ) 
+return 
+end 

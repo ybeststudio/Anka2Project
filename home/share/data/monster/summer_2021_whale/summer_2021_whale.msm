@@ -1,0 +1,13 @@
+ScriptType            RaceDataScript
+
+BaseModelFileName     "D:\Ymir Work\npc_pet\summer_2021_whale\summer_2021_whale.GR2"
+
+Group ShapeData
+{
+    PathName 		 ""
+    ShapeDataCount 		 0
+}
+Group AttachingData
+{
+    AttachingDataCount       0
+}

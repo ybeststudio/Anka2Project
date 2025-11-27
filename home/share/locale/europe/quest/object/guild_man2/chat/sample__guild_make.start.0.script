@@ -1,0 +1,93 @@
+say_title ( "Köy Gardiyaný: " ) 
+say ( "  " ) 
+say ( " Yeni lonca kurmak istiyor musun? " ) 
+say ( "  " ) 
+say ( " Yeni lonca kurmak için " ) 
+say ( " en az 55.seviyede olmalýsýn. Ayrýca " ) 
+say ( "  10.000.000 Yang gerekiyor. " ) 
+say ( "  " ) 
+say ( " Lonca kurmak istiyor musun? " ) 
+say ( "  " ) 
+if select ( "Evet" , "Hayýr " ) == 2 then return end 
+say ( "  " ) 
+say ( " Lonca ismini yaz. " ) 
+say ( "  " ) 
+say ( "  " ) 
+local guild_name = string . gsub ( input ( ) , "[^A-Za-z0-9 ]" , " " ) 
+local guild_len_name = string . len ( guild_name ) 
+if not ( ( 2 < guild_len_name ) and ( guild_len_name < 12 ) ) then 
+say_title ( "Köy Gardiyaný: " ) 
+say ( "  " ) 
+say ( " Lonca ismi 3-11 karakter arasýnda olmalýdýr. " ) 
+say ( " Lütfen tekrar deneyin. " ) 
+say ( "  " ) 
+say ( "  " ) 
+return 
+end 
+say ( " Lonca ismi: " .. guild_name ) 
+say ( " Bu isimle lonca kurmak istediðine emin misin? " ) 
+if select ( "Evet" , "Hayýr " ) == 2 then return end 
+if not ( pc . get_gold ( ) >= 1e+07 ) then 
+say_title ( "Köy Gardiyaný: " ) 
+say ( "  " ) 
+say ( " Yeterli yang yok! " ) 
+say ( "  " ) 
+say ( "  " ) 
+return 
+end 
+if not ( pc . get_level ( ) >= 55 ) then 
+say_title ( "Köy Gardiyaný: " ) 
+say ( "  " ) 
+say ( " Seviyen lonca kurmak için " ) 
+say ( " yeterli deðil. " ) 
+say ( "  " ) 
+say ( "  " ) 
+return 
+end 
+if ( pc . hasguild ( ) or pc . isguildmaster ( ) ) then 
+say_title ( "Köy Gardiyaný: " ) 
+say ( "  " ) 
+say ( " Zaten bir loncaya üyesin! " ) 
+say ( "  " ) 
+say ( "  " ) 
+return 
+end 
+local ret = pc . make_guild0 ( guild_name ) 
+if ret == - 2 then 
+say_title ( "Köy Gardiyaný: " ) 
+say ( "  " ) 
+say ( " Lonca ismi geçersiz! " ) 
+say ( "  " ) 
+say ( "  " ) 
+elseif ret == - 1 then 
+say_title ( "Köy Gardiyaný: " ) 
+say ( "  " ) 
+say ( " Lonca ismi zaten kullanýlýyor! " ) 
+say ( "  " ) 
+say ( "  " ) 
+elseif ret == 0 then 
+say_title ( "Köy Gardiyaný: " ) 
+say ( "  " ) 
+say ( " Lonca kurulamadý! " ) 
+say ( "  " ) 
+say ( "  " ) 
+elseif ret == 1 then 
+pc . change_gold ( - 1e+07 ) 
+say_title ( "Köy Gardiyaný: " ) 
+say ( "  " ) 
+say ( " Lonca baþarýyla kuruldu! " ) 
+say ( "  " ) 
+say ( "  " ) 
+elseif ret == 2 then 
+say_title ( "Köy Gardiyaný: " ) 
+say ( "  " ) 
+say ( " Zaten bir loncaya üyesin! " ) 
+say ( "  " ) 
+say ( "  " ) 
+elseif ret == 3 then 
+say_title ( "Köy Gardiyaný: " ) 
+say ( "  " ) 
+say ( " Zaten bir loncaya üyesin! " ) 
+say ( "  " ) 
+say ( "  " ) 
+end 

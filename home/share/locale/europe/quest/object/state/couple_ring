@@ -1,0 +1,3 @@
+couple_ring={["start"]=0,["__COMPLETE__"]=668443392,["failure"]=563807169,["kill"]=120149609,["report"]=-1003522172,get_rest_count= function ()return 30 - pc . getqf ( "kill_count" ) 
+end ,is_completed= function ()return pc . getqf ( "kill_count" ) >= 30 
+end }

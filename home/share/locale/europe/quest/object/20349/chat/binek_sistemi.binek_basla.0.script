@@ -1,0 +1,484 @@
+say_title ( "Seyis" ) 
+say ( "Sertifikaný bir binek ile mi deðiþtirmek" ) 
+say ( "istiyorsun? Bakalým hangisini getirdin. Çok" ) 
+say ( "sayýda sertifikaya sahipsen, önümüzdeki adýmlarda" ) 
+say ( "aralarýndan bir tane seçebilirsin." ) 
+wait ( ) 
+if pc . count_item ( 52701 ) > 0 then 
+say_title ( "Seyis" ) 
+say ( "Bu bineði almak istiyorsun, öyle mi? Öyleyse" ) 
+say ( "'Evet' ile onayla ve bir sonraki adýmda onun" ) 
+say ( "için bir bonus seç. Sonraki sertifikaya gitmek" ) 
+say ( "için 'Hayýr' seç." ) 
+say_item_vnum ( 52701 ) 
+say ( "Emin misin?" ) 
+local s = select ( "Evet" , "Hayýr" , "Vazgeç " ) 
+if s == 3 then 
+return 
+elseif s == 1 then 
+say_title ( "Seyis" ) 
+say ( "Þimdi de bir bonus seç." ) 
+local a = select ( "Canavarlara karþý güçlü " , "Tecrübe (EXP)" , "Hayat Puaný (HP)" , "Savunma (Sav)" , "Saldýrý deðeri (SD)" , "Kalsýn, teþekkür ederim." ) 
+if a == 1 then 
+pc . remove_item ( "52701" , 1 ) 
+pc . give_item2 ( "52031" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 2 then 
+pc . remove_item ( "52701" , 1 ) 
+pc . give_item2 ( "52032" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 3 then 
+pc . remove_item ( "52701" , 1 ) 
+pc . give_item2 ( "52033" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 4 then 
+pc . remove_item ( "52701" , 1 ) 
+pc . give_item2 ( "52034" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 5 then 
+pc . remove_item ( "52701" , 1 ) 
+pc . give_item2 ( "52035" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 6 then 
+say_title ( "Seyis" ) 
+say ( "Henüz karar veremiyorsun galiba. Hazýr olduðunda" ) 
+say ( "tekrar gel." ) 
+return 
+end 
+else 
+if pc . count_item ( "52702" ) + pc . count_item ( "52703" ) + pc . count_item ( "52704" ) + pc . count_item ( "52705" ) + pc . count_item ( "52706" ) + pc . count_item ( "52707" ) + pc . count_item ( "52708" ) == 0 then 
+say_title ( "Seyis" ) 
+say ( "Demek sertifikaný deðiþtirmek istemiyorsun. Hazýr" ) 
+say ( "olduðunda tekrar gel." ) 
+return 
+end 
+end 
+end 
+if pc . count_item ( 52702 ) > 0 then 
+say_title ( "Seyis" ) 
+say ( "Bu bineði almak istiyorsun, öyle mi? Öyleyse" ) 
+say ( "'Evet' ile onayla ve bir sonraki adýmda onun" ) 
+say ( "için bir bonus seç. Sonraki sertifikaya gitmek" ) 
+say ( "için 'Hayýr' seç." ) 
+say_item_vnum ( 52702 ) 
+say ( "Emin misin?" ) 
+local s = select ( "Evet" , "Hayýr" , "Vazgeç " ) 
+if s == 3 then 
+return 
+elseif s == 1 then 
+say_title ( "Seyis" ) 
+say ( "Þimdi de bir bonus seç." ) 
+local a = select ( "Canavarlara karþý güçlü " , "Tecrübe (EXP)" , "Hayat Puaný (HP)" , "Savunma (Sav)" , "Saldýrý deðeri (SD)" , "Kalsýn, teþekkür ederim." ) 
+if a == 1 then 
+pc . remove_item ( "52702" , 1 ) 
+pc . give_item2 ( "52046" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 2 then 
+pc . remove_item ( "52702" , 1 ) 
+pc . give_item2 ( "52047" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 3 then 
+pc . remove_item ( "52702" , 1 ) 
+pc . give_item2 ( "52048" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 4 then 
+pc . remove_item ( "52702" , 1 ) 
+pc . give_item2 ( "52049" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 5 then 
+pc . remove_item ( "52702" , 1 ) 
+pc . give_item2 ( "52050" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 6 then 
+say_title ( "Seyis" ) 
+say ( "Henüz karar veremiyorsun galiba. Hazýr olduðunda" ) 
+say ( "tekrar gel." ) 
+return 
+end 
+else 
+if pc . count_item ( "52703" ) + pc . count_item ( "52704" ) + pc . count_item ( "52705" ) + pc . count_item ( "52706" ) + pc . count_item ( "52707" ) + pc . count_item ( "52708" ) == 0 then 
+say_title ( "Seyis" ) 
+say ( "Demek sertifikaný deðiþtirmek istemiyorsun. Hazýr" ) 
+say ( "olduðunda tekrar gel." ) 
+return 
+end 
+end 
+end 
+if pc . count_item ( 52703 ) > 0 then 
+say_title ( "Seyis" ) 
+say ( "Bu bineði almak istiyorsun, öyle mi? Öyleyse" ) 
+say ( "'Evet' ile onayla ve bir sonraki adýmda onun" ) 
+say ( "için bir bonus seç. Sonraki sertifikaya gitmek" ) 
+say ( "için 'Hayýr' seç." ) 
+say_item_vnum ( 52703 ) 
+say ( "Emin misin?" ) 
+local s = select ( "Evet" , "Hayýr" , "Vazgeç " ) 
+if s == 3 then 
+return 
+elseif s == 1 then 
+say_title ( "Seyis" ) 
+say ( "Þimdi de bir bonus seç." ) 
+local a = select ( "Canavarlara karþý güçlü " , "Tecrübe (EXP)" , "Hayat Puaný (HP)" , "Savunma (Sav)" , "Saldýrý deðeri (SD)" , "Kalsýn, teþekkür ederim." ) 
+if a == 1 then 
+pc . remove_item ( "52703" , 1 ) 
+pc . give_item2 ( "52001" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 2 then 
+pc . remove_item ( "52703" , 1 ) 
+pc . give_item2 ( "52002" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 3 then 
+pc . remove_item ( "52703" , 1 ) 
+pc . give_item2 ( "52003" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 4 then 
+pc . remove_item ( "52703" , 1 ) 
+pc . give_item2 ( "52004" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 5 then 
+pc . remove_item ( "52703" , 1 ) 
+pc . give_item2 ( "52005" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 6 then 
+say_title ( "Seyis" ) 
+say ( "Henüz karar veremiyorsun galiba. Hazýr olduðunda" ) 
+say ( "tekrar gel." ) 
+return 
+end 
+else 
+if pc . count_item ( "52704" ) + pc . count_item ( "52705" ) + pc . count_item ( "52706" ) + pc . count_item ( "52707" ) + pc . count_item ( "52708" ) == 0 then 
+say_title ( "Seyis" ) 
+say ( "Demek sertifikaný deðiþtirmek istemiyorsun. Hazýr" ) 
+say ( "olduðunda tekrar gel." ) 
+return 
+end 
+end 
+end 
+if pc . count_item ( 52704 ) > 0 then 
+say_title ( "Seyis" ) 
+say ( "Bu bineði almak istiyorsun, öyle mi? Öyleyse" ) 
+say ( "'Evet' ile onayla ve bir sonraki adýmda onun" ) 
+say ( "için bir bonus seç. Sonraki sertifikaya gitmek" ) 
+say ( "için 'Hayýr' seç." ) 
+say_item_vnum ( 52704 ) 
+say ( "Emin misin?" ) 
+local s = select ( "Evet" , "Hayýr" , "Vazgeç " ) 
+if s == 3 then 
+return 
+elseif s == 1 then 
+say_title ( "Seyis" ) 
+say ( "Þimdi de bir bonus seç." ) 
+local a = select ( "Canavarlara karþý güçlü " , "Tecrübe (EXP)" , "Hayat Puaný (HP)" , "Savunma (Sav)" , "Saldýrý deðeri (SD)" , "Kalsýn, teþekkür ederim." ) 
+if a == 1 then 
+pc . remove_item ( "52704" , 1 ) 
+pc . give_item2 ( "52016" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 2 then 
+pc . remove_item ( "52704" , 1 ) 
+pc . give_item2 ( "52017" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 3 then 
+pc . remove_item ( "52704" , 1 ) 
+pc . give_item2 ( "52018" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 4 then 
+pc . remove_item ( "52704" , 1 ) 
+pc . give_item2 ( "52019" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 5 then 
+pc . remove_item ( "52704" , 1 ) 
+pc . give_item2 ( "52020" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 6 then 
+say_title ( "Seyis" ) 
+say ( "Henüz karar veremiyorsun galiba. Hazýr olduðunda" ) 
+say ( "tekrar gel." ) 
+return 
+end 
+else 
+if pc . count_item ( "52705" ) + pc . count_item ( "52706" ) + pc . count_item ( "52707" ) + pc . count_item ( "52708" ) == 0 then 
+say_title ( "Seyis" ) 
+say ( "Demek sertifikaný deðiþtirmek istemiyorsun. Hazýr" ) 
+say ( "olduðunda tekrar gel." ) 
+return 
+end 
+end 
+end 
+if pc . count_item ( 52705 ) > 0 then 
+say_title ( "Seyis" ) 
+say ( "Bu bineði almak istiyorsun, öyle mi? Öyleyse" ) 
+say ( "'Evet' ile onayla ve bir sonraki adýmda onun" ) 
+say ( "için bir bonus seç. Sonraki sertifikaya gitmek" ) 
+say ( "için 'Hayýr' seç." ) 
+say_item_vnum ( 52705 ) 
+say ( "Emin misin?" ) 
+local s = select ( "Evet" , "Hayýr" , "Vazgeç " ) 
+if s == 3 then 
+return 
+elseif s == 1 then 
+say_title ( "Seyis" ) 
+say ( "Þimdi de bir bonus seç." ) 
+local a = select ( "Canavarlara karþý güçlü " , "Tecrübe (EXP)" , "Hayat Puaný (HP)" , "Savunma (Sav)" , "Saldýrý deðeri (SD)" , "Kalsýn, teþekkür ederim." ) 
+if a == 1 then 
+pc . remove_item ( "52705" , 1 ) 
+pc . give_item2 ( "52061" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 2 then 
+pc . remove_item ( "52705" , 1 ) 
+pc . give_item2 ( "52062" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 3 then 
+pc . remove_item ( "52705" , 1 ) 
+pc . give_item2 ( "52063" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 4 then 
+pc . remove_item ( "52705" , 1 ) 
+pc . give_item2 ( "52064" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 5 then 
+pc . remove_item ( "52705" , 1 ) 
+pc . give_item2 ( "52065" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 6 then 
+say_title ( "Seyis" ) 
+say ( "Henüz karar veremiyorsun galiba. Hazýr olduðunda" ) 
+say ( "tekrar gel." ) 
+return 
+end 
+else 
+if pc . count_item ( "52706" ) + pc . count_item ( "52707" ) + pc . count_item ( "52708" ) == 0 then 
+say_title ( "Seyis" ) 
+say ( "Demek sertifikaný deðiþtirmek istemiyorsun. Hazýr" ) 
+say ( "olduðunda tekrar gel." ) 
+return 
+end 
+end 
+end 
+if pc . count_item ( 52706 ) > 0 then 
+say_title ( "Seyis" ) 
+say ( "Bu bineði almak istiyorsun, öyle mi? Öyleyse" ) 
+say ( "'Evet' ile onayla ve bir sonraki adýmda onun" ) 
+say ( "için bir bonus seç. Sonraki sertifikaya gitmek" ) 
+say ( "için 'Hayýr' seç." ) 
+say_item_vnum ( 52706 ) 
+say ( "Emin misin?" ) 
+local s = select ( "Evet" , "Hayýr" , "Vazgeç " ) 
+if s == 3 then 
+return 
+elseif s == 1 then 
+say_title ( "Seyis" ) 
+say ( "Þimdi de bir bonus seç." ) 
+local a = select ( "Canavarlara karþý güçlü " , "Tecrübe (EXP)" , "Hayat Puaný (HP)" , "Savunma (Sav)" , "Saldýrý deðeri (SD)" , "Kalsýn, teþekkür ederim." ) 
+if a == 1 then 
+pc . remove_item ( "52706" , 1 ) 
+pc . give_item2 ( "52076" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 2 then 
+pc . remove_item ( "52706" , 1 ) 
+pc . give_item2 ( "52077" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 3 then 
+pc . remove_item ( "52706" , 1 ) 
+pc . give_item2 ( "52078" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 4 then 
+pc . remove_item ( "52706" , 1 ) 
+pc . give_item2 ( "52079" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 5 then 
+pc . remove_item ( "52706" , 1 ) 
+pc . give_item2 ( "52080" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 6 then 
+say_title ( "Seyis" ) 
+say ( "Henüz karar veremiyorsun galiba. Hazýr olduðunda" ) 
+say ( "tekrar gel." ) 
+return 
+end 
+else 
+if pc . count_item ( "52707" ) + pc . count_item ( "52708" ) == 0 then 
+say_title ( "Seyis" ) 
+say ( "Demek sertifikaný deðiþtirmek istemiyorsun. Hazýr" ) 
+say ( "olduðunda tekrar gel." ) 
+return 
+end 
+end 
+end 
+if pc . count_item ( 52707 ) > 0 then 
+say_title ( "Seyis" ) 
+say ( "Bu bineði almak istiyorsun, öyle mi? Öyleyse" ) 
+say ( "'Evet' ile onayla ve bir sonraki adýmda onun" ) 
+say ( "için bir bonus seç. Sonraki sertifikaya gitmek" ) 
+say ( "için 'Hayýr' seç." ) 
+say_item_vnum ( 52707 ) 
+say ( "Emin misin?" ) 
+local s = select ( "Evet" , "Hayýr" , "Vazgeç " ) 
+if s == 3 then 
+return 
+elseif s == 1 then 
+say_title ( "Seyis" ) 
+say ( "Þimdi de bir bonus seç." ) 
+local a = select ( "Canavarlara karþý güçlü " , "Tecrübe (EXP)" , "Hayat Puaný (HP)" , "Savunma (Sav)" , "Saldýrý deðeri (SD)" , "Kalsýn, teþekkür ederim." ) 
+if a == 1 then 
+pc . remove_item ( "52707" , 1 ) 
+pc . give_item2 ( "52091" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 2 then 
+pc . remove_item ( "52707" , 1 ) 
+pc . give_item2 ( "52092" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 3 then 
+pc . remove_item ( "52707" , 1 ) 
+pc . give_item2 ( "52093" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 4 then 
+pc . remove_item ( "52707" , 1 ) 
+pc . give_item2 ( "52094" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 5 then 
+pc . remove_item ( "52707" , 1 ) 
+pc . give_item2 ( "52095" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 6 then 
+say_title ( "Seyis" ) 
+say ( "Henüz karar veremiyorsun galiba. Hazýr olduðunda" ) 
+say ( "tekrar gel." ) 
+return 
+end 
+else 
+if pc . count_item ( "52708" ) == 0 then 
+say_title ( "Seyis" ) 
+say ( "Demek sertifikaný deðiþtirmek istemiyorsun. Hazýr" ) 
+say ( "olduðunda tekrar gel." ) 
+return 
+end 
+end 
+end 
+if pc . count_item ( 52708 ) > 0 then 
+say_title ( "Seyis" ) 
+say ( "Bu bineði almak istiyorsun, öyle mi? Öyleyse" ) 
+say ( "'Evet' ile onayla ve bir sonraki adýmda onun" ) 
+say ( "için bir bonus seç. Sonraki sertifikaya gitmek" ) 
+say ( "için 'Hayýr' seç." ) 
+say_item_vnum ( 52708 ) 
+say ( "Emin misin?" ) 
+local s = select ( "Evet" , "Hayýr" , "Vazgeç " ) 
+if s == 3 then 
+return 
+elseif s == 1 then 
+say_title ( "Seyis" ) 
+say ( "Þimdi de bir bonus seç." ) 
+local a = select ( "Canavarlara karþý güçlü " , "Tecrübe (EXP)" , "Hayat Puaný (HP)" , "Savunma (Sav)" , "Saldýrý deðeri (SD)" , "Kalsýn, teþekkür ederim." ) 
+if a == 1 then 
+pc . remove_item ( "52708" , 1 ) 
+pc . give_item2 ( "52106" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 2 then 
+pc . remove_item ( "52708" , 1 ) 
+pc . give_item2 ( "52107" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 3 then 
+pc . remove_item ( "52708" , 1 ) 
+pc . give_item2 ( "52108" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 4 then 
+pc . remove_item ( "52708" , 1 ) 
+pc . give_item2 ( "52109" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 5 then 
+pc . remove_item ( "52708" , 1 ) 
+pc . give_item2 ( "52110" , 1 ) 
+say_title ( "Seyis" ) 
+say ( "Ýyi bir seçim. Baþarýlar!" ) 
+return 
+elseif a == 6 then 
+say_title ( "Seyis" ) 
+say ( "Henüz karar veremiyorsun galiba. Hazýr olduðunda" ) 
+say ( "tekrar gel." ) 
+return 
+end 
+else 
+say_title ( "Seyis" ) 
+say ( "Demek sertifikaný deðiþtirmek istemiyorsun. Hazýr" ) 
+say ( "olduðunda tekrar gel." ) 
+return 
+end 
+end 

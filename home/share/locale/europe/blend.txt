@@ -1,0 +1,119 @@
+#적상액						
+section						
+	item_vnum	50821				
+	apply_type	CRITICAL_PCT				
+	apply_value	8	10	12	15	20
+	apply_duration	600	600	600	600	600
+end						
+						
+#홍상액						
+section						
+	item_vnum	50822				
+	apply_type	PENETRATE_PCT				
+	apply_value	8	10	12	15	20
+	apply_duration	600	600	600	600	600
+end						
+						
+#황상액						
+section						
+	item_vnum	50823				
+	apply_type	ATTACK_SPEED				
+	apply_value	2	3	4	5	8
+	apply_duration	600	600	600	600	600
+end						
+						
+#녹상액						
+section						
+	item_vnum	50824				
+	apply_type	RESIST_MAGIC				
+	apply_value	8	10	12	15	20
+	apply_duration	600	600	600	600	600
+end						
+
+#청상액						
+section						
+	item_vnum	50825				
+	apply_type	ATT_BONUS				
+	apply_value	30	50	70	90	120
+	apply_duration	600	600	600	600	600
+end						
+
+#백상액						
+section						
+	item_vnum	50826				
+	apply_type	DEF_BONUS				
+	apply_value	40	70	100	150	200
+	apply_duration	600	600	600	600	600
+end
+
+#백상액						
+section						
+	item_vnum	50827				
+	apply_type	ATTBONUS_HUMAN				
+	apply_value	2	4	6	8	10
+	apply_duration	1800	1800	1800	1800	1800
+end
+
+#백상액						
+section						
+	item_vnum	50828				
+	apply_type	BLOCK				
+	apply_value	2	4	6	8	10
+	apply_duration	1800	1800	1800	1800	1800
+end
+
+#백상액						
+section						
+	item_vnum	50829				
+	apply_type	ATTBONUS_METIN				
+	apply_value	2	4	6	8	10
+	apply_duration	1800	1800	1800	1800	1800
+end
+
+#백상액						
+section						
+	item_vnum	50830				
+	apply_type	BLOCK				
+	apply_value	2	4	6	8	10
+	apply_duration	1800	1800	1800	1800	1800
+end
+
+#백상액						
+section						
+	item_vnum	50831				
+	apply_type	BLOCK				
+	apply_value	2	4	6	8	10
+	apply_duration	1800	1800	1800	1800	1800
+end
+
+#백상액						
+section						
+	item_vnum	50832				
+	apply_type	BLOCK				
+	apply_value	2	4	6	8	10
+	apply_duration	1800	1800	1800	1800	1800
+end
+
+#충기환
+section
+	item_vnum	20171
+	#apply_type	ENERGY
+	#apply_value	1	3	5	7	10
+	apply_duration	1800	1800	1800	1800	1800
+end
+
+#충기환
+section
+	item_vnum	20172
+	#apply_type	ENERGY
+	#apply_value	1	3	5	7	10
+	apply_duration	1800	1800	1800	1800	1800
+end
+
+#충기환
+section
+	item_vnum	51002
+	apply_type	ENERGY
+	apply_value	1	3	5	7	10
+	apply_duration	1800	1800	1800	1800	1800
+end

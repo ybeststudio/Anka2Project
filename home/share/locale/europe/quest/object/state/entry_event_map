@@ -1,0 +1,71 @@
+entry_event_map={["start"]=0,enter_level= function (vnum1,vnum2)lv_range = { } 
+lv_range [ 1 ] = { 15 , 39 } 
+lv_range [ 2 ] = { 40 , 64 } 
+lv_range [ 3 ] = { 65 , 84 } 
+lv_range [ 4 ] = { 85 , 99 } 
+lv_range [ 5 ] = { 100 , 105 } 
+return lv_range [ vnum1 ] [ vnum2 ] 
+end ,warp_to_map= function (modu)if modu == 1 then 
+pc . warp ( 903 * 100 , 83 * 100 , 200 ) 
+elseif modu == 2 then 
+pc . warp ( 1025 * 100 , 95 * 100 , 200 ) 
+else 
+pc . warp ( 959 * 100 , 176 * 100 , 200 ) 
+end 
+end ,check_limit= function ()if game . get_event_flag ( "event_map_login_counter" ) == game . get_event_flag ( "event_map_player_max" ) then 
+return 0 
+else 
+return 1 
+end 
+end ,player_dialog= function ()if pc . get_map_index ( ) == 200 then 
+say_title ( gameforge . entry_event_map . _010_sayTitle ) 
+say ( gameforge . entry_event_map . _020_say ) 
+local sub_sel = select ( gameforge . locale . yes , gameforge . locale . no ) 
+if sub_sel == 2 then 
+return 
+end 
+warp_to_village ( ) 
+local counter = game . get_event_flag ( "event_map_login_counter" ) 
+game . set_event_flag ( "event_map_login_counter" , counter - 1 ) 
+end 
+if game . get_event_flag ( "event_map_active" ) == 0 then 
+say ( locale . forked_man_say_cant ) 
+else 
+say_title ( gameforge . entry_event_map . _010_sayTitle ) 
+say ( gameforge . entry_event_map . _030_say ) 
+local s = select ( locale . forked_enter , locale . forked_no_enter ) 
+local min = game . get_event_flag ( "event_map_level_min" ) 
+local max = game . get_event_flag ( "event_map_level_max" ) 
+local empire = game . get_event_flag ( "event_map_empire" ) 
+if s == 1 then 
+if pc . level < min or pc . level > max then 
+say_title ( gameforge . entry_event_map . _010_sayTitle ) 
+say_reward ( string . format ( gameforge . entry_event_map . _040_say , min , max ) ) 
+return 
+end 
+if pc . get_empire ( ) ~= empire and empire ~= 0 then 
+say_title ( gameforge . entry_event_map . _010_sayTitle ) 
+say ( gameforge . entry_event_map . _050_say ) 
+return 
+end 
+if entry_event_map . check_limit ( ) == 0 then 
+say_title ( gameforge . entry_event_map . _010_sayTitle ) 
+say ( gameforge . entry_event_map . _060_say ) 
+return 
+end 
+say_title ( gameforge . entry_event_map . _010_sayTitle ) 
+say ( gameforge . entry_event_map . _070_say ) 
+if empire == 0 then 
+entry_event_map . warp_to_map ( pc . get_empire ( ) ) 
+else 
+local modu = math . mod ( pc . get_player_id ( ) , 2 ) 
+entry_event_map . warp_to_map ( modu ) 
+end 
+end 
+end 
+end ,gm_exit_check= function ()if pc . get_map_index ( ) == 200 and pc . get_gm_level ( ) == 5 then 
+return 1 
+else 
+return 0 
+end 
+end }

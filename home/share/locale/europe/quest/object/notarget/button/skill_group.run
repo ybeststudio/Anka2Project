@@ -1,0 +1,11 @@
+desc = { 
+"Eðer hayraný olunan bir savaþçý olmak istiyorsan,[ENTER]hýzlý ve tekrarlanan saldýrý bilgisi veren [ENTER]Bedensel Savaþý öðrenmelisin. Eðer tüm canavar [ENTER]gruplarýný bir vuruþta öldürmek istiyorsan, [ENTER]Zihinsel Savaþ öðrenmelisin. [ENTER][ENTER]Köy yakýnlarýnda gelmeni bekleyeceðiz.[ENTER]" , 
+"Eðer iyi bir niþancý olarak tanýnmak istiyorsan[ENTER]Uzak Dövüþ sanatýný öðren.[ENTER]Eðer, karanlýðýn korumasýnda ninja olarak[ENTER]farklý, gizli görevleri baþarmak istiyorsan[ENTER]Yakýn Dövüþ sanatý senin için daha uygun.[ENTER][ENTER]Köy yakýnlarýnda gelmeni bekleyeceðiz.[ENTER]" , 
+"Ýnsan üstü yetenekleri olan gerçek bir temsilci[ENTER]ve binici olmak mý istiyorsun? Sana Büyülü Silah[ENTER]Öðretmenini öneririm.Fakat,karanlýk büyücü ve[ENTER]lanetler gibi korkulan olmak istiyorsan,[ENTER]sana Kara Büyü Öðretmenini[ENTER]öneririm.[ENTER]Köy yakýnlarýnda gelmeni bekleyeceðiz.[ENTER]" , 
+"Eðer büyü ve kutsamalarý kontrol eden[ENTER]bir þaman olmak istiyorsan ,Ejderha Gücü [ENTER]Öðretmenine git.Eðer diðerlerinin[ENTER]üzüntülerini ve acýlarýný azaltmak[ENTER]istiyorsan,sana iyileþtirme Öðretmenini[ENTER]öneririm. [ENTER][ENTER]Köy yakýnlarýnda gelmeni bekleyeceðiz. [ENTER]" , 
+"Eðer hayraný olunan bir savaþçý olmak istiyorsan,[ENTER]Ýçgüdü saldýrý bilgisi veren,[ENTER]Ýçgüdu Savaþý öðrenmelisin.[ENTER]Portal Guard Ýle Görüþ.[ENTER]" 
+} 
+say_title ( "-- Eðitim Görevi --" ) 
+say ( "" ) 
+say ( desc [ pc . get_job ( ) + 1 ] ) 
+say ( "" ) 

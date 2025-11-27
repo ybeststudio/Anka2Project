@@ -1,0 +1,2 @@
+if game . get_event_flag ( "golden_frog_event" ) == 0 then clear_letter ( ) 
+ return end 

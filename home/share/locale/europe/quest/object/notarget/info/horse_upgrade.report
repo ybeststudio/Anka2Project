@@ -1,0 +1,5 @@
+say_title ( "Seyis'in yanina dön." ) 
+say ( "" ) 
+say_reward ( "Sinav sonucu hakkinda" ) 
+say_reward ( "seyis'e rapor ver." ) 
+say ( "" ) 

@@ -1,0 +1,62 @@
+if pc . get_map_index ( ) >= 3.52e+06 and pc . get_map_index ( ) <= 3.52999e+06 and item . get_vnum ( ) == 30332 then if d . select ( pc . get_map_index ( ) ) then 
+local vid = npc . get_vid ( ) 
+if vid == d . get_unique_vid ( "stone5_1" ) then 
+d . setf ( "stonekill" , 2 ) 
+say_new ( "Küp kayboldu!" ) 
+item . remove ( ) 
+elseif vid == d . get_unique_vid ( "stone5_2" ) then 
+if d . getf ( "stonekill" ) == 2 then 
+say_new ( "Küp kayboldu!" ) 
+d . setf ( "stonekill" , 3 ) 
+item . remove ( ) 
+else 
+item . remove ( ) 
+say_new ( "Sira dogru degil!" ) 
+return 
+end 
+elseif vid == d . get_unique_vid ( "stone5_3" ) then 
+if d . getf ( "stonekill" ) == 3 then 
+say_new ( "Küp kayboldu!" ) 
+d . setf ( "stonekill" , 4 ) 
+item . remove ( ) 
+else 
+item . remove ( ) 
+say_new ( "Sira dogru degil!" ) 
+return 
+end 
+elseif vid == d . get_unique_vid ( "stone5_4" ) then 
+if d . getf ( "stonekill" ) == 4 then 
+say_new ( "Küp kayboldu!" ) 
+d . setf ( "stonekill" , 5 ) 
+item . remove ( ) 
+else 
+item . remove ( ) 
+say_new ( "Sira dogru degil!" ) 
+return 
+end 
+elseif vid == d . get_unique_vid ( "stone5_5" ) then 
+if d . getf ( "stonekill" ) == 5 then 
+say_new ( "Küp kayboldu!" ) 
+d . setf ( "stonekill" , 6 ) 
+item . remove ( ) 
+else 
+item . remove ( ) 
+say_new ( "Sira dogru degil!" ) 
+return 
+end 
+else 
+if d . getf ( "stonekill" ) == 6 then 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+server_timer ( "Jp_6" , 5 , d . get_map_index ( ) ) 
+GetMissionInfo ( 5 , 5 ) 
+item . remove ( ) 
+d . dungeon_remove_all ( 30332 ) 
+else 
+item . remove ( ) 
+say_new ( "Sira dogru degil!" ) 
+return 
+end 
+end 
+end 
+npc . purge ( ) 
+ return end 

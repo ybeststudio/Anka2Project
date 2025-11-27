@@ -1,0 +1,4 @@
+pc . setqf ( "kill_count" , pc . getqf ( "kill_count" ) + 1 ) 
+q . set_counter ( "Kalan Çöl Haydutu:" , 20 - pc . getqf ( "kill_count" ) ) 
+if pc . getf ( "horse_levelup" , "kill_count" ) >= 20 then setstate ( "report" ) 
+ return end 

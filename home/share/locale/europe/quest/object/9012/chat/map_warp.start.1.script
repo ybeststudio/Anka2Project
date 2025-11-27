@@ -1,0 +1,26 @@
+say ( mob_name ( 9012 ) ) 
+say ( gameforge . map_warp . _270_say ) 
+local select1 = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+if select1 == 1 then 
+say ( mob_name ( 9012 ) ) 
+say ( gameforge . map_warp . _280_say ) 
+local cost = 50000 
+if pc . level >= 90 then 
+cost = cost + ( ( pc . level - 90 ) * 10000 ) 
+end 
+say_reward ( string . format ( gameforge . map_warp . _280_sayReward , cost ) ) 
+local select2 = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+if select2 == 1 and pc . level >= 90 and pc . gold >= cost then 
+pc . changegold ( - cost ) 
+pc . warp ( 1.1043e+06 , 1.7885e+06 ) 
+else 
+if pc . gold < cost then 
+say_title ( gameforge . map_warp . _20_sayTitle ) 
+say ( gameforge . map_warp . _150_say ) 
+say_reward ( string . format ( gameforge . map_warp . _160_sayReward , cost ) ) 
+return 
+end 
+end 
+else 
+return 
+end 

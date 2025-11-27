@@ -1,0 +1,4 @@
+setskin ( NOWINDOW ) 
+makequestbutton ( "Silah-at kitabini bekle" ) 
+q . set_title ( "Silah-at kitabini bekle" ) 
+q . start ( ) 

@@ -1,0 +1,1 @@
+return pc . get_map_index ( ) >= 2.16e+06 and pc . get_map_index ( ) <= 2.16999e+06 and d . getf ( "level" ) == 6

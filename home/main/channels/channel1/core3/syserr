@@ -1,0 +1,14 @@
+SYSERR: Nov 27 20:06:54 :: pid_init: 
+Start of pid: 1220
+
+SYSERR: Nov 27 20:06:57 :: GetMotionFileName: Motion: summer_2023_hoverboard have not motlist.txt vnum(40003) folder(summer_2023_hoverboard)
+SYSERR: Nov 27 20:06:57 :: GetMotionFileName: Motion: summer_2023_hoverboard have not motlist.txt vnum(40003) folder(summer_2023_hoverboard)
+SYSERR: Nov 27 20:06:57 :: GetMotionFileName: Motion: summer_2023_hoverboard have not motlist.txt vnum(40003) folder(summer_2023_hoverboard)
+SYSERR: Nov 27 20:06:57 :: GetMotionFileName: Motion: christmas_2024_cloud have not motlist.txt vnum(40004) folder(christmas_2024_cloud)
+SYSERR: Nov 27 20:06:57 :: GetMotionFileName: Motion: christmas_2024_cloud have not motlist.txt vnum(40004) folder(christmas_2024_cloud)
+SYSERR: Nov 27 20:06:57 :: GetMotionFileName: Motion: christmas_2024_cloud have not motlist.txt vnum(40004) folder(christmas_2024_cloud)
+SYSERR: Nov 27 20:06:57 :: GetMotionFileName: Motion: christmas_2024_cloud2 have not motlist.txt vnum(40005) folder(christmas_2024_cloud2)
+SYSERR: Nov 27 20:06:57 :: GetMotionFileName: Motion: christmas_2024_cloud2 have not motlist.txt vnum(40005) folder(christmas_2024_cloud2)
+SYSERR: Nov 27 20:06:57 :: GetMotionFileName: Motion: christmas_2024_cloud2 have not motlist.txt vnum(40005) folder(christmas_2024_cloud2)
+SYSERR: Nov 27 20:07:59 :: RunState: LUA_ERROR: [string "horse_summon"]:1: attempt to call field `get_grade' (a nil value)
+SYSERR: Nov 27 20:07:59 :: WriteRunningStateToSyserr: LUA_ERROR: quest horse_summon.start click

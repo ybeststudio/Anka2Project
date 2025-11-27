@@ -1,0 +1,71 @@
+Vnum	LocaleName
+1	Üç yönlü kesme
+2	Kýlýç çevirme
+3	Öfke
+4	Hava kýlýcý
+5	Hamle
+6	Yaþama isteði
+16	Ruh vuruþu
+17	Þiddetli vuruþ
+18	Güçlü vuruþ
+19	Güçlü beden
+20	Kýlýç darbesi
+21	Kýlýç çemberi
+31	Suikast
+32	Hýzlý saldýrý
+33	Býçak çevirme
+34	Kamuflaj
+35	Zehirli bulut
+36	Sinsi zehir
+46	Tekrarlanan atýþ
+47	Ok yaðmuru
+48	Ateþli ok
+49	Hafif adým
+50	Zehirli ok
+51	Kývýlcým vuruþu
+61	Parmak darbesi
+62	Ejderha dönüþü
+63	Büyülü keskinlik
+64	Dehþet
+65	Büyülü zýrh
+66	Büyü çözme
+76	Karanlýk vuruþ
+77	Alev vuruþu
+78	Ateþ hayaleti
+79	Karanlýk koruma
+80	Hayalet vuruþu
+81	Karanlýk taþ
+91	Uçan týlsým
+92	Ejderha darbesi
+93	Ejderha kükremesi
+94	Kutsama
+95	Yansýtma
+96	Ejderha yardýmý
+106	Þimþek atma
+107	Þimþek çaðýrma
+108	Þimþek pençesi
+109	Þifa
+110	Çabukluk
+111	Saldýrý +
+121	Liderlik
+122	Kombo
+123	Balýkçýlýk
+124	Madencilik
+125	Nesne Yaratma
+126	Shinsoo Lisaný
+127	Chunjo Lisaný
+128	Jinno Lisaný
+129	Dönüþüm
+130	Binicilik
+131	At Çaðýrma
+137	At Üzerinde Savaþ
+138	At çiftesi
+139	Güç Dalgasý
+140	Ok Saðanaðý
+151	Ejderha Gözleri
+152	Ejderha Tanrýsý Kaný
+153	Ejderha Tanrýsý Kutsamasý
+154	Kutsal Zýrh
+155	Hýzlandýrma
+156	Ejderha Tanrýsý Öfkesi
+157	Büyü Desteði

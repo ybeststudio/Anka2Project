@@ -1,0 +1,3 @@
+say_title ( "Bo'yu öldür!" ) 
+say ( "Bo'yu at üzerindeyken öldür. Eðer" ) 
+say ( "düþersen kaybedersin." ) 

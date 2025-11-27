@@ -1,0 +1,10 @@
+if d . getf ( "level" ) == 7 and pc . get_map_index ( ) >= 660000 and pc . get_map_index ( ) < 670000 then local stone = d . getf ( "7_stone_kill" ) + 1 
+d . setf ( "7_stone_kill" , stone ) 
+d . notice ( d . get_map_index ( ) , 669 , string . format ( "%d/%d" , d . getf ( "7_stone_kill" ) , 4 ) , false ) 
+if stone >= 4 then 
+d . setf ( "7_stone_kill" , 0 ) 
+d . set_regen_file ( "data/dungeon/deviltower/deviltower7_regen.txt" ) 
+d . notice ( d . get_map_index ( ) , 670 , string . format ( "%d" , 200 ) , false ) 
+d . setf ( "stone_destroy" , 200 ) 
+end 
+ return end 

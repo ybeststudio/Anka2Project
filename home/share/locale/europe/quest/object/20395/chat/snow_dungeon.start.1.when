@@ -1,0 +1,1 @@
+return pc . getf ( "snow_dungeon" , "map" ) >= 1

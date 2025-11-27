@@ -1,0 +1,4 @@
+if pc . get_map_index ( ) >= 2.08e+06 and pc . get_map_index ( ) <= 2.08999e+06 then d . spawn_mob ( 30130 , pc . get_local_x ( ) - 5 , pc . get_local_y ( ) + 5 ) 
+server_timer ( "beran_dead_timer" , 1 , d . get_map_index ( ) ) 
+d . setf ( "dungeon_empire" , pc . get_empire ( ) ) 
+ return end 

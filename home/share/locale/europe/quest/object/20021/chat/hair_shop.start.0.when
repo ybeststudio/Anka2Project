@@ -1,0 +1,1 @@
+return pc . get_part ( PART_HAIR ) >= 1001

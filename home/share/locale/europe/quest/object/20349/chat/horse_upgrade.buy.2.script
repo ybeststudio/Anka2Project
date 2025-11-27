@@ -1,0 +1,70 @@
+say_title ( "Seyis:" ) 
+say ( "" ) 
+say ( "Silah-at kitabini aldigin zaman," ) 
+say ( "daha hizli ata binebileceksin ve " ) 
+say ( "at üzerinden saldiri yapabileceksin." ) 
+say ( "" ) 
+say ( "Bundan hoslanmayacagini biliyorum.." ) 
+say ( "Fakat bu Asker at kitabi " ) 
+say ( "için bir hazirlik.." ) 
+say ( "" ) 
+say ( "Bununla birlikte atinin durumunu" ) 
+say ( "yükseltmek için de 500.000 Yang gerekiyor." ) 
+local b = select ( "Ati gelistir" , "Durumunu gelistirme." , "Tamam.. unuttum!" ) 
+if 1 == b then 
+if pc . money >= 500000 then 
+if pc . countitem ( "50051" ) >= 1 then 
+char_log ( 0 , "HORSE_UPGRADE" , "BEGIN" ) 
+pc . changemoney ( - 500000 ) 
+char_log ( 0 , "HORSE_UPGRADE" , "DEC money 500000" ) 
+pc . removeitem ( "50051" , 1 ) 
+char_log ( 0 , "HORSE_UPGRADE" , "DEC 50051 1" ) 
+horse . unride ( ) 
+horse . advance ( ) 
+horse . ride ( ) 
+char_log ( 0 , "HORSE_UPGRADE" , "INC horse_advance 1" ) 
+pc . give_item2 ( "50052" , 1 ) 
+char_log ( 0 , "HORSE_UPGRADE" , "INC 50052 1" ) 
+char_log ( 0 , "HORSE_UPGRADE" , "END" ) 
+say_title ( "Seyis:" ) 
+say ( "" ) 
+say ( "Önceden oldugu gibi.." ) 
+say ( "Silah-at kitabina sahip oldugunda," ) 
+say ( "atini her yere çagirabilirsin." ) 
+say ( "eger onu kaybedersen, yenisini satin alman gerekir." ) 
+say ( "Bu nedenle güvenligini saglamalisin." ) 
+say ( "" ) 
+setstate ( "start" ) 
+q . done ( ) 
+else 
+say_title ( "Seyis:" ) 
+say ( "" ) 
+say ( "Silah-at kitabini alabilmek için," ) 
+say ( "bir at resmine ihtiyacin var." ) 
+end 
+else 
+say_title ( "Seyis:" ) 
+say ( "" ) 
+say ( "500.000 Yang'a ihtiyacin var." ) 
+end 
+elseif 2 == b then 
+say_title ( "Seyis:" ) 
+say ( "" ) 
+say ( "Eger lisansini almak istersen, tekrar gel." ) 
+elseif 3 == b then 
+say_title ( "Seyis:" ) 
+say ( "" ) 
+say ( "Emin misin?" ) 
+say ( "Eger bu görevi simdi iptal edersen, bunlarin" ) 
+say ( "hepsini yeniden yapman gerekecek." ) 
+local b = select ( "Evet" , "Hayir" ) 
+if 1 == b then 
+setstate ( "start" ) 
+q . done ( ) 
+elseif 2 == b then 
+else 
+say ( "Bilinmeyen Buton [" .. b .. "]" ) 
+end 
+else 
+say ( "Bilinmeyen Buton [" .. b .. "]" ) 
+end 

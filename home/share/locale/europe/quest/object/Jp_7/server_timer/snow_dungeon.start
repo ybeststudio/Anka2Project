@@ -1,0 +1,14 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 6 then 
+d . setf ( "level" , 7 ) 
+d . clear_regen ( ) 
+d . purge ( ) 
+local c = { { 752 , 499 } , { 758 , 479 } , { 772 , 452 } , { 763 , 444 } , { 750 , 451 } , { 728 , 441 } , { 726 , 455 } , { 718 , 482 } , { 715 , 491 } , { 731 , 473 } , { 748 , 429 } } 
+local n = number ( 1 , table . getn ( c ) ) 
+d . spawn_mob ( 6151 , c [ n ] [ 1 ] , c [ n ] [ 2 ] ) 
+d . jump_all ( ( 5120 + 746 ) , ( 1536 + 534 ) ) 
+d . regen_file ( "data/dungeon/ice_dungeon/zone_7.txt" ) 
+d . notice ( d . get_map_index ( ) , 724 , "" , false ) 
+GetMissionInfo ( d . getf ( "level" ) , d . getf ( "real_time" ) - get_global_time ( ) ) 
+end 
+end 

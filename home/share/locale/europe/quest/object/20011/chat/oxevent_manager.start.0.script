@@ -1,0 +1,44 @@
+say_title ( mob_name ( 20011 ) ) 
+say_new ( "[ENTER]Hey, sen oradaki! Evet, evet sen - buraya gel! Sana ilginç bir sey göstereyim. OX Yarismasi. Seni oraya götürebilirim. Ilginç ödüller kazanabilecegini duydum! [ENTER]" ) 
+wait ( ) 
+if pc . get_level ( ) < 5 then 
+say_title ( mob_name ( 20011 ) ) 
+say_new ( "[ENTER]Üzgünüm, ancak katilmak için yeterli seviyede degilsiniz. [ENTER]" ) 
+say_reward_new ( "Katilim için minimum seviye: 5 [ENTER]" ) 
+return 
+end 
+if game . get_event_flag ( "oxevent_status" ) == 0 then 
+say_title ( mob_name ( 20011 ) ) 
+say_new ( "[ENTER]Su anda herhangi bir yarisma duymadim. Ögrenince size haber veririm. [ENTER]" ) 
+elseif game . get_event_flag ( "oxevent_status" ) == 1 then 
+say_title ( mob_name ( 20011 ) ) 
+say_new ( "[ENTER]Yarismaya katilmak mi yoksa sadece izlemek mi istiyorsunuz? [ENTER]" ) 
+local s = select ( "Katil" , "Izleyici" , "Iptal" ) 
+if s == 1 then 
+say_title ( mob_name ( 20011 ) ) 
+say_new ( "[ENTER]Sizi hemen yarismaya götürecegim. Basarilar. [ENTER]" ) 
+horse . unride ( ) 
+horse . unsummon ( ) 
+wait ( ) 
+pc . warp ( 896500 , 24600 ) 
+elseif s == 2 then 
+say_title ( mob_name ( 20011 ) ) 
+say_new ( "[ENTER]Sadece izleyici olmak mi istiyorsunuz? Tamam, sizin seçiminiz. Hemen isinlanacaksiniz. [ENTER]" ) 
+horse . unride ( ) 
+horse . unsummon ( ) 
+wait ( ) 
+pc . warp ( 896300 , 28900 ) 
+end 
+elseif game . get_event_flag ( "oxevent_status" ) == 2 then 
+say_title ( mob_name ( 20011 ) ) 
+say_new ( "[ENTER]Üzgünüm, ancak yarisma çoktan basladi... Ama, isterseniz, hala bir izleyici olarak katilabilirsiniz. [ENTER]" ) 
+local s = select ( "Katil" , "Iptal" ) 
+if s == 1 then 
+say_title ( mob_name ( 20011 ) ) 
+say_new ( "[ENTER]Hemen isinlanacaksiniz. [ENTER]" ) 
+horse . unride ( ) 
+horse . unsummon ( ) 
+wait ( ) 
+pc . warp ( 896300 , 28900 ) 
+end 
+end 

@@ -1,0 +1,24 @@
+local dungeonChannel = pc . getf ( "shipdefense" , "channel" ) 
+if dungeonChannel == pc . get_channel_id ( ) then 
+local dungeonMapIndex = pc . getf ( "shipdefense" , "map" ) 
+if d . select ( dungeonMapIndex ) then 
+if get_global_time ( ) > pc . getf ( "shipdefense" , "time" ) then 
+say_title ( mob_name ( 9009 ) ) 
+say_new ( "[ENTER]Geri dönmek için 15 dakikaniz vardi! [ENTER]" ) 
+pc . setf ( "shipdefense" , "map" , 0 ) 
+pc . setf ( "shipdefense" , "time" , 0 ) 
+pc . setf ( "shipdefense" , "channel" , 0 ) 
+return 
+end 
+pc . warp ( 4929 * 100 , 6515 * 100 , dungeonMapIndex ) 
+else 
+say_new ( "Müsait degil, tekrar baslayabilirsiniz. [ENTER]" ) 
+pc . setf ( "shipdefense" , "map" , 0 ) 
+pc . setf ( "shipdefense" , "time" , 0 ) 
+pc . setf ( "shipdefense" , "channel" , 0 ) 
+end 
+else 
+say_new ( "Zindan bu kanalda açilmadi! [ENTER]" ) 
+say_new ( string . format ( "Girmek için, %d kanalina gidin. [ENTER]" , dungeonChannel ) ) 
+return 
+end 

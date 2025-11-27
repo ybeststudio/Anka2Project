@@ -1,0 +1,13 @@
+if pc . get_map_index ( ) >= 2.17e+06 and pc . get_map_index ( ) <= 2.17999e+06 then pc . set_warp_location_local ( 217 , 689 , 6111 ) 
+local index = d . get_map_index ( ) 
+if index >= 2.17e+06 and index <= 2.17999e+06 then 
+if d . getf ( "DungeonBlock" ) == 1 then 
+if d . getf ( "first_regen" ) == 1 then 
+server_timer ( "barones_1" , 1 , index ) 
+end 
+else 
+pc . warp ( 68900 , 611100 ) 
+end 
+cmdchat ( string . format ( "RefreshDungeonTimer %d %d" , d . getf ( "level" ) , d . getf ( "real_time" ) - get_global_time ( ) ) ) 
+end 
+ return end 

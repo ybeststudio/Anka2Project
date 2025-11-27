@@ -1,0 +1,6 @@
+ScriptType               MotionData
+
+MotionFileName           "D:\Ymir Work\npc_mount\ramadan_2020_sphinx\walk.GR2"
+MotionDuration           1.200000
+
+Accumulation             0.00	-370.00	0.00

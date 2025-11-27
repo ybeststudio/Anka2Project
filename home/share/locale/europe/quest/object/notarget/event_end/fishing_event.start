@@ -1,0 +1,2 @@
+if game . get_event_flag ( "fish_event" ) == 0 then clear_letter ( ) 
+ return end 

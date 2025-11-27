@@ -1,0 +1,8 @@
+pc . setqf ( "kill_count" , pc . getqf ( "kill_count" ) + 1 ) 
+q . set_counter ( "Kalan Yilan Okçusu:" , 50 - pc . getqf ( "kill_count" ) ) 
+if get_time ( ) >= pc . getqf ( "limit_time" ) then 
+setstate ( "failure" ) 
+q . done ( ) 
+end 
+if pc . getqf ( "kill_count" ) >= 50 and pc . getqf ( "kill_count" ) >= 50 and pc . getqf ( "limit_time" ) >= get_time ( ) then setstate ( "report" ) 
+ return end 

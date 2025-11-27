@@ -1,0 +1,7 @@
+if pc . getqf ( "limit_time" ) > get_time ( ) then 
+notice_multiline ( gameforge . hair . _110_notice , notice ) 
+else 
+if pc . get_part ( PART_HAIR ) > 1000 and nil == pc . get_wear ( 20 ) then 
+pc . setqf ( "limit_time" , 0 ) 
+end 
+end 

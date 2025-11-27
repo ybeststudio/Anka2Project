@@ -1,0 +1,7 @@
+say_title ( "At madalyonu ara!" ) 
+say ( "" ) 
+say ( "At madalyonu savasmayi ögrenmek için" ) 
+say ( "gerekli." ) 
+say ( "Onu maymun zindanindan alabilirsin." ) 
+setstate ( "start" ) 
+q . done ( ) 

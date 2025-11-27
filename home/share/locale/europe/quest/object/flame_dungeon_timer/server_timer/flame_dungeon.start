@@ -1,0 +1,4 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+d . global_warp_all_to_base ( 5984 * 100 , 7073 * 100 , index , 60 ) 
+d . setf ( "DungeonBlock" , 0 ) 
+end 

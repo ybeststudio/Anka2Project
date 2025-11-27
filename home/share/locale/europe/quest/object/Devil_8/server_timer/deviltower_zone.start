@@ -1,0 +1,11 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 7 then 
+clear_server_timer ( "Devil_7" , get_server_timer_arg ( ) ) 
+d . setf ( "level" , 8 ) 
+d . jump_all ( 2048 + 590 , 6656 + 403 ) 
+d . set_regen_file ( "data/dungeon/deviltower/deviltower8_regen.txt" ) 
+d . notice ( d . get_map_index ( ) , 664 , "" , false ) 
+GetMissionInfo ( 8 , d . getf ( "real_time" ) - get_global_time ( ) ) 
+d . spawn_mob ( 20366 , 640 , 460 ) 
+end 
+end 

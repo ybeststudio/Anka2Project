@@ -1,0 +1,14 @@
+if pc . is_guild_master ( ) == false then 
+say ( gameforge . change_guild_master . _10_say ) 
+return 
+end 
+say ( gameforge . change_guild_master . _20_say ) 
+local s = input ( ) 
+local newface_name = find_pc_by_name ( s ) 
+if newface_name == pc . get_vid ( ) then 
+say ( gameforge . change_guild_master . _80_say ) 
+return 
+end 
+if change_guild_master . change_master ( s , 40 , 0 , 0 , 0 , true ) == true then 
+pc . remove_item ( 71099 ) 
+end 

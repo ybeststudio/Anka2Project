@@ -1,0 +1,40 @@
+if pc . get_skill_group ( ) == 0 then send_letter ( "Eðitim" ) 
+local job = pc . get_job ( ) 
+if job == 0 then 
+local v = pc_find_skill_teacher_vid ( 1 ) 
+if 0 ~= v then 
+target . vid ( "teacher1" , v , mob_name ( 20300 ) ) 
+end 
+local v = pc_find_skill_teacher_vid ( 2 ) 
+if 0 ~= v then 
+target . vid ( "teacher2" , v , mob_name ( 20301 ) ) 
+end 
+elseif job == 1 then 
+local v = pc_find_skill_teacher_vid ( 1 ) 
+if 0 ~= v then 
+target . vid ( "teacher3" , v , mob_name ( 20302 ) ) 
+end 
+local v = pc_find_skill_teacher_vid ( 2 ) 
+if 0 ~= v then 
+target . vid ( "teacher4" , v , mob_name ( 20303 ) ) 
+end 
+elseif job == 2 then 
+local v = pc_find_skill_teacher_vid ( 1 ) 
+if 0 ~= v then 
+target . vid ( "teacher5" , v , mob_name ( 20304 ) ) 
+end 
+local v = pc_find_skill_teacher_vid ( 2 ) 
+if 0 ~= v then 
+target . vid ( "teacher6" , v , mob_name ( 20305 ) ) 
+end 
+elseif job == 3 then 
+local v = pc_find_skill_teacher_vid ( 1 ) 
+if 0 ~= v then 
+target . vid ( "teacher7" , v , mob_name ( 20306 ) ) 
+end 
+local v = pc_find_skill_teacher_vid ( 2 ) 
+if 0 ~= v then 
+target . vid ( "teacher8" , v , mob_name ( 20307 ) ) 
+end 
+end 
+ return end 

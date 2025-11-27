@@ -1,0 +1,17 @@
+say_title ( mob_name ( 9012 ) ) 
+say_title ( "Nereye ýþýnlanmak istiyorsun?" ) 
+say ( "" ) 
+say ( "" ) 
+say_title ( "Harita bilgisi" ) 
+say ( "Harita adý:Pazar Haritasý " ) 
+say ( "Seviye: 15" ) 
+say ( "Iþýnlanmak istiyor musun?" ) 
+local s = select ( "Evet" , "Hayýr" ) 
+if s == 1 then 
+if pc . get_level ( ) >= 15 then 
+pc . warp ( 9.1933e+06 , 9.2426e+06 ) 
+else 
+say_title ( mob_name ( 9012 ) ) 
+say_reward ( "Bu haritaya için seviyen yetersiz.!" ) 
+end 
+end 

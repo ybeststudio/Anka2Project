@@ -1,0 +1,30 @@
+if item . vnum >= 29101 and item . vnum < 29200 and item . get_socket ( 0 ) < item . get_value ( 2 ) then say_title ( mob_name ( 20015 ) ) 
+say_new ( "[ENTER]Kazmaniz henüz yükseltilemez! [ENTER]" ) 
+ return end if item . vnum >= 29101 and item . vnum < 29200 and item . get_socket ( 0 ) >= item . get_value ( 2 ) then say_title ( mob_name ( 20015 ) ) 
+say_new ( "[ENTER]Peki ... kazmanizi yükseltmek istiyor musunuz? Bakalim ... [ENTER]" ) 
+say_reward_new ( "[ENTER]Kazmanizin seviyesi " .. item . get_level ( ) .. ".[ENTER]" ) 
+if item . get_value ( 3 ) == 100 then 
+say_title ( mob_name ( 20015 ) ) 
+say_new ( "[ENTER]Onu yükseltmek istiyor musunuz? [ENTER]" ) 
+else 
+say_reward_new ( "[ENTER]" .. ( 100 - item . get_value ( 3 ) ) .. "% ihtimal var " .. ( 100 - item . get_value ( 3 ) ) .. "% ihtimalle kazma basarisiz olacak. [ENTER]" ) 
+say_new ( "[ENTER]Eger bu olursa, kazmaniz bir seviye düsecek. Yine de yükseltmek istiyor musunuz? [ENTER]" ) 
+end 
+local s = select ( "Evet" , "Hayir" ) 
+if s == 2 then 
+say_title ( mob_name ( 20015 ) ) 
+say_new ( "[ENTER]Fikrinizi degistirirseniz geri gelin. [ENTER]" ) 
+return 
+end 
+local f = __refine_pick ( item . get_cell ( ) ) 
+if f == 2 then 
+say_title ( mob_name ( 20015 ) ) 
+say_new ( "[ENTER]Bir sorun olustu. Daha sonra gelin. [ENTER]" ) 
+elseif f == 1 then 
+say_title ( mob_name ( 20015 ) ) 
+say_new ( "[ENTER]Basardim. Kazma basariyla yükseltildi! [ENTER]" ) 
+else 
+say_title ( mob_name ( 20015 ) ) 
+say_new ( "[ENTER]Oh hayir, bir hata yaptim.[ENTER]Basarisiz oldum. Kazma bir seviye düstü. [ENTER]" ) 
+end 
+ return end 

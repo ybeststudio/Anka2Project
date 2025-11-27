@@ -1,0 +1,58 @@
+if horse . get_level ( ) == 20 then 
+say_title ( "Seyis:" ) 
+say ( "Atin yeterince güçlendi. Artýk" ) 
+say ( "atýný bir üst seviyeye geliþtirebilirsin." ) 
+elseif pc . countitem ( "50050" ) < 1 then 
+say_title ( "Seyis:" ) 
+say ( "Eðitim için At Madalyonu gerekiyor. Sonuçlar" ) 
+say ( "onun üzerine iþlenecek." ) 
+setstate ( "need_item50050" ) 
+elseif get_time ( ) < pc . getqf ( "next_time" ) then 
+say_title ( "Seyis:" ) 
+say ( "Atýn henüz yeterince dinlenmemiþ." ) 
+say ( "Yarýn tekrar gel." ) 
+say ( "" ) 
+elseif horse . get_stamina_pct ( ) <= 10 then 
+say_title ( "Seyis:" ) 
+say ( "Atýn çok yorgun. Dinlenmeye ihtiyacý " ) 
+say ( "var." ) 
+elseif horse . get_health_pct ( ) <= 10 then 
+say_title ( "Seyis:" ) 
+say ( "Atin çok aç. Onu beslemen gerekiyor." ) 
+elseif horse . is_riding ( ) == 0 then 
+say_title ( "Seyis:" ) 
+say ( "Atýnla beraber gelmelisin." ) 
+elseif ( horse . get_level ( ) >= 11 and horse . get_level ( ) <= 19 ) then 
+say_title ( "Seyis:" ) 
+say ( "" ) 
+say ( "At sýrtýnda saldýrý yapma ona binmekten" ) 
+say ( "çok daha zor. Yalnýz çalýþarak öðrenebilirsin." ) 
+say ( "Canavarlarý yen." ) 
+say ( "Düþersen kaybedersin." ) 
+say ( "Kendine dikkat et ve dikatli ol!" ) 
+say ( "Sonuçlar madalyonlara iþlenecek." ) 
+if is_test_server ( ) then 
+pc . setqf ( "next_time" , get_time ( ) + 10 ) 
+else 
+pc . setqf ( "next_time" , get_time ( ) + 12 * 60 * 60 ) 
+end 
+if horse . get_level ( ) == 11 then 
+setstate ( "training1" ) 
+elseif horse . get_level ( ) == 12 then 
+setstate ( "training2" ) 
+elseif horse . get_level ( ) == 13 then 
+setstate ( "training3" ) 
+elseif horse . get_level ( ) == 14 then 
+setstate ( "training4" ) 
+elseif horse . get_level ( ) == 15 then 
+setstate ( "training5" ) 
+elseif horse . get_level ( ) == 16 then 
+setstate ( "training6" ) 
+elseif horse . get_level ( ) == 17 then 
+setstate ( "training7" ) 
+elseif horse . get_level ( ) == 18 then 
+setstate ( "training8" ) 
+elseif horse . get_level ( ) == 19 then 
+setstate ( "training9" ) 
+end 
+end 

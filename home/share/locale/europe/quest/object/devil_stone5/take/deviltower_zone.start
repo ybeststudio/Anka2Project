@@ -1,0 +1,10 @@
+if item . get_vnum ( ) == 50084 and pc . get_map_index ( ) >= 660000 and pc . get_map_index ( ) < 670000 and d . getf ( "level" ) == 5 then npc . purge ( ) 
+item . remove ( ) 
+d . setf ( "stone_count" , d . getf ( "stone_count" ) - 1 ) 
+if d . getf ( "stone_count" ) <= 0 then 
+d . dungeon_remove_all ( 50084 ) 
+GetMissionInfo ( 5 , 10 ) 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+server_timer ( "Devil_6" , 10 , d . get_map_index ( ) ) 
+end 
+ return end 

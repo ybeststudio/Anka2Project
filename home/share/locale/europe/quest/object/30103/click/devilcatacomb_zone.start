@@ -1,0 +1,9 @@
+if pc . get_map_index ( ) >= 2.16e+06 and pc . get_map_index ( ) < 2.16999e+06 then if d . select ( pc . get_map_index ( ) ) then 
+if d . getf ( "level" ) == 2 then 
+if d . getf ( "tortoise_timer" ) == 1 then 
+server_timer ( "devilcatacomb_2" , 5 , d . get_map_index ( ) ) 
+end 
+npc . purge ( ) 
+end 
+end 
+ return end 

@@ -1,0 +1,30 @@
+target . delete ( "captain" ) 
+say_title ( mob_name ( 20355 ) ) 
+say ( "" ) 
+say ( "Tebrikler! " .. mob_name ( 20406 ) .. " bana ziyarete geleceðini" ) 
+say ( "söyledi. Son zamanlarda Sung Mahi'nin daha da" ) 
+say ( "güçlendiðini öðrendim." ) 
+say ( "En azýndan birimiz onun gücüne sahip olmalýyýz." ) 
+say ( "Yoksa Sung Mahi hepimizi yok edecek." ) 
+say ( "" ) 
+say ( "Özel kumaþý üretebilirim ama bu o okadar da kolay" ) 
+say ( "olmayacak." ) 
+say ( "Bana Üç saat ver. O sürede sana kumaþý " ) 
+say ( "üretebilirim." ) 
+say ( "" ) 
+wait ( ) 
+say_title ( mob_name ( 20355 ) ) 
+say ( "" ) 
+say ( "Üç saat sonra geldiðinde malzeme hazýr olacak." ) 
+say ( "Söz veriyorum!" ) 
+if pc . is_gm ( ) then 
+say_reward ( "GM'ler hemen alýr." ) 
+end 
+say ( "" ) 
+local agree = select ( "Kabul et" , "Reddet" ) 
+if agree == 1 then 
+if not pc . is_gm ( ) then 
+pc . setqf ( "time_to_wait" , 60 * 3 + pc . get_playtime ( ) ) 
+end 
+set_state ( "time_to_wait" ) 
+end 

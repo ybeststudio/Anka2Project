@@ -1,0 +1,14 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 5 then 
+d . clear_regen ( ) 
+d . purge ( ) 
+d . dungeon_remove_all ( 30332 ) 
+d . clear_regen ( ) 
+d . purge ( ) 
+d . setf ( "level" , 6 ) 
+d . regen_file ( "data/dungeon/ice_dungeon/zone_6.txt" ) 
+d . jump_all ( ( 5120 + 571 ) , ( 1536 + 706 ) ) 
+d . notice ( d . get_map_index ( ) , 657 , "" , false ) 
+GetMissionInfo ( d . getf ( "level" ) , d . getf ( "real_time" ) - get_global_time ( ) ) 
+end 
+end 

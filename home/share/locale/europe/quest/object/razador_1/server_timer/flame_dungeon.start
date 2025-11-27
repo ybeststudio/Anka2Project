@@ -1,0 +1,21 @@
+local arg = get_server_timer_arg ( ) 
+if d . select ( arg ) then 
+if d . getf ( "first_regen" ) == 1 then 
+d . setf ( "first_regen" , 0 ) 
+d . regen_file ( "data/dungeon/flame_dungeon/npc.txt" ) 
+local doors_pos = { { 320 , 394 , 135 } , { 293 , 359 , 90 } , { 333 , 321 , 210 } , { 378 , 320 , 152 } , { 400 , 355 , 90 } , { 394 , 401 , 223 } } 
+local idoors_pos = { { 268 , 447 , 135 } , { 234 , 359 , 90 } , { 300 , 264 , 210 } , { 454 , 217 , 135 } , { 470 , 355 , 90 } , { 467 , 469 , 239 } } 
+for i = 1 , 6 begin 
+d . set_unique ( "door" .. i , d . spawn_mob_ac_dir ( 20387 , doors_pos [ i ] [ 1 ] , doors_pos [ i ] [ 2 ] , doors_pos [ i ] [ 3 ] ) ) 
+end 
+for i = 1 , 6 begin 
+d . set_unique ( "idoor" .. i , d . spawn_mob_ac_dir ( 20388 , idoors_pos [ i ] [ 1 ] , idoors_pos [ i ] [ 2 ] , idoors_pos [ i ] [ 3 ] ) ) 
+end 
+d . setf ( "counter_11" , 180 ) 
+d . setf ( "counter_13" , 180 ) 
+d . setf ( "level" , 1 ) 
+server_timer ( "flame_dungeon_timer" , 60 * 60 , arg ) 
+d . setf ( "real_time" , get_global_time ( ) + 60 * 60 ) 
+d . notice ( arg , 713 , "" , false ) 
+end 
+end 

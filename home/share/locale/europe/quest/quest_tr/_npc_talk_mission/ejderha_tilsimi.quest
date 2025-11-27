@@ -1,0 +1,179 @@
+quest ejderha_tilsimi begin
+	state start begin
+		when 30180.use begin
+		if pc . count_item ( 30180 ) < 1 then 
+		say_title ( "Ejderha Tanrı Tılsımı " ) 
+		say ( "Envanterindeki Ejderha Tanrı Tılsımı kaybolmuş." ) 
+		return 
+		end
+			if pc.get_map_index() == 72 and not pc.is_gm() then
+				say_title("Ejderha Tanrı Tılsımı ")
+				say("")
+				say("Eğer gitmek istediğin yer Sürgün Mağarası'nın")
+				say("2. katında bulunuyorsa, öncelikle 2. kata")
+				say("geçmen gerekiyor. Orada tılsımı kullandığın")
+				say("zaman farklı seçenekler çıkacak.")
+				say("")
+				say_reward("Birini seç.")
+				local s = select("Karanlık Tapınak","Sura İskeletleri","Mağaranın sonu","Vazgeç ")
+				if s == 1 then
+					say_title("Ejderha Tanrı Tılsımı ")
+					say("")
+					say("Karanlık Tapınak yakınlarına ışınlanıyorsun...")
+					pc.remove_item("30180",1)
+			wait()
+			pc.warp(82900,1286200)
+			elseif s == 2 then
+			say_title("Ejderha Tanrı Tılsımı ")
+			say("Birini seç.")
+			local a = select("Sura İskeleti-1","Sura İskeleti-2","Sura İskeleti-3","Sura İskeleti-4","Vazgeç ")
+			if a == 1 then
+			say_title("Ejderha Tanrı Tılsımı ")
+			say("")
+			say("Sura İskeleti-1 yakınlarına ışınlanıyorsun...")
+			pc.remove_item("30180",1)
+			wait()
+			pc.warp(20800,1290300)
+			elseif a == 2 then
+			say_title("Ejderha Tanrı Tılsımı ")
+			say("")
+			say("Sura İskeleti-2 yakınlarına ışınlanıyorsun...")
+			pc.remove_item("30180",1)
+			wait()
+			pc.warp(11800,1334300)
+			elseif a == 3 then
+			say_title("Ejderha Tanrı Tılsımı ")
+			say("")
+			say("Sura İskeleti-3 yakınlarına ışınlanıyorsun...")
+			pc.remove_item("30180",1)
+			wait()
+			pc.warp(48300,1340700)
+			elseif a == 4 then
+			say_title("Ejderha Tanrı Tılsımı ")
+			say("")
+			say("Sura İskeleti-4 yakınlarına ışınlanıyorsun...")
+			pc.remove_item("30180",1)
+			wait()
+			pc.warp(42000,1268200)
+			elseif a == 5 then
+			return
+			end
+			elseif s == 3 then
+			say_title("Ejderha Tanrı Tılsımı ")
+			say("")
+			say("Mağaranın 1. katının sonuna ışınlanıyorsun...")
+			pc.remove_item("30180",1)
+			wait()
+			pc.warp(131900,1343700)
+			elseif s == 4 then
+			return
+			end
+			elseif pc.get_map_index() == 73 and not pc.is_gm() then
+			say_title("Ejderha Tanrı Tılsımı ")
+			say("")
+			say("Sürgün Mağarası 2. kattasın. Gidebileceğin")
+			say("yerler aşağıda. Eğer gitmek istediğin yer")
+			say("1. katta ise önce 1. kata dönmelisin.")
+			say("")
+			say_reward("Birini seç.")
+			local ss = select("Komutanlar","Sura Ruhu","Sura İskeleti-5","Vazgeç ")
+			if ss == 1 then
+			say_title("Ejderha Tanrı Tılsımı ")
+			say("Birini seç.")
+			local aa = select("Komutan","General (1)","General (2)","General (3)","Vazgeç ")
+			if aa == 1 then
+			say_title("Ejderha Tanrı Tılsımı ")
+			say("")
+			say("Komutanın yakınlarına ışınlanıyorsun...")
+			pc.remove_item("30180",1)
+			wait()
+			pc.warp(195800,1220600)
+			elseif aa == 2 then
+			say_title("Ejderha Tanrı Tılsımı ")
+			say("")
+			say("General (1) yakınlarına ışınlanıyorsun...")
+			pc.remove_item("30180",1)
+			wait()
+			pc.warp(279600,1260800)
+			elseif aa == 3 then
+			say_title("Ejderha Tanrı Tılsımı ")
+			say("")
+			say("General (2) yakınlarına ışınlanıyorsun...")
+			pc.remove_item("30180",1)
+			wait()
+			pc.warp(191100,1233400)
+			elseif aa == 4 then
+			say_title("Ejderha Tanrı Tılsımı ")
+			say("")
+			say("General (3) yakınlarına ışınlanıyorsun...")
+			pc.remove_item("30180",1)
+			wait()
+			pc.warp(229700,1317600)
+			elseif aa == 5 then
+			return
+			end
+			elseif ss == 2 then
+			say_title("Ejderha Tanrı Tılsımı ")
+			say("")
+			say("Sura Ruhu yakınlarına ışınlanıyorsun...")
+			pc.remove_item("30180",1)
+			wait()
+			pc.warp(180100,1220400)
+			elseif ss == 3 then
+			say_title("Ejderha Tanrı Tılsımı ")
+			say("")
+			say("Sura İskeleti-5 yakınlarına ışınlanıyorsun...")
+			pc.remove_item("30180",1)
+			wait()
+			pc.warp(251600,1296000)
+			elseif ss == 4 then
+			return
+				end
+			elseif pc.is_gm() then
+		if pc . count_item ( 30180 ) < 1 then 
+		say_title ( "Ejderha Tanrı Tılsımı " ) 
+		say ( "Envanterindeki Ejderha Tanrı Tılsımı kaybolmuş." ) 
+		return 
+		end
+			local aaa = select("Mağaranın sonu","Sura Ruhu","pc.setf","Vazgeç ")
+				if aaa == 1 then
+				say_title("Ejderha Tanrı Tılsımı ")
+				say("")
+				say("Mağaranın 1. katının sonuna ışınlanıyorsun...")
+				wait()
+				pc.warp(131900,1343700)
+				elseif aaa == 2 then
+				say_title("Ejderha Tanrı Tılsımı ")
+				say("")
+				say("Sura Ruhu yakınlarına ışınlanıyorsun...")
+				wait()
+				pc.warp(180100,1220400)
+				elseif aaa == 3 then
+				say_title("pc.setf")
+				say("")
+				say("Quest adını gir.")
+				say("")
+				local q1 = input()
+				say_title("pc.setf")
+				say("")
+				say("Komutu gir.")
+				say("")
+				local komut = input()
+				say_title("pc.setf")
+				say("")
+				say("Sayıyı gir.")
+				local sayi = input()
+				pc.setf(q1,komut,sayi)
+				elseif aaa == 4 then
+				return
+				end
+			else
+				say_title("Ejderha Tanrı Tılsımı ")
+				say("")
+				say("Tılsımı kullanmak için Sürgün Mağarası ")
+				say("içerisinde olman gerekiyor.")
+				say("")
+			end
+		end
+	end
+end

@@ -1,0 +1,7 @@
+quest ruhtasiekranac begin
+	state start begin
+		when 50513.use begin
+			cmdchat ( "ruhtasiekranac " .. q . getcurrentquestindex ( ) ) 
+		end
+	end
+end

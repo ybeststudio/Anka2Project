@@ -1,0 +1,120 @@
+quest move_ring begin
+	state start begin
+		when 40004.use begin
+		say_title("Işınlanma Yüzüğü ")
+		say("Nereye gitmek istiyorsun?")
+		local s = select("Köyler","Orman Bölgeleri","Örümcek Zindanı ","Sürgün Mağarası ","Diğer Bölgeler","Beta Bölgeler","Kapat ")
+		if s == 1 then
+			say_title("Işınlanma Yüzüğü ")
+			local ss = select("Kırmızı Bayrak (1.Köy)","Kırmızı Bayrak (2.Köy)","Sarı Bayrak (1.Köy)","Sarı Bayrak (2.Köy)","Mavi Bayrak (1.Köy)","Mavi Bayrak (2.Köy)","Vazgeç ")
+			if ss == 1 then
+				pc.warp(469200,964200)
+			elseif ss == 2 then
+				pc.warp(360800,877600)
+			elseif ss == 3 then
+				pc.warp(55800,157900)
+			elseif ss == 4 then
+				pc.warp(138500,234900)
+			elseif ss == 5 then
+				pc.warp(969600,278300)
+			elseif ss == 6 then
+				pc.warp(873100,242600)
+			end
+		elseif s == 2 then
+			say_title("Işınlanma Yüzüğü ")
+			local sss = select("Hayalet Orman","Kızıl Orman Başlangıcı ","Vazgeç ")
+			if sss == 1 then
+				pc.warp(288700,5700)
+			elseif sss == 2 then
+				pc.warp(1119900,70800)
+			end
+		elseif s == 3 then
+			say_title("Işınlanma Yüzüğü ")
+			local zindan = select("Örümcek Zindanı 1. Kat Başı ","Vazgeç ")
+			if zindan == 1 then
+				pc.warp(59800,497300)
+			end
+		elseif s == 4 then
+			say_title("Işınlanma Yüzüğü ")
+			say("Sürgün Mağarası girişine ışınlanıyorsun...")
+			wait()
+			pc.warp(284400,810700)
+		elseif s == 5 then
+			say_title("Işınlanma Yüzüğü ")
+			local sssssss = select("Seungryong Vadisi","Sohan Dağı ","Yongbi Çölü ","Doyyumhwan","Devler Diyarı ","Şeytan Kulesi","Vazgeç ")
+			if sssssss == 1 then
+				pc.warp(336000,755600)
+			elseif sssssss == 2 then
+				pc.warp(436400,215600)
+			elseif sssssss == 3 then
+				pc.warp(296800,547400)
+			elseif sssssss == 4 then
+				pc.warp(600800,687400)
+			elseif sssssss == 5 then
+				pc.warp(829900,763300)
+			elseif sssssss == 6 then
+				pc.warp(590500,110500)
+			end
+		elseif s == 6 then
+			say_title("Işınlanma Yüzüğü ")
+			local aaaa = select("Karanlık Ejderha Kayası(+90) ","Nefrit Körfezi(+95) ","Yıldırım Dağları(+95) ","Gautamal(+95)","Zinkon Cehennemi(+115) ","Kayıp Bölgeler(+80) ","Vazgeç ")
+			if aaaa == 1 then
+				if pc.get_level() >= 90 then
+					pc.warp(1104300,1788500)
+				else
+					say_title("Işınlanma Yüzüğü ")
+					say("")
+					say_reward("Seviyen yetersiz.!")
+					say_reward("Gerekli Seviye:+90")
+				end
+			elseif aaaa == 2 then
+				if pc.get_level() >= 95 then
+					pc.warp(1086900,1655800)
+				else
+					say_title("Işınlanma Yüzüğü ")
+					say("")
+					say_reward("Seviyen yetersiz.!")
+					say_reward("Gerekli Seviye:+95")
+				end
+			elseif aaaa == 3 then
+				if pc.get_level() >= 95 then
+					pc.warp(1134500,1654600)
+				else
+					say_title("Işınlanma Yüzüğü ")
+					say("")
+					say_reward("Seviyen yetersiz.!")
+					say_reward("Gerekli Seviye:+95")
+				end
+			elseif aaaa == 4 then
+				if pc.get_level() >= 95 then
+					pc.warp(1226300,1681100)
+				else
+					say_title("Işınlanma Yüzüğü ")
+					say("")
+					say_reward("Seviyen yetersiz.!")
+					say_reward("Gerekli Seviye:+95")
+				end
+			elseif aaaa == 5 then
+				if pc.get_level() >= 115 then
+					pc.warp(593200,779900)
+				else
+					say_title("Işınlanma Yüzüğü ")
+					say("")
+					say_reward("Seviyen yetersiz.!")
+					say_reward("Gerekli Seviye:+115")
+				end
+			elseif aaaa == 6 then
+				if pc.get_level() >= 80 then
+					pc.warp(63800,974200)
+				else
+					say_title("Işınlanma Yüzüğü ")
+					say("")
+					say_reward("Seviyen yetersiz.!")
+					say_reward("Gerekli Seviye:+80")
+				end
+			end
+		elseif s == 7 then
+			end
+		end
+	end
+end

@@ -1,0 +1,9 @@
+local v = find_npc_by_vnum ( 20349 ) 
+if 0 == v then 
+else 
+target . vid ( "__TARGET__" , v , "" ) 
+end 
+setskin ( NOWINDOW ) 
+makequestbutton ( "Seyis'in yanýna dön" ) 
+q . set_title ( "Seyis'in yanýna dön." ) 
+q . start ( ) 

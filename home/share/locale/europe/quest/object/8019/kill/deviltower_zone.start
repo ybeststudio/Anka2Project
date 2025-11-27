@@ -1,0 +1,14 @@
+if d . getf ( "level" ) == 7 and pc . get_map_index ( ) >= 660000 and pc . get_map_index ( ) < 670000 then d . setf ( "stone_destroy" , d . getf ( "stone_destroy" ) - 1 ) 
+d . notice ( d . get_map_index ( ) , 670 , string . format ( "%d" , d . getf ( "stone_destroy" ) ) , false ) 
+local pct = number ( 1 , 10 ) 
+if pct == 1 then 
+game . drop_item ( 30302 , 1 ) 
+end 
+if d . getf ( "stone_destroy" ) < 1 then 
+d . notice ( d . get_map_index ( ) , 671 , "" , false ) 
+d . setf ( "stone_destroy" , 0 ) 
+d . clear_regen ( ) 
+server_timer ( "Devil_8" , 10 , d . get_map_index ( ) ) 
+GetMissionInfo ( 7 , 10 ) 
+end 
+ return end 

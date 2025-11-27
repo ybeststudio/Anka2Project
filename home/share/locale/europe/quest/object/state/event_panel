@@ -1,0 +1,10 @@
+event_panel={["start"]=0,get_state= function (event)if game . get_event_flag ( event ) > 0 then 
+return "Aktif" 
+end 
+return "Pasif" 
+end ,set_event= function (choice,eventIdx)if choice == 1 then 
+start_event ( eventIdx ) 
+elseif choice == 2 then 
+end_event ( eventIdx ) 
+end 
+end }

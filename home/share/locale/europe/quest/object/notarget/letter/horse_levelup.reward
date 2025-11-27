@@ -1,0 +1,4 @@
+setskin ( NOWINDOW ) 
+makequestbutton ( "Antreman sonuçlari." ) 
+q . set_title ( "Antreman sonuçlari." ) 
+q . start ( ) 

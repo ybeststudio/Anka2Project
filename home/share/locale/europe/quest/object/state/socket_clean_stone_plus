@@ -1,0 +1,24 @@
+socket_clean_stone_plus={["start"]=0,extract_metin_stone_from_pos= function (pos)item . select_cell ( pos ) 
+local info_name = { } 
+local info_pos = { } 
+for i = 0 , 2 begin 
+local val = item . get_socket ( i ) 
+if val > 2 and val ~= 28960 then 
+table . insert ( info_name , item_name ( val ) ) 
+table . insert ( info_pos , i ) 
+end 
+end 
+table . insert ( info_name , "Geri" ) 
+local s = select_table ( info_name ) 
+if s == table . getn ( info_name ) then 
+return 
+end 
+if pc . get_empty_inventory_count ( ) <= 0 then 
+say_title ( "Düzeltme parsomeni" ) 
+say_new ( "[ENTER]Envanterinizde yeterli alan yok. [ENTER]" ) 
+return 
+end 
+pc . give_item2 ( item . get_socket ( info_pos [ s ] ) ) 
+item . set_socket ( info_pos [ s ] , 1 ) 
+pc . remove_item ( 71109 ) 
+end }

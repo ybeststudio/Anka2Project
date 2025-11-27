@@ -1,0 +1,5 @@
+ScriptType               MotionData
+
+MotionFileName           "d:/ymir work/npc/bookworm/run.gr2"
+MotionDuration           0.600000
+Accumulation             0.00	-303.330322	0.00

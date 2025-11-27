@@ -1,0 +1,33 @@
+if get_global_time ( ) > pc . getf ( "dragonlair" , "time" ) then 
+say_title ( mob_name ( 30121 ) ) 
+say_new ( "[ENTER]Geri dönmek için 15 dakikaniz vardi! [ENTER]" ) 
+pc . setf ( "dragonlair" , "map" , 0 ) 
+pc . setf ( "dragonlair" , "time" , 0 ) 
+pc . setf ( "dragonlair" , "channel" , 0 ) 
+return 
+end 
+local dungeonChannel = pc . getf ( "dragonlair" , "channel" ) 
+if dungeonChannel == pc . get_channel_id ( ) then 
+local dungeonMap = pc . getf ( "dragonlair" , "map" ) 
+if d . select ( dungeonMap ) then 
+say_title ( mob_name ( 30121 ) ) 
+say_new ( "[ENTER]Geri dönmek istiyor musunuz? [ENTER]" ) 
+local x = select ( "Evet" , "Iptal" ) 
+if x == 1 then 
+pc . warp ( 8436 * 100 , 10669 * 100 , dungeonMap ) 
+else 
+return 
+end 
+else 
+say_title ( mob_name ( 30121 ) ) 
+say_new ( "Müsait degil, tekrar baslayabilirsiniz. [ENTER]" ) 
+pc . setf ( "dragonlair" , "map" , 0 ) 
+pc . setf ( "dragonlair" , "time" , 0 ) 
+pc . setf ( "dragonlair" , "channel" , 0 ) 
+return 
+end 
+else 
+say_title ( mob_name ( 30121 ) ) 
+say_new ( "Zindan bu kanalda açilmadi! [ENTER]" ) 
+say_new ( string . format ( "Girmek için, %d kanalina gidin. [ENTER]" , dungeonChannel ) ) 
+end 

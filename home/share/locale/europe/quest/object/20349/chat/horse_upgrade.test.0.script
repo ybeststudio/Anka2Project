@@ -1,0 +1,33 @@
+say_title ( "Seyis:" ) 
+say ( "" ) 
+say ( "30 dakika içerisinde, 50 tane" ) 
+say ( "akrep okçusu veya yilan okçusu öldür" ) 
+say ( "" ) 
+say ( "Bu görevi bir grup ile yapabilirsin, fakat sadece" ) 
+say ( "grup lideri öldürülen" ) 
+say ( "hedeflerden dolayi puan alacak." ) 
+local b = select ( "Devam" , "iptal" ) 
+if 1 == b then 
+elseif 2 == b then 
+say_title ( "Seyis:" ) 
+say ( "" ) 
+say ( "Görevi iptal etmek istediginden emin misin?" ) 
+local b = select ( "Evet." , "Sadece bir sakaydi!" ) 
+if 1 == b then 
+say_title ( "Seyis:" ) 
+say ( "" ) 
+say ( "Ok, bir dahaki sefere bol sans!." ) 
+setstate ( "start" ) 
+q . done ( ) 
+elseif 2 == b then 
+say_title ( "Seyis:" ) 
+say ( "" ) 
+say ( "Bunun için zamanin yok!" ) 
+say ( "Git ve mümkün olan en kisa zamanda" ) 
+say ( "50 okçu öldür!" ) 
+else 
+say ( "Bilinmeyen Buton [" .. b .. "]" ) 
+end 
+else 
+say ( "Bilinmeyen Buton [" .. b .. "]" ) 
+end 

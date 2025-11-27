@@ -1,0 +1,163 @@
+ScriptType               MotionData
+
+MotionFileName           "D:\ymir work\monster2\plechito_shadow\plechi_shadow_boss3\skill02.GR2"
+MotionDuration           4.000000
+
+Group MotionEventData
+{
+    MotionEventDataCount     10
+    Group Event00
+    {
+        MotionEventType      1
+        StartingTime         0.740000
+        
+        IndependentFlag      0
+        AttachingEnable      0
+        AttachingBoneName    "Bip01"
+        FollowingEnable      0
+        EffectFileName       "d:/ymir work/effect/plechito/monster/shadow/shadow_boss3_skill02a.mse"
+        EffectPosition       190.000000 -410.000000 0.000000
+    }
+    Group Event01
+    {
+        MotionEventType      1
+        StartingTime         0.740000
+        
+        IndependentFlag      0
+        AttachingEnable      0
+        AttachingBoneName    "Bip01"
+        FollowingEnable      0
+        EffectFileName       "d:/ymir work/effect/plechito/monster/shadow/shadow_boss3_skill02b.mse"
+        EffectPosition       190.000000 -410.000000 0.000000
+    }
+    Group Event02
+    {
+        MotionEventType      1
+        StartingTime         3.110000
+        
+        IndependentFlag      0
+        AttachingEnable      0
+        AttachingBoneName    "Bip01"
+        FollowingEnable      0
+        EffectFileName       "d:/ymir work/effect/plechito/monster/shadow/shadow_boss3_skill02c.mse"
+        EffectPosition       190.000000 -410.000000 0.000000
+    }
+    Group Event03
+    {
+        MotionEventType      2
+        StartingTime         0.740000
+        
+        DuringTime           2.400000
+        Power                80
+        AffectingRange       5000
+    }
+    Group Event04
+    {
+        MotionEventType      4
+        StartingTime         0.740000
+        DuringTime           0.4007452
+        EnableHitProcess     0
+        
+        AttackType           0
+        HittingType          2
+        StiffenTime          0.000000
+        InvisibleTime        0.300000
+        ExternalForce        0.000000
+        HitLimitCount        3
+        CollisionType        4
+        
+        SphereDataCount      1
+        Group SphereData00
+        {
+            Radius           500.000000
+            Position         190.000000 -410.000000 0.000000
+        }
+    }
+    Group Event05
+    {
+        MotionEventType      4
+        StartingTime         1.540000
+        DuringTime           0.4007452
+        EnableHitProcess     0
+        
+        AttackType           0
+        HittingType          2
+        StiffenTime          0.000000
+        InvisibleTime        0.300000
+        ExternalForce        0.000000
+        HitLimitCount        3
+        CollisionType        4
+        
+        SphereDataCount      1
+        Group SphereData00
+        {
+            Radius           1000.000000
+            Position         190.000000 -410.000000 0.000000
+        }
+    }
+    Group Event06
+    {
+        MotionEventType      4
+        StartingTime         2.340000
+        DuringTime           0.4007452
+        EnableHitProcess     0
+        
+        AttackType           0
+        HittingType          2
+        StiffenTime          0.000000
+        InvisibleTime        0.300000
+        ExternalForce        0.000000
+        HitLimitCount        3
+        CollisionType        4
+        
+        SphereDataCount      1
+        Group SphereData00
+        {
+            Radius           1400.000000
+            Position         190.000000 -410.000000 0.000000
+        }
+    }
+    Group Event07
+    {
+        MotionEventType      4
+        StartingTime         3.110000
+        DuringTime           0.2007452
+        EnableHitProcess     0
+        
+        AttackType           0
+        HittingType          2
+        StiffenTime          0.000000
+        InvisibleTime        0.300000
+        ExternalForce        0.000000
+        HitLimitCount        3
+        CollisionType        4
+        
+        SphereDataCount      1
+        Group SphereData00
+        {
+            Radius           1400.000000
+            Position         190.000000 -410.000000 0.000000
+        }
+    }
+    Group Event08
+    {
+        MotionEventType      2
+        StartingTime         3.110000
+        
+        DuringTime           0.200000
+        Power                200
+        AffectingRange       5000
+    }
+    Group Event09
+    {
+        MotionEventType      1
+        StartingTime         0.000000
+        
+        IndependentFlag      0
+        AttachingEnable      1
+        AttachingBoneName    "Bip01 L Finger01"
+        FollowingEnable      1
+        EffectFileName       "d:/ymir work/effect/plechito/monster/shadow/shadow_boss3_skill02d.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+    }
+}

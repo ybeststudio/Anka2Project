@@ -1,0 +1,24 @@
+quest emotions begin
+	state start begin
+		when login or enter begin
+			--cmdchat("ClearSpecialEmotions")
+			has_emotion = false
+			for emotion = 61, 78 do
+				local quest_flag = string.format("expire_%d", emotion)
+				local expire_time = pc.getqf(quest_flag)
+				if expire_time > get_global_time() then
+					has_emotion = true
+					cmdchat(string.format("RegisterSpecialEmotion %d %d", tonumber(emotion), tonumber(expire_time)))
+				end
+			end
+
+			if has_emotion == false then
+				cmdchat("ClearSpecialEmotions")
+			end
+		end
+
+		when logout or exit begin
+			cmdchat("ClearSpecialEmotions")
+		end
+	end
+end

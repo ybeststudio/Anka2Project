@@ -1,0 +1,11 @@
+local count = pc . get_change_empire_count ( ) ; 
+if count >= 1 then 
+say ( gameforge . change_empire . _20_say ) 
+return 
+end 
+say_title ( gameforge . change_empire . _10_npcChat ) 
+say ( gameforge . change_empire . _30_say ) 
+local s = select ( gameforge . locale . guild . yes , gameforge . locale . cancel ) 
+if s == 1 then 
+change_empire . move_pc ( ) 
+end 

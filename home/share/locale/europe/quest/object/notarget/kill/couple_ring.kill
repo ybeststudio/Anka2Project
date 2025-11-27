@@ -1,0 +1,15 @@
+if npc . get_race ( ) == 394 then local kill_count = pc . getqf ( "kill_count" ) + 1 
+pc . setqf ( "kill_count" , kill_count ) 
+q . set_counter ( "Kalan Jin-Hee" , couple_ring . get_rest_count ( ) ) ; 
+if couple_ring . is_completed ( ) then 
+say_title ( "Hepsini öldürdün. " ) 
+say ( "" ) 
+say ( "Bence gümüþçünün intikamýný " ) 
+say ( "aldýn." ) 
+say ( "" ) 
+say ( "Yaþlý Kadýna gidip ona hepsini bitirdiðini" ) 
+say ( "söyle. " ) 
+say ( "" ) 
+set_state ( "report" ) 
+end 
+ return end 

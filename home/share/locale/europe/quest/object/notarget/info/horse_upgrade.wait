@@ -1,0 +1,5 @@
+say_title ( "Silah-at kitabini bekle" ) 
+say ( "" ) 
+say_reward ( "Seyis silah-at kitabini hazirlayana" ) 
+say_reward ( "kadar bekle." ) 
+say ( "" ) 

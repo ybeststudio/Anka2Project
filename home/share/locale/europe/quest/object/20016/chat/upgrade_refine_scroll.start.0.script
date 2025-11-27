@@ -1,0 +1,58 @@
+say_title ( "Demirci:" ) 
+say ( "Savaþ Tanrýlarý tarafýndan kutsanmýþ gizemli bir" ) 
+say ( "kaðýt var, bu kaðýt eþyalarýn +0'dan +3'e" ) 
+say ( "kadar yükseltmesinin baþarý oranýný %100'e" ) 
+say ( "çýkarýyor. Ancak bu kaðýt +4 ve üstü için" ) 
+say ( "çalýþmýyor." ) 
+say ( "" ) 
+wait ( ) 
+if pc . count_item ( 70035 ) == 0 then 
+say_title ( "Demirci:" ) 
+say ( "Bunu üretmek için, büyülü metale ihtiyacýn" ) 
+say ( "var." ) 
+say ( "" ) 
+say_item ( "Büyülü metal" , 70035 , "" ) 
+say ( "" ) 
+wait ( ) 
+end 
+if pc . count_item ( 25040 ) == 0 then 
+say_title ( "Demirci:" ) 
+say ( "Ayrýca kutsama kaðýdýna da ihtiyacýn " ) 
+say ( "var." ) 
+say ( "" ) 
+say_item ( "Kutsama kaðýdý " , 25040 , "" ) 
+say ( "" ) 
+wait ( ) 
+end 
+say_title ( "Demirci:" ) 
+say ( "Tüm gereken eþyalara sahip misin?" ) 
+say ( "Bir tane üretmek istiyor musun?" ) 
+say ( "Yanýsýra 200.000 Yang'a ihtiyacýn olacak." ) 
+say ( "Eðer büyülü metal ve kutsama kaðýdýn varsa," ) 
+say ( "savaþ kaðýdý üretebilirsin. Bu kaðýdý üretmek" ) 
+say ( "istiyor musun?" ) 
+say ( "" ) 
+local s = select ( "Evet" , "Hayýr" ) 
+if 1 == s then 
+if pc . get_gold ( ) < 200000 then 
+say_title ( "Bilgi:" ) 
+say_reward ( "Yeterli Yang'ýn yok." ) 
+say ( "" ) 
+elseif pc . count_item ( 70035 ) > 0 and pc . count_item ( 25040 ) > 0 then 
+pc . remove_item ( 70035 ) 
+pc . remove_item ( 25040 ) 
+pc . changegold ( - 200000 ) 
+pc . give_item2 ( 71021 ) 
+say_title ( "Demirci:" ) 
+say ( "Bir savaþ kaðýdý ürettin!" ) 
+say ( "Büyülü metalin olduðunda savaþ " ) 
+say ( "kaðýdý üretmek gerçekten kolay." ) 
+say ( "" ) 
+say_item ( "Savaþ kaðýdý " , 71021 , "" ) 
+else 
+say_title ( "Demirci:" ) 
+say ( "Ýhtiyacýn olan tüm nesnelere" ) 
+say ( "sahip deðilsin." ) 
+say ( "" ) 
+end 
+end 

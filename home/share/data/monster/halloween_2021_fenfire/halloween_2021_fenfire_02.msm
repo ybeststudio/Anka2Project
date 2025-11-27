@@ -1,0 +1,33 @@
+ScriptType            RaceDataScript
+
+BaseModelFileName     "D:\Ymir Work\npc_pet\halloween_2021_fenfire\halloween_2021_fenfire.GR2"
+
+Group ShapeData
+{
+    PathName 		 ""
+    ShapeDataCount 		 1
+    Group ShapeData00
+    {
+        ShapeIndex 		 0
+        Model 		 "D:\Ymir Work\npc_pet\halloween_2021_fenfire\halloween_2021_fenfire.GR2"
+        SourceSkin 		 "D:\Ymir Work\npc_pet\halloween_2021_fenfire\halloween_2021_fenfire_01.dds"
+        TargetSkin 		 "D:\Ymir Work\npc_pet\halloween_2021_fenfire\halloween_2021_fenfire_02.dds"
+    }
+}
+Group AttachingData
+{
+    AttachingDataCount       1
+    
+    Group AttachingData00
+    {
+        AttachingDataType    2
+        
+        isAttaching          1
+        AttachingModelIndex  0
+        AttachingBoneName    "efff"
+        
+        EffectScriptName     "D:\Ymir Work\effect\pet\pet_fenfire_02.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+        EffectRotation       0.000000 0.000000 0.000000
+    }
+}

@@ -1,0 +1,10 @@
+if pc . get_map_index ( ) >= 3.52e+06 and pc . get_map_index ( ) <= 3.52999e+06 then pc . set_warp_location_local ( 61 , 4319 , 1647 ) 
+local index = pc . get_map_index ( ) 
+if d . select ( pc . get_map_index ( ) ) then 
+if d . getf ( "DungeonBlock" ) == 1 then 
+cmdchat ( string . format ( "RefreshDungeonTimer %d %d" , d . getf ( "level" ) , d . getf ( "real_time" ) - get_global_time ( ) ) ) 
+else 
+pc . warp ( 432100 , 166700 ) 
+end 
+end 
+ return end 

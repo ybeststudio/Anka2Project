@@ -1,0 +1,18 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 2 and d . getf ( "tortoise_timer" ) == 1 or d . getf ( "ticket" ) == 1 and d . getf ( "level" ) == 1 then 
+d . purge ( ) 
+d . clear_regen ( ) 
+d . setf ( "first_regen" , 0 ) 
+d . setf ( "tortoise_timer" , 0 ) 
+d . setf ( "level" , 3 ) 
+d . regen_file ( "data/dungeon/devilcatacomb/dc_3f_regen.txt" ) 
+d . notice ( d . get_map_index ( ) , 677 , "" , false ) 
+GetMissionInfo ( d . getf ( "level" ) , d . getf ( "real_time" ) - get_global_time ( ) ) 
+local position = { { 1231 , 357 } , { 1348 , 349 } , { 1349 , 150 } , { 1235 , 142 } , { 1140 , 245 } , { 1148 , 348 } , { 1150 , 154 } } 
+for i = 1 , 7 begin 
+d . spawn_mob ( 8038 , position [ i ] [ 1 ] , position [ i ] [ 2 ] ) 
+end 
+d . setf ( "stones" , 0 ) 
+d . jump_all ( 1367 + 3072 , 247 + 12032 ) 
+end 
+end 

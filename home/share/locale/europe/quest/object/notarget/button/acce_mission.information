@@ -1,0 +1,5 @@
+say_title ( "Özel bir kumaş " ) 
+say ( "Teovahdan seni görmek istiyor. Onu ziyaret et ve" ) 
+say ( "hikayesini dinle." ) 
+say ( "" ) 
+say_reward ( "Mini Harita'daki yanıp sönen noktayı takip et." ) 

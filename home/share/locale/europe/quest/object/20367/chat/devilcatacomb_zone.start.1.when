@@ -1,0 +1,1 @@
+return pc . getf ( "devilcatacomb_zone" , "map" ) >= 1

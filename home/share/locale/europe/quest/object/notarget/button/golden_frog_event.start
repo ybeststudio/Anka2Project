@@ -1,0 +1,16 @@
+if game . get_event_flag ( "golden_frog_event" ) > 0 then say_title ( "Altin Kurbaga Etkinligi" ) 
+say_new ( "[ENTER]Altin Kurbagalar Etkinlik Haritasi'na indi. Efsanelere göre degerli esyalari sakliyorlar, ama derileri bu dünyadaki en sertlerinden biri. [ENTER]" ) 
+say_reward_new ( "Katilmak isterseniz, Ekip Üyeleri tarafindan belirlenen kurallari kabul etmis olursunuz. [ENTER]" ) 
+if select ( "Girmek istiyorum" , "Fikrimi degistirdim" ) == 1 then 
+if game . get_event_flag ( "golden_frog_event" ) > 0 then 
+if pc . get_map_index ( ) == 230 then 
+syschat ( "Zaten Etkinlik Haritasi'ndasiniz. [ENTER]" ) 
+return 
+end 
+pc . warp ( 985600 , 755200 ) 
+else 
+say_title ( "Altin Kurbaga Etkinligi" ) 
+say_new ( "Etkinlige katilmak için biraz geç kaldiniz! Endiselenmeyin, bir dahaki sefere etkinlige katilmak için birçok firsat olacak. [ENTER]" ) 
+end 
+end 
+ return end 

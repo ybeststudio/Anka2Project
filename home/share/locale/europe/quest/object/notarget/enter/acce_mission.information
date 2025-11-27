@@ -1,0 +1,2 @@
+pc . setqf ( "time_to_wait" , 0 ) 
+pc . setqf ( "collect_count" , 0 ) 

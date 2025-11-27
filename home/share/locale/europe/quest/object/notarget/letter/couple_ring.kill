@@ -1,0 +1,2 @@
+q . set_counter ( "Kalan Jin-Hee" , couple_ring . get_rest_count ( ) ) ; 
+send_letter ( "Jin-Hee'leri yen" ) 

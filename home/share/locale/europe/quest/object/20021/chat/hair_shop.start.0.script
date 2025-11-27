@@ -1,0 +1,30 @@
+say_title ( gameforge . hair_shop . _20_sayTitle ) 
+say ( gameforge . hair_shop . _30_say ) 
+local a = select ( gameforge . hair_shop . _40_select , gameforge . hair_shop . _50_select ) 
+if a == 1 then 
+if pc . money >= 500000 then 
+affect . remove_hair ( ) 
+pc . changemoney ( - 500000 ) 
+say_title ( gameforge . hair_shop . _20_sayTitle ) 
+say ( gameforge . hair_shop . _60_say ) 
+wait ( ) 
+say ( gameforge . hair_shop . _70_say ) 
+wait ( ) 
+say_title ( gameforge . hair_shop . _20_sayTitle ) 
+say ( gameforge . hair_shop . _80_say ) 
+wait ( ) 
+say_title ( gameforge . hair_shop . _20_sayTitle ) 
+say ( gameforge . hair_shop . _90_say ) 
+pc . set_part ( PART_HAIR , 0 ) 
+else 
+say_title ( gameforge . hair_shop . _20_sayTitle ) 
+say ( gameforge . hair_shop . _100_say ) 
+wait ( ) 
+q . done ( ) 
+end 
+elseif a == 2 then 
+say_title ( gameforge . hair_shop . _20_sayTitle ) 
+say ( gameforge . hair_shop . _110_say ) 
+else 
+say ( string . format ( gameforge . find_squareguard . _70_say , a ) ) 
+end 

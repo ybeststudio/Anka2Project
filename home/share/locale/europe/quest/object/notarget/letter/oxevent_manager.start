@@ -1,0 +1,2 @@
+if pc . get_map_index ( ) == 113 then send_letter ( "OX Yarismasi'ndan ayril" ) 
+ return end 

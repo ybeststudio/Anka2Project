@@ -1,0 +1,12 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 3 then 
+clear_server_timer ( "Devil_3" , get_server_timer_arg ( ) ) 
+d . jump_all ( special . devil_tower [ 3 ] [ 1 ] , special . devil_tower [ 3 ] [ 2 ] ) 
+d . setf ( "level" , 4 ) 
+d . setf ( "IsOn" , 1 ) 
+d . regen_file ( "data/dungeon/deviltower/deviltower4_regen.txt" ) 
+d . clear_regen ( ) 
+d . notice ( d . get_map_index ( ) , 659 , "" , false ) 
+GetMissionInfo ( 4 , d . getf ( "real_time" ) - get_global_time ( ) ) 
+end 
+end 

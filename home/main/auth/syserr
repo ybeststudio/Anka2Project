@@ -1,0 +1,5 @@
+SYSERR: Nov 27 20:06:55 :: pid_init: 
+Start of pid: 1226
+
+SYSERR: Nov 27 20:06:55 :: Cube_init: Cube_Init failed
+SYSERR: Nov 27 20:06:55 :: Blend_Item_init: <Blend_Item_init> fail

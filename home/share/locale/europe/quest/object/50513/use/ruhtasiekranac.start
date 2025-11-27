@@ -1,0 +1,1 @@
+cmdchat ( "ruhtasiekranac " .. q . getcurrentquestindex ( ) ) 

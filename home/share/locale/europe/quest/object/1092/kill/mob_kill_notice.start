@@ -1,0 +1,6 @@
+if pc . is_gm ( ) then 
+return 
+end 
+pc . change_alignment ( 800 ) 
+chat ( "800 derece puani aldiniz!" ) 
+notice_all ( 622 , pc . get_name ( ) ) 

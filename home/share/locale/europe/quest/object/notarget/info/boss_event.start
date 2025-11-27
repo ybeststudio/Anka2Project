@@ -1,0 +1,16 @@
+if game . get_event_flag ( "boss_event" ) > 0 then say_title ( "Boss Etkinliði " ) 
+say_new ( "[ENTER]Boss Etkinliði Etkinlik Haritasý'nda gerçekleþiyor. Bosslar 3 farklý bölgede doðuyor, her bölge benzer seviyelerde bosslar içeriyor. [ENTER]" ) 
+say_reward_new ( "Katýlmak isterseniz, Ekip Üyeleri tarafýndan belirlenen kurallarý kabul etmiþ olursunuz. [ENTER]" ) 
+if select ( "Girmek istiyorum " , "Fikrimi deðiþtirdim " ) == 1 then 
+if game . get_event_flag ( "boss_event" ) > 0 then 
+if pc . get_map_index ( ) == 230 then 
+syschat ( "Zaten Etkinlik Haritasý'ndasýnýz. [ENTER]" ) 
+return 
+end 
+pc . warp ( 985600 , 755200 ) 
+else 
+say_title ( "Boss Etkinliði " ) 
+say_new ( "Etkinliðe katýlmak için biraz geç kaldýnýz! Endiþelenmeyin, bir dahaki sefere etkinliðe katýlmak için birçok fýrsat olacak. [ENTER]" ) 
+end 
+end 
+ return end 

@@ -1,0 +1,38 @@
+if pc . get_map_index ( ) >= 660000 and pc . get_map_index ( ) <= 670000 then pc . set_warp_location_local ( 65 , 5905 , 1105 ) 
+cmdchat ( string . format ( "RefreshDungeonTimer %d %d" , d . getf ( "level" ) , d . getf ( "real_time" ) - get_global_time ( ) ) ) 
+if d . getf ( "bug_1" ) == 0 then 
+if d . getf ( "level" ) == 2 then 
+d . regen_file ( "data/dungeon/deviltower/deviltower2_regen.txt" ) 
+d . clear_regen ( ) 
+d . notice ( d . get_map_index ( ) , 657 , "" , false ) 
+d . setf ( "level" , 2 ) 
+GetMissionInfo ( 2 , 60 * 60 ) 
+d . setf ( "real_time" , get_global_time ( ) + 60 * 60 ) 
+server_timer ( "deviltower_fail" , 60 * 60 , d . get_map_index ( ) ) 
+d . setf ( "bug_1" , 1 ) 
+d . setf ( "IsOn" , 1 ) 
+d . setf ( "DungeonBlock" , 1 ) 
+server_loop_timer ( "devil_one_two_floor" , 5 , d . get_map_index ( ) ) 
+end 
+end 
+if d . getf ( "level" ) == 2 then 
+pc . jump ( 2174 * 100 , 7040 * 100 ) 
+elseif d . getf ( "level" ) == 3 then 
+pc . jump ( special . devil_tower [ 2 ] [ 1 ] * 100 , special . devil_tower [ 2 ] [ 2 ] * 100 ) 
+elseif d . getf ( "level" ) == 4 then 
+pc . jump ( special . devil_tower [ 3 ] [ 1 ] * 100 , special . devil_tower [ 3 ] [ 2 ] * 100 ) 
+elseif d . getf ( "level" ) == 5 then 
+pc . jump ( special . devil_tower [ 4 ] [ 1 ] * 100 , special . devil_tower [ 4 ] [ 2 ] * 100 ) 
+elseif d . getf ( "level" ) == 6 then 
+pc . jump ( special . devil_tower [ 5 ] [ 1 ] * 100 , special . devil_tower [ 5 ] [ 2 ] * 100 ) 
+elseif d . getf ( "level" ) == 7 then 
+pc . jump ( ( 2048 + 590 ) * 100 , ( 6656 + 638 ) * 100 ) 
+elseif d . getf ( "level" ) == 8 then 
+pc . jump ( ( 2048 + 590 ) * 100 , ( 6656 + 403 ) * 100 ) 
+elseif d . getf ( "level" ) == 9 then 
+pc . jump ( ( 2048 + 590 ) * 100 , ( 6656 + 155 ) * 100 ) 
+end 
+if d . getf ( "DungeonBlock" ) == 0 then 
+pc . warp ( 590500 , 110500 ) 
+end 
+ return end 

@@ -1,0 +1,10 @@
+if pc . get_map_index ( ) >= 3.51e+06 and pc . get_map_index ( ) <= 3.51999e+06 then if d . select ( pc . get_map_index ( ) ) then 
+if d . getf ( "level" ) == 4 then 
+d . clear_regen ( ) 
+d . notice ( d . get_map_index ( ) , 720 , "" , false ) 
+timer ( "Purge" , 2 ) 
+d . setf ( "level" , 5 ) 
+d . setf ( "is_on" , 0 ) 
+end 
+end 
+ return end 

@@ -1,0 +1,125 @@
+local index = pc . get_map_index ( ) 
+if d . select ( index ) then 
+local level = d . getf ( "level" ) 
+local is_on = d . getf ( "is_on" ) 
+if level == 1 then 
+if is_on == 0 then 
+say_new ( "Bir kapi açtiniz." ) 
+d . notice ( index , 714 , "" , false ) 
+GetMissionInfo ( 1 , d . getf ( "real_time" ) - get_global_time ( ) ) 
+d . kill_unique ( "door1" ) 
+d . kill_unique ( "idoor1" ) 
+d . regen_file ( "data/dungeon/flame_dungeon/fd_a.txt" ) 
+d . setf ( "is_on" , 1 ) 
+return 
+else 
+say_new ( "Odadaki tüm seytanlari yenmediniz." ) 
+return 
+end 
+elseif level == 2 then 
+if is_on == 0 then 
+say_new ( "Bir kapi açtiniz." ) 
+d . spawn_mob ( 20386 , 195 , 352 ) 
+d . notice ( index , 715 , "" , false ) 
+d . kill_unique ( "door2" ) 
+d . kill_unique ( "idoor2" ) 
+GetMissionInfo ( 2 , d . getf ( "real_time" ) - get_global_time ( ) ) 
+d . setf ( "is_on" , 1 ) 
+d . set_regen_file ( "data/dungeon/flame_dungeon/fd_b.txt" ) 
+return 
+else 
+say_new ( "Altin Disli Çark bulamadiniz." ) 
+end 
+elseif level == 3 then 
+if is_on == 0 then 
+say_new ( "Bir kapi açtiniz." ) 
+d . notice ( index , 714 , "" , false ) 
+d . kill_unique ( "door3" ) 
+d . kill_unique ( "idoor3" ) 
+GetMissionInfo ( 3 , d . getf ( "real_time" ) - get_global_time ( ) ) 
+d . setf ( "is_on" , 1 ) 
+d . regen_file ( "data/dungeon/flame_dungeon/fd_c.txt" ) 
+return 
+else 
+say_new ( "Odadaki tüm seytanlari yenmediniz." ) 
+return 
+end 
+elseif level == 4 then 
+if is_on == 0 then 
+say_new ( "Bir kapi açtiniz." ) 
+d . notice ( index , 716 , "" , false ) 
+d . kill_unique ( "door4" ) 
+d . kill_unique ( "idoor4" ) 
+GetMissionInfo ( 4 , d . getf ( "real_time" ) - get_global_time ( ) ) 
+d . setf ( "is_on" , 1 ) 
+d . set_regen_file ( "data/dungeon/flame_dungeon/fd_d.txt" ) 
+d . spawn_mob ( 6051 , 470 , 175 ) 
+return 
+else 
+say_new ( "Ignitor'u yenmediniz." ) 
+return 
+end 
+elseif level == 5 then 
+if is_on == 0 then 
+say_new ( "Bir kapi açtiniz." ) 
+d . setf ( "is_on" , 1 ) 
+d . notice ( index , 717 , "" , false ) 
+d . kill_unique ( "door5" ) 
+d . kill_unique ( "idoor5" ) 
+d . setf ( "level" , 5 ) 
+GetMissionInfo ( 5 , d . getf ( "real_time" ) - get_global_time ( ) ) 
+d . set_regen_file ( "data/dungeon/flame_dungeon/fd_e.txt" ) 
+local vis = { 0 , 0 , 0 , 0 , 0 , 0 , 0 } 
+local STONE_pos = { { 486 , 345 } , { 511 , 336 } , { 525 , 349 } , { 521 , 365 } , { 503 , 372 } , { 486 , 365 } , { 500 , 354 } } 
+for i = 1 , 7 begin 
+vis [ i ] = 0 
+end 
+for i = 1 , 7 begin 
+local ran = number ( 1 , 7 ) 
+local st = 0 
+for j = 1 , 50 begin 
+st = st + 1 
+if st > 7 then 
+st = 1 
+end 
+if vis [ st ] == 0 then 
+ran = ran - 1 
+if ran == 0 then 
+vis [ st ] = 1 
+d . set_unique ( "stone5_" .. st , d . spawn_mob ( 20386 , STONE_pos [ i ] [ 1 ] , STONE_pos [ i ] [ 2 ] ) ) 
+break 
+end 
+end 
+end 
+end 
+return 
+else 
+say_new ( "Açilacak damgalariniz hala var. Acele edin!" ) 
+return 
+end 
+elseif level == 6 then 
+if is_on == 0 then 
+say_new ( "Bir kapi açtiniz." ) 
+d . setf ( "is_on" , 1 ) 
+d . notice ( index , 718 , "" , false ) 
+d . kill_unique ( "door6" ) 
+d . kill_unique ( "idoor6" ) 
+GetMissionInfo ( 6 , d . getf ( "real_time" ) - get_global_time ( ) ) 
+d . set_regen_file ( "data/dungeon/flame_dungeon/fd_f.txt" ) 
+d . spawn_mob ( 8057 , 511 , 480 ) 
+return 
+else 
+say_new ( "Araf Atesi Metin'ini yok etmediniz." ) 
+return 
+end 
+elseif level == 7 then 
+say_new ( "Bir kapi açtiniz." ) 
+if d . getf ( "spawn" ) == 0 then 
+server_timer ( "razador_2" , 1 , d . get_map_index ( ) ) 
+else 
+return 
+end 
+else 
+return 
+end 
+end 

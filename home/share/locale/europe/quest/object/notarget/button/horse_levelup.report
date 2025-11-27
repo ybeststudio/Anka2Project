@@ -1,0 +1,5 @@
+say_title ( "Seyis'in yanına dön." ) 
+say ( "" ) 
+say ( "Ona dönersen " ) 
+say ( "kazancini ögrenebilirsin." ) 
+say ( "" ) 

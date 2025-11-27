@@ -1,0 +1,9 @@
+say_title ( "Kendi gücünü artýr" ) 
+say ( "" ) 
+say ( "Malzemeyi almak için " .. mob_name ( 20355 ) .. "'yý bul." ) 
+say ( "" ) 
+if pc . getqf ( "time_to_wait" ) > pc . get_playtime ( ) then 
+local time_to_wait = pc . getqf ( "time_to_wait" ) - pc . get_playtime ( ) 
+say ( "Kalan zaman: " .. time_to_wait .. " dakika." ) 
+say ( "" ) 
+end 

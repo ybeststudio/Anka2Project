@@ -1,0 +1,3 @@
+if npc . get_race ( ) == 3101 or npc . get_race ( ) == 3102 or npc . get_race ( ) == 3103 or npc . get_race ( ) == 3104 or npc . get_race ( ) == 3105 or npc . get_race ( ) == 3190 or npc . get_race ( ) == 3191 then pc . setqf ( "kiklop_count" , pc . getqf ( "kiklop_count" ) + 1 ) 
+q . set_counter ( "Öldürülen Kiklop:" , pc . getqf ( "kiklop_count" ) ) 
+ return end 

@@ -1,0 +1,44 @@
+say_title ( "Antreman sonuçlari." ) 
+if horse . get_level ( ) <= 10 then 
+say ( "Atin antremeni yeterli degil." ) 
+elseif horse . get_level ( ) >= 20 then 
+say ( "Atin seviyesi artabilir. " ) 
+elseif ( horse . get_level ( ) >= 11 and horse . get_level ( ) <= 19 ) then 
+local s = number ( 1 , 2 ) 
+if 1 >= s then 
+say ( "At üzerinden saldiri olmadi." ) 
+say ( "" ) 
+say ( "Seyis'in yanýna dönüs," ) 
+say ( "yeniden deneme" ) 
+pc . setqf ( "next_time" , 0 ) 
+elseif 2 >= s then 
+say ( "At antremanin fayda sagladi." ) 
+if pc . countitem ( "50050" ) >= 1 then 
+char_log ( 0 , "HORSE_ADVANCE" , "BEGIN" ) 
+pc . removeitem ( "50050" , 1 ) 
+char_log ( 0 , "HORSE_ADVANCE" , "DEC 50050 1" ) 
+horse . unride ( ) 
+horse . advance ( ) 
+horse . ride ( ) 
+char_log ( 0 , "HORSE_ADVANCE" , "INC horse_advance 1" ) 
+char_log ( 0 , "HORSE_ADVANCE" , "END" ) 
+say ( " At seviyen" .. ( horse . get_level ( ) ) .. "" ) 
+say ( "" ) 
+if horse . get_level ( ) == 20 then 
+say ( "Atini gelistirmek " ) 
+say ( "için Seyis'in" ) 
+say ( "yanina dön." ) 
+pc . setqf ( "next_time" , 0 ) 
+else 
+say ( "Usta at almak için " ) 
+say ( "onunla 20.seviyeye kadar antreman yapman lazim." ) 
+say ( "" ) 
+end 
+else 
+say ( "Madalyonsuz atin ögrendiklerini," ) 
+say ( "yazamasin." ) 
+end 
+end 
+end 
+setstate ( "start" ) 
+q . done ( ) 

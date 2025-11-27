@@ -1,0 +1,3 @@
+if pc . get_map_index ( ) == 113 then say_title ( "OX Yarismasi" ) 
+say_new ( "[ENTER]Burada, zeka yarismasi için üç kralligin en parlak zekalari toplanir. Bu test sirasinda, herhangi bir konuda daha fazla soru görüntülenecektir. Cevabin dogru oldugunu düsünüyorsaniz O'ya, yanlis oldugunu düsünüyorsaniz X'e geçin. Sadece en iyiler ödüllendirilecek! [ENTER]" ) 
+ return end 

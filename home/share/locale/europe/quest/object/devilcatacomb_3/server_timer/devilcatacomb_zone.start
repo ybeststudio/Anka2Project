@@ -1,0 +1,16 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 3 then 
+d . purge ( ) 
+d . clear_regen ( ) 
+d . setf ( "level" , 4 ) 
+d . getf ( "stones" , 0 ) 
+d . jump_all ( 846 + 3072 , 898 + 12032 ) 
+d . notice ( d . get_map_index ( ) , 680 , "" , false ) 
+GetMissionInfo ( d . getf ( "level" ) , d . getf ( "real_time" ) - get_global_time ( ) ) 
+d . regen_file ( "data/dungeon/devilcatacomb/dc_5f_regen.txt" ) 
+local devil_king_pos = { { 673 , 829 } , { 691 , 638 } , { 848 , 568 } , { 1026 , 642 } , { 1008 , 862 } , { 848 , 742 } } 
+for i = 1 , 6 begin 
+d . spawn_mob ( 2591 , devil_king_pos [ i ] [ 1 ] , devil_king_pos [ i ] [ 2 ] ) 
+end 
+end 
+end 

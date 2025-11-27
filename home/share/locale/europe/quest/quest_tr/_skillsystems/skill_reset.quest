@@ -1,0 +1,124 @@
+quest skill_reset2 begin
+	state start begin
+		when 9006.chat."Becerileri sýfýrla " begin
+			if pc.getqf("delay") - get_time() > 0 then
+				say_title("Yaþlý Kadýn:")
+				say("Becerilerini yeniden sýfýrlamak ")
+				say("için 5 dakika beklemelisin. ")
+				return
+			end
+			---
+			if pc.level < 5 then
+				say_title("Yaþlý Kadýn")
+				say("")
+				say("Önce bir þeyler öðrenmelisin.")
+				say("")
+				return
+			end
+			---
+			if pc.level >120 then
+				say_title("Yaþlý Kadýn")
+				say("")
+				say("Seviyen "..""..pc.level.."")
+				say("Sana yardým edemem.")
+				say("Bu seviyede  beceri deðiþtiremezsin.")
+				say("Sadece seviyen 120 dan azsa baska bir")
+				say("beceri seçebilirsin.")
+				say("")
+				return
+			end
+			---
+			if  pc.get_skill_group()==0 then
+				say_title("Yaþlý Kadýn")
+				say("")
+				say("Sýfýrlamaya ihtiyacýn yok.")
+				say("")
+				return
+			end
+			---
+			local cost = 10000 + pc.level * 2000
+			local s = 0
+			if not pc.has_master_skill() then
+				say_title("Yaþlý Kadýn")
+				say("")
+				say("Merhaba,doðru yerdesin.")
+				say("Dertli görünüyorsun.")
+				say("Ýnsanlarýn becerilerini unutmalarýna")
+				say("yardýmcý oluyorum. Yeni baþtan baþlýyorlar.")
+				say("Becerilerini unutup, baþtan baþlamak")
+				say("istiyor musun?")
+				say("Fiyati:"..cost.." Yang.")
+				say("")
+				s = select( "Sýfýrla", "Sýfýrlama")
+			else
+				say_title("Yaþlý Kadýn")
+				say("Beceleri sýfýrlamakmý istiyorsun?.")
+				say("Fakat çalýþarak topladýðýn ")
+				say("tüm puanlarýný ")
+				say("kaybedeceksin.")
+				say("Yeniden baþlamak istediðine ")
+				say("emin misin? ")
+				say("Fiyatý "..cost.." Yang.")
+				say("")
+				s = select("Beceriyi Sýfýrla ", "Ýptal")
+			end
+			---
+			if 2==s then
+				say_title("Yaþlý Kadýn")
+				say("")
+				say("Eðer fikrin deðiþirse beni tekrar")
+				say("ziyaret et.")
+				say("")
+				return
+			end
+			---
+			if pc.money < cost then
+				say_title("Yaþlý Kadýn")
+				say("")
+				say("Yeterli Yang'a sahip deðilsin, ")
+				say("Yang olmadan sana yardým edemem, ")
+				say("Yaþamak için bir þeyler yapmalýyým. ")
+				say("")
+				return
+			end
+			---
+			pc.setqf("delay",get_time() + 5*60)
+			pc.changegold(-cost)
+			pc.clear_skill()
+			pc.set_skill_group(0)
+			set_quest_state("skill_group","run")
+		end
+
+		when 71100.use begin
+			if pc.level <=31 or pc.level >=104 then
+				say_title(item_name(71100))
+				say("31-104 seviye arasý kullanabilir.")
+				return
+			end
+			if  pc.get_skill_group()==0 then
+				say_title(item_name(71100))
+				say("Sýfýrlamaya ihtiyacýn yok.")
+				return
+			end
+			say_title(item_name(71100))
+			say("Bu öðe yeni becerilere geçiþi ve ")
+			say("eski becerileri unutmayý saðlar. ")
+			say("Sadece 31. seviye'ye ulaþmýþ ")
+			say("kiþiler kullanabilir. ")
+			say("Becerilerini sýfýrlamak istiyor musun? ")
+			say(" ")
+			s =  select(" Evet ", " Hayýr ")
+			if 2==s then
+				return
+			end
+			pc.clear_skill()
+			pc.set_skill_group(0)
+			horse.set_level(horse_level)
+			char_log(0, "RESET_SKILL", "RESET_SKILL_BY_71100")
+			pc.remove_item(71100) ;
+			set_quest_state("skill_group","run")
+		end
+	end
+end
+
+

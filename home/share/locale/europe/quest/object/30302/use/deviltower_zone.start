@@ -1,0 +1,14 @@
+if d . getf ( "level" ) == 7 and pc . get_map_index ( ) >= 660000 and pc . get_map_index ( ) < 670000 then if d . getf ( "Zin_Sa_Gui" ) == 0 then 
+d . new_kill_all ( ) 
+d . clear_regen ( ) 
+pc . remove_item ( 30302 , 1 ) 
+server_timer ( "Devil_8" , 10 , d . get_map_index ( ) ) 
+d . notice ( d . get_map_index ( ) , 658 , "" , false ) 
+d . setf ( "Zin_Sa_Gui" , 1 ) 
+GetMissionInfo ( 7 , 10 ) 
+d . dungeon_remove_all ( 30302 ) 
+else 
+d . notice ( d . get_map_index ( ) , 672 , "" , false ) 
+return 
+end 
+ return end 

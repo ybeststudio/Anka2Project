@@ -1,0 +1,5 @@
+q . set_counter ( "Kalan Zehirli Pençe Örümcegi:" , 10 - pc . getqf ( "kill_count" ) ) 
+setskin ( NOWINDOW ) 
+makequestbutton ( "Zerihli Pençe Örümcegi öldür!" ) 
+q . set_title ( "Zerihli Pençe Örümcegi öldür!" ) 
+q . start ( ) 

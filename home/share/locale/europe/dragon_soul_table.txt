@@ -1,0 +1,314 @@
+# 용혼석 테이블들...										
+# TAB 으로 구분되니 엑셀로 볼 것.										
+# vim으로 본다면 탭간 간격을 조정하고 볼 것. (set ts=16 추천)										
+# 큰 따옴표로 묶인 부분은 안 구분. 										
+# \" 이딴거 지원 안함.										
+										
+# 용혼석 Vnum에 대한 comment										
+# ITEM VNUM을 10만 자리부터, FEDCBA라고 한다면										
+# FE : 용혼석 종류.	D : 등급									
+# C : 단계			B : 강화							
+# A : 여벌의 번호들... 										
+# 이 체계에서 벗어나는 용혼석은 용서하지 않을 것이다.										
+# ok?										
+# 용혼석이 너무나도 많기 때문에 Vnum이 중구난방이면,										
+#	Special item group에서 group으로 묶어서 처리하기도 힘들고-_-,									
+#	VnumHelper.h에서 처리하는 것도 힘들다. -_-									
+# 	Group 잡는데만 수천줄을 써야할 지도...									
+# Vnum에 체계를 잡아서 자릿수 기반으로 해야만 한다.										
+										
+# Table은 "Group"과 "이름"으로 시작한다.										
+# Table 내부에 또 Table이 있을 수 있다.										
+# 그렇다고 엉뚱한 테이블을 써놓는다고 서버가 인식하는 것은 아니다.										
+# 필요한 테이블은 다음과 같다.										
+# BaseVnums, BaseAttrs, AddtionalAttrs, AttrSettings, UpgradeTable, ImproveTable,										
+# RefineTable, UpgradeMoneys, ImproveTable, RefineMoneys, WeightTable, DurationTable,										
+# DragonHeartExtTable, DragonSoulExtTable										
+										
+# 확률 테이블의 값은 기본적으로 float이다.										
+										
+# 중요 !!!!!										
+# 테이블을 보다 보면 #--#이라 쓰여진 부분이 있는데 절대로 지우지 말것.										
+# 										
+										
+# 이건 vnum to 이름 mapping.										
+# 이걸로 특정 vnum의 용혼석이 어떤 종류의 용혼석인지(이름이 뭔지) 알아낸 후,										
+# 그 용혼석에 해당하는 속성을 찾는다.										
+# 또한 여기에 적혀있지 않은 용혼석이 밑에 Group 정의하는 부분에 있다면										
+# 에러.										
+Group VnumMapper										
+{										
+	# 시작 vnum.									
+	# 여기서 써야할 부분은 위에 설명한 FE에 해당하는 부분. 									
+	# FE를 써줄 것									
+	#--#	DragonSoulName	Type							
+	1	백룡석	11							
+	2	화룡석	12							
+	3	풍룡석	13							
+	4	철룡석	14							
+	5	뇌룡석	15							
+	6	흑룡석	16							
+}										
+										
+Group BasicApplys										
+{										
+	Group 백룡석									
+	{									
+	# 1부터 순서대로 부여된다.									
+		#--#	Apply_Type	Apply_value						
+		1	INT	10						
+		2	RESIST_ICE	10						
+	}									
+										
+	Group 화룡석									
+	{									
+		#--#	Apply_Type	Apply_value						
+		1	STR	10						
+		2	RESIST_FIRE	10
+	}									
+	Group 풍룡석									
+	{									
+		#--#	Apply_Type	Apply_value						
+		1	MAX_SP	500						
+		2	RESIST_WIND	10						
+	}									
+	Group 철룡석									
+	{									
+		#--#	Apply_Type	Apply_value						
+		1	DEX	10						
+		2	RESIST_EARTH	10						
+	}									
+	Group 뇌룡석									
+	{									
+		#--#	Apply_Type	Apply_value						
+		1	MAX_HP	1500						
+		2	RESIST_ELEC	10						
+	}									
+	Group 흑룡석									
+	{									
+		#--#	Apply_Type	Apply_value						
+		1	CON	10						
+		2	RESIST_DARK	10						
+	}									
+}										
+										
+Group AdditionalApplys										
+{										
+	Group 백룡석									
+	{									
+	# 앞의 첫 컬럼은 순서와 관계 없다. 철저히 확률에 따라 속성이 부여될 뿐이다.									
+		#--#	Apply_Type	Apply_value	Prob					
+		1	MAGIC_ATT_GRADE	15	10					
+		2	MAGIC_DEF_GRADE	15	10					
+		3	SKILL_DAMAGE_BONUS	15	10					
+		4	SKILL_DEFEND_BONUS	15	10					
+	}									
+	Group 화룡석									
+	{									
+		#--#	Apply_Type	Apply_value	Prob					
+		1	ATT_BONUS	300	10					
+		2	DEF_BONUS	200	10					
+		3	NORMAL_HIT_DAMAGE_BONUS	15	10					
+		4	NORMAL_HIT_DEFEND_BONUS	15	10					
+	}									
+	Group 풍룡석									
+	{									
+		#--#	Apply_Type	Apply_value	Prob					
+		1	MAX_HP	3000	10					
+		2	HP_REGEN	10	10					
+		3	STEAL_HP	10	10					
+		4	KILL_HP_RECOVER	5	10					
+		5	MAX_HP_PCT	20	10					
+	}									
+	Group 철룡석									
+	{									
+		#--#	Apply_Type	Apply_value	Prob					
+		1	ATT_BONUS_TO_WARRIOR	15	10					
+		2	ATT_BONUS_TO_ASSASSIN	15	10					
+		3	ATT_BONUS_TO_SURA	15	10					
+		4	ATT_BONUS_TO_SHAMAN	15	10					
+		5	RESIST_WARRIOR	15	10					
+		6	RESIST_ASSASSIN	15	10					
+		7	RESIST_SURA	15	10					
+		8	RESIST_SHAMAN	15	10					
+	}									
+	Group 뇌룡석									
+	{									
+		#--#	Apply_Type	Apply_value	Prob					
+		1	MAX_SP	1500	10					
+		2	SP_REGEN	10	10					
+		3	STEAL_SP	10	10					
+		4	KILL_SP_RECOVER	5	10					
+		5	MAX_SP_PCT	20	10					
+	}									
+	Group 흑룡석									
+	{									
+		#--#	Apply_Type	Apply_value	Prob					
+		1	BLOCK	10	10					
+		2	DODGE	10	10					
+		3	REFLECT_MELEE	10	10					
+		4	RESIST_CRITICAL	10	10					
+		5	RESIST_PENETRATE	10	10					
+	}									
+}										
+										
+# 여기부터 Default를 둔다.										
+# Default 값을 모든 용혼석이 따르고, 										
+# 특정 값이 있는 용혼석은 Default를 바탕으로 그 값을 덮어쓴다.										
+# 등급에 따른 속성수										
+# 단, basis, add_max는 3보다 크면 안된다.										
+Group ApplyNumSettings										
+{										
+	Group Default									
+	{									
+		#--#	GRADE_NORMAL	GRADE_BRILLIANT	GRADE_RARE	GRADE_ANCIENT	GRADE_LEGENDARY			
+		basis	1	1	1	2	2			
+		add_min	0	0	0	0	0			
+		add_max	0	1	2	2	3			
+	}									
+#	Group 백룡석									
+#	{									
+#		#--#	GRADE_NORMAL	GRADE_BRILLIANT	GRADE_RARE	GRADE_ANCIENT	GRADE_LEGENDARY			
+#		basis	1	1	1	2	2			
+#	}									
+}										
+										
+# 용혼석 가중치 테이블.										
+# 이 테이블에서 값이 0이라면 그 이상의 강화는 불가능하다고 판단한다.										
+Group WeightTables										
+{										
+	Group Default									
+	{									
+		Group GRADE_NORMAL								
+		{								
+	#		단계	강화						
+			#--#	0	1	2	3	4	5	6
+			STEP_LOWEST	1	2	3	0	0	0	0
+			STEP_LOW	2	3	4	0	0	0	0
+			STEP_MID	3	4	5	6	0	0	0
+			STEP_HIGH	4	5	6	7	0	0	0
+			STEP_HIGHEST	5	6	7	8	10	0	0
+		}								
+		Group GRADE_BRILLIANT								
+		{								
+			STEP_LOWEST	3	4	5	6	0	0	0
+			STEP_LOW	4	5	6	8	0	0	0
+			STEP_MID	5	6	8	10	0	0	0
+			STEP_HIGH	6	8	10	12	15	0	0
+			STEP_HIGHEST	8	10	12	15	20	0	0
+		}								
+		Group GRADE_RARE								
+		{								
+			#--#	0	1	2	3	4	5	6
+			STEP_LOWEST	6	7	9	11	15	0	0
+			STEP_LOW	7	9	11	15	20	0	0
+			STEP_MID	9	11	15	20	25	0	0
+			STEP_HIGH	11	15	20	25	30	0	0
+			STEP_HIGHEST	15	20	25	30	40	0	0
+		}								
+		Group GRADE_ANCIENT								
+		{								
+			#--#	0	1	2	3	4	5	6
+			STEP_LOWEST	10	12	15	18	20	0	0
+			STEP_LOW	12	15	18	20	25	0	0
+			STEP_MID	15	18	20	25	35	0	0
+			STEP_HIGH	18	20	25	35	40	0	0
+			STEP_HIGHEST	20	25	35	40	60	80	0
+		}								
+		Group GRADE_LEGENDARY								
+		{								
+			#--#	0	1	2	3	4	5	6
+			STEP_LOWEST	30	35	40	45	50	0	0
+			STEP_LOW	35	40	45	50	55	0	0
+			STEP_MID	40	45	50	55	65	0	0
+			STEP_HIGH	45	50	55	65	75	90	0
+			STEP_HIGHEST	50	55	65	75	90	105	120
+		}								
+	}									
+#	Group 백룡석									
+#	{									
+#		Group GRADE_NORMAL								
+#		{								
+#			#--#	0	1	2	3	4	5	6
+#			STEP_LOWEST	10	20	53	0	0	0	0
+#			STEP_HIGHEST	50	60	37	18	10	0	0
+#		}								
+#	}									
+}
+										
+# 개량 table									
+Group RefineGradeTables									
+{									
+	Group Default								
+	{								
+		#--#	NEED_COUNT	FEE	GRADE_NORMAL	GRADE_BRILLIANT	GRADE_RARE	GRADE_ANCIENT	GRADE_LEGENDARY
+		GRADE_NORMAL	15	30000	70	25	5	0	0
+		GRADE_BRILLIANT	10	50000	25	70	5	0	0
+		GRADE_RARE	5	70000	8	15	75	2	0
+		GRADE_ANCIENT	3	100000	2	3	8	85	2
+	}								
+}									
+									
+Group RefineStepTables									
+{									
+	Group Default								
+	{								
+		#--#	NEED_COUNT	FEE	STEP_LOWEST	STEP_LOW	STEP_MID	STEP_HIGH	STEP_HIGHEST
+		STEP_LOWEST	4	20000	70	25	5	0	0
+		STEP_LOW	3	30000	25	70	5	0	0
+		STEP_MID	2	40000	10	20	80	1	0
+		STEP_HIGH	1	50000	2	3	5	89	1
+	}								
+}									
+									
+Group RefineStrengthTables									
+{									
+	Group Default								
+	{								
+		# MATERIAL_DS_REFINE_NORMAL : GRADE_NORMAL 강화석							
+		# MATERIAL_DS_REFINE_BLESSED : 축복의 강화석							
+		# MATERIAL_DS_REFINE_HOLLY : 용신의 강화석							
+		#--#	FEE	0	1	2	3	4	5
+		MATERIAL_DS_REFINE_NORMAL	10000	100	80	70	50	30	20
+		MATERIAL_DS_REFINE_BLESSED	20000	100	88	77	55	33	22
+		MATERIAL_DS_REFINE_HOLLY	30000	100	90	80	60	40	30
+	}								
+}									
+
+# 용심은 100000(임시 vnum)이고, 충전량은 socket (0)에 박아넣는다.										
+# 단, special item group에 vnum 10053으로 정의되어있는 다른 용심들은 Value(0)에 있는 값이 충전량.										
+# 용심 추출 확률 테이블										
+# 충전량이 0이라는 것은 추출 실패라는 거.										
+Group DragonHeartExtTables										
+{										
+	Group Default									
+	{									
+		#--#	1	2	3	4	5			
+	# 용심 충전량(%)									
+		CHARGING	0	5	15	30	50			
+	#	등급과 충전량에 따른 확률 테이블								
+	#	등급 	확률							
+		GRADE_NORMAL	50	35	12	2	1			
+		GRADE_BRILLIANT	35	40	20	4	1			
+		GRADE_RARE	20	35	30	12	3			
+		GRADE_ANCIENT	15	30	35	15	5			
+		GRADE_LEGENDARY	10	20	40	20	10			
+	}									
+}										
+										
+# 용혼석 추출 확률 테이블.										
+# 이것도 1, 2안이 있어 통합할 수 있는 방안으로 감.										
+# 추출 확률을 정할 수 있고, 실패 부산물도 정할 수 있음.(0이면 안줌)										
+Group DragonSoulExtTables										
+{										
+	Group Default									
+	{									
+				#실패 부산물						
+		#--#	Prob	ByProduct						
+		GRADE_NORMAL	50	30270						
+		GRADE_BRILLIANT	40	30270						
+		GRADE_RARE	30	30270						
+		GRADE_ANCIENT	30	30270						
+		GRADE_LEGENDARY	20	30270						
+	}									
+}										

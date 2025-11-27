@@ -1,0 +1,21 @@
+say_title ( "Shuk-Sal:" ) 
+say ( "" ) 
+say ( "2 Milyon yang karþýlýðýnda sana" ) 
+say ( "geçit bileti verebilirim." ) 
+say ( "" ) 
+say ( "Satýn almak istiyor musun?" ) 
+say ( "" ) 
+local satin = select ( "Satýn al" , "Alma" ) 
+if satin == 1 then 
+local ucret = 2e+06 
+if pc . money < ucret then 
+say_title ( "Shuk-Sal:" ) 
+say ( "" ) 
+say ( "Yeterli yangýn yok." ) 
+say ( "" ) 
+return 
+else 
+pc . changegold ( - ucret ) 
+pc . give_item2 ( "71130" , 1 ) 
+end 
+end 

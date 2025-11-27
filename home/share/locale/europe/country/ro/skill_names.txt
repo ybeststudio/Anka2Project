@@ -1,0 +1,67 @@
+Vnum	LocaleName
+1	Incizie Triplă
+2	Vârtejul Sabiei
+3	Iureș
+4	Aura Sabiei
+5	Izbitură
+16	Atacul Spiritului
+17	Zdrobire
+18	Zdruncinare
+19	Corp Rezistent
+20	Atacul Sabiei
+31	Ambuscadă
+32	Atac fulger
+33	Pumnal Rulant
+34	Camuflaj
+35	Nor Otrăvitor
+46	Foc Repetat
+47	Ploaie de Săgeți
+48	Săgeată de Foc
+49	Mers de Fulg
+50	Săgeată Otrăvită
+61	Lovitura Degetului
+62	Vârtejul Dragonului
+63	Tăiș Vrăjit
+64	Teamă
+65	Armură Vrajită
+66	Risipirea Magiei
+76	Lovitură Întunecată
+77	Lovitura Focului
+78	Spiritul Flăcării
+79	Protecție Întunecată
+80	Lovitura Spiritului
+81	Sferă Întunecată
+91	Talisman Zburător
+92	Aruncarea Dragonului
+93	Răgetul Dragonului
+94	Binecuvântare
+95	Reflexie
+96	Ajutorul Dragonului
+106	Aruncarea Fulgerului
+107	Chemarea Fulgerului
+108	Gheara Fulgerului
+109	Leac
+110	Accelerare
+111	Atac Forțat
+121	Conducere
+122	Combo
+123	Pescuit
+124	Minerit
+125	Crearea Obiectelor
+126	Shinsoo
+127	Chunjo
+128	Jinno
+129	Transformare
+130	Călărit
+131	Cheamă Calul.
+137	Lupta de pe cal
+138	Zdruncinare
+139	Atac în Valuri
+140	Rafală de Săgeți
+151	Ochi de Dragon
+152	Sângele Zeului Dragon
+153	Binecuvantarea Zeului Dragon
+154	Armură Sfântă
+155	Accelerare
+156	Furia Zeului Dragon
+157	Ajutor Fermecat

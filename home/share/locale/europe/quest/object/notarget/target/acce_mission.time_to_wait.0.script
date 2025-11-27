@@ -1,0 +1,22 @@
+target . delete ( "captain" ) 
+if pc . getqf ( "time_to_wait" ) > pc . get_playtime ( ) and not pc . is_gm ( ) then 
+local time_to_wait = pc . getqf ( "time_to_wait" ) - pc . get_playtime ( ) 
+say ( "Henüz Üç saat dolmadı." ) 
+say ( "" ) 
+say ( "Kalan zaman: " .. time_to_wait .. " dakika." ) 
+say ( "" ) 
+else 
+pc . setqf ( "time_to_wait" , 0 ) 
+say ( "Döndün demek. Ben de sözümü tuttum:" ) 
+say ( "İşte istediğin kumaş." ) 
+say ( "Acilen güçlerimizi artırmaya devam etmemiz" ) 
+say ( "gerektiğini unutma. Bu biraz vakit alır." ) 
+say ( "Eğer yardıma ihtiyaç duyarsan yine yanıma gel." ) 
+say_item_vnum ( 80019 ) 
+if pc . count_item ( "80019" ) >= 39 then 
+set_state ( "__complete" ) 
+else 
+set_state ( "go_to_disciple" ) 
+end 
+pc . give_item2 ( 80019 , 1 ) 
+end 

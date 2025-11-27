@@ -1,0 +1,5 @@
+target . delete ( "teacher7" ) 
+if skill_group . join ( 3 , 1 , "Ejderha Gücü Ögretmeni" , "Ejderha Gücü eðitiminde, Ejderha Tanrýnýn [ENTER]güçlü ateþ saldýrýlarýný yönetmeyi ve[ENTER]dayanýklýlýk büyüleriyle Ejderha Tanrýnýn [ENTER]korumasýný kullanmayi ögrenirler.[ENTER]Gereksinim: Seviye 5 ve üstü bir savaþçý olmak." ) then 
+say_title ( "-- " .. mob_name ( 20306 ) .. " --" ) 
+skill_group . chat_end ( ) 
+end 

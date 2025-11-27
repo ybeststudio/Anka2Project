@@ -1,0 +1,21 @@
+ScriptType            RaceDataScript
+
+BaseModelFileName     "D:\Ymir Work\npc_pet\easter_2017_rabbit\easter_2017_rabbit.GR2"
+
+Group ShapeData
+{
+    PathName 		 ""
+    ShapeDataCount 		 1
+	Group ShapeData00
+	{
+		ShapeIndex			0
+
+		Model				"D:\Ymir Work\npc_pet\easter_2017_rabbit\easter_2017_rabbit.GR2"
+		SourceSkin			"D:\Ymir Work\npc_pet\easter_2017_rabbit\easter_2017_rabbit_1.dds"
+		TargetSkin			"D:\Ymir Work\npc_pet\easter_2017_rabbit\easter_2017_rabbit_2.dds"
+	}
+}
+Group AttachingData
+{
+    AttachingDataCount       0
+}

@@ -1,0 +1,4 @@
+if game . get_event_flag ( "okey_cards_drop" ) > 0 then say_title ( "Okey Karti" ) 
+say_new ( "[ENTER]Merhaba genç kahraman! Bugün yeni bir oyun zamani. Okey Karti sayilara ve sansa dayanir. [ENTER]" ) 
+say_reward_new ( "Ne kadar sanslisiniz? [ENTER]" ) 
+ return end 

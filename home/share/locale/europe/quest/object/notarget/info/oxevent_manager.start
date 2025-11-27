@@ -1,0 +1,15 @@
+say_title ( "OX Yarismasi'ndan ayril" ) 
+say_new ( "[ENTER]Ayrilmak istediginizden emin misiniz? [ENTER]" ) 
+local s = select ( "Evet" , "Hayir" ) 
+if s == 2 then 
+send_letter ( "OX Yarismasi'ndan ayril" ) 
+return 
+end 
+local empire = pc . get_empire ( ) 
+if empire == 1 then 
+pc . warp ( 473900 , 954600 ) 
+elseif empire == 2 then 
+pc . warp ( 63200 , 166700 ) 
+elseif empire == 3 then 
+pc . warp ( 959600 , 269700 ) 
+end 

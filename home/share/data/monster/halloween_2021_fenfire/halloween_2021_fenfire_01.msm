@@ -1,0 +1,26 @@
+ScriptType            RaceDataScript
+
+BaseModelFileName     "D:\Ymir Work\npc_pet\halloween_2021_fenfire\halloween_2021_fenfire.GR2"
+
+Group ShapeData
+{
+    PathName 		 ""
+    ShapeDataCount 		 0
+}
+Group AttachingData
+{
+    AttachingDataCount       1
+    
+    Group AttachingData00
+    {
+        AttachingDataType    2
+        
+        isAttaching          1
+        AttachingModelIndex  0
+        AttachingBoneName    "efff"
+        
+        EffectScriptName     "D:\Ymir Work\effect\pet\pet_fenfire_01.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+        EffectRotation       0.000000 0.000000 0.000000
+    }
+}

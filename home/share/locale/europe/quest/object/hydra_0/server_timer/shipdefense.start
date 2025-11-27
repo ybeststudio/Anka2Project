@@ -1,0 +1,7 @@
+local index = get_server_timer_arg ( ) 
+if d . select ( index ) then 
+d . notice ( index , 727 , "" , false ) 
+d . regen_file ( "data/dungeon/hydra/hidra.txt" ) 
+server_timer ( "hydra_kill" , 5 , index ) 
+d . regen_file ( "data/dungeon/hydra/wall.txt" ) 
+end 

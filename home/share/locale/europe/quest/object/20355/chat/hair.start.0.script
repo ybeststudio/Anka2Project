@@ -1,0 +1,46 @@
+say_title ( gameforge . hair . _011_sayTitle ) 
+say ( gameforge . hair . _012_say ) 
+say ( "" ) 
+local vnum = input_number ( ) 
+say_item_vnum ( vnum ) 
+wait ( ) 
+if hair . My_hair_item ( vnum , 1 ) == nil and hair . My_hair_item ( vnum - 1000 , 1 ) then 
+say ( "VNUM : " .. vnum .. gameforge . hair . _013_say ) 
+return 
+end 
+local race = pc . get_race ( ) + 1 
+local start_index = hair . get_start_index_by_race ( race ) 
+if vnum > 74000 then 
+for i = 0 , 20 begin 
+if start_index + i == vnum then 
+pc . set_part ( PART_HAIR , hair . My_hair_item ( vnum , 1 ) ) 
+affect . remove_hair ( ) 
+affect . add_hair ( hair . My_hair_item ( vnum , 2 ) , hair . My_hair_item ( vnum , 3 ) , hair . My_hair_item ( vnum , 4 ) ) 
+pc . setqf ( "limit_time" , get_time ( ) + hair . My_hair_item ( vnum , 4 ) ) 
+hair . leave_log ( vnum ) 
+return 
+end 
+end 
+elseif vnum > 73000 and vnum <= 73762 then 
+local model = 0 
+start_index = start_index - 1000 
+for i = 0 , 12 begin 
+local index = start_index + i 
+if index == vnum then 
+if 1 == race then 
+model = vnum - 72000 
+elseif 2 == race then 
+model = vnum - 71250 
+elseif 3 == race then 
+model = vnum - 70500 
+elseif 4 == race then 
+model = vnum - 69750 
+end 
+if 0 ~= model then 
+pc . set_part ( PART_HAIR , model ) 
+return 
+end 
+end 
+end 
+end 
+syschat ( gameforge . hair . _014_say ) 

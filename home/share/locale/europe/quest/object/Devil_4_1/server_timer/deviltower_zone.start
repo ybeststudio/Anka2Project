@@ -1,0 +1,13 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 4 then 
+clear_server_timer ( "Devil_4" , get_server_timer_arg ( ) ) 
+local positions = deviltower_zone . get_4floor_stone_pos ( ) 
+for i = 1 , 6 begin 
+d . set_unique ( "fake" .. i , d . spawn_mob ( 8017 , positions [ i ] [ 1 ] , positions [ i ] [ 2 ] ) ) 
+end 
+local vid = d . spawn_mob ( 8017 , positions [ 7 ] [ 1 ] , positions [ 7 ] [ 2 ] ) 
+d . set_unique ( "real" , vid ) 
+d . notice ( d . get_map_index ( ) , 660 , "" , false ) 
+GetMissionInfo ( 4 , d . getf ( "real_time" ) - get_global_time ( ) ) 
+end 
+end 

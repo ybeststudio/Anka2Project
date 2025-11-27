@@ -1,0 +1,5 @@
+ScriptType               MotionData
+
+MotionFileName           "d:/ymir work/npc/young_merchant/run.gr2"
+MotionDuration           0.600000
+Accumulation             0.00	-299.384826	0.00

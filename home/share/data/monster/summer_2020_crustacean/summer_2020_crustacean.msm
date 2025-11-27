@@ -1,0 +1,14 @@
+ScriptType            RaceDataScript
+
+BaseModelFileName     "d:/ymir work/npc_pet/summer_2020_crustacean/summer_2020_crustacean.gr2"
+
+Group ShapeData
+{
+    PathName 		 ""
+    ShapeDataCount 		 0
+}
+Group AttachingData
+{
+    AttachingDataCount       0
+    
+}

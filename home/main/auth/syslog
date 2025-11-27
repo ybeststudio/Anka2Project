@@ -1,0 +1,27 @@
+SYSERR: Nov 27 20:06:55 :: pid_init: 
+Start of pid: 1226
+
+Nov 27 20:06:55 :: SYSTEM: BINDING TCP PORT ON [30001] (fd 11)
+Nov 27 20:06:55 :: SYSTEM: BINDING TCP PORT ON [30002] (fd 12)
+Nov 27 20:06:55 :: SYSTEM: Trying to connect to localhost:15000
+Nov 27 20:06:55 :: SYSTEM: connected to server (fd 13, ptr 0x218c1900)
+Nov 27 20:06:55 :: CMobTimerManager: I am the master!
+Nov 27 20:06:55 :: Initializing Guild
+Nov 27 20:06:55 :: 	No need for auth server
+Nov 27 20:06:55 :: Cube_Init locale/europe/cube.txt
+SYSERR: Nov 27 20:06:55 :: Cube_init: Cube_Init failed
+Nov 27 20:06:55 :: Blend_Item_init locale/europe/blend.txt 
+SYSERR: Nov 27 20:06:55 :: Blend_Item_init: <Blend_Item_init> fail
+Nov 27 20:07:14 :: SYSTEM: new connection from [192.168.1.20] fd: 16 handshake 2605743022 output input_len 0, ptr 0x218c1e00
+Nov 27 20:07:14 :: Handshake: client_time 0 server_time 19989
+Nov 27 20:07:14 :: AUTH_PHASE 0x218c1e00
+Nov 27 20:07:15 :: InputAuth::Login : bestpro(7) desc 0x218c1e00
+Nov 27 20:07:15 :: SetLoginKey 779754152
+Nov 27 20:07:15 :: InputAuth::Login : key 779754152 login bestpro
+Nov 27 20:07:15 :: QID_AUTH_LOGIN: START 779754152 0x218c1e00
+Nov 27 20:07:15 :: Create_Time 0 19700101
+Nov 27 20:07:15 :: Block Time -2 
+Nov 27 20:07:15 :: SendAuthLogin bestpro language 11 key 1
+Nov 27 20:07:15 :: QID_AUTH_LOGIN: SUCCESS bestpro
+Nov 27 20:07:15 :: AuthLogin result 1 key 779754152
+Nov 27 20:07:15 :: SYSTEM: closing socket. DESC #16

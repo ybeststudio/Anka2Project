@@ -1,0 +1,86 @@
+if pc . get_level ( ) < 75 then 
+say_new ( "[ENTER]Girmek için gerekli seviyeye sahip degilsiniz! [ENTER]" ) 
+return 
+else 
+local cooldown = pc . getf ( "devilcatacomb_zone" , "cooldown" ) 
+local real_time = get_global_time ( ) 
+local r_cooldown = pc . getf ( "devilcatacomb_zone" , "cooldown" ) - real_time 
+if not pc . is_gm ( ) and cooldown > real_time then 
+say_title ( mob_name ( 20367 ) ) 
+say_new ( "" ) 
+say_new ( r_cooldown .. " saniye kaldi tekrar girmek için! [ENTER]" ) 
+return 
+end 
+pc . remove_item ( 30311 , pc . count_item ( 30311 ) ) 
+say_title ( mob_name ( 30101 ) ) 
+say_new ( "[ENTER]Zindana girmek istiyor musunuz? [ENTER]" ) 
+local x = select ( "Yalniz" , "Grupla" , "Iptal" ) 
+if x == 1 then 
+if pc . count_item ( 30319 ) <= 0 then 
+say_title ( mob_name ( 30101 ) ) 
+say_new ( "[ENTER]Girmek için anahtariniz yok! [ENTER]" ) 
+say_item_vnum ( 30319 , 1 ) 
+return 
+end 
+pc . remove_item ( 30319 , 1 ) 
+d . new_jump ( 216 , ( 3072 + 550 ) * 100 , ( 12032 + 45 ) * 100 ) 
+if d . select ( d . get_map_index ( ) ) then 
+d . setf ( "first_regen" , 1 ) 
+d . setf ( "DungeonBlock" , 1 ) 
+end 
+elseif x == 2 then 
+if party . is_party ( ) then 
+local user_fail_cooldown = { } 
+local user_fail_ticket = { } 
+local CooldownCheck = true 
+local ticketCheck = true 
+local pids = { party . get_member_pids ( ) } 
+for i , pid in next , pids , nil begin 
+q . begin_other_pc_block ( pid ) 
+if not pc . is_gm ( ) and pc . getf ( "devilcatacomb_zone" , "cooldown" ) > get_global_time ( ) then 
+table . insert ( user_fail_cooldown , pc . get_name ( ) ) 
+CooldownCheck = false 
+end 
+if pc . count_item ( 30319 ) <= 0 then 
+table . insert ( user_fail_ticket , pc . get_name ( ) ) 
+ticketCheck = false 
+end 
+q . end_other_pc_block ( ) 
+end 
+if CooldownCheck == false then 
+say_new ( "Oyuncu beklemeli: [ENTER]" ) 
+local a = 1 
+for i , name in next , user_fail_cooldown , nil begin 
+say_new ( string . format ( "%d. %s" , a , name ) ) 
+a = a + 1 
+end 
+return 
+end 
+if ticketCheck == false then 
+say_new ( "Oyuncunun anahtari yok: [ENTER]" ) 
+local a = 1 
+for i , name in next , user_fail_ticket , nil begin 
+say_new ( string . format ( "%d. %s" , a , name ) ) 
+a = a + 1 
+end 
+return 
+end 
+for i , pid in next , pids , nil begin 
+q . begin_other_pc_block ( pid ) 
+pc . remove_item ( 30319 , 1 ) 
+q . end_other_pc_block ( ) 
+end 
+d . new_jump_party ( 216 , ( 3072 + 550 ) , ( 12032 + 45 ) ) 
+if d . select ( d . get_map_index ( ) ) then 
+d . setf ( "DungeonBlock" , 1 ) 
+d . setf ( "first_regen" , 1 ) 
+end 
+else 
+say_title ( mob_name ( 30101 ) ) 
+say_new ( "[ENTER]Bir grupta degilsiniz! [ENTER]" ) 
+return 
+end 
+elseif x == 3 then 
+return 
+end 
+end 

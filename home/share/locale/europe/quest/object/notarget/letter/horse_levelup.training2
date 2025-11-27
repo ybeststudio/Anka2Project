@@ -1,0 +1,5 @@
+q . set_counter ( "Kalan Chuong:" , 5 - pc . getqf ( "kill_count" ) ) 
+setskin ( NOWINDOW ) 
+makequestbutton ( "Chuong öldür!" ) 
+q . set_title ( "Chuong öldür!" ) 
+q . start ( ) 

@@ -1,0 +1,6805 @@
+VNUM	LOCALE_NAME
+1	Yang
+2	English Version
+10	Sword+0
+11	Sword+1
+12	Sword+2
+13	Sword+3
+14	Sword+4
+15	Sword+5
+16	Sword+6
+17	Sword+7
+18	Sword+8
+19	Sword+9
+20	Long Sword+0
+21	Long Sword+1
+22	Long Sword+2
+23	Long Sword+3
+24	Long Sword+4
+25	Long Sword+5
+26	Long Sword+6
+27	Long Sword+7
+28	Long Sword+8
+29	Long Sword+9
+30	Crescent Sword+0
+31	Crescent Sword+1
+32	Crescent Sword+2
+33	Crescent Sword+3
+34	Crescent Sword+4
+35	Crescent Sword+5
+36	Crescent Sword+6
+37	Crescent Sword+7
+38	Crescent Sword+8
+39	Crescent Sword+9
+40	Bamboo Sword+0
+41	Bamboo Sword+1
+42	Bamboo Sword+2
+43	Bamboo Sword+3
+44	Bamboo Sword+4
+45	Bamboo Sword+5
+46	Bamboo Sword+6
+47	Bamboo Sword+7
+48	Bamboo Sword+8
+49	Bamboo Sword+9
+50	Broad Sword+0
+51	Broad Sword+1
+52	Broad Sword+2
+53	Broad Sword+3
+54	Broad Sword+4
+55	Broad Sword+5
+56	Broad Sword+6
+57	Broad Sword+7
+58	Broad Sword+8
+59	Broad Sword+9
+60	Silver Sword+0
+61	Silver Sword+1
+62	Silver Sword+2
+63	Silver Sword+3
+64	Silver Sword+4
+65	Silver Sword+5
+66	Silver Sword+6
+67	Silver Sword+7
+68	Silver Sword+8
+69	Silver Sword+9
+70	Orchid Sword+0
+71	Orchid Sword+1
+72	Orchid Sword+2
+73	Orchid Sword+3
+74	Orchid Sword+4
+75	Orchid Sword+5
+76	Orchid Sword+6
+77	Orchid Sword+7
+78	Orchid Sword+8
+79	Orchid Sword+9
+80	Bastard Sword+0
+81	Bastard Sword+1
+82	Bastard Sword+2
+83	Bastard Sword+3
+84	Bastard Sword+4
+85	Bastard Sword+5
+86	Bastard Sword+6
+87	Bastard Sword+7
+88	Bastard Sword+8
+89	Bastard Sword+9
+90	Barbarian Sword+0
+91	Barbarian Sword+1
+92	Barbarian Sword+2
+93	Barbarian Sword+3
+94	Barbarian Sword+4
+95	Barbarian Sword+5
+96	Barbarian Sword+6
+97	Barbarian Sword+7
+98	Barbarian Sword+8
+99	Barbarian Sword+9
+100	Bloody Sword+0
+101	Bloody Sword+1
+102	Bloody Sword+2
+103	Bloody Sword+3
+104	Bloody Sword+4
+105	Bloody Sword+5
+106	Bloody Sword+6
+107	Bloody Sword+7
+108	Bloody Sword+8
+109	Bloody Sword+9
+110	Great Sword+0
+111	Great Sword+1
+112	Great Sword+2
+113	Great Sword+3
+114	Great Sword+4
+115	Great Sword+5
+116	Great Sword+6
+117	Great Sword+7
+118	Great Sword+8
+119	Great Sword+9
+120	Flying Wizard Sword+0
+121	Flying Wizard Sword+1
+122	Flying Wizard Sword+2
+123	Flying Wizard Sword+3
+124	Flying Wizard Sword+4
+125	Flying Wizard Sword+5
+126	Flying Wizard Sword+6
+127	Flying Wizard Sword+7
+128	Flying Wizard Sword+8
+129	Flying Wizard Sword+9
+130	Half Moon Sword+0
+131	Half Moon Sword+1
+132	Half Moon Sword+2
+133	Half Moon Sword+3
+134	Half Moon Sword+4
+135	Half Moon Sword+5
+136	Half Moon Sword+6
+137	Half Moon Sword+7
+138	Half Moon Sword+8
+139	Half Moon Sword+9
+140	Battle Sword+0
+141	Battle Sword+1
+142	Battle Sword+2
+143	Battle Sword+3
+144	Battle Sword+4
+145	Battle Sword+5
+146	Battle Sword+6
+147	Battle Sword+7
+148	Battle Sword+8
+149	Battle Sword+9
+150	Ghost Fang Blade+0
+151	Ghost Fang Blade+1
+152	Ghost Fang Blade+2
+153	Ghost Fang Blade+3
+154	Ghost Fang Blade+4
+155	Ghost Fang Blade+5
+156	Ghost Fang Blade+6
+157	Ghost Fang Blade+7
+158	Ghost Fang Blade+8
+159	Ghost Fang Blade+9
+160	Nymph Sword+0
+161	Nymph Sword+1
+162	Nymph Sword+2
+163	Nymph Sword+3
+164	Nymph Sword+4
+165	Nymph Sword+5
+166	Nymph Sword+6
+167	Nymph Sword+7
+168	Nymph Sword+8
+169	Nymph Sword+9
+170	Sting Sword+0
+171	Sting Sword+1
+172	Sting Sword+2
+173	Sting Sword+3
+174	Sting Sword+4
+175	Sting Sword+5
+176	Sting Sword+6
+177	Sting Sword+7
+178	Sting Sword+8
+179	Sting Sword+9
+180	Poison Sword+0
+181	Poison Sword+1
+182	Poison Sword+2
+183	Poison Sword+3
+184	Poison Sword+4
+185	Poison Sword+5
+186	Poison Sword+6
+187	Poison Sword+7
+188	Poison Sword+8
+189	Poison Sword+9
+190	Lion Sword+0
+191	Lion Sword+1
+192	Lion Sword+2
+193	Lion Sword+3
+194	Lion Sword+4
+195	Lion Sword+5
+196	Lion Sword+6
+197	Lion Sword+7
+198	Lion Sword+8
+199	Lion Sword+9
+200	Edge Blade+0
+201	Edge Blade+1
+202	Edge Blade+2
+203	Edge Blade+3
+204	Edge Blade+4
+205	Edge Blade+5
+206	Edge Blade+6
+207	Edge Blade+7
+208	Edge Blade+8
+209	Edge Blade+9
+210	Deadly Blade+0
+211	Deadly Blade+1
+212	Deadly Blade+2
+213	Deadly Blade+3
+214	Deadly Blade+4
+215	Deadly Blade+5
+216	Deadly Blade+6
+217	Deadly Blade+7
+218	Deadly Blade+8
+219	Deadly Blade+9
+220	Lunar Sword+0
+221	Lunar Sword+1
+222	Lunar Sword+2
+223	Lunar Sword+3
+224	Lunar Sword+4
+225	Lunar Sword+5
+226	Lunar Sword+6
+227	Lunar Sword+7
+228	Lunar Sword+8
+229	Lunar Sword+9
+230	Heavenly Sword+0
+231	Heavenly Sword+1
+232	Heavenly Sword+2
+233	Heavenly Sword+3
+234	Heavenly Sword+4
+235	Heavenly Sword+5
+236	Heavenly Sword+6
+237	Heavenly Sword+7
+238	Heavenly Sword+8
+239	Heavenly Sword+9
+240	Exorcism Sword+0
+241	Exorcism Sword+1
+242	Exorcism Sword+2
+243	Exorcism Sword+3
+244	Exorcism Sword+4
+245	Exorcism Sword+5
+246	Exorcism Sword+6
+247	Exorcism Sword+7
+248	Exorcism Sword+8
+249	Exorcism Sword+9
+250	Demon Blade+0
+251	Demon Blade+1
+252	Demon Blade+2
+253	Demon Blade+3
+254	Demon Blade+4
+255	Demon Blade+5
+256	Demon Blade+6
+257	Demon Blade+7
+258	Demon Blade+8
+259	Demon Blade+9
+260	Baron Sword+0
+261	Baron Sword+1
+262	Baron Sword+2
+263	Baron Sword+3
+264	Baron Sword+4
+265	Baron Sword+5
+266	Baron Sword+6
+267	Baron Sword+7
+268	Baron Sword+8
+269	Baron Sword+9
+270	Triton Sword+0
+271	Triton Sword+1
+272	Triton Sword+2
+273	Triton Sword+3
+274	Triton Sword+4
+275	Triton Sword+5
+276	Triton Sword+6
+277	Triton Sword+7
+278	Triton Sword+8
+279	Triton Sword+9
+280	Holy Sword+0
+281	Holy Sword+1
+282	Holy Sword+2
+283	Holy Sword+3
+284	Holy Sword+4
+285	Holy Sword+5
+286	Holy Sword+6
+287	Holy Sword+7
+288	Holy Sword+8
+289	Holy Sword+9
+290	Full Moon Sword+0
+291	Full Moon Sword+1
+292	Full Moon Sword+2
+293	Full Moon Sword+3
+294	Full Moon Sword+4
+295	Full Moon Sword+5
+296	Full Moon Sword+6
+297	Full Moon Sword+7
+298	Full Moon Sword+8
+299	Full Moon Sword+9
+300	Zodiac Blade+0
+301	Zodiac Blade+1
+302	Zodiac Blade+2
+303	Zodiac Blade+3
+304	Zodiac Blade+4
+305	Zodiac Blade+5
+306	Zodiac Blade+6
+307	Zodiac Blade+7
+308	Zodiac Blade+8
+309	Zodiac Blade+9
+310	Zodiac Sword+0
+311	Zodiac Sword+1
+312	Zodiac Sword+2
+313	Zodiac Sword+3
+314	Zodiac Sword+4
+315	Zodiac Sword+5
+316	Zodiac Sword+6
+317	Zodiac Sword+7
+318	Zodiac Sword+8
+319	Zodiac Sword+9
+320	Gloom Dragon Sword+0
+321	Gloom Dragon Sword+1
+322	Gloom Dragon Sword+2
+323	Gloom Dragon Sword+3
+324	Gloom Dragon Sword+4
+325	Gloom Dragon Sword+5
+326	Gloom Dragon Sword+6
+327	Gloom Dragon Sword+7
+328	Gloom Dragon Sword+8
+329	Gloom Dragon Sword+9
+330	Gloom Dragon Sword+10
+331	Gloom Dragon Sword+11
+332	Gloom Dragon Sword+12
+333	Gloom Dragon Sword+13
+334	Gloom Dragon Sword+14
+335	Gloom Dragon Sword+15
+340	Gloom Dragon Sabre+0
+341	Gloom Dragon Sabre+1
+342	Gloom Dragon Sabre+2
+343	Gloom Dragon Sabre+3
+344	Gloom Dragon Sabre+4
+345	Gloom Dragon Sabre+5
+346	Gloom Dragon Sabre+6
+347	Gloom Dragon Sabre+7
+348	Gloom Dragon Sabre+8
+349	Gloom Dragon Sabre+9
+350	Gloom Dragon Sabre+10
+351	Gloom Dragon Sabre+11
+352	Gloom Dragon Sabre+12
+353	Gloom Dragon Sabre+13
+354	Gloom Dragon Sabre+14
+355	Gloom Dragon Sabre+15
+360	Serpent Sword+0
+361	Serpent Sword+1
+362	Serpent Sword+2
+363	Serpent Sword+3
+364	Serpent Sword+4
+365	Serpent Sword+5
+366	Serpent Sword+6
+367	Serpent Sword+7
+368	Serpent Sword+8
+369	Serpent Sword+9
+370	Serpent Sword+10
+371	Serpent Sword+11
+372	Serpent Sword+12
+373	Serpent Sword+13
+374	Serpent Sword+14
+375	Serpent Sword+15
+376	Serpent Sword (craft)
+380	Serpent Blade+0
+381	Serpent Blade+1
+382	Serpent Blade+2
+383	Serpent Blade+3
+384	Serpent Blade+4
+385	Serpent Blade+5
+386	Serpent Blade+6
+387	Serpent Blade+7
+388	Serpent Blade+8
+389	Serpent Blade+9
+390	Serpent Blade+10
+391	Serpent Blade+11
+392	Serpent Blade+12
+393	Serpent Blade+13
+394	Serpent Blade+14
+395	Serpent Blade+15
+396	Serpent Blade (craft)
+460	Rune Sword +0
+461	Rune Sword +1
+462	Rune Sword +2
+463	Rune Sword +3
+464	Rune Sword +4
+465	Rune Sword +5
+466	Rune Sword +6
+467	Rune Sword +7
+468	Rune Sword +8
+469	Rune Sword +9
+470	Dragon Tooth Blade +0
+471	Dragon Tooth Blade +1
+472	Dragon Tooth Blade +2
+473	Dragon Tooth Blade +3
+474	Dragon Tooth Blade +4
+475	Dragon Tooth Blade +5
+476	Dragon Tooth Blade +6
+477	Dragon Tooth Blade +7
+478	Dragon Tooth Blade +8
+479	Dragon Tooth Blade +9
+500	Kyanite Sword+0
+501	Kyanite Sword+1
+502	Kyanite Sword+2
+503	Kyanite Sword+3
+504	Kyanite Sword+4
+505	Kyanite Sword+5
+506	Kyanite Sword+6
+507	Kyanite Sword+7
+508	Kyanite Sword+8
+509	Kyanite Sword+9
+1000	Dagger+0
+1001	Dagger+1
+1002	Dagger+2
+1003	Dagger+3
+1004	Dagger+4
+1005	Dagger+5
+1006	Dagger+6
+1007	Dagger+7
+1008	Dagger+8
+1009	Dagger+9
+1010	Cobra Dagger+0
+1011	Cobra Dagger+1
+1012	Cobra Dagger+2
+1013	Cobra Dagger+3
+1014	Cobra Dagger+4
+1015	Cobra Dagger+5
+1016	Cobra Dagger+6
+1017	Cobra Dagger+7
+1018	Cobra Dagger+8
+1019	Cobra Dagger+9
+1020	Scissor Dagger+0
+1021	Scissor Dagger+1
+1022	Scissor Dagger+2
+1023	Scissor Dagger+3
+1024	Scissor Dagger+4
+1025	Scissor Dagger+5
+1026	Scissor Dagger+6
+1027	Scissor Dagger+7
+1028	Scissor Dagger+8
+1029	Scissor Dagger+9
+1030	Lucky Knife+0
+1031	Lucky Knife+1
+1032	Lucky Knife+2
+1033	Lucky Knife+3
+1034	Lucky Knife+4
+1035	Lucky Knife+5
+1036	Lucky Knife+6
+1037	Lucky Knife+7
+1038	Lucky Knife+8
+1039	Lucky Knife+9
+1040	Cat Bite Knife+0
+1041	Cat Bite Knife+1
+1042	Cat Bite Knife+2
+1043	Cat Bite Knife+3
+1044	Cat Bite Knife+4
+1045	Cat Bite Knife+5
+1046	Cat Bite Knife+6
+1047	Cat Bite Knife+7
+1048	Cat Bite Knife+8
+1049	Cat Bite Knife+9
+1050	Devil Mask Dagger+0
+1051	Devil Mask Dagger+1
+1052	Devil Mask Dagger+2
+1053	Devil Mask Dagger+3
+1054	Devil Mask Dagger+4
+1055	Devil Mask Dagger+5
+1056	Devil Mask Dagger+6
+1057	Devil Mask Dagger+7
+1058	Devil Mask Dagger+8
+1059	Devil Mask Dagger+9
+1060	Devil Fist Dagger+0
+1061	Devil Fist Dagger+1
+1062	Devil Fist Dagger+2
+1063	Devil Fist Dagger+3
+1064	Devil Fist Dagger+4
+1065	Devil Fist Dagger+5
+1066	Devil Fist Dagger+6
+1067	Devil Fist Dagger+7
+1068	Devil Fist Dagger+8
+1069	Devil Fist Dagger+9
+1070	Bloody Dagger+0
+1071	Bloody Dagger+1
+1072	Bloody Dagger+2
+1073	Bloody Dagger+3
+1074	Bloody Dagger+4
+1075	Bloody Dagger+5
+1076	Bloody Dagger+6
+1077	Bloody Dagger+7
+1078	Bloody Dagger+8
+1079	Bloody Dagger+9
+1080	Rib Knife+0
+1081	Rib Knife+1
+1082	Rib Knife+2
+1083	Rib Knife+3
+1084	Rib Knife+4
+1085	Rib Knife+5
+1086	Rib Knife+6
+1087	Rib Knife+7
+1088	Rib Knife+8
+1089	Rib Knife+9
+1090	Chakram+0
+1091	Chakram+1
+1092	Chakram+2
+1093	Chakram+3
+1094	Chakram+4
+1095	Chakram+5
+1096	Chakram+6
+1097	Chakram+7
+1098	Chakram+8
+1099	Chakram+9
+1100	Dragon Knife+0
+1101	Dragon Knife+1
+1102	Dragon Knife+2
+1103	Dragon Knife+3
+1104	Dragon Knife+4
+1105	Dragon Knife+5
+1106	Dragon Knife+6
+1107	Dragon Knife+7
+1108	Dragon Knife+8
+1109	Dragon Knife+9
+1110	Lightning Knife+0
+1111	Lightning Knife+1
+1112	Lightning Knife+2
+1113	Lightning Knife+3
+1114	Lightning Knife+4
+1115	Lightning Knife+5
+1116	Lightning Knife+6
+1117	Lightning Knife+7
+1118	Lightning Knife+8
+1119	Lightning Knife+9
+1120	Siamese Knife+0
+1121	Siamese Knife+1
+1122	Siamese Knife+2
+1123	Siamese Knife+3
+1124	Siamese Knife+4
+1125	Siamese Knife+5
+1126	Siamese Knife+6
+1127	Siamese Knife+7
+1128	Siamese Knife+8
+1129	Siamese Knife+9
+1130	Devil Wing Chakram+0
+1131	Devil Wing Chakram+1
+1132	Devil Wing Chakram+2
+1133	Devil Wing Chakram+3
+1134	Devil Wing Chakram+4
+1135	Devil Wing Chakram+5
+1136	Devil Wing Chakram+6
+1137	Devil Wing Chakram+7
+1138	Devil Wing Chakram+8
+1139	Devil Wing Chakram+9
+1140	Saw Tooth Knife+0
+1141	Saw Tooth Knife+1
+1142	Saw Tooth Knife+2
+1143	Saw Tooth Knife+3
+1144	Saw Tooth Knife+4
+1145	Saw Tooth Knife+5
+1146	Saw Tooth Knife+6
+1147	Saw Tooth Knife+7
+1148	Saw Tooth Knife+8
+1149	Saw Tooth Knife+9
+1150	Sunlight Knife+0
+1151	Sunlight Knife+1
+1152	Sunlight Knife+2
+1153	Sunlight Knife+3
+1154	Sunlight Knife+4
+1155	Sunlight Knife+5
+1156	Sunlight Knife+6
+1157	Sunlight Knife+7
+1158	Sunlight Knife+8
+1159	Sunlight Knife+9
+1160	Rivulet Knife+0
+1161	Rivulet Knife+1
+1162	Rivulet Knife+2
+1163	Rivulet Knife+3
+1164	Rivulet Knife+4
+1165	Rivulet Knife+5
+1166	Rivulet Knife+6
+1167	Rivulet Knife+7
+1168	Rivulet Knife+8
+1169	Rivulet Knife+9
+1170	Black Leaf Dirk+0
+1171	Black Leaf Dirk+1
+1172	Black Leaf Dirk+2
+1173	Black Leaf Dirk+3
+1174	Black Leaf Dirk+4
+1175	Black Leaf Dirk+5
+1176	Black Leaf Dirk+6
+1177	Black Leaf Dirk+7
+1178	Black Leaf Dirk+8
+1179	Black Leaf Dirk+9
+1180	Zodiac Dagger+0
+1181	Zodiac Dagger+1
+1182	Zodiac Dagger+2
+1183	Zodiac Dagger+3
+1184	Zodiac Dagger+4
+1185	Zodiac Dagger+5
+1186	Zodiac Dagger+6
+1187	Zodiac Dagger+7
+1188	Zodiac Dagger+8
+1189	Zodiac Dagger+9
+1190	Gloom Dragon Dagger+0
+1191	Gloom Dragon Dagger+1
+1192	Gloom Dragon Dagger+2
+1193	Gloom Dragon Dagger+3
+1194	Gloom Dragon Dagger+4
+1195	Gloom Dragon Dagger+5
+1196	Gloom Dragon Dagger+6
+1197	Gloom Dragon Dagger+7
+1198	Gloom Dragon Dagger+8
+1199	Gloom Dragon Dagger+9
+1200	Gloom Dragon Dagger+10
+1201	Gloom Dragon Dagger+11
+1202	Gloom Dragon Dagger+12
+1203	Gloom Dragon Dagger+13
+1204	Gloom Dragon Dagger+14
+1205	Gloom Dragon Dagger+15
+1210	Serpent Dagger+0
+1211	Serpent Dagger+1
+1212	Serpent Dagger+2
+1213	Serpent Dagger+3
+1214	Serpent Dagger+4
+1215	Serpent Dagger+5
+1216	Serpent Dagger+6
+1217	Serpent Dagger+7
+1218	Serpent Dagger+8
+1219	Serpent Dagger+9
+1220	Serpent Dagger+10
+1221	Serpent Dagger+11
+1222	Serpent Dagger+12
+1223	Serpent Dagger+13
+1224	Serpent Dagger+14
+1225	Serpent Dagger+15
+1226	Serpent Dagger (craft)
+1340	Five Element Blade +0
+1341	Five Element Blade +1
+1342	Five Element Blade +2
+1343	Five Element Blade +3
+1344	Five Element Blade +4
+1345	Five Element Blade +5
+1346	Five Element Blade +6
+1347	Five Element Blade +7
+1348	Five Element Blade +8
+1349	Five Element Blade +9
+1500	Kyanite Dagger+0
+1501	Kyanite Dagger+1
+1502	Kyanite Dagger+2
+1503	Kyanite Dagger+3
+1504	Kyanite Dagger+4
+1505	Kyanite Dagger+5
+1506	Kyanite Dagger+6
+1507	Kyanite Dagger+7
+1508	Kyanite Dagger+8
+1509	Kyanite Dagger+9
+2000	Bow+0
+2001	Bow+1
+2002	Bow+2
+2003	Bow+3
+2004	Bow+4
+2005	Bow+5
+2006	Bow+6
+2007	Bow+7
+2008	Bow+8
+2009	Bow+9
+2010	Long Bow+0
+2011	Long Bow+1
+2012	Long Bow+2
+2013	Long Bow+3
+2014	Long Bow+4
+2015	Long Bow+5
+2016	Long Bow+6
+2017	Long Bow+7
+2018	Long Bow+8
+2019	Long Bow+9
+2020	Composite Bow+0
+2021	Composite Bow+1
+2022	Composite Bow+2
+2023	Composite Bow+3
+2024	Composite Bow+4
+2025	Composite Bow+5
+2026	Composite Bow+6
+2027	Composite Bow+7
+2028	Composite Bow+8
+2029	Composite Bow+9
+2030	Battle Bow+0
+2031	Battle Bow+1
+2032	Battle Bow+2
+2033	Battle Bow+3
+2034	Battle Bow+4
+2035	Battle Bow+5
+2036	Battle Bow+6
+2037	Battle Bow+7
+2038	Battle Bow+8
+2039	Battle Bow+9
+2040	Horseback Long Bow+0
+2041	Horseback Long Bow+1
+2042	Horseback Long Bow+2
+2043	Horseback Long Bow+3
+2044	Horseback Long Bow+4
+2045	Horseback Long Bow+5
+2046	Horseback Long Bow+6
+2047	Horseback Long Bow+7
+2048	Horseback Long Bow+8
+2049	Horseback Long Bow+9
+2050	Horseback Battle Bow+0
+2051	Horseback Battle Bow+1
+2052	Horseback Battle Bow+2
+2053	Horseback Battle Bow+3
+2054	Horseback Battle Bow+4
+2055	Horseback Battle Bow+5
+2056	Horseback Battle Bow+6
+2057	Horseback Battle Bow+7
+2058	Horseback Battle Bow+8
+2059	Horseback Battle Bow+9
+2060	Copper Crafted Bow+0
+2061	Copper Crafted Bow+1
+2062	Copper Crafted Bow+2
+2063	Copper Crafted Bow+3
+2064	Copper Crafted Bow+4
+2065	Copper Crafted Bow+5
+2066	Copper Crafted Bow+6
+2067	Copper Crafted Bow+7
+2068	Copper Crafted Bow+8
+2069	Copper Crafted Bow+9
+2070	Black Ruin Bow+0
+2071	Black Ruin Bow+1
+2072	Black Ruin Bow+2
+2073	Black Ruin Bow+3
+2074	Black Ruin Bow+4
+2075	Black Ruin Bow+5
+2076	Black Ruin Bow+6
+2077	Black Ruin Bow+7
+2078	Black Ruin Bow+8
+2079	Black Ruin Bow+9
+2080	Red Eye Bow+0
+2081	Red Eye Bow+1
+2082	Red Eye Bow+2
+2083	Red Eye Bow+3
+2084	Red Eye Bow+4
+2085	Red Eye Bow+5
+2086	Red Eye Bow+6
+2087	Red Eye Bow+7
+2088	Red Eye Bow+8
+2089	Red Eye Bow+9
+2090	Thorn Leaf Bow+0
+2091	Thorn Leaf Bow+1
+2092	Thorn Leaf Bow+2
+2093	Thorn Leaf Bow+3
+2094	Thorn Leaf Bow+4
+2095	Thorn Leaf Bow+5
+2096	Thorn Leaf Bow+6
+2097	Thorn Leaf Bow+7
+2098	Thorn Leaf Bow+8
+2099	Thorn Leaf Bow+9
+2100	Bull's Horn Bow+0
+2101	Bull's Horn Bow+1
+2102	Bull's Horn Bow+2
+2103	Bull's Horn Bow+3
+2104	Bull's Horn Bow+4
+2105	Bull's Horn Bow+5
+2106	Bull's Horn Bow+6
+2107	Bull's Horn Bow+7
+2108	Bull's Horn Bow+8
+2109	Bull's Horn Bow+9
+2110	Unicorn Bow+0
+2111	Unicorn Bow+1
+2112	Unicorn Bow+2
+2113	Unicorn Bow+3
+2114	Unicorn Bow+4
+2115	Unicorn Bow+5
+2116	Unicorn Bow+6
+2117	Unicorn Bow+7
+2118	Unicorn Bow+8
+2119	Unicorn Bow+9
+2120	Giant Wing Bow+0
+2121	Giant Wing Bow+1
+2122	Giant Wing Bow+2
+2123	Giant Wing Bow+3
+2124	Giant Wing Bow+4
+2125	Giant Wing Bow+5
+2126	Giant Wing Bow+6
+2127	Giant Wing Bow+7
+2128	Giant Wing Bow+8
+2129	Giant Wing Bow+9
+2130	Divine Apricot Bow+0
+2131	Divine Apricot Bow+1
+2132	Divine Apricot Bow+2
+2133	Divine Apricot Bow+3
+2134	Divine Apricot Bow+4
+2135	Divine Apricot Bow+5
+2136	Divine Apricot Bow+6
+2137	Divine Apricot Bow+7
+2138	Divine Apricot Bow+8
+2139	Divine Apricot Bow+9
+2140	Yellow Dragon Bow+0
+2141	Yellow Dragon Bow+1
+2142	Yellow Dragon Bow+2
+2143	Yellow Dragon Bow+3
+2144	Yellow Dragon Bow+4
+2145	Yellow Dragon Bow+5
+2146	Yellow Dragon Bow+6
+2147	Yellow Dragon Bow+7
+2148	Yellow Dragon Bow+8
+2149	Yellow Dragon Bow+9
+2150	Hornbow+0
+2151	Hornbow+1
+2152	Hornbow+2
+2153	Hornbow+3
+2154	Hornbow+4
+2155	Hornbow+5
+2156	Hornbow+6
+2157	Hornbow+7
+2158	Hornbow+8
+2159	Hornbow+9
+2160	Giant Devil Bow+0
+2161	Giant Devil Bow+1
+2162	Giant Devil Bow+2
+2163	Giant Devil Bow+3
+2164	Giant Devil Bow+4
+2165	Giant Devil Bow+5
+2166	Giant Devil Bow+6
+2167	Giant Devil Bow+7
+2168	Giant Devil Bow+8
+2169	Giant Devil Bow+9
+2170	Crow Steel Bow+0
+2171	Crow Steel Bow+1
+2172	Crow Steel Bow+2
+2173	Crow Steel Bow+3
+2174	Crow Steel Bow+4
+2175	Crow Steel Bow+5
+2176	Crow Steel Bow+6
+2177	Crow Steel Bow+7
+2178	Crow Steel Bow+8
+2179	Crow Steel Bow+9
+2180	Blue Dragon Bow+0
+2181	Blue Dragon Bow+1
+2182	Blue Dragon Bow+2
+2183	Blue Dragon Bow+3
+2184	Blue Dragon Bow+4
+2185	Blue Dragon Bow+5
+2186	Blue Dragon Bow+6
+2187	Blue Dragon Bow+7
+2188	Blue Dragon Bow+8
+2189	Blue Dragon Bow+9
+2190	Ghost Crossbow+0
+2191	Ghost Crossbow+1
+2192	Ghost Crossbow+2
+2193	Ghost Crossbow+3
+2194	Ghost Crossbow+4
+2195	Ghost Crossbow+5
+2196	Ghost Crossbow+6
+2197	Ghost Crossbow+7
+2198	Ghost Crossbow+8
+2199	Ghost Crossbow+9
+2200	Zodiac Bow+0
+2201	Zodiac Bow+1
+2202	Zodiac Bow+2
+2203	Zodiac Bow+3
+2204	Zodiac Bow+4
+2205	Zodiac Bow+5
+2206	Zodiac Bow+6
+2207	Zodiac Bow+7
+2208	Zodiac Bow+8
+2209	Zodiac Bow+9
+2210	Gloom Dragon Bow+0
+2211	Gloom Dragon Bow+1
+2212	Gloom Dragon Bow+2
+2213	Gloom Dragon Bow+3
+2214	Gloom Dragon Bow+4
+2215	Gloom Dragon Bow+5
+2216	Gloom Dragon Bow+6
+2217	Gloom Dragon Bow+7
+2218	Gloom Dragon Bow+8
+2219	Gloom Dragon Bow+9
+2220	Gloom Dragon Bow+10
+2221	Gloom Dragon Bow+11
+2222	Gloom Dragon Bow+12
+2223	Gloom Dragon Bow+13
+2224	Gloom Dragon Bow+14
+2225	Gloom Dragon Bow+15
+2230	Serpent Bow+0
+2231	Serpent Bow+1
+2232	Serpent Bow+2
+2233	Serpent Bow+3
+2234	Serpent Bow+4
+2235	Serpent Bow+5
+2236	Serpent Bow+6
+2237	Serpent Bow+7
+2238	Serpent Bow+8
+2239	Serpent Bow+9
+2240	Serpent Bow+10
+2241	Serpent Bow+11
+2242	Serpent Bow+12
+2243	Serpent Bow+13
+2244	Serpent Bow+14
+2245	Serpent Bow+15
+2246	Serpent Bow (craft)
+2370	Phoenix Bow +0
+2371	Phoenix Bow +1
+2372	Phoenix Bow +2
+2373	Phoenix Bow +3
+2374	Phoenix Bow +4
+2375	Phoenix Bow +5
+2376	Phoenix Bow +6
+2377	Phoenix Bow +7
+2378	Phoenix Bow +8
+2379	Phoenix Bow +9
+2500	Kyanite Bow+0
+2501	Kyanite Bow+1
+2502	Kyanite Bow+2
+2503	Kyanite Bow+3
+2504	Kyanite Bow+4
+2505	Kyanite Bow+5
+2506	Kyanite Bow+6
+2507	Kyanite Bow+7
+2508	Kyanite Bow+8
+2509	Kyanite Bow+9
+3000	Glaive+0
+3001	Glaive+1
+3002	Glaive+2
+3003	Glaive+3
+3004	Glaive+4
+3005	Glaive+5
+3006	Glaive+6
+3007	Glaive+7
+3008	Glaive+8
+3009	Glaive+9
+3010	Spear+0
+3011	Spear+1
+3012	Spear+2
+3013	Spear+3
+3014	Spear+4
+3015	Spear+5
+3016	Spear+6
+3017	Spear+7
+3018	Spear+8
+3019	Spear+9
+3020	Guillotine Blade+0
+3021	Guillotine Blade+1
+3022	Guillotine Blade+2
+3023	Guillotine Blade+3
+3024	Guillotine Blade+4
+3025	Guillotine Blade+5
+3026	Guillotine Blade+6
+3027	Guillotine Blade+7
+3028	Guillotine Blade+8
+3029	Guillotine Blade+9
+3030	Spider Spear+0
+3031	Spider Spear+1
+3032	Spider Spear+2
+3033	Spider Spear+3
+3034	Spider Spear+4
+3035	Spider Spear+5
+3036	Spider Spear+6
+3037	Spider Spear+7
+3038	Spider Spear+8
+3039	Spider Spear+9
+3040	Gisarme+0
+3041	Gisarme+1
+3042	Gisarme+2
+3043	Gisarme+3
+3044	Gisarme+4
+3045	Gisarme+5
+3046	Gisarme+6
+3047	Gisarme+7
+3048	Gisarme+8
+3049	Gisarme+9
+3050	War Scythe+0
+3051	War Scythe+1
+3052	War Scythe+2
+3053	War Scythe+3
+3054	War Scythe+4
+3055	War Scythe+5
+3056	War Scythe+6
+3057	War Scythe+7
+3058	War Scythe+8
+3059	War Scythe+9
+3060	Battle Pitchfork+0
+3061	Battle Pitchfork+1
+3062	Battle Pitchfork+2
+3063	Battle Pitchfork+3
+3064	Battle Pitchfork+4
+3065	Battle Pitchfork+5
+3066	Battle Pitchfork+6
+3067	Battle Pitchfork+7
+3068	Battle Pitchfork+8
+3069	Battle Pitchfork+9
+3070	Halberd+0
+3071	Halberd+1
+3072	Halberd+2
+3073	Halberd+3
+3074	Halberd+4
+3075	Halberd+5
+3076	Halberd+6
+3077	Halberd+7
+3078	Halberd+8
+3079	Halberd+9
+3080	Giant Axe+0
+3081	Giant Axe+1
+3082	Giant Axe+2
+3083	Giant Axe+3
+3084	Giant Axe+4
+3085	Giant Axe+5
+3086	Giant Axe+6
+3087	Giant Axe+7
+3088	Giant Axe+8
+3089	Giant Axe+9
+3090	Glacial Pick+0
+3091	Glacial Pick+1
+3092	Glacial Pick+2
+3093	Glacial Pick+3
+3094	Glacial Pick+4
+3095	Glacial Pick+5
+3096	Glacial Pick+6
+3097	Glacial Pick+7
+3098	Glacial Pick+8
+3099	Glacial Pick+9
+3100	Twelve Spirit Sword+0
+3101	Twelve Spirit Sword+1
+3102	Twelve Spirit Sword+2
+3103	Twelve Spirit Sword+3
+3104	Twelve Spirit Sword+4
+3105	Twelve Spirit Sword+5
+3106	Twelve Spirit Sword+6
+3107	Twelve Spirit Sword+7
+3108	Twelve Spirit Sword+8
+3109	Twelve Spirit Sword+9
+3110	Salvation Blade+0
+3111	Salvation Blade+1
+3112	Salvation Blade+2
+3113	Salvation Blade+3
+3114	Salvation Blade+4
+3115	Salvation Blade+5
+3116	Salvation Blade+6
+3117	Salvation Blade+7
+3118	Salvation Blade+8
+3119	Salvation Blade+9
+3120	Lion Slayer+0
+3121	Lion Slayer+1
+3122	Lion Slayer+2
+3123	Lion Slayer+3
+3124	Lion Slayer+4
+3125	Lion Slayer+5
+3126	Lion Slayer+6
+3127	Lion Slayer+7
+3128	Lion Slayer+8
+3129	Lion Slayer+9
+3130	Partisan+0
+3131	Partisan+1
+3132	Partisan+2
+3133	Partisan+3
+3134	Partisan+4
+3135	Partisan+5
+3136	Partisan+6
+3137	Partisan+7
+3138	Partisan+8
+3139	Partisan+9
+3140	Electromagnetic Blade+0
+3141	Electromagnetic Blade+1
+3142	Electromagnetic Blade+2
+3143	Electromagnetic Blade+3
+3144	Electromagnetic Blade+4
+3145	Electromagnetic Blade+5
+3146	Electromagnetic Blade+6
+3147	Electromagnetic Blade+7
+3148	Electromagnetic Blade+8
+3149	Electromagnetic Blade+9
+3150	Soul Stealing Blade+0
+3151	Soul Stealing Blade+1
+3152	Soul Stealing Blade+2
+3153	Soul Stealing Blade+3
+3154	Soul Stealing Blade+4
+3155	Soul Stealing Blade+5
+3156	Soul Stealing Blade+6
+3157	Soul Stealing Blade+7
+3158	Soul Stealing Blade+8
+3159	Soul Stealing Blade+9
+3160	Grudge Sword+0
+3161	Grudge Sword+1
+3162	Grudge Sword+2
+3163	Grudge Sword+3
+3164	Grudge Sword+4
+3165	Grudge Sword+5
+3166	Grudge Sword+6
+3167	Grudge Sword+7
+3168	Grudge Sword+8
+3169	Grudge Sword+9
+3170	Yellow Dragon Slayer+0
+3171	Yellow Dragon Slayer+1
+3172	Yellow Dragon Slayer+2
+3173	Yellow Dragon Slayer+3
+3174	Yellow Dragon Slayer+4
+3175	Yellow Dragon Slayer+5
+3176	Yellow Dragon Slayer+6
+3177	Yellow Dragon Slayer+7
+3178	Yellow Dragon Slayer+8
+3179	Yellow Dragon Slayer+9
+3180	Blue Dragon Slayer+0
+3181	Blue Dragon Slayer+1
+3182	Blue Dragon Slayer+2
+3183	Blue Dragon Slayer+3
+3184	Blue Dragon Slayer+4
+3185	Blue Dragon Slayer+5
+3186	Blue Dragon Slayer+6
+3187	Blue Dragon Slayer+7
+3188	Blue Dragon Slayer+8
+3189	Blue Dragon Slayer+9
+3190	Solar Blade +0
+3191	Solar Blade +1
+3192	Solar Blade +2
+3193	Solar Blade +3
+3194	Solar Blade +4
+3195	Solar Blade +5
+3196	Solar Blade +6
+3197	Solar Blade +7
+3198	Solar Blade +8
+3199	Solar Blade +9
+3200	Dragon God Blade+0
+3201	Dragon God Blade+1
+3202	Dragon God Blade+2
+3203	Dragon God Blade+3
+3204	Dragon God Blade+4
+3205	Dragon God Blade+5
+3206	Dragon God Blade+6
+3207	Dragon God Blade+7
+3208	Dragon God Blade+8
+3209	Dragon God Blade+9
+3210	Red Iron Blade+0
+3211	Red Iron Blade+1
+3212	Red Iron Blade+2
+3213	Red Iron Blade+3
+3214	Red Iron Blade+4
+3215	Red Iron Blade+5
+3216	Red Iron Blade+6
+3217	Red Iron Blade+7
+3218	Red Iron Blade+8
+3219	Red Iron Blade+9
+3220	Zodiac Glaive+0
+3221	Zodiac Glaive+1
+3222	Zodiac Glaive+2
+3223	Zodiac Glaive+3
+3224	Zodiac Glaive+4
+3225	Zodiac Glaive+5
+3226	Zodiac Glaive+6
+3227	Zodiac Glaive+7
+3228	Zodiac Glaive+8
+3229	Zodiac Glaive+9
+3230	Gloom Dragon Blade+0
+3231	Gloom Dragon Blade+1
+3232	Gloom Dragon Blade+2
+3233	Gloom Dragon Blade+3
+3234	Gloom Dragon Blade+4
+3235	Gloom Dragon Blade+5
+3236	Gloom Dragon Blade+6
+3237	Gloom Dragon Blade+7
+3238	Gloom Dragon Blade+8
+3239	Gloom Dragon Blade+9
+3240	Gloom Dragon Blade+10
+3241	Gloom Dragon Blade+11
+3242	Gloom Dragon Blade+12
+3243	Gloom Dragon Blade+13
+3244	Gloom Dragon Blade+14
+3245	Gloom Dragon Blade+15
+3250	Serpent Greatsword+0
+3251	Serpent Greatsword+1
+3252	Serpent Greatsword+2
+3253	Serpent Greatsword+3
+3254	Serpent Greatsword+4
+3255	Serpent Greatsword+5
+3256	Serpent Greatsword+6
+3257	Serpent Greatsword+7
+3258	Serpent Greatsword+8
+3259	Serpent Greatsword+9
+3260	Serpent Greatsword+10
+3261	Serpent Greatsword+11
+3262	Serpent Greatsword+12
+3263	Serpent Greatsword+13
+3264	Serpent Greatsword+14
+3265	Serpent Greatsword+15
+3266	Serpent Greatsw. (craft)
+3500	Kyanite Blade+0
+3501	Kyanite Blade+1
+3502	Kyanite Blade+2
+3503	Kyanite Blade+3
+3504	Kyanite Blade+4
+3505	Kyanite Blade+5
+3506	Kyanite Blade+6
+3507	Kyanite Blade+7
+3508	Kyanite Blade+8
+3509	Kyanite Blade+9
+4000	Amija+0
+4001	Amija+1
+4002	Amija+2
+4003	Amija+3
+4004	Amija+4
+4005	Amija+5
+4006	Amija+6
+4007	Amija+7
+4008	Amija+8
+4009	Amija+9
+4010	Nine Blades+0
+4011	Nine Blades+1
+4012	Nine Blades+2
+4013	Nine Blades+3
+4014	Nine Blades+4
+4015	Nine Blades+5
+4016	Nine Blades+6
+4017	Nine Blades+7
+4018	Nine Blades+8
+4019	Nine Blades+9
+4020	Short Knife+0
+4021	Short Knife+1
+4022	Short Knife+2
+4023	Short Knife+3
+4024	Short Knife+4
+4025	Short Knife+5
+4026	Short Knife+6
+4027	Short Knife+7
+4028	Short Knife+8
+4029	Short Knife+9
+4030	Lunar Twin Dagger+0
+4031	Lunar Twin Dagger+1
+4032	Lunar Twin Dagger+2
+4033	Lunar Twin Dagger+3
+4034	Lunar Twin Dagger+4
+4035	Lunar Twin Dagger+5
+4036	Lunar Twin Dagger+6
+4037	Lunar Twin Dagger+7
+4038	Lunar Twin Dagger+8
+4039	Lunar Twin Dagger+9
+4040	Soulless Knife+0
+4041	Soulless Knife+1
+4042	Soulless Knife+2
+4043	Soulless Knife+3
+4044	Soulless Knife+4
+4045	Soulless Knife+5
+4046	Soulless Knife+6
+4047	Soulless Knife+7
+4048	Soulless Knife+8
+4049	Soulless Knife+9
+5000	Copper Bell+0
+5001	Copper Bell+1
+5002	Copper Bell+2
+5003	Copper Bell+3
+5004	Copper Bell+4
+5005	Copper Bell+5
+5006	Copper Bell+6
+5007	Copper Bell+7
+5008	Copper Bell+8
+5009	Copper Bell+9
+5010	Silver Bell+0
+5011	Silver Bell+1
+5012	Silver Bell+2
+5013	Silver Bell+3
+5014	Silver Bell+4
+5015	Silver Bell+5
+5016	Silver Bell+6
+5017	Silver Bell+7
+5018	Silver Bell+8
+5019	Silver Bell+9
+5020	Golden Bell+0
+5021	Golden Bell+1
+5022	Golden Bell+2
+5023	Golden Bell+3
+5024	Golden Bell+4
+5025	Golden Bell+5
+5026	Golden Bell+6
+5027	Golden Bell+7
+5028	Golden Bell+8
+5029	Golden Bell+9
+5030	Jade Bell+0
+5031	Jade Bell+1
+5032	Jade Bell+2
+5033	Jade Bell+3
+5034	Jade Bell+4
+5035	Jade Bell+5
+5036	Jade Bell+6
+5037	Jade Bell+7
+5038	Jade Bell+8
+5039	Jade Bell+9
+5040	Fountain Bell+0
+5041	Fountain Bell+1
+5042	Fountain Bell+2
+5043	Fountain Bell+3
+5044	Fountain Bell+4
+5045	Fountain Bell+5
+5046	Fountain Bell+6
+5047	Fountain Bell+7
+5048	Fountain Bell+8
+5049	Fountain Bell+9
+5050	Apricot Bell+0
+5051	Apricot Bell+1
+5052	Apricot Bell+2
+5053	Apricot Bell+3
+5054	Apricot Bell+4
+5055	Apricot Bell+5
+5056	Apricot Bell+6
+5057	Apricot Bell+7
+5058	Apricot Bell+8
+5059	Apricot Bell+9
+5060	Magical Bell+0
+5061	Magical Bell+1
+5062	Magical Bell+2
+5063	Magical Bell+3
+5064	Magical Bell+4
+5065	Magical Bell+5
+5066	Magical Bell+6
+5067	Magical Bell+7
+5068	Magical Bell+8
+5069	Magical Bell+9
+5070	Golden Bug Bell+0
+5071	Golden Bug Bell+1
+5072	Golden Bug Bell+2
+5073	Golden Bug Bell+3
+5074	Golden Bug Bell+4
+5075	Golden Bug Bell+5
+5076	Golden Bug Bell+6
+5077	Golden Bug Bell+7
+5078	Golden Bug Bell+8
+5079	Golden Bug Bell+9
+5080	Steel Bug Bell+0
+5081	Steel Bug Bell+1
+5082	Steel Bug Bell+2
+5083	Steel Bug Bell+3
+5084	Steel Bug Bell+4
+5085	Steel Bug Bell+5
+5086	Steel Bug Bell+6
+5087	Steel Bug Bell+7
+5088	Steel Bug Bell+8
+5089	Steel Bug Bell+9
+5090	Thunder Bird Bell+0
+5091	Thunder Bird Bell+1
+5092	Thunder Bird Bell+2
+5093	Thunder Bird Bell+3
+5094	Thunder Bird Bell+4
+5095	Thunder Bird Bell+5
+5096	Thunder Bird Bell+6
+5097	Thunder Bird Bell+7
+5098	Thunder Bird Bell+8
+5099	Thunder Bird Bell+9
+5100	Heaven and Earth Bell+0
+5101	Heaven and Earth Bell+1
+5102	Heaven and Earth Bell+2
+5103	Heaven and Earth Bell+3
+5104	Heaven and Earth Bell+4
+5105	Heaven and Earth Bell+5
+5106	Heaven and Earth Bell+6
+5107	Heaven and Earth Bell+7
+5108	Heaven and Earth Bell+8
+5109	Heaven and Earth Bell+9
+5110	Antique Bell+0
+5111	Antique Bell+1
+5112	Antique Bell+2
+5113	Antique Bell+3
+5114	Antique Bell+4
+5115	Antique Bell+5
+5116	Antique Bell+6
+5117	Antique Bell+7
+5118	Antique Bell+8
+5119	Antique Bell+9
+5120	Bamboo Bell+0
+5121	Bamboo Bell+1
+5122	Bamboo Bell+2
+5123	Bamboo Bell+3
+5124	Bamboo Bell+4
+5125	Bamboo Bell+5
+5126	Bamboo Bell+6
+5127	Bamboo Bell+7
+5128	Bamboo Bell+8
+5129	Bamboo Bell+9
+5130	Grim Reaper Bell+0
+5131	Grim Reaper Bell+1
+5132	Grim Reaper Bell+2
+5133	Grim Reaper Bell+3
+5134	Grim Reaper Bell+4
+5135	Grim Reaper Bell+5
+5136	Grim Reaper Bell+6
+5137	Grim Reaper Bell+7
+5138	Grim Reaper Bell+8
+5139	Grim Reaper Bell+9
+5140	Dragon Bell+0
+5141	Dragon Bell+1
+5142	Dragon Bell+2
+5143	Dragon Bell+3
+5144	Dragon Bell+4
+5145	Dragon Bell+5
+5146	Dragon Bell+6
+5147	Dragon Bell+7
+5148	Dragon Bell+8
+5149	Dragon Bell+9
+5150	Hibiscus Bell+0
+5151	Hibiscus Bell+1
+5152	Hibiscus Bell+2
+5153	Hibiscus Bell+3
+5154	Hibiscus Bell+4
+5155	Hibiscus Bell+5
+5156	Hibiscus Bell+6
+5157	Hibiscus Bell+7
+5158	Hibiscus Bell+8
+5159	Hibiscus Bell+9
+5160	Zodiac Bell+0
+5161	Zodiac Bell+1
+5162	Zodiac Bell+2
+5163	Zodiac Bell+3
+5164	Zodiac Bell+4
+5165	Zodiac Bell+5
+5166	Zodiac Bell+6
+5167	Zodiac Bell+7
+5168	Zodiac Bell+8
+5169	Zodiac Bell+9
+5170	Gloom Dragon Bell+0
+5171	Gloom Dragon Bell+1
+5172	Gloom Dragon Bell+2
+5173	Gloom Dragon Bell+3
+5174	Gloom Dragon Bell+4
+5175	Gloom Dragon Bell+5
+5176	Gloom Dragon Bell+6
+5177	Gloom Dragon Bell+7
+5178	Gloom Dragon Bell+8
+5179	Gloom Dragon Bell+9
+5180	Gloom Dragon Bell+10
+5181	Gloom Dragon Bell+11
+5182	Gloom Dragon Bell+12
+5183	Gloom Dragon Bell+13
+5184	Gloom Dragon Bell+14
+5185	Gloom Dragon Bell+15
+5200	Serpent Bell+0
+5201	Serpent Bell+1
+5202	Serpent Bell+2
+5203	Serpent Bell+3
+5204	Serpent Bell+4
+5205	Serpent Bell+5
+5206	Serpent Bell+6
+5207	Serpent Bell+7
+5208	Serpent Bell+8
+5209	Serpent Bell+9
+5210	Serpent Bell+10
+5211	Serpent Bell+11
+5212	Serpent Bell+12
+5213	Serpent Bell+13
+5214	Serpent Bell+14
+5215	Serpent Bell+15
+5216	Serpent Bell (craft)
+5330	Dragon Jaw Bell+0
+5331	Dragon Jaw Bell+1
+5332	Dragon Jaw Bell+2
+5333	Dragon Jaw Bell+3
+5334	Dragon Jaw Bell+4
+5335	Dragon Jaw Bell+5
+5336	Dragon Jaw Bell+6
+5337	Dragon Jaw Bell+7
+5338	Dragon Jaw Bell+8
+5339	Dragon Jaw Bell+9
+5340	Dragon Ghost Bell +0
+5341	Dragon Ghost Bell +1
+5342	Dragon Ghost Bell +2
+5343	Dragon Ghost Bell +3
+5344	Dragon Ghost Bell +4
+5345	Dragon Ghost Bell +5
+5346	Dragon Ghost Bell +6
+5347	Dragon Ghost Bell +7
+5348	Dragon Ghost Bell +8
+5349	Dragon Ghost Bell +9
+5500	Kyanite Bell+0
+5501	Kyanite Bell+1
+5502	Kyanite Bell+2
+5503	Kyanite Bell+3
+5504	Kyanite Bell+4
+5505	Kyanite Bell+5
+5506	Kyanite Bell+6
+5507	Kyanite Bell+7
+5508	Kyanite Bell+8
+5509	Kyanite Bell+9
+7000	Fan+0
+7001	Fan+1
+7002	Fan+2
+7003	Fan+3
+7004	Fan+4
+7005	Fan+5
+7006	Fan+6
+7007	Fan+7
+7008	Fan+8
+7009	Fan+9
+7010	Iron Fan+0
+7011	Iron Fan+1
+7012	Iron Fan+2
+7013	Iron Fan+3
+7014	Iron Fan+4
+7015	Iron Fan+5
+7016	Iron Fan+6
+7017	Iron Fan+7
+7018	Iron Fan+8
+7019	Iron Fan+9
+7020	Black Tiger Fan+0
+7021	Black Tiger Fan+1
+7022	Black Tiger Fan+2
+7023	Black Tiger Fan+3
+7024	Black Tiger Fan+4
+7025	Black Tiger Fan+5
+7026	Black Tiger Fan+6
+7027	Black Tiger Fan+7
+7028	Black Tiger Fan+8
+7029	Black Tiger Fan+9
+7030	Crane Wing Fan+0
+7031	Crane Wing Fan+1
+7032	Crane Wing Fan+2
+7033	Crane Wing Fan+3
+7034	Crane Wing Fan+4
+7035	Crane Wing Fan+5
+7036	Crane Wing Fan+6
+7037	Crane Wing Fan+7
+7038	Crane Wing Fan+8
+7039	Crane Wing Fan+9
+7040	Peacock Fan+0
+7041	Peacock Fan+1
+7042	Peacock Fan+2
+7043	Peacock Fan+3
+7044	Peacock Fan+4
+7045	Peacock Fan+5
+7046	Peacock Fan+6
+7047	Peacock Fan+7
+7048	Peacock Fan+8
+7049	Peacock Fan+9
+7050	Aquatic Fan+0
+7051	Aquatic Fan+1
+7052	Aquatic Fan+2
+7053	Aquatic Fan+3
+7054	Aquatic Fan+4
+7055	Aquatic Fan+5
+7056	Aquatic Fan+6
+7057	Aquatic Fan+7
+7058	Aquatic Fan+8
+7059	Aquatic Fan+9
+7060	Stone Fan+0
+7061	Stone Fan+1
+7062	Stone Fan+2
+7063	Stone Fan+3
+7064	Stone Fan+4
+7065	Stone Fan+5
+7066	Stone Fan+6
+7067	Stone Fan+7
+7068	Stone Fan+8
+7069	Stone Fan+9
+7070	Ocean Fan+0
+7071	Ocean Fan+1
+7072	Ocean Fan+2
+7073	Ocean Fan+3
+7074	Ocean Fan+4
+7075	Ocean Fan+5
+7076	Ocean Fan+6
+7077	Ocean Fan+7
+7078	Ocean Fan+8
+7079	Ocean Fan+9
+7080	Sting Fan+0
+7081	Sting Fan+1
+7082	Sting Fan+2
+7083	Sting Fan+3
+7084	Sting Fan+4
+7085	Sting Fan+5
+7086	Sting Fan+6
+7087	Sting Fan+7
+7088	Sting Fan+8
+7089	Sting Fan+9
+7090	Phoenix Fan+0
+7091	Phoenix Fan+1
+7092	Phoenix Fan+2
+7093	Phoenix Fan+3
+7094	Phoenix Fan+4
+7095	Phoenix Fan+5
+7096	Phoenix Fan+6
+7097	Phoenix Fan+7
+7098	Phoenix Fan+8
+7099	Phoenix Fan+9
+7100	Triple Fan+0
+7101	Triple Fan+1
+7102	Triple Fan+2
+7103	Triple Fan+3
+7104	Triple Fan+4
+7105	Triple Fan+5
+7106	Triple Fan+6
+7107	Triple Fan+7
+7108	Triple Fan+8
+7109	Triple Fan+9
+7110	Eyebrow Fan+0
+7111	Eyebrow Fan+1
+7112	Eyebrow Fan+2
+7113	Eyebrow Fan+3
+7114	Eyebrow Fan+4
+7115	Eyebrow Fan+5
+7116	Eyebrow Fan+6
+7117	Eyebrow Fan+7
+7118	Eyebrow Fan+8
+7119	Eyebrow Fan+9
+7120	Sun Fan+0
+7121	Sun Fan+1
+7122	Sun Fan+2
+7123	Sun Fan+3
+7124	Sun Fan+4
+7125	Sun Fan+5
+7126	Sun Fan+6
+7127	Sun Fan+7
+7128	Sun Fan+8
+7129	Sun Fan+9
+7130	Heavenly Bird Fan+0
+7131	Heavenly Bird Fan+1
+7132	Heavenly Bird Fan+2
+7133	Heavenly Bird Fan+3
+7134	Heavenly Bird Fan+4
+7135	Heavenly Bird Fan+5
+7136	Heavenly Bird Fan+6
+7137	Heavenly Bird Fan+7
+7138	Heavenly Bird Fan+8
+7139	Heavenly Bird Fan+9
+7140	Salvation Fan+0
+7141	Salvation Fan+1
+7142	Salvation Fan+2
+7143	Salvation Fan+3
+7144	Salvation Fan+4
+7145	Salvation Fan+5
+7146	Salvation Fan+6
+7147	Salvation Fan+7
+7148	Salvation Fan+8
+7149	Salvation Fan+9
+7150	Ecstasy Fan+0
+7151	Ecstasy Fan+1
+7152	Ecstasy Fan+2
+7153	Ecstasy Fan+3
+7154	Ecstasy Fan+4
+7155	Ecstasy Fan+5
+7156	Ecstasy Fan+6
+7157	Ecstasy Fan+7
+7158	Ecstasy Fan+8
+7159	Ecstasy Fan+9
+7160	Autumn Wind Fan+0
+7161	Autumn Wind Fan+1
+7162	Autumn Wind Fan+2
+7163	Autumn Wind Fan+3
+7164	Autumn Wind Fan+4
+7165	Autumn Wind Fan+5
+7166	Autumn Wind Fan+6
+7167	Autumn Wind Fan+7
+7168	Autumn Wind Fan+8
+7169	Autumn Wind Fan+9
+7170	Eight Trigrams Fan+0
+7171	Eight Trigrams Fan+1
+7172	Eight Trigrams Fan+2
+7173	Eight Trigrams Fan+3
+7174	Eight Trigrams Fan+4
+7175	Eight Trigrams Fan+5
+7176	Eight Trigrams Fan+6
+7177	Eight Trigrams Fan+7
+7178	Eight Trigrams Fan+8
+7179	Eight Trigrams Fan+9
+7180	Lying Dragon Fan+0
+7181	Lying Dragon Fan+1
+7182	Lying Dragon Fan+2
+7183	Lying Dragon Fan+3
+7184	Lying Dragon Fan+4
+7185	Lying Dragon Fan+5
+7186	Lying Dragon Fan+6
+7187	Lying Dragon Fan+7
+7188	Lying Dragon Fan+8
+7189	Lying Dragon Fan+9
+7190	Demon Fan+0
+7191	Demon Fan+1
+7192	Demon Fan+2
+7193	Demon Fan+3
+7194	Demon Fan+4
+7195	Demon Fan+5
+7196	Demon Fan+6
+7197	Demon Fan+7
+7198	Demon Fan+8
+7199	Demon Fan+9
+7200	Lance+0
+7201	Lance+1
+7202	Lance+2
+7203	Lance+3
+7204	Lance+4
+7205	Lance+5
+7206	Lance+6
+7207	Lance+7
+7208	Lance+8
+7209	Lance+9
+7300	Zodiac Fan+0
+7301	Zodiac Fan+1
+7302	Zodiac Fan+2
+7303	Zodiac Fan+3
+7304	Zodiac Fan+4
+7305	Zodiac Fan+5
+7306	Zodiac Fan+6
+7307	Zodiac Fan+7
+7308	Zodiac Fan+8
+7309	Zodiac Fan+9
+7310	Gloom Dragon Fan+0
+7311	Gloom Dragon Fan+1
+7312	Gloom Dragon Fan+2
+7313	Gloom Dragon Fan+3
+7314	Gloom Dragon Fan+4
+7315	Gloom Dragon Fan+5
+7316	Gloom Dragon Fan+6
+7317	Gloom Dragon Fan+7
+7318	Gloom Dragon Fan+8
+7319	Gloom Dragon Fan+9
+7320	Gloom Dragon Fan+10
+7321	Gloom Dragon Fan+11
+7322	Gloom Dragon Fan+12
+7323	Gloom Dragon Fan+13
+7324	Gloom Dragon Fan+14
+7325	Gloom Dragon Fan+15
+7330	Serpent Fan+0
+7331	Serpent Fan+1
+7332	Serpent Fan+2
+7333	Serpent Fan+3
+7334	Serpent Fan+4
+7335	Serpent Fan+5
+7336	Serpent Fan+6
+7337	Serpent Fan+7
+7338	Serpent Fan+8
+7339	Serpent Fan+9
+7340	Serpent Fan+10
+7341	Serpent Fan+11
+7342	Serpent Fan+12
+7343	Serpent Fan+13
+7344	Serpent Fan+14
+7345	Serpent Fan+15
+7346	Serpent Fan (craft)
+7370	Lying Dragon Fan+0
+7371	Lying Dragon Fan+1
+7372	Lying Dragon Fan+2
+7373	Lying Dragon Fan+3
+7374	Lying Dragon Fan+4
+7375	Lying Dragon Fan+5
+7376	Lying Dragon Fan+6
+7377	Lying Dragon Fan+7
+7378	Lying Dragon Fan+8
+7379	Lying Dragon Fan+9
+7500	Kyanite Fan+0
+7501	Kyanite Fan+1
+7502	Kyanite Fan+2
+7503	Kyanite Fan+3
+7504	Kyanite Fan+4
+7505	Kyanite Fan+5
+7506	Kyanite Fan+6
+7507	Kyanite Fan+7
+7508	Kyanite Fan+8
+7509	Kyanite Fan+9
+8000	Wooden Arrow
+8001	Bamboo Arrow
+8002	Stone Arrow
+8003	Iron Arrow
+8004	Steel Arrow
+8005	Silver Arrow
+8006	Fire Arrow
+8007	Poison Arrow
+8008	Ice Arrow
+8009	Cursed Arrow
+9600	Fire Talisman+0
+9601	Talisman of Fire+1
+9602	Talisman of Fire+2
+9603	Talisman of Fire+3
+9604	Talisman of Fire+4
+9605	Talisman of Fire+5
+9606	Talisman of Fire+6
+9607	Talisman of Fire+7
+9608	Talisman of Fire+8
+9609	Talisman of Fire+9
+9610	Talisman of Fire+10
+9611	Talisman of Fire+11
+9612	Talisman of Fire+12
+9613	Talisman of Fire+13
+9614	Talisman of Fire+14
+9615	Talisman of Fire+15
+9616	Talisman of Fire+16
+9617	Talisman of Fire+17
+9618	Talisman of Fire+18
+9619	Talisman of Fire+19
+9620	Fire Talisman+20
+9830	Talisman of Ice+0
+9831	Talisman of Ice+1
+9832	Talisman of Ice+2
+9833	Talisman of Ice+3
+9834	Talisman of Ice+4
+9835	Talisman of Ice+5
+9836	Talisman of Ice+6
+9837	Talisman of Ice+7
+9838	Talisman of Ice+8
+9839	Talisman of Ice+9
+9840	Talisman of Ice+10
+9841	Talisman of Ice+11
+9842	Talisman of Ice+12
+9843	Talisman of Ice+13
+9844	Talisman of Ice+14
+9845	Talisman of Ice+15
+9846	Talisman of Ice+16
+9847	Talisman of Ice+17
+9848	Talisman of Ice+18
+9849	Talisman of Ice+19
+9850	Talisman of Ice+20
+10060	Talisman of Earth+0
+10061	Talisman of Earth+1
+10062	Talisman of Earth+2
+10063	Talisman of Earth+3
+10064	Talisman of Earth+4
+10065	Talisman of Earth+5
+10066	Talisman of Earth+6
+10067	Talisman of Earth+7
+10068	Talisman of Earth+8
+10069	Talisman of Earth+9
+10070	Talisman of Earth+10
+10071	Talisman of Earth+11
+10072	Talisman of Earth+12
+10073	Talisman of Earth+13
+10074	Talisman of Earth+14
+10075	Talisman of Earth+15
+10076	Talisman of Earth+16
+10077	Talisman of Earth+17
+10078	Talisman of Earth+18
+10079	Talisman of Earth+19
+10080	Talisman of Earth+20
+10290	Talisman of Dark+0
+10291	Talisman of Dark+1
+10292	Talisman of Dark+2
+10293	Talisman of Dark+3
+10294	Talisman of Dark+4
+10295	Talisman of Dark+5
+10296	Talisman of Dark+6
+10297	Talisman of Dark+7
+10298	Talisman of Dark+8
+10299	Talisman of Dark+9
+10300	Talisman of Dark+10
+10301	Talisman of Dark+11
+10302	Talisman of Dark+12
+10303	Talisman of Dark+13
+10304	Talisman of Dark+14
+10305	Talisman of Dark+15
+10306	Talisman of Dark+16
+10307	Talisman of Dark+17
+10308	Talisman of Dark+18
+10309	Talisman of Dark+19
+10310	Talisman of Dark+20
+10520	Talisman of Wind+0
+10521	Talisman of Wind+1
+10522	Talisman of Wind+2
+10523	Talisman of Wind+3
+10524	Talisman of Wind+4
+10525	Talisman of Wind+5
+10526	Talisman of Wind+6
+10527	Talisman of Wind+7
+10528	Talisman of Wind+8
+10529	Talisman of Wind+9
+10530	Talisman of Wind+10
+10531	Talisman of Wind+11
+10532	Talisman of Wind+12
+10533	Talisman of Wind+13
+10534	Talisman of Wind+14
+10535	Talisman of Wind+15
+10536	Talisman of Wind+16
+10537	Talisman of Wind+17
+10538	Talisman of Wind+18
+10539	Talisman of Wind+19
+10540	Talisman of Wind+20
+10750	Talisman of Lightnight+0
+10751	Talisman of Lightnight+1
+10752	Talisman of Lightnight+2
+10753	Talisman of Lightnight+3
+10754	Talisman of Lightnight+4
+10755	Talisman of Lightnight+5
+10756	Talisman of Lightnight+6
+10757	Talisman of Lightnight+7
+10758	Talisman of Lightnight+8
+10759	Talisman of Lightnight+9
+10760	Talisman of Lightnight+10
+10761	Talisman of Lightnight+11
+10762	Talisman of Lightnight+12
+10763	Talisman of Lightnight+13
+10764	Talisman of Lightnight+14
+10765	Talisman of Lightnight+15
+10766	Talisman of Lightnight+16
+10767	Talisman of Lightnight+17
+10768	Talisman of Lightnight+18
+10769	Talisman of Lightnight+19
+10770	Talisman of Lightnight+20
+11200	Monk Plate Armour+0
+11201	Monk Plate Armour+1
+11202	Monk Plate Armour+2
+11203	Monk Plate Armour+3
+11204	Monk Plate Armour+4
+11205	Monk Plate Armour+5
+11206	Monk Plate Armour+6
+11207	Monk Plate Armour+7
+11208	Monk Plate Armour+8
+11209	Monk Plate Armour+9
+11210	Iron Plate Armour+0
+11211	Iron Plate Armour+1
+11212	Iron Plate Armour+2
+11213	Iron Plate Armour+3
+11214	Iron Plate Armour+4
+11215	Iron Plate Armour+5
+11216	Iron Plate Armour+6
+11217	Iron Plate Armour+7
+11218	Iron Plate Armour+8
+11219	Iron Plate Armour+9
+11220	Tiger Plate Armour+0
+11221	Tiger Plate Armour+1
+11222	Tiger Plate Armour+2
+11223	Tiger Plate Armour+3
+11224	Tiger Plate Armour+4
+11225	Tiger Plate Armour+5
+11226	Tiger Plate Armour+6
+11227	Tiger Plate Armour+7
+11228	Tiger Plate Armour+8
+11229	Tiger Plate Armour+9
+11230	Lion Plate Armour+0
+11231	Lion Plate Armour+1
+11232	Lion Plate Armour+2
+11233	Lion Plate Armour+3
+11234	Lion Plate Armour+4
+11235	Lion Plate Armour+5
+11236	Lion Plate Armour+6
+11237	Lion Plate Armour+7
+11238	Lion Plate Armour+8
+11239	Lion Plate Armour+9
+11240	Lethal Plate Armour+0
+11241	Lethal Plate Armour+1
+11242	Lethal Plate Armour+2
+11243	Lethal Plate Armour+3
+11244	Lethal Plate Armour+4
+11245	Lethal Plate Armour+5
+11246	Lethal Plate Armour+6
+11247	Lethal Plate Armour+7
+11248	Lethal Plate Armour+8
+11249	Lethal Plate Armour+9
+11250	Dragon Plate Armour+0
+11251	Dragon Plate Armour+1
+11252	Dragon Plate Armour+2
+11253	Dragon Plate Armour+3
+11254	Dragon Plate Armour+4
+11255	Dragon Plate Armour+5
+11256	Dragon Plate Armour+6
+11257	Dragon Plate Armour+7
+11258	Dragon Plate Armour+8
+11259	Dragon Plate Armour+9
+11260	Scale Plate Armour+0
+11261	Scale Plate Armour+1
+11262	Scale Plate Armour+2
+11263	Scale Plate Armour+3
+11264	Scale Plate Armour+4
+11265	Scale Plate Armour+5
+11266	Scale Plate Armour+6
+11267	Scale Plate Armour+7
+11268	Scale Plate Armour+8
+11269	Scale Plate Armour+9
+11270	Gold Plate Armour+0
+11271	Gold Plate Armour+1
+11272	Gold Plate Armour+2
+11273	Gold Plate Armour+3
+11274	Gold Plate Armour+4
+11275	Gold Plate Armour+5
+11276	Gold Plate Armour+6
+11277	Gold Plate Armour+7
+11278	Gold Plate Armour+8
+11279	Gold Plate Armour+9
+11280	Dragon God Armour+0
+11281	Dragon God Armour+1
+11282	Dragon God Armour+2
+11283	Dragon God Armour+3
+11284	Dragon God Armour+4
+11285	Dragon God Armour+5
+11286	Dragon God Armour+6
+11287	Dragon God Armour+7
+11288	Dragon God Armour+8
+11289	Dragon God Armour+9
+11290	Black Steel Armour+0
+11291	Black Steel Armour+1
+11292	Black Steel Armour+2
+11293	Black Steel Armour+3
+11294	Black Steel Armour+4
+11295	Black Steel Armour+5
+11296	Black Steel Armour+6
+11297	Black Steel Armour+7
+11298	Black Steel Armour+8
+11299	Black Steel Armour+9
+11300	Sapphire Armour+0
+11301	Sapphire Armour+1
+11302	Sapphire Armour+2
+11303	Sapphire Armour+3
+11304	Sapphire Armour+4
+11305	Sapphire Armour+5
+11306	Sapphire Armour+6
+11307	Sapphire Armour+7
+11308	Sapphire Armour+8
+11309	Sapphire Armour+9
+11400	Azure Suit+0
+11401	Azure Suit+1
+11402	Azure Suit+2
+11403	Azure Suit+3
+11404	Azure Suit+4
+11405	Azure Suit+5
+11406	Azure Suit+6
+11407	Azure Suit+7
+11408	Azure Suit+8
+11409	Azure Suit+9
+11410	Ivory Suit+0
+11411	Ivory Suit+1
+11412	Ivory Suit+2
+11413	Ivory Suit+3
+11414	Ivory Suit+4
+11415	Ivory Suit+5
+11416	Ivory Suit+6
+11417	Ivory Suit+7
+11418	Ivory Suit+8
+11419	Ivory Suit+9
+11420	Crimson Suit+0
+11421	Crimson Suit+1
+11422	Crimson Suit+2
+11423	Crimson Suit+3
+11424	Crimson Suit+4
+11425	Crimson Suit+5
+11426	Crimson Suit+6
+11427	Crimson Suit+7
+11428	Crimson Suit+8
+11429	Crimson Suit+9
+11430	Red Ant Suit+0
+11431	Red Ant Suit+1
+11432	Red Ant Suit+2
+11433	Red Ant Suit+3
+11434	Red Ant Suit+4
+11435	Red Ant Suit+5
+11436	Red Ant Suit+6
+11437	Red Ant Suit+7
+11438	Red Ant Suit+8
+11439	Red Ant Suit+9
+11440	Ant Lion Suit+0
+11441	Ant Lion Suit+1
+11442	Ant Lion Suit+2
+11443	Ant Lion Suit+3
+11444	Ant Lion Suit+4
+11445	Ant Lion Suit+5
+11446	Ant Lion Suit+6
+11447	Ant Lion Suit+7
+11448	Ant Lion Suit+8
+11449	Ant Lion Suit+9
+11450	Ninja Suit+0
+11451	Ninja Suit+1
+11452	Ninja Suit+2
+11453	Ninja Suit+3
+11454	Ninja Suit+4
+11455	Ninja Suit+5
+11456	Ninja Suit+6
+11457	Ninja Suit+7
+11458	Ninja Suit+8
+11459	Ninja Suit+9
+11460	Young Dragon Suit+0
+11461	Young Dragon Suit+1
+11462	Young Dragon Suit+2
+11463	Young Dragon Suit+3
+11464	Young Dragon Suit+4
+11465	Young Dragon Suit+5
+11466	Young Dragon Suit+6
+11467	Young Dragon Suit+7
+11468	Young Dragon Suit+8
+11469	Young Dragon Suit+9
+11470	Killer Wind Suit+0
+11471	Killer Wind Suit+1
+11472	Killer Wind Suit+2
+11473	Killer Wind Suit+3
+11474	Killer Wind Suit+4
+11475	Killer Wind Suit+5
+11476	Killer Wind Suit+6
+11477	Killer Wind Suit+7
+11478	Killer Wind Suit+8
+11479	Killer Wind Suit+9
+11480	Fuchsia Suit+0
+11481	Fuchsia Suit+1
+11482	Fuchsia Suit+2
+11483	Fuchsia Suit+3
+11484	Fuchsia Suit+4
+11485	Fuchsia Suit+5
+11486	Fuchsia Suit+6
+11487	Fuchsia Suit+7
+11488	Fuchsia Suit+8
+11489	Fuchsia Suit+9
+11490	Black Wind Suit+0
+11491	Black Wind Suit+1
+11492	Black Wind Suit+2
+11493	Black Wind Suit+3
+11494	Black Wind Suit+4
+11495	Black Wind Suit+5
+11496	Black Wind Suit+6
+11497	Black Wind Suit+7
+11498	Black Wind Suit+8
+11499	Black Wind Suit+9
+11500	Sapphire Suit+0
+11501	Sapphire Suit+1
+11502	Sapphire Suit+2
+11503	Sapphire Suit+3
+11504	Sapphire Suit+4
+11505	Sapphire Suit+5
+11506	Sapphire Suit+6
+11507	Sapphire Suit+7
+11508	Sapphire Suit+8
+11509	Sapphire Suit+9
+11600	Requiem Plate Armour+0
+11601	Requiem Plate Armour+1
+11602	Requiem Plate Armour+2
+11603	Requiem Plate Armour+3
+11604	Requiem Plate Armour+4
+11605	Requiem Plate Armour+5
+11606	Requiem Plate Armour+6
+11607	Requiem Plate Armour+7
+11608	Requiem Plate Armour+8
+11609	Requiem Plate Armour+9
+11610	Storm Plate Armour+0
+11611	Storm Plate Armour+1
+11612	Storm Plate Armour+2
+11613	Storm Plate Armour+3
+11614	Storm Plate Armour+4
+11615	Storm Plate Armour+5
+11616	Storm Plate Armour+6
+11617	Storm Plate Armour+7
+11618	Storm Plate Armour+8
+11619	Storm Plate Armour+9
+11620	Misfortune Armour+0
+11621	Misfortune Armour+1
+11622	Misfortune Armour+2
+11623	Misfortune Armour+3
+11624	Misfortune Armour+4
+11625	Misfortune Armour+5
+11626	Misfortune Armour+6
+11627	Misfortune Armour+7
+11628	Misfortune Armour+8
+11629	Misfortune Armour+9
+11630	Ghost Plate Armour+0
+11631	Ghost Plate Armour+1
+11632	Ghost Plate Armour+2
+11633	Ghost Plate Armour+3
+11634	Ghost Plate Armour+4
+11635	Ghost Plate Armour+5
+11636	Ghost Plate Armour+6
+11637	Ghost Plate Armour+7
+11638	Ghost Plate Armour+8
+11639	Ghost Plate Armour+9
+11640	Yin and Yang Armour+0
+11641	Yin and Yang Armour+1
+11642	Yin and Yang Armour+2
+11643	Yin and Yang Armour+3
+11644	Yin and Yang Armour+4
+11645	Yin and Yang Armour+5
+11646	Yin and Yang Armour+6
+11647	Yin and Yang Armour+7
+11648	Yin and Yang Armour+8
+11649	Yin and Yang Armour+9
+11650	Mystic Plate Armour+0
+11651	Mystic Plate Armour+1
+11652	Mystic Plate Armour+2
+11653	Mystic Plate Armour+3
+11654	Mystic Plate Armour+4
+11655	Mystic Plate Armour+5
+11656	Mystic Plate Armour+6
+11657	Mystic Plate Armour+7
+11658	Mystic Plate Armour+8
+11659	Mystic Plate Armour+9
+11660	Fog Plate Armour+0
+11661	Fog Plate Armour+1
+11662	Fog Plate Armour+2
+11663	Fog Plate Armour+3
+11664	Fog Plate Armour+4
+11665	Fog Plate Armour+5
+11666	Fog Plate Armour+6
+11667	Fog Plate Armour+7
+11668	Fog Plate Armour+8
+11669	Fog Plate Armour+9
+11670	Ghost Mask Armour+0
+11671	Ghost Mask Armour+1
+11672	Ghost Mask Armour+2
+11673	Ghost Mask Armour+3
+11674	Ghost Mask Armour+4
+11675	Ghost Mask Armour+5
+11676	Ghost Mask Armour+6
+11677	Ghost Mask Armour+7
+11678	Ghost Mask Armour+8
+11679	Ghost Mask Armour+9
+11680	Spirit Plate Armour+0
+11681	Spirit Plate Armour+1
+11682	Spirit Plate Armour+2
+11683	Spirit Plate Armour+3
+11684	Spirit Plate Armour+4
+11685	Spirit Plate Armour+5
+11686	Spirit Plate Armour+6
+11687	Spirit Plate Armour+7
+11688	Spirit Plate Armour+8
+11689	Spirit Plate Armour+9
+11690	Magic Plate Armour+0
+11691	Magic Plate Armour+1
+11692	Magic Plate Armour+2
+11693	Magic Plate Armour+3
+11694	Magic Plate Armour+4
+11695	Magic Plate Armour+5
+11696	Magic Plate Armour+6
+11697	Magic Plate Armour+7
+11698	Magic Plate Armour+8
+11699	Magic Plate Armour+9
+11700	Sapphire Plate Armour+0
+11701	Sapphire Plate Armour+1
+11702	Sapphire Plate Armour+2
+11703	Sapphire Plate Armour+3
+11704	Sapphire Plate Armour+4
+11705	Sapphire Plate Armour+5
+11706	Sapphire Plate Armour+6
+11707	Sapphire Plate Armour+7
+11708	Sapphire Plate Armour+8
+11709	Sapphire Plate Armour+9
+11800	Crimson Clothing+0
+11801	Crimson Clothing+1
+11802	Crimson Clothing+2
+11803	Crimson Clothing+3
+11804	Crimson Clothing+4
+11805	Crimson Clothing+5
+11806	Crimson Clothing+6
+11807	Crimson Clothing+7
+11808	Crimson Clothing+8
+11809	Crimson Clothing+9
+11810	Turquoise Clothing+0
+11811	Turquoise Clothing+1
+11812	Turquoise Clothing+2
+11813	Turquoise Clothing+3
+11814	Turquoise Clothing+4
+11815	Turquoise Clothing+5
+11816	Turquoise Clothing+6
+11817	Turquoise Clothing+7
+11818	Turquoise Clothing+8
+11819	Turquoise Clothing+9
+11820	Pink Clothing+0
+11821	Pink Clothing+1
+11822	Pink Clothing+2
+11823	Pink Clothing+3
+11824	Pink Clothing+4
+11825	Pink Clothing+5
+11826	Pink Clothing+6
+11827	Pink Clothing+7
+11828	Pink Clothing+8
+11829	Pink Clothing+9
+11830	Amorous Clothing+0
+11831	Amorous Clothing+1
+11832	Amorous Clothing+2
+11833	Amorous Clothing+3
+11834	Amorous Clothing+4
+11835	Amorous Clothing+5
+11836	Amorous Clothing+6
+11837	Amorous Clothing+7
+11838	Amorous Clothing+8
+11839	Amorous Clothing+9
+11840	Heavenly Clothing+0
+11841	Heavenly Clothing+1
+11842	Heavenly Clothing+2
+11843	Heavenly Clothing+3
+11844	Heavenly Clothing+4
+11845	Heavenly Clothing+5
+11846	Heavenly Clothing+6
+11847	Heavenly Clothing+7
+11848	Heavenly Clothing+8
+11849	Heavenly Clothing+9
+11850	Sun Clothing+0
+11851	Sun Clothing+1
+11852	Sun Clothing+2
+11853	Sun Clothing+3
+11854	Sun Clothing+4
+11855	Sun Clothing+5
+11856	Sun Clothing+6
+11857	Sun Clothing+7
+11858	Sun Clothing+8
+11859	Sun Clothing+9
+11860	Clothing of Morality+0
+11861	Clothing of Morality+1
+11862	Clothing of Morality+2
+11863	Clothing of Morality+3
+11864	Clothing of Morality+4
+11865	Clothing of Morality+5
+11866	Clothing of Morality+6
+11867	Clothing of Morality+7
+11868	Clothing of Morality+8
+11869	Clothing of Morality+9
+11870	Orange Cat Dress+0
+11871	Orange Cat Dress+1
+11872	Orange Cat Dress+2
+11873	Orange Cat Dress+3
+11874	Orange Cat Dress+4
+11875	Orange Cat Dress+5
+11876	Orange Cat Dress+6
+11877	Orange Cat Dress+7
+11878	Orange Cat Dress+8
+11879	Orange Cat Dress+9
+11880	Baroness Dress+0
+11881	Baroness Dress+1
+11882	Baroness Dress+2
+11883	Baroness Dress+3
+11884	Baroness Dress+4
+11885	Baroness Dress+5
+11886	Baroness Dress+6
+11887	Baroness Dress+7
+11888	Baroness Dress+8
+11889	Baroness Dress+9
+11890	Black Clothing+0
+11891	Black Clothing+1
+11892	Black Clothing+2
+11893	Black Clothing+3
+11894	Black Clothing+4
+11895	Black Clothing+5
+11896	Black Clothing+6
+11897	Black Clothing+7
+11898	Black Clothing+8
+11899	Black Clothing+9
+11980	Sapphire Clothing+0
+11981	Sapphire Clothing+1
+11982	Sapphire Clothing+2
+11983	Sapphire Clothing+3
+11984	Sapphire Clothing+4
+11985	Sapphire Clothing+5
+11986	Sapphire Clothing+6
+11987	Sapphire Clothing+7
+11988	Sapphire Clothing+8
+11989	Sapphire Clothing+9
+11901	Tuxedo
+11902	Tuxedo
+11903	Wedding Dress
+11904	Wedding Dress
+11911	Tuxedo
+11912	Tuxedo
+11913	Wedding Dress
+11914	Wedding Dress
+11971	Heir Armour
+11972	Heir Suit
+11973	Heir Plate Armour
+11974	Heir Clothing
+11975	King Armour
+11976	King Suit
+11977	King Plate Armour
+11978	King Clothing
+12010	Blue Steel Armour +0
+12011	Blue Steel Armour +1
+12012	Blue Steel Armour +2
+12013	Blue Steel Armour +3
+12014	Blue Steel Armour +4
+12015	Blue Steel Armour +5
+12016	Blue Steel Armour +6
+12017	Blue Steel Armour +7
+12018	Blue Steel Armour +8
+12019	Blue Steel Armour +9
+12020	Blue Dragon Suit +0
+12021	Blue Dragon Suit +1
+12022	Blue Dragon Suit +2
+12023	Blue Dragon Suit +3
+12024	Blue Dragon Suit +4
+12025	Blue Dragon Suit +5
+12026	Blue Dragon Suit +6
+12027	Blue Dragon Suit +7
+12028	Blue Dragon Suit +8
+12029	Blue Dragon Suit +9
+12030	Aura Plate Armour +0
+12031	Aura Plate Armour +1
+12032	Aura Plate Armour +2
+12033	Aura Plate Armour +3
+12034	Aura Plate Armour +4
+12035	Aura Plate Armour +5
+12036	Aura Plate Armour +6
+12037	Aura Plate Armour +7
+12038	Aura Plate Armour +8
+12039	Aura Plate Armour +9
+12040	Dragon Clothing +0
+12041	Dragon Clothing +1
+12042	Dragon Clothing +2
+12043	Dragon Clothing +3
+12044	Dragon Clothing +4
+12045	Dragon Clothing +5
+12046	Dragon Clothing +6
+12047	Dragon Clothing +7
+12048	Dragon Clothing +8
+12049	Dragon Clothing +9
+12050	Kyanite Armour+0
+12051	Kyanite Armour+1
+12052	Kyanite Armour+2
+12053	Kyanite Armour+3
+12054	Kyanite Armour+4
+12055	Kyanite Armour+5
+12056	Kyanite Armour+6
+12057	Kyanite Armour+7
+12058	Kyanite Armour+8
+12059	Kyanite Armour+9
+12060	Kyanite Suit+0
+12061	Kyanite Suit+1
+12062	Kyanite Suit+2
+12063	Kyanite Suit+3
+12064	Kyanite Suit+4
+12065	Kyanite Suit+5
+12066	Kyanite Suit+6
+12067	Kyanite Suit+7
+12068	Kyanite Suit+8
+12069	Kyanite Suit+9
+12070	Kyanite Plate Armour+0
+12071	Kyanite Plate Armour+1
+12072	Kyanite Plate Armour+2
+12073	Kyanite Plate Armour+3
+12074	Kyanite Plate Armour+4
+12075	Kyanite Plate Armour+5
+12076	Kyanite Plate Armour+6
+12077	Kyanite Plate Armour+7
+12078	Kyanite Plate Armour+8
+12079	Kyanite Plate Armour+9
+12080	Kyanite Clothing+0
+12081	Kyanite Clothing+1
+12082	Kyanite Clothing+2
+12083	Kyanite Clothing+3
+12084	Kyanite Clothing+4
+12085	Kyanite Clothing+5
+12086	Kyanite Clothing+6
+12087	Kyanite Clothing+7
+12088	Kyanite Clothing+8
+12089	Kyanite Clothing+9
+12200	Traditional Helmet+0
+12201	Traditional Helmet+1
+12202	Traditional Helmet+2
+12203	Traditional Helmet+3
+12204	Traditional Helmet+4
+12205	Traditional Helmet+5
+12206	Traditional Helmet+6
+12207	Traditional Helmet+7
+12208	Traditional Helmet+8
+12209	Traditional Helmet+9
+12220	Iron Helmet+0
+12221	Iron Helmet+1
+12222	Iron Helmet+2
+12223	Iron Helmet+3
+12224	Iron Helmet+4
+12225	Iron Helmet+5
+12226	Iron Helmet+6
+12227	Iron Helmet+7
+12228	Iron Helmet+8
+12229	Iron Helmet+9
+12240	Ghost Mask Sallet+0
+12241	Ghost Mask Sallet+1
+12242	Ghost Mask Sallet+2
+12243	Ghost Mask Sallet+3
+12244	Ghost Mask Sallet+4
+12245	Ghost Mask Sallet+5
+12246	Ghost Mask Sallet+6
+12247	Ghost Mask Sallet+7
+12248	Ghost Mask Sallet+8
+12249	Ghost Mask Sallet+9
+12260	Fear Mask +0
+12261	Fear Mask +1
+12262	Fear Mask +2
+12263	Fear Mask +3
+12264	Fear Mask +4
+12265	Fear Mask +5
+12266	Fear Mask +6
+12267	Fear Mask +7
+12268	Fear Mask +8
+12269	Fear Mask +9
+12280	War Master Helmet +0
+12281	War Master Helmet +1
+12282	War Master Helmet +2
+12283	War Master Helmet +3
+12284	War Master Helmet +4
+12285	War Master Helmet +5
+12286	War Master Helmet +6
+12287	War Master Helmet +7
+12288	War Master Helmet +8
+12289	War Master Helmet +9
+12340	Leather Hood+0
+12341	Leather Hood+1
+12342	Leather Hood+2
+12343	Leather Hood+3
+12344	Leather Hood+4
+12345	Leather Hood+5
+12346	Leather Hood+6
+12347	Leather Hood+7
+12348	Leather Hood+8
+12349	Leather Hood+9
+12360	Chain Hood+0
+12361	Chain Hood+1
+12362	Chain Hood+2
+12363	Chain Hood+3
+12364	Chain Hood+4
+12365	Chain Hood+5
+12366	Chain Hood+6
+12367	Chain Hood+7
+12368	Chain Hood+8
+12369	Chain Hood+9
+12380	Steel Hood+0
+12381	Steel Hood+1
+12382	Steel Hood+2
+12383	Steel Hood+3
+12384	Steel Hood+4
+12385	Steel Hood+5
+12386	Steel Hood+6
+12387	Steel Hood+7
+12388	Steel Hood+8
+12389	Steel Hood+9
+12390	Orc Hood +0
+12391	Orc Hood +1
+12392	Orc Hood +2
+12393	Orc Hood +3
+12394	Orc Hood +4
+12395	Orc Hood +5
+12396	Orc Hood +6
+12397	Orc Hood +7
+12398	Orc Hood +8
+12399	Orc Hood +9
+12400	Spider Hood +0
+12401	Spider Hood +1
+12402	Spider Hood +2
+12403	Spider Hood +3
+12404	Spider Hood +4
+12405	Spider Hood +5
+12406	Spider Hood +6
+12407	Spider Hood +7
+12408	Spider Hood +8
+12409	Spider Hood +9
+12480	Bloody Helmet+0
+12481	Bloody Helmet+1
+12482	Bloody Helmet+2
+12483	Bloody Helmet+3
+12484	Bloody Helmet+4
+12485	Bloody Helmet+5
+12486	Bloody Helmet+6
+12487	Bloody Helmet+7
+12488	Bloody Helmet+8
+12489	Bloody Helmet+9
+12500	Mocking Helmet+0
+12501	Mocking Helmet+1
+12502	Mocking Helmet+2
+12503	Mocking Helmet+3
+12504	Mocking Helmet+4
+12505	Mocking Helmet+5
+12506	Mocking Helmet+6
+12507	Mocking Helmet+7
+12508	Mocking Helmet+8
+12509	Mocking Helmet+9
+12520	Castle Helmet+0
+12521	Castle Helmet+1
+12522	Castle Helmet+2
+12523	Castle Helmet+3
+12524	Castle Helmet+4
+12525	Castle Helmet+5
+12526	Castle Helmet+6
+12527	Castle Helmet+7
+12528	Castle Helmet+8
+12529	Castle Helmet+9
+12530	Horned Helmet +0
+12531	Horned Helmet +1
+12532	Horned Helmet +2
+12533	Horned Helmet +3
+12534	Horned Helmet +4
+12535	Horned Helmet +5
+12536	Horned Helmet +6
+12537	Horned Helmet +7
+12538	Horned Helmet +8
+12539	Horned Helmet +9
+12540	Magic Helmet +0
+12541	Magic Helmet +1
+12542	Magic Helmet +2
+12543	Magic Helmet +3
+12544	Magic Helmet +4
+12545	Magic Helmet +5
+12546	Magic Helmet +6
+12547	Magic Helmet +7
+12548	Magic Helmet +8
+12549	Magic Helmet +9
+12620	Monk Hat+0
+12621	Monk Hat+1
+12622	Monk Hat+2
+12623	Monk Hat+3
+12624	Monk Hat+4
+12625	Monk Hat+5
+12626	Monk Hat+6
+12627	Monk Hat+7
+12628	Monk Hat+8
+12629	Monk Hat+9
+12640	Phoenix Hat+0
+12641	Phoenix Hat+1
+12642	Phoenix Hat+2
+12643	Phoenix Hat+3
+12644	Phoenix Hat+4
+12645	Phoenix Hat+5
+12646	Phoenix Hat+6
+12647	Phoenix Hat+7
+12648	Phoenix Hat+8
+12649	Phoenix Hat+9
+12660	Sunlight Hat+0
+12661	Sunlight Hat+1
+12662	Sunlight Hat+2
+12663	Sunlight Hat+3
+12664	Sunlight Hat+4
+12665	Sunlight Hat+5
+12666	Sunlight Hat+6
+12667	Sunlight Hat+7
+12668	Sunlight Hat+8
+12669	Sunlight Hat+9
+12670	Cardinal's Hat +0
+12671	Cardinal's Hat +1
+12672	Cardinal's Hat +2
+12673	Cardinal's Hat +3
+12674	Cardinal's Hat +4
+12675	Cardinal's Hat +5
+12676	Cardinal's Hat +6
+12677	Cardinal's Hat +7
+12678	Cardinal's Hat +8
+12679	Cardinal's Hat +9
+12680	Soul Shard Hat +0
+12681	Soul Shard Hat +1
+12682	Soul Shard Hat +2
+12683	Soul Shard Hat +3
+12684	Soul Shard Hat +4
+12685	Soul Shard Hat +5
+12686	Soul Shard Hat +6
+12687	Soul Shard Hat +7
+12688	Soul Shard Hat +8
+12689	Soul Shard Hat +9
+12690	Dragon Steel Helm +0
+12691	Dragon Steel Helm +1
+12692	Dragon Steel Helm +2
+12693	Dragon Steel Helm +3
+12694	Dragon Steel Helm +4
+12695	Dragon Steel Helm +5
+12696	Dragon Steel Helm +6
+12697	Dragon Steel Helm +7
+12698	Dragon Steel Helm +8
+12699	Dragon Steel Helm +9
+12700	Dragon Hood +0
+12701	Dragon Hood +1
+12702	Dragon Hood +2
+12703	Dragon Hood +3
+12704	Dragon Hood +4
+12705	Dragon Hood +5
+12706	Dragon Hood +6
+12707	Dragon Hood +7
+12708	Dragon Hood +8
+12709	Dragon Hood +9
+12710	Dragonscale Helm +0
+12711	Dragonscale Helm +1
+12712	Dragonscale Helm +2
+12713	Dragonscale Helm +3
+12714	Dragonscale Helm +4
+12715	Dragonscale Helm +5
+12716	Dragonscale Helm +6
+12717	Dragonscale Helm +7
+12718	Dragonscale Helm +8
+12719	Dragonscale Helm +9
+12720	Dragon Hat +0
+12721	Dragon Hat +1
+12722	Dragon Hat +2
+12723	Dragon Hat +3
+12724	Dragon Hat +4
+12725	Dragon Hat +5
+12726	Dragon Hat +6
+12727	Dragon Hat +7
+12728	Dragon Hat +8
+12729	Dragon Hat +9
+12730	Dragoneer Steel Helm+0
+12731	Dragoneer Steel Helm+1
+12732	Dragoneer Steel Helm+2
+12733	Dragoneer Steel Helm+3
+12734	Dragoneer Steel Helm+4
+12735	Dragoneer Steel Helm+5
+12736	Dragoneer Steel Helm+6
+12737	Dragoneer Steel Helm+7
+12738	Dragoneer Steel Helm+8
+12739	Dragoneer Steel Helm+9
+12740	Dragoneer Hood+0
+12741	Dragoneer Hood+1
+12742	Dragoneer Hood+2
+12743	Dragoneer Hood+3
+12744	Dragoneer Hood+4
+12745	Dragoneer Hood+5
+12746	Dragoneer Hood+6
+12747	Dragoneer Hood+7
+12748	Dragoneer Hood+8
+12749	Dragoneer Hood+9
+12750	Dragoneer Scale Helm+0
+12751	Dragoneer Scale Helm+1
+12752	Dragoneer Scale Helm+2
+12753	Dragoneer Scale Helm+3
+12754	Dragoneer Scale Helm+4
+12755	Dragoneer Scale Helm+5
+12756	Dragoneer Scale Helm+6
+12757	Dragoneer Scale Helm+7
+12758	Dragoneer Scale Helm+8
+12759	Dragoneer Scale Helm+9
+12760	Dragoneer Hat+0
+12761	Dragoneer Hat+1
+12762	Dragoneer Hat+2
+12763	Dragoneer Hat+3
+12764	Dragoneer Hat+4
+12765	Dragoneer Hat+5
+12766	Dragoneer Hat+6
+12767	Dragoneer Hat+7
+12768	Dragoneer Hat+8
+12769	Dragoneer Hat+9
+12780	Gloom Dragon Helmet+0
+12781	Gloom Dragon Helmet+1
+12782	Gloom Dragon Helmet+2
+12783	Gloom Dragon Helmet+3
+12784	Gloom Dragon Helmet+4
+12785	Gloom Dragon Helmet+5
+12786	Gloom Dragon Helmet+6
+12787	Gloom Dragon Helmet+7
+12788	Gloom Dragon Helmet+8
+12789	Gloom Dragon Helmet+9
+12790	Gloom Dragon Helmet+10
+12791	Gloom Dragon Helmet+11
+12792	Gloom Dragon Helmet+12
+12793	Gloom Dragon Helmet+13
+12794	Gloom Dragon Helmet+14
+12795	Gloom Dragon Helmet+15
+12800	Tempest Dragon Helmet+0
+12801	Tempest Dragon Helmet+1
+12802	Tempest Dragon Helmet+2
+12803	Tempest Dragon Helmet+3
+12804	Tempest Dragon Helmet+4
+12805	Tempest Dragon Helmet+5
+12806	Tempest Dragon Helmet+6
+12807	Tempest Dragon Helmet+7
+12808	Tempest Dragon Helmet+8
+12809	Tempest Dragon Helmet+9
+12810	Tempest Dragon Helmet+10
+12811	Tempest Dragon Helmet+11
+12812	Tempest Dragon Helmet+12
+12813	Tempest Dragon Helmet+13
+12814	Tempest Dragon Helmet+14
+12815	Tempest Dragon Helmet+15
+12820	Hex Dragon Helmet+0
+12821	Hex Dragon Helmet+1
+12822	Hex Dragon Helmet+2
+12823	Hex Dragon Helmet+3
+12824	Hex Dragon Helmet+4
+12825	Hex Dragon Helmet+5
+12826	Hex Dragon Helmet+6
+12827	Hex Dragon Helmet+7
+12828	Hex Dragon Helmet+8
+12829	Hex Dragon Helmet+9
+12830	Hex Dragon Helmet+10
+12831	Hex Dragon Helmet+11
+12832	Hex Dragon Helmet+12
+12833	Hex Dragon Helmet+13
+12834	Hex Dragon Helmet+14
+12835	Hex Dragon Helmet+15
+12840	Exalted Dragon Helmet+0
+12841	Exalted Dragon Helmet+1
+12842	Exalted Dragon Helmet+2
+12843	Exalted Dragon Helmet+3
+12844	Exalted Dragon Helmet+4
+12845	Exalted Dragon Helmet+5
+12846	Exalted Dragon Helmet+6
+12847	Exalted Dragon Helmet+7
+12848	Exalted Dragon Helmet+8
+12849	Exalted Dragon Helmet+9
+12850	Exalted Dragon Helmet+10
+12851	Exalted Dragon Helmet+11
+12852	Exalted Dragon Helmet+12
+12853	Exalted Dragon Helmet+13
+12854	Exalted Dragon Helmet+14
+12855	Exalted Dragon Helmet+15
+13000	Battle Shield+0
+13001	Battle Shield+1
+13002	Battle Shield+2
+13003	Battle Shield+3
+13004	Battle Shield+4
+13005	Battle Shield+5
+13006	Battle Shield+6
+13007	Battle Shield+7
+13008	Battle Shield+8
+13009	Battle Shield+9
+13020	Pentagon Shield+0
+13021	Pentagon Shield+1
+13022	Pentagon Shield+2
+13023	Pentagon Shield+3
+13024	Pentagon Shield+4
+13025	Pentagon Shield+5
+13026	Pentagon Shield+6
+13027	Pentagon Shield+7
+13028	Pentagon Shield+8
+13029	Pentagon Shield+9
+13040	Black Round Shield+0
+13041	Black Round Shield+1
+13042	Black Round Shield+2
+13043	Black Round Shield+3
+13044	Black Round Shield+4
+13045	Black Round Shield+5
+13046	Black Round Shield+6
+13047	Black Round Shield+7
+13048	Black Round Shield+8
+13049	Black Round Shield+9
+13060	Falcon Shield+0
+13061	Falcon Shield+1
+13062	Falcon Shield+2
+13063	Falcon Shield+3
+13064	Falcon Shield+4
+13065	Falcon Shield+5
+13066	Falcon Shield+6
+13067	Falcon Shield+7
+13068	Falcon Shield+8
+13069	Falcon Shield+9
+13080	Tiger Shield+0
+13081	Tiger Shield+1
+13082	Tiger Shield+2
+13083	Tiger Shield+3
+13084	Tiger Shield+4
+13085	Tiger Shield+5
+13086	Tiger Shield+6
+13087	Tiger Shield+7
+13088	Tiger Shield+8
+13089	Tiger Shield+9
+13100	Lion Edge Shield+0
+13101	Lion Edge Shield+1
+13102	Lion Edge Shield+2
+13103	Lion Edge Shield+3
+13104	Lion Edge Shield+4
+13105	Lion Edge Shield+5
+13106	Lion Edge Shield+6
+13107	Lion Edge Shield+7
+13108	Lion Edge Shield+8
+13109	Lion Edge Shield+9
+13120	Dragon Scale Shield+0
+13121	Dragon Scale Shield+1
+13122	Dragon Scale Shield+2
+13123	Dragon Scale Shield+3
+13124	Dragon Scale Shield+4
+13125	Dragon Scale Shield+5
+13126	Dragon Scale Shield+6
+13127	Dragon Scale Shield+7
+13128	Dragon Scale Shield+8
+13129	Dragon Scale Shield+9
+13140	Titan Shield+0
+13141	Titan Shield+1
+13142	Titan Shield+2
+13143	Titan Shield+3
+13144	Titan Shield+4
+13145	Titan Shield+5
+13146	Titan Shield+6
+13147	Titan Shield+7
+13148	Titan Shield+8
+13149	Titan Shield+9
+13160	Three Emperors Shield+0
+13161	Three Emperors Shield+1
+13162	Three Emperors Shield+2
+13163	Three Emperors Shield+3
+13164	Three Emperors Shield+4
+13165	Three Emperors Shield+5
+13166	Three Emperors Shield+6
+13167	Three Emperors Shield+7
+13168	Three Emperors Shield+8
+13169	Three Emperors Shield+9
+13180	Bright Shield+0
+13181	Bright Shield+1
+13182	Bright Shield+2
+13183	Bright Shield+3
+13184	Bright Shield+4
+13185	Bright Shield+5
+13186	Bright Shield+6
+13187	Bright Shield+7
+13188	Bright Shield+8
+13189	Bright Shield+9
+14000	Wooden Bracelet+0
+14001	Wooden Bracelet+1
+14002	Wooden Bracelet+2
+14003	Wooden Bracelet+3
+14004	Wooden Bracelet+4
+14005	Wooden Bracelet+5
+14006	Wooden Bracelet+6
+14007	Wooden Bracelet+7
+14008	Wooden Bracelet+8
+14009	Wooden Bracelet+9
+14020	Copper Bracelet+0
+14021	Copper Bracelet+1
+14022	Copper Bracelet+2
+14023	Copper Bracelet+3
+14024	Copper Bracelet+4
+14025	Copper Bracelet+5
+14026	Copper Bracelet+6
+14027	Copper Bracelet+7
+14028	Copper Bracelet+8
+14029	Copper Bracelet+9
+14040	Silver Bracelet+0
+14041	Silver Bracelet+1
+14042	Silver Bracelet+2
+14043	Silver Bracelet+3
+14044	Silver Bracelet+4
+14045	Silver Bracelet+5
+14046	Silver Bracelet+6
+14047	Silver Bracelet+7
+14048	Silver Bracelet+8
+14049	Silver Bracelet+9
+14060	Gold Bracelet+0
+14061	Gold Bracelet+1
+14062	Gold Bracelet+2
+14063	Gold Bracelet+3
+14064	Gold Bracelet+4
+14065	Gold Bracelet+5
+14066	Gold Bracelet+6
+14067	Gold Bracelet+7
+14068	Gold Bracelet+8
+14069	Gold Bracelet+9
+14080	Jade Bracelet+0
+14081	Jade Bracelet+1
+14082	Jade Bracelet+2
+14083	Jade Bracelet+3
+14084	Jade Bracelet+4
+14085	Jade Bracelet+5
+14086	Jade Bracelet+6
+14087	Jade Bracelet+7
+14088	Jade Bracelet+8
+14089	Jade Bracelet+9
+14100	Ebony Bracelet+0
+14101	Ebony Bracelet+1
+14102	Ebony Bracelet+2
+14103	Ebony Bracelet+3
+14104	Ebony Bracelet+4
+14105	Ebony Bracelet+5
+14106	Ebony Bracelet+6
+14107	Ebony Bracelet+7
+14108	Ebony Bracelet+8
+14109	Ebony Bracelet+9
+14120	Pearl Bracelet+0
+14121	Pearl Bracelet+1
+14122	Pearl Bracelet+2
+14123	Pearl Bracelet+3
+14124	Pearl Bracelet+4
+14125	Pearl Bracelet+5
+14126	Pearl Bracelet+6
+14127	Pearl Bracelet+7
+14128	Pearl Bracelet+8
+14129	Pearl Bracelet+9
+14140	White Gold Bracelet+0
+14141	White Gold Bracelet+1
+14142	White Gold Bracelet+2
+14143	White Gold Bracelet+3
+14144	White Gold Bracelet+4
+14145	White Gold Bracelet+5
+14146	White Gold Bracelet+6
+14147	White Gold Bracelet+7
+14148	White Gold Bracelet+8
+14149	White Gold Bracelet+9
+14160	Crystal Bracelet+0
+14161	Crystal Bracelet+1
+14162	Crystal Bracelet+2
+14163	Crystal Bracelet+3
+14164	Crystal Bracelet+4
+14165	Crystal Bracelet+5
+14166	Crystal Bracelet+6
+14167	Crystal Bracelet+7
+14168	Crystal Bracelet+8
+14169	Crystal Bracelet+9
+14180	Amethyst Bracelet+0
+14181	Amethyst Bracelet+1
+14182	Amethyst Bracelet+2
+14183	Amethyst Bracelet+3
+14184	Amethyst Bracelet+4
+14185	Amethyst Bracelet+5
+14186	Amethyst Bracelet+6
+14187	Amethyst Bracelet+7
+14188	Amethyst Bracelet+8
+14189	Amethyst Bracelet+9
+14200	Heaven's Tear Bracelet+0
+14201	Heaven's Tear Bracelet+1
+14202	Heaven's Tear Bracelet+2
+14203	Heaven's Tear Bracelet+3
+14204	Heaven's Tear Bracelet+4
+14205	Heaven's Tear Bracelet+5
+14206	Heaven's Tear Bracelet+6
+14207	Heaven's Tear Bracelet+7
+14208	Heaven's Tear Bracelet+8
+14209	Heaven's Tear Bracelet+9
+14220	Soul Crystal Bracelet+0
+14221	Soul Crystal Bracelet+1
+14222	Soul Crystal Bracelet+2
+14223	Soul Crystal Bracelet+3
+14224	Soul Crystal Bracelet+4
+14225	Soul Crystal Bracelet+5
+14226	Soul Crystal Bracelet+6
+14227	Soul Crystal Bracelet+7
+14228	Soul Crystal Bracelet+8
+14229	Soul Crystal Bracelet+9
+14500	Ruby Bracelet+0
+14501	Ruby Bracelet+1
+14502	Ruby Bracelet+2
+14503	Ruby Bracelet+3
+14504	Ruby Bracelet+4
+14505	Ruby Bracelet+5
+14506	Ruby Bracelet+6
+14507	Ruby Bracelet+7
+14508	Ruby Bracelet+8
+14509	Ruby Bracelet+9
+14520	Garnet Bracelet+0
+14521	Garnet Bracelet+1
+14522	Garnet Bracelet+2
+14523	Garnet Bracelet+3
+14524	Garnet Bracelet+4
+14525	Garnet Bracelet+5
+14526	Garnet Bracelet+6
+14527	Garnet Bracelet+7
+14528	Garnet Bracelet+8
+14529	Garnet Bracelet+9
+14540	Emerald Bracelet+0
+14541	Emerald Bracelet+1
+14542	Emerald Bracelet+2
+14543	Emerald Bracelet+3
+14544	Emerald Bracelet+4
+14545	Emerald Bracelet+5
+14546	Emerald Bracelet+6
+14547	Emerald Bracelet+7
+14548	Emerald Bracelet+8
+14549	Emerald Bracelet+9
+14560	Sapphire Bracelet+0
+14561	Sapphire Bracelet+1
+14562	Sapphire Bracelet+2
+14563	Sapphire Bracelet+3
+14564	Sapphire Bracelet+4
+14565	Sapphire Bracelet+5
+14566	Sapphire Bracelet+6
+14567	Sapphire Bracelet+7
+14568	Sapphire Bracelet+8
+14569	Sapphire Bracelet+9
+14580	Fog Jadite Bracelet+0
+14581	Fog Jadite Bracelet+1
+14582	Fog Jadite Bracelet+2
+14583	Fog Jadite Bracelet+3
+14584	Fog Jadite Bracelet+4
+14585	Fog Jadite Bracelet+5
+14586	Fog Jadite Bracelet+6
+14587	Fog Jadite Bracelet+7
+14588	Fog Jadite Bracelet+8
+14589	Fog Jadite Bracelet+9
+14590	Sun Jadite Bracelet+0
+14591	Sun Jadite Bracelet+1
+14592	Sun Jadite Bracelet+2
+14593	Sun Jadite Bracelet+3
+14594	Sun Jadite Bracelet+4
+14595	Sun Jadite Bracelet+5
+14596	Sun Jadite Bracelet+6
+14597	Sun Jadite Bracelet+7
+14598	Sun Jadite Bracelet+8
+14599	Sun Jadite Bracelet+9
+14600	Dark Jadite Bracelet+0
+14601	Dark Jadite Bracelet+1
+14602	Dark Jadite Bracelet+2
+14603	Dark Jadite Bracelet+3
+14604	Dark Jadite Bracelet+4
+14605	Dark Jadite Bracelet+5
+14606	Dark Jadite Bracelet+6
+14607	Dark Jadite Bracelet+7
+14608	Dark Jadite Bracelet+8
+14609	Dark Jadite Bracelet+9
+14610	Smoky Jadite Bracelet+0
+14611	Smoky Jadite Bracelet+1
+14612	Smoky Jadite Bracelet+2
+14613	Smoky Jadite Bracelet+3
+14614	Smoky Jadite Bracelet+4
+14615	Smoky Jadite Bracelet+5
+14616	Smoky Jadite Bracelet+6
+14617	Smoky Jadite Bracelet+7
+14618	Smoky Jadite Bracelet+8
+14619	Smoky Jadite Bracelet+9
+15000	Leather Shoes+0
+15001	Leather Shoes+1
+15002	Leather Shoes+2
+15003	Leather Shoes+3
+15004	Leather Shoes+4
+15005	Leather Shoes+5
+15006	Leather Shoes+6
+15007	Leather Shoes+7
+15008	Leather Shoes+8
+15009	Leather Shoes+9
+15020	Bamboo Skin Shoes+0
+15021	Bamboo Skin Shoes+1
+15022	Bamboo Skin Shoes+2
+15023	Bamboo Skin Shoes+3
+15024	Bamboo Skin Shoes+4
+15025	Bamboo Skin Shoes+5
+15026	Bamboo Skin Shoes+6
+15027	Bamboo Skin Shoes+7
+15028	Bamboo Skin Shoes+8
+15029	Bamboo Skin Shoes+9
+15040	Wooden Shoes+0
+15041	Wooden Shoes+1
+15042	Wooden Shoes+2
+15043	Wooden Shoes+3
+15044	Wooden Shoes+4
+15045	Wooden Shoes+5
+15046	Wooden Shoes+6
+15047	Wooden Shoes+7
+15048	Wooden Shoes+8
+15049	Wooden Shoes+9
+15060	Gold Threaded Shoes+0
+15061	Gold Threaded Shoes+1
+15062	Gold Threaded Shoes+2
+15063	Gold Threaded Shoes+3
+15064	Gold Threaded Shoes+4
+15065	Gold Threaded Shoes+5
+15066	Gold Threaded Shoes+6
+15067	Gold Threaded Shoes+7
+15068	Gold Threaded Shoes+8
+15069	Gold Threaded Shoes+9
+15080	Leather Boots+0
+15081	Leather Boots+1
+15082	Leather Boots+2
+15083	Leather Boots+3
+15084	Leather Boots+4
+15085	Leather Boots+5
+15086	Leather Boots+6
+15087	Leather Boots+7
+15088	Leather Boots+8
+15089	Leather Boots+9
+15100	Golden Shoes+0
+15101	Golden Shoes+1
+15102	Golden Shoes+2
+15103	Golden Shoes+3
+15104	Golden Shoes+4
+15105	Golden Shoes+5
+15106	Golden Shoes+6
+15107	Golden Shoes+7
+15108	Golden Shoes+8
+15109	Golden Shoes+9
+15120	Bronze Boots+0
+15121	Bronze Boots+1
+15122	Bronze Boots+2
+15123	Bronze Boots+3
+15124	Bronze Boots+4
+15125	Bronze Boots+5
+15126	Bronze Boots+6
+15127	Bronze Boots+7
+15128	Bronze Boots+8
+15129	Bronze Boots+9
+15140	Jade Shoes+0
+15141	Jade Shoes+1
+15142	Jade Shoes+2
+15143	Jade Shoes+3
+15144	Jade Shoes+4
+15145	Jade Shoes+5
+15146	Jade Shoes+6
+15147	Jade Shoes+7
+15148	Jade Shoes+8
+15149	Jade Shoes+9
+15160	Ecstasy Shoes+0
+15161	Ecstasy Shoes+1
+15162	Ecstasy Shoes+2
+15163	Ecstasy Shoes+3
+15164	Ecstasy Shoes+4
+15165	Ecstasy Shoes+5
+15166	Ecstasy Shoes+6
+15167	Ecstasy Shoes+7
+15168	Ecstasy Shoes+8
+15169	Ecstasy Shoes+9
+15180	Nimbus Boots+0
+15181	Nimbus Boots+1
+15182	Nimbus Boots+2
+15183	Nimbus Boots+3
+15184	Nimbus Boots+4
+15185	Nimbus Boots+5
+15186	Nimbus Boots+6
+15187	Nimbus Boots+7
+15188	Nimbus Boots+8
+15189	Nimbus Boots+9
+15200	Phoenix Shoes+0
+15201	Phoenix Shoes+1
+15202	Phoenix Shoes+2
+15203	Phoenix Shoes+3
+15204	Phoenix Shoes+4
+15205	Phoenix Shoes+5
+15206	Phoenix Shoes+6
+15207	Phoenix Shoes+7
+15208	Phoenix Shoes+8
+15209	Phoenix Shoes+9
+15220	Fire Bird Shoes+0
+15221	Fire Bird Shoes+1
+15222	Fire Bird Shoes+2
+15223	Fire Bird Shoes+3
+15224	Fire Bird Shoes+4
+15225	Fire Bird Shoes+5
+15226	Fire Bird Shoes+6
+15227	Fire Bird Shoes+7
+15228	Fire Bird Shoes+8
+15229	Fire Bird Shoes+9
+15240	Dragon Skin Shoes+0
+15241	Dragon Skin Shoes+1
+15242	Dragon Skin Shoes+2
+15243	Dragon Skin Shoes+3
+15244	Dragon Skin Shoes+4
+15245	Dragon Skin Shoes+5
+15246	Dragon Skin Shoes+6
+15247	Dragon Skin Shoes+7
+15248	Dragon Skin Shoes+8
+15249	Dragon Skin Shoes+9
+15370	Euphoria Shoes +0
+15371	Euphoria Shoes +1
+15372	Euphoria Shoes +2
+15373	Euphoria Shoes +3
+15374	Euphoria Shoes +4
+15375	Euphoria Shoes +5
+15376	Euphoria Shoes +6
+15377	Euphoria Shoes +7
+15378	Euphoria Shoes +8
+15379	Euphoria Shoes +9
+15390	Glory Boots +0
+15391	Glory Boots +1
+15392	Glory Boots +2
+15393	Glory Boots +3
+15394	Glory Boots +4
+15395	Glory Boots +5
+15396	Glory Boots +6
+15397	Glory Boots +7
+15398	Glory Boots +8
+15399	Glory Boots +9
+15410	Qilin Shoes +0
+15411	Qilin Shoes +1
+15412	Qilin Shoes +2
+15413	Qilin Shoes +3
+15414	Qilin Shoes +4
+15415	Qilin Shoes +5
+15416	Qilin Shoes +6
+15417	Qilin Shoes +7
+15418	Qilin Shoes +8
+15419	Qilin Shoes +9
+15430	Kingfisher Shoes +0
+15431	Kingfisher Shoes +1
+15432	Kingfisher Shoes +2
+15433	Kingfisher Shoes +3
+15434	Kingfisher Shoes +4
+15435	Kingfisher Shoes +5
+15436	Kingfisher Shoes +6
+15437	Kingfisher Shoes +7
+15438	Kingfisher Shoes +8
+15439	Kingfisher Shoes +9
+15440	Fire Shoes+0
+15441	Fire Shoes+1
+15442	Fire Shoes+2
+15443	Fire Shoes+3
+15444	Fire Shoes+4
+15445	Fire Shoes+5
+15446	Fire Shoes+6
+15447	Fire Shoes+7
+15448	Fire Shoes+8
+15449	Fire Shoes+9
+15450	Oceanic Shoes+0
+15451	Oceanic Shoes+1
+15452	Oceanic Shoes+2
+15453	Oceanic Shoes+3
+15454	Oceanic Shoes+4
+15455	Oceanic Shoes+5
+15456	Oceanic Shoes+6
+15457	Oceanic Shoes+7
+15458	Oceanic Shoes+8
+15459	Oceanic Shoes+9
+16000	Wooden Necklace+0
+16001	Wooden Necklace+1
+16002	Wooden Necklace+2
+16003	Wooden Necklace+3
+16004	Wooden Necklace+4
+16005	Wooden Necklace+5
+16006	Wooden Necklace+6
+16007	Wooden Necklace+7
+16008	Wooden Necklace+8
+16009	Wooden Necklace+9
+16020	Copper Necklace+0
+16021	Copper Necklace+1
+16022	Copper Necklace+2
+16023	Copper Necklace+3
+16024	Copper Necklace+4
+16025	Copper Necklace+5
+16026	Copper Necklace+6
+16027	Copper Necklace+7
+16028	Copper Necklace+8
+16029	Copper Necklace+9
+16040	Silver Necklace+0
+16041	Silver Necklace+1
+16042	Silver Necklace+2
+16043	Silver Necklace+3
+16044	Silver Necklace+4
+16045	Silver Necklace+5
+16046	Silver Necklace+6
+16047	Silver Necklace+7
+16048	Silver Necklace+8
+16049	Silver Necklace+9
+16060	Golden Necklace+0
+16061	Golden Necklace+1
+16062	Golden Necklace+2
+16063	Golden Necklace+3
+16064	Golden Necklace+4
+16065	Golden Necklace+5
+16066	Golden Necklace+6
+16067	Golden Necklace+7
+16068	Golden Necklace+8
+16069	Golden Necklace+9
+16080	Jade Necklace+0
+16081	Jade Necklace+1
+16082	Jade Necklace+2
+16083	Jade Necklace+3
+16084	Jade Necklace+4
+16085	Jade Necklace+5
+16086	Jade Necklace+6
+16087	Jade Necklace+7
+16088	Jade Necklace+8
+16089	Jade Necklace+9
+16100	Ebony Necklace+0
+16101	Ebony Necklace+1
+16102	Ebony Necklace+2
+16103	Ebony Necklace+3
+16104	Ebony Necklace+4
+16105	Ebony Necklace+5
+16106	Ebony Necklace+6
+16107	Ebony Necklace+7
+16108	Ebony Necklace+8
+16109	Ebony Necklace+9
+16120	Pearl Necklace+0
+16121	Pearl Necklace+1
+16122	Pearl Necklace+2
+16123	Pearl Necklace+3
+16124	Pearl Necklace+4
+16125	Pearl Necklace+5
+16126	Pearl Necklace+6
+16127	Pearl Necklace+7
+16128	Pearl Necklace+8
+16129	Pearl Necklace+9
+16140	White Gold Necklace+0
+16141	White Gold Necklace+1
+16142	White Gold Necklace+2
+16143	White Gold Necklace+3
+16144	White Gold Necklace+4
+16145	White Gold Necklace+5
+16146	White Gold Necklace+6
+16147	White Gold Necklace+7
+16148	White Gold Necklace+8
+16149	White Gold Necklace+9
+16160	Crystal Necklace+0
+16161	Crystal Necklace+1
+16162	Crystal Necklace+2
+16163	Crystal Necklace+3
+16164	Crystal Necklace+4
+16165	Crystal Necklace+5
+16166	Crystal Necklace+6
+16167	Crystal Necklace+7
+16168	Crystal Necklace+8
+16169	Crystal Necklace+9
+16180	Amethyst Necklace+0
+16181	Amethyst Necklace+1
+16182	Amethyst Necklace+2
+16183	Amethyst Necklace+3
+16184	Amethyst Necklace+4
+16185	Amethyst Necklace+5
+16186	Amethyst Necklace+6
+16187	Amethyst Necklace+7
+16188	Amethyst Necklace+8
+16189	Amethyst Necklace+9
+16200	Heaven's Tear Necklace+0
+16201	Heaven's Tear Necklace+1
+16202	Heaven's Tear Necklace+2
+16203	Heaven's Tear Necklace+3
+16204	Heaven's Tear Necklace+4
+16205	Heaven's Tear Necklace+5
+16206	Heaven's Tear Necklace+6
+16207	Heaven's Tear Necklace+7
+16208	Heaven's Tear Necklace+8
+16209	Heaven's Tear Necklace+9
+16220	Soul Crystal Necklace+0
+16221	Soul Crystal Necklace+1
+16222	Soul Crystal Necklace+2
+16223	Soul Crystal Necklace+3
+16224	Soul Crystal Necklace+4
+16225	Soul Crystal Necklace+5
+16226	Soul Crystal Necklace+6
+16227	Soul Crystal Necklace+7
+16228	Soul Crystal Necklace+8
+16229	Soul Crystal Necklace+9
+16500	Ruby Necklace+0
+16501	Ruby Necklace+1
+16502	Ruby Necklace+2
+16503	Ruby Necklace+3
+16504	Ruby Necklace+4
+16505	Ruby Necklace+5
+16506	Ruby Necklace+6
+16507	Ruby Necklace+7
+16508	Ruby Necklace+8
+16509	Ruby Necklace+9
+16520	Garnet Necklace+0
+16521	Garnet Necklace+1
+16522	Garnet Necklace+2
+16523	Garnet Necklace+3
+16524	Garnet Necklace+4
+16525	Garnet Necklace+5
+16526	Garnet Necklace+6
+16527	Garnet Necklace+7
+16528	Garnet Necklace+8
+16529	Garnet Necklace+9
+16540	Emerald Necklace+0
+16541	Emerald Necklace+1
+16542	Emerald Necklace+2
+16543	Emerald Necklace+3
+16544	Emerald Necklace+4
+16545	Emerald Necklace+5
+16546	Emerald Necklace+6
+16547	Emerald Necklace+7
+16548	Emerald Necklace+8
+16549	Emerald Necklace+9
+16560	Sapphire Necklace+0
+16561	Sapphire Necklace+1
+16562	Sapphire Necklace+2
+16563	Sapphire Necklace+3
+16564	Sapphire Necklace+4
+16565	Sapphire Necklace+5
+16566	Sapphire Necklace+6
+16567	Sapphire Necklace+7
+16568	Sapphire Necklace+8
+16569	Sapphire Necklace+9
+16580	Fog Jadite Necklace+0
+16581	Fog Jadite Necklace+1
+16582	Fog Jadite Necklace+2
+16583	Fog Jadite Necklace+3
+16584	Fog Jadite Necklace+4
+16585	Fog Jadite Necklace+5
+16586	Fog Jadite Necklace+6
+16587	Fog Jadite Necklace+7
+16588	Fog Jadite Necklace+8
+16589	Fog Jadite Necklace+9
+16590	Sun Jadite Necklace+0
+16591	Sun Jadite Necklace+1
+16592	Sun Jadite Necklace+2
+16593	Sun Jadite Necklace+3
+16594	Sun Jadite Necklace+4
+16595	Sun Jadite Necklace+5
+16596	Sun Jadite Necklace+6
+16597	Sun Jadite Necklace+7
+16598	Sun Jadite Necklace+8
+16599	Sun Jadite Necklace+9
+16600	Dark Jadite Necklace+0
+16601	Dark Jadite Necklace+1
+16602	Dark Jadite Necklace+2
+16603	Dark Jadite Necklace+3
+16604	Dark Jadite Necklace+4
+16605	Dark Jadite Necklace+5
+16606	Dark Jadite Necklace+6
+16607	Dark Jadite Necklace+7
+16608	Dark Jadite Necklace+8
+16609	Dark Jadite Necklace+9
+16610	Smoky Jadite Necklace+0
+16611	Smoky Jadite Necklace+1
+16612	Smoky Jadite Necklace+2
+16613	Smoky Jadite Necklace+3
+16614	Smoky Jadite Necklace+4
+16615	Smoky Jadite Necklace+5
+16616	Smoky Jadite Necklace+6
+16617	Smoky Jadite Necklace+7
+16618	Smoky Jadite Necklace+8
+16619	Smoky Jadite Necklace+9
+17000	Wooden Earrings+0
+17001	Wooden Earrings+1
+17002	Wooden Earrings+2
+17003	Wooden Earrings+3
+17004	Wooden Earrings+4
+17005	Wooden Earrings+5
+17006	Wooden Earrings+6
+17007	Wooden Earrings+7
+17008	Wooden Earrings+8
+17009	Wooden Earrings+9
+17020	Copper Earrings+0
+17021	Copper Earrings+1
+17022	Copper Earrings+2
+17023	Copper Earrings+3
+17024	Copper Earrings+4
+17025	Copper Earrings+5
+17026	Copper Earrings+6
+17027	Copper Earrings+7
+17028	Copper Earrings+8
+17029	Copper Earrings+9
+17040	Silver Earrings+0
+17041	Silver Earrings+1
+17042	Silver Earrings+2
+17043	Silver Earrings+3
+17044	Silver Earrings+4
+17045	Silver Earrings+5
+17046	Silver Earrings+6
+17047	Silver Earrings+7
+17048	Silver Earrings+8
+17049	Silver Earrings+9
+17060	Golden Earrings+0
+17061	Golden Earrings+1
+17062	Golden Earrings+2
+17063	Golden Earrings+3
+17064	Golden Earrings+4
+17065	Golden Earrings+5
+17066	Golden Earrings+6
+17067	Golden Earrings+7
+17068	Golden Earrings+8
+17069	Golden Earrings+9
+17080	Jade Earrings+0
+17081	Jade Earrings+1
+17082	Jade Earrings+2
+17083	Jade Earrings+3
+17084	Jade Earrings+4
+17085	Jade Earrings+5
+17086	Jade Earrings+6
+17087	Jade Earrings+7
+17088	Jade Earrings+8
+17089	Jade Earrings+9
+17100	Ebony Earrings+0
+17101	Ebony Earrings+1
+17102	Ebony Earrings+2
+17103	Ebony Earrings+3
+17104	Ebony Earrings+4
+17105	Ebony Earrings+5
+17106	Ebony Earrings+6
+17107	Ebony Earrings+7
+17108	Ebony Earrings+8
+17109	Ebony Earrings+9
+17120	Pearl Earrings+0
+17121	Pearl Earrings+1
+17122	Pearl Earrings+2
+17123	Pearl Earrings+3
+17124	Pearl Earrings+4
+17125	Pearl Earrings+5
+17126	Pearl Earrings+6
+17127	Pearl Earrings+7
+17128	Pearl Earrings+8
+17129	Pearl Earrings+9
+17140	White Gold Earrings+0
+17141	White Gold Earrings+1
+17142	White Gold Earrings+2
+17143	White Gold Earrings+3
+17144	White Gold Earrings+4
+17145	White Gold Earrings+5
+17146	White Gold Earrings+6
+17147	White Gold Earrings+7
+17148	White Gold Earrings+8
+17149	White Gold Earrings+9
+17160	Crystal Earrings+0
+17161	Crystal Earrings+1
+17162	Crystal Earrings+2
+17163	Crystal Earrings+3
+17164	Crystal Earrings+4
+17165	Crystal Earrings+5
+17166	Crystal Earrings+6
+17167	Crystal Earrings+7
+17168	Crystal Earrings+8
+17169	Crystal Earrings+9
+17180	Amethyst Earrings+0
+17181	Amethyst Earrings+1
+17182	Amethyst Earrings+2
+17183	Amethyst Earrings+3
+17184	Amethyst Earrings+4
+17185	Amethyst Earrings+5
+17186	Amethyst Earrings+6
+17187	Amethyst Earrings+7
+17188	Amethyst Earrings+8
+17189	Amethyst Earrings+9
+17200	Heaven's Tear Earrings+0
+17201	Heaven's Tear Earrings+1
+17202	Heaven's Tear Earrings+2
+17203	Heaven's Tear Earrings+3
+17204	Heaven's Tear Earrings+4
+17205	Heaven's Tear Earrings+5
+17206	Heaven's Tear Earrings+6
+17207	Heaven's Tear Earrings+7
+17208	Heaven's Tear Earrings+8
+17209	Heaven's Tear Earrings+9
+17220	Soul Crystal Earrings+0
+17221	Soul Crystal Earrings+1
+17222	Soul Crystal Earrings+2
+17223	Soul Crystal Earrings+3
+17224	Soul Crystal Earrings+4
+17225	Soul Crystal Earrings+5
+17226	Soul Crystal Earrings+6
+17227	Soul Crystal Earrings+7
+17228	Soul Crystal Earrings+8
+17229	Soul Crystal Earrings+9
+17500	Ruby Earrings+0
+17501	Ruby Earrings+1
+17502	Ruby Earrings+2
+17503	Ruby Earrings+3
+17504	Ruby Earrings+4
+17505	Ruby Earrings+5
+17506	Ruby Earrings+6
+17507	Ruby Earrings+7
+17508	Ruby Earrings+8
+17509	Ruby Earrings+9
+17520	Garnet Earrings+0
+17521	Garnet Earrings+1
+17522	Garnet Earrings+2
+17523	Garnet Earrings+3
+17524	Garnet Earrings+4
+17525	Garnet Earrings+5
+17526	Garnet Earrings+6
+17527	Garnet Earrings+7
+17528	Garnet Earrings+8
+17529	Garnet Earrings+9
+17540	Emerald Earrings+0
+17541	Emerald Earrings+1
+17542	Emerald Earrings+2
+17543	Emerald Earrings+3
+17544	Emerald Earrings+4
+17545	Emerald Earrings+5
+17546	Emerald Earrings+6
+17547	Emerald Earrings+7
+17548	Emerald Earrings+8
+17549	Emerald Earrings+9
+17560	Sapphire Earrings+0
+17561	Sapphire Earrings+1
+17562	Sapphire Earrings+2
+17563	Sapphire Earrings+3
+17564	Sapphire Earrings+4
+17565	Sapphire Earrings+5
+17566	Sapphire Earrings+6
+17567	Sapphire Earrings+7
+17568	Sapphire Earrings+8
+17569	Sapphire Earrings+9
+17570	Fog Jadite Earrings+0
+17571	Fog Jadite Earrings+1
+17572	Fog Jadite Earrings+2
+17573	Fog Jadite Earrings+3
+17574	Fog Jadite Earrings+4
+17575	Fog Jadite Earrings+5
+17576	Fog Jadite Earrings+6
+17577	Fog Jadite Earrings+7
+17578	Fog Jadite Earrings+8
+17579	Fog Jadite Earrings+9
+17580	Sun Jadite Earrings+0
+17581	Sun Jadite Earrings+1
+17582	Sun Jadite Earrings+2
+17583	Sun Jadite Earrings+3
+17584	Sun Jadite Earrings+4
+17585	Sun Jadite Earrings+5
+17586	Sun Jadite Earrings+6
+17587	Sun Jadite Earrings+7
+17588	Sun Jadite Earrings+8
+17589	Sun Jadite Earrings+9
+17590	Dark Jadite Earrings+0
+17591	Dark Jadite Earrings+1
+17592	Dark Jadite Earrings+2
+17593	Dark Jadite Earrings+3
+17594	Dark Jadite Earrings+4
+17595	Dark Jadite Earrings+5
+17596	Dark Jadite Earrings+6
+17597	Dark Jadite Earrings+7
+17598	Dark Jadite Earrings+8
+17599	Dark Jadite Earrings+9
+17600	Smoky Jadite Earrings+0
+17601	Smoky Jadite Earrings+1
+17602	Smoky Jadite Earrings+2
+17603	Smoky Jadite Earrings+3
+17604	Smoky Jadite Earrings+4
+17605	Smoky Jadite Earrings+5
+17606	Smoky Jadite Earrings+6
+17607	Smoky Jadite Earrings+7
+17608	Smoky Jadite Earrings+8
+17609	Smoky Jadite Earrings+9
+18000	Linen Belt +0
+18001	Linen Belt +1
+18002	Linen Belt +2
+18003	Linen Belt +3
+18004	Linen Belt +4
+18005	Linen Belt +5
+18006	Linen Belt +6
+18007	Linen Belt +7
+18008	Linen Belt +8
+18009	Linen Belt +9
+18010	Leather Belt +0
+18011	Leather Belt +1
+18012	Leather Belt +2
+18013	Leather Belt +3
+18014	Leather Belt +4
+18015	Leather Belt +5
+18016	Leather Belt +6
+18017	Leather Belt +7
+18018	Leather Belt +8
+18019	Leather Belt +9
+18020	Magnificent Belt +0
+18021	Magnificent Belt +1
+18022	Magnificent Belt +2
+18023	Magnificent Belt +3
+18024	Magnificent Belt +4
+18025	Magnificent Belt +5
+18026	Magnificent Belt +6
+18027	Magnificent Belt +7
+18028	Magnificent Belt +8
+18029	Magnificent Belt +9
+18030	Belt of Wisdom +0
+18031	Belt of Wisdom +1
+18032	Belt of Wisdom +2
+18033	Belt of Wisdom +3
+18034	Belt of Wisdom +4
+18035	Belt of Wisdom +5
+18036	Belt of Wisdom +6
+18037	Belt of Wisdom +7
+18038	Belt of Wisdom +8
+18039	Belt of Wisdom +9
+18040	King's Belt +0
+18041	King's Belt +1
+18042	King's Belt +2
+18043	King's Belt +3
+18044	King's Belt +4
+18045	King's Belt +5
+18046	King's Belt +6
+18047	King's Belt +7
+18048	King's Belt +8
+18049	King's Belt +9
+18050	Shadow Belt +0
+18051	Shadow Belt +1
+18052	Shadow Belt +2
+18053	Shadow Belt +3
+18054	Shadow Belt +4
+18055	Shadow Belt +5
+18056	Shadow Belt +6
+18057	Shadow Belt +7
+18058	Shadow Belt +8
+18059	Shadow Belt +9
+18060	Rune Belt +0
+18061	Rune Belt +1
+18062	Rune Belt +2
+18063	Rune Belt +3
+18064	Rune Belt +4
+18065	Rune Belt +5
+18066	Rune Belt +6
+18067	Rune Belt +7
+18068	Rune Belt +8
+18069	Rune Belt +9
+18070	Great Bear Belt +0
+18071	Great Bear Belt +1
+18072	Great Bear Belt +2
+18073	Great Bear Belt +3
+18074	Great Bear Belt +4
+18075	Great Bear Belt +5
+18076	Great Bear Belt +6
+18077	Great Bear Belt +7
+18078	Great Bear Belt +8
+18079	Great Bear Belt +9
+18080	Souls Belt +0
+18081	Souls Belt +1
+18082	Souls Belt +2
+18083	Souls Belt +3
+18084	Souls Belt +4
+18085	Souls Belt +5
+18086	Souls Belt +6
+18087	Souls Belt +7
+18088	Souls Belt +8
+18089	Souls Belt +9
+18900	Red Flame Stone
+19290	Zodiac Armour+0
+19291	Zodiac Armour+1
+19292	Zodiac Armour+2
+19293	Zodiac Armour+3
+19294	Zodiac Armour+4
+19295	Zodiac Armour+5
+19296	Zodiac Armour+6
+19297	Zodiac Armour+7
+19298	Zodiac Armour+8
+19299	Zodiac Armour+9
+19490	Zodiac Suit+0
+19491	Zodiac Suit+1
+19492	Zodiac Suit+2
+19493	Zodiac Suit+3
+19494	Zodiac Suit+4
+19495	Zodiac Suit+5
+19496	Zodiac Suit+6
+19497	Zodiac Suit+7
+19498	Zodiac Suit+8
+19499	Zodiac Suit+9
+19690	Zodiac Plate Armour+0
+19691	Zodiac Plate Armour+1
+19692	Zodiac Plate Armour+2
+19693	Zodiac Plate Armour+3
+19694	Zodiac Plate Armour+4
+19695	Zodiac Plate Armour+5
+19696	Zodiac Plate Armour+6
+19697	Zodiac Plate Armour+7
+19698	Zodiac Plate Armour+8
+19699	Zodiac Plate Armour+9
+19890	Zodiac Clothing+0
+19891	Zodiac Clothing+1
+19892	Zodiac Clothing+2
+19893	Zodiac Clothing+3
+19894	Zodiac Clothing+4
+19895	Zodiac Clothing+5
+19896	Zodiac Clothing+6
+19897	Zodiac Clothing+7
+19898	Zodiac Clothing+8
+19899	Zodiac Clothing+9
+20000	Devil's Horn Armour+0
+20001	Devil's Horn Armour+1
+20002	Devil's Horn Armour+2
+20003	Devil's Horn Armour+3
+20004	Devil's Horn Armour+4
+20005	Devil's Horn Armour+5
+20006	Devil's Horn Armour+6
+20007	Devil's Horn Armour+7
+20008	Devil's Horn Armour+8
+20009	Devil's Horn Armour+9
+20250	Dragon Rider Suit+0
+20251	Dragon Rider Suit+1
+20252	Dragon Rider Suit+2
+20253	Dragon Rider Suit+3
+20254	Dragon Rider Suit+4
+20255	Dragon Rider Suit+5
+20256	Dragon Rider Suit+6
+20257	Dragon Rider Suit+7
+20258	Dragon Rider Suit+8
+20259	Dragon Rider Suit+9
+20500	Bone Plated Armour+0
+20501	Bone Plated Armour+1
+20502	Bone Plated Armour+2
+20503	Bone Plated Armour+3
+20504	Bone Plated Armour+4
+20505	Bone Plated Armour+5
+20506	Bone Plated Armour+6
+20507	Bone Plated Armour+7
+20508	Bone Plated Armour+8
+20509	Bone Plated Armour+9
+20750	Golden Clothing+0
+20751	Golden Clothing+1
+20752	Golden Clothing+2
+20753	Golden Clothing+3
+20754	Golden Clothing+4
+20755	Golden Clothing+5
+20756	Golden Clothing+6
+20757	Golden Clothing+7
+20758	Golden Clothing+8
+20759	Golden Clothing+9
+20760	Aurora Armour+0
+20761	Aurora Armour+1
+20762	Aurora Armour+2
+20763	Aurora Armour+3
+20764	Aurora Armour+4
+20765	Aurora Armour+5
+20766	Aurora Armour+6
+20767	Aurora Armour+7
+20768	Aurora Armour+8
+20769	Aurora Armour+9
+20770	Ambush Suit+0
+20771	Ambush Suit+1
+20772	Ambush Suit+2
+20773	Ambush Suit+3
+20774	Ambush Suit+4
+20775	Ambush Suit+5
+20776	Ambush Suit+6
+20777	Ambush Suit+7
+20778	Ambush Suit+8
+20779	Ambush Suit+9
+20780	Devil Claw Armour+0
+20781	Devil Claw Armour+1
+20782	Devil Claw Armour+2
+20783	Devil Claw Armour+3
+20784	Devil Claw Armour+4
+20785	Devil Claw Armour+5
+20786	Devil Claw Armour+6
+20787	Devil Claw Armour+7
+20788	Devil Claw Armour+8
+20789	Devil Claw Armour+9
+20790	Clothing of Faith+0
+20791	Clothing of Faith+1
+20792	Clothing of Faith+2
+20793	Clothing of Faith+3
+20794	Clothing of Faith+4
+20795	Clothing of Faith+5
+20796	Clothing of Faith+6
+20797	Clothing of Faith+7
+20798	Clothing of Faith+8
+20799	Clothing of Faith+9
+20810	Magma Glow Armour+0
+20811	Magma Glow Armour+1
+20812	Magma Glow Armour+2
+20813	Magma Glow Armour+3
+20814	Magma Glow Armour+4
+20815	Magma Glow Armour+5
+20816	Magma Glow Armour+6
+20817	Magma Glow Armour+7
+20818	Magma Glow Armour+8
+20819	Magma Glow Armour+9
+20820	Blood Moon Suit+0
+20821	Blood Moon Suit+1
+20822	Blood Moon Suit+2
+20823	Blood Moon Suit+3
+20824	Blood Moon Suit+4
+20825	Blood Moon Suit+5
+20826	Blood Moon Suit+6
+20827	Blood Moon Suit+7
+20828	Blood Moon Suit+8
+20829	Blood Moon Suit+9
+20830	Hellrider Armour+0
+20831	Hellrider Armour+1
+20832	Hellrider Armour+2
+20833	Hellrider Armour+3
+20834	Hellrider Armour+4
+20835	Hellrider Armour+5
+20836	Hellrider Armour+6
+20837	Hellrider Armour+7
+20838	Hellrider Armour+8
+20839	Hellrider Armour+9
+20840	Fire Clothing+0
+20841	Fire Clothing+1
+20842	Fire Clothing+2
+20843	Fire Clothing+3
+20844	Fire Clothing+4
+20845	Fire Clothing+5
+20846	Fire Clothing+6
+20847	Fire Clothing+7
+20848	Fire Clothing+8
+20849	Fire Clothing+9
+20860	Whalebone Armour+0
+20861	Whalebone Armour+1
+20862	Whalebone Armour+2
+20863	Whalebone Armour+3
+20864	Whalebone Armour+4
+20865	Whalebone Armour+5
+20866	Whalebone Armour+6
+20867	Whalebone Armour+7
+20868	Whalebone Armour+8
+20869	Whalebone Armour+9
+20870	Metamorphosis Suit+0
+20871	Metamorphosis Suit+1
+20872	Metamorphosis Suit+2
+20873	Metamorphosis Suit+3
+20874	Metamorphosis Suit+4
+20875	Metamorphosis Suit+5
+20876	Metamorphosis Suit+6
+20877	Metamorphosis Suit+7
+20878	Metamorphosis Suit+8
+20879	Metamorphosis Suit+9
+20880	Ghost Lantern Armour+0
+20881	Ghost Lantern Armour+1
+20882	Ghost Lantern Armour+2
+20883	Ghost Lantern Armour+3
+20884	Ghost Lantern Armour+4
+20885	Ghost Lantern Armour+5
+20886	Ghost Lantern Armour+6
+20887	Ghost Lantern Armour+7
+20888	Ghost Lantern Armour+8
+20889	Ghost Lantern Armour+9
+20890	Clothing of Harmony+0
+20891	Clothing of Harmony+1
+20892	Clothing of Harmony+2
+20893	Clothing of Harmony+3
+20894	Clothing of Harmony+4
+20895	Clothing of Harmony+5
+20896	Clothing of Harmony+6
+20897	Clothing of Harmony+7
+20898	Clothing of Harmony+8
+20899	Clothing of Harmony+9
+20910	Fallout Armour+0
+20911	Fallout Armour+1
+20912	Fallout Armour+2
+20913	Fallout Armour+3
+20914	Fallout Armour+4
+20915	Fallout Armour+5
+20916	Fallout Armour+6
+20917	Fallout Armour+7
+20918	Fallout Armour+8
+20919	Fallout Armour+9
+20920	Night of Death Suit+0
+20921	Night of Death Suit+1
+20922	Night of Death Suit+2
+20923	Night of Death Suit+3
+20924	Night of Death Suit+4
+20925	Night of Death Suit+5
+20926	Night of Death Suit+6
+20927	Night of Death Suit+7
+20928	Night of Death Suit+8
+20929	Night of Death Suit+9
+20930	Black Fire Armour+0
+20931	Black Fire Armour+1
+20932	Black Fire Armour+2
+20933	Black Fire Armour+3
+20934	Black Fire Armour+4
+20935	Black Fire Armour+5
+20936	Black Fire Armour+6
+20937	Black Fire Armour+7
+20938	Black Fire Armour+8
+20939	Black Fire Armour+9
+20940	Moon Clothing+0
+20941	Moon Clothing+1
+20942	Moon Clothing+2
+20943	Moon Clothing+3
+20944	Moon Clothing+4
+20945	Moon Clothing+5
+20946	Moon Clothing+6
+20947	Moon Clothing+7
+20948	Moon Clothing+8
+20949	Moon Clothing+9
+21210	Gloom Dragon Armour+0
+21211	Gloom Dragon Armour+1
+21212	Gloom Dragon Armour+2
+21213	Gloom Dragon Armour+3
+21214	Gloom Dragon Armour+4
+21215	Gloom Dragon Armour+5
+21216	Gloom Dragon Armour+6
+21217	Gloom Dragon Armour+7
+21218	Gloom Dragon Armour+8
+21219	Gloom Dragon Armour+9
+21220	Gloom Dragon Armour+10
+21221	Gloom Dragon Armour+11
+21222	Gloom Dragon Armour+12
+21223	Gloom Dragon Armour+13
+21224	Gloom Dragon Armour+14
+21225	Gloom Dragon Armour+15
+21230	Tempest Dragon Armour+0
+21231	Tempest Dragon Armour+1
+21232	Tempest Dragon Armour+2
+21233	Tempest Dragon Armour+3
+21234	Tempest Dragon Armour+4
+21235	Tempest Dragon Armour+5
+21236	Tempest Dragon Armour+6
+21237	Tempest Dragon Armour+7
+21238	Tempest Dragon Armour+8
+21239	Tempest Dragon Armour+9
+21240	Tempest Dragon Armour+10
+21241	Tempest Dragon Armour+11
+21242	Tempest Dragon Armour+12
+21243	Tempest Dragon Armour+13
+21244	Tempest Dragon Armour+14
+21245	Tempest Dragon Armour+15
+21250	Hex Dragon Armour+0
+21251	Hex Dragon Armour+1
+21252	Hex Dragon Armour+2
+21253	Hex Dragon Armour+3
+21254	Hex Dragon Armour+4
+21255	Hex Dragon Armour+5
+21256	Hex Dragon Armour+6
+21257	Hex Dragon Armour+7
+21258	Hex Dragon Armour+8
+21259	Hex Dragon Armour+9
+21260	Hex Dragon Armour+10
+21261	Hex Dragon Armour+11
+21262	Hex Dragon Armour+12
+21263	Hex Dragon Armour+13
+21264	Hex Dragon Armour+14
+21265	Hex Dragon Armour+15
+21270	Exalted Dragon Armour+0
+21271	Exalted Dragon Armour+1
+21272	Exalted Dragon Armour+2
+21273	Exalted Dragon Armour+3
+21274	Exalted Dragon Armour+4
+21275	Exalted Dragon Armour+5
+21276	Exalted Dragon Armour+6
+21277	Exalted Dragon Armour+7
+21278	Exalted Dragon Armour+8
+21279	Exalted Dragon Armour+9
+21280	Exalted Dragon Armour+10
+21281	Exalted Dragon Armour+11
+21282	Exalted Dragon Armour+12
+21283	Exalted Dragon Armour+13
+21284	Exalted Dragon Armour+14
+21285	Exalted Dragon Armour+15
+21310	Serpent Jacket+0
+21311	Serpent Jacket+1
+21312	Serpent Jacket+2
+21313	Serpent Jacket+3
+21314	Serpent Jacket+4
+21315	Serpent Jacket+5
+21316	Serpent Jacket+6
+21317	Serpent Jacket+7
+21318	Serpent Jacket+8
+21319	Serpent Jacket+9
+21320	Serpent Jacket+10
+21321	Serpent Jacket+11
+21322	Serpent Jacket+12
+21323	Serpent Jacket+13
+21324	Serpent Jacket+14
+21325	Serpent Jacket+15
+21326	Serpent Jacket (craft)
+21330	Serpent Waistcoat+0
+21331	Serpent Waistcoat+1
+21332	Serpent Waistcoat+2
+21333	Serpent Waistcoat+3
+21334	Serpent Waistcoat+4
+21335	Serpent Waistcoat+5
+21336	Serpent Waistcoat+6
+21337	Serpent Waistcoat+7
+21338	Serpent Waistcoat+8
+21339	Serpent Waistcoat+9
+21340	Serpent Waistcoat+10
+21341	Serpent Waistcoat+11
+21342	Serpent Waistcoat+12
+21343	Serpent Waistcoat+13
+21344	Serpent Waistcoat+14
+21345	Serpent Waistcoat+15
+21346	Serpent Waistcoat(craft)
+21350	Evil Serpent Jacket+0
+21351	Evil Serpent Jacket+1
+21352	Evil Serpent Jacket+2
+21353	Evil Serpent Jacket+3
+21354	Evil Serpent Jacket+4
+21355	Evil Serpent Jacket+5
+21356	Evil Serpent Jacket+6
+21357	Evil Serpent Jacket+7
+21358	Evil Serpent Jacket+8
+21359	Evil Serpent Jacket+9
+21360	Evil Serpent Jacket+10
+21361	Evil Serpent Jacket+11
+21362	Evil Serpent Jacket+12
+21363	Evil Serpent Jacket+13
+21364	Evil Serpent Jacket+14
+21365	Evil Serpent Jacket+15
+21366	E Serpent Jacket (craft)
+21370	Pure Serpent Jacket+0
+21371	Pure Serpent Jacket+1
+21372	Pure Serpent Jacket+2
+21373	Pure Serpent Jacket+3
+21374	Pure Serpent Jacket+4
+21375	Pure Serpent Jacket+5
+21376	Pure Serpent Jacket+6
+21377	Pure Serpent Jacket+7
+21378	Pure Serpent Jacket+8
+21379	Pure Serpent Jacket+9
+21380	Pure Serpent Jacket+10
+21381	Pure Serpent Jacket+11
+21382	Pure Serpent Jacket+12
+21383	Pure Serpent Jacket+13
+21384	Pure Serpent Jacket+14
+21385	Pure Serpent Jacket+15
+21386	P Serpent Jacket (craft)
+22000	Town Scroll
+22001	Back to town
+22010	Scroll of the Location
+22011	Scroll of the Location
+22020	Paper
+22030	Teleport Scroll
+22040	Life Scroll
+22050	Incarnation Scroll
+25040	Blessing Scroll
+25041	Magic Stone
+25100	Spirit Stone Scroll
+27001	Red Potion (S)
+27002	Red Potion (M)
+27003	Red Potion (L)
+27004	Blue Potion (S)
+27005	Blue Potion (M)
+27006	Blue Potion (L)
+27051	Red Potion (S)
+27052	Blue Potion (S)
+27053	Green Potion (S)
+27054	Purple Potion (S)
+27100	Green Potion (S)
+27101	Green Potion (M)
+27102	Green Potion (L)
+27103	Purple Potion (S)
+27104	Purple Potion (M)
+27105	Purple Potion (L)
+27110	Green Potion (S)
+27111	Green Potion (M)
+27112	Green Potion (L)
+27113	Purple Potion (S)
+27114	Purple Potion (M)
+27115	Purple Potion (L)
+27116	Pink Potion (S)
+27117	Pink Potion (M)
+27118	Pink Potion (L)
+27119	Sky Blue Potion (S)
+27120	Sky Blue Potion (M)
+27121	Sky Blue Potion (L)
+27400	Fishing Pole+1
+27410	Fishing Pole+2
+27420	Fishing Pole+3
+27430	Fishing Pole+4
+27440	Fishing Pole+5
+27450	Fishing Pole+6
+27460	Fishing Pole+7
+27470	Fishing Pole+8
+27480	Fishing Pole+9
+27490	Fishing Pole+10
+27500	Fishing Pole+11
+27510	Fishing Pole+12
+27520	Fishing Pole+13
+27530	Fishing Pole+14
+27540	Fishing Pole+15
+27550	Fishing Pole+16
+27560	Fishing Pole+17
+27570	Fishing Pole+18
+27580	Fishing Pole+19
+27590	Fishing Pole+20
+27600	Bonfire
+27610	Fishing Marble
+27620	Fishing Book
+27799	Fishbones
+27800	Paste
+27801	Worm
+27802	Minnow
+27803	Zander
+27804	Mandarin Fish
+27805	Large Zander
+27806	Carp
+27807	Salmon
+27808	Grass Carp
+27809	Brook Trout
+27810	Eel
+27811	Rainbow Trout
+27812	River Trout
+27813	Rudd
+27814	Perch
+27815	Tenchi
+27816	Catfish
+27817	Loach
+27818	Lotus Fish
+27819	Sweetfish
+27820	Smelt
+27821	Shiri
+27822	Mirror Carp
+27823	Goldfish
+27833	Dead Zander
+27834	Dead Mandarin Fish
+27835	Dead Large Zander
+27836	Dead Carp
+27837	Dead Salmon
+27838	Dead Grass Carp
+27839	Dead Brook Trout
+27840	Dead Eel
+27841	Dead Rainbow Trout
+27842	Dead River Trout
+27843	Dead Rudd
+27844	Dead Perch
+27845	Dead Tenchi
+27846	Dead Catfish
+27847	Dead Loach
+27848	Dead Lotus Fish
+27849	Dead Sweetfish
+27850	Dead Smelt
+27851	Dead Shiri
+27852	Dead Mirror Carp
+27853	Dead Goldfish
+27863	Grilled Zander
+27864	Grilled Mandarin Fish
+27865	Grilled Large Zander
+27866	Grilled Carp
+27867	Grilled Salmon
+27868	Grilled Grass Carp
+27869	Grilled Brook Trout
+27870	Grilled Eel
+27871	Grilled Rainbow Trout
+27872	Grilled River Trout
+27873	Grilled Rudd
+27874	Grilled Perch
+27875	Grilled Tenchi
+27876	Grilled Catfish
+27877	Grilled Loach
+27878	Grilled Lotus Fish
+27879	Grilled Sweetfish
+27880	Grilled Smelt
+27881	Grilled Shiri
+27882	Grilled Mirror Carp
+27883	Grilled Goldfish
+27987	Clam
+27988	Treasure Map
+27989	Compass for Metin Stones
+27990	Piece of Stone
+27991	Water Stone
+27992	White Pearl
+27993	Blue Pearl
+27994	Blood-Red Pearl
+27995	Empty Bottle
+27996	Poison Bottle
+27997	Vitality Marble
+27998	Alchemy Pouch
+27999	Spirit Stone Pouch
+28030	Stone of Penetration+0
+28031	Stone of Deathblow+0
+28032	Stone of Cooldown+0
+28033	Stone against Warriors+0
+28034	Stone against Ninjas+0
+28035	Stone against Suras+0
+28036	Stone against Shamans+0
+28037	Stone of Monsters+0
+28038	Stone of Evasion+0
+28039	Stone of Ducking+0
+28040	Stone of Magic+0
+28041	Stone of Vitality+0
+28042	Stone of Defence+0
+28043	Stone of Haste+0
+28130	Stone of Penetration+1
+28131	Stone of Deathblow+1
+28132	Stone of Cooldown+1
+28133	Stone against Warriors+1
+28134	Stone against Ninjas+1
+28135	Stone against Suras+1
+28136	Stone against Shamans+1
+28137	Stone of Monsters+1
+28138	Stone of Evasion+1
+28139	Stone of Ducking+1
+28140	Stone of Magic+1
+28141	Stone of Vitality+1
+28142	Stone of Defence+1
+28143	Stone of Haste+1
+28230	Stone of Penetration+2
+28231	Stone of Deathblow+2
+28232	Stone of Cooldown+2
+28233	Stone against Warriors+2
+28234	Stone against Ninjas+2
+28235	Stone against Suras+2
+28236	Stone against Shamans+2
+28237	Stone of Monsters+2
+28238	Stone of Evasion+2
+28239	Stone of Ducking+2
+28240	Stone of Magic+2
+28241	Stone of Vitality+2
+28242	Stone of Defence+2
+28243	Stone of Haste+2
+28330	Stone of Penetration+3
+28331	Stone of Deathblow+3
+28332	Stone of Cooldown+3
+28333	Stone against Warriors+3
+28334	Stone against Ninjas+3
+28335	Stone against Suras+3
+28336	Stone against Shamans+3
+28337	Stone of Monsters+3
+28338	Stone of Evasion+3
+28339	Stone of Ducking+3
+28340	Stone of Magic+3
+28341	Stone of Vitality+3
+28342	Stone of Defence+3
+28343	Stone of Haste+3
+28430	Stone of Penetration+4
+28431	Stone of Deathblow+4
+28432	Stone of Cooldown+4
+28433	Stone against Warriors+4
+28434	Stone against Ninjas+4
+28435	Stone against Suras+4
+28436	Stone against Shamans+4
+28437	Stone of Monsters+4
+28438	Stone of Evasion+4
+28439	Stone of Ducking+4
+28440	Stone of Magic+4
+28441	Stone of Vitality+4
+28442	Stone of Defence+4
+28443	Stone of Haste+4
+28960	Piece of Broken Stone
+29101	Pickaxe+0
+29102	Pickaxe+1
+29103	Pickaxe+2
+29104	Pickaxe+3
+29105	Pickaxe+4
+29106	Pickaxe+5
+29107	Pickaxe+6
+29108	Pickaxe+7
+29109	Pickaxe+8
+29110	Pickaxe+9
+30000	Barley
+30001	Letter
+30002	Fried Sausage
+30003	Pig Nose
+30004	Wild Boar Tooth
+30005	Piece of Broken Armour
+30006	Orc Tooth
+30007	Orc Amulet
+30008	Esoteric Primer
+30009	Unknown Medicine
+30010	Bear Gall
+30011	Ball
+30012	Wine Bottle
+30013	Liquor Jug
+30014	Yeti Fur
+30015	Demon's Keepsake
+30016	Demon's Gem
+30017	Ornamental Hairpin
+30018	Red Hairband
+30019	Flaming Mane
+30020	Peach Seed
+30021	Piece of Gem
+30022	Snake Tail
+30023	White Tiger Hide
+30024	Horsetail
+30025	Spider's Poison Sack
+30026	Wolf Intestine
+30027	Wolf Fur
+30028	Wolf Claw
+30029	Wolf Liver
+30030	Rusty Blade
+30031	Ornament
+30032	Black Uniform
+30033	Broken Porcelain
+30034	White Hairband
+30035	Face Cream
+30036	Mystic Herb
+30037	Tiger Claw
+30038	Tiger Hide
+30039	Piece of Fabric
+30040	Leaf
+30041	Shiriken
+30042	Tiger Fang
+30043	Bean
+30044	Clay
+30045	Scorpion Needle
+30046	Scorpion Tail
+30047	Curse Book
+30048	Piece of Ice
+30049	Ice Killer Whale Horn
+30050	Ice Marble
+30051	Unknown Talisman
+30052	Flag
+30053	Bear Foot Skin
+30054	Wedding Ring
+30055	Scorpion Claw
+30056	Spider Web
+30057	Spider Eyes
+30058	Spider Egg Sack
+30059	Spider Legs
+30060	Frog Tongue
+30061	Frog's Legs
+30062	Medicine Bowl
+30063	Skin Medicine
+30064	Sharp Stone
+30065	Bell
+30066	Hot Pepper
+30067	Snakeskin
+30068	Tofu Steak
+30069	Wolf Claw+
+30070	Wolf Fur+
+30071	Bear Gall+
+30072	Bear Foot Skin+
+30073	White Hairband+
+30074	Black Uniform+
+30075	Shiriken+
+30076	Orc Amulet+
+30077	Orc Tooth+
+30078	Esoteric Primer+
+30079	Unknown Talisman+
+30080	Curse Book+
+30081	Scorpion Tail+
+30082	Snake Tail+
+30083	Unknown Medicine+
+30084	Unknown Talisman+
+30085	Piece of Fabric+
+30086	Demon's Keepsake+
+30087	Demon's Gem+
+30088	Piece of Ice+
+30089	Yeti Fur+
+30090	Ice Marble+
+30091	Warrior's Symbol
+30092	Savage's Booty
+30093	Lucky Pouch
+30094	Lucky Pouch
+30095	Lucky Pouch
+30096	Lucky Pouch
+30097	Lucky Wallet
+30098	Lucky Pouch
+30099	Lucky Pouch
+30100	Lucky Pouch
+30101	Ariyoung's Wedding Ring
+30102	Golden Axe
+30103	Golden Orc Tooth
+30104	Desert Spider Web
+30105	Scorpion Tail
+30106	Medicine for Yu-Rang
+30107	Orc Fang
+30108	Ceramic Enamel
+30109	Desert Spider Web
+30110	Letter from Huahn-So
+30111	Stinger Scorpion Tail
+30112	Eel
+30113	Esoteric Scripture
+30114	Plague
+30115	Plague Cure
+30116	Frog's Legs
+30117	Letter
+30118	Demon's Jewellery Box
+30119	Bell
+30120	Piece of a Map
+30121	Piece of a Map
+30122	Piece of a Map
+30123	Piece of a Map
+30124	Piece of a Map
+30125	Piece of a Map
+30126	Piece of a Map
+30127	Piece of a Map
+30128	Piece of a Map
+30129	Order of the Rider
+30130	Empty Bottle
+30131	Letter from Blacksmith
+30132	Uriel's Book
+30133	Flower Shoes
+30134	Uriel's Package
+30135	Letter from Ariyoung
+30136	Lavishly Decorated Bow
+30137	Monkey blood
+30138	Desert sand
+30139	Orc Molar
+30140	Thread
+30141	Piece of Jewellery
+30142	Letter
+30143	Medicinal Herbs
+30144	Tiger Liver
+30145	Balso's Medicine
+30146	Chunk of Ice
+30147	Temple Doctrine
+30148	Temple Scarf
+30149	Ice Cream with Syrup
+30150	Diary Page
+30151	Wolf Pelt
+30152	Medicine
+30153	Flowers
+30154	Secret Temple Book
+30155	Mirine's Pendant
+30156	Secret Temple Book
+30157	Arrowhead
+30158	Rice Cake
+30159	Clothes
+30160	Notice
+30161	Husband's Spear
+30162	Eye of a Spider
+30163	Cotten Wool
+30164	Translation of Cursebook
+30165	Zelkova Branch
+30166	Tugyi's Tablet
+30167	Red Ghost Tree Branch
+30168	Leaders' Notes
+30169	Bloodred Flower
+30170	Orange-Coloured Flower
+30171	Fragrant Yellow Flower
+30172	Noble Bunch of Flowers
+30173	Mu-Rang Fur
+30174	Bear Paw
+30175	Diamond-core Whale Spear
+30176	Shimmering Tiger Fur
+30177	Musk Oil
+30178	Glyph Stone
+30179	Twisted Key
+30180	Dragon God Amulet
+30181	Page
+30182	Legendary Diary
+30183	Sombre Wooden Mask
+30184	Bewitched Ashes
+30185	Black Ice
+30186	Fossilised Tear
+30187	Drop of Blood
+30188	Obsidian
+30189	Baljit-Elvedin's Tears
+30190	Blood Stone
+30191	Blood Stone
+30192	Plant Sap
+30193	Finger Bones
+30194	Orc Club
+30195	Quartz Sand
+30196	Demon's Ashes
+30197	Magic Seeds
+30198	Water Crystal
+30199	Blue Crystal
+30201	Vengeance Ring
+30202	Tanaka's Ear
+30203	Crystal
+30204	Piece of Crystal
+30205	Crafting Material
+30210	Piece of Gemstone
+30211	Piece of Gemstone
+30212	Piece of Gemstone
+30213	Piece of Gemstone
+30214	Piece of Gemstone
+30215	Piece of Gemstone
+30216	Piece of Gemstone
+30217	Piece of Gemstone
+30218	Piece of Gemstone
+30219	Piece of Gemstone
+30220	Jinunggyi's Soul Stone
+30221	Temple Soul Stone
+30222	Sagyi's Soul Stone
+30223	Aurtumryu's Soul Stone
+30224	Gyimok's Soul Stone
+30225	Tugyi's Soul Stone
+30226	Forest Spirit Soul Stone
+30227	Leaders' Soul Stone
+30228	Beran-Setaou Soul Stone
+30251	Malevolence Jewel
+30252	Wisdom Jewel
+30253	Loyalty Jewel
+30254	Emerald Fragment
+30265	Medal Piece (1)
+30266	Medal Piece (2)
+30267	Medal Piece (3)
+30268	Medal Piece (4)
+30269	Medal Piece (5)
+30270	Dragon Stone Shard
+30300	Unknown Old Chest
+30301	Sa-Gui Tower Map
+30302	Zin-Sa-Gui Tower Map
+30303	Bong-In Key
+30304	Zin-Bong-In Key
+30311	Soul Crystal Key
+30312	Grimace Totem
+30315	Bread
+30316	Donation Plate
+30317	Food Donation
+30318	Blessing Fruit
+30319	Shrunken Head
+30320	Shrunken Head
+30321	Halloween Pumpkin
+30322	Magic Wand
+30323	Jack O'Lantern Mask Card
+30324	Arachnids Key
+30325	Arachnids Key
+30326	Spider Queen's Poison
+30327	Arachnids Whistle
+30329	Golden Cog Wheel
+30330	Maat Stone
+30331	Frost Key
+30332	North Star
+30333	Frostflower Key
+30500	Ruby Engraving Knife
+30501	Gold Clasp
+30502	Ruby Decoration
+30503	Amethyst Engraving Knife
+30504	Silver Clasp
+30505	Emerald Decoration
+30506	Sapphire Engraving Knife
+30507	Bronze Clasp
+30508	Sapphire Decoration
+30509	Blue Dragon Steel
+30510	Grand Epaulette
+30511	Red Fabric
+30512	Red Dragon Steel
+30513	Noble Epaulette
+30514	Violet Fabric
+30515	Purple Dragon Steel
+30516	Antique Epaulette
+30517	Golden Fabric
+30518	Gold Yarn
+30519	Golden Hook
+30520	Gold Buckle
+30521	Ring Element
+30522	Chain Link
+30523	Jewellery Element
+30524	Flame Stone
+30525	Ice Flame Stone
+30526	Gold-Doppelring
+30527	Silber-Doppelring
+30528	Bronze-Doppelring
+30529	Holz-Doppelring
+30530	Blauer Doppelring
+30531	Grüner Doppelring
+30532	Roter Doppelring
+30533	Purpur Doppelring
+30534	Verarbeiteter Goldring
+30535	Verarbeiteter Silberring
+30536	Verarbeiteter Bronzering
+30537	Verarbeiteter Holzring
+30538	Siehe Kommentar
+30539	Siehe Kommentar
+30540	Siehe Kommentar
+30541	Siehe Kommentar
+30542	Einfacher Silberring
+30543	Einfacher Bronzering
+30544	Einfacher Holzring
+30545	Einfacher Saphirring
+30546	Einfacher Smaragdring
+30547	Einfacher Rubinring
+30548	Einfacher Gürtel (gelb)
+30549	Einfacher Gürtel (braun)
+30550	Blue Belt
+30551	Einfacher Gürtel (schw.)
+30552	Einfacher Gürtel (lila)
+30553	Einfacher Gürtel (grün)
+30554	Glänzender Sand (orange)
+30555	Glänzender Sand(schwarz)
+30556	Glänzender Sand (blau)
+30557	Glänzender Sand (grün)
+30558	Leuchtendrotes Garn
+30559	Glänzender Sand (purpur)
+30560	Siehe Kommentar
+30561	Siehe Kommentar
+30562	Siehe Kommentar
+30563	Siehe Kommentar
+30564	Siehe Kommentar
+30565	Siehe Kommentar
+30566	Siehe Kommentar
+30567	Siehe Kommentar
+30568	Siehe Kommentar
+30569	Siehe Kommentar
+30570	Siehe Kommentar
+30571	Siehe Kommentar
+30572	Siehe Kommentar
+30573	Siehe Kommentar
+30574	Siehe Kommentar
+30575	Siehe Kommentar
+30576	Siehe Kommentar
+30577	Siehe Kommentar
+30578	Siehe Kommentar
+30579	Siehe Kommentar
+30580	Glatter Silberschmuck
+30581	Glatter Bronzeschmuck
+30582	Glatter Holzschmuck
+30583	Glatter Schmuck (blau)
+30584	Glatter Schmuck (grün)
+30585	Glatter Schmuck (rot)
+30586	Glatter Schmuck(purpur)
+30600	Sewing Pattern
+30601	Armour Design
+30602	Blue Dye
+30603	Red Dye
+30604	Grey Dye
+30605	Gold Sheets
+30606	Silver Sheets
+30607	Copper Sheets
+30608	Steel Sheets
+30609	Bronze Sheets
+30610	Mithril
+30611	Tough Straps
+30612	Sturdy Cords
+30613	Stone of the Dryads
+30614	Black Dye
+30615	White Dye
+30616	Titanium Dioxide
+30617	Agate
+30618	Moonstone
+30619	Metallic Gold Dye
+30620	Red Dragon Horn
+30621	Red Dragon Scale
+30622	Armour Design: Helm
+30623	Book of Truth
+30624	Soul of Truth
+30625	Padparadscha
+30626	Kyanite
+30627	Fruit of the Gods
+30628	Divine Bloom
+30629	Elixir of the Gods
+31001	Copy of the Inscription
+31002	Old Document
+31003	Antidote
+31004	Hallowed Tree Gum
+31005	Blue Crystal Essence
+31006	Red Hell Quartz
+31007	Volcanic Earth
+31008	Heaven's Teardrop
+31009	Gnoll Letter
+31010	Red Thief Letter
+31011	Letzter Roter Briefteil
+31012	Mantikor-Brief
+31013	Slip of Paper
+31014	Yak-Hwans Brief
+31015	Captain Hooks' Letter
+31016	Lee Chung's Letter
+31017	Sealed Letter
+31018	Carapax Script
+31019	Carapax Powder
+31020	Rock Flower Root
+31021	Tritonen-Tonplatte
+31022	Oin Scale
+31023	Scharfer Pfeil
+31024	Manticore Leather
+31025	Tritonen-Flossen
+31026	Crustacean Armour
+31027	Fine Sand
+31028	Clay Brick
+31029	Inner Light
+31030	Inner Light
+31031	Millennium Essence
+31032	Leviathan Pearls
+31033	Chief's Cape
+31034	Giants' Totem
+31035	Black Stone
+31036	Black Gold
+31037	Leather Bag
+31038	Holy Ground
+31039	Coin Bag
+31040	Golden Medal
+31041	Fossil Earth
+31042	Triton Spear
+31043	Lemures Tablet
+31044	Gnoll-Pfeffer
+31045	Gnoll-Chillipulver
+31046	Carapax-Zangenfuß
+31047	Siehe Kommentar
+31048	Goldbeutel des Bettlers
+31049	Fleisch-Bündel
+31050	Medizin-Beutel
+31051	Eisen
+31052	Seelgeistessig
+31053	Gnoll-Fellknäuel
+31054	Mantikor-Fellleder
+31055	Unbekannte Kräuter
+31056	Zyklopen-Fingernagel
+31057	Giganten-Horn
+31058	Oger-Huf
+31059	Seelenstein der Untoten
+31060	Tritonen-Räuchermittel
+31061	Zelkoven-Ast
+31062	Hochwertiges Eisen
+31063	Reisbällchen
+31064	Bewusstseinskräuter
+31065	Mantikor-Talg
+31066	Kräuter des neuen Lebens
+31067	Siehe Kommentar
+31068	Drachen-Gebeine
+31069	Zelkoven-Flüssigkeit
+31070	Dömonenhund-Halskette
+31071	Unbekannte Namensplatte
+31072	Teuefelsort
+31073	Gold Hunter's Band
+31074	Riveted Necklace
+31075	Barb Necklace
+31076	Sun Herbs
+31077	Foundation Stone Powder
+31078	Pure Lumen
+31079	Letter to Yak-Hwan
+31080	Flame King Blood
+31081	Black Matter
+31082	Magma Ring
+31083	Ring of Samael
+31084	Nimbus Tincture
+31085	Schweres Wasser
+31086	Mushroom Spores
+31087	Feuergeist-Flamme
+31088	Feuertrank
+31089	Magischer Eisblock
+31090	Nemeres Herz
+31091	Blut des Flammenkönigs
+31092	Kältemonster-Hautfetzen
+31136	Chaos Stone (regular)
+31137	Chaos Stone (intermediate)
+31138	Chaos Stone (epic)
+35000	Medicinal Herbs+
+35001	Tiger Liver+
+38050	Power Chest
+38051	Royal Tiger Crystal
+38052	The Chest of Kings
+38053	Eternal Winter Chest
+38054	Desert Storm Chest
+38055	Whelp Box
+38056	Holiday Chest
+38057	Chest of the North
+38100	Power Snack (7 days)
+38101	Power Snack (15 days)
+38102	Power Snack (30 days)
+39001	Magic Stone
+39002	Experience Ring (1h)
+39003	Peach Flower Wine
+39004	Blessing Marble
+39005	Magic Copper Ore
+39006	Bravery Cape
+39007	Blacksmith Handbook
+39008	Exorcism Scroll
+39009	Skill Reset Document
+39010	Potion of Attack+10
+39011	Blessing of Life
+39012	Blessing of Magic
+39013	Blessing of the Dragon
+39014	Scroll of War
+39015	Stone of the Blacksmith
+39016	Magic Iron Ore
+39017	Dragon God Life
+39018	Dragon God Attack
+39019	Dragon God Intelligence
+39020	Dragon God Defence
+39021	Dragon God Support
+39022	Dragon Scroll
+39023	Researcher's Elixir
+39024	Critical Strike
+39025	Piercing Strike
+39026	Potion of Speed
+39027	Stone Handbook
+39028	Enchant Item
+39029	Reinforce Item
+39030	Concentrated Reading
+39031	Potion of Haste
+39032	Fruit of Life
+39033	Scroll of Correction
+39034	Horse Sugar
+39035	Glass of Insight
+39036	Wind Shoes
+39037	Sun Elixir (S)
+39038	Sun Elixir (M)
+39039	Sun Elixir (L)
+39040	Moon Elixir (S)
+39041	Moon Elixir (M)
+39042	Moon Elixir (L)
+39043	Scroll of the Location
+39120	Title Amulet
+39121	Title Amulet
+39122	Title Amulet
+39123	Title Amulet
+39124	Title Amulet
+39125	Title Amulet
+39126	Title Amulet
+39127	Title Amulet
+39128	Title Amulet
+39129	Title Amulet
+39130	Title Amulet
+39131	Title Amulet
+39132	Title Amulet
+39133	Title Amulet
+39134	Title Amulet
+39135	Title Amulet
+39136	Title Amulet
+39137	Title Amulet
+39138	Title Amulet
+39139	Title Amulet
+40001	Unknown Gold Ring
+40002	Levi's Ring
+40003	Thor's Ring
+40004	Eek's Ring
+40005	Sounding Bell
+40006	Savage Delivery Receipt
+40007	Letter from Savage Boss
+40008	Full Moon Sword (S)
+40009	Triton Sword (S)
+40010	Poison Sword (S)
+40011	Lion Sword (S)
+40012	Edge Blade (S)
+40013	Holy Sword (S)
+40014	Red Iron Blade (S)
+40015	Grudge Sword (S)
+40016	Hornbow (S)
+40017	Crow Steel Bow (S)
+40018	Giant Devil Bow (S)
+40019	Antique Bell (S)
+40020	Bamboo Bell (S)
+40021	Dragon Jaw Bell (S)
+40022	Black Leaf Dirk (S)
+40023	Devil Wing Chakram (S)
+40024	Soulless Knife (S)
+40025	Autumn Wind Fan (S)
+40026	Demon Fan (S)
+40027	Yellow Dragon Slayer (S)
+40101	Riptooth Blade
+40102	Riptooth Dagger
+40103	Riptooth Bow
+40104	Riptooth Glaive
+40105	Riptooth Bell
+40106	Riptooth Fan
+40115	Candy Cane Blade
+40116	Candy Cane Dagger
+40117	Elven Bow
+40118	Gingerbread Glaive
+40119	Candy Cane Bell
+40120	Frosty Fan
+40129	Aquarian Blade
+40130	Aquarian Dagger
+40131	Aquarian Bow
+40132	Aquarian Glaive
+40133	Aquarian Bell
+40134	Aquarian Fan
+40143	Dokkaebi Sword
+40144	Dokkaebi Dagger
+40145	Dokkaebi Bow
+40146	Dokkaebi Glaive
+40147	Dokkaebi Bell
+40148	Dokkaebi Fan
+40178	Ancestral Sword
+40179	Ancestral Dagger
+40180	Ancestral Bow
+40181	Ancestral Greatsword
+40182	Ancestral Bell
+40183	Ancestral Fan
+41001	Rabbit Costume (brown)
+41002	Bunny Costume (brown)
+41003	Desert Warrior (M)
+41004	Desert Warrior (F)
+41005	Musketeer Costume
+41006	Maid Uniform
+41007	Salsa Suit
+41008	Salsa Dress
+41009	Gentleman's Suit
+41010	Cocktail Dress
+41011	Pumpkin Tuxedo
+41012	Pumpkin Dress
+41013	Christmas Costume (red)
+41014	Christmas Dress (red)
+41015	Christmas Costume(green)
+41016	Christmas Dress (green)
+41017	Christmas Costume(black)
+41018	Christmas Dress (black)
+41019	Reindeer Costume (m)
+41020	Reindeer Costume (f)
+41021	Rabbit Costume (black)
+41022	Rabbit Costume (blue)
+41023	Rabbit Costume (green)
+41024	Rabbit Costume (pink)
+41025	Bunny Costume (black)
+41026	Bunny Costume (blue)
+41027	Bunny Costume (green)
+41028	Bunny Costume (pink)
+41029	Cobra Outfit (m)
+41030	Cobra Outfit (f)
+41031	Desert Warrior (M, blk)
+41032	Desert Warrior (F, blk)
+41033	Azrael's Armour (m)
+41034	Azrael's Armour (f)
+41035	Pumpkin Jack Suit (m)
+41036	Pumpkin Jack Dress (f)
+41037	Crescent Warrior
+41038	Crescent Warrioress
+41039	Phoenix Robe
+41040	Cobra Robe
+41041	Dragon Cheongsam (Red)
+41042	Dragon Cheongsam (White)
+41043	Zombie Suit
+41044	Zombie Dress
+41045	Warlock's Suit
+41046	Witch's Dress
+41047	Santa Frosty Costume
+41048	Snowman Costume
+41049	Christmas Dress (White)
+41050	Christmas Dress (Red)
+41051	Pharaoh Costume (Red)
+41052	Pharaoh Costume (Blue)
+41053	Angel Uriel (White)
+41054	Angel Uriel (Red)
+41055	Desert Prince (Brown)
+41056	Desert Prince (White)
+41057	Desert Princess (Brown)
+41058	Desert Princess (White)
+41059	Bunny Costume (Grey)
+41060	Bunny Costume (Brown)
+41061	Easter Dress (Gaudy)
+41062	Easter Dress (L. Blue)
+41063	Fanged Costume
+41064	Fanged Costume
+41065	Fanged Costume
+41066	Fanged Costume
+41067	Red Winter Robe
+41068	Blue Winter Robe
+41069	Red Winter Dress
+41070	Blue Winter Dress
+41071	Desert Prince (Red)
+41072	Desert Prince (Blue)
+41073	Desert Princess (Red)
+41074	Desert Princess (Blue)
+41075	Bunny Costume (White)
+41076	Bunny Costume (Rose)
+41077	Bunny Costume (N. Blue)
+41078	Bunny Costume (Magenta)
+41079	Blood Vampire (Grey)
+41080	Blood Vampire (Red)
+41081	Blood Lamia (Grey)
+41082	Blood Lamia (Red)
+41083	Red Festive Robe (m)
+41084	Green Festive Robe (m)
+41085	Red Festive Robe (f)
+41086	Green Festive Robe (f)
+41087	Golden O-Yoroi (m)
+41088	Silver O-Yoroi (m)
+41089	Golden O-Yoroi (f)
+41090	Silver O-Yoroi (f)
+41091	Samurai Armour (Blue)
+41092	Samurai Armour (Red)
+41093	Samurai Armour (Blue)
+41094	Samurai Armour (Red)
+41095	Harness of Horror (Gold)
+41096	Harness of Horror (Blue)
+41097	Harness of Horror (Gold)
+41098	Harness of Horror (Blue)
+41099	Steampunk Gear (Black)
+41100	Steampunk Gear (Red)
+41101	Steampunk Dress (Black)
+41102	Steampunk Dress (Red)
+41103	Sungura Outfit (Blue)
+41104	Sungura Outfit (Teal)
+41105	Sungura Dress (Blue)
+41106	Sungura Dress (Grey)
+41107	Avalon Armour (Silver)
+41108	Avalon Armour (Red)
+41109	Avalon Armour (Silver)
+41110	Avalon Armour (Red)
+41111	Brown Wolf Costume (m)
+41112	Grey Wolf Costume (m)
+41113	Brown Wolf Costume (f)
+41114	Grey Wolf Costume (f)
+41115	Aeolus Armour (m)
+41116	Astraeus Armour (m)
+41117	Aeolus Armour (f)
+41118	Astraeus Armour (f)
+41119	Fire Dragon Guard
+41120	Ice Dragon Guard
+41121	Fire Dragon Guard
+41122	Ice Dragon Guard
+41123	Firefighter Uniform (m)
+41124	Firefighter Uniform (m)
+41125	Firefighter Uniform (f)
+41126	Firefighter Uniform (f)
+41127	Oriental Prince (Brown)
+41128	Oriental Prince (Black)
+41129	Oriental Princess (Br.)
+41130	Oriental Princess (Bl.)
+41131	Dark Seer's Robe (m)
+41132	Light Seer's Robe (m)
+41133	Dark Seer's Robe (f)
+41134	Light Seer's Robe (f)
+41135	Penumbral Armour (m)
+41136	Silverstar Armour (m)
+41137	Penumbral Armour (f)
+41138	Silverstar Armour (f)
+41139	Red Azrael Armour (m)
+41140	White Azrael Armour (m)
+41141	Red Azrael Armour (f)
+41142	White Azrael Armour (f)
+41143	Black Claw Armour (m)
+41144	Silver Claw Armour (m)
+41145	Black Claw Armour (f)
+41146	Silver Claw Armour (f)
+41147	Jinn Outfit (m)
+41148	Sultan Outfit (m)
+41149	Jiniri Outfit (f)
+41150	Sultana Outfit (f)
+41151	Pirate (m)
+41152	Buccaneer (m)
+41153	Pirate (f)
+41154	Buccaneer (f)
+41155	Netherworld Armour (m)
+41156	Otherworld Armour (m)
+41157	Netherworld Armour (f)
+41158	Otherworld Armour (f)
+41159	Red Christmas Jumper (m)
+41160	G. Christmas Jumper (m)
+41161	Red Christmas Jumper (f)
+41162	G. Christmas Jumper (f)
+41163	R Wonderland Rabbit (m)
+41164	B Wonderland Rabbit (m)
+41165	R Wonderland Rabbit (f)
+41166	B Wonderland Rabbit (f)
+41167	Red Pharaoh Robe (m)
+41168	Green Pharaoh Robe (m)
+41169	Red Pharaoh Robe (f)
+41170	Green Pharaoh Robe (f)
+41171	White Navy Uniform (m)
+41172	Blue Navy Uniform (m)
+41173	White Navy Uniform (f)
+41174	Blue Navy Uniform (f)
+41175	Bk Dokkaebi Robe (m)
+41176	Bl Dokkaebi Robe (m)
+41177	Bk Dokkaebi Robe (f)
+41178	Bl Dokkaebi Robe (f)
+41179	Warm Snowcoat (m)
+41180	Luxurious Snowcoat (m)
+41181	Warm Snowcoat (f)
+41182	Luxurious Snowcoat (f)
+45001	Bunny Ears (brown)
+45002	Rabbit Ears (brown)
+45003	Headdress (m)
+45004	Headdress (f)
+45005	LotoShosi (m)
+45006	LotoShosi (f)
+45007	Mohican (m)
+45008	Tight braids (f)
+45009	Dreadlocks (m)
+45010	Dreadlocks (f)
+45011	Musketeer Hairstyle
+45012	Maid Bonnet
+45013	Mini Mohawk
+45014	Salsa Bun
+45015	Bogart Fedora
+45016	Flower Hairstyle
+45017	Pumpkin Mask
+45018	Pumpkin Mask
+45019	Christmas Hat (red)
+45020	Christmas Hat (green)
+45021	Christmas Hat (black)
+45022	Elf Hat
+45023	Reindeer Head (m)
+45024	Reindeer Head (f)
+45025	Bandana (white)
+45026	Bandana (white)
+45027	Bandana (black)
+45028	Bandana (black)
+45029	Bandana (yellow)
+45030	Bandana (yellow)
+45031	Bandana (orange)
+45032	Bandana (orange)
+45033	Bandana (blue)
+45034	Bandana (blue)
+45035	Rabbit Ears (black)
+45036	Rabbit Ears (blue)
+45037	Rabbit Ears (green)
+45038	Rabbit Ears (pink)
+45039	Bunny Ears (black)
+45040	Bunny Ears (blue)
+45041	Bunny Ears (green)
+45042	Bunny Ears (pink)
+45043	Cobra Hairstyle (m)
+45044	Cobra Hairstyle (f)
+45045	Tengu Mask
+45046	Venetian Mask
+45047	Kifwebe Mask
+45048	Maya Mask
+45049	Black Turban (m)
+45050	Black Turban (f)
+45051	Azrael's Helmet (m)
+45052	Azrael's Helmet (f)
+45053	Pumpkin Jack Head (m)
+45054	Pumpkin Jack Head (f)
+45055	Crescent Hairstyle (m)
+45056	Crescent Hairstyle (f)
+45057	Snow Rabbit Hat
+45058	Polar Bear Hat
+45059	Snow Leopard Hat
+45060	Zombie Pumpkin Mask
+45061	Witch's Hat
+45062	Snowman Mask
+45063	Santa Frosty Mask
+45064	Bobble Hat (White)
+45065	Bobble Hat (Red)
+45066	Feather Headdress (Red)
+45067	Feather Headdress (Blue)
+45068	Phoenix Tiara (White)
+45069	Phoenix Tiara (Red)
+45070	Bunny Ears (Grey)
+45071	Bunny Ears (Brown)
+45072	Easter Headdress (Gaudy)
+45073	Easter Headdress (Blue)
+45074	Brown Turban
+45075	White Turban
+45076	Brown Headscarf
+45077	White Headscarf
+45078	Fanged Helmet
+45079	Fanged Helmet
+45080	Fanged Helmet
+45081	Fanged Helmet
+45082	Red Santa Hat
+45083	Blue Santa Hat
+45084	Red Santa Hood
+45085	Blue Santa Hood
+45086	Bunny Ears (White)
+45087	Bunny Ears (Rose)
+45088	Bunny Ears (Navy Blue)
+45089	Bunny Ears (Magenta)
+45090	Blue Turban
+45091	Red Turban
+45092	Brown Headscarf
+45093	Green Headscarf
+45094	Blood Vampire Helm (Gr.)
+45095	Blood Vampire Helm (Red)
+45096	Blood Lamia Helm (Grey)
+45097	Blood Lamia Helm (Red)
+45098	Christmas Hood (Red)
+45099	Christmas Hood (Green)
+45100	Christmas Beret (Red)
+45101	Christmas Beret (Green)
+45102	Golden Kabuto (m)
+45103	Silver Kabuto (m)
+45104	Golden Kabuto (f)
+45105	Silver Kabuto (f)
+45106	Samurai Bun (Gold)
+45107	Samurai Bun (Silver)
+45108	Samurai Bun (Gold)
+45109	Samurai Bun (Silver)
+45110	Horns of Horror (Gold)
+45111	Horns of Horror (Blue)
+45112	Horns of Horror (Gold)
+45113	Horns of Horror (Blue)
+45114	Steampunk Hat (Black)
+45115	Steampunk Hat (Red)
+45116	Steampunk Hat (Black)
+45117	Steampunk Hat (Red)
+45118	Feathered Hat (Blue)
+45119	Feathered Hat (Grey)
+45120	Sungura Cloche (Blue)
+45121	Sungura Cloche (Grey)
+45122	Zodiac Crown
+45123	Zodiac Crown
+45124	Avalon Helmet (Silver)
+45125	Avalon Helmet (Red)
+45126	Avalon Helmet (Silver)
+45127	Avalon Helmet (Red)
+45128	Bear Hat (m)
+45129	Tiger Hat (m)
+45130	Bear Hat (f)
+45131	Tiger Hat (f)
+45132	Brown Wolf Hat (m)
+45133	Grey Wolf Hat (m)
+45134	Brown Wolf Hat (f)
+45135	Grey Wolf Hat (f)
+45136	Aeolus Helmet (m)
+45137	Astraeus Helmet (m)
+45138	Aeolus Helmet (f)
+45139	Astraeus Helmet (f)
+45140	Fire Dragon Guard Helm
+45141	Ice Dragon Guard Helm
+45142	Fire Dragon Guard Helm
+45143	Ice Dragon Guard Helm
+45144	Firefighter Helmet (m)
+45145	Firefighter Helmet (m)
+45146	Firefighter Helmet (f)
+45147	Firefighter Helmet (f)
+45148	Dark Seer's Hood (m)
+45149	Light Seer's Hood (m)
+45150	Amethyst Seer's Eye (f)
+45151	Emerald Seer's Eye (f)
+45152	Penumbral Helmet (m)
+45153	Silverstar Helmet (m)
+45154	Penumbral Helmet (f)
+45155	Silverstar Helmet (f)
+45156	RX: Dragon Helmet (m)
+45157	RX: Dragon Helmet (f)
+45158	Red Shemagh (m)
+45159	Blue Shemagh (m)
+45160	Red Shemagh (f)
+45161	Blue Shemagh (f)
+45162	Red Azrael Helmet (m)
+45163	White Azrael Helmet (m)
+45164	Red Azrael Helmet (f)
+45165	White Azrael Helmet (f)
+45166	Black Claw Helmet (m)
+45167	Silver Claw Helmet (m)
+45168	Black Claw Helmet (f)
+45169	Silver Claw Helmet (f)
+45170	Jinn Turban (m)
+45171	Sultan Turban (m)
+45172	Jiniri Tiara (f)
+45173	Sultana Tiara (f)
+45174	Pirate Tricorne (m)
+45175	Buccaneer Tricorne (m)
+45176	Pirate Tricorne (f)
+45177	Buccaneer Tricorne (f)
+45178	Face Mask (m)
+45179	Face Mask (f)
+45180	Netherworld Hair (m)
+45181	Otherworld Hair (m)
+45182	Netherworld Hair (f)
+45183	Otherworld Hair (f)
+45184	Red Christmas Hat (m)
+45185	G. Christmas Hat (m)
+45186	Red Christmas Hat (f)
+45187	G. Christmas Hat (f)
+45188	R Rabbit Top Hat (m)
+45189	B Rabbit Top Hat (m)
+45190	R Rabbit Top Hat (f)
+45191	B Rabbit Top Hat (f)
+45192	R Pharaoh Headdress (m)
+45193	G Pharaoh Headdress (m)
+45194	R Pharaoh Headdress (f)
+45195	G Pharaoh Headdress (f)
+45196	Serpent Helmet (m)
+45197	Serpent Helmet (f)
+45198	White Navy Hat (m)
+45199	Blue Navy Hat (m)
+45200	White Navy Hat (f)
+45201	Blue Navy Hat (f)
+45202	Bk Dokkaebi Horns (m)
+45203	Bl Dokkaebi Horns (m)
+45204	Bk Dokkaebi Horns (f)
+45205	Bl Dokkaebi Horns (f)
+45206	Warm Snowcap (m)
+45207	Luxurious Snowcap (m)
+45208	Warm Snowcap (f)
+45209	Luxurious Snowcap (f)
+49001	Ordinary Aura Outfit
+49002	Simple Aura Outfit
+49003	Noble Aura Outfit
+49004	Sparkling Aura Outfit
+49005	Magnificent Aura Outfit
+49006	Radiant Aura Outfit
+49011	Ordinary Aura Outfit (purple)
+49012	Simple Aura Outfit (purple)
+49013	Noble Aura Outfit (purple)
+49014	Sparkling Aura Outfit (purple)
+49015	Magnificent Aura Outfit (purple)
+49016	Radiant Aura Outfit (purple)
+49021	Ordinary Aura Outfit (black)
+49022	Simple Aura Outfit (black)
+49023	Noble Aura Outfit (black)
+49024	Sparkling Aura Outfit (black)
+49025	Magnificent Aura Outfit (black)
+49026	Radiant Aura Outfit (black)
+49031	Ordinary Aura Outfit (green)
+49032	Simple Aura Outfit (green)
+49033	Noble Aura Outfit (green)
+49034	Sparkling Aura Outfit (green)
+49035	Magnificent Aura Outfit (green)
+49036	Radiant Aura Outfit (green)
+49980	Aura Scroll
+49981	Crystallized stone (emerald)
+49982	Crystallized stone
+49983	Crystallized stone (garnet)
+49984	Crystallized stone (sapphire)
+49990	Aura Ice Rune
+49991	Aura Fire Rune (10)
+49992	Aura Fire Rune (50)
+49993	Aura Fire Rune (100)
+49994	Aura Fire Rune (250)
+49995	Aura Fire Rune (500)
+50001	Lucky Book
+50002	Gold Ring
+50003	Skill Reset Document
+50004	Event Detector
+50005	Horse Riding Ticket
+50006	Gold Treasure Chest
+50007	Silver Treasure Chest
+50008	Gold Key
+50009	Silver Key
+50010	Stocking
+50011	Moonlight Treasure Chest
+50012	Gold Treasure Chest+
+50013	Silver Treasure Chest+
+50014	Gold Key+
+50015	Silver Key+
+50016	Bean Paste
+50017	Sugar Paste
+50018	Fruit Paste
+50019	Sweet Rice
+50020	Bean Cake
+50021	Sugar Cake
+50022	Fruit Cake
+50023	Money Pouch
+50024	Rose
+50025	Chocolate
+50026	Coins
+50027	Lottery Ticket
+50028	24k Gold Ring
+50029	18k Gold Ring
+50030	14k Gold Ring
+50031	Rose
+50032	Candy
+50033	Mysterious Chest
+50034	Puzzle Box
+50035	Gift (yellow)
+50036	Gift (violet)
+50037	Hexagonal Treasure Chest
+50038	Bronze Certificate
+50039	Silver Certificate
+50040	Golden Certificate
+50041	Gift Parcel
+50042	Golden Medal of Heros
+50050	Horse Medal
+50051	Horse Picture
+50052	Armed Horse Book
+50053	Military Horse Book
+50054	Hay
+50055	Carrot
+50056	Red Ginseng
+50057	Herb of Easy Monkeys
+50058	Herb of Normal Monkeys
+50059	Herb of Hard Monkeys
+50060	Horse Riding Manual
+50061	Horse Taming Manual
+50062	Riding Manual
+50067	Scroll of Evolution
+50068	Scroll of Mutation
+50070	Chief Orc's Box
+50071	Esoteric Leader's Box
+50072	Ghost Leader's Box
+50073	Queen Spider Box
+50074	Giant Spider Box
+50075	Giant Plague Carrier Box
+50076	Desert Tortoise Chest
+50077	Nine Tails' Chest
+50078	Yellow Tiger's Chest
+50079	Flame King's Chest
+50080	Red Dragon's Chest
+50081	Demon King's Chest
+50082	Grim Reaper's Chest
+50083	Riding Permit
+50084	Key Stone
+50085	Seed
+50086	Moon Cake
+50087	Mung Bean Rice Cake
+50088	Mugwort Rice Cake
+50089	Key Stone
+50090	Box of Fox nine o' Tails
+50091	Goldfish Sushi
+50092	Carp Sushi
+50093	Salmon Sushi
+50094	Catfish Sushi
+50095	Pumpkin
+50096	Football
+50100	Fire Crackers
+50101	Fire Crackers
+50102	Fire Crackers
+50103	Fire Crackers
+50104	Fire Crackers
+50105	Fire Crackers
+50106	Christmas Fire Cracker
+50107	Chinese Fire Cracker
+50108	Fireworks Top
+50109	Red Ebony Box
+50110	Pomp Ebony Box
+50111	Yellow Ebony Box
+50112	Lightgreen Ebony Box
+50113	Green Ebony Box
+50114	Blue Ebony Box
+50115	Crimson Ebony Box
+50116	Weapon Exchange Token
+50117	Jewellery Box
+50118	Drachen-Schatztruhe
+50119	Metinstein-Beutel
+50120	Iron Casket
+50121	Iron Box
+50122	Iron Chest
+50123	Ice Cream
+50124	Rotten Wooden Box
+50125	Mysterious Chest
+50126	Mysterious Chest
+50127	Mysterious Emerald Box
+50128	Mysterious Sapphire Box
+50129	Mysterious Amethyst Box
+50130	Competition Chest
+50131	Mysterious Citrine Box
+50132	Mysterious Ruby Box
+50133	Mysterious Emerald Box
+50134	Mysterious Sapphire Box
+50135	Mysterious Amethyst Box
+50136	Mysterious Topaz Box
+50137	Mysterious Citrine Box
+50150	Ruby Key
+50151	Emerald Key
+50152	Sapphire Key
+50153	Amethyst Key
+50154	Topaz Key
+50155	Citrine Key
+50156	Diamond Key
+50160	Easter Egg
+50161	Easter Egg
+50162	Easter Egg
+50163	Easter Egg
+50164	Easter Egg
+50165	Easter Egg
+50166	Easter Egg
+50167	Easter Egg
+50168	Easter Egg
+50169	Easter Egg
+50170	Easter Egg
+50171	Easter Egg
+50172	Easter Egg
+50173	Easter Egg
+50174	Easter Egg
+50175	Easter Egg
+50176	Easter Egg
+50177	Easter Egg
+50178	Easter Egg
+50179	Easter Egg
+50180	Empty Basket
+50181	Basket with Easter Eggs
+50182	Blessing Chest
+50183	Sweets
+50184	Siehe Kommentar
+50185	Siehe Kommentar
+50186	Azrael's Chest
+50187	Apprentice Chest I
+50188	Apprentice Chest II
+50189	Apprentice Chest III
+50190	Expert Chest I
+50191	Expert Chest II
+50192	Expert Chest III
+50193	Master Chest I
+50194	Master Chest II
+50195	Master Chest III
+50196	Grand Master Chest
+50197	Unbekannter Beutel
+50198	Unbekannter Beutel
+50199	Unbekannter Beutel
+50200	Bundle
+50201	Bouquet
+50202	Bouquet
+50215	Halloween Chest
+50216	Mulled Wine
+50249	Chest of Triumph
+50253	Purpurne Blattgold-Kiste
+50254	Chest of Darkness
+50300	Skill Book
+50301	Sun Zi Art of War
+50302	Wu zi Art of War
+50303	WeiLiao Zi Art of War
+50304	Combo Mastery
+50305	Combo Master Book
+50306	Art of Combo
+50307	Mission Book (Easy)
+50308	Mission Book (Normal)
+50309	Mission Book (Hard)
+50310	Mission Book (Expert)
+50311	Shinsoo Linguistics
+50312	Chunjo Linguistics
+50313	Jinno Linguistics
+50314	Polymorph Book
+50315	Advanced Polymorph Book
+50316	Master Polymorph Book
+50317	Mission Book (Test)
+50318	Mission Book (Easy)
+50319	Mission Book (Normal)
+50320	Mission Book (Hard)
+50321	Mission Book (Expert)
+50322	Transformation Role
+50401	Three-Way Cut Manual
+50402	Sword Spin Manual
+50403	Berserk Manual
+50404	Aura of the Sword Manual
+50405	Dash Manual
+50416	Strike Manual
+50417	Bash Manual
+50418	Pounding Manual
+50419	Strong Body Manual
+50420	Sword Strike Manual
+50431	Ambush Manual
+50432	Fast Attack Manual
+50433	Rolling Dagger Manual
+50434	Disguise Manual
+50435	Poisonous Cloud Manual
+50446	Repetitive Shot Manual
+50447	Arrow Shower Manual
+50448	Fire Arrow Manual
+50449	Feather Walk Manual
+50450	Poison Arrow Manual
+50461	Finger Strike Manual
+50462	Dragon Swirl Manual
+50463	Enchanted Blade Manual
+50464	Fear Manual
+50465	Enchanted Armour Manual
+50466	Dispel Manual
+50476	Dark Strike Manual
+50477	Flame Strike Manual
+50478	Flame Spirit Manual
+50479	Dark Protection Manual
+50480	Spirit Strike Manual
+50481	Dark Orb Manual
+50491	Flying Talisman Manual
+50492	Shooting Dragon Manual
+50493	Dragon's Roar Manual
+50494	Blessing Manual
+50495	Reflect Manual
+50496	Dragon's Aid Manual
+50506	Lightning Throw Manual
+50507	Summon Lightning Manual
+50508	Lightning Claw Manual
+50509	Cure Manual
+50510	Swiftness Manual
+50511	Attack Manual
+50512	Rainbow Stone
+50513	Soul Stone
+50600	Mining Guide
+50601	Diamond Stone
+50602	Amber Stone
+50603	Fossil Trunk
+50604	Copper Ore
+50605	Silver Ore
+50606	Gold Ore
+50607	Jade Ore
+50608	Ebony Ore
+50609	Piece of Pearl
+50610	White Gold Ore
+50611	Crystal Ore
+50612	Amethyst Ore
+50613	Heaven's Tear Ore
+50614	Soul Crystal Ore
+50615	Ruby Ore
+50616	Garnet Ore
+50617	Emerald Ore
+50618	Sapphire Ore
+50621	Diamond
+50622	Amber
+50623	Fossil Wood
+50624	Copper
+50625	Silver
+50626	Gold
+50627	Jade
+50628	Ebony
+50629	Pearl
+50630	White Gold
+50631	Crystal
+50632	Amethyst
+50633	Heaven's Tear
+50634	Soul Crystal
+50635	Ruby
+50636	Garnet
+50637	Emerald
+50638	Sapphire
+50701	Peach Blossom
+50702	Bellflower
+50703	Kaki Blossom
+50704	Gango Root
+50705	Lilac
+50706	Tue Fungus
+50707	Alpine Rose
+50708	Mulberry
+50709	Dandelion
+50710	Thistle
+50711	Date
+50712	Sam-Zi Plant
+50721	Peach Blossom
+50722	Bellflower
+50723	Kaki Blossom
+50724	Gango Root
+50725	Lilac
+50726	Tue Fungus
+50727	Alpine Rose
+50728	Mulberry
+50729	Dandelion
+50730	Thistle
+50731	Date
+50732	Sam-Zi Plant
+50801	Peach Blossom Juice
+50802	Bellflower Juice
+50803	Kaki Blossom Juice
+50804	Gango Root Juice
+50805	Lilac Juice
+50806	Tue Fungal Resin
+50807	Alpine Rose Juice
+50808	Mulberry Juice
+50809	Dandelion Juice
+50810	Thistle Juice
+50811	Date Extract
+50812	Juice of Sam-Zi Plant
+50813	Sim Water
+50814	Dok Water
+50815	Bo Water
+50816	Young Water
+50817	Zin Water
+50818	SamBo Water
+50819	Mong Water
+50820	Hwal Water
+50821	Red Dew
+50822	Orange Dew
+50823	Yellow Dew
+50824	Green Dew
+50825	Blue Dew
+50826	White Dew
+50827	Red Dew +
+50828	Pink Dew +
+50829	Yellow Dew +
+50830	Green Dew +
+50831	Blue Dew +
+50832	White Dew +
+50901	Empty Bottle
+50902	Recipe for Beginners
+50903	Recipe
+50904	Expert's Recipe
+50905	Recipe for Sim Water
+50906	Recipe for Dok Water
+50907	Recipe for Bo Water
+50908	Recipe for Young Water
+50909	Recipe for Zin Water
+50910	Recipe for Hwal Water
+51001	Energy Fragment
+51002	Energy Crystal
+52001	Young Wild Boar
+52002	Young Wild Boar
+52003	Young Wild Boar
+52004	Young Wild Boar
+52005	Young Wild Boar
+52006	Wild Boar
+52007	Wild Boar
+52008	Wild Boar
+52009	Wild Boar
+52010	Wild Boar
+52011	Valiant Wild Boar
+52012	Valiant Wild Boar
+52013	Valiant Wild Boar
+52014	Valiant Wild Boar
+52015	Valiant Wild Boar
+52016	Young Wolf
+52017	Young Wolf
+52018	Young Wolf
+52019	Young Wolf
+52020	Young Wolf
+52021	Wild Wolf
+52022	Wild Wolf
+52023	Wild Wolf
+52024	Wild Wolf
+52025	Wild Wolf
+52026	Valiant Wolf
+52027	Valiant Wolf
+52028	Valiant Wolf
+52029	Valiant Wolf
+52030	Valiant Wolf
+52031	Young Lion
+52032	Young Lion
+52033	Young Lion
+52034	Young Lion
+52035	Young Lion
+52036	Wild Lion
+52037	Wild Lion
+52038	Wild Lion
+52039	Wild Lion
+52040	Wild Lion
+52041	Valiant Lion
+52042	Valiant Lion
+52043	Valiant Lion
+52044	Valiant Lion
+52045	Valiant Lion
+52046	Young Tiger
+52047	Young Tiger
+52048	Young Tiger
+52049	Young Tiger
+52050	Young Tiger
+52051	Wild Tiger
+52052	Wild Tiger
+52053	Wild Tiger
+52054	Wild Tiger
+52055	Wild Tiger
+52056	Valiant Tiger
+52057	Valiant Tiger
+52058	Valiant Tiger
+52059	Valiant Tiger
+52060	Valiant Tiger
+52061	Young Reindeer
+52062	Young Reindeer
+52063	Young Reindeer
+52064	Young Reindeer
+52065	Young Reindeer
+52066	Wild Reindeer
+52067	Wild Reindeer
+52068	Wild Reindeer
+52069	Wild Reindeer
+52070	Wild Reindeer
+52071	Valiant Reindeer
+52072	Valiant Reindeer
+52073	Valiant Reindeer
+52074	Valiant Reindeer
+52075	Valiant Reindeer
+52076	Young Reindeer
+52077	Young Reindeer
+52078	Young Reindeer
+52079	Young Reindeer
+52080	Young Reindeer
+52081	Wild Reindeer
+52082	Wild Reindeer
+52083	Wild Reindeer
+52084	Wild Reindeer
+52085	Wild Reindeer
+52086	Valiant Reindeer
+52087	Valiant Reindeer
+52088	Valiant Reindeer
+52089	Valiant Reindeer
+52090	Valiant Reindeer
+52091	Young Dragor
+52092	Young Dragor
+52093	Young Dragor
+52094	Young Dragor
+52095	Young Dragor
+52096	Wild Dragor
+52097	Wild Dragor
+52098	Wild Dragor
+52099	Wild Dragor
+52100	Wild Dragor
+52101	Valiant Dragor
+52102	Valiant Dragor
+52103	Valiant Dragor
+52104	Valiant Dragor
+52105	Valiant Dragor
+52106	Young Moa
+52107	Young Moa
+52108	Young Moa
+52109	Young Moa
+52110	Young Moa
+52111	Wild Moa
+52112	Wild Moa
+52113	Wild Moa
+52114	Wild Moa
+52115	Wild Moa
+52116	Valiant Moa
+52117	Valiant Moa
+52118	Valiant Moa
+52119	Valiant Moa
+52120	Valiant Moa
+52701	Lion Certificate
+52702	Tiger Certificate
+52703	Wild Boar Certificate
+52704	Wolf Certificate
+52705	Reindeer Certificate (m)
+52706	Reindeer Certificate (f)
+52707	Dragor Certificate
+52708	Moa Certificate
+53001	Fire Phoenix
+53002	Reindeer Calf
+53003	Ice Phoenix
+53005	Baby Azrael
+53006	Baby Azrael (gold)
+53007	Bambi
+53008	Knuud
+53009	Bao Bao
+53010	Leonidas
+53011	Khan
+53012	Porky
+53013	Rufus
+53014	Chubby Mini-Executor
+53015	Chubby Mini-Executor (g)
+53016	Boney
+53017	Jade Phoenix
+53018	Snow Leonidas
+53019	Arctis Khan
+53020	Polar Porkie
+53021	Frost Rufus
+53022	Sheldon
+53023	Cooper
+53024	Panther Cub (7 Days)
+53025	Leopard Cub (7 Days)
+53026	Pepita
+53218	Panther Cub
+53219	Panther Cub (120 Days)
+53220	Leopard Cub
+53221	Leopard Cub (120 Days)
+53222	Pumpkin Head
+53223	Little Broomstick
+53224	Snowflake
+53225	Snowbell
+53226	Cupido
+53227	Raging Heart
+53228	Crescent Moon
+53229	Crescent Moon
+53230	Eweriel
+53231	Ramblue
+53232	Baby Huashin
+53233	Bruce (Loot)
+53234	Wayne (Loot)
+53235	Robin (Loot)
+53236	Valentino+
+53237	Valentinia+
+53238	Valentino
+53239	Valentinia
+53240	Lantern Moon (Blue)
+53241	Lantern Moon (Orange)
+53242	Bonsai (Loot)
+53243	Bonsai
+53244	Ms Jiangshi+
+53245	Mr Jiangshi+
+53246	Jiangshi Jnr
+53247	Red Elf
+53248	Green Elf
+53249	Helpful Elf
+53250	Donnie
+53251	Frank
+53253	Shiver
+53254	Snivel
+53255	Cruella
+53256	Mini Bonsai
+53257	Minidall
+53258	Colourful Lantern
+53259	Green Lantern
+53260	Sir Oswald
+53261	Sir Cobblepot
+53262	Sir Chesterfield
+53263	Gryph
+53264	Nogai
+53265	Astrabell
+53266	Helexna
+53267	Chaotika
+53268	Gary Lycaner
+53269	Lycaninho
+53270	Little Catenaccio
+53271	Royal Blue Peacock
+53272	Pink Peacock
+53273	Indigo Peacock
+53274	Harry Hazelnut
+53275	Willy Walnut
+53276	Corporal Crack
+53277	Humpitzer
+53278	Caboomel
+53279	Camelry
+53280	Frost Beetle+
+53281	Frost Beetle
+53282	All-Seeing Flamecat
+53283	All-Seeing Frostcat
+53284	Three-Eyed Firecat
+53285	Gnome Tomte+ (Red)
+53286	Gnome Tomte+ (Green)
+53287	Gnome Tomte
+53288	Red Baby Huashin
+53289	White Baby Huashin
+53290	Sm. Fire Elemental
+53291	Sm. Ice Elemental
+53292	Sm. Lightning Elemental
+53293	Sm. Wind Elemental
+53294	Sm. Earth Elemental
+53295	Sm. Darkness Elemental
+53296	Playful Loverador
+53297	Clumsy Loverador
+53298	Little Loverador
+53299	Mini Crab Warrior
+53300	Mini Crab
+53301	Tremor Mummy
+53302	Wobble Mummy
+53303	Shaky Mummy
+53304	Green Christmas Ent
+53305	Gnarled Christmas Ent
+53306	Small Christmas Ent
+53307	Midnight Blue Anubis
+53308	Blood Red Anubis
+53309	Little Anubis
+53311	Mighty Ice Killer Whale
+53312	Tame Ice Killer Whale
+53313	Snow Leonidas (Loot)
+53314	Astrabell (Loot)
+53315	Fire Phoenix (Loot)
+53316	Ice-cold Menace
+53317	Poisonous Menace
+53318	Little Menace
+53319	Phoenix of Redemption
+53320	Snowdrop
+53321	Snowball
+53322	Snowdon
+53329	Cute Dragon Darling
+53330	Playful Dragon Darling
+53331	Little Dragon Darling
+53501	Fire Phoenix Cage
+53502	Reindeer Calf Chest
+53503	Ice Phoenix Cage
+53505	Baby Azrael Chest
+53506	Baby Azrael Chest (Gold)
+53507	Bambi Chest
+53508	Knuud Chest
+53509	Bao Bao Chest
+53510	Leonidas Chest
+53511	Khan Chest
+53512	Porky Chest
+53513	Rufus Chest
+53514	Mini-Executor Chest
+53515	Mini-ExecutorChest(Gold)
+53516	Bone Chest
+53517	Jade Cage
+55001	Protein Snack
+55002	Transport Box
+55003	Young Pet Book
+55004	Wild Pet Book
+55005	Valiant Pet Book
+55006	Advanced Book 2
+55007	Advanced Book 3
+55008	Pet Name Scroll
+55009	Pet Book Chest
+55010	Resistance (Warrior)
+55011	Resistance (Sura)
+55012	Resistance (Ninja)
+55013	Resistance (Shaman)
+55015	Berserker Book
+55017	Haste Book
+55018	Drill Book
+55019	Restoration Book
+55020	Vampirism Book
+55021	Spiritualism Book
+55022	Bulwark Book
+55023	Reflection Book
+55024	Yang Drop Book
+55025	Range Book
+55026	Immortal Book
+55027	Panacea Book
+55028	Tasty Treat
+55029	Pet Reverti
+55030	Pet Revertus
+55031	Tasty Treat+
+55032	Pet Destiny Orb
+55033	Enchant Pet
+55034	Master Brewer Book
+55035	Monster Hunter Book
+55036	Eagle Eyes Book
+55037	Life Drain Book
+55038	Light as a Feather Book
+55100	Divine Protein Bites
+55400	Mystery Box
+55401	Monkey Egg
+55402	Spider Egg
+55403	Razador's Egg
+55404	Nemere's Egg
+55405	Blue Dragon Egg
+55406	Red Dragon Egg
+55407	Mini Azrael's Egg
+55408	Fat Mini Executor Egg
+55409	Baby Baashido's Egg
+55410	Nessie Egg
+55411	Exedyar's Egg
+55412	White Dragon Egg
+55610	Farm Ticket (+1)
+55701	Mini Monkey
+55702	Mini Spider
+55703	Mini Razador
+55704	Mini Nemere
+55705	Dragonette
+55706	Mini Meley
+55707	Mini Azrael
+55708	Fat Mini Executor
+55709	Baby Baashido
+55710	Nessie
+55711	Exedyar Brood
+55712	Angry Mini Alastor
+56000	Appaloosa
+60001	Gall
+60002	Note from Storage Guard
+60003	Heroic Symbol
+69000	Bash Secret
+69010	Chi Secret
+69020	Ghost Strike Secret
+69030	Attack Strike Secret
+69040	Ambush Secret
+69050	Arrow Secret
+69060	Feather Walk Secret
+69070	Fast Attack Secret
+69080	Dark Strike Secret
+69090	Dragon Swirl Secret
+69100	Heaven and Earth Secret
+69110	Enchanted Blade Secret
+69120	Flying Talisman Secret
+69130	Cure Secret
+69140	Dragon's Help Secret
+69150	Blessing Secret
+70001	Goddess' Doll
+70002	Third Hand
+70003	Book of the Leader
+70004	Medal of Diligence
+70005	Experience Ring (1h)
+70006	Language Ring
+70007	Warp Ring
+70008	White Flag
+70009	Treasure Chest
+70010	Storage Ticket
+70011	Upgrade Bottle
+70012	Goddess Tear
+70013	Giant Goddess Tear
+70014	Blood Pill
+70015	Cheap Brush
+70016	Indian Armband
+70017	Precious Armband
+70018	Phoenix Earrings
+70019	Millionaire's Necklace
+70020	Peach Flower Wine
+70021	Angel's Blessing
+70022	Bera's Heart
+70023	Wise Man's Cane
+70024	Blessing Marble
+70025	Dignity Ring
+70026	Vanishing Mirror
+70027	Blacksmith's Memo
+70028	Wise Man's Memo
+70029	Red Quill
+70030	Red Monocle
+70031	Fencing Pamphlet
+70032	Two-handed Sword Manual
+70033	One-handed Sword Manual
+70034	Dagger Handbook
+70035	Magic Copper Ore
+70036	Student's Memo
+70037	Book of Forgetfulness
+70038	Bravery Cape
+70039	Blacksmith Handbook
+70040	Orc Stubbornness
+70041	Fist of Disciple
+70042	Devil's Splinter
+70043	Thief's Gloves
+70044	Dark Lord's Horn
+70045	Dark Lord's Fang
+70046	Dragon God's Grail
+70047	Language Ring(Sample)
+70048	Cloak of Secrecy
+70049	Lucy's Ring
+70050	Sage King's Symbol
+70051	Sage King's Glove
+70052	Charm of Karma1
+70053	Charm of Karma2
+70054	Charm of Karma3
+70056	Pomegranate Juice+
+70057	Bravery Cape
+70058	Teleportation Ring
+70063	Transform Costume
+70064	Enchant Costume
+70101	Book of Providence
+70102	Zen Bean
+70103	Sutra
+70104	Polymorph Marble
+70105	Polymorph Marble
+70106	Polymorph Marble
+70107	Polymorph Marble
+70201	Bleach
+70202	White Hair Dye
+70203	Blonde Hair Dye
+70204	Red Hair Dye
+70205	Brown Hair Dye
+70206	Black Hair Dye
+70207	Bleach
+70208	Brown Dye
+70251	Red Herb
+70252	Blue Herb
+70253	Green Herb
+70254	Purple Herb
+70301	Engagement Ring
+70302	Wedding Ring
+71001	Exorcism Scroll
+71002	Status Reset Document
+71003	Skill Reset Document
+71004	Medal of the Dragon
+71005	Language Ring
+71006	Language Ring
+71007	Language Ring
+71008	Fishing Book
+71009	Storage Chest
+71010	Third Hand
+71011	Emotion Mask
+71012	Book of the Leader
+71013	Firework
+71014	Potion of Attack+10
+71015	Experience Ring
+71016	Thief's Gloves
+71017	Lucky Medal
+71018	Blessing of Life
+71019	Blessing of Magic
+71020	Blessing of the Dragon
+71021	Scroll of War
+71022	Return of Intelligence
+71023	Return of Vitality
+71024	Return of Strength
+71025	Stone of the Blacksmith
+71026	Magic Iron Ore
+71027	Dragon God Life
+71028	Dragon God Attack
+71029	Dragon God Intelligence
+71030	Dragon God Defence
+71031	Dragon God Support
+71032	Dragon Scroll
+71033	Emotion Mask
+71034	Potion of Attack +15
+71035	Researcher's Elixir
+71036	Scroll - Chief Orc
+71037	Scroll - Leader
+71038	Scroll - Queen Spider
+71039	Scroll - Tortoise
+71040	Scroll - Flame King
+71041	Scroll - Nine Tails
+71042	Scroll - Demon King
+71043	Scroll - Tiger Ghost
+71044	Critical Strike
+71045	Piercing Strike
+71047	Spirit Stone Tincture
+71048	Modification Charm
+71049	Silk Bundle
+71050	Potion of Speed
+71051	Enchant Item (6/7)
+71052	Reinforce Item (6/7)
+71054	Tincture of Kingdoms
+71055	Tincture of the Name
+71056	Tincture of Heaven
+71057	Stone of Fossil Trunk O.
+71058	Stone of Copper Lode
+71059	Stone of Silver Lode
+71060	Stone of Gold Lode
+71061	Stone of Jade Lode
+71062	Stone of Ebony Lode
+71063	Stone of Clams
+71064	Stone of White Gold Lode
+71065	Stone of Crystal Lode
+71066	Stone of Amethyst Lode
+71067	Stone of Heaven's Ode
+71068	Feather of Lovers
+71069	Earrings of Harmony
+71070	Love Bracelet
+71071	Earrings of Love
+71072	Harmony Bracelet
+71073	Necklace of Love
+71074	Necklace of Harmony
+71075	Hair Dye (White)
+71076	Hair Dye (Blonde)
+71077	Hari Dye (Red)
+71078	Hair Dye (Brown)
+71079	Hair Dye (Black)
+71080	Metin Stone(L)
+71081	Metin Stone(N)
+71082	Metin Stone(H)
+71083	Stone Handbook
+71084	Enchant Item
+71085	Reinforce Item
+71086	Level Up Quest(20~29)
+71087	Level Up Quest(30~39)
+71088	Mission Book (Easy)
+71089	Mission Book (Normal)
+71090	Mission Book (Hard)
+71091	Tincture of Trade
+71092	Polymorph Book
+71093	Polymorph Marble
+71094	Concentrated Reading
+71095	Passage Ticket
+71096	Passage Tablet
+71099	Ring of Successor
+71100	Scroll of Lore Change
+71101	Potion of Haste
+71102	Potion of Haste+
+71103	Redistribution (VIT)
+71104	Redistribution (INT)
+71105	Redistribution (STR)
+71106	Redistribution (DEX)
+71107	Fruit of Life
+71108	Pomegranate Juice
+71109	Scroll of Correction
+71110	Horse Sugar
+71113	Glass of Insight
+71114	Wild Boar (yellow)
+71115	Wild Boar (blue)
+71116	Wolf (yellow)
+71117	Wolf (blue)
+71118	Tiger (yellow)
+71119	Tiger (blue)
+71120	Lion (yellow)
+71121	Lion (blue)
+71122	Dragon's Temple Entry
+71123	Dragon Scales
+71124	White Lion
+71125	Wild Battle Boar
+71126	Fight Wolf
+71127	Storm Tiger
+71128	Battle Lion
+71129	Dragon Claw
+71130	Passage Ticket
+71131	Black Horse
+71132	Black Horse
+71133	Black Horse
+71134	Black Horse
+71135	Crescent Moon Ring
+71136	Mighty Lolly
+71137	Royal Tiger (blue)
+71138	Royal Tiger (red)
+71139	Royal Tiger (gold)
+71140	Royal Tiger (green)
+71141	Royal Tiger (grey)
+71142	Royal Tiger (white)
+71143	Ring of Joy
+71144	Christmas Chest
+71145	Amulet of Eternal Love
+71146	Cupid's Chest (pink)
+71147	Cupid's Chest (blue)
+71148	Ring of Will Power
+71149	Ring of Deadly Power
+71150	Magic Egg
+71151	Green Magic
+71152	Green Strength
+71153	Potion of Wisdom
+71154	Potion of Ascension (3h)
+71155	Potion of Wisdom (3h)
+71156	Potion of Spirit
+71157	Erfahrungstrank
+71158	Hero's Medal
+71159	Milon's Chest
+71160	Athena's Chest
+71161	Equus Porphyreus
+71164	Comet
+71165	Polar Predator
+71166	Armoured Panda
+71171	Unicorn
+71172	Nightmare
+71176	Black Panther
+71177	Leopard
+71182	Muffin (Brown)
+71183	Nugget (Brown)
+71184	Muffin (Blue)
+71185	Nugget (Blue)
+71186	Muffin (Green)
+71187	Nugget (Green)
+71192	Thunder
+71193	Blitzen
+71194	Golden Okey Box
+71195	Silver Okey Box
+71196	Bronze Okey Box
+71197	Nugget (Navy Blue)
+71198	Muffin (Pink)
+71220	Kyzaghan's Horse
+71221	Kashmir Bundle
+71222	Nirvana Dragon
+71223	Samsara Dragon
+71224	Manny
+71225	Ellie
+71226	Brown Battle Tulu
+71227	Black Battle Tulu
+71228	Lava Cave Lizard
+71229	Ice Cave Lizard
+71230	Magma Dragon
+71231	White Rabbit
+71232	Moon Bunny
+71233	Bernie
+71234	Blue Barry
+71235	Cerberus (Gold)
+71236	Cerberus (Silver)
+71242	Spectral Steed
+71243	Equus Nocturnus
+71244	Bloodwing
+71245	Nyctalus
+71246	Penumbral Steed
+71247	Silverstar Steed
+71248	Golden War-Ochs
+71249	Silver War-Ochs
+71250	White Sphinx
+71251	Stone Sphinx
+71252	Ice Raven
+71253	Night Raven
+71254	White Winter Llama
+71255	Brown Winter Llama
+71256	Mighty Northwind Dragon
+71257	Greater Northwind Dragon
+71258	Angry Northwind Dragon
+71259	Hasty Rabbit (Pink)
+71260	Hasty Rabbit (Blue)
+71261	Blood-red Kitsune
+71262	Ice-blue Kitsune
+71263	Red Arctic Wolf
+71264	Blue Arctic Wolf
+72001	Experience Ring (10h)
+72002	Experience Ring (30m)
+72003	Experience Ring (3h)
+72004	Thief's Gloves
+72005	Thief's Gloves
+72006	Thief's Gloves
+72007	Silk Bundle
+72008	Silk Bundle
+72009	Silk Bundle
+72010	Lovebird Feather
+72011	Lovebird Feather
+72012	Lovebird Feather
+72013	Fishing Book
+72014	Fishing Book
+72015	Fishing Book
+72016	Third Hand
+72017	Third Hand
+72018	Third Hand
+72019	Storage Chest
+72020	Storage Chest
+72021	Storage Chest
+72022	Lucky Medal
+72023	Lucky Medal
+72024	Lucky Medal
+72025	Piercing Strike
+72026	Piercing Strike
+72027	Piercing Strike
+72028	Emotion Mask
+72029	Emotion Mask
+72030	Emotion Mask
+72031	Dragon God Attack
+72032	Dragon God Attack
+72033	Dragon God Attack
+72034	Dragon God Defence
+72035	Dragon God Defence
+72036	Dragon God Defence
+72037	Dragon God Life
+72038	Dragon God Life
+72039	Dragon God Life
+72040	Dragon God Intelligence
+72041	Dragon God Intelligence
+72042	Dragon God Intelligence
+72043	Book of the Leader (15m)
+72044	Book of the Leader (30m)
+72045	Book of the Leader (3h)
+72046	Critical Strike
+72047	Critical Strike
+72048	Critical Strike
+72049	Ring of Experience (30h)
+72050	Ring of Experience (60h)
+72301	Blessing Scroll
+72302	Book of the Leader
+72303	Experience Ring
+72304	Blessing Marble
+72305	Vanishing Mirror
+72306	Blacksmith's Memo
+72307	Wise Man's Memo
+72308	Magic Copper Ore
+72309	Blacksmith Handbook
+72310	Exorcism Scroll
+72311	Blessing of the Dragon
+72312	Dragon God Attack
+72313	Dragon God Defence
+72314	Dragon Scroll
+72319	Shop Expansion
+72320	Inventory Expansion
+72325	Transmutation Reversal
+72326	Transmutation Ticket
+72341	Transmutation Ticket
+72501	Anti-Experience Ring
+72502	Thief's Gloves (2h)
+72701	Wind Shoes
+72702	Wind Shoes +
+72703	Tiger Bone Earring
+72704	Dragon Bone Earring
+72705	Tiger Bone Bracelet
+72706	Dragon Bone Bracelet
+72709	Tiger Bone Earring
+72710	Dragon Bone Earring
+72711	Tiger Bone Bracelet
+72712	Dragon Bone Bracelet
+72723	Sun Elixir (S)
+72724	Sun Elixir (M)
+72725	Sun Elixir (L)
+72726	Sun Elixir (E)
+72727	Moon Elixir (S)
+72728	Moon Elixir (M)
+72729	Moon Elixir (L)
+72730	Moon Elixir (E)
+72731	Dragon God Life +
+72732	Dragon God Attack +
+72733	Dragon God Intelligence +
+72734	Dragon God Defence +
+72735	Critical Strike +
+72736	Piercing Strike +
+73001	Trendy Hairstyle (Red)
+73002	Trendy Hairstyle (Light)
+73003	Trendy Hairstyle (Blue)
+73004	Trendy Hairstyle (Brown)
+73005	Bandanna
+73006	Bandanna
+73007	Bandanna
+73008	Bandanna
+73009	Long Hair (Black)
+73010	Long Hair (Red)
+73011	Long Hair (Brown)
+73012	Long Hair (Green)
+73251	Ponytail (Brown)
+73252	Ponytail (Green)
+73253	Ponytail (Blue)
+73254	Ponytail (Light)
+73255	Shoulder Length (Red)
+73256	Shoulder Length (Brown)
+73257	Shoulder Length (Light)
+73258	Shoulder Length (Purple)
+73259	Short Hair (Red)
+73260	Short Hair (Blue)
+73261	Short Hair (Black)
+73262	Short Hair (Blonde)
+73501	Sporty Haircut (Light)
+73502	Sporty Haircut (Brown)
+73503	Sporty Haircut (Blonde)
+73504	Sporty Haircut (Green)
+73505	Charisma Hair (White)
+73506	Charisma Hair (Red)
+73507	Charisma Hair (Black)
+73508	Charisma Hair (Purple)
+73509	Long Plait (White)
+73510	Long Plait (Blue)
+73511	Long Plait (Black)
+73512	Long Plait (Brown)
+73751	Elegant Hairstyle(Brown)
+73752	Elegant Hairstyle(Black)
+73753	Elegant Hairstyle (Blue)
+73754	Elegant Hairstyle(Light)
+73755	Med. Length Hair (Brown)
+73756	Med. Length Hair (Black)
+73757	Med.Length Hair (Blonde)
+73758	Med.Length Hair (Purple)
+73759	Old Hairstyle (Brown)
+73760	Old Hairstyle (Light)
+73761	Old Hairstyle (Purple)
+73762	Old Hairstyle (Red)
+74001	Trendy Hairstyle (Red)
+74002	Trendy Hairstyle (Light)
+74003	Trendy Hairstyle (Blue)
+74004	Trendy Hairstyle (Brown)
+74005	Headband (Red)
+74006	Headband (Brown plaid)
+74007	Headband (Blue)
+74008	Headband (Green plaid)
+74009	Long Hair (Black)
+74010	Long Hair (Red)
+74011	Long Hair (Brown)
+74012	Long Hair (Green)
+74013	Warrior Afro (Male)
+74014	Warrior Afro (Male)
+74015	Warrior Samurai Helm (M)
+74016	Warrior Samurai Helm (M)
+74017	Warrior Fez (M)
+74018	Warrior Keffiyeh (M)
+74019	Warrior Turban (M)
+74020	Jack O' Warrior (m)
+74251	Ponytail (Brown)
+74252	Ponytail (Green)
+74253	Ponytail (Blue)
+74254	Ponytail (Light)
+74255	Shoulder Length (Red)
+74256	Shoulder Length (Brown)
+74257	Shoulder Length (Light)
+74258	Shoulder Length (Purple)
+74259	Short Hair (Red)
+74260	Short Hair (Blue)
+74261	Short Hair (Black)
+74262	Short Hair (Blonde)
+74263	Ninja Afro (f)
+74264	Ninja Afro (f)
+74265	Ninja Flower Hat (f)
+74266	Ninja Flower Hat (f)
+74267	Ninja Headscarf (f)
+74268	Ninja Desert Scarf (f)
+74269	Ninja Turban (f)
+74270	Jack O' Ninja (f)
+74501	Sporty Hairstyle (White)
+74502	Sporty Hairstyle (Brown)
+74503	Sporty Hairstyle(Blonde)
+74504	Sporty Hairstyle (Green)
+74505	Charisma Hair (White)
+74506	Charisma Hair (Red)
+74507	Charisma Hair (Black)
+74508	Charisma Hair (Purple)
+74509	Long Plait (White)
+74510	Long Plait (Blue)
+74511	Long Plait (Black)
+74512	Long Plait (Brown)
+74513	Sura Afro (m)
+74514	Sura Afro (m)
+74515	Sura Samurai Helmet (M)
+74516	Sura Samurai Helmet (m)
+74517	Sura Fez (m)
+74518	Sura Keffiyeh (m)
+74519	Sura Turban (m)
+74520	Jack O' Sura (m)
+74751	Elegant Hairstyle(Brown)
+74752	Elegant Hairstyle(Black)
+74753	Elegant Hairstyle (Blue)
+74754	Elegant Hairstyle(Light)
+74755	Med.Length Hair (Brown)
+74756	Med. Length Hair (Black)
+74757	Med.Length Hair (Blonde)
+74758	Med.Length Hair (Purple)
+74759	Old Hairstyle (Brown)
+74760	Old Hairstyle (Blonde)
+74761	Old Hairstyle (Purple)
+74762	Old Hairstyle (Red)
+74763	Shaman Afro (Female)
+74764	Shaman Afro (Female)
+74765	Shaman Flower Hat (F)
+74766	Shaman Flower Hat (F)
+74767	Shaman Headscarf (F)
+74768	Shaman Desert Scarf (F)
+74769	Shaman Turban (F)
+74770	Jack O' Shaman (f)
+75001	Trendy Hairstyle (Red)
+75002	Trendy Hairstyle (Light)
+75003	Trendy Hairstyle (Blue)
+75004	Trendy Hairstyle (Brown)
+75005	Headband (Brown)
+75006	Headband (Blonde)
+75007	Headband (Blue)
+75008	Headband (Green)
+75009	Long Hair (Black)
+75010	Long Hair (Red)
+75011	Long Hair (Brown)
+75012	Long Hair (Green)
+75013	Warrior Afro (Female)
+75014	Warrior Afro (Female)
+75015	Warrior Flower Hat (F)
+75016	Warrior Flower Hat (F)
+75017	Warrior Headscarf (F)
+75018	Warrior Desert Scarf (F)
+75019	Warrior Turban (F)
+75020	Jack O' Warrior (f)
+75201	Ponytail (Brown)
+75202	Ponytail (Green)
+75203	Ponytail (Blue)
+75204	Ponytail (Light)
+75205	Shoulder Length (Red)
+75206	Shoulder Length (Brown)
+75207	Shoulder Length (Light)
+75208	Shoulder Length (Purple)
+75209	Short Hair (Red)
+75210	Short Hair (Blue)
+75211	Short Hair (Black)
+75212	Short Hair (Blonde)
+75213	Ninja Afro (m)
+75214	Ninja Afro (m)
+75215	Ninja Samurai Helmet (m)
+75216	Ninja Samurai Helmet (m)
+75217	Ninja Fez (m)
+75218	Ninja Keffiyeh (m)
+75219	Ninja Turban (m)
+75220	Jack O' Ninja (m)
+75401	Sporty Hairstyle (Light)
+75402	Sporty Hairstyle (Brown)
+75403	Sporty Hairstyle(Blonde)
+75404	Sporty Hairstyle (Green)
+75405	Charisma Hair (White)
+75406	Charisma Hair (Red)
+75407	Charisma Hair (Black)
+75408	Charisma Hair (Purple)
+75409	Long Plait (White)
+75410	Long Plait (Blue)
+75411	Long Plait (Black)
+75412	Long Plait (Brown)
+75413	Sura Afro (f)
+75414	Sura Afro (f)
+75415	Sura Flower Hat (f)
+75416	Sura Flower Hat (f)
+75417	Sura Headscarf (f)
+75418	Sura Desert Scarf (f)
+75419	Sura Turban (f)
+75420	Jack O' Sura (f)
+75601	Elegant Hairstyle(Brown)
+75602	Elegant Hairstyle(Black)
+75603	Elegant Hairstyle (Blue)
+75604	Elegant Hairstyle(Light)
+75605	Med. Length Hair (Brown)
+75606	Med. Length Hair (Black)
+75607	Med.Length Hair (Blonde)
+75608	Med.Length Hair (Purple)
+75609	Old Hairstyle (Brown)
+75610	Old Hairstyle (Light)
+75611	Old Hairstyle (Purple)
+75612	Old Hairstyle (Red)
+75613	Shaman Afro (Male)
+75614	Shaman Afro (Male)
+75615	Shaman Samurai Helm (M)
+75616	Shaman Samurai Helm (M)
+75617	Shaman Fez (M)
+75618	Shaman Keffiyeh (M)
+75619	Shaman Turban (M)
+75620	Jack O' Shaman (m)
+76000	Peach Flower Wine
+76001	Status Reset Document
+76002	Shrunken Head
+76003	Potion of Haste
+76004	Moon Elixir (S)
+76005	Moon Elixir (M)
+76006	Compass for Metin Stones
+76007	Bravery Cape
+76008	Medal of the Dragon
+76009	Dragon Scroll
+76010	Blood Stone
+76011	Book of the Leader (1h)
+76012	Potion of Speed
+76013	Reinforce Item (b)
+76014	Enchant Item (b)
+76015	Blessing Marble
+76016	Blessing Scroll
+76017	Potion of Attack+10
+76018	Potion of Attack+15
+76019	Passage Ticket
+76020	Researcher's Elixir
+76021	Sun Elixir (S)
+76022	Sun Elixir (M)
+76023	Green Magic
+76024	Green Strength
+79505	Okey Collectable Card
+79506	Okey Card Set
+80001	Money Pouch
+80002	Blank Paper
+80003	Silver Bar (250k)
+80004	Silver Bar (500k)
+80005	Gold Bar (2.5kk)
+80006	Gold Bar (5kk)
+80007	Gold Bar (10kk)
+80008	Lump of Gold
+80013	Roulette ticket
+80014	DR Voucher (100)
+80015	DR Voucher (500)
+80016	DR Voucher (1000)
+80017	DR Voucher (50)
+80019	Fine Cloth
+84014	Extend costume
+84015	Extend costume
+84016	Extend costume
+85001	Lord Sash (basic)
+85002	Lord Sash (fine)
+85003	Lord Sash (noble)
+85004	Lord Sash (custom)
+85005	Master Sash (basic)
+85006	Master Sash (fine)
+85007	Master Sash (noble)
+85008	Master Sash (custom)
+85011	Royal Sash (basic)
+85012	Royal Sash (fine)
+85013	Royal Sash (noble)
+85014	Royal Sash (custom)
+85015	Sovereign Sash (basic)
+85016	Sovereign Sash (fine)
+85017	Sovereign Sash (noble)
+85018	Sovereign Sash (custom)
+85021	Anniversary Sash (basic)
+85022	Anniversary Sash (fine)
+85023	Anniversary Sash (noble)
+85024	Anniversary Sash (cust.)
+86001	Zi Sash (basic)
+86002	Zi Sash (fine)
+86003	Zi Sash (noble)
+86004	Zi Sash (custom)
+86005	Chou Sash (basic)
+86006	Chou Sash (fine)
+86007	Chou Sash (noble)
+86008	Chou Sash (custom)
+86011	Yin Sash (basic)
+86012	Yin Sash (fine)
+86013	Yin Sash (noble)
+86014	Yin Sash (custom)
+86015	Mao Sash (basic)
+86016	Mao Sash (fine)
+86017	Mao Sash (noble)
+86018	Mao Sash (custom)
+86021	Chen Sash (basic)
+86022	Chen Sash (fine)
+86023	Chen Sash (noble)
+86024	Chen Sash (custom)
+86025	Si Sash (basic)
+86026	Si Sash (fine)
+86027	Si Sash (noble)
+86028	Si Sash (custom)
+86031	Wu Sash (basic)
+86032	Wu Sash (fine)
+86033	Wu Sash (noble)
+86034	Wu Sash (custom)
+86035	Wei Sash (basic)
+86036	Wei Sash (fine)
+86037	Wei Sash (noble)
+86038	Wei Sash (custom)
+86041	Shen Sash (basic)
+86042	Shen Sash (fine)
+86043	Shen Sash (noble)
+86044	Shen Sash (custom)
+86045	You Sash (basic)
+86046	You Sash (fine)
+86047	You Sash (noble)
+86048	You Sash (custom)
+86051	Xu Sash (basic)
+86052	Xu Sash (fine)
+86053	Xu Sash (noble)
+86054	Xu Sash (custom)
+86055	Hai Sash (basic)
+86056	Hai Sash (fine)
+86057	Hai Sash (noble)
+86058	Hai Sash (custom)
+86061	Heart Sash (basic)
+86062	Heart Sash (fine)
+86063	Heart Sash (noble)
+86064	Heart Sash (custom)
+89000	Certificate of Reversal
+90001	Empty Water Bottle
+90002	Water Bottle
+90003	Crystal
+90004	Gem
+90005	Water Stone
+90006	Spirit Stone
+90007	Mineral
+90010	Foundation Stone
+90011	Trunk
+90012	Plywood
+90013	Premium Ticket (7 days)
+90014	Premium Ticket (15 days)
+90015	Premium Ticket (30 days)
+93100	Battle Pass Ticket
+38014	Auto-Hunt

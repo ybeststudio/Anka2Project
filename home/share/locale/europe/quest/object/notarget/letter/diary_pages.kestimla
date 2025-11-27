@@ -1,0 +1,6 @@
+if pc . get_level ( ) >= 66 then local v = find_npc_by_vnum ( 20011 ) 
+if v ~= 0 then 
+target . vid ( "__TARGET2__" , v , "Uriel" ) 
+end 
+send_letter ( "Günlük" ) 
+ return end 

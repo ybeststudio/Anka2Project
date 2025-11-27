@@ -1,0 +1,2 @@
+say_title ( gameforge . ghost_story . _010_sayTitle ) 
+say ( gameforge . ghost_story . _110_say ) 

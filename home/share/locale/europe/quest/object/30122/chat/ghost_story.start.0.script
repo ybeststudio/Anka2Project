@@ -1,0 +1,71 @@
+local maindialog = 0 
+say_title ( gameforge . ghost_story . _300_sayTitle ) 
+say ( gameforge . ghost_story . _320_say ) 
+repeat 
+if pc . getqf ( "know_warrior" ) == 1 then 
+maindialog = select ( gameforge . ghost_story . _350_npcChat , gameforge . ghost_story . _370_npcChat , gameforge . ghost_story . _390_npcChat , gameforge . ghost_story . _430_npcChat , gameforge . ghost_story . _480_npcChat ) 
+if maindialog == 1 then 
+say_title ( gameforge . ghost_story . _300_sayTitle ) 
+say ( gameforge . ghost_story . _360_say ) 
+wait ( ) 
+elseif maindialog == 2 then 
+say_title ( gameforge . ghost_story . _300_sayTitle ) 
+say ( gameforge . ghost_story . _380_say ) 
+wait ( ) 
+elseif maindialog == 3 then 
+say_title ( gameforge . ghost_story . _300_sayTitle ) 
+say ( gameforge . ghost_story . _400_say ) 
+storymode = select ( gameforge . locale . levelup . prev_quest_go , gameforge . ghost_story . _280_npcChat ) 
+if storymode == 2 then 
+return 
+end 
+say_title ( gameforge . ghost_story . _300_sayTitle ) 
+say ( gameforge . ghost_story . _410_say ) 
+storymode = select ( gameforge . locale . levelup . prev_quest_go , gameforge . ghost_story . _280_npcChat ) 
+if storymode == 2 then 
+return 
+end 
+say_title ( gameforge . ghost_story . _300_sayTitle ) 
+say ( gameforge . ghost_story . _420_say ) 
+wait ( ) 
+elseif maindialog == 4 then 
+say_title ( gameforge . ghost_story . _300_sayTitle ) 
+say ( gameforge . ghost_story . _440_say ) 
+storymode = select ( gameforge . locale . levelup . prev_quest_go , gameforge . ghost_story . _280_npcChat ) 
+if storymode == 2 then 
+return 
+end 
+say_title ( gameforge . ghost_story . _300_sayTitle ) 
+say ( gameforge . ghost_story . _450_say ) 
+storymode = select ( gameforge . locale . levelup . prev_quest_go , gameforge . ghost_story . _280_npcChat ) 
+if storymode == 2 then 
+return 
+end 
+say_title ( gameforge . ghost_story . _300_sayTitle ) 
+say ( gameforge . ghost_story . _460_say ) 
+wait ( ) 
+else 
+say_title ( gameforge . ghost_story . _300_sayTitle ) 
+say ( gameforge . ghost_story . _490_say ) 
+end 
+else 
+maindialog = select ( gameforge . ghost_story . _350_npcChat , gameforge . ghost_story . _040_npcChat ) 
+if maindialog == 1 then 
+say_title ( gameforge . ghost_story . _300_sayTitle ) 
+say ( gameforge . ghost_story . _360_say ) 
+wait ( ) 
+local subdialog1 = select ( gameforge . ghost_story . _370_npcChat ) 
+if subdialog1 == 1 then 
+say_title ( gameforge . ghost_story . _300_sayTitle ) 
+say ( gameforge . ghost_story . _380_say ) 
+pc . setqf ( "know_warrior" , 1 ) 
+wait ( ) 
+end 
+else 
+say_title ( gameforge . ghost_story . _300_sayTitle ) 
+say ( gameforge . ghost_story . _050_say ) 
+maindialog = 5 
+end 
+end 
+until maindialog == 5 
+return 

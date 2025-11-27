@@ -1,0 +1,84 @@
+say_title ( gameforge . priv_empire . _20_sayTitle ) 
+say ( gameforge . priv_empire . _30_say ) 
+local empire_names = 
+{ 
+[ 0 ] = gameforge . priv_empire . _33_array , 
+[ 1 ] = gameforge . locale . empire_names_2 , 
+[ 2 ] = gameforge . locale . empire_names_3 , 
+[ 3 ] = gameforge . locale . empire_names_4 , 
+} 
+local e = select ( empire_names [ 1 ] , empire_names [ 2 ] , empire_names [ 3 ] , empire_names [ 0 ] , gameforge . locale . cancel ) 
+if 5 == e then 
+return 
+end 
+if 4 == e then 
+e = 0 
+end 
+say_title ( gameforge . priv_empire . _40_sayTitle ) 
+say_reward ( __get_empire_priv_string ( e ) ) 
+say ( gameforge . priv_empire . _50_say ) 
+local titles = 
+{ 
+gameforge . priv_empire . _53_array , 
+gameforge . priv_empire . _54_array , 
+gameforge . priv_empire . _55_array , 
+gameforge . priv_empire . _56_array , 
+} 
+local t = select ( 
+titles [ 1 ] , 
+titles [ 2 ] , 
+titles [ 3 ] , 
+titles [ 4 ] , 
+gameforge . locale . cancel ) 
+if 5 == t then 
+return 
+end 
+say_title ( gameforge . priv_empire . _40_sayTitle ) 
+say_reward ( string . format ( gameforge . priv_empire . _60_sayReward , empire_names [ e ] , titles [ t ] ) ) 
+say ( gameforge . priv_empire . _70_say ) 
+local g = { 10 , 20 , 50 , 100 , 150 , 200 } 
+local p = select ( g [ 1 ] .. "%" , g [ 2 ] .. "%" , g [ 3 ] .. "%" , g [ 4 ] .. "%" , g [ 5 ] .. "%" , g [ 6 ] .. "%" , gameforge . locale . cancel ) 
+if p == 7 then 
+return 
+end 
+say_title ( gameforge . priv_empire . _40_sayTitle ) 
+say_reward ( string . format ( gameforge . priv_empire . _100_sayReward , empire_names [ e ] , titles [ t ] , g [ p ] ) ) 
+say ( gameforge . priv_empire . _110_say ) 
+local v = 0 
+local h = select ( 
+gameforge . priv_empire . _120_select , 
+gameforge . priv_empire . _130_select , 
+gameforge . priv_empire . _134_select , 
+gameforge . priv_empire . _135_select , 
+gameforge . locale . cancel ) 
+if 5 == h then 
+return 
+elseif 4 == h then 
+say_title ( gameforge . priv_empire . _40_sayTitle ) 
+say_reward ( string . format ( gameforge . priv_empire . _100_sayReward , empire_names [ e ] , titles [ t ] , g [ p ] ) ) 
+say ( gameforge . priv_empire . _140_say ) 
+v = input ( ) 
+if v == "" then 
+v = 0 
+else 
+v = tonumber ( v ) 
+end 
+elseif 3 == h then 
+v = 24 
+elseif 2 == h then 
+v = 12 
+elseif 1 == h then 
+v = 6 
+end 
+say_title ( gameforge . priv_empire . _40_sayTitle ) 
+say_reward ( string . format ( gameforge . priv_empire . _150_sayReward , empire_names [ e ] , titles [ t ] , g [ p ] , v ) ) 
+say ( gameforge . priv_empire . _160_say ) 
+local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+if 1 == s then 
+say_title ( gameforge . priv_empire . _40_sayTitle ) 
+__give_empire_priv ( e , t , g [ p ] , v * 60 * 60 ) 
+say_reward ( gameforge . priv_empire . _170_sayReward ) 
+else 
+say_title ( gameforge . priv_empire . _40_sayTitle ) 
+say_reward ( gameforge . priv_empire . _180_sayReward ) 
+end 

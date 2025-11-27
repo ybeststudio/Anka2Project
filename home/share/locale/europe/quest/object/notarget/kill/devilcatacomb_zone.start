@@ -1,0 +1,18 @@
+if pc . get_map_index ( ) == 216 then local j = number ( 1 , 80 ) 
+if j == 1 then 
+game . drop_item ( 30311 , 1 ) 
+end 
+ return end if pc . get_map_index ( ) >= 2.16e+06 and pc . get_map_index ( ) <= 2.16999e+06 then if d . select ( pc . get_map_index ( ) ) then 
+if d . getf ( "level" ) == 5 then 
+if d . getf ( "q_level" ) == 2 then 
+local new = d . getf ( "stones" ) - 1 
+d . setf ( "stones" , new ) 
+if new == 0 then 
+d . setf ( "stones" , 0 ) 
+game . drop_item ( 50084 , 1 ) 
+game . drop_item ( 50084 , 1 ) 
+end 
+end 
+end 
+end 
+ return end 

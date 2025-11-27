@@ -1,0 +1,11 @@
+if d . select ( get_server_timer_arg ( ) ) then 
+if d . getf ( "level" ) == 5 then 
+clear_server_timer ( "Devil_5" , get_server_timer_arg ( ) ) 
+d . setf ( "level" , 6 ) 
+d . clear_regen ( ) 
+d . regen_file ( "data/dungeon/deviltower/deviltower6_regen.txt" ) 
+d . jump_all ( special . devil_tower [ 5 ] [ 1 ] , special . devil_tower [ 5 ] [ 2 ] ) 
+GetMissionInfo ( 6 , d . getf ( "real_time" ) - get_global_time ( ) ) 
+d . notice ( d . get_map_index ( ) , 662 , "" , false ) 
+end 
+end 
