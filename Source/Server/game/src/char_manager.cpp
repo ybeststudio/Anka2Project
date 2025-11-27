@@ -1752,4 +1752,13 @@ bool CHARACTER_MANAGER::IsTargetReserved(DWORD dwTargetVID, DWORD dwPlayerPID)
 	// Belirli bir oyuncu tarafýndan rezerve edilmiþ mi kontrol et
 	return (it->second == dwPlayerPID);
 }
+
+DWORD CHARACTER_MANAGER::GetReserverPID(DWORD dwTargetVID)
+{
+	std::map<DWORD, DWORD>::iterator it = m_mapTargetReservation.find(dwTargetVID);
+	if (it == m_mapTargetReservation.end())
+		return 0; // Rezerve edilmemiþ
+	
+	return it->second; // Rezerve eden oyuncunun PID'si
+}
 #endif

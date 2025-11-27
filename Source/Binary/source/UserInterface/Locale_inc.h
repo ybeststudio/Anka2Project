@@ -153,6 +153,7 @@
 #define __AUTO_HUNT__								// Otomatik Av sistemi
 #define ENABLE_AUTO_SELL_SYSTEM						// Otomatik item satmayý sistemini etkinleþtir;
 #define ENABLE_STYLE_ATTRIBUTE_SYSTEM      			// Seçmeli özel kadim efsunu sistemini  etkinleþtir;
+#define ENABLE_GM_MOB_VNUM_DISPLAY   				// GM'lere (oyun yöneticilerine) moblarýn VNUM deðerini oyun içi veya log çýktýsýnda gösterir
 
 /*** DÜZELTMELER ***/
 #define MULTIPLE_DAMAGE_DISPLAY_SYSTEM				// Çoklu damage gösterimi  düzeltir
@@ -163,6 +164,7 @@
 #define ENABLE_LENS_RENDER_FIX						// Lens / kamera / zoom ile ilgili yanlýþ render problemlerini düzeltir
 #define ENABLE_AUTO_ATTACK_ARCHER_NINJA_FIX     	// Otomatik saldýrýda okçu/ninja sýnýflarýna özel hatalarý giderir
 #define ENABLE_TEXTURE_SCALE_FIX                	// Texture %100 / scaling kaynaklý hatalarý düzeltir
+#define ENABLE_TIMESTAMPED_EXCEPTION_DUMP   		// Her bir istisna için "errorlog" klasörüne zaman damgalý (ErrorLog_DD-MM-YYYY_HH-MM-SS.txt) bir hata dökümü dosyasý yazar ve errorlog.exe'yi çalýþtýrýr
 /*** DÜZELTMELER ***/
 
 /*** TAMAMLANMAMIÞ SÝSTEMLER (YAKINDA) ***/

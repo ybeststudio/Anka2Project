@@ -239,7 +239,11 @@ int CInputHandshake::Analyze(LPDESC d, BYTE bHeader, const char * c_pData)
 
 	else
 	{
+		#ifdef SYS_ERR_SOURCE_TRACKING
+		sys_err("HANDSHAKE phase does not handle packet %d (fd %d) (source %s:%u)", bHeader, d->GetSocket(), d->GetHostName(), d->GetPort());
+		#else
 		sys_err("Handshake phase does not handle packet %d (fd %d)", bHeader, d->GetSocket());
+		#endif
 		return -1;
 	}
 

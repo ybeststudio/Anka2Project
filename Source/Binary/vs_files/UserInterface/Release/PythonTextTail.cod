@@ -11,58 +11,59 @@ INCLUDELIB OLDNAMES
 PUBLIC	??_C@_1KG@EOMJEEJK@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@ ; `string'
 PUBLIC	??_C@_0FG@PPLFOIJH@TextTail?3?5ChatTail?5?$CFd?0?5ChrTail?5@ ; `string'
 PUBLIC	??_C@_1DI@JNPFFBHI@?$AAg?$AAs?$AA_?$AAT?$AAe?$AAx?$AAt?$AAT?$AAa?$AAi?$AAl?$AA_?$AAL?$AAi?$AAv@ ; `string'
-PUBLIC	??_C@_0BC@IBMACGLG@?5?$HMcFFFF8C00?$FLL?$FN?$HMr?5@ ; `string'
 PUBLIC	??_C@_0O@HLPIIHNN@Tahoma?312?4fnt@		; `string'
-PUBLIC	??_C@_0CH@FJLHMJJF@d?3?1ymir?5work?1ui?1game?1emoji?1flag@ ; `string'
+PUBLIC	??_C@_09FMLOJBKI@?$CFs?5?9?5?$CI?$CFu?$CJ@	; `string'
 PUBLIC	??_C@_0BC@MKHCBNFN@?5?$HMcFF01796F?$FLG?$FN?$HMr?5@ ; `string'
-PUBLIC	??_C@_0DM@EALAGA@?5CPythonTextTail?3?3DeleteItemTex@ ; `string'
+PUBLIC	??_C@_0BC@IBMACGLG@?5?$HMcFFFF8C00?$FLL?$FN?$HMr?5@ ; `string'
 PUBLIC	??_C@_0DO@PHLLOPOI@CPythonTextTail?3?3DeleteCharacte@ ; `string'
+PUBLIC	??_C@_0CH@FJLHMJJF@d?3?1ymir?5work?1ui?1game?1emoji?1flag@ ; `string'
 PUBLIC	??_C@_0DH@ONGBNPOP@CPythonTextTail?3?3Initialize?5?9?5C@ ; `string'
-PUBLIC	??_R2STextTail@CPythonTextTail@@8		; CPythonTextTail::STextTail::`RTTI Base Class Array'
+PUBLIC	??_C@_0DM@EALAGA@?5CPythonTextTail?3?3DeleteItemTex@ ; `string'
 PUBLIC	??_R2?$CDynamicPool@USTextTail@CPythonTextTail@@@@8 ; CDynamicPool<CPythonTextTail::STextTail>::`RTTI Base Class Array'
-PUBLIC	??_R2?$CSingleton@VCPythonTextTail@@@@8		; CSingleton<CPythonTextTail>::`RTTI Base Class Array'
 PUBLIC	??_R2CPythonTextTail@@8				; CPythonTextTail::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@STextTail@CPythonTextTail@@8	; CPythonTextTail::STextTail::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R2STextTail@CPythonTextTail@@8		; CPythonTextTail::STextTail::`RTTI Base Class Array'
+PUBLIC	??_R2?$CSingleton@VCPythonTextTail@@@@8		; CSingleton<CPythonTextTail>::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@?$CDynamicPool@USTextTail@CPythonTextTail@@@@8 ; CDynamicPool<CPythonTextTail::STextTail>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonTextTail@@@@8 ; CSingleton<CPythonTextTail>::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R1A@?0A@EA@CPythonTextTail@@8		; CPythonTextTail::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R0?AV?$CDynamicPool@USTextTail@CPythonTextTail@@@@@8 ; CDynamicPool<CPythonTextTail::STextTail> `RTTI Type Descriptor'
+PUBLIC	??_R1A@?0A@EA@STextTail@CPythonTextTail@@8	; CPythonTextTail::STextTail::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonTextTail@@@@8 ; CSingleton<CPythonTextTail>::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R3?$CDynamicPool@USTextTail@CPythonTextTail@@@@8 ; CDynamicPool<CPythonTextTail::STextTail>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AUSTextTail@CPythonTextTail@@@8		; CPythonTextTail::STextTail `RTTI Type Descriptor'
 PUBLIC	??_R3STextTail@CPythonTextTail@@8		; CPythonTextTail::STextTail::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AV?$CSingleton@VCPythonTextTail@@@@@8	; CSingleton<CPythonTextTail> `RTTI Type Descriptor'
+PUBLIC	??_R0?AV?$CDynamicPool@USTextTail@CPythonTextTail@@@@@8 ; CDynamicPool<CPythonTextTail::STextTail> `RTTI Type Descriptor'
 PUBLIC	??_R3?$CSingleton@VCPythonTextTail@@@@8		; CSingleton<CPythonTextTail>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R0?AVCPythonTextTail@@@8			; CPythonTextTail `RTTI Type Descriptor'
+PUBLIC	??_R0?AUSTextTail@CPythonTextTail@@@8		; CPythonTextTail::STextTail `RTTI Type Descriptor'
 PUBLIC	??_R3CPythonTextTail@@8				; CPythonTextTail::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R0?AV?$CSingleton@VCPythonTextTail@@@@@8	; CSingleton<CPythonTextTail> `RTTI Type Descriptor'
+PUBLIC	??_R0?AVCPythonTextTail@@@8			; CPythonTextTail `RTTI Type Descriptor'
 PUBLIC	??_R4?$CDynamicPool@USTextTail@CPythonTextTail@@@@6B@ ; CDynamicPool<CPythonTextTail::STextTail>::`RTTI Complete Object Locator'
-PUBLIC	??_R4STextTail@CPythonTextTail@@6B@		; CPythonTextTail::STextTail::`RTTI Complete Object Locator'
 PUBLIC	??_R4?$CSingleton@VCPythonTextTail@@@@6B@	; CSingleton<CPythonTextTail>::`RTTI Complete Object Locator'
+PUBLIC	??_R4STextTail@CPythonTextTail@@6B@		; CPythonTextTail::STextTail::`RTTI Complete Object Locator'
 PUBLIC	??_R4CPythonTextTail@@6B@			; CPythonTextTail::`RTTI Complete Object Locator'
-PUBLIC	??_7?$CDynamicPool@USTextTail@CPythonTextTail@@@@6B@ ; CDynamicPool<CPythonTextTail::STextTail>::`vftable'
 PUBLIC	??_7?$CSingleton@VCPythonTextTail@@@@6B@	; CSingleton<CPythonTextTail>::`vftable'
+PUBLIC	??_7?$CDynamicPool@USTextTail@CPythonTextTail@@@@6B@ ; CDynamicPool<CPythonTextTail::STextTail>::`vftable'
 PUBLIC	??_7CPythonTextTail@@6B@			; CPythonTextTail::`vftable'
 PUBLIC	??_C@_01NBENCBCI@?$CK@				; `string'
+PUBLIC	?ms_pFont@@3PAVCGraphicText@@A			; ms_pFont
 PUBLIC	?bPKTitleEnable@@3HA				; bPKTitleEnable
 PUBLIC	?gs_TextTail_LivingTime@@3JA			; gs_TextTail_LivingTime
-PUBLIC	?ms_pFont@@3PAVCGraphicText@@A			; ms_pFont
 PUBLIC	??_7STextTail@CPythonTextTail@@6B@		; CPythonTextTail::STextTail::`vftable'
-EXTRN	?Delete@CGraphicTextInstance@@SAXPAV1@@Z:PROC	; CGraphicTextInstance::Delete
 EXTRN	?Delete@CGraphicMarkInstance@@SAXPAV1@@Z:PROC	; CGraphicMarkInstance::Delete
-EXTRN	?SetIndex@CGraphicMarkInstance@@QAEXI@Z:PROC	; CGraphicMarkInstance::SetIndex
-EXTRN	?New@CGraphicTextInstance@@SAPAV1@XZ:PROC	; CGraphicTextInstance::New
 EXTRN	?IsFileExist@CResourceManager@@QAE_NPBD@Z:PROC	; CResourceManager::IsFileExist
-EXTRN	?SetVerticalAlign@CGraphicTextInstance@@QAEXH@Z:PROC ; CGraphicTextInstance::SetVerticalAlign
-EXTRN	?New@CGraphicMarkInstance@@SAPAV1@XZ:PROC	; CGraphicMarkInstance::New
+EXTRN	?Delete@CGraphicTextInstance@@SAXPAV1@@Z:PROC	; CGraphicTextInstance::Delete
 EXTRN	?SetImageFileName@CGraphicMarkInstance@@QAEXPBD@Z:PROC ; CGraphicMarkInstance::SetImageFileName
 EXTRN	?Load@CGraphicMarkInstance@@QAEXXZ:PROC		; CGraphicMarkInstance::Load
+EXTRN	?SetIndex@CGraphicMarkInstance@@QAEXI@Z:PROC	; CGraphicMarkInstance::SetIndex
+EXTRN	?New@CGraphicTextInstance@@SAPAV1@XZ:PROC	; CGraphicTextInstance::New
+EXTRN	?SetVerticalAlign@CGraphicTextInstance@@QAEXH@Z:PROC ; CGraphicTextInstance::SetVerticalAlign
+EXTRN	?New@CGraphicMarkInstance@@SAPAV1@XZ:PROC	; CGraphicMarkInstance::New
 EXTRN	?SetOutline@CGraphicTextInstance@@QAEX_N@Z:PROC	; CGraphicTextInstance::SetOutline
-EXTRN	?RenderBox2d@CScreen@@QAEXMMMMM@Z:PROC		; CScreen::RenderBox2d
-EXTRN	?RenderBar2d@CScreen@@QAEXMMMMM@Z:PROC		; CScreen::RenderBar2d
-EXTRN	?GetOrthoDepth@CPythonGraphic@@QAEMXZ:PROC	; CPythonGraphic::GetOrthoDepth
-EXTRN	?GetWidth@CGraphicMarkInstance@@QAEHXZ:PROC	; CGraphicMarkInstance::GetWidth
 EXTRN	?SetPosition@CGraphicMarkInstance@@QAEXMM@Z:PROC ; CGraphicMarkInstance::SetPosition
 EXTRN	?Render@CGraphicMarkInstance@@QAEXXZ:PROC	; CGraphicMarkInstance::Render
+EXTRN	?RenderBox2d@CScreen@@QAEXMMMMM@Z:PROC		; CScreen::RenderBox2d
+EXTRN	?RenderBar2d@CScreen@@QAEXMMMMM@Z:PROC		; CScreen::RenderBar2d
 EXTRN	?Identity@CScreen@@SAXXZ:PROC			; CScreen::Identity
+EXTRN	?GetOrthoDepth@CPythonGraphic@@QAEMXZ:PROC	; CPythonGraphic::GetOrthoDepth
+EXTRN	?GetWidth@CGraphicMarkInstance@@QAEHXZ:PROC	; CGraphicMarkInstance::GetWidth
 ?ms_pFont@@3PAVCGraphicText@@A DD 01H DUP (?)		; ms_pFont
 _BSS	ENDS
 ;	COMDAT ??_7STextTail@CPythonTextTail@@6B@
@@ -79,15 +80,15 @@ CONST	SEGMENT
 ??_7CPythonTextTail@@6B@ DD FLAT:??_R4CPythonTextTail@@6B@ ; CPythonTextTail::`vftable'
 	DD	FLAT:??_ECPythonTextTail@@UAEPAXI@Z
 CONST	ENDS
-;	COMDAT ??_7?$CSingleton@VCPythonTextTail@@@@6B@
-CONST	SEGMENT
-??_7?$CSingleton@VCPythonTextTail@@@@6B@ DD FLAT:??_R4?$CSingleton@VCPythonTextTail@@@@6B@ ; CSingleton<CPythonTextTail>::`vftable'
-	DD	FLAT:??_E?$CSingleton@VCPythonTextTail@@@@UAEPAXI@Z
-CONST	ENDS
 ;	COMDAT ??_7?$CDynamicPool@USTextTail@CPythonTextTail@@@@6B@
 CONST	SEGMENT
 ??_7?$CDynamicPool@USTextTail@CPythonTextTail@@@@6B@ DD FLAT:??_R4?$CDynamicPool@USTextTail@CPythonTextTail@@@@6B@ ; CDynamicPool<CPythonTextTail::STextTail>::`vftable'
 	DD	FLAT:??_E?$CDynamicPool@USTextTail@CPythonTextTail@@@@UAEPAXI@Z
+CONST	ENDS
+;	COMDAT ??_7?$CSingleton@VCPythonTextTail@@@@6B@
+CONST	SEGMENT
+??_7?$CSingleton@VCPythonTextTail@@@@6B@ DD FLAT:??_R4?$CSingleton@VCPythonTextTail@@@@6B@ ; CSingleton<CPythonTextTail>::`vftable'
+	DD	FLAT:??_E?$CSingleton@VCPythonTextTail@@@@UAEPAXI@Z
 CONST	ENDS
 ;	COMDAT ??_R4CPythonTextTail@@6B@
 rdata$r	SEGMENT
@@ -97,14 +98,6 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AVCPythonTextTail@@@8
 	DD	FLAT:??_R3CPythonTextTail@@8
 rdata$r	ENDS
-;	COMDAT ??_R4?$CSingleton@VCPythonTextTail@@@@6B@
-rdata$r	SEGMENT
-??_R4?$CSingleton@VCPythonTextTail@@@@6B@ DD 00H	; CSingleton<CPythonTextTail>::`RTTI Complete Object Locator'
-	DD	00H
-	DD	00H
-	DD	FLAT:??_R0?AV?$CSingleton@VCPythonTextTail@@@@@8
-	DD	FLAT:??_R3?$CSingleton@VCPythonTextTail@@@@8
-rdata$r	ENDS
 ;	COMDAT ??_R4STextTail@CPythonTextTail@@6B@
 rdata$r	SEGMENT
 ??_R4STextTail@CPythonTextTail@@6B@ DD 00H		; CPythonTextTail::STextTail::`RTTI Complete Object Locator'
@@ -112,6 +105,14 @@ rdata$r	SEGMENT
 	DD	00H
 	DD	FLAT:??_R0?AUSTextTail@CPythonTextTail@@@8
 	DD	FLAT:??_R3STextTail@CPythonTextTail@@8
+rdata$r	ENDS
+;	COMDAT ??_R4?$CSingleton@VCPythonTextTail@@@@6B@
+rdata$r	SEGMENT
+??_R4?$CSingleton@VCPythonTextTail@@@@6B@ DD 00H	; CSingleton<CPythonTextTail>::`RTTI Complete Object Locator'
+	DD	00H
+	DD	00H
+	DD	FLAT:??_R0?AV?$CSingleton@VCPythonTextTail@@@@@8
+	DD	FLAT:??_R3?$CSingleton@VCPythonTextTail@@@@8
 rdata$r	ENDS
 ;	COMDAT ??_R4?$CDynamicPool@USTextTail@CPythonTextTail@@@@6B@
 rdata$r	SEGMENT
@@ -121,6 +122,18 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$CDynamicPool@USTextTail@CPythonTextTail@@@@@8
 	DD	FLAT:??_R3?$CDynamicPool@USTextTail@CPythonTextTail@@@@8
 rdata$r	ENDS
+;	COMDAT ??_R0?AVCPythonTextTail@@@8
+data$rs	SEGMENT
+??_R0?AVCPythonTextTail@@@8 DD FLAT:??_7type_info@@6B@	; CPythonTextTail `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCPythonTextTail@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCPythonTextTail@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCPythonTextTail@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonTextTail> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCPythonTextTail@@@@', 00H
+data$rs	ENDS
 ;	COMDAT ??_R3CPythonTextTail@@8
 rdata$r	SEGMENT
 ??_R3CPythonTextTail@@8 DD 00H				; CPythonTextTail::`RTTI Class Hierarchy Descriptor'
@@ -128,11 +141,11 @@ rdata$r	SEGMENT
 	DD	02H
 	DD	FLAT:??_R2CPythonTextTail@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonTextTail@@@8
+;	COMDAT ??_R0?AUSTextTail@CPythonTextTail@@@8
 data$rs	SEGMENT
-??_R0?AVCPythonTextTail@@@8 DD FLAT:??_7type_info@@6B@	; CPythonTextTail `RTTI Type Descriptor'
+??_R0?AUSTextTail@CPythonTextTail@@@8 DD FLAT:??_7type_info@@6B@ ; CPythonTextTail::STextTail `RTTI Type Descriptor'
 	DD	00H
-	DB	'.?AVCPythonTextTail@@', 00H
+	DB	'.?AUSTextTail@CPythonTextTail@@', 00H
 data$rs	ENDS
 ;	COMDAT ??_R3?$CSingleton@VCPythonTextTail@@@@8
 rdata$r	SEGMENT
@@ -141,11 +154,11 @@ rdata$r	SEGMENT
 	DD	01H
 	DD	FLAT:??_R2?$CSingleton@VCPythonTextTail@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCPythonTextTail@@@@@8
+;	COMDAT ??_R0?AV?$CDynamicPool@USTextTail@CPythonTextTail@@@@@8
 data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCPythonTextTail@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonTextTail> `RTTI Type Descriptor'
+??_R0?AV?$CDynamicPool@USTextTail@CPythonTextTail@@@@@8 DD FLAT:??_7type_info@@6B@ ; CDynamicPool<CPythonTextTail::STextTail> `RTTI Type Descriptor'
 	DD	00H
-	DB	'.?AV?$CSingleton@VCPythonTextTail@@@@', 00H
+	DB	'.?AV?$CDynamicPool@USTextTail@CPythonTextTail@@@@', 00H
 data$rs	ENDS
 ;	COMDAT ??_R3STextTail@CPythonTextTail@@8
 rdata$r	SEGMENT
@@ -154,34 +167,12 @@ rdata$r	SEGMENT
 	DD	01H
 	DD	FLAT:??_R2STextTail@CPythonTextTail@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AUSTextTail@CPythonTextTail@@@8
-data$rs	SEGMENT
-??_R0?AUSTextTail@CPythonTextTail@@@8 DD FLAT:??_7type_info@@6B@ ; CPythonTextTail::STextTail `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AUSTextTail@CPythonTextTail@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R3?$CDynamicPool@USTextTail@CPythonTextTail@@@@8
 rdata$r	SEGMENT
 ??_R3?$CDynamicPool@USTextTail@CPythonTextTail@@@@8 DD 00H ; CDynamicPool<CPythonTextTail::STextTail>::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	01H
 	DD	FLAT:??_R2?$CDynamicPool@USTextTail@CPythonTextTail@@@@8
-rdata$r	ENDS
-;	COMDAT ??_R0?AV?$CDynamicPool@USTextTail@CPythonTextTail@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CDynamicPool@USTextTail@CPythonTextTail@@@@@8 DD FLAT:??_7type_info@@6B@ ; CDynamicPool<CPythonTextTail::STextTail> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AV?$CDynamicPool@USTextTail@CPythonTextTail@@@@', 00H
-data$rs	ENDS
-;	COMDAT ??_R1A@?0A@EA@CPythonTextTail@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@CPythonTextTail@@8 DD FLAT:??_R0?AVCPythonTextTail@@@8 ; CPythonTextTail::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	01H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3CPythonTextTail@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonTextTail@@@@8
 rdata$r	SEGMENT
@@ -193,16 +184,6 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$CSingleton@VCPythonTextTail@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@?$CDynamicPool@USTextTail@CPythonTextTail@@@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@?$CDynamicPool@USTextTail@CPythonTextTail@@@@8 DD FLAT:??_R0?AV?$CDynamicPool@USTextTail@CPythonTextTail@@@@@8 ; CDynamicPool<CPythonTextTail::STextTail>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	00H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3?$CDynamicPool@USTextTail@CPythonTextTail@@@@8
-rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@STextTail@CPythonTextTail@@8
 rdata$r	SEGMENT
 ??_R1A@?0A@EA@STextTail@CPythonTextTail@@8 DD FLAT:??_R0?AUSTextTail@CPythonTextTail@@@8 ; CPythonTextTail::STextTail::`RTTI Base Class Descriptor at (0,-1,0,64)'
@@ -213,56 +194,80 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3STextTail@CPythonTextTail@@8
 rdata$r	ENDS
-;	COMDAT ??_R2CPythonTextTail@@8
+;	COMDAT ??_R1A@?0A@EA@CPythonTextTail@@8
 rdata$r	SEGMENT
-??_R2CPythonTextTail@@8 DD FLAT:??_R1A@?0A@EA@CPythonTextTail@@8 ; CPythonTextTail::`RTTI Base Class Array'
-	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonTextTail@@@@8
+??_R1A@?0A@EA@CPythonTextTail@@8 DD FLAT:??_R0?AVCPythonTextTail@@@8 ; CPythonTextTail::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3CPythonTextTail@@8
+rdata$r	ENDS
+;	COMDAT ??_R1A@?0A@EA@?$CDynamicPool@USTextTail@CPythonTextTail@@@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@?$CDynamicPool@USTextTail@CPythonTextTail@@@@8 DD FLAT:??_R0?AV?$CDynamicPool@USTextTail@CPythonTextTail@@@@@8 ; CDynamicPool<CPythonTextTail::STextTail>::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	00H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3?$CDynamicPool@USTextTail@CPythonTextTail@@@@8
 rdata$r	ENDS
 ;	COMDAT ??_R2?$CSingleton@VCPythonTextTail@@@@8
 rdata$r	SEGMENT
 ??_R2?$CSingleton@VCPythonTextTail@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonTextTail@@@@8 ; CSingleton<CPythonTextTail>::`RTTI Base Class Array'
 rdata$r	ENDS
-;	COMDAT ??_R2?$CDynamicPool@USTextTail@CPythonTextTail@@@@8
-rdata$r	SEGMENT
-??_R2?$CDynamicPool@USTextTail@CPythonTextTail@@@@8 DD FLAT:??_R1A@?0A@EA@?$CDynamicPool@USTextTail@CPythonTextTail@@@@8 ; CDynamicPool<CPythonTextTail::STextTail>::`RTTI Base Class Array'
-rdata$r	ENDS
 ;	COMDAT ??_R2STextTail@CPythonTextTail@@8
 rdata$r	SEGMENT
 ??_R2STextTail@CPythonTextTail@@8 DD FLAT:??_R1A@?0A@EA@STextTail@CPythonTextTail@@8 ; CPythonTextTail::STextTail::`RTTI Base Class Array'
 rdata$r	ENDS
-;	COMDAT ??_C@_0DH@ONGBNPOP@CPythonTextTail?3?3Initialize?5?9?5C@
-CONST	SEGMENT
-??_C@_0DH@ONGBNPOP@CPythonTextTail?3?3Initialize?5?9?5C@ DB 'CPythonTextT'
-	DB	'ail::Initialize - CANNOT_FIND_DEFAULT_FONT', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0DO@PHLLOPOI@CPythonTextTail?3?3DeleteCharacte@
-CONST	SEGMENT
-??_C@_0DO@PHLLOPOI@CPythonTextTail?3?3DeleteCharacte@ DB 'CPythonTextTail'
-	DB	'::DeleteCharacterTextTail - Find VID[%d] Error', 00H ; `string'
-CONST	ENDS
+;	COMDAT ??_R2CPythonTextTail@@8
+rdata$r	SEGMENT
+??_R2CPythonTextTail@@8 DD FLAT:??_R1A@?0A@EA@CPythonTextTail@@8 ; CPythonTextTail::`RTTI Base Class Array'
+	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonTextTail@@@@8
+rdata$r	ENDS
+;	COMDAT ??_R2?$CDynamicPool@USTextTail@CPythonTextTail@@@@8
+rdata$r	SEGMENT
+??_R2?$CDynamicPool@USTextTail@CPythonTextTail@@@@8 DD FLAT:??_R1A@?0A@EA@?$CDynamicPool@USTextTail@CPythonTextTail@@@@8 ; CDynamicPool<CPythonTextTail::STextTail>::`RTTI Base Class Array'
+rdata$r	ENDS
 ;	COMDAT ??_C@_0DM@EALAGA@?5CPythonTextTail?3?3DeleteItemTex@
 CONST	SEGMENT
 ??_C@_0DM@EALAGA@?5CPythonTextTail?3?3DeleteItemTex@ DB ' CPythonTextTail'
 	DB	'::DeleteItemTextTail - None Item Text Tail', 0aH, 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BC@MKHCBNFN@?5?$HMcFF01796F?$FLG?$FN?$HMr?5@
+;	COMDAT ??_C@_0DH@ONGBNPOP@CPythonTextTail?3?3Initialize?5?9?5C@
 CONST	SEGMENT
-??_C@_0BC@MKHCBNFN@?5?$HMcFF01796F?$FLG?$FN?$HMr?5@ DB ' |cFF01796F[G]|r '
-	DB	00H						; `string'
+??_C@_0DH@ONGBNPOP@CPythonTextTail?3?3Initialize?5?9?5C@ DB 'CPythonTextT'
+	DB	'ail::Initialize - CANNOT_FIND_DEFAULT_FONT', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0CH@FJLHMJJF@d?3?1ymir?5work?1ui?1game?1emoji?1flag@
 CONST	SEGMENT
 ??_C@_0CH@FJLHMJJF@d?3?1ymir?5work?1ui?1game?1emoji?1flag@ DB 'd:/ymir wo'
 	DB	'rk/ui/game/emoji/flag/%s.tga', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@HLPIIHNN@Tahoma?312?4fnt@
+;	COMDAT ??_C@_0DO@PHLLOPOI@CPythonTextTail?3?3DeleteCharacte@
 CONST	SEGMENT
-??_C@_0O@HLPIIHNN@Tahoma?312?4fnt@ DB 'Tahoma:12.fnt', 00H ; `string'
+??_C@_0DO@PHLLOPOI@CPythonTextTail?3?3DeleteCharacte@ DB 'CPythonTextTail'
+	DB	'::DeleteCharacterTextTail - Find VID[%d] Error', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BC@IBMACGLG@?5?$HMcFFFF8C00?$FLL?$FN?$HMr?5@
 CONST	SEGMENT
 ??_C@_0BC@IBMACGLG@?5?$HMcFFFF8C00?$FLL?$FN?$HMr?5@ DB ' |cFFFF8C00[L]|r '
 	DB	00H						; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BC@MKHCBNFN@?5?$HMcFF01796F?$FLG?$FN?$HMr?5@
+CONST	SEGMENT
+??_C@_0BC@MKHCBNFN@?5?$HMcFF01796F?$FLG?$FN?$HMr?5@ DB ' |cFF01796F[G]|r '
+	DB	00H						; `string'
+CONST	ENDS
+;	COMDAT ??_C@_09FMLOJBKI@?$CFs?5?9?5?$CI?$CFu?$CJ@
+CONST	SEGMENT
+??_C@_09FMLOJBKI@?$CFs?5?9?5?$CI?$CFu?$CJ@ DB '%s - (%u)', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0O@HLPIIHNN@Tahoma?312?4fnt@
+CONST	SEGMENT
+??_C@_0O@HLPIIHNN@Tahoma?312?4fnt@ DB 'Tahoma:12.fnt', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_1DI@JNPFFBHI@?$AAg?$AAs?$AA_?$AAT?$AAe?$AAx?$AAt?$AAT?$AAa?$AAi?$AAl?$AA_?$AAL?$AAi?$AAv@
 CONST	SEGMENT
@@ -614,11 +619,13 @@ _BSS	SEGMENT
 _BSS	ENDS
 ;	COMDAT xdata$x
 xdata$x	SEGMENT
-__ehfuncinfo$?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z DQ 00000000419930522r ; 8.69997e-314
+__ehfuncinfo$?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z DD 019930522H
+	DD	04H
 	DD	FLAT:__unwindtable$?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z
-	DQ	00000000000000000r		; 0
-	DQ	00000000000000000r		; 0
-	DQ	00000000100000000r		; 2.122e-314
+	DD	2 DUP(00H)
+	DD	2 DUP(00H)
+	DD	00H
+	DD	01H
 __unwindtable$?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z DD 0ffffffffH
 	DD	FLAT:__unwindfunclet$?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z$1
 	DD	0ffffffffH
@@ -977,4 +984,2115 @@ __unwindtable$??0?$_Tree_temp_node_alloc@V?$allocator@U?$_Tree_node@U?$pair@$$CB
 ?emotionIcons$initializer$@@3P6AXXZA DD FLAT:??__EemotionIcons@@YAXXZ ; emotionIcons$initializer$
 ?skillIndexes$initializer$@@3P6AXXZA DD FLAT:??__EskillIndexes@@YAXXZ ; skillIndexes$initializer$
 ?guildSkills$initializer$@@3P6AXXZA DD FLAT:??__EguildSkills@@YAXXZ ; guildSkills$initializer$
+; Function compile flags: /Ogtp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+;	COMDAT ?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z
+_TEXT	SEGMENT
+$T450 = -428						; size = 8
+$T452 = -420						; size = 8
+_c_rColor$GSCopy$1$ = -416				; size = 4
+_this$GSCopy$1$ = -412					; size = 4
+_pCharacterInstance$1$ = -408				; size = 4
+_pLanguageImage$1$ = -408				; size = 4
+_pLanguageImage2$1$ = -408				; size = 4
+tv168 = -404						; size = 4
+tv8372 = -404						; size = 4
+_raceNum$1$ = -404					; size = 4
+__Old_capacity$1$ = -404				; size = 4
+_displayName$1$ = -400					; size = 4
+_dwMarkID$1$ = -400					; size = 4
+$T454 = -400						; size = 4
+_bLanguage$1$ = -393					; size = 1
+_bLanguage2$1$ = -393					; size = 1
+_markImagePath$455 = -392				; size = 24
+_strGuildName$456 = -368				; size = 24
+_langName$457 = -368					; size = 24
+_langName2$458 = -368					; size = 24
+_szFileName$459 = -344					; size = 256
+_szFileName$460 = -344					; size = 256
+_chrName$ = -88						; size = 64
+__$ArrayPad$ = -20					; size = 4
+__$EHRec$ = -12						; size = 12
+_dwGuildID$ = 8						; size = 4
+_dwGuildLeader$ = 12					; size = 1
+_dwVirtualID$ = 16					; size = 4
+_c_rColor$ = 20						; size = 4
+_fAddHeight$ = 24					; size = 4
+?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z PROC ; CPythonTextTail::RegisterCharacterTextTail, COMDAT
+; _this$ = ecx
+
+; 619  : {
+
+  00000	53		 push	 ebx
+  00001	8b dc		 mov	 ebx, esp
+  00003	83 ec 08	 sub	 esp, 8
+  00006	83 e4 f8	 and	 esp, -8			; fffffff8H
+  00009	83 c4 04	 add	 esp, 4
+  0000c	55		 push	 ebp
+  0000d	8b 6b 04	 mov	 ebp, DWORD PTR [ebx+4]
+  00010	89 6c 24 04	 mov	 DWORD PTR [esp+4], ebp
+  00014	8b ec		 mov	 ebp, esp
+  00016	6a ff		 push	 -1
+  00018	68 00 00 00 00	 push	 __ehhandler$?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z
+  0001d	64 a1 00 00 00
+	00		 mov	 eax, DWORD PTR fs:0
+  00023	50		 push	 eax
+  00024	53		 push	 ebx
+  00025	81 ec a0 01 00
+	00		 sub	 esp, 416		; 000001a0H
+  0002b	a1 00 00 00 00	 mov	 eax, DWORD PTR ___security_cookie
+  00030	33 c5		 xor	 eax, ebp
+  00032	89 45 ec	 mov	 DWORD PTR __$ArrayPad$[ebp], eax
+  00035	56		 push	 esi
+  00036	57		 push	 edi
+  00037	50		 push	 eax
+  00038	8d 45 f4	 lea	 eax, DWORD PTR __$EHRec$[ebp]
+  0003b	64 a3 00 00 00
+	00		 mov	 DWORD PTR fs:0, eax
+  00041	89 8d 64 fe ff
+	ff		 mov	 DWORD PTR _this$GSCopy$1$[ebp], ecx
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  00047	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonCharacterManager@@@@0PAVCPythonCharacterManager@@A ; CSingleton<CPythonCharacterManager>::ms_singleton
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 619  : {
+
+  0004d	8b 43 14	 mov	 eax, DWORD PTR _c_rColor$[ebx]
+  00050	89 85 60 fe ff
+	ff		 mov	 DWORD PTR _c_rColor$GSCopy$1$[ebp], eax
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  00056	85 c9		 test	 ecx, ecx
+  00058	75 1a		 jne	 SHORT $LN57@RegisterCh
+  0005a	6a 1a		 push	 26			; 0000001aH
+  0005c	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  00061	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  00066	e8 00 00 00 00	 call	 __wassert
+  0006b	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonCharacterManager@@@@0PAVCPythonCharacterManager@@A ; CSingleton<CPythonCharacterManager>::ms_singleton
+  00071	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN57@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 620  : 	CInstanceBase* pCharacterInstance = CPythonCharacterManager::Instance().GetInstancePtr(dwVirtualID);
+
+  00074	8b 41 04	 mov	 eax, DWORD PTR [ecx+4]
+  00077	83 c1 04	 add	 ecx, 4
+  0007a	ff 73 10	 push	 DWORD PTR _dwVirtualID$[ebx]
+  0007d	8b 40 08	 mov	 eax, DWORD PTR [eax+8]
+  00080	ff d0		 call	 eax
+  00082	8b f0		 mov	 esi, eax
+  00084	89 b5 68 fe ff
+	ff		 mov	 DWORD PTR _pCharacterInstance$1$[ebp], esi
+
+; 621  : 
+; 622  : 	if (!pCharacterInstance)
+
+  0008a	85 f6		 test	 esi, esi
+  0008c	0f 84 23 0a 00
+	00		 je	 $LN1@RegisterCh
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  00092	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonCharacterManager@@@@0PAVCPythonCharacterManager@@A ; CSingleton<CPythonCharacterManager>::ms_singleton
+  00098	85 c9		 test	 ecx, ecx
+  0009a	75 1a		 jne	 SHORT $LN60@RegisterCh
+  0009c	6a 1a		 push	 26			; 0000001aH
+  0009e	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  000a3	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  000a8	e8 00 00 00 00	 call	 __wassert
+  000ad	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonCharacterManager@@@@0PAVCPythonCharacterManager@@A ; CSingleton<CPythonCharacterManager>::ms_singleton
+  000b3	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN60@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 626  : 	CInstanceBase* pInstance = CPythonCharacterManager::Instance().GetMainInstancePtr();
+
+  000b6	e8 00 00 00 00	 call	 ?GetMainInstancePtr@CPythonCharacterManager@@QAEPAVCInstanceBase@@XZ ; CPythonCharacterManager::GetMainInstancePtr
+
+; 627  : 
+; 628  : 	uint32_t raceNum{ pCharacterInstance->GetRace() };
+
+  000bb	8b ce		 mov	 ecx, esi
+  000bd	8b f8		 mov	 edi, eax
+  000bf	e8 00 00 00 00	 call	 ?GetRace@CInstanceBase@@QAEKXZ ; CInstanceBase::GetRace
+
+; 629  : 	const char* originalName = pCharacterInstance->GetNameString();
+
+  000c4	8b ce		 mov	 ecx, esi
+  000c6	89 85 6c fe ff
+	ff		 mov	 DWORD PTR _raceNum$1$[ebp], eax
+  000cc	e8 00 00 00 00	 call	 ?GetNameString@CInstanceBase@@QAEPBDXZ ; CInstanceBase::GetNameString
+  000d1	89 85 70 fe ff
+	ff		 mov	 DWORD PTR _displayName$1$[ebp], eax
+
+; 630  : 	const char* displayName = originalName;
+; 631  : 
+; 632  : 	char chrName[CHARACTER_NAME_MAX_LEN + 1 + 15];
+; 633  : 
+; 634  : 	if (pInstance)
+
+  000d7	85 ff		 test	 edi, edi
+  000d9	74 42		 je	 SHORT $LN8@RegisterCh
+
+; 635  : 	{
+; 636  : 		if (pInstance->IsGameMaster() && pInstance != pCharacterInstance && !pCharacterInstance->IsPC())
+
+  000db	8b cf		 mov	 ecx, edi
+  000dd	e8 00 00 00 00	 call	 ?IsGameMaster@CInstanceBase@@QAEHXZ ; CInstanceBase::IsGameMaster
+  000e2	85 c0		 test	 eax, eax
+  000e4	74 37		 je	 SHORT $LN8@RegisterCh
+  000e6	3b fe		 cmp	 edi, esi
+  000e8	74 33		 je	 SHORT $LN8@RegisterCh
+  000ea	8b ce		 mov	 ecx, esi
+  000ec	e8 00 00 00 00	 call	 ?IsPC@CInstanceBase@@QAEHXZ ; CInstanceBase::IsPC
+  000f1	85 c0		 test	 eax, eax
+  000f3	75 28		 jne	 SHORT $LN8@RegisterCh
+
+; 637  : 		{
+; 638  : 			snprintf(chrName, sizeof(chrName), "%s - (%u)", originalName, raceNum);
+
+  000f5	ff b5 6c fe ff
+	ff		 push	 DWORD PTR _raceNum$1$[ebp]
+  000fb	8d 45 a8	 lea	 eax, DWORD PTR _chrName$[ebp]
+  000fe	ff b5 70 fe ff
+	ff		 push	 DWORD PTR _displayName$1$[ebp]
+  00104	68 00 00 00 00	 push	 OFFSET ??_C@_09FMLOJBKI@?$CFs?5?9?5?$CI?$CFu?$CJ@
+  00109	6a 40		 push	 64			; 00000040H
+  0010b	50		 push	 eax
+  0010c	e8 00 00 00 00	 call	 __snprintf
+
+; 639  : 			displayName = chrName;
+
+  00111	8d 45 a8	 lea	 eax, DWORD PTR _chrName$[ebp]
+  00114	83 c4 14	 add	 esp, 20			; 00000014H
+  00117	89 85 70 fe ff
+	ff		 mov	 DWORD PTR _displayName$1$[ebp], eax
+$LN8@RegisterCh:
+
+; 645  : 	TTextTail* pTextTail = RegisterTextTail(dwVirtualID, displayName, pCharacterInstance->GetGraphicThingInstancePtr(), pCharacterInstance->GetGraphicThingInstanceRef().GetHeight() + fAddHeight, c_rColor);
+
+  0011d	8b ce		 mov	 ecx, esi
+  0011f	e8 00 00 00 00	 call	 ?GetGraphicThingInstanceRef@CInstanceBase@@QAEAAVCActorInstance@@XZ ; CInstanceBase::GetGraphicThingInstanceRef
+  00124	8b c8		 mov	 ecx, eax
+  00126	e8 00 00 00 00	 call	 ?GetHeight@CActorInstance@@QAEMXZ ; CActorInstance::GetHeight
+  0012b	d8 43 18	 fadd	 DWORD PTR _fAddHeight$[ebx]
+  0012e	8b ce		 mov	 ecx, esi
+  00130	d9 9d 6c fe ff
+	ff		 fstp	 DWORD PTR tv168[ebp]
+  00136	e8 00 00 00 00	 call	 ?GetGraphicThingInstancePtr@CInstanceBase@@QAEPAVCActorInstance@@XZ ; CInstanceBase::GetGraphicThingInstancePtr
+  0013b	83 ec 18	 sub	 esp, 24			; 00000018H
+  0013e	0f 57 c0	 xorps	 xmm0, xmm0
+  00141	8b cc		 mov	 ecx, esp
+  00143	8b d0		 mov	 edx, eax
+  00145	ff b5 60 fe ff
+	ff		 push	 DWORD PTR _c_rColor$GSCopy$1$[ebp]
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 493  :         _CONSTEXPR20 _Bxty() noexcept : _Buf() {} // user-provided, for fancy pointers
+
+  0014b	0f 11 01	 movups	 XMMWORD PTR [ecx], xmm0
+
+; 890  :             _My_data._Mysize = _Count;
+
+  0014e	c7 41 10 0d 00
+	00 00		 mov	 DWORD PTR [ecx+16], 13	; 0000000dH
+
+; 891  :             _My_data._Myres  = _Small_string_capacity;
+
+  00155	c7 41 14 0f 00
+	00 00		 mov	 DWORD PTR [ecx+20], 15	; 0000000fH
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
+
+  0015c	f3 0f 7e 05 00
+	00 00 00	 movq	 xmm0, QWORD PTR ??_C@_0O@HLPIIHNN@Tahoma?312?4fnt@
+  00164	66 0f d6 01	 movq	 QWORD PTR [ecx], xmm0
+  00168	a1 08 00 00 00	 mov	 eax, DWORD PTR ??_C@_0O@HLPIIHNN@Tahoma?312?4fnt@+8
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 645  : 	TTextTail* pTextTail = RegisterTextTail(dwVirtualID, displayName, pCharacterInstance->GetGraphicThingInstancePtr(), pCharacterInstance->GetGraphicThingInstanceRef().GetHeight() + fAddHeight, c_rColor);
+
+  0016d	f3 0f 10 85 6c
+	fe ff ff	 movss	 xmm0, DWORD PTR tv168[ebp]
+  00175	51		 push	 ecx
+  00176	f3 0f 11 04 24	 movss	 DWORD PTR [esp], xmm0
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
+
+  0017b	89 41 08	 mov	 DWORD PTR [ecx+8], eax
+  0017e	a0 0c 00 00 00	 mov	 al, BYTE PTR ??_C@_0O@HLPIIHNN@Tahoma?312?4fnt@+12
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 645  : 	TTextTail* pTextTail = RegisterTextTail(dwVirtualID, displayName, pCharacterInstance->GetGraphicThingInstancePtr(), pCharacterInstance->GetGraphicThingInstanceRef().GetHeight() + fAddHeight, c_rColor);
+
+  00183	52		 push	 edx
+  00184	ff b5 70 fe ff
+	ff		 push	 DWORD PTR _displayName$1$[ebp]
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
+
+  0018a	88 41 0c	 mov	 BYTE PTR [ecx+12], al
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 645  : 	TTextTail* pTextTail = RegisterTextTail(dwVirtualID, displayName, pCharacterInstance->GetGraphicThingInstancePtr(), pCharacterInstance->GetGraphicThingInstanceRef().GetHeight() + fAddHeight, c_rColor);
+
+  0018d	ff 73 10	 push	 DWORD PTR _dwVirtualID$[ebx]
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 898  :                 _Traits::assign(_My_data._Bx._Buf[_Count], _Elem());
+
+  00190	c6 41 0d 00	 mov	 BYTE PTR [ecx+13], 0
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 645  : 	TTextTail* pTextTail = RegisterTextTail(dwVirtualID, displayName, pCharacterInstance->GetGraphicThingInstancePtr(), pCharacterInstance->GetGraphicThingInstanceRef().GetHeight() + fAddHeight, c_rColor);
+
+  00194	8b 8d 64 fe ff
+	ff		 mov	 ecx, DWORD PTR _this$GSCopy$1$[ebp]
+  0019a	e8 00 00 00 00	 call	 ?RegisterTextTail@CPythonTextTail@@IAEPAUSTextTail@1@KPBDPAVCGraphicObjectInstance@@MABUD3DXCOLOR@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z ; CPythonTextTail::RegisterTextTail
+  0019f	8b f8		 mov	 edi, eax
+
+; 646  : #else
+; 647  : 	TTextTail* pTextTail = RegisterTextTail(dwVirtualID, pCharacterInstance->GetNameString(), pCharacterInstance->GetGraphicThingInstancePtr(), pCharacterInstance->GetGraphicThingInstanceRef().GetHeight() + fAddHeight, c_rColor);
+; 648  : #endif
+; 649  : 
+; 650  : 	CGraphicTextInstance* pTextInstance = pTextTail->pTextInstance;
+; 651  : 	pTextInstance->SetOutline(true);
+
+  001a1	6a 01		 push	 1
+  001a3	8b 77 04	 mov	 esi, DWORD PTR [edi+4]
+  001a6	8b ce		 mov	 ecx, esi
+  001a8	e8 00 00 00 00	 call	 ?SetOutline@CGraphicTextInstance@@QAEX_N@Z ; CGraphicTextInstance::SetOutline
+
+; 652  : 	pTextInstance->SetVerticalAlign(CGraphicTextInstance::VERTICAL_ALIGN_BOTTOM);
+
+  001ad	6a 30		 push	 48			; 00000030H
+  001af	8b ce		 mov	 ecx, esi
+  001b1	e8 00 00 00 00	 call	 ?SetVerticalAlign@CGraphicTextInstance@@QAEXH@Z ; CGraphicTextInstance::SetVerticalAlign
+
+; 653  : 
+; 654  : 	pTextTail->pMarkInstance = nullptr;
+; 655  : 	pTextTail->pGuildNameTextInstance = nullptr;
+; 656  : 	pTextTail->pTitleTextInstance = nullptr;
+; 657  : 	pTextTail->pLevelTextInstance = nullptr;
+; 658  : #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
+; 659  : 	pTextTail->pLanguageInstance = nullptr;
+; 660  : 	pTextTail->pLanguageInstance2 = nullptr;
+; 661  : #endif
+; 662  : #ifdef ENABLE_TITLE_SYSTEM
+; 663  : 	pTextTail->pTitleSystemTextInstance = nullptr;
+; 664  : #endif
+; 665  : #ifdef ENABLE_SHOW_MOB_INFO
+; 666  : 	pTextTail->pAIFlagTextInstance = nullptr;
+; 667  : #endif
+; 668  : 
+; 669  : 	if (0 != dwGuildID)
+
+  001b6	83 7b 08 00	 cmp	 DWORD PTR _dwGuildID$[ebx], 0
+  001ba	c7 47 0c 00 00
+	00 00		 mov	 DWORD PTR [edi+12], 0
+  001c1	c7 47 10 00 00
+	00 00		 mov	 DWORD PTR [edi+16], 0
+  001c8	c7 47 14 00 00
+	00 00		 mov	 DWORD PTR [edi+20], 0
+  001cf	c7 47 18 00 00
+	00 00		 mov	 DWORD PTR [edi+24], 0
+  001d6	c7 47 1c 00 00
+	00 00		 mov	 DWORD PTR [edi+28], 0
+  001dd	c7 47 20 00 00
+	00 00		 mov	 DWORD PTR [edi+32], 0
+  001e4	c7 47 24 00 00
+	00 00		 mov	 DWORD PTR [edi+36], 0
+  001eb	c7 47 28 00 00
+	00 00		 mov	 DWORD PTR [edi+40], 0
+  001f2	0f 84 c9 03 00
+	00		 je	 $LN186@RegisterCh
+
+; 671  : 		pTextTail->pMarkInstance = CGraphicMarkInstance::New();
+
+  001f8	e8 00 00 00 00	 call	 ?New@CGraphicMarkInstance@@SAPAV1@XZ ; CGraphicMarkInstance::New
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 67   : 		assert(ms_singleton);
+
+  001fd	8b 35 00 00 00
+	00		 mov	 esi, DWORD PTR ?ms_singleton@?$singleton@VCGuildMarkManager@@@@0PAVCGuildMarkManager@@A ; singleton<CGuildMarkManager>::ms_singleton
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 671  : 		pTextTail->pMarkInstance = CGraphicMarkInstance::New();
+
+  00203	89 47 0c	 mov	 DWORD PTR [edi+12], eax
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 67   : 		assert(ms_singleton);
+
+  00206	85 f6		 test	 esi, esi
+  00208	75 1a		 jne	 SHORT $LN134@RegisterCh
+  0020a	6a 43		 push	 67			; 00000043H
+  0020c	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  00211	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  00216	e8 00 00 00 00	 call	 __wassert
+  0021b	8b 35 00 00 00
+	00		 mov	 esi, DWORD PTR ?ms_singleton@?$singleton@VCGuildMarkManager@@@@0PAVCGuildMarkManager@@A ; singleton<CGuildMarkManager>::ms_singleton
+  00221	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN134@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 673  : 		DWORD dwMarkID = CGuildMarkManager::Instance().GetMarkID(dwGuildID);
+
+  00224	ff 73 08	 push	 DWORD PTR _dwGuildID$[ebx]
+  00227	8b ce		 mov	 ecx, esi
+  00229	e8 00 00 00 00	 call	 ?GetMarkID@CGuildMarkManager@@QAEKK@Z ; CGuildMarkManager::GetMarkID
+  0022e	89 85 70 fe ff
+	ff		 mov	 DWORD PTR _dwMarkID$1$[ebp], eax
+
+; 674  : 
+; 675  : 		if (dwMarkID != CGuildMarkManager::INVALID_MARK_ID)
+
+  00234	83 f8 ff	 cmp	 eax, -1
+  00237	0f 84 11 01 00
+	00		 je	 $LN230@RegisterCh
+  0023d	0f 57 c0	 xorps	 xmm0, xmm0
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 860  :         _My_data._Mysize = 0;
+
+  00240	c7 85 88 fe ff
+	ff 00 00 00 00	 mov	 DWORD PTR _markImagePath$455[ebp+16], 0
+
+; 493  :         _CONSTEXPR20 _Bxty() noexcept : _Buf() {} // user-provided, for fancy pointers
+
+  0024a	0f 11 85 78 fe
+	ff ff		 movups	 XMMWORD PTR _markImagePath$455[ebp], xmm0
+
+; 861  :         _My_data._Myres  = _Small_string_capacity;
+
+  00251	c7 85 8c fe ff
+	ff 0f 00 00 00	 mov	 DWORD PTR _markImagePath$455[ebp+20], 15 ; 0000000fH
+
+; 862  :         _My_data._Activate_SSO_buffer();
+; 863  : 
+; 864  :         // the _Traits::assign is last so the codegen doesn't think the char write can alias this
+; 865  :         _Traits::assign(_My_data._Bx._Buf[0], _Elem());
+
+  0025b	c6 85 78 fe ff
+	ff 00		 mov	 BYTE PTR _markImagePath$455[ebp], 0
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 677  : 			std::string markImagePath;
+
+  00262	c7 45 fc 00 00
+	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 0
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 67   : 		assert(ms_singleton);
+
+  00269	85 f6		 test	 esi, esi
+  0026b	75 1a		 jne	 SHORT $LN222@RegisterCh
+  0026d	6a 43		 push	 67			; 00000043H
+  0026f	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  00274	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  00279	e8 00 00 00 00	 call	 __wassert
+  0027e	8b 35 00 00 00
+	00		 mov	 esi, DWORD PTR ?ms_singleton@?$singleton@VCGuildMarkManager@@@@0PAVCGuildMarkManager@@A ; singleton<CGuildMarkManager>::ms_singleton
+  00284	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN222@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 679  : 			if (CGuildMarkManager::Instance().GetMarkImageFilename(dwMarkID / CGuildMarkImage::MARK_TOTAL_COUNT, markImagePath))
+
+  00287	b8 cd cc cc cc	 mov	 eax, -858993459		; cccccccdH
+  0028c	8d 8d 78 fe ff
+	ff		 lea	 ecx, DWORD PTR _markImagePath$455[ebp]
+  00292	f7 a5 70 fe ff
+	ff		 mul	 DWORD PTR _dwMarkID$1$[ebp]
+  00298	51		 push	 ecx
+  00299	8b c2		 mov	 eax, edx
+  0029b	8b ce		 mov	 ecx, esi
+  0029d	c1 e8 0a	 shr	 eax, 10			; 0000000aH
+  002a0	50		 push	 eax
+  002a1	89 85 6c fe ff
+	ff		 mov	 DWORD PTR tv8372[ebp], eax
+  002a7	e8 00 00 00 00	 call	 ?GetMarkImageFilename@CGuildMarkManager@@QBE_NKAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z ; CGuildMarkManager::GetMarkImageFilename
+  002ac	84 c0		 test	 al, al
+  002ae	74 42		 je	 SHORT $LN11@RegisterCh
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 453  :         return _Myres > _Small_string_capacity;
+
+  002b0	83 bd 8c fe ff
+	ff 0f		 cmp	 DWORD PTR _markImagePath$455[ebp+20], 15 ; 0000000fH
+
+; 444  :         const value_type* _Result = _Bx._Buf;
+
+  002b7	8d 85 78 fe ff
+	ff		 lea	 eax, DWORD PTR _markImagePath$455[ebp]
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 681  : 				pTextTail->pMarkInstance->SetImageFileName(markImagePath.c_str());
+
+  002bd	8b 4f 0c	 mov	 ecx, DWORD PTR [edi+12]
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 445  :         if (_Large_mode_engaged()) {
+
+  002c0	0f 47 85 78 fe
+	ff ff		 cmova	 eax, DWORD PTR _markImagePath$455[ebp]
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 681  : 				pTextTail->pMarkInstance->SetImageFileName(markImagePath.c_str());
+
+  002c7	50		 push	 eax
+  002c8	e8 00 00 00 00	 call	 ?SetImageFileName@CGraphicMarkInstance@@QAEXPBD@Z ; CGraphicMarkInstance::SetImageFileName
+
+; 682  : 				pTextTail->pMarkInstance->Load();
+
+  002cd	8b 4f 0c	 mov	 ecx, DWORD PTR [edi+12]
+  002d0	e8 00 00 00 00	 call	 ?Load@CGraphicMarkInstance@@QAEXXZ ; CGraphicMarkInstance::Load
+
+; 683  : 				pTextTail->pMarkInstance->SetIndex(dwMarkID % CGuildMarkImage::MARK_TOTAL_COUNT);
+
+  002d5	8b 85 6c fe ff
+	ff		 mov	 eax, DWORD PTR tv8372[ebp]
+  002db	8b 8d 70 fe ff
+	ff		 mov	 ecx, DWORD PTR _dwMarkID$1$[ebp]
+  002e1	8d 04 80	 lea	 eax, DWORD PTR [eax+eax*4]
+  002e4	c1 e0 08	 shl	 eax, 8
+  002e7	2b c8		 sub	 ecx, eax
+  002e9	51		 push	 ecx
+  002ea	8b 4f 0c	 mov	 ecx, DWORD PTR [edi+12]
+  002ed	e8 00 00 00 00	 call	 ?SetIndex@CGraphicMarkInstance@@QAEXI@Z ; CGraphicMarkInstance::SetIndex
+$LN11@RegisterCh:
+
+; 684  : 			}
+; 685  : 		}
+
+  002f2	c7 45 fc ff ff
+	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 453  :         return _Myres > _Small_string_capacity;
+
+  002f9	8b 8d 8c fe ff
+	ff		 mov	 ecx, DWORD PTR _markImagePath$455[ebp+20]
+  002ff	83 f9 0f	 cmp	 ecx, 15			; 0000000fH
+
+; 3083 :         if (_My_data._Large_mode_engaged()) {
+
+  00302	76 2f		 jbe	 SHORT $LN241@RegisterCh
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+
+; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
+
+  00304	8b 95 78 fe ff
+	ff		 mov	 edx, DWORD PTR _markImagePath$455[ebp]
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 852  :         _Al.deallocate(_Old_ptr, _Capacity + 1); // +1 for null terminator
+
+  0030a	41		 inc	 ecx
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+
+; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
+
+  0030b	8b c2		 mov	 eax, edx
+
+; 284  :         if (_Bytes >= _Big_allocation_threshold) {
+
+  0030d	81 f9 00 10 00
+	00		 cmp	 ecx, 4096		; 00001000H
+  00313	72 14		 jb	 SHORT $LN249@RegisterCh
+
+; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
+
+  00315	8b 50 fc	 mov	 edx, DWORD PTR [eax-4]
+  00318	83 c1 23	 add	 ecx, 35			; 00000023H
+  0031b	2b c2		 sub	 eax, edx
+
+; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
+
+  0031d	83 c0 fc	 add	 eax, -4			; fffffffcH
+  00320	83 f8 1f	 cmp	 eax, 31			; 0000001fH
+  00323	0f 87 ac 07 00
+	00		 ja	 $LN2377@RegisterCh
+$LN249@RegisterCh:
+
+; 289  :         ::operator delete(_Ptr, _Bytes);
+
+  00329	51		 push	 ecx
+  0032a	52		 push	 edx
+  0032b	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
+  00330	83 c4 08	 add	 esp, 8
+$LN241@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 3090 :         _My_data._Mysize = 0;
+
+  00333	c7 85 88 fe ff
+	ff 00 00 00 00	 mov	 DWORD PTR _markImagePath$455[ebp+16], 0
+
+; 3091 :         _My_data._Myres  = _Small_string_capacity;
+
+  0033d	c7 85 8c fe ff
+	ff 0f 00 00 00	 mov	 DWORD PTR _markImagePath$455[ebp+20], 15 ; 0000000fH
+
+; 3092 :         // the _Traits::assign is last so the codegen doesn't think the char write can alias this
+; 3093 :         _Traits::assign(_My_data._Bx._Buf[0], _Elem());
+
+  00347	c6 85 78 fe ff
+	ff 00		 mov	 BYTE PTR _markImagePath$455[ebp], 0
+$LN230@RegisterCh:
+  0034e	0f 57 c0	 xorps	 xmm0, xmm0
+
+; 860  :         _My_data._Mysize = 0;
+
+  00351	c7 85 a0 fe ff
+	ff 00 00 00 00	 mov	 DWORD PTR _strGuildName$456[ebp+16], 0
+
+; 493  :         _CONSTEXPR20 _Bxty() noexcept : _Buf() {} // user-provided, for fancy pointers
+
+  0035b	0f 11 85 90 fe
+	ff ff		 movups	 XMMWORD PTR _strGuildName$456[ebp], xmm0
+
+; 861  :         _My_data._Myres  = _Small_string_capacity;
+
+  00362	c7 85 a4 fe ff
+	ff 0f 00 00 00	 mov	 DWORD PTR _strGuildName$456[ebp+20], 15 ; 0000000fH
+
+; 862  :         _My_data._Activate_SSO_buffer();
+; 863  : 
+; 864  :         // the _Traits::assign is last so the codegen doesn't think the char write can alias this
+; 865  :         _Traits::assign(_My_data._Bx._Buf[0], _Elem());
+
+  0036c	c6 85 90 fe ff
+	ff 00		 mov	 BYTE PTR _strGuildName$456[ebp], 0
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 687  : 		std::string strGuildName;
+
+  00373	c7 45 fc 01 00
+	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 1
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  0037a	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonGuild@@@@0PAVCPythonGuild@@A ; CSingleton<CPythonGuild>::ms_singleton
+  00380	85 c9		 test	 ecx, ecx
+  00382	75 1a		 jne	 SHORT $LN157@RegisterCh
+  00384	6a 1a		 push	 26			; 0000001aH
+  00386	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  0038b	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  00390	e8 00 00 00 00	 call	 __wassert
+  00395	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonGuild@@@@0PAVCPythonGuild@@A ; CSingleton<CPythonGuild>::ms_singleton
+  0039b	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN157@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 688  : 		if (!CPythonGuild::Instance().GetGuildName(dwGuildID, &strGuildName))
+
+  0039e	8d 85 90 fe ff
+	ff		 lea	 eax, DWORD PTR _strGuildName$456[ebp]
+  003a4	50		 push	 eax
+  003a5	ff 73 08	 push	 DWORD PTR _dwGuildID$[ebx]
+  003a8	e8 00 00 00 00	 call	 ?GetGuildName@CPythonGuild@@QAE_NKPAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z ; CPythonGuild::GetGuildName
+  003ad	84 c0		 test	 al, al
+  003af	0f 85 0d 01 00
+	00		 jne	 $LN291@RegisterCh
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 1618 :         if (_Count <= _Mypair._Myval2._Myres) {
+
+  003b5	8b 8d a4 fe ff
+	ff		 mov	 ecx, DWORD PTR _strGuildName$456[ebp+20]
+  003bb	89 8d 6c fe ff
+	ff		 mov	 DWORD PTR __Old_capacity$1$[ebp], ecx
+  003c1	83 f9 06	 cmp	 ecx, 6
+  003c4	72 33		 jb	 SHORT $LN289@RegisterCh
+
+; 453  :         return _Myres > _Small_string_capacity;
+
+  003c6	83 f9 0f	 cmp	 ecx, 15			; 0000000fH
+
+; 1621 :             _Mypair._Myval2._Mysize = _Count;
+
+  003c9	c7 85 a0 fe ff
+	ff 06 00 00 00	 mov	 DWORD PTR _strGuildName$456[ebp+16], 6
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
+
+  003d3	6a 06		 push	 6
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 435  :         value_type* _Result = _Bx._Buf;
+
+  003d5	8d b5 90 fe ff
+	ff		 lea	 esi, DWORD PTR _strGuildName$456[ebp]
+
+; 436  :         if (_Large_mode_engaged()) {
+
+  003db	0f 47 b5 90 fe
+	ff ff		 cmova	 esi, DWORD PTR _strGuildName$456[ebp]
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
+
+  003e2	68 00 00 00 00	 push	 OFFSET ??_C@_06HCBIANPB@Noname@
+  003e7	56		 push	 esi
+  003e8	e8 00 00 00 00	 call	 _memmove
+  003ed	83 c4 0c	 add	 esp, 12			; 0000000cH
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 1623 :             _Traits::assign(_Old_ptr[_Count], _Elem());
+
+  003f0	c6 46 06 00	 mov	 BYTE PTR [esi+6], 0
+
+; 1624 :             _ASAN_STRING_CREATE(*this);
+; 1625 :             return *this;
+
+  003f4	e9 c9 00 00 00	 jmp	 $LN291@RegisterCh
+$LN289@RegisterCh:
+
+; 3002 :         const size_type _Old_capacity = _Mypair._Myval2._Myres;
+
+  003f9	8b d1		 mov	 edx, ecx
+
+; 2983 :         if (_Old > _Max - _Old / 2) { // similarly, geometric overflows
+
+  003fb	b8 ff ff ff 7f	 mov	 eax, 2147483647		; 7fffffffH
+
+; 3002 :         const size_type _Old_capacity = _Mypair._Myval2._Myres;
+
+  00400	d1 ea		 shr	 edx, 1
+
+; 2983 :         if (_Old > _Max - _Old / 2) { // similarly, geometric overflows
+
+  00402	2b c2		 sub	 eax, edx
+  00404	3b c8		 cmp	 ecx, eax
+  00406	76 17		 jbe	 SHORT $LN298@RegisterCh
+
+; 2984 :             return _Max;
+
+  00408	b8 00 00 00 80	 mov	 eax, -2147483648	; 80000000H
+  0040d	c7 85 70 fe ff
+	ff ff ff ff 7f	 mov	 DWORD PTR $T454[ebp], 2147483647 ; 7fffffffH
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+
+; 253  :             return _Allocate_manually_vector_aligned<_Traits>(_Bytes);
+
+  00417	50		 push	 eax
+  00418	e8 00 00 00 00	 call	 ??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPAXI@Z ; std::_Allocate_manually_vector_aligned<std::_Default_allocate_traits>
+  0041d	eb 33		 jmp	 SHORT $LN2372@RegisterCh
+$LN298@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 2987 :         return (_STD max)(_Masked, _Old + _Old / 2);
+
+  0041f	8d 04 0a	 lea	 eax, DWORD PTR [edx+ecx]
+  00422	ba 0f 00 00 00	 mov	 edx, 15			; 0000000fH
+  00427	3b c2		 cmp	 eax, edx
+  00429	0f 47 d0	 cmova	 edx, eax
+  0042c	89 95 70 fe ff
+	ff		 mov	 DWORD PTR $T454[ebp], edx
+
+; 825  :         ++_Capacity; // Take null terminator into consideration
+
+  00432	8d 42 01	 lea	 eax, DWORD PTR [edx+1]
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+
+; 227  :     if (_Bytes == 0) {
+
+  00435	85 c0		 test	 eax, eax
+  00437	75 04		 jne	 SHORT $LN315@RegisterCh
+
+; 228  :         return nullptr;
+
+  00439	33 f6		 xor	 esi, esi
+  0043b	eb 26		 jmp	 SHORT $LN314@RegisterCh
+$LN315@RegisterCh:
+
+; 229  :     }
+; 230  : 
+; 231  : #if _HAS_CXX20 // TRANSITION, GH-1532
+; 232  :     if (_STD is_constant_evaluated()) {
+; 233  :         return _Traits::_Allocate(_Bytes);
+; 234  :     }
+; 235  : #endif // _HAS_CXX20
+; 236  : 
+; 237  : #ifdef __cpp_aligned_new
+; 238  :     if constexpr (_Align > __STDCPP_DEFAULT_NEW_ALIGNMENT__) {
+; 239  :         size_t _Passed_align = _Align;
+; 240  : #if defined(_M_IX86) || defined(_M_X64)
+; 241  :         if (_Bytes >= _Big_allocation_threshold) {
+; 242  :             // boost the alignment of big allocations to help autovectorization
+; 243  :             _Passed_align = (_STD max)(_Align, _Big_allocation_alignment);
+; 244  :         }
+; 245  : #endif // defined(_M_IX86) || defined(_M_X64)
+; 246  :         return _Traits::_Allocate_aligned(_Bytes, _Passed_align);
+; 247  :     } else
+; 248  : #endif // defined(__cpp_aligned_new)
+; 249  :     {
+; 250  : #if defined(_M_IX86) || defined(_M_X64)
+; 251  :         if (_Bytes >= _Big_allocation_threshold) {
+
+  0043d	3d 00 10 00 00	 cmp	 eax, 4096		; 00001000H
+  00442	72 08		 jb	 SHORT $LN317@RegisterCh
+
+; 253  :             return _Allocate_manually_vector_aligned<_Traits>(_Bytes);
+
+  00444	50		 push	 eax
+  00445	e8 00 00 00 00	 call	 ??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPAXI@Z ; std::_Allocate_manually_vector_aligned<std::_Default_allocate_traits>
+  0044a	eb 06		 jmp	 SHORT $LN2372@RegisterCh
+$LN317@RegisterCh:
+
+; 136  :         return ::operator new(_Bytes);
+
+  0044c	50		 push	 eax
+  0044d	e8 00 00 00 00	 call	 ??2@YAPAXI@Z		; operator new
+$LN2372@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 3009 :         _Mypair._Myval2._Mysize = _New_size;
+
+  00452	8b 95 70 fe ff
+	ff		 mov	 edx, DWORD PTR $T454[ebp]
+  00458	8b f0		 mov	 esi, eax
+  0045a	8b 8d 6c fe ff
+	ff		 mov	 ecx, DWORD PTR __Old_capacity$1$[ebp]
+  00460	83 c4 04	 add	 esp, 4
+$LN314@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
+
+  00463	a1 00 00 00 00	 mov	 eax, DWORD PTR ??_C@_06HCBIANPB@Noname@
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 3009 :         _Mypair._Myval2._Mysize = _New_size;
+
+  00468	c7 85 a0 fe ff
+	ff 06 00 00 00	 mov	 DWORD PTR _strGuildName$456[ebp+16], 6
+
+; 3010 :         _Mypair._Myval2._Myres  = _New_capacity;
+
+  00472	89 95 a4 fe ff
+	ff		 mov	 DWORD PTR _strGuildName$456[ebp+20], edx
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
+
+  00478	89 06		 mov	 DWORD PTR [esi], eax
+  0047a	66 a1 04 00 00
+	00		 mov	 ax, WORD PTR ??_C@_06HCBIANPB@Noname@+4
+  00480	66 89 46 04	 mov	 WORD PTR [esi+4], ax
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 1632 :                 _Traits::assign(_New_ptr[_Count], _Elem());
+
+  00484	c6 46 06 00	 mov	 BYTE PTR [esi+6], 0
+
+; 3012 :         if (_Old_capacity > _Small_string_capacity) {
+
+  00488	83 f9 0f	 cmp	 ecx, 15			; 0000000fH
+  0048b	76 2f		 jbe	 SHORT $LN290@RegisterCh
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+
+; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
+
+  0048d	8b 95 90 fe ff
+	ff		 mov	 edx, DWORD PTR _strGuildName$456[ebp]
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 852  :         _Al.deallocate(_Old_ptr, _Capacity + 1); // +1 for null terminator
+
+  00493	41		 inc	 ecx
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+
+; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
+
+  00494	8b c2		 mov	 eax, edx
+
+; 284  :         if (_Bytes >= _Big_allocation_threshold) {
+
+  00496	81 f9 00 10 00
+	00		 cmp	 ecx, 4096		; 00001000H
+  0049c	72 14		 jb	 SHORT $LN349@RegisterCh
+
+; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
+
+  0049e	8b 50 fc	 mov	 edx, DWORD PTR [eax-4]
+  004a1	83 c1 23	 add	 ecx, 35			; 00000023H
+  004a4	2b c2		 sub	 eax, edx
+
+; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
+
+  004a6	83 c0 fc	 add	 eax, -4			; fffffffcH
+  004a9	83 f8 1f	 cmp	 eax, 31			; 0000001fH
+  004ac	0f 87 32 06 00
+	00		 ja	 $LN193@RegisterCh
+$LN349@RegisterCh:
+
+; 289  :         ::operator delete(_Ptr, _Bytes);
+
+  004b2	51		 push	 ecx
+  004b3	52		 push	 edx
+  004b4	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
+  004b9	83 c4 08	 add	 esp, 8
+$LN290@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 692  : 		if (dwGuildLeader == 3)
+
+  004bc	89 b5 90 fe ff
+	ff		 mov	 DWORD PTR _strGuildName$456[ebp], esi
+$LN291@RegisterCh:
+  004c2	8a 43 0c	 mov	 al, BYTE PTR _dwGuildLeader$[ebx]
+  004c5	3c 03		 cmp	 al, 3
+  004c7	75 09		 jne	 SHORT $LN13@RegisterCh
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 1780 :         return insert(_Off, _Ptr, _Convert_size<size_type>(_Traits::length(_Ptr)));
+
+  004c9	6a 11		 push	 17			; 00000011H
+  004cb	68 00 00 00 00	 push	 OFFSET ??_C@_0BC@IBMACGLG@?5?$HMcFFFF8C00?$FLL?$FN?$HMr?5@
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 694  : 			strGuildName.insert(0, " |cFFFF8C00[L]|r ");
+
+  004d0	eb 0b		 jmp	 SHORT $LN2373@RegisterCh
+$LN13@RegisterCh:
+
+; 695  : 		else if (dwGuildLeader == 2)
+
+  004d2	3c 02		 cmp	 al, 2
+  004d4	75 14		 jne	 SHORT $LN15@RegisterCh
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 1780 :         return insert(_Off, _Ptr, _Convert_size<size_type>(_Traits::length(_Ptr)));
+
+  004d6	6a 11		 push	 17			; 00000011H
+  004d8	68 00 00 00 00	 push	 OFFSET ??_C@_0BC@MKHCBNFN@?5?$HMcFF01796F?$FLG?$FN?$HMr?5@
+$LN2373@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 702  : 		prGuildNameInstance = CGraphicTextInstance::New();
+
+  004dd	6a 00		 push	 0
+  004df	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _strGuildName$456[ebp]
+  004e5	e8 00 00 00 00	 call	 ?insert@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@IQBDI@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::insert
+$LN15@RegisterCh:
+  004ea	e8 00 00 00 00	 call	 ?New@CGraphicTextInstance@@SAPAV1@XZ ; CGraphicTextInstance::New
+
+; 703  : 		prGuildNameInstance->SetTextPointer(ms_pFont);
+
+  004ef	ff 35 00 00 00
+	00		 push	 DWORD PTR ?ms_pFont@@3PAVCGraphicText@@A ; ms_pFont
+  004f5	8b c8		 mov	 ecx, eax
+  004f7	89 47 10	 mov	 DWORD PTR [edi+16], eax
+  004fa	e8 00 00 00 00	 call	 ?SetTextPointer@CGraphicTextInstance@@QAEXPAVCGraphicText@@@Z ; CGraphicTextInstance::SetTextPointer
+
+; 704  : 		prGuildNameInstance->SetOutline(true);
+
+  004ff	8b 4f 10	 mov	 ecx, DWORD PTR [edi+16]
+  00502	6a 01		 push	 1
+  00504	e8 00 00 00 00	 call	 ?SetOutline@CGraphicTextInstance@@QAEX_N@Z ; CGraphicTextInstance::SetOutline
+
+; 705  : 		prGuildNameInstance->SetHorizonalAlign(CGraphicTextInstance::HORIZONTAL_ALIGN_CENTER);
+
+  00509	8b 4f 10	 mov	 ecx, DWORD PTR [edi+16]
+  0050c	6a 02		 push	 2
+  0050e	e8 00 00 00 00	 call	 ?SetHorizonalAlign@CGraphicTextInstance@@QAEXH@Z ; CGraphicTextInstance::SetHorizonalAlign
+
+; 706  : 		prGuildNameInstance->SetVerticalAlign(CGraphicTextInstance::VERTICAL_ALIGN_BOTTOM);
+
+  00513	8b 4f 10	 mov	 ecx, DWORD PTR [edi+16]
+  00516	6a 30		 push	 48			; 00000030H
+  00518	e8 00 00 00 00	 call	 ?SetVerticalAlign@CGraphicTextInstance@@QAEXH@Z ; CGraphicTextInstance::SetVerticalAlign
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 453  :         return _Myres > _Small_string_capacity;
+
+  0051d	83 bd a4 fe ff
+	ff 0f		 cmp	 DWORD PTR _strGuildName$456[ebp+20], 15 ; 0000000fH
+
+; 444  :         const value_type* _Result = _Bx._Buf;
+
+  00524	8d 85 90 fe ff
+	ff		 lea	 eax, DWORD PTR _strGuildName$456[ebp]
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 707  : 		prGuildNameInstance->SetValue(strGuildName.c_str());
+
+  0052a	8b 4f 10	 mov	 ecx, DWORD PTR [edi+16]
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 445  :         if (_Large_mode_engaged()) {
+
+  0052d	0f 47 85 90 fe
+	ff ff		 cmova	 eax, DWORD PTR _strGuildName$456[ebp]
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 707  : 		prGuildNameInstance->SetValue(strGuildName.c_str());
+
+  00534	6a ff		 push	 -1
+  00536	50		 push	 eax
+  00537	e8 00 00 00 00	 call	 ?SetValue@CGraphicTextInstance@@QAEXPBDI@Z ; CGraphicTextInstance::SetValue
+
+; 708  : 		prGuildNameInstance->SetColor(c_TextTail_Guild_Name_Color.r, c_TextTail_Guild_Name_Color.g, c_TextTail_Guild_Name_Color.b);
+
+  0053c	f3 0f 10 05 08
+	00 00 00	 movss	 xmm0, DWORD PTR ?c_TextTail_Guild_Name_Color@@3UD3DXCOLOR@@B+8
+  00544	83 ec 10	 sub	 esp, 16			; 00000010H
+  00547	8b 4f 10	 mov	 ecx, DWORD PTR [edi+16]
+  0054a	c7 44 24 0c 00
+	00 80 3f	 mov	 DWORD PTR [esp+12], 1065353216 ; 3f800000H
+  00552	f3 0f 11 44 24
+	08		 movss	 DWORD PTR [esp+8], xmm0
+  00558	f3 0f 10 05 04
+	00 00 00	 movss	 xmm0, DWORD PTR ?c_TextTail_Guild_Name_Color@@3UD3DXCOLOR@@B+4
+  00560	f3 0f 11 44 24
+	04		 movss	 DWORD PTR [esp+4], xmm0
+  00566	f3 0f 10 05 00
+	00 00 00	 movss	 xmm0, DWORD PTR ?c_TextTail_Guild_Name_Color@@3UD3DXCOLOR@@B
+  0056e	f3 0f 11 04 24	 movss	 DWORD PTR [esp], xmm0
+  00573	e8 00 00 00 00	 call	 ?SetColor@CGraphicTextInstance@@QAEXMMMM@Z ; CGraphicTextInstance::SetColor
+
+; 709  : 		prGuildNameInstance->Update();
+
+  00578	8b 4f 10	 mov	 ecx, DWORD PTR [edi+16]
+  0057b	e8 00 00 00 00	 call	 ?Update@CGraphicTextInstance@@QAEXXZ ; CGraphicTextInstance::Update
+
+; 710  : 	}
+
+  00580	c7 45 fc ff ff
+	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 453  :         return _Myres > _Small_string_capacity;
+
+  00587	8b 8d a4 fe ff
+	ff		 mov	 ecx, DWORD PTR _strGuildName$456[ebp+20]
+  0058d	83 f9 0f	 cmp	 ecx, 15			; 0000000fH
+
+; 3083 :         if (_My_data._Large_mode_engaged()) {
+
+  00590	76 2f		 jbe	 SHORT $LN186@RegisterCh
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+
+; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
+
+  00592	8b 95 90 fe ff
+	ff		 mov	 edx, DWORD PTR _strGuildName$456[ebp]
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 852  :         _Al.deallocate(_Old_ptr, _Capacity + 1); // +1 for null terminator
+
+  00598	41		 inc	 ecx
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+
+; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
+
+  00599	8b c2		 mov	 eax, edx
+
+; 284  :         if (_Bytes >= _Big_allocation_threshold) {
+
+  0059b	81 f9 00 10 00
+	00		 cmp	 ecx, 4096		; 00001000H
+  005a1	72 14		 jb	 SHORT $LN194@RegisterCh
+
+; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
+
+  005a3	8b 50 fc	 mov	 edx, DWORD PTR [eax-4]
+  005a6	83 c1 23	 add	 ecx, 35			; 00000023H
+  005a9	2b c2		 sub	 eax, edx
+
+; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
+
+  005ab	83 c0 fc	 add	 eax, -4			; fffffffcH
+  005ae	83 f8 1f	 cmp	 eax, 31			; 0000001fH
+  005b1	0f 87 2d 05 00
+	00		 ja	 $LN193@RegisterCh
+$LN194@RegisterCh:
+
+; 289  :         ::operator delete(_Ptr, _Bytes);
+
+  005b7	51		 push	 ecx
+  005b8	52		 push	 edx
+  005b9	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
+  005be	83 c4 08	 add	 esp, 8
+$LN186@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 716  : 	if (!prLanguage)
+
+  005c1	83 7f 1c 00	 cmp	 DWORD PTR [edi+28], 0
+  005c5	8b b5 68 fe ff
+	ff		 mov	 esi, DWORD PTR _pCharacterInstance$1$[ebp]
+  005cb	0f 85 19 02 00
+	00		 jne	 $LN480@RegisterCh
+
+; 717  : 	{
+; 718  : 		BYTE bLanguage = pCharacterInstance->GetLanguage();
+
+  005d1	8a 46 61	 mov	 al, BYTE PTR [esi+97]
+
+; 719  : 		if(pCharacterInstance->IsPC() && bLanguage)
+
+  005d4	8b ce		 mov	 ecx, esi
+  005d6	88 85 77 fe ff
+	ff		 mov	 BYTE PTR _bLanguage$1$[ebp], al
+  005dc	e8 00 00 00 00	 call	 ?IsPC@CInstanceBase@@QAEHXZ ; CInstanceBase::IsPC
+  005e1	85 c0		 test	 eax, eax
+  005e3	0f 84 01 02 00
+	00		 je	 $LN480@RegisterCh
+  005e9	8a 85 77 fe ff
+	ff		 mov	 al, BYTE PTR _bLanguage$1$[ebp]
+  005ef	84 c0		 test	 al, al
+  005f1	0f 84 f3 01 00
+	00		 je	 $LN480@RegisterCh
+  005f7	0f 57 c0	 xorps	 xmm0, xmm0
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 890  :             _My_data._Mysize = _Count;
+
+  005fa	c7 85 a0 fe ff
+	ff 02 00 00 00	 mov	 DWORD PTR _langName$457[ebp+16], 2
+
+; 493  :         _CONSTEXPR20 _Bxty() noexcept : _Buf() {} // user-provided, for fancy pointers
+
+  00604	0f 11 85 90 fe
+	ff ff		 movups	 XMMWORD PTR _langName$457[ebp], xmm0
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
+
+  0060b	b9 65 6e 00 00	 mov	 ecx, 28261		; 00006e65H
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 891  :             _My_data._Myres  = _Small_string_capacity;
+
+  00610	c7 85 a4 fe ff
+	ff 0f 00 00 00	 mov	 DWORD PTR _langName$457[ebp+20], 15 ; 0000000fH
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
+
+  0061a	66 89 8d 90 fe
+	ff ff		 mov	 WORD PTR _langName$457[ebp], cx
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 898  :                 _Traits::assign(_My_data._Bx._Buf[_Count], _Elem());
+
+  00621	c6 85 92 fe ff
+	ff 00		 mov	 BYTE PTR _langName$457[ebp+2], 0
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 723  : 			switch (bLanguage)
+
+  00628	0f b6 c0	 movzx	 eax, al
+  0062b	48		 dec	 eax
+  0062c	c7 45 fc 02 00
+	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 2
+  00633	83 f8 0a	 cmp	 eax, 10			; 0000000aH
+  00636	0f 87 a9 00 00
+	00		 ja	 $LN29@RegisterCh
+  0063c	ff 24 85 00 00
+	00 00		 jmp	 DWORD PTR $LN2367@RegisterCh[eax*4]
+$LN19@RegisterCh:
+
+; 724  : 			{
+; 725  : 				case CPythonApplication::LOCALE_EN: langName = "en"; break;
+; 726  : 				case CPythonApplication::LOCALE_RO: langName = "ro"; break;
+
+  00643	68 00 00 00 00	 push	 OFFSET ??_C@_02LFKOONLL@ro@
+  00648	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _langName$457[ebp]
+  0064e	e8 00 00 00 00	 call	 ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@QBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
+  00653	e9 a5 00 00 00	 jmp	 $LN610@RegisterCh
+$LN20@RegisterCh:
+
+; 727  : 				case CPythonApplication::LOCALE_PT: langName = "pt"; break;
+
+  00658	68 00 00 00 00	 push	 OFFSET ??_C@_02BPBMPCEP@pt@
+  0065d	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _langName$457[ebp]
+  00663	e8 00 00 00 00	 call	 ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@QBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
+  00668	e9 90 00 00 00	 jmp	 $LN610@RegisterCh
+$LN21@RegisterCh:
+
+; 728  : 				case CPythonApplication::LOCALE_ES: langName = "es"; break;
+
+  0066d	68 00 00 00 00	 push	 OFFSET ??_C@_02EKLAAFBD@es@
+  00672	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _langName$457[ebp]
+  00678	e8 00 00 00 00	 call	 ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@QBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
+  0067d	eb 7e		 jmp	 SHORT $LN610@RegisterCh
+$LN22@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
+
+  0067f	b8 66 72 00 00	 mov	 eax, 29286		; 00007266H
+  00684	66 89 85 90 fe
+	ff ff		 mov	 WORD PTR _langName$457[ebp], ax
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 729  : 				case CPythonApplication::LOCALE_FR: langName = "fr"; break;
+
+  0068b	eb 5f		 jmp	 SHORT $LN2374@RegisterCh
+$LN23@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
+
+  0068d	b8 64 65 00 00	 mov	 eax, 25956		; 00006564H
+  00692	66 89 85 90 fe
+	ff ff		 mov	 WORD PTR _langName$457[ebp], ax
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 730  : 				case CPythonApplication::LOCALE_DE: langName = "de"; break;
+
+  00699	eb 51		 jmp	 SHORT $LN2374@RegisterCh
+$LN24@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
+
+  0069b	b8 70 6c 00 00	 mov	 eax, 27760		; 00006c70H
+  006a0	66 89 85 90 fe
+	ff ff		 mov	 WORD PTR _langName$457[ebp], ax
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 731  : 				case CPythonApplication::LOCALE_PL: langName = "pl"; break;
+
+  006a7	eb 43		 jmp	 SHORT $LN2374@RegisterCh
+$LN25@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
+
+  006a9	b8 69 74 00 00	 mov	 eax, 29801		; 00007469H
+  006ae	66 89 85 90 fe
+	ff ff		 mov	 WORD PTR _langName$457[ebp], ax
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 732  : 				case CPythonApplication::LOCALE_IT: langName = "it"; break;
+
+  006b5	eb 35		 jmp	 SHORT $LN2374@RegisterCh
+$LN26@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
+
+  006b7	b8 63 7a 00 00	 mov	 eax, 31331		; 00007a63H
+  006bc	66 89 85 90 fe
+	ff ff		 mov	 WORD PTR _langName$457[ebp], ax
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 733  : 				case CPythonApplication::LOCALE_CZ: langName = "cz"; break;
+
+  006c3	eb 27		 jmp	 SHORT $LN2374@RegisterCh
+$LN27@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
+
+  006c5	b8 68 75 00 00	 mov	 eax, 30056		; 00007568H
+  006ca	66 89 85 90 fe
+	ff ff		 mov	 WORD PTR _langName$457[ebp], ax
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 734  : 				case CPythonApplication::LOCALE_HU: langName = "hu"; break;
+
+  006d1	eb 19		 jmp	 SHORT $LN2374@RegisterCh
+$LN28@RegisterCh:
+
+; 735  : 				case CPythonApplication::LOCALE_TR: langName = "tr"; break;
+
+  006d3	68 00 00 00 00	 push	 OFFSET ??_C@_02EOEPPNBF@tr@
+  006d8	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _langName$457[ebp]
+  006de	e8 00 00 00 00	 call	 ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@QBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
+  006e3	eb 18		 jmp	 SHORT $LN610@RegisterCh
+$LN29@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
+
+  006e5	66 89 8d 90 fe
+	ff ff		 mov	 WORD PTR _langName$457[ebp], cx
+$LN2374@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 444  :         const value_type* _Result = _Bx._Buf;
+
+  006ec	c7 85 a0 fe ff
+	ff 02 00 00 00	 mov	 DWORD PTR _langName$457[ebp+16], 2
+  006f6	c6 85 92 fe ff
+	ff 00		 mov	 BYTE PTR _langName$457[ebp+2], 0
+$LN610@RegisterCh:
+
+; 453  :         return _Myres > _Small_string_capacity;
+
+  006fd	83 bd a4 fe ff
+	ff 0f		 cmp	 DWORD PTR _langName$457[ebp+20], 15 ; 0000000fH
+
+; 444  :         const value_type* _Result = _Bx._Buf;
+
+  00704	8d 85 90 fe ff
+	ff		 lea	 eax, DWORD PTR _langName$457[ebp]
+
+; 445  :         if (_Large_mode_engaged()) {
+
+  0070a	0f 47 85 90 fe
+	ff ff		 cmova	 eax, DWORD PTR _langName$457[ebp]
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 740  : 			sprintf(szFileName, "d:/ymir work/ui/game/emoji/flag/%s.tga", langName.c_str());
+
+  00711	50		 push	 eax
+  00712	8d 85 a8 fe ff
+	ff		 lea	 eax, DWORD PTR _szFileName$459[ebp]
+  00718	68 00 00 00 00	 push	 OFFSET ??_C@_0CH@FJLHMJJF@d?3?1ymir?5work?1ui?1game?1emoji?1flag@
+  0071d	50		 push	 eax
+  0071e	e8 00 00 00 00	 call	 _sprintf
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  00723	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCResourceManager@@@@0PAVCResourceManager@@A ; CSingleton<CResourceManager>::ms_singleton
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 740  : 			sprintf(szFileName, "d:/ymir work/ui/game/emoji/flag/%s.tga", langName.c_str());
+
+  00729	83 c4 0c	 add	 esp, 12			; 0000000cH
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  0072c	85 c9		 test	 ecx, ecx
+  0072e	75 1a		 jne	 SHORT $LN563@RegisterCh
+  00730	6a 1a		 push	 26			; 0000001aH
+  00732	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  00737	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  0073c	e8 00 00 00 00	 call	 __wassert
+  00741	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCResourceManager@@@@0PAVCResourceManager@@A ; CSingleton<CResourceManager>::ms_singleton
+  00747	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN563@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 742  : 			if (CResourceManager::Instance().IsFileExist(szFileName))
+
+  0074a	8d 85 a8 fe ff
+	ff		 lea	 eax, DWORD PTR _szFileName$459[ebp]
+  00750	50		 push	 eax
+  00751	e8 00 00 00 00	 call	 ?IsFileExist@CResourceManager@@QAE_NPBD@Z ; CResourceManager::IsFileExist
+  00756	84 c0		 test	 al, al
+  00758	74 4f		 je	 SHORT $LN31@RegisterCh
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  0075a	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCResourceManager@@@@0PAVCResourceManager@@A ; CSingleton<CResourceManager>::ms_singleton
+  00760	85 c9		 test	 ecx, ecx
+  00762	75 1a		 jne	 SHORT $LN780@RegisterCh
+  00764	6a 1a		 push	 26			; 0000001aH
+  00766	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  0076b	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  00770	e8 00 00 00 00	 call	 __wassert
+  00775	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCResourceManager@@@@0PAVCResourceManager@@A ; CSingleton<CResourceManager>::ms_singleton
+  0077b	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN780@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 744  : 				CGraphicImage* pLanguageImage = (CGraphicImage*)CResourceManager::Instance().GetResourcePointer(szFileName);
+
+  0077e	8d 85 a8 fe ff
+	ff		 lea	 eax, DWORD PTR _szFileName$459[ebp]
+  00784	50		 push	 eax
+  00785	e8 00 00 00 00	 call	 ?GetResourcePointer@CResourceManager@@QAEPAVCResource@@PBD@Z ; CResourceManager::GetResourcePointer
+  0078a	89 85 68 fe ff
+	ff		 mov	 DWORD PTR _pLanguageImage$1$[ebp], eax
+
+; 745  : 				if (pLanguageImage)
+
+  00790	85 c0		 test	 eax, eax
+  00792	74 15		 je	 SHORT $LN31@RegisterCh
+
+; 746  : 				{
+; 747  : 					prLanguage = CGraphicImageInstance::New();
+
+  00794	e8 00 00 00 00	 call	 ?New@CGraphicImageInstance@@SAPAV1@XZ ; CGraphicImageInstance::New
+
+; 748  : 					prLanguage->SetImagePointer(pLanguageImage);
+
+  00799	ff b5 68 fe ff
+	ff		 push	 DWORD PTR _pLanguageImage$1$[ebp]
+  0079f	8b c8		 mov	 ecx, eax
+  007a1	89 47 1c	 mov	 DWORD PTR [edi+28], eax
+  007a4	e8 00 00 00 00	 call	 ?SetImagePointer@CGraphicImageInstance@@QAEXPAVCGraphicImage@@@Z ; CGraphicImageInstance::SetImagePointer
+$LN31@RegisterCh:
+
+; 749  : 				}
+; 750  : 			}
+; 751  : 		}
+
+  007a9	c7 45 fc ff ff
+	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 453  :         return _Myres > _Small_string_capacity;
+
+  007b0	8b 8d a4 fe ff
+	ff		 mov	 ecx, DWORD PTR _langName$457[ebp+20]
+  007b6	83 f9 0f	 cmp	 ecx, 15			; 0000000fH
+
+; 3083 :         if (_My_data._Large_mode_engaged()) {
+
+  007b9	76 2f		 jbe	 SHORT $LN480@RegisterCh
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+
+; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
+
+  007bb	8b 95 90 fe ff
+	ff		 mov	 edx, DWORD PTR _langName$457[ebp]
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 852  :         _Al.deallocate(_Old_ptr, _Capacity + 1); // +1 for null terminator
+
+  007c1	41		 inc	 ecx
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+
+; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
+
+  007c2	8b c2		 mov	 eax, edx
+
+; 284  :         if (_Bytes >= _Big_allocation_threshold) {
+
+  007c4	81 f9 00 10 00
+	00		 cmp	 ecx, 4096		; 00001000H
+  007ca	72 14		 jb	 SHORT $LN488@RegisterCh
+
+; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
+
+  007cc	8b 50 fc	 mov	 edx, DWORD PTR [eax-4]
+  007cf	83 c1 23	 add	 ecx, 35			; 00000023H
+  007d2	2b c2		 sub	 eax, edx
+
+; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
+
+  007d4	83 c0 fc	 add	 eax, -4			; fffffffcH
+  007d7	83 f8 1f	 cmp	 eax, 31			; 0000001fH
+  007da	0f 87 13 03 00
+	00		 ja	 $LN2378@RegisterCh
+$LN488@RegisterCh:
+
+; 289  :         ::operator delete(_Ptr, _Bytes);
+
+  007e0	51		 push	 ecx
+  007e1	52		 push	 edx
+  007e2	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
+  007e7	83 c4 08	 add	 esp, 8
+$LN480@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 754  : 	if (!prLanguage2)
+
+  007ea	83 7f 20 00	 cmp	 DWORD PTR [edi+32], 0
+  007ee	0f 85 f5 01 00
+	00		 jne	 $LN445@RegisterCh
+
+; 755  : 	{
+; 756  : 		BYTE bLanguage2 = pCharacterInstance->GetLanguage2();
+
+  007f4	8a 46 62	 mov	 al, BYTE PTR [esi+98]
+
+; 757  : 		if(pCharacterInstance->IsPC() && bLanguage2)
+
+  007f7	8b ce		 mov	 ecx, esi
+  007f9	88 85 77 fe ff
+	ff		 mov	 BYTE PTR _bLanguage2$1$[ebp], al
+  007ff	e8 00 00 00 00	 call	 ?IsPC@CInstanceBase@@QAEHXZ ; CInstanceBase::IsPC
+  00804	85 c0		 test	 eax, eax
+  00806	0f 84 dd 01 00
+	00		 je	 $LN445@RegisterCh
+  0080c	8a 85 77 fe ff
+	ff		 mov	 al, BYTE PTR _bLanguage2$1$[ebp]
+  00812	84 c0		 test	 al, al
+  00814	0f 84 cf 01 00
+	00		 je	 $LN445@RegisterCh
+  0081a	0f 57 c0	 xorps	 xmm0, xmm0
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 890  :             _My_data._Mysize = _Count;
+
+  0081d	c7 85 a0 fe ff
+	ff 02 00 00 00	 mov	 DWORD PTR _langName2$458[ebp+16], 2
+
+; 493  :         _CONSTEXPR20 _Bxty() noexcept : _Buf() {} // user-provided, for fancy pointers
+
+  00827	0f 11 85 90 fe
+	ff ff		 movups	 XMMWORD PTR _langName2$458[ebp], xmm0
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
+
+  0082e	b9 65 6e 00 00	 mov	 ecx, 28261		; 00006e65H
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 891  :             _My_data._Myres  = _Small_string_capacity;
+
+  00833	c7 85 a4 fe ff
+	ff 0f 00 00 00	 mov	 DWORD PTR _langName2$458[ebp+20], 15 ; 0000000fH
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
+
+  0083d	66 89 8d 90 fe
+	ff ff		 mov	 WORD PTR _langName2$458[ebp], cx
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 898  :                 _Traits::assign(_My_data._Bx._Buf[_Count], _Elem());
+
+  00844	c6 85 92 fe ff
+	ff 00		 mov	 BYTE PTR _langName2$458[ebp+2], 0
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 761  : 			switch (bLanguage2)
+
+  0084b	0f b6 c0	 movzx	 eax, al
+  0084e	48		 dec	 eax
+  0084f	c7 45 fc 03 00
+	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 3
+  00856	83 f8 0a	 cmp	 eax, 10			; 0000000aH
+  00859	0f 87 b4 00 00
+	00		 ja	 $LN45@RegisterCh
+  0085f	ff 24 85 00 00
+	00 00		 jmp	 DWORD PTR $LN2368@RegisterCh[eax*4]
+$LN35@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
+
+  00866	b8 72 6f 00 00	 mov	 eax, 28530		; 00006f72H
+  0086b	66 89 85 90 fe
+	ff ff		 mov	 WORD PTR _langName2$458[ebp], ax
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 764  : 				case CPythonApplication::LOCALE_RO: langName2 = "ro"; break;
+
+  00872	e9 a3 00 00 00	 jmp	 $LN2375@RegisterCh
+$LN36@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
+
+  00877	b8 70 74 00 00	 mov	 eax, 29808		; 00007470H
+  0087c	66 89 85 90 fe
+	ff ff		 mov	 WORD PTR _langName2$458[ebp], ax
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 765  : 				case CPythonApplication::LOCALE_PT: langName2 = "pt"; break;
+
+  00883	e9 92 00 00 00	 jmp	 $LN2375@RegisterCh
+$LN37@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
+
+  00888	b8 65 73 00 00	 mov	 eax, 29541		; 00007365H
+  0088d	66 89 85 90 fe
+	ff ff		 mov	 WORD PTR _langName2$458[ebp], ax
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 766  : 				case CPythonApplication::LOCALE_ES: langName2 = "es"; break;
+
+  00894	e9 81 00 00 00	 jmp	 $LN2375@RegisterCh
+$LN38@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
+
+  00899	b8 66 72 00 00	 mov	 eax, 29286		; 00007266H
+  0089e	66 89 85 90 fe
+	ff ff		 mov	 WORD PTR _langName2$458[ebp], ax
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 767  : 				case CPythonApplication::LOCALE_FR: langName2 = "fr"; break;
+
+  008a5	eb 73		 jmp	 SHORT $LN2375@RegisterCh
+$LN39@RegisterCh:
+
+; 768  : 				case CPythonApplication::LOCALE_DE: langName2 = "de"; break;
+
+  008a7	68 00 00 00 00	 push	 OFFSET ??_C@_02FHOKNKPD@de@
+  008ac	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _langName2$458[ebp]
+  008b2	e8 00 00 00 00	 call	 ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@QBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
+  008b7	eb 72		 jmp	 SHORT $LN712@RegisterCh
+$LN40@RegisterCh:
+
+; 769  : 				case CPythonApplication::LOCALE_PL: langName2 = "pl"; break;
+
+  008b9	68 00 00 00 00	 push	 OFFSET ??_C@_02JNAHGKBG@pl@
+  008be	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _langName2$458[ebp]
+  008c4	e8 00 00 00 00	 call	 ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@QBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
+  008c9	eb 60		 jmp	 SHORT $LN712@RegisterCh
+$LN41@RegisterCh:
+
+; 770  : 				case CPythonApplication::LOCALE_IT: langName2 = "it"; break;
+
+  008cb	68 00 00 00 00	 push	 OFFSET ??_C@_02MOLGKLA@it@
+  008d0	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _langName2$458[ebp]
+  008d6	e8 00 00 00 00	 call	 ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@QBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
+  008db	eb 4e		 jmp	 SHORT $LN712@RegisterCh
+$LN42@RegisterCh:
+
+; 771  : 				case CPythonApplication::LOCALE_CZ: langName2 = "cz"; break;
+
+  008dd	68 00 00 00 00	 push	 OFFSET ??_C@_02JPPPMCOI@cz@
+  008e2	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _langName2$458[ebp]
+  008e8	e8 00 00 00 00	 call	 ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@QBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
+  008ed	eb 3c		 jmp	 SHORT $LN712@RegisterCh
+$LN43@RegisterCh:
+
+; 772  : 				case CPythonApplication::LOCALE_HU: langName2 = "hu"; break;
+
+  008ef	68 00 00 00 00	 push	 OFFSET ??_C@_02BEDCDBMG@hu@
+  008f4	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _langName2$458[ebp]
+  008fa	e8 00 00 00 00	 call	 ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@QBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
+  008ff	eb 2a		 jmp	 SHORT $LN712@RegisterCh
+$LN44@RegisterCh:
+
+; 773  : 				case CPythonApplication::LOCALE_TR: langName2 = "tr"; break;
+
+  00901	68 00 00 00 00	 push	 OFFSET ??_C@_02EOEPPNBF@tr@
+  00906	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _langName2$458[ebp]
+  0090c	e8 00 00 00 00	 call	 ??4?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV01@QBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator=
+  00911	eb 18		 jmp	 SHORT $LN712@RegisterCh
+$LN45@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
+
+; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
+
+  00913	66 89 8d 90 fe
+	ff ff		 mov	 WORD PTR _langName2$458[ebp], cx
+$LN2375@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 444  :         const value_type* _Result = _Bx._Buf;
+
+  0091a	c7 85 a0 fe ff
+	ff 02 00 00 00	 mov	 DWORD PTR _langName2$458[ebp+16], 2
+  00924	c6 85 92 fe ff
+	ff 00		 mov	 BYTE PTR _langName2$458[ebp+2], 0
+$LN712@RegisterCh:
+
+; 453  :         return _Myres > _Small_string_capacity;
+
+  0092b	83 bd a4 fe ff
+	ff 0f		 cmp	 DWORD PTR _langName2$458[ebp+20], 15 ; 0000000fH
+
+; 444  :         const value_type* _Result = _Bx._Buf;
+
+  00932	8d 85 90 fe ff
+	ff		 lea	 eax, DWORD PTR _langName2$458[ebp]
+
+; 445  :         if (_Large_mode_engaged()) {
+
+  00938	0f 47 85 90 fe
+	ff ff		 cmova	 eax, DWORD PTR _langName2$458[ebp]
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 778  : 			sprintf(szFileName, "d:/ymir work/ui/game/emoji/flag/%s.tga", langName2.c_str());
+
+  0093f	50		 push	 eax
+  00940	8d 85 a8 fe ff
+	ff		 lea	 eax, DWORD PTR _szFileName$460[ebp]
+  00946	68 00 00 00 00	 push	 OFFSET ??_C@_0CH@FJLHMJJF@d?3?1ymir?5work?1ui?1game?1emoji?1flag@
+  0094b	50		 push	 eax
+  0094c	e8 00 00 00 00	 call	 _sprintf
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  00951	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCResourceManager@@@@0PAVCResourceManager@@A ; CSingleton<CResourceManager>::ms_singleton
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 778  : 			sprintf(szFileName, "d:/ymir work/ui/game/emoji/flag/%s.tga", langName2.c_str());
+
+  00957	83 c4 0c	 add	 esp, 12			; 0000000cH
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  0095a	85 c9		 test	 ecx, ecx
+  0095c	75 1a		 jne	 SHORT $LN451@RegisterCh
+  0095e	6a 1a		 push	 26			; 0000001aH
+  00960	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  00965	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  0096a	e8 00 00 00 00	 call	 __wassert
+  0096f	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCResourceManager@@@@0PAVCResourceManager@@A ; CSingleton<CResourceManager>::ms_singleton
+  00975	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN451@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 780  : 			if (CResourceManager::Instance().IsFileExist(szFileName))
+
+  00978	8d 85 a8 fe ff
+	ff		 lea	 eax, DWORD PTR _szFileName$460[ebp]
+  0097e	50		 push	 eax
+  0097f	e8 00 00 00 00	 call	 ?IsFileExist@CResourceManager@@QAE_NPBD@Z ; CResourceManager::IsFileExist
+  00984	84 c0		 test	 al, al
+  00986	74 4f		 je	 SHORT $LN47@RegisterCh
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
+
+; 26   : 		assert(ms_singleton);
+
+  00988	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCResourceManager@@@@0PAVCResourceManager@@A ; CSingleton<CResourceManager>::ms_singleton
+  0098e	85 c9		 test	 ecx, ecx
+  00990	75 1a		 jne	 SHORT $LN783@RegisterCh
+  00992	6a 1a		 push	 26			; 0000001aH
+  00994	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
+  00999	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
+  0099e	e8 00 00 00 00	 call	 __wassert
+  009a3	8b 0d 00 00 00
+	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCResourceManager@@@@0PAVCResourceManager@@A ; CSingleton<CResourceManager>::ms_singleton
+  009a9	83 c4 0c	 add	 esp, 12			; 0000000cH
+$LN783@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 782  : 				CGraphicImage* pLanguageImage2 = (CGraphicImage*)CResourceManager::Instance().GetResourcePointer(szFileName);
+
+  009ac	8d 85 a8 fe ff
+	ff		 lea	 eax, DWORD PTR _szFileName$460[ebp]
+  009b2	50		 push	 eax
+  009b3	e8 00 00 00 00	 call	 ?GetResourcePointer@CResourceManager@@QAEPAVCResource@@PBD@Z ; CResourceManager::GetResourcePointer
+  009b8	89 85 68 fe ff
+	ff		 mov	 DWORD PTR _pLanguageImage2$1$[ebp], eax
+
+; 783  : 				if (pLanguageImage2)
+
+  009be	85 c0		 test	 eax, eax
+  009c0	74 15		 je	 SHORT $LN47@RegisterCh
+
+; 784  : 				{
+; 785  : 					prLanguage2 = CGraphicImageInstance::New();
+
+  009c2	e8 00 00 00 00	 call	 ?New@CGraphicImageInstance@@SAPAV1@XZ ; CGraphicImageInstance::New
+
+; 786  : 					prLanguage2->SetImagePointer(pLanguageImage2);
+
+  009c7	ff b5 68 fe ff
+	ff		 push	 DWORD PTR _pLanguageImage2$1$[ebp]
+  009cd	8b c8		 mov	 ecx, eax
+  009cf	89 47 20	 mov	 DWORD PTR [edi+32], eax
+  009d2	e8 00 00 00 00	 call	 ?SetImagePointer@CGraphicImageInstance@@QAEXPAVCGraphicImage@@@Z ; CGraphicImageInstance::SetImagePointer
+$LN47@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 1383 :         _Tidy_deallocate();
+
+  009d7	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _langName2$458[ebp]
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 789  : 		}
+
+  009dd	c7 45 fc ff ff
+	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
+
+; 1383 :         _Tidy_deallocate();
+
+  009e4	e8 00 00 00 00	 call	 ?_Tidy_deallocate@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Tidy_deallocate
+$LN445@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 794  : 	if (IS_SET(pCharacterInstance->GetAIFlag(), CInstanceBase::AIFLAG_AGGRESSIVE))
+
+  009e9	8b ce		 mov	 ecx, esi
+  009eb	e8 00 00 00 00	 call	 ?GetAIFlag@CInstanceBase@@QAEKXZ ; CInstanceBase::GetAIFlag
+  009f0	a8 01		 test	 al, 1
+  009f2	0f 84 82 00 00
+	00		 je	 $LN48@RegisterCh
+
+; 795  : 	{
+; 796  : 		CGraphicTextInstance* & prAIFlagInstance = pTextTail->pAIFlagTextInstance;
+; 797  : 		prAIFlagInstance = CGraphicTextInstance::New();
+
+  009f8	e8 00 00 00 00	 call	 ?New@CGraphicTextInstance@@SAPAV1@XZ ; CGraphicTextInstance::New
+
+; 798  : 		prAIFlagInstance->SetTextPointer(ms_pFont);
+
+  009fd	ff 35 00 00 00
+	00		 push	 DWORD PTR ?ms_pFont@@3PAVCGraphicText@@A ; ms_pFont
+  00a03	8b c8		 mov	 ecx, eax
+  00a05	89 47 28	 mov	 DWORD PTR [edi+40], eax
+  00a08	e8 00 00 00 00	 call	 ?SetTextPointer@CGraphicTextInstance@@QAEXPAVCGraphicText@@@Z ; CGraphicTextInstance::SetTextPointer
+
+; 799  : 		prAIFlagInstance->SetHorizonalAlign(CGraphicTextInstance::HORIZONTAL_ALIGN_LEFT);
+
+  00a0d	8b 4f 28	 mov	 ecx, DWORD PTR [edi+40]
+  00a10	6a 01		 push	 1
+  00a12	e8 00 00 00 00	 call	 ?SetHorizonalAlign@CGraphicTextInstance@@QAEXH@Z ; CGraphicTextInstance::SetHorizonalAlign
+
+; 800  : 		prAIFlagInstance->SetVerticalAlign(CGraphicTextInstance::VERTICAL_ALIGN_BOTTOM);
+
+  00a17	8b 4f 28	 mov	 ecx, DWORD PTR [edi+40]
+  00a1a	6a 30		 push	 48			; 00000030H
+  00a1c	e8 00 00 00 00	 call	 ?SetVerticalAlign@CGraphicTextInstance@@QAEXH@Z ; CGraphicTextInstance::SetVerticalAlign
+
+; 801  : 		prAIFlagInstance->SetValue("*");
+
+  00a21	8b 4f 28	 mov	 ecx, DWORD PTR [edi+40]
+  00a24	6a ff		 push	 -1
+  00a26	68 00 00 00 00	 push	 OFFSET ??_C@_01NBENCBCI@?$CK@
+  00a2b	e8 00 00 00 00	 call	 ?SetValue@CGraphicTextInstance@@QAEXPBDI@Z ; CGraphicTextInstance::SetValue
+
+; 802  : 		prAIFlagInstance->SetOutline(true);
+
+  00a30	8b 4f 28	 mov	 ecx, DWORD PTR [edi+40]
+  00a33	6a 01		 push	 1
+  00a35	e8 00 00 00 00	 call	 ?SetOutline@CGraphicTextInstance@@QAEX_N@Z ; CGraphicTextInstance::SetOutline
+
+; 803  : 		prAIFlagInstance->SetColor(c_rColor.r, c_rColor.g, c_rColor.b);
+
+  00a3a	8b 85 60 fe ff
+	ff		 mov	 eax, DWORD PTR _c_rColor$GSCopy$1$[ebp]
+  00a40	83 ec 10	 sub	 esp, 16			; 00000010H
+  00a43	8b 4f 28	 mov	 ecx, DWORD PTR [edi+40]
+  00a46	f3 0f 10 40 08	 movss	 xmm0, DWORD PTR [eax+8]
+  00a4b	c7 44 24 0c 00
+	00 80 3f	 mov	 DWORD PTR [esp+12], 1065353216 ; 3f800000H
+  00a53	f3 0f 11 44 24
+	08		 movss	 DWORD PTR [esp+8], xmm0
+  00a59	f3 0f 10 40 04	 movss	 xmm0, DWORD PTR [eax+4]
+  00a5e	f3 0f 11 44 24
+	04		 movss	 DWORD PTR [esp+4], xmm0
+  00a64	f3 0f 10 00	 movss	 xmm0, DWORD PTR [eax]
+  00a68	f3 0f 11 04 24	 movss	 DWORD PTR [esp], xmm0
+  00a6d	e8 00 00 00 00	 call	 ?SetColor@CGraphicTextInstance@@QAEXMMMM@Z ; CGraphicTextInstance::SetColor
+
+; 804  : 		prAIFlagInstance->Update();
+
+  00a72	8b 4f 28	 mov	 ecx, DWORD PTR [edi+40]
+  00a75	e8 00 00 00 00	 call	 ?Update@CGraphicTextInstance@@QAEXXZ ; CGraphicTextInstance::Update
+$LN48@RegisterCh:
+
+; 807  : 	pTextTail->bIsPC = pCharacterInstance->IsPC() != FALSE;
+
+  00a7a	8b ce		 mov	 ecx, esi
+  00a7c	e8 00 00 00 00	 call	 ?IsPC@CInstanceBase@@QAEHXZ ; CInstanceBase::IsPC
+
+; 810  : 	m_CharacterTextTailMap.insert(TTextTailMap::value_type(dwVirtualID, pTextTail));
+
+  00a81	8b 8d 64 fe ff
+	ff		 mov	 ecx, DWORD PTR _this$GSCopy$1$[ebp]
+  00a87	f7 d8		 neg	 eax
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility
+
+; 274  :         : first(_STD forward<_Other1>(_Val1)), second(_STD forward<_Other2>(_Val2)) {
+
+  00a89	89 bd 58 fe ff
+	ff		 mov	 DWORD PTR $T450[ebp+4], edi
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 807  : 	pTextTail->bIsPC = pCharacterInstance->IsPC() != FALSE;
+
+  00a8f	1b c0		 sbb	 eax, eax
+  00a91	f7 d8		 neg	 eax
+  00a93	89 47 70	 mov	 DWORD PTR [edi+112], eax
+
+; 810  : 	m_CharacterTextTailMap.insert(TTextTailMap::value_type(dwVirtualID, pTextTail));
+
+  00a96	8d 49 04	 lea	 ecx, DWORD PTR [ecx+4]
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility
+
+; 274  :         : first(_STD forward<_Other1>(_Val1)), second(_STD forward<_Other2>(_Val2)) {
+
+  00a99	8b 43 10	 mov	 eax, DWORD PTR _dwVirtualID$[ebx]
+  00a9c	89 85 54 fe ff
+	ff		 mov	 DWORD PTR $T450[ebp], eax
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 810  : 	m_CharacterTextTailMap.insert(TTextTailMap::value_type(dwVirtualID, pTextTail));
+
+  00aa2	8d 85 54 fe ff
+	ff		 lea	 eax, DWORD PTR $T450[ebp]
+  00aa8	50		 push	 eax
+  00aa9	8d 85 5c fe ff
+	ff		 lea	 eax, DWORD PTR $T452[ebp]
+  00aaf	50		 push	 eax
+  00ab0	e8 00 00 00 00	 call	 ??$insert@$0A@$0A@@?$_Tree@V?$_Tmap_traits@KPAUSTextTail@CPythonTextTail@@U?$less@K@std@@V?$allocator@U?$pair@$$CBKPAUSTextTail@CPythonTextTail@@@std@@@4@$0A@@std@@@std@@QAE?AU?$pair@V?$_Tree_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBKPAUSTextTail@CPythonTextTail@@@std@@@std@@@std@@@std@@_N@1@$$QAU?$pair@$$CBKPAUSTextTail@CPythonTextTail@@@1@@Z ; std::_Tree<std::_Tmap_traits<unsigned long,CPythonTextTail::STextTail *,std::less<unsigned long>,std::allocator<std::pair<unsigned long const ,CPythonTextTail::STextTail *> >,0> >::insert<0,0>
+$LN1@RegisterCh:
+
+; 811  : }
+
+  00ab5	8b 4d f4	 mov	 ecx, DWORD PTR __$EHRec$[ebp]
+  00ab8	64 89 0d 00 00
+	00 00		 mov	 DWORD PTR fs:0, ecx
+  00abf	59		 pop	 ecx
+  00ac0	5f		 pop	 edi
+  00ac1	5e		 pop	 esi
+  00ac2	8b 4d ec	 mov	 ecx, DWORD PTR __$ArrayPad$[ebp]
+  00ac5	33 cd		 xor	 ecx, ebp
+  00ac7	e8 00 00 00 00	 call	 @__security_check_cookie@4
+  00acc	8b e5		 mov	 esp, ebp
+  00ace	5d		 pop	 ebp
+  00acf	8b e3		 mov	 esp, ebx
+  00ad1	5b		 pop	 ebx
+  00ad2	c2 14 00	 ret	 20			; 00000014H
+$LN2377@RegisterCh:
+; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
+
+; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
+
+  00ad5	6a 00		 push	 0
+  00ad7	6a 00		 push	 0
+  00ad9	6a 00		 push	 0
+  00adb	6a 00		 push	 0
+  00add	6a 00		 push	 0
+  00adf	e8 00 00 00 00	 call	 __invoke_watson
+$LN193@RegisterCh:
+  00ae4	6a 00		 push	 0
+  00ae6	6a 00		 push	 0
+  00ae8	6a 00		 push	 0
+  00aea	6a 00		 push	 0
+  00aec	6a 00		 push	 0
+  00aee	e8 00 00 00 00	 call	 __invoke_watson
+$LN2378@RegisterCh:
+  00af3	6a 00		 push	 0
+  00af5	6a 00		 push	 0
+  00af7	6a 00		 push	 0
+  00af9	6a 00		 push	 0
+  00afb	6a 00		 push	 0
+  00afd	e8 00 00 00 00	 call	 __invoke_watson
+$LN2371@RegisterCh:
+  00b02	66 90		 npad	 2
+$LN2367@RegisterCh:
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonTextTail.cpp
+
+; 811  : }
+
+  00b04	00 00 00 00	 DD	 $LN29@RegisterCh
+  00b08	00 00 00 00	 DD	 $LN19@RegisterCh
+  00b0c	00 00 00 00	 DD	 $LN20@RegisterCh
+  00b10	00 00 00 00	 DD	 $LN21@RegisterCh
+  00b14	00 00 00 00	 DD	 $LN22@RegisterCh
+  00b18	00 00 00 00	 DD	 $LN23@RegisterCh
+  00b1c	00 00 00 00	 DD	 $LN24@RegisterCh
+  00b20	00 00 00 00	 DD	 $LN25@RegisterCh
+  00b24	00 00 00 00	 DD	 $LN26@RegisterCh
+  00b28	00 00 00 00	 DD	 $LN27@RegisterCh
+  00b2c	00 00 00 00	 DD	 $LN28@RegisterCh
+$LN2368@RegisterCh:
+  00b30	00 00 00 00	 DD	 $LN45@RegisterCh
+  00b34	00 00 00 00	 DD	 $LN35@RegisterCh
+  00b38	00 00 00 00	 DD	 $LN36@RegisterCh
+  00b3c	00 00 00 00	 DD	 $LN37@RegisterCh
+  00b40	00 00 00 00	 DD	 $LN38@RegisterCh
+  00b44	00 00 00 00	 DD	 $LN39@RegisterCh
+  00b48	00 00 00 00	 DD	 $LN40@RegisterCh
+  00b4c	00 00 00 00	 DD	 $LN41@RegisterCh
+  00b50	00 00 00 00	 DD	 $LN42@RegisterCh
+  00b54	00 00 00 00	 DD	 $LN43@RegisterCh
+  00b58	00 00 00 00	 DD	 $LN44@RegisterCh
+_TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+__unwindfunclet$?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z$1:
+  00000	8d 8d 78 fe ff
+	ff		 lea	 ecx, DWORD PTR _markImagePath$455[ebp]
+  00006	e9 00 00 00 00	 jmp	 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+__unwindfunclet$?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z$2:
+  0000b	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _strGuildName$456[ebp]
+  00011	e9 00 00 00 00	 jmp	 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+__unwindfunclet$?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z$3:
+  00016	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _langName$457[ebp]
+  0001c	e9 00 00 00 00	 jmp	 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+__unwindfunclet$?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z$4:
+  00021	8d 8d 90 fe ff
+	ff		 lea	 ecx, DWORD PTR _langName2$458[ebp]
+  00027	e9 00 00 00 00	 jmp	 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
+  0002c	cc		 int	 3
+  0002d	cc		 int	 3
+  0002e	cc		 int	 3
+  0002f	cc		 int	 3
+  00030	cc		 int	 3
+__ehhandler$?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z:
+  00031	90		 npad	 1
+  00032	90		 npad	 1
+  00033	8b 54 24 08	 mov	 edx, DWORD PTR [esp+8]
+  00037	8d 42 0c	 lea	 eax, DWORD PTR [edx+12]
+  0003a	8b 8a 50 fe ff
+	ff		 mov	 ecx, DWORD PTR [edx-432]
+  00040	33 c8		 xor	 ecx, eax
+  00042	e8 00 00 00 00	 call	 @__security_check_cookie@4
+  00047	8b 4a f8	 mov	 ecx, DWORD PTR [edx-8]
+  0004a	33 c8		 xor	 ecx, eax
+  0004c	e8 00 00 00 00	 call	 @__security_check_cookie@4
+  00051	b8 00 00 00 00	 mov	 eax, OFFSET __ehfuncinfo$?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z
+  00056	e9 00 00 00 00	 jmp	 ___CxxFrameHandler3
+text$x	ENDS
+?RegisterCharacterTextTail@CPythonTextTail@@QAEXKEKABUD3DXCOLOR@@M@Z ENDP ; CPythonTextTail::RegisterCharacterTextTail
 END

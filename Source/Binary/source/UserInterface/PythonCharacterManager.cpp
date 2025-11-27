@@ -933,14 +933,34 @@ CInstanceBase* CPythonCharacterManager::FindVictim(CInstanceBase* pkInstMain, fl
 		}
 		if (hasPhysicalBlock || CanAttackToTarget(pkInstMain, pkVictim))
 			continue;
-		const float fDistance = GetDistanceNew(*startPoint, targetPos);
-		if (fDistance < fMaxDistance)
-			m_vecVictimList.emplace_back(pkVictim, fDistance);
+		
+		// StartPoint'e göre mesafe (maksimum menzil kontrolü)
+		const float fDistanceFromStart = GetDistanceNew(*startPoint, targetPos);
+		if (fDistanceFromStart >= fMaxDistance)
+			continue;
+		
+		// Oyuncuya göre mesafe (öncelik - en yakýn hedef seçilecek)
+		TPixelPosition mainPos;
+		pkInstMain->NEW_GetPixelPosition(&mainPos);
+		const float fDistanceFromPlayer = GetDistanceNew(mainPos, targetPos);
+		
+		// Oyuncuya göre mesafeyi öncelik olarak kullan
+		m_vecVictimList.emplace_back(pkVictim, fDistanceFromPlayer);
 	}
 	if (m_vecVictimList.size())
 	{
+		// En yakýn hedefi seç (oyuncuya göre mesafe)
 		if (m_vecVictimList.size() > 1)
+		{
 			std::sort(m_vecVictimList.begin(), m_vecVictimList.end(), FindLowerDistance);
+			
+			// Birden fazla hedef varsa, en yakýn 3 hedef arasýndan rastgele seç
+			// Böylece farklý oyuncular farklý hedeflere yönlenir
+			const int maxRandomTargets = 3;
+			const int randomCount = (m_vecVictimList.size() < maxRandomTargets) ? (int)m_vecVictimList.size() : maxRandomTargets;
+			const int randomIndex = (std::rand() % randomCount);
+			return m_vecVictimList[randomIndex].first;
+		}
 		return m_vecVictimList[0].first;
 	}
 	return NULL;

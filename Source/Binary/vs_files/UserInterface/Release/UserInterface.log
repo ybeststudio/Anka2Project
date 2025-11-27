@@ -104,9 +104,9 @@
   UserInterface.cpp
      C:\Anka2Project\Anka2Project\Source\Binary\binary\Metin2Release.lib kitaplığı ve C:\Anka2Project\Anka2Project\Source\Binary\binary\Metin2Release.exp nesnesi oluşturuluyor
   Kod üretiliyor
-  638 of 17953 functions ( 3.6%) were compiled, the rest were copied from previous compilation.
-    3 functions were new in current compilation
-    157 functions had inline decision re-evaluated but remain unchanged
+  63 of 17953 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    86 functions had inline decision re-evaluated but remain unchanged
   Kodun üretilmesi tamamlandı
 lz4.obj : warning LNK4099: PDB 'lz4_Release.pdb', 'lz4.obj' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\lz4_Release.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
 xxhash.obj : warning LNK4099: PDB 'xxhash_Release.pdb', 'xxhash.obj' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\xxhash_Release.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
@@ -124,7 +124,7 @@ libjpeg-9e.lib(jcomapi.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(j
 libjpeg-9e.lib(jutils.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(jutils.obj)' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\jpeg.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
 libjpeg-9e.lib(jmemmgr.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(jmemmgr.obj)' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\jpeg.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
 libjpeg-9e.lib(jcmarker.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(jcmarker.obj)' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\jpeg.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
-libjpeg-9e.lib(jdmarker.obj) : warning LNK4099: PDB '', 'libjpeg-9e.lib(jdmarker.obj)' ile veya '' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
+libjpeg-9e.lib(jdmarker.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(jdmarker.obj)' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\jpeg.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
 libjpeg-9e.lib(jdinput.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(jdinput.obj)' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\jpeg.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
 libjpeg-9e.lib(jcinit.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(jcinit.obj)' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\jpeg.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
 libjpeg-9e.lib(jdmaster.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(jdmaster.obj)' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\jpeg.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
@@ -146,7 +146,7 @@ libjpeg-9e.lib(jquant2.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(j
 libjpeg-9e.lib(jdarith.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(jdarith.obj)' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\jpeg.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
 libjpeg-9e.lib(jdcoefct.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(jdcoefct.obj)' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\jpeg.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
 libjpeg-9e.lib(jdcolor.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(jdcolor.obj)' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\jpeg.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
-libjpeg-9e.lib(jdmainct.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(jdmainct.obj)' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\jpeg.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
+libjpeg-9e.lib(jdmainct.obj) : warning LNK4099: PDB '', 'libjpeg-9e.lib(jdmainct.obj)' ile veya '' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
 libjpeg-9e.lib(jddctmgr.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(jddctmgr.obj)' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\jpeg.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
 libjpeg-9e.lib(jdpostct.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(jdpostct.obj)' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\jpeg.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
 libjpeg-9e.lib(jaricom.obj) : warning LNK4099: PDB 'jpeg.pdb', 'libjpeg-9e.lib(jaricom.obj)' ile veya 'C:\Anka2Project\Anka2Project\Source\Binary\binary\jpeg.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor

@@ -2835,7 +2835,8 @@ void CPythonPlayer::AutoHuntLoop()
 		}
 		if (!pkInstVictim || pkInstVictim->IsDead())
 		{
-			pkInstVictim = CPythonCharacterManager::Instance().FindVictim(pkInstMain, (CPythonMiniMap::Instance().GetAutoHuntRadius() + 40.0) * (4000.0 / 100.0), &m_bAutoHuntStartPoint, m_bAutoHuntMob, m_bAutoHuntStone);
+			// AUTO_HUNT menzil artýrýldý: +40.0 -> +150.0, çarpan: 4000.0 -> 8000.0 (2x menzil)
+			pkInstVictim = CPythonCharacterManager::Instance().FindVictim(pkInstMain, (CPythonMiniMap::Instance().GetAutoHuntRadius() + 150.0) * (8000.0 / 100.0), &m_bAutoHuntStartPoint, m_bAutoHuntMob, m_bAutoHuntStone);
 			if (!pkInstVictim)
 			{
 				TPixelPosition srcPos;

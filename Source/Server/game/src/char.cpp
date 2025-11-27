@@ -6362,6 +6362,18 @@ void CHARACTER::ClearStone()
 
 void CHARACTER::ClearTarget()
 {
+#ifdef __AUTO_HUNT__
+	// AUTO_HUNT aktif oyuncular için rezervasyonu kaldýr
+	if (m_pkChrTarget && IsPC() && m_bAutoHuntStatus && (m_pkChrTarget->IsStone() || m_pkChrTarget->IsNPC()))
+	{
+		// Eðer bu oyuncu tarafýndan rezerve edilmiþse kaldýr
+		if (CHARACTER_MANAGER::instance().IsTargetReserved(m_pkChrTarget->GetVID(), GetPlayerID()))
+		{
+			CHARACTER_MANAGER::instance().ReleaseTarget(m_pkChrTarget->GetVID());
+		}
+	}
+#endif
+
 	if (m_pkChrTarget)
 	{
 		m_pkChrTarget->m_set_pkChrTargetedBy.erase(this);

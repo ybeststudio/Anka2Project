@@ -24,8 +24,6 @@
   FlyingInstance.cpp
   FlyingObjectManager.cpp
   GameEventManager.cpp
-C:\Anka2Project\Anka2Project\Source\Binary\source\GameLib\ActorInstanceAttach.cpp(43,1): warning C4715: 'CActorInstance::__IsLeftHandWeapon': tüm denetim yolları değer döndürmez
-C:\Anka2Project\Anka2Project\Source\Binary\source\GameLib\ActorInstanceAttach.cpp(66,1): warning C4715: 'CActorInstance::__IsRightHandWeapon': tüm denetim yolları değer döndürmez
   GameType.cpp
   GameUtil.cpp
   ItemData.cpp
@@ -36,6 +34,8 @@ C:\Anka2Project\Anka2Project\Source\Binary\source\GameLib\ActorInstanceAttach.cp
   MapOutdoorCharacterShadow.cpp
   MapOutdoorIndexBuffer.cpp
   MapOutdoorLoad.cpp
+C:\Anka2Project\Anka2Project\Source\Binary\source\GameLib\ActorInstanceAttach.cpp(43,1): warning C4715: 'CActorInstance::__IsLeftHandWeapon': tüm denetim yolları değer döndürmez
+C:\Anka2Project\Anka2Project\Source\Binary\source\GameLib\ActorInstanceAttach.cpp(66,1): warning C4715: 'CActorInstance::__IsRightHandWeapon': tüm denetim yolları değer döndürmez
   MapOutdoorQuadtree.cpp
   MapOutdoorRender.cpp
   MapOutdoorRenderHTP.cpp

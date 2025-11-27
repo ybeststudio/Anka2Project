@@ -2749,6 +2749,10 @@ bool CHARACTER::UseSkill(DWORD dwVnum, LPCHARACTER pkVictim, bool bUseGrandMaste
 		ComputeSkill(dwVnum, pkVictim);
 	else if (dwVnum == SKILL_BYEURAK)
 		ComputeSkill(dwVnum, pkVictim);
+#ifdef ENABLE_SKILL_PAERYONG_PROCESSING
+	else if (dwVnum == SKILL_PAERYONG)
+        ComputeSkill(dwVnum, pkVictim);
+#endif
 	else if (dwVnum == SKILL_MUYEONG || pkSk->IsChargeSkill())
 		ComputeSkill(dwVnum, pkVictim);
 

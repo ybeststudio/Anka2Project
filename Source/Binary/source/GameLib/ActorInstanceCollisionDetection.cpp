@@ -5,6 +5,7 @@
 #include "ActorInstance.h"
 
 #define REMOVE_MOUNTS_COLLISION
+#define REMOVE_STONES_COLLISION
 #define REMOVE_PETS_COLLISION
 #define REMOVE_MOBS_COLLISION
 #define REMOVE_SHOPS_COLLISION
@@ -569,6 +570,11 @@ BOOL CActorInstance::TestActorCollision(CActorInstance & rVictim)
 #ifdef REMOVE_SAFEZONE_COLLISION
 	if (IsInSafeZone(rVictim))
 		return FALSE;
+#endif
+
+#ifdef REMOVE_STONES_COLLISION
+    if (rVictim.IsStone())
+        return FALSE;
 #endif
 
 #ifdef REMOVE_PETS_COLLISION

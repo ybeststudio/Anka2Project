@@ -8,9 +8,9 @@
 
 INCLUDELIB OLDNAMES
 
+PUBLIC	??_C@_0L@PMHBIDJB@AddChannel@			; `string'
 PUBLIC	??_C@_07LEAAGLHO@Request@			; `string'
 PUBLIC	??_C@_0BD@FAMPLJOF@ServerStateChecker@		; `string'
-PUBLIC	??_C@_0L@PMHBIDJB@AddChannel@			; `string'
 ;	COMDAT ?s_methods@?1??initServerStateChecker@@YAXXZ@4PAUPyMethodDef@@A
 _DATA	SEGMENT
 ?s_methods@?1??initServerStateChecker@@YAXXZ@4PAUPyMethodDef@@A DD FLAT:??_C@_06MIKANEJK@Create@ ; `initServerStateChecker'::`2'::s_methods
@@ -37,10 +37,6 @@ _DATA	SEGMENT
 	DD	00H
 	ORG $+8
 _DATA	ENDS
-;	COMDAT ??_C@_0L@PMHBIDJB@AddChannel@
-CONST	SEGMENT
-??_C@_0L@PMHBIDJB@AddChannel@ DB 'AddChannel', 00H	; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_0BD@FAMPLJOF@ServerStateChecker@
 CONST	SEGMENT
 ??_C@_0BD@FAMPLJOF@ServerStateChecker@ DB 'ServerStateChecker', 00H ; `string'
@@ -48,6 +44,10 @@ CONST	ENDS
 ;	COMDAT ??_C@_07LEAAGLHO@Request@
 CONST	SEGMENT
 ??_C@_07LEAAGLHO@Request@ DB 'Request', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0L@PMHBIDJB@AddChannel@
+CONST	SEGMENT
+??_C@_0L@PMHBIDJB@AddChannel@ DB 'AddChannel', 00H	; `string'
 PUBLIC	?Instance@?$CSingleton@VCServerStateChecker@@@@SAAAVCServerStateChecker@@XZ ; CSingleton<CServerStateChecker>::Instance
 PUBLIC	?initServerStateChecker@@YAXXZ			; initServerStateChecker
 PUBLIC	?ServerStateCheckerInitialize@@YAPAU_object@@PAU1@0@Z ; ServerStateCheckerInitialize

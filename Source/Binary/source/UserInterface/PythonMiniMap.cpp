@@ -1935,7 +1935,8 @@ void CPythonMiniMap::AddPartyPositionInfo(const TPartyPosition& Info)
 #ifdef __AUTO_HUNT__
 void CPythonMiniMap::ChangeAutoHuntRange(float fVal)
 {
-	m_fAutoHuntImageRadius = fVal + 40.0;
+	// AUTO_HUNT görsel menzil artýrýldý: +40.0 -> +150.0
+	m_fAutoHuntImageRadius = fVal + 150.0;
 	__SetPosition();
 }
 #endif

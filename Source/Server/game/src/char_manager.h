@@ -142,6 +142,7 @@ class CHARACTER_MANAGER : public singleton<CHARACTER_MANAGER>
 		void ReleaseTarget(DWORD dwTargetVID);
 		void ReleaseAllTargetsByPlayer(DWORD dwPlayerPID);
 		bool IsTargetReserved(DWORD dwTargetVID, DWORD dwPlayerPID = 0); // dwPlayerPID = 0 ise herhangi biri tarafýndan rezerve edilmiþ mi kontrol eder
+		DWORD GetReserverPID(DWORD dwTargetVID); // Hedefi rezerve eden oyuncunun PID'sini döndürür, yoksa 0
 
 	protected:
 		std::map<DWORD, DWORD> m_mapTargetReservation; // VID -> PID (rezerve eden oyuncu)

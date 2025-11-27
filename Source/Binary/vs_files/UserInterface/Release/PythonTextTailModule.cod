@@ -8,22 +8,22 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0BC@HIDLOAIP@UpdateAllTextTail@		; `string'
-PUBLIC	??_C@_0BG@LIPEMMLC@ShowCharacterTextTail@	; `string'
 PUBLIC	??_C@_0BG@CGLFBHI@UpdateShowingTextTail@	; `string'
-PUBLIC	??_C@_0M@GFJLCLIA@GetPosition@			; `string'
+PUBLIC	??_C@_0BC@HIDLOAIP@UpdateAllTextTail@		; `string'
 PUBLIC	??_C@_0BB@NMNDPCFJ@ShowItemTextTail@		; `string'
-PUBLIC	??_C@_0BA@FCGIHNAB@ArrangeTextTail@		; `string'
+PUBLIC	??_C@_0BG@LIPEMMLC@ShowCharacterTextTail@	; `string'
 PUBLIC	??_C@_06NNDBIPNE@IsChat@			; `string'
-PUBLIC	??_C@_0BA@GALJFJJC@ShowAllTextTail@		; `string'
+PUBLIC	??_C@_0M@GFJLCLIA@GetPosition@			; `string'
 PUBLIC	??_C@_0BA@PONNLPCF@HideAllTextTail@		; `string'
-PUBLIC	??_C@_0O@NECGPBDE@EnablePKTitle@		; `string'
+PUBLIC	??_C@_0BA@FCGIHNAB@ArrangeTextTail@		; `string'
 PUBLIC	??_C@_0P@KGIJNKFO@SelectItemName@		; `string'
-PUBLIC	??_C@_0BB@HKPOGMDA@RegisterChatTail@		; `string'
+PUBLIC	??_C@_0BA@GALJFJJC@ShowAllTextTail@		; `string'
 PUBLIC	??_C@_0BK@HJNOJEAA@RegisterCharacterTextTail@	; `string'
-PUBLIC	??_C@_0M@INLHDDBB@AttachTitle@			; `string'
+PUBLIC	??_C@_0O@NECGPBDE@EnablePKTitle@		; `string'
 PUBLIC	??_C@_0BB@IFAJCDPP@RegisterInfoTail@		; `string'
+PUBLIC	??_C@_0BB@HKPOGMDA@RegisterChatTail@		; `string'
 PUBLIC	??_C@_08KDMBCLKF@textTail@			; `string'
+PUBLIC	??_C@_0M@INLHDDBB@AttachTitle@			; `string'
 ;	COMDAT ?s_methods@?1??initTextTail@@YAXXZ@4PAUPyMethodDef@@A
 _DATA	SEGMENT
 ?s_methods@?1??initTextTail@@YAXXZ@4PAUPyMethodDef@@A DD FLAT:??_C@_05MDNHABIA@Clear@ ; `initTextTail'::`2'::s_methods
@@ -102,70 +102,70 @@ _DATA	SEGMENT
 	DD	00H
 	ORG $+8
 _DATA	ENDS
+;	COMDAT ??_C@_0M@INLHDDBB@AttachTitle@
+CONST	SEGMENT
+??_C@_0M@INLHDDBB@AttachTitle@ DB 'AttachTitle', 00H	; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_08KDMBCLKF@textTail@
 CONST	SEGMENT
 ??_C@_08KDMBCLKF@textTail@ DB 'textTail', 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0BB@HKPOGMDA@RegisterChatTail@
+CONST	SEGMENT
+??_C@_0BB@HKPOGMDA@RegisterChatTail@ DB 'RegisterChatTail', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@IFAJCDPP@RegisterInfoTail@
 CONST	SEGMENT
 ??_C@_0BB@IFAJCDPP@RegisterInfoTail@ DB 'RegisterInfoTail', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@INLHDDBB@AttachTitle@
+;	COMDAT ??_C@_0O@NECGPBDE@EnablePKTitle@
 CONST	SEGMENT
-??_C@_0M@INLHDDBB@AttachTitle@ DB 'AttachTitle', 00H	; `string'
+??_C@_0O@NECGPBDE@EnablePKTitle@ DB 'EnablePKTitle', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BK@HJNOJEAA@RegisterCharacterTextTail@
 CONST	SEGMENT
 ??_C@_0BK@HJNOJEAA@RegisterCharacterTextTail@ DB 'RegisterCharacterTextTa'
 	DB	'il', 00H					; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BB@HKPOGMDA@RegisterChatTail@
+;	COMDAT ??_C@_0BA@GALJFJJC@ShowAllTextTail@
 CONST	SEGMENT
-??_C@_0BB@HKPOGMDA@RegisterChatTail@ DB 'RegisterChatTail', 00H ; `string'
+??_C@_0BA@GALJFJJC@ShowAllTextTail@ DB 'ShowAllTextTail', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@KGIJNKFO@SelectItemName@
 CONST	SEGMENT
 ??_C@_0P@KGIJNKFO@SelectItemName@ DB 'SelectItemName', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@NECGPBDE@EnablePKTitle@
+;	COMDAT ??_C@_0BA@FCGIHNAB@ArrangeTextTail@
 CONST	SEGMENT
-??_C@_0O@NECGPBDE@EnablePKTitle@ DB 'EnablePKTitle', 00H ; `string'
+??_C@_0BA@FCGIHNAB@ArrangeTextTail@ DB 'ArrangeTextTail', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@PONNLPCF@HideAllTextTail@
 CONST	SEGMENT
 ??_C@_0BA@PONNLPCF@HideAllTextTail@ DB 'HideAllTextTail', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@GALJFJJC@ShowAllTextTail@
+;	COMDAT ??_C@_0M@GFJLCLIA@GetPosition@
 CONST	SEGMENT
-??_C@_0BA@GALJFJJC@ShowAllTextTail@ DB 'ShowAllTextTail', 00H ; `string'
+??_C@_0M@GFJLCLIA@GetPosition@ DB 'GetPosition', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06NNDBIPNE@IsChat@
 CONST	SEGMENT
 ??_C@_06NNDBIPNE@IsChat@ DB 'IsChat', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@FCGIHNAB@ArrangeTextTail@
+;	COMDAT ??_C@_0BG@LIPEMMLC@ShowCharacterTextTail@
 CONST	SEGMENT
-??_C@_0BA@FCGIHNAB@ArrangeTextTail@ DB 'ArrangeTextTail', 00H ; `string'
+??_C@_0BG@LIPEMMLC@ShowCharacterTextTail@ DB 'ShowCharacterTextTail', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@NMNDPCFJ@ShowItemTextTail@
 CONST	SEGMENT
 ??_C@_0BB@NMNDPCFJ@ShowItemTextTail@ DB 'ShowItemTextTail', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@GFJLCLIA@GetPosition@
+;	COMDAT ??_C@_0BC@HIDLOAIP@UpdateAllTextTail@
 CONST	SEGMENT
-??_C@_0M@GFJLCLIA@GetPosition@ DB 'GetPosition', 00H	; `string'
+??_C@_0BC@HIDLOAIP@UpdateAllTextTail@ DB 'UpdateAllTextTail', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BG@CGLFBHI@UpdateShowingTextTail@
 CONST	SEGMENT
 ??_C@_0BG@CGLFBHI@UpdateShowingTextTail@ DB 'UpdateShowingTextTail', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BG@LIPEMMLC@ShowCharacterTextTail@
-CONST	SEGMENT
-??_C@_0BG@LIPEMMLC@ShowCharacterTextTail@ DB 'ShowCharacterTextTail', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BC@HIDLOAIP@UpdateAllTextTail@
-CONST	SEGMENT
-??_C@_0BC@HIDLOAIP@UpdateAllTextTail@ DB 'UpdateAllTextTail', 00H ; `string'
 PUBLIC	?initTextTail@@YAXXZ				; initTextTail
 PUBLIC	?textTailEnablePKTitle@@YAPAU_object@@PAU1@0@Z	; textTailEnablePKTitle
 PUBLIC	?textTailSelectItemName@@YAPAU_object@@PAU1@0@Z	; textTailSelectItemName

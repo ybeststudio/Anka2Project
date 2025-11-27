@@ -18,4 +18,11 @@
   error.cpp
   lzo.cpp
   tea.cpp
+C:\Anka2Project\Anka2Project\Source\Binary\source\EterBase\error.cpp(53,29): warning C4477: 'fprintf' : '%08x' biçim dizesi 'unsigned int' türü bir bağımsız değişken gerektirir, ancak 1 değişen sayıda bağımsız değişkenin türü 'time_t'
+  ('/source/EterBase/error.cpp' kaynak dosyası derleniyor)
+      C:\Anka2Project\Anka2Project\Source\Binary\source\EterBase\error.cpp(53,29):
+      biçim dizesinde '%llx' kullanmayı düşünün
+      C:\Anka2Project\Anka2Project\Source\Binary\source\EterBase\error.cpp(53,29):
+      biçim dizesinde '%I64x' kullanmayı düşünün
+  
   EterBase.vcxproj -> C:\Anka2Project\Anka2Project\Source\Binary\vs_files\EterBase\Release\EterBase.lib

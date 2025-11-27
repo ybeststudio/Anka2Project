@@ -386,46 +386,4 @@ __unwindtable$??__EguildSkills@@YAXXZ DD 0ffffffffH
 ?emotionIcons$initializer$@@3P6AXXZA DD FLAT:??__EemotionIcons@@YAXXZ ; emotionIcons$initializer$
 ?skillIndexes$initializer$@@3P6AXXZA DD FLAT:??__EskillIndexes@@YAXXZ ; skillIndexes$initializer$
 ?guildSkills$initializer$@@3P6AXXZA DD FLAT:??__EguildSkills@@YAXXZ ; guildSkills$initializer$
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonSoundManagerModule.cpp
-;	COMDAT ?initsnd@@YAXXZ
-_TEXT	SEGMENT
-?initsnd@@YAXXZ PROC					; initsnd, COMDAT
-
-; 155  : 	static PyMethodDef s_methods[] = 
-; 156  : 	{
-; 157  : 		{ "PlaySound",				sndPlaySound,				METH_VARARGS },
-; 158  : 		{ "PlaySound3D",			sndPlaySound3D,				METH_VARARGS },
-; 159  : 		{ "PlayMusic",				sndPlayMusic,				METH_VARARGS },
-; 160  : 		{ "FadeInMusic",			sndFadeInMusic,				METH_VARARGS },
-; 161  : 		{ "FadeOutMusic",			sndFadeOutMusic,			METH_VARARGS },
-; 162  : 		{ "FadeOutAllMusic",		sndFadeOutAllMusic,			METH_VARARGS },
-; 163  : 		{ "FadeLimitOutMusic",		sndFadeLimitOutMusic,		METH_VARARGS },
-; 164  : 		{ "StopAllSound",			sndStopAllSound,			METH_VARARGS },
-; 165  : 
-; 166  : 		{ "SetMusicVolumef",		sndSetMusicVolume,			METH_VARARGS },
-; 167  : 		{ "SetMusicVolume",			sndSetMusicVolume,			METH_VARARGS },
-; 168  : 		{ "SetSoundVolumef",		sndSetSoundVolumef,			METH_VARARGS },
-; 169  : 		{ "SetSoundVolume",			sndSetSoundVolume,			METH_VARARGS },
-; 170  : 		{ "SetSoundScale",			sndSetSoundScale,			METH_VARARGS },
-; 171  : 		{ "SetAmbienceSoundScale",	sndSetAmbienceSoundScale,	METH_VARARGS },
-; 172  : 		{ nullptr, nullptr },
-; 173  : 	};
-; 174  : 
-; 175  : 	Py_InitModule("snd", s_methods);
-
-  00000	68 f5 03 00 00	 push	 1013			; 000003f5H
-  00005	6a 00		 push	 0
-  00007	6a 00		 push	 0
-  00009	68 00 00 00 00	 push	 OFFSET ?s_methods@?1??initsnd@@YAXXZ@4PAUPyMethodDef@@A
-  0000e	68 00 00 00 00	 push	 OFFSET ??_C@_03OEOJGHBI@snd@
-  00013	ff 15 00 00 00
-	00		 call	 DWORD PTR __imp__Py_InitModule4
-  00019	83 c4 14	 add	 esp, 20			; 00000014H
-
-; 176  : }
-
-  0001c	c3		 ret	 0
-?initsnd@@YAXXZ ENDP					; initsnd
-_TEXT	ENDS
 END

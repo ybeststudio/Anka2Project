@@ -186,6 +186,9 @@
 #define ENABLE_STONE_ITEM_BUG_FIX               	// Taþ/soket itemleriyle ilgili kullaným/istif/bellek hatalarýný giderir
 #define ENABLE_WAR_CRASHER_PROTECTION_FIX       	// Savaþ (war) sýrasýnda crash/exploit korumalarý ekler
 #define HORSE_FIX									// At/binek sistemindeki spawn, hareket, saldýrý ve pozisyon hatalarýný giderir; exploit risklerini azaltýr
+#define SYS_ERR_SOURCE_TRACKING    					// Hata tetiklendiðinde log çýktýsýna kaynak dosya ve satýr bilgisi ekler
+#define ENABLE_SKILL_YONGBI_PROCESSING_FIX   		// SKILL_YONGBI (Ejderha Atýþý) için hasar iþlemesini düzelten fix (movement-only case kaldýrýlýp normal skill-case grubuna eklenir)
+#define ENABLE_SKILL_PAERYONG_PROCESSING   			// SKILL_PAERYONG (Ejderha Kükresi) için ComputeSkill çaðrýsýný ekleyerek hasar/efekt iþlenmesini saðlar
 /*** DÜZELTMELER ***/
 
 /*** TAMAMLANMAMIÞ SÝSTEMLER (YAKINDA) ***/

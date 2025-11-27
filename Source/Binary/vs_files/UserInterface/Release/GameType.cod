@@ -200,7 +200,7 @@ PUBLIC	?g_strGuildSymbolPathName@@3V?$basic_string@DU?$char_traits@D@std@@V?$all
 ?gs_isReloadDefaultFont@@3_NA DB 01H DUP (?)		; gs_isReloadDefaultFont
 _BSS	ENDS
 ?g_strResourcePath$initializer$@@3P6AXXZA DD FLAT:??__Eg_strResourcePath@@YAXXZ ; g_strResourcePath$initializer$
-	ORG $+4892
+	ORG $+4888
 ?g_strResourcePath@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A DB 064H ; g_strResourcePath
 	DB	03aH
 	DB	02fH

@@ -1722,6 +1722,7 @@ class CHARACTER : public CEntity, public CFSM, public CHorseRider
 		void			GetAutoHuntCommand(const char* szArgument);
 		void			SetAutoHuntStatus(bool bStatus, bool bMobFarm = false, bool bMetinFarm = false);
 		bool			IsAutoHuntAffectHas();
+		bool			IsAutoHuntStatus() const { return m_bAutoHuntStatus; }
 
 	protected:
 		std::vector<std::pair<BYTE, int>> m_vecAutoHuntItems;

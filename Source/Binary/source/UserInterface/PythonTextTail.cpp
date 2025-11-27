@@ -622,7 +622,30 @@ void CPythonTextTail::RegisterCharacterTextTail(DWORD dwGuildID, DWORD dwVirtual
 	if (!pCharacterInstance)
 		return;
 
+#ifdef ENABLE_GM_MOB_VNUM_DISPLAY
+	CInstanceBase* pInstance = CPythonCharacterManager::Instance().GetMainInstancePtr();
+
+	uint32_t raceNum{ pCharacterInstance->GetRace() };
+	const char* originalName = pCharacterInstance->GetNameString();
+	const char* displayName = originalName;
+
+	char chrName[CHARACTER_NAME_MAX_LEN + 1 + 15];
+
+	if (pInstance)
+	{
+		if (pInstance->IsGameMaster() && pInstance != pCharacterInstance && !pCharacterInstance->IsPC())
+		{
+			snprintf(chrName, sizeof(chrName), "%s - (%u)", originalName, raceNum);
+			displayName = chrName;
+		}
+	}
+#endif
+
+#ifdef ENABLE_GM_MOB_VNUM_DISPLAY
+	TTextTail* pTextTail = RegisterTextTail(dwVirtualID, displayName, pCharacterInstance->GetGraphicThingInstancePtr(), pCharacterInstance->GetGraphicThingInstanceRef().GetHeight() + fAddHeight, c_rColor);
+#else
 	TTextTail* pTextTail = RegisterTextTail(dwVirtualID, pCharacterInstance->GetNameString(), pCharacterInstance->GetGraphicThingInstancePtr(), pCharacterInstance->GetGraphicThingInstanceRef().GetHeight() + fAddHeight, c_rColor);
+#endif
 
 	CGraphicTextInstance* pTextInstance = pTextTail->pTextInstance;
 	pTextInstance->SetOutline(true);

@@ -9,18 +9,18 @@
 INCLUDELIB OLDNAMES
 
 PUBLIC	??_C@_0BD@EEDMKMGJ@NotifyChannelState@		; `string'
-PUBLIC	??_R2CServerStateChecker@@8			; CServerStateChecker::`RTTI Base Class Array'
 PUBLIC	??_R2?$CSingleton@VCServerStateChecker@@@@8	; CSingleton<CServerStateChecker>::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCServerStateChecker@@@@8 ; CSingleton<CServerStateChecker>::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R2CServerStateChecker@@8			; CServerStateChecker::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@CServerStateChecker@@8		; CServerStateChecker::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R3?$CSingleton@VCServerStateChecker@@@@8	; CSingleton<CServerStateChecker>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R3CServerStateChecker@@8			; CServerStateChecker::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCServerStateChecker@@@@8 ; CSingleton<CServerStateChecker>::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R0?AV?$CSingleton@VCServerStateChecker@@@@@8	; CSingleton<CServerStateChecker> `RTTI Type Descriptor'
+PUBLIC	??_R3?$CSingleton@VCServerStateChecker@@@@8	; CSingleton<CServerStateChecker>::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R0?AVCServerStateChecker@@@8			; CServerStateChecker `RTTI Type Descriptor'
+PUBLIC	??_R3CServerStateChecker@@8			; CServerStateChecker::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R4?$CSingleton@VCServerStateChecker@@@@6B@	; CSingleton<CServerStateChecker>::`RTTI Complete Object Locator'
 PUBLIC	??_R4CServerStateChecker@@6B@			; CServerStateChecker::`RTTI Complete Object Locator'
-PUBLIC	?ms_singleton@?$CSingleton@VCServerStateChecker@@@@0PAVCServerStateChecker@@A ; CSingleton<CServerStateChecker>::ms_singleton
 PUBLIC	??_7?$CSingleton@VCServerStateChecker@@@@6B@	; CSingleton<CServerStateChecker>::`vftable'
+PUBLIC	?ms_singleton@?$CSingleton@VCServerStateChecker@@@@0PAVCServerStateChecker@@A ; CSingleton<CServerStateChecker>::ms_singleton
 PUBLIC	??_7CServerStateChecker@@6B@			; CServerStateChecker::`vftable'
 ;	COMDAT ?ms_singleton@?$CSingleton@VCServerStateChecker@@@@0PAVCServerStateChecker@@A
 _BSS	SEGMENT
@@ -52,18 +52,6 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$CSingleton@VCServerStateChecker@@@@@8
 	DD	FLAT:??_R3?$CSingleton@VCServerStateChecker@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCServerStateChecker@@@8
-data$rs	SEGMENT
-??_R0?AVCServerStateChecker@@@8 DD FLAT:??_7type_info@@6B@ ; CServerStateChecker `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCServerStateChecker@@', 00H
-data$rs	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCServerStateChecker@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCServerStateChecker@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CServerStateChecker> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AV?$CSingleton@VCServerStateChecker@@@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R3CServerStateChecker@@8
 rdata$r	SEGMENT
 ??_R3CServerStateChecker@@8 DD 00H			; CServerStateChecker::`RTTI Class Hierarchy Descriptor'
@@ -71,12 +59,34 @@ rdata$r	SEGMENT
 	DD	02H
 	DD	FLAT:??_R2CServerStateChecker@@8
 rdata$r	ENDS
+;	COMDAT ??_R0?AVCServerStateChecker@@@8
+data$rs	SEGMENT
+??_R0?AVCServerStateChecker@@@8 DD FLAT:??_7type_info@@6B@ ; CServerStateChecker `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCServerStateChecker@@', 00H
+data$rs	ENDS
 ;	COMDAT ??_R3?$CSingleton@VCServerStateChecker@@@@8
 rdata$r	SEGMENT
 ??_R3?$CSingleton@VCServerStateChecker@@@@8 DD 00H	; CSingleton<CServerStateChecker>::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	01H
 	DD	FLAT:??_R2?$CSingleton@VCServerStateChecker@@@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCServerStateChecker@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCServerStateChecker@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CServerStateChecker> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCServerStateChecker@@@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCServerStateChecker@@@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@?$CSingleton@VCServerStateChecker@@@@8 DD FLAT:??_R0?AV?$CSingleton@VCServerStateChecker@@@@@8 ; CSingleton<CServerStateChecker>::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	00H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3?$CSingleton@VCServerStateChecker@@@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@CServerStateChecker@@8
 rdata$r	SEGMENT
@@ -88,24 +98,14 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3CServerStateChecker@@8
 rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCServerStateChecker@@@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@?$CSingleton@VCServerStateChecker@@@@8 DD FLAT:??_R0?AV?$CSingleton@VCServerStateChecker@@@@@8 ; CSingleton<CServerStateChecker>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	00H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3?$CSingleton@VCServerStateChecker@@@@8
-rdata$r	ENDS
-;	COMDAT ??_R2?$CSingleton@VCServerStateChecker@@@@8
-rdata$r	SEGMENT
-??_R2?$CSingleton@VCServerStateChecker@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCServerStateChecker@@@@8 ; CSingleton<CServerStateChecker>::`RTTI Base Class Array'
-rdata$r	ENDS
 ;	COMDAT ??_R2CServerStateChecker@@8
 rdata$r	SEGMENT
 ??_R2CServerStateChecker@@8 DD FLAT:??_R1A@?0A@EA@CServerStateChecker@@8 ; CServerStateChecker::`RTTI Base Class Array'
 	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCServerStateChecker@@@@8
+rdata$r	ENDS
+;	COMDAT ??_R2?$CSingleton@VCServerStateChecker@@@@8
+rdata$r	SEGMENT
+??_R2?$CSingleton@VCServerStateChecker@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCServerStateChecker@@@@8 ; CSingleton<CServerStateChecker>::`RTTI Base Class Array'
 rdata$r	ENDS
 ;	COMDAT ??_C@_0BD@EEDMKMGJ@NotifyChannelState@
 CONST	SEGMENT

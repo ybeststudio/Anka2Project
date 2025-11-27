@@ -8,127 +8,127 @@
 
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_C@_0P@KBODAEKE@__future__?4pyc@		; `string'
 PUBLIC	??_C@_0N@CMMKLLC@UserDict?4pyc@			; `string'
-PUBLIC	??_C@_0O@COBIIGAD@linecache?4pyc@		; `string'
 PUBLIC	??_C@_0N@GCNFBOJN@copy_reg?4pyc@		; `string'
-PUBLIC	??_C@_06JCOFDJKA@os?4pyc@			; `string'
+PUBLIC	??_C@_0P@KBODAEKE@__future__?4pyc@		; `string'
 PUBLIC	??_C@_0L@HJCEJGHC@ntpath?4pyc@			; `string'
-PUBLIC	??_C@_08EFIONJOP@stat?4pyc@			; `string'
+PUBLIC	??_C@_0O@COBIIGAD@linecache?4pyc@		; `string'
 PUBLIC	??_C@_08FPFMJPEC@site?4pyc@			; `string'
-PUBLIC	??_C@_0O@PMKHJGGH@traceback?4pyc@		; `string'
+PUBLIC	??_C@_06JCOFDJKA@os?4pyc@			; `string'
 PUBLIC	??_C@_0L@NDKNFNNI@string?4pyc@			; `string'
-PUBLIC	??_C@_04HOGMCHDB@lib?2@				; `string'
+PUBLIC	??_C@_08EFIONJOP@stat?4pyc@			; `string'
 PUBLIC	??_C@_09EHIBBABK@types?4pyc@			; `string'
-PUBLIC	??_C@_0M@OJOBOCDO@pack?1effect@			; `string'
+PUBLIC	??_C@_0O@PMKHJGGH@traceback?4pyc@		; `string'
 PUBLIC	??_C@_08GCAMGOFC@pack?1bgm@			; `string'
-PUBLIC	??_C@_09IFEPAILH@pack?1icon@			; `string'
+PUBLIC	??_C@_04HOGMCHDB@lib?2@				; `string'
 PUBLIC	??_C@_0L@KHFEEPGE@pack?1guild@			; `string'
-PUBLIC	??_C@_0M@EEHBIKCP@pack?1locale@			; `string'
+PUBLIC	??_C@_0M@OJOBOCDO@pack?1effect@			; `string'
 PUBLIC	??_C@_09GODLLBIE@pack?1item@			; `string'
-PUBLIC	??_C@_0O@MNFGPEDN@pack?1monster2@		; `string'
+PUBLIC	??_C@_09IFEPAILH@pack?1icon@			; `string'
 PUBLIC	??_C@_0N@EJCFPPHF@pack?1monster@		; `string'
-PUBLIC	??_C@_0P@IOLIHCBC@pack?1npc_mount@		; `string'
+PUBLIC	??_C@_0M@EEHBIKCP@pack?1locale@			; `string'
 PUBLIC	??_C@_08KPDAEJJB@pack?1npc@			; `string'
-PUBLIC	??_C@_09GKNHMHOK@pack?1npc2@			; `string'
+PUBLIC	??_C@_0O@MNFGPEDN@pack?1monster2@		; `string'
 PUBLIC	??_C@_0N@DHKLPFLL@pack?1npc_pet@		; `string'
-PUBLIC	??_C@_0N@DCKMAEKP@pack?1outdoor@		; `string'
+PUBLIC	??_C@_0P@IOLIHCBC@pack?1npc_mount@		; `string'
 PUBLIC	??_C@_0M@OOBKPPAB@pack?1others@			; `string'
-PUBLIC	??_C@_08KCDGBIAB@pack?1pc2@			; `string'
+PUBLIC	??_C@_09GKNHMHOK@pack?1npc2@			; `string'
 PUBLIC	??_C@_07JJLOCCKD@pack?1pc@			; `string'
-PUBLIC	??_C@_0BB@GJEJEBHI@pack?1terrainmaps@		; `string'
+PUBLIC	??_C@_0N@DCKMAEKP@pack?1outdoor@		; `string'
 PUBLIC	??_C@_0L@MAILMID@pack?1sound@			; `string'
-PUBLIC	??_C@_09BLPJDHGD@pack?1tree@			; `string'
+PUBLIC	??_C@_08KCDGBIAB@pack?1pc2@			; `string'
 PUBLIC	??_C@_0BA@ILDNBDOM@pack?1textureset@		; `string'
-PUBLIC	??_C@_04NBFCGMPH@root@				; `string'
+PUBLIC	??_C@_0BB@GJEJEBHI@pack?1terrainmaps@		; `string'
 PUBLIC	??_C@_09KOPOJKB@pack?1zone@			; `string'
-PUBLIC	??_C@_09KMAGPBGM@__DEBUG__@			; `string'
+PUBLIC	??_C@_09BLPJDHGD@pack?1tree@			; `string'
 PUBLIC	??_C@_0M@EILMOIBE@__builtin__@			; `string'
-PUBLIC	??_C@_03MCGAAIEM@?9cs@				; `string'
+PUBLIC	??_C@_04NBFCGMPH@root@				; `string'
 PUBLIC	??_C@_0BH@NBEHHPDF@__USE_DYNAMIC_MODULE__@	; `string'
-PUBLIC	??_C@_0BE@FPKDPBJI@__COMMAND_LINE__?5?$DN?5@	; `string'
+PUBLIC	??_C@_09KMAGPBGM@__DEBUG__@			; `string'
 PUBLIC	??_C@_04JFPGDMCL@?9ncs@				; `string'
-PUBLIC	??_C@_0BN@KIGJPBEF@?9?9pause?9before?9create?9window@ ; `string'
+PUBLIC	??_C@_03MCGAAIEM@?9cs@				; `string'
 PUBLIC	??_C@_0BK@DPMNHJLC@RegisterCommandLine?5Error@	; `string'
-PUBLIC	??_C@_09LEIJOBCA@system?4py@			; `string'
+PUBLIC	??_C@_0BE@FPKDPBJI@__COMMAND_LINE__?5?$DN?5@	; `string'
 PUBLIC	??_C@_05PDJBBECF@pause@				; `string'
-PUBLIC	??_C@_0L@MFNMKHHD@config?4cfg@			; `string'
+PUBLIC	??_C@_0BN@KIGJPBEF@?9?9pause?9before?9create?9window@ ; `string'
 PUBLIC	??_C@_0O@BEEPKJML@RunMain?5Error@		; `string'
-PUBLIC	??_C@_0DB@BGMLOPGB@Pack?5Initialization?5failed?4?5Che@ ; `string'
+PUBLIC	??_C@_09LEIJOBCA@system?4py@			; `string'
 PUBLIC	??_C@_04IPANLPFO@pack@				; `string'
-PUBLIC	??_C@_0M@JNAFICFM@headquarter@			; `string'
+PUBLIC	??_C@_0L@MFNMKHHD@config?4cfg@			; `string'
 PUBLIC	??_C@_0M@PFDHIIAP@eter?4python@			; `string'
-PUBLIC	??_C@_08IICJLEG@facility@			; `string'
+PUBLIC	??_C@_0DB@BGMLOPGB@Pack?5Initialization?5failed?4?5Che@ ; `string'
 PUBLIC	??_C@_0M@DDFJOLIE@HEADQUARTER@			; `string'
-PUBLIC	??_C@_06IEOJBDIK@object@			; `string'
+PUBLIC	??_C@_0M@JNAFICFM@headquarter@			; `string'
 PUBLIC	??_C@_08HHCOKFGB@FACILITY@			; `string'
-PUBLIC	??_C@_05EIKACAIN@fence@				; `string'
+PUBLIC	??_C@_08IICJLEG@facility@			; `string'
 PUBLIC	??_C@_06IAMCMNFI@OBJECT@			; `string'
-PUBLIC	??_C@_0BA@OEEELOKH@Metin2GameMutex@		; `string'
+PUBLIC	??_C@_06IEOJBDIK@object@			; `string'
 PUBLIC	??_C@_04LFAKFAMM@WALL@				; `string'
-PUBLIC	??_C@_0L@HBFAHJLE@?1timestamp@			; `string'
+PUBLIC	??_C@_05EIKACAIN@fence@				; `string'
 PUBLIC	??_C@_0CN@OHDPHKKH@FATAL?5ERROR?$CB?$CB?5Python?5Library?5fi@ ; `string'
-PUBLIC	??_C@_0DL@IHCMKBOK@METIN2?5BINARY?5DISTRIBUTE?5VERSIO@ ; `string'
+PUBLIC	??_C@_0BA@OEEELOKH@Metin2GameMutex@		; `string'
 PUBLIC	??_C@_0BJ@PLHBCABC@Sun?5Nov?523?520?327?349?52025@ ; `string'
-PUBLIC	??_C@_0BE@FJLABEAB@?9?9perforce?9revision@	; `string'
+PUBLIC	??_C@_0L@HBFAHJLE@?1timestamp@			; `string'
 PUBLIC	??_C@_08LJMAFCGB@?9?9locale@			; `string'
-PUBLIC	??_R2CPythonPlayerSettingsModule@@8		; CPythonPlayerSettingsModule::`RTTI Base Class Array'
+PUBLIC	??_C@_0DL@IHCMKBOK@METIN2?5BINARY?5DISTRIBUTE?5VERSIO@ ; `string'
+PUBLIC	??_C@_0BE@FJLABEAB@?9?9perforce?9revision@	; `string'
 PUBLIC	??_R2?$CSingleton@VCPythonPlayerSettingsModule@@@@8 ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@CPythonPlayerSettingsModule@@8	; CPythonPlayerSettingsModule::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R2CPythonPlayerSettingsModule@@8		; CPythonPlayerSettingsModule::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonPlayerSettingsModule@@@@8 ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R3?$CSingleton@VCPythonPlayerSettingsModule@@@@8 ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R3CPythonPlayerSettingsModule@@8		; CPythonPlayerSettingsModule::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R1A@?0A@EA@CPythonPlayerSettingsModule@@8	; CPythonPlayerSettingsModule::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R0?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@@8 ; CSingleton<CPythonPlayerSettingsModule> `RTTI Type Descriptor'
+PUBLIC	??_R3?$CSingleton@VCPythonPlayerSettingsModule@@@@8 ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R0?AVCPythonPlayerSettingsModule@@@8		; CPythonPlayerSettingsModule `RTTI Type Descriptor'
+PUBLIC	??_R3CPythonPlayerSettingsModule@@8		; CPythonPlayerSettingsModule::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R4?$CSingleton@VCPythonPlayerSettingsModule@@@@6B@ ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Complete Object Locator'
 PUBLIC	??_R4CPythonPlayerSettingsModule@@6B@		; CPythonPlayerSettingsModule::`RTTI Complete Object Locator'
 PUBLIC	??_7?$CSingleton@VCPythonPlayerSettingsModule@@@@6B@ ; CSingleton<CPythonPlayerSettingsModule>::`vftable'
 PUBLIC	??_7CPythonPlayerSettingsModule@@6B@		; CPythonPlayerSettingsModule::`vftable'
 PUBLIC	_NvOptimusEnablement
 PUBLIC	_AmdPowerXpressRequestHighPerformance
+EXTRN	__imp__GrannySetLogCallback@4:PROC
+EXTRN	__imp__timeGetDevCaps@8:PROC
 EXTRN	?MINMAX@@YAHHHH@Z:PROC				; MINMAX
 EXTRN	__imp__timeBeginPeriod@4:PROC
-EXTRN	__imp__GrannySetLogCallback@4:PROC
-EXTRN	__imp__GlobalFree@4:PROC
-EXTRN	__imp__timeGetDevCaps@8:PROC
-EXTRN	_WebBrowser_Startup:PROC
-EXTRN	_WebBrowser_Cleanup:PROC
 EXTRN	__imp__CoUninitialize@0:PROC
-EXTRN	__imp__ReleaseMutex@4:PROC
+EXTRN	__imp__GlobalFree@4:PROC
 EXTRN	?LogBoxf@@YAXPBDZZ:PROC				; LogBoxf
 EXTRN	?CommandLineToArgv@@YAPAPADPADPAH@Z:PROC	; CommandLineToArgv
+EXTRN	_WebBrowser_Startup:PROC
+EXTRN	_WebBrowser_Cleanup:PROC
 EXTRN	__imp__CreateMutexA@12:PROC
-EXTRN	?Clear@CPythonLauncher@@QAEXXZ:PROC		; CPythonLauncher::Clear
+EXTRN	__imp__ReleaseMutex@4:PROC
 EXTRN	??1CEterPackManager@@UAE@XZ:PROC		; CEterPackManager::~CEterPackManager
 EXTRN	??1CLZO@@UAE@XZ:PROC				; CLZO::~CLZO
-EXTRN	??1CPythonLauncher@@UAE@XZ:PROC			; CPythonLauncher::~CPythonLauncher
-EXTRN	?SetExceptionSender@@YAXPAVIPythonExceptionSender@@@Z:PROC ; SetExceptionSender
 EXTRN	?Create@CPythonLauncher@@QAE_NPBD@Z:PROC	; CPythonLauncher::Create
 EXTRN	__imp__timeEndPeriod@4:PROC
+EXTRN	?Clear@CPythonLauncher@@QAEXXZ:PROC		; CPythonLauncher::Clear
 EXTRN	?Initialize@CMSApplication@@QAEXPAUHINSTANCE__@@@Z:PROC ; CMSApplication::Initialize
 EXTRN	??0CPythonLauncher@@QAE@XZ:PROC			; CPythonLauncher::CPythonLauncher
+EXTRN	??1CPythonLauncher@@UAE@XZ:PROC			; CPythonLauncher::~CPythonLauncher
+EXTRN	?SetExceptionSender@@YAXPAVIPythonExceptionSender@@@Z:PROC ; SetExceptionSender
 EXTRN	??0CEterPackManager@@QAE@XZ:PROC		; CEterPackManager::CEterPackManager
 EXTRN	??0CLZO@@QAE@XZ:PROC				; CLZO::CLZO
-EXTRN	__imp__ilInit@0:PROC
 EXTRN	?OpenLogFile@@YAX_N@Z:PROC			; OpenLogFile
-EXTRN	?srandom@@YAXK@Z:PROC				; srandom
 EXTRN	_srand:PROC
 EXTRN	?SetLogLevel@@YAXI@Z:PROC			; SetLogLevel
-EXTRN	?base64_decode@@YAXPBDPAD@Z:PROC		; base64_decode
-EXTRN	?RunLine@CPythonLauncher@@QAE_NPBD@Z:PROC	; CPythonLauncher::RunLine
+EXTRN	__imp__ilInit@0:PROC
 EXTRN	_system:PROC
-EXTRN	?initgrpImage@@YAXXZ:PROC			; initgrpImage
-EXTRN	?initgrpText@@YAXXZ:PROC			; initgrpText
+EXTRN	?srandom@@YAXK@Z:PROC				; srandom
 EXTRN	?initwndMgr@@YAXXZ:PROC				; initwndMgr
 EXTRN	?SplitLine@@YA_NPBD0PAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@Z:PROC ; SplitLine
-EXTRN	?RegisterPack@CEterPackManager@@QAE_NPBD0PBE@Z:PROC ; CEterPackManager::RegisterPack
-EXTRN	?RegisterRootPack@CEterPackManager@@QAEXPBD@Z:PROC ; CEterPackManager::RegisterRootPack
+EXTRN	?base64_decode@@YAXPBDPAD@Z:PROC		; base64_decode
+EXTRN	?RunLine@CPythonLauncher@@QAE_NPBD@Z:PROC	; CPythonLauncher::RunLine
 EXTRN	?initdbg@@YAXXZ:PROC				; initdbg
 EXTRN	?initgrp@@YAXXZ:PROC				; initgrp
-EXTRN	?SetCacheMode@CTextFileLoader@@SAXXZ:PROC	; CTextFileLoader::SetCacheMode
-EXTRN	?SetCacheMode@CEterPackManager@@QAEXXZ:PROC	; CEterPackManager::SetCacheMode
+EXTRN	?initgrpImage@@YAXXZ:PROC			; initgrpImage
+EXTRN	?initgrpText@@YAXXZ:PROC			; initgrpText
 EXTRN	?SetSearchMode@CEterPackManager@@QAEX_N@Z:PROC	; CEterPackManager::SetSearchMode
 EXTRN	?SetPackMode@CSoundData@@SAXXZ:PROC		; CSoundData::SetPackMode
+EXTRN	?RegisterPack@CEterPackManager@@QAE_NPBD0PBE@Z:PROC ; CEterPackManager::RegisterPack
+EXTRN	?RegisterRootPack@CEterPackManager@@QAEXPBD@Z:PROC ; CEterPackManager::RegisterRootPack
+EXTRN	?SetCacheMode@CTextFileLoader@@SAXXZ:PROC	; CTextFileLoader::SetCacheMode
+EXTRN	?SetCacheMode@CEterPackManager@@QAEXXZ:PROC	; CEterPackManager::SetCacheMode
 EXTRN	__imp__MoveFileA@8:PROC
 EXTRN	__fltused:DWORD
 ;	COMDAT ??_7CPythonPlayerSettingsModule@@6B@
@@ -157,18 +157,6 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@@8
 	DD	FLAT:??_R3?$CSingleton@VCPythonPlayerSettingsModule@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonPlayerSettingsModule@@@8
-data$rs	SEGMENT
-??_R0?AVCPythonPlayerSettingsModule@@@8 DD FLAT:??_7type_info@@6B@ ; CPythonPlayerSettingsModule `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AVCPythonPlayerSettingsModule@@', 00H
-data$rs	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonPlayerSettingsModule> `RTTI Type Descriptor'
-	DD	00H
-	DB	'.?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@', 00H
-data$rs	ENDS
 ;	COMDAT ??_R3CPythonPlayerSettingsModule@@8
 rdata$r	SEGMENT
 ??_R3CPythonPlayerSettingsModule@@8 DD 00H		; CPythonPlayerSettingsModule::`RTTI Class Hierarchy Descriptor'
@@ -176,12 +164,34 @@ rdata$r	SEGMENT
 	DD	02H
 	DD	FLAT:??_R2CPythonPlayerSettingsModule@@8
 rdata$r	ENDS
+;	COMDAT ??_R0?AVCPythonPlayerSettingsModule@@@8
+data$rs	SEGMENT
+??_R0?AVCPythonPlayerSettingsModule@@@8 DD FLAT:??_7type_info@@6B@ ; CPythonPlayerSettingsModule `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCPythonPlayerSettingsModule@@', 00H
+data$rs	ENDS
 ;	COMDAT ??_R3?$CSingleton@VCPythonPlayerSettingsModule@@@@8
 rdata$r	SEGMENT
 ??_R3?$CSingleton@VCPythonPlayerSettingsModule@@@@8 DD 00H ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	01H
 	DD	FLAT:??_R2?$CSingleton@VCPythonPlayerSettingsModule@@@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonPlayerSettingsModule> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCPythonPlayerSettingsModule@@@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R1A@?0A@EA@CPythonPlayerSettingsModule@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@CPythonPlayerSettingsModule@@8 DD FLAT:??_R0?AVCPythonPlayerSettingsModule@@@8 ; CPythonPlayerSettingsModule::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3CPythonPlayerSettingsModule@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonPlayerSettingsModule@@@@8
 rdata$r	SEGMENT
@@ -193,286 +203,276 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3?$CSingleton@VCPythonPlayerSettingsModule@@@@8
 rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@CPythonPlayerSettingsModule@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@CPythonPlayerSettingsModule@@8 DD FLAT:??_R0?AVCPythonPlayerSettingsModule@@@8 ; CPythonPlayerSettingsModule::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	01H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3CPythonPlayerSettingsModule@@8
-rdata$r	ENDS
-;	COMDAT ??_R2?$CSingleton@VCPythonPlayerSettingsModule@@@@8
-rdata$r	SEGMENT
-??_R2?$CSingleton@VCPythonPlayerSettingsModule@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonPlayerSettingsModule@@@@8 ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Base Class Array'
-rdata$r	ENDS
 ;	COMDAT ??_R2CPythonPlayerSettingsModule@@8
 rdata$r	SEGMENT
 ??_R2CPythonPlayerSettingsModule@@8 DD FLAT:??_R1A@?0A@EA@CPythonPlayerSettingsModule@@8 ; CPythonPlayerSettingsModule::`RTTI Base Class Array'
 	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonPlayerSettingsModule@@@@8
 rdata$r	ENDS
-;	COMDAT ??_C@_08LJMAFCGB@?9?9locale@
-CONST	SEGMENT
-??_C@_08LJMAFCGB@?9?9locale@ DB '--locale', 00H		; `string'
-CONST	ENDS
+;	COMDAT ??_R2?$CSingleton@VCPythonPlayerSettingsModule@@@@8
+rdata$r	SEGMENT
+??_R2?$CSingleton@VCPythonPlayerSettingsModule@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonPlayerSettingsModule@@@@8 ; CSingleton<CPythonPlayerSettingsModule>::`RTTI Base Class Array'
+rdata$r	ENDS
 ;	COMDAT ??_C@_0BE@FJLABEAB@?9?9perforce?9revision@
 CONST	SEGMENT
 ??_C@_0BE@FJLABEAB@?9?9perforce?9revision@ DB '--perforce-revision', 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_0BJ@PLHBCABC@Sun?5Nov?523?520?327?349?52025@
-CONST	SEGMENT
-??_C@_0BJ@PLHBCABC@Sun?5Nov?523?520?327?349?52025@ DB 'Sun Nov 23 20:27:4'
-	DB	'9 2025', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DL@IHCMKBOK@METIN2?5BINARY?5DISTRIBUTE?5VERSIO@
 CONST	SEGMENT
 ??_C@_0DL@IHCMKBOK@METIN2?5BINARY?5DISTRIBUTE?5VERSIO@ DB 'METIN2 BINARY '
 	DB	'DISTRIBUTE VERSION %s ( MS C++ %d Compiled )', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0CN@OHDPHKKH@FATAL?5ERROR?$CB?$CB?5Python?5Library?5fi@
+;	COMDAT ??_C@_08LJMAFCGB@?9?9locale@
 CONST	SEGMENT
-??_C@_0CN@OHDPHKKH@FATAL?5ERROR?$CB?$CB?5Python?5Library?5fi@ DB 'FATAL E'
-	DB	'RROR!! Python Library file not exist!', 00H	; `string'
+??_C@_08LJMAFCGB@?9?9locale@ DB '--locale', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@HBFAHJLE@?1timestamp@
 CONST	SEGMENT
 ??_C@_0L@HBFAHJLE@?1timestamp@ DB '/timestamp', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04LFAKFAMM@WALL@
+;	COMDAT ??_C@_0BJ@PLHBCABC@Sun?5Nov?523?520?327?349?52025@
 CONST	SEGMENT
-??_C@_04LFAKFAMM@WALL@ DB 'WALL', 00H			; `string'
+??_C@_0BJ@PLHBCABC@Sun?5Nov?523?520?327?349?52025@ DB 'Sun Nov 23 20:27:4'
+	DB	'9 2025', 00H				; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BA@OEEELOKH@Metin2GameMutex@
 CONST	SEGMENT
 ??_C@_0BA@OEEELOKH@Metin2GameMutex@ DB 'Metin2GameMutex', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_06IAMCMNFI@OBJECT@
+;	COMDAT ??_C@_0CN@OHDPHKKH@FATAL?5ERROR?$CB?$CB?5Python?5Library?5fi@
 CONST	SEGMENT
-??_C@_06IAMCMNFI@OBJECT@ DB 'OBJECT', 00H		; `string'
+??_C@_0CN@OHDPHKKH@FATAL?5ERROR?$CB?$CB?5Python?5Library?5fi@ DB 'FATAL E'
+	DB	'RROR!! Python Library file not exist!', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_05EIKACAIN@fence@
 CONST	SEGMENT
 ??_C@_05EIKACAIN@fence@ DB 'fence', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08HHCOKFGB@FACILITY@
+;	COMDAT ??_C@_04LFAKFAMM@WALL@
 CONST	SEGMENT
-??_C@_08HHCOKFGB@FACILITY@ DB 'FACILITY', 00H		; `string'
+??_C@_04LFAKFAMM@WALL@ DB 'WALL', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06IEOJBDIK@object@
 CONST	SEGMENT
 ??_C@_06IEOJBDIK@object@ DB 'object', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@DDFJOLIE@HEADQUARTER@
+;	COMDAT ??_C@_06IAMCMNFI@OBJECT@
 CONST	SEGMENT
-??_C@_0M@DDFJOLIE@HEADQUARTER@ DB 'HEADQUARTER', 00H	; `string'
+??_C@_06IAMCMNFI@OBJECT@ DB 'OBJECT', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08IICJLEG@facility@
 CONST	SEGMENT
 ??_C@_08IICJLEG@facility@ DB 'facility', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@PFDHIIAP@eter?4python@
+;	COMDAT ??_C@_08HHCOKFGB@FACILITY@
 CONST	SEGMENT
-??_C@_0M@PFDHIIAP@eter?4python@ DB 'eter.python', 00H	; `string'
+??_C@_08HHCOKFGB@FACILITY@ DB 'FACILITY', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@JNAFICFM@headquarter@
 CONST	SEGMENT
 ??_C@_0M@JNAFICFM@headquarter@ DB 'headquarter', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04IPANLPFO@pack@
+;	COMDAT ??_C@_0M@DDFJOLIE@HEADQUARTER@
 CONST	SEGMENT
-??_C@_04IPANLPFO@pack@ DB 'pack', 00H			; `string'
+??_C@_0M@DDFJOLIE@HEADQUARTER@ DB 'HEADQUARTER', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0DB@BGMLOPGB@Pack?5Initialization?5failed?4?5Che@
 CONST	SEGMENT
 ??_C@_0DB@BGMLOPGB@Pack?5Initialization?5failed?4?5Che@ DB 'Pack Initiali'
 	DB	'zation failed. Check log.txt file..', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0O@BEEPKJML@RunMain?5Error@
+;	COMDAT ??_C@_0M@PFDHIIAP@eter?4python@
 CONST	SEGMENT
-??_C@_0O@BEEPKJML@RunMain?5Error@ DB 'RunMain Error', 00H ; `string'
+??_C@_0M@PFDHIIAP@eter?4python@ DB 'eter.python', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0L@MFNMKHHD@config?4cfg@
 CONST	SEGMENT
 ??_C@_0L@MFNMKHHD@config?4cfg@ DB 'config.cfg', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_05PDJBBECF@pause@
+;	COMDAT ??_C@_04IPANLPFO@pack@
 CONST	SEGMENT
-??_C@_05PDJBBECF@pause@ DB 'pause', 00H			; `string'
+??_C@_04IPANLPFO@pack@ DB 'pack', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09LEIJOBCA@system?4py@
 CONST	SEGMENT
 ??_C@_09LEIJOBCA@system?4py@ DB 'system.py', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BK@DPMNHJLC@RegisterCommandLine?5Error@
+;	COMDAT ??_C@_0O@BEEPKJML@RunMain?5Error@
 CONST	SEGMENT
-??_C@_0BK@DPMNHJLC@RegisterCommandLine?5Error@ DB 'RegisterCommandLine Er'
-	DB	'ror', 00H					; `string'
+??_C@_0O@BEEPKJML@RunMain?5Error@ DB 'RunMain Error', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BN@KIGJPBEF@?9?9pause?9before?9create?9window@
 CONST	SEGMENT
 ??_C@_0BN@KIGJPBEF@?9?9pause?9before?9create?9window@ DB '--pause-before-'
 	DB	'create-window', 00H				; `string'
 CONST	ENDS
-;	COMDAT ??_C@_04JFPGDMCL@?9ncs@
+;	COMDAT ??_C@_05PDJBBECF@pause@
 CONST	SEGMENT
-??_C@_04JFPGDMCL@?9ncs@ DB '-ncs', 00H			; `string'
+??_C@_05PDJBBECF@pause@ DB 'pause', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BE@FPKDPBJI@__COMMAND_LINE__?5?$DN?5@
 CONST	SEGMENT
 ??_C@_0BE@FPKDPBJI@__COMMAND_LINE__?5?$DN?5@ DB '__COMMAND_LINE__ = ', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BH@NBEHHPDF@__USE_DYNAMIC_MODULE__@
+;	COMDAT ??_C@_0BK@DPMNHJLC@RegisterCommandLine?5Error@
 CONST	SEGMENT
-??_C@_0BH@NBEHHPDF@__USE_DYNAMIC_MODULE__@ DB '__USE_DYNAMIC_MODULE__', 00H ; `string'
+??_C@_0BK@DPMNHJLC@RegisterCommandLine?5Error@ DB 'RegisterCommandLine Er'
+	DB	'ror', 00H					; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_03MCGAAIEM@?9cs@
 CONST	SEGMENT
 ??_C@_03MCGAAIEM@?9cs@ DB '-cs', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@EILMOIBE@__builtin__@
+;	COMDAT ??_C@_04JFPGDMCL@?9ncs@
 CONST	SEGMENT
-??_C@_0M@EILMOIBE@__builtin__@ DB '__builtin__', 00H	; `string'
+??_C@_04JFPGDMCL@?9ncs@ DB '-ncs', 00H			; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09KMAGPBGM@__DEBUG__@
 CONST	SEGMENT
 ??_C@_09KMAGPBGM@__DEBUG__@ DB '__DEBUG__', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09KOPOJKB@pack?1zone@
+;	COMDAT ??_C@_0BH@NBEHHPDF@__USE_DYNAMIC_MODULE__@
 CONST	SEGMENT
-??_C@_09KOPOJKB@pack?1zone@ DB 'pack/zone', 00H		; `string'
+??_C@_0BH@NBEHHPDF@__USE_DYNAMIC_MODULE__@ DB '__USE_DYNAMIC_MODULE__', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04NBFCGMPH@root@
 CONST	SEGMENT
 ??_C@_04NBFCGMPH@root@ DB 'root', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0BA@ILDNBDOM@pack?1textureset@
+;	COMDAT ??_C@_0M@EILMOIBE@__builtin__@
 CONST	SEGMENT
-??_C@_0BA@ILDNBDOM@pack?1textureset@ DB 'pack/textureset', 00H ; `string'
+??_C@_0M@EILMOIBE@__builtin__@ DB '__builtin__', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09BLPJDHGD@pack?1tree@
 CONST	SEGMENT
 ??_C@_09BLPJDHGD@pack?1tree@ DB 'pack/tree', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@MAILMID@pack?1sound@
+;	COMDAT ??_C@_09KOPOJKB@pack?1zone@
 CONST	SEGMENT
-??_C@_0L@MAILMID@pack?1sound@ DB 'pack/sound', 00H	; `string'
+??_C@_09KOPOJKB@pack?1zone@ DB 'pack/zone', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0BB@GJEJEBHI@pack?1terrainmaps@
 CONST	SEGMENT
 ??_C@_0BB@GJEJEBHI@pack?1terrainmaps@ DB 'pack/terrainmaps', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_07JJLOCCKD@pack?1pc@
+;	COMDAT ??_C@_0BA@ILDNBDOM@pack?1textureset@
 CONST	SEGMENT
-??_C@_07JJLOCCKD@pack?1pc@ DB 'pack/pc', 00H		; `string'
+??_C@_0BA@ILDNBDOM@pack?1textureset@ DB 'pack/textureset', 00H ; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08KCDGBIAB@pack?1pc2@
 CONST	SEGMENT
 ??_C@_08KCDGBIAB@pack?1pc2@ DB 'pack/pc2', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0M@OOBKPPAB@pack?1others@
+;	COMDAT ??_C@_0L@MAILMID@pack?1sound@
 CONST	SEGMENT
-??_C@_0M@OOBKPPAB@pack?1others@ DB 'pack/others', 00H	; `string'
+??_C@_0L@MAILMID@pack?1sound@ DB 'pack/sound', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0N@DCKMAEKP@pack?1outdoor@
 CONST	SEGMENT
 ??_C@_0N@DCKMAEKP@pack?1outdoor@ DB 'pack/outdoor', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@DHKLPFLL@pack?1npc_pet@
+;	COMDAT ??_C@_07JJLOCCKD@pack?1pc@
 CONST	SEGMENT
-??_C@_0N@DHKLPFLL@pack?1npc_pet@ DB 'pack/npc_pet', 00H	; `string'
+??_C@_07JJLOCCKD@pack?1pc@ DB 'pack/pc', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09GKNHMHOK@pack?1npc2@
 CONST	SEGMENT
 ??_C@_09GKNHMHOK@pack?1npc2@ DB 'pack/npc2', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08KPDAEJJB@pack?1npc@
+;	COMDAT ??_C@_0M@OOBKPPAB@pack?1others@
 CONST	SEGMENT
-??_C@_08KPDAEJJB@pack?1npc@ DB 'pack/npc', 00H		; `string'
+??_C@_0M@OOBKPPAB@pack?1others@ DB 'pack/others', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@IOLIHCBC@pack?1npc_mount@
 CONST	SEGMENT
 ??_C@_0P@IOLIHCBC@pack?1npc_mount@ DB 'pack/npc_mount', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@EJCFPPHF@pack?1monster@
+;	COMDAT ??_C@_0N@DHKLPFLL@pack?1npc_pet@
 CONST	SEGMENT
-??_C@_0N@EJCFPPHF@pack?1monster@ DB 'pack/monster', 00H	; `string'
+??_C@_0N@DHKLPFLL@pack?1npc_pet@ DB 'pack/npc_pet', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@MNFGPEDN@pack?1monster2@
 CONST	SEGMENT
 ??_C@_0O@MNFGPEDN@pack?1monster2@ DB 'pack/monster2', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09GODLLBIE@pack?1item@
+;	COMDAT ??_C@_08KPDAEJJB@pack?1npc@
 CONST	SEGMENT
-??_C@_09GODLLBIE@pack?1item@ DB 'pack/item', 00H	; `string'
+??_C@_08KPDAEJJB@pack?1npc@ DB 'pack/npc', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@EEHBIKCP@pack?1locale@
 CONST	SEGMENT
 ??_C@_0M@EEHBIKCP@pack?1locale@ DB 'pack/locale', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@KHFEEPGE@pack?1guild@
+;	COMDAT ??_C@_0N@EJCFPPHF@pack?1monster@
 CONST	SEGMENT
-??_C@_0L@KHFEEPGE@pack?1guild@ DB 'pack/guild', 00H	; `string'
+??_C@_0N@EJCFPPHF@pack?1monster@ DB 'pack/monster', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_09IFEPAILH@pack?1icon@
 CONST	SEGMENT
 ??_C@_09IFEPAILH@pack?1icon@ DB 'pack/icon', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08GCAMGOFC@pack?1bgm@
+;	COMDAT ??_C@_09GODLLBIE@pack?1item@
 CONST	SEGMENT
-??_C@_08GCAMGOFC@pack?1bgm@ DB 'pack/bgm', 00H		; `string'
+??_C@_09GODLLBIE@pack?1item@ DB 'pack/item', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0M@OJOBOCDO@pack?1effect@
 CONST	SEGMENT
 ??_C@_0M@OJOBOCDO@pack?1effect@ DB 'pack/effect', 00H	; `string'
 CONST	ENDS
-;	COMDAT ??_C@_09EHIBBABK@types?4pyc@
+;	COMDAT ??_C@_0L@KHFEEPGE@pack?1guild@
 CONST	SEGMENT
-??_C@_09EHIBBABK@types?4pyc@ DB 'types.pyc', 00H	; `string'
+??_C@_0L@KHFEEPGE@pack?1guild@ DB 'pack/guild', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_04HOGMCHDB@lib?2@
 CONST	SEGMENT
 ??_C@_04HOGMCHDB@lib?2@ DB 'lib\', 00H			; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@NDKNFNNI@string?4pyc@
+;	COMDAT ??_C@_08GCAMGOFC@pack?1bgm@
 CONST	SEGMENT
-??_C@_0L@NDKNFNNI@string?4pyc@ DB 'string.pyc', 00H	; `string'
+??_C@_08GCAMGOFC@pack?1bgm@ DB 'pack/bgm', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@PMKHJGGH@traceback?4pyc@
 CONST	SEGMENT
 ??_C@_0O@PMKHJGGH@traceback?4pyc@ DB 'traceback.pyc', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_08FPFMJPEC@site?4pyc@
+;	COMDAT ??_C@_09EHIBBABK@types?4pyc@
 CONST	SEGMENT
-??_C@_08FPFMJPEC@site?4pyc@ DB 'site.pyc', 00H		; `string'
+??_C@_09EHIBBABK@types?4pyc@ DB 'types.pyc', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_08EFIONJOP@stat?4pyc@
 CONST	SEGMENT
 ??_C@_08EFIONJOP@stat?4pyc@ DB 'stat.pyc', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0L@HJCEJGHC@ntpath?4pyc@
+;	COMDAT ??_C@_0L@NDKNFNNI@string?4pyc@
 CONST	SEGMENT
-??_C@_0L@HJCEJGHC@ntpath?4pyc@ DB 'ntpath.pyc', 00H	; `string'
+??_C@_0L@NDKNFNNI@string?4pyc@ DB 'string.pyc', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_06JCOFDJKA@os?4pyc@
 CONST	SEGMENT
 ??_C@_06JCOFDJKA@os?4pyc@ DB 'os.pyc', 00H		; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@GCNFBOJN@copy_reg?4pyc@
+;	COMDAT ??_C@_08FPFMJPEC@site?4pyc@
 CONST	SEGMENT
-??_C@_0N@GCNFBOJN@copy_reg?4pyc@ DB 'copy_reg.pyc', 00H	; `string'
+??_C@_08FPFMJPEC@site?4pyc@ DB 'site.pyc', 00H		; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0O@COBIIGAD@linecache?4pyc@
 CONST	SEGMENT
 ??_C@_0O@COBIIGAD@linecache?4pyc@ DB 'linecache.pyc', 00H ; `string'
 CONST	ENDS
-;	COMDAT ??_C@_0N@CMMKLLC@UserDict?4pyc@
+;	COMDAT ??_C@_0L@HJCEJGHC@ntpath?4pyc@
 CONST	SEGMENT
-??_C@_0N@CMMKLLC@UserDict?4pyc@ DB 'UserDict.pyc', 00H	; `string'
+??_C@_0L@HJCEJGHC@ntpath?4pyc@ DB 'ntpath.pyc', 00H	; `string'
 CONST	ENDS
 ;	COMDAT ??_C@_0P@KBODAEKE@__future__?4pyc@
 CONST	SEGMENT
 ??_C@_0P@KBODAEKE@__future__?4pyc@ DB '__future__.pyc', 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0N@GCNFBOJN@copy_reg?4pyc@
+CONST	SEGMENT
+??_C@_0N@GCNFBOJN@copy_reg?4pyc@ DB 'copy_reg.pyc', 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_0N@CMMKLLC@UserDict?4pyc@
+CONST	SEGMENT
+??_C@_0N@CMMKLLC@UserDict?4pyc@ DB 'UserDict.pyc', 00H	; `string'
 _NvOptimusEnablement DD 01H
 _AmdPowerXpressRequestHighPerformance DD 01H
 ?sc_apszPythonLibraryFilenames@@3PAPBDA DD FLAT:??_C@_0N@CMMKLLC@UserDict?4pyc@ ; sc_apszPythonLibraryFilenames
@@ -779,13 +779,11 @@ __unwindtable$??__EguildSkills@@YAXXZ DD 0ffffffffH
 xdata$x	ENDS
 ;	COMDAT xdata$x
 xdata$x	SEGMENT
-__ehfuncinfo$?CheckPythonLibraryFilenames@@YA_NXZ DD 019930522H
-	DD	01H
+__ehfuncinfo$?CheckPythonLibraryFilenames@@YA_NXZ DQ 00000000119930522r ; 2.33398e-314
 	DD	FLAT:__unwindtable$?CheckPythonLibraryFilenames@@YA_NXZ
-	DD	2 DUP(00H)
-	DD	2 DUP(00H)
-	DD	00H
-	DD	01H
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000100000000r		; 2.122e-314
 __unwindtable$?CheckPythonLibraryFilenames@@YA_NXZ DD 0ffffffffH
 	DD	FLAT:__unwindfunclet$?CheckPythonLibraryFilenames@@YA_NXZ$0
 xdata$x	ENDS
@@ -805,13 +803,11 @@ __unwindtable$?PackInitialize@@YA_NPBD@Z DD 0ffffffffH
 xdata$x	ENDS
 ;	COMDAT xdata$x
 xdata$x	SEGMENT
-__ehfuncinfo$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z DD 019930522H
-	DD	06H
+__ehfuncinfo$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z DQ 00000000619930522r ; 1.2944e-313
 	DD	FLAT:__unwindtable$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z
-	DD	2 DUP(00H)
-	DD	2 DUP(00H)
-	DD	00H
-	DD	01H
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000100000000r		; 2.122e-314
 __unwindtable$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z DD 0ffffffffH
 	DD	FLAT:__unwindfunclet$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z$0
 	DD	00H
@@ -827,13 +823,11 @@ __unwindtable$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z DD 0ffffffffH
 xdata$x	ENDS
 ;	COMDAT xdata$x
 xdata$x	SEGMENT
-__ehfuncinfo$?Main@@YA_NPAUHINSTANCE__@@PAD@Z DD 019930522H
-	DD	07H
+__ehfuncinfo$?Main@@YA_NPAUHINSTANCE__@@PAD@Z DQ 00000000719930522r ; 1.5066e-313
 	DD	FLAT:__unwindtable$?Main@@YA_NPAUHINSTANCE__@@PAD@Z
-	DD	2 DUP(00H)
-	DD	2 DUP(00H)
-	DD	00H
-	DD	01H
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000100000000r		; 2.122e-314
 __unwindtable$?Main@@YA_NPAUHINSTANCE__@@PAD@Z DD 0ffffffffH
 	DD	FLAT:__unwindfunclet$?Main@@YA_NPAUHINSTANCE__@@PAD@Z$0
 	DD	0ffffffffH
@@ -986,3543 +980,4 @@ __unwindtable$??$?0ABU?$pair@$$CBV?$basic_string_view@DU?$char_traits@D@std@@@st
 ?guildSkills$initializer$@@3P6AXXZA DD FLAT:??__EguildSkills@@YAXXZ ; guildSkills$initializer$
 ?_AVOID_FLOATING_POINT_LIBRARY_BUG$initializer$@@3P6AXXZA DD FLAT:??__E_AVOID_FLOATING_POINT_LIBRARY_BUG@@YAXXZ ; _AVOID_FLOATING_POINT_LIBRARY_BUG$initializer$
 ?__iob_func$initializer$@@3P6AXXZA DD FLAT:??__E__iob_func@@YAXXZ ; __iob_func$initializer$
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-;	COMDAT ?CheckPythonLibraryFilenames@@YA_NXZ
-_TEXT	SEGMENT
-_stFilename$33 = -44					; size = 24
-__$ArrayPad$ = -20					; size = 4
-__$EHRec$ = -12						; size = 12
-?CheckPythonLibraryFilenames@@YA_NXZ PROC		; CheckPythonLibraryFilenames, COMDAT
-
-; 95   : {
-
-  00000	53		 push	 ebx
-  00001	8b dc		 mov	 ebx, esp
-  00003	83 ec 08	 sub	 esp, 8
-  00006	83 e4 f8	 and	 esp, -8			; fffffff8H
-  00009	83 c4 04	 add	 esp, 4
-  0000c	55		 push	 ebp
-  0000d	8b 6b 04	 mov	 ebp, DWORD PTR [ebx+4]
-  00010	89 6c 24 04	 mov	 DWORD PTR [esp+4], ebp
-  00014	8b ec		 mov	 ebp, esp
-  00016	6a ff		 push	 -1
-  00018	68 00 00 00 00	 push	 __ehhandler$?CheckPythonLibraryFilenames@@YA_NXZ
-  0001d	64 a1 00 00 00
-	00		 mov	 eax, DWORD PTR fs:0
-  00023	50		 push	 eax
-  00024	53		 push	 ebx
-  00025	83 ec 20	 sub	 esp, 32			; 00000020H
-  00028	a1 00 00 00 00	 mov	 eax, DWORD PTR ___security_cookie
-  0002d	33 c5		 xor	 eax, ebp
-  0002f	89 45 ec	 mov	 DWORD PTR __$ArrayPad$[ebp], eax
-  00032	56		 push	 esi
-  00033	57		 push	 edi
-  00034	50		 push	 eax
-  00035	8d 45 f4	 lea	 eax, DWORD PTR __$EHRec$[ebp]
-  00038	64 a3 00 00 00
-	00		 mov	 DWORD PTR fs:0, eax
-
-; 96   : 	for (int i = 0;*sc_apszPythonLibraryFilenames[i] != '\n'; ++i)
-
-  0003e	a1 00 00 00 00	 mov	 eax, DWORD PTR ?sc_apszPythonLibraryFilenames@@3PAPBDA
-  00043	33 ff		 xor	 edi, edi
-  00045	80 38 0a	 cmp	 BYTE PTR [eax], 10	; 0000000aH
-  00048	0f 84 b2 00 00
-	00		 je	 $LN3@CheckPytho
-  0004e	66 90		 npad	 2
-$LL4@CheckPytho:
-  00050	0f 57 c0	 xorps	 xmm0, xmm0
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 890  :             _My_data._Mysize = _Count;
-
-  00053	c7 45 e4 04 00
-	00 00		 mov	 DWORD PTR _stFilename$33[ebp+16], 4
-
-; 493  :         _CONSTEXPR20 _Bxty() noexcept : _Buf() {} // user-provided, for fancy pointers
-
-  0005a	0f 11 45 d4	 movups	 XMMWORD PTR _stFilename$33[ebp], xmm0
-
-; 891  :             _My_data._Myres  = _Small_string_capacity;
-
-  0005e	c7 45 e8 0f 00
-	00 00		 mov	 DWORD PTR _stFilename$33[ebp+20], 15 ; 0000000fH
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
-
-  00065	c7 45 d4 6c 69
-	62 5c		 mov	 DWORD PTR _stFilename$33[ebp], 1549953388 ; 5c62696cH
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 898  :                 _Traits::assign(_My_data._Bx._Buf[_Count], _Elem());
-
-  0006c	c6 45 d8 00	 mov	 BYTE PTR _stFilename$33[ebp+4], 0
-
-; 1474 :         return append(_Ptr);
-
-  00070	50		 push	 eax
-  00071	8d 4d d4	 lea	 ecx, DWORD PTR _stFilename$33[ebp]
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 98   : 		std::string stFilename = "lib\\";
-
-  00074	c7 45 fc 00 00
-	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 0
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 1474 :         return append(_Ptr);
-
-  0007b	e8 00 00 00 00	 call	 ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@QBD@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::append
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  00080	83 7d e8 0f	 cmp	 DWORD PTR _stFilename$33[ebp+20], 15 ; 0000000fH
-
-; 444  :         const value_type* _Result = _Bx._Buf;
-
-  00084	8d 45 d4	 lea	 eax, DWORD PTR _stFilename$33[ebp]
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 101  : 		if (_access(stFilename.c_str(), 0) != 0)
-
-  00087	6a 00		 push	 0
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 445  :         if (_Large_mode_engaged()) {
-
-  00089	0f 47 45 d4	 cmova	 eax, DWORD PTR _stFilename$33[ebp]
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 101  : 		if (_access(stFilename.c_str(), 0) != 0)
-
-  0008d	50		 push	 eax
-  0008e	e8 00 00 00 00	 call	 __access
-  00093	83 c4 08	 add	 esp, 8
-  00096	85 c0		 test	 eax, eax
-  00098	0f 85 82 00 00
-	00		 jne	 $LN177@CheckPytho
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  0009e	83 7d e8 0f	 cmp	 DWORD PTR _stFilename$33[ebp+20], 15 ; 0000000fH
-
-; 444  :         const value_type* _Result = _Bx._Buf;
-
-  000a2	8d 75 d4	 lea	 esi, DWORD PTR _stFilename$33[ebp]
-  000a5	8d 4d d4	 lea	 ecx, DWORD PTR _stFilename$33[ebp]
-
-; 445  :         if (_Large_mode_engaged()) {
-
-  000a8	0f 47 75 d4	 cmova	 esi, DWORD PTR _stFilename$33[ebp]
-  000ac	0f 47 4d d4	 cmova	 ecx, DWORD PTR _stFilename$33[ebp]
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 106  : 		MoveFile(stFilename.c_str(), stFilename.c_str());
-
-  000b0	56		 push	 esi
-  000b1	51		 push	 ecx
-  000b2	ff 15 00 00 00
-	00		 call	 DWORD PTR __imp__MoveFileA@8
-
-; 107  : 	}
-
-  000b8	c7 45 fc ff ff
-	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  000bf	8b 4d e8	 mov	 ecx, DWORD PTR _stFilename$33[ebp+20]
-  000c2	83 f9 0f	 cmp	 ecx, 15			; 0000000fH
-
-; 3083 :         if (_My_data._Large_mode_engaged()) {
-
-  000c5	76 28		 jbe	 SHORT $LN158@CheckPytho
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  000c7	8b 55 d4	 mov	 edx, DWORD PTR _stFilename$33[ebp]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 852  :         _Al.deallocate(_Old_ptr, _Capacity + 1); // +1 for null terminator
-
-  000ca	41		 inc	 ecx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  000cb	8b c2		 mov	 eax, edx
-
-; 284  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  000cd	81 f9 00 10 00
-	00		 cmp	 ecx, 4096		; 00001000H
-  000d3	72 10		 jb	 SHORT $LN166@CheckPytho
-
-; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
-
-  000d5	8b 50 fc	 mov	 edx, DWORD PTR [eax-4]
-  000d8	83 c1 23	 add	 ecx, 35			; 00000023H
-  000db	2b c2		 sub	 eax, edx
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  000dd	83 c0 fc	 add	 eax, -4			; fffffffcH
-  000e0	83 f8 1f	 cmp	 eax, 31			; 0000001fH
-  000e3	77 6f		 ja	 SHORT $LN113@CheckPytho
-$LN166@CheckPytho:
-
-; 289  :         ::operator delete(_Ptr, _Bytes);
-
-  000e5	51		 push	 ecx
-  000e6	52		 push	 edx
-  000e7	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
-  000ec	83 c4 08	 add	 esp, 8
-$LN158@CheckPytho:
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 96   : 	for (int i = 0;*sc_apszPythonLibraryFilenames[i] != '\n'; ++i)
-
-  000ef	8b 04 bd 04 00
-	00 00		 mov	 eax, DWORD PTR ?sc_apszPythonLibraryFilenames@@3PAPBDA[edi*4+4]
-  000f6	47		 inc	 edi
-  000f7	80 38 0a	 cmp	 BYTE PTR [eax], 10	; 0000000aH
-  000fa	0f 85 50 ff ff
-	ff		 jne	 $LL4@CheckPytho
-$LN3@CheckPytho:
-
-; 108  : 
-; 109  : 	return true;
-
-  00100	b0 01		 mov	 al, 1
-$LN1@CheckPytho:
-
-; 110  : }
-
-  00102	8b 4d f4	 mov	 ecx, DWORD PTR __$EHRec$[ebp]
-  00105	64 89 0d 00 00
-	00 00		 mov	 DWORD PTR fs:0, ecx
-  0010c	59		 pop	 ecx
-  0010d	5f		 pop	 edi
-  0010e	5e		 pop	 esi
-  0010f	8b 4d ec	 mov	 ecx, DWORD PTR __$ArrayPad$[ebp]
-  00112	33 cd		 xor	 ecx, ebp
-  00114	e8 00 00 00 00	 call	 @__security_check_cookie@4
-  00119	8b e5		 mov	 esp, ebp
-  0011b	5d		 pop	 ebp
-  0011c	8b e3		 mov	 esp, ebx
-  0011e	5b		 pop	 ebx
-  0011f	c3		 ret	 0
-$LN177@CheckPytho:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  00120	8b 4d e8	 mov	 ecx, DWORD PTR _stFilename$33[ebp+20]
-  00123	83 f9 0f	 cmp	 ecx, 15			; 0000000fH
-
-; 3083 :         if (_My_data._Large_mode_engaged()) {
-
-  00126	76 28		 jbe	 SHORT $LN106@CheckPytho
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  00128	8b 55 d4	 mov	 edx, DWORD PTR _stFilename$33[ebp]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 852  :         _Al.deallocate(_Old_ptr, _Capacity + 1); // +1 for null terminator
-
-  0012b	41		 inc	 ecx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  0012c	8b c2		 mov	 eax, edx
-
-; 284  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  0012e	81 f9 00 10 00
-	00		 cmp	 ecx, 4096		; 00001000H
-  00134	72 10		 jb	 SHORT $LN114@CheckPytho
-
-; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
-
-  00136	8b 50 fc	 mov	 edx, DWORD PTR [eax-4]
-  00139	83 c1 23	 add	 ecx, 35			; 00000023H
-  0013c	2b c2		 sub	 eax, edx
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  0013e	83 c0 fc	 add	 eax, -4			; fffffffcH
-  00141	83 f8 1f	 cmp	 eax, 31			; 0000001fH
-  00144	77 0e		 ja	 SHORT $LN113@CheckPytho
-$LN114@CheckPytho:
-
-; 289  :         ::operator delete(_Ptr, _Bytes);
-
-  00146	51		 push	 ecx
-  00147	52		 push	 edx
-  00148	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
-  0014d	83 c4 08	 add	 esp, 8
-$LN106@CheckPytho:
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 103  : 			return false;
-
-  00150	32 c0		 xor	 al, al
-  00152	eb ae		 jmp	 SHORT $LN1@CheckPytho
-$LN113@CheckPytho:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  00154	6a 00		 push	 0
-  00156	6a 00		 push	 0
-  00158	6a 00		 push	 0
-  0015a	6a 00		 push	 0
-  0015c	6a 00		 push	 0
-  0015e	e8 00 00 00 00	 call	 __invoke_watson
-$LN194@CheckPytho:
-  00163	cc		 int	 3
-_TEXT	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-__unwindfunclet$?CheckPythonLibraryFilenames@@YA_NXZ$0:
-  00000	8d 4d d4	 lea	 ecx, DWORD PTR _stFilename$33[ebp]
-  00003	e9 00 00 00 00	 jmp	 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-  00008	cc		 int	 3
-  00009	cc		 int	 3
-  0000a	cc		 int	 3
-  0000b	cc		 int	 3
-  0000c	cc		 int	 3
-__ehhandler$?CheckPythonLibraryFilenames@@YA_NXZ:
-  0000d	90		 npad	 1
-  0000e	90		 npad	 1
-  0000f	8b 54 24 08	 mov	 edx, DWORD PTR [esp+8]
-  00013	8d 42 0c	 lea	 eax, DWORD PTR [edx+12]
-  00016	8b 4a d0	 mov	 ecx, DWORD PTR [edx-48]
-  00019	33 c8		 xor	 ecx, eax
-  0001b	e8 00 00 00 00	 call	 @__security_check_cookie@4
-  00020	8b 4a f8	 mov	 ecx, DWORD PTR [edx-8]
-  00023	33 c8		 xor	 ecx, eax
-  00025	e8 00 00 00 00	 call	 @__security_check_cookie@4
-  0002a	b8 00 00 00 00	 mov	 eax, OFFSET __ehfuncinfo$?CheckPythonLibraryFilenames@@YA_NXZ
-  0002f	e9 00 00 00 00	 jmp	 ___CxxFrameHandler3
-text$x	ENDS
-?CheckPythonLibraryFilenames@@YA_NXZ ENDP		; CheckPythonLibraryFilenames
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-;	COMDAT ?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z
-_TEXT	SEGMENT
-_pyLauncher$GSCopy$1$ = -392				; size = 4
-_lpCmdLine$GSCopy$1$ = -388				; size = 4
-__Old_size$1$ = -384					; size = 4
-__Old_capacity$1$ = -384				; size = 4
-$T91 = -380						; size = 1
-tv3174 = -380						; size = 4
-tv3186 = -380						; size = 4
-tv3204 = -380						; size = 4
-__Old_capacity$1$ = -376				; size = 4
-tv3168 = -376						; size = 4
-__Old_size$1$ = -376					; size = 4
-_stVec$138 = -372					; size = 12
-_stVec$139 = -372					; size = 12
-$T26 = -360						; size = 24
-$T40 = -360						; size = 24
-_stCmdLine$140 = -336					; size = 24
-_stRegisterCmdLine$141 = -312				; size = 24
-_buf$142 = -288						; size = 260
-__$ArrayPad$ = -20					; size = 4
-__$EHRec$ = -12						; size = 12
-?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z PROC	; RunMainScript, COMDAT
-; _pyLauncher$ = ecx
-; _lpCmdLine$ = edx
-
-; 378  : {
-
-  00000	53		 push	 ebx
-  00001	8b dc		 mov	 ebx, esp
-  00003	83 ec 08	 sub	 esp, 8
-  00006	83 e4 f8	 and	 esp, -8			; fffffff8H
-  00009	83 c4 04	 add	 esp, 4
-  0000c	55		 push	 ebp
-  0000d	8b 6b 04	 mov	 ebp, DWORD PTR [ebx+4]
-  00010	89 6c 24 04	 mov	 DWORD PTR [esp+4], ebp
-  00014	8b ec		 mov	 ebp, esp
-  00016	6a ff		 push	 -1
-  00018	68 00 00 00 00	 push	 __ehhandler$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z
-  0001d	64 a1 00 00 00
-	00		 mov	 eax, DWORD PTR fs:0
-  00023	50		 push	 eax
-  00024	53		 push	 ebx
-  00025	81 ec 7c 01 00
-	00		 sub	 esp, 380		; 0000017cH
-  0002b	a1 00 00 00 00	 mov	 eax, DWORD PTR ___security_cookie
-  00030	33 c5		 xor	 eax, ebp
-  00032	89 45 ec	 mov	 DWORD PTR __$ArrayPad$[ebp], eax
-  00035	56		 push	 esi
-  00036	57		 push	 edi
-  00037	50		 push	 eax
-  00038	8d 45 f4	 lea	 eax, DWORD PTR __$EHRec$[ebp]
-  0003b	64 a3 00 00 00
-	00		 mov	 DWORD PTR fs:0, eax
-  00041	89 95 7c fe ff
-	ff		 mov	 DWORD PTR _lpCmdLine$GSCopy$1$[ebp], edx
-  00047	89 8d 78 fe ff
-	ff		 mov	 DWORD PTR _pyLauncher$GSCopy$1$[ebp], ecx
-
-; 379  : #ifdef ENABLE_PYTHON_DYNAMIC_MODULE_NAME
-; 380  : 	initPythonApi();
-
-  0004d	e8 00 00 00 00	 call	 ?initPythonApi@@YAXXZ	; initPythonApi
-
-; 381  : #endif
-; 382  : 	initpack();
-
-  00052	e8 00 00 00 00	 call	 ?initpack@@YAXXZ	; initpack
-
-; 383  : 	initdbg();
-
-  00057	e8 00 00 00 00	 call	 ?initdbg@@YAXXZ		; initdbg
-
-; 384  : 	initime();
-
-  0005c	e8 00 00 00 00	 call	 ?initime@@YAXXZ		; initime
-
-; 385  : 	initgrp();
-
-  00061	e8 00 00 00 00	 call	 ?initgrp@@YAXXZ		; initgrp
-
-; 386  : 	initgrpImage();
-
-  00066	e8 00 00 00 00	 call	 ?initgrpImage@@YAXXZ	; initgrpImage
-
-; 387  : 	initgrpText();
-
-  0006b	e8 00 00 00 00	 call	 ?initgrpText@@YAXXZ	; initgrpText
-
-; 388  : 	initwndMgr();
-
-  00070	e8 00 00 00 00	 call	 ?initwndMgr@@YAXXZ	; initwndMgr
-
-; 389  : 	initudp();
-; 390  : 	initapp();
-
-  00075	e8 00 00 00 00	 call	 ?initapp@@YAXXZ		; initapp
-
-; 391  : 	initsystem();
-
-  0007a	e8 00 00 00 00	 call	 ?initsystem@@YAXXZ	; initsystem
-
-; 392  : 	initchr();
-
-  0007f	e8 00 00 00 00	 call	 ?initchr@@YAXXZ		; initchr
-
-; 393  : 	initchrmgr();
-
-  00084	e8 00 00 00 00	 call	 ?initchrmgr@@YAXXZ	; initchrmgr
-
-; 394  : 	initPlayer();
-
-  00089	e8 00 00 00 00	 call	 ?initPlayer@@YAXXZ	; initPlayer
-
-; 395  : 	initItem();
-
-  0008e	e8 00 00 00 00	 call	 ?initItem@@YAXXZ	; initItem
-
-; 396  : 	initNonPlayer();
-
-  00093	e8 00 00 00 00	 call	 ?initNonPlayer@@YAXXZ	; initNonPlayer
-
-; 397  : 	initTrade();
-
-  00098	e8 00 00 00 00	 call	 ?initTrade@@YAXXZ	; initTrade
-
-; 398  : 	initChat();
-
-  0009d	e8 00 00 00 00	 call	 ?initChat@@YAXXZ	; initChat
-
-; 399  : 	initTextTail();
-
-  000a2	e8 00 00 00 00	 call	 ?initTextTail@@YAXXZ	; initTextTail
-
-; 400  : 	initnet();
-
-  000a7	e8 00 00 00 00	 call	 ?initnet@@YAXXZ		; initnet
-
-; 401  : 	initMiniMap();
-
-  000ac	e8 00 00 00 00	 call	 ?initMiniMap@@YAXXZ	; initMiniMap
-
-; 402  : 	initProfiler();
-
-  000b1	e8 00 00 00 00	 call	 ?initProfiler@@YAXXZ	; initProfiler
-
-; 403  : 	initEvent();
-
-  000b6	e8 00 00 00 00	 call	 ?initEvent@@YAXXZ	; initEvent
-
-; 404  : 	initeffect();
-
-  000bb	e8 00 00 00 00	 call	 ?initeffect@@YAXXZ	; initeffect
-
-; 405  : 	initfly();
-
-  000c0	e8 00 00 00 00	 call	 ?initfly@@YAXXZ		; initfly
-
-; 406  : 	initsnd();
-
-  000c5	e8 00 00 00 00	 call	 ?initsnd@@YAXXZ		; initsnd
-
-; 407  : 	initeventmgr();
-
-  000ca	e8 00 00 00 00	 call	 ?initeventmgr@@YAXXZ	; initeventmgr
-
-; 408  : 	initshop();
-
-  000cf	e8 00 00 00 00	 call	 ?initshop@@YAXXZ	; initshop
-
-; 409  : 	initskill();
-
-  000d4	e8 00 00 00 00	 call	 ?initskill@@YAXXZ	; initskill
-
-; 410  : 	initquest();
-
-  000d9	e8 00 00 00 00	 call	 ?initquest@@YAXXZ	; initquest
-
-; 411  : 	initBackground();
-
-  000de	e8 00 00 00 00	 call	 ?initBackground@@YAXXZ	; initBackground
-
-; 412  : 	initMessenger();
-
-  000e3	e8 00 00 00 00	 call	 ?initMessenger@@YAXXZ	; initMessenger
-
-; 413  : 	initsafebox();
-
-  000e8	e8 00 00 00 00	 call	 ?initsafebox@@YAXXZ	; initsafebox
-
-; 414  : 	initguild();
-
-  000ed	e8 00 00 00 00	 call	 ?initguild@@YAXXZ	; initguild
-
-; 415  : 	initServerStateChecker();
-
-  000f2	e8 00 00 00 00	 call	 ?initServerStateChecker@@YAXXZ ; initServerStateChecker
-
-; 416  : #ifdef ENABLE_GUILD_RANK_SYSTEM
-; 417  : 	initguildranking();
-
-  000f7	e8 00 00 00 00	 call	 ?initguildranking@@YAXXZ ; initguildranking
-
-; 418  : #endif
-; 419  : #ifdef ENABLE_CONFIG_MODULE
-; 420  : 	initcfg();
-
-  000fc	e8 00 00 00 00	 call	 ?initcfg@@YAXXZ		; initcfg
-
-; 421  : #endif
-; 422  : #ifdef ENABLE_RENEWAL_SWITCHBOT
-; 423  : 	initSwitchbot();
-
-  00101	e8 00 00 00 00	 call	 ?initSwitchbot@@YAXXZ	; initSwitchbot
-
-; 424  : #endif
-; 425  : #ifdef ENABLE_RENEWAL_CUBE
-; 426  : 	intcuberenewal();
-
-  00106	e8 00 00 00 00	 call	 ?intcuberenewal@@YAXXZ	; intcuberenewal
-
-; 427  : #endif
-; 428  : #ifdef ENABLE_ACCE_COSTUME_SYSTEM
-; 429  : 	initAcce();
-
-  0010b	e8 00 00 00 00	 call	 ?initAcce@@YAXXZ	; initAcce
-
-; 430  : #endif
-; 431  : #ifdef ENABLE_BIOLOG_SYSTEM
-; 432  : 	initBiologManager();
-
-  00110	e8 00 00 00 00	 call	 ?initBiologManager@@YAXXZ ; initBiologManager
-
-; 433  : #endif
-; 434  : #ifdef ENABLE_RENDER_TARGET
-; 435  : 	initRenderTarget();
-
-  00115	e8 00 00 00 00	 call	 ?initRenderTarget@@YAXXZ ; initRenderTarget
-
-; 436  : #endif
-; 437  : #ifdef ENABLE_INGAME_WIKI_SYSTEM
-; 438  : 	initWiki();
-
-  0011a	e8 00 00 00 00	 call	 ?initWiki@@YAXXZ	; initWiki
-
-; 439  : #endif
-; 440  : #ifdef ENABLE_OFFLINESHOP_SEARCH_SYSTEM
-; 441  : 	initprivateShopSearch();
-
-  0011f	e8 00 00 00 00	 call	 ?initprivateShopSearch@@YAXXZ ; initprivateShopSearch
-
-; 442  : #endif
-; 443  : #ifdef ENABLE_RIDING_EXTENDED
-; 444  : 	initmountupgrade();
-
-  00124	e8 00 00 00 00	 call	 ?initmountupgrade@@YAXXZ ; initmountupgrade
-
-; 445  : #endif
-; 446  : 
-; 447  : 	NANOBEGIN
-
-  00129	eb		 DB	 -21			; ffffffebH
-  0012a	03		 DB	 3
-  0012b	d6		 DB	 -42			; ffffffd6H
-  0012c	d7		 DB	 -41			; ffffffd7H
-  0012d	01		 DB	 1
-  0012e	68 00 00 00 00	 push	 OFFSET ??_C@_0M@EILMOIBE@__builtin__@
-  00133	ff 15 00 00 00
-	00		 call	 DWORD PTR __imp__PyImport_ImportModule
-
-; 448  : 
-; 449  : 	PyObject *builtins = PyImport_ImportModule("__builtin__");
-; 450  : #ifdef _DEBUG
-; 451  : 	PyModule_AddIntConstant(builtins, "__DEBUG__", 1);
-; 452  : #else
-; 453  : 	PyModule_AddIntConstant(builtins, "__DEBUG__", 0);
-
-  00139	8b 35 00 00 00
-	00		 mov	 esi, DWORD PTR __imp__PyModule_AddIntConstant
-  0013f	83 c4 04	 add	 esp, 4
-  00142	8b f8		 mov	 edi, eax
-  00144	6a 00		 push	 0
-  00146	68 00 00 00 00	 push	 OFFSET ??_C@_09KMAGPBGM@__DEBUG__@
-  0014b	57		 push	 edi
-  0014c	ff d6		 call	 esi
-  0014e	83 c4 0c	 add	 esp, 12			; 0000000cH
-
-; 456  : 	PyModule_AddIntConstant(builtins, "__USE_DYNAMIC_MODULE__", 1);
-
-  00151	6a 01		 push	 1
-  00153	68 00 00 00 00	 push	 OFFSET ??_C@_0BH@NBEHHPDF@__USE_DYNAMIC_MODULE__@
-  00158	57		 push	 edi
-  00159	ff d6		 call	 esi
-  0015b	0f 57 c0	 xorps	 xmm0, xmm0
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 860  :         _My_data._Mysize = 0;
-
-  0015e	c7 85 d8 fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stRegisterCmdLine$141[ebp+16], 0
-
-; 493  :         _CONSTEXPR20 _Bxty() noexcept : _Buf() {} // user-provided, for fancy pointers
-
-  00168	0f 11 85 c8 fe
-	ff ff		 movups	 XMMWORD PTR _stRegisterCmdLine$141[ebp], xmm0
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 456  : 	PyModule_AddIntConstant(builtins, "__USE_DYNAMIC_MODULE__", 1);
-
-  0016f	83 c4 0c	 add	 esp, 12			; 0000000cH
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 861  :         _My_data._Myres  = _Small_string_capacity;
-
-  00172	c7 85 dc fe ff
-	ff 0f 00 00 00	 mov	 DWORD PTR _stRegisterCmdLine$141[ebp+20], 15 ; 0000000fH
-
-; 862  :         _My_data._Activate_SSO_buffer();
-; 863  : 
-; 864  :         // the _Traits::assign is last so the codegen doesn't think the char write can alias this
-; 865  :         _Traits::assign(_My_data._Bx._Buf[0], _Elem());
-
-  0017c	c6 85 c8 fe ff
-	ff 00		 mov	 BYTE PTR _stRegisterCmdLine$141[ebp], 0
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 462  : 		std::string stRegisterCmdLine;
-
-  00183	c7 45 fc 00 00
-	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 0
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 493  :         _CONSTEXPR20 _Bxty() noexcept : _Buf() {} // user-provided, for fancy pointers
-
-  0018a	0f 11 85 b0 fe
-	ff ff		 movups	 XMMWORD PTR _stCmdLine$140[ebp], xmm0
-
-; 860  :         _My_data._Mysize = 0;
-
-  00191	c7 85 c0 fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stCmdLine$140[ebp+16], 0
-
-; 861  :         _My_data._Myres  = _Small_string_capacity;
-
-  0019b	c7 85 c4 fe ff
-	ff 0f 00 00 00	 mov	 DWORD PTR _stCmdLine$140[ebp+20], 15 ; 0000000fH
-
-; 862  :         _My_data._Activate_SSO_buffer();
-; 863  : 
-; 864  :         // the _Traits::assign is last so the codegen doesn't think the char write can alias this
-; 865  :         _Traits::assign(_My_data._Bx._Buf[0], _Elem());
-
-  001a5	c6 85 b0 fe ff
-	ff 00		 mov	 BYTE PTR _stCmdLine$140[ebp], 0
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 400  :     _CONSTEXPR20 _Vector_val() noexcept : _Myfirst(), _Mylast(), _Myend() {}
-
-  001ac	c7 85 8c fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stVec$138[ebp], 0
-  001b6	c7 85 90 fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stVec$138[ebp+4], 0
-  001c0	c7 85 94 fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stVec$138[ebp+8], 0
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 471  : 		SplitLine(lpCmdLine,seperator,&stVec);
-
-  001ca	8b bd 7c fe ff
-	ff		 mov	 edi, DWORD PTR _lpCmdLine$GSCopy$1$[ebp]
-  001d0	8d 85 8c fe ff
-	ff		 lea	 eax, DWORD PTR _stVec$138[ebp]
-  001d6	50		 push	 eax
-  001d7	c6 45 fc 02	 mov	 BYTE PTR __$EHRec$[ebp+8], 2
-  001db	68 00 00 00 00	 push	 OFFSET ??_C@_01CLKCMJKC@?5@
-  001e0	57		 push	 edi
-  001e1	e8 00 00 00 00	 call	 ?SplitLine@@YA_NPBD0PAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@Z ; SplitLine
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 1915 :         return static_cast<size_type>(_My_data._Mylast - _My_data._Myfirst);
-
-  001e6	8b 8d 90 fe ff
-	ff		 mov	 ecx, DWORD PTR _stVec$138[ebp+4]
-  001ec	b8 ab aa aa 2a	 mov	 eax, 715827883		; 2aaaaaabH
-  001f1	8b b5 8c fe ff
-	ff		 mov	 esi, DWORD PTR _stVec$138[ebp]
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 471  : 		SplitLine(lpCmdLine,seperator,&stVec);
-
-  001f7	83 c4 0c	 add	 esp, 12			; 0000000cH
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 1915 :         return static_cast<size_type>(_My_data._Mylast - _My_data._Myfirst);
-
-  001fa	2b ce		 sub	 ecx, esi
-  001fc	f7 e9		 imul	 ecx
-  001fe	c1 fa 02	 sar	 edx, 2
-  00201	8b c2		 mov	 eax, edx
-  00203	c1 e8 1f	 shr	 eax, 31			; 0000001fH
-  00206	03 c2		 add	 eax, edx
-  00208	89 85 88 fe ff
-	ff		 mov	 DWORD PTR tv3168[ebp], eax
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 473  : 		if (CmdSize == stVec.size() && stVec[0]==loginMark)
-
-  0020e	83 f8 03	 cmp	 eax, 3
-  00211	0f 85 ad 00 00
-	00		 jne	 $LN908@RunMainScr
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 444  :         const value_type* _Result = _Bx._Buf;
-
-  00217	8b c6		 mov	 eax, esi
-  00219	8b f8		 mov	 edi, eax
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  0021b	83 7f 14 0f	 cmp	 DWORD PTR [edi+20], 15	; 0000000fH
-
-; 445  :         if (_Large_mode_engaged()) {
-
-  0021f	76 02		 jbe	 SHORT $LN900@RunMainScr
-
-; 446  :             _Result = _Unfancy(_Bx._Ptr);
-
-  00221	8b 06		 mov	 eax, DWORD PTR [esi]
-$LN900@RunMainScr:
-
-; 2854 :         return _Traits_equal<_Traits>(_Mypair._Myval2._Myptr(), _Mypair._Myval2._Mysize, _Ptr, _Traits::length(_Ptr));
-
-  00223	6a 03		 push	 3
-  00225	68 00 00 00 00	 push	 OFFSET ??_C@_03MCGAAIEM@?9cs@
-  0022a	ff 76 10	 push	 DWORD PTR [esi+16]
-  0022d	50		 push	 eax
-  0022e	e8 00 00 00 00	 call	 ??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQBDI0I@Z ; std::_Traits_equal<std::char_traits<char> >
-  00233	83 c4 10	 add	 esp, 16			; 00000010H
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 473  : 		if (CmdSize == stVec.size() && stVec[0]==loginMark)
-
-  00236	84 c0		 test	 al, al
-  00238	74 7b		 je	 SHORT $LN905@RunMainScr
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  0023a	83 7f 44 0f	 cmp	 DWORD PTR [edi+68], 15	; 0000000fH
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 1934 :         return _My_data._Myfirst[_Pos];
-
-  0023e	8d 47 30	 lea	 eax, DWORD PTR [edi+48]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 445  :         if (_Large_mode_engaged()) {
-
-  00241	76 02		 jbe	 SHORT $LN630@RunMainScr
-
-; 446  :             _Result = _Unfancy(_Bx._Ptr);
-
-  00243	8b 00		 mov	 eax, DWORD PTR [eax]
-$LN630@RunMainScr:
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 476  : 			base64_decode(stVec[2].c_str(),buf);
-
-  00245	8d 8d e0 fe ff
-	ff		 lea	 ecx, DWORD PTR _buf$142[ebp]
-  0024b	51		 push	 ecx
-  0024c	50		 push	 eax
-  0024d	e8 00 00 00 00	 call	 ?base64_decode@@YAXPBDPAD@Z ; base64_decode
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 456  :             return __builtin_strlen(_First);
-
-  00252	8d 8d e0 fe ff
-	ff		 lea	 ecx, DWORD PTR _buf$142[ebp]
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 476  : 			base64_decode(stVec[2].c_str(),buf);
-
-  00258	83 c4 08	 add	 esp, 8
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 456  :             return __builtin_strlen(_First);
-
-  0025b	8d 51 01	 lea	 edx, DWORD PTR [ecx+1]
-  0025e	66 90		 npad	 2
-$LL903@RunMainScr:
-  00260	8a 01		 mov	 al, BYTE PTR [ecx]
-  00262	41		 inc	 ecx
-  00263	84 c0		 test	 al, al
-  00265	75 f9		 jne	 SHORT $LL903@RunMainScr
-  00267	2b ca		 sub	 ecx, edx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 1638 :         return assign(_Ptr, _Convert_size<size_type>(_Traits::length(_Ptr)));
-
-  00269	8d 85 e0 fe ff
-	ff		 lea	 eax, DWORD PTR _buf$142[ebp]
-  0026f	51		 push	 ecx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 1934 :         return _My_data._Myfirst[_Pos];
-
-  00270	8b 8d 8c fe ff
-	ff		 mov	 ecx, DWORD PTR _stVec$138[ebp]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 1638 :         return assign(_Ptr, _Convert_size<size_type>(_Traits::length(_Ptr)));
-
-  00276	50		 push	 eax
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 1934 :         return _My_data._Myfirst[_Pos];
-
-  00277	8d 49 30	 lea	 ecx, DWORD PTR [ecx+48]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 1638 :         return assign(_Ptr, _Convert_size<size_type>(_Traits::length(_Ptr)));
-
-  0027a	e8 00 00 00 00	 call	 ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@QBDI@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::assign
-
-; 769  :         _Construct<_Construct_strategy::_From_ptr>(_Ptr, _Convert_size<size_type>(_Traits::length(_Ptr)));
-
-  0027f	6a 01		 push	 1
-  00281	0f 57 c0	 xorps	 xmm0, xmm0
-
-; 517  :     size_type _Mysize = 0; // current length of string (size)
-
-  00284	c7 85 a8 fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR $T26[ebp+16], 0
-
-; 769  :         _Construct<_Construct_strategy::_From_ptr>(_Ptr, _Convert_size<size_type>(_Traits::length(_Ptr)));
-
-  0028e	68 00 00 00 00	 push	 OFFSET ??_C@_01CLKCMJKC@?5@
-  00293	8d 8d 98 fe ff
-	ff		 lea	 ecx, DWORD PTR $T26[ebp]
-
-; 518  :     size_type _Myres  = 0; // current storage reserved for string (capacity)
-
-  00299	c7 85 ac fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR $T26[ebp+20], 0
-
-; 493  :         _CONSTEXPR20 _Bxty() noexcept : _Buf() {} // user-provided, for fancy pointers
-
-  002a3	0f 11 85 98 fe
-	ff ff		 movups	 XMMWORD PTR $T26[ebp], xmm0
-
-; 769  :         _Construct<_Construct_strategy::_From_ptr>(_Ptr, _Convert_size<size_type>(_Traits::length(_Ptr)));
-
-  002aa	e8 00 00 00 00	 call	 ??$_Construct@$00PBD@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXQBDI@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Construct<1,char const *>
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 478  : 			string_join(seperator,stVec,&stCmdLine);
-
-  002af	c6 45 fc 03	 mov	 BYTE PTR __$EHRec$[ebp+8], 3
-
-; 479  : 		}
-
-  002b3	eb 6f		 jmp	 SHORT $LN909@RunMainScr
-$LN905@RunMainScr:
-
-; 473  : 		if (CmdSize == stVec.size() && stVec[0]==loginMark)
-
-  002b5	8b 85 88 fe ff
-	ff		 mov	 eax, DWORD PTR tv3168[ebp]
-
-; 480  : 		else if (CmdSize <= stVec.size() && stVec[0]==loginMark_NonEncode)
-
-  002bb	83 f8 03	 cmp	 eax, 3
-  002be	8b bd 7c fe ff
-	ff		 mov	 edi, DWORD PTR _lpCmdLine$GSCopy$1$[ebp]
-$LN908@RunMainScr:
-  002c4	0f 82 86 00 00
-	00		 jb	 $LN4@RunMainScr
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 444  :         const value_type* _Result = _Bx._Buf;
-
-  002ca	8b c6		 mov	 eax, esi
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  002cc	83 78 14 0f	 cmp	 DWORD PTR [eax+20], 15	; 0000000fH
-
-; 445  :         if (_Large_mode_engaged()) {
-
-  002d0	76 02		 jbe	 SHORT $LN569@RunMainScr
-
-; 446  :             _Result = _Unfancy(_Bx._Ptr);
-
-  002d2	8b 06		 mov	 eax, DWORD PTR [esi]
-$LN569@RunMainScr:
-
-; 2854 :         return _Traits_equal<_Traits>(_Mypair._Myval2._Myptr(), _Mypair._Myval2._Mysize, _Ptr, _Traits::length(_Ptr));
-
-  002d4	6a 04		 push	 4
-  002d6	68 00 00 00 00	 push	 OFFSET ??_C@_04JFPGDMCL@?9ncs@
-  002db	ff 76 10	 push	 DWORD PTR [esi+16]
-  002de	50		 push	 eax
-  002df	e8 00 00 00 00	 call	 ??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQBDI0I@Z ; std::_Traits_equal<std::char_traits<char> >
-  002e4	83 c4 10	 add	 esp, 16			; 00000010H
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 480  : 		else if (CmdSize <= stVec.size() && stVec[0]==loginMark_NonEncode)
-
-  002e7	84 c0		 test	 al, al
-  002e9	74 65		 je	 SHORT $LN4@RunMainScr
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 1638 :         return assign(_Ptr, _Convert_size<size_type>(_Traits::length(_Ptr)));
-
-  002eb	6a 03		 push	 3
-  002ed	68 00 00 00 00	 push	 OFFSET ??_C@_03MCGAAIEM@?9cs@
-  002f2	8b ce		 mov	 ecx, esi
-  002f4	e8 00 00 00 00	 call	 ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@QBDI@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::assign
-  002f9	0f 57 c0	 xorps	 xmm0, xmm0
-
-; 890  :             _My_data._Mysize = _Count;
-
-  002fc	c7 85 a8 fe ff
-	ff 01 00 00 00	 mov	 DWORD PTR $T40[ebp+16], 1
-
-; 493  :         _CONSTEXPR20 _Bxty() noexcept : _Buf() {} // user-provided, for fancy pointers
-
-  00306	0f 11 85 98 fe
-	ff ff		 movups	 XMMWORD PTR $T40[ebp], xmm0
-
-; 891  :             _My_data._Myres  = _Small_string_capacity;
-
-  0030d	c7 85 ac fe ff
-	ff 0f 00 00 00	 mov	 DWORD PTR $T40[ebp+20], 15 ; 0000000fH
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
-
-  00317	66 c7 85 98 fe
-	ff ff 20 00	 mov	 WORD PTR $T40[ebp], 32	; 00000020H
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 483  : 			string_join(" ",stVec,&stCmdLine);
-
-  00320	c6 45 fc 04	 mov	 BYTE PTR __$EHRec$[ebp+8], 4
-$LN909@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 1638 :         return assign(_Ptr, _Convert_size<size_type>(_Traits::length(_Ptr)));
-
-  00324	8d 85 b0 fe ff
-	ff		 lea	 eax, DWORD PTR _stCmdLine$140[ebp]
-  0032a	50		 push	 eax
-  0032b	8d 95 8c fe ff
-	ff		 lea	 edx, DWORD PTR _stVec$138[ebp]
-  00331	8d 8d 98 fe ff
-	ff		 lea	 ecx, DWORD PTR $T40[ebp]
-  00337	e8 00 00 00 00	 call	 ??$string_join@V?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@@YAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@1@PAV01@@Z ; string_join<std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > > >
-  0033c	83 c4 04	 add	 esp, 4
-  0033f	c6 45 fc 02	 mov	 BYTE PTR __$EHRec$[ebp+8], 2
-  00343	8d 8d 98 fe ff
-	ff		 lea	 ecx, DWORD PTR $T40[ebp]
-  00349	e8 00 00 00 00	 call	 ?_Tidy_deallocate@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Tidy_deallocate
-  0034e	eb 1b		 jmp	 SHORT $LN5@RunMainScr
-$LN4@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 456  :             return __builtin_strlen(_First);
-
-  00350	8b cf		 mov	 ecx, edi
-  00352	8d 51 01	 lea	 edx, DWORD PTR [ecx+1]
-$LL904@RunMainScr:
-  00355	8a 01		 mov	 al, BYTE PTR [ecx]
-  00357	41		 inc	 ecx
-  00358	84 c0		 test	 al, al
-  0035a	75 f9		 jne	 SHORT $LL904@RunMainScr
-  0035c	2b ca		 sub	 ecx, edx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 1638 :         return assign(_Ptr, _Convert_size<size_type>(_Traits::length(_Ptr)));
-
-  0035e	51		 push	 ecx
-  0035f	57		 push	 edi
-  00360	8d 8d b0 fe ff
-	ff		 lea	 ecx, DWORD PTR _stCmdLine$140[ebp]
-  00366	e8 00 00 00 00	 call	 ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@QBDI@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::assign
-$LN5@RunMainScr:
-  0036b	6a 13		 push	 19			; 00000013H
-  0036d	68 00 00 00 00	 push	 OFFSET ??_C@_0BE@FPKDPBJI@__COMMAND_LINE__?5?$DN?5@
-  00372	8d 8d c8 fe ff
-	ff		 lea	 ecx, DWORD PTR _stRegisterCmdLine$141[ebp]
-  00378	e8 00 00 00 00	 call	 ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@QBDI@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::assign
-
-; 2292 :         const size_type _Old_size = _Mypair._Myval2._Mysize;
-
-  0037d	8b 8d d8 fe ff
-	ff		 mov	 ecx, DWORD PTR _stRegisterCmdLine$141[ebp+16]
-  00383	ba ff ff ff 7f	 mov	 edx, 2147483647		; 7fffffffH
-  00388	8b b5 dc fe ff
-	ff		 mov	 esi, DWORD PTR _stRegisterCmdLine$141[ebp+20]
-  0038e	89 8d 80 fe ff
-	ff		 mov	 DWORD PTR __Old_size$1$[ebp], ecx
-  00394	89 b5 88 fe ff
-	ff		 mov	 DWORD PTR __Old_capacity$1$[ebp], esi
-  0039a	3b ce		 cmp	 ecx, esi
-
-; 2293 :         if (_Old_size < _Mypair._Myval2._Myres) {
-
-  0039c	73 2a		 jae	 SHORT $LN78@RunMainScr
-
-; 2294 :             _ASAN_STRING_MODIFY(*this, _Old_size, _Old_size + 1);
-; 2295 :             _Mypair._Myval2._Mysize = _Old_size + 1;
-
-  0039e	8d 41 01	 lea	 eax, DWORD PTR [ecx+1]
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  003a1	83 fe 0f	 cmp	 esi, 15			; 0000000fH
-
-; 2295 :             _Mypair._Myval2._Mysize = _Old_size + 1;
-
-  003a4	89 85 d8 fe ff
-	ff		 mov	 DWORD PTR _stRegisterCmdLine$141[ebp+16], eax
-
-; 435  :         value_type* _Result = _Bx._Buf;
-
-  003aa	8d 85 c8 fe ff
-	ff		 lea	 eax, DWORD PTR _stRegisterCmdLine$141[ebp]
-
-; 436  :         if (_Large_mode_engaged()) {
-
-  003b0	0f 47 85 c8 fe
-	ff ff		 cmova	 eax, DWORD PTR _stRegisterCmdLine$141[ebp]
-
-; 2297 :             _Traits::assign(_Ptr[_Old_size], _Ch);
-
-  003b7	66 c7 04 08 22
-	00		 mov	 WORD PTR [eax+ecx], 34	; 00000022H
-
-; 2298 :             _Traits::assign(_Ptr[_Old_size + 1], _Elem());
-; 2299 :             return;
-
-  003bd	8b b5 c8 fe ff
-	ff		 mov	 esi, DWORD PTR _stRegisterCmdLine$141[ebp]
-  003c3	e9 f5 00 00 00	 jmp	 $LN90@RunMainScr
-$LN78@RunMainScr:
-
-; 3028 :         const size_type _Old_size = _My_data._Mysize;
-
-  003c8	8b c2		 mov	 eax, edx
-  003ca	2b c1		 sub	 eax, ecx
-
-; 3029 :         if (max_size() - _Old_size < _Size_increase) {
-
-  003cc	83 f8 01	 cmp	 eax, 1
-  003cf	0f 82 ce 06 00
-	00		 jb	 $LN901@RunMainScr
-
-; 3031 :         }
-; 3032 : 
-; 3033 :         const size_type _New_size     = _Old_size + _Size_increase;
-
-  003d5	8d 79 01	 lea	 edi, DWORD PTR [ecx+1]
-
-; 2978 :         const size_type _Masked = _Requested | _Alloc_mask;
-
-  003d8	83 cf 0f	 or	 edi, 15			; 0000000fH
-  003db	3b fa		 cmp	 edi, edx
-
-; 2979 :         if (_Masked > _Max) { // the mask overflows, settle for max_size()
-
-  003dd	76 04		 jbe	 SHORT $LN96@RunMainScr
-
-; 2980 :             return _Max;
-
-  003df	8b fa		 mov	 edi, edx
-  003e1	eb 27		 jmp	 SHORT $LN95@RunMainScr
-$LN96@RunMainScr:
-
-; 2981 :         }
-; 2982 : 
-; 2983 :         if (_Old > _Max - _Old / 2) { // similarly, geometric overflows
-
-  003e3	8b c6		 mov	 eax, esi
-  003e5	d1 e8		 shr	 eax, 1
-  003e7	89 85 84 fe ff
-	ff		 mov	 DWORD PTR tv3204[ebp], eax
-  003ed	8b c2		 mov	 eax, edx
-  003ef	8b 95 84 fe ff
-	ff		 mov	 edx, DWORD PTR tv3204[ebp]
-  003f5	2b c2		 sub	 eax, edx
-  003f7	3b f0		 cmp	 esi, eax
-  003f9	76 07		 jbe	 SHORT $LN97@RunMainScr
-
-; 2984 :             return _Max;
-
-  003fb	bf ff ff ff 7f	 mov	 edi, 2147483647		; 7fffffffH
-  00400	eb 08		 jmp	 SHORT $LN95@RunMainScr
-$LN97@RunMainScr:
-
-; 2985 :         }
-; 2986 : 
-; 2987 :         return (_STD max)(_Masked, _Old + _Old / 2);
-
-  00402	8d 04 16	 lea	 eax, DWORD PTR [esi+edx]
-  00405	3b f8		 cmp	 edi, eax
-  00407	0f 42 f8	 cmovb	 edi, eax
-$LN95@RunMainScr:
-
-; 825  :         ++_Capacity; // Take null terminator into consideration
-
-  0040a	8d 47 01	 lea	 eax, DWORD PTR [edi+1]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 227  :     if (_Bytes == 0) {
-
-  0040d	85 c0		 test	 eax, eax
-  0040f	75 04		 jne	 SHORT $LN114@RunMainScr
-
-; 228  :         return nullptr;
-
-  00411	33 f6		 xor	 esi, esi
-  00413	eb 1f		 jmp	 SHORT $LN113@RunMainScr
-$LN114@RunMainScr:
-
-; 229  :     }
-; 230  : 
-; 231  : #if _HAS_CXX20 // TRANSITION, GH-1532
-; 232  :     if (_STD is_constant_evaluated()) {
-; 233  :         return _Traits::_Allocate(_Bytes);
-; 234  :     }
-; 235  : #endif // _HAS_CXX20
-; 236  : 
-; 237  : #ifdef __cpp_aligned_new
-; 238  :     if constexpr (_Align > __STDCPP_DEFAULT_NEW_ALIGNMENT__) {
-; 239  :         size_t _Passed_align = _Align;
-; 240  : #if defined(_M_IX86) || defined(_M_X64)
-; 241  :         if (_Bytes >= _Big_allocation_threshold) {
-; 242  :             // boost the alignment of big allocations to help autovectorization
-; 243  :             _Passed_align = (_STD max)(_Align, _Big_allocation_alignment);
-; 244  :         }
-; 245  : #endif // defined(_M_IX86) || defined(_M_X64)
-; 246  :         return _Traits::_Allocate_aligned(_Bytes, _Passed_align);
-; 247  :     } else
-; 248  : #endif // defined(__cpp_aligned_new)
-; 249  :     {
-; 250  : #if defined(_M_IX86) || defined(_M_X64)
-; 251  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  00415	50		 push	 eax
-  00416	3d 00 10 00 00	 cmp	 eax, 4096		; 00001000H
-  0041b	72 07		 jb	 SHORT $LN116@RunMainScr
-
-; 252  :             // boost the alignment of big allocations to help autovectorization
-; 253  :             return _Allocate_manually_vector_aligned<_Traits>(_Bytes);
-
-  0041d	e8 00 00 00 00	 call	 ??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPAXI@Z ; std::_Allocate_manually_vector_aligned<std::_Default_allocate_traits>
-  00422	eb 05		 jmp	 SHORT $LN910@RunMainScr
-$LN116@RunMainScr:
-
-; 136  :         return ::operator new(_Bytes);
-
-  00424	e8 00 00 00 00	 call	 ??2@YAPAXI@Z		; operator new
-$LN910@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 3041 :         _My_data._Mysize      = _New_size;
-
-  00429	8b 8d 80 fe ff
-	ff		 mov	 ecx, DWORD PTR __Old_size$1$[ebp]
-  0042f	8b f0		 mov	 esi, eax
-  00431	83 c4 04	 add	 esp, 4
-$LN113@RunMainScr:
-
-; 3042 :         _My_data._Myres       = _New_capacity;
-; 3043 :         _Elem* const _Raw_new = _Unfancy(_New_ptr);
-; 3044 :         if (_Old_capacity > _Small_string_capacity) {
-
-  00434	83 bd 88 fe ff
-	ff 0f		 cmp	 DWORD PTR __Old_capacity$1$[ebp], 15 ; 0000000fH
-  0043b	8d 41 01	 lea	 eax, DWORD PTR [ecx+1]
-  0043e	89 bd dc fe ff
-	ff		 mov	 DWORD PTR _stRegisterCmdLine$141[ebp+20], edi
-  00444	8d 3c 31	 lea	 edi, DWORD PTR [ecx+esi]
-  00447	89 85 d8 fe ff
-	ff		 mov	 DWORD PTR _stRegisterCmdLine$141[ebp+16], eax
-  0044d	89 bd 84 fe ff
-	ff		 mov	 DWORD PTR tv3174[ebp], edi
-  00453	51		 push	 ecx
-  00454	76 4c		 jbe	 SHORT $LN89@RunMainScr
-
-; 3045 :             const pointer _Old_ptr = _My_data._Bx._Ptr;
-
-  00456	8b bd c8 fe ff
-	ff		 mov	 edi, DWORD PTR _stRegisterCmdLine$141[ebp]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
-
-  0045c	57		 push	 edi
-  0045d	56		 push	 esi
-  0045e	e8 00 00 00 00	 call	 _memcpy
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 2307 :                     _Traits::assign(_New_ptr[_Old_size], _Ch);
-
-  00463	8b 85 84 fe ff
-	ff		 mov	 eax, DWORD PTR tv3174[ebp]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
-
-  00469	83 c4 0c	 add	 esp, 12			; 0000000cH
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 852  :         _Al.deallocate(_Old_ptr, _Capacity + 1); // +1 for null terminator
-
-  0046c	8b 8d 88 fe ff
-	ff		 mov	 ecx, DWORD PTR __Old_capacity$1$[ebp]
-  00472	41		 inc	 ecx
-
-; 2307 :                     _Traits::assign(_New_ptr[_Old_size], _Ch);
-
-  00473	66 c7 00 22 00	 mov	 WORD PTR [eax], 34	; 00000022H
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 284  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  00478	81 f9 00 10 00
-	00		 cmp	 ecx, 4096		; 00001000H
-  0047e	72 16		 jb	 SHORT $LN148@RunMainScr
-
-; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
-
-  00480	8b 57 fc	 mov	 edx, DWORD PTR [edi-4]
-  00483	83 c1 23	 add	 ecx, 35			; 00000023H
-
-; 206  : 
-; 207  :     // If the following asserts, it likely means that we are performing
-; 208  :     // an aligned delete on memory coming from an unaligned allocation.
-; 209  :     _STL_ASSERT(_Ptr_user[-2] == _Big_allocation_sentinel, "invalid argument");
-; 210  : 
-; 211  :     // Extra paranoia on aligned allocation/deallocation; ensure _Ptr_container is
-; 212  :     // in range [_Min_back_shift, _Non_user_size]
-; 213  : #ifdef _DEBUG
-; 214  :     constexpr uintptr_t _Min_back_shift = 2 * sizeof(void*);
-; 215  : #else // ^^^ defined(_DEBUG) / !defined(_DEBUG) vvv
-; 216  :     constexpr uintptr_t _Min_back_shift = sizeof(void*);
-; 217  : #endif // ^^^ !defined(_DEBUG) ^^^
-; 218  :     const uintptr_t _Back_shift = reinterpret_cast<uintptr_t>(_Ptr) - _Ptr_container;
-
-  00486	2b fa		 sub	 edi, edx
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  00488	8d 47 fc	 lea	 eax, DWORD PTR [edi-4]
-  0048b	83 f8 1f	 cmp	 eax, 31			; 0000001fH
-  0048e	0f 87 14 06 00
-	00		 ja	 $LN537@RunMainScr
-
-; 220  :     _Ptr = reinterpret_cast<void*>(_Ptr_container);
-
-  00494	8b fa		 mov	 edi, edx
-$LN148@RunMainScr:
-
-; 289  :         ::operator delete(_Ptr, _Bytes);
-
-  00496	51		 push	 ecx
-  00497	57		 push	 edi
-  00498	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
-  0049d	83 c4 08	 add	 esp, 8
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 3049 :         } else {
-
-  004a0	eb 15		 jmp	 SHORT $LN911@RunMainScr
-$LN89@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
-
-  004a2	8d 85 c8 fe ff
-	ff		 lea	 eax, DWORD PTR _stRegisterCmdLine$141[ebp]
-  004a8	50		 push	 eax
-  004a9	56		 push	 esi
-  004aa	e8 00 00 00 00	 call	 _memcpy
-  004af	83 c4 0c	 add	 esp, 12			; 0000000cH
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 2307 :                     _Traits::assign(_New_ptr[_Old_size], _Ch);
-
-  004b2	66 c7 07 22 00	 mov	 WORD PTR [edi], 34	; 00000022H
-$LN911@RunMainScr:
-
-; 1483 :         return append(_Right._Mypair._Myval2._Myptr(), _Right._Mypair._Myval2._Mysize);
-
-  004b7	89 b5 c8 fe ff
-	ff		 mov	 DWORD PTR _stRegisterCmdLine$141[ebp], esi
-$LN90@RunMainScr:
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  004bd	83 bd c4 fe ff
-	ff 0f		 cmp	 DWORD PTR _stCmdLine$140[ebp+20], 15 ; 0000000fH
-
-; 444  :         const value_type* _Result = _Bx._Buf;
-
-  004c4	8d 8d b0 fe ff
-	ff		 lea	 ecx, DWORD PTR _stCmdLine$140[ebp]
-
-; 1512 :         const size_type _Old_size = _Mypair._Myval2._Mysize;
-
-  004ca	8b 85 dc fe ff
-	ff		 mov	 eax, DWORD PTR _stRegisterCmdLine$141[ebp+20]
-
-; 445  :         if (_Large_mode_engaged()) {
-
-  004d0	0f 47 8d b0 fe
-	ff ff		 cmova	 ecx, DWORD PTR _stCmdLine$140[ebp]
-
-; 1483 :         return append(_Right._Mypair._Myval2._Myptr(), _Right._Mypair._Myval2._Mysize);
-
-  004d7	8b bd c0 fe ff
-	ff		 mov	 edi, DWORD PTR _stCmdLine$140[ebp+16]
-
-; 1512 :         const size_type _Old_size = _Mypair._Myval2._Mysize;
-
-  004dd	8b 95 d8 fe ff
-	ff		 mov	 edx, DWORD PTR _stRegisterCmdLine$141[ebp+16]
-  004e3	2b c2		 sub	 eax, edx
-
-; 1513 :         if (_Count <= _Mypair._Myval2._Myres - _Old_size) {
-
-  004e5	57		 push	 edi
-  004e6	51		 push	 ecx
-  004e7	3b f8		 cmp	 edi, eax
-  004e9	77 2b		 ja	 SHORT $LN177@RunMainScr
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  004eb	83 bd dc fe ff
-	ff 0f		 cmp	 DWORD PTR _stRegisterCmdLine$141[ebp+20], 15 ; 0000000fH
-
-; 1515 :             _Mypair._Myval2._Mysize = _Old_size + _Count;
-
-  004f2	8d 04 3a	 lea	 eax, DWORD PTR [edx+edi]
-  004f5	89 85 d8 fe ff
-	ff		 mov	 DWORD PTR _stRegisterCmdLine$141[ebp+16], eax
-
-; 435  :         value_type* _Result = _Bx._Buf;
-
-  004fb	8d 85 c8 fe ff
-	ff		 lea	 eax, DWORD PTR _stRegisterCmdLine$141[ebp]
-
-; 436  :         if (_Large_mode_engaged()) {
-
-  00501	0f 47 c6	 cmova	 eax, esi
-
-; 1517 :             _Traits::move(_Old_ptr + _Old_size, _Ptr, _Count);
-
-  00504	8d 34 10	 lea	 esi, DWORD PTR [eax+edx]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 174  :         _CSTD memmove(_First1, _First2, _Count * sizeof(_Elem));
-
-  00507	56		 push	 esi
-  00508	e8 00 00 00 00	 call	 _memmove
-  0050d	83 c4 0c	 add	 esp, 12			; 0000000cH
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 1518 :             _Traits::assign(_Old_ptr[_Old_size + _Count], _Elem());
-
-  00510	c6 04 37 00	 mov	 BYTE PTR [edi+esi], 0
-
-; 1519 :             return *this;
-
-  00514	eb 12		 jmp	 SHORT $LN176@RunMainScr
-$LN177@RunMainScr:
-
-; 1520 :         }
-; 1521 : 
-; 1522 :         return _Reallocate_grow_by(
-
-  00516	ff b5 84 fe ff
-	ff		 push	 DWORD PTR $T91[ebp]
-  0051c	8d 8d c8 fe ff
-	ff		 lea	 ecx, DWORD PTR _stRegisterCmdLine$141[ebp]
-  00522	57		 push	 edi
-  00523	e8 00 00 00 00	 call	 ??$_Reallocate_grow_by@V<lambda_1>@?1??append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV34@QBDI@Z@PBDI@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEAAV01@IV<lambda_1>@?1??append@01@QAEAAV01@QBDI@Z@PBDI@Z ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Reallocate_grow_by<`std::basic_string<char,std::char_traits<char>,std::allocator<char> >::append'::`2'::<lambda_1>,char const *,unsigned int>
-$LN176@RunMainScr:
-
-; 2292 :         const size_type _Old_size = _Mypair._Myval2._Mysize;
-
-  00528	8b 8d d8 fe ff
-	ff		 mov	 ecx, DWORD PTR _stRegisterCmdLine$141[ebp+16]
-  0052e	8b b5 dc fe ff
-	ff		 mov	 esi, DWORD PTR _stRegisterCmdLine$141[ebp+20]
-  00534	89 8d 88 fe ff
-	ff		 mov	 DWORD PTR __Old_size$1$[ebp], ecx
-  0053a	89 b5 80 fe ff
-	ff		 mov	 DWORD PTR __Old_capacity$1$[ebp], esi
-  00540	3b ce		 cmp	 ecx, esi
-
-; 2293 :         if (_Old_size < _Mypair._Myval2._Myres) {
-
-  00542	73 2a		 jae	 SHORT $LN205@RunMainScr
-
-; 2294 :             _ASAN_STRING_MODIFY(*this, _Old_size, _Old_size + 1);
-; 2295 :             _Mypair._Myval2._Mysize = _Old_size + 1;
-
-  00544	8d 41 01	 lea	 eax, DWORD PTR [ecx+1]
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  00547	83 fe 0f	 cmp	 esi, 15			; 0000000fH
-
-; 2295 :             _Mypair._Myval2._Mysize = _Old_size + 1;
-
-  0054a	89 85 d8 fe ff
-	ff		 mov	 DWORD PTR _stRegisterCmdLine$141[ebp+16], eax
-
-; 435  :         value_type* _Result = _Bx._Buf;
-
-  00550	8d 85 c8 fe ff
-	ff		 lea	 eax, DWORD PTR _stRegisterCmdLine$141[ebp]
-
-; 436  :         if (_Large_mode_engaged()) {
-
-  00556	0f 47 85 c8 fe
-	ff ff		 cmova	 eax, DWORD PTR _stRegisterCmdLine$141[ebp]
-
-; 2297 :             _Traits::assign(_Ptr[_Old_size], _Ch);
-
-  0055d	66 c7 04 08 22
-	00		 mov	 WORD PTR [eax+ecx], 34	; 00000022H
-
-; 2298 :             _Traits::assign(_Ptr[_Old_size + 1], _Elem());
-; 2299 :             return;
-
-  00563	8b b5 c8 fe ff
-	ff		 mov	 esi, DWORD PTR _stRegisterCmdLine$141[ebp]
-  00569	e9 eb 00 00 00	 jmp	 $LN217@RunMainScr
-$LN205@RunMainScr:
-
-; 3028 :         const size_type _Old_size = _My_data._Mysize;
-
-  0056e	ba ff ff ff 7f	 mov	 edx, 2147483647		; 7fffffffH
-  00573	8b c2		 mov	 eax, edx
-  00575	2b c1		 sub	 eax, ecx
-
-; 3029 :         if (max_size() - _Old_size < _Size_increase) {
-
-  00577	83 f8 01	 cmp	 eax, 1
-  0057a	0f 82 23 05 00
-	00		 jb	 $LN901@RunMainScr
-
-; 3031 :         }
-; 3032 : 
-; 3033 :         const size_type _New_size     = _Old_size + _Size_increase;
-
-  00580	8d 79 01	 lea	 edi, DWORD PTR [ecx+1]
-
-; 2978 :         const size_type _Masked = _Requested | _Alloc_mask;
-
-  00583	83 cf 0f	 or	 edi, 15			; 0000000fH
-  00586	3b fa		 cmp	 edi, edx
-
-; 2979 :         if (_Masked > _Max) { // the mask overflows, settle for max_size()
-
-  00588	76 04		 jbe	 SHORT $LN223@RunMainScr
-
-; 2980 :             return _Max;
-
-  0058a	8b fa		 mov	 edi, edx
-  0058c	eb 18		 jmp	 SHORT $LN222@RunMainScr
-$LN223@RunMainScr:
-
-; 2981 :         }
-; 2982 : 
-; 2983 :         if (_Old > _Max - _Old / 2) { // similarly, geometric overflows
-
-  0058e	8b c6		 mov	 eax, esi
-  00590	d1 e8		 shr	 eax, 1
-  00592	2b d0		 sub	 edx, eax
-  00594	3b f2		 cmp	 esi, edx
-  00596	76 07		 jbe	 SHORT $LN224@RunMainScr
-
-; 2984 :             return _Max;
-
-  00598	bf ff ff ff 7f	 mov	 edi, 2147483647		; 7fffffffH
-  0059d	eb 07		 jmp	 SHORT $LN222@RunMainScr
-$LN224@RunMainScr:
-
-; 2985 :         }
-; 2986 : 
-; 2987 :         return (_STD max)(_Masked, _Old + _Old / 2);
-
-  0059f	03 c6		 add	 eax, esi
-  005a1	3b f8		 cmp	 edi, eax
-  005a3	0f 42 f8	 cmovb	 edi, eax
-$LN222@RunMainScr:
-
-; 825  :         ++_Capacity; // Take null terminator into consideration
-
-  005a6	8d 47 01	 lea	 eax, DWORD PTR [edi+1]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 227  :     if (_Bytes == 0) {
-
-  005a9	85 c0		 test	 eax, eax
-  005ab	75 04		 jne	 SHORT $LN241@RunMainScr
-
-; 228  :         return nullptr;
-
-  005ad	33 f6		 xor	 esi, esi
-  005af	eb 1f		 jmp	 SHORT $LN240@RunMainScr
-$LN241@RunMainScr:
-
-; 229  :     }
-; 230  : 
-; 231  : #if _HAS_CXX20 // TRANSITION, GH-1532
-; 232  :     if (_STD is_constant_evaluated()) {
-; 233  :         return _Traits::_Allocate(_Bytes);
-; 234  :     }
-; 235  : #endif // _HAS_CXX20
-; 236  : 
-; 237  : #ifdef __cpp_aligned_new
-; 238  :     if constexpr (_Align > __STDCPP_DEFAULT_NEW_ALIGNMENT__) {
-; 239  :         size_t _Passed_align = _Align;
-; 240  : #if defined(_M_IX86) || defined(_M_X64)
-; 241  :         if (_Bytes >= _Big_allocation_threshold) {
-; 242  :             // boost the alignment of big allocations to help autovectorization
-; 243  :             _Passed_align = (_STD max)(_Align, _Big_allocation_alignment);
-; 244  :         }
-; 245  : #endif // defined(_M_IX86) || defined(_M_X64)
-; 246  :         return _Traits::_Allocate_aligned(_Bytes, _Passed_align);
-; 247  :     } else
-; 248  : #endif // defined(__cpp_aligned_new)
-; 249  :     {
-; 250  : #if defined(_M_IX86) || defined(_M_X64)
-; 251  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  005b1	50		 push	 eax
-  005b2	3d 00 10 00 00	 cmp	 eax, 4096		; 00001000H
-  005b7	72 07		 jb	 SHORT $LN243@RunMainScr
-
-; 252  :             // boost the alignment of big allocations to help autovectorization
-; 253  :             return _Allocate_manually_vector_aligned<_Traits>(_Bytes);
-
-  005b9	e8 00 00 00 00	 call	 ??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPAXI@Z ; std::_Allocate_manually_vector_aligned<std::_Default_allocate_traits>
-  005be	eb 05		 jmp	 SHORT $LN912@RunMainScr
-$LN243@RunMainScr:
-
-; 136  :         return ::operator new(_Bytes);
-
-  005c0	e8 00 00 00 00	 call	 ??2@YAPAXI@Z		; operator new
-$LN912@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 3041 :         _My_data._Mysize      = _New_size;
-
-  005c5	8b 8d 88 fe ff
-	ff		 mov	 ecx, DWORD PTR __Old_size$1$[ebp]
-  005cb	8b f0		 mov	 esi, eax
-  005cd	83 c4 04	 add	 esp, 4
-$LN240@RunMainScr:
-
-; 3042 :         _My_data._Myres       = _New_capacity;
-; 3043 :         _Elem* const _Raw_new = _Unfancy(_New_ptr);
-; 3044 :         if (_Old_capacity > _Small_string_capacity) {
-
-  005d0	83 bd 80 fe ff
-	ff 0f		 cmp	 DWORD PTR __Old_capacity$1$[ebp], 15 ; 0000000fH
-  005d7	8d 41 01	 lea	 eax, DWORD PTR [ecx+1]
-  005da	89 bd dc fe ff
-	ff		 mov	 DWORD PTR _stRegisterCmdLine$141[ebp+20], edi
-  005e0	8d 3c 31	 lea	 edi, DWORD PTR [ecx+esi]
-  005e3	89 85 d8 fe ff
-	ff		 mov	 DWORD PTR _stRegisterCmdLine$141[ebp+16], eax
-  005e9	89 bd 84 fe ff
-	ff		 mov	 DWORD PTR tv3186[ebp], edi
-  005ef	51		 push	 ecx
-  005f0	76 4c		 jbe	 SHORT $LN216@RunMainScr
-
-; 3045 :             const pointer _Old_ptr = _My_data._Bx._Ptr;
-
-  005f2	8b bd c8 fe ff
-	ff		 mov	 edi, DWORD PTR _stRegisterCmdLine$141[ebp]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
-
-  005f8	57		 push	 edi
-  005f9	56		 push	 esi
-  005fa	e8 00 00 00 00	 call	 _memcpy
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 2307 :                     _Traits::assign(_New_ptr[_Old_size], _Ch);
-
-  005ff	8b 85 84 fe ff
-	ff		 mov	 eax, DWORD PTR tv3186[ebp]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
-
-  00605	83 c4 0c	 add	 esp, 12			; 0000000cH
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 852  :         _Al.deallocate(_Old_ptr, _Capacity + 1); // +1 for null terminator
-
-  00608	8b 8d 80 fe ff
-	ff		 mov	 ecx, DWORD PTR __Old_capacity$1$[ebp]
-  0060e	41		 inc	 ecx
-
-; 2307 :                     _Traits::assign(_New_ptr[_Old_size], _Ch);
-
-  0060f	66 c7 00 22 00	 mov	 WORD PTR [eax], 34	; 00000022H
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 284  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  00614	81 f9 00 10 00
-	00		 cmp	 ecx, 4096		; 00001000H
-  0061a	72 16		 jb	 SHORT $LN275@RunMainScr
-
-; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
-
-  0061c	8b 57 fc	 mov	 edx, DWORD PTR [edi-4]
-  0061f	83 c1 23	 add	 ecx, 35			; 00000023H
-
-; 206  : 
-; 207  :     // If the following asserts, it likely means that we are performing
-; 208  :     // an aligned delete on memory coming from an unaligned allocation.
-; 209  :     _STL_ASSERT(_Ptr_user[-2] == _Big_allocation_sentinel, "invalid argument");
-; 210  : 
-; 211  :     // Extra paranoia on aligned allocation/deallocation; ensure _Ptr_container is
-; 212  :     // in range [_Min_back_shift, _Non_user_size]
-; 213  : #ifdef _DEBUG
-; 214  :     constexpr uintptr_t _Min_back_shift = 2 * sizeof(void*);
-; 215  : #else // ^^^ defined(_DEBUG) / !defined(_DEBUG) vvv
-; 216  :     constexpr uintptr_t _Min_back_shift = sizeof(void*);
-; 217  : #endif // ^^^ !defined(_DEBUG) ^^^
-; 218  :     const uintptr_t _Back_shift = reinterpret_cast<uintptr_t>(_Ptr) - _Ptr_container;
-
-  00622	2b fa		 sub	 edi, edx
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  00624	8d 47 fc	 lea	 eax, DWORD PTR [edi-4]
-  00627	83 f8 1f	 cmp	 eax, 31			; 0000001fH
-  0062a	0f 87 78 04 00
-	00		 ja	 $LN537@RunMainScr
-
-; 220  :     _Ptr = reinterpret_cast<void*>(_Ptr_container);
-
-  00630	8b fa		 mov	 edi, edx
-$LN275@RunMainScr:
-
-; 289  :         ::operator delete(_Ptr, _Bytes);
-
-  00632	51		 push	 ecx
-  00633	57		 push	 edi
-  00634	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
-  00639	83 c4 08	 add	 esp, 8
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 3049 :         } else {
-
-  0063c	eb 15		 jmp	 SHORT $LN913@RunMainScr
-$LN216@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
-
-  0063e	8d 85 c8 fe ff
-	ff		 lea	 eax, DWORD PTR _stRegisterCmdLine$141[ebp]
-  00644	50		 push	 eax
-  00645	56		 push	 esi
-  00646	e8 00 00 00 00	 call	 _memcpy
-  0064b	83 c4 0c	 add	 esp, 12			; 0000000cH
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 2307 :                     _Traits::assign(_New_ptr[_Old_size], _Ch);
-
-  0064e	66 c7 07 22 00	 mov	 WORD PTR [edi], 34	; 00000022H
-$LN913@RunMainScr:
-
-; 444  :         const value_type* _Result = _Bx._Buf;
-
-  00653	89 b5 c8 fe ff
-	ff		 mov	 DWORD PTR _stRegisterCmdLine$141[ebp], esi
-$LN217@RunMainScr:
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  00659	83 bd dc fe ff
-	ff 0f		 cmp	 DWORD PTR _stRegisterCmdLine$141[ebp+20], 15 ; 0000000fH
-
-; 444  :         const value_type* _Result = _Bx._Buf;
-
-  00660	8d 85 c8 fe ff
-	ff		 lea	 eax, DWORD PTR _stRegisterCmdLine$141[ebp]
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 494  : 		if (!pyLauncher.RunLine(c_szRegisterCmdLine))
-
-  00666	8b bd 78 fe ff
-	ff		 mov	 edi, DWORD PTR _pyLauncher$GSCopy$1$[ebp]
-  0066c	8b cf		 mov	 ecx, edi
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 445  :         if (_Large_mode_engaged()) {
-
-  0066e	0f 47 c6	 cmova	 eax, esi
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 494  : 		if (!pyLauncher.RunLine(c_szRegisterCmdLine))
-
-  00671	50		 push	 eax
-  00672	e8 00 00 00 00	 call	 ?RunLine@CPythonLauncher@@QAE_NPBD@Z ; CPythonLauncher::RunLine
-  00677	84 c0		 test	 al, al
-  00679	0f 85 2e 01 00
-	00		 jne	 $LN6@RunMainScr
-
-; 496  : 			TraceError("RegisterCommandLine Error");
-
-  0067f	68 00 00 00 00	 push	 OFFSET ??_C@_0BK@DPMNHJLC@RegisterCommandLine?5Error@
-  00684	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 2090 :         if (_Myfirst) { // destroy and deallocate old array
-
-  00689	8b b5 8c fe ff
-	ff		 mov	 esi, DWORD PTR _stVec$138[ebp]
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 496  : 			TraceError("RegisterCommandLine Error");
-
-  0068f	83 c4 04	 add	 esp, 4
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 2090 :         if (_Myfirst) { // destroy and deallocate old array
-
-  00692	85 f6		 test	 esi, esi
-  00694	0f 84 83 00 00
-	00		 je	 $LN334@RunMainScr
-
-; 2091 :             _STD _Destroy_range(_Myfirst, _Mylast, _Al);
-
-  0069a	8b bd 90 fe ff
-	ff		 mov	 edi, DWORD PTR _stVec$138[ebp+4]
-  006a0	3b f7		 cmp	 esi, edi
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 1102 :         for (; _First != _Last; ++_First) {
-
-  006a2	74 14		 je	 SHORT $LN339@RunMainScr
-$LL340@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 1383 :         _Tidy_deallocate();
-
-  006a4	8b ce		 mov	 ecx, esi
-  006a6	e8 00 00 00 00	 call	 ?_Tidy_deallocate@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Tidy_deallocate
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 1102 :         for (; _First != _Last; ++_First) {
-
-  006ab	83 c6 18	 add	 esi, 24			; 00000018H
-  006ae	3b f7		 cmp	 esi, edi
-  006b0	75 f2		 jne	 SHORT $LL340@RunMainScr
-  006b2	8b b5 8c fe ff
-	ff		 mov	 esi, DWORD PTR _stVec$138[ebp]
-$LN339@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 2093 :             _Al.deallocate(_Myfirst, static_cast<size_type>(_Myend - _Myfirst));
-
-  006b8	8b 8d 94 fe ff
-	ff		 mov	 ecx, DWORD PTR _stVec$138[ebp+8]
-  006be	b8 ab aa aa 2a	 mov	 eax, 715827883		; 2aaaaaabH
-  006c3	2b ce		 sub	 ecx, esi
-  006c5	f7 e9		 imul	 ecx
-  006c7	c1 fa 02	 sar	 edx, 2
-  006ca	8b c2		 mov	 eax, edx
-  006cc	c1 e8 1f	 shr	 eax, 31			; 0000001fH
-  006cf	03 c2		 add	 eax, edx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  006d1	8d 0c 40	 lea	 ecx, DWORD PTR [eax+eax*2]
-  006d4	8b c6		 mov	 eax, esi
-  006d6	c1 e1 03	 shl	 ecx, 3
-
-; 284  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  006d9	81 f9 00 10 00
-	00		 cmp	 ecx, 4096		; 00001000H
-  006df	72 14		 jb	 SHORT $LN368@RunMainScr
-
-; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
-
-  006e1	8b 70 fc	 mov	 esi, DWORD PTR [eax-4]
-  006e4	83 c1 23	 add	 ecx, 35			; 00000023H
-  006e7	2b c6		 sub	 eax, esi
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  006e9	83 c0 fc	 add	 eax, -4			; fffffffcH
-  006ec	83 f8 1f	 cmp	 eax, 31			; 0000001fH
-  006ef	0f 87 b3 03 00
-	00		 ja	 $LN537@RunMainScr
-$LN368@RunMainScr:
-
-; 289  :         ::operator delete(_Ptr, _Bytes);
-
-  006f5	51		 push	 ecx
-  006f6	56		 push	 esi
-  006f7	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
-  006fc	83 c4 08	 add	 esp, 8
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 2095 :             _Myfirst = nullptr;
-
-  006ff	c7 85 8c fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stVec$138[ebp], 0
-
-; 2096 :             _Mylast  = nullptr;
-
-  00709	c7 85 90 fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stVec$138[ebp+4], 0
-
-; 2097 :             _Myend   = nullptr;
-
-  00713	c7 85 94 fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stVec$138[ebp+8], 0
-$LN334@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  0071d	8b 8d c4 fe ff
-	ff		 mov	 ecx, DWORD PTR _stCmdLine$140[ebp+20]
-  00723	83 f9 0f	 cmp	 ecx, 15			; 0000000fH
-
-; 3083 :         if (_My_data._Large_mode_engaged()) {
-
-  00726	76 2f		 jbe	 SHORT $LN391@RunMainScr
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  00728	8b 95 b0 fe ff
-	ff		 mov	 edx, DWORD PTR _stCmdLine$140[ebp]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 852  :         _Al.deallocate(_Old_ptr, _Capacity + 1); // +1 for null terminator
-
-  0072e	41		 inc	 ecx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  0072f	8b c2		 mov	 eax, edx
-
-; 284  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  00731	81 f9 00 10 00
-	00		 cmp	 ecx, 4096		; 00001000H
-  00737	72 14		 jb	 SHORT $LN399@RunMainScr
-
-; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
-
-  00739	8b 50 fc	 mov	 edx, DWORD PTR [eax-4]
-  0073c	83 c1 23	 add	 ecx, 35			; 00000023H
-  0073f	2b c2		 sub	 eax, edx
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  00741	83 c0 fc	 add	 eax, -4			; fffffffcH
-  00744	83 f8 1f	 cmp	 eax, 31			; 0000001fH
-  00747	0f 87 5b 03 00
-	00		 ja	 $LN537@RunMainScr
-$LN399@RunMainScr:
-
-; 289  :         ::operator delete(_Ptr, _Bytes);
-
-  0074d	51		 push	 ecx
-  0074e	52		 push	 edx
-  0074f	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
-  00754	83 c4 08	 add	 esp, 8
-$LN391@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  00757	8b 8d dc fe ff
-	ff		 mov	 ecx, DWORD PTR _stRegisterCmdLine$141[ebp+20]
-
-; 3090 :         _My_data._Mysize = 0;
-
-  0075d	c7 85 c0 fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stCmdLine$140[ebp+16], 0
-
-; 3091 :         _My_data._Myres  = _Small_string_capacity;
-
-  00767	c7 85 c4 fe ff
-	ff 0f 00 00 00	 mov	 DWORD PTR _stCmdLine$140[ebp+20], 15 ; 0000000fH
-
-; 3092 :         // the _Traits::assign is last so the codegen doesn't think the char write can alias this
-; 3093 :         _Traits::assign(_My_data._Bx._Buf[0], _Elem());
-
-  00771	c6 85 b0 fe ff
-	ff 00		 mov	 BYTE PTR _stCmdLine$140[ebp], 0
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  00778	83 f9 0f	 cmp	 ecx, 15			; 0000000fH
-
-; 3083 :         if (_My_data._Large_mode_engaged()) {
-
-  0077b	0f 86 8a 02 00
-	00		 jbe	 $LN713@RunMainScr
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  00781	8b 95 c8 fe ff
-	ff		 mov	 edx, DWORD PTR _stRegisterCmdLine$141[ebp]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 852  :         _Al.deallocate(_Old_ptr, _Capacity + 1); // +1 for null terminator
-
-  00787	41		 inc	 ecx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  00788	8b c2		 mov	 eax, edx
-
-; 284  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  0078a	81 f9 00 10 00
-	00		 cmp	 ecx, 4096		; 00001000H
-  00790	72 14		 jb	 SHORT $LN431@RunMainScr
-
-; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
-
-  00792	8b 50 fc	 mov	 edx, DWORD PTR [eax-4]
-  00795	83 c1 23	 add	 ecx, 35			; 00000023H
-  00798	2b c2		 sub	 eax, edx
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  0079a	83 c0 fc	 add	 eax, -4			; fffffffcH
-  0079d	83 f8 1f	 cmp	 eax, 31			; 0000001fH
-  007a0	0f 87 02 03 00
-	00		 ja	 $LN537@RunMainScr
-$LN431@RunMainScr:
-
-; 289  :         ::operator delete(_Ptr, _Bytes);
-
-  007a6	51		 push	 ecx
-  007a7	52		 push	 edx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 446  :             _Result = _Unfancy(_Bx._Ptr);
-
-  007a8	e9 56 02 00 00	 jmp	 $LN914@RunMainScr
-$LN6@RunMainScr:
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 499  : 	}
-
-  007ad	c6 45 fc 01	 mov	 BYTE PTR __$EHRec$[ebp+8], 1
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 2090 :         if (_Myfirst) { // destroy and deallocate old array
-
-  007b1	8b b5 8c fe ff
-	ff		 mov	 esi, DWORD PTR _stVec$138[ebp]
-  007b7	85 f6		 test	 esi, esi
-  007b9	0f 84 90 00 00
-	00		 je	 $LN441@RunMainScr
-
-; 2091 :             _STD _Destroy_range(_Myfirst, _Mylast, _Al);
-
-  007bf	8b bd 90 fe ff
-	ff		 mov	 edi, DWORD PTR _stVec$138[ebp+4]
-  007c5	3b f7		 cmp	 esi, edi
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 1102 :         for (; _First != _Last; ++_First) {
-
-  007c7	74 1b		 je	 SHORT $LN446@RunMainScr
-  007c9	0f 1f 80 00 00
-	00 00		 npad	 7
-$LL447@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 1383 :         _Tidy_deallocate();
-
-  007d0	8b ce		 mov	 ecx, esi
-  007d2	e8 00 00 00 00	 call	 ?_Tidy_deallocate@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Tidy_deallocate
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 1102 :         for (; _First != _Last; ++_First) {
-
-  007d7	83 c6 18	 add	 esi, 24			; 00000018H
-  007da	3b f7		 cmp	 esi, edi
-  007dc	75 f2		 jne	 SHORT $LL447@RunMainScr
-  007de	8b b5 8c fe ff
-	ff		 mov	 esi, DWORD PTR _stVec$138[ebp]
-$LN446@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 2093 :             _Al.deallocate(_Myfirst, static_cast<size_type>(_Myend - _Myfirst));
-
-  007e4	8b 8d 94 fe ff
-	ff		 mov	 ecx, DWORD PTR _stVec$138[ebp+8]
-  007ea	b8 ab aa aa 2a	 mov	 eax, 715827883		; 2aaaaaabH
-  007ef	2b ce		 sub	 ecx, esi
-  007f1	f7 e9		 imul	 ecx
-  007f3	c1 fa 02	 sar	 edx, 2
-  007f6	8b c2		 mov	 eax, edx
-  007f8	c1 e8 1f	 shr	 eax, 31			; 0000001fH
-  007fb	03 c2		 add	 eax, edx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  007fd	8d 0c 40	 lea	 ecx, DWORD PTR [eax+eax*2]
-  00800	8b c6		 mov	 eax, esi
-  00802	c1 e1 03	 shl	 ecx, 3
-
-; 284  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  00805	81 f9 00 10 00
-	00		 cmp	 ecx, 4096		; 00001000H
-  0080b	72 14		 jb	 SHORT $LN475@RunMainScr
-
-; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
-
-  0080d	8b 70 fc	 mov	 esi, DWORD PTR [eax-4]
-  00810	83 c1 23	 add	 ecx, 35			; 00000023H
-  00813	2b c6		 sub	 eax, esi
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  00815	83 c0 fc	 add	 eax, -4			; fffffffcH
-  00818	83 f8 1f	 cmp	 eax, 31			; 0000001fH
-  0081b	0f 87 87 02 00
-	00		 ja	 $LN537@RunMainScr
-$LN475@RunMainScr:
-
-; 289  :         ::operator delete(_Ptr, _Bytes);
-
-  00821	51		 push	 ecx
-  00822	56		 push	 esi
-  00823	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
-  00828	8b bd 78 fe ff
-	ff		 mov	 edi, DWORD PTR _pyLauncher$GSCopy$1$[ebp]
-  0082e	83 c4 08	 add	 esp, 8
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 2095 :             _Myfirst = nullptr;
-
-  00831	c7 85 8c fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stVec$138[ebp], 0
-
-; 2096 :             _Mylast  = nullptr;
-
-  0083b	c7 85 90 fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stVec$138[ebp+4], 0
-
-; 2097 :             _Myend   = nullptr;
-
-  00845	c7 85 94 fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stVec$138[ebp+8], 0
-$LN441@RunMainScr:
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 499  : 	}
-
-  0084f	c6 45 fc 00	 mov	 BYTE PTR __$EHRec$[ebp+8], 0
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  00853	8b 8d c4 fe ff
-	ff		 mov	 ecx, DWORD PTR _stCmdLine$140[ebp+20]
-  00859	83 f9 0f	 cmp	 ecx, 15			; 0000000fH
-
-; 3083 :         if (_My_data._Large_mode_engaged()) {
-
-  0085c	76 2f		 jbe	 SHORT $LN498@RunMainScr
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  0085e	8b 95 b0 fe ff
-	ff		 mov	 edx, DWORD PTR _stCmdLine$140[ebp]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 852  :         _Al.deallocate(_Old_ptr, _Capacity + 1); // +1 for null terminator
-
-  00864	41		 inc	 ecx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  00865	8b c2		 mov	 eax, edx
-
-; 284  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  00867	81 f9 00 10 00
-	00		 cmp	 ecx, 4096		; 00001000H
-  0086d	72 14		 jb	 SHORT $LN506@RunMainScr
-
-; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
-
-  0086f	8b 50 fc	 mov	 edx, DWORD PTR [eax-4]
-  00872	83 c1 23	 add	 ecx, 35			; 00000023H
-  00875	2b c2		 sub	 eax, edx
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  00877	83 c0 fc	 add	 eax, -4			; fffffffcH
-  0087a	83 f8 1f	 cmp	 eax, 31			; 0000001fH
-  0087d	0f 87 25 02 00
-	00		 ja	 $LN537@RunMainScr
-$LN506@RunMainScr:
-
-; 289  :         ::operator delete(_Ptr, _Bytes);
-
-  00883	51		 push	 ecx
-  00884	52		 push	 edx
-  00885	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
-  0088a	83 c4 08	 add	 esp, 8
-$LN498@RunMainScr:
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 499  : 	}
-
-  0088d	c7 45 fc ff ff
-	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  00894	8b 8d dc fe ff
-	ff		 mov	 ecx, DWORD PTR _stRegisterCmdLine$141[ebp+20]
-
-; 3090 :         _My_data._Mysize = 0;
-
-  0089a	c7 85 c0 fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stCmdLine$140[ebp+16], 0
-
-; 3091 :         _My_data._Myres  = _Small_string_capacity;
-
-  008a4	c7 85 c4 fe ff
-	ff 0f 00 00 00	 mov	 DWORD PTR _stCmdLine$140[ebp+20], 15 ; 0000000fH
-
-; 3092 :         // the _Traits::assign is last so the codegen doesn't think the char write can alias this
-; 3093 :         _Traits::assign(_My_data._Bx._Buf[0], _Elem());
-
-  008ae	c6 85 b0 fe ff
-	ff 00		 mov	 BYTE PTR _stCmdLine$140[ebp], 0
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  008b5	83 f9 0f	 cmp	 ecx, 15			; 0000000fH
-
-; 3083 :         if (_My_data._Large_mode_engaged()) {
-
-  008b8	76 2f		 jbe	 SHORT $LN530@RunMainScr
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  008ba	8b 95 c8 fe ff
-	ff		 mov	 edx, DWORD PTR _stRegisterCmdLine$141[ebp]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 852  :         _Al.deallocate(_Old_ptr, _Capacity + 1); // +1 for null terminator
-
-  008c0	41		 inc	 ecx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  008c1	8b c2		 mov	 eax, edx
-
-; 284  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  008c3	81 f9 00 10 00
-	00		 cmp	 ecx, 4096		; 00001000H
-  008c9	72 14		 jb	 SHORT $LN538@RunMainScr
-
-; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
-
-  008cb	8b 50 fc	 mov	 edx, DWORD PTR [eax-4]
-  008ce	83 c1 23	 add	 ecx, 35			; 00000023H
-  008d1	2b c2		 sub	 eax, edx
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  008d3	83 c0 fc	 add	 eax, -4			; fffffffcH
-  008d6	83 f8 1f	 cmp	 eax, 31			; 0000001fH
-  008d9	0f 87 c9 01 00
-	00		 ja	 $LN537@RunMainScr
-$LN538@RunMainScr:
-
-; 289  :         ::operator delete(_Ptr, _Bytes);
-
-  008df	51		 push	 ecx
-  008e0	52		 push	 edx
-  008e1	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
-  008e6	83 c4 08	 add	 esp, 8
-$LN530@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 400  :     _CONSTEXPR20 _Vector_val() noexcept : _Myfirst(), _Mylast(), _Myend() {}
-
-  008e9	c7 85 8c fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stVec$139[ebp], 0
-  008f3	c7 85 90 fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stVec$139[ebp+4], 0
-  008fd	c7 85 94 fe ff
-	ff 00 00 00 00	 mov	 DWORD PTR _stVec$139[ebp+8], 0
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 502  : 		SplitLine(lpCmdLine," " ,&stVec);
-
-  00907	8b 95 7c fe ff
-	ff		 mov	 edx, DWORD PTR _lpCmdLine$GSCopy$1$[ebp]
-  0090d	8d 85 8c fe ff
-	ff		 lea	 eax, DWORD PTR _stVec$139[ebp]
-  00913	50		 push	 eax
-  00914	68 00 00 00 00	 push	 OFFSET ??_C@_01CLKCMJKC@?5@
-  00919	52		 push	 edx
-  0091a	c7 45 fc 05 00
-	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 5
-  00921	e8 00 00 00 00	 call	 ?SplitLine@@YA_NPBD0PAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@@Z ; SplitLine
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 1915 :         return static_cast<size_type>(_My_data._Mylast - _My_data._Myfirst);
-
-  00926	8b 8d 90 fe ff
-	ff		 mov	 ecx, DWORD PTR _stVec$139[ebp+4]
-  0092c	b8 ab aa aa 2a	 mov	 eax, 715827883		; 2aaaaaabH
-  00931	8b b5 8c fe ff
-	ff		 mov	 esi, DWORD PTR _stVec$139[ebp]
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 502  : 		SplitLine(lpCmdLine," " ,&stVec);
-
-  00937	83 c4 0c	 add	 esp, 12			; 0000000cH
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 1915 :         return static_cast<size_type>(_My_data._Mylast - _My_data._Myfirst);
-
-  0093a	2b ce		 sub	 ecx, esi
-  0093c	f7 e9		 imul	 ecx
-  0093e	c1 fa 02	 sar	 edx, 2
-  00941	8b c2		 mov	 eax, edx
-  00943	c1 e8 1f	 shr	 eax, 31			; 0000001fH
-  00946	03 c2		 add	 eax, edx
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 504  : 		if (stVec.size() != 0 && "--pause-before-create-window" == stVec[0])
-
-  00948	74 2d		 je	 SHORT $LN7@RunMainScr
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  0094a	83 7e 14 0f	 cmp	 DWORD PTR [esi+20], 15	; 0000000fH
-
-; 2854 :         return _Traits_equal<_Traits>(_Mypair._Myval2._Myptr(), _Mypair._Myval2._Mysize, _Ptr, _Traits::length(_Ptr));
-
-  0094e	8b 46 10	 mov	 eax, DWORD PTR [esi+16]
-
-; 445  :         if (_Large_mode_engaged()) {
-
-  00951	76 02		 jbe	 SHORT $LN677@RunMainScr
-
-; 446  :             _Result = _Unfancy(_Bx._Ptr);
-
-  00953	8b 36		 mov	 esi, DWORD PTR [esi]
-$LN677@RunMainScr:
-
-; 2854 :         return _Traits_equal<_Traits>(_Mypair._Myval2._Myptr(), _Mypair._Myval2._Mysize, _Ptr, _Traits::length(_Ptr));
-
-  00955	6a 1c		 push	 28			; 0000001cH
-  00957	68 00 00 00 00	 push	 OFFSET ??_C@_0BN@KIGJPBEF@?9?9pause?9before?9create?9window@
-  0095c	50		 push	 eax
-  0095d	56		 push	 esi
-  0095e	e8 00 00 00 00	 call	 ??$_Traits_equal@U?$char_traits@D@std@@@std@@YA_NQBDI0I@Z ; std::_Traits_equal<std::char_traits<char> >
-  00963	83 c4 10	 add	 esp, 16			; 00000010H
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 504  : 		if (stVec.size() != 0 && "--pause-before-create-window" == stVec[0])
-
-  00966	84 c0		 test	 al, al
-  00968	74 0d		 je	 SHORT $LN7@RunMainScr
-
-; 505  : 		{
-; 506  : 			system("pause");
-
-  0096a	68 00 00 00 00	 push	 OFFSET ??_C@_05PDJBBECF@pause@
-  0096f	e8 00 00 00 00	 call	 _system
-  00974	83 c4 04	 add	 esp, 4
-$LN7@RunMainScr:
-
-; 507  : 		}
-; 508  : 		if (!pyLauncher.RunFile("system.py"))
-
-  00977	68 00 00 00 00	 push	 OFFSET ??_C@_09LEIJOBCA@system?4py@
-  0097c	8b cf		 mov	 ecx, edi
-  0097e	e8 00 00 00 00	 call	 ?RunFile@CPythonLauncher@@QAE_NPBD@Z ; CPythonLauncher::RunFile
-  00983	84 c0		 test	 al, al
-  00985	0f 85 a0 00 00
-	00		 jne	 $LN8@RunMainScr
-
-; 510  : 			TraceError("RunMain Error");
-
-  0098b	68 00 00 00 00	 push	 OFFSET ??_C@_0O@BEEPKJML@RunMain?5Error@
-  00990	e8 00 00 00 00	 call	 ?TraceError@@YAXPBDZZ	; TraceError
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 2090 :         if (_Myfirst) { // destroy and deallocate old array
-
-  00995	8b b5 8c fe ff
-	ff		 mov	 esi, DWORD PTR _stVec$139[ebp]
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 510  : 			TraceError("RunMain Error");
-
-  0099b	83 c4 04	 add	 esp, 4
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 2090 :         if (_Myfirst) { // destroy and deallocate old array
-
-  0099e	85 f6		 test	 esi, esi
-  009a0	74 69		 je	 SHORT $LN713@RunMainScr
-
-; 2091 :             _STD _Destroy_range(_Myfirst, _Mylast, _Al);
-
-  009a2	8b bd 90 fe ff
-	ff		 mov	 edi, DWORD PTR _stVec$139[ebp+4]
-  009a8	3b f7		 cmp	 esi, edi
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 1102 :         for (; _First != _Last; ++_First) {
-
-  009aa	74 18		 je	 SHORT $LN692@RunMainScr
-  009ac	0f 1f 40 00	 npad	 4
-$LL693@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 1383 :         _Tidy_deallocate();
-
-  009b0	8b ce		 mov	 ecx, esi
-  009b2	e8 00 00 00 00	 call	 ?_Tidy_deallocate@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Tidy_deallocate
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 1102 :         for (; _First != _Last; ++_First) {
-
-  009b7	83 c6 18	 add	 esi, 24			; 00000018H
-  009ba	3b f7		 cmp	 esi, edi
-  009bc	75 f2		 jne	 SHORT $LL693@RunMainScr
-  009be	8b b5 8c fe ff
-	ff		 mov	 esi, DWORD PTR _stVec$139[ebp]
-$LN692@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 2093 :             _Al.deallocate(_Myfirst, static_cast<size_type>(_Myend - _Myfirst));
-
-  009c4	8b 8d 94 fe ff
-	ff		 mov	 ecx, DWORD PTR _stVec$139[ebp+8]
-  009ca	b8 ab aa aa 2a	 mov	 eax, 715827883		; 2aaaaaabH
-  009cf	2b ce		 sub	 ecx, esi
-  009d1	f7 e9		 imul	 ecx
-  009d3	c1 fa 02	 sar	 edx, 2
-  009d6	8b c2		 mov	 eax, edx
-  009d8	c1 e8 1f	 shr	 eax, 31			; 0000001fH
-  009db	03 c2		 add	 eax, edx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  009dd	8d 0c 40	 lea	 ecx, DWORD PTR [eax+eax*2]
-  009e0	8b c6		 mov	 eax, esi
-  009e2	c1 e1 03	 shl	 ecx, 3
-
-; 284  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  009e5	81 f9 00 10 00
-	00		 cmp	 ecx, 4096		; 00001000H
-  009eb	72 14		 jb	 SHORT $LN721@RunMainScr
-
-; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
-
-  009ed	8b 70 fc	 mov	 esi, DWORD PTR [eax-4]
-  009f0	83 c1 23	 add	 ecx, 35			; 00000023H
-  009f3	2b c6		 sub	 eax, esi
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  009f5	83 c0 fc	 add	 eax, -4			; fffffffcH
-  009f8	83 f8 1f	 cmp	 eax, 31			; 0000001fH
-  009fb	0f 87 b6 00 00
-	00		 ja	 $LN617@RunMainScr
-$LN721@RunMainScr:
-
-; 289  :         ::operator delete(_Ptr, _Bytes);
-
-  00a01	51		 push	 ecx
-  00a02	56		 push	 esi
-$LN914@RunMainScr:
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 511  : 			return false;
-
-  00a03	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
-  00a08	83 c4 08	 add	 esp, 8
-$LN713@RunMainScr:
-  00a0b	32 c0		 xor	 al, al
-$LN1@RunMainScr:
-
-; 517  : }
-
-  00a0d	8b 4d f4	 mov	 ecx, DWORD PTR __$EHRec$[ebp]
-  00a10	64 89 0d 00 00
-	00 00		 mov	 DWORD PTR fs:0, ecx
-  00a17	59		 pop	 ecx
-  00a18	5f		 pop	 edi
-  00a19	5e		 pop	 esi
-  00a1a	8b 4d ec	 mov	 ecx, DWORD PTR __$ArrayPad$[ebp]
-  00a1d	33 cd		 xor	 ecx, ebp
-  00a1f	e8 00 00 00 00	 call	 @__security_check_cookie@4
-  00a24	8b e5		 mov	 esp, ebp
-  00a26	5d		 pop	 ebp
-  00a27	8b e3		 mov	 esp, ebx
-  00a29	5b		 pop	 ebx
-  00a2a	c3		 ret	 0
-$LN8@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 2090 :         if (_Myfirst) { // destroy and deallocate old array
-
-  00a2b	8b b5 8c fe ff
-	ff		 mov	 esi, DWORD PTR _stVec$139[ebp]
-  00a31	85 f6		 test	 esi, esi
-  00a33	74 62		 je	 SHORT $LN610@RunMainScr
-
-; 2091 :             _STD _Destroy_range(_Myfirst, _Mylast, _Al);
-
-  00a35	8b bd 90 fe ff
-	ff		 mov	 edi, DWORD PTR _stVec$139[ebp+4]
-  00a3b	3b f7		 cmp	 esi, edi
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 1102 :         for (; _First != _Last; ++_First) {
-
-  00a3d	74 15		 je	 SHORT $LN589@RunMainScr
-  00a3f	90		 npad	 1
-$LL590@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 1383 :         _Tidy_deallocate();
-
-  00a40	8b ce		 mov	 ecx, esi
-  00a42	e8 00 00 00 00	 call	 ?_Tidy_deallocate@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Tidy_deallocate
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 1102 :         for (; _First != _Last; ++_First) {
-
-  00a47	83 c6 18	 add	 esi, 24			; 00000018H
-  00a4a	3b f7		 cmp	 esi, edi
-  00a4c	75 f2		 jne	 SHORT $LL590@RunMainScr
-  00a4e	8b b5 8c fe ff
-	ff		 mov	 esi, DWORD PTR _stVec$139[ebp]
-$LN589@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector
-
-; 2093 :             _Al.deallocate(_Myfirst, static_cast<size_type>(_Myend - _Myfirst));
-
-  00a54	8b 8d 94 fe ff
-	ff		 mov	 ecx, DWORD PTR _stVec$139[ebp+8]
-  00a5a	b8 ab aa aa 2a	 mov	 eax, 715827883		; 2aaaaaabH
-  00a5f	2b ce		 sub	 ecx, esi
-  00a61	f7 e9		 imul	 ecx
-  00a63	c1 fa 02	 sar	 edx, 2
-  00a66	8b c2		 mov	 eax, edx
-  00a68	c1 e8 1f	 shr	 eax, 31			; 0000001fH
-  00a6b	03 c2		 add	 eax, edx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  00a6d	8d 0c 40	 lea	 ecx, DWORD PTR [eax+eax*2]
-  00a70	8b c6		 mov	 eax, esi
-  00a72	c1 e1 03	 shl	 ecx, 3
-
-; 284  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  00a75	81 f9 00 10 00
-	00		 cmp	 ecx, 4096		; 00001000H
-  00a7b	72 10		 jb	 SHORT $LN618@RunMainScr
-
-; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
-
-  00a7d	8b 70 fc	 mov	 esi, DWORD PTR [eax-4]
-  00a80	83 c1 23	 add	 ecx, 35			; 00000023H
-  00a83	2b c6		 sub	 eax, esi
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  00a85	83 c0 fc	 add	 eax, -4			; fffffffcH
-  00a88	83 f8 1f	 cmp	 eax, 31			; 0000001fH
-  00a8b	77 2a		 ja	 SHORT $LN617@RunMainScr
-$LN618@RunMainScr:
-
-; 289  :         ::operator delete(_Ptr, _Bytes);
-
-  00a8d	51		 push	 ecx
-  00a8e	56		 push	 esi
-  00a8f	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
-  00a94	83 c4 08	 add	 esp, 8
-$LN610@RunMainScr:
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 515  : 	NANOEND
-
-  00a97	eb		 DB	 -21			; ffffffebH
-  00a98	03		 DB	 3
-  00a99	d6		 DB	 -42			; ffffffd6H
-  00a9a	d7		 DB	 -41			; ffffffd7H
-  00a9b	00		 DB	 0
-  00a9c	b0 01		 mov	 al, 1
-  00a9e	e9 6a ff ff ff	 jmp	 $LN1@RunMainScr
-$LN901@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 3030 :             _Xlen_string(); // result too long
-
-  00aa3	e8 00 00 00 00	 call	 ?_Xlen_string@std@@YAXXZ ; std::_Xlen_string
-$LN537@RunMainScr:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  00aa8	6a 00		 push	 0
-  00aaa	6a 00		 push	 0
-  00aac	6a 00		 push	 0
-  00aae	6a 00		 push	 0
-  00ab0	6a 00		 push	 0
-  00ab2	e8 00 00 00 00	 call	 __invoke_watson
-$LN617@RunMainScr:
-  00ab7	6a 00		 push	 0
-  00ab9	6a 00		 push	 0
-  00abb	6a 00		 push	 0
-  00abd	6a 00		 push	 0
-  00abf	6a 00		 push	 0
-  00ac1	e8 00 00 00 00	 call	 __invoke_watson
-$LN907@RunMainScr:
-  00ac6	cc		 int	 3
-_TEXT	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-__unwindfunclet$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z$0:
-  00000	8d 8d c8 fe ff
-	ff		 lea	 ecx, DWORD PTR _stRegisterCmdLine$141[ebp]
-  00006	e9 00 00 00 00	 jmp	 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-__unwindfunclet$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z$1:
-  0000b	8d 8d b0 fe ff
-	ff		 lea	 ecx, DWORD PTR _stCmdLine$140[ebp]
-  00011	e9 00 00 00 00	 jmp	 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-__unwindfunclet$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z$2:
-  00016	8d 8d 8c fe ff
-	ff		 lea	 ecx, DWORD PTR _stVec$138[ebp]
-  0001c	e9 00 00 00 00	 jmp	 ??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QAE@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
-__unwindfunclet$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z$3:
-  00021	8d 8d 98 fe ff
-	ff		 lea	 ecx, DWORD PTR $T26[ebp]
-  00027	e9 00 00 00 00	 jmp	 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-__unwindfunclet$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z$4:
-  0002c	8d 8d 98 fe ff
-	ff		 lea	 ecx, DWORD PTR $T40[ebp]
-  00032	e9 00 00 00 00	 jmp	 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-__unwindfunclet$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z$5:
-  00037	8d 8d 8c fe ff
-	ff		 lea	 ecx, DWORD PTR _stVec$139[ebp]
-  0003d	e9 00 00 00 00	 jmp	 ??1?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@QAE@XZ ; std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >::~vector<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,std::allocator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > >
-  00042	cc		 int	 3
-  00043	cc		 int	 3
-  00044	cc		 int	 3
-  00045	cc		 int	 3
-  00046	cc		 int	 3
-__ehhandler$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z:
-  00047	90		 npad	 1
-  00048	90		 npad	 1
-  00049	8b 54 24 08	 mov	 edx, DWORD PTR [esp+8]
-  0004d	8d 42 0c	 lea	 eax, DWORD PTR [edx+12]
-  00050	8b 8a 74 fe ff
-	ff		 mov	 ecx, DWORD PTR [edx-396]
-  00056	33 c8		 xor	 ecx, eax
-  00058	e8 00 00 00 00	 call	 @__security_check_cookie@4
-  0005d	8b 4a f8	 mov	 ecx, DWORD PTR [edx-8]
-  00060	33 c8		 xor	 ecx, eax
-  00062	e8 00 00 00 00	 call	 @__security_check_cookie@4
-  00067	b8 00 00 00 00	 mov	 eax, OFFSET __ehfuncinfo$?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z
-  0006c	e9 00 00 00 00	 jmp	 ___CxxFrameHandler3
-text$x	ENDS
-?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z ENDP	; RunMainScript
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\time.h
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-;	COMDAT ?Main@@YA_NPAUHINSTANCE__@@PAD@Z
-_TEXT	SEGMENT
-$T22 = -92						; size = 4
-_hInstance$GSCopy$1$ = -88				; size = 4
-_ret$1$ = -81						; size = 1
-_pyExceptionSender$26 = -80				; size = 36
-$T2 = -44						; size = 24
-_pyLauncher$27 = -32					; size = 12
-__$ArrayPad$ = -20					; size = 4
-__$EHRec$ = -12						; size = 12
-?Main@@YA_NPAUHINSTANCE__@@PAD@Z PROC			; Main, COMDAT
-; _hInstance$ = ecx
-; _lpCmdLine$ = edx
-
-; 520  : {
-
-  00000	53		 push	 ebx
-  00001	8b dc		 mov	 ebx, esp
-  00003	83 ec 08	 sub	 esp, 8
-  00006	83 e4 f8	 and	 esp, -8			; fffffff8H
-  00009	83 c4 04	 add	 esp, 4
-  0000c	55		 push	 ebp
-  0000d	8b 6b 04	 mov	 ebp, DWORD PTR [ebx+4]
-  00010	89 6c 24 04	 mov	 DWORD PTR [esp+4], ebp
-  00014	8b ec		 mov	 ebp, esp
-  00016	6a ff		 push	 -1
-  00018	68 00 00 00 00	 push	 __ehhandler$?Main@@YA_NPAUHINSTANCE__@@PAD@Z
-  0001d	64 a1 00 00 00
-	00		 mov	 eax, DWORD PTR fs:0
-  00023	50		 push	 eax
-  00024	53		 push	 ebx
-  00025	83 ec 50	 sub	 esp, 80			; 00000050H
-  00028	a1 00 00 00 00	 mov	 eax, DWORD PTR ___security_cookie
-  0002d	33 c5		 xor	 eax, ebp
-  0002f	89 45 ec	 mov	 DWORD PTR __$ArrayPad$[ebp], eax
-  00032	56		 push	 esi
-  00033	57		 push	 edi
-  00034	50		 push	 eax
-  00035	8d 45 f4	 lea	 eax, DWORD PTR __$EHRec$[ebp]
-  00038	64 a3 00 00 00
-	00		 mov	 DWORD PTR fs:0, eax
-  0003e	8b fa		 mov	 edi, edx
-  00040	89 4d a8	 mov	 DWORD PTR _hInstance$GSCopy$1$[ebp], ecx
-; File C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\time.h
-
-; 428  :             return _time32(_Time);
-
-  00043	6a 00		 push	 0
-  00045	e8 00 00 00 00	 call	 __time32
-  0004a	83 c4 04	 add	 esp, 4
-  0004d	8b f0		 mov	 esi, eax
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 521  : 	DWORD dwRandSeed = time(nullptr)+DWORD(GetCurrentProcess());
-
-  0004f	ff 15 00 00 00
-	00		 call	 DWORD PTR __imp__GetCurrentProcess@0
-  00055	03 c6		 add	 eax, esi
-
-; 522  : 	srandom(dwRandSeed);
-
-  00057	50		 push	 eax
-  00058	e8 00 00 00 00	 call	 ?srandom@@YAXK@Z	; srandom
-  0005d	83 c4 04	 add	 esp, 4
-
-; 523  : 	srand(random());
-
-  00060	e8 00 00 00 00	 call	 ?random@@YAKXZ		; random
-  00065	50		 push	 eax
-  00066	e8 00 00 00 00	 call	 _srand
-  0006b	83 c4 04	 add	 esp, 4
-
-; 524  : 	SetLogLevel(1);
-
-  0006e	6a 01		 push	 1
-  00070	e8 00 00 00 00	 call	 ?SetLogLevel@@YAXI@Z	; SetLogLevel
-  00075	83 c4 04	 add	 esp, 4
-
-; 525  : 
-; 526  : 	ilInit();
-
-  00078	ff 15 00 00 00
-	00		 call	 DWORD PTR __imp__ilInit@0
-
-; 527  : 
-; 528  : 	if (!Setup(lpCmdLine))
-
-  0007e	e8 00 00 00 00	 call	 ?Setup@@YAHPAD@Z	; Setup
-  00083	85 c0		 test	 eax, eax
-  00085	0f 84 eb 01 00
-	00		 je	 $LN142@Main
-
-; 529  : 		return false;
-; 530  : 
-; 531  : #ifdef _DEBUG
-; 532  : 	OpenConsoleWindow();
-; 533  : 	OpenLogFile(true);
-; 534  : #else
-; 535  : 	OpenLogFile(false);
-
-  0008b	6a 00		 push	 0
-  0008d	e8 00 00 00 00	 call	 ?OpenLogFile@@YAX_N@Z	; OpenLogFile
-
-; 536  : #endif
-; 537  : 
-; 538  : 	static CLZO lzo;
-
-  00092	64 a1 00 00 00
-	00		 mov	 eax, DWORD PTR fs:__tls_array
-  00098	83 c4 04	 add	 esp, 4
-  0009b	8b 08		 mov	 ecx, DWORD PTR [eax]
-  0009d	a1 00 00 00 00	 mov	 eax, DWORD PTR ?$TSS0@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  000a2	3b 81 00 00 00
-	00		 cmp	 eax, DWORD PTR __Init_thread_epoch[ecx]
-  000a8	7e 41		 jle	 SHORT $LN137@Main
-  000aa	68 00 00 00 00	 push	 OFFSET ?$TSS0@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  000af	e8 00 00 00 00	 call	 __Init_thread_header
-  000b4	83 c4 04	 add	 esp, 4
-  000b7	83 3d 00 00 00
-	00 ff		 cmp	 DWORD PTR ?$TSS0@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA, -1
-  000be	75 2b		 jne	 SHORT $LN137@Main
-  000c0	b9 00 00 00 00	 mov	 ecx, OFFSET ?lzo@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4VCLZO@@A
-  000c5	c7 45 fc 00 00
-	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 0
-  000cc	e8 00 00 00 00	 call	 ??0CLZO@@QAE@XZ		; CLZO::CLZO
-  000d1	68 00 00 00 00	 push	 OFFSET ??__Flzo@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@YAXXZ ; `Main'::`2'::`dynamic atexit destructor for 'lzo''
-  000d6	e8 00 00 00 00	 call	 _atexit
-  000db	83 c4 04	 add	 esp, 4
-  000de	68 00 00 00 00	 push	 OFFSET ?$TSS0@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  000e3	e8 00 00 00 00	 call	 __Init_thread_footer
-  000e8	83 c4 04	 add	 esp, 4
-$LN137@Main:
-
-; 539  : 	static CEterPackManager EterPackManager;
-
-  000eb	64 a1 00 00 00
-	00		 mov	 eax, DWORD PTR fs:__tls_array
-  000f1	8b 08		 mov	 ecx, DWORD PTR [eax]
-  000f3	a1 00 00 00 00	 mov	 eax, DWORD PTR ?$TSS1@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  000f8	3b 81 00 00 00
-	00		 cmp	 eax, DWORD PTR __Init_thread_epoch[ecx]
-  000fe	7e 41		 jle	 SHORT $LN138@Main
-  00100	68 00 00 00 00	 push	 OFFSET ?$TSS1@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  00105	e8 00 00 00 00	 call	 __Init_thread_header
-  0010a	83 c4 04	 add	 esp, 4
-  0010d	83 3d 00 00 00
-	00 ff		 cmp	 DWORD PTR ?$TSS1@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA, -1
-  00114	75 2b		 jne	 SHORT $LN138@Main
-  00116	b9 00 00 00 00	 mov	 ecx, OFFSET ?EterPackManager@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4VCEterPackManager@@A
-  0011b	c7 45 fc 01 00
-	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 1
-  00122	e8 00 00 00 00	 call	 ??0CEterPackManager@@QAE@XZ ; CEterPackManager::CEterPackManager
-  00127	68 00 00 00 00	 push	 OFFSET ??__FEterPackManager@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@YAXXZ ; `Main'::`2'::`dynamic atexit destructor for 'EterPackManager''
-  0012c	e8 00 00 00 00	 call	 _atexit
-  00131	83 c4 04	 add	 esp, 4
-  00134	68 00 00 00 00	 push	 OFFSET ?$TSS1@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  00139	e8 00 00 00 00	 call	 __Init_thread_footer
-  0013e	83 c4 04	 add	 esp, 4
-$LN138@Main:
-
-; 540  : #ifdef ENABLE_CLIENT_PERFORMANCE
-; 541  : 	static CPythonPlayerSettingsModule PlayerSettings;
-
-  00141	64 a1 00 00 00
-	00		 mov	 eax, DWORD PTR fs:__tls_array
-  00147	8b 08		 mov	 ecx, DWORD PTR [eax]
-  00149	a1 00 00 00 00	 mov	 eax, DWORD PTR ?$TSS2@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  0014e	3b 81 00 00 00
-	00		 cmp	 eax, DWORD PTR __Init_thread_epoch[ecx]
-  00154	7e 3c		 jle	 SHORT $LN139@Main
-  00156	68 00 00 00 00	 push	 OFFSET ?$TSS2@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  0015b	e8 00 00 00 00	 call	 __Init_thread_header
-  00160	83 c4 04	 add	 esp, 4
-  00163	83 3d 00 00 00
-	00 ff		 cmp	 DWORD PTR ?$TSS2@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA, -1
-  0016a	75 26		 jne	 SHORT $LN139@Main
-  0016c	c7 45 fc 02 00
-	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 2
-  00173	e8 00 00 00 00	 call	 ??0CPythonPlayerSettingsModule@@QAE@XZ ; CPythonPlayerSettingsModule::CPythonPlayerSettingsModule
-  00178	68 00 00 00 00	 push	 OFFSET ??__FPlayerSettings@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@YAXXZ ; `Main'::`2'::`dynamic atexit destructor for 'PlayerSettings''
-  0017d	e8 00 00 00 00	 call	 _atexit
-  00182	83 c4 04	 add	 esp, 4
-  00185	68 00 00 00 00	 push	 OFFSET ?$TSS2@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  0018a	e8 00 00 00 00	 call	 __Init_thread_footer
-  0018f	83 c4 04	 add	 esp, 4
-$LN139@Main:
-
-; 542  : #endif
-; 543  : 
-; 544  : #ifdef ENABLE_CONFIG_MODULE
-; 545  : 	static CPythonConfig m_pyConfig;
-
-  00192	64 a1 00 00 00
-	00		 mov	 eax, DWORD PTR fs:__tls_array
-  00198	8b 08		 mov	 ecx, DWORD PTR [eax]
-  0019a	a1 00 00 00 00	 mov	 eax, DWORD PTR ?$TSS3@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  0019f	3b 81 00 00 00
-	00		 cmp	 eax, DWORD PTR __Init_thread_epoch[ecx]
-  001a5	7e 35		 jle	 SHORT $LN5@Main
-  001a7	68 00 00 00 00	 push	 OFFSET ?$TSS3@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  001ac	e8 00 00 00 00	 call	 __Init_thread_header
-  001b1	83 c4 04	 add	 esp, 4
-  001b4	83 3d 00 00 00
-	00 ff		 cmp	 DWORD PTR ?$TSS3@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA, -1
-  001bb	75 1f		 jne	 SHORT $LN5@Main
-  001bd	e8 00 00 00 00	 call	 ??0CPythonConfig@@QAE@XZ ; CPythonConfig::CPythonConfig
-  001c2	68 00 00 00 00	 push	 OFFSET ??__Fm_pyConfig@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@YAXXZ ; `Main'::`2'::`dynamic atexit destructor for 'm_pyConfig''
-  001c7	e8 00 00 00 00	 call	 _atexit
-  001cc	83 c4 04	 add	 esp, 4
-  001cf	68 00 00 00 00	 push	 OFFSET ?$TSS3@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  001d4	e8 00 00 00 00	 call	 __Init_thread_footer
-  001d9	83 c4 04	 add	 esp, 4
-$LN5@Main:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
-
-  001dc	66 a1 08 00 00
-	00		 mov	 ax, WORD PTR ??_C@_0L@MFNMKHHD@config?4cfg@+8
-  001e2	0f 57 c0	 xorps	 xmm0, xmm0
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 493  :         _CONSTEXPR20 _Bxty() noexcept : _Buf() {} // user-provided, for fancy pointers
-
-  001e5	0f 11 45 d4	 movups	 XMMWORD PTR $T2[ebp], xmm0
-
-; 890  :             _My_data._Mysize = _Count;
-
-  001e9	c7 45 e4 0a 00
-	00 00		 mov	 DWORD PTR $T2[ebp+16], 10 ; 0000000aH
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
-
-  001f0	f3 0f 7e 05 00
-	00 00 00	 movq	 xmm0, QWORD PTR ??_C@_0L@MFNMKHHD@config?4cfg@
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 891  :             _My_data._Myres  = _Small_string_capacity;
-
-  001f8	c7 45 e8 0f 00
-	00 00		 mov	 DWORD PTR $T2[ebp+20], 15 ; 0000000fH
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp
-
-; 121  :         _CSTD memcpy(_First1, _First2, _Count * sizeof(_Elem));
-
-  001ff	66 0f d6 45 d4	 movq	 QWORD PTR $T2[ebp], xmm0
-  00204	66 89 45 dc	 mov	 WORD PTR $T2[ebp+8], ax
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 898  :                 _Traits::assign(_My_data._Bx._Buf[_Count], _Elem());
-
-  00208	c6 45 de 00	 mov	 BYTE PTR $T2[ebp+10], 0
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 546  : 	m_pyConfig.Initialize("config.cfg");
-
-  0020c	8d 45 d4	 lea	 eax, DWORD PTR $T2[ebp]
-  0020f	c7 45 fc 03 00
-	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 3
-  00216	50		 push	 eax
-  00217	b9 00 00 00 00	 mov	 ecx, OFFSET ?m_pyConfig@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4VCPythonConfig@@A
-  0021c	e8 00 00 00 00	 call	 ?Initialize@CPythonConfig@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z ; CPythonConfig::Initialize
-  00221	c7 45 fc ff ff
-	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 453  :         return _Myres > _Small_string_capacity;
-
-  00228	8b 4d e8	 mov	 ecx, DWORD PTR $T2[ebp+20]
-  0022b	83 f9 0f	 cmp	 ecx, 15			; 0000000fH
-
-; 3083 :         if (_My_data._Large_mode_engaged()) {
-
-  0022e	76 2c		 jbe	 SHORT $LN110@Main
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  00230	8b 55 d4	 mov	 edx, DWORD PTR $T2[ebp]
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-
-; 852  :         _Al.deallocate(_Old_ptr, _Capacity + 1); // +1 for null terminator
-
-  00233	41		 inc	 ecx
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 985  :         _STD _Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
-
-  00234	8b c2		 mov	 eax, edx
-
-; 284  :         if (_Bytes >= _Big_allocation_threshold) {
-
-  00236	81 f9 00 10 00
-	00		 cmp	 ecx, 4096		; 00001000H
-  0023c	72 14		 jb	 SHORT $LN118@Main
-
-; 205  :     const uintptr_t _Ptr_container   = _Ptr_user[-1];
-
-  0023e	8b 50 fc	 mov	 edx, DWORD PTR [eax-4]
-  00241	83 c1 23	 add	 ecx, 35			; 00000023H
-  00244	2b c2		 sub	 eax, edx
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  00246	83 c0 fc	 add	 eax, -4			; fffffffcH
-  00249	83 f8 1f	 cmp	 eax, 31			; 0000001fH
-  0024c	0f 87 07 01 00
-	00		 ja	 $LN144@Main
-$LN118@Main:
-
-; 289  :         ::operator delete(_Ptr, _Bytes);
-
-  00252	51		 push	 ecx
-  00253	52		 push	 edx
-  00254	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
-  00259	83 c4 08	 add	 esp, 8
-$LN110@Main:
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-
-; 549  : 	if (!PackInitialize("pack"))
-
-  0025c	e8 00 00 00 00	 call	 ?PackInitialize@@YA_NPBD@Z ; PackInitialize
-  00261	84 c0		 test	 al, al
-  00263	75 18		 jne	 SHORT $LN7@Main
-
-; 550  : 	{
-; 551  : 		LogBox("Pack Initialization failed. Check log.txt file..");
-
-  00265	6a 00		 push	 0
-  00267	6a 00		 push	 0
-  00269	68 00 00 00 00	 push	 OFFSET ??_C@_0DB@BGMLOPGB@Pack?5Initialization?5failed?4?5Che@
-  0026e	e8 00 00 00 00	 call	 ?LogBox@@YAXPBD0PAUHWND__@@@Z ; LogBox
-  00273	83 c4 0c	 add	 esp, 12			; 0000000cH
-$LN142@Main:
-
-; 580  : }
-
-  00276	32 c0		 xor	 al, al
-  00278	e9 be 00 00 00	 jmp	 $LN1@Main
-$LN7@Main:
-
-; 552  : 		return false;
-; 553  : 	}
-; 554  : 
-; 555  : 	CPythonApplication* app = new CPythonApplication;
-
-  0027d	68 10 d8 03 00	 push	 251920			; 0003d810H
-  00282	e8 00 00 00 00	 call	 ??2@YAPAXI@Z		; operator new
-  00287	83 c4 04	 add	 esp, 4
-  0028a	89 45 a4	 mov	 DWORD PTR $T22[ebp], eax
-  0028d	8b c8		 mov	 ecx, eax
-  0028f	c7 45 fc 04 00
-	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 4
-  00296	e8 00 00 00 00	 call	 ??0CPythonApplication@@QAE@XZ ; CPythonApplication::CPythonApplication
-
-; 556  : 
-; 557  : 	app->Initialize(hInstance);
-
-  0029b	ff 75 a8	 push	 DWORD PTR _hInstance$GSCopy$1$[ebp]
-  0029e	8b f0		 mov	 esi, eax
-  002a0	c7 45 fc ff ff
-	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
-  002a7	8b ce		 mov	 ecx, esi
-  002a9	e8 00 00 00 00	 call	 ?Initialize@CMSApplication@@QAEXPAUHINSTANCE__@@@Z ; CMSApplication::Initialize
-
-; 558  : 
-; 559  : 	bool ret=false;
-; 560  : 	{
-; 561  : 		CPythonLauncher pyLauncher;
-
-  002ae	8d 4d e0	 lea	 ecx, DWORD PTR _pyLauncher$27[ebp]
-  002b1	c6 45 af 00	 mov	 BYTE PTR _ret$1$[ebp], 0
-  002b5	e8 00 00 00 00	 call	 ??0CPythonLauncher@@QAE@XZ ; CPythonLauncher::CPythonLauncher
-
-; 562  : 		CPythonExceptionSender pyExceptionSender;
-
-  002ba	8d 4d b0	 lea	 ecx, DWORD PTR _pyExceptionSender$26[ebp]
-  002bd	c7 45 fc 05 00
-	00 00		 mov	 DWORD PTR __$EHRec$[ebp+8], 5
-  002c4	e8 00 00 00 00	 call	 ??0CPythonExceptionSender@@QAE@XZ ; CPythonExceptionSender::CPythonExceptionSender
-
-; 563  : 		SetExceptionSender(&pyExceptionSender);
-
-  002c9	8d 45 b0	 lea	 eax, DWORD PTR _pyExceptionSender$26[ebp]
-  002cc	c6 45 fc 06	 mov	 BYTE PTR __$EHRec$[ebp+8], 6
-  002d0	50		 push	 eax
-  002d1	e8 00 00 00 00	 call	 ?SetExceptionSender@@YAXPAVIPythonExceptionSender@@@Z ; SetExceptionSender
-  002d6	83 c4 04	 add	 esp, 4
-
-; 564  : 
-; 565  : 		if (pyLauncher.Create())
-
-  002d9	8d 4d e0	 lea	 ecx, DWORD PTR _pyLauncher$27[ebp]
-  002dc	68 00 00 00 00	 push	 OFFSET ??_C@_0M@PFDHIIAP@eter?4python@
-  002e1	e8 00 00 00 00	 call	 ?Create@CPythonLauncher@@QAE_NPBD@Z ; CPythonLauncher::Create
-  002e6	84 c0		 test	 al, al
-  002e8	74 0d		 je	 SHORT $LN8@Main
-
-; 566  : 		{
-; 567  : 			ret=RunMainScript(pyLauncher, lpCmdLine);
-
-  002ea	8b d7		 mov	 edx, edi
-  002ec	8d 4d e0	 lea	 ecx, DWORD PTR _pyLauncher$27[ebp]
-  002ef	e8 00 00 00 00	 call	 ?RunMainScript@@YA_NAAVCPythonLauncher@@PBD@Z ; RunMainScript
-  002f4	88 45 af	 mov	 BYTE PTR _ret$1$[ebp], al
-$LN8@Main:
-
-; 568  : 		}
-; 569  : 
-; 570  : 		app->Clear();
-
-  002f7	8b ce		 mov	 ecx, esi
-  002f9	e8 00 00 00 00	 call	 ?Clear@CPythonApplication@@QAEXXZ ; CPythonApplication::Clear
-
-; 571  : 
-; 572  : 		timeEndPeriod(1);
-
-  002fe	6a 01		 push	 1
-  00300	ff 15 00 00 00
-	00		 call	 DWORD PTR __imp__timeEndPeriod@4
-
-; 573  : 		pyLauncher.Clear();
-
-  00306	8d 4d e0	 lea	 ecx, DWORD PTR _pyLauncher$27[ebp]
-  00309	e8 00 00 00 00	 call	 ?Clear@CPythonLauncher@@QAEXXZ ; CPythonLauncher::Clear
-
-; 574  : 	}
-
-  0030e	8d 4d b0	 lea	 ecx, DWORD PTR _pyExceptionSender$26[ebp]
-  00311	e8 00 00 00 00	 call	 ??1CPythonExceptionSender@@UAE@XZ ; CPythonExceptionSender::~CPythonExceptionSender
-  00316	8d 4d e0	 lea	 ecx, DWORD PTR _pyLauncher$27[ebp]
-  00319	c7 45 fc ff ff
-	ff ff		 mov	 DWORD PTR __$EHRec$[ebp+8], -1
-  00320	e8 00 00 00 00	 call	 ??1CPythonLauncher@@UAE@XZ ; CPythonLauncher::~CPythonLauncher
-
-; 575  : 
-; 576  : 	app->Destroy();
-
-  00325	8b ce		 mov	 ecx, esi
-  00327	e8 00 00 00 00	 call	 ?Destroy@CPythonApplication@@QAEXXZ ; CPythonApplication::Destroy
-
-; 577  : 	delete app;
-
-  0032c	85 f6		 test	 esi, esi
-  0032e	74 08		 je	 SHORT $LN12@Main
-  00330	8b 06		 mov	 eax, DWORD PTR [esi]
-  00332	8b ce		 mov	 ecx, esi
-  00334	6a 01		 push	 1
-  00336	ff 10		 call	 DWORD PTR [eax]
-$LN12@Main:
-
-; 578  : 	
-; 579  : 	return ret;
-
-  00338	8a 45 af	 mov	 al, BYTE PTR _ret$1$[ebp]
-$LN1@Main:
-
-; 580  : }
-
-  0033b	8b 4d f4	 mov	 ecx, DWORD PTR __$EHRec$[ebp]
-  0033e	64 89 0d 00 00
-	00 00		 mov	 DWORD PTR fs:0, ecx
-  00345	59		 pop	 ecx
-  00346	5f		 pop	 edi
-  00347	5e		 pop	 esi
-  00348	8b 4d ec	 mov	 ecx, DWORD PTR __$ArrayPad$[ebp]
-  0034b	33 cd		 xor	 ecx, ebp
-  0034d	e8 00 00 00 00	 call	 @__security_check_cookie@4
-  00352	8b e5		 mov	 esp, ebp
-  00354	5d		 pop	 ebp
-  00355	8b e3		 mov	 esp, ebx
-  00357	5b		 pop	 ebx
-  00358	c3		 ret	 0
-$LN144@Main:
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory
-
-; 219  :     _STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
-
-  00359	6a 00		 push	 0
-  0035b	6a 00		 push	 0
-  0035d	6a 00		 push	 0
-  0035f	6a 00		 push	 0
-  00361	6a 00		 push	 0
-  00363	e8 00 00 00 00	 call	 __invoke_watson
-$LN141@Main:
-  00368	cc		 int	 3
-_TEXT	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-__unwindfunclet$?Main@@YA_NPAUHINSTANCE__@@PAD@Z$0:
-  00000	68 00 00 00 00	 push	 OFFSET ?$TSS0@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  00005	e8 00 00 00 00	 call	 __Init_thread_abort
-  0000a	59		 pop	 ecx
-  0000b	c3		 ret	 0
-__unwindfunclet$?Main@@YA_NPAUHINSTANCE__@@PAD@Z$1:
-  0000c	68 00 00 00 00	 push	 OFFSET ?$TSS1@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  00011	e8 00 00 00 00	 call	 __Init_thread_abort
-  00016	59		 pop	 ecx
-  00017	c3		 ret	 0
-__unwindfunclet$?Main@@YA_NPAUHINSTANCE__@@PAD@Z$2:
-  00018	68 00 00 00 00	 push	 OFFSET ?$TSS2@?1??Main@@YA_NPAUHINSTANCE__@@PAD@Z@4HA
-  0001d	e8 00 00 00 00	 call	 __Init_thread_abort
-  00022	59		 pop	 ecx
-  00023	c3		 ret	 0
-__unwindfunclet$?Main@@YA_NPAUHINSTANCE__@@PAD@Z$4:
-  00024	8d 4d d4	 lea	 ecx, DWORD PTR $T2[ebp]
-  00027	e9 00 00 00 00	 jmp	 ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-__unwindfunclet$?Main@@YA_NPAUHINSTANCE__@@PAD@Z$5:
-  0002c	68 10 d8 03 00	 push	 251920			; 0003d810H
-  00031	8b 45 a4	 mov	 eax, DWORD PTR $T22[ebp]
-  00034	50		 push	 eax
-  00035	e8 00 00 00 00	 call	 ??3@YAXPAXI@Z		; operator delete
-  0003a	83 c4 08	 add	 esp, 8
-  0003d	c3		 ret	 0
-__unwindfunclet$?Main@@YA_NPAUHINSTANCE__@@PAD@Z$6:
-  0003e	8d 4d e0	 lea	 ecx, DWORD PTR _pyLauncher$27[ebp]
-  00041	e9 00 00 00 00	 jmp	 ??1CPythonLauncher@@UAE@XZ ; CPythonLauncher::~CPythonLauncher
-__unwindfunclet$?Main@@YA_NPAUHINSTANCE__@@PAD@Z$7:
-  00046	8d 4d b0	 lea	 ecx, DWORD PTR _pyExceptionSender$26[ebp]
-  00049	e9 00 00 00 00	 jmp	 ??1CPythonExceptionSender@@UAE@XZ ; CPythonExceptionSender::~CPythonExceptionSender
-  0004e	cc		 int	 3
-  0004f	cc		 int	 3
-  00050	cc		 int	 3
-  00051	cc		 int	 3
-  00052	cc		 int	 3
-__ehhandler$?Main@@YA_NPAUHINSTANCE__@@PAD@Z:
-  00053	90		 npad	 1
-  00054	90		 npad	 1
-  00055	8b 54 24 08	 mov	 edx, DWORD PTR [esp+8]
-  00059	8d 42 0c	 lea	 eax, DWORD PTR [edx+12]
-  0005c	8b 4a a0	 mov	 ecx, DWORD PTR [edx-96]
-  0005f	33 c8		 xor	 ecx, eax
-  00061	e8 00 00 00 00	 call	 @__security_check_cookie@4
-  00066	8b 4a f8	 mov	 ecx, DWORD PTR [edx-8]
-  00069	33 c8		 xor	 ecx, eax
-  0006b	e8 00 00 00 00	 call	 @__security_check_cookie@4
-  00070	b8 00 00 00 00	 mov	 eax, OFFSET __ehfuncinfo$?Main@@YA_NPAUHINSTANCE__@@PAD@Z
-  00075	e9 00 00 00 00	 jmp	 ___CxxFrameHandler3
-text$x	ENDS
-?Main@@YA_NPAUHINSTANCE__@@PAD@Z ENDP			; Main
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-;	COMDAT _WinMain@16
-_TEXT	SEGMENT
-_nArgc$ = -4						; size = 4
-_hInstance$ = 8						; size = 4
-_hPrevInstance$ = 12					; size = 4
-_lpCmdLine$ = 16					; size = 4
-_nCmdShow$ = 20						; size = 4
-_WinMain@16 PROC					; COMDAT
-
-; 633  : {
-
-  00000	55		 push	 ebp
-  00001	8b ec		 mov	 ebp, esp
-  00003	83 e4 f8	 and	 esp, -8			; fffffff8H
-  00006	51		 push	 ecx
-  00007	56		 push	 esi
-
-; 634  : 	LoadConfig ("locale.cfg");
-
-  00008	e8 00 00 00 00	 call	 ?LoadConfig@@YAXPBD@Z	; LoadConfig
-
-; 635  : 	SetDefaultCodePage(GetCodePage());
-
-  0000d	e8 00 00 00 00	 call	 ?GetCodePage@@YAIXZ	; GetCodePage
-  00012	50		 push	 eax
-  00013	e8 00 00 00 00	 call	 ?SetDefaultCodePage@@YA_NK@Z ; SetDefaultCodePage
-  00018	83 c4 04	 add	 esp, 4
-
-; 636  : 
-; 637  : 	int nArgc = 0;
-
-  0001b	c7 44 24 04 00
-	00 00 00	 mov	 DWORD PTR _nArgc$[esp+8], 0
-
-; 638  : 	PCHAR* szArgv = CommandLineToArgv( lpCmdLine, &nArgc );
-
-  00023	8d 44 24 04	 lea	 eax, DWORD PTR _nArgc$[esp+8]
-  00027	50		 push	 eax
-  00028	ff 75 10	 push	 DWORD PTR _lpCmdLine$[ebp]
-  0002b	e8 00 00 00 00	 call	 ?CommandLineToArgv@@YAPAPADPADPAH@Z ; CommandLineToArgv
-
-; 639  : 	WebBrowser_Startup(hInstance);
-
-  00030	ff 75 08	 push	 DWORD PTR _hInstance$[ebp]
-  00033	8b f0		 mov	 esi, eax
-  00035	e8 00 00 00 00	 call	 _WebBrowser_Startup
-  0003a	83 c4 0c	 add	 esp, 12			; 0000000cH
-
-; 640  : 
-; 641  : 	if (!CheckPythonLibraryFilenames())
-
-  0003d	e8 00 00 00 00	 call	 ?CheckPythonLibraryFilenames@@YA_NXZ ; CheckPythonLibraryFilenames
-  00042	84 c0		 test	 al, al
-  00044	75 07		 jne	 SHORT $LN2@WinMain
-
-; 642  : 	{
-; 643  : 		__ErrorPythonLibraryIsNotExist();
-
-  00046	e8 00 00 00 00	 call	 ?__ErrorPythonLibraryIsNotExist@@YAXXZ ; __ErrorPythonLibraryIsNotExist
-
-; 644  : 		goto Clean;
-
-  0004b	eb 16		 jmp	 SHORT $Clean$8
-$LN2@WinMain:
-
-; 645  : 	}
-; 646  : 
-; 647  : 	Main(hInstance, lpCmdLine);
-
-  0004d	8b 55 10	 mov	 edx, DWORD PTR _lpCmdLine$[ebp]
-  00050	8b 4d 08	 mov	 ecx, DWORD PTR _hInstance$[ebp]
-  00053	e8 00 00 00 00	 call	 ?Main@@YA_NPAUHINSTANCE__@@PAD@Z ; Main
-
-; 648  : 	WebBrowser_Cleanup();
-
-  00058	e8 00 00 00 00	 call	 _WebBrowser_Cleanup
-
-; 649  : 	::CoUninitialize();
-
-  0005d	ff 15 00 00 00
-	00		 call	 DWORD PTR __imp__CoUninitialize@0
-$Clean$8:
-
-; 650  : 
-; 651  : Clean:
-; 652  : 	SAFE_FREE_GLOBAL(szArgv);
-
-  00063	85 f6		 test	 esi, esi
-  00065	74 07		 je	 SHORT $LN6@WinMain
-  00067	56		 push	 esi
-  00068	ff 15 00 00 00
-	00		 call	 DWORD PTR __imp__GlobalFree@4
-$LN6@WinMain:
-
-; 653  : 	return 0;
-; 654  : }
-
-  0006e	33 c0		 xor	 eax, eax
-  00070	5e		 pop	 esi
-  00071	8b e5		 mov	 esp, ebp
-  00073	5d		 pop	 ebp
-  00074	c2 10 00	 ret	 16			; 00000010H
-_WinMain@16 ENDP
-_TEXT	ENDS
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\UserInterface.cpp
-;	COMDAT ?Setup@@YAHPAD@Z
-_TEXT	SEGMENT
-_Callback$ = -16					; size = 8
-_tc$ = -8						; size = 8
-?Setup@@YAHPAD@Z PROC					; Setup, COMDAT
-; _lpCmdLine$dead$ = ecx
-
-; 662  : {
-
-  00000	55		 push	 ebp
-  00001	8b ec		 mov	 ebp, esp
-  00003	83 ec 10	 sub	 esp, 16			; 00000010H
-
-; 663  : 	TIMECAPS tc;
-; 664  : 	UINT wTimerRes;
-; 665  : 
-; 666  : 	if (timeGetDevCaps(&tc, sizeof(TIMECAPS)) != TIMERR_NOERROR)
-
-  00006	8d 45 f8	 lea	 eax, DWORD PTR _tc$[ebp]
-  00009	6a 08		 push	 8
-  0000b	50		 push	 eax
-  0000c	ff 15 00 00 00
-	00		 call	 DWORD PTR __imp__timeGetDevCaps@8
-  00012	85 c0		 test	 eax, eax
-  00014	74 06		 je	 SHORT $LN2@Setup
-
-; 667  : 		return 0;
-
-  00016	33 c0		 xor	 eax, eax
-
-; 677  : }
-
-  00018	8b e5		 mov	 esp, ebp
-  0001a	5d		 pop	 ebp
-  0001b	c3		 ret	 0
-$LN2@Setup:
-
-; 668  : 
-; 669  : 	wTimerRes = MINMAX(tc.wPeriodMin, 1, tc.wPeriodMax);
-
-  0001c	ff 75 fc	 push	 DWORD PTR _tc$[ebp+4]
-  0001f	6a 01		 push	 1
-  00021	ff 75 f8	 push	 DWORD PTR _tc$[ebp]
-  00024	e8 00 00 00 00	 call	 ?MINMAX@@YAHHHH@Z	; MINMAX
-  00029	83 c4 0c	 add	 esp, 12			; 0000000cH
-
-; 670  : 	timeBeginPeriod(wTimerRes); 
-
-  0002c	50		 push	 eax
-  0002d	ff 15 00 00 00
-	00		 call	 DWORD PTR __imp__timeBeginPeriod@4
-
-; 671  : 
-; 672  : 	granny_log_callback Callback;
-; 673  : 	Callback.Function = nullptr;
-; 674  : 	Callback.UserData = 0;
-; 675  : 	GrannySetLogCallback(&Callback);
-
-  00033	8d 45 f0	 lea	 eax, DWORD PTR _Callback$[ebp]
-  00036	c7 45 f0 00 00
-	00 00		 mov	 DWORD PTR _Callback$[ebp], 0
-  0003d	50		 push	 eax
-  0003e	c7 45 f4 00 00
-	00 00		 mov	 DWORD PTR _Callback$[ebp+4], 0
-  00045	ff 15 00 00 00
-	00		 call	 DWORD PTR __imp__GrannySetLogCallback@4
-
-; 676  : 	return 1;
-
-  0004b	b8 01 00 00 00	 mov	 eax, 1
-
-; 677  : }
-
-  00050	8b e5		 mov	 esp, ebp
-  00052	5d		 pop	 ebp
-  00053	c3		 ret	 0
-?Setup@@YAHPAD@Z ENDP					; Setup
-_TEXT	ENDS
 END

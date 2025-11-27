@@ -217,21 +217,16 @@ bool CHARACTER::Attack(LPCHARACTER pkVictim, BYTE bType)
 	}
 
 #ifdef __AUTO_HUNT__
-	// Metin/slot rezervasyon kontrolü - SADECE AUTO_HUNT aktif olan oyuncular için
+	// Metin/slot rezervasyon - SADECE AUTO_HUNT aktif olan oyuncular için
+	// Not: Rezervasyon kontrolü saldýrý sýrasýnda yapýlmaz, sadece hedef seçiminde kullanýlýr
+	// Böylece birden fazla oyuncu ayný hedefe damage verebilir
 	if (IsPC() && m_bAutoHuntStatus && pkVictim && (pkVictim->IsStone() || pkVictim->IsNPC()))
 	{
 		DWORD dwTargetVID = pkVictim->GetVID();
 		DWORD dwPlayerPID = GetPlayerID();
 		
-		// Eðer hedef baþka bir AUTO_HUNT aktif oyuncu tarafýndan rezerve edilmiþse saldýrýyý engelle
-		if (CHARACTER_MANAGER::instance().IsTargetReserved(dwTargetVID, 0) && 
-		    !CHARACTER_MANAGER::instance().IsTargetReserved(dwTargetVID, dwPlayerPID))
-		{
-			// Baþka bir AUTO_HUNT aktif oyuncu tarafýndan rezerve edilmiþ, saldýrýyý engelle
-			return false;
-		}
-		
-		// Hedefi rezerve et (eðer daha önce rezerve edilmemiþse)
+		// Hedefi rezerve et (hedef seçiminde farklý hedeflere yönlendirmek için)
+		// Ama saldýrý sýrasýnda rezervasyon kontrolü yapmýyoruz, damage iþlemesi için
 		CHARACTER_MANAGER::instance().ReserveTarget(dwTargetVID, dwPlayerPID);
 	}
 #endif
@@ -3359,7 +3354,10 @@ class CFuncShoot
 				case SKILL_TUSOK:
 				case SKILL_BIPABU:
 				case SKILL_NOEJEON:
-				case SKILL_GEOMPUNG:
+			#ifdef ENABLE_SKILL_YONGBI_PROCESSING_FIX
+			case SKILL_YONGBI: // Ejderha Atýþý
+			#endif
+			case SKILL_GEOMPUNG:
 				case SKILL_SANGONG:
 				case SKILL_MAHWAN:
 				case SKILL_PABEOB:
@@ -3388,11 +3386,13 @@ class CFuncShoot
 					}
 					break;
 
-				case SKILL_YONGBI:
+				#ifdef ENABLE_SKILL_YONGBI_PROCESSING_FIX
+				/*case SKILL_YONGBI:
 					{
 						m_me->OnMove(true);
 					}
-					break;
+					break;*/
+				#endif
 
 				default:
 					sys_err("CFuncShoot: I don't know this type [%d] of range attack.", (int) m_bType);
