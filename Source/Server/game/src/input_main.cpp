@@ -3769,6 +3769,16 @@ void CInputMain::MountUpGrade(LPCHARACTER ch, const char* c_pData)
 }
 #endif
 
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+void CInputMain::ItemNewAttributes(LPCHARACTER ch, const char* pcData)
+{
+	TPacketCGItemNewAttribute* p = (TPacketCGItemNewAttribute*)pcData;
+
+	if (ch)
+		ch->UseItemNewAttribute(p->source_pos, p->target_pos, p->bValues);
+}
+#endif
+
 int CInputMain::Analyze(LPDESC d, BYTE bHeader, const char * c_pData)
 {
 	LPCHARACTER ch;
@@ -3874,6 +3884,13 @@ int CInputMain::Analyze(LPDESC d, BYTE bHeader, const char * c_pData)
 			return sizeof(TPacketCGAutoSellStatus);
 		}
 		break;
+#endif
+
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+		case HEADER_CG_ITEM_USE_NEW_ATTRIBUTE:
+			if (!ch->IsObserverMode())
+				ItemNewAttributes(ch, c_pData);
+			break;
 #endif
 
 		case HEADER_CG_ITEM_MOVE:

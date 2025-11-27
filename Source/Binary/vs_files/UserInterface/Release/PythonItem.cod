@@ -676,7 +676,7 @@ __ehfuncinfo$??0?$_Tree_temp_node_alloc@V?$allocator@U?$_Tree_node@U?$pair@$$CBK
 	DQ	00000000100000000r		; 2.122e-314
 __unwindtable$??0?$_Tree_temp_node_alloc@V?$allocator@U?$_Tree_node@U?$pair@$$CBKPAUSGroundItemInstance@CPythonItem@@@std@@PAX@std@@@std@@@std@@QAE@AAV?$allocator@U?$_Tree_node@U?$pair@$$CBKPAUSGroundItemInstance@CPythonItem@@@std@@PAX@std@@@1@@Z DD 0ffffffffH
 	DD	FLAT:__unwindfunclet$??0?$_Tree_temp_node_alloc@V?$allocator@U?$_Tree_node@U?$pair@$$CBKPAUSGroundItemInstance@CPythonItem@@@std@@PAX@std@@@std@@@std@@QAE@AAV?$allocator@U?$_Tree_node@U?$pair@$$CBKPAUSGroundItemInstance@CPythonItem@@@std@@PAX@std@@@1@@Z$0
-	ORG $+172
+	ORG $+4
 ?ms_astDropSoundFileName@SGroundItemInstance@CPythonItem@@2PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A DB 00H ; CPythonItem::SGroundItemInstance::ms_astDropSoundFileName
 	DB	00H
 	DB	00H
@@ -768,51 +768,4 @@ __unwindtable$??0?$_Tree_temp_node_alloc@V?$allocator@U?$_Tree_node@U?$pair@$$CB
 	DD	00H
 	DD	0fH
 ??ms_astDropSoundFileName$initializer$@SGroundItemInstance@CPythonItem@@2P6AXXZA@@3P6AXXZA DD FLAT:??__E?ms_astDropSoundFileName@SGroundItemInstance@CPythonItem@@2PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A@@YAXXZ ; ??ms_astDropSoundFileName$initializer$@SGroundItemInstance@CPythonItem@@2P6AXXZA@@3P6AXXZA
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonItem.cpp
-;	COMDAT ??__E?ms_astDropSoundFileName@SGroundItemInstance@CPythonItem@@2PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A@@YAXXZ
-text$di	SEGMENT
-??__E?ms_astDropSoundFileName@SGroundItemInstance@CPythonItem@@2PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A@@YAXXZ PROC ; `dynamic initializer for 'CPythonItem::SGroundItemInstance::ms_astDropSoundFileName'', COMDAT
-
-; 35   : std::string CPythonItem::TGroundItemInstance::ms_astDropSoundFileName[DROPSOUND_NUM];
-
-  00000	68 00 00 00 00	 push	 OFFSET ??__F?ms_astDropSoundFileName@SGroundItemInstance@CPythonItem@@2PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A@@YAXXZ ; `dynamic atexit destructor for 'CPythonItem::SGroundItemInstance::ms_astDropSoundFileName''
-  00005	e8 00 00 00 00	 call	 _atexit
-  0000a	59		 pop	 ecx
-  0000b	c3		 ret	 0
-??__E?ms_astDropSoundFileName@SGroundItemInstance@CPythonItem@@2PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A@@YAXXZ ENDP ; `dynamic initializer for 'CPythonItem::SGroundItemInstance::ms_astDropSoundFileName''
-text$di	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT ??__F?ms_astDropSoundFileName@SGroundItemInstance@CPythonItem@@2PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A@@YAXXZ
-text$yd	SEGMENT
-??__F?ms_astDropSoundFileName@SGroundItemInstance@CPythonItem@@2PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A@@YAXXZ PROC ; `dynamic atexit destructor for 'CPythonItem::SGroundItemInstance::ms_astDropSoundFileName'', COMDAT
-  00000	68 00 00 00 00	 push	 OFFSET ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::~basic_string<char,std::char_traits<char>,std::allocator<char> >
-  00005	6a 05		 push	 5
-  00007	6a 18		 push	 24			; 00000018H
-  00009	68 00 00 00 00	 push	 OFFSET ?ms_astDropSoundFileName@SGroundItemInstance@CPythonItem@@2PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A ; CPythonItem::SGroundItemInstance::ms_astDropSoundFileName
-  0000e	e8 00 00 00 00	 call	 ??_M@YGXPAXIIP6EX0@Z@Z
-  00013	c3		 ret	 0
-??__F?ms_astDropSoundFileName@SGroundItemInstance@CPythonItem@@2PAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@A@@YAXXZ ENDP ; `dynamic atexit destructor for 'CPythonItem::SGroundItemInstance::ms_astDropSoundFileName''
-text$yd	ENDS
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterLib\Pool.h
-;	COMDAT ?Delete@?$CDynamicPool@USGroundItemInstance@CPythonItem@@@@KAXPAUSGroundItemInstance@CPythonItem@@@Z
-_TEXT	SEGMENT
-?Delete@?$CDynamicPool@USGroundItemInstance@CPythonItem@@@@KAXPAUSGroundItemInstance@CPythonItem@@@Z PROC ; CDynamicPool<CPythonItem::SGroundItemInstance>::Delete, COMDAT
-; _pkData$ = ecx
-
-; 85   : 			delete pkData;
-
-  00000	85 c9		 test	 ecx, ecx
-  00002	74 06		 je	 SHORT $LN3@Delete
-  00004	8b 01		 mov	 eax, DWORD PTR [ecx]
-  00006	6a 01		 push	 1
-  00008	ff 10		 call	 DWORD PTR [eax]
-$LN3@Delete:
-
-; 86   : 		}
-
-  0000a	c3		 ret	 0
-?Delete@?$CDynamicPool@USGroundItemInstance@CPythonItem@@@@KAXPAUSGroundItemInstance@CPythonItem@@@Z ENDP ; CDynamicPool<CPythonItem::SGroundItemInstance>::Delete
-_TEXT	ENDS
 END

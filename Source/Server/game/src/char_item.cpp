@@ -5476,7 +5476,39 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 
 										item2->ChangeAttribute(aiChangeProb);
 									}
+									#ifdef ENABLE_ITEM_MODIFIER_AVG_SKILL
+									else if (item->GetVnum() == 75888)
+									{
+										if ((item2-> GetType() == ITEM_WEAPON) && ((item2->GetAttributeType(0) == 72) && (item2->GetAttributeType(1) == 71)) || ((item2->GetAttributeType(1) == 72) && (item2->GetAttributeType(0) == 71)))
+										{
+											int32_t value1 = number(50, 70);
+											int32_t value2 = -(number(18,23));
+											item2->SetForceAttribute(0,72,value1);
+											item2->SetForceAttribute(1,71,value2);
+										}
+										else
+										{
+											ChatPacket(CHAT_TYPE_INFO, "Bu eşyayı sadece Ortalama ve Becerili silahlarda kullanabilirsiniz.");
+											return false;
+										}
+									}
 
+									else if (item->GetVnum() == 75891)
+									{
+										if ((item2-> GetType() == ITEM_WEAPON) && ((item2->GetAttributeType(0) == 72) && (item2->GetAttributeType(1) == 71)) || ((item2->GetAttributeType(1) == 72) && (item2->GetAttributeType(0) == 71)))
+										{
+											int32_t value1 = -(number(27, 34));
+											int32_t value2 = number(25,30);
+											item2->SetForceAttribute(0, 72, value1);
+											item2->SetForceAttribute(1, 71, value2);
+										}
+										else
+										{
+											ChatPacket(CHAT_TYPE_INFO, "Bu eşyayı sadece Ortalama ve Becerili silahlarda kullanabilirsiniz.");
+											return false;
+										}
+									}
+									#endif
 									else
 									{
 										if (item->GetVnum() == 71151 || item->GetVnum() == 76023)
@@ -10216,5 +10248,71 @@ int CHARACTER::GetAffectType(LPITEM item)
 		case 1: return AFFECT_MALL_PLUS;
 		default: return AFFECT_BLEND_PLUS;
 	}
+}
+#endif
+
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+bool CHARACTER::UseItemNewAttribute(TItemPos source_pos, TItemPos target_pos, BYTE* bValues)
+{
+	LPITEM item;
+	LPITEM item_target;
+
+	for (int i = 0; i < 5; ++i)
+	{
+		if (bValues[i] < 0 || bValues[i] > 255)
+			return false;
+	}
+
+	if (!CanHandleItem())
+		return false;
+
+	if (!IsValidItemPosition(source_pos) || !(item = GetItem(source_pos)))
+		return false;
+
+	if (!IsValidItemPosition(target_pos) || !(item_target = GetItem(target_pos)))
+		return false;
+
+	if (item->GetVnum() != 49999)
+		return false;
+
+	if (item->IsExchanging())
+		return false;
+
+	if (item_target->IsExchanging())
+		return false;
+
+	if (item_target->IsEquipped())
+		return false;
+
+	if (ITEM_COSTUME == item_target->GetType())
+		return false;
+
+	if (item_target->GetVnum() == 50201 || item_target->GetVnum() == 50202 || item_target->GetVnum() == 11901 || item_target->GetVnum() == 11902 || item_target->GetVnum() == 11903 || item_target->GetVnum() == 11904 || item_target->GetVnum() == 11911 || item_target->GetVnum() == 11912 || item_target->GetVnum() == 11913 || item_target->GetVnum() == 11914)
+	{
+		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You can't apply this attribute on this item."));
+		return false;
+	}
+	int processNewAttr = item_target->AddNewStyleAttribute(bValues);
+
+	if (processNewAttr == 1)
+	{
+		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You can't apply this attribute on this item."));
+		return false;
+	}
+	else if (processNewAttr == 2)
+	{
+		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You can't apply an attribute twice."));
+		return false;
+	}
+	else if (processNewAttr == 3)
+	{
+		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Attributes has been added successfully!"));
+		item->SetCount(item->GetCount() - 1);
+		return true;
+	}
+
+	//sys_log(0, "%s: UseItemNewAttribute %s (inven %d, cell: %d)", GetName(), item->GetName(), window_type, wCell);
+
+	return false;
 }
 #endif

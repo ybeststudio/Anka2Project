@@ -2191,6 +2191,11 @@ class CHARACTER : public CEntity, public CFSM, public CHorseRider
 		void SetSyncHackCount(int iCount) { m_iSyncHackCount = iCount;}
 		int GetSyncHackCount() { return m_iSyncHackCount; }
 
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+	public:
+		bool	UseItemNewAttribute(TItemPos source_pos, TItemPos target_pos, BYTE* bValues);
+#endif
+
 	public:
 		int LastDropTime;
 		int CountDrops;

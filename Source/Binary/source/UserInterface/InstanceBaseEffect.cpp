@@ -1188,7 +1188,8 @@ bool CInstanceBase::IsPossibleEmoticon()
 
 	if(ELTimer_GetMSec() - m_dwEmoticonTime < 1000)
 	{
-		TraceError("ELTimer_GetMSec() - m_dwEmoticonTime");
+		// Emoticon spam önleme: 1 saniyeden kýsa sürede emoticon gösterilmesini engelle
+		// TraceError kaldýrýldý - gereksiz log mesajý
 		return false;
 	}
 

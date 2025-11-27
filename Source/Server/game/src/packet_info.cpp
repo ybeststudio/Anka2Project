@@ -285,6 +285,10 @@ CPacketInfoCG::CPacketInfoCG()
 #ifdef ENABLE_RIDING_EXTENDED
 	Set(HEADER_CG_MOUNT_UP_GRADE,					sizeof(TPacketCGMountUpGrade), 				"MountUpGrade");
 #endif
+
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+	Set(HEADER_CG_ITEM_USE_NEW_ATTRIBUTE, 			sizeof(TPacketCGItemNewAttribute), 			"UseItemNewAttributes");
+#endif
 }
 
 CPacketInfoCG::~CPacketInfoCG()

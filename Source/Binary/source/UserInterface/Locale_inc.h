@@ -152,6 +152,7 @@
 #define ENABLE_SKILL_BOOK_READING					// Beceri Kitabý Okuma sistemi
 #define __AUTO_HUNT__								// Otomatik Av sistemi
 #define ENABLE_AUTO_SELL_SYSTEM						// Otomatik item satmayý sistemini etkinleþtir;
+#define ENABLE_STYLE_ATTRIBUTE_SYSTEM      			// Seçmeli özel kadim efsunu sistemini  etkinleþtir;
 
 /*** DÜZELTMELER ***/
 #define MULTIPLE_DAMAGE_DISPLAY_SYSTEM				// Çoklu damage gösterimi  düzeltir

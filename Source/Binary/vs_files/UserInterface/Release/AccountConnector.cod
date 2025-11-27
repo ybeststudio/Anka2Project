@@ -960,38 +960,6 @@ CRT$XCU	ENDS
 CRT$XCU	ENDS
 CRT$XCU	ENDS
 ; Function compile flags: /Ogtp
-;	COMDAT ??_H@YGXPAXIIP6EPAX0@Z@Z
-_TEXT	SEGMENT
-___t$ = 8						; size = 4
-___s$ = 12						; size = 4
-___n$ = 16						; size = 4
-___f$ = 20						; size = 4
-??_H@YGXPAXIIP6EPAX0@Z@Z PROC				; `vector constructor iterator', COMDAT
-  00000	55		 push	 ebp
-  00001	8b ec		 mov	 ebp, esp
-  00003	56		 push	 esi
-  00004	8b 75 10	 mov	 esi, DWORD PTR ___n$[ebp]
-  00007	85 f6		 test	 esi, esi
-  00009	74 16		 je	 SHORT $LN6@vector
-  0000b	53		 push	 ebx
-  0000c	8b 5d 14	 mov	 ebx, DWORD PTR ___f$[ebp]
-  0000f	57		 push	 edi
-  00010	8b 7d 08	 mov	 edi, DWORD PTR ___t$[ebp]
-$LL2@vector:
-  00013	8b cf		 mov	 ecx, edi
-  00015	ff d3		 call	 ebx
-  00017	03 7d 0c	 add	 edi, DWORD PTR ___s$[ebp]
-  0001a	83 ee 01	 sub	 esi, 1
-  0001d	75 f4		 jne	 SHORT $LL2@vector
-  0001f	5f		 pop	 edi
-  00020	5b		 pop	 ebx
-$LN6@vector:
-  00021	5e		 pop	 esi
-  00022	5d		 pop	 ebp
-  00023	c2 10 00	 ret	 16			; 00000010H
-??_H@YGXPAXIIP6EPAX0@Z@Z ENDP				; `vector constructor iterator'
-_TEXT	ENDS
-; Function compile flags: /Ogtp
 ; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\AccountConnector.cpp
 ; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
 ; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\AccountConnector.cpp

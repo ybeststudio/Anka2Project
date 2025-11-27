@@ -1,6 +1,7 @@
 <ScriptFile>
 	<CreateEterPack ArchivePath="../../Client/pack/root" BuildKeyfile="false" >
 		<File ArchivedPath="atlasinfo.txt"><![CDATA[../binary_unpack/root/atlasinfo.txt]]></File>
+		<File ArchivedPath="bonus_settings.py"><![CDATA[../binary_unpack/root/bonus_settings.py]]></File>
 		<File ArchivedPath="collections.py"><![CDATA[../binary_unpack/root/collections.py]]></File>
 		<File ArchivedPath="colorinfo.py"><![CDATA[../binary_unpack/root/colorinfo.py]]></File>
 		<File ArchivedPath="consolemodule.py"><![CDATA[../binary_unpack/root/consolemodule.py]]></File>
@@ -34,6 +35,8 @@
 		<File ArchivedPath="uiacce.py"><![CDATA[../binary_unpack/root/uiacce.py]]></File>
 		<File ArchivedPath="uiaffectshower.py"><![CDATA[../binary_unpack/root/uiaffectshower.py]]></File>
 		<File ArchivedPath="uiaramakutusujordi.py"><![CDATA[../binary_unpack/root/uiaramakutusujordi.py]]></File>
+		<File ArchivedPath="uiattachbonus.py"><![CDATA[../binary_unpack/root/uiattachbonus.py]]></File>
+		<File ArchivedPath="uiattachbonuslist.py"><![CDATA[../binary_unpack/root/uiattachbonuslist.py]]></File>
 		<File ArchivedPath="uiattachmetin.py"><![CDATA[../binary_unpack/root/uiattachmetin.py]]></File>
 		<File ArchivedPath="uiaura.py"><![CDATA[../binary_unpack/root/uiaura.py]]></File>
 		<File ArchivedPath="uiautoban.py"><![CDATA[../binary_unpack/root/uiautoban.py]]></File>
@@ -118,6 +121,7 @@
 		<File ArchivedPath="uiscript/acce_absorbwindow.py"><![CDATA[../binary_unpack/root/uiscript/acce_absorbwindow.py]]></File>
 		<File ArchivedPath="uiscript/acce_combinewindow.py"><![CDATA[../binary_unpack/root/uiscript/acce_combinewindow.py]]></File>
 		<File ArchivedPath="uiscript/atlaswindow.py"><![CDATA[../binary_unpack/root/uiscript/atlaswindow.py]]></File>
+		<File ArchivedPath="uiscript/attachbonusdialog.py"><![CDATA[../binary_unpack/root/uiscript/attachbonusdialog.py]]></File>
 		<File ArchivedPath="uiscript/attachstonedialog.py"><![CDATA[../binary_unpack/root/uiscript/attachstonedialog.py]]></File>
 		<File ArchivedPath="uiscript/aura_absorbwindow.py"><![CDATA[../binary_unpack/root/uiscript/aura_absorbwindow.py]]></File>
 		<File ArchivedPath="uiscript/aura_refinewindow.py"><![CDATA[../binary_unpack/root/uiscript/aura_refinewindow.py]]></File>
@@ -222,6 +226,7 @@
 		<File ArchivedPath="uiscript/rightmousebuttonwindow.py"><![CDATA[../binary_unpack/root/uiscript/rightmousebuttonwindow.py]]></File>
 		<File ArchivedPath="uiscript/ruhtasi.py"><![CDATA[../binary_unpack/root/uiscript/ruhtasi.py]]></File>
 		<File ArchivedPath="uiscript/safeboxwindow.py"><![CDATA[../binary_unpack/root/uiscript/safeboxwindow.py]]></File>
+		<File ArchivedPath="uiscript/selectbonuslistwindow.py"><![CDATA[../binary_unpack/root/uiscript/selectbonuslistwindow.py]]></File>
 		<File ArchivedPath="uiscript/selectcharacterwindow.py"><![CDATA[../binary_unpack/root/uiscript/selectcharacterwindow.py]]></File>
 		<File ArchivedPath="uiscript/selectempirewindow.py"><![CDATA[../binary_unpack/root/uiscript/selectempirewindow.py]]></File>
 		<File ArchivedPath="uiscript/selectitemwindow.py"><![CDATA[../binary_unpack/root/uiscript/selectitemwindow.py]]></File>

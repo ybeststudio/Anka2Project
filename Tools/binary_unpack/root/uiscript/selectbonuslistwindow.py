@@ -1,0 +1,53 @@
+import uiScriptLocale
+window = {
+	'name': 'BonusListWindow',
+	'x': SCREEN_WIDTH - 350,
+	'y': 56000 / SCREEN_HEIGHT,
+	'style': ('movable', 'float'),
+	'width': 180,
+	'height': 300,
+	'children': 
+	(
+		{
+			'name': 'board',
+			'type': 'board_with_titlebar',
+			'x': 0,
+			'y': 0,
+			'width': 180,
+			'height': 300,
+			'title': 'Efsun Seç',
+		},
+		{
+			'name': 'ScrollBar',
+			'type': 'scrollbar',
+			'x': 27,
+			'y': 40,
+			'size': 220,
+			'horizontal_align': 'right',
+		},
+		{
+			'name': 'ok',
+			'type': 'button',
+			'x': 15,
+			'y': 265,
+			'width': 61,
+			'height': 21,
+			'text': uiScriptLocale.OK,
+			'default_image': 'd:/ymir work/ui/public/small_button_01.sub',
+			'over_image': 'd:/ymir work/ui/public/small_button_02.sub',
+			'down_image': 'd:/ymir work/ui/public/small_button_03.sub',
+		},
+		{
+			'name': 'cancel',
+			'type': 'button',
+			'x': 60,
+			'y': 265,
+			'width': 41,
+			'height': 21,
+			'text': uiScriptLocale.CANCEL,
+			'default_image': 'd:/ymir work/ui/public/small_button_01.sub',
+			'over_image': 'd:/ymir work/ui/public/small_button_02.sub',
+			'down_image': 'd:/ymir work/ui/public/small_button_03.sub',
+		},
+	),
+}

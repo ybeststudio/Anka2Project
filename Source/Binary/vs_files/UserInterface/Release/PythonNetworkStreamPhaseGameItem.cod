@@ -55,11 +55,17 @@ PUBLIC	??_C@_0CF@IBLCDDNC@SendOfflineOpenWithVID?5Packet?5E@ ; `string'
 PUBLIC	??_C@_0CF@EOAPAKEO@SendOfflineOpenWithVID?5Packet?5e@ ; `string'
 PUBLIC	??_C@_0CO@KEMJGEBN@SendOfflineShopChangeDecoration@ ; `string'
 PUBLIC	??_C@_0CO@GLHEFNIB@SendOfflineShopChangeDecoration@ ; `string'
+PUBLIC	??_C@_0CB@NABGIOIB@SendItemNewAttributePacket?5Erro@ ; `string'
 PUBLIC	?ms_singleton@?$CSingleton@VCPythonSafeBox@@@@0PAVCPythonSafeBox@@A ; CSingleton<CPythonSafeBox>::ms_singleton
 ;	COMDAT ?ms_singleton@?$CSingleton@VCPythonSafeBox@@@@0PAVCPythonSafeBox@@A
 _BSS	SEGMENT
 ?ms_singleton@?$CSingleton@VCPythonSafeBox@@@@0PAVCPythonSafeBox@@A DD 01H DUP (?) ; CSingleton<CPythonSafeBox>::ms_singleton
 _BSS	ENDS
+;	COMDAT ??_C@_0CB@NABGIOIB@SendItemNewAttributePacket?5Erro@
+CONST	SEGMENT
+??_C@_0CB@NABGIOIB@SendItemNewAttributePacket?5Erro@ DB 'SendItemNewAttri'
+	DB	'butePacket Error', 00H			; `string'
+CONST	ENDS
 ;	COMDAT ??_C@_0CO@GLHEFNIB@SendOfflineShopChangeDecoration@
 CONST	SEGMENT
 ??_C@_0CO@GLHEFNIB@SendOfflineShopChangeDecoration@ DB 'SendOfflineShopCh'
@@ -316,6 +322,7 @@ CONST	SEGMENT
 	DB	0cfH, 0c1H, 0f6H, ' ', 0beH, 0caH, 0b4H, 0c2H, ' ', 0c7H, 0d4H
 	DB	0bcH, 0f6H, 00H				; `string'
 PUBLIC	?Instance@?$CSingleton@VCPythonSafeBox@@@@SAAAVCPythonSafeBox@@XZ ; CSingleton<CPythonSafeBox>::Instance
+PUBLIC	??0command_item_new_attribute@@QAE@XZ		; command_item_new_attribute::command_item_new_attribute
 PUBLIC	?SendOfflineShopChangeDecoration@CPythonNetworkStream@@QAE_NPBDKK@Z ; CPythonNetworkStream::SendOfflineShopChangeDecoration
 PUBLIC	??0SOfflineShopAddItem@@QAE@XZ			; SOfflineShopAddItem::SOfflineShopAddItem
 PUBLIC	?SendQuickSlotMovePacket@CPythonNetworkStream@@QAE_NEE@Z ; CPythonNetworkStream::SendQuickSlotMovePacket
@@ -378,6 +385,7 @@ PUBLIC	?SendSafeBoxCheckinPacket@CPythonNetworkStream@@QAE_NUSItemPos@@K@Z ; CPy
 PUBLIC	?SendSafeBoxCheckoutPacket@CPythonNetworkStream@@QAE_NKUSItemPos@@@Z ; CPythonNetworkStream::SendSafeBoxCheckoutPacket
 PUBLIC	?SendSafeBoxItemMovePacket@CPythonNetworkStream@@QAE_NKKG@Z ; CPythonNetworkStream::SendSafeBoxItemMovePacket
 PUBLIC	?SendMallCheckoutPacket@CPythonNetworkStream@@QAE_NKUSItemPos@@@Z ; CPythonNetworkStream::SendMallCheckoutPacket
+PUBLIC	?SendItemNewAttributePacket@CPythonNetworkStream@@QAE_NUSItemPos@@0PAE@Z ; CPythonNetworkStream::SendItemNewAttributePacket
 PUBLIC	?SendItemDestroyPacket@CPythonNetworkStream@@QAE_NUSItemPos@@KG@Z ; CPythonNetworkStream::SendItemDestroyPacket
 PUBLIC	?SendItemSellPacket@CPythonNetworkStream@@QAE_NUSItemPos@@K@Z ; CPythonNetworkStream::SendItemSellPacket
 PUBLIC	?SendOfflineShopEndPacket@CPythonNetworkStream@@QAE_NXZ ; CPythonNetworkStream::SendOfflineShopEndPacket
@@ -544,6 +552,110 @@ $LN4@SendTakeOf:
   000d8	5d		 pop	 ebp
   000d9	c3		 ret	 0
 ?SendTakeOfflineMoney@CPythonNetworkStream@@QAE_NXZ ENDP ; CPythonNetworkStream::SendTakeOfflineMoney
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonNetworkStreamPhaseGameItem.cpp
+;	COMDAT ?SendItemNewAttributePacket@CPythonNetworkStream@@QAE_NUSItemPos@@0PAE@Z
+_TEXT	SEGMENT
+_itemNewAttributePacket$ = -16				; size = 12
+__$ArrayPad$ = -4					; size = 4
+_source_pos$ = 8					; size = 3
+_target_pos$ = 12					; size = 3
+_bValues$ = 16						; size = 4
+?SendItemNewAttributePacket@CPythonNetworkStream@@QAE_NUSItemPos@@0PAE@Z PROC ; CPythonNetworkStream::SendItemNewAttributePacket, COMDAT
+; _this$ = ecx
+
+; 1459 : {
+
+  00000	55		 push	 ebp
+  00001	8b ec		 mov	 ebp, esp
+  00003	83 ec 10	 sub	 esp, 16			; 00000010H
+  00006	a1 00 00 00 00	 mov	 eax, DWORD PTR ___security_cookie
+  0000b	33 c5		 xor	 eax, ebp
+  0000d	89 45 fc	 mov	 DWORD PTR __$ArrayPad$[ebp], eax
+  00010	56		 push	 esi
+  00011	8b f1		 mov	 esi, ecx
+
+; 1460 : 	if (!__CanActMainInstance())
+
+  00013	e8 00 00 00 00	 call	 ?__CanActMainInstance@CPythonNetworkStream@@IAE_NXZ ; CPythonNetworkStream::__CanActMainInstance
+  00018	84 c0		 test	 al, al
+  0001a	74 71		 je	 SHORT $LN3@SendItemNe
+
+; 1461 : 		return true;
+; 1462 : 	TPacketCGItemNewAttribute itemNewAttributePacket;
+; 1463 : 	itemNewAttributePacket.header = HEADER_CG_ITEM_USE_NEW_ATTRIBUTE;
+; 1464 : 	itemNewAttributePacket.source_pos = source_pos;
+
+  0001c	66 8b 45 08	 mov	 ax, WORD PTR _source_pos$[ebp]
+
+; 1465 : 	itemNewAttributePacket.target_pos = target_pos;
+; 1466 : 	itemNewAttributePacket.bValues[0] = bValues[0];
+; 1467 : 	itemNewAttributePacket.bValues[1] = bValues[1];
+; 1468 : 	itemNewAttributePacket.bValues[2] = bValues[2];
+; 1469 : 	itemNewAttributePacket.bValues[3] = bValues[3];
+; 1470 : 	itemNewAttributePacket.bValues[4] = bValues[4];
+; 1471 : 	if (!Send(sizeof(TPacketCGItemNewAttribute), &itemNewAttributePacket))
+
+  00020	8b ce		 mov	 ecx, esi
+  00022	8b 55 10	 mov	 edx, DWORD PTR _bValues$[ebp]
+  00025	66 89 45 f1	 mov	 WORD PTR _itemNewAttributePacket$[ebp+1], ax
+  00029	8a 45 0a	 mov	 al, BYTE PTR _source_pos$[ebp+2]
+  0002c	88 45 f3	 mov	 BYTE PTR _itemNewAttributePacket$[ebp+3], al
+  0002f	66 8b 45 0c	 mov	 ax, WORD PTR _target_pos$[ebp]
+  00033	66 89 45 f4	 mov	 WORD PTR _itemNewAttributePacket$[ebp+4], ax
+  00037	8a 45 0e	 mov	 al, BYTE PTR _target_pos$[ebp+2]
+  0003a	88 45 f6	 mov	 BYTE PTR _itemNewAttributePacket$[ebp+6], al
+  0003d	8a 02		 mov	 al, BYTE PTR [edx]
+  0003f	88 45 f7	 mov	 BYTE PTR _itemNewAttributePacket$[ebp+7], al
+  00042	8a 42 01	 mov	 al, BYTE PTR [edx+1]
+  00045	88 45 f8	 mov	 BYTE PTR _itemNewAttributePacket$[ebp+8], al
+  00048	8a 42 02	 mov	 al, BYTE PTR [edx+2]
+  0004b	88 45 f9	 mov	 BYTE PTR _itemNewAttributePacket$[ebp+9], al
+  0004e	8a 42 03	 mov	 al, BYTE PTR [edx+3]
+  00051	88 45 fa	 mov	 BYTE PTR _itemNewAttributePacket$[ebp+10], al
+  00054	8a 42 04	 mov	 al, BYTE PTR [edx+4]
+  00057	88 45 fb	 mov	 BYTE PTR _itemNewAttributePacket$[ebp+11], al
+  0005a	8d 45 f0	 lea	 eax, DWORD PTR _itemNewAttributePacket$[ebp]
+  0005d	50		 push	 eax
+  0005e	6a 0c		 push	 12			; 0000000cH
+  00060	c6 45 f0 73	 mov	 BYTE PTR _itemNewAttributePacket$[ebp], 115 ; 00000073H
+  00064	e8 00 00 00 00	 call	 ?Send@CNetworkStream@@QAE_NHPBX@Z ; CNetworkStream::Send
+  00069	84 c0		 test	 al, al
+  0006b	75 20		 jne	 SHORT $LN3@SendItemNe
+
+; 1472 : 	{
+; 1473 : 		Tracen("SendItemNewAttributePacket Error");
+
+  0006d	68 00 00 00 00	 push	 OFFSET ??_C@_0CB@NABGIOIB@SendItemNewAttributePacket?5Erro@
+  00072	e8 00 00 00 00	 call	 ?Tracen@@YAXPBD@Z	; Tracen
+  00077	83 c4 04	 add	 esp, 4
+
+; 1474 : 		return false;
+
+  0007a	32 c0		 xor	 al, al
+  0007c	5e		 pop	 esi
+
+; 1475 : 	}
+; 1476 : 	return true;
+; 1477 : }
+
+  0007d	8b 4d fc	 mov	 ecx, DWORD PTR __$ArrayPad$[ebp]
+  00080	33 cd		 xor	 ecx, ebp
+  00082	e8 00 00 00 00	 call	 @__security_check_cookie@4
+  00087	8b e5		 mov	 esp, ebp
+  00089	5d		 pop	 ebp
+  0008a	c2 0c 00	 ret	 12			; 0000000cH
+$LN3@SendItemNe:
+  0008d	8b 4d fc	 mov	 ecx, DWORD PTR __$ArrayPad$[ebp]
+  00090	b0 01		 mov	 al, 1
+  00092	33 cd		 xor	 ecx, ebp
+  00094	5e		 pop	 esi
+  00095	e8 00 00 00 00	 call	 @__security_check_cookie@4
+  0009a	8b e5		 mov	 esp, ebp
+  0009c	5d		 pop	 ebp
+  0009d	c2 0c 00	 ret	 12			; 0000000cH
+?SendItemNewAttributePacket@CPythonNetworkStream@@QAE_NUSItemPos@@0PAE@Z ENDP ; CPythonNetworkStream::SendItemNewAttributePacket
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonNetworkStreamPhaseGameItem.cpp
@@ -1219,7 +1331,7 @@ _kDragonSoul$ = -8					; size = 5
   00006	b8 ff ff 00 00	 mov	 eax, 65535		; 0000ffffH
 ; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\Packet.h
 
-; 3376 : 	SPacketGCDragonSoulRefine() : header(HEADER_GC_DRAGON_SOUL_REFINE) {}
+; 3378 : 	SPacketGCDragonSoulRefine() : header(HEADER_GC_DRAGON_SOUL_REFINE) {}
 
   0000b	c6 45 f8 d1	 mov	 BYTE PTR _kDragonSoul$[ebp], 209 ; 000000d1H
 ; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonNetworkStreamPhaseGameItem.cpp
@@ -3735,5 +3847,26 @@ $LN8@PlayInvent:
   0006c	5d		 pop	 ebp
   0006d	c2 04 00	 ret	 4
 ?__PlayInventoryItemUseSound@CPythonNetworkStream@@IAEXUSItemPos@@@Z ENDP ; CPythonNetworkStream::__PlayInventoryItemUseSound
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\GameType.h
+;	COMDAT ??0command_item_new_attribute@@QAE@XZ
+_TEXT	SEGMENT
+??0command_item_new_attribute@@QAE@XZ PROC		; command_item_new_attribute::command_item_new_attribute, COMDAT
+; _this$ = ecx
+
+; 448  : 		cell = WORD_MAX;
+
+  00000	b8 ff ff 00 00	 mov	 eax, 65535		; 0000ffffH
+  00005	c6 41 01 01	 mov	 BYTE PTR [ecx+1], 1
+  00009	66 89 41 02	 mov	 WORD PTR [ecx+2], ax
+  0000d	66 89 41 05	 mov	 WORD PTR [ecx+5], ax
+  00011	8b c1		 mov	 eax, ecx
+
+; 447  : 		window_type = INVENTORY;
+
+  00013	c6 41 04 01	 mov	 BYTE PTR [ecx+4], 1
+  00017	c3		 ret	 0
+??0command_item_new_attribute@@QAE@XZ ENDP		; command_item_new_attribute::command_item_new_attribute
 _TEXT	ENDS
 END

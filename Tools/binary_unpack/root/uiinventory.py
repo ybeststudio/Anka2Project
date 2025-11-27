@@ -33,6 +33,9 @@ if app.ENABLE_ACCE_COSTUME_SYSTEM:
 if app.ENABLE_AUTO_SELL_SYSTEM:
 	import uiautosell
 
+if app.ENABLE_STYLE_ATTRIBUTE_SYSTEM:
+	import uiAttachBonus
+
 ITEM_FLAG_APPLICABLE = 1 << 14
 
 class InventoryWindowPotions(ui.ScriptWindow):
@@ -382,6 +385,10 @@ class InventoryWindow(ui.ScriptWindow):
 		self.attachMetinDialog = uiAttachMetin.AttachMetinDialog()
 		self.attachMetinDialog.Hide()
 
+		if app.ENABLE_STYLE_ATTRIBUTE_SYSTEM:
+			self.attachBonusDialog = uiAttachBonus.AttachBonusDialog()
+			self.attachBonusDialog.Hide()
+
 		for i in xrange(player.INVENTORY_PAGE_COUNT):
 			self.inventoryTab[i].SetEvent(lambda arg=i: self.SetInventoryPage(arg))
 		self.inventoryTab[0].Down()
@@ -456,6 +463,11 @@ class InventoryWindow(ui.ScriptWindow):
 
 		self.attachMetinDialog.Destroy()
 		self.attachMetinDialog = 0
+
+		if app.ENABLE_STYLE_ATTRIBUTE_SYSTEM:
+			self.attachBonusDialog.Hide()
+			self.attachBonusDialog.Destroy()
+			self.attachBonusDialog = 0
 
 		self.tooltipItem = None
 		self.wndItem = 0
@@ -1108,6 +1120,11 @@ class InventoryWindow(ui.ScriptWindow):
 		if srcItemSlotPos == dstItemSlotPos:
 			return
 
+		if app.ENABLE_STYLE_ATTRIBUTE_SYSTEM:
+			if player.GetItemIndex(srcItemSlotPos) == 49999:
+				self.AttachBonusToItem(srcItemSlotPos, dstItemSlotPos)
+				return
+
 		if app.ENABLE_AURA_COSTUME_SYSTEM:
 			if player.IsAuraRefineWindowOpen():
 				return
@@ -1289,6 +1306,23 @@ class InventoryWindow(ui.ScriptWindow):
 
 		self.attachMetinDialog.Open(metinSlotPos, targetSlotPos)
 
+	def OnUpdate(self):
+		if app.ENABLE_STYLE_ATTRIBUTE_SYSTEM:
+			if self.attachBonusDialog:
+				if self.attachBonusDialog.IsShow():
+					self.attachBonusDialog.Update()
+
+	if app.ENABLE_STYLE_ATTRIBUTE_SYSTEM:
+		def AttachBonusToItem(self, sourceSlotPos, targetSlotPos):
+			targetIndex = player.GetItemIndex(targetSlotPos)
+			item.SelectItem(targetIndex)
+
+			if item.GetItemType() not in (item.ITEM_TYPE_WEAPON, item.ITEM_TYPE_ARMOR):
+				return False
+
+			self.attachBonusDialog.Open(sourceSlotPos, targetSlotPos)
+			constInfo.SET_ITEM_QUESTION_DIALOG_STATUS(1)
+
 	def OverOutItem(self):
 		self.wndItem.SetUsableItem(FALSE)
 		if None != self.tooltipItem:
@@ -1345,6 +1379,9 @@ class InventoryWindow(ui.ScriptWindow):
 			return TRUE
 		elif (player.GetItemFlags(srcSlotPos) & ITEM_FLAG_APPLICABLE) == ITEM_FLAG_APPLICABLE:
 			return TRUE
+		elif app.ENABLE_STYLE_ATTRIBUTE_SYSTEM and player.GetItemIndex(srcSlotPos) == 71051:
+			if self.__CanPutNewAttribute(dstSlotPos):
+				return TRUE
 		else:
 			if app.ENABLE_EXTEND_TIME_COSTUME_SYSTEM:
 				if player.GetItemIndex(srcSlotPos) >= 84014 and player.GetItemIndex(srcSlotPos) <= 84016:
@@ -1380,6 +1417,8 @@ class InventoryWindow(ui.ScriptWindow):
 			if player.CanUnlock(srcItemVNum, dstSlotPos):
 				return TRUE
 		elif (player.GetItemFlags(srcSlotPos) & ITEM_FLAG_APPLICABLE) == ITEM_FLAG_APPLICABLE:
+			return TRUE
+		elif app.ENABLE_STYLE_ATTRIBUTE_SYSTEM and player.GetItemIndex(srcSlotPos) == 49999:
 			return TRUE
 		else:
 			if app.ENABLE_EXTEND_TIME_COSTUME_SYSTEM:
@@ -1454,20 +1493,30 @@ class InventoryWindow(ui.ScriptWindow):
 		return FALSE
 
 	def __CanChangeItemAttrList(self, dstSlotPos):
-		dstItemVNum = player.GetItemIndex(dstSlotPos)
-		if dstItemVNum == 0:
-			return FALSE
-
-		item.SelectItem(dstItemVNum)
-
-		if not item.GetItemType() in (item.ITEM_TYPE_WEAPON, item.ITEM_TYPE_ARMOR):
-			return FALSE
-
-		for i in xrange(player.METIN_SOCKET_MAX_NUM):
-			if player.GetItemAttribute(dstSlotPos, i) != 0:
+		if app.ENABLE_STYLE_ATTRIBUTE_SYSTEM:
+			def __CanPutNewAttribute(self, dstSlotPos):
+				dstItemVNum = player.GetItemIndex(dstSlotPos)
+				if dstItemVNum == 0:
+					return FALSE
+				item.SelectItem(dstItemVNum)
+				if item.GetItemType() not in (item.ITEM_TYPE_WEAPON, item.ITEM_TYPE_ARMOR):
+					return FALSE
 				return TRUE
+			
+			dstItemVNum = player.GetItemIndex(dstSlotPos)
+			if dstItemVNum == 0:
+				return FALSE
 
-		return FALSE
+			item.SelectItem(dstItemVNum)
+
+			if not item.GetItemType() in (item.ITEM_TYPE_WEAPON, item.ITEM_TYPE_ARMOR):
+				return FALSE
+
+			for i in xrange(player.METIN_SOCKET_MAX_NUM):
+				if player.GetItemAttribute(dstSlotPos, i) != 0:
+					return TRUE
+
+			return FALSE
 
 	def __CanPutAccessorySocket(self, dstSlotPos, mtrlVnum):
 		dstItemVNum = player.GetItemIndex(dstSlotPos)

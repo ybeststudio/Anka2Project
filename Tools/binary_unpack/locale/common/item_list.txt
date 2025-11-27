@@ -7104,3 +7104,6 @@
 90000	ETC	icon/item/90000.tga
 93100	ETC	icon/item/93100.tga
 49324	ETC	icon/item/38014.tga
+49999	ETC	icon/item/49999.tga
+75888	ETC	icon/item/75888.tga
+75891	ETC	icon/item/75891.tga

@@ -279,13 +279,26 @@ void CItem::AddAttribute()
 		PutAttribute(aiItemAddAttributePercent);
 }
 
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+void CItem::ClearAttribute(bool clearMode)
+#else
 void CItem::ClearAttribute()
+#endif
 {
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+	int iCount = (clearMode ? MAX_NORM_ATTR_NUM : 5);
+	for (int i = 0; i < iCount; ++i)
+	{
+		m_aAttr[i].bType = 0;
+		m_aAttr[i].sValue = 0;
+	}
+#else
 	for (int i = 0; i < MAX_NORM_ATTR_NUM; ++i)
 	{
 		m_aAttr[i].bType = 0;
 		m_aAttr[i].sValue = 0;
 	}
+#endif
 }
 
 int CItem::GetAttributeCount()
@@ -728,5 +741,86 @@ void CItem::AddAttrCostumeHair()
 
 	if (GetAttributeCount() < MAX_NORM_ATTR_NUM)
 		PutAttributeCostumeHair(aiItemAddAttributePercent);
+}
+#endif
+
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+int CItem::AddNewStyleAttribute(BYTE* bValues)
+{
+	int iAttributeSet = GetAttributeSetIndex();
+
+	if (iAttributeSet < 0)
+		return 1;
+
+	// 1 = unknown attribute
+	// 2 = not enough attribute size
+	// 3 = success
+
+	bool have_addon = false;
+
+	TItemTable const* pProto = GetProto();
+
+	if (pProto && pProto->sAddonType)
+		have_addon = true;
+
+	for (int apply = 0; apply < MAX_APPLY_NUM; ++apply)
+	{
+		const TItemAttrTable& r = g_map_itemAttr[apply];
+
+		for (int i = 0; i < (have_addon ? 3 : 5); ++i)
+		{
+			if (!r.bMaxLevelBySet[iAttributeSet] && (apply == bValues[i]))
+			{
+				sys_err("Trying to add unknown attribute to item: bValue: %d", bValues[i]);
+				return 1;
+			}
+		}
+	}
+	std::vector<BYTE> vec_bTypes;
+
+	for (int i = 0; i < (have_addon ? 3 : 5); ++i)
+		vec_bTypes.push_back(bValues[i]);
+
+	std::sort(vec_bTypes.begin(), vec_bTypes.end());
+	vec_bTypes.erase(std::unique(vec_bTypes.begin(), vec_bTypes.end()), vec_bTypes.end());
+
+	if (have_addon && vec_bTypes.size() == 3)
+	{
+		ClearAttribute(false);
+
+		ApplyAddon(pProto->sAddonType);
+
+		AddAttr(vec_bTypes[0], number(1, 5));
+		AddAttr(vec_bTypes[1], number(1, 5));
+		AddAttr(vec_bTypes[2], number(1, 5));
+
+		sys_log(0, "CItem::AddNewStyleAttribute(vec_bTypes[0]: %d, vec_bTypes[1]: %d, vec_bTypes[2]: %d, vec_bTypes[3]: %d, vec_bTypes[4]: %d)", vec_bTypes[0], vec_bTypes[1], vec_bTypes[2], vec_bTypes[3], vec_bTypes[4]);
+
+		return 3;
+	}
+
+	bool bNormSucc = false;
+
+	if (vec_bTypes.size() == 5)
+	{
+		ClearAttribute(false);
+
+		for (itertype(vec_bTypes) it = vec_bTypes.begin(); it != vec_bTypes.end(); ++it)
+		{
+			AddAttr(*it, number(1, 5));
+		}
+
+		sys_log(0, "CItem::AddNewStyleAttribute(vec_bTypes[0]: %d, vec_bTypes[1]: %d, vec_bTypes[2]: %d, vec_bTypes[3]: %d, vec_bTypes[4]: %d)", vec_bTypes[0], vec_bTypes[1], vec_bTypes[2], vec_bTypes[3], vec_bTypes[4]);
+
+		bNormSucc = true;
+	}
+	else { return 2; }
+
+	sys_log(0, "CItem::AddNewStyleAttribute(bNormSucc: %d", bNormSucc);
+
+	if (bNormSucc)
+		return 3;
+
+	return 1;
 }
 #endif

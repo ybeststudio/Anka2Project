@@ -176,6 +176,10 @@ class CInputMain : public CInputProcessor
 
 		void Refine(LPCHARACTER ch, const char* c_pData);
 
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+		void		ItemNewAttributes(LPCHARACTER ch, const char* pcData);
+#endif
+
 #ifdef ENABLE_QUICK_SELL_ITEM
 		void ItemSell(LPCHARACTER ch, const char * data);
 #endif

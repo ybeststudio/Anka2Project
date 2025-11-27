@@ -40,34 +40,4 @@ CONST	SEGMENT
 PUBLIC	?initProfiler@@YAXXZ				; initProfiler
 PUBLIC	?profilerPop@@YAPAU_object@@PAU1@0@Z		; profilerPop
 PUBLIC	?profilerPush@@YAPAU_object@@PAU1@0@Z		; profilerPush
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonProfilerModule.cpp
-;	COMDAT ?initProfiler@@YAXXZ
-_TEXT	SEGMENT
-?initProfiler@@YAXXZ PROC				; initProfiler, COMDAT
-
-; 24   : 	static PyMethodDef s_methods[] =
-; 25   : 	{
-; 26   : 		{ "Push",				profilerPush,				METH_VARARGS },
-; 27   : 		{ "Pop",				profilerPop,				METH_VARARGS },
-; 28   : 
-; 29   : 		{ nullptr,					nullptr,						NULL		 },
-; 30   : 	};
-; 31   : 
-; 32   : 	Py_InitModule("profiler", s_methods);
-
-  00000	68 f5 03 00 00	 push	 1013			; 000003f5H
-  00005	6a 00		 push	 0
-  00007	6a 00		 push	 0
-  00009	68 00 00 00 00	 push	 OFFSET ?s_methods@?1??initProfiler@@YAXXZ@4PAUPyMethodDef@@A
-  0000e	68 00 00 00 00	 push	 OFFSET ??_C@_08BCLECBBK@profiler@
-  00013	ff 15 00 00 00
-	00		 call	 DWORD PTR __imp__Py_InitModule4
-  00019	83 c4 14	 add	 esp, 20			; 00000014H
-
-; 33   : }
-
-  0001c	c3		 ret	 0
-?initProfiler@@YAXXZ ENDP				; initProfiler
-_TEXT	ENDS
 END

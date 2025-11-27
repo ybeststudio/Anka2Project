@@ -126,6 +126,8 @@
 	#define MAX_AUTO_SELL_ITEMS 100					// Listeye eklenecek maksimum item sayýsý
 #endif
 #define ENABLE_PLAYERS_ONLINE                  		// Çevrimiçi oyuncu /players_online komutunu  etkinleþtir;
+#define ENABLE_STYLE_ATTRIBUTE_SYSTEM      			// Seçmeli özel kadim efsunu sistemini  etkinleþtir;
+#define ENABLE_ITEM_MODIFIER_AVG_SKILL				// Ortalama ve Beceri efsun nesnesi sistemini etkinleþtir;
 
 /*** DÜZELTMELER ***/
 #define FIX_SyncPosition                       		// Pozisyon senkronizasyon sorunlarýný düzeltir

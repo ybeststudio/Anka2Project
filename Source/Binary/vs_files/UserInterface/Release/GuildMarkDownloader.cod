@@ -880,98 +880,66 @@ EXTRN	??_E?$CDynamicPoolEx@VCRotationDecorator@NEffectUpdateDecorator@@@@UAEPAXI
 ;	COMDAT ?ms_kPool@?$CPooledObject@VCRotationDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCRotationDecorator@NEffectUpdateDecorator@@@@A
 _DATA	SEGMENT
 ?ms_kPool@?$CPooledObject@VCRotationDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCRotationDecorator@NEffectUpdateDecorator@@@@A DD FLAT:??_7?$CDynamicPoolEx@VCRotationDecorator@NEffectUpdateDecorator@@@@6B@ ; CPooledObject<NEffectUpdateDecorator::CRotationDecorator>::ms_kPool
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
 _DATA	ENDS
 ;	COMDAT ?ms_kPool@?$CPooledObject@VCGravityDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCGravityDecorator@NEffectUpdateDecorator@@@@A
 _DATA	SEGMENT
 ?ms_kPool@?$CPooledObject@VCGravityDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCGravityDecorator@NEffectUpdateDecorator@@@@A DD FLAT:??_7?$CDynamicPoolEx@VCGravityDecorator@NEffectUpdateDecorator@@@@6B@ ; CPooledObject<NEffectUpdateDecorator::CGravityDecorator>::ms_kPool
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
 _DATA	ENDS
 ;	COMDAT ?ms_kPool@?$CPooledObject@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@A
 _DATA	SEGMENT
 ?ms_kPool@?$CPooledObject@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@A DD FLAT:??_7?$CDynamicPoolEx@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@6B@ ; CPooledObject<NEffectUpdateDecorator::CAirResistanceDecorator>::ms_kPool
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
 _DATA	ENDS
 ;	COMDAT ?ms_kPool@?$CPooledObject@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@A
 _DATA	SEGMENT
 ?ms_kPool@?$CPooledObject@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@A DD FLAT:??_7?$CDynamicPoolEx@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@6B@ ; CPooledObject<NEffectUpdateDecorator::CTextureAnimationRandomDecorator>::ms_kPool
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
 _DATA	ENDS
 ;	COMDAT ?ms_kPool@?$CPooledObject@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@A
 _DATA	SEGMENT
 ?ms_kPool@?$CPooledObject@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@A DD FLAT:??_7?$CDynamicPoolEx@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@6B@ ; CPooledObject<NEffectUpdateDecorator::CTextureAnimationCCWDecorator>::ms_kPool
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
 _DATA	ENDS
 ;	COMDAT ?ms_kPool@?$CPooledObject@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@A
 _DATA	SEGMENT
 ?ms_kPool@?$CPooledObject@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@A DD FLAT:??_7?$CDynamicPoolEx@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@6B@ ; CPooledObject<NEffectUpdateDecorator::CTextureAnimationCWDecorator>::ms_kPool
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
 _DATA	ENDS
 ;	COMDAT ?ms_kPool@?$CPooledObject@VCNullDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCNullDecorator@NEffectUpdateDecorator@@@@A
 _DATA	SEGMENT
 ?ms_kPool@?$CPooledObject@VCNullDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCNullDecorator@NEffectUpdateDecorator@@@@A DD FLAT:??_7?$CDynamicPoolEx@VCNullDecorator@NEffectUpdateDecorator@@@@6B@ ; CPooledObject<NEffectUpdateDecorator::CNullDecorator>::ms_kPool
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
 _DATA	ENDS
 ;	COMDAT ?ms_kPool@?$CPooledObject@VCHeaderDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCHeaderDecorator@NEffectUpdateDecorator@@@@A
 _DATA	SEGMENT
 ?ms_kPool@?$CPooledObject@VCHeaderDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCHeaderDecorator@NEffectUpdateDecorator@@@@A DD FLAT:??_7?$CDynamicPoolEx@VCHeaderDecorator@NEffectUpdateDecorator@@@@6B@ ; CPooledObject<NEffectUpdateDecorator::CHeaderDecorator>::ms_kPool
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
-	DD	00H
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
+	DQ	00000000000000000r		; 0
 _DATA	ENDS
 ;	COMDAT xdata$x
 xdata$x	SEGMENT
@@ -1038,180 +1006,4 @@ CRT$XCU	ENDS
 CRT$XCU	SEGMENT
 ??ms_kPool$initializer$@?$CPooledObject@VCRotationDecorator@NEffectUpdateDecorator@@@@1P6AXXZA@@3P6AXXZA DD FLAT:??__E?ms_kPool@?$CPooledObject@VCRotationDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCRotationDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ; ??ms_kPool$initializer$@?$CPooledObject@VCRotationDecorator@NEffectUpdateDecorator@@@@1P6AXXZA@@3P6AXXZA
 CRT$XCU	ENDS
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterLib\Pool.h
-;	COMDAT ??__E?ms_kPool@?$CPooledObject@VCHeaderDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCHeaderDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$di	SEGMENT
-??__E?ms_kPool@?$CPooledObject@VCHeaderDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCHeaderDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CHeaderDecorator>::ms_kPool'', COMDAT
-
-; 237  : template <class T> CDynamicPoolEx<T> CPooledObject<T>::ms_kPool;
-
-  00000	68 00 00 00 00	 push	 OFFSET ??__F?ms_kPool@?$CPooledObject@VCHeaderDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCHeaderDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CHeaderDecorator>::ms_kPool''
-  00005	e8 00 00 00 00	 call	 _atexit
-  0000a	59		 pop	 ecx
-  0000b	c3		 ret	 0
-??__E?ms_kPool@?$CPooledObject@VCHeaderDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCHeaderDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CHeaderDecorator>::ms_kPool''
-text$di	ENDS
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterLib\Pool.h
-;	COMDAT ??__E?ms_kPool@?$CPooledObject@VCNullDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCNullDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$di	SEGMENT
-??__E?ms_kPool@?$CPooledObject@VCNullDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCNullDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CNullDecorator>::ms_kPool'', COMDAT
-
-; 237  : template <class T> CDynamicPoolEx<T> CPooledObject<T>::ms_kPool;
-
-  00000	68 00 00 00 00	 push	 OFFSET ??__F?ms_kPool@?$CPooledObject@VCNullDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCNullDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CNullDecorator>::ms_kPool''
-  00005	e8 00 00 00 00	 call	 _atexit
-  0000a	59		 pop	 ecx
-  0000b	c3		 ret	 0
-??__E?ms_kPool@?$CPooledObject@VCNullDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCNullDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CNullDecorator>::ms_kPool''
-text$di	ENDS
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterLib\Pool.h
-;	COMDAT ??__E?ms_kPool@?$CPooledObject@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$di	SEGMENT
-??__E?ms_kPool@?$CPooledObject@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationCWDecorator>::ms_kPool'', COMDAT
-
-; 237  : template <class T> CDynamicPoolEx<T> CPooledObject<T>::ms_kPool;
-
-  00000	68 00 00 00 00	 push	 OFFSET ??__F?ms_kPool@?$CPooledObject@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationCWDecorator>::ms_kPool''
-  00005	e8 00 00 00 00	 call	 _atexit
-  0000a	59		 pop	 ecx
-  0000b	c3		 ret	 0
-??__E?ms_kPool@?$CPooledObject@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationCWDecorator>::ms_kPool''
-text$di	ENDS
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterLib\Pool.h
-;	COMDAT ??__E?ms_kPool@?$CPooledObject@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$di	SEGMENT
-??__E?ms_kPool@?$CPooledObject@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationCCWDecorator>::ms_kPool'', COMDAT
-
-; 237  : template <class T> CDynamicPoolEx<T> CPooledObject<T>::ms_kPool;
-
-  00000	68 00 00 00 00	 push	 OFFSET ??__F?ms_kPool@?$CPooledObject@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationCCWDecorator>::ms_kPool''
-  00005	e8 00 00 00 00	 call	 _atexit
-  0000a	59		 pop	 ecx
-  0000b	c3		 ret	 0
-??__E?ms_kPool@?$CPooledObject@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationCCWDecorator>::ms_kPool''
-text$di	ENDS
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterLib\Pool.h
-;	COMDAT ??__E?ms_kPool@?$CPooledObject@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$di	SEGMENT
-??__E?ms_kPool@?$CPooledObject@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationRandomDecorator>::ms_kPool'', COMDAT
-
-; 237  : template <class T> CDynamicPoolEx<T> CPooledObject<T>::ms_kPool;
-
-  00000	68 00 00 00 00	 push	 OFFSET ??__F?ms_kPool@?$CPooledObject@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationRandomDecorator>::ms_kPool''
-  00005	e8 00 00 00 00	 call	 _atexit
-  0000a	59		 pop	 ecx
-  0000b	c3		 ret	 0
-??__E?ms_kPool@?$CPooledObject@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationRandomDecorator>::ms_kPool''
-text$di	ENDS
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterLib\Pool.h
-;	COMDAT ??__E?ms_kPool@?$CPooledObject@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$di	SEGMENT
-??__E?ms_kPool@?$CPooledObject@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CAirResistanceDecorator>::ms_kPool'', COMDAT
-
-; 237  : template <class T> CDynamicPoolEx<T> CPooledObject<T>::ms_kPool;
-
-  00000	68 00 00 00 00	 push	 OFFSET ??__F?ms_kPool@?$CPooledObject@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CAirResistanceDecorator>::ms_kPool''
-  00005	e8 00 00 00 00	 call	 _atexit
-  0000a	59		 pop	 ecx
-  0000b	c3		 ret	 0
-??__E?ms_kPool@?$CPooledObject@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CAirResistanceDecorator>::ms_kPool''
-text$di	ENDS
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterLib\Pool.h
-;	COMDAT ??__E?ms_kPool@?$CPooledObject@VCGravityDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCGravityDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$di	SEGMENT
-??__E?ms_kPool@?$CPooledObject@VCGravityDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCGravityDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CGravityDecorator>::ms_kPool'', COMDAT
-
-; 237  : template <class T> CDynamicPoolEx<T> CPooledObject<T>::ms_kPool;
-
-  00000	68 00 00 00 00	 push	 OFFSET ??__F?ms_kPool@?$CPooledObject@VCGravityDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCGravityDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CGravityDecorator>::ms_kPool''
-  00005	e8 00 00 00 00	 call	 _atexit
-  0000a	59		 pop	 ecx
-  0000b	c3		 ret	 0
-??__E?ms_kPool@?$CPooledObject@VCGravityDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCGravityDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CGravityDecorator>::ms_kPool''
-text$di	ENDS
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterLib\Pool.h
-;	COMDAT ??__E?ms_kPool@?$CPooledObject@VCRotationDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCRotationDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$di	SEGMENT
-??__E?ms_kPool@?$CPooledObject@VCRotationDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCRotationDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CRotationDecorator>::ms_kPool'', COMDAT
-
-; 237  : template <class T> CDynamicPoolEx<T> CPooledObject<T>::ms_kPool;
-
-  00000	68 00 00 00 00	 push	 OFFSET ??__F?ms_kPool@?$CPooledObject@VCRotationDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCRotationDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CRotationDecorator>::ms_kPool''
-  00005	e8 00 00 00 00	 call	 _atexit
-  0000a	59		 pop	 ecx
-  0000b	c3		 ret	 0
-??__E?ms_kPool@?$CPooledObject@VCRotationDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCRotationDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic initializer for 'CPooledObject<NEffectUpdateDecorator::CRotationDecorator>::ms_kPool''
-text$di	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT ??__F?ms_kPool@?$CPooledObject@VCRotationDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCRotationDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$yd	SEGMENT
-??__F?ms_kPool@?$CPooledObject@VCRotationDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCRotationDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CRotationDecorator>::ms_kPool'', COMDAT
-  00000	b9 00 00 00 00	 mov	 ecx, OFFSET ?ms_kPool@?$CPooledObject@VCRotationDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCRotationDecorator@NEffectUpdateDecorator@@@@A ; CPooledObject<NEffectUpdateDecorator::CRotationDecorator>::ms_kPool
-  00005	e9 00 00 00 00	 jmp	 ??1?$CDynamicPoolEx@VCRotationDecorator@NEffectUpdateDecorator@@@@UAE@XZ ; CDynamicPoolEx<NEffectUpdateDecorator::CRotationDecorator>::~CDynamicPoolEx<NEffectUpdateDecorator::CRotationDecorator>
-??__F?ms_kPool@?$CPooledObject@VCRotationDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCRotationDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CRotationDecorator>::ms_kPool''
-text$yd	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT ??__F?ms_kPool@?$CPooledObject@VCGravityDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCGravityDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$yd	SEGMENT
-??__F?ms_kPool@?$CPooledObject@VCGravityDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCGravityDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CGravityDecorator>::ms_kPool'', COMDAT
-  00000	b9 00 00 00 00	 mov	 ecx, OFFSET ?ms_kPool@?$CPooledObject@VCGravityDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCGravityDecorator@NEffectUpdateDecorator@@@@A ; CPooledObject<NEffectUpdateDecorator::CGravityDecorator>::ms_kPool
-  00005	e9 00 00 00 00	 jmp	 ??1?$CDynamicPoolEx@VCGravityDecorator@NEffectUpdateDecorator@@@@UAE@XZ ; CDynamicPoolEx<NEffectUpdateDecorator::CGravityDecorator>::~CDynamicPoolEx<NEffectUpdateDecorator::CGravityDecorator>
-??__F?ms_kPool@?$CPooledObject@VCGravityDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCGravityDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CGravityDecorator>::ms_kPool''
-text$yd	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT ??__F?ms_kPool@?$CPooledObject@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$yd	SEGMENT
-??__F?ms_kPool@?$CPooledObject@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CAirResistanceDecorator>::ms_kPool'', COMDAT
-  00000	b9 00 00 00 00	 mov	 ecx, OFFSET ?ms_kPool@?$CPooledObject@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@A ; CPooledObject<NEffectUpdateDecorator::CAirResistanceDecorator>::ms_kPool
-  00005	e9 00 00 00 00	 jmp	 ??1?$CDynamicPoolEx@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@UAE@XZ ; CDynamicPoolEx<NEffectUpdateDecorator::CAirResistanceDecorator>::~CDynamicPoolEx<NEffectUpdateDecorator::CAirResistanceDecorator>
-??__F?ms_kPool@?$CPooledObject@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCAirResistanceDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CAirResistanceDecorator>::ms_kPool''
-text$yd	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT ??__F?ms_kPool@?$CPooledObject@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$yd	SEGMENT
-??__F?ms_kPool@?$CPooledObject@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationRandomDecorator>::ms_kPool'', COMDAT
-  00000	b9 00 00 00 00	 mov	 ecx, OFFSET ?ms_kPool@?$CPooledObject@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@A ; CPooledObject<NEffectUpdateDecorator::CTextureAnimationRandomDecorator>::ms_kPool
-  00005	e9 00 00 00 00	 jmp	 ??1?$CDynamicPoolEx@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@UAE@XZ ; CDynamicPoolEx<NEffectUpdateDecorator::CTextureAnimationRandomDecorator>::~CDynamicPoolEx<NEffectUpdateDecorator::CTextureAnimationRandomDecorator>
-??__F?ms_kPool@?$CPooledObject@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationRandomDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationRandomDecorator>::ms_kPool''
-text$yd	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT ??__F?ms_kPool@?$CPooledObject@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$yd	SEGMENT
-??__F?ms_kPool@?$CPooledObject@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationCCWDecorator>::ms_kPool'', COMDAT
-  00000	b9 00 00 00 00	 mov	 ecx, OFFSET ?ms_kPool@?$CPooledObject@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@A ; CPooledObject<NEffectUpdateDecorator::CTextureAnimationCCWDecorator>::ms_kPool
-  00005	e9 00 00 00 00	 jmp	 ??1?$CDynamicPoolEx@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@UAE@XZ ; CDynamicPoolEx<NEffectUpdateDecorator::CTextureAnimationCCWDecorator>::~CDynamicPoolEx<NEffectUpdateDecorator::CTextureAnimationCCWDecorator>
-??__F?ms_kPool@?$CPooledObject@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCCWDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationCCWDecorator>::ms_kPool''
-text$yd	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT ??__F?ms_kPool@?$CPooledObject@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$yd	SEGMENT
-??__F?ms_kPool@?$CPooledObject@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationCWDecorator>::ms_kPool'', COMDAT
-  00000	b9 00 00 00 00	 mov	 ecx, OFFSET ?ms_kPool@?$CPooledObject@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@A ; CPooledObject<NEffectUpdateDecorator::CTextureAnimationCWDecorator>::ms_kPool
-  00005	e9 00 00 00 00	 jmp	 ??1?$CDynamicPoolEx@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@UAE@XZ ; CDynamicPoolEx<NEffectUpdateDecorator::CTextureAnimationCWDecorator>::~CDynamicPoolEx<NEffectUpdateDecorator::CTextureAnimationCWDecorator>
-??__F?ms_kPool@?$CPooledObject@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCTextureAnimationCWDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CTextureAnimationCWDecorator>::ms_kPool''
-text$yd	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT ??__F?ms_kPool@?$CPooledObject@VCNullDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCNullDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$yd	SEGMENT
-??__F?ms_kPool@?$CPooledObject@VCNullDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCNullDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CNullDecorator>::ms_kPool'', COMDAT
-  00000	b9 00 00 00 00	 mov	 ecx, OFFSET ?ms_kPool@?$CPooledObject@VCNullDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCNullDecorator@NEffectUpdateDecorator@@@@A ; CPooledObject<NEffectUpdateDecorator::CNullDecorator>::ms_kPool
-  00005	e9 00 00 00 00	 jmp	 ??1?$CDynamicPoolEx@VCNullDecorator@NEffectUpdateDecorator@@@@UAE@XZ ; CDynamicPoolEx<NEffectUpdateDecorator::CNullDecorator>::~CDynamicPoolEx<NEffectUpdateDecorator::CNullDecorator>
-??__F?ms_kPool@?$CPooledObject@VCNullDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCNullDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CNullDecorator>::ms_kPool''
-text$yd	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT ??__F?ms_kPool@?$CPooledObject@VCHeaderDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCHeaderDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ
-text$yd	SEGMENT
-??__F?ms_kPool@?$CPooledObject@VCHeaderDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCHeaderDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ PROC ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CHeaderDecorator>::ms_kPool'', COMDAT
-  00000	b9 00 00 00 00	 mov	 ecx, OFFSET ?ms_kPool@?$CPooledObject@VCHeaderDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCHeaderDecorator@NEffectUpdateDecorator@@@@A ; CPooledObject<NEffectUpdateDecorator::CHeaderDecorator>::ms_kPool
-  00005	e9 00 00 00 00	 jmp	 ??1?$CDynamicPoolEx@VCHeaderDecorator@NEffectUpdateDecorator@@@@UAE@XZ ; CDynamicPoolEx<NEffectUpdateDecorator::CHeaderDecorator>::~CDynamicPoolEx<NEffectUpdateDecorator::CHeaderDecorator>
-??__F?ms_kPool@?$CPooledObject@VCHeaderDecorator@NEffectUpdateDecorator@@@@1V?$CDynamicPoolEx@VCHeaderDecorator@NEffectUpdateDecorator@@@@A@@YAXXZ ENDP ; `dynamic atexit destructor for 'CPooledObject<NEffectUpdateDecorator::CHeaderDecorator>::ms_kPool''
-text$yd	ENDS
 END

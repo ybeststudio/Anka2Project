@@ -1453,3 +1453,26 @@ bool CPythonNetworkStream::SendOfflineShopChangeDecoration(const char *sign, DWO
 	return SendSequence();
 }
 #endif
+
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+bool CPythonNetworkStream::SendItemNewAttributePacket(TItemPos source_pos, TItemPos target_pos, BYTE* bValues)
+{
+	if (!__CanActMainInstance())
+		return true;
+	TPacketCGItemNewAttribute itemNewAttributePacket;
+	itemNewAttributePacket.header = HEADER_CG_ITEM_USE_NEW_ATTRIBUTE;
+	itemNewAttributePacket.source_pos = source_pos;
+	itemNewAttributePacket.target_pos = target_pos;
+	itemNewAttributePacket.bValues[0] = bValues[0];
+	itemNewAttributePacket.bValues[1] = bValues[1];
+	itemNewAttributePacket.bValues[2] = bValues[2];
+	itemNewAttributePacket.bValues[3] = bValues[3];
+	itemNewAttributePacket.bValues[4] = bValues[4];
+	if (!Send(sizeof(TPacketCGItemNewAttribute), &itemNewAttributePacket))
+	{
+		Tracen("SendItemNewAttributePacket Error");
+		return false;
+	}
+	return true;
+}
+#endif

@@ -2188,4 +2188,10 @@ void initapp()
 		PyModule_AddIntConstant(poModule, "ENABLE_GUILDSTORAGE_SYSTEM", 0);
 	#endif
 #endif
+
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+	PyModule_AddIntConstant(poModule, "ENABLE_STYLE_ATTRIBUTE_SYSTEM", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_STYLE_ATTRIBUTE_SYSTEM", 0);
+#endif
 }

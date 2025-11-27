@@ -409,6 +409,9 @@ class CPythonNetworkStream : public CNetworkStream, public CSingleton<CPythonNet
 #endif
 
 	public:
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+		bool SendItemNewAttributePacket(TItemPos source_pos, TItemPos target_pos, BYTE* bValues);
+#endif
 		void SetOffLinePhase();
 		void SetHandShakePhase();
 		void SetLoginPhase();

@@ -3190,6 +3190,7 @@
 		<File ArchivedPath="icon/item/49984.tga"><![CDATA[../binary_unpack/icon/item/49984.tga]]></File>
 		<File ArchivedPath="icon/item/49990.tga"><![CDATA[../binary_unpack/icon/item/49990.tga]]></File>
 		<File ArchivedPath="icon/item/49991.tga"><![CDATA[../binary_unpack/icon/item/49991.tga]]></File>
+		<File ArchivedPath="icon/item/49999.tga"><![CDATA[../binary_unpack/icon/item/49999.tga]]></File>
 		<File ArchivedPath="icon/item/500.tga"><![CDATA[../binary_unpack/icon/item/500.tga]]></File>
 		<File ArchivedPath="icon/item/50001.tga"><![CDATA[../binary_unpack/icon/item/50001.tga]]></File>
 		<File ArchivedPath="icon/item/50002.tga"><![CDATA[../binary_unpack/icon/item/50002.tga]]></File>
@@ -4254,6 +4255,8 @@
 		<File ArchivedPath="icon/item/73751.tga"><![CDATA[../binary_unpack/icon/item/73751.tga]]></File>
 		<File ArchivedPath="icon/item/73787.tga"><![CDATA[../binary_unpack/icon/item/73787.tga]]></File>
 		<File ArchivedPath="icon/item/7500.tga"><![CDATA[../binary_unpack/icon/item/7500.tga]]></File>
+		<File ArchivedPath="icon/item/75888.tga"><![CDATA[../binary_unpack/icon/item/75888.tga]]></File>
+		<File ArchivedPath="icon/item/75891.tga"><![CDATA[../binary_unpack/icon/item/75891.tga]]></File>
 		<File ArchivedPath="icon/item/76000.tga"><![CDATA[../binary_unpack/icon/item/76000.tga]]></File>
 		<File ArchivedPath="icon/item/76001.tga"><![CDATA[../binary_unpack/icon/item/76001.tga]]></File>
 		<File ArchivedPath="icon/item/76002.tga"><![CDATA[../binary_unpack/icon/item/76002.tga]]></File>
@@ -4576,6 +4579,11 @@
 		<File ArchivedPath="icon/face/sura_w.tga"><![CDATA[../binary_unpack/icon/face/sura_w.tga]]></File>
 		<File ArchivedPath="icon/face/warrior_m.tga"><![CDATA[../binary_unpack/icon/face/warrior_m.tga]]></File>
 		<File ArchivedPath="icon/face/warrior_w.tga"><![CDATA[../binary_unpack/icon/face/warrior_w.tga]]></File>
+		<File ArchivedPath="icon/affectshower/auto_hunt.tga"><![CDATA[../binary_unpack/icon/affectshower/auto_hunt.tga]]></File>
+		<File ArchivedPath="icon/affectshower/brave_cape.tga"><![CDATA[../binary_unpack/icon/affectshower/brave_cape.tga]]></File>
+		<File ArchivedPath="icon/affectshower/crystal.tga"><![CDATA[../binary_unpack/icon/affectshower/crystal.tga]]></File>
+		<File ArchivedPath="icon/affectshower/set_bonus.tga"><![CDATA[../binary_unpack/icon/affectshower/set_bonus.tga]]></File>
+		<File ArchivedPath="icon/affectshower/vote4buff.tga"><![CDATA[../binary_unpack/icon/affectshower/vote4buff.tga]]></File>
 		<File ArchivedPath="icon/affect/affect_1.png"><![CDATA[../binary_unpack/icon/affect/affect_1.png]]></File>
 		<File ArchivedPath="icon/affect/affect_13.png"><![CDATA[../binary_unpack/icon/affect/affect_13.png]]></File>
 		<File ArchivedPath="icon/affect/affect_14.png"><![CDATA[../binary_unpack/icon/affect/affect_14.png]]></File>

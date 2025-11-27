@@ -1652,6 +1652,34 @@ PyObject *netRegisterErrorLog(PyObject *poSelf, PyObject *poArgs)
 	return Py_BuildNone();
 }
 
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+PyObject* netSendItemNewAttributePacket(PyObject* poSelf, PyObject* poArgs)
+{
+	TItemPos source_pos;
+	TItemPos target_pos;
+	BYTE bValues[4 + 1];
+
+	if (!PyTuple_GetInteger(poArgs, 0, &source_pos.cell))
+		return Py_BuildException();
+	if (!PyTuple_GetInteger(poArgs, 1, &target_pos.cell))
+		return Py_BuildException();
+	if (!PyTuple_GetByte(poArgs, 2, &bValues[0]))
+		return Py_BuildException();
+	if (!PyTuple_GetByte(poArgs, 3, &bValues[1]))
+		return Py_BuildException();
+	if (!PyTuple_GetByte(poArgs, 4, &bValues[2]))
+		return Py_BuildException();
+	if (!PyTuple_GetByte(poArgs, 5, &bValues[3]))
+		return Py_BuildException();
+	if (!PyTuple_GetByte(poArgs, 6, &bValues[4]))
+		return Py_BuildException();
+
+	CPythonNetworkStream& rkNetStream = CPythonNetworkStream::Instance();
+	rkNetStream.SendItemNewAttributePacket(source_pos, target_pos, bValues);
+	return Py_BuildNone();
+}
+#endif
+
 #ifdef ENABLE_DESTROY_DIALOG
 PyObject *netSendItemDestroyPacket(PyObject *poSelf, PyObject *poArgs)
 {
@@ -2669,6 +2697,10 @@ void initnet()
 
 		// Log
 		{ "RegisterErrorLog", netRegisterErrorLog, METH_VARARGS },
+
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+		{"SendItemNewAttributePacket", netSendItemNewAttributePacket, METH_VARARGS },
+#endif
 
 #ifdef ENABLE_DESTROY_DIALOG
 		{ "SendItemDestroyPacket", netSendItemDestroyPacket, METH_VARARGS },

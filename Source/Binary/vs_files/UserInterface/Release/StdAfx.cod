@@ -451,6 +451,6 @@ __ehfuncinfo$??$assign_functor@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm
 	DQ	00000000100000000r		; 2.122e-314
 __unwindtable$??$assign_functor@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@?$basic_vtable2@V?$iterator_range@PBD@boost@@PBDPBD@function@detail@boost@@ABEXU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@2algorithm@3@AATfunction_buffer@123@U?$bool_@$00@mpl@3@@Z DD 0ffffffffH
 	DD	FLAT:__unwindfunclet$??$assign_functor@U?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@detail@algorithm@boost@@@?$basic_vtable2@V?$iterator_range@PBD@boost@@PBDPBD@function@detail@boost@@ABEXU?$token_finderF@U?$is_any_ofF@D@detail@algorithm@boost@@@2algorithm@3@AATfunction_buffer@123@U?$bool_@$00@mpl@3@@Z$0
-?NPOS@@3USItemPos@@B DB 01H DUP (?)
-	DW	0ffffH					; NPOS
+?NPOS@@3USItemPos@@B DW 0ff00H				; NPOS
+	DB	0ffH
 END

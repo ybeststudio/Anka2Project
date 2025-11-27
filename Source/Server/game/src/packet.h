@@ -138,7 +138,9 @@ enum PacketHeaderCG
 	HEADER_CG_GUILD_SYMBOL_UPLOAD			= 112,
 	HEADER_CG_SYMBOL_CRC					= 113,
 	HEADER_CG_SCRIPT_SELECT_ITEM			= 114,
-	//HEADER_CG_EMPTY						= 115,
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+	HEADER_CG_ITEM_USE_NEW_ATTRIBUTE 		= 115,
+#endif
 #ifdef ENABLE_EVENT_MANAGER
 	HEADER_CG_REQUEST_EVENT_QUEST			= 116,
 	HEADER_CG_REQUEST_EVENT_DATA			= 117,
@@ -3820,6 +3822,16 @@ typedef struct packet_auto_sell_status
 	BYTE		header;
 	BYTE		status;
 } TPacketCGAutoSellStatus;
+#endif
+
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+typedef struct command_item_new_attribute
+{
+	BYTE  header;
+	TItemPos source_pos;
+	TItemPos target_pos;
+	BYTE bValues[4 + 1];
+} TPacketCGItemNewAttribute;
 #endif
 
 #pragma pack()

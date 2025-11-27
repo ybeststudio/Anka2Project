@@ -1516,18 +1516,6 @@ __ehfuncinfo$??0?$_Tree_temp_node_alloc@V?$allocator@U?$_Tree_node@U?$pair@$$CBV
 __unwindtable$??0?$_Tree_temp_node_alloc@V?$allocator@U?$_Tree_node@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@std@@PAX@std@@@std@@@std@@QAE@AAV?$allocator@U?$_Tree_node@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@std@@PAX@std@@@1@@Z DD 0ffffffffH
 	DD	FLAT:__unwindfunclet$??0?$_Tree_temp_node_alloc@V?$allocator@U?$_Tree_node@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@std@@PAX@std@@@std@@@std@@QAE@AAV?$allocator@U?$_Tree_node@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@std@@PAX@std@@@1@@Z$0
 ; Function compile flags: /Ogtp
-; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
-;	COMDAT ??__FstrEmptyValue@?1??GetArgumentString@@YAABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PBDAAV?$list@USArgumet@script@@V?$allocator@USArgumet@script@@@std@@@2@@Z@YAXXZ
-text$yd	SEGMENT
-??__FstrEmptyValue@?1??GetArgumentString@@YAABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PBDAAV?$list@USArgumet@script@@V?$allocator@USArgumet@script@@@std@@@2@@Z@YAXXZ PROC ; `GetArgumentString'::`2'::`dynamic atexit destructor for 'strEmptyValue'', COMDAT
-
-; 1383 :         _Tidy_deallocate();
-
-  00000	b9 00 00 00 00	 mov	 ecx, OFFSET ?strEmptyValue@?1??GetArgumentString@@YAABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PBDAAV?$list@USArgumet@script@@V?$allocator@USArgumet@script@@@std@@@3@@Z@4V23@A
-  00005	e9 00 00 00 00	 jmp	 ?_Tidy_deallocate@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ ; std::basic_string<char,std::char_traits<char>,std::allocator<char> >::_Tidy_deallocate
-??__FstrEmptyValue@?1??GetArgumentString@@YAABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PBDAAV?$list@USArgumet@script@@V?$allocator@USArgumet@script@@@std@@@2@@Z@YAXXZ ENDP ; `GetArgumentString'::`2'::`dynamic atexit destructor for 'strEmptyValue''
-text$yd	ENDS
-; Function compile flags: /Ogtp
 ; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonEventManager.cpp
 ; File C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring
 ; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonEventManager.cpp
@@ -4602,26 +4590,5 @@ $LN3@MakeQuesti:
   0007f	5d		 pop	 ebp
   00080	c2 08 00	 ret	 8
 ?MakeQuestion@CPythonEventManager@@IAEXPAUSEventSet@1@AAV?$list@USArgumet@script@@V?$allocator@USArgumet@script@@@std@@@std@@@Z ENDP ; CPythonEventManager::MakeQuestion
-_TEXT	ENDS
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterLib\Pool.h
-;	COMDAT ?Delete@?$CDynamicPool@USEventSet@CPythonEventManager@@@@KAXPAUSEventSet@CPythonEventManager@@@Z
-_TEXT	SEGMENT
-?Delete@?$CDynamicPool@USEventSet@CPythonEventManager@@@@KAXPAUSEventSet@CPythonEventManager@@@Z PROC ; CDynamicPool<CPythonEventManager::SEventSet>::Delete, COMDAT
-; _pkData$ = ecx
-
-; 85   : 			delete pkData;
-
-  00000	85 c9		 test	 ecx, ecx
-  00002	74 06		 je	 SHORT $LN3@Delete
-  00004	8b 01		 mov	 eax, DWORD PTR [ecx]
-  00006	6a 01		 push	 1
-  00008	ff 10		 call	 DWORD PTR [eax]
-$LN3@Delete:
-
-; 86   : 		}
-
-  0000a	c3		 ret	 0
-?Delete@?$CDynamicPool@USEventSet@CPythonEventManager@@@@KAXPAUSEventSet@CPythonEventManager@@@Z ENDP ; CDynamicPool<CPythonEventManager::SEventSet>::Delete
 _TEXT	ENDS
 END

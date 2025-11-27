@@ -32,23 +32,23 @@ PUBLIC	??_C@_08NJFPNLGO@ATT_DARK@			; `string'
 PUBLIC	??_C@_01GPOEFGEJ@?7@				; `string'
 PUBLIC	??_C@_0CE@MBAPEHGB@LoadMobScale?3?5invalid?5line?5?$CFd?5?$CI@ ; `string'
 PUBLIC	??_C@_03NFKEKGGK@all@				; `string'
-PUBLIC	??_R2CPythonNonPlayer@@8			; CPythonNonPlayer::`RTTI Base Class Array'
 PUBLIC	??_R2?$CSingleton@VCPythonNonPlayer@@@@8	; CSingleton<CPythonNonPlayer>::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8 ; CSingleton<CPythonNonPlayer>::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R2CPythonNonPlayer@@8			; CPythonNonPlayer::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@CPythonNonPlayer@@8		; CPythonNonPlayer::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R3?$CSingleton@VCPythonNonPlayer@@@@8	; CSingleton<CPythonNonPlayer>::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R3CPythonNonPlayer@@8			; CPythonNonPlayer::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8 ; CSingleton<CPythonNonPlayer>::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8	; CSingleton<CPythonNonPlayer> `RTTI Type Descriptor'
+PUBLIC	??_R3?$CSingleton@VCPythonNonPlayer@@@@8	; CSingleton<CPythonNonPlayer>::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R0?AVCPythonNonPlayer@@@8			; CPythonNonPlayer `RTTI Type Descriptor'
-PUBLIC	??_R4CPythonNonPlayer@@6B@			; CPythonNonPlayer::`RTTI Complete Object Locator'
+PUBLIC	??_R3CPythonNonPlayer@@8			; CPythonNonPlayer::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R4?$CSingleton@VCPythonNonPlayer@@@@6B@	; CSingleton<CPythonNonPlayer>::`RTTI Complete Object Locator'
+PUBLIC	??_R4CPythonNonPlayer@@6B@			; CPythonNonPlayer::`RTTI Complete Object Locator'
 PUBLIC	??_7?$CSingleton@VCPythonNonPlayer@@@@6B@	; CSingleton<CPythonNonPlayer>::`vftable'
 PUBLIC	??_7CPythonNonPlayer@@6B@			; CPythonNonPlayer::`vftable'
 EXTRN	?SplitLine@CMemoryTextFileLoader@@QAE_NKPAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@PBD@Z:PROC ; CMemoryTextFileLoader::SplitLine
 EXTRN	?GetSize@CLZObject@@QAEKXZ:PROC			; CLZObject::GetSize
-EXTRN	?Decompress@CLZO@@QAE_NAAVCLZObject@@PBEPAK@Z:PROC ; CLZO::Decompress
 EXTRN	??1CLZObject@@QAE@XZ:PROC			; CLZObject::~CLZObject
 EXTRN	??0CLZObject@@QAE@XZ:PROC			; CLZObject::CLZObject
+EXTRN	?Decompress@CLZO@@QAE_NAAVCLZObject@@PBEPAK@Z:PROC ; CLZO::Decompress
 ;	COMDAT ?s_adwMobProtoKey@?1??LoadNonPlayerData@CPythonNonPlayer@@QAE_NPBD@Z@4PAKA
 _DATA	SEGMENT
 ?s_adwMobProtoKey@?1??LoadNonPlayerData@CPythonNonPlayer@@QAE_NPBD@Z@4PAKA DD 0497446H ; `CPythonNonPlayer::LoadNonPlayerData'::`2'::s_adwMobProtoKey
@@ -70,14 +70,6 @@ CONST	SEGMENT
 ??_7?$CSingleton@VCPythonNonPlayer@@@@6B@ DD FLAT:??_R4?$CSingleton@VCPythonNonPlayer@@@@6B@ ; CSingleton<CPythonNonPlayer>::`vftable'
 	DD	FLAT:??_E?$CSingleton@VCPythonNonPlayer@@@@UAEPAXI@Z
 CONST	ENDS
-;	COMDAT ??_R4?$CSingleton@VCPythonNonPlayer@@@@6B@
-rdata$r	SEGMENT
-??_R4?$CSingleton@VCPythonNonPlayer@@@@6B@ DD 00H	; CSingleton<CPythonNonPlayer>::`RTTI Complete Object Locator'
-	DD	00H
-	DD	00H
-	DD	FLAT:??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8
-	DD	FLAT:??_R3?$CSingleton@VCPythonNonPlayer@@@@8
-rdata$r	ENDS
 ;	COMDAT ??_R4CPythonNonPlayer@@6B@
 rdata$r	SEGMENT
 ??_R4CPythonNonPlayer@@6B@ DD 00H			; CPythonNonPlayer::`RTTI Complete Object Locator'
@@ -86,18 +78,14 @@ rdata$r	SEGMENT
 	DD	FLAT:??_R0?AVCPythonNonPlayer@@@8
 	DD	FLAT:??_R3CPythonNonPlayer@@8
 rdata$r	ENDS
-;	COMDAT ??_R0?AVCPythonNonPlayer@@@8
-data$rs	SEGMENT
-??_R0?AVCPythonNonPlayer@@@8 DD FLAT:??_7type_info@@6B@	; CPythonNonPlayer `RTTI Type Descriptor'
+;	COMDAT ??_R4?$CSingleton@VCPythonNonPlayer@@@@6B@
+rdata$r	SEGMENT
+??_R4?$CSingleton@VCPythonNonPlayer@@@@6B@ DD 00H	; CSingleton<CPythonNonPlayer>::`RTTI Complete Object Locator'
 	DD	00H
-	DB	'.?AVCPythonNonPlayer@@', 00H
-data$rs	ENDS
-;	COMDAT ??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8
-data$rs	SEGMENT
-??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonNonPlayer> `RTTI Type Descriptor'
 	DD	00H
-	DB	'.?AV?$CSingleton@VCPythonNonPlayer@@@@', 00H
-data$rs	ENDS
+	DD	FLAT:??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8
+	DD	FLAT:??_R3?$CSingleton@VCPythonNonPlayer@@@@8
+rdata$r	ENDS
 ;	COMDAT ??_R3CPythonNonPlayer@@8
 rdata$r	SEGMENT
 ??_R3CPythonNonPlayer@@8 DD 00H				; CPythonNonPlayer::`RTTI Class Hierarchy Descriptor'
@@ -105,12 +93,34 @@ rdata$r	SEGMENT
 	DD	02H
 	DD	FLAT:??_R2CPythonNonPlayer@@8
 rdata$r	ENDS
+;	COMDAT ??_R0?AVCPythonNonPlayer@@@8
+data$rs	SEGMENT
+??_R0?AVCPythonNonPlayer@@@8 DD FLAT:??_7type_info@@6B@	; CPythonNonPlayer `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AVCPythonNonPlayer@@', 00H
+data$rs	ENDS
 ;	COMDAT ??_R3?$CSingleton@VCPythonNonPlayer@@@@8
 rdata$r	SEGMENT
 ??_R3?$CSingleton@VCPythonNonPlayer@@@@8 DD 00H		; CSingleton<CPythonNonPlayer>::`RTTI Class Hierarchy Descriptor'
 	DD	00H
 	DD	01H
 	DD	FLAT:??_R2?$CSingleton@VCPythonNonPlayer@@@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8
+data$rs	SEGMENT
+??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8 DD FLAT:??_7type_info@@6B@ ; CSingleton<CPythonNonPlayer> `RTTI Type Descriptor'
+	DD	00H
+	DB	'.?AV?$CSingleton@VCPythonNonPlayer@@@@', 00H
+data$rs	ENDS
+;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8 DD FLAT:??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8 ; CSingleton<CPythonNonPlayer>::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	00H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	FLAT:??_R3?$CSingleton@VCPythonNonPlayer@@@@8
 rdata$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@CPythonNonPlayer@@8
 rdata$r	SEGMENT
@@ -122,24 +132,14 @@ rdata$r	SEGMENT
 	DD	040H
 	DD	FLAT:??_R3CPythonNonPlayer@@8
 rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8 DD FLAT:??_R0?AV?$CSingleton@VCPythonNonPlayer@@@@@8 ; CSingleton<CPythonNonPlayer>::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	00H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	FLAT:??_R3?$CSingleton@VCPythonNonPlayer@@@@8
-rdata$r	ENDS
-;	COMDAT ??_R2?$CSingleton@VCPythonNonPlayer@@@@8
-rdata$r	SEGMENT
-??_R2?$CSingleton@VCPythonNonPlayer@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8 ; CSingleton<CPythonNonPlayer>::`RTTI Base Class Array'
-rdata$r	ENDS
 ;	COMDAT ??_R2CPythonNonPlayer@@8
 rdata$r	SEGMENT
 ??_R2CPythonNonPlayer@@8 DD FLAT:??_R1A@?0A@EA@CPythonNonPlayer@@8 ; CPythonNonPlayer::`RTTI Base Class Array'
 	DD	FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8
+rdata$r	ENDS
+;	COMDAT ??_R2?$CSingleton@VCPythonNonPlayer@@@@8
+rdata$r	SEGMENT
+??_R2?$CSingleton@VCPythonNonPlayer@@@@8 DD FLAT:??_R1A@?0A@EA@?$CSingleton@VCPythonNonPlayer@@@@8 ; CSingleton<CPythonNonPlayer>::`RTTI Base Class Array'
 rdata$r	ENDS
 ;	COMDAT ??_C@_03NFKEKGGK@all@
 CONST	SEGMENT
@@ -1044,84 +1044,4 @@ __ehfuncinfo$??$_Buynode@V?$allocator@U?$_Tree_node@U?$pair@$$CBKV?$vector@HV?$a
 	DQ	00000000100000000r		; 2.122e-314
 __unwindtable$??$_Buynode@V?$allocator@U?$_Tree_node@U?$pair@$$CBKV?$vector@HV?$allocator@H@std@@@std@@@std@@PAX@std@@@std@@AAU?$pair@$$CBKV?$vector@HV?$allocator@H@std@@@std@@@2@@?$_Tree_node@U?$pair@$$CBKV?$vector@HV?$allocator@H@std@@@std@@@std@@PAX@std@@SAPAU01@AAV?$allocator@U?$_Tree_node@U?$pair@$$CBKV?$vector@HV?$allocator@H@std@@@std@@@std@@PAX@std@@@1@PAU01@AAU?$pair@$$CBKV?$vector@HV?$allocator@H@std@@@std@@@1@@Z DD 0ffffffffH
 	DD	FLAT:__unwindfunclet$??$_Buynode@V?$allocator@U?$_Tree_node@U?$pair@$$CBKV?$vector@HV?$allocator@H@std@@@std@@@std@@PAX@std@@@std@@AAU?$pair@$$CBKV?$vector@HV?$allocator@H@std@@@std@@@2@@?$_Tree_node@U?$pair@$$CBKV?$vector@HV?$allocator@H@std@@@std@@@std@@PAX@std@@SAPAU01@AAV?$allocator@U?$_Tree_node@U?$pair@$$CBKV?$vector@HV?$allocator@H@std@@@std@@@std@@PAX@std@@@1@PAU01@AAU?$pair@$$CBKV?$vector@HV?$allocator@H@std@@@std@@@1@@Z$0
-; Function compile flags: /Ogtp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonNonPlayer.cpp
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonNonPlayer.cpp
-;	COMDAT ?GetEventTypeByVID@CPythonNonPlayer@@QAEEK@Z
-_TEXT	SEGMENT
-_dwVID$ = 8						; size = 4
-?GetEventTypeByVID@CPythonNonPlayer@@QAEEK@Z PROC	; CPythonNonPlayer::GetEventTypeByVID, COMDAT
-; _this$ = ecx
-
-; 138  : {
-
-  00000	55		 push	 ebp
-  00001	8b ec		 mov	 ebp, esp
-  00003	56		 push	 esi
-  00004	8b f1		 mov	 esi, ecx
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\eterBase\Singleton.h
-
-; 26   : 		assert(ms_singleton);
-
-  00006	8b 0d 00 00 00
-	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonCharacterManager@@@@0PAVCPythonCharacterManager@@A ; CSingleton<CPythonCharacterManager>::ms_singleton
-  0000c	85 c9		 test	 ecx, ecx
-  0000e	75 1a		 jne	 SHORT $LN6@GetEventTy
-  00010	6a 1a		 push	 26			; 0000001aH
-  00012	68 00 00 00 00	 push	 OFFSET ??_C@_1IO@CAJLEEOI@?$AAC?$AA?3?$AA?2?$AAA?$AAn?$AAk?$AAa?$AA2?$AAP?$AAr?$AAo?$AAj?$AAe?$AAc?$AAt@
-  00017	68 00 00 00 00	 push	 OFFSET ??_C@_1BK@FMEHPMFE@?$AAm?$AAs?$AA_?$AAs?$AAi?$AAn?$AAg?$AAl?$AAe?$AAt?$AAo?$AAn@
-  0001c	e8 00 00 00 00	 call	 __wassert
-  00021	8b 0d 00 00 00
-	00		 mov	 ecx, DWORD PTR ?ms_singleton@?$CSingleton@VCPythonCharacterManager@@@@0PAVCPythonCharacterManager@@A ; CSingleton<CPythonCharacterManager>::ms_singleton
-  00027	83 c4 0c	 add	 esp, 12			; 0000000cH
-$LN6@GetEventTy:
-; File C:\Anka2Project\Anka2Project\Source\Binary\source\UserInterface\PythonNonPlayer.cpp
-
-; 139  : 	CInstanceBase * pInstance = CPythonCharacterManager::Instance().GetInstancePtr(dwVID);
-
-  0002a	8b 41 04	 mov	 eax, DWORD PTR [ecx+4]
-  0002d	83 c1 04	 add	 ecx, 4
-  00030	ff 75 08	 push	 DWORD PTR _dwVID$[ebp]
-  00033	ff 50 08	 call	 DWORD PTR [eax+8]
-
-; 140  : 
-; 141  : 	if (NULL == pInstance)
-
-  00036	85 c0		 test	 eax, eax
-  00038	75 07		 jne	 SHORT $LN2@GetEventTy
-
-; 142  : 	{
-; 143  : 		return ON_CLICK_EVENT_NONE;
-
-  0003a	32 c0		 xor	 al, al
-  0003c	5e		 pop	 esi
-
-; 148  : }
-
-  0003d	5d		 pop	 ebp
-  0003e	c2 04 00	 ret	 4
-$LN2@GetEventTy:
-
-; 144  : 	}
-; 145  : 
-; 146  : 	WORD dwVnum = pInstance->GetVirtualNumber();
-
-  00041	8b c8		 mov	 ecx, eax
-  00043	e8 00 00 00 00	 call	 ?GetVirtualNumber@CInstanceBase@@QAEKXZ ; CInstanceBase::GetVirtualNumber
-  00048	0f b7 c0	 movzx	 eax, ax
-
-; 147  : 	return GetEventType(dwVnum);
-
-  0004b	8b ce		 mov	 ecx, esi
-  0004d	50		 push	 eax
-  0004e	e8 00 00 00 00	 call	 ?GetEventType@CPythonNonPlayer@@QAEEK@Z ; CPythonNonPlayer::GetEventType
-  00053	5e		 pop	 esi
-
-; 148  : }
-
-  00054	5d		 pop	 ebp
-  00055	c2 04 00	 ret	 4
-?GetEventTypeByVID@CPythonNonPlayer@@QAEEK@Z ENDP	; CPythonNonPlayer::GetEventTypeByVID
-_TEXT	ENDS
 END

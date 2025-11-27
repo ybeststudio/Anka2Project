@@ -6810,3 +6810,6 @@ VNUM	LOCALE_NAME
 90015	Premium Bileti (30 gün)
 93100	Savaþ Bileti
 49324	Otomatik Av (7 gün)
+49999	Kadim Efsun Nesnesi
+75888	Ortalama Efsun Nesnesi
+75891	Beceri Efsun Nesnesi

@@ -188,7 +188,11 @@ class CItem : public CEntity
 		int GetDuration();
 
 		int GetAttributeCount();
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+		void ClearAttribute(bool clearMode = true);
+#else
 		void ClearAttribute();
+#endif
 		void ChangeAttribute(const int* aiChangeProb = NULL);
 		void AddAttribute();
 		void AddAttribute(BYTE bType, short sValue);
@@ -360,6 +364,11 @@ class CItem : public CEntity
 
 		DWORD m_dwMaskVnum;
 		DWORD m_dwSIGVnum;
+
+#ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
+	public:
+		int AddNewStyleAttribute(BYTE* bValues);
+#endif
 
 	public:
 		void SetSIGVnum(DWORD dwSIG)

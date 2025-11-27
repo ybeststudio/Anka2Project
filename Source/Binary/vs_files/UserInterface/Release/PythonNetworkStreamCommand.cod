@@ -7986,12 +7986,4 @@ __ehhandler$?ServerCommand@CPythonNetworkStream@@QAEXPAD@Z:
   0017b	e9 00 00 00 00	 jmp	 ___CxxFrameHandler3
 text$x	ENDS
 ?ServerCommand@CPythonNetworkStream@@QAEXPAD@Z ENDP	; CPythonNetworkStream::ServerCommand
-; Function compile flags: /Ogtp
-;	COMDAT ??__Fs_emotionDict@?BAB@??ServerCommand@CPythonNetworkStream@@QAEXPAD@Z@YAXXZ
-text$yd	SEGMENT
-??__Fs_emotionDict@?BAB@??ServerCommand@CPythonNetworkStream@@QAEXPAD@Z@YAXXZ PROC ; `CPythonNetworkStream::ServerCommand'::`257'::`dynamic atexit destructor for 's_emotionDict'', COMDAT
-  00000	b9 00 00 00 00	 mov	 ecx, OFFSET ?s_emotionDict@?BAB@??ServerCommand@CPythonNetworkStream@@QAEXPAD@Z@4V?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@std@@@2@@std@@A
-  00005	e9 00 00 00 00	 jmp	 ??1?$_Tree@V?$_Tmap_traits@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@std@@@2@$0A@@std@@@std@@QAE@XZ ; std::_Tree<std::_Tmap_traits<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,int,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,int> >,0> >::~_Tree<std::_Tmap_traits<std::basic_string<char,std::char_traits<char>,std::allocator<char> >,int,std::less<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,std::allocator<std::pair<std::basic_string<char,std::char_traits<char>,std::allocator<char> > const ,int> >,0> >
-??__Fs_emotionDict@?BAB@??ServerCommand@CPythonNetworkStream@@QAEXPAD@Z@YAXXZ ENDP ; `CPythonNetworkStream::ServerCommand'::`257'::`dynamic atexit destructor for 's_emotionDict''
-text$yd	ENDS
 END
