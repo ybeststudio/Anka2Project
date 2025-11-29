@@ -1,6 +1,6 @@
-# Auto detect text files and perform LF normalization
+# Metin dosyalarını otomatik olarak algılayın ve LF normalizasyonu gerçekleştirin
 * text=auto
-# Git LFS track large binary files
+# Git LFS büyük ikili dosyaları izler
 *.lib filter=lfs diff=lfs merge=lfs -text
 *.pdb filter=lfs diff=lfs merge=lfs -text
 *.idb filter=lfs diff=lfs merge=lfs -text
@@ -11,5 +11,5 @@
 *.a filter=lfs diff=lfs merge=lfs -text
 *.so filter=lfs diff=lfs merge=lfs -text
 *.dylib filter=lfs diff=lfs merge=lfs -text
-# Client pack files (large binary files)
+# İstemci paketi dosyaları (büyük ikili dosyalar)
 Client/pack/* filter=lfs diff=lfs merge=lfs -text

@@ -44,3 +44,4 @@
 *.opensdf
 *.db-shm
 *.db-wal
+*.db-wal
