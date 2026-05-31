@@ -222,15 +222,15 @@ if app.ENABLE_RENEWAL_SERVER_LIST:
 				textLine.SetWindowHorizontalAlignCenter()
 				textLine.SetHorizontalAlignCenter()
 
-			localeName = app.GetLocale()
-			if localeName == "en": localeName = "uk"
+			# localeName = app.GetLocale()
+			# if localeName == "en": localeName = "uk"
 
-			serverFlag = ui.ImageBox()
-			serverFlag.SetParent(self)
-			serverFlag.LoadImage("d:/ymir work/ui/intro/login/flags/server_flag_{}.sub".format(localeName))
-			serverFlag.Show()
+			# serverFlag = ui.ImageBox()
+			# serverFlag.SetParent(self)
+			# serverFlag.LoadImage("d:/ymir work/ui/intro/login/flags/server_flag_{}.sub".format(localeName))
+			# serverFlag.Show()
 
-			self.serverFlagDict[len(self.itemList)] = serverFlag
+			# self.serverFlagDict[len(self.itemList)] = serverFlag
 
 			if state != 0:
 				imgBox = ui.ExpandedImageBox()
