@@ -13,41 +13,12 @@ import debugInfo
 
 SRV1 = {
 	"host" : sv1_ip,
-	"name" : sv1_name + " ~ Windows",
+	"name" : sv1_name,
 	"auth1" : auth_port,
 	"ch1" : ch1_port,
 	"ch2" : ch2_port,
 	"ch3" : ch3_port,
 	"ch4" : ch4_port,
-}
-
-# SRV2 = {
-	# "name" : sv1_name + " ~ FreeBSD",
-	# "host" : "192.168.1.156",
-	# "auth1" : auth_port,
-	# "ch1" : ch1_port,
-	# "ch2" : ch2_port,
-# }
-SRV2 = {
-	"name" : sv1_name + " ~ FreeBSD",
-	"host" : "192.168.1.156",
-	"auth1" : 30001,
-	"ch1" : 30101,
-	"ch2" : 30201,
-	"ch3" : 30301,
-	"ch4" : 30401,
-}
-
-SRV3 = {
-	"name" : "Root",
-	"host" : "192.168.1.156",
-	# "host" : "95.138.193.102",
-	#"host" : "164.132.92.187",
-	"auth1" : 30001,
-	"ch1" : 30101,
-	"ch2" : 30201,
-	"ch3" : 30301,
-	"ch4" : 30401,
 }
 
 CHINA_PORT = 50000
@@ -82,7 +53,7 @@ if app.ENABLE_RENEWAL_SERVER_LIST:
 	STATE_NONE = localeInfo.CHANNEL_STATUS_OFFLINE
 	STATE_DICT = {
 		0 : localeInfo.CHANNEL_STATUS_OFFLINE,
-		1 : localeInfo.CHANNEL_STATUS_RECOMMENDED, #CHANNEL_STATUS_VACANT
+		1 : localeInfo.CHANNEL_STATUS_RECOMMENDED,
 		2 : localeInfo.CHANNEL_STATUS_RECOMMENDED,
 		3 : localeInfo.CHANNEL_STATUS_BUSY,
 		4 : localeInfo.CHANNEL_STATUS_FULL,
@@ -107,7 +78,6 @@ if app.ENABLE_RENEWAL_SERVER_LIST:
 	STATE_REVERSE_DICT = {}
 	STATE_COLOR_DICT = { "..." : 0xffdadada}
 	STATE_COLOR_LIST = [ 0xffffffff, 0xff00ff00, 0xff00ff00, 0xffffc000, 0xffff0000 ]
-	# STATE_COLOR_LIST = [ 0xffffffff, 0xffdadada, 0xff00ff00, 0xffffc000, 0xffff0000 ]
 
 	idx = 0
 	for key, value in STATE_DICT.items():
@@ -194,44 +164,6 @@ SERVER1_CHANNEL_DICT = {
 	},
 }
 
-SERVER2_CHANNEL_DICT = {
-	1 : {
-		"key" : 21,
-		"name" : "CH1   ",
-		"ip" : SRV2["host"],
-		"tcp_port" : SRV2["ch1"],
-		"udp_port" : SRV2["ch1"],
-		"state" : STATE_NONE,
-	},
-	2 : {
-		"key" : 22,
-		"name":"CH2   ",
-		"ip" : SRV2["host"],
-		"tcp_port" : SRV2["ch2"],
-		"udp_port" : SRV2["ch2"],
-		"state" : STATE_NONE,
-	},
-}
-
-SERVER3_CHANNEL_DICT = {
-	1 : {
-		"key" : 31,
-		"name" : "CH1   ",
-		"ip" : SRV3["host"],
-		"tcp_port" : SRV3["ch1"],
-		"udp_port" : SRV3["ch1"],
-		"state" : STATE_NONE,
-	},
-	2 : {
-		"key" : 32,
-		"name":"CH2   ",
-		"ip" : SRV3["host"],
-		"tcp_port" : SRV3["ch2"],
-		"udp_port" : SRV3["ch2"],
-		"state" : STATE_NONE,
-	},
-}
-
 REGION_NAME_DICT = {
 	0 : SRV1["name"],
 }
@@ -241,14 +173,6 @@ REGION_AUTH_SERVER_DICT = {
 		1 : {
 			"ip" : SRV1["host"],
 			"port" : SRV1["auth1"],
-		},
-		2 : {
-			"ip" : SRV2["host"],
-			"port" : SRV2["auth1"],
-		},
-		3 : {
-			"ip" : SRV3["host"],
-			"port" : SRV3["auth1"],
 		},
 	}
 }
@@ -260,16 +184,6 @@ REGION_DICT = {
 			"name" : SRV1["name"],
 			"channel" : SERVER1_CHANNEL_DICT,
 		},
-		2 : {
-			"state" : "SPECIAL",
-			"name" : SRV2["name"],
-			"channel" : SERVER2_CHANNEL_DICT,
-		},
-		3 : {
-			"state" : "SPECIAL",
-			"name" : SRV3["name"],
-			"channel" : SERVER3_CHANNEL_DICT,
-		},
 	},
 }
 
@@ -277,18 +191,6 @@ MARKADDR_DICT = {
 	10 : {
 		"ip" : SRV1["host"],
 		"tcp_port" : SRV1["ch1"],
-		"mark" : "10.tga",
-		"symbol_path" : "10",
-	},
-	20 : {
-		"ip" : SRV2["host"],
-		"tcp_port" : SRV2["ch1"],
-		"mark" : "10.tga",
-		"symbol_path" : "10",
-	},
-	30 : {
-		"ip" : SRV3["host"],
-		"tcp_port" : SRV3["ch1"],
 		"mark" : "10.tga",
 		"symbol_path" : "10",
 	},
