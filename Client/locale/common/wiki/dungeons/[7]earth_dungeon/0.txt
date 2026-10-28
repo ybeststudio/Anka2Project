@@ -1,0 +1,298 @@
+[\
+    DUNGEON;\
+    X=10;\
+    Y=10;\
+    VNUM_1=5408;\
+    TEXT_1={WK:403};\
+    TEXT_2={WK:404:91:105};\
+    TEXT_3={WK:405:25 min};\
+    TEXT_4={WK:406} {WK:565};\
+    TEXT_5={WK:407} {WK:564};\
+    TEXT_6={WK:408:42000};\
+]
+[BUTTON=d:/ymir work/ui/game/common/button_xlarge_norm.png#d:/ymir work/ui/game/common/button_xlarge_hover.png#d:/ymir work/ui/game/common/button_xlarge_down.png; X=361; Y=178; LINKINDEX=mob#5408#0.0; TEXT={WK:409}; COLOR_TEXT=cebb98]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=255;\
+    TEXT_1={WK:413};\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=500; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=20; Y=305; TABLE_HEADERS=Bonus Name|My Value|Recommended|Status|Obtention; TABLE_WIDTHS=210|85|85|60|60]
+[TR; H=25]
+[TD; TEXT=AppendBonus(63); ALIGN=center]
+[TD; TEXT=GetBonus(63); ALIGN=center]
+[TD; TEXT=135; ALIGN=center]
+[TD; TEXT=HaveBonus(63, 135); ALIGN=center]
+[TD; TEXT=-; ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendBonus(121); ALIGN=center]
+[TD; TEXT=GetBonus(121); ALIGN=center]
+[TD; TEXT=9; ALIGN=center]
+[TD; TEXT=HaveBonus(121, 9); ALIGN=center]
+[TD; TEXT=-; ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendBonus(120); ALIGN=center]
+[TD; TEXT=GetBonus(120); ALIGN=center]
+[TD; TEXT=19; ALIGN=center]
+[TD; TEXT=HaveBonus(120, 19); ALIGN=center]
+[TD; TEXT=-; ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendBonus(103); ALIGN=center]
+[TD; TEXT=GetBonus(103); ALIGN=center]
+[TD; TEXT=16; ALIGN=center]
+[TD; TEXT=HaveBonus(103, 16); ALIGN=center]
+[TD; TEXT=-; ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendBonus(72); ALIGN=center]
+[TD; TEXT=GetBonus(72); ALIGN=center]
+[TD; TEXT=74; ALIGN=center]
+[TD; TEXT=HaveBonus(72, 74); ALIGN=center]
+[TD; TEXT=-; ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendBonus(37); ALIGN=center]
+[TD; TEXT=GetBonus(37); ALIGN=center]
+[TD; TEXT=50; ALIGN=center]
+[TD; TEXT=HaveBonus(37, 50); ALIGN=center]
+[TD; TEXT=-; ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendBonus(88); ALIGN=center]
+[TD; TEXT=GetBonus(88); ALIGN=center]
+[TD; TEXT=65; ALIGN=center]
+[TD; TEXT=HaveBonus(88, 70); ALIGN=center]
+[TD; TEXT=-; ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendBonus(15); ALIGN=center]
+[TD; TEXT=GetBonus(15); ALIGN=center]
+[TD; TEXT=100; ALIGN=center]
+[TD; TEXT=HaveBonus(15, 100); ALIGN=center]
+[TD; TEXT=-; ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendBonus(16); ALIGN=center]
+[TD; TEXT=GetBonus(16); ALIGN=center]
+[TD; TEXT=40; ALIGN=center]
+[TD; TEXT=HaveBonus(16, 40); ALIGN=center]
+[TD; TEXT=-; ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendBonus(73); ALIGN=center]
+[TD; TEXT=GetBonus(73); ALIGN=center]
+[TD; TEXT=14; ALIGN=center]
+[TD; TEXT=HaveBonus(73, 14); ALIGN=center]
+[TD; TEXT=-; ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendBonus(7); ALIGN=center]
+[TD; TEXT=GetBonus(7); ALIGN=center]
+[TD; TEXT=223; ALIGN=center]
+[TD; TEXT=HaveBonus(7, 223); ALIGN=center]
+[TD; TEXT=-; ALIGN=center]
+[TABLE_END]
+
+[IMG=d:/ymir work/ui/pattern/q_mark_01.tga; Y=334; X=482;TOOLTIP={WK:436}^ {OB:63}]
+[IMG=d:/ymir work/ui/pattern/q_mark_01.tga; Y=357; X=482;TOOLTIP={WK:436}^ {OB:121}]
+[IMG=d:/ymir work/ui/pattern/q_mark_01.tga; Y=380; X=482;TOOLTIP={WK:436}^ {OB:120}]
+[IMG=d:/ymir work/ui/pattern/q_mark_01.tga; Y=403; X=482;TOOLTIP={WK:436}^ {OB:103}]
+[IMG=d:/ymir work/ui/pattern/q_mark_01.tga; Y=426; X=482;TOOLTIP={WK:436}^ {OB:72}]
+[IMG=d:/ymir work/ui/pattern/q_mark_01.tga; Y=449; X=482;TOOLTIP={WK:436}^ {OB:37}]
+[IMG=d:/ymir work/ui/pattern/q_mark_01.tga; Y=472; X=482;TOOLTIP={WK:436}^ {OB:88}]
+[IMG=d:/ymir work/ui/pattern/q_mark_01.tga; Y=495; X=482;TOOLTIP={WK:436}^ {OB:15}]
+[IMG=d:/ymir work/ui/pattern/q_mark_01.tga; Y=518; X=482;TOOLTIP={WK:436}^ {OB:16}]
+[IMG=d:/ymir work/ui/pattern/q_mark_01.tga; Y=541; X=482;TOOLTIP={WK:436}^ {OB:73}]
+[IMG=d:/ymir work/ui/pattern/q_mark_01.tga; Y=564; X=482;TOOLTIP={WK:436}^ {OB:7}]
+
+
+
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=600;\
+    TEXT_1={WK:600};\
+]
+
+
+[CHANGE Y=650]
+[IMG=d:/ymir work/ui/game/inventory/equipment_bg.png; Y=650; X=10]
+[ITEM=3169; X=10+7; Y=655; SOCKET=0:28537#1:28531#2:28530#3; ATTR=0:72?55#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=12019; X=10+43; Y=685; SOCKET=0:28538#1:28541#2:28539#3; ATTR=0:134?15#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=18039; X=10+41; Y=758; SOCKET=0:0#1:0#2:0#3; ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=17229; X=10+118; Y=686; SOCKET=0:50632#1:50632#2:50632#3; ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=16229; X=10+118; Y=720; SOCKET=0:50632#1:50632#2:50632#3; ATTR=0:1?2000#1:15?10#2:0?0#3:0?0#4:0?0]
+[ITEM=14229; X=10+77; Y=720; SOCKET=0:50633#1:50633#2:50633#3; ATTR=0:1?2000#1:23?10#2:134?10#3:37?15#4:16?10]
+[ITEM=15439; X=10+42; Y=798; ATTR=0:1?2000#1:7?8#2:15?10#3:0?0#4:0?0]
+[ITEM=13149; X=10+78; Y=686; ATTR=0:6?12#1:5?12#2:27?15#3:48?1#4:0?0]
+[ITEM=85004; X=10+78; Y=653; SOCKET=0:20#1:2179#2; ATTR=0:72?50#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=12269; X=10+42; Y=655; ATTR=0:7?8#1:37?15#2:134?15#3:0?0#4:0?0]
+[ITEM=71135; X=10+5; Y=758; ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0]
+
+
+[IMG=d:/ymir work/ui/game/inventory/costumes.png; Y=650; X=190]
+[ITEM=40104; X=190+16; Y=694; SOCKET=0:1#1:1#2:1; ATTR=0:15?10#1:63?5#2:0?0#3:0?0#4:0?0]
+[ITEM=41003; X=190+61; Y=724; ATTR=0:134?10#1:53?50#2:0?0#3:0?0#4:0?0]
+[ITEM=45009; X=190+61; Y=688; ATTR=0:134?10#1:63?5#2:0?0#3:0?0#4:0?0]
+[ITEM=86151; X=190+110; Y=702; ATTR=0:53?50#1:72?5#2:0?0#3:0?0#4:0?0]
+
+
+[IMG=d:/ymir work/ui/game/inventory/compagnon.png; Y=650; X=370]
+[ITEM=58000; X=370+80; Y=787; SOCKET=0:1#1:1#2:1; ATTR=0:0?0#1:133?10#2:136?5#3:0?0#4:0?0]
+[ITEM=57000; X=370+117; Y=741; SOCKET=0:1#1:1#2:1; ATTR=0:90?5#1:0?0#2:40?40#3:40?40#4:40?0]
+[ITEM=55701; X=370+10; Y=787; SOCKET=1:1#3:100#2:100#4:100#5:5; ATTR=0:90?1#1:1?0#2:1?0#3:0?0#4:0?0#6:1?0]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=855;\
+    TEXT_1={WK:601};\
+]
+
+[X=20; Y=905; FONT_SIZE=13b; COLOR=cebb98; NO_ADD_Y; OUTLINE]Standard Skills
+
+[TABLE_START; TABLE_MAX_WIDTH=500; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=20; Y=930; TABLE_HEADERS=Skill|My Value|Recommended|Status; TABLE_WIDTHS=180|100|100|60]
+[TR; H=25]
+[TD; TEXT=AppendSkill(4); ALIGN=center]
+[TD; TEXT=GetSkillLevel(4); ALIGN=center]
+[TD; TEXT=P; ALIGN=center]
+[TD; TEXT=HaveSkill(4, 40); ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendSkill(3); ALIGN=center]
+[TD; TEXT=GetSkillLevel(3); ALIGN=center]
+[TD; TEXT=P; ALIGN=center]
+[TD; TEXT=HaveSkill(3, 40); ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=500; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=20; Y=1008; TABLE_HEADERS=Skill|My Value|Recommended|Status; TABLE_WIDTHS=180|100|100|60]
+[TR; H=25]
+[TD; TEXT=AppendSkill(16); ALIGN=center]
+[TD; TEXT=GetSkillLevel(16); ALIGN=center]
+[TD; TEXT=P; ALIGN=center]
+[TD; TEXT=HaveSkill(16, 40); ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendSkill(19); ALIGN=center]
+[TD; TEXT=GetSkillLevel(19); ALIGN=center]
+[TD; TEXT=P; ALIGN=center]
+[TD; TEXT=HaveSkill(19, 40); ALIGN=center]
+[TABLE_END]
+
+[X=20; Y=1091; FONT_SIZE=13b; COLOR=cebb98; NO_ADD_Y; OUTLINE]Passive Skills
+
+[TABLE_START; TABLE_MAX_WIDTH=500; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=20; Y=1116; TABLE_HEADERS=Skill|My Value|Recommended|Status; TABLE_WIDTHS=180|100|100|60]
+[TR; H=25]
+[TD; TEXT=AppendSkill(145); ALIGN=center]
+[TD; TEXT=GetSkillLevel(145); ALIGN=center]
+[TD; TEXT=G1; ALIGN=center]
+[TD; TEXT=HaveSkill(145, 30); ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendSkill(121); ALIGN=center]
+[TD; TEXT=GetSkillLevel(121); ALIGN=center]
+[TD; TEXT=G1; ALIGN=center]
+[TD; TEXT=HaveSkill(121, 30); ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendSkill(147); ALIGN=center]
+[TD; TEXT=GetSkillLevel(147); ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TD; TEXT=HaveSkill(147, 5); ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendSkill(146); ALIGN=center]
+[TD; TEXT=GetSkillLevel(146); ALIGN=center]
+[TD; TEXT=G7; ALIGN=center]
+[TD; TEXT=HaveSkill(146, 36); ALIGN=center]
+[TABLE_END]
+
+[X=20; Y=1245; FONT_SIZE=13b; COLOR=cebb98; NO_ADD_Y; OUTLINE]Buffi Skills
+
+[TABLE_START; TABLE_MAX_WIDTH=500; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=20; Y=1270; TABLE_HEADERS=Skill|My Value|Recommended|Status; TABLE_WIDTHS=180|100|100|60]
+[TR; H=25]
+[TD; TEXT=AppendSkill(94); ALIGN=center]
+[TD; TEXT=GetBuffiSkillLevel(0); ALIGN=center]
+[TD; TEXT=P; ALIGN=center]
+[TD; TEXT=HaveBuffiSkill(0, 40); ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendSkill(95); ALIGN=center]
+[TD; TEXT=GetBuffiSkillLevel(1); ALIGN=center]
+[TD; TEXT=P; ALIGN=center]
+[TD; TEXT=HaveBuffiSkill(1, 40); ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendSkill(96); ALIGN=center]
+[TD; TEXT=GetBuffiSkillLevel(2); ALIGN=center]
+[TD; TEXT=P; ALIGN=center]
+[TD; TEXT=HaveBuffiSkill(2, 40); ALIGN=center]
+[TR; H=25]
+[TD; TEXT=AppendSkill(111); ALIGN=center]
+[TD; TEXT=GetBuffiSkillLevel(4); ALIGN=center]
+[TD; TEXT=P; ALIGN=center]
+[TD; TEXT=HaveBuffiSkill(4, 40); ALIGN=center]
+[TABLE_END]
+
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1404;\
+    TEXT_1=Biologist and Boost;\
+]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/bg.png; Y=1459; X=10]
+[ITEM=61000; X=10+7; Y=1465; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=61001; X=10+7+(45*1); Y=1465; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=61002; X=10+7+(45*2); Y=1465; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=61003; X=10+7+(45*3); Y=1465; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=61004; X=10+7+(45*4); Y=1465; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=61005; X=10+7; Y=1510; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=61006; X=10+7+(45*1); Y=1510; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=61007; X=10+7+(45*2); Y=1510; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=61008; X=10+7+(45*3); Y=1510; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=61009; X=10+7+(45*4); Y=1510; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=61010; X=10+7; Y=1555; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1465; X=17]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1465; X=62]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1465; X=107]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1465; X=152]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1465; X=197]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1510; X=17]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1510; X=62]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1510; X=107]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1510; X=152]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1510; X=197]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1555; X=17]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/bg.png; Y=1459; X=300]
+[ITEM=50821; X=300+7; Y=1465; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=50822; X=300+7+(45*1); Y=1465; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=50823; X=300+7+(45*2); Y=1465; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=50824; X=300+7+(45*3); Y=1465; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=50826; X=300+7+(45*4); Y=1465; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=50825; X=300+7; Y=1510; SOCKET=0:1#1:1#2:1; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=51902; X=300+7+(45*1); Y=1510; SOCKET=0:69#1:20#2:10800; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=51903; X=300+7+(45*2); Y=1510; SOCKET=0:64#1:20#2:10800; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=51904; X=300+7+(45*3); Y=1510; SOCKET=0:65#1:20#2:10800; ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1465; X=307]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1465; X=352]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1465; X=397]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1465; X=442]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1465; X=487]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1510; X=307]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1510; X=352]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1510; X=397]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1510; X=442]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/bg.png; Y=1614; X=10]
+[ITEM=115230; X=10+7; Y=1620; SOCKET=0:1#1:1#2:1; ATTR=0:4?7#1:87?5#2:101?5#3:63?4#4:73?4]
+[ITEM=125230; X=10+7+(45*1); Y=1620; SOCKET=0:1#1:1#2:1; ATTR=0:5?7#1:35?5#2:100?5#3:53?105#4:47?4]
+[ITEM=135230; X=10+7+(45*2); Y=1620; SOCKET=0:1#1:1#2:1; ATTR=0:2?350#1:38?5#2:102?5#3:121?4#4:27?4]
+[ITEM=145230; X=10+7+(45*3); Y=1620; SOCKET=0:1#1:1#2:1; ATTR=0:6?7#1:88?5#2:103?5#3:69?7#4:123?4]
+[ITEM=155230; X=10+7+(45*4); Y=1620; SOCKET=0:1#1:1#2:1; ATTR=0:1?1050#1:36?5#2:99?5#3:1?2100#4:120?4]
+[ITEM=165230; X=10+7; Y=1665; SOCKET=0:1#1:1#2:1; ATTR=0:3?7#1:89?5#2:104?5#3:72?4#4:74?4]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/bg.png; Y=1614; X=300]
+[ITEM=27880; X=300+7; Y=1620; SOCKET=0:1#1:1#2:1; ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0]
+[ITEM=27864; X=300+7+(45*1); Y=1620; SOCKET=0:1#1:1#2:1; ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1620; X=307]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1620; X=352]
+
+[X=35; Y=1739; FONT_SIZE=20b; NO_ADD_Y; COLOR=cebb98; OUTLINE]

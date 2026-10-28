@@ -1,0 +1,4 @@
+<ScriptFile>
+	<CreateEterPackXml Input="../binary_unpack/textureset:" ArchivePath="../../Client/pack/textureset" XmlPath="xml/textureset_create.xml">
+	</CreateEterPackXml>
+</ScriptFile>

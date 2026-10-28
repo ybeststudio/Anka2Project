@@ -1,0 +1,4 @@
+[CENTER_ALIGN;Y=0;IMG=d:/ymir work/ui/game/wiki/layout/row_big.png;]
+[X=63;Y=5;IMG=ParentImg(1);]
+[X=165;Y=12;NO_ADD_Y;FONT_SIZE=16b;COLOR=D7B25B;]ParentTxt(1)
+[X=165;Y=31;NO_ADD_Y;FONT_SIZE=14;COLOR=cebb98]ParentTxt(2)

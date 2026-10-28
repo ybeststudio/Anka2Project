@@ -1,0 +1,8 @@
+[X=0;Y=0;FONT_SIZE=18b;COLOR=cebb98;NO_ADD_Y]AppendItem(ParentVnum(1))
+[X=0;Y=31;THINBOARD; SIZE_X=513; SIZE_Y=61]
+
+[X=11;Y=44;IMG=d:/ymir work/ui/game/common/slots/slot_runes.png;]
+[X=13;Y=47;ITEM=ParentVnum(1);SOCKET=0:0#1:100]
+[X=55;Y=38;FONT_SIZE=13b;NO_ADD_Y]ParentTxt(1)
+[X=55;Y=(38)+16*1;FONT_SIZE=13b;NO_ADD_Y]ParentTxt(2)
+[X=55;Y=(38)+16*2;FONT_SIZE=13b;NO_ADD_Y]ParentTxt(3)

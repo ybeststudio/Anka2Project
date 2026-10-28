@@ -1,0 +1,4 @@
+<ScriptFile>
+	<CreateEterPackXml Input="../binary_unpack/yw_effect:" ArchivePath="../../Client/pack/yw_effect" XmlPath="xml/yw_effect_create.xml">
+	</CreateEterPackXml>
+</ScriptFile>

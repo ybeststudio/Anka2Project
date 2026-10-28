@@ -1,0 +1,105 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=exploration_overview;\
+    TEXT_1=Exploration;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=116; TABLE_HEADERS=Column A; TABLE_WIDTHS=240]
+[TR; H=50]
+[TD; TEXT={WK:164}; ALIGN=center]
+[TR; H=50]
+[TD; TEXT={WK:169}; ALIGN=center]
+[TR; H=50]
+[TD; TEXT={WK:219}; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=297;\
+    ANCHOR=exploration_stars;\
+    TEXT_1={WK:221};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=347;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=55315;\
+    TEXT_1={WK:223};\
+    TEXT_1_Y_PADDING=-3;\
+    Y_PADDING=12;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=417; TABLE_HEADERS={WK:238}|{WK:114}; TABLE_WIDTHS=170|350]
+[TR; H=36]
+[TD; TEXT={WK:235}; ALIGN=center]
+[TD; TEXT={WK:236}; ALIGN=center]
+[TR; H=36]
+[TD; TEXT={WK:233}; ALIGN=center]
+[TD; TEXT={WK:234}; ALIGN=center]
+[TR; H=36]
+[TD; TEXT={WK:232}; ALIGN=center]
+[TD; TEXT={WK:225}; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=582;\
+    ANCHOR=exploration_objectives;\
+    TEXT_1={WK:237};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=632; TABLE_HEADERS={WK:239}|{WK:240}; TABLE_WIDTHS=180|340]
+[TR; H=44]
+[TD; TEXT={WK:241}; ALIGN=center]
+[TD; TEXT={WK:242}; ALIGN=center]
+[TR; H=44]
+[TD; TEXT={WK:243}; ALIGN=center]
+[TD; TEXT={WK:244}; ALIGN=center]
+[TR; H=44]
+[TD; TEXT={WK:245}; ALIGN=center]
+[TD; TEXT={WK:246}; ALIGN=center]
+[TR; H=44]
+[TD; TEXT={WK:247}; ALIGN=center]
+[TD; TEXT={WK:248}; ALIGN=center]
+[TR; H=44]
+[TD; TEXT={WK:249}; ALIGN=center]
+[TD; TEXT={WK:250}; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=905;\
+    ANCHOR=exploration_coin_tiers;\
+    TEXT_1={WK:251};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=955; TABLE_HEADERS={WK:252}|{WK:253}|Coin; TABLE_WIDTHS=110|190|220]
+[TR; H=56]
+[TD; TEXT={WK:252} I; ALIGN=center]
+[TD; TEXT={WK:254} 1-10; ALIGN=center]
+[TD; ITEM=55315]
+[TR; H=56]
+[TD; TEXT={WK:252} II; ALIGN=center]
+[TD; TEXT={WK:254} 11-20; ALIGN=center]
+[TD; ITEM=55316]
+[TR; H=56]
+[TD; TEXT={WK:252} III; ALIGN=center]
+[TD; TEXT={WK:254} 21+; ALIGN=center]
+[TD; ITEM=55317]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1180;\
+    ANCHOR=exploration_shop;\
+    TEXT_1={WK:255};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=1230; TABLE_HEADERS=Column A; TABLE_WIDTHS=240]
+[TR; H=44]
+[TD; TEXT={WK:256}; ALIGN=center]
+[TABLE_END]
+
+

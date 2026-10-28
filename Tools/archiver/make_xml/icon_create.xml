@@ -1,0 +1,4 @@
+<ScriptFile>
+	<CreateEterPackXml Input="../binary_unpack/icon:" ArchivePath="../../Client/pack/icon" XmlPath="xml/icon_create.xml">
+	</CreateEterPackXml>
+</ScriptFile>

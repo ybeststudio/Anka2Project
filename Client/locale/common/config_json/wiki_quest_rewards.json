@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "dungeons": [
+    {
+      "dungeon_id": 226,
+      "source_vnum": 9537,
+      "items": [
+        {
+          "vnum": 33204,
+          "count": 1,
+          "chance": 100
+        },
+        {
+          "vnum": 95082,
+          "count": 1,
+          "chance": 100
+        }
+      ]
+    }
+  ]
+}

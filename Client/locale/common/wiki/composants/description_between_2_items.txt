@@ -1,0 +1,9 @@
+[X=0;Y=0;IMG=d:/ymir work/ui/game/wiki/layout/picture_bg.png;]
+[X=455;Y=0;IMG=d:/ymir work/ui/game/wiki/layout/picture_bg.png;]
+[X=473;Y=17;ITEM=ParentVnum(2);SOCKET=0:0#1:100]
+[X=18;Y=17;ITEM=ParentVnum(1);SOCKET=0:0#1:100]
+[X=75;Y=0;NO_ADD_Y]ParentTxt(1)
+[X=75;Y=0+(12*1);NO_ADD_Y]ParentTxt(2)
+[X=75;Y=0+(12*2);NO_ADD_Y]ParentTxt(3)
+[X=75;Y=0+(12*3);NO_ADD_Y]ParentTxt(4)
+[X=75;Y=0+(12*4);NO_ADD_Y]ParentTxt(5)

@@ -1,0 +1,52 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=pvp_aura_overview;\
+    TEXT_1={WK:1};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=116;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=25131;\
+    TEXT_1={WK:344};\
+    Y_PADDING=12;\
+]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=196;\
+    ANCHOR=pvp_aura_bonuses;\
+    TEXT_1={WK:20};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=246; TABLE_HEADERS=Bonuses; TABLE_WIDTHS=520]
+[TR; H=32]
+[TD; TEXT={WK:324}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:325}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:326}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:327}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:328}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:329}; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=448; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=40]
+[TD; TEXT={WK:345}; ALIGN=center]
+[TABLE_END]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=513;\
+    TEXT_1={WK:374};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=563; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=58]
+[TD; TEXT={WK:346}; ALIGN=center]
+[TABLE_END]
+

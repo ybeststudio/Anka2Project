@@ -1,0 +1,26 @@
+# Local safety snapshot for ifdef-refactor — heavy/generated dirs excluded
+Client/binary/
+Client/build_logs/
+Client/extern/
+Client/vs_files/
+Server/serverbin/
+ThirdParty/
+
+# build artifacts
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.pyc
+*.pdb
+*.ilk
+*.exp
+*.idb
+*.ncb
+*.suo
+*.user
+*.sdf
+*.ipch
+*.tlog
+*.lastbuildstate

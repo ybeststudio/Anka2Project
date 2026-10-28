@@ -1,0 +1,46 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=stone_exchange_overview;\
+    TEXT_1={WK:1};\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=116;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=40211;\
+    TEXT_1={WK:574};\
+    Y_PADDING=10;\
+]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=196;\
+    ANCHOR=stone_bag_uses;\
+    TEXT_1={WK:304};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=246; TABLE_HEADERS={WK:306}|{WK:305}|{WK:307}; TABLE_WIDTHS=155|185|180]
+[TR; H=58]
+[TD; TEXT={WK:308}; ALIGN=center]
+[TD; ITEM=40211]
+[TD; ITEM=26001]
+[TR; H=58]
+[TD; TEXT={WK:309}; ALIGN=center]
+[TD; ITEM=40211]
+[TD; ITEM=25041]
+[TR; H=58]
+[TD; TEXT={WK:310}; ALIGN=center]
+[TD; ITEM=40211]
+[TD; ITEM=50634]
+[TR; H=58]
+[TD; TEXT={WK:311}; ALIGN=center]
+[TD; ITEM=40211]
+[TD; ITEM=28537]
+[TABLE_END]
+
+
+

@@ -1,0 +1,107 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    TEXT_1=Octavio Festival;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=116; TABLE_HEADERS=Column A; TABLE_WIDTHS=240]
+[TR; H=62]
+[TD; TEXT={WK:476}; ALIGN=center]
+[TABLE_END]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=203;\
+    ANCHOR=overview;\
+    TEXT_1={WK:99};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=253; TABLE_HEADERS=Column A|Column B; TABLE_WIDTHS=80|240]
+[TR; H=32]
+[TD; TEXT={WK:477}; ALIGN=center]
+[TD; TEXT={WK:478}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:479}; ALIGN=center]
+[TD; TEXT=Lv. 1; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:480}; ALIGN=center]
+[TD; TEXT={WK:481}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:482}; ALIGN=center]
+[TD; TEXT={WK:483}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:484}; ALIGN=center]
+[TD; TEXT={WK:485}; ALIGN=center]
+[TABLE_END]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=430;\
+    ANCHOR=Gameplay;\
+    TEXT_1={WK:551};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=480;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=94115;\
+    TEXT_1={WK:486};\
+    Y_PADDING=12;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=550; TABLE_HEADERS=Column A; TABLE_WIDTHS=240]
+[TR; H=32]
+[TD; TEXT={WK:487}; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=592; TABLE_HEADERS=Column A|Column B|Column 3|Column 4|Column 5; TABLE_WIDTHS=140|140|140|140|140]
+[TR; H=32]
+[TD; ITEM=94110]
+[TD; ITEM=94111]
+[TD; ITEM=94112]
+[TD; ITEM=94113]
+[TD; ITEM=94114]
+[TR; H=32]
+[TD; TEXT=AppendItem(94110); ALIGN=center]
+[TD; TEXT=AppendItem(94111); ALIGN=center]
+[TD; TEXT=AppendItem(94112); ALIGN=center]
+[TD; TEXT=AppendItem(94113); ALIGN=center]
+[TD; TEXT=AppendItem(94114); ALIGN=center]
+[TABLE_END]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=679;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=94118;\
+    TEXT_1={WK:488};\
+    Y_PADDING=16;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=744;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=94116;\
+    TEXT_1={WK:489};\
+    Y_PADDING=10;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=809;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=94117;\
+    TEXT_1={WK:490};\
+    Y_PADDING=16;\
+]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=879;\
+    TEXT_1={WK:374};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=929; TABLE_HEADERS=Column A; TABLE_WIDTHS=240]
+[TR; H=32]
+[TD; TEXT={WK:491}; ALIGN=center]
+[TR; H=52]
+[TD; TEXT={WK:492}; ALIGN=center]
+[TABLE_END]

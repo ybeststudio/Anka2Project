@@ -1,0 +1,158 @@
+[/ SUMMARY /]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    TEXT_1=Beginner Event;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=135; TABLE_HEADERS=Intro; TABLE_WIDTHS=520]
+[TR; H=34]
+[TD; TEXT=|cffFFD37AA limited-time event for new players and characters below level 76.|r; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=Complete daily content, earn Beginner Coins and unlock strong progress bonuses.; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=215; TABLE_HEADERS=A|B|C; TABLE_WIDTHS=173|173|174]
+[TR; H=32]
+[TD; TEXT=|cffC6A15BDuration|r; ALIGN=center]
+[TD; TEXT=|cffC6A15BAccess|r; ALIGN=center]
+[TD; TEXT=|cffC6A15BMain Reward|r; ALIGN=center]
+[TR; H=48]
+[TD; TEXT=July 31, 19:00\nto August 16, 23:59; ALIGN=center]
+[TD; TEXT=Characters below\nlevel 76; ALIGN=center]
+[TD; TEXT=Beginner Coins\nand Beginner Buff; ALIGN=center]
+[TABLE_END]
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=330;\
+    TEXT_1=Beginner Dungeon;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=385; TABLE_HEADERS=Details; TABLE_WIDTHS=520]
+[TR; H=34]
+[TD; TEXT=Enter once per day to earn event rewards and activate the Beginner Buff.; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=Panda Dungeon can be entered through the Beginner Event interface.; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=Buy the required Panda Dungeon ticket from the Beginner Shop.; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=The dungeon is designed to support smooth early progression.; ALIGN=center]
+[TR; H=48]
+[TD; TEXT=|cffFF6C6CImportant:|r Characters that reach level 76 lose access to the Panda Dungeon and Beginner Buff.; ALIGN=center]
+[TABLE_END]
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=605;\
+    TEXT_1=Beginner Buff;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=660; TABLE_HEADERS=Bonus|Effect; TABLE_WIDTHS=350|170]
+[TR; H=42]
+[TD; TEXT=Biologist Research Cooldown; ALIGN=center]
+[TD; TEXT=|cff6CFF6C-60%|r; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Dungeon Cooldown; ALIGN=center]
+[TD; TEXT=|cff6CFF6C-30%|r; ALIGN=center]
+[TR; H=56]
+[TD; TEXT=Refinement Success Rate\nfor equipment below level 75; ALIGN=center]
+[TD; TEXT=|cff6CFF6C+10%|r; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=840; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=48]
+[TD; TEXT=These bonuses help you finish Biologist missions, upgrade gear and run dungeons faster.; ALIGN=center]
+[TABLE_END]
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=920;\
+    TEXT_1=Beginner Quests;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=975; TABLE_HEADERS=A|B|C; TABLE_WIDTHS=173|173|174]
+[TR; H=32]
+[TD; TEXT=|cffC6A15BDaily Quests|r; ALIGN=center]
+[TD; TEXT=|cffC6A15BCoins Each|r; ALIGN=center]
+[TD; TEXT=|cffC6A15BDaily Total|r; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=6 Beginner Quests; ALIGN=center]
+[TD; TEXT=10 Beginner Coins; ALIGN=center]
+[TD; TEXT=60 Beginner Coins; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1085; TABLE_HEADERS=Tip; TABLE_WIDTHS=520]
+[TR; H=48]
+[TD; TEXT=|cff7AD1FFTip:|r Complete your quests daily before farming other long activities.; ALIGN=center]
+[TABLE_END]
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1165;\
+    TEXT_1=Beginner Shop;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1220; TABLE_HEADERS=Details; TABLE_WIDTHS=520]
+[TR; H=34]
+[TD; TEXT=Spend Beginner Coins in the Beginner Shop for progression rewards.; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=The Panda Dungeon ticket can also be bought from this shop.; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=The shop is focused on helping early characters grow faster and safer.; ALIGN=center]
+[TABLE_END]
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1345;\
+    TEXT_1=Beginner Shrines;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1400; TABLE_HEADERS=Details; TABLE_WIDTHS=520]
+[TR; H=34]
+[TD; TEXT=Beginner Shrines give additional opportunities to earn Beginner Coins.; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=Use them alongside daily quests to strengthen your character during the event.; ALIGN=center]
+[TABLE_END]
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1500;\
+    TEXT_1=Best Use of the Event;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1545; TABLE_HEADERS=Priority|Why It Matters; TABLE_WIDTHS=170|350]
+[TR; H=48]
+[TD; TEXT=Do the Dungeon; ALIGN=center]
+[TD; TEXT=Buy the ticket, enter from the interface and claim daily rewards.; ALIGN=center]
+[TR; H=48]
+[TD; TEXT=Finish Quests; ALIGN=center]
+[TD; TEXT=They provide up to 60 Beginner Coins per day.; ALIGN=center]
+[TR; H=48]
+[TD; TEXT=Use the Shop; ALIGN=center]
+[TD; TEXT=Spend coins on rewards that improve real progression.; ALIGN=center]
+[TR; H=48]
+[TD; TEXT=Stay Below 76; ALIGN=center]
+[TD; TEXT=Level 76 characters lose Beginner Dungeon and Buff access.; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1780; TABLE_HEADERS=Reminder; TABLE_WIDTHS=520]
+[TR; H=48]
+[TD; TEXT=|cffFFD37AReminder:|r This event ends on August 16 at 23:59. Spend your coins before it closes.; ALIGN=center]
+[TABLE_END]
+
+[X=5; Y=1845; FONT_SIZE=13b; NO_ADD_Y; OUTLINE]

@@ -1,0 +1,4 @@
+PyQt6>=6.5
+lz4>=4.3
+pycryptodome>=3.18
+xxhash>=3.2

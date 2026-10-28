@@ -1,0 +1,99 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    TEXT_1={WK:200};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=116; TABLE_HEADERS=Column A; TABLE_WIDTHS=400]
+[TR; H=50]
+[TD; TEXT={WK:575}; ALIGN=center]
+[TR; H=50]
+[TD; TEXT={WK:576}; ALIGN=center]
+[TABLE_END]
+[\
+    TITLE;\
+    X=10;\
+    Y=249;\
+    ANCHOR=Overview;\
+    TEXT_1={WK:99};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=299; TABLE_HEADERS=Column A|Column B; TABLE_WIDTHS=80|240]
+[TR; H=32]
+[TD; TEXT={WK:479}; ALIGN=center]
+[TD; TEXT=30; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:577}; ALIGN=center]
+[TD; TEXT=available from Dockbae; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:578}; ALIGN=center]
+[TD; TEXT={WK:579}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:580}; ALIGN=center]
+[TD; TEXT={WK:581}; ALIGN=center]
+[TABLE_END]
+[\
+    TITLE;\
+    X=10;\
+    Y=456;\
+    ANCHOR=Mining-System;\
+    TEXT_1={WK:582};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=506;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=29110;\
+    TEXT_1={WK:583};\
+    TEXT_1_Y_PADDING=6;\
+    Y_PADDING=12;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=571;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=40213;\
+    TEXT_1={WK:584};\
+    TEXT_1_Y_PADDING=6;\
+    Y_PADDING=12;\
+]
+[\
+    TITLE;\
+    X=10;\
+    Y=651;\
+    ANCHOR=Optimize;\
+    TEXT_1={WK:585};\
+]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=701;\
+    TEXT_1={WK:586};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=751; TABLE_HEADERS=Column A|Column B; TABLE_WIDTHS=40|240]
+[TR; H=32]
+[TD; TEXT=M1; ALIGN=center]
+[TD; TEXT={WK:587}; ALIGN=center]
+[TR; H=45]
+[TD; TEXT=G1; ALIGN=center]
+[TD; TEXT={WK:588}; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=P; ALIGN=center]
+[TD; TEXT={WK:589}; ALIGN=center]
+[TABLE_END]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=891;\
+    TEXT_1={WK:590};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=941;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=65203;\
+    TEXT_1={WK:591};\
+    Y_PADDING=12;\
+]

@@ -1,0 +1,118 @@
+[X_PADDING=40;FONT_SIZE=18b;COLOR=ffd700]Général
+ 
+ 
+[X_PADDING=85;Y_PADDING=5]* Les World Boss sont des boss qui apparaissent a des heures précises.
+[X_PADDING=85;Y_PADDING=5]* Tous les joueurs qui ont mis au moins un coup sur le World Boss ont une chance drop des objets.
+[X_PADDING=85;Y_PADDING=5]* Le TOP 5 des joueurs ayant mis le plus de dégâts a |cFFD7B25B|hun bonus de 50% de drop|r.
+
+ 
+
+
+[X_PADDING=10;FONT_SIZE=14b;COLOR=ffd700]*  Abrahel
+
+
+[X_PADDING=85;Y_PADDING=-3]* Le world boss Abrahel vous permet d'obtenir les |cFFD7B25B|hdifférentes toniques|r.
+[X_PADDING=85;Y_PADDING=-3]* Il apparaît tous les jours à |cFFD7B25B|h3:00 / 14:00 / 21:00 sur le CH1 et CH2|r.
+[X_PADDING=85;Y_PADDING=-3]* L'Abrahel du CH1 est un World-Boss PVP, il vous permettra donc t'obtenir la |cFFD7B25B|htonique d'explosions|r.
+[X_PADDING=85;Y_PADDING=-3]* L'Abrahel du CH2 est un World-Boss PVE, il vous permettra donc t'obtenir la |cFFD7B25B|htonique de tempête|r.
+[X_PADDING=85;Y_PADDING=-3]* Vous ne savez pas ou se trouve Abrahel ? Téléportez vous:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+[X_PADDING=10;FONT_SIZE=14b;COLOR=ffd700]*  Behemoth
+
+
+
+[X_PADDING=85;Y_PADDING=-7]* Le world boss Behemoth vous permet d'obtenir des |cFFD7B25B|hlivres du savoir I et V|r.
+[X_PADDING=85;Y_PADDING=-7]* Le Behemoth PVP apparaît sur le CH1 tout les jours à |cFFD7B25B|h21:30|r.
+[X_PADDING=85;Y_PADDING=-7]* Le Behemoth PVE apparaît sur le CH2 tout les jours à |cFFD7B25B|h21:15|r.
+[X_PADDING=85;Y_PADDING=-7]* Le Behemoth PVP vous permettra d'obtenir le |cFFD7B25B|hLivre du savoir I (PV Max)|r
+[X_PADDING=85;Y_PADDING=-7]* Le Behemoth PVE vous permettra d'obtenir le |cFFD7B25B|hLivre du savoir V (Résistance DH)|r
+[X_PADDING=85;Y_PADDING=-7]* Vous ne savez pas ou se trouve Behemoth ? Téléportez vous:
+
+ 
+
+
+
+
+ 
+[BANNER_IMG = d:/ymir work/ui/game/wiki/category/wb.png]
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=12; CENTER_ALIGN]
+[IMG=d:/ymir work/ui/game/wiki/systems/bosses_1.png; Y=54;X=10]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/divider_small.png; Y=160;X=10]
+[RENDERTARGET=24170;WIDTH=70;HEIGHT=70;X=5;Y=170;]
+[LINK=warp#287900#547600#0;TEXT=Abrahel (desert);X=365;Y=225;FONT_SIZE=12;COLOR=0xffd700;]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/showcase_long.png; Y=250;X=10]
+
+[ITEM=50833;X=36;Y=265;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=64]
+[ITEM=72346;X=124;Y=265;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=152]
+[ITEM=30811;X=212;Y=265;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=239]
+[ITEM=50259;X=299;Y=265;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=327]
+[ITEM=80019;X=387;Y=265;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=415]
+[ITEM=96371;X=475;Y=265;SOCKET=0:0#1:100]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/showcase_long.png; Y=320;X=10]
+
+[ITEM=50834;X=36;Y=335;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=64]
+[ITEM=72346;X=124;Y=335;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=152]
+[ITEM=30811;X=212;Y=335;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=239]
+[ITEM=50259;X=299;Y=335;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=327]
+[ITEM=80019;X=387;Y=335;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=415]
+[ITEM=96371;X=475;Y=335;SOCKET=0:0#1:100]
+
+
+[IMG=d:/ymir work/ui/game/wiki/layout/divider_small.png; Y=440;X=10]
+[RENDERTARGET=24172;WIDTH=90;HEIGHT=90;X=-2;Y=450;]
+[LINK=warp#1175900#1578900#90;TEXT=Behemoth (montagne du tonerre);X=370;Y=522;FONT_SIZE=12;COLOR=0xffd700;]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/showcase_long.png; Y=550;X=10]
+
+[ITEM=50340;X=36;Y=565;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=64]
+[ITEM=50835;X=124;Y=565;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=152]
+[ITEM=50836;X=212;Y=565;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=239]
+[ITEM=50837;X=299;Y=565;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=327]
+[ITEM=72346;X=387;Y=565;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=415]
+[ITEM=96371;X=475;Y=565;SOCKET=0:0#1:100]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/showcase_long.png; Y=625;X=10]
+
+[ITEM=50344;X=36;Y=640;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=64]
+[ITEM=50835;X=124;Y=640;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=152]
+[ITEM=50836;X=212;Y=640;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=239]
+[ITEM=50837;X=299;Y=640;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=327]
+[ITEM=72346;X=387;Y=640;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=1026;X=415]
+[ITEM=96371;X=475;Y=640;SOCKET=0:0#1:100]

@@ -1,0 +1,136 @@
+[X_PADDING=40;FONT_SIZE=18b;COLOR=ffd700]Objectif
+ 
+
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Mettre à jour vos quêtes du biologiste
+[X_PADDING=85;Y_PADDING=-3]|Eemoji/arrow_2|e Farm le |cFFD7B25B|hTemple Ochao|r pour fabriquer puis améliorer son |cFFf1e6c0|hcollecteur d'âme de feu et de glace|r.
+[X_PADDING=85;Y_PADDING=-1]|Eemoji/arrow_2|e Farm le |cFFD7B25B|hTemple Ochao|r pour fabriquer puis améliorer son |cFFf1e6c0|hbadge du Combattant|r
+[X_PADDING=95;Y_PADDING=-1]|cFFf1e6c0|het Challenger (perma.)|r
+[X_PADDING=85;Y_PADDING=1]|Eemoji/arrow_2|e Farm les |cFFD7B25B|hTerres brulées|r pour fabriquer puis améliorer ces |cFFf1e6c0|hbijoux tourmalines +9|r 
+ 
+
+
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Faire |cFFD7B25B|hl'Erèbe|r pour faire son |cFFf1e6c0|harme kyanite, armure kyanite et chaussures d'océan.|r
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Faire les |cFFD7B25B|hRuines d'Atlantide|r pour fabriquer les |cFFf1e6c0|harmures 115 +9 (Monstres et Rési. DC) et |r
+[X_PADDING=95;Y_PADDING=-5]|cFFf1e6c0|hchaussures de feu|r.
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Farm les |cFFD7B25B|hTerres brulées|r pour fabriquer sa |cFFf1e6c0|hrosée grise (Rési. DM +10%) et le boucl. des 3 empereurs.|r
+
+
+
+
+[X_PADDING=25;FONT_SIZE=18b;COLOR=ffd700]EQ. conseillé
+
+
+
+[X_PADDING=10;FONT_SIZE=14b;COLOR=ffd700]|Eemoji/arrow_2|e Equipement contre metin
+
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Arme Lv.105 +9 avec au minimum |cFFD7B25B|h50% de dégat moyen|r.
+[X_PADDING=175;Y_PADDING=3]|Eemoji/arrow_2|e Armure Lv. 105 avec au minimum |cFFD7B25B|h 10% Drain de pv + 50 VA |r
+[X_PADDING=175;Y_PADDING=6]|Eemoji/arrow_2|e Boucl. des 3 empereurs+9 avec au minimum |cFFD7B25B|h 12 Force, Défense contre|r
+[X_PADDING=182;Y_PADDING=6]|cFFD7B25B|h l'étourdissement, Bloque CàC +15%.|r
+[X_PADDING=175;Y_PADDING=9]|Eemoji/arrow_2|e Heaume Lv. 100 avec au minimum |cFFD7B25B|h +8% vitesse d'attaque.|r
+[X_PADDING=175;Y_PADDING=12]|Eemoji/arrow_2|e Collier cristal d'âme (EV) avec au minimum.|cFFD7B25B|h + 2.000 PV Max  + 10% coup critique.|r
+[X_PADDING=175;Y_PADDING=15]|Eemoji/arrow_2|e Bracelet tourmaline+9 avec au minimum|cFFD7B25B|h + 2.000 PV Max + 10% coup critique|r
+[X_PADDING=183;Y_PADDING=15]|cFFD7B25B|h+ 10 % drain PV.|r
+[X_PADDING=175;Y_PADDING=18]|Eemoji/arrow_2|e Boucles cristal d'âme (EV) avec au minimun |cFFD7B25B|h20% Chance de double objet |r
+[X_PADDING=175;Y_PADDING=21]|Eemoji/arrow_2|e Chaussure de feu +9 avec au minimum|cFFD7B25B|h + 2.000 PV Max + 10% coup critique |r
+[X_PADDING=182;Y_PADDING=21]|cFFD7B25B|h+ 8% vitesse d'attaque|r
+[X_PADDING=175;Y_PADDING=24]|Eemoji/arrow_2|e|cFFD7B25B|h Collecteur d'âme de glace +9.
+
+
+
+
+
+
+[X_PADDING=10;FONT_SIZE=14b;COLOR=ffd700]|Eemoji/arrow_2|e Equipement contre donjon/boss
+
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Arme Lv.105 +9 avec au minimum |cFFD7B25B|h50% de dégat moyen|r.
+[X_PADDING=175;Y_PADDING=3]|Eemoji/arrow_2|e Armure Lv. 105 avec au minimum |cFFD7B25B|h 10% Drain de pv + 50 VA |r
+[X_PADDING=175;Y_PADDING=6]|Eemoji/arrow_2|e Boucl. des 3 empereurs+9 avec au minimum |cFFD7B25B|h 12 Force, Défense contre|r
+[X_PADDING=182;Y_PADDING=6]|cFFD7B25B|h l'étourdissement, Bloque CàC +15%.|r
+[X_PADDING=175;Y_PADDING=9]|Eemoji/arrow_2|e Heaume Lv. 100 avec au minimum |cFFD7B25B|h +8% vitesse d'attaque.|r
+[X_PADDING=175;Y_PADDING=12]|Eemoji/arrow_2|e Collier cristal d'âme (EV) avec au minimum.|cFFD7B25B|h + 2.000 PV Max  + 10% coup critique.|r
+[X_PADDING=175;Y_PADDING=15]|Eemoji/arrow_2|e Bracelet tourmaline+9 avec au minimum|cFFD7B25B|h + 2.000 PV Max + 10% coup critique|r
+[X_PADDING=183;Y_PADDING=15]|cFFD7B25B|h+ 10 % drain PV.|r
+[X_PADDING=175;Y_PADDING=18]|Eemoji/arrow_2|e Boucles cristal d'âme (EV) avec au minimun |cFFD7B25B|h20% Chance de double objet |r
+[X_PADDING=175;Y_PADDING=21]|Eemoji/arrow_2|e Chaussure de feu +9 avec au minimum|cFFD7B25B|h + 2.000 PV Max + 10% coup critique |r
+[X_PADDING=182;Y_PADDING=21]|cFFD7B25B|h+ 8% vitesse d'attaque|r
+[X_PADDING=175;Y_PADDING=24]|Eemoji/arrow_2|e|cFFD7B25B|h Collecteur d'âme de glace +9.
+
+[X_PADDING=175;Y_PADDING=24]|Eemoji/arrow_2|e|cFFD7B25B|h N'oubliez pas d'adapter les autres bonus selon la carte / donjon que vous farmez.
+[X_PADDING=175;Y_PADDING=24]|Eemoji/arrow_2|e|cFFD7B25B|h Exemple: Feu, Vent, Foudre, Animaux, Mal, Mort-vivants, Mystiques etc..
+
+
+
+
+[X_PADDING=10;FONT_SIZE=14b;COLOR=ffd700]|Eemoji/arrow_2|e Autres objets conseillé
+  
+
+[X_PADDING=85;Y_PADDING=6;FONT_SIZE=13]|Eemoji/arrow_2|e |cFFf1e6c0|h Livre d'exploit +7 à +9                                    |Eemoji/arrow_2|e |cFFf1e6c0|hRosée grise (P)|r 
+
+
+
+[X_PADDING=85;Y_PADDING=-6;FONT_SIZE=13]|Eemoji/arrow_2|e |cFFf1e6c0|h Badge du Combattant+9|r                                |Eemoji/arrow_2|e |cFFf1e6c0|hCollecteur d'âme de feu+9|r
+
+
+
+[X_PADDING=85;Y_PADDING=-14;FONT_SIZE=13]|Eemoji/arrow_2|e |cFFf1e6c0|h Badge du Challenger+9|r 
+
+
+
+
+
+
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=12; CENTER_ALIGN]
+[IMG=d:/ymir work/ui/game/wiki/guides/farm_3.png; Y=54;X=10]
+[IMG=d:/ymir work/ui/game/wiki/guides/dungeon_7.png; Y=144;X=10]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=246; CENTER_ALIGN]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/divider_small.png; Y=324;X=10]
+
+
+[IMG=d:/ymir work/ui/game/inventory/equipment_bg_without_ring.png; Y=340; X=10]
+[ITEM=3239;X=17;Y=345;SOCKET=0:1#1:1#2:1;ATTR=0:72?50#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=21219;X=53;Y=375;ATTR=0:0?0#1:23?10#2:53?50#3:0?0#4:0?0;]
+[ITEM=16609;X=126;Y=410;ATTR=0:1?2000#1:15?10#2:0?0#3:0?0#4:0?0;]
+[ITEM=14629;X=87;Y=410;ATTR=0:1?2000#1:15?10#2:23?10#3:0?0#4:0?0;]
+[ITEM=13169;X=88;Y=376;ATTR=0:5?12#1:0?0#2:27?15#3:48?1#4:0?0;]
+[ITEM=12699;X=51;Y=345;ATTR=0:7?8#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=95119;X=87;Y=345;ATTR=0:7?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=17609;X=126;Y=376;ATTR=0:45?20#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=85004;X=88;Y=448;SOCKET=0:25#1:2219#2:12;ATTR=0:72?50#1:0?0#2:0?0#3:0?0#4:0?0;ATTR=0:72?52#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=49006;X=15;Y=448;]
+[ITEM=18099;X=51;Y=448;ATTR=0:7?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=15449;X=52;Y=488;ATTR=0:1?2000#1:15?10#2:0?0#3:0?0#4:0?0;]
+
+
+[IMG=d:/ymir work/ui/game/wiki/layout/divider_small.png; Y=580;X=10]
+
+[IMG=d:/ymir work/ui/game/inventory/equipment_bg_without_ring.png; Y=600; X=10]
+[ITEM=3239;X=17;Y=605;SOCKET=0:1#1:1#2:1;ATTR=0:72?50#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=12059;X=53;Y=635;ATTR=0:1?2000#1:23?10#2:53?50#3:0?0#4:0?0;]
+[ITEM=16629;X=126;Y=670;ATTR=0:1?2000#1:15?10#2:0?0#3:0?0#4:0?0;]
+[ITEM=14609;X=87;Y=670;ATTR=0:1?2000#1:15?10#2:23?10#3:0?0#4:0?0;]
+[ITEM=13169;X=88;Y=636;ATTR=0:5?12#1:0?0#2:27?15#3:48?1#4:0?0;]
+[ITEM=12739;X=51;Y=605;ATTR=0:7?8#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=95119;X=87;Y=605;ATTR=0:7?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=17629;X=126;Y=636;ATTR=0:45?20#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=85004;X=88;Y=708;SOCKET=0:25#1:2219#2:12;ATTR=0:72?50#1:0?0#2:0?0#3:0?0#4:0?0;ATTR=0:72?52#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=49006;X=15;Y=708;]
+[ITEM=18099;X=51;Y=708;ATTR=0:7?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=15459;X=52;Y=748;ATTR=0:1?2000#1:15?10#2:0?0#3:0?0#4:0?0;]
+
+
+[IMG=d:/ymir work/ui/game/wiki/layout/divider_small.png; Y=845;X=10]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg3.png; Y=860;X=10]
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg3.png; Y=860; X=465]
+
+[ITEM=96487;X=28;Y=865;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=39209;X=28;Y=900;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=39219;X=28;Y=940;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=950827;X=484;Y=865;SOCKET=0:15#1:20#2:0;]
+[ITEM=95109;X=484;Y=900;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[BANNER_IMG = d:/ymir work/ui/game/wiki/category/guide.png]

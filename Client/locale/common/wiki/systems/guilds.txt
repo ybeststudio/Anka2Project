@@ -1,0 +1,131 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=title_overview;\
+    TEXT_1={WK:1};\
+    TEXT_1_ALIGN=center;\
+]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=116;\
+    TEXT_1={WK:27};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1039; TABLE_HEADERS=Item|Experience; TABLE_WIDTHS=240|140]
+[TR; H=32]
+[TD; ITEM=90010]
+[TD; TEXT=+1.000 Skill Point EXP; ALIGN=center]
+[TR; H=32]
+[TD; ITEM=90011]
+[TD; TEXT=+2.500 Skill Point EXP; ALIGN=center]
+[TR; H=32]
+[TD; ITEM=90012]
+[TD; TEXT=+5.000 Skill Point EXP; ALIGN=center]
+[TABLE_END]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1192;\
+    TEXT_1=Boost;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1242;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=65110;\
+    TEXT_1={WK:376};\
+    TEXT_2={WK:46}.;\
+    Y_PADDING=16;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1307;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=65111;\
+    TEXT_1={WK:377};\
+    TEXT_2={WK:46};\
+    Y_PADDING=16;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=166; TABLE_HEADERS=Info; TABLE_WIDTHS=125]
+[TR; H=40]
+[TD; TEXT={WK:28}; ALIGN=center]
+[TABLE_END]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=231;\
+    TEXT_1={WK:29};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=281;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=65113;\
+    TEXT_1={WK:30};\
+    TEXT_2={WK:31};\
+    Y_PADDING=16;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=346;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=65114;\
+    TEXT_1={WK:32};\
+    TEXT_2={WK:33};\
+    Y_PADDING=16;\
+]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=416;\
+    TEXT_1={WK:34};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=466; TABLE_HEADERS=Info; TABLE_WIDTHS=125]
+[TR; H=40]
+[TD; TEXT={WK:35}; ALIGN=center]
+[TABLE_END]
+[\
+    TITLE;\
+    X=10;\
+    Y=541;\
+    ANCHOR=guild_quest;\
+    TEXT_1={WK:36};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=591; TABLE_HEADERS=Info; TABLE_WIDTHS=125]
+[TR; H=40]
+[TD; TEXT={WK:37}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:38}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:39}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:40}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:41}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:42}; ALIGN=center]
+[TABLE_END]
+[\
+    TITLE;\
+    X=10;\
+    Y=816;\
+    ANCHOR=guild_skill;\
+    TEXT_1={WK:43};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=866; TABLE_HEADERS=Info; TABLE_WIDTHS=125]
+[TR; H=40]
+[TD; TEXT={WK:44}; ALIGN=center]
+[TR; H=50]
+[TD; TEXT={WK:45}; ALIGN=center]
+[TABLE_END]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=989;\
+    TEXT_1=Skill Point;\
+]

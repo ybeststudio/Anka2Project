@@ -1,0 +1,113 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=champion_arena_overview;\
+    TEXT_1=Champion Arena;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=116; TABLE_HEADERS=Overview; TABLE_WIDTHS=520]
+[TR; H=50]
+[TD; TEXT=Choose your opponent. Climb the rankings. Earn rewards.; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=178; TABLE_HEADERS=Daily Battles|Victory Reward|Season Ends; TABLE_WIDTHS=150|180|190]
+[TR; H=46]
+[TD; TEXT=|cffFFD37A5 battles|r; ALIGN=center]
+[TD; TEXT=|cffFFD37A2x Warrior Coin|r; ALIGN=center]
+[TD; TEXT=Sunday, 00:00; ALIGN=center]
+[TABLE_END]
+[\
+    TITLE;\
+    X=10;\
+    Y=280;\
+    ANCHOR=champion_arena_requirements;\
+    TEXT_1=Enter the Arena;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=330; TABLE_HEADERS=Requirements; TABLE_WIDTHS=520]
+[TR; H=44]
+[TD; TEXT=Complete |cffFFD37AEnigma|r to unlock participation.; ALIGN=center]
+[TR; H=44]
+[TD; TEXT=Your completed difficulty determines your starting points.; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=430; TABLE_HEADERS=Enigma Difficulty|Starting Points; TABLE_WIDTHS=260|260]
+[TR; H=38]
+[TD; TEXT={WK:296}; ALIGN=center]
+[TD; TEXT=1,000 points; ALIGN=center]
+[TR; H=38]
+[TD; TEXT={WK:297}; ALIGN=center]
+[TD; TEXT=2,000 points; ALIGN=center]
+[TR; H=38]
+[TD; TEXT={WK:298}; ALIGN=center]
+[TD; TEXT=|cffFFD37A3,000 points|r; ALIGN=center]
+[TABLE_END]
+[\
+    TITLE;\
+    X=10;\
+    Y=600;\
+    ANCHOR=champion_arena_battles;\
+    TEXT_1=Your Battles;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=650; TABLE_HEADERS=Step|Details; TABLE_WIDTHS=130|390]
+[TR; H=48]
+[TD; TEXT=|cffFFD37ADaily limit|r; ALIGN=center]
+[TD; TEXT=Fight up to 5 battles each day.; ALIGN=center]
+[TR; H=58]
+[TD; TEXT=|cffFFD37AYour choice|r; ALIGN=center]
+[TD; TEXT=Before each battle, pick one opponent from a selection of 5.; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=768; TABLE_HEADERS=Battle Result|Point Change; TABLE_WIDTHS=310|210]
+[TR; H=44]
+[TD; TEXT=Win against an opponent above your points; ALIGN=center]
+[TD; TEXT=Gain more points; ALIGN=center]
+[TR; H=44]
+[TD; TEXT=Win against an opponent below your points; ALIGN=center]
+[TD; TEXT=Gain fewer points; ALIGN=center]
+[TR; H=44]
+[TD; TEXT=Lose a battle; ALIGN=center]
+[TD; TEXT=Points deducted accordingly; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=938; TABLE_HEADERS=Reward; TABLE_WIDTHS=520]
+[TR; H=44]
+[TD; TEXT=Every victory earns you |cffFFD37A2x Warrior Coin|r.; ALIGN=center]
+[TABLE_END]
+[\
+    TITLE;\
+    X=10;\
+    Y=1012;\
+    ANCHOR=champion_arena_defense;\
+    TEXT_1=Your Defense;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1062; TABLE_HEADERS=Step|Details; TABLE_WIDTHS=130|390]
+[TR; H=60]
+[TD; TEXT=|cffFFD37AEquipment|r; ALIGN=center]
+[TD; TEXT=Create a defense equipment set for your bot to use in battle.; ALIGN=center]
+[TR; H=60]
+[TD; TEXT=|cffFFD37AYour defender|r; ALIGN=center]
+[TD; TEXT=When another player challenges you, your bot fights for you using that set.; ALIGN=center]
+[TABLE_END]
+[\
+    TITLE;\
+    X=10;\
+    Y=1212;\
+    ANCHOR=champion_arena_season;\
+    TEXT_1=Season Rewards;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1262; TABLE_HEADERS=Season; TABLE_WIDTHS=520]
+[TR; H=44]
+[TD; TEXT=Each season ends on |cffFFD37ASunday at 00:00|r.; ALIGN=center]
+[TR; H=44]
+[TD; TEXT=Finish in the |cffFFD37Atop 10|r to earn additional rewards.; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1362; TABLE_HEADERS=Final Rank|Season Bonus; TABLE_WIDTHS=160|360]
+[TR; H=52]
+[TD; TEXT=|cffFFD37A1st Place|r; ALIGN=center]
+[TD; TEXT=|cffFFD37A300 Dragoncoins|r; ALIGN=center]
+[TR; H=46]
+[TD; TEXT=|cffC0C0C02nd Place|r; ALIGN=center]
+[TD; TEXT=|cffC0C0C0200 Dragoncoins|r; ALIGN=center]
+[TR; H=46]
+[TD; TEXT=|cffCD7F323rd Place|r; ALIGN=center]
+[TD; TEXT=|cffCD7F32100 Dragoncoins|r; ALIGN=center]
+[TR; H=44]
+[TD; TEXT=4th-10th Place; ALIGN=center]
+[TD; TEXT=Bonus Warrior Coins; ALIGN=center]
+[TABLE_END]

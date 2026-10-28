@@ -1,0 +1,69 @@
+you can write anything to the first line cus this wont be parsed to avoid utf8 shits
+[BANNER_IMG = d:/ymir work/ui/wiki/banners/patchnotes.tga]
+Every line is a single textline for the parser.
+[CENTER_ALIGN]If you start the line with [ you can
+[CENTER_ALIGN]format the current line (for example CENTER_ALIGN):
+[IMG=d:/ymir work/ui/wiki/divider_long.tga; Y=200; CENTER_ALIGN]
+*You can add paragraphs by starting the textline with *.
+[X_PADDING=20]*You can set the X_PADDING for every textline so it will start a little bit right
+[X_PADDING=20;COLOR=0xFF0000]*You can color whole lines using COLOR=0xRRGGBB (optional: you can set the alpha if you use 0xRRGGBBAA)
+[X_PADDING=20;COLOR=0x0000FF;FONT_SIZE=30]*Its possible to write HUUUUGE TEXT LINES
+[X_PADDING=32;COLOR=0x0000FF;FONT_SIZE=40]with FONT_SIZE
+[Y_PADDING=20]*You can also set the Y_PADDING so the text will start farther from the previous line.
+[IMG=d:/ymir work/ui/wiki/divider_small.tga; Y=246; CENTER_ALIGN]
+[RIGHT_ALIGN]Right align exists too ;)
+[Y_PADDING=30]For images you have to set the path in the IMG token, then you can set its (local) position with X and Y tokens. If you 
+write CENTER_ALIGN or RIGHT_ALIGN then it will overwrite the X token.
+
+[CENTER_ALIGN]Oh btw tokens are separated with ;
+[IMG=d:/ymir work/ui/wiki/detail_item.tga; CENTER_ALIGN; Y = 276]
+[CENTER_ALIGN; Y_PADDING=15]If you write the image before the text you can even write on the image
+[CENTER_ALIGN; Y_PADDING=190]Otherwise you cant ;)
+[IMG=d:/ymir work/ui/wiki/detail_item.tga; CENTER_ALIGN; Y = 477]
+
+[Y_PADDING = 190]If you dont want to restart the client every time you modify this text coppy the wiki folder from locale/en to the client's
+folder, then rename it in locale to something else (like wiki_ or whatever) then pack locale and in test_server it will read 
+the files from the client's folder.
+
+[CENTER_ALIGN]Once its done you only have to change the category to see the edited texts.
+
+[COLOR=0xFF0000;FONT_SIZE=21]Yeah and dont forget to put it back to locale once you finished (:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[RIGHT_ALIGN]If you are wondering why that scrollbar is so long:
+[RIGHT_ALIGN]*because of the empty lines at the end of the file

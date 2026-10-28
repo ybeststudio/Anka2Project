@@ -1,0 +1,97 @@
+[X_PADDING=40;FONT_SIZE=18b;COLOR=ffd700]Objectif
+ 
+
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Mettre à jour vos quêtes du biologiste
+[X_PADDING=85;Y_PADDING=-3]|Eemoji/arrow_2|e Faire le donjon |cFFD7B25B|hDragon Blanc|r pour faire son arme 105 +9
+[X_PADDING=85;Y_PADDING=-1]|Eemoji/arrow_2|e Faire le donjon |cFFD7B25B|hRepaire du Meley|r pour obtenir son casque 105+9
+[X_PADDING=85;Y_PADDING=1]|Eemoji/arrow_2|e Faire le donjon |cFFD7B25B|hGrotte cristalisée|r pour améliorer les bijoux cristal d'âme en (EV)
+[X_PADDING=85;Y_PADDING=3]|Eemoji/arrow_2|e Faire le |cFFD7B25B|hRazador & Némère|r pour fabriquer une ceinture Lv 105 puis l'améliorer +9.
+
+[X_PADDING=85;Y_PADDING=5]|Eemoji/arrow_2|e Fabriquer vos |cFFD7B25B|hbijoux kyanite|r et préparez votre équipement PVP
+[X_PADDING=85;Y_PADDING=7]|Eemoji/arrow_2|e A l'aide de vos équipement PVP faire le donjon |cFFD7B25B|hArène du champion|r pour faire sa |cFFD7B25B|hTenue d'Aura|r.
+ 
+
+
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Farm |cFFD7B25B|hla Foret enchantée|r pour faire le stock des nouvelles potions chez le Gardien de la forêt.
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Farm |cFFD7B25B|hla Foret enchantée|r pour farm des bénédiction 6/7 et perfectionner vos bonus 6 & 7.
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Faire évoluer son familier en Héroique et lui mettre les 3 compétences: |cFFD7B25B|hBerserker, Chass. boss|r 
+[X_PADDING=95;Y_PADDING=-5]|cFFD7B25B|het Chass. metin au niveau 20|r.
+
+
+
+  
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=12; CENTER_ALIGN]
+[IMG=d:/ymir work/ui/game/wiki/guides/huahn_picture.png; Y=54;X=10]
+[IMG=d:/ymir work/ui/game/wiki/guides/skills_warrior.png; Y=184;X=10]
+
+
+[X_PADDING=25;FONT_SIZE=18b;COLOR=ffd700]EQ. conseillé
+
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Arme Lv.105 +9 avec au minimum |cFFD7B25B|h50% de dégat moyen|r.
+[X_PADDING=175;Y_PADDING=3]|Eemoji/arrow_2|e Armure Lv. 105 avec au minimum |cFFD7B25B|h 10% Drain de pv + 50 VA |r
+[X_PADDING=175;Y_PADDING=6]|Eemoji/arrow_2|e Bouclier titan+9 avec au minimum |cFFD7B25B|h 12 Force, Déf. contre l'étourdissement, |r
+[X_PADDING=182;Y_PADDING=6]|cFFD7B25B|h Bloque CàC +15%.|r
+[X_PADDING=175;Y_PADDING=9]|Eemoji/arrow_2|e Heaume Lv. 100 avec au minimum |cFFD7B25B|h +8% vitesse d'attaque.|r
+[X_PADDING=175;Y_PADDING=12]|Eemoji/arrow_2|e Collier cristal d'âme (EV) avec au minimum.|cFFD7B25B|h + 2.000 PV Max  + 10% coup critique.|r
+[X_PADDING=175;Y_PADDING=15]|Eemoji/arrow_2|e Bracelet cristal d'âme (EV) avec au minimum|cFFD7B25B|h + 2.000 PV Max + 10% coup critique|r
+[X_PADDING=183;Y_PADDING=15]|cFFD7B25B|h+ 10 % drain PV.|r
+[X_PADDING=175;Y_PADDING=18]|Eemoji/arrow_2|e Boucles cristal d'âme (EV) avec au minimun |cFFD7B25B|h20% Chance de double objet |r
+[X_PADDING=175;Y_PADDING=21]|Eemoji/arrow_2|e Chaussure qilin +9 avec au minimum|cFFD7B25B|h + 2.000 PV Max + 10% coup critique |r
+[X_PADDING=182;Y_PADDING=21]|cFFD7B25B|h+ 8% vitesse d'attaque|r
+[X_PADDING=175;Y_PADDING=24]|Eemoji/arrow_2|e|cFFD7B25B|h Collecteur d'âme +9.
+
+[X_PADDING=175;Y_PADDING=24]|Eemoji/arrow_2|e|cFFD7B25B|h N'oubliez pas d'adapter les autres bonus selon la carte / donjon que vous farmez.
+[X_PADDING=175;Y_PADDING=24]|Eemoji/arrow_2|e|cFFD7B25B|h Exemple: Feu, Vent, Foudre, Animaux, Mal, Mort-vivants, Mystiques etc..
+
+
+
+
+[X_PADDING=10;FONT_SIZE=14b;COLOR=ffd700]|Eemoji/arrow_2|e Autres objets conseillé
+  
+
+[X_PADDING=85;Y_PADDING=6;FONT_SIZE=13]|Eemoji/arrow_2|e |cFFf1e6c0|h Livre d'exploit +5 à +7                                    |Eemoji/arrow_2|e |cFFf1e6c0|h Eau de Mi-Jong|r 
+
+
+
+[X_PADDING=85;Y_PADDING=-6;FONT_SIZE=13]|Eemoji/arrow_2|e |cFFf1e6c0|h Bracelet de kyanite +9|r                                    |Eemoji/arrow_2|e |cFFf1e6c0|h Eau de Hwango|r
+
+
+
+[X_PADDING=85;Y_PADDING=-14;FONT_SIZE=13]|Eemoji/arrow_2|e |cFFf1e6c0|h Collier de kyanite +9|r                            			|Eemoji/arrow_2|e |cFFf1e6c0|h Eau de Fong|r
+
+
+
+[X_PADDING=85;Y_PADDING=-22;FONT_SIZE=13]|Eemoji/arrow_2|e |cFFf1e6c0|h Boucles kyanite +9|r                           				|Eemoji/arrow_2|e |cFFf1e6c0|h Ceinture d'esprit +9|r
+
+
+
+
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=306; CENTER_ALIGN]
+[IMG=d:/ymir work/ui/game/inventory/equipment_bg_without_ring.png; Y=350; X=10]
+[ITEM=3239;X=17;Y=355;SOCKET=0:1#1:1#2:1;ATTR=0:72?50#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=21219;X=53;Y=385;ATTR=0:0?0#1:23?10#2:53?50#3:0?0#4:0?0;]
+[ITEM=16609;X=128;Y=420;ATTR=0:1?2000#1:15?10#2:0?0#3:0?0#4:0?0;]
+[ITEM=14609;X=85;Y=420;ATTR=0:1?2000#1:15?10#2:23?10#3:0?0#4:0?0;]
+[ITEM=13149;X=88;Y=386;ATTR=0:5?12#1:0?0#2:27?15#3:48?1#4:0?0;]
+[ITEM=12739;X=51;Y=355;ATTR=0:7?8#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=95009;X=87;Y=355;ATTR=0:7?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=17609;X=128;Y=386;ATTR=0:45?20#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=85004;X=88;Y=458;SOCKET=0:25#1:2179#2:12;ATTR=0:72?50#1:0?0#2:0?0#3:0?0#4:0?0;ATTR=0:72?52#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=18099;X=51;Y=458;ATTR=0:7?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=15419;X=52;Y=498;ATTR=0:1?2000#1:15?10#2:0?0#3:0?0#4:0?0;]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/divider_small.png; Y=600;X=10]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg4.png; Y=615;X=10]
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg4.png; Y=615; X=465]
+
+[ITEM=96487;X=28;Y=620;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=14579;X=28;Y=655;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=16579;X=28;Y=695;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=17589;X=28;Y=735;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=50835;X=484;Y=620;SOCKET=0:15#1:20#2:0;]
+[ITEM=50836;X=484;Y=655;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=50837;X=484;Y=695;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=18089;X=484;Y=735;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[BANNER_IMG = d:/ymir work/ui/game/wiki/category/guide.png]

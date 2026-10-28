@@ -1,0 +1,165 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    TEXT_1=Guide 55-75;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=117; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=96]
+[TD; TEXT=This is one of the easiest progression stages.\nYou do not need to replace your equipment.\nKeep your current gear and focus on permanent systems.\nBuying too much new equipment can drain your Yang quickly.; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=239;\
+    ANCHOR=continue_improving;\
+    TEXT_1=Continue Improving;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=290; TABLE_HEADERS=Objective|Description; TABLE_WIDTHS=120|400]
+[TR; H=66]
+[TD; TEXT={WK:15}; ALIGN=center]
+[TD; TEXT=Keep using your current equipment.\nPermanent systems are more efficient now\nthan replacing your full gear set.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=PvM Buff; ALIGN=center]
+[TD; TEXT=Continue upgrading your PvM Buff skills\ntoward P.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Passive\nSkills; ALIGN=center]
+[TD; TEXT=Upgrade your important Passive Skills\nto at least G1.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Biologist; ALIGN=center]
+[TD; TEXT=Complete your available Biologist missions\nevery day.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Dews; ALIGN=center]
+[TD; TEXT=Keep your recommended damage\nand resistance Dews active.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Herbalism; ALIGN=center]
+[TD; TEXT=Continue Herbalism for additional\npermanent bonuses.; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=622; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=42]
+[TD; TEXT=; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=684; TABLE_HEADERS=Objective|Description; TABLE_WIDTHS=120|400]
+[TR; H=50]
+[TD; TEXT=Pet; ALIGN=center]
+[TD; TEXT=Continue leveling and improving your Pet\nwhenever materials are available.; ALIGN=center]
+[TR; H=58]
+[TD; TEXT=Mount; ALIGN=center]
+[TD; TEXT=Your Mount should provide at least\n10% Elemental Resistance and\n5% Piercing Hit Chance.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Alchemy; ALIGN=center]
+[TD; TEXT=Build and improve Alchemy gradually\ninstead of buying everything at once.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT={WK:171}; ALIGN=center]
+[TD; TEXT=Prepare costume bonuses for\nDevil Tower and Death Reaper.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT={WK:61}; ALIGN=center]
+[TD; TEXT=Continue upgrading your main skill\ntoward P.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Yang; ALIGN=center]
+[TD; TEXT=Save Yang for your level 75 weapon\nand important permanent upgrades.; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1028;\
+    ANCHOR=equipment;\
+    TEXT_1={WK:15};\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1079; TABLE_HEADERS=Equipment|Recommended Bonuses; TABLE_WIDTHS=115|405]
+[TR; H=58]
+[TD; TEXT={WK:57}; ALIGN=center]
+[TD; TEXT=Level 75 weapon with at least\n40% Average Damage and +4 Stones.; ALIGN=center]
+[TR; H=90]
+[TD; TEXT={WK:19}; ALIGN=center]
+[TD; TEXT=Level 60 helmet with 15% Elemental Resistance,\n20% Strong Against Animals and\n20% Strong Against Undead.; ALIGN=center]
+[TR; H=90]
+[TD; TEXT=Armour; ALIGN=center]
+[TD; TEXT=Level 70 armour with 15% Elemental Resistance,\n50 Attack Value, HP and\n5% Damage Absorbed by HP.; ALIGN=center]
+[TR; H=104]
+[TD; TEXT={WK:162}; ALIGN=center]
+[TD; TEXT=Level 61 shield with block chance,\nyour main stat, 20% Strong Against Animals\nand 20% Strong Against Undead.; ALIGN=center]
+[TR; H=104]
+[TD; TEXT={WK:158}; ALIGN=center]
+[TD; TEXT=Level 50 for STR or level 54 for INT,\nwith 20% Double Item Drop,\n20% Animals and 20% Undead.; ALIGN=center]
+[TR; H=90]
+[TD; TEXT={WK:159}; ALIGN=center]
+[TD; TEXT=Level 50 for STR or level 54 for INT,\nwith HP, 10% Critical Hit Chance\nand 20% Double Yang Drop.; ALIGN=center]
+[TR; H=104]
+[TD; TEXT={WK:160}; ALIGN=center]
+[TD; TEXT=Level 54 bracelet with HP,\n20% Double Item Drop,\n20% Animals and 20% Undead.; ALIGN=center]
+[TR; H=74]
+[TD; TEXT={WK:161}; ALIGN=center]
+[TD; TEXT=Level 59 shoes with HP,\n10% Critical Hit Chance and\n20% Double Yang Drop.; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1825;\
+    ANCHOR=demon_tower_preparation;\
+    TEXT_1=Demon Tower Preparation;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1876; TABLE_HEADERS=Objective|Description; TABLE_WIDTHS=140|380]
+[TR; H=58]
+[TD; TEXT=Undead\nBonus; ALIGN=center]
+[TD; TEXT=Devil Tower and Death Reaper contain Undead enemies.\nPrepare Strong Against Undead before entering.; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Costume\nWeapon; ALIGN=center]
+[TD; TEXT=Use 20% Strong Against Undead.; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Costume\nHelmet; ALIGN=center]
+[TD; TEXT=Use 20% Strong Against Undead.; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Costume\nArmour; ALIGN=center]
+[TD; TEXT=Use 10% Elemental Resistance.; ALIGN=center]
+[TR; H=66]
+[TD; TEXT=Preparation; ALIGN=center]
+[TD; TEXT=Prepare these bonuses before entering.\nChanging costume bonuses during active content\nmay not be possible.; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=2164;\
+    TEXT_1=Dungeon Overview;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=34; TABLE_HIDE_TITLE=0; X=10; Y=2215; TABLE_HEADERS=Dungeon|Level|Cooldown|Element|Race|DPS; TABLE_WIDTHS=105|70|75|85|85|100]
+[TR; H=48]
+[TD; TEXT=Spider\nBaroness; ALIGN=center]
+[TD; TEXT=50 - 75; ALIGN=center]
+[TD; TEXT=15 min; ALIGN=center]
+[TD; TEXT={WK:555}; ALIGN=center]
+[TD; TEXT={WK:563}; ALIGN=center]
+[TD; TEXT=4,000; ALIGN=center]
+[TR; H=48]
+[TD; TEXT=Death\nReaper; ALIGN=center]
+[TD; TEXT=55 - 80; ALIGN=center]
+[TD; TEXT=15 min; ALIGN=center]
+[TD; TEXT={WK:231}; ALIGN=center]
+[TD; TEXT={WK:557}; ALIGN=center]
+[TD; TEXT=11,000; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2363; TABLE_HEADERS=Dungeon|Strong Against Monster; TABLE_WIDTHS=200|320]
+[TR; H=42]
+[TD; TEXT=Spider Baroness; ALIGN=center]
+[TD; TEXT=At least 20% recommended.; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Death Reaper; ALIGN=center]
+[TD; TEXT=At least 31% recommended.; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2491; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=66]
+[TD; TEXT=Color(Death Reaper introduces Darkness element and Undead enemies.\nMake sure your resistance and Strong Against Undead bonuses\nare prepared before attempting it.); ALIGN=center]
+[TABLE_END]

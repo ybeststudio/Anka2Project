@@ -1,0 +1,5 @@
+[IMG=d:/ymir work/ui/game/wiki/layout/picture_bg.png; Y=0;X=0]
+[RENDERTARGET=ParentVnum(1);WIDTH=63;HEIGHT=63;X=1;Y=1;]
+[X=75;Y=0;NO_ADD_Y;FONT_SIZE=13]ParentTxt(1)
+[X=75;Y=0+(12*1);NO_ADD_Y;FONT_SIZE=13]ParentTxt(2)
+[X=75;Y=0+(12*2);NO_ADD_Y;FONT_SIZE=13]ParentTxt(3)

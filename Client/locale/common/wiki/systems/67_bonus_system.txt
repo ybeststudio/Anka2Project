@@ -1,0 +1,378 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    TEXT_1={WK:1};\
+]
+[\
+    TITLE;\
+    X=10;\
+    Y=196;\
+    ANCHOR=bonus_addition;\
+    TEXT_1={WK:343};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=116;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=40804;\
+    TEXT_1={WK:3};\
+    Y_PADDING=10;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=246;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=96349;\
+    TEXT_1={WK:5};\
+    Y_PADDING=10;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=311;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=40801;\
+    TEXT_1={WK:322};\
+    Y_PADDING=10;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=376;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=72064;\
+    TEXT_1={WK:8};\
+    Y_PADDING=10;\
+]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=446;\
+    TEXT_1={WK:12};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=496; TABLE_HEADERS={WK:12}|{WK:15}; TABLE_WIDTHS=240|260]
+[TR; H=32]
+[TD; ITEM=39070]
+[TD; TEXT={WK:158}; ALIGN=center]
+[TR; H=32]
+[TD; ITEM=39071]
+[TD; TEXT={WK:18}; ALIGN=center]
+[TR; H=32]
+[TD; ITEM=39072]
+[TD; TEXT={WK:19}; ALIGN=center]
+[TR; H=32]
+[TD; ITEM=39073]
+[TD; TEXT={WK:162}; ALIGN=center]
+[TR; H=32]
+[TD; ITEM=39074]
+[TD; TEXT={WK:160}; ALIGN=center]
+[TR; H=32]
+[TD; ITEM=39075]
+[TD; TEXT={WK:49}; ALIGN=center]
+[TR; H=32]
+[TD; ITEM=39076]
+[TD; TEXT={WK:159}; ALIGN=center]
+[TR; H=32]
+[TD; ITEM=39077]
+[TD; TEXT={WK:57}; ALIGN=center]
+[TABLE_END]
+[\
+    TITLE;\
+    X=10;\
+    Y=799;\
+    ANCHOR=bonus_change;\
+    TEXT_1={WK:66};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=849;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=72346;\
+    TEXT_1={WK:71};\
+    Y_PADDING=17;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=914;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=72351;\
+    TEXT_1={WK:73};\
+    Y_PADDING=12;\
+]
+[\
+    TITLE;\
+    X=10;\
+    Y=994;\
+    ANCHOR=bonus_list;\
+    TEXT_1={WK:91};\
+]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1044;\
+    TEXT_1={WK:57};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1094; TABLE_HEADERS={WK:58}|{WK:59}|{WK:60}; TABLE_WIDTHS=240|140|140]
+[TR; H=32]
+[TD; TEXT=AppendBonus(3); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(4); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(5); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(6); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(17); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(63); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1327;\
+    TEXT_1={WK:18};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1377; TABLE_HEADERS={WK:58}|{WK:59}|{WK:60}; TABLE_WIDTHS=240|140|140]
+[TR; H=32]
+[TD; TEXT=AppendBonus(1); ALIGN=center]
+[TD; TEXT=125; ALIGN=center]
+[TD; TEXT=500; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(39); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(43); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(53); ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TD; TEXT=50; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(55); ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TD; TEXT=50; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(120); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1610;\
+    TEXT_1={WK:19};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1660; TABLE_HEADERS={WK:58}|{WK:59}|{WK:60}; TABLE_WIDTHS=240|140|140]
+[TR; H=32]
+[TD; TEXT=AppendBonus(10); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(11); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(17); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(28); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(121); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(135); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1893;\
+    TEXT_1={WK:162};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1943; TABLE_HEADERS={WK:58}|{WK:59}|{WK:60}; TABLE_WIDTHS=240|140|140]
+[TR; H=32]
+[TD; TEXT=AppendBonus(3); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(4); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(5); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(6); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(17); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(63); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=2176;\
+    TEXT_1={WK:160};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2226; TABLE_HEADERS={WK:58}|{WK:59}|{WK:60}; TABLE_WIDTHS=240|140|140]
+[TR; H=32]
+[TD; TEXT=AppendBonus(1); ALIGN=center]
+[TD; TEXT=125; ALIGN=center]
+[TD; TEXT=500; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(2); ALIGN=center]
+[TD; TEXT=20; ALIGN=center]
+[TD; TEXT=100; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(23); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(115); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(119); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(136); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=2459;\
+    TEXT_1={WK:159};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2509; TABLE_HEADERS={WK:58}|{WK:59}|{WK:60}; TABLE_WIDTHS=240|140|140]
+[TR; H=32]
+[TD; TEXT=AppendBonus(10); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(11); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(90); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(91); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(119); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(120); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=2742;\
+    TEXT_1={WK:158};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2792; TABLE_HEADERS={WK:58}|{WK:59}|{WK:60}; TABLE_WIDTHS=240|140|140]
+[TR; H=32]
+[TD; TEXT=AppendBonus(1); ALIGN=center]
+[TD; TEXT=125; ALIGN=center]
+[TD; TEXT=500; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(8); ALIGN=center]
+[TD; TEXT=2; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(24); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(63); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(115); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(133); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=3025;\
+    TEXT_1={WK:161};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=3075; TABLE_HEADERS={WK:58}|{WK:59}|{WK:60}; TABLE_WIDTHS=240|140|140]
+[TR; H=32]
+[TD; TEXT=AppendBonus(13); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=3; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(14); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=3; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(53); ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TD; TEXT=50; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(55); ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TD; TEXT=50; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(115); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(133); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TABLE_END]
+

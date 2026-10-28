@@ -1,0 +1,3167 @@
+VNUM	LOCALE_NAME
+101	Câine sãlbatic
+102	Lup
+103	Lup Alpha
+104	Lup Albastru
+105	Lup Alpha Albastru
+106	Lup Gri
+107	Lup Alpha Gri
+108	Mistreþ Sãlbatic
+109	Mistreþ Sãlbatic Roºu
+110	Urs
+111	Urs Grizzly
+112	Urs Negru
+113	Urs Brun
+114	Tigru
+115	Tigru Alb
+131	Lup Blestemat
+132	Lup Blestemat Alpha
+133	Lup Blestemat Albastru
+134	Lup Alpha Albastru Blest
+135	Lup Blestemat Gri
+136	Lup Blest Alpha Gri
+137	Mistreþ Blestemat
+138	Mistreþ Blestemat Roºu
+139	Urs Blestemat
+140	Urs Blestemat Grizzly
+141	Urs Blestemat Negru
+142	Urs Blestemat Brun
+143	Tigru Blestemat
+144	Tigru Blestemat Alb
+151	Cung-Mok
+152	Mu-Rang
+153	Jug-Hyul
+154	Young-Ji
+155	Li-An
+171	Câine sãlbatic flãmând
+172	Lup Flamand
+173	Lup Flamand Alpha
+174	Lup Flamand Albastru
+175	Lup Flamand Alpha Albast
+176	Lup Flamand Gri
+177	Lup Flamand Alpha Gri
+178	Mistreþ Flãmând
+179	Mistreþ Flãmând Roºu
+180	Urs Flamand
+181	Urs Flãmând Grizzly
+182	Urs Flamand Negru
+183	Urs Flamand Brun
+184	Tigru Flamand
+185	Tigru Flamand Alb
+191	Lykos
+192	Scrofa
+193	Bera
+194	Tigris
+301	Amazoanã Soldat
+302	Arcaº Amazoanã
+303	Amazoanã General
+304	Amazoanã Comandant
+331	Amazoanã Soldat
+332	Amazoanã Arcaº
+333	Amazoanã General
+334	Amazoanã Comandant
+351	Amazoanã Soldat Laºã
+352	Amazoanã Arcaº Laºã
+353	Amazoanã General Laºã
+354	Amazoanã Comandant Laºã
+391	Mi-Jung
+392	Eun-Jung
+393	Se-Rang
+394	Jin-Hee
+395	Tristul de Mi-Jung
+396	Tristul de Eun-Jung
+397	Tristul Se-Rang
+398	Tristul Jin-Hee
+401	Soldat vânt negru
+402	Posedat de vânt negru
+403	Arcaº vânt negru
+404	vânt negru Jak-To
+405	vânt negru To-Su
+406	vânt negru Gu-Ryung
+431	Soldat de atac negru
+432	Posedat de atac negru
+433	Arcaº negru
+434	Joh-Hwan de atac negru
+435	Kyuk-Jan de atac negru
+436	Pho-Hwan de atac negru
+451	Soldat de atac negru rãu
+452	Posedat de atac rãu
+453	Arcaº de atac rãu
+454	Joh-Hwan de atac rãu
+455	Kyuk-Jang de atac rãu
+456	Pho-Hwan de atac rãu
+491	Mahon
+492	Bo
+493	Goo-Pae
+494	Chuong
+501	Infanterist Salbatic
+502	Salbatic Devotat
+503	Arcaº sãlbatic
+504	General Salbatic
+531	Soldat brutal
+532	Posedat brutal
+533	Arcaº brutal
+534	Specialist brutal
+551	Infanterist Salbatic Dur
+552	Locotenent Salbatic Dur
+553	Arcaº Sãlbatic Dur
+554	General Salbatic Dur
+591	Capitanul Bestie
+595	Geum-Chul brutal
+601	Ork
+602	Spion ork
+603	Orc Luptãtor
+604	Orc Vrãjitor
+631	Orc Elite
+632	Orc Elite Cercetaº
+633	Orc Elite Luptãtor
+634	Orc Elite Vrãjitor
+635	Orc Elite General
+636	Orc Negru
+637	Orc Negru Uriaº
+651	Orc Mare Curajos
+652	Orc Mare Cercetaº
+653	Orc Mare Luptãtor
+654	Orc Mare Vrãjitor
+655	Orc Mare General
+656	Orc Negru Curajos
+657	Orc Negru Gigant
+691	Orc Sef
+692	Orc Elite Sef
+693	Orc Sef Spirit
+701	Fanatic Intunecat
+702	Arahan Întunecat
+703	Luptãtor Întunecat
+704	Arahan Întunecat Super
+705	Cãlãu întunecat
+706	Despot întunecat
+707	Incantator Intunecat
+731	Fanatic Mandru Intunecat
+732	Arahan Întunecat Mândru
+733	Luptãtor întunecat mândr
+734	Colonel Întunecat Mândru
+735	Puscas Malefic Mandru
+736	Despot întunecat mândru
+737	Vrãjitor întunecat mândr
+751	Fanatic înalt
+752	Arahan Înalt
+753	Arahan Luptãtor Înalt
+754	Arahan Superior Înalt
+755	Cãlãu înalt
+756	Despot înalt
+757	Incântãtor înalt
+771	Fanatic brutal
+772	Arahan Brutal
+773	Arahan Luptãtor Brutal
+774	Arahan Superior Brutal
+775	Cãlãu brutal
+776	Despot brutal
+777	Incântãtor brutal
+791	Conducãtor întunecat
+792	Conducator Spirit Negru
+793	Conducãtor întun. elitã
+794	Strigoi Intunecat
+795	Luptãtor de elitã
+796	Lupt. întunec. de elitã
+901	Spiritul Cadavrului
+902	Câine al ciumei
+903	Om al ciumei
+904	Luptãtor sabie al ciumei
+905	Luptãtor suliþã al ciume
+906	Arcaº al ciumei
+907	Comandant al ciumei
+931	Spirit Cadavru Furios
+932	Câine al ciumei sãlbatic
+933	Om al ciumei sãlbatic
+934	Luptãtor al ciumei sãlb.
+935	Lupt. suliþã al cium. s.
+936	Arcaº al ciumei sãlbatic
+937	Com. al ciumei furios
+991	Ou al ciumei
+992	Purtãtor de ciumã
+993	Purtãtor de ciumã uriaº
+1001	Soldat Demon
+1002	Arcaº Demon
+1003	Demon Suliþaº
+1004	Demon ªaman
+1031	Soldat comun
+1032	Arcaº comun
+1033	Luptãtor Suliþã Comun
+1034	ªaman comun
+1035	Spiritul mâniei
+1036	Spiritul haosului
+1037	Demon comandant comun
+1038	Maestru craniu sabie
+1039	Craniu zburãtor
+1040	Spirit nemuritor
+1041	Animal demonic
+1061	Spirit soldat comun
+1062	Spirit arcaº comun
+1063	Spirit luptãtor comun
+1064	Spirit ªaman Comun
+1065	Spirit al mâniei comun
+1066	Spirit al haosului comun
+1067	Spirit comandant comun
+1068	Samurai Fantoma
+1069	Craniu zburãtor comun
+1070	Spirit nemuritor
+1071	Animal demonic
+1091	Demon rege
+1092	Demon rege mândru
+1093	Ingerul cu Coasa
+1094	Demon rege comun
+1095	Moarte albastra
+1096	Áø»ç±Í¿Õ
+1101	Gheaþã Fermecatã
+1102	Balenã Ucigaºã de Gheaþã
+1103	Insectã de Gheaþã
+1104	Leu de gheaþã
+1105	Om Îngheþat
+1106	Yeti
+1107	Golem de Gheaþã
+1108	Golem de Gheaþã
+1131	Aºchii Gheatã Lumea Jos
+1132	Balenã ucigaºã gheaþã
+1133	Insecta Inghetata
+1134	Leu Gheaþã Lumea Jos
+1135	Omul gheþii lumii de jos
+1136	Yeti Salbatic
+1137	Golem de Gheaþã Subteran
+1138	Golem de Gheaþã Subteran
+1151	Diavol de Gheaþã
+1152	Balenã Corn de Gheaþã
+1153	Insectã de Gheaþã
+1154	Seol-Gu
+1155	Omul Ghetii
+1156	Gigant de Gheaþã
+1157	Golem de Gheaþã
+1171	Gheaþã fermecatã rea
+1172	Balenã cu corn d gh. rea
+1173	Insectã de Gheaþã Rea
+1174	Leu de gheaþã rãu
+1175	Om Rau de Gheaþã
+1176	Yeti rãu
+1177	Golem de Gheaþã Puternic
+1191	Vrãjitoare de gheaþã
+1192	Vrãjitoare Rea de Gheaþã
+1301	Soldat Brotac
+1302	General Brotac
+1303	Cãpcãun
+1304	Fantoma Tigrului Galben
+1305	General Broasca Taur
+1306	Naluca Tigrului Galben
+1307	Naluca Tigrului Galben
+1308	Naluca Tigrului Galben
+1309	Naluca Tigrului Galben
+1310	Naluca Tigrului Galben
+1331	Soldat Brotac Mare
+1332	Liderul General Brotac
+1333	Cãpcãun mare
+1334	Duhul Tigrului Galben
+1335	Gen. broascã-bou mare
+1336	General Broascã Taur
+1401	Distrugãtor
+1402	Luptãtor cu securea
+1403	Miria-Luptãtor
+1501	Golem de Piatrã
+1502	Spãrgãtor de Piatrã
+1503	Golem de Stanca
+1601	Cãpcãun rãzboinic
+1602	Capcaun Macelar
+1603	Berserker cãpcãun
+1901	Noua Cozi
+1902	Noua Cozi de Elita
+1903	Noua Cozi de Elita
+1904	Noua Cozi de Elita
+1905	Noua Cozi de Elita
+1906	Noua Cozi de Elita
+2001	Pui de Pãianjen
+2002	Pãianjen Otrãvitor
+2003	Pãianjen Otrãvitor Roºu
+2004	Pãianjen Ghearã
+2005	Pãianjen Soldat
+2031	Pui de Pãianjen Otrãvit
+2032	Pãianjen Toxic Mortal
+2033	Pãianj Otrãvit Mort Roºu
+2034	Pãianjen Ghearã Toxicã
+2035	Pãianjen Soldat Toxic
+2036	Pãianjen Soldat Mândru
+2037	Pãianjen Soldat Otrãvit
+2051	Pui Pãianjen Toxic Rãu
+2052	Pãianjen Otrãvitor Rãu
+2053	Pãianjen Roºu Toxic Rãu
+2054	Pãianjen Ghearã Tox Rãu
+2055	Pãianjen Soldat Tox Rãu
+2061	Pãianjen Otrãvitor Mic
+2062	Pãianjen Toxic Mortal
+2063	Pãianjen Toxic Roºu
+2064	Pãianjen Ghearã Toxicã
+2065	Pãianjen Soldat Toxic
+2071	Pãianjen Pui Mortal
+2072	Pãi. otr. mort. brutal
+2073	Pãi. otr. roºu brutal
+2074	Pãi. otr. cu ghearã brut
+2075	Pãianjen Soldat Mortal
+2076	Pãianjen Bestial Otrãvit
+2091	Reginã Pãianjen
+2092	Baroneasã Pãianjen
+2093	Vaduva Neagra
+2094	Baron Pãianjen
+2095	Ou de Pãianjen
+2101	Vulpe de Desert
+2102	Ochi Zburãtor Deºert
+2103	Scorpion Regal
+2104	Om Scorpion Mic
+2105	Arcaº Scorpion
+2106	ªarpe Spadasin
+2107	Arcaº ªarpe
+2108	Tâlhar de Deºert
+2131	Om Scorpion
+2132	Arcaº Scorpion
+2133	Luptãtor sabie ºarpe
+2134	Arcaº ªarpe
+2135	Tâlhar de Deºert
+2151	Vulpe Salbatica de Deser
+2152	Calugar Puternic
+2153	Scorpion Regal Dur
+2154	Om Scorpion Dur
+2155	Arcaº Dur Scorpion
+2156	ªarpe Spadasin Dur
+2157	Arcaº Dur ªarpe
+2158	Beduin Puternic
+2191	Testoasa Gigant
+2192	Þestoasã de deºert neagr
+2201	Tigru Luptãtor Dur
+2202	Spiritul Focului
+2203	Tigru Luptãtor
+2204	Flacãrã
+2205	Luptãtor de Foc
+2206	Regele Focului
+2207	Regele negru al focului
+2231	Tigru Luptãtor Puternic
+2232	Spirit Flacãrã Durã
+2233	Tigru Rãzboinic Dur
+2234	Foc Dur
+2235	Rãzboinic Foc Dur
+2291	Dragon Roºu
+2301	Copac Fantoma
+2302	Buturuga Fantoma
+2303	Driada
+2304	Salcia Fantoma
+2305	Copac Rau
+2306	Copac Fantomã Uriaº
+2307	Copac Fantoma Nobil
+2311	Copac Roºu Fantomã
+2312	Buturuga Fantoma Rosie
+2313	Driada Rosie
+2314	Salcia Fantoma Rosie
+2315	Copac Rãu Rosu
+2401	Setaou Luptãtor
+2402	Vânãtor Setaou
+2403	Setaou Mistic
+2404	Conducãtor Setaou
+2411	Soldat Setaou
+2412	Arcaº Setaou
+2413	Judecãtor Setaou
+2414	Comandant Setaou
+2415	Comandant Setaou
+2431	Setaou Luptãtor
+2432	Vânãtor Setaou
+2433	Setaou Mistic
+2434	Conducãtor Setaou
+2451	Soldat Setaou
+2452	Arcaº Setaou
+2453	Judecãtor Setaou
+2454	Comandant Setaou
+2491	Cãpitanul Yonghan
+2492	Generalul Yonghan
+2493	Beran-Setaou
+2494	Cãpitanul Huashin
+2495	Generalul Huashin
+2501	Meduzele Iadului
+2502	Câinele Iadului
+2503	Zombie
+2504	Ofiþerul Iadului
+2505	Gardianul Iadului
+2506	Arcaºul Iadului 2 Capete
+2507	Gheare Diabolice
+2508	Luptãtorul Iadului
+2509	Arcaºul Iadului
+2510	Suliþaºul Iadului
+2511	Pãrintele Iadului
+2512	Maiorul Iadului
+2513	Macelarul Iadului
+2514	Generalul Iadului
+2541	Luptãtor Satanic
+2542	Arcaº Satanic
+2543	Suliþaº Satanic
+2544	Pãrinte Satanic
+2545	Maior Satanic
+2546	Macelar Satanic
+2547	General Satanic
+2591	Tartaros
+2592	Ucigasul Iadului
+2593	Ucigasul Iadului
+2594	Ucigasul Iadului
+2595	Erebos
+2596	Creatura lui Azrael
+2597	Charon
+2598	Azrael
+2600	Lup Zodiac
+2601	Lup Albastru Zodiac
+2602	Lykos Zodiac
+2603	Arcaº Zodiac
+2604	Mistreþ Sãlbatic Zodiac
+2605	Mistreþ Roºu Zodiac
+2606	Scrofa Zodiac
+2607	Mi-Jung Zodiac
+2608	Bera Zodiac
+2609	Urs Zodiac
+2610	Urs Grizzly Zodiac
+2611	Urs Brun Zodiac
+2612	Eun-Jung Zodiac
+2613	Tigris Zodiac
+2614	Tigru Zodiac
+2615	Tigru Alb Zodiac
+2616	Se-Rang Zodiac
+2617	Jin-Hee Zodiac
+2618	Pui de Pãianjen Zodiac
+2619	Pãianjen Otrãv Zodiac
+2620	Pãianjen Roºu Otr Zodiac
+2621	Pãianjen Ghearã Zodiac
+2622	Pãianjen Ghearã Zodiac
+2623	Spiritul Focului Zodiac
+2624	Tigru Rãzboinic Zodiac
+2625	Flacãrã Zodiac
+2626	Luptãtor de Foc Zodiac
+2627	Rege de Foc Zodiac
+2628	Rege de Foc Negru Zodiac
+2629	Infanterist Sãlb Zodiac
+2630	Sãlbatic Devotat Zodiac
+2631	Arcaº Sãlbatic Zodiac
+2632	General Sãlbatic Zodiac
+2633	Cãpitan Bestial Zodiac
+2634	Gheaþã Fermecatã Zodiac
+2635	Balenã de Gheaþã Zodiac
+2636	Insectã de Gheaþã Zodiac
+2637	Leu de Gheaþã Zodiac
+2638	Omul Gheþii Zodiac
+2639	Yeti Zodiac
+2640	Golem de Gheaþã Zodiac
+2641	Vulpe de Deºert Zodiac
+2642	Scorpion Regal Zodiac
+2643	ªarpe Spadasin Zodiac
+2644	ªarpe Arcaº Zodiac
+2645	Beduin Zodiac
+2646	Soldat Vânt Negr Zodiac
+2647	Posedat Vânt Negr Zodiac
+2648	Arcaº Vânt Negr Zodiac
+2649	Mahon Zodiac
+2650	Bo Zodiac
+2651	Goo-Pae Zodiac
+2652	Chuong Zodiac
+2653	Om Scorpion Zodiac
+2654	Arcaº Scorpion Zodiac
+2655	Cãlugãr Zodiac
+2656	Soldat Brotac Zodiac
+2657	Lider Brotac Zodiac
+2658	Cãpcãun Zodiac
+2659	Distrugãtor Zodiac
+2660	Luptãtor Secure Zodiac
+2661	Miria Luptãtor Zodiac
+2662	Fanatic Întunecat Zodiac
+2663	Arahan Zodiac
+2664	Arahan Esoteric Zodiac
+2665	Arahan Întunecat Zodiac
+2666	Execuþ Întunecat Zodiac
+2667	Despot Întunecat Zodiac
+2668	Încântãtor Zodiac
+2669	Orc Elite Zodiac
+2670	Orc Elit Cercetaº Zodiac
+2671	Orc Elit Luptãtor Zodiac
+2672	Orc Elit Vrãjitor Zodiac
+2673	Orc Elite General Zodiac
+2674	Orc Negru Zodiac
+2675	Orc Negru Gigant Zodiac
+2676	Tâlhar Roºu Amaz Zodiac
+2677	Tâlhar Roºu Asas Zodiac
+2678	Tâlhar Roºu Mag Zodiac
+2679	Tâlhar Roºu Cãlãu Zodiac
+2680	Crab Rãzboinic Zodiac
+2681	Scorpion Arcaº Zodiac
+2682	Crevete Soldat Zodiac
+2683	Pustnic Diabolic Zodiac
+2684	Crab Blindat Zodiac
+2685	Gigant Escroc Zodiac
+2686	Gigant Mãcelar Zodiac
+2687	Magus Zodiac
+2688	Twiant Zodiac
+2689	Cãlãu Orc Zodiac
+2690	Arcaº Orc Zodiac
+2691	Orc Gãlãgios Zodiac
+2692	Orc Mag Zodiac
+2700	Vargulf
+2701	Soldat Vargulf
+2702	General Vargulf
+2703	Cerberus
+2704	ªarpe Cerberus
+2705	Dragon Cerberus
+2706	Centaur
+2707	Rãzboinic Centaur
+2708	General Centaur
+2709	Moloch
+2710	Rãzboinic Moloch
+2711	General Moloch
+2712	Deathwing
+2713	Deathwing Otrãvit
+2714	Deathwing Putred
+2715	Zephyr
+2716	Rãzboinic Zephyr
+2717	General Zephyr
+2718	Uruk
+2719	Rãzboinic Uruk
+2720	General Uruk
+2721	Carniphant
+2722	Rãzboinic Carniphant
+2723	General Carniphant
+2724	Spartan
+2725	Soldat Spartan
+2726	General Spartan
+2727	Gladiator Oase
+2728	Soldat Gladiator Oase
+2729	General Gladiator Oase
+2730	Sãgetãtor Scarabeu
+2731	Gigant Scarabeu
+2732	Fecioarã Scarabeu
+2733	Arcaº de Fier
+2734	Rãzboinic de Fier
+2735	General de Fier
+2736	Refugiat
+2737	Damage_Trap
+2750	Ofiþer Zi
+2751	Gardian Zi
+2752	General Zi
+2760	Ofiþer Chou
+2761	Gardian Chou
+2762	General Chou
+2770	Ofiþer Yin
+2771	Gardian Yin
+2772	General Yin
+2780	Ofiþer Mao
+2781	Gardian Mao
+2782	General Mao
+2790	Ofiþer Chen
+2791	Gardian Chen
+2792	General Chen
+2800	Ofiþer Si
+2801	Gardian Si
+2802	General Si
+2810	Ofiþer Wu
+2811	Gardian Wu
+2812	General Wu
+2820	Ofiþer Wei
+2821	Gardian Wei
+2822	General Wei
+2830	Ofiþer Shen
+2831	Gardian Shen
+2832	General Shen
+2840	Ofiþer You
+2841	Gardian You
+2842	General You
+2850	Ofiþer Xu
+2851	Gardian Xu
+2852	General Xu
+2860	Ofiþer Hai
+2861	Gardian Hai
+2862	General Hai
+2900	Metinul ªobolanului
+2901	Metinul Bivolului
+2902	Metinul Tigrului
+2903	Metinul Dragonului
+2904	Metinul ªarpelui
+2905	Metinul Calului
+2906	Metinul Caprei
+2907	Metinul Maimuþei
+2908	Metinul Câinelui
+3001	Gnoll Rãzboinic
+3002	Arcaº Gnoll
+3003	Gnoll Aparator
+3004	Gnoll Magician
+3005	Gnoll General
+3090	Gnoll Lord
+3091	Gnoll Suprem
+3101	Capcaun cu Un Ochi
+3102	Ciclop Soldat
+3103	Ciclop Magician
+3104	Ciclopi Cãlãu
+3105	Generalul Outis
+3190	Arges
+3191	Polyphemos
+3201	Manticore Rãzboinic
+3202	Manticore Soldat
+3203	Manticore Mag
+3204	Manticore Cãlãu
+3205	Generalul Cor
+3290	Rakshasa
+3291	Martyaxwar
+3301	Lemures Razbonic
+3302	Lemures Soldat
+3303	Lemures Magician
+3304	Lemures Cãlãu
+3305	Lemures General
+3390	Lemures Print
+3391	Lemures Bodyguard
+3401	Tritonic Moray
+3402	Rechin Soldat
+3403	Tritonic Magician
+3404	Tritonic Vanator
+3405	Tritonic Macelar
+3490	General Kappa
+3491	Triton
+3501	Tâlhar Roºu Amazon
+3502	Tâlhar Roºu Asasin
+3503	Tâlhar Roºu Magician
+3504	Tâlhar Roºu Cãlãu
+3505	General Negru
+3551	Tâlhar Brutal Amazon
+3552	Tâlhar Brutal Asasin
+3553	Tâlhar Brutal Magician
+3554	Tâlhar Brutal Cãlãu
+3555	General Alb
+3590	Craniu
+3591	Conducãtor Roºu
+3595	Craniu Brutal
+3596	Conducãtor Roºu Brutal
+3601	Crab Rãzboinic
+3602	Trãgãtor Scorpion
+3603	Crevete Soldat
+3604	Pustnic Diabolic
+3605	Crab Blindat
+3690	Homar General
+3691	Regele Crab
+3701	Gigant Escroc
+3702	Gigant Macelar
+3703	Gigant Mag
+3704	Colos
+3705	Capitanul Carlig
+3790	Gargoyle
+3791	Regele Wubba
+3801	Hangork
+3802	Arcaº Ork
+3803	Orc Gãlãgios
+3804	Orc Mag
+3805	Generalul Ogg
+3890	Capitanul Shruk
+3891	Marele Orc
+3901	Copac Monstru
+3902	Eoten
+3903	Skouman
+3904	Capitanul Carlig
+3905	Mu-Shu
+3906	Yah-Ki
+3907	Moghu
+3908	Carnifex
+3909	General Albus
+3910	Skeletos
+3911	Aku-Boku
+3912	Arboretum
+3913	Sycomore
+3949	Portal: Continent Nou
+3950	Kappa
+3951	Kappa Lagunã
+3952	Kappa Adâncuri
+3953	Lider Kappa
+3954	Soldat Moray
+3955	Soldat Moray Adâncuri
+3956	Regina Sirenã
+3957	Creaturã Hydra
+3958	Creaturã Hydra
+3959	Creaturã Hydra
+3960	Hydra
+3961	Hydra
+3962	Hydra
+3963	Hydra
+3964	Hydra
+3965	Comoarã Hydra
+3970	
+3971	Cristal Nord
+3972	AdâncuriNordice 415 136
+3973	AdâncuriNordice 94 139
+3974	
+3980	Element Foc
+3981	Element Gheaþã
+3982	Element Fulger
+3983	Element Vânt
+3984	Element Pãmânt
+3985	Element Întunecat
+3986	Spiritul Flãcãrii
+3987	Spiritul Gheþii
+3988	Spiritul Fulger
+3989	Spiritul Aer
+3990	Spiritul Piatrã
+3991	Spiritul Umbrã
+3992	Lord Ars
+3993	Lord Îngheþat
+3994	Lord Tunet
+3995	Lord Furtunã
+3996	Lord Pãmânt
+3997	Lord Negru
+3998	Tãrâmul Elementelor
+3999	Ieºire
+4000	Metinul Focului
+4001	Metinul Gheþii
+4002	Metinul Fulgerului
+4003	Metinul Vântului
+4004	Metinul Pãmântului
+4005	Metinul Nopþii
+4006	Gardian Elementar
+4019	Intrare Turn
+4020	Turn Sung Mahi
+4021	Sigiliu Turn
+4022	Portal Templul ªarpelui
+4023	Schimbã Nivel
+4024	Capul ªarpelui
+4025	Capul ªarpelui
+4026	Capul ªarpelui
+4027	Capul ªarpelui
+4030	Ou Dragon Alb
+4031	Templul Enigma
+4032	Pãrãseºte Templul Enigma
+4033	Templul Enigma (constr.)
+4034	Templul Enigma (repetã)
+4035	Portal Enigma
+4153	Asmodeus
+4154	Emisarul Pãmântului
+4155	Emisarul Pãmântului
+4156	Emisarul Nopþii
+4157	Emisarul Tunetului
+4158	Emisarul Aerului
+4159	Luptãtor Condamnat
+4160	Vrãjitor Condamnat
+4161	Emisarul Morþii
+4162	Emisarul Salvãrii
+4200	TR: Luptãtor Setaou
+4201	TR: Vânãtor Setaou
+4202	TR: Mistic Setaou
+4203	TR: Soldat Setaou
+4204	TR: Arcaº Setaou
+4205	TR: Judecãtor Setaou
+4206	TR: Comandant Setaou
+4207	TR: Cãpitanul Yonghan
+4208	TR: Cãpitanul Yonghan
+4209	TR: Generalul Yonghan
+4210	TR: Generalul Yonghan
+4220	TR: Cenuºã Spirit Foc
+4221	TR: Cenuºã Tigru de Foc
+4222	TR: Cenuºã Flacãrã
+4223	TR: Cenuºã Luptãtor Foc
+4224	TR: Cenuºã Rege de Foc
+4225	TR: Cenuºã Troll de Foc
+4226	TR: Cenuºã Barbã de Foc
+4227	TR: Cenuºã General Foc
+4228	TR: Cenuºã Lider Flacãrã
+4229	TR: Ignitor
+4240	TR: Cristal de Gheaþã
+4241	TR: Insectã de Gheaþã
+4242	TR: Om de Gheaþã
+4243	TR: Yeti de Gheaþã
+4244	TR: Golem de Gheaþã
+4245	TR: Troll de Gheaþã
+4246	TR: Barbã de Gheaþã
+4247	TR: General de Gheaþã
+4248	TR: Lord de Gheaþã
+4249	TR: Szel
+4260	TR: Rãzboinic En-Tai
+4261	TR: Soldat En-Tai
+4262	TR: Druid En-Tai
+4263	TR: Vindecãtor En-Tai
+4264	TR: Distrugãtor En-Tai
+4265	TR: Suveran En-Tai
+4266	TR: Vindecãtor Ochao
+4267	TR: Rãzboinic En-Tai
+4268	TR: Soldat En-Tai
+4269	TR: Druid En-Tai
+4270	TR: Vindecãtor En-Tai
+4271	TR: Distrugãtor En-Tai
+4272	TR: Bagjanamu
+4273	TR: Soldat Ochao
+4274	TR: Magician Ochao
+4275	TR: Cãlãu Ochao
+4276	TR: General Ochao
+4280	RX: Luptãtor Setaou
+4281	RX: Vânãtor Setaou
+4282	RX: Mistic Setaou
+4283	RX: Soldat Setaou
+4284	RX: Arcaº Setaou
+4285	RX: Judecãtor Setaou
+4286	RX: Comandant Setaou
+4287	RX: Cãpitanul Yonghan
+4288	RX: Cãpitanul Yonghan
+4289	RX: Generalul Yonghan
+4290	RX: Generalul Yonghan
+4300	RX: Cenuºã Spirit Foc
+4301	RX: Cenuºã Tigru de Foc
+4302	RX: Cenuºã Flacãrã
+4303	RX: Cenuºã Luptãtor Foc
+4304	RX: Cenuºã Rege de Foc
+4305	RX: Cenuºã Troll de Foc
+4306	RX: Cenuºã Barbã de Foc
+4307	RX: Cenuºã General Foc
+4308	RX: Cenuºã Flacãrã Lider
+4309	RX: Ignitor
+4320	RX: Cristal de Gheaþã
+4321	RX: Insectã de Gheaþã
+4322	RX: Om de Gheaþã
+4323	RX: Yeti de Gheaþã
+4324	RX: Golem de Gheaþã
+4325	RX: Troll de Gheaþã
+4326	RX: Barbã de Gheaþã
+4327	RX: General de Gheaþã
+4328	RX: Lord de Gheaþã
+4329	RX: Szel
+4340	RX: Rãzboinic En-Tai
+4341	RX: Soldat En-Tai
+4342	RX: Druid En-Tai
+4343	RX: Vindecãtor En-Tai
+4344	RX: Distrugãtor En-Tai
+4345	RX: Suveran En-Tai
+4346	RX: Vindecãtor Ochao
+4347	RX: Rãzboinic En-Tai
+4348	RX: Soldat En-Tai
+4349	RX: Druid En-Tai
+4350	RX: Vindecãtor En-Tai
+4351	RX: Distrugãtor En-Tai
+4352	RX: Bagjanamu
+4353	RX: Soldat Ochao
+4354	RX: Magician Ochao
+4355	RX: Cãlãu Ochao
+4356	RX: General Ochao
+4400	TR: Beran-Setaou
+4401	TR: Razador
+4402	TR: Nemere
+4403	TR: Jotun Thrym
+4410	RX: Beran-Setaou
+4411	RX: Razador
+4412	RX: Nemere
+4413	RX: Jotun Thrym
+4420	W: Rãzboinic En-Tai
+4421	W: Soldat En-Tai
+4422	W: Druid En-Tai
+4423	W: Vindecãtor En-Tai
+4424	W: Distrugãtor En-Tai
+4429	W: Bagjanamu
+4430	W: Gnoll Arcas
+4431	W: Ciclopi Soldat
+4432	W: Ciclopi Magician
+4433	W: Ciclopi Cãlãu
+4434	W: Generalul Outis
+4439	W: Polyphemos
+4440	W: Arcaºul Iadului
+4441	W: Suliþaºul Iadului
+4442	W: Pãrintele Iadului
+4443	W: Maiorul Iadului
+4444	W: Generalul Iadului
+4449	W: Azrael
+4450	W: Soldat Brotac Mare
+4451	W: General Brotac
+4452	W: Cãpcãun
+4453	W: E. Fant. Tigru Galben
+4454	W: General Broascã Taur
+4459	W: Fantomã Tigru Galben
+4460	W: Cenuºã Spirit Foc
+4461	W: Cenuºã Tigru de Foc
+4462	W: Cenuºã Flacãrã
+4463	W: Cenuºã Luptator Foc
+4464	W: Cristal Magmã
+4469	W: Gardã Dragon Idall
+4470	W: Hangork
+4471	W: Orc Arcaº
+4472	W: Orc Gãlãgios
+4473	W: Orc Mag
+4474	W: Generalul Ogg
+4479	W: Marele Orc
+4500	Metin Enigma
+4501	Rãzboinic
+4502	Sura
+4503	Ninja
+4504	ªaman
+4505	Lycan
+4506	General Enigma
+4601	Arcaº Breaslã
+4602	Mag Breaslã
+4603	Rãzboinic Breaslã
+4690	Lordul Luptelor
+5001	Pirat Tanaka
+5002	Hae-Tae
+5003	Maimuta
+5004	Pirat Tanaka
+5101	Gibon Soldat
+5102	Gibon Grenadier
+5103	Gibon Luptãtor
+5104	Gibon General
+5111	Maimuta Soldat
+5112	Maimuta Grenadier
+5113	Maimuþã Luptãtor
+5114	Maimuta General
+5115	Maimuta de Piatra
+5116	Maimuta Conducator
+5121	Gorila Soldat
+5122	Gorila Grenadier
+5123	Gorilã Luptãtor
+5124	Gorila General
+5125	Gorila de Piatra
+5126	Gorila de Aur
+5127	Gorila Conducator
+5131	Soldat maim. intel. mic
+5132	Arunc. maim. intel. mic
+5133	Lupt. maim. intel. mic
+5134	Gen. maim. inteligent mi
+5141	Urangutan Soldat
+5142	Aruncãtor maim. viclean
+5143	Luptãtor maim. viclean
+5144	Gen. maim. viclean
+5145	Maim. de piatrã vicleanã
+5146	Conducãtor maim. viclean
+5151	Gorila Soldat Malefica
+5152	Gorila Grenadier Malefic
+5153	Luptãtor maim. rãu
+5154	Gorila General Malefica
+5155	Gorila de Piatra Malefic
+5156	Gorila de Aur Malefica
+5157	Conducãtor maim. rãu
+5161	Maimuta de Piatra
+5162	Maimuta Umblatoare
+5163	Maimuta Lord
+5201	Câine Sãlbatic
+5202	Mistreþ Sãlbatic
+5203	Mistreþ Sãlbatic Roºu
+5204	Urs
+5205	Urs Brun
+5206	Urs Negru
+5207	Urs Brun Flamand
+5208	Tigru
+5209	Tigru Alb
+6001	Cenuºã Spiritul Focului
+6002	Cenuºã Tigru de Foc
+6003	Cenuºã Flacãrã
+6004	Cenuºã Luptãtor de Foc
+6005	Cenuºã Rege de Foc
+6006	Cenuºã Troll de Foc
+6007	Cenuºã Barbã de Foc
+6008	Cenuºã General de Foc
+6009	Cenuºã Cãpetenie de Foc
+6051	Ignitor
+6091	Razador
+6101	Cristal de Gheaþã
+6102	Insectã de Gheaþã
+6103	Om de Gheaþã
+6104	Yeti de Gheaþã
+6105	Golem de Gheaþã
+6106	Troll de Gheaþã
+6107	Barbã de Gheaþã
+6108	General de Gheaþã
+6109	Lord de Gheaþã
+6110	Yeti Magmã
+6111	Golem Magmã
+6112	Insectã Magmã
+6113	Omul Magma
+6114	Cristal Magmã
+6115	Wyvern Magmã
+6116	Gardã Dragon Idall
+6117	Minion Idall
+6118	Statuie Dragon
+6151	Szel
+6191	Nemere
+6192	Jotun Thrym
+6193	Meley Regina Dragon
+6201	Yeti Magmã
+6202	Golem Magmã
+6203	Insectã Magmã
+6204	Om Magmã
+6205	Cristal Magmã
+6206	Wyvern Magmã
+6207	Gardã Dragon Idall
+6209	Statuie Dragon
+6301	Rãzboinic Ochao
+6302	Soldat Ochao
+6303	Magician Ochao
+6304	Cãlãu Ochao
+6305	General Ochao
+6306	Luptãtor Puternic Ochao
+6307	Soldat Puternic Ochao
+6308	Magician Puternic Ochao
+6309	Executor Puternic Ochao
+6310	General Puternic Ochao
+6391	Lord Ochao
+6392	Gardã Ochao
+6393	Lord Puternic Ochao
+6394	Gardian Puternic Ochao
+6401	Rãzboinic En-Tai
+6402	Soldat En-Tai
+6403	Druid En-Tai
+6404	Vindecãtor En-Tai
+6405	Gardian En-Tai
+6406	Distrugãtor En-Tai
+6407	Suveran En-Tai
+6408	Bagjanamu
+6409	Vindecãtor Ochao
+6410	Luptãtor Puternic En-Tai
+6411	Soldat Puternic En-Tai
+6412	Druid Puternic En-Tai
+6413	Vraci Puternic En-Tai
+6414	Asasin Puternic En-Tai
+6415	Eveniment Beran-Setaou
+6416	Eveniment Nemere
+6417	Eveniment Razador
+6418	Eveniment Jotun Thrym
+6419	Eveniment Dragonul Roºu
+6420	Spirit Rãzboinic
+6421	Baashido+
+6422	Metinul Vanitãþii
+6430	Cãpitanul Bestie
+6431	Orc ªef
+6432	Nouã Cozi
+6433	Vrãjitoare Rea de Gheaþã
+6434	Generalul Huashin
+6435	Nemere
+6436	Beran-Setaou
+6437	Razador
+6438	Jotun Thrym
+6439	Cãlugãr Misterios
+6500	Rege Dragon Akzadur
+6501	Rege Dragon Nafaroth
+6502	Rege Dragon Exedyar
+6503	Rege Dragon Ruilith
+6504	Tyolduran
+6513	Portal Dragon
+6514	La Regele Dragon
+6515	Ieºire
+6541	Câinele Iadului Ecou
+6542	Soldat Trol Ecou
+6543	Rãzboinic Trol Ecou
+6544	Arcaº Trol Ecou
+6545	Ecou Natanan
+6546	Ecou Argos
+6547	Portal
+6686	Jin Bing
+6687	Soldat Ki
+6688	Soldat Mao
+6689	Soldat Gong
+6690	Primul Mag
+6691	Kao
+6692	King Bao (Misiune)
+6693	Jin Bing
+6694	Soldat Ki
+6695	Soldat Mao
+6696	Soldat Gong
+6697	Primul Mag
+6698	Kao
+6699	Regele Bao
+6700	Câinele Iadului
+6701	Soldat Trol
+6702	Rãzboinic Trol
+6703	Arcaº Trol
+6704	ªaman Trol
+6705	Natanan
+6706	Argos
+6707	Soldat Trol
+6708	Rãzboinic Trol
+6709	Arcaº Trol
+6710	Fantomã Chinuitã
+6711	Câinele Iadului
+6712	Soldat Trol
+6713	Rãzboinic Trol
+6714	Arcaº Trol
+6715	ªaman Trol
+6716	Natanan
+6717	Argos
+6718	Quag Kovix
+6719	Muncitor Quag
+6720	Golem Quag
+6721	Rãzboinic Quag
+6722	Vrãjitor Quag
+6723	Veteran Quag
+6724	Quag Primus
+6725	Quag Kovix
+6726	Muncitor Quag
+6727	Golem Quag
+6728	Rãzboinic Quag
+6729	Vrãjitor Quag
+6730	Veteran Quag
+6731	Quag Primus
+6744	Soldat Kappa
+6745	Muncitor Kappa
+6746	Soldat Kappa
+6747	Vrãjitor Kappa
+6748	Vânãtor Kappa
+6749	Puternicul Kappa
+6750	Scorpion ªarpe
+6751	Muncitor ªarpe
+6752	Kappa ªarpe
+6753	Soldat ªarpe
+6754	Pustnic ªarpe
+6755	Rãzboinic Puternic ªarpe
+6756	Regina ªarpe Nethis
+6757	Stâlp ªarpe
+6758	Soldat Corupt
+6759	Luptãtor Corupt
+6760	Rãzboinic Corupt
+6761	Cãlugãr Corupt
+6762	General Corupt
+6763	ªerif Corupt
+6764	Cãpitan Corupt
+6765	Rãzboinic Puternic ªarpe
+6770	Vulpe Îngheþatã
+6771	Cercetaº Îngheþat
+6772	Rãzboinic Îngheþat
+6773	Vânãtor Îngheþat
+6774	General Îngheþat
+6775	Cãpetenie Îngheþatã
+6776	Cãpetenie Îngheþatã Rar
+6777	Cerb Îngheþat
+6778	Leopard Îngheþat
+6779	Yeti Nord
+6780	Fantomã Nord
+6781	Golem Nord
+6782	Bigfoot
+6783	Cãpetenie Nord
+6784	Soldat Adãpost Nord
+6785	Luptãtor Adãpost
+6786	Rãzboinic Adãpost Nord
+6787	Vrãjitor Adãpost Nord
+6788	General Adãpost Nord
+6789	Cãpetenie Adãpost Nord
+6790	Alastor
+6791	Alastor
+6792	Soldat Adãpost Nord
+6793	Luptãtor Adãpost
+6794	Rãzboinic Adãpost Nord
+6795	Vrãjitor Adãpost Nord
+6796	General Adãpost Nord
+6797	Cãpetenie Adãpost Nord
+6800	Gnoll Rãzboinic
+6801	Cercetaº Gnoll
+6802	Vrãjitor Gnoll
+6803	ªerif Gnoll
+6804	Maestru Gnoll
+6805	Cãpitan Gnoll
+6806	Soldat Gnoll
+6807	Spion Gnoll
+6808	Gnoll Magician
+6809	Comandant Gnoll
+6810	Rãzboinic Ahtrin
+6811	Cercetaº Ahtrin
+6812	Vrãjitor Ahtrin
+6813	Comandant Ahtrin
+6814	Cãpitan Ahtrin
+6815	Cãpitan Ahtrin
+6816	Spion Ahtrin
+6817	Mag Ahtrin
+6818	Comandant Ahtrin
+6819	Maestru Ahtrin
+6820	Mare Maestru Ahtrin
+6850	Scorpion ªarpe
+6851	Muncitor ªarpe
+6852	Kappa ªarpe
+6853	Soldat ªarpe
+6854	Cãlãu ªarpe
+6855	Rãzboinic Puternic ªarpe
+6856	Regina ªarpe Nethis
+6860	Luptãtor cu Sabia Jin
+6861	Lãncier Ki
+6862	Lãncier Mao
+6863	Arcaº Gong
+6864	Luptãtor cu Sabia Kao
+6865	Luptãtor cu Sabia Jin
+6866	Lãncier Ki
+6867	Lãncier Mao
+6868	Arcaº Gong
+6869	Luptãtor cu Sabia Kao
+6870	Cãlugãr Misterios
+6871	Cãlugãr Misterios
+6875	Soldat Corupt
+6876	Luptãtor Corupt
+6877	Rãzboinic Corupt
+6878	Cãlugãr Corupt
+6879	General Corupt
+6880	ªerif Corupt
+6881	Cãpitan Corupt
+6882	Vulpe Neînsufleþitã
+6883	Cercetaº Îngheþat
+6884	Rãzboinic Îngheþat
+6885	Vânãtor Îngheþat
+6886	General Îngheþat
+6887	Cãpetenie Îngheþatã
+6888	Cãpetenie Îngheþatã Rar
+6889	Cerb Blestemat
+6890	Leopard Îngheþat
+6891	Yeti Nord
+6892	Fantomã Nord
+6893	Golem Nord
+6894	Bigfoot
+6895	Cãpetenie Nord
+6896	Balathor
+6897	Balathor
+6898	Rãzboinic Spectral
+6899	Arcaº Spectral
+6900	Ecou Spectral
+6901	Cavaler Pierdut
+6902	Rãzboinic Pierdut
+6903	Suflet Pierdut
+6904	Banshee Pierdut
+6905	Cavaler Fugar
+6906	Rãzboinic Fugar
+6907	Suflet Fugar
+6908	Banshee Fugar
+6909	Cavaler Slãbit
+6910	Rãzboinic Slãbit
+6911	Banshee Slãbit
+6912	Cavaler Rãzbunãtor
+6913	Rãzboinic Rãzbunãtor
+6914	Banshee Rãzbunãtor
+6915	Cavaler Cãzut
+6916	Rãzboinic Cãzut
+6917	Suflet Cãzut
+6918	Banshee Cãzut
+6919	Azphirna
+6920	Nykos
+6921	Azphirna Blestematã
+6922	Nykos Blestemat
+6923	Vânãtor de Suflete
+6924	Aducãtor de Umbre
+6925	Cavaler Întunecat
+6926	Slujitor Umbrã Viclean
+6927	Slujitor Umbrã Sãlbatic
+6928	Slujitor Umbrã Puternic
+6929	Mag Întunecat
+6930	Slujitor Umbrã Slãbit
+6931	Cavaler Întunecat Slãbit
+6932	Slujitor Umbrã Slãbit
+6933	Slujitor Umbrã Furios
+6934	Slujitor Umbrã Temut
+6935	Mag Slãbit
+6936	Cavaler Întunecat Elitã
+6937	Kalgaroth Mãcelarul
+6938	Nezerath
+6939	Aamon
+6940	Fragment de Soare
+6941	Fragment de Soare
+6942	Fragment de Soare
+6943	Aamon
+6944	Semnul Lãcomiei
+6945	Aducãtor de Umbre Elitã
+6946	Fragment Soare Albira
+6947	Aducãtor Umbre Capturat
+7001	Maimuta Soldat
+7002	Maimuta Jocheu
+7003	Maimuta Soldat Gimu
+7004	Maimuta Comandant
+7005	Maimuta de Piatra
+7006	Maimuþã  de Aur
+7007	Maimuta General
+7008	Muncitor Tu-Gui
+7009	Controlor soldaþi Tu-Gui
+7010	Comandor alb Tu-Gui
+7012	Bi-Ma-Gui-An
+7013	Scorpion Regal
+7014	Om Scorpion Las
+7015	Arcaº Scorpion
+7016	Luptãtor sabie ºarpe
+7017	Arcaº ªarpe
+7018	Tâlhar de Deºert
+7019	Soldat Tu-ji
+7020	Hwa-ryung
+7021	Pierde-varã Tu-Ji
+7022	Cham-Ma
+7023	Teawha-Mu
+7024	Juk-gui
+7025	Dung-Juk
+7026	Juk-Mok
+7027	Hwaryu Juk
+7028	Juk-Guimok negru
+7029	Diavol de Gheaþã
+7030	Balenã Corn de Gheaþã
+7031	Insectã de Gheaþã
+7032	Seol-Gu
+7033	Omul Ghetii
+7034	Gigant de Gheaþã
+7035	Golem de Gheaþã
+7036	Diavol de Gheaþã
+7037	Balenã Corn de Gheaþã
+7038	Insectã de Gheaþã
+7039	Seol-Gu
+7040	Omul Ghetii
+7041	Gigant de Gheaþã
+7042	Golem de Gheaþã
+7043	Diavol de Gheaþã
+7044	Balenã Corn de Gheaþã
+7045	Insectã de Gheaþã
+7046	Seol-Gu
+7047	Omul Ghetii
+7048	Gigant de Gheaþã
+7049	Golem de Gheaþã
+7050	Ochi Zburãtor Deºert
+7051	Scorpion Regal
+7052	Om Scorpion Mic
+7053	Arcaº Scorpion
+7054	ªarpe Spadasin
+7055	Arcaº ªarpe
+7056	Tâlhar de Deºert
+7057	Ochi Zburãtor Deºert
+7058	Scorpion Regal
+7059	Om Scorpion Mic
+7060	Arcaº Scorpion
+7061	ªarpe Spadasin
+7062	Arcaº ªarpe
+7063	Tâlhar de Deºert
+7064	Ochi Zburãtor Deºert
+7065	Scorpion Regal
+7066	Om Scorpion Mic
+7067	Arcaº Scorpion
+7068	ªarpe Spadasin
+7069	Arcaº ªarpe
+7070	Tâlhar de Deºert
+7071	Tigru Luptãtor Dur
+7072	Spiritul Focului
+7073	Tigru Luptãtor
+7074	Flacãrã
+7075	Luptãtor de Foc
+7076	Tigru Luptãtor Dur
+7077	Spiritul Focului
+7078	Tigru Luptãtor
+7079	Flacãrã
+7080	Luptãtor de Foc
+7081	Tigru Luptãtor Dur
+7082	Spiritul Focului
+7083	Tigru Luptãtor
+7084	Flacãrã
+7085	Luptãtor de Foc
+7086	Buturuga Fantoma
+7087	Driada
+7088	Salcia Fantoma
+7089	Copac Rau
+7090	Buturuga Fantoma
+7091	Driada
+7092	Salcia Fantoma
+7093	Copac Rau
+7094	Buturuga Fantoma
+7095	Driada
+7096	Salcia Fantoma
+7101	Tun
+7102	Tun
+7103	Balistã Sãgeþi
+7104	Balistã Sãgeþi
+7105	Turn
+7106	Vatrã
+7107	Vatrã
+7108	Vatrã
+7109	Vatrã
+7110	Vatrã
+7111	Vatrã
+7112	Vatrã
+7113	Cheeta
+7114	Kraton
+7115	Charly
+7116	Nini
+7117	Zulu
+7118	Maimuþa Rãzboinic Deka
+7119	Maimuþa Rãzboinic Oba
+7120	Regele Keung
+7121	Kiros
+7122	Manchu
+7123	Sgok
+7124	Indrik
+7125	Lup Blestemat
+7126	Lup Blestemat Alpha
+7127	Lup Blestemat Albastru
+7128	Lup Blestemat Gri
+7129	Mistreþ Blestemat
+7130	Mistreþ Blestemat Roºu
+7131	Urs Blestemat
+7132	Urs Blestemat Grizzly
+7133	Urs Blestemat Negru
+7134	Urs Blestemat Brun
+7135	Tigru Blestemat
+7136	Orc Elite
+7137	Orc Elite Cercetas
+7138	Orc Elite Luptator
+7139	Orc Elite Vrãjitor
+7140	Orc Elite General
+7141	Orc Negru
+7142	Orc Negru Urias
+7143	Orc Mare Curajos
+7144	Orc Mare Cercetas
+7145	Orc Mare Luptator
+7146	Orc Mare Vrãjitor
+7147	Orc Mare General
+7148	Orc Negru Curajos
+7149	Orc Negru Gigant
+7152	Ochi Zburator Desert
+7153	Scorpion Regal
+7154	Om Scorpion Mic
+7155	Arcaº Scorpion
+7156	Sarpe Spadasin
+7157	Arcaº ªarpe
+7158	Tâlhar de Deºert
+7159	Om Scorpion
+7160	Pui Paianjen Toxic Rau
+7161	Paianjen Otravitor Rau
+7162	Paianjen Rosu Toxic Rau
+7163	PaianjenGhearaToxicRau
+7164	Tigru Luptator Dur
+7165	Spiritul Focului
+7166	Tigru Luptator
+7167	Flacãrã
+7168	Luptator de Foc
+7169	Tigru Luptator Puternic
+7170	Spirit Flacãrã Durã
+7171	Tigru Rãzboinic Dur
+7172	Foc Dur
+7173	Rãzboinic Foc Dur
+7174	Gheata Fermecata
+7175	Balena Ucigasa de Gheata
+7176	Insecta de Gheata
+7177	Leu de gheaþã
+7178	Om Îngheþat
+7179	Yeti
+7180	Golem de Gheata
+7181	Câine al Ciumei
+7182	Om al Ciumei
+7183	Luptãtor Sabie al Ciumei
+7184	Luptãtor suliþã al ciume
+7185	Arcaº al Ciumei
+7186	Meduzele Iadului
+7187	Câinele Iadului
+7188	Zombie
+7189	Ofiterul Iadului
+7190	Gardianul Iadului
+7191	Arcaºul Iadului 2 Capete
+7192	Gheare Diabolice
+7193	Luptatorul Iadului
+7194	Arcaºul Iadului
+7195	Suliþaºul Iadului
+7196	Pãrintele Iadului
+7197	Maiorul Iadului
+7198	Rãzboinic En-Tai
+7199	Soldat En-Tai
+7200	Druid En-Tai
+7201	Vindecãtor En-Tai
+7202	Distrugãtor En-Tai
+7203	Suveran En-Tai
+7204	Lemures Magician
+7205	Lemures Razbonic
+7206	Lemures Soldat
+7207	Lemures Cãlãu
+7210	ªef Invazie
+7211	ªef de Foc Invazie
+7212	ªef de Gheaþã Invazie
+7213	ªef Fulger Invazie
+7214	ªef Vânt Invazie
+7215	ªef Pãmânt Invazie
+7216	ªef Întuneric Invazie
+7242	Placeholder
+7243	Placeholder
+7244	Placeholder
+7245	Placeholder
+7246	Placeholder
+7247	Placeholder
+7248	Placeholder
+7249	Placeholder
+7250	Placeholder
+7251	Placeholder
+7252	Placeholder
+7253	Placeholder
+7254	Placeholder
+7255	Placeholder
+7550	Lup Turn
+7551	Brutal Turn
+7552	Berserker Turn
+7553	Mag Turn
+7554	Mãcelar Turn
+7555	Mistic Turn
+7556	Mare Maestru Turn
+7557	Lup Turn
+7558	Brutal Turn
+7559	Berserker Turn
+7560	Mag Turn
+7561	Mãcelar Turn
+7562	Mistic Turn
+7563	Mare Maestru Turn
+7564	Lup Turn
+7565	Brutal Turn
+7566	Berserker Turn
+7567	Mag Turn
+7568	Mãcelar Turn
+7569	Mistic Turn
+7570	Mare Maestru Turn
+7571	Lup Turn
+7572	Brutal Turn
+7573	Berserker Turn
+7574	Mag Turn
+7575	Mãcelar Turn
+7576	Mistic Turn
+7577	Mare Maestru Turn
+7578	Lup Turn
+7579	Brutal Turn
+7580	Berserker Turn
+7581	Mag Turn
+7582	Mãcelar Turn
+7583	Mistic Turn
+7584	Mare Maestru Turn
+7585	Lup Turn
+7586	Brutal Turn
+7587	Berserker Turn
+7588	Mag Turn
+7589	Mãcelar Turn
+7590	Mistic Turn
+7591	Mare Maestru Turn
+7592	Distrugãtor Turn
+7593	Distrugãtor Turn
+7594	Diavol Piatrã Turn
+7595	Arcaº Turn
+7600	Suflet Împietrit Turn
+7609	Maestru Mag Turn
+7610	Asupritor Turn
+7611	Asupritor Turn
+7612	Asupritor Mort Turn
+7613	Asupritor Mort Turn
+7614	Maestru Mag Turn
+7615	Lup Turn
+7616	Brutal Turn
+7617	Mãcelar Turn
+7618	Mãcelar Turn
+7619	Berserker Turn
+7620	Mag Turn
+8001	Metinul Necazului
+8002	Metinul Luptei
+8003	Piatra Metin a Bataliei
+8004	Metinul Lacomiei
+8005	Metinul Amarului
+8006	Metinul Intunericului
+8007	Metinul Geloziei
+8008	Metinul Sufletului
+8009	Metinul Umbrei
+8010	Metinul Puterii
+8011	Metinul Diavolului
+8012	Metinul Dizgratiei
+8013	Metinul Mortii
+8014	Metinul Crimelor
+8015	Metinul Puterii
+8016	Metinul Diavolului
+8017	Metinul Dizgratiei
+8018	Metinul Mortii
+8019	Metinul Crimelor
+8020	Stâncã Shinsoo
+8021	Stâncã Jinno
+8022	Stâncã Chunjo
+8023	Stâncã imperialã
+8024	Metin Pung-Ma
+8025	Metin Ma-An
+8026	Metin Tu-Young
+8027	Metin Jeon-Un
+8031	Metinul Muntelui
+8032	Metinul Razbunarii
+8033	Metinul Singuratatii
+8034	Metinul Arogantei
+8035	Metinul Eliberarii
+8036	Metinul Tradarii
+8037	Metinul Resentimentului
+8038	Metinul Rasplatei
+8039	Metinul Mândriei
+8040	Metinul Invidiei
+8041	Metin de Paste
+8042	Metin de Paºte
+8043	Metin de Paºte
+8044	Metin de Paºte
+8045	Metin de Paºte
+8046	Metin de Paºte
+8047	Metin de Paºte
+8048	Metin de Paºte
+8049	Metin de Paºte
+8050	Metin de Paºte
+8051	Metinul Tristetii
+8052	Metinul Carbunilor
+8053	Metinul Vanitatii
+8054	Metinul Furiei
+8055	Metinul Nenorocirilor
+8056	Metinul Rautatii
+8057	Metin Focul Iadului
+8058	Metin de Gheaþã
+8059	Metinul Copacului Om
+8060	Metin Dovleac
+8061	Metinul Pãdurilor
+8062	Metinul Intuiþiei (Mis)
+8063	Metinul Aprecierii
+8064	Metinul Atenþiei
+8065	Metinul Jin
+8066	Metinul Shiho
+8067	Metinul Intuiþiei
+8068	Metin Lumina Lunii
+8076	Metin ªarpe Cosmic
+8077	Metinul Gumar
+8101	Metinul Necazului
+8102	Metinul Luptei
+8103	Metinul Bataliei
+8104	Metinul Lacomiei
+8105	Metinul Amarului
+8106	Metinul Intunericului
+8107	Metinul Geloziei
+8108	Metinul Sufletului
+8109	Metinul Umbrei
+8110	Metinul Puterii
+8111	Metinul Diavolului
+8112	Metinul Dizgratiei
+8113	Metinul Mortii
+8114	Metinul Crimelor
+8115	Metinul Lunii
+8120	TR: Metinul Muntelui
+8121	TR: Metinul Rãzbunãrii
+8122	TR: Metinul Singurãtãþii
+8123	TR: Metinul Aroganþei
+8124	TR: Metin Focul Iadului
+8125	TR: Metinul Rãcelii
+8126	TR: Metin Arbore Viaþã
+8127	TR: Metinul Pãdurilor
+8130	RX: Metinul Muntelui
+8131	RX: Metinul Rãzbunãrii
+8132	RX: Metinul Singurãtãþii
+8133	RX: Metinul Aroganþei
+8134	RX: Metin Focul Iadului
+8135	RX: Metinul Rãcelii
+8136	RX: Metin Arbore Viaþã
+8137	RX: Metinul Pãdurilor
+8150	Metin Testul 1
+8151	Metin Testul 2
+8152	Metin Testul 3
+8153	Metin Testul 4
+8154	Metin Testul 5
+8155	Metin Testul 6
+8156	Metin Testul 7
+8157	Metin Testul 8
+8158	Metin Testul 9
+8159	Metin Testul 10
+8200	Ciocolatã Piatrã Metin
+8201	Ciocolatã Piatrã Metin
+8202	Cupã de Îngheþatã
+8203	Metinul Inspiraþiei
+8204	Metin de Paºte
+8205	Metin de Paºte
+8206	Metin de Paºte
+8207	Metin Fotbal
+8208	Metin de Paºte
+8209	Metin de Paºte
+8501	Câine sãlbatic
+8502	Mistreþ Sãlbatic
+8503	Urs
+8504	Tigru Alb
+8505	Orc Negru Gigant
+8506	General Brotac
+8507	Tâlhar de Deºert
+8508	Despot esoteric
+8509	Incântãtor esoteric
+8510	Luptãtor de Foc
+8511	Golem de Gheaþã
+8600	¿õ±Í´ëÁ·Àå
+8601	¿õ±Í´ëÁ·Àå
+8602	¹Ð±³´ëÁÖ±³
+8603	¹Ð±³´ëÁÖ±³
+8604	¸í»ç±Í¿Õ
+8605	¸í»ç±Í¿Õ
+8606	»ç½Å
+8607	»ç½Å
+8608	±¸¹ÌÈ£
+8609	±¸¹ÌÈ£
+8610	´©··Åõ¹ü±Í
+8611	´©··Åõ¹ü±Í
+8612	¿©¿Õ°Å¹Ì
+8613	¿©¿Õ°Å¹Ì
+8614	°Å´ë»ç¸·°ÅºÏ
+8615	°Å´ë»ç¸·°ÅºÏ
+8616	Billy Loomis
+8617	Jack Torrance
+8618	Chucky
+8619	Jigsaw
+8620	Jason
+8621	Michael Myers
+8622	Freddy Krueger
+8623	Leatherface
+8625	Avanpost Troll
+8626	Avanpost 1 Quag
+8627	Avanpost 2 Quag
+8630	Metin ªarpe de Foc
+8631	Metin ªarpe de Gheaþã
+8632	Metin ªarpe de Vânt
+8633	Metin ªarpe de Pãmânt
+8634	Metin ªarpele Timpului
+8635	Ou Dragon Alb (uºor)
+8636	Ou Dragon Alb (greu)
+8637	Portal Invazie Sung Ma
+8638	Metinul Condamn (Vindec)
+8639	Metinul Condamnaþilor
+8640	Metinul Salvãrii
+8641	Portal Invazie Sung Ma
+8642	Portal Invazie Sung Ma
+8643	Portal Invazie Sung Ma
+8644	Portal Invazie Sung Ma
+8645	Portal Invazie Sung Ma
+8646	Portal Invazie Sung Ma
+9001	Negustor Arme
+9002	Negustor de Armuri
+9003	Magazinul General
+9004	Ajutor pt. evenimente
+9005	Administrator Depozit
+9006	Femeia Batrana
+9007	Negustor Arme
+9008	Negustor de armuri
+9009	Pescar
+9010	Magazin de diverse
+9011	Organizatoare de nunþi
+9012	Teleporter
+9013	Negustor Iluzii
+9014	Negustor
+9100	Floarea Furtunii
+9101	Floare Putere Normalã
+9102	Floare Putere de Foc
+9103	Floare Putere de Gheaþã
+9104	Floare Putere de Fulger
+9105	Floare Putere de Vânt
+9106	Floare Putere de Pãmânt
+9107	Floare Putere Întunecatã
+10001	Þinutul_Yayang 4002 8995
+10002	Þinutul_Yongan 4503 9050
+10003	Þinut_Bokjung 1118 2161
+10004	Þinutul_Joan 876 2131
+10005	Þinutul_Bakra 9064 2214
+10006	Zona_Pyungmoo 9372 2188
+10007	Þinutul_Yongan 4188 9560
+10008	Þinutul_Yayang 3179 8332
+10009	Þinutul_Joan 897 1127
+10010	ÞinutulBokjung 1759 2210
+10011	Zona_Pyungmoo 9343 3143
+10012	Þinutul_Bakra 8348 2926
+10013	Templul_Hwang 5536 1441
+10014	Seungryong 3326 7468
+10015	DeºertulYongbi 3467 6329
+10016	Kuahlo_Dong 600 4960
+10017	Templul_Hwang 5906 1102
+10018	Turnul_Gumsan 2165 7270
+10019	Þinutul_Yayang 3211 9009
+10020	Jungrang 1356 43
+10021	ÞinutulBokjung 1168 2920
+10022	Waryong 2219 93
+10023	Þinutul_Bakra 9098 2948
+10024	Imha 2718 130
+10025	Muntele_Sohan 4993 2984
+10026	Lungsam 2887 57
+10027	Lungsam 2866 437
+10028	Pãdurea_roºie 11199 708
+10029	Vale_cu_Serpi 10590 7262
+10030	DeºertulYongbi 3519 6223
+10031	Vale_cu_Serpi 10590 7262
+10032	Taram_Giganti 8283 7635
+10033	Peºtera_Zin 10594 7525
+10034	2_peºterã_Zin 10594 7525
+10035	Deon-Zeon 917 5253
+10036	2_Deon-Zeon 7041 4642
+10037	ÀÚ¾çÇö 3809 8233
+10038	½Å¼ö¼º 9752 1330
+10039	º¹Á¤Çö 1917 2900
+10040	Áø³ë¼º 9239 1836
+10041	¹Ú¶óÇö 8316 2154
+10042	ÃµÁ¶¼º 9772 1850
+10043	¼­ÇÑ»ê 3819 2969
+10044	½Å¼ö¼º 10189 1484
+10045	¼­ÇÑ»ê 3819 2969
+10046	½Å¼ö¼º 9774 1501
+10047	½Â·æ°î 2699 6752
+10048	Áø³ë¼º 9679 1994
+10049	½Â·æ°î 2699 6752
+10050	Áø³ë¼º 9256 2012
+10051	¿µºñ»ç¸· 3478 6189
+10052	ÃµÁ¶¼º 9780 1995
+10053	¿µºñ»ç¸· 3478 6189
+10054	ÃµÁ¶¼º 10190 2002
+10055	µµ¿°È­Áö 6011 6874
+10056	¼­ÇÑ»ê 4368 2158
+10057	½Â·æ°î 3355 7558
+10058	¹Ð±³»ç¿ø 5943 1337
+10059	¼­ÇÑ»ê 0 10496
+10060	¹Ð±³»ç¿ø 1536 10496
+10061	ÞaraDeFoc 4608 10496
+10062	½Â·æ°î 6144 10496
+10063	±Í¸ñ¸² 3031 266
+10064	Àû±Í¸ñ¸² 11133 534
+10065	½Å±Í¸ñ¸² 7754 10553
+10066	½ÅÀû±Í¸ñ¸² 9915 11195
+10067	TemnitaMaimute 7752 4477
+10068	Þinutul_Yayang 4062 8756
+10069	TemnitaMaimute 8520 4477
+10070	ÞinutulBokjung 1611 2130
+10071	TemnitaMaimute 9288 4477
+10072	Þinutul_Bakra 8727 2100
+10073	DeºertulYongbi 3061 6202
+10074	TemnitaMaimute 1352 6532
+10075	DeºertulYongbi 2879 5407
+10076	TemnitaMaimute 1352 7300
+10077	Grota_Exilului 9 12078
+10078	½Â·æ°î 2842 8106
+10079	Grota1 1459 13236
+10080	Grota2 2413 12755
+10081	ÃµÀÇµ¿±¼1Ãþ 99 13618
+10082	¿µ¾ÈÀ¾¼º 5028 9998
+10083	ÃµÀÇµ¿±¼1Ãþ 1360 14972
+10084	ÃµÀÇµ¿±¼2Ãþ 2414 14289
+10085	ÃµÀÇµ¿±¼1Ãþ 99 15154
+10086	Á¶¾ÈÀ¾¼º 616 1148
+10087	ÃµÀÇµ¿±¼1Ãþ 1360 16508
+10088	ÃµÀÇµ¿±¼2Ãþ 2414 15825
+10089	ÃµÀÇµ¿±¼1Ãþ 99 16690
+10090	Æò¹«À¾¼º 9609 3188
+10091	ÃµÀÇµ¿±¼1Ãþ 1360 18044
+10092	ÃµÀÇµ¿±¼2Ãþ 2414 17361
+10093	Poartã_Dragon 1731 12205
+10094	Poartã_Dragon 1733 13743
+10095	Poartã_Dragon 1728 15277
+10096	Poartã_Dragon 1724 16824
+10097	TP2 7040 5235
+10098	TP3 984 5711
+10099	Peninsula 11043 17885
+10100	Peninsula 10963 16744
+10101	Nephrite 10869 16558
+10102	Peninsula 11664 16779
+10103	Thunder 11345 16546
+10104	Thunder 11921 16550
+10105	Gautama 12263 16811
+10106	³ì¸²Áö 8168 15050
+10107	DongGwang 10629 4767
+10109	CreastãFulger 451 9492
+10110	PunctFulger 830 9454
+10111	RazãFoc 1430 9616
+10112	MunþiGheaþã 690 10169
+10113	PunctFulger 1023 9623
+10114	MunþiGheaþã 303 10113
+10115	VârfArs 2117 9447
+10116	RazãFoc 1720 9499
+10117	InsulãVânt 1973 10159
+10118	RazãFoc 2337 9633
+10119	CreastãNeagrã 2710 9616
+10120	InsulãVânt 1582 10111
+10121	PiscNegru 3393 9454
+10122	CreastãNeagrã 3012 9500
+10123	ValeDeºert 3069 10174
+10124	PiscNegru 3685 9551
+10126	Ieºire 11622 5809
+10127	DongGwang 10551 4881
+10128	SeoGwang 12218 4895
+10129	NamGwang 12780 4411
+10130	SeoGwang 12144 5555
+10131	Nivel2 9916 6630
+10132	Nivel3 9896 6302
+10133	Nivel1 9534 6281
+10134	Nivel2 9564 6610
+10135	Înapoi 9338 6287
+10136	Trecãt-Yilad 303 14147
+10137	Prãp.NamGwang 13184 4735
+10138	Ieºire
+10139	Nord_C
+10140	Trecãt-Yilad 83 14763
+10141	ZonãAºteptare 401 477
+10142	StrâmtSuflet
+10143	Nord_C 247 15392
+10144	Trecãt._Yilad 122 14498
+10145	Valea Lunii Întunecate
+10146	Adâncurile Lãcomiei
+10147	Valea Lunii Întunecate
+10148	Ieºi Adâncurile Lãcomiei
+10149	Poarta Lãcomiei
+10150	Inima Lãcomiei
+10151	Placeholder
+10152	Coboarã
+10153	Urcã
+10201	Pãrãseºte
+10202	Nord_D 11590 12181
+10203	Nord_S 11323 13499
+10204	Ieºire
+10205	. 70 149
+10206	. 295 157
+10207	. 190 149
+10208	. 70 149
+10209	. 650 184
+10210	. 476 53
+10211	. 70 149
+10212	. 80 330
+10213	. 351 385
+10214	. 81 451
+10215	. 70 149
+10216	. 707 445
+10217	. 351 445
+10218	. 70 149
+10219	. 215 557
+10220	. 698 325
+10221	. 70 149
+10222	CamerãSecret 11913 12692
+10223	Înapoi 11553 12697
+10224	. 646 65
+10225	. 70 149
+10501	. 345 361
+10502	. 106 547
+10503	. 75 368
+10504	. 89 746
+10505	. 520 352
+10506	. 541 45
+10507	. 211 109
+10508	. 615 49
+10509	. 284 705
+10510	. 145 310
+10511	. 553 285
+10512	. 487 274
+10513	. 626 291
+10514	. 285 569
+10515	. 80 303
+10516	. 315 238
+10517	. 416 272
+10518	. 72 498
+10519	. 215 495
+10520	. 523 415
+10521	. 72 498
+10522	. 518 480
+10523	. 583 379
+10524	. 459 558
+10601	. 345 361
+10602	. 520 352
+10603	. 487 274
+10604	. 75 368
+10605	. 211 109
+10606	. 215 495
+10607	. 315 238
+10608	. 520 352
+10609	. 284 705
+10610	. 145 310
+10611	. 416 272
+10612	. 80 303
+10613	. 72 498
+10614	. 106 547
+10615	. 523 415
+10616	. 541 45
+10617	. 72 121
+10618	. 518 480
+10619	. 89 746
+10620	. 285 569
+10621	. 615 49
+10622	. 72 498
+10623	. 583 379
+10624	. 459 558
+10625	. 609 553
+10626	. 594 338
+10701	. 75 368
+10702	. 541 45
+10703	. 615 49
+10704	. 284 705
+10705	. 520 352
+10706	. 553 285
+10707	. 145 310
+10708	. 345 361
+10709	. 523 415
+10710	. 72 498
+10711	. 626 291
+10712	. 487 274
+10713	. 72 498
+10714	. 106 547
+10715	. 518 480
+10716	. 285 569
+10717	. 80 303
+10718	. 211 109
+10719	. 416 272
+10720	. 215 495
+10721	. 315 238
+10722	. 89 746
+10723	. 583 379
+10724	. 459 558
+10725	. 609 553
+10726	. 594 338
+10801	. 70 581
+10802	. 69 664
+10803	. 132 660
+10804	. 184 566
+10805	. 285 567
+10806	. 272 636
+10807	. 191 667
+10808	. 345 563
+10809	. 400 570
+10810	. 68 806
+10811	. 140 811
+10812	. 189 722
+10813	. 274 722
+10814	.233 780
+10815	. 318 780
+10816	. 273 833
+10817	.356 717
+10818	.412 712
+10819	. 372 776
+10820	. 354 840
+10821	. 366 817
+10822	. 420 841
+10823	. 94 846
+10824	. 63 864
+10825	. 131 866
+10826	. 59 920
+10827	. 91 940
+10828	. 135 919
+10829	. 194 870
+10830	. 243 862
+10831	. 312 861
+10832	. 373 893
+10833	. 406 880
+10834	. 422 935
+10835	. 500 807
+10901	. 333 358
+10902	. 452 116
+10903	. 515 415
+10904	. 515 480
+10905	. 145 305
+10906	. 228 238
+10907	. 452 116
+10908	. 77 500
+10909	. 111 550
+10910	. 452 116
+10911	. 145 305
+10912	. 333 358
+10913	. 615 50
+10914	. 218 110
+10915	. 288 708
+10916	. 582 385
+10917	. 218 110
+10918	. 452 116
+10919	. 615 50
+10920	. 510 480
+10921	. 75 435
+10922	. 194 614
+10923	. 310 237
+10924	. 609 553
+10931	. 250 425
+10932	. 452 116
+10933	. 520 415
+10934	. 77 370
+10935	. 145 305
+10936	. 122 678
+10937	. 297 175
+10938	. 452 116
+10939	. 423 266
+10940	. 122 678
+10941	. 510 480
+10942	. 250 425
+10943	. 452 116
+10944	. 297 175
+10945	. 250 425
+10946	. 627 290
+10947	. 297 175
+10948	. 450 116
+10949	. 582 385
+10950	. 440 705
+10951	. 145 305
+10952	. 297 175
+10953	. 75 435
+10954	. 609 553
+10961	. 333 358
+10962	. 452 116
+10963	. 520 415
+10964	. 77 370
+10965	. 145 305
+10966	. 297 175
+10967	. 452 116
+10968	. 195 615
+10969	. 195 615
+10970	. 510 480
+10971	. 145 305
+10972	. 333 358
+10973	. 71 435
+10974	. 297 175
+10975	. 460 560
+10976	. 333 358
+10977	. 260 175
+10978	. 452 116
+10979	. 540 45
+10980	. 80 295
+10981	. 522 414
+10982	. 297 175
+10983	. 582 385
+10984	. 609 553
+10985	Avanpost Breaslã
+10986	Placeholder
+10987	Placeholder
+10988	Placeholder
+11000	Gardian
+11001	Administratorul luptelor
+11002	Gardian
+11003	Administratorul luptelor
+11004	Gardian
+11005	Administratorul luptelor
+11100	Gardian
+11101	Administratorul Luptelor
+11102	Gardian
+11103	Administratorul Luptelor
+11104	Gardian
+11105	Administratorul Luptelor
+11106	Gardian
+11107	Administratorul Luptelor
+11108	Gardian
+11109	Administratorul Luptelor
+11110	Gardian
+11111	Administratorul Luptelor
+11112	Gardian
+11113	Administratorul Luptelor
+11114	Gardian
+11115	Administratorul Luptelor
+11116	Gardian
+11117	Administratorul Luptelor
+11505	Broascã aurie
+11506	Foc de tabãrã
+11507	Foc de tabãrã
+11508	Foc de tabãrã
+11509	Foc de tabãrã
+11510	Foc de tabãrã
+12000	Foc de tabãrã
+13000	Poartã de lemn
+13001	Poartã de piatrã
+14000	Atelier
+14001	Atelier
+14002	Atelier
+14003	Atelier
+14004	Atelier
+14005	Atelier
+14006	Atelier
+14007	Atelier
+14008	Atelier
+14009	Atelier
+14010	Altar
+14011	Altar
+14012	Altar
+14013	Altar
+14014	Altar
+14015	Altar
+14016	Altar
+14017	Altar
+14018	Altar
+14019	Altar
+14020	Bazã
+14021	Bazã
+14022	Bazã
+14023	Bazã
+14024	Bazã
+14025	Bazã
+14026	Bazã
+14027	Bazã
+14028	Bazã
+14029	Bazã
+14030	Bazã de antrenament
+14031	Bazã de antrenament
+14032	Bazã de antrenament
+14033	Bazã de antrenament
+14034	Bazã de antrenament
+14035	Bazã de antrenament
+14036	Bazã de antrenament
+14037	Bazã de antrenament
+14038	Bazã de antrenament
+14039	Bazã de antrenament
+14040	Cuptor
+14041	Cuptor
+14042	Cuptor
+14043	Cuptor
+14044	Cuptor
+15001	Fierar Arme I
+15101	Fierar Arme II
+15201	Fierar Arme III
+15002	Fierar Armuri I
+15102	Fierar Armuri II
+15202	Fierar Armuri III
+15003	Fierar Armuri Speciale I
+15103	Fierar Armuri Special II
+15203	Fierar Armuri Spec III
+15004	Bijutier I
+15104	Bijutier II
+15204	Bijutier III
+15005	Tãbãcar I
+15105	Tãbãcar II
+15205	Tãbãcar III
+15006	Atelier de Piele
+15106	Atelier de Piele
+15206	Atelier de Piele
+15007	Prelucrãtor Diamante I
+15107	Prelucrãtor Diamante II
+15207	Prelucrãtor Diamant III
+15008	Prelucrãtor Lemn I
+15108	Prelucrãtor Lemn II
+15208	Preluc Lemn Fosil III
+15009	Prelucrãtor Cupru I
+15109	Prelucrãtor Cupru II
+15209	Prelucrãtor Cupru III
+15010	Prelucrãtor Argint I
+15110	Prelucrãtor Argint II
+15210	Prelucrãtor Argint III
+15011	Prelucrãtor Aur I
+15111	Prelucrãtor Aur II
+15211	Prelucrãtor Aur III
+15012	Prelucrãtor Jad I
+15112	Prelucrãtor Jad II
+15212	Prelucrãtor Jad III
+15013	Prelucrãtor Ebonita I
+15113	Prelucrãtor Ebonitã II
+15213	Prelucrãtor Ebonitã III
+15014	Prelucrãtor Perlã I
+15114	Prelucrãtor Perlã II
+15214	Prelucrãtor Perlã III
+15015	Prelucrãtor Aur Alb I
+15115	Prelucrãtor Aur Alb II
+15215	Prelucrãtor Aur Alb III
+15016	Prelucrãtor Cristal I
+15116	Prelucrãtor Cristal II
+15216	Prelucrãtor Cristal III
+15017	Prelucrãtor Ametist I
+15117	Prelucrãtor Ametist II
+15217	Prelucrãtor Ametist III
+15018	Preluc Lacrima Cerului I
+15118	Preluc Lacrim Cerului II
+15218	Preluc Lacri Cerului III
+15019	Prel. Cristal Spirit I
+15119	Prel. Cristal Spirit II
+15219	Prel. Cristal Spirit III
+15020	Prelucrãtor Rubin I
+15120	Prelucrãtor Rubin II
+15220	Prelucrãtor Rubin III
+15021	Prelucrãtor Granat I
+15121	Prelucrãtor Granat II
+15221	Prelucrãtor Granat III
+15022	Prelucrãtor Smarald I
+15122	Prelucrãtor Smarald II
+15222	Prelucrãtor Smarald III
+15023	Prelucrãtor Safir I
+15123	Prelucrãtor Safir II
+15223	Prelucrãtor Safir III
+15024	Prelucrãtor Turmalinã I
+15124	Prelucrãtor Turmalinã II
+15224	Preluc Turmalinã III
+15025	Preluc Beril Cenuºiu I
+15125	Preluc Beril Cenuºiu II
+15225	Preluc Beril Cenuºiu III
+15026	Preluc Beril Luminos I
+15126	Preluc Beril Luminos II
+15226	Preluc Beril Luminos III
+15027	Preluc Beril Obscur I
+15127	Preluc Beril Obscur II
+15227	Preluc Beril Obscur III
+15028	Preluc Beril Fumuriu I
+15128	Preluc Beril Fumuriu II
+15228	Preluc Beril Fumuriu III
+15029	Prelucrãtor Lunar I
+15129	Prelucrãtor Lunar II
+15229	Prelucrãtor Lunar III
+15030	Altar de Invocare I
+15130	Altar de Invocare II
+15230	Altar de Invocare III
+15031	Altar Terit Breaslã I
+15131	Altar Terit Breaslã II
+15231	Altar Terit Breaslã III
+15032	Altarul Puterii I
+15132	Altarul Puterii II
+15232	Altarul Puterii III
+15033	Depozit Breaslã I
+15133	Depozit Breaslã II
+15233	Depozit Breaslã III
+16001	Fierar Arme I
+16101	Fierar Arme II
+16201	Fierar Arme III
+16002	Fierar Armuri I
+16102	Fierar Armuri II
+16202	Fierar Armuri III
+16003	Fierar Armuri Speciale I
+16103	Fierar Armuri Special II
+16203	Fierar Armuri Spec III
+16004	Bijutier I
+16104	Bijutier II
+16204	Bijutier III
+16005	Tãbãcar I
+16105	Tãbãcar II
+16205	Tãbãcar III
+16006	Gravor
+16007	Alchimist Diamant I
+16107	Alchimist Diamant II
+16207	Alchimist Diamant III
+16008	Alchimist Lemn I
+16108	Alchimist Lemn II
+16208	Alchimist Lemn III
+16009	Alchimist Cupru I
+16109	Alchimist Cupru II
+16209	Alchimist Cupru III
+16010	Alchimist Argint I
+16110	Alchimist Argint II
+16210	Alchimist Argint III
+16011	Alchimist Aur I
+16111	Alchimist Aur II
+16211	Alchimist Aur III
+16012	Alchimist de Jad I
+16112	Alchimist de Jad II
+16212	Alchimist de Jad III
+16013	Alchimist Ebonitã I
+16113	Alchimist Ebonitã II
+16213	Alchimist Ebonitã III
+16014	Alchimist Perlã I
+16114	Alchimist Perlã II
+16214	Alchimist Perlã III
+16015	Alchimist Aur Alb I
+16115	Alchimist Aur Alb II
+16215	Alchimist Aur Alb III
+16016	Alchimist Cristal I
+16116	Alchimist Cristal II
+16216	Alchimist Cristal III
+16017	Alchimist Ametist I
+16117	Alchimist Ametist II
+16217	Alchimist Ametist III
+16018	Alchim Lacrima Cerului I
+16118	Alch. Lacrima Cerului II
+16218	Alc. Lacrima Cerului III
+16019	Alch. Suflet Cristal I
+16119	Alch. Suflet Cristal II
+16219	Alch. Suflet Cristal III
+16020	Alchimist Rubin I
+16120	Alchimist Rubin II
+16220	Alchimist Rubin III
+16021	Alchimist Granat I
+16121	Alchimist Granat II
+16221	Alchimist Granat III
+16022	Alchimist Smarald I
+16122	Alchimist Smarald II
+16222	Alchimist Smarald III
+16023	Alchimist Safir I
+16123	Alchimist Safir II
+16223	Alchimist Safir III
+16024	Alchimist Turmalinã I
+16124	Alchimist Turmalinã II
+16224	Alchimist Turmalinã III
+16025	Alchim Beril Cenuºiu I
+16125	Alchim Beril Cenuºiu II
+16225	Alchim Beril Cenuºiu III
+16026	Alchim Beril Luminos I
+16126	Alchim Beril Luminos II
+16226	Alchim Beril Luminos III
+16027	Alchim Beril Obscur I
+16127	Alchim Beril Obscur II
+16227	Alchim Beril Obscur III
+16028	Alchim Beril Fumuriu I
+16128	Alchim Beril Fumuriu II
+16228	Alchim Beril Fumuriu III
+16029	Alchimist Cobalt I
+16129	Alchimist Cobalt II
+16229	Alchimist Cobalt III
+16030	Altar de Invocare I
+16130	Altar de Invocare II
+16230	Altar de Invocare III
+16031	Maestru Binecuvântare I
+16131	Maestru Binecuvântare II
+16231	Maestru Binecuvântar III
+20001	Alchimist
+20002	Aranyo
+20003	Ah-Yu
+20004	Cerºetor
+20005	Yonah
+20006	Mirine
+20007	Administrator Depozit
+20008	Octavio
+20009	Batran
+20010	Negustor ambulant
+20011	Uriel
+20012	Yu-Rang
+20013	Pescar
+20014	Taurean
+20015	Deokbae
+20016	Fierar
+20017	Yu-Hwan
+20018	Baek-Go
+20019	Yang-Shin
+20020	Trãdãtorul Balso
+20021	Ariyoung
+20022	Huahn-So
+20023	Soon
+20024	Harang
+20025	.
+20026	Ji-Ryu
+20027	Gillian
+20028	Fratele lui Mirine
+20029	Ponei
+20030	Cal
+20031	Mos Craciun
+20032	Brad de Craciun
+20033	Brad de Crãciun
+20034	Brad de Crãciun
+20035	Steag
+20036	Steag
+20037	Steag
+20038	..
+20039	.
+20040	Vanzator de terenuri
+20041	Cetãþean turmentat
+20042	Negustor ambulant
+20043	.
+20047	Zãcãmânt de diamante
+20048	Zãcãmânt de chihlimbar
+20049	Zãcãmânt de fosile
+20050	Zãcãmânt de cupru
+20051	Zãcãmânt de argint
+20052	Zãcãmânt de aur
+20053	Zãcãmânt de Jad
+20054	Zãcãmânt de lemn abanos
+20055	Teanc de scoici
+20056	Zãcãmânt de aur alb
+20057	Zãcãmânt de cristal
+20058	Zãcãmânt de cuarþ
+20059	Minereu Lacrima Cerului
+20073	Sigiliu vechi
+20074	Fierar Arme Turn
+20075	Fierar de armuri de turn
+20076	Bijutierul turnului
+20077	Gardian Altar
+20078	Gardian Altar
+20079	Gardian Altar
+20080	Scara de antrenament
+20081	Sigiliul pasajului furat
+20082	Maestru
+20083	Jegal-Tunseok
+20084	Biologul Chaegirab
+20085	Jimjunja
+20086	Handu-Up
+20087	Wonda-Rim
+20088	Chuk-Sal
+20089	Pung-Ho
+20090	Heuk-Young
+20091	Seon-Pyeong
+20092	Hwa-Hee
+20093	Koe-Pung
+20094	Hong-Hae
+20095	Seon-Hae
+20096	Obelisc
+20097	Poarta Castelului
+20098	Poarta Castelului
+20099	Poarta Castelului
+20101	Cal alb
+20102	Cal maro
+20103	Cal Negru
+20104	Cal alb
+20105	Cal maro
+20106	Cal Negru
+20107	Cal alb
+20108	Cal maro
+20109	Cal Negru
+20110	Mistreþ Sãlbatic
+20111	Lup
+20112	Tigru
+20113	Leu
+20114	white lion
+20115	Mistreþ Sãlbatic d Luptã
+20116	Lup de Batalie
+20117	Tigrul Furtunii
+20118	Leul Luptãtor
+20119	Cal Negru Nobil
+20120	Ã»ÀÇÀü°©È£
+20121	ÁøÀûÀÇÀü°©È£
+20122	È²ÀÇÀü°©È£
+20123	³ìÀÇÀü°©È£
+20124	ÈæÀÇÀü°©È£
+20125	¹éÀÇÀü°©È£
+20126	Mos Craciun
+20127	Banner Aniversar 1
+20128	Banner Aniversar 2
+20129	Banner Aniversar 3
+20130	Banner Aniversar 4
+20131	Banner Aniversar 5
+20132	Banner Aniversar 6
+20133	Banner Aniversar 7
+20134	Banner Solar
+20135	Banner de Crãciun
+20139	Banner Breaslã (Violet)
+20140	Banner Breaslã (Al/Ver)
+20141	Banner Breaslã (Roº/Aur)
+20138	Banner Ramadan
+20142	Banner de Halloween
+20143	Banner de Paºte
+20146	Portal Lumea de Dincolo
+20147	Emisarul Morþii
+20148	Gardian Hae-Tae
+20149	Cal de Rãzboi Puternic
+20150	Cal Rãzb Putern (G.Memb)
+20151	Cal Rãzb Putern (G.Lid)
+20201	Àü°©¿ø
+20202	Àü°©¶û
+20203	Àü°©È£
+20204	Àü°©»çÀÚ
+20205	³­ÆøÇÑ Àü°©¿ø
+20206	³­ÆøÇÑ Àü°©¶û
+20207	³­ÆøÇÑ Àü°©È£
+20208	³­ÆøÇÑ Àü°©»çÀÚ
+20209	¿ë¸ÍÇÑ Àü°©¿ø
+20210	¿ë¸ÍÇÑ Àü°©¶û
+20211	¿ë¸ÍÇÑ Àü°©È£
+20212	¿ë¸ÍÇÑ Àü°©»çÀÚ
+20213	Àü°©¼ý¼ø·Ï
+20214	³­ÆøÇÑ Àü°©¼ý¼ø·Ï
+20215	¿ë¸ÍÇÑ Àü°©¼ý¼ø·Ï
+20216	Àü°©¾Ï¼ø·Ï
+20217	³­ÆøÇÑ Àü°©¾Ï¼ø·Ï
+20218	¿ë¸ÍÇÑ Àü°©¾Ï¼ø·Ï
+20219	blackpony
+20220	Å©¸®½º¸¶½º ¼ø·Ï
+20221	Àü°©¹é¿õ
+20222	Àü°©ÆÒ´õ
+20223	Àü°©¼®·æÀÚ
+20224	³­ÆøÇÑ Àü°©¼®·æÀÚ
+20225	¿ë¸ÍÇÑ Àü°©¼®·æÀÚ
+20226	ÈæÀ¯´ÏÄÜ
+20227	¹éÀ¯´ÏÄÜ
+20228	Àü°©¸ÍÁ¶
+20229	³­ÆøÇÑ Àü°©¸ÍÁ¶
+20230	¿ë¸ÍÇÑ Àü°©¸ÍÁ¶
+20231	Àü°©Èæ¹ü
+20232	Àü°©Ç¥¹ü
+20233	Muffin (Accesorii Maro)
+20234	Nugget (Accesorii Maro)
+20235	Nugget (Accesorii Bleu)
+20236	Nugget (Accesorii Bleu)
+20237	Nugget (Accesorii Verzi)
+20238	Nugget (Accesorii Verzi)
+20239	Blitzen
+20240	Donner
+20241	Nugget (Bleumarin)
+20242	Muffin (Roz)
+20243	NoNAme
+20244	Dragon Nirvana
+20245	Dragon Samsara
+20246	Manny
+20247	Ellie
+20248	Tulu Luptã Brunã
+20249	Tulu Luptã Neagrã
+20250	ªopârlã Lava
+20251	ªopârlã Gheaþã
+20252	Magma Dragon
+20253	Appaloosa
+20254	Iepure Alb
+20255	Iepuraº Moon
+20257	Bernie
+20258	Blue Barry
+20259	Cerberus (Aur)
+20260	Cerberus (Argint)
+20261	Armãsar Spectral
+20262	Equus Nocturnus
+20263	Aripã Roºie
+20264	Nyctalus
+20265	Armãsar Hialin
+20266	Armãsar Argintiu
+20267	Ox Auriu de Luptã
+20268	Ox Argintiu de Luptã
+20269	Sfinx Alb
+20270	Sfinx de Piatrã
+20271	Corb de Gheaþã
+20272	Corb Întunecat
+20273	Lama Iarnã Albã
+20274	Lama Iarnã Maro
+20275	Alastor
+20276	Iepuraº Grãbit (Roz)
+20277	Iepuraº Grãbit (Albastr)
+20278	Kitsune Roºu Aprins
+20279	Kitsune Albastr Îngheþat
+20280	Lup Arctic Roºu
+20281	Lup Arctic Albastru
+20282	Cal de Mare Lumina Lunii
+20283	Cal de Mare Lumina Soare
+20284	Doomglider Negru
+20285	Doomglider Auriu
+20286	Renul Avalanºã
+20287	Renul Iarnã
+20288	Comet Fulg de Nea
+20289	Iepuraº Grãbit (Roºu)
+20290	Iepuraº Grãbit (Negru)
+20291	Mãturã Blestematã
+20292	Mãturã Fermecatã
+20293	Cal Legionar Nobil
+20294	Cal Legionar Întunecat
+20295	Halia
+20296	Aquilos
+20298	Automobil Vintage Bleu
+20299	Automobil Vintage Verde
+20300	Învãþãtor Luptã de Corp
+20301	Învãþãtor Luptã Mentala
+20302	Învãþãtor Luptã cu Sabia
+20303	Învãþãtor Luptã cu Arcul
+20304	Învãþãtor Arme Magice
+20305	Învãþãtor Magie Neagrã
+20306	Învãþãtor Puterea Dragon
+20307	Învãþãtor Vindecare
+20320	Învãþãtor Luptã de Corp
+20321	Învãþãtor de luptã ment.
+20322	Învãþãtor de luptã apro.
+20323	Învãþãtor de luptã depã.
+20324	Învãþãtor de arme magice
+20325	Învãþãtor de magie neagr
+20326	Învãþãtor de puter. zmeu
+20327	Învãþãtor de vindecare
+20340	Învãþãtor Luptã de Corp
+20341	Învãþãtor de luptã ment.
+20342	Învãþãtor de luptã apro.
+20343	Învãþãtor de luptã depã.
+20344	Învãþãtor de arme magice
+20345	Învãþãtor de magie neagr
+20346	Învãþãtor de puter. zmeu
+20347	Învãþãtor de vindecare
+20348	Gardian Turnul Demonilor
+20349	Grãjdar
+20350	Paznicul Garnizoanei
+20351	Paznicul halei
+20352	Monument piatra Hasun
+20353	Monument piatra SeulRong
+20354	Gardianul Oraºului
+20355	Capitan
+20356	Culegãtor de Ginseng
+20357	Monument piatrã Weol
+20358	Flori fãrã nume
+20359	Cutie cu Manuscrise
+20360	Piatra Memoriala Wha
+20361	Piatra Memoriala Su
+20362	Piatra Memoriala  Mok
+20363	Monument Gum
+20364	Nakajima
+20365	Monument To
+20366	Sa-Soe
+20367	Paznicul Catacombei
+20368	Negustor Ambulant
+20369	Lee Chung
+20370	Soldat Otrãvit
+20371	Mormant Vechi
+20372	Tableta Piatra Veche
+20373	Bodyguard
+20374	Gardian
+20375	Baricada de Lemn
+20376	Kim Rim
+20377	Yak-Hwan
+20378	Amiralul Angmur
+20379	Soldat Ranit
+20380	Yon-I-Walker
+20381	Confucius
+20382	Floare de Stanca
+20383	Jae-Seon Kim
+20384	Brad de Craciun
+20385	Marele Am-heh
+20386	Stele din Isfet
+20387	Poarta Destinului
+20388	Poarta Dragonului
+20389	NoNAme
+20390	Mormant Taramor
+20391	Iarba Soarelui
+20392	Soldat Mort
+20393	Soldat Ranit
+20394	Paznic Tara de Foc
+20395	Gardian Þara Îngheþatã
+20396	Àû¼ö»ó´Ü ÆÇ¸Å¿ø
+20397	Leu de Gheaþã
+20398	Cub de Gheaþã
+20399	Pilonul Dragon din Nord
+20400	Inteleptul Myonghorang
+20401	Gardian Colonie
+20402	Gardian Portal
+20403	Amarok
+20404	Nagual
+20405	Waheela
+20406	NoNAme
+20407	Fenrir
+20408	Gardianul Templului
+20409	Gardianul Pãdurii
+20410	Cercetaºul Pãdurii
+20411	Cãlãtorul Pãdurii
+20412	Lider Gardian Pãdure
+20413	Kawuco
+20414	Andastre
+20415	Portal
+20416	Dovleacul Sam
+20417	Masã Okey
+20419	Gardã Dragon Dolnarr
+20420	Cufãr Dragon Auriu
+20421	Gardã Dragon Jaharr
+20422	Ou Dragon
+20429	Gardian Zona de Rãzboi
+20430	Cherie
+20431	Negustor Aniversar
+20432	Ou Hydra
+20433	Statuie Rãzboinic
+20434	Catarg
+20435	Urma lui Meley
+20436	Timonã
+20437	Lemn Reparaþii
+20438	Cãlugãrul Milbon
+20439	Portal Zi
+20440	Portal Chou
+20441	Portal Yin
+20442	Portal Mao
+20443	Portal Chen
+20444	Portal Si
+20445	Portal Wu
+20446	Portal Wei
+20447	Portal Shen
+20448	Portal You
+20449	Portal Xu
+20450	Portal Hai
+20451	Negustor Zodiac
+20452	Statuia Zi
+20453	Statuia Chou
+20454	Statuia Yin
+20455	Statuia Mao
+20456	Statuia Chen
+20457	Statuia Si
+20458	Statuia Wu
+20459	Statuia Wei
+20460	Statuia Shen
+20461	Statuia You
+20462	Statuia Xu
+20463	Statuia Hai
+20464	Tun
+20465	Portal Zodiac
+20470	Statuie Iluzii
+20471	Statuie Redux
+20472	Statuie Ruptura Timpului
+20473	Statuie Fierar Arme
+20474	Statuie Fierar Armuri
+20475	Fierar Sfânt
+20476	Fierar Glorios
+20477	Fierar Cavaler
+20478	Fierar Roial
+20479	Fierar Maiestuos
+20480	Gestionarã Negoþ
+20481	Gestionarã Negoþ
+20482	Recompensã Enigma
+20483	Templul Enigma (Bonus C)
+20484	Templul Enigma (Bonus B)
+20485	Templul Enigma (Bonus A)
+20486	Zonã Bãtãlie Breaslã (E)
+20487	Zonã Bãtãlie Breaslã (V)
+20488	Zonã Bãtãlie Breaslã (S)
+20489	Zonã Bãtãlie Breaslã (N)
+20490	Negustor Breaslã
+20491	Tablã Piatrã Blestematã
+20492	Comoara lui Balathor
+20493	Hwacha
+20494	Zid Piatrã Îngheþat
+20495	Ou Dragon Îngheþat
+20496	Ou Dragon Îngheþat
+20497	Ou Dragon Fierbinte
+20498	Cristal Vechi Îngheþat
+20499	Hwacha (Transformat)
+20500	Ou Dragon
+20501	Cufãr Gaya
+20502	Tablã Yut Nori
+20503	Negustor Gaya
+20504	Piaþã Gaya
+20505	Beþe Yut Nori
+20506	Masa Prinde Regele
+20507	Cristal Etern de Gheaþã
+20510	TR: Fantoma unui Sura
+20511	TR: Marele Am-heh
+20512	TR: Mormânt Taramor
+20513	TR: Stele din Isfet
+20514	TR: Poarta Destinului
+20515	TR: Poarta Dragonului
+20516	TR: Leu de Gheaþã
+20517	TR: Cub de Gheaþã
+20518	TR: Pilon Dragon Nord
+20519	TR: Gardianul Pãdurii
+20520	TR: Cercetaºul Pãdurii
+20521	TR: Cãlãtorul Pãdurii
+20522	TR: Lider Gardian Pãdure
+20530	RX: Fantoma unui Sura
+20531	RX: Marele Am-heh
+20532	RX: Mormânt Taramor
+20533	RX: Stele din Isfet
+20534	RX: Poarta Destinului
+20535	RX: Poarta Dragonului
+20536	RX: Leu de Gheaþã
+20537	RX: Cub de Gheaþã
+20538	RX: Pilon Dragon Nord
+20539	RX: Gardianul Pãdurii
+20540	RX: Cercetaºul Pãdurii
+20541	RX: Cãlãtorul Pãdurii
+20542	RX: Lider Gardian Pãdure
+20650	Pãstrator de Medalii
+20702	Altarul Energiei
+20703	Altarul Averii
+20704	Altarul Puterii
+20705	Altarul Sãnãtãþii
+20706	Altarul Luminii
+20707	Æ÷Å»(°ÝÀüÁö) 385 385
+20710	Cufãr Provizii (BR)
+20711	Cufãr Echipament (BR)
+20712	Câmp Electric
+20713	Cufãr Echipament (BR)
+20714	Cufãr Provizii Extra(BR)
+20798	Portal Sung Ma
+20799	Flori
+20800	Om Rãnit
+20802	Paznic Yohara
+20803	Gardian Yohara
+20804	Gardian ªarpe
+20805	Gardianul Nordului
+20806	Gardian Strâmtoare
+20807	Statuia ªarpelui
+20808	Generalul Kohan
+20809	Confucius
+20810	Chaegirab
+20811	Kim Rim
+20812	Amiralul Angmur
+20813	Pustnicul Nordic
+20814	Cercetaº Pierdut
+20815	Gardian Fantomã
+20822	Trickster
+20823	Maestru Chi
+20826	Huahn-So
+20829	Fierar Templul ªarpelui
+20830	Dispecer Comandant
+20831	Comandant Yohara
+20832	Amiralul Angmur
+20833	Flori Alterate
+20834	Altar
+20836	Jumãtatea drumului
+20837	Ieºire
+20838	Stagiul 2
+20839	Stagiul 3
+20840	Aria Dong Gwang
+20841	Vanator de Recompense
+20842	Fierar Întemniþat
+20844	Statuia ªarpelui
+20845	Vânãtor Recomp (C Nord)
+20846	Vânãtor Recomp (Strâmt.)
+20847	Vânãtor Recomp (Adãpost)
+20848	Oase Vechi
+20849	Taehwarang
+20850	Altar Misterios
+20851	Vânãtor Recomp (Seo Gw)
+20852	Vânãtor Recomp (Nam Gw)
+20853	Fierar Lunar Aeris
+20856	Spiriduº Comori
+20857	Cufãr Uriaº Comori
+20858	Ecou Misterios
+20859	General Asmir
+20860	Soldat Pierdut
+20861	Cercetãtor Corupþie
+20862	Altar Întunecat
+20863	Vânãtor Lunar Recompense
+20864	Luptãtor Blestemat
+20865	Soldat Rãnit
+20866	Altar Vechi
+20867	Suflet Dragon Albira
+20868	Suflet Dragon Albira
+20869	Suflet Dragon Albira
+20870	Placeholder
+20871	Placeholder
+20872	Cufãr Opulent Aamon
+20874	Enasir
+30000	°³ÀÎ»óÁ¡
+30001	°³ÀÎ»óÁ¡
+30002	1001 Nopþi
+30003	Regele BBQ
+30004	Vânãtor de Comori
+30005	Flacãrã Economicã
+30006	Vânzãtor de Arme
+30007	Vânzãtor de Armuri
+30008	Alchimist
+30101	Statuia Kud
+30102	Obelisc Bazalt
+30103	Piatra Testoasa
+30104	Fragment de Runa
+30111	1. Poarta Pierzaniei
+30112	2. Poarta Pierzaniei
+30113	3. Poarta Pierzaniei
+30114	4. Poarta Pierzaniei
+30115	5. Poarta Pierzaniei
+30116	6. Poarta Pierzaniei
+30117	7. Poarta Pierzaniei
+30118	8. Poarta Pierzaniei
+30119	9. Poarta Pierzaniei
+30120	Pungã cu Ierburi
+30121	Spiritul Sura
+30122	Spiritul Rãzboinic
+30123	Sanctuarul Întunecat
+30124	Schelet-Sura 1
+30125	Schelet-Sura 2
+30126	Schelet-Sura 3
+30127	Schelet-Sura 4
+30128	Schelet-Sura 5
+30129	Iepuraºul de Paºte
+30130	Mormant
+30131	Mr. B
+30132	Mr. B
+30301	Farama Minereu Cristal
+30302	Farama Minereu Rubin
+30303	Farama Minereu Granat
+30304	Farama Minereu Smarald
+30305	Farama Minereu Safir
+30306	Minereu de Turmalina
+30307	Varã
+30308	Cutie Poºtalã
+30309	Filon Beril Fumur. (Mis)
+30310	Filon Beril Luminos
+30311	Filon Beril Obscur
+30312	Filon Beril Fumuriu
+30313	Filon Beril Cenuºiu
+30314	Filon Cobalt
+33001	¸ðÇè°¡ÀÇ ÇØ°ñ
+33002	Istoric
+33003	Localnic Credincios
+33004	Localnic Credincios
+33005	Localnic Credincios
+33006	Localnic Credincios
+33007	Localnic Credincios
+33008	Dovleacul Jack
+33009	Altarul Sângelui
+33010	Om de Zãpadã
+34001	Phoenix de Foc
+34002	Ren Tânãr
+34003	Phoenix de Gheaþã
+34004	Baby Azrael
+34005	Porcusor
+34006	Rufus
+34007	Khan
+34008	Leonidas
+34009	Baby Azrael
+34010	Bambi
+34011	Knuud
+34012	Bao Bao
+34013	Mini Executor Dolofan
+34014	Mini Executor Dolofan(a)
+34015	Boney
+34016	Phoenix de Jad
+34017	Porkie Polar
+34018	Rufus de Gheaþã
+34019	Arctis Khan
+34020	Leonidas Alb
+34021	Sheldon
+34022	Cooper
+34023	Panterã Pui
+34024	Leopard Pui
+34026	Cap de Dovleac
+34027	Coadã de Mãturã
+34028	Fulg de Nea
+34029	Clopotel de Nea
+34030	Amoras
+34031	Inimã Iute
+34032	Semilunã Roºie
+34033	Semilunã Albastrã
+34034	Eweriel
+34035	Ramblue
+34036	Dragonette
+34037	Dragonette (Erou)
+34038	Phoenix Liber
+34039	Micul Huashin
+34041	Maimuta Mica
+34042	Maimuta Mica (Erou)
+34045	Pãianjen Mic
+34046	Pãianjen Mic (Erou)
+34047	Micul Exedyar
+34048	Micul Exedyar Rar
+34049	Razador Mic
+34050	Razador Mic (Erou)
+34053	Nemere Mic
+34054	Nemere Mic (Erou)
+34055	Bruce
+34056	Wayne
+34057	Robin
+34058	Valentino
+34059	Valentinia
+34060	Valentino
+34061	Valentinia
+34062	Lanternã Moon (Orange)
+34063	Lanternã Moon (Albastrã)
+34064	Meley Mic
+34065	Meley Mic
+34066	Bonsai
+34067	Ms Jiangshi+
+34068	Mr Jiangshi+
+34069	Junior Jiangshi
+34070	Elf Roºu
+34071	Elf Verde
+34072	Elf Asistent
+34073	Mini Azrael
+34074	Mini Azrael (Erou)
+34075	Mini Executor Gras
+34076	Mini Execut Gras (Erou)
+34077	Mini Alastor Nervos
+34078	Mini Alastor Trezit
+34080	Micul Baashido
+34081	Micul Baashido (Erou)
+34082	Nessie
+34083	Nessie (Erou)
+34084	Donnie
+34085	Frank
+34086	Shiver
+34087	Snivel
+34088	Cruella
+34089	Minidall
+34090	Lanternã Coloratã
+34091	Lanternã Verde
+34092	Sir Oswald
+34093	Sir Cobblepot
+34094	Sir Chesterfield
+34095	Gryph
+34096	Nogai
+34097	Astrabell
+34098	Helexna
+34099	Chaotika
+34100	Gary Lycaner
+34101	Lycaninho
+34102	Micul Catenaccio
+34103	Pãun Albastru Regal
+34104	Pãun Roz
+34105	Pãun Indigo
+34106	Alunã Harry
+34107	Nucã Willy
+34108	Rotofeiul Crack
+34109	Humpitzer
+34110	Caboomel
+34111	Camelry
+34112	Gândac de Gheaþã+
+34113	Gândac de Gheaþã
+34114	Felinã Ochi de Foc
+34115	Felinã Ochi de Gheaþã
+34116	Felinã Trei Ochi
+34117	Gnom Tomte+ (Roºu)
+34118	Gnom Tomte+ (Verde)
+34119	Gnom Tomte
+34120	Micul Huashin Roºu
+34121	Micul Huashin Alb
+34122	Bonsai+
+34123	+Bonsai+
+34124	Element Foc Mic
+34125	Element Gheaþã Mic
+34126	Element Fulger Mic
+34127	Element Vânt Mic
+34128	Element Pãmânt Mic
+34129	Element Întunecat Mic
+34130	Loverador Jucãuº
+34131	Loverador Nãtãfleþ
+34132	Loverador Mic
+34133	Crab Rãzboinic Mic
+34134	Crab Mic
+34135	Mumie Confuzã
+34136	Mumie Agitatã
+34137	Mumie Zguduitã
+34138	Pom Crãciun Verde
+34139	Pom Crãciun Ursuz
+34140	Pom Crãciun Mic
+34141	Anubis Albastru Nocturn
+34142	Anubis Roºu Sângeriu
+34143	Micul Anubis
+34145	Balenã Ucigaºã de Gheaþã
+34146	Îmblânzeºte Balena
+34147	Leonidas Alb
+34148	Astrabell
+34149	Phoenix de Foc
+34150	Pericol Îngheþat
+34151	Pericol Otrãvit
+34152	Pericol Mic
+34153	Snowdrop
+34154	Snowball
+34155	Snowdon
+34156	Sarcofag Îngheþat
+34157	Sarcofag Roºu
+34158	Sarcofag Mic
+34159	Turtã Dulce Dasher
+34160	Turtã Dulce Rudolph
+34161	Micul Turtã Dulce Dasher
+34162	Dragon Adorabil Simpatic
+34163	Dragon Adorabil Jucãuº
+34164	Dragon Adorabil Mic
+34165	ªef Mic
+34166	ªef Mic (Erou)
+34167	Mini ªef Foc
+34168	Mini ªef Gheaþã
+34169	Mini ªef Fulger
+34170	Mini ªef Vânt
+34171	Mini ªef Pãmânt
+34172	Mini ªef Întuneric
+34173	Mini ªef
+34174	Pisicã Albã Angora
+34175	Pisicã Maro Angora
+34176	Pisicuþã Angora
+34177	Campion de Fotbal
+34178	Bambi Fulg de Nea
+34180	Whistle
+34181	Wrench
+34182	Micul Whistle
+34183	Balenã de Gheaþã Loialã
+34184	Balenã de Gheaþã Mini
+34185	Tiki Terror Nesãbuit
+34186	Tiki Terror Îndrãzneþ
+34187	Tiki Terror Mic
+34188	Krampus Zãpadã
+34189	Krampus Cãrbune
+34190	Krampus Mic
+34191	Taur Negru
+34192	Taur Maro
+34193	Taur Îmblânzit
+34194	Pincher
+34195	Snapper
+34197	Lilith
+34198	Helena
+34199	Mica Lilith
+34200	Loong Auriu
+34201	Loong Argintiu
+34202	Micul Loong
+34203	Mini Balathor
+34204	Balathor Jr
+34205	Pebble
+34206	Pebble Mic
+34207	Gardian Bufniþã Lunarã
+34208	Gardian Bufniþã Solarã
+34209	Gardian Bufniþã Micã
+34210	Dovleac Negru Broomrider
+34211	Dovleac Alb Broomrider
+34212	Mini Dovleac Broomrider
+34213	Zânã Albastrã
+34214	Zânã Roz
+34215	Zânã Micã
+34216	Maimuþã Micã (Niv C)
+34217	Pãianjen Mic (Niv C)
+34218	Razador Mic (Niv C)
+34219	Nemere Mic (Niv C)
+34220	Dragonette (Niv C)
+34221	Copil Meley (Niv C)
+34222	Azrael Mic (Niv C)
+34223	Mini Execut Gras (Niv C)
+34224	Micul Baashido (Niv C)
+34225	Nessie (Niv C)
+34226	Exedyar (Niv C)
+34227	A. Alastor Mic (Niv C)
+34228	ªef Mic (Niv C)
+34229	Pui de Aamon
+34230	Pui de Aamon Flacãrã
+34231	Pui de Aamon (C Lvl)
+34234	Pavo
+34235	Gallus
+34236	Micul Pavo
+34237	Hati
+34238	Sköll
+34239	Micul Hati
+36000	Cal Sinistru
+36001	Cal Macabru
+36005	Aripi Îngheþate Balathor
+36006	Aripi Negre Balathor
+36007	Tigru Sãlbatic
+36008	Tigru Alb
+36009	Berbec Alb de Crãciun
+36010	Berbec Cãrbune Crãciun
+36011	Phoenix Amurg
+36012	Phoenix Rãsãrit
+40003	Placã de Surf Turbo
+40004	Furtunã Wukong
+40005	Tunet Wukong
+40006	Drakkar Albastru
+40007	Drakkar Roºu
+60000	ªef Breaslã
+60001	ªef Breaslã
+60002	ªef Breaslã
+60003	Theowahdan
+60007	Ajutor Invocare
+34900	Buffi
+34901	Buffi

@@ -1,0 +1,126 @@
+[/ SUMMARY /]
+
+[
+    TITLE;
+    X=10;Y=20;
+    TEXT_1=Welcome to Saryong;
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=65; TABLE_HEADERS=Intro; TABLE_WIDTHS=125]
+
+[TR; H=32]
+[TD; TEXT=|cFF000000|h....................|rWelcome to Saryong, one of the leading international servers.]
+
+[TR; H=32]
+[TD; TEXT=|cFF000000|h....................|rThis wiki will guide you step by step through your journey.]
+
+[TR; H=32]
+[TD; TEXT=|cFF000000|h....................|rIt will help you progress through every stage in the best way.]
+
+[TABLE_END]
+
+
+[
+    TITLE;
+    X=10;Y=185;
+    TEXT_1=Early Stage (Level 1–21);
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=225; TABLE_HEADERS=Info; TABLE_WIDTHS=125]
+
+[TR; H=32]
+[TD; TEXT=|cFF000000|h....................|rYou start with everything needed to handle Metin Stones up to level 21.]
+
+[TR; H=40]
+[TD; TEXT=|cFF000000|h....................|rAt level 21, inventory chests provide +9 equipment with useful bonuses.]
+
+[TABLE_END]
+
+
+[
+    TITLE;
+    X=10;Y=325;
+    TEXT_1=Character Development;
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=365; TABLE_HEADERS=Info; TABLE_WIDTHS=125]
+
+[TR; H=32]
+[TD; TEXT=|cFF000000|h....................|rAfter choosing your class, go to Village 2.]
+
+[TR; H=32]
+[TD; TEXT=|cFF000000|h....................|rFarm Jealousy Metin Stones and upgrade at least 2 skills to G.]
+
+[TR; H=40]
+[TD; TEXT=|cFF000000|h....................|rVillage 2 is also great for yang thanks to the Shuriken drop.]
+
+[TR; H=50]
+[TD; TEXT=|cFF000000|h....................|rStart the Biologist Quest (Orc Teeth) and do it step by step. It matters later.]
+
+[TABLE_END]
+
+
+[
+    TITLE;
+    X=10;Y=515;
+    TEXT_1=Early Dungeons (Level 35);
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=555; TABLE_HEADERS=Info; TABLE_WIDTHS=125]
+
+[TR; H=32]
+[TD; TEXT=|cFF000000|h....................|rAt level 35, start with Monkey Dungeon and Panda Dungeon.]
+
+[TR; H=40]
+[TD; TEXT=|cFF000000|h....................|rWind Resistance is recommended on Helmet, Armor, Costume and Bracelet.]
+
+[TR; H=45]
+[TD; TEXT=|cFF000000|h....................|rAlso recommended: Strong vs Animals, 10% Monster on hairstyle.]
+
+[TR; H=45]
+[TD; TEXT=|cFF000000|h....................|rUse a level 30 weapon +9 with Anti-Mob and Critical Hit +3.]
+
+[TABLE_END]
+
+
+[
+    TITLE;
+    X=10;Y=725;
+    TEXT_1=Advanced Progression (Level 35–54);
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=765; TABLE_HEADERS=Info; TABLE_WIDTHS=125]
+
+[TR; H=40]
+[TD; TEXT=|cFF000000|h....................|rOnce you have 2 skills at G1 and clear Monkey/Panda easily, aim higher.]
+
+[TR; H=45]
+[TD; TEXT=|cFF000000|h....................|rInvest yang into Blue Dew (Baek-Go) and White Dew (Herbalist Chests).]
+
+[TR; H=45]
+[TD; TEXT=|cFF000000|h....................|rWith these, reach level 54 and clear Baroness with your Wind setup.]
+
+[TABLE_END]
+
+
+[
+    TITLE;
+    X=10;Y=945;
+    TEXT_1=Final Advice;
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=985; TABLE_HEADERS=Info; TABLE_WIDTHS=125]
+
+[TR; H=50]
+[TD; TEXT=|cFF000000|h....................|rStay at level 54 for a while.]
+
+[TR; H=55]
+[TD; TEXT=|cFF000000|h....................|rFarm Devil Metin Stones, collect Book Pages, sell them, and buy PDA + Beans.]
+
+[TR; H=45]
+[TD; TEXT=|cFF000000|h....................|rBring your main skill to P to clear dungeons fast and efficiently.]
+
+[TR; H=32]
+[TD; TEXT=|cFF000000|h....................|rFrom there, the real game begins.]
+
+[TABLE_END]

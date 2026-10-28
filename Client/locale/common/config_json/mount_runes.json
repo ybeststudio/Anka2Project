@@ -1,0 +1,1320 @@
+{
+  "runes": [
+    {
+      "id": 1,
+      "item_vnum": 58030,
+      "levels": [
+        {
+          "rank": 1,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_OCHAO",
+              "value": 2
+            }
+          ],
+          "cost": 100000000,
+          "prob": 70,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 1
+            },
+            {
+              "vnum": 40822,
+              "count": 200
+            },
+            {
+              "vnum": 40819,
+              "count": 2
+            },
+            {
+              "vnum": 40855,
+              "count": 2
+            },
+            {
+              "vnum": 40922,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_OCHAO",
+              "value": 4
+            }
+          ],
+          "cost": 125000000,
+          "prob": 65,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 2
+            },
+            {
+              "vnum": 40822,
+              "count": 250
+            },
+            {
+              "vnum": 40819,
+              "count": 2
+            },
+            {
+              "vnum": 40855,
+              "count": 3
+            },
+            {
+              "vnum": 40922,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_OCHAO",
+              "value": 6
+            }
+          ],
+          "cost": 150000000,
+          "prob": 60,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 2
+            },
+            {
+              "vnum": 40822,
+              "count": 300
+            },
+            {
+              "vnum": 40819,
+              "count": 3
+            },
+            {
+              "vnum": 40855,
+              "count": 4
+            },
+            {
+              "vnum": 40922,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_OCHAO",
+              "value": 8
+            }
+          ],
+          "cost": 175000000,
+          "prob": 55,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 3
+            },
+            {
+              "vnum": 40822,
+              "count": 350
+            },
+            {
+              "vnum": 40819,
+              "count": 3
+            },
+            {
+              "vnum": 40855,
+              "count": 5
+            },
+            {
+              "vnum": 40922,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_OCHAO",
+              "value": 10
+            }
+          ],
+          "cost": 200000000,
+          "prob": 50,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 4
+            },
+            {
+              "vnum": 40822,
+              "count": 400
+            },
+            {
+              "vnum": 40819,
+              "count": 3
+            },
+            {
+              "vnum": 40923,
+              "count": 2
+            },
+            {
+              "vnum": 40922,
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_OCHAO",
+              "value": 12
+            }
+          ],
+          "cost": 225000000,
+          "prob": 50,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 4
+            },
+            {
+              "vnum": 40822,
+              "count": 450
+            },
+            {
+              "vnum": 40819,
+              "count": 4
+            },
+            {
+              "vnum": 40923,
+              "count": 3
+            },
+            {
+              "vnum": 40922,
+              "count": 5
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_OCHAO",
+              "value": 14
+            }
+          ],
+          "cost": 250000000,
+          "prob": 50,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40822,
+              "count": 500
+            },
+            {
+              "vnum": 40819,
+              "count": 5
+            },
+            {
+              "vnum": 40923,
+              "count": 3
+            },
+            {
+              "vnum": 40926,
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_OCHAO",
+              "value": 16
+            }
+          ],
+          "cost": 275000000,
+          "prob": 50,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40822,
+              "count": 500
+            },
+            {
+              "vnum": 40819,
+              "count": 5
+            },
+            {
+              "vnum": 40923,
+              "count": 4
+            },
+            {
+              "vnum": 40926,
+              "count": 4
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_OCHAO",
+              "value": 18
+            }
+          ],
+          "cost": 300000000,
+          "prob": 50,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40822,
+              "count": 500
+            },
+            {
+              "vnum": 40819,
+              "count": 5
+            },
+            {
+              "vnum": 40923,
+              "count": 5
+            },
+            {
+              "vnum": 40926,
+              "count": 5
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_OCHAO",
+              "value": 20
+            }
+          ],
+          "cost": 350000000,
+          "prob": 50,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40822,
+              "count": 500
+            },
+            {
+              "vnum": 40819,
+              "count": 5
+            },
+            {
+              "vnum": 40923,
+              "count": 5
+            },
+            {
+              "vnum": 40926,
+              "count": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "item_vnum": 58031,
+      "levels": [
+        {
+          "rank": 1,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_EREBUS",
+              "value": 2
+            }
+          ],
+          "cost": 100000000,
+          "prob": 70,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 1
+            },
+            {
+              "vnum": 40841,
+              "count": 25
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_EREBUS",
+              "value": 4
+            }
+          ],
+          "cost": 125000000,
+          "prob": 65,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 2
+            },
+            {
+              "vnum": 40841,
+              "count": 50
+            },
+            {
+              "vnum": 40844,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_EREBUS",
+              "value": 6
+            }
+          ],
+          "cost": 150000000,
+          "prob": 60,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 2
+            },
+            {
+              "vnum": 40841,
+              "count": 75
+            },
+            {
+              "vnum": 40844,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_EREBUS",
+              "value": 8
+            }
+          ],
+          "cost": 175000000,
+          "prob": 55,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 3
+            },
+            {
+              "vnum": 40841,
+              "count": 100
+            },
+            {
+              "vnum": 40844,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_EREBUS",
+              "value": 10
+            }
+          ],
+          "cost": 200000000,
+          "prob": 50,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 4
+            },
+            {
+              "vnum": 40841,
+              "count": 125
+            },
+            {
+              "vnum": 40844,
+              "count": 3
+            },
+            {
+              "vnum": 40840,
+              "count": 1
+            },
+            {
+              "vnum": 40944,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_EREBUS",
+              "value": 12
+            }
+          ],
+          "cost": 225000000,
+          "prob": 45,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 4
+            },
+            {
+              "vnum": 40841,
+              "count": 150
+            },
+            {
+              "vnum": 40844,
+              "count": 3
+            },
+            {
+              "vnum": 40840,
+              "count": 2
+            },
+            {
+              "vnum": 40944,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_EREBUS",
+              "value": 14
+            }
+          ],
+          "cost": 250000000,
+          "prob": 40,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40841,
+              "count": 175
+            },
+            {
+              "vnum": 40844,
+              "count": 4
+            },
+            {
+              "vnum": 40840,
+              "count": 3
+            },
+            {
+              "vnum": 40944,
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_EREBUS",
+              "value": 16
+            }
+          ],
+          "cost": 300000000,
+          "prob": 35,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40841,
+              "count": 200
+            },
+            {
+              "vnum": 40844,
+              "count": 4
+            },
+            {
+              "vnum": 40840,
+              "count": 3
+            },
+            {
+              "vnum": 40944,
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_EREBUS",
+              "value": 18
+            }
+          ],
+          "cost": 325000000,
+          "prob": 30,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40841,
+              "count": 225
+            },
+            {
+              "vnum": 40844,
+              "count": 5
+            },
+            {
+              "vnum": 40840,
+              "count": 4
+            },
+            {
+              "vnum": 40944,
+              "count": 4
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_EREBUS",
+              "value": 20
+            }
+          ],
+          "cost": 350000000,
+          "prob": 25,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40841,
+              "count": 250
+            },
+            {
+              "vnum": 40844,
+              "count": 5
+            },
+            {
+              "vnum": 40840,
+              "count": 5
+            },
+            {
+              "vnum": 40944,
+              "count": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "item_vnum": 58032,
+      "levels": [
+        {
+          "rank": 1,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_MELEY",
+              "value": 2
+            }
+          ],
+          "cost": 100000000,
+          "prob": 70,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 1
+            },
+            {
+              "vnum": 40841,
+              "count": 40
+            },
+            {
+              "vnum": 40839,
+              "count": 1
+            },
+            {
+              "vnum": 40844,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_MELEY",
+              "value": 4
+            }
+          ],
+          "cost": 125000000,
+          "prob": 65,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 2
+            },
+            {
+              "vnum": 40841,
+              "count": 60
+            },
+            {
+              "vnum": 40839,
+              "count": 1
+            },
+            {
+              "vnum": 40844,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_MELEY",
+              "value": 6
+            }
+          ],
+          "cost": 150000000,
+          "prob": 60,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 2
+            },
+            {
+              "vnum": 40841,
+              "count": 80
+            },
+            {
+              "vnum": 40839,
+              "count": 2
+            },
+            {
+              "vnum": 40844,
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_MELEY",
+              "value": 8
+            }
+          ],
+          "cost": 175000000,
+          "prob": 55,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 3
+            },
+            {
+              "vnum": 40841,
+              "count": 100
+            },
+            {
+              "vnum": 40839,
+              "count": 2
+            },
+            {
+              "vnum": 40844,
+              "count": 4
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_MELEY",
+              "value": 10
+            }
+          ],
+          "cost": 200000000,
+          "prob": 50,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 4
+            },
+            {
+              "vnum": 40841,
+              "count": 120
+            },
+            {
+              "vnum": 40839,
+              "count": 3
+            },
+            {
+              "vnum": 40945,
+              "count": 1
+            },
+            {
+              "vnum": 40944,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_MELEY",
+              "value": 12
+            }
+          ],
+          "cost": 225000000,
+          "prob": 45,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 4
+            },
+            {
+              "vnum": 40841,
+              "count": 150
+            },
+            {
+              "vnum": 40839,
+              "count": 3
+            },
+            {
+              "vnum": 40945,
+              "count": 2
+            },
+            {
+              "vnum": 40944,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_MELEY",
+              "value": 14
+            }
+          ],
+          "cost": 250000000,
+          "prob": 40,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40841,
+              "count": 175
+            },
+            {
+              "vnum": 40839,
+              "count": 4
+            },
+            {
+              "vnum": 40945,
+              "count": 3
+            },
+            {
+              "vnum": 40944,
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_MELEY",
+              "value": 16
+            }
+          ],
+          "cost": 300000000,
+          "prob": 35,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40841,
+              "count": 200
+            },
+            {
+              "vnum": 40839,
+              "count": 4
+            },
+            {
+              "vnum": 40945,
+              "count": 3
+            },
+            {
+              "vnum": 40944,
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_MELEY",
+              "value": 18
+            }
+          ],
+          "cost": 325000000,
+          "prob": 30,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40841,
+              "count": 225
+            },
+            {
+              "vnum": 40839,
+              "count": 5
+            },
+            {
+              "vnum": 40945,
+              "count": 4
+            },
+            {
+              "vnum": 40944,
+              "count": 4
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_MELEY",
+              "value": 20
+            }
+          ],
+          "cost": 350000000,
+          "prob": 25,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40841,
+              "count": 250
+            },
+            {
+              "vnum": 40839,
+              "count": 5
+            },
+            {
+              "vnum": 40945,
+              "count": 5
+            },
+            {
+              "vnum": 40944,
+              "count": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "item_vnum": 58033,
+      "levels": [
+        {
+          "rank": 1,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_METIN",
+              "value": 1
+            }
+          ],
+          "cost": 100000000,
+          "prob": 70,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 1
+            },
+            {
+              "vnum": 40841,
+              "count": 80
+            },
+            {
+              "vnum": 40839,
+              "count": 2
+            },
+            {
+              "vnum": 40842,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_METIN",
+              "value": 2
+            }
+          ],
+          "cost": 125000000,
+          "prob": 65,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 2
+            },
+            {
+              "vnum": 40841,
+              "count": 100
+            },
+            {
+              "vnum": 40839,
+              "count": 2
+            },
+            {
+              "vnum": 40842,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_METIN",
+              "value": 3
+            }
+          ],
+          "cost": 150000000,
+          "prob": 60,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 2
+            },
+            {
+              "vnum": 40841,
+              "count": 120
+            },
+            {
+              "vnum": 40839,
+              "count": 3
+            },
+            {
+              "vnum": 40842,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_METIN",
+              "value": 4
+            }
+          ],
+          "cost": 175000000,
+          "prob": 55,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 3
+            },
+            {
+              "vnum": 40841,
+              "count": 100
+            },
+            {
+              "vnum": 40839,
+              "count": 3
+            },
+            {
+              "vnum": 40842,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_METIN",
+              "value": 5
+            }
+          ],
+          "cost": 200000000,
+          "prob": 50,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 4
+            },
+            {
+              "vnum": 40841,
+              "count": 150
+            },
+            {
+              "vnum": 40845,
+              "count": 1
+            },
+            {
+              "vnum": 40945,
+              "count": 1
+            },
+            {
+              "vnum": 40944,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_METIN",
+              "value": 6
+            }
+          ],
+          "cost": 225000000,
+          "prob": 45,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 4
+            },
+            {
+              "vnum": 40846,
+              "count": 2
+            },
+            {
+              "vnum": 40845,
+              "count": 2
+            },
+            {
+              "vnum": 40945,
+              "count": 2
+            },
+            {
+              "vnum": 40944,
+              "count": 2
+            }
+          ]
+        },
+        {
+          "rank": 7,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_METIN",
+              "value": 7
+            }
+          ],
+          "cost": 250000000,
+          "prob": 40,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40846,
+              "count": 3
+            },
+            {
+              "vnum": 40845,
+              "count": 3
+            },
+            {
+              "vnum": 40945,
+              "count": 3
+            },
+            {
+              "vnum": 40944,
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 8,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_METIN",
+              "value": 8
+            }
+          ],
+          "cost": 300000000,
+          "prob": 35,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40846,
+              "count": 3
+            },
+            {
+              "vnum": 40845,
+              "count": 3
+            },
+            {
+              "vnum": 40945,
+              "count": 3
+            },
+            {
+              "vnum": 40944,
+              "count": 3
+            }
+          ]
+        },
+        {
+          "rank": 9,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_METIN",
+              "value": 9
+            }
+          ],
+          "cost": 325000000,
+          "prob": 30,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40846,
+              "count": 4
+            },
+            {
+              "vnum": 40845,
+              "count": 4
+            },
+            {
+              "vnum": 40945,
+              "count": 4
+            },
+            {
+              "vnum": 40944,
+              "count": 4
+            }
+          ]
+        },
+        {
+          "rank": 10,
+          "bonuses": [
+            {
+              "apply": "ATTBONUS_METIN",
+              "value": 10
+            }
+          ],
+          "cost": 350000000,
+          "prob": 25,
+          "blessing": 3,
+          "materials": [
+            {
+              "vnum": 40218,
+              "count": 5
+            },
+            {
+              "vnum": 40846,
+              "count": 5
+            },
+            {
+              "vnum": 40845,
+              "count": 5
+            },
+            {
+              "vnum": 40945,
+              "count": 5
+            },
+            {
+              "vnum": 40944,
+              "count": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

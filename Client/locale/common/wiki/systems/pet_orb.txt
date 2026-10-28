@@ -1,0 +1,57 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=pvp_pet_orb_overview;\
+    TEXT_1={WK:1};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=116;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=94965;\
+    TEXT_1=The Pet Orb PvP permanently converts a growth pet into a PvP-focused pet.\nTo use it, drag the orb onto an unequipped growth pet seal.\nOnce converted, the pet cannot be changed back.;\
+    Y_PADDING=10;\
+]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=193;\
+    ANCHOR=pvp_pet_orb_bonuses;\
+    TEXT_1={WK:20};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=243; TABLE_HEADERS=Bonuses; TABLE_WIDTHS=520]
+[TR; H=32]
+[TD; TEXT={WK:354}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:355}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:356}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:357}; ALIGN=center]
+[TR; H=32]
+[TD; TEXT={WK:358}; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=405; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=59]
+[TD; TEXT={WK:359}; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=515;\
+    ANCHOR=focused_pet_reading;\
+    TEXT_1=Focused Pet Reading;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=565;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=94966;\
+    TEXT_1={WK:360};\
+    Y_PADDING=10;\
+]

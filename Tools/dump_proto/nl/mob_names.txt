@@ -1,0 +1,3167 @@
+VNUM	LOCALE_NAME
+101	Wilde Hond
+102	Wolf
+103	Alfa Wolf
+104	Blauwe Wolf
+105	Alfa Blauwe Wolf
+106	Grijze Wolf
+107	Alfa Grijze Wolf
+108	Wild Zwijn
+109	Rood Wild Zwijn
+110	Beer
+111	Grizzly Beer
+112	Zwarte Beer
+113	Bruine Beer
+114	Tijger
+115	Witte Tijger
+131	Vervloekte Wolf
+132	Vervloekte Alfa Wolf
+133	Vervloekte Blauwe Wolf
+134	Vervloekte Bl. Alfa Wolf
+135	Vervloekte Grijze Wolf
+136	Vervloekte Gr. Alfa Wolf
+137	Vervloekt Wild Zwijn
+138	Verv. Rood Wild Zwijn
+139	Vervloekte Beer
+140	Vervloekte Grizzly Beer
+141	Vervloekte Zwarte Beer
+142	Vervloekte Bruine Beer
+143	Vervloekte Tijger
+144	Vervloekte Witte Tijger
+151	Cung-Mok
+152	Mu-Rang
+153	Jug-Hyul
+154	Young-Ji
+155	Li-An
+171	Hongerige Straat Hond
+172	Hongerige Wolf
+173	Hongerige Alfa Wolf
+174	Hongerige Blauwe Wolf
+175	Hon. Alfa  Blauwe Wolf
+176	Hongerige Grijze Wolf
+177	Hong. Alfa Grijze Wolf
+178	Hongerig Wild Zwijn
+179	Hong. Rood Wild  Zwijn
+180	Hongerige Beer
+181	Hongerige Grizzly
+182	Hongerige Zwarte Beer
+183	Hongerige Bruine Beer
+184	Hongerige Tijger
+185	Hongerige Witte Tijger
+191	Lykos
+192	Scrofa
+193	Bera
+194	Tigris
+301	Witte Eed Soldaat
+302	Witte Eed Boogschutter
+303	Witte Eed Generaal
+304	Witte Eed Commandant
+331	Witte Eed Soldaat
+332	Witte Eed Boogschutter
+333	Witte Eed Generaal
+334	Witte Eed Commandant
+351	Slap Witte Eed Soldaat
+352	Slap W.  Eed B.Schutter
+353	Slap Witte Eed Generaal
+354	Slap W. Eed Commandant
+391	Mi-Jung
+392	Eun-Jung
+393	Se-Rang
+394	Jin-Hee
+395	Moedloze Mi-Jung
+396	Moedloze Eun-Jung
+397	Moedloze Se-Rang
+398	Moedloze Jin-Hee
+401	Zwarte Wind Soldaat
+402	Zwarte Wind Maniak
+403	Zwarte Wind Boogschutter
+404	Zwarte Wind Jak-To
+405	Zwarte Wind To-Su
+406	Zwarte Wind Gu-Ryung
+431	Zwarte Storm Soldaat
+432	Zwarte Storm Maniak
+433	Zwarte Storm B.schutter
+434	Zwarte Storm Joh-Hwan
+435	Zwarte Storm Kyuk-Jang
+436	Zwarte Storm Pho-Hwan
+451	Gem. Zw. Storm Soldaat
+452	Gem Zw. Storm Maniak
+453	Gem Zw. Storm B.schutter
+454	Gem. Zw. Storm Joh-Hwa
+455	Gem. Zw. Storm Kyuk-Ja
+456	Gem. Zw. Storm Pho-Hwa
+491	Mahon
+492	Bo
+493	Goo-Pae
+494	Chuong
+501	Wilde Infanterist
+502	Wilde Dienaar
+503	Wilde Boogschutter
+504	Wilde Generaal
+531	Brute Soldaat
+532	Brute Maniak
+533	Brute Boogschutter
+534	Brute Specialist
+551	Brute Wilde Infanterist
+552	Brute Wilde Dienaar
+553	Brute Wilde B.schutter
+554	Brute Wilde Generaal
+591	Brute Kapitein
+595	Brute Geum-Chul
+601	Ork
+602	Ork Verkenner
+603	Ork Krijger
+604	Ork Tovenaar
+631	Elite Ork
+632	Elite Ork Verkenner
+633	Elite Ork Krijger
+634	Elite Ork Tovenaar
+635	Elite Ork Generaal
+636	Zwarte Ork
+637	Zwart Ork Reus
+651	Brutale Grote Ork
+652	Brut. Gr. Ork Verkenner
+653	Brutale Gr. Ork Krijger
+654	Brutale Gr. Ork Tovenaar
+655	Brutale Gr. Ork Generaal
+656	Brutale Zwarte Ork
+657	Brutale Zwarte Ork Reus
+691	Ork Aanvoerder
+692	Elite Ork Aanvoerder
+693	Herboren Ork Aanvoerder
+701	Donkere Fanaticus
+702	Donkere Arahan
+703	Arahan krijger
+704	Arahan stamhoofd
+705	Esoterisch Beul
+706	Donkere Martelaar
+707	Donkere Oproeper
+731	Trotse Donkere Fanaticus
+732	Trotse Donker Arahan
+733	Trotse Donker Krijger
+734	Trotse Donker Kolonel
+735	Tr. Donker Geweerman
+736	El. Esot. Martelaar
+737	El. Eso. Oproeper
+751	Hoog Fanaticus
+752	Hoog Arahan
+753	Hoog Arahan Krijger
+754	Hoog Elite Arahan
+755	Hoog Doodsman
+756	Hoog Martelaar
+757	Hoog Gezworene
+771	Brute Fanaticus
+772	Brute Arahan
+773	Brute Arahan Krijger
+774	Brute Arahan Aanvoerder
+775	Brute Doodsman
+776	Brute Martelaar
+777	Brute Gezworene
+791	Donkere Leider
+792	Donkere Spook Leider
+793	Elite Donker Leider
+794	El. Donker Spook Leider
+795	Elite Krijger
+796	El. Esoterisch Krijger
+901	Dood Lichaam Spook
+902	Zieke Hond
+903	Zieke Man
+904	Zieke Zwaardman
+905	Zieke Speerman
+906	Zieke Boogschutter
+907	Zieke Leider
+931	Boze Dood Lichaam Spook
+932	Boze Zieke Hond
+933	Boze Zieke Man
+934	Boze Zieke Krijger
+935	Boze Zieke Speerman
+936	Boze Zieke Boogschutter
+937	Boze Zieke Leider
+991	Ziek Ei
+992	Pest Drager
+993	Reuze Pest Drager
+1001	Demon Soldaat
+1002	Demon Boogschutter
+1003	Demon Speerman
+1004	Demon Sjamaan
+1031	Slinks Demon Soldaat
+1032	Slinks Demon Boogsch.
+1033	Slinks Demon Speerman
+1034	Slinks Demon Sjamaan
+1035	Wrok Spook
+1036	Chaos Spook
+1037	Slinks Demon Leider
+1038	Schedel Zwaard Meester
+1039	Vliegend Schedel
+1040	Onsterfelijk Spook
+1041	Demonisch Beest
+1061	Brute Demon Soldaat
+1062	Brute Demon Boogsch.
+1063	Brute Demon Speerman
+1064	Brute Demon Sjamaan
+1065	Brute Wrok Spook
+1066	Brute Chaos Spook
+1067	Brute Demon Leider
+1068	Spook Zwaard Meester
+1069	Brute Vliegende Schedel
+1070	Onsterfelijk Spook
+1071	Demonisch Beest
+1091	Demonen Koning
+1092	Trotse Demon Koning
+1093	Man met de Zeis
+1094	El. Slinkse Dem. Koning
+1095	Blauwe Dood
+1096	Áø»ç±Í¿Õ
+1101	Betoverd IJs
+1102	IJs Walvis
+1103	IJs Kever
+1104	IJs Leeuw
+1105	Bevroren IJs Man
+1106	Yeti
+1107	IJs Golem
+1108	IJs Golem
+1131	Onderwereld IJs Splinter
+1132	Onderwereld IJswalvis
+1133	Onderwereld IJs Kever
+1134	Onderwereld IJsleeuw
+1135	Onderwereld IJsman
+1136	Onderwereld Yeti
+1137	Onderwereld IJsgolem
+1138	Onderwereld IJsgolem
+1151	IJs Duivel
+1152	IJshoorn Walvis
+1153	IJs Insect
+1154	Seol-Gu
+1155	IJsman
+1156	IJs Reus
+1157	IJs Golem
+1171	Gemeen Betoverd IJs
+1172	Gem. IJshoorn Walvis
+1173	Gemene IJs Kever
+1174	Gemene IJs Leeuw
+1175	Gemene IJsman
+1176	Gemene Yeti
+1177	Gemene IJs Golem
+1191	IJs Heks
+1192	Machtige IJs Heks
+1301	Boom Kikker Soldaat
+1302	Boom Kikker Leider
+1303	Boeman
+1304	Gele Tijger Spook
+1305	Brul Kikker Generaal
+1306	Elite Gele Tijger Spook
+1307	Elite Gele Tijger Spook
+1308	Elite Gele Tijger Spook
+1309	Elite Gele Tijger Spook
+1310	Elite Gele Tijger Spook
+1331	Gr. Boom Kikker Soldaat
+1332	Gr. Boom Kikker Leider
+1333	Grote Boeman
+1334	Gr. Gele Tijger Spook
+1335	Slechte Brulk. Generaal
+1336	Brulkikker Generaal
+1401	Sloper
+1402	Bijl Vechter
+1403	Duizend Vechter
+1501	Steen Golem
+1502	Steen Breker
+1503	Reuze Steen Golem
+1601	Mormel Krijger
+1602	Mormel Slager
+1603	Mormel Waanzinnige
+1901	Negen Staarten
+1902	Elite Negen Staarten
+1903	Elite Negen Staarten
+1904	Elite Negen Staarten
+1905	Elite Negen Staarten
+1906	Elite Negen Staarten
+2001	Baby Spin
+2002	Gif Spin
+2003	Rode Gif Spin
+2004	Klauw Spin
+2005	Spin Soldaat
+2031	Baby Gif Spin
+2032	Fatale Gif Spin
+2033	Rode Boze Gif Spin
+2034	Klauw Gif Spin
+2035	Soldaat Gif Spin
+2036	Trotse Soldaat Spin
+2037	Gifspin Soldaat
+2051	Gemene Baby Gif Spin
+2052	Gemene Fat. Gif Spin
+2053	Gemene Rode Gif Spin
+2054	Gemene Klauw Gif Spin
+2055	Gemene Soldaat Gif Spin
+2061	Kleine Gif Spin
+2062	Fatale Gif Spin
+2063	Rode Fatale Gif Spin
+2064	Klauw Gif Spin
+2065	Soldaat Gif Spin
+2071	Brute Baby Gif Spin
+2072	Brute Fatale Gif Spin
+2073	Brute Rode Gif Spin
+2074	Brute Klauw Gif Spin
+2075	Brutale Soldaat Gif Spin
+2076	Brute St. Gif Spin
+2091	Spinnenkoningin
+2092	Spinnenbarones
+2093	Donker Spinnenkoningin
+2094	Spinnenbaron
+2095	Spinnenei
+2101	Woestijn Vos
+2102	Woestijn Vliegend Oog
+2103	Schorpioenenkoning
+2104	Jonge Schorpioen Man
+2105	Schorpioen Boogschutter
+2106	Slang Zwaardman
+2107	Slang Boogschutter
+2108	Woestijn Bandiet
+2131	Beest. Schorpioen Man
+2132	Schorpioen Boogschutter
+2133	Slang Zwaardman
+2134	Slang Boogschutter
+2135	Woestijn Bandiet
+2151	Sterke Woestijn Vos
+2152	Sterke Derwisj
+2153	Strk. Schorpioenenkoning
+2154	Sterke Schorpioen Man
+2155	St.Schorpioen B.schutter
+2156	Sterke Slang Zwaardman
+2157	St. Slang Boogschutter
+2158	Sterke Woestijn Bandiet
+2191	Reuzen Schildpad
+2192	Donker Reuze Schildpad
+2201	Vechtende Tijger Dienaar
+2202	Vlam Spook
+2203	Vechtende Tijger
+2204	Vlam
+2205	Vlam Krijger
+2206	Vlammenkoning
+2207	Donkere Vlammenkoning
+2231	St. Vech. Tijger Dienaar
+2232	Sterke Vlamspook
+2233	Sterke Vechtende Tijger
+2234	Sterke Vlam
+2235	Sterle Vlam Krijger
+2291	Rode Draak
+2301	Spook Boom
+2302	Spook Stomp
+2303	Dryad
+2304	Spook Wilg
+2305	Boosaardige Boom
+2306	Reuze Spook Boom
+2307	Spook Boom Meester
+2311	Rode Spook Boom
+2312	Rode Spook Stomp
+2313	Rode Dryad
+2314	Rode Spook Wilg
+2315	Rode Boosaardige Boom
+2401	Setaou Vechter
+2402	Setaou Jager
+2403	Setaou Geestelijke
+2404	Setaou Leider
+2411	Setaou Soldaat
+2412	Setaou Boogschutter
+2413	Setaou Magistraat
+2414	Setaou Commandant
+2415	Setaou Commandant
+2431	Setaou Vechter
+2432	Setaou Jager
+2433	Setaou Geestelijke
+2434	Setaou Leider
+2451	Setaou Soldaat
+2452	Setaou Boogschutter
+2453	Setaou Magistraat
+2454	Setaou Commandant
+2491	Kapitein Yonghan
+2492	Generaal Yonghan
+2493	Beran-Setaou
+2494	Kapitein Huashin
+2495	Generaal Huashin
+2501	Kwal van Hel
+2502	Helhond
+2503	Zombie
+2504	Hel Officier
+2505	Hel Wachter
+2506	Dubbelhoofd Hel Schutter
+2507	Helse Klauw
+2508	Hel Krijger
+2509	Hel Boogschutter
+2510	Hel Speerman
+2511	Hel Priester
+2512	Hel Majoor
+2513	Hel Slachter
+2514	Hel Generaal
+2541	Kwaadwillige Hel Krijger
+2542	Boze Helleboogschutter
+2543	Kwaadwillig Hel Speerman
+2544	Kwaadwillig Hel Priester
+2545	Kwaadwillige Hel Majoor
+2546	Kwaadwillig Hel Slachter
+2547	Kwaadwillig Hel Generaal
+2591	Tartaros
+2592	Hellebruut
+2593	Hellebruut
+2594	Hellebruut
+2595	Erebos
+2596	Azrael's Nageslacht
+2597	Charon
+2598	Azrael
+2600	Zodiac Wolf
+2601	Zodiac Blauwe Wolf
+2602	Zodiac Lykos
+2603	Zodiac Boogschutter
+2604	Zodiac Wild Zwijn
+2605	Rood Zodiac Wild Zwijn
+2606	Zodiac Scrofa
+2607	Zodiac Mi-Jung
+2608	Zodiac Bera
+2609	Zodiac Beer
+2610	Zodiac Grizzly Beer
+2611	Zodiac Bruine Beer
+2612	Zodiac Eun-Jung
+2613	Zodiac Tigris
+2614	Zodiac Tijger
+2615	Witte Zodiac Tijger
+2616	Zodiac Se-Rang
+2617	Zodiac Jin-Hee
+2618	Zodiac Baby Spin
+2619	Zodiac Gif Spin
+2620	Rode Zodiac Gif Spin
+2621	Zodiac Klauw Spin
+2622	Zodiac Soldaat Spin
+2623	Zodiac Vlamspook
+2624	Zodiac Vechtende Tijger
+2625	Zodiac Vlam
+2626	Zodiac Vlamkrijger
+2627	Zodiac Vlammenkoning
+2628	Donkere Zodiac Vlammenk.
+2629	Wilde Zodiac Infanterist
+2630	Wilde Zodiac Dienaar
+2631	Wilde Zodiac Boogsch.
+2632	Wilde Zodiac Generaal
+2633	Brute Zodiac Kapitein
+2634	Betoverd Zodiac IJs
+2635	Zodiac IJs Walvis
+2636	Zodiac IJs Kever
+2637	Zodiac IJs Leeuw
+2638	Frosty Zodiac IJsman
+2639	Zodiac Yeti
+2640	Zodiac IJs Golem
+2641	Zodiac Woestijn Vos
+2642	Zodiac Schorpioenenk.
+2643	Zodiac Slang Zwaardman
+2644	Zodiac Slang Boogsch.
+2645	Zodiac Woestijn Bandiet
+2646	Zodiac Zw. Wind Soldaat
+2647	Zodiac Zw. Wind Maniak
+2648	Zodiac Zw. Wind Boogsch.
+2649	Zodiac Mahon
+2650	Zodiac Bo
+2651	Zodiac Goo-Pae
+2652	Zodiac Chuong
+2653	Brute Zodiac Schorpioen.
+2654	Zodiac Schorpioen Boog.
+2655	Zodiac Derwisj
+2656	Zodiac Boom Kikker Sold.
+2657	Zodiac Boom Kikker Leid.
+2658	Zodiac Boeman
+2659	Zodiac Vernietiger
+2660	Zodiac Bijl Vechter
+2661	Zodiac Duizend Vechter
+2662	Donkere Zodiac Fanaticus
+2663	Zodiac Arahan
+2664	Esoterische Zodiac Arah.
+2665	Eso. Zodiac Arahan Aanv.
+2666	Donkere Zodiac Beul
+2667	Donkere Zodiac Martelaar
+2668	Zodiac Oproeper
+2669	Elite Zodiac Ork
+2670	Elite Zodiac Ork Verk.
+2671	Elite Zodiac Ork Vechter
+2672	El. Zodiac Ork Tovenaar
+2673	El. Zodiac Ork Generaal
+2674	Zwarte Zodiac Ork
+2675	Zwarte Zodiac Ork Reus
+2676	Zodiac Rode Dief Amazone
+2677	Zodiac Rode Dief Moord.
+2678	Zodiac Rode Dief Magiër
+2679	Zodiac Rode Dief Beul
+2680	Zodiac Krab Krijger
+2681	Zodiac Schorpioen Scherp
+2682	Zodiac Garnaal Soldaat
+2683	Zodiac Duivelse Hermiet
+2684	Zodiac Gepantserde Krab
+2685	Zodiac Gigantische Bijt.
+2686	Gig. Zodiac Slachter
+2687	Zodiac Magiër
+2688	Zodiac Tweus
+2689	Zodiac Oger Beul
+2690	Zodiac Oger Boogsch.
+2691	Zodiac Knok Oger
+2692	Zodiac Oger Magiër
+2700	Vargulf
+2701	Vargulf Soldaat
+2702	Vargulf Generaal
+2703	Cerberus
+2704	Slang Cerberus
+2705	Draak Cerberus
+2706	Centaurus
+2707	Centauren Krijger
+2708	Centauren Generaal
+2709	Moloch
+2710	Moloch Krijger
+2711	Moloch Generaal
+2712	Doodsvleugel
+2713	Zieke Doodsvleugel
+2714	Zwakke Doodsvleugel
+2715	Zephyr
+2716	Zephyr Krijger
+2717	Zephyr Generaal
+2718	Uruk
+2719	Uruk Krijger
+2720	Uruk Generaal
+2721	Carnifant
+2722	Carnifant Krijger
+2723	Carnifant Generaal
+2724	Spartaan
+2725	Spartaanse Soldaat
+2726	Spartaanse Generaal
+2727	Botten Gladiator
+2728	Botten Gladiator Soldaat
+2729	Bot. Gladiator Generaal
+2730	Scarabaeus Sagittarius
+2731	Scarabaeus Gigantus
+2732	Scarabaeus Virgo
+2733	IJzeren Boogschutter
+2734	IJzeren Krijger
+2735	IJzeren Generaal
+2736	Vluchteling
+2737	Damage_Trap
+2750	Zi Officier
+2751	Zi Wachter
+2752	Zi Generaal
+2760	Chou Officier
+2761	Chou Wachter
+2762	Chou Generaal
+2770	Yin Officier
+2771	Yin Wachter
+2772	Yin Generaal
+2780	Mao Officier
+2781	Mao Wachter
+2782	Mao Generaal
+2790	Chen Officier
+2791	Chen Wachter
+2792	Chen Generaal
+2800	Si Officier
+2801	Si Wachter
+2802	Si Generaal
+2810	Wu Officier
+2811	Wu Wachter
+2812	Wu Generaal
+2820	Wei Officier
+2821	Wei Wachter
+2822	Wei Generaal
+2830	Shen Officier
+2831	Shen Wachter
+2832	Shen Generaal
+2840	You Officier
+2841	You Wachter
+2842	You Generaal
+2850	Xu Officier
+2851	Xu Wachter
+2852	Xu Generaal
+2860	Hai Officier
+2861	Hai Wachter
+2862	Hai Generaal
+2900	Metin van de Rat
+2901	Metin van de Os
+2902	Metin van de Tijger
+2903	Metin van de Draak
+2904	Metin van de Slang
+2905	Metin van het Paard
+2906	Metin van de Geit
+2907	Metin van de Aap
+2908	Metin van de Hond
+3001	Gnol Krijger
+3002	Gnol Boogschutter
+3003	Gnol Verdediger
+3004	Gnol Magier
+3005	Gnol Generaal
+3090	Gnol Heerser
+3091	Opperste Gnol Wachter
+3101	Één-oog Mepper
+3102	Cycloop soldaat
+3103	Cycloop Magier
+3104	Cycloop Beul
+3105	Generaal Outis
+3190	Arges
+3191	Polyphemos
+3201	Manticore Krijger
+3202	Manticore Soldaat
+3203	Manticore Magier
+3204	Manticore Beul
+3205	Generaal Cor
+3290	Rakshasa
+3291	Martyaxwar
+3301	Lemure Krijger
+3302	Lemure Soldaat
+3303	Lemure Magier
+3304	Lemure Beul
+3305	Lemure Generaal
+3390	Lemure Prins
+3391	Lemure Lijfwachter
+3401	Tritoniaanse Moray
+3402	Haai soldaat
+3403	Tritoniaanse Magier
+3404	Tritoniaanse Jager
+3405	Tritoniaanse hakker
+3490	Generaal Kappa
+3491	Triton
+3501	Rode Dief Amazone
+3502	Rode Dief Moordenaar
+3503	Rode Dief Magier
+3504	Rode Dief Beul
+3505	Zwarte Generaal
+3551	Brutale R. Dief Amazone
+3552	Brut. R. Dief Moordenaar
+3553	Brutale Rode Dief Magier
+3554	Brutale Rode Dief Beul
+3555	Witte Generaal
+3590	Bot Gezicht
+3591	Rode Leider
+3595	Brutale Bot Gezicht
+3596	Brutale Rode Leider
+3601	Krab Krijger
+3602	Schorp. Scherpschutter
+3603	Garnaal Soldaat
+3604	Duivelse Hermiet
+3605	Gepantserde Krab
+3690	Generaal Kreeft
+3691	Koning Krab
+3701	Gigantische Bijter
+3702	Gigantische Slachter
+3703	Gigantische Magier
+3704	Tweus
+3705	Kapitein Haken
+3790	Waterspuwer
+3791	Koning Wubba
+3801	Hangork
+3802	Boogje Oger
+3803	Knok Oger
+3804	Oger Magier
+3805	Generaal og
+3890	Kapitein Shruk
+3891	De Grote Oger
+3901	Wilgenman
+3902	Eoten
+3903	Skouman
+3904	Kapitein Haken
+3905	Mu-Shu
+3906	Yah-Ki
+3907	Moghu
+3908	Carnifex
+3909	Generaal Albus
+3910	Skeletos
+3911	Aku-Boku
+3912	Arboretum
+3913	Sycomor
+3949	Portaal: Nieuw Continent
+3950	Kappa
+3951	Lagune Kappa
+3952	Diepzee Kappa
+3953	Kappa Leider
+3954	Murene Soldaat
+3955	Diepzee Murene Soldaat
+3956	Sirene Koningin
+3957	Hydra's Gebroed
+3958	Hydra's Gebroed
+3959	Hydra's Gebroed
+3960	Hydra
+3961	Hydra
+3962	Hydra
+3963	Hydra
+3964	Hydra
+3965	Hydra's Schat
+3970	
+3971	Noordewind Kristal
+3972	NoordewindDiept 415 136
+3973	NoordewindDiept 94 139
+3974	
+3980	Vuur Element
+3981	IJs Element
+3982	Klein Bliksem Element
+3983	Wind Element
+3984	Aarde Element
+3985	Duisternis Element
+3986	Vlam Geest
+3987	Vorst Geest
+3988	Elektrische Geest
+3989	Lucht Geest
+3990	Steen Geest
+3991	Schaduw Geest
+3992	Schroei Heer
+3993	Gletsjer Heer
+3994	Donder Heer
+3995	Storm Heer
+3996	Terra Heer
+3997	Nacht Heer
+3998	Elementale Rijk
+3999	Verlaten
+4000	Metin van Vuur
+4001	Metin van IJs
+4002	Metin van Bliksem
+4003	Metin van de Wind
+4004	Metin van Aarde
+4005	Metin van Nacht
+4006	Elementale Wachter
+4019	Toren Entreehal
+4020	Sung Mahi's Hellentoren
+4021	Toren Zegel
+4022	Serpententempel Portaal
+4023	Niveau veranderen
+4024	Serpentenhoofd
+4025	Serpentenhoofd
+4026	Serpentenhoofd
+4027	Serpentenhoofd
+4030	Wit Drakenei
+4031	Enigma Tempel
+4032	Enigma Tempel verlaten
+4033	Enigma Tempel (bouwen)
+4034	Enigma Tempel (herh.)
+4035	Enigma Portaal
+4153	Asmodeus
+4154	Afgezant van Aarde
+4155	Afgezant van Aarde
+4156	Afgezant van Nacht
+4157	Afgezant van Donder
+4158	Afgezant van Lucht
+4159	Verdoemenis Vechter
+4160	Verdoemenis Magiër
+4161	Afgezant des Doods
+4162	Afgezant van Verlossing
+4200	TS: Setaou Vechter
+4201	TS: Setaou Jager
+4202	TS: Setaou Geestelijke
+4203	TS: Setaou Soldaat
+4204	TS: Setaou Boogschutter
+4205	TS: Setaou Magistraat
+4206	TS: Setaou Commandant
+4207	TS: Kapitein Yonghan
+4208	TS: Kapitein Yonghan
+4209	TS: Generaal Yonghan
+4210	TS: Generaal Yonghan
+4220	TS: Sintel Vlamspook
+4221	TS: Sintel Vlamtijger
+4222	TS: Sintel Vlam
+4223	TS: Sintel Vlamkrijger
+4224	TS: Sintel Vlammenkoning
+4225	TS: Sintel Vlamtrol
+4226	TS: Sintel Vlambaard
+4227	TS: Sintel Vlamgeneraal
+4228	TS: Sintel Vlamleider
+4229	TS: Ignator
+4240	TS: Vries Kristal
+4241	TS: Vries Kever
+4242	TS: Vries Man
+4243	TS: Vries Yeti
+4244	TS: Vries Golem
+4245	TS: Vries Trol
+4246	TS: Vries Baard
+4247	TS: Vries Generaal
+4248	TS: Vries Heer
+4249	TS: Szel
+4260	TS: En-Tai Krijger
+4261	TS: En-Tai Soldaat
+4262	TS: En-Tai Druïde
+4263	TS: En-Tai Genezer
+4264	TS: En-Tai Vernietiger
+4265	TS: En-Tai Heerser
+4266	TS: Ochao Genezer
+4267	TS: En-Tai Krijger
+4268	TS: En-Tai Soldaat
+4269	TS: En-Tai Druïde
+4270	TS: En-Tai Genezer
+4271	TS: En-Tai Vernietiger
+4272	TS: Bagjanamu
+4273	TS: Ochao Soldaat
+4274	TS: Ochao Magiër
+4275	TS: Ochao Beul
+4276	TS: Ochao Generaal
+4280	RX: Setaou Vechter
+4281	RX: Setaou Jager
+4282	RX: Setaou Geestelijke
+4283	RX: Setaou Soldaat
+4284	RX: Setaou Boogschutter
+4285	RX: Setaou Magistraat
+4286	RX: Setaou Commandant
+4287	RX: Kapitein Yonghan
+4288	RX: Kapitein Yonghan
+4289	RX: Generaal Yonghan
+4290	RX: Generaal Yonghan
+4300	RX: Sintel Vlamspook
+4301	RX: Sintel Vlamtijger
+4302	RX: Sintel Vlam
+4303	RX: Sintel Vlamkrijger
+4304	RX: Sintel Vlammenkoning
+4305	RX: Sintel Vlamtrol
+4306	RX: Sintel Vlambaard
+4307	RX: Sintel Vlamgeneraal
+4308	RX: Sintel Vlamleider
+4309	RX: Ignator
+4320	RX: Vries Kristal
+4321	RX: Vries Kever
+4322	RX: Vries Man
+4323	RX: Vries Yeti
+4324	RX: Vries Golem
+4325	RX: Vries Trol
+4326	RX: Vries Baard
+4327	RX: Vries Generaal
+4328	RX: Vries Heer
+4329	RX: Szel
+4340	RX: En-Tai Krijger
+4341	RX: En-Tai Soldaat
+4342	RX: En-Tai Druïde
+4343	RX: En-Tai Genezer
+4344	RX: En-Tai Vernietiger
+4345	RX: En-Tai Heerser
+4346	RX: Ochao Genezer
+4347	RX: En-Tai Krijger
+4348	RX: En-Tai Soldaat
+4349	RX: En-Tai Druïde
+4350	RX: En-Tai Genezer
+4351	RX: En-Tai Vernietiger
+4352	RX: Bagjanamu
+4353	RX: Ochao Soldaat
+4354	RX: Ochao Magiër
+4355	RX: Ochao Beul
+4356	RX: Ochao Generaal
+4400	TS: Beran-Setaou
+4401	TS: Razador
+4402	TS: Nemere
+4403	TS: Jotun Thrym
+4410	RX: Beran-Setaou
+4411	RX: Razador
+4412	RX: Nemere
+4413	RX: Jotun Thrym
+4420	W: En-Tai Krijger
+4421	W: En-Tai Soldaat
+4422	W: En-Tai Druïde
+4423	W: En-Tai Genezer
+4424	W: En-Tai Vernietiger
+4429	W: Bagjanamu
+4430	W: Gnol Boogschutter
+4431	W: Cycloop Soldaat
+4432	W: Cycloop Magiër
+4433	W: Cycloop Beul
+4434	W: Generaal Outis
+4439	W: Polyphemos
+4440	W: Hel Boogschutter
+4441	W: Hel Speerman
+4442	W: Hel Priester
+4443	W: Hel Majoor
+4444	W: Hel Generaal
+4449	W: Azrael
+4450	W: Gr. Boom Kikker Sold.
+4451	W: Boom Kikker Leider
+4452	W: Boeman
+4453	W: E. Gele Tijger Spook
+4454	W: Brul Kikker Generaal
+4459	W: Gele Tijger Spook
+4460	W: Sintel Vlamspook
+4461	W: Sintel Vlamtijger
+4462	W: Sintel Vlam
+4463	W: Sintel Vlamkrijger
+4464	W: Magma Kristal
+4469	W: Draken Kijker Idall
+4470	W: Hangork
+4471	W: Boogje Oger
+4472	W: Knok Oger
+4473	W: Oger Magiër
+4474	W: Generaal Ogg
+4479	W: De Grote Oger
+4500	Enigma Metin
+4501	Krijger
+4502	Sura
+4503	Ninja
+4504	Sjamaan
+4505	Lycaan
+4506	Enigma Generaal
+4601	Gildeboogschutter
+4602	Gildemagiër
+4603	Gildekrijger
+4690	Heer van de Strijd
+5001	Piraat Tanaka
+5002	Hae-Tae
+5003	Aap
+5004	Piraat Tanaka
+5101	Zwakke Aap Soldaat
+5102	Zwakke Aap Gooier
+5103	Zwakke Aap Vechter
+5104	Zwakke Aap Generaal
+5111	Aap Soldaat
+5112	Aap Gooier
+5113	Aap Vechter
+5114	Aap Generaal
+5115	Steen Aap
+5116	Aap Leider
+5121	Sterke Aapsoldaat
+5122	Sterke aapgooier
+5123	Sterke Aap Vechter
+5124	Sterke Aap Generaal
+5125	Sterke Steen Aap
+5126	Sterke Goud Aap
+5127	Sterke Aap Leider
+5131	Slimme Kl. Aap Soldaat
+5132	Slimme Kl. Aap Gooier
+5133	Slimme Kl. Aap Vechter
+5134	Slimme Kl. Aap Generaal
+5141	Slimme Aap Soldaat
+5142	Slimme Aap Gooier
+5143	Slimme Aap Vechter
+5144	Slimme Aap Generaal
+5145	Slimme Steen Aap
+5146	Slimme Aap Leider
+5151	Gemene St, Aap Soldaat
+5152	Gem. St. Aap Gooier
+5153	Gem. St. Aap Vechter
+5154	Gem. St. Aap Generaal
+5155	Gem. St. Steen Aap
+5156	Gem. St. Goud Aap
+5157	Gem. ST. Aap Leider
+5161	Rots Aap
+5162	Lopende Aap
+5163	Apen Heer
+5201	Wilde Hond
+5202	Wild Zwijn
+5203	Rood Wild Zwijn
+5204	Beer
+5205	Bruine Beer
+5206	Zwarte Beer
+5207	Hongerige Bruine Beer
+5208	Tijger
+5209	Witte Tijger
+6001	Sintel Vlamspook
+6002	Sintel Vlamtijger
+6003	Sintel Vlam
+6004	Sintel Vlamkrijger
+6005	Sintel Vlammenkoning
+6006	Sintel Vlamtrol
+6007	Sintel Vlambaard
+6008	Sintel Vlamgeneraal
+6009	Sintel Vlamleider
+6051	Ignator
+6091	Razador
+6101	Vries Kristal
+6102	Vries Kever
+6103	Vries Man
+6104	Vries Yeti
+6105	Vries Golem
+6106	Vries Trol
+6107	Vries Baard
+6108	Vries Generaal
+6109	Vries Heer
+6110	Magma Yeti
+6111	Magma Golem
+6112	Magma Kever
+6113	Magma Man
+6114	Magma Kristal
+6115	Magma Wyvern
+6116	Draken Kijker Idall
+6117	Idall's Dienaar
+6118	Draken Beeld
+6151	Szel
+6191	Nemere
+6192	Jotun Thrym
+6193	Draken Koningin Meley
+6201	Magma Yeti
+6202	Magma Golem
+6203	Magma Kever
+6204	Magma Man
+6205	Magma Kristal
+6206	Magma Wyvern
+6207	Draken Kijker Idall
+6209	Draken Beeld
+6301	Ochao Krijger
+6302	Ochao Soldaat
+6303	Ochao Magiër
+6304	Ochao Beul
+6305	Ochao Generaal
+6306	Sterke Ochao Krijger
+6307	Sterke Ochao Soldaat
+6308	Sterke Ochao Magiër
+6309	Sterke Ochao Beul
+6310	Sterke Ochao Generaal
+6391	Ochao Heer
+6392	Ochao Lijfwacht
+6393	Sterke Ochao Heer
+6394	Sterke Ochao Lijfwacht
+6401	En-Tai Krijger
+6402	En-Tai Soldaat
+6403	En-Tai Druïde
+6404	En-Tai Genezer
+6405	En-Tai Wachter
+6406	En-Tai Vernietiger
+6407	En-Tai Heerser
+6408	Bagjanamu
+6409	Ochao Genezer
+6410	Sterke En-Tai Krijger
+6411	Sterke En-Tai Soldaat
+6412	Sterke En-Tai Druïde
+6413	Sterke En-Tai Genezer
+6414	Sterke En-Tai Vernieler
+6415	Evenement Beran-Setaou
+6416	Evenement Nemere
+6417	Evenement Razador
+6418	Evenement Jotun Thrym
+6419	Evenement Rode Draak
+6420	Schaduw Krijger
+6421	Baahshido
+6422	Metin van Zielepijn
+6430	Brute Kapitein
+6431	Ork Aanvoerder
+6432	Negen Staarten
+6433	Machtige IJs Heks
+6434	Generaal Huashin
+6435	Nemere
+6436	Beran-Setaou
+6437	Razador
+6438	Jotun Thrym
+6439	Mysterieuze Monnik
+6500	Drakenkoning Akzadur
+6501	Drakenkoning Nafaroth
+6502	Drakenkoning Exedyar
+6503	Drakenkoning Ruilith
+6504	Tyolduran
+6513	Drakenportaal
+6514	Naar Drakenkoning
+6515	Verlaten
+6541	Hellehond Echo
+6542	Trol Soldaat Echo
+6543	Trol Krijger Echo
+6544	Trol Boogschutter Echo
+6545	Natanan's Echo
+6546	Argos' Echo
+6547	Portaal
+6686	Jin Bing
+6687	Soldaat Ki
+6688	Soldaat Mao
+6689	Soldaat Gong
+6690	Frontlinie Magiër
+6691	Kao
+6692	Koning Bao (Quest)
+6693	Jin Bing
+6694	Soldaat Ki
+6695	Soldaat Mao
+6696	Soldaat Gong
+6697	Frontlinie Magiër
+6698	Kao
+6699	Koning Bao
+6700	Helhond
+6701	Trol Soldaat
+6702	Trol Krijger
+6703	Trol Boogschutter
+6704	Trol Sjamaan
+6705	Natanan
+6706	Argos
+6707	Trol Soldaat
+6708	Trol Krijger
+6709	Trol Boogschutter
+6710	Mishandelde Geest
+6711	Helhond
+6712	Trol Soldaat
+6713	Trol Krijger
+6714	Trol Boogschutter
+6715	Trol Sjamaan
+6716	Natanan
+6717	Argos
+6718	Quag Kovix
+6719	Quag Werker
+6720	Quag Golem
+6721	Quag Krijger
+6722	Quag Tovenaar
+6723	Quag Veteraan
+6724	Quag Primus
+6725	Quag Kovix
+6726	Quag Werker
+6727	Quag Golem
+6728	Quag Krijger
+6729	Quag Tovenaar
+6730	Quag Veteraan
+6731	Quag Primus
+6744	Kappa Soldaat
+6745	Kappa Werker
+6746	Kappa Soldaat
+6747	Kappa Tovenaar
+6748	Kappa Jager
+6749	Machtige Kappa
+6750	Serpent Schorpioen
+6751	Serpent Werker
+6752	Serpent Kappa
+6753	Serpent Soldaat
+6754	Serpentascetisch
+6755	Machtige Serpent Krijger
+6756	Serpentenkoningin Nethis
+6757	Serpentenpilaar
+6758	Besmette Soldaat
+6759	Besmette Skirmisher
+6760	Besmette Krijger
+6761	Besmette Monnik
+6762	Bestmette Generaal
+6763	Besmette Leider
+6764	Besmette Oorlogsleider
+6765	Machtige Serpent Krijger
+6770	Bevroren Vos
+6771	Bevroren Verkenner
+6772	Bevroren Krijger
+6773	Bevroren Jager
+6774	Bevroren Generaal
+6775	Bevroren Leider
+6776	Bevroren Oorlogsleider
+6777	Razend Vorsthert
+6778	Razend Sneeuwluipaard
+6779	Noordewind Yeti
+6780	Noordewind Spook
+6781	Noordewind Golem
+6782	Bigfoot
+6783	Noordewind Oorlogsleider
+6784	Noordewind Sch. Soldaat
+6785	Schuilplaats Skirmisher
+6786	Noordewind Sch. Krijger
+6787	Noordewind Sch. Heksenm.
+6788	Noordewind Sch. Generaal
+6789	Noordewind Sch. Oorl. L.
+6790	Alastor
+6791	Alastor
+6792	Noordewind Sch. Soldaat
+6793	Schuilplaats Skirmisher
+6794	Noordewind Sch. Krijger
+6795	Noordewind Sch. Heksenm.
+6796	Noordewind Sch. Generaal
+6797	Noordewind Sch. Oorl. L.
+6800	Gnol Krijger
+6801	Gnol Verkenner
+6802	Gnol Tovenaar
+6803	Gnol Maarschalk
+6804	Gnol Meester
+6805	Gnol Kapitein
+6806	Gnol Soldaat
+6807	Gnol Spion
+6808	Gnol Magiër
+6809	Gnol Commandant
+6810	Ahtrin Krijger
+6811	Ahtrin Verkenner
+6812	Ahtrin Tovenaar
+6813	Ahtrin Commandant
+6814	Ahtrin Kapitein
+6815	Ahtrin Kapitein
+6816	Ahtrin Spion
+6817	Ahtrin Heksenmeester
+6818	Ahtrin Commandant
+6819	Ahtrin Meester
+6820	Ahtrin Grootmeester
+6850	Serpent Schorpioen
+6851	Serpent Werker
+6852	Serpent Kappa
+6853	Serpent Soldaat
+6854	Serpent Slager
+6855	Machtige Serpent Krijger
+6856	Serpentenkoningin Nethis
+6860	Zwaardvechter Jin
+6861	Speermeester Ki
+6862	Speermeester Mao
+6863	Boogschutter Gong
+6864	Zwaardvechter Kao
+6865	Zwaardvechter Jin
+6866	Speermeester Ki
+6867	Speermeester Mao
+6868	Boogschutter Gong
+6869	Zwaardvechter Kao
+6870	Mysterieuze Monnik
+6871	Mysterieuze Monnik
+6875	Besmette Soldaat
+6876	Besmette Skirmisher
+6877	Besmette Krijger
+6878	Besmette Monnik
+6879	Bestmette Generaal
+6880	Besmette Leider
+6881	Besmette Oorlogsleider
+6882	Zielloze Vos
+6883	Bevroren Verkenner
+6884	Bevroren Krijger
+6885	Bevroren Jager
+6886	Bevroren Generaal
+6887	Bevroren Leider
+6888	Bevroren Oorlogsleider
+6889	Vervloekt Vorsthert
+6890	Razend Sneeuwluipaard
+6891	Noordewind Yeti
+6892	Noordewind Spook
+6893	Noordewind Golem
+6894	Bigfoot
+6895	Noordewind Oorlogsleider
+6896	Balathor
+6897	Balathor
+6898	Spectrale Krijger
+6899	Spectrale Boogschutter
+6900	Spectrale Echo
+6901	Verloren Ridder
+6902	Verloren Krijger
+6903	Verloren Ziel
+6904	Verloren Banshee
+6905	Rogue Ridder
+6906	Rogue Krijger
+6907	Rogue Ziel
+6908	Rogue Banshee
+6909	Vermagerde Ridder
+6910	Vermagerde Krijger
+6911	Vermagerde Banshee
+6912	Wraakzuchtige Ridder
+6913	Wraakzuchtige Krijger
+6914	Wraakzuchtige Banshee
+6915	Gevallen Ridder
+6916	Gevallen Krijger
+6917	Gevallen Ziel
+6918	Gevallen Banshee
+6919	Azphirna
+6920	Nykos
+6921	Vervloekte Azphirna
+6922	Vervloekte Nykos
+6923	Vervloekte Zielenoogster
+6924	Schaduwbrenger
+6925	Duistere Ridder
+6926	Geslepen Schaduwdienaar
+6927	Wrede Schaduwdienaar
+6928	Sterke Schaduwdienaar
+6929	Duistere Magiër
+6930	Vermagerde Schaduwbr.
+6931	Vermagerde Duistere Rid.
+6932	Vermagerde Schaduwdien.
+6933	Woeste Schaduwdienaar
+6934	Verschrikk. Schaduwdien.
+6935	Vermagerde Magiër
+6936	Elite Duistere Ridder
+6937	Kalgaroth de Slachter
+6938	Nezerath
+6939	Aamon
+6940	Zonnescherf
+6941	Zonnescherf
+6942	Zonnescherf
+6943	Aamon
+6944	Voorteken van Hebzucht
+6945	Elite Schaduwbrenger
+6946	Albira's Zonnescherf
+6947	Gevangen Schaduwbrenger
+7001	Aap Soldaat
+7002	Aap Rijder
+7003	Gimu Aap Soldaat
+7004	Aap Commandant
+7005	Steen Aap
+7006	Goud Aap
+7007	Aap Generaal
+7008	Tu-Gui Werker
+7009	Tu-Gui Soldaat Tester
+7010	Tu-Gui Witte Commandant
+7012	Bi-Ma-Gui-An
+7013	Schorpioenenkoning
+7014	Slimme Schorpioen Man
+7015	Schorpioen Boogschutter
+7016	Slang Zwaardman
+7017	Slang Boogschutter
+7018	Woestijn Bandiet
+7019	Tu-Ji Soldaat
+7020	Hwa-ryung
+7021	Tu-Ji Bum
+7022	Cham-Ma
+7023	Teawha-Mu
+7024	Juk-gui
+7025	Dung-Juk
+7026	Juk-Mok
+7027	Hwaryu Juk
+7028	Zwarte Juk-Guimok
+7029	IJs Duivel
+7030	IJshoorn Orca
+7031	IJs Kever
+7032	Seol-Gu
+7033	IJsman
+7034	IJs Reus
+7035	IJs Golem
+7036	IJs Duivel
+7037	IJshoorn Orca
+7038	IJs Kever
+7039	Seol-Gu
+7040	IJsman
+7041	IJs Reus
+7042	IJs Golem
+7043	IJs Duivel
+7044	IJshoorn Orca
+7045	IJs Kever
+7046	Seol-Gu
+7047	IJsman
+7048	IJs Reus
+7049	IJs Golem
+7050	Woestijn Vliegend Oog
+7051	Schorpioenenkoning
+7052	Jonge Schorpioen Man
+7053	Schorpioen Boogschutter
+7054	Slang Zwaardman
+7055	Slang Boogschutter
+7056	Woestijn Bandiet
+7057	Woestijn Vliegend Oog
+7058	Schorpioenenkoning
+7059	Jonge Schorpioen Man
+7060	Schorpioen Boogschutter
+7061	Slang Zwaardman
+7062	Slang Boogschutter
+7063	Woestijn Bandiet
+7064	Woestijn Vliegend Oog
+7065	Schorpioenenkoning
+7066	Jonge Schorpioen Man
+7067	Schorpioen Boogschutter
+7068	Slang Zwaardman
+7069	Slang Boogschutter
+7070	Woestijn Bandiet
+7071	Vechtende Tijger Dienaar
+7072	Vlamspook
+7073	Vechtende Tijger
+7074	Vlam
+7075	Vlam Krijger
+7076	Vechtende Tijger Dienaar
+7077	Vlamspook
+7078	Vechtende Tijger
+7079	Vlam
+7080	Vlam Krijger
+7081	Vechtende Tijger Dienaar
+7082	Vlamspook
+7083	Vechtende Tijger
+7084	Vlam
+7085	Vlam Krijger
+7086	Spook Stomp
+7087	Dryad
+7088	Spook Wilg
+7089	Boosaardige Boom
+7090	Spook Stomp
+7091	Dryad
+7092	Spook Wilg
+7093	Boosaardige Boom
+7094	Spook Stomp
+7095	Dryad
+7096	Spook Wilg
+7101	Kanon
+7102	Kanon
+7103	Pijlenvloed Ballista
+7104	Pijlenvloed Ballista
+7105	Toren
+7106	Haard
+7107	Haard
+7108	Haard
+7109	Haard
+7110	Haard
+7111	Haard
+7112	Haard
+7113	Cheeta
+7114	Kraton
+7115	Charly
+7116	Nini
+7117	Zulu
+7118	Apen Krijger Deka
+7119	Apen Krijger Oba
+7120	Koning Keung
+7121	Kiros
+7122	Manchu
+7123	Sgok
+7124	Indrik
+7125	Vervloekte Wolf
+7126	Vervloekte Alfa Wolf
+7127	Vervloekte Blauwe Wolf
+7128	Vervloekte Grijze Wolf
+7129	Vervloekt Wild Zwijn
+7130	Verv. Rood Wild Zwijn
+7131	Vervloekte Beer
+7132	Vervloekte Grizzly Beer
+7133	Vervloekte Zwarte Beer
+7134	Vervloekte Bruine Beer
+7135	Vervloekte Tijger
+7136	Elite Ork
+7137	Elite Ork Verkenner
+7138	Elite Ork Krijger
+7139	Elite Ork Tovenaar
+7140	Elite Ork Generaal
+7141	Zwarte Ork
+7142	Zwart Ork Reus
+7143	Brutale Grote Ork
+7144	Brut. Gr. Ork Verkenner
+7145	Brutale Gr. Ork Krijger
+7146	Brutale Gr. Ork Tovenaar
+7147	Brutale Gr. Ork Generaal
+7148	Brutale Zwarte Ork
+7149	Brutale Zwarte Ork Reus
+7152	Woestijn Vliegend Oog
+7153	Schorpioenenkoning
+7154	Jonge Schorpioen Man
+7155	Schorpioen Boogschutter
+7156	Slang Zwaardman
+7157	Slang Boogschutter
+7158	Woestijn Bandiet
+7159	Beest. Schorpioen Man
+7160	Gemene Baby Gif Spin
+7161	Gemene Fat. Gif Spin
+7162	Gemene Rode Gif Spin
+7163	Gemene Klauw Gif Spin
+7164	Vechtende Tijger Dienaar
+7165	Vlam Spook
+7166	Vechtende Tijger
+7167	Vlam
+7168	Vlam Krijger
+7169	St. Vech. Tijger Dienaar
+7170	Sterke Vlamspook
+7171	Sterke Vechtende Tijger
+7172	Sterke Vlam
+7173	Sterle Vlam Krijger
+7174	Betoverd IJs
+7175	IJs Walvis
+7176	IJs Kever
+7177	IJs Leeuw
+7178	Bevroren IJs Man
+7179	Yeti
+7180	IJs Golem
+7181	Zieke Hond
+7182	Zieke Man
+7183	Zieke Zwaardman
+7184	Zieke Speerman
+7185	Zieke Boogschutter
+7186	Kwal van Hel
+7187	Helhond
+7188	Zombie
+7189	Hel Officier
+7190	Hel Wachter
+7191	Dubbelhoofd Hel Schutter
+7192	Helse Klauw
+7193	Hel Krijger
+7194	Hel Boogschutter
+7195	Hel Speerman
+7196	Hel Priester
+7197	Hel Majoor
+7198	En-Tai Krijger
+7199	En-Tai Soldaat
+7200	En-Tai Druïde
+7201	En-Tai Genezer
+7202	En-Tai Vernietiger
+7203	En-Tai Heerser
+7204	Lemure Magier
+7205	Lemure Krijger
+7206	Lemure Soldaat
+7207	Lemure Beul
+7210	Invasiebaas
+7211	Invasievuurbaas
+7212	Invasie-ijsbaas
+7213	Invasiebliksembaas
+7214	Invasiewindbaas
+7215	Invasie-aardebaas
+7216	Invasieduisternisbaas
+7242	Placeholder
+7243	Placeholder
+7244	Placeholder
+7245	Placeholder
+7246	Placeholder
+7247	Placeholder
+7248	Placeholder
+7249	Placeholder
+7250	Placeholder
+7251	Placeholder
+7252	Placeholder
+7253	Placeholder
+7254	Placeholder
+7255	Placeholder
+7550	Toren Wolf
+7551	Toren Breker
+7552	Toren Berserker
+7553	Toren Heksenmeester
+7554	Toren Slachter
+7555	Toren Necromant
+7556	Toren Grootmeester
+7557	Toren Wolf
+7558	Toren Breker
+7559	Toren Berserker
+7560	Toren Heksenmeester
+7561	Toren Slachter
+7562	Toren Necromant
+7563	Toren Grootmeester
+7564	Toren Wolf
+7565	Toren Breker
+7566	Toren Berserker
+7567	Toren Heksenmeester
+7568	Toren Slachter
+7569	Toren Necromant
+7570	Toren Grootmeester
+7571	Toren Wolf
+7572	Toren Breker
+7573	Toren Berserker
+7574	Toren Heksenmeester
+7575	Toren Slachter
+7576	Toren Necromant
+7577	Toren Grootmeester
+7578	Toren Wolf
+7579	Toren Breker
+7580	Toren Berserker
+7581	Toren Heksenmeester
+7582	Toren Slachter
+7583	Toren Necromant
+7584	Toren Grootmeester
+7585	Toren Wolf
+7586	Toren Breker
+7587	Toren Berserker
+7588	Toren Heksenmeester
+7589	Toren Slachter
+7590	Toren Necromant
+7591	Toren Grootmeester
+7592	Toren Vernietiger
+7593	Toren Vernietiger
+7594	Toren Demonen Steen
+7595	Toren Boogschutter
+7600	Toren Zielensteen
+7609	Toren Hoofdheksenmeester
+7610	Toren Tiran
+7611	Toren Tiran
+7612	Dode Toren Tiran
+7613	Dode Toren Tiran
+7614	Toren Hoofdheksenmeester
+7615	Toren Wolf
+7616	Toren Breker
+7617	Toren Slachter
+7618	Toren Slachter
+7619	Toren Berserker
+7620	Toren Heksenmeester
+8001	Metin van Verdriet
+8002	Metin van Strijd
+8003	Metin der Gevecht
+8004	Metin van Inhaligheid
+8005	Metin der Zwartheid
+8006	Metin van Duister
+8007	Metin van Jaloezie
+8008	Metin van Ziel
+8009	Metin van Schaduw
+8010	Metin van Weerstand
+8011	Metin van Duivel
+8012	Metin van Herfst
+8013	Metin van Dood
+8014	Metin van Moord
+8015	Metin van Stoerheid
+8016	Metin van Duivel
+8017	Metin van Herfst
+8018	Metin van Dood
+8019	Metin van Moord
+8020	Shinsoo Rots
+8021	Jinno Rots
+8022	Chunjo Rots
+8023	Keizer Rots
+8024	Metin Pung-Ma
+8025	Metin Ma-An
+8026	Metin Tu-Young
+8027	Metin Jeong-Un
+8031	Metin van de Berg
+8032	Metin van Wraak
+8033	Metin van Eenzaamheid
+8034	Metin van Arrogantie
+8035	Metin van Verlossing
+8036	Metin van Verraad
+8037	Metin van Wrok
+8038	Metin van Vergelding
+8039	Metin van Trots
+8040	Metin v. Kwaadwilligheid
+8041	Paas Metin
+8042	Paas Metin
+8043	Paas Metin
+8044	Paas Metin
+8045	Paas Metin
+8046	Paas Metin
+8047	Paas Metin
+8048	Paas Metin
+8049	Paas Metin
+8050	Paas Metin
+8051	Metin van Schemering
+8052	Metin van Sintel
+8053	Metin van IJdelheid
+8054	Metin van Toorn
+8055	Metin van Onheil
+8056	Metin van Boosaardigheid
+8057	Vagevuur Metin
+8058	Metin der kou
+8059	Metin van de Boomwezens
+8060	Pompoen Metin
+8061	Metin van het Woud
+8062	Metin van Perceptie (Q)
+8063	Metin van Waardering
+8064	Metin van Mindfulness
+8065	Metin van de Jin
+8066	Metin van de Shiho
+8067	Metin van Perceptie
+8068	Metin van Maanlicht
+8076	Ruimteserpent Metin
+8077	Metin van Gumar
+8101	Metin van Verdriet
+8102	Metin van Strijd
+8103	Metin van Gevecht
+8104	Metin van Inhaligheid
+8105	Metin van Zwart
+8106	Metin van Duister
+8107	Metin van Jaloezie
+8108	Metin van Ziel
+8109	Metin van Schaduw
+8110	Metin van Stoerheid
+8111	Metin van Duivel
+8112	Metin van Herfst
+8113	Metin van Dood
+8114	Metin van Moord
+8115	Metin van de Maan
+8120	TS: Metin van de Berg
+8121	TS: Metin van Wraak
+8122	TS: Metin van Eenzaamh.
+8123	TS: Metin van Arrogantie
+8124	TS: Metin van Vagevuur
+8125	TS: Metin der Kou
+8126	TS: Metin van Boomwezens
+8127	TS: Metin van het Woud
+8130	RX: Metin van de Berg
+8131	RX: Metin van Wraak
+8132	RX: Metin van Eenzaamh.
+8133	RX: Metin van Arrogantie
+8134	RX: Metin van Vagevuur
+8135	RX: Metin der Kou
+8136	RX: Metin van Boomwezens
+8137	RX: Metin van het Woud
+8150	Metin van de 1ste Test
+8151	Metin van de 2de Test
+8152	Metin van de 3de Test
+8153	Metin van de 4de Test
+8154	Metin van de 5de Test
+8155	Metin van de 6de Test
+8156	Metin van de 7de Test
+8157	Metin van de 8ste Test
+8158	Metin van de 9de Test
+8159	Metin van de 10de Test
+8200	Chocolade Metin Steen
+8201	Chocolade Metin Steen
+8202	IJs Bolletje
+8203	Metin van Verlichting
+8204	Paas Metin
+8205	Paas Metin
+8206	Paas Metin
+8207	Voetbal Metin
+8208	Paas Metin
+8209	Paas Metin
+8501	Wilde Hond
+8502	Wild Zwijn
+8503	Beer
+8504	Witte Tijger
+8505	Zwart Ork Reus
+8506	Boom Kikker Leider
+8507	Woestijn Bandiet
+8508	Esoterisch Martelaar
+8509	Esoterisch Oproeper
+8510	Vlam Krijger
+8511	IJs Golem
+8600	¿õ±Í´ëÁ·Àå
+8601	¿õ±Í´ëÁ·Àå
+8602	¹Ð±³´ëÁÖ±³
+8603	¹Ð±³´ëÁÖ±³
+8604	¸í»ç±Í¿Õ
+8605	¸í»ç±Í¿Õ
+8606	»ç½Å
+8607	»ç½Å
+8608	±¸¹ÌÈ£
+8609	±¸¹ÌÈ£
+8610	´©··Åõ¹ü±Í
+8611	´©··Åõ¹ü±Í
+8612	¿©¿Õ°Å¹Ì
+8613	¿©¿Õ°Å¹Ì
+8614	°Å´ë»ç¸·°ÅºÏ
+8615	°Å´ë»ç¸·°ÅºÏ
+8616	Billy Loomis
+8617	Jack Torrance
+8618	Chucky
+8619	Jigsaw
+8620	Jason
+8621	Michael Myers
+8622	Freddy Krueger
+8623	Leatherface
+8625	Trollenvoorpost
+8626	1ste Quagvoorpost
+8627	2de Quagvoorpost
+8630	Vuurserpent Metin
+8631	IJsserpent Metin
+8632	Windserpent Metin
+8633	Aardeserpent Metin
+8634	Tijdserpent Metin
+8635	Wit Drakenei (makkelijk)
+8636	Wit Drakenei (moeilijk)
+8637	Sung Ma Invasieportaal
+8638	Verdoemenis Metin (Gen.)
+8639	Verdoemenis Metin
+8640	Verlossing Metin
+8641	Sung Ma Invasieportaal
+8642	Sung Ma Invasieportaal
+8643	Sung Ma Invasieportaal
+8644	Sung Ma Invasieportaal
+8645	Sung Ma Invasieportaal
+8646	Sung Ma Invasieportaal
+9001	Wapen Winkeleigenaar
+9002	Pantser Winkeleigenaar
+9003	Algemene Winkel
+9004	Evenementen Helper
+9005	Winkeleigenaar
+9006	Oud Dametje
+9007	Wapen Winkel Handelaar
+9008	Pantser Winkeleigenaar
+9009	Visser
+9010	Algemene Winkel
+9011	Bruiloft Planner
+9012	Teleporter
+9013	Illusie Handelaar
+9014	Handelaar
+9100	Stormbloem
+9101	Normale Krachtbloem
+9102	Vuur Krachtbloem
+9103	IJs Krachtbloem
+9104	Bliksem Krachtbloem
+9105	Wind Krachtbloem
+9106	Aarde Krachtbloem
+9107	Duisternis Krachtbloem
+10001	Yayang_Gebied 4002 8995
+10002	Yongan_Gebied 4503 9050
+10003	Bokjung_Gebied 1118 2161
+10004	Joan_Gebied 876 2131
+10005	Bakra_Gebied 9064 2214
+10006	Pyungmo_Gebied 9372 2188
+10007	Yongan_Gebied 4188 9560
+10008	Yayang_Gebied 3179 8332
+10009	Joan_Gebied 897 1127
+10010	Bokjung_Gebied 1759 2210
+10011	Pyungmo_Gebied 9343 3143
+10012	Bakra_Gebied 8348 2926
+10013	Hwang_Tempel 5536 1441
+10014	Seungryong 3326 7468
+10015	Yongbi_Woest. 3467 6329
+10016	Kuahlo_Dong 600 4960
+10017	Hwang_Tempel 5906 1102
+10018	Gumsan_Toren 2165 7270
+10019	Yayang_Gebied 3211 9009
+10020	Jungrang 1356 43
+10021	Bokjung_Gebied 1168 2920
+10022	Waryong 2219 93
+10023	Bakra_Gebied 9098 2948
+10024	Imha 2718 130
+10025	Berg_Sohan 4993 2984
+10026	Lungsam 2887 57
+10027	Lungsam 2866 437
+10028	Rood_Bos 11199 708
+10029	Slangenveld 10590 7262
+10030	Yongbi_Woest. 3519 6223
+10031	Slangenveld 10590 7262
+10032	Reuzen_Land 8283 7635
+10033	Zin-Grot 10594 7525
+10034	2_Zin-Grot 10594 7525
+10035	Deon-Zeon 917 5253
+10036	2_Deon-Zeon 7041 4642
+10037	ÀÚ¾çÇö 3809 8233
+10038	½Å¼ö¼º 9752 1330
+10039	º¹Á¤Çö 1917 2900
+10040	Áø³ë¼º 9239 1836
+10041	¹Ú¶óÇö 8316 2154
+10042	ÃµÁ¶¼º 9772 1850
+10043	¼­ÇÑ»ê 3819 2969
+10044	½Å¼ö¼º 10189 1484
+10045	¼­ÇÑ»ê 3819 2969
+10046	½Å¼ö¼º 9774 1501
+10047	½Â·æ°î 2699 6752
+10048	Áø³ë¼º 9679 1994
+10049	½Â·æ°î 2699 6752
+10050	Áø³ë¼º 9256 2012
+10051	¿µºñ»ç¸· 3478 6189
+10052	ÃµÁ¶¼º 9780 1995
+10053	¿µºñ»ç¸· 3478 6189
+10054	ÃµÁ¶¼º 10190 2002
+10055	µµ¿°È­Áö 6011 6874
+10056	¼­ÇÑ»ê 4368 2158
+10057	½Â·æ°î 3355 7558
+10058	¹Ð±³»ç¿ø 5943 1337
+10059	¼­ÇÑ»ê 0 10496
+10060	¹Ð±³»ç¿ø 1536 10496
+10061	Vuurland 4608 10496
+10062	½Â·æ°î 6144 10496
+10063	±Í¸ñ¸² 3031 266
+10064	Àû±Í¸ñ¸² 11133 534
+10065	½Å±Í¸ñ¸² 7754 10553
+10066	½ÅÀû±Í¸ñ¸² 9915 11195
+10067	Apen_Kerker 7752 4477
+10068	Yayang_Gebied 4062 8756
+10069	Apen_Kerker 8520 4477
+10070	Bokjung_Gebied 1611 2130
+10071	Apen_Kerker 9288 4477
+10072	Bakra_Gebied 8727 2100
+10073	Yongbi_Woest. 3061 6202
+10074	Apen_Kerker 1352 6532
+10075	Yongbi_Woest. 2879 5407
+10076	Apen_Kerker 1352 7300
+10077	Grot_der_Verbanning 9 120
+10078	½Â·æ°î 2842 8106
+10079	Grot1 1459 13236
+10080	Grot2 2413 12755
+10081	ÃµÀÇµ¿±¼1Ãþ 99 13618
+10082	¿µ¾ÈÀ¾¼º 5028 9998
+10083	ÃµÀÇµ¿±¼1Ãþ 1360 14972
+10084	ÃµÀÇµ¿±¼2Ãþ 2414 14289
+10085	ÃµÀÇµ¿±¼1Ãþ 99 15154
+10086	Á¶¾ÈÀ¾¼º 616 1148
+10087	ÃµÀÇµ¿±¼1Ãþ 1360 16508
+10088	ÃµÀÇµ¿±¼2Ãþ 2414 15825
+10089	ÃµÀÇµ¿±¼1Ãþ 99 16690
+10090	Æò¹«À¾¼º 9609 3188
+10091	ÃµÀÇµ¿±¼1Ãþ 1360 18044
+10092	ÃµÀÇµ¿±¼2Ãþ 2414 17361
+10093	Drakenpoort 1731 12205
+10094	Drakenpoort 1733 13743
+10095	Drakenpoort 1728 15277
+10096	Drakenpoort 1724 16824
+10097	SD2 7040 5235
+10098	SD3 984 5711
+10099	Cape 11043 17885
+10100	Cape 10963 16744
+10101	Nefriet 10869 16558
+10102	Cape 11664 16779
+10103	Donder 11345 16546
+10104	Donder 11921 16550
+10105	Gautama 12263 16811
+10106	³ì¸²Áö 8168 15050
+10107	DongGwang 10629 4767
+10109	BliksemRichel 451 9492
+10110	BliksemPunt 830 9454
+10111	VuurBereik 1430 9616
+10112	IJsRijdieren 690 10169
+10113	BliksemPunt 1023 9623
+10114	IJsRijdieren 303 10113
+10115	VuurPiek 2117 9447
+10116	VuurBereik 1720 9499
+10117	WindEiland 1973 10159
+10118	VuurPiek 2337 9633
+10119	DuisterWapen 2710 9616
+10120	WindEiland 1582 10111
+10121	DuistereTop 3393 9454
+10122	DuisterWapen 3012 9500
+10123	AardeWoestijn 3069 10174
+10124	DuistereTop 3685 9551
+10126	Uitgang 11622 5809
+10127	DongGwang 10551 4881
+10128	SeoGwang 12218 4895
+10129	NamGwang 12780 4411
+10130	SeoGwang 12144 5555
+10131	Niveau2 9916 6630
+10132	Niveau3 9896 6302
+10133	Niveau1 9534 6281
+10134	Niveau2 9564 6610
+10135	Terug 9338 6287
+10136	Yilad-Pas 303 14147
+10137	NamGwangKloof 13184 4735
+10138	Verlaten
+10139	Noordewind_K
+10140	Yilad-Pas 83 14763
+10141	Wachtgebied 401 477
+10142	Zielenkloof
+10143	Noordewind_K 247 15392
+10144	Yilad_Pas 122 14498
+10145	Maanschaduwvallei
+10146	Diepten van Hebzucht
+10147	Maanschaduwvallei
+10148	Diepten van Hebzucht verl
+10149	Poort van Hebzucht
+10150	Hart van Hebzucht
+10151	Placeholder
+10152	Afdalen
+10153	Stijgen
+10201	Verlaten
+10202	Noordewind_D 11590 12181
+10203	Noordewind_S 11323 13499
+10204	Verlaten
+10205	. 70 149
+10206	. 295 157
+10207	. 190 149
+10208	. 70 149
+10209	. 650 184
+10210	. 476 53
+10211	. 70 149
+10212	. 80 330
+10213	. 351 385
+10214	. 81 451
+10215	. 70 149
+10216	. 707 445
+10217	. 351 445
+10218	. 70 149
+10219	. 215 557
+10220	. 698 325
+10221	. 70 149
+10222	GeheimeKam 11913 12692
+10223	Achter 11553 12697
+10224	. 646 65
+10225	. 70 149
+10501	. 345 361
+10502	. 106 547
+10503	. 75 368
+10504	. 89 746
+10505	. 520 352
+10506	. 541 45
+10507	. 211 109
+10508	. 615 49
+10509	. 284 705
+10510	. 145 310
+10511	. 553 285
+10512	. 487 274
+10513	. 626 291
+10514	. 285 569
+10515	. 80 303
+10516	. 315 238
+10517	. 416 272
+10518	. 72 498
+10519	. 215 495
+10520	. 523 415
+10521	. 72 498
+10522	. 518 480
+10523	. 583 379
+10524	. 459 558
+10601	. 345 361
+10602	. 520 352
+10603	. 487 274
+10604	. 75 368
+10605	. 211 109
+10606	. 215 495
+10607	. 315 238
+10608	. 520 352
+10609	. 284 705
+10610	. 145 310
+10611	. 416 272
+10612	. 80 303
+10613	. 72 498
+10614	. 106 547
+10615	. 523 415
+10616	. 541 45
+10617	. 72 121
+10618	. 518 480
+10619	. 89 746
+10620	. 285 569
+10621	. 615 49
+10622	. 72 498
+10623	. 583 379
+10624	. 459 558
+10625	. 609 553
+10626	. 594 338
+10701	. 75 368
+10702	. 541 45
+10703	. 615 49
+10704	. 284 705
+10705	. 520 352
+10706	. 553 285
+10707	. 145 310
+10708	. 345 361
+10709	. 523 415
+10710	. 72 498
+10711	. 626 291
+10712	. 487 274
+10713	. 72 498
+10714	. 106 547
+10715	. 518 480
+10716	. 285 569
+10717	. 80 303
+10718	. 211 109
+10719	. 416 272
+10720	. 215 495
+10721	. 315 238
+10722	. 89 746
+10723	. 583 379
+10724	. 459 558
+10725	. 609 553
+10726	. 594 338
+10801	. 70 581
+10802	. 69 664
+10803	. 132 660
+10804	. 184 566
+10805	. 285 567
+10806	. 272 636
+10807	. 191 667
+10808	. 345 563
+10809	. 400 570
+10810	. 68 806
+10811	. 140 811
+10812	. 189 722
+10813	. 274 722
+10814	.233 780
+10815	. 318 780
+10816	. 273 833
+10817	.356 717
+10818	.412 712
+10819	. 372 776
+10820	. 354 840
+10821	. 366 817
+10822	. 420 841
+10823	. 94 846
+10824	. 63 864
+10825	. 131 866
+10826	. 59 920
+10827	. 91 940
+10828	. 135 919
+10829	. 194 870
+10830	. 243 862
+10831	. 312 861
+10832	. 373 893
+10833	. 406 880
+10834	. 422 935
+10835	. 500 807
+10901	. 333 358
+10902	. 452 116
+10903	. 515 415
+10904	. 515 480
+10905	. 145 305
+10906	. 228 238
+10907	. 452 116
+10908	. 77 500
+10909	. 111 550
+10910	. 452 116
+10911	. 145 305
+10912	. 333 358
+10913	. 615 50
+10914	. 218 110
+10915	. 288 708
+10916	. 582 385
+10917	. 218 110
+10918	. 452 116
+10919	. 615 50
+10920	. 510 480
+10921	. 75 435
+10922	. 194 614
+10923	. 310 237
+10924	. 609 553
+10931	. 250 425
+10932	. 452 116
+10933	. 520 415
+10934	. 77 370
+10935	. 145 305
+10936	. 122 678
+10937	. 297 175
+10938	. 452 116
+10939	. 423 266
+10940	. 122 678
+10941	. 510 480
+10942	. 250 425
+10943	. 452 116
+10944	. 297 175
+10945	. 250 425
+10946	. 627 290
+10947	. 297 175
+10948	. 450 116
+10949	. 582 385
+10950	. 440 705
+10951	. 145 305
+10952	. 297 175
+10953	. 75 435
+10954	. 609 553
+10961	. 333 358
+10962	. 452 116
+10963	. 520 415
+10964	. 77 370
+10965	. 145 305
+10966	. 297 175
+10967	. 452 116
+10968	. 195 615
+10969	. 195 615
+10970	. 510 480
+10971	. 145 305
+10972	. 333 358
+10973	. 71 435
+10974	. 297 175
+10975	. 460 560
+10976	. 333 358
+10977	. 260 175
+10978	. 452 116
+10979	. 540 45
+10980	. 80 295
+10981	. 522 414
+10982	. 297 175
+10983	. 582 385
+10984	. 609 553
+10985	Gilde Voorpost
+10986	Placeholder
+10987	Placeholder
+10988	Placeholder
+11000	Wachter
+11001	Gevechtsbeheerder
+11002	Wachter
+11003	Gevechtsbeheerder
+11004	Wachter
+11005	Gevechtsbeheerder
+11100	Wachter
+11101	Gevechtsbeheerder
+11102	Wachter
+11103	Gevechtsbeheerder
+11104	Wachter
+11105	Gevechtsbeheerder
+11106	Wachter
+11107	Gevechtsbeheerder
+11108	Wachter
+11109	Gevechtsbeheerder
+11110	Wachter
+11111	Gevechtsbeheerder
+11112	Wachter
+11113	Gevechtsbeheerder
+11114	Wachter
+11115	Gevechtsbeheerder
+11116	Wachter
+11117	Gevechtsbeheerder
+11505	Gouden Kikker
+11506	Kampvuur
+11507	Kampvuur
+11508	Kampvuur
+11509	Kampvuur
+11510	Kampvuur
+12000	Kamp Vuur
+13000	Houten Poort
+13001	Stenen Poort
+14000	Werkplaats
+14001	Werkplaats
+14002	Werkplaats
+14003	Werkplaats
+14004	Werkplaats
+14005	Werkplaats
+14006	Werkplaats
+14007	Werkplaats
+14008	Werkplaats
+14009	Werkplaats
+14010	Altaar
+14011	Altaar
+14012	Altaar
+14013	Altaar
+14014	Altaar
+14015	Altaar
+14016	Altaar
+14017	Altaar
+14018	Altaar
+14019	Altaar
+14020	Hoofd Kwartier
+14021	Hoofd Kwartier
+14022	Hoofd Kwartier
+14023	Hoofd Kwartier
+14024	Hoofd Kwartier
+14025	Hoofd Kwartier
+14026	Hoofd Kwartier
+14027	Hoofd Kwartier
+14028	Hoofd Kwartier
+14029	Hoofd Kwartier
+14030	Trainings Kamp
+14031	Trainings Kamp
+14032	Trainings Kamp
+14033	Trainings Kamp
+14034	Trainings Kamp
+14035	Trainings Kamp
+14036	Trainings Kamp
+14037	Trainings Kamp
+14038	Trainings Kamp
+14039	Trainings Kamp
+14040	Haard
+14041	Haard
+14042	Haard
+14043	Haard
+14044	Haard
+15001	Wapensmid I
+15101	Wapensmid II
+15201	Wapensmid III
+15002	Pantsersmid I
+15102	Pantsersmid II
+15202	Pantsersmid III
+15003	Speciale Pantsersmid I
+15103	Speciale Pantsersmid II
+15203	Speciale Pantsersmid III
+15004	Juwelier I
+15104	Juwelier II
+15204	Juwelier III
+15005	Ledersmid I
+15105	Ledersmid II
+15205	Ledersmid III
+15006	Lederwerkplaats
+15106	Lederwerkplaats
+15206	Lederwerkplaats
+15007	Diamant Oven I
+15107	Diamant Oven II
+15207	Diamant Oven III
+15008	Fossielhout Oven I
+15108	Fossielhout Oven II
+15208	Fossielhout Oven III
+15009	Koper Oven I
+15109	Koper Oven II
+15209	Koper Oven III
+15010	Zilver Oven I
+15110	Zilver Oven II
+15210	Zilver Oven III
+15011	Goud Oven I
+15111	Goud Oven II
+15211	Goud Oven III
+15012	Jade Oven I
+15112	Jade Oven II
+15212	Jade Oven III
+15013	Ebbenhout Oven I
+15113	Ebbenhout Oven II
+15213	Ebbenhout Oven III
+15014	Parel Oven I
+15114	Parel Oven II
+15214	Parel Oven III
+15015	Witgoud Oven I
+15115	Witgoud Oven II
+15215	Witgoud Oven III
+15016	Kristal Oven I
+15116	Kristal Oven II
+15216	Kristal Oven III
+15017	Amethist Oven I
+15117	Amethist Oven II
+15217	Amethist Oven III
+15018	Hemelse Traan Oven I
+15118	Hemelse Traan Oven II
+15218	Hemelse Traan Oven III
+15019	Zielkristal Oven I
+15119	Zielkristal Oven II
+15219	Zielkristal Oven III
+15020	Robijn Oven I
+15120	Robijn Oven II
+15220	Robijn Oven III
+15021	Granaat Oven I
+15121	Granaat Oven II
+15221	Granaat Oven III
+15022	Smaragd Oven I
+15122	Smaragd Oven II
+15222	Smaragd Oven III
+15023	Saffier Oven I
+15123	Saffier Oven II
+15223	Saffier Oven III
+15024	Toermalijn Oven I
+15124	Toermalijn Oven II
+15224	Toermalijn Oven III
+15025	Mist Jadiet Oven I
+15125	Mist Jadiet Oven II
+15225	Mist Jadiet Oven III
+15026	Zon Jadiet Oven I
+15126	Zon Jadiet Oven II
+15226	Zon Jadiet Oven III
+15027	Duistere Jadiet Oven I
+15127	Duistere Jadiet Oven II
+15227	Duistere Jadiet Oven III
+15028	Rokerig Jadiet Oven I
+15128	Rokerig Jadiet Oven II
+15228	Rokerig Jadiet Oven III
+15029	Maneschijn Oven I
+15129	Maneschijn Oven II
+15229	Maneschijn Oven III
+15030	Oproepaltaar I
+15130	Oproepaltaar II
+15230	Oproepaltaar III
+15031	Gildebied Altaar I
+15131	Gildebied Altaar II
+15231	Gildebied Altaar III
+15032	Altaar van Kracht I
+15132	Altaar van Kracht II
+15232	Altaar van Kracht III
+15033	Gilde Warenhuis I
+15133	Gilde Warenhuis II
+15233	Gilde Warenhuis III
+16001	Wapensmid I
+16101	Wapensmid II
+16201	Wapensmid III
+16002	Pantsersmid I
+16102	Pantsersmid II
+16202	Pantsersmid III
+16003	Speciale Pantsersmid I
+16103	Speciale Pantsersmid II
+16203	Speciale Pantsersmid III
+16004	Juwelier I
+16104	Juwelier II
+16204	Juwelier III
+16005	Ledersmid I
+16105	Ledersmid II
+16205	Ledersmid III
+16006	Inschrijver
+16007	Diamant Alchemist I
+16107	Diamant Alchemist II
+16207	Diamant Alchemist III
+16008	Fossielhout Alchemist I
+16108	Fossielhout Alch. II
+16208	Fossielhout Alch. III
+16009	Koper Alchemist I
+16109	Koper Alchemist II
+16209	Koper Alchemist III
+16010	Zilver Alchemist I
+16110	Zilver Alchemist II
+16210	Zilver Alchemist III
+16011	Goud Alchemist I
+16111	Goud Alchemist II
+16211	Goud Alchemist III
+16012	Jade Alchemist I
+16112	Jade Alchemist II
+16212	Jade Alchemist III
+16013	Ebbenhouten Alch. I
+16113	Ebbenhouten Alch. II
+16213	Ebbenhouten Alch. III
+16014	Parel Alchemist I
+16114	Parel Alchemist II
+16214	Parel Alchemist III
+16015	Witgoud Alchemist I
+16115	Witgoud Alchemist II
+16215	Witgoud Alchemist III
+16016	Kristal Alchemist I
+16116	Kristal Alchemist II
+16216	Kristal Alchemist III
+16017	Amethist Alchemist I
+16117	Amethist Alchemist II
+16217	Amethist Alchemist III
+16018	Hemelse Traan Alch. I
+16118	Hemelse Traan Alch. II
+16218	Hemelse Traan Alch. III
+16019	Ziel Kristal Alch. I
+16119	Ziel Kristal Alch. II
+16219	Ziel Kristal Alch. III
+16020	Robijn Alchemist I
+16120	Robijn Alchemist II
+16220	Robijn Alchemist III
+16021	Granaat Alchemist I
+16121	Granaat Alchemist II
+16221	Granaat Alchemist III
+16022	Smaragd Alchemist I
+16122	Smaragd Alchemist II
+16222	Smaragd Alchemist III
+16023	Saffier Alchemist I
+16123	Saffier Alchemist II
+16223	Saffier Alchemist III
+16024	Toermalijn Alchemist I
+16124	Toermalijn Alchemist II
+16224	Toermalijn Alch. III
+16025	Mist Jadiet Alchemist I
+16125	Mist Jadiet Alch. II
+16225	Mist Jadiet Alch. III
+16026	Zon Jadiet Alchemist I
+16126	Zon Jadiet Alchemist II
+16226	Zon Jadiet Alch. III
+16027	Duist. Jadiet Alch. I
+16127	Duist. Jadiet Alch. II
+16227	Duist. Jadiet Alch. III
+16028	Rokerig Jadiet Alch. I
+16128	Rokerig Jadiet Alch. II
+16228	Roker. Jadiet Alch. III
+16029	Kobalt Alchemist I
+16129	Kobalt Alchemist II
+16229	Kobalt Alchemist III
+16030	Oproepmeester I
+16130	Oproepmeester II
+16230	Oproepmeester III
+16031	Zegeningsmeester I
+16131	Zegeningsmeester II
+16231	Zegeningsmeester III
+20001	Alchemist
+20002	Aranyo
+20003	Ah-Yu
+20004	Bedelaar
+20005	Yonah
+20006	Mirine
+20007	Winkeleigenaar
+20008	Octavio
+20009	Oude Man
+20010	Venter
+20011	Uriel
+20012	Yu-Rang
+20013	Visser
+20014	Taurean
+20015	Deokbae
+20016	Smid
+20017	Yu-Hwan
+20018	Baek-Go
+20019	Yang-Shin
+20020	Verrader Balso
+20021	Ariyoung
+20022	Huahn-So
+20023	Soon
+20024	Harang
+20025	.
+20026	Ji-Ryu
+20027	Gillian
+20028	Mirine's Broer
+20029	Pony
+20030	Paard
+20031	Kerstman
+20032	Kerstboom
+20033	Kerstboom
+20034	Kerstboom
+20035	Vlag
+20036	Vlag
+20037	Vlag
+20038	..
+20039	.
+20040	Makelaar
+20041	Groezelige Voorbijganger
+20042	Venter
+20043	.
+20047	Diamant Ader
+20048	Amber Ader
+20049	Fossiel Stam Ader
+20050	Koper Ader
+20051	Zilver Ader
+20052	Goud Ader
+20053	Jade Ader
+20054	Ebbenhouten Ader
+20055	Mosselbed
+20056	Witgoud Ader
+20057	Kristal Ader
+20058	Amethist Ader
+20059	Hemelse Traan Ader
+20073	Oeroude Zegel
+20074	Demon Toren Wapens
+20075	Demon Toren Pantsersmid
+20076	Demon Toren Juwelier
+20077	Altaar Wachter
+20078	Altaar Wachter
+20079	Altaar Wachter
+20080	Training Leider
+20081	Gestolen Gang Zegek
+20082	Meester
+20083	Jegal-Tunseok
+20084	Bioloog Chaegirab
+20085	Jimjunja
+20086	Handu-Up
+20087	Wonda-Rim
+20088	Chuk-Sal
+20089	Pung-Ho
+20090	Heuk-Young
+20091	Seon-Pyeong
+20092	Hwa-Hee
+20093	Koe-Pung
+20094	Hong-Hae
+20095	Seon-Hae
+20096	Obelisk
+20097	Kasteel Poort
+20098	Kasteel Poort
+20099	Kasteel Poort
+20101	Wit Paard
+20102	Bruin Paard
+20103	Zwart Paard
+20104	Wit Paard
+20105	Bruin Paard
+20106	Zwart Paard
+20107	Wit Paard
+20108	Bruin Paard
+20109	Zwart Paard
+20110	Wild Zwijn
+20111	Wolf
+20112	Tijger
+20113	Leeuw
+20114	white lion
+20115	Wilde Strijd Zwijn
+20116	Vecht Wolf
+20117	Storm Tijger
+20118	Strijd Leeuw
+20119	Nobel Zwart Paard
+20120	Ã»ÀÇÀü°©È£
+20121	ÁøÀûÀÇÀü°©È£
+20122	È²ÀÇÀü°©È£
+20123	³ìÀÇÀü°©È£
+20124	ÈæÀÇÀü°©È£
+20125	¹éÀÇÀü°©È£
+20126	Kerstman
+20127	Jubileum Banier 1
+20128	Jubileum Banier 2
+20129	Jubileum Banier 3
+20130	Jubileum Banier 4
+20131	Jubileum Banier 5
+20132	Jubileum Banier 6
+20133	Jubileum Banier 7
+20134	Zonne Banier
+20135	Kerst Banier
+20139	Gilde Banier (Paars)
+20140	Gilde Banier (Bl./Gr.)
+20141	Gilde Banier (Rood/Goud)
+20138	Ramadan Banier
+20142	Halloween Banier
+20143	Paasbanner
+20146	Anderwereld Portaal
+20147	Afgezant des Doods
+20148	Wachter Hae-Tae
+20149	Machtig Oorlogspaard
+20150	M. Oorlogsp. (G. lid)
+20151	M. Oorlogsp. (G. leid.)
+20201	Àü°©¿ø
+20202	Àü°©¶û
+20203	Àü°©È£
+20204	Àü°©»çÀÚ
+20205	³­ÆøÇÑ Àü°©¿ø
+20206	³­ÆøÇÑ Àü°©¶û
+20207	³­ÆøÇÑ Àü°©È£
+20208	³­ÆøÇÑ Àü°©»çÀÚ
+20209	¿ë¸ÍÇÑ Àü°©¿ø
+20210	¿ë¸ÍÇÑ Àü°©¶û
+20211	¿ë¸ÍÇÑ Àü°©È£
+20212	¿ë¸ÍÇÑ Àü°©»çÀÚ
+20213	Àü°©¼ý¼ø·Ï
+20214	³­ÆøÇÑ Àü°©¼ý¼ø·Ï
+20215	¿ë¸ÍÇÑ Àü°©¼ý¼ø·Ï
+20216	Àü°©¾Ï¼ø·Ï
+20217	³­ÆøÇÑ Àü°©¾Ï¼ø·Ï
+20218	¿ë¸ÍÇÑ Àü°©¾Ï¼ø·Ï
+20219	blackpony
+20220	Å©¸®½º¸¶½º ¼ø·Ï
+20221	Àü°©¹é¿õ
+20222	Àü°©ÆÒ´õ
+20223	Àü°©¼®·æÀÚ
+20224	³­ÆøÇÑ Àü°©¼®·æÀÚ
+20225	¿ë¸ÍÇÑ Àü°©¼®·æÀÚ
+20226	ÈæÀ¯´ÏÄÜ
+20227	¹éÀ¯´ÏÄÜ
+20228	Àü°©¸ÍÁ¶
+20229	³­ÆøÇÑ Àü°©¸ÍÁ¶
+20230	¿ë¸ÍÇÑ Àü°©¸ÍÁ¶
+20231	Àü°©Èæ¹ü
+20232	Àü°©Ç¥¹ü
+20233	Muffin (Bruine Franje)
+20234	Nugget (Bruine Franje)
+20235	Muffin (Blauwe Franje)
+20236	Nugget (Blauwe Franje)
+20237	Muffin (Groene Franje)
+20238	Nugget (Groene Franje)
+20239	Blitzen
+20240	Donner
+20241	Nugget (Marineblauw)
+20242	Muffin (Roze)
+20243	NoNAme
+20244	Nirvana Draak
+20245	Samsara Draak
+20246	Manny
+20247	Ellie
+20248	Bruine Strijdtulu
+20249	Zwarte Strijdtulu
+20250	Lavagrot Hagedis
+20251	IJsgrot Hagedis
+20252	Magma Draak
+20253	Appaloosa
+20254	Wit Konijn
+20255	Maan Konijn
+20257	Bernie
+20258	Blauwe Barry
+20259	Cerberus (Goud)
+20260	Cerberus (Zilver)
+20261	Spectraal Ros
+20262	Equus Nocturnus
+20263	Bloedvleugel
+20264	Nyctalus
+20265	Penumbraal Ros
+20266	Zilverster Ros
+20267	Gouden Oorlogs-Os
+20268	Zilveren Oorlogs-Os
+20269	Witte Sfinx
+20270	Stenen Sfinx
+20271	IJs Raaf
+20272	Nacht Raaf
+20273	Witte Winter Lama
+20274	Bruine Winter Lama
+20275	Alastor
+20276	Haastige Haas (Roze)
+20277	Haastige Haas (Blauw)
+20278	Bloedrode Kitsune
+20279	IJsblauwe Kitsune
+20280	Rode Poolwolf
+20281	Blauwe Poolwolf
+20282	Maanlicht Zeepaard
+20283	Zonlicht Zeepaard
+20284	Zwarte Doemglijder
+20285	Gouden Doemglijder
+20286	Sneeuwstorm Rendier
+20287	Winter Rendier
+20288	Sneeuwvlokje Comet
+20289	Haastige Haas (Rood)
+20290	Haastige Haas (Zwart)
+20291	Vervloekte Bezemsteel
+20292	Behekste Bezemsteel
+20293	Nobel Legionairspaard
+20294	Duister Legionairspaard
+20295	Halia
+20296	Aquilos
+20298	Blauwe Oldtimer
+20299	Groene Oldtimer
+20300	Leraar Lichaamskracht
+20301	Leraar mentale weerstand
+20302	Leraar zwaardvechten
+20303	Leraar boogschieten
+20304	Leraar wapenkunst
+20305	Leraar zwarte magie
+20306	Leraar Drakenkracht
+20307	Leraar helende krachten
+20320	Leraar lichaamskracht
+20321	Leraar mentale weerstand
+20322	Leraar zwaardvechten
+20323	Leraar boogschieten
+20324	Leraar wapenkunst
+20325	Leraar zwarte magie
+20326	Leraar drakenkracht
+20327	Leraar helende krachten
+20340	Leraar lichaamskracht
+20341	Leraar mentale weerstand
+20342	Leraar zwaardvechten
+20343	Leraar boogschieten
+20344	Leraar wapenkunst
+20345	Leraar zwarte magie
+20346	Leraar Drakenkracht
+20347	Leraar helende krachten
+20348	Demonen Toren Wachter
+20349	Staljongen
+20350	Kerker Wachter
+20351	Gang Wachter
+20352	Hasun Steen Monument
+20353	Seul Rong Steen Monument
+20354	Stad Wachter
+20355	Kapitein
+20356	Ginseng Verzamelaar
+20357	Weol Monument
+20358	Naamloze Bloemen
+20359	Oude Kist met Papieren
+20360	Wha Monument
+20361	Su Monument
+20362	Mok Monument
+20363	Gum Monument
+20364	Nakajima
+20365	To Monument
+20366	Sa-Soe
+20367	Catacomben Wachter
+20368	Venter
+20369	Lee Chung
+20370	Vergiftigde Soldaat
+20371	Oude Grafsteen
+20372	Versleten Stenen Tablet
+20373	Lijfwacht
+20374	Wachter
+20375	Houten Barricade
+20376	Kim Rim
+20377	Yak-Hwan
+20378	Admiraal Angmur
+20379	Gewonde Soldaat
+20380	Yon-I-Walker
+20381	Confucius
+20382	Rotsbloem
+20383	Jae-Seon Kim
+20384	Kerstboom
+20385	Verslinder van Am-heh
+20386	Stele van Isfet
+20387	Slot van het Lot
+20388	Drakenpoort
+20389	NoNAme
+20390	Taramors Grafsteen
+20391	Zonnekruid
+20392	Dode Soldaat
+20393	Gewonde soldaat
+20394	Vuurland Wachter
+20395	IJs Land Beschermer
+20396	Àû¼ö»ó´Ü ÆÇ¸Å¿ø
+20397	IJs leeuw
+20398	Arctische Kubus
+20399	Noordelijke Drakenpilaar
+20400	Myonghorang de Wijze
+20401	Kolonie Wachter
+20402	Portaal Wachter
+20403	Amarok
+20404	Nagual
+20405	Waheela
+20406	NoNAme
+20407	Fenrir
+20408	Tempelwachter
+20409	Wachter van het Woud
+20410	Verkenner van het Woud
+20411	Voorrijder van het Woud
+20412	Woudwachter Leider
+20413	Kawuco
+20414	Andastre
+20415	Portaal
+20416	Sam Pumpkin
+20417	Okey Speltafel
+20419	Draken Kijker Dolnarr
+20420	Gouden Draken Kist
+20421	Draken Kijker Jaharr
+20422	Draken Ei
+20429	Strijd Zone Beheerder
+20430	Cherie
+20431	Jubileum Handelaar
+20432	Hydra Ei
+20433	Krijger Standbeeld
+20434	Mast
+20435	Meley's Spoor
+20436	Scheepsroer
+20437	Reparatiehout
+20438	Monnik Milbon
+20439	Zi Portaal
+20440	Chou Portaal
+20441	Yin Portaal
+20442	Mao Portaal
+20443	Chen Portaal
+20444	Si Portaal
+20445	Wu Portaal
+20446	Wei Portaal
+20447	Shen Portaal
+20448	You Portaal
+20449	Xu Portaal
+20450	Hai Portaal
+20451	Zodiac Handelaar
+20452	Zi Standbeeld
+20453	Chou Standbeeld
+20454	Yin Standbeeld
+20455	Mao Standbeeld
+20456	Chen Standbeeld
+20457	Si Standbeeld
+20458	Wu Standbeeld
+20459	Wei Standbeeld
+20460	Shen Standbeeld
+20461	You Standbeeld
+20462	Xu Standbeeld
+20463	Hai Standbeeld
+20464	Kanon
+20465	Zodiac Portaal
+20470	Illusie Standbeeld
+20471	Redux Standbeeld
+20472	Tijdsscheur Standbeeld
+20473	Wapensmid Standbeeld
+20474	Pantsersmid Standbeeld
+20475	Heilige Setsmid
+20476	Glorieuze Setsmid
+20477	Ridderlijke Setsmid
+20478	Koninklijke Setsmid
+20479	Majestueuze Setsmid
+20480	Handelsbeheerster
+20481	Handelsbeheerster
+20482	Enigma Beloning
+20483	Enigma Tempel (Bonus C)
+20484	Enigma Tempel (Bonus B)
+20485	Enigma Tempel (Bonus A)
+20486	Gildegevecht-zone (O)
+20487	Gildegevecht-zone (W)
+20488	Gildegevecht-zone (Z)
+20489	Gildegevecht-zone (N)
+20490	Gilde Handelaar
+20491	Vervloekte Stenen Tablet
+20492	Balathor's Schat
+20493	Hwacha
+20494	Massieve IJswand
+20495	Bevroren Drakenei
+20496	Bevroren Drakenei
+20497	Brandend Drakenei
+20498	Oude IJskristallen
+20499	Hwacha (Getransformeerd)
+20500	Draken Ei
+20501	Gaya Kist
+20502	Yut Nori Tafel
+20503	Gaya Handelaar
+20504	Gaya Markt
+20505	Yut Staven
+20506	Van de Koning Tafel
+20507	Eeuwige IJskristallen
+20510	TS: Geest van een Sura
+20511	TS: Am-heh Verslinder
+20512	TS: Taramor's Grafsteen
+20513	TS: Stele van Isfet
+20514	TS: Slot van het Lot
+20515	TS: Drakenpoort
+20516	TS: IJs Leeuw
+20517	TS: Arctische Kubus
+20518	TS: Noord. Drakenpilaar
+20519	TS: Wachter van het Woud
+20520	TS: Verk. van het Woud
+20521	TS: Voor. van het Woud
+20522	TS: Woud Wachter Leider
+20530	RX: Geest van een Sura
+20531	RX: Am-heh Verslinder
+20532	RX: Taramor's Grafsteen
+20533	RX: Stele van Isfet
+20534	RX: Slot van het Lot
+20535	RX: Drakenpoort
+20536	RX: IJs Leeuw
+20537	RX: Arctische Kubus
+20538	RX: Noord. Drakenpilaar
+20539	RX: Wachter van het Woud
+20540	RX: Verk. van het Woud
+20541	RX: Voor. van het Woud
+20542	RX: Woud Wachter Leider
+20650	Medaillehouder
+20702	Altaar van Energie
+20703	Altaar van Geluk
+20704	Altaar van Kracht
+20705	Altaar van Welvaart
+20706	Altaar van Verlichting
+20707	Æ÷Å»(°ÝÀüÁö) 385 385
+20710	Voorraad Kist (BR)
+20711	Uitrusting Kist (BR)
+20712	Elektrisch Veld
+20713	Uitrusting Kist (BR)
+20714	Spec. Voorraad Kist (BR)
+20798	Sung Ma Portaal
+20799	Bloemen
+20800	Gewonde Man
+20802	Yohara Wachter
+20803	Yohara Bewaker
+20804	Serpent Wachter
+20805	Noordewind Wachter
+20806	Zielenkloof Wachter
+20807	Serpentenstandbeeld
+20808	Generaal Kohan
+20809	Confucius
+20810	Chaegirab
+20811	Kim Rim
+20812	Admiraal Angmur
+20813	Noordewind Kluizenaar
+20814	Verdwaalde Verkenner
+20815	Spookachtige Wachter
+20822	Bedrieger
+20823	Meester Chi
+20826	Huahn-So
+20829	Serpententempel Smid
+20830	Geposte Commandant
+20831	Yohara Commandant
+20832	Admiraal Angmur
+20833	Aangetaste Bloemen
+20834	Altaar
+20836	Hellebaardier
+20837	Verlaten
+20838	Niveau 2
+20839	Niveau 3
+20840	Dong Gwang Vlakte
+20841	Premiejager
+20842	Gevangen Smid
+20844	Serpentenstandbeeld
+20845	Premiejag. (Noordew. K.)
+20846	Premiejag. (Zielenkloof)
+20847	Premiejag. (Schuilpl.)
+20848	Oude Botten
+20849	Taehwarang
+20850	Mysterieus Altaar
+20851	Premiejag. (Seo Gw. W.)
+20852	Premiejag. (Nam. Gw. K.)
+20853	Maansmid Aeris
+20856	Schattengoblin
+20857	Enorme Schatkist
+20858	Mysterieuze Echo
+20859	Generaal Asmir
+20860	Verloren Soldaat
+20861	Corruptie Onderzoeker
+20862	Duister Altaar
+20863	Maanlicht Premiejager
+20864	Vervloekte Ridder
+20865	Gewonde Soldaat
+20866	Aloud Altaar
+20867	Drakenziel Albira
+20868	Drakenziel Albira
+20869	Drakenziel Albira
+20870	Placeholder
+20871	Placeholder
+20872	Aamon's Weelderige Kist
+20874	Enasir
+30000	°³ÀÎ»óÁ¡
+30001	°³ÀÎ»óÁ¡
+30002	1001 Nachten
+30003	BBQ Koning
+30004	Schat Jager
+30005	Waak Vlam
+30006	Wapen Handelaar
+30007	Pantser Dealerschap
+30008	Alchemist
+30101	Kud Standbeeld
+30102	Basalt Obelisk
+30103	Tortoise Rots
+30104	Runensteen
+30111	1. Poort des Verderfs
+30112	2. Poort des Verderfs
+30113	3. Poort des Verderfs
+30114	4. Poort des Verderfs
+30115	5. Poort des Verderfs
+30116	6. Poort des Verderfs
+30117	7. Poort des Verderfs
+30118	8. Poort des Verderfs
+30119	9. Poort des Verderf
+30120	Kruidenzak
+30121	Geest van een Sura
+30122	Geest van een Krijger
+30123	Donkere Schrijn
+30124	Sura Skelet 1
+30125	Sura Skelet 2
+30126	Sura Skelet 3
+30127	Sura Skelet 4
+30128	Sura Skelet 5
+30129	Paashaas
+30130	Grafsteen
+30131	Mr. B.
+30132	Mr. B.
+30301	Ader met Zielkristalerts
+30302	Ader met Robijn erts
+30303	Ader met Graniet erts
+30304	Ader met Smaragd erts
+30305	Ader met Saffier erts
+30306	Toermalijn Ader
+30307	Summer
+30308	Brievenbus
+30309	Mist Jadiet Ader (Quest)
+30310	Zon Jadiet Ader
+30311	Duistere Jadiet Ader
+30312	Rokerige Jadiet Ader
+30313	Mist Jadiet Ader
+30314	Kobalt Ader
+33001	¸ðÇè°¡ÀÇ ÇØ°ñ
+33002	Historicus
+33003	Vastende Inwoner
+33004	Vastende Inwoner
+33005	Vastende Inwoner
+33006	Vastende Inwoner
+33007	Vastende Inwoner
+33008	Jack Pompoen
+33009	Altaar van Bloed
+33010	Sneeuwman
+34001	Vuurfeniks
+34002	Rendier Kalf
+34003	IJs Feniks
+34004	Baby Azrael
+34005	Porky
+34006	Rufus
+34007	Khan
+34008	Leondias
+34009	Baby Azrael
+34010	Bambi
+34011	Knuud
+34012	Bao Bao
+34013	Mollige Mini-Beul
+34014	Mollige Mini-Beul (g)
+34015	Botje
+34016	Jade Feniks
+34017	Pool Porkie
+34018	Vorst Rufus
+34019	Arctische Khan
+34020	Sneeuw Leonidas
+34021	Sheldon
+34022	Cooper
+34023	Panter Welpje
+34024	Luipaard Welpje
+34026	Pompoenhoofd
+34027	Kleine Bezem
+34028	Sneeuwvlokje
+34029	Sneeuwklokje
+34030	Amor
+34031	Woedend Hart
+34032	Rode Halve Maan
+34033	Blauwe Halve Maan
+34034	Eweriel
+34035	Ramblue
+34036	Dragonette
+34037	Dragonette (Held)
+34038	Fenix van Verlossing
+34039	Baby Huashin
+34041	Mini Aapje
+34042	Mini Aapje (Held)
+34045	Mini Spin
+34046	Mini Spin (Held)
+34047	Exedyar Gebroed
+34048	Exedyar Zeldzaam Gebroed
+34049	Mini Razador
+34050	Mini Razador (Held)
+34053	Mini Nemere
+34054	Mini Nemere (Held)
+34055	Bruce
+34056	Wayne
+34057	Robin
+34058	Valentino
+34059	Valentinia
+34060	Valentino
+34061	Valentinia
+34062	Lantaarn Maan (Oranje)
+34063	Lantaarn Maan (Blauw)
+34064	Mini Meley
+34065	Mini Meley
+34066	Bonsai
+34067	Mw. Jiangshi+
+34068	Mr. Jiangshi+
+34069	Jiangshi Jr.
+34070	Rode Elf
+34071	Groene Elf
+34072	Behulpzame Elf
+34073	Mini Azrael
+34074	Mini Azrael (Held)
+34075	Dikke Minibeul
+34076	Dikke Minibeul (Held)
+34077	Boze Mini Alastor
+34078	Ontwaakte Mini Alastor
+34080	Baby Baahshido
+34081	Baby Baashido (Held)
+34082	Nessie
+34083	Nessie (Held)
+34084	Donnie
+34085	Frank
+34086	Shiver
+34087	Snivel
+34088	Cruella
+34089	Minidall
+34090	Kleurrijke Lantaarn
+34091	Groene Lantaarn
+34092	Sir Oswald
+34093	Sir Cobblepot
+34094	Sir Chesterfield
+34095	Gryph
+34096	Nogai
+34097	Astrabell
+34098	Helexna
+34099	Chaotika
+34100	Gary Lycaner
+34101	Lycaninho
+34102	Kleine Catenaccio
+34103	Koningsblauwe Pauw
+34104	Roze Pauw
+34105	Indigo Pauw
+34106	Harrie Hazelnoot
+34107	Willie Walnoot
+34108	Korporaal Kraak
+34109	Humpitzer
+34110	Caboomel
+34111	Camelry
+34112	Vorst Kever+
+34113	Vorst Kever
+34114	Alziende Vlammenkat
+34115	Alziende Vorstkat
+34116	Drieogige Vuurkat
+34117	Neusdwerg+ (Rood)
+34118	Neusdwerg+ (Groen)
+34119	Neusdwerg
+34120	Rode Baby Huashin
+34121	Witte Baby Huashin
+34122	Bonsai+
+34123	+Bonsai+
+34124	Klein Vuur Element
+34125	Klein IJs Element
+34126	Klein Bliksem Element
+34127	Klein Wind Element
+34128	Klein Aarde Element
+34129	Klein Duisternis Element
+34130	Speelse Loverador
+34131	Onhandige Loverador
+34132	Kleine Loverador
+34133	Mini Krab Krijger
+34134	Mini Krab
+34135	Trillende Mummie
+34136	Wankelende Mummie
+34137	Bevende Mummie
+34138	Groene Kerstent
+34139	Knoestige Kerstent
+34140	Kleine Kerstent
+34141	Nachtblauwe Anubis
+34142	Bloedrode Anubis
+34143	Kleine Anubis
+34145	Machtige IJs Orca
+34146	Tamme IJs Orca
+34147	Sneeuw Leonidas
+34148	Astrabell
+34149	Vuurfeniks
+34150	IJskoude Dreiging
+34151	Giftige Dreiging
+34152	Kleine Dreiging
+34153	Sneeuwval
+34154	Sneeuwbal
+34155	Snowdon
+34156	Bevroren Sarcofaag
+34157	Karmijnrode Sarcofaag
+34158	Kleine Sarcofaag
+34159	Peperkoek Dasher
+34160	Peperkoek Rudolph
+34161	Baby Peperkoek Dasher
+34162	Schattig Drakenliefje
+34163	Speels Drakenliefje
+34164	Klein Drakenliefje
+34165	Baby Baas
+34166	Baby Baas (Held)
+34167	Mini Vuurbaas
+34168	Mini IJsbaas
+34169	Mini Bliksembaas
+34170	Mini Windbaas
+34171	Mini Aardebaas
+34172	Mini Duisternisbaas
+34173	Mini Baas
+34174	Witte Angorakat
+34175	Bruine Angorakat
+34176	Angorakitten
+34177	Kampioensvoetbal
+34178	Sneeuwvlokje Bambi
+34180	Fluitje
+34181	Sleuteltje
+34182	Mini-Fluitje
+34183	Loyale IJs Orca
+34184	Mini IJs Orca
+34185	Vermetele Tiki Terreur
+34186	Dappere Tiki Terreur
+34187	Kleine Tiki Terreur
+34188	Sneeuw Krampus
+34189	Kolen Krampus
+34190	Kleine Krampus
+34191	Zwarte Stier
+34192	Bruine Stier
+34193	Tamme Stier
+34194	Pincher
+34195	Snapper
+34197	Lilith
+34198	Helena
+34199	Mini-Lilith
+34200	Gouden Loong
+34201	Zilveren Loong
+34202	Kleine Loong
+34203	Mini Balathor
+34204	Balathor Jr
+34205	Pebble
+34206	Mini Pebble
+34207	Maanwacht Uil
+34208	Zonnewacht Uil
+34209	Kleine Wachtuil
+34210	Zwarte Pompoen Steelrij.
+34211	Witte Pompoen Steelrij.
+34212	Mini Pompoen Steelrijder
+34213	Blauwe Winterfee
+34214	Roze Winterfee
+34215	Kleine Winterfee
+34216	Mini Aapje (K Lvl)
+34217	Mini Spin (K Lvl)
+34218	Mini Razador (K Lvl)
+34219	Mini Nemere (K Lvl)
+34220	Dragonette (K Lvl)
+34221	Meley's Baby (K Lvl)
+34222	Mini Azrael (K Lvl)
+34223	Dikke Minibeul (K Lvl)
+34224	Baby Baahshido (K Lvl)
+34225	Nessie (K Lvl)
+34226	Exedyar (K Lvl)
+34227	A. Mini Alastor (K Lvl)
+34228	Baby Baas (K Lvl)
+34229	Baby Aamon
+34230	Vlammende Baby Aamon
+34231	Baby Aamon (K Lvl)
+34234	Pavo
+34235	Gallus
+34236	Kleine Pavo
+34237	Hati
+34238	Sköll
+34239	Kleine Hati
+36000	Sinister Helleros
+36001	Gruwelijk Helleros
+36005	Balathor's Ijsvleugel
+36006	Balathor's Nachtvleugel
+36007	Jungletijger
+36008	Sneeuwtijger
+36009	Besneeuwde Kerstram
+36010	Kolen Kerstram
+36011	Schemerfeniks
+36012	Dageraadfeniks
+40003	Turbo Reddingsplank
+40004	Wukong's Storm
+40005	Wukong's Donder
+40006	Blauwe Drakkar
+40007	Rode Drakkar
+60000	Gilde Beheerder
+60001	Gilde Beheerder
+60002	Gilde Beheerder
+60003	Theowahdan
+60007	Oproephelper
+34900	Buffi
+34901	Buffi

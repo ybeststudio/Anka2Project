@@ -1,0 +1,4 @@
+<ScriptFile>
+	<CreateEterPackXml Input="../binary_unpack/yw_monster2:" ArchivePath="../../Client/pack/yw_monster2" XmlPath="xml/yw_monster2_create.xml">
+	</CreateEterPackXml>
+</ScriptFile>

@@ -1,0 +1,259 @@
+[/ SUMMARY /]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=3;Y=5;LINKINDEX=article#5#17.01;TEXT={WK:1};COLOR_TEXT=cebb98]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=133;Y=5;LINKINDEX=article#5#85.01;TEXT={WK:20};COLOR_TEXT=cebb98]
+
+[\
+    TITLE;\
+    X=10;Y=54;\
+    TEXT_1={WK:1};\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;Y=115;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    Y_PADDING=0;\
+    VNUM_1=50350;\
+    TEXT_1=* {WK:386};\
+    TEXT_2=* {WK:387};\
+    TEXT_3=* {WK:388};\
+    TEXT_4=* {WK:389};\
+    TEXT_2_Y_PADDING = 3;\
+    TEXT_3_Y_PADDING = 8;\
+    TEXT_4_Y_PADDING = 10;\
+]
+
+[\
+    ITEM_LIST_HORIZONTAL_1;\
+    X=120;Y=200;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    IMG_2=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    IMG_3=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    VNUM_1=40804;\
+    VNUM_2=40805;\
+    VNUM_3=40806;\
+]
+
+
+[\
+    TITLE;\
+    X=10;Y=285;\
+    TEXT_1={WK:390};\
+]
+
+[\
+    SUBTITLE;\
+    X=10;Y=360;\
+    TEXT_1={WK:391};\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=410;\
+    TEXT_1={WK:392};\
+    TEXT_2={WK:393:100};\
+    VNUM_7=50350;\
+    \
+    VNUM_1=70970;\
+    PRICE_1=1;\
+    VNUM_2=30153;\
+    PRICE_2=45;\
+    VNUM_3=71084;\
+    PRICE_3=200;\
+    VNUM_4=98493;\
+    PRICE_4=10;\
+    VNUM_5=96338;\
+    PRICE_5=50;\
+    TEXT_1_X_PADDING = -80;\
+    TEXT_2_X_PADDING = -80;\
+    PRICE_3_X_PADDING = -5;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=410+(70*1);\
+    TEXT_1={WK:394};\
+    TEXT_2={WK:395:15};\
+    VNUM_7=50351;\
+    \
+    VNUM_1=70970;\
+    PRICE_1=1;\
+    VNUM_2=96338;\
+    PRICE_2=50;\
+    VNUM_3=30945;\
+    PRICE_3=10;\
+    VNUM_4=25040;\
+    PRICE_4=10;\
+    VNUM_5=40913;\
+    PRICE_5=5;\
+    TEXT_1_X_PADDING = -80;\
+    TEXT_2_X_PADDING = -80;\
+    PRICE_3_X_PADDING = -5;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=410+(70*2);\
+    TEXT_1={WK:396};\
+    TEXT_2={WK:397:4};\
+    VNUM_7=50352;\
+    \
+    VNUM_1=70970;\
+    PRICE_1=1;\
+    VNUM_2=96330;\
+    PRICE_2=100;\
+    VNUM_3=40897;\
+    PRICE_3=2;\
+    VNUM_4=96338;\
+    PRICE_4=50;\
+    VNUM_5=40913;\
+    PRICE_5=10;\
+    TEXT_1_X_PADDING = -80;\
+    TEXT_2_X_PADDING = -80;\
+    PRICE_3_X_PADDING = -5;\
+]
+
+[\
+    SUBTITLE;\
+    X=10;Y=435+(70*3);\
+    TEXT_1={WK:345};\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=420+(70*4);\
+    TEXT_1={WK:392};\
+    TEXT_2={WK:393:200};\
+    VNUM_7=50360;\
+    \
+    VNUM_1=70970;\
+    PRICE_1=3;\
+    VNUM_2=30153;\
+    PRICE_2=900;\
+    VNUM_3=71084;\
+    PRICE_3=300;\
+    VNUM_4=98493;\
+    PRICE_4=10;\
+    VNUM_5=96338;\
+    PRICE_5=100;\
+    TEXT_1_X_PADDING = -80;\
+    TEXT_2_X_PADDING = -80;\
+    PRICE_3_X_PADDING = -5;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=420+(70*5);\
+    TEXT_1={WK:394};\
+    TEXT_2={WK:395:30};\
+    VNUM_7=50361;\
+    \
+    VNUM_1=70970;\
+    PRICE_1=3;\
+    VNUM_2=96338;\
+    PRICE_2=100;\
+    VNUM_3=30945;\
+    PRICE_3=15;\
+    VNUM_4=25040;\
+    PRICE_4=25;\
+    VNUM_5=40913;\
+    PRICE_5=10;\
+    TEXT_1_X_PADDING = -80;\
+    TEXT_2_X_PADDING = -80;\
+    PRICE_3_X_PADDING = -5;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=420+(70*6);\
+    TEXT_1={WK:396};\
+    TEXT_2={WK:397:4};\
+    VNUM_7=50362;\
+    \
+    VNUM_1=70970;\
+    PRICE_1=3;\
+    VNUM_2=96330;\
+    PRICE_2=200;\
+    VNUM_3=40897;\
+    PRICE_3=5;\
+    VNUM_4=96338;\
+    PRICE_4=100;\
+    VNUM_5=40913;\
+    PRICE_5=20;\
+    TEXT_1_X_PADDING = -80;\
+    TEXT_2_X_PADDING = -80;\
+    PRICE_3_X_PADDING = -5;\
+]
+
+
+[\
+    SUBTITLE;\
+    X=10;Y=440+(70*7);\
+    TEXT_1={WK:346};\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=420+(70*8);\
+    TEXT_1={WK:392};\
+    TEXT_2={WK:393:500};\
+    VNUM_7=50370;\
+    \
+    VNUM_1=70970;\
+    PRICE_1=5;\
+    VNUM_2=30153;\
+    PRICE_2=200;\
+    VNUM_3=71084;\
+    PRICE_3=500;\
+    VNUM_4=98494;\
+    PRICE_4=5;\
+    VNUM_5=96338;\
+    PRICE_5=150;\
+    TEXT_1_X_PADDING = -80;\
+    TEXT_2_X_PADDING = -80;\
+    PRICE_3_X_PADDING = -5;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=420+(70*9);\
+    TEXT_1={WK:394};\
+    TEXT_2={WK:395:50};\
+    VNUM_7=50371;\
+    \
+    VNUM_1=70970;\
+    PRICE_1=5;\
+    VNUM_2=96338;\
+    PRICE_2=150;\
+    VNUM_3=40950;\
+    PRICE_3=1;\
+    VNUM_4=25040;\
+    PRICE_4=25;\
+    VNUM_5=40913;\
+    PRICE_5=15;\
+    TEXT_1_X_PADDING = -80;\
+    TEXT_2_X_PADDING = -80;\
+    PRICE_3_X_PADDING = -5;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=420+(70*10);\
+    TEXT_1={WK:396};\
+    TEXT_2={WK:397:4};\
+    VNUM_7=50372;\
+    \
+    VNUM_1=70970;\
+    PRICE_1=5;\
+    VNUM_2=96330;\
+    PRICE_2=300;\
+    VNUM_3=40897;\
+    PRICE_3=10;\
+    VNUM_4=96338;\
+    PRICE_4=150;\
+    VNUM_5=40913;\
+    PRICE_5=25;\
+    TEXT_1_X_PADDING = -80;\
+    TEXT_2_X_PADDING = -80;\
+    PRICE_3_X_PADDING = -5;\
+]

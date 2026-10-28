@@ -1,0 +1,235 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    TEXT_1=Summer Event;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=116; TABLE_HEADERS=Column A; TABLE_WIDTHS=520]
+[TR; H=62]
+[TD; TEXT=Collect Summer materials from Metins and Dungeons, summon Shrines, upgrade your\n Surfboard, and conquer the Summer Dungeon. Summer content is available only while\n the event is active.; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=213;\
+    ANCHOR=overview;\
+    TEXT_1={WK:99};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=263; TABLE_HEADERS=Column A|Column B; TABLE_WIDTHS=160|360]
+[TR; H=32]
+[TD; TEXT=Event NPC:; ALIGN=center]
+[TD; TEXT=Summer Shop, next to the Master on Map 1; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=Event Dungeon:; ALIGN=center]
+[TD; TEXT=Summer Dungeon, Level 54-105; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=Daily Limit:; ALIGN=center]
+[TD; TEXT=Summer Dungeon: 1 entry per day and PC; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=Main Rewards:; ALIGN=center]
+[TD; TEXT=Surfboard, Summer materials and event bonuses; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=405; TABLE_HEADERS=Column A; TABLE_WIDTHS=520]
+[TR; H=50]
+[TD; TEXT=The Summer Shop, Shrines, drops and upgrades are available only during the\n Summerevent. The Surfboard remains usable for 7 days after the event ends.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Find active Summer bonuses under the palm-tree icon. It displays the remaining\n duration or OFF for the Watermelon and Dungeon bonuses.; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=538;\
+    ANCHOR=Shrines;\
+    TEXT_1=Shrines;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=588; TABLE_HEADERS=Column A|Column B|Column C|Column D; TABLE_WIDTHS=130|130|130|130]
+[TR; H=32]
+[TD; ITEM=95071]
+[TD; ITEM=95072]
+[TD; ITEM=95073]
+[TD; ITEM=95074]
+[TR; H=32]
+[TD; TEXT=Strawberry Scoop; ALIGN=center]
+[TD; TEXT=Mint Scoop; ALIGN=center]
+[TD; TEXT=Chocolate Scoop; ALIGN=center]
+[TD; TEXT=Pistachio Scoop; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=670; TABLE_HEADERS=Column A; TABLE_WIDTHS=520]
+[TR; H=50]
+[TD; TEXT=Use 10 matching Shrine Seals to summon one Shrine.Every Shrine guarantees its\n matching Scoop while the event is active.; ALIGN=center]
+[TABLE_END]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=740;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=95079;\
+    TEXT_1=Color2(AppendItem(95079)) is guaranteed from the following Dungeon-Bosses:;\
+    TEXT_2=Eligible: Baroness, Devil Tower, Catacombs, Beran, Earth, Razador, Nemere,\nEnigma and Summer Dungeon.;\
+    Y_PADDING=12;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=814; TABLE_HEADERS=Column A|Column B; TABLE_WIDTHS=220|300]
+[TR; H=32]
+[TD; TEXT=Metins:; ALIGN=center]
+[TD; TEXT=Level 55, 60, 65, 70, 80, 90 and 105; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=Seal reward:; ALIGN=center]
+[TD; TEXT=Metins can drop one random Summer Shrine Seal; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=Casual players:; ALIGN=center]
+[TD; TEXT=Receive an improved Seal chance; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=Account Scroll:; ALIGN=center]
+[TD; TEXT=An additional independent chance for another Seal; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=956; TABLE_HEADERS=Column A; TABLE_WIDTHS=520]
+[TR; H=50]
+[TD; TEXT=Seals are placed directly into your inventory. Dungeon Metins, Legendary Metins,\n Summer Shrines and Exploration Metins are excluded.; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1041;\
+    ANCHOR=shop;\
+    TEXT_1=Summer Shop;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=1091; TABLE_HEADERS=Column A|Column 5; TABLE_WIDTHS=140|240]
+[TR; H=42]
+[TD; ITEM=95060]
+[TD; TEXT=Color2(AppendItem(95060)); ALIGN=center]
+[TR; H=42]
+[TD; ITEM=95080]
+[TD; TEXT=Color2(AppendItem(95080)); ALIGN=center]
+[TR; H=42]
+[TD; ITEM=95070]
+[TD; TEXT=Color2(AppendItem(95070)); ALIGN=center]
+[TR; H=42]
+[TD; ITEM=94106]
+[TD; TEXT=Color2(AppendItem(94106)); ALIGN=center]
+[TR; H=42]
+[TD; ITEM=33204]
+[TD; TEXT=Color2(AppendItem(33204)); ALIGN=center]
+[TR; H=42]
+[TD; ITEM=95083]
+[TD; TEXT=Color2(AppendItem(95083)); ALIGN=center]
+[TR; H=42]
+[TD; ITEM=95084]
+[TD; TEXT=Color2(AppendItem(95084)); ALIGN=center]
+[TR; H=42]
+[TD; ITEM=95085]
+[TD; TEXT=Color2(AppendItem(95085)); ALIGN=center]
+[TR; H=42]
+[TD; ITEM=95086]
+[TD; TEXT=Color2(AppendItem(95086)); ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=1473; TABLE_HEADERS=Column A; TABLE_WIDTHS=520]
+[TR; H=50]
+[TD; TEXT=The Shop is available only during the event. Open it at the NPC or by right-clicking\n a Scoop, Waffle Cone or Summer Swirl.; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1558;\
+    ANCHOR=bonuses;\
+    TEXT_1=Surfboard & Bonuses;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1608;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=95060;\
+    TEXT_1=It grants +1% to +10% damage against Metin Stones and Bosses,\nplus a chance to duplicate Dungeon Yang rewards.;\
+    TEXT_3=At +9, the Metin Stone damage bonus becomes uncapped.;\
+    Y_PADDING=12;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=1682; TABLE_HEADERS=Column A|Column B; TABLE_WIDTHS=220|300]
+[TR; H=32]
+[TD; TEXT=Activation:; ALIGN=center]
+[TD; TEXT=Only one Surfboard can be active at a time; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=While active:; ALIGN=center]
+[TD; TEXT=The Surfboard is locked until deactivated; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=Trading & storage:; ALIGN=center]
+[TD; TEXT=Bound; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=After event end:; ALIGN=center]
+[TD; TEXT=Usable for 7 more days, then disappears; ALIGN=center]
+[TABLE_END]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1824;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=95081;\
+    TEXT_1=Summer Watermelons spawn and refresh regularly across outdoor maps.;\
+    TEXT_2=Destroying one grants +5% Color(AppendBonus(119)) (uncapped) for 2 hours.;\
+    TEXT_3=You cannot damage another Watermelon while this bonus is active.;\
+    Y_PADDING=12;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=1898; TABLE_HEADERS=Column A|Column B; TABLE_WIDTHS=210|310]
+[TR; H=52]
+[TD; TEXT=Summer Mystical Chest; ALIGN=center]
+[TD; TEXT=Open this tropical chest to reveal\n one Summer reward.; ALIGN=center]
+[TR; H=52]
+[TD; TEXT=Mount Reinforcement; ALIGN=center]
+[TD; TEXT=+5% Color(AppendBonus(120)) for 7 days; ALIGN=center]
+[TR; H=52]
+[TD; TEXT=Pet Reinforcement; ALIGN=center]
+[TD; TEXT=+5% Color(AppendBonus(119)) for 7 days; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=2085;\
+    ANCHOR=dungeon;\
+    TEXT_1=Summer Dungeon;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=2135; TABLE_HEADERS=Column A|Column B; TABLE_WIDTHS=210|310]
+[TR; H=32]
+[TD; TEXT=Level range:; ALIGN=center]
+[TD; TEXT=54 to 105; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=Entry:; ALIGN=center]
+[TD; TEXT=No entry item required; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=Modes:; ALIGN=center]
+[TD; TEXT=Solo or Party Finder with 2 players; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=Limit:; ALIGN=center]
+[TD; TEXT=Once per day and PC, even after changing character; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=Final boss:; ALIGN=center]
+[TD; TEXT=King of Oceans; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=2307; TABLE_HEADERS=Column A; TABLE_WIDTHS=520]
+[TR; H=65]
+[TD; TEXT=The Dungeon contains monster-clearing stages, palm trees and coconut delivery, a\n treasure search, an intermediate boss, then sandcastle defence in Party mode or\n Summer Metins in Solo mode.; ALIGN=center]
+[TABLE_END]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=2392;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=95082;\
+    TEXT_1=Every player receives Color2(AppendItem(95082)) containing 250 of each\n Shrine Seal and +10% Color(AppendBonus(125)) for 24 hours.;\
+    TEXT_1_Y_PADDING=6;\
+    Y_PADDING=12;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=2457;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=33204;\
+    TEXT_2=Every player also receives one Color2(AppendItem(33204)) as a special reward!;\
+    TEXT_1_Y_PADDING=10;\
+    Y_PADDING=12;\
+]

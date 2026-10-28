@@ -1,0 +1,22 @@
+[BANNER_IMG = d:/ymir work/ui/wiki/banners/systems/battlepass.png]
+[CENTER_ALIGN] Version 1.3.0.2 (13/08/2021)
+
+[CENTER_ALIGN;FONT_SIZE=18;COLOR=58ADFF]Changements:
+ 
+[CENTER_ALIGN] - De nouveaux effets sont disponible pour le Booster du discord et les streamers
+[CENTER_ALIGN] - Ajout d'objets dans le shop de Barbe Blanche
+[CENTER_ALIGN] - Supression de la limite de temps sur les Elixir temporelle 
+[CENTER_ALIGN] - Chaussure feu/océan niveau 115
+[CENTER_ALIGN] - Rajout du drop des peau de patte d'ours
+[CENTER_ALIGN] - Rajout des pierres du dragon permanente
+[CENTER_ALIGN] - Rajout du retour instance sur la grotte des pirates
+[CENTER_ALIGN] - Rajout de pierres sur les metin du temple ochao
+
+[CENTER_ALIGN;FONT_SIZE=18;COLOR=58ADFF]Correction :
+ 
+[CENTER_ALIGN] - Correction de l'amélioration des médaille permanente
+[CENTER_ALIGN] - Correction du PNJ craft Kyanite et new collecteur d'âme
+[CENTER_ALIGN] - Correction du classement des âmes vendu
+ 
+ 
+ 

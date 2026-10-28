@@ -1,0 +1,4 @@
+<ScriptFile>
+	<CreateEterPackXml Input="../binary_unpack/yw_npc_pet:" ArchivePath="../../Client/pack/yw_npc_pet" XmlPath="xml/yw_npc_pet_create.xml">
+	</CreateEterPackXml>
+</ScriptFile>

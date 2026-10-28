@@ -1,0 +1,7 @@
+[X=0;Y=101;THINBOARD; SIZE_X=513; SIZE_Y=61]
+[X=11;Y=115;IMG=d:/ymir work/ui/game/common/slots/slot_runes.png;]
+[X=13;Y=118;ITEM=ParentVnum(1);SOCKET=0:0#1:100]
+[X=60;Y=122;FONT_SIZE=16b;COLOR=D7B25B;NO_ADD_Y;]ParentTxt(1)
+[X=122;Y=109;FONT_SIZE=13b;NO_ADD_Y;]ParentTxt(2)
+[X=122;Y=109+15*1;FONT_SIZE=13b;NO_ADD_Y;]ParentTxt(3)
+[X=122;Y=109+15*2;FONT_SIZE=13b;NO_ADD_Y;]ParentTxt(4)

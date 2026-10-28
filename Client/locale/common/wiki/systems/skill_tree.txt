@@ -1,0 +1,642 @@
+[/ SUMMARY /]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=3;Y=5;LINKINDEX=article#2#18.20;TEXT={WK:1};COLOR_TEXT=cebb98]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=133;Y=5;LINKINDEX=article#2#114.20;TEXT={WK:331};COLOR_TEXT=cebb98]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=263;Y=5;LINKINDEX=article#2#114.20;TEXT={WK:332};COLOR_TEXT=cebb98]
+ 
+[\
+    TITLE;\
+    X=10;Y=54;\
+    TEXT_1={WK:1};\
+] 
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=115;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/skill_tree/1.png;\
+    Y_PADDING=5;\
+    TEXT_1={WK:323};\
+    TEXT_2={WK:324};\
+    TEXT_3={WK:325};\
+    TEXT_4={WK:326};\
+    TEXT_4_X_PADDING = 10;\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;Y=200;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    Y_PADDING=5;\
+    VNUM_1=26000;\
+    TEXT_1={WK:327};\
+    TEXT_2={WK:328};\
+    TEXT_3={WK:329};\
+    TEXT_4={WK:330};\
+    TEXT_4_X_PADDING = 10;\
+]
+
+
+[\
+    TITLE;\
+    X=10;Y=287;\
+    TEXT_1=AppendTree(0) - AppendTree(5) - AppendTree(15);\
+] 
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=355;\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 0 |Eemoji/arrow_r.png|e  Lvl 1;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/22_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/3_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/33_0.png;\
+    VNUM_1=AppendSkillTreeItem(1,0);\
+    VNUM_2=AppendSkillTreeItem(1,1);\
+    VNUM_3=AppendSkillTreeItem(1,2);\
+    VNUM_4=AppendSkillTreeItem(1,3);\
+    VNUM_5=AppendSkillTreeItem(1,4);\
+    VNUM_6=AppendSkillTreeItem(1,5);\
+    PRICE_1=AppendSkillTreeCount(1,0);\
+    PRICE_2=AppendSkillTreeCount(1,1);\
+    PRICE_3=AppendSkillTreeCount(1,2);\
+    PRICE_4=AppendSkillTreeCount(1,3);\
+    PRICE_5=AppendSkillTreeCount(1,4);\
+    PRICE_6=AppendSkillTreeCount(1,5);\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=355+(70*1);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 1 |Eemoji/arrow_r.png|e  Lvl 2;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/22_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/3_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/33_0.png;\
+    VNUM_1=AppendSkillTreeItem(2,0);\
+    VNUM_2=AppendSkillTreeItem(2,1);\
+    VNUM_3=AppendSkillTreeItem(2,2);\
+    VNUM_4=AppendSkillTreeItem(2,3);\
+    VNUM_5=AppendSkillTreeItem(2,4);\
+    VNUM_6=AppendSkillTreeItem(2,5);\
+    PRICE_1=AppendSkillTreeCount(2,0);\
+    PRICE_2=AppendSkillTreeCount(2,1);\
+    PRICE_3=AppendSkillTreeCount(2,2);\
+    PRICE_4=AppendSkillTreeCount(2,3);\
+    PRICE_5=AppendSkillTreeCount(2,4);\
+    PRICE_6=AppendSkillTreeCount(2,5);\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=355+(70*2);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 2 |Eemoji/arrow_r.png|e  Lvl 3;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/22_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/3_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/33_0.png;\
+    VNUM_1=AppendSkillTreeItem(3,0);\
+    VNUM_2=AppendSkillTreeItem(3,1);\
+    VNUM_3=AppendSkillTreeItem(3,2);\
+    VNUM_4=AppendSkillTreeItem(3,3);\
+    VNUM_5=AppendSkillTreeItem(3,4);\
+    VNUM_6=AppendSkillTreeItem(3,5);\
+    PRICE_1=AppendSkillTreeCount(3,0);\
+    PRICE_2=AppendSkillTreeCount(3,1);\
+    PRICE_3=AppendSkillTreeCount(3,2);\
+    PRICE_4=AppendSkillTreeCount(3,3);\
+    PRICE_5=AppendSkillTreeCount(3,4);\
+    PRICE_6=AppendSkillTreeCount(3,5);\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=355+(70*3);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 3 |Eemoji/arrow_r.png|e  Lvl 4;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/22_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/3_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/33_0.png;\
+    VNUM_1=AppendSkillTreeItem(4,0);\
+    VNUM_2=AppendSkillTreeItem(4,1);\
+    VNUM_3=AppendSkillTreeItem(4,2);\
+    VNUM_4=AppendSkillTreeItem(4,3);\
+    VNUM_5=AppendSkillTreeItem(4,4);\
+    VNUM_6=AppendSkillTreeItem(4,5);\
+    PRICE_1=AppendSkillTreeCount(4,0);\
+    PRICE_2=AppendSkillTreeCount(4,1);\
+    PRICE_3=AppendSkillTreeCount(4,2);\
+    PRICE_4=AppendSkillTreeCount(4,3);\
+    PRICE_5=AppendSkillTreeCount(4,4);\
+    PRICE_6=AppendSkillTreeCount(4,5);\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=355+(70*4);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 4 |Eemoji/arrow_r.png|e  Lvl 5;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/22_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/3_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/33_0.png;\
+    VNUM_1=AppendSkillTreeItem(5,0);\
+    VNUM_2=AppendSkillTreeItem(5,1);\
+    VNUM_3=AppendSkillTreeItem(5,2);\
+    VNUM_4=AppendSkillTreeItem(5,3);\
+    VNUM_5=AppendSkillTreeItem(5,4);\
+    VNUM_6=AppendSkillTreeItem(5,5);\
+    PRICE_1=AppendSkillTreeCount(5,0);\
+    PRICE_2=AppendSkillTreeCount(5,1);\
+    PRICE_3=AppendSkillTreeCount(5,2);\
+    PRICE_4=AppendSkillTreeCount(5,3);\
+    PRICE_5=AppendSkillTreeCount(5,4);\
+    PRICE_6=AppendSkillTreeCount(5,5);\
+]
+
+[\
+    TITLE;\
+    X=10;Y=720;\
+    TEXT_1=AppendTree(1) - AppendTree(6) - AppendTree(16);\
+] 
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=790;\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 0 |Eemoji/arrow_r.png|e  Lvl 1;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/20_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/7_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/36_0.png;\
+    VNUM_1=AppendSkillTreeItem(6,0);\
+    VNUM_2=AppendSkillTreeItem(6,1);\
+    VNUM_3=AppendSkillTreeItem(6,2);\
+    VNUM_4=AppendSkillTreeItem(6,3);\
+    VNUM_5=AppendSkillTreeItem(6,4);\
+    VNUM_6=AppendSkillTreeItem(6,5);\
+    PRICE_1=AppendSkillTreeCount(6,0);\
+    PRICE_2=AppendSkillTreeCount(6,1);\
+    PRICE_3=AppendSkillTreeCount(6,2);\
+    PRICE_4=AppendSkillTreeCount(6,3);\
+    PRICE_5=AppendSkillTreeCount(6,4);\
+    PRICE_6=AppendSkillTreeCount(6,5);\
+    PRICE_2_X_PADDING = -10;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=790+(70*1);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 1 |Eemoji/arrow_r.png|e  Lvl 2;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/20_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/7_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/36_0.png;\
+    VNUM_1=AppendSkillTreeItem(7,0);\
+    VNUM_2=AppendSkillTreeItem(7,1);\
+    VNUM_3=AppendSkillTreeItem(7,2);\
+    VNUM_4=AppendSkillTreeItem(7,3);\
+    VNUM_5=AppendSkillTreeItem(7,4);\
+    VNUM_6=AppendSkillTreeItem(7,5);\
+    PRICE_1=AppendSkillTreeCount(7,0);\
+    PRICE_2=AppendSkillTreeCount(7,1);\
+    PRICE_3=AppendSkillTreeCount(7,2);\
+    PRICE_4=AppendSkillTreeCount(7,3);\
+    PRICE_5=AppendSkillTreeCount(7,4);\
+    PRICE_6=AppendSkillTreeCount(7,5);\
+    PRICE_1_X_PADDING = -3;\
+    PRICE_2_X_PADDING = -10;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=790+(70*2);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 2 |Eemoji/arrow_r.png|e  Lvl 3;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/20_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/7_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/36_0.png;\
+    VNUM_1=AppendSkillTreeItem(8,0);\
+    VNUM_2=AppendSkillTreeItem(8,1);\
+    VNUM_3=AppendSkillTreeItem(8,2);\
+    VNUM_4=AppendSkillTreeItem(8,3);\
+    VNUM_5=AppendSkillTreeItem(8,4);\
+    VNUM_6=AppendSkillTreeItem(8,5);\
+    PRICE_1=AppendSkillTreeCount(8,0);\
+    PRICE_2=AppendSkillTreeCount(8,1);\
+    PRICE_3=AppendSkillTreeCount(8,2);\
+    PRICE_4=AppendSkillTreeCount(8,3);\
+    PRICE_5=AppendSkillTreeCount(8,4);\
+    PRICE_6=AppendSkillTreeCount(8,5);\
+    PRICE_2_X_PADDING = -10;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=790+(70*3);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 3 |Eemoji/arrow_r.png|e  Lvl 4;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/20_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/7_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/36_0.png;\
+    VNUM_1=AppendSkillTreeItem(9,0);\
+    VNUM_2=AppendSkillTreeItem(9,1);\
+    VNUM_3=AppendSkillTreeItem(9,2);\
+    VNUM_4=AppendSkillTreeItem(9,3);\
+    VNUM_5=AppendSkillTreeItem(9,4);\
+    VNUM_6=AppendSkillTreeItem(9,5);\
+    PRICE_1=AppendSkillTreeCount(9,0);\
+    PRICE_2=AppendSkillTreeCount(9,1);\
+    PRICE_3=AppendSkillTreeCount(9,2);\
+    PRICE_4=AppendSkillTreeCount(9,3);\
+    PRICE_5=AppendSkillTreeCount(9,4);\
+    PRICE_6=AppendSkillTreeCount(9,5);\
+    PRICE_1_X_PADDING = -3;\
+    PRICE_2_X_PADDING = -10;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=790+(70*4);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 4 |Eemoji/arrow_r.png|e  Lvl 5;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/20_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/7_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/36_0.png;\
+    VNUM_1=AppendSkillTreeItem(10,0);\
+    VNUM_2=AppendSkillTreeItem(10,1);\
+    VNUM_3=AppendSkillTreeItem(10,2);\
+    VNUM_4=AppendSkillTreeItem(10,3);\
+    VNUM_5=AppendSkillTreeItem(10,4);\
+    VNUM_6=AppendSkillTreeItem(10,5);\
+    PRICE_1=AppendSkillTreeCount(10,0);\
+    PRICE_2=AppendSkillTreeCount(10,1);\
+    PRICE_3=AppendSkillTreeCount(10,2);\
+    PRICE_4=AppendSkillTreeCount(10,3);\
+    PRICE_5=AppendSkillTreeCount(10,4);\
+    PRICE_6=AppendSkillTreeCount(10,5);\
+]
+
+[\
+    TITLE;\
+    X=10;Y=1155;\
+    TEXT_1=AppendTree(2) - AppendTree(7) - AppendTree(17);\
+] 
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=1225;\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 0 |Eemoji/arrow_r.png|e  Lvl 1;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/27_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/17_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/34_0.png;\
+    VNUM_1=AppendSkillTreeItem(6,0);\
+    VNUM_2=AppendSkillTreeItem(6,1);\
+    VNUM_3=AppendSkillTreeItem(6,2);\
+    VNUM_4=AppendSkillTreeItem(6,3);\
+    VNUM_5=AppendSkillTreeItem(6,4);\
+    VNUM_6=AppendSkillTreeItem(6,5);\
+    PRICE_1=AppendSkillTreeCount(6,0);\
+    PRICE_2=AppendSkillTreeCount(6,1);\
+    PRICE_3=AppendSkillTreeCount(6,2);\
+    PRICE_4=AppendSkillTreeCount(6,3);\
+    PRICE_5=AppendSkillTreeCount(6,4);\
+    PRICE_6=AppendSkillTreeCount(6,5);\
+    PRICE_2_X_PADDING = -10;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=1225+(70*1);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 1 |Eemoji/arrow_r.png|e  Lvl 2;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/27_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/17_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/34_0.png;\
+    VNUM_1=AppendSkillTreeItem(7,0);\
+    VNUM_2=AppendSkillTreeItem(7,1);\
+    VNUM_3=AppendSkillTreeItem(7,2);\
+    VNUM_4=AppendSkillTreeItem(7,3);\
+    VNUM_5=AppendSkillTreeItem(7,4);\
+    VNUM_6=AppendSkillTreeItem(7,5);\
+    PRICE_1=AppendSkillTreeCount(7,0);\
+    PRICE_2=AppendSkillTreeCount(7,1);\
+    PRICE_3=AppendSkillTreeCount(7,2);\
+    PRICE_4=AppendSkillTreeCount(7,3);\
+    PRICE_5=AppendSkillTreeCount(7,4);\
+    PRICE_6=AppendSkillTreeCount(7,5);\
+    PRICE_1_X_PADDING = -3;\
+    PRICE_2_X_PADDING = -10;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=1225+(70*2);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 2 |Eemoji/arrow_r.png|e  Lvl 3;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/27_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/17_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/34_0.png;\
+    VNUM_1=AppendSkillTreeItem(8,0);\
+    VNUM_2=AppendSkillTreeItem(8,1);\
+    VNUM_3=AppendSkillTreeItem(8,2);\
+    VNUM_4=AppendSkillTreeItem(8,3);\
+    VNUM_5=AppendSkillTreeItem(8,4);\
+    VNUM_6=AppendSkillTreeItem(8,5);\
+    PRICE_1=AppendSkillTreeCount(8,0);\
+    PRICE_2=AppendSkillTreeCount(8,1);\
+    PRICE_3=AppendSkillTreeCount(8,2);\
+    PRICE_4=AppendSkillTreeCount(8,3);\
+    PRICE_5=AppendSkillTreeCount(8,4);\
+    PRICE_6=AppendSkillTreeCount(8,5);\
+    PRICE_2_X_PADDING = -10;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=1225+(70*3);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 3 |Eemoji/arrow_r.png|e  Lvl 4;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/27_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/17_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/34_0.png;\
+    VNUM_1=AppendSkillTreeItem(9,0);\
+    VNUM_2=AppendSkillTreeItem(9,1);\
+    VNUM_3=AppendSkillTreeItem(9,2);\
+    VNUM_4=AppendSkillTreeItem(9,3);\
+    VNUM_5=AppendSkillTreeItem(9,4);\
+    VNUM_6=AppendSkillTreeItem(9,5);\
+    PRICE_1=AppendSkillTreeCount(9,0);\
+    PRICE_2=AppendSkillTreeCount(9,1);\
+    PRICE_3=AppendSkillTreeCount(9,2);\
+    PRICE_4=AppendSkillTreeCount(9,3);\
+    PRICE_5=AppendSkillTreeCount(9,4);\
+    PRICE_6=AppendSkillTreeCount(9,5);\
+    PRICE_1_X_PADDING = -3;\
+    PRICE_2_X_PADDING = -10;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=1225+(70*4);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 4 |Eemoji/arrow_r.png|e  Lvl 5;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/27_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/17_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/34_0.png;\
+    VNUM_1=AppendSkillTreeItem(11,0);\
+    VNUM_2=AppendSkillTreeItem(11,1);\
+    VNUM_3=AppendSkillTreeItem(11,2);\
+    VNUM_4=AppendSkillTreeItem(11,3);\
+    VNUM_5=AppendSkillTreeItem(11,4);\
+    VNUM_6=AppendSkillTreeItem(11,5);\
+    PRICE_1=AppendSkillTreeCount(11,0);\
+    PRICE_2=AppendSkillTreeCount(11,1);\
+    PRICE_3=AppendSkillTreeCount(11,2);\
+    PRICE_4=AppendSkillTreeCount(11,3);\
+    PRICE_5=AppendSkillTreeCount(11,4);\
+    PRICE_6=AppendSkillTreeCount(11,5);\
+]
+
+[\
+    TITLE;\
+    X=10;Y=1590;\
+    TEXT_1=AppendTree(3) - AppendTree(8) - AppendTree(18);\
+] 
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=1660;\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 0 |Eemoji/arrow_r.png|e  Lvl 1;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/35_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/9_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/37_0.png;\
+    VNUM_1=AppendSkillTreeItem(12,0);\
+    VNUM_2=AppendSkillTreeItem(12,1);\
+    VNUM_3=AppendSkillTreeItem(12,2);\
+    VNUM_4=AppendSkillTreeItem(12,3);\
+    VNUM_5=AppendSkillTreeItem(12,4);\
+    VNUM_6=AppendSkillTreeItem(12,5);\
+    PRICE_1=AppendSkillTreeCount(12,0);\
+    PRICE_2=AppendSkillTreeCount(12,1);\
+    PRICE_3=AppendSkillTreeCount(12,2);\
+    PRICE_4=AppendSkillTreeCount(12,3);\
+    PRICE_5=AppendSkillTreeCount(12,4);\
+    PRICE_6=AppendSkillTreeCount(12,5);\
+    PRICE_2_X_PADDING = -7;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=1660+(70*1);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 1 |Eemoji/arrow_r.png|e  Lvl 2;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/35_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/9_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/37_0.png;\
+    VNUM_1=AppendSkillTreeItem(13,0);\
+    VNUM_2=AppendSkillTreeItem(13,1);\
+    VNUM_3=AppendSkillTreeItem(13,2);\
+    VNUM_4=AppendSkillTreeItem(13,3);\
+    VNUM_5=AppendSkillTreeItem(13,4);\
+    VNUM_6=AppendSkillTreeItem(13,5);\
+    PRICE_1=AppendSkillTreeCount(13,0);\
+    PRICE_2=AppendSkillTreeCount(13,1);\
+    PRICE_3=AppendSkillTreeCount(13,2);\
+    PRICE_4=AppendSkillTreeCount(13,3);\
+    PRICE_5=AppendSkillTreeCount(13,4);\
+    PRICE_6=AppendSkillTreeCount(13,5);\
+    PRICE_2_X_PADDING = -7;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=1660+(70*2);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 2 |Eemoji/arrow_r.png|e  Lvl 3;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/35_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/9_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/37_0.png;\
+    VNUM_1=AppendSkillTreeItem(14,0);\
+    VNUM_2=AppendSkillTreeItem(14,1);\
+    VNUM_3=AppendSkillTreeItem(14,2);\
+    VNUM_4=AppendSkillTreeItem(14,3);\
+    VNUM_5=AppendSkillTreeItem(14,4);\
+    VNUM_6=AppendSkillTreeItem(14,5);\
+    PRICE_1=AppendSkillTreeCount(14,0);\
+    PRICE_2=AppendSkillTreeCount(14,1);\
+    PRICE_3=AppendSkillTreeCount(14,2);\
+    PRICE_4=AppendSkillTreeCount(14,3);\
+    PRICE_5=AppendSkillTreeCount(14,4);\
+    PRICE_6=AppendSkillTreeCount(14,5);\
+    PRICE_2_X_PADDING = -7;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=1660+(70*3);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 3 |Eemoji/arrow_r.png|e  Lvl 4;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/35_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/9_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/37_0.png;\
+    VNUM_1=AppendSkillTreeItem(15,0);\
+    VNUM_2=AppendSkillTreeItem(15,1);\
+    VNUM_3=AppendSkillTreeItem(15,2);\
+    VNUM_4=AppendSkillTreeItem(15,3);\
+    VNUM_5=AppendSkillTreeItem(15,4);\
+    VNUM_6=AppendSkillTreeItem(15,5);\
+    PRICE_1=AppendSkillTreeCount(15,0);\
+    PRICE_2=AppendSkillTreeCount(15,1);\
+    PRICE_3=AppendSkillTreeCount(15,2);\
+    PRICE_4=AppendSkillTreeCount(15,3);\
+    PRICE_5=AppendSkillTreeCount(15,4);\
+    PRICE_6=AppendSkillTreeCount(15,5);\
+    PRICE_2_X_PADDING = -7;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=1660+(70*4);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 4 |Eemoji/arrow_r.png|e  Lvl 5;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/35_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/9_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/37_0.png;\
+    VNUM_1=AppendSkillTreeItem(16,0);\
+    VNUM_2=AppendSkillTreeItem(16,1);\
+    VNUM_3=AppendSkillTreeItem(16,2);\
+    VNUM_4=AppendSkillTreeItem(16,3);\
+    VNUM_5=AppendSkillTreeItem(16,4);\
+    VNUM_6=AppendSkillTreeItem(16,5);\
+    PRICE_1=AppendSkillTreeCount(16,0);\
+    PRICE_2=AppendSkillTreeCount(16,1);\
+    PRICE_3=AppendSkillTreeCount(16,2);\
+    PRICE_4=AppendSkillTreeCount(16,3);\
+    PRICE_5=AppendSkillTreeCount(16,4);\
+    PRICE_6=AppendSkillTreeCount(16,5);\
+]
+
+[\
+    TITLE;\
+    X=10;Y=2025;\
+    TEXT_1=AppendTree(4) - AppendTree(9) - AppendTree(19);\
+] 
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=2095;\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 0 |Eemoji/arrow_r.png|e  Lvl 1;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/35_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/9_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/37_0.png;\
+    VNUM_1=AppendSkillTreeItem(12,0);\
+    VNUM_2=AppendSkillTreeItem(12,1);\
+    VNUM_3=AppendSkillTreeItem(12,2);\
+    VNUM_4=AppendSkillTreeItem(12,3);\
+    VNUM_5=AppendSkillTreeItem(12,4);\
+    VNUM_6=AppendSkillTreeItem(12,5);\
+    PRICE_1=AppendSkillTreeCount(12,0);\
+    PRICE_2=AppendSkillTreeCount(12,1);\
+    PRICE_3=AppendSkillTreeCount(12,2);\
+    PRICE_4=AppendSkillTreeCount(12,3);\
+    PRICE_5=AppendSkillTreeCount(12,4);\
+    PRICE_6=AppendSkillTreeCount(12,5);\
+    PRICE_2_X_PADDING = -7;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=2095+(70*1);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 1 |Eemoji/arrow_r.png|e  Lvl 2;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/35_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/9_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/37_0.png;\
+    VNUM_1=AppendSkillTreeItem(13,0);\
+    VNUM_2=AppendSkillTreeItem(13,1);\
+    VNUM_3=AppendSkillTreeItem(13,2);\
+    VNUM_4=AppendSkillTreeItem(13,3);\
+    VNUM_5=AppendSkillTreeItem(13,4);\
+    VNUM_6=AppendSkillTreeItem(13,5);\
+    PRICE_1=AppendSkillTreeCount(13,0);\
+    PRICE_2=AppendSkillTreeCount(13,1);\
+    PRICE_3=AppendSkillTreeCount(13,2);\
+    PRICE_4=AppendSkillTreeCount(13,3);\
+    PRICE_5=AppendSkillTreeCount(13,4);\
+    PRICE_6=AppendSkillTreeCount(13,5);\
+    PRICE_2_X_PADDING = -7;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=2095+(70*2);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 2 |Eemoji/arrow_r.png|e  Lvl 3;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/35_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/9_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/37_0.png;\
+    VNUM_1=AppendSkillTreeItem(14,0);\
+    VNUM_2=AppendSkillTreeItem(14,1);\
+    VNUM_3=AppendSkillTreeItem(14,2);\
+    VNUM_4=AppendSkillTreeItem(14,3);\
+    VNUM_5=AppendSkillTreeItem(14,4);\
+    VNUM_6=AppendSkillTreeItem(14,5);\
+    PRICE_1=AppendSkillTreeCount(14,0);\
+    PRICE_2=AppendSkillTreeCount(14,1);\
+    PRICE_3=AppendSkillTreeCount(14,2);\
+    PRICE_4=AppendSkillTreeCount(14,3);\
+    PRICE_5=AppendSkillTreeCount(14,4);\
+    PRICE_6=AppendSkillTreeCount(14,5);\
+    PRICE_2_X_PADDING = -7;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=2095+(70*3);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 3 |Eemoji/arrow_r.png|e  Lvl 4;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/35_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/9_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/37_0.png;\
+    VNUM_1=AppendSkillTreeItem(15,0);\
+    VNUM_2=AppendSkillTreeItem(15,1);\
+    VNUM_3=AppendSkillTreeItem(15,2);\
+    VNUM_4=AppendSkillTreeItem(15,3);\
+    VNUM_5=AppendSkillTreeItem(15,4);\
+    VNUM_6=AppendSkillTreeItem(15,5);\
+    PRICE_1=AppendSkillTreeCount(15,0);\
+    PRICE_2=AppendSkillTreeCount(15,1);\
+    PRICE_3=AppendSkillTreeCount(15,2);\
+    PRICE_4=AppendSkillTreeCount(15,3);\
+    PRICE_5=AppendSkillTreeCount(15,4);\
+    PRICE_6=AppendSkillTreeCount(15,5);\
+    PRICE_2_X_PADDING = -7;\
+]
+
+[\
+    SKILL_TREE_ITEM;\
+    X=10;Y=2095+(70*4);\
+    TEXT_1={WK:77};\
+    TEXT_2=Lvl 4 |Eemoji/arrow_r.png|e  Lvl 5;\
+    IMG_1=d:/ymir work/ui/game/new_skill_tree/icon/35_0.png;\
+    IMG_2=d:/ymir work/ui/game/new_skill_tree/icon/9_0.png;\
+    IMG_3=d:/ymir work/ui/game/new_skill_tree/icon/37_0.png;\
+    VNUM_1=AppendSkillTreeItem(17,0);\
+    VNUM_2=AppendSkillTreeItem(17,1);\
+    VNUM_3=AppendSkillTreeItem(17,2);\
+    VNUM_4=AppendSkillTreeItem(17,3);\
+    VNUM_5=AppendSkillTreeItem(17,4);\
+    VNUM_6=AppendSkillTreeItem(17,5);\
+    PRICE_1=AppendSkillTreeCount(17,0);\
+    PRICE_2=AppendSkillTreeCount(17,1);\
+    PRICE_3=AppendSkillTreeCount(17,2);\
+    PRICE_4=AppendSkillTreeCount(17,3);\
+    PRICE_5=AppendSkillTreeCount(17,4);\
+    PRICE_6=AppendSkillTreeCount(17,5);\
+]
+
+[\
+    TITLE;\
+    X=10;Y=2465;\
+    TEXT_1=AppendTree(10)/2/3/4/5;\
+] 

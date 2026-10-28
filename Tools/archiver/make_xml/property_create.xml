@@ -1,0 +1,4 @@
+<ScriptFile>
+	<CreateEterPackXml Input="../binary_unpack/property:" ArchivePath="../../Client/pack/property" XmlPath="xml/property_create.xml">
+	</CreateEterPackXml>
+</ScriptFile>

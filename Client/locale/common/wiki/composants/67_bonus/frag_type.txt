@@ -1,0 +1,4 @@
+[IMG=d:/ymir work/ui/game/wiki/layout/showcase.png; Y=0;X=0]
+[ITEM=ParentVnum(1);X=10;Y=18;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=23;X=25]
+[X=80;Y=22;FONT_SIZE=17b;COLOR=D7B25B;NO_ADD_Y]ParentTxt(1) 

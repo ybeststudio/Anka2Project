@@ -1,0 +1,64 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=overview;\
+    TEXT_1={WK:99} ;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=116; TABLE_HEADERS=Intro; TABLE_WIDTHS=125]
+[TR; H=50]
+[TD; TEXT=Rare and Legendary Metins are special variants of standard Metin stones that appear unexpectedly across the world of Saryong, offering greater challenges and high-tier rewards.; ALIGN=center]
+[TABLE_END]
+
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=196;\
+    ANCHOR=encounters;\
+    TEXT_1=Encounters;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=246; TABLE_HEADERS=Details; TABLE_WIDTHS=125]
+[TR; H=32]
+[TD; TEXT=While farming normal Metin Stones, a Rare or Legendary version can suddenly spawn nearby.; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=These stones are global - they are not assigned to a specific player.; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=Any nearby player can join the fight and compete for the rewards.; ALIGN=center]
+[TABLE_END]
+
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=368;\
+    ANCHOR=mechanics;\
+    TEXT_1=Mechanics;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=418; TABLE_HEADERS=Feature|Description; TABLE_WIDTHS=150|290]
+[TR; H=34]
+[TD; TEXT=|cffFFD37ATriple the Challenge|r; ALIGN=center]
+[TD; TEXT=Rare and Legendary Metins have three times more HP than normal stones.; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=|cffFFD37AUnique Loot|r; ALIGN=center]
+[TD; TEXT=These stones drop rarer and more valuable rewards compared to standard Metins.; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=|cffFFD37AVisual Distinction|r; ALIGN=center]
+[TD; TEXT=They shine with a unique glow that makes them easy to identify on the battlefield.; ALIGN=center]
+[TABLE_END]
+
+
+
+
+
+
+
+
+
+
+[X=5; Y=610; FONT_SIZE=13b; NO_ADD_Y; OUTLINE]

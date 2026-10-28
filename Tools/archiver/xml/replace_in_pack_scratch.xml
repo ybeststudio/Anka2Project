@@ -1,0 +1,8 @@
+<ScriptFile>
+	<CreateEterPack ArchivePath="../backups/replace_in_pack_scratch/mini.pack" BuildKeyfile="false" >
+		<File ArchivedPath="uigamebutton.py"><![CDATA[../backups/replace_in_pack_scratch/stage/uigamebutton.py]]></File>
+		<File ArchivedPath="uigamebutton.pyc"><![CDATA[../backups/replace_in_pack_scratch/stage/uigamebutton.pyc]]></File>
+		<File ArchivedPath="uiscript/gamewindow.py"><![CDATA[../backups/replace_in_pack_scratch/stage/gamewindow.py]]></File>
+		<File ArchivedPath="uiscript/gamewindow.pyc"><![CDATA[../backups/replace_in_pack_scratch/stage/gamewindow.pyc]]></File>
+	</CreateEterPack>
+</ScriptFile>

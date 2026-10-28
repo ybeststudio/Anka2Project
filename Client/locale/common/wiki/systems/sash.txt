@@ -1,0 +1,123 @@
+[/ SUMMARY /]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=3;Y=5;LINKINDEX=article#10#22.19;TEXT={WK:1};COLOR_TEXT=cebb98]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=133;Y=5;LINKINDEX=article#10#113.19;TEXT={WK:43};COLOR_TEXT=cebb98]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=263;Y=5;LINKINDEX=article#10#213;TEXT={WK:54};COLOR_TEXT=cebb98]
+
+
+
+
+ 
+[\
+    TITLE;\
+    X=10;Y=54;\
+    TEXT_1={WK:1};\
+]
+ 
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;Y=115;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    Y_PADDING=5;\
+    VNUM_1=80019;\
+    TEXT_1={WK:37};\
+    TEXT_2={WK:38};\
+    TEXT_3={WK:39};\
+    TEXT_4={WK:40};\
+    TEXT_5={WK:41};\
+    TEXT_3_X_PADDING = 10;\
+]
+
+[\
+    DESCRIPTION_WITH_RENDER;\
+    X=10;Y=200;\
+    Y_PADDING=5;\
+    VNUM_1=9015;\
+    TEXT_1={WK:6:9015};\
+    TEXT_2={WK:42:9015};\
+]
+[BUTTON=d:/ymir work/ui/game/wiki/bg_wiki.png#d:/ymir work/ui/game/wiki/bg_wiki_hover.png#d:/ymir work/ui/game/wiki/bg_wiki.png;X=95;Y=238;LINKINDEX=shop#9015#0.0;TEXT={WK:36:9015};]
+
+[/ SHOWING ALL SASH /]
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg4.png; Y=115; X=465]
+[ITEM=85001;Y=126;X=483;SOCKET=0:0#0:0]
+[ITEM=85005;Y=161;X=483;SOCKET=0:0#0:0]
+[ITEM=85012;Y=196;X=483;SOCKET=0:0#0:0]
+[ITEM=85016;Y=231;X=483;SOCKET=0:0#0:0]
+
+[\
+    TITLE;\
+    X=10;Y=285;\
+    TEXT_1={WK:43};\
+]
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=345;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/sash/abso.png;\
+    Y_PADDING=5;\
+    TEXT_1={WK:44};\
+    TEXT_2={WK:45};\
+    TEXT_3={WK:46};\
+    TEXT_4={WK:47};\
+]
+
+[\
+    SUBTITLE;\
+    X=10;Y=440;\
+    TEXT_1={WK:48};\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;Y=488;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    Y_PADDING=0;\
+    VNUM_1=90000;\
+    TEXT_1={WK:49};\
+    TEXT_2={WK:50};\
+    TEXT_3={WK:51};\
+]
+[BUTTON=d:/ymir work/ui/game/wiki/bg_wiki.png#d:/ymir work/ui/game/wiki/bg_wiki_hover.png#d:/ymir work/ui/game/wiki/bg_wiki.png;X=95;Y=488+41;LINKINDEX=itemshop#90000#0.0;TEXT={WK:53};]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;Y=573;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    Y_PADDING=0;\
+    VNUM_1=39046;\
+    TEXT_1={WK:49};\
+    TEXT_2={WK:50};\
+    TEXT_3={WK:52};\
+]
+[BUTTON=d:/ymir work/ui/game/wiki/bg_wiki.png#d:/ymir work/ui/game/wiki/bg_wiki_hover.png#d:/ymir work/ui/game/wiki/bg_wiki.png;X=95;Y=573+41;LINKINDEX=itemshop#90015#0.0;TEXT={WK:53};]
+
+[\
+    TITLE;\
+    X=10;Y=655;\
+    TEXT_1={WK:54};\
+]
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=715;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/sash/combi.png;\
+    Y_PADDING=8;\
+    TEXT_1={WK:55};\
+    TEXT_2={WK:56};\
+    TEXT_3={WK:57};\
+    TEXT_4={WK:58};\
+    TEXT_5={WK:59};\
+    TEXT_2_X_PADDING = 5;\
+    TEXT_3_Y_PADDING = 5;TEXT_4_Y_PADDING = 5;TEXT_5_Y_PADDING = 5;\
+]
+
+[/ 4 SASH SHOWING FOR FUSION /]
+[IMG=d:/ymir work/ui/game/wiki/layout/showcase_long2.png; Y=830;X=10;CENTER_ALIGN]
+[ITEM=85001;X=131;Y=830+15;SOCKET=0:0#1:0]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=830+21;X=159]
+[ITEM=85002;X=219;Y=830+15;SOCKET=0:0#1:0]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=830+21;X=247]
+[ITEM=85003;X=300;Y=830+15;SOCKET=0:0#1:0]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=830+21;X=320]
+[ITEM=85004;X=374;Y=830+15;SOCKET=0:0#1:0]
+ 

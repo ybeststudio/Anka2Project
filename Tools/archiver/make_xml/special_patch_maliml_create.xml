@@ -1,0 +1,4 @@
+<ScriptFile>
+	<CreateEterPackXml Input="../binary_unpack/special_patch_maliml:" ArchivePath="../../Client/pack/special_patch_maliml" XmlPath="xml/special_patch_maliml_create.xml">
+	</CreateEterPackXml>
+</ScriptFile>

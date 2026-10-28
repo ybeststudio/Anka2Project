@@ -1,0 +1,128 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+ABS	Constants.h	27;"	d
+Analyze	Poly.cc	/^int CPoly::Analyze(const char * pszStr)$/;"	f	class:CPoly
+BIN	Makefile	/^BIN     = .\/libpoly.a$/;"	m
+CBase	Base.cc	/^CBase::CBase()$/;"	f	class:CBase
+CBase	Base.h	/^class CBase  $/;"	c
+CFLAGS	Makefile	/^CFLAGS  = -Wall -O2 -pipe -mtune=i686 -fno-exceptions -fno-rtti$/;"	m
+CLOSE	Constants.h	10;"	d
+COS	Constants.h	14;"	d
+COSEC	Constants.h	17;"	d
+COT	Constants.h	20;"	d
+CPoly	Poly.cc	/^CPoly::CPoly()$/;"	f	class:CPoly
+CPoly	Poly.h	/^class CPoly$/;"	c
+CSC	Constants.h	18;"	d
+CSymTable	SymTable.cc	/^CSymTable::CSymTable(int aTok, string aStr) : dVal(0), token(aTok), strlex(aStr)$/;"	f	class:CSymTable
+CSymTable	SymTable.h	/^class CSymTable  $/;"	c
+CSymbol	Symbol.cc	/^CSymbol::CSymbol()$/;"	f	class:CSymbol
+CSymbol	Symbol.h	/^class CSymbol : public CBase   $/;"	c
+CXX	Makefile	/^CXX	= distcc i386-obrien-freebsd5-g++$/;"	m
+Clear	Poly.cc	/^void CPoly::Clear()$/;"	f	class:CPoly
+DIV	Constants.h	8;"	d
+EOS	Constants.h	13;"	d
+EXP	Constants.h	22;"	d
+Equal	Symbol.cc	/^bool CSymbol::Equal(CSymbol dif)$/;"	f	class:CSymbol
+ErrorOccur	Poly.h	/^	bool		ErrorOccur;$/;"	m	class:CPoly
+Eval	Poly.cc	/^double CPoly::Eval()$/;"	f	class:CPoly
+FLOOR	Constants.h	33;"	d
+FRAND	Constants.h	31;"	d
+GetType	Symbol.cc	/^int CSymbol::GetType()$/;"	f	class:CSymbol
+ID	Constants.h	12;"	d
+IRAND	Constants.h	30;"	d
+LIBS	Makefile	/^LIBS =$/;"	m
+LN	Constants.h	24;"	d
+LOG	Constants.h	23;"	d
+LOG10	Constants.h	25;"	d
+Less	Symbol.cc	/^bool CSymbol::Less(CSymbol dif)$/;"	f	class:CSymbol
+MAXF	Constants.h	29;"	d
+MAXSTACK	Constants.h	36;"	d
+MAXVALUE	Constants.h	1;"	d
+MID_FRACTION	Base.h	11;"	d
+MID_LONG	Base.h	9;"	d
+MID_NUMBER	Base.h	5;"	d
+MID_SQRT	Base.h	10;"	d
+MID_SYMBOL	Base.h	7;"	d
+MID_UNKNOWN	Base.h	4;"	d
+MID_VARIABLE	Base.h	6;"	d
+MIN	Constants.h	7;"	d
+MINF	Constants.h	28;"	d
+MOD	Constants.h	32;"	d
+MUL	Constants.h	4;"	d
+NONE	Constants.h	2;"	d
+NUM	Constants.h	11;"	d
+OBJFILES	Makefile	/^OBJFILES = Base.o Poly.o SymTable.o Symbol.o$/;"	m
+OPEN	Constants.h	9;"	d
+PI	Constants.h	21;"	d
+PLU	Constants.h	5;"	d
+POW	Constants.h	6;"	d
+ROOT	Constants.h	3;"	d
+SEC	Constants.h	19;"	d
+SIGN	Constants.h	34;"	d
+SIN	Constants.h	15;"	d
+STSize	Poly.h	/^	int				STSize;$/;"	m	class:CPoly
+ST_CARET	Symbol.h	11;"	d
+ST_CLOSE	Symbol.h	13;"	d
+ST_DIVIDE	Symbol.h	10;"	d
+ST_MINUS	Symbol.h	8;"	d
+ST_MULTIPLY	Symbol.h	9;"	d
+ST_OPEN	Symbol.h	12;"	d
+ST_PLUS	Symbol.h	7;"	d
+ST_UNKNOWN	Symbol.h	6;"	d
+SY_CARET	Symbol.h	19;"	d
+SY_CLOSE	Symbol.h	21;"	d
+SY_DIVIDE	Symbol.h	18;"	d
+SY_MINUS	Symbol.h	16;"	d
+SY_MULTIPLY	Symbol.h	17;"	d
+SY_OPEN	Symbol.h	20;"	d
+SY_PLUS	Symbol.h	15;"	d
+SetStr	Poly.cc	/^void CPoly::SetStr(const string & str)$/;"	f	class:CPoly
+SetType	Symbol.cc	/^void CSymbol::SetType(int Type)$/;"	f	class:CSymbol
+SetVar	Poly.cc	/^int CPoly::SetVar(const string & strName, double dVar)$/;"	f	class:CPoly
+SymbolIndex	Poly.h	/^	std::vector<int>		SymbolIndex;$/;"	m	class:CPoly
+TAN	Constants.h	16;"	d
+__POLY_BASE_H__	Base.h	2;"	d
+__POLY_POLY_H__	Poly.h	2;"	d
+__POLY_SYMBOL_H__	Symbol.h	2;"	d
+__POLY_SYMTABLE_H__	SymTable.h	2;"	d
+_random	Poly.cc	/^double _random()$/;"	f
+dVal	SymTable.h	/^	double		dVal;$/;"	m	class:CSymTable
+emit	Poly.cc	/^void CPoly::emit(int t, int tval)$/;"	f	class:CPoly
+error	Poly.cc	/^void CPoly::error()$/;"	f	class:CPoly
+expo	Poly.cc	/^void CPoly::expo()$/;"	f	class:CPoly
+expr	Poly.cc	/^void CPoly::expr() $/;"	f	class:CPoly
+factor	Poly.cc	/^void CPoly::factor()$/;"	f	class:CPoly
+find	Poly.cc	/^int CPoly::find(const string & s)$/;"	f	class:CPoly
+iErrorPos	Poly.h	/^	int		iErrorPos;$/;"	m	class:CPoly
+iLookAhead	Poly.h	/^	int		iLookAhead;$/;"	m	class:CPoly
+iNumToken	Poly.h	/^	double		iNumToken;$/;"	m	class:CPoly
+iToken	Poly.h	/^	int		iToken;$/;"	m	class:CPoly
+iType	Symbol.h	/^	int	iType;$/;"	m	class:CSymbol
+id	Base.h	/^	int id;$/;"	m	class:CBase
+init	Poly.cc	/^void CPoly::init()$/;"	f	class:CPoly
+insert	Poly.cc	/^int CPoly::insert(const string & s, int tok)$/;"	f	class:CPoly
+isNumber	Base.cc	/^bool CBase::isNumber()$/;"	f	class:CBase
+isSymbol	Base.cc	/^bool CBase::isSymbol()$/;"	f	class:CBase
+isVar	Base.cc	/^bool CBase::isVar()$/;"	f	class:CBase
+issymbol	Symbol.cc	/^int CSymbol::issymbol(int ch)$/;"	f	class:CSymbol
+lSymbol	Poly.h	/^	std::vector<CSymTable *>	lSymbol;$/;"	m	class:CPoly
+lexan	Poly.cc	/^int CPoly::lexan()$/;"	f	class:CPoly
+main	main.cc	/^int main(int argc, char ** argv)$/;"	f
+match	Poly.cc	/^void CPoly::match(int t)$/;"	f	class:CPoly
+my_frandom	Poly.cc	/^double CPoly::my_frandom(double start, double end)$/;"	f	class:CPoly
+my_irandom	Poly.cc	/^int CPoly::my_irandom(double start, double end)$/;"	f	class:CPoly
+numBase	Poly.h	/^	std::vector<double>		numBase;$/;"	m	class:CPoly
+strData	Poly.h	/^	std::string			strData;$/;"	m	class:CPoly
+strlex	SymTable.h	/^	std::string	strlex;$/;"	m	class:CSymTable
+term	Poly.cc	/^void CPoly::term()$/;"	f	class:CPoly
+token	SymTable.h	/^	int		token;$/;"	m	class:CSymTable
+tokenBase	Poly.h	/^	std::vector<int>		tokenBase;$/;"	m	class:CPoly
+uiLookPos	Poly.h	/^	unsigned int	uiLookPos;$/;"	m	class:CPoly
+~CBase	Base.cc	/^CBase::~CBase()$/;"	f	class:CBase
+~CPoly	Poly.cc	/^CPoly::~CPoly()$/;"	f	class:CPoly
+~CSymTable	SymTable.cc	/^CSymTable::~CSymTable()$/;"	f	class:CSymTable
+~CSymbol	Symbol.cc	/^CSymbol::~CSymbol()$/;"	f	class:CSymbol

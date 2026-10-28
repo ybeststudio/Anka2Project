@@ -1,0 +1,4 @@
+
+[BANNER_IMG = d:/ymir work/ui/wiki/banners/systems/ev_weapon.png]
+[IMG=d:/ymir work/ui/wiki/armeseveil.png; Y=15; CENTER_ALIGN]
+ 

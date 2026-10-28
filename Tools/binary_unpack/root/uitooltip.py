@@ -1,0 +1,5151 @@
+if __USE_DYNAMIC_MODULE__:
+	import pyapi
+
+app = __import__(pyapi.GetModuleName("app"))
+chr = __import__(pyapi.GetModuleName("chr"))
+player = __import__(pyapi.GetModuleName("player"))
+
+import dbg
+import item
+import grp
+import wndMgr
+import skill
+import shop
+import exchange
+import grpText
+import safebox
+import localeInfo
+import background
+import nonplayer
+
+import ui
+import mouseModule
+import constInfo
+
+
+if app.ENABLE_RENDER_TARGET:
+	import renderTarget
+
+if app.ENABLE_ACCE_COSTUME_SYSTEM:
+	import acce
+
+WARP_SCROLLS = [22011, 22000, 22010]
+
+DESC_DEFAULT_MAX_COLS = 40
+DESC_DEFAULT_SKILLS_MAX_COLS = 39
+DESC_WESTERN_MAX_WIDTH = 220
+
+def chop(n):
+	return round(n - 0.5, 1)
+
+def SplitDescription(desc, limit):
+	total_tokens = desc.split()
+	line_tokens = []
+	line_len = 0
+	lines = []
+	for token in total_tokens:
+		if "|" in token:
+			sep_pos = token.find("|")
+			line_tokens.append(token[:sep_pos])
+
+			lines.append(" ".join(line_tokens))
+			line_len = len(token) - (sep_pos + 1)
+			line_tokens = [token[sep_pos+1:]]
+		else:
+			line_len += len(token)
+			if len(line_tokens) + line_len > limit:
+				lines.append(" ".join(line_tokens))
+				line_len = len(token)
+				line_tokens = [token]
+			else:
+				line_tokens.append(token)
+
+	if line_tokens:
+		lines.append(" ".join(line_tokens))
+
+	return lines
+
+class ToolTip(ui.ThinBoard):
+
+	TOOL_TIP_WIDTH = 190
+	TOOL_TIP_HEIGHT = 10
+
+	TEXT_LINE_HEIGHT = 17
+
+	TITLE_COLOR = grp.GenerateColor(0.9490, 0.9058, 0.7568, 1.0)
+	SPECIAL_TITLE_COLOR = grp.GenerateColor(1.0, 0.7843, 0.0, 1.0)
+	NORMAL_COLOR = grp.GenerateColor(0.7607, 0.7607, 0.7607, 1.0)
+	FONT_COLOR = grp.GenerateColor(0.7607, 0.7607, 0.7607, 1.0)
+	PRICE_COLOR = 0xffFFB96D
+
+	HIGH_PRICE_COLOR = SPECIAL_TITLE_COLOR
+	MIDDLE_PRICE_COLOR = grp.GenerateColor(0.85, 0.85, 0.85, 1.0)
+	LOW_PRICE_COLOR = grp.GenerateColor(0.7, 0.7, 0.7, 1.0)
+
+	ENABLE_COLOR = grp.GenerateColor(0.7607, 0.7607, 0.7607, 1.0)
+	DISABLE_COLOR = grp.GenerateColor(0.9, 0.4745, 0.4627, 1.0)
+
+	NEGATIVE_COLOR = grp.GenerateColor(0.9, 0.4745, 0.4627, 1.0)
+	POSITIVE_COLOR = grp.GenerateColor(0.5411, 0.7254, 0.5568, 1.0)
+	SPECIAL_POSITIVE_COLOR = grp.GenerateColor(0.6911, 0.8754, 0.7068, 1.0)
+	SPECIAL_POSITIVE_COLOR2 = grp.GenerateColor(0.8824, 0.9804, 0.8824, 1.0)
+
+	COLOR_TEXT_SHORTCUT = grp.GenerateColor(1.0,1.0,0.5,1.0)
+
+	CONDITION_COLOR = 0xffBEB47D
+	CAN_LEVEL_UP_COLOR = 0xff8EC292
+	CANNOT_LEVEL_UP_COLOR = DISABLE_COLOR
+	NEED_SKILL_POINT_COLOR = 0xff9A9CDB
+	ITEM_VNUM_COLOR = 0xff9A9CDB
+	SPECIAL_NEW_COLOR = 0xff8EC292
+
+	if app.ENABLE_CHANGE_LOOK_SYSTEM:
+		CHANGELOOK_TITLE_COLOR = 0xff8BBDFF
+		CHANGELOOK_ITEMNAME_COLOR = 0xffBCE55C
+
+	if app.ENABLE_RENDER_TARGET:
+		RENDER_TARGET = 0xff90ee90
+
+	# Merkezi tooltip yönetimi için tüm tooltip instance'larýný takip eden liste
+	_allToolTips = []
+
+	def __init__(self, width = TOOL_TIP_WIDTH, isPickable=FALSE):
+		ui.ThinBoard.__init__(self, "TOP_MOST")
+		self.__ApplyReferenceBoard()
+
+		if isPickable:
+			pass
+		else:
+			self.AddFlag("not_pick")
+
+		self.AddFlag("float")
+
+		self.followFlag = TRUE
+		self.toolTipWidth = width
+
+		if app.ENABLE_ATTENDANCE_EVENT:
+			self.isAttendanceRewardItem = False
+
+		self.xPos = -1
+		self.yPos = -1
+
+		self.timeInfoList = []
+
+		self.defFontName = localeInfo.UI_DEF_FONT
+		self.ClearToolTip()
+
+		# Tooltip instance'ýný listeye ekle
+		ToolTip._allToolTips.append(self)
+
+	def __ApplyReferenceBoard(self):
+		path = "d:/ymir work/ui/pattern/new_thinboard/"
+		for index, direction in enumerate(("LeftTop", "LeftBottom", "RightTop", "RightBottom")):
+			self.Corners[index].LoadImage(path + "ThinBoard_Corner_" + direction + ".png")
+		for index, direction in enumerate(("Left", "Right", "Top", "Bottom")):
+			self.Lines[index].LoadImage(path + "ThinBoard_Line_" + direction + ".png")
+		self.Base.SetColor(grp.GenerateColor(28.0 / 255.0, 23.0 / 255.0, 20.0 / 255.0, 178.0 / 255.0))
+
+	def __del__(self):
+		# Tooltip instance'ýný listeden çýkar
+		if self in ToolTip._allToolTips:
+			ToolTip._allToolTips.remove(self)
+		ui.ThinBoard.__del__(self)
+
+	def ClearToolTip(self):
+		self.toolTipHeight = 12
+		self.childrenList = []
+
+		self.timeInfoList = []
+
+	def SetFollow(self, flag):
+		self.followFlag = flag
+
+	def SetDefaultFontName(self, fontName):
+		self.defFontName = fontName
+
+	def AppendSpace(self, size):
+		self.toolTipHeight += size
+		self.ResizeToolTip()
+
+	def AppendHorizontalLine(self):
+		for i in xrange(2):
+			horizontalLine = ui.Line()
+			horizontalLine.SetParent(self)
+			horizontalLine.SetPosition(0, self.toolTipHeight + 3 + i)
+			horizontalLine.SetWindowHorizontalAlignCenter()
+			horizontalLine.SetSize(150, 0)
+			horizontalLine.Show()
+
+			if 0 == i:
+				horizontalLine.SetColor(0xff555555)
+			else:
+				horizontalLine.SetColor(0xff000000)
+
+			self.childrenList.append(horizontalLine)
+
+		self.toolTipHeight += 11
+		self.ResizeToolTip()
+
+	def AlignHorizonalCenter(self):
+		for child in self.childrenList:
+			(x, y)=child.GetLocalPosition()
+			child.SetPosition(self.toolTipWidth/2, y)
+
+		self.ResizeToolTip()
+
+	if app.ENABLE_ZODIAC_MISSION:
+		def SetThinBoardSize(self, width, height = 12):
+			self.toolTipWidth = width 
+			self.toolTipHeight = height
+
+	def AutoAppendTextLine(self, text, color = FONT_COLOR, centerAlign = TRUE):
+		textLine = ui.TextLine()
+		textLine.SetParent(self)
+		textLine.SetFontName(self.defFontName)
+		textLine.SetPackedFontColor(color)
+		textLine.SetText(text)
+		textLine.SetOutline()
+		textLine.SetFeather(FALSE)
+		textLine.Show()
+
+		if centerAlign:
+			textLine.SetPosition(self.toolTipWidth/2, self.toolTipHeight)
+			textLine.SetHorizontalAlignCenter()
+
+		else:
+			textLine.SetPosition(10, self.toolTipHeight)
+
+		self.childrenList.append(textLine)
+
+		(textWidth, textHeight)=textLine.GetTextSize()
+
+		textWidth += 40
+		textHeight += 5
+
+		if self.toolTipWidth < textWidth:
+			self.toolTipWidth = textWidth
+
+		# @fixme017 BEGIN (moved after the set of the new width)
+		if centerAlign:
+			textLine.SetPosition(self.toolTipWidth/2, self.toolTipHeight)
+			textLine.SetHorizontalAlignCenter()
+		else:
+			textLine.SetPosition(10, self.toolTipHeight)
+		# @fixme017 END
+
+		self.toolTipHeight += textHeight
+
+		return textLine
+
+	if app.ENABLE_COINS_INVENTORY:
+		def AutoAppendNewTextLine(self, text, color = FONT_COLOR, centerAlign = TRUE):
+			textLine = ui.TextLine()
+			textLine.SetParent(self)
+			textLine.SetFontName(self.defFontName)
+			textLine.SetPackedFontColor(color)
+			textLine.SetText(text)
+			textLine.SetOutline()
+			textLine.SetFeather(FALSE)
+			textLine.Show()
+			textLine.SetPosition(15, self.toolTipHeight)
+			
+			self.childrenList.append(textLine)
+			(textWidth, textHeight) = textLine.GetTextSize()
+			textWidth += 30
+			textHeight += 10
+			if self.toolTipWidth < textWidth:
+				self.toolTipWidth = textWidth
+			
+			self.toolTipHeight += textHeight
+			self.ResizeToolTipText(textWidth, self.toolTipHeight)
+			return textLine
+
+	if app.ENABLE_GUILDRENEWAL_SYSTEM:	#ENABLE_WIKI_SYSTEM
+		def SetThinBoardSize(self, width, height = 12) :
+			self.toolTipWidth = width 
+			self.toolTipHeight = height
+
+	def SetThinBoardSize(self, width, height = 12) :
+		self.toolTipWidth = width 
+		self.toolTipHeight = height
+
+	def AppendTextLine(self, text, color = FONT_COLOR, centerAlign = TRUE):
+		textLine = ui.TextLine()
+		textLine.SetParent(self)
+		textLine.SetFontName(self.defFontName)
+		textLine.SetPackedFontColor(color)
+		textLine.SetText(text)
+		textLine.SetOutline()
+		textLine.SetFeather(FALSE)
+		textLine.Show()
+
+		if centerAlign:
+			textLine.SetPosition(self.toolTipWidth/2, self.toolTipHeight)
+			textLine.SetHorizontalAlignCenter()
+		else:
+			textLine.SetPosition(10, self.toolTipHeight)
+
+		self.childrenList.append(textLine)
+
+		self.toolTipHeight += self.TEXT_LINE_HEIGHT
+		self.ResizeToolTip()
+
+		return textLine
+
+	def AppendDescription(self, desc, limit, color = FONT_COLOR):
+		self.__AppendDescription_EasternLanguage(desc, limit, color)
+
+	def __AppendDescription_EasternLanguage(self, description, characterLimitation, color=FONT_COLOR):
+		length = len(description)
+		if 0 == length:
+			return
+
+		lineCount = grpText.GetSplitingTextLineCount(description, characterLimitation)
+		for i in xrange(lineCount):
+			if 0 == i:
+				self.AppendSpace(5)
+			self.AppendTextLine(grpText.GetSplitingTextLine(description, characterLimitation, i), color)
+
+	def _GetToolTipWidth(self):
+		return self.toolTipWidth
+
+	def AlignTextLineHorizonalCenter(self):
+		for child in self.childrenList:
+			if isinstance(child, ui.TextLine):
+				if child.GetHorizontalAlign() != ui.TEXT_HORIZONTAL_ALIGN_CENTER:
+					interval_x = child.GetPositionIntervalX()
+					local_x, local_y = child.GetLocalPosition()
+					child.SetPosition(self._GetToolTipWidth() / 2 + interval_x, local_y)
+
+	def AlignTextLineHorizonalLeft(self):
+		for child in self.childrenList:
+			if isinstance(child, ui.TextLine):
+				interval_x = child.GetPositionIntervalX()
+				local_x, local_y = child.GetLocalPosition()
+				child.SetPosition(interval_x, local_y)
+
+	def OptimizeTooltipWindowSize(self):
+		if not self.childrenList:
+			return
+
+		max_width = 0
+		for child in self.childrenList:
+			if isinstance(child, ui.TextLine):
+				width, height = child.GetTextSize()
+				if max_width < width:
+					max_width = width
+
+		self.SetThinBoardSize(max_width + 20, self.toolTipHeight)
+		self.ResizeToolTip()
+		if not app.ENABLE_SHOP_REPURCHASE:
+			self.AlignTextLineHorizonalCenter()
+
+	def ResizeToolTip(self):
+		self.SetSize(self.toolTipWidth, self.TOOL_TIP_HEIGHT + self.toolTipHeight)
+
+	if app.ENABLE_COINS_INVENTORY:
+		def ResizeToolTipText(self, x, y):
+			self.SetSize(x, y)
+
+	def AppendShortcutTable(self, rows):
+		if not rows:
+			return
+		self.AppendSpace(6)
+		width = 288
+		left = (self.toolTipWidth - width) / 2
+		top = self.toolTipHeight
+		headerColor = 0xCC2B1A10
+		rowColor = 0xBB1B120D
+		labelColor = self.TITLE_COLOR
+		actionColor = self.NORMAL_COLOR
+		iconWidths = {"ctrl": 40, "alt": 40, "shift": 40, "mouse_left": 12, "mouse_right": 12}
+
+		def addBar(x, y, w, h, color):
+			bar = ui.Bar()
+			bar.SetParent(self)
+			bar.SetPosition(x, y)
+			bar.SetSize(w, h)
+			bar.SetColor(color)
+			bar.Show()
+			self.childrenList.append(bar)
+
+		def addText(value, x, y, color, centered = FALSE):
+			line = ui.TextLine()
+			line.SetParent(self)
+			line.SetFontName(self.defFontName)
+			line.SetPackedFontColor(color)
+			line.SetText(value)
+			line.SetOutline()
+			if centered:
+				line.SetHorizontalAlignCenter()
+			line.SetPosition(x, y)
+			line.Show()
+			self.childrenList.append(line)
+
+		def addKeys(keys, y):
+			groupWidth = sum(iconWidths[key] for key in keys) + max(0, len(keys) - 1) * 11
+			x = left + (138 - groupWidth) / 2
+			for index, key in enumerate(keys):
+				icon = ui.ImageBox()
+				icon.SetParent(self)
+				icon.LoadImage("icon/key/%s.png" % key)
+				icon.SetPosition(x, y + 5)
+				icon.Show()
+				self.childrenList.append(icon)
+				x += iconWidths[key]
+				if index + 1 < len(keys):
+					addText("+", x + 5, y + 5, actionColor, TRUE)
+					x += 11
+
+		addBar(left, top, width, 21, headerColor)
+		addText("K\xfdsayol", left + 69, top + 3, labelColor, TRUE)
+		addText("\xdd\xfelem", left + 214, top + 3, labelColor, TRUE)
+		for index, row in enumerate(rows):
+			y = top + 21 + index * 28
+			addBar(left, y, width, 27, rowColor)
+			addBar(left + 138, y, 1, 27, 0xFF59483A)
+			addKeys(row[0], y)
+			addText(row[1], left + 147, y + 5, actionColor)
+		self.toolTipHeight += 21 + len(rows) * 28 + 5
+		self.ResizeToolTip()
+
+	def SetTitle(self, name):
+		self.AppendTextLine(name, self.TITLE_COLOR)
+
+	def GetLimitTextLineColor(self, curValue, limitValue):
+		if curValue < limitValue:
+			return self.DISABLE_COLOR
+
+		return self.ENABLE_COLOR
+
+	def GetChangeTextLineColor(self, value, isSpecial=FALSE):
+		if value > 0:
+			if isSpecial:
+				return self.SPECIAL_POSITIVE_COLOR
+			else:
+				return self.POSITIVE_COLOR
+
+		if 0 == value:
+			return self.NORMAL_COLOR
+
+		return self.NEGATIVE_COLOR
+
+	def SetToolTipPosition(self, x = -1, y = -1):
+		self.xPos = x
+		self.yPos = y
+
+	def ShowToolTip(self):
+		self.SetTop()
+		ui.ThinBoard.Show(self)
+
+		self.OnUpdate()
+
+	def HideToolTip(self):
+		self.Hide()
+
+	def OnUpdate(self):
+
+		if not self.followFlag:
+			return
+
+		for timeText in self.timeInfoList:
+			if timeText["line"]:
+				leftSec = max(0, timeText["value"] - app.GetGlobalTimeStamp())
+				if not self.isShopItem:
+					timeText["line"].SetText(localeInfo.LEFT_TIME + ": " + localeInfo.RTSecondToDHMS(leftSec))
+
+		x = 0
+		y = 0
+
+		width = self.GetWidth()
+		height = self.toolTipHeight
+
+		if -1 == self.xPos and -1 == self.yPos:
+
+			(mouseX, mouseY) = wndMgr.GetMousePosition()
+
+			if mouseY < wndMgr.GetScreenHeight() - 300:
+				y = mouseY + 40
+			else:
+				y = mouseY - height - 30
+
+			x = mouseX - width/2
+
+		else:
+
+			x = self.xPos - width/2
+			y = self.yPos - height
+
+		x = max(x, 0)
+		y = max(y, 0)
+		x = min(x + width/2, wndMgr.GetScreenWidth() - width/2) - width/2
+		y = min(y + self.GetHeight(), wndMgr.GetScreenHeight()) - self.GetHeight()
+
+		parentWindow = self.GetParentProxy()
+		if parentWindow:
+			(gx, gy) = parentWindow.GetGlobalPosition()
+			x -= gx
+			y -= gy
+
+		self.SetPosition(x, y)
+
+	if app.ENABLE_AURA_COSTUME_SYSTEM:
+		def AppendTextLineAbsorb(self, text, color = FONT_COLOR, centerAlign = TRUE):
+			return ToolTip.AppendTextLine(self, text, color, centerAlign)
+
+class ItemToolTip(ToolTip):
+
+	if app.ENABLE_RENDER_TARGET:
+		ModelPreviewBoard = None
+		ModelPreview = None
+		ModelPreviewText = None
+
+	if app.ENABLE_MOB_DROP_INFO:
+		isBook = FALSE
+		isBook2 = FALSE
+
+	CHARACTER_NAMES = (
+		localeInfo.TOOLTIP_WARRIOR,
+		localeInfo.TOOLTIP_ASSASSIN,
+		localeInfo.TOOLTIP_SURA,
+		localeInfo.TOOLTIP_SHAMAN
+	)
+
+	CHARACTER_COUNT = len(CHARACTER_NAMES)
+	WEAR_NAMES = (
+		localeInfo.TOOLTIP_ARMOR,
+		localeInfo.TOOLTIP_HELMET,
+		localeInfo.TOOLTIP_SHOES,
+		localeInfo.TOOLTIP_WRISTLET,
+		localeInfo.TOOLTIP_WEAPON,
+		localeInfo.TOOLTIP_NECK,
+		localeInfo.TOOLTIP_EAR,
+		localeInfo.TOOLTIP_UNIQUE,
+		localeInfo.TOOLTIP_SHIELD,
+		localeInfo.TOOLTIP_ARROW,
+	)
+	WEAR_COUNT = len(WEAR_NAMES)
+
+	AFFECT_DICT = {
+		item.APPLY_MAX_HP : localeInfo.TOOLTIP_MAX_HP,
+		item.APPLY_MAX_SP : localeInfo.TOOLTIP_MAX_SP,
+		item.APPLY_CON : localeInfo.TOOLTIP_CON,
+		item.APPLY_INT : localeInfo.TOOLTIP_INT,
+		item.APPLY_STR : localeInfo.TOOLTIP_STR,
+		item.APPLY_DEX : localeInfo.TOOLTIP_DEX,
+		item.APPLY_ATT_SPEED : localeInfo.TOOLTIP_ATT_SPEED,
+		item.APPLY_MOV_SPEED : localeInfo.TOOLTIP_MOV_SPEED,
+		item.APPLY_CAST_SPEED : localeInfo.TOOLTIP_CAST_SPEED,
+		item.APPLY_HP_REGEN : localeInfo.TOOLTIP_HP_REGEN,
+		item.APPLY_SP_REGEN : localeInfo.TOOLTIP_SP_REGEN,
+		item.APPLY_POISON_PCT : localeInfo.TOOLTIP_APPLY_POISON_PCT,
+		item.APPLY_STUN_PCT : localeInfo.TOOLTIP_APPLY_STUN_PCT,
+		item.APPLY_SLOW_PCT : localeInfo.TOOLTIP_APPLY_SLOW_PCT,
+		item.APPLY_CRITICAL_PCT : localeInfo.TOOLTIP_APPLY_CRITICAL_PCT,
+		item.APPLY_PENETRATE_PCT : localeInfo.TOOLTIP_APPLY_PENETRATE_PCT,
+
+		item.APPLY_ATTBONUS_WARRIOR : localeInfo.TOOLTIP_APPLY_ATTBONUS_WARRIOR,
+		item.APPLY_ATTBONUS_ASSASSIN : localeInfo.TOOLTIP_APPLY_ATTBONUS_ASSASSIN,
+		item.APPLY_ATTBONUS_SURA : localeInfo.TOOLTIP_APPLY_ATTBONUS_SURA,
+		item.APPLY_ATTBONUS_SHAMAN : localeInfo.TOOLTIP_APPLY_ATTBONUS_SHAMAN,
+		item.APPLY_ATTBONUS_MONSTER : localeInfo.TOOLTIP_APPLY_ATTBONUS_MONSTER,
+
+		item.APPLY_ATTBONUS_HUMAN : localeInfo.TOOLTIP_APPLY_ATTBONUS_HUMAN,
+		item.APPLY_ATTBONUS_ANIMAL : localeInfo.TOOLTIP_APPLY_ATTBONUS_ANIMAL,
+		item.APPLY_ATTBONUS_ORC : localeInfo.TOOLTIP_APPLY_ATTBONUS_ORC,
+		item.APPLY_ATTBONUS_MILGYO : localeInfo.TOOLTIP_APPLY_ATTBONUS_MILGYO,
+		item.APPLY_ATTBONUS_UNDEAD : localeInfo.TOOLTIP_APPLY_ATTBONUS_UNDEAD,
+		item.APPLY_ATTBONUS_DEVIL : localeInfo.TOOLTIP_APPLY_ATTBONUS_DEVIL,
+		item.APPLY_STEAL_HP : localeInfo.TOOLTIP_APPLY_STEAL_HP,
+		item.APPLY_STEAL_SP : localeInfo.TOOLTIP_APPLY_STEAL_SP,
+		item.APPLY_MANA_BURN_PCT : localeInfo.TOOLTIP_APPLY_MANA_BURN_PCT,
+		item.APPLY_DAMAGE_SP_RECOVER : localeInfo.TOOLTIP_APPLY_DAMAGE_SP_RECOVER,
+		item.APPLY_BLOCK : localeInfo.TOOLTIP_APPLY_BLOCK,
+		item.APPLY_DODGE : localeInfo.TOOLTIP_APPLY_DODGE,
+		item.APPLY_RESIST_SWORD : localeInfo.TOOLTIP_APPLY_RESIST_SWORD,
+		item.APPLY_RESIST_TWOHAND : localeInfo.TOOLTIP_APPLY_RESIST_TWOHAND,
+		item.APPLY_RESIST_DAGGER : localeInfo.TOOLTIP_APPLY_RESIST_DAGGER,
+		item.APPLY_RESIST_BELL : localeInfo.TOOLTIP_APPLY_RESIST_BELL,
+		item.APPLY_RESIST_FAN : localeInfo.TOOLTIP_APPLY_RESIST_FAN,
+		item.APPLY_RESIST_BOW : localeInfo.TOOLTIP_RESIST_BOW,
+		item.APPLY_RESIST_FIRE : localeInfo.TOOLTIP_RESIST_FIRE,
+		item.APPLY_RESIST_ELEC : localeInfo.TOOLTIP_RESIST_ELEC,
+		item.APPLY_RESIST_MAGIC : localeInfo.TOOLTIP_RESIST_MAGIC,
+		item.APPLY_RESIST_WIND : localeInfo.TOOLTIP_APPLY_RESIST_WIND,
+		item.APPLY_REFLECT_MELEE : localeInfo.TOOLTIP_APPLY_REFLECT_MELEE,
+		item.APPLY_REFLECT_CURSE : localeInfo.TOOLTIP_APPLY_REFLECT_CURSE,
+		item.APPLY_POISON_REDUCE : localeInfo.TOOLTIP_APPLY_POISON_REDUCE,
+		item.APPLY_KILL_SP_RECOVER : localeInfo.TOOLTIP_APPLY_KILL_SP_RECOVER,
+		item.APPLY_EXP_DOUBLE_BONUS : localeInfo.TOOLTIP_APPLY_EXP_DOUBLE_BONUS,
+		item.APPLY_GOLD_DOUBLE_BONUS : localeInfo.TOOLTIP_APPLY_GOLD_DOUBLE_BONUS,
+		item.APPLY_ITEM_DROP_BONUS : localeInfo.TOOLTIP_APPLY_ITEM_DROP_BONUS,
+		item.APPLY_POTION_BONUS : localeInfo.TOOLTIP_APPLY_POTION_BONUS,
+		item.APPLY_KILL_HP_RECOVER : localeInfo.TOOLTIP_APPLY_KILL_HP_RECOVER,
+		item.APPLY_IMMUNE_STUN : localeInfo.TOOLTIP_APPLY_IMMUNE_STUN,
+		item.APPLY_IMMUNE_SLOW : localeInfo.TOOLTIP_APPLY_IMMUNE_SLOW,
+		item.APPLY_IMMUNE_FALL : localeInfo.TOOLTIP_APPLY_IMMUNE_FALL,
+		item.APPLY_BOW_DISTANCE : localeInfo.TOOLTIP_BOW_DISTANCE,
+		item.APPLY_DEF_GRADE_BONUS : localeInfo.TOOLTIP_DEF_GRADE,
+		item.APPLY_ATT_GRADE_BONUS : localeInfo.TOOLTIP_ATT_GRADE,
+		item.APPLY_MAGIC_ATT_GRADE : localeInfo.TOOLTIP_MAGIC_ATT_GRADE,
+		item.APPLY_MAGIC_DEF_GRADE : localeInfo.TOOLTIP_MAGIC_DEF_GRADE,
+		item.APPLY_MAX_STAMINA : localeInfo.TOOLTIP_MAX_STAMINA,
+		item.APPLY_MALL_ATTBONUS : localeInfo.TOOLTIP_MALL_ATTBONUS,
+		item.APPLY_MALL_DEFBONUS : localeInfo.TOOLTIP_MALL_DEFBONUS,
+		item.APPLY_MALL_EXPBONUS : localeInfo.TOOLTIP_MALL_EXPBONUS,
+		item.APPLY_MALL_ITEMBONUS : localeInfo.TOOLTIP_MALL_ITEMBONUS,
+		item.APPLY_MALL_GOLDBONUS : localeInfo.TOOLTIP_MALL_GOLDBONUS,
+		item.APPLY_SKILL_DAMAGE_BONUS : localeInfo.TOOLTIP_SKILL_DAMAGE_BONUS,
+		item.APPLY_NORMAL_HIT_DAMAGE_BONUS : localeInfo.TOOLTIP_NORMAL_HIT_DAMAGE_BONUS,
+		item.APPLY_SKILL_DEFEND_BONUS : localeInfo.TOOLTIP_SKILL_DEFEND_BONUS,
+		item.APPLY_NORMAL_HIT_DEFEND_BONUS : localeInfo.TOOLTIP_NORMAL_HIT_DEFEND_BONUS,
+		item.APPLY_PC_BANG_EXP_BONUS : localeInfo.TOOLTIP_MALL_EXPBONUS_P_STATIC,
+		item.APPLY_PC_BANG_DROP_BONUS : localeInfo.TOOLTIP_MALL_ITEMBONUS_P_STATIC,
+		item.APPLY_RESIST_WARRIOR : localeInfo.TOOLTIP_APPLY_RESIST_WARRIOR,
+		item.APPLY_RESIST_ASSASSIN : localeInfo.TOOLTIP_APPLY_RESIST_ASSASSIN,
+		item.APPLY_RESIST_SURA : localeInfo.TOOLTIP_APPLY_RESIST_SURA,
+		item.APPLY_RESIST_SHAMAN : localeInfo.TOOLTIP_APPLY_RESIST_SHAMAN,
+		item.APPLY_MAX_HP_PCT : localeInfo.TOOLTIP_APPLY_MAX_HP_PCT,
+		item.APPLY_MAX_SP_PCT : localeInfo.TOOLTIP_APPLY_MAX_SP_PCT,
+		item.APPLY_ENERGY : localeInfo.TOOLTIP_ENERGY,
+		item.APPLY_COSTUME_ATTR_BONUS : localeInfo.TOOLTIP_COSTUME_ATTR_BONUS,
+
+		item.APPLY_MAGIC_ATTBONUS_PER : localeInfo.TOOLTIP_MAGIC_ATTBONUS_PER,
+		item.APPLY_MELEE_MAGIC_ATTBONUS_PER : localeInfo.TOOLTIP_MELEE_MAGIC_ATTBONUS_PER,
+		item.APPLY_RESIST_ICE : localeInfo.TOOLTIP_RESIST_ICE,
+		item.APPLY_RESIST_EARTH : localeInfo.TOOLTIP_RESIST_EARTH,
+		item.APPLY_RESIST_DARK : localeInfo.TOOLTIP_RESIST_DARK,
+		item.APPLY_ANTI_CRITICAL_PCT : localeInfo.TOOLTIP_ANTI_CRITICAL_PCT,
+		item.APPLY_ANTI_PENETRATE_PCT : localeInfo.TOOLTIP_ANTI_PENETRATE_PCT,
+		item.APPLY_ATTBONUS_CZ : localeInfo.TOOLTIP_APPLY_ATTBONUS_CZ,
+		item.APPLY_ATTBONUS_INSECT : localeInfo.TOOLTIP_APPLY_ATTBONUS_INSECT,
+		item.APPLY_ATTBONUS_DESERT : localeInfo.TOOLTIP_APPLY_ATTBONUS_DESERT,
+		item.APPLY_ATTBONUS_SWORD : localeInfo.TOOLTIP_APPLY_ATTBONUS_SWORD,
+		item.APPLY_ATTBONUS_TWOHAND : localeInfo.TOOLTIP_APPLY_ATTBONUS_TWOHAND,
+		item.APPLY_ATTBONUS_DAGGER : localeInfo.TOOLTIP_APPLY_ATTBONUS_DAGGER,
+		item.APPLY_ATTBONUS_BELL : localeInfo.TOOLTIP_APPLY_ATTBONUS_BELL,
+		item.APPLY_ATTBONUS_FAN : localeInfo.TOOLTIP_APPLY_ATTBONUS_FAN,
+		item.APPLY_ATTBONUS_BOW : localeInfo.TOOLTIP_APPLY_ATTBONUS_BOW,
+		item.APPLY_RESIST_HUMAN : localeInfo.TOOLTIP_APPLY_RESIST_HUMAN,
+		item.APPLY_RESIST_MOUNT_FALL : localeInfo.TOOLTIP_APPLY_RESIST_MOUNT_FALL,
+		item.APPLY_ATTBONUS_PVM_STR : localeInfo.TOOLTIP_ATTBONUS_PVM_STR,
+		item.APPLY_ATTBONUS_PVM_BERSERKER : localeInfo.TOOLTIP_ATTBONUS_PVM_BERSERKER,
+		item.APPLY_SKILL : localeInfo.TOOLTIP_SKILL,
+		item.APPLY_DEF_GRADE : localeInfo.TOOLTIP_DEF_GRADE,
+		item.APPLY_BLEEDING_REDUCE : localeInfo.TOOLTIP_APPLY_BLEEDING_REDUCE,
+		item.APPLY_BLEEDING_PCT : localeInfo.TOOLTIP_APPLY_BLEEDING_PCT,
+		item.APPLY_ATTBONUS_WOLFMAN : localeInfo.TOOLTIP_APPLY_ATTBONUS_WOLFMAN,
+		item.APPLY_RESIST_WOLFMAN : localeInfo.TOOLTIP_APPLY_RESIST_WOLFMAN,
+		item.APPLY_RESIST_CLAW : localeInfo.TOOLTIP_APPLY_RESIST_CLAW,
+		item.APPLY_ATTBONUS_CLAW : localeInfo.TOOLTIP_APPLY_ATTBONUS_CLAW,
+		item.APPLY_SKILL_DAMAGE_SAMYEON : localeInfo.TOOLTIP_SKILL_DAMAGE_SAMYEON,
+		item.APPLY_SKILL_DAMAGE_TANHWAN : localeInfo.TOOLTIP_SKILL_DAMAGE_TANHWAN,
+		item.APPLY_SKILL_DAMAGE_PALBANG : localeInfo.TOOLTIP_SKILL_DAMAGE_PALBANG,
+		item.APPLY_SKILL_DAMAGE_GIGONGCHAM : localeInfo.TOOLTIP_SKILL_DAMAGE_GIGONGCHAM,
+		item.APPLY_SKILL_DAMAGE_GYOKSAN : localeInfo.TOOLTIP_SKILL_DAMAGE_GYOKSAN,
+		item.APPLY_SKILL_DAMAGE_GEOMPUNG : localeInfo.TOOLTIP_SKILL_DAMAGE_GEOMPUNG,
+		item.APPLY_SKILL_DAMAGE_AMSEOP : localeInfo.TOOLTIP_SKILL_DAMAGE_AMSEOP,
+		item.APPLY_SKILL_DAMAGE_GUNGSIN : localeInfo.TOOLTIP_SKILL_DAMAGE_GUNGSIN,
+		item.APPLY_SKILL_DAMAGE_CHARYUN : localeInfo.TOOLTIP_SKILL_DAMAGE_CHARYUN,
+		item.APPLY_SKILL_DAMAGE_SANGONG : localeInfo.TOOLTIP_SKILL_DAMAGE_SANGONG,
+		item.APPLY_SKILL_DAMAGE_YEONSA : localeInfo.TOOLTIP_SKILL_DAMAGE_YEONSA,
+		item.APPLY_SKILL_DAMAGE_KWANKYEOK : localeInfo.TOOLTIP_SKILL_DAMAGE_KWANKYEOK,
+		item.APPLY_SKILL_DAMAGE_GIGUNG : localeInfo.TOOLTIP_SKILL_DAMAGE_GIGUNG,
+		item.APPLY_SKILL_DAMAGE_HWAJO : localeInfo.TOOLTIP_SKILL_DAMAGE_HWAJO,
+		item.APPLY_SKILL_DAMAGE_SWAERYUNG : localeInfo.TOOLTIP_SKILL_DAMAGE_SWAERYUNG,
+		item.APPLY_SKILL_DAMAGE_YONGKWON : localeInfo.TOOLTIP_SKILL_DAMAGE_YONGKWON,
+		item.APPLY_SKILL_DAMAGE_PABEOB : localeInfo.TOOLTIP_SKILL_DAMAGE_PABEOB,
+		item.APPLY_SKILL_DAMAGE_MARYUNG : localeInfo.TOOLTIP_SKILL_DAMAGE_MARYUNG,
+		item.APPLY_SKILL_DAMAGE_HWAYEOMPOK : localeInfo.TOOLTIP_SKILL_DAMAGE_HWAYEOMPOK,
+		item.APPLY_SKILL_DAMAGE_MAHWAN : localeInfo.TOOLTIP_SKILL_DAMAGE_MAHWAN,
+		item.APPLY_SKILL_DAMAGE_BIPABU : localeInfo.TOOLTIP_SKILL_DAMAGE_BIPABU,
+		item.APPLY_SKILL_DAMAGE_YONGBI : localeInfo.TOOLTIP_SKILL_DAMAGE_YONGBI,
+		item.APPLY_SKILL_DAMAGE_PAERYONG : localeInfo.TOOLTIP_SKILL_DAMAGE_PAERYONG,
+		item.APPLY_SKILL_DAMAGE_NOEJEON : localeInfo.TOOLTIP_SKILL_DAMAGE_NOEJEON,
+		item.APPLY_SKILL_DAMAGE_BYEURAK : localeInfo.TOOLTIP_SKILL_DAMAGE_BYEURAK,
+		item.APPLY_SKILL_DAMAGE_CHAIN : localeInfo.TOOLTIP_SKILL_DAMAGE_CHAIN,
+		item.APPLY_SKILL_DAMAGE_CHAYEOL : localeInfo.TOOLTIP_SKILL_DAMAGE_CHAYEOL,
+		item.APPLY_SKILL_DAMAGE_SALPOONG : localeInfo.TOOLTIP_SKILL_DAMAGE_SALPOONG,
+		item.APPLY_SKILL_DAMAGE_GONGDAB : localeInfo.TOOLTIP_SKILL_DAMAGE_GONGDAB,
+		item.APPLY_SKILL_DAMAGE_PASWAE : localeInfo.TOOLTIP_SKILL_DAMAGE_PASWAE,
+		item.APPLY_NORMAL_HIT_DEFEND_BONUS_BOSS_OR_MORE : localeInfo.TOOLTIP_NORMAL_HIT_DEFEND_BONUS_BOSS_OR_MORE,
+		item.APPLY_SKILL_DEFEND_BONUS_BOSS_OR_MORE : localeInfo.TOOLTIP_SKILL_DEFEND_BONUS_BOSS_OR_MORE,
+		item.APPLY_NORMAL_HIT_DAMAGE_BONUS_BOSS_OR_MORE : localeInfo.TOOLTIP_NORMAL_HIT_DAMAGE_BONUS_BOSS_OR_MORE,
+		item.APPLY_SKILL_DAMAGE_BONUS_BOSS_OR_MORE : localeInfo.TOOLTIP_SKILL_DAMAGE_BONUS_BOSS_OR_MORE,
+		item.APPLY_HIT_BUFF_ENCHANT_FIRE : localeInfo.TOOLTIP_HIT_BUFF_ENCHANT_FIRE,
+		item.APPLY_HIT_BUFF_ENCHANT_ICE : localeInfo.TOOLTIP_HIT_BUFF_ENCHANT_ICE,
+		item.APPLY_HIT_BUFF_ENCHANT_ELEC : localeInfo.TOOLTIP_HIT_BUFF_ENCHANT_ELEC,
+		item.APPLY_HIT_BUFF_ENCHANT_WIND : localeInfo.TOOLTIP_HIT_BUFF_ENCHANT_WIND,
+		item.APPLY_HIT_BUFF_ENCHANT_DARK : localeInfo.TOOLTIP_HIT_BUFF_ENCHANT_DARK,
+		item.APPLY_HIT_BUFF_ENCHANT_EARTH : localeInfo.TOOLTIP_HIT_BUFF_ENCHANT_EARTH,
+		item.APPLY_HIT_BUFF_RESIST_FIRE : localeInfo.TOOLTIP_HIT_BUFF_RESIST_FIRE,
+		item.APPLY_HIT_BUFF_RESIST_ICE : localeInfo.TOOLTIP_HIT_BUFF_RESIST_ICE,
+		item.APPLY_HIT_BUFF_RESIST_ELEC : localeInfo.TOOLTIP_HIT_BUFF_RESIST_ELEC,
+		item.APPLY_HIT_BUFF_RESIST_WIND : localeInfo.TOOLTIP_HIT_BUFF_RESIST_WIND,
+		item.APPLY_HIT_BUFF_RESIST_DARK : localeInfo.TOOLTIP_HIT_BUFF_RESIST_DARK,
+		item.APPLY_HIT_BUFF_RESIST_EARTH : localeInfo.TOOLTIP_HIT_BUFF_RESIST_EARTH,
+		item.APPLY_USE_SKILL_CHEONGRANG_MOV_SPEED : localeInfo.TOOLTIP_USE_SKILL_CHEONGRANG_MOV_SPEED,
+		item.APPLY_USE_SKILL_CHEONGRANG_CASTING_SPEED : localeInfo.TOOLTIP_USE_SKILL_CHEONGRANG_CASTING_SPEED,
+		item.APPLY_USE_SKILL_CHAYEOL_CRITICAL_PCT : localeInfo.TOOLTIP_USE_SKILL_CHAYEOL_CRITICAL_PCT,
+		item.APPLY_USE_SKILL_SANGONG_ATT_GRADE_BONUS : localeInfo.TOOLTIP_USE_SKILL_SANGONG_ATT_GRADE_BONUS,
+		item.APPLY_USE_SKILL_GIGUNG_ATT_GRADE_BONUS : localeInfo.TOOLTIP_USE_SKILL_GIGUNG_ATT_GRADE_BONUS,
+		item.APPLY_USE_SKILL_JEOKRANG_DEF_BONUS : localeInfo.TOOLTIP_USE_SKILL_JEOKRANG_DEF_BONUS,
+		item.APPLY_USE_SKILL_GWIGEOM_DEF_BONUS : localeInfo.TOOLTIP_USE_SKILL_GWIGEOM_DEF_BONUS,
+		item.APPLY_USE_SKILL_TERROR_ATT_GRADE_BONUS : localeInfo.TOOLTIP_USE_SKILL_TERROR_ATT_GRADE_BONUS,
+		item.APPLY_USE_SKILL_MUYEONG_ATT_GRADE_BONUS : localeInfo.TOOLTIP_USE_SKILL_MUYEONG_ATT_GRADE_BONUS,
+		item.APPLY_USE_SKILL_MANASHILED_CASTING_SPEED : localeInfo.TOOLTIP_USE_SKILL_MANASHILED_CASTING_SPEED,
+		item.APPLY_USE_SKILL_HOSIN_DEF_BONUS : localeInfo.TOOLTIP_USE_SKILL_HOSIN_DEF_BONUS,
+		item.APPLY_USE_SKILL_GICHEON_ATT_GRADE_BONUS : localeInfo.TOOLTIP_USE_SKILL_GICHEON_ATT_GRADE_BONUS,
+		item.APPLY_USE_SKILL_JEONGEOP_ATT_GRADE_BONUS : localeInfo.TOOLTIP_USE_SKILL_JEONGEOP_ATT_GRADE_BONUS,
+		item.APPLY_USE_SKILL_JEUNGRYEOK_DEF_BONUS : localeInfo.TOOLTIP_USE_SKILL_JEUNGRYEOK_DEF_BONUS,
+		item.APPLY_USE_SKILL_GIHYEOL_ATT_GRADE_BONUS : localeInfo.TOOLTIP_USE_SKILL_GIHYEOL_ATT_GRADE_BONUS,
+		item.APPLY_USE_SKILL_CHUNKEON_CASTING_SPEED : localeInfo.TOOLTIP_USE_SKILL_CHUNKEON_CASTING_SPEED,
+		item.APPLY_USE_SKILL_NOEGEOM_ATT_GRADE_BONUS : localeInfo.TOOLTIP_USE_SKILL_NOEGEOM_ATT_GRADE_BONUS,
+		item.APPLY_SKILL_DURATION_INCREASE_EUNHYUNG : localeInfo.TOOLTIP_SKILL_DURATION_INCREASE_EUNHYUNG,
+		item.APPLY_SKILL_DURATION_INCREASE_GYEONGGONG : localeInfo.TOOLTIP_SKILL_DURATION_INCREASE_GYEONGGONG,
+		item.APPLY_SKILL_DURATION_INCREASE_GEOMKYUNG : localeInfo.TOOLTIP_SKILL_DURATION_INCREASE_GEOMKYUNG,
+		item.APPLY_SKILL_DURATION_INCREASE_JEOKRANG : localeInfo.TOOLTIP_SKILL_DURATION_INCREASE_JEOKRANG,
+		item.APPLY_USE_SKILL_PALBANG_HP_ABSORB : localeInfo.TOOLTIP_USE_SKILL_PALBANG_HP_ABSORB,
+		item.APPLY_USE_SKILL_AMSEOP_HP_ABSORB : localeInfo.TOOLTIP_USE_SKILL_AMSEOP_HP_ABSORB,
+		item.APPLY_USE_SKILL_YEONSA_HP_ABSORB : localeInfo.TOOLTIP_USE_SKILL_YEONSA_HP_ABSORB,
+		item.APPLY_USE_SKILL_YONGBI_HP_ABSORB : localeInfo.TOOLTIP_USE_SKILL_YONGBI_HP_ABSORB,
+		item.APPLY_USE_SKILL_CHAIN_HP_ABSORB : localeInfo.TOOLTIP_USE_SKILL_CHAIN_HP_ABSORB,
+		item.APPLY_USE_SKILL_PASWAE_SP_ABSORB : localeInfo.TOOLTIP_USE_SKILL_PASWAE_SP_ABSORB,
+		item.APPLY_USE_SKILL_GIGONGCHAM_STUN : localeInfo.TOOLTIP_USE_SKILL_GIGONGCHAM_STUN,
+		item.APPLY_USE_SKILL_CHARYUN_STUN : localeInfo.TOOLTIP_USE_SKILL_CHARYUN_STUN,
+		item.APPLY_USE_SKILL_PABEOB_STUN : localeInfo.TOOLTIP_USE_SKILL_PABEOB_STUN,
+		item.APPLY_USE_SKILL_MAHWAN_STUN : localeInfo.TOOLTIP_USE_SKILL_MAHWAN_STUN,
+		item.APPLY_USE_SKILL_GONGDAB_STUN : localeInfo.TOOLTIP_USE_SKILL_GONGDAB_STUN,
+		item.APPLY_USE_SKILL_SAMYEON_STUN : localeInfo.TOOLTIP_USE_SKILL_SAMYEON_STUN,
+		item.APPLY_USE_SKILL_GYOKSAN_KNOCKBACK : localeInfo.TOOLTIP_USE_SKILL_GYOKSAN_KNOCKBACK,
+		item.APPLY_USE_SKILL_SEOMJEON_KNOCKBACK : localeInfo.TOOLTIP_USE_SKILL_SEOMJEON_KNOCKBACK,
+		item.APPLY_USE_SKILL_SWAERYUNG_KNOCKBACK : localeInfo.TOOLTIP_USE_SKILL_SWAERYUNG_KNOCKBACK,
+		item.APPLY_USE_SKILL_HWAYEOMPOK_KNOCKBACK : localeInfo.TOOLTIP_USE_SKILL_HWAYEOMPOK_KNOCKBACK,
+		item.APPLY_USE_SKILL_GONGDAB_KNOCKBACK : localeInfo.TOOLTIP_USE_SKILL_GONGDAB_KNOCKBACK,
+		item.APPLY_USE_SKILL_KWANKYEOK_KNOCKBACK : localeInfo.TOOLTIP_USE_SKILL_KWANKYEOK_KNOCKBACK,
+		item.APPLY_USE_SKILL_SAMYEON_NEXT_COOLTIME_DECREASE_10PER : localeInfo.TOOLTIP_USE_SKILL_SAMYEON_NEXT_COOLTIME_DECREASE_10PER,
+		item.APPLY_USE_SKILL_GEOMPUNG_NEXT_COOLTIME_DECREASE_10PER : localeInfo.TOOLTIP_USE_SKILL_GEOMPUNG_NEXT_COOLTIME_DECREASE_10PER,
+		item.APPLY_USE_SKILL_GUNGSIN_NEXT_COOLTIME_DECREASE_10PER : localeInfo.TOOLTIP_USE_SKILL_GUNGSIN_NEXT_COOLTIME_DECREASE_10PER,
+		item.APPLY_USE_SKILL_KWANKYEOK_NEXT_COOLTIME_DECREASE_10PER : localeInfo.TOOLTIP_USE_SKILL_KWANKYEOK_NEXT_COOLTIME_DECREASE_10PER,
+		item.APPLY_USE_SKILL_YONGKWON_NEXT_COOLTIME_DECREASE_10PER : localeInfo.TOOLTIP_USE_SKILL_YONGKWON_NEXT_COOLTIME_DECREASE_10PER,
+		item.APPLY_USE_SKILL_MARYUNG_NEXT_COOLTIME_DECREASE_10PER : localeInfo.TOOLTIP_USE_SKILL_MARYUNG_NEXT_COOLTIME_DECREASE_10PER,
+		item.APPLY_USE_SKILL_BIPABU_NEXT_COOLTIME_DECREASE_10PER : localeInfo.TOOLTIP_USE_SKILL_BIPABU_NEXT_COOLTIME_DECREASE_10PER,
+		item.APPLY_USE_SKILL_NOEJEON_NEXT_COOLTIME_DECREASE_10PER : localeInfo.TOOLTIP_USE_SKILL_NOEJEON_NEXT_COOLTIME_DECREASE_10PER,
+		item.APPLY_USE_SKILL_SALPOONG_NEXT_COOLTIME_DECREASE_10PER : localeInfo.TOOLTIP_USE_SKILL_SALPOONG_NEXT_COOLTIME_DECREASE_10PER,
+		item.APPLY_USE_SKILL_PASWAE_NEXT_COOLTIME_DECREASE_10PER : localeInfo.TOOLTIP_USE_SKILL_PASWAE_NEXT_COOLTIME_DECREASE_10PER,
+		item.APPLY_DAMAGE_HP_RECOVERY : localeInfo.TOOLTIP_DAMAGE_HP_RECOVERY,
+		item.APPLY_DAMAGE_SP_RECOVERY : localeInfo.TOOLTIP_DAMAGE_SP_RECOVERY,
+		item.APPLY_ALIGNMENT_DAMAGE_BONUS : localeInfo.TOOLTIP_ALIGNMENT_DAMAGE_BONUS,
+		item.APPLY_NORMAL_DAMAGE_GUARD : localeInfo.TOOLTIP_NORMAL_DAMAGE_GUARD,
+		item.APPLY_MORE_THEN_HP90_DAMAGE_REDUCE : localeInfo.TOOLTIP_MORE_THEN_HP90_DAMAGE_REDUCE,
+		item.APPLY_USE_SKILL_TUSOK_HP_ABSORB : localeInfo.TOOLTIP_USE_SKILL_TUSOK_HP_ABSORB,
+		item.APPLY_USE_SKILL_PAERYONG_HP_ABSORB : localeInfo.TOOLTIP_USE_SKILL_PAERYONG_HP_ABSORB,
+		item.APPLY_USE_SKILL_BYEURAK_HP_ABSORB : localeInfo.TOOLTIP_USE_SKILL_BYEURAK_HP_ABSORB,
+		item.APPLY_FIRST_ATTRIBUTE_BONUS : localeInfo.TOOLTIP_FIRST_ATTRIBUTE_BONUS,
+		item.APPLY_SECOND_ATTRIBUTE_BONUS : localeInfo.TOOLTIP_SECOND_ATTRIBUTE_BONUS,
+		item.APPLY_THIRD_ATTRIBUTE_BONUS : localeInfo.TOOLTIP_THIRD_ATTRIBUTE_BONUS,
+		item.APPLY_FOURTH_ATTRIBUTE_BONUS : localeInfo.TOOLTIP_FOURTH_ATTRIBUTE_BONUS,
+		item.APPLY_FIFTH_ATTRIBUTE_BONUS : localeInfo.TOOLTIP_FIFTH_ATTRIBUTE_BONUS,
+		item.APPLY_USE_SKILL_SAMYEON_NEXT_COOLTIME_DECREASE_20PER : localeInfo.TOOLTIP_USE_SKILL_SAMYEON_NEXT_COOLTIME_DECREASE_20PER,
+		item.APPLY_USE_SKILL_GEOMPUNG_NEXT_COOLTIME_DECREASE_20PER : localeInfo.TOOLTIP_USE_SKILL_GEOMPUNG_NEXT_COOLTIME_DECREASE_20PER,
+		item.APPLY_USE_SKILL_GUNGSIN_NEXT_COOLTIME_DECREASE_20PER : localeInfo.TOOLTIP_USE_SKILL_GUNGSIN_NEXT_COOLTIME_DECREASE_20PER,
+		item.APPLY_USE_SKILL_KWANKYEOK_NEXT_COOLTIME_DECREASE_20PER : localeInfo.TOOLTIP_USE_SKILL_KWANKYEOK_NEXT_COOLTIME_DECREASE_20PER,
+		item.APPLY_USE_SKILL_YONGKWON_NEXT_COOLTIME_DECREASE_20PER : localeInfo.TOOLTIP_USE_SKILL_YONGKWON_NEXT_COOLTIME_DECREASE_20PER,
+		item.APPLY_USE_SKILL_MARYUNG_NEXT_COOLTIME_DECREASE_20PER : localeInfo.TOOLTIP_USE_SKILL_MARYUNG_NEXT_COOLTIME_DECREASE_20PER,
+		item.APPLY_USE_SKILL_BIPABU_NEXT_COOLTIME_DECREASE_20PER : localeInfo.TOOLTIP_USE_SKILL_BIPABU_NEXT_COOLTIME_DECREASE_20PER,
+		item.APPLY_USE_SKILL_NOEJEON_NEXT_COOLTIME_DECREASE_20PER : localeInfo.TOOLTIP_USE_SKILL_NOEJEON_NEXT_COOLTIME_DECREASE_20PER,
+		item.APPLY_USE_SKILL_SALPOONG_NEXT_COOLTIME_DECREASE_20PER : localeInfo.TOOLTIP_USE_SKILL_SALPOONG_NEXT_COOLTIME_DECREASE_20PER,
+		item.APPLY_USE_SKILL_PASWAE_NEXT_COOLTIME_DECREASE_20PER : localeInfo.TOOLTIP_USE_SKILL_PASWAE_NEXT_COOLTIME_DECREASE_20PER,
+		item.APPLY_USE_SKILL_CHAYEOL_HP_ABSORB : localeInfo.TOOLTIP_USE_SKILL_CHAYEOL_HP_ABSORB,
+		item.APPLY_HIT_PCT : localeInfo.TOOLTIP_HIT_PCT,
+		item.APPLY_ATTBONUS_PER_HUMAN : localeInfo.TOOLTIP_ATTBONUS_PER_HUMAN,
+		item.APPLY_ATTBONUS_PER_ANIMAL : localeInfo.TOOLTIP_ATTBONUS_PER_ANIMAL,
+		item.APPLY_ATTBONUS_PER_ORC : localeInfo.TOOLTIP_ATTBONUS_PER_ORC,
+		item.APPLY_ATTBONUS_PER_MILGYO : localeInfo.TOOLTIP_ATTBONUS_PER_MILGYO,
+		item.APPLY_ATTBONUS_PER_UNDEAD : localeInfo.TOOLTIP_ATTBONUS_PER_UNDEAD,
+		item.APPLY_ATTBONUS_PER_DEVIL : localeInfo.TOOLTIP_ATTBONUS_PER_DEVIL,
+		item.APPLY_ENCHANT_PER_ELECT : localeInfo.TOOLTIP_ENCHANT_PER_ELECT,
+		item.APPLY_ENCHANT_PER_FIRE : localeInfo.TOOLTIP_ENCHANT_PER_FIRE,
+		item.APPLY_ENCHANT_PER_ICE : localeInfo.TOOLTIP_ENCHANT_PER_ICE,
+		item.APPLY_ENCHANT_PER_WIND : localeInfo.TOOLTIP_ENCHANT_PER_WIND,
+		item.APPLY_ENCHANT_PER_EARTH : localeInfo.TOOLTIP_ENCHANT_PER_EARTH,
+		item.APPLY_ENCHANT_PER_DARK : localeInfo.TOOLTIP_ENCHANT_PER_DARK,
+		item.APPLY_ATTBONUS_PER_CZ : localeInfo.TOOLTIP_ATTBONUS_PER_CZ,
+		item.APPLY_ATTBONUS_PER_INSECT : localeInfo.TOOLTIP_ATTBONUS_PER_INSECT,
+		item.APPLY_ATTBONUS_PER_DESERT : localeInfo.TOOLTIP_ATTBONUS_PER_DESERT,
+		item.APPLY_ATTBONUS_PER_STONE : localeInfo.TOOLTIP_ATTBONUS_PER_STONE,
+		item.APPLY_ATTBONUS_PER_MONSTER : localeInfo.TOOLTIP_ATTBONUS_PER_MONSTER,
+		item.APPLY_RESIST_PER_HUMAN : localeInfo.TOOLTIP_RESIST_PER_HUMAN,
+		item.APPLY_RESIST_PER_ICE : localeInfo.TOOLTIP_RESIST_PER_ICE,
+		item.APPLY_RESIST_PER_DARK : localeInfo.TOOLTIP_RESIST_PER_DARK,
+		item.APPLY_RESIST_PER_EARTH : localeInfo.TOOLTIP_RESIST_PER_EARTH,
+		item.APPLY_RESIST_PER_FIRE : localeInfo.TOOLTIP_RESIST_PER_FIRE,
+		item.APPLY_RESIST_PER_ELEC : localeInfo.TOOLTIP_RESIST_PER_ELEC,
+		item.APPLY_RESIST_PER_MAGIC : localeInfo.TOOLTIP_RESIST_PER_MAGIC,
+		item.APPLY_RESIST_PER_WIND : localeInfo.TOOLTIP_RESIST_PER_WIND,
+		item.APPLY_HIT_BUFF_SUNGMA_STR : localeInfo.TOOLTIP_HIT_BUFF_SUNGMA_STR,
+		item.APPLY_HIT_BUFF_SUNGMA_MOVE : localeInfo.TOOLTIP_HIT_BUFF_SUNGMA_MOVE,
+		item.APPLY_HIT_BUFF_SUNGMA_HP : localeInfo.TOOLTIP_HIT_BUFF_SUNGMA_HP,
+		item.APPLY_HIT_BUFF_SUNGMA_IMMUNE : localeInfo.TOOLTIP_HIT_BUFF_SUNGMA_IMMUNE,
+		item.APPLY_MOUNT_MELEE_MAGIC_ATTBONUS_PER : localeInfo.TOOLTIP_MOUNT_MELEE_MAGIC_ATTBONUS_PER,
+		item.APPLY_DISMOUNT_MOVE_SPEED_BONUS_PER : localeInfo.TOOLTIP_DISMOUNT_MOVE_SPEED_BONUS_PER,
+		item.APPLY_HIT_AUTO_HP_RECOVERY : localeInfo.TOOLTIP_HIT_AUTO_HP_RECOVERY,
+		item.APPLY_HIT_AUTO_SP_RECOVERY : localeInfo.TOOLTIP_HIT_AUTO_SP_RECOVERY,
+		item.APPLY_USE_SKILL_COOLTIME_DECREASE_ALL : localeInfo.TOOLTIP_USE_SKILL_COOLTIME_DECREASE_ALL,
+		item.APPLY_HIT_STONE_ATTBONUS_STONE : localeInfo.TOOLTIP_HIT_STONE_ATTBONUS_STONE,
+		item.APPLY_HIT_STONE_DEF_GRADE_BONUS : localeInfo.TOOLTIP_HIT_STONE_DEF_GRADE_BONUS,
+		item.APPLY_KILL_BOSS_ITEM_BONUS : localeInfo.TOOLTIP_KILL_BOSS_ITEM_BONUS,
+		item.APPLY_MOB_HIT_MOB_AGGRESSIVE : localeInfo.TOOLTIP_MOB_HIT_MOB_AGGRESSIVE,
+		item.APPLY_NO_DEATH_AND_HP_RECOVERY30 : localeInfo.TOOLTIP_NO_DEATH_AND_HP_RECOVERY30,
+		item.APPLY_AUTO_PICKUP : localeInfo.TOOLTIP_AUTO_PICKUP,
+		item.APPLY_MOUNT_NO_KNOCKBACK : localeInfo.TOOLTIP_MOUNT_NO_KNOCKBACK,
+		item.APPLY_SUNGMA_PER_STR : localeInfo.TOOLTIP_SUNGMA_PER_STR,
+		item.APPLY_SUNGMA_PER_HP : localeInfo.TOOLTIP_SUNGMA_PER_HP,
+		item.APPLY_SUNGMA_PER_MOVE : localeInfo.TOOLTIP_SUNGMA_PER_MOVE,
+		item.APPLY_SUNGMA_PER_IMMUNE : localeInfo.TOOLTIP_SUNGMA_PER_IMMUNE,
+		item.APPLY_IMMUNE_POISON100 : localeInfo.TOOLTIP_APPLY_IMMUNE_POISON100,
+		item.APPLY_IMMUNE_BLEEDING100 : localeInfo.TOOLTIP_APPLY_IMMUNE_BLEEDING100,
+		item.APPLY_MONSTER_DEFEND_BONUS : localeInfo.TOOLTIP_APPLY_MONSTER_DEFEND_BONUS,
+		item.APPLY_USE_SKILL_FINISH_NEXT_COOLTIME_DECREASE_PCT : localeInfo.TOOLTIP_USE_SKILL_FINISH_NEXT_COOLTIME_DECREASE_PCT,
+		item.APPLY_USE_SKILL_ILGWANGPYO_NEXT_COOLTIME_DECREASE_PCT : localeInfo.TOOLTIP_USE_SKILL_ILGWANGPYO_NEXT_COOLTIME_DECREASE_PCT,
+		item.APPLY_USE_SKILL_PUNGLOEPO_NEXT_COOLTIME_DECREASE_PCT : localeInfo.TOOLTIP_USE_SKILL_PUNGLOEPO_NEXT_COOLTIME_DECREASE_PCT,
+		item.APPLY_USE_SKILL_GEOMAGGWI_NEXT_COOLTIME_DECREASE_PCT : localeInfo.TOOLTIP_USE_SKILL_GEOMAGGWI_NEXT_COOLTIME_DECREASE_PCT,
+		item.APPLY_USE_SKILL_MABEOBAGGWI_NEXT_COOLTIME_DECREASE_PCT : localeInfo.TOOLTIP_USE_SKILL_MABEOBAGGWI_NEXT_COOLTIME_DECREASE_PCT,
+		item.APPLY_USE_SKILL_METEO_NEXT_COOLTIME_DECREASE_PCT : localeInfo.TOOLTIP_USE_SKILL_METEO_NEXT_COOLTIME_DECREASE_PCT,
+		item.APPLY_USE_SKILL_CHEONUN_NEXT_COOLTIME_DECREASE_PCT : localeInfo.TOOLTIP_USE_SKILL_CHEONUN_NEXT_COOLTIME_DECREASE_PCT,
+		item.APPLY_USE_SKILL_ILIPUNGU_NEXT_COOLTIME_DECREASE_PCT : localeInfo.TOOLTIP_USE_SKILL_ILIPUNGU_NEXT_COOLTIME_DECREASE_PCT,
+		item.APPLY_GLOVE_BASE_EFFECT_INCREASE : localeInfo.TOOLTIP_GLOVE_BASE_EFFECT_INCREASE,
+		item.APPLY_NO_FALLEN : localeInfo.TOOLTIP_NO_FALLEN,
+		item.APPLY_HIT_AREA_ELEC_ATTACK : localeInfo.TOOLTIP_HIT_AREA_ELEC_ATTACK,
+		item.APPLY_BLOCK_PENETRATE_PCT : localeInfo.TOOLTIP_APPLY_BLOCK_PENETRATE_PCT,
+		item.APPLY_ATTBONUS_MYSTERY_DUNGEON : localeInfo.TOOLTIP_APPLY_ATTBONUS_MYSTERY_DUNGEON,
+		item.APPLY_ATTBONUS_DRAGON : localeInfo.TOOLTIP_APPLY_ATTBONUS_DRAGON,
+		item.APPLY_ATTBONUS_MOON : localeInfo.TOOLTIP_APPLY_ATTBONUS_MOON,
+		item.APPLY_BONUS_BLOCK_PENETRATE_PCT : localeInfo.TOOLTIP_APPLY_BONUS_BLOCK_PENETRATE_PCT,
+		item.APPLY_BONUS_HIT_PCT : localeInfo.TOOLTIP_APPLY_BONUS_HIT_PCT,
+		item.APPLY_REFUSE_EXP : localeInfo.TOOLTIP_APPLY_REFUSE_EXP,
+		item.APPLY_RANDOM : lambda v: None,
+		item.APPLY_MOUNT : lambda v: None,
+	}
+
+	if app.ENABLE_NEW_BONUS_SYSTEM:
+		AFFECT_DICT.update({
+			item.APPLY_ATTBONUS_STONE : localeInfo.TOOLTIP_ATTBONUS_STONE,
+			item.APPLY_ATTBONUS_BOSS : localeInfo.TOOLTIP_ATTBONUS_BOSS,
+			item.APPLY_ATTBONUS_ELEMENTS : localeInfo.TOOLTIP_ATTBONUS_ELEMENTS,
+			item.APPLY_ENCHANT_ELEMENTS : localeInfo.TOOLTIP_ENCHANT_ELEMENTS,
+			item.APPLY_ATTBONUS_CHARACTERS : localeInfo.TOOLTIP_ATTBONUS_CHARACTERS,
+			item.APPLY_ENCHANT_CHARACTERS : localeInfo.TOOLTIP_ENCHANT_CHARACTERS,
+			item.APPLY_RESIST_MONSTER : localeInfo.TOOLTIP_APPLY_RESIST_MONSTER,
+		})
+
+	if app.ENABLE_MEDI_PVM:
+		AFFECT_DICT.update({
+			item.APPLY_ATTBONUS_MEDI_PVM : localeInfo.TOOLTIP_APPLY_ATTBONUS_MEDI_PVM,
+		})
+
+	if app.ENABLE_MAGIC_REDUCTION_SYSTEM:
+		AFFECT_DICT.update({
+			item.APPLY_RESIST_MAGIC_REDUCTION : localeInfo.TOOLTIP_RESIST_MAGIC_REDUCTION,
+		})
+
+	AFFECT_DICT.update({
+		item.APPLY_ENCHANT_ELECT : localeInfo.TOOLTIP_APPLY_ENCHANT_ELECT,
+		item.APPLY_ENCHANT_FIRE : localeInfo.TOOLTIP_APPLY_ENCHANT_FIRE,
+		item.APPLY_ENCHANT_ICE : localeInfo.TOOLTIP_APPLY_ENCHANT_ICE,
+		item.APPLY_ENCHANT_WIND : localeInfo.TOOLTIP_APPLY_ENCHANT_WIND,
+		item.APPLY_ENCHANT_EARTH : localeInfo.TOOLTIP_APPLY_ENCHANT_EARTH,
+		item.APPLY_ENCHANT_DARK : localeInfo.TOOLTIP_APPLY_ENCHANT_DARK,
+	})
+
+	ATTRIBUTE_NEED_WIDTH = {
+		23 : 230,
+		24 : 230,
+		25 : 230,
+		26 : 220,
+		27 : 210,
+
+		35 : 210,
+		36 : 210,
+		37 : 210,
+		38 : 210,
+		39 : 210,
+		40 : 210,
+		41 : 210,
+
+		42 : 220,
+		43 : 230,
+		45 : 230,
+	}
+
+	ANTI_FLAG_DICT = {
+		0 : item.ITEM_ANTIFLAG_WARRIOR,
+		1 : item.ITEM_ANTIFLAG_ASSASSIN,
+		2 : item.ITEM_ANTIFLAG_SURA,
+		3 : item.ITEM_ANTIFLAG_SHAMAN,
+	}
+
+	if app.ENABLE_CONQUEROR_LEVEL:
+		AFFECT_DICT.update({
+			item.APPLY_SUNGMA_STR : localeInfo.TOOLTIP_SUNGMA_STR,
+			item.APPLY_SUNGMA_HP : localeInfo.TOOLTIP_SUNGMA_HP,
+			item.APPLY_SUNGMA_MOVE : localeInfo.TOOLTIP_SUNGMA_MOVE,
+			item.APPLY_SUNGMA_IMMUNE : localeInfo.TOOLTIP_SUNGMA_IMMUNE,
+		})
+
+	FONT_COLOR = grp.GenerateColor(0.7607, 0.7607, 0.7607, 1.0)
+
+	def __init__(self, *args, **kwargs):
+		ToolTip.__init__(self, *args, **kwargs)
+		self.itemVnum = 0
+		self.isShopItem = FALSE
+		self.bCannotUseItemForceSetDisableColor = TRUE
+
+		if app.ENABLE_SLOT_MARKING_SYSTEM:
+			self.interface = None
+
+		if app.ENABLE_RENEWAL_OFFLINESHOP:
+			self.isOfflineShopItem = FALSE
+
+		if app.ENABLE_RENDER_TARGET:
+			self.ModelPreviewRenderIndex = None
+			self.ModelPreviewBoard = None
+			self.ModelPreview = None
+			self.ModelPreviewText = None
+			self.currentAuraVnum = 0  # Þu anda set edilmiþ aura vnum'u (çift aura görünmesini önlemek için)
+
+	def __del__(self):
+		if app.ENABLE_RENDER_TARGET:
+			self.__ModelPreviewClose()
+		ToolTip.__del__(self)
+
+	if app.ENABLE_SLOT_MARKING_SYSTEM:
+		def BindInterface(self, interface):
+			from _weakref import proxy
+			self.interface = proxy(interface)
+
+	def SetCannotUseItemForceSetDisableColor(self, enable):
+		self.bCannotUseItemForceSetDisableColor = enable
+
+	def CanEquip(self):
+		if not item.IsEquipmentVID(self.itemVnum):
+			return TRUE
+
+		race = player.GetRace()
+		job = chr.RaceToJob(race)
+		if not self.ANTI_FLAG_DICT.has_key(job):
+			return FALSE
+
+		if item.IsAntiFlag(self.ANTI_FLAG_DICT[job]):
+			return FALSE
+
+		sex = chr.RaceToSex(race)
+
+		MALE = 1
+		FEMALE = 0
+
+		if item.IsAntiFlag(item.ITEM_ANTIFLAG_MALE) and sex == MALE:
+			return FALSE
+
+		if item.IsAntiFlag(item.ITEM_ANTIFLAG_FEMALE) and sex == FEMALE:
+			return FALSE
+
+		for i in xrange(item.LIMIT_MAX_NUM):
+			(limitType, limitValue) = item.GetLimit(i)
+
+			if item.LIMIT_LEVEL == limitType:
+				if player.GetStatus(player.LEVEL) < limitValue:
+					return FALSE
+
+		return TRUE
+
+	if app.ENABLE_RENDER_TARGET:
+		def AppendEmojiRenderInfo(self):
+			self.AppendSpace(5)
+			if app.ENABLE_TEXTLINE_EMOJI:
+				self.AppendTextLine(localeInfo.EMOJI_TEXTLINE_VIEW_RENDER)
+			else:
+				self.AppendTextLine("Halte 'STRG' fuer eine Vorschau.", self.RENDER_TARGET)
+			self.AppendSpace(5)
+
+	def AppendTextLine(self, text, color = FONT_COLOR, centerAlign = TRUE):
+		if not self.CanEquip() and self.bCannotUseItemForceSetDisableColor:
+			color = self.DISABLE_COLOR
+
+		return ToolTip.AppendTextLine(self, text, color, centerAlign)
+
+	def AppendTextLineTime(self, endTime, getLimit):
+		color = self.FONT_COLOR
+		if not self.CanEquip() and self.bCannotUseItemForceSetDisableColor:
+			color = self.DISABLE_COLOR
+
+		return ToolTip.AppendTextLineTime(self, endTime, getLimit, color)
+
+	if app.ENABLE_RENDER_TARGET:
+		def OnUpdate(self):
+			ToolTip.OnUpdate(self)
+			
+			if not self.followFlag:
+				return
+			
+			try:
+				if self.itemVnum > 0:
+					isCtrlPressed = app.IsPressed(app.DIK_LCONTROL)
+					if isCtrlPressed != constInfo.enable_item_preview:
+						constInfo.enable_item_preview = isCtrlPressed
+						if isCtrlPressed:
+							item.SelectItem(self.itemVnum)
+							itemType = item.GetItemType()
+							itemSubType = item.GetItemSubType()
+							
+							# Model preview için uygun item tipleri kontrol et
+							shouldShowPreview = FALSE
+							if item.ITEM_TYPE_WEAPON == itemType:
+								shouldShowPreview = TRUE
+							elif item.ITEM_TYPE_ARMOR == itemType and itemSubType == item.ARMOR_BODY:
+								shouldShowPreview = TRUE
+							elif item.ITEM_TYPE_MOUNT == itemType:
+								shouldShowPreview = TRUE  # Mount için model preview
+							elif item.ITEM_TYPE_PET == itemType:
+								shouldShowPreview = TRUE  # Pet için model preview
+							elif item.ITEM_TYPE_COSTUME == itemType:
+								if itemSubType in (item.COSTUME_TYPE_BODY, item.COSTUME_TYPE_WEAPON, item.COSTUME_TYPE_HAIR, 
+												   item.COSTUME_TYPE_ACCE, item.COSTUME_TYPE_AURA, item.COSTUME_TYPE_MOUNT, item.COSTUME_TYPE_PET):
+									shouldShowPreview = TRUE
+							
+							if shouldShowPreview:
+								self.__ModelPreview(self.itemVnum, 0)
+						else:
+							self.__ModelPreviewClose()
+					
+					# CTRL tuþu basýlý tutulduðunda efektleri sürekli koru (MDE ve Aura efektleri kaybolmasýný önlemek için)
+					if constInfo.enable_item_preview and self.itemVnum > 0:
+						try:
+							if self.ModelPreviewRenderIndex is not None and self.ModelPreviewRenderIndex >= 0:
+								item.SelectItem(self.itemVnum)
+								itemType = item.GetItemType()
+								itemSubType = item.GetItemSubType()
+								
+								# MDE efektleri için costume weapon'larý yeniden set et
+								if item.ITEM_TYPE_COSTUME == itemType and itemSubType == item.COSTUME_TYPE_WEAPON:
+									# MDE efektleri costume weapon set edildiðinde otomatik olarak gösterilir
+									# Weapon'ý yeniden set et (MDE efektlerini korumak için)
+									renderTarget.SetWeapon(self.ModelPreviewRenderIndex, self.itemVnum)
+								
+								# Aura efektleri için aura costume item'larý yeniden set et
+								if item.ITEM_TYPE_COSTUME == itemType and itemSubType == item.COSTUME_TYPE_AURA:
+									# Aura'yý sadece kaybolduðunda yeniden set et (çift aura görünmesini önlemek için)
+									if self.currentAuraVnum != self.itemVnum:
+										renderTarget.SetAura(self.ModelPreviewRenderIndex, self.itemVnum)
+										self.currentAuraVnum = self.itemVnum
+						except:
+							pass  # Hata durumunda sessizce devam et
+			except:
+				pass  # Hata durumunda sessizce devam et
+
+	def ClearToolTip(self):
+		if app.ENABLE_RENDER_TARGET:
+			self.__ModelPreviewClose()
+		self.isShopItem = FALSE
+		if app.ENABLE_ATTENDANCE_EVENT:
+			self.isAttendanceRewardItem = False
+		self.toolTipWidth = self.TOOL_TIP_WIDTH
+		ToolTip.ClearToolTip(self)
+
+	if app.ENABLE_RENEWAL_OFFLINESHOP:
+		def SetOfflineShopBuilderItem(self, invenType, invenPos, offlineShopIndex):
+			self.ClearToolTip()
+
+			itemVnum = player.GetItemIndex(invenType, invenPos)
+			if (itemVnum == 0):
+				return
+
+			item.SelectItem(itemVnum)
+
+			metinSlot = []
+			for i in xrange(player.METIN_SOCKET_MAX_NUM):
+				metinSlot.append(player.GetItemMetinSocket(invenPos, i))
+
+			attrSlot = []
+			for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+				attrSlot.append(player.GetItemAttribute(invenPos, i))
+
+			self.AddItemData(itemVnum, metinSlot, attrSlot)
+
+			price = shop.GetOfflineShopItemPriceReal(invenType, invenPos)
+			if price > 0:
+				self.AppendPrice(price)
+
+		def SetOfflineShopItem(self, slotIndex):
+			itemVnum = shop.GetOfflineShopItemID(slotIndex)
+			if (itemVnum == 0):
+				return
+
+			price = shop.GetOfflineShopItemPrice(slotIndex)
+
+			self.ClearToolTip()
+
+			metinSlot = []
+			for i in xrange(player.METIN_SOCKET_MAX_NUM):
+				metinSlot.append(shop.GetOfflineShopItemMetinSocket(slotIndex, i))
+
+			attrSlot = []
+			for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+				attrSlot.append(shop.GetOfflineShopItemAttribute(slotIndex, i))
+
+			self.AddItemData(itemVnum, metinSlot, attrSlot)
+			if app.ENABLE_CHANGE_LOOK_SYSTEM:
+				self.AppendChangeLookInfoOfflineShopWIndow(slotIndex)
+
+			if price > 0:
+				self.AppendPrice(price)
+
+			if shop.GetOfflineShopItemStatus(slotIndex) == 1:
+				self.AppendTextLine(localeInfo.OFFLINESHOP_ITEM_SOLD, self.DISABLE_COLOR)
+				self.AppendTextLine(localeInfo.OFFLINESHOP_ITEM_SOLD2 % (shop.GetOfflineShopItemBuyerName(slotIndex)), self.DISABLE_COLOR)
+
+		if app.ENABLE_CHANGE_LOOK_SYSTEM:
+			def AppendChangeLookInfoOfflineShopWIndow(self, slotIndex):
+				changelookvnum = shop.GetOfflineShopItemTransmutation(slotIndex)
+				if not changelookvnum == 0:
+					self.AppendSpace(5)
+					self.AppendTextLine("[ " + localeInfo.CHANGE_LOOK_TITLE+" ]", self.CHANGELOOK_TITLE_COLOR)
+					itemName = item.GetItemNameByVnum(changelookvnum)
+
+					if item.GetItemType() == item.ITEM_TYPE_COSTUME:
+						if item.GetItemSubType() == item.COSTUME_TYPE_BODY:
+							malefemale = ""
+							if item.IsAntiFlag(item.ITEM_ANTIFLAG_MALE):
+								malefemale = localeInfo.FOR_FEMALE
+
+							if item.IsAntiFlag(item.ITEM_ANTIFLAG_FEMALE):
+								malefemale = localeInfo.FOR_MALE
+							itemName += " ( " + malefemale +  " )"
+
+					textLine = self.AppendTextLine(itemName, self.CHANGELOOK_ITEMNAME_COLOR, TRUE)
+					textLine.SetFeather()
+
+	if app.ENABLE_CHANGE_LOOK_SYSTEM:
+		def AppendChangeLookInfoExchangeWIndow(self, type, slotIndex):
+			if type == 0:
+				changelookvnum = exchange.GetChangeLookVnumFromSelf(slotIndex)
+			elif type == 1:
+				changelookvnum = exchange.GetChangeLookVnumFromTarget(slotIndex)
+			if not changelookvnum == 0:
+				self.AppendSpace(5)
+				self.AppendTextLine("[ " + localeInfo.CHANGE_LOOK_TITLE+" ]", self.CHANGELOOK_TITLE_COLOR)
+				itemName = item.GetItemNameByVnum(changelookvnum)
+
+				if item.GetItemType() == item.ITEM_TYPE_COSTUME:
+					if item.GetItemSubType() == item.COSTUME_TYPE_BODY:
+						malefemale = ""
+						if item.IsAntiFlag(item.ITEM_ANTIFLAG_MALE):
+							malefemale = localeInfo.FOR_FEMALE
+
+						if item.IsAntiFlag(item.ITEM_ANTIFLAG_FEMALE):
+							malefemale = localeInfo.FOR_MALE
+						itemName += " ( " + malefemale +  " )"
+
+				textLine = self.AppendTextLine(itemName, self.CHANGELOOK_ITEMNAME_COLOR, TRUE)
+				textLine.SetFeather()
+
+	if app.ENABLE_MOVE_COSTUME_ACCE_ATTR:
+		def SetResulItemAttrMove(self, baseSlotIndex, materialSlotIndex, window_type = player.INVENTORY):
+			if baseSlotIndex < 0 or materialSlotIndex < 0:
+				return
+
+			baseItemVnum = player.GetItemIndex(window_type, baseSlotIndex)
+			if baseItemVnum == 0:
+				return
+
+			self.ClearToolTip()
+
+			metinSlot = [player.GetItemMetinSocket(window_type, baseSlotIndex, i) for i in xrange(player.METIN_SOCKET_MAX_NUM)]
+			attrSlot = [player.GetItemAttribute(window_type, materialSlotIndex, i) for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM)]
+
+			self.AddItemData(baseItemVnum, metinSlot, attrSlot, 0, 0, window_type, baseSlotIndex)
+
+	def SetInventoryItem(self, slotIndex, window_type = player.INVENTORY):
+		itemVnum = player.GetItemIndex(window_type, slotIndex)
+		if 0 == itemVnum:
+			return
+
+		if app.ENABLE_GROWTH_PET_SYSTEM:
+			if window_type == player.PET_FEED:
+				itemVnum = player.GetItemIndex(player.INVENTORY, slotIndex)
+
+		self.ClearToolTip()
+		if window_type == player.INVENTORY and (getattr(app, 'ENABLE_OFFLINESHOP_SEARCH_SYSTEM', FALSE) or getattr(app, 'ENABLE_WIKI_SYSTEM', FALSE)):
+			self.toolTipWidth = max(self.toolTipWidth, 310)
+			self.ResizeToolTip()
+		if shop.IsOpen():
+			if not shop.IsPrivateShop():
+				item.SelectItem(itemVnum)
+
+		metinSlot = [player.GetItemMetinSocket(window_type, slotIndex, i) for i in xrange(player.METIN_SOCKET_MAX_NUM)]
+		attrSlot = [player.GetItemAttribute(window_type, slotIndex, i) for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM)]
+
+		if app.ENABLE_GROWTH_PET_SYSTEM:
+			if window_type == player.PET_FEED:
+				metinSlot = [player.GetItemMetinSocket(player.INVENTORY, slotIndex, i) for i in xrange(player.METIN_SOCKET_MAX_NUM)]
+
+		set_value = 0
+		if app.ENABLE_SET_ITEM:
+			set_value = player.GetItemSetValue(window_type, slotIndex)
+
+		if app.ENABLE_QUICK_SELL_ITEM:
+			self.AddItemData(itemVnum, metinSlot, attrSlot, 0, 0, window_type, slotIndex, 0, set_value)
+		else:
+			self.AddItemData(itemVnum, metinSlot, attrSlot, 0, 0, window_type, slotIndex, 0, set_value)
+
+
+	def SetShopItem(self, slotIndex):
+		itemVnum = shop.GetItemID(slotIndex)
+		if 0 == itemVnum:
+			return
+
+		price = shop.GetItemPrice(slotIndex)
+		self.ClearToolTip()
+		self.isShopItem = TRUE
+
+		metinSlot = []
+		for i in xrange(player.METIN_SOCKET_MAX_NUM):
+			metinSlot.append(shop.GetItemMetinSocket(slotIndex, i))
+		attrSlot = []
+		for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+			attrSlot.append(shop.GetItemAttribute(slotIndex, i))
+
+		if app.ENABLE_ITEMSHOP:
+			item.SelectItem(itemVnum)
+			for i in xrange(item.LIMIT_MAX_NUM):
+				(limitType, limitValue) = item.GetLimit(i)
+				if item.LIMIT_TIMER_BASED_ON_WEAR == limitType:
+					metinSlot[2] = limitValue
+				elif item.LIMIT_REAL_TIME == limitType or item.LIMIT_REAL_TIME_START_FIRST_USE == limitType:
+					metinSlot[2] = limitValue
+
+		self.AddItemData(itemVnum, metinSlot, attrSlot)
+		# if app.ENABLE_CHANGE_LOOK_SYSTEM:
+			# self.AppendChangeLookInfoShopWIndow(slotIndex)
+		self.AppendPrice(price)
+
+		self.AppendSpace(2)
+		self.AppendTextLine(localeInfo.EMOJI_SHOP_BUY, self.COLOR_TEXT_SHORTCUT)
+
+	def SetShopItemBySecondaryCoin(self, slotIndex):
+		itemVnum = shop.GetItemID(slotIndex)
+		if 0 == itemVnum:
+			return
+
+		price = shop.GetItemPrice(slotIndex)
+		self.ClearToolTip()
+		self.isShopItem = TRUE
+
+		metinSlot = []
+		for i in xrange(player.METIN_SOCKET_MAX_NUM):
+			metinSlot.append(shop.GetItemMetinSocket(slotIndex, i))
+		attrSlot = []
+		for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+			attrSlot.append(shop.GetItemAttribute(slotIndex, i))
+
+		self.AddItemData(itemVnum, metinSlot, attrSlot)
+		self.AppendPriceBySecondaryCoin(price)
+
+	if app.ENABLE_RENEWAL_SHOPEX:
+		def SetShopItemByShopEx(self, slotIndex, type):
+			itemVnum = shop.GetItemID(slotIndex)
+			PriceVnum = shop.GetItemPriceVnum(slotIndex)
+
+			if itemVnum == 0 or (PriceVnum == 0 and type == shop.SHOPEX_ITEM):
+				return
+
+			price = shop.GetItemPrice(slotIndex)
+			self.ClearToolTip()
+			self.isShopItem = TRUE
+			metinSlot = []
+
+			for i in xrange(player.METIN_SOCKET_MAX_NUM):
+				metinSlot.append(shop.GetItemMetinSocket(slotIndex, i))
+			attrSlot = []
+
+			for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+				attrSlot.append(shop.GetItemAttribute(slotIndex, i))
+			self.AddItemData(itemVnum, metinSlot, attrSlot)
+			self.AppendSpace(5)
+
+			if type == shop.SHOPEX_ITEM:
+				self.AddSHOPEXItem(PriceVnum, price)
+			else:
+				self.AppendTextLine(localeInfo.TOOLTIP_BUYPRICE  % (localeInfo.NumberToShopEXP(price)), self.GetPriceColor(price))
+
+		def AddSHOPEXItem(self, itemVnum, price):
+			self.AppendTextLine("Price:")
+			item.SelectItem(itemVnum)
+
+			name = "%s(%dx)" % (item.GetItemName(), price)
+			self.AutoAppendTextLine(name, self.SPECIAL_TITLE_COLOR)
+
+			itemImage = ui.ImageBox()
+			itemImage.SetParent(self)
+			itemImage.Show()
+			itemImage.LoadImage(item.GetIconImageFileName())
+			itemImage.SetPosition(95, self.toolTipHeight)
+
+			self.toolTipHeight += itemImage.GetHeight() - 10
+			self.childrenList.append(itemImage)
+			self.ResizeToolTip()
+
+	def SetExchangeOwnerItem(self, slotIndex):
+		itemVnum = exchange.GetItemVnumFromSelf(slotIndex)
+		if 0 == itemVnum:
+			return
+
+		self.ClearToolTip()
+
+		metinSlot = []
+		for i in xrange(player.METIN_SOCKET_MAX_NUM):
+			metinSlot.append(exchange.GetItemMetinSocketFromSelf(slotIndex, i))
+		attrSlot = []
+		for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+			attrSlot.append(exchange.GetItemAttributeFromSelf(slotIndex, i))
+
+		self.AddItemData(itemVnum, metinSlot, attrSlot)
+		if app.ENABLE_CHANGE_LOOK_SYSTEM:
+			self.AppendChangeLookInfoExchangeWIndow(0, slotIndex)
+
+	def SetExchangeTargetItem(self, slotIndex):
+		itemVnum = exchange.GetItemVnumFromTarget(slotIndex)
+		if 0 == itemVnum:
+			return
+
+		self.ClearToolTip()
+
+		metinSlot = []
+		for i in xrange(player.METIN_SOCKET_MAX_NUM):
+			metinSlot.append(exchange.GetItemMetinSocketFromTarget(slotIndex, i))
+		attrSlot = []
+		for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+			attrSlot.append(exchange.GetItemAttributeFromTarget(slotIndex, i))
+
+		self.AddItemData(itemVnum, metinSlot, attrSlot)
+		if app.ENABLE_CHANGE_LOOK_SYSTEM:
+			self.AppendChangeLookInfoExchangeWIndow(1, slotIndex)
+
+	def SetPrivateShopBuilderItem(self, invenType, invenPos, privateShopSlotIndex):
+		itemVnum = player.GetItemIndex(invenType, invenPos)
+		if 0 == itemVnum:
+			return
+
+		item.SelectItem(itemVnum)
+		self.ClearToolTip()
+
+		metinSlot = []
+		for i in xrange(player.METIN_SOCKET_MAX_NUM):
+			metinSlot.append(player.GetItemMetinSocket(invenPos, i))
+		attrSlot = []
+		for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+			attrSlot.append(player.GetItemAttribute(invenPos, i))
+
+		if app.ENABLE_CHANGE_LOOK_SYSTEM:
+			self.AddItemData(itemVnum, metinSlot, attrSlot, 0, 0, invenType, invenPos)
+		else:
+			self.AddItemData(itemVnum, metinSlot, attrSlot)
+
+	if app.ENABLE_CHANGE_LOOK_SYSTEM:
+		def SetChangeLookWindowItem(self, slotIndex):
+			inventoryslotindex = player.GetChangeLookItemInvenSlot(slotIndex)
+			if inventoryslotindex == player.ITEM_SLOT_COUNT:
+				return
+			itemVnum = player.GetItemIndex(player.INVENTORY, inventoryslotindex)
+			if 0 == itemVnum:
+				return
+			self.ClearToolTip()
+			metinSlot = [player.GetItemMetinSocket(player.INVENTORY, inventoryslotindex, i) for i in xrange(player.METIN_SOCKET_MAX_NUM)]
+			attrSlot = [player.GetItemAttribute(player.INVENTORY, inventoryslotindex, i) for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM)]
+			self.AddItemData(itemVnum, metinSlot, attrSlot, 0, 0, player.INVENTORY, inventoryslotindex)
+
+	def SetSafeBoxItem(self, slotIndex):
+		itemVnum = safebox.GetItemID(slotIndex)
+		if 0 == itemVnum:
+			return
+
+		self.ClearToolTip()
+		metinSlot = []
+		for i in xrange(player.METIN_SOCKET_MAX_NUM):
+			metinSlot.append(safebox.GetItemMetinSocket(slotIndex, i))
+		attrSlot = []
+		for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+			attrSlot.append(safebox.GetItemAttribute(slotIndex, i))
+
+		if app.ENABLE_CHANGE_LOOK_SYSTEM:
+			self.AddItemData(itemVnum, metinSlot, attrSlot, safebox.GetItemFlags(slotIndex), 0, player.SAFEBOX, slotIndex)
+		else:
+			self.AddItemData(itemVnum, metinSlot, attrSlot, safebox.GetItemFlags(slotIndex))
+
+	def SetMallItem(self, slotIndex):
+		itemVnum = safebox.GetMallItemID(slotIndex)
+		if 0 == itemVnum:
+			return
+
+		self.ClearToolTip()
+		metinSlot = []
+		for i in xrange(player.METIN_SOCKET_MAX_NUM):
+			metinSlot.append(safebox.GetMallItemMetinSocket(slotIndex, i))
+		attrSlot = []
+		for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+			attrSlot.append(safebox.GetMallItemAttribute(slotIndex, i))
+
+		if app.ENABLE_ITEMSHOP:
+			item.SelectItem(itemVnum)
+			for i in xrange(item.LIMIT_MAX_NUM):
+				(limitType, limitValue) = item.GetLimit(i)
+				if item.LIMIT_TIMER_BASED_ON_WEAR == limitType:
+					metinSlot[0] = limitValue
+				elif item.LIMIT_REAL_TIME == limitType or item.LIMIT_REAL_TIME_START_FIRST_USE == limitType:
+					metinSlot[0] = app.GetGlobalTimeStamp()+limitValue
+
+		if app.ENABLE_CHANGE_LOOK_SYSTEM:
+			self.AddItemData(itemVnum, metinSlot, attrSlot, 0, 0, player.MALL, slotIndex)
+		else:
+			self.AddItemData(itemVnum, metinSlot, attrSlot)
+
+	def SetItemToolTip(self, itemVnum):
+		self.ClearToolTip()
+		metinSlot = []
+		for i in xrange(player.METIN_SOCKET_MAX_NUM):
+			metinSlot.append(0)
+		attrSlot = []
+		for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+			attrSlot.append((0, 0))
+
+		if app.ENABLE_ITEMSHOP:
+			item.SelectItem(itemVnum)
+			for i in xrange(item.LIMIT_MAX_NUM):
+				(limitType, limitValue) = item.GetLimit(i)
+				if item.LIMIT_TIMER_BASED_ON_WEAR == limitType:
+					metinSlot[0] = limitValue
+				elif item.LIMIT_REAL_TIME_START_FIRST_USE == limitType:
+					metinSlot[0] = limitValue
+				elif item.LIMIT_REAL_TIME == limitType:
+					metinSlot[0] = app.GetGlobalTimeStamp()+limitValue
+
+		self.AddItemData(itemVnum, metinSlot, attrSlot)
+
+	if app.ENABLE_ATTENDANCE_EVENT:
+		def SetAttendanceRewardItem(self, itemVnum, itemCount):
+			if 0 == itemVnum:
+				return
+
+			self.ClearToolTip()
+			self.isAttendanceRewardItem = True
+			
+			metinSlot = []
+			for i in xrange(player.METIN_SOCKET_MAX_NUM):
+				metinSlot.append(0)
+			attrSlot = []
+			for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+				attrSlot.append((0, 0))
+				
+			metinSlot[0] = itemCount
+
+			self.AddItemData(itemVnum, metinSlot, attrSlot)
+
+	if app.ENABLE_WIKI_SYSTEM:
+		def SetItemToolTipWiki(self, itemVnum):
+			self.itemVnum = itemVnum
+			item.SelectItem(itemVnum)
+
+			metinSlot = [0 for i in xrange(player.METIN_SOCKET_MAX_NUM)]
+			attrSlot = [(0, 0) for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM)]
+
+			for i in xrange(item.LIMIT_MAX_NUM):
+				(limitType, limitValue) = item.GetLimit(i)
+				if item.LIMIT_TIMER_BASED_ON_WEAR == limitType:
+					metinSlot[0] = limitValue
+				elif item.LIMIT_REAL_TIME == limitType or item.LIMIT_REAL_TIME_START_FIRST_USE == limitType:
+					metinSlot[0] = app.GetGlobalTimeStamp()+limitValue
+
+			self.SetTitle(item.GetItemName())
+			self.AppendDescription(item.GetItemDescription(), 26)
+			self.AppendDescription(item.GetItemSummary(), 26, self.CONDITION_COLOR)
+			self.__AppendAffectInformation()
+			self.__AppendAttributeInformation(attrSlot)
+			self.AppendWearableInformation()
+
+			for i in xrange(item.LIMIT_MAX_NUM):
+				(limitType, limitValue) = item.GetLimit(i)
+				if item.LIMIT_REAL_TIME == limitType:
+					if metinSlot[0] > 0:
+						self.AppendMallItemLastTime(metinSlot[0], limitValue)
+					break
+
+			self.ShowToolTip()
+
+	if app.ENABLE_AURA_COSTUME_SYSTEM:
+		def SetAuraWindowItem(self, slotIndex):
+			itemVnum = player.GetAuraItemID(slotIndex)
+			if 0 == itemVnum: return
+
+			self.ClearToolTip()
+			if shop.IsOpen() and not shop.IsPrivateShop():
+				self.AppendSellingPrice(item.GetISellItemPrice(item.SelectItem(itemVnum)))
+
+			metinSlot = [player.GetAuraItemMetinSocket(slotIndex, i) for i in xrange(player.METIN_SOCKET_MAX_NUM)]
+			attrSlot = [player.GetAuraItemAttribute(slotIndex, i) for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM)]
+
+			self.AddItemData(itemVnum, metinSlot, attrSlot, player.AURA_REFINE, slotIndex)
+
+		def __AppendAffectInformationAura(self, window_type, slotIndex, metinSlot):
+			socketLevelValue = 0
+			socketBoostValue = 0
+
+			if window_type == player.INVENTORY:
+				socketLevelValue = player.GetItemMetinSocket(window_type, slotIndex, player.ITEM_SOCKET_AURA_CURRENT_LEVEL)
+				if metinSlot[player.ITEM_SOCKET_AURA_CURRENT_LEVEL] != 0 and socketLevelValue == 0:
+					socketLevelValue = metinSlot[player.ITEM_SOCKET_AURA_CURRENT_LEVEL]
+
+				socketBoostValue = player.GetItemMetinSocket(window_type, slotIndex, player.ITEM_SOCKET_AURA_BOOST)
+				if metinSlot[player.ITEM_SOCKET_AURA_BOOST] != 0 and socketBoostValue == 0:
+					socketBoostValue = metinSlot[player.ITEM_SOCKET_AURA_BOOST]
+			elif window_type == player.AURA_REFINE:
+				socketLevelValue = player.GetAuraItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_CURRENT_LEVEL)
+				socketBoostValue = player.GetAuraItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_BOOST)
+			elif window_type == player.SAFEBOX:
+				socketLevelValue = safebox.GetItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_CURRENT_LEVEL)
+				socketBoostValue = safebox.GetItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_BOOST)
+
+			if socketLevelValue == 0:
+				return
+
+			curLevel = (socketLevelValue / 100000) - 1000
+			curStep = player.GetAuraRefineInfo(curLevel, player.AURA_REFINE_INFO_STEP)
+			if curStep < item.AURA_GRADE_RADIANT:
+				curExpPer = 100.0 * (socketLevelValue % 100000) / player.GetAuraRefineInfo(curLevel, player.AURA_REFINE_INFO_NEED_EXP)
+
+			self.AppendTextLine(localeInfo.AURA_LEVEL_STEP % (curLevel, curStep), self.CONDITION_COLOR)
+			if curStep < item.AURA_GRADE_RADIANT:
+				self.AppendTextLine(localeInfo.AURA_TOOLTIP_EXP % (curExpPer), self.CONDITION_COLOR)
+
+			boostPercent = 0
+			if socketBoostValue != 0:
+				curBoostIndex = socketBoostValue / 100000000
+				boostItemVnum = curBoostIndex + item.AURA_BOOST_ITEM_VNUM_BASE
+				if boostItemVnum:
+					item.SelectItem(boostItemVnum)
+					boostPercent = item.GetValue(player.ITEM_VALUE_AURA_BOOST_PERCENT)
+
+			if boostPercent > 0:
+				self.AppendTextLine(localeInfo.AURA_DRAIN_BOOST_PER % (1.0 * curLevel / 10, boostPercent), self.CONDITION_COLOR)
+			else:
+				self.AppendTextLine(localeInfo.AURA_DRAIN_PER % (1.0 * curLevel / 10), self.CONDITION_COLOR)
+
+		def __AppendAuraItemAffectInformation(self, oriItemVnum, window_type, slotIndex, metinSlot):
+			socketLevelValue = 0
+			socketBoostValue = 0
+
+			if window_type == player.INVENTORY:
+				socketLevelValue = player.GetItemMetinSocket(window_type, slotIndex, player.ITEM_SOCKET_AURA_CURRENT_LEVEL)
+				if metinSlot[player.ITEM_SOCKET_AURA_CURRENT_LEVEL] != 0 and socketLevelValue == 0:
+					socketLevelValue = metinSlot[player.ITEM_SOCKET_AURA_CURRENT_LEVEL]
+
+				socketBoostValue = player.GetItemMetinSocket(window_type, slotIndex, player.ITEM_SOCKET_AURA_BOOST)
+				if metinSlot[player.ITEM_SOCKET_AURA_BOOST] != 0 and socketBoostValue == 0:
+					socketBoostValue = metinSlot[player.ITEM_SOCKET_AURA_BOOST]
+			elif window_type == player.AURA_REFINE:
+				socketLevelValue = player.GetAuraItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_CURRENT_LEVEL)
+				socketBoostValue = player.GetAuraItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_BOOST)
+			elif window_type == player.SAFEBOX:
+				socketLevelValue = safebox.GetItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_CURRENT_LEVEL)
+				socketBoostValue = safebox.GetItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_BOOST)
+
+			if socketLevelValue == 0:
+				return
+
+			curLevel = (socketLevelValue / 100000) - 1000
+			boostPercent = 0.0
+			if socketBoostValue != 0:
+				curBoostIndex = socketBoostValue / 100000000
+				boostItemVnum = curBoostIndex + item.AURA_BOOST_ITEM_VNUM_BASE
+
+				if boostItemVnum:
+					item.SelectItem(boostItemVnum)
+					boostPercent = item.GetValue(player.ITEM_VALUE_AURA_BOOST_PERCENT) / 100.0
+
+			drainlate = curLevel / 10. / 100. + boostPercent
+
+			socketInDrainItemVnum = 0
+			if window_type == player.INVENTORY:
+				socketInDrainItemVnum = player.GetItemMetinSocket(window_type, slotIndex, player.ITEM_SOCKET_AURA_DRAIN_ITEM_VNUM)
+				if not metinSlot[player.ITEM_SOCKET_AURA_DRAIN_ITEM_VNUM] == 0 and socketInDrainItemVnum == 0:
+					socketInDrainItemVnum = metinSlot[player.ITEM_SOCKET_AURA_DRAIN_ITEM_VNUM]
+			elif window_type == player.AURA_REFINE:
+				socketInDrainItemVnum = player.GetAuraItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_DRAIN_ITEM_VNUM)
+			elif window_type == player.SAFEBOX:
+				socketInDrainItemVnum = safebox.GetItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_DRAIN_ITEM_VNUM)
+
+			if socketInDrainItemVnum == 0:
+				return
+
+			item.SelectItem(socketInDrainItemVnum)
+			itemType = item.GetItemType()
+			if itemType == item.ITEM_TYPE_ARMOR:
+				defBonus = item.GetValue(5)*2
+				if item.GetValue(1) >= 1:
+					defGrade = max(((item.GetValue(1) + defBonus) * drainlate) , 1)
+					if defGrade > 0:
+						self.AppendSpace(5)
+						self.AppendTextLineAbsorb(localeInfo.TOOLTIP_ITEM_DEF_GRADE % (defGrade), self.GetChangeTextLineColor(defGrade))
+
+			for i in xrange(item.ITEM_APPLY_MAX_NUM):
+				(affectType, affectValue) = item.GetAffect(i)
+				if affectValue > 0:
+					affectValue = max((affectValue * drainlate), 1)
+					affectString = self.__GetAffectString(affectType, affectValue)
+					if affectString:
+						self.AppendTextLineAbsorb(affectString, self.GetChangeTextLineColor(affectValue))
+
+			item.SelectItem(oriItemVnum)
+
+		def __AppendAttributeInformationAura(self, window_type, slotIndex, attrSlot, metinSlot):
+			if 0 != attrSlot:
+				socketLevelValue = 0
+				socketBoostValue = 0
+
+				if window_type == player.INVENTORY:
+					socketLevelValue = player.GetItemMetinSocket(window_type, slotIndex, player.ITEM_SOCKET_AURA_CURRENT_LEVEL)
+					socketBoostValue = player.GetItemMetinSocket(window_type, slotIndex, player.ITEM_SOCKET_AURA_BOOST)
+
+					if metinSlot[player.ITEM_SOCKET_AURA_CURRENT_LEVEL] != 0 and socketLevelValue == 0:
+						socketLevelValue = metinSlot[player.ITEM_SOCKET_AURA_CURRENT_LEVEL]
+
+					if metinSlot[player.ITEM_SOCKET_AURA_BOOST] != 0 and socketBoostValue == 0:
+						socketBoostValue = metinSlot[player.ITEM_SOCKET_AURA_BOOST]
+				elif window_type == player.AURA_REFINE:
+					socketLevelValue = player.GetAuraItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_CURRENT_LEVEL)
+					socketBoostValue = player.GetAuraItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_BOOST)
+				elif window_type == player.SAFEBOX:
+					socketLevelValue = safebox.GetItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_CURRENT_LEVEL)
+					socketBoostValue = safebox.GetItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_BOOST)
+
+				if socketLevelValue == 0:
+					return
+
+				curLevel = (socketLevelValue / 100000) - 1000
+				boostPercent = 0.0
+				if socketBoostValue != 0:
+					curBoostIndex = socketBoostValue / 100000000
+					boostItemVnum = curBoostIndex + item.AURA_BOOST_ITEM_VNUM_BASE
+
+					if boostItemVnum:
+						item.SelectItem(boostItemVnum)
+						boostPercent = item.GetValue(player.ITEM_VALUE_AURA_BOOST_PERCENT) / 100.0
+
+				drainlate = curLevel / 10. / 100. + boostPercent
+
+				for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+					type = attrSlot[i][0]
+					value = attrSlot[i][1]
+					if 0 >= value:
+						continue
+
+					value = max(((value) * drainlate) , 1)
+					affectString = self.__GetAffectString(type, value)
+
+					if affectString:
+						affectColor = self.__GetAttributeColor(i, value)
+						self.AppendTextLine(affectString, affectColor)
+
+		def __AppendAuraBoostMetinSlotInfo(self, oriItemVnum, window_type, slotIndex, metinSlot):
+			socketBoostValue = 0
+
+			if window_type == player.INVENTORY:
+				socketBoostValue = player.GetItemMetinSocket(window_type, slotIndex, player.ITEM_SOCKET_AURA_BOOST)
+				if metinSlot[player.ITEM_SOCKET_AURA_BOOST] != 0 and socketBoostValue == 0:
+					socketBoostValue = metinSlot[player.ITEM_SOCKET_AURA_BOOST]
+			elif window_type == player.AURA_REFINE:
+				socketBoostValue = player.GetAuraItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_BOOST)
+			elif window_type == player.SAFEBOX:
+				socketBoostValue = safebox.GetItemMetinSocket(slotIndex, player.ITEM_SOCKET_AURA_BOOST)
+
+			if socketBoostValue == 0:
+				return
+
+			curBoostIndex = socketBoostValue / 100000000
+
+			socketImageDict = {
+				player.METIN_SOCKET_TYPE_SILVER : "d:/ymir work/ui/game/windows/metin_slot_silver.sub",
+				player.METIN_SOCKET_TYPE_GOLD : "d:/ymir work/ui/game/windows/metin_slot_gold.sub",
+			}
+
+			socketType = player.METIN_SOCKET_TYPE_NONE
+			if item.ITEM_AURA_BOOST_ERASER < curBoostIndex < item.ITEM_AURA_BOOST_ULTIMATE:
+				socketType = player.METIN_SOCKET_TYPE_SILVER
+			elif curBoostIndex == item.ITEM_AURA_BOOST_ULTIMATE:
+				socketType = player.METIN_SOCKET_TYPE_GOLD
+
+			if player.METIN_SOCKET_TYPE_NONE == socketType:
+				return
+
+			boostRemainTime = socketBoostValue % 100000000
+			boostItemVnum = curBoostIndex + item.AURA_BOOST_ITEM_VNUM_BASE
+
+			self.AppendSpace(5)
+
+			slotImage = ui.ImageBox()
+			slotImage.SetParent(self)
+			slotImage.LoadImage(socketImageDict[socketType])
+			slotImage.Show()
+			self.childrenList.append(slotImage)
+
+			nameTextLine = ui.TextLine()
+			nameTextLine.SetParent(self)
+			nameTextLine.SetFontName(self.defFontName)
+			nameTextLine.SetPackedFontColor(self.NORMAL_COLOR)
+			nameTextLine.SetOutline()
+			nameTextLine.SetFeather()
+			nameTextLine.Show()
+			self.childrenList.append(nameTextLine)
+
+			slotImage.SetPosition(9, self.toolTipHeight-1)
+			nameTextLine.SetPosition(50, self.toolTipHeight + 2)
+
+			boostItemImage = ui.ImageBox()
+			boostItemImage.SetParent(self)
+			boostItemImage.Show()
+			self.childrenList.append(boostItemImage)
+
+			if boostItemVnum:
+				item.SelectItem(boostItemVnum)
+				try:
+					boostItemImage.LoadImage(item.GetIconImageFileName())
+				except:
+					dbg.TraceError("ItemToolTip.__AppendAuraBoostMetinSlotInfo() - Failed to find image file %d:%s" % (boostItemVnum, item.GetIconImageFileName()))
+
+				nameTextLine.SetText(item.GetItemName())
+
+				boostDrainTextLine = ui.TextLine()
+				boostDrainTextLine.SetParent(self)
+				boostDrainTextLine.SetFontName(self.defFontName)
+				boostDrainTextLine.SetPackedFontColor(self.POSITIVE_COLOR)
+				boostDrainTextLine.SetOutline()
+				boostDrainTextLine.SetFeather()
+				boostDrainTextLine.SetText(localeInfo.AURA_BOOST_DRAIN_PER % (item.GetValue(player.ITEM_VALUE_AURA_BOOST_PERCENT)))
+				boostDrainTextLine.Show()
+				self.childrenList.append(boostDrainTextLine)
+
+				boostItemImage.SetPosition(10, self.toolTipHeight)
+				boostDrainTextLine.SetPosition(50, self.toolTipHeight + 16 + 2)
+
+				if 1 == item.GetValue(player.ITEM_VALUE_AURA_BOOST_UNLIMITED):
+					boostRemainTime = 0
+
+				if 0 != boostRemainTime:
+					timeText = (localeInfo.LEFT_TIME + " : " + localeInfo.SecondToDHM(boostRemainTime))
+
+					timeTextLine = ui.TextLine()
+					timeTextLine.SetParent(self)
+					timeTextLine.SetFontName(self.defFontName)
+					timeTextLine.SetPackedFontColor(self.POSITIVE_COLOR)
+					timeTextLine.SetPosition(50, self.toolTipHeight + 16 + 2 + 16 + 2)
+					timeTextLine.SetOutline()
+					timeTextLine.SetFeather()
+					timeTextLine.Show()
+					timeTextLine.SetText(timeText)
+					self.childrenList.append(timeTextLine)
+					self.toolTipHeight += 16 + 2
+
+			self.toolTipHeight += 35
+			self.ResizeToolTip()
+
+	def __AppendAttackSpeedInfo(self, item):
+		atkSpd = item.GetValue(0)
+
+		if atkSpd < 80:
+			stSpd = localeInfo.TOOLTIP_ITEM_VERY_FAST
+		elif atkSpd <= 95:
+			stSpd = localeInfo.TOOLTIP_ITEM_FAST
+		elif atkSpd <= 105:
+			stSpd = localeInfo.TOOLTIP_ITEM_NORMAL
+		elif atkSpd <= 120:
+			stSpd = localeInfo.TOOLTIP_ITEM_SLOW
+		else:
+			stSpd = localeInfo.TOOLTIP_ITEM_VERY_SLOW
+
+		self.AppendTextLine(localeInfo.TOOLTIP_ITEM_ATT_SPEED % stSpd, self.NORMAL_COLOR)
+
+	def __AppendAttackGradeInfo(self):
+		atkGrade = item.GetValue(1)
+		self.AppendTextLine(localeInfo.TOOLTIP_ITEM_ATT_GRADE % atkGrade, self.GetChangeTextLineColor(atkGrade))
+
+	if app.ENABLE_CHANGE_LOOK_SYSTEM:
+		def AppendChangeLookInfoItemVnum(self, changelookvnum):
+			if not changelookvnum == 0:
+				self.AppendSpace(5)
+				self.AppendTextLine("[ " + localeInfo.CHANGE_LOOK_TITLE+" ]", self.CHANGELOOK_TITLE_COLOR)
+				itemName = item.GetItemNameByVnum(changelookvnum)
+
+				if item.GetItemType() == item.ITEM_TYPE_COSTUME:
+					if item.GetItemSubType() == item.COSTUME_TYPE_BODY:
+						malefemale = ""
+						if item.IsAntiFlag(item.ITEM_ANTIFLAG_MALE):
+							malefemale = localeInfo.FOR_FEMALE
+
+						if item.IsAntiFlag(item.ITEM_ANTIFLAG_FEMALE):
+							malefemale = localeInfo.FOR_MALE
+						itemName += " ( " + malefemale +  " )"
+
+				textLine = self.AppendTextLine(itemName, self.CHANGELOOK_ITEMNAME_COLOR, TRUE)
+				textLine.SetFeather()
+
+		# def AppendChangeLookInfoShopWIndow(self, slotIndex):
+			# changelookvnum = shop.GetItemChangeLookVnum(slotIndex)
+			# if not changelookvnum == 0:
+				# self.AppendSpace(5)
+				# self.AppendTextLine("[ " + localeInfo.CHANGE_LOOK_TITLE+" ]", self.CHANGELOOK_TITLE_COLOR)
+				# itemName = item.GetItemNameByVnum(changelookvnum)
+
+				# if item.GetItemType() == item.ITEM_TYPE_COSTUME:
+					# if item.GetItemSubType() == item.COSTUME_TYPE_BODY:
+						# malefemale = ""
+						# if item.IsAntiFlag(item.ITEM_ANTIFLAG_MALE):
+							# malefemale = localeInfo.FOR_FEMALE
+
+						# if item.IsAntiFlag(item.ITEM_ANTIFLAG_FEMALE):
+							# malefemale = localeInfo.FOR_MALE
+						# itemName += " ( " + malefemale +  " )"
+
+				# textLine = self.AppendTextLine(itemName, self.CHANGELOOK_ITEMNAME_COLOR, TRUE)
+				# textLine.SetFeather()
+
+	if app.ENABLE_ACCE_COSTUME_SYSTEM:
+		def CalcAcceValue(self, value, abs):
+			if not value:
+				return 0
+
+			valueCalc = round(value * abs) / 100
+			valueCalc -= 0.5#changed the -0.5 which + 0.5 (rounding bug)
+			valueCalc = int(valueCalc) +1 if valueCalc > 0 else int(valueCalc)
+			value = 1 if (valueCalc <= 0 and value > 0) else valueCalc
+			return value
+
+	def __AppendAttackPowerInfo(self, itemAbsChance = 0):
+		minPower = item.GetValue(3)
+		maxPower = item.GetValue(4)
+		addPower = item.GetValue(5)
+
+		if app.ENABLE_ACCE_COSTUME_SYSTEM:
+			if itemAbsChance != 0:
+				minPower = self.CalcAcceValue(minPower, itemAbsChance)
+				maxPower = self.CalcAcceValue(maxPower, itemAbsChance)
+				addPower = self.CalcAcceValue(addPower, itemAbsChance)
+
+		if maxPower > minPower:
+			self.AppendTextLine(localeInfo.TOOLTIP_ITEM_ATT_POWER % (minPower+addPower, maxPower+addPower), self.POSITIVE_COLOR)
+		else:
+			self.AppendTextLine(localeInfo.TOOLTIP_ITEM_ATT_POWER_ONE_ARG % (minPower+addPower), self.POSITIVE_COLOR)
+
+	def __AppendMagicAttackInfo(self, itemAbsChance = 0):
+		minMagicAttackPower = item.GetValue(1)
+		maxMagicAttackPower = item.GetValue(2)
+		addPower = item.GetValue(5)
+
+		if app.ENABLE_ACCE_COSTUME_SYSTEM:
+			if itemAbsChance != 0:
+				minMagicAttackPower = self.CalcAcceValue(minMagicAttackPower, itemAbsChance)
+				maxMagicAttackPower = self.CalcAcceValue(maxMagicAttackPower, itemAbsChance)
+				addPower = self.CalcAcceValue(addPower, itemAbsChance)
+
+		if minMagicAttackPower > 0 or maxMagicAttackPower > 0:
+			if maxMagicAttackPower > minMagicAttackPower:
+				self.AppendTextLine(localeInfo.TOOLTIP_ITEM_MAGIC_ATT_POWER % (minMagicAttackPower+addPower, maxMagicAttackPower+addPower), self.POSITIVE_COLOR)
+			else:
+				self.AppendTextLine(localeInfo.TOOLTIP_ITEM_MAGIC_ATT_POWER_ONE_ARG % (minMagicAttackPower+addPower), self.POSITIVE_COLOR)
+
+	def __AppendMagicDefenceInfo(self, itemAbsChance = 0):
+		magicDefencePower = item.GetValue(0)
+
+		if app.ENABLE_ACCE_COSTUME_SYSTEM:
+			if itemAbsChance != 0:
+				magicDefencePower = self.CalcAcceValue(magicDefencePower, itemAbsChance)
+
+		if magicDefencePower > 0:
+			self.AppendTextLine(localeInfo.TOOLTIP_ITEM_MAGIC_DEF_POWER % magicDefencePower, self.GetChangeTextLineColor(magicDefencePower))
+
+	def __AppendAttributeInformation(self, attrSlot, itemAbsChance = 0):
+		if 0 != attrSlot:
+			for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+				type = attrSlot[i][0]
+				value = attrSlot[i][1]
+
+				if 0 == value:
+					continue
+
+				affectString = self.__GetAffectString(type, value)
+				if app.ENABLE_ACCE_COSTUME_SYSTEM:
+					if item.GetItemType() == item.ITEM_TYPE_COSTUME:
+						if item.GetItemSubType() == item.COSTUME_TYPE_ACCE:
+							if itemAbsChance != 0:
+								value = self.CalcAcceValue(value, itemAbsChance)
+								affectString = self.__GetAffectString(type, value)
+
+				if affectString:
+					affectColor = self.__GetAttributeColor(i, value)
+					self.AppendTextLine(affectString, affectColor)
+
+	def __GetAttributeColor(self, index, value):
+		if value > 0:
+			if index >= 5:
+				return self.SPECIAL_POSITIVE_COLOR2
+			else:
+				return self.SPECIAL_POSITIVE_COLOR
+		elif value == 0:
+			return self.NORMAL_COLOR
+		else:
+			return self.NEGATIVE_COLOR
+
+	def __IsPolymorphItem(self, itemVnum):
+		if itemVnum >= 70103 and itemVnum <= 70106:
+			return 1
+		return 0
+
+	def __SetPolymorphItemTitle(self, monsterVnum):
+		itemName =nonplayer.GetMonsterName(monsterVnum)
+		itemName+=" "
+		itemName+=item.GetItemName()
+		self.SetTitle(itemName)
+
+	if app.ENABLE_SET_ITEM:
+		def __SetNormalItemTitle(self, set_value = 0):
+			if set_value > 0:
+				self.SetTitle(item.GetItemNameBySetValue(set_value))
+			else:
+				self.SetTitle(item.GetItemName())
+
+		def __SetSpecialItemTitle(self, set_value = 0):
+			if set_value > 0:
+				self.AppendTextLine(item.GetItemNameBySetValue(set_value), self.SPECIAL_TITLE_COLOR)
+			else:
+				self.AppendTextLine(item.GetItemName(), self.SPECIAL_TITLE_COLOR)
+
+		def __SetItemTitle(self, itemVnum, metinSlot, attrSlot, set_value = 0):
+			if app.ENABLE_ATTENDANCE_EVENT:
+				if self.isAttendanceRewardItem:
+					self.SetTitle(item.GetItemName()+" - |cffffc800|H|h"+str(metinSlot[0])+" adet|h|r")
+					return
+
+			if localeInfo.IsCANADA():
+				if 72726 == itemVnum or 72730 == itemVnum:
+					self.AppendTextLine(item.GetItemName(), grp.GenerateColor(1.0, 0.7843, 0.0, 1.0))
+					return
+			
+			if self.__IsPolymorphItem(itemVnum):
+				self.__SetPolymorphItemTitle(metinSlot[0])
+			else:
+				if self.__IsAttr(attrSlot):
+					self.__SetSpecialItemTitle(set_value)
+					return
+
+				self.__SetNormalItemTitle(set_value)
+	else:
+		def __SetNormalItemTitle(self):
+			self.SetTitle(item.GetItemName())
+
+		def __SetSpecialItemTitle(self):
+			self.AppendTextLine(item.GetItemName(), self.SPECIAL_TITLE_COLOR)
+
+		def __SetItemTitle(self, itemVnum, metinSlot, attrSlot):
+			if app.ENABLE_ATTENDANCE_EVENT:
+				if self.isAttendanceRewardItem:
+					self.SetTitle(item.GetItemName()+" - |cffffc800|H|h"+str(metinSlot[0])+" adet|h|r")
+					return
+
+			if localeInfo.IsCANADA():
+				if 72726 == itemVnum or 72730 == itemVnum:
+					self.AppendTextLine(item.GetItemName(), grp.GenerateColor(1.0, 0.7843, 0.0, 1.0))
+					return
+			
+			if self.__IsPolymorphItem(itemVnum):
+				self.__SetPolymorphItemTitle(metinSlot[0])
+			else:
+				if self.__IsAttr(attrSlot):
+					self.__SetSpecialItemTitle()
+					return
+
+				self.__SetNormalItemTitle()
+
+	def __IsAttr(self, attrSlot):
+		if not attrSlot:
+			return FALSE
+
+		for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+			type = attrSlot[i][0]
+			if 0 != type:
+				return TRUE
+
+		return FALSE
+
+	def AddRefineItemData(self, itemVnum, metinSlot, attrSlot = 0):
+		for i in xrange(player.METIN_SOCKET_MAX_NUM):
+			metinSlotData=metinSlot[i]
+			if self.GetMetinItemIndex(metinSlotData) == constInfo.ERROR_METIN_STONE:
+				metinSlot[i]=player.METIN_SOCKET_TYPE_SILVER
+
+		self.AddItemData(itemVnum, metinSlot, attrSlot)
+
+	def AddItemData_Offline(self, itemVnum, itemDesc, itemSummary, metinSlot, attrSlot):
+		self.__AdjustMaxWidth(attrSlot, itemDesc)
+		if app.ENABLE_SET_ITEM:
+			self.__SetItemTitle(itemVnum, metinSlot, attrSlot, set_value)
+		else:
+			self.__SetItemTitle(itemVnum, metinSlot, attrSlot)
+		
+		if self.__IsHair(itemVnum):	
+			self.__AppendHairIcon(itemVnum)
+
+		self.AppendDescription(itemDesc, DESC_DEFAULT_MAX_COLS)
+		self.AppendDescription(itemSummary, DESC_DEFAULT_MAX_COLS, self.CONDITION_COLOR)
+
+	def __TumunuAc(self, file):
+		iconFile = str(file)
+
+		itemImage = ui.ImageBox()
+		itemImage.SetParent(self)
+		itemImage.Show()
+
+		itemImage.LoadImage(iconFile)
+
+		itemImage.SetPosition(itemImage.GetWidth()/ 2 - 50+82, self.toolTipHeight)
+		self.toolTipHeight += itemImage.GetHeight()
+		self.childrenList.append(itemImage)
+		self.ResizeToolTip()
+
+	def __SandikIngoru(self, file):
+		iconFile = str(file)
+
+		itemImage = ui.ImageBox()
+		itemImage.SetParent(self)
+		itemImage.Show()
+
+		itemImage.LoadImage(iconFile)
+
+		itemImage.SetPosition(itemImage.GetWidth()/ 2 - 50+82, self.toolTipHeight)
+		self.toolTipHeight += itemImage.GetHeight()
+		self.childrenList.append(itemImage)
+		self.ResizeToolTip()
+
+	def __AppendBuffiSealLines(self, text, color):
+		# wrapped like the reference tooltip, without the extra space AppendDescription adds
+		for i in xrange(grpText.GetSplitingTextLineCount(text, 34)):
+			self.AppendTextLine(grpText.GetSplitingTextLine(text, 34, i), color)
+
+	def __AppendBuffiSealInfo(self):
+		# reference Buffi seal tooltip: PvP warning, unsummon note, level, the five skills, expired duration hint
+		self.AppendTextLine("Buffi PvP'de kullan\xfdlamaz:", self.NEGATIVE_COLOR)
+		self.__AppendBuffiSealLines("Ku\xfean\xfdld\xfd\xf0\xfd s\xfdrada di\xf0er oyunculara verdi\xf0iniz hasar 1 ile s\xfdn\xfdrland\xfdr\xfdl\xfdr.", self.NEGATIVE_COLOR)
+		self.__AppendBuffiSealLines("Buffi'yi manuel olarak \xe7\xfdkarmak kazand\xfdrd\xfd\xf0\xfd beceri etkilerini kald\xfdr\xfdr.", self.FONT_COLOR)
+
+		try:
+			import uiCompanion
+			state = uiCompanion.g_buffiState
+		except Exception:
+			return
+		if state["level"] <= 0:
+			return
+
+		self.AppendSpace(5)
+		self.AppendTextLine("Seviye: %d" % state["level"], self.POSITIVE_COLOR)
+		self.AppendTextLine("Beceri Puan\xfd: %d" % state.get("points", 0), self.POSITIVE_COLOR)
+		self.AppendSpace(5)
+		names = ("Kutsama", "Yans\xfdma", "Ejderha G\xfcc\xfc", "H\xfdz", "Hasar Art\xfd\xfe\xfd")
+		for i in xrange(5):
+			lv = state["skills"][i]
+			if lv >= 40:
+				text = "P"
+			elif lv >= 30:
+				text = "G%d" % (lv - 29)
+			elif lv >= 20:
+				text = "M%d" % (lv - 19)
+			else:
+				text = "%d" % lv
+			self.AppendTextLine("%s %s" % (names[i], text))
+
+		duration = state["duration"]
+		if duration >= 0:
+			remain = duration - int(app.GetTime() - state["time"])
+			if remain > 0:
+				d, h, m = remain / 86400, (remain % 86400) / 3600, (remain % 3600) / 60
+				self.AppendSpace(5)
+				self.AppendTextLine("Kalan S\xfcre : %dg %dsa. %ddk." % (d, h, m))
+			else:
+				self.AppendSpace(5)
+				self.AppendTextLine("\xddteminizin s\xfcresi doldu.", self.NEGATIVE_COLOR)
+				self.AppendTextLine("A\xfea\xf0\xfddaki itemi kullanarak yenileyebilirsin.")
+				self.AppendTextLine("Buffi S\xfcresi (3 g\xfcn)", self.SPECIAL_TITLE_COLOR)
+
+	def AddItemData(self, itemVnum, metinSlot, attrSlot = 0, flags = 0, unbindTime = 0, window_type = player.INVENTORY, slotIndex = -1, window_open = 0, set_value = 0):
+		self.itemVnum = itemVnum
+		item.SelectItem(itemVnum)
+		itemType = item.GetItemType()
+		itemSubType = item.GetItemSubType()
+
+		if 50026 == itemVnum:
+			if 0 != metinSlot:
+				name = item.GetItemName()
+				if metinSlot[0] > 0:
+					name += " "
+					name += localeInfo.NumberToMoneyString(metinSlot[0])
+				self.SetTitle(name)
+
+				self.ShowToolTip()
+			return
+
+		### Skill Book ###
+		if app.ENABLE_MOB_DROP_INFO:
+			if 50300 == itemVnum and not self.isBook:
+				if 0 != metinSlot and not self.isBook:
+					self.__SetSkillBookToolTip(metinSlot[0], localeInfo.TOOLTIP_SKILLBOOK_NAME, 1)
+					self.ShowToolTip()
+				elif self.isBook:
+					self.SetTitle(item.GetItemName())
+					self.AppendDescription(item.GetItemDescription(), DESC_DEFAULT_MAX_COLS)
+					self.AppendDescription(item.GetItemSummary(), DESC_DEFAULT_MAX_COLS, self.CONDITION_COLOR)
+					self.ShowToolTip()
+				return
+			elif 70037 == itemVnum:
+				if 0 != metinSlot and not self.isBook2:
+					self.__SetSkillBookToolTip(metinSlot[0], localeInfo.TOOLTIP_SKILL_FORGET_BOOK_NAME, 0)
+					self.AppendDescription(item.GetItemDescription(), DESC_DEFAULT_MAX_COLS)
+					self.AppendDescription(item.GetItemSummary(), DESC_DEFAULT_MAX_COLS, self.CONDITION_COLOR)
+					self.ShowToolTip()
+				elif self.isBook2:
+					self.SetTitle(item.GetItemName())
+					self.AppendDescription(item.GetItemDescription(), DESC_DEFAULT_MAX_COLS)
+					self.AppendDescription(item.GetItemSummary(), DESC_DEFAULT_MAX_COLS, self.CONDITION_COLOR)
+					self.ShowToolTip()
+				return
+			elif 70055 == itemVnum:
+				if 0 != metinSlot:
+					self.__SetSkillBookToolTip(metinSlot[0], localeInfo.TOOLTIP_SKILL_FORGET_BOOK_NAME, 0)
+					self.AppendDescription(item.GetItemDescription(), DESC_DEFAULT_MAX_COLS)
+					self.AppendDescription(item.GetItemSummary(), DESC_DEFAULT_MAX_COLS, self.CONDITION_COLOR)
+					self.ShowToolTip()
+				return
+		else:
+			if 50300 == itemVnum:
+				if 0 != metinSlot:
+					self.__SetSkillBookToolTip(metinSlot[0], localeInfo.TOOLTIP_SKILLBOOK_NAME, 1)
+
+					self.ShowToolTip()
+				return
+			elif 70037 == itemVnum:
+				if 0 != metinSlot:
+					self.__SetSkillBookToolTip(metinSlot[0], localeInfo.TOOLTIP_SKILL_FORGET_BOOK_NAME, 0)
+					self.AppendDescription(item.GetItemDescription(), DESC_DEFAULT_MAX_COLS)
+					self.AppendDescription(item.GetItemSummary(), DESC_DEFAULT_MAX_COLS, self.CONDITION_COLOR)
+
+					self.ShowToolTip()
+				return
+			elif 70055 == itemVnum:
+				if 0 != metinSlot:
+					self.__SetSkillBookToolTip(metinSlot[0], localeInfo.TOOLTIP_SKILL_FORGET_BOOK_NAME, 0)
+					self.AppendDescription(item.GetItemDescription(), DESC_DEFAULT_MAX_COLS)
+					self.AppendDescription(item.GetItemSummary(), DESC_DEFAULT_MAX_COLS, self.CONDITION_COLOR)
+
+					self.ShowToolTip()
+				return
+
+		itemDesc = item.GetItemDescription()
+		itemSummary = item.GetItemSummary()
+
+		isCostumeItem = 0
+		isCostumeHair = 0
+		isCostumeBody = 0
+		if app.ENABLE_ACCE_COSTUME_SYSTEM:
+			isCostumeAcce = 0
+		if app.ENABLE_WEAPON_COSTUME_SYSTEM:
+			isCostumeWeapon = 0
+		if app.ENABLE_AURA_COSTUME_SYSTEM:
+			isCostumeAura = 0
+
+		if app.ENABLE_COSTUME_SYSTEM:
+			if item.ITEM_TYPE_COSTUME == itemType:
+				isCostumeItem = 1
+				isCostumeHair = item.COSTUME_TYPE_HAIR == itemSubType
+				isCostumeBody = item.COSTUME_TYPE_BODY == itemSubType
+
+				if app.ENABLE_ACCE_COSTUME_SYSTEM:
+					isCostumeAcce = item.COSTUME_TYPE_ACCE == itemSubType
+				if app.ENABLE_WEAPON_COSTUME_SYSTEM:
+					isCostumeWeapon = item.COSTUME_TYPE_WEAPON == itemSubType
+
+				if app.ENABLE_AURA_COSTUME_SYSTEM:
+					isCostumeAura = item.COSTUME_TYPE_AURA == itemSubType
+
+		self.__AdjustMaxWidth(attrSlot, itemDesc)
+		self.__SetItemTitle(itemVnum, metinSlot, attrSlot)
+
+		if item.ITEM_TYPE_GROWTH_PET == itemType and app.ENABLE_GROWTH_PET_SYSTEM:
+			if item.PET_UPBRINGING == itemSubType:
+
+				pet_id = metinSlot[2]
+				if pet_id:
+					(pet_level, evol_level, birthday, pet_nick, pet_hp, pet_def, pet_sp) = player.GetPetItem(pet_id)
+
+					self.ClearToolTip()
+					self.AppendTextLine(pet_nick, self.TITLE_COLOR)
+
+		if app.ENABLE_ATTENDANCE_EVENT:
+			if self.isAttendanceRewardItem:
+				if not self.__IsHair(itemVnum):
+					self.__AppendAttendanceRewardItemIcon(itemVnum)
+
+		self.AppendDescription(itemDesc, DESC_DEFAULT_MAX_COLS)
+		self.AppendDescription(itemSummary, DESC_DEFAULT_MAX_COLS, self.CONDITION_COLOR)
+		if itemVnum == 57100:
+			self.__AppendBuffiSealInfo()
+		if itemVnum == 57101 and metinSlot and metinSlot[0] > 0:
+			# ore taken out of a Buffi slot: socket 0 keeps the seconds it had left
+			self.AppendSpace(5)
+			self.AppendTextLine("Kalan s\xfcre: %s" % localeInfo.SecondToDHM(metinSlot[0]), self.NEGATIVE_COLOR)
+
+		if itemVnum == 70605:
+			self.AppendSpace(5)
+			self.AppendTextLine("Geçerli olan zindanlar:" , self.NEGATIVE_COLOR)
+			self.AppendTextLine("Wju Tapýnaðý" , self.POSITIVE_COLOR)
+			self.AppendTextLine("Gemi Savunmasý" , self.POSITIVE_COLOR)
+			self.AppendTextLine("Ruhlar Maðarasý" , self.POSITIVE_COLOR)
+			self.AppendTextLine("Nemere Gözlemevi" , self.POSITIVE_COLOR)
+			self.AppendTextLine("TS-Nemere Gözlemevi" , self.POSITIVE_COLOR)
+			self.AppendTextLine("Rhae Agile'nin ini" , self.POSITIVE_COLOR)
+
+		if itemVnum >= 50255 and itemVnum <= 50260:
+			self.__TumunuAc("d:/ymir work/ui/ctrl+sag.tga")
+			self.AppendTextLine("(10x açmak için týklayýn.)", self.SPECIAL_POSITIVE_COLOR)
+
+		if item.ITEM_TYPE_GACHA == itemType or\
+			item.ITEM_TYPE_GIFTBOX == itemType and\
+			itemVnum != 31374 and itemVnum != 50255 and itemVnum != 50187 and\
+			itemVnum != 50197 and itemVnum != 50188 and itemVnum != 50189 and\
+			itemVnum != 50190 and itemVnum != 50191 and itemVnum != 50192 and\
+			itemVnum != 50193 and itemVnum != 50194 and itemVnum != 50195 and\
+			itemVnum != 50196 and itemVnum != 50286 and itemVnum != 50285 and\
+			itemVnum != 26030 and itemVnum != 26031 and itemVnum != 26032 and\
+			itemVnum != 26033 and itemVnum != 26034 and itemVnum != 26035 and\
+			itemVnum != 26036 and itemVnum != 26037 and itemVnum != 26038 and\
+			itemVnum != 26039 and itemVnum != 26040 and itemVnum != 26041 and\
+			itemVnum != 26042 and itemVnum != 26043 and itemVnum != 26044 and\
+			itemVnum != 26045 and itemVnum != 26046 and itemVnum != 26047 and\
+			itemVnum != 26048 and itemVnum != 26049 and itemVnum != 26050 and\
+			itemVnum != 26051:
+			self.__SandikIngoru("d:/ymir work/ui/shift+sag.tga")
+			self.AppendTextLine("(Sandýk içgörü için týklayýn.)", self.SPECIAL_POSITIVE_COLOR)
+
+		if itemVnum >= 53001 and itemVnum <= 53292:
+			self.__AppendLimitInformation()
+			self.__AppendAffectInformation()
+			self.__AppendAttributeInformation(attrSlot)
+			self.AppendWearableInformation()
+
+		if app.ENABLE_RENDER_TARGET:
+			self.__ModelPreviewClose()
+			constInfo.enable_item_preview = app.IsPressed(app.DIK_LCONTROL)
+
+		### Hair Preview Image ###
+		if self.__IsHair(itemVnum):
+			self.__AppendHairIcon(itemVnum)
+
+		elif app.ENABLE_RENEWAL_OFFLINESHOP and self.isOfflineShopItem:
+			self.__AppendOfflineShopItemIcon(itemVnum)
+
+		elif app.ENABLE_HYPERLINK_ITEM_ICON and isinstance(self, HyperlinkItemToolTip):
+			self.__AppendItemIcon(itemVnum)
+
+		# ITEM_TYPE_WEAPON (Weapon)
+		if item.ITEM_TYPE_WEAPON == itemType:
+
+			self.__AppendLimitInformation()
+
+			self.AppendSpace(5)
+
+			## If it is a fan, the magic gong is indicated first.
+			if item.WEAPON_FAN == itemSubType:
+				self.__AppendMagicAttackInfo()
+				self.__AppendAttackPowerInfo()
+
+			else:
+				self.__AppendAttackPowerInfo()
+				self.__AppendMagicAttackInfo()
+
+			self.__AppendAffectInformation()
+			self.__AppendAttributeInformation(attrSlot)
+
+			if app.ENABLE_CHANGE_LOOK_SYSTEM:
+				self.AppendChangeLookInformation(window_type, slotIndex)
+			self.AppendWearableInformation()
+
+			self.__AppendMetinSlotInfo(metinSlot)
+
+			if app.ENABLE_RENDER_TARGET:
+				if constInfo.enable_item_preview == 1:
+					self.__ModelPreview(itemVnum, 0)
+				else:
+					self.AppendEmojiRenderInfo()
+		# END_ITEM_TYPE_WEAPON
+
+		### Armor ###
+		elif item.ITEM_TYPE_ARMOR == itemType:
+			self.__AppendLimitInformation()
+
+			defGrade = item.GetValue(1)
+			defBonus = item.GetValue(5)*2
+			if defGrade > 0:
+				self.AppendSpace(5)
+				self.AppendTextLine(localeInfo.TOOLTIP_ITEM_DEF_GRADE % (defGrade+defBonus), self.GetChangeTextLineColor(defGrade))
+
+			self.__AppendMagicDefenceInfo()
+			self.__AppendAffectInformation()
+			self.__AppendAttributeInformation(attrSlot)
+
+			if app.ENABLE_CHANGE_LOOK_SYSTEM:
+				self.AppendChangeLookInformation(window_type, slotIndex)
+
+			self.AppendWearableInformation()
+
+			if itemSubType in (item.ARMOR_WRIST, item.ARMOR_NECK, item.ARMOR_EAR):
+				materialVnum = constInfo.GET_ACCESSORY_MATERIAL_VNUM(itemVnum, itemSubType)
+				self.__AppendAccessoryMetinSlotInfo(metinSlot, materialVnum)
+
+				cur = min(metinSlot[0] if len(metinSlot) > 0 else 0, constInfo.ACCESSORY_SOCKET_MAX_SIZE)
+				end = min(metinSlot[1] if len(metinSlot) > 1 else 0, constInfo.ACCESSORY_SOCKET_MAX_SIZE)
+
+				if materialVnum > 0 and (cur == 0 or end == 0):
+					self.AppendSpace(2)
+					self.AppendTextLine(localeInfo.POSSIBLE_ORE, 0xFFFFFFD3)
+					item.SelectItem(materialVnum)
+					ore_name = item.GetItemName()
+					self.AppendTextLine(ore_name, 0xFFEA7D00)
+					self.__AppendOreIcon(materialVnum)
+			elif itemSubType == item.ARMOR_BELT:
+				self.__AppendAccessoryMetinSlotInfo(metinSlot, constInfo.GET_BELT_MATERIAL_VNUM(itemVnum))
+			else:
+				self.__AppendMetinSlotInfo(metinSlot)
+
+			if app.ENABLE_RENDER_TARGET:
+				if itemSubType == item.ARMOR_BODY:
+					if constInfo.enable_item_preview == 1:
+						self.__ModelPreview(itemVnum, 0)
+					else:
+						self.AppendEmojiRenderInfo()
+		# END_ITEM_TYPE_ARMOR
+
+		### Ring Slot Item (Not UNIQUE) ###
+		elif item.ITEM_TYPE_RING == itemType:
+			self.__AppendLimitInformation()
+			self.__AppendAffectInformation()
+			self.__AppendAttributeInformation(attrSlot)
+
+			bHasRealtimeFlag = 0
+			for i in xrange(item.LIMIT_MAX_NUM):
+				(limitType, limitValue) = item.GetLimit(i)
+
+				if item.LIMIT_REAL_TIME == limitType:
+					bHasRealtimeFlag = 1
+
+			if 1 == bHasRealtimeFlag:
+				if item.LIMIT_REAL_TIME == item.GetLimitType(0) or item.LIMIT_REAL_TIME_START_FIRST_USE == item.GetLimitType(0):
+					self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(0))
+				else:
+					self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(1))
+
+			self.AppendSpace(5)
+
+		elif 0 != isCostumeItem:
+			self.__AppendLimitInformation()
+
+			if app.ENABLE_AURA_COSTUME_SYSTEM and isCostumeAura:
+				self.__AppendAffectInformationAura(window_type, slotIndex, metinSlot)
+				self.__AppendAuraItemAffectInformation(itemVnum, window_type, slotIndex, metinSlot)
+				self.__AppendAttributeInformationAura(window_type, slotIndex, attrSlot, metinSlot)
+				self.__AppendAuraBoostMetinSlotInfo(itemVnum, window_type, slotIndex, metinSlot)
+			else:
+				self.__AppendAffectInformation()
+
+			if app.ENABLE_ACCE_COSTUME_SYSTEM and isCostumeAcce:
+				absChance = int(metinSlot[acce.ABSORPTION_SOCKET])
+				self.AppendTextLine(localeInfo.ACCE_ABSORB_CHANCE % (absChance), self.CONDITION_COLOR)
+
+				itemAbsorbedVnum = int(metinSlot[acce.ABSORBED_SOCKET])
+				if itemAbsorbedVnum:
+					item.SelectItem(itemAbsorbedVnum)
+					if item.GetItemType() == item.ITEM_TYPE_WEAPON:
+						if item.GetItemSubType() == item.WEAPON_FAN:
+							self.__AppendMagicAttackInfo(metinSlot[acce.ABSORPTION_SOCKET])
+							item.SelectItem(itemAbsorbedVnum)
+							self.__AppendAttackPowerInfo(metinSlot[acce.ABSORPTION_SOCKET])
+						else:
+							self.__AppendAttackPowerInfo(metinSlot[acce.ABSORPTION_SOCKET])
+							item.SelectItem(itemAbsorbedVnum)
+							self.__AppendMagicAttackInfo(metinSlot[acce.ABSORPTION_SOCKET])
+					elif item.GetItemType() == item.ITEM_TYPE_ARMOR:
+						defGrade = item.GetValue(1)
+						defBonus = item.GetValue(5) * 2
+						defGrade = self.CalcAcceValue(defGrade, metinSlot[acce.ABSORPTION_SOCKET])
+						defBonus = self.CalcAcceValue(defBonus, metinSlot[acce.ABSORPTION_SOCKET])
+
+						if defGrade > 0:
+							self.AppendSpace(5)
+							self.AppendTextLine(localeInfo.TOOLTIP_ITEM_DEF_GRADE % (defGrade + defBonus), self.GetChangeTextLineColor(defGrade))
+
+						item.SelectItem(itemAbsorbedVnum)
+						self.__AppendMagicDefenceInfo(metinSlot[acce.ABSORPTION_SOCKET])
+
+					item.SelectItem(itemAbsorbedVnum)
+					for i in xrange(item.ITEM_APPLY_MAX_NUM):
+						(affectType, affectValue) = item.GetAffect(i)
+						affectValue = self.CalcAcceValue(affectValue, metinSlot[acce.ABSORPTION_SOCKET])
+						affectString = self.__GetAffectString(affectType, affectValue)
+
+						if affectString and affectValue > 0:
+							self.AppendTextLine(affectString, self.GetChangeTextLineColor(affectValue))
+
+						item.SelectItem(itemAbsorbedVnum)
+
+					item.SelectItem(itemVnum)
+
+					self.__AppendAttributeInformation(attrSlot, metinSlot[acce.ABSORPTION_SOCKET])
+				else:
+					self.__AppendAttributeInformation(attrSlot)
+			else:
+				self.__AppendAttributeInformation(attrSlot)
+
+			if app.ENABLE_CHANGE_LOOK_SYSTEM:
+				if item.GetItemSubType() == item.COSTUME_TYPE_BODY:
+					self.AppendChangeLookInformation(window_type, slotIndex)
+
+			self.AppendWearableInformation()
+
+			bHasRealtimeFlag = 0
+			for i in xrange(item.LIMIT_MAX_NUM):
+				(limitType, limitValue) = item.GetLimit(i)
+
+				if item.LIMIT_REAL_TIME == limitType:
+					bHasRealtimeFlag = 1
+
+			if 1 == bHasRealtimeFlag:
+				if item.LIMIT_REAL_TIME == item.GetLimitType(0) or item.LIMIT_REAL_TIME_START_FIRST_USE == item.GetLimitType(0):
+					self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(0))
+				else:
+					self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(1))
+
+			if app.ENABLE_RENDER_TARGET:
+				if item.COSTUME_TYPE_BODY == itemSubType or item.COSTUME_TYPE_WEAPON == itemSubType or item.COSTUME_TYPE_HAIR == itemSubType or \
+					item.COSTUME_TYPE_ACCE == itemSubType or item.COSTUME_TYPE_AURA == itemSubType or item.COSTUME_TYPE_MOUNT == itemSubType or item.COSTUME_TYPE_PET == itemSubType:
+					if constInfo.enable_item_preview == 1:
+						self.__ModelPreview(itemVnum, 0)
+					else:
+						self.AppendEmojiRenderInfo()
+		# END_ITEM_TYPE_COSTUME
+
+		## Rod ##
+		elif item.ITEM_TYPE_ROD == itemType:
+
+			if 0 != metinSlot:
+				curLevel = item.GetValue(0) / 10
+				curEXP = metinSlot[0]
+				maxEXP = item.GetValue(2)
+				self.__AppendLimitInformation()
+				self.__AppendRodInformation(curLevel, curEXP, maxEXP)
+
+		## Pick ##
+		elif item.ITEM_TYPE_PICK == itemType:
+
+			if 0 != metinSlot:
+				curLevel = item.GetValue(0) / 10
+				curEXP = metinSlot[0]
+				maxEXP = item.GetValue(2)
+				self.__AppendLimitInformation()
+				self.__AppendPickInformation(curLevel, curEXP, maxEXP)
+
+		## Lottery ##
+		elif item.ITEM_TYPE_LOTTERY == itemType:
+			if 0 != metinSlot:
+
+				ticketNumber = int(metinSlot[0])
+				stepNumber = int(metinSlot[1])
+
+				self.AppendSpace(5)
+				self.AppendTextLine(localeInfo.TOOLTIP_LOTTERY_STEP_NUMBER % (stepNumber), self.NORMAL_COLOR)
+				self.AppendTextLine(localeInfo.TOOLTIP_LOTTO_NUMBER % (ticketNumber), self.NORMAL_COLOR);
+
+		### Metin ###
+		elif item.ITEM_TYPE_METIN == itemType:
+			self.AppendMetinInformation()
+			self.AppendMetinWearInformation()
+
+		### Fish ###
+		elif item.ITEM_TYPE_FISH == itemType:
+			if 0 != metinSlot:
+				self.__AppendFishInfo(metinSlot[0])
+
+		### Gacha = Battle Shop Chest ###
+		elif item.ITEM_TYPE_GACHA == itemType:
+			if 0 != metinSlot:
+				if self.isShopItem and int(metinSlot[0]) == 0:
+					restUsableCount = int(item.GetLimit(1)[1])
+				else:
+					restUsableCount = int(metinSlot[0])
+
+				self.AppendSpace(5)
+				self.AppendTextLine(localeInfo.TOOLTIP_REST_USABLE_COUNT % (restUsableCount), grp.GenerateColor(0.5, 1.0, 0.3, 1.0))
+
+		## item.ITEM_TYPE_BLEND
+		elif item.ITEM_TYPE_BLEND == itemType:
+			self.__AppendLimitInformation()
+
+			if metinSlot:
+				affectType = metinSlot[0]
+				affectValue = metinSlot[1]
+				time = metinSlot[2]
+
+				self.AppendSpace(5)
+				affectText = self.__GetAffectString(affectType, affectValue)
+
+				self.AppendTextLine(affectText, self.POSITIVE_COLOR)
+
+				if time > 0:
+					minute = (time / 60)
+					second = (time % 60)
+					timeString = localeInfo.TOOLTIP_POTION_TIME
+
+					if minute > 0:
+						timeString += str(minute) + localeInfo.TOOLTIP_POTION_MIN
+					if second > 0:
+						timeString += " " + str(second) + localeInfo.TOOLTIP_POTION_SEC
+
+					self.AppendTextLine(timeString)
+
+		elif item.ITEM_TYPE_UNIQUE == itemType:
+			if app.ENABLE_MULTI_FARM_BLOCK:
+				if itemVnum >= 55610 and itemVnum <= 55615:
+					self.AppendSpace(5)
+					self.AppendTextLine(localeInfo.TOOLTIP_MULTI_FARM_EXTRA_ACCOUNT % item.GetValue(1), self.SPECIAL_TITLE_COLOR)
+
+			if 0 != metinSlot:
+				bHasRealtimeFlag = 0
+
+				for i in xrange(item.LIMIT_MAX_NUM):
+					(limitType, limitValue) = item.GetLimit(i)
+
+					if item.LIMIT_REAL_TIME == limitType:
+						bHasRealtimeFlag = 1
+
+				if 1 == bHasRealtimeFlag:
+					if item.LIMIT_REAL_TIME == item.GetLimitType(0) or item.LIMIT_REAL_TIME_START_FIRST_USE == item.GetLimitType(0):
+						self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(0))
+					else:
+						self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(1))
+				else:
+					time = metinSlot[player.METIN_SOCKET_MAX_NUM-1]
+
+					if 1 == item.GetValue(2):
+						if item.LIMIT_REAL_TIME == item.GetLimitType(0) or item.LIMIT_REAL_TIME_START_FIRST_USE == item.GetLimitType(0):
+							self.AppendMallItemLastTime(time, item.GetLimitValue(0))
+						else:
+							self.AppendMallItemLastTime(time, item.GetLimitValue(1))
+					else:
+						self.AppendUniqueItemLastTime(time)
+
+		elif item.ITEM_TYPE_USE == itemType:
+			self.__AppendLimitInformation()
+
+			if item.USE_POTION == itemSubType or item.USE_POTION_NODELAY == itemSubType:
+				self.__AppendPotionInformation()
+
+			elif item.USE_ABILITY_UP == itemSubType:
+				self.__AppendAbilityPotionInformation()
+
+			if 27989 == itemVnum or 76006 == itemVnum:
+				if 0 != metinSlot:
+					useCount = int(metinSlot[0])
+
+					self.AppendSpace(5)
+					self.AppendTextLine(localeInfo.TOOLTIP_REST_USABLE_COUNT % (6 - useCount), self.NORMAL_COLOR)
+
+			elif 50004 == itemVnum:
+				if 0 != metinSlot:
+					useCount = int(metinSlot[0])
+
+					self.AppendSpace(5)
+					self.AppendTextLine(localeInfo.TOOLTIP_REST_USABLE_COUNT % (10 - useCount), self.NORMAL_COLOR)
+
+			elif constInfo.IS_AUTO_POTION(itemVnum):
+				if 0 != metinSlot:
+					isActivated = int(metinSlot[0])
+					usedAmount = float(metinSlot[1])
+					totalAmount = float(metinSlot[2])
+
+					if 0 == totalAmount:
+						totalAmount = 1
+
+					self.AppendSpace(5)
+
+					if 0 != isActivated:
+						self.AppendTextLine("(%s)" % (localeInfo.TOOLTIP_AUTO_POTION_USING), self.SPECIAL_POSITIVE_COLOR)
+						self.AppendSpace(5)
+
+					self.AppendTextLine(localeInfo.TOOLTIP_AUTO_POTION_REST % (100.0 - ((usedAmount / totalAmount) * 100.0)), self.POSITIVE_COLOR)
+
+			elif itemVnum in WARP_SCROLLS:
+				if 0 != metinSlot:
+					xPos = int(metinSlot[0])
+					yPos = int(metinSlot[1])
+
+					if xPos != 0 and yPos != 0:
+						(mapName, xBase, yBase) = background.GlobalPositionToMapInfo(xPos, yPos)
+
+						localeMapName=localeInfo.MINIMAP_ZONE_NAME_DICT.get(mapName, "")
+
+						self.AppendSpace(5)
+
+						if localeMapName!="":
+							self.AppendTextLine(localeInfo.TOOLTIP_MEMORIZED_POSITION % (localeMapName, int(xPos-xBase)/100, int(yPos-yBase)/100), self.NORMAL_COLOR)
+						else:
+							self.AppendTextLine(localeInfo.TOOLTIP_MEMORIZED_POSITION_ERROR % (int(xPos)/100, int(yPos)/100), self.NORMAL_COLOR)
+							dbg.TraceError("NOT_EXIST_IN_MINIMAP_ZONE_NAME_DICT: %s" % mapName)
+
+			#####
+			if item.USE_SPECIAL == itemSubType:
+				if app.ENABLE_CONQUEROR_LEVEL:
+					if item.ITEM_TYPE_USE == itemType and item.USE_SPECIAL == itemSubType:
+						if itemVnum == 100750:
+							self.AppendTextLine(localeInfo.OZELLIK_MAX, self.CONDITION_COLOR)
+							self.AppendTextLine(localeInfo.SAMPIYON_SEVIYE_BONUSU, self.NEED_SKILL_POINT_COLOR)
+							self.AppendTextLine(localeInfo.OZELLIK_5, self.SPECIAL_NEW_COLOR)
+							self.AppendTextLine(localeInfo.OZELLIK_6, self.SPECIAL_NEW_COLOR)
+							self.AppendTextLine(localeInfo.OZELLIK_7, self.SPECIAL_NEW_COLOR)
+							self.AppendTextLine(localeInfo.OZELLIK_8, self.SPECIAL_NEW_COLOR)
+				bHasRealtimeFlag = 0
+				for i in xrange(item.LIMIT_MAX_NUM):
+					(limitType, limitValue) = item.GetLimit(i)
+
+					if item.LIMIT_REAL_TIME == limitType:
+						bHasRealtimeFlag = 1
+
+				if 1 == bHasRealtimeFlag:
+					if item.LIMIT_REAL_TIME == item.GetLimitType(0) or item.LIMIT_REAL_TIME_START_FIRST_USE == item.GetLimitType(0):
+						self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(0))
+					else:
+						self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(1))
+				else:
+					if 0 != metinSlot:
+						time = metinSlot[player.METIN_SOCKET_MAX_NUM-1]
+
+						if 1 == item.GetValue(2):
+							if item.LIMIT_REAL_TIME == item.GetLimitType(0) or item.LIMIT_REAL_TIME_START_FIRST_USE == item.GetLimitType(0):
+								self.AppendMallItemLastTime(time, item.GetLimitValue(0))
+							else:
+								self.AppendMallItemLastTime(time, item.GetLimitValue(1))
+
+				if app.ENABLE_EXTEND_TIME_COSTUME_SYSTEM and itemVnum >= 84014 and itemVnum <= 84016:
+					self.AppendTextLine(localeInfo.TOOLTIP_COSTUME_EXTEND_TIME % item.GetValue(0), self.SPECIAL_POSITIVE_COLOR)
+
+			elif item.USE_AFFECT_PLUS == itemSubType and app.ENABLE_RENEWAL_AFFECT:
+				self.__AppendAffectInformation()
+				self.__AppendAttributeInformation(attrSlot)
+
+				affectType = item.GetValue(0)
+				affectValue = item.GetValue(1)
+
+				self.AppendSpace(5)
+				affectText = self.__GetAffectString(affectType, affectValue)
+				self.AppendTextLine(affectText, self.POSITIVE_COLOR)
+				self.AppendTextLine(localeInfo.TOOLTIP_POTION_UNLIMITED)
+
+			elif item.USE_TIME_CHARGE_PER == itemSubType:
+				bHasRealtimeFlag = 0
+				for i in xrange(item.LIMIT_MAX_NUM):
+					(limitType, limitValue) = item.GetLimit(i)
+
+					if item.LIMIT_REAL_TIME == limitType:
+						bHasRealtimeFlag = 1
+
+				if metinSlot[2]:
+					self.AppendTextLine(localeInfo.TOOLTIP_TIME_CHARGER_PER(metinSlot[2]))
+				else:
+					self.AppendTextLine(localeInfo.TOOLTIP_TIME_CHARGER_PER(item.GetValue(0)))
+
+				if 1 == bHasRealtimeFlag:
+					if item.LIMIT_REAL_TIME == item.GetLimitType(0) or item.LIMIT_REAL_TIME_START_FIRST_USE == item.GetLimitType(0):
+						self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(0))
+					else:
+						self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(1))
+
+			elif item.USE_TIME_CHARGE_FIX == itemSubType:
+				bHasRealtimeFlag = 0
+				for i in xrange(item.LIMIT_MAX_NUM):
+					(limitType, limitValue) = item.GetLimit(i)
+
+					if item.LIMIT_REAL_TIME == limitType:
+						bHasRealtimeFlag = 1
+
+				if metinSlot[2]:
+					self.AppendTextLine(localeInfo.TOOLTIP_TIME_CHARGER_FIX(metinSlot[2]))
+				else:
+					self.AppendTextLine(localeInfo.TOOLTIP_TIME_CHARGER_FIX(item.GetValue(0)))
+
+				## If yes, display relevant information. ex) Remaining time: 6 days 6 hours 58 minutes
+				if 1 == bHasRealtimeFlag:
+					if item.LIMIT_REAL_TIME == item.GetLimitType(0) or item.LIMIT_REAL_TIME_START_FIRST_USE == item.GetLimitType(0):
+						self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(0))
+					else:
+						self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(1))
+
+		elif item.ITEM_TYPE_QUEST == itemType:
+			if app.ENABLE_GEM_BAG_ANTI_SELL_TOOLTIP:
+				if itemSubType == item.QUEST_GEM_BAG:
+					self.__AppendGemBagItemDescription(itemVnum, metinSlot, attrSlot)
+
+			if app.ENABLE_ATTENDANCE_EVENT:
+				if itemVnum == 71150:
+					self.AppendMagicEggInformation(metinSlot)
+
+			bHasRealtimeFlag = 0
+			for i in xrange(item.LIMIT_MAX_NUM):
+				(limitType, limitValue) = item.GetLimit(i)
+
+				if item.LIMIT_REAL_TIME == limitType:
+					bHasRealtimeFlag = 1
+
+			if 1 == bHasRealtimeFlag:
+				if item.LIMIT_REAL_TIME == item.GetLimitType(0) or item.LIMIT_REAL_TIME_START_FIRST_USE == item.GetLimitType(0):
+					self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(0))
+				else:
+					self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(1))
+
+		elif item.ITEM_TYPE_MOUNT == itemType and app.ENABLE_MOUNT_SYSTEM:
+			bHasRealtimeFlag = 0
+			for i in xrange(item.LIMIT_MAX_NUM):
+				(limitType, limitValue) = item.GetLimit(i)
+
+				if item.LIMIT_REAL_TIME == limitType:
+					bHasRealtimeFlag = 1
+
+			if 1 == bHasRealtimeFlag:
+				if item.LIMIT_REAL_TIME == item.GetLimitType(0) or item.LIMIT_REAL_TIME_START_FIRST_USE == item.GetLimitType(0):
+					self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(0))
+				else:
+					self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(1))
+
+			self.AppendSpace(5)
+			for g in xrange(item.ITEM_APPLY_MAX_NUM):
+				(affectType, affectValue) = item.GetAffect(g)
+				affectString = self.__GetAffectString(affectType, affectValue)
+				if affectString:
+					affectColor = self.GetChangeTextLineColor(affectValue)
+					self.AppendTextLine(affectString, affectColor)
+
+			if app.ENABLE_RENDER_TARGET:
+				if constInfo.enable_item_preview == 1:
+					self.__ModelPreview(itemVnum, 0)
+				else:
+					self.AppendEmojiRenderInfo()
+		# END_ITEM_TYPE_MOUNT
+
+		elif item.ITEM_TYPE_PET == itemType and app.ENABLE_PET_SYSTEM:
+			bHasRealtimeFlag = 0
+			for i in xrange(item.LIMIT_MAX_NUM):
+				(limitType, limitValue) = item.GetLimit(i)
+
+				if item.LIMIT_REAL_TIME == limitType:
+					bHasRealtimeFlag = 1
+
+			if 1 == bHasRealtimeFlag:
+				if item.LIMIT_REAL_TIME == item.GetLimitType(0) or item.LIMIT_REAL_TIME_START_FIRST_USE == item.GetLimitType(0):
+					self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(0))
+				else:
+					self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(1))
+
+			self.AppendSpace(5)
+			for g in xrange(item.ITEM_APPLY_MAX_NUM):
+				(affectType, affectValue) = item.GetAffect(g)
+				affectString = self.__GetAffectString(affectType, affectValue)
+				if affectString:
+					affectColor = self.GetChangeTextLineColor(affectValue)
+					self.AppendTextLine(affectString, affectColor)
+
+			if app.ENABLE_RENDER_TARGET:
+				if constInfo.enable_item_preview == 1:
+					self.__ModelPreview(itemVnum, 0)
+				else:
+					self.AppendEmojiRenderInfo()
+		# END_ITEM_TYPE_PET
+
+		elif app.ENABLE_PASSIVE_SYSTEM and item.ITEM_TYPE_PASSIVE == itemType:
+			self.__AppendLimitInformation()
+			self.__AppendAffectInformation()
+			self.__AppendAttributeInformation(attrSlot)
+			self.AppendWearableInformation()
+
+
+		elif item.ITEM_TYPE_GROWTH_PET == itemType and app.ENABLE_GROWTH_PET_SYSTEM:
+			if item.PET_EGG == itemSubType:
+				if window_type == player.INVENTORY:
+					self.__AppendPetEggItemInformation(metinSlot)
+				else:
+					self.__AppendPetEggItemInformation(metinSlot, TRUE)
+
+			elif item.PET_UPBRINGING == itemSubType:
+				self.__AppendUpBringingPetItemInfomation(metinSlot)
+
+			elif item.PET_BAG == itemSubType:
+				self.__AppendPetBagItemInfomation(metinSlot)
+
+				if app.ENABLE_RENDER_TARGET:
+					PetVnum = item.GetValue(0)
+					if PetVnum != 0:
+						if constInfo.enable_item_preview == 1:
+							self.__ModelPreview(PetVnum, 1)
+						else:
+							self.AppendEmojiRenderInfo()
+
+		elif item.ITEM_TYPE_GIFTBOX == itemType and app.ENABLE_VIEW_CHEST_DROP:
+			self.AppendSpace(5)
+			self.AppendTextLine(localeInfo.EMOJI_CHEST_VIEW, self.COLOR_TEXT_SHORTCUT)
+		else:
+			self.__AppendLimitInformation()
+
+		if app.ENABLE_GROWTH_PET_SYSTEM:
+			if not (item.ITEM_TYPE_GROWTH_PET == itemType and item.PET_BAG == itemSubType):
+				for i in xrange(item.LIMIT_MAX_NUM):
+					(limitType, limitValue) = item.GetLimit(i)
+					limitValue2 = item.GetLimitValue(i)
+
+					if item.LIMIT_REAL_TIME_START_FIRST_USE == limitType:
+						self.AppendRealTimeStartFirstUseLastTime(item, metinSlot, i, limitValue2)
+
+					elif item.LIMIT_TIMER_BASED_ON_WEAR == limitType:
+						self.AppendTimerBasedOnWearLastTime(metinSlot, limitValue2)
+		else:
+			for i in xrange(item.LIMIT_MAX_NUM):
+				(limitType, limitValue) = item.GetLimit(i)
+				limitValue2 = item.GetLimitValue(i)
+
+				if item.LIMIT_REAL_TIME_START_FIRST_USE == limitType:
+					self.AppendRealTimeStartFirstUseLastTime(item, metinSlot, i, limitValue2)
+
+				elif item.LIMIT_TIMER_BASED_ON_WEAR == limitType:
+					self.AppendTimerBasedOnWearLastTime(metinSlot, limitValue2)
+
+		self.AppendAntiFlagInformation()
+
+		if app.ENABLE_QUICK_SELL_ITEM:
+			itemPrice = item.GetISellItemPrice()
+			itemCount = player.GetItemCount(window_type, slotIndex)
+			itemPriceCount = itemPrice*itemCount
+
+			if window_open != 0:
+				if not shop.IsPrivateShop():
+					if self.IsSellItems(itemVnum, itemPrice):
+						if item.IsAntiFlag(item.ITEM_ANTIFLAG_SELL):
+							if exchange.isTrading():
+								self.AppendTextLine(localeInfo.EMOJI_QUICK_ADD, self.COLOR_TEXT_SHORTCUT)
+							else:
+								pass
+						else:
+							self.AppendSpace(5)
+							if exchange.isTrading():
+								self.AppendTextLine(localeInfo.EMOJI_QUICK_ADD, self.COLOR_TEXT_SHORTCUT)
+							else:
+								self.AppendTextLine(localeInfo.EMOJI_SHOP_SELL, self.COLOR_TEXT_SHORTCUT)
+							self.AppendSpace(5)
+							self.AppendTextLine(localeInfo.SELL_PRICE_INFO, self.SPECIAL_TITLE_COLOR)
+
+							if itemCount > 1:
+								self.AppendTextLine(localeInfo.SELL_PRICE_INFO_PCS % localeInfo.NumberToMoneyString(itemPrice), self.SPECIAL_TITLE_COLOR)
+								self.AppendTextLine(localeInfo.SELL_PRICE_INFO_ALL % localeInfo.NumberToMoneyString(itemPriceCount), self.SPECIAL_TITLE_COLOR)
+							else:
+								self.AppendTextLine(localeInfo.NumberToMoneyString(itemPrice), self.SPECIAL_TITLE_COLOR)
+
+		if window_type != player.INVENTORY and chr.IsGameMaster(player.GetMainCharacterIndex()):
+			self.AppendSpace(5)
+			self.AppendTextLine("VNUM: {}".format(itemVnum), 0xFFf863ff)
+			self.AppendSpace(3)
+			self.AppendTextLine("TYPE: {} SUBTYPE {}".format(itemType, itemSubType), 0xFF00cfb6)
+			if metinSlot:
+				self.AppendSpace(3)
+				self.AppendTextLine("SOCKET: {}".format(','.join([str(i) for i in metinSlot])), 0xFF00b6d6)
+
+		if slotIndex >= 0 and window_type == player.INVENTORY and not self.isShopItem:
+			shortcutRows = []
+			if getattr(app, 'ENABLE_OFFLINESHOP_SEARCH_SYSTEM', FALSE):
+				shortcutRows.append((("ctrl", "mouse_right"), "Ma\xf0aza Ara"))
+			if getattr(app, 'ENABLE_WIKI_SYSTEM', FALSE):
+				shortcutRows.append((("ctrl", "alt", "mouse_left"), "Wikipedia'y\xfd a\xe7"))
+			if getattr(app, 'ENABLE_RENEWAL_SWITCHBOT', FALSE) and constInfo.CanPutItemInSwitchbot(itemVnum):
+				shortcutRows.append((("shift", "mouse_left"), "Switchbot'a ta\xfe\xfd"))
+			self.AppendShortcutTable(shortcutRows)
+
+		if app.ENABLE_MINI_GAME_CATCH_KING:
+			if self.itemVnum in [79603, 79604]:
+				if 0 != metinSlot[0]:
+					self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(0))
+
+		self.ShowToolTip()
+
+	if app.ENABLE_GROWTH_PET_SYSTEM:
+		def AddHyperLinkPetItemData(self, itemVnum, metinSlot, attrSlot, pet_info):
+			pet_level = int(pet_info[0], 16)
+			pet_birthday = int(pet_info[1], 16)
+			pet_evol_level = int(pet_info[2], 16)
+			pet_hp = int(pet_info[3], 16) / 10.0
+			pet_def = int(pet_info[4], 16) / 10.0
+			pet_sp = int(pet_info[5], 16) / 10.0
+			pet_life_time = int(pet_info[6], 16)
+			pet_life_time_max = int(pet_info[7], 16)
+			pet_skill_count = int(pet_info[8], 16)
+			pet_item_vnum = int(pet_info[9], 16)
+			pet_nick_name = pet_info[10]
+			pet_skill_vnum = [0] * player.PET_SKILL_COUNT_MAX
+			pet_skill_level = [0] * player.PET_SKILL_COUNT_MAX
+
+			skill_index = 11
+			for index in range(player.PET_SKILL_COUNT_MAX):
+				pet_skill_vnum[index] = int(pet_info[skill_index], 16)
+				skill_index = skill_index + 1
+				pet_skill_level[index] = int(pet_info[skill_index], 16)
+				skill_index = skill_index + 1
+
+			self.itemVnum = itemVnum
+			item.SelectItem(itemVnum)
+			itemType = item.GetItemType()
+			itemSubType = item.GetItemSubType()
+			itemDesc = item.GetItemDescription()
+			itemSummary = item.GetItemSummary()
+
+			if item.ITEM_TYPE_GROWTH_PET != itemType:
+				return
+
+			if itemSubType not in [item.PET_UPBRINGING, item.PET_BAG]:
+				return
+
+			if item.PET_BAG == itemSubType:
+				self.itemVnum = pet_item_vnum
+				item.SelectItem(pet_item_vnum)
+				pet_bag_desc = localeInfo.PET_BAG_DESC % item.GetItemName()
+				self.__AdjustMaxWidth(0, pet_bag_desc)
+				self.itemVnum = itemVnum
+				item.SelectItem(itemVnum)
+
+			if item.PET_BAG == itemSubType:
+				self.AppendTextLine( pet_nick_name + "(" + localeInfo.PET_TOOLTIP_TRADABLE + ")", self.TITLE_COLOR )
+			elif item.PET_UPBRINGING == itemSubType:
+				self.AppendTextLine( pet_nick_name, self.TITLE_COLOR)
+
+			if item.PET_UPBRINGING == itemSubType:
+				self.AppendDescription(itemDesc, DESC_DEFAULT_MAX_COLS)
+				self.AppendDescription(itemSummary, DESC_DEFAULT_MAX_COLS, self.CONDITION_COLOR)
+			elif item.PET_BAG == itemSubType:
+				self.AppendDescription(pet_bag_desc, DESC_DEFAULT_MAX_COLS)
+				self.itemVnum = itemVnum
+				item.SelectItem(itemVnum)
+
+			self.AppendSpace(5)
+			if item.PET_UPBRINGING == itemSubType:
+				cur_time = app.GetGlobalTimeStamp()
+
+				if metinSlot[0] < cur_time:
+					pet_birthday = max(0, metinSlot[0] - pet_birthday)
+				else:
+					pet_birthday = max(0, cur_time - pet_birthday)
+
+			elif item.PET_BAG == itemSubType:
+				cur_time = app.GetGlobalTimeStamp()
+				pet_birthday = max(0, cur_time - pet_birthday + (cur_time - metinSlot[1]))
+
+			self.AppendTextLine(localeInfo.PET_TOOLTIP_LEVEL + " " + str(pet_level) + " (" + localeInfo.SecondToDay(pet_birthday) + ")")
+
+			self.AppendSpace(5)
+			if pet_skill_count:
+				self.AppendTextLine(self.GetEvolName(pet_evol_level) + "(" + str(pet_skill_count) + ")")
+			else:
+				self.AppendTextLine(self.GetEvolName(pet_evol_level))
+
+			self.AppendSpace(5)
+			self.AppendTextLine(localeInfo.PET_TOOLTIP_HP + " +" + str("%0.1f" % pet_hp) + "%", self.SPECIAL_POSITIVE_COLOR)
+			self.AppendTextLine(localeInfo.PET_TOOLTIP_DEF + " +" + str("%0.1f" % pet_def) + "%", self.SPECIAL_POSITIVE_COLOR)
+			self.AppendTextLine(localeInfo.PET_TOOLTIP_SP + " +" + str("%0.1f" % pet_sp) + "%", self.SPECIAL_POSITIVE_COLOR)
+
+			for index in range(player.PET_SKILL_COUNT_MAX):
+				if pet_skill_vnum[index]:
+					self.AppendSpace(5)
+					(pet_skill_name, pet_skill_desc, pet_skill_use_type, pet_skill_cool_time) = skill.GetPetSkillInfo(pet_skill_vnum[index])
+					self.AppendTextLine( localeInfo.PET_TOOLTUP_SKILL % (pet_skill_name, pet_skill_level[index]) , self.SPECIAL_POSITIVE_COLOR)
+
+			for i in xrange(item.LIMIT_MAX_NUM):
+				(limitType, limitValue) = item.GetLimit(i)
+				if item.LIMIT_REAL_TIME == limitType:
+					self.AppendPetItemLastTime(metinSlot[0])
+				if item.LIMIT_REAL_TIME_START_FIRST_USE == limitType:
+					self.AppendPetItemLastTime(metinSlot[0])
+
+			self.ShowToolTip()
+
+		def GetEvolName(self, evol_level):
+			if 1 == evol_level:
+				return localeInfo.PET_INFORMATION_STAGE1
+			elif 2 == evol_level:
+				return localeInfo.PET_INFORMATION_STAGE2
+			elif 3 == evol_level:
+				return localeInfo.PET_INFORMATION_STAGE3
+			elif 4 == evol_level:
+				return localeInfo.PET_INFORMATION_STAGE4
+
+			return localeInfo.PET_INFORMATION_STAGE1
+
+		def __AppendPetBagItemInfomation(self, metinSlot):
+			pet_id = metinSlot[2]
+			if pet_id:
+				self.ClearToolTip()
+				growhPetVNum = player.GetPetItemVNumInBag(pet_id)
+				if 0 == growhPetVNum:
+					return
+
+				## Setting width according to desc
+				item.SelectItem(growhPetVNum)
+				pet_bag_desc = localeInfo.PET_BAG_DESC % item.GetItemName()
+				self.__AdjustMaxWidth(0, pet_bag_desc)
+
+				(pet_level, evol_level, birthday, pet_nick, pet_hp, pet_def, pet_sp) = player.GetPetItem(pet_id)
+				self.AppendTextLine( pet_nick + "(" + localeInfo.PET_TOOLTIP_TRADABLE + ")", self.TITLE_COLOR )
+
+				## DESC
+				self.AppendDescription(pet_bag_desc, DESC_DEFAULT_MAX_COLS)
+
+				item.SelectItem(self.itemVnum)
+
+				(skill_count, pet_skill1, pet_skill_level1, pet_skill_cool1, pet_skill2, pet_skill_level2, pet_skill_cool2, pet_skill3, pet_skill_level3, pet_skill_cool3) = player.GetPetSkill(pet_id)
+
+				self.AppendSpace(5)
+
+				cur_time = app.GetGlobalTimeStamp()
+				birthSec = max(0, cur_time - birthday - (cur_time - metinSlot[1]))
+
+				self.AppendTextLine(localeInfo.PET_TOOLTIP_LEVEL + " " + str(pet_level) + " (" + localeInfo.SecondToDay(birthSec) + ")")
+
+				## General evolution, special evolution, number of skills
+				self.AppendSpace(5)
+				if skill_count:
+					self.AppendTextLine(self.GetEvolName(evol_level) + "(" + str(skill_count) + ")")
+				else:
+					self.AppendTextLine(self.GetEvolName(evol_level))
+
+				## Stats
+				self.AppendSpace(5)
+				self.AppendTextLine(localeInfo.PET_TOOLTIP_HP + " +" + str("%0.1f" % pet_hp) + "%", self.SPECIAL_POSITIVE_COLOR)
+				self.AppendTextLine(localeInfo.PET_TOOLTIP_DEF + " +" + str("%0.1f" % pet_def) + "%", self.SPECIAL_POSITIVE_COLOR)
+				self.AppendTextLine(localeInfo.PET_TOOLTIP_SP + " +" + str("%0.1f" % pet_sp) + "%", self.SPECIAL_POSITIVE_COLOR)
+
+				## skill
+				if pet_skill1:
+					self.AppendSpace(5)
+					(pet_skill_name, pet_skill_desc, pet_skill_use_type, pet_skill_cool_time) = skill.GetPetSkillInfo(pet_skill1)
+					self.AppendTextLine( localeInfo.PET_TOOLTUP_SKILL % (pet_skill_name, pet_skill_level1) , self.SPECIAL_POSITIVE_COLOR)
+
+				if pet_skill2:
+					(pet_skill_name, pet_skill_desc, pet_skill_use_type, pet_skill_cool_time) = skill.GetPetSkillInfo(pet_skill2)
+					self.AppendTextLine( localeInfo.PET_TOOLTUP_SKILL % (pet_skill_name, pet_skill_level2) , self.SPECIAL_POSITIVE_COLOR)
+
+				if pet_skill3:
+					(pet_skill_name, pet_skill_desc, pet_skill_use_type, pet_skill_cool_time) = skill.GetPetSkillInfo(pet_skill3)
+					self.AppendTextLine( localeInfo.PET_TOOLTUP_SKILL % (pet_skill_name, pet_skill_level3) , self.SPECIAL_POSITIVE_COLOR)
+
+				## term
+				for i in xrange(item.LIMIT_MAX_NUM):
+					(limitType, limitValue) = item.GetLimit(i)
+					if item.LIMIT_REAL_TIME_START_FIRST_USE == limitType:
+						self.AppendPetItemLastTime(metinSlot[0])
+
+		def __AppendPetEggItemInformation(self, metinSlot, isFeedWindow = FALSE):
+			for i in xrange(item.LIMIT_MAX_NUM):
+				(limitType, limitValue) = item.GetLimit(i)
+				if item.LIMIT_REAL_TIME == limitType:
+					self.AppendMallItemLastTime(metinSlot[0], limitValue)
+
+		def __AppendUpBringingPetItemInfomation(self, metinSlot):
+			pet_id = metinSlot[2]
+			if pet_id:
+				## skill information
+				(skill_count, pet_skill1, pet_skill_level1, pet_skill_cool1, pet_skill2, pet_skill_level2, pet_skill_cool2, pet_skill3, pet_skill_level3, pet_skill_cool3) = player.GetPetSkill(pet_id)
+
+				## Lv XXX ( DDDD days)
+				(pet_level, evol_level, birthday, pet_nick, pet_hp, pet_def, pet_sp) = player.GetPetItem(pet_id)
+				self.AppendSpace(5)
+
+				curTime = app.GetGlobalTimeStamp()
+				birthSec = 0
+
+				if metinSlot[0] < curTime:
+					birthSec = max(0, metinSlot[0] - birthday)
+				else:
+					birthSec = max(0, curTime - birthday)
+				self.AppendTextLine(localeInfo.PET_TOOLTIP_LEVEL + " " + str(pet_level) + " (" + localeInfo.SecondToDay(birthSec) + ")")
+
+				self.AppendSpace(5)
+				if skill_count:
+					self.AppendTextLine(self.GetEvolName(evol_level) + "(" + str(skill_count) + ")")
+				else:
+					self.AppendTextLine(self.GetEvolName(evol_level))
+
+				## Stats
+				self.AppendSpace(5)
+				self.AppendTextLine(localeInfo.PET_TOOLTIP_HP + " +" + str("%0.1f" % pet_hp) + "%", self.SPECIAL_POSITIVE_COLOR)
+				self.AppendTextLine(localeInfo.PET_TOOLTIP_DEF + " +" + str("%0.1f" % pet_def) + "%", self.SPECIAL_POSITIVE_COLOR)
+				self.AppendTextLine(localeInfo.PET_TOOLTIP_SP + " +" + str("%0.1f" % pet_sp) + "%", self.SPECIAL_POSITIVE_COLOR)
+
+				## skill
+				if pet_skill1:
+					self.AppendSpace(5)
+					(pet_skill_name, pet_skill_desc, pet_skill_use_type, pet_skill_cool_time) = skill.GetPetSkillInfo(pet_skill1)
+					self.AppendTextLine( localeInfo.PET_TOOLTUP_SKILL % (pet_skill_name, pet_skill_level1) , self.SPECIAL_POSITIVE_COLOR)
+
+				if pet_skill2:
+					(pet_skill_name, pet_skill_desc, pet_skill_use_type, pet_skill_cool_time) = skill.GetPetSkillInfo(pet_skill2)
+					self.AppendTextLine( localeInfo.PET_TOOLTUP_SKILL % (pet_skill_name, pet_skill_level2) , self.SPECIAL_POSITIVE_COLOR)
+
+				if pet_skill3:
+					(pet_skill_name, pet_skill_desc, pet_skill_use_type, pet_skill_cool_time) = skill.GetPetSkillInfo(pet_skill3)
+					self.AppendTextLine( localeInfo.PET_TOOLTUP_SKILL % (pet_skill_name, pet_skill_level3) , self.SPECIAL_POSITIVE_COLOR)
+
+				## life span
+				for i in xrange(item.LIMIT_MAX_NUM):
+					(limitType, limitValue) = item.GetLimit(i)
+					if item.LIMIT_REAL_TIME == limitType:
+						self.AppendPetItemLastTime(metinSlot[0])
+
+				if app.ENABLE_RENDER_TARGET:
+					NewPetVnum = item.GetValue(0)
+					if NewPetVnum != 0:
+						if constInfo.enable_item_preview == 1:
+							self.__ModelPreview(NewPetVnum, 1)
+						else:
+							self.AppendEmojiRenderInfo()
+
+		def AppendPetItemLastTime(self, endTime):
+			self.AppendSpace(5)
+
+			leftSec = endTime - app.GetGlobalTimeStamp()
+
+			if leftSec >= 0:
+				self.AppendTextLine(localeInfo.LEFT_TIME + " : " + localeInfo.SecondToDHM(leftSec), self.NORMAL_COLOR)
+			else:
+				self.AppendTextLine(localeInfo.LEFT_TIME + " : " + localeInfo.PET_TOOLTIP_LIFETIME_OVER, self.DISABLE_COLOR)
+
+	if app.ENABLE_QUICK_SELL_ITEM:
+		def IsSellItems(self, itemVnum, itemPrice):
+			item.SelectItem(itemVnum)
+
+			if itemPrice > 1:
+				return TRUE
+
+			return FALSE
+
+	if app.ENABLE_ATTENDANCE_EVENT:
+		def AppendMagicEggInformation(self, metinSlot):
+			self.AppendSpace(5)
+			if metinSlot[1] == 0:
+				self.AppendTextLine("[ 3 Kalan ]")
+			else:
+				self.AppendTextLine("[ %d Kalan ]" % metinSlot[0])
+
+				if app.GetGlobalTimeStamp() > metinSlot[1]:
+					self.AppendSpace(5)
+					self.AppendTextLine("Mevcut")
+				else:
+					leftSec = max(0, metinSlot[1] - app.GetGlobalTimeStamp())
+					self.AppendSpace(5)
+					self.AppendTextLine(localeInfo.LEFT_TIME + " : " + localeInfo.SecondToDHM(leftSec))	
+
+	## Saç Önizleme
+	def __IsHair(self, itemVnum):
+		item.SelectItem(itemVnum)
+		itemType = item.GetItemType()
+		if itemType != item.ITEM_TYPE_COSTUME:
+			return 0 # hot fix
+
+		return (
+			self.__IsOldHair(itemVnum) or 
+			self.__IsNewHair(itemVnum) or
+			self.__IsNewHair2(itemVnum) or
+			self.__IsNewHair3(itemVnum) or
+			self.__IsCostumeHair(itemVnum)
+		)
+
+	def __IsOldHair(self, itemVnum):
+		return itemVnum > 73000 and itemVnum < 74000
+
+	def __IsNewHair(self, itemVnum):
+		return itemVnum > 74000 and itemVnum < 75000
+
+	def __IsNewHair2(self, itemVnum):
+		return itemVnum > 75000 and itemVnum < 76000
+
+	def __IsNewHair3(self, itemVnum):
+		return ((74012 < itemVnum and itemVnum < 74022) or
+			(74262 < itemVnum and itemVnum < 74272) or
+			(74512 < itemVnum and itemVnum < 74522) or
+			(74762 < itemVnum and itemVnum < 74772) or
+			(45000 < itemVnum and itemVnum < 47000))
+
+	def __IsCostumeHair(self, itemVnum):
+		return app.ENABLE_COSTUME_SYSTEM and self.__IsNewHair3(itemVnum - 100000)
+
+	if app.ENABLE_ATTENDANCE_EVENT:
+		def __AppendAttendanceRewardItemIcon(self, itemVnum):
+			itemImage = ui.ImageBox()
+			itemImage.SetParent(self)
+			itemImage.Show()
+			item.SelectItem(itemVnum)
+			itemImage.LoadImage(item.GetIconImageFileName())
+			itemImage.SetPosition((self.toolTipWidth/2)-16, self.toolTipHeight)
+			self.toolTipHeight += itemImage.GetHeight()
+			self.childrenList.append(itemImage)
+			self.ResizeToolTip()
+
+	def __AppendHairIcon(self, itemVnum):
+		itemImage = ui.ImageBox()
+		itemImage.SetParent(self)
+		itemImage.Show()
+
+		if self.__IsOldHair(itemVnum):
+			itemImage.LoadImage("d:/ymir work/item/quest/" + str(itemVnum) + ".tga")
+		elif self.__IsNewHair3(itemVnum):
+			itemImage.LoadImage("icon/hair/%d.sub" % (itemVnum))
+		elif self.__IsNewHair(itemVnum):
+			if itemVnum > 74520 and itemVnum < 74751:
+				itemImage.LoadImage("icon/hair/%d.sub" % (itemVnum))
+			else:
+				itemImage.LoadImage("d:/ymir work/item/quest/" + str(itemVnum-1000) + ".tga")
+		elif self.__IsNewHair2(itemVnum):
+			itemImage.LoadImage("icon/hair/%d.sub" % (itemVnum))
+		elif self.__IsCostumeHair(itemVnum):
+			itemImage.LoadImage("icon/hair/%d.sub" % (itemVnum - 100000))
+
+		itemImage.SetPosition(itemImage.GetWidth()/2, self.toolTipHeight)
+
+	def __AppendOfflineShopItemIcon(self, itemVnum):
+		itemImage = ui.ImageBox()
+		itemImage.SetParent(self)
+		item.SelectItem(itemVnum)
+		itemImage.LoadImage(item.GetIconImageFileName())
+		itemImage.SetPosition(self.toolTipWidth / 2 - itemImage.GetWidth() / 2, self.toolTipHeight)
+		itemImage.Show()
+
+		self.toolTipHeight += itemImage.GetHeight()
+		self.childrenList.append(itemImage)
+		self.ResizeToolTip()
+
+	if app.ENABLE_HYPERLINK_ITEM_ICON:
+		def __AppendItemIcon(self, itemVnum):
+			itemImage = ui.ImageBox()
+			itemImage.SetParent(self)
+			item.SelectItem(itemVnum)
+			itemImage.LoadImage(item.GetIconImageFileName())
+			itemImage.SetPosition(self.toolTipWidth / 2 - itemImage.GetWidth() / 2, self.toolTipHeight)
+			itemImage.Show()
+
+			self.toolTipHeight += itemImage.GetHeight()
+			self.childrenList.append(itemImage)
+			self.ResizeToolTip()
+
+	if app.ENABLE_RENDER_TARGET:
+		def __ModelPreview(self, itemVnum, mode):
+			# Eðer zaten açýksa kapat
+			if self.ModelPreviewBoard:
+				self.__ModelPreviewClose()
+			
+			# Render target index'i al veya oluþtur
+			if self.ModelPreviewRenderIndex is None:
+				self.ModelPreviewRenderIndex = renderTarget.GetFreeIndex(50, 85)
+			
+			if self.ModelPreviewRenderIndex is None or self.ModelPreviewRenderIndex < 0:
+				return  # Render target oluþturulamadý
+			
+			self.ModelPreviewBoard = ui.ThinBoard()
+			self.ModelPreviewBoard.SetParent(self)
+			self.ModelPreviewBoard.SetSize(200, 240)
+			self.ModelPreviewBoard.SetPosition(-202, 0)
+			self.ModelPreviewBoard.Show()
+
+			self.ModelPreview = ui.RenderTarget()
+			self.ModelPreview.SetParent(self.ModelPreviewBoard)
+			self.ModelPreview.SetSize(190, 210)
+			self.ModelPreview.SetPosition(5, 22)
+			self.ModelPreview.SetRenderTarget(self.ModelPreviewRenderIndex)
+			self.ModelPreview.Show()
+
+			self.ModelPreviewText = ui.TextLine()
+			self.ModelPreviewText.SetParent(self.ModelPreviewBoard)
+			self.ModelPreviewText.SetFontName(self.defFontName)
+			self.ModelPreviewText.SetPackedFontColor(grp.GenerateColor(0.8824, 0.9804, 0.8824, 1.0))
+			self.ModelPreviewText.SetPosition(0, 5)
+			self.ModelPreviewText.SetText("Model Önizleme")  # localeInfo.RENDER_INFO yerine basit string
+			self.ModelPreviewText.SetOutline()
+			self.ModelPreviewText.SetFeather(False)
+			self.ModelPreviewText.SetWindowHorizontalAlignCenter()
+			self.ModelPreviewText.SetHorizontalAlignCenter()
+			self.ModelPreviewText.Show()
+
+			try:
+				renderTarget.SetBackground(self.ModelPreviewRenderIndex, "d:/ymir work/ui/game/myshop_deco/model_view_bg.sub")
+				renderTarget.SetRotation(self.ModelPreviewRenderIndex, FALSE)
+				renderTarget.SetScale(self.ModelPreviewRenderIndex, 0.3)
+				renderTarget.ResetModel(self.ModelPreviewRenderIndex)
+				
+				if mode == 1:
+					# NPC/Mount/Pet için
+					renderTarget.SelectModel(self.ModelPreviewRenderIndex, itemVnum)
+					renderTarget.SetVisibility(self.ModelPreviewRenderIndex, TRUE)
+					# NPC/Mount/Pet için kamera açýsý (kuþ bakýþý yerine daha yakýn)
+					renderTarget.SetModelV3Eye(self.ModelPreviewRenderIndex, 0.0, -800.0, 400.0)
+					renderTarget.SetModelV3Target(self.ModelPreviewRenderIndex, 0.0, 0.0, 50.0)
+				else:
+					# Item için
+					item.SelectItem(itemVnum)
+					itemType = item.GetItemType()
+					itemSubType = item.GetItemSubType()
+					
+					isArmor = ((item.ITEM_TYPE_ARMOR == itemType and itemSubType == item.ARMOR_BODY) or (item.ITEM_TYPE_COSTUME == itemType and itemSubType == item.COSTUME_TYPE_BODY))
+					isWeapon = ((item.ITEM_TYPE_WEAPON == itemType and itemSubType != item.WEAPON_ARROW) or (item.ITEM_TYPE_COSTUME == itemType and itemSubType == item.COSTUME_TYPE_WEAPON))
+					isAcce = ((item.ITEM_TYPE_COSTUME == itemType and itemSubType == item.COSTUME_TYPE_ACCE))
+					isHair = (item.ITEM_TYPE_COSTUME == itemType and itemSubType == item.COSTUME_TYPE_HAIR)
+					isAura = (item.ITEM_TYPE_COSTUME == itemType and itemSubType == item.COSTUME_TYPE_AURA)
+					isMount = (item.ITEM_TYPE_MOUNT == itemType)
+					isPet = (item.ITEM_TYPE_PET == itemType)
+					isStandingMount = FALSE
+					isHorse = FALSE
+					
+					# Standing Mount kontrolü (mount item'larý için)
+					if isMount:
+						mountVnum = item.GetValue(0)
+						if mountVnum > 0:
+							isStandingMount = TRUE
+					
+					# Horse kontrolü (pet item'larý için)
+					if isPet:
+						petVnum = item.GetValue(0)
+						if petVnum > 0:
+							isHorse = TRUE
+					
+					if app.ENABLE_MOUNT_PET_SKIN:
+						if isMount == FALSE:
+							isMount = (item.ITEM_TYPE_COSTUME == itemType and itemSubType == item.COSTUME_TYPE_MOUNT)
+							if isMount:
+								mountVnum = itemVnum - 85000 if itemVnum >= 85000 else itemVnum
+								if mountVnum > 0:
+									isStandingMount = TRUE
+						
+						if isPet == FALSE:
+							isPet = (item.ITEM_TYPE_COSTUME == itemType and itemSubType == item.COSTUME_TYPE_PET)
+							if isPet:
+								petVnum = itemVnum - 85000 if itemVnum >= 85000 else itemVnum
+								if petVnum > 0:
+									isHorse = TRUE
+					
+					if isMount or isPet or isStandingMount or isHorse:
+						# Mount/Pet/Standing Mount/Horse için NPC modeli kullan
+						modelVnum = 0
+						
+						if item.ITEM_TYPE_MOUNT == itemType:
+							# Mount item'ý için - Server koduna göre mount NPC vnum'u GetValue(1) ile alýnýyor (char.cpp)
+							# Mount kodlarýna göre NPC vnum'larý: 52001->20201, 52006->20205, 52011->20209, vb.
+							modelVnum = item.GetValue(1)
+							
+							# Eðer GetValue(1) geçersizse (0 veya itemVnum ile ayný), alternatif yöntemleri dene
+							if modelVnum == 0 or modelVnum == itemVnum:
+								# GetValue(0), GetValue(2), GetValue(3) metodlarýný dene
+								for i in [0, 2, 3]:
+									testVnum = item.GetValue(i)
+									# Mount NPC vnum'larý genellikle 20000-21000 veya 40000-41000 arasýnda olur
+									if (testVnum >= 20000 and testVnum < 21000) or (testVnum >= 40000 and testVnum < 41000):
+										if testVnum != itemVnum:
+											modelVnum = testVnum
+											break
+							
+							# Eðer hala geçersizse, mount item vnum'undan 31800 çýkar (bazý mount'lar için çalýþýr: 52001-31800=20201)
+							if modelVnum == 0 or modelVnum == itemVnum or ((modelVnum < 20000 or modelVnum >= 21000) and (modelVnum < 40000 or modelVnum >= 41000)):
+								# Mount kodlarýna göre: 52001 -> 20201, 52006 -> 20205, vb.
+								# Ama bazý mount'larda tutarsýz: 52202 -> 40003, 52204 -> 40004
+								# Bu yüzden önce basit çýkarma iþlemini dene
+								testVnum = itemVnum - 31800
+								if (testVnum >= 20000 and testVnum < 21000) or (testVnum >= 40000 and testVnum < 41000):
+									modelVnum = testVnum
+								else:
+									# Eðer basit çýkarma iþlemi çalýþmazsa, GetValue(1) deðerini kullan (eðer geçerliyse)
+									if modelVnum >= 20000 and modelVnum < 50000:
+										pass  # modelVnum zaten ayarlanmýþ
+									else:
+										modelVnum = itemVnum
+						elif item.ITEM_TYPE_PET == itemType:
+							# Pet item'ý için - Server koduna göre pet NPC vnum'u GetValue(1) ile alýnýyor (char.cpp)
+							# Pet kodlarýna göre NPC vnum'larý: 53001->34001, 53002->34002, 53005->34004, 53006->34009, vb.
+							modelVnum = item.GetValue(1)
+							
+							# Eðer GetValue(1) geçersizse (0 veya itemVnum ile ayný), alternatif yöntemleri dene
+							if modelVnum == 0 or modelVnum == itemVnum:
+								# GetValue(0), GetValue(2), GetValue(3) metodlarýný dene
+								for i in [0, 2, 3]:
+									testVnum = item.GetValue(i)
+									# Pet NPC vnum'larý genellikle 34000-35000 arasýnda olur
+									if testVnum >= 34000 and testVnum < 35000 and testVnum != itemVnum:
+										modelVnum = testVnum
+										break
+							
+							# Eðer hala geçersizse, pet item vnum'undan 19000 çýkar (bazý pet'ler için çalýþýr)
+							if modelVnum == 0 or modelVnum == itemVnum or (modelVnum < 34000 or modelVnum >= 35000):
+								# Pet kodlarýna göre: 53001 -> 34001, 53002 -> 34002, vb.
+								# Ama bazý pet'lerde tutarsýz: 53005 -> 34004, 53006 -> 34009
+								# Bu yüzden önce basit çýkarma iþlemini dene
+								testVnum = itemVnum - 19000
+								if testVnum >= 34000 and testVnum < 35000:
+									modelVnum = testVnum
+								else:
+									# Eðer basit çýkarma iþlemi çalýþmazsa, GetValue(1) deðerini kullan (eðer geçerliyse)
+									if modelVnum >= 30000 and modelVnum < 50000:
+										pass  # modelVnum zaten ayarlanmýþ
+									else:
+										modelVnum = itemVnum
+						elif item.ITEM_TYPE_COSTUME == itemType:
+							# Costume mount/pet için
+							if itemSubType == item.COSTUME_TYPE_MOUNT:
+								# Costume mount için - önce GetValue(0) dene
+								modelVnum = item.GetValue(0)
+								if modelVnum == 0 or modelVnum == itemVnum:
+									# Eðer GetValue(0) 0 ise, itemVnum'dan 85000 çýkar
+									modelVnum = itemVnum - 85000
+									if modelVnum <= 0:
+										# Eðer çýkarma sonucu 0 veya negatifse, itemVnum'u kullan
+										modelVnum = itemVnum
+							elif itemSubType == item.COSTUME_TYPE_PET:
+								# Costume pet için - önce GetValue(0) dene
+								modelVnum = item.GetValue(0)
+								if modelVnum == 0 or modelVnum == itemVnum:
+									# Eðer GetValue(0) 0 ise, itemVnum'dan 85000 çýkar
+									modelVnum = itemVnum - 85000
+									if modelVnum <= 0:
+										modelVnum = itemVnum
+						
+						if modelVnum > 0:
+							# Model seç ve görünürlüðü ayarla
+							renderTarget.ResetModel(self.ModelPreviewRenderIndex)
+							renderTarget.SelectModel(self.ModelPreviewRenderIndex, modelVnum)
+							renderTarget.SetVisibility(self.ModelPreviewRenderIndex, TRUE)
+							# Mount/Pet için kamera açýsý (kuþ bakýþý yerine daha yakýn)
+							renderTarget.SetModelV3Eye(self.ModelPreviewRenderIndex, 0.0, -800.0, 400.0)
+							renderTarget.SetModelV3Target(self.ModelPreviewRenderIndex, 0.0, 0.0, 50.0)
+					else:
+						# PC modeli için race seç ve item'larý set et
+						playerRace = player.GetRace()
+						
+						# Aura costume item'ý gösterilirken, önce mevcut aura'yý temizle
+						if isAura:
+							# Model'i reset et (çift aura görünmesini önlemek için)
+							renderTarget.ResetModel(self.ModelPreviewRenderIndex)
+						
+						renderTarget.SelectModel(self.ModelPreviewRenderIndex, playerRace)
+						renderTarget.SetVisibility(self.ModelPreviewRenderIndex, TRUE)
+						# PC için kamera açýsý (kuþ bakýþý yerine daha yakýn ve önden)
+						renderTarget.SetModelV3Eye(self.ModelPreviewRenderIndex, 0.0, -1000.0, 600.0)
+						renderTarget.SetModelV3Target(self.ModelPreviewRenderIndex, 0.0, 0.0, 95.0)
+						
+						# Aura costume item'ý gösterilirken, diðer item'larý da set et
+						# Aura'yý en son set etmek yerine, önce diðer item'larý set edip sonra aura'yý set ediyoruz
+						# Böylece aura diðer item'lar set edildikten sonra da görünür kalýr
+						
+						# Weapon set et
+						renderTarget.SetWeapon(self.ModelPreviewRenderIndex, itemVnum if isWeapon else 0)
+						
+						# Hair set et
+						if isHair:
+							renderTarget.SetHair(self.ModelPreviewRenderIndex, itemVnum, FALSE)
+						else:
+							renderTarget.SetHair(self.ModelPreviewRenderIndex, player.GetMainCharacterPart(4), TRUE)
+						
+						# Acce set et
+						if isAcce:
+							renderTarget.SetAcce(self.ModelPreviewRenderIndex, itemVnum - 85000)
+						else:
+							renderTarget.SetAcce(self.ModelPreviewRenderIndex, player.GetMainCharacterPart(5))
+						
+						# Armor set et
+						if isArmor:
+							renderTarget.SetArmor(self.ModelPreviewRenderIndex, itemVnum)
+						else:
+							renderTarget.SetArmor(self.ModelPreviewRenderIndex, player.GetMainCharacterPart(0))
+						
+						# Aura için - PC modeli üzerinde aura göster (EN SON SET ET)
+						# Önce mevcut aura'yý temizle (çift aura görünmesini önlemek için)
+						renderTarget.SetAura(self.ModelPreviewRenderIndex, 0)
+						self.currentAuraVnum = 0
+						
+						if isAura:
+							# Aura bir efekt olduðu için, PC modeli üzerinde gösterilir
+							# Aura costume item'ý için itemVnum direkt kullanýlýr (49001, 49002, vb.)
+							# SetAura metodu zaten AttachEffectByID ile efekt'i gösterir (ENABLE_AURA_COSTUME_SYSTEM)
+							# Aura'yý set et ve deðiþkeni güncelle
+							renderTarget.SetAura(self.ModelPreviewRenderIndex, itemVnum)
+							self.currentAuraVnum = itemVnum
+						else:
+							# Aura costume item'ý deðilse, aura'yý sýfýrla
+							self.currentAuraVnum = 0
+			except Exception, e:
+				dbg.TraceError("__ModelPreview error: %s" % str(e))
+
+		def __ModelPreviewClose(self):
+			if self.ModelPreviewBoard:
+				self.ModelPreviewBoard.Hide()
+				if self.ModelPreview:
+					self.ModelPreview.Hide()
+				if self.ModelPreviewText:
+					self.ModelPreviewText.Hide()
+
+				self.ModelPreviewBoard = None
+				self.ModelPreview = None
+				self.ModelPreviewText = None
+
+				if self.ModelPreviewRenderIndex is not None and self.ModelPreviewRenderIndex >= 0:
+					try:
+						# Aura'yý temizle (çift aura görünmesini önlemek için)
+						renderTarget.SetAura(self.ModelPreviewRenderIndex, 0)
+						self.currentAuraVnum = 0
+						renderTarget.SetVisibility(self.ModelPreviewRenderIndex, False)
+					except:
+						pass  # Render target hatasý durumunda sessizce devam et
+
+		if app.ENABLE_CHANGE_LOOK_SYSTEM:
+			def GetItemVnumLook(self, window_type, slotIndex, itemVnum):
+				funcs = {
+					player.INVENTORY : player.GetChangeLookVnum,
+					player.SAFEBOX : safebox.GetItemChangeLookVnum,
+					player.MALL : safebox.GetMallItemChangeLookVnum,
+					player.GUILDBANK : guildbank.GetItemChangeLookVnum,
+				}
+				if window_type in funcs:
+					xtrans = funcs[window_type](slotIndex)
+					if xtrans:
+						return xtrans
+
+				return itemVnum
+
+	## If the size is large, adjust the tooltip size.
+	if app.ENABLE_GEM_BAG_ANTI_SELL_TOOLTIP:
+		def __AppendGemBagItemDescription(self, itemVnum, metinSlot, attrSlot):
+			if metinSlot[2] > 0:
+				if itemVnum == item.ITEM_VNUM_GEM_BAG_REWARD:
+					desc = localeInfo.ITEM_TOOLTIP_DESC_GEM_BAG_REWARD_HAVE_GEM % (metinSlot[2], metinSlot[2])
+				else:
+					desc = localeInfo.ITEM_TOOLTIP_DESC_GEM_BAG_HAVE_GEM % (metinSlot[2], metinSlot[2])
+
+				self.__AdjustMaxWidth(attrSlot, desc)
+				self.__SetItemTitle(itemVnum, metinSlot, attrSlot)
+				self.AppendDescription(desc, 26)
+			else:
+				if shop.IsOpen() and not shop.IsPrivateShop():
+					if not item.GetAntiSell():
+						self.AppendSellingPrice(player.GetISellItemPrice(itemVnum))
+
+	def __AdjustMaxWidth(self, attrSlot, desc):
+		newToolTipWidth = self.toolTipWidth
+		newToolTipWidth = max(self.__AdjustAttrMaxWidth(attrSlot), newToolTipWidth)
+		newToolTipWidth = max(self.__AdjustDescMaxWidth(desc), newToolTipWidth)
+
+		if newToolTipWidth > self.toolTipWidth:
+			self.toolTipWidth = newToolTipWidth
+			self.ResizeToolTip()
+
+	def __AdjustAttrMaxWidth(self, attrSlot):
+		if 0 == attrSlot:
+			return self.toolTipWidth
+
+		maxWidth = self.toolTipWidth
+		for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+			type = attrSlot[i][0]
+			value = attrSlot[i][1]
+
+			attrText = self.AppendTextLine(self.__GetAffectString(type, value))
+			(tW, _) = attrText.GetTextSize()
+			self.childrenList.remove(attrText)
+			self.toolTipHeight -= self.TEXT_LINE_HEIGHT
+
+			maxWidth = max(tW + 12, maxWidth)
+
+		return maxWidth
+
+	def __AdjustDescMaxWidth(self, desc):
+		if len(desc) < DESC_DEFAULT_MAX_COLS:
+			return self.toolTipWidth
+
+		return DESC_WESTERN_MAX_WIDTH
+
+	def __SetSkillBookToolTip(self, skillIndex, bookName, skillGrade):
+		if skillIndex == 0 or skillIndex is None:
+			return
+		
+		try:
+			skillName = skill.GetSkillName(skillIndex)
+		except:
+			return
+
+		if not skillName:
+			return
+
+		itemName = skillName + " " + bookName
+		self.SetTitle(itemName)
+
+	def __AppendPickInformation(self, curLevel, curEXP, maxEXP):
+		self.AppendSpace(5)
+		self.AppendTextLine(localeInfo.TOOLTIP_PICK_LEVEL % (curLevel), self.NORMAL_COLOR)
+		self.AppendTextLine(localeInfo.TOOLTIP_PICK_EXP % (curEXP, maxEXP), self.NORMAL_COLOR)
+
+		if curEXP == maxEXP:
+			self.AppendSpace(5)
+			self.AppendTextLine(localeInfo.TOOLTIP_PICK_UPGRADE1, self.NORMAL_COLOR)
+			self.AppendTextLine(localeInfo.TOOLTIP_PICK_UPGRADE2, self.NORMAL_COLOR)
+			self.AppendTextLine(localeInfo.TOOLTIP_PICK_UPGRADE3, self.NORMAL_COLOR)
+
+	def __AppendRodInformation(self, curLevel, curEXP, maxEXP):
+		self.AppendSpace(5)
+		self.AppendTextLine(localeInfo.TOOLTIP_FISHINGROD_LEVEL % (curLevel), self.NORMAL_COLOR)
+		self.AppendTextLine(localeInfo.TOOLTIP_FISHINGROD_EXP % (curEXP, maxEXP), self.NORMAL_COLOR)
+
+		if curEXP == maxEXP:
+			self.AppendSpace(5)
+			self.AppendTextLine(localeInfo.TOOLTIP_FISHINGROD_UPGRADE1, self.NORMAL_COLOR)
+			self.AppendTextLine(localeInfo.TOOLTIP_FISHINGROD_UPGRADE2, self.NORMAL_COLOR)
+			self.AppendTextLine(localeInfo.TOOLTIP_FISHINGROD_UPGRADE3, self.NORMAL_COLOR)
+
+	def __AppendOreIcon(self, materialVnum):
+		itemImage = ui.ImageBox()
+		itemImage.SetParent(self)
+		itemImage.LoadImage("icon/item/%d.tga" % materialVnum)
+		itemImage.Show()
+
+		imageWidth = itemImage.GetWidth()
+		indentX = (self.toolTipWidth - imageWidth) / 2
+
+		itemImage.SetPosition(indentX, self.toolTipHeight)
+
+		self.toolTipHeight += itemImage.GetHeight()
+		self.childrenList.append(itemImage)
+		self.ResizeToolTip()
+
+	def __AppendLimitInformation(self):
+		if app.ENABLE_ATTENDANCE_EVENT:
+			if self.isAttendanceRewardItem:
+				return
+
+		appendSpace = FALSE
+
+		for i in xrange(item.LIMIT_MAX_NUM):
+
+			(limitType, limitValue) = item.GetLimit(i)
+
+			if limitValue > 0:
+				if FALSE == appendSpace:
+					self.AppendSpace(5)
+					appendSpace = TRUE
+
+			else:
+				continue
+
+			if item.LIMIT_LEVEL == limitType:
+				color = self.GetLimitTextLineColor(player.GetStatus(player.LEVEL), limitValue)
+				self.AppendTextLine(localeInfo.TOOLTIP_ITEM_LIMIT_LEVEL % (limitValue), color)
+
+	def __GetAffectString(self, affectType, affectValue):
+		if 0 == affectType or affectType in (item.APPLY_RANDOM, item.APPLY_MOUNT):
+			return None
+
+		if 0 == affectValue:
+			return None
+
+		try:
+			return self.AFFECT_DICT[affectType](affectValue)
+		except TypeError:
+			return "UNKNOWN_VALUE[%s] %s" % (affectType, affectValue)
+		except KeyError:
+			return "UNKNOWN_TYPE[%s] %s" % (affectType, affectValue)
+
+	def __AppendAffectInformation(self):
+		for i in xrange(item.ITEM_APPLY_MAX_NUM):
+			(affectType, affectValue) = item.GetAffect(i)
+			if affectType in (item.APPLY_RANDOM, item.APPLY_MOUNT):
+				continue
+			if app.ENABLE_ACCE_COSTUME_SYSTEM and affectType == item.APPLY_ACCEDRAIN_RATE:
+				continue
+			affectString = self.__GetAffectString(affectType, affectValue)
+			if affectString:
+				self.AppendTextLine(affectString, self.GetChangeTextLineColor(affectValue))
+
+	if app.ENABLE_CHANGE_LOOK_SYSTEM:
+		def AppendChangeLookInformation(self,window_type, slotIndex):
+			if window_type == player.SAFEBOX:
+				changelookvnum = safebox.GetItemChangeLookVnum(slotIndex)
+			elif window_type == player.MALL:
+				changelookvnum = safebox.GetMallItemChangeLookVnum(slotIndex)
+			else:
+				changelookvnum = player.GetChangeLookVnum(window_type, slotIndex)
+
+			if not changelookvnum == 0:
+				self.AppendSpace(5)
+				self.AppendTextLine("[ " + localeInfo.CHANGE_LOOK_TITLE+" ]", self.CHANGELOOK_TITLE_COLOR)
+				itemName = item.GetItemNameByVnum(changelookvnum)
+
+				if item.GetItemType() == item.ITEM_TYPE_COSTUME:
+					if item.GetItemSubType() == item.COSTUME_TYPE_BODY:
+						malefemale = ""
+						if item.IsAntiFlag(item.ITEM_ANTIFLAG_MALE):
+							malefemale = localeInfo.FOR_FEMALE
+
+						if item.IsAntiFlag(item.ITEM_ANTIFLAG_FEMALE):
+							malefemale = localeInfo.FOR_MALE
+						itemName += " ( " + malefemale +  " )"
+
+				textLine = self.AppendTextLine(itemName, self.CHANGELOOK_ITEMNAME_COLOR, TRUE)
+				textLine.SetFeather()
+
+	def AppendWearableInformation(self):
+		self.AppendSpace(5)
+		self.AppendTextLine(localeInfo.TOOLTIP_ITEM_WEARABLE_JOB, self.NORMAL_COLOR)
+
+		flagList = (
+			not item.IsAntiFlag(item.ITEM_ANTIFLAG_WARRIOR),
+			not item.IsAntiFlag(item.ITEM_ANTIFLAG_ASSASSIN),
+			not item.IsAntiFlag(item.ITEM_ANTIFLAG_SURA),
+			not item.IsAntiFlag(item.ITEM_ANTIFLAG_SHAMAN))
+
+		characterNames = ""
+		for i in xrange(self.CHARACTER_COUNT):
+			name = self.CHARACTER_NAMES[i]
+			flag = flagList[i]
+
+			if flag:
+				characterNames += " "
+				characterNames += name
+
+		textLine = self.AppendTextLine(characterNames, self.NORMAL_COLOR, TRUE)
+		textLine.SetFeather()
+
+		if item.IsAntiFlag(item.ITEM_ANTIFLAG_MALE):
+			textLine = self.AppendTextLine(localeInfo.FOR_FEMALE, self.NORMAL_COLOR, TRUE)
+			textLine.SetFeather()
+
+		if item.IsAntiFlag(item.ITEM_ANTIFLAG_FEMALE):
+			textLine = self.AppendTextLine(localeInfo.FOR_MALE, self.NORMAL_COLOR, TRUE)
+			textLine.SetFeather()
+
+	def AppendAntiFlagInformation(self):
+		antiFlagDict = {
+			localeInfo.TOOLTIP_ANTIDROP: item.IsAntiFlag(item.ITEM_ANTIFLAG_DROP),
+			localeInfo.TOOLTIP_ANTISELL: item.IsAntiFlag(item.ITEM_ANTIFLAG_SELL),
+			localeInfo.TOOLTIP_ANTIGIVE: item.IsAntiFlag(item.ITEM_ANTIFLAG_GIVE),
+			localeInfo.TOOLTIP_ANTIPKDROP: item.IsAntiFlag(item.ITEM_ANTIFLAG_PKDROP),
+			localeInfo.TOOLTIP_ANTISTACK: item.IsAntiFlag(item.ITEM_ANTIFLAG_STACK),
+			localeInfo.TOOLTIP_ANTISHOP: item.IsAntiFlag(item.ITEM_ANTIFLAG_MYSHOP),
+			localeInfo.TOOLTIP_ANTISAFEBOX: item.IsAntiFlag(item.ITEM_ANTIFLAG_SAFEBOX),
+			localeInfo.TOOLTIP_ANTIDESTROY: item.IsAntiFlag(item.ITEM_ANTIFLAG_DESTROY),
+		}
+
+		antiFlagNames = [name for name, flag in antiFlagDict.iteritems() if flag]
+		if antiFlagNames:
+			self.AppendSpace(5)
+			textLine = self.AppendTextLine('{} {}'.format(', '.join(antiFlagNames), ""), self.NORMAL_COLOR)
+			textLine.SetFeather()
+
+	def __AppendPotionInformation(self):
+		self.AppendSpace(5)
+
+		healHP = item.GetValue(0)
+		healSP = item.GetValue(1)
+		healStatus = item.GetValue(2)
+		healPercentageHP = item.GetValue(3)
+		healPercentageSP = item.GetValue(4)
+
+		if healHP > 0:
+			self.AppendTextLine(localeInfo.TOOLTIP_POTION_PLUS_HP_POINT % healHP, self.GetChangeTextLineColor(healHP))
+		if healSP > 0:
+			self.AppendTextLine(localeInfo.TOOLTIP_POTION_PLUS_SP_POINT % healSP, self.GetChangeTextLineColor(healSP))
+		if healStatus != 0:
+			self.AppendTextLine(localeInfo.TOOLTIP_POTION_CURE)
+		if healPercentageHP > 0:
+			self.AppendTextLine(localeInfo.TOOLTIP_POTION_PLUS_HP_PERCENT % healPercentageHP, self.GetChangeTextLineColor(healPercentageHP))
+		if healPercentageSP > 0:
+			self.AppendTextLine(localeInfo.TOOLTIP_POTION_PLUS_SP_PERCENT % healPercentageSP, self.GetChangeTextLineColor(healPercentageSP))
+
+	def __AppendAbilityPotionInformation(self):
+		self.AppendSpace(5)
+
+		abilityType = item.GetValue(0)
+		time = item.GetValue(1)
+		point = item.GetValue(2)
+
+		if abilityType == item.APPLY_ATT_SPEED:
+			self.AppendTextLine(localeInfo.TOOLTIP_POTION_PLUS_ATTACK_SPEED % point, self.GetChangeTextLineColor(point))
+		elif abilityType == item.APPLY_MOV_SPEED:
+			self.AppendTextLine(localeInfo.TOOLTIP_POTION_PLUS_MOVING_SPEED % point, self.GetChangeTextLineColor(point))
+
+		if time > 0:
+			minute = (time / 60)
+			second = (time % 60)
+			timeString = localeInfo.TOOLTIP_POTION_TIME
+
+			if minute > 0:
+				timeString += str(minute) + localeInfo.TOOLTIP_POTION_MIN
+			if second > 0:
+				timeString += " " + str(second) + localeInfo.TOOLTIP_POTION_SEC
+
+			self.AppendTextLine(timeString)
+
+	def GetPriceColor(self, price):
+		if price >= constInfo.HIGH_PRICE:
+			return self.HIGH_PRICE_COLOR
+		if price >= constInfo.MIDDLE_PRICE:
+			return self.MIDDLE_PRICE_COLOR
+		else:
+			return self.LOW_PRICE_COLOR
+
+	def AppendPrice(self, price):
+		self.AppendSpace(5)
+		if price < 1:
+			self.AppendTextLine(localeInfo.TOOLTIP_NO_BUYPRICE, self.POSITIVE_COLOR)
+		else:
+			self.AppendTextLine(localeInfo.TOOLTIP_BUYPRICE  % (localeInfo.NumberToMoneyString(price)), self.GetPriceColor(price))
+
+	def AppendPriceBySecondaryCoin(self, price):
+		self.AppendSpace(5)
+		self.AppendTextLine(localeInfo.TOOLTIP_BUYPRICE  % (localeInfo.NumberToSecondaryCoinString(price)), self.GetPriceColor(price))
+
+	def AppendMetinInformation(self):
+		affectType, affectValue = item.GetAffect(0)
+		affectString = self.__GetAffectString(affectType, affectValue)
+
+		if affectString:
+			self.AppendSpace(5)
+			self.AppendTextLine(affectString, self.GetChangeTextLineColor(affectValue))
+
+	def AppendMetinWearInformation(self):
+		self.AppendSpace(5)
+		self.AppendTextLine(localeInfo.TOOLTIP_SOCKET_REFINABLE_ITEM, self.NORMAL_COLOR)
+
+		flagList = (item.IsWearableFlag(item.WEARABLE_BODY),
+					item.IsWearableFlag(item.WEARABLE_HEAD),
+					item.IsWearableFlag(item.WEARABLE_FOOTS),
+					item.IsWearableFlag(item.WEARABLE_WRIST),
+					item.IsWearableFlag(item.WEARABLE_WEAPON),
+					item.IsWearableFlag(item.WEARABLE_NECK),
+					item.IsWearableFlag(item.WEARABLE_EAR),
+					item.IsWearableFlag(item.WEARABLE_UNIQUE),
+					item.IsWearableFlag(item.WEARABLE_SHIELD),
+					item.IsWearableFlag(item.WEARABLE_ARROW))
+
+		wearNames = ""
+		for i in xrange(self.WEAR_COUNT):
+
+			name = self.WEAR_NAMES[i]
+			flag = flagList[i]
+
+			if flag:
+				wearNames += "  "
+				wearNames += name
+
+		textLine = ui.TextLine()
+		textLine.SetParent(self)
+		textLine.SetFontName(self.defFontName)
+		textLine.SetPosition(self.toolTipWidth/2, self.toolTipHeight)
+		textLine.SetHorizontalAlignCenter()
+		textLine.SetPackedFontColor(self.NORMAL_COLOR)
+		textLine.SetText(wearNames)
+		textLine.Show()
+		self.childrenList.append(textLine)
+
+		self.toolTipHeight += self.TEXT_LINE_HEIGHT
+		self.ResizeToolTip()
+
+	def GetMetinSocketType(self, number):
+		if player.METIN_SOCKET_TYPE_NONE == number:
+			return player.METIN_SOCKET_TYPE_NONE
+		elif player.METIN_SOCKET_TYPE_SILVER == number:
+			return player.METIN_SOCKET_TYPE_SILVER
+		elif player.METIN_SOCKET_TYPE_GOLD == number:
+			return player.METIN_SOCKET_TYPE_GOLD
+		else:
+			item.SelectItem(number)
+			if item.METIN_NORMAL == item.GetItemSubType():
+				return player.METIN_SOCKET_TYPE_SILVER
+			elif item.METIN_GOLD == item.GetItemSubType():
+				return player.METIN_SOCKET_TYPE_GOLD
+			elif "USE_PUT_INTO_ACCESSORY_SOCKET" == item.GetUseType(number):
+				return player.METIN_SOCKET_TYPE_SILVER
+			elif "USE_PUT_INTO_RING_SOCKET" == item.GetUseType(number):
+				return player.METIN_SOCKET_TYPE_SILVER
+			elif "USE_PUT_INTO_BELT_SOCKET" == item.GetUseType(number):
+				return player.METIN_SOCKET_TYPE_SILVER
+
+		return player.METIN_SOCKET_TYPE_NONE
+
+	def GetMetinItemIndex(self, number):
+		if player.METIN_SOCKET_TYPE_SILVER == number:
+			return 0
+		if player.METIN_SOCKET_TYPE_GOLD == number:
+			return 0
+
+		return number
+
+	def __AppendAccessoryMetinSlotInfo(self, metinSlot, mtrlVnum):
+		ACCESSORY_SOCKET_MAX_SIZE = 3
+
+		cur = min(metinSlot[0], ACCESSORY_SOCKET_MAX_SIZE)
+		end = min(metinSlot[1], ACCESSORY_SOCKET_MAX_SIZE)
+
+		affectType1, affectValue1 = item.GetAffect(0)
+		affectList1 = [0, max(1, affectValue1 * 10 / 100), max(2, affectValue1 * 20 / 100), max(3, affectValue1 * 40 / 100)]
+
+		affectType2, affectValue2 = item.GetAffect(1)
+		affectList2 = [0, max(1, affectValue2 * 10 / 100), max(2, affectValue2 * 20 / 100), max(3, affectValue2 * 40 / 100)]
+
+		mtrlPos = 0
+		mtrlList = [mtrlVnum] * cur + [player.METIN_SOCKET_TYPE_SILVER] * (end - cur)
+		for mtrl in mtrlList:
+			affectString1 = self.__GetAffectString(affectType1, affectList1[mtrlPos + 1] - affectList1[mtrlPos])
+			affectString2 = self.__GetAffectString(affectType2, affectList2[mtrlPos + 1] - affectList2[mtrlPos])
+
+			leftTime = 0
+			if cur == mtrlPos + 1:
+				leftTime = metinSlot[2]
+
+			self.__AppendMetinSlotInfo_AppendMetinSocketData(mtrlPos, mtrl, affectString1, affectString2, leftTime)
+			mtrlPos += 1
+
+	def __AppendMetinSlotInfo(self, metinSlot):
+		if self.__AppendMetinSlotInfo_IsEmptySlotList(metinSlot):
+			return
+
+		for i in xrange(player.METIN_SOCKET_MAX_NUM):
+			self.__AppendMetinSlotInfo_AppendMetinSocketData(i, metinSlot[i])
+
+	def __AppendMetinSlotInfo_IsEmptySlotList(self, metinSlot):
+		if 0 == metinSlot:
+			return 1
+
+		for i in xrange(player.METIN_SOCKET_MAX_NUM):
+			metinSlotData = metinSlot[i]
+			if 0 != self.GetMetinSocketType(metinSlotData):
+				if 0 != self.GetMetinItemIndex(metinSlotData):
+					return 0
+
+		return 1
+
+	def __AppendMetinSlotInfo_AppendMetinSocketData(self, index, metinSlotData, custumAffectString="", custumAffectString2="", leftTime=0):
+
+		slotType = self.GetMetinSocketType(metinSlotData)
+		itemIndex = self.GetMetinItemIndex(metinSlotData)
+
+		if 0 == slotType:
+			return
+
+		self.AppendSpace(5)
+
+		slotImage = ui.ImageBox()
+		slotImage.SetParent(self)
+		slotImage.Show()
+
+		## Name
+		nameTextLine = ui.TextLine()
+		nameTextLine.SetParent(self)
+		nameTextLine.SetFontName(self.defFontName)
+		nameTextLine.SetPackedFontColor(self.NORMAL_COLOR)
+		nameTextLine.SetOutline()
+		nameTextLine.SetFeather()
+		nameTextLine.Show()
+
+		self.childrenList.append(nameTextLine)
+
+		if player.METIN_SOCKET_TYPE_SILVER == slotType:
+			slotImage.LoadImage("d:/ymir work/ui/game/windows/metin_slot_silver.sub")
+		elif player.METIN_SOCKET_TYPE_GOLD == slotType:
+			slotImage.LoadImage("d:/ymir work/ui/game/windows/metin_slot_gold.sub")
+
+		self.childrenList.append(slotImage)
+
+		if localeInfo.IsARABIC():
+			slotImage.SetPosition(self.toolTipWidth - slotImage.GetWidth() - 9, self.toolTipHeight-1)
+			nameTextLine.SetPosition(self.toolTipWidth - 50, self.toolTipHeight + 2)
+		else:
+			slotImage.SetPosition(9, self.toolTipHeight-1)
+			nameTextLine.SetPosition(50, self.toolTipHeight + 2)
+
+		metinImage = ui.ImageBox()
+		metinImage.SetParent(self)
+		metinImage.Show()
+		self.childrenList.append(metinImage)
+
+		if itemIndex:
+			item.SelectItem(itemIndex)
+
+			## Image
+			try:
+				metinImage.LoadImage(item.GetIconImageFileName())
+			except:
+				dbg.TraceError("ItemToolTip.__AppendMetinSocketData() - Failed to find image file %d:%s" % 
+					(itemIndex, item.GetIconImageFileName())
+				)
+
+			nameTextLine.SetText(item.GetItemName())
+
+			## Affect
+			affectTextLine = ui.TextLine()
+			affectTextLine.SetParent(self)
+			affectTextLine.SetFontName(self.defFontName)
+			affectTextLine.SetPackedFontColor(self.POSITIVE_COLOR)
+			affectTextLine.SetOutline()
+			affectTextLine.SetFeather()
+			affectTextLine.Show()
+
+			if localeInfo.IsARABIC():
+				metinImage.SetPosition(self.toolTipWidth - metinImage.GetWidth() - 10, self.toolTipHeight)
+				affectTextLine.SetPosition(self.toolTipWidth - 50, self.toolTipHeight + 16 + 2)
+			else:
+				metinImage.SetPosition(10, self.toolTipHeight)
+				affectTextLine.SetPosition(50, self.toolTipHeight + 16 + 2)
+
+			if custumAffectString:
+				affectTextLine.SetText(custumAffectString)
+			elif itemIndex != constInfo.ERROR_METIN_STONE:
+				affectType, affectValue = item.GetAffect(0)
+				affectString = self.__GetAffectString(affectType, affectValue)
+				if affectString:
+					affectTextLine.SetText(affectString)
+			else:
+				affectTextLine.SetText(localeInfo.TOOLTIP_APPLY_NOAFFECT)
+
+			self.childrenList.append(affectTextLine)
+
+			if custumAffectString2:
+				affectTextLine = ui.TextLine()
+				affectTextLine.SetParent(self)
+				affectTextLine.SetFontName(self.defFontName)
+				affectTextLine.SetPackedFontColor(self.POSITIVE_COLOR)
+				affectTextLine.SetPosition(50, self.toolTipHeight + 16 + 2 + 16 + 2)
+				affectTextLine.SetOutline()
+				affectTextLine.SetFeather()
+				affectTextLine.Show()
+				affectTextLine.SetText(custumAffectString2)
+				self.childrenList.append(affectTextLine)
+				self.toolTipHeight += 16 + 2
+
+			if 0 != leftTime:
+				timeText = (localeInfo.LEFT_TIME + " : " + localeInfo.RTSecondToDHMS(leftTime))
+				timeTextLine = ui.TextLine()
+				timeTextLine.SetParent(self)
+				timeTextLine.SetFontName(self.defFontName)
+				timeTextLine.SetPackedFontColor(self.POSITIVE_COLOR)
+				timeTextLine.SetPosition(50, self.toolTipHeight + 16 + 2 + 16 + 2)
+				timeTextLine.SetOutline()
+				timeTextLine.SetFeather()
+				timeTextLine.Show()
+				timeTextLine.SetText(timeText)
+				self.childrenList.append(timeTextLine)
+				self.toolTipHeight += 16 + 2
+
+		else:
+			nameTextLine.SetText(localeInfo.TOOLTIP_SOCKET_EMPTY)
+
+		self.toolTipHeight += 35
+		self.ResizeToolTip()
+
+	def __AppendFishInfo(self, size):
+		if size > 0:
+			self.AppendSpace(5)
+			self.AppendTextLine(localeInfo.TOOLTIP_FISH_LEN % (float(size) / 100.0), self.NORMAL_COLOR)
+
+	def AppendUniqueItemLastTime(self, restMin):
+		if app.ENABLE_ATTENDANCE_EVENT:
+			if self.isAttendanceRewardItem:
+				return
+		if restMin > 0:
+			restSecond = restMin*60
+			self.AppendSpace(5)
+			self.AppendTextLine(localeInfo.LEFT_TIME + " : " + localeInfo.RTSecondToDHMS(restSecond), self.NORMAL_COLOR)
+
+	def AppendMallItemLastTime(self, endTime, getLimit):
+		if app.ENABLE_ATTENDANCE_EVENT:
+			if self.isAttendanceRewardItem:
+				return
+		if endTime > 0:
+			leftSec = max(0, endTime - app.GetGlobalTimeStamp())
+			self.AppendSpace(5)
+			self.AppendTextLineTime(endTime, getLimit)
+
+	def AppendTextLineTime(self, endTime, getLimit, color = FONT_COLOR):
+		leftSec = max(0, endTime - app.GetGlobalTimeStamp())
+
+		timeTextLine = ui.TextLine()
+		timeTextLine.SetParent(self)
+		timeTextLine.SetFontName(self.defFontName)
+		timeTextLine.SetPackedFontColor(color)
+
+		if not self.isShopItem:
+			timeTextLine.SetText(localeInfo.LEFT_TIME + ": " + localeInfo.RTSecondToDHMS(leftSec))
+
+		timeTextLine.SetOutline()
+		timeTextLine.SetFeather(FALSE)
+		timeTextLine.SetPosition(self.toolTipWidth/2, self.toolTipHeight)
+		timeTextLine.SetHorizontalAlignCenter()
+		timeTextLine.Show()
+
+		self.timeInfoList.append({ "line" : timeTextLine, "value" : endTime, "limit" : getLimit })
+
+		self.toolTipHeight += self.TEXT_LINE_HEIGHT
+		self.ResizeToolTip()
+
+		return timeTextLine
+
+	def AppendTimerBasedOnWearLastTime(self, metinSlot, getLimit):
+		if app.ENABLE_ATTENDANCE_EVENT:
+			if self.isAttendanceRewardItem:
+				return
+		# metinSlot bir int ise veya None ise, kontrol et
+		if not metinSlot or not isinstance(metinSlot, (list, tuple)):
+			return
+		
+		try:
+			if 0 == metinSlot[0]:
+				self.AppendSpace(5)
+				self.AppendTextLine(localeInfo.CANNOT_USE, self.DISABLE_COLOR)
+				return
+			else:
+				endTime = app.GetGlobalTimeStamp() + metinSlot[0]
+				self.AppendMallItemLastTime(endTime, getLimit)
+		except (IndexError, TypeError):
+			return
+
+	def AppendRealTimeStartFirstUseLastTime(self, item, metinSlot, limitIndex, getLimit):
+		if app.ENABLE_ATTENDANCE_EVENT:
+			if self.isAttendanceRewardItem:
+				return
+		# metinSlot bir int ise veya None ise, boþ tuple kullan
+		if not metinSlot or not isinstance(metinSlot, (list, tuple)):
+			useCount = 0
+			endTime = 0
+		else:
+			try:
+				useCount = metinSlot[1]
+				endTime = metinSlot[0]
+			except (IndexError, TypeError):
+				useCount = 0
+				endTime = 0
+
+		if 0 == useCount:
+			if 0 == endTime:
+				(limitType, limitValue) = item.GetLimit(limitIndex)
+				endTime = limitValue
+
+				self.AppendUniqueItemLastTime(endTime / 60)
+				return
+
+			endTime += app.GetGlobalTimeStamp()
+
+		self.AppendMallItemLastTime(endTime, getLimit)
+
+	if app.ENABLE_ACCE_COSTUME_SYSTEM:
+		def SetAcceResultItem(self, slotIndex, window_type = player.INVENTORY):
+			(itemVnum, MinAbs, MaxAbs) = acce.GetResultItem()
+			if not itemVnum:
+				return
+
+			self.ClearToolTip()
+
+			metinSlot = [player.GetItemMetinSocket(window_type, slotIndex, i) for i in xrange(player.METIN_SOCKET_MAX_NUM)]
+			attrSlot = [player.GetItemAttribute(window_type, slotIndex, i) for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM)]
+
+			item.SelectItem(itemVnum)
+			itemType = item.GetItemType()
+			itemSubType = item.GetItemSubType()
+			if itemType != item.ITEM_TYPE_COSTUME and itemSubType != item.COSTUME_TYPE_ACCE:
+				return
+
+			absChance = MaxAbs
+			itemDesc = item.GetItemDescription()
+			self.__AdjustMaxWidth(attrSlot, itemDesc)
+			self.__SetItemTitle(itemVnum, metinSlot, attrSlot)
+			self.AppendDescription(itemDesc, DESC_DEFAULT_MAX_COLS)
+			self.AppendDescription(item.GetItemSummary(), DESC_DEFAULT_MAX_COLS, self.CONDITION_COLOR)
+			self.__AppendLimitInformation()
+
+			## ABSORPTION RATE
+			if MinAbs == MaxAbs:
+				self.AppendTextLine(localeInfo.ACCE_ABSORB_CHANCE % (MinAbs), self.CONDITION_COLOR)
+			else:
+				self.AppendTextLine(localeInfo.ACCE_ABSORB_CHANCE2 % (MinAbs, MaxAbs), self.CONDITION_COLOR)
+			## END ABSOPRTION RATE
+
+			itemAbsorbedVnum = int(metinSlot[acce.ABSORBED_SOCKET])
+			if itemAbsorbedVnum:
+				## ATTACK / DEFENCE
+				item.SelectItem(itemAbsorbedVnum)
+				if item.GetItemType() == item.ITEM_TYPE_WEAPON:
+					if item.GetItemSubType() == item.WEAPON_FAN:
+						self.__AppendMagicAttackInfo(absChance)
+						item.SelectItem(itemAbsorbedVnum)
+						self.__AppendAttackPowerInfo(absChance)
+					else:
+						self.__AppendAttackPowerInfo(absChance)
+						item.SelectItem(itemAbsorbedVnum)
+						self.__AppendMagicAttackInfo(absChance)
+				elif item.GetItemType() == item.ITEM_TYPE_ARMOR:
+					defGrade = item.GetValue(1)
+					defBonus = item.GetValue(5) * 2
+					defGrade = self.CalcAcceValue(defGrade, absChance)
+					defBonus = self.CalcAcceValue(defBonus, absChance)
+
+					if defGrade > 0:
+						self.AppendSpace(5)
+						self.AppendTextLine(localeInfo.TOOLTIP_ITEM_DEF_GRADE % (defGrade + defBonus), self.GetChangeTextLineColor(defGrade))
+
+					item.SelectItem(itemAbsorbedVnum)
+					self.__AppendMagicDefenceInfo(absChance)
+				## END ATTACK / DEFENCE
+
+				## EFFECT
+				item.SelectItem(itemAbsorbedVnum)
+				for i in xrange(item.ITEM_APPLY_MAX_NUM):
+					(affectType, affectValue) = item.GetAffect(i)
+					if affectType in (item.APPLY_RANDOM, item.APPLY_MOUNT):
+						continue
+					affectValue = self.CalcAcceValue(affectValue, absChance)
+					affectString = self.__GetAffectString(affectType, affectValue)
+
+					if affectString and affectValue > 0:
+						self.AppendTextLine(affectString, self.GetChangeTextLineColor(affectValue))
+
+					item.SelectItem(itemAbsorbedVnum)
+				# END EFFECT
+
+			item.SelectItem(itemVnum)
+			## ATTR
+			self.__AppendAttributeInformation(attrSlot, MaxAbs)
+			# END ATTR
+
+			self.AppendWearableInformation()
+			self.ShowToolTip()
+
+		def SetAcceResultAbsItem(self, slotIndex1, slotIndex2, window_type = player.INVENTORY):
+			itemVnumAcce = player.GetItemIndex(window_type, slotIndex1)
+			itemVnumTarget = player.GetItemIndex(window_type, slotIndex2)
+			if not itemVnumAcce or not itemVnumTarget:
+				return
+
+			self.ClearToolTip()
+
+			item.SelectItem(itemVnumAcce)
+			itemType = item.GetItemType()
+			itemSubType = item.GetItemSubType()
+			if itemType != item.ITEM_TYPE_COSTUME and itemSubType != item.COSTUME_TYPE_ACCE:
+				return
+
+			metinSlot = [player.GetItemMetinSocket(window_type, slotIndex1, i) for i in xrange(player.METIN_SOCKET_MAX_NUM)]
+			attrSlot = [player.GetItemAttribute(window_type, slotIndex2, i) for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM)]
+
+			itemDesc = item.GetItemDescription()
+			self.__AdjustMaxWidth(attrSlot, itemDesc)
+			self.__SetItemTitle(itemVnumAcce, metinSlot, attrSlot)
+			self.AppendDescription(itemDesc, DESC_DEFAULT_MAX_COLS)
+			self.AppendDescription(item.GetItemSummary(), DESC_DEFAULT_MAX_COLS, self.CONDITION_COLOR)
+			item.SelectItem(itemVnumAcce)
+			self.__AppendLimitInformation()
+
+			## ABSORPTION RATE
+			self.AppendTextLine(localeInfo.ACCE_ABSORB_CHANCE % (metinSlot[acce.ABSORPTION_SOCKET]), self.CONDITION_COLOR)
+			## END ABSOPRTION RATE
+
+			## ATTACK / DEFENCE
+			itemAbsorbedVnum = itemVnumTarget
+			item.SelectItem(itemAbsorbedVnum)
+			if item.GetItemType() == item.ITEM_TYPE_WEAPON:
+				if item.GetItemSubType() == item.WEAPON_FAN:
+					self.__AppendMagicAttackInfo(metinSlot[acce.ABSORPTION_SOCKET])
+					item.SelectItem(itemAbsorbedVnum)
+					self.__AppendAttackPowerInfo(metinSlot[acce.ABSORPTION_SOCKET])
+				else:
+					self.__AppendAttackPowerInfo(metinSlot[acce.ABSORPTION_SOCKET])
+					item.SelectItem(itemAbsorbedVnum)
+					self.__AppendMagicAttackInfo(metinSlot[acce.ABSORPTION_SOCKET])
+			elif item.GetItemType() == item.ITEM_TYPE_ARMOR:
+				defGrade = item.GetValue(1)
+				defBonus = item.GetValue(5) * 2
+				defGrade = self.CalcAcceValue(defGrade, metinSlot[acce.ABSORPTION_SOCKET])
+				defBonus = self.CalcAcceValue(defBonus, metinSlot[acce.ABSORPTION_SOCKET])
+
+				if defGrade > 0:
+					self.AppendSpace(5)
+					self.AppendTextLine(localeInfo.TOOLTIP_ITEM_DEF_GRADE % (defGrade + defBonus), self.GetChangeTextLineColor(defGrade))
+
+				item.SelectItem(itemAbsorbedVnum)
+				self.__AppendMagicDefenceInfo(metinSlot[acce.ABSORPTION_SOCKET])
+			## END ATTACK / DEFENCE
+
+			## EFFECT
+			item.SelectItem(itemAbsorbedVnum)
+			for i in xrange(item.ITEM_APPLY_MAX_NUM):
+				(affectType, affectValue) = item.GetAffect(i)
+				if affectType in (item.APPLY_RANDOM, item.APPLY_MOUNT):
+					continue
+				affectValue = self.CalcAcceValue(affectValue, metinSlot[acce.ABSORPTION_SOCKET])
+				affectString = self.__GetAffectString(affectType, affectValue)
+				if affectString and affectValue > 0:
+					self.AppendTextLine(affectString, self.GetChangeTextLineColor(affectValue))
+
+				item.SelectItem(itemAbsorbedVnum)
+			## END EFFECT
+
+
+			## ATTR
+			item.SelectItem(itemAbsorbedVnum)
+			for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+				type = attrSlot[i][0]
+				value = attrSlot[i][1]
+				if not value:
+					continue
+
+				affectValue = self.CalcAcceValue(value, metinSlot[acce.ABSORPTION_SOCKET])
+				affectString = self.__GetAffectString(type, affectValue)
+
+				if affectString and affectValue > 0:
+					affectColor = self.__GetAttributeColor(i, affectValue)
+					self.AppendTextLine(affectString, affectColor)
+
+				item.SelectItem(itemAbsorbedVnum)
+			## END ATTR
+
+			## WEARABLE
+			item.SelectItem(itemVnumAcce)
+			self.AppendSpace(5)
+			self.AppendTextLine(localeInfo.TOOLTIP_ITEM_WEARABLE_JOB, self.NORMAL_COLOR)
+
+			item.SelectItem(itemVnumAcce)
+			flagList = (
+						not item.IsAntiFlag(item.ITEM_ANTIFLAG_WARRIOR),
+						not item.IsAntiFlag(item.ITEM_ANTIFLAG_ASSASSIN),
+						not item.IsAntiFlag(item.ITEM_ANTIFLAG_SURA),
+						not item.IsAntiFlag(item.ITEM_ANTIFLAG_SHAMAN)
+			)
+
+			characterNames = ""
+			for i in xrange(self.CHARACTER_COUNT):
+				name = self.CHARACTER_NAMES[i]
+				flag = flagList[i]
+				if flag:
+					characterNames += " "
+					characterNames += name
+
+			textLine = self.AppendTextLine(characterNames, self.NORMAL_COLOR, TRUE)
+			textLine.SetFeather()
+
+			item.SelectItem(itemVnumAcce)
+			if item.IsAntiFlag(item.ITEM_ANTIFLAG_MALE):
+				textLine = self.AppendTextLine(localeInfo.FOR_FEMALE, self.NORMAL_COLOR, TRUE)
+				textLine.SetFeather()
+
+			if item.IsAntiFlag(item.ITEM_ANTIFLAG_FEMALE):
+				textLine = self.AppendTextLine(localeInfo.FOR_MALE, self.NORMAL_COLOR, TRUE)
+				textLine.SetFeather()
+
+			self.ShowToolTip()
+
+if app.ENABLE_EMOTICONS_SYSTEM:
+	class ToolTipBallon(ui.Ballon):
+
+		def __init__(self):
+			ui.Ballon.__init__(self, "TOP_MOST")
+			self.AddFlag("not_pick")
+			self.AddFlag("float")
+
+		def __del__(self):
+			ui.Ballon.__del__(self)
+
+		def AutoAppendTextLine(self, text):
+			self.SetText(text)
+
+		def ShowToolTip(self):
+			self.SetTop()
+			self.Show()
+			self.OnUpdate()
+
+		def HideToolTip(self):
+			self.Hide()
+
+		def OnUpdate(self):
+			x = 0
+			y = 0
+			width = self.GetWidth()
+			height = self.GetHeight()
+
+			(mouseX, mouseY) = wndMgr.GetMousePosition()
+			x = mouseX - width / 2
+			y = mouseY - height - 10
+
+			x = max(x, 0)
+			y = max(y, 0)
+			x = min(x + width / 2, wndMgr.GetScreenWidth() - width / 2) - width / 2
+			y = min(y + self.GetHeight(), wndMgr.GetScreenHeight()) - self.GetHeight()
+
+			parentWindow = self.GetParentProxy()
+			if parentWindow:
+				(gx, gy) = parentWindow.GetGlobalPosition()
+				x -= gx
+				y -= gy
+
+			self.SetPosition(x, y)
+
+class HyperlinkItemToolTip(ItemToolTip):
+	def __init__(self):
+		ItemToolTip.__init__(self, isPickable=TRUE)
+
+	def SetHyperlinkItem(self, tokens):
+		minTokenCount = 3 + player.METIN_SOCKET_MAX_NUM
+		if app.ENABLE_CHANGE_LOOK_SYSTEM:
+			minTokenCount += 1
+		maxTokenCount = minTokenCount + 2 * player.ATTRIBUTE_SLOT_MAX_NUM
+		if tokens and len(tokens) >= minTokenCount and len(tokens) <= maxTokenCount:
+			head, vnum, flag = tokens[:3]
+			itemVnum = int(vnum, 16)
+			metinSlot = [int(metin, 16) for metin in tokens[3:6]]
+
+			if app.ENABLE_CHANGE_LOOK_SYSTEM:
+				changelookvnum = int(tokens[6],16)
+				rests = tokens[7:]
+			else:
+				rests = tokens[6:]
+			if rests:
+				attrSlot = []
+
+				rests.reverse()
+				while rests:
+					key = int(rests.pop(), 16)
+					if rests:
+						val = int(rests.pop())
+						attrSlot.append((key, val))
+
+				attrSlot += [(0, 0)] * (player.ATTRIBUTE_SLOT_MAX_NUM - len(attrSlot))
+			else:
+				attrSlot = [(0, 0)] * player.ATTRIBUTE_SLOT_MAX_NUM
+
+			self.ClearToolTip()
+			self.AddItemData(itemVnum, metinSlot, attrSlot)
+			if app.ENABLE_CHANGE_LOOK_SYSTEM:
+				self.AppendChangeLookInfoItemVnum(changelookvnum)
+
+			ItemToolTip.OnUpdate(self)
+
+	if app.ENABLE_GROWTH_PET_SYSTEM:
+		def SetHyperlinkPetItem(self, tokens):
+
+			defaultTokenCount = 3 + 3
+			petTokenCount = defaultTokenCount + 11 + (player.PET_SKILL_COUNT_MAX * 2)
+
+			if tokens and len(tokens) == petTokenCount:
+
+				head, vnum, flag = tokens[:3]
+				itemVnum = int(vnum, 16)
+				metinSlot = [int(metin, 16) for metin in tokens[3:6]]
+
+				attrSlot = [(0, 0)] * player.ATTRIBUTE_SLOT_MAX_NUM
+
+				print(itemVnum)
+				print(metinSlot)
+				print(tokens[6:])
+
+				self.ClearToolTip()
+				self.AddHyperLinkPetItemData(itemVnum, metinSlot, attrSlot, tokens[6:])
+				ItemToolTip.OnUpdate(self)
+
+	def OnUpdate(self):
+		pass
+
+	def OnMouseLeftButtonDown(self):
+		self.Hide()
+
+class SkillToolTip(ToolTip):
+	POINT_NAME_DICT = {
+		player.LEVEL : localeInfo.SKILL_TOOLTIP_LEVEL,
+		player.IQ : localeInfo.SKILL_TOOLTIP_INT,
+	}
+
+	SKILL_TOOL_TIP_WIDTH = 200
+	PARTY_SKILL_TOOL_TIP_WIDTH = 340
+
+	PARTY_SKILL_EXPERIENCE_AFFECT_LIST = (
+		( 2, 2, 10,),
+		( 8, 3, 20,),
+		(14, 4, 30,),
+		(22, 5, 45,),
+		(28, 6, 60,),
+		(34, 7, 80,),
+		(38, 8, 100,),
+	)
+
+	PARTY_SKILL_PLUS_GRADE_AFFECT_LIST = (
+		( 4, 2, 1, 0,),
+		(10, 3, 2, 0,),
+		(16, 4, 2, 1,),
+		(24, 5, 2, 2,),
+	)
+
+	PARTY_SKILL_ATTACKER_AFFECT_LIST = (
+		( 36, 3, ),
+		( 26, 1, ),
+		( 32, 2, ),
+	)
+
+	SKILL_GRADE_NAME = {
+		player.SKILL_GRADE_MASTER : localeInfo.SKILL_GRADE_NAME_MASTER,
+		player.SKILL_GRADE_GRAND_MASTER : localeInfo.SKILL_GRADE_NAME_GRAND_MASTER,
+		player.SKILL_GRADE_PERFECT_MASTER : localeInfo.SKILL_GRADE_NAME_PERFECT_MASTER,
+	}
+
+	AFFECT_NAME_DICT = {
+		"HP" : localeInfo.TOOLTIP_SKILL_AFFECT_ATT_POWER,
+		"ATT_GRADE" : localeInfo.TOOLTIP_SKILL_AFFECT_ATT_GRADE,
+		"DEF_GRADE" : localeInfo.TOOLTIP_SKILL_AFFECT_DEF_GRADE,
+		"ATT_SPEED" : localeInfo.TOOLTIP_SKILL_AFFECT_ATT_SPEED,
+		"MOV_SPEED" : localeInfo.TOOLTIP_SKILL_AFFECT_MOV_SPEED,
+		"DODGE" : localeInfo.TOOLTIP_SKILL_AFFECT_DODGE,
+		"RESIST_NORMAL" : localeInfo.TOOLTIP_SKILL_AFFECT_RESIST_NORMAL,
+		"REFLECT_MELEE" : localeInfo.TOOLTIP_SKILL_AFFECT_REFLECT_MELEE,
+	}
+
+	AFFECT_APPEND_TEXT_DICT = {
+		"DODGE" : "%",
+		"RESIST_NORMAL" : "%",
+		"REFLECT_MELEE" : "%",
+	}
+
+	def __init__(self):
+		ToolTip.__init__(self, self.SKILL_TOOL_TIP_WIDTH)
+	def __del__(self):
+		ToolTip.__del__(self)
+
+	def SetSkill(self, skillIndex, skillLevel = -1):
+		if 0 == skillIndex:
+			return
+
+		if skill.SKILL_TYPE_GUILD == skill.GetSkillType(skillIndex):
+			if self.SKILL_TOOL_TIP_WIDTH != self.toolTipWidth:
+				self.toolTipWidth = self.SKILL_TOOL_TIP_WIDTH
+				self.ResizeToolTip()
+
+			self.AppendDefaultData(skillIndex)
+			self.AppendSkillConditionData(skillIndex)
+			self.AppendGuildSkillData(skillIndex, skillLevel)
+
+		else:
+			if self.SKILL_TOOL_TIP_WIDTH != self.toolTipWidth:
+				self.toolTipWidth = self.SKILL_TOOL_TIP_WIDTH
+				self.ResizeToolTip()
+
+			slotIndex = player.GetSkillSlotIndex(skillIndex)
+			skillGrade = player.GetSkillGrade(slotIndex)
+			skillLevel = player.GetSkillLevel(slotIndex)
+			skillCurrentPercentage = player.GetSkillCurrentEfficientPercentage(slotIndex)
+			skillNextPercentage = player.GetSkillNextEfficientPercentage(slotIndex)
+
+			self.AppendDefaultData(skillIndex)
+			self.AppendSkillConditionData(skillIndex)
+			self.AppendSkillDataNew(slotIndex, skillIndex, skillGrade, skillLevel, skillCurrentPercentage, skillNextPercentage)
+			self.AppendSkillRequirement(skillIndex, skillLevel)
+
+		self.ShowToolTip()
+
+	def SetSkillNew(self, slotIndex, skillIndex, skillGrade, skillLevel):
+		if 0 == skillIndex:
+			return
+
+		if player.SKILL_INDEX_TONGSOL == skillIndex:
+
+			slotIndex = player.GetSkillSlotIndex(skillIndex)
+			skillLevel = player.GetSkillLevel(slotIndex)
+
+			self.AppendDefaultData(skillIndex)
+			self.AppendPartySkillData(skillGrade, skillLevel)
+
+		elif player.SKILL_INDEX_RIDING == skillIndex:
+			slotIndex = player.GetSkillSlotIndex(skillIndex)
+			if app.ENABLE_RIDING_EXTENDED:
+				self.AppendSupportSkillDefaultData(skillIndex, skillGrade, skillLevel, player.HORSE_MAX_LEVEL)
+			else:
+				self.AppendSupportSkillDefaultData(skillIndex, skillGrade, skillLevel, 30)
+
+		elif player.SKILL_INDEX_SUMMON == skillIndex:
+			maxLevel = 10
+
+			self.ClearToolTip()
+			self.__SetSkillTitle(skillIndex, skillGrade)
+
+			## Description
+			description = skill.GetSkillDescription(skillIndex)
+			self.AppendDescription(description, DESC_DEFAULT_SKILLS_MAX_COLS)
+
+			if skillLevel == 10:
+				self.AppendSpace(5)
+				self.AppendTextLine(localeInfo.TOOLTIP_SKILL_LEVEL_MASTER % (skillLevel), self.NORMAL_COLOR)
+				self.AppendTextLine(localeInfo.SKILL_SUMMON_DESCRIPTION % (skillLevel * 10), self.NORMAL_COLOR)
+
+			else:
+				self.AppendSpace(5)
+				self.AppendTextLine(localeInfo.TOOLTIP_SKILL_LEVEL % (skillLevel), self.NORMAL_COLOR)
+				self.__AppendSummonDescription(skillLevel, self.NORMAL_COLOR)
+
+				self.AppendSpace(5)
+				self.AppendTextLine(localeInfo.TOOLTIP_SKILL_LEVEL % (skillLevel + 1), self.NEGATIVE_COLOR)
+				self.__AppendSummonDescription(skillLevel + 1, self.NEGATIVE_COLOR)
+
+		elif skill.SKILL_TYPE_GUILD == skill.GetSkillType(skillIndex):
+			if self.SKILL_TOOL_TIP_WIDTH != self.toolTipWidth:
+				self.toolTipWidth = self.SKILL_TOOL_TIP_WIDTH
+				self.ResizeToolTip()
+
+			self.AppendDefaultData(skillIndex)
+			self.AppendSkillConditionData(skillIndex)
+			self.AppendGuildSkillData(skillIndex, skillLevel)
+
+		else:
+			if self.SKILL_TOOL_TIP_WIDTH != self.toolTipWidth:
+				self.toolTipWidth = self.SKILL_TOOL_TIP_WIDTH
+				self.ResizeToolTip()
+
+			slotIndex = player.GetSkillSlotIndex(skillIndex)
+
+			skillCurrentPercentage = player.GetSkillCurrentEfficientPercentage(slotIndex)
+			skillNextPercentage = player.GetSkillNextEfficientPercentage(slotIndex)
+
+			self.AppendDefaultData(skillIndex, skillGrade)
+			self.AppendSkillConditionData(skillIndex)
+			self.AppendSkillDataNew(slotIndex, skillIndex, skillGrade, skillLevel, skillCurrentPercentage, skillNextPercentage)
+			self.AppendSkillRequirement(skillIndex, skillLevel)
+
+		self.ShowToolTip()
+
+	def __SetSkillTitle(self, skillIndex, skillGrade):
+		if skillIndex == 0 or skillIndex is None:
+			return
+		
+		try:
+			if chr.IsGameMaster(player.GetMainCharacterIndex()):
+				self.SetTitle(skill.GetSkillName(skillIndex, skillGrade) + " (%d)" % skillIndex)
+			else:
+				self.SetTitle(skill.GetSkillName(skillIndex, skillGrade))
+				self.__AppendSkillGradeName(skillIndex, skillGrade)
+		except:
+			pass  # Skill bulunamadýðýnda sessizce devam et
+
+	def __AppendSkillGradeName(self, skillIndex, skillGrade):
+		if skillIndex == 0 or skillIndex is None:
+			return
+		
+		if self.SKILL_GRADE_NAME.has_key(skillGrade):
+			try:
+				skillName = skill.GetSkillName(skillIndex, 0)
+				if skillName:
+					self.AppendSpace(5)
+					self.AppendTextLine(self.SKILL_GRADE_NAME[skillGrade] % skillName, self.CAN_LEVEL_UP_COLOR)
+			except:
+				pass  # Skill bulunamadýðýnda sessizce devam et
+
+	def SetSkillOnlyName(self, slotIndex, skillIndex, skillGrade):
+		if 0 == skillIndex:
+			return
+
+		slotIndex = player.GetSkillSlotIndex(skillIndex)
+
+		self.toolTipWidth = self.SKILL_TOOL_TIP_WIDTH
+		self.ResizeToolTip()
+
+		self.ClearToolTip()
+		self.__SetSkillTitle(skillIndex, skillGrade)
+		self.AppendDefaultData(skillIndex, skillGrade)
+		self.AppendSkillConditionData(skillIndex)
+		self.ShowToolTip()
+
+	def AppendDefaultData(self, skillIndex, skillGrade = 0):
+		self.ClearToolTip()
+		self.__SetSkillTitle(skillIndex, skillGrade)
+
+		## Level Limit
+		levelLimit = skill.GetSkillLevelLimit(skillIndex)
+		if levelLimit > 0:
+
+			color = self.NORMAL_COLOR
+			if player.GetStatus(player.LEVEL) < levelLimit:
+				color = self.NEGATIVE_COLOR
+
+			self.AppendSpace(5)
+			self.AppendTextLine(localeInfo.TOOLTIP_ITEM_LIMIT_LEVEL % (levelLimit), color)
+
+		## Description
+		description = skill.GetSkillDescription(skillIndex)
+		self.AppendDescription(description, DESC_DEFAULT_SKILLS_MAX_COLS)
+
+	def AppendSupportSkillDefaultData(self, skillIndex, skillGrade, skillLevel, maxLevel):
+		self.ClearToolTip()
+		self.__SetSkillTitle(skillIndex, skillGrade)
+
+		## Description
+		description = skill.GetSkillDescription(skillIndex)
+		self.AppendDescription(description, DESC_DEFAULT_SKILLS_MAX_COLS)
+
+		if 1 == skillGrade:
+			skillLevel += 19
+		elif 2 == skillGrade:
+			skillLevel += 29
+		elif 3 == skillGrade:
+			skillLevel = 40
+
+		self.AppendSpace(5)
+		self.AppendTextLine(localeInfo.TOOLTIP_SKILL_LEVEL_WITH_MAX % (skillLevel, maxLevel), self.NORMAL_COLOR)
+
+	def AppendSkillConditionData(self, skillIndex):
+		conditionDataCount = skill.GetSkillConditionDescriptionCount(skillIndex)
+		if conditionDataCount > 0:
+			self.AppendSpace(5)
+			for i in xrange(conditionDataCount):
+				self.AppendTextLine(skill.GetSkillConditionDescription(skillIndex, i), self.CONDITION_COLOR)
+
+	def AppendGuildSkillData(self, skillIndex, skillLevel):
+		skillMaxLevel = 7
+		skillCurrentPercentage = float(skillLevel) / float(skillMaxLevel)
+		skillNextPercentage = float(skillLevel+1) / float(skillMaxLevel)
+		## Current Level
+		if skillLevel > 0:
+			if self.HasSkillLevelDescription(skillIndex, skillLevel):
+				self.AppendSpace(5)
+				if skillLevel == skillMaxLevel:
+					self.AppendTextLine(localeInfo.TOOLTIP_SKILL_LEVEL_MASTER % (skillLevel), self.NORMAL_COLOR)
+				else:
+					self.AppendTextLine(localeInfo.TOOLTIP_SKILL_LEVEL % (skillLevel), self.NORMAL_COLOR)
+
+				for i in xrange(skill.GetSkillAffectDescriptionCount(skillIndex)):
+					self.AppendTextLine(skill.GetSkillAffectDescription(skillIndex, i, skillCurrentPercentage), self.ENABLE_COLOR)
+
+				## Cooltime
+				coolTime = skill.GetSkillCoolTime(skillIndex, skillCurrentPercentage)
+				if coolTime > 0:
+					self.AppendTextLine(localeInfo.TOOLTIP_SKILL_COOL_TIME + str(coolTime), self.ENABLE_COLOR)
+
+				## SP
+				needGSP = skill.GetSkillNeedSP(skillIndex, skillCurrentPercentage)
+				if needGSP > 0:
+					self.AppendTextLine(localeInfo.TOOLTIP_NEED_GSP % (needGSP), self.ENABLE_COLOR)
+
+		## Next Level
+		if skillLevel < skillMaxLevel:
+			if self.HasSkillLevelDescription(skillIndex, skillLevel+1):
+				self.AppendSpace(5)
+				self.AppendTextLine(localeInfo.TOOLTIP_NEXT_SKILL_LEVEL_1 % (skillLevel+1, skillMaxLevel), self.DISABLE_COLOR)
+
+				for i in xrange(skill.GetSkillAffectDescriptionCount(skillIndex)):
+					self.AppendTextLine(skill.GetSkillAffectDescription(skillIndex, i, skillNextPercentage), self.DISABLE_COLOR)
+
+				## Cooltime
+				coolTime = skill.GetSkillCoolTime(skillIndex, skillNextPercentage)
+				if coolTime > 0:
+					self.AppendTextLine(localeInfo.TOOLTIP_SKILL_COOL_TIME + str(coolTime), self.DISABLE_COLOR)
+
+				## SP
+				needGSP = skill.GetSkillNeedSP(skillIndex, skillNextPercentage)
+				if needGSP > 0:
+					self.AppendTextLine(localeInfo.TOOLTIP_NEED_GSP % (needGSP), self.DISABLE_COLOR)
+
+	def AppendSkillDataNew(self, slotIndex, skillIndex, skillGrade, skillLevel, skillCurrentPercentage, skillNextPercentage):
+		self.skillMaxLevelStartDict = { 0 : 17, 1 : 7, 2 : 10, }
+		self.skillMaxLevelEndDict = { 0 : 20, 1 : 10, 2 : 10, }
+
+		skillLevelUpPoint = 1
+		realSkillGrade = player.GetSkillGrade(slotIndex)
+		skillMaxLevelStart = self.skillMaxLevelStartDict.get(realSkillGrade, 15)
+		skillMaxLevelEnd = self.skillMaxLevelEndDict.get(realSkillGrade, 20)
+
+		## Current Level
+		if skillLevel > 0:
+			if self.HasSkillLevelDescription(skillIndex, skillLevel):
+				self.AppendSpace(5)
+				if skillGrade == skill.SKILL_GRADE_COUNT:
+					pass
+				elif skillLevel == skillMaxLevelEnd:
+					self.AppendTextLine(localeInfo.TOOLTIP_SKILL_LEVEL_MASTER % (skillLevel), self.NORMAL_COLOR)
+				else:
+					self.AppendTextLine(localeInfo.TOOLTIP_SKILL_LEVEL % (skillLevel), self.NORMAL_COLOR)
+				self.AppendSkillLevelDescriptionNew(skillIndex, skillCurrentPercentage, self.ENABLE_COLOR)
+
+		## Next Level
+		if skillGrade != skill.SKILL_GRADE_COUNT:
+			if skillLevel < skillMaxLevelEnd:
+				if self.HasSkillLevelDescription(skillIndex, skillLevel+skillLevelUpPoint):
+					self.AppendSpace(5)
+					## HP
+					if skillIndex == 141 or skillIndex == 142:
+						self.AppendTextLine(localeInfo.TOOLTIP_NEXT_SKILL_LEVEL_3 % (skillLevel+1), self.DISABLE_COLOR)
+					else:
+						self.AppendTextLine(localeInfo.TOOLTIP_NEXT_SKILL_LEVEL_1 % (skillLevel+1, skillMaxLevelEnd), self.DISABLE_COLOR)
+					self.AppendSkillLevelDescriptionNew(skillIndex, skillNextPercentage, self.DISABLE_COLOR)
+
+	def AppendSkillLevelDescriptionNew(self, skillIndex, skillPercentage, color):
+		affectDataCount = skill.GetNewAffectDataCount(skillIndex)
+		if affectDataCount > 0:
+			for i in xrange(affectDataCount):
+				type, minValue, maxValue = skill.GetNewAffectData(skillIndex, i, skillPercentage)
+
+				if not self.AFFECT_NAME_DICT.has_key(type):
+					continue
+
+				minValue = int(minValue)
+				maxValue = int(maxValue)
+				affectText = self.AFFECT_NAME_DICT[type]
+
+				if "HP" == type:
+					if minValue < 0 and maxValue < 0:
+						minValue *= -1
+						maxValue *= -1
+
+					else:
+						affectText = localeInfo.TOOLTIP_SKILL_AFFECT_HEAL
+
+				affectText += str(minValue)
+				if minValue != maxValue:
+					affectText += " - " + str(maxValue)
+				affectText += self.AFFECT_APPEND_TEXT_DICT.get(type, "")
+
+				self.AppendTextLine(affectText, color)
+		else:
+			for i in xrange(skill.GetSkillAffectDescriptionCount(skillIndex)):
+				self.AppendTextLine(skill.GetSkillAffectDescription(skillIndex, i, skillPercentage), color)
+
+		## Duration
+		duration = skill.GetDuration(skillIndex, skillPercentage)
+		if duration > 0:
+			self.AppendTextLine(localeInfo.TOOLTIP_SKILL_DURATION % (duration), color)
+
+		## Cooltime
+		coolTime = skill.GetSkillCoolTime(skillIndex, skillPercentage)
+		if coolTime > 0:
+			self.AppendTextLine(localeInfo.TOOLTIP_SKILL_COOL_TIME + str(coolTime), color)
+
+		## SP
+		needSP = skill.GetSkillNeedSP(skillIndex, skillPercentage)
+		if needSP != 0:
+			continuationSP = skill.GetSkillContinuationSP(skillIndex, skillPercentage)
+
+			if skill.IsUseHPSkill(skillIndex):
+				self.AppendNeedHP(needSP, continuationSP, color)
+			else:
+				self.AppendNeedSP(needSP, continuationSP, color)
+
+	def AppendSkillRequirement(self, skillIndex, skillLevel):
+
+		skillMaxLevel = skill.GetSkillMaxLevel(skillIndex)
+
+		if skillLevel >= skillMaxLevel:
+			return
+
+		isAppendHorizontalLine = FALSE
+
+		## Requirement
+		if skill.IsSkillRequirement(skillIndex):
+
+			if not isAppendHorizontalLine:
+				isAppendHorizontalLine = TRUE
+				self.AppendHorizontalLine()
+
+			requireSkillName, requireSkillLevel = skill.GetSkillRequirementData(skillIndex)
+
+			color = self.CANNOT_LEVEL_UP_COLOR
+			if skill.CheckRequirementSueccess(skillIndex):
+				color = self.CAN_LEVEL_UP_COLOR
+			self.AppendTextLine(localeInfo.TOOLTIP_REQUIREMENT_SKILL_LEVEL % (requireSkillName, requireSkillLevel), color)
+
+		## Require Stat
+		requireStatCount = skill.GetSkillRequireStatCount(skillIndex)
+		if requireStatCount > 0:
+			for i in xrange(requireStatCount):
+				type, level = skill.GetSkillRequireStatData(skillIndex, i)
+				if self.POINT_NAME_DICT.has_key(type):
+
+					if not isAppendHorizontalLine:
+						isAppendHorizontalLine = TRUE
+						self.AppendHorizontalLine()
+
+					name = self.POINT_NAME_DICT[type]
+					color = self.CANNOT_LEVEL_UP_COLOR
+					if player.GetStatus(type) >= level:
+						color = self.CAN_LEVEL_UP_COLOR
+					self.AppendTextLine(localeInfo.TOOLTIP_REQUIREMENT_STAT_LEVEL % (name, level), color)
+
+	def HasSkillLevelDescription(self, skillIndex, skillLevel):
+		if skill.GetSkillAffectDescriptionCount(skillIndex) > 0:
+			return TRUE
+		if skill.GetSkillCoolTime(skillIndex, skillLevel) > 0:
+			return TRUE
+		if skill.GetSkillNeedSP(skillIndex, skillLevel) > 0:
+			return TRUE
+
+		return FALSE
+
+	def AppendMasterAffectDescription(self, index, desc, color):
+		self.AppendTextLine(desc, color)
+
+	def AppendNextAffectDescription(self, index, desc):
+		self.AppendTextLine(desc, self.DISABLE_COLOR)
+
+	def AppendNeedHP(self, needSP, continuationSP, color):
+
+		self.AppendTextLine(localeInfo.TOOLTIP_NEED_HP % (needSP), color)
+
+		if continuationSP > 0:
+			self.AppendTextLine(localeInfo.TOOLTIP_NEED_HP_PER_SEC % (continuationSP), color)
+
+	def AppendNeedSP(self, needSP, continuationSP, color):
+
+		if -1 == needSP:
+			self.AppendTextLine(localeInfo.TOOLTIP_NEED_ALL_SP, color)
+
+		else:
+			self.AppendTextLine(localeInfo.TOOLTIP_NEED_SP % (needSP), color)
+
+		if continuationSP > 0:
+			self.AppendTextLine(localeInfo.TOOLTIP_NEED_SP_PER_SEC % (continuationSP), color)
+
+	def AppendPartySkillData(self, skillGrade, skillLevel):
+		# @fixme008 BEGIN
+		def comma_fix(vl):
+			return vl.replace("%,0f", "%.0f")
+		# @fixme008 END
+
+		if 1 == skillGrade:
+			skillLevel += 19
+		elif 2 == skillGrade:
+			skillLevel += 29
+		elif 3 == skillGrade:
+			skillLevel = 40
+
+		if skillLevel <= 0:
+			return
+
+		skillIndex = player.SKILL_INDEX_TONGSOL
+		slotIndex = player.GetSkillSlotIndex(skillIndex)
+		skillPower = player.GetSkillCurrentEfficientPercentage(slotIndex)
+		k = skillPower # @fixme008
+		self.AppendSpace(5)
+		self.AutoAppendTextLine(localeInfo.TOOLTIP_PARTY_SKILL_LEVEL % skillLevel, self.NORMAL_COLOR)
+
+		# @fixme008 BEGIN
+		if skillLevel>=10:
+			self.AutoAppendTextLine(comma_fix(localeInfo.PARTY_SKILL_ATTACKER) % chop( 10 + 60 * k ))
+
+		if skillLevel>=20:
+			self.AutoAppendTextLine(comma_fix(localeInfo.PARTY_SKILL_BERSERKER) % chop(1 + 5 * k))
+			self.AutoAppendTextLine(comma_fix(localeInfo.PARTY_SKILL_TANKER) % chop(50 + 1450 * k))
+
+		if skillLevel>=25:
+			self.AutoAppendTextLine(comma_fix(localeInfo.PARTY_SKILL_BUFFER) % chop(5 + 45 * k ))
+
+		if skillLevel>=35:
+			self.AutoAppendTextLine(comma_fix(localeInfo.PARTY_SKILL_SKILL_MASTER) % chop(25 + 600 * k ))
+
+		if skillLevel>=40:
+			self.AutoAppendTextLine(comma_fix(localeInfo.PARTY_SKILL_DEFENDER) % chop( 5 + 30 * k ))
+		# @fixme008 END
+
+		self.AlignHorizonalCenter()
+
+	def __AppendSummonDescription(self, skillLevel, color):
+		if skillLevel > 1:
+			self.AppendTextLine(localeInfo.SKILL_SUMMON_DESCRIPTION % (skillLevel * 10), color)
+		elif 1 == skillLevel:
+			self.AppendTextLine(localeInfo.SKILL_SUMMON_DESCRIPTION % (15), color)
+		elif 0 == skillLevel:
+			self.AppendTextLine(localeInfo.SKILL_SUMMON_DESCRIPTION % (10), color)
+
+if app.ENABLE_GROWTH_PET_SYSTEM:
+	class PetSkillToolTip(ToolTip):
+
+		PET_SKILL_TOOL_TIP_WIDTH = 255
+
+		PET_SKILL_APPLY_DATA_DICT = {
+				chr.PET_SKILL_AFFECT_JIJOONG_WARRIOR	: localeInfo.TOOLTIP_APPLY_RESIST_WARRIOR,		# %d%%
+				chr.PET_SKILL_AFFECT_JIJOONG_SURA		: localeInfo.TOOLTIP_APPLY_RESIST_SURA,			# %d%%
+				chr.PET_SKILL_AFFECT_JIJOONG_ASSASSIN	: localeInfo.TOOLTIP_APPLY_RESIST_ASSASSIN,		# %d%%
+				chr.PET_SKILL_AFFECT_JIJOONG_SHAMAN		: localeInfo.TOOLTIP_APPLY_RESIST_SHAMAN,		# %d%%
+				chr.PET_SKILL_AFFECT_PACHEON			: localeInfo.TOOLTIP_MELEE_MAGIC_ATTBONUS_PER,	# %d%%
+				chr.PET_SKILL_AFFECT_BANYA				: localeInfo.TOOLTIP_CAST_SPEED,				# %d%%
+				chr.PET_SKILL_AFFECT_CHOEHOENBIMU		: localeInfo.TOOLTIP_APPLY_PENETRATE_PCT,		# %d%%
+				chr.PET_SKILL_AFFECT_HEAL				: localeInfo.PET_SKILL_TOOLTIP_HEAL,			# %d%%, %d
+				chr.PET_SKILL_AFFECT_STEALHP			: localeInfo.TOOLTIP_APPLY_STEAL_HP,			# %d%%
+				chr.PET_SKILL_AFFECT_STEALMP			: localeInfo.TOOLTIP_APPLY_STEAL_SP,			# %d%%
+				chr.PET_SKILL_AFFECT_BLOCK				: localeInfo.TOOLTIP_APPLY_BLOCK,				# %d%%
+				chr.PET_SKILL_AFFECT_REFLECT_MELEE		: localeInfo.TOOLTIP_APPLY_REFLECT_MELEE,		# %d%%
+				chr.PET_SKILL_AFFECT_GOLD_DROP			: localeInfo.TOOLTIP_MALL_GOLDBONUS,			# %.1f%%
+				chr.PET_SKILL_AFFECT_BOW_DISTANCE		: localeInfo.TOOLTIP_BOW_DISTANCE,				# %dm
+				chr.PET_SKILL_AFFECT_INVINCIBILITY		: localeInfo.PET_SKILL_TOOLTIP_INVINVIBILITY,	# %d%%, %.1f
+				chr.PET_SKILL_AFFECT_REMOVAL			: localeInfo.PET_SKILL_TOOLTIP_REMOVAL,			# %d%%
+				chr.PET_SKILL_AFFECT_POTION				: localeInfo.TOOLTIP_APPLY_POTION_BONUS,		# %d%%
+				chr.PET_SKILL_AFFECT_MOB_BONUS			: localeInfo.TOOLTIP_APPLY_ATTBONUS_MONSTER,	# %d%%
+				chr.PET_SKILL_HP_RECOVER				: localeInfo.TOOLTIP_APPLY_KILL_HP_RECOVER,		# %d%%
+				chr.PET_SKILL_AFFECT_EXP				: localeInfo.TOOLTIP_MALL_EXPBONUS,				# %d%%
+				chr.PET_SKILL_FEATHER					: localeInfo.PET_SKILL_TOOLTIP_FEATHER,			# %d%%, %.1f, %d - %d
+		}
+
+		def __init__(self):
+			ToolTip.__init__(self, self.PET_SKILL_TOOL_TIP_WIDTH)
+
+		def __del__(self):
+			ToolTip.__del__(self)
+
+		def SetPetSkill(self, pet_id, slot, index):
+			if 0 == pet_id:
+				return
+
+			self.ClearToolTip()
+
+			(pet_skill_vnum, pet_skill_level, formula1, formula2, formula3, next_formula1, next_formula2, next_formula3, bonus_value) = player.GetPetSkillByIndex(pet_id, slot)
+
+			if 0 == pet_skill_vnum:
+				return
+
+			(pet_skill_name, pet_skill_desc, pet_skill_use_type , pet_skill_cool_time) = skill.GetPetSkillInfo(pet_skill_vnum)
+
+			# 1 skill name
+			self.SetTitle(pet_skill_name)
+			# 2 Skill description
+			self.AppendDescription(pet_skill_desc, DESC_DEFAULT_MAX_COLS)
+			# 3 Current level
+			self.AppendSpace(5)
+			if bonus_value:
+				self.AppendTextLine((localeInfo.PET_TOOLTIP_SKILL_CUR_LEVEL % pet_skill_level) + " "+ localeInfo.PET_TOOLTIP_SKILL_BONUS_VALUE, self.NORMAL_COLOR)
+			else:
+				self.AppendTextLine(localeInfo.PET_TOOLTIP_SKILL_CUR_LEVEL % pet_skill_level, self.NORMAL_COLOR)
+
+			## Current skill level content
+			if skill.PET_SKILL_USE_TYPE_PASSIVE == pet_skill_use_type:
+				self.__AppendPassiveSkill(pet_skill_vnum, int(formula2), self.NORMAL_COLOR)
+
+			elif skill.PET_SKILL_USE_TYPE_AUTO == pet_skill_use_type:
+				self.__AppendAutoSkill(pet_skill_vnum, formula1, formula2, formula3, self.NORMAL_COLOR)
+				# 7 Cooldown: No passive skill
+				self.__AppendCoolTime(pet_skill_cool_time, self.NORMAL_COLOR)
+
+			## If the next level exists...
+			nextSkillLevel = pet_skill_level + 1
+			maxSkillLevel = player.PET_GROWTH_SKILL_LEVEL_MAX
+
+			if nextSkillLevel <= maxSkillLevel:
+				self.AppendHorizontalLine()
+				# 8 Next level: 00 (maximum 20)
+				self.__AppendNextLevel(nextSkillLevel, maxSkillLevel)
+
+				## Next skill level content
+				if skill.PET_SKILL_USE_TYPE_PASSIVE == pet_skill_use_type:
+					self.__AppendPassiveSkill(pet_skill_vnum, int(next_formula2), self.NEGATIVE_COLOR)
+
+				elif skill.PET_SKILL_USE_TYPE_AUTO == pet_skill_use_type:
+					self.__AppendAutoSkill(pet_skill_vnum, next_formula1, next_formula2, next_formula3, self.NEGATIVE_COLOR)
+					self.__AppendCoolTime(pet_skill_cool_time, self.NEGATIVE_COLOR)
+
+			self.ResizeToolTip()
+			self.ShowToolTip()
+
+		## Description Exception handling
+		def __PassiveSkillExceptionDecsriptionValueChange(self, pet_skill_vnum, value):
+			if chr.PET_SKILL_AFFECT_GOLD_DROP == pet_skill_vnum:
+				value = value / 10.0
+
+			return value
+
+		## Passive skill description
+		def __AppendPassiveSkill(self, pet_skill_vnum, value, color):
+			if 0 == pet_skill_vnum:
+				return
+
+			try:
+				text = self.PET_SKILL_APPLY_DATA_DICT[pet_skill_vnum]
+			except KeyError:
+				print "except KeyError"
+				return
+
+			value = self.__PassiveSkillExceptionDecsriptionValueChange(pet_skill_vnum, value)
+
+			self.AppendSpace(5)
+			self.AppendTextLine( text(value), color)
+
+		## Automatic skill description
+		def __AppendAutoSkill(self, pet_skill_vnum, value1, value2, value3, color):
+			if 0 == pet_skill_vnum:
+				return
+
+			try:
+				text = self.PET_SKILL_APPLY_DATA_DICT[pet_skill_vnum]
+			except KeyError:
+				print "except KeyError"
+				return
+
+			self.AppendSpace(5)
+
+			if chr.PET_SKILL_AFFECT_INVINCIBILITY == pet_skill_vnum:
+				value1 = value1 / 10.0
+				value2 = value2 / 10.0
+
+			if chr.PET_SKILL_FEATHER == pet_skill_vnum:
+				value3 = value3 / 10.0
+				textLine = self.AppendTextLine(text(value1, value3, value2, value2 * 2), color)
+			else:
+				textLine = self.AppendTextLine(text(value1, value2), color)
+
+			(x, y) = textLine.GetLocalPosition()
+			textLine.SetPosition(x, y - (textLine.GetTextLineCount() - 1)*8)
+			self.AppendSpace(textLine.GetTextLineCount() * 5)
+
+
+		## Cooldown display
+		def __AppendCoolTime(self, pet_skill_cool_time, color):
+			self.AppendSpace(5)
+			self.AutoAppendTextLine(localeInfo.PET_SKILL_TOOLTIP_COOLTIME % (pet_skill_cool_time), color)
+			return
+
+		def __AppendNextLevel(self, curLevel, maxLevel):
+			self.AppendSpace(5)
+			self.AutoAppendTextLine(localeInfo.PET_TOOLTIP_SKILL_NEXT_LEVEL % (curLevel, maxLevel), self.NEGATIVE_COLOR)
+
+if __name__ == "__main__":
+	import app
+	import wndMgr
+	import systemSetting
+	import mouseModule
+	import grp
+	import ui
+
+	#wndMgr.SetOutlineFlag(True)
+
+	app.SetMouseHandler(mouseModule.mouseController)
+	app.SetHairColorEnable(True)
+	wndMgr.SetMouseHandler(mouseModule.mouseController)
+	wndMgr.SetScreenSize(systemSetting.GetWidth(), systemSetting.GetHeight())
+	app.Create("METIN2 CLOSED BETA", systemSetting.GetWidth(), systemSetting.GetHeight(), 1)
+	mouseModule.mouseController.Create()
+
+	toolTip = ItemToolTip()
+	toolTip.ClearToolTip()
+	#toolTip.AppendTextLine("Test")
+	desc = "Item descriptions:|increase of width of display to 35 digits per row AND installation of function that the displayed words are not broken up in two parts, but instead if one word is too long to be displayed in this row, this word will start in the next row."
+	summ = ""
+
+	toolTip.AddItemData_Offline(10, desc, summ, 0, 0)
+	toolTip.Show()
+
+	app.Loop()

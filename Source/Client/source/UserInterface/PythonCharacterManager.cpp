@@ -1,0 +1,1032 @@
+#include "stdafx.h"
+#include "pythoncharactermanager.h"
+#include "PythonBackground.h"
+#include "PythonNonPlayer.h"
+#include "AbstractPlayer.h"
+#include "packet.h"
+
+#include "../eterLib/Camera.h"
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Frame Process
+
+int CHAR_STAGE_VIEW_BOUND = 200*100;
+
+struct FCharacterManagerCharacterInstanceUpdate
+{
+	inline void operator () (const std::pair<DWORD,CInstanceBase *>& cr_Pair)
+	{
+		cr_Pair.second->Update();
+	}
+};
+
+void CPythonCharacterManager::AdjustCollisionWithOtherObjects(CActorInstance* pInst)
+{
+	if(!pInst->IsPC())
+		return;
+
+	CPythonCharacterManager& rkChrMgr=CPythonCharacterManager::Instance();
+	for(CPythonCharacterManager::CharacterIterator i = rkChrMgr.CharacterInstanceBegin(); i!=rkChrMgr.CharacterInstanceEnd();++i)
+	{
+		CInstanceBase*  pkInstEach=*i;
+		CActorInstance* rkActorEach=pkInstEach->GetGraphicThingInstancePtr();
+
+		if (rkActorEach==pInst)
+			continue;
+
+		if(rkActorEach->IsPC() || rkActorEach->IsNPC() || rkActorEach->IsEnemy() || rkActorEach->IsPet()
+#ifdef ENABLE_GROWTH_PET_SYSTEM
+			|| rkActorEach->IsGrowthPet()
+#endif
+			)
+			continue;
+
+		if(pInst->TestPhysicsBlendingCollision(*rkActorEach) )
+		{
+			TPixelPosition curPos;
+			pInst->GetPixelPosition(&curPos);
+			pInst->SetBlendingPosition(curPos);
+			break;
+		}
+	}
+}
+
+void CPythonCharacterManager::EnableSortRendering(bool isEnable)
+{
+}
+
+void CPythonCharacterManager::InsertPVPKey(DWORD dwVIDSrc, DWORD dwVIDDst)
+{
+	CInstanceBase::InsertPVPKey(dwVIDSrc, dwVIDDst);
+
+	CInstanceBase* pkInstSrc=GetInstancePtr(dwVIDSrc);
+	if (pkInstSrc)
+		pkInstSrc->RefreshTextTail();
+
+	CInstanceBase* pkInstDst=GetInstancePtr(dwVIDDst);
+	if (pkInstDst)
+		pkInstDst->RefreshTextTail();
+}
+
+void CPythonCharacterManager::RemovePVPKey(DWORD dwVIDSrc, DWORD dwVIDDst)
+{
+	CInstanceBase::RemovePVPKey(dwVIDSrc, dwVIDDst);
+
+	CInstanceBase* pkInstSrc=GetInstancePtr(dwVIDSrc);
+	if (pkInstSrc)
+		pkInstSrc->RefreshTextTail();
+
+	CInstanceBase* pkInstDst=GetInstancePtr(dwVIDDst);
+	if (pkInstDst)
+		pkInstDst->RefreshTextTail();
+}
+
+void CPythonCharacterManager::ChangeGVG(DWORD dwSrcGuildID, DWORD dwDstGuildID)
+{
+	TCharacterInstanceMap::iterator itor;
+	for (itor = m_kAliveInstMap.begin(); itor != m_kAliveInstMap.end(); itor++)
+	{
+		CInstanceBase * pInstance = itor->second;
+
+		DWORD dwInstanceGuildID = pInstance->GetGuildID();
+		if (dwSrcGuildID == dwInstanceGuildID || dwDstGuildID == dwInstanceGuildID)
+		{
+			pInstance->RefreshTextTail();
+		}
+	}
+}
+
+void CPythonCharacterManager::ClearMainInstance()
+{
+	m_pkInstMain=NULL;
+}
+
+bool CPythonCharacterManager::SetMainInstance(DWORD dwVID)
+{
+	m_pkInstMain=GetInstancePtr(dwVID);
+
+	if (!m_pkInstMain)
+		return false;
+
+	return true;
+}
+
+CInstanceBase* CPythonCharacterManager::GetMainInstancePtr()
+{
+	return m_pkInstMain;
+}
+
+void CPythonCharacterManager::GetInfo(std::string* pstInfo)
+{
+	pstInfo->append("Actor: ");
+
+	CInstanceBase::GetInfo(pstInfo);
+
+	char szInfo[256];
+	snprintf(szInfo, sizeof(szInfo), "Container - Live %d, Dead %d", m_kAliveInstMap.size(), m_kDeadInstList.size());
+	pstInfo->append(szInfo);
+}
+
+
+bool CPythonCharacterManager::IsCacheMode()
+{
+	static bool s_isOldCacheMode=false;
+
+	bool isCacheMode=s_isOldCacheMode;
+	if (s_isOldCacheMode)
+	{
+		if (m_kAliveInstMap.size()<30)
+			isCacheMode=false;
+	}
+	else
+	{
+		if (m_kAliveInstMap.size()>40)
+			isCacheMode=true;
+	}
+	s_isOldCacheMode=isCacheMode;
+
+	return isCacheMode;
+}
+
+void CPythonCharacterManager::Update()
+{
+	CInstanceBase::ResetPerformanceCounter();
+
+	// Crowd budget: with many players around, only the nearest CROWD_FULL_DETAIL other players keep
+	// attached effects, full model LOD and per-frame skinning. Below the budget nothing changes.
+	{
+		const size_t CROWD_FULL_DETAIL = 40;
+		static std::vector<float> s_kVct_fDistance;
+		s_kVct_fDistance.clear();
+		float fThreshold = FLT_MAX;
+		if (CInstanceBase* pkMain = GetMainInstancePtr())
+		{
+			for (const auto& p : m_kAliveInstMap)
+				if (p.second != pkMain && p.second->IsPC())
+					s_kVct_fDistance.push_back(p.second->GetDistance(pkMain));
+			if (s_kVct_fDistance.size() > CROWD_FULL_DETAIL)
+			{
+				std::nth_element(s_kVct_fDistance.begin(), s_kVct_fDistance.begin() + CROWD_FULL_DETAIL, s_kVct_fDistance.end());
+				fThreshold = s_kVct_fDistance[CROWD_FULL_DETAIL];
+			}
+		}
+		CInstanceBase::ms_fCrowdDetailDistance = fThreshold;
+	}
+
+	for (const auto& p : m_kAliveInstMap)
+		p.second->Update();
+
+	UpdateTransform();
+	UpdateDeleting();
+	__NEW_Pick();
+}
+
+void CPythonCharacterManager::ShowPointEffect(DWORD ePoint, DWORD dwVID)
+{
+	CInstanceBase * pkInstSel = (dwVID == 0xffffffff) ? GetMainInstancePtr() : GetInstancePtr(dwVID);
+
+	if (!pkInstSel)
+	{
+		return;
+	}
+
+	switch (ePoint)
+	{
+		case POINT_LEVEL:
+			pkInstSel->LevelUp();
+			break;
+		case POINT_LEVEL_STEP:
+			pkInstSel->SkillUp();
+			break;
+#ifdef ENABLE_CONQUEROR_LEVEL
+		case POINT_CONQUEROR_LEVEL:
+			pkInstSel->LevelUp();
+			break;
+		case POINT_CONQUEROR_LEVEL_STEP:
+			pkInstSel->SkillUp();
+			break;
+#endif
+	}
+}
+
+bool CPythonCharacterManager::RegisterPointEffect(DWORD ePoint, const char *c_szFileName)
+{
+	if (ePoint>=POINT_MAX_NUM)
+	{
+		return false;
+	}
+
+	CEffectManager& rkEftMgr=CEffectManager::Instance();
+	rkEftMgr.RegisterEffect2(c_szFileName, &m_adwPointEffect[ePoint]);
+
+	return true;
+}
+
+void CPythonCharacterManager::UpdateTransform()
+{
+	CInstanceBase * pMainInstance = GetMainInstancePtr();
+	if (pMainInstance)
+	{
+		CPythonBackground& rkBG=CPythonBackground::Instance();
+		for (TCharacterInstanceMap::iterator i = m_kAliveInstMap.begin(); i != m_kAliveInstMap.end(); ++i)
+		{
+			CInstanceBase * pSrcInstance = i->second;
+
+			pSrcInstance->CheckAdvancing();
+
+			if (pSrcInstance->IsPushing())
+				rkBG.CheckAdvancing(pSrcInstance);
+		}
+		rkBG.CheckAdvancing(m_pkInstMain);
+	}
+
+	{
+		for (TCharacterInstanceMap::iterator itor = m_kAliveInstMap.begin(); itor != m_kAliveInstMap.end(); ++itor)
+		{
+			CInstanceBase * pInstance = itor->second;
+			pInstance->Transform();
+		}
+	}
+}
+void CPythonCharacterManager::UpdateDeleting()
+{
+	TCharacterInstanceList::iterator itor = m_kDeadInstList.begin();
+	for (; itor != m_kDeadInstList.end();)
+	{
+		CInstanceBase * pInstance = *itor;
+
+		if (pInstance->UpdateDeleting())
+		{
+			++itor;
+		}
+		else
+		{
+			CInstanceBase::Delete(pInstance);
+			itor = m_kDeadInstList.erase(itor);
+		}
+	}
+}
+
+struct FCharacterManagerCharacterInstanceDeform
+{
+	inline void operator () (const std::pair<DWORD,CInstanceBase *>& cr_Pair)
+	{
+		cr_Pair.second->Deform();
+		//pInstance->Update();
+	}
+};
+struct FCharacterManagerCharacterInstanceListDeform
+{
+	inline void operator () (CInstanceBase * pInstance)
+	{
+		pInstance->Deform();
+	}
+};
+
+void CPythonCharacterManager::Deform()
+{
+	std::for_each(m_kAliveInstMap.begin(), m_kAliveInstMap.end(), FCharacterManagerCharacterInstanceDeform());
+	std::for_each(m_kDeadInstList.begin(), m_kDeadInstList.end(), FCharacterManagerCharacterInstanceListDeform());
+}
+
+
+
+
+bool CPythonCharacterManager::OLD_GetPickedInstanceVID(DWORD* pdwPickedActorID)
+{
+	if (!m_pkInstPick)
+		return false;
+
+	*pdwPickedActorID=m_pkInstPick->GetVirtualID();
+	return true;
+}
+
+CInstanceBase * CPythonCharacterManager::OLD_GetPickedInstancePtr()
+{
+	return m_pkInstPick;
+}
+
+D3DXVECTOR2 & CPythonCharacterManager::OLD_GetPickedInstPosReference()
+{
+	return m_v2PickedInstProjPos;
+}
+
+bool CPythonCharacterManager::IsRegisteredVID(DWORD dwVID)
+{
+	if (m_kAliveInstMap.end()==m_kAliveInstMap.find(dwVID))
+		return false;
+
+	return true;
+}
+
+bool CPythonCharacterManager::IsAliveVID(DWORD dwVID)
+{
+	return m_kAliveInstMap.find(dwVID)!=m_kAliveInstMap.end();
+}
+
+bool CPythonCharacterManager::IsDeadVID(DWORD dwVID)
+{
+	for (TCharacterInstanceList::iterator f=m_kDeadInstList.begin(); f!=m_kDeadInstList.end(); ++f)
+	{
+		if ((*f)->GetVirtualID()==dwVID)
+			return true;
+	}
+
+	return false;
+}
+
+struct LessCharacterInstancePtrRenderOrder
+{
+	bool operator() (CInstanceBase* pkLeft, CInstanceBase* pkRight)
+	{
+		return pkLeft->LessRenderOrder(pkRight);		
+	}
+};
+
+struct FCharacterManagerCharacterInstanceRender
+{
+	inline void operator () (const std::pair<DWORD,CInstanceBase *>& cr_Pair)
+	{
+		cr_Pair.second->Render();
+		cr_Pair.second->RenderTrace();
+	}
+};
+struct FCharacterInstanceRender
+{
+	inline void operator () (CInstanceBase * pInstance)
+	{
+		pInstance->Render();
+	}
+};
+struct FCharacterInstanceRenderTrace
+{
+	inline void operator () (CInstanceBase * pInstance)
+	{
+		pInstance->RenderTrace();
+	}
+};
+
+
+void CPythonCharacterManager::__RenderSortedAliveActorList()
+{
+	static std::vector<CInstanceBase*> s_kVct_pkInstAliveSort;
+	s_kVct_pkInstAliveSort.clear();
+
+	TCharacterInstanceMap& rkMap_pkInstAlive=m_kAliveInstMap;
+	TCharacterInstanceMap::iterator i;
+	for (i=rkMap_pkInstAlive.begin(); i!=rkMap_pkInstAlive.end(); ++i)
+		s_kVct_pkInstAliveSort.push_back(i->second);
+
+	std::sort(s_kVct_pkInstAliveSort.begin(), s_kVct_pkInstAliveSort.end(), LessCharacterInstancePtrRenderOrder());
+	std::for_each(s_kVct_pkInstAliveSort.begin(), s_kVct_pkInstAliveSort.end(), FCharacterInstanceRender());
+	std::for_each(s_kVct_pkInstAliveSort.begin(), s_kVct_pkInstAliveSort.end(), FCharacterInstanceRenderTrace());
+}
+
+void CPythonCharacterManager::__RenderSortedDeadActorList()
+{
+	static std::vector<CInstanceBase*> s_kVct_pkInstDeadSort;
+	s_kVct_pkInstDeadSort.clear();
+
+	TCharacterInstanceList& rkLst_pkInstDead=m_kDeadInstList;
+	TCharacterInstanceList::iterator i;
+	for (i=rkLst_pkInstDead.begin(); i!=rkLst_pkInstDead.end(); ++i)
+		s_kVct_pkInstDeadSort.push_back(*i);
+
+	std::sort(s_kVct_pkInstDeadSort.begin(), s_kVct_pkInstDeadSort.end(), LessCharacterInstancePtrRenderOrder());
+	std::for_each(s_kVct_pkInstDeadSort.begin(), s_kVct_pkInstDeadSort.end(), FCharacterInstanceRender());
+
+}
+
+void CPythonCharacterManager::Render()
+{
+	STATEMANAGER.SetTexture(0, nullptr);	
+	STATEMANAGER.SetTextureStageState(0, D3DTSS_COLORARG1,	D3DTA_TEXTURE);
+	STATEMANAGER.SetTextureStageState(0, D3DTSS_COLORARG2,	D3DTA_CURRENT);
+	STATEMANAGER.SetTextureStageState(0, D3DTSS_COLOROP,	D3DTOP_MODULATE);
+	STATEMANAGER.SetTextureStageState(0, D3DTSS_ALPHAARG1,	D3DTA_TEXTURE);
+	STATEMANAGER.SetTextureStageState(0, D3DTSS_ALPHAOP,	D3DTOP_SELECTARG1);
+
+	STATEMANAGER.SetTexture(1, nullptr);
+	STATEMANAGER.SetTextureStageState(1, D3DTSS_COLOROP,	D3DTOP_DISABLE);
+	STATEMANAGER.SetTextureStageState(1, D3DTSS_ALPHAOP,	D3DTOP_DISABLE);
+
+
+	__RenderSortedAliveActorList();
+	__RenderSortedDeadActorList();
+
+	CInstanceBase * pkPickedInst = OLD_GetPickedInstancePtr();
+	if (pkPickedInst)
+	{
+		const D3DXVECTOR3 & c_rv3Position = pkPickedInst->GetGraphicThingInstanceRef().GetPosition();
+		CPythonGraphic::Instance().ProjectPosition(c_rv3Position.x, c_rv3Position.y, c_rv3Position.z, &m_v2PickedInstProjPos.x, &m_v2PickedInstProjPos.y);
+	}
+}
+
+void CPythonCharacterManager::RenderShadowMainInstance()
+{
+	CInstanceBase* pkInstMain=GetMainInstancePtr();
+	if (pkInstMain)
+		pkInstMain->RenderToShadowMap();
+}
+
+void CPythonCharacterManager::RenderShadowAllInstances()
+{
+	CInstanceBase* pkInstMain = GetMainInstancePtr();
+	if (pkInstMain)
+		pkInstMain->RenderToShadowMap();
+
+	size_t count = 0;
+	const size_t MAX_SHADOW_INSTANCES = 12;
+
+	for (auto it = m_kAliveInstMap.begin(); it != m_kAliveInstMap.end(); ++it)
+	{
+		CInstanceBase* pkInst = it->second;
+		if (!pkInst || pkInst == pkInstMain)
+			continue;
+
+		if (pkInst->IsDead())
+			continue;
+
+		if (pkInstMain)
+		{
+			float fDistance = pkInst->NEW_GetDistanceFromDestInstance(*pkInstMain);
+			if (fDistance >= 1200.0f)
+				continue;
+		}
+
+		pkInst->RenderToShadowMap();
+		count++;
+
+		if (count >= MAX_SHADOW_INSTANCES)
+			break;
+	}
+}
+
+void CPythonCharacterManager::RenderReflectionInstances()
+{
+	CInstanceBase* pkInstMain = GetMainInstancePtr();
+	if (pkInstMain)
+		pkInstMain->Render();
+
+	size_t count = 0;
+	const size_t MAX_REFLECTION_INSTANCES = 6;
+
+	for (auto it = m_kAliveInstMap.begin(); it != m_kAliveInstMap.end(); ++it)
+	{
+		CInstanceBase* pkInst = it->second;
+		if (!pkInst || pkInst == pkInstMain)
+			continue;
+
+		if (pkInst->IsDead())
+			continue;
+
+		// Canavarlar ve NPC'ler su yansımasında çizilmez, sadece oyuncular yansıtılır!
+		if (!pkInst->IsPC())
+			continue;
+
+		if (pkInstMain)
+		{
+			float fDistance = pkInst->NEW_GetDistanceFromDestInstance(*pkInstMain);
+			if (fDistance >= 1200.0f)
+				continue;
+		}
+
+		pkInst->Render();
+		count++;
+
+		if (count >= MAX_REFLECTION_INSTANCES)
+			break;
+	}
+}
+
+struct FCharacterManagerCharacterInstanceRenderCollision
+{
+	inline void operator () (const std::pair<DWORD,CInstanceBase *>& cr_Pair)
+	{
+		cr_Pair.second->RenderCollision();
+	}
+};
+
+void CPythonCharacterManager::RenderCollision()
+{
+ 	std::for_each(m_kAliveInstMap.begin(), m_kAliveInstMap.end(), FCharacterManagerCharacterInstanceRenderCollision());
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Managing Process
+
+CInstanceBase * CPythonCharacterManager::CreateInstance(const CInstanceBase::SCreateData& c_rkCreateData)
+{
+	CInstanceBase * pCharacterInstance = RegisterInstance(c_rkCreateData.m_dwVID);
+	if (!pCharacterInstance)
+	{
+		TraceError("CPythonCharacterManager::CreateInstance: VID[%d] - ALREADY EXIST\n", c_rkCreateData);
+		return NULL;
+	}
+
+	if (!pCharacterInstance->Create(c_rkCreateData))
+	{
+		TraceError("CPythonCharacterManager::CreateInstance VID[%d] Race[%d]", c_rkCreateData.m_dwVID, c_rkCreateData.m_dwRace);
+		DeleteInstance(c_rkCreateData.m_dwVID);
+		return NULL;
+	}
+
+	if (c_rkCreateData.m_isMain)
+		SelectInstance(c_rkCreateData.m_dwVID);
+
+	return (pCharacterInstance);
+}
+
+CInstanceBase * CPythonCharacterManager::RegisterInstance(DWORD VirtualID)
+{
+	TCharacterInstanceMap::iterator itor = m_kAliveInstMap.find(VirtualID);
+
+	if (m_kAliveInstMap.end() != itor)
+	{
+		return NULL;
+	}
+
+	CInstanceBase * pCharacterInstance = CInstanceBase::New();
+	m_kAliveInstMap.insert(TCharacterInstanceMap::value_type(VirtualID, pCharacterInstance));
+
+	return (pCharacterInstance);
+}
+
+void CPythonCharacterManager::DeleteInstance(DWORD dwDelVID)
+{
+	TCharacterInstanceMap::iterator itor = m_kAliveInstMap.find(dwDelVID);
+
+	if (m_kAliveInstMap.end() == itor)
+	{
+		Tracef("DeleteCharacterInstance: no vid by %d\n", dwDelVID);
+		return;
+	}
+
+	CInstanceBase * pkInstDel = itor->second;
+
+	if (pkInstDel == m_pkInstBind)
+		m_pkInstBind = nullptr;
+
+	if (pkInstDel == m_pkInstMain)
+		m_pkInstMain = nullptr;
+
+	if (pkInstDel == m_pkInstPick)
+		m_pkInstPick = nullptr;
+
+	CInstanceBase::Delete(pkInstDel);
+
+	m_kAliveInstMap.erase(itor);
+}
+
+void CPythonCharacterManager::__DeleteBlendOutInstance(CInstanceBase* pkInstDel)
+{
+	pkInstDel->DeleteBlendOut();
+	m_kDeadInstList.push_back(pkInstDel);
+
+	IAbstractPlayer& rkPlayer=IAbstractPlayer::GetSingleton();
+	rkPlayer.NotifyCharacterDead(pkInstDel->GetVirtualID());
+}
+
+void CPythonCharacterManager::DeleteInstanceByFade(DWORD dwVID)
+{
+	TCharacterInstanceMap::iterator f = m_kAliveInstMap.find(dwVID);
+	if (m_kAliveInstMap.end() == f)
+	{
+		return;
+	}
+	__DeleteBlendOutInstance(f->second);
+	m_kAliveInstMap.erase(f);
+}
+
+void CPythonCharacterManager::SelectInstance(DWORD VirtualID)
+{
+	TCharacterInstanceMap::iterator itor = m_kAliveInstMap.find(VirtualID);
+
+	if (m_kAliveInstMap.end() == itor)
+	{
+		Tracef("SelectCharacterInstance: no vid by %d\n", VirtualID);
+		return;
+	}
+
+	m_pkInstBind = itor->second;
+}
+
+CInstanceBase * CPythonCharacterManager::GetInstancePtr(DWORD VirtualID)
+{
+	TCharacterInstanceMap::iterator itor = m_kAliveInstMap.find(VirtualID);
+
+	if (m_kAliveInstMap.end() == itor)
+		return NULL;
+
+	return itor->second;
+}
+
+CInstanceBase * CPythonCharacterManager::GetInstancePtrByName(const char *name)
+{
+	TCharacterInstanceMap::iterator itor;
+
+	for (itor = m_kAliveInstMap.begin(); itor != m_kAliveInstMap.end(); itor++)
+	{
+		CInstanceBase * pInstance = itor->second;
+
+		if (!strcmp(pInstance->GetNameString(), name))
+			return pInstance;
+	}
+
+	return NULL;
+}
+
+CInstanceBase * CPythonCharacterManager::GetSelectedInstancePtr()
+{
+	return m_pkInstBind;
+}
+
+CInstanceBase* CPythonCharacterManager::FindClickableInstancePtr()
+{
+	return NULL;
+}
+
+void CPythonCharacterManager::__UpdateSortPickedActorList()
+{
+	__UpdatePickedActorList();
+	__SortPickedActorList();
+}
+
+void CPythonCharacterManager::__UpdatePickedActorList()
+{
+	m_kVct_pkInstPicked.clear();
+
+	TCharacterInstanceMap::iterator i;
+	for (i=m_kAliveInstMap.begin(); i!=m_kAliveInstMap.end(); ++i)
+	{
+		CInstanceBase* pkInstEach=i->second;
+		// 2004.07.17.levites.isShow¸¦ ViewFrustumCheck·Î º¯°æ
+		if (pkInstEach->CanPickInstance())
+		{
+			if (pkInstEach->IsDead())
+			{
+				if (pkInstEach->IntersectBoundingBox())
+					m_kVct_pkInstPicked.push_back(pkInstEach);
+			}
+			else
+			{
+				if (pkInstEach->IntersectDefendingSphere())
+					m_kVct_pkInstPicked.push_back(pkInstEach);
+			}
+		}
+	}
+}
+
+struct CInstanceBase_SLessCameraDistance
+{
+	TPixelPosition m_kPPosEye;
+
+	bool operator() (CInstanceBase* pkInstLeft, CInstanceBase* pkInstRight)
+	{
+		int nLeftDeadPoint=pkInstLeft->IsDead();
+		int nRightDeadPoint=pkInstRight->IsDead();
+
+		if (nLeftDeadPoint<nRightDeadPoint)
+			return true;
+
+		if (pkInstLeft->CalculateDistanceSq3d(m_kPPosEye)<pkInstRight->CalculateDistanceSq3d(m_kPPosEye))
+			return true;
+
+		return false;
+	}
+};
+
+void CPythonCharacterManager::__SortPickedActorList()
+{
+	CCamera * pCamera = CCameraManager::Instance().GetCurrentCamera();
+	const D3DXVECTOR3& c_rv3EyePos=pCamera->GetEye();
+
+	CInstanceBase_SLessCameraDistance kLess;
+	kLess.m_kPPosEye=TPixelPosition(+c_rv3EyePos.x, -c_rv3EyePos.y, +c_rv3EyePos.z);
+
+	std::sort(m_kVct_pkInstPicked.begin(), m_kVct_pkInstPicked.end(), kLess);
+}
+
+void CPythonCharacterManager::__NEW_Pick()
+{
+	__UpdateSortPickedActorList();
+
+	CInstanceBase* pkInstMain=GetMainInstancePtr();
+
+	// Á¤¹?ÇÑ Ã¼Å©
+	{
+		std::vector<CInstanceBase*>::iterator f;
+		for (f=m_kVct_pkInstPicked.begin(); f!=m_kVct_pkInstPicked.end(); ++f)
+		{
+			CInstanceBase* pkInstEach=*f;
+			if (pkInstEach!=pkInstMain && pkInstEach->IntersectBoundingBox())
+			{
+				if (m_pkInstPick)
+					if (m_pkInstPick!=pkInstEach)
+						m_pkInstPick->OnUnselected();
+
+				if (pkInstEach->CanPickInstance())
+				{
+					m_pkInstPick = pkInstEach;
+					m_pkInstPick->OnSelected();
+					return;
+				}
+			}
+		}
+	}
+
+	// ¸øÃ£°ÚÀ¸¸é °Á ¼ø¼­´ë·Î
+	{
+		std::vector<CInstanceBase*>::iterator f;
+		for (f=m_kVct_pkInstPicked.begin(); f!=m_kVct_pkInstPicked.end(); ++f)
+		{
+			CInstanceBase* pkInstEach=*f;
+			if (pkInstEach!=pkInstMain)
+			{
+				if (m_pkInstPick)
+					if (m_pkInstPick!=pkInstEach)
+						m_pkInstPick->OnUnselected();
+
+				if (pkInstEach->CanPickInstance())
+				{
+					m_pkInstPick = pkInstEach;
+					m_pkInstPick->OnSelected();
+					return;
+				}
+			}
+		}
+	}
+
+	if (pkInstMain)
+	if (pkInstMain->CanPickInstance())
+	if (m_kVct_pkInstPicked.end() != std::find(m_kVct_pkInstPicked.begin(), m_kVct_pkInstPicked.end(), pkInstMain))
+	{
+		if (m_pkInstPick)
+			if (m_pkInstPick!=pkInstMain)
+				m_pkInstPick->OnUnselected();			
+
+		m_pkInstPick = pkInstMain;
+		m_pkInstPick->OnSelected();
+		return;
+	}
+
+	if (m_pkInstPick)
+	{
+		m_pkInstPick->OnUnselected();	
+		m_pkInstPick=NULL;
+	}
+}
+
+void CPythonCharacterManager::__OLD_Pick()
+{
+	for (TCharacterInstanceMap::iterator itor = m_kAliveInstMap.begin(); itor != m_kAliveInstMap.end(); ++itor)
+	{
+		CInstanceBase * pkInstEach = itor->second;
+
+		if (pkInstEach == m_pkInstMain)
+			continue;
+
+		if (pkInstEach->IntersectDefendingSphere())
+		{
+			if (m_pkInstPick)
+				if (m_pkInstPick!=pkInstEach)
+					m_pkInstPick->OnUnselected();	
+
+			m_pkInstPick = pkInstEach;
+			m_pkInstPick->OnSelected();
+
+			return;
+		}
+	}
+
+	if (m_pkInstPick)
+	{
+		m_pkInstPick->OnUnselected();	
+		m_pkInstPick=NULL;
+	}
+}
+
+int CPythonCharacterManager::PickAll()
+{
+	for (TCharacterInstanceMap::iterator itor = m_kAliveInstMap.begin(); itor != m_kAliveInstMap.end(); ++itor)
+	{
+		CInstanceBase * pInstance = itor->second;
+
+		if (pInstance->IntersectDefendingSphere())
+			return pInstance->GetVirtualID();
+	}
+
+	return -1;
+}
+
+CInstanceBase * CPythonCharacterManager::GetCloseInstance(CInstanceBase * pInstance)
+{
+	float fMinDistance = 10000.0f;
+	CInstanceBase * pCloseInstance = nullptr;
+
+	TCharacterInstanceMap::iterator itor = m_kAliveInstMap.begin();
+	for (; itor != m_kAliveInstMap.end(); ++itor)
+	{
+		CInstanceBase * pTargetInstance = itor->second;
+
+		if (pTargetInstance == pInstance)
+			continue;
+
+		DWORD dwVirtualNumber = pTargetInstance->GetVirtualNumber();
+		if (CPythonNonPlayer::ON_CLICK_EVENT_BATTLE != CPythonNonPlayer::Instance().GetEventType(dwVirtualNumber))
+			continue;
+
+		float fDistance = pInstance->GetDistance(pTargetInstance);
+		if (fDistance < fMinDistance)
+		{
+			fMinDistance = fDistance;
+			pCloseInstance = pTargetInstance;
+		}
+	}
+
+	return pCloseInstance;
+}
+
+void CPythonCharacterManager::RefreshAllPCTextTail()
+{
+	CPythonCharacterManager::CharacterIterator itor = CharacterInstanceBegin();
+	CPythonCharacterManager::CharacterIterator itorEnd = CharacterInstanceEnd();
+	for (; itor != itorEnd; ++itor)
+	{
+		CInstanceBase * pInstance = *itor;
+		if (!pInstance->IsPC())
+			continue;
+
+		pInstance->RefreshTextTail();
+	}
+}
+
+void CPythonCharacterManager::RefreshAllGuildMark()
+{
+	CPythonCharacterManager::CharacterIterator itor = CharacterInstanceBegin();
+	CPythonCharacterManager::CharacterIterator itorEnd = CharacterInstanceEnd();
+	for (; itor != itorEnd; ++itor)
+	{
+		CInstanceBase * pInstance = *itor;
+		if (!pInstance->IsPC())
+			continue;
+
+		pInstance->ChangeGuild(pInstance->GetGuildID()
+#ifdef ENABLE_GUILD_LEADER_TEXTAIL
+			, pInstance->GetGuildLeader()
+#endif
+		);
+		pInstance->RefreshTextTail();
+	}
+}
+
+void CPythonCharacterManager::DeleteAllInstances()
+{
+	DestroyAliveInstanceMap();
+	DestroyDeadInstanceList();
+}
+
+
+void CPythonCharacterManager::DestroyAliveInstanceMap()
+{
+	for (TCharacterInstanceMap::iterator i = m_kAliveInstMap.begin(); i != m_kAliveInstMap.end(); ++i)
+		CInstanceBase::Delete(i->second);
+
+	m_kAliveInstMap.clear();
+}
+
+void CPythonCharacterManager::DestroyDeadInstanceList()
+{
+	std::for_each(m_kDeadInstList.begin(), m_kDeadInstList.end(), CInstanceBase::Delete);
+	m_kDeadInstList.clear();
+}
+
+void CPythonCharacterManager::Destroy()
+{
+	DeleteAllInstances();
+
+	CInstanceBase::DestroySystem();
+
+	__Initialize();
+}
+
+void CPythonCharacterManager::__Initialize()
+{
+	memset(m_adwPointEffect, 0, sizeof(m_adwPointEffect));
+	m_pkInstMain = nullptr;
+	m_pkInstBind = nullptr;
+	m_pkInstPick = nullptr;
+	m_v2PickedInstProjPos = D3DXVECTOR2(0.0f, 0.0f);
+	m_bPartyMatchOff = false;
+}
+
+CPythonCharacterManager::CPythonCharacterManager()
+{
+	__Initialize();
+}
+
+CPythonCharacterManager::~CPythonCharacterManager()
+{
+	Destroy();
+}
+
+#ifdef __AUTO_HUNT__
+#include "PythonPlayer.h"
+bool FindLowerDistance(const std::pair<CInstanceBase*, float>& i, const std::pair<CInstanceBase*, float>& j){return i.second < j.second;}
+bool CPythonCharacterManager::CanAttackToTarget(CInstanceBase* pkInstMain, CInstanceBase* pkInstInstance)
+{
+	if (!pkInstInstance)
+		return true;
+	else if (pkInstInstance->IsDead())
+		return true;
+	for (TCharacterInstanceMap::iterator itEx = m_kAliveInstMap.begin(); itEx != m_kAliveInstMap.end(); ++itEx)
+	{
+		CInstanceBase* nearInstance = itEx->second;
+		if (nearInstance->IsPC() && !nearInstance->IsDead() && nearInstance != pkInstMain)// && nearInstance->IsAttacking())
+		{
+			const float fDistanceCheck = nearInstance->GetDistance(pkInstInstance);
+			if (fDistanceCheck < 200.0)
+				return true;
+		}
+	}
+	return false;
+}
+CInstanceBase* CPythonCharacterManager::FindVictim(CInstanceBase* pkInstMain, float fMaxDistance, TPixelPosition* startPoint, const bool m_bAutoHuntMob, const bool m_bAutoHuntStone)
+{
+	if (!pkInstMain)
+		return NULL;
+	IPhysicsWorld* pWorld = IPhysicsWorld::GetPhysicsWorld();
+	if (!pWorld)
+		return NULL;
+	const D3DXVECTOR3& c_rv3Src = pkInstMain->GetGraphicThingInstanceRef().GetPosition();
+	const DWORD targetPlayerVID = CPythonPlayer::Instance().GetTargetVID();
+	D3DXVECTOR3 v3Movement, c_v3Dst;
+	TPixelPosition targetPos;
+	std::vector<std::pair<CInstanceBase*, float>> m_vecVictimList;
+	
+	for (TCharacterInstanceMap::iterator itor = m_kAliveInstMap.begin(); itor != m_kAliveInstMap.end(); ++itor)
+	{
+		CInstanceBase* pkVictim = itor->second;
+		if (pkVictim == pkInstMain || pkVictim->IsDead() || pkVictim->GetVirtualID() == targetPlayerVID || !pkInstMain->IsAttackableInstance(*pkVictim))
+			continue;
+		else if (pkVictim->IsEnemy() && !m_bAutoHuntMob)
+			continue;
+		else if (pkVictim->IsStone() && !m_bAutoHuntStone)
+			continue;
+		v3Movement.x = 0.0, v3Movement.y = 0.0, v3Movement.z = 0.0;
+		pkVictim->NEW_GetPixelPosition(&targetPos);
+		c_v3Dst.x = targetPos.x, c_v3Dst.y = -targetPos.y, c_v3Dst.z = c_rv3Src.z;
+		const D3DXVECTOR3 c_v3Delta = c_v3Dst - c_rv3Src;
+		const int whileCount = 100;
+		const D3DXVECTOR3 inc = c_v3Delta / whileCount;
+		bool hasPhysicalBlock = false;
+		for (int i = 0; i < whileCount; ++i)
+		{
+			if (pWorld->isPhysicalCollision(c_rv3Src + v3Movement))
+			{
+				hasPhysicalBlock = true;
+				break;
+			}
+			v3Movement += inc;
+		}
+		// Engelleme kontrolü - eğer engel varsa ve saldırı menzilinde değilse atla
+		// Ama saldırı menzilindeyse engel olsa bile hedefi kabul et
+		if (hasPhysicalBlock && !CanAttackToTarget(pkInstMain, pkVictim))
+			continue;
+
+		// StartPoint'e göre mesafe (maksimum menzil kontrolü)
+		const float fDistanceFromStart = GetDistanceNew(*startPoint, targetPos);
+		if (fDistanceFromStart >= fMaxDistance)
+			continue;
+
+		// Oyuncuya göre mesafe (öncelik - en yakın hedef seçilecek)
+		TPixelPosition mainPos;
+		pkInstMain->NEW_GetPixelPosition(&mainPos);
+		const float fDistanceFromPlayer = GetDistanceNew(mainPos, targetPos);
+
+		// Oyuncuya göre mesafeyi öncelik olarak kullan
+		m_vecVictimList.emplace_back(pkVictim, fDistanceFromPlayer);
+	}
+	if (m_vecVictimList.size())
+	{
+		// En yakın hedefi seç (oyuncuya göre mesafe) - rastgele seçimi kaldırdık
+		// Böylece her zaman en yakın hedefe saldırır, ilk slota vurmadan diğerine geçmez
+			std::sort(m_vecVictimList.begin(), m_vecVictimList.end(), FindLowerDistance);
+		return m_vecVictimList[0].first;
+	}
+	return NULL;
+}
+#endif
+
+#ifdef ENABLE_ULTIMATE_REGEN
+void CPythonCharacterManager::GetMobWithVnum(DWORD bossVnum, std::vector<CInstanceBase*>& m_Data)
+{
+	m_Data.clear();
+	for (auto& it : m_kAliveInstMap)
+	{
+		CInstanceBase* pInstance = it.second;
+		if (pInstance->GetRace() == bossVnum)
+			m_Data.emplace_back(pInstance);
+	}
+}
+#endif

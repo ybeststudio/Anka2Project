@@ -1,0 +1,163 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    TEXT_1=Back to School;\
+]
+[ITEM=95109; X=478; Y=66]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=123; TABLE_HEADERS=Welcome; TABLE_WIDTHS=520]
+[TR; H=48]
+[TD; TEXT={WK:685}; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=206;\
+    ANCHOR=beginner_event_overview;\
+    TEXT_1=Event Overview;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=256; TABLE_HEADERS=Character Level|Daily Dungeon|Daily Quests; TABLE_WIDTHS=200|160|160]
+[TR; H=48]
+[TD; TEXT=Players below level 91; ALIGN=center]
+[TD; TEXT=|cffFFD37A1 run|r; ALIGN=center]
+[TD; TEXT=|cffFFD37A6 quests|r; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=350; TABLE_HEADERS=Event Starts|Event Ends; TABLE_WIDTHS=260|260]
+[TR; H=46]
+[TD; TEXT=|cffFFD37ASep 11 - 19:00|r; ALIGN=center]
+[TD; TEXT=|cffFFD37ASep 25 - 23:59|r; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=432; TABLE_HEADERS=Eligibility; TABLE_WIDTHS=520]
+[TR; H=40]
+[TD; TEXT=New adventurers and familiar faces are welcome below level 91.; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=507;\
+    ANCHOR=beginner_event_dungeon;\
+    TEXT_1=Beginner Dungeon & Buff;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=557; TABLE_HEADERS=Dungeon; TABLE_WIDTHS=520]
+[TR; H=48]
+[TD; TEXT={WK:689}; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=625; TABLE_HEADERS=Beginner Buff|Effect; TABLE_WIDTHS=390|130]
+[TR; H=52]
+[TD; TEXT=Biologist Research Cooldown; ALIGN=center]
+[TD; TEXT=|cff8FD6A3-60%|r; ALIGN=center]
+[TR; H=52]
+[TD; TEXT={WK:518}; ALIGN=center]
+[TD; TEXT=|cff8FD6A3-30%|r; ALIGN=center]
+[TR; H=52]
+[TD; TEXT={WK:725}; ALIGN=center]
+[TD; TEXT=|cff8FD6A3+10%|r; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=813; TABLE_HEADERS=Level Limit; TABLE_WIDTHS=520]
+[TR; H=72]
+[TD; TEXT={WK:714}; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=920;\
+    ANCHOR=beginner_event_activities;\
+    TEXT_1=Daily Quests & Rewards;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=970; TABLE_HEADERS=Daily Quests|Coins per Quest|Coins per Day; TABLE_WIDTHS=170|170|180]
+[TR; H=48]
+[TD; TEXT=|cffFFD37A6|r; ALIGN=center]
+[TD; TEXT=|cffFFD37A10|r; ALIGN=center]
+[TD; TEXT=|cff8FD6A3Up to 60|r; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1064; TABLE_HEADERS=Activity|Rewards; TABLE_WIDTHS=140|380]
+[TR; H=48]
+[TD; TEXT=|cffFFD37ABeginner Quests|r; ALIGN=center]
+[TD; TEXT={WK:686}; ALIGN=center]
+[TR; H=48]
+[TD; TEXT=|cffFFD37ABeginner Shop|r; ALIGN=center]
+[TD; TEXT={WK:687}; ALIGN=center]
+[TR; H=48]
+[TD; TEXT=|cffFFD37ABeginner Shrines|r; ALIGN=center]
+[TD; TEXT={WK:688}; ALIGN=center]
+[TABLE_END]
+[\
+    TITLE;\
+    X=10;\
+    Y=1265;\
+    TEXT_1={WK:724};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1315; TABLE_HEADERS=Golden Snitch; TABLE_WIDTHS=520]
+[TR; H=48]
+[TD; TEXT={WK:715}; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1373; TABLE_HEADERS=Details|Information; TABLE_WIDTHS=140|380]
+[TR; H=42]
+[TD; TEXT={WK:716}; ALIGN=center]
+[TD; TEXT={WK:717}; ALIGN=center]
+[TR; H=42]
+[TD; TEXT={WK:718}; ALIGN=center]
+[TD; TEXT={WK:719}; ALIGN=center]
+[TR; H=60]
+[TD; TEXT={WK:720}; ALIGN=center]
+[TD; TEXT={WK:721}; ALIGN=center]
+[TR; H=46]
+[TD; TEXT={WK:722}; ALIGN=center]
+[TD; TEXT={WK:723}; ALIGN=center]
+[TABLE_END]
+[\
+    TITLE;\
+    X=10;\
+    Y=1592;\
+    ANCHOR=beginner_event_spell_book;\
+    TEXT_1=Magica's Spell Book;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1642;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=95109;\
+    TEXT_1=|cffFFD37AMagica's Spell Book|r\nComplete the quests for each upgrade\nto advance your book from +0 to +9.;\
+    Y_PADDING=12;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1716; TABLE_HEADERS=Upgrade|Required Quests; TABLE_WIDTHS=100|420]
+[TR; H=72]
+[TD; TEXT=|cffFFD37A+0 -> +1|r; ALIGN=center]
+[TD; TEXT={WK:690}; ALIGN=center]
+[TR; H=72]
+[TD; TEXT=|cffFFD37A+1 -> +2|r; ALIGN=center]
+[TD; TEXT={WK:691}; ALIGN=center]
+[TR; H=72]
+[TD; TEXT=|cffFFD37A+2 -> +3|r; ALIGN=center]
+[TD; TEXT={WK:693}; ALIGN=center]
+[TR; H=72]
+[TD; TEXT=|cffFFD37A+3 -> +4|r; ALIGN=center]
+[TD; TEXT={WK:694}; ALIGN=center]
+[TR; H=72]
+[TD; TEXT=|cffFFD37A+4 -> +5|r; ALIGN=center]
+[TD; TEXT={WK:695}; ALIGN=center]
+[TR; H=72]
+[TD; TEXT=|cffFFD37A+5 -> +6|r; ALIGN=center]
+[TD; TEXT={WK:696}; ALIGN=center]
+[TR; H=72]
+[TD; TEXT=|cffFFD37A+6 -> +7|r; ALIGN=center]
+[TD; TEXT={WK:697}; ALIGN=center]
+[TR; H=72]
+[TD; TEXT=|cffFFD37A+7 -> +8|r; ALIGN=center]
+[TD; TEXT={WK:698}; ALIGN=center]
+[TR; H=72]
+[TD; TEXT=|cffFFD37A+8 -> +9|r; ALIGN=center]
+[TD; TEXT={WK:699}; ALIGN=center]
+[TABLE_END]
+
+
+

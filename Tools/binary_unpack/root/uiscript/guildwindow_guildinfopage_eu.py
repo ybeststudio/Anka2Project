@@ -1,0 +1,323 @@
+if __USE_DYNAMIC_MODULE__:
+	import pyapi
+
+app = __import__(pyapi.GetModuleName("app"))
+
+import uiScriptLocale
+
+SMALL_VALUE_FILE = "d:/ymir work/ui/public/Parameter_Slot_01.sub"
+LARGE_VALUE_FILE = "d:/ymir work/ui/public/Parameter_Slot_03.sub"
+XLARGE_VALUE_FILE = "d:/ymir work/ui/public/Parameter_Slot_04.sub"
+
+XXLARGE_VALUE_FILE = "d:/ymir work/ui/public/Parameter_Slot_05.sub"
+BUTTON_ROOT = "d:/ymir work/ui/game/guild/guildbuttons/infopage/"
+PLUS_WITDH = 80
+PLUS_RIGHT_WITDH = 40
+PLUS_LEFT_WITDH = 40
+window = {
+	"name" : "GuildWindow_GuildInfoPage",
+
+	"x" : 8,
+	"y" : 30,
+
+	"width" : 360 + PLUS_WITDH,
+	"height" : 298,
+
+	"children" :
+	(
+
+		## Guild Info Title
+		{
+			"name":"Guild_Info_Title_Bar", "type":"horizontalbar", "x":5, "y":10, "width":167 + PLUS_WITDH/2,
+			"children" :
+			(
+				{ "name":"Guild_Info_Point_Value", "type":"text", "x":8, "y":3, "text":uiScriptLocale.GUILD_INFO, },
+
+				## GuildName
+				{
+					"name" : "GuildName", "type" : "text", "x" : 3, "y" : 31, "text" : uiScriptLocale.GUILD_INFO_NAME,
+					"children" :
+					(
+						{
+							"name" : "GuildNameSlot",
+							"type" : "image",
+							"x" : 70 + PLUS_LEFT_WITDH,
+							"y" : -2,
+							"image" : LARGE_VALUE_FILE,
+							"children" :
+							(
+								{"name" : "GuildNameValue", "type":"text", "text":uiScriptLocale.GUILD_INFO_NAME_VALUE, "x":0, "y":0, "all_align":"center"},
+							),
+						},
+					),
+				},
+
+				## GuildMaster
+				{
+					"name" : "GuildMaster", "type" : "text", "x" : 3, "y" : 57, "text" : uiScriptLocale.GUILD_INFO_MASTER,
+					"children" :
+					(
+						{
+							"name" : "GuildMasterNameSlot",
+							"type" : "image",
+							"x" : 70 + PLUS_LEFT_WITDH,
+							"y" : -2,
+							"image" : LARGE_VALUE_FILE,
+							"children" :
+							(
+								{"name" : "GuildMasterNameValue", "type":"text", "text":uiScriptLocale.GUILD_INFO_MASTER_VALUE, "x":0, "y":0, "all_align":"center"},
+							),
+						},
+					),
+				},
+
+				## GuildLevel
+				{
+					"name" : "GuildLevel", "type" : "text", "x" : 3, "y" : 93, "text" : uiScriptLocale.GUILD_INFO_LEVEL,
+					"children" :
+					(
+						{
+							"name" : "GuildLevelSlot",
+							"type" : "slotbar",
+							"x" : 70 + PLUS_LEFT_WITDH,
+							"y" : -2,
+							"width" : 45,
+							"height" : 17,
+							"children" :
+							(
+								{"name" : "GuildLevelValue", "type":"text", "text":"30", "x":0, "y":0, "all_align":"center"},
+							),
+						},
+					),
+				},
+
+				## CurrentExperience
+				{
+					"name" : "CurrentExperience", "type" : "text", "x" : 3, "y" : 119, "text" : uiScriptLocale.GUILD_INFO_CUR_EXP,
+					"children" :
+					(
+						{
+							"name" : "CurrentExperienceSlot",
+							"type" : "image",
+							"x" : 70 + PLUS_LEFT_WITDH,
+							"y" : -2,
+							"image" : LARGE_VALUE_FILE,
+							"children" :
+							(
+								{"name" : "CurrentExperienceValue", "type":"text", "text":"10000000", "x":0, "y":0, "all_align":"center"},
+							),
+						},
+					),
+				},
+
+				## LastExperience
+				{
+					"name" : "LastExperience", "type" : "text", "x" : 3, "y" : 145, "text" : uiScriptLocale.GUILD_INFO_REST_EXP,
+					"children" :
+					(
+						{
+							"name" : "LastExperienceSlot",
+							"type" : "image",
+							"x" : 70 + PLUS_LEFT_WITDH,
+							"y" : -2,
+							"image" : LARGE_VALUE_FILE,
+							"children" :
+							(
+								{"name" : "LastExperienceValue", "type":"text", "text":"123123123123", "x":0, "y":0, "all_align":"center"},
+							),
+						},
+					),
+				},
+
+				## GuildMemberCount
+				{
+					"name" : "GuildMemberCount", "type" : "text", "x" : 3, "y" : 171, "text" : uiScriptLocale.GUILD_INFO_MEMBER_NUM,
+					"children" :
+					(
+						{
+							"name" : "GuildMemberCountSlot",
+							"type" : "image",
+							"x" : 70 + PLUS_LEFT_WITDH,
+							"y" : -2,
+							"image" : LARGE_VALUE_FILE,
+							"children" :
+							(
+								{"name" : "GuildMemberCountValue", "type":"text", "text":"30 / 32", "x":0, "y":0, "all_align":"center"},
+							),
+						},
+					),
+				},
+
+				## GuildMemberLevelAverage
+				{
+					"name" : "GuildMemberLevelAverage", "type" : "text", "x" : 3, "y" : 197, "text" : uiScriptLocale.GUILD_INFO_MEMBER_AVG_LEVEL,
+					"children" :
+					(
+						{
+							"name" : "GuildMemberLevelAverageSlot",
+							"type" : "image",
+							"x" : 108 + PLUS_LEFT_WITDH,
+							"y" : -2,
+							"image" : SMALL_VALUE_FILE,
+							"children" :
+							(
+								{"name" : "GuildMemberLevelAverageValue", "type":"text", "text":"53", "x":0, "y":0, "all_align":"center"},
+							),
+						},
+					),
+				},
+
+				## GuildMoney
+				{
+					"name" : "GuildMoney", "type" : "text", "x" : 3, "y" : 230, "text" : uiScriptLocale.GUILD_MONEY,
+					"children" :
+					(
+						{
+							"name" : "GuildMoneySlot",
+							"type" : "image",
+							"x" : 70 + PLUS_LEFT_WITDH,
+							"y" : -2,
+							"image" : LARGE_VALUE_FILE,
+							"children" :
+							(
+								{"name" : "GuildMoneyValue", "type":"text", "text":"9999999", "x":0, "y":0, "all_align":"center"},
+							),
+						},
+					),
+				},
+			),
+		},
+
+		## Button
+		{
+			"name" : "OfferButton",
+			"type" : "button",
+			"x" : 127 + PLUS_LEFT_WITDH,
+			"y" : 100,
+			"default_image" : BUTTON_ROOT+"OfferButton00.sub",
+			"over_image" : BUTTON_ROOT+"OfferButton01.sub",
+			"down_image" : BUTTON_ROOT+"OfferButton02.sub",
+		},
+		
+		## Button
+		{
+			"name" : "GuildListButton",
+			"type" : "button",
+			"x" : 5,
+			"y" : 276,
+			"default_image" : BUTTON_ROOT+"GuildListButton00.sub",
+			"over_image" : BUTTON_ROOT+"GuildListButton01.sub",
+			"down_image" : BUTTON_ROOT+"GuildListButton02.sub",
+		},
+
+		###############################################################################################################
+
+		## Guild Mark Title
+		{
+			"name":"Guild_Mark_Title_Bar", "type":"horizontalbar", "x":188 + PLUS_RIGHT_WITDH, "y":10, "width":167 + PLUS_RIGHT_WITDH,
+			"children" :
+			(
+
+				{ "name":"Guild_Mark_Title", "type":"text", "x":8, "y":3, "text":uiScriptLocale.GUILD_MARK, },
+
+				## LargeGuildMark
+				{
+					"name" : "LargeGuildMarkSlot",
+					"type" : "slotbar",
+					"x" : 5,
+					"y" : 24,
+					"width" : 48+1,
+					"height" : 36+1,
+					"children" :
+					(
+						{
+							"name" : "LargeGuildMark",
+							"type" : "mark",
+							"x" : 1,
+							"y" : 1,
+						},
+					),
+				},
+
+			),
+		},
+
+		## UploadButton
+		{
+			"name" : "UploadGuildMarkButton",
+			"type" : "button",
+			"x" : 260 + PLUS_WITDH,
+			"y" : 33,
+			"default_image" : BUTTON_ROOT+"UploadGuildMarkButton00.sub",
+			"over_image" : BUTTON_ROOT+"UploadGuildMarkButton01.sub",
+			"down_image" : BUTTON_ROOT+"UploadGuildMarkButton02.sub",
+		},
+		{
+			"name" : "UploadGuildSymbolButton",
+			"type" : "button",
+			"x" : 260 + PLUS_WITDH,
+			"y" : 33 + 23,
+			"default_image" : BUTTON_ROOT+"UploadGuildSymbolButton00.sub",
+			"over_image" : BUTTON_ROOT+"UploadGuildSymbolButton01.sub",
+			"down_image" : BUTTON_ROOT+"UploadGuildSymbolButton02.sub",
+		},
+
+		## GuildWar Title
+		{
+			"name":"Guild_War_Title_Bar", "type":"horizontalbar", "x":188 + PLUS_RIGHT_WITDH, "y":85, "width":167 + PLUS_RIGHT_WITDH,
+			"children" :
+			(
+
+				{ "name":"Guild_War_Title", "type":"text", "x":8, "y":3, "text":uiScriptLocale.GUILD_INFO_ENEMY_GUILD, },
+
+				{
+					"name" : "EnemyGuildSlot",
+					"type" : "image",
+					"x" : 4 + PLUS_RIGHT_WITDH,
+					"y" : 27 + 26*0,
+					"image" : XXLARGE_VALUE_FILE,
+					"children" :
+					(
+						{"name" : "EnemyGuildName", "type":"text", "text":uiScriptLocale.GUILD_INFO_ENEMY_GUILD_EMPTY, "x":0, "y":0, "all_align":"center"},
+					),
+				},
+			),
+		},
+
+		## GuildBuff Title
+		{
+			"name":"Guild_Buff_Title_Bar", "type":"horizontalbar", "x":188 + PLUS_RIGHT_WITDH, "y":138, "width":167 + PLUS_RIGHT_WITDH,
+			"children" :
+			(
+				{ "name":"Guild_Buff_Title", "type":"text", "x":8, "y":3, "text":uiScriptLocale.GUILDWINDOW_BASE_BUFF, },
+			),
+		},			
+
+		## DeclareWar
+		{
+			"name" : "DeclareWarButton",
+			"type" : "button",
+			"x" : 250 + 15 + PLUS_WITDH,
+			"y" : 276,
+			"default_image" : BUTTON_ROOT+"DeclareWarButton00.sub",
+			"over_image" : BUTTON_ROOT+"DeclareWarButton01.sub",
+			"down_image" : BUTTON_ROOT+"DeclareWarButton02.sub",
+		},
+
+	),
+}
+
+if app.ENABLE_GUILD_DONATE_ATTENDANCE:
+	window["children"] = window["children"] + (
+		## Donate Button
+		{
+			"name" : "DonateButton",
+			"type" : "button",
+			"x" : 127 + PLUS_LEFT_WITDH,
+			"y" : 100,
+			"default_image" : BUTTON_ROOT+"OfferButton00.sub",
+			"over_image" : BUTTON_ROOT+"OfferButton01.sub",
+			"down_image" : BUTTON_ROOT+"OfferButton02.sub",
+		},
+	)
+	

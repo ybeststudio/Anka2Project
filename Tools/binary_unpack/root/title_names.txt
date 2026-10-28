@@ -1,0 +1,15 @@
+1000 Metin+
+1001 Destansý
+1002 Son kurtulan
+1003 Yenilmez
+1004 Savaþ habercisi
+1005 Kasap
+2000 Þanslý
+2001 Efsanevi
+2002 Mistik
+2003 Güneþseven
+3000 Kahramanca
+3001 Gizemli
+3002 Kutup yýldýzý
+3003 Savaþ bölgesi
+3004 Battle royale

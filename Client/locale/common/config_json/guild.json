@@ -1,0 +1,109 @@
+{
+  "shop": {
+    "silver": [
+      { "vnum": 71001, "count": 1, "price": 5, "level": 1 },
+      { "vnum": 25040, "count": 5, "price": 3, "level": 1 },
+      { "vnum": 71094, "count": 1, "price": 7, "level": 2 },
+      { "vnum": 98500, "count": 1, "price": 3, "level": 2 },
+      { "vnum": 70064, "count": 10, "price": 4, "level": 3 },
+      { "vnum": 70063, "count": 10, "price": 2, "level": 3 },
+      { "vnum": 65152, "count": 1, "price": 25, "level": 4 },
+      { "vnum": 70043, "count": 1, "price": 10, "level": 4 },
+      { "vnum": 55047, "count": 1, "price": 5, "level": 4 },
+      { "vnum": 50260, "count": 10, "price": 30, "level": 5 },
+      { "vnum": 70005, "count": 1, "price": 10, "level": 5 },
+      { "vnum": 80019, "count": 10, "price": 20, "level": 6 },
+      { "vnum": 100300, "count": 1, "price": 10, "level": 6 },
+      { "vnum": 71153, "count": 1, "price": 40, "level": 7 },
+      { "vnum": 65172, "count": 1, "price": 40, "level": 7 },
+      { "vnum": 90010, "count": 1, "price": 40, "level": 8 },
+      { "vnum": 40220, "count": 1, "price": 10, "level": 8 },
+      { "vnum": 55048, "count": 1, "price": 15, "level": 8 },
+      { "vnum": 90011, "count": 1, "price": 100, "level": 9 },
+      { "vnum": 70035, "count": 1, "price": 75, "level": 9 },
+      { "vnum": 90012, "count": 1, "price": 200, "level": 10 },
+      { "vnum": 71025, "count": 1, "price": 200, "level": 10 },
+      { "vnum": 71001, "count": 40, "price": 140, "level": 11 },
+      { "vnum": 71094, "count": 40, "price": 200, "level": 11 },
+      { "vnum": 40209, "count": 10, "price": 120, "level": 12 },
+      { "vnum": 98500, "count": 40, "price": 85, "level": 12 },
+      { "vnum": 98506, "count": 40, "price": 65, "level": 12 },
+      { "vnum": 58002, "count": 200, "price": 100, "level": 14 },
+      { "vnum": 58004, "count": 200, "price": 200, "level": 15 },
+      { "vnum": 58005, "count": 200, "price": 400, "level": 16 },
+      { "vnum": 40210, "count": 5, "price": 50, "level": 14 },
+      { "vnum": 50260, "count": 200, "price": 500, "level": 15 },
+      { "vnum": 65140, "count": 500, "price": 35, "level": 15 },
+      { "vnum": 80019, "count": 200, "price": 350, "level": 16 },
+      { "vnum": 40220, "count": 5, "price": 40, "level": 16 },
+      { "vnum": 55049, "count": 1, "price": 30, "level": 16 },
+      { "vnum": 71153, "count": 5, "price": 105, "level": 17 },
+      { "vnum": 65172, "count": 10, "price": 380, "level": 17 },
+      { "vnum": 90010, "count": 5, "price": 160, "level": 18 },
+      { "vnum": 50259, "count": 10, "price": 400, "level": 18 },
+      { "vnum": 90011, "count": 5, "price": 400, "level": 19 },
+      { "vnum": 70035, "count": 5, "price": 300, "level": 19 },
+      { "vnum": 90012, "count": 5, "price": 800, "level": 20 },
+      { "vnum": 71025, "count": 5, "price": 800, "level": 20 },
+      { "vnum": 40399, "count": 1, "price": 650, "level": 20 }
+    ],
+    "gold": [
+      { "vnum": 65112, "count": 1, "price": 300, "level": 1 },
+      { "vnum": 65120, "count": 1, "price": 1000, "level": 1 }
+    ]
+  },
+  "donation": {
+    "types": [
+      { "name": "free", "vnum": 65113, "limit": 20, "yang": 100000, "gold": 1, "silver": 1, "skill_double_reward": true },
+      { "name": "premium", "vnum": 65114, "limit": 10, "yang": 0, "gold": 10, "silver": 10, "skill_double_reward": true }
+    ]
+  },
+  "quest": {
+    "duration": 3600,
+    "rewards": {
+      "1": { "exp": 300000, "gold": 140 },
+      "2": { "exp": 375000, "gold": 180 },
+      "3": { "exp": 450000, "gold": 225 }
+    },
+    "objectives": {
+      "easy": { "metin": 500, "dungeon": 15, "boss": 20, "fish": 250, "mining": 250 },
+      "medium": { "metin": 1500, "dungeon": 25, "boss": 30, "fish": 500, "mining": 500 },
+      "hard": { "metin": 4000, "dungeon": 40, "boss": 50, "fish": 1000, "mining": 1000 }
+    },
+    "weekly": { "metin": 4, "dungeon": 4, "boss": 4, "fish": 4, "mining": 0 },
+    "silver_rewards": [
+      { "type": 1, "name": "metin", "threshold": 50, "silver": 3 },
+      { "type": 2, "name": "dungeon", "threshold": 1, "silver": 6 },
+      { "type": 4, "name": "fish", "threshold": 10, "silver": 3 },
+      { "type": 3, "name": "boss", "threshold": 1, "silver": 6 }
+    ]
+  },
+  "skill": {
+    "activation_base_energy_cost": 50,
+    "skill_point_exp_max": 100000,
+    "max_level": 10,
+    "donation_item_vnums": [90010, 90011, 90012],
+    "heal_energy_item_vnum": 65112,
+    "boost_success_item_vnum": 65110,
+    "boost_crit_item_vnum": 65111,
+    "donation_success_rate_base": 0.3,
+    "donation_success_rate_boost": 0.7,
+    "donation_crit_rate_base": 0.0,
+    "donation_crit_rate_boost": 0.5,
+    "gold_cost_by_level": [750, 1000, 2000, 4000, 7000, 10000, 13000, 16000, 20000, 25000],
+    "skill_point_cost_by_level": [1, 2, 3, 5, 7, 9, 11, 15, 30, 50],
+    "special_skills": [
+      { "name": "metin", "point": 163, "values": [0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 15] },
+      { "name": "boss", "point": 164, "values": [0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 15] },
+      { "name": "refine", "point": 190, "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
+      { "name": "dungeon_cooldown", "point": 189, "values": [0, 3, 5, 7, 10, 15, 20, 25, 30, 40, 50] },
+      { "name": "mine_fish", "point": 183, "values": [0, 2, 4, 6, 8, 10, 12, 15, 20, 25, 30] },
+      { "name": "members", "point": 0, "values": [0, 2, 4, 6, 9, 12, 15, 18, 21, 25, 30] },
+      { "name": "quest", "point": 0, "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
+      { "name": "silver", "point": 0, "values": [0, 3, 5, 7, 10, 15, 20, 25, 30, 40, 50] },
+      { "name": "donation", "point": 0, "values": [0, 3, 5, 7, 10, 15, 20, 25, 30, 40, 50] },
+      { "name": "energy", "point": 0, "values": [0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 15] }
+    ]
+  }
+}
+

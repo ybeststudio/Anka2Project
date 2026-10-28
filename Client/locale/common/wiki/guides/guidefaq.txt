@@ -1,0 +1,245 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    TEXT_1=FAQ;\
+]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=117;\
+    ANCHOR=faq_progression;\
+    TEXT_1=Progression Questions;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=168; TABLE_HEADERS=Question|Answer; TABLE_WIDTHS=170|350]
+[TR; H=96]
+[TD; TEXT=Equipment or\npermanent progression?; ALIGN=center]
+[TD; TEXT=Permanent progression should usually come first.\nPvM Buff, Dews, Herbalism, Biologist,\nBoss/Metin Destroyer and Leadership stay useful.\nEquipment will eventually be replaced.; ALIGN=center]
+[TR; H=82]
+[TD; TEXT=Should I wait for\na perfect build?; ALIGN=center]
+[TD; TEXT=No. A good build that lets you progress now\nis better than a perfect build finished\nseveral level brackets too late.; ALIGN=center]
+[TR; H=96]
+[TD; TEXT=Replace equipment at\nevery level bracket?; ALIGN=center]
+[TD; TEXT=No. Replacing full gear too often burns Yang.\nFrom levels 55 - 75, keep your current gear\nand focus on permanent systems.; ALIGN=center]
+[TR; H=96]
+[TD; TEXT=How do I know if\nI am strong enough?; ALIGN=center]
+[TD; TEXT=Compare your Critical Damage and DPS\nwith the guide thresholds. If you are below them,\nimprove damage and permanent systems first.; ALIGN=center]
+[TR; H=96]
+[TD; TEXT=Which bonuses should\nI use?; ALIGN=center]
+[TD; TEXT=Use Animal for Wukong, Sythra\nand Spider Baroness. Use Undead for\nDeath Reaper, Azrael and Tower content.; ALIGN=center]
+[TR; H=82]
+[TD; TEXT=When should I review\nCostume and Mount?; ALIGN=center]
+[TD; TEXT=Review them whenever you change dungeon,\nmap, enemy race or Element.; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=732; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=54]
+[TD; TEXT=Color(Permanent systems should stay your main investment\nbecause they keep value in every future level bracket.); ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=812;\
+    ANCHOR=faq_daily;\
+    TEXT_1=Daily Progression;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=863; TABLE_HEADERS=Question|Answer; TABLE_WIDTHS=170|350]
+[TR; H=82]
+[TD; TEXT=Which daily activity\nshould I never skip?; ALIGN=center]
+[TD; TEXT=Vote daily for Coins and choose the useful bonus.\nIt takes less than one minute and gives\nfree progression resources.; ALIGN=center]
+[TR; H=74]
+[TD; TEXT=Why avoid delaying\nBiologist missions?; ALIGN=center]
+[TD; TEXT=Biologist missions give permanent progression.\nEvery delayed day is progress you cannot recover.; ALIGN=center]
+[TR; H=90]
+[TD; TEXT=What if I cannot do\nevery cooldown?; ALIGN=center]
+[TD; TEXT=Prioritize daily voting and Metin farming\nin shorter sessions. Run dungeons when you\nhave more time. Consistency matters most.; ALIGN=center]
+[TR; H=96]
+[TD; TEXT=What should I improve\nevery day?; ALIGN=center]
+[TD; TEXT=Biologist, Passive Skills, Buff Skills, gear,\nAlchemy, Pet, Mount and Costumes.\nAlso farm Metins, dungeons, fishing,\nmining and Bagstones for Yang.; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1245;\
+    ANCHOR=faq_yang;\
+    TEXT_1=Making Yang;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1296; TABLE_HEADERS=Question|Answer; TABLE_WIDTHS=170|350]
+[TR; H=90]
+[TD; TEXT=Most overlooked\nYang source?; ALIGN=center]
+[TD; TEXT=Regular drops from Metins and dungeons.\nMany materials, fragments, boxes and consumables\nare useful to other players and can be sold.; ALIGN=center]
+[TR; H=74]
+[TD; TEXT=Should I sell\nMetin Ingots?; ALIGN=center]
+[TD; TEXT=Yes. Metin Ingots are used for refining,\ncrafting and Alchemy, so demand stays steady.; ALIGN=center]
+[TR; H=96]
+[TD; TEXT=Destroy items I\ndo not need?; ALIGN=center]
+[TD; TEXT=No. List them on the market first.\nItems useless for your class may still be needed\nfor crafting, upgrades, Alchemy or another build.; ALIGN=center]
+[TR; H=104]
+[TD; TEXT=Sell common and\nlow-value drops?; ALIGN=center]
+[TD; TEXT=Yes. Common crafting materials, fragments,\nconsumables, duplicate accessories, Stones\nand upgrade materials become significant Yang\nwhen sold consistently.; ALIGN=center]
+[TR; H=90]
+[TD; TEXT=Which dungeon drops\nshould I sell?; ALIGN=center]
+[TD; TEXT=Sell boxes, crafting materials, Costume pieces,\nequipment fragments and rewards you do not need.\nCheck the market before destroying anything.; ALIGN=center]
+[TR; H=82]
+[TD; TEXT=Use or sell Alchemy Cor\nand Bonus Changers?; ALIGN=center]
+[TD; TEXT=Use them if you enjoy gambling and can afford it.\nSell them if you prefer reliable Yang.; ALIGN=center]
+[TR; H=82]
+[TD; TEXT=Should new players\navoid gambling?; ALIGN=center]
+[TD; TEXT=Not always. Gambling is normal.\nSelling is simply safer and more reliable\nfor guaranteed income.; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1948;\
+    ANCHOR=faq_market;\
+    TEXT_1=Market and Selling;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1999; TABLE_HEADERS=Question|Answer; TABLE_WIDTHS=170|350]
+[TR; H=90]
+[TD; TEXT=After a farming\nsession?; ALIGN=center]
+[TD; TEXT=Sort inventory immediately. Keep only items\nneeded for progression and list everything else\nbefore it becomes forgotten clutter.; ALIGN=center]
+[TR; H=82]
+[TD; TEXT=How should I price\ncommon drops?; ALIGN=center]
+[TD; TEXT=List high-volume common items slightly below\nthe average market price. Fast sales are usually\nbetter than waiting several days.; ALIGN=center]
+[TR; H=74]
+[TD; TEXT=Sell a large quantity\nat once?; ALIGN=center]
+[TD; TEXT=Avoid flooding the market with too many copies\nof the same item, as it can lower your own price.; ALIGN=center]
+[TR; H=82]
+[TD; TEXT=Best time to\nsell items?; ALIGN=center]
+[TD; TEXT=Weekends and events usually have more players\nand higher demand for consumables like\nAlchemy Cor and Bonus Changers.; ALIGN=center]
+[TR; H=82]
+[TD; TEXT=How should I use\nmy Warehouse?; ALIGN=center]
+[TD; TEXT=Use it as a sorting area. Store farming drops,\nlist them later and keep your active inventory\nfree for farming.; ALIGN=center]
+[TR; H=82]
+[TD; TEXT=How much Yang\nshould I reinvest?; ALIGN=center]
+[TD; TEXT=Reinvest part of your earnings into key upgrades.\nKeep the rest as a buffer for gear, Alchemy\nand dungeon costs.; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2507; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=54]
+[TD; TEXT=Color(Treat every item you do not personally need\nas merchandise instead of inventory clutter.); ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=2587;\
+    ANCHOR=faq_income;\
+    TEXT_1=Additional Income;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2638; TABLE_HEADERS=Question|Answer; TABLE_WIDTHS=170|350]
+[TR; H=82]
+[TD; TEXT=Are Fishing, Mining\nand Bagstones worth it?; ALIGN=center]
+[TD; TEXT=Yes. They are not huge alone, but together\nthey provide steady income alongside\nMetin and dungeon farming.; ALIGN=center]
+[TR; H=82]
+[TD; TEXT=Best overall\nYang strategy?; ALIGN=center]
+[TD; TEXT=Farm Metins and dungeons, sell unneeded drops,\nand use Fishing, Mining and Bagstones\nas extra income sources.; ALIGN=center]
+[TR; H=90]
+[TD; TEXT=Why is selling\neverything effective?; ALIGN=center]
+[TD; TEXT=Normal progression already creates a second\nincome stream through drops. The key is listing\nitems instead of discarding them.; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=2934;\
+    ANCHOR=faq_levels;\
+    TEXT_1=Level Priorities;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2985; TABLE_HEADERS=Level Range|Main Priority; TABLE_WIDTHS=120|400]
+[TR; H=74]
+[TD; TEXT=Levels\n1 - 30; ALIGN=center]
+[TD; TEXT=Complete quests, begin Biologist missions\nand unlock your skills. Avoid major gear spending.; ALIGN=center]
+[TR; H=82]
+[TD; TEXT=Levels\n30 - 54; ALIGN=center]
+[TD; TEXT=Get a level 30 weapon with about\n35% Average Damage, farm Metins and begin\npermanent progression.; ALIGN=center]
+[TR; H=90]
+[TD; TEXT=Levels\n55 - 75; ALIGN=center]
+[TD; TEXT=Keep and improve existing gear, invest heavily\nin permanent systems and prepare Undead bonuses\nfor Tower and Catacombs.; ALIGN=center]
+[TR; H=90]
+[TD; TEXT=Levels\n76 - 90; ALIGN=center]
+[TD; TEXT=Get a level 75 weapon with about\n50% Average Damage, complete Alchemy\nand invest in Element/Resistance.; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=3361;\
+    TEXT_1=Dungeon Quick Reference;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=34; TABLE_HIDE_TITLE=0; X=10; Y=3412; TABLE_HEADERS=Dungeon|Level|Cooldown|Element|Race|DPS; TABLE_WIDTHS=100|70|75|85|85|105]
+[TR; H=48]
+[TD; TEXT=Wukong; ALIGN=center]
+[TD; TEXT=30 - 54; ALIGN=center]
+[TD; TEXT=10 min; ALIGN=center]
+[TD; TEXT={WK:555}; ALIGN=center]
+[TD; TEXT={WK:563}; ALIGN=center]
+[TD; TEXT=1,000; ALIGN=center]
+[TR; H=48]
+[TD; TEXT=Sythra; ALIGN=center]
+[TD; TEXT=35 - 55; ALIGN=center]
+[TD; TEXT=20 min; ALIGN=center]
+[TD; TEXT={WK:555}; ALIGN=center]
+[TD; TEXT={WK:563}; ALIGN=center]
+[TD; TEXT=2,500; ALIGN=center]
+[TR; H=48]
+[TD; TEXT=Spider\nBaroness; ALIGN=center]
+[TD; TEXT=50 - 75; ALIGN=center]
+[TD; TEXT=15 min; ALIGN=center]
+[TD; TEXT={WK:555}; ALIGN=center]
+[TD; TEXT={WK:563}; ALIGN=center]
+[TD; TEXT=4,000; ALIGN=center]
+[TR; H=48]
+[TD; TEXT=Death\nReaper; ALIGN=center]
+[TD; TEXT=55 - 80; ALIGN=center]
+[TD; TEXT=15 min; ALIGN=center]
+[TD; TEXT={WK:231}; ALIGN=center]
+[TD; TEXT={WK:557}; ALIGN=center]
+[TD; TEXT=11,000; ALIGN=center]
+[TR; H=48]
+[TD; TEXT=Azrael; ALIGN=center]
+[TD; TEXT=76 - 90; ALIGN=center]
+[TD; TEXT=20 min; ALIGN=center]
+[TD; TEXT={WK:231}; ALIGN=center]
+[TD; TEXT={WK:557}; ALIGN=center]
+[TD; TEXT=27,500; ALIGN=center]
+[TR; H=48]
+[TD; TEXT=Beran; ALIGN=center]
+[TD; TEXT=81 - 102; ALIGN=center]
+[TD; TEXT=20 min; ALIGN=center]
+[TD; TEXT={WK:558}; ALIGN=center]
+[TD; TEXT=-; ALIGN=center]
+[TD; TEXT=35,000; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=3744; TABLE_HEADERS=Dungeon|Strong Against Monsters; TABLE_WIDTHS=220|300]
+[TR; H=42]
+[TD; TEXT=Wukong; ALIGN=center]
+[TD; TEXT=20%; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Sythra; ALIGN=center]
+[TD; TEXT=16%; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Spider Baroness; ALIGN=center]
+[TD; TEXT=20%; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Death Reaper; ALIGN=center]
+[TD; TEXT=31%; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Azrael; ALIGN=center]
+[TD; TEXT=60%; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Beran; ALIGN=center]
+[TD; TEXT=106%; ALIGN=center]
+[TABLE_END]

@@ -1,0 +1,884 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f83df2bd-e28c-47e9-b339-f1aa129ef665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataCtrl">
+      <UniqueIdentifier>{a20907c2-aff6-4669-8f96-033a77836aa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DockingBar">
+      <UniqueIdentifier>{72a547bc-6783-4f0a-a14b-4a057149d263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{1af4e0f6-d142-4203-b82f-81d98dc4cea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{2bd90a5a-c49c-425f-baf4-cfee2f615d89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{57566280-d2d3-4497-a7df-eb467e038820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\GTColorDialog">
+      <UniqueIdentifier>{fe201796-4260-466e-aa3c-997abf3a163a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ToolBar">
+      <UniqueIdentifier>{03d7f72e-a361-4ba7-9fe2-6318bbdaac2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c411a7a5-4778-43f8-85c7-d970d0021861}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Type.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewportManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldEditorDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldEditorView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\ActorInstanceAccessor.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\EffectAccessor.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\EffectTranslationDialog.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\MapAccessorArea.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\MapAccessorOutdoor.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\MapAccessorTerrain.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\MapAccessorUndo.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\MapManagerAccessor.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\MapManagerEnvironment.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\MapManagerUndo.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\MiniMapRenderHelper.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\ModelInstanceAccessor.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\NonPlayerCharacterInfo.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\ObjectAnimationAccessor.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\ObjectData.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\ObjectDataFile.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\ObjectDataLight.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\ShadowRenderHelper.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCtrl\UndoBuffer.cpp">
+      <Filter>DataCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\EffectCtrlBar.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\EffectLightPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\EffectMeshPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\EffectParticlePage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\EffectParticleTexturePreview.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\EffectTabPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\EffectTexturePage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\EffectUI.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\FlyCtrlBar.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\FlyTabPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\MapAttributePage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\MapCtrlBar.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\MapEnvironmentPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\MapFilePage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\MapObjectPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\MapObjectPropertyPageDungeonBlock.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\MapTabPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\MapTerrainPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\mapterraintexlistctrl.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\mapterraintexturepreview.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\MapTreeLoader.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\ObjectAnimationEventFly.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\ObjectAnimationEventGraph.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\ObjectAnimationPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\ObjectCtrlBar.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\ObjectModelAttachEffectSubPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\ObjectModelAttachObjectSubPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\ObjectModelCollisionSubPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\ObjectModelPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\ObjectModelTypeCharacterSubPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\ObjectModelTypeEquipmentSubPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\ObjectTabPage.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\PageCtrl.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\SizeCBar.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingBar\texturepropertydlg.cpp">
+      <Filter>DockingBar</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\PickingArrow.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneBase.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneBaseLocalCamera.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneEffect.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneEffectGizmo.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneFly.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneMap.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneMapCursor.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneObject.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneObjectModelInstance.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\changebasexydlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\ColorAnimationDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DlgGoto.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\dlginitbasetexture.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\DlgPerspective.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\EffectBoundingSphere.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\EffectParticleTimeEventGraph.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\EffectTimeBar.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\EffectTimeBarGraph.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\FloatEditDialog.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\GraphCtrl.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\InputNumber.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\maparrangeheightprogressdialog.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\MapObjectDirectory.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\MapObjectProperty.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\MapObjectPropertyPageAmbience.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\MapObjectPropertyPageBase.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\MapObjectPropertyPageBuilding.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\MapObjectPropertyPageEffect.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\MapObjectPropertyPageTree.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\MapPortalDialog.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\NewMapDlg.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\ObjectAnimationEvent.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\ObjectAnimationEventAttack.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\ObjectAnimationEventCharacterHide.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\ObjectAnimationEventCharacterShow.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\ObjectAnimationEventEffect.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\ObjectAnimationEventEffectToTarget.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\ObjectAnimationEventScreenFlashing.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\ObjectAnimationEventScreenWaving.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\ObjectAnimationEventSound.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog\ObjectAnimationEventWarp.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\FOHyperLink.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\SimpleUI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\XBrowseForFolder.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\GTColorDialogDlg.cpp">
+      <Filter>UI\GTColorDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\GTColorSelectorWnd.cpp">
+      <Filter>UI\GTColorDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\GTColorSliderWnd.cpp">
+      <Filter>UI\GTColorDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\GTColorWellWnd.cpp">
+      <Filter>UI\GTColorDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\GTDrawHelper.cpp">
+      <Filter>UI\GTColorDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBar\ToolBar256.cpp">
+      <Filter>ToolBar</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBar\ToolBarFile.cpp">
+      <Filter>ToolBar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Type.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewportManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldEditor.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldEditorDoc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldEditorView.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCtrl\ActorInstanceAccessor.h">
+      <Filter>DataCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCtrl\EffectAccessor.h">
+      <Filter>DataCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCtrl\EffectData.h">
+      <Filter>DataCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCtrl\MapAccessorArea.h">
+      <Filter>DataCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCtrl\MapAccessorOutdoor.h">
+      <Filter>DataCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCtrl\MapAccessorTerrain.h">
+      <Filter>DataCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCtrl\MapManagerAccessor.h">
+      <Filter>DataCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCtrl\MiniMapRenderHelper.h">
+      <Filter>DataCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCtrl\ModelInstanceAccessor.h">
+      <Filter>DataCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCtrl\NonPlayerCharacterInfo.h">
+      <Filter>DataCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCtrl\ObjectAnimationAccessor.h">
+      <Filter>DataCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCtrl\ObjectData.h">
+      <Filter>DataCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCtrl\ShadowRenderHelper.h">
+      <Filter>DataCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCtrl\UndoBuffer.h">
+      <Filter>DataCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\EffectCtrlBar.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\EffectLightPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\EffectMeshPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\EffectParticlePage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\effectparticletexturepreview.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\EffectTabPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\EffectTexturePage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\EffectUI.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\FlyCtrlBar.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\FlyTabPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\mapattributepage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\MapCtrlBar.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\MapEnvironmentPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\MapFilePage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\MapObjectPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\MapObjectPropertyPageDungeonBlock.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\MapTabPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\MapTerrainPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\mapterraintexlistctrl.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\mapterraintexturepreview.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\MapTreeLoader.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\ObjectAnimationEventGraph.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\ObjectAnimationPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\ObjectCtrlBar.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\objectmodelattacheffectsubpage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\ObjectModelAttachObjectSubPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\ObjectModelCollisionSubPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\ObjectModelPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\ObjectModelTypeCharacterSubPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\ObjectModelTypeEquipmentSubPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\ObjectTabPage.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\PageCtrl.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\SizeCBar.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingBar\texturepropertydlg.h">
+      <Filter>DockingBar</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\PickingArrow.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneBase.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneEffect.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneFly.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneMap.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneMapCursor.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneObject.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\changebasexydlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\ColorAnimationDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DlgGoto.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\dlginitbasetexture.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\DlgPerspective.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\EffectBoundingSphere.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\EffectParticleTimeEventGraph.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\EffectTimeBar.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\EffectTimeBarGraph.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\EffectTranslationDialog.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\FloatEditDialog.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\GraphCtrl.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\InputNumber.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\maparrangeheightprogressdialog.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\MapObjectDirectory.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\MapObjectProperty.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\MapObjectPropertyPageAmbience.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\MapObjectPropertyPageBase.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\MapObjectPropertyPageBuilding.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\MapObjectPropertyPageEffect.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\MapObjectPropertyPageTree.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\MapPortalDialog.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\NewMapDlg.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\ObjectAnimationEvent.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\ObjectAnimationEventAttack.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\ObjectAnimationEventBase.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\ObjectAnimationEventCharacterHide.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\ObjectAnimationEventCharacterShow.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\ObjectAnimationEventEffect.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\ObjectAnimationEventEffectToTarget.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\ObjectAnimationEventFly.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\ObjectAnimationEventScreenFlashing.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\ObjectAnimationEventScreenWaving.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\ObjectAnimationEventSound.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog\ObjectAnimationEventWarp.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\FOHyperLink.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\SimpleUI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\XBrowseForFolder.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\GTColorDialogDlg.h">
+      <Filter>UI\GTColorDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\GTColorSelectorWnd.h">
+      <Filter>UI\GTColorDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\GTColorSliderWnd.h">
+      <Filter>UI\GTColorDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\GTColorWellWnd.h">
+      <Filter>UI\GTColorDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\GTDrawHelper.h">
+      <Filter>UI\GTColorDialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolBar\ToolBar256.h">
+      <Filter>ToolBar</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolBar\ToolBarFile.h">
+      <Filter>ToolBar</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ambience_distance.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00002.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00003.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00004.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00005.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00006.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00007.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_light.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_m.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_maximize.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_mesh.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_minimize.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_p.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_particle.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_play.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_play_loop.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_stop.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_timebar_enable.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_xyyzzx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_xyz.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_z.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_zoom_in_horizon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\effect_zoom_out_horizon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\fly_effect.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\fly_object.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\fly_type_exp.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\fly_type_line.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\fly_type_multi_line.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\fly_type_sine.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\mainframe_large.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\mainframe_small.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\map_attribute.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\map_edit.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\map_envi.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\map_environment.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\map_file.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\map_object.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\map_terrain.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\map_terrain_brush_down.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\map_terrain_brush_noise.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\map_terrain_brush_plateau.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\map_terrain_brush_shape_circle.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\map_terrain_brush_shape_square.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\map_terrain_brush_smooth.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\map_terrain_brush_up.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\object_a.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Object_Animation.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\object_m.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Object_Model.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TreeItemImageList.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\WorldEditor.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\WorldEditorDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WorldEditor.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

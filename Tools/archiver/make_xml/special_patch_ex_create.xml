@@ -1,0 +1,6 @@
+<ScriptFile>
+	<CreateEterPackXml Input="../binary_unpack/special_patch_ex:" ArchivePath="../../Client/pack/special_patch_ex" XmlPath="xml/special_patch_ex_create.xml">
+		<Ignore Pattern="locale/.*" />
+		<Ignore Pattern="icon/.*" />
+	</CreateEterPackXml>
+</ScriptFile>

@@ -1,0 +1,188 @@
+[\
+    DUNGEON;\
+    X=10;\
+    Y=10;\
+    VNUM_1=4506;\
+    TEXT_1={WK:403};\
+    TEXT_2={WK:404:70:105};\
+    TEXT_3={WK:405:30 min};\
+    TEXT_4={WK:406} {WK:564};\
+    TEXT_5={WK:407} Human;\
+    TEXT_6={WK:408:-};\
+]
+[BUTTON=d:/ymir work/ui/game/common/button_xlarge_norm.png#d:/ymir work/ui/game/common/button_xlarge_hover.png#d:/ymir work/ui/game/common/button_xlarge_down.png; X=361; Y=178; LINKINDEX=mob#4506#0.0; TEXT={WK:409}; COLOR_TEXT=cebb98]
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=256;\
+    TEXT_1=Enigma Temple;\
+]
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=327;\
+    ANCHOR=enigma_easy;\
+    TEXT_1=Easy Mode;\
+]
+
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=378; TABLE_HEADERS=Equipment|Requirement; TABLE_WIDTHS=180|360]
+[TR; H=42]
+[TD; TEXT=Defences; ALIGN=center]
+[TD; TEXT=At least 120 total Defences; ALIGN=center]
+[TR; H=42]
+[TD; TEXT={WK:57}; ALIGN=center]
+[TD; TEXT=Level 65 weapon upgraded to at least +3; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Armour; ALIGN=center]
+[TD; TEXT=Level 70 armour upgraded to at least +3; ALIGN=center]
+[TR; H=58]
+[TD; TEXT=Accessories; ALIGN=center]
+[TD; TEXT=Evolved Ruby, Garnet, Sapphire or Emerald accessories upgraded to at least +3; ALIGN=center]
+[TR; H=42]
+[TD; TEXT={WK:19}; ALIGN=center]
+[TD; TEXT=Level 61 helmet upgraded to at least +3; ALIGN=center]
+[TR; H=42]
+[TD; TEXT={WK:162}; ALIGN=center]
+[TD; TEXT=Level 61 shield upgraded to at least +3; ALIGN=center]
+[TABLE_END]
+
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=672; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=58]
+[TD; TEXT=Color(Easy difficulty is intended as the entry point for players beginning their PvP progression.); ALIGN=center]
+[TABLE_END]
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=750;\
+    ANCHOR=enigma_medium;\
+    TEXT_1=Medium Mode;\
+]
+
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=801; TABLE_HEADERS=Equipment|Requirement; TABLE_WIDTHS=180|360]
+[TR; H=42]
+[TD; TEXT=Defences; ALIGN=center]
+[TD; TEXT=At least 140 total Defences; ALIGN=center]
+[TR; H=42]
+[TD; TEXT={WK:57}; ALIGN=center]
+[TD; TEXT=Level 65 weapon upgraded to +9; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Armour; ALIGN=center]
+[TD; TEXT=Level 70 armour upgraded to +9; ALIGN=center]
+[TR; H=58]
+[TD; TEXT=Accessories; ALIGN=center]
+[TD; TEXT=Evolved Ruby, Garnet, Sapphire or Emerald accessories upgraded to +9; ALIGN=center]
+[TR; H=42]
+[TD; TEXT={WK:19}; ALIGN=center]
+[TD; TEXT=Level 61 helmet upgraded to +9; ALIGN=center]
+[TR; H=58]
+[TD; TEXT={WK:162}; ALIGN=center]
+[TD; TEXT=Titan Shield upgraded to at least +3 or a level 100 shield upgraded to at least +0; ALIGN=center]
+[TR; H=58]
+[TD; TEXT={WK:161}; ALIGN=center]
+[TD; TEXT=Ecstasy Shoes or another pair with Chance to Block Physical Attacks upgraded to +9; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=PvP Belt; ALIGN=center]
+[TD; TEXT=PvP Belt upgraded to +9; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1207; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=58]
+[TD; TEXT=Color(Medium difficulty requires a more complete PvP setup with upgraded\n accessories, defensive shoes and a PvP Belt.); ALIGN=center]
+[TABLE_END]
+
+
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1285;\
+    ANCHOR=enigma_hard;\
+    TEXT_1=Hard Mode;\
+]
+
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1336; TABLE_HEADERS=Equipment|Requirement; TABLE_WIDTHS=180|360]
+[TR; H=42]
+[TD; TEXT=Defences; ALIGN=center]
+[TD; TEXT=At least 160 total Defences; ALIGN=center]
+[TR; H=42]
+[TD; TEXT={WK:57}; ALIGN=center]
+[TD; TEXT=Level 80 weapon upgraded to +9; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Armour; ALIGN=center]
+[TD; TEXT=Level 80 armour upgraded to +9; ALIGN=center]
+[TR; H=58]
+[TD; TEXT=Accessories; ALIGN=center]
+[TD; TEXT=Evolved Ruby, Garnet, Sapphire or Emerald accessories upgraded to +9; ALIGN=center]
+[TR; H=42]
+[TD; TEXT={WK:19}; ALIGN=center]
+[TD; TEXT=Level 61 helmet upgraded to +9; ALIGN=center]
+[TR; H=58]
+[TD; TEXT={WK:162}; ALIGN=center]
+[TD; TEXT=Titan Shield upgraded to +9 or a level 100 shield upgraded to at least +0; ALIGN=center]
+[TR; H=42]
+[TD; TEXT={WK:161}; ALIGN=center]
+[TD; TEXT=Evolved shoes upgraded to +9; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=PvP Belt; ALIGN=center]
+[TD; TEXT=Use a suitable PvP Belt; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1730; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=58]
+[TD; TEXT=Color(Hard difficulty is intended for players with a highly upgraded PvP build.\n Reaching the listed requirements will significantly improve your survivability\n and clear consistency.); ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1808;\
+    ANCHOR=enigma_stages;\
+    TEXT_1=Enigma Temple Stages;\
+]
+
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1859; TABLE_HEADERS=Stage|Objective; TABLE_WIDTHS=80|460]
+[TR; H=42]
+[TD; TEXT=Stage 1; ALIGN=center]
+[TD; TEXT=Eliminate all monsters 0/100; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Stage 2; ALIGN=center]
+[TD; TEXT=Destroy the Metin Stone 0/1; ALIGN=center]
+[TR; H=58]
+[TD; TEXT=Stage 3; ALIGN=center]
+[TD; TEXT=Eliminate the Enigma Commander (Warrior) and Enigma Shadow (Ninja); ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Stage 4; ALIGN=center]
+[TD; TEXT=Destroy the Metin Stones 0/3; ALIGN=center]
+[TR; H=58]
+[TD; TEXT=Stage 5; ALIGN=center]
+[TD; TEXT=Eliminate the Enigma Adept (Sura), followed by the Enigma Sage (Shaman); ALIGN=center]
+[TR; H=82]
+[TD; TEXT=Stage 6; ALIGN=center]
+[TD; TEXT=Eliminate all four enemies: Enigma Commander (Warrior), Enigma Shadow (Ninja), Enigma Adept (Sura) and Enigma Sage (Shaman) 0/4; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Stage 7; ALIGN=center]
+[TD; TEXT=Eliminate all monsters 0/100; ALIGN=center]
+[TR; H=58]
+[TD; TEXT=Stage 8; ALIGN=center]
+[TD; TEXT=Eliminate Enigma Charon 0/2 and Enigma Tartaros 0/2; ALIGN=center]
+[TR; H=58]
+[TD; TEXT=Stage 9; ALIGN=center]
+[TD; TEXT=Eliminate the Enigma General and destroy the final chest; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2361; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=58]
+[TD; TEXT=Color(Complete each objective in order to progress through the Enigma Temple and\n reach the final encounter.); ALIGN=center]
+[TABLE_END]
+
+
+

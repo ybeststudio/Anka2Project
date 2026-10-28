@@ -1,0 +1,190 @@
+[/ SUMMARY /]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=3;Y=5;LINKINDEX=article#17#18.20;TEXT={WK:1};COLOR_TEXT=cebb98]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=133;Y=5;LINKINDEX=article#17#114.33;TEXT={WK:77};COLOR_TEXT=cebb98]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=263;Y=5;LINKINDEX=article#17#212.33;TEXT={WK:115};COLOR_TEXT=cebb98]
+
+
+
+ 
+[\
+    TITLE;\
+    X=10;Y=54;\
+    TEXT_1={WK:1};\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;Y=115;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    Y_PADDING=0;\
+    VNUM_1=53001;\
+    TEXT_1={WK:129};\
+    TEXT_2={WK:130};\
+    TEXT_3={WK:131};\
+    TEXT_4={WK:132};\
+    TEXT_5={WK:133};\
+]
+
+[\
+    DESCRIPTION_BETWEEN_2_ITEMS;\
+    X=10;Y=200;\
+    VNUM_1=70696;\
+    VNUM_2=70699;\
+    TEXT_1={WK:64:70696};\
+    TEXT_2={WK:65};\
+    TEXT_3={WK:66};\
+]
+[BUTTON=d:/ymir work/ui/game/wiki/bg_wiki_small.png#d:/ymir work/ui/game/wiki/bg_wiki_small_hover.png#d:/ymir work/ui/game/wiki/bg_wiki_small.png;X=95;Y=200+42;LINKINDEX=shop#19401#0.0;TEXT={WK:134};]
+[BUTTON=d:/ymir work/ui/game/wiki/bg_wiki_small.png#d:/ymir work/ui/game/wiki/bg_wiki_small_hover.png#d:/ymir work/ui/game/wiki/bg_wiki_small.png;X=281;Y=200+42;LINKINDEX=shop#19401#0.0;TEXT=AppendPNJ(20504);]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;Y=285;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    Y_PADDING=5;\
+    VNUM_1=84002;\
+    TEXT_1={WK:50};\
+    TEXT_2={WK:66};\
+]
+[BUTTON=d:/ymir work/ui/game/wiki/bg_wiki.png#d:/ymir work/ui/game/wiki/bg_wiki_hover.png#d:/ymir work/ui/game/wiki/bg_wiki.png;X=95;Y=285+42;LINKINDEX=itemshop#84002#0.0;TEXT={WK:53};]
+
+[\
+    TITLE;\
+    X=10;Y=369;\
+    TEXT_1={WK:77};\
+]
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=430;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    Y_PADDING=0;\
+    TEXT_1={WK:136};\
+    TEXT_2={WK:137};\
+    TEXT_3={WK:138};\
+    TEXT_4={WK:139};\
+    TEXT_5=* {WK:525};\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/buffi/buffi.png; Y=430+13;X=25]
+
+[\
+    SUBTITLE;\
+    X=10;Y=524;\
+    TEXT_1=Evolutions;\
+]
+
+[\
+    BIOLO_REWARD;\
+    X=10;Y=470;\
+    TEXT_1={WK:111:34};TEXT_2={WK:344};\
+    TEXT_1_X_PADDING = -30;TEXT_2_X_PADDING = -30;\
+    VNUM_2=16129;\
+    VNUM_3=17129;\
+    VNUM_4=51001;\
+    PRICE_1=1;\
+    PRICE_2=1;\
+    PRICE_3=5;\
+]
+
+[\
+    BIOLO_REWARD;\
+    X=10;Y=470+(75*1);\
+    TEXT_1={WK:111:54};TEXT_2={WK:345};\
+    TEXT_1_X_PADDING = -30;TEXT_2_X_PADDING = -30;\
+    VNUM_2=16209;\
+    VNUM_3=17209;\
+    VNUM_4=51001;\
+    PRICE_1=1;\
+    PRICE_2=1;\
+    PRICE_3=10;\
+]
+
+[\
+    BIOLO_REWARD;\
+    X=10;Y=470+(75*2);\
+    TEXT_1={WK:111:74};TEXT_2={WK:346};\
+    TEXT_1_X_PADDING = -30;TEXT_2_X_PADDING = -30;\
+    VNUM_2=16089;\
+    VNUM_3=16169;\
+    VNUM_4=17089;\
+    VNUM_5=17169;\
+    PRICE_1=1;\
+    PRICE_2=1;\
+    PRICE_3=1;\
+    PRICE_4=1;\
+]
+
+
+[\
+    SUBTITLE;\
+    X=10;Y=813;\
+    TEXT_1=AppendItem(30952);\
+]
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=860;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/buffi/skill_nickname.png;\
+    Y_PADDING=5;\
+    TEXT_1={WK:140};\
+    TEXT_2={WK:141};\
+    TEXT_3={WK:142};\
+    TEXT_4={WK:143};\
+]
+[IMG=d:/ymir work/ui/game/wiki/layout/picture_bg.png; Y=860;X=465]
+[ITEM=30952;X=483;Y=860+17;SOCKET=0:0#1:100]
+[BUTTON=d:/ymir work/ui/game/wiki/bg_wiki.png#d:/ymir work/ui/game/wiki/bg_wiki_hover.png#d:/ymir work/ui/game/wiki/bg_wiki.png;X=95;Y=860+62;LINKINDEX=itemshop#90000#0.0;TEXT={WK:53};]
+ 
+[\
+    TITLE;\
+    X=10;Y=965;\
+    TEXT_1={WK:115};\
+]
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=1025;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/buffi/buffi_skill.png;\
+    Y_PADDING=5;\
+    TEXT_1={WK:144};\
+    TEXT_2={WK:145};\
+    TEXT_3={WK:146}\
+] 
+
+[\
+    SUBTITLE;\
+    X=10;Y=1120;\
+    TEXT_1={WK:128};\
+]
+
+[IMG=d:/ymir work/ui/game/wiki/systems/buffi/skill1_p1.png; Y=1170;X=10]
+[X=10+77;Y=1170+5;FONT_SIZE=14b;COLOR=D7B25B;NO_ADD_Y]AppendSkill(94)
+[X=10+77;Y=1170+22;FONT_SIZE=11;COLOR=A9A9A9;NO_ADD_Y]{WK:148}
+[X=10+77;Y=1170+22+(12*1);FONT_SIZE=11;COLOR=A9A9A9;NO_ADD_Y]{WK:147:52}
+
+[IMG=d:/ymir work/ui/game/wiki/systems/buffi/skill2_p1.png; Y=1170;X=273]
+[X=273+77;Y=1170+5;FONT_SIZE=14b;COLOR=D7B25B;NO_ADD_Y]AppendSkill(96)
+[X=273+77;Y=1170+22;FONT_SIZE=11;COLOR=A9A9A9;NO_ADD_Y]{WK:149}
+[X=273+77;Y=1170+22+(12*1);FONT_SIZE=11;COLOR=A9A9A9;NO_ADD_Y]{WK:147:36}
+
+[IMG=d:/ymir work/ui/game/wiki/systems/buffi/skill4_p1.png; Y=1230;X=10]
+[X=10+77;Y=1230+5;FONT_SIZE=14b;COLOR=D7B25B;NO_ADD_Y]AppendSkill(95)
+[X=10+77;Y=1230+22;FONT_SIZE=11;COLOR=A9A9A9;NO_ADD_Y]{WK:150}
+[X=10+77;Y=1230+22+(12*1);FONT_SIZE=11;COLOR=A9A9A9;NO_ADD_Y]{WK:147:15}
+
+[IMG=d:/ymir work/ui/game/wiki/systems/buffi/skill4_p1.png; Y=1230;X=273]
+[X=273+77;Y=1230+5;FONT_SIZE=14b;COLOR=D7B25B;NO_ADD_Y]AppendSkill(110)
+[X=273+77;Y=1230+22;FONT_SIZE=11;COLOR=A9A9A9;NO_ADD_Y]{WK:151}
+[X=273+77;Y=1230+22+(12*1);FONT_SIZE=11;COLOR=A9A9A9;NO_ADD_Y]{WK:147:15}
+
+[IMG=d:/ymir work/ui/game/wiki/systems/buffi/skill3_p1.png; Y=1290;X=10]
+[X=10+77;Y=1290+5;FONT_SIZE=14b;COLOR=D7B25B;NO_ADD_Y]AppendSkill(111)
+[X=10+77;Y=1290+22;FONT_SIZE=11;COLOR=A9A9A9;NO_ADD_Y]{WK:152}
+[X=10+77;Y=1290+22+(12*1);FONT_SIZE=11;COLOR=A9A9A9;NO_ADD_Y]{WK:147:64}
+
+[X_PADDING=10;Y_PADDING=0;COLOR=D7B25B;]
+[X=10;Y=1370;FONT_SIZE=11;COLOR=D7B25B;NO_ADD_Y]{WK:153}
+
+[X=10;Y=1025] 
+
+

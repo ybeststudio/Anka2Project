@@ -1,0 +1,201 @@
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=66; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=82]
+[TD; TEXT={WK:337}; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=174;\
+    TEXT_1={WK:15};\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=225; TABLE_HEADERS=Objective|Description; TABLE_WIDTHS=120|400]
+[TR; H=54]
+[TD; TEXT={WK:57}; ALIGN=center]
+[TD; TEXT=Upgrade to a level 75 weapon with\nat least 50% Average Damage.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Belt; ALIGN=center]
+[TD; TEXT=A level 75 Belt is useful,\nbut remains optional at this stage.; ALIGN=center]
+[TR; H=58]
+[TD; TEXT=Armour; ALIGN=center]
+[TD; TEXT=Evolve your level 70 armour into\nthe proper level 80 or level 90 armour.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Alchemy; ALIGN=center]
+[TD; TEXT=Upgrade your Alchemy pieces toward\nFlawless Mythic quality.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Mount; ALIGN=center]
+[TD; TEXT=Your Mount should provide\n10% Penetrating Hit Power.; ALIGN=center]
+[TR; H=58]
+[TD; TEXT={WK:157}; ALIGN=center]
+[TD; TEXT=Prepare a 10% Sash using\na level 30 Bow as absorption material.; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=561; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=58]
+[TD; TEXT=Color(Do not upgrade everything at once.\nPrioritize weapon, Alchemy and permanent systems\nbefore optional gear.); ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=645;\
+    TEXT_1={WK:15} Evolution;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=696; TABLE_HEADERS=Equipment|Recommended Progress; TABLE_WIDTHS=140|380]
+[TR; H=66]
+[TD; TEXT=Soul Crystal; ALIGN=center]
+[TD; TEXT=Evolve level 50 STR or level 54 INT accessories\ninto level 81 Soul Crystal equipment.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Kingfisher\nShoes; ALIGN=center]
+[TD; TEXT=Evolve your Fire Bird Shoes\ninto Kingfisher Shoes.; ALIGN=center]
+[TR; H=58]
+[TD; TEXT=Glory Boots; ALIGN=center]
+[TD; TEXT=Upgrade Nimbus Boots to +9,\nthen evolve them into Glory Boots.; ALIGN=center]
+[TR; H=58]
+[TD; TEXT=Armour; ALIGN=center]
+[TD; TEXT=Continue evolving your level 70 armour\ninto its level 80 or level 90 version.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Element Sash; ALIGN=center]
+[TD; TEXT=Prepare a Sash Skin with\n10% Strong Against Elements.; ALIGN=center]
+[TR; H=58]
+[TD; TEXT=Damage Sash; ALIGN=center]
+[TD; TEXT=Prepare a second Sash Skin with\n5% Average Damage or 50 Attack Value.; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1072;\
+    TEXT_1=Alchemy;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1123; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=82]
+[TD; TEXT=A complete Flawless Mythic Alchemy Set is recommended.\nAt this level, the full set bonus is usually more valuable\nthan using only a few strong individual pieces.; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1231;\
+    ANCHOR=daily_priorities;\
+    TEXT_1=Daily Priorities;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1282; TABLE_HEADERS=Objective|Recommended Progress; TABLE_WIDTHS=130|390]
+[TR; H=50]
+[TD; TEXT=Dews; ALIGN=center]
+[TD; TEXT=Unlock every Dew to gain access\nto Herbalism progression.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Herbalism; ALIGN=center]
+[TD; TEXT=Unlock the 10% Strong Against Monsters\nHerbalism bonus.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Biologist; ALIGN=center]
+[TD; TEXT=Complete your available Biologist missions\nevery day.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Passive\nSkills; ALIGN=center]
+[TD; TEXT=Upgrade your important Passive Skills\ntoward P.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Buff Skills; ALIGN=center]
+[TD; TEXT=Upgrade your main PvM Buff Skills\ntoward P.; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Pet; ALIGN=center]
+[TD; TEXT=Continue leveling and improving your Pet bonuses.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Mount; ALIGN=center]
+[TD; TEXT=Continue progressing your Mount\nand its combat bonuses.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT={WK:171}; ALIGN=center]
+[TD; TEXT=Prepare Element and race bonuses\nfor your current content.; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1686; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=72]
+[TD; TEXT={WK:341}; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1784;\
+    ANCHOR=azrael_preparation;\
+    TEXT_1=Azrael Preparation;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1835; TABLE_HEADERS=Objective|Description; TABLE_WIDTHS=130|390]
+[TR; H=50]
+[TD; TEXT=Element; ALIGN=center]
+[TD; TEXT=Prepare Darkness Element damage\nand Darkness Resistance.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Race; ALIGN=center]
+[TD; TEXT=Use Strong Against Undead bonuses\non equipment and costumes.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Damage; ALIGN=center]
+[TD; TEXT=Aim for about 27,500 DPS\nbefore attempting consistent clears.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Monster\nBonus; ALIGN=center]
+[TD; TEXT=At least 60% Strong Against Monsters\nis recommended.; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=2075;\
+    ANCHOR=beran_preparation;\
+    TEXT_1=Beran Preparation;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2126; TABLE_HEADERS=Objective|Description; TABLE_WIDTHS=130|390]
+[TR; H=50]
+[TD; TEXT=Element; ALIGN=center]
+[TD; TEXT=Prepare Lightning damage\nand Lightning Resistance.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Damage; ALIGN=center]
+[TD; TEXT=Aim for about 35,000 DPS\nbefore attempting consistent clears.; ALIGN=center]
+[TR; H=50]
+[TD; TEXT=Monster\nBonus; ALIGN=center]
+[TD; TEXT=About 106% Strong Against Monsters\nis recommended.; ALIGN=center]
+[TR; H=58]
+[TD; TEXT=Preparation; ALIGN=center]
+[TD; TEXT=Complete your Flawless Alchemy Set\nand core gear upgrades before focusing on Beran.; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=2374;\
+    TEXT_1=Dungeons Overview;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=34; TABLE_HIDE_TITLE=0; X=10; Y=2425; TABLE_HEADERS=Dungeon|Level|Cooldown|Element|Race|DPS; TABLE_WIDTHS=100|70|75|85|85|105]
+[TR; H=48]
+[TD; TEXT=Azrael; ALIGN=center]
+[TD; TEXT=76 - 90; ALIGN=center]
+[TD; TEXT=20 min; ALIGN=center]
+[TD; TEXT={WK:231}; ALIGN=center]
+[TD; TEXT={WK:557}; ALIGN=center]
+[TD; TEXT=27,500; ALIGN=center]
+[TR; H=48]
+[TD; TEXT=Beran; ALIGN=center]
+[TD; TEXT=81 - 102; ALIGN=center]
+[TD; TEXT=20 min; ALIGN=center]
+[TD; TEXT={WK:558}; ALIGN=center]
+[TD; TEXT=-; ALIGN=center]
+[TD; TEXT=35,000; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2573; TABLE_HEADERS=Dungeon|Strong Against Monsters; TABLE_WIDTHS=200|320]
+[TR; H=42]
+[TD; TEXT=Azrael; ALIGN=center]
+[TD; TEXT=At least 60% recommended.; ALIGN=center]
+[TR; H=42]
+[TD; TEXT=Beran; ALIGN=center]
+[TD; TEXT=About 106% recommended.; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2701; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=58]
+[TD; TEXT=Color(Beran is the toughest boss in this bracket\nand the final challenge of levels 76 - 90.\nIts valuable drops make each clear a strong Yang source.); ALIGN=center]
+[TABLE_END]

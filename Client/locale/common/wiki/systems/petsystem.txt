@@ -1,0 +1,555 @@
+[/ SUMMARY /]
+
+[\
+    TITLE;\
+    X=0;Y=20;\
+    TEXT_1=System Overview - Pet System Guide;\
+    TEXT_1_ALIGN=center;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=65; TABLE_HEADERS=Intro; TABLE_WIDTHS=125]
+[TR; H=55]
+[TD; TEXT=New system: Press P to open the Pet System. Pets grow with you, provide strong bonuses, and can be evolved, upgraded, and customized.]
+[TABLE_END]
+
+
+
+[\
+    TITLE;\
+    X=10;Y=140;\
+    TEXT_1=Basic Rules;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=180; TABLE_HEADERS=Rules; TABLE_WIDTHS=125]
+
+[TR; H=32]
+[TD; TEXT=Your pet stops gaining EXP once it reaches your level.]
+
+[TR; H=32]
+[TD; TEXT=If your pet's level is higher than yours, you cannot summon it.]
+
+[TR; H=32]
+[TD; TEXT=Every newly hatched pet starts with random stats, random lifetime, and always at Type 1.]
+
+[TABLE_END]
+
+
+
+[\
+    TITLE;\
+    X=10;Y=305;\
+    TEXT_1=Pet Eggs;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=345; TABLE_HEADERS=Egg|Item; TABLE_WIDTHS=240|120]
+
+[TR; H=38]
+[TD; TEXT=Monkey Egg]
+[TD; ITEM=55401]
+
+[TR; H=38]
+[TD; TEXT=Spider Egg]
+[TD; ITEM=55402]
+
+[TR; H=38]
+[TD; TEXT=Mini Azrael's Egg]
+[TD; ITEM=55407]
+
+[TR; H=38]
+[TD; TEXT=Blue Dragon Egg]
+[TD; ITEM=55405]
+
+[TR; H=38]
+[TD; TEXT=Razador's Egg]
+[TD; ITEM=55403]
+
+[TR; H=38]
+[TD; TEXT=Nemere's Egg]
+[TD; ITEM=55404]
+
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=590; TABLE_HEADERS=Note; TABLE_WIDTHS=125]
+[TR; H=40]
+[TD; TEXT=There are 6 different pet looks (eggs).]
+[TABLE_END]
+
+
+
+[\
+    TITLE;\
+    X=10;Y=635;\
+    TEXT_1=Random Stats Explained;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=675; TABLE_HEADERS=Stat|Range; TABLE_WIDTHS=240|120]
+
+[TR; H=32]
+[TD; TEXT=HP Bonus]
+[TD; TEXT=0.1% - 3.0%; ALIGN=center]
+
+[TR; H=32]
+[TD; TEXT=Attack Bonus]
+[TD; TEXT=0.1% - 3.0%; ALIGN=center]
+
+[TR; H=32]
+[TD; TEXT=Defense Bonus]
+[TD; TEXT=0.1% - 3.0%; ALIGN=center]
+
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=795; TABLE_HEADERS=Tip; TABLE_WIDTHS=125]
+[TR; H=40]
+[TD; TEXT=These determine your pet's power. Higher rolls mean stronger bonuses - |cff6CFF6Cthe maximum value per stat is 3.0%|r.]
+[TABLE_END]
+
+
+
+[\
+    TITLE;\
+    X=10;Y=840;\
+    TEXT_1=Pet Evolution;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=880; TABLE_HEADERS=Tip; TABLE_WIDTHS=125]
+[TR; H=25]
+[TD; TEXT=Pet evolution cannot fail.]
+[TR; H=25]
+[TD; TEXT=After evolving, Pet can continue leveling to reach the next stage.]
+
+[TABLE_END]
+[\
+    TITLE;\
+    X=10;Y=935;\
+    TEXT_1=First Evolution (Level 55);\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=975; TABLE_HEADERS=Requirements; TABLE_WIDTHS=125]
+[TR; H=32]
+[TD; TEXT=Required items + Yang:; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1015; TABLE_HEADERS=A|B|C; TABLE_WIDTHS=170|180|170]
+
+[TR; H=70]
+[TD; ITEM=55005]
+[TD; ITEM=40214]
+[TD; ITEM=40714]
+
+[TR; H=26]
+[TD; TEXT=Tome of Awakening x10; ALIGN=center]
+[TD; TEXT=Pet Emblem x25; ALIGN=center]
+[TD; TEXT=Clam x25; ALIGN=center]
+
+[TR; H=70]
+[TD; ITEM=40913]
+[TD; ITEM=40914]
+[TD; ITEM=1]
+
+[TR; H=26]
+[TD; TEXT=Bamboo Seal x10; ALIGN=center]
+[TD; TEXT=Spider Legs x15; ALIGN=center]
+[TD; TEXT=Yang x100,000,000; ALIGN=center]
+
+[TABLE_END]
+
+
+
+
+
+[\
+    TITLE;\
+    X=10;Y=1220;\
+    TEXT_1=Second Evolution (Level 75);\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=1260; TABLE_HEADERS=Requirements; TABLE_WIDTHS=125]
+[TR; H=32]
+[TD; TEXT=Required items + Yang:; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1300; TABLE_HEADERS=A|B|C; TABLE_WIDTHS=170|180|170]
+
+[TR; H=70]
+[TD; ITEM=55006]
+[TD; ITEM=40214]
+[TD; ITEM=40719]
+
+[TR; H=26]
+[TD; TEXT=Tome of Ascension x10; ALIGN=center]
+[TD; TEXT=Pet Emblem x50; ALIGN=center]
+[TD; TEXT=Pearl Box x25; ALIGN=center]
+
+[TR; H=70]
+[TD; ITEM=40915]
+[TD; ITEM=40942]
+[TD; ITEM=1]
+
+[TR; H=26]
+[TD; TEXT=Demon's Gem x15; ALIGN=center]
+[TD; TEXT=Finger Bones x3; ALIGN=center]
+[TD; TEXT=Yang x250,000,000; ALIGN=center]
+
+[TABLE_END]
+
+
+
+
+[\
+    TITLE;\
+    X=10;Y=1505;\
+    TEXT_1=Third Evolution (Level 90);\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=1545; TABLE_HEADERS=Requirements; TABLE_WIDTHS=125]
+[TR; H=32]
+[TD; TEXT=Required items + Yang:; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1585; TABLE_HEADERS=A|B|C; TABLE_WIDTHS=170|180|170]
+
+[TR; H=70]
+[TD; ITEM=55007]
+[TD; ITEM=40214]
+[TD; ITEM=40718]
+
+[TR; H=26]
+[TD; TEXT=Tome of Transcendence x10; ALIGN=center]
+[TD; TEXT=Pet Emblem x100; ALIGN=center]
+[TD; TEXT=Pearl Fusion x25; ALIGN=center]
+
+[TR; H=70]
+[TD; ITEM=40918]
+[TD; ITEM=40921]
+[TD; ITEM=1]
+
+[TR; H=26]
+[TD; TEXT=Azrael's Soul x5; ALIGN=center]
+[TD; TEXT=Dragon God Amulet x3; ALIGN=center]
+[TD; TEXT=Yang x1,000,000,000; ALIGN=center]
+
+[TABLE_END]
+
+
+
+[\
+    TITLE;\
+    X=10;Y=1775;\
+    TEXT_1=Pet Types;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1815; TABLE_HEADERS=Info; TABLE_WIDTHS=125]
+[TR; H=46]
+[TD; TEXT=Pets start at Type 1. Each upgrade boosts stats permanently (retroactive to all levels, even if evolved first). Bonus applies every 5 levels.]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1865; TABLE_HEADERS=Type|Stat Bonus (per 5 levels)|Yang Cost; TABLE_WIDTHS=100|210|140]
+
+[TR; H=32]
+[TD; TEXT=2; ALIGN=center]
+[TD; TEXT=+0.2%; ALIGN=center]
+[TD; TEXT=50,000,000; ALIGN=center]
+
+[TR; H=32]
+[TD; TEXT=3; ALIGN=center]
+[TD; TEXT=+0.3%; ALIGN=center]
+[TD; TEXT=100,000,000; ALIGN=center]
+
+[TR; H=32]
+[TD; TEXT=4; ALIGN=center]
+[TD; TEXT=+0.4%; ALIGN=center]
+[TD; TEXT=150,000,000; ALIGN=center]
+
+[TR; H=32]
+[TD; TEXT=5; ALIGN=center]
+[TD; TEXT=+0.5%; ALIGN=center]
+[TD; TEXT=200,000,000; ALIGN=center]
+
+[TR; H=32]
+[TD; TEXT=6; ALIGN=center]
+[TD; TEXT=+0.6%; ALIGN=center]
+[TD; TEXT=250,000,000; ALIGN=center]
+
+[TABLE_END]
+
+
+
+[\
+    TITLE;\
+    X=10;Y=2055;\
+    TEXT_1=Type Upgrade Materials;\
+]
+
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2095; TABLE_HEADERS=Type 2 Upgrade Materials; TABLE_WIDTHS=125]
+[TR; H=32]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2135; TABLE_HEADERS=A|B|C; TABLE_WIDTHS=170|180|170]
+[TR; H=70]
+[TD; ITEM=40214]
+[TD; ITEM=40213]
+[TD; ITEM=40714]
+[TR; H=26]
+[TD; TEXT=Pet Emblem x50; ALIGN=center]
+[TD; TEXT=Aetherite Ore x250; ALIGN=center]
+[TD; TEXT=Clam x50; ALIGN=center]
+[TABLE_END]
+
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2245; TABLE_HEADERS=Type 3 Upgrade Materials; TABLE_WIDTHS=125]
+[TR; H=32]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2285; TABLE_HEADERS=A|B|C; TABLE_WIDTHS=170|180|170]
+[TR; H=70]
+[TD; ITEM=40214]
+[TD; ITEM=50628]
+[TD; ITEM=40715]
+[TR; H=26]
+[TD; TEXT=Pet Emblem x100; ALIGN=center]
+[TD; TEXT=Ebony x10; ALIGN=center]
+[TD; TEXT=White Pearl x50; ALIGN=center]
+[TABLE_END]
+
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2395; TABLE_HEADERS=Type 4 Upgrade Materials; TABLE_WIDTHS=125]
+[TR; H=32]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2435; TABLE_HEADERS=A|B|C; TABLE_WIDTHS=170|180|170]
+[TR; H=70]
+[TD; ITEM=40214]
+[TD; ITEM=50632]
+[TD; ITEM=40716]
+[TR; H=26]
+[TD; TEXT=Pet Emblem x150; ALIGN=center]
+[TD; TEXT=Amethyst x10; ALIGN=center]
+[TD; TEXT=Blue Pearl x50; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2545; TABLE_HEADERS=Type 5 Upgrade Materials; TABLE_WIDTHS=125]
+[TR; H=32]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2585; TABLE_HEADERS=A|B|C; TABLE_WIDTHS=170|180|170]
+[TR; H=70]
+[TD; ITEM=40214]
+[TD; ITEM=50634]
+[TD; ITEM=40717]
+[TR; H=26]
+[TD; TEXT=Pet Emblem x200; ALIGN=center]
+[TD; TEXT=Soul Crystal x10; ALIGN=center]
+[TD; TEXT=Blood-Red Pearl x50; ALIGN=center]
+[TABLE_END]
+
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2695; TABLE_HEADERS=Type 6 Upgrade Materials; TABLE_WIDTHS=125]
+[TR; H=32]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2735; TABLE_HEADERS=A|B|C; TABLE_WIDTHS=170|180|170]
+[TR; H=70]
+[TD; ITEM=40214]
+[TD; ITEM=50635]
+[TD; ITEM=40718]
+[TR; H=26]
+[TD; TEXT=Pet Emblem x250; ALIGN=center]
+[TD; TEXT=Ruby x5; ALIGN=center]
+[TD; TEXT=Pearl Fusion x100; ALIGN=center]
+[TABLE_END]
+
+
+
+[\
+    TITLE;\
+    X=10;Y=2855;\
+    TEXT_1=Feeding Your Pet;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=2895; TABLE_HEADERS=Info; TABLE_WIDTHS=125]
+
+[TR; H=32]
+[TD; TEXT=Feed daily with Pet Emblems.]
+
+[TR; H=32]
+[TD; TEXT=Visit Stable Boy > "Exchange Pets" to trade unwanted pets for emblems.]
+
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2975; TABLE_HEADERS=Egg Type|Emblems Gained; TABLE_WIDTHS=240|140]
+
+[TR; H=34]
+[TD; TEXT=Monkey / Spider]
+[TD; TEXT=1x; ALIGN=center]
+
+[TR; H=34]
+[TD; TEXT=Mini Azrael / Blue Dragon]
+[TD; TEXT=3x; ALIGN=center]
+
+[TR; H=34]
+[TD; TEXT=Razador / Nemere]
+[TD; TEXT=5x; ALIGN=center]
+
+[TABLE_END]
+
+
+
+[\
+    TITLE;\
+    X=10;Y=3120;\
+    TEXT_1=Revival and Lifetime;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=3170; TABLE_HEADERS=Details; TABLE_WIDTHS=125]
+
+[TR; H=32]
+[TD; TEXT=Pet time runs even when you are offline.]
+
+[TR; H=32]
+[TD; TEXT=Revive dead pets with |cffFFD37ADivine Protein Bites|r from Stable Boy.]
+
+[TR; H=32]
+[TD; TEXT=Extend pet life up to 30 days with |cffFFD37ATasty Treat|r. Purchased at Stable Boy.]
+
+[TABLE_END]
+
+
+
+[\
+    TITLE;\
+    X=10;Y=3280;\
+    TEXT_1=Pet Skills;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=3320; TABLE_HEADERS=Rules; TABLE_WIDTHS=125]
+
+
+[TR; H=34]
+[TD; TEXT=Pets unlock 3 skill slots on hatch, you can open 3 more with |cffFFD37APet Unlocker|r.]
+
+
+[TR; H=34]
+[TD; TEXT=You need 20 books per skill for maximum bonus.]
+
+[TR; H=50]
+[TD; TEXT=Books drop from Pet Book Chests from dungeon main bosses or from their chests.]
+
+[TR; H=34]
+[TD; TEXT=You can reset a skill using |cffFFD37APet Revertus|r. Also available at the itemshop.]
+
+
+
+
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;Y=3530;\
+    TEXT_1=Skill Books List;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=3570; TABLE_HEADERS=Skill Name|Item; TABLE_WIDTHS=260|120]
+
+[TR; H=30]
+[TD; TEXT=Yang Drop]
+[TD; ITEM=55014]
+
+[TR; H=30]
+[TD; TEXT=Elemental Power]
+[TD; ITEM=55015]
+
+[TR; H=30]
+[TD; TEXT=Life Drain]
+[TD; ITEM=55016]
+
+[TR; H=30]
+[TD; TEXT=Haste]
+[TD; ITEM=55017]
+
+[TR; H=30]
+[TD; TEXT=Drill]
+[TD; ITEM=55018]
+
+[TR; H=30]
+[TD; TEXT=Critical Mastery]
+[TD; ITEM=55019]
+
+[TR; H=30]
+[TD; TEXT=Vampirism]
+[TD; ITEM=55020]
+
+[TR; H=30]
+[TD; TEXT=Spiritualism]
+[TD; ITEM=55021]
+
+[TR; H=30]
+[TD; TEXT=Monster Hunter]
+[TD; ITEM=55022]
+
+[TR; H=30]
+[TD; TEXT=Human Resistance]
+[TD; ITEM=55023]
+
+[TR; H=30]
+[TD; TEXT=Eagle Eyes]
+[TD; ITEM=55024]
+
+[TR; H=30]
+[TD; TEXT=Razador Hunter]
+[TD; ITEM=55025]
+
+[TR; H=30]
+[TD; TEXT=Nemere Hunter]
+[TD; ITEM=55026]
+
+[TR; H=30]
+[TD; TEXT=Boss Cape Assault]
+[TD; ITEM=55034]
+
+[TR; H=30]
+[TD; TEXT=Boss Guard]
+[TD; ITEM=55035]
+
+[TR; H=30]
+[TD; TEXT=Melee Magic Boost]
+[TD; ITEM=55037]
+
+[TABLE_END]
+
+
+
+[\
+    TITLE;\
+    X=10;Y=4070;\
+    TEXT_1=Transferring Pets;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=4130; TABLE_HEADERS=How To; TABLE_WIDTHS=125]
+
+[TR; H=32]
+[TD; TEXT=Buy a |cffFFD37ATransport Box|r from the Stable Boy.]
+
+[TR; H=32]
+[TD; TEXT=Take your pet and drag it onto the box to transfer.]
+
+[TABLE_END]
+
+
+
+[\
+    TITLE;\
+    X=10;Y=4220;\
+    TEXT_1=Pet Costumes;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=4270; TABLE_HEADERS=Info; TABLE_WIDTHS=125]
+
+[TR; H=34]
+[TD; TEXT=Unlock unique looks for your pet by purchasing Pet Costumes at the Costume Tailor.]
+
+[TR; H=34]
+[TD; TEXT=These are cosmetic-only upgrades and do not affect stats or performance - just pure style!]
+
+[TABLE_END]
+
+[X=5;Y=4355;FONT_SIZE=13b;NO_ADD_Y;OUTLINE;]

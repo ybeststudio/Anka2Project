@@ -1,0 +1,2 @@
+[IMG=d:/ymir work/ui/game/wiki/guides/title.png; Y=0; X=0]
+[X=55;Y=11;FONT_SIZE=18b;NO_ADD_Y;COLOR=cebb98;OUTLINE]ParentTxt(1)

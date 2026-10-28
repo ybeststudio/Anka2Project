@@ -1,0 +1,82 @@
+[X_PADDING=40;FONT_SIZE=18b;COLOR=ffd700]Objectif
+ 
+ 
+[X_PADDING=85;]|Eemoji/arrow_2|e Obtenir son arme 30 (EV) grace aux pierres d'eveil (30) dropable sur le Draenor.
+
+[X_PADDING=85;]|Eemoji/arrow_2|e Avoir toutes les rosées permanentes.
+
+[X_PADDING=85;]|Eemoji/arrow_2|e Fabriquer son livre d'exploit 
+
+
+[X_PADDING=85;]|Eemoji/arrow_2|e Monter deux compétences en P1.
+
+[X_PADDING=85;]|Eemoji/arrow_2|e Monter vos compétences passives (Sorceleur, Commandement, Alchimie du dragon et
+[X_PADDING=95;]Maître du sort) en M5.
+
+
+
+
+
+[X_PADDING=25;FONT_SIZE=18b;COLOR=ffd700]EQ. conseillé
+
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Arme Lv.30 (EV) avec au minimum |cFFD7B25B|h45% de dégat moyen|r.
+[X_PADDING=175;Y_PADDING=3]|Eemoji/arrow_2|e Armure Lv. 34 (disponible au magasin d'armures) avec au minimum 
+[X_PADDING=182;Y_PADDING=3]|cFFD7B25B|h 2.000 HP + 10% Drain de pv + 50 VA |r
+[X_PADDING=175;Y_PADDING=6]|Eemoji/arrow_2|e Bouclier pentagonal+9 (disponible au magasin d'armures) avec au minimum
+[X_PADDING=182;Y_PADDING=6]|cFFD7B25B|h 12 Force, Déf. contre l'étourdissement, Bloque CàC +15%. |r
+[X_PADDING=175;Y_PADDING=9]|Eemoji/arrow_2|e Heaume Lv. 21 (disponible au magasin d'armures) avec au minimum,
+[X_PADDING=185;Y_PADDING=9]|cFFD7B25B|h 8 vitesse d'attaque.|r
+[X_PADDING=175;Y_PADDING=12]|Eemoji/arrow_2|e Collier (au choix) avec au minimum.|cFFD7B25B|h + 2.000 PV Max  + 10% coup critique.|r
+[X_PADDING=175;Y_PADDING=15]|Eemoji/arrow_2|e Bracelet (au choix) avec au minimum|cFFD7B25B|h + 2.000 PV Max + 10% coup critique|r
+[X_PADDING=183;Y_PADDING=15]|cFFD7B25B|h+ 10 % drain PV. 
+[X_PADDING=175;Y_PADDING=18]|Eemoji/arrow_2|e Boucles oreille ébène +9 avec au minimun |cFFD7B25B|h20% Chance de double objet |r
+[X_PADDING=175;Y_PADDING=21]|Eemoji/arrow_2|e Chaussure (au choix) avec au minimum|cFFD7B25B|h + 2.000 PV Max + 10% coup critique|r
+[X_PADDING=175;Y_PADDING=24]|Eemoji/arrow_2|e|cFFD7B25B|h Collecteur d'âme +3.
+  
+  
+  
+  
+  
+[X_PADDING=10;FONT_SIZE=14b;COLOR=ffd700]|Eemoji/arrow_2|e Autres objets conseillé
+  
+
+[X_PADDING=85;Y_PADDING=6;FONT_SIZE=13]|Eemoji/arrow_2|e |cFFf1e6c0|h Livre d'exploit +0 à +3                                                  |Eemoji/arrow_2|e |cFFf1e6c0|h Rosée rouge (P)|r 
+
+
+
+[X_PADDING=85;Y_PADDING=-6;FONT_SIZE=13]|Eemoji/arrow_2|e |cFFf1e6c0|h Rosée bleue (P)|r                                                  			|Eemoji/arrow_2|e |cFFf1e6c0|h Rosée rose (P)|r
+
+
+
+[X_PADDING=85;Y_PADDING=-12;FONT_SIZE=13]|Eemoji/arrow_2|e |cFFf1e6c0|h Rosée blanche (P)|r                                                         |Eemoji/arrow_2|e |cFFf1e6c0|h Rosée jaune (P)|r
+  
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=12; CENTER_ALIGN]
+[IMG=d:/ymir work/ui/game/wiki/systems/farm_2.png; Y=54;X=10]
+[LINK=article#7#0.0#0;TEXT=Guide: livre d'exploit;X=228;Y=106;FONT_SIZE=12;COLOR=0xffd700;]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=246; CENTER_ALIGN]
+[IMG=d:/ymir work/ui/game/inventory/equipment_bg_without_ring.png; Y=290; X=10]
+[ITEM=3519;X=17;Y=295;SOCKET=0:1#1:1#2:1;ATTR=0:72?45#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=16009;X=128;Y=360;ATTR=0:1?2000#1:15?10#2:0?0#3:0?0#4:0?0;]
+[ITEM=14009;X=85;Y=360;ATTR=0:1?2000#1:15?10#2:23?10#3:0?0#4:0?0;]
+[ITEM=15009;X=52;Y=438;ATTR=0:1?2000#1:15?10#2:0?0#3:0?0#4:0?0;]
+[ITEM=13029;X=88;Y=326;ATTR=0:5?12#1:15?10#2:27?15#3:48?1#4:0?0;]
+[ITEM=12229;X=51;Y=295;ATTR=0:7?8#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=95003;X=87;Y=295;ATTR=0:7?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=11249;X=53;Y=325;ATTR=0:1?2000#1:23?10#2:53?50#3:0?0#4:0?0;]
+[ITEM=17109;X=128;Y=326;ATTR=0:45?20#1:0?0#2:0?0#3:0?0#4:0?0;]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/divider_small.png; Y=525;X=10]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg3.png; Y=540;X=10]
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg3.png; Y=540; X=465]
+
+[ITEM=96480;X=28;Y=545;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=950821;X=484;Y=545;SOCKET=0:15#1:20#2:0;]
+[ITEM=950822;X=484;Y=580;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=950823;X=484;Y=620;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=950825;X=28;Y=580;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=950826;X=28;Y=620;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[LINK=article#6#0.0#0;TEXT=Guide: collecteur d'âme;X=175;Y=475;FONT_SIZE=12;COLOR=0xffd700;]
+[BANNER_IMG = d:/ymir work/ui/game/wiki/category/guide.png]

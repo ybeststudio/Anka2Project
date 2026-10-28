@@ -1,0 +1,1 @@
+[TITLE;X=10;Y=20;TEXT_1=Daily Events]

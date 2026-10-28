@@ -1,0 +1,855 @@
+[/ SUMMARY /]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=3;Y=5;LINKINDEX=article#13#5.38;TEXT={WK:1};COLOR_TEXT=cebb98]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=133;Y=5;LINKINDEX=article#13#25.38;TEXT={WK:222};COLOR_TEXT=cebb98]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=263;Y=5;LINKINDEX=article#13#107.61;TEXT={WK:257};COLOR_TEXT=cebb98]
+
+
+
+ 
+[\
+    TITLE;\
+    X=10;Y=54;\
+    TEXT_1={WK:1};\
+]
+ 
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=115;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/6_7_bonus/picture_1.png;\
+    Y_PADDING=5;\
+    TEXT_1={WK:216};\
+    TEXT_2={WK:217};\
+    TEXT_3={WK:218};\
+    TEXT_4={WK:219};\
+    TEXT_5={WK:220};\
+    TEXT_6={WK:6:20095};\
+    TEXT_7={WK:221};\
+    TEXT_2_Y_PADDING = 5;TEXT_3_Y_PADDING = 5;\
+    TEXT_4_Y_PADDING = 10;TEXT_5_Y_PADDING = 15;\
+    TEXT_3_X_PADDING = 10;\
+    TEXT_6_Y_PADDING = 40;TEXT_7_Y_PADDING = 45;\
+]
+[IMG=d:/ymir work/ui/game/wiki/layout/picture_bg.png; Y=210;X=465]
+[RENDERTARGET=20095;WIDTH=67;HEIGHT=67;X=465;Y=210+3;]
+[BUTTON=d:/ymir work/ui/game/wiki/bg_wiki.png#d:/ymir work/ui/game/wiki/bg_wiki_hover.png#d:/ymir work/ui/game/wiki/bg_wiki.png;X=95;Y=257;LINKINDEX=shop#20095#0.0;TEXT={WK:36:20095};]
+
+
+[\
+    TITLE;\
+    X=10;Y=304;\
+    TEXT_1={WK:222};\
+]
+
+[\
+    SUBTITLE;\
+    X=10;Y=380;\
+    TEXT_1={WK:227};\
+]
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=430;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/6_7_bonus/67picture_2.png;\
+    Y_PADDING=5;\
+    TEXT_1={WK:223};\
+    TEXT_2={WK:224};\
+    TEXT_3={WK:225};\
+    TEXT_4={WK:226};\
+    TEXT_3_Y_PADDING = 5;TEXT_4_Y_PADDING = 10;\
+    TEXT_2_X_PADDING = 10;\
+]
+
+[\
+    FRAG_TYPE;\
+    X=10+(170*0);Y=545;\
+    VNUM_1=39077;\]
+[\
+    FRAG_TYPE;\
+    X=10+(170*1);Y=545;\
+    VNUM_1=39071;\
+    TEXT_1={WK:229};\
+]
+[\
+    FRAG_TYPE;\
+    X=10+(170*2);Y=545;\
+    VNUM_1=39073;\
+    TEXT_1={WK:230};\
+]
+
+[\
+    FRAG_TYPE;\
+    X=10+(170*0);Y=545+(77*1);\
+    VNUM_1=39072;\
+    TEXT_1={WK:231};\
+]
+[\
+    FRAG_TYPE;\
+    X=10+(170*1);Y=545+(77*1);\
+    VNUM_1=39074;\
+    TEXT_1={WK:232};\
+]
+[\
+    FRAG_TYPE;\
+    X=10+(170*2);Y=545+(77*1);\
+    VNUM_1=39075;\
+    TEXT_1={WK:233};\
+]
+
+[\
+    FRAG_TYPE;\
+    X=10+(170*0);Y=545+(77*2);\
+    VNUM_1=39070;\
+    TEXT_1={WK:234};\
+]
+[\
+    FRAG_TYPE;\
+    X=10+(170*1);Y=545+(77*2);\
+    VNUM_1=39076;\
+    TEXT_1={WK:235};\
+]
+[\
+    FRAG_TYPE;\
+    X=10+(170*2);Y=545+(77*2);\
+    VNUM_1=39079;\
+    TEXT_1={WK:236};\
+]
+
+[\
+    FRAG_TYPE;\
+    X=10+(170*0);Y=545+(77*3);\
+    VNUM_1=39078;\
+    TEXT_1=AppendItem(62500);\
+]
+
+[\
+    SUBTITLE;\
+    X=10;Y=875;\
+    TEXT_1={WK:237};\
+]
+
+[\
+    DESCRIPTION_WITH_4_ITEMS;\
+    X=10;Y=925;\
+    Y_PADDING=8;\
+    TEXT_1={WK:238};\
+    TEXT_2={WK:239};\
+    TEXT_3={WK:240};\
+    TEXT_5={WK:241};\
+    TEXT_6={WK:242};\
+    TEXT_7={WK:243};\
+    TEXT_8={WK:244};\
+    TEXT_9={WK:245};\
+    TEXT_11={WK:246};\
+    TEXT_6_X_PADDING = 10;TEXT_7_X_PADDING = 10;\
+    TEXT_8_X_PADDING = 10;TEXT_9_X_PADDING = 10;\
+    TEXT_2_Y_PADDING = 2;TEXT_3_Y_PADDING = 3;\
+    VNUM_1=72064;\
+    VNUM_2=72064;\
+    VNUM_3=72064;\
+    VNUM_4=72064;\
+]  
+
+[\
+    SUBTITLE;\
+    X=10;Y=1115;\
+    TEXT_1={WK:247};\
+]
+
+[\
+    DESCRIPTION_WITH_4_ITEMS;\
+    X=10;Y=1165;\
+    Y_PADDING=8;\
+    TEXT_1={WK:248};\
+    TEXT_2={WK:249};\
+    TEXT_3={WK:250};\
+    TEXT_5={WK:251};\
+    TEXT_6={WK:252};\
+    TEXT_7={WK:253};\
+    TEXT_8={WK:254};\
+    TEXT_9={WK:255};\
+    TEXT_11={WK:256};\
+    TEXT_6_X_PADDING = 10;TEXT_7_X_PADDING = 10;\
+    TEXT_8_X_PADDING = 10;TEXT_9_X_PADDING = 10;\
+    TEXT_2_Y_PADDING = 2;TEXT_3_Y_PADDING = 3;\
+    VNUM_1=96348;\
+    VNUM_2=96347;\
+    VNUM_3=96346;\
+    VNUM_4=96339;\
+]  
+
+[\
+    TITLE;\
+    X=10;Y=1340;\
+    TEXT_1={WK:257};\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;Y=1405;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    Y_PADDING=5;\
+    VNUM_1=72346;\
+    TEXT_1={WK:258};\
+    TEXT_2={WK:259};\
+    TEXT_3={WK:260};\
+    TEXT_4={WK:261};\
+    TEXT_4_X_PADDING = 10;\
+]
+
+[/ ARMOR /]
+[\
+    LIST_BONUS;\
+    X=10;Y=1490;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/6_7_bonus/table_armor.png;\
+    TEXT_1={WK:229};\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1490+(28*0);\
+    TEXT_1=AppendBonus(1);\
+    TEXT_2=250;TEXT_3=300;TEXT_4=350;TEXT_5=500;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1490+(28*1);\
+    TEXT_1=AppendBonus(53);\
+    TEXT_2=30;TEXT_3=35;TEXT_4=40;TEXT_5=50;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1490+(28*2);\
+    TEXT_1=AppendBonus(55);\
+    TEXT_2=30;TEXT_3=35;TEXT_4=40;TEXT_5=50;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1490+(28*3);\
+    TEXT_1=AppendBonus(43);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1490+(28*4);\
+    TEXT_1=AppendBonus(63);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1490+(28*5);\
+    TEXT_1=AppendBonus(17);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1490+(28*6);\
+    TEXT_1=AppendBonus(115);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1490+(28*7);\
+    TEXT_1=AppendBonus(9);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1490+(28*8);\
+    TEXT_1=AppendBonus(23);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1490+(28*9);\
+    TEXT_1=AppendBonus(39);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1490+(28*10);\
+    TEXT_1=AppendBonus(121);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[/ WEAPON /]
+[\
+    LIST_BONUS;\
+    X=10;Y=1850;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/6_7_bonus/table_weapon.png;\]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1850+(28*0);\
+    TEXT_1=AppendBonus(117);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1850+(28*1);\
+    TEXT_1=AppendBonus(116);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1850+(28*2);\
+    TEXT_1=AppendBonus(17);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1850+(28*3);\
+    TEXT_1=AppendBonus(18);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1850+(28*4);\
+    TEXT_1=AppendBonus(19);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1850+(28*5);\
+    TEXT_1=AppendBonus(20);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1850+(28*6);\
+    TEXT_1=AppendBonus(21);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1850+(28*7);\
+    TEXT_1=AppendBonus(22);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1850+(28*8);\
+    TEXT_1=AppendBonus(15);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=2;TEXT_5=3;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1850+(28*9);\
+    TEXT_1=AppendBonus(16);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=2;TEXT_5=3;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=1850+(28*10);\
+    TEXT_1=AppendBonus(144);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[/ HELMET /]
+[\
+    LIST_BONUS;\
+    X=10;Y=2210;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/6_7_bonus/table_helmet.png;\
+    TEXT_1={WK:231};\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2210+(28*0);\
+    TEXT_1=AppendBonus(12);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=8;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2210+(28*1);\
+    TEXT_1=AppendBonus(17);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2210+(28*2);\
+    TEXT_1=AppendBonus(18);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2210+(28*3);\
+    TEXT_1=AppendBonus(19);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2210+(28*4);\
+    TEXT_1=AppendBonus(20);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2210+(28*5);\
+    TEXT_1=AppendBonus(21);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2210+(28*6);\
+    TEXT_1=AppendBonus(22);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2210+(28*7);\
+    TEXT_1=AppendBonus(117);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2210+(28*8);\
+    TEXT_1=AppendBonus(63);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2210+(28*9);\
+    TEXT_1=AppendBonus(24);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=8;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2210+(28*10);\
+    TEXT_1=AppendBonus(28);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=8;\
+]
+[/ SHIELD /]
+[\
+    LIST_BONUS;\
+    X=10;Y=2570;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/6_7_bonus/table_shield.png;\
+    TEXT_1={WK:230};\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2570+(28*0);\
+    TEXT_1=AppendBonus(118);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2570+(28*1);\
+    TEXT_1=AppendBonus(17);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2570+(28*2);\
+    TEXT_1=AppendBonus(18);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2570+(28*3);\
+    TEXT_1=AppendBonus(19);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2570+(28*4);\
+    TEXT_1=AppendBonus(20);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2570+(28*5);\
+    TEXT_1=AppendBonus(21);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2570+(28*6);\
+    TEXT_1=AppendBonus(22);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2570+(28*7);\
+    TEXT_1=AppendBonus(3);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2570+(28*8);\
+    TEXT_1=AppendBonus(4);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2570+(28*9);\
+    TEXT_1=AppendBonus(5);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2570+(28*10);\
+    TEXT_1=AppendBonus(6);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[/ BRACELET /]
+[\
+    LIST_BONUS;\
+    X=10;Y=2930;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/6_7_bonus/table_bracelet.png;\
+    TEXT_1={WK:232};\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2930+(28*0);\
+    TEXT_1=AppendBonus(1);\
+    TEXT_2=250;TEXT_3=300;TEXT_4=350;TEXT_5=500;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2930+(28*1);\
+    TEXT_1=AppendBonus(17);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=2;TEXT_5=3;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2930+(28*2);\
+    TEXT_1=AppendBonus(18);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2930+(28*3);\
+    TEXT_1=AppendBonus(19);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2930+(28*4);\
+    TEXT_1=AppendBonus(20);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2930+(28*5);\
+    TEXT_1=AppendBonus(21);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2930+(28*6);\
+    TEXT_1=AppendBonus(22);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2930+(28*7);\
+    TEXT_1=AppendBonus(23);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=2;TEXT_5=3;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2930+(28*8);\
+    TEXT_1=AppendBonus(16);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2930+(28*9);\
+    TEXT_1=AppendBonus(116);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=2930+(28*10);\
+    TEXT_1=AppendBonus(145);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[/ NECKLACE /]
+[\
+    LIST_BONUS;\
+    X=10;Y=3290;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/6_7_bonus/table_necklace.png;\
+    TEXT_1={WK:235};\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3290+(28*0);\
+    TEXT_1=AppendBonus(1);\
+    TEXT_2=250;TEXT_3=300;TEXT_4=350;TEXT_5=500;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3290+(28*1);\
+    TEXT_1=AppendBonus(117);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3290+(28*2);\
+    TEXT_1=AppendBonus(116);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3290+(28*3);\
+    TEXT_1=AppendBonus(11);\
+    TEXT_2=4;TEXT_3=6;TEXT_4=10;TEXT_5=15;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3290+(28*4);\
+    TEXT_1=AppendBonus(9);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3290+(28*5);\
+    TEXT_1=AppendBonus(43);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3290+(28*6);\
+    TEXT_1=AppendBonus(13);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=2;TEXT_5=3;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3290+(28*7);\
+    TEXT_1=AppendBonus(15);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=2;TEXT_5=3;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3290+(28*8);\
+    TEXT_1=AppendBonus(16);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=2;TEXT_5=3;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3290+(28*9);\
+    TEXT_1=AppendBonus(10);\
+    TEXT_2=40;TEXT_3=60;TEXT_4=100;TEXT_5=150;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3290+(28*10);\
+    TEXT_1=AppendBonus(24);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=8;\
+]
+[/ EARRINGS /]
+[\
+    LIST_BONUS;\
+    X=10;Y=3650;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/6_7_bonus/table_earrings.png;\
+    TEXT_1={WK:234};\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3650+(28*0);\
+    TEXT_1=AppendBonus(1);\
+    TEXT_2=250;TEXT_3=300;TEXT_4=350;TEXT_5=500;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3650+(28*1);\
+    TEXT_1=AppendBonus(18);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3650+(28*2);\
+    TEXT_1=AppendBonus(19);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3650+(28*3);\
+    TEXT_1=AppendBonus(20);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3650+(28*4);\
+    TEXT_1=AppendBonus(21);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3650+(28*5);\
+    TEXT_1=AppendBonus(22);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3650+(28*6);\
+    TEXT_1=AppendBonus(41);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=6;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3650+(28*7);\
+    TEXT_1=AppendBonus(17);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=2;TEXT_5=3;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3650+(28*8);\
+    TEXT_1=AppendBonus(8);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3650+(28*9);\
+    TEXT_1=AppendBonus(45);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=3650+(28*10);\
+    TEXT_1=AppendBonus(63);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[/ SHOES /]
+[\
+    LIST_BONUS;\
+    X=10;Y=4010;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/6_7_bonus/table_shoes.png;\
+    TEXT_1={WK:233};\
+]
+
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4010+(28*0);\
+    TEXT_1=AppendBonus(1);\
+    TEXT_2=250;TEXT_3=300;TEXT_4=350;TEXT_5=500;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4010+(28*1);\
+    TEXT_1=AppendBonus(53);\
+    TEXT_2=30;TEXT_3=35;TEXT_4=40;TEXT_5=50;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4010+(28*2);\
+    TEXT_1=AppendBonus(55);\
+    TEXT_2=30;TEXT_3=35;TEXT_4=40;TEXT_5=50;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4010+(28*3);\
+    TEXT_1=AppendBonus(10);\
+    TEXT_2=40;TEXT_3=60;TEXT_4=100;TEXT_5=150;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4010+(28*4);\
+    TEXT_1=AppendBonus(116);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4010+(28*5);\
+    TEXT_1=AppendBonus(63);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4010+(28*6);\
+    TEXT_1=AppendBonus(43);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4010+(28*7);\
+    TEXT_1=AppendBonus(13);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=2;TEXT_5=3;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4010+(28*8);\
+    TEXT_1=AppendBonus(15);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=2;TEXT_5=3;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4010+(28*9);\
+    TEXT_1=AppendBonus(14);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=8;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4010+(28*10);\
+    TEXT_1=AppendBonus(24);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=8;\
+]
+
+[/ TALISMANS /]
+[\
+    LIST_BONUS;\
+    X=10;Y=4370;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/6_7_bonus/table_talisman.png;\
+    TEXT_1={WK:236};\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4370+(28*0);\
+    TEXT_1=AppendBonus(1);\
+    TEXT_2=250;TEXT_3=300;TEXT_4=350;TEXT_5=500;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4370+(28*1);\
+    TEXT_1=AppendBonus(53);\
+    TEXT_2=30;TEXT_3=35;TEXT_4=40;TEXT_5=50;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4370+(28*2);\
+    TEXT_1=AppendBonus(55);\
+    TEXT_2=30;TEXT_3=35;TEXT_4=40;TEXT_5=50;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4370+(28*3);\
+    TEXT_1=AppendBonus(17);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4370+(28*4);\
+    TEXT_1=AppendBonus(115);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4370+(28*5);\
+    TEXT_1=AppendBonus(9);\
+    TEXT_2=2;TEXT_3=3;TEXT_4=5;TEXT_5=10;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4370+(28*6);\
+    TEXT_1=AppendBonus(90);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4370+(28*7);\
+    TEXT_1=AppendBonus(91);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4370+(28*8);\
+    TEXT_1=AppendBonus(123);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4370+(28*9);\
+    TEXT_1=AppendBonus(122);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]
+[\
+    67_BONUS_ITEM;\
+    X=10;Y=4370+(28*10);\
+    TEXT_1=AppendBonus(137);\
+    TEXT_2=1;TEXT_3=2;TEXT_4=3;TEXT_5=5;\
+]

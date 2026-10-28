@@ -1,0 +1,106 @@
+[X_PADDING=40;FONT_SIZE=18b;COLOR=ffd700]Général
+ 
+ 
+[X_PADDING=85;]* Une tenue d'aura peut absorber jusqu'a |cFFD7B25B|h25%|r des bonus d'un de vos bijoux.
+[X_PADDING=85;]* La tenue d'aura possède 6 rangs d'amélioration:
+[X_PADDING=95;]Ordinaire, Sobre, Noble, Etincelante, Superbe, Rayonnante.
+[X_PADDING=85;]* Vous pouvez fabriquer votre tenue d'aura directement chez Theowahdan.
+ 
+ 
+ 
+[X_PADDING=85;] * Theowahdan se situe sur toutes les maps1.
+
+[X_PADDING=85;] Vous ne savez pas ou se trouve Theowahdan? Cliquez ici:
+
+[CENTER_ALIGN] 
+
+
+[X_PADDING=27;FONT_SIZE=18b;COLOR=ffd700]Amélioration
+ 
+ 
+[X_PADDING=85;]* Le taux d'absorption maximum d'une tenue d'aura est 100%.
+
+[X_PADDING=85;]* Vous pouvez augmenter le taux d'absorption en augmentant le niveau
+[X_PADDING=95;]de la tenue d'aura.
+
+[X_PADDING=85;]* Des |cFFD7B25B|hrunes d'aura|r seront nécéssaire pour améliorer votre tenue d'aura
+[X_PADDING=95;]chez Theowahdan.
+
+[X_PADDING=85;]* Il éxiste 5 runes d'aura différentes:
+[X_PADDING=85;]* |cFFD7B25B|hRune d'aura glacée|r = 4 point d'éxpérience
+[X_PADDING=85;]* |cFFD7B25B|hRune d'aura de feu (40)|r = 40 points d'éxpérience
+[X_PADDING=85;]* |cFFD7B25B|hRune d'aura de feu (200)|r = 200 points d'éxpérience
+[X_PADDING=85;]* |cFFD7B25B|hRune d'aura de feu (400)|r = 400 points d'éxpérience
+[X_PADDING=85;]* |cFFD7B25B|hRune d'aura de feu (1000)|r = 1.000 points d'éxpérience
+
+ 
+ 
+  
+  
+  
+  
+  
+ 
+ 
+[X_PADDING=32;FONT_SIZE=18b;COLOR=ffd700]Absorption
+
+
+[X_PADDING=85;]* La tenue d'aura peut absorber tout les bonus d'un bijoux. 
+
+[X_PADDING=85;]* La valeur des bonus après absorption est toujours |cFFD7B25B|harrondie au supérieur|r.
+
+[X_PADDING=85;]* L'absoption peut se faire chez Theowahdan.
+ 
+
+ 
+ 
+ 
+[X_PADDING=20;FONT_SIZE=18b;COLOR=ffd700]Enlever Bonus
+ 
+ 
+[X_PADDING=85;]* Le |cFFD7B25B|hcertificat d'inversion|r supprime les bonus d'une tenue d'aura.
+[X_PADDING=85;]* Le bijoux absorbée ne sera pas récupérée dans ce processus.
+[X_PADDING=85;]* Le certificat d'inversion peut être acheté dans l'Itemshop. 
+ 
+
+[BANNER_IMG = d:/ymir work/ui/wiki/banners/systems/aura.png]
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=12; CENTER_ALIGN]
+[IMG=d:/ymir work/ui/game/wiki/layout/picture_bg.png; Y=54;X=10]
+[ITEM=49001;X=28;Y=70;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/picture_bg.png; Y=130;X=10]
+[RENDERTARGET=9015;WIDTH=75;HEIGHT=75;X=5;Y=126;]
+
+[LINK=warp#475000#961900#0;TEXT=Theowahdan (Rouge);X=350;Y=165;FONT_SIZE=12;COLOR=0xffd700;]
+[LINK=warp#61700#157900#0;TEXT=Theowahdan (Jaune);X=350;Y=178;FONT_SIZE=12;COLOR=0xffd700;]
+[LINK=warp#950200#286600#0;TEXT=Theowahdan (Bleu);X=350;Y=191;FONT_SIZE=12;COLOR=0xffd700;]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=220; CENTER_ALIGN]
+[IMG=d:/ymir work/ui/game/wiki/systems/aura_outfit/picture_1.png; Y=262;X=10]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/showcase_long.png; Y=470;X=10]
+
+[ITEM=49001;X=36;Y=485;]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=491;X=64]
+[ITEM=49002;X=124;Y=485;]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=491;X=152]
+[ITEM=49003;X=212;Y=485;]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=491;X=239]
+[ITEM=49004;X=299;Y=485;]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=491;X=327]
+[ITEM=49005;X=387;Y=485;]
+[IMG=d:/ymir work/ui/game/wiki/layout/drop_bg_arrow.png; Y=491;X=415]
+[ITEM=49006;X=475;Y=485;]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg5.png; Y=262; X=465]
+[ITEM=49990;Y=270;X=483;SOCKET=0:0#1:100]
+[ITEM=49991;Y=305;X=483;SOCKET=0:0#1:100]
+[ITEM=49992;Y=340;X=483;SOCKET=0:0#1:100]
+[ITEM=49993;Y=375;X=483;SOCKET=0:0#1:100]
+[ITEM=49994;Y=410;X=483;SOCKET=0:0#1:100]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=550; CENTER_ALIGN]
+[IMG=d:/ymir work/ui/game/wiki/systems/sash/combi.png; Y=592;X=10]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=713; CENTER_ALIGN]
+[IMG=d:/ymir work/ui/game/wiki/layout/picture_bg.png; Y=755;X=10]
+[ITEM=90000;Y=771; X=28;SOCKET=0:0#1:100]

@@ -1,0 +1,288 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    TEXT_1=Level 1-55 Progression Guide;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=116; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=72]
+[TD; TEXT={WK:726}; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=198; TABLE_HEADERS=Column A; TABLE_WIDTHS=240]
+[TR; H=72]
+[TD; TEXT={WK:756}; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=305;\
+    ANCHOR=lvl_35;\
+    TEXT_1=Early Progression;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=355; TABLE_HEADERS=Topic|Details; TABLE_WIDTHS=120|400]
+[TR; H=56]
+[TD; TEXT=Starter Gear; ALIGN=center]
+[TD; TEXT={WK:727}; ALIGN=center]
+[TR; H=56]
+[TD; TEXT=Vote4Buff; ALIGN=center]
+[TD; TEXT={WK:728}; ALIGN=center]
+[TR; H=56]
+[TD; TEXT={WK:61}; ALIGN=center]
+[TD; TEXT={WK:729}; ALIGN=center]
+[TR; H=56]
+[TD; TEXT=Itemshop; ALIGN=center]
+[TD; TEXT={WK:730}; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=598;\
+    TEXT_1=Level 30 Weapon;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=648;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=5110;\
+    TEXT_1={WK:731};\
+    Y_PADDING=12;\
+]
+
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=727;\
+    TEXT_1=Leveling & Early Dungeons;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=777; TABLE_HEADERS=Topic|Details; TABLE_WIDTHS=120|400]
+[TR; H=72]
+[TD; TEXT=Early Dungeons; ALIGN=center]
+[TD; TEXT={WK:732}; ALIGN=center]
+[TR; H=56]
+[TD; TEXT=Mount; ALIGN=center]
+[TD; TEXT={WK:733}; ALIGN=center]
+[TR; H=72]
+[TD; TEXT=Leveling; ALIGN=center]
+[TD; TEXT={WK:734}; ALIGN=center]
+[TR; H=72]
+[TD; TEXT=Early Targets; ALIGN=center]
+[TD; TEXT={WK:735}; ALIGN=center]
+[TR; H=72]
+[TD; TEXT=At Level 55; ALIGN=center]
+[TD; TEXT={WK:736}; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1148;\
+    ANCHOR=lvl_50;\
+    TEXT_1=Farming & Income;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1198; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=72]
+[TD; TEXT={WK:737}; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1295;\
+    TEXT_1=Drops & Materials;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1345; TABLE_HEADERS=Topic|Details; TABLE_WIDTHS=120|400]
+[TR; H=56]
+[TD; TEXT=Gold Bar's; ALIGN=center]
+[TD; TEXT={WK:738}; ALIGN=center]
+[TR; H=56]
+[TD; TEXT=AppendItem(98499); ALIGN=center]
+[TD; TEXT={WK:739}; ALIGN=center]
+[TR; H=56]
+[TD; TEXT=AppendItem(65140); ALIGN=center]
+[TD; TEXT={WK:740}; ALIGN=center]
+[TR; H=56]
+[TD; TEXT=AppendItem(40211); ALIGN=center]
+[TD; TEXT={WK:741}; ALIGN=center]
+[TR; H=56]
+[TD; TEXT=Other Materials; ALIGN=center]
+[TD; TEXT={WK:742}; ALIGN=center]
+[TABLE_END]
+
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1652;\
+    ANCHOR=lvl_55;\
+    TEXT_1=Eq & Systems;\
+]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1702;\
+    TEXT_1=Skills, Passives & Biologist;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1752; TABLE_HEADERS=Topic|Details; TABLE_WIDTHS=120|400]
+[TR; H=56]
+[TD; TEXT={WK:205}; ALIGN=center]
+[TD; TEXT={WK:743}; ALIGN=center]
+[TR; H=56]
+[TD; TEXT=Reading Items; ALIGN=center]
+[TD; TEXT={WK:744}; ALIGN=center]
+[TR; H=56]
+[TD; TEXT=Passive Skills; ALIGN=center]
+[TD; TEXT={WK:745}; ALIGN=center]
+[TR; H=56]
+[TD; TEXT=Biologist; ALIGN=center]
+[TD; TEXT={WK:746}; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1995;\
+    TEXT_1=Dews & Herbalism;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2045; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=72]
+[TD; TEXT={WK:747}; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2137; TABLE_HEADERS=Topic|Details; TABLE_WIDTHS=120|400]
+[TR; H=72]
+[TD; TEXT=Priorities; ALIGN=center]
+[TD; TEXT={WK:748}; ALIGN=center]
+[TR; H=56]
+[TD; TEXT=Unlock Herbalism; ALIGN=center]
+[TD; TEXT={WK:749}; ALIGN=center]
+[TR; H=56]
+[TD; TEXT=Herbology Skill; ALIGN=center]
+[TD; TEXT={WK:750}; ALIGN=center]
+[TABLE_END]
+
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=2342;\
+    TEXT_1=Accessories & Upgrades;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2392; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=72]
+[TD; TEXT={WK:751}; ALIGN=center]
+[TABLE_END]
+
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2474; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=56]
+[TD; TEXT={WK:752}; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2540; TABLE_HEADERS=Topic|Details; TABLE_WIDTHS=120|400]
+[TR; H=56]
+[TD; TEXT=Ring Options; ALIGN=center]
+[TD; TEXT={WK:753}; ALIGN=center]
+[TR; H=56]
+[TD; TEXT=Resistance; ALIGN=center]
+[TD; TEXT={WK:754}; ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=2675;\
+    TEXT_1=AppendBonus(15);\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2725; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=72]
+[TD; TEXT={WK:755}; ALIGN=center]
+[TABLE_END]
+
+
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=2822;\
+    TEXT_1=Alchemy Bonuses;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2872; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=56]
+[TD; TEXT=Recommended before level 56+: |cffFFD37AMatt Mythic Alchemy Ring|r |cffFFD37A|rwith the following bonuses:; ALIGN=center]
+[TABLE_END]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=2948;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=115000;\
+    TEXT_1=Color(AppendItem(115000))\nColor2(AppendBonus(63))\nColor2(AppendBonus(73));\
+    Y_PADDING=10;\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=3020;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=125000;\
+    TEXT_1=Color(AppendItem(125000))\nColor2(AppendBonus(53));\
+    Y_PADDING=10;\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=3085;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=135000;\
+    TEXT_1=Color(AppendItem(135000))\nColor2(AppendBonus(121))\nColor2(AppendBonus(27));\
+    Y_PADDING=10;\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=3157;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=145000;\
+    TEXT_1=Color(AppendItem(145000))\nColor2(AppendBonus(119))\nColor2(AppendBonus(123));\
+    Y_PADDING=10;\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=3229;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=155000;\
+    TEXT_1=Color(AppendItem(155000))\nColor2(AppendBonus(120))\nColor2(AppendBonus(23)) or Color2(AppendBonus(69));\
+    Y_PADDING=10;\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=3301;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=165000;\
+    TEXT_1=Color(AppendItem(165000))\nColor2(AppendBonus(72))\nColor2(AppendBonus(74));\
+    Y_PADDING=10;\
+]

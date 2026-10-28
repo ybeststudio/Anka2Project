@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="HLSL">
+      <UniqueIdentifier>{9394a395-dd68-414c-a47e-c6da1ca66b83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HLSL\Vertex">
+      <UniqueIdentifier>{147c8549-212b-4cfa-aa59-6f4e5d3c8084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HLSL\Pixel">
+      <UniqueIdentifier>{6ae5bd4a-a293-49ff-a6b9-94f6919ddb7d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ShaderReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Pixel\DepthShadowMap.hlsl">
+      <Filter>HLSL\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="Pixel\ObjectsShadowMap.hlsl">
+      <Filter>HLSL\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="Pixel\ShadowMap.hlsl">
+      <Filter>HLSL\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="Pixel\TerrainShadow.hlsl">
+      <Filter>HLSL\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="Pixel\TreeShadowMap.hlsl">
+      <Filter>HLSL\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="Vertex\DepthShadowMap.hlsl">
+      <Filter>HLSL\Vertex</Filter>
+    </FxCompile>
+    <FxCompile Include="Vertex\ObjectsShadowMap.hlsl">
+      <Filter>HLSL\Vertex</Filter>
+    </FxCompile>
+    <FxCompile Include="Vertex\ShadowMap.hlsl">
+      <Filter>HLSL\Vertex</Filter>
+    </FxCompile>
+    <FxCompile Include="Vertex\TerrainShadow.hlsl">
+      <Filter>HLSL\Vertex</Filter>
+    </FxCompile>
+    <FxCompile Include="Vertex\TreeShadowMap.hlsl">
+      <Filter>HLSL\Vertex</Filter>
+    </FxCompile>
+    <FxCompile Include="Pixel\TerrainBase.hlsl">
+      <Filter>HLSL\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="Vertex\TerrainBase.hlsl">
+      <Filter>HLSL\Vertex</Filter>
+    </FxCompile>
+    <FxCompile Include="Pixel\Dungeon.hlsl">
+      <Filter>HLSL\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="Pixel\WaterShadowMap.hlsl">
+      <Filter>HLSL\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="Vertex\Dungeon.hlsl">
+      <Filter>HLSL\Vertex</Filter>
+    </FxCompile>
+    <FxCompile Include="Vertex\WaterShadowMap.hlsl">
+      <Filter>HLSL\Vertex</Filter>
+    </FxCompile>
+    <FxCompile Include="Pixel\Grass.hlsl">
+      <Filter>HLSL\Pixel</Filter>
+    </FxCompile>
+    <FxCompile Include="Vertex\Grass.hlsl">
+      <Filter>HLSL\Vertex</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

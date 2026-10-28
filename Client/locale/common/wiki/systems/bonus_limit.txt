@@ -1,0 +1,184 @@
+[\
+    TITLE;\
+    X=10;Y=66;\
+    TEXT_1={WK:321};\
+]
+ 
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=115;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    Y_PADDING=5;\
+    TEXT_1=* {WK:526} ;\
+    TEXT_2={WK:527}.;\
+    TEXT_3=* {WK:528}.;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/switch.png; Y=115+4;X=14]
+
+[\
+    BONUS_ITEM;\
+    X=10;Y=200;\
+    TEXT_1=AppendBonus(27);\
+    TEXT_2={WK:529};\
+    TEXT_3=|cFFD7B25B|h{WK:530}:|r 60%;\
+    TEXT_5={WK:531}:;\
+    TEXT_6={WK:532} ;\
+    TEXT_7={WK:533};\
+]
+
+[\
+    BONUS_ITEM;\
+    X=10;Y=200+(151*1);\
+    TEXT_1=AppendBonus(23);\
+    TEXT_2={WK:534};\
+    TEXT_3={WK:535};\
+    TEXT_4=|cFFD7B25B|h{WK:530}|r 50%;\
+    TEXT_5={WK:531};\
+    TEXT_6={WK:536};\
+    TEXT_7={WK:537};\
+]
+
+[\
+    BONUS_ITEM;\
+    X=10;Y=200+(151*2);\
+    TEXT_1={WK:538};\
+    TEXT_2={WK:539};\
+    TEXT_3=|cFFD7B25B|h{WK:530}|r 100%;\
+    TEXT_5={WK:531};\
+    TEXT_6={WK:540};\
+    TEXT_7={WK:541};\
+    TEXT_8={WK:542};\
+]
+
+[\
+    BONUS_ITEM;\
+    X=10;Y=200+(151*3);\
+    TEXT_1={WK:543};\
+    TEXT_2={WK:544};\
+    TEXT_3=|cFFD7B25B|h{WK:530}|r 100%;\
+    TEXT_5={WK:531};\
+    TEXT_6={WK:545} ;\
+    TEXT_7={WK:546};\
+]
+
+[\
+    BONUS_ITEM;\
+    X=10;Y=200+(151*4);\
+    TEXT_1={WK:547};\
+    TEXT_2={WK:548};\
+    TEXT_3=|cFFD7B25B|h{WK:530}|r 100%;\
+    TEXT_5={WK:531};\
+    TEXT_6={WK:549};\
+    TEXT_7={WK:550};\
+]
+
+[\
+    BONUS_ITEM;\
+    X=10;Y=200+(151*5);\
+    TEXT_1={WK:551};\
+    TEXT_2={WK:552};\
+    TEXT_3=|cFFD7B25B|h{WK:530}|r 100%;\
+    TEXT_5={WK:531};\
+    TEXT_6={WK:553} ;\
+    TEXT_7={WK:554};\
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

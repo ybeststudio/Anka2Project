@@ -1,0 +1,15 @@
+[BANNER_IMG = d:/ymir work/ui/wiki/banners/systems/battlepass.png]
+[CENTER_ALIGN] Version 1.3.0.1 (12/08/2021)
+
+[CENTER_ALIGN;FONT_SIZE=18;COLOR=58ADFF]Changements:
+ 
+[CENTER_ALIGN] - Ajout du drop des pierres dryade sur les boss du temple ochao
+[CENTER_ALIGN] - Préparation du new système de classement (c'est pour vérifié si ça ne cause pas de lag)
+
+[CENTER_ALIGN;FONT_SIZE=18;COLOR=58ADFF]Correction :
+ 
+[CENTER_ALIGN] - Ajout du PNJ Kawuco MAP90
+[CENTER_ALIGN] - Correction des skills du Jotun
+ 
+ 
+ 

@@ -1,0 +1,374 @@
+[/ SUMMARY /]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=mount_overview;\
+    TEXT_1={WK:1};\
+    TEXT_1_ALIGN=center;\
+]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=116;\
+    TEXT_1={WK:50};\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=166;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=58000;\
+    TEXT_1={WK:51};\
+    TEXT_2_Y_PADDING=5;\
+    Y_PADDING=10;\
+]
+
+
+[TABLE_START; TABLE_MAX_WIDTH=510; TABLE_HEAD_HEIGHT=20; TABLE_HIDE_TITLE=0; X=10; Y=236; TABLE_HEADERS={WK:94}|{WK:95}; TABLE_WIDTHS=320|120]
+[TR; H=45]
+[TD; ITEM=50050]
+[TD; TEXT={WK:710}; ALIGN=center]
+[TR; H=45]
+[TD; ITEM=50050]
+[TD; TEXT={WK:711}; ALIGN=center]
+[TR; H=45]
+[TD; ITEM=40218]
+[TD; TEXT={WK:712}; ALIGN=center]
+[TABLE_END]
+
+
+
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=422;\
+    ANCHOR=mount_evo;\
+    TEXT_1={WK:96};\
+]
+
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=472;\
+    TEXT_1={WK:97};\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=522; TABLE_HEADERS=Requirements; TABLE_WIDTHS=125]
+[TR; H=32]
+[TD; TEXT={WK:98}; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=564; TABLE_HEADERS=A|B; TABLE_WIDTHS=170|170]
+[TR; H=70]
+[TD; ITEM=50050]
+[TD; ITEM=40912]
+[TR; H=26]
+[TD; TEXT=AppendItem(50050) x5; ALIGN=center]
+[TD; TEXT=AppendItem(40912) x1; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=668; TABLE_HEADERS=Column A; TABLE_WIDTHS=240]
+[TR; H=32]
+[TD; TEXT=5,000,000 Color(AppendItem(1)); ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=725;\
+    TEXT_1={WK:111};\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=775; TABLE_HEADERS=Requirements; TABLE_WIDTHS=125]
+[TR; H=32]
+[TD; TEXT={WK:98}; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=817; TABLE_HEADERS=A|B|C; TABLE_WIDTHS=170|180|170]
+[TR; H=70]
+[TD; ITEM=50050]
+[TD; ITEM=40912]
+[TD; ITEM=40914]
+[TR; H=26]
+[TD; TEXT=AppendItem(50050) x10; ALIGN=center]
+[TD; TEXT=AppendItem(40912) x2; ALIGN=center]
+[TD; TEXT=AppendItem(40914) x1; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=921; TABLE_HEADERS=Column A; TABLE_WIDTHS=240]
+[TR; H=32]
+[TD; TEXT=10,000,000 Color(AppendItem(1)); ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=978;\
+    TEXT_1={WK:112};\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=1028; TABLE_HEADERS=Requirements; TABLE_WIDTHS=125]
+[TR; H=32]
+[TD; TEXT={WK:98}; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1070; TABLE_HEADERS=A|B|C; TABLE_WIDTHS=170|180|170]
+[TR; H=70]
+[TD; ITEM=50050]
+[TD; ITEM=40912]
+[TD; ITEM=40914]
+[TR; H=26]
+[TD; TEXT=AppendItem(50050) x15; ALIGN=center]
+[TD; TEXT=AppendItem(40912) x5; ALIGN=center]
+[TD; TEXT=AppendItem(40914) x2; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=1174; TABLE_HEADERS=Column A; TABLE_WIDTHS=240]
+[TR; H=32]
+[TD; TEXT=25,000,000 Color(AppendItem(1)); ALIGN=center]
+[TABLE_END]
+
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1291;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=58014;\
+    TEXT_1={WK:63};\
+    Y_PADDING=10;\
+]
+[\
+    TITLE;\
+    X=10;\
+    Y=1241;\
+    ANCHOR=mount_skills;\
+    TEXT_1={WK:61};\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=20; TABLE_HIDE_TITLE=0; X=10; Y=1361; TABLE_HEADERS={WK:113}|{WK:114}|{WK:91}; TABLE_WIDTHS=110|180|220]
+[TR; H=50]
+[TD; TEXT={WK:347}; ALIGN=center]
+[TD; TEXT=-; ALIGN=center]
+[TD; TEXT=Color2(AppendBonus(133)); ALIGN=center]
+[TR; H=50]
+[TD; TEXT={WK:348}; ALIGN=center]
+[TD; TEXT={WK:351}; ALIGN=center]
+[TD; TEXT=Color2(AppendBonus(119)); ALIGN=center]
+[TR; H=50]
+[TD; TEXT={WK:349}; ALIGN=center]
+[TD; TEXT={WK:350}; ALIGN=center]
+[TD; TEXT=Color2(AppendBonus(63)); ALIGN=center]
+[TR; H=50]
+[TD; TEXT={WK:352}; ALIGN=center]
+[TD; TEXT={WK:353}; ALIGN=center]
+[TD; TEXT=Color2(AppendBonus(156)); ALIGN=center]
+[TABLE_END]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1600;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=40217;\
+    TEXT_1={WK:65};\
+    Y_PADDING=10;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=500; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1680; TABLE_HEADERS={WK:61}|{WK:20}|{WK:60}; TABLE_WIDTHS=125|250|125]
+[TR; H=45]
+[TD; ITEM=58010]
+[TD; TEXT=Color2(AppendBonus(133)); ALIGN=center]
+[TD; TEXT=5%; ALIGN=center]
+[TR; H=45]
+[TD; ITEM=58011]
+[TD; TEXT=Color2(AppendBonus(119)); ALIGN=center]
+[TD; TEXT=5%; ALIGN=center]
+[TR; H=45]
+[TD; ITEM=58012]
+[TD; TEXT=Color2(AppendBonus(63)); ALIGN=center]
+[TD; TEXT=5%; ALIGN=center]
+[TR; H=45]
+[TD; ITEM=58013]
+[TD; TEXT=Color2(AppendBonus(156)); ALIGN=center]
+[TD; TEXT=5%; ALIGN=center]
+[TABLE_END]
+[\
+    TITLE;\
+    X=10;\
+    Y=1915;\
+    ANCHOR=mount_runes;\
+    TEXT_1=Mount Runes;\
+]
+
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1965; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=72]
+[TD; TEXT=At Mount level 30, four Mount Runes become available. Each provides a unique bonus and can be leveled up to 10.; ALIGN=center]
+[TABLE_END]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=2062;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=58030;\
+    TEXT_1=Color(Ochao Rune)\nBonus against Ochao +20%\nMaximum level: 10;\
+    Y_PADDING=10;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=2134;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=58031;\
+    TEXT_1=Color(Erebus Rune)\nBonus against Erebus +20%\nMaximum level: 10;\
+    Y_PADDING=10;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=2206;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=58032;\
+    TEXT_1=Color(Meley Rune)\nBonus against Meley +20%\nMaximum level: 10;\
+    Y_PADDING=10;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=2278;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=58033;\
+    TEXT_1=Color(Metin Rune)\nStrong agains Metinstones +10%\nMaximum level: 10;\
+    Y_PADDING=10;\
+]
+[\
+    TITLE;\
+    X=10;\
+    Y=2365;\
+    ANCHOR=mount_bonus;\
+    TEXT_1={WK:20};\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=2415;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=58002;\
+    TEXT_1={WK:56};\
+    TEXT_2_Y_PADDING=5;\
+    Y_PADDING=17;\
+]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=2485;\
+    TEXT_1={WK:91} 1;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2535; TABLE_HEADERS={WK:58}|{WK:59}|{WK:60}; TABLE_WIDTHS=240|140|140]
+[TR; H=32]
+[TD; TEXT=AppendBonus(119); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(13); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=8; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(11); ALIGN=center]
+[TD; TEXT=4; ALIGN=center]
+[TD; TEXT=30; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(10); ALIGN=center]
+[TD; TEXT=4; ALIGN=center]
+[TD; TEXT=30; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(39); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(23); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(24); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TABLE_END]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=2798;\
+    TEXT_1={WK:91} 2;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=2848; TABLE_HEADERS={WK:58}|{WK:59}|{WK:60}; TABLE_WIDTHS=240|140|140]
+[TR; H=32]
+[TD; TEXT=AppendBonus(133); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(100); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(104); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(101); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(99); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(102); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(103); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TABLE_END]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=3111;\
+    TEXT_1={WK:91} 3;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=3161; TABLE_HEADERS={WK:58}|{WK:59}|{WK:60}; TABLE_WIDTHS=240|140|140]
+[TR; H=32]
+[TD; TEXT=AppendBonus(136); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=10; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(8); ALIGN=center]
+[TD; TEXT=2; ALIGN=center]
+[TD; TEXT=20; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(12); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=8; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(14); ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TD; TEXT=8; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(28); ALIGN=center]
+[TD; TEXT=2; ALIGN=center]
+[TD; TEXT=15; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(43); ALIGN=center]
+[TD; TEXT=2; ALIGN=center]
+[TD; TEXT=20; ALIGN=center]
+[TR; H=32]
+[TD; TEXT=AppendBonus(44); ALIGN=center]
+[TD; TEXT=2; ALIGN=center]
+[TD; TEXT=20; ALIGN=center]
+[TABLE_END]

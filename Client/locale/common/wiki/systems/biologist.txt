@@ -1,0 +1,561 @@
+[/ SUMMARY /]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=title_overwiew;\
+    TEXT_1={WK:1};\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=5;\
+    Y=116;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=61000;\
+    TEXT_1={WK:312};\
+    Y_PADDING=12;\
+]
+
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=5;\
+    Y=181;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=60050;\
+    TEXT_1={WK:102};\
+    Y_PADDING=5;\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=5;\
+    Y=246;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=60051;\
+    TEXT_1={WK:104};\
+    Y_PADDING=5;\
+]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=326;\
+    ANCHOR=quest_title;\
+    TEXT_1={WK:106};\
+]
+
+[/ BIOLOG QUEST 30 /]
+[\
+    BIOLO_ITEM;\
+    X=10;\
+    Y=386;\
+    VNUM_1=61000;\
+    VNUM_2=AppendShopItem(20084,61000,0);\
+    VNUM_3=AppendShopItem(20084,61000,2);\
+    VNUM_4=AppendShopItem(20084,61000,4);\
+    VNUM_5=AppendShopItem(20084,61000,6);\
+    TEXT_1={WK:107:AppendBioloData(61000,0, 0)};\
+    TEXT_2={WK:108:AppendBioloData(61000,1, 0)};\
+    TEXT_3={WK:109:AppendBioloData(61000,2, 0)};\
+    PRICE_2=AppendShopItem(20084,61000,1);\
+    PRICE_3=AppendShopItem(20084,61000,3);\
+    PRICE_4=AppendShopItem(20084,61000,5);\
+    PRICE_5=AppendShopItem(20084,61000,7);\
+]
+[\
+    BIOLO_REWARD;\
+    X=10;\
+    Y=386;\
+    VNUM_1=30220;\
+    VNUM_2=AppendShopItem(20084,30220,0);\
+    VNUM_3=AppendShopItem(20084,30220,2);\
+    VNUM_4=AppendShopItem(20084,30220,4);\
+    VNUM_5=AppendShopItem(20084,30220,6);\
+    TEXT_1={WK:110};\
+    TEXT_3=AppendBioloData(61000,3, 1);\
+    PRICE_2=AppendShopItem(20084,30220,1);\
+    PRICE_3=AppendShopItem(20084,30220,3);\
+    PRICE_4=AppendShopItem(20084,30220,5);\
+    PRICE_5=AppendShopItem(20084,30220,7);\
+]
+
+[/ BIOLOG QUEST 40 /]
+[\
+    BIOLO_ITEM;\
+    X=10;\
+    Y=571;\
+    VNUM_1=61001;\
+    VNUM_2=AppendShopItem(20084,61001,0);\
+    VNUM_3=AppendShopItem(20084,61001,2);\
+    VNUM_4=AppendShopItem(20084,61001,4);\
+    VNUM_5=AppendShopItem(20084,61001,6);\
+    TEXT_1={WK:107:AppendBioloData(61001,0, 0)};\
+    TEXT_2={WK:108:AppendBioloData(61001,1, 0)};\
+    TEXT_3={WK:109:AppendBioloData(61001,2, 0)};\
+    PRICE_2=AppendShopItem(20084,61001,1);\
+    PRICE_3=AppendShopItem(20084,61001,3);\
+    PRICE_4=AppendShopItem(20084,61001,5);\
+    PRICE_5=AppendShopItem(20084,61001,7);\
+]
+[\
+    BIOLO_REWARD;\
+    X=10;\
+    Y=571;\
+    VNUM_1=30221;\
+    VNUM_2=AppendShopItem(20084,30221,0);\
+    VNUM_3=AppendShopItem(20084,30221,2);\
+    VNUM_4=AppendShopItem(20084,30221,4);\
+    VNUM_5=AppendShopItem(20084,30221,6);\
+    TEXT_1={WK:110};\
+    TEXT_3=AppendBioloData(61001,3, 1);\
+    PRICE_2=AppendShopItem(20084,30221,1);\
+    PRICE_3=AppendShopItem(20084,30221,3);\
+    PRICE_4=AppendShopItem(20084,30221,5);\
+    PRICE_5=AppendShopItem(20084,30221,7);\
+]
+
+[/ BIOLOG QUEST 50 /]
+[\
+    BIOLO_ITEM;\
+    X=10;\
+    Y=756;\
+    VNUM_1=61002;\
+    VNUM_2=AppendShopItem(20084,61002,0);\
+    VNUM_3=AppendShopItem(20084,61002,2);\
+    VNUM_4=AppendShopItem(20084,61002,4);\
+    VNUM_5=AppendShopItem(20084,61002,6);\
+    TEXT_1={WK:107:AppendBioloData(61002,0, 0)};\
+    TEXT_2={WK:108:AppendBioloData(61002,1, 0)};\
+    TEXT_3={WK:109:AppendBioloData(61002,2, 0)};\
+    PRICE_2=AppendShopItem(20084,61002,1);\
+    PRICE_3=AppendShopItem(20084,61002,3);\
+    PRICE_4=AppendShopItem(20084,61002,5);\
+    PRICE_5=AppendShopItem(20084,61002,7);\
+]
+[\
+    BIOLO_REWARD;\
+    X=10;\
+    Y=756;\
+    VNUM_1=30222;\
+    VNUM_2=AppendShopItem(20084,30222,0);\
+    VNUM_3=AppendShopItem(20084,30222,2);\
+    VNUM_4=AppendShopItem(20084,30222,4);\
+    VNUM_5=AppendShopItem(20084,30222,6);\
+    TEXT_1={WK:110};\
+    TEXT_2=AppendBioloData(61002,3, 1);\
+    TEXT_3=AppendBioloData(61002,3, 2);\
+    TEXT_4=AppendBioloData(61002,3, 3);\
+    PRICE_2=AppendShopItem(20084,30222,1);\
+    PRICE_3=AppendShopItem(20084,30222,3);\
+    PRICE_4=AppendShopItem(20084,30222,5);\
+    PRICE_5=AppendShopItem(20084,30222,7);\
+]
+
+[/ BIOLOG QUEST 60 /]
+[\
+    BIOLO_ITEM;\
+    X=10;\
+    Y=941;\
+    VNUM_1=61003;\
+    VNUM_2=AppendShopItem(20084,61003,0);\
+    VNUM_3=AppendShopItem(20084,61003,2);\
+    VNUM_4=AppendShopItem(20084,61003,4);\
+    VNUM_5=AppendShopItem(20084,61003,6);\
+    TEXT_1={WK:107:AppendBioloData(61003,0, 0)};\
+    TEXT_2={WK:108:AppendBioloData(61003,1, 0)};\
+    TEXT_3={WK:109:AppendBioloData(61003,2, 0)};\
+    PRICE_2=AppendShopItem(20084,61003,1);\
+    PRICE_3=AppendShopItem(20084,61003,3);\
+    PRICE_4=AppendShopItem(20084,61003,5);\
+    PRICE_5=AppendShopItem(20084,61003,7);\
+]
+[\
+    BIOLO_REWARD;\
+    X=10;\
+    Y=941;\
+    VNUM_1=30223;\
+    VNUM_2=AppendShopItem(20084,30223,0);\
+    VNUM_3=AppendShopItem(20084,30223,2);\
+    VNUM_4=AppendShopItem(20084,30223,4);\
+    VNUM_5=AppendShopItem(20084,30223,6);\
+    TEXT_1={WK:110};\
+    TEXT_3=AppendBioloData(61003,3, 1);\
+    PRICE_2=AppendShopItem(20084,30223,1);\
+    PRICE_3=AppendShopItem(20084,30223,3);\
+    PRICE_4=AppendShopItem(20084,30223,5);\
+    PRICE_5=AppendShopItem(20084,30223,7);\
+]
+
+[/ BIOLOG QUEST 70 /]
+[\
+    BIOLO_ITEM;\
+    X=10;\
+    Y=1126;\
+    VNUM_1=61004;\
+    VNUM_2=AppendShopItem(20084,61004,0);\
+    VNUM_3=AppendShopItem(20084,61004,2);\
+    VNUM_4=AppendShopItem(20084,61004,4);\
+    VNUM_5=AppendShopItem(20084,61004,6);\
+    TEXT_1={WK:107:AppendBioloData(61004,0, 0)};\
+    TEXT_2={WK:108:AppendBioloData(61004,1, 0)};\
+    TEXT_3={WK:109:AppendBioloData(61004,2, 0)};\
+    PRICE_2=AppendShopItem(20084,61004,1);\
+    PRICE_3=AppendShopItem(20084,61004,3);\
+    PRICE_4=AppendShopItem(20084,61004,5);\
+    PRICE_5=AppendShopItem(20084,61004,7);\
+]
+[\
+    BIOLO_REWARD;\
+    X=10;\
+    Y=1126;\
+    VNUM_1=30224;\
+    VNUM_2=AppendShopItem(20084,30224,0);\
+    VNUM_3=AppendShopItem(20084,30224,2);\
+    VNUM_4=AppendShopItem(20084,30224,4);\
+    VNUM_5=AppendShopItem(20084,30224,6);\
+    TEXT_1={WK:110};\
+    TEXT_2=AppendBioloData(61004,3, 1);\
+    TEXT_3=AppendBioloData(61004,3, 2);\
+    TEXT_4=AppendBioloData(61004,3, 3);\
+    PRICE_2=AppendShopItem(20084,30224,1);\
+    PRICE_3=AppendShopItem(20084,30224,3);\
+    PRICE_4=AppendShopItem(20084,30224,5);\
+    PRICE_5=AppendShopItem(20084,30224,7);\
+]
+
+[/ BIOLOG QUEST 80 /]
+[\
+    BIOLO_ITEM;\
+    X=10;\
+    Y=1311;\
+    VNUM_1=61005;\
+    VNUM_2=AppendShopItem(20084,61005,0);\
+    VNUM_3=AppendShopItem(20084,61005,2);\
+    VNUM_4=AppendShopItem(20084,61005,4);\
+    VNUM_5=AppendShopItem(20084,61005,6);\
+    TEXT_1={WK:107:AppendBioloData(61005,0, 0)};\
+    TEXT_2={WK:108:AppendBioloData(61005,1, 0)};\
+    TEXT_3={WK:109:AppendBioloData(61005,2, 0)};\
+    PRICE_2=AppendShopItem(20084,61005,1);\
+    PRICE_3=AppendShopItem(20084,61005,3);\
+    PRICE_4=AppendShopItem(20084,61005,5);\
+    PRICE_5=AppendShopItem(20084,61005,7);\
+]
+[\
+    BIOLO_REWARD;\
+    X=10;\
+    Y=1311;\
+    VNUM_1=30225;\
+    VNUM_2=AppendShopItem(20084,30225,0);\
+    VNUM_3=AppendShopItem(20084,30225,2);\
+    VNUM_4=AppendShopItem(20084,30225,4);\
+    VNUM_5=AppendShopItem(20084,30225,6);\
+    TEXT_1={WK:110};\
+    TEXT_2=AppendBioloData(61005,3, 1);\
+    TEXT_3=AppendBioloData(61005,3, 2);\
+    TEXT_4=AppendBioloData(61005,3, 3);\
+    PRICE_2=AppendShopItem(20084,30225,1);\
+    PRICE_3=AppendShopItem(20084,30225,3);\
+    PRICE_4=AppendShopItem(20084,30225,5);\
+    PRICE_5=AppendShopItem(20084,30225,7);\
+]
+
+[/ BIOLOG QUEST 85 /]
+[\
+    BIOLO_ITEM;\
+    X=10;\
+    Y=1496;\
+    VNUM_1=61006;\
+    VNUM_2=AppendShopItem(20084,61006,0);\
+    VNUM_3=AppendShopItem(20084,61006,2);\
+    VNUM_4=AppendShopItem(20084,61006,4);\
+    VNUM_5=AppendShopItem(20084,61006,6);\
+    TEXT_1={WK:107:AppendBioloData(61006,0, 0)};\
+    TEXT_2={WK:108:AppendBioloData(61006,1, 0)};\
+    TEXT_3={WK:109:AppendBioloData(61006,2, 0)};\
+    PRICE_2=AppendShopItem(20084,61006,1);\
+    PRICE_3=AppendShopItem(20084,61006,3);\
+    PRICE_4=AppendShopItem(20084,61006,5);\
+    PRICE_5=AppendShopItem(20084,61006,7);\
+]
+[\
+    BIOLO_REWARD;\
+    X=10;\
+    Y=1496;\
+    VNUM_1=30226;\
+    VNUM_2=AppendShopItem(20084,30226,0);\
+    VNUM_3=AppendShopItem(20084,30226,2);\
+    VNUM_4=AppendShopItem(20084,30226,4);\
+    VNUM_5=AppendShopItem(20084,30226,6);\
+    TEXT_1={WK:110};\
+    TEXT_2=AppendBioloData(61006,3, 1);\
+    TEXT_3=AppendBioloData(61006,3, 2);\
+    TEXT_4=AppendBioloData(61006,3, 3);\
+    PRICE_2=AppendShopItem(20084,30226,1);\
+    PRICE_3=AppendShopItem(20084,30226,3);\
+    PRICE_4=AppendShopItem(20084,30226,5);\
+    PRICE_5=AppendShopItem(20084,30226,7);\
+]
+
+[/ BIOLOG QUEST 90 /]
+[\
+    BIOLO_ITEM;\
+    X=10;\
+    Y=1681;\
+    VNUM_1=61007;\
+    VNUM_2=AppendShopItem(20084,61007,0);\
+    VNUM_3=AppendShopItem(20084,61007,2);\
+    VNUM_4=AppendShopItem(20084,61007,4);\
+    VNUM_5=AppendShopItem(20084,61007,6);\
+    TEXT_1={WK:107:AppendBioloData(61007,0, 0)};\
+    TEXT_2={WK:108:AppendBioloData(61007,1, 0)};\
+    TEXT_3={WK:109:AppendBioloData(61007,2, 0)};\
+    PRICE_2=AppendShopItem(20084,61007,1);\
+    PRICE_3=AppendShopItem(20084,61007,3);\
+    PRICE_4=AppendShopItem(20084,61007,5);\
+    PRICE_5=AppendShopItem(20084,61007,7);\
+]
+[\
+    BIOLO_REWARD;\
+    X=10;\
+    Y=1681;\
+    VNUM_1=30227;\
+    VNUM_2=AppendShopItem(20084,30227,0);\
+    VNUM_3=AppendShopItem(20084,30227,2);\
+    VNUM_4=AppendShopItem(20084,30227,4);\
+    VNUM_5=AppendShopItem(20084,30227,6);\
+    TEXT_1={WK:110};\
+    TEXT_2=AppendBioloData(61007,3, 1);\
+    TEXT_3=AppendBioloData(61007,3, 2);\
+    TEXT_4=AppendBioloData(61007,3, 3);\
+    PRICE_2=AppendShopItem(20084,30227,1);\
+    PRICE_3=AppendShopItem(20084,30227,3);\
+    PRICE_4=AppendShopItem(20084,30227,5);\
+    PRICE_5=AppendShopItem(20084,30227,7);\
+]
+
+[/ BIOLOG QUEST 92 /]
+[\
+    BIOLO_ITEM;\
+    X=10;\
+    Y=1866;\
+    VNUM_1=61008;\
+    VNUM_2=AppendShopItem(20084,61008,0);\
+    VNUM_3=AppendShopItem(20084,61008,2);\
+    VNUM_4=AppendShopItem(20084,61008,4);\
+    VNUM_5=AppendShopItem(20084,61008,6);\
+    TEXT_1={WK:107:AppendBioloData(61008,0, 0)};\
+    TEXT_2={WK:108:AppendBioloData(61008,1, 0)};\
+    TEXT_3={WK:109:AppendBioloData(61008,2, 0)};\
+    PRICE_2=AppendShopItem(20084,61008,1);\
+    PRICE_3=AppendShopItem(20084,61008,3);\
+    PRICE_4=AppendShopItem(20084,61008,5);\
+    PRICE_5=AppendShopItem(20084,61008,7);\
+]
+[\
+    BIOLO_REWARD;\
+    X=10;\
+    Y=1866;\
+    VNUM_1=30228;\
+    VNUM_2=AppendShopItem(20084,30228,0);\
+    VNUM_3=AppendShopItem(20084,30228,2);\
+    VNUM_4=AppendShopItem(20084,30228,4);\
+    VNUM_5=AppendShopItem(20084,30228,6);\
+    TEXT_1={WK:110};\
+    TEXT_2=AppendBioloData(61008,3, 1);\
+    TEXT_3=AppendBioloData(61008,3, 2);\
+    TEXT_4=AppendBioloData(61008,3, 3);\
+    PRICE_2=AppendShopItem(20084,30228,1);\
+    PRICE_3=AppendShopItem(20084,30228,3);\
+    PRICE_4=AppendShopItem(20084,30228,5);\
+    PRICE_5=AppendShopItem(20084,30228,7);\
+]
+
+[/ BIOLOG QUEST 94 /]
+[\
+    BIOLO_ITEM;\
+    X=10;\
+    Y=2051;\
+    VNUM_1=61009;\
+    VNUM_2=AppendShopItem(20084,61009,0);\
+    VNUM_3=AppendShopItem(20084,61009,2);\
+    VNUM_4=AppendShopItem(20084,61009,4);\
+    VNUM_5=AppendShopItem(20084,61009,6);\
+    TEXT_1={WK:107:AppendBioloData(61009,0, 0)};\
+    TEXT_2={WK:108:AppendBioloData(61009,1, 0)};\
+    TEXT_3={WK:109:AppendBioloData(61009,2, 0)};\
+    PRICE_2=AppendShopItem(20084,61009,1);\
+    PRICE_3=AppendShopItem(20084,61009,3);\
+    PRICE_4=AppendShopItem(20084,61009,5);\
+    PRICE_5=AppendShopItem(20084,61009,7);\
+]
+[\
+    BIOLO_REWARD;\
+    X=10;\
+    Y=2051;\
+    VNUM_1=30229;\
+    VNUM_2=AppendShopItem(20084,30229,0);\
+    VNUM_3=AppendShopItem(20084,30229,2);\
+    VNUM_4=AppendShopItem(20084,30229,4);\
+    VNUM_5=AppendShopItem(20084,30229,6);\
+    TEXT_1={WK:110};\
+    TEXT_3=AppendBioloData(61009,3, 1);\
+    PRICE_2=AppendShopItem(20084,30229,1);\
+    PRICE_3=AppendShopItem(20084,30229,3);\
+    PRICE_4=AppendShopItem(20084,30229,5);\
+    PRICE_5=AppendShopItem(20084,30229,7);\
+]
+
+[/ BIOLOG QUEST 100 /]
+[\
+    BIOLO_ITEM;\
+    X=10;\
+    Y=2236;\
+    VNUM_1=61010;\
+    VNUM_2=AppendShopItem(20084,61010,0);\
+    VNUM_3=AppendShopItem(20084,61010,2);\
+    VNUM_4=AppendShopItem(20084,61010,4);\
+    VNUM_5=AppendShopItem(20084,61010,6);\
+    TEXT_1={WK:107:AppendBioloData(61010,0, 0)};\
+    TEXT_2={WK:108:AppendBioloData(61010,1, 0)};\
+    TEXT_3={WK:109:AppendBioloData(61010,2, 0)};\
+    PRICE_2=AppendShopItem(20084,61010,1);\
+    PRICE_3=AppendShopItem(20084,61010,3);\
+    PRICE_4=AppendShopItem(20084,61010,5);\
+    PRICE_5=AppendShopItem(20084,61010,7);\
+]
+[\
+    BIOLO_REWARD;\
+    X=10;\
+    Y=2236;\
+    VNUM_1=30230;\
+    VNUM_2=AppendShopItem(20084,30230,0);\
+    VNUM_3=AppendShopItem(20084,30230,2);\
+    VNUM_4=AppendShopItem(20084,30230,4);\
+    VNUM_5=AppendShopItem(20084,30230,6);\
+    TEXT_1={WK:110};\
+    TEXT_2=AppendBioloData(61010,3, 1);\
+    TEXT_3=AppendBioloData(61010,3, 2);\
+    TEXT_4=AppendBioloData(61010,3, 3);\
+    PRICE_2=AppendShopItem(20084,30230,1);\
+    PRICE_3=AppendShopItem(20084,30230,3);\
+    PRICE_4=AppendShopItem(20084,30230,5);\
+    PRICE_5=AppendShopItem(20084,30230,7);\
+]
+
+
+[/ BIOLOG QUEST 105 /]
+[\
+    BIOLO_ITEM;\
+    X=10;\
+    Y=365+185*11;\
+    VNUM_1=61011;\
+    VNUM_2=AppendShopItem(20084,61011,0);\
+    VNUM_3=AppendShopItem(20084,61011,2);\
+    VNUM_4=AppendShopItem(20084,61011,4);\
+    VNUM_5=AppendShopItem(20084,61011,6);\
+    TEXT_1={WK:107:AppendBioloData(61011,0, 0)};\
+    TEXT_2={WK:108:AppendBioloData(61011,1, 0)};\
+    TEXT_3={WK:109:AppendBioloData(61011,2, 0)};\
+    PRICE_2=AppendShopItem(20084,61011,1);\
+    PRICE_3=AppendShopItem(20084,61011,3);\
+    PRICE_4=AppendShopItem(20084,61011,5);\
+    PRICE_5=AppendShopItem(20084,61011,7);\
+]
+[\
+    BIOLO_REWARD;\
+    X=10;\
+    Y=365+185*11;\
+    VNUM_1=30231;\
+    VNUM_2=AppendShopItem(20084,30231,0);\
+    VNUM_3=AppendShopItem(20084,30231,2);\
+    VNUM_4=AppendShopItem(20084,30231,4);\
+    VNUM_5=AppendShopItem(20084,30231,6);\
+    TEXT_1={WK:110};\
+    TEXT_2=AppendBioloData(61011,3, 1);\
+    TEXT_3=AppendBioloData(61011,3, 2);\
+    TEXT_4=AppendBioloData(61011,3, 3);\
+    PRICE_2=AppendShopItem(20084,30231,1);\
+    PRICE_3=AppendShopItem(20084,30231,3);\
+    PRICE_4=AppendShopItem(20084,30231,5);\
+    PRICE_5=AppendShopItem(20084,30231,7);\
+]
+
+[/ BIOLOG QUEST 108 /]
+[\
+    BIOLO_ITEM;\
+    X=10;\
+    Y=365+185*12;\
+    VNUM_1=61012;\
+    VNUM_2=AppendShopItem(20084,61012,0);\
+    VNUM_3=AppendShopItem(20084,61012,2);\
+    VNUM_4=AppendShopItem(20084,61012,4);\
+    VNUM_5=AppendShopItem(20084,61012,6);\
+    TEXT_1={WK:107:AppendBioloData(61012,0, 0)};\
+    TEXT_2={WK:108:AppendBioloData(61012,1, 0)};\
+    TEXT_3={WK:109:AppendBioloData(61012,2, 0)};\
+    PRICE_2=AppendShopItem(20084,61012,1);\
+    PRICE_3=AppendShopItem(20084,61012,3);\
+    PRICE_4=AppendShopItem(20084,61012,5);\
+    PRICE_5=AppendShopItem(20084,61012,7);\
+]
+[\
+    BIOLO_REWARD;\
+    X=10;\
+    Y=365+185*12;\
+    VNUM_1=30232;\
+    VNUM_2=AppendShopItem(20084,30232,0);\
+    VNUM_3=AppendShopItem(20084,30232,2);\
+    VNUM_4=AppendShopItem(20084,30232,4);\
+    VNUM_5=AppendShopItem(20084,30232,6);\
+    TEXT_1={WK:110};\
+    TEXT_2=AppendBioloData(61012,3, 1);\
+    TEXT_3=AppendBioloData(61012,3, 2);\
+    TEXT_4=AppendBioloData(61012,3, 3);\
+    PRICE_2=AppendShopItem(20084,30232,1);\
+    PRICE_3=AppendShopItem(20084,30232,3);\
+    PRICE_4=AppendShopItem(20084,30232,5);\
+    PRICE_5=AppendShopItem(20084,30232,7);\
+]
+
+[/ BIOLOG QUEST 110 /]
+[\
+    BIOLO_ITEM;\
+    X=10;\
+    Y=365+185*13;\
+    VNUM_1=61013;\
+    VNUM_2=AppendShopItem(20084,61013,0);\
+    VNUM_3=AppendShopItem(20084,61013,2);\
+    VNUM_4=AppendShopItem(20084,61013,4);\
+    VNUM_5=AppendShopItem(20084,61013,6);\
+    TEXT_1={WK:107:AppendBioloData(61013,0, 0)};\
+    TEXT_2={WK:108:AppendBioloData(61013,1, 0)};\
+    TEXT_3={WK:109:AppendBioloData(61013,2, 0)};\
+    PRICE_2=AppendShopItem(20084,61013,1);\
+    PRICE_3=AppendShopItem(20084,61013,3);\
+    PRICE_4=AppendShopItem(20084,61013,5);\
+    PRICE_5=AppendShopItem(20084,61013,7);\
+]
+[\
+    BIOLO_REWARD;\
+    X=10;\
+    Y=365+185*13;\
+    VNUM_1=30233;\
+    VNUM_2=AppendShopItem(20084,30233,0);\
+    VNUM_3=AppendShopItem(20084,30233,2);\
+    VNUM_4=AppendShopItem(20084,30233,4);\
+    VNUM_5=AppendShopItem(20084,30233,6);\
+    TEXT_1={WK:110};\
+    TEXT_2=AppendBioloData(61013,3, 1);\
+    TEXT_3=AppendBioloData(61013,3, 2);\
+    TEXT_4=AppendBioloData(61013,3, 3);\
+    PRICE_2=AppendShopItem(20084,30233,1);\
+    PRICE_3=AppendShopItem(20084,30233,3);\
+    PRICE_4=AppendShopItem(20084,30233,5);\
+    PRICE_5=AppendShopItem(20084,30233,7);\
+]
+
+[X=5; Y=3000; FONT_SIZE=13b; NO_ADD_Y; OUTLINE]

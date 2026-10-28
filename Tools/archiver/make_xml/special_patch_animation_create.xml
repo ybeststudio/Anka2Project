@@ -1,0 +1,4 @@
+<ScriptFile>
+	<CreateEterPackXml Input="../binary_unpack/special_patch_animation:" ArchivePath="../../Client/pack/special_patch_animation" XmlPath="xml/special_patch_animation_create.xml">
+	</CreateEterPackXml>
+</ScriptFile>

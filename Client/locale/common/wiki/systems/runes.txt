@@ -1,0 +1,122 @@
+[X_PADDING=40;FONT_SIZE=18b;COLOR=ffd700]Général
+ 
+ 
+[X_PADDING=85;]* Il éxiste 5 runes différentes: |cFFD7B25B|hIzanami, Izanagi, Shinigami, Hachiman et Inari|r.
+[X_PADDING=85;]* Chaque type de runes possède ses propres bonus précis.
+[X_PADDING=85;]* Vous pouvez les fabriquer depuis la statue d'éléphant.
+[X_PADDING=85;]* Une rune peut avoir au maximum 4 bonus.
+ 
+ 
+ 
+[X_PADDING=85;] * La statue d'éléphant se situe sur la carte Desert du mal.
+
+[X_PADDING=85;] Vous ne savez pas ou se trouve la statue d'éléphant? Cliquez ici:
+
+[CENTER_ALIGN] 
+
+
+[X_PADDING=27;FONT_SIZE=18b;COLOR=ffd700]Bonus
+ 
+
+[X_PADDING=10;FONT_SIZE=14b;COLOR=ffd700]*  Runes d'Izanami (Attaque)
+
+
+[X_PADDING=85;]* Valeur d'attaque |cFFD7B25B|h(5 à 10 %)|r
+[X_PADDING=85;]* Dégats moyen |cFFD7B25B|h(1 à 8 %)|r
+[X_PADDING=85;]* Valeur d'attaque magique |cFFD7B25B|h(5 à 25 %)|r
+[X_PADDING=85;]* Coup critique |cFFD7B25B|h(1 à 10 %)|r
+[X_PADDING=85;]* Coup percant |cFFD7B25B|h(1 à 10 %)|r
+[X_PADDING=85;]* Vitesse d'attaque |cFFD7B25B|h(1 à 8 %)|r 
+[X_PADDING=85;]* Vitesse de sort |cFFD7B25B|h( 1 à 5% )|r 
+[X_PADDING=85;]* Dégats de compétences |cFFD7B25B|h( 1 à 5 %)|r 
+
+  
+
+[X_PADDING=10;FONT_SIZE=14b;COLOR=ffd700]*  Runes d'Izanagi (Défense)
+
+
+[X_PADDING=85;]* Chance d'esquiver les flèches |cFFD7B25B|h(2 à 15 %)|r
+[X_PADDING=85;]* Résistance contre le poison |cFFD7B25B|h(1 à 5 %)|r
+[X_PADDING=85;]* Résistance contre les coups critique |cFFD7B25B|h(2 à 8 %)|r
+[X_PADDING=85;]* Résistance contre les coups perçant |cFFD7B25B|h(2 à 8 %)|r
+[X_PADDING=85;]* Résistance contre les boss |cFFD7B25B|h(1 à 5 %)|r
+[X_PADDING=85;]* Résistance foudre |cFFD7B25B|h(6 à 15 %)|r 
+[X_PADDING=85;]* Résistance vent |cFFD7B25B|h(6 à 15 %)|r 
+[X_PADDING=85;]* Résistance feu |cFFD7B25B|h(6 à 15 %)|r 
+[X_PADDING=85;]* PV MAX |cFFD7B25B|h(500 à 1500 %)|r 
+
+  
+
+[X_PADDING=10;FONT_SIZE=14b;COLOR=ffd700]*  Runes d'Shinigami (Monstre)
+
+[X_PADDING=85;]* Bonus contre les morts vivants |cFFD7B25B|h(10 à 20 %)|r
+[X_PADDING=85;]* Bonus contre les orcs |cFFD7B25B|h(10 à 20 %)|r
+[X_PADDING=85;]* Bonus contre les animaux |cFFD7B25B|h(10 à 20 %)|r
+[X_PADDING=85;]* Bonus contre les mysthique |cFFD7B25B|h(10 à 20 %)|r
+[X_PADDING=85;]* Bonus contre le mal |cFFD7B25B|h(10 à 20 %)|r
+[X_PADDING=85;]* Bonus contre les monstres du zodiaque |cFFD7B25B|h(6 à 20 %)|r
+[X_PADDING=85;]* Bonus contre les boss |cFFD7B25B|h( 2 à 10% )|r 
+[X_PADDING=85;]* Bonus contre les metin |cFFD7B25B|h( 2 à 10% )|r 
+[X_PADDING=85;]* Force en donjon |cFFD7B25B|h( 2 à 10% )|r 
+
+  
+
+[X_PADDING=10;FONT_SIZE=14b;COLOR=ffd700]*  Runes d'Hachiman (PvP)
+
+
+[X_PADDING=85;]* Bonus contre les guerriers |cFFD7B25B|h(1 à 5 %)|r
+[X_PADDING=85;]* Bonus contre les sura |cFFD7B25B|h(1 à 5 %)|r
+[X_PADDING=85;]* Bonus contre les shamane |cFFD7B25B|h(1 à 5 %)|r
+[X_PADDING=85;]* Bonus contre les ninja |cFFD7B25B|h(1 à 5 %)|r
+[X_PADDING=85;]* Chance de parer une attaque guerriers |cFFD7B25B|h(1 à 3 %)|r
+[X_PADDING=85;]* Chance de parer une attaque sura |cFFD7B25B|h(1 à 3 %)|r
+[X_PADDING=85;]* Chance de parer une attaque shamane |cFFD7B25B|h(1 à 3 %)|r
+[X_PADDING=85;]* Chance de parer une attaque ninja |cFFD7B25B|h(1 à 3 %)|r
+
+  
+
+[X_PADDING=10;FONT_SIZE=14b;COLOR=ffd700]*  Runes d'Inari (Farm)
+
+
+[X_PADDING=85;]* Chance d'obtenir un bonus EXP |cFFD7B25B|h(10 à 20 %)|r
+[X_PADDING=85;]* Chance d'abandonner le double d'objets |cFFD7B25B|h(10 à 20 %)|r
+[X_PADDING=85;]* Chance d'abandonner le double de yangs |cFFD7B25B|h(10 à 20 %)|r
+[X_PADDING=85;]* Chance de capturer des âmes sur les monstres |cFFD7B25B|h(6 à 20 %)|r
+[X_PADDING=85;]* Chance de double drop metin |cFFD7B25B|h(2 à 10 %)|r
+[X_PADDING=85;]* Chance de double drop boss |cFFD7B25B|h(2 à 10 %)|r
+[X_PADDING=85;]* Nombre de coups sur veine |cFFD7B25B|h( 1 )|r 
+
+[BANNER_IMG = d:/ymir work/ui/wiki/banners/systems/runes.png]
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=12; CENTER_ALIGN]
+[IMG=d:/ymir work/ui/game/wiki/layout/picture_bg.png; Y=54;X=10]
+[ITEM=96010;X=28;Y=70;SOCKET=0:0#1:100]
+[IMG=d:/ymir work/ui/game/wiki/layout/picture_bg.png; Y=130;X=10]
+[RENDERTARGET=9328;WIDTH=75;HEIGHT=75;X=5;Y=126;]
+
+[LINK=warp#731400#2309500#120;TEXT=Statue d'éléphant (désert du mal);X=375;Y=165;FONT_SIZE=12;COLOR=0xffd700;]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=220; CENTER_ALIGN]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/divider_small.png; Y=285;X=10]
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg3.png; Y=297;X=10]
+[ITEM=96010;X=28;Y=335;SOCKET=0:0#1:100]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/divider_small.png; Y=457;X=10]
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg3.png; Y=471;X=10]
+[ITEM=96020;X=28;Y=505;SOCKET=0:0#1:100]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/divider_small.png; Y=637;X=10]
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg3.png; Y=645;X=10]
+[ITEM=96030;X=28;Y=685;SOCKET=0:0#1:100]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/divider_small.png; Y=807;X=10]
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg3.png; Y=817;X=10]
+[ITEM=96050;X=28;Y=855;SOCKET=0:0#1:100]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/divider_small.png; Y=977;X=10]
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg3.png; Y=987;X=10]
+[ITEM=96060;X=28;Y=1025;SOCKET=0:0#1:100]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg3.png; Y=297;X=455]
+[ITEM=90105;Y=316;X=473;SOCKET=0:0#1:100]
+[ITEM=90104;Y=366;X=473;SOCKET=0:0#1:100]

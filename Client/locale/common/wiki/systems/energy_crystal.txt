@@ -1,0 +1,210 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    TEXT_1=Energy Crystal;\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=116;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=51040;\
+    TEXT_1=Available from level 106.\nOne Energy Crystal holds up to five unlockable bonuses.\nAll unlocked bonuses apply together while it is active.;\
+    Y_PADDING=10;\
+]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=203;\
+    ANCHOR=energy_crystal_overview;\
+    TEXT_1=Activation & Energy;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=253; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=84]
+[TD; TEXT={WK:787}; ALIGN=center]
+[TABLE_END]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=362;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=51037;\
+    TEXT_1=Color(Energy Elixir (24h))\nRecharges the Energy Crystal to its full 24-hour duration.\nUse it again whenever the energy reserve is depleted.\nThe crystal window shows the remaining energy.;\
+    Y_PADDING=10;\
+]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=464;\
+    ANCHOR=energy_crystal_unlocks;\
+    TEXT_1=Unlockable Bonuses;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=514; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=83]
+[TD; TEXT={WK:788}; ALIGN=center]
+[TABLE_END]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=622;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=51033;\
+    TEXT_1=Color(AppendItem(51033))\nUnlocks amplification of Strong against Erebus;\
+    Y_PADDING=10;\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=692;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=51032;\
+    TEXT_1=Color(AppendItem(51032))\nUnlocks amplification of Strength in Dungeons;\
+    Y_PADDING=10;\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=762;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=51034;\
+    TEXT_1=Color(AppendItem(51034))\nUnlocks amplification of Strong against Meley;\
+    Y_PADDING=10;\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=832;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=51031;\
+    TEXT_1=Color(AppendItem(51031))\nUnlocks amplification of Average Damage (PVM);\
+    Y_PADDING=10;\
+]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=912;\
+    ANCHOR=energy_crystal_refining;\
+    TEXT_1=Refining & Amplification;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=962; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=110]
+[TD; TEXT={WK:789}; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1097; TABLE_HEADERS=Crystal Grade|+0|+1|+2|+3|+4|+5|+6|+7|+8|+9; TABLE_WIDTHS=120|40|40|40|40|40|40|40|40|40|40]
+[TR; H=60]
+[TD; TEXT=Amplification Cap; ALIGN=center]
+[TD; TEXT=5%; ALIGN=center]
+[TD; TEXT=10%; ALIGN=center]
+[TD; TEXT=15%; ALIGN=center]
+[TD; TEXT=20%; ALIGN=center]
+[TD; TEXT=25%; ALIGN=center]
+[TD; TEXT=30%; ALIGN=center]
+[TD; TEXT=35%; ALIGN=center]
+[TD; TEXT=40%; ALIGN=center]
+[TD; TEXT=45%; ALIGN=center]
+[TD; TEXT=50%; ALIGN=center]
+[TABLE_END]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1208;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=51050;\
+    TEXT_1=Color(Energy Blessing Scroll)\nDrag onto an Energy Crystal to refine it.\nOn failure, the grade decreases by one.\nA +0 crystal remains at +0.;\
+    Y_PADDING=10;\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1295;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=51051;\
+    TEXT_1=Color(Energy Magic Stone)\nDrag onto an Energy Crystal to refine it.\nOn failure, the current grade is preserved.;\
+    Y_PADDING=10;\
+]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1372;\
+    TEXT_1=Rolling Amplification;\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1422;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=51038;\
+    TEXT_1=Color(Energy Catalyst)\n{WK:791};\
+    Y_PADDING=3;\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1487;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=51039;\
+    TEXT_1=Color(Energy Catalyst+)\nConsumes one catalyst to roll amplification twice (0.00% up to the limit) and\nkeeps the higher result. The final value is still random and may decrease.;\
+    Y_PADDING=13;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1567; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=83]
+[TD; TEXT={WK:792}; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1685;\
+    ANCHOR=energy_crystal_calculation;\
+    TEXT_1=How Amplification Works;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1735; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=67]
+[TD; TEXT={WK:793}; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1827; TABLE_HEADERS=Calculation|Example; TABLE_WIDTHS=260|260]
+[TR; H=60]
+[TD; TEXT=Existing Strong against Erebus; ALIGN=center]
+[TD; TEXT=30%; ALIGN=center]
+[TR; H=60]
+[TD; TEXT=Current amplification; ALIGN=center]
+[TD; TEXT=25%; ALIGN=center]
+[TR; H=60]
+[TD; TEXT=Additional bonus; ALIGN=center]
+[TD; TEXT=30 x 25 / 100 = 7.5%/8%; ALIGN=center]
+[TR; H=60]
+[TD; TEXT=Total with the active crystal; ALIGN=center]
+[TD; TEXT=38%; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2097; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=67]
+[TD; TEXT={WK:794}; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=2174; TABLE_HEADERS=Info; TABLE_WIDTHS=520]
+[TR; H=72]
+[TD; TEXT={WK:795}; ALIGN=center]
+[TABLE_END]

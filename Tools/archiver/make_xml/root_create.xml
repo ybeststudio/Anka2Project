@@ -1,0 +1,4 @@
+<ScriptFile>
+	<CreateEterPackXml Input="../binary_unpack/root:" ArchivePath="../../Client/pack/root" XmlPath="xml/root_create.xml">
+	</CreateEterPackXml>
+</ScriptFile>

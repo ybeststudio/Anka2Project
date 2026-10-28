@@ -1,0 +1,205 @@
+[/ SUMMARY /]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=3;Y=5;LINKINDEX=article#2#18.20;TEXT={WK:1};COLOR_TEXT=cebb98]
+[BUTTON=d:/ymir work/ui/game/wiki/layout/btn_norm.png#d:/ymir work/ui/game/wiki/layout/btn_hover.png#d:/ymir work/ui/game/wiki/layout/btn_norm.png;X=133;Y=5;LINKINDEX=article#2#114.20;TEXT={WK:20};COLOR_TEXT=cebb98]
+
+
+
+ 
+[\
+    TITLE;\
+    X=10;Y=54;\
+    TEXT_1={WK:1};\
+]
+ 
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=115;\
+    IMG_1=d:/ymir work/ui/game/wiki/systems/battle_pass/2.png;\
+    TEXT_1={WK:155};\
+    TEXT_2={WK:156};\
+    TEXT_3={WK:157};\
+    TEXT_4={WK:158};\
+    TEXT_4={WK:159};\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;Y=200;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    Y_PADDING=0;\
+    VNUM_1=50027;\
+    TEXT_1={WK:160};\
+    TEXT_2={WK:161};\
+    TEXT_3={WK:50};\
+]
+[BUTTON=d:/ymir work/ui/game/wiki/bg_wiki.png#d:/ymir work/ui/game/wiki/bg_wiki_hover.png#d:/ymir work/ui/game/wiki/bg_wiki.png;X=95;Y=200+42;LINKINDEX=itemshop#50027#0.0;TEXT={WK:53};]
+
+[\
+    SUBTITLE;\
+    X=10;Y=295;\
+    TEXT_1=AppendItem(30810);\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;Y=345;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/picture_bg.png;\
+    Y_PADDING=0;\
+    VNUM_1=30810;\
+    TEXT_1={WK:162};\
+    TEXT_2={WK:163};\
+    TEXT_3={WK:50};\
+]
+[X=95;Y=345+42;BUTTON=d:/ymir work/ui/game/wiki/bg_wiki.png#d:/ymir work/ui/game/wiki/bg_wiki_hover.png#d:/ymir work/ui/game/wiki/bg_wiki.png;LINKINDEX=itemshop#30810#0.0;TEXT={WK:53};]
+
+[\
+    TITLE;\
+    X=10;Y=430;\
+    TEXT_1={WK:20};\
+]
+
+[\
+    SUBTITLE;\
+    X=10;Y=505;\
+    TEXT_1={WK:164};\
+]
+
+[\
+    BP_QUEST_LINE;\
+    X=10;Y=550;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_2=d:/ymir work/ui/game/battle_pass/icon_quest/1.png;\
+    TEXT_1={WK:165};\
+    TEXT_2={WK:165};\
+    TEXT_3={WK:166};\
+    IMG_3=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_4=d:/ymir work/ui/game/battle_pass/icon_quest/2.png;\
+    TEXT_4={WK:167};\
+    TEXT_5={WK:167};\
+    TEXT_6={WK:166};\
+    IMG_5=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_6=d:/ymir work/ui/game/battle_pass/icon_quest/3.png;\
+    TEXT_7={WK:168};\
+    TEXT_8={WK:168};\
+    TEXT_9={WK:166};\
+]
+
+[\
+    BP_QUEST_LINE;\
+    X=10;Y=550+(77*1);\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_2=d:/ymir work/ui/game/battle_pass/icon_quest/4.png;\
+    TEXT_1={WK:169};\
+    TEXT_2={WK:169};\
+    IMG_3=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_4=d:/ymir work/ui/game/battle_pass/icon_quest/6.png;\
+    TEXT_4={WK:170};\
+    TEXT_5={WK:171};\
+    IMG_5=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_6=d:/ymir work/ui/game/battle_pass/icon_quest/7.png;\
+    TEXT_7={WK:172};\
+    TEXT_8={WK:173};\
+]
+
+[\
+    SUBTITLE;\
+    X=10;Y=725;\
+    TEXT_1={WK:174};\
+]
+
+[\
+    BP_QUEST_LINE;\
+    X=10;Y=775;\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_2=d:/ymir work/ui/game/battle_pass/icon_quest/8.png;\
+    TEXT_1={WK:175};\
+    TEXT_2={WK:176};\
+    TEXT_3={WK:177};\
+    IMG_3=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_4=d:/ymir work/ui/game/battle_pass/icon_quest/9.png;\
+    TEXT_4={WK:178};\
+    TEXT_5={WK:179};\
+    IMG_5=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_6=d:/ymir work/ui/game/battle_pass/icon_quest/10.png;\
+    TEXT_7={WK:180};\
+    TEXT_8={WK:181};\
+    TEXT_9={WK:182};\
+]
+
+[\
+    BP_QUEST_LINE;\
+    X=10;Y=775+(77*1);\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_2=d:/ymir work/ui/game/battle_pass/icon_quest/12.png;\
+    TEXT_1={WK:183};\
+    TEXT_2={WK:184};\
+    IMG_3=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_4=d:/ymir work/ui/game/battle_pass/icon_quest/13.png;\
+    TEXT_4={WK:185};\
+    TEXT_5={WK:186};\
+    TEXT_6={WK:187};\
+    IMG_5=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_6=d:/ymir work/ui/game/battle_pass/icon_quest/14.png;\
+    TEXT_7={WK:188};\
+    TEXT_8={WK:189};\]
+
+[\
+    BP_QUEST_LINE;\
+    X=10;Y=775+(77*2);\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_2=d:/ymir work/ui/game/battle_pass/icon_quest/15.png;\
+    TEXT_1={WK:191};\
+    TEXT_2={WK:191};\
+    IMG_3=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_4=d:/ymir work/ui/game/battle_pass/icon_quest/16.png;\
+    TEXT_4={WK:192};\
+    TEXT_5={WK:193};\
+    TEXT_6={WK:194};\
+    TEXT_7={WK:195};\
+    IMG_5=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_6=d:/ymir work/ui/game/battle_pass/icon_quest/17.png;\
+    TEXT_7={WK:196};\
+    TEXT_8={WK:197};\
+    TEXT_9={WK:198};\
+]
+
+[\
+    BP_QUEST_LINE;\
+    X=10;Y=775+(77*3);\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_2=d:/ymir work/ui/game/battle_pass/icon_quest/18.png;\
+    TEXT_1={WK:199};\
+    TEXT_2={WK:200};\
+    TEXT_3={WK:201};\
+    IMG_3=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_4=d:/ymir work/ui/game/battle_pass/icon_quest/19.png;\
+    TEXT_4={WK:202};\
+    TEXT_5={WK:203};\
+    TEXT_6={WK:204};\
+    IMG_5=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_6=d:/ymir work/ui/game/battle_pass/icon_quest/20.png;\
+    TEXT_7={WK:205};\
+    TEXT_8={WK:206};\
+]
+
+[\
+    BP_QUEST_LINE;\
+    X=10;Y=775+(77*4);\
+    IMG_1=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_2=d:/ymir work/ui/game/battle_pass/icon_quest/21.png;\
+    TEXT_1={WK:207};\
+    TEXT_2={WK:207};\
+    TEXT_3={WK:208};\
+    IMG_3=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_4=d:/ymir work/ui/game/battle_pass/icon_quest/22.png;\
+    TEXT_4={WK:209};\
+    TEXT_5={WK:210};\
+    TEXT_6={WK:211};\
+    IMG_5=d:/ymir work/ui/game/wiki/layout/showcase.png;\
+    IMG_6=d:/ymir work/ui/game/battle_pass/icon_quest/23.png;\
+    TEXT_7={WK:212};\
+    TEXT_8={WK:213};\
+    TEXT_9={WK:214};\
+]
+

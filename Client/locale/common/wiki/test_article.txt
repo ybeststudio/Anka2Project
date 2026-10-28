@@ -1,0 +1,125 @@
+
+[BANNER_IMG = d:/ymir work/ui/game/wiki/guide_wall.tga]
+[CENTER_ALIGN]Fellow - players,
+[CENTER_ALIGN]If you're reading this guide, there's a great chance that you are lost somewhere in 
+[CENTER_ALIGN]the adventures of -. Let this guide show you the way from now on...
+
+
+
+[COLOR=0xffd700;FONT_SIZE=15]Content List:
+*1. The adventures after 105Lv & the Battlepass of the Tree
+*2. What's with those costumes? 
+*3. A short dungeons explanation
+*4. Tourmaline Equipment
+*5. How to defeat those monkeys.
+*6. Did I finish the server now?
+
+
+
+[CENTER_ALIGN;FONT_SIZE=18;COLOR=58ADFF]1. The adventures after 105Lv & the Battlepass of the Tree
+
+At this point, you are considered a middle-end player since you are close to becoming maximum level. 
+Although, you probably noticed that things get a little more challenging...
+
+
+[COLOR=ef4f00;FONT_SIZE=15]1.1 Enchanted Forest & Dark Forest
+
+You are now able to teleport to your fresh new maps, Enchanted & Dark Forest. Those maps are full 
+of small treasures that you'll discover one by one. Firstly, you'll need to adjust your equipment, 
+because as mentioned before: Things get a little more challenging. Monsters here do not have an 
+active race bonus, although they are 'Earth' labeled, meaning that an Earth Talisman+49 is good to have. 
+Also, their damage is signifincatly increased, compared to 90Lv maps, so maximizing your 'Chance to block', 
+'Max. HP' & 'Absorb HP' bonuses will come handy. A Legendary Dragon Onyx & Jade (supposingly you already 
+have a Ruby+6) along with +5 Evasion & Defense stones in your armor will ensure you stay alive while 
+farming Metins of the Tree Beings.
+
+
+[COLOR=ef4f00;FONT_SIZE=15]1.2 Mission Book (royal) ?
+
+You will now also start dropping Mission Books (royal) from now on. It contains a set of missions, 
+one at a time, which will be rewarded upon successful completion. Most of the missions are dungeons-related, 
+so if you're comfortable go ahead and activate them. If not, selling them is an option too. Beware that the 
+rewards are juicy (Legendary Soulstones, Boss Roll(heavy), etc...)
+
+
+[COLOR=ef4f00;FONT_SIZE=15]1.3 Battlepass of the Tree
+
+You've seen the Battlepass again, back in the old days you were 1Lv. Here it comes again, a little bit reworked.
+It includes 7 normal missions and 3 Legendary missions. The rewards are adjusted to your needs, 
+so work on them as soon as possible.
+
+
+[IMG=d:/ymir work/ui/wiki/divider_long.tga; Y=580; CENTER_ALIGN]
+
+[CENTER_ALIGN;FONT_SIZE=18;COLOR=58ADFF]2. What's with those costumes?
+
+Until now, you've probably been refreshing those 3x10% beginner costumes or you managed to grab some 3x15% 
+costume bonuses. Well, you're not finished. Special Events take place from times to times and they usually 
+include 20% costume bonuses either for your weapon or your hairstyle. You should start seeking for them...
+
+
+[IMG=d:/ymir work/ui/wiki/divider_long.tga; Y=680; CENTER_ALIGN]
+
+[CENTER_ALIGN;FONT_SIZE=18;COLOR=58ADFF]3. A short dungeons explanation
+
+You have just unlocked the gates of Jotun Thrym and Ship Defense, the high-end dungeons, along with Nemere 
+& Razador from earlier (95Lv). It seems like all the dungeons need keys... Well, it's not as dramatic as you think. 
+Grabbing a Passage Ticket [or Boss Room Ticket (nemere)] will grant you access to Ship Defense too 
+(since Nemere drops 100% Blue Crystal Essence) Same logic, Razador drops 100% Red Hell Quartz, used to enter the 
+Cave of the Crystal Dragons. So, basically you just chain dungeons together and make yourself a significant profit.
+Keep in mind that Cave of Crystal Dragons & Jotun Thrym are damage-based dungeons which require maxed out
+bonuses. Keep in touch with our forum for more information...
+
+
+[IMG=d:/ymir work/ui/wiki/divider_long.tga; Y=830; CENTER_ALIGN]
+
+[CENTER_ALIGN;FONT_SIZE=18;COLOR=58ADFF]4. Tourmaline Equipment
+
+Don't you think it's time to get rid of those low-level Soul Crystal items? It is, indeed.
+Tourmaline Earrings & Necklace grant you 15% Strong against Monster and Metinstones, a fundamental 
+improvement to your damage. Tourmaline Bracelet grants you 15% Strong against Monster and bosses, 
+which will allow you to start doing some high-end dungeons by yourself. In general, tourmaline equipment 
+along with Fire Shoes, Dragon Crystal Belt, Dragon God Shield & Sea Serpent Helmet are crafted from Badawahdan 
+(Cape Dragon Village). Take a look there too.
+
+
+[IMG=d:/ymir work/ui/wiki/divider_long.tga; Y=970; CENTER_ALIGN]
+
+[CENTER_ALIGN;FONT_SIZE=18;COLOR=58ADFF]5. How to defeat those monkeys.
+
+It won't be long till you unlock Wukong's Temple as well (110Lv map), which will refine the way you farm.
+Getting all Dragon Stone Alchemy +6 (for the extra bonuses), Wind Talisman+99, Sash Costume and maximizing 
+your damage will start to bother you seriously from now on. In this map, you start farming great quantities 
+of Chest of Supply, Dream & Sky Souls, Chest of Skills(for your special skills), as well as upgrading 
+materials for your high-end equipment. Selling them or using them for your own equipment, will either 
+way profit you and get you wealthy enough for the items mentioned before. You should also start wondering 
+what's going on with the Zodiac Temple & Thranduil, right...?
+
+
+[IMG=d:/ymir work/ui/wiki/divider_long.tga; Y=1120; CENTER_ALIGN]
+
+[CENTER_ALIGN;FONT_SIZE=18;COLOR=58ADFF]6. Did I finish the server now?
+
+Getting max level, doesn't apparently mean that you have gone through all of the aspects of the game. 
+I'm sure you know that too.
+
+
+[COLOR=ef4f00;FONT_SIZE=15]6.1 Zodiac Temple
+
+Some of the toughest adventures will be held here, in the Zodiac Temple. It is time for you to get socialized 
+and grab a team or guild to help you through this process. There are tons of new features, dungeon floors 
+and rewards in this gigantic aspect of the game and it won't be easy to go through alone. Maximizing 
+your equipment, upgrading all your talismans to +99 and forming a capable team may lead you to the 40th floor...
+In a sum, you'll soon get rid of your beloved 75Lv weapon and start rolling and upgrading a Zodiac weapon. 
+Same goes for your armor. Dealing with the 12 Zodiac Gods is not your casual cup of tea, so make sure to 
+consult our forum for detailed information.
+
+
+[COLOR=ef4f00;FONT_SIZE=15]6.2 Thranduil's Lair
+
+This dungeon constists of new bosses, stages and many versatilities. 
+You'll find some new techniques inside this lair and perhaps some Kyanite equipment? Who knows...
+
+
+
+

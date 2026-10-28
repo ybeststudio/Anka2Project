@@ -1,0 +1,4 @@
+<ScriptFile>
+	<CreateEterPackXml Input="../binary_unpack/yw_zone:" ArchivePath="../../Client/pack/yw_zone" XmlPath="xml/yw_zone_create.xml">
+	</CreateEterPackXml>
+</ScriptFile>

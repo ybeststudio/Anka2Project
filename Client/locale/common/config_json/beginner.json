@@ -1,0 +1,157 @@
+{
+  "rewards": [
+    {
+      "level": 10,
+      "items": [
+        {
+          "vnum": 76023,
+          "count": 100
+        },
+        {
+          "vnum": 76016,
+          "count": 5
+        },
+        {
+          "vnum": 98500,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "items": [
+        {
+          "vnum": 76023,
+          "count": 200
+        },
+        {
+          "vnum": 65152,
+          "count": 5
+        },
+        {
+          "vnum": 98500,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "items": [
+        {
+          "vnum": 60050,
+          "count": 3
+        },
+        {
+          "vnum": 60051,
+          "count": 3
+        },
+        {
+          "vnum": 65151,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "level": 40,
+      "items": [
+        {
+          "vnum": 65152,
+          "count": 5
+        },
+        {
+          "vnum": 71001,
+          "count": 5
+        },
+        {
+          "vnum": 71094,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "level": 50,
+      "items": [
+        {
+          "vnum": 71052,
+          "count": 200
+        },
+        {
+          "vnum": 60051,
+          "count": 5
+        },
+        {
+          "vnum": 65013,
+          "count": 110
+        }
+      ]
+    },
+    {
+      "level": 60,
+      "items": [
+        {
+          "vnum": 65181,
+          "count": 3
+        },
+        {
+          "vnum": 71001,
+          "count": 5
+        },
+        {
+          "vnum": 71094,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "level": 70,
+      "items": [
+        {
+          "vnum": 65181,
+          "count": 5
+        },
+        {
+          "vnum": 70039,
+          "count": 3
+        },
+        {
+          "vnum": 50854,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "level": 80,
+      "items": [
+        {
+          "vnum": 65181,
+          "count": 7
+        },
+        {
+          "vnum": 94106,
+          "count": 5
+        },
+        {
+          "vnum": 50513,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "level": 90,
+      "items": [
+        {
+          "vnum": 65181,
+          "count": 10
+        },
+        {
+          "vnum": 60054,
+          "count": 3
+        },
+        {
+          "vnum": 60055,
+          "count": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+[/ SUMMARY /]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=sash_overview;\
+    TEXT_1={WK:1};\
+    TEXT_1_ALIGN=center;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=116;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=86090;\
+    TEXT_1={WK:75};\
+    Y_PADDING=10;\
+]
+
+
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=196;\
+    ANCHOR=sash_origin;\
+    TEXT_1={WK:178};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=246;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=90020;\
+    TEXT_1={WK:78};\
+    Y_PADDING=17;\
+]
+
+
+
+
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=326;\
+    ANCHOR=sash_enchanting;\
+    TEXT_1={WK:218};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=376;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=65170;\
+    TEXT_1={WK:220};\
+    Y_PADDING=24;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=441;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=65171;\
+    TEXT_1=Use Color(AppendItem(6517{WK:222};\
+    Y_PADDING=24;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=506;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=65158;\
+    TEXT_1={WK:361};\
+    Y_PADDING=17;\
+]
+
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=571; TABLE_HEADERS=Source; TABLE_WIDTHS=125]
+[TR; H=32]
+[TD; TEXT=All 3 items can be obtained from Color2(Theowahdan) & Color2(Events).; ALIGN=center]
+[TABLE_END]
+
+
+
+
+
+
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=638;\
+    ANCHOR=sash_bonuses;\
+    TEXT_1={WK:20};\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=688; TABLE_HEADERS=Bonus|Max Value; TABLE_WIDTHS=210|90]
+[TR; H=30]
+[TD; TEXT=AppendBonus(10); ALIGN=center]
+[TD; TEXT=30%; ALIGN=center]
+[TR; H=30]
+[TD; TEXT=AppendBonus(11); ALIGN=center]
+[TD; TEXT=30%; ALIGN=center]
+[TR; H=30]
+[TD; TEXT=AppendBonus(15); ALIGN=center]
+[TD; TEXT=10%; ALIGN=center]
+[TR; H=30]
+[TD; TEXT=AppendBonus(17); ALIGN=center]
+[TD; TEXT=10%; ALIGN=center]
+[TR; H=30]
+[TD; TEXT=AppendBonus(128); ALIGN=center]
+[TD; TEXT=5%; ALIGN=center]
+[TR; H=30]
+[TD; TEXT=AppendBonus(133); ALIGN=center]
+[TD; TEXT=10%; ALIGN=center]
+[TR; H=30]
+[TD; TEXT=AppendBonus(13); ALIGN=center]
+[TD; TEXT=8%; ALIGN=center]
+[TR; H=30]
+[TD; TEXT=AppendBonus(14); ALIGN=center]
+[TD; TEXT=8%; ALIGN=center]
+[TR; H=30]
+[TD; TEXT=AppendBonus(53); ALIGN=center]
+[TD; TEXT=50; ALIGN=center]
+[TR; H=30]
+[TD; TEXT=AppendBonus(55); ALIGN=center]
+[TD; TEXT=20; ALIGN=center]
+[TR; H=30]
+[TD; TEXT=AppendBonus(115); ALIGN=center]
+[TD; TEXT=10%; ALIGN=center]
+[TABLE_END]
+
+[X=5; Y=1400; FONT_SIZE=13b; NO_ADD_Y; OUTLINE]

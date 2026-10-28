@@ -1,0 +1,3167 @@
+VNUM	LOCALE_NAME
+101	Vildhund
+102	Ulv
+103	Alpha-ulv
+104	Blåulv
+105	Alpha-blåulv
+106	Gråulv
+107	Alpha-gråulv
+108	Vildsvin
+109	Rødt vildsvin
+110	Bjørn
+111	Grizzlybjørn
+112	Sortbjørn
+113	Brunbjørn
+114	Tiger
+115	Hvid tiger
+131	forbandet ulv
+132	Forbandet Alfa Ulv
+133	Forbandet Blå Ulv
+134	Forbandet alpha-blåulv
+135	Forbandet Grå Ulv
+136	Forbandet alpha-gråulv
+137	Forbandet vildsvin
+138	Forbandet Rødt Vildsvin
+139	Forbandet bjørn
+140	Forbandet grizzlybjørn
+141	Forbandet Sort Bjørn
+142	Forbandet Brun Bjørn
+143	Forbandet tiger
+144	Forbandet hvid tiger
+151	Cung-Mok
+152	Mu-Rang
+153	Jug-Hyul
+154	Young-Ji
+155	Li-An
+171	Sulten vildhund
+172	Sulten ulv
+173	Sulten alpha-ulv
+174	Sulten blåulv
+175	Sulten alpha-blåulv
+176	Sulten gråulv
+177	Sulten alpha-gråulv
+178	Sulten vildsvin
+179	Sulten rød vildsvin
+180	Sulten bjørn
+181	Sulten grizzlybjørn
+182	Sulten Sortbjørn
+183	Sulten brunbjørn
+184	Sulten tiger
+185	Sulten hvid tiger
+191	Lykos
+192	Scrofa
+193	Bera
+194	Tigris
+301	Hvid-Ed soldat
+302	Hvid-Ed bueskytte
+303	Hvid-Ed general
+304	Hvid-Ed kommandant
+331	Hvid-Ed soldat
+332	Hvid-Ed bueskytte
+333	Hvid-Ed general
+334	Hvid-Ed kommandant
+351	Fej hvid-Ed soldat
+352	Fej Hvid-Ed bueskytte
+353	Fej Hvid-Ed general
+354	Fej Hvid-Ed kommandant
+391	Mi-Jung
+392	Eun-Jung
+393	Se-Rang
+394	Jin-Hee
+395	Modløs Mi-Jung
+396	Modløs Eun-Jung
+397	Modløs Se-Rang
+398	Modløs Jin-Hee
+401	Sortvind soldat
+402	Sortvind besat
+403	Sortvind bueskytte
+404	Sortvind-Jak-To
+405	Sortvind-To-Su
+406	Sortvind-Gu-Ryung
+431	Sort stormsoldat
+432	Sort stormbesat
+433	Sort bueskytte
+434	Sort storm-Joh-Hwan
+435	Sort storm-Kyuk-Jan
+436	Sort storm-Pho-Hwan
+451	Ond sort storm-soldat
+452	Ond storm-besat
+453	Ond storm-bueskytte
+454	Ond storm-Joh-Hwan
+455	Ond storm-Kyuk-Jang
+456	Ond storm-Pho-Hwan
+491	Mahon
+492	Bo
+493	Goo-Pae
+494	Chuong
+501	Vild infanterist
+502	Vild Helliget
+503	Vild bueskytte
+504	Vild general
+531	Brutal soldat
+532	Brutal besat
+533	Brutal bueskytte
+534	Brutal specialist
+551	Stor vild infanterist
+552	Stor vild Helliget
+553	Stor vild bueskytte
+554	Stor vild general
+591	Brutal kaptajn
+595	Brutal Geum-Chul
+601	Ork
+602	Ork-spion
+603	Ork-kriger
+604	Ork-troldmand
+631	Stolt ork
+632	Stolt Ork Spejder
+633	Stolt Ork Kæmper
+634	Stolt Ork Troldmand
+635	Stolt Ork General
+636	Sort ork
+637	Sort Kæmpe Ork
+651	Dristig Stor Ork
+652	Dristig Stor Ork Spejder
+653	Dristig Stor Ork Kæmper
+654	Dristig Stor Ork Trold.
+655	Dristig Stor Ork General
+656	Dristig Sort Ork
+657	Dristig Sort Kæmpe Ork
+691	Ledende ork
+692	Mørk ledende ork
+693	Ånde ork-leder
+701	Mørk fanatiker
+702	Mørk Arahan
+703	Mørk kriger
+704	Øverste mørke Arahan
+705	Mørk skarpretter
+706	Mørk plageånd
+707	Mørk besværger
+731	Stolt mørk fanatiker
+732	Stolt mørk Arahan
+733	Stolt mørk kriger
+734	Stolt mørk oberst
+735	Stolt mørk skytte
+736	Stolt mørk plageånd
+737	Stolt mørk troldmand
+751	Høj fanatiker
+752	Høj Arahan
+753	Høj Arahan-kriger
+754	Høj oberst-Arahan
+755	Høj skarpretter
+756	Høj plageånd
+757	Høj besværger
+771	Brutal fanatiker
+772	Brutal Arahan
+773	Brutal Arahan-kriger
+774	Brutal oberst-Arahan
+775	Brutal skarpretter
+776	Brutal plageånd
+777	Brutal besværger
+791	Mørk leder
+792	Mørk ånde-leder
+793	Mørk elite leder
+794	Elite ånde-leder
+795	Elite kriger
+796	Mørk elite kriger
+901	Lig-ånd
+902	Pest Hund
+903	Pest Mand
+904	Pest Sværdkriger
+905	Pest Spydmand
+906	Pest Bueskytte
+907	Pest-leder
+931	Vild lig-ånd
+932	Vild pest-hund
+933	Vild pest-mand
+934	Vild pest-kriger
+935	Vild pest-spydkriger
+936	Vild pest-bueskytte
+937	Vild pest-leder
+991	Pest æg
+992	Pest-bærer
+993	Kæmpe pest-bærer
+1001	Dæmon soldat
+1002	Dæmon bueskytte
+1003	Dæmon spydkriger
+1004	Dæmon shaman
+1031	Ond soldat
+1032	Ond bueskytte
+1033	Ond spydkriger
+1034	Ond shaman
+1035	Vredens ånd
+1036	Kaotisk ånd
+1037	Ond dæmonleder
+1038	Dødningehovedsværdmester
+1039	Flyvende dødningehoved
+1040	Udødelig ånd
+1041	Dæmonisk dyr
+1061	Ond åndesoldat
+1062	Ond åndeskytte
+1063	Ond åndekriger
+1064	Ond åndeshaman
+1065	Ond vred ånd
+1066	Ond kaotisk ånd
+1067	Ond åndeleder
+1068	Ånd sværdmester
+1069	Ond flyv. dødningehoved
+1070	Udødelig ånd
+1071	Dæmonisk dyr
+1091	Dæmonekonge
+1092	Stolt dæmonkonge
+1093	Høstmand
+1094	Ond dæmonkonge
+1095	Blå død
+1096	Áø»ç±Í¿Õ
+1101	Fortryllet is
+1102	Is Spækhugger
+1103	Is Insekt
+1104	Is Løve
+1105	Frossen Is Mand
+1106	Yeti
+1107	Is Golem
+1108	Is Golem
+1131	Underjordisk Is-Splinter
+1132	Underjord Is-Dræber-Hval
+1133	Underjordisk Is-Insekt
+1134	Underjordisk Is-Løve
+1135	Underjordisk Is-Mand
+1136	Underjordisk Yeti
+1137	Underjordisk Is-Golem
+1138	Underjordisk Is Golem
+1151	Is-djævel
+1152	Ishorn Spækhugger
+1153	Is Insekt
+1154	Seol-Gu
+1155	Is-mand
+1156	Is-kæmpe
+1157	Is Golem
+1171	Ond fortryllet is
+1172	Ond Is Spækhugger
+1173	Ond is-insekt
+1174	Ond is-løve
+1175	Ond is-mand
+1176	Ond Yeti
+1177	Ond is-golem
+1191	Is-heks
+1192	Stor is-heks
+1301	Træfrø-soldat
+1302	Træfrø-leder
+1303	Fjols
+1304	Gul tigerånd
+1305	Oksefrø-general
+1306	Ond gul tigerånd
+1307	Ond gul tigerånd
+1308	Ond gul tigerånd
+1309	Ond gul tigerånd
+1310	Ond gul tigerånd
+1331	Stor Træfrø-soldat
+1332	Stor træfrø-leder
+1333	Stor fjols
+1334	Stor gul tigerånd
+1335	Stor oksefrø-general
+1336	Oksefrø General
+1401	Ødelægger
+1402	Økse kriger
+1403	Tusind kriger
+1501	Sten Golem
+1502	Sten Cruncher
+1503	Kæmpe fels-golem
+1601	Oger kriger
+1602	Oger slagter
+1603	Oger berserker
+1901	Nihalede
+1902	Elite nihalede
+1903	Elite nihalede
+1904	Elite Nihalede
+1905	Elite Nihalede
+1906	Elite Nihalede
+2001	Baby edderkop
+2002	Gift-edderkop
+2003	Rød gift-edderkop
+2004	Klo-edderkop
+2005	Soldater-edderkop
+2031	Baby gift-edderkop
+2032	Dræbende gift-edderkop
+2033	Rød vred gift-edderkop
+2034	Klo gift-edderkop
+2035	Soldat gift-edderkop
+2036	Stolt soldatgiftedderkop
+2037	Soldat Gift Edderkop
+2051	Ond Baby Gift Edderkop
+2052	Ond Død. Gift Edderkop
+2053	Ond Rød Gift Edderkop
+2054	Ond Klo Gift Edderkop
+2055	Ond soldat gift-edderkop
+2061	Lille gift-edderkop
+2062	Dræbende gift-edderkop
+2063	Rød dræb. gift-edderkop
+2064	Klo gift-edderkop
+2065	Soldat gift-edderkop
+2071	Brut. baby gift-edderkop
+2072	Brut. dræb.gift-edderkop
+2073	Brut.  rød gift-edderkop
+2074	Brutal klo gift-edderkop
+2075	Brutal soldat-edderkop
+2076	Brutal st. gift-edderkop
+2091	Edderkoppe dronning
+2092	Edderkoppe-baronesse
+2093	Mørk edderkoppe dronning
+2094	Edderkoppe Baron
+2095	Edderkoppe Æg
+2101	Ørkenræv
+2102	Flyvende ørkenøje
+2103	Konge Skorpion
+2104	Ung skorpion mand
+2105	Skorpion bueskytte
+2106	Slange Sværdkriger
+2107	Slange bueskytte
+2108	Ørkenbandit
+2131	Bestialsk skorpion mand
+2132	Skorpion bueskytte
+2133	Slange Sværdkriger
+2134	Slange bueskytte
+2135	Ørkenbandit
+2151	Stærk ørkenræv
+2152	Stærk dervish
+2153	Stærk kongeskorpion
+2154	Skærk skorpion mand
+2155	Stærk skorpion bueskytte
+2156	Stærk slangekriger
+2157	Stærk slangebueskytte
+2158	Stærk ørkenbandit
+2191	Stor ørken-skildpadde
+2192	Mørk ørken-skildpadde
+2201	Kæmpende Tiger Håndlan.
+2202	Flamme Spøgelse
+2203	Kæmpende Tiger
+2204	Flamme
+2205	Flamme Kriger
+2206	Flamme-konge
+2207	Mørk flamme-konge
+2231	Stærk Kamp Tiger Slave
+2232	Stærk Flamme Spøgelse
+2233	Stærk Kæmpende Tiger
+2234	Stærk Flamme
+2235	Stærk Flamme Kriger
+2291	Rød drage
+2301	Åndetræ
+2302	Åndetræ-stamme
+2303	Dryade
+2304	Eng træspøgelse
+2305	Ondt træ
+2306	Kæmpe åndetræ
+2307	Åndetræ-lord
+2311	Rødt åndetræ
+2312	Rødt åndetræ-stamme
+2313	Rød dryade
+2314	Rød eng træspøgelse
+2315	Rødt ond træ
+2401	Setaou Kæmper
+2402	Setaou Jæger
+2403	Setaou Mystiker
+2404	Setaou Leder
+2411	Setaou Soldat
+2412	Setaou Bueskytte
+2413	Setaou Magistrat
+2414	Setaou Kommandant
+2415	Setaou Kommandant
+2431	Setaou Kæmper
+2432	Setaou Jæger
+2433	Setaou Mystiker
+2434	Setaou Leder
+2451	Setaou Soldat
+2452	Setaou Bueskytte
+2453	Setaou Magistrat
+2454	Setaou Kommandant
+2491	Kaptajn Yonghan
+2492	General Yonghan
+2493	Beran-Setaou
+2494	Kaptajn Huashin
+2495	General Huashin
+2501	Helveds Vandmand
+2502	Helveds Hund
+2503	Zombie
+2504	Helveds Officer
+2505	Helveds Vagt
+2506	Tohov. Helveds Bueskytte
+2507	Infernalsk Klo
+2508	Helveds Kriger
+2509	Helveds Bueskytte
+2510	Helveds Spydkæmper
+2511	Helveds Præst
+2512	Helveds Major
+2513	Helveds Slagter
+2514	Helveds General
+2541	Ond Helveds Kriger
+2542	Ond Helveds Bueskytte
+2543	Ond Helveds Spydkæmper
+2544	Ond Helveds Præst
+2545	Ond Helveds Major
+2546	Ond Helveds Slagter
+2547	Ond Helveds General
+2591	Tartaros
+2592	Helveds Bastard
+2593	Helveds Bastard
+2594	Helveds Bastard
+2595	Erebos
+2596	Azreals Yngel
+2597	Charon
+2598	Azrael
+2600	Zodiac Ulv
+2601	Zodiac Blå Ulv
+2602	Zodiac Lykos
+2603	Zodiac Bueskytte
+2604	Zodiac Vildsvin
+2605	Rød Zodiac Vildsvin
+2606	Zodiac Scrofa
+2607	Zodiac Mi-Jung
+2608	Zodiac Bera
+2609	Zodiac Bjørn
+2610	Zodiac Gråbjørn
+2611	Zodiac Brun Bjørn
+2612	Zodiac Eun-Jung
+2613	Zodiac Tigris
+2614	Zodiac Tiger
+2615	Hvid Zodiac Tiger
+2616	Zodiac Se-Rang
+2617	Zodiac Jin-Hee
+2618	Zodiac Baby Edderkop
+2619	Zodiac Gift Edderkop
+2620	Rød Zodiac Gift Edderkop
+2621	Zodiac Klo Edderkop
+2622	Zodiac Soldat Edderkop
+2623	Zodiac Flamme Ånd
+2624	Zodiac Kæmpende Tiger
+2625	Zodiac Flamme
+2626	Zodiac Flamme Kriger
+2627	Zodiac Flammekonge
+2628	Mørk Zodiac Flammekonge
+2629	Brutal Zodiac Infanteri
+2630	Brutal Zodiac Håndlanger
+2631	Brutal Zodiac Bueskytte
+2632	Brutal Zodiac General
+2633	Bestialsk Zodiac Kaptajn
+2634	Fortryllet Zodiac Is
+2635	Zodiac Is Spækhugger
+2636	Zodiac Is Insekt
+2637	Zodiac Is Løve
+2638	Frossen Zodiac Ismand
+2639	Zodiac Yeti
+2640	Zodiac Is Golem
+2641	Zodiac Ørkenræv
+2642	Zodiac Konge Skorpion
+2643	Zodiac Slange Sværdkrig.
+2644	Zodiac Slange Bueskytte
+2645	Zodiac Ørken Bandit
+2646	Zodiac Sort Vinds Soldat
+2647	Zodiac Sort Vinds Sinds.
+2648	Zodiac Sort Vinds Buesk.
+2649	Zodiac Mahon
+2650	Zodiac Bo
+2651	Zodiac Goo-Pae
+2652	Zodiac Chuong
+2653	Bestial Zodiac Scorp-Man
+2654	Zodiac Skorpion Bueskyt.
+2655	Zodiac Dervish
+2656	Zodiac Træ Frø Soldat
+2657	Zodiac Træ Frø Leder
+2658	Zodiac Bussemand
+2659	Zodiac Ødelægger
+2660	Zodiac Økse Kriger
+2661	Zodiac Tusind Kriger
+2662	Mørk Zodiac Fanatiker
+2663	Zodiac Arahan
+2664	Esoterisk Zodiac Arahan
+2665	Chief Eso. Zodiac Arahan
+2666	Mørk Zodiac Bøddel
+2667	Mørk Zodiac Plageånd
+2668	Zodiac Besværger
+2669	Elite Zodiac Ork
+2670	Elite Zodiac Ork Spion
+2671	Elite Zodiac Ork Kriger
+2672	El. Zodiac Ork Troldmand
+2673	Elite Zodiac Ork General
+2674	Sort Zodiac Ork
+2675	Sort Zodiac Ork Kæmpe
+2676	Zodiac RT Amazone
+2677	Zodiac RT Snigmorder
+2678	Zodiac RT Magiker
+2679	Zodiac RT Bøddel
+2680	Zodiac Krabbe Kriger
+2681	Zodiac Skorpion Skytte
+2682	Zodiac Reje Soldat
+2683	Zodiac Djævelsk Eneboer
+2684	Zodiac Pansrede Krabbe
+2685	Gigantisk Zodiac Bider
+2686	Gig. Zodiac Slagter
+2687	Zodiac Troldmand
+2688	Zodiac Togant
+2689	Zodiac Ogre Bøddel
+2690	Zodiac Ogre Bueskytte
+2691	Zodiac Kamp Ogre
+2692	Zodiac Ogre Troldmand
+2700	Vargulf
+2701	Vargulf Soldat
+2702	Vargulf General
+2703	Cerberus
+2704	Slange Cerberus
+2705	Drage Cerberus
+2706	Centaur
+2707	Centaur Kriger
+2708	Centaur General
+2709	Molok
+2710	Molok Kriger
+2711	Molok General
+2712	Dødsvinge
+2713	Syg Dødsvinge
+2714	Rådden Dødsvinge
+2715	Zephyr
+2716	Zephyr Kriger
+2717	Zephyr General
+2718	Uruk
+2719	Uruk Kriger
+2720	Uruk General
+2721	Carniphant
+2722	Carniphant Kriger
+2723	Carniphant General
+2724	Spartan
+2725	Spartan Soldat
+2726	Spartan General
+2727	Knogle Gladiator
+2728	Knogle Gladiator Soldat
+2729	Knogle Gladiator General
+2730	Scarabaeus Skytte
+2731	Scarabaeus Gigantus
+2732	Scarabaeus Jomfru
+2733	Jern Bueskytte
+2734	Jern Kriger
+2735	Jern General
+2736	Flygtning
+2737	Damage_Trap
+2750	Zi Officer
+2751	Zi Vagt
+2752	Zi General
+2760	Chou Officer
+2761	Chou Vagt
+2762	Chou General
+2770	Yin Officer
+2771	Yin Vagt
+2772	Yin General
+2780	Mao Officer
+2781	Mao Vagt
+2782	Mao General
+2790	Chen Officer
+2791	Chen Vagt
+2792	Chen General
+2800	Si Officer
+2801	Si Vagt
+2802	Si General
+2810	Wu Officer
+2811	Wu Vagt
+2812	Wu General
+2820	Wei Officer
+2821	Wei Vagt
+2822	Wei General
+2830	Shen Officer
+2831	Shen Vagt
+2832	Shen General
+2840	You Officer
+2841	You Vagt
+2842	You General
+2850	Xu Officer
+2851	Xu Vagt
+2852	Xu General
+2860	Hai Officer
+2861	Hai Vagt
+2862	Hai General
+2900	Rottens Metin
+2901	Oksens Metin
+2902	Tigers Metin
+2903	Dragens Metin
+2904	Slangens Metin
+2905	Hestens Metin
+2906	Gedens Metin
+2907	Abens Metin
+2908	Hundens Metin
+3001	Gnoll kriger
+3002	Gnoll bueskytte
+3003	Gnoll forsvarer
+3004	Gnoll magiker
+3005	Gnoll general
+3090	Gnoll Lord
+3091	Øverste Gnoll vagt
+3101	Et øjet bokser
+3102	Kyklop soldat
+3103	Kyklop magiker
+3104	Kyklop bøddel
+3105	General Outis
+3190	Arges
+3191	Polyphemos
+3201	Manticore kriger
+3202	Manticore soldat
+3203	Manticore troldmand
+3204	Manticore bøddel
+3205	General Cor
+3290	Rakshasa
+3291	Martyaxwar
+3301	Lemur kriger
+3302	Lemur soldat
+3303	Lemur magiker
+3304	Lemur bøddel
+3305	Lemur general
+3390	Lemur prins
+3391	Lemur bodyguard
+3401	Tritonisk muræne
+3402	Haj soldat
+3403	Tritonisk  magiker
+3404	Tritonisk jæger
+3405	Tritonisk  knivstikker
+3490	General Kappa
+3491	Triton
+3501	Rødtyv amazone
+3502	Rødtyv snigmorder
+3503	Rødtyv magiker
+3504	Rødtyv bøddel
+3505	Mørk general
+3551	Brutal rødtyv amazone
+3552	Brutal rødtyv snigmorder
+3553	Brutal rødtyv magiker
+3554	Brutal rødtyv bøddel
+3555	Hvid general
+3590	Knogleansigt
+3591	Rød høvding
+3595	Brutal knogleansigt
+3596	Brutal rød høvding
+3601	Krabbe kriger
+3602	Skorpion skytte
+3603	Reje soldat
+3604	Djævelsk eneboer
+3605	Armeret krabbe
+3690	Hummer general
+3691	Konge krabbe
+3701	Gigantisk bider
+3702	Gigantisk slagter
+3703	Gigantisk troldmand
+3704	Togant
+3705	Kaptajn Klo
+3790	Gargoyle
+3791	Kong Wubba
+3801	Hængork
+3802	Skytte trold
+3803	Larmende trold
+3804	Magiker trold
+3805	General Ogg
+3890	Kaptajn Shruk
+3891	Den store trold
+3901	Piletræs mand
+3902	Eoten
+3903	Skouman
+3904	Kaptajn Klo
+3905	Mu-Shu
+3906	Yah-Ki
+3907	Moghu
+3908	Carnifex
+3909	General Albus
+3910	Skeletos
+3911	Aku-Boku
+3912	Arboretum
+3913	Sycomore
+3949	Portal: Nyt Kontinent
+3950	Kappa
+3951	Lagune Kappa
+3952	Dyb Havets Kappa
+3953	Kappa Leder
+3954	Muræne Soldat
+3955	Dyb Havs Muræne Soldat
+3956	Sirene Dronning
+3957	Hydras Yngel
+3958	Hydras Yngel
+3959	Hydras Yngel
+3960	Hydra
+3961	Hydra
+3962	Hydra
+3963	Hydra
+3964	Hydra
+3965	Hydras Skat
+3970	
+3971	Nordvinds Krystal
+3972	NordvindsDybder 415 136
+3973	NordvindsDybder 94 139
+3974	
+3980	Ild Elementær
+3981	Is Elementær
+3982	Lyn Elementær
+3983	Vind Elementær
+3984	Jord Elementær
+3985	Mørke Elementær
+3986	Ild Ånd
+3987	Frost Ånd
+3988	Elektrisk Ånd
+3989	Luft Ånd
+3990	Sten Ånd
+3991	Skygge Ånd
+3992	Svide Herre
+3993	Gletscher Herre
+3994	Torden Herre
+3995	Storm Herre
+3996	Terra Herre
+3997	Nat Herre
+3998	Elementær Rige
+3999	Afslut
+4000	Ildens Metin
+4001	Isens Metin
+4002	Lynets Metin
+4003	Vindens Metin
+4004	Jordens Metin
+4005	Nattens Metin
+4006	Elementær Vogter
+4019	Tårnets Forhal
+4020	Sung Mahi Tårnet
+4021	Tårnets Segl
+4022	Slange Templets Portal
+4023	Ændre Level
+4024	Slange Hoved
+4025	Slange Hoved
+4026	Slange Hoved
+4027	Slange Hoved
+4030	Hvidt Drage Æg
+4031	Gådens Tempel
+4032	Forlad Gådens Tempel
+4033	Gådens Tempel (byg)
+4034	Gådens Tempel (gentag)
+4035	Gådens Portal
+4153	Asmodeus
+4154	Jordens Udsendte
+4155	Jordens Udsendte
+4156	Nattens Udsendte
+4157	Tordens Udsendte
+4158	Luftens Udsendte
+4159	Fordømmelsens Kæmper
+4160	Fordømmelsens Troldmand
+4161	Døds Udsendte
+4162	Frelsens Udsendte
+4200	TS: Setaou Kæmper
+4201	TS: Setaou Jæger
+4202	TS: Setaou Mystiker
+4203	TS: Setaou Soldat
+4204	TS: Setaou Bueskytte
+4205	TS: Setaou Magistrat
+4206	TS: Setaou Kommandant
+4207	TS: Kaptajn Yonghan
+4208	TS: Kaptajn Yonghan
+4209	TS: General Yonghan
+4210	TS: General Yonghan
+4220	TS: Glødende Flamme Ånd
+4221	TS: Glødende Flam. Tiger
+4222	TS: Glødende Flamme
+4223	TS: Glødende Fla. Kriger
+4224	TS: Glødende Flammekonge
+4225	TS: Glødende Flam. Trold
+4226	TS: Glødende Flamme Skæg
+4227	TS: Glødende Fl. General
+4228	TS: Glødende Flamme Chef
+4229	TS: Ignitor
+4240	TS: Frost Krystal
+4241	TS: Frost Kryb
+4242	TS: Frost Mand
+4243	TS: Frost Yeti
+4244	TS: Frost Golem
+4245	TS: Frost Trold
+4246	TS: Frost Skæg
+4247	TS: Frost General
+4248	TS: Frost Herre
+4249	TS: Szel
+4260	TS: En-Tai Kriger
+4261	TS: En-Tai Soldat
+4262	TS: En-Tai Druid
+4263	TS: En-Tai Healer
+4264	TS: En-Tai Ødelægger
+4265	TS: En-Tai Sovereign
+4266	TS: Ochao Healer
+4267	TS: En-Tai Kriger
+4268	TS: En-Tai Soldat
+4269	TS: En-Tai Druid
+4270	TS: En-Tai Healer
+4271	TS: En-Tai Ødelægger
+4272	TS: Bagjanamu
+4273	TS: Ochao Soldat
+4274	TS: Ochao Magiker
+4275	TS: Ochao Bøddel
+4276	TS: Ochao General
+4280	GO: Setaou Kæmper
+4281	GO: Setaou Jæger
+4282	GO: Setaou Mystiker
+4283	GO: Setaou Soldat
+4284	GO: Setaou Bueskytte
+4285	GO: Setaou Magistrat
+4286	GO: Setaou Kommandant
+4287	GO: Kaptajn Yonghan
+4288	GO: Kaptajn Yonghan
+4289	GO: General Yonghan
+4290	GO: General Yonghan
+4300	GO: Glødende Flamme Ånd
+4301	GO: Glødende Flam. Tiger
+4302	GO: Glødende Flamme
+4303	GO: Glødende Fla. Kriger
+4304	GO: Glødende Flammekonge
+4305	GO: Glødende Flam. Trold
+4306	GO: Glødende Flamme Skæg
+4307	GO: Glødende Fl. General
+4308	GO: Glødende Flamme Chef
+4309	GO: Ignitor
+4320	GO: Frost Krystal
+4321	GO: Frost Kryb
+4322	GO: Frost Mand
+4323	GO: Frost Yeti
+4324	GO: Frost Golem
+4325	GO: Frost Trold
+4326	GO: Frost Skæg
+4327	GO: Frost General
+4328	GO: Frost Herre
+4329	GO: Szel
+4340	GO: En-Tai Kriger
+4341	GO: En-Tai Soldat
+4342	GO: En-Tai Druid
+4343	GO: En-Tai Healer
+4344	GO: En-Tai Ødelægger
+4345	GO: En-Tai Sovereign
+4346	GO: Ochao Healer
+4347	GO: En-Tai Kriger
+4348	GO: En-Tai Soldat
+4349	GO: En-Tai Druid
+4350	GO: En-Tai Healer
+4351	GO: En-Tai Ødelægger
+4352	GO: Bagjanamu
+4353	GO: Ochao Soldat
+4354	GO: Ochao Magiker
+4355	GO: Ochao Bøddel
+4356	GO: Ochao General
+4400	TS: Beran-Setaou
+4401	TS: Razador
+4402	TS: Nemere
+4403	TS: Jotun Thrym
+4410	GO: Beran-Setaou
+4411	GO: Razador
+4412	GO: Nemere
+4413	GO: Jotun Thrym
+4420	V: En-Tai Kriger
+4421	V: En-Tai Soldat
+4422	V: En-Tai Druid
+4423	V: En-Tai Healer
+4424	V: En-Tai Ødelægger
+4429	V: Bagjanamu
+4430	V: Gnoll Bueskytte
+4431	V: Kyklop Soldat
+4432	V: Kyklop Magiker
+4433	V: Kyklop Bøddel
+4434	V: General Outis
+4439	V: Polyphemos
+4440	V: Helveds Bueskytte
+4441	V: Helveds Spydkæmper
+4442	V: Helveds Præst
+4443	V: Helveds Major
+4444	V: Helveds General
+4449	V: Azrael
+4450	V: Stor Træ Frø Soldat
+4451	V: Træ Frø Leder
+4452	V: Fjols
+4453	V: G. Gul Tigerånd
+4454	V: Oksefrø General
+4459	V: Gul Tigerånd
+4460	V: Glødende Flamme Ånd
+4461	V: Glødende Flamme Tiger
+4462	V: Glødende Flamme
+4463	V: Glød. Flamme Kriger
+4464	W: Magma Krystal
+4469	V: Drage Vogter Idall
+4470	V: Hængork
+4471	V: Skytte Trold
+4472	V: Larmende Trold
+4473	V: Magiker Trold
+4474	V: General Ogg
+4479	V: Den Store Trold
+4500	Gådens Metin
+4501	Kriger
+4502	Sura
+4503	Ninja
+4504	Shaman
+4505	Lycan
+4506	Gådens General
+4601	Ordens Bueskytte
+4602	Ordens Magiker
+4603	Ordens Kriger
+4690	Slagets Herre
+5001	Pirat Tanaka
+5002	Hae-Tae
+5003	Abe
+5004	Pirat Tanaka
+5101	Sød abe-soldat
+5102	Sød abe-kaster
+5103	Sød abe-kriger
+5104	Sød abe-general
+5111	Abe-soldat
+5112	Abe-kaster
+5113	Abe-kriger
+5114	Abe-general
+5115	Sten-abe
+5116	Abernes leder
+5121	Stærk abe-soldat
+5122	Stærk abe-kaster
+5123	Stærk abe-kriger
+5124	Stærk abe-general
+5125	Stærk sten-abe
+5126	Stærk guld-abe
+5127	Abernes stærke leder
+5131	Klog lille abe-soldat
+5132	Klog lille abe-kaster
+5133	Klog lille abe-kriger
+5134	Klog lille abe-general
+5141	Klog abe-soldat
+5142	Klog abe-kaster
+5143	Klog abe-kriger
+5144	Klog abe-general
+5145	Klog sten-abe
+5146	Abernes kloge leder
+5151	Ond abe-soldat
+5152	Ond abe-kaster
+5153	Ond abe-kriger
+5154	Ond abe-general
+5155	Ond sten-abe
+5156	Ond guld-abe
+5157	Abernes onde leder
+5161	Fels-abe
+5162	Gående abe
+5163	Abe-lord
+5201	Vildhund
+5202	Vildsvin
+5203	Rødt vildsvin
+5204	Bjørn
+5205	Brun bjørn
+5206	Sort bjørn
+5207	Sulten brun bjørn
+5208	Tiger
+5209	Hvid tiger
+6001	Glødende flamme ånd
+6002	Glødende flamme tiger
+6003	Glødende flamme
+6004	Glødende flamme kriger
+6005	Glødende flamme konge
+6006	Glødende Flamme Trold
+6007	Glødende flamme skæg
+6008	Glødende flamme general
+6009	Glødende flamme høvding
+6051	Ignitor
+6091	Razador
+6101	Frost Krystal
+6102	Frost kryb
+6103	Frost mand
+6104	Frost Yeti
+6105	Frost Golem
+6106	Frost trold
+6107	Frost skæg
+6108	Frost general
+6109	Frost herre
+6110	Magma Yeti
+6111	Magma Golem
+6112	Magma Kryb
+6113	Magma Mand
+6114	Magma Krystal
+6115	Magma Wyvern
+6116	Drage Vogter Idall
+6117	Idalls Undersåt
+6118	Drage Statue
+6151	Szel
+6191	Nemere
+6192	Jotun Thrym
+6193	Drage Dronning Meley
+6201	Magma Yeti
+6202	Magma Golem
+6203	Magma Kryb
+6204	Magma Mand
+6205	Magma Krystal
+6206	Magma Wyvern
+6207	Drage Vogter Idall
+6209	Drage Statue
+6301	Ochao kriger
+6302	Ochao soldat
+6303	Ochao magiker
+6304	Ochao bøddel
+6305	Ochao general
+6306	Stærk Ochao Kriger
+6307	Stærk Ochao Soldat
+6308	Stærk Ochao Magiker
+6309	Stærk Ochao Bøddel
+6310	Stærk Ochao General
+6391	Ochao lord
+6392	Ochao bodyguard
+6393	Stærk Ochao Fyrste
+6394	Stærk Ochao Livvagt
+6401	En-Tai kriger
+6402	En-Tai soldat
+6403	En-Tai druid
+6404	En-Tai healer
+6405	En-Tai vagt
+6406	En-Tai ødelægger
+6407	En-Tai Sovereign
+6408	Bagjanamu
+6409	Ochao healer
+6410	Stærk En-Tai Kriger
+6411	Stærk En-Tai Soldat
+6412	Stærk En-Tai Druide
+6413	Stærk En-Tai Healer
+6414	Stærk En-Tai Ødelægger
+6415	Beran-Setaou Event
+6416	Nemere Event
+6417	Razador Event
+6418	Jotun Thrym Event
+6419	Røde Drage Event
+6420	Skyggekriger
+6421	Baashido
+6422	Smertens Metin
+6430	Brutal Kaptajn
+6431	Ledende Ork
+6432	Ni Haler
+6433	Mægtig Is Heks
+6434	General Huashin
+6435	Nemere
+6436	Beran-Setaou
+6437	Razador
+6438	Jotun Thrym
+6439	Mystisk Munk
+6500	Drage Kongen Akzadur
+6501	Drage Kongen Nafaroth
+6502	Drage Kongen Exedyar
+6503	Drage Kongen Ruilith
+6504	Tyolduran
+6513	Drage Portal
+6514	Til Drage Kongen
+6515	Afslut
+6541	Helveds Hund Ekko
+6542	Trold Soldat Ekko
+6543	Trold Kriger Ekko
+6544	Trold Bueskytte Ekko
+6545	Natanan's Ekko
+6546	Argos Ekko
+6547	Portal
+6686	Jin Bing
+6687	Soldat Ki
+6688	Soldat Mao
+6689	Soldat Gong
+6690	Frontline Magiker
+6691	Kao
+6692	Kong Bao (Mission)
+6693	Jin Bing
+6694	Soldat Ki
+6695	Soldat Mao
+6696	Soldat Gong
+6697	Frontline Magiker
+6698	Kao
+6699	Kong Bao
+6700	Helveds Hund
+6701	Trolde Soldat
+6702	Trolde Kriger
+6703	Trolde Bueskytte
+6704	Trolde Shaman
+6705	Natanan
+6706	Argos
+6707	Trolde Soldat
+6708	Trolde Kriger
+6709	Trolde Bueskytte
+6710	Misbehandlet Spøgelse
+6711	Helveds Hund
+6712	Trolde Soldat
+6713	Trolde Kriger
+6714	Trolde Bueskytte
+6715	Trolde Shaman
+6716	Natanan
+6717	Argos
+6718	Quag Kovix
+6719	Quag Arbejder
+6720	Quag Golem
+6721	Quag Kriger
+6722	Quag Troldmand
+6723	Quag Veteran
+6724	Quag Primus
+6725	Quag Kovix
+6726	Quag Arbejder
+6727	Quag Golem
+6728	Quag Kriger
+6729	Quag Troldmand
+6730	Quag Veteran
+6731	Quag Primus
+6744	Kappa Soldat
+6745	Kappa Arbejder
+6746	Kappa Soldat
+6747	Kappa Troldmand
+6748	Kappa Jæger
+6749	Mægtig Kappa
+6750	Slange Skorpion
+6751	Slange Arbejder
+6752	Slange Kappa
+6753	Slange Soldat
+6754	Slange Asketisk
+6755	Mægtig Slange Kriger
+6756	Slange Dronningen Nethis
+6757	Slange Søjle
+6758	Inficerede Soldat
+6759	Inficerede Kæmper
+6760	Inficerede Kriger
+6761	Inficerede Munk
+6762	Inficerede General
+6763	Inficerede Chef
+6764	Plettede Krigs Chef
+6765	Mægtig Slange Kriger
+6770	Frossen Ræv
+6771	Frossen Spejder
+6772	Frossen Kriger
+6773	Frossen Jæger
+6774	Frossen General
+6775	Frossen Chef
+6776	Frossen Krigs Chef
+6777	Vanvittig Frossen Hjort
+6778	Vanvittig Sne Leopard
+6779	Nordvinds Yeti
+6780	Nordvinds Spøgelse
+6781	Nordvinds Golem
+6782	Bigfoot
+6783	Nordvinds Krigs Chef
+6784	Nordvinds Ly Soldat
+6785	Ly Kæmper
+6786	Nordvinds Ly Kriger
+6787	Nordvinds Ly Troldmand
+6788	Nordvinds Ly General
+6789	Nordvinds Ly Krigs Chef
+6790	Alastor
+6791	Alastor
+6792	Nordvinds Ly Soldat
+6793	Ly Kæmper
+6794	Nordvinds Ly Kriger
+6795	Nordvinds Ly Troldmand
+6796	Nordvinds Ly General
+6797	Nordvinds Ly Krigs Chef
+6800	Gnoll Kriger
+6801	Gnoll Spejder
+6802	Gnoll Troldmand
+6803	Gnoll Marskal
+6804	Gnoll Mester
+6805	Gnoll Kaptajn
+6806	Gnoll Soldat
+6807	Gnoll Spion
+6808	Gnoll Magiker
+6809	Gnoll Kommandant
+6810	Ahtrin Kriger
+6811	Ahtrin Spejder
+6812	Ahtrin Troldmand
+6813	Ahtrin Kommandant
+6814	Ahtrin Kaptajn
+6815	Ahtrin Kaptajn
+6816	Ahtrin Spion
+6817	Ahtrin Troldmand
+6818	Ahtrin Kommandant
+6819	Ahtrin Mester
+6820	Ahtrin Stormester
+6850	Slange Skorpion
+6851	Slange Arbejder
+6852	Slange Kappa
+6853	Slange Soldat
+6854	Slange Slagter
+6855	Mægtig Slange Kriger
+6856	Slange Dronningen Nethis
+6860	Sværd Kæmperen Jin
+6861	Spydmesteren Ki
+6862	Spydmesteren Mao
+6863	Bueskytten Gong
+6864	Sværd Kæmperen Kao
+6865	Sværd Kæmperen Jin
+6866	Spydmesteren Ki
+6867	Spydmesteren Mao
+6868	Bueskytten Gong
+6869	Sværd Kæmperen Kao
+6870	Mystisk Munk
+6871	Mystisk Munk
+6875	Inficerede Soldat
+6876	Inficerede Kæmper
+6877	Inficerede Kriger
+6878	Inficerede Munk
+6879	Inficerede General
+6880	Inficerede Chef
+6881	Plettede Krigs Chef
+6882	Sjælløs Ræv
+6883	Frossen Spejder
+6884	Frossen Kriger
+6885	Frossen Jæger
+6886	Frossen General
+6887	Frossen Chef
+6888	Frossen Krigs Chef
+6889	Forbandet Frossen Hjort
+6890	Vanvittig Sne Leopard
+6891	Nordvinds Yeti
+6892	Nordvinds Spøgelse
+6893	Nordvinds Golem
+6894	Bigfoot
+6895	Nordvinds Krigs Chef
+6896	Balathor
+6897	Balathor
+6898	Spektral Kriger
+6899	Spektral Bueskytte
+6900	Spektral Ekko
+6901	Fortabt Ridder
+6902	Fortabt Kriger
+6903	Fortabt Sjæl
+6904	Fortabt Banshee
+6905	Slyngelsk Ridder
+6906	Slyngelsk Kriger
+6907	Slyngelsk Sjæl
+6908	Slyngelsk Banshee
+6909	Afmagret Ridder
+6910	Afmagret Kriger
+6911	Afmagret Banshee
+6912	Hævnlysten Ridder
+6913	Hævnlysten Kriger
+6914	Hævnlysten Banshee
+6915	Falden Ridder
+6916	Falden Kriger
+6917	Falden Sjæl
+6918	Falden Banshee
+6919	Azphirna
+6920	Nykos
+6921	Forbandet Azphirna
+6922	Forbandet Nykos
+6923	Forbandet Sjælehøster
+6924	Skyggebringer
+6925	Mørk Ridder
+6926	Udspekul. Skygge Tjener
+6927	Vildmands Skygge Tjener
+6928	Stærk Skygge Tjener
+6929	Mørk Magiker
+6930	Afmagret Skyggebringer
+6931	Afmagret Mørk Ridder
+6932	Afmagret Skygge Tjener
+6933	Rasende Skygge Tjener
+6934	Skrækkelig Skygge Tjener
+6935	Afmagret Magiker
+6936	Elite Mørk Ridder
+6937	Kalgaroth Mordmand
+6938	Nezerath
+6939	Aamon
+6940	Solskærv
+6941	Solskærv
+6942	Solskærv
+6943	Aamon
+6944	Tegn på Grådighed
+6945	Elite Skyggebringer
+6946	Albira's Solskærv
+6947	Fanget Skyggebringer
+7001	Abe-soldat
+7002	Abe-rytter
+7003	Gimu abe-soldat
+7004	Abe kommandant
+7005	Sten-abe
+7006	Guld-abe
+7007	Abe-general
+7008	Tu-Gui arbejder
+7009	Tu-Gui soldat-tester
+7010	Hvid Tu-Gui kommandant
+7012	Bi-Ma-Gui-An
+7013	Skorpion Konge
+7014	Smart skorpion mand
+7015	Skorpion bueskytte
+7016	Slange Sværdkæmper
+7017	Slange bueskytte
+7018	Ørkenbandit
+7019	Tu-ji soldat
+7020	Hwa-Ryung
+7021	Dagdriver Tu-Ji
+7022	Cham-Ma
+7023	Teawha-Mu
+7024	Juk-gui
+7025	Dung-Juk
+7026	Juk-Mok
+7027	Hwaryu Juk
+7028	Sort Juk-Guimok
+7029	Is Djævel
+7030	Ishorn Dræberhval
+7031	Is Insekt
+7032	Seol-Gu
+7033	Ismand
+7034	Is-kæmpe
+7035	Is Golem
+7036	Is Djævel
+7037	Ishorn Dræberhval
+7038	Is Insekt
+7039	Seol-Gu
+7040	Ismand
+7041	Is-kæmpe
+7042	Is Golem
+7043	Is Djævel
+7044	Ishorn Dræberhval
+7045	Is Insekt
+7046	Seol-Gu
+7047	Ismand
+7048	Is-kæmpe
+7049	Is Golem
+7050	Flyvende Ørkenøje
+7051	Konge Skorpion
+7052	Ung Skorpion Mand
+7053	Skorpion Bueskytte
+7054	Slange Sværdkæmper
+7055	Slange Bueskytte
+7056	Ørken Bandit
+7057	Flyvende Ørkenøje
+7058	Konge Skorpion
+7059	Ung Skorpion Mand
+7060	Skorpion Bueskytte
+7061	Slange Sværdkæmper
+7062	Slange Bueskytte
+7063	Ørken Bandit
+7064	Flyvende Ørkenøje
+7065	Konge Skorpion
+7066	Ung Skorpion Mand
+7067	Skorpion Bueskytte
+7068	Slange Sværdkæmper
+7069	Slange Bueskytte
+7070	Ørken Bandit
+7071	Kæmpende Tiger Håndlan.
+7072	Flamme Spøgelse
+7073	Kæmpende Tiger
+7074	Flamme
+7075	Flamme Kriger
+7076	Kæmpende Tiger Håndlan.
+7077	Flamme Spøgelse
+7078	Kæmpende Tiger
+7079	Flamme
+7080	Flamme Kriger
+7081	Kæmpende Tiger Håndlan.
+7082	Flamme Spøgelse
+7083	Kæmpende Tiger
+7084	Flamme
+7085	Flamme Kriger
+7086	Spøgelses stump
+7087	Dryade
+7088	Eng træspøgelse
+7089	Ondt Træ
+7090	Spøgelses stump
+7091	Dryade
+7092	Eng træspøgelse
+7093	Ondt Træ
+7094	Spøgelses stump
+7095	Dryade
+7096	Eng træspøgelse
+7101	Kanon
+7102	Kanon
+7103	Pilebølge Ballista
+7104	Pilebølge Ballista
+7105	Tårn
+7106	Ildsted
+7107	Ildsted
+7108	Ildsted
+7109	Ildsted
+7110	Ildsted
+7111	Ildsted
+7112	Ildsted
+7113	Cheeta
+7114	Kraton
+7115	Charly
+7116	Nini
+7117	Zulu
+7118	Abe Kriger Deka
+7119	Abe Kriger Oba
+7120	Kong Keung
+7121	Kiros
+7122	Manchu
+7123	Sgok
+7124	Indrik
+7125	Forbandet Ulv
+7126	Forbandet alpha-ulv
+7127	Forbandet blåulv
+7128	Forbandet gråulv
+7129	Forbandet Vildsvin
+7130	Forbandet rød vildsvin
+7131	Forbandet Bjørn
+7132	Forbandet Grizzlybjørn
+7133	Forbandet sortbjørn
+7134	Forbandet brunbjørn
+7135	Forbandet Tiger
+7136	Stolt Ork
+7137	Stolt ork-spion
+7138	Stolt ork-kriger
+7139	Stolt ork-troldmand
+7140	Stolt ork-general
+7141	Sort Ork
+7142	Sort kæmpe-ork
+7143	Modig stor ork
+7144	Modig stor ork-spion
+7145	Modig stor ork-kriger
+7146	Modig stor ork-troldmand
+7147	Modig stor ork-general
+7148	Modig kraftig ork
+7149	Modig kraftig kæmpe-ork
+7152	Flyvende Ørkenøje
+7153	Kongeskorpion
+7154	Ung Skorpion Mand
+7155	Skorpion Bueskytte
+7156	Slange sværdkriger
+7157	Slange Bueskytte
+7158	Ørkenbandit
+7159	Bestialsk Skorpion Mand
+7160	Ond baby gift-edderkop
+7161	Ond dræb. gift-edderkop
+7162	Ond rød gift-edderkop
+7163	Ond klo gift-edderkop
+7164	Kamptigerslave
+7165	Flamme-ånd
+7166	Kamptiger
+7167	Flamme
+7168	Flamme-kriger
+7169	Stærk kamptigerslave
+7170	Stærk flamme-ånd
+7171	Stærk kamptiger
+7172	Stærk Flamme
+7173	Stærk flamme-kriger
+7174	Fortryllet Is
+7175	Is Spækhugger
+7176	Is-insekt
+7177	Is-løve
+7178	Kølig Is-mand
+7179	Yeti
+7180	Is-golem
+7181	Pest-hund
+7182	Pest-mand
+7183	Pest-sværdkriger
+7184	Pest-spydkriger
+7185	Pest-bueskytte
+7186	Helveds Vandmand
+7187	Helveds Hund
+7188	Zombie
+7189	Helveds Officer
+7190	Helveds Vagt
+7191	Tohoved HelvedsBueskytte
+7192	Infernalsk Klo
+7193	Helveds Kriger
+7194	Helveds Bueskytte
+7195	Helveds Spydkæmper
+7196	Helveds Præst
+7197	Helveds Major
+7198	En-Tai Kriger
+7199	En-Tai Soldat
+7200	En-Tai Druid
+7201	En-Tai Healer
+7202	En-Tai Ødelægger
+7203	En-Tai Sovereign
+7204	Lemur Magiker
+7205	Lemur Kriger
+7206	Lemur Soldat
+7207	Lemur Bøddel
+7210	Invasions Boss
+7211	Invasions Ild Boss
+7212	Invasions Is Boss
+7213	Invasions Lyn Boss
+7214	Invasions Vind Boss
+7215	Invasions Jord Boss
+7216	Invasions Mørke Boss
+7242	Placeholder
+7243	Placeholder
+7244	Placeholder
+7245	Placeholder
+7246	Placeholder
+7247	Placeholder
+7248	Placeholder
+7249	Placeholder
+7250	Placeholder
+7251	Placeholder
+7252	Placeholder
+7253	Placeholder
+7254	Placeholder
+7255	Placeholder
+7550	Tårn Ulv
+7551	Tårn Bruiser
+7552	Tårn Berserker
+7553	Tårn Troldmand
+7554	Tårn Slagter
+7555	Tårn Nekromant
+7556	Tårn Stormester
+7557	Tårn Ulv
+7558	Tårn Bruiser
+7559	Tårn Berserker
+7560	Tårn Troldmand
+7561	Tårn Slagter
+7562	Tårn Nekromant
+7563	Tårn Stormester
+7564	Tårn Ulv
+7565	Tårn Bruiser
+7566	Tårn Berserker
+7567	Tårn Troldmand
+7568	Tårn Slagter
+7569	Tårn Nekromant
+7570	Tårn Stormester
+7571	Tårn Ulv
+7572	Tårn Bruiser
+7573	Tårn Berserker
+7574	Tårn Troldmand
+7575	Tårn Slagter
+7576	Tårn Nekromant
+7577	Tårn Stormester
+7578	Tårn Ulv
+7579	Tårn Bruiser
+7580	Tårn Berserker
+7581	Tårn Troldmand
+7582	Tårn Slagter
+7583	Tårn Nekromant
+7584	Tårn Stormester
+7585	Tårn Ulv
+7586	Tårn Bruiser
+7587	Tårn Berserker
+7588	Tårn Troldmand
+7589	Tårn Slagter
+7590	Tårn Nekromant
+7591	Tårn Stormester
+7592	Tårn Ødelægger
+7593	Tårn Ødelægger
+7594	Tårnets Dæmon Sten
+7595	Tårn Bueskytte
+7600	Tårnets Sjælesten
+7609	Tårnets Mester Troldmand
+7610	Tårnets Tyran
+7611	Tårnets Tyran
+7612	Tårnets Døds Tyran
+7613	Tårnets Døds Tyran
+7614	Tårnets Mester Troldmand
+7615	Tårn Ulv
+7616	Tårn Bruiser
+7617	Tårn Slagter
+7618	Tårn Slagter
+7619	Tårn Berserker
+7620	Tårn Troldmand
+8001	Sorgens Metin
+8002	Kampens Metin
+8003	Slagets Metin
+8004	Begærets Metin
+8005	Skumlens Metin
+8006	Mørkets Metin
+8007	Misundelsens Metin
+8008	Sjælens Metin
+8009	Skyggens Metin
+8010	Hårdhedens Metin
+8011	Djævlens Metin
+8012	Faldets Metin
+8013	Dødens Metin
+8014	Drabets Metin
+8015	Hårdhedens Metin
+8016	Djævlens Metin
+8017	Faldets Metin
+8018	Dødens Metin
+8019	Drabets Metin
+8020	Shinsoo-fels
+8021	Jinno-fels
+8022	Chunjo-fels
+8023	Kejserfels
+8024	Metin Pung-Ma
+8025	Metin Ma-An
+8026	Metin Tu-Young
+8027	Metin Jeon-Un
+8031	Bjergets Metin
+8032	Hævnens Metin
+8033	Ensomhedens Metin
+8034	Arrogancens Metin
+8035	Indfrielsens Metin
+8036	Forræderiets Metin
+8037	Bitterhedens Metin
+8038	Gengældelsens Metin
+8039	Stolthedens Metin
+8040	Ondsindets Metin
+8041	Påske Metin
+8042	Påske Metin
+8043	Påske Metin
+8044	Påske Metin
+8045	Påske Metin
+8046	Påske Metin
+8047	Påske Metin
+8048	Påske Metin
+8049	Påske Metin
+8050	Påske Metin
+8051	Tristhedens Metin
+8052	Glødens Metin
+8053	Tomhedens Metin
+8054	Vredens Metin
+8055	Fordærvets Metin
+8056	nederdrægtighedens Metin
+8057	Skærsildens ild Metin
+8058	Kuldens Metin
+8059	Træ-skabningernes metin
+8060	Græskar Metin
+8061	Skovens Metin
+8062	Opfattelsens Metin (M)
+8063	Påskønnelses Metin
+8064	Mindfulness Metin
+8065	Jins Metin
+8066	Shihos Metin
+8067	Opfattelsens Metin
+8068	Måneskinds Metin
+8076	Rums Slange Metin
+8077	Gumar Metin
+8101	Sorgens Metin
+8102	Kampens Metin
+8103	Slagets Metin
+8104	Begærets Metin
+8105	Skumlens Metin
+8106	Mørkets Metin
+8107	Misundelsens Metin
+8108	Sjælens Metin
+8109	Skyggens Metin
+8110	Hårdhedens Metin
+8111	Djævlens Metin
+8112	Faldets Metin
+8113	Dødens Metin
+8114	Drabets Metin
+8115	Metin af månen
+8120	TS: Bjergets Metin
+8121	TS: Hævnens Metin
+8122	TS: Ensomhedens Metin
+8123	TS: Arrogancens Metin
+8124	TS: Skærsild. Ild Metin
+8125	TS: Kuldens Metin
+8126	TS: Træ Skabning. Metin
+8127	TS: Skovens Metin
+8130	GO: Bjergets Metin
+8131	GO: Hævnens Metin
+8132	GO: Ensomhedens Metin
+8133	GO: Arrogancens Metin
+8134	GO: Skærsild. Ild Metin
+8135	GO: Kuldens Metin
+8136	GO: Træ Skabning. Metin
+8137	GO: Skovens Metin
+8150	1. Prøve Metin
+8151	2. Prøve Metin
+8152	3. Prøve Metin
+8153	4. Prøve Metin
+8154	5. Prøve Metin
+8155	6. Prøve Metin
+8156	7. Prøve Metin
+8157	8. Prøve Metin
+8158	9. Prøve Metin
+8159	10. Prøve Metin
+8200	Chokolade Metin Sten
+8201	Chokolade Metin Sten
+8202	Is Måleske
+8203	Belysnings Metin
+8204	Påske Metin
+8205	Påske Metin
+8206	Påske Metin
+8207	Fodbolds Metin
+8208	Påske Metin
+8209	Påske Metin
+8501	Vildhund
+8502	Vildsvin
+8503	Bjørn
+8504	Hvid tiger
+8505	Sort kæmpe ork
+8506	Træfrø-leder
+8507	Ørkenbandit
+8508	Esoterisk plageånd
+8509	Esoterisk besværger
+8510	Flamme Kriger
+8511	Is Golem
+8600	¿õ±Í´ëÁ·Àå
+8601	¿õ±Í´ëÁ·Àå
+8602	¹Ð±³´ëÁÖ±³
+8603	¹Ð±³´ëÁÖ±³
+8604	¸í»ç±Í¿Õ
+8605	¸í»ç±Í¿Õ
+8606	»ç½Å
+8607	»ç½Å
+8608	±¸¹ÌÈ£
+8609	±¸¹ÌÈ£
+8610	´©··Åõ¹ü±Í
+8611	´©··Åõ¹ü±Í
+8612	¿©¿Õ°Å¹Ì
+8613	¿©¿Õ°Å¹Ì
+8614	°Å´ë»ç¸·°ÅºÏ
+8615	°Å´ë»ç¸·°ÅºÏ
+8616	Billy Loomis
+8617	Jack Torrance
+8618	Chucky
+8619	Jigsaw
+8620	Jason
+8621	Michael Myers
+8622	Freddy Krueger
+8623	Leatherface
+8625	Trolde Forpost
+8626	1. Quag Forpost
+8627	2. Quag Forpost
+8630	Ild Slange Metin
+8631	Is Slange Metin
+8632	Vind Slange Metin
+8633	Jord Slange Metin
+8634	Tids Slange Metin
+8635	Hvidt Drage Æg (nemt)
+8636	Hvidt Drage Æg (hårdt)
+8637	Sung Ma Invasions Portal
+8638	Fordøm. Metin (Helbred)
+8639	Fordømmelses Metin
+8640	Frelsens Metin
+8641	Sung Ma Invasions Portal
+8642	Sung Ma Invasions Portal
+8643	Sung Ma Invasions Portal
+8644	Sung Ma Invasions Portal
+8645	Sung Ma Invasions Portal
+8646	Sung Ma Invasions Portal
+9001	Våben-handelsmand
+9002	Rustnings-handelsmand
+9003	Handelsdame
+9004	Begivenheds-hjælper
+9005	Lagerforvalter
+9006	Gammel dame
+9007	Våben-handelsmand
+9008	Rustnings-handelsmand
+9009	Fisker
+9010	Blandet forretning
+9011	Bryllupsplanlægger
+9012	Teleporter
+9013	Illusionernes Købmand
+9014	Købmand
+9100	Storm Blomst
+9101	Almindelig Kraft Blomst
+9102	Ild Kraft Blomst
+9103	Is Kraft Blomst
+9104	Lyn Kraft Blomst
+9105	Vind Kraft Blomst
+9106	Jord Kraft Blomst
+9107	Mørk Kraft Blomst
+10001	Område_Yayang 4002 8995
+10002	Område_Yongan 4503 9050
+10003	Område_Bokjung 1118 2161
+10004	Område_Joan 876 2131
+10005	Område_Bakra 9064 2214
+10006	Pyungmoo_egnen 9372 2188
+10007	Område_Yongan 4188 9560
+10008	Område_Yayang 3179 8332
+10009	Område_Joan 897 1127
+10010	Område_Bokjung 1759 2210
+10011	Pyungmoo_egnen 9343 3143
+10012	Område_Bakra 8348 2926
+10013	Hwang_Tempel 5536 1441
+10014	Seungryong 3326 7468
+10015	Yongbi-Ørken 3467 6329
+10016	Kuahlo_Dong 600 4960
+10017	Hwang_Tempel 5906 1102
+10018	Gumsan_Tårn 2165 7270
+10019	Område_Yayang 3211 9009
+10020	Jungrang 1356 43
+10021	Område_Bokjung 1168 2920
+10022	Waryong 2219 93
+10023	Område_Bakra 9098 2948
+10024	Imha 2718 130
+10025	Bjerget_Sohan 4993 2984
+10026	Lungsam 2887 57
+10027	Lungsam 2866 437
+10028	Rød_skov 11199 708
+10029	Slangeområde 10590 7262
+10030	Yongbi-Ørken 3519 6223
+10031	Slangeområde 10590 7262
+10032	Kæmpernes_land 8283 7635
+10033	Zin-Grotte 10594 7525
+10034	2_Zin-Grotte 10594 7525
+10035	Deon-Zeon 917 5253
+10036	2_Deon-Zeon 7041 4642
+10037	ÀÚ¾çÇö 3809 8233
+10038	½Å¼ö¼º 9752 1330
+10039	º¹Á¤Çö 1917 2900
+10040	Áø³ë¼º 9239 1836
+10041	¹Ú¶óÇö 8316 2154
+10042	ÃµÁ¶¼º 9772 1850
+10043	¼­ÇÑ»ê 3819 2969
+10044	½Å¼ö¼º 10189 1484
+10045	¼­ÇÑ»ê 3819 2969
+10046	½Å¼ö¼º 9774 1501
+10047	½Â·æ°î 2699 6752
+10048	Áø³ë¼º 9679 1994
+10049	½Â·æ°î 2699 6752
+10050	Áø³ë¼º 9256 2012
+10051	¿µºñ»ç¸· 3478 6189
+10052	ÃµÁ¶¼º 9780 1995
+10053	¿µºñ»ç¸· 3478 6189
+10054	ÃµÁ¶¼º 10190 2002
+10055	µµ¿°È­Áö 6011 6874
+10056	¼­ÇÑ»ê 4368 2158
+10057	½Â·æ°î 3355 7558
+10058	¹Ð±³»ç¿ø 5943 1337
+10059	¼­ÇÑ»ê 0 10496
+10060	¹Ð±³»ç¿ø 1536 10496
+10061	Ildland 4608 10496
+10062	½Â·æ°î 6144 10496
+10063	±Í¸ñ¸² 3031 266
+10064	Àû±Í¸ñ¸² 11133 534
+10065	½Å±Í¸ñ¸² 7754 10553
+10066	½ÅÀû±Í¸ñ¸² 9915 11195
+10067	Abe-grotten 7752 4477
+10068	Område_Yayang 4062 8756
+10069	Abe-grotten 8520 4477
+10070	Område_Bokjung 1611 2130
+10071	Abe-grotten 9288 4477
+10072	Område_Bakra 8727 2100
+10073	Yongbi-Ørken 3061 6202
+10074	Abe-grotten 1352 6532
+10075	Yongbi-Ørken 2879 5407
+10076	Abe-grotten 1352 7300
+10077	Forbandelsens_Grotte 9 12
+10078	½Â·æ°î 2842 8106
+10079	Grotte1 1459 13236
+10080	Grotte2 2413 12755
+10081	ÃµÀÇµ¿±¼1Ãþ 99 13618
+10082	¿µ¾ÈÀ¾¼º 5028 9998
+10083	ÃµÀÇµ¿±¼1Ãþ 1360 14972
+10084	ÃµÀÇµ¿±¼2Ãþ 2414 14289
+10085	ÃµÀÇµ¿±¼1Ãþ 99 15154
+10086	Á¶¾ÈÀ¾¼º 616 1148
+10087	ÃµÀÇµ¿±¼1Ãþ 1360 16508
+10088	ÃµÀÇµ¿±¼2Ãþ 2414 15825
+10089	ÃµÀÇµ¿±¼1Ãþ 99 16690
+10090	Æò¹«À¾¼º 9609 3188
+10091	ÃµÀÇµ¿±¼1Ãþ 1360 18044
+10092	ÃµÀÇµ¿±¼2Ãþ 2414 17361
+10093	Drageport 1731 12205
+10094	Drageport 1733 13743
+10095	Drageport 1728 15277
+10096	Drageport 1724 16824
+10097	EG2 7040 5235
+10098	EG3 984 5711
+10099	Kap 11043 17885
+10100	Kap 10963 16744
+10101	Nefrit 10869 16558
+10102	Kap 11664 16779
+10103	Torden 11345 16546
+10104	Torden 11921 16550
+10105	Gautama 12263 16811
+10106	³ì¸²Áö 8168 15050
+10107	DongGwang 10629 4767
+10109	LynRyg 451 9492
+10110	LynPunkt 830 9454
+10111	IldRækkevidde 1430 9616
+10112	IsGangere 690 10169
+10113	LynPunkt 1023 9623
+10114	IsGangere 303 10113
+10115	IldSpids 2117 9447
+10116	IldRækkevidde 1720 9499
+10117	VindØ 1973 10159
+10118	IldSpids 2337 9633
+10119	MørkTop 2710 9616
+10120	VindØ 1582 10111
+10121	MørkBjergtop 3393 9454
+10122	MørkTop 3012 9500
+10123	JordØrken 3069 10174
+10124	MørkBjergtop 3685 9551
+10126	Forlad 11622 5809
+10127	DongGwang 10551 4881
+10128	SeoGwang 12218 4895
+10129	NamGwang 12780 4411
+10130	SeoGwang 12144 5555
+10131	Level2 9916 6630
+10132	Level3 9896 6302
+10133	Level1 9534 6281
+10134	Level2 9564 6610
+10135	Tilbage 9338 6287
+10136	Yilad-Dalen 303 14147
+10137	NamGwangAf 13184 4735
+10138	Afslut
+10139	Nordvind_K
+10140	Yilad-Dalen 83 14763
+10141	VenteOmråde 401 477
+10142	SjælKløft
+10143	Nordvind_K 247 15392
+10144	Yilad_Dalen 122 14498
+10145	Måneskyggens Dal
+10146	Grådighedens Dybder
+10147	Måneskyggens Dal
+10148	Forlad Grådighedens Dy.
+10149	Grådighedens Port
+10150	Grådighedens Hjerte
+10151	Placeholder
+10152	Stig ned
+10153	Stig op
+10201	Forlad
+10202	Nordvind_D 11590 12181
+10203	Nordvind_S 11323 13499
+10204	Afslut
+10205	. 70 149
+10206	. 295 157
+10207	. 190 149
+10208	. 70 149
+10209	. 650 184
+10210	. 476 53
+10211	. 70 149
+10212	. 80 330
+10213	. 351 385
+10214	. 81 451
+10215	. 70 149
+10216	. 707 445
+10217	. 351 445
+10218	. 70 149
+10219	. 215 557
+10220	. 698 325
+10221	. 70 149
+10222	HemmeligtK 11913 12692
+10223	Tilbage 11553 12697
+10224	. 646 65
+10225	. 70 149
+10501	. 345 361
+10502	. 106 547
+10503	. 75 368
+10504	. 89 746
+10505	. 520 352
+10506	. 541 45
+10507	. 211 109
+10508	. 615 49
+10509	. 284 705
+10510	. 145 310
+10511	. 553 285
+10512	. 487 274
+10513	. 626 291
+10514	. 285 569
+10515	. 80 303
+10516	. 315 238
+10517	. 416 272
+10518	. 72 498
+10519	. 215 495
+10520	. 523 415
+10521	. 72 498
+10522	. 518 480
+10523	. 583 379
+10524	. 459 558
+10601	. 345 361
+10602	. 520 352
+10603	. 487 274
+10604	. 75 368
+10605	. 211 109
+10606	. 215 495
+10607	. 315 238
+10608	. 520 352
+10609	. 284 705
+10610	. 145 310
+10611	. 416 272
+10612	. 80 303
+10613	. 72 498
+10614	. 106 547
+10615	. 523 415
+10616	. 541 45
+10617	. 72 121
+10618	. 518 480
+10619	. 89 746
+10620	. 285 569
+10621	. 615 49
+10622	. 72 498
+10623	. 583 379
+10624	. 459 558
+10625	. 609 553
+10626	. 594 338
+10701	. 75 368
+10702	. 541 45
+10703	. 615 49
+10704	. 284 705
+10705	. 520 352
+10706	. 553 285
+10707	. 145 310
+10708	. 345 361
+10709	. 523 415
+10710	. 72 498
+10711	. 626 291
+10712	. 487 274
+10713	. 72 498
+10714	. 106 547
+10715	. 518 480
+10716	. 285 569
+10717	. 80 303
+10718	. 211 109
+10719	. 416 272
+10720	. 215 495
+10721	. 315 238
+10722	. 89 746
+10723	. 583 379
+10724	. 459 558
+10725	. 609 553
+10726	. 594 338
+10801	. 70 581
+10802	. 69 664
+10803	. 132 660
+10804	. 184 566
+10805	. 285 567
+10806	. 272 636
+10807	. 191 667
+10808	. 345 563
+10809	. 400 570
+10810	. 68 806
+10811	. 140 811
+10812	. 189 722
+10813	. 274 722
+10814	.233 780
+10815	. 318 780
+10816	. 273 833
+10817	.356 717
+10818	.412 712
+10819	. 372 776
+10820	. 354 840
+10821	. 366 817
+10822	. 420 841
+10823	. 94 846
+10824	. 63 864
+10825	. 131 866
+10826	. 59 920
+10827	. 91 940
+10828	. 135 919
+10829	. 194 870
+10830	. 243 862
+10831	. 312 861
+10832	. 373 893
+10833	. 406 880
+10834	. 422 935
+10835	. 500 807
+10901	. 333 358
+10902	. 452 116
+10903	. 515 415
+10904	. 515 480
+10905	. 145 305
+10906	. 228 238
+10907	. 452 116
+10908	. 77 500
+10909	. 111 550
+10910	. 452 116
+10911	. 145 305
+10912	. 333 358
+10913	. 615 50
+10914	. 218 110
+10915	. 288 708
+10916	. 582 385
+10917	. 218 110
+10918	. 452 116
+10919	. 615 50
+10920	. 510 480
+10921	. 75 435
+10922	. 194 614
+10923	. 310 237
+10924	. 609 553
+10931	. 250 425
+10932	. 452 116
+10933	. 520 415
+10934	. 77 370
+10935	. 145 305
+10936	. 122 678
+10937	. 297 175
+10938	. 452 116
+10939	. 423 266
+10940	. 122 678
+10941	. 510 480
+10942	. 250 425
+10943	. 452 116
+10944	. 297 175
+10945	. 250 425
+10946	. 627 290
+10947	. 297 175
+10948	. 450 116
+10949	. 582 385
+10950	. 440 705
+10951	. 145 305
+10952	. 297 175
+10953	. 75 435
+10954	. 609 553
+10961	. 333 358
+10962	. 452 116
+10963	. 520 415
+10964	. 77 370
+10965	. 145 305
+10966	. 297 175
+10967	. 452 116
+10968	. 195 615
+10969	. 195 615
+10970	. 510 480
+10971	. 145 305
+10972	. 333 358
+10973	. 71 435
+10974	. 297 175
+10975	. 460 560
+10976	. 333 358
+10977	. 260 175
+10978	. 452 116
+10979	. 540 45
+10980	. 80 295
+10981	. 522 414
+10982	. 297 175
+10983	. 582 385
+10984	. 609 553
+10985	Ordens Forpost
+10986	Placeholder
+10987	Placeholder
+10988	Placeholder
+11000	Landsby vagt
+11001	Slagforvalter
+11002	Landsby vagt
+11003	Slagforvalter
+11004	Landsby vagt
+11005	Slagforvalter
+11100	Landsby Vagt
+11101	Slagforvalter
+11102	Landsby Vagt
+11103	Slagforvalter
+11104	Landsby Vagt
+11105	Slagforvalter
+11106	Landsby Vagt
+11107	Slagforvalter
+11108	Landsby Vagt
+11109	Slagforvalter
+11110	Landsby Vagt
+11111	Slagforvalter
+11112	Landsby Vagt
+11113	Slagforvalter
+11114	Landsby Vagt
+11115	Slagforvalter
+11116	Landsby Vagt
+11117	Slagforvalter
+11505	Gylden frø
+11506	Lejrbål
+11507	Lejrbål
+11508	Lejrbål
+11509	Lejrbål
+11510	Lejrbål
+12000	Lejrbål
+13000	Træport
+13001	Stenport
+14000	Værksted
+14001	Værksted
+14002	Værksted
+14003	Værksted
+14004	Værksted
+14005	Værksted
+14006	Værksted
+14007	Værksted
+14008	Værksted
+14009	Værksted
+14010	Alter
+14011	Alter
+14012	Alter
+14013	Alter
+14014	Alter
+14015	Alter
+14016	Alter
+14017	Alter
+14018	Alter
+14019	Alter
+14020	Hovedkvarter
+14021	Hovedkvarter
+14022	Hovedkvarter
+14023	Hovedkvarter
+14024	Hovedkvarter
+14025	Hovedkvarter
+14026	Hovedkvarter
+14027	Hovedkvarter
+14028	Hovedkvarter
+14029	Hovedkvarter
+14030	Træningslejr
+14031	Træningslejr
+14032	Træningslejr
+14033	Træningslejr
+14034	Træningslejr
+14035	Træningslejr
+14036	Træningslejr
+14037	Træningslejr
+14038	Træningslejr
+14039	Træningslejr
+14040	Ovn
+14041	Ovn
+14042	Ovn
+14043	Ovn
+14044	Ovn
+15001	Våbensmed I
+15101	Våbensmed II
+15201	Våbensmed III
+15002	Rustningssmed I
+15102	Rustningssmed II
+15202	Rustningssmed III
+15003	Speciel Rustningssmed I
+15103	Speciel Rustningssmed II
+15203	Spec. Rustningssmed III
+15004	Juvelér I
+15104	Juvelér II
+15204	Juvelér III
+15005	Lædersmed I
+15105	Lædersmed II
+15205	Lædersmed III
+15006	Læder Værksted
+15106	Læder Værksted
+15206	Læder Værksted
+15007	Diamant Højovn I
+15107	Diamant Højovn II
+15207	Diamant Højovn III
+15008	Fossilt Træ Højovn I
+15108	Fossilt Træ Højovn II
+15208	Fossilt Træ Højovn III
+15009	Kobber Højovn I
+15109	Kobber Højovn II
+15209	Kobber Højovn III
+15010	Sølv Højovn I
+15110	Sølv Højovn II
+15210	Sølv Højovn III
+15011	Guld Højovn I
+15111	Guld Højovn II
+15211	Guld Højovn III
+15012	Jade Højovn I
+15112	Jade Højovn II
+15212	Jade Højovn III
+15013	Ibentræs Højovn I
+15113	Ibentræs Højovn II
+15213	Ibentræs Højovn III
+15014	Perle Højovn I
+15114	Perle Højovn II
+15214	Perle Højovn III
+15015	Hvidt Guld Højovn I
+15115	Hvidt Guld Højovn II
+15215	Hvidt Guld Højovn III
+15016	Krystal Højovn I
+15116	Krystal Højovn II
+15216	Krystal Højovn III
+15017	Ametyst Højovn I
+15117	Ametyst Højovn II
+15217	Ametyst Højovn III
+15018	Himlens Tår Højovn I
+15118	Himlens Tår Højovn II
+15218	Himlens Tår Højovn III
+15019	Sjæle Krystal Højovn I
+15119	Sjæle Krystal Højovn II
+15219	Sjæle Krystal Højovn III
+15020	Rubin Højovn I
+15120	Rubin Højovn II
+15220	Rubin Højovn III
+15021	Granat Højovn I
+15121	Granat Højovn II
+15221	Granat Højovn III
+15022	Smaragd Højovn I
+15122	Smaragd Højovn II
+15222	Smaragd Højovn III
+15023	Safir Højovn I
+15123	Safir Højovn II
+15223	Safir Højovn III
+15024	Turmalin Højovn I
+15124	Turmalin Højovn II
+15224	Turmalin Højovn III
+15025	Tåget Jadite Højovn I
+15125	Tåget Jadite Højovn II
+15225	Tåget Jadite Højovn III
+15026	Sol Jadite Højovn I
+15126	Sol Jadite Højovn II
+15226	Sol Jadite Højovn III
+15027	Mørk Jadite Højovn I
+15127	Mørk Jadite Højovn II
+15227	Mørk Jadite Højovn III
+15028	Røgede Jadite Højovn I
+15128	Røgede Jadite Højovn II
+15228	Røgede Jadite Højovn III
+15029	Måneskins Højovn I
+15129	Måneskins Højovn II
+15229	Måneskins Højovn III
+15030	Tilkaldelses Helligdom I
+15130	Tilkaldel. Helligdom II
+15230	Tilkalde. Helligdom III
+15031	Ordens Om. Helligdom I
+15131	Ordens Om. Helligdom II
+15231	Ordens Om. Helligdom III
+15032	Alter af Styrke I
+15132	Alter af Styrke II
+15232	Alter af Styrke III
+15033	Ordens Lagerhus I
+15133	Ordens Lagerhus II
+15233	Ordens Lagerhus III
+16001	Våbensmed I
+16101	Våbensmed II
+16201	Våbensmed III
+16002	Rustningssmed I
+16102	Rustningssmed II
+16202	Rustningssmed III
+16003	Speciel Rustningssmed I
+16103	Speciel Rustningssmed II
+16203	Spec. Rustningssmed III
+16004	Juvelér I
+16104	Juvelér II
+16204	Juvelér III
+16005	Lædersmed I
+16105	Lædersmed II
+16205	Lædersmed III
+16006	Indskriver
+16007	Diamant Alkymist I
+16107	Diamant Alkymist II
+16207	Diamant Alkymist III
+16008	Fossilt Træ Alkymist I
+16108	Fossilt Træ Alkymist II
+16208	Fossilt Træ Alkymist III
+16009	Kobber Alkymist I
+16109	Kobber Alkymist II
+16209	Kobber Alkymist III
+16010	Sølv Alkymist I
+16110	Sølv Alkymist II
+16210	Sølv Alkymist III
+16011	Guld Alkymist I
+16111	Guld Alkymist II
+16211	Guld Alkymist III
+16012	Jade Alkymist I
+16112	Jade Alkymist II
+16212	Jade Alkymist III
+16013	Ibentræs Alkymist I
+16113	Ibentræs Alkymist II
+16213	Ibentræs Alkymist III
+16014	Perle Alkymist I
+16114	Perle Alkymist II
+16214	Perle Alkymist III
+16015	Hvidt Guld Alkymist I
+16115	Hvidt Guld Alkymist II
+16215	Hvidt Guld Alkymist III
+16016	Krystal Alkymist I
+16116	Krystal Alkymist II
+16216	Krystal Alkymist III
+16017	Ametyst Alkymist I
+16117	Ametyst Alkymist II
+16217	Ametyst Alkymist III
+16018	Himlens Tår Alkymist I
+16118	Himlens Tår Alkymist II
+16218	Himlens Tår Alkymist III
+16019	Sjæle Krystal Alkymist I
+16119	Sjæle Krystal Alky. II
+16219	Sjæle Krystal Alky. III
+16020	Rubin Alkymist I
+16120	Rubin Alkymist II
+16220	Rubin Alkymist III
+16021	Granat Alkymist I
+16121	Granat Alkymist II
+16221	Granat Alkymist III
+16022	Smaragd Alkymist I
+16122	Smaragd Alkymist II
+16222	Smaragd Alkymist III
+16023	Safir Alkymist I
+16123	Safir Alkymist II
+16223	Safir Alkymist III
+16024	Turmalin Alkymist I
+16124	Turmalin Alkymist II
+16224	Turmalin Alkymist III
+16025	Tåget Jadite Alkymist I
+16125	Tåget Jadite Alkymist II
+16225	Tåget Jadite Alky. III
+16026	Sol Jadite Alkymist I
+16126	Sol Jadite Alkymist II
+16226	Sol Jadite Alkymist III
+16027	Mørk Jadite Alkymist I
+16127	Mørk Jadite Alkymist II
+16227	Mørk Jadite Alkymist III
+16028	Røgede Jadite Alkymist I
+16128	Røgede Jadite Alky. II
+16228	Røgede Jadite Alky. III
+16029	Kobolt Alkymist I
+16129	Kobolt Alkymist II
+16229	Kobolt Alkymist III
+16030	Tilkaldelses Mester I
+16130	Tilkaldelses Mester II
+16230	Tilkaldelses Mester III
+16031	Velsignelses Mester I
+16131	Velsignelses Mester II
+16231	Velsignelses Mester III
+20001	Alkymist
+20002	Aranyo
+20003	Ah-Yu
+20004	Tigger
+20005	Yonah
+20006	Mirine
+20007	Lagerforvalter
+20008	Octavio
+20009	Gammel mand
+20010	Handelsmand
+20011	Uriel
+20012	Yu-Rang
+20013	Fisker
+20014	Taurean
+20015	Deokbae
+20016	Smed
+20017	Yu-Hwan
+20018	Baek-Go
+20019	Yang-Shin
+20020	Forræder Balso
+20021	Ariyoung
+20022	Huahn-So
+20023	Soon
+20024	Harang
+20025	.
+20026	Ji-Ryu
+20027	Gillian
+20028	Mirines bror
+20029	Pony
+20030	Hest
+20031	Julemand
+20032	Juletræ
+20033	Juletræ
+20034	Juletræ
+20035	Flag
+20036	Flag
+20037	Flag
+20038	..
+20039	.
+20040	Ejendomsforvalter
+20041	Beruset borger
+20042	Rejsende handelsmand
+20043	.
+20047	Diamant-åre
+20048	Rav-åre
+20049	Fossiltræ-åre
+20050	Kobber-åre
+20051	Sølv-åre
+20052	Guld-åre
+20053	Jade-åre
+20054	Ibentræ-åre
+20055	Muslinge-bunke
+20056	Hvidguld-åre
+20057	Krystal-åre
+20058	Kvarts-åre
+20059	Himmeltåre-åre
+20073	Gammelt segl
+20074	Tårn-våbensmed
+20075	Tårn-rustningssmed
+20076	Tårn-juvelér
+20077	Alterets Vogter
+20078	Alterets Vogter
+20079	Alterets Vogter
+20080	Træningsleder
+20081	Stjålet gang-segl
+20082	Mester
+20083	Jegal-Tunseok
+20084	Biolog Chaegirab
+20085	Jimjunja
+20086	Handu-Up
+20087	Wonda-Rim
+20088	Chuk-Sal
+20089	Pung-Ho
+20090	Heuk-Young
+20091	Seon-Pyeong
+20092	Hwa-Hee
+20093	Koe-Pung
+20094	Hong-Hae
+20095	Seon-Hae
+20096	Obelisk
+20097	Borgport
+20098	Borgport
+20099	Borgport
+20101	hvid hest
+20102	Brun hest
+20103	Sort hest
+20104	Hvid hest
+20105	Brun hest
+20106	Sort hest
+20107	Hvid hest
+20108	Brun hest
+20109	Sort hest
+20110	Vildsvin
+20111	Ulv
+20112	Tiger
+20113	Løve
+20114	white lion
+20115	Krigs-Vildsvin
+20116	Kamp Ulv
+20117	Storm Tiger
+20118	Kamp Løve
+20119	Ædelig Sort Hest
+20120	Ã»ÀÇÀü°©È£
+20121	ÁøÀûÀÇÀü°©È£
+20122	È²ÀÇÀü°©È£
+20123	³ìÀÇÀü°©È£
+20124	ÈæÀÇÀü°©È£
+20125	¹éÀÇÀü°©È£
+20126	Julemand
+20127	Jubilæums Banner 1
+20128	Jubilæums Banner 2
+20129	Jubilæums Banner 3
+20130	Jubilæums Banner 4
+20131	Jubilæums Banner 5
+20132	Jubilæums Banner 6
+20133	Jubilæums Banner 7
+20134	Solar Banner
+20135	Jule Banner
+20139	Ordens Banner (Lilla)
+20140	Ordens Banner (Blå/Grøn)
+20141	Ordens Banner (Rød/Guld)
+20138	Ramadan Banner
+20142	Halloween Banner
+20143	Påske Banner
+20146	Åndeverdens Portal
+20147	Døds Udsendte
+20148	Vogteren Hae-Tae
+20149	Mægtig Krigshest
+20150	M. Krigshest (G. Medlem)
+20151	M. Krigshest (G. Leder)
+20201	Àü°©¿ø
+20202	Àü°©¶û
+20203	Àü°©È£
+20204	Àü°©»çÀÚ
+20205	³­ÆøÇÑ Àü°©¿ø
+20206	³­ÆøÇÑ Àü°©¶û
+20207	³­ÆøÇÑ Àü°©È£
+20208	³­ÆøÇÑ Àü°©»çÀÚ
+20209	¿ë¸ÍÇÑ Àü°©¿ø
+20210	¿ë¸ÍÇÑ Àü°©¶û
+20211	¿ë¸ÍÇÑ Àü°©È£
+20212	¿ë¸ÍÇÑ Àü°©»çÀÚ
+20213	Àü°©¼ý¼ø·Ï
+20214	³­ÆøÇÑ Àü°©¼ý¼ø·Ï
+20215	¿ë¸ÍÇÑ Àü°©¼ý¼ø·Ï
+20216	Àü°©¾Ï¼ø·Ï
+20217	³­ÆøÇÑ Àü°©¾Ï¼ø·Ï
+20218	¿ë¸ÍÇÑ Àü°©¾Ï¼ø·Ï
+20219	blackpony
+20220	Å©¸®½º¸¶½º ¼ø·Ï
+20221	Àü°©¹é¿õ
+20222	Àü°©ÆÒ´õ
+20223	Àü°©¼®·æÀÚ
+20224	³­ÆøÇÑ Àü°©¼®·æÀÚ
+20225	¿ë¸ÍÇÑ Àü°©¼®·æÀÚ
+20226	ÈæÀ¯´ÏÄÜ
+20227	¹éÀ¯´ÏÄÜ
+20228	Àü°©¸ÍÁ¶
+20229	³­ÆøÇÑ Àü°©¸ÍÁ¶
+20230	¿ë¸ÍÇÑ Àü°©¸ÍÁ¶
+20231	Àü°©Èæ¹ü
+20232	Àü°©Ç¥¹ü
+20233	Muffin (Brun tilbehør)
+20234	Nugget (Brun tilbehør)
+20235	Muffin (Blå tilbehør)
+20236	Nugget (Blå tilbehør)
+20237	Muffin (Grøn tilbehør)
+20238	Nugget (Grøn tilbehør)
+20239	Lyn
+20240	Torden
+20241	Nugget (Marineblå)
+20242	Muffin (Pink)
+20243	NoNAme
+20244	Nirvana Drage
+20245	Samsara Drage
+20246	Manny
+20247	Ellie
+20248	Brun Kamp Tulu
+20249	Sort Kamp Tulu
+20250	Lava Hule Firben
+20251	Is Hule Firben
+20252	Magma Drage
+20253	Appaloosa
+20254	Hvid Kanin
+20255	Måne Hare
+20257	Bernie
+20258	Blå Barry
+20259	Cerberus (Guld)
+20260	Cerberus (Sølv)
+20261	Spectral Steed
+20262	Equus Nocturnus
+20263	Blodvinge
+20264	Nyctalus
+20265	Penumbral Hest
+20266	Sølvstjerne Hest
+20267	Gyldne Krigs-Ochs
+20268	Sølv Krigs-Ochs
+20269	Hvid Sfinks
+20270	Sten Sfinks
+20271	Is Ravn
+20272	Natte Ravn
+20273	Hvid Vinter Lama
+20274	Brun Vinter Lama
+20275	Alastor
+20276	Forhastede Kanin (Pink)
+20277	Forhastede Kanin (Blå)
+20278	Blodrød Kitsune
+20279	Isblå Kitsune
+20280	Rød Arktisk Ulv
+20281	Blå Arktisk Ulv
+20282	Måneskins Søhest
+20283	Sollys Søhest
+20284	Sort Undergangsglider
+20285	Gylden Undergangsglider
+20286	Snestorms Rensdyr
+20287	Vinter Rensdyr
+20288	Snefnugs Komet
+20289	Forhastede Kanin (Rød)
+20290	Forhastede Kanin (Sort)
+20291	Forbandede Kost
+20292	Forheksede Kost
+20293	Adelig Legion Hest
+20294	Mørk Legion Hest
+20295	Halia
+20296	Aquilos
+20298	Ældre Blå Motorvogn
+20299	Ældre Grøn Motorvogn
+20300	Kampstyrke lærer
+20301	Mentalstyrke lærer
+20302	Nærkamp lærer
+20303	Distancekamp lærer
+20304	Magiske-våben lærer
+20305	Sort-magi lærer
+20306	Dragemagt lærer
+20307	Helbredelses lærer
+20320	Kampstyrke lærer
+20321	Mentalstyrke lærer
+20322	Nærkamp lærer
+20323	Distancekamp lærer
+20324	Magiske-våben lærer
+20325	Sort-magi lærer
+20326	Dragemagt lærer
+20327	Helbredelses lærer
+20340	Kampstyrke lærer
+20341	Metalstyrke lærer
+20342	Nærkamp lærer
+20343	Distancekamp lærer
+20344	Magiske-våben lærer
+20345	Sort-magi lærer
+20346	Dragemagt lærer
+20347	Helbredelses lærer
+20348	Dæmontårn-vagt
+20349	Stald-dreng
+20350	Grotte-vagt
+20351	Hal-vagt
+20352	Hasun mindesten
+20353	Seul Rong mindesten
+20354	Byvagt
+20355	Kaptajn
+20356	Ginseng-samler
+20357	Weol minde
+20358	Unavngivet plante
+20359	Gammel kiste med papir
+20360	Wha minde
+20361	Su minde
+20362	Mok minde
+20363	Gum minde
+20364	Nakajima
+20365	To minde
+20366	Sa-Soe
+20367	Katakomb Vagt
+20368	Handelsmand
+20369	Lee Chung
+20370	Forgiftet soldat
+20371	Gammel gravsten
+20372	Slidt sten tavle
+20373	Bodyguard
+20374	Vagt
+20375	Barrikade af træ
+20376	Kim Rim
+20377	Yak-Hwan
+20378	Admiral Angmur
+20379	Skadet soldat
+20380	Yon-I-Walker
+20381	Kong-fu-tse
+20382	Sten Blomst
+20383	Jae-Seon Kim
+20384	Juletræ
+20385	Am-heh Gorge
+20386	Isfet stål
+20387	Skæbne lås
+20388	Drage port
+20389	NoNAme
+20390	Taramor gravstenen
+20391	Sol urt
+20392	Død soldat
+20393	Såret soldat
+20394	Ildlands vagt
+20395	Islands vagt
+20396	Àû¼ö»ó´Ü ÆÇ¸Å¿ø
+20397	Is løve
+20398	Arktis kube
+20399	Nordlig drage søjle
+20400	Myonghorang den vise
+20401	Koloni vagt
+20402	Portal vagt
+20403	Amarok
+20404	Nagual
+20405	Waheela
+20406	NoNAme
+20407	Fenrir
+20408	Tempel vagten
+20409	Skovens vagt
+20410	Skovens spejder
+20411	Skovens spejder
+20412	Skovens vagtleder
+20413	Kawuco
+20414	Andastre
+20415	Portal
+20416	Sam Græskar
+20417	Okey bord
+20419	Drage Vogter Dolnarr
+20420	Gylden Drage kiste
+20421	Drage Vogter Jaharr
+20422	Drageæg
+20429	Kamp Zone Opsynsmand
+20430	Cherie
+20431	Jubilæums Handelsmand
+20432	Hydra Æg
+20433	Kriger Statue
+20434	Mast
+20435	Meleys Spor
+20436	Skibets Hjul
+20437	Reparations Træ
+20438	Munk Milbon
+20439	Zi Portal
+20440	Chou Portal
+20441	Yin Portal
+20442	Mao Portal
+20443	Chen Portal
+20444	Si Portal
+20445	Wu Portal
+20446	Wei Portal
+20447	Shen Portal
+20448	You Portal
+20449	Xu Portal
+20450	Hai Portal
+20451	Zodiac Købmand
+20452	Zi Statue
+20453	Chou Statue
+20454	Yin Statue
+20455	Mao Statue
+20456	Chen Statue
+20457	Si Statue
+20458	Wu Statue
+20459	Wei Statue
+20460	Shen Statue
+20461	You Statue
+20462	Xu Statue
+20463	Hai Statue
+20464	Kanon
+20465	Zodiac Portal
+20470	Illusions Statue
+20471	Genoplivelses Statue
+20472	Tids Splittelses Statue
+20473	Våbensmeds Statue
+20474	Rustningssmeds Statue
+20475	Hellig Sætsmed
+20476	Herlige Sætsmed
+20477	Ridderlig Sætsmed
+20478	Royal Sætsmed
+20479	Majestætisk Sætsmed
+20480	Handels Administrator
+20481	Handels Administrator
+20482	Gådens Belønning
+20483	Gådens Tempel (Bonus C)
+20484	Gådens Tempel (Bonus B)
+20485	Gådens Tempel (Bonus A)
+20486	Ordens Kamp Zone (Ø)
+20487	Ordens Kamp Zone (V)
+20488	Ordens Kamp Zone (S)
+20489	Ordens Kamp Zone (N)
+20490	Ordens Købmand
+20491	Forbandet Sten Tavle
+20492	Balathor's Skat
+20493	Hwacha
+20494	Solid Isvæg
+20495	Frosset Drage Æg
+20496	Frosset Drage Æg
+20497	Flammende Drage Æg
+20498	Ældgammel Is Krystal
+20499	Hwacha (Transformeret)
+20500	Drage Æg
+20501	Gaya Kiste
+20502	Yut Nori Bord
+20503	Gaya Købmand
+20504	Gaya Marked
+20505	Yut Pinde
+20506	Fang Kongen Bordet
+20507	Evig Is Krystal
+20510	TS: Ånden af en Sura
+20511	TS: Am-heh Gorge
+20512	TS: Taramor Gravstenen
+20513	TS: Isfet Stelen
+20514	TS: Skæbnens Lås
+20515	TS: Drage Port
+20516	TS: Is Løve
+20517	TS: Arktisk Terning
+20518	TS: Nordlig Drage Søjle
+20519	TS: Skovens Vagt
+20520	TS: Skovens Spejder
+20521	TS: Skovens Spejder
+20522	TS: Skovens Vagt Leder
+20530	GO: Ånden af en Sura
+20531	GO: Am-heh Gorge
+20532	GO: Taramor Gravstenen
+20533	GO: Isfet Stelen
+20534	GO: Skæbnens Lås
+20535	GO: Drage Port
+20536	GO: Is Løve
+20537	GO: Arktisk Terning
+20538	GO: Nordlig Drage Søjle
+20539	GO: Skovens Vagt
+20540	GO: Skovens Spejder
+20541	GO: Skovens Spejder
+20542	GO: Skovens Vagt Leder
+20650	Medalje Holder
+20702	Energiens Helligdom
+20703	Formuens Helligdom
+20704	Kraftens Helligdom
+20705	Rigdommens Helligdom
+20706	Belysningens Helligdom
+20707	Æ÷Å»(°ÝÀüÁö) 385 385
+20710	Forsynings Kiste (BR)
+20711	Udstyrs Kiste(BR)
+20712	Elektrisk Felt
+20713	Udstyrs Kiste(BR)
+20714	Sp. Forsynings Kiste(BR)
+20798	Sung Ma Portal
+20799	Blomster
+20800	Såret Mand
+20802	Yohara Fængselsinspekt.
+20803	Yohara Vagt
+20804	Slange Vagt
+20805	Nordvind Vagt
+20806	Sjæl Kløft Vagt
+20807	Slange Statue
+20808	General Kohan
+20809	Kong-fu-tse
+20810	Chaegirab
+20811	Kim Rim
+20812	Admiral Angmur
+20813	Nordvinds Eneboer
+20814	Fortabt Spejder
+20815	Spøgelses Vagt
+20822	Svindler
+20823	Mester Chi
+20826	Huahn-So
+20829	Slange Templets Smed
+20830	Udsendt Kommandant
+20831	Yohara Kommandant
+20832	Admiral Angmur
+20833	Plettede Blomster
+20834	Helligdom
+20836	Helbreder
+20837	Afslut
+20838	Stadie 2
+20839	Stadie 3
+20840	Dong Gwang Almindelig
+20841	Dusør Jæger
+20842	Fængslet Smed
+20844	Slange Statue
+20845	Dusør J. (Nordvind S.)
+20846	Dusør J. (Sjæl Kløft)
+20847	Dusør Jæger (Ly)
+20848	Gamle Ben
+20849	Taehwarang
+20850	Mystisk Alter
+20851	Dusør J. (Seo Gw. W.)
+20852	Dusør J. (Nam Gw. Ch.)
+20853	Månesmed Aeris
+20856	Skatte Nisse
+20857	Stor Skattekiste
+20858	Mystisk Ekko
+20859	General Asmir
+20860	Fortabt Soldat
+20861	Korruptions Forsker
+20862	Mørkt Alter
+20863	Måneskins Dusør Jæger
+20864	Forbandet Ridder
+20865	Skadet Soldat
+20866	Gammelt Alter
+20867	Dragesjælen Albira
+20868	Dragesjælen Albira
+20869	Dragesjælen Albira
+20870	Placeholder
+20871	Placeholder
+20872	Aamon's Overdådige Kiste
+20874	Enasir
+30000	°³ÀÎ»óÁ¡
+30001	°³ÀÎ»óÁ¡
+30002	1001 Nætter
+30003	BBQ Konge
+30004	Skattejæger
+30005	Sparsommelig Flamme
+30006	Våbenhandler
+30007	Rustnings Forhandler
+30008	Alkymist
+30101	Kud Statue
+30102	Basalt Obelisk
+30103	Skildpadde Sten
+30104	Runebunke
+30111	1. Fortabelsens Port
+30112	2. Fortabelsens Port
+30113	3. Fortabelsens Port
+30114	4. Fortabelsens Port
+30115	5. Fortabelsens Port
+30116	6. Fortabelsens Port
+30117	7. Fortabelsens Port
+30118	8. Fortabelsens Port
+30119	9. Fortabelsens Port
+30120	Urtetaske
+30121	Ånden af en Sura
+30122	Ånden af en Kriger
+30123	Mørk helligdom
+30124	Sura-skelet 1
+30125	Sura-skelet 2
+30126	Sura-skelet 3
+30127	Sura-skelet 4
+30128	Sura-skelet 5
+30129	Påskeharen
+30130	Gravsten
+30131	Mr B.
+30132	Mr. B.
+30301	Sjæle krystal åre
+30302	Rubin åre
+30303	Granat åre
+30304	Smaragd åre
+30305	Safir åre
+30306	Tourmaline ravåre
+30307	Summer
+30308	Postkasse
+30309	Tåget Jadite Vene (Mis.)
+30310	Sol Jadite Vene
+30311	Mørk Jadite Vene
+30312	Røgede Jadite Vene
+30313	Tåget Jadite Vene
+30314	Kobolt Vene
+33001	¸ðÇè°¡ÀÇ ÇØ°ñ
+33002	Historiker
+33003	Fastende indbygger
+33004	Fastende indbygger
+33005	Fastende indbygger
+33006	Fastende indbygger
+33007	Fastende indbygger
+33008	Jack Græskar
+33009	Alter af Blod
+33010	Snemand
+34001	Ild Føniks
+34002	Rensdyr Kalv
+34003	Is-Føniks
+34004	Baby Azrael
+34005	Porkie
+34006	Rufus
+34007	Khan
+34008	Leonidas
+34009	Baby Azrael
+34010	Bambi
+34011	Knuud
+34012	Bao Bao
+34013	Buttet Mini-Bobestyrer
+34014	Buttet Mini-Bobesty. (g)
+34015	Boney
+34016	Jade Føniks
+34017	Polar Porkie
+34018	Frost Rufus
+34019	Arktis Khan
+34020	Sne Leonidas
+34021	Sheldon
+34022	Cooper
+34023	Panter Unge
+34024	Leopard Unge
+34026	Græskarhoved
+34027	Lille Kost
+34028	Snefnug
+34029	Sneklokke
+34030	Cupido
+34031	Rasende Hjerte
+34032	Rød Halvmåne
+34033	Blå Halvmåne
+34034	Lamhvide
+34035	Vædderblå
+34036	Dragenette
+34037	Dragenette (Helt)
+34038	Befrielsens Føniks
+34039	Baby Huashin
+34041	Lille abe
+34042	Lille abe (Helt)
+34045	Lille edderkop
+34046	Lille edderkop (Helt)
+34047	Exedyars Yngel
+34048	Exedyars Sjældne Yngel
+34049	Lille Razador
+34050	Lille Razador (Helt)
+34053	Lille Nemere
+34054	Lille Nemere (Helt)
+34055	Bruce
+34056	Wayne
+34057	Robin
+34058	Valentino
+34059	Valentinia
+34060	Valentino
+34061	Valentinia
+34062	Lanterne Måne (Orange)
+34063	Lanterne Måne (Blå)
+34064	Mini Meley
+34065	Mini Meley
+34066	Bonsai
+34067	Fru Jiangshi+
+34068	Hr. Jiangshi+
+34069	Jiangshi Jnr
+34070	Rød Nisse
+34071	Grøn Nisse
+34072	Hjælpsom Nisse
+34073	Mini Azrael
+34074	Mini Azrael (Helt)
+34075	Fed Mini Bobestyrer
+34076	Fed Mini Bobestyr (Helt)
+34077	Sur Mini Alastor
+34078	Vækket Mini Alastor
+34080	Baby Baashido
+34081	Baby Baashido (Helt)
+34082	Nessie
+34083	Nessie (Helt)
+34084	Donnie
+34085	Frank
+34086	Shiver
+34087	Snivel
+34088	Cruella
+34089	Minidall
+34090	Farverig Lanterne
+34091	Grøn Lanterne
+34092	Hr. Oswald
+34093	Hr. Cobblepot
+34094	Hr. Chesterfield
+34095	Gryph
+34096	Nogai
+34097	Astrabell
+34098	Helexna
+34099	Chaotika
+34100	Gary Lycaner
+34101	Lycaninho
+34102	Lille Catenaccio
+34103	Kongeblå Påfugl
+34104	Lyserød Påfugl
+34105	Mørkeblå Påfugl
+34106	Harry Hasselnød
+34107	Willy Valnød
+34108	Corporal Crack
+34109	Humpitzer
+34110	Caboomel
+34111	Camelry
+34112	Frossen Bille+
+34113	Frossen Bille
+34114	Altseende Flammekat
+34115	Altseende Frostkat
+34116	Tre-Øjede Ildkat
+34117	Tomte Nisse+ (Rød)
+34118	Tomte Nisse+ (Grøn)
+34119	Tomte Nisse
+34120	Rød Baby Huashin
+34121	Hvid Baby Huashin
+34122	Bonsai+
+34123	+Bonsai+
+34124	Lil. Ild Elementær
+34125	Lil. Is Elementær
+34126	Lil. Lyn Elementær
+34127	Lil. Vind Elementær
+34128	Lil. Jord Elementær
+34129	Lil. Mørke Elementær
+34130	Legende Loverador
+34131	Klodsede Loverador
+34132	Lille Loverador
+34133	Mini Krabbe Kriger
+34134	Mini Krabbe
+34135	Rystende Mumie
+34136	Slingrende Mumie
+34137	Rystende Mumie
+34138	Grønt Jule Ente
+34139	Knurret Jule Ente
+34140	Lille Jule Ente
+34141	Midnatsblå Anubis
+34142	Blodrød Anubis
+34143	Lille Anubis
+34145	Mægtig Is Spækhugger
+34146	Tam Is Spækhugger
+34147	Sne Leonidas
+34148	Astrabell
+34149	Ild Føniks
+34150	Iskold Trussel
+34151	Giftig Trussel
+34152	Lille Trussel
+34153	Vintergæk
+34154	Snebold
+34155	Snowdon
+34156	Frosset Sarkofag
+34157	Karmoisinrød Sarkofag
+34158	Lille Sarkofag
+34159	Honningkage Dasher
+34160	Honningkage Rudolf
+34161	Baby Honningkage Dasher
+34162	Sød Drage Kæreste
+34163	Legende Drage Kæreste
+34164	Lille Drage Kæreste
+34165	Baby Boss
+34166	Baby Boss (Helt)
+34167	Mini Ild Boss
+34168	Mini Is Boss
+34169	Mini Lyn Boss
+34170	Mini Vind Boss
+34171	Mini Jord Boss
+34172	Mini Mørke Boss
+34173	Mini Boss
+34174	Hvid Angora Kat
+34175	Brun Angora Kat
+34176	Angora Killing
+34177	Champion Fodbold
+34178	Snefnugs Bambi
+34180	Fløjte
+34181	Skruenøgle
+34182	Mini-Fløjte
+34183	Loyal Is Spækhugger
+34184	Mini Is Spækhugger
+34185	Frygtløs Tiki Terror
+34186	Dristig Tiki Terror
+34187	Lille Bitte Tiki Terror
+34188	Sne Krampus
+34189	Kul Krampus
+34190	Lille Bitte Krampus
+34191	Sort Tyr
+34192	Brun Tyr
+34193	Tæm Tyr
+34194	Pincher
+34195	Snapper
+34197	Lilith
+34198	Helena
+34199	Mini-Lilith
+34200	Guld Loong
+34201	Sølv Loong
+34202	Lille Loong
+34203	Lille Balathor
+34204	Balathor Jr
+34205	Pebble
+34206	Mini Pebble
+34207	Måne Vogtende Ugle
+34208	Sol Vogtende Ugle
+34209	Lille Vogtende Ugle
+34210	Sort Græskar Kosterytter
+34211	Hvid Græskar Kosterytter
+34212	Mini Græskar Kosterytter
+34213	Blå Vinter Fe
+34214	Lyserød Vinter Fe
+34215	Lille Vinter Fe
+34216	Lille Abe (C Lvl)
+34217	Lille Edderkop (C Lvl)
+34218	Lille Razador (C Lvl)
+34219	Lille Nemere (C Lvl)
+34220	Dragenette (C Lvl)
+34221	Meleys Baby (C Lvl)
+34222	Mini Azrael (C Lvl)
+34223	Fed Mini Bobes. (C Lvl)
+34224	Baby Baashido (C Lvl)
+34225	Nessie (C Lvl)
+34226	Exedyar (C Lvl)
+34227	A. Mini Alastor (C Lvl)
+34228	Baby Boss (C Lvl)
+34229	Baby Aamon
+34230	Flammende Baby Aamon
+34231	Baby Aamon (C Lvl)
+34234	Pavo
+34235	Gallus
+34236	Lille Pavo
+34237	Hati
+34238	Sköll
+34239	Lille Hati
+36000	Skummel Helvedeshest
+36001	Grusom Helvedeshest
+36005	Balathor's Isvinge
+36006	Balathor's Natvinge
+36007	Jungle Tiger
+36008	Sne Tiger
+36009	Snedækket Julevædder
+36010	Kul Julevædder
+36011	Skumringens Føniks
+36012	Daggry Føniks
+40003	Turbo Surfbræt
+40004	Wukong's Storm
+40005	Wukong's Torden
+40006	Blå Drakkar
+40007	Rød Drakkar
+60000	Ordens Manager
+60001	Ordens Manager
+60002	Ordens Manager
+60003	Theowahdan
+60007	Tilkaldelses Hjælper
+34900	Buffi
+34901	Buffi

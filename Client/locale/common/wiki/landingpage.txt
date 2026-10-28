@@ -1,0 +1,12 @@
+
+
+[BUTTON=d:/ymir work/ui/game/wiki/guides/banner_1_norm.png#d:/ymir work/ui/game/wiki/guides/banner_1_hover.png#d:/ymir work/ui/game/wiki/guides/banner_1_select.png;Y=20;CENTER_ALIGN;LINKINDEX=article#122#0.0;TEXT=;COLOR_TEXT=cebb98;OUTLINE]
+[X=15;Y=57;Y_PADDING=50;NO_ADD_Y;FONT_SIZE=18b;COLOR=cebb98;OUTLINE]Starter Guide
+
+
+[BUTTON=d:/ymir work/ui/game/wiki/guides/banner_2_norm.png#d:/ymir work/ui/game/wiki/guides/banner_2_hover.png#d:/ymir work/ui/game/wiki/guides/banner_2_select.png;Y=20+110;CENTER_ALIGN;LINKINDEX=article#6#0.0;TEXT=;COLOR_TEXT=cebb98;OUTLINE]
+[X=15;Y=57+110;Y_PADDING=50;NO_ADD_Y;FONT_SIZE=18b;COLOR=cebb98;OUTLINE]Mount System Guide
+
+
+[BUTTON=d:/ymir work/ui/game/wiki/guides/banner_3_norm.png#d:/ymir work/ui/game/wiki/guides/banner_3_hover.png#d:/ymir work/ui/game/wiki/guides/banner_3_select.png;Y=20+110*2;CENTER_ALIGN;LINKINDEX=article#33#0.0;TEXT=;COLOR_TEXT=cebb98;OUTLINE]
+[X=15;Y=57+110*2;Y_PADDING=50;NO_ADD_Y;FONT_SIZE=18b;COLOR=cebb98;OUTLINE]Exploration Guide

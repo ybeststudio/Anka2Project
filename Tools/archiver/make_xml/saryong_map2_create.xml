@@ -1,0 +1,4 @@
+<ScriptFile>
+	<CreateEterPackXml Input="../binary_unpack/saryong_map2:" ArchivePath="../../Client/pack/saryong_map2" XmlPath="xml/saryong_map2_create.xml">
+	</CreateEterPackXml>
+</ScriptFile>

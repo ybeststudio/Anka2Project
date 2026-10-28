@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+CAttribute	attribute.h	/^class CAttribute$/;"	c
+CGrid	grid.h	/^class CGrid$/;"	c
+CTargaImage	targa.h	/^class CTargaImage$/;"	c
+D_BYTE	attribute.h	/^    D_BYTE$/;"	e	enum:EDataType
+D_DWORD	attribute.h	/^    D_DWORD,$/;"	e	enum:EDataType
+D_WORD	attribute.h	/^    D_WORD,$/;"	e	enum:EDataType
+EDataType	attribute.h	/^enum EDataType$/;"	g
+IMAGEDESC_BOTLEFT	targa.h	24;"	d
+IMAGEDESC_BOTRIGHT	targa.h	25;"	d
+IMAGEDESC_ORIGIN_MASK	targa.h	22;"	d
+IMAGEDESC_TOPLEFT	targa.h	23;"	d
+IMAGEDESC_TOPRIGHT	targa.h	26;"	d
+TGA_HEADER	targa.h	/^struct TGA_HEADER$/;"	s
+__INC_METIN_II_ATTRIBUTE_H__	attribute.h	2;"	d
+__INC_METIN_II_GRID_H__	grid.h	2;"	d
+__INC_METIN_II_SERVER_TARGA_H__	targa.h	2;"	d
+bytePtr	attribute.h	/^	BYTE **	bytePtr;$/;"	m	class:CAttribute
+colorBegin	targa.h	/^    WORD colorBegin;	\/\/ 0$/;"	m	struct:TGA_HEADER
+colorBits	targa.h	/^    char colorBits;$/;"	m	struct:TGA_HEADER
+colorCount	targa.h	/^    WORD colorCount;	\/\/ 파레트 있으면 256, 없음 0$/;"	m	struct:TGA_HEADER
+data	attribute.h	/^	void * data;$/;"	m	class:CAttribute
+dataType	attribute.h	/^	int dataType;$/;"	m	class:CAttribute
+defaultAttr	attribute.h	/^	DWORD defaultAttr;$/;"	m	class:CAttribute
+desc	targa.h	/^    char desc;$/;"	m	struct:TGA_HEADER
+dwordPtr	attribute.h	/^	DWORD ** dwordPtr;$/;"	m	class:CAttribute
+height	attribute.h	/^	int width, height;$/;"	m	class:CAttribute
+height	targa.h	/^    WORD height;$/;"	m	struct:TGA_HEADER
+idLen	targa.h	/^    char idLen;		\/\/ 0$/;"	m	struct:TGA_HEADER
+imgType	targa.h	/^    char imgType;	\/\/ 파레트있으면 1, 없음 2$/;"	m	struct:TGA_HEADER
+left	targa.h	/^    WORD left;$/;"	m	struct:TGA_HEADER
+m_header	targa.h	/^	TGA_HEADER	m_header;$/;"	m	class:CTargaImage
+m_iHeight	grid.h	/^	int	m_iHeight;$/;"	m	class:CGrid
+m_iWidth	grid.h	/^	int	m_iWidth;$/;"	m	class:CGrid
+m_pGrid	grid.h	/^	char *	m_pGrid;$/;"	m	class:CGrid
+m_pbuf	targa.h	/^	char *		m_pbuf;$/;"	m	class:CTargaImage
+m_x	targa.h	/^	int		m_x, m_y;$/;"	m	class:CTargaImage
+m_y	targa.h	/^	int		m_x, m_y;$/;"	m	class:CTargaImage
+palEntrySize	targa.h	/^    char palEntrySize;	\/\/ 파레트 있으면 24, 없음 0$/;"	m	struct:TGA_HEADER
+palType	targa.h	/^    char palType;	\/\/ 파레트있으면 1, 없음 0$/;"	m	struct:TGA_HEADER
+top	targa.h	/^    WORD top;$/;"	m	struct:TGA_HEADER
+width	attribute.h	/^	int width, height;$/;"	m	class:CAttribute
+width	targa.h	/^    WORD width;$/;"	m	struct:TGA_HEADER
+wordPtr	attribute.h	/^	WORD **	wordPtr;$/;"	m	class:CAttribute

@@ -1,0 +1,366 @@
+[\
+    TITLE;\
+    X=10;Y=0;\
+    TEXT_1={WK:1};\
+]
+
+[\
+    DUNGEON;\
+    X=10;Y=50;\
+    TEXT_1=Information;\
+    TEXT_1={WK:403};\
+    TEXT_2={WK:404:25:54};\
+    TEXT_3={WK:405:20 min};\
+    TEXT_4={WK:406} {WK:555};\
+    TEXT_5={WK:407}{WK:557};\
+    TEXT_6={WK:408:1.350};\
+    VNUM_1=6091;\
+]
+
+[\
+    SUBTITLE;\
+    X=10;Y=270;\
+    TEXT_1={WK:413};\
+]
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=350;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/skills_passive.png;\
+    Y_PADDING=5;\
+    TEXT_1=* {WK:410};\
+    TEXT_2={WK:411};\
+    TEXT_3=* {WK:412};\
+    TEXT_4=* AppendBonus2(54,447) (GetBonus(20));\
+    TEXT_5=* AppendBonus2(38,50) (GetBonus(38));\
+    TEXT_6=* AppendBonus2(18,100) (GetBonus(18));\
+    TEXT_7=* AppendBonus2(15,50) (GetBonus(15));\
+    TEXT_2_X_PADDING = 10;\
+    TEXT_4_X_PADDING = 10;TEXT_5_X_PADDING = 10;TEXT_6_X_PADDING = 10;\
+    TEXT_7_X_PADDING = 10;\
+    TEXT_3_Y_PADDING = 7;TEXT_4_Y_PADDING = 9;TEXT_5_Y_PADDING = 9;\
+    TEXT_6_Y_PADDING = 9;TEXT_7_Y_PADDING = 9;\
+]
+[IMG=d:/ymir work/ui/game/inventory/equipment_bg.png; Y=350-30; X=385]
+[ITEM=3219;X=385+7;Y=320+5;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=11229;X=385+43;Y=320+35;ATTR=0:1?2000#1:23?5#2:53?50#3:0?0#4:0?0;]
+[ITEM=16007;X=385+118;Y=320+70;ATTR=0:1?2000#1:15?10#2:0?0#3:0?0#4:0?0;]
+[ITEM=14029;X=385+77;Y=320+70;ATTR=0:1?2000#1:15?10#2:139?15#3:0?0#4:0?0;]
+[ITEM=15049;X=385+42;Y=320+148;ATTR=0:1?2000#1:15?10#2:0?0#3:0?0#4:0?0;]
+[ITEM=13007;X=385+78;Y=320+36;ATTR=0:5?12#1:0?0#2:27?15#3:48?1#4:0?0;]
+[ITEM=12207;X=385+42;Y=320+5;ATTR=0:38?15#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=17029;X=385+118;Y=320+36;ATTR=0:21?20#1:0?0#2:0?0#3:0?0#4:0?0;]
+
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=570;\
+    IMG_1=d:/ymir work/ui/game/wiki/dungeon/boost.png;\
+    Y_PADDING=17;\
+    TEXT_1=* {WK:410};\
+    TEXT_2={WK:411};\
+    TEXT_3=* {WK:412};\
+    TEXT_4=* Color(AppendItem(70721));\
+    TEXT_5=* Color(AppendItem(70722));\
+    TEXT_2_X_PADDING = 10;TEXT_4_X_PADDING = 10;\
+    TEXT_5_X_PADDING = 10;TEXT_5_X_PADDING = 10;\
+    TEXT_3_Y_PADDING = 7;TEXT_4_Y_PADDING = 7;\
+    TEXT_5_Y_PADDING = 7;\
+    TEXT_7_Y_PADDING = 12;TEXT_8_Y_PADDING = 12;\
+]
+[IMG=d:/ymir work/ui/game/inventory/bg_equipment/boost.png; Y=540; X=385]
+[ITEM=70721;X=385+13;Y=540+97;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=70722;X=385+61;Y=540+97;ATTR=0:1?2000#1:23?5#2:53?50#3:0?0#4:0?0;]
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=770;\
+    IMG_1=d:/ymir work/ui/game/wiki/dungeon/item_bg3.png;\
+    Y_PADDING=17;\
+    TEXT_1=* {WK:410};\
+    TEXT_2={WK:411};\
+    TEXT_3=* {WK:412};\
+    TEXT_4=* Color(AppendItem(70721));\
+    TEXT_5=* Color(AppendItem(70722));\
+    TEXT_2_X_PADDING = 10;TEXT_4_X_PADDING = 10;\
+    TEXT_5_X_PADDING = 10;TEXT_5_X_PADDING = 10;\
+    TEXT_3_Y_PADDING = 7;TEXT_4_Y_PADDING = 7;\
+    TEXT_5_Y_PADDING = 7;\
+    TEXT_7_Y_PADDING = 12;TEXT_8_Y_PADDING = 12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/layout/grids/3x2_grid.png; Y=770+17; X=423]
+[ITEM=114000;X=385+44;Y=770+23;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=124000;X=385+44+(37*1);Y=770+23;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=134000;X=385+44+(37*2);Y=770+23;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=144000;X=385+44;Y=770+60;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=154000;X=385+44+(37*1);Y=770+60;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=154000;X=385+44+(37*2);Y=770+60;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=930;\
+    IMG_1=d:/ymir work/ui/game/wiki/dungeon/pet.png;\
+    Y_PADDING=17;\
+    TEXT_1=* {WK:410};\
+    TEXT_2={WK:411};\
+    TEXT_3=* {WK:412};\
+    TEXT_4=* Color(AppendItem(70721));\
+    TEXT_5=* Color(AppendItem(70722));\
+    TEXT_2_X_PADDING = 10;TEXT_4_X_PADDING = 10;\
+    TEXT_5_X_PADDING = 10;TEXT_5_X_PADDING = 10;\
+    TEXT_3_Y_PADDING = 7;TEXT_4_Y_PADDING = 7;\
+    TEXT_5_Y_PADDING = 7;\
+    TEXT_7_Y_PADDING = 12;TEXT_8_Y_PADDING = 12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/layout/grids/1x1_grid.png; Y=930+15; X=458]
+[IMG=d:/ymir work/ui/game/wiki/layout/grids/3x1_grid.png; Y=930+60; X=423]
+[ITEM=55715;X=458+6;Y=930+22;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[X=429;Y=930+67;IMG=d:/ymir work/ui/pet/skill_button/skill_enable_button.sub;]
+[X=429+(37*1);Y=930+67;IMG=d:/ymir work/ui/pet/skill_button/skill_enable_button.sub;]
+[X=429+(37*2);Y=930+67;IMG=d:/ymir work/ui/pet/skill_button/skill_enable_button.sub;]
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=1090;\
+    IMG_1=d:/ymir work/ui/game/wiki/dungeon/mount.png;\
+    Y_PADDING=17;\
+    TEXT_1=* {WK:410};\
+    TEXT_2={WK:411};\
+    TEXT_3=* {WK:412};\
+    TEXT_4=* Color(AppendItem(70721));\
+    TEXT_5=* Color(AppendItem(70722));\
+    TEXT_2_X_PADDING = 10;TEXT_4_X_PADDING = 10;\
+    TEXT_5_X_PADDING = 10;TEXT_5_X_PADDING = 10;\
+    TEXT_3_Y_PADDING = 7;TEXT_4_Y_PADDING = 7;\
+    TEXT_5_Y_PADDING = 7;\
+    TEXT_7_Y_PADDING = 12;TEXT_8_Y_PADDING = 12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/layout/grids/1x1_grid.png; Y=1090+35; X=495]
+[ITEM=84101;X=495+6;Y=1090+42;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=1250;\
+    IMG_1=d:/ymir work/ui/game/wiki/dungeon/dragon_item.png;\
+    Y_PADDING=17;\
+    TEXT_1=* {WK:410};\
+    TEXT_2={WK:411};\
+    TEXT_3=* {WK:412};\
+    TEXT_4=* Color(AppendItem(70721));\
+    TEXT_5=* Color(AppendItem(70722));\
+    TEXT_2_X_PADDING = 10;TEXT_4_X_PADDING = 10;\
+    TEXT_5_X_PADDING = 10;TEXT_5_X_PADDING = 10;\
+    TEXT_3_Y_PADDING = 7;TEXT_4_Y_PADDING = 7;\
+    TEXT_5_Y_PADDING = 7;\
+    TEXT_7_Y_PADDING = 12;TEXT_8_Y_PADDING = 12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/layout/grids/3x2_grid.png; Y=1250+17; X=423]
+[ITEM=71027;X=385+44;Y=1250+23;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=71028;X=385+44+(37*1);Y=1250+23;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=71029;X=385+44+(37*2);Y=1250+23;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=71030;X=385+44;Y=1250+60;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=71044;X=385+44+(37*1);Y=1250+60;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=71045;X=385+44+(37*2);Y=1250+60;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1250+23; X=385+44]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1250+23; X=385+44+(37*1)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1250+23; X=385+44+(37*2)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1250+60; X=385+44]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1250+60; X=385+44+(37*1)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1250+60; X=385+44+(37*2)]
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=1410;\
+    IMG_1=d:/ymir work/ui/game/wiki/dungeon/skill.png;\
+    Y_PADDING=17;\
+    TEXT_1=* {WK:410};\
+    TEXT_2={WK:411};\
+    TEXT_3=* {WK:412};\
+    TEXT_4=* Color(AppendItem(70721));\
+    TEXT_5=* Color(AppendItem(70722));\
+    TEXT_2_X_PADDING = 10;TEXT_4_X_PADDING = 10;\
+    TEXT_5_X_PADDING = 10;TEXT_5_X_PADDING = 10;\
+    TEXT_3_Y_PADDING = 7;TEXT_4_Y_PADDING = 7;\
+    TEXT_5_Y_PADDING = 7;\
+    TEXT_7_Y_PADDING = 12;TEXT_8_Y_PADDING = 12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/layout/grids/3x1_grid.png; Y=1410+17; X=423]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/skill/geomgyeong_01.png; Y=1410+24; X=430]
+[X=430+15;Y=1410+24+20;FONT_SIZE=11;NO_ADD_Y;OUTLINE;]'M1
+[IMG=d:/ymir work/ui/game/wiki/dungeon/skill/jeongwi_01.png; Y=1410+24; X=430+(37*1)]
+[X=430+(37*1)+15;Y=1410+24+20;FONT_SIZE=11;NO_ADD_Y;OUTLINE;]'M1
+
+[IMG=d:/ymir work/ui/game/wiki/layout/grids/4x1_grid.png; Y=1410+65; X=386]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/skill/pve.png; Y=1410+72; X=393]
+[X=393+15;Y=1410+72+20;FONT_SIZE=11;NO_ADD_Y;OUTLINE;]'M1
+[IMG=d:/ymir work/ui/game/wiki/dungeon/skill/ds.png; Y=1410+72; X=393+(37*1)]
+[X=393+15+(37*1);Y=1410+72+20;FONT_SIZE=11;NO_ADD_Y;OUTLINE;]'M1
+[IMG=d:/ymir work/ui/game/wiki/dungeon/skill/command.png; Y=1410+72; X=393+(37*2)]
+[X=393+15+(37*2);Y=1410+72+20;FONT_SIZE=11;NO_ADD_Y;OUTLINE;]'M1
+[IMG=d:/ymir work/ui/game/wiki/dungeon/skill/horse.png; Y=1410+72; X=393+(37*3)]
+[X=393+15+(37*3);Y=1410+72+20;FONT_SIZE=11;NO_ADD_Y;OUTLINE;]'M1
+
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=1570;\
+    IMG_1=d:/ymir work/ui/game/wiki/dungeon/buff.png;\
+    Y_PADDING=17;\
+    TEXT_1=* {WK:410};\
+    TEXT_2={WK:411};\
+    TEXT_3=* {WK:412};\
+    TEXT_4=* Color(AppendItem(70721));\
+    TEXT_5=* Color(AppendItem(70722));\
+    TEXT_2_X_PADDING = 10;TEXT_4_X_PADDING = 10;\
+    TEXT_5_X_PADDING = 10;TEXT_5_X_PADDING = 10;\
+    TEXT_3_Y_PADDING = 7;TEXT_4_Y_PADDING = 7;\
+    TEXT_5_Y_PADDING = 7;\
+    TEXT_7_Y_PADDING = 12;TEXT_8_Y_PADDING = 12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/layout/grids/3x2_grid.png; Y=1570+17; X=423]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/skill/hosin_01.png; Y=1570+24; X=430]
+[X=430+15;Y=1570+24+20;FONT_SIZE=11;NO_ADD_Y;OUTLINE;]'M1
+[IMG=d:/ymir work/ui/game/wiki/dungeon/skill/gicheon_01.png; Y=1570+24; X=430+(37*1)]
+[X=430+15+(37*1);Y=1570+24+20;FONT_SIZE=11;NO_ADD_Y;OUTLINE;]'M1
+[IMG=d:/ymir work/ui/game/wiki/dungeon/skill/boho_01.png; Y=1570+24; X=430+(37*2)]
+[X=430+15+(37*2);Y=1570+24+20;FONT_SIZE=11;NO_ADD_Y;OUTLINE;]'M1
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/skill/kwaesok_01.png; Y=1570+24+(37*1); X=430]
+[X=430+15;Y=1570+24+20+(37*1);FONT_SIZE=11;NO_ADD_Y;OUTLINE;]'M1
+[IMG=d:/ymir work/ui/game/wiki/dungeon/skill/jeungryeok_01.png; Y=1570+24+(37*1); X=430+(37*1)]
+[X=430+15+(37*1);Y=1570+24+20+(37*1);FONT_SIZE=11;NO_ADD_Y;OUTLINE;]'M1
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=1730;\
+    IMG_1=d:/ymir work/ui/game/wiki/dungeon/biolo.png;\
+    Y_PADDING=17;\
+    TEXT_1=* {WK:410};\
+    TEXT_2={WK:411};\
+    TEXT_3=* {WK:412};\
+    TEXT_4=* Color(AppendItem(70721));\
+    TEXT_5=* Color(AppendItem(70722));\
+    TEXT_2_X_PADDING = 10;TEXT_4_X_PADDING = 10;\
+    TEXT_5_X_PADDING = 10;TEXT_5_X_PADDING = 10;\
+    TEXT_3_Y_PADDING = 7;TEXT_4_Y_PADDING = 7;\
+    TEXT_5_Y_PADDING = 7;\
+    TEXT_7_Y_PADDING = 12;TEXT_8_Y_PADDING = 12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/bg.png; Y=1725; X=313]
+[ITEM=30006;X=313+7;Y=1730+1;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=30015;X=313+7+(45*1);Y=1730+1;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=30047;X=313+7+(45*2);Y=1730+1;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=30050;X=313+7+(45*3);Y=1730+1;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=30165;X=313+7+(45*4);Y=1730+1;SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=30166;X=313+7;Y=1730+1+(45*1);SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=30167;X=313+7+(45*1);Y=1730+1+(45*1);SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=30168;X=313+7+(45*2);Y=1730+1+(45*1);SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=30251;X=313+7+(45*3);Y=1730+1+(45*1);SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=30252;X=313+7+(45*4);Y=1730+1+(45*1);SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=30253;X=313+7;Y=1730+1+(45*2);SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=30255;X=313+7+(45*1);Y=1730+1+(45*2);SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=30256;X=313+7+(45*2);Y=1730+1+(45*2);SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=30257;X=313+7+(45*3);Y=1730+1+(45*2);SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=30258;X=313+7+(45*4);Y=1730+1+(45*2);SOCKET=0:1#1:1#2:1;ATTR=0:72?30#1:0?0#2:0?0#3:0?0#4:0?0;]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1730+1; X=313+7]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1730+1; X=313+7+(45*1)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1730+1; X=313+7+(45*2)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1730+1; X=313+7+(45*3)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1730+1; X=313+7+(45*4)]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1730+1+(45*1); X=313+7]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1730+1+(45*1); X=313+7+(45*1)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1730+1+(45*1); X=313+7+(45*2)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1730+1+(45*1); X=313+7+(45*3)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1730+1+(45*1); X=313+7+(45*4)]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1730+1+(45*2); X=313+7]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1730+1+(45*2); X=313+7+(45*1)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1730+1+(45*2); X=313+7+(45*2)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1730+1+(45*2); X=313+7+(45*3)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1730+1+(45*2); X=313+7+(45*4)]
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=1890;\
+    IMG_1=d:/ymir work/ui/game/wiki/dungeon/huahn_picture.png;\
+    Y_PADDING=50;\
+    TEXT_1=* Color(AppendItem(71028));\
+]
+[IMG=d:/ymir work/ui/game/wiki/layout/grids/4x2_grid.png; Y=1890+17; X=385]
+[ITEM=50821;X=347+44;Y=1890+23;SOCKET=0:1#1:1#2:1;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=50822;X=347+44+(37*1);Y=1890+23;SOCKET=0:1#1:1#2:1;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=50823;X=347+44+(37*2);Y=1890+23;SOCKET=0:1#1:1#2:1;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=50824;X=347+44+(37*3);Y=1890+23;SOCKET=0:1#1:1#2:1;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=50825;X=347+44;Y=1890+60;SOCKET=0:1#1:1#2:1;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=50826;X=347+44+(37*1);Y=1890+60;SOCKET=0:1#1:1#2:1;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=50827;X=347+44+(37*2);Y=1890+60;SOCKET=0:1#1:1#2:1;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1890+23; X=347+44]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1890+23; X=347+44+(37*1)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1890+23; X=347+44+(37*2)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1890+23; X=347+44+(37*3)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/check.png; Y=1890+60; X=347+44]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1890+60; X=347+44+(37*1)]
+[IMG=d:/ymir work/ui/game/wiki/dungeon/no.png; Y=1890+60; X=347+44+(37*2)]
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=2070;\
+    IMG_1=d:/ymir work/ui/game/wiki/dungeon/arbre.png;\
+    Y_PADDING=35;\
+    TEXT_1=Color({WK:430});\
+]
+[X=77;Y=2070+55;BUTTON=d:/ymir work/ui/game/wiki/bg_wiki.png#d:/ymir work/ui/game/wiki/bg_wiki_hover.png#d:/ymir work/ui/game/wiki/bg_wiki.png;LINKINDEX=article#18#0.0;TEXT={WK:429};]
+
+[IMG=d:/ymir work/ui/game/wiki/dungeon/bg.png; Y=2070; X=313]
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/22_0.png; Y=2070+5; X=313+5;TOOLTIP=AppendTree(0)]
+[X=313+5;Y=2070+5;FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]3
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/20_0.png; Y=2070+5; X=313+5+(45*1);TOOLTIP=AppendTree(1)]
+[X=313+5+(45*1);Y=2070+5;FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]3
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/27_0.png; Y=2070+5; X=313+5+(45*2);TOOLTIP=AppendTree(2)]
+[X=313+5+(45*2);Y=2070+5;FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/35_0.png; Y=2070+5; X=313+5+(45*3);TOOLTIP=AppendTree(3)]
+[X=313+5+(45*3);Y=2070+5;FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/24_0.png; Y=2070+5; X=313+5+(45*4);TOOLTIP=AppendTree(4)]
+[X=313+5+(45*4);Y=2070+5;FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]
+
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/3_0.png; Y=2070+5+(45*1); X=313+5;TOOLTIP=AppendTree(5)]
+[X=313+5;Y=2070+5+(45*1);FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]3
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/7_0.png; Y=2070+5+(45*1); X=313+5+(45*1);TOOLTIP=AppendTree(6)]
+[X=313+5+(45*1);Y=2070+5+(45*1);FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]3
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/17_0.png; Y=2070+5+(45*1); X=313+5+(45*2);TOOLTIP=AppendTree(7)]
+[X=313+5+(45*2);Y=2070+5+(45*1);FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]3
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/9_0.png; Y=2070+5+(45*1); X=313+5+(45*3);TOOLTIP=AppendTree(8)]
+[X=313+5+(45*3);Y=2070+5+(45*1);FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]3
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/21_0.png; Y=2070+5+(45*1); X=313+5+(45*4);TOOLTIP=AppendTree(9)]
+[X=313+5+(45*4);Y=2070+5+(45*1);FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]3
+
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/33_0.png; Y=2070+5+(45*2); X=313+5;TOOLTIP=AppendTree(15)]
+[X=313+5;Y=2070+5+(45*2);FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]3
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/36_0.png; Y=2070+5+(45*2); X=313+5+(45*1);TOOLTIP=AppendTree(16)]
+[X=313+5+(45*1);Y=2070+5+(45*2);FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]3
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/34_0.png; Y=2070+5+(45*2); X=313+5+(45*2);TOOLTIP=AppendTree(17)]
+[X=313+5+(45*2);Y=2070+5+(45*2);FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]3
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/37_0.png; Y=2070+5+(45*2); X=313+5+(45*3);TOOLTIP=AppendTree(18)]
+[X=313+5+(45*3);Y=2070+5+(45*2);FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]3
+[IMG=d:/ymir work/ui/game/new_skill_tree/icon/38_0.png; Y=2070+5+(45*2); X=313+5+(45*4);TOOLTIP=AppendTree(19)]
+[X=313+5+(45*4);Y=2070+5+(45*2);FONT_SIZE=14b;NO_ADD_Y;OUTLINE;]3
+
+[\
+    DESCRIPTION_WITH_BG;\
+    X=10;Y=2250;\
+    IMG_1=d:/ymir work/ui/game/wiki/dungeon/alchi.png;\
+    Y_PADDING=35;\
+    TEXT_1=Color({WK:432});\
+]
+[X=82;Y=2250+55;BUTTON=d:/ymir work/ui/game/wiki/bg_wiki.png#d:/ymir work/ui/game/wiki/bg_wiki_hover.png#d:/ymir work/ui/game/wiki/bg_wiki.png;LINKINDEX=article#18#0.0;TEXT={WK:431};]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/grids/3x2_grid.png; Y=2250+17; X=423]
+[ITEM=114000;X=385+44;Y=2250+23;SOCKET=0:1#1:1#2:1;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=124000;X=385+44+(37*1);Y=2250+23;SOCKET=0:1#1:1#2:1;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=134000;X=385+44+(37*2);Y=2250+23;SOCKET=0:1#1:1#2:1;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=144000;X=385+44;Y=2250+60;SOCKET=0:1#1:1#2:1;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=154000;X=385+44+(37*1);Y=2250+60;SOCKET=0:1#1:1#2:1;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=164000;X=385+44+(37*2);Y=2250+60;SOCKET=0:1#1:1#2:1;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]

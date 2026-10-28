@@ -1,0 +1,149 @@
+[X_PADDING=40;FONT_SIZE=18b;COLOR=ffd700]Objectif
+ 
+
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Faire une |cFFD7B25B|hpause niveau 60|r pour mettre à jour vos quêtes du biologiste.
+[X_PADDING=85;Y_PADDING=-3]|Eemoji/arrow_2|e Faire le donjon la |cFFD7B25B|htour des démons|r pour avoir son arme 75 +9.
+[X_PADDING=85;Y_PADDING=-1]|Eemoji/arrow_2|e Faire le donjon |cFFD7B25B|hAntre de la baronne|r pour améliorer son arme 75 en (EV)
+[X_PADDING=85;Y_PADDING=1]|Eemoji/arrow_2|e Faire le donjon |cFFD7B25B|hSalle des trésors|r pour obtenir des pierres +5 grâce aux calcites dorée.
+[X_PADDING=85;Y_PADDING=3]|Eemoji/arrow_2|e Faire le donjon |cFFD7B25B|hCatacombes|r pour obtenir vos bijoux cristal d'âme ainsi que le bouclier titan.
+[X_PADDING=85;Y_PADDING=5]|Eemoji/arrow_2|e Fabriquer vos Attaque critiques et perçante ainsi que vos objets du dieu dragon chez Confucius.
+[X_PADDING=85;Y_PADDING=7]|Eemoji/arrow_2|e Monter vos compétences passives (Sorceleur, Commandement, Alchimie du dragon et
+[X_PADDING=95;Y_PADDING=9]Maître du sort) en G1.
+ 
+
+
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Farm |cFFD7B25B|hL'ile aux serpents|r pour faire vos pierres dragons mythiques +6 avec les meilleurs bonus PVE.
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Farm |cFFD7B25B|hL'ile aux serpents|r pour ajouter rapidement des bonus 6 & 7 sur vos pièces d'équipements. 
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Farm les donjons |cFFD7B25B|hTour - Baronne - Catacombes en (EV)|r pour obtenir votre costume d'étole
+[X_PADDING=95;Y_PADDING=-5]ainsi que des tissus fins.
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Fabriquer des puissances mystiques pour farm les donjons plus rapidement.
+
+
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Améliorer une |cFFD7B25B|hbuffi ou votre buff|r avec des compétences en P minimum.
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Avoir un |cFFD7B25B|hfamilier|r de type 6 (légendaire) et 3 slots de compétences.
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e |cFFD7B25B|hEtôle|r avec au minimum 19% d'abso avec un arme 75 (EV) avec 52% DM mini.
+
+
+  
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=12; CENTER_ALIGN]
+[IMG=d:/ymir work/ui/game/wiki/guides/skills_passive.png; Y=54;X=10]
+[IMG=d:/ymir work/ui/game/wiki/guides/skills_sura.png; Y=184;X=10]
+[IMG=d:/ymir work/ui/game/wiki/guides/buffi_picture.png; Y=260;X=10]
+
+
+[X_PADDING=25;FONT_SIZE=18b;COLOR=ffd700]EQ. conseillé
+
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Arme Lv.75 (EV) avec au minimum |cFFD7B25B|h50% de dégat moyen|r.
+[X_PADDING=175;Y_PADDING=3]|Eemoji/arrow_2|e Armure Lv. 66 avec au minimum |cFFD7B25B|h 2.000 HP + 10% Drain de pv + 50 VA |r
+[X_PADDING=175;Y_PADDING=6]|Eemoji/arrow_2|e Bouclier titan+9 avec au minimum |cFFD7B25B|h 12 Force, Déf. contre l'étourdissement, |r
+[X_PADDING=182;Y_PADDING=6]|cFFD7B25B|h Bloque CàC +15%.|r
+[X_PADDING=175;Y_PADDING=9]|Eemoji/arrow_2|e Heaume Lv. 60 avec au minimum |cFFD7B25B|h +8% vitesse d'attaque.|r
+[X_PADDING=175;Y_PADDING=12]|Eemoji/arrow_2|e Collier cristal d'âme+9 avec au minimum.|cFFD7B25B|h + 2.000 PV Max  + 10% coup critique.|r
+[X_PADDING=175;Y_PADDING=15]|Eemoji/arrow_2|e Bracelet cristal d'âme+9 avec au minimum|cFFD7B25B|h + 2.000 PV Max + 10% coup critique|r
+[X_PADDING=183;Y_PADDING=15]|cFFD7B25B|h+ 10 % drain PV.|r
+[X_PADDING=175;Y_PADDING=18]|Eemoji/arrow_2|e Boucles cristal d'âme+9 avec au minimun |cFFD7B25B|h20% Chance de double objet |r
+[X_PADDING=175;Y_PADDING=21]|Eemoji/arrow_2|e Chaussure phoenix avec au minimum|cFFD7B25B|h + 2.000 PV Max + 10% coup critique |r
+[X_PADDING=182;Y_PADDING=21]|cFFD7B25B|h+ 8% vitesse d'attaque|r
+[X_PADDING=175;Y_PADDING=24]|Eemoji/arrow_2|e|cFFD7B25B|h Collecteur d'âme +8.
+
+[X_PADDING=175;Y_PADDING=24]|Eemoji/arrow_2|e|cFFD7B25B|h N'oubliez pas d'adapter les autres bonus selon la carte / donjon que vous farmez.
+[X_PADDING=175;Y_PADDING=24]|Eemoji/arrow_2|e|cFFD7B25B|h Exemple: Feu, Vent, Foudre, Animaux, Mal, Mort-vivants, Mystiques etc..
+
+
+
+
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Costume d'arme avec au minimum |cFFD7B25B|h12 Force + 10% coup critique|r.
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Costume d'armure avec au minimum |cFFD7B25B|h2.000 PV Max + 50 Valeur d'attaque|r.
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Coiffure avec au minimum |cFFD7B25B|h8% de vitesse d'attaque|r.
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Costume d'étole avec au minimum |cFFD7B25B|hdu dégat moyen et du bonus contre les metin|r.
+
+
+
+
+
+
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Diamant-dragon mythique+6 avec |cFFD7B25B|h480 Valeur d'attaque + 16% résistance DC|r.
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Rubis-dragon mythique+6 avec |cFFD7B25B|h16% dégats moyen|r.
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Jade-dragon mythique avec |cFFD7B25B|hMax. PV + 32%|r.
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Saphir-dragon mythique avec |cFFD7B25B|hDéfense +320 & Rési. DM +16%|r.
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Grenat-dragon mythique avec |cFFD7B25B|hMax. PV +4.800 & 8% réstaurer PV |r
+[X_PADDING=183;]|cFFD7B25B|h+ 16% Drain PV|r.
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Onyx-dragon mythique avec |cFFD7B25B|hRési CC +16% & Rési PH +16% |r
+[X_PADDING=183;]|cFFD7B25B|h& Chance de bloquer un coup au corps à corps + 16%|r.
+
+
+
+
+
+
+[X_PADDING=10;FONT_SIZE=14b;COLOR=ffd700]|Eemoji/arrow_2|e Autres objets conseillé
+  
+
+[X_PADDING=85;Y_PADDING=6;FONT_SIZE=13]|Eemoji/arrow_2|e |cFFf1e6c0|h Livre d'exploit +3 à +5                                   |Eemoji/arrow_2|e |cFFf1e6c0|h Défense du dieu dragon (P)|r 
+
+
+
+[X_PADDING=85;Y_PADDING=-6;FONT_SIZE=13]|Eemoji/arrow_2|e |cFFf1e6c0|h Vie du dieu dragon (P)|r                                    |Eemoji/arrow_2|e |cFFf1e6c0|h Attaque critique (P)|r
+
+
+
+[X_PADDING=85;Y_PADDING=-14;FONT_SIZE=13]|Eemoji/arrow_2|e |cFFf1e6c0|h Attaque du dieu dragon (P)|r                            |Eemoji/arrow_2|e |cFFf1e6c0|h Attaque perçante (P)|r
+
+
+
+[X_PADDING=85;Y_PADDING=-22;FONT_SIZE=13]|Eemoji/arrow_2|e |cFFf1e6c0|h Intellig. du dieu dragon (P)|r
+
+
+
+
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=366; CENTER_ALIGN]
+[IMG=d:/ymir work/ui/game/inventory/equipment_bg_without_ring.png; Y=410; X=10]
+[ITEM=3529;X=17;Y=415;SOCKET=0:1#1:1#2:1;ATTR=0:72?50#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=11299;X=53;Y=445;ATTR=0:1?2000#1:23?10#2:53?50#3:0?0#4:0?0;]
+[ITEM=16229;X=128;Y=480;ATTR=0:1?2000#1:15?10#2:0?0#3:0?0#4:0?0;]
+[ITEM=14229;X=85;Y=480;ATTR=0:1?2000#1:15?10#2:23?10#3:0?0#4:0?0;]
+[ITEM=13149;X=88;Y=446;ATTR=0:5?12#1:0?0#2:27?15#3:48?1#4:0?0;]
+[ITEM=12269;X=51;Y=415;ATTR=0:7?8#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=95008;X=87;Y=415;ATTR=0:7?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=17229;X=128;Y=446;ATTR=0:45?20#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=85004;X=88;Y=518;SOCKET=0:19#1:2179#2:12;ATTR=0:72?50#1:0?0#2:0?0#3:0?0#4:0?0;ATTR=0:72?52#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=15209;X=52;Y=558;ATTR=0:1?2000#1:15?10#2:0?0#3:0?0#4:0?0;]
+
+[IMG=d:/ymir work/ui/game/inventory/costume_page.png; Y=610; X=10]
+[ITEM=40111;X=20;Y=673;SOCKET=0:1#1:1#2:1;ATTR=0:5?12#1:15?10#2:0?0#3:0?0#4:0?0;]
+[ITEM=41710;X=73;Y=690;ATTR=0:1?2000#1:0?0#2:53?50#3:0?0#4:0?0;]
+[ITEM=45413;X=74;Y=651;ATTR=0:7?8#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=86241;X=124;Y=651;ATTR=0:72?5#1:116?5#2:0?0#3:0?0#4:0?0;]
+
+[IMG=d:/ymir work/ui/game/inventory/skillcostume_page.tga; Y=810; X=0]
+[ITEM=115460;X=43;Y=844;SOCKET=0:1#1:1#2:1;ATTR=0:4?16#1:87?16#2:101?16#3:53?480#4:73?16;]
+[ITEM=125460;X=43;Y=887;SOCKET=0:1#1:1#2:1;ATTR=0:5?16#1:35?16#2:100?16#3:72?16#4:0?0;]
+[ITEM=135460;X=43;Y=930;SOCKET=0:1#1:1#2:1;ATTR=0:2?800#1:38?16#2:102?16#3:69?32#4:0?0;]
+[ITEM=145460;X=99;Y=844;SOCKET=0:1#1:1#2:1;ATTR=0:6?16#1:88?16#2:103?16#3:54?320#4:74?16;]
+[ITEM=155460;X=99;Y=887;SOCKET=0:1#1:1#2:1;ATTR=0:1?2400#1:36?16#2:99?16#3:1?4800#4:47?8#5:23?16;]
+[ITEM=165460;X=99;Y=930;SOCKET=0:1#1:1#2:1;ATTR=0:3?16#1:89?16#2:104?16#3:90?16#4:91?16#5:27?16;]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/divider_small.png; Y=1065;X=10]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg4.png; Y=1080;X=10]
+[IMG=d:/ymir work/ui/game/wiki/layout/item_bg3.png; Y=1080; X=465]
+
+[ITEM=96485;X=28;Y=1085;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=939017;X=28;Y=1120;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=939018;X=28;Y=1160;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=939019;X=28;Y=1200;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=939020;X=484;Y=1085;SOCKET=0:15#1:20#2:0;]
+[ITEM=939024;X=484;Y=1120;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[ITEM=939025;X=484;Y=1160;ATTR=0:0?0#1:0?0#2:0?0#3:0?0#4:0?0;]
+[BANNER_IMG = d:/ymir work/ui/game/wiki/category/guide.png]

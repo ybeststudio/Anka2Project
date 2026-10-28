@@ -1,0 +1,48 @@
+[X_PADDING=40;FONT_SIZE=18b;COLOR=ffd700]Objectif
+ 
+
+[X_PADDING=85;Y_PADDING=-5]|Eemoji/arrow_2|e Terminez vos quêtes du biologiste
+[X_PADDING=85;Y_PADDING=-3]|Eemoji/arrow_2|e Farm le |cFFD7B25B|hDésert du mal|r pour fabriquer ces |cFFf1e6c0|h5 runes|r.
+[X_PADDING=85;Y_PADDING=-1]|Eemoji/arrow_2|e Farm le |cFFD7B25B|hDésert du mal|r pour perfectionnez les bonus de ces |cFFf1e6c0|hrunes|r
+[X_PADDING=85;Y_PADDING=1]|Eemoji/arrow_2|e Faire |cFFD7B25B|hle Ganesha et Roi Scorpion|r pour fabriquer ces |cFFf1e6c0|hrunes|r.
+[X_PADDING=85;Y_PADDING=3]|Eemoji/arrow_2|e Utiliser toute ces |cFFD7B25B|horbes de puissance - gloire - sagesse|r pour améliorer son |cFFf1e6c0|harbre de compétences|r.
+
+
+
+[X_PADDING=25;FONT_SIZE=18b;COLOR=ffd700]EQ. conseillé
+
+
+
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Rune d'Izanami avec |cFFD7B25B|h8% dégats moyen & 50 Valeur d'attaque|r.
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Rune d'Izanagi avec |cFFD7B25B|h+ 2.000 PV Max & 5% Rési. boss & résistance |r
+[X_PADDING=183;]|cFFD7B25B|hcontre les coups critiques +8%|r.
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Rune de Shinigami avec |cFFD7B25B|h10% de bonus contre les metin / boss / donjon|r.
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Rune d'Hachiman avec |cFFD7B25B|hles bonus PvP de votre choix|r.
+
+[X_PADDING=175;]|Eemoji/arrow_2|e Rune d'Inari avec |cFFD7B25B|h10 %de chance de double drop metin / boss|r.
+
+
+
+
+
+
+
+
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=12; CENTER_ALIGN]
+[IMG=d:/ymir work/ui/game/wiki/guides/farm_7.png; Y=54;X=10]
+
+[IMG=d:/ymir work/ui/game/wiki/layout/list_bg_title.png; Y=150; CENTER_ALIGN]
+
+[IMG=d:/ymir work/ui/game/inventory/rune.png; Y=194; X=10]
+[ITEM=96010;X=72;Y=205;SOCKET=0:1#1:1#2:1;ATTR=0:72?8#1:53?50#2:0?0#3:0?0#4:0?0;]
+[ITEM=96020;X=122;Y=241;ATTR=0:1?2000#1:121?5#2:0?0#3:90?8#4:0?0;]
+[ITEM=96030;X=122;Y=302;ATTR=0:116?10#1:117?10#2:118?10#3:0?0#4:0?0;]
+[ITEM=96050;X=22;Y=302;ATTR=0:78?3#1:79?3#2:80?3#3:81?3#4:0?0;]
+[ITEM=96060;X=22;Y=241;ATTR=0:122?10#1:123?10#2:0?0#3:0?0#4:0?0;]
+
+
+[BANNER_IMG = d:/ymir work/ui/game/wiki/category/guide.png]

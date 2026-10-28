@@ -1,0 +1,108 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=torgny_overview;\
+    TEXT_1={WK:257};\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=116; TABLE_HEADERS=Column A|Column 2; TABLE_WIDTHS=170|350]
+[TR; H=40]
+[TD; TEXT={WK:269}; ALIGN=center]
+[TD; TEXT={WK:270}; ALIGN=center]
+[TR; H=40]
+[TD; TEXT={WK:239}; ALIGN=center]
+[TD; TEXT={WK:271}; ALIGN=center]
+[TR; H=40]
+[TD; TEXT={WK:151}; ALIGN=center]
+[TD; TEXT={WK:272}; ALIGN=center]
+[TABLE_END]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=257;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=55200;\
+    TEXT_1={WK:273};\
+    Y_PADDING=16;\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=322;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=55201;\
+    TEXT_1={WK:274};\
+    Y_PADDING=16;\
+]
+
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=392; TABLE_HEADERS={WK:275}; TABLE_WIDTHS=520]
+[TR; H=40]
+[TD; TEXT={WK:276}; ALIGN=center]
+[TR; H=40]
+[TD; TEXT={WK:277}; ALIGN=center]
+[TR; H=40]
+[TD; TEXT={WK:278}; ALIGN=center]
+[TR; H=40]
+[TD; TEXT={WK:279}; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=607;\
+    ANCHOR=torgny_levels;\
+    TEXT_1={WK:267};\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=657; TABLE_HEADERS={WK:433}|{WK:434}; TABLE_WIDTHS=150|160]
+[TR; H=52]
+[TD; TEXT={WK:16} 1 - 10; ALIGN=center]
+[TD; ITEM=40425]
+[TR; H=52]
+[TD; TEXT={WK:16} 11 - 20; ALIGN=center]
+[TD; ITEM=40426]
+[TR; H=52]
+[TD; TEXT={WK:16} 21 - 30; ALIGN=center]
+[TD; ITEM=40427]
+[TR; H=52]
+[TD; TEXT={WK:16} 31 - 40; ALIGN=center]
+[TD; ITEM=40428]
+[TR; H=52]
+[TD; TEXT={WK:16} 41 - 49; ALIGN=center]
+[TD; ITEM=40429]
+[TR; H=52]
+[TD; TEXT={WK:16} 50; ALIGN=center]
+[TD; ITEM=40429:5:5:5:5:5:5]
+[TABLE_END]
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1020;\
+    ANCHOR=torgny_coins;\
+    TEXT_1=AppendItem(55202);\
+]
+
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1070;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=55202;\
+    TEXT_1={WK:280};\
+    Y_PADDING=10;\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1140; TABLE_HEADERS={WK:437}|{WK:435}; TABLE_WIDTHS=360|160]
+[TR; H=58]
+[TD; ITEM=55200]
+[TD; TEXT=10x Color(AppendItem(55202)); ALIGN=center]
+[TR; H=58]
+[TD; ITEM=55201]
+[TD; TEXT=10x Color(AppendItem(55202)); ALIGN=center]
+[TABLE_END]
+

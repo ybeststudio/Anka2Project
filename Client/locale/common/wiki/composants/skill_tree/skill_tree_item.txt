@@ -1,0 +1,20 @@
+[X=0;Y=0;IMG=d:/ymir work/ui/game/wiki/layout/showcase_long.png;]
+[X=275;Y=8;IMG=d:/ymir work/ui/game/wiki/layout/grids/6x1_grid.png;]
+[X=10;Y=14;IMG=ParentImg(1);]
+[X=13;Y=14;ITEM=ParentVnum(7);SOCKET=0:0#1:100]
+[X=50;Y=14;IMG=ParentImg(2);]
+[X=90;Y=14;IMG=ParentImg(3);]
+[X=275+6;Y=15;ITEM=ParentVnum(1);SOCKET=0:0#1:100]
+[X=275+6+(37*1);Y=15;ITEM=ParentVnum(2);SOCKET=0:0#1:100]
+[X=275+6+(37*2);Y=15;ITEM=ParentVnum(3);SOCKET=0:0#1:100]
+[X=275+6+(37*3);Y=15;ITEM=ParentVnum(4);SOCKET=0:0#1:100]
+[X=275+6+(37*4);Y=15;ITEM=ParentVnum(5);SOCKET=0:0#1:100]
+[X=275+6+(37*5);Y=15;ITEM=ParentVnum(6);SOCKET=0:0#1:100]
+[X=140;Y=13;FONT_SIZE=13b;NO_ADD_Y;FONT_SIZE=14b;COLOR=D7B25B]ParentTxt(1)
+[X=140;Y=13+19*1;FONT_SIZE=13b;NO_ADD_Y;FONT_SIZE=14b;COLOR=cebb98]ParentTxt(2)
+[X=275+27;Y=33;FONT_SIZE=13b;NO_ADD_Y;OUTLINE]ParentPrice(1)
+[X=275+27+(37*1);Y=33;FONT_SIZE=13b;NO_ADD_Y;OUTLINE;]ParentPrice(2)
+[X=275+27+(37*2);Y=33;FONT_SIZE=13b;NO_ADD_Y;OUTLINE;]ParentPrice(3)
+[X=275+27+(37*3);Y=33;FONT_SIZE=13b;NO_ADD_Y;OUTLINE;]ParentPrice(4)
+[X=275+27+(37*4);Y=33;FONT_SIZE=13b;NO_ADD_Y;OUTLINE;]ParentPrice(5)
+[X=275+27+(37*5);Y=33;FONT_SIZE=13b;NO_ADD_Y;OUTLINE;]ParentPrice(6)

@@ -1,0 +1,32 @@
+[BANNER_IMG = d:/ymir work/ui/game/wiki/guide_wall.tga]
+
+[LINK=item#149#0.0;TEXT=Battle Sword;X=50;Y=50;FONT_SIZE=20;COLOR=0xffd700;]
+[LINK=mob#1093#0.0;TEXT=Death Reaper;X=200;Y=50;FONT_SIZE=20;COLOR=0xffd700;]
+[LINK=article#100#0.0;TEXT=The Start Article;X=50;Y=100;FONT_SIZE=20;COLOR=0xffd700;]
+[LINK=website#https://dracarys.work#NONE;TEXT=click for website..;X=200;Y=100;FONT_SIZE=20;COLOR=0xffd700;]
+
+[LINK=warp#599400#756300;TEXT=Warp Flame;X=350;Y=75;FONT_SIZE=20;COLOR=0xffd700;]
+
+[RENDERTARGET=1093;WIDTH=200;HEIGHT=400;X=50;Y=400;]
+[RENDERTARGET=2497;WIDTH=200;HEIGHT=200;X=350;Y=400;]
+
+
+[BUTTON=d:/ymir work/ui/game/windows/tab_button_large_01.sub#d:/ymir work/ui/game/windows/tab_button_large_02.sub#d:/ymir work/ui/game/windows/tab_button_large_03.sub;X=50;Y=210;LINKINDEX=item#149#0.0;TEXT=item;]
+[BUTTON=d:/ymir work/ui/game/windows/tab_button_large_01.sub#d:/ymir work/ui/game/windows/tab_button_large_02.sub#d:/ymir work/ui/game/windows/tab_button_large_03.sub;X=200;Y=210;LINKINDEX=mob#2493#0.0;TEXT=mob;]
+[BUTTON=d:/ymir work/ui/game/windows/tab_button_large_01.sub#d:/ymir work/ui/game/windows/tab_button_large_02.sub#d:/ymir work/ui/game/windows/tab_button_large_03.sub;X=50;Y=260;LINKINDEX=article#0#0.0;TEXT=article;]
+
+[BUTTON=d:/ymir work/ui/game/windows/tab_button_large_01.sub#d:/ymir work/ui/game/windows/tab_button_large_02.sub#d:/ymir work/ui/game/windows/tab_button_large_03.sub;X=200;Y=260;LINKINDEX=website#https://dracarys.work#NONE;TEXT=website;]
+
+[BUTTON=d:/ymir work/ui/game/windows/tab_button_large_01.sub#d:/ymir work/ui/game/windows/tab_button_large_02.sub#d:/ymir work/ui/game/windows/tab_button_large_03.sub;X=300;Y=235;LINKINDEX=warp#599400#756300;TEXT=warp;]
+
+[ITEM=189;X=50;Y=300;SOCKET=0:1#1:1#2:1;ATTR=0:9?20#1:15?10#2:16?10#3:22?20#4:5?12;]
+[ITEM=11699;X=100;Y=300;SOCKET=0:1#1:1#2:1;ATTR=0:1?2000#1:9?20#2:23?10#3:39?10#4:53?50;]
+[ITEM=12529;X=150;Y=300;ATTR=0:7?8#1:10?30#2:11?30#3:28?15#4:24?10;]
+[ITEM=13049;X=200;Y=300;ATTR=0:3?12#1:27?15#2:39?10#3:48?1#4:49?1;]
+[ITEM=17209;X=250;Y=300;ATTR=0:8?20#1:25?10#2:41?5#3:22?20#4:21?20;]
+[ITEM=11699;X=300;Y=300;ATTR=0:1?2000#1:9?20#2:23?10#3:39?10#4:53?50;]
+[ITEM=14109;X=350;Y=300;ATTR=0:1?2000#1:2?80#2:16?10#3:23?10#4:25?10;]
+[ITEM=15189;X=400;Y=300;ATTR=0:1?2000#1:2?80#2:8?8#3:7?8#4:15?10;]
+
+
+

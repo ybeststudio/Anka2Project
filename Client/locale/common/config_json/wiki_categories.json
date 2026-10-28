@@ -1,0 +1,361 @@
+{
+  "articles": [
+    {
+      "id": 0,
+      "file": "landingpage.txt"
+    },
+    {
+      "id": 2,
+      "file": "systems/dungeon_collector.txt"
+    },
+    {
+      "id": 5,
+      "file": "systems/item_quest.txt"
+    },
+    {
+      "id": 7,
+      "file": "systems/mine.txt"
+    },
+    {
+      "id": 8,
+      "file": "systems/peche.txt"
+    },
+    {
+      "id": 10,
+      "file": "systems/sash.txt"
+    },
+    {
+      "id": 13,
+      "file": "systems/67_bonus.txt"
+    },
+    {
+      "id": 16,
+      "file": "systems/battlepass.txt"
+    },
+    {
+      "id": 17,
+      "file": "systems/buffy.txt"
+    },
+    {
+      "id": 19,
+      "file": "systems/bonus_limit.txt"
+    },
+    {
+      "id": 21,
+      "file": "systems/skill_tree.txt"
+    },
+    {
+      "id": 50,
+      "file": "guides/lv35.txt"
+    },
+    {
+      "id": 51,
+      "file": "guides/lv81.txt"
+    },
+    {
+      "id": 52,
+      "file": "guides/lv105.txt"
+    },
+    {
+      "id": 53,
+      "file": "guides/lv115.txt"
+    },
+    {
+      "id": 54,
+      "file": "guides/lv120.txt"
+    },
+    {
+      "id": 125,
+      "file": "events/elementary_event.txt"
+    },
+    {
+      "id": 126,
+      "file": "events/in_or_out_event.txt"
+    },
+    {
+      "id": 127,
+      "file": "events/cooldown_dungeon_event.txt"
+    },
+    {
+      "id": 129,
+      "file": "events/karuak_ceremony.txt"
+    }
+  ],
+  "categories": [
+    {
+      "id": 6,
+      "name": "WIKI_DUNGEON_TITLE",
+      "type": "system",
+      "btn": "dj",
+      "items": [
+        {
+          "id": 80,
+          "name": "DUNGEON_NAMES_MONKEY",
+          "file": "dungeons/[1]monkey_temple/{}.txt"
+        },
+        {
+          "id": 81,
+          "name": "DUNGEON_NAMES_SERPENT",
+          "file": "dungeons/[2]serpents_lair/{}.txt"
+        },
+        {
+          "id": 82,
+          "name": "DUNGEON_NAMES_SPIDER",
+          "file": "dungeons/[3]baroness_dungeon/{}.txt"
+        },
+        {
+          "id": 83,
+          "name": "DUNGEON_NAMES_DEVILTOWER",
+          "file": "dungeons/[4]reaper_dungeon/{}.txt"
+        },
+        {
+          "id": 84,
+          "name": "DUNGEON_NAMES_CATACOMBS",
+          "file": "dungeons/[5]azrael_dungeon/{}.txt"
+        },
+        {
+          "id": 85,
+          "name": "DUNGEON_NAMES_SETAOU",
+          "file": "dungeons/[6]beran_dungeon/{}.txt"
+        },
+        {
+          "id": 86,
+          "name": "DUNGEON_NAMES_EARTH",
+          "file": "dungeons/[7]earth_dungeon/{}.txt"
+        },
+        {
+          "id": 87,
+          "name": "DUNGEON_NAMES_RAZADOR",
+          "file": "dungeons/[8]razador_dungeon/{}.txt"
+        },
+        {
+          "id": 88,
+          "name": "DUNGEON_NAMES_NEMERE",
+          "file": "dungeons/[9]nemere_dungeon/{}.txt"
+        },
+        {
+          "id": 90,
+          "name": "DUNGEON_NAMES_OCHAO",
+          "file": "dungeons/[10]ochao_dungeon/{}.txt"
+        },
+        {
+          "id": 91,
+          "name": "MAP_JOTUN_THRYM",
+          "file": "dungeons/[11]jotun_dungeon/{}.txt"
+        },
+        {
+          "id": 92,
+          "name": "DUNGEON_NAMES_MELEY",
+          "file": "dungeons/[12]meley_dungeon/{}.txt"
+        },
+        {
+          "id": 89,
+          "name": "WIKI_ENIGMA",
+          "file": "dungeons/[1]monkey_temple/Enigma.txt"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "WIKI_SYSTEM_CHAR_SYSTEMS",
+      "type": "system",
+      "btn": "syst",
+      "items": [
+        {
+          "id": 1,
+          "name": "WIKI_SYSTEM_DRAGON_ALCHEMY",
+          "file": "systems/dragon_alchemy.txt"
+        },
+        {
+          "id": 3,
+          "name": "WIKI_SYSTEM_COSTUMES",
+          "file": "systems/costumes.txt"
+        },
+        {
+          "id": 6,
+          "name": "WIKI_SYSTEM_MOUNTS",
+          "file": "systems/mount.txt"
+        },
+        {
+          "id": 12,
+          "name": "WIKI_SYSTEM_PETS",
+          "file": "systems/pet.txt"
+        },
+        {
+          "id": 18,
+          "name": "WIKI_SYSTEM_BIOLOGIST_QUEST",
+          "file": "systems/biologist.txt"
+        },
+        {
+          "id": 25,
+          "name": "PASSIVE_SKILL_TITLE",
+          "file": "systems/Passiveskills.txt"
+        },
+        {
+          "id": 27,
+          "name": "SASH_SKIN_TITLE",
+          "file": "systems/Sashskincostume.txt"
+        },
+        {
+          "id": 31,
+          "name": "WIKI_BUFFI_SYSTEM",
+          "file": "systems/buffi_system.txt"
+        },
+        {
+          "id": 32,
+          "name": "WIKI_67_BONUS_SYSTEM",
+          "file": "systems/67_bonus_system.txt"
+        },
+        {
+          "id": 37,
+          "name": "WIKI_AURA_PVP",
+          "file": "systems/aura_pvp.txt"
+        },
+        {
+          "id": 38,
+          "name": "WIKI_PET_ORB",
+          "file": "systems/pet_orb.txt"
+        },
+        {
+          "id": 41,
+          "name": "WIKI_BOUNS_INFO",
+          "file": "systems/bouns_info.txt"
+        },
+        {
+          "id": 43,
+          "name": "WIKI_ENERGY_CRYSTAL",
+          "file": "systems/energy_crystal.txt"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "WIKI_SYSTEM_GENERAL_SYSTEMS",
+      "type": "system",
+      "btn": "syst",
+      "items": [
+        {
+          "id": 4,
+          "name": "WIKI_SYSTEM_GUILDS",
+          "file": "systems/guilds.txt"
+        },
+        {
+          "id": 23,
+          "name": "CASUAL_SYSTEM_TILE",
+          "file": "systems/casual.txt"
+        },
+        {
+          "id": 33,
+          "name": "Exploration",
+          "file": "systems/exploration.txt"
+        },
+        {
+          "id": 34,
+          "name": "Shrines",
+          "file": "systems/shrines.txt"
+        },
+        {
+          "id": 35,
+          "name": "Fishing",
+          "file": "systems/peche.txt"
+        },
+        {
+          "id": 36,
+          "name": "Stone Exchange",
+          "file": "systems/stone_exchange.txt"
+        },
+        {
+          "id": 39,
+          "name": "WIKI_SYSTEM_MOKOKO",
+          "file": "systems/mokoko.txt"
+        },
+        {
+          "id": 40,
+          "name": "WIKI_MINING",
+          "file": "systems/mining.txt"
+        },
+        {
+          "id": 42,
+          "name": "WIKI_CHAMPION_ARENA",
+          "file": "systems/champion_arena.txt"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "WIKI_EVENTS",
+      "type": "system",
+      "btn": "event",
+      "items": [
+        {
+          "id": 120,
+          "name": "WIKI_DAILY_EVENTS",
+          "file": "events/daily_events_new.txt"
+        },
+        {
+          "id": 79,
+          "name": "RANK_BY_GUILD_DUNGEON",
+          "file": "dungeons/guild_dungeon.txt"
+        },
+        {
+          "id": 121,
+          "name": "WIKI_ZONE_CONTROL",
+          "file": "events/zone_control.txt"
+        },
+        {
+          "id": 128,
+          "name": "Torgny Trial",
+          "file": "events/torgny_event.txt"
+        },
+        {
+          "id": 129,
+          "name": "Karuak Ceremony",
+          "file": "events/karuak_ceremony.txt"
+        },
+        {
+          "id": 132,
+          "name": "WIKI_LEGENDARY",
+          "file": "events/legendary.txt"
+        },
+        {
+          "id": 134,
+          "name": "WIKI_OCTAVIO_FESTIVAL",
+          "file": "events/octavio_festival.txt"
+        },
+        {
+          "id": 131,
+          "name": "WIKI_BEGINNER_EVENT",
+          "file": "events/beginner_event.txt"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "WIKI_GUIDES",
+      "type": "system",
+      "btn": "guide",
+      "items": [
+        {
+          "id": 122,
+          "name": "Guide Start",
+          "file": "guides/lv_1_55.txt"
+        },
+        {
+          "id": 123,
+          "name": "WIKI_GUIDE_55_75",
+          "file": "guides/Guide 55-75.txt"
+        },
+        {
+          "id": 124,
+          "name": "WIKI_GUIDETRY",
+          "file": "guides/guidetry.txt"
+        },
+        {
+          "id": 130,
+          "name": "WIKI_GUIDEFAQ",
+          "file": "guides/GuideFAQ.txt"
+        }
+      ]
+    }
+  ]
+}

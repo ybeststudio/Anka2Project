@@ -1,0 +1,166 @@
+#############################################
+# PREREQUISITES
+#############################################
+*.d
+
+#############################################
+# OBJECT FILES
+#############################################
+*.slo
+*.lo
+*.o
+*.obj
+
+#############################################
+# PRECOMPILED HEADERS
+#############################################
+*.gch
+*.pch
+
+#############################################
+# DYNAMIC LIBRARIES
+#############################################
+*.so
+*.dylib
+*.dll
+
+#############################################
+# STATIC LIBRARIES
+#############################################
+*.lai
+*.la
+*.a
+*.lib
+
+# ÖZEL: FoxFS lib'leri hariç
+!FoxFS/**/*.lib
+
+#############################################
+# EXECUTABLES
+#############################################
+*.exe
+*.out
+*.app
+
+#############################################
+# DEBUG / BUILD FILES (KRİTİK)
+#############################################
+*.pdb
+*.ilk
+*.exp
+*.idb
+*.iobj
+*.ipdb
+
+#############################################
+# BUILD FOLDERS
+#############################################
+Debug/
+Release/
+x64/
+x86/
+build/
+bin/
+obj/
+
+#############################################
+# VISUAL STUDIO
+#############################################
+.vs/
+*.ipch
+*.db
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.db-shm
+*.db-wal
+
+#############################################
+# LOG / CACHE
+#############################################
+*.log
+*.cache
+*.tmp
+
+#############################################
+# CURSOR IDE
+#############################################
+.cursor/
+
+#############################################
+# YEDEK / YEREL DÜZENLEME (GITHUB DISI)
+#############################################
+*.bak
+Client/syserr/
+Source/Client/.vs/
+
+#############################################
+# SYSTEM FILES
+#############################################
+Thumbs.db
+.DS_Store
+
+#############################################
+# Source/Client/vs_files: ignore build output (Debug/Release, .obj, .tlog, ...); track only:
+#   *.vcxproj, *.vcxproj.user  (needs !**/ so Git can reach nested paths)
+#############################################
+Source/Client/vs_files/**
+!Source/Client/vs_files/**/
+!Source/Client/vs_files/**/*.vcxproj
+!Source/Client/vs_files/**/*.vcxproj.user
+!Source/Client/vs_files/**/*.filters
+!Source/Client/vs_files/**/*.user
+Source/Client/binary/
+Source/Client/build_logs/
+
+#############################################
+# 2026-10-16 yeniden yapılandırma: büyük / yerel / hassas dizinler
+#############################################
+# binary_unpack: only the client Python sources (root) are versioned
+Tools/binary_unpack/*
+!Tools/binary_unpack/root/
+Reference/
+Server/VM/
+_client_userdata_*/
+Tools/archiver/pack_studio/_data/
+Tools/archiver/pack_studio/settings.json
+Docs/Bilgi.txt
+__pycache__/
+*.pyc
+!Client/pack/**/*.pyc
+
+#############################################
+# Client runtime'da oyunun ürettiği dosyalar (dağıtıma girmez)
+# metin2.cfg ve channel.inf default olarak dağıtılır (channel.inf yoksa login crash)
+#############################################
+Client/log.txt
+Client/screenshot/
+Client/mark/*
+Client/UserData/
+Client/advanced_options.cfg
+Client/advanced_notifications.json
+Client/mouse.cfg
+Client/title_state.txt
+Client/bgm/lastplay.inf
+Client/lib/*_track
+Client/lib/respdialop.pcl
+
+#############################################
+# Client pack (kapalı FoxFS pack dosyaları — repoda tutulmaz; klasör .gitkeep ile kalır)
+#############################################
+Client/pack/**
+!Client/pack/.gitkeep
+
+#############################################
+# OPTIONAL (isteğe bağlı aç/kapat)
+#############################################
+# Client büyük assetleri LFS ile kullanıyorsan burayı açma
+# Client/
+
+# local agent settings (contain connection secrets)
+.claude/
+Source/**/*.pch
+CLAUDE.md
+AGENTS.md
+Docs/*_reference_*.md

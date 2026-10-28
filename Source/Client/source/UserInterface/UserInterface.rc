@@ -1,0 +1,184 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+#include "version.h" 
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include <Windows.h>
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+	IDS_POSSESSIVE_MORPHENE "'s"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United Kingdom) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SELECT_LOCALE DIALOGEX 0, 0, 182, 142
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "SELECT LOCALE"
+FONT 10, "Arial", 0, 0, 0x0
+BEGIN
+	PUSHBUTTON      "START",IDC_START,44,123,40,13
+	PUSHBUTTON      "EXIT",IDC_EXIT,96,123,40,13
+	LISTBOX         IDC_LOCALE_LIST,6,5,170,114,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+	"resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+	"#include ""afxres.h""\r\n"
+	"\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+	"\r\n"
+	"\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_NORMAL       CURSOR                  "Cursors\\cursor.cur"
+IDC_CURSOR_CHAIR        CURSOR                  "Cursors\\cursor_chair.cur"
+IDC_CURSOR_DOOR         CURSOR                  "Cursors\\cursor_door.cur"
+IDC_CURSOR_NO           CURSOR                  "Cursors\\cursor_no.cur"
+IDC_CURSOR_PICK         CURSOR                  "Cursors\\cursor_pick.cur"
+IDC_CURSOR_TALK         CURSOR                  "Cursors\\cursor_talk.cur"
+IDC_CURSOR_ATTACK       CURSOR                  "Cursors\\cursor_attack.cur"
+IDC_CURSOR_BUY          CURSOR                  "cursors\\cursor_buy.cur"
+IDC_CURSOR_SELL         CURSOR                  "cursors\\cursor_sell.cur"
+IDC_CURSOR_CAMERA_ROTATE CURSOR                 "Cursors\\cursor_camera_rotate.cur"
+IDC_CURSOR_HSIZE        CURSOR                  "Cursors\\cursor_hsize.cur"
+IDC_CURSOR_VSIZE        CURSOR                  "Cursors\\cursor_vsize.cur"
+IDC_CURSOR_HVSIZE       CURSOR                  "Cursors\\cursor_hvsize.cur"
+IDC_CURSOR_FISH         CURSOR                  "Cursors\\cursor_fish.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_METIN2              ICON                    "anka2.ico"
+BLOCK_METIN2              ICON                    "anka2_block.ico"
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+	IDD_SELECT_LOCALE, DIALOG
+	BEGIN
+		RIGHTMARGIN, 102
+		BOTTOMMARGIN, 141
+	END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION VER_FILE_VERSION
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "080003b5"
+		BEGIN
+			VALUE "CompanyName", "Ymir Entertainment"
+			VALUE "FileDescription", "Metin2Client"
+			VALUE "FileVersion",  VER_FILE_VERSION_STR "\0"
+			VALUE "InternalName", "Metin2Client"
+			VALUE "LegalCopyright", "Copyright (C) 2011"
+			VALUE "OriginalFilename", "Metin2Client.exe"
+			VALUE "ProductName", "Metin2Client"
+			VALUE "ProductVersion", "1, 0, 0, 1"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x800, 949
+	END
+END
+
+#endif    // English (United Kingdom) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

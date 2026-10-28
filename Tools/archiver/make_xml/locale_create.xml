@@ -1,0 +1,4 @@
+<ScriptFile>
+	<CreateEterPackXml Input="../binary_unpack/locale:locale/" ArchivePath="../../Client/pack/locale" XmlPath="xml/locale_create.xml">
+	</CreateEterPackXml>
+</ScriptFile>

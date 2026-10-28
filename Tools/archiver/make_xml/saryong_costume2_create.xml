@@ -1,0 +1,5 @@
+<ScriptFile>
+	<CreateEterPackXml Input="../binary_unpack/saryong_costume2:" ArchivePath="../../Client/pack/saryong_costume2" XmlPath="xml/saryong_costume2_create.xml">
+		<Ignore Pattern="icon/.*" />
+	</CreateEterPackXml>
+</ScriptFile>

@@ -1,0 +1,99 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=mokoko_overview;\
+    TEXT_1={WK:387};\
+]
+[IMG=icon/emoji/mokoko.png; Y=62; X=488]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=116; TABLE_HEADERS=Overview; TABLE_WIDTHS=520]
+[TR; H=48]
+[TD; TEXT={WK:378}; ALIGN=center]
+[TR; H=48]
+[TD; TEXT={WK:379}; ALIGN=center]
+[TR; H=48]
+[TD; TEXT={WK:380}; ALIGN=center]
+[TR; H=48]
+[TD; TEXT={WK:381}; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=337;\
+    ANCHOR=mokoko_finding;\
+    TEXT_1={WK:386};\
+]
+[\
+    DESCRIPTION_WITH_RENDER;\
+    X=10;\
+    Y=387;\
+    VNUM_1=9101;\
+    TEXT_1={WK:383};\
+    TEXT_2={WK:382};\
+    TEXT_3={WK:384};\
+    Y_PADDING=12;\
+]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=477;\
+    ANCHOR=mokoko_tracking;\
+    TEXT_1={WK:385};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=527; TABLE_HEADERS=Interface|Information; TABLE_WIDTHS=155|365]
+[TR; H=52]
+[TD; TEXT={WK:388}; ALIGN=center]
+[TD; TEXT={WK:389}; ALIGN=center]
+[TR; H=52]
+[TD; TEXT={WK:390}; ALIGN=center]
+[TD; TEXT={WK:391}; ALIGN=center]
+[TR; H=52]
+[TD; TEXT={WK:392}; ALIGN=center]
+[TD; TEXT={WK:393}; ALIGN=center]
+[TR; H=52]
+[TD; TEXT={WK:394}; ALIGN=center]
+[TD; TEXT={WK:395}; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=790;\
+    ANCHOR=mokoko_rewards;\
+    TEXT_1={WK:416};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=840; TABLE_HEADERS=Reward Type|How It Works; TABLE_WIDTHS=155|365]
+[TR; H=58]
+[TD; TEXT={WK:396}; ALIGN=center]
+[TD; TEXT={WK:397}; ALIGN=center]
+[TR; H=58]
+[TD; TEXT={WK:398}; ALIGN=center]
+[TD; TEXT={WK:399}; ALIGN=center]
+[TR; H=58]
+[TD; TEXT={WK:400}; ALIGN=center]
+[TD; TEXT={WK:401}; ALIGN=center]
+[TR; H=58]
+[TD; TEXT={WK:402}; ALIGN=center]
+[TD; TEXT={WK:410}; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1127;\
+    ANCHOR=mokoko_notes;\
+    TEXT_1={WK:374};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=1177; TABLE_HEADERS=Notes; TABLE_WIDTHS=520]
+[TR; H=48]
+[TD; TEXT={WK:411}; ALIGN=center]
+[TR; H=48]
+[TD; TEXT={WK:412}; ALIGN=center]
+[TR; H=48]
+[TD; TEXT={WK:414}; ALIGN=center]
+[TR; H=48]
+[TD; TEXT={WK:415}; ALIGN=center]
+[TABLE_END]

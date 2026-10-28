@@ -1,0 +1,10 @@
+[X=0;Y=0;FONT_SIZE=14b;COLOR=cebb98;NO_ADD_Y]*  ParentTxt(1)
+[X=0;Y=18;IMG=d:/ymir work/ui/game/wiki/layout/divider_small.png;]
+[X=0;Y=26+12*0;FONT_SIZE=13;NO_ADD_Y]ParentTxt(2)
+[X=0;Y=26+12*1;FONT_SIZE=13;NO_ADD_Y]ParentTxt(3)
+[X=0;Y=26+12*2;FONT_SIZE=13;NO_ADD_Y]ParentTxt(4)
+[X=-2;Y=70;IMG=d:/ymir work/ui/game/wiki/layout/showcase_long.png;]
+[X=7;Y=75;FONT_SIZE=13b;COLOR=D7B25B;NO_ADD_Y;]ParentTxt(5)
+[X=7;Y=88+12*0;FONT_SIZE=13;NO_ADD_Y]ParentTxt(6)
+[X=7;Y=88+12*1;FONT_SIZE=13;NO_ADD_Y]ParentTxt(7)
+[X=7;Y=88+12*2;FONT_SIZE=13;NO_ADD_Y]ParentTxt(8)

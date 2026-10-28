@@ -1,0 +1,18 @@
+attribute.o: attribute.cc ../../libthecore/include/stdafx.h \
+  ../../libthecore/include/typedef.h ../../libthecore/include/heart.h \
+  ../../libthecore/include/fdwatch.h ../../libthecore/include/socket.h \
+  ../../libthecore/include/kstbl.h ../../libthecore/include/hangul.h \
+  ../../libthecore/include/buffer.h ../../libthecore/include/signal.h \
+  ../../libthecore/include/log.h ../../libthecore/include/main.h \
+  ../../libthecore/include/utils.h ../../libthecore/include/crypt.h \
+  ../../libthecore/include/memcpy.h ../include/attribute.h
+grid.o: grid.cc ../../libthecore/include/memcpy.h ../../../common/stl.h \
+  ../include/grid.h
+targa.o: targa.cc ../../libthecore/include/stdafx.h \
+  ../../libthecore/include/typedef.h ../../libthecore/include/heart.h \
+  ../../libthecore/include/fdwatch.h ../../libthecore/include/socket.h \
+  ../../libthecore/include/kstbl.h ../../libthecore/include/hangul.h \
+  ../../libthecore/include/buffer.h ../../libthecore/include/signal.h \
+  ../../libthecore/include/log.h ../../libthecore/include/main.h \
+  ../../libthecore/include/utils.h ../../libthecore/include/crypt.h \
+  ../../libthecore/include/memcpy.h ../include/targa.h

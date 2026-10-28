@@ -1,0 +1,14 @@
+[X=0;Y=0;IMG=d:/ymir work/ui/game/wiki/guides/3.png;]
+[X=18;Y=7;ITEM=ParentVnum(1);SOCKET=0:0#1:100]
+[X=18;Y=7+(35*1);ITEM=ParentVnum(2);SOCKET=0:0#1:100]
+[X=18;Y=7+(35*2);ITEM=ParentVnum(3);SOCKET=0:0#1:100]
+[X=75;Y=0;NO_ADD_Y]ParentTxt(1)
+[X=75;Y=0+(12*1);NO_ADD_Y]ParentTxt(2)
+[X=75;Y=0+(12*2);NO_ADD_Y]ParentTxt(3)
+[X=75;Y=0+(12*3);NO_ADD_Y]ParentTxt(4)
+[X=75;Y=0+(12*4);NO_ADD_Y]ParentTxt(5)
+[X=75;Y=0+(12*5);NO_ADD_Y]ParentTxt(6)
+[X=75;Y=0+(12*6);NO_ADD_Y]ParentTxt(7)
+[X=75;Y=0+(12*7);NO_ADD_Y]ParentTxt(8)
+[X=75;Y=0+(12*8);NO_ADD_Y]ParentTxt(9)
+[X=75;Y=0+(12*9);NO_ADD_Y]ParentTxt(10)

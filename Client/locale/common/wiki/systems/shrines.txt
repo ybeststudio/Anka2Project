@@ -1,0 +1,98 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=shrine_overview;\
+    TEXT_1={WK:1};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=116; TABLE_HEADERS=Overview; TABLE_WIDTHS=240]
+[TR; H=48]
+[TD; TEXT={WK:88}; ALIGN=center]
+[TR; H=48]
+[TD; TEXT={WK:101}; ALIGN=center]
+[TR; H=48]
+[TD; TEXT={WK:105} carry a total of 1000 shrines limit.; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=291;\
+    ANCHOR=shrine_seals;\
+    TEXT_1={WK:105};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=341;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=55324;\
+    TEXT_1={WK:146};\
+    TEXT_1_Y_PADDING=4;\
+    Y_PADDING=12;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=411; TABLE_HEADERS=Tier|Seal|Drops From|Summons; TABLE_WIDTHS=75|145|150|150]
+[TR; H=54]
+[TD; TEXT=I; ALIGN=center]
+[TD; ITEM=55324]
+[TD; TEXT={WK:147} 40-70; ALIGN=center]
+[TD; TEXT=AppendPNJ(20853); ALIGN=center]
+[TR; H=54]
+[TD; TEXT=II; ALIGN=center]
+[TD; ITEM=55325]
+[TD; TEXT={WK:147} 80-90; ALIGN=center]
+[TD; TEXT=AppendPNJ(20854); ALIGN=center]
+[TR; H=54]
+[TD; TEXT=III; ALIGN=center]
+[TD; ITEM=55326]
+[TD; TEXT={WK:147} 90+; ALIGN=center]
+[TD; TEXT=AppendPNJ(20855); ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=630;\
+    ANCHOR=shrine_targets;\
+    TEXT_1={WK:148};\
+]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=680; TABLE_HEADERS=Shrine|Drop|Drop|Drop|Drop|Drop; TABLE_WIDTHS=140|76|76|76|76|76]
+[TR; H=64]
+[TD; TEXT=AppendPNJ(20853); ALIGN=center]
+[TD; ITEM=71052]
+[TD; ITEM=40209]
+[TD; ITEM=71001]
+[TD; ITEM=40811]
+[TD; ITEM=70102]
+[TR; H=64]
+[TD; TEXT=AppendPNJ(20854); ALIGN=center]
+[TD; ITEM=71084]
+[TD; ITEM=40714]
+[TD; ITEM=70043]
+[TD; ITEM=70005]
+[TD; ITEM=40215]
+[TR; H=64]
+[TD; TEXT=AppendPNJ(20855); ALIGN=center]
+[TD; ITEM=71084]
+[TD; ITEM=40815]
+[TD; ITEM=40822]
+[TD; ITEM=40804]
+[TD; ITEM=71025]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=929;\
+    ANCHOR=shrine_notes;\
+    TEXT_1={WK:374};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=979; TABLE_HEADERS=Notes; TABLE_WIDTHS=240]
+[TR; H=42]
+[TD; TEXT={WK:373}; ALIGN=center]
+[TR; H=42]
+[TD; TEXT={WK:163}; ALIGN=center]
+[TR; H=42]
+[TD; TEXT={WK:713}; ALIGN=center]
+[TABLE_END]

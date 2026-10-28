@@ -1,0 +1,5 @@
+<ScriptFile>
+	<CreateEterPack ArchivePath="../options_functionality_audit/levelup_patch/_mini_scratch/mini.pack" BuildKeyfile="false" >
+		<File ArchivedPath="locale/de/itemdesc.txt"><![CDATA[../options_functionality_audit/levelup_patch/_mini_scratch/stage/itemdesc.txt]]></File>
+	</CreateEterPack>
+</ScriptFile>

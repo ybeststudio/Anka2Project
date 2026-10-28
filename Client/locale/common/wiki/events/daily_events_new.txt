@@ -1,0 +1,320 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=Daily Events;\
+    TEXT_1={WK:500};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=116; TABLE_HEADERS=Column A; TABLE_WIDTHS=240]
+[TR; H=60]
+[TD; TEXT={WK:494}; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=186; TABLE_HEADERS=Column; TABLE_WIDTHS=240]
+[TR; H=32]
+[TD; TEXT={WK:495}; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=228; TABLE_HEADERS=Column A|Column 2|Column 3; TABLE_WIDTHS=140|140|140]
+[TR; H=32]
+[TD; TEXT={WK:429}; ALIGN=center]
+[TD; TEXT={WK:496}; ALIGN=center]
+[TD; TEXT={WK:497}; ALIGN=center]
+[TABLE_END]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=270; TABLE_HEADERS=Column A; TABLE_WIDTHS=240]
+[TR; H=48]
+[TD; TEXT={WK:498}; ALIGN=center]
+[TABLE_END]
+[\
+    TITLE;\
+    X=10;\
+    Y=353;\
+    ANCHOR=Metin Stone;\
+    TEXT_1={WK:499};\
+]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=403;\
+    TEXT_1={WK:501};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=453;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    TEXT_2={WK:502};\
+    TEXT_2_Y_PADDING=-11;\
+    Y_PADDING=12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_8441a355.png; Y=456; X=17]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=523;\
+    TEXT_1={WK:503};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=568;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    TEXT_1={WK:504};\
+    TEXT_1_Y_PADDING=6;\
+    Y_PADDING=12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_5c44c58e.png; Y=572; X=17]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=633; TABLE_HEADERS=Column A|Column 2|Column 3|Column 4; TABLE_WIDTHS=140|140|140|140]
+[TR; H=50]
+[TD; ITEM=70064]
+[TD; ITEM=40714]
+[TD; ITEM=50252]
+[TD; ITEM=80019]
+[TR; H=32]
+[TD; TEXT=AppendItem(70064); ALIGN=center]
+[TD; TEXT=AppendItem(40714); ALIGN=center]
+[TD; TEXT=AppendItem(40079); ALIGN=center]
+[TD; TEXT=AppendItem(80019); ALIGN=center]
+[TABLE_END]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=738;\
+    TEXT_1={WK:505};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=783;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=50011;\
+    TEXT_1={WK:506};\
+    Y_PADDING=10;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_6c8fd16e.png; Y=785; X=17]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=862;\
+    TEXT_1={WK:507};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=907;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=50037;\
+    TEXT_1={WK:508};\
+    Y_PADDING=10;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_715e89ac.png; Y=910; X=17]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=977;\
+    TEXT_1={WK:509};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1022;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=94961;\
+    TEXT_1={WK:510};\
+    Y_PADDING=10;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_dfcbf6d1.png; Y=1024; X=17]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1101;\
+    TEXT_1={WK:511};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1146;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    TEXT_1={WK:512};\
+    Y_PADDING=10;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_5953f5cc.png; Y=1148; X=17]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1223;\
+    TEXT_1={WK:513};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1268;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    TEXT_1={WK:514};\
+    TEXT_1_Y_PADDING=5;\
+    Y_PADDING=12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_8ba72c91.png; Y=1274; X=22]
+[\
+    TITLE;\
+    X=10;\
+    Y=1348;\
+    ANCHOR=Boss & Dungeon;\
+    TEXT_1={WK:515};\
+]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1398;\
+    TEXT_1={WK:516};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1443;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    TEXT_1={WK:517};\
+    TEXT_1_Y_PADDING=6;\
+    Y_PADDING=12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_397d6ef2.png; Y=1448; X=17]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1513;\
+    TEXT_1={WK:518};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1558;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    TEXT_1={WK:519};\
+    TEXT_1_Y_PADDING=6;\
+    Y_PADDING=12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_270b1a21.png; Y=1562; X=17]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1628;\
+    TEXT_1={WK:520};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1673;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    TEXT_1={WK:521};\
+    TEXT_1_Y_PADDING=5;\
+    Y_PADDING=12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_70018089.png; Y=1675; X=17]
+[\
+    TITLE;\
+    X=10;\
+    Y=1753;\
+    ANCHOR=Gathering & Progression;\
+    TEXT_1={WK:522};\
+]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1804;\
+    TEXT_1={WK:523};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1849;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    TEXT_1={WK:524};\
+    TEXT_1_Y_PADDING=6;\
+    Y_PADDING=12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_98fe3a44.png; Y=1850; X=17]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1919;\
+    TEXT_1={WK:525};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1964;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    TEXT_1={WK:526};\
+    TEXT_1_Y_PADDING=6;\
+    Y_PADDING=12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_465172df.png; Y=1967; X=17]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=2034;\
+    TEXT_1={WK:527};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=2079;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    TEXT_1={WK:528};\
+    TEXT_1_Y_PADDING=6;\
+    Y_PADDING=12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_4b3892e7.png; Y=2080; X=17]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=2149;\
+    TEXT_1={WK:529};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=2194;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    TEXT_1={WK:530};\
+    TEXT_1_Y_PADDING=6;\
+    Y_PADDING=12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_f98a2cac.png; Y=2197; X=17]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=2264;\
+    TEXT_1={WK:531};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=2309;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    TEXT_1={WK:532};\
+    TEXT_1_Y_PADDING=6;\
+    Y_PADDING=12;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_d92ae423.png; Y=2313; X=17]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=2388; TABLE_HEADERS=Column A|Column B; TABLE_WIDTHS=140|140]
+[TR; H=32]
+[TD; ITEM=70043]
+[TD; ITEM=70005]
+[TR; H=32]
+[TD; TEXT=AppendItem(70043) x5; ALIGN=center]
+[TD; TEXT=AppendItem(70005) x5; ALIGN=center]
+[TABLE_END]
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=2475;\
+    TEXT_1={WK:533};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=2520;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    TEXT_1={WK:534};\
+    TEXT_1_Y_PADDING=6;\
+]
+[IMG=d:/ymir work/ui/game/wiki/systems/daily_events_new/wiki_img_20260807_184793be.png; Y=2526; X=17]

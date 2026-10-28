@@ -1,0 +1,4 @@
+[IMG=d:/ymir work/ui/game/wiki/layout/showcase.png; Y=0;X=0]
+[IMG=ParentImg(1);Y=12;X=5]
+[X=80;Y=18;FONT_SIZE=14b;COLOR=D7B25B;NO_ADD_Y]ParentTxt(1) 
+[X=67;Y=38;FONT_SIZE=11;COLOR=D7B25B;NO_ADD_Y]ParentTxt(2) 

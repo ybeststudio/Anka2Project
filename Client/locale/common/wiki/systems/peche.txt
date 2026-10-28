@@ -1,0 +1,151 @@
+[\
+    TITLE;\
+    X=10;\
+    Y=66;\
+    ANCHOR=fishing_overview;\
+    TEXT_1={WK:1};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=116;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=27802;\
+    TEXT_1={WK:76};\
+    TEXT_1_Y_PADDING=4;\
+    Y_PADDING=12;\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=1; X=10; Y=186; TABLE_HEADERS=Column A; TABLE_WIDTHS=240]
+[TR; H=48]
+[TD; TEXT={WK:77}; ALIGN=center]
+[TR; H=48]
+[TD; TEXT={WK:79}; ALIGN=center]
+[TABLE_END]
+
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=300; TABLE_HEADERS=Object|Result; TABLE_WIDTHS=170|350]
+[TR; H=56]
+[TD; ITEM=27802]
+[TD; TEXT={WK:375}; ALIGN=center]
+[TR; H=56]
+[TD; ITEM=40713]
+[TD; TEXT={WK:81}; ALIGN=center]
+[TR; H=56]
+[TD; ITEM=27799]
+[TD; TEXT={WK:82}; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=525;\
+    ANCHOR=fishing_rewards;\
+    TEXT_1={WK:267};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=575; TABLE_HEADERS=Depth|Possible Objects; TABLE_WIDTHS=130|390]
+[TR; H=56]
+[TD; TEXT=0m+; ALIGN=center]
+[TD; ITEM=27799]
+[TR; H=56]
+[TD; TEXT=450m+; ALIGN=center]
+[TD; ITEM=40713]
+[TR; H=56]
+[TD; TEXT=450m+; ALIGN=center]
+[TD; ITEM=27802]
+[TR; H=56]
+[TD; TEXT=1200m+; ALIGN=center]
+[TD; ITEM=40714]
+[TR; H=56]
+[TD; TEXT=2500m+; ALIGN=center]
+[TD; ITEM=40715]
+[TR; H=56]
+[TD; TEXT=2500m+; ALIGN=center]
+[TD; ITEM=40716]
+[TR; H=56]
+[TD; TEXT=2500m+; ALIGN=center]
+[TD; ITEM=40717]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1006;\
+    TEXT_1={WK:83};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1056; TABLE_HEADERS=Depth|Maximum Amount; TABLE_WIDTHS=260|260]
+[TR; H=34]
+[TD; TEXT=0m+; ALIGN=center]
+[TD; TEXT=1; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=500m+; ALIGN=center]
+[TD; TEXT=2; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=900m+; ALIGN=center]
+[TD; TEXT=3; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=1300m+; ALIGN=center]
+[TD; TEXT=4; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=1700m+; ALIGN=center]
+[TD; TEXT=5; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=2100m+; ALIGN=center]
+[TD; TEXT=7; ALIGN=center]
+[TR; H=34]
+[TD; TEXT=2600m+; ALIGN=center]
+[TD; TEXT=9; ALIGN=center]
+[TABLE_END]
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1343;\
+    ANCHOR=fishing_bonuses;\
+    TEXT_1={WK:20};\
+]
+[\
+    DESCRIPTION_WITH_ITEM;\
+    X=10;\
+    Y=1393;\
+    IMG_1=d:/ymir work/ui/game/wiki/guides/1.png;\
+    VNUM_1=98504;\
+    TEXT_1={WK:84};\
+    TEXT_1_Y_PADDING=-1;\
+    Y_PADDING=11;\
+]
+
+
+[\
+    TITLE;\
+    X=10;\
+    Y=1473;\
+    ANCHOR=fishing_shop;\
+    TEXT_1=AppendPNJ(9009);\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=26; TABLE_HIDE_TITLE=0; X=10; Y=1523; TABLE_HEADERS=Shop Item|Cost; TABLE_WIDTHS=260|260]
+[TR; H=56]
+[TD; ITEM=40714]
+[TD; TEXT=10 x AppendItem(40712); ALIGN=center]
+[TR; H=56]
+[TD; ITEM=40719]
+[TD; TEXT=10 x AppendItem(40713); ALIGN=center]
+[TR; H=56]
+[TD; ITEM=40718]
+[TD; TEXT=AppendItem(40715)\nAppendItem(40716)\nAppendItem(40717); ALIGN=center]
+[TABLE_END]
+
+[\
+    SUBTITLE;\
+    X=10;\
+    Y=1738;\
+    TEXT_1={WK:86};\
+]
+[TABLE_START; TABLE_MAX_WIDTH=520; TABLE_HEAD_HEIGHT=0; TABLE_HIDE_TITLE=1; X=10; Y=1788; TABLE_HEADERS=A|B|C; TABLE_WIDTHS=173|173|174]
+[TR; H=56]
+[TD; ITEM=27870]
+[TD; ITEM=27886]
+[TD; ITEM=27880]
+[TR; H=56]
+[TD; ITEM=27864]
+[TD; ITEM=27892]
+[TD; ITEM=27891]
+[TABLE_END]
