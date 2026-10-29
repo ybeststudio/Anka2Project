@@ -1,6 +1,6 @@
 # Anka2 — Güncellemeler
 
-Sistemler hedef sunucudan reverse engineering ile çıkarılıp Anka2'ye 1:1 uyarlanır. Her yeni sistem kendi `ENABLE_*` define'ı ve `#ifdef` blokları arkasındadır (server `Source/Server/common/service.h`, client `Source/Client/source/UserInterface/Locale_inc.h`, Python tarafında `app.ENABLE_*`).
+Sistemler hedef sunuculardan reverse engineering ile çıkarılıp Anka2'ye 1:1 uyarlanır. Her yeni sistem kendi `ENABLE_*` define'ı ve `#ifdef` blokları arkasındadır (server `Source/Server/common/service.h`, client `Source/Client/source/UserInterface/Locale_inc.h`, Python tarafında `app.ENABLE_*`).
 
 ---
 
