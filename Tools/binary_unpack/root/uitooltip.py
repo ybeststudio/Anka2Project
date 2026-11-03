@@ -71,6 +71,7 @@ class ToolTip(ui.ThinBoard):
 	TOOL_TIP_HEIGHT = 10
 
 	TEXT_LINE_HEIGHT = 17
+	TABLE_BOTTOM_TRIM = 9	# leaves the same 6 px under the shortcut table as on its sides
 
 	TITLE_COLOR = grp.GenerateColor(0.9490, 0.9058, 0.7568, 1.0)
 	SPECIAL_TITLE_COLOR = grp.GenerateColor(1.0, 0.7843, 0.0, 1.0)
@@ -132,18 +133,19 @@ class ToolTip(ui.ThinBoard):
 		self.timeInfoList = []
 
 		self.defFontName = localeInfo.UI_DEF_FONT
+		self.tableEndHeight = -1
 		self.ClearToolTip()
 
 		# Tooltip instance'ýný listeye ekle
 		ToolTip._allToolTips.append(self)
 
 	def __ApplyReferenceBoard(self):
-		path = "d:/ymir work/ui/pattern/new_thinboard/"
+		path = "d:/ymir work/ui/pattern/new_thinboard_second/"
 		for index, direction in enumerate(("LeftTop", "LeftBottom", "RightTop", "RightBottom")):
-			self.Corners[index].LoadImage(path + "ThinBoard_Corner_" + direction + ".png")
+			self.Corners[index].LoadImage(path + "ThinBoard_Corner_" + direction + ".tga")
 		for index, direction in enumerate(("Left", "Right", "Top", "Bottom")):
-			self.Lines[index].LoadImage(path + "ThinBoard_Line_" + direction + ".png")
-		self.Base.SetColor(grp.GenerateColor(28.0 / 255.0, 23.0 / 255.0, 20.0 / 255.0, 178.0 / 255.0))
+			self.Lines[index].LoadImage(path + "ThinBoard_Line_" + direction + ".tga")
+		self.Base.SetColor(grp.GenerateColor(0.0, 0.0, 0.0, 133.0 / 255.0))	# same fill as the frame images
 
 	def __del__(self):
 		# Tooltip instance'ýný listeden çýkar
@@ -341,7 +343,10 @@ class ToolTip(ui.ThinBoard):
 			self.AlignTextLineHorizonalCenter()
 
 	def ResizeToolTip(self):
-		self.SetSize(self.toolTipWidth, self.TOOL_TIP_HEIGHT + self.toolTipHeight)
+		height = self.TOOL_TIP_HEIGHT + self.toolTipHeight
+		if self.toolTipHeight == self.tableEndHeight:	# the shortcut table is the last element
+			height -= self.TABLE_BOTTOM_TRIM
+		self.SetSize(self.toolTipWidth, height)
 
 	if app.ENABLE_COINS_INVENTORY:
 		def ResizeToolTipText(self, x, y):
@@ -354,8 +359,10 @@ class ToolTip(ui.ThinBoard):
 		width = 288
 		left = (self.toolTipWidth - width) / 2
 		top = self.toolTipHeight
-		headerColor = 0xCC2B1A10
-		rowColor = 0xBB1B120D
+		headerColor = 0xFF2D1C11
+		headerBorderColor = 0xFF42392F
+		rowColor = 0xFF1F1511
+		lineColor = 0xFF756657
 		labelColor = self.TITLE_COLOR
 		actionColor = self.NORMAL_COLOR
 		iconWidths = {"ctrl": 40, "alt": 40, "shift": 40, "mouse_left": 12, "mouse_right": 12}
@@ -398,15 +405,20 @@ class ToolTip(ui.ThinBoard):
 					x += 11
 
 		addBar(left, top, width, 21, headerColor)
-		addText("K\xfdsayol", left + 69, top + 3, labelColor, TRUE)
-		addText("\xdd\xfelem", left + 214, top + 3, labelColor, TRUE)
+		addBar(left, top, width, 1, headerBorderColor)
+		addBar(left, top + 20, width, 1, headerBorderColor)
+		addText(localeInfo.TOOLTIP_SHORTCUT_KEY, left + 69, top + 3, labelColor, TRUE)
+		addText(localeInfo.TOOLTIP_SHORTCUT_ACTION, left + 214, top + 3, labelColor, TRUE)
 		for index, row in enumerate(rows):
 			y = top + 21 + index * 28
 			addBar(left, y, width, 27, rowColor)
-			addBar(left + 138, y, 1, 27, 0xFF59483A)
+			addBar(left + 138, y, 1, 27, lineColor)
+			if index + 1 < len(rows):
+				addBar(left, y + 27, width, 1, lineColor)
 			addKeys(row[0], y)
 			addText(row[1], left + 147, y + 5, actionColor)
 		self.toolTipHeight += 21 + len(rows) * 28 + 5
+		self.tableEndHeight = self.toolTipHeight
 		self.ResizeToolTip()
 
 	def SetTitle(self, name):
@@ -526,6 +538,7 @@ class ItemToolTip(ToolTip):
 	)
 	WEAR_COUNT = len(WEAR_NAMES)
 
+	APPLY_RANDOM_TEXT_COLOR = 0xff7af6d4
 	AFFECT_DICT = {
 		item.APPLY_MAX_HP : localeInfo.TOOLTIP_MAX_HP,
 		item.APPLY_MAX_SP : localeInfo.TOOLTIP_MAX_SP,
@@ -2040,9 +2053,9 @@ class ItemToolTip(ToolTip):
 
 	def __AppendBuffiSealInfo(self):
 		# reference Buffi seal tooltip: PvP warning, unsummon note, level, the five skills, expired duration hint
-		self.AppendTextLine("Buffi PvP'de kullan\xfdlamaz:", self.NEGATIVE_COLOR)
-		self.__AppendBuffiSealLines("Ku\xfean\xfdld\xfd\xf0\xfd s\xfdrada di\xf0er oyunculara verdi\xf0iniz hasar 1 ile s\xfdn\xfdrland\xfdr\xfdl\xfdr.", self.NEGATIVE_COLOR)
-		self.__AppendBuffiSealLines("Buffi'yi manuel olarak \xe7\xfdkarmak kazand\xfdrd\xfd\xf0\xfd beceri etkilerini kald\xfdr\xfdr.", self.FONT_COLOR)
+		self.AppendTextLine(localeInfo.TOOLTIP_BUFFI_NO_PVP, self.NEGATIVE_COLOR)
+		self.__AppendBuffiSealLines(localeInfo.TOOLTIP_BUFFI_PVP_DAMAGE, self.NEGATIVE_COLOR)
+		self.__AppendBuffiSealLines(localeInfo.TOOLTIP_BUFFI_UNEQUIP, self.FONT_COLOR)
 
 		try:
 			import uiCompanion
@@ -2053,10 +2066,10 @@ class ItemToolTip(ToolTip):
 			return
 
 		self.AppendSpace(5)
-		self.AppendTextLine("Seviye: %d" % state["level"], self.POSITIVE_COLOR)
-		self.AppendTextLine("Beceri Puan\xfd: %d" % state.get("points", 0), self.POSITIVE_COLOR)
+		self.AppendTextLine(localeInfo.TOOLTIP_BUFFI_LEVEL % state["level"], self.POSITIVE_COLOR)
+		self.AppendTextLine(localeInfo.TOOLTIP_BUFFI_SKILL_POINTS % state.get("points", 0), self.POSITIVE_COLOR)
 		self.AppendSpace(5)
-		names = ("Kutsama", "Yans\xfdma", "Ejderha G\xfcc\xfc", "H\xfdz", "Hasar Art\xfd\xfe\xfd")
+		names = (localeInfo.TOOLTIP_BUFFI_SKILL_1, localeInfo.TOOLTIP_BUFFI_SKILL_2, localeInfo.TOOLTIP_BUFFI_SKILL_3, localeInfo.TOOLTIP_BUFFI_SKILL_4, localeInfo.TOOLTIP_BUFFI_SKILL_5)
 		for i in xrange(5):
 			lv = state["skills"][i]
 			if lv >= 40:
@@ -2075,15 +2088,17 @@ class ItemToolTip(ToolTip):
 			if remain > 0:
 				d, h, m = remain / 86400, (remain % 86400) / 3600, (remain % 3600) / 60
 				self.AppendSpace(5)
-				self.AppendTextLine("Kalan S\xfcre : %dg %dsa. %ddk." % (d, h, m))
+				self.AppendTextLine(localeInfo.TOOLTIP_BUFFI_REMAIN_TIME % (d, h, m))
 			else:
 				self.AppendSpace(5)
-				self.AppendTextLine("\xddteminizin s\xfcresi doldu.", self.NEGATIVE_COLOR)
-				self.AppendTextLine("A\xfea\xf0\xfddaki itemi kullanarak yenileyebilirsin.")
-				self.AppendTextLine("Buffi S\xfcresi (3 g\xfcn)", self.SPECIAL_TITLE_COLOR)
+				self.AppendTextLine(localeInfo.TOOLTIP_ITEM_EXPIRED, self.NEGATIVE_COLOR)
+				self.AppendTextLine(localeInfo.TOOLTIP_ITEM_RENEW_HINT)
+				self.AppendTextLine(localeInfo.TOOLTIP_BUFFI_DURATION_ITEM, self.SPECIAL_TITLE_COLOR)
 
 	def AddItemData(self, itemVnum, metinSlot, attrSlot = 0, flags = 0, unbindTime = 0, window_type = player.INVENTORY, slotIndex = -1, window_open = 0, set_value = 0):
 		self.itemVnum = itemVnum
+		# ENABLE_APPLY_RANDOM: where the rolled base bonuses of this item are read from
+		self.applyRandomPos = (window_type, slotIndex)
 		item.SelectItem(itemVnum)
 		itemType = item.GetItemType()
 		itemSubType = item.GetItemSubType()
@@ -2206,21 +2221,21 @@ class ItemToolTip(ToolTip):
 		if itemVnum == 57101 and metinSlot and metinSlot[0] > 0:
 			# ore taken out of a Buffi slot: socket 0 keeps the seconds it had left
 			self.AppendSpace(5)
-			self.AppendTextLine("Kalan s\xfcre: %s" % localeInfo.SecondToDHM(metinSlot[0]), self.NEGATIVE_COLOR)
+			self.AppendTextLine(localeInfo.TOOLTIP_REMAIN_TIME % localeInfo.SecondToDHM(metinSlot[0]), self.NEGATIVE_COLOR)
 
 		if itemVnum == 70605:
 			self.AppendSpace(5)
-			self.AppendTextLine("Geçerli olan zindanlar:" , self.NEGATIVE_COLOR)
-			self.AppendTextLine("Wju Tapýnaðý" , self.POSITIVE_COLOR)
-			self.AppendTextLine("Gemi Savunmasý" , self.POSITIVE_COLOR)
-			self.AppendTextLine("Ruhlar Maðarasý" , self.POSITIVE_COLOR)
-			self.AppendTextLine("Nemere Gözlemevi" , self.POSITIVE_COLOR)
-			self.AppendTextLine("TS-Nemere Gözlemevi" , self.POSITIVE_COLOR)
+			self.AppendTextLine(localeInfo.TOOLTIP_VALID_DUNGEONS , self.NEGATIVE_COLOR)
+			self.AppendTextLine(localeInfo.TOOLTIP_DUNGEON_WJU_TEMPLE , self.POSITIVE_COLOR)
+			self.AppendTextLine(localeInfo.TOOLTIP_DUNGEON_SHIP_DEFENSE , self.POSITIVE_COLOR)
+			self.AppendTextLine(localeInfo.TOOLTIP_DUNGEON_SOUL_CAVE , self.POSITIVE_COLOR)
+			self.AppendTextLine(localeInfo.TOOLTIP_DUNGEON_NEMERE , self.POSITIVE_COLOR)
+			self.AppendTextLine(localeInfo.TOOLTIP_DUNGEON_TS_NEMERE , self.POSITIVE_COLOR)
 			self.AppendTextLine("Rhae Agile'nin ini" , self.POSITIVE_COLOR)
 
 		if itemVnum >= 50255 and itemVnum <= 50260:
 			self.__TumunuAc("d:/ymir work/ui/ctrl+sag.tga")
-			self.AppendTextLine("(10x açmak için týklayýn.)", self.SPECIAL_POSITIVE_COLOR)
+			self.AppendTextLine(localeInfo.TOOLTIP_CLICK_OPEN_10X, self.SPECIAL_POSITIVE_COLOR)
 
 		if item.ITEM_TYPE_GACHA == itemType or\
 			item.ITEM_TYPE_GIFTBOX == itemType and\
@@ -2238,7 +2253,7 @@ class ItemToolTip(ToolTip):
 			itemVnum != 26048 and itemVnum != 26049 and itemVnum != 26050 and\
 			itemVnum != 26051:
 			self.__SandikIngoru("d:/ymir work/ui/shift+sag.tga")
-			self.AppendTextLine("(Sandýk içgörü için týklayýn.)", self.SPECIAL_POSITIVE_COLOR)
+			self.AppendTextLine(localeInfo.TOOLTIP_CLICK_CHEST_PREVIEW, self.SPECIAL_POSITIVE_COLOR)
 
 		if itemVnum >= 53001 and itemVnum <= 53292:
 			self.__AppendLimitInformation()
@@ -2878,11 +2893,11 @@ class ItemToolTip(ToolTip):
 		if slotIndex >= 0 and window_type == player.INVENTORY and not self.isShopItem:
 			shortcutRows = []
 			if getattr(app, 'ENABLE_OFFLINESHOP_SEARCH_SYSTEM', FALSE):
-				shortcutRows.append((("ctrl", "mouse_right"), "Ma\xf0aza Ara"))
+				shortcutRows.append((("ctrl", "mouse_right"), localeInfo.TOOLTIP_SHORTCUT_SHOP_SEARCH))
 			if getattr(app, 'ENABLE_WIKI_SYSTEM', FALSE):
-				shortcutRows.append((("ctrl", "alt", "mouse_left"), "Wikipedia'y\xfd a\xe7"))
+				shortcutRows.append((("ctrl", "alt", "mouse_left"), localeInfo.TOOLTIP_SHORTCUT_WIKI))
 			if getattr(app, 'ENABLE_RENEWAL_SWITCHBOT', FALSE) and constInfo.CanPutItemInSwitchbot(itemVnum):
-				shortcutRows.append((("shift", "mouse_left"), "Switchbot'a ta\xfe\xfd"))
+				shortcutRows.append((("shift", "mouse_left"), localeInfo.TOOLTIP_SHORTCUT_SWITCHBOT))
 			self.AppendShortcutTable(shortcutRows)
 
 		if app.ENABLE_MINI_GAME_CATCH_KING:
@@ -3288,7 +3303,7 @@ class ItemToolTip(ToolTip):
 			self.ModelPreviewText.SetFontName(self.defFontName)
 			self.ModelPreviewText.SetPackedFontColor(grp.GenerateColor(0.8824, 0.9804, 0.8824, 1.0))
 			self.ModelPreviewText.SetPosition(0, 5)
-			self.ModelPreviewText.SetText("Model Önizleme")  # localeInfo.RENDER_INFO yerine basit string
+			self.ModelPreviewText.SetText(localeInfo.TOOLTIP_MODEL_PREVIEW)  # localeInfo.RENDER_INFO yerine basit string
 			self.ModelPreviewText.SetOutline()
 			self.ModelPreviewText.SetFeather(False)
 			self.ModelPreviewText.SetWindowHorizontalAlignCenter()
@@ -3675,16 +3690,34 @@ class ItemToolTip(ToolTip):
 		except KeyError:
 			return "UNKNOWN_TYPE[%s] %s" % (affectType, affectValue)
 
+	def __GetApplyRandom(self, index):
+		# ENABLE_APPLY_RANDOM: the bonus rolled for an APPLY_RANDOM slot of the item
+		(window_type, slotIndex) = getattr(self, "applyRandomPos", (player.INVENTORY, -1))
+		if slotIndex < 0 or not hasattr(player, "GetItemApplyRandom"):
+			return (0, 0)
+		if window_type == player.SAFEBOX:
+			return safebox.GetItemApplyRandom(slotIndex, index)
+		if window_type == player.MALL:
+			return safebox.GetMallItemApplyRandom(slotIndex, index)
+		return player.GetItemApplyRandom(window_type, slotIndex, index)
+
 	def __AppendAffectInformation(self):
 		for i in xrange(item.ITEM_APPLY_MAX_NUM):
 			(affectType, affectValue) = item.GetAffect(i)
+			isApplyRandom = affectType == item.APPLY_RANDOM
+			if isApplyRandom:
+				(affectType, affectValue) = self.__GetApplyRandom(i)
 			if affectType in (item.APPLY_RANDOM, item.APPLY_MOUNT):
 				continue
 			if app.ENABLE_ACCE_COSTUME_SYSTEM and affectType == item.APPLY_ACCEDRAIN_RATE:
 				continue
 			affectString = self.__GetAffectString(affectType, affectValue)
 			if affectString:
-				self.AppendTextLine(affectString, self.GetChangeTextLineColor(affectValue))
+				# official: rolled APPLY_RANDOM bonuses use APPLY_RANDOM_TEXT_COLOR
+				if isApplyRandom:
+					self.AppendTextLine(affectString, self.APPLY_RANDOM_TEXT_COLOR)
+				else:
+					self.AppendTextLine(affectString, self.GetChangeTextLineColor(affectValue))
 
 	if app.ENABLE_CHANGE_LOOK_SYSTEM:
 		def AppendChangeLookInformation(self,window_type, slotIndex):

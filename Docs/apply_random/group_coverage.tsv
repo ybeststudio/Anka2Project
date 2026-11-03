@@ -1,0 +1,36 @@
+group	used_by (vnum range, slot)	items	levels	Owsap apply_random_table.txt	wiki data (file in wiki/)
+1	23000-23009 s0	Power Gloves	+0..+9	YES SUNGMA_STR/SungMaGlove (min/max)	Power_Gloves.raw ranges
+2	23010-23019 s0	Speed Gloves	+0..+9	YES SUNGMA_MOVE	Speed_Gloves.raw
+3	23020-23029 s0	Armour Gloves	+0..+9	YES SUNGMA_HP	Armour_Gloves.raw
+4	23030-23039 s0	Protection Gloves	+0..+9	YES SUNGMA_IMMUNE	Protection_Gloves.raw
+5	145xx/165xx/175xx s0 (all 120 jadite jewels)	Precision (HIT_PCT)	+0..+9	MISSING	*_Jadite_*.raw ranges +1~2 .. +10~14
+6	14580/16580/17570 s1 (Fog)	Sung Ma RES	+0..+9	YES SUNGMA_MOVE/SungMaBracelet	Fog_Jadite_*.raw ranges
+7	14590/16590/17580 s1 (Sun)	Sung Ma INT	+0..+9	YES SUNGMA_IMMUNE	Sun_Jadite_Bracelet.raw
+8	14600/16600/17590 s1 (Dark)	Sung Ma VIT	+0..+9	YES SUNGMA_HP	Dark_Jadite_Bracelet.raw
+9	14610/16610/17600 s1 (Smoky)	Sung Ma STR	+0..+9	YES SUNGMA_STR	Smoky_Jadite_Bracelet.raw
+10	81000-81009 s0	STR Will Talisman	+0..+9	YES SUNGMA_STR/SungMaTalisman	STR_Will_Talisman.raw
+11	81250-81259 s0	RES Will Talisman	+0..+9	YES SUNGMA_MOVE	(same ranges as STR page)
+12	81300-81309 s0	VIT Will Talisman	+0..+9	YES SUNGMA_HP	(same)
+13	81550-81559 s0	INT Will Talisman	+0..+9	YES SUNGMA_IMMUNE	(same)
+14-17	81000/81250/81300/81550 s1	Will Talismans random element	+0..+9	MISSING	STR_Will_Talisman.raw "Random element" +0~2% .. +15~17% (type list not given)
+18	Serpent weapons s0 (360-395,1210-1225,2230-2245,3250-3265,5200-5215,6150-6165,7330-7345)	+0..+15	16	YES (2 paths)	Serpent_*.raw full 5-version tables (identical across all 8 weapons)
+19	Serpent weapons s1	16	YES	same
+20	Serpent weapons s2	16	YES	same
+21	21310-21405 s0 (5 Serpent armours)	16	YES (missing Fall Resistance)	Serpent_Jacket.raw min~max per level
+22	21310-21405 s1	16	YES	same
+23	21310-21405 s2	16	YES (missing RESIST_MONSTER)	same
+24	23050-23059 s0	Serpent Gloves STR	+0..+9	YES SungMaSpecialGlove	Serpent_Gloves__STR_.raw
+25	23060-23069 s0	Serpent Gloves RES	+0..+9	YES	(same ranges)
+26	23070-23079 s0	Serpent Gloves VIT	+0..+9	YES	(same)
+27	23080-23089 s0	Serpent Gloves INT	+0..+9	YES	(same)
+28	81560-81569 s0	Mysterious Talisman (random Sung Ma)	+0..+9	MISSING	Mysterious_Talisman.raw ranges 1~2 .. 21~24
+29	81560-81569 s1	Mysterious Talisman (random element)	+0..+9	MISSING	Mysterious_Talisman.raw +1~30% .. +9~69% (suspicious)
+32	13210-13219 s0	Damnation Shield	+0..+9	MISSING	Damnation_Shield.raw (2 versions, 2 bonus families)
+34	18100-18109 s0	Titanium Belt	+0..+9	MISSING	Titanium_Belt.raw (2 versions: HP, SP, monster, yang/exp/def vs class)
+35	21410-21459 s1	Ruby armours	+0..+9	MISSING	Ruby_Armour.raw (Sung Ma; partial)
+36	21410-21459 s2	Ruby armours	+0..+9	MISSING	Ruby_Armour.raw (magic res/absorb, movespeed, monster; partial)
+37	12880-12895 s1	Serpent's Cowl	+0..+15	MISSING	Serpent's_Cowl.raw (2 versions, complete 16 levels)
+38	15470-15485 s0	Moonshine Boots	+0..+15	MISSING	Moonshine_Boots.raw (many '?' cells) + wiki_de/Mondschein-Stiefel.raw
+39	Moonshine weapons s0 (400-435,1230-1245,2250-2265,3270-3285,5220-5235,6170-6185,7350-7365)	16	MISSING	Moonshine_Sword.raw (5 versions, many blank cells)
+40	Moonshine weapons s1	16	MISSING	same, incomplete
+41	Moonshine weapons s2	16	MISSING	same, incomplete

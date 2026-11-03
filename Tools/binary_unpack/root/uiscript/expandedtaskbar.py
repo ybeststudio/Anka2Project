@@ -95,7 +95,7 @@ if app.ENABLE_HUNTING_SYSTEM:
 						"width" : 37,
 						"height" : 37,
 
-						"tooltip_text" : "Av Görevleri",
+						"tooltip_text" : uiScriptLocale.TASKBAR_HUNTING_QUESTS,
 
 						"default_image" : "d:/ymir work/ui/public/huntsystem/taskbar_button_normal.sub", 
 						"over_image" : "d:/ymir work/ui/public/huntsystem/taskbar_button_hover.sub", 
@@ -118,7 +118,7 @@ if app.ENABLE_RENEWAL_TELEPORT_SYSTEM:
 						"width" : 37,
 						"height" : 37,
 
-						"tooltip_text" : "Iþýnlanma",
+						"tooltip_text" : uiScriptLocale.TASKBAR_TELEPORT,
 
 						"default_image" : "d:/ymir work/ui/game/taskbarnew/tpbutton1.tga",
 						"over_image" : "d:/ymir work/ui/game/taskbarnew/tpbutton2.tga",
@@ -140,7 +140,7 @@ if app.ENABLE_SPECIAL_INVENTORY:
 						"width" : 37,
 						"height" : 37,
 
-						"tooltip_text" : "Özel Depo",
+						"tooltip_text" : uiScriptLocale.TASKBAR_SPECIAL_STORAGE,
 
 						"default_image" : "d:/ymir work/ui/game/taskbarnew/k_envanter_1.tga",
 						"over_image" : "d:/ymir work/ui/game/taskbarnew/k_envanter_2.tga",
@@ -162,7 +162,7 @@ if app.ENABLE_RENEWAL_OFFLINESHOP:
 						"width" : 37,
 						"height" : 37,
 
-						"tooltip_text" : "Çevrimdýþý Pazar",
+						"tooltip_text" : uiScriptLocale.TASKBAR_OFFLINE_SHOP,
 
 						"default_image" : "d:/ymir work/ui/game/taskbarnew/pazar_1.tga",
 						"over_image" : "d:/ymir work/ui/game/taskbarnew/pazar_2.tga",
@@ -205,7 +205,7 @@ window["children"][0]["children"] = window["children"][0]["children"] + [
 						"width" : 37,
 						"height" : 37,
 
-						"tooltip_text" : "Ýksirler",
+						"tooltip_text" : uiScriptLocale.TASKBAR_POTIONS,
 						"default_image" : "d:/ymir work/ui/game/taskbarnew/iksir_1.tga",
 						"over_image" : "d:/ymir work/ui/game/taskbarnew/iksir_2.tga",
 						"down_image" : "d:/ymir work/ui/game/taskbarnew/iksir_3.tga",
@@ -270,7 +270,7 @@ if app.ENABLE_AUTO_SELL_SYSTEM:
 						"width" : 37,
 						"height" : 37,
 
-						"tooltip_text" : "Otomatik Satýþ",
+						"tooltip_text" : uiScriptLocale.TASKBAR_AUTO_SELL,
 
 						"default_image" : "d:/ymir work/ui/game/taskbarnew/sil_1.tga",
 						"over_image" : "d:/ymir work/ui/game/taskbarnew/sil_2.tga",
@@ -292,7 +292,7 @@ if app.ENABLE_BIOLOGIST_SYSTEM:
 						"width" : 37,
 						"height" : 37,
 
-						"tooltip_text" : "Biyolog Görevleri",
+						"tooltip_text" : uiScriptLocale.TASKBAR_BIOLOG_QUESTS,
 
                         "default_image" : "d:/ymir work/ui/game/taskbarnew/taskbar_button_normal.sub",
                         "over_image" : "d:/ymir work/ui/game/taskbarnew/taskbar_button_hover.sub",

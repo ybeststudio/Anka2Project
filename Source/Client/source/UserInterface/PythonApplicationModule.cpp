@@ -324,6 +324,18 @@ PyObject *appGetImageInfo(PyObject *poSelf, PyObject *poArgs)
 		uWidth=ilGetInteger(IL_IMAGE_WIDTH);
 		uHeight=ilGetInteger(IL_IMAGE_HEIGHT);
 	}
+#ifdef ENABLE_GUILD_MARK_PNG
+	else
+	{
+		D3DXIMAGE_INFO kInfo;
+		if (SUCCEEDED(D3DXGetImageInfoFromFileA(szFileName, &kInfo)))
+		{
+			canLoad=TRUE;
+			uWidth=kInfo.Width;
+			uHeight=kInfo.Height;
+		}
+	}
+#endif
 
 	ilDeleteImages(1, &uImg);
 
@@ -3696,6 +3708,41 @@ void initapp()
 	PyModule_AddIntConstant(poModule, "ENABLE_BUFFI_CHANGE_SEX", 1);
 #else
 	PyModule_AddIntConstant(poModule, "ENABLE_BUFFI_CHANGE_SEX", 0);
+#endif
+#ifdef ENABLE_WHISPER_MESSENGER
+	PyModule_AddIntConstant(poModule, "ENABLE_WHISPER_MESSENGER", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_WHISPER_MESSENGER", 0);
+#endif
+#ifdef ENABLE_GUILD_APPLICATION
+	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_APPLICATION", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_APPLICATION", 0);
+#endif
+#ifdef ENABLE_MESSENGER_DETAILS
+	PyModule_AddIntConstant(poModule, "ENABLE_MESSENGER_DETAILS", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_MESSENGER_DETAILS", 0);
+#endif
+#ifdef ENABLE_GUILD_MARK_PNG
+	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_MARK_PNG", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_MARK_PNG", 0);
+#endif
+#ifdef ENABLE_GUILD_GRADE_RENEWAL
+	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_GRADE_RENEWAL", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_GRADE_RENEWAL", 0);
+#endif
+#ifdef ENABLE_GUILD_RENEWAL_BAERIM
+	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_RENEWAL_BAERIM", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_RENEWAL_BAERIM", 0);
+#endif
+#ifdef ENABLE_BRAVE_CAPE_RENEWAL
+	PyModule_AddIntConstant(poModule, "ENABLE_BRAVE_CAPE_RENEWAL", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_BRAVE_CAPE_RENEWAL", 0);
 #endif
 #ifdef ENABLE_SKILL_UPGRADE
 	PyModule_AddIntConstant(poModule, "ENABLE_SKILL_UPGRADE", 1);

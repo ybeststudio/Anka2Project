@@ -632,7 +632,17 @@ void CClientManager::RESULT_SAFEBOX_LOAD(CPeer * pkPeer, SQLMsg * msg)
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 				"transmutation, "
 #endif
+#ifdef ENABLE_APPLY_RANDOM
+#ifdef ENABLE_SET_ITEM
+				"set_value, "
+#endif
+#endif
 				"socket0, socket1, socket2, "
+#ifdef ENABLE_APPLY_RANDOM
+#ifdef ENABLE_SEALBIND_SYSTEM
+				"bind, "
+#endif
+#endif
 				"attrtype0, attrvalue0, "
 				"attrtype1, attrvalue1, "
 				"attrtype2, attrvalue2, "
@@ -640,6 +650,9 @@ void CClientManager::RESULT_SAFEBOX_LOAD(CPeer * pkPeer, SQLMsg * msg)
 				"attrtype4, attrvalue4, "
 				"attrtype5, attrvalue5, "
 				"attrtype6, attrvalue6 "
+#ifdef ENABLE_APPLY_RANDOM
+				", " "randomtype0, randomvalue0, randomrow0, randomtype1, randomvalue1, randomrow1, randomtype2, randomvalue2, randomrow2 "
+#endif
 				"FROM item%s WHERE owner_id=%d AND window='%s'",
 				GetTablePostfix(), pi->account_id, pi->ip[0] == 0 ? "SAFEBOX" : "MALL");
 
@@ -1395,7 +1408,11 @@ void CClientManager::QUERY_ITEM_SAVE(CPeer * pkPeer, const char * c_pData)
 
 			delete c;
 		}
+#ifdef ENABLE_APPLY_RANDOM
+		char szQuery[QUERY_MAX_LEN];
+#else
 		char szQuery[512];
+#endif
 		snprintf(szQuery, sizeof(szQuery),
 			"REPLACE INTO item%s (id, owner_id, window, pos, count, vnum, "
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
@@ -1411,7 +1428,11 @@ void CClientManager::QUERY_ITEM_SAVE(CPeer * pkPeer, const char * c_pData)
 			"attrtype3, attrvalue3, "
 			"attrtype4, attrvalue4, "
 			"attrtype5, attrvalue5, "
-			"attrtype6, attrvalue6) "
+			"attrtype6, attrvalue6"
+#ifdef ENABLE_APPLY_RANDOM
+			", " "randomtype0, randomvalue0, randomrow0, randomtype1, randomvalue1, randomrow1, randomtype2, randomvalue2, randomrow2"
+#endif
+			") "
 			"VALUES(%u, %u, %d, %d, %u, %u, "
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 			"%d, "
@@ -1419,7 +1440,11 @@ void CClientManager::QUERY_ITEM_SAVE(CPeer * pkPeer, const char * c_pData)
 #ifdef ENABLE_SET_ITEM
 			"%u, "
 #endif
-			"%d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d)",
+			"%d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d"
+#ifdef ENABLE_APPLY_RANDOM
+			", %d, %d, %d, %d, %d, %d, %d, %d, %d"
+#endif
+			")",
 			GetTablePostfix(),
 			p->id,
 			p->owner,
@@ -1442,7 +1467,13 @@ void CClientManager::QUERY_ITEM_SAVE(CPeer * pkPeer, const char * c_pData)
 			p->aAttr[3].bType, p->aAttr[3].sValue,
 			p->aAttr[4].bType, p->aAttr[4].sValue,
 			p->aAttr[5].bType, p->aAttr[5].sValue,
-			p->aAttr[6].bType, p->aAttr[6].sValue);
+			p->aAttr[6].bType, p->aAttr[6].sValue
+#ifdef ENABLE_APPLY_RANDOM
+			, p->aApplyRandom[0].bType, p->aApplyRandom[0].sValue, p->abApplyRandomRow[0]
+			, p->aApplyRandom[1].bType, p->aApplyRandom[1].sValue, p->abApplyRandomRow[1]
+			, p->aApplyRandom[2].bType, p->aApplyRandom[2].sValue, p->abApplyRandomRow[2]
+#endif
+			);
 		CDBManager::instance().ReturnQuery(szQuery, QID_ITEM_SAVE, pkPeer->GetHandle(), NULL);
 	}
 	else

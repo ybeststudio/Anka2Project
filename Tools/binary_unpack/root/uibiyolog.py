@@ -55,20 +55,20 @@ LEVEL_LIST = {
 }
 
 BONUSES_LIST = {
-	1 : "Hareket Hýzý %10|",
-	2 : "Saldýrý Hýzý %5|",
-	3 : "Defans %60|",
-	4 : "Saldýrý Deðeri %50|",
-	5 : "Hareket Hýzý %11|Defans %10|",
-	6 : "Saldýrý Hýzý %6|Saldýrý Deðeri %10|",
-	7 : "Tüm karakter saldýrýlarýna karþý savunma þansý %10|",
-	8 : "Yarý insanlara karþý güçlü %10|",
-	9 : "Maks. HP +1000|Defans +120|Saldýrý Deðeri +50|",
-	10: "Maks. HP +1100|Defans +140|Saldýrý Deðeri +60|",
-	11 : "Tüm karakter saldýrýlarýna karþý savunma þansý %2|",
-	12 : "Tüm karakter saldýrýlarýna karþý savunma þansý %3|",
-	13 : "Tüm karakter saldýrýlarýna karþý savunma þansý %4|",
-	14 : "Tüm karakter saldýrýlarýna karþý savunma þansý %6|",
+	1 : localeInfo.BIOLOG_REWARD_1,
+	2 : localeInfo.BIOLOG_REWARD_2,
+	3 : localeInfo.BIOLOG_REWARD_3,
+	4 : localeInfo.BIOLOG_REWARD_4,
+	5 : localeInfo.BIOLOG_REWARD_5,
+	6 : localeInfo.BIOLOG_REWARD_6,
+	7 : localeInfo.BIOLOG_REWARD_7,
+	8 : localeInfo.BIOLOG_REWARD_8,
+	9 : localeInfo.BIOLOG_REWARD_9,
+	10: localeInfo.BIOLOG_REWARD_10,
+	11 : localeInfo.BIOLOG_REWARD_11,
+	12 : localeInfo.BIOLOG_REWARD_12,
+	13 : localeInfo.BIOLOG_REWARD_13,
+	14 : localeInfo.BIOLOG_REWARD_14,
 }
 
 TEXT_LIST = [
@@ -141,7 +141,7 @@ class BiyologBonusSelectDialog(ui.ScriptWindow):
 
 	def Accept(self):
 		if self.selectButton == -1:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "Bonus seçimi yapmadin.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.BIOLOG_NO_BONUS_SELECTED)
 			return
 		
 		if self.selectButton > 0 and self.selectButton <= 3:
@@ -340,7 +340,7 @@ class BiyologWindow(ui.ScriptWindow):
 		if player.GetStatus(player.LEVEL) < int(LEVEL_LIST[self.Mission]):
 			import uiCommon
 			self.uyari2 = uiCommon.PopupDialog()
-			self.uyari2.SetText("Görev verebilmek icin Seviyen %s olmalý." % LEVEL_LIST[self.Mission])
+			self.uyari2.SetText(localeInfo.BIOLOG_LEVEL_REQUIRED % LEVEL_LIST[self.Mission])
 			self.uyari2.Open()
 			return
 			
@@ -364,11 +364,11 @@ class BiyologWindow(ui.ScriptWindow):
 
 	def Open(self):
 		if self.Mission > 10:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "Biyolog görevlerini tamamladýn.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.BIOLOG_ALL_DONE)
 			return
 			
 		if player.GetStatus(player.LEVEL) < 30:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "Biyolog görevini 30 level'den sonra alabilirsin.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.BIOLOG_MIN_LEVEL)
 			return
 			
 		leftTime = max(0, self.remainingTime- app.GetGlobalTimeStamp())
@@ -414,7 +414,7 @@ class BiyologWindow(ui.ScriptWindow):
 				self.boardElement["element"]["giftButton"].SetText(uiScriptLocale.BIYOLOG_BUTTON_03)
 				self.boardElement["element"]["giftButton"].SetEvent(ui.__mem_func__(self.GiftButton))
 			elif self.MissionState == 3 and self.Mission in [9, 10]:
-				self.boardElement["element"]["giftButton"].SetText("Bonus Seç")
+				self.boardElement["element"]["giftButton"].SetText(localeInfo.BIOLOG_SELECT_BONUS)
 				self.boardElement["element"]["giftButton"].SetEvent(ui.__mem_func__(self.__BonusSelectDialog))
 			else:
 				self.boardElement["element"]["giftButton"].SetText(uiScriptLocale.BIYOLOG_BUTTON_04)
@@ -533,8 +533,8 @@ class BiyologWindow(ui.ScriptWindow):
 			
 	def __ShowToolTip(self):
 		self.toolTip.ClearToolTip()
-		self.toolTip.AppendTextLine("Toplu verme iþlemini durdurmak istiyorsanýz", grp.GenerateColor(0.6911, 0.8754, 0.7068, 1.0))
-		self.toolTip.AppendTextLine("tekrar butona týklayýn.", grp.GenerateColor(0.6911, 0.8754, 0.7068, 1.0))
+		self.toolTip.AppendTextLine(localeInfo.BIOLOG_BULK_STOP_1, grp.GenerateColor(0.6911, 0.8754, 0.7068, 1.0))
+		self.toolTip.AppendTextLine(localeInfo.BIOLOG_BULK_STOP_2, grp.GenerateColor(0.6911, 0.8754, 0.7068, 1.0))
 		self.toolTip.Show()
 		
 	def __HideToolTip(self):
@@ -593,7 +593,7 @@ class BiyologWindow(ui.ScriptWindow):
 
 	def OnUpdate(self):
 		if self.Mission in [9, 10] and self.MissionState == 3:
-			self.LeftTime.SetText("Bonus Seç")
+			self.LeftTime.SetText(localeInfo.BIOLOG_SELECT_BONUS)
 			return
 		if self.ItemData["slots"].has_key(1):
 			if self.LeftTime.GetText() != uiScriptLocale.BIYOLOG_STATE:

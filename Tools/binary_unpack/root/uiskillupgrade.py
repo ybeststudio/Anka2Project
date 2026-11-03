@@ -54,16 +54,14 @@ def CheckAlerts(interface):
 		if not endTime or now < endTime:	# 0: armed, waits for the next read delay
 			continue
 		del g_whisperAlert[key]
-		chat.AppendWhisper(chat.WHISPER_TYPE_SYSTEM, "[Hat\xfdrlat\xfdc\xfd]", "%s becerisinin bekleme s\xfcresi doldu, art\xfdk kitap okuyabilirsin." % name)
+		chat.AppendWhisper(chat.WHISPER_TYPE_SYSTEM, localeInfo.SKILL_UPGRADE_REMINDER_SENDER, localeInfo.SKILL_UPGRADE_REMINDER_READY % name)
 		if interface:
-			interface.RecvWhisper("[Hat\xfdrlat\xfdc\xfd]")
+			interface.RecvWhisper(localeInfo.SKILL_UPGRADE_REMINDER_SENDER)
 			wnd = getattr(interface, "wndSkillUpgrade", None)
 			if wnd:
 				wnd.RefreshWhisperToggle()
 
 
-def _T(name, default):
-	return getattr(localeInfo, name, default)
 
 
 def _BuffiGrade(level):
@@ -149,14 +147,14 @@ class SkillUpgradeWindow(ui.BoardWithTitleBar):
 		self.SetSize(WIDTH, HEIGHT)
 		self.AddFlag("movable")
 		self.AddFlag("float")
-		self.SetTitleName(_T("SKILL_UPGPRADE_TITLE", "Beceri Y\xfckseltici"))
+		self.SetTitleName(localeInfo.SKILL_UPGPRADE_TITLE)
 		self.SetCloseEvent(ui.__mem_func__(self.Close))
 		self.SetCenterPosition()
 
 		self.__Image(self, SKILL_PATH.format("/bg.png"), 7, 30)
 
 		self.tabs = []
-		titles = (_T("SKILL_UPGPRADE_STANDARD", "Standart"), _T("SKILL_UPGPRADE_PASSIVE", "Pasif"), _T("SKILL_UPGPRADE_BUFFI", "Buffi"))
+		titles = (localeInfo.SKILL_UPGPRADE_STANDARD, localeInfo.SKILL_UPGPRADE_PASSIVE, localeInfo.SKILL_UPGPRADE_BUFFI)
 		for i in xrange(3):
 			btn = ui.RadioButton()
 			btn.SetParent(self)
@@ -175,7 +173,7 @@ class SkillUpgradeWindow(ui.BoardWithTitleBar):
 		alarm.SetParent(self)
 		alarm.SetPosition(219, 61)
 		alarm.SetEvent(ui.__mem_func__(self.ActivateWhisperAlert))
-		alarm.SetToolTipText("Bekleme s\xfcresi bitince haber ver", 0, -23)
+		alarm.SetToolTipText(localeInfo.SKILL_UPGRADE_ALARM_TOOLTIP, 0, -23)
 		alarm.Show()
 		self.alarmButton = alarm
 		self.RefreshWhisperToggle()
@@ -270,8 +268,8 @@ class SkillUpgradeWindow(ui.BoardWithTitleBar):
 		btn.SetUpVisual(COMMON_PATH.format("/button_large_normal.png"))
 		btn.SetOverVisual(COMMON_PATH.format("/button_large_hover.png"))
 		btn.SetDownVisual(COMMON_PATH.format("/button_large_down.png"))
-		btn.SetText("Ba\xfelang\xfd\xe7")
-		btn.SetToolTipText("Ctrl + T\xfdkla: animasyonsuz x10", 0, -23)
+		btn.SetText(localeInfo.SKILL_UPGRADE_START)
+		btn.SetToolTipText(localeInfo.SKILL_UPGRADE_START_TOOLTIP, 0, -23)
 		btn.SetEvent(ui.__mem_func__(self.StartUpgrade))
 		btn.Show()
 		self.startButton = btn
@@ -401,11 +399,11 @@ class SkillUpgradeWindow(ui.BoardWithTitleBar):
 		skillIndex = self.__SelectedSkill()
 		self.RefreshWhisperToggle()
 		if not skillIndex:
-			self.chooseText.SetText(_T("SKILL_UPGRADE_TEXT", "Bir Beceri Se\xe7in"))
+			self.chooseText.SetText(localeInfo.SKILL_UPGRADE_TEXT)
 			return
 		grade = self.skills[self.selected][1]
 		name = skill.GetSkillName(skillIndex, min(grade, 3)) or skill.GetSkillName(skillIndex)
-		self.chooseText.SetText("Beceri: |cFFc79e65%s|h|r" % name)
+		self.chooseText.SetText(localeInfo.SKILL_UPGRADE_SELECTED_SKILL % name)
 
 	# server: SkillUpgradeInfo <type> <skill> <book vnum> <book count> <progress> <need> <remaining delay> <maxed>
 	def SetUpgradeInfo(self, upgradeType, skillIndex, bookVnum, count, progress, need, remain, maxed):
@@ -427,7 +425,7 @@ class SkillUpgradeWindow(ui.BoardWithTitleBar):
 			return
 		bookVnum, count, progress, need, maxed = self.info
 		if maxed:
-			self.bookText.SetText(_T("SKILL_UPGRADE_ALREADY_MAX", "Bu beceri zaten maksimum seviyede."))
+			self.bookText.SetText(localeInfo.SKILL_UPGRADE_ALREADY_MAX)
 			self.gauge.SetPercentage(1, 1)
 		elif bookVnum:
 			self.bookSlot.SetItemSlot(0, bookVnum, count)
@@ -435,7 +433,7 @@ class SkillUpgradeWindow(ui.BoardWithTitleBar):
 			self.bookText.SetText("%s |cFFc79e65[%d / %d]|h|r" % (item.GetItemName(), progress, need))
 			self.gauge.SetPercentage(progress, max(1, need))
 		else:
-			self.bookText.SetText("Bu beceri hen\xfcz kitapla geli\xfetirilemez.")
+			self.bookText.SetText(localeInfo.SKILL_UPGRADE_NO_BOOK)
 			self.gauge.SetPercentage(0, 1)
 		self.bookSlot.RefreshSlot()
 		self.__RefreshChanceText()
@@ -443,9 +441,9 @@ class SkillUpgradeWindow(ui.BoardWithTitleBar):
 	def __RefreshChanceText(self):
 		masterBook = self.info and self.info[0] not in (0, 50513) and self.info[2] < self.info[3]
 		if masterBook and g_boostState[1] and player.GetItemCountByVnum(CHANCE_ITEM_VNUM) > 0 and self.upgradeType != UPGRADE_PASSIF_SKILL:
-			self.chanceText.SetText("Okuma ba\xfear\xfds\xfdz olamaz")
+			self.chanceText.SetText(localeInfo.READING_CANNOT_FAIL)
 		else:
-			self.chanceText.SetText(_T("READING_MAY_FAIL", "Okuma ba\xfear\xfds\xfdz olabilir"))
+			self.chanceText.SetText(localeInfo.READING_MAY_FAIL)
 
 	def RefreshItemSlot(self):
 		for i, vnum in enumerate(BOOST_ITEMS):
@@ -481,7 +479,7 @@ class SkillUpgradeWindow(ui.BoardWithTitleBar):
 		vnum = BUFFI_MASTER_ITEMS[0 if self.info[0] != 50513 else 1]
 		if player.GetItemCountByVnum(vnum) <= 0:
 			item.SelectItem(vnum)
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "Gerekli beceri kitab\xfdna sahip de\xf0ilsiniz.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.SKILL_UPGRADE_NO_BOOK_ITEM)
 			return
 		self.__DoSendRequest(1, False, True)
 
@@ -508,7 +506,7 @@ class SkillUpgradeWindow(ui.BoardWithTitleBar):
 		if self.info and self.info[0]:
 			self.toolTipItem.SetItemToolTip(self.info[0])
 			if self.upgradeType == UPGRADE_BUFFI_SKILL:
-				self.toolTipItem.AppendTextLine("Sa\xf0 t\xfdk: Ustal\xfdk kitab\xfd / ta\xfe\xfd kullan", COLOR_GOLD)
+				self.toolTipItem.AppendTextLine(localeInfo.SKILL_UPGRADE_RIGHT_CLICK_HINT, COLOR_GOLD)
 
 	def OverInItemSlot(self, index, *args):
 		if index < len(BOOST_ITEMS):
@@ -537,24 +535,24 @@ class SkillUpgradeWindow(ui.BoardWithTitleBar):
 		# Toggle whisper alert for the currently selected skill, return new state as bool.
 		skillIndex = self.__SelectedSkill()
 		if not skillIndex:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, _T("UPGRADE_SKILL_CHOOSE_SKILL", "Y\xfckseltmek i\xe7in bir beceri se\xe7melisiniz."))
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.UPGRADE_SKILL_CHOOSE_SKILL)
 			return False
 		key = (self.upgradeType, skillIndex)
 		name = skill.GetSkillName(skillIndex)
 		if key in g_whisperAlert:
 			del g_whisperAlert[key]
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "%s becerisi i\xe7in hat\xfdrlatma kapat\xfdld\xfd." % name)
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.SKILL_UPGRADE_ALARM_OFF % name)
 		else:
 			active = self.alertKey == key and self.readEnd > app.GetTime()
 			g_whisperAlert[key] = (self.readEnd if active else 0.0, name)
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "%s becerisinin bekleme s\xfcresi bitince haber verilecek." % name)
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.SKILL_UPGRADE_ALARM_ON % name)
 		self.RefreshWhisperToggle()
 		return key in g_whisperAlert
 
 	def CheckTime(self):
 		left = int(self.readEnd - app.GetTime()) if self.info else 0
 		if left > 0:
-			self.cooldownText.SetText("Bekleme s\xfcresi: %02d:%02d:%02d" % (left / 3600, (left % 3600) / 60, left % 60))
+			self.cooldownText.SetText(localeInfo.SKILL_UPGRADE_COOLDOWN % (left / 3600, (left % 3600) / 60, left % 60))
 			self.cooldownText.SetPackedFontColor(COLOR_RED)
 		else:
 			self.cooldownText.SetText("")
@@ -573,10 +571,10 @@ class SkillUpgradeWindow(ui.BoardWithTitleBar):
 	# ------------------------------------------------------------------ upgrade
 	def CheckCanStart(self):
 		if not self.__SelectedSkill():
-			chat.AppendChat(chat.CHAT_TYPE_INFO, _T("UPGRADE_SKILL_CHOOSE_SKILL", "Y\xfckseltmek i\xe7in bir beceri se\xe7melisiniz."))
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.UPGRADE_SKILL_CHOOSE_SKILL)
 			return False
 		if self.info and self.info[4]:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, _T("SKILL_UPGRADE_ALREADY_MAX", "Bu beceri zaten maksimum seviyede."))
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.SKILL_UPGRADE_ALREADY_MAX)
 			return False
 		return True
 
@@ -597,8 +595,8 @@ class SkillUpgradeWindow(ui.BoardWithTitleBar):
 		import uiCommon
 		self.CloseQuestionDialog()
 		dlg = uiCommon.QuestionDialog2()
-		dlg.SetText1(_T("SKILL_UPGRADE_SOUL_STONE_NEGATIVE_GRADE_CONFIRM_1", "Bu Ruh Ta\xfe\xfd'n\xfd okumak, beceri kademeni s\xfdf\xfdr\xfdn alt\xfdna d\xfc\xfe\xfcrecek."))
-		dlg.SetText2(_T("SKILL_UPGRADE_SOUL_STONE_NEGATIVE_GRADE_CONFIRM_2", "Devam etmek istiyor musun?"))
+		dlg.SetText1(localeInfo.SKILL_UPGRADE_SOUL_STONE_NEGATIVE_GRADE_CONFIRM_1)
+		dlg.SetText2(localeInfo.SKILL_UPGRADE_SOUL_STONE_NEGATIVE_GRADE_CONFIRM_2)
 		dlg.SetAcceptEvent(ui.__mem_func__(self.__OnAcceptNegativeGrade))
 		dlg.SetCancelEvent(ui.__mem_func__(self.CloseQuestionDialog))
 		dlg.Open()

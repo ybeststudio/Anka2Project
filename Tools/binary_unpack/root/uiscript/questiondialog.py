@@ -44,15 +44,14 @@ window = {
 					"x" : -40,
 					"y" : 63,
 
-					"width" : 61,
-					"height" : 21,
+					"width" : 57,
+					"height" : 24,
 
 					"horizontal_align" : "center",
-					"text" : uiScriptLocale.YES,
 
-					"default_image" : "d:/ymir work/ui/public/middle_button_01.sub",
-					"over_image" : "d:/ymir work/ui/public/middle_button_02.sub",
-					"down_image" : "d:/ymir work/ui/public/middle_button_03.sub",
+					"default_image" : "d:/ymir work/ui/game/common/button_accept_norm.png",
+					"over_image" : "d:/ymir work/ui/game/common/button_accept_hover.png",
+					"down_image" : "d:/ymir work/ui/game/common/button_accept_down.png",
 				},
 				{
 					"name" : "cancel",
@@ -61,15 +60,14 @@ window = {
 					"x" : 40,
 					"y" : 63,
 
-					"width" : 61,
-					"height" : 21,
+					"width" : 57,
+					"height" : 24,
 
 					"horizontal_align" : "center",
-					"text" : uiScriptLocale.NO,
 
-					"default_image" : "d:/ymir work/ui/public/middle_button_01.sub",
-					"over_image" : "d:/ymir work/ui/public/middle_button_02.sub",
-					"down_image" : "d:/ymir work/ui/public/middle_button_03.sub",
+					"default_image" : "d:/ymir work/ui/game/common/button_cancel_norm.png",
+					"over_image" : "d:/ymir work/ui/game/common/button_cancel_hover.png",
+					"down_image" : "d:/ymir work/ui/game/common/button_cancel_down.png",
 				},
 			),
 		},

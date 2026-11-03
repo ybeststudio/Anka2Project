@@ -139,7 +139,8 @@ CPPFILE =	affect.cpp\
 			growth_pet.cpp\
 			guild_manager.cpp\
 			guild_war.cpp\
-			guild.cpp\
+			guild.cpp			guild_application.cpp guild_donation.cpp guild_quest.cpp guild_skill.cpp guild_shop.cpp\
+			messenger_details.cpp\
 			halloween.cpp\
 			horsename_manager.cpp\
 			horse_rider.cpp\
@@ -187,6 +188,8 @@ CPPFILE =	affect.cpp\
 			PetSystem.cpp\
 			buffi_system.cpp\
 			skill_upgrade.cpp\
+			bonus_custom.cpp\
+			item_apply_random_table.cpp\
 			polymorph.cpp\
 			priv_manager.cpp\
 			pvp.cpp\

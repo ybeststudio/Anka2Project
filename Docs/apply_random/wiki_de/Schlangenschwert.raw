@@ -1,0 +1,138 @@
+{{Waffe/Layout
+
+<!-- InGame-Bild der Waffe, 250x200px -->
+|IG-Bild = {{PAGENAME}} IG.png
+
+<!-- Level der Waffe, bei Level 80 bitte "80 - 90" eintragen -->
+|Level = 120
+
+<!-- Typ der Waffe: Einhänder, Zweihänder, Dolch, Bogen, Fächer, Glocke -->
+|Waffenart = Einhänder
+
+<!-- Klassen, die die Waffe benutzen können, getrennt durch Komma und verlinkt -->
+|Klassen = Krieger, Ninja, Sura
+
+<!-- Angriffsgeschwindigkeit der Waffe -->
+|AG = 
+
+<!-- Anzahl der Sockel -->
+|Sockel = 3
+
+<!-- Kaufpreis beim NPC, sofern nicht käuflich bitte frei lassen -->
+|Kaufpreis =
+
+<!-- Jegliche Herkunft der Waffe -->
+|Herkunft =
+<ul>
+*'''Metins:''' -
+*'''Monster:''' -
+*'''Truhen:''' [[W. Drachentruhe (Schwer)]]
+*'''Sonstiges:'''
+:*'''Möglichkeit zur Herstellung:'''
+::Aus 1x {{Icon2|Schlangenschwert(herst.)}}, 10x {{Icon2|Schlangenmuster}}, 5x {{Icon2|Nordwind-Amboss}}, 10x {{Icon2|Nachtjedit}}, 5x {{Icon2|Nordwindschleifstein}}, {{Icon2|Gaya|100 Gaya}} und {{Icon2|Yang|10.000.000 Yang}} bei [[Schlangenstatue]] herstellbar. ''(Kann auch fehlschlagen)''
+:* Die Chance auf Erfolg bei der Gegenstandsherstellung beträgt 50%.
+
+<!-- Sonstige Anmerkungen zur Waffe -->
+|Sonstiges =
+* Bei der Herstellung kann die Waffe verschiedene Grundboni erhalten.<br>
+* Dabei kann auf jeden Bonislot nur ein bestimmter Bonus enthalten sein.<br>
+* Hat die Waffe beim herstellen weniger als 3 Standardboni, so erhält sie beim Verbessern die fehlenden Boni.
+* Sowohl Startwerte als auch die Sprünge beim verbessern, sind zufallsgeneriert.<br>
+<center><b>[[{{PAGENAME}}#Mögliche_Standard_Boni|Liste möglicher standard Boni]]</b></center>
+
+<!-- Erhöhungskosten beim Schmied -->
+|Kosten1 = 150.000
+|Kosten2 = 180.000
+|Kosten3 = 216.000
+|Kosten4 = 260.000
+|Kosten5 = 310.000
+|Kosten6 = 370.000
+|Kosten7 = 450.000
+|Kosten8 = 530.000
+|Kosten9 = 640.000
+|Kosten10 = 770.000
+|Kosten11 = 920.000
+|Kosten12 = 1.110.000
+|Kosten13 = 1.330.000
+|Kosten14 = 1.600.000
+|Kosten15 = 1.920.000
+
+|Upgradeitem-1-1 = 10x {{icon|Nordwind-Waffenstein}}
+|Upgradeitem-1-2 = 20x {{icon|Nordwind-Waffenstein}}
+|Upgradeitem-1-3 = 10x {{icon|Nordwind-Waffenstein+}}
+|Upgradeitem-1-4 = 30x {{icon|Nordwind-Waffenstein}}
+|Upgradeitem-1-5 = 20x {{icon|Nordwind-Waffenstein+}}
+|Upgradeitem-1-6 = 40x {{icon|Nordwind-Waffenstein}}
+|Upgradeitem-1-7 = 30x {{icon|Nordwind-Waffenstein+}}
+|Upgradeitem-1-8 = 50x {{icon|Nordwind-Waffenstein}}
+|Upgradeitem-1-9 = 40x {{icon|Nordwind-Waffenstein+}}
+|Upgradeitem-1-10 = 60x {{icon|Nordwind-Waffenstein}}
+|Upgradeitem-1-11 = 50x {{icon|Nordwind-Waffenstein+}}
+|Upgradeitem-1-12 = 70x {{icon|Nordwind-Waffenstein}}
+|Upgradeitem-1-13 = 60x {{icon|Nordwind-Waffenstein+}}
+|Upgradeitem-1-14 = 80x {{icon|Nordwind-Waffenstein}}
+|Upgradeitem-1-15 = 70x {{icon|Nordwind-Waffenstein+}}
+
+|Upgradeitem-2-1 = 1x {{icon|W. Drachentruhe (Leicht)}}
+|Upgradeitem-2-2 = 1x {{icon|W. Drachentruhe (Leicht)}}
+|Upgradeitem-2-3 = 1x {{icon|W. Drachentruhe (Leicht)}}
+|Upgradeitem-2-4 = 1x {{icon|W. Drachentruhe (Leicht)}}
+|Upgradeitem-2-5 = 1x {{icon|W. Drachentruhe (Leicht)}}
+|Upgradeitem-2-6 = 1x {{icon|W. Drachentruhe (Leicht)}}
+|Upgradeitem-2-7 = 1x {{icon|Schimm. weiße Perle}}
+|Upgradeitem-2-8 = 1x {{icon|Schimm. blaue Perle}}
+|Upgradeitem-2-9 = 1x {{icon|Schimm. blutrote Perle}}
+|Upgradeitem-2-10 = 1x {{icon|Schimm. weiße Perle}}
+|Upgradeitem-2-11 = 1x {{icon|Schimm. blaue Perle}}
+|Upgradeitem-2-12 = 1x {{icon|Schimm. blutrote Perle}}
+|Upgradeitem-2-13 = 1x {{icon|Schimm. weiße Perle}}
+|Upgradeitem-2-14 = 1x {{icon|Schimm. blaue Perle}}
+|Upgradeitem-2-15 = 1x {{icon|Schimm. blutrote Perle}}
+
+|Upgradeitem-3-3 = 2x {{icon|Nachtjedit}}
+|Upgradeitem-3-4 = 2x {{icon|Rauchjedit}}
+|Upgradeitem-3-5 = 2x {{icon|Achat}}
+|Upgradeitem-3-6 = 2x {{icon|Titandioxid}}
+|Upgradeitem-3-7 = 2x {{icon|Nordwind-Seelenstein}}
+|Upgradeitem-3-8 = 2x {{icon|Weißer Drachenkopf}}
+|Upgradeitem-3-9 = 2x {{icon|Weiße Drachenschuppe}}
+|Upgradeitem-3-10 = 2x {{icon|Weiße Perle}}
+|Upgradeitem-3-11 = 2x {{icon|Blaue Perle}}
+|Upgradeitem-3-12 = 2x {{icon|Blutrote Perle}}
+|Upgradeitem-3-13 = 1x {{icon|Mondstein}}
+|Upgradeitem-3-14 = 1x {{icon|Mondstein}}
+|Upgradeitem-3-15 = 1x {{icon|Mondstein}}
+
+<!-- Angriffswerte auf den verschiedenen Stufen -->
+|AW0 = <br><font color=yellow>175</font>&nbsp;/&nbsp;<font color=orange>193</font> - <font color=yellow>265</font>&nbsp;/&nbsp;<font color=orange>296</font>
+|AW1 = <br><font color=yellow>190</font>&nbsp;/&nbsp;<font color=orange>208</font> - <font color=yellow>280</font>&nbsp;/&nbsp;<font color=orange>311</font>
+|AW2 = <br><font color=yellow>200</font>&nbsp;/&nbsp;<font color=orange>218</font> - <font color=yellow>290</font>&nbsp;/&nbsp;<font color=orange>321</font>
+|AW3 = <br><font color=yellow>210</font>&nbsp;/&nbsp;<font color=orange>228</font> - <font color=yellow>300</font>&nbsp;/&nbsp;<font color=orange>331</font>
+|AW4 = <br><font color=yellow>221</font>&nbsp;/&nbsp;<font color=orange>239</font> - <font color=yellow>311</font>&nbsp;/&nbsp;<font color=orange>342</font>
+|AW5 = <br><font color=yellow>235</font>&nbsp;/&nbsp;<font color=orange>253</font> - <font color=yellow>325</font>&nbsp;/&nbsp;<font color=orange>356</font>
+|AW6 = <br><font color=yellow>267</font>&nbsp;/&nbsp;<font color=orange>285</font> - <font color=yellow>357</font>&nbsp;/&nbsp;<font color=orange>388</font>
+|AW7 = <br><font color=yellow>322</font>&nbsp;/&nbsp;<font color=orange>340</font> - <font color=yellow>412</font>&nbsp;/&nbsp;<font color=orange>443</font>
+|AW8 = <br><font color=yellow>354</font>&nbsp;/&nbsp;<font color=orange>372</font> - <font color=yellow>444</font>&nbsp;/&nbsp;<font color=orange>475</font>
+|AW9 = <br><font color=yellow>448</font>&nbsp;/&nbsp;<font color=orange>466</font> - <font color=yellow>538</font>&nbsp;/&nbsp;<font color=orange>569</font>
+|AW10 = <br><font color=yellow>468</font>&nbsp;/&nbsp;<font color=orange>486</font> - <font color=yellow>558</font>&nbsp;/&nbsp;<font color=orange>589</font>
+|AW11 = <br><font color=yellow>488</font>&nbsp;/&nbsp;<font color=orange>506</font> - <font color=yellow>578</font>&nbsp;/&nbsp;<font color=orange>609</font>
+|AW12 = <br><font color=yellow>510</font>&nbsp;/&nbsp;<font color=orange>528</font> - <font color=yellow>600</font>&nbsp;/&nbsp;<font color=orange>631</font>
+|AW13 = <br><font color=yellow>530</font>&nbsp;/&nbsp;<font color=orange>548</font> - <font color=yellow>620</font>&nbsp;/&nbsp;<font color=orange>651</font>
+|AW14 = <br><font color=yellow>550</font>&nbsp;/&nbsp;<font color=orange>568</font> - <font color=yellow>640</font>&nbsp;/&nbsp;<font color=orange>671</font>
+|AW15 = <br><font color=yellow>588</font>&nbsp;/&nbsp;<font color=orange>606</font> - <font color=yellow>678</font>&nbsp;/&nbsp;<font color=orange>709</font>
+
+|Bonus1 = Bis 3 zufällige Boni
+}}
+{{Schlangenwaffen Boni}}
+
+[[ae:سيف الأفعى]]
+[[cz:Hadí meč]]
+[[en:Serpent Sword]]
+[[es:Espada serpentina]]
+[[fr:Épée serpent]]
+[[hu:Szerpent kard]]
+[[it:Spada Serpens]]
+[[pl:Miecz Wężowy]]
+[[pt:Espada da Serpente]]
+[[ro:Sabie Șarpe]]
+[[tr:Yılan Kılıcı]]

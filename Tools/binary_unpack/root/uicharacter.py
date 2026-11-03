@@ -24,6 +24,7 @@ import constInfo
 import emotion
 import interfaceModule
 import chat
+import grp
 if app.ENABLE_TITLE_SYSTEM:
 	import uicharactertitle
 
@@ -101,6 +102,43 @@ if app.ENABLE_RENEWAL_QUEST:
 
 		"text_height": 40
 	}
+
+	class QuestBoxWindow(ui.ThinBoard):
+		"""One quest entry (reference uiCharacter.QuestObject, a ThinBoardNew)."""
+
+		def __init__(self):
+			ui.ThinBoard.__init__(self)
+			# reference ThinBoardNew look: thin new_thinboard frame (same as the tooltips) instead of the thick pattern
+			path = "d:/ymir work/ui/pattern/new_thinboard/"
+			for index, direction in enumerate(("LeftTop", "LeftBottom", "RightTop", "RightBottom")):
+				self.Corners[index].LoadImage(path + "ThinBoard_Corner_" + direction + ".png")
+			for index, direction in enumerate(("Left", "Right", "Top", "Bottom")):
+				self.Lines[index].LoadImage(path + "ThinBoard_Line_" + direction + ".png")
+			self.Base.SetColor(grp.GenerateColor(28.0 / 255.0, 23.0 / 255.0, 20.0 / 255.0, 178.0 / 255.0))
+			self.content = []
+			self.clocks = []
+			self.counters = []
+			self.clickEvent = None
+			self.clickArg = None
+
+		def __del__(self):
+			ui.ThinBoard.__del__(self)
+
+		def ClearContent(self):
+			for child in self.content:
+				child.Hide()
+			self.content = []
+			self.clocks = []
+			self.counters = []
+
+		def SetClickEvent(self, event, arg):
+			self.clickEvent = event
+			self.clickArg = arg
+
+		def OnMouseLeftButtonUp(self):
+			if self.clickEvent:
+				self.clickEvent(self.clickArg)
+			return TRUE
 
 	quest_lable_expend_img_path_dict = {
 		0: "d:/ymir work/ui/quest_re/tabcolor_1_main.tga",
@@ -259,7 +297,7 @@ class CharacterWindow(ui.ScriptWindow):
 			}
 
 			self.questOpenedCategories = []
-			self.questMaxOpenedCategories = 1
+			self.questMaxOpenedCategories = quest.QUEST_CATEGORY_MAX_NUM	# reference keeps every category open at once
 
 			self.questClicked = []
 			self.questIndexMap = {}
@@ -589,9 +627,9 @@ class CharacterWindow(ui.ScriptWindow):
 			for i in xrange(quest.QUEST_CATEGORY_MAX_NUM):
 				self.questCategory = ui.SubTitleBar()
 				self.questCategory.SetParent(self.questPage)
-				self.questCategory.MakeSubTitleBar(210, "red")
+				self.questCategory.MakeSubTitleBar(222, "red")
 				self.questCategory.SetText(quest_label_dict[i])
-				self.questCategory.SetSize(210, 16)
+				self.questCategory.SetSize(222, 16)
 				self.questCategory.SetPosition(13, 0)
 				self.questCategoryList.append(self.questCategory)
 
@@ -947,7 +985,7 @@ class CharacterWindow(ui.ScriptWindow):
 		btn.SetUpVisual("d:/ymir work/ui/game/skill_upgrade/title_btn_norm.png")
 		btn.SetOverVisual("d:/ymir work/ui/game/skill_upgrade/title_btn_hover.png")
 		btn.SetDownVisual("d:/ymir work/ui/game/skill_upgrade/title_btn_select.png")
-		btn.SetToolTipText(getattr(localeInfo, "SKILL_UPGPRADE_TITLE", "Beceri Y\xfckseltici"), 0, -23)
+		btn.SetToolTipText(localeInfo.SKILL_UPGPRADE_TITLE, 0, -23)
 		btn.SetEvent(ui.__mem_func__(self.__OnClickSkillUpgrade))
 		btn.Hide()
 		self.skillUpgradeButton = btn
@@ -2413,38 +2451,30 @@ class CharacterWindow(ui.ScriptWindow):
 			self.RefreshQuest()
 
 	if app.ENABLE_RENEWAL_QUEST:
+		# Quest list (reference uiCharacter QuestCategoryGroup): category tabs and quest boxes live on
+		# questPage and are laid out top to bottom by one function, scrolled as a whole.
+		QUEST_LIST_LEFT = 18		# reference tabs sit 5px further right
+		QUEST_LIST_TOP = 10
+		QUEST_TAB_STEP = 20
+		QUEST_BOX_WIDTH = 222		# quest_tab_01.tga width
+		QUEST_LINE_HEIGHT = 15
+		QUEST_BOX_PADDING_TOP = 6
+		QUEST_BOX_PADDING_BOTTOM = 7
+		QUEST_BOX_GAP = 2
+		QUEST_NEW_TEXT_OFFSET_X = 8
+
 		def __OnScrollQuest(self):
 			if self.state != "QUEST":
 				return
-
-			curPos = self.questScrollBar.GetPos()
-			if math.fabs(curPos - self.questLastScrollPosition) >= 0.001:
-				self.RerenderQuestPage()
-				self.questLastScrollPosition = curPos
+			self.RebuildQuestList()
 
 		def ResetQuestScroll(self):
 			self.questScrollBar.Hide()
-
 			if self.questScrollBar.GetPos() != 0:
 				self.questScrollBar.SetPos(0)
 
 		def RerenderQuestPage(self):
-			overflowingY = self.displayY - self.MAX_QUEST_PAGE_HEIGHT
-			if overflowingY < 0:
-				overflowingY = 0
-
-			self.baseCutY = math.ceil(overflowingY * self.questScrollBar.GetPos())
-			self.displayY = 0
-			self.RearrangeQuestCategories(xrange(quest.QUEST_CATEGORY_MAX_NUM))
-			self.RefreshQuestCategory()
-
-			if overflowingY > 0:
-				if (len(self.questOpenedCategories)) == 0:
-					self.ResetQuestScroll()
-				else:
-					self.questScrollBar.Show()
-			else:
-				self.ResetQuestScroll()
+			self.RebuildQuestList()
 
 		def __LoadQuestCategory(self):
 			self.questPage.Show()
@@ -2461,18 +2491,17 @@ class CharacterWindow(ui.ScriptWindow):
 					categoryName = category.GetText()
 
 				questCount = self.GetQuestCountInCategory(i)
-				self.questCategoryList[i].SetTextAlignLeft(categoryName + " (" + str(questCount) + ")")
-				self.questCategoryList[i].SetTextColor(self.GetQuestCategoryColor(i))
-				self.questCategoryList[i].SetQuestLabel(quest_lable_expend_img_path_dict[i], self.GetQuestCountInCategory(i))
-				self.questCategoryList[i].Show()
-
-			self.RefreshQuestCategory()
-			if self.isQuestCategoryLoad == FALSE:
-				self.questScrollBar.Hide()
-			else:
-				self.RerenderQuestPage()
+				self.__RefreshQuestCategoryLabel(i)
+				category.SetTextColor(self.GetQuestCategoryColor(i))
+				if not getattr(category, "tabColor", None):
+					category.SetQuestLabel(quest_lable_expend_img_path_dict[i], questCount)
+				elif questCount > 0:
+					category.tabColor.Show()
+				else:
+					category.tabColor.Hide()
 
 			self.isQuestCategoryLoad = TRUE
+			self.RebuildQuestList()
 
 		def GetQuestCategoryColor(self, category):
 			return self.questColorList["default_title"]
@@ -2498,196 +2527,197 @@ class CharacterWindow(ui.ScriptWindow):
 			else:
 				self.OpenQuestCategory(category)
 
-		def RearrangeQuestCategories(self, categoryRange):
-			i = 0
-			for i in categoryRange:
-				if (self.displayY - self.baseCutY) >= 0 and (self.displayY - self.baseCutY) < self.MAX_QUEST_PAGE_HEIGHT - 20:
-					self.questCategoryList[i].SetPosition(13, (self.displayY - self.baseCutY) + 10)
-					self.questCategoryList[i].Show()
-				else:
-					self.questCategoryList[i].Hide()
-
-				self.displayY += 20
-				self.questCategoryRenderPos[i] = self.displayY
+		def RearrangeQuestCategories(self, categoryRange = None):
+			self.RebuildQuestList()
 
 		def CloseQuestCategory(self, category):
 			self.questCategoryList[category].CloseCategory(self.GetQuestCountInCategory(category))
-
 			if category in self.questOpenedCategories:
 				self.questOpenedCategories.remove(category)
-
-			for currentSlot in self.questSlotList:
-				if currentSlot.GetProperty("category") == category:
-					currentSlot.Hide()
-					self.displayY -= currentSlot.GetHeight()
-
-			self.RerenderQuestPage()
+			self.RebuildQuestList()
 
 		def OpenQuestCategory(self, category):
 			if self.GetQuestCountInCategory(category) == 0:
 				return
-
-			while len(self.questOpenedCategories) >= self.questMaxOpenedCategories:
-				openedCategories = self.questOpenedCategories.pop()
-				self.CloseQuestCategory(openedCategories)
-
 			self.questCategoryList[category].OpenCategory(self.GetQuestCountInCategory(category))
-			self.questOpenedCategories.append(category)
-			self.RefreshQuestCategory(category)
-			self.RerenderQuestPage()
+			if not category in self.questOpenedCategories:
+				self.questOpenedCategories.append(category)
+			self.RebuildQuestList()
 
 		def RefreshQuestCategory(self, category = -1):
-			if self.isLoaded == 0 or self.state != "QUEST":
-				return
+			self.RebuildQuestList()
 
-			categories = []
-			if category == -1:
-				categories = self.questOpenedCategories
-			elif not category in self.questOpenedCategories:
-				self.OpenQuestCategory(category)
-				return
+		def __RefreshQuestCategoryLabel(self, category):
+			# reference QuestCategory: plain name, green "new" dot after it while the category has an unread quest
+			tab = self.questCategoryList[category]
+			tab.SetTextAlignLeft(tab.GetProperty("name") or tab.GetText())
+			hasNew = FALSE
+			for questData in self.GetQuestsInCategory(category):
+				if not questData[1] in self.questClicked:
+					hasNew = TRUE
+					break
+			newImage = getattr(tab, "newImage", None)
+			if not newImage:
+				newImage = ui.ImageBox()
+				newImage.SetParent(tab)
+				newImage.LoadImage("d:/ymir work/ui/quest_re/quest_new.tga")
+				newImage.AddFlag("not_pick")
+				tab.newImage = newImage
+			if hasNew and tab.ButtonText:
+				(textWidth, textHeight) = tab.ButtonText.GetTextSize()
+				newImage.SetPosition(27 + textWidth + 5, (tab.GetHeight() - newImage.GetHeight()) / 2)
+				newImage.Show()
 			else:
-				categories.append(category)
-
-			for currentCategory in categories:
-				self.displayY = self.questCategoryRenderPos[currentCategory]
-
-				self.LoadCategory(currentCategory)
-				self.RearrangeQuestCategories(xrange(currentCategory + 1, quest.QUEST_CATEGORY_MAX_NUM))
+				newImage.Hide()
 
 		def RefreshQuestCategoriesCount(self):
 			for category in xrange(quest.QUEST_CATEGORY_MAX_NUM):
-				categoryName = self.questCategoryList[category].GetProperty("name")
 				questCount = self.GetQuestCountInCategory(category)
-				self.questCategoryList[category].SetTextAlignLeft(categoryName + " (" + str(questCount) + ")")
+				self.__RefreshQuestCategoryLabel(category)
+				if questCount == 0 and category in self.questOpenedCategories:
+					self.questOpenedCategories.remove(category)
+					self.questCategoryList[category].CloseCategory(0)
 
-		def RefreshQuest(self):
+		def __MakeQuestText(self, parent, text, x, y, color = 0xffd8d8d8, font = None):
+			textLine = ui.TextLine()
+			textLine.SetParent(parent)
+			if font:
+				textLine.SetFontName(font)
+			textLine.SetPackedFontColor(color)
+			textLine.SetText(text)
+			textLine.SetOutline()
+			textLine.SetPosition(x, y)
+			textLine.AddFlag("not_pick")
+			textLine.Show()
+			return textLine
+
+		def __GetQuestClockText(self, questID):
+			(lastName, lastTime) = quest.GetQuestLastTime(questID)
+			if len(lastName) <= 0:
+				return localeInfo.QUEST_UNLIMITED_TIME
+			if lastTime <= 0:
+				return localeInfo.QUEST_TIMEOVER
+
+			questLastMinute = lastTime / 60
+			questLastSecond = lastTime % 60
+			clockText = lastName + " : "
+			if questLastMinute > 0:
+				clockText += str(questLastMinute) + localeInfo.QUEST_MIN
+				if questLastSecond > 0:
+					clockText += " "
+			if questLastSecond > 0:
+				clockText += str(questLastSecond) + localeInfo.QUEST_SEC
+			return clockText
+
+		def __BuildQuestBox(self, questID, questIndex, questName, questCategory, questCounterName, questCounterValue):
+			if not hasattr(self, "questBoxDict"):
+				self.questBoxDict = {}
+			key = (questCategory, questIndex)
+			box = self.questBoxDict.get(key)
+			if not box:
+				box = QuestBoxWindow()
+				box.SetParent(self.questPage)
+				self.questBoxDict[key] = box
+			box.ClearContent()
+
+			(name, color) = self.GetQuestProperties(questName)
+			x = self.QUEST_NEW_TEXT_OFFSET_X
+			y = self.QUEST_BOX_PADDING_TOP
+			if not questIndex in self.questClicked:
+				newImage = ui.ImageBox()
+				newImage.SetParent(box)
+				newImage.LoadImage("d:/ymir work/ui/quest_re/quest_new.tga")
+				newImage.SetPosition(x, y + 4)
+				newImage.AddFlag("not_pick")
+				newImage.Show()
+				box.content.append(newImage)
+				x += newImage.GetWidth() + 4
+
+			titleColor = self.questColorList[color] if color else 0xffffffff
+			box.content.append(self.__MakeQuestText(box, name, x, y, titleColor, "Tahoma:12b"))
+			y += self.QUEST_LINE_HEIGHT
+
+			if questCounterName != "":
+				counter = self.__MakeQuestText(box, questCounterName + ": " + str(questCounterValue), self.QUEST_NEW_TEXT_OFFSET_X, y)
+				box.counters.append(counter)
+				box.content.append(counter)
+				y += self.QUEST_LINE_HEIGHT
+
+			clock = self.__MakeQuestText(box, self.__GetQuestClockText(questID), self.QUEST_NEW_TEXT_OFFSET_X, y)
+			clock.SetProperty("idx", questID)
+			box.clocks.append(clock)
+			box.content.append(clock)
+			y += self.QUEST_LINE_HEIGHT
+
+			box.SetSize(self.QUEST_BOX_WIDTH, y + self.QUEST_BOX_PADDING_BOTTOM)
+			box.SetClickEvent(ui.__mem_func__(self.__SelectQuest), questID)
+			box.questID = questID
+			box.questIndex = questIndex
+			return box
+
+		def RebuildQuestList(self):
 			if self.isLoaded == 0 or self.state != "QUEST":
 				return
+			if getattr(self, "questRebuilding", FALSE):
+				return
+			self.questRebuilding = TRUE
+			try:
+				self.__RebuildQuestList()
+			finally:
+				self.questRebuilding = FALSE
 
-			for category in self.questOpenedCategories:
-				self.RefreshQuestCategory(category)
+		def __RebuildQuestList(self):
+			if not hasattr(self, "questBoxDict"):
+				self.questBoxDict = {}
 
-			self.RefreshQuestCategoriesCount()
+			for category in xrange(quest.QUEST_CATEGORY_MAX_NUM):
+				self.__RefreshQuestCategoryLabel(category)
 
-		def CreateQuestSlot(self, name):
-			for questSlot in self.questSlotList:
-				if questSlot.GetWindowName() == name:
-					return questSlot
+			# 1. what goes into the list, top to bottom: (window, height it takes, top margin)
+			items = []
+			usedBoxes = []
+			for category in xrange(quest.QUEST_CATEGORY_MAX_NUM):
+				items.append((self.questCategoryList[category], self.QUEST_TAB_STEP, 0))
+				if not category in self.questOpenedCategories:
+					continue
+				for (questID, questIndex, questName, questCategory, _, questCounterName, questCounterValue) in self.GetQuestsInCategory(category):
+					box = self.__BuildQuestBox(questID, questIndex, questName, questCategory, questCounterName, questCounterValue)
+					usedBoxes.append(box)
+					items.append((box, box.GetHeight() + self.QUEST_BOX_GAP, self.QUEST_BOX_GAP))
 
-			pyScrLoader = ui.PythonScriptLoader()
-			slot = ui.ListBar()
-			pyScrLoader.LoadElementListBar(slot, quest_slot_listbar, self.questPage)
+			for box in self.questBoxDict.values():
+				if not box in usedBoxes:
+					box.Hide()
 
-			slot.SetParent(self.quest_page_board_window)
-			slot.SetWindowName(name)
-			slot.Hide()
-			self.questSlotList.append(slot)
-			return slot
+			# 2. scroll
+			visibleHeight = int(self.MAX_QUEST_PAGE_HEIGHT) - self.QUEST_LIST_TOP
+			totalHeight = sum([height for (window, height, margin) in items])
+			overflow = max(0, totalHeight - visibleHeight)
+			if overflow > 0:
+				self.questScrollBar.Show()
+				cutY = int(overflow * self.questScrollBar.GetPos())
+			else:
+				self.ResetQuestScroll()
+				cutY = 0
 
-		def SetQuest(self, slot, questID, questName, questCounterName, questCounterValue):
-			(name, color) = self.GetQuestProperties(questName)
-			slot.SetTextAlignLeft(name, 20)
-			if color:
-				slot.SetTextColor(self.questColorList[color])
-			slot.SetEvent(ui.__mem_func__(self.__SelectQuest), questID)
-			slot.SetWindowHorizontalAlignLeft()
-			slot.Show()
-
-		def LoadCategory(self, category):
+			# 3. place
 			self.questIndexMap = {}
-			self.questCounterList = []
+			self.questSlotList = []
 			self.questClockList = []
-			self.questSeparatorList = []
-
-			for questSlot in self.questSlotList:
-				questSlot.Hide()
-
-			questCount = 0
-			for questIdx in self.GetQuestsInCategory(category):
-				questCount += 1
-				(questID, questIndex, questName, questCategory, _, questCounterName, questCounterValue) = questIdx
-				(lastName, lastTime) = quest.GetQuestLastTime(questID)
-
-				slot = self.CreateQuestSlot("QuestSlotList_" + str(questCategory) + "_" + str(questID))
-
-				slot.SetPosition(0, (self.displayY - self.baseCutY))
-				slot.SetParent(self.quest_page_board_window)
-				baseDisplayY = self.displayY
-
-				## -- Quest Counter
-				hasCounter = FALSE
-				if questCounterName != "":
-					self.displayY += 15
-
-					counter = ui.TextLine()
-					counter.SetParent(slot)
-					counter.SetPosition(20, 20 - 2.5)
-					counter.SetText(questCounterName + ": " + str(questCounterValue))
-					counter.Show()
-
-					self.questCounterList.append(counter)
-					hasCounter = TRUE
-				## -- Quest Counter
-
-				## -- Quest Clock
-				self.displayY += 15
-
-				clockText = localeInfo.QUEST_UNLIMITED_TIME
-				if len(lastName) > 0:
-					if lastTime <= 0:
-						clockText = localeInfo.QUEST_TIMEOVER
-					else:
-						questLastMinute = lastTime / 60
-						questLastSecond = lastTime % 60
-
-						clockText = lastName + " : "
-
-						if questLastMinute > 0:
-							clockText += str(questLastMinute) + localeInfo.QUEST_MIN
-							if questLastSecond > 0:
-								clockText += " "
-
-						if questLastSecond > 0:
-							clockText += str(questLastSecond) + localeInfo.QUEST_SEC
-
-				clock = ui.TextLine()
-				clock.SetParent(slot)
-				clock.SetPosition(20, 20 + (int(hasCounter) * 14) - 2.5)
-				clock.SetText(clockText)
-				clock.SetProperty("idx", questID)
-				self.questClockList.append(clock)
-				clock.Show()
-				## -- Quest Clock
-
-				## -- Quest Separator
-				self.displayY += 5
-				if questCount < self.GetQuestCountInCategory(category):
-					seperator = ui.ImageBox()
-					seperator.SetParent(slot)
-					seperator.SetPosition(4, 20 + (int(hasCounter) * 14 - 2.5) + 15)
-					seperator.LoadImage("d:/ymir work/ui/quest_re/quest_list_line_01.tga")
-					seperator.Show()
-					self.questSeparatorList.append(seperator)
-				## -- Quest Separator
-
-				slot.SetProperty("category", questCategory)
-
-				if questIndex in self.questClicked:
-					slot.OnClickEvent()
-
-				if (baseDisplayY - self.baseCutY) + 2 >= 0 and (baseDisplayY - self.baseCutY) + 2 < self.MAX_QUEST_PAGE_HEIGHT - 30:
-					self.questIndexMap[questID] = questIndex
-					self.SetQuest(slot, questID, questName, questCounterName, questCounterValue)
-
-				self.displayY += 15
-
-			newList = []
-			for questSlot in self.questSlotList:
-				if questSlot.IsShow():
-					newList.append(questSlot)
-
-			self.questSlotList = newList
+			self.questCounterList = []
+			y = -cutY
+			for (window, height, margin) in items:
+				if y >= 0 and y + height <= visibleHeight + self.QUEST_BOX_GAP:
+					window.SetPosition(self.QUEST_LIST_LEFT, self.QUEST_LIST_TOP + y + margin)
+					window.Show()
+					if isinstance(window, QuestBoxWindow):
+						self.questIndexMap[window.questID] = window.questIndex
+						self.questSlotList.append(window)
+						self.questClockList.extend(window.clocks)
+						self.questCounterList.extend(window.counters)
+				else:
+					window.Hide()
+				y += height
 
 		def __OnClickQuestCategoryButton(self, category):
 			self.ToggleCategory(category)

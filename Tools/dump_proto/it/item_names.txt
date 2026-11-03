@@ -12204,3 +12204,89 @@ VNUM	LOCALE_NAME
 57106	Tomo di Buffi
 57107	Libro Maestro di Buffi
 57108	Pietra Maestra di Buffi
+95300	Scintilla Armi Blu Classica
+95301	Scintilla Armi Verde Classica
+95302	Scintilla Armi Arancione Classica
+95303	Scintilla Armi Rossa Classica
+95304	Scintilla Armi Viola Classica
+95305	Scintilla Armi Bianca Classica
+95306	Scintilla Armi Drago Blu
+95307	Scintilla Armi Drago Marrone
+95308	Scintilla Armi Drago Verde
+95309	Scintilla Armi Drago Arancione
+95310	Scintilla Armi Drago Rosa
+95311	Scintilla Armi Drago Porpora
+95312	Scintilla Armi Drago Rosso
+95313	Scintilla Armi Drago Turchese
+95314	Scintilla Armi Drago Bianco
+95315	Scintilla Armi Drago Giallo
+95316	Scintilla Armi Discord
+95317	Scintilla Armi Stream
+95318	Scintilla Armi Halloween
+95319	Scintilla Armi Natale
+95320	Scintilla Armi Celeste Nera
+95321	Scintilla Armi Celeste Blu
+95322	Scintilla Armi Celeste Rosa
+95323	Scintilla Armi Celeste Verde
+95324	Scintilla Armi Celeste Arancione
+95325	Scintilla Armi Celeste Viola
+95326	Scintilla Armi Celeste Rossa
+95327	Scintilla Armi Celeste Turchese
+95328	Scintilla Armi Celeste Bianca
+95329	Scintilla Armi Celeste Gialla
+95400	Scintilla Armatura Blu Classica
+95401	Scintilla Armatura Verde Classica
+95402	Scintilla Armatura Arancione Classica
+95403	Scintilla Armatura Rossa Classica
+95404	Scintilla Armatura Viola Classica
+95406	Scintilla Armatura Drago Blu
+95407	Scintilla Armatura Drago Marrone
+95408	Scintilla Armatura Drago Verde
+95409	Scintilla Armatura Drago Arancione
+95410	Scintilla Armatura Drago Rosa
+95411	Scintilla Armatura Drago Porpora
+95412	Scintilla Armatura Drago Rosso
+95413	Scintilla Armatura Drago Turchese
+95414	Scintilla Armatura Drago Bianco
+95415	Scintilla Armatura Drago Giallo
+95416	Scintilla Armatura Discord
+95417	Scintilla Armatura Stream
+95418	Scintilla Armatura Corona I
+95419	Scintilla Armatura Corona II
+95420	Scintilla Armatura Corona III
+95421	Scintilla Armatura Egitto
+95422	Scintilla Armatura Halloween
+95423	Scintilla Armatura Top Draenor
+95424	Scintilla Armatura Top Mietitore
+95425	Scintilla Armatura Top Drago Dorato
+95426	Scintilla Armatura Top Baronessa Ragno
+95427	Scintilla Armatura Top Azrael
+95428	Scintilla Armatura Top Beran-Setaou
+95429	Scintilla Armatura Top Meley
+95430	Scintilla Armatura Top Nemere
+95431	Scintilla Armatura Top Razador
+95432	Scintilla Armatura Top Ganesha
+95433	Scintilla Armatura Top Jotun
+95434	Scintilla Armatura Natale
+95435	Scintilla Armatura Coppa d'Argento
+95436	Scintilla Armatura Coppa di Bronzo
+95437	Scintilla Armatura Celeste Nera
+95438	Scintilla Armatura Celeste Blu
+95439	Scintilla Armatura Celeste Rosa
+95440	Scintilla Armatura Celeste Verde
+95441	Scintilla Armatura Celeste Arancione
+95442	Scintilla Armatura Celeste Viola
+95443	Scintilla Armatura Celeste Rossa
+95444	Scintilla Armatura Celeste Turchese
+95445	Scintilla Armatura Celeste Bianca
+95446	Scintilla Armatura Celeste Gialla
+95447	Scintilla Armatura Top Rhae
+95448	Scintilla Armatura Top Drago Bianco
+95449	Scintilla Armatura Top Campione PVP
+95405	Scintilla Armatura Bianca Classica
+65113	Contribution Scroll
+65114	Noble Contribution
+65110	Amulet of Gods
+65111	Amulet of Gods+
+65112	Guild Energy (100%)
+65120	Silver Expansion

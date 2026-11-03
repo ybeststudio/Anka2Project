@@ -243,7 +243,7 @@ if app.ENABLE_AUTO_SELL_SYSTEM:
 
 		def RemoveAllItem(self):
 			if not self.itemStock:
-				chat.AppendChat(chat.CHAT_TYPE_INFO, "<Otomatik Satma> Ýtem listesi boþ!")
+				chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.AUTO_SELL_LIST_EMPTY)
 				return
 			self.itemStock.clear()
 			self.itemList.RemoveAllItems()
@@ -253,25 +253,25 @@ if app.ENABLE_AUTO_SELL_SYSTEM:
 
 		def RemoveSelectedItem(self):
 			if not self.itemStock:
-				chat.AppendChat(chat.CHAT_TYPE_INFO, "<Otomatik Satma> Ýtem listesi boþ!")
+				chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.AUTO_SELL_LIST_EMPTY)
 				return
 			selected_item = self.itemList.GetSelectedItem()
 			if selected_item is None:
-				chat.AppendChat(chat.CHAT_TYPE_INFO, "<Otomatik Satma> Bir item seçmelisin!")
+				chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.AUTO_SELL_SELECT_ITEM)
 				return
 			if isinstance(selected_item, ui.ListBoxAutoSell.Item):
 				item_name = selected_item.GetText().strip().lower()
 				selected_item_id = next((item_id for item_id, name in self.itemStock.items() if name.lower() == item_name), None)
 			
 				if selected_item_id is not None:
-					chat.AppendChat(chat.CHAT_TYPE_INFO, "<Otomatik Satma> " + item_name + " listeden kaldýrýlýyor...")
+					chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.AUTO_SELL_REMOVING % item_name)
 					self.SendAutoSellRemove(selected_item_id)
 					del self.itemStock[selected_item_id]
 					self.itemList.RemoveItem(selected_item)
 					net.SendChatPacket("/autosell_info 1")
 					self.itemList.UpdateRect()
 				else:
-					chat.AppendChat(chat.CHAT_TYPE_INFO, "<Otomatik Satma> Seçilen item geçerli deðil!")
+					chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.AUTO_SELL_INVALID_ITEM)
 		def AddItem(self, item_id):
 			try:
 				item_id = int(item_id)

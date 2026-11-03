@@ -50,6 +50,7 @@ if app.ENABLE_KILL_STATISTICS:
 
 LEADERSHIP_POWER = 0
 ALREADY_NOTIFY_LIST = []
+MESSENGER_BUTTON_CLOSED = False	# [MESSENGER] envelope quick closed (Ctrl + click); kept over warps, reset at character select
 SHOW_REFINE_ITEM_DESC = TRUE
 # Taskbar buttons
 ENABLE_EXPANDED_TASKBAR = 0

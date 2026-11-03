@@ -31,7 +31,11 @@ enum EBuffiConfig
 
 	BUFFI_SKILL_COUNT = 5,
 	BUFFI_RUNE_COUNT = 3,
+#ifdef ENABLE_BUFFI_GROWTH
+	BUFFI_MAX_LEVEL = 120,	// evolutions at 55 / 75 / 90, the third one opens 91-120
+#else
 	BUFFI_MAX_LEVEL = 90,
+#endif
 	BUFFI_MAX_EVOLUTION = 3,
 	BUFFI_ORE_INT = 3,
 	BUFFI_START_DURATION = 3 * 24 * 60 * 60,

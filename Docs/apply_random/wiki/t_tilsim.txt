@@ -1,0 +1,43 @@
+{{TabTable-Sub
+|Icon     = Efsun Nesnesi
+|Title    = [[Tılsımlar|<span style="color:#f0d9a2;">Tılsımlar</span>]] için 1-5. Bonuslar
+|ColumnA  = Hasar
+|ColumnB  = Direnç
+|ColumnC  = Diğer
+|A =
+*[[Yarı İnsanlara Karşı Güçlü]] '''+%(1, 2, 3, 5)'''
+*{—} Karşı Güçlü '''+%(10, 15, 20, 30)'''
+**{[[Böceklere Karşı Güçlü|Böcekler]], [[Çöl Canavarlarına Karşı Güçlü| Çöl Canavarları]], [[Zodyak Canavarlarına Karşı Güçlü|Zodyak Canavarları]]}
+*{—} Savunmasından Kopuş '''+%(1-5)'''
+**{[[Kılıç Savunmasından Kopuş|Kılıç]], [[Çiftel Savunmasından Kopuş|Çiftel]], [[Bıçak Savunmasından Kopuş|Bıçak]], [[Ok Savunmasından Kopuş|Ok]], [[Çan Savunmasından Kopuş|Çan]], [[Yelpaze Savunmasından Kopuş|Yelpaze]], [[Pençe Savunmasından Kopuş|Pençe]]}
+|B =
+*[[Savunma]] '''+%(1-5)'''
+* [[Düşüş Direnci]] '''+%(5, 10, 15)'''
+*[[Yarı İnsanlara Karşı Direnç]] '''+%(1, 2, 3, 5, 10)'''
+*{Element} Direnci +%(5, 10, 15, 20, 25)
+**{[[Ateş Direnci|Ateş]], [[Buz Direnci|Buz]], [[Toprak Direnci|Toprak]], [[Rüzgar Direnci|Rüzgar]], [[Şimşek Direnci|Şimşek]], [[Karanlık Direnci|Karanlık]]}
+|C =
+*[[Bayılma Şansı]] '''+%(1, 2, 3, 5, 8)'''
+}}
+{{TabTable-Sub
+|Icon     = Kutsama Nesnesi
+|Title    = [[Tılsımlar|<span style="color:#f0d9a2;">Tılsımlar</span>]] için 6-7. Bonuslar
+|ColumnA  = Hasar
+|ColumnB  = Direnç
+|ColumnC  = Diğer
+|A =
+*[[Saldırı Değeri]] '''+(5~50)'''
+*[[Büyülü Saldırı Değeri]] '''+(5~50)'''
+|B =
+<div style="text-align:center;">''Yok''</div>
+|C =
+*[[Max. HP]] '''+(50~500)'''
+*[[Max. SP]] '''+(5~80)'''
+*[[Zehirleme Şansı]] '''+%(1-5)'''
+*[[Zehre Karşı Koyma]] '''+%(1-5)'''
+*[[Kanama Saldırısı]] '''+%(1-5)'''
+*[[Kanama Saldırılarına Karşı Direnç]] '''+%(1-5)'''
+*[[Eklenen Bonus|(1-5). Eklenen Bonus]] '''+%(1~25%)'''
+*SungMa İradesi {—} '''+%(1~15)'''
+**{[[SungMa İradesi (STR)|STR]], [[SungMa İradesi (VIT)|VIT]], [[SungMa İradesi (RES)|RES]], [[SungMa İradesi (INT)|INT]]}
+}}

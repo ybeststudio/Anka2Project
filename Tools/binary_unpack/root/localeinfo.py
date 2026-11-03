@@ -318,71 +318,6 @@ if not LoadLocaleFile(NEW_LOCALE_GAME_FILE_NAME, locals(), optional=True):
 	LoadLocaleFile("locale/tr/new_locale_game.txt", locals())
 
 # Baglanti / giris metinleri (locale dosyasinda yoksa varsayilan; hata kullaniciya gosterilsin)
-try:
-	LOGIN_CONNETING
-except NameError:
-	LOGIN_CONNETING = "Lutfen bekle. Sunucuya baglaniyorsun."
-try:
-	LOGIN_PROCESSING
-except NameError:
-	LOGIN_PROCESSING = "Lutfen bekle. Sunucuya baglaniyorsun."
-try:
-	LOGIN_CONNECT_SUCCESS
-except NameError:
-	LOGIN_CONNECT_SUCCESS = "Baglanti basarili."
-try:
-	LOGIN_CLIENT_LOADING
-except NameError:
-	LOGIN_CLIENT_LOADING = "Yukleniyor..."
-LOGIN_CONNECT_TIMEOUT = "Baglanti zaman asimina ugradi. Sunucuya ulasilamiyor veya yanit vermiyor. Adres ve portu kontrol edin."
-LOGIN_CONNECT_ERROR = "Sunucuya baglanilamadi. Ag baglantisini veya sunucu adresini kontrol edin."
-try:
-	TOOLTIP_NEXT_SKILL_LEVEL_3
-except NameError:
-	TOOLTIP_NEXT_SKILL_LEVEL_3 = "Sonraki Seviye: %d"
-
-if app.ENABLE_CANNOT_MINING_IF_POLY:
-	try:
-		MINING_FAIL_ON_MOUNT
-	except NameError:
-		MINING_FAIL_ON_MOUNT = "At veya binek uzerindeyken madencilik yapamazsin."
-	try:
-		MINING_FAIL_WITHOUT_PICK
-	except NameError:
-		MINING_FAIL_WITHOUT_PICK = "Elinde kazma olmadan madencilik yapamazsin."
-	try:
-		MINING_FAIL_WHEN_POLY
-	except NameError:
-		MINING_FAIL_WHEN_POLY = "Donusmus haldeyken madencilik yapamazsin."
-
-try:
-	CANNOT_FISHING_RIDE_MOUNT
-except NameError:
-	CANNOT_FISHING_RIDE_MOUNT = "Binek hayvanin uzerindeyken balikcilik yapamazsin."
-
-if app.ENABLE_MSG_FISHING_WHILE_POLY:
-	try:
-		CANNOT_FISHING_WHILE_POLY
-	except NameError:
-		CANNOT_FISHING_WHILE_POLY = "Donusmus halde balik tutamazsin."
-
-if app.ENABLE_MSG_DRAGON_SOUL_WHILE_ATTACK:
-	try:
-		CANNOT_MOVE_DRAGON_SOUL_WHILE_ATTACK
-	except NameError:
-		CANNOT_MOVE_DRAGON_SOUL_WHILE_ATTACK = "Hareket halindeyken bunu yapamazsin."
-
-if app.ENABLE_MESSAGE_CANNOT_UNEQUIP_IN_BATTLE:
-	try:
-		CANNOT_UNEQUIP_IN_BATTLE
-	except NameError:
-		CANNOT_UNEQUIP_IN_BATTLE = "Esyayi cikarmak icin hareketsiz olmalisin."
-
-if app.ENABLE_CLIENT_VERSION_RENEWAL:
-	try:
-		CHAT_MESSAGE_CLIENT_VERSION_NOT_MATCH
-	except NameError:
-		CHAT_MESSAGE_CLIENT_VERSION_NOT_MATCH = "Istemci surumun eslesmedigi icin oturumun kapatildi. Lutfen surumunu guncelle ve tekrar oturum ac."
 
 # Option pvp messages
 OPTION_PVPMODE_MESSAGE_DICT = {
@@ -469,10 +404,6 @@ USE_SKILL_ERROR_TAIL_DICT = {
 }
 
 if app.ENABLE_STANDING_MOUNT:
-	try:
-		CANNOT_SKILL_NOT_STANDING_HORSE_SKILL
-	except NameError:
-		CANNOT_SKILL_NOT_STANDING_HORSE_SKILL = "Bu beceriyi bu binek uzerinde kullanamazsin."
 	USE_SKILL_ERROR_TAIL_DICT.update({
 		"NOT_HORSE_STANDING_SKILL" : CANNOT_SKILL_NOT_STANDING_HORSE_SKILL,
 	})
@@ -990,347 +921,31 @@ if app.ENABLE_EVENT_SYSTEM:
 		hour = int((time / 60) / 60) % 24
 		return "%02d Saat %02d Dakika %02d Saniye" % (hour, minute, second)
 
-# Cevher bilgisi iin locale tanm
-POSSIBLE_ORE = "Cevher Türü:"
 if app.ENABLE_AE_GUILD_MARK_NAME_ALIGNMENT:
 	def GetTextWidth(text):
 		return app.GetTextWidth(text)
 
 	def GetTextLineByWidth(text, width):
 		return app.GetTextLineByWidth(text, width)
-
-if "CATEGORY_DRAGON_STONE_DEMON" not in locals():
-	CATEGORY_DRAGON_STONE_DEMON = "Ametist"
 
-if "ITEM_TOOLTIP_DESC_GEM_BAG_DEFAULT" not in locals():
-	ITEM_TOOLTIP_DESC_GEM_BAG_DEFAULT = "Kullandiktan sonra 9.999 Gaya'ya kadar doldurabilirsin. | 30 gun sonra kaybolurlar.\nGaya kesesinin ticareti yapilabilir."
-if "ITEM_TOOLTIP_DESC_GEM_BAG_HAVE_GEM" not in locals():
-	ITEM_TOOLTIP_DESC_GEM_BAG_HAVE_GEM = "Gaya kesesi (%d Gaya, ticareti yapilabilir). \nKeseyi acarsan, %d Gaya alirsin."
-if "ITEM_TOOLTIP_DESC_GEM_BAG_REWARD" not in locals():
-	ITEM_TOOLTIP_DESC_GEM_BAG_REWARD = "Kazanan takimi alkisladigin icin odul olarak bir Gaya Spor Cantasi alirsin.\nTicareti yapilamaz."
-if "ITEM_TOOLTIP_DESC_GEM_BAG_REWARD_HAVE_GEM" not in locals():
-	ITEM_TOOLTIP_DESC_GEM_BAG_REWARD_HAVE_GEM = "Gaya spor cantasi (%d Gaya, ticareti yok). \nSpor cantasini acarsan, %d Gaya alirsin."
-if "REFINE_FAILURE_GEM_SELECT_WINDOW_OPENED" not in locals():
-	REFINE_FAILURE_GEM_SELECT_WINDOW_OPENED = "Bu pencere acikken zihin taslarini kullanamazsin."
-if "SELECT_METINSTONE_NOT_ENOUGH_INVENTORY_SPACE" not in locals():
-	SELECT_METINSTONE_NOT_ENOUGH_INVENTORY_SPACE = "Envanterde yeterli bosluk yok."
 
-if "CANT_USE_MESSAGE_WHEN_EQUIP" not in locals():
-	CANT_USE_MESSAGE_WHEN_EQUIP = "Giyiliyken bu nesneyi kullanamazsin."
-if "AURA_CLEAR_QUESTION_WHEN_USE" not in locals():
-	AURA_CLEAR_QUESTION_WHEN_USE = "Aura giysisindeki aktarilan tum degerleri sifirlamak istiyor musun? Bu islem geri alinamaz."
-if "AURA_CLEAR_CANNOT_USE_SEALED_ITEM" not in locals():
-	AURA_CLEAR_CANNOT_USE_SEALED_ITEM = "Ruh bagli nesnede aktarilan degerleri degistiremezsin."
-
-
-# --- ADVANCED GAME OPTIONS LOCALE DEFAULTS ---
-_adv_opt_defs = {
-	"GAME_OPTION_ANTI_ALIASING_TITLE": "Kenar Yumusatma (Anti-Aliasing)",
-	"GAME_OPTION_ANTI_ALIASING_DESCRIPTION": "Kenar yumusatma efektini acar veya kapatir.",
-	"GRAPHICS_SHADOW_TITLE": "Golge Kalitesi",
-	"GRAPHICS_SHADOW_OFF": "Kapali",
-	"GRAPHICS_SHADOW_LOW": "Dusuk",
-	"GRAPHICS_SHADOW_MEDIUM": "Orta",
-	"GRAPHICS_SHADOW_HIGH": "Yuksek",
-	"GRAPHICS_SHADOW_CASTERS": "Golge Veren Nesneler",
-	"GRAPHICS_SHADOW_CASTERS_DESC": "Oyuncu, arazi ve agac golgelerini ayarlar.",
-	"GRAPHICS_SHADOW_CASTERS_PLAYERS": "Oyuncular",
-	"GRAPHICS_SHADOW_CASTERS_TERRAIN": "Arazi",
-	"GRAPHICS_SHADOW_CASTERS_TREES": "Agaclar",
-	"GAME_OPTION_SUN_RAYS": "Gunes Isinlari",
-	"GAME_OPTION_SUN_RAYS_DESC": "Gunes isigi huzmeleri efektini ayarlar.",
-	"GAME_OPTION_WET_GROUND": "Islak Zemin",
-	"GAME_OPTION_WET_GROUND_DESC": "Yagmurlu havalarda zemin islaklik efektini ayarlar.",
-	"GAME_OPTION_RAIN": "Yagmur",
-	"GAME_OPTION_RAIN_DESC": "Yagmur yagis efektini acar veya kapatir.",
-	"GAME_OPTION_STORM": "Firtina",
-	"GAME_OPTION_STORM_DESC": "Firtina efektini acar veya kapatir.",
-	"GAME_OPTION_SHOOTING_STARS": "Kayan Yildizlar",
-	"GAME_OPTION_SHOOTING_STARS_DESC": "Gece modunda kayan yildiz efektini ayarlar.",
-	"GAME_OPTION_WATER_RIPPLE": "Su Dalgaciklari",
-	"GAME_OPTION_WATER_RIPPLE_DESC": "Su yuzeyindeki dalgalanma efektini ayarlar.",
-	"GAME_OPTION_ENHANCED_WATER": "Gelismis Su",
-	"GAME_OPTION_ENHANCED_WATER_DESC": "Gercekci su efektlerini acar veya kapatir.",
-	"GAME_OPTION_UNDERWATER": "Su Alti Efekti",
-	"GAME_OPTION_UNDERWATER_DESC": "Su altina girildiginde bulaniklik efektini ayarlar.",
-	"GAME_OPTION_SPECULAR_REFLECTIONS": "Yansima Parlamasi",
-	"GAME_OPTION_SPECULAR_REFLECTIONS_DESC": "Parlak yuzeylerdeki isik yansimalarini ayarlar.",
-	"GAME_OPTION_WATER_REFLECTIONS": "Su Yansimalari",
-	"GAME_OPTION_WATER_REFLECTIONS_DESC": "Su yuzeyine cevre yansimalarini uygular.",
-	"GAME_OPTION_LOCAL_LIGHT": "Yerel Isiklandirma",
-	"GAME_OPTION_LOCAL_LIGHT_DESC": "Yakindaki isik kaynaklarinin aydinlatmasini ayarlar.",
-	"GAME_OPTION_SHARPNESS": "Netlik (Sharpness)",
-	"GAME_OPTION_SHARPNESS_DESC": "Oyun goruntusunun keskinligini ayarlar.",
-	"GAME_OPTION_DEATH_CAM": "Olum Kamerasi",
-	"GAME_OPTION_DEATH_CAM_DESC": "Karakter oldugunde kamera efektini ayarlar.",
-	"GAME_OPTION_SPEEDTREE_FX": "Agac Efektleri",
-	"GAME_OPTION_SPEEDTREE_FX_DESC": "Agaclarin ruzgar ve yaprak dokme efektlerini ayarlar.",
-	"GAME_OPTION_SPEEDTREE_DYNAMIC_LIGHT": "Dinamik Isik",
-	"GAME_OPTION_SPEEDTREE_WIND": "Ruzgar Efekti",
-	"GAME_OPTION_SPEEDTREE_ENHANCED_FOLIAGE": "Gelismis Yapraklar",
-	"GAME_OPTION_SPEEDTREE_FALLING_LEAVES": "Dusen Yapraklar",
-	"GAME_OPTION_FOV": "Kamera Acisi (FOV)",
-	"GAME_OPTION_FOV_DESC": "Kameranin gorus acisini genisletir veya daraltir.",
-	"GAME_OPTION_CAMERA_FAR": "Kamera Mesafesi",
-	"GAME_OPTION_CAMERA_FAR_DESC": "Kameranin uzaklasabilecegi maksimum mesafeyi ayarlar.",
-	"GAME_OPTION_KEYBOARD_CAMERA_SPEED": "Klavye Kamera Hizi",
-	"GAME_OPTION_KEYBOARD_CAMERA_SPEED_DESC": "Klavyeden kamera dondurme hizini ayarlar.",
-	"GAME_OPTION_SKYBOX": "Gokyuzu Temasi",
-	"GAME_OPTION_SKYBOX_DESC": "Gokyuzu temasini ve hava durumunu degistirir.",
-	"GAME_OPTION_NIGHT_MODE": "Gece Modu",
-	"GAME_OPTION_NIGHT_MODE_DESC": "Oyunu gece moduna gecirir.",
-	"GAME_OPTION_REMOVE_FOG": "Sisi Kaldir",
-	"GAME_OPTION_REMOVE_FOG_DESC": "Haritadaki gorus engelleyen sisi kaldirir.",
-	"GAME_OPTION_ENVIRONMENT_DARKNESS_TITLE": "Cevre Karanligi",
-	"GAME_OPTION_ENVIRONMENT_SATURATION_TITLE": "Cevre Doygunlugu",
-	"GAME_OPTION_ENVIRONMENT_CONTRAST_TITLE": "Cevre Kontrasti",
-	"GAME_OPTION_ENVIRONMENT_TEMPERATURE_TITLE": "Renk Sicakligi",
-	"GAME_OPTION_ENVIRONMENT_COLOR_TITLE": "Cevre Renk Ayari",
-	"GAME_OPTION_ENVIRONMENT_COLOR_OPEN": "Renk Ayarla",
-	"GAME_OPTION_ENVIRONMENT_SONG": "Cevre Muzigi",
-	"GAME_OPTION_VOLUME_ENVIRONMENT": "Cevre Sesi",
-	"GAME_OPTION_CROWD_PERFORMANCE_TITLE": "Kalabalik Modu",
-	"GAME_OPTION_CROWD_PERFORMANCE_MODE": "Yuksek Performans Modu",
-	"GAME_OPTION_CROWD_PERFORMANCE_DESC": "Kalabalik pazar veya savaslarda performansi artirir.",
-	"GAME_OPTION_FPS_LIMIT_TITLE": "FPS Siniri",
-	"GAME_OPTION_FPS_LIMIT_LABEL": "Maksimum Kare Hizi",
-	"GAME_OPTION_FPS_VALUE_60": "60 FPS",
-	"GAME_OPTION_FPS_VALUE_120": "120 FPS",
-	"GAME_OPTION_FPS_VALUE_144": "144 FPS",
-	"GAME_OPTION_FPS_VALUE_200": "200 FPS",
-	"GAME_OPTION_HIDE_FPS_MINIMAP": "Minimap FPS Gostergesini Gizle",
-	"GAME_OPTION_HIDE_FPS_MINIMAP_DESC": "Harita altindaki FPS gostergesini kapatir.",
-	"GAME_OPTION_BUFFI_SETTINGS": "Saman / Buffi Ayarlari",
-	"GAME_OPTION_AUTO_UNEQUIP_BUFFI_PVP": "PvP'de Buffi Cikar",
-	"GAME_OPTION_AUTO_UNEQUIP_BUFFI_PVP_DESC": "PvP basladiginda buffi esyalarini otomatik cikarir.",
-	"GAME_OPTION_AUTO_EQUIP_BUFFI_PVM": "PvM'de Buffi Tak",
-	"GAME_OPTION_AUTO_EQUIP_BUFFI_PVM_DESC": "Yaratik keserken buffi esyalarini otomatik takar.",
-	"IKASHOP_PRO_SHOP_RANGE_VIEW_HEADER": "Pazar Gorus Mesafesi",
-	"GAME_OPTION_ENTITY_NAME": "Varlik Isimleri",
-	"GAME_OPTION_ENTITY_NAME_DESC": "Oyuncu, mob ve NPC isimlerinin gorunumunu ayarlar.",
-	"GAME_OPTION_NAME_FAR": "Uzak Isimler",
-	"GAME_OPTION_NAMES_MONSTERS_FOV": "Yaratik Isimleri FOV",
-	"GAME_OPTION_SHOW_COUNTRY_FLAG": "Ulke Bayraklarini Goster",
-	"GAME_OPTION_DMG": "Hasar Gostergeleri",
-	"GAME_OPTION_DMG_DESC": "Vurulan hasar yazilarinin boyutunu ve araligini ayarlar.",
-	"GAME_OPTION_DMG_SIZE": "Hasar Yazi Boyutu",
-	"GAME_OPTION_DAMAGE_SPACING": "Hasar Yazi Boslugu",
-	"GAME_OPTION_DAMAGE_ON": "Hasarlari Goster",
-	"GAME_OPTION_DMG_MONSTER": "Yaratik Hasarlarini Goster",
-	"GAME_OPTION_DMG_MONSTER_DESC": "Yaratiklara vurulan hasar rakamlarini gosterir.",
-	"GAME_OPTION_COLORED_DAMAGE": "Renkli Hasar",
-	"GAME_OPTION_COLORED_DAMAGE_DESC": "Kritik ve delici hasarlari farkli renklerde gosterir.",
-	"GAME_OPTION_DAMAGE_COLORS_OPEN": "Hasar Renkleri",
-	"GAME_OPTION_STONE_SCALE": "Metin Tasi Boyutu",
-	"GAME_OPTION_STONE_SCALE_DESC": "Metin taslarinin fiziksel boyutunu ayarlar.",
-	"GAME_OPTION_HIDE_COMPANION": "Yoldaslari Gizle",
-	"GAME_OPTION_HIDE_COMPANION_DESC": "Binek, pet ve buffi modellerini gizleyerek kasma yapmasini onler.",
-	"GAME_OPTION_HIDE_MOUNT": "Binekleri Gizle",
-	"GAME_OPTION_HIDE_PET": "Petleri Gizle",
-	"GAME_OPTION_HIDE_BUFFI": "Buffi Gizle",
-	"GAME_OPTION_QUEUE_METIN": "Sirali Metin Efekti",
-	"GAME_OPTION_QUEUE_METIN_COLOR": "Metin Efekt Rengi",
-	"GAME_OPTION_QUEUE_METIN_FLASH": "Metin Vurus Parlamasi",
-	"GAME_OPTION_MINING_FLASH": "Madencilik Parlamasi",
-	"GAME_OPTION_MINING_FLASH_DESC": "Madencilik bittiginde ekranin parlamasini saglar.",
-	"GAME_OPTION_HIDE_EFFECTS": "Efektleri Gizle",
-	"GAME_OPTION_HIDE_EFFECTS_DESC": "Hasar disindaki gereksiz efektleri kapatir.",
-	"GAME_OPTION_HIDE_EFFECTS_EXCEPT_DAMAGE": "Sadece Hasari Goster",
-	"GAME_OPTION_HIDE_EFFECTS_FROM_OTHERS": "Diger Oyuncularin Efektlerini Gizle",
-	"GAME_OPTION_HIDE_SHAMAN_BUFF": "Saman Kutsamalarini Gizle",
-	"GAME_OPTION_HIDE_STONE_EFFECT": "Tas Efektlerini Gizle",
-	"GAME_OPTION_HIDE_MONSTER_EFFECT": "Yaratik Efektlerini Gizle",
-	"GAME_OPTION_HIDE_EXP_EFFECT": "Exp Efektini Gizle",
-	"GAME_OPTION_SHOW_GUILD_GRADE": "Lonca Rutbelerini Goster",
-	"GAME_OPTION_SHOW_GUILD_JOIN_NOTIFICATION": "Loncaya Katilim Bildirimi",
-	"GAME_OPTION_NOTIFICATION_HISTORY": "Bildirim Gecmisi Butonu",
-	"GAME_OPTION_AUTO_CAPE_AFTER_WARP": "Isinlanma Sonrasi Oto Pelerin",
-	"GAME_OPTION_AUTO_CAPE_AFTER_WARP_DESC": "Isinlandiktan sonra otomatik cesaret pelerini kullanir.",
-	"GAME_OPTION_DISABLE_LEVEL_UP_CONFIRMATION": "Level Atlama Onayini Kapat",
-	"GAME_OPTION_DISABLE_LEVEL_UP_CONFIRMATION_DESC": "Seviye atlandiginda cikan onay penceresini kapatir.",
-	"GAME_OPTION_HIDE_METIN_SPAWNS": "Metin Dogma Efektini Gizle",
-	"GAME_OPTION_AUTO_HIDE_COMPANION_MAP1": "1. Koyde Yoldaslari Oto Gizle",
-	"GAME_OPTION_AUTO_HIDE_COMPANION_MAP1_DESC": "1. Koy pazarlarinda pet ve binekleri otomatik gizler.",
-	"GAME_OPTION_DROP_INTERFACE": "Dusen Esya Arayuzu",
-	"GAME_OPTION_DROP_INTERFACE_DESC": "Dusen esyalari ekranda gosteren arayuzu ayarlar.",
-	"GAME_OPTION_GUIDELINE_BTN": "Rehber Butonu",
-	"GAME_OPTION_GUIDELINE_BTN_DESC": "Yardim ve rehber butonunu ekranda gosterir.",
-	"GAME_OPTION_SYSTEM_MENU": "Sistem Menusu Butonu",
-	"GAME_OPTION_SYSTEM_MENU_DESC": "Mini harita yanindaki sistem menusunu gosterir.",
-	"GAME_OPTION_EVENT_ICON": "Etkinlik Simgesi",
-	"GAME_OPTION_EVENT_ICON_DESC": "Aktif etkinlik simgelerini ekranda gosterir.",
-	"GAME_OPTION_WINDOW_SCALE": "Arayuz Boyutlandirma (Scale)",
-	"GAME_OPTION_WINDOW_SCALE_DESC": "Kullanici arayuzunu ekran cozunurlugune gore olceklendirir.",
-	"GAME_OPTION_FONT": "Yazi Tipi (Font)",
-	"GAME_OPTION_BIG_FONT_SIZE": "Buyuk Yazi Tipi",
-	"GAME_OPTION_BIG_SLOT_COUNT": "Buyuk Slot Sayisi",
-	"GAME_OPTION_SAVE_STATUS": "Pencere Konumlarini Kaydet",
-	"GAME_OPTION_SAVE_STATUS_DESC": "Pencereleri kapattiginiz yerleri hatirlar.",
-	"GAME_OPTION_SMALL_AFFECT_ICON": "Kucuk Efekt Simgeleri",
-	"GAME_OPTION_SMALL_AFFECT_ICON_DESC": "Sol ustteki sebnem ve etki simgelerini kucultur.",
-	"GAME_OPTION_GUILD_QUEST": "Lonca Gorev Penceresi",
-	"GAME_OPTION_WHISPER_SENDER_LETTER": "Fisilti Gonderen Mektubu",
-	"GAME_OPTION_GUILD_CHAT_TO_WHISPER": "Lonca Sohbetini Fisiltiya Yansit",
-	"GAME_OPTION_SMALL_WHISPER_WINDOW": "Kucuk Fisilti Penceresi",
-	"GAME_OPTION_ENVIRONMENT_TITLE": "Cevre Ayarlari",
-	"GAME_OPTION_EVENT_STONE_APPEARANCE": "Etkinlik Metin Gorunumu",
-	"GAME_OPTION_EVENT_STONE_APPEARANCE_DESC": "Etkinlik metinlerinin ozel gorsellerini ayarlar.",
-	"GAME_OPTION_AUTO_HIDE_COMPANION_MAP1_TITLE": "1. Koy Yoldas Gizleme",
-	"GAME_OPTION_EVENT_ICON_SUBTITLE": "Etkinlik Simgeleri",
-	"GAME_OPTION_EVENT_STONE_ORIGINAL": "Orijinal Model",
-	"GAME_OPTION_GUILD_CHAT_WHISPER": "Lonca Sohbeti",
-	"GAME_OPTION_GUILD_CHAT_WHISPER_DESC": "Lonca mesajlarini fisiltida gosterir.",
-	"GAME_OPTION_GUILD_GRADE": "Lonca Rutbesi",
-	"GAME_OPTION_GUILD_GRADE_DESC": "Lonca uyelerinin rutbelerini gosterir.",
-	"GAME_OPTION_GUILD_JOIN_NOTIFICATION": "Loncaya Katilim Bildirimi",
-	"GAME_OPTION_GUILD_JOIN_NOTIFICATION_DESC": "Loncaya biri katildiginda bildirim verir.",
-	"GAME_OPTION_GUILD_QUEST_WINDOW": "Lonca Gorev Penceresi",
-	"GAME_OPTION_GUILD_QUEST_WINDOW_DESC": "Lonca gorev penceresini gosterir.",
-	"GAME_OPTION_HIDE_COMPANION_BUFFI": "Buffi Gizle",
-	"GAME_OPTION_HIDE_COMPANION_MOUNT": "Binek Gizle",
-	"GAME_OPTION_HIDE_COMPANION_PET": "Pet Gizle",
-	"GAME_OPTION_HIDE_EFFECTS_ALL": "Tum Efektleri Gizle",
-	"GAME_OPTION_HIDE_EFFECTS_EXP": "Exp Efekti",
-	"GAME_OPTION_HIDE_EFFECTS_MONSTER": "Yaratik Efekti",
-	"GAME_OPTION_HIDE_EFFECTS_OTHERS": "Diger Oyuncular",
-	"GAME_OPTION_HIDE_EFFECTS_SHAMAN_BUFF": "Saman Kutsamasi",
-	"GAME_OPTION_HIDE_EFFECTS_STONE": "Tas Efekti",
-	"GAME_OPTION_HIDE_METIN_SPAWNS_DESC": "Metin tasi dogma efektini gizler.",
-	"GAME_OPTION_HIDE_METIN_SPAWNS_TITLE": "Metin Dogma Efekti",
-	"GAME_OPTION_MINING_FLASH_OFF": "Kapali",
-	"GAME_OPTION_MINING_FLASH_ON": "Acik",
-	"GAME_OPTION_MONSTER_NAME": "Yaratik Isimleri",
-	"GAME_OPTION_MONSTER_NAME_DESC": "Yaratik isimlerinin gorunumunu ayarlar.",
-	"GAME_OPTION_QUEUE_METIN_COLOR_OPEN": "Renk Sec",
-	"GAME_OPTION_QUEUE_METIN_EFFECT": "Sirali Metin",
-	"GAME_OPTION_QUEUE_METIN_EFFECT_OPTION": "Efekt Secenegi",
-	"GAME_OPTION_QUEUE_METIN_FLASH_OFF": "Kapali",
-	"GAME_OPTION_QUEUE_METIN_FLASH_ON": "Acik",
-	"GAME_OPTION_SAVE_STATUS_WINDOW": "Pencere Konumu",
-	"GAME_OPTION_SAVE_STATUS_WINDOW_DESC": "Pencerelerin konumunu kaydeder.",
-	"GAME_OPTION_SHARPNESS_TITLE": "Netlik",
-	"GAME_OPTION_SIZE_DMG": "Hasar Boyutu",
-	"GAME_OPTION_SIZE_STONE": "Metin Boyutu",
-	"GAME_OPTION_SPEEDTREE_ENHANCED_FOLIAGE_DESC": "Agac yapraklarinin detay seviyesi.",
-	"GAME_OPTION_SPEEDTREE_FALLING_LEAVES_DESC": "Agaclardan dokulen yaprak efekti.",
-	"GAME_OPTION_SPEEDTREE_LIGHTING": "Isiklandirma",
-	"GAME_OPTION_SPEEDTREE_TITLE": "Agac Motoru (SpeedTree)",
-	"GAME_OPTION_SYSTEM_MENU_SUBTITLE": "Sistem Menusu",
-	"GAME_OPTION_WHISPER_SENDER_LETTERS": "Fisilti Mektubu",
-	"GAME_OPTION_WHISPER_SENDER_LETTERS_DESC": "Fisilti geldiginde mektup simgesi gosterir.",
-	"GAME_OPTION_WHISPER_TITLE": "Fisilti Ayarlari",
-	"GRAPHICS_ENHANCED_WATER_DESCRIPTION": "Gelismis su efektlerini ayarlar.",
-	"GRAPHICS_ENHANCED_WATER_TITLE": "Gelismis Su",
-	"GRAPHICS_LOCAL_LIGHT_DESCRIPTION": "Yerel isiklandirma efektlerini ayarlar.",
-	"GRAPHICS_LOCAL_LIGHT_TITLE": "Yerel Isik",
-	"GRAPHICS_RAIN_DESCRIPTION": "Yagmur yagis efektini ayarlar.",
-	"GRAPHICS_RAIN_TITLE": "Yagmur",
-	"GRAPHICS_SHADOW_CHARACTERS": "Karakterler",
-	"GRAPHICS_SHADOW_SCENERY": "Manzara",
-	"GRAPHICS_SHADOW_TREES": "Agaclar",
-	"GRAPHICS_SHOOTING_STARS_DESCRIPTION": "Kayan yildiz efektini ayarlar.",
-	"GRAPHICS_SHOOTING_STARS_TITLE": "Kayan Yildizlar",
-	"GRAPHICS_SKYBOX_TITLE": "Gokyuzu",
-	"GRAPHICS_SKY_NIGHT": "Gece",
-	"GRAPHICS_SPECULAR_REFLECTION_DESCRIPTION": "Parlak nesnelerdeki yansimalari ayarlar.",
-	"GRAPHICS_SPECULAR_REFLECTION_TITLE": "Isik Yansimasi",
-	"GRAPHICS_STORM_DESCRIPTION": "Firtina efektini ayarlar.",
-	"GRAPHICS_STORM_TITLE": "Firtina",
-	"GRAPHICS_SUN_RAYS_DESCRIPTION": "Gunes isigi huzmelerini ayarlar.",
-	"GRAPHICS_SUN_RAYS_TITLE": "Gunes Isinlari",
-	"GRAPHICS_TOGGLE_HINT": "Ac / Kapat",
-	"GRAPHICS_UNDERWATER_DESCRIPTION": "Su alti gorus efektini ayarlar.",
-	"GRAPHICS_UNDERWATER_TITLE": "Su Alti Efekti",
-	"GRAPHICS_WATER_REFLECTION_DESCRIPTION": "Su yuzeyindeki cevre yansimalarini ayarlar.",
-	"GRAPHICS_WATER_REFLECTION_TITLE": "Su Yansimasi",
-	"GRAPHICS_WATER_RIPPLE_DESCRIPTION": "Su dalgalanmasi efektini ayarlar.",
-	"GRAPHICS_WATER_RIPPLE_TITLE": "Su Dalgaciklari",
-	"GRAPHICS_WET_GROUND_DESCRIPTION": "Islak zemin efektini ayarlar.",
-	"GRAPHICS_WET_GROUND_TITLE": "Islak Zemin"
-}
-for _k, _v in _adv_opt_defs.items():
-	if _k not in locals():
-		locals()[_k] = _v
 
-# ---- Wiki varsayilanlari (wikicontent/uiwiki/wikipages): locale_game.txt'de yoksa EN, TR client'ta TR ----
-_WIKI_DEFAULTS = (
-	("WIKI_TITLE", "Wikipedia", "Wikipedi"),
-	("WIKI_HOME", "Home", "Home"),
-	("WIKI_DUNGEON_TITLE", "Dungeons", "Zindanlar"),
-	("DUNGEON_NAMES_MONKEY", "Monkey Dungeon", "Maymun Zindan\xfd"),
-	("DUNGEON_NAMES_SERPENT", "Serpent Temple", "Y\xfdlan Tap\xfdna\xf0\xfd"),
-	("DUNGEON_NAMES_SPIDER", "Spider Dungeon", "\xd6r\xfcmcek Zindan\xfd"),
-	("DUNGEON_NAMES_DEVILTOWER", "Devil's Tower", "\xdeeytan Kulesi"),
-	("DUNGEON_NAMES_CATACOMBS", "Devil's Catacomb", "\xdeeytan Yeralt\xfd Mezar\xfd"),
-	("DUNGEON_NAMES_SETAOU", "Setaou Ground", "Setaou Arazisi"),
-	("DUNGEON_NAMES_EARTH", "Earth Dungeon", "Toprak Zindan\xfd"),
-	("DUNGEON_NAMES_RAZADOR", "Razador Shrine", "Razador Tap\xfdna\xf0\xfd"),
-	("DUNGEON_NAMES_NEMERE", "Nemere's Watchtower", "Nemere'nin G\xf6zetleme Kulesi"),
-	("DUNGEON_NAMES_OCHAO", "Ochao Temple", "Ochao Tap\xfdna\xf0\xfd"),
-	("MAP_JOTUN_THRYM", "Jotun Thrym", "Jotun Thrym"),
-	("DUNGEON_NAMES_MELEY", "Meley's Lair", "Meley'in Yuvas\xfd"),
-	("WIKI_ENIGMA", "Enigma", "Enigma"),
-	("WIKI_SYSTEM_CHAR_SYSTEMS", "Character Systems", "Karakter Sistemleri"),
-	("WIKI_SYSTEM_GENERAL_SYSTEMS", "General Systems", "Genel Sistemler"),
-	("WIKI_SYSTEM_DRAGON_ALCHEMY", "Dragon Soul Alchemy", "Ejderha Ta\xfe\xfd Simyas\xfd"),
-	("WIKI_SYSTEM_COSTUMES", "Costumes", "Kost\xfcmler"),
-	("WIKI_SYSTEM_MOUNTS", "Mounts", "Binekler"),
-	("WIKI_SYSTEM_PETS", "Pets", "Evcil Hayvanlar"),
-	("WIKI_SYSTEM_BIOLOGIST_QUEST", "Biologist Quest", "Biyolog G\xf6revi"),
-	("PASSIVE_SKILL_TITLE", "Passive Skills", "Pasif Beceriler"),
-	("SASH_SKIN_TITLE", "Sash Skins", "Ku\xfeak G\xf6r\xfcn\xfcmleri"),
-	("WIKI_BUFFI_SYSTEM", "Buffi System", "Buffi Sistemi"),
-	("WIKI_67_BONUS_SYSTEM", "6th & 7th Bonus", "6. ve 7. Bonus"),
-	("WIKI_AURA_PVP", "Aura (PvP)", "Aura (PvP)"),
-	("WIKI_PET_ORB", "Pet Orb", "Pet K\xfcresi"),
-	("WIKI_BOUNS_INFO", "Bonus Info", "Bonus Bilgisi"),
-	("WIKI_ENERGY_CRYSTAL", "Energy Crystal", "Enerji Kristali"),
-	("WIKI_SYSTEM_GUILDS", "Guilds", "Loncalar"),
-	("CASUAL_SYSTEM_TILE", "Casual Systems", "G\xfcnl\xfck Sistemler"),
-	("Exploration", "Exploration", "Ke\xfeif"),
-	("Shrines", "Shrines", "Tap\xfdnaklar"),
-	("Fishing", "Fishing", "Bal\xfdk Tutma"),
-	("Stone Exchange", "Stone Exchange", "Ta\xfe De\xf0i\xfeimi"),
-	("WIKI_SYSTEM_MOKOKO", "Mokoko", "Mokoko"),
-	("WIKI_MINING", "Mining", "Madencilik"),
-	("WIKI_CHAMPION_ARENA", "Champion Arena", "\xdeampiyon Arenas\xfd"),
-	("WIKI_DAILY_EVENTS", "Daily Events", "G\xfcnl\xfck Etkinlikler"),
-	("RANK_BY_GUILD_DUNGEON", "Guild Dungeon Ranking", "Lonca Zindan\xfd S\xfdralamas\xfd"),
-	("WIKI_ZONE_CONTROL", "Zone Control", "B\xf6lge Kontrol\xfc"),
-	("Torgny Trial", "Torgny Trial", "Torgny S\xfdnav\xfd"),
-	("Karuak Ceremony", "Karuak Ceremony", "Karuak T\xf6reni"),
-	("WIKI_LEGENDARY", "Legendary", "Efsanevi"),
-	("WIKI_OCTAVIO_FESTIVAL", "Octavio Festival", "Octavio Festivali"),
-	("WIKI_BEGINNER_EVENT", "Beginner Event", "Yeni Ba\xfelayanlar Etkinli\xf0i"),
-	("Guide Start", "Starter Guide", "Ba\xfelang\xfd\xe7 Rehberi"),
-	("WIKI_GUIDE_55_75", "Level 55-75 Guide", "55-75 Seviye Rehberi"),
-	("WIKI_GUIDETRY", "Beginner Tips", "Ba\xfelang\xfd\xe7 \xddpu\xe7lar\xfd"),
-	("WIKI_GUIDEFAQ", "FAQ", "S\xfdk Sorulan Sorular"),
-	("WIKI_EVENTS", "Current Events", "Mevcut Etkinlikler"),
-	("WIKI_GUIDES", "Guides", "Rehberler"),
-	("WIKI_CRAFT_INCREASE", "Increase", "Art\xfd\xfe"),
-	("WIKI_CRAFT_MATERIALS", "Materials", "Malzemeler"),
-	("WIKI_CRAFT_RESULT", "Result", "Sonu\xe7"),
-	("WIKI_MOUNT_ENERGY", "Energy", "Enerji"),
-	("WIKI_MOUNT_RUNES", "Runes", "R\xfcnler"),
-	("WIKI_NO_DATA", "-", "-"),
-	("WIKI_PET_EVOLUTION", "Evolution", "Evrim"),
-	("WIKI_SHOP_PRICE", "Price", "Fiyat"),
-	("WIKI_STONES_ALSO_AVAILABLE", "Also available:", "Ayr\xfdca bulunur:"),
+
+
+
+
+# ENABLE_BONUS_FIX: bonus tooltip keys that only locale/tr defines (other languages raised AttributeError in uitooltip)
+_BONUS_TOOLTIP_DEFAULTS = (
+	("TOOLTIP_ATTBONUS_BOSS", "Strong against bosses +%d%%"),
+	("TOOLTIP_ATTBONUS_ELEMENTS", "Strong against elements +%d%%"),
+	("TOOLTIP_ATTBONUS_CHARACTERS", "Strong against characters +%d%%"),
+	("TOOLTIP_ENCHANT_ELEMENTS", "Resistance against elements +%d%%"),
+	("TOOLTIP_ENCHANT_CHARACTERS", "Defence against all characters +%d%%"),
+	("TOOLTIP_APPLY_RESIST_MONSTER", "Resistance against monsters +%d%%"),
+	("TOOLTIP_APPLY_ATTBONUS_MEDI_PVM", "Average damage [PvM] %d%%"),
+	("TOOLTIP_ATTBONUS_PVM_STR", "Attack value [PvM] +%d"),
+	("TOOLTIP_ATTBONUS_PVM_BERSERKER", "Berserker [PvM] +%d%%"),
 )
-
-def _ApplyWikiDefaults():
-	_g = globals()
-	try:
-		_lang = app.GetLocaleName()
-	except:
-		_lang = ""
-	_isTr = (_lang or "").lower() in ("tr", "turkey", "turkish")
-	for _row in _WIKI_DEFAULTS:
-		if not _g.has_key(_row[0]):
-			if _isTr:
-				_g[_row[0]] = _row[2]
-			else:
-				_g[_row[0]] = _row[1]
-
-_ApplyWikiDefaults()
+for _key, _text in _BONUS_TOOLTIP_DEFAULTS:
+	if _key not in globals():
+		globals()[_key] = (lambda t: (lambda x: t % x))(_text)

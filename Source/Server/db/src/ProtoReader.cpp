@@ -108,7 +108,10 @@ int32_t get_Item_Type_Value(const string &inputString)
 		"ITEM_PASSIVE",			//38
 #endif
 #ifdef ENABLE_MOVE_COSTUME_ACCE_ATTR
-		"ITEM_MEDIUM"
+		"ITEM_MEDIUM",
+#endif
+#ifdef ENABLE_SHINING_SYSTEM
+		"ITEM_SHINING",
 #endif
 	};
 
@@ -375,6 +378,14 @@ int32_t get_Item_SubType_Value(uint32_t type_value, const string &inputString)
 	};
 
 #ifdef ENABLE_MOVE_COSTUME_ACCE_ATTR
+#ifdef ENABLE_SHINING_SYSTEM
+	subtypes[ITEM_SHINING] =
+	{
+		"SHINING_WEAPON",
+		"SHINING_ARMOR",
+	};
+#endif
+
 	subtypes[ITEM_MEDIUM] =
 	{
 		"MEDIUM_MOVE_COSTUME_ATTR",

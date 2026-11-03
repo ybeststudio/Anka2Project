@@ -259,6 +259,9 @@ bool CPythonNetworkStream::RecvCharacterAdditionalInfo()
 		kNetActorData.m_dwAura = chrInfoPacket.awPart[CHR_EQUIPPART_AURA];
 #endif
 		kNetActorData.m_dwMountVnum = chrInfoPacket.dwMountVnum;
+#ifdef ENABLE_SHINING_SYSTEM
+		memcpy(kNetActorData.m_adwShining, chrInfoPacket.adwShining, sizeof(kNetActorData.m_adwShining));
+#endif
 #ifdef ENABLE_GUILD_LEADER_TEXTAIL
 		kNetActorData.m_dwGuildLeader = chrInfoPacket.dwGuildLeader;
 #endif
@@ -365,6 +368,9 @@ bool CPythonNetworkStream::RecvCharacterUpdatePacket()
 	kNetUpdateActorData.m_byPKMode = chrUpdatePacket.bPKMode;
 	kNetUpdateActorData.m_dwStateFlags = chrUpdatePacket.bStateFlag;
 	kNetUpdateActorData.m_dwMountVnum = chrUpdatePacket.dwMountVnum;
+#ifdef ENABLE_SHINING_SYSTEM
+	memcpy(kNetUpdateActorData.m_adwShining, chrUpdatePacket.adwShining, sizeof(kNetUpdateActorData.m_adwShining));
+#endif
 #ifdef ENABLE_GUILD_LEADER_TEXTAIL
 	kNetUpdateActorData.m_dwGuildLeader = chrUpdatePacket.dwGuildLeader;
 #endif

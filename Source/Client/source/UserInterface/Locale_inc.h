@@ -51,6 +51,7 @@
 #define ENABLE_PENDANT_SYSTEM								// Resmi sürümdeki tılsım (pendant) sistemi etkin;
 #define ENABLE_ATTBONUS_METIN								// Metin taşlarına saldırı bonusu sistemi etkin;
 #define ENABLE_TEXTLINE_EMOJI								// Yazı satırlarında / ipuçlarında emoji desteği;
+#define ENABLE_EMOJI_ICON_PACK								// |E...|e emojis read from the icon pack first (icon/<name>.tga|png), reference client layout
 #define ENABLE_MESSENGER_TEAM								// Arkadaş listesindeki ekip sekmesi etkin;
 #define ENABLE_DESTROY_DIALOG								// Eşyayı yere atarken yok etme seçeneği;
 #define ENABLE_SORT_INVENTORY								// Envanter ve özel envanter sıralama sistemi etkin;
@@ -237,7 +238,18 @@
 		#define ENABLE_BUFFI_SKILL_BOOK					// Buffi skill books / soul stones
 		#define ENABLE_BUFFI_CHANGE_SEX					// Buffi sex change talisman
 	#endif
+#define ENABLE_WHISPER_MESSENGER							// Baerim style messenger window (uiWhisperMessenger): conversation list, chat bubbles, Anka2 Global channel
+#define ENABLE_GUILD_APPLICATION							// Baerim "Lonca Basvurusu" window + sliding guild join notification (uiGuildApplication), server /guild_app
+#define ENABLE_MESSENGER_DETAILS							// Baerim friend list window (uiMessengerRenewal): categories, search, favorites, member cards; server "MessengerInfo"
+#define ENABLE_GUILD_GRADE_RENEWAL							// Baerim grade dialog: 9 authorities (WORD authority flag), must match the server define
+#define ENABLE_GUILD_MARK_PNG								// Lonca logosu .png yukleme (DevIL IL_NO_PNG, D3DX ile cozulur)
+#define ENABLE_GUILD_RENEWAL_BAERIM						// Baerim guild window (uiGuildRenewal): info / member pages, blessings, co leaders; old GF pages only without it
+#define ENABLE_AFFECT_CAST_STAT							// Skill buff affects carry the caster STR / INT (affect tooltip "INT on activation")
+#define ENABLE_SHINING_SYSTEM								// Shining items (ITEM_SHINING): weapon / costume glow sets, locale/common/shining_effect.txt
+#define ENABLE_BRAVE_CAPE_RENEWAL						// Brave Cape window (Baerim uiAutoCape.BraveCapeWindow, /brave_cape)
 #define ENABLE_SKILL_UPGRADE							// Skill Upgrader window (/upgrade_skill)
+#define ENABLE_APPLY_RANDOM							// Official random base bonuses (APPLY_RANDOM) in item packets / tooltips
+#define ENABLE_BONUS_FIX								// Bonus page: APPLY -> POINT for every bonus the server stores
 #define ENABLE_NPC_WEAR_ITEM                    			// NPC’lerin eşya giyebilmesini etkinleştir
 #define ENABLE_HUNTING_SYSTEM                   			// Özgün görevlerle avcılık (hunting) sistemini etkinleştir
 #define ENABLE_EMOTICONS_SYSTEM                 			// Sohbet ve fısılda (whisper) emoji sistemini etkinleştir

@@ -1,0 +1,242 @@
+{{Equipment2/Layout
+
+<!-- Type of item - accepted values: Helmet Shoes Shield-->
+|Type = Shield
+
+<!-- Level of item - accepted values: Level or level interval in ## - ## format -->
+|Level = 90 - 105
+
+<!-- Classes that can use this item accepted values are warrior ; ninja ; shaman ; sura ; lycan ; 3 (for warrior ninja and sura) ; 4 for all classes-->
+|wearable = 4
+
+<!-- Powershard used to add 6/7 bonus -->
+|Powershard = {{Ti|Red Powershard}}
+
+<!-- Origin of item -->
+|Origin = 
+<ul>
+*'''[[NPC]]:''' 
+:*{{Tm|Warrior Statue}} (Crafted)
+::*{{Ti|Asmodeus' Stone Heart}} 30x
+::*{{Ti|Asmodeus Scale}} 5x
+::*{{Ti|Asmodeus Shoulder Guards}} 5x
+::*{{Ti|Asmodeus Mane}} 1x
+::*{{Ti|Gaya|100 Gaya}}
+::*{{Ti|Yang|10.000.000 Yang}}
+*'''Other:''' [[Unique Quests]] (Journey to the Otherworld)
+</ul>
+
+<!-- Other information -->
+|Other = The crafting method has a 100% success rate. See [[Item Refinement]].
+*1 default bonus is added, marked with a <span style="color:#3400FF">blue color</span>
+*The bonus is random and added by system, as well as its starting value
+*Below you'll find a table with all possible bonuses as well as the min-max values
+*When changing the 1-5 bonuses, it is possible to have the same bonus as default
+
+<!-- Upgrade yang costs - numeric value only (no yang tag) ; blank if no costs -->
+|Costs0 = 
+|Costs1 = 250.000
+|Costs2 = 300.000
+|Costs3 = 350.000
+|Costs4 = 400.000
+|Costs5 = 450.000
+|Costs6 = 500.000
+|Costs7 = 550.000
+|Costs8 = 600.000
+|Costs9 = 650.000
+|Costs10 = 
+|Costs11 = 
+|Costs12 = 
+|Costs13 = 
+|Costs14 = 
+|Costs15 = 
+
+<!-- Level of item if it changes during the upgrade -->
+|LVL0 = 90
+|LVL1 = 91
+|LVL2 = 93
+|LVL3 = 94
+|LVL4 = 95
+|LVL5 = 97
+|LVL6 = 99
+|LVL7 = 101
+|LVL8 = 103
+|LVL9 = 105
+|LVL10 = 
+|LVL11 = 
+|LVL12 = 
+|LVL13 = 
+|LVL14 = 
+|LVL15 = 
+
+<!-- 1st Upgrade Item -->
+|1stUpgitem0 = 
+|1stUpgitem1 = 1x [[File:Asmodeus' Stone Heart.png|link=Asmodeus' Stone Heart]]
+|1stUpgitem2 = 2x [[File:Asmodeus' Stone Heart.png|link=Asmodeus' Stone Heart]]
+|1stUpgitem3 = 2x [[File:Asmodeus' Stone Heart.png|link=Asmodeus' Stone Heart]]
+|1stUpgitem4 = 3x [[File:Asmodeus' Stone Heart.png|link=Asmodeus' Stone Heart]]
+|1stUpgitem5 = 3x [[File:Asmodeus' Stone Heart.png|link=Asmodeus' Stone Heart]]
+|1stUpgitem6 = 6x [[File:Asmodeus' Stone Heart.png|link=Asmodeus' Stone Heart]]
+|1stUpgitem7 = 9x [[File:Asmodeus' Stone Heart.png|link=Asmodeus' Stone Heart]]
+|1stUpgitem8 = 12x [[File:Asmodeus' Stone Heart.png|link=Asmodeus' Stone Heart]]
+|1stUpgitem9 = 15x [[File:Asmodeus' Stone Heart.png|link=Asmodeus' Stone Heart]]
+|1stUpgitem10 = 
+|1stUpgitem11 = 
+|1stUpgitem12 = 
+|1stUpgitem13 = 
+|1stUpgitem14 = 
+|1stUpgitem15 = 
+
+<!-- 2nd Upgrade Item -->
+|2ndUpgitem0 = 
+|2ndUpgitem1 = 
+|2ndUpgitem2 = 
+|2ndUpgitem3 = 
+|2ndUpgitem4 = 3x [[File:Asmodeus Scale.png|link=Asmodeus Scale]]
+|2ndUpgitem5 = 4x [[File:Asmodeus Scale.png|link=Asmodeus Scale]]
+|2ndUpgitem6 = 5x [[File:Asmodeus Scale.png|link=Asmodeus Scale]]
+|2ndUpgitem7 = 3x [[File:Asmodeus Horn.png|link=Asmodeus Horn]]
+|2ndUpgitem8 = 4x [[File:Asmodeus Horn.png|link=Asmodeus Horn]]
+|2ndUpgitem9 = 5x [[File:Damned Soul.png|link=Damned Soul]]
+|2ndUpgitem10 = 
+|2ndUpgitem11 = 
+|2ndUpgitem12 = 
+|2ndUpgitem13 = 
+|2ndUpgitem14 = 
+|2ndUpgitem15 = 
+
+<!-- 3rd Upgrade Item -->
+|3rdUpgitem0 = 
+|3rdUpgitem1 = 
+|3rdUpgitem2 = 
+|3rdUpgitem3 = 
+|3rdUpgitem4 = 1x [[File:White Pearl.png|link=White Pearl]]
+|3rdUpgitem5 = 1x [[File:Blue Pearl.png|link=Blue Pearl]]
+|3rdUpgitem6 = 1x [[File:Blood-Red Pearl.png|link=Blood-Red Pearl]]
+|3rdUpgitem7 = 1x [[File:Agate.png|link=Agate]]
+|3rdUpgitem8 = 1x [[File:Titanium Dioxide.png|link=Titanium Dioxide]]
+|3rdUpgitem9 = 1x [[File:Moonstone.png|link=Moonstone]]
+|3rdUpgitem10 = 
+|3rdUpgitem11 = 
+|3rdUpgitem12 = 
+|3rdUpgitem13 = 
+|3rdUpgitem14 = 
+|3rdUpgitem15 = 
+
+<!-- 1st Bonus Name and values (Bonus1-10 opens the +10~15 table -->
+|Bonus1-Name = Defence
+|Bonus1-0 = 9~18
+|Bonus1-1 = 23~32
+|Bonus1-2 = 35~44
+|Bonus1-3 = 47~56
+|Bonus1-4 = 59~68
+|Bonus1-5 = 77~86
+|Bonus1-6 = 99~108
+|Bonus1-7 = 127~142
+|Bonus1-8 = 155~174
+|Bonus1-9 = 203~226
+|Bonus1-10 = 
+|Bonus1-11 = 
+|Bonus1-12 = 
+|Bonus1-13 = 
+|Bonus1-14 = 
+|Bonus1-15 = 
+
+<!-- 2nd Bonus Name and values -->
+|Bonus2-Name = 
+|Bonus2-0 = 
+|Bonus2-1 = 
+|Bonus2-2 = 
+|Bonus2-3 = 
+|Bonus2-4 = 
+|Bonus2-5 = 
+|Bonus2-6 = 
+|Bonus2-7 = 
+|Bonus2-8 = 
+|Bonus2-9 = 
+|Bonus2-10 = 
+|Bonus2-11 = 
+|Bonus2-12 = 
+|Bonus2-13 = 
+|Bonus2-14 = 
+|Bonus2-15 = 
+
+}}
+
+{| width="99%" {{Prettytable}} 
+|- {{Hl3}}
+! colspan=12| Possible bonus
+|- {{Hl3}}
+! width="250px"| Bonus
+! +0
+! +1
+! +2
+! +3
+! +4
+! +5
+! +6
+! +7
+! +8
+! +9
+! Version
+|-
+| rowspan=3| Average Damage Resistance<br>Resistance against Skill Damage<br>Chance to block a close-combat attack<br>Chance to reflect close combat hits
+|-
+| 1%
+| 1%
+| 2%
+| 3%
+| 4%
+| 5%
+| 7%
+| 8%
+| 10%
+| 12%
+| align="center"| '''1'''
+|-
+| 1%
+| 2%
+| 3%
+| 4%
+| 5%
+| 6%
+| 8%
+| 9%
+| 12%
+| 14%
+| align="center"| '''2'''
+|-
+| rowspan=3| Chance to avoid Arrows<br>Sword Defence<br>Two-Handed Defence<br>Dagger Defence<br>Arrow Defence<br>Bell Defence<br>Fan Defence<br>Claw Defence
+|-
+| 1%
+| 1%
+| 2%
+| 3%
+| 4%
+| 5%
+| 7%
+| 8%
+| 10%
+| 13%
+| align="center"| '''1'''
+|-
+| 1%
+| 2%
+| 3%
+| 4%
+| 5%
+| 6%
+| 8%
+| 9%
+| 12%
+| 15%
+| align="center"| '''2'''
+|-
+|}
+
+[[de:Verdammnis-Schild]]
+[[fr:Bouc. de la damnation]]
+[[hu:Kárhozat pajzs]]
+[[it:Scudo Damnatio]]
+[[pl:Tarcza Potępienia]]
+[[ro:Scutul Condamnaților]]

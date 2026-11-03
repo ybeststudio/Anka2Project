@@ -59,11 +59,11 @@ class AttachBonusDialog(ui.ScriptWindow):
 		self.attrButtonList[2].SetEvent(ui.__mem_func__(self.__OnClickChangeMusicButton), 2)
 		self.attrButtonList[3].SetEvent(ui.__mem_func__(self.__OnClickChangeMusicButton), 3)
 		self.attrButtonList[4].SetEvent(ui.__mem_func__(self.__OnClickChangeMusicButton), 4)
-		self.attrButtonList[0].SetToolTipText("Efsun Se\xe7", -90, 0)
-		self.attrButtonList[1].SetToolTipText("Efsun Se\xe7", -90, 0)
-		self.attrButtonList[2].SetToolTipText("Efsun Se\xe7", -90, 0)
-		self.attrButtonList[3].SetToolTipText("Efsun Se\xe7", -90, 0)
-		self.attrButtonList[4].SetToolTipText("Efsun Se\xe7", -90, 0)
+		self.attrButtonList[0].SetToolTipText(localeInfo.ATTACH_BONUS_SELECT, -90, 0)
+		self.attrButtonList[1].SetToolTipText(localeInfo.ATTACH_BONUS_SELECT, -90, 0)
+		self.attrButtonList[2].SetToolTipText(localeInfo.ATTACH_BONUS_SELECT, -90, 0)
+		self.attrButtonList[3].SetToolTipText(localeInfo.ATTACH_BONUS_SELECT, -90, 0)
+		self.attrButtonList[4].SetToolTipText(localeInfo.ATTACH_BONUS_SELECT, -90, 0)
 		newToolTip = uiToolTip.ItemToolTip()
 		newToolTip.SetParent(self)
 		newToolTip.SetPosition(15, 38)
@@ -179,10 +179,10 @@ class AttachBonusDialog(ui.ScriptWindow):
 	def Accept(self):
 		if self.hideSecond:
 			if self.bonusType0 == 0 or self.bonusType1 == 0:
-				chat.AppendChat(chat.CHAT_TYPE_INFO, "Efsunlar\xfdn t\xfcm\xfcn\xfc se\xe7medin.")
+				chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.ATTACH_BONUS_NOT_ALL_SELECTED)
 				return
 		elif self.bonusType0 == 0 or self.bonusType1 == 0 or self.bonusType2 == 0 or self.bonusType3 == 0 or self.bonusType4 == 0:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "Efsunlar\xfdn t\xfcm\xfcn\xfc se\xe7medin.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.ATTACH_BONUS_NOT_ALL_SELECTED)
 			return
 		net.SendItemNewAttributePacket(self.sourceItemPos, self.targetItemPos, self.bonusType0, self.bonusType1, self.bonusType2, self.bonusType3, self.bonusType4)
 		snd.PlaySound("sound/ui/pickup_item_in_inventory.wav")
@@ -194,7 +194,7 @@ class AttachBonusDialog(ui.ScriptWindow):
 		self.bonusType3 = 0
 		self.bonusType4 = 0
 		for i in xrange(5):
-			self.attrButtonList[i - 1].SetText("Efsun Se\xe7ilmedi")
+			self.attrButtonList[i - 1].SetText(localeInfo.ATTACH_BONUS_NOT_SELECTED)
 
 	def Close(self):
 		self.Hide()

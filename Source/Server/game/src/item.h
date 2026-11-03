@@ -141,6 +141,14 @@ class CItem : public CEntity
 
 		WORD GetAttributeType(int i) { return m_aAttr[i].bType; }
 		short GetAttributeValue(int i) { return m_aAttr[i].sValue; }
+#ifdef ENABLE_APPLY_RANDOM
+		const TPlayerItemAttribute* GetApplyRandoms() const { return m_aApplyRandom; }
+		const BYTE* GetApplyRandomRows() const { return m_abApplyRandomRow; }
+		void SetApplyRandoms(const TPlayerItemAttribute* pApply, const BYTE* pRow);
+		bool HasApplyRandom() const;				// the proto has APPLY_RANDOM slots
+		void RollApplyRandom(bool bOnlyMissing = false);	// rolls a bonus for every (empty) APPLY_RANDOM slot
+		void TransferApplyRandom(LPITEM pkOldItem);	// refine: same type and path, value of the new refine level
+#endif
 
 		BYTE GetNewAttributeType(int i) { return m_pProto ? m_pProto->aApplies[i].bType : 0; }
 		short GetNewAttributeValue(int i) { return m_pProto ? m_pProto->aApplies[i].lValue : 0; }
@@ -161,7 +169,12 @@ class CItem : public CEntity
 		DWORD GetRefineFromVnum();
 		int GetRefineLevel();
 
+#ifdef ENABLE_APPLY_RANDOM
+		// a loaded item whose base bonus was rolled now is saved once saving is enabled again
+		void SetSkipSave(bool b) { m_bSkipSave = b; if (!b && m_bApplyRandomPendingSave) { m_bApplyRandomPendingSave = false; Save(); } }
+#else
 		void SetSkipSave(bool b) { m_bSkipSave = b; }
+#endif
 		bool GetSkipSave() { return m_bSkipSave; }
 
 		bool IsOwnership(LPCHARACTER ch);
@@ -354,6 +367,11 @@ class CItem : public CEntity
 
 		int32_t m_alSockets[ITEM_SOCKET_MAX_NUM];
 		TPlayerItemAttribute m_aAttr[ITEM_ATTRIBUTE_MAX_NUM];
+#ifdef ENABLE_APPLY_RANDOM
+		TPlayerItemAttribute m_aApplyRandom[ITEM_APPLY_MAX_NUM];
+		BYTE m_abApplyRandomRow[ITEM_APPLY_MAX_NUM];
+		bool m_bApplyRandomPendingSave;
+#endif
 
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 		DWORD m_dwTransmutationVnum;

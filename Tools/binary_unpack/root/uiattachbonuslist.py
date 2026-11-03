@@ -168,7 +168,7 @@ class AttachBonusList(ui.ScriptWindow):
 				self.selectEvent(selItem.GetID(), selItem.GetText(), self.curSlotID)
 			self.Hide()
 		else:
-			self.__PopupMessage("Efsun se\xe7medin.")
+			self.__PopupMessage(localeInfo.ATTACH_BONUS_LIST_NOT_SELECTED)
 
 	def __RefreshFileList(self, curItemPos):
 		self.__ClearFileList()

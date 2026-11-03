@@ -4056,7 +4056,7 @@ if app.ENABLE_RENEWAL_QUEST:
 			scrollImage = ImageBox()
 			scrollImage.SetParent(self)
 			scrollImage.LoadImage("d:/ymir work/ui/quest_re/quest_down.tga")
-			scrollImage.SetPosition(5, 2.5)
+			scrollImage.SetPosition(5, 2)	# integer position (2.5 was never applied, the icon sat at 0,0)
 			scrollImage.AddFlag("not_pick")
 			scrollImage.Show()
 			self.scrollImage = scrollImage

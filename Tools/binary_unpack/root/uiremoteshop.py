@@ -6,6 +6,7 @@ player = __import__(pyapi.GetModuleName("player"))
 net = __import__(pyapi.GetModuleName("net"))
 
 import background
+import localeInfo
 import ui, renderTarget, constInfo
 
 ROOT_YENI = "remoteshop_2022/"
@@ -26,14 +27,14 @@ class RemoteShop(ui.ScriptWindow):
 
 	NPC_LIST = {
 	
-	0 : ["Silah Satýcýsý ", 1, 9001],
-	1 : ["Zýrh Satýcýsý ", 4, 9002],
-	2 : ["Satýcý Market ", 90101, 9003],
-	3 : ["Satýcý Cevherler. ", 90102, 9003],
-	4 : ["Satýcý Taþlar ", 90104, 9003],
-	5 : ["Emek Puan ( 1 ) ", 8, 9004],
-	6 : ["Emek Puan ( 2 ) ", 20503, 9004],
-	7 : ["KAPALI ", 302, 20082],
+	0 : [localeInfo.REMOTE_SHOP_NPC_0, 1, 9001],
+	1 : [localeInfo.REMOTE_SHOP_NPC_1, 4, 9002],
+	2 : [localeInfo.REMOTE_SHOP_NPC_2, 90101, 9003],
+	3 : [localeInfo.REMOTE_SHOP_NPC_3, 90102, 9003],
+	4 : [localeInfo.REMOTE_SHOP_NPC_4, 90104, 9003],
+	5 : [localeInfo.REMOTE_SHOP_NPC_5, 8, 9004],
+	6 : [localeInfo.REMOTE_SHOP_NPC_6, 20503, 9004],
+	7 : [localeInfo.REMOTE_SHOP_NPC_7, 302, 20082],
 	}
 
 

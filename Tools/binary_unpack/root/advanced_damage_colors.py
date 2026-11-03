@@ -2,6 +2,7 @@
 """Baerim-style damage colour palette, backed by client-side preferences."""
 
 import grp
+import localeInfo
 import ui
 import wndMgr
 import advanced_options_runtime as options
@@ -9,12 +10,12 @@ import advanced_options_runtime as options
 ASSET = "d:/ymir work/ui/game/advanced_game_options/"
 PALETTE = "d:/ymir work/ui/game/skillcolor/color_picker_background.tga"
 KINDS = (
-    ("normal", "Normal", (255, 255, 0)),
-    ("critical", "Kritik", (255, 190, 0)),
-    ("penetrate", "Delici", (80, 220, 255)),
-    ("critical_penetrate", "Kritik + Delici", (255, 80, 255)),
-    ("poison", "Zehir", (90, 220, 80)),
-    ("received", "Al\xfdnan Hasar", (255, 80, 80)),
+    ("normal", localeInfo.DAMAGE_COLOR_NORMAL, (255, 255, 0)),
+    ("critical", localeInfo.DAMAGE_COLOR_CRITICAL, (255, 190, 0)),
+    ("penetrate", localeInfo.DAMAGE_COLOR_PENETRATE, (80, 220, 255)),
+    ("critical_penetrate", localeInfo.DAMAGE_COLOR_CRITICAL_PENETRATE, (255, 80, 255)),
+    ("poison", localeInfo.DAMAGE_COLOR_POISON, (90, 220, 80)),
+    ("received", localeInfo.DAMAGE_COLOR_RECEIVED, (255, 80, 80)),
 )
 
 def _text(value):
@@ -48,7 +49,7 @@ class DamageColorWindow(ui.BoardWithTitleBar):
     def __init__(self):
         ui.BoardWithTitleBar.__init__(self)
         self.SetSize(330, 494)
-        self.SetTitleName(_text("Hasar Renkleri"))
+        self.SetTitleName(_text(localeInfo.DAMAGE_COLOR_TITLE))
         self.SetCloseEvent(self.Hide)
         self.AddFlag("movable")
         self.SetCenterPosition()
@@ -74,7 +75,7 @@ class DamageColorWindow(ui.BoardWithTitleBar):
             button.SAFE_SetEvent(self.SelectKind, name)
             button.Show()
             self.tabs.append(button)
-        self._label(14, 122, "Se\xe7ilen renk", bold=True)
+        self._label(14, 122, localeInfo.DAMAGE_COLOR_SELECTED, bold=True)
         self._bar(15, 138, 304, 28, 0xff302922)
         self.preview = self._bar(17, 140, 300, 24, 0xffffff00)
 
@@ -89,7 +90,7 @@ class DamageColorWindow(ui.BoardWithTitleBar):
         self.picker.SetSize(225, 225)
         self.picker.SetMouseLeftButtonDownEvent(self.PickColor)
         self.picker.Show()
-        self._label(22, 417, "Bir sekme se\xe7in, ard\xfdndan rengini ayarlamak i\xe7in palete t\xfdklay\xfdn.")
+        self._label(22, 417, localeInfo.DAMAGE_COLOR_PICK_HINT)
         self._bar(105, 436, 120, 20, 0xff202020)
         self.hexText = ui.EditLine()
         self.hexText.SetParent(self)
@@ -101,8 +102,8 @@ class DamageColorWindow(ui.BoardWithTitleBar):
         self.hexText.SetReturnEvent(self.ApplyHex)
         self.hexText.Show()
         self.parts.append(self.hexText)
-        self._button(60, 461, "S\xfdf\xfdrla", self.ResetColor)
-        self._button(172, 461, "Uygula", self.ApplyColor)
+        self._button(60, 461, localeInfo.DAMAGE_COLOR_RESET, self.ResetColor)
+        self._button(172, 461, localeInfo.DAMAGE_COLOR_APPLY, self.ApplyColor)
         self.SelectKind("normal")
 
     def _label(self, x, y, value, bold=False):
@@ -181,8 +182,8 @@ class DamageColorWindow(ui.BoardWithTitleBar):
 
 class QueueColorWindow(DamageColorWindow):
     COLOR_PREFIX = "queue_color_"
-    WINDOW_TITLE = "Queue-Metin Rengi"
-    PICK_HINT = "Efekt rengini se\xe7mek i\xe7in palete t\xfdkla."
+    WINDOW_TITLE = localeInfo.QUEUE_COLOR_TITLE
+    PICK_HINT = localeInfo.QUEUE_COLOR_PICK_HINT
 
     def __init__(self):
         ui.BoardWithTitleBar.__init__(self)
@@ -201,7 +202,7 @@ class QueueColorWindow(DamageColorWindow):
         self.parts = []
         self.currentColor = tuple(max(0, min(255, int(round(float(options.Get(
             self.COLOR_PREFIX + channel, 1.0)) * 255)))) for channel in "rgb")
-        self._label(12, 34, "Se\xe7ilen renk", bold=True)
+        self._label(12, 34, localeInfo.DAMAGE_COLOR_SELECTED, bold=True)
         self._bar(10, 47, 250, 29, 0xff302922)
         self.preview = self._bar(12, 49, 246, 25, 0xffffffff)
         self.image = ui.ImageBox()
@@ -227,8 +228,8 @@ class QueueColorWindow(DamageColorWindow):
         self.hexText.SetReturnEvent(self.ApplyHex)
         self.hexText.Show()
         self.parts.append(self.hexText)
-        self._button(29, 371, "S\xfdf\xfdrla", self.ResetColor)
-        self._button(141, 371, "Uygula", self.ApplyColor)
+        self._button(29, 371, localeInfo.DAMAGE_COLOR_RESET, self.ResetColor)
+        self._button(141, 371, localeInfo.DAMAGE_COLOR_APPLY, self.ApplyColor)
         self._refresh()
 
     def _refresh(self):
@@ -262,5 +263,5 @@ class QueueColorWindow(DamageColorWindow):
 
 class EnvironmentColorWindow(QueueColorWindow):
     COLOR_PREFIX = "environment_color_"
-    WINDOW_TITLE = "Ortam rengi"
-    PICK_HINT = "3B ortama bir renk tonu uygular."
+    WINDOW_TITLE = localeInfo.ENVIRONMENT_COLOR_TITLE
+    PICK_HINT = localeInfo.ENVIRONMENT_COLOR_PICK_HINT

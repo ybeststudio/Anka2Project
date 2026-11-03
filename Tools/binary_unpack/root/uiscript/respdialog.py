@@ -241,7 +241,7 @@ window = {
                                                                 "color": BADGE_TEXT_COLOR,
                                                                 "fontname": BADGE_FONT_NAME,
 
-                                                                "text": "Ölümsüzler",
+                                                                "text": uiScriptLocale.RESP_UNDEAD,
                                                             },
                                                         ),
                                                 },

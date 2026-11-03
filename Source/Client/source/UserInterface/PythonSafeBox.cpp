@@ -235,6 +235,22 @@ PyObject *safeboxGetItemAttribute(PyObject *poSelf, PyObject *poArgs)
 	return Py_BuildValue("ii", 0, 0);
 }
 
+#ifdef ENABLE_APPLY_RANDOM
+static PyObject* __SafeboxApplyRandom(PyObject* poArgs, bool bMall)
+{
+	int iSlotIndex, iIndex;
+	if (!PyTuple_GetInteger(poArgs, 0, &iSlotIndex) || !PyTuple_GetInteger(poArgs, 1, &iIndex))
+		return Py_BuildException();
+	TItemData* pItemData;
+	if (iIndex >= 0 && iIndex < 3 && (bMall ? CPythonSafeBox::Instance().GetMallItemDataPtr(iSlotIndex, &pItemData) : CPythonSafeBox::Instance().GetItemDataPtr(iSlotIndex, &pItemData)))
+		return Py_BuildValue("ii", pItemData->aApplyRandom[iIndex].bType, pItemData->aApplyRandom[iIndex].sValue);
+	return Py_BuildValue("ii", 0, 0);
+}
+
+PyObject *safeboxGetItemApplyRandom(PyObject *poSelf, PyObject *poArgs) { return __SafeboxApplyRandom(poArgs, false); }
+PyObject *safeboxGetMallItemApplyRandom(PyObject *poSelf, PyObject *poArgs) { return __SafeboxApplyRandom(poArgs, true); }
+
+#endif
 PyObject *safeboxGetMoney(PyObject *poSelf, PyObject *poArgs)
 {
 	return Py_BuildValue("i", CPythonSafeBox::Instance().GetMoney());
@@ -347,6 +363,10 @@ void initsafebox()
 		{ "GetItemFlags", safeboxGetItemFlags, METH_VARARGS },
 		{ "GetItemMetinSocket", safeboxGetItemMetinSocket, METH_VARARGS },
 		{ "GetItemAttribute", safeboxGetItemAttribute, METH_VARARGS },
+#ifdef ENABLE_APPLY_RANDOM
+		{ "GetItemApplyRandom", safeboxGetItemApplyRandom, METH_VARARGS },
+		{ "GetMallItemApplyRandom", safeboxGetMallItemApplyRandom, METH_VARARGS },
+#endif
 		{ "GetMoney", safeboxGetMoney, METH_VARARGS },
 
 		{ "GetMallItemID", safeboxGetMallItemID, METH_VARARGS },

@@ -30,6 +30,9 @@ class CGuildMarkUploader : public CNetworkStream, public CSingleton<CGuildMarkUp
 		bool Connect(const CNetworkAddress& c_rkNetAddr, DWORD dwHandle, DWORD dwRandomKey, DWORD dwGuildID, const char* c_szFileName, UINT* peError);
 		bool ConnectToSendSymbol(const CNetworkAddress& c_rkNetAddr, DWORD dwHandle, DWORD dwRandomKey, DWORD dwGuildID, const char* c_szFileName, UINT* peError);
 		bool IsCompleteUploading();
+#ifdef ENABLE_GUILD_MARK_PNG
+		bool IsMarkSent() const { return m_isMarkSent; }
+#endif
 
 		void Process();
 
@@ -47,7 +50,10 @@ class CGuildMarkUploader : public CNetworkStream, public CSingleton<CGuildMarkUp
 		void OnRemoteDisconnect();
 		void OnDisconnect();
 
-		bool __Load(const char *c_szFileName, UINT* peError);
+		bool __Load(const char* c_szFileName, UINT* peError);
+#ifdef ENABLE_GUILD_MARK_PNG
+		bool __LoadPng(const char* c_szFileName, UINT* peError);
+#endif
 		bool __LoadSymbol(const char *c_szFileName, UINT* peError);
 
 		bool __Save(const char *c_szFileName);
@@ -78,6 +84,9 @@ class CGuildMarkUploader : public CNetworkStream, public CSingleton<CGuildMarkUp
 		DWORD m_dwGuildID;
 
 		SGuildMark m_kMark;
+#ifdef ENABLE_GUILD_MARK_PNG
+		bool m_isMarkSent;
+#endif
 
 		DWORD m_dwSymbolBufSize;
 		DWORD m_dwSymbolCRC32;

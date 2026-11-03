@@ -12,6 +12,9 @@
 #include "desc_manager.h"
 #include "config.h"
 #include "../../common/service.h"
+#ifdef ENABLE_GUILD_QUEST
+#include "guild_quest.h"
+#endif
 
 #ifdef ENABLE_DUNGEON_INFO
 	#include "dungeon_info.h"
@@ -1976,7 +1979,12 @@ namespace quest
 			{
 				LPCHARACTER pChar = static_cast<LPCHARACTER>(ent);
 				if (pChar->IsPC())
+				{
 					pChar->SetQuestFlag(flag.c_str(), pChar->GetQuestFlag(flag.c_str()) + value);
+#ifdef ENABLE_GUILD_QUEST
+					GuildQuest_AddProgress(pChar, GUILD_QUEST_DUNGEON);
+#endif
+				}
 			}
 		}
 	};

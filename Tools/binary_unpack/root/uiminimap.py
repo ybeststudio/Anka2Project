@@ -636,11 +636,11 @@ class MiniMap(ui.ScriptWindow):
 		self.tooltipAtlasOpen.Show()
 
 		self.tooltipTeleport = MapTextToolTip()
-		self.tooltipTeleport.SetText(getattr(localeInfo, "TELEPORT_WINDOW_TITLE", "I\xfe\xfdnlanma"))
+		self.tooltipTeleport.SetText(localeInfo.TELEPORT_WINDOW_TITLE)
 		self.tooltipWarpLink = MapTextToolTip()
-		self.tooltipWarpLink.SetText(getattr(localeInfo, "TOOLTIP_SHARE_POSITION", "Konum Payla\xfe"))
+		self.tooltipWarpLink.SetText(localeInfo.TOOLTIP_SHARE_POSITION)
 		self.tooltipBattlePass = MapTextToolTip()
-		self.tooltipBattlePass.SetText(getattr(localeInfo, "BATTLEPASS_TITLE", "Sava\xfe Bileti"))
+		self.tooltipBattlePass.SetText(localeInfo.BATTLEPASS_TITLE)
 
 		self.tooltipDungeonInfo = MapTextToolTip()
 		self.tooltipDungeonInfo.SetText(localeInfo.SYSTEM_DUNGEON_BUTTON)
@@ -926,8 +926,8 @@ class MiniMap(ui.ScriptWindow):
 		if self.wndBattlePassMenu:
 			return
 		self.wndBattlePassMenu = uiCommon.QuestionDialog()
-		self.wndBattlePassMenu.SetText("Savaþ Bileti Seçiniz")
-		self.wndBattlePassMenu.SetAcceptText("Ücretsiz")
+		self.wndBattlePassMenu.SetText(localeInfo.BATTLEPASS_SELECT)
+		self.wndBattlePassMenu.SetAcceptText(localeInfo.BATTLEPASS_FREE)
 		self.wndBattlePassMenu.SetCancelText("Premium")
 		self.wndBattlePassMenu.SetAcceptEvent(ui.__mem_func__(self._OnBattlePassAccept))
 		self.wndBattlePassMenu.SetCancelEvent(ui.__mem_func__(self._OnBattlePassCancel))

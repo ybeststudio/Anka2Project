@@ -5,6 +5,7 @@ app = __import__(pyapi.GetModuleName("app"))
 net = __import__(pyapi.GetModuleName("net"))
 
 import ui
+import localeInfo
 import networkModule
 
 ###################################################################################################
@@ -34,15 +35,15 @@ class PointResetDialog(ui.ScriptWindow):
 			import exception
 			exception.Abort("PointResetDialog.LoadWindow.BindObject")
 
-		self.GetChild("message1").SetText("스탯/스킬 포인트를 초기화해주겠네.")
-		self.GetChild("message2").SetText("가�?은 500원이야. 어때, 초기화할텐가?")
+		self.GetChild("message1").SetText(localeInfo.POINT_RESET_MESSAGE_1)
+		self.GetChild("message2").SetText(localeInfo.POINT_RESET_MESSAGE_2)
 		self.GetChild("accept").SetEvent(ui.__mem_func__(self.OpenConfirmDialog))
 		self.GetChild("cancel").SetEvent(ui.__mem_func__(self.Close))
 
 		## Confirm Dialog
-		self.ConfirmText.SetText("현재 레벨의 경험치가 �?두 없어진다네.")
+		self.ConfirmText.SetText(localeInfo.POINT_RESET_CONFIRM_1)
 		self.ConfirmText.SetFontColor(1.0, 0.3, 0.3)
-		self.ConfirmText2.SetText("정말 초기화하고 싶은가?")
+		self.ConfirmText2.SetText(localeInfo.POINT_RESET_CONFIRM_2)
 		self.ConfirmAcceptButton.SetEvent(ui.__mem_func__(self.ResetPoint))
 		self.ConfirmCancelButton.SetEvent(ui.__mem_func__(self.Close))
 

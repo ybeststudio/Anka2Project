@@ -1,4 +1,9 @@
 #include "stdafx.h"
+#include "../../common/service.h"
+#ifdef ENABLE_GUILD_QUEST
+#include "char.h"
+#include "guild_quest.h"
+#endif
 #include "mining.h"
 #include "char.h"
 #include "char_manager.h"
@@ -8,6 +13,10 @@
 #include "db.h"
 #include "log.h"
 #include "skill.h"
+#ifdef ENABLE_GUILD_SKILL_TREE
+#include "guild.h"
+#include "guild_skill.h"
+#endif
 
 namespace mining
 {
@@ -143,6 +152,9 @@ namespace mining
 		item->AddToGround(ch->GetMapIndex(), pos);
 		item->StartDestroyEvent();
 		item->SetOwnership(ch, 15);
+#ifdef ENABLE_CHARACTER_STATS
+		ch->SetQuestFlag("stats.mine", ch->GetQuestFlag("stats.mine") + 1);
+#endif
 
 		DBManager::instance().SendMoneyLog(MONEY_LOG_DROP, item->GetVnum(), item->GetCount());
 	}
@@ -370,6 +382,13 @@ namespace mining
 		if (number(1, 100) <= iPct)
 		{
 			OreDrop(ch, load->GetRaceNum());
+#ifdef ENABLE_GUILD_SKILL_TREE
+			if (ch->GetGuild() && number(1, 100) <= GuildSkill_GetValue(ch->GetGuild(), GUILD_SKILL_TREE_MINE))
+				OreDrop(ch, load->GetRaceNum());
+#endif
+#ifdef ENABLE_GUILD_QUEST
+			GuildQuest_AddProgress(ch, GUILD_QUEST_FISH);
+#endif
 			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The mining has been successful."));
 		}
 		else

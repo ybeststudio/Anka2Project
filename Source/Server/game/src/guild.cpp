@@ -73,10 +73,17 @@ CGuild::CGuild(TGuildCreateParameter & cp)
 	m_data.master_pid = cp.master->GetPlayerID();
 	strlcpy(m_data.grade_array[0].grade_name, "Lider", sizeof(m_data.grade_array[0].grade_name));
 	m_data.grade_array[0].auth_flag = GUILD_AUTH_ADD_MEMBER | GUILD_AUTH_REMOVE_MEMBER | GUILD_AUTH_NOTICE | GUILD_AUTH_USE_SKILL;
+#ifdef ENABLE_GUILD_GRADE_RENEWAL
+	m_data.grade_array[0].auth_flag |= GUILD_AUTH_WAR | GUILD_AUTH_SHOP | GUILD_AUTH_QUEST | GUILD_AUTH_UP_SKILL | GUILD_AUTH_DUNGEON;
+#endif
 
 	for (int i = 1; i < GUILD_GRADE_COUNT; ++i)
 	{
+		#ifdef ENABLE_GUILD_GRADE_RENEWAL
+		snprintf(m_data.grade_array[i].grade_name, sizeof(m_data.grade_array[i].grade_name), "Rank%d", i + 1);
+#else
 		strlcpy(m_data.grade_array[i].grade_name, "Üye", sizeof(m_data.grade_array[i].grade_name));
+#endif
 		m_data.grade_array[i].auth_flag = 0;
 	}
 
@@ -874,7 +881,7 @@ void CGuild::ChangeGradeName(BYTE grade, const char* grade_name)
 	}
 }
 
-void CGuild::ChangeGradeAuth(BYTE grade, BYTE auth)
+void CGuild::ChangeGradeAuth(BYTE grade, TGuildAuthFlag auth)
 {
 	if (grade == 1)
 		return;

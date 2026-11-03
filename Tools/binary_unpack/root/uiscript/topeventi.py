@@ -34,7 +34,7 @@ window = {
 
 					"children" :
 					(
-						{ "name":"TitleName", "type":"text", "x":0, "y":3,  "text" : "Top Dönüþtür",  "horizontal_align":"center", "text_horizontal_align":"center" },
+						{ "name":"TitleName", "type":"text", "x":0, "y":3,  "text" : uiScriptLocale.FOOTBALL_CONVERT_TITLE,  "horizontal_align":"center", "text_horizontal_align":"center" },
 					),
 				},
 				{
@@ -104,7 +104,7 @@ window = {
 							"type" : "button",
 							"x" : 30-7,
 							"y" : 55+53,
-							"text" : "Dönüþtür",
+							"text" : uiScriptLocale.FOOTBALL_CONVERT,
 							"default_image" : ROOT + "Large_Button_01.sub",
 							"over_image" : ROOT + "Large_Button_02.sub",
 							"down_image" : ROOT + "Large_Button_03.sub",

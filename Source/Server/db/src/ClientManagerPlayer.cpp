@@ -70,6 +70,14 @@ bool CreateItemTableFromRes(MYSQL_RES * res, std::vector<TPlayerItem> * pVec, DW
 			str_to_number(item.aAttr[j].bType, row[cur++]);
 			str_to_number(item.aAttr[j].sValue, row[cur++]);
 		}
+#ifdef ENABLE_APPLY_RANDOM
+		for (int j = 0; j < ITEM_APPLY_MAX_NUM; j++)
+		{
+			str_to_number(item.aApplyRandom[j].bType, row[cur++]);
+			str_to_number(item.aApplyRandom[j].sValue, row[cur++]);
+			str_to_number(item.abApplyRandomRow[j], row[cur++]);
+		}
+#endif
 
 		item.owner = dwPID;
 	}
@@ -624,6 +632,9 @@ void CClientManager::QUERY_PLAYER_LOAD(CPeer * peer, DWORD dwHandle, TPlayerLoad
 				"attrtype4,attrvalue4,"
 				"attrtype5,attrvalue5,"
 				"attrtype6,attrvalue6 "
+#ifdef ENABLE_APPLY_RANDOM
+				", " "randomtype0, randomvalue0, randomrow0, randomtype1, randomvalue1, randomrow1, randomtype2, randomvalue2, randomrow2 "
+#endif
 				"FROM item%s "
 
 #ifdef ENABLE_RENEWAL_SWITCHBOT
@@ -812,6 +823,9 @@ void CClientManager::QUERY_PLAYER_LOAD(CPeer * peer, DWORD dwHandle, TPlayerLoad
 				"attrtype4,attrvalue4,"
 				"attrtype5,attrvalue5,"
 				"attrtype6,attrvalue6 "
+#ifdef ENABLE_APPLY_RANDOM
+				", " "randomtype0, randomvalue0, randomrow0, randomtype1, randomvalue1, randomrow1, randomtype2, randomvalue2, randomrow2 "
+#endif
 				"FROM item%s "
 
 #ifdef ENABLE_RENEWAL_SWITCHBOT

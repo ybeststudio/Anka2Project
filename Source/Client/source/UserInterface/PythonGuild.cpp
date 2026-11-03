@@ -35,7 +35,7 @@ void CPythonGuild::SetGradeName(BYTE byGradeNumber, const char *c_szName)
 	rGradeData.strName = c_szName;
 }
 
-void CPythonGuild::SetGradeAuthority(BYTE byGradeNumber, BYTE byAuthority)
+void CPythonGuild::SetGradeAuthority(BYTE byGradeNumber, WORD byAuthority)
 {
 	if (!__IsGradeData(byGradeNumber))
 		return;

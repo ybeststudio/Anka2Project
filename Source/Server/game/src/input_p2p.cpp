@@ -247,6 +247,19 @@ struct FuncShout
 		if (!d->GetCharacter())
 			return;
 
+#ifdef ENABLE_ANKA2_GLOBAL_CHAT
+		if (m_bEmpire == ANKA2_GLOBAL_CHAT_EMPIRE)
+		{
+#ifdef ENABLE_MESSENGER_BLOCK
+			if (MessengerManager::Instance().IsBlocked(d->GetCharacter()->GetName(), m_szName))
+				return;
+#endif
+			// payload "<name>\x1f<gm>\x1f<text, spaces as \x1f>": one token for the client command parser
+			d->GetCharacter()->ChatPacket(CHAT_TYPE_COMMAND, "AnkaGlobalChat %s", m_str);
+			return;
+		}
+#endif
+
 		d->GetCharacter()->ChatPacket(CHAT_TYPE_SHOUT, "%s", m_str);
 
 #ifdef ENABLE_MESSENGER_BLOCK

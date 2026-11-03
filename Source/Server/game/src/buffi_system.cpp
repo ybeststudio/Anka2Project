@@ -33,7 +33,34 @@ namespace
 	const int BUFFI_APPROACH = 180;
 	const int BUFFI_CAST_RANGE = 1000;
 	const DWORD BUFFI_CAST_INTERVAL = 1500;		// ms between two casts
+#ifdef ENABLE_BUFFI_GROWTH
+	const int BUFFI_EXP_SHARE_PCT = 100;		// like the growth pet: the full kill exp (CGrowthPet::RewardEXP)
+#else
 	const int BUFFI_EXP_SHARE_PCT = 50;			// share of the owner's kill exp
+#endif
+#ifdef ENABLE_BUFFI_GROWTH
+	// Look by Buffi level: shaman armour / fan of the highest wearable level, shown at +9.
+	struct SBuffiGear { int iLevel; DWORD dwVnum; };
+	const SBuffiGear s_akBuffiArmor[] = {
+		{ 0, 11800 }, { 9, 11810 }, { 18, 11820 }, { 26, 11830 }, { 34, 11840 }, { 42, 11850 }, { 48, 11860 }, { 54, 11870 },
+		{ 61, 11880 }, { 66, 11890 }, { 80, 12040 }, { 90, 20750 }, { 96, 21270 }, { 105, 20790 }, { 110, 12080 }, { 120, 21370 },
+	};
+	const SBuffiGear s_akBuffiFan[] = {
+		{ 0, 7000 }, { 5, 7010 }, { 10, 7020 }, { 15, 7030 }, { 20, 7040 }, { 25, 7050 }, { 32, 7060 }, { 36, 7070 }, { 40, 7080 },
+		{ 45, 7090 }, { 50, 7100 }, { 55, 7110 }, { 60, 7120 }, { 65, 7130 }, { 70, 7150 }, { 80, 7190 }, { 87, 7370 }, { 96, 7310 },
+		{ 105, 7300 }, { 120, 7330 },
+	};
+	const int BUFFI_GEAR_LOOK_REFINE = 9;
+
+	template <size_t N>
+	DWORD BuffiGearByLevel(const SBuffiGear (&akGear)[N], int iLevel)
+	{
+		DWORD dwVnum = akGear[0].dwVnum;
+		for (size_t i = 0; i < N && akGear[i].iLevel <= iLevel; ++i)
+			dwVnum = akGear[i].dwVnum;
+		return dwVnum + BUFFI_GEAR_LOOK_REFINE;
+	}
+#endif
 
 	std::string Flag(const char* key) { return std::string("buffi.") + key; }
 }
@@ -197,7 +224,11 @@ DWORD CBuffiActor::GetNeedExp() const
 {
 	if (m_iLevel >= BUFFI_MAX_LEVEL || !exp_table)
 		return 0;
+#ifdef ENABLE_BUFFI_GROWTH
+	return MAX(1, exp_table[m_iLevel] / 2);	// same as CGrowthPet::GetRequiredTotalExp
+#else
 	return MAX(1, exp_table[m_iLevel] / 4);
+#endif
 }
 
 bool CBuffiActor::IsExpired() const
@@ -269,8 +300,13 @@ void CBuffiActor::ApplyLook()
 		m_adwCostume[i] = pkCostume ? pkCostume->GetVnum() : 0;
 	}
 
+#ifdef ENABLE_BUFFI_GROWTH
+	const DWORD dwArmor = m_adwCostume[BUFFI_COSTUME_BODY] ? m_adwCostume[BUFFI_COSTUME_BODY] : BuffiGearByLevel(s_akBuffiArmor, m_iLevel);
+	const DWORD dwWeapon = m_adwCostume[BUFFI_COSTUME_WEAPON] ? m_adwCostume[BUFFI_COSTUME_WEAPON] : BuffiGearByLevel(s_akBuffiFan, m_iLevel);
+#else
 	const DWORD dwArmor = m_adwCostume[BUFFI_COSTUME_BODY] ? m_adwCostume[BUFFI_COSTUME_BODY] : (DWORD) BUFFI_DEFAULT_ARMOR;
 	const DWORD dwWeapon = m_adwCostume[BUFFI_COSTUME_WEAPON] ? m_adwCostume[BUFFI_COSTUME_WEAPON] : (DWORD) BUFFI_DEFAULT_WEAPON;
+#endif
 	m_pkChar->SetPart(PART_MAIN, (WORD) dwArmor);
 	m_pkChar->SetPart(PART_WEAPON, (WORD) dwWeapon);
 
@@ -615,6 +651,12 @@ void CBuffiActor::OnOwnerGainExp(int iExp)
 	if (m_iLevel >= GetLevelCap())
 		return;
 
+#ifdef ENABLE_BUFFI_GROWTH
+	// like the growth pet (CGrowthPet::CanReceiveEXP): never above the owner's level
+	if (m_iLevel >= m_pkOwner->GetLevel())
+		return;
+#endif
+
 	int iGain = iExp * BUFFI_EXP_SHARE_PCT / 100;
 	if (m_pkOwner->GetQuestFlag(Flag("exp_ring_end")) > get_global_time())
 		iGain *= 2;
@@ -623,7 +665,11 @@ void CBuffiActor::OnOwnerGainExp(int iExp)
 
 	m_dwExp += iGain;
 	bool bLevelUp = false;
+#ifdef ENABLE_BUFFI_GROWTH
+	while (m_iLevel < GetLevelCap() && m_iLevel < m_pkOwner->GetLevel() && GetNeedExp() && m_dwExp >= GetNeedExp())
+#else
 	while (m_iLevel < GetLevelCap() && GetNeedExp() && m_dwExp >= GetNeedExp())
+#endif
 	{
 		m_dwExp -= GetNeedExp();
 		++m_iLevel;
@@ -642,6 +688,9 @@ void CBuffiActor::OnOwnerGainExp(int iExp)
 	if (bLevelUp)
 	{
 		ApplyStats();
+#ifdef ENABLE_BUFFI_GROWTH
+		ApplyLook();	// armour / fan follow the level
+#endif
 		Save();
 		m_pkChar->ViewReencode();	// refresh the "Lv N" name tag
 		m_pkChar->EffectPacket(SE_SUCCESS);

@@ -56,6 +56,9 @@ void exchange_packet(LPCHARACTER ch, BYTE sub_header, bool is_me, DWORD arg1, TI
 #ifdef ENABLE_SET_ITEM
 		pack_exchg.dwSetValue = static_cast<LPITEM>(pvData)->GetSetValue();
 #endif
+#ifdef ENABLE_SEALBIND_SYSTEM
+		pack_exchg.sealbind = static_cast<LPITEM>(pvData)->GetSealDate();
+#endif
 	}
 	else
 	{
@@ -69,6 +72,9 @@ void exchange_packet(LPCHARACTER ch, BYTE sub_header, bool is_me, DWORD arg1, TI
 #endif
 #ifdef ENABLE_SET_ITEM
 		pack_exchg.dwSetValue = 0;
+#endif
+#ifdef ENABLE_SEALBIND_SYSTEM
+		pack_exchg.sealbind = 0;
 #endif
 	}
 

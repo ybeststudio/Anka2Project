@@ -97,7 +97,7 @@ window = {
 					"name" : "ScrollBar","type" : "scrollbar","x" : 220,"y" : 90,"size" : 268,
 				},
 				{ 
-					"name" : "TextPreviewTtiel", "type" : "text", "x" : 325, "y" : 99, "text" : "Önizleme", 
+					"name" : "TextPreviewTtiel", "type" : "text", "x" : 325, "y" : 99, "text" : uiScriptLocale.ITEM_FINDER_PREVIEW, 
 				},
 				{
 					"name" : "ItemNameImg",
@@ -107,7 +107,7 @@ window = {
 					"image" : LOCALE_PATH+"private_leftNameImg.sub",
 					"children" :
 					(
-						{ "name" : "ItemNameText", "type" : "text", "text_horizontal_align":"center", "x" : 60, "y" : 5, "text" : "Eþya Adý:", #"color":0xFFFEE3AE 
+						{ "name" : "ItemNameText", "type" : "text", "text_horizontal_align":"center", "x" : 60, "y" : 5, "text" : uiScriptLocale.ITEM_FINDER_ITEM_NAME, #"color":0xFFFEE3AE 
 						},
 					),
 				},

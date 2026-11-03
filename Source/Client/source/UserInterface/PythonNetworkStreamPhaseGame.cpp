@@ -1882,6 +1882,12 @@ bool CPythonNetworkStream::RecvChatPacket()
 		return true;
 	}
 
+#ifdef ENABLE_WHISPER_MESSENGER
+	// every guild line (also from members out of view) feeds the pinned guild conversation of the messenger
+	if (CHAT_TYPE_GUILD == kChat.type)
+		PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "BINARY_WhisperMessengerGuildChat", Py_BuildValue("(s)", buf));
+#endif
+
 	if (kChat.dwVID != 0)
 	{
 		CPythonCharacterManager& rkChrMgr=CPythonCharacterManager::Instance();
@@ -4265,7 +4271,7 @@ bool CPythonNetworkStream::SendGuildChangeGradeNamePacket(BYTE byGradeNumber, co
 	return SendSequence();
 }
 
-bool CPythonNetworkStream::SendGuildChangeGradeAuthorityPacket(BYTE byGradeNumber, BYTE byAuthority)
+bool CPythonNetworkStream::SendGuildChangeGradeAuthorityPacket(BYTE byGradeNumber, WORD wAuthority)
 {
 	TPacketCGGuild GuildPacket;
 	GuildPacket.byHeader = HEADER_CG_GUILD;
@@ -4274,10 +4280,11 @@ bool CPythonNetworkStream::SendGuildChangeGradeAuthorityPacket(BYTE byGradeNumbe
 		return false;
 	if (!Send(sizeof(byGradeNumber), &byGradeNumber))
 		return false;
-	if (!Send(sizeof(byAuthority), &byAuthority))
+	const TGuildAuthFlag authority = static_cast<TGuildAuthFlag>(wAuthority);
+	if (!Send(sizeof(authority), &authority))
 		return false;
 
-	Tracef(" SendGuildChangeGradeAuthorityPacket %d, %d\n", byGradeNumber, byAuthority);
+	Tracef(" SendGuildChangeGradeAuthorityPacket %d, %d\n", byGradeNumber, authority);
 	return SendSequence();
 }
 
@@ -4622,7 +4629,7 @@ bool CPythonNetworkStream::RecvGuild()
 			BYTE byGradeNumber;
 			if (!Recv(sizeof(byGradeNumber), &byGradeNumber))
 				return false;
-			BYTE byAuthorityFlag;
+			TGuildAuthFlag byAuthorityFlag;
 			if (!Recv(sizeof(byAuthorityFlag), &byAuthorityFlag))
 				return false;
 
@@ -5294,7 +5301,11 @@ bool CPythonNetworkStream::RecvAffectAddPacket()
 		CPythonPlayer::instance().SetStatus (POINT_ENERGY_END_TIME, CPythonApplication::Instance().GetServerTimeStamp() + rkElement.lDuration);
 		__RefreshStatus();
 	}
+#ifdef ENABLE_AFFECT_CAST_STAT
+	PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "BINARY_NEW_AddAffect", Py_BuildValue("(iiiii)", rkElement.dwType, rkElement.bPointIdxApplyOn, rkElement.lApplyValue, rkElement.lDuration, kAffectAdd.lCastStat));
+#else
 	PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "BINARY_NEW_AddAffect", Py_BuildValue("(iiii)", rkElement.dwType, rkElement.bPointIdxApplyOn, rkElement.lApplyValue, rkElement.lDuration));
+#endif
 
 	return true;
 }

@@ -119,7 +119,11 @@ void CBuffOnAttributes::GiveAllAttributes()
 		return;
 	for (TMapAttr::iterator it = m_map_additional_attrs.begin(); it != m_map_additional_attrs.end(); it++)
 	{
+#ifdef ENABLE_BONUS_FIX
+		WORD apply_type = it->first;
+#else
 		BYTE apply_type = it->first;
+#endif
 		int apply_value = it->second * m_bBuffValue / 100;
 		
 		m_pBuffOwner->ApplyPoint(apply_type, apply_value);

@@ -12204,3 +12204,89 @@ VNUM	LOCALE_NAME
 57106	Tomo de Buffi
 57107	Buffi Master Book
 57108	Buffi Master Stone
+95300	Brillo de Arma Clásico Azul
+95301	Brillo de Arma Clásico Verde
+95302	Brillo de Arma Clásico Naranja
+95303	Brillo de Arma Clásico Rojo
+95304	Brillo de Arma Clásico Violeta
+95305	Brillo de Arma Clásico Blanco
+95306	Brillo de Arma de Dragón Azul
+95307	Brillo de Arma de Dragón Marrón
+95308	Brillo de Arma de Dragón Verde
+95309	Brillo de Arma de Dragón Naranja
+95310	Brillo de Arma de Dragón Rosa
+95311	Brillo de Arma de Dragón Morado
+95312	Brillo de Arma de Dragón Rojo
+95313	Brillo de Arma de Dragón Turquesa
+95314	Brillo de Arma de Dragón Blanco
+95315	Brillo de Arma de Dragón Amarillo
+95316	Brillo de Arma de Discord
+95317	Brillo de Arma de Streaming
+95318	Brillo de Arma de Halloween
+95319	Brillo de Arma de Navidad
+95320	Brillo de Arma Celestial Negro
+95321	Brillo de Arma Celestial Azul
+95322	Brillo de Arma Celestial Rosa
+95323	Brillo de Arma Celestial Verde
+95324	Brillo de Arma Celestial Naranja
+95325	Brillo de Arma Celestial Violeta
+95326	Brillo de Arma Celestial Rojo
+95327	Brillo de Arma Celestial Turquesa
+95328	Brillo de Arma Celestial Blanco
+95329	Brillo de Arma Celestial Amarillo
+95400	Brillo de Armadura Clásico Azul
+95401	Brillo de Armadura Clásico Verde
+95402	Brillo de Armadura Clásico Naranja
+95403	Brillo de Armadura Clásico Rojo
+95404	Brillo de Armadura Clásico Violeta
+95406	Brillo de Armadura de Dragón Azul
+95407	Brillo de Armadura de Dragón Marrón
+95408	Brillo de Armadura de Dragón Verde
+95409	Brillo de Armadura de Dragón Naranja
+95410	Brillo de Armadura de Dragón Rosa
+95411	Brillo de Armadura de Dragón Morado
+95412	Brillo de Armadura de Dragón Rojo
+95413	Brillo de Armadura de Dragón Turquesa
+95414	Brillo de Armadura de Dragón Blanco
+95415	Brillo de Armadura de Dragón Amarillo
+95416	Brillo de Armadura de Discord
+95417	Brillo de Armadura de Streaming
+95418	Brillo de Armadura de Corona I
+95419	Brillo de Armadura de Corona II
+95420	Brillo de Armadura de Corona III
+95421	Brillo de Armadura de Egipto
+95422	Brillo de Armadura de Halloween
+95423	Brillo de Armadura de Top Draenor
+95424	Brillo de Armadura de Top Segador
+95425	Brillo de Armadura de Top Dragón Dorado
+95426	Brillo de Armadura de Top Baronesa Araña
+95427	Brillo de Armadura de Top Azrael
+95428	Brillo de Armadura de Top Beran-Setaou
+95429	Brillo de Armadura de Top Meley
+95430	Brillo de Armadura de Top Nemere
+95431	Brillo de Armadura de Top Razador
+95432	Brillo de Armadura de Top Ganesha
+95433	Brillo de Armadura de Top Jotun
+95434	Brillo de Armadura de Navidad
+95435	Brillo de Armadura de Copa de Plata
+95436	Brillo de Armadura de Copa de Bronce
+95437	Brillo de Armadura Celestial Negro
+95438	Brillo de Armadura Celestial Azul
+95439	Brillo de Armadura Celestial Rosa
+95440	Brillo de Armadura Celestial Verde
+95441	Brillo de Armadura Celestial Naranja
+95442	Brillo de Armadura Celestial Violeta
+95443	Brillo de Armadura Celestial Rojo
+95444	Brillo de Armadura Celestial Turquesa
+95445	Brillo de Armadura Celestial Blanco
+95446	Brillo de Armadura Celestial Amarillo
+95447	Brillo de Armadura de Top Rhae
+95448	Brillo de Armadura de Top Dragón Blanco
+95449	Brillo de Armadura de Top Campeón PvP
+95405	Brillo de Armadura Clásico Blanco
+65113	Contribution Scroll
+65114	Noble Contribution
+65110	Amulet of Gods
+65111	Amulet of Gods+
+65112	Guild Energy (100%)
+65120	Silver Expansion

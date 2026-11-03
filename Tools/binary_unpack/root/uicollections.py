@@ -13,25 +13,25 @@ OF_PATH = "d:/ymir work/ui/new_weekly_rank/"
 
 BONUS_LIST = {
 	0 : { 
-		0: "Canavarlara Karþý Güçlü +%35", 1: "Yarý Ýnsanlara Karþý Güçlü +%10", 2: "Ortalama Hasar: %15", 3: "Beceri Hasar +%5"
+		0: localeInfo.COLLECTIONS_BONUS_MONSTER_35, 1: localeInfo.COLLECTIONS_BONUS_HALF_HUMAN_10, 2: localeInfo.COLLECTIONS_BONUS_AVERAGE_15, 3: localeInfo.COLLECTIONS_BONUS_SKILL_5
 	},
 	1 : { 
-		0: "Ortalama Hasar: %10"
+		0: localeInfo.COLLECTIONS_BONUS_AVERAGE_10
 	},
 	2 : { 
-		0: "Canavarlara Karþý Güçlü +%15"
+		0: localeInfo.COLLECTIONS_BONUS_MONSTER_15
 	},
 	3 : { 
-		0: "Patronlara Karþý Güçlü +%10", 1: "Yarý Ýnsanlara Karþý Güçlü +%25"
+		0: localeInfo.COLLECTIONS_BONUS_BOSS_10, 1: localeInfo.COLLECTIONS_BONUS_HALF_HUMAN_25
 	},
 	4 : { 
-		0: "Ortalama Hasar: %10", 1: "Canavarlara Karþý Güçlü +%10"
+		0: localeInfo.COLLECTIONS_BONUS_AVERAGE_10, 1: localeInfo.COLLECTIONS_BONUS_MONSTER_10
 	},
 	5 : { 
-		0: "Yarý Ýnsanlara Karþý Güçlü +%30", 1: "Ortalama Hasar: %15", 2: "Canavarlara Karþý Güçlü +%15"
+		0: localeInfo.COLLECTIONS_BONUS_HALF_HUMAN_30, 1: localeInfo.COLLECTIONS_BONUS_AVERAGE_15, 2: localeInfo.COLLECTIONS_BONUS_MONSTER_15
 	},
 }
-CATEGORY = ["Savaþçý", "Birleþtirici (I)", "Birleþtirici (II)", "Birleþtirici (III)", "Birleþtirici (IV)", "Birleþtirici (V)"]
+CATEGORY = [localeInfo.COLLECTIONS_CATEGORY_0, localeInfo.COLLECTIONS_CATEGORY_1, localeInfo.COLLECTIONS_CATEGORY_2, localeInfo.COLLECTIONS_CATEGORY_3, localeInfo.COLLECTIONS_CATEGORY_4, localeInfo.COLLECTIONS_CATEGORY_5]
 
 class CollectionsWindow(ui.ScriptWindow):
 	class CategoryButton(ui.RadioButton):

@@ -28,8 +28,8 @@ class CPythonGuild : public CSingleton<CPythonGuild>
 		typedef struct SGuildGradeData
 		{
 			SGuildGradeData(){}
-			SGuildGradeData(BYTE byAuthorityFlag_, const char *c_szName_) : byAuthorityFlag(byAuthorityFlag_), strName(c_szName_) {}
-			BYTE byAuthorityFlag;
+			SGuildGradeData(WORD byAuthorityFlag_, const char *c_szName_) : byAuthorityFlag(byAuthorityFlag_), strName(c_szName_) {}
+			WORD byAuthorityFlag;
 			std::string strName;
 		} TGuildGradeData;
 		typedef std::map<BYTE, TGuildGradeData> TGradeDataMap;
@@ -80,7 +80,7 @@ class CPythonGuild : public CSingleton<CPythonGuild>
 		void SetGuildEXP(BYTE byLevel, DWORD dwEXP);
 		void SetGradeData(BYTE byGradeNumber, TGuildGradeData & rGuildGradeData);
 		void SetGradeName(BYTE byGradeNumber, const char *c_szName);
-		void SetGradeAuthority(BYTE byGradeNumber, BYTE byAuthority);
+		void SetGradeAuthority(BYTE byGradeNumber, WORD byAuthority);
 		void ClearComment();
 		void RegisterComment(DWORD dwCommentID, const char *c_szName, const char *c_szComment);
 		void RegisterMember(TGuildMemberData & rGuildMemberData);

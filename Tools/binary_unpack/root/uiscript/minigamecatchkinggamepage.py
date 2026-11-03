@@ -1,3 +1,4 @@
+import uiScriptLocale
 ROOT = "d:/ymir work/ui/minigame/catchking/"
 PATTERN_PATH = "d:/ymir work/ui/pattern/"
 
@@ -36,7 +37,7 @@ window = {
 			"width" : WINDOW_WIDTH,
 			"height" : WINDOW_HEIGHT,
 			
-			"title" : "Kralý Yakala",
+			"title" : uiScriptLocale.CATCH_KING_TITLE,
 			
 			"children" :
 			(
@@ -166,7 +167,7 @@ window = {
 							"children" :
 							(
 								{"name":"my_number_text_bg", "type":"image", "x":0, "y":0, "image" : ROOT + "menu_text_bg.sub"},
-								{"name":"my_number_text", "type":"text", "x":0, "y":0, "text":"Kartlarým", "all_align" : "center"},
+								{"name":"my_number_text", "type":"text", "x":0, "y":0, "text":uiScriptLocale.CATCH_KING_MY_CARDS, "all_align" : "center"},
 							),	
 						},
 						## my number - card bg
@@ -183,7 +184,7 @@ window = {
 							"children" :
 							(
 								{"name":"selection_number_text_bg", "type":"image", "x":0, "y":0, "image" : ROOT + "menu_text_bg.sub"},
-								{"name":"selection_number_text", "type":"text", "x":0, "y":0, "text":"Açýlan Kartlar", "all_align" : "center"},
+								{"name":"selection_number_text", "type":"text", "x":0, "y":0, "text":uiScriptLocale.CATCH_KING_OPENED_CARDS, "all_align" : "center"},
 							),	
 						},
 						## selection number - card bg
@@ -323,7 +324,7 @@ window = {
 					"x" : 88+20,
 					"y" : 32,
 					
-					"text" : "Ödülün",
+					"text" : uiScriptLocale.CATCH_KING_REWARD,
 					
 					"vertical_align" : "bottom",
 					"horizontal_align" : "right",
@@ -339,7 +340,7 @@ window = {
 					"children" :
 					(
 						{"name":"high_score_title_text_bg", "type":"image", "style" : ("not_pick",), "x":0, "y":0, "image" : ROOT + "menu_text_bg.sub"},
-						{"name":"high_score_title_text", "type":"text", "style" : ("not_pick",), "x":0, "y":0, "text":"En yüksek puan", "all_align" : "center"},
+						{"name":"high_score_title_text", "type":"text", "style" : ("not_pick",), "x":0, "y":0, "text":uiScriptLocale.CATCH_KING_HIGH_SCORE, "all_align" : "center"},
 					),	
 				},
 				## high score text window
@@ -519,7 +520,7 @@ window = {
 					"children" :
 					(
 						{"name":"confirm_check_text_bg", "type":"image", "style" : ("not_pick",), "x":0, "y":0, "image" : ROOT + "menu_text_bg.sub"},
-						{"name":"confirm_check_text", "type":"text", "style" : ("not_pick",), "x":0, "y":0, "text":"Pop-up göster/gizle", "all_align" : "center"},
+						{"name":"confirm_check_text", "type":"text", "style" : ("not_pick",), "x":0, "y":0, "text":uiScriptLocale.CATCH_KING_POPUP_TOGGLE, "all_align" : "center"},
 					),	
 				},
 				{

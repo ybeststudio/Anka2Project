@@ -8,511 +8,495 @@ net = __import__(pyapi.GetModuleName("net"))
 import ui, item, localeInfo, constInfo
 from uiToolTip import ItemToolTip
 
+# Character details side panel (reference Baerim uiCharacterDetails.CharacterDetailsUI):
+# "Bonus" tab = searchable, collapsible bonus categories, "Istatistik" tab = bg_stat.png cards.
 IMG_DIR = "characterdetails/"
+NEW_IMG_DIR = "d:/ymir work/ui/game/characterdetails/new/"
+ADVANCED_OPTION_IMG_DIR = "d:/ymir work/ui/game/advanced_game_options/"
+MESSENGER_IMG_DIR = "d:/ymir work/ui/game/messenger/"
 
-# Ikinci deger player.GetStatus icin POINT indeksidir (APPLY degil).
-# Elle yazilan sabitler kolayca kayiyor; item.GetApplyPoint client C++ ile ayni eslemeyi kullanir.
-def _Ap(applyType):
-	if hasattr(item, "GetApplyPoint"):
-		return [applyType, item.GetApplyPoint(applyType)]
-	return [applyType, 0]
+WIDTH = 247
+HEIGHT = 410
+TAB_TEXT_COLOR = 0xffd1b183		# colours measured on the reference panel
+LABEL_COLOR = 0xffcabdab
+HINT_COLOR = 0xff808080
+CATEGORY_STEP = 30			# header image: 30 px visible, steps of 30 like the reference
+PAGE_TOP = 36			# pages start under the tab buttons so they never cover them
+LIST_TOP = 69 - PAGE_TOP
+LIST_BOTTOM = HEIGHT - PAGE_TOP - 10
 
-bonus_list = [
-	["PvM",
-		[
-			_Ap(item.APPLY_ATTBONUS_MONSTER),
-			_Ap(item.APPLY_ATTBONUS_STONE),
-			_Ap(item.APPLY_ATTBONUS_BOSS),
-			_Ap(item.APPLY_NORMAL_HIT_DAMAGE_BONUS),
-			_Ap(item.APPLY_ATTBONUS_MEDI_PVM),
-			_Ap(item.APPLY_ATTBONUS_PVM_STR),
-			_Ap(item.APPLY_ATTBONUS_PVM_BERSERKER),
-			_Ap(item.APPLY_ATTBONUS_ELEMENTS),
-			_Ap(item.APPLY_ATTBONUS_UNDEAD),
-			_Ap(item.APPLY_ATTBONUS_DEVIL),
-			_Ap(item.APPLY_ATTBONUS_ORC),
-			_Ap(item.APPLY_ATTBONUS_ANIMAL),
-			_Ap(item.APPLY_ATTBONUS_MILGYO),
-			_Ap(item.APPLY_STEAL_HP),
-			_Ap(item.APPLY_HP_REGEN),
-			_Ap(item.APPLY_EXP_DOUBLE_BONUS),
-			_Ap(item.APPLY_GOLD_DOUBLE_BONUS),
-			_Ap(item.APPLY_ITEM_DROP_BONUS),
-			_Ap(item.APPLY_MALL_EXPBONUS),
-			_Ap(item.APPLY_MALL_ITEMBONUS),
-			_Ap(item.APPLY_MALL_GOLDBONUS),
-		]
-	],
-	["PvP",
-		[
-			_Ap(item.APPLY_ATTBONUS_HUMAN),
-			_Ap(item.APPLY_ATTBONUS_CHARACTERS),
-			_Ap(item.APPLY_ATTBONUS_WARRIOR),
-			_Ap(item.APPLY_ATTBONUS_ASSASSIN),
-			_Ap(item.APPLY_ATTBONUS_SURA),
-			_Ap(item.APPLY_ATTBONUS_SHAMAN),
-			_Ap(item.APPLY_RESIST_WARRIOR),
-			_Ap(item.APPLY_RESIST_ASSASSIN),
-			_Ap(item.APPLY_RESIST_SURA),
-			_Ap(item.APPLY_RESIST_SHAMAN),
-			_Ap(item.APPLY_RESIST_HUMAN),
-			_Ap(item.APPLY_RESIST_SWORD),
-			_Ap(item.APPLY_RESIST_TWOHAND),
-			_Ap(item.APPLY_RESIST_DAGGER),
-			_Ap(item.APPLY_RESIST_BELL),
-			_Ap(item.APPLY_RESIST_FAN),
-			_Ap(item.APPLY_RESIST_BOW),
-			_Ap(item.APPLY_RESIST_MAGIC),
-		]
-	],
-	[localeInfo.SALDIRI_BONUSLARI,
-		[
-			_Ap(item.APPLY_SKILL_DAMAGE_BONUS),
-			_Ap(item.APPLY_NORMAL_HIT_DAMAGE_BONUS),
-			_Ap(item.APPLY_ATT_GRADE_BONUS),
-			_Ap(item.APPLY_MALL_ATTBONUS),
-			_Ap(item.APPLY_CRITICAL_PCT),
-			_Ap(item.APPLY_PENETRATE_PCT),
-			_Ap(item.APPLY_POISON_PCT),
-			_Ap(item.APPLY_SLOW_PCT),
-			_Ap(item.APPLY_STUN_PCT),
-			_Ap(item.APPLY_CAST_SPEED),
-			_Ap(item.APPLY_MALL_DEFBONUS),
-		]
-	],
-	[localeInfo.SAVUNMA_BONUSLARI,
-		[
-			_Ap(item.APPLY_RESIST_MONSTER),
-			_Ap(item.APPLY_ENCHANT_ELEMENTS),
-			_Ap(item.APPLY_ENCHANT_CHARACTERS),
-			_Ap(item.APPLY_SKILL_DEFEND_BONUS),
-			_Ap(item.APPLY_NORMAL_HIT_DEFEND_BONUS),
-			_Ap(item.APPLY_ANTI_CRITICAL_PCT),
-			_Ap(item.APPLY_ANTI_PENETRATE_PCT),
-			_Ap(item.APPLY_BLOCK),
-			_Ap(item.APPLY_REFLECT_MELEE),
-			_Ap(item.APPLY_DODGE),
-			_Ap(item.APPLY_POISON_REDUCE),
-			_Ap(item.APPLY_RESIST_FIRE),
-			_Ap(item.APPLY_RESIST_ELEC),
-			_Ap(item.APPLY_RESIST_WIND),
-		]
-	],
-]
 
-stat_list = [
-	# [localeInfo.BONUS_TABLE_1, player.POINT_BLUE_PLAYER_KILLED],
-	# [localeInfo.BONUS_TABLE_2, player.POINT_YELLOW_PLAYER_KILLED],
-	# [localeInfo.BONUS_TABLE_3, player.POINT_RED_PLAYER_KILLED],
-	# [localeInfo.BONUS_TABLE_4, player.POINT_ALL_PLAYER_KILLED],
-	# [localeInfo.BONUS_TABLE_5, player.POINT_KILL_DUELWON],
-	# [localeInfo.BONUS_TABLE_6, player.POINT_KILL_DUELLOST],
-	# [localeInfo.BONUS_TABLE_7, player.POINT_MONSTER_KILLED],
-	# [localeInfo.BONUS_TABLE_8, player.POINT_BOSS_KILLED],
-	# [localeInfo.BONUS_TABLE_9, player.POINT_MALL_ATTBONUS],
-]
 
-class CharacterDetailsUI(ui.ScriptWindow):
+
+# Reference bonus_list (apply names; Baerim-only bonuses we do not have are skipped, aliases map their names to ours)
+_ALIAS = {"ATTBONUS_METIN": "ATTBONUS_STONE", "ATTBONUS_ELEMENTARY": "ATTBONUS_ELEMENTS", "RESIST_ELEMENTARY": "ENCHANT_ELEMENTS"}
+_REFERENCE_BONUS_LIST = (
+	("PvM", ("ATT_VALUE_PVE", "NORMAL_HIT_DAMAGE_BONUS_PVE", "ATTBONUS_MONSTER", "ATTBONUS_METIN", "ATTBONUS_BOSS", "RESIST_BOSS",
+		"ATTBONUS_DUNGEON", "RESIST_HUMAN", "ATTBONUS_ANIMAL", "ATTBONUS_ORC", "ATTBONUS_MILGYO", "ATTBONUS_UNDEAD", "ATTBONUS_DEVIL",
+		"ATTBONUS_BOSS_CAPE", "ATTBONUS_TORGNY", "RESIST_TORGNY", "ATTBONUS_RAZADOR", "ATTBONUS_NEMERE", "ATTBONUS_EREBUS",
+		"ATTBONUS_MELEY", "ATTBONUS_OCHAO", "POWER_CRITICAL_PVM")),
+	("Elements", ("RESIST_ELEMENTARY", "ATTBONUS_ELEMENTARY", "RESIST_WIND", "ENCHANT_WIND", "RESIST_DARK", "ENCHANT_DARK", "RESIST_ELEC",
+		"ENCHANT_ELECT", "RESIST_EARTH", "ENCHANT_EARTH", "RESIST_FIRE", "ENCHANT_FIRE", "RESIST_ICE", "ENCHANT_ICE")),
+	("General (Offensive)", ("SKILL_DAMAGE_BONUS", "NORMAL_HIT_DAMAGE_BONUS", "CRITICAL_PCT", "POWER_CRITICAL", "PENETRATE_PCT",
+		"POWER_PENETRATE", "MELEE_MAGIC_ATTBONUS_PER", "POISON_PCT")),
+	("General (Defensive)", ("SKILL_DEFEND_BONUS", "NORMAL_HIT_DEFEND_BONUS", "RESIST_MAGIC", "ANTI_CRITICAL_PCT", "ANTI_PENETRATE_PCT",
+		"BLOCK", "REFLECT_MELEE", "POISON_REDUCE")),
+	("PvP (Offensive)", ("ATTBONUS_HUMAN", "ATTBONUS_WARRIOR", "ATTBONUS_ASSASSIN", "ATTBONUS_SURA", "ATTBONUS_SHAMAN")),
+	("PvP (Defensive)", ("RESIST_MAGIC", "RESIST_HUMAN", "PVP_RESIST_BONUS", "RESIST_WARRIOR", "RESIST_ASSASSIN", "RESIST_SURA",
+		"RESIST_SHAMAN", "RESIST_SWORD", "RESIST_TWOHAND", "RESIST_DAGGER", "RESIST_BELL", "RESIST_FAN", "RESIST_BOW")),
+	("Status", ("STEAL_HP", "HP_REGEN", "MALL_EXPBONUS", "EXP_DOUBLE_BONUS", "PET_EXP", "GOLD_DOUBLE_BONUS", "ITEM_DROP_BONUS",
+		"DOUBLE_DROP_BOSS", "DOUBLE_DROP_METIN", "DOUBLE_DROP_DUNGEON", "DOUBLE_DROP_GOLD_DUNGEON", "DROP_BONUS_WORLDBOSS",
+		"DOUBLE_DROP_MINING", "DOUBLE_DROP_FISHING", "REDUCED_DUNGEON_CD", "REFINE_CHANCE", "MOUNT_SPEED", "ADD_ORE_CHANCE")),
+)
+
+
+def _BuildBonusList():
+	result = []
+	for (category, names) in _REFERENCE_BONUS_LIST:
+		pairs = []
+		for name in names:
+			apply = getattr(item, "APPLY_" + _ALIAS.get(name, name), None)
+			if apply is None or apply not in ItemToolTip.AFFECT_DICT:
+				continue
+			point = item.GetApplyPoint(apply) if hasattr(item, "GetApplyPoint") else 0
+			if point:
+				pairs.append([apply, point])
+		if pairs:
+			result.append([category, pairs])
+	return result
+
+
+bonus_list = _BuildBonusList()
+
+# Reference stat_list (bg_stat.png cards, top to bottom)
+stat_list = (
+	localeInfo.DETAILS_STAT_STONE,
+	localeInfo.DETAILS_STAT_BOSS,
+	localeInfo.DETAILS_STAT_DUNGEON,
+	localeInfo.DETAILS_STAT_FISH,
+	localeInfo.DETAILS_STAT_MINE,
+)
+STAT_CARD_HEIGHT = 72
+
+
+def _BonusName(apply):
+	text = ItemToolTip.AFFECT_DICT[apply](0)
+	return "".join(c for c in text if c not in "%+:" and not c.isdigit()).strip()
+
+
+class CharacterDetailsUI(ui.Window):
+	def __init__(self, parent):
+		ui.Window.__init__(self)
+		self.uiCharacterStatus = parent
+		self.btnIndex = 0
+		self.keep = []
+		self.children = {}
+		self.categoryOpen = [True] * len(bonus_list)
+		self.rows = []			# (categoryIndex, name, apply/point pair, image, nameText, valueText)
+		self.__LoadWindow()
+
 	def __del__(self):
-		ui.ScriptWindow.__del__(self)
+		ui.Window.__del__(self)
 
 	def Destroy(self):
-		self.ClearDictionary()
-		self.btnIndex = 0
-		self.isPacketLoaded = False
-	def Show(self):
-		ui.ScriptWindow.Show(self)
-		self.SetTop()
-		self.Refresh()
-	def Close(self):
 		self.Hide()
-	def AdjustPosition(self, x, y):
-		self.SetPosition(x + self.GetWidth(), y)
-	def __ClickRadioButton(self, buttonList, buttonIndex):
-		try:
-			radioBtn = buttonList[buttonIndex]
-		except IndexError:
-			return
-		for eachButton in buttonList:
-			eachButton.SetUp()
-		radioBtn.Down()
-	def __init__(self, parent):
-		self.uiCharacterStatus = parent
-		ui.ScriptWindow.__init__(self)
-		self.Destroy()
-		self.__LoadScript()
-	def __LoadScript(self):
-		try:
-			pyScrLoader = ui.PythonScriptLoader()
-			pyScrLoader.LoadScriptFile(self, "UIScript/CharacterDetailsWindow.py")
+		scrollBar = self.children.get("scrollBar")
+		if scrollBar:
+			scrollBar.Destroy()
+		self.children = {}
+		self.rows = []
+		self.keep = []
 
-			self.GetChild("bonus_button").SAFE_SetEvent(self.SetCategory,0)
-			self.GetChild("stat_button").SAFE_SetEvent(self.SetCategory,1)
-			self.bosses_kills_obj = self.GetChild("bosses_kills")
-			self.stones_kills_obj = self.GetChild("stones_kills")
-			self.top_damage_obj = self.GetChild("top_damages")
-		except:
-			import exception
-			exception.Abort("CharacterDetailsUI.__LoadScript")
+	# ------------------------------------------------------------------ helpers
+	def __Image(self, parent, path, x, y, pick = False):
+		img = ui.ExpandedImageBox()
+		img.SetParent(parent)
+		img.LoadImage(path)
+		img.SetPosition(x, y)
+		if not pick:
+			img.AddFlag("not_pick")
+		img.Show()
+		self.keep.append(img)
+		return img
 
-		elementList = self.ElementDictionary
-		statWindow = self.GetChild("stat_window")
-		for i in xrange(len(stat_list)):
-			statName = ui.TextLine()
-			statName.SetParent(statWindow)
-			statName.AddFlag("not_pick")
-			statName.SetPosition(70,15+(i*40))
-			statName.SetFontName("Tahoma:13")
-			statName.SetHorizontalAlignCenter()
-			statName.SetText(stat_list[i][0])
-			statName.Show()
-			elementList["%d_stat_name"%i] = statName
+	def __Text(self, parent, text, x, y, align = "left", font = None):
+		line = ui.TextLine()
+		line.SetParent(parent)
+		line.AddFlag("not_pick")
+		if font:
+			line.SetFontName(font)
+		line.SetPosition(x, y)
+		if align == "center":
+			line.SetHorizontalAlignCenter()
+		elif align == "right":
+			line.SetHorizontalAlignRight()
+		line.SetText(text)
+		line.Show()
+		self.keep.append(line)
+		return line
 
-			statValue = ui.TextLine()
-			statValue.AddFlag("not_pick")
-			statValue.SetParent(statWindow)
-			statValue.SetPosition(180,15+(i*40))
-			statValue.SetFontName("Tahoma:13")
-			statValue.SetHorizontalAlignCenter()
-			statValue.Show()
-			elementList["%d_stat"%i] = statValue
+	def __TabButton(self, text, x, index):
+		btn = ui.RadioButton()
+		btn.SetParent(self)
+		btn.SetPosition(x, 8)
+		btn.SetUpVisual(NEW_IMG_DIR + "btn_norm.png")
+		btn.SetOverVisual(NEW_IMG_DIR + "btn_hover.png")
+		btn.SetDownVisual(NEW_IMG_DIR + "btn_select.png")
+		btn.SetText(text)
+		btn.SetTextColor(TAB_TEXT_COLOR)
+		btn.SetEvent(lambda: self.SetCategory(index))
+		btn.Show()
+		self.keep.append(btn)
+		return btn
 
-		bonusWindow = self.GetChild("bonus_window")
+	# ------------------------------------------------------------------ layout
+	def __LoadWindow(self):
+		self.AddFlag("float")
+		self.SetSize(WIDTH, HEIGHT)
 
-		searchBoard = SearchSlotBoard()
-		searchBoard.SetParent(bonusWindow)
-		searchBoard.SetPosition((bonusWindow.GetWidth()/2)-(129/2),11)
-		searchBoard.SetSize(129,23)
-		searchBoard.Show()
-		elementList["searchBoard"] = searchBoard
+		board = ui.Board()
+		board.SetParent(self)
+		board.SetPosition(0, 0)
+		board.SetSize(WIDTH, HEIGHT)
+		board.AddFlag("not_pick")
+		board.Show()
+		self.keep.append(board)
 
-		itemSearch = ui.EditLine()
-		itemSearch.SetParent(searchBoard)
-		itemSearch.SetMax(40)
-		itemSearch.SetPosition(5,5)
-		itemSearch.SetSize(searchBoard.GetWidth(), searchBoard.GetHeight())
-		itemSearch.OnIMEUpdate = ui.__mem_func__(self.__OnValueUpdate)
-		itemSearch.Show()
-		elementList["itemSearch"] = itemSearch
+		self.tabs = [self.__TabButton(localeInfo.DETAILS_TAB_BONUS, 8, 0),
+			self.__TabButton(localeInfo.DETAILS_TAB_STAT, 125, 1)]
 
-		searchBtn = ui.Button()
-		searchBtn.SetParent(searchBoard)
-		searchBtn.SetUpVisual(IMG_DIR+"btn_search_1.png")
-		searchBtn.SetOverVisual(IMG_DIR+"btn_search_2.png")
-		searchBtn.SetDownVisual(IMG_DIR+"btn_search_3.png")
-		searchBtn.SetEvent(self.__OnValueUpdate)
-		searchBtn.SetPosition(itemSearch.GetWidth()-searchBtn.GetWidth()-2,2)
-		searchBtn.Show()
-		elementList["searchBtn"] = searchBtn
+		# ---------------- bonus page
+		bonusPage = ui.Window()
+		bonusPage.SetParent(self)
+		bonusPage.SetPosition(0, PAGE_TOP)
+		bonusPage.SetSize(WIDTH, HEIGHT - PAGE_TOP)
+		bonusPage.Show()
+		self.keep.append(bonusPage)
+		self.children["bonusPage"] = bonusPage
 
-		scrollBar = ScrollBarNew()
-		scrollBar.SetParent(bonusWindow)
-		scrollBar.SetPosition((bonusWindow.GetWidth()-scrollBar.GetWidth())-3,43)
-		scrollBar.SetScrollBarSize((bonusWindow.GetHeight()-46)-5)
-		scrollBar.SetScrollEvent(ui.__mem_func__(self.Refresh))
-		scrollBar.Show()
-		elementList["scrollBar"] = scrollBar
+		SEARCH_X = (WIDTH - 170) / 2
+		self.__Image(bonusPage, NEW_IMG_DIR + "bg_output.png", (WIDTH - 238) / 2, -3)	# band behind the search box
+		self.__Image(bonusPage, NEW_IMG_DIR + "search_bg.png", SEARCH_X, 6)
 
-		for i in xrange(len(bonus_list)):
-			bonus_data = bonus_list[i][1]
+		search = ui.EditLine()
+		search.SetParent(bonusPage)
+		search.SetPosition(SEARCH_X + 7, 9)
+		search.SetSize(140, 16)
+		search.SetMax(30)
+		search.OnIMEUpdate = ui.__mem_func__(self.__OnSearchUpdate)
+		search.Show()
+		self.children["search"] = search
+		self.children["searchHint"] = self.__Text(bonusPage, localeInfo.DETAILS_SEARCH_HINT, SEARCH_X + 7, 9)
+		self.children["searchHint"].SetPackedFontColor(HINT_COLOR)
 
-			category = ui.ExpandedImageBox()
-			category.SetParent(bonusWindow)
-			category.LoadImage(IMG_DIR+"category_item.png")
-			category.buttonStatus = 1
-			category.SetEvent(ui.__mem_func__(self.SetBonusCategory),"mouse_click", i)
-			category.Show()
-			elementList["%d_category"%i] = category
+		clear = ui.Button()
+		clear.SetParent(bonusPage)
+		clear.SetUpVisual(NEW_IMG_DIR + "search_clear_0.png")
+		clear.SetOverVisual(NEW_IMG_DIR + "search_clear_1.png")
+		clear.SetDownVisual(NEW_IMG_DIR + "search_clear_2.png")
+		clear.SetPosition(SEARCH_X + 170 - clear.GetWidth() - 3, 6 + (20 - clear.GetHeight()) / 2)
+		clear.SetEvent(ui.__mem_func__(self.__ClearSearch))
+		clear.Show()
+		self.keep.append(clear)
 
-			categoryText = ui.TextLine()
-			categoryText.SetParent(category)
-			categoryText.SetHorizontalAlignLeft()
-			categoryText.SetPosition(8,4)
-			categoryText.SetText("|Eemoji/plus|e "+bonus_list[i][0])
-			categoryText.Show()
-			elementList["%d_categoryText"%i] = categoryText
+		listWindow = ui.Window()
+		listWindow.SetParent(bonusPage)
+		listWindow.SetPosition(0, LIST_TOP)
+		listWindow.SetSize(WIDTH, LIST_BOTTOM - LIST_TOP)
+		listWindow.Show()
+		self.keep.append(listWindow)
+		self.children["listWindow"] = listWindow
 
-			for j in xrange(len(bonus_data)):
-				bonusImage = ui.ExpandedImageBox()
-				bonusImage.SetParent(bonusWindow)
-				bonusImage.LoadImage(IMG_DIR+"bonus_item.png")
-				bonusImage.Show()
-				elementList["%d_%d_image"%(i,j)] = bonusImage
+		self.categories = []
+		for i, (category, pairs) in enumerate(bonus_list):
+			header = ui.Button()
+			header.SetParent(listWindow)
+			self.__SetHeaderVisual(header, True)
+			header.SetEvent(ui.__mem_func__(self.__ToggleCategory), i)
+			header.Show()
+			self.keep.append(header)
+			label = self.__Text(header, category, 12, 10, "left")
+			label.SetPackedFontColor(LABEL_COLOR)
+			arrow = self.__Image(header, ADVANCED_OPTION_IMG_DIR + "arrow_down.png", 228 - 24, 13)
+			self.categories.append((header, label, arrow))
+			for pair in pairs:
+				row = self.__Image(listWindow, NEW_IMG_DIR + "bonus.png", 9, 0, True)
+				name = _BonusName(pair[0])
+				row.SAFE_SetStringEvent("MOUSE_OVER_IN", self.__OverInBonus, name)
+				row.SAFE_SetStringEvent("MOUSE_OVER_OUT", self.__OverOutBonus)
+				nameText = self.__Text(row, name, 8, 5, "left")
+				while nameText.GetTextSize()[0] > 160 and len(nameText.GetText()) > 3:
+					nameText.SetText(nameText.GetText()[:-3] + "..")
+				valueText = self.__Text(row, "0", 212, 5, "right")
+				self.rows.append((i, name.lower(), pair, row, nameText, valueText))
 
-				bonusText = ItemToolTip.AFFECT_DICT[bonus_data[j][0]](0)
-				
-				disabledStr = ["%","+"]
-				newText = ""
-				for x in bonusText:
-					if x in disabledStr:
-						continue
-					if x.isdigit():
-						continue
-					newText+=x
-				bonusText=newText
-				bonusImage.SAFE_SetStringEvent("MOUSE_OVER_IN",self.OverInBonus, bonusText)
-				bonusImage.SAFE_SetStringEvent("MOUSE_OVER_OUT",self.OverOutBonus)
+		scrollBar = BaerimScrollBar()
+		scrollBar.SetParent(bonusPage)
+		scrollBar.SetPosition(WIDTH - scrollBar.GetWidth() - 1, LIST_TOP)
+		scrollBar.SetScrollBarSize(LIST_BOTTOM - LIST_TOP)
+		scrollBar.SetScrollEvent(ui.__mem_func__(self.__RefreshBonus))
+		scrollBar.Hide()
+		self.children["scrollBar"] = scrollBar
 
-				bonusName = ui.TextLine()
-				bonusName.AddFlag("not_pick")
-				bonusName.SetParent(bonusImage)
-				bonusName.SetHorizontalAlignCenter()
-				bonusName.SetPosition(76,3)
-				bonusName.SetFontName("Tahoma:13")
-				bonusName.SetText(bonusText)
+		# ---------------- stat page
+		statPage = ui.Window()
+		statPage.SetParent(self)
+		statPage.SetPosition(0, PAGE_TOP)
+		statPage.SetSize(WIDTH, HEIGHT - PAGE_TOP)
+		statPage.Hide()
+		self.keep.append(statPage)
+		self.children["statPage"] = statPage
 
-				newText = ""
-				if bonusName.GetTextSize()[0] > 134:
-					for o in xrange(100):
-						if bonusName.GetTextSize()[0] > 134:
-							newText = bonusName.GetText()[:len(bonusName.GetText())-2]+".."
-							bonusName.SetText(bonusName.GetText()[:len(bonusName.GetText())-2])
-						else:
-							break
-				
-				if newText != "":
-					bonusName.SetText(newText)
-
-				bonusName.Show()
-				elementList["%d_%d_name"%(i,j)] = bonusName
-
-				bonusValue = ui.TextLine()
-				bonusValue.AddFlag("not_pick")
-				bonusValue.SetParent(bonusImage)
-				bonusValue.SetHorizontalAlignCenter()
-				bonusValue.SetPosition(175,3)
-				bonusValue.SetFontName("Tahoma:13")
-				bonusValue.SetText("0")
-				bonusValue.Show()
-				elementList["%d_%d_value"%(i,j)] = bonusValue
+		statBg = self.__Image(statPage, NEW_IMG_DIR + "bg_stat.png", (WIDTH - 238) / 2, 2)
+		self.statValues = []
+		for i, title in enumerate(stat_list):
+			self.__Text(statBg, title, 150, 7 + i * STAT_CARD_HEIGHT, "center").SetPackedFontColor(LABEL_COLOR)
+			value = self.__Text(statBg, "0", 150, 38 + i * STAT_CARD_HEIGHT, "center")
+			value.SetPackedFontColor(LABEL_COLOR)
+			self.statValues.append(value)
 
 		self.SetCategory(0)
-	
-	def OverOutBonus(self):
-		interface = constInfo.GetInterfaceInstance()
-		if interface:
-			if interface.tooltipItem:
-				interface.tooltipItem.HideToolTip()
-	def OverInBonus(self, bonusName):
-		interface = constInfo.GetInterfaceInstance()
-		if interface:
-			if interface.tooltipItem:
-				interface.tooltipItem.ClearToolTip()
-				interface.tooltipItem.AppendTextLine(bonusName)
-				interface.tooltipItem.ShowToolTip()
 
-	def OnRunMouseWheel(self, nLen):
-		if self.IsInPosition():
-			if self.btnIndex == 0:
-				if self.ElementDictionary.has_key("scrollBar"):
-					scrollBar = self.ElementDictionary["scrollBar"]
-					if scrollBar.IsShow():
-						if nLen > 0:
-							scrollBar.OnUp()
-						else:
-							scrollBar.OnDown()
-					return True
-		return False
-
-	def __OnValueUpdate(self):
-		elementList = self.ElementDictionary
-		itemSearch = elementList["itemSearch"]
-		ui.EditLine.OnIMEUpdate(itemSearch)
-		bonusWindow = self.GetChild("bonus_window")
-		searchText = itemSearch.GetText()
-		board = elementList["searchBoard"]
-		totalWidth = 129
-		if len(searchText) > 0:
-			self.ElementDictionary["scrollBar"].SetPos(0, True)
-			totalWidth-=25
-			windowHeight = bonusWindow.GetWidth()-15
-			textSize = itemSearch.GetTextSize()[0]
-			if textSize >= totalWidth:
-				if textSize >= windowHeight:
-					totalWidth = windowHeight
-				else:
-					totalWidth = textSize
-			totalWidth+=25
-			if totalWidth >= windowHeight:
-				totalWidth = windowHeight
-		board.SetSize(totalWidth,23)
-		itemSearch.SetSize(totalWidth,23)
-		board.SetPosition((bonusWindow.GetWidth()/2)-(board.GetWidth()/2),11)
-		searchBtn = elementList["searchBtn"]
-		searchBtn.SetPosition(itemSearch.GetWidth()-searchBtn.GetWidth()-2,2)
+	# ------------------------------------------------------------------ interface used by uiCharacter
+	def Show(self):
+		if self.uiCharacterStatus and not getattr(self, '_placed', False):
+			(x, y) = self.uiCharacterStatus.GetGlobalPosition()
+			self.AdjustPosition(x, y)
+			self._placed = True
+		ui.Window.Show(self)
+		self.SetTop()
 		self.Refresh()
 
-	def SetBonusCategory(self, emptyArg, categoryIndex):
-		category = self.ElementDictionary["%d_category"%categoryIndex]
-		category.buttonStatus = not category.buttonStatus
-		if category.buttonStatus == 0:
-			self.ElementDictionary["%d_categoryText"%categoryIndex].SetText("|Eemoji/plus|e "+bonus_list[categoryIndex][0])
-		else:
-			self.ElementDictionary["%d_categoryText"%categoryIndex].SetText("|Eemoji/negative|e "+bonus_list[categoryIndex][0])
-		self.Refresh()
+	def Close(self):
+		self.Hide()
+
+	def AdjustPosition(self, x, y):
+		self.SetPosition(x + self.uiCharacterStatus.GetWidth() - 4, y)
 
 	def RefreshLabel(self):
 		self.Refresh()
 
-	def Refresh(self):
-		elementList = self.ElementDictionary
-		(X_POS,Y_POS) = (6,43)
-		CATEGORY_Y_RANGE = 25
-		CATEGORY_Y_FIRST_BONUS_RANGE = 29
-		BONUS_X = 13
-
-		if self.btnIndex == 0:
-			bonusWindow = self.GetChild("bonus_window")
-			scrollBar = self.GetChild("scrollBar")
-			(basePos,windowHeight) = (0,bonusWindow.GetHeight()-46)
-
-			searchText = elementList["itemSearch"].GetText().lower()
-
-			maxHeight = 0
-			if len(searchText) > 0:
-				for i in xrange(len(bonus_list)):
-					bonus_data = bonus_list[i][1]
-					for j in xrange(len(bonus_data)):
-						text = elementList["%d_%d_name"%(i,j)].GetText().lower()
-						if text.find(searchText) != -1:
-							maxHeight += CATEGORY_Y_FIRST_BONUS_RANGE
-			else:
-				for i in xrange(len(bonus_list)):
-					bonus_data = bonus_list[i][1]
-					if elementList.has_key("%d_category"%i):
-						categoryBtn = elementList["%d_category"%i]
-						if categoryBtn.buttonStatus == 0:
-							maxHeight += CATEGORY_Y_RANGE
-						else:
-							maxHeight += CATEGORY_Y_FIRST_BONUS_RANGE
-							for j in xrange(len(bonus_data)):
-								maxHeight += CATEGORY_Y_FIRST_BONUS_RANGE
-
-			if maxHeight > windowHeight:
-				scrollLen = maxHeight-windowHeight
-				basePos = int(scrollBar.GetPos()*scrollLen)
-				stepSize = 1.0 / (scrollLen/100.0)
-				scrollBar.SetScrollStep(stepSize)
-				scrollBar.SetMiddleBarSize(float(windowHeight-5)/float(maxHeight))
-				scrollBar.Show()
-			else:
-				scrollBar.Hide()
-
-			textLines = []
-			images = []
-			_wy = bonusWindow.GetGlobalPosition()[1]+43
-
-			if len(searchText) > 0:
-				for i in xrange(len(bonus_list)):
-					bonus_data = bonus_list[i][1]
-					if elementList.has_key("%d_category"%i):
-						elementList["%d_category"%i].Hide()
-						for j in xrange(len(bonus_data)):
-							text = elementList["%d_%d_name"%(i,j)].GetText().lower()
-							if text.find(searchText) != -1:
-								elementList["%d_%d_image"%(i,j)].Show()
-								elementList["%d_%d_image"%(i,j)].SetPosition(BONUS_X, Y_POS - basePos)
-								elementList["%d_%d_value"%(i,j)].SetText(str(player.GetStatus(bonus_data[j][1])))
-								Y_POS += CATEGORY_Y_FIRST_BONUS_RANGE
-								images.append(elementList["%d_%d_image"%(i,j)])
-								textLines.append(elementList["%d_%d_name"%(i,j)])
-								textLines.append(elementList["%d_%d_value"%(i,j)])
-							else:
-								elementList["%d_%d_image"%(i,j)].Hide()
-			else:
-				for i in xrange(len(bonus_list)):
-					bonus_data = bonus_list[i][1]
-					if elementList.has_key("%d_category"%i):
-						categoryBtn = elementList["%d_category"%i]
-						categoryBtn.SetPosition(X_POS, Y_POS - basePos)
-						categoryBtn.Show()
-
-						images.append(categoryBtn)
-						textLines.append(elementList["%d_categoryText"%i])
-
-						if categoryBtn.buttonStatus == 0:
-							Y_POS += CATEGORY_Y_RANGE
-							for j in xrange(len(bonus_data)):
-								elementList["%d_%d_image"%(i,j)].Hide()
-						else:
-							Y_POS += CATEGORY_Y_FIRST_BONUS_RANGE
-							for j in xrange(len(bonus_data)):
-								elementList["%d_%d_image"%(i,j)].Show()
-								elementList["%d_%d_image"%(i,j)].SetPosition(BONUS_X, Y_POS - basePos)
-								elementList["%d_%d_value"%(i,j)].SetText(str(player.GetStatus(bonus_data[j][1])))
-								Y_POS += CATEGORY_Y_FIRST_BONUS_RANGE
-
-								images.append(elementList["%d_%d_image"%(i,j)])
-								textLines.append(elementList["%d_%d_name"%(i,j)])
-								textLines.append(elementList["%d_%d_value"%(i,j)])
-
-			for childItem in textLines:
-				(_x,_y) = childItem.GetGlobalPosition()
-				if _y < _wy:
-					if childItem.IsShow():
-						childItem.Hide()
-				elif _y > (_wy+windowHeight-20):
-					if childItem.IsShow():
-						childItem.Hide()
-				else:
-					if not childItem.IsShow():
-						childItem.Show()
-
-			for childItem in images:
-				childHeight = childItem.GetHeight()
-				(_x,_y) = childItem.GetGlobalPosition()
-				if _y < _wy:
-					childItem.SetRenderingRect(0,ui.calculateRect(childHeight-abs(_y-_wy),childHeight),0,0)
-				elif _y+childHeight > (_wy+windowHeight-4):
-					calculate = (_wy+windowHeight-4) - (_y+childHeight)
-					if calculate == 0:
-						return
-					f = ui.calculateRect(childHeight-abs(calculate),childHeight)
-					childItem.SetRenderingRect(0,0,0,f)
-				else:
-					childItem.SetRenderingRect(0,0,0,0)
-
-		elif self.btnIndex == 1:
-			for i in xrange(len(stat_list)):
-				if elementList.has_key("%d_stat"%i):
-					elementList["%d_stat"%i].SetText(localeInfo.DottedNumber(player.GetStatus(stat_list[i][1])))
-
-		kd_zero_fix = 0
-		if constInfo.KILL_STATISTICS_DATA[4] == 0:
-			kd_zero_fix = 1
-
-		self.bosses_kills_obj.SetText("%i" % constInfo.KILL_STATISTICS_DATA[7])
-		self.stones_kills_obj.SetText("%i" % constInfo.KILL_STATISTICS_DATA[8])
-		self.top_damage_obj.SetText(localeInfo.DottedNumber(constInfo.KILL_STATISTICS_DATA[10]))
-
-	def OnUpdate(self):
-		self.Refresh()
-
 	def SetCategory(self, categoryIndex):
 		self.btnIndex = categoryIndex
-		self.__ClickRadioButton([self.GetChild("bonus_button"),self.GetChild("stat_button")],categoryIndex)
-		self.ElementDictionary["itemSearch"].KillFocus()
-		if self.btnIndex == 0:
-			self.GetChild("bonus_window").Show()
-			self.GetChild("stat_window").Hide()
-			self.GetChild("stones_kills").Hide()
-			self.GetChild("bosses_kills").Hide()
-			self.GetChild("top_damages").Hide()
-		elif self.btnIndex == 1:
-			self.GetChild("bonus_window").Hide()
-			self.GetChild("stat_window").Show()
-			self.GetChild("stones_kills").Show()
-			self.GetChild("bosses_kills").Show()
-			self.GetChild("top_damages").Show()
-
+		for i, tab in enumerate(self.tabs):
+			if i == categoryIndex:
+				tab.Down()
+			else:
+				tab.SetUp()
+		self.children["search"].KillFocus()
+		if categoryIndex == 0:
+			self.children["bonusPage"].Show()
+			self.children["statPage"].Hide()
+		else:
+			self.children["bonusPage"].Hide()
+			self.children["statPage"].Show()
+			if hasattr(net, "SendChatPacket"):
+				net.SendChatPacket("/character_stats")
 		self.Refresh()
 
-	def OnScroll(self):
-		pass
+	def Refresh(self):
+		if self.btnIndex == 0:
+			self.__RefreshBonus()
+		else:
+			self.__RefreshStats()
+
+	def OnUpdate(self):
+		if app.GetTime() >= getattr(self, "_nextRefresh", 0.0):
+			self._nextRefresh = app.GetTime() + 0.5
+			self.Refresh()
 
 	def OnPressEscapeKey(self):
 		self.Close()
 		return True
+
+	def OnRunMouseWheel(self, nLen):
+		scrollBar = self.children.get("scrollBar")
+		if self.btnIndex == 0 and self.IsInPosition() and scrollBar and scrollBar.IsShow():
+			if nLen > 0:
+				scrollBar.OnUp()
+			else:
+				scrollBar.OnDown()
+			return True
+		return False
+
+	# ------------------------------------------------------------------ bonus tab
+	def __SetHeaderVisual(self, header, isOpen):
+		header.SetUpVisual(NEW_IMG_DIR + ("category_open.png" if isOpen else "category_closed.png"))
+		header.SetOverVisual(NEW_IMG_DIR + "category_open.png")
+		header.SetDownVisual(NEW_IMG_DIR + "category_open.png")
+
+	def __ToggleCategory(self, categoryIndex):
+		self.categoryOpen[categoryIndex] = not self.categoryOpen[categoryIndex]
+		self.__RefreshBonus()
+
+	def __OnSearchUpdate(self):
+		search = self.children["search"]
+		ui.EditLine.OnIMEUpdate(search)
+		self.children["scrollBar"].SetPos(0, False)
+		self.__RefreshBonus()
+
+	def __ClearSearch(self):
+		self.children["search"].SetText("")
+		self.children["scrollBar"].SetPos(0, False)
+		self.__RefreshBonus()
+
+	def __OverInBonus(self, bonusName):
+		interface = constInfo.GetInterfaceInstance()
+		if interface and interface.tooltipItem:
+			interface.tooltipItem.ClearToolTip()
+			interface.tooltipItem.AppendTextLine(bonusName)
+			interface.tooltipItem.ShowToolTip()
+
+	def __OverOutBonus(self):
+		interface = constInfo.GetInterfaceInstance()
+		if interface and interface.tooltipItem:
+			interface.tooltipItem.HideToolTip()
+
+	def __RefreshBonus(self):
+		if not self.children:
+			return
+		search = self.children["search"].GetText().lower()
+		if search:
+			self.children["searchHint"].Hide()
+		else:
+			self.children["searchHint"].Show()
+
+		# layout: (widget, height) in order
+		layout = []
+		for i, (header, label, arrow) in enumerate(self.categories):
+			rows = [r for r in self.rows if r[0] == i and (not search or search in r[1])]
+			if search and not rows:
+				layout_header = None
+			else:
+				layout_header = header
+			if layout_header:
+				open_ = self.categoryOpen[i] or bool(search)
+				if getattr(header, "isOpen", None) != open_:
+					header.isOpen = open_
+					self.__SetHeaderVisual(header, open_)
+				arrow.LoadImage(ADVANCED_OPTION_IMG_DIR + ("arrow_up.png" if open_ else "arrow_down.png"))
+				layout.append((header, 5, CATEGORY_STEP))
+				if open_:
+					for r in rows:
+						layout.append((r[3], 9, 26))
+			for r in self.rows:
+				if r[0] == i:
+					r[3].Hide()
+			header.Hide()
+
+		viewHeight = LIST_BOTTOM - LIST_TOP
+		total = sum(h for _, _, h in layout)
+		scrollBar = self.children["scrollBar"]
+		offset = 0
+		if total > viewHeight:
+			scrollBar.SetMiddleBarSize(float(viewHeight) / float(total))
+			scrollBar.SetScrollStep(min(1.0, 26.0 / (total - viewHeight)))
+			scrollBar.Show()
+			offset = int(scrollBar.GetPos() * (total - viewHeight))
+		else:
+			scrollBar.Hide()
+
+		y = -offset
+		for widget, x, h in layout:
+			if y >= 0 and y + widget.GetHeight() <= viewHeight:
+				widget.SetPosition(x, y)
+				widget.Show()
+			y += h
+
+		for (i, name, pair, row, nameText, valueText) in self.rows:
+			if row.IsShow():
+				valueText.SetText(str(player.GetStatus(pair[1])))
+
+	# ------------------------------------------------------------------ stat tab
+	def __RefreshStats(self):
+		data = getattr(constInfo, "KILL_STATISTICS_DATA", None) or [0] * 11
+		extra = getattr(constInfo, "CHARACTER_STATS_DATA", None) or (0, 0, 0)
+		values = (data[8], data[7], extra[0], extra[1], extra[2])
+		for text, value in zip(self.statValues, values):
+			text.SetText(localeInfo.DottedNumber(value) if hasattr(localeInfo, "DottedNumber") else str(value))
+
+
+
+class BaerimScrollBar(ui.Window):
+	"""new/scroll_top|mid|bot track with the new/scroll_bar.png thumb (reference uiCharacterDetails.ScrollBarNew)."""
+
+	def __init__(self):
+		ui.Window.__init__(self)
+		self.pos = 0.0
+		self.step = 0.1
+		self.eventScroll = None
+		self.top = ui.ExpandedImageBox()
+		self.mid = ui.ExpandedImageBox()
+		self.bot = ui.ExpandedImageBox()
+		for (img, name) in ((self.top, "scroll_top.png"), (self.mid, "scroll_mid.png"), (self.bot, "scroll_bot.png")):
+			img.SetParent(self)
+			img.LoadImage(NEW_IMG_DIR + name)
+			img.AddFlag("not_pick")
+			img.Show()
+		self.thumb = ui.DragButton()
+		self.thumb.SetParent(self)
+		self.thumb.AddFlag("movable")
+		self.thumb.AddFlag("restrict_x")
+		self.thumb.SetUpVisual(NEW_IMG_DIR + "scroll_bar.png")
+		self.thumb.SetOverVisual(NEW_IMG_DIR + "scroll_bar.png")
+		self.thumb.SetDownVisual(NEW_IMG_DIR + "scroll_bar.png")
+		self.thumb.SetMoveEvent(ui.__mem_func__(self.__OnMove))
+		self.thumb.Show()
+		self.SetSize(self.thumb.GetWidth(), 0)
+
+	def __del__(self):
+		ui.Window.__del__(self)
+
+	def Destroy(self):
+		self.eventScroll = None
+		self.thumb = None
+
+	def SetScrollBarSize(self, height):
+		w = self.GetWidth()
+		x = (w - self.top.GetWidth()) / 2
+		self.SetSize(w, height)
+		self.top.SetPosition(x, 0)
+		self.bot.SetPosition(x, height - self.bot.GetHeight())
+		self.mid.SetPosition(x, self.top.GetHeight())
+		midHeight = max(1, height - self.top.GetHeight() - self.bot.GetHeight())
+		self.mid.SetScale(1.0, float(midHeight) / float(self.mid.GetHeight()))
+		self.thumb.SetRestrictMovementArea(0, 0, w, height)
+		self.__Place()
+
+	def SetMiddleBarSize(self, scale):
+		pass	# the reference thumb has a fixed size
+
+	def SetScrollEvent(self, event):
+		self.eventScroll = event
+
+	def SetScrollStep(self, step):
+		self.step = max(0.01, step)
+
+	def GetPos(self):
+		return self.pos
+
+	def SetPos(self, pos, moveEvent = True):
+		self.pos = max(0.0, min(1.0, pos))
+		self.__Place()
+		if moveEvent and self.eventScroll:
+			self.eventScroll()
+
+	def OnUp(self):
+		self.SetPos(self.pos - self.step)
+
+	def OnDown(self):
+		self.SetPos(self.pos + self.step)
+
+	def __Place(self):
+		travel = max(1, self.GetHeight() - self.thumb.GetHeight())
+		self.thumb.SetPosition(0, int(travel * self.pos))
+
+	def __OnMove(self):
+		(x, y) = self.thumb.GetLocalPosition()
+		travel = max(1, self.GetHeight() - self.thumb.GetHeight())
+		self.pos = max(0.0, min(1.0, float(y) / float(travel)))
+		if self.eventScroll:
+			self.eventScroll()
 
 class ScrollBarNew(ui.Window):
 	SCROLLBAR_WIDTH = 7

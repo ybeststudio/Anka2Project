@@ -705,6 +705,9 @@ typedef struct packet_item
 #ifdef ENABLE_SEALBIND_SYSTEM
 	long sealbind;
 #endif
+#ifdef ENABLE_APPLY_RANDOM
+	TPlayerItemAttribute aApplyRandom[3];	// ITEM_APPLY_MAX_NUM: rolled APPLY_RANDOM base bonuses
+#endif
 } TItemData;
 
 typedef struct packet_shop_item

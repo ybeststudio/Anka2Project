@@ -2,6 +2,9 @@
 #include "buffi_system.h"
 #include "utils.h"
 #include "config.h"
+#ifdef ENABLE_BONUS_FIX
+#include "bonus_custom.h"
+#endif
 #include "char.h"
 #include "desc.h"
 #include "sectree_manager.h"
@@ -16,6 +19,9 @@
 #include "locale_service.h"
 #include "item.h"
 #include "item_manager.h"
+#ifdef ENABLE_APPLY_RANDOM
+#include "item_apply_random_table.h"
+#endif
 #include "affect.h"
 #include "DragonSoul.h"
 #include "buff_on_attributes.h"
@@ -65,6 +71,11 @@ void CItem::Initialize()
 	m_bExchanging = false;
 	memset(&m_alSockets, 0, sizeof(m_alSockets));
 	memset(&m_aAttr, 0, sizeof(m_aAttr));
+#ifdef ENABLE_APPLY_RANDOM
+	memset(&m_aApplyRandom, 0, sizeof(m_aApplyRandom));
+	memset(&m_abApplyRandomRow, 0, sizeof(m_abApplyRandomRow));
+	m_bApplyRandomPendingSave = false;
+#endif
 	m_pkDestroyEvent = NULL;
 	m_pkOwnershipEvent = NULL;
 	m_dwOwnershipPID = 0;
@@ -260,6 +271,9 @@ void CItem::UpdatePacket()
 #endif
 #ifdef ENABLE_SEALBIND_SYSTEM
 	pack.sealbind = GetSealDate();
+#endif
+#ifdef ENABLE_APPLY_RANDOM
+	thecore_memcpy(pack.aApplyRandom, m_aApplyRandom, sizeof(pack.aApplyRandom));
 #endif
 
 	sys_log(2, "UpdatePacket %s -> %s", GetName(), m_pOwner->GetName());
@@ -598,6 +612,9 @@ int CItem::FindEquipCell(LPCHARACTER ch, int iCandidateCell)
 #ifdef ENABLE_PASSIVE_SYSTEM
 		&& ITEM_PASSIVE != GetType()
 #endif
+#ifdef ENABLE_SHINING_SYSTEM
+		&& ITEM_SHINING != GetType()
+#endif
 		)
 	{
 		return -1;
@@ -627,6 +644,16 @@ int CItem::FindEquipCell(LPCHARACTER ch, int iCandidateCell)
 			return -1;
 		}
 	}
+#ifdef ENABLE_SHINING_SYSTEM
+	else if (GetType() == ITEM_SHINING)
+	{
+		if (GetSubType() == SHINING_WEAPON)
+			return WEAR_SHINING_WEAPON;
+		if (GetSubType() == SHINING_ARMOR)
+			return WEAR_SHINING_ARMOR;
+		return -1;
+	}
+#endif
 	else if (GetType() == ITEM_COSTUME)
 	{
 		if (GetSubType() == COSTUME_BODY)
@@ -866,6 +893,19 @@ void CItem::ModifyPoints(bool bAdd)
 			continue;
 #endif
 
+#ifdef ENABLE_APPLY_RANDOM
+		if (m_pProto->aApplies[i].bType == APPLY_RANDOM)
+		{
+			const WORD wRandomType = m_aApplyRandom[i].bType;
+			long lRandomValue = m_aApplyRandom[i].sValue;
+			if (wRandomType == APPLY_NONE || wRandomType == APPLY_SKILL)
+				continue;
+			if (0 != accessoryGrade && i < ITEM_APPLY_MAX_NUM - 1)
+				lRandomValue += MAX(accessoryGrade, lRandomValue * aiAccessorySocketEffectivePct[accessoryGrade] / 100);
+			m_pOwner->ApplyPoint(wRandomType, bAdd ? lRandomValue : -lRandomValue);
+			continue;
+		}
+#endif
 		long value = m_pProto->aApplies[i].lValue;
 
 		if (m_pProto->aApplies[i].bType == APPLY_SKILL)
@@ -952,6 +992,11 @@ void CItem::ModifyPoints(bool bAdd)
 			{
 				const TPlayerItemAttribute& ia = GetAttribute(i);
 				auto value = ia.sValue;
+#ifdef ENABLE_BONUS_FIX
+				if (ia.bType != APPLY_SKILL)
+					if (const int iAttrPct = BonusCustom::GetItemAttributeBonusPct(this, i))
+						value = value * (100 + iAttrPct) / 100;
+#endif
 
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
 				if (GetType() == ITEM_COSTUME && GetSubType() == COSTUME_ACCE)
@@ -985,7 +1030,12 @@ void CItem::ModifyPoints(bool bAdd)
 						m_pOwner->ApplyPoint(ia.bType, bAdd ? iValue : -iValue);
 					}
 					else
+#ifdef ENABLE_BONUS_FIX
+						// sash (acce) attributes use the absorption scaled value computed above
+						m_pOwner->ApplyPoint(ia.bType, bAdd ? value : -value);
+#else
 						m_pOwner->ApplyPoint(ia.bType, bAdd ? ia.sValue : -ia.sValue);
+#endif
 				}
 #else
 				if (ia.bType == APPLY_SKILL)
@@ -1205,6 +1255,9 @@ bool CItem::IsEquipable() const
 #endif
 #ifdef ENABLE_PASSIVE_SYSTEM
 		case ITEM_PASSIVE:
+#endif
+#ifdef ENABLE_SHINING_SYSTEM
+		case ITEM_SHINING:
 #endif
 			return true;
 	}
@@ -2917,5 +2970,92 @@ void CItem::SetSetValue(DWORD dwSetValue)
 DWORD CItem::GetSetValue() const
 {
 	return m_dwSetValue;
+}
+#endif
+
+#ifdef ENABLE_APPLY_RANDOM
+void CItem::SetApplyRandoms(const TPlayerItemAttribute* pApply, const BYTE* pRow)
+{
+	thecore_memcpy(m_aApplyRandom, pApply, sizeof(m_aApplyRandom));
+	thecore_memcpy(m_abApplyRandomRow, pRow, sizeof(m_abApplyRandomRow));
+}
+
+bool CItem::HasApplyRandom() const
+{
+	if (!m_pProto)
+		return false;
+	for (int i = 0; i < ITEM_APPLY_MAX_NUM; ++i)
+		if (m_pProto->aApplies[i].bType == APPLY_RANDOM)
+			return true;
+	return false;
+}
+
+void CItem::RollApplyRandom(bool bOnlyMissing)
+{
+	const CApplyRandomTable* pTable = ITEM_MANAGER::instance().GetApplyRandomTable();
+	if (!pTable || !m_pProto)
+		return;
+
+	bool bRolled = false;
+	for (int i = 0; i < ITEM_APPLY_MAX_NUM; ++i)
+	{
+		if (m_pProto->aApplies[i].bType != APPLY_RANDOM)
+			continue;
+
+		// already rolled (db load): follow table corrections, re-roll only when the roll is no longer valid
+		if (bOnlyMissing && m_aApplyRandom[i].bType != APPLY_NONE)
+		{
+			const short sTableValue = pTable->GetApplyRandomValue(m_pProto->aApplies[i].lValue, GetRefineLevel(), m_abApplyRandomRow[i], m_aApplyRandom[i].bType);
+			if (sTableValue != 0)
+			{
+				if (sTableValue != m_aApplyRandom[i].sValue)
+				{
+					m_aApplyRandom[i].sValue = sTableValue;
+					bRolled = true;
+				}
+				continue;
+			}
+		}
+
+		WORD wType = APPLY_NONE;
+		short sValue = 0;
+		BYTE bPath = 0;
+		if (pTable->GetApplyRandom(m_pProto->aApplies[i].lValue, GetRefineLevel(), wType, sValue, bPath))
+		{
+			m_aApplyRandom[i].bType = wType;
+			m_aApplyRandom[i].sValue = sValue;
+			m_abApplyRandomRow[i] = bPath;
+			bRolled = true;
+		}
+	}
+
+	// items loaded from the db are saved as soon as SetSkipSave(false) is called
+	if (bRolled && bOnlyMissing)
+		m_bApplyRandomPendingSave = true;
+}
+
+void CItem::TransferApplyRandom(LPITEM pkOldItem)
+{
+	const CApplyRandomTable* pTable = ITEM_MANAGER::instance().GetApplyRandomTable();
+	if (!pTable || !m_pProto || !pkOldItem)
+		return;
+
+	const TPlayerItemAttribute* pOld = pkOldItem->GetApplyRandoms();
+	const BYTE* pOldRow = pkOldItem->GetApplyRandomRows();
+	for (int i = 0; i < ITEM_APPLY_MAX_NUM; ++i)
+	{
+		if (m_pProto->aApplies[i].bType != APPLY_RANDOM || pOld[i].bType == APPLY_NONE)
+			continue;
+
+		const short sValue = pTable->GetApplyRandomValue(m_pProto->aApplies[i].lValue, GetRefineLevel(), pOldRow[i], pOld[i].bType);
+		if (sValue == 0)
+			continue;	// the new grade uses another group: keep the freshly rolled bonus
+
+		m_aApplyRandom[i].bType = pOld[i].bType;
+		m_aApplyRandom[i].sValue = sValue;
+		m_abApplyRandomRow[i] = pOldRow[i];
+	}
+	UpdatePacket();
+	Save();
 }
 #endif

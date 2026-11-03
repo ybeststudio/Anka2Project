@@ -90,10 +90,16 @@ typedef struct packet_guild_sub_info
 	BYTE has_land;
 } TPacketGCGuildInfo;
 
+#ifdef ENABLE_GUILD_GRADE_RENEWAL
+typedef WORD TGuildAuthFlag;
+#else
+typedef BYTE TGuildAuthFlag;
+#endif
+
 typedef struct SGuildGrade
 {
 	char grade_name[GUILD_GRADE_NAME_MAX_LEN+1];
-	BYTE auth_flag;
+	TGuildAuthFlag auth_flag;
 } TGuildGrade;
 
 struct TOneGradeNamePacket
@@ -105,7 +111,7 @@ struct TOneGradeNamePacket
 struct TOneGradeAuthPacket
 {
 	BYTE grade;
-	BYTE auth;
+	TGuildAuthFlag auth;
 };
 #pragma pack()
 
@@ -115,6 +121,13 @@ enum
 	GUILD_AUTH_REMOVE_MEMBER	= (1 << 1),
 	GUILD_AUTH_NOTICE		= (1 << 2),
 	GUILD_AUTH_USE_SKILL	= (1 << 3),
+#ifdef ENABLE_GUILD_GRADE_RENEWAL
+	GUILD_AUTH_WAR			= (1 << 4),
+	GUILD_AUTH_SHOP			= (1 << 5),
+	GUILD_AUTH_QUEST		= (1 << 6),
+	GUILD_AUTH_UP_SKILL		= (1 << 7),
+	GUILD_AUTH_DUNGEON		= (1 << 8),
+#endif
 };
 
 typedef struct SGuildData
@@ -214,7 +227,7 @@ class CGuild
 #endif
 
 		void		ChangeGradeName(BYTE grade, const char* grade_name);
-		void		ChangeGradeAuth(BYTE grade, BYTE auth);
+		void		ChangeGradeAuth(BYTE grade, TGuildAuthFlag auth);
 		void		P2PChangeGrade(BYTE grade);
 
 		bool		ChangeMemberGeneral(DWORD pid, BYTE is_general);
@@ -249,7 +262,11 @@ class CGuild
 		void		BroadcastMemberCountBonus();
 		// END_OF_GUILD_MEMBER_COUNT_BONUS
 
+#ifdef ENABLE_GUILD_GRADE_RENEWAL
+		int		GetMaxGeneralCount() const	{ return 3; }	// reference: three co-leaders
+#else
 		int		GetMaxGeneralCount() const	{ return 1 /*+ GetSkillLevel(GUILD_SKILL_DEUNGYONG)/3*/;}
+#endif
 		int		GetGeneralCount() const		{ return m_general_count; }
 
 		TGuildMember*	GetMember(DWORD pid);
@@ -399,6 +416,11 @@ class CGuild
 		};
 
 		GuildJoinErrCode	VerifyGuildJoinableCondition( const LPCHARACTER pchInvitee );
+#ifdef ENABLE_GUILD_APPLICATION
+	public:
+		int		VerifyApplicationJoin(const LPCHARACTER ch) { return (int)VerifyGuildJoinableCondition(ch); }
+	private:
+#endif
 
 		typedef std::map< DWORD, LPEVENT >	EventMap;
 		EventMap	m_GuildInviteEventMap;

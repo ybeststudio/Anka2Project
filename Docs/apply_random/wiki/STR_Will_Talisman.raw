@@ -1,0 +1,183 @@
+{{Equipment2/Layout
+
+<!-- Type of item - accepted values: Helmet Shoes Shield Talisman-->
+|Type = Talisman
+
+<!-- Level of item - accepted values: Level or level interval in ## - ## format -->
+|Level = 105
+
+<!-- Classes that can use this item accepted values are warrior ; ninja ; shaman ; sura ; lycan ; 3 (for warrior ninja and sura) ; 4 for all classes-->
+|wearable = 4
+
+<!-- Powershard used to add 6/7 bonus -->
+|Powershard = {{Ti|Lucent Yellow Powershard}}
+
+<!-- Origin of item -->
+|Origin = 
+<ul>
+*'''[[Boxes]]:''' 
+:*{{Ti|Labyrinth Chest}}
+:*{{Ti|Perfect Talisman Chest}}
+:*{{Ti|Tower Ranking Chest}}
+:*{{Ti|Yohara Treasure Chest}}
+*'''[[Quests]]:''' [[Disruption Ritual]] ''(Level 120)''
+*'''Other:''' [[Alternative Drop]] (new continent - all monsters between rang 1-4 and player champion level 1+)
+</ul>
+
+<!-- Other information -->
+|Other = <br>
+*The type of element is given randomly, as well as all starting values.
+*Possible to have no default bonuses at all. These will not be assigned when upgraded.
+
+<!-- Upgrade yang costs - numeric value only (no yang tag) ; blank if no costs -->
+|Costs0 = 
+|Costs1 = 1.000.000
+|Costs2 = 1.500.000
+|Costs3 = 2.000.000
+|Costs4 = 2.500.000
+|Costs5 = 3.000.000
+|Costs6 = 3.500.000
+|Costs7 = 4.000.000
+|Costs8 = 4.500.000
+|Costs9 = 5.000.000
+|Costs10 = 
+|Costs11 = 
+|Costs12 = 
+|Costs13 = 
+|Costs14 = 
+|Costs15 = 
+
+<!-- Level of item if it changes during the upgrade -->
+|LVL0 = 
+|LVL1 = 
+|LVL2 = 
+|LVL3 = 
+|LVL4 = 
+|LVL5 = 
+|LVL6 = 
+|LVL7 = 
+|LVL8 = 
+|LVL9 = 
+|LVL10 = 
+|LVL11 = 
+|LVL12 = 
+|LVL13 = 
+|LVL14 = 
+|LVL15 = 
+
+<!-- 1st Upgrade Item -->
+|1stUpgitem0 = 
+|1stUpgitem1 = 6x [[File:Will Topaz.png|link=Will Topaz]]
+|1stUpgitem2 = 12x [[File:Will Topaz.png|link=Will Topaz]]
+|1stUpgitem3 = 18x [[File:Will Topaz.png|link=Will Topaz]]
+|1stUpgitem4 = 24x [[File:Will Topaz.png|link=Will Topaz]]
+|1stUpgitem5 = 30x [[File:Will Topaz.png|link=Will Topaz]]
+|1stUpgitem6 = 36x [[File:Will Topaz.png|link=Will Topaz]]
+|1stUpgitem7 = 42x [[File:Will Topaz.png|link=Will Topaz]]
+|1stUpgitem8 = 48x [[File:Will Topaz.png|link=Will Topaz]]
+|1stUpgitem9 = 54x [[File:Will Topaz.png|link=Will Topaz]]
+|1stUpgitem10 = 
+|1stUpgitem11 = 
+|1stUpgitem12 = 
+|1stUpgitem13 = 
+|1stUpgitem14 = 
+|1stUpgitem15 = 
+
+<!-- 2nd Upgrade Item -->
+|2ndUpgitem0 = 
+|2ndUpgitem1 = 1x [[File:STR Will Talisman.png|link=]] (+0)
+|2ndUpgitem2 = 1x [[File:STR Will Talisman.png|link=]] (+1)
+|2ndUpgitem3 = 1x [[File:STR Will Talisman.png|link=]] (+2)
+|2ndUpgitem4 = 1x [[File:STR Will Talisman.png|link=]] (+3)
+|2ndUpgitem5 = 1x [[File:STR Will Talisman.png|link=]] (+4)
+|2ndUpgitem6 = 1x [[File:STR Will Talisman.png|link=]] (+5)
+|2ndUpgitem7 = 1x [[File:STR Will Talisman.png|link=]] (+6)
+|2ndUpgitem8 = 1x [[File:STR Will Talisman.png|link=]] (+7)
+|2ndUpgitem9 = 1x [[File:STR Will Talisman.png|link=]] (+8)
+|2ndUpgitem10 = 
+|2ndUpgitem11 = 
+|2ndUpgitem12 = 
+|2ndUpgitem13 = 
+|2ndUpgitem14 = 
+|2ndUpgitem15 = 
+
+<!-- 3rd Upgrade Item -->
+|3rdUpgitem0 = 
+|3rdUpgitem1 = 
+|3rdUpgitem2 = 
+|3rdUpgitem3 = 
+|3rdUpgitem4 = 
+|3rdUpgitem5 = 
+|3rdUpgitem6 = 
+|3rdUpgitem7 = 
+|3rdUpgitem8 = 
+|3rdUpgitem9 = 
+|3rdUpgitem10 = 
+|3rdUpgitem11 = 
+|3rdUpgitem12 = 
+|3rdUpgitem13 = 
+|3rdUpgitem14 = 
+|3rdUpgitem15 = 
+
+<!-- 1st Bonus Name and values (Bonus1-10 opens the +10~15 table -->
+|Bonus1-Name = Sung Ma's will (STR)
+|Bonus1-0 = 0~2
+|Bonus1-1 = 1~3
+|Bonus1-2 = 3~4
+|Bonus1-3 = 5~6
+|Bonus1-4 = 7~8
+|Bonus1-5 = 9~10
+|Bonus1-6 = 11~13
+|Bonus1-7 = 14~16
+|Bonus1-8 = 17~19
+|Bonus1-9 = 21~24
+|Bonus1-10 = 
+|Bonus1-11 = 
+|Bonus1-12 = 
+|Bonus1-13 = 
+|Bonus1-14 = 
+|Bonus1-15 = 
+
+<!-- 2nd Bonus Name and values -->
+|Bonus2-Name = Random element
+|Bonus2-0 = +0~2%
+|Bonus2-1 = +2~3%
+|Bonus2-2 = +3~4%
+|Bonus2-3 = +4~5%
+|Bonus2-4 = +5~6%
+|Bonus2-5 = +6~7%
+|Bonus2-6 = +7~8%
+|Bonus2-7 = +8~9%
+|Bonus2-8 = +9~10%
+|Bonus2-9 = +15~17%
+|Bonus2-10 = 
+|Bonus2-11 = 
+|Bonus2-12 = 
+|Bonus2-13 = 
+|Bonus2-14 = 
+|Bonus2-15 = 
+
+<!-- 3rd Bonus Name and values-->
+|Bonus3-Name = 
+|Bonus3-0 = 
+|Bonus3-1 = 
+|Bonus3-2 = 
+|Bonus3-3 = 
+|Bonus3-4 = 
+|Bonus3-5 = 
+|Bonus3-6 = 
+|Bonus3-7 = 
+|Bonus3-8 = 
+|Bonus3-9 = 
+|Bonus3-10 = 
+|Bonus3-11 = 
+|Bonus3-12 = 
+|Bonus3-13 = 
+|Bonus3-14 = 
+|Bonus3-15 = 
+
+}}
+
+[[de:STR-Willenstalisman]]
+[[fr:Talisman volonté STR]]
+[[ro:STR Talisman Voință]]

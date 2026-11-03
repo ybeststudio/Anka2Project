@@ -25,8 +25,6 @@ COSTUME_SLOT_ACCE_SKIN = _SLOT("COSTUME_SLOT_ACCE_SKIN", 39)
 SHINING_SLOT_WEAPON = _SLOT("SHINING_SLOT_WEAPON", 40)
 SHINING_SLOT_ARMOR = _SLOT("SHINING_SLOT_ARMOR", 41)
 
-def _T(name, default):
-	return getattr(localeInfo, name, default)
 
 INVENTORY_PATH = "d:/ymir work/ui/game/inventory{}"
 SPECIAL_INVENTORY_PATH = "d:/ymir work/ui/game/special_inventory{}"
@@ -96,7 +94,7 @@ window = {
 					"x" : 10,
 					"y" : 30,
 
-					"tooltip_text": _T("INVENTORY_ITEM_SORT_TOOLTIP", "Envanteri s\xfdrala"),
+					"tooltip_text": localeInfo.INVENTORY_ITEM_SORT_TOOLTIP,
 
 					"default_image" : INVENTORY_PATH.format("/manage/btn-sort-1.png"),
 					"over_image" : INVENTORY_PATH.format("/manage/btn-sort-2.png"),
@@ -109,7 +107,7 @@ window = {
 					"x" : 35,
 					"y" : 30,
 
-					"tooltip_text": _T("SPECIAL_INVENTORY_STACK_ITEMS", "Itemleri birle\xfetir"),
+					"tooltip_text": localeInfo.SPECIAL_INVENTORY_STACK_ITEMS,
 
 					"default_image" : INVENTORY_PATH.format("/manage/btn-stack-1.png"),
 					"over_image" : INVENTORY_PATH.format("/manage/btn-stack-2.png"),
@@ -195,7 +193,7 @@ window = {
 							"x" : 77,
 							"y" : 108,
 
-							"tooltip_text" : _T("IKASHOP_BUSINESS_BOARD_TITLE", "\xc7evrimd\xfd\xfe\xfd Pazar") + "^" + _T("IKASHOP_BUSINESS_BOARD_LINK_TOOLTIP", "\xc7evrimd\xfd\xfe\xfd Pazar"),
+							"tooltip_text" : localeInfo.IKASHOP_BUSINESS_BOARD_TITLE + "^" + localeInfo.IKASHOP_BUSINESS_BOARD_LINK_TOOLTIP,
 
 							"default_image" : "d:/ymir work/ui/game/inventory/btn_offlineshop_norm.png",
 							"over_image" : "d:/ymir work/ui/game/inventory/btn_offlineshop_hover.png",
@@ -334,7 +332,14 @@ window = {
 					"image" : "d:/ymir work/ui/game/inventory/costumes.png",
 
 					"children" :
-					(					
+					(
+						{
+							"name" : "Costume_Aura_Slot_Frame",
+							"type" : "image",
+							"x" : 108,
+							"y" : 95,
+							"image" : "d:/ymir work/ui/game/inventory/costume_aura_slot.png",
+						},					
 						{
 							"name" : "CostumeSlot",
 							"type" : "slot",
@@ -352,6 +357,7 @@ window = {
 								{"index":COSTUME_SLOT_ACCE_SKIN, "x":108, "y":52, "width":32, "height":32},	
 								{"index":SHINING_SLOT_WEAPON, "x":21, "y":144, "width":32, "height":32},
 								{"index":SHINING_SLOT_ARMOR, "x":95, "y":144, "width":32, "height":32},
+								{"index":item.COSTUME_SLOT_AURA, "x":108, "y":95, "width":32, "height":32},
 							
 							),
 						},	
@@ -406,7 +412,7 @@ window = {
 							"x" : 5,
 							"y" : 5,
 
-							"tooltip_text" : _T("COSTUME_SHOP_TITLE", "Kost\xfcm Ma\xf0azas\xfd"),
+							"tooltip_text" : localeInfo.COSTUME_SHOP_TITLE,
 
 							"default_image" : COMMON_PATH.format("/shop_btn.png"),
 							"over_image" : COMMON_PATH.format("/shop_btn.png"),
@@ -457,7 +463,7 @@ window = {
 							"x" : 107,
 							"y" : 60,
                             
-							"tooltip_text": _T("BUFFI_NO_BONUS_COSTUME", "Buffi kost\xfcmleri bonus vermez."),
+							"tooltip_text": localeInfo.BUFFI_NO_BONUS_COSTUME,
 
 							"default_image" : "d:/ymir work/ui/pattern/q_mark_01.tga",
 							"over_image" : "d:/ymir work/ui/pattern/q_mark_02.tga",

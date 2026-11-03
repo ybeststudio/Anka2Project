@@ -4,6 +4,7 @@ if __USE_DYNAMIC_MODULE__:
 net = __import__(pyapi.GetModuleName("net"))
 
 import ui
+import localeInfo
 import snd
 import uiToolTip
 import item
@@ -16,10 +17,10 @@ class Halloween(ui.ScriptWindow):
 	POZITII_Y = [326,326,326,326,276,223,168,113,61,61,61,61,61,114,169,222,277,]
 	X_LEVELS = [224,157,91,26,26,26,26,26,26,89,157,225,290,290,290,290,290,]
 	Y_LEVELS = [325,325,325,325,275,222,167,112,60,60,60,60,60,113,168,221,276,]
-	ITEMS = ["Jack'ýn Kabaðý (x1)","Jack'ýn Kabaðý (x1)","Jack'ýn Kabaðý (x1)","Jack'ýn Kabaðý (x2)","Jack'ýn Kabaðý (x2)",
-	"Jack'ýn Kabaðý (x2)","Jack'ýn Kabaðý (x2)","Jack'ýn Kabaðý (x2)","Jack'ýn Kabaðý (x3)","Jack'ýn Kabaðý (x3)",
-	"Jack'ýn Kabaðý (x3)","Jack'ýn Kabaðý (x3)","Jack'ýn Kabaðý (x4)","Jack'ýn Kabaðý (x4)","Jack'ýn Kabaðý (x4)",
-	"Jack'ýn Kabaðý (x4)","Jack'ýn Kabaðý (x4)"
+	ITEMS = [localeInfo.HALLOWEEN_PUMPKIN_REWARD % 1,localeInfo.HALLOWEEN_PUMPKIN_REWARD % 1,localeInfo.HALLOWEEN_PUMPKIN_REWARD % 1,localeInfo.HALLOWEEN_PUMPKIN_REWARD % 2,localeInfo.HALLOWEEN_PUMPKIN_REWARD % 2,
+	localeInfo.HALLOWEEN_PUMPKIN_REWARD % 2,localeInfo.HALLOWEEN_PUMPKIN_REWARD % 2,localeInfo.HALLOWEEN_PUMPKIN_REWARD % 2,localeInfo.HALLOWEEN_PUMPKIN_REWARD % 3,localeInfo.HALLOWEEN_PUMPKIN_REWARD % 3,
+	localeInfo.HALLOWEEN_PUMPKIN_REWARD % 3,localeInfo.HALLOWEEN_PUMPKIN_REWARD % 3,localeInfo.HALLOWEEN_PUMPKIN_REWARD % 4,localeInfo.HALLOWEEN_PUMPKIN_REWARD % 4,localeInfo.HALLOWEEN_PUMPKIN_REWARD % 4,
+	localeInfo.HALLOWEEN_PUMPKIN_REWARD % 4,localeInfo.HALLOWEEN_PUMPKIN_REWARD % 4
 	]
 
 	def __init__(self):

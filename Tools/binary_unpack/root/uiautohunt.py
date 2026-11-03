@@ -9,6 +9,7 @@ net = __import__(pyapi.GetModuleName("net"))
 
 #static
 import ui, dbg, mouseModule, constInfo
+import localeInfo
 
 #dynamic
 import item, miniMap, chat
@@ -119,7 +120,7 @@ class Window(ui.BoardWithTitleBar):
 		startBtn.SetOverVisual("d:/ymir work/ui/public/large_button_02.sub")
 		startBtn.SetDownVisual("d:/ymir work/ui/public/large_button_03.sub")
 		startBtn.SetEvent(self.__StartBtn)
-		startBtn.SetText("Baþlat")
+		startBtn.SetText(localeInfo.AUTO_HUNT_START)
 		self.__children["startBtn"] = startBtn
 
 		stopBtn = CreateWindow(ui.RadioButton(), bg, (55, 178), "", "horizontal:center")
@@ -141,15 +142,15 @@ class Window(ui.BoardWithTitleBar):
 		
 		self.__children["mobFarmCheckBox"] = CreateWindow(ui.ImageBox(), self, (30, self.GetHeight() + 15 + 18), IMG_DIR+"unselected.tga")
 		self.__children["mobFarmCheckBox"].SetEvent(ui.__mem_func__(self.__ClickOption), "mouse_click", "mob")
-		self.__children["mobFarmText"] = CreateWindow(ui.TextLine(), self, (30 + 15, self.GetHeight() + 15 + 20), "Canavarlara Saldýr")
+		self.__children["mobFarmText"] = CreateWindow(ui.TextLine(), self, (30 + 15, self.GetHeight() + 15 + 20), localeInfo.AUTO_HUNT_ATTACK_MONSTERS)
 
 		self.__children["stoneFarmCheckBox"] = CreateWindow(ui.ImageBox(), self, (30 + 100, self.GetHeight() + 15 + 18), IMG_DIR+"unselected.tga")
 		self.__children["stoneFarmCheckBox"].SetEvent(ui.__mem_func__(self.__ClickOption), "mouse_click", "stone")
-		self.__children["stoneFarmText"] = CreateWindow(ui.TextLine(), self, (30 + 100 + 15, self.GetHeight() + 15 + 20), "Metinlere Saldýr")
+		self.__children["stoneFarmText"] = CreateWindow(ui.TextLine(), self, (30 + 100 + 15, self.GetHeight() + 15 + 20), localeInfo.AUTO_HUNT_ATTACK_STONES)
 
 		self.__children["autoLoginCheckBox"] = CreateWindow(ui.ImageBox(), self, (30, self.GetHeight() + 15 + 18 + 22), IMG_DIR+"unselected.tga")
 		self.__children["autoLoginCheckBox"].SetEvent(ui.__mem_func__(self.__ClickOption), "mouse_click", "auto_login")
-		self.__children["autoLoginText"] = CreateWindow(ui.TextLine(), self, (30 + 15, self.GetHeight() + 15 + 20 + 22), "Otomatik Giriþ")
+		self.__children["autoLoginText"] = CreateWindow(ui.TextLine(), self, (30 + 15, self.GetHeight() + 15 + 20 + 22), localeInfo.AUTO_HUNT_AUTO_LOGIN)
 
 		self.__children["mobRange"] = RANGE_CIRCLE
 
@@ -163,7 +164,7 @@ class Window(ui.BoardWithTitleBar):
 
 	def __ClickOption(self, emptyArg, option):
 		if self.IsActive():
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "Etkin durumdayken durumu deðiþtiremezsiniz!")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.AUTO_HUNT_CANNOT_CHANGE_ACTIVE)
 			return
 		self.__children["newOptions"][option] = 1 if not self.__children["newOptions"][option] else 0
 		self.Refresh()
@@ -247,7 +248,7 @@ class Window(ui.BoardWithTitleBar):
 
 	def __OnChangeRange(self):
 		if self.IsActive():
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "Önce devre dýþý býrakmanýz gerekir!")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.AUTO_HUNT_DISABLE_FIRST)
 			self.Refresh()
 			return
 		sliderBar = self.__children["sliderBar"]
@@ -267,7 +268,7 @@ class Window(ui.BoardWithTitleBar):
 
 	def __ResetBtn(self):
 		if self.IsActive():
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "Önce devre dýþý býrakmanýz gerekir!")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.AUTO_HUNT_DISABLE_FIRST)
 			return
 		self.__children["skillDict"] = {}
 		slotItemDict = self.__children["slotItemDict"] if self.__children.has_key("slotItemDict") else {}
@@ -314,7 +315,7 @@ class Window(ui.BoardWithTitleBar):
 
 	def __ClickStatus(self, emptyArg, slotIdx):
 		if self.IsActive():
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "Önce devre dýþý býrakmanýz gerekir!")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.AUTO_HUNT_DISABLE_FIRST)
 			self.Refresh()
 			return
 		slotStatus = self.__children["slotStatus" + str(slotIdx)] if self.__children.has_key("slotStatus" + str(slotIdx)) else False

@@ -285,6 +285,8 @@ class MarkSelectDialog(ui.ScriptWindow):
 		self.__AppendFileList("bmp")
 		self.__AppendFileList("tga")
 		self.__AppendFileList("jpg")
+		if app.ENABLE_GUILD_MARK_PNG:
+			self.__AppendFileList("png")
 
 	def __ClearFileList(self):
 		self.markListBox.RemoveAllItems()
@@ -292,7 +294,11 @@ class MarkSelectDialog(ui.ScriptWindow):
 	def __AppendFileList(self, filter):
 		fileNameList = app.GetFileList("upload/*." + filter)
 		for fileName in fileNameList:
-			self.__AppendFile(fileName)
+			try:
+				self.__AppendFile(fileName)
+			except RuntimeError:
+				# the file cannot be previewed (a gif renamed to png): leave it out of the list
+				pass
 
 	def __AppendFile(self, fileName):
 		if app.ENABLE_AE_GUILD_MARK_NAME_ALIGNMENT:

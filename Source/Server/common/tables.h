@@ -319,6 +319,10 @@ typedef struct SPlayerItem
 #ifdef ENABLE_SEALBIND_SYSTEM
 	long sealbind;
 #endif
+#ifdef ENABLE_APPLY_RANDOM
+	TPlayerItemAttribute aApplyRandom[ITEM_APPLY_MAX_NUM];	// item.randomtype / randomvalue
+	BYTE abApplyRandomRow[ITEM_APPLY_MAX_NUM];			// item.randomrow (value path)
+#endif
 } TPlayerItem;
 
 typedef struct SQuickslot

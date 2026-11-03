@@ -43,7 +43,11 @@ class IAbstractPlayer : public TAbstractSingleton<IAbstractPlayer>
 		virtual void	SetItemCount(TItemPos itemPos, BYTE byCount) = 0;
 #endif
 		virtual void	SetItemMetinSocket(TItemPos itemPos, DWORD dwMetinSocketIndex, DWORD dwMetinNumber) = 0;
+#ifdef ENABLE_BONUS_FIX
+		virtual void	SetItemAttribute(TItemPos itemPos, DWORD dwAttrIndex, WORD byType, short sValue) = 0;
+#else
 		virtual void	SetItemAttribute(TItemPos itemPos, DWORD dwAttrIndex, BYTE byType, short sValue) = 0;
+#endif
 
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 		virtual void	SetItemTransmutationVnum(TItemPos& Cell, const DWORD blVnum) = 0;

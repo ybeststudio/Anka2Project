@@ -44,6 +44,9 @@ struct SNetworkActorData
 	short m_sAlignment;
 	BYTE m_byPKMode;
 	DWORD m_dwMountVnum;
+#ifdef ENABLE_SHINING_SYSTEM
+	DWORD m_adwShining[2];
+#endif
 
 	DWORD m_dwGuildID;
 #ifdef ENABLE_GUILD_LEADER_TEXTAIL
@@ -126,6 +129,9 @@ struct SNetworkUpdateActorData
 #endif
 	BYTE m_byPKMode;
 	DWORD m_dwMountVnum;
+#ifdef ENABLE_SHINING_SYSTEM
+	DWORD m_adwShining[2];
+#endif
 #ifdef ENABLE_GUILD_LEADER_TEXTAIL
 	DWORD m_dwGuildLeader;
 #endif
@@ -163,6 +169,9 @@ struct SNetworkUpdateActorData
 #endif
 		m_byPKMode = 0;
 		m_dwMountVnum = 0;
+#ifdef ENABLE_SHINING_SYSTEM
+		memset(m_adwShining, 0, sizeof(m_adwShining));
+#endif
 #ifdef ENABLE_GUILD_LEADER_TEXTAIL
 		m_dwGuildLeader = 0;
 #endif

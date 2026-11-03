@@ -1,0 +1,146 @@
+{{Waffe/Layout
+
+<!-- InGame-Bild der Waffe, 250x200px -->
+|IG-Bild = {{PAGENAME}} IG.png
+
+<!-- Level der Waffe, bei Level 80 bitte "80 - 90" eintragen -->
+|Level = 120
+|CL = 6
+
+<!-- Typ der Waffe: Einhänder, Zweihänder, Dolch, Bogen, Fächer, Glocke -->
+|Waffenart = Zweihänder
+
+<!-- Klassen, die die Waffe benutzen können, getrennt durch Komma und verlinkt -->
+|Klassen = Krieger
+
+<!-- Angriffsgeschwindigkeit der Waffe -->
+|AG = 
+
+<!-- Anzahl der Sockel -->
+|Sockel = 3
+
+<!-- Kaufpreis beim NPC, sofern nicht käuflich bitte frei lassen -->
+|Kaufpreis =
+
+<!-- Jegliche Herkunft der Waffe außer Herstellung -->
+|Herkunft =
+<ul>
+*'''Metins:''' -
+*'''Monster:''' -
+*'''Truhen:''' -
+*'''Sonstiges:''' -
+
+<!-- Herstellungsmöglichkeiten der Waffe -->
+|Herstellung = 
+* Kann bei [[Meister Chi]] aus folgenden Items hergestellt werden:
+*:{{Icon2|Mondlicht-Wahnscherbe}} (8x)
+*:{{Icon2|Exorzismus-Gebet}} (1x)
+*:{{Icon2|Mondlicht-Edelstein}} (1x)
+*:{{Icon2|Kobalt}} (10x)
+*:{{Icon2|Finsteres Waffenfragment}} (5x)
+*:{{Icon2|Gaya|300 Gaya}}
+*:{{Icon2|Yang|20.000.000 Yang}}
+<ul>
+* [[Datei:Achtung.png|20px]] Die Herstellung kann auch fehlschlagen!
+*: '''Erfolgswarscheinlichkeit: 50%'''
+
+<!-- Sonstige Anmerkungen zur Waffe -->
+|Sonstiges =
+* Bei der Herstellung kann die Waffe verschiedene Grundboni erhalten.<br>
+* Dabei kann auf jeden Bonislot nur ein bestimmter Bonus enthalten sein.<br>
+* Hat die Waffe beim herstellen weniger als 3 Standardboni, so erhält sie beim Verbessern die fehlenden Boni.
+* Sowohl Startwerte als auch die Sprünge beim verbessern, sind zufallsgeneriert.
+
+'''Besonderheit:
+*Ab der Aufwertungsstufe +10 verfügt {{PAGENAME}} über eine erhöhte Schlagreichweite. Dieser Vorteil ermöglicht es, Gegner aus größerer Distanz anzugreifen. 
+
+<center><b>[[{{PAGENAME}}#Mögliche standard Boni|Liste möglicher standard Boni]]</b></center>
+
+<!-- Erhöhungskosten beim Schmied -->
+|Kosten1 = 1.125.000
+|Kosten2 = 1.350.000
+|Kosten3 = 1.620.000
+|Kosten4 = 1.950.000
+|Kosten5 = 2.325.000 
+|Kosten6 = 2.775.000
+|Kosten7 = 3.375.000
+|Kosten8 = 3.975.000
+|Kosten9 = 4.800.000
+|Kosten10 = 5.775.000
+|Kosten11 = 6.900.000
+|Kosten12 = 8.325.000
+|Kosten13 = 9.975.000
+|Kosten14 = 12.000.000
+|Kosten15 = 14.400.000
+
+|Upgradeitem-1-1 = 10x {{icon|Hungernde Seele}}
+|Upgradeitem-1-2 = 10x {{icon|Hungernde Seele}}
+|Upgradeitem-1-3 = 10x {{icon|Hungernde Seele}}
+|Upgradeitem-1-4 = 10x {{icon|Hungernde Seele}}
+|Upgradeitem-1-5 = 10x {{icon|Hungernde Seele}}
+|Upgradeitem-1-6 = 10x {{icon|Hungernde Seele}}
+|Upgradeitem-1-7 = 30x {{icon|Helmstück des Kriegers}}
+|Upgradeitem-1-8 = 40x {{icon|Helmstück des Kriegers}}
+|Upgradeitem-1-9 = 50x {{icon|Helmstück des Kriegers}}
+|Upgradeitem-1-10 = 50x {{icon|Wahnsplitter}}
+|Upgradeitem-1-11 = 60x {{icon|Wahnsplitter}}
+|Upgradeitem-1-12 = 70x {{icon|Wahnsplitter}}
+|Upgradeitem-1-13 = 80x {{icon|Wahnsplitter}}
+|Upgradeitem-1-14 = 90x {{icon|Wahnsplitter}}
+|Upgradeitem-1-15 = 100x {{icon|Wahnsplitter}}
+
+|Upgradeitem-2-1 = 5x {{icon|Mondscheintruhe}}
+|Upgradeitem-2-2 = 5x {{icon|Mondscheintruhe}}
+|Upgradeitem-2-3 = 5x {{icon|Dornenschale}}
+|Upgradeitem-2-4 = 10x {{icon|Dornenschale}}
+|Upgradeitem-2-5 = 15x {{icon|Dornenschale}}
+|Upgradeitem-2-6 = 5x {{icon|Kobalt}} 
+|Upgradeitem-2-7 = 5x {{icon|Finsteres Horn}} 
+|Upgradeitem-2-8 = 7x {{icon|Finsteres Horn}} 
+|Upgradeitem-2-9 = 10x {{icon|Finsteres Horn}} 
+|Upgradeitem-2-10 = 5x {{icon|Achat}} 
+|Upgradeitem-2-11 = 5x {{icon|Titandioxid}} 
+|Upgradeitem-2-12 = 5x {{icon|Mondstein}} 
+|Upgradeitem-2-13 = 10x {{icon|Achat}} 
+|Upgradeitem-2-14 = 5x {{icon|Titandioxid}} 
+|Upgradeitem-2-15 = 5x {{icon|Mondstein}} 
+
+|Upgradeitem-3-2 = 5x {{icon|Schimm. blutrote Perle}}
+|Upgradeitem-3-3 = 5x {{icon|Schimm. blaue Perle}}
+|Upgradeitem-3-4 = 3x {{icon|Schimm. weiße Perle}}
+|Upgradeitem-3-5 = 2x {{icon|Verfluchte Strähne}}
+|Upgradeitem-3-6 = 2x {{icon|Verfluchte Strähne}}
+|Upgradeitem-3-7 = 2x {{icon|Verfluchte Kette}} 
+|Upgradeitem-3-8 = 3x {{icon|Verfluchte Kette}} 
+|Upgradeitem-3-9 = 3x {{icon|Verfluchte Kette}} 
+|Upgradeitem-3-10 = 1x {{icon|Aamons verzierte Truhe}} 
+|Upgradeitem-3-11 = 1x {{icon|Aamons verzierte Truhe}}
+|Upgradeitem-3-12 = 1x {{icon|Aamons verzierte Truhe}}
+|Upgradeitem-3-13 = 1x {{icon|Aamons verzierte Truhe}} 
+|Upgradeitem-3-14 = 2x {{icon|Aamons verzierte Truhe}} 
+|Upgradeitem-3-15 = 3x {{icon|Aamons verzierte Truhe}} 
+
+<!-- Angriffswerte auf den verschiedenen Stufen -->
+|AW0 = <br><font color=yellow>366</font>&nbsp;/&nbsp;<font color=orange>391</font> - <font color=yellow>510</font>&nbsp;/&nbsp;<font color=orange>536</font>
+|AW1 = <br><font color=yellow>385</font>&nbsp;/&nbsp;<font color=orange>410</font> - <font color=yellow>529</font>&nbsp;/&nbsp;<font color=orange>555</font>
+|AW2 = <br><font color=yellow>398</font>&nbsp;/&nbsp;<font color=orange>423</font> - <font color=yellow>542</font>&nbsp;/&nbsp;<font color=orange>568</font>
+|AW3 = <br><font color=yellow>410</font>&nbsp;/&nbsp;<font color=orange>435</font> - <font color=yellow>554</font>&nbsp;/&nbsp;<font color=orange>580</font>
+|AW4 = <br><font color=yellow>424</font>&nbsp;/&nbsp;<font color=orange>449</font> - <font color=yellow>568</font>&nbsp;/&nbsp;<font color=orange>594</font>
+|AW5 = <br><font color=yellow>441</font>&nbsp;/&nbsp;<font color=orange>466</font> - <font color=yellow>585</font>&nbsp;/&nbsp;<font color=orange>611</font>
+|AW6 = <br><font color=yellow>481</font>&nbsp;/&nbsp;<font color=orange>506</font> - <font color=yellow>625</font>&nbsp;/&nbsp;<font color=orange>651</font>
+|AW7 = <br><font color=yellow>550</font>&nbsp;/&nbsp;<font color=orange>575</font> - <font color=yellow>694</font>&nbsp;/&nbsp;<font color=orange>720</font>
+|AW8 = <br><font color=yellow>590</font>&nbsp;/&nbsp;<font color=orange>615</font> - <font color=yellow>734</font>&nbsp;/&nbsp;<font color=orange>760</font>
+|AW9 = <br><font color=yellow>708</font>&nbsp;/&nbsp;<font color=orange>733</font> - <font color=yellow>852</font>&nbsp;/&nbsp;<font color=orange>878</font>
+|AW10 = <br><font color=yellow>733</font>&nbsp;/&nbsp;<font color=orange>758</font> - <font color=yellow>877</font>&nbsp;/&nbsp;<font color=orange>903</font> 
+|AW11 = <br><font color=yellow>758</font>&nbsp;/&nbsp;<font color=orange>783</font> - <font color=yellow>902</font>&nbsp;/&nbsp;<font color=orange>928</font>
+|AW12 = <br><font color=yellow>785</font>&nbsp;/&nbsp;<font color=orange>810</font> - <font color=yellow>929</font>&nbsp;/&nbsp;<font color=orange>955</font>
+|AW13 = <br><font color=yellow>810</font>&nbsp;/&nbsp;<font color=orange>835</font> - <font color=yellow>954</font>&nbsp;/&nbsp;<font color=orange>980</font>
+|AW14 = <br><font color=yellow>835</font>&nbsp;/&nbsp;<font color=orange>860</font> - <font color=yellow>979</font>&nbsp;/&nbsp;<font color=orange>1005</font>
+|AW15 = <br><font color=yellow>883</font>&nbsp;/&nbsp;<font color=orange>908</font> - <font color=yellow>1027</font>&nbsp;/&nbsp;<font color=orange>1053</font>
+
+
+|Bonus1 = Bis 3 zufällige Boni
+}}
+{{Mondscheinwaffen Boni}}
+
+[[gr:Ξιφολόγχη Σεληνόφωτος]]

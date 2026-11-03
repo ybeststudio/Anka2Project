@@ -1911,7 +1911,13 @@ namespace quest
 
 	int pc_mount_bonus(lua_State* L)
 	{
+#ifdef ENABLE_BONUS_FIX
+		const int applyOn = static_cast<int>(lua_tonumber(L, 1));
+		if (applyOn <= APPLY_NONE || applyOn >= MAX_APPLY_NUM)
+			return 0;
+#else
 		BYTE applyOn = static_cast<BYTE>(lua_tonumber(L, 1));
+#endif
 		long value = static_cast<long>(lua_tonumber(L, 2));
 		long duration = static_cast<long>(lua_tonumber(L, 3));
 

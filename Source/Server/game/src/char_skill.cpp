@@ -5,6 +5,9 @@
 #include "config.h"
 #include "vector.h"
 #include "char.h"
+#ifdef ENABLE_BONUS_FIX
+#include "bonus_custom.h"
+#endif
 #include "char_manager.h"
 #include "battle.h"
 #include "desc.h"
@@ -1401,7 +1404,11 @@ struct FuncSplashDamage
 				//iDam -= pkChrVictim->GetPoint(POINT_MAGIC_DEF_GRADE);
 #ifdef ENABLE_MAGIC_REDUCTION_SYSTEM
 				{
+#ifdef ENABLE_BONUS_FIX
+					const int resist_magic = MINMAX(0, pkChrVictim->GetPoint(POINT_RESIST_MAGIC) * (100 + pkChrVictim->GetPoint(POINT_RESIST_PER_MAGIC)) / 100, 100);
+#else
 					const int resist_magic = MINMAX(0, pkChrVictim->GetPoint(POINT_RESIST_MAGIC), 100);
+#endif
 					const int resist_magic_reduction = MINMAX(0, (m_pkChr->GetJob()==JOB_SURA) ? m_pkChr->GetPoint(POINT_RESIST_MAGIC_REDUCTION)/2 : m_pkChr->GetPoint(POINT_RESIST_MAGIC_REDUCTION), 50);
 					const int total_res_magic = MINMAX(0, resist_magic - resist_magic_reduction, 100);
 					iDam = iDam * (100 - total_res_magic) / 100;
@@ -1492,10 +1499,22 @@ struct FuncSplashDamage
 			}
 		}
 
+#ifdef ENABLE_BONUS_FIX
+		// "<skill> Damage +X%"
+		if (const int iSkillPct = BonusCustom::GetSkillDamagePct(m_pkChr, m_pkSk->dwVnum))
+			iDam = iDam * (100 + iSkillPct) / 100;
+		const int iBonusHitDam = iDam;
+#endif
 		if (!pkChrVictim->Damage(m_pkChr, iDam, dt) && !pkChrVictim->IsStun())
 		{
+#ifdef ENABLE_BONUS_FIX
+			BonusCustom::OnSkillHit(m_pkChr, pkChrVictim, m_pkSk->dwVnum, iBonusHitDam);
+#endif
 #ifdef ENABLE_PVP_BALANCE
 			if (IS_SET(m_pkSk->dwFlag, SKILL_FLAG_KNOCKBACK) && !pkChrVictim->IsStone()
+#ifdef ENABLE_BONUS_FIX
+				&& !BonusCustom::IsKnockbackBlocked(m_pkChr)
+#endif
 				)
 			{
 
@@ -2092,6 +2111,10 @@ int CHARACTER::ComputeSkillAtPosition(DWORD dwVnum, const PIXEL_POSITION& posTar
 	{
 		bool bAdded = false;
 		int iDur = (int)pkSk->kDurationPoly.Eval();
+#ifdef ENABLE_BONUS_FIX
+		if (iDur > 0)
+			iDur += BonusCustom::GetSkillDurationBonus(this, pkSk->dwVnum);
+#endif
 
 		if (iDur > 0)
 		{
@@ -2211,8 +2234,47 @@ int CHARACTER::ComputeGyeongGongSkill(DWORD dwVnum, LPCHARACTER pkVictim, BYTE b
 }
 #endif
 
+#ifdef ENABLE_AFFECT_CAST_STAT
+extern int g_iAffectCastStat;
+
+// reference: STR for the warrior buffs, INT for the sura / shaman buffs
+static int GetSkillCastStat(LPCHARACTER ch, DWORD dwVnum)
+{
+	switch (dwVnum)
+	{
+		case 3:		// SKILL_JEONGWI
+		case 4:		// SKILL_GEOMKYUNG
+		case 19:	// SKILL_CHUNKEON
+			return ch->GetPoint(POINT_ST);
+
+		case 63:	// SKILL_GWIGEOM
+		case 64:	// SKILL_GONGPO
+		case 65:	// SKILL_JUMAGAP
+		case 79:	// SKILL_HEUKSIN
+		case 94:	// SKILL_HOSIN
+		case 95:	// SKILL_REFLECT
+		case 96:	// SKILL_GICHEON
+		case 110:	// SKILL_KWAESOK
+		case 111:	// SKILL_JEUNGRYEOK
+			return ch->GetPoint(POINT_IQ);
+	}
+	return 0;
+}
+
+struct FAffectCastStatScope
+{
+	int iPrev;
+	FAffectCastStatScope(int iValue) : iPrev(g_iAffectCastStat) { g_iAffectCastStat = iValue; }
+	~FAffectCastStatScope() { g_iAffectCastStat = iPrev; }
+};
+#endif
+
 int CHARACTER::ComputeSkill(DWORD dwVnum, LPCHARACTER pkVictim, BYTE bSkillLevel)
 {
+#ifdef ENABLE_AFFECT_CAST_STAT
+	FAffectCastStatScope castStatScope(GetSkillCastStat(this, dwVnum));
+#endif
+
 	// Disallow skills when holding fishing rod on standing mounts
 #ifdef ENABLE_STANDING_MOUNT
 	if (IS_STANDING_MOUNT_VNUM(GetMountVnum()))
@@ -3070,6 +3132,12 @@ bool CHARACTER::UseSkill(DWORD dwVnum, LPCHARACTER pkVictim, bool bUseGrandMaste
 	// Cool time check
 	pkSk->kCooldownPoly.SetVar("k", k);
 	int iCooltime = (int) pkSk->kCooldownPoly.Eval();
+#ifdef ENABLE_BONUS_FIX
+	// official: "has a X% chance of resetting the cooldown of your skills"
+	if (GetPoint(POINT_USE_SKILL_COOLTIME_DECREASE_ALL) > 0 && number(1, 100) <= GetPoint(POINT_USE_SKILL_COOLTIME_DECREASE_ALL))
+		iCooltime = 0;
+	BonusCustom::OnSkillCooltime(this, dwVnum, iCooltime);
+#endif
 	int lMaxHit = pkSk->lMaxHit ? pkSk->lMaxHit : -1;
 
 	pkSk->SetSPCostVar("k", k);
@@ -3344,6 +3412,9 @@ bool CHARACTER::UseSkill(DWORD dwVnum, LPCHARACTER pkVictim, bool bUseGrandMaste
 	}
 #endif
 
+#ifdef ENABLE_BONUS_FIX
+	BonusCustom::OnSkillUsed(this, dwVnum);
+#endif
 	return true;
 }
 

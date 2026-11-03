@@ -1,6 +1,9 @@
 #include "stdafx.h"
 #include "utils.h"
 #include "config.h"
+#ifdef ENABLE_BONUS_FIX
+#include "bonus_custom.h"
+#endif
 #include "char.h"
 #include "char_manager.h"
 #include "desc_client.h"
@@ -32,6 +35,9 @@ ITEM_MANAGER::ITEM_MANAGER()
 {
 	m_ItemIDRange.dwMin = m_ItemIDRange.dwMax = m_ItemIDRange.dwUsableItemIDMin = 0;
 	m_ItemIDSpareRange.dwMin = m_ItemIDSpareRange.dwMax = m_ItemIDSpareRange.dwUsableItemIDMin = 0;
+#ifdef ENABLE_APPLY_RANDOM
+	m_pApplyRandomTable = NULL;
+#endif
 }
 
 ITEM_MANAGER::~ITEM_MANAGER()
@@ -215,6 +221,9 @@ LPITEM ITEM_MANAGER::CreateItem(DWORD vnum, DWORD count, DWORD id, bool bTryMagi
 	else
 	{
 		item->SetID(GetNewID());
+#ifdef ENABLE_APPLY_RANDOM
+		item->RollApplyRandom();
+#endif
 
 		if (item->GetType() == ITEM_UNIQUE)
 		{
@@ -542,6 +551,10 @@ void ITEM_MANAGER::SaveSingleItem(LPITEM item)
 	t.owner = (t.window == SAFEBOX || t.window == MALL) ? item->GetOwner()->GetDesc()->GetAccountTable().id : item->GetOwner()->GetPlayerID();
 	thecore_memcpy(t.alSockets, item->GetSockets(), sizeof(t.alSockets));
 	thecore_memcpy(t.aAttr, item->GetAttributes(), sizeof(t.aAttr));
+#ifdef ENABLE_APPLY_RANDOM
+	thecore_memcpy(t.aApplyRandom, item->GetApplyRandoms(), sizeof(t.aApplyRandom));
+	thecore_memcpy(t.abApplyRandomRow, item->GetApplyRandomRows(), sizeof(t.abApplyRandomRow));
+#endif
 
 	db_clientdesc->DBPacketHeader(HEADER_GD_ITEM_SAVE, 0, sizeof(TPlayerItem));
 	db_clientdesc->Packet(&t, sizeof(TPlayerItem));
@@ -985,11 +998,23 @@ bool ITEM_MANAGER::GetDropPct(LPCHARACTER pkChr, LPCHARACTER pkKiller, OUT int& 
 		iDeltaPercent += iDeltaPercent;
 	// END_OF_ADD_PREMIUM
 
+#ifdef ENABLE_BONUS_FIX
+	// item drop bonuses (APPLY_ITEM_DROP_BONUS, APPLY_MALL_ITEMBONUS)
+	iDeltaPercent += iDeltaPercent * (pkKiller->GetPoint(POINT_ITEM_DROP_BONUS) + pkKiller->GetPoint(POINT_MALL_ITEMBONUS)
+		+ BonusCustom::GetKillBossDropPct(pkKiller, pkChr)) / 100;
+
+	iRandRange = 4000000;
+	iRandRange = iRandRange * 100 /
+		(100 +
+		 CPrivManager::instance().GetPriv(pkKiller, PRIV_ITEM_DROP) +
+		 (pkKiller->IsEquipUniqueItem(UNIQUE_ITEM_DOUBLE_ITEM) ? 100 : 0));
+#else
 	iRandRange = 4000000;
 	iRandRange = iRandRange * 100 /
 		(100 +
 		 CPrivManager::instance().GetPriv(pkKiller, PRIV_ITEM_DROP) +
 		 pkKiller->IsEquipUniqueItem(UNIQUE_ITEM_DOUBLE_ITEM)?100:0);
+#endif
 
 	if (distribution_test_server) iRandRange /= 3;
 

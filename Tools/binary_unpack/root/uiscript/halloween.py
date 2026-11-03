@@ -103,7 +103,7 @@ window = {
 					"x" : 333,
 					"y" : 330,
 					
-					"tooltip_text" : "Ödülü Al ",
+					"tooltip_text" : uiScriptLocale.HALLOWEEN_GET_REWARD,
 
 					"default_image" : "d:/ymir work/halloween/takereward_button.tga",
 					"over_image" : "d:/ymir work/halloween/takereward_apasat.tga",

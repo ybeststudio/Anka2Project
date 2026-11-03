@@ -1,3 +1,4 @@
+import uiScriptLocale
 # import uiScriptLocale
 PATH = "d:/ymir work/ui/weekly_rank/"
 PATH2 = "d:/ymir work/ui/new_weekly_rank/"
@@ -80,7 +81,7 @@ window = {
 							"type":"text",
 							"x":0,"y":-5,
 							"all_align":"center",
-							"text": "Görev Paneli",
+							"text": uiScriptLocale.COLLECT_QUEST_PANEL,
 							"outline":"1",
 						},
 					),
@@ -104,7 +105,7 @@ window = {
 									"type":"text",
 									"x":0,"y":0,
 									"all_align" : "center",
-									"text": "Mevcut Görevler",
+									"text": uiScriptLocale.COLLECT_CURRENT_QUESTS,
 									"outline":"1",
 								},  
 							),
@@ -211,7 +212,7 @@ window = {
 									"type":"text",
 									"x":0,"y":0,
 									"all_align" : "center",
-									"text": "Görev Seçimi",
+									"text": uiScriptLocale.COLLECT_QUEST_SELECT,
 									"outline":"1",
 								},  
 							),
@@ -222,7 +223,7 @@ window = {
 							"horizontal_align":"center",
 							"image":"d:/ymir work/ui/location_window/slotbar-84x23.png",
 
-							"tooltip_text_new": "Mevcut Görev",
+							"tooltip_text_new": uiScriptLocale.COLLECT_CURRENT_QUEST,
 							"tooltip_text_color" : 0xfff1e6c0,
 							"tooltip_x" : 0, "tooltip_y" : -35,
 							"children": 
@@ -339,7 +340,7 @@ window = {
 							"over_image" : REAL_PATH+"collect1.png",
 							"down_image" : REAL_PATH+"collect2.png",
 
-							"tooltip_text_new": "Eþyayý Teslim Et",
+							"tooltip_text_new": uiScriptLocale.COLLECT_DELIVER_ITEM,
 							"tooltip_text_color" : 0xfff1e6c0,
 							"tooltip_x" : 0,
 							"tooltip_y" : -35,
@@ -353,7 +354,7 @@ window = {
 							"over_image" : REAL_PATH+"reduce_time4.png",
 							"down_image" : REAL_PATH+"reduce_time5.png",
 
-							"tooltip_text_new": "Süreyi Azalt (%25)",
+							"tooltip_text_new": uiScriptLocale.COLLECT_REDUCE_TIME,
 							"tooltip_text_color" : 0xfff1e6c0,
 							"tooltip_x" : 0,
 							"tooltip_y" : -35,
@@ -367,7 +368,7 @@ window = {
 							"over_image" : REAL_PATH+"increase_chance1.png",
 							"down_image" : REAL_PATH+"increase_chance2.png",
 
-							"tooltip_text_new": "Þansý Artýr (%25)",
+							"tooltip_text_new": uiScriptLocale.COLLECT_INCREASE_CHANCE,
 							"tooltip_text_color" : 0xfff1e6c0,
 							"tooltip_x" : 0,
 							"tooltip_y" : -35,
@@ -500,7 +501,7 @@ window = {
 									"type":"text",
 									"x":0,"y":0,
 									"all_align" : "center",
-									"text": "Tamamlama Bonuslarý",
+									"text": uiScriptLocale.COLLECT_COMPLETION_BONUSES,
 									"outline":"1",
 								},  
 							),

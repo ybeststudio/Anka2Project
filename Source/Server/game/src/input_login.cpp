@@ -551,6 +551,17 @@ void CInputLogin::CharacterDelete(LPDESC d, const char * data)
 	db_clientdesc->DBPacket(HEADER_GD_PLAYER_DELETE, d->GetHandle(), &player_delete_packet, sizeof(TPlayerDeletePacket));
 }
 
+#ifdef ENABLE_WHISPER_OFFLINE_MESSAGE
+extern void SendOfflineWhisperMessages(LPCHARACTER ch);
+#endif
+#ifdef ENABLE_GUILD_QUEST
+#include "guild_quest.h"
+#endif
+#ifdef ENABLE_GUILD_APPLICATION
+#include "guild_application.h"
+#include "messenger_details.h"
+#endif
+
 void CInputLogin::Entergame(LPDESC d, const char * data)
 {
 #ifdef ENABLE_ANALYZE_CLOSE_FIX
@@ -924,6 +935,19 @@ void CInputLogin::Entergame(LPDESC d, const char * data)
 
 #ifdef ENABLE_RENEWAL_SWITCHBOT
 	CSwitchbotManager::Instance().EnterGame(ch);
+#endif
+
+#ifdef ENABLE_WHISPER_OFFLINE_MESSAGE
+	SendOfflineWhisperMessages(ch);
+#endif
+#ifdef ENABLE_GUILD_APPLICATION
+	GuildApplication_OnLogin(ch);
+#endif
+#ifdef ENABLE_GUILD_QUEST
+	GuildQuest_OnLogin(ch);
+#endif
+#ifdef ENABLE_MESSENGER_DETAILS
+	MessengerDetails_OnLogin(ch);
 #endif
 
 #ifdef ENABLE_RENEWAL_OFFLINESHOP

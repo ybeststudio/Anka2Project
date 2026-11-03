@@ -1,0 +1,1120 @@
+{{Weapon/LayoutV2
+
+<!-- Type of weapon ; accepted values: sword, sura-sword, 2handed, dagger, bow, bell, fan, claw -->
+|Type = sword
+
+<!-- Level of weapon - accepted values: Level or level interval in ## - ## format -->
+|Level = 
+|ChampLevel = 6
+
+<!-- Classes that can use this weapon accepted values are warrior ; ninja ; shaman ; sura ; lycan ; 3 (for warrior ninja and sura) ; leave blank for all classes-->
+|wearable = 3
+
+<!-- number of sockets for spirit stones - numeric value only -->
+|Sockets = 3
+
+<!-- Powershard used to add 6/7 bonus -->
+|Powershard = {{Ti|Moonshimmer Fragment}}
+
+<!-- Origin of weapon (remove whatever is not used) -->
+|Origin =
+<ul>
+*'''[[NPC]]:''' {{Tm|Master Chi}} (Crafted):
+:*{{Ti|Moonlight Lunatic Shard}} 8x
+:*{{Ti|Prayer of Exorcism}}
+:*{{Ti|Moonlight Gemstone}}
+:*{{Ti|Cobalt}} 10x
+:*{{Ti|Dark Weapon Fragment}} 5x
+:*{{Ti|Gaya|300 Gaya}}
+:*{{Ti|Yang|20.000.000 Yang}}
+</ul>
+
+
+<!-- Other information -->
+|Other = The crafting method has a 50% success. See also: [[Item Refinement]]
+<br>
+*Up to 3 default bonuses are added, marked with a <span style="color:#3400FF">blue color</span>
+*All default bonuses and values are randomized chosen by system
+*Below you'll find a table with all possible bonuses as well as the min-max values
+*When changing the 1-5 bonuses, it is possible to have the same bonus as default
+
+<!-- Override height of all upgrade boxes (number refers to pixels) -->
+|BoxHeight = 135
+
+<!-- Maximum upgrade level (only required beyond +9) -->
+|MaxUpgrade = 15
+
+<!-- Upgrade yang costs - numeric value only (no yang tag) ; blank if no costs -->
+|Costs0 = 
+|Costs1 = 1.125.000
+|Costs2 = 1.350.000
+|Costs3 = 1.620.000
+|Costs4 = 1.950.000
+|Costs5 = 2.325.000
+|Costs6 = 2.775.000
+|Costs7 = 3.375.000
+|Costs8 = 3.975.000
+|Costs9 = 4.800.000
+|Costs10 = 5.775.000
+|Costs11 = 6.900.000
+|Costs12 = 8.325.000
+|Costs13 = 9.975.000
+|Costs14 = 12.000.000
+|Costs15 = 14.400.000
+
+<!-- 1st Upgrade Items -->
+|1stUpgitem0 = 
+|1stUpgitem1 = 10x [[File:Hungering Soul.png|link=Hungering Soul]]
+|1stUpgitem2 = 10x [[File:Hungering Soul.png|link=Hungering Soul]]
+|1stUpgitem3 = 10x [[File:Hungering Soul.png|link=Hungering Soul]]
+|1stUpgitem4 = 10x [[File:Hungering Soul.png|link=Hungering Soul]]
+|1stUpgitem5 = 10x [[File:Hungering Soul.png|link=Hungering Soul]]
+|1stUpgitem6 = 10x [[File:Hungering Soul.png|link=Hungering Soul]]
+|1stUpgitem7 = 30x [[File:Warrior's Helm Fragment.png|link=Warrior's Helm Fragment]]
+|1stUpgitem8 = 40x [[File:Warrior's Helm Fragment.png|link=Warrior's Helm Fragment]]
+|1stUpgitem9 = 50x [[File:Warrior's Helm Fragment.png|link=Warrior's Helm Fragment]]
+|1stUpgitem10 = 50x [[File:Lunatic Shard.png|link=Lunatic Shard]]
+|1stUpgitem11 = 60x [[File:Lunatic Shard.png|link=Lunatic Shard]]
+|1stUpgitem12 = 70x [[File:Lunatic Shard.png|link=Lunatic Shard]]
+|1stUpgitem13 = 80x [[File:Lunatic Shard.png|link=Lunatic Shard]]
+|1stUpgitem14 = 90x [[File:Lunatic Shard.png|link=Lunatic Shard]]
+|1stUpgitem15 = 100x [[File:Lunatic Shard.png|link=Lunatic Shard]]
+
+<!-- 2nd Upgrade Items -->
+|2ndUpgitem0 = 
+|2ndUpgitem1 = 5x [[File:Moonshine Chest.png|link=Moonshine Chest]]
+|2ndUpgitem2 = 5x [[File:Moonshine Chest.png|link=Moonshine Chest]]
+|2ndUpgitem3 = 5x [[File:Thorn Bowl.png|link=Thorn Bowl]]
+|2ndUpgitem4 = 10x [[File:Thorn Bowl.png|link=Thorn Bowl]]
+|2ndUpgitem5 = 15x [[File:Thorn Bowl.png|link=Thorn Bowl]]
+|2ndUpgitem6 = 5x [[File:Cobalt.png|link=Cobalt]]
+|2ndUpgitem7 = 5x [[File:Blackhorn.png|link=Blackhorn]]
+|2ndUpgitem8 = 7x [[File:Blackhorn.png|link=Blackhorn]]
+|2ndUpgitem9 = 10x [[File:Blackhorn.png|link=Blackhorn]]
+|2ndUpgitem10 = 5x [[File:Agate.png|link=Agate]]
+|2ndUpgitem11 = 5x [[File:Titanium Dioxide.png|link=Titanium Dioxide]]
+|2ndUpgitem12 = 5x [[File:Moonstone.png|link=Moonstone]]
+|2ndUpgitem13 = 10x [[File:Agate.png|link=Agate]]
+|2ndUpgitem14 = 5x [[File:Titanium Dioxide.png|link=Titanium Dioxide]]
+|2ndUpgitem15 = 5x [[File:Moonstone.png|link=Moonstone]]
+
+<!-- 3rd Upgrade Items -->
+|3rdUpgitem0 = 
+|3rdUpgitem1 = 
+|3rdUpgitem2 = 5x [[File:Shim. Blood-Red Pearl.png|link=Shim. Blood-Red Pearl]]
+|3rdUpgitem3 = 5x [[File:Shimmering Blue Pearl.png|link=Shimmering Blue Pearl]]
+|3rdUpgitem4 = 3x [[File:Shimmering White Pearl.png|link=Shimmering White Pearl]]
+|3rdUpgitem5 = 2x [[File:Cursed Hair.png|link=Cursed Hair]]
+|3rdUpgitem6 = 2x [[File:Cursed Hair.png|link=Cursed Hair]]
+|3rdUpgitem7 = 2x [[File:Cursed Chain.png|link=Cursed Chain]]
+|3rdUpgitem8 = 3x [[File:Cursed Chain.png|link=Cursed Chain]]
+|3rdUpgitem9 = 3x [[File:Cursed Chain.png|link=Cursed Chain]]
+|3rdUpgitem10 = 1x [[File:Aamon's Lavish Chest.png|link=Aamon's Lavish Chest]]
+|3rdUpgitem11 = 1x [[File:Aamon's Lavish Chest.png|link=Aamon's Lavish Chest]]
+|3rdUpgitem12 = 1x [[File:Aamon's Lavish Chest.png|link=Aamon's Lavish Chest]]
+|3rdUpgitem13 = 1x [[File:Aamon's Lavish Chest.png|link=Aamon's Lavish Chest]]
+|3rdUpgitem14 = 2x [[File:Aamon's Lavish Chest.png|link=Aamon's Lavish Chest]]
+|3rdUpgitem15 = 3x [[File:Aamon's Lavish Chest.png|link=Aamon's Lavish Chest]]
+
+<!-- Attack Value -->
+|AVMinLow0 = 218
+|AVMinLow1 = 237
+|AVMinLow2 = 250
+|AVMinLow3 = 262
+|AVMinLow4 = 276
+|AVMinLow5 = 293
+|AVMinLow6 = 333
+|AVMinLow7 = 402
+|AVMinLow8 = 442
+|AVMinLow9 = 560
+|AVMinLow10 = 585
+|AVMinLow11 = 610
+|AVMinLow12 = 637
+|AVMinLow13 = 662
+|AVMinLow14 = 687
+|AVMinLow15 = 735
+
+|AVMinHigh0 = 241
+|AVMinHigh1 = 260
+|AVMinHigh2 = 273
+|AVMinHigh3 = 285
+|AVMinHigh4 = 299
+|AVMinHigh5 = 316
+|AVMinHigh6 = 356
+|AVMinHigh7 = 425
+|AVMinHigh8 = 465
+|AVMinHigh9 = 583
+|AVMinHigh10 = 608
+|AVMinHigh11 = 633
+|AVMinHigh12 = 660
+|AVMinHigh13 = 685
+|AVMinHigh14 = 710
+|AVMinHigh15 = 758
+
+|AVMaxLow0 = 311
+|AVMaxLow1 = 350
+|AVMaxLow2 = 363
+|AVMaxLow3 = 375
+|AVMaxLow4 = 389
+|AVMaxLow5 = 406
+|AVMaxLow6 = 446
+|AVMaxLow7 = 515
+|AVMaxLow8 = 555
+|AVMaxLow9 = 673
+|AVMaxLow10 = 698
+|AVMaxLow11 = 723
+|AVMaxLow12 = 750
+|AVMaxLow13 = 775
+|AVMaxLow14 = 800
+|AVMaxLow15 = 848
+
+|AVMaxHigh0 = 370
+|AVMaxHigh1 = 389
+|AVMaxHigh2 = 402
+|AVMaxHigh3 = 414
+|AVMaxHigh4 = 428
+|AVMaxHigh5 = 445
+|AVMaxHigh6 = 485
+|AVMaxHigh7 = 554
+|AVMaxHigh8 = 594
+|AVMaxHigh9 = 712
+|AVMaxHigh10 = 737
+|AVMaxHigh11 = 762
+|AVMaxHigh12 = 789
+|AVMaxHigh13 = 814
+|AVMaxHigh14 = 839
+|AVMaxHigh15 = 887
+
+}}
+
+{| width="99%" {{Prettytable}} 
+|- {{Hl3}}
+! colspan=18| Possible bonus for 1st slot
+|- {{Hl3}}
+! width="250px"| Bonus
+! +0
+! +1
+! +2
+! +3
+! +4
+! +5
+! +6
+! +7
+! +8
+! +9
+! +10
+! +11
+! +12
+! +13
+! +14
+! +15
+! Version
+|-
+| rowspan=4| Average Damage
+|-
+| 4%
+| 5%
+| 6%
+| 7%
+| 8%
+| 9%
+| 10%
+| 11%
+| 12%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''1'''
+|-
+| 5%
+| 6%
+| 7%
+| 8%
+| 9%
+| 10%
+| 11%
+| 13%
+| 16%
+| 19%
+| 
+| 
+| 
+| 
+| 
+| 40%
+| align="center"| '''2'''
+|-
+| 6%
+| 7%
+| 8%
+| 9%
+| 10%
+| 11%
+| 12%
+| 15%
+| 18%
+| 23%
+| 26%
+| 29%
+| 32%
+| 35%
+| 40%
+| 48%
+| align="center"| '''3'''
+|-
+| rowspan=6| Strong against Animals<br>Strong against Devils<br>Strong against Dragons<br>Strong against Half Humans<br>Strong against Mystics<br>Strong against Orcs<br>Strong against Undead
+|-
+| 3%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''1'''
+|-
+| 3%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''2'''
+|-
+| 4%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''3'''
+|-
+| 4%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''4'''
+|-
+| 5%
+| 
+| 
+| 
+| 
+| 
+| 
+| 12%
+| 
+| 
+| 21%
+| 23%
+| 26%
+| 29%
+| 
+| 38%
+| align="center"| '''5'''
+|-
+|}
+<br>
+{| width="99%" {{Prettytable}} 
+|- {{Hl3}}
+! colspan=18| Possible bonus for 2nd slot
+|- {{Hl3}}
+! width="250px"| Bonus
+! +0
+! +1
+! +2
+! +3
+! +4
+! +5
+! +6
+! +7
+! +8
+! +9
+! +10
+! +11
+! +12
+! +13
+! +14
+! +15
+! Version
+|-
+| rowspan=6| Attack Speed
+|-
+| 15%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''1'''
+|-
+| 16%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''2'''
+|-
+| 17%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''3'''
+|-
+| 18%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''4'''
+|-
+| 19%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''5'''
+|-
+| rowspan=6| Strong against Insects<br>Strong against Moonshadow Monsters<br>Strong against Zodiac Monsters
+|-
+| 3%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''1'''
+|-
+| 3%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''2'''
+|-
+| 4%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''3'''
+|-
+| 4%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''4'''
+|-
+| 5%
+| 
+| 
+| 
+| 
+| 
+| 
+| 12%
+| 
+| 
+| 21%
+| 23%
+| 
+| 29%
+| 
+| 38%
+| align="center"| '''5'''
+|-
+| rowspan=6| Strength against monsters
+|-
+| 3%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 19%
+| align="center"| '''1'''
+|-
+| 3%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''2'''
+|-
+| 4%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''3'''
+|-
+| 4%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 29%
+| align="center"| '''4'''
+|-
+| 5%
+| 6%
+| 7%
+| 8%
+| 9%
+| 10%
+| 11%
+| 12%
+| 13%
+| 19%
+| 20%
+| 
+| 
+| 
+| 
+| 33%
+| align="center"| '''5'''
+|-
+| rowspan=6| Sung Ma's will INT / RES / STR / VIT
+|-
+| 4
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''1'''
+|-
+| 5
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''2'''
+|-
+| 6
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''3'''
+|-
+| 7
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''4'''
+|-
+| 8
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''5'''
+|-
+|}
+<br>
+<br>
+{| width="99%" {{Prettytable}} 
+|- {{Hl3}}
+! colspan=18| Possible bonus for 3rd slot
+|- {{Hl3}}
+! width="250px"| Bonus
+! +0
+! +1
+! +2
+! +3
+! +4
+! +5
+! +6
+! +7
+! +8
+! +9
+! +10
+! +11
+! +12
+! +13
+! +14
+! +15
+! Version
+|-
+| rowspan=3| Strength against Metin Stones
+|-
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''1'''
+|-
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''2'''
+|-
+| rowspan=4| Skill Damage
+|-
+| 4%
+| 5%
+| 6%
+| 7%
+| 8%
+| 9%
+| 10%
+| 11%
+| 12%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''1'''
+|-
+| 5%
+| 6%
+| 7%
+| 8%
+| 9%
+| 10%
+| 11%
+| 13%
+| 16%
+| 19%
+| 
+| 
+| 
+| 
+| 
+| 40%
+| align="center"| '''2'''
+|-
+| 6%
+| 7%
+| 8%
+| 9%
+| 10%
+| 11%
+| 12%
+| 15%
+| 18%
+| 23%
+| 26%
+| 29%
+| 32%
+| 35%
+| 40%
+| 48%
+| align="center"| '''3'''
+|-
+| rowspan=6| Strong against Desert Monsters<br>Casting Speed<br>Chance for EXP Bonus
+|-
+| 3%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''1'''
+|-
+| 3%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''2'''
+|-
+| 4%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''3'''
+|-
+| 4%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''4'''
+|-
+| 5%
+| 
+| 
+| 
+| 
+| 
+| 
+| 12%
+| 
+| 
+| 21%
+| 23%
+| 
+| 29%
+| 
+| 38%
+| align="center"| '''5'''
+|-
+| rowspan=5| Chance to rob SP<br>Faint chance<br>Slowing chance
+|-
+| 3%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''1'''
+|-
+| 3%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''2'''
+|-
+| 4%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''3'''
+|-
+| 4%
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''4'''
+|-
+| rowspan=5| Precision
+|-
+| +3
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''1'''
+|-
+| +3
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''2'''
+|-
+| +4
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''3'''
+|-
+| +4
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| 
+| align="center"| '''4'''
+|-
+|}
+
+[[de:Mondschein-Schwert]]
+[[fr:Épée du clair de lune]]
+[[pt:Espada do Luar]]
+[[ro:Sabie Lunară]]
+[[tr:Ay Işığı Kılıcı]]

@@ -75,6 +75,37 @@ void SendAffectRemovePacket(LPDESC d, DWORD pid, DWORD type, BYTE point)
 	db_clientdesc->DBPacket(HEADER_GD_REMOVE_AFFECT, 0, &ptod, sizeof(ptod));
 }
 
+#ifdef ENABLE_AFFECT_CAST_STAT
+int g_iAffectCastStat = 0;	// set by CHARACTER::ComputeSkill while the caster applies its buffs
+#endif
+
+#if defined(ENABLE_AFFECT_COMBAT_TIMER) && defined(ENABLE_RENEWAL_AFFECT) && defined(ENABLE_AFFECT_CAST_STAT)
+// lCastStat of these affects is reused as the client timer state: AFFECT_COMBAT_TIMER_PAUSED = clock stopped
+static const int AFFECT_COMBAT_TIMER_PAUSED = -1;
+static const DWORD AFFECT_COMBAT_TIMER_WINDOW = 10000;	// ms after the last attack that still count as combat
+
+static bool IsCombatTimerAffect(const CAffect* pkAff)
+{
+	switch (pkAff->dwType)
+	{
+		case AFFECT_BLEND:
+		case AFFECT_BLEND_PLUS:
+		case AFFECT_MALL_PLUS:
+			return true;
+
+		case AFFECT_MALL:	// dragon god potions 71027-71030 only, not the premium exp / item / gold bonuses
+			return pkAff->bApplyOn == POINT_MAX_HP_PCT || pkAff->bApplyOn == POINT_ATT_BONUS
+				|| pkAff->bApplyOn == POINT_MALL_DEFBONUS || pkAff->bApplyOn == POINT_MAX_SP_PCT;
+	}
+	return false;
+}
+
+static bool IsInAffectCombat(const CHARACTER* ch)
+{
+	return ch->CanFight() || get_dword_time() - ch->GetLastAttackTime() < AFFECT_COMBAT_TIMER_WINDOW;
+}
+#endif
+
 void SendAffectAddPacket(LPDESC d, CAffect * pkAff)
 {
 #ifdef ENABLE_ANALYZE_CLOSE_FIX
@@ -93,6 +124,9 @@ void SendAffectAddPacket(LPDESC d, CAffect * pkAff)
 	ptoc.elem.lDuration = pkAff->lDuration;
 #endif
 	ptoc.elem.lSPCost = pkAff->lSPCost;
+#ifdef ENABLE_AFFECT_CAST_STAT
+	ptoc.lCastStat = pkAff->lCastStat;
+#endif
 	d->Packet(&ptoc, sizeof(TPacketGCAffectAdd));
 }
 
@@ -400,11 +434,37 @@ int CHARACTER::ProcessAffect()
 
 	it = m_list_pkAffect.begin();
 
+#if defined(ENABLE_AFFECT_COMBAT_TIMER) && defined(ENABLE_RENEWAL_AFFECT) && defined(ENABLE_AFFECT_CAST_STAT)
+	const bool bAffectCombat = IsPC() && IsInAffectCombat(this);
+#endif
+
 	while (it != m_list_pkAffect.end())
 	{
 		pkAff = *it;
 
 		bool bEnd = false;
+
+#if defined(ENABLE_AFFECT_COMBAT_TIMER) && defined(ENABLE_RENEWAL_AFFECT) && defined(ENABLE_AFFECT_CAST_STAT)
+		if (IsPC() && IsCombatTimerAffect(pkAff))
+		{
+			const int iState = bAffectCombat ? 0 : AFFECT_COMBAT_TIMER_PAUSED;
+			if (pkAff->lCastStat != iState)
+			{
+				pkAff->lCastStat = iState;
+				SendAffectAddPacket(GetDesc(), pkAff);	// client re-syncs the remaining time and freezes / resumes it
+			}
+
+			if (!bAffectCombat)
+			{
+#ifdef ENABLE_AUTOMATIC_PICK_UP_SYSTEM
+				if (IsRealTimeAffect(pkAff->dwType))
+					++pkAff->lDuration;	// absolute end time: push it forward while the clock is stopped
+#endif
+				++it;
+				continue;
+			}
+		}
+#endif
 
 		if (pkAff->dwType >= GUILD_SKILL_START && pkAff->dwType <= GUILD_SKILL_END)
 		{
@@ -650,6 +710,9 @@ void CHARACTER::LoadAffect(DWORD dwCount, TPacketAffectElement * pElements)
 		pkAff->dwFlag		= pElements->dwFlag;
 		pkAff->lDuration	= pElements->lDuration;
 		pkAff->lSPCost		= pElements->lSPCost;
+#ifdef ENABLE_AFFECT_CAST_STAT
+		pkAff->lCastStat	= 0;	// not stored in the db
+#endif
 
 		SendAffectAddPacket(GetDesc(), pkAff);
 
@@ -840,6 +903,9 @@ bool CHARACTER::AddAffect(DWORD dwType, BYTE bApplyOn, long lApplyValue, DWORD d
 	pkAff->lSPCost		= lSPCost;
 #ifdef ENABLE_NINETH_SKILL
 	pkAff->bShieldDuration = bShieldDuration;
+#endif
+#ifdef ENABLE_AFFECT_CAST_STAT
+	pkAff->lCastStat	= dwType < 500 ? g_iAffectCastStat : 0;	// skill vnums only
 #endif
 
 	WORD wMovSpd = GetPoint(POINT_MOV_SPEED);

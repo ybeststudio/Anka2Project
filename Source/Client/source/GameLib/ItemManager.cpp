@@ -3,6 +3,7 @@
 #include "../eterLib/ResourceManager.h"
 
 #include "ItemManager.h"
+#include <algorithm>
 
 static DWORD s_adwItemProtoKey[4] =
 {
@@ -412,6 +413,40 @@ void CItemManager::Destroy()
 }
 
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
+#ifdef ENABLE_SHINING_SYSTEM
+bool CItemManager::LoadShiningEffect(const char* c_szFileName)
+{
+	const VOID* pvData;
+	CMappedFile kFile;
+	if (!CEterPackManager::Instance().Get(kFile, c_szFileName, &pvData))
+		return false;
+
+	CMemoryTextFileLoader textFileLoader;
+	textFileLoader.Bind(kFile.Size(), pvData);
+
+	static const char* c_aszKind[SHINING_KIND_MAX] = { "sword", "twohand", "dagger", "bow", "bell", "fan", "armor", "armor_m", "armor_f" };
+	m_shiningEffectMap.clear();
+	CTokenVector TokenVector;
+	for (DWORD i = 0; i < textFileLoader.GetLineCount(); ++i)
+	{
+		if (!textFileLoader.SplitLine(i, &TokenVector, "\t") || TokenVector.size() < 3 || TokenVector[0].empty() || TokenVector[0][0] == '#')
+			continue;
+
+		std::string strPath = TokenVector[2];
+		strPath.erase(std::remove(strPath.begin(), strPath.end(), '"'), strPath.end());
+		if (strPath.empty())
+			continue;
+
+		for (BYTE bKind = 0; bKind < SHINING_KIND_MAX; ++bKind)
+		{
+			if (TokenVector[1] == c_aszKind[bKind])
+				m_shiningEffectMap[atoi(TokenVector[0].c_str()) * SHINING_KIND_MAX + bKind] = strPath;
+		}
+	}
+	return true;
+}
+#endif
+
 bool CItemManager::LoadItemScale(const char* szItemScale)
 {
 	CMappedFile File;

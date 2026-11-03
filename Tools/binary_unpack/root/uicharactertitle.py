@@ -7,6 +7,7 @@ player = __import__(pyapi.GetModuleName("player"))
 import ui
 import localeInfo
 import uiScriptLocale
+import userData
 
 if app.ENABLE_RENDER_TARGET:
 	import renderTarget
@@ -21,7 +22,7 @@ class CharacterTitleWindow(ui.ScriptWindow):
 	TITLE_SUB_PATH = "d:/ymir work/ui/game/title/titles/title_%04d.sub"
 	TITLE_EFFECT_SPRITE_PATH = "d:/ymir work/ui/game/title/titles/sprites_%04d/%02d.sub"
 	TITLE_NAMES_FILE = "title_names.txt"
-	TITLE_STATE_FILE = "title_state.txt"
+	TITLE_STATE_FILE = userData.GetPath("title_state.txt")
 	STATE_ICON_PATH = {
 		"locked": "d:/ymir work/ui/game/title/window/state_locked.sub",
 		"hourglass": "d:/ymir work/ui/game/title/window/state_hourglass.sub",

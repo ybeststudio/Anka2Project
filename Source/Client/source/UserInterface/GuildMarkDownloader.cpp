@@ -368,7 +368,24 @@ bool CGuildMarkDownloader::__LoginState_RecvMarkBlock()
 			if (pResource->IsType(CGraphicImage::Type()))
 			{
 				CGraphicImage* pkGrpImg=static_cast<CGraphicImage*>(pResource);
+#ifdef ENABLE_GUILD_MARK_PNG
+				// read the saved file directly so the texture cannot come from anything but the new data
+				FILE* fp = fopen(imagePath.c_str(), "rb");
+				if (fp)
+				{
+					fseek(fp, 0, SEEK_END);
+					std::vector<BYTE> vecFile(ftell(fp));
+					fseek(fp, 0, SEEK_SET);
+					const size_t uRead = fread(vecFile.data(), 1, vecFile.size(), fp);
+					fclose(fp);
+					pkGrpImg->Clear();
+					pkGrpImg->Load(int(uRead), vecFile.data());
+				}
+				else
+					pkGrpImg->Reload();
+#else
 				pkGrpImg->Reload();
+#endif
 			}
 		}
 	}

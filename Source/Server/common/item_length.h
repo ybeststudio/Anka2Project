@@ -117,6 +117,9 @@ enum EItemTypes
 #ifdef ENABLE_MOVE_COSTUME_ACCE_ATTR
 	ITEM_MEDIUM,
 #endif
+#ifdef ENABLE_SHINING_SYSTEM
+	ITEM_SHINING,
+#endif
 
 	ITEM_TYPE_MAX
 };
@@ -163,6 +166,15 @@ enum EArmorSubTypes
 #endif
 	ARMOR_NUM_TYPES
 };
+
+#ifdef ENABLE_SHINING_SYSTEM
+enum EShiningSubTypes
+{
+	SHINING_WEAPON,
+	SHINING_ARMOR,
+	SHINING_SUBTYPE_MAX,
+};
+#endif
 
 enum ECostumeSubTypes
 {

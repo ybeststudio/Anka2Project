@@ -136,34 +136,34 @@ class InventoryWindowPotions(ui.ScriptWindow):
 		return TRUE
 
 EQUIP_SLOT_NAMES = {
-	item.EQUIPMENT_BODY : "Z\xfdrh",
-	item.EQUIPMENT_HEAD : "Kasklar",
-	item.EQUIPMENT_SHOES : "Ayakkab\xfdlar",
-	item.EQUIPMENT_WRIST : "Bileklik",
-	item.EQUIPMENT_WEAPON : "Silahlar",
-	item.EQUIPMENT_NECK : "Kolye",
-	item.EQUIPMENT_EAR : "K\xfcpeler",
-	item.EQUIPMENT_UNIQUE1 : "EXP Y\xfcz\xfc\xf0\xfc",
-	item.EQUIPMENT_UNIQUE2 : "H\xfdrs\xfdz\xfdn Eldiveni",
-	item.EQUIPMENT_SHIELD : "Kalkan",
-	item.COSTUME_SLOT_BODY : "Kost\xfcm",
-	item.COSTUME_SLOT_HAIR : "Sa\xe7 Kost\xfcm\xfc",
-	item.COSTUME_SLOT_MOUNT : "Binek",
-	item.COSTUME_SLOT_ACCE : "Ku\xfeak",
-	item.EQUIPMENT_BELT : "Kemer",
-	item.COSTUME_SLOT_WEAPON : "Silah Kost\xfcm\xfc",
-	item.EQUIPMENT_RING1 : "Y\xfcz\xfck",
-	item.EQUIPMENT_PET : "Pet",
-	item.COSTUME_SLOT_PET : "Pet Kost\xfcm\xfc",
-	item.EQUIPMENT_MOUNT : "Binek Kost\xfcm\xfc",
-	player.EQUIPMENT_SLOT_START + 33 : "Buffi",
-	player.EQUIPMENT_SLOT_START + 34 : "Buffi Kost\xfcm\xfc",
-	player.EQUIPMENT_SLOT_START + 35 : "Buffi Silah Kost\xfcm\xfc",
-	player.EQUIPMENT_SLOT_START + 36 : "Buffi Sa\xe7\xfd",
-	player.EQUIPMENT_SLOT_START + 37 : "Buffi Ku\xfeak",
-	player.EQUIPMENT_SLOT_START + 39 : "Ku\xfeak Kost\xfcm\xfc",
-	player.EQUIPMENT_SLOT_START + 40 : "Silah par\xfdlt\xfds\xfd",
-	player.EQUIPMENT_SLOT_START + 41 : "Z\xfdrh par\xfdlt\xfds\xfd",
+	item.EQUIPMENT_BODY : localeInfo.INVENTORY_SLOT_BODY,
+	item.EQUIPMENT_HEAD : localeInfo.INVENTORY_SLOT_HEAD,
+	item.EQUIPMENT_SHOES : localeInfo.INVENTORY_SLOT_SHOES,
+	item.EQUIPMENT_WRIST : localeInfo.INVENTORY_SLOT_WRIST,
+	item.EQUIPMENT_WEAPON : localeInfo.INVENTORY_SLOT_WEAPON,
+	item.EQUIPMENT_NECK : localeInfo.INVENTORY_SLOT_NECK,
+	item.EQUIPMENT_EAR : localeInfo.INVENTORY_SLOT_EAR,
+	item.EQUIPMENT_UNIQUE1 : localeInfo.INVENTORY_SLOT_UNIQUE1,
+	item.EQUIPMENT_UNIQUE2 : localeInfo.INVENTORY_SLOT_UNIQUE2,
+	item.EQUIPMENT_SHIELD : localeInfo.INVENTORY_SLOT_SHIELD,
+	item.COSTUME_SLOT_BODY : localeInfo.INVENTORY_SLOT_COSTUME_BODY,
+	item.COSTUME_SLOT_HAIR : localeInfo.INVENTORY_SLOT_COSTUME_HAIR,
+	item.COSTUME_SLOT_MOUNT : localeInfo.INVENTORY_SLOT_COSTUME_MOUNT,
+	item.COSTUME_SLOT_ACCE : localeInfo.INVENTORY_SLOT_COSTUME_ACCE,
+	item.EQUIPMENT_BELT : localeInfo.INVENTORY_SLOT_BELT,
+	item.COSTUME_SLOT_WEAPON : localeInfo.INVENTORY_SLOT_COSTUME_WEAPON,
+	item.EQUIPMENT_RING1 : localeInfo.INVENTORY_SLOT_RING,
+	item.EQUIPMENT_PET : localeInfo.INVENTORY_SLOT_PET,
+	item.COSTUME_SLOT_PET : localeInfo.INVENTORY_SLOT_COSTUME_PET,
+	item.EQUIPMENT_MOUNT : localeInfo.INVENTORY_SLOT_MOUNT,
+	player.EQUIPMENT_SLOT_START + 33 : localeInfo.INVENTORY_SLOT_BUFFI,
+	player.EQUIPMENT_SLOT_START + 34 : localeInfo.INVENTORY_SLOT_BUFFI_COSTUME,
+	player.EQUIPMENT_SLOT_START + 35 : localeInfo.INVENTORY_SLOT_BUFFI_WEAPON,
+	player.EQUIPMENT_SLOT_START + 36 : localeInfo.INVENTORY_SLOT_BUFFI_HAIR,
+	player.EQUIPMENT_SLOT_START + 37 : localeInfo.INVENTORY_SLOT_BUFFI_SASH,
+	player.EQUIPMENT_SLOT_START + 39 : localeInfo.INVENTORY_SLOT_COSTUME_SASH,
+	player.EQUIPMENT_SLOT_START + 40 : localeInfo.INVENTORY_SLOT_WEAPON_SHINING,
+	player.EQUIPMENT_SLOT_START + 41 : localeInfo.INVENTORY_SLOT_ARMOR_SHINING,
 }
 
 class BeltInventoryWindow(ui.ScriptWindow):
@@ -225,7 +225,7 @@ class BeltInventoryWindow(ui.ScriptWindow):
 		text.SetHorizontalAlignCenter()
 		text.SetPosition(0, 135)
 		text.SetOutline()
-		text.SetText("Bu envanter i\xe7in kemer gerekli.")
+		text.SetText(localeInfo.INVENTORY_BELT_REQUIRED)
 		text.AddFlag("not_pick")
 		self.noBeltText = text
 
@@ -342,6 +342,17 @@ class InventoryWindowButtons(ui.ScriptWindow):
 		self.GetChild("Button_Quest_Book").SetEvent(ui.__mem_func__(self.OpenMissionBook))
 		if self.IsChild("Button_Wardrobe"):
 			self.GetChild("Button_Wardrobe").SetEvent(ui.__mem_func__(self.OpenWardrobe))
+		# reference: every side button names itself on hover
+		names = (("Equipment_Tab_1", localeInfo.INVENTORY_TAB_EQUIPMENT), ("Equipment_Tab_2", localeInfo.INVENTORY_TAB_COSTUMES), ("Equipment_Tab_3", localeInfo.INVENTORY_TAB_PETS),
+			("Button_Auto_Cape", localeInfo.INVENTORY_BUTTON_AUTO_CAPE), ("Button_Quest_Book", localeInfo.INVENTORY_BUTTON_QUEST_BOOK), ("Button_Wardrobe", localeInfo.INVENTORY_BUTTON_WARDROBE))
+		self.sideToolTip = uiToolTip.ToolTip()
+		self.sideToolTip.SetFollow(False)
+		self.sideToolTip.HideToolTip()
+		for (child, text) in names:
+			if self.IsChild(child):
+				btn = self.GetChild(child)
+				btn.SetShowToolTipEvent(ui.__mem_func__(self.__ShowSideToolTip), btn, text)
+				btn.SetHideToolTipEvent(ui.__mem_func__(self.__HideSideToolTip))
 
 	def __del__(self):
 		ui.ScriptWindow.__del__(self)
@@ -350,8 +361,32 @@ class InventoryWindowButtons(ui.ScriptWindow):
 		self.ClearDictionary()
 		self.equipmentTab = []
 		self.inventory = None
+		if getattr(self, "sideToolTip", None):
+			self.sideToolTip.HideToolTip()
+			self.sideToolTip = None
+
+	def __ShowSideToolTip(self, btn, text):
+		# reference: a board on the left of the button, vertically centred on it
+		tt = self.sideToolTip
+		if not tt or not btn:
+			return
+		tt.ClearToolTip()
+		tt.toolTipWidth = 0
+		tt.AutoAppendTextLine(text, tt.NORMAL_COLOR)
+		tt.ResizeToolTip()
+		(x, y) = btn.GetGlobalPosition()
+		tt.SetPosition(x - tt.GetWidth() - 4, y + (btn.GetHeight() - tt.GetHeight()) / 2)
+		tt.ShowToolTip()
+
+	def __HideSideToolTip(self):
+		if self.sideToolTip:
+			self.sideToolTip.HideToolTip()
 
 	def OpenAutoCape(self):
+		interface = self.inventory and getattr(self.inventory, "interface", None)
+		if getattr(app, "ENABLE_BRAVE_CAPE_RENEWAL", 0) and interface and getattr(interface, "wndBraveCape", None):
+			interface.ToggleBraveCapeWindow()
+			return
 		net.SendChatPacket("/auto_cape %s" % ("stop" if self.autoCape else "start"))
 
 	def SetAutoCapeStatus(self, active):
@@ -433,7 +468,7 @@ class InventoryWindow(ui.ScriptWindow):
 		[item.EQUIPMENT_RING2, 59, 45, 32, 32, "Ring 2"],
 		[item.EQUIPMENT_PENDANT, 109, 45, 32, 32, "Pendant"],
 		[item.EQUIPMENT_MOUNT, 9, 103, 32, 32, "Mount"],
-		[item.EQUIPMENT_PET, 59, 103, 32, 32, "Pet"],
+		[item.EQUIPMENT_PET, 59, 103, 32, 32, localeInfo.INVENTORY_SLOT_PET],
 	]
 
 	def __init__(self):
@@ -1102,6 +1137,12 @@ class InventoryWindow(ui.ScriptWindow):
 				else:
 					self.wndCostume.EnableSlotCoverImage(slotNumber, FALSE)
 
+		# shining items (ENABLE_SHINING_SYSTEM): weapon / costume glow, shown on the costume page
+		for name in ("SHINING_SLOT_WEAPON", "SHINING_SLOT_ARMOR"):
+			slotNumber = getattr(item, name, 0)
+			if slotNumber:
+				setItemVNum2(slotNumber, getItemVNum(slotNumber), 0)
+
 		self.wndEquip.RefreshSlot()
 		self.wndCostume.RefreshSlot()
 		self.wndRings.RefreshSlot()
@@ -1142,7 +1183,7 @@ class InventoryWindow(ui.ScriptWindow):
 		self.searchEdit = self.GetChild("editline_name")
 		self.searchEdit.SetEscapeEvent(ui.__mem_func__(self.OnSearchEscape))
 		self.searchEdit.SetUpdateEvent(ui.__mem_func__(self.OnValueSearchUpdate))
-		self.searchEdit.SetOverlayText("Item Adý...")
+		self.searchEdit.SetOverlayText(localeInfo.INVENTORY_SEARCH_HINT)
 		self.searchText = ""
 
 		self.manageBasePos = {}
@@ -1203,7 +1244,7 @@ class InventoryWindow(ui.ScriptWindow):
 		self.slotNameToolTip.ShowToolTip()
 
 	def ShowSoonMessage(self):
-		chat.AppendChat(chat.CHAT_TYPE_INFO, "Bu \xf6zellik yak\xfdnda eklenecek.")
+		chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.INVENTORY_FEATURE_SOON)
 
 	def StackInventory(self):
 		net.SendChatPacket("/click_sort_items")

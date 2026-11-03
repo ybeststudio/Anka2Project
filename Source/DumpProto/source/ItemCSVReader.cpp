@@ -23,6 +23,7 @@
 #define ENABLE_NEW_BONUS_SYSTEM
 #define ENABLE_AVG_PVM
 #define ENABLE_PASSIVE_SYSTEM
+#define ENABLE_SHINING_SYSTEM
 #define ENABLE_TITLE_SYSTEM
 
 using namespace std;
@@ -126,6 +127,9 @@ int get_Item_Type_Value(string inputString)
 #ifdef ENABLE_MOVE_COSTUME_ACCE_ATTR
 		,"ITEM_MEDIUM"
 #endif
+#ifdef ENABLE_SHINING_SYSTEM
+		,"ITEM_SHINING"
+#endif
 	};
 
 	int retInt = -1;
@@ -199,6 +203,9 @@ enum EItemTypes
 #endif
 #ifdef ENABLE_MOVE_COSTUME_ACCE_ATTR
 	ITEM_MEDIUM,
+#endif
+#ifdef ENABLE_SHINING_SYSTEM
+	ITEM_SHINING,
 #endif
 
 	ITEM_TYPE_MAX
@@ -453,6 +460,14 @@ int get_Item_SubType_Value(int type_value, string inputString)
 	};
 
 #ifdef ENABLE_MOVE_COSTUME_ACCE_ATTR
+#ifdef ENABLE_SHINING_SYSTEM
+	subtypes[ITEM_SHINING] =
+	{
+		"SHINING_WEAPON",
+		"SHINING_ARMOR",
+	};
+#endif
+
 	subtypes[ITEM_MEDIUM] =
 	{
 		"MEDIUM_MOVE_COSTUME_ATTR",

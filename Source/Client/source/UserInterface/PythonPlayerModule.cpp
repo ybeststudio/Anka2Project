@@ -1132,13 +1132,42 @@ PyObject *playerGetItemAttribute(PyObject *poSelf, PyObject *poArgs)
 		default:
 			return Py_BuildException();
 	}
+#ifdef ENABLE_BONUS_FIX
+	WORD byType;
+#else
 	BYTE byType;
+#endif
 	short sValue;
 	CPythonPlayer::Instance().GetItemAttribute(Cell, iAttributeSlotIndex, &byType, &sValue);
 
 	return Py_BuildValue("ii", byType, sValue);
 }
 
+#ifdef ENABLE_APPLY_RANDOM
+PyObject *playerGetItemApplyRandom(PyObject *poSelf, PyObject *poArgs)
+{
+	TItemPos Cell;
+	int iIndex;
+	switch (PyTuple_Size(poArgs))
+	{
+		case 2:
+			if (!PyTuple_GetInteger(poArgs, 0, &Cell.cell) || !PyTuple_GetInteger(poArgs, 1, &iIndex))
+				return Py_BuildException();
+			break;
+		case 3:
+			if (!PyTuple_GetByte(poArgs, 0, &Cell.window_type) || !PyTuple_GetInteger(poArgs, 1, &Cell.cell) || !PyTuple_GetInteger(poArgs, 2, &iIndex))
+				return Py_BuildException();
+			break;
+		default:
+			return Py_BuildException();
+	}
+	WORD wType;
+	short sValue;
+	CPythonPlayer::Instance().GetItemApplyRandom(Cell, iIndex, &wType, &sValue);
+	return Py_BuildValue("ii", wType, sValue);
+}
+
+#endif
 PyObject *playerGetItemLink(PyObject *poSelf, PyObject *poArgs)
 {
 	TItemPos Cell;
@@ -3927,6 +3956,9 @@ void initPlayer()
 		{ "GetItemCountByVnum", playerGetItemCountByVnum, METH_VARARGS },
 		{ "GetItemMetinSocket", playerGetItemMetinSocket, METH_VARARGS },
 		{ "GetItemAttribute", playerGetItemAttribute, METH_VARARGS },
+#ifdef ENABLE_APPLY_RANDOM
+		{ "GetItemApplyRandom", playerGetItemApplyRandom, METH_VARARGS },
+#endif
 		{ "GetISellItemPrice", playerGetISellItemPrice, METH_VARARGS },
 		{ "MoveItem", playerMoveItem, METH_VARARGS },
 		{ "SendClickItemPacket", playerSendClickItemPacket, METH_VARARGS },

@@ -6,6 +6,7 @@ player = __import__(pyapi.GetModuleName("player"))
 net = __import__(pyapi.GetModuleName("net"))
 
 import uiToolTip
+import localeInfo
 import time
 import event
 import ui
@@ -33,65 +34,65 @@ CAT_LIST = [
 LOCATION_BY_MOBID = {
 	0: "0",
 
-	2302: "Kýrmýzý Orman",
-	1061: "Þeytan Kulesi",
+	2302: localeInfo.COLLECT_LOCATION_RED_FOREST,
+	1061: localeInfo.COLLECT_LOCATION_DEVIL_TOWER,
 
-	1601: "Devler Diyarý",
-	1501: "Devler Diyarý",
+	1601: localeInfo.COLLECT_LOCATION_GIANT_LAND,
+	1501: localeInfo.COLLECT_LOCATION_GIANT_LAND,
 
-	2411: "Örümcek Zindaný",
-	2311: "Örümcek Zindaný",
-	2034: "Örümcek Zindaný",
-	2075: "Örümcek Zindaný",
+	2411: localeInfo.COLLECT_LOCATION_SPIDER_DUNGEON,
+	2311: localeInfo.COLLECT_LOCATION_SPIDER_DUNGEON,
+	2034: localeInfo.COLLECT_LOCATION_SPIDER_DUNGEON,
+	2075: localeInfo.COLLECT_LOCATION_SPIDER_DUNGEON,
 
-	3190: "Siklop Vadisi",
-	3102: "Siklop Vadisi",
-	3103: "Siklop Vadisi",
-	3104: "Siklop Vadisi",
+	3190: localeInfo.COLLECT_LOCATION_CYCLOPS_VALLEY,
+	3102: localeInfo.COLLECT_LOCATION_CYCLOPS_VALLEY,
+	3103: localeInfo.COLLECT_LOCATION_CYCLOPS_VALLEY,
+	3104: localeInfo.COLLECT_LOCATION_CYCLOPS_VALLEY,
 
-	8213: "Firavun Çölü",
-	9673: "Firavun Çölü",
-	9671: "Firavun Çölü",
+	8213: localeInfo.COLLECT_LOCATION_PHARAOH_DESERT,
+	9673: localeInfo.COLLECT_LOCATION_PHARAOH_DESERT,
+	9671: localeInfo.COLLECT_LOCATION_PHARAOH_DESERT,
 
-	6775: "Buzlu Diyar",
-	6781: "Buzlu Diyar",
-	6779: "Buzlu Diyar",
+	6775: localeInfo.COLLECT_LOCATION_SNOW_LAND,
+	6781: localeInfo.COLLECT_LOCATION_SNOW_LAND,
+	6779: localeInfo.COLLECT_LOCATION_SNOW_LAND,
 
-	6006: "Ateþ Diyarý",
-	34600: "Ateþ Diyarý",
-	6002: "Ateþ Diyarý",
+	6006: localeInfo.COLLECT_LOCATION_FIRE_LAND,
+	34600: localeInfo.COLLECT_LOCATION_FIRE_LAND,
+	6002: localeInfo.COLLECT_LOCATION_FIRE_LAND,
 
-	3302: "Büyülü Orman",
-	3304: "Büyülü Orman",
+	3302: localeInfo.COLLECT_LOCATION_ENCHANTED_FOREST,
+	3304: localeInfo.COLLECT_LOCATION_ENCHANTED_FOREST,
 
-	591: "Ýkinci Köyler",
-	3191: "Siklop Vadisi",
-	8214: "Firavun Çölü",
+	591: localeInfo.COLLECT_LOCATION_SECOND_VILLAGES,
+	3191: localeInfo.COLLECT_LOCATION_CYCLOPS_VALLEY,
+	8214: localeInfo.COLLECT_LOCATION_PHARAOH_DESERT,
 
-	6789: "Buzlu Diyar",
-	34601: "Ateþ Diyarý",
-	3391: "Büyülü Orman",
+	6789: localeInfo.COLLECT_LOCATION_SNOW_LAND,
+	34601: localeInfo.COLLECT_LOCATION_FIRE_LAND,
+	3391: localeInfo.COLLECT_LOCATION_ENCHANTED_FOREST,
 
-	8006: "Ýkinci Köyler",
-	8008: "Ork Vadisi",
-	2095: "Örümcek Zindaný",
-	8052: "Siklop Vadisi",
+	8006: localeInfo.COLLECT_LOCATION_SECOND_VILLAGES,
+	8008: localeInfo.COLLECT_LOCATION_ORC_VALLEY,
+	2095: localeInfo.COLLECT_LOCATION_SPIDER_DUNGEON,
+	8052: localeInfo.COLLECT_LOCATION_CYCLOPS_VALLEY,
 
-	8210: "Firavun Çölü",
-	6798: "Buzlu Diyar",
-	6801: "Ateþ Diyarý",
-	6803: "Büyülü Orman",
+	8210: localeInfo.COLLECT_LOCATION_PHARAOH_DESERT,
+	6798: localeInfo.COLLECT_LOCATION_SNOW_LAND,
+	6801: localeInfo.COLLECT_LOCATION_FIRE_LAND,
+	6803: localeInfo.COLLECT_LOCATION_ENCHANTED_FOREST,
 }
 
 BONUS_LIST = {
 	0 : { 0 : {
 			# biologist.lua - Category 0 (Biyolog) - Subcategory 0
-			0: "Canavarlara Karþý Güçlü +10",         # {63, 10}
-			1: "Saldýrý Deðeri +200",                   # {53, 200}
-			2: "Ortalama Zarar +5",                     # {72, 5}
-			3: "Metinlere Karþý Güçlü +5",             # {97, 5}
-			4: "Metinlere Karþý Güçlü +10",            # {97, 10}
-			5: "Metinlere Karþý Güçlü +15",            # {97, 15}
+			0: localeInfo.COLLECT_BONUS_MONSTER % "10",         # {63, 10}
+			1: localeInfo.COLLECT_BONUS_ATTACK % "200",                   # {53, 200}
+			2: localeInfo.COLLECT_BONUS_AVERAGE % "5",                     # {72, 5}
+			3: localeInfo.COLLECT_BONUS_METIN % "5",             # {97, 5}
+			4: localeInfo.COLLECT_BONUS_METIN % "10",            # {97, 10}
+			5: localeInfo.COLLECT_BONUS_METIN % "15",            # {97, 15}
 			6: "-",
 			7: "-",
 			8: "-",
@@ -101,9 +102,9 @@ BONUS_LIST = {
 			0: "-",
 			1: "-",
 			2: "-",
-			3: "Canavarlara Karþý Güçlü +5",           # {63, 5}
-			4: "Patronlara Karþý Güçlü +10",           # {98, 10}
-			5: "Patronlara Karþý Güçlü +15",           # {98, 15}
+			3: localeInfo.COLLECT_BONUS_MONSTER % "5",           # {63, 5}
+			4: localeInfo.COLLECT_BONUS_BOSS % "10",           # {98, 10}
+			5: localeInfo.COLLECT_BONUS_BOSS % "15",           # {98, 15}
 			6: "-",
 			7: "-",
 			8: "-",
@@ -114,8 +115,8 @@ BONUS_LIST = {
 			1: "-",
 			2: "-",
 			3: "-",
-			4: "Ortalama Zarar +5",                     # {72, 5}
-			5: "Canavarlara Karþý Güçlü +30",          # {63, 30}
+			4: localeInfo.COLLECT_BONUS_AVERAGE % "5",                     # {72, 5}
+			5: localeInfo.COLLECT_BONUS_MONSTER % "30",          # {63, 30}
 			6: "-",
 			7: "-",
 			8: "-",
@@ -123,26 +124,26 @@ BONUS_LIST = {
 	},
 		1 : { 0 : {
 			# collector.lua - Category 1 (Koleksiyoncu) - Subcategory 0
-			0: "Patronlara Karþý Güçlü +10",          # {98, 10}
-			1: "Patronlara Karþý Güçlü +15",          # {98, 15}
-			2: "Patronlara Karþý Güçlü +10",          # {98, 10}
-			3: "Ortalama Zarar +15",                   # {72, 15}
-			4: "Metinlere Karþý Güçlü +20",           # {97, 20}
-			5: "Metinlere Karþý Güçlü +10",           # {97, 10}
-			6: "Metinlere Karþý Güçlü +10",           # {97, 10}
-			7: "Metinlere Karþý Güçlü +20",           # {97, 20} - Extra bonus (index 7, 1. bonus)
+			0: localeInfo.COLLECT_BONUS_BOSS % "10",          # {98, 10}
+			1: localeInfo.COLLECT_BONUS_BOSS % "15",          # {98, 15}
+			2: localeInfo.COLLECT_BONUS_BOSS % "10",          # {98, 10}
+			3: localeInfo.COLLECT_BONUS_AVERAGE % "15",                   # {72, 15}
+			4: localeInfo.COLLECT_BONUS_METIN % "20",           # {97, 20}
+			5: localeInfo.COLLECT_BONUS_METIN % "10",           # {97, 10}
+			6: localeInfo.COLLECT_BONUS_METIN % "10",           # {97, 10}
+			7: localeInfo.COLLECT_BONUS_METIN % "20",           # {97, 20} - Extra bonus (index 7, 1. bonus)
 			8: "-",
 		},
 		1: {
 			# collector.lua - Category 1 (Koleksiyoncu) - Subcategory 1
-			0: "Canavarlara Karþý Güçlü +10",         # {63, 10}
-			1: "Canavarlara Karþý Güçlü +15",         # {63, 15}
+			0: localeInfo.COLLECT_BONUS_MONSTER % "10",         # {63, 10}
+			1: localeInfo.COLLECT_BONUS_MONSTER % "15",         # {63, 15}
 			2: "-",
 			3: "-",
-			4: "Canavarlara Karþý Güçlü +20",         # {63, 20}
+			4: localeInfo.COLLECT_BONUS_MONSTER % "20",         # {63, 20}
 			5: "-",
-			6: "Patronlara Karþý Güçlü +5",           # {98, 5}
-			7: "Patronlara Karþý Güçlü +10",          # {98, 10} - Extra bonus (index 7, 2. bonus)
+			6: localeInfo.COLLECT_BONUS_BOSS % "5",           # {98, 5}
+			7: localeInfo.COLLECT_BONUS_BOSS % "10",          # {98, 10} - Extra bonus (index 7, 2. bonus)
 			8: "-",
 		},
 		2: {
@@ -153,20 +154,20 @@ BONUS_LIST = {
 			3: "-",
 			4: "-",
 			5: "-",
-			6: "Ortalama Zarar +10",                   # {72, 10}
-			7: "Canavarlara Karþý Güçlü +10",         # {63, 10} - Extra bonus (index 7, 3. bonus)
+			6: localeInfo.COLLECT_BONUS_AVERAGE % "10",                   # {72, 10}
+			7: localeInfo.COLLECT_BONUS_MONSTER % "10",         # {63, 10} - Extra bonus (index 7, 3. bonus)
 			8: "-",
 		},
 	},
 	2 : { 0 : {
-			0: "Canavarlara Karþý Güçlü +1%",
-			1: "Canavarlara Karþý Güçlü +2%",
-			2: "Canavarlara Karþý Güçlü +3%",
-			3: "Canavarlara Karþý Güçlü +4%",
-			4: "Canavarlara Karþý Güçlü +5%",
-			5: "Canavarlara Karþý Güçlü +6%",
-			6: "Canavarlara Karþý Güçlü +8%",
-			7: "Canavarlara Karþý Güçlü +10%",
+			0: localeInfo.COLLECT_BONUS_MONSTER % "1%",
+			1: localeInfo.COLLECT_BONUS_MONSTER % "2%",
+			2: localeInfo.COLLECT_BONUS_MONSTER % "3%",
+			3: localeInfo.COLLECT_BONUS_MONSTER % "4%",
+			4: localeInfo.COLLECT_BONUS_MONSTER % "5%",
+			5: localeInfo.COLLECT_BONUS_MONSTER % "6%",
+			6: localeInfo.COLLECT_BONUS_MONSTER % "8%",
+			7: localeInfo.COLLECT_BONUS_MONSTER % "10%",
 			8: "-",
 		}, 1 : {
 			0:"-", 1:"-",
@@ -184,14 +185,14 @@ BONUS_LIST = {
 	},
 	3 : { 0 : {
 			# bossologia.lua - Category 3 (Patron)
-			0: "Patronlara Karþý Güçlü +1",    # {98, 1}
-			1: "Patronlara Karþý Güçlü +2",    # {98, 2}
-			2: "Patronlara Karþý Güçlü +3",    # {98, 3}
-			3: "Patronlara Karþý Güçlü +4",    # {98, 4}
-			4: "Patronlara Karþý Güçlü +5",    # {98, 5}
-			5: "Patronlara Karþý Güçlü +7",    # {98, 7}
-			6: "Patronlara Karþý Güçlü +10",   # {98, 10}
-			7: "Patronlara Karþý Güçlü +14",   # {98, 14}
+			0: localeInfo.COLLECT_BONUS_BOSS % "1",    # {98, 1}
+			1: localeInfo.COLLECT_BONUS_BOSS % "2",    # {98, 2}
+			2: localeInfo.COLLECT_BONUS_BOSS % "3",    # {98, 3}
+			3: localeInfo.COLLECT_BONUS_BOSS % "4",    # {98, 4}
+			4: localeInfo.COLLECT_BONUS_BOSS % "5",    # {98, 5}
+			5: localeInfo.COLLECT_BONUS_BOSS % "7",    # {98, 7}
+			6: localeInfo.COLLECT_BONUS_BOSS % "10",   # {98, 10}
+			7: localeInfo.COLLECT_BONUS_BOSS % "14",   # {98, 14}
 			8: "-",
 		}, 1 : {
 			0:"-", 1:"-",
@@ -209,14 +210,14 @@ BONUS_LIST = {
 	},
 	4 : { 0 : {
 			# metinologia.lua - Category 4 (Metin)
-			0: "Metinlere Karþý Güçlü +1",     # {97, 1}
-			1: "Metinlere Karþý Güçlü +2",     # {97, 2}
-			2: "Metinlere Karþý Güçlü +3",     # {97, 3}
-			3: "Metinlere Karþý Güçlü +4",     # {97, 4}
-			4: "Metinlere Karþý Güçlü +5",     # {97, 5}
-			5: "Metinlere Karþý Güçlü +7",     # {97, 7}
-			6: "Metinlere Karþý Güçlü +10",    # {97, 10}
-			7: "Metinlere Karþý Güçlü +15",    # {97, 15}
+			0: localeInfo.COLLECT_BONUS_METIN % "1",     # {97, 1}
+			1: localeInfo.COLLECT_BONUS_METIN % "2",     # {97, 2}
+			2: localeInfo.COLLECT_BONUS_METIN % "3",     # {97, 3}
+			3: localeInfo.COLLECT_BONUS_METIN % "4",     # {97, 4}
+			4: localeInfo.COLLECT_BONUS_METIN % "5",     # {97, 5}
+			5: localeInfo.COLLECT_BONUS_METIN % "7",     # {97, 7}
+			6: localeInfo.COLLECT_BONUS_METIN % "10",    # {97, 10}
+			7: localeInfo.COLLECT_BONUS_METIN % "15",    # {97, 15}
 			8:"-",
 		}, 1 : {
 			0:"-", 1:"-",
@@ -474,7 +475,7 @@ class CollectWindow(ui.ScriptWindow):
 					self.__ChangeCategory(self.selectedWindow)
 			self.PageText.SetText(str(self.data[self.selectedWindow]["QUEST_INDEX"]))
 		else:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "Bu seçeneði sadece Koleksiyoncu görevlerinde kullanabilirsin.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.COLLECT_ONLY_COLLECTOR)
 
 	def	__OverInItem(self, slot_num):
 		if self.tooltipItem:

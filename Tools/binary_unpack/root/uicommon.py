@@ -291,11 +291,20 @@ class QuestionDialog(ui.ScriptWindow):
 	def SetText(self, text):
 		self.textLine.SetText(text)
 
+	def __SetTextButton(self, button, text):
+		# the icons say yes and no; any other answer needs the written button
+		if text in (localeInfo.UI_ACCEPT, localeInfo.UI_DENY, localeInfo.UI_CLOSE, uiScriptLocale.YES, uiScriptLocale.NO):
+			return
+		button.SetUpVisual("d:/ymir work/ui/public/middle_button_01.sub")
+		button.SetOverVisual("d:/ymir work/ui/public/middle_button_02.sub")
+		button.SetDownVisual("d:/ymir work/ui/public/middle_button_03.sub")
+		button.SetText(text)
+
 	def SetAcceptText(self, text):
-		self.acceptButton.SetText(text)
+		self.__SetTextButton(self.acceptButton, text)
 
 	def SetCancelText(self, text):
-		self.cancelButton.SetText(text)
+		self.__SetTextButton(self.cancelButton, text)
 
 	def OnPressEscapeKey(self):
 		self.Close()

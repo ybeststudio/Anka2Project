@@ -76,6 +76,9 @@ class CItemData
 #ifdef ENABLE_MOVE_COSTUME_ACCE_ATTR
 			ITEM_TYPE_MEDIUM,
 #endif
+#ifdef ENABLE_SHINING_SYSTEM
+			ITEM_TYPE_SHINING,				// 40, server ITEM_SHINING
+#endif
 
 			ITEM_TYPE_MAX_NUM,
 		};
@@ -128,6 +131,14 @@ class CItemData
 #endif
 			ARMOR_NUM_TYPES
 		};
+
+#ifdef ENABLE_SHINING_SYSTEM
+		enum EShiningSubTypes
+		{
+			SHINING_WEAPON,
+			SHINING_ARMOR,
+		};
+#endif
 
 		enum ECostumeSubTypes
 		{
@@ -445,6 +456,10 @@ class CItemData
 #endif
 #ifdef ENABLE_PASSIVE_SYSTEM
 			WEAR_PASSIVE,			// 32
+#endif
+#ifdef ENABLE_SHINING_SYSTEM
+			WEAR_SHINING_WEAPON = 40,	// server length.h
+			WEAR_SHINING_ARMOR = 41,
 #endif
 
 			WEAR_MAX_NUM = 64,

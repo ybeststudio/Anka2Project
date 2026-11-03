@@ -21,7 +21,11 @@ const D3DXCOLOR c_TextTail_Chat_Color = D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f);
 const D3DXCOLOR c_TextTail_Info_Color = D3DXCOLOR(1.0f, 0.785f, 0.785f, 1.0f);
 const D3DXCOLOR c_TextTail_Guild_Name_Color = 0xFFEFD3FF;
 const float c_TextTail_Name_Position = -10.0f;
+#ifdef ENABLE_GUILD_RENEWAL_BAERIM
+const float c_fxMarkPosition = 1.0f;
+#else
 const float c_fxMarkPosition = 4.0f;
+#endif
 const float c_fyGuildNamePosition = 22.0f;
 const float c_fyMarkPosition = 22.0f + 12.0f;
 BOOL bPKTitleEnable = TRUE;
@@ -740,12 +744,14 @@ static std::string BuildOptionGuildName(CPythonTextTail::TTextTail* tail, CInsta
     auto& guild = CPythonGuild::Instance();
     CPythonGuild::TGuildMemberData* member = nullptr;
     CPythonGuild::TGuildGradeData* grade = nullptr;
+#ifndef ENABLE_GUILD_RENEWAL_BAERIM // reference shows no grade name above the character
     if (actor && tail->optionGuildID == guild.GetGuildID() &&
         guild.GetMemberDataPtrByName(actor->GetNameString(),&member) &&
         guild.GetGradeDataPtr(member->byGrade,&grade))
         return "["+grade->strName+"] "+tail->optionGuildBase;
-    if (tail->optionGuildLeader == 3) return " |cFFFF8C00[L]|r "+tail->optionGuildBase;
-    if (tail->optionGuildLeader == 2) return " |cFF01796F[G]|r "+tail->optionGuildBase;
+#endif
+    if (tail->optionGuildLeader == 3) return "|cFFFF8C00[L]|r "+tail->optionGuildBase;
+    if (tail->optionGuildLeader == 2) return "|cFF01796F[G]|r "+tail->optionGuildBase;
     return tail->optionGuildBase;
 }
 

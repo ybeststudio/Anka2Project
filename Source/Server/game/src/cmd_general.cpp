@@ -7711,10 +7711,530 @@ ACMD(do_auto_cape)
 }
 #endif
 
+#ifdef ENABLE_BRAVE_CAPE_RENEWAL
+// Baerim / Arena2 "brave cape" loop: the client window (uiAutoCape.BraveCapeWindow) picks the interval and the range,
+// the server pulls the free monsters around, every pull costs BRAVE_CAPE_COST yang (reference tooltip "cost per use: 1.000").
+#include "sectree.h"
+namespace
+{
+	enum
+	{
+		BRAVE_CAPE_MIN_TIME = 2,
+		BRAVE_CAPE_MAX_TIME = 60,
+		BRAVE_CAPE_MIN_RANGE = 1000,
+		BRAVE_CAPE_MAX_RANGE = 15000,
+		BRAVE_CAPE_COST = 1000,
+	};
+
+	EVENTINFO(brave_cape_info)
+	{
+		DWORD pid;
+		DWORD vid;
+		int iTime;
+		int iRange;
+		brave_cape_info() : pid(0), vid(0), iTime(0), iRange(0) {}
+	};
+
+	std::map<DWORD, LPEVENT> s_mapBraveCapeEvent;
+
+	bool IsBraveCapeBlockedMap(long lMapIndex)
+	{
+		return lMapIndex == 1 || lMapIndex == 21 || lMapIndex == 41;	// first villages
+	}
+
+	struct FBraveCapeAggregate
+	{
+		LPCHARACTER m_ch;
+		int m_iRange;
+		FBraveCapeAggregate(LPCHARACTER ch, int iRange) : m_ch(ch), m_iRange(iRange) {}
+		void operator()(LPENTITY ent)
+		{
+			if (!ent->IsType(ENTITY_CHARACTER))
+				return;
+			LPCHARACTER ch = (LPCHARACTER) ent;
+			if (ch->IsPC() || !ch->IsMonster() || ch->GetVictim() || ch->IsDead())
+				return;
+#ifdef ENABLE_BOT_PLAYER
+			if (ch->IsBotCharacter())
+				return;
+#endif
+			if (DISTANCE_APPROX(ch->GetX() - m_ch->GetX(), ch->GetY() - m_ch->GetY()) < m_iRange && ch->CanBeginFight())
+				ch->BeginFight(m_ch);
+		}
+	};
+
+	void StopBraveCape(LPCHARACTER ch, bool bNotify)
+	{
+		std::map<DWORD, LPEVENT>::iterator it = s_mapBraveCapeEvent.find(ch->GetPlayerID());
+		if (it != s_mapBraveCapeEvent.end())
+		{
+			event_cancel(&it->second);
+			s_mapBraveCapeEvent.erase(it);
+		}
+		if (bNotify)
+			ch->ChatPacket(CHAT_TYPE_COMMAND, "SetBraveCapeStatus 0");
+	}
+
+	EVENTFUNC(brave_cape_event)
+	{
+		brave_cape_info* info = dynamic_cast<brave_cape_info*>(event->info);
+		if (!info)
+			return 0;
+
+		LPCHARACTER ch = CHARACTER_MANAGER::instance().FindByPID(info->pid);
+		if (!ch || (DWORD) ch->GetVID() != info->vid || !ch->GetDesc())
+		{
+			s_mapBraveCapeEvent.erase(info->pid);
+			return 0;
+		}
+
+		if (ch->IsDead() || ch->IsObserverMode() || ch->IsWarping() || IsBraveCapeBlockedMap(ch->GetMapIndex()))
+			return PASSES_PER_SEC(1);
+
+		if (ch->GetGold() < BRAVE_CAPE_COST)
+		{
+			s_mapBraveCapeEvent.erase(info->pid);
+			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You do not have enough Yang. The automatic cape has been stopped."));
+			ch->ChatPacket(CHAT_TYPE_COMMAND, "SetBraveCapeStatus 0");
+			return 0;
+		}
+
+		LPSECTREE pSec = ch->GetSectree();
+		if (pSec)
+		{
+			FBraveCapeAggregate f(ch, info->iRange);
+			pSec->ForEachAround(f);
+		}
+		ch->PointChange(POINT_GOLD, -BRAVE_CAPE_COST, true);
+		return PASSES_PER_SEC(info->iTime);
+	}
+
+	void StartBraveCape(LPCHARACTER ch, int iTime, int iRange)
+	{
+		if (IsBraveCapeBlockedMap(ch->GetMapIndex()))
+		{
+			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot use the automatic cape on this map."));
+			ch->ChatPacket(CHAT_TYPE_COMMAND, "SetBraveCapeStatus 0");
+			return;
+		}
+		if (ch->GetGold() < BRAVE_CAPE_COST)
+		{
+			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You do not have enough Yang."));
+			ch->ChatPacket(CHAT_TYPE_COMMAND, "SetBraveCapeStatus 0");
+			return;
+		}
+
+		StopBraveCape(ch, false);
+		brave_cape_info* info = AllocEventInfo<brave_cape_info>();
+		info->pid = ch->GetPlayerID();
+		info->vid = ch->GetVID();
+		info->iTime = MINMAX((int) BRAVE_CAPE_MIN_TIME, iTime, (int) BRAVE_CAPE_MAX_TIME);
+		info->iRange = MINMAX((int) BRAVE_CAPE_MIN_RANGE, iRange, (int) BRAVE_CAPE_MAX_RANGE);
+		s_mapBraveCapeEvent[info->pid] = event_create(brave_cape_event, info, 1);
+		ch->ChatPacket(CHAT_TYPE_COMMAND, "SetBraveCapeStatus 1");
+	}
+}
+
+ACMD(do_brave_cape)
+{
+	if (!ch || !ch->IsPC() || !ch->GetDesc())
+		return;
+
+	char arg1[32], arg2[32], arg3[32];
+	argument = one_argument(argument, arg1, sizeof(arg1));
+	two_arguments(argument, arg2, sizeof(arg2), arg3, sizeof(arg3));
+
+	if (!strcmp(arg1, "active"))
+	{
+		int iTime = 0, iRange = 0;
+		if (!*arg2 || !*arg3 || !str_to_number(iTime, arg2) || !str_to_number(iRange, arg3))
+			return;
+		StartBraveCape(ch, iTime, iRange);
+	}
+	else if (!strcmp(arg1, "deactive"))
+		StopBraveCape(ch, true);
+}
+#endif
+
+#ifdef ENABLE_CHARACTER_STATS
+// character details panel (Baerim uiCharacterDetails stat_list): dungeons cleared, fish caught, ores mined
+ACMD(do_character_stats)
+{
+	if (!ch || !ch->IsPC() || !ch->GetDesc())
+		return;
+	ch->ChatPacket(CHAT_TYPE_COMMAND, "CharacterStats %d %d %d", ch->GetQuestFlag("stats.dungeon"), ch->GetQuestFlag("stats.fish"), ch->GetQuestFlag("stats.mine"));
+}
+#endif
+
 #ifdef ENABLE_CONFIRM_LEVELUP
 ACMD(do_confirm_levelup)
 {
     if (!ch || !ch->IsPC() || !ch->GetDesc()) return;
     ch->ConfirmLevelUp();
+}
+#endif
+
+#ifdef ENABLE_ANKA2_GLOBAL_CHAT
+extern void SendShout(const char * szText, BYTE bEmpire
+#ifdef ENABLE_MESSENGER_BLOCK
+	, const char* c_szName
+#endif
+);
+
+// Messenger "Anka2 Global" channel (reference Baerim Global): every online character receives
+// "AnkaGlobalChat <name>\x1f<gm>\x1f<text>" as a client command, on every core.
+ACMD(do_anka_global)
+{
+	if (!ch || !ch->GetDesc())
+		return;
+
+	while (*argument == ' ')
+		++argument;
+
+	std::string text(argument);
+	if (text.empty())
+		return;
+
+	if (ch->GetLevel() < ANKA2_GLOBAL_CHAT_MIN_LEVEL)
+	{
+		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You need a minimum level of %d to be able to call."), ANKA2_GLOBAL_CHAT_MIN_LEVEL);
+		return;
+	}
+
+	if (ch->FindAffect(AFFECT_BLOCK_CHAT))
+		return;
+
+	static std::map<DWORD, DWORD> s_mapLastMessage;
+	const DWORD dwNow = get_dword_time();
+	DWORD& rdwLast = s_mapLastMessage[ch->GetPlayerID()];
+	if (rdwLast && dwNow - rdwLast < ANKA2_GLOBAL_CHAT_COOLDOWN)
+	{
+		ch->ChatPacket(CHAT_TYPE_COMMAND, "AnkaGlobalCooldown %u", (ANKA2_GLOBAL_CHAT_COOLDOWN - (dwNow - rdwLast) + 999) / 1000);
+		return;
+	}
+	rdwLast = dwNow;
+
+	if (text.size() > ANKA2_GLOBAL_CHAT_MAX_LEN)
+		text.resize(ANKA2_GLOBAL_CHAT_MAX_LEN);
+
+	std::string payload;
+	payload.reserve(text.size());
+	for (size_t i = 0; i < text.size(); ++i)
+	{
+		const char c = text[i];
+		// no colour / hyperlink markup from players, only the emoji tags of the picker (|E...|e)
+		if (c == '|' && !ch->IsGM() && !(i + 1 < text.size() && (text[i + 1] == 'E' || text[i + 1] == 'e')))
+			continue;
+		if (c == '\x1f' || c == '\n' || c == '\r')
+			continue;
+		payload += (c == ' ') ? '\x1f' : c;
+	}
+	if (payload.empty())
+		return;
+
+	char szText[CHAT_MAX_LEN + 1];
+	snprintf(szText, sizeof(szText), "%s\x1f%d\x1f%s", ch->GetName(), ch->IsGM() ? 1 : 0, payload.c_str());
+
+	TPacketGGShout p;
+	p.bHeader = HEADER_GG_SHOUT;
+	p.bEmpire = ANKA2_GLOBAL_CHAT_EMPIRE;
+	strlcpy(p.szText, szText, sizeof(p.szText));
+#ifdef ENABLE_MESSENGER_BLOCK
+	strlcpy(p.szName, ch->GetName(), sizeof(p.szName));
+#endif
+	P2P_MANAGER::instance().Send(&p, sizeof(TPacketGGShout));
+
+	SendShout(szText, ANKA2_GLOBAL_CHAT_EMPIRE
+#ifdef ENABLE_MESSENGER_BLOCK
+		, ch->GetName()
+#endif
+	);
+}
+#endif
+
+#ifdef ENABLE_WHISPER_GUILD_INVITE
+// Messenger header "add to guild" (reference EmbeddedWhisperDialog.AddGuildTarget): invite by name,
+// same checks as GUILD_SUBHEADER_CG_ADD_MEMBER; the target has to be on this core.
+ACMD(do_anka_guild_invite)
+{
+	if (!ch || !ch->IsPC())
+		return;
+
+	char arg1[CHARACTER_NAME_MAX_LEN + 1];
+	one_argument(argument, arg1, sizeof(arg1));
+	if (!*arg1)
+		return;
+
+	CGuild* pGuild = ch->GetGuild();
+	if (!pGuild)
+		return;
+
+	LPCHARACTER newmember = CHARACTER_MANAGER::instance().FindPC(arg1);
+	if (!newmember || !newmember->IsPC())
+	{
+		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] The person you were searching for cannot be found."));
+		return;
+	}
+
+#ifdef ENABLE_MESSENGER_BLOCK
+	if (MessengerManager::instance().IsBlocked(ch->GetName(), newmember->GetName()))
+	{
+		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Unblock %s to continue."), newmember->GetName());
+		return;
+	}
+	else if (MessengerManager::instance().IsBlocked(newmember->GetName(), ch->GetName()))
+	{
+		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s has blocked you."), newmember->GetName());
+		return;
+	}
+#endif
+
+	sys_log(0, "ANKA_GUILD_INVITE: %s -> %s (guild %u, target guild %u)", ch->GetName(), newmember->GetName(), pGuild->GetID(), newmember->GetGuild() ? newmember->GetGuild()->GetID() : 0);
+
+	// CGuild::Invite returns without a word while the invitee has a quest window open
+	if (quest::CQuestManager::instance().GetPCForce(newmember->GetPlayerID())->IsRunning())
+	{
+		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] The person standing opposite you cannot receive the invitation."));
+		return;
+	}
+
+	// Invite() reports its own refusals; the confirmation only follows an invite that can go out
+	const bool bCanReceive = !newmember->GetGuild() && newmember->GetEmpire() == ch->GetEmpire() && !newmember->IsBlockMode(BLOCK_GUILD_INVITE);
+	pGuild->Invite(ch, newmember);
+	if (bCanReceive)
+		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] You have invited %s to the guild."), newmember->GetName());
+}
+#endif
+
+#ifdef ENABLE_WHISPER_PLAYER_INFO
+#include "db.h"
+
+// Messenger conversation header (reference EmbeddedWhisperDialog.SetConversationInfo):
+// "AnkaWhisperInfo <name> <found> <empire> <race> <online> <guild or ->"
+ACMD(do_anka_whisper_info)
+{
+	if (!ch || !ch->IsPC())
+		return;
+
+	char arg1[CHARACTER_NAME_MAX_LEN + 1];
+	one_argument(argument, arg1, sizeof(arg1));
+	if (!*arg1)
+		return;
+
+	int found = 0, empire = 0, race = -1, online = 0;
+	std::string guild = "-";
+
+	LPCHARACTER tch = CHARACTER_MANAGER::instance().FindPC(arg1);
+	if (tch && tch->IsPC())
+	{
+		found = online = 1;
+		empire = tch->GetEmpire();
+		race = tch->GetRaceNum();
+		if (tch->GetGuild())
+			guild = tch->GetGuild()->GetName();
+	}
+	else
+	{
+		CCI* pkCCI = P2P_MANAGER::instance().Find(arg1);
+		if (pkCCI)
+			online = 1;
+
+		char szEscaped[CHARACTER_NAME_MAX_LEN * 2 + 1];
+		DBManager::instance().EscapeString(szEscaped, sizeof(szEscaped), arg1, strlen(arg1));
+		std::unique_ptr<SQLMsg> pMsg(DBManager::instance().DirectQuery(
+			"SELECT p.job, IFNULL(pi.empire, 0), IFNULL(g.name, '-') FROM player p "
+			"LEFT JOIN player_index pi ON pi.id = p.account_id "
+			"LEFT JOIN guild_member gm ON gm.pid = p.id "
+			"LEFT JOIN guild g ON g.id = gm.guild_id "
+			"WHERE p.name = '%s' LIMIT 1", szEscaped));
+		if (pMsg && pMsg->Get() && pMsg->Get()->uiNumRows > 0)
+		{
+			MYSQL_ROW row = mysql_fetch_row(pMsg->Get()->pSQLResult);
+			found = 1;
+			race = atoi(row[0]);
+			empire = atoi(row[1]);
+			guild = row[2];
+		}
+		if (pkCCI && !empire)
+			empire = pkCCI->bEmpire;
+	}
+
+	for (size_t i = 0; i < guild.size(); ++i)
+		if (guild[i] == ' ')
+			guild[i] = '\x1f';
+
+	ch->ChatPacket(CHAT_TYPE_COMMAND, "AnkaWhisperInfo %s %d %d %d %d %s", arg1, found, empire, race, online, guild.c_str());
+}
+#endif
+
+#if defined(ENABLE_WHISPER_OPEN_SHOP) && defined(ENABLE_RENEWAL_OFFLINESHOP)
+#include "offlineshop_manager.h"
+
+// Messenger header "open shop" (reference EmbeddedWhisperDialog.OpenShop)
+ACMD(do_anka_open_shop)
+{
+	if (!ch || !ch->IsPC())
+		return;
+
+	char arg1[CHARACTER_NAME_MAX_LEN + 1];
+	one_argument(argument, arg1, sizeof(arg1));
+	if (!*arg1)
+		return;
+
+	const DWORD dwOwnerPID = COfflineShopManager::instance().FindShopWithName(arg1);
+	if (!dwOwnerPID)
+	{
+		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s has no open shop."), arg1);
+		return;
+	}
+
+	COfflineShopManager::instance().OpenOfflineShopWithVID(ch, dwOwnerPID);
+}
+#endif
+
+#ifdef ENABLE_WHISPER_OFFLINE_MESSAGE
+#include "db.h"
+
+// Messenger offline message (reference: "<name> cevrimici degil. Cevrimdisi bir mesaj gonderilsin mi?",
+// 500.000 Yang). Stored in player.offline_message, handed over as "AnkaOfflineMsg <from> <time> <text>".
+ACMD(do_anka_offline_msg)
+{
+	if (!ch || !ch->IsPC())
+		return;
+
+	char arg1[CHARACTER_NAME_MAX_LEN + 1];
+	const char* rest = one_argument(argument, arg1, sizeof(arg1));
+	while (*rest == ' ')
+		++rest;
+	if (!*arg1 || !*rest)
+		return;
+
+	if (!strcasecmp(arg1, ch->GetName()))
+		return;
+
+	if (CHARACTER_MANAGER::instance().FindPC(arg1) || P2P_MANAGER::instance().Find(arg1))
+	{
+		ch->ChatPacket(CHAT_TYPE_COMMAND, "AnkaOfflineMsgResult 2 %s", arg1);	// online after all: client sends a normal whisper
+		return;
+	}
+
+	if (ch->GetGold() < WHISPER_OFFLINE_MESSAGE_COST)
+	{
+		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You do not have enough Yang to send an offline message."));
+		return;
+	}
+
+	char szName[CHARACTER_NAME_MAX_LEN * 2 + 1];
+	DBManager::instance().EscapeString(szName, sizeof(szName), arg1, strlen(arg1));
+	{
+		std::unique_ptr<SQLMsg> pExists(DBManager::instance().DirectQuery("SELECT name FROM player WHERE name = '%s' LIMIT 1", szName));
+		if (!pExists || !pExists->Get() || pExists->Get()->uiNumRows == 0)
+		{
+			ch->ChatPacket(CHAT_TYPE_COMMAND, "AnkaOfflineMsgResult 0 %s", arg1);
+			return;
+		}
+	}
+
+	std::string text(rest);
+	if (text.size() > 200)
+		text.resize(200);
+	for (size_t i = 0; i < text.size(); ++i)
+		if (text[i] == '\n' || text[i] == '\r' || text[i] == '\x1f')
+			text[i] = ' ';
+
+	char szFrom[CHARACTER_NAME_MAX_LEN * 2 + 1];
+	DBManager::instance().EscapeString(szFrom, sizeof(szFrom), ch->GetName(), strlen(ch->GetName()));
+	char szText[200 * 2 + 1];
+	DBManager::instance().EscapeString(szText, sizeof(szText), text.c_str(), text.size());
+
+	ch->PointChange(POINT_GOLD, -WHISPER_OFFLINE_MESSAGE_COST);
+	std::unique_ptr<SQLMsg> pInsert(DBManager::instance().DirectQuery(
+		"INSERT INTO offline_message (from_name, to_name, message, sent_at) VALUES ('%s', '%s', '%s', %u)",
+		szFrom, szName, szText, (unsigned)get_global_time()));
+
+	ch->ChatPacket(CHAT_TYPE_COMMAND, "AnkaOfflineMsgResult 1 %s", arg1);
+}
+
+void SendOfflineWhisperMessages(LPCHARACTER ch)
+{
+	if (!ch || !ch->IsPC())
+		return;
+
+	char szName[CHARACTER_NAME_MAX_LEN * 2 + 1];
+	DBManager::instance().EscapeString(szName, sizeof(szName), ch->GetName(), strlen(ch->GetName()));
+	std::unique_ptr<SQLMsg> pMsg(DBManager::instance().DirectQuery(
+		"SELECT id, from_name, sent_at, message FROM offline_message WHERE to_name = '%s' ORDER BY id LIMIT 50", szName));
+	if (!pMsg || !pMsg->Get() || pMsg->Get()->uiNumRows == 0)
+		return;
+
+	DWORD dwLastID = 0;
+	MYSQL_ROW row;
+	while ((row = mysql_fetch_row(pMsg->Get()->pSQLResult)))
+	{
+		dwLastID = strtoul(row[0], NULL, 10);
+		std::string text(row[3]);
+		for (size_t i = 0; i < text.size(); ++i)
+			if (text[i] == ' ')
+				text[i] = '\x1f';
+		ch->ChatPacket(CHAT_TYPE_COMMAND, "AnkaOfflineMsg %s %s %s", row[1], row[2], text.c_str());
+	}
+
+	std::unique_ptr<SQLMsg> pDelete(DBManager::instance().DirectQuery(
+		"DELETE FROM offline_message WHERE to_name = '%s' AND id <= %u", szName, dwLastID));
+}
+#endif
+
+#ifdef ENABLE_GUILD_APPLICATION
+#include "guild_application.h"
+ACMD(do_guild_app)
+{
+	GuildApplication_Command(ch, argument);
+}
+#endif
+
+#ifdef ENABLE_GUILD_DONATION
+#include "guild_donation.h"
+ACMD(do_guild_donate)
+{
+	GuildDonation_Donate(ch, argument);
+}
+
+ACMD(do_guild_donation_info)
+{
+	GuildDonation_Info(ch);
+}
+
+ACMD(do_guild_whisper)
+{
+	GuildDonation_Whisper(ch, argument);
+}
+#endif
+
+#ifdef ENABLE_GUILD_QUEST
+#include "guild_quest.h"
+ACMD(do_guild_quest)
+{
+	GuildQuest_Command(ch, argument);
+}
+
+ACMD(do_guild_quest_reward)
+{
+	GuildQuest_Reward(ch);
+}
+#endif
+
+#ifdef ENABLE_GUILD_SKILL_TREE
+#include "guild_skill.h"
+ACMD(do_guild_skill)
+{
+	GuildSkill_Command(ch, argument);
+}
+#endif
+
+#ifdef ENABLE_GUILD_SHOP
+#include "guild_shop.h"
+ACMD(do_guild_shop)
+{
+	GuildShop_Command(ch, argument);
 }
 #endif

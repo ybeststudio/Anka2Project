@@ -25,7 +25,11 @@ class CBuffOnAttributes
 		BYTE m_bBuffValue;
 		std::vector <BYTE>* m_p_vec_buff_wear_targets;
 
+#ifdef ENABLE_BONUS_FIX
+		typedef std::map <WORD, int> TMapAttr;
+#else
 		typedef std::map <BYTE, int> TMapAttr;
+#endif
 		TMapAttr m_map_additional_attrs;
 };
 

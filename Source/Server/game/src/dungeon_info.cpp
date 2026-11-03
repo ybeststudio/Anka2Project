@@ -396,6 +396,9 @@ struct FKillBossDungeon
 					char dungeon_total_finish[1024];
 					snprintf(dungeon_total_finish, sizeof(dungeon_total_finish), "dungeon_info.dungeon_finish_total_%d", CDungeonInfoExtern::instance().GetIdBoss(pChar->GetMapIndex()));
 					pChar->SetQuestFlag(dungeon_total_finish,pChar->GetQuestFlag(dungeon_total_finish)+1);
+#ifdef ENABLE_CHARACTER_STATS
+					pChar->SetQuestFlag("stats.dungeon", pChar->GetQuestFlag("stats.dungeon") + 1);
+#endif
 
 					char dungeon_time_room[1024];
 					snprintf(dungeon_time_room, sizeof(dungeon_time_room), "dungeon_info.dungeon_time_room_%d", map_index);

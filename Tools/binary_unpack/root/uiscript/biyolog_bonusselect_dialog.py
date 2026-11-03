@@ -44,7 +44,7 @@ window = {
 
 					"children" :
 					(
-						{ "name":"TitleName", "type":"text", "x":BOARD_WIDTH/2-7, "y":3, "text": "Bonus Seç", "text_horizontal_align":"center" },
+						{ "name":"TitleName", "type":"text", "x":BOARD_WIDTH/2-7, "y":3, "text": uiScriptLocale.BIOLOG_SELECT_BONUS, "text_horizontal_align":"center" },
 					),
 				},
 				{

@@ -945,6 +945,16 @@ void CInputDB::Boot(const char* data)
 		return;
 	}
 
+#ifdef ENABLE_APPLY_RANDOM
+	{
+		char szApplyRandomFileName[FILE_NAME_LEN];
+		snprintf(szApplyRandomFileName, sizeof(szApplyRandomFileName), "%s/apply_random_table.txt", LocaleService_GetBasePath().c_str());
+		if (ITEM_MANAGER::instance().ReadApplyRandomTableFile(szApplyRandomFileName))
+			sys_log(0, "LoadLocaleFile: ApplyRandomTable: %s", szApplyRandomFileName);
+		else
+			sys_err("cannot load ApplyRandomTable: %s (APPLY_RANDOM items get no base bonus)", szApplyRandomFileName);
+	}
+#endif
 	sys_log(0, "LoadLocaleFile: SpecialItemGroup: %s", szSpecialItemGroupFileName);
 	if (!ITEM_MANAGER::instance().ReadSpecialDropItemFile(szSpecialItemGroupFileName))
 	{
@@ -1535,6 +1545,10 @@ void CInputDB::ItemLoad(LPDESC d, const char * c_pData)
 		item->SetSkipSave(true);
 		item->SetSockets(p->alSockets);
 		item->SetAttributes(p->aAttr);
+#ifdef ENABLE_APPLY_RANDOM
+		item->SetApplyRandoms(p->aApplyRandom, p->abApplyRandomRow);
+		item->RollApplyRandom(true);
+#endif
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 		item->SetTransmutationVnum(p->dwTransmutationVnum);
 #endif

@@ -1400,6 +1400,9 @@ typedef struct packet_char_additional_info
 #ifdef ENABLE_GROWTH_PET_SYSTEM
 	BYTE bCharacterSize;
 #endif
+#ifdef ENABLE_SHINING_SYSTEM
+	DWORD adwShining[2];	// WEAR_SHINING_WEAPON, WEAR_SHINING_ARMOR
+#endif
 } TPacketGCCharacterAdditionalInfo;
 
 typedef struct packet_update_char
@@ -1430,6 +1433,9 @@ typedef struct packet_update_char
 #endif
 #ifdef ENABLE_GUILD_LEADER_TEXTAIL
 	BYTE dwGuildLeader;
+#endif
+#ifdef ENABLE_SHINING_SYSTEM
+	DWORD adwShining[2];
 #endif
 } TPacketGCCharacterUpdate;
 
@@ -1632,7 +1638,7 @@ struct TPacketGCItemDelDeprecated
 	DWORD dwSetValue;
 #endif
 #ifdef ENABLE_SEALBIND_SYSTEM
-	long sealbind;
+	int32_t sealbind; // client long = 4 bytes (Windows), long = 8 on FreeBSD x64
 #endif
 };
 
@@ -1658,7 +1664,10 @@ typedef struct packet_item_set
 	DWORD dwSetValue;
 #endif
 #ifdef ENABLE_SEALBIND_SYSTEM
-	long sealbind;
+	int32_t sealbind; // client long = 4 bytes (Windows), long = 8 on FreeBSD x64
+#endif
+#ifdef ENABLE_APPLY_RANDOM
+	TPlayerItemAttribute aApplyRandom[ITEM_APPLY_MAX_NUM];
 #endif
 } TPacketGCItemSet;
 
@@ -1706,7 +1715,10 @@ typedef struct packet_item_update
 	DWORD dwSetValue;
 #endif
 #ifdef ENABLE_SEALBIND_SYSTEM
-	long sealbind;
+	int32_t sealbind; // client long = 4 bytes (Windows), long = 8 on FreeBSD x64
+#endif
+#ifdef ENABLE_APPLY_RANDOM
+	TPlayerItemAttribute aApplyRandom[ITEM_APPLY_MAX_NUM];
 #endif
 } TPacketGCItemUpdate;
 
@@ -1890,6 +1902,9 @@ struct packet_exchange
 #endif
 #ifdef ENABLE_SET_ITEM
 	DWORD dwSetValue;
+#endif
+#ifdef ENABLE_SEALBIND_SYSTEM
+	int32_t sealbind; // client TPacketGCExchange has it, the packet was 4 bytes short
 #endif
 };
 
@@ -2891,6 +2906,9 @@ typedef struct packet_affect_add
 {
 	BYTE bHeader;
 	TPacketAffectElement elem;
+#ifdef ENABLE_AFFECT_CAST_STAT
+	int32_t lCastStat;
+#endif
 } TPacketGCAffectAdd;
 
 typedef struct packet_affect_remove

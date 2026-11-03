@@ -48,6 +48,10 @@
 #ifdef ENABLE_BUFFI_SYSTEM
 #include "buffi_system.h"
 #endif
+#ifdef ENABLE_GUILD_SKILL_TREE
+#include "guild.h"
+#include "guild_skill.h"
+#endif
 #endif
 
 #ifdef ENABLE_QUEEN_NETHIS
@@ -546,6 +550,9 @@ void CHARACTER::SetItem(TItemPos Cell, LPITEM pItem)
 #endif
 #ifdef ENABLE_SEALBIND_SYSTEM
 			pack.sealbind = pItem->GetSealDate();
+#endif
+#ifdef ENABLE_APPLY_RANDOM
+			thecore_memcpy(pack.aApplyRandom, pItem->GetApplyRandoms(), sizeof(pack.aApplyRandom));
 #endif
 
 			GetDesc()->Packet(&pack, sizeof(TPacketGCItemSet));
@@ -1406,6 +1413,9 @@ void TransformRefineItem(LPITEM pkOldItem, LPITEM pkNewItem)
 	}
 
 	pkOldItem->CopyAttributeTo(pkNewItem);
+#ifdef ENABLE_APPLY_RANDOM
+	pkNewItem->TransferApplyRandom(pkOldItem);
+#endif
 }
 
 void NotifyRefineSuccess(LPCHARACTER ch, LPITEM item, const char* way)
@@ -1895,6 +1905,10 @@ bool CHARACTER::DoRefineWithScroll(LPITEM item
 	if (pkItemScroll->GetVnum() == 39022 || pkItemScroll->GetVnum() == 71032 || pkItemScroll->GetVnum() == 76009)
 		success_prob = prt->prob + 10;
 
+#ifdef ENABLE_GUILD_SKILL_TREE
+	if (GetGuild())
+		success_prob += GuildSkill_GetValue(GetGuild(), GUILD_SKILL_TREE_REFINE);
+#endif
 	if (test_server)
 	{
 		ChatPacket(CHAT_TYPE_INFO, "[Only Test] Success_Prob %d, RefineLevel %d ", success_prob, item->GetRefineLevel());
@@ -3174,6 +3188,9 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 		case ITEM_PICK:
 #ifdef ENABLE_PASSIVE_SYSTEM
 		case ITEM_PASSIVE:
+#endif
+#ifdef ENABLE_SHINING_SYSTEM
+		case ITEM_SHINING:
 #endif
 			if (!item->IsEquipped())
 				EquipItem(item);
@@ -9335,6 +9352,11 @@ bool CHARACTER::UnequipItem(LPITEM item)
 
 	CheckMaximumPoints();
 
+#ifdef ENABLE_SHINING_SYSTEM
+	if (item->GetType() == ITEM_SHINING)
+		UpdatePacket();
+#endif
+
 	return true;
 }
 
@@ -9641,6 +9663,11 @@ bool CHARACTER::EquipItem(LPITEM item, int iCandidateCell)
 			this->EffectPacket(SE_EFFECT_ACCE_EQUIP);
 #endif
 	}
+
+#ifdef ENABLE_SHINING_SYSTEM
+	if (item->GetType() == ITEM_SHINING)
+		UpdatePacket();	// the glow is drawn by every client from the update packet
+#endif
 
 	return true;
 }

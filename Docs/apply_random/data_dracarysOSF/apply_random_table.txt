@@ -1,0 +1,431 @@
+# Apply Random Tables...
+
+# Table starts with "Group" and "Name".
+# There can be other tables inside a table.
+# However, the server does not recognize that the wrong table is written.
+
+# The required table names and strucutre is as follows.
+
+# Group ApplyRandomMapper
+# {
+#	#--#	Group_Name
+#	1	ApplyList1
+# }
+#
+# Group ApplyRandomTypes
+# {
+#	Group ApplyList1
+#	{
+#		#--#	Apply_Type	Apply_Value_Group_Name
+#		1	ATTBONUS_HUMAN	SomeValueGroupName
+#	}
+# }
+#
+# Group ApplyRandomValues
+# {
+#	Group SomeValueGroupName
+#	{
+#		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+#		PATH1	x	x	x	x	x	x	x	x	x	x	x	x	x	x	x	x
+#		PATH2	x	x	x	x	x	x	x	x	x	x	x	x	x	x	x	x
+#	}
+# }
+#
+
+# Important !!!
+# If you look at the table, there is a part written #--#, never delete it and what's after it.
+
+# This is the apply group name mapping.
+# With this, we can find the group that belongs to the apply random index.
+# Never delete or modify "ApplyList" postfix.
+
+# 2022.03.30.Owsap.
+
+Group ApplyRandomMapper
+{
+	#--#	Group_Name
+	1	ApplyList1
+	2	ApplyList2
+	3	ApplyList3
+	4	ApplyList4
+	6	ApplyList6
+	7	ApplyList7
+	8	ApplyList8
+	9	ApplyList9
+	10	ApplyList10
+	11	ApplyList11
+	12	ApplyList12
+	13	ApplyList13
+	18	ApplyList18
+	19	ApplyList19
+	20	ApplyList20
+	21	ApplyList21
+	22	ApplyList22
+	23	ApplyList23
+	24	ApplyList24
+	25	ApplyList25
+	26	ApplyList26
+	27	ApplyList27
+}
+
+Group ApplyRandomTypes
+{
+	##########################################################################
+	## Sung Ma Gloves
+	##########################################################################
+
+	Group ApplyList1
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_STR	SungMaGlove
+	}
+	Group ApplyList2
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_MOVE	SungMaGlove
+	}
+	Group ApplyList3
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_HP	SungMaGlove
+	}
+	Group ApplyList4
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_IMMUNE	SungMaGlove
+	}
+
+	##########################################################################
+	## Sung Ma Bracelets
+	##########################################################################
+
+	Group ApplyList6
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_MOVE	SungMaBracelet
+	}
+	Group ApplyList7
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_IMMUNE	SungMaBracelet
+	}
+	Group ApplyList8
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_HP	SungMaBracelet
+	}
+	Group ApplyList9
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_STR	SungMaBracelet
+	}
+
+	##########################################################################
+	## Sung Ma Talisman
+	##########################################################################
+
+	Group ApplyList10
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_STR	SungMaTalisman
+	}
+	Group ApplyList11
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_MOVE	SungMaTalisman
+	}
+	Group ApplyList12
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_HP	SungMaTalisman
+	}
+	Group ApplyList13
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_IMMUNE	SungMaTalisman
+	}
+
+	##########################################################################
+	## Serpent Weapons
+	##########################################################################
+
+	Group ApplyList18
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	NORMAL_HIT_DAMAGE_BONUS	SW18A
+		2	ATTBONUS_ANIMAL	SW18B
+		3	ATTBONUS_ORC	SW18B
+		4	ATTBONUS_MILGYO	SW18B
+		5	ATTBONUS_UNDEAD	SW18B
+		6	ATTBONUS_DEVIL	SW18B
+		7	ATTBONUS_HUMAN	SW18C
+	}
+	Group ApplyList19
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	ATT_SPEED	SW19A
+		2	ATTBONUS_INSECT	SW19B
+		3	ATTBONUS_CZ	SW19B
+		4	ATTBONUS_MONSTER	SW19C
+		5	SUNGMA_STR	SW19D
+		6	SUNGMA_HP	SW19D
+		7	SUNGMA_MOVE	SW19D
+		8	SUNGMA_IMMUNE	SW19D
+	}
+	Group ApplyList20
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	ATTBONUS_STONE	SW20A
+		2	SKILL_DAMAGE_BONUS	SW20B
+		3	ATTBONUS_DESERT	SW20C
+		4	CAST_SPEED	SW20C
+		5	STEAL_SP	SW20D
+		6	STUN_PCT	SW20D
+		7	SLOW_PCT	SW20D
+		8	EXP_DOUBLE_BONUS	SW20E
+	}
+
+	##########################################################################
+	## Serpent Armor
+	##########################################################################
+
+	Group ApplyList21
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	HP_REGEN	SA21A
+		2	MAX_HP	SA21B
+		3	POISON_REDUCE	SA21C
+		4	BLEEDING_REDUCE	SA21C
+		5	NORMAL_HIT_DEFEND_BONUS	SA21D
+		6	SKILL_DEFEND_BONUS	SA21D
+	}
+	Group ApplyList22
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_STR	SA22
+		2	SUNGMA_HP	SA22
+		3	SUNGMA_MOVE	SA22
+		4	SUNGMA_IMMUNE	SA22
+	}
+	Group ApplyList23
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	MOV_SPEED	SA23A
+		2	ATTBONUS_MONSTER	SA23B
+		3	RESIST_MAGIC	SA23C
+		4	STEAL_HP	SA23D
+		5	STEAL_SP	SA23D
+	}
+
+	##########################################################################
+	## Sung Ma Special Gloves
+	##########################################################################
+
+	Group ApplyList24
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_STR	SungMaSpecialGlove
+	}
+	Group ApplyList25
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_MOVE	SungMaSpecialGlove
+	}
+	Group ApplyList26
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_HP	SungMaSpecialGlove
+	}
+	Group ApplyList27
+	{
+		#--#	Apply_Type	Apply_Value_Group_Name
+		1	SUNGMA_IMMUNE	SungMaSpecialGlove
+	}
+}
+
+Group ApplyRandomValues
+{
+	##########################################################################
+	## Sung Ma Gloves
+	##########################################################################
+
+	Group SungMaGlove
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	3	5	9	14	19	24	29	34	39	58	0	0	0	0	0	0
+		PATH2	7	11	17	22	28	34	40	46	52	63	0	0	0	0	0	0
+	}
+
+	##########################################################################
+	## Sung Ma Bracelets
+	##########################################################################
+
+	Group SungMaBracelet
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1	3	5	7	9	11	13	15	18	21	0	0	0	0	0	0
+		PATH2	2	4	6	8	10	12	14	17	20	24	0	0	0	0	0	0
+	}
+
+	#\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	#> Sung Ma Talisman
+	#\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+	Group SungMaTalisman
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	0	1	3	5	7	9	11	14	17	21	0	0	0	0	0	0
+		PATH2	2	3	4	6	8	10	13	16	19	24	0	0	0	0	0	0
+	}
+
+	##########################################################################
+	## Serpent Weapons
+	##########################################################################
+
+	Group SW18A
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	2	3	4	5	6	7	8	9	10	13	14	15	16	17	18	25
+		PATH2	4	6	7	8	9	10	11	13	16	19	22	25	28	31	34	40
+	}
+	Group SW18B
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1	1	2	2	3	5	5	6	7	8	9	10	11	12	13	15
+		PATH2	3	4	5	6	7	8	9	10	11	15	16	17	18	19	20	30
+	}
+	Group SW18C
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1	1	2	2	3	4	5	6	7	8	9	10	11	12	13	15
+		PATH2	2	2	4	5	6	7	8	9	10	13	14	15	16	17	28	30
+	}
+
+	Group SW19A
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	13	13	14	14	15	16	17	18	19	20	21	22	23	24	25	30
+		PATH2	16	17	18	19	20	21	22	23	24	26	27	28	30	32	32	45
+	}
+	Group SW19B
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1	1	2	3	4	5	5	6	7	8	9	10	11	12	13	15
+		PATH2	3	4	5	6	7	8	9	10	11	15	16	17	18	19	20	25
+	}
+	Group SW19C
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1	1	2	3	4	5	5	6	7	8	9	10	11	12	13	15
+		PATH2	2	4	5	6	7	8	9	10	11	15	16	17	18	19	20	25
+	}
+	Group SW19D
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	2	4	6	8	10	12	14	16	18	21	23	25	27	30	33	40
+		PATH2	5	7	9	10	13	15	17	19	21	24	27	29	31	33	36	47
+	}
+
+	Group SW20A
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		path1	1	1	2	2	3	4	5	6	7	8	9	10	11	12	13	15
+		path2	1	2	3	3	4	5	6	7	8	9	10	11	12	13	14	18
+	}
+	Group SW20B
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	2	3	4	5	6	7	8	9	10	13	14	15	16	17	18	25
+		PATH2	4	6	7	8	9	10	11	13	16	19	22	25	28	31	34	40
+	}
+	Group SW20C
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1	1	2	3	4	4	5	6	7	8	9	10	11	12	13	15
+		PATH2	3	4	5	6	7	8	9	10	11	15	16	17	18	19	20	25
+	}
+	Group SW20D
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1	1	2	2	3	4	5	6	7	8	9	10	11	12	13	15
+		PATH2	2	3	4	5	6	7	8	9	10	13	14	15	16	17	18	25
+	}
+	Group SW20E
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1	1	2	3	3	4	5	6	7	8	9	10	11	12	13	15
+		PATH2	3	4	5	6	7	8	9	10	17	13	16	17	18	19	20	30
+	}
+
+	##########################################################################
+	## Serpent Armors
+	##########################################################################
+
+	Group SA21A
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1	1	2	2	3	4	5	6	7	8	9	10	11	12	13	15
+		PATH2	1	3	4	5	6	7	8	9	10	13	14	15	16	17	18	20
+	}
+	Group SA21B
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1550	1800	2000	2250	2500	2750	3000	3250	3500	4000	4250	4500	4750	5000	5350	6000
+		PATH2	1775	2000	2200	2450	2700	2950	3200	3450	3700	4400	4600	4800	5100	5300	5800	6500
+	}
+	Group SA21C
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1	1	2	2	3	4	5	6	7	8	9	10	11	12	13	15
+		PATH2	2	3	4	5	6	7	8	9	10	13	14	15	16	17	18	25
+	}
+	Group SA21D
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1	1	2	2	3	4	5	6	7	8	9	10	11	12	13	15
+		PATH2	1	2	3	3	4	5	6	7	8	9	10	11	12	13	14	18
+	}
+
+	Group SA22
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	2	4	6	8	10	12	14	16	18	21	23	25	27	30	33	40
+		PATH2	6	8	10	12	14	16	19	21	23	26	29	31	33	36	39	47
+	}
+
+	Group SA23A
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	-15	-12	-10	-9	-6	-4	-2	-1	1	2	3	4	5	6	10	12
+		PATH2	-9	-4	-4	-2	1	2	3	4	5	6	7	8	9	10	20	25
+	}
+	Group SA23B
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1	1	2	2	3	4	5	6	7	8	9	10	11	12	13	15
+		PATH2	2	2	3	3	4	5	6	7	8	9	10	11	12	13	14	18
+	}
+	Group SA23C
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1	1	2	2	3	4	5	6	7	8	9	10	11	12	13	15
+		PATH2	3	4	5	6	7	8	9	10	11	12	14	17	18	19	20	30
+	}
+	Group SA23D
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	1	2	2	2	3	4	5	6	7	8	9	10	11	12	13	15
+		PATH2	2	3	4	5	6	7	8	9	10	13	14	15	16	17	18	25
+	}
+
+	##########################################################################
+	## Sung Ma Special Gloves
+	##########################################################################
+
+	Group SungMaSpecialGlove
+	{
+		#--#	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+		PATH1	6	10	14	19	24	30	36	42	49	69	0	0	0	0	0	0
+		PATH2	9	13	19	25	31	38	44	50	58	78	0	0	0	0	0	0
+	}
+}

@@ -1,6 +1,9 @@
 #include "stdafx.h"
 #include "utils.h"
 #include "config.h"
+#ifdef ENABLE_BONUS_FIX
+#include "bonus_custom.h"
+#endif
 #include "desc.h"
 #include "desc_manager.h"
 #include "char_manager.h"
@@ -38,6 +41,9 @@
 #include <random>
 #include <algorithm>
 #include "../../common/service.h"
+#ifdef ENABLE_GUILD_QUEST
+#include "guild_quest.h"
+#endif
 #ifdef ENABLE_BUFFI_SYSTEM
 #include "buffi_system.h"
 #endif
@@ -1656,6 +1662,16 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 	}
 #endif
 
+#ifdef ENABLE_GUILD_QUEST
+	if (!IsPC() && pkKiller && pkKiller->IsPC())
+	{
+		if (IsStone())
+			GuildQuest_AddProgress(pkKiller, GUILD_QUEST_METIN);
+		else if (IsMonster() && GetMobRank() >= MOB_RANK_BOSS)
+			GuildQuest_AddProgress(pkKiller, GUILD_QUEST_BOSS);
+	}
+#endif
+
 #ifdef ENABLE_STONE_EVENT_SYSTEM
 	if (!IsPC() && pkKiller && pkKiller->IsPC())
 	{
@@ -2864,7 +2880,11 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 		if (type == DAMAGE_TYPE_NORMAL)
 		{
 			// Can be blocked if it is close to flat
+#ifdef ENABLE_BONUS_FIX
+			if (GetPoint(POINT_BLOCK) && number(1, 100) <= GetPoint(POINT_BLOCK) && !BonusCustom::IgnoreBlock(pAttacker, this))
+#else
 			if (GetPoint(POINT_BLOCK) && number(1, 100) <= GetPoint(POINT_BLOCK))
+#endif
 			{
 				if (test_server)
 				{
@@ -3153,6 +3173,15 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 #endif
 
 			dam = dam * (100 - MIN(99, GetPoint(POINT_NORMAL_HIT_DEFEND_BONUS))) / 100;
+#ifdef ENABLE_BONUS_FIX
+			if (pAttacker && IsNPC() && GetMobRank() >= MOB_RANK_BOSS)
+				dam = dam * (100 + pAttacker->GetPoint(POINT_NORMAL_HIT_DAMAGE_BONUS_BOSS_OR_MORE)) / 100;
+			if (pAttacker && pAttacker->IsNPC() && pAttacker->GetMobRank() >= MOB_RANK_BOSS)
+				dam = dam * (100 - MIN(99, GetPoint(POINT_NORMAL_HIT_DEFEND_BONUS_BOSS_OR_MORE))) / 100;
+			// official: "X% chance to block attack damage"
+			if (GetPoint(POINT_NORMAL_DAMAGE_GUARD) > 0 && number(1, 100) <= GetPoint(POINT_NORMAL_DAMAGE_GUARD))
+				dam = 0;
+#endif
 			break;
 
 		case DAMAGE_TYPE_MELEE:
@@ -3166,11 +3195,22 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 					dam = dam * (100 + pAttacker->GetPoint(POINT_SKILL_DAMAGE_BONUS)) / 100;
 
 			dam = dam * (100 - MIN(99, GetPoint(POINT_SKILL_DEFEND_BONUS))) / 100;
+#ifdef ENABLE_BONUS_FIX
+			if (pAttacker && IsNPC() && GetMobRank() >= MOB_RANK_BOSS)
+				dam = dam * (100 + pAttacker->GetPoint(POINT_SKILL_DAMAGE_BONUS_BOSS_OR_MORE)) / 100;
+			if (pAttacker && pAttacker->IsNPC() && pAttacker->GetMobRank() >= MOB_RANK_BOSS)
+				dam = dam * (100 - MIN(99, GetPoint(POINT_SKILL_DEFEND_BONUS_BOSS_OR_MORE))) / 100;
+#endif
 			break;
 
 		default:
 			break;
 	}
+
+#ifdef ENABLE_BONUS_FIX
+	if (GetPoint(POINT_MORE_THEN_HP90_DAMAGE_REDUCE) > 0 && (long long) GetHP() * 100 >= (long long) GetMaxHP() * 90)
+		dam = dam * (100 - MIN(99, GetPoint(POINT_MORE_THEN_HP90_DAMAGE_REDUCE))) / 100;
+#endif
 
 	//
 	// Mana Shield (Black God Guardian)
@@ -3591,6 +3631,13 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 		UpdateAggrPointEx(pAttacker, type, dam, it->second);
 	}
 
+#ifdef ENABLE_BONUS_FIX
+	if (pAttacker)
+		BonusCustom::OnDamageDealt(pAttacker, this, dam, type);
+	if (GetHP() <= 0 && BonusCustom::TryEvadeDeath(this))
+		;
+	else
+#endif
 	if (GetHP() <= 0)
 	{
 		Stun();
@@ -3612,6 +3659,11 @@ void CHARACTER::DistributeHP(LPCHARACTER pkKiller)
 
 static void GiveExp(LPCHARACTER from, LPCHARACTER to, int iExp)
 {
+#ifdef ENABLE_BONUS_FIX
+	// "No experience will be earned."
+	if (BonusCustom::IsExpRefused(to))
+		return;
+#endif
 	iExp = CALCULATE_VALUE_LVDELTA(to->GetLevel(), from->GetLevel(), iExp);
 #ifdef ENABLE_BUFFI_SYSTEM
 	CBuffiManager::instance().OnOwnerGainExp(to, iExp);
@@ -4230,7 +4282,11 @@ class CFuncShoot
 					NormalAttackAffect(m_me, pkVictim);
 
 					// Damage calculation
+#ifdef ENABLE_BONUS_FIX
+					iDam = iDam * (100 - (pkVictim->GetPoint(POINT_RESIST_BOW) - m_me->GetPoint(POINT_ATTBONUS_BOW))) / 100;
+#else
 					iDam = iDam * (100 - pkVictim->GetPoint(POINT_RESIST_BOW)) / 100;
+#endif
 
 					//sys_log(0, "%s arrow %s dam %d", m_me->GetName(), pkVictim->GetName(), iDam);
 
@@ -4262,7 +4318,11 @@ class CFuncShoot
 
 					// Damage calculation
 #ifdef ENABLE_MAGIC_REDUCTION_SYSTEM
+#ifdef ENABLE_BONUS_FIX
+					const int resist_magic = MINMAX(0, pkVictim->GetPoint(POINT_RESIST_MAGIC) * (100 + pkVictim->GetPoint(POINT_RESIST_PER_MAGIC)) / 100, 100);
+#else
 					const int resist_magic = MINMAX(0, pkVictim->GetPoint(POINT_RESIST_MAGIC), 100);
+#endif
 					const int resist_magic_reduction = MINMAX(0, (m_me->GetJob() == JOB_SURA) ? m_me->GetPoint(POINT_RESIST_MAGIC_REDUCTION) / 2 : m_me->GetPoint(POINT_RESIST_MAGIC_REDUCTION), 50);
 					const int total_res_magic = MINMAX(0, resist_magic - resist_magic_reduction, 100);
 					iDam = iDam * (100 - total_res_magic) / 100;

@@ -1,0 +1,143 @@
+{{Ekipman
+|Ekipmanisim = Küpe
+|Level = 105
+|Seviye = 105
+|ZihinTaşı = Gece Jediti
+|Sınıf = Savaşçı, Ninja, Sura, Şaman, Lycan
+|EldeEdiliş =
+* '''Canavarlar:''' -
+
+* '''Metinler:''' -
+
+* '''Sandıklar:''' {{Icon|Kusursuz Bileklik Sandığı}} [[Kusursuz Bileklik Sandığı]]
+
+* '''Görevler:''' -
+
+* '''Diğer:''' [[Chi Usta]]
+*: '''Üretim:''' 
+*:: {{Icon2|Gece Jediti}} x10 <br> {{Icon2|Demirhane Çelik Plakası}} x25 <br> {{Icon2|Argos Dişi}} x5 <br> {{Icon2|Yang|1.000.000 Yang}} <br> {{Icon2|Gaya|300 Gaya}}
+:::: '''Üretim Şansı:''' %30
+
+* '''Parça Çeşidi:''' {{Icon2|Sarı Parlak Parça}}
+|Yang1 = 250.000
+|Yang2 = 300.000
+|Yang3 = 350.000
+|Yang4 = 400.000
+|Yang5 = 450.000
+|Yang6 = 500.000
+|Yang7 = 550.000
+|Yang8 = 600.000
+|Yang9 = 650.000
+
+|Upgradeitem-1-4 = 15x {{Icon|Ham Metal Plaka}}
+|Upgradeitem-1-5 = 20x {{Icon|Ham Metal Plaka}}
+|Upgradeitem-1-6 = 25x {{Icon|Ham Metal Plaka}}
+|Upgradeitem-1-7 = 15x {{Icon|Demirhane Çelik Plakası}}
+|Upgradeitem-1-8 = 20x {{Icon|Demirhane Çelik Plakası}}
+|Upgradeitem-1-9 = 25x {{Icon|Demirhane Çelik Plakası}}
+
+|Upgradeitem-2-4 = 5x {{Icon|Trol Kornosu}}
+|Upgradeitem-2-5 = 7x {{Icon|Trol Kornosu}}
+|Upgradeitem-2-6 = 10x {{Icon|Trol Kornosu}}
+|Upgradeitem-2-7 = 5x {{Icon|Takı Çelik Plakası}}
+|Upgradeitem-2-8 = 7x {{Icon|Takı Çelik Plakası}}
+|Upgradeitem-2-9 = 10x {{Icon|Takı Çelik Plakası}}
+
+
+|Upgradeitem-3-7 = 1x {{Icon|Beyaz İnci}}
+|Upgradeitem-3-8 = 1x {{Icon|Mavi İnci}}
+|Upgradeitem-3-9 = 1x {{Icon|Kankırmızı İnci}}
+
+|Bonus1 = Tamlık
+|Bonus1-Abk = 
+|Bonus1-0 = <font color=yellow>+1</font>&nbsp;/&nbsp;<font color=orange>+2</font>
+|Bonus1-1 = <font color=yellow>+2</font>&nbsp;/&nbsp;<font color=orange>+3</font>
+|Bonus1-2 = <font color=yellow>+3</font>&nbsp;/&nbsp;<font color=orange>+4</font>
+|Bonus1-3 = <font color=yellow>+4</font>&nbsp;/&nbsp;<font color=orange>+5</font>
+|Bonus1-4 = <font color=yellow>+5</font>&nbsp;/&nbsp;<font color=orange>+6</font>
+|Bonus1-5 = <font color=yellow>+6</font>&nbsp;/&nbsp;<font color=orange>+7</font>
+|Bonus1-6 = <font color=yellow>+7</font>&nbsp;/&nbsp;<font color=orange>+8</font>
+|Bonus1-7 = <font color=yellow>+8</font>&nbsp;/&nbsp;<font color=orange>+10</font>
+|Bonus1-8 = <font color=yellow>+9</font>&nbsp;/&nbsp;<font color=orange>+11</font>
+|Bonus1-9 = <font color=yellow>+10</font>&nbsp;/&nbsp;<font color=orange>+14</font>
+
+|Bonus2 = SungMa İradesi (VIT)
+|Bonus2-Abk = SungMa (VIT)
+|Bonus2-0 = <font color=yellow>1</font>&nbsp;/&nbsp;<font color=orange>2</font>
+|Bonus2-1 = <font color=yellow>3</font>&nbsp;/&nbsp;<font color=orange>4</font>
+|Bonus2-2 = <font color=yellow>5</font>&nbsp;/&nbsp;<font color=orange>6</font>
+|Bonus2-3 = <font color=yellow>7</font>&nbsp;/&nbsp;<font color=orange>8</font>
+|Bonus2-4 = <font color=yellow>9</font>&nbsp;/&nbsp;<font color=orange>10</font>
+|Bonus2-5 = <font color=yellow>11</font>&nbsp;/&nbsp;<font color=orange>12</font>
+|Bonus2-6 = <font color=yellow>13</font>&nbsp;/&nbsp;<font color=orange>14</font>
+|Bonus2-7 = <font color=yellow>15</font>&nbsp;/&nbsp;<font color=orange>17</font>
+|Bonus2-8 = <font color=yellow>18</font>&nbsp;/&nbsp;<font color=orange>20</font>
+|Bonus2-9 = <font color=yellow>21</font>&nbsp;/&nbsp;<font color=orange>24</font>
+
+|Verb1-1-0 = +1
+|Verb1-1-1 = +1
+|Verb1-1-2 = +1
+|Verb1-1-3 = +1
+|Verb1-1-4 = +1
+|Verb1-1-5 = +1
+|Verb1-1-6 = +1
+|Verb1-1-7 = +1
+|Verb1-1-8 = +1
+|Verb1-1-9 = +1
+
+|Verb1-2-0 = +1
+|Verb1-2-1 = +1
+|Verb1-2-2 = +1
+|Verb1-2-3 = +1
+|Verb1-2-4 = +1
+|Verb1-2-5 = +1
+|Verb1-2-6 = +1
+|Verb1-2-7 = +1
+|Verb1-2-8 = +1
+|Verb1-2-9 = +1
+
+|Verb1-3-0 = +1
+|Verb1-3-1 = +1
+|Verb1-3-2 = +1
+|Verb1-3-3 = +1
+|Verb1-3-4 = +1
+|Verb1-3-5 = +1
+|Verb1-3-6 = +1
+|Verb1-3-7 = +1
+|Verb1-3-8 = +1
+|Verb1-3-9 = <font color=yellow>+2</font>&nbsp;/&nbsp;<font color=orange>+3</font>
+
+|Verb2-1-0 = 1
+|Verb2-1-1 = 1
+|Verb2-1-2 = 1
+|Verb2-1-3 = 1
+|Verb2-1-4 = 1
+|Verb2-1-5 = 1
+|Verb2-1-6 = 1
+|Verb2-1-7 = 1
+|Verb2-1-8 = <font color=yellow>1</font>&nbsp;/&nbsp;<font color=orange>2</font>
+|Verb2-1-9 = 2
+
+|Verb2-2-0 = 1
+|Verb2-2-1 = 1
+|Verb2-2-2 = 1
+|Verb2-2-3 = 1
+|Verb2-2-4 = 1
+|Verb2-2-5 = 1
+|Verb2-2-6 = 1
+|Verb2-2-7 = 2
+|Verb2-2-8 = 2
+|Verb2-2-9 = 2
+
+|Verb2-3-0 = 1
+|Verb2-3-1 = 1
+|Verb2-3-2 = 1
+|Verb2-3-3 = 1
+|Verb2-3-4 = 1
+|Verb2-3-5 = 2
+|Verb2-3-6 = 3
+|Verb2-3-7 = 3
+|Verb2-3-8 = 4
+|Verb2-3-9 = <font color=yellow>4</font>&nbsp;/&nbsp;<font color=orange>5</font>
+}}
+{{Bilezik Bonusları}}

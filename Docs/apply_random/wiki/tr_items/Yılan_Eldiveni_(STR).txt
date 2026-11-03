@@ -1,0 +1,87 @@
+{{Ekipman
+|Ekipmanisim = Eldiven
+|Level = 120
+|Seviye = 120
+|Sınıf = Savaşçı, Ninja, Sura, Şaman, Lycan
+|EldeEdiliş =
+* '''Canavarlar:''' -
+
+* '''Metinler:''' -
+
+* '''Sandıklar:''' -
+
+* '''Görevler:''' -
+
+* '''Diğer:''' [[Chi Usta]]
+*: '''Üretim:''' 
+*:: {{Icon2|Güç Eldiveni}} x1 <br> {{Icon2|Akik}} x1 <br> {{Icon2|Titandiyoksit}} x1 <br> {{Icon2|Ay Taşı}} x1 <br> {{Icon2|Yang|10.000.000 Yang}}
+:::: '''Üretim Şansı:''' ''Değişken'' <br> 
+:::*Eldiven, '''(+0)''': ''30%''
+:::*Eldiven, '''(+1)''': ''50%''
+:::*Eldiven, '''(+2)''': ''60%''
+:::*Eldiven, '''(+3)''': ''65%''
+:::*Eldiven, '''(+4)''': ''70%''
+:::*Eldiven, '''(+5)''': ''75%''
+:::*Eldiven, '''(+6)''': ''80%''
+:::*Eldiven, '''(+7)''': ''85%''
+:::*Eldiven, '''(+8)''': ''90%''
+:::*Eldiven, '''(+9)''': ''100%''<br> ''(Yeni Eldiven, eski eldivenin bonuslarını saklamaz, '''silinir!''')''
+
+* '''Parça Çeşidi:''' {{Icon2|Kutsal Parça (120)}}
+
+|Yang1 = 250.000
+|Yang2 = 300.000
+|Yang3 = 350.000
+|Yang4 = 400.000
+|Yang5 = 450.000
+|Yang6 = 500.000
+|Yang7 = 550.000
+|Yang8 = 600.000
+|Yang9 = 650.000
+
+|Upgradeitem-1-1 = 10x {{Icon|Kuzey Rüzgarı Eldiven Taşı}}
+|Upgradeitem-1-2 = 20x {{Icon|Kuzey Rüzgarı Eldiven Taşı}}
+|Upgradeitem-1-3 = 30x {{Icon|Kuzey Rüzgarı Eldiven Taşı}}
+|Upgradeitem-1-4 = 40x {{Icon|Kuzey Rüzgarı Eldiven Taşı}}
+|Upgradeitem-1-5 = 50x {{Icon|Kuzey Rüzgarı Eldiven Taşı}}
+|Upgradeitem-1-6 = 50x {{Icon|Kuzey Rüzgarı Eldiven Taşı}}
+|Upgradeitem-1-7 = 100x {{Icon|Kuzey Rüzgarı Eldiven Taşı}}
+|Upgradeitem-1-8 = 100x {{Icon|Kuzey Rüzgarı Eldiven Taşı}}
+|Upgradeitem-1-9 = 200x {{Icon|Kuzey Rüzgarı Eldiven Taşı}}
+
+|Upgradeitem-2-3 = 1x {{Icon|Beyaz İnci}}
+|Upgradeitem-2-4 = 1x {{Icon|Mavi İnci}}
+|Upgradeitem-2-5 = 1x {{Icon|Kankırmızı İnci}}
+|Upgradeitem-2-6 = 1x {{Icon|Parıltılı Beyaz İnci}}
+|Upgradeitem-2-7 = 1x {{Icon|Parıltılı Mavi İnci}}
+|Upgradeitem-2-8 = 1x {{Icon|Parıltılı Kankırmızı İnci}}
+|Upgradeitem-2-9 = 1x {{Icon|Ay Taşı}}
+
+|Bonus1 = Defans
+|Bonus1-Abk = 
+|Bonus1-0 = <font color=yellow>15</font>&nbsp;-&nbsp;<font color=orange>17</font>
+|Bonus1-1 = <font color=yellow>17</font>&nbsp;-&nbsp;<font color=orange>19</font>
+|Bonus1-2 = <font color=yellow>19</font>&nbsp;-&nbsp;<font color=orange>21</font>
+|Bonus1-3 = <font color=yellow>23</font>&nbsp;-&nbsp;<font color=orange>25</font>
+|Bonus1-4 = <font color=yellow>27</font>&nbsp;-&nbsp;<font color=orange>29</font>
+|Bonus1-5 = <font color=yellow>31</font>&nbsp;-&nbsp;<font color=orange>33</font>
+|Bonus1-6 = <font color=yellow>35</font>&nbsp;-&nbsp;<font color=orange>37</font>
+|Bonus1-7 = <font color=yellow>39</font>&nbsp;-&nbsp;<font color=orange>41</font>
+|Bonus1-8 = <font color=yellow>43</font>&nbsp;-&nbsp;<font color=orange>45</font>
+|Bonus1-9 = <font color=yellow>55</font>&nbsp;-&nbsp;<font color=orange>57</font>
+
+<!-- Name des zweiten Bonus, Abkürzung für zweiten Bonus und Werte auf den Stufen -->
+|Bonus2 = SungMa İradesi (STR)
+|Bonus2-Abk =
+|Bonus2-0 = <font color=yellow>6</font>&nbsp;-&nbsp;<font color=orange>9</font>
+|Bonus2-1 = <font color=yellow>10</font>&nbsp;-&nbsp;<font color=orange>13</font>
+|Bonus2-2 = <font color=yellow>14</font>&nbsp;-&nbsp;<font color=orange>19</font>
+|Bonus2-3 = <font color=yellow>19</font>&nbsp;-&nbsp;<font color=orange>25</font>
+|Bonus2-4 = <font color=yellow>24</font>&nbsp;-&nbsp;<font color=orange>31</font>
+|Bonus2-5 = <font color=yellow>30</font>&nbsp;-&nbsp;<font color=orange>38</font>
+|Bonus2-6 = <font color=yellow>36</font>&nbsp;-&nbsp;<font color=orange>44</font>
+|Bonus2-7 = <font color=yellow>42</font>&nbsp;-&nbsp;<font color=orange>50</font>
+|Bonus2-8 = <font color=yellow>49</font>&nbsp;-&nbsp;<font color=orange>58</font>
+|Bonus2-9 = <font color=yellow>69</font>&nbsp;-&nbsp;<font color=orange>78</font>
+}}
+{{Eldiven Bonusları}}

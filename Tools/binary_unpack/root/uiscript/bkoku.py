@@ -41,7 +41,7 @@ window = {
 					"children" :
 					(
 						{ "name":"titlename", "type":"text", "x":0, "y":3, 
-						"text" : "Beceri Eðitimi", 
+						"text" : uiScriptLocale.SKILL_TRAINING_TITLE, 
 						"horizontal_align":"center", "text_horizontal_align":"center" },
 					),
 				},

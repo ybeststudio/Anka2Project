@@ -1,0 +1,378 @@
+{{Equipment/Layout
+
+<!-- Type of item - accepted values: Bracelets Necklace Earrings Belts -->
+|Type = Belts
+
+<!-- Type of ore used-->
+|Ore = Red Flame Stone
+
+<!-- Level of accessory - accepted values: Level or level interval in ## - ## format -->
+|Level = 120
+
+<!-- Classes that can use this jewellery - accepted values: warrior ; ninja ; shaman ; sura ; 3 (for warrior ninja and sura) ; 4 for all classes-->
+|wearable = 4
+
+<!-- Powershard used to add 6/7 bonus -->
+|Powershard = 
+
+<!-- Where does this item come from? -->
+|Origin=
+<ul>
+*'''[[NPC]]:''' 
+:*{{Tm|Master Chi}} (Crafted):
+::*{{Ti|Titanium Platelet}} 30x
+::*{{Ti|Shimmering White Pearl}} 5x
+::*{{Ti|Shimmering Blue Pearl}} 5x
+::*{{Ti|Shim. Blood-Red Pearl}} 5x
+::*{{Ti|Gaya|100 Gaya}}
+::*{{Ti|Yang|10.000.000 Yang}}
+*'''[[Boxes]]:''' {{Ti|Sung Ma's Treasure Chest}} (from 10th reroll)
+</ul>
+
+<!-- Other information -->
+|Other = The crafting method has a 30% success rate. See [[Item Refinement]].
+*1 default bonus is added, marked with a <span style="color:#3400FF">blue color</span>.
+*The bonus is random and added by system, as well as its starting value.
+*Below you'll find a table with all possible bonuses as well as the min-max values.
+*See also: [[Belt System]].
+
+<!-- upgrade yang costs - numeric value only (no yang tag) ; blank if no costs -->
+|Costs0 = 
+|Costs1 = 450.000
+|Costs2 = 530.000
+|Costs3 = 640.000
+|Costs4 = 770.000
+|Costs5 = 920.000
+|Costs6 = 1.100.000
+|Costs7 = 1.330.000
+|Costs8 = 1.600.000
+|Costs9 = 1.920.000
+
+<!-- Number of storage slots in potion inventory per upgrade (only feasible for Belts) -->
+|Slots-0 = 2
+|Slots-1 = 2
+|Slots-2 = 4
+|Slots-3 = 6
+|Slots-4 = 9
+|Slots-5 = 12
+|Slots-6 = 16
+|Slots-7 = 20
+|Slots-8 = 25
+|Slots-9 = 30
+
+<!-- 1st Upgrade Items -->
+|1stUpgitem0 = 
+|1stUpgitem1 = 10x [[File:Titanium Platelet.png|link=Titanium Platelet]]
+|1stUpgitem2 = 20x [[File:Titanium Platelet.png|link=Titanium Platelet]]
+|1stUpgitem3 = 30x [[File:Titanium Platelet.png|link=Titanium Platelet]]
+|1stUpgitem4 = 40x [[File:Titanium Platelet.png|link=Titanium Platelet]]
+|1stUpgitem5 = 50x [[File:Titanium Platelet.png|link=Titanium Platelet]]
+|1stUpgitem6 = 50x [[File:Titanium Platelet.png|link=Titanium Platelet]]
+|1stUpgitem7 = 50x [[File:Titanium Platelet.png|link=Titanium Platelet]]
+|1stUpgitem8 = 50x [[File:Titanium Platelet.png|link=Titanium Platelet]]
+|1stUpgitem9 = 50x [[File:Titanium Platelet.png|link=Titanium Platelet]]
+
+<!-- 2nd Upgrade Items -->
+|2ndUpgitem0 = 
+|2ndUpgitem1 = 
+|2ndUpgitem2 = 
+|2ndUpgitem3 = 
+|2ndUpgitem4 = 
+|2ndUpgitem5 = 3x [[File:Strong Knot+.png|link=Strong Knot+]]
+|2ndUpgitem6 = 4x [[File:Strong Knot+.png|link=Strong Knot+]]
+|2ndUpgitem7 = 5x [[File:Strong Knot+.png|link=Strong Knot+]]
+|2ndUpgitem8 = 5x [[File:Strong Knot+.png|link=Strong Knot+]]
+|2ndUpgitem9 = 5x [[File:Strong Knot+.png|link=Strong Knot+]]
+
+<!-- 3rd Upgrade Items -->
+|3rdUpgitem0 = 
+|3rdUpgitem1 = 
+|3rdUpgitem2 = 
+|3rdUpgitem3 = 
+|3rdUpgitem4 = 
+|3rdUpgitem5 = 3x [[File:Strong Rope+.png|link=Strong Rope+]]
+|3rdUpgitem6 = 4x [[File:Strong Rope+.png|link=Strong Rope+]]
+|3rdUpgitem7 = 5x [[File:Strong Rope+.png|link=Strong Rope+]]
+|3rdUpgitem8 = 5x [[File:Strong Rope+.png|link=Strong Rope+]]
+|3rdUpgitem9 = 5x [[File:Strong Rope+.png|link=Strong Rope+]]
+
+<!-- 1st Bonus Name and values, if name too long to fit template fill in Bonus1-Short-->
+|Bonus1-Name = Defence
+|short1 = 
+|Bonus1-0 = 15~19
+|Bonus1-1 = 17~21
+|Bonus1-2 = 19~23
+|Bonus1-3 = 23~27
+|Bonus1-4 = 27~31
+|Bonus1-5 = 31~35
+|Bonus1-6 = 35~39
+|Bonus1-7 = 39~43
+|Bonus1-8 = 45~49
+|Bonus1-9 = 55~59
+
+<!-- 2nd Bonus Name and values, if name too long to fit template fill in Bonus2-Short-->
+|Bonus2-Name = 
+|short2 = 
+|Bonus2-0 = 
+|Bonus2-1 = 
+|Bonus2-2 = 
+|Bonus2-3 = 
+|Bonus2-4 = 
+|Bonus2-5 = 
+|Bonus2-6 = 
+|Bonus2-7 = 
+|Bonus2-8 = 
+|Bonus2-9 = 
+
+<!-- 3rd Bonus Name and values, if name too long to fit template fill in Bonus3-Short-->
+|Bonus3-Name = 
+|short3 = 
+|Bonus3-0 = 
+|Bonus3-1 = 
+|Bonus3-2 = 
+|Bonus3-3 = 
+|Bonus3-4 = 
+|Bonus3-5 = 
+|Bonus3-6 = 
+|Bonus3-7 = 
+|Bonus3-8 = 
+|Bonus3-9 = 
+
+<!-- Value for ore referring to bonus 1 and slot 1 (+0 to +9) -->
+|Verb1-1-0 = 2
+|Verb1-1-1 = 2
+|Verb1-1-2 = 2
+|Verb1-1-3 = 2~3
+|Verb1-1-4 = 3
+|Verb1-1-5 = 3~4
+|Verb1-1-6 = 4
+|Verb1-1-7 = 4~5
+|Verb1-1-8 = 5
+|Verb1-1-9 = 6
+
+<!-- Value for ore referring to bonus 1 and slot 2 (+0 to +9) -->
+|Verb1-2-0 = 2
+|Verb1-2-1 = 2
+|Verb1-2-2 = 2
+|Verb1-2-3 = 2~3
+|Verb1-2-4 = 3
+|Verb1-2-5 = 3~4
+|Verb1-2-6 = 4
+|Verb1-2-7 = 4~5
+|Verb1-2-8 = 5
+|Verb1-2-9 = 6
+
+<!-- Value for ore referring to bonus 1 and slot 3 (+0 to +9) -->
+|Verb1-3-0 = 3~4
+|Verb1-3-1 = 3~4
+|Verb1-3-2 = 4~5
+|Verb1-3-3 = 5
+|Verb1-3-4 = 5~6
+|Verb1-3-5 = 6~7
+|Verb1-3-6 = 7~8
+|Verb1-3-7 = 8~9
+|Verb1-3-8 = 9~10
+|Verb1-3-9 = 11~12
+
+<!-- Value for ore referring to bonus 2 and slot 1 (+0 to +9) -->
+|Verb2-1-0 = 
+|Verb2-1-1 = 
+|Verb2-1-2 = 
+|Verb2-1-3 = 
+|Verb2-1-4 = 
+|Verb2-1-5 = 
+|Verb2-1-6 = 
+|Verb2-1-7 = 
+|Verb2-1-8 = 
+|Verb2-1-9 = 
+
+<!-- Value for ore referring to bonus 2 and slot 2 (+0 to +9) -->
+|Verb2-2-0 = 
+|Verb2-2-1 = 
+|Verb2-2-2 = 
+|Verb2-2-3 = 
+|Verb2-2-4 = 
+|Verb2-2-5 = 
+|Verb2-2-6 = 
+|Verb2-2-7 = 
+|Verb2-2-8 = 
+|Verb2-2-9 = 
+
+<!-- Value for ore referring to bonus 2 and slot 3 (+0 to +9) -->
+|Verb2-3-0 = 
+|Verb2-3-1 = 
+|Verb2-3-2 = 
+|Verb2-3-3 = 
+|Verb2-3-4 = 
+|Verb2-3-5 = 
+|Verb2-3-6 = 
+|Verb2-3-7 = 
+|Verb2-3-8 = 
+|Verb2-3-9 = 
+
+<!-- Value for ore referring to bonus 3 and slot 1 (+0 to +9) -->
+|Verb3-1-0 = 
+|Verb3-1-1 = 
+|Verb3-1-2 = 
+|Verb3-1-3 = 
+|Verb3-1-4 = 
+|Verb3-1-5 = 
+|Verb3-1-6 = 
+|Verb3-1-7 = 
+|Verb3-1-8 = 
+|Verb3-1-9 = 
+
+<!-- Value for ore referring to bonus 3 and slot 2 (+0 to +9) -->
+|Verb3-2-0 = 
+|Verb3-2-1 = 
+|Verb3-2-2 = 
+|Verb3-2-3 = 
+|Verb3-2-4 = 
+|Verb3-2-5 = 
+|Verb3-2-6 = 
+|Verb3-2-7 = 
+|Verb3-2-8 = 
+|Verb3-2-9 = 
+
+<!-- Value for ore referring to bonus 3 and slot 3 (+0 to +9) -->
+|Verb3-3-0 = 
+|Verb3-3-1 = 
+|Verb3-3-2 = 
+|Verb3-3-3 = 
+|Verb3-3-4 = 
+|Verb3-3-5 = 
+|Verb3-3-6 = 
+|Verb3-3-7 = 
+|Verb3-3-8 = 
+|Verb3-3-9 = 
+
+}}
+
+{| width="99%" {{Prettytable}} 
+|- {{Hl3}}
+! colspan=12| Possible bonus
+|- {{Hl3}}
+! width="250px"| Bonus
+! +0
+! +1
+! +2
+! +3
+! +4
+! +5
+! +6
+! +7
+! +8
+! +9
+! Version
+|-
+| rowspan=3| Max. HP
+|-
+| +100
+| +130
+| +150
+| +150
+| +200
+| +250
+| +300
+| +400
+| +500
+| +1200
+| align="center"| '''1'''
+|-
+| +130
+| +150
+| +180
+| +200
+| +250
+| +300
+| +400
+| +500
+| +1000
+| +1500
+| align="center"| '''2'''
+|-
+| rowspan=3| Max. SP
+|-
+| +50
+| +80
+| +100
+| +120
+| +150
+| +180
+| +200
+| +250
+| +300
+| +800
+| align="center"| '''1'''
+|-
+| +80
+| +100
+| +120
+| +150
+| +180
+| +200
+| +250
+| +300
+| +800
+| +1200
+| align="center"| '''2'''
+|-
+| rowspan=3| Strength against monsters
+|-
+| +1%
+| +1%
+| +1%
+| +2%
+| +2%
+| +3%
+| +3%
+| +4%
+| +5%
+| +7%
+| align="center"| '''1'''
+|-
+| +1%
+| +1%
+| +1%
+| +2%
+| +3%
+| +3%
+| +4%
+| +5%
+| +6%
+| +8%
+| align="center"| '''2'''
+|-
+| rowspan=3| Chance to drop double Yang<br>Chance for EXP Bonus<br>Defence against warriors<br>Defence against sura<br>Defence against ninja<br>Defence against shaman<br>Defence against lycan
+|-
+| 1%
+| 1%
+| 1%
+| 2%
+| 2%
+| 3%
+| 3%
+| 4%
+| 5%
+| 7%
+| align="center"| '''1'''
+|-
+| 1%
+| 1%
+| 2%
+| 2%
+| 3%
+| 3%
+| 4%
+| 5%
+| 6%
+| 8%
+| align="center"| '''2'''
+|-
+|}
+
+[[de:Titangürtel]]
+[[fr:Ceinture en titane]]
+[[hu:Titán öv]]
+[[pl:Pas Tytanowy]]
+[[ro:Curea Titanium]]

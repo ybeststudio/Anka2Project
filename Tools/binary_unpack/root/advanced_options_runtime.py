@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Persistent option state and adapters to actual client APIs."""
-SETTINGS_FILE = "advanced_options.cfg"
+import userData
+SETTINGS_FILE = userData.GetPath("advanced_options.cfg")
 LOCALE_FILE = "locale.cfg"
 _values = {}
 _modules = {}
@@ -266,7 +267,8 @@ def Apply(key, value):
     elif key in ("auto_unequip_buffi_pvp", "auto_equip_buffi_pvm"):
         SendBuffiOptions()
     elif key == "auto_cape_after_warp":
-        _Call("net", "SendChatPacket", "/auto_cape resume %d" % bool(value))
+        if not getattr(_modules.get("app"), "ENABLE_BRAVE_CAPE_RENEWAL", 0):
+            _Call("net", "SendChatPacket", "/auto_cape resume %d" % bool(value))
     elif key == "fps_limit":
         _Call("app", "SetFPS", max(30, min(240, int(value))))
     elif key == "keyboard_camera_speed_pos":
@@ -520,7 +522,11 @@ def UpdateMapSettings():
         return
     advanced_metin_queue.Clear()
     _lastMap = current
-    if "net" in _modules:
+    if getattr(_modules.get("app"), "ENABLE_BRAVE_CAPE_RENEWAL", 0):
+        interface = _Interface()
+        if interface and hasattr(interface, "OnBraveCapeMapLoaded"):
+            interface.OnBraveCapeMapLoaded()
+    elif "net" in _modules:
         _Call("net", "SendChatPacket", "/auto_cape sync %d" % bool(Get("auto_cape_after_warp", False)))
     if "nonplayer" in _modules:
         _Call("nonplayer", "ClearEventStoneAppearance")

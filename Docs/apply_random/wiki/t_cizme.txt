@@ -1,0 +1,98 @@
+=== <center>Değişken Bonus Kısmı</center> ===
+<div style="overflow-x: auto;">
+{| width="100%" style="font-size:0.95em; line-height:1em; "
+| valign="top" style="border:1px solid #97100d;" |
+<div style="background:#5d0505; border-bottom:1px solid #97100d; padding:2px; margin:1px; font-weight:bold; text-align:left; font-size:100%; color: #f0d9a2;"><center>Ay Işığı Çizmesi'ne Gelebilecek Değişken Bonuslar Listesi ve Oranları</center></div>
+
+{|
+!  
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +0
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +1
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +2
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +3
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +4
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +5
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +6
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +7
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +8
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +9
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +10
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +11
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +12
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +13
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +14
+! width="75px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"| +15
+|- align="center"
+|width="120px" style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"|
+
+'''[[Ateş Direnci]]:'''
+||+%1<br>+%2||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"|
+
+'''[[Buz Direnci]]:'''
+||+%1<br>+%2||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"|
+
+'''[[Şimşek Direnci]]:'''
+||+%1<br>+%2||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"|
+
+'''[[Rüzgar Direnci]]:'''
+||+%1<br>+%2||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"|
+
+'''[[Toprak Direnci]]:'''
+||+%1<br>+%2||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"|
+
+'''[[Karanlık Direnci]]:'''
+||+%1<br>+%2||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"|
+
+'''[[Zehre Karşı Koyma]]:'''
+||+%1<br>+%2||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"|
+
+'''[[Hareket Hızı]]:'''
+||+%24<br>+%25||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"|
+
+'''[[Beceri Hasarına Karşı Koyma]]:'''
+||+%1<br>+%2||+%2<br>+%3||+%3<br>+%4||+%4<br>+%5||+%5<br>+%6||+%6<br>+%7||+%7<br>+%8||+%8<br>+%9||+%9<br>+%10||+?<br>+%11||+?<br>+%12||+?<br>+%13||+?<br>+%14||+?<br>+%15||+?<br>+%16||+%17<br>+%19
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"|
+
+'''[[EXP Bonus Şansı]]:'''
+||+?||+?||+?||+?||+?||+?||+?||+?||+?||+?||+?||+?||+?||+?||+?||+?
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"|
+
+'''[[Max. Dayanıklılık]]:'''
+||+50<br>+100||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid #97100d;"|
+
+'''[[Tamlık]]:'''
+||+1<br>+2||+2<br>+3||+3<br>+4||+4<br>+5||+5<br>+6||+6<br>+7||+7<br>+8||+8<br>+10||+?<br>+11||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?||+?<br>+?
+|}
+|}
+</div>

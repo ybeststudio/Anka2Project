@@ -15,7 +15,7 @@ window = {
 			'y': 0,
 			'width': 180,
 			'height': 300,
-			'title': 'Efsun Seç',
+			'title': uiScriptLocale.SELECT_BONUS_TITLE,
 		},
 		{
 			'name': 'ScrollBar',

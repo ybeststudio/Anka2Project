@@ -398,6 +398,26 @@ int ProcessTextTag(LPCHARACTER ch, const char * c_pszText, size_t len)
 	return 4;
 }
 
+#ifdef ENABLE_WHISPER_OFFLINE_MESSAGE
+// whisper system line as plain text (the LocaleWhisperPacket ids 169/170 point at unrelated client strings)
+static void SendWhisperSystemText(LPCHARACTER ch, const char* c_szNameFrom, const char* c_szText)
+{
+	if (!ch || !ch->GetDesc())
+		return;
+
+	TPacketGCWhisper pack;
+	pack.bHeader = HEADER_GC_WHISPER;
+	pack.bType = WHISPER_TYPE_SYSTEM;
+	pack.wSize = sizeof(TPacketGCWhisper) + strlen(c_szText) + 1;
+	strlcpy(pack.szNameFrom, c_szNameFrom, sizeof(pack.szNameFrom));
+
+	TEMP_BUFFER tmpbuf;
+	tmpbuf.write(&pack, sizeof(pack));
+	tmpbuf.write(c_szText, strlen(c_szText) + 1);
+	ch->GetDesc()->Packet(tmpbuf.read_peek(), tmpbuf.size());
+}
+#endif
+
 int CInputMain::Whisper(LPCHARACTER ch, const char * data, size_t uiBytes)
 {
 	const TPacketCGWhisper* pinfo = reinterpret_cast<const TPacketCGWhisper*>(data);
@@ -487,7 +507,7 @@ int CInputMain::Whisper(LPCHARACTER ch, const char * data, size_t uiBytes)
 	{
 		if (ch->GetDesc())
 		{
-#ifdef ENABLE_OFFLINE_MESSAGE
+#if defined(ENABLE_OFFLINE_MESSAGE) && !defined(ENABLE_WHISPER_OFFLINE_MESSAGE)	// messenger asks for the paid offline message instead
 			const BYTE bDelay = 10;
 			if (get_dword_time() - ch->GetLastOfflinePMTime() > bDelay * 1000)
 			{
@@ -593,14 +613,26 @@ int CInputMain::Whisper(LPCHARACTER ch, const char * data, size_t uiBytes)
 		{
 			if (ch->GetDesc())
 			{
+#ifdef ENABLE_WHISPER_OFFLINE_MESSAGE
+				char szText[CHAT_MAX_LEN + 1];
+				snprintf(szText, sizeof(szText), LC_TEXT("Unblock %s to continue."), pkChr->GetName());
+				SendWhisperSystemText(ch, pinfo->szNameTo, szText);
+#else
 				ch->LocaleWhisperPacket(WHISPER_TYPE_SYSTEM, 169, pinfo->szNameTo, "%s", pkChr->GetName());
+#endif
 			}
 		}
 		else if (pkChr && MessengerManager::instance().IsBlocked(pkChr->GetName(), ch->GetName()))
 		{
 			if (ch->GetDesc())
 			{
+#ifdef ENABLE_WHISPER_OFFLINE_MESSAGE
+				char szText[CHAT_MAX_LEN + 1];
+				snprintf(szText, sizeof(szText), LC_TEXT("%s has blocked you."), pkChr->GetName());
+				SendWhisperSystemText(ch, pinfo->szNameTo, szText);
+#else
 				ch->LocaleWhisperPacket(WHISPER_TYPE_SYSTEM, 170, pinfo->szNameTo, "%s", pkChr->GetName());
+#endif
 			}
 		}
 #endif
@@ -3458,7 +3490,7 @@ size_t GetSubPacketSize(const GUILD_SUBHEADER_CG& header)
 		case GUILD_SUBHEADER_CG_ADD_MEMBER:					return sizeof(DWORD);
 		case GUILD_SUBHEADER_CG_REMOVE_MEMBER:				return sizeof(DWORD);
 		case GUILD_SUBHEADER_CG_CHANGE_GRADE_NAME:			return 10;
-		case GUILD_SUBHEADER_CG_CHANGE_GRADE_AUTHORITY:		return sizeof(BYTE) + sizeof(BYTE);
+		case GUILD_SUBHEADER_CG_CHANGE_GRADE_AUTHORITY:		return sizeof(BYTE) + sizeof(TGuildAuthFlag);
 		case GUILD_SUBHEADER_CG_OFFER:						return sizeof(DWORD);
 		case GUILD_SUBHEADER_CG_CHARGE_GSP:					return sizeof(int);
 		case GUILD_SUBHEADER_CG_POST_COMMENT:				return 1;
@@ -3694,7 +3726,9 @@ int CInputMain::Guild(LPCHARACTER ch, const char * data, size_t uiBytes)
 				}
 				else
 				{
-					pGuild->ChangeGradeAuth(*c_pData, *(c_pData + 1));
+					TGuildAuthFlag auth;
+					memcpy(&auth, c_pData + 1, sizeof(auth));
+					pGuild->ChangeGradeAuth(*c_pData, auth);
 				}
 			}
 			return SubPacketLen;

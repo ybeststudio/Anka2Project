@@ -161,9 +161,8 @@ else:
 						"height" : BUTTON_HEIGHT,
 					
 						"horizontal_align" : "center",
-						"text" : uiScriptLocale.YES,
 					
-						"default_image" : "d:/ymir work/ui/event/long_button_01.sub",
+						"default_image" : "d:/ymir work/ui/game/common/button_accept_norm.png",
 						"over_image"	: "d:/ymir work/ui/event/long_button_02.sub",
 						"down_image"	: "d:/ymir work/ui/event/long_button_03.sub",
 					},
@@ -179,9 +178,8 @@ else:
 						"height" : BUTTON_HEIGHT,
 					
 						"horizontal_align" : "center",
-						"text" : uiScriptLocale.NO,
 					
-						"default_image" : "d:/ymir work/ui/event/long_button_01.sub",
+						"default_image" : "d:/ymir work/ui/game/common/button_cancel_norm.png",
 						"over_image"	: "d:/ymir work/ui/event/long_button_02.sub",
 						"down_image"	: "d:/ymir work/ui/event/long_button_03.sub",
 					},

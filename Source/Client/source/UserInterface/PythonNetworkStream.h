@@ -324,7 +324,7 @@ class CPythonNetworkStream : public CNetworkStream, public CSingleton<CPythonNet
 		bool SendGuildAddMemberPacket(DWORD dwVID);
 		bool SendGuildRemoveMemberPacket(DWORD dwPID);
 		bool SendGuildChangeGradeNamePacket(BYTE byGradeNumber, const char *c_szName);
-		bool SendGuildChangeGradeAuthorityPacket(BYTE byGradeNumber, BYTE byAuthority);
+		bool SendGuildChangeGradeAuthorityPacket(BYTE byGradeNumber, WORD wAuthority);
 		bool SendGuildOfferPacket(DWORD dwExperience);
 		bool SendGuildPostCommentPacket(const char *c_szMessage);
 		bool SendGuildDeleteCommentPacket(DWORD dwIndex);

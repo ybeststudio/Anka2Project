@@ -22,6 +22,13 @@ if app.ENABLE_EMOTICONS_SYSTEM:
 class WhisperButton(ui.Button):
 	def __init__(self):
 		ui.Button.__init__(self, "TOP_MOST")
+		self.hoverInEvent = None
+		self.hoverOutEvent = None
+
+	def SetHoverEvent(self, hoverIn, hoverOut):
+		# the button reports mouse over / out through ShowToolTip / HideToolTip
+		self.hoverInEvent = hoverIn
+		self.hoverOutEvent = hoverOut
 
 	def __del__(self):
 		ui.Button.__del__(self)
@@ -38,10 +45,14 @@ class WhisperButton(ui.Button):
 	def ShowToolTip(self):
 		if 0 != self.ToolTipText:
 			self.ToolTipText.Show()
+		if self.hoverInEvent:
+			self.hoverInEvent()
 
 	def HideToolTip(self):
 		if 0 != self.ToolTipText:
 			self.ToolTipText.Show()
+		if self.hoverOutEvent:
+			self.hoverOutEvent()
 
 class WhisperDialog(ui.ScriptWindow):
 

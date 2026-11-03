@@ -1,0 +1,335 @@
+{{Equipment2/Layout
+
+|name = Serpent's Cowl
+
+<!-- Type of item - accepted values: Helmet Shoes Shield-->
+|Type = Helmet
+
+<!-- Level of item - accepted values: Level or level interval in ## - ## format -->
+|Level = 120
+
+<!-- Classes that can use this item accepted values are warrior ; ninja ; shaman ; sura ; lycan ; 3 (for warrior ninja and sura) ; 4 for all classes-->
+|wearable = 4
+
+<!-- Powershard used to add 6/7 bonus -->
+|Powershard = {{Ti|Holy Powershard (120)}}
+
+<!-- Origin of item -->
+|Origin = 
+<ul>
+*'''[[NPC]]:''' {{Tm|Dragon Watcher Jaharr}} (Crafted):
+:*{{Ti|Balathor's Tendon}} 2x
+:*{{Ti|Frosted Hammer}} 7x
+:*{{Ti|Balathor's Wing}} 2x
+:*{{Ti|Dark Jadite}} 10x
+:*{{Ti|Serpent Design}} 40x
+:*{{Ti|Yang|20.000.000 Yang}}
+:*{{Ti|Gaya|200 Gaya}}
+</ul>
+
+<!-- Other information -->
+|Other = The crafting method has a 50% success. See also: [[Item Refinement]]
+*The only helmet that can be worn by all classes
+*1 default bonus is added, marked with a <span style="color:#3400FF">blue color</span>
+*The bonus is random and added by system, as well as its starting value
+*Below you'll find a table with all possible bonuses as well as the min-max values
+*When changing the 1-5 bonuses, it is possible to have the same bonus as default
+
+<!-- Upgrade yang costs - numeric value only (no yang tag) ; blank if no costs -->
+|Costs0 = 
+|Costs1 = 150.000
+|Costs2 = 180.000
+|Costs3 = 216.000
+|Costs4 = 260.000
+|Costs5 = 310.000
+|Costs6 = 920.000
+|Costs7 = 1.110.000
+|Costs8 = 1.330.000
+|Costs9 = 1.600.000
+|Costs10 = 1.920.000
+|Costs11 = 2.304.000
+|Costs12 = 2.754.800
+|Costs13 = 3.317.700
+|Costs14 = 3.981.300
+|Costs15 = 4.777.500
+
+<!-- 1st Upgrade Item -->
+|1stUpgitem0 = 
+|1stUpgitem1 = 1x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+|1stUpgitem2 = 2x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+|1stUpgitem3 = 3x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+|1stUpgitem4 = 4x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+|1stUpgitem5 = 5x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+|1stUpgitem6 = 7x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+|1stUpgitem7 = 10x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+|1stUpgitem8 = 12x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+|1stUpgitem9 = 15x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+|1stUpgitem10 = 20x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+|1stUpgitem11 = 25x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+|1stUpgitem12 = 30x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+|1stUpgitem13 = 35x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+|1stUpgitem14 = 40x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+|1stUpgitem15 = 45x [[File:Balathor's Eye.png|link=Balathor's Eye]]
+
+<!-- 2nd Upgrade Item -->
+|2ndUpgitem0 = 
+|2ndUpgitem1 = 1x [[File:Frosted Hammer.png|link=Frosted Hammer]]
+|2ndUpgitem2 = 2x [[File:Frosted Hammer.png|link=Frosted Hammer]]
+|2ndUpgitem3 = 3x [[File:Frosted Hammer.png|link=Frosted Hammer]]
+|2ndUpgitem4 = 5x [[File:Frosted Hammer.png|link=Frosted Hammer]]
+|2ndUpgitem5 = 7x [[File:Frosted Hammer.png|link=Frosted Hammer]]
+|2ndUpgitem6 = 10x [[File:Frosted Hammer.png|link=Frosted Hammer]]
+|2ndUpgitem7 = 1x [[File:Balathor's Scale.png|link=Balathor's Scale]]
+|2ndUpgitem8 = 1x [[File:Balathor's Scale.png|link=Balathor's Scale]]
+|2ndUpgitem9 = 1x [[File:Balathor's Scale.png|link=Balathor's Scale]]
+|2ndUpgitem10 = 3x [[File:Balathor's Scale.png|link=Balathor's Scale]]
+|2ndUpgitem11 = 3x [[File:Balathor's Scale.png|link=Balathor's Scale]]
+|2ndUpgitem12 = 3x [[File:Balathor's Scale.png|link=Balathor's Scale]]
+|2ndUpgitem13 = 3x [[File:Balathor's Scale.png|link=Balathor's Scale]]
+|2ndUpgitem14 = 3x [[File:Balathor's Scale.png|link=Balathor's Scale]]
+|2ndUpgitem15 = 3x [[File:Balathor's Scale.png|link=Balathor's Scale]]
+
+<!-- 3rd Upgrade Item -->
+|3rdUpgitem0 = 
+|3rdUpgitem1 = 2x [[File:Balathor's Horn.png|link=Balathor's Horn]]
+|3rdUpgitem2 = 4x [[File:Balathor's Horn.png|link=Balathor's Horn]]
+|3rdUpgitem3 = 6x [[File:Balathor's Horn.png|link=Balathor's Horn]]
+|3rdUpgitem4 = 8x [[File:Balathor's Horn.png|link=Balathor's Horn]]
+|3rdUpgitem5 = 10x [[File:Balathor's Horn.png|link=Balathor's Horn]]
+|3rdUpgitem6 = 15x [[File:Balathor's Horn.png|link=Balathor's Horn]]
+|3rdUpgitem7 = 5x [[File:Shim. Blood-Red Pearl.png|link=Shim. Blood-Red Pearl]]
+|3rdUpgitem8 = 5x [[File:Shimmering Blue Pearl.png|link=Shimmering Blue Pearl]]
+|3rdUpgitem9 = 5x [[File:Shimmering White Pearl.png|link=Shimmering White Pearl]]
+|3rdUpgitem10 = 5x [[File:Agate.png|link=Agate]]
+|3rdUpgitem11 = 5x [[File:Titanium Dioxide.png|link=Titanium Dioxide]]
+|3rdUpgitem12 = 5x [[File:Moonstone.png|link=Moonstone]]
+|3rdUpgitem13 = 7x [[File:Agate.png|link=Agate]]
+|3rdUpgitem14 = 7x [[File:Titanium Dioxide.png|link=Titanium Dioxide]]
+|3rdUpgitem15 = 7x [[File:Moonstone.png|link=Moonstone]]
+
+<!-- 1st Bonus Name and values (Bonus1-10 opens the +10~15 table -->
+|Bonus1-Name = Defence
+|Bonus1-0 = 27
+|Bonus1-1 = 31
+|Bonus1-2 = 35
+|Bonus1-3 = 45
+|Bonus1-4 = 55
+|Bonus1-5 = 75
+|Bonus1-6 = 85
+|Bonus1-7 = 97
+|Bonus1-8 = 107
+|Bonus1-9 = 121
+|Bonus1-10 = 135
+|Bonus1-11 = 151
+|Bonus1-12 = 167
+|Bonus1-13 = 187
+|Bonus1-14 = 209
+|Bonus1-15 = 233
+
+<!-- 2nd Bonus Name and values -->
+|Bonus2-Name = Magic/melee attack
+|Bonus2-0 = +1%
+|Bonus2-1 = +1%
+|Bonus2-2 = +2%
+|Bonus2-3 = +3%
+|Bonus2-4 = +4%
+|Bonus2-5 = +4%
+|Bonus2-6 = +5%
+|Bonus2-7 = +6%
+|Bonus2-8 = +7%
+|Bonus2-9 = +9%
+|Bonus2-10 = +10%
+|Bonus2-11 = +11%
+|Bonus2-12 = +12%
+|Bonus2-13 = +13%
+|Bonus2-14 = +14%
+|Bonus2-15 = +16%
+
+}}
+
+{| width="99%" {{Prettytable}} 
+|- {{Hl3}}
+! colspan=18| Possible bonus
+|- {{Hl3}}
+! width="250px"| Bonus
+! +0
+! +1
+! +2
+! +3
+! +4
+! +5
+! +6
+! +7
+! +8
+! +9
+! +10
+! +11
+! +12
+! +13
+! +14
+! +15
+! Version
+|-
+| rowspan=3| Sung Ma's will INT / RES / STR / VIT
+|-
+| +1
+| +2
+| +3
+| +4
+| +6
+| +8
+| +10
+| +12
+| +14
+| +17
+| +19
+| +21
+| +23
+| +26
+| +30
+| +34
+| align="center"| '''1'''
+|-
+| +2
+| +3
+| +4
+| +6
+| +8
+| +10
+| +12
+| +14
+| +17
+| +20
+| +22
+| +24
+| +26
+| +29
+| +33
+| +38
+| align="center"| '''2'''
+|-
+| rowspan=3| Precision<br>Resistance to monster attacks
+|-
+| +1
+| +1
+| +1
+| +1
+| +2
+| +3
+| +4
+| +5
+| +6
+| +8
+| +9
+| +11
+| +12
+| +14
+| +17
+| +19
+| align="center"| '''1'''
+|-
+| +1
+| +2
+| +2
+| +2
+| +3
+| +4
+| +5
+| +6
+| +7
+| +10
+| +11
+| +13
+| +14
+| +16
+| +19
+| +22
+| align="center"| '''2'''
+|-
+| rowspan=3| Magic Resistance
+|-
+| 1%
+| 1%
+| 1%
+| 1%
+| 2%
+| 3%
+| 4%
+| 5%
+| 6%
+| 8%
+| 9%
+| 11%
+| 12%
+| 14%
+| 17%
+| 19%
+| align="center"| '''1'''
+|-
+| 1%
+| 2%
+| 2%
+| 2%
+| 3%
+| 4%
+| 5%
+| 6%
+| 7%
+| 10%
+| 11%
+| 13%
+| 14%
+| 16%
+| 19%
+| 22%
+| align="center"| '''2'''
+|-
+| Chance to block attack
+| 1%
+| 1%
+| 1%
+| 1%
+| 1%
+| 1%
+| 2%
+| 2%
+| 2%
+| 3%
+| 4%
+| 5%
+| 6%
+| 7%
+| 8%
+| 10%
+| align="center"| '''1'''
+|-
+| Chance to avoid arrow
+| 1%
+| 1%
+| 1%
+| 1%
+| 2%
+| 2%
+| 2%
+| 3%
+| 3%
+| 4%
+| 5%
+| 6%
+| 7%
+| 8%
+| 10%
+| 12%
+| align="center"| '''1'''
+|-
+|}
+
+[[cz:Hadí kutna]]
+[[de:Schlangenhaube]]
+[[fr:Coiffe du serpent]]
+[[hu:Szerpent csuklya]]
+[[it:Cuffia Serpens]]
+[[pl:Wężowy Czepiec]]
+[[pt:Capuz da Serpente]]
+[[ro:Glugă Șarpe]]
+[[tr:Yılan Başlığı]]

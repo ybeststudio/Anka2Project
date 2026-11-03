@@ -39,7 +39,7 @@ window = {
 					"color" : "yellow",
 					"children" :
 					(
-						{ "name":"TitleName", "type":"text", "x":188-33+8, "y":3, "text":"Etkinlik genel görünümü", "text_horizontal_align":"center" },
+						{ "name":"TitleName", "type":"text", "x":188-33+8, "y":3, "text":uiScriptLocale.MINIGAME_EVENT_OVERVIEW, "text_horizontal_align":"center" },
 					),
 				},
 				{
@@ -79,7 +79,7 @@ window = {
 					"x" : 22,
 					"y" : 35+10+18+23,
 					
-					"text" : "Etkinlik için son saat:START_TIME",
+					"text" : uiScriptLocale.MINIGAME_EVENT_END_TIME,
 				},
 				{
 					"name":"bg_charm_1",

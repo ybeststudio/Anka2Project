@@ -3546,6 +3546,12 @@ class GuildWindow(ui.ScriptWindow):
 		# MARK_BUG_FIX
 		if net.ERROR_MARK_UPLOAD_NEED_RECONNECT == ret:
 			self.__PopupMessage(localeInfo.UPLOAD_MARK_UPLOAD_NEED_RECONNECT)
+		elif app.ENABLE_GUILD_MARK_PNG and net.ERROR_LOAD_MARK == ret:
+			self.__PopupMessage(localeInfo.GUILDMARK_UPLOADER_ERROR_FILE_FORMAT)
+		elif app.ENABLE_GUILD_MARK_PNG and net.ERROR_MARK_WIDTH == ret:
+			self.__PopupMessage(localeInfo.GUILDMARK_UPLOADER_ERROR_16_WIDTH)
+		elif app.ENABLE_GUILD_MARK_PNG and net.ERROR_MARK_HEIGHT == ret:
+			self.__PopupMessage(localeInfo.GUILDMARK_UPLOADER_ERROR_12_HEIGHT)
 
 		return ret
 		# END_OF_MARK_BUG_FIX
@@ -3589,6 +3595,11 @@ class GuildWindow(ui.ScriptWindow):
 		def GuildListDialogIsShow(self):
 			if self.GuildLIstDialog:
 				return self.GuildLIstDialog.IsShow()
+	elif app.ENABLE_GUILD_APPLICATION:
+		def __OnClickGuildListButton(self):
+			# "Lonca Listesi" button: guild application window, leader tab for master / generals
+			import uiGuildApplication
+			uiGuildApplication.Toggle(uiGuildApplication.MODE_LEADER)
 	else:
 		def __OnClickGuildListButton(self):
 			pass

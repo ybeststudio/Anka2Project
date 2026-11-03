@@ -1014,9 +1014,9 @@ class GameWindow(ui.ScriptWindow):
 		self.affectShower.ResetAffect(affect)
 
 	# UNKNOWN_UPDATE
-	def BINARY_NEW_AddAffect(self, type, pointIdx, value, duration):
+	def BINARY_NEW_AddAffect(self, type, pointIdx, value, duration, castStat = 0):
 		if self.affectShower:
-			self.affectShower.BINARY_NEW_AddAffect(type, pointIdx, value, duration)
+			self.affectShower.BINARY_NEW_AddAffect(type, pointIdx, value, duration, castStat)
 
 		if app.__AUTO_HUNT__:
 			if constInfo.autoHuntAutoLoginDict["status"] == 1 and constInfo.autoHuntAutoLoginDict["leftTime"] == -2:
@@ -1183,32 +1183,58 @@ class GameWindow(ui.ScriptWindow):
 		self.interface.BINARY_OpenAtlasWindow()
 
 	def BINARY_AdvancedGuildChat(self, line):
+		if app.ENABLE_WHISPER_MESSENGER:
+			return	# BINARY_WhisperMessengerGuildChat already took the line
 		chat.AppendWhisper(chat.WHISPER_TYPE_CHAT, "[Guild]", line)
 		self.interface.RecvWhisper("[Guild]")
+
+	def BINARY_WhisperMessengerGuildChat(self, line):
+		if app.ENABLE_WHISPER_MESSENGER and self.interface:
+			self.interface.RecvWhisperMessenger("[Guild]", line)
 
 	## Chat
 	if app.ENABLE_MULTILANGUAGE_CHATTING:
 		def OnRecvWhisper(self, mode, name, line, codepage = 0):
+			if app.ENABLE_WHISPER_MESSENGER:
+				line = self.interface.PrepareGuildWhisper(name, line)
 			if mode == chat.WHISPER_TYPE_GM:
 				self.interface.RegisterGameMasterName(name)
 			chat.AppendWhisper(mode, name, line, codepage)
+			if app.ENABLE_WHISPER_MESSENGER:
+				self.interface.RecvWhisperMessenger(name, line)
+				return
 			self.interface.RecvWhisper(name)
 	else:
 		def OnRecvWhisper(self, mode, name, line):
+			if app.ENABLE_WHISPER_MESSENGER:
+				line = self.interface.PrepareGuildWhisper(name, line)
 			if mode == chat.WHISPER_TYPE_GM:
 				self.interface.RegisterGameMasterName(name)
 			chat.AppendWhisper(mode, name, line)
+			if app.ENABLE_WHISPER_MESSENGER:
+				self.interface.RecvWhisperMessenger(name, line)
+				return
 			self.interface.RecvWhisper(name)
 
 	def OnRecvWhisperSystemMessage(self, mode, name, line):
 		chat.AppendWhisper(chat.WHISPER_TYPE_SYSTEM, name, line)
+		if app.ENABLE_WHISPER_MESSENGER:
+			self.interface.RecvWhisperMessenger(name, line, TRUE)
+			return
 		self.interface.RecvWhisper(name)
 
 	def OnRecvWhisperError(self, mode, name, line):
 		if localeInfo.WHISPER_ERROR.has_key(mode):
-			chat.AppendWhisper(chat.WHISPER_TYPE_SYSTEM, name, localeInfo.WHISPER_ERROR[mode](name))
+			errorText = localeInfo.WHISPER_ERROR[mode](name)
 		else:
-			chat.AppendWhisper(chat.WHISPER_TYPE_SYSTEM, name, "Whisper Unknown Error(mode=%d, name=%s)" % (mode, name))
+			errorText = "Whisper Unknown Error(mode=%d, name=%s)" % (mode, name)
+		chat.AppendWhisper(chat.WHISPER_TYPE_SYSTEM, name, errorText)
+		if app.ENABLE_WHISPER_MESSENGER:
+			# target logged off: the messenger offers the offline message instead of the error line
+			if mode == 1 and self.interface.HandleWhisperNotLogon(name):
+				return
+			self.interface.RecvWhisperMessenger(name, errorText, TRUE)
+			return
 		self.interface.RecvWhisper(name)
 
 	def RecvWhisper(self, name):
@@ -2493,6 +2519,197 @@ class GameWindow(ui.ScriptWindow):
 		def BINARY_Cards_Open(self, safemode):
 			self.interface.OpenCardsWindow(safemode)
 
+	def CharacterStats(self, dungeons, fish, ores):
+		# character details panel, stat tab (server /character_stats)
+		try:
+			constInfo.CHARACTER_STATS_DATA = (int(dungeons), int(fish), int(ores))
+		except ValueError:
+			pass
+
+	# messenger "Anka2 Global" channel (server ENABLE_ANKA2_GLOBAL_CHAT)
+	def AnkaGlobalChat(self, payload):
+		if app.ENABLE_WHISPER_MESSENGER and self.interface:
+			self.interface.RecvGlobalChat(payload)
+
+	def AnkaWhisperInfo(self, name, found, empire, race, online, guildName):
+		if app.ENABLE_WHISPER_MESSENGER and self.interface:
+			self.interface.RecvWhisperPlayerInfo(name, int(found), int(empire), int(race), int(online), guildName.replace("\x1f", " "))
+
+	def AnkaOfflineMsg(self, sender, sentAt, text):
+		if app.ENABLE_WHISPER_MESSENGER and self.interface:
+			self.interface.RecvOfflineWhisper(sender, int(sentAt), text.replace("\x1f", " "))
+
+	def AnkaOfflineMsgResult(self, result, name):
+		if app.ENABLE_WHISPER_MESSENGER and self.interface:
+			self.interface.RecvOfflineWhisperResult(int(result), name)
+
+	# "Lonca Bagisi" / "Lonca Fisiltisi" (server ENABLE_GUILD_DONATION)
+	def __GetBaerimGuildWnd(self):
+		if app.ENABLE_GUILD_RENEWAL_BAERIM and self.interface:
+			return self.interface.wndGuild
+		return None
+
+	def GuildGoldCoins(self, gold):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.SetGuildGold(int(gold))
+
+	def GuildSilverCoins(self, silver):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.SetGuildSilver(int(silver))
+
+	def SendDailyGuildDonation(self, scroll, premium):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.SetDailyDonation(int(scroll), int(premium))
+
+	def GuildMemberDailyDonation(self, payload):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.SetMemberDailyDonation(payload)
+
+	def GuildDonationResult(self, result):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.OnDonationResult(int(result))
+
+	# "Lonca Gorevleri" (server ENABLE_GUILD_QUEST)
+	def GuildQuestInfo(self, used1, used2, used3, used4, questType, level, cur, target, secondsLeft):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.SetQuestInfo(int(used1), int(used2), int(used3), int(used4), int(questType), int(level), int(cur), int(target), int(secondsLeft))
+
+	def GuildQuestProgress(self, cur, target):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.SetQuestProgress(int(cur), int(target))
+
+	def GuildQuestResult(self, result):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.OnQuestResult(int(result))
+
+	def GuildQuestRankBegin(self):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.QuestRankBegin()
+
+	def GuildQuestRankRow(self, name, score):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.QuestRankRow(name, int(score))
+
+	def GuildQuestRankEnd(self):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.QuestRankEnd()
+
+	# "Lonca Beceri Agaci" (server ENABLE_GUILD_SKILL_TREE)
+	def GuildSkillInfo(self, exp, points, energy, maxEnergy, activeLeft, lv0, lv1, lv2, lv3, lv4, lv5, lv6, lv7, lv8, lv9):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.SetSkillInfo(int(exp), int(points), int(energy), int(maxEnergy), int(activeLeft), [int(level) for level in (lv0, lv1, lv2, lv3, lv4, lv5, lv6, lv7, lv8, lv9)])
+
+	def GuildSkillResult(self, result, value):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.OnSkillResult(int(result), int(value))
+
+	# "Lonca Magazasi" and logs (server ENABLE_GUILD_SHOP)
+	def GuildShopResult(self, result):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.OnShopResult(int(result))
+
+	def GuildLogBegin(self, logType):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.LogBegin(int(logType))
+
+	def GuildLogRow(self, stamp, name, a, b, c):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.LogRow(stamp, name, int(a), int(b), int(c))
+
+	def GuildLogEnd(self):
+		wnd = self.__GetBaerimGuildWnd()
+		if wnd:
+			wnd.LogEnd()
+
+	# "Lonca Basvurusu" (server ENABLE_GUILD_APPLICATION)
+	def __GetGuildApplicationWnd(self):
+		if app.ENABLE_GUILD_APPLICATION and self.interface:
+			return self.interface.GetGuildApplicationWnd()
+		return None
+
+	def GuildAppListBegin(self):
+		wnd = self.__GetGuildApplicationWnd()
+		if wnd:
+			wnd.RecvGuildsListBegin()
+
+	def GuildAppRow(self, gid, status, level, members, maxMembers, minLevel, lang, empire, ladder, applied, name, desc):
+		wnd = self.__GetGuildApplicationWnd()
+		if wnd:
+			import uiGuildApplication
+			wnd.RecvGuildRow({"gid" : int(gid), "status" : int(status), "level" : int(level), "members" : int(members),
+				"maxMembers" : int(maxMembers), "minLevel" : int(minLevel), "lang" : int(lang), "empire" : int(empire),
+				"ladder" : int(ladder), "applied" : int(applied), "name" : name.replace("\x1f", " "), "desc" : uiGuildApplication.Decode(desc)})
+
+	def GuildAppListEnd(self):
+		wnd = self.__GetGuildApplicationWnd()
+		if wnd:
+			wnd.RecvGuildsListEnd()
+
+	def GuildAppApplied(self, gid, applied):
+		wnd = self.__GetGuildApplicationWnd()
+		if wnd:
+			wnd.RecvApplied(int(gid), int(applied))
+
+	def GuildAppSettings(self, gid, status, lang, minLevel, desc):
+		wnd = self.__GetGuildApplicationWnd()
+		if wnd:
+			import uiGuildApplication
+			wnd.RecvSettings(int(gid), int(status), int(lang), int(minLevel), uiGuildApplication.Decode(desc))
+
+	def GuildAppReqBegin(self):
+		wnd = self.__GetGuildApplicationWnd()
+		if wnd:
+			wnd.RecvApplicationListBegin()
+
+	def GuildAppReq(self, pid, level, job, lastPlay, name):
+		wnd = self.__GetGuildApplicationWnd()
+		if wnd:
+			wnd.RecvApplication({"pid" : int(pid), "level" : int(level), "job" : int(job), "time" : int(lastPlay), "name" : name})
+
+	def GuildAppReqEnd(self):
+		wnd = self.__GetGuildApplicationWnd()
+		if wnd:
+			wnd.RecvApplicationListEnd()
+
+	def GuildAppNewRequest(self):
+		wnd = self.__GetGuildApplicationWnd()
+		if wnd and wnd.IsShow():
+			net.SendChatPacket("/guild_app requests")
+
+	def ServerCommand_Guild_JoinNotify(self, GID, name, desc = ""):
+		if app.ENABLE_GUILD_APPLICATION and self.interface:
+			import uiGuildApplication
+			self.interface.OpenGuildJoinNotification(int(GID), name.replace("\x1f", " "), uiGuildApplication.Decode(desc))
+
+	def ServerCommand_MessengerInfo(self, group, name, level, race, channel, mapIndex, lastSeen):
+		if app.ENABLE_MESSENGER_DETAILS and self.interface and self.interface.wndMessenger:
+			if hasattr(self.interface.wndMessenger, "OnMemberInfo"):
+				self.interface.wndMessenger.OnMemberInfo(int(group), name, int(level), int(race), int(channel), int(mapIndex), int(lastSeen))
+
+	def AnkaGlobalCooldown(self, seconds):
+		if app.ENABLE_WHISPER_MESSENGER and self.interface:
+			self.interface.RecvGlobalChatCooldown(seconds)
+
+	def SetBraveCapeStatus(self, status):
+		if self.interface:
+			self.interface.SetBraveCapeStatus(status)
+
 	def OptionAutoCape(self, active, reason):
 		import advanced_option_notifications
 		if reason not in ("0", "1", "2", "3"): return
@@ -2787,6 +3004,41 @@ class GameWindow(ui.ScriptWindow):
 			"OptionMiningFinished" : self.OptionMiningFinished,
 			"OptionItemExpired" : self.OptionItemExpired,
 			"OptionAutoCape" : self.OptionAutoCape,
+			"SetBraveCapeStatus" : self.SetBraveCapeStatus,
+			"CharacterStats" : self.CharacterStats,
+			"AnkaGlobalChat" : self.AnkaGlobalChat,
+			"AnkaGlobalCooldown" : self.AnkaGlobalCooldown,
+			"AnkaWhisperInfo" : self.AnkaWhisperInfo,
+			"AnkaOfflineMsg" : self.AnkaOfflineMsg,
+			"AnkaOfflineMsgResult" : self.AnkaOfflineMsgResult,
+			"GuildGoldCoins" : self.GuildGoldCoins,
+			"GuildSilverCoins" : self.GuildSilverCoins,
+			"SendDailyGuildDonation" : self.SendDailyGuildDonation,
+			"GuildMemberDailyDonation" : self.GuildMemberDailyDonation,
+			"GuildDonationResult" : self.GuildDonationResult,
+			"GuildQuestInfo" : self.GuildQuestInfo,
+			"GuildQuestProgress" : self.GuildQuestProgress,
+			"GuildQuestResult" : self.GuildQuestResult,
+			"GuildQuestRankBegin" : self.GuildQuestRankBegin,
+			"GuildQuestRankRow" : self.GuildQuestRankRow,
+			"GuildQuestRankEnd" : self.GuildQuestRankEnd,
+			"GuildSkillInfo" : self.GuildSkillInfo,
+			"GuildSkillResult" : self.GuildSkillResult,
+			"GuildShopResult" : self.GuildShopResult,
+			"GuildLogBegin" : self.GuildLogBegin,
+			"GuildLogRow" : self.GuildLogRow,
+			"GuildLogEnd" : self.GuildLogEnd,
+			"GuildAppListBegin" : self.GuildAppListBegin,
+			"GuildAppRow" : self.GuildAppRow,
+			"GuildAppListEnd" : self.GuildAppListEnd,
+			"GuildAppApplied" : self.GuildAppApplied,
+			"GuildAppSettings" : self.GuildAppSettings,
+			"GuildAppReqBegin" : self.GuildAppReqBegin,
+			"GuildAppReq" : self.GuildAppReq,
+			"GuildAppReqEnd" : self.GuildAppReqEnd,
+			"GuildAppNewRequest" : self.GuildAppNewRequest,
+			"Guild_JoinNotify" : self.ServerCommand_Guild_JoinNotify,
+			"MessengerInfo" : self.ServerCommand_MessengerInfo,
 			"ConfirmationLevelup" : self.ConfirmationLevelup,
 			"ConsoleEnable"									: self.__Console_Enable,
 			"DayMode"										: self.__DayMode_Update,
@@ -3910,9 +4162,11 @@ class GameWindow(ui.ScriptWindow):
 			self.interface.ShowNameReinforce(int(arg))
 
 	def RecvReadWiki(self):
+		if app.ENABLE_WHISPER_MESSENGER:
+			return	# no [WIKI] login whisper: the game already has a wiki button
 		if constInfo.ALREADY_SENT == 0:
-			chat.AppendWhisper(chat.WHISPER_TYPE_SYSTEM, "[WÝKÝ]", localeInfo.READ_WIKI_TEXT)
-			self.interface.RecvWhisper("[WÝKÝ]")
+			chat.AppendWhisper(chat.WHISPER_TYPE_SYSTEM, localeInfo.WIKI_WHISPER_NAME, localeInfo.READ_WIKI_TEXT)
+			self.interface.RecvWhisper(localeInfo.WIKI_WHISPER_NAME)
 			constInfo.ALREADY_SENT = 1
 
 	if app.ENABLE_RENEWAL_OFFLINESHOP:

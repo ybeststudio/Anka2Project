@@ -139,9 +139,12 @@ enum eAnkaDefines {
 #ifdef ENABLE_BUFFI_SYSTEM
 	#define ENABLE_BUFFI_EVOLUTION					// Buffi evrimi (Lv 55/75/90, malzeme + yang)
 	#define ENABLE_BUFFI_SKILL_BOOK					// Buffi beceri kitaplari (M -> G kitap, G -> P ruh tasi)
+	#define ENABLE_BUFFI_GROWTH						// Buffi gelisimi: max Lv 120 (3. evrimden sonra), pet usulu exp, seviyeye gore zirh/yelpaze
 	#define ENABLE_BUFFI_CHANGE_SEX					// Buffi cinsiyet degistirme tilsimi
 #endif
 #define ENABLE_SKILL_UPGRADE						// Beceri Yukseltici (/upgrade_skill): kitap / ruh tasi okuma, 71001 / 71094 / 70102
+#define ENABLE_APPLY_RANDOM							// Resmi rastgele temel bonus (APPLY_RANDOM): apply_random_table.txt, item.random* kolonlari
+#define ENABLE_BONUS_FIX							// Bonus duzeltmeleri: saklanmayan POINT'ler, savas okuyuculari, BYTE kesilmesi, drop
 #define ENABLE_STANDING_MOUNT						// Ayakta kullanýlan binek sistemini etkinleþtir	
 	#ifdef ENABLE_STANDING_MOUNT	
 		#define STANDING_MOUNT_VNUM_1 40003 			// Turbo Sörf Tahtasý
@@ -374,6 +377,49 @@ enum eAnkaDefines {
 #define ENABLE_BIG_MAP_NOTICE					// questlua_global big_map_notice
 #define ENABLE_NPC_IS_STONE						// questlua_npc npc.is_stone
 #define ENABLE_PARTY_MEMBER_COUNT				// questlua_party party.get_member_count
+#define ENABLE_CHARACTER_STATS					// Karakter detay paneli istatistikleri: zindan / balik / maden sayaclari (stats.*)
+#define ENABLE_WHISPER_OFFLINE_MESSAGE			// Messenger offline message: /anka_offline_msg <name> <text> (500.000 Yang), delivered on login
+#ifdef ENABLE_WHISPER_OFFLINE_MESSAGE
+#	define WHISPER_OFFLINE_MESSAGE_COST	500000
+#endif
+#define ENABLE_WHISPER_PLAYER_INFO				// Messenger header: /anka_whisper_info <name> -> "AnkaWhisperInfo name found empire race online guild"
+#define ENABLE_WHISPER_OPEN_SHOP				// Messenger header: /anka_open_shop <name> opens the player's offline shop
+#define ENABLE_WHISPER_GUILD_INVITE				// Messenger header button: /anka_guild_invite <name> (same core), CGuild::Invite
+#define ENABLE_ANKA2_GLOBAL_CHAT				// Messenger "Anka2 Global" channel: /anka_global <text>, relayed over GG shout to every core
+#ifdef ENABLE_ANKA2_GLOBAL_CHAT
+#	define ANKA2_GLOBAL_CHAT_EMPIRE		254		// TPacketGGShout::bEmpire marker of a global chat line
+#	define ANKA2_GLOBAL_CHAT_MIN_LEVEL	15
+#	define ANKA2_GLOBAL_CHAT_COOLDOWN	60000	// ms between two messages of one character (reference: 60 s)
+#	define ANKA2_GLOBAL_CHAT_MAX_LEN	200
+#endif
+#define ENABLE_GUILD_GRADE_RENEWAL				// Baerim Rutbe Ayarlari: 9 yetki (WORD yetki alani), varsayilan Rank2-RankN adlari
+#define ENABLE_GUILD_SKILL_TREE					// Lonca Beceri Agaci (reference Baerim guild.json skill): /guild_skill info|donate|up|activate|recharge
+#define ENABLE_GUILD_SHOP						// Lonca Magazasi ve bagis/beceri gecmisi (reference Baerim guild.json shop): /guild_shop buy|log
+#define ENABLE_GUILD_QUEST						// Lonca Gorevleri (reference Baerim guild.json quest): /guild_quest info|start|abort|rank, /get_guild_quest_reward
+#define ENABLE_GUILD_DONATION					// Lonca Altini/Gumusu, Lonca Bagisi ve Lonca Fisiltisi (reference Baerim DonationGoldWindow, SendWhisperGuild)
+#ifdef ENABLE_GUILD_DONATION
+#	define GUILD_DONATION_SCROLL_PRICE			100000	// reference Katki Parsomeni
+#	define GUILD_DONATION_SCROLL_DAILY_LIMIT	20
+#	define GUILD_DONATION_DAILY_CHUNK			30
+#	define GUILD_WHISPER_PRICE					2		// reference PRICE_WHISPER
+#	define GUILD_WHISPER_SENDER_MAX_LEN			24
+#	define GUILD_WHISPER_TEXT_MAX_LEN			110
+#endif
+#define ENABLE_GUILD_APPLICATION				// Lonca Basvurusu (reference Baerim uiGuildApplication): /guild_app list|apply|withdraw|requests|approve|reject|status|lang|minlevel|desc + Guild_JoinNotify
+#ifdef ENABLE_GUILD_APPLICATION
+#	define GUILD_APPLICATION_CACHE_MS			60000	// guild settings cache (other cores' changes show up after this)
+#	define GUILD_APPLICATION_LIST_DELAY_MS		3000	// reference CLICK_LIMIT_TIME
+#	define GUILD_APPLICATION_DESC_MAX_LEN		100		// reference DESCRIPTION_MAX_LEN
+#	define GUILD_APPLICATION_LANG_MAX			11		// reference LANGUAGE_ORDER (ALL .. TR)
+#	define GUILD_APPLICATION_NOTIFY_MIN_LEVEL	10		// guildless players from this level get the sliding join notification
+#	define GUILD_APPLICATION_NOTIFY_FIRST		180		// s after login
+#	define GUILD_APPLICATION_NOTIFY_INTERVAL	1800	// s between two notifications
+#endif
+#define ENABLE_MESSENGER_DETAILS				// Messenger cards (reference Baerim uiMessenger): "MessengerInfo" level / race / channel / map / last seen of friends and guild members
+#define ENABLE_AFFECT_COMBAT_TIMER				// Dew / dragon god potion time only runs in combat (reference "Iksir zamani yalnizca savasta calisir")
+#define ENABLE_AFFECT_CAST_STAT					// Skill buff affect: caster STR/INT at cast time sent to the client (affect tooltip "INT on activation")
+#define ENABLE_SHINING_SYSTEM					// Parilti itemlari (ITEM_SHINING): silah / kostum parlamasi, WEAR_SHINING_WEAPON / ARMOR
+#define ENABLE_BRAVE_CAPE_RENEWAL				// Baerim uiAutoCape.BraveCapeWindow: /brave_cape active <sn> <menzil> | deactive
 #define ENABLE_AUTO_CAPE_SYSTEM					// cmd_general auto-cape / advanced_options.cape_*
 #define ENABLE_CONFIRM_LEVELUP					// cmd_general do_confirm_levelup
 /* === ifdef-audit end === */

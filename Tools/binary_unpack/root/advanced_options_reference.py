@@ -1884,7 +1884,11 @@ def ApplyLocale(language, codepage):
     for moduleName, entries in TRANSLATIONS.items():
         module = localeInfo if moduleName == "localeInfo" else uiScriptLocale
         for key, variants in entries.items():
-            value = variants.get(language, variants.get("en"))
+            value = variants.get(language)
+            if value is None:
+                if hasattr(module, key):	# the locale files already have a text in this language
+                    continue
+                value = variants.get("en")
             if value is not None:
                 setattr(module, key, _EncodeText(value, codepage))
 

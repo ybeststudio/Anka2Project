@@ -1,0 +1,86 @@
+{{Ausrüstung/Layout
+
+|Art = Talisman
+
+|Level = 105
+
+|Abkürzung =
+
+|Klassen = Krieger, Ninja, Sura, Schamane, Lykaner
+
+|Herkunft =
+*'''Metins:''' -
+*'''Monster:''' Alle Monster auf [[Yohara]]
+*'''Truhen:''' [[Turm-Ranglistentruhe]], [[Yohara-Schatztruhe]], [[Perf. Talisman-Truhe]]
+*'''Sonstiges:''' -
+
+<!-- Weitere Hinweise zum Item. Wenn es keinen Kommentar gibt, lassen Sie ihn bitte leer! -->
+|Sonstiges= 
+* Zum Verbessern wird ein {{PAGENAME}} mit der '''gleichen''' Stufe benötigt!
+* Die Sorte der Kraft der Elemente ist zufällig.
+* Hat der {{PAGENAME}} weniger als 2 Standardboni, so erhält er beim Verbessern die fehlenden Boni.
+
+<!-- Erhöhungskosten beim Schmied -->
+|Kosten1 = 1.000.000
+|Kosten2 = 1.500.000
+|Kosten3 = 2.000.000
+|Kosten4 = 2.500.000
+|Kosten5 = 3.000.000
+|Kosten6 = 3.500.000
+|Kosten7 = 4.000.000
+|Kosten8 = 4.500.000
+|Kosten9 = 5.000.000
+
+|Upgradeitem-1-0 = -
+|Upgradeitem-1-1 = 06x {{icon|Willenstopas}}
+|Upgradeitem-1-2 = 12x {{icon|Willenstopas}}
+|Upgradeitem-1-3 = 18x {{icon|Willenstopas}}
+|Upgradeitem-1-4 = 24x {{icon|Willenstopas}}
+|Upgradeitem-1-5 = 30x {{icon|Willenstopas}}
+|Upgradeitem-1-6 = 36x {{icon|Willenstopas}}
+|Upgradeitem-1-7 = 42x {{icon|Willenstopas}}
+|Upgradeitem-1-8 = 48x {{icon|Willenstopas}}
+|Upgradeitem-1-9 = 54x {{icon|Willenstopas}}
+
+|Upgradeitem-2-0 = -
+|Upgradeitem-2-1 = 1x {{icon|STR-Willenstalisman}} +0
+|Upgradeitem-2-2 = 1x {{icon|STR-Willenstalisman}} +1
+|Upgradeitem-2-3 = 1x {{icon|STR-Willenstalisman}} +2
+|Upgradeitem-2-4 = 1x {{icon|STR-Willenstalisman}} +3
+|Upgradeitem-2-5 = 1x {{icon|STR-Willenstalisman}} +4
+|Upgradeitem-2-6 = 1x {{icon|STR-Willenstalisman}} +5
+|Upgradeitem-2-7 = 1x {{icon|STR-Willenstalisman}} +6
+|Upgradeitem-2-8 = 1x {{icon|STR-Willenstalisman}} +7
+|Upgradeitem-2-9 = 1x {{icon|STR-Willenstalisman}} +8
+
+<!-- Name des ersten Bonus, Abkürzung für ersten Bonus und Werte auf den Stufen -->
+|Bonus1 = SungMa-Wille (STR)
+|Bonus1-0 = <font color=yellow>1</font>&nbsp;/&nbsp;<font color=orange>2</font>
+|Bonus1-1 = <font color=yellow>1</font>&nbsp;/&nbsp;<font color=orange>3</font>
+|Bonus1-2 = <font color=yellow>3</font>&nbsp;/&nbsp;<font color=orange>4</font>
+|Bonus1-3 = <font color=yellow>5</font>&nbsp;/&nbsp;<font color=orange>6</font>
+|Bonus1-4 = <font color=yellow>7</font>&nbsp;/&nbsp;<font color=orange>8</font>
+|Bonus1-5 = <font color=yellow>9</font>&nbsp;/&nbsp;<font color=orange>10</font>
+|Bonus1-6 = <font color=yellow>11</font>&nbsp;/&nbsp;<font color=orange>12</font>
+|Bonus1-7 = <font color=yellow>14</font>&nbsp;/&nbsp;<font color=orange>16</font>
+|Bonus1-8 = <font color=yellow>17</font>&nbsp;/&nbsp;<font color=orange>19</font>
+|Bonus1-9 = <font color=yellow>21</font>&nbsp;/&nbsp;<font color=orange>24</font>
+
+<!-- Name des zweiten Bonus, Abkürzung für zweiten Bonus und Werte auf den Stufen -->
+|Bonus2 = Elementarkraftbonus
+|Bonus2-0 = <font color=yellow>1%</font>&nbsp;/&nbsp;<font color=orange>2%</font>
+|Bonus2-1 = <font color=yellow>2%</font>&nbsp;/&nbsp;<font color=orange>3%</font>
+|Bonus2-2 = <font color=yellow>3%</font>&nbsp;/&nbsp;<font color=orange>4%</font>
+|Bonus2-3 = <font color=yellow>4%</font>&nbsp;/&nbsp;<font color=orange>5%</font>
+|Bonus2-4 = <font color=yellow>5%</font>&nbsp;/&nbsp;<font color=orange>6%</font>
+|Bonus2-5 = <font color=yellow>6%</font>&nbsp;/&nbsp;<font color=orange>7%</font>
+|Bonus2-6 = <font color=yellow>7%</font>&nbsp;/&nbsp;<font color=orange>8%</font>
+|Bonus2-7 = <font color=yellow>8%</font>&nbsp;/&nbsp;<font color=orange>9%</font>
+|Bonus2-8 = <font color=yellow>9%</font>&nbsp;/&nbsp;<font color=orange>10%</font>
+|Bonus2-9 = <font color=yellow>15%</font>&nbsp;/&nbsp;<font color=orange>17%</font>
+}}
+
+[[ae:تعويذة إرادة القوة]]
+[[cz:SIL Talisman vůle]]
+[[fr:Talisman volonté STR]]
+[[it:Talismano Volontà STR]]

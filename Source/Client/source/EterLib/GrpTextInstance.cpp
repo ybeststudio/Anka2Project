@@ -484,7 +484,18 @@ void CGraphicTextInstance::Update()
 						retBuf[retLen] = '\0';
 
 						char szPath[255];
+#ifdef ENABLE_EMOJI_ICON_PACK
+						// reference: |Eemoji/key_lclick|e -> icon/emoji/key_lclick.tga, old ui/game/emoji path as fallback
+						static const char* s_aszEmojiPathFormat[] = { "icon/%s.tga", "icon/%s.png", "d:/ymir work/ui/game/emoji/%s.tga" };
+						for (size_t iFormat = 0; iFormat < sizeof(s_aszEmojiPathFormat) / sizeof(s_aszEmojiPathFormat[0]); ++iFormat)
+						{
+							_snprintf(szPath, sizeof(szPath), s_aszEmojiPathFormat[iFormat], retBuf);
+							if (CResourceManager::Instance().IsFileExist(szPath))
+								break;
+						}
+#else
 						_snprintf(szPath, sizeof(szPath), "d:/ymir work/ui/game/emoji/%s.tga", retBuf);
+#endif
 						if (CResourceManager::Instance().IsFileExist(szPath))
 						{
 							CGraphicImage * pImage = (CGraphicImage *)CResourceManager::Instance().GetResourcePointer(szPath);

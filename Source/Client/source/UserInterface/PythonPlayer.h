@@ -401,7 +401,11 @@ class CPythonPlayer : public CSingleton<CPythonPlayer>, public IAbstractPlayer
 #endif
 
 		void	SetItemMetinSocket(TItemPos Cell, DWORD dwMetinSocketIndex, DWORD dwMetinNumber);
+#ifdef ENABLE_BONUS_FIX
+		void	SetItemAttribute(TItemPos Cell, DWORD dwAttrIndex, WORD byType, short sValue);
+#else
 		void	SetItemAttribute(TItemPos Cell, DWORD dwAttrIndex, BYTE byType, short sValue);
+#endif
 		DWORD	GetItemIndex(TItemPos Cell);
 		int		GetItemSlotIndex(DWORD dwVnum);
 		DWORD	GetItemFlags(TItemPos Cell);
@@ -411,7 +415,15 @@ class CPythonPlayer : public CSingleton<CPythonPlayer>, public IAbstractPlayer
 		DWORD	GetItemCount(TItemPos Cell);
 		DWORD	GetItemCountByVnum(DWORD dwVnum);
 		DWORD	GetItemMetinSocket(TItemPos Cell, DWORD dwMetinSocketIndex);
+#ifdef ENABLE_BONUS_FIX
+		void	GetItemAttribute(TItemPos Cell, DWORD dwAttrSlotIndex, WORD * pbyType, short * psValue);
+#else
 		void	GetItemAttribute(TItemPos Cell, DWORD dwAttrSlotIndex, BYTE * pbyType, short * psValue);
+#endif
+#ifdef ENABLE_APPLY_RANDOM
+		void	SetItemApplyRandom(TItemPos Cell, const TPlayerItemAttribute* pApply);
+		void	GetItemApplyRandom(TItemPos Cell, DWORD dwIndex, WORD* pwType, short* psValue);
+#endif
 		void	SendClickItemPacket(DWORD dwIID);
 
 #ifdef ENABLE_MOVE_COSTUME_ACCE_ATTR

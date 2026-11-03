@@ -2,6 +2,9 @@
 #define __INC_ITEM_MANAGER__
 
 #include "../../common/service.h"
+#ifdef ENABLE_APPLY_RANDOM
+class CApplyRandomTable;
+#endif
 
 #ifdef ENABLE_VIEW_CHEST_DROP
 	#include "packet.h"
@@ -440,6 +443,13 @@ class ITEM_MANAGER : public singleton<ITEM_MANAGER>
 		bool			ReadEtcDropItemFile(const char * c_pszFileName, bool isReloading = false);
 		bool			ReadMonsterDropItemGroup(const char * c_pszFileName, bool isReloading = false);
 		bool			ReadSpecialDropItemFile(const char * c_pszFileName, bool isReloading = false);
+#ifdef ENABLE_APPLY_RANDOM
+		bool			ReadApplyRandomTableFile(const char* c_pszFileName);
+		const CApplyRandomTable* GetApplyRandomTable() const { return m_pApplyRandomTable; }
+	private:
+		CApplyRandomTable* m_pApplyRandomTable;
+	public:
+#endif
 
 		bool			ConvSpecialDropItemFile();
 		// convert name -> vnum special_item_group.txt

@@ -1065,6 +1065,15 @@ bool LoadLocaleData(const char *localePath)
 	}
 #endif
 
+#ifdef ENABLE_SHINING_SYSTEM
+	{
+		char szShiningEffect[256];
+		snprintf(szShiningEffect, sizeof(szShiningEffect), "%s/shining_effect.txt", localePathCommon);
+		if (!rkItemMgr.LoadShiningEffect(szShiningEffect))
+			Tracenf("LoadLocaleData: error while loading %s.", szShiningEffect);
+	}
+#endif
+
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
 	if (!rkItemMgr.LoadItemScale(szItemScale))
 	{

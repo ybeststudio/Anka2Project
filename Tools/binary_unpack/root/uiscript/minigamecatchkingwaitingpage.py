@@ -1,3 +1,4 @@
+import uiScriptLocale
 PUBLIC_PATH = "d:/ymir work/ui/public/"
 
 WINDOW_WIDTH	= 392
@@ -28,7 +29,7 @@ window = {
 			"width" : WINDOW_WIDTH,
 			"height" : WINDOW_HEIGHT,
 			
-			"title" : "Kralý Yakala",
+			"title" : uiScriptLocale.CATCH_KING_TITLE,
 			
 			"children" :
 			(		
@@ -128,7 +129,7 @@ window = {
 					"x" : 0,
 					"y" : 35,
 					
-					"text" : "Baþlat",
+					"text" : uiScriptLocale.CATCH_KING_START,
 					
 					"vertical_align" : "bottom",
 					"horizontal_align" : "center",

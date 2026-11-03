@@ -40,7 +40,7 @@ window = {
 
 					"children" :
 					(
-						{ "name":"TitleName", "type":"text", "x":77, "y":3, "text":"합성 결과", "text_horizontal_align":"center" },
+						{ "name":"TitleName", "type":"text", "x":77, "y":3, "text":uiScriptLocale.CUBE_RESULT_TITLE, "text_horizontal_align":"center" },
 					),
 				},
 
@@ -72,7 +72,7 @@ window = {
 					"vertical_align" : "bottom",
 					"horizontal_align" : "center",
 
-					"text":"합성에 성공 했습니다",
+					"text":uiScriptLocale.CUBE_RESULT_SUCCESS,
 					"text_horizontal_align":"center",
 				},
 

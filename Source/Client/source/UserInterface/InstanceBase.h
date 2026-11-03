@@ -44,6 +44,9 @@ class CInstanceBase
 			DWORD m_dwAura;
 #endif
 			DWORD m_dwMountVnum;
+#ifdef ENABLE_SHINING_SYSTEM
+			DWORD m_adwShining[2];
+#endif
 #ifdef ENABLE_GUILD_LEADER_TEXTAIL
 			BYTE m_dwGuildLeader;
 #endif
@@ -1309,6 +1312,15 @@ class CInstanceBase
 		UINT __GetRefinedEffect(CItemData* pItem);
 		void __ClearWeaponRefineEffect();
 		void __ClearArmorRefineEffect();
+#ifdef ENABLE_SHINING_SYSTEM
+		void __RefreshShiningEffect(bool bWeapon);
+	public:
+		void SetShining(BYTE bSlot, DWORD dwVnum);
+	protected:
+		void __ClearWeaponShiningEffect();
+		void __ClearArmorShiningEffect();
+		void __AttachWeaponShiningEffect(const char* c_szEffectFileName, BYTE bPart);
+#endif
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
 		void	ClearAcceEffect();
 #endif
@@ -1381,6 +1393,11 @@ class CInstanceBase
 		DWORD m_swordRefineEffectRight;
 		DWORD m_swordRefineEffectLeft;
 		DWORD m_armorRefineEffect[2];
+#ifdef ENABLE_SHINING_SYSTEM
+		DWORD m_adwShining[2];		// worn ITEM_SHINING vnums: weapon, armor
+		DWORD m_weaponShiningEffects[2];
+		DWORD m_armorShiningEffect;
+#endif
 #ifdef ENABLE_TITLE_SYSTEM
 		DWORD m_dwOverHeadSpecialEffect;
 #endif

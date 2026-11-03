@@ -78,7 +78,7 @@ class TopEventi(ui.ScriptWindow):
 				chat.AppendChat(chat.CHAT_TYPE_INFO, "Non e' possibile inserire oggetti sovrapposti")
 				return
 			if attachedItemCount < 20:
-				chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> En az 20 Futbol Topu yerleþtirebilirsin.")
+				chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.FOOTBALL_MIN_20)
 				return
 			if attachedItemCount == 1:
 				attachedItemCount = 0
@@ -93,7 +93,7 @@ class TopEventi(ui.ScriptWindow):
 
 			if 50096 == attachedItemIndex and 0 == selectedSlotPos:
 				constInfo.itemtop1 = 1
-				chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> Futbol Topu slota baþarýlý þekilde yerleþtirildi.")
+				chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.FOOTBALL_PLACED)
 		
 			if player.SLOT_TYPE_INVENTORY == attachedSlotType and not attachedSlotPos in self.arryfeed:
 				itemCount = player.GetItemCount(attachedSlotPos)
@@ -113,7 +113,7 @@ class TopEventi(ui.ScriptWindow):
 		
 	def SendTopButton(self):
 		if constInfo.itemtop1 == 0:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> Futbol Topu slot üzerinde bulunmuyor.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.FOOTBALL_NOT_ON_SLOT)
 			return
 			
 

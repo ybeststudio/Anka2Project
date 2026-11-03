@@ -19,6 +19,9 @@
 #include "locale_service.h"
 #include "item.h"
 #include "item_manager.h"
+#ifdef ENABLE_APPLY_RANDOM
+#include "item_apply_random_table.h"
+#endif
 #include "item_manager_private_types.h"
 #include "group_text_parse_tree.h"
 
@@ -196,7 +199,11 @@ bool ITEM_MANAGER::ReadSpecialDropItemFile(const char * c_pszFileName, bool isRe
 						}
 					}
 					str_to_number(apply_value, pTok->at(1).c_str());
+#ifdef ENABLE_BONUS_FIX
+					if (apply_type >= MAX_APPLY_NUM)
+#else
 					if (apply_type > MAX_APPLY_NUM)
+#endif
 					{
 						sys_err ("Invalid APPLY_TYPE %u in Special Item Group Vnum %d", apply_type, iVnum);
 						M2_DELETE(pkGroup);
@@ -1111,3 +1118,18 @@ bool ITEM_MANAGER::ReadItemVnumMaskTable(const char * c_pszFileName)
 	fclose(fp);
 	return true;
 }
+
+#ifdef ENABLE_APPLY_RANDOM
+bool ITEM_MANAGER::ReadApplyRandomTableFile(const char* c_pszFileName)
+{
+	CApplyRandomTable* pTable = new CApplyRandomTable;
+	if (!pTable->ReadApplyRandomTableFile(c_pszFileName))
+	{
+		delete pTable;
+		return false;
+	}
+	delete m_pApplyRandomTable;
+	m_pApplyRandomTable = pTable;
+	return true;
+}
+#endif

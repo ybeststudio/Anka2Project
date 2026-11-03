@@ -88,6 +88,9 @@ void SNetworkActorData::__copy__(const SNetworkActorData& src)
 	m_sAlignment = src.m_sAlignment;
 	m_byPKMode = src.m_byPKMode;
 	m_dwMountVnum = src.m_dwMountVnum;
+#ifdef ENABLE_SHINING_SYSTEM
+	memcpy(m_adwShining, src.m_adwShining, sizeof(m_adwShining));
+#endif
 
 	m_dwGuildID = src.m_dwGuildID;
 #ifdef ENABLE_GUILD_LEADER_TEXTAIL
@@ -146,6 +149,9 @@ SNetworkActorData::SNetworkActorData()
 	m_sAlignment = 0;
 	m_byPKMode = 0;
 	m_dwMountVnum = 0;
+#ifdef ENABLE_SHINING_SYSTEM
+	memset(m_adwShining, 0, sizeof(m_adwShining));
+#endif
 #ifdef ENABLE_CONQUEROR_LEVEL
 	m_dwConquerorLevel=0;
 #endif
@@ -398,6 +404,9 @@ CInstanceBase* CNetworkActorManager::__AppendCharacterManagerActor(SNetworkActor
 	kCreateData.m_dwEmpireID = rkNetActorData.m_dwEmpireID;
 	kCreateData.m_dwVID = rkNetActorData.m_dwVID;
 	kCreateData.m_dwMountVnum = rkNetActorData.m_dwMountVnum;
+#ifdef ENABLE_SHINING_SYSTEM
+	memcpy(kCreateData.m_adwShining, rkNetActorData.m_adwShining, sizeof(kCreateData.m_adwShining));
+#endif
 #ifdef ENABLE_GUILD_LEADER_TEXTAIL
 	kCreateData.m_dwGuildLeader = rkNetActorData.m_dwGuildLeader;
 #endif
@@ -579,7 +588,14 @@ void CNetworkActorManager::UpdateActor(const SNetworkUpdateActorData& c_rkNetUpd
 #ifdef ENABLE_SKILL_COLOR_SYSTEM
 		pkInstFind->ChangeSkillColor(*c_rkNetUpdateActorData.m_dwSkillColor);
 #endif
+#ifdef ENABLE_SHINING_SYSTEM
+		for (BYTE i = 0; i < 2; ++i)
+			pkInstFind->SetShining(i, c_rkNetUpdateActorData.m_adwShining[i]);
+#endif
 	}
+#ifdef ENABLE_SHINING_SYSTEM
+	memcpy(rkNetActorData.m_adwShining, c_rkNetUpdateActorData.m_adwShining, sizeof(rkNetActorData.m_adwShining));
+#endif
 
 	rkNetActorData.m_kAffectFlags = c_rkNetUpdateActorData.m_kAffectFlags;
 	rkNetActorData.m_dwGuildID = c_rkNetUpdateActorData.m_dwGuildID;

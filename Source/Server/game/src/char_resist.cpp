@@ -1,6 +1,9 @@
 #include "stdafx.h"
 #include "constants.h"
 #include "config.h"
+#ifdef ENABLE_BONUS_FIX
+#include "bonus_custom.h"
+#endif
 #include "char.h"
 #include "char_manager.h"
 #include "affect.h"
@@ -183,6 +186,10 @@ void CHARACTER::AttackedByPoison(LPCHARACTER pkAttacker)
 {
 	if (m_pkPoisonEvent)
 		return;
+#ifdef ENABLE_BONUS_FIX
+	if (BonusCustom::IsPoisonImmune(this))
+		return;
+#endif
 
 #ifdef ENABLE_BOSS_METIN_POISON_DISABLE
 	if (IsBoss())

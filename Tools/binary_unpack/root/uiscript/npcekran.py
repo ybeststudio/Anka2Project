@@ -89,7 +89,7 @@ window = {
 						},
 						{
 							"name" : "OpenButton", "type" : "button",
-							"x" : 35, "y" : 9+(30*6)+33 + 170, "text": "Aç",
+							"x" : 35, "y" : 9+(30*6)+33 + 170, "text": uiScriptLocale.NPC_SCREEN_OPEN,
 							"text_height" : 6,
 
 

@@ -239,7 +239,7 @@ def ShowItemToolTip(tooltip, vnum, sourceMobVnum = 0):
 	names = GetStoneExtraNames(vnum, sourceMobVnum)
 	if names:
 		tooltip.AppendSpace(5)
-		tooltip.AppendTextLine(_L("WIKI_STONES_ALSO_AVAILABLE", "Also available:"))
+		tooltip.AppendTextLine(localeInfo.WIKI_STONES_ALSO_AVAILABLE)
 		for n in names:
 			tooltip.AppendTextLine(n + "+0")
 		tooltip.ResizeToolTip()
@@ -978,12 +978,12 @@ class EquipmentItem(WikiUI.DefaultWikiImage):
 			name = name[:name.find("+")]
 		self.children.append(_TextLine(self, name, 5, 5))
 		if secondLevel != firstLevel:
-			lvl = _L("WIKI_LEVEL_TEXT2", "Lv %d-%d (+%d-+%d)") % (firstLevel, secondLevel, 0, self.refineLevel)
+			lvl = localeInfo.WIKI_LEVEL_TEXT2 % (firstLevel, secondLevel, 0, self.refineLevel)
 		else:
-			lvl = _L("WIKI_LEVEL_TEXT", "Lv %d (+%d-+%d)") % (firstLevel, 0, self.refineLevel)
+			lvl = localeInfo.WIKI_LEVEL_TEXT % (firstLevel, 0, self.refineLevel)
 		self.children.append(_TextLine(self, lvl, 355, 5))
-		self.children.append(_TextLine(self, _L("WIKI_UPGRADE_COSTS", "Upgrade costs"), 50, 24))
-		self.children.append(_TextLine(self, _L("WIKI_YANG_COSTS", "Yang"), 58, REFINE_PRICE_Y[self.refineCount]))
+		self.children.append(_TextLine(self, localeInfo.WIKI_UPGRADE_COSTS, 50, 24))
+		self.children.append(_TextLine(self, localeInfo.WIKI_YANG_COSTS, 58, REFINE_PRICE_Y[self.refineCount]))
 		baseIcon = WikiItemSlot()
 		baseIcon.SetParent(self)
 		baseIcon.SetItem(self.baseVnum if self.listIndex == 99 else self.itemVnum)
@@ -1142,7 +1142,7 @@ class _ObtentionBase(WikiUI.DefaultWikiImage):
 		item.SelectItem(self.vnum)
 		self.children.append(_TextLine(self, item.GetItemName(), 8, 6))
 		if len(self.entries) == 0:
-			self.children.append(_TextLine(self, _L("WIKI_NO_DATA", "-"), self.GetWidth() / 2, self.GetHeight() / 2, TRUE))
+			self.children.append(_TextLine(self, localeInfo.WIKI_NO_DATA, self.GetWidth() / 2, self.GetHeight() / 2, TRUE))
 		else:
 			self.__RefreshButtons()
 			self._Select(0)
@@ -1236,15 +1236,15 @@ class ListBoxCraftObtentionItem(_ObtentionBase):
 		return GetItemCraftRecipes(self.vnum)
 
 	def _Refresh(self, r):
-		self._Add(_TextLine(self, _L("WIKI_CRAFT_MATERIALS", "Materials"), 8, 28))
+		self._Add(_TextLine(self, localeInfo.WIKI_CRAFT_MATERIALS, 8, 28))
 		x = self._PlaceSlots(r["materials"], 8, 44)
-		self._Add(_TextLine(self, _L("WIKI_CRAFT_RESULT", "Result"), 8, 92))
+		self._Add(_TextLine(self, localeInfo.WIKI_CRAFT_RESULT, 8, 92))
 		self._PlaceSlots(r["results"], 8, 108)
 		if r["increase"]:
-			self._Add(_TextLine(self, _L("WIKI_CRAFT_INCREASE", "Increase"), 270, 92))
+			self._Add(_TextLine(self, localeInfo.WIKI_CRAFT_INCREASE, 270, 92))
 			self._PlaceSlots(r["increase"], 270, 108)
 		if r["gold"]:
-			self._Add(_TextLine(self, _L("WIKI_YANG_COSTS", "Yang") + ": " + MoneyText(r["gold"]), 270, 28))
+			self._Add(_TextLine(self, localeInfo.WIKI_YANG_COSTS + ": " + MoneyText(r["gold"]), 270, 28))
 		self._AddNpcButton(r["npc"], 270, 52)
 
 class ListBoxCubeItem(ListBoxCraftObtentionItem):
@@ -1256,11 +1256,11 @@ class ListBoxShopObtentionItem(_ObtentionBase):
 		return GetItemShopOffers(self.vnum)
 
 	def _Refresh(self, o):
-		self._Add(_TextLine(self, _L("WIKI_SHOP_PRICE", "Price"), 8, 28))
+		self._Add(_TextLine(self, localeInfo.WIKI_SHOP_PRICE, 8, 28))
 		if o["currency"]:
 			self._PlaceSlots([(o["currency"], o["price"])], 8, 44)
 		else:
-			self._Add(_TextLine(self, MoneyText(o["price"]) + " " + _L("WIKI_YANG_COSTS", "Yang"), 8, 50))
+			self._Add(_TextLine(self, MoneyText(o["price"]) + " " + localeInfo.WIKI_YANG_COSTS, 8, 50))
 		if o["count"] > 1:
 			self._Add(_TextLine(self, "x%d" % o["count"], 8, 92))
 		self._AddNpcButton(o["npc"], 270, 40)
@@ -1319,24 +1319,24 @@ def BuildSourcePage(owner, listbox, vnum):
 	y = 5
 	chests = NativeCall("GetItemDropFromChest", [], realVnum, isRefine)
 	if chests:
-		AppendListText(owner, listbox, "|cFF0080FF" + _L("WIKI_CHESTS", "Chests") + ":", x, y)
+		AppendListText(owner, listbox, "|cFF0080FF" + localeInfo.WIKI_CHESTS + ":", x, y)
 		y += 14
 		for chest in chests:
 			item.SelectItem(chest)
 			name = item.GetItemName()
 			if name == unknownItem:
-				name = _L("WIKI_UNKOWN_ITEM", "Unknown item %d") % chest
+				name = localeInfo.WIKI_UNKOWN_ITEM % chest
 			AppendListText(owner, listbox, "|Eemoji/e_wiki|e " + name, x, y)
 			y += 14
 		y += 28
 	mobs = GetWikiItemMobSources(realVnum, vnum, isRefine)
 	if mobs:
-		AppendListText(owner, listbox, "|cFF0080FF" + _L("WIKI_MONSTER", "Monsters") + ":", x, y)
+		AppendListText(owner, listbox, "|cFF0080FF" + localeInfo.WIKI_MONSTER + ":", x, y)
 		y += 14
 		for mob in mobs:
 			level = nonplayer.GetMonsterLevel(mob)
 			if level <= 0:
-				text = _L("WIKI_UNKOWN_MOB", "Unknown monster %d") % mob
+				text = localeInfo.WIKI_UNKOWN_MOB % mob
 			else:
 				text = nonplayer.GetMonsterName(mob) + " - Lv." + str(level)
 			AppendListText(owner, listbox, "|Eemoji/e_wiki|e " + text, x, y)
@@ -1348,11 +1348,11 @@ def BuildMountSourcePage(owner, listbox, vnum):
 	if not rows:
 		return
 	y = 5
-	AppendListText(owner, listbox, "|cFF0080FF" + _L("WIKI_MOUNT_RUNES", "Runes") + ":", 5, y)
+	AppendListText(owner, listbox, "|cFF0080FF" + localeInfo.WIKI_MOUNT_RUNES + ":", 5, y)
 	y += 14
 	for r in rows:
 		item.SelectItem(r["rune"])
-		line = "%s - %d %s" % (item.GetItemName(), r["energy"], _L("WIKI_MOUNT_ENERGY", "energy"))
+		line = "%s - %d %s" % (item.GetItemName(), r["energy"], localeInfo.WIKI_MOUNT_ENERGY)
 		AppendListText(owner, listbox, "|Eemoji/e_wiki|e " + line, 5, y)
 		y += 14
 		if r["stone"]:
@@ -1365,7 +1365,7 @@ def BuildPetEvolutionPage(owner, listbox, vnum):
 	y = 5
 	for r in rows:
 		item.SelectItem(r["vnum"])
-		AppendListText(owner, listbox, "|Eemoji/e_wiki|e %s %d: %s x%d (Lv.%d)" % (_L("WIKI_PET_EVOLUTION", "Evolution"), r["stage"], item.GetItemName(), r["count"], r["level"]), 5, y)
+		AppendListText(owner, listbox, "|Eemoji/e_wiki|e %s %d: %s x%d (Lv.%d)" % (localeInfo.WIKI_PET_EVOLUTION, r["stage"], item.GetItemName(), r["count"], r["level"]), 5, y)
 		y += 14
 
 def _AttachScroll(owner, listbox, x, h):
@@ -1436,19 +1436,19 @@ class MonsterStatics(WikiUI.DefaultWikiImage):
 	def __BuildStats(self, box):
 		mob = self.mobVnum
 		E = "|Eemoji/e_wiki|e "
-		AppendListText(self, box, E + _L("WIKI_LEVEL_MOB_TEXT", "Level: %d") % nonplayer.GetMonsterLevel(mob), 5, 3)
+		AppendListText(self, box, E + localeInfo.WIKI_LEVEL_MOB_TEXT % nonplayer.GetMonsterLevel(mob), 5, 3)
 		flag = nonplayer.GetMonsterRaceFlag(mob)
 		main = self.__Flags(0, flag, RACE_FLAGS)
 		sub = self.__Flags(0, flag, SUB_RACE_FLAGS)
 		if nonplayer.IsMonsterStone(mob):
-			main.append(_L("WIKI_INFO_RACE_METIN", "Metin"))
-		none = _L("WIKI_INFO_NO_RACE", "-")
-		AppendListText(self, box, E + _L("WIKI_STATICS_INFO_TYPE", "%s / %s") % (", ".join(main) or none, ", ".join(sub) or none), 5, 21)
+			main.append(localeInfo.WIKI_INFO_RACE_METIN)
+		none = localeInfo.WIKI_INFO_NO_RACE
+		AppendListText(self, box, E + localeInfo.WIKI_STATICS_INFO_TYPE % (", ".join(main) or none, ", ".join(sub) or none), 5, 21)
 		(mn, mx) = nonplayer.GetMonsterDamage(mob)
-		AppendListText(self, box, E + _L("WIKI_STATICS_INFO_DMG", "%d-%d / %d HP") % (mn, mx, nonplayer.GetMonsterMaxHP(mob)), 5, 42)
+		AppendListText(self, box, E + localeInfo.WIKI_STATICS_INFO_DMG % (mn, mx, nonplayer.GetMonsterMaxHP(mob)), 5, 42)
 		(ya, yb) = nonplayer.GetMonsterPrice(mob)
-		AppendListText(self, box, E + _L("WIKI_STATICS_INFO_YNG", "%d-%d / %d exp") % (ya, yb, nonplayer.GetMonsterExp(mob)), 5, 63)
-		AppendListText(self, box, E + _L("WIKI_STATICS_INFO_DEFENSES", "Defenses"), 5, 84)
+		AppendListText(self, box, E + localeInfo.WIKI_STATICS_INFO_YNG % (ya, yb, nonplayer.GetMonsterExp(mob)), 5, 63)
+		AppendListText(self, box, E + localeInfo.WIKI_STATICS_INFO_DEFENSES, 5, 84)
 		y = 98
 		for (const, key) in (("MOB_RESIST_SWORD", "WIKI_INFO_RESIST_SWORD"), ("MOB_RESIST_TWOHAND", "WIKI_INFO_RESIST_TWOHAND"),
 			("MOB_RESIST_DAGGER", "WIKI_INFO_RESIST_DAGGER"), ("MOB_RESIST_BELL", "WIKI_INFO_RESIST_BELL"),
@@ -1495,7 +1495,7 @@ class MonsterItemSpecial(WikiUI.DefaultWikiImage):
 		self.renderIndex = renderTarget.GetFreeIndex(1000, 1000000)
 		if self.isType == 0:
 			self.__ShowModel()
-			head = _L("WIKI_DROPLIST_INFO", "Drops of %s") % nonplayer.GetMonsterName(self.vnum)
+			head = localeInfo.WIKI_DROPLIST_INFO % nonplayer.GetMonsterName(self.vnum)
 			rows = _DropRows(wiki.GetMobInfoSize, wiki.GetMobInfoData, self.vnum)
 		else:
 			item.SelectItem(self.vnum)
@@ -1505,7 +1505,7 @@ class MonsterItemSpecial(WikiUI.DefaultWikiImage):
 			slot.SetPosition(70, 45)
 			slot.Show()
 			slot.AppendTo(self)
-			head = _L("WIKI_CONTENT_INFO", "Contents of %s") % item.GetItemName()
+			head = localeInfo.WIKI_CONTENT_INFO % item.GetItemName()
 			rows = _DropRows(wiki.GetSpecialInfoSize, wiki.GetSpecialInfoData, self.vnum)
 		self.children.append(_TextLine(self, head, 300, 6))
 		box = WikiUI.ListBoxGrid()
@@ -1590,14 +1590,14 @@ class ListBoxItemSpecial(WikiUI.DefaultWikiImage):
 		if self.isType == 0:
 			item.SelectItem(self.itemVnum)
 			name = nonplayer.GetMonsterName(self.mobVnum)
-			title = _L("WIKI_CONTENT_INFO", "Contents of %s") % item.GetItemName()
+			title = localeInfo.WIKI_CONTENT_INFO % item.GetItemName()
 			rows = _DropRows(wiki.GetSpecialInfoSize, wiki.GetSpecialInfoData, self.itemVnum)
 		else:
 			name = nonplayer.GetMonsterName(self.itemVnum)
-			title = _L("WIKI_DROPLIST_INFO", "Drops of %s") % name + " - Level %d - Mob Vnum %d" % (nonplayer.GetMonsterLevel(self.itemVnum), self.itemVnum)
+			title = localeInfo.WIKI_DROPLIST_INFO % name + " - Level %d - Mob Vnum %d" % (nonplayer.GetMonsterLevel(self.itemVnum), self.itemVnum)
 			rows = _DropRows(wiki.GetMobInfoSize, wiki.GetMobInfoData, self.itemVnum)
 		self.children.append(_TextLine(self, title, 270, 5, TRUE))
-		self.children.append(_TextLine(self, _L("WIKI_ORIGIN", "Origin"), 480, 5))
+		self.children.append(_TextLine(self, localeInfo.WIKI_ORIGIN, 480, 5))
 		self.children.append(_TextLine(self, name if (self.isType == 0 and self.mobVnum != 0) else "-", 490, 45, TRUE))
 		if self.isType == 0:
 			slot = WikiItemSlot()

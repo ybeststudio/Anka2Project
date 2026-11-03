@@ -102,7 +102,7 @@ window = {
 				{
 					'name': 'Cost',
 					'type': 'text',
-					'text': 'Seçilen efsunlar eklensin mi?',
+					'text': uiScriptLocale.ATTACH_BONUS_DIALOG_QUESTION,
 					'horizontal_align': 'center',
 					'vertical_align': 'bottom',
 					'text_horizontal_align': 'center',

@@ -26,7 +26,8 @@ _history = None
 _button = None
 _filterDialog = None
 _toast = None
-_filename = "advanced_notifications.json"
+import userData
+_filename = userData.GetPath("advanced_notifications.json")
 
 try:
     text_type = unicode

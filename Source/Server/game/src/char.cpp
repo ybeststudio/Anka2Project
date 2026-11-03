@@ -5,6 +5,9 @@
 #endif
 #include "../../common/VnumHelper.h"
 #include "char.h"
+#ifdef ENABLE_BONUS_FIX
+#include "bonus_custom.h"
+#endif
 #include "config.h"
 #include "utils.h"
 #include "crc32.h"
@@ -1455,6 +1458,13 @@ void CHARACTER::EncodeInsertPacket(LPENTITY entity)
 			addPacket.sAlignment = m_iAlignment / 10;
 		}
 
+#ifdef ENABLE_SHINING_SYSTEM
+		for (int i = 0; i < 2; ++i)
+		{
+			LPITEM pkShining = IsPC() ? GetWear(WEAR_SHINING_WEAPON + i) : NULL;
+			addPacket.adwShining[i] = pkShining ? pkShining->GetVnum() : 0;
+		}
+#endif
 		d->Packet(&addPacket, sizeof(TPacketGCCharacterAdditionalInfo));
 	}
 
@@ -1651,6 +1661,14 @@ void CHARACTER::UpdatePacket()
 	else
 	{
 		pack.dwGuildLeader = 0;
+	}
+#endif
+
+#ifdef ENABLE_SHINING_SYSTEM
+	for (int i = 0; i < 2; ++i)
+	{
+		LPITEM pkShining = IsPC() ? GetWear(WEAR_SHINING_WEAPON + i) : NULL;
+		pack.adwShining[i] = pkShining ? pkShining->GetVnum() : 0;
 	}
 #endif
 
@@ -3286,6 +3304,9 @@ void CHARACTER::ComputePoints()
 #ifdef ENABLE_COMPUTE_POINT_FIX
 	m_pointsInstant.computed = false;
 #endif
+#ifdef ENABLE_BONUS_FIX
+	ClearCustomApply();
+#endif
 	memset(m_pointsInstant.points, 0, sizeof(m_pointsInstant.points));
 	BuffOnAttr_ClearAll();
 	m_SkillDamageBonus.clear();
@@ -3595,7 +3616,14 @@ void CHARACTER::ComputePoints()
 	else
 #endif
 
+#ifdef ENABLE_BONUS_FIX
+	{
+		BonusCustom::OnComputePoints(this);
+		UpdatePacket();
+	}
+#else
 	UpdatePacket();
+#endif
 }
 
 // The unit of m_dwPlayStartTime is milisecond. Record in minutes in database
@@ -4557,6 +4585,12 @@ void CHARACTER::PointChange(BYTE type, int amount, bool bAmount, bool bBroadcast
 		case POINT_SUNGMA_IMMUNE:
 			SetPoint(type, GetPoint(type) + amount);
 			val = GetPoint(type);
+#ifdef ENABLE_BONUS_FIX
+			if (type == POINT_SUNGMA_HP)
+				PointChange(POINT_MAX_HP, 0);
+			else if (type == POINT_SUNGMA_MOVE)
+				PointChange(POINT_MOV_SPEED, 0);
+#endif
 			break;
 		case POINT_CONQUEROR_POINT:
 			SetPoint(type, GetPoint(type) + amount);
@@ -5429,6 +5463,15 @@ void CHARACTER::PointChange(BYTE type, int amount, bool bAmount, bool bBroadcast
 		break;
 
 		default:
+#ifdef ENABLE_BONUS_FIX
+			// item / affect bonuses without an own case (the *_PER_*, BOSS_OR_MORE, HIT_BUFF_* ... points) were thrown away here
+			if (type > POINT_NONE && type < POINT_MAX_NUM)
+			{
+				SetPoint(type, GetPoint(type) + amount);
+				val = GetPoint(type);
+				break;
+			}
+#endif
 			sys_err ("CHARACTER::PointChange: %s: unknown point change type %d", GetName(), type);
 			return;
 	}
@@ -5895,6 +5938,13 @@ void CHARACTER::ApplyPoint (WORD bApplyType, int iVal)
 		case APPLY_USE_SKILL_METEO_NEXT_COOLTIME_DECREASE_PCT:
 		case APPLY_USE_SKILL_CHEONUN_NEXT_COOLTIME_DECREASE_PCT:
 		case APPLY_USE_SKILL_ILIPUNGU_NEXT_COOLTIME_DECREASE_PCT:
+#ifdef ENABLE_BONUS_FIX
+			if (bApplyType < MAX_APPLY_NUM && aApplyInfo[bApplyType].bPointType == POINT_NONE)
+			{
+				AddCustomApply(bApplyType, iVal);
+				break;
+			}
+#endif
 			if (bApplyType < MAX_APPLY_NUM && aApplyInfo[bApplyType].bPointType != POINT_NONE)
 			{
 				PointChange (aApplyInfo[bApplyType].bPointType, iVal);
@@ -8383,6 +8433,10 @@ void CHARACTER::LoadSafebox(int iSize, DWORD dwGold, int iItemCount, TPlayerItem
 			item->SetSkipSave(true);
 			item->SetSockets(pItems->alSockets);
 			item->SetAttributes(pItems->aAttr);
+#ifdef ENABLE_APPLY_RANDOM
+			item->SetApplyRandoms(pItems->aApplyRandom, pItems->abApplyRandomRow);
+			item->RollApplyRandom(true);
+#endif
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 			item->SetTransmutationVnum(pItems->dwTransmutationVnum);
 #endif
@@ -8491,6 +8545,10 @@ void CHARACTER::LoadMall(int iItemCount, TPlayerItem * pItems)
 			item->SetSkipSave(true);
 			item->SetSockets(pItems->alSockets);
 			item->SetAttributes(pItems->aAttr);
+#ifdef ENABLE_APPLY_RANDOM
+			item->SetApplyRandoms(pItems->aApplyRandom, pItems->abApplyRandomRow);
+			item->RollApplyRandom(true);
+#endif
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 			item->SetTransmutationVnum(pItems->dwTransmutationVnum);
 #endif
@@ -9093,8 +9151,22 @@ void CHARACTER::MountVnum(DWORD vnum)
 	if ((m_dwMountVnum != 0) && (vnum != 0)) //@fixme108 set recursively to 0 for eventuality
 		MountVnum(0);
 
+#ifdef ENABLE_BONUS_FIX
+	const DWORD dwOldMountVnum = m_dwMountVnum;
+#endif
 	m_dwMountVnum = vnum;
 	m_dwMountTime = get_dword_time();
+#ifdef ENABLE_BONUS_FIX
+	BonusCustom::OnMount(this, vnum, dwOldMountVnum);
+#endif
+#ifdef ENABLE_BONUS_FIX
+	// "when climbing on a mount, damage is increased by +X% for 10 seconds"
+	if (vnum && IsPC() && GetPoint(POINT_MOUNT_MELEE_MAGIC_ATTBONUS_PER) > 0)
+	{
+		RemoveAffect(AFFECT_MOUNT_MELEE_MAGIC_BONUS);
+		AddAffect(AFFECT_MOUNT_MELEE_MAGIC_BONUS, POINT_MELEE_MAGIC_ATT_BONUS_PER, GetPoint(POINT_MOUNT_MELEE_MAGIC_ATTBONUS_PER), AFF_NONE, 10, 0, true);
+	}
+#endif
 
 	if (m_bIsObserver)
 		return;

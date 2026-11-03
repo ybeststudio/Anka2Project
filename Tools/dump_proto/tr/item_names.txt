@@ -12204,3 +12204,89 @@ VNUM	LOCALE_NAME
 57106	Buffi Kitabý
 57107	Buffi Ustalýk Kitabý
 57108	Buffi Ustalýk Taþý
+95300	Klasik Mavi Silah Parlamasý
+95301	Klasik Yeþil Silah Parlamasý
+95302	Klasik Turuncu Silah Parlamasý
+95303	Klasik Kýrmýzý Silah Parlamasý
+95304	Klasik Mor Silah Parlamasý
+95305	Klasik Beyaz Silah Parlamasý
+95306	Ejderha Mavi Silah Parlamasý
+95307	Ejderha Kahverengi Silah Parlamasý
+95308	Ejderha Yeþil Silah Parlamasý
+95309	Ejderha Turuncu Silah Parlamasý
+95310	Ejderha Pembe Silah Parlamasý
+95311	Ejderha Mor Silah Parlamasý
+95312	Ejderha Kýrmýzý Silah Parlamasý
+95313	Ejderha Turkuaz Silah Parlamasý
+95314	Ejderha Beyaz Silah Parlamasý
+95315	Ejderha Sarý Silah Parlamasý
+95316	Discord Silah Parlamasý
+95317	Yayýn Silah Parlamasý
+95318	Cadýlar Bayramý Silah Parlamasý
+95319	Noel Silah Parlamasý
+95320	Göksel Siyah Silah Parlamasý
+95321	Göksel Siyah Mavi Parlamasý
+95322	Göksel Siyah Pembe Parlamasý
+95323	Göksel Yeþil Silah Parlamasý
+95324	Göksel Turuncu Silah Parlamasý
+95325	Göksel Mor Silah Parlamasý
+95326	Göksel Kýrmýzý Silah Parlamasý
+95327	Göksel Turkuaz Silah Parlamasý
+95328	Göksel Beyaz Silah Parlamasý
+95329	Göksel Sarý Silah Parlamasý
+95400	Klasik Mavi Zýrh Parlamasý
+95401	Klasik Yeþil Zýrh Parlamasý
+95402	Klasik Turuncu Zýrh Parlamasý
+95403	Klasik Kýrmýzý Zýrh Parlamasý
+95404	Klasik Mor Zýrh Parlamasý
+95406	Ejderha Mavi Zýrh Parlamasý
+95407	Ejderha Kahverengi Zýrh Parlamasý
+95408	Ejderha Yeþil Zýrh Parlamasý
+95409	Ejderha Turuncu Zýrh Parlamasý
+95410	Ejderha Pembe Zýrh Parlamasý
+95411	Ejderha Mor Zýrh Parlamasý
+95412	Ejderha Kýrmýzý Zýrh Parlamasý
+95413	Ejderha Turkuaz Zýrh Parlamasý
+95414	Ejderha Beyaz Zýrh Parlamasý
+95415	Ejderha Sarý Zýrh Parlamasý
+95416	Discord Zýrh Parlamasý
+95417	Yayýn Zýrh Parlamasý
+95418	Kraliyet I Zýrh Parlamasý
+95419	Kraliyet II Zýrh Parlamasý
+95420	Kraliyet III Zýrh Parlamasý
+95421	Mýsýr Zýrh Parlamasý
+95422	Cadýlar Bayramý Zýrh Parlamasý
+95423	Üst Draenor Zýrh Parlamasý
+95424	Üst Hasatçý Zýrh Parlamasý
+95425	Üst Altýn Ejderha Zýrh Parlamasý
+95426	Üst Örümcek Barones Zýrh Parlamasý
+95427	Üst Azrail Zýrh Parlamasý
+95428	Üst Beran Setaou Zýrh Parlamasý
+95429	Üst Meley Zýrh Parlamasý
+95430	Üst Nemere Zýrh Parlamasý
+95431	Üst Razador Zýrh Parlamasý
+95432	Üst Ganesha Zýrh Parlamasý
+95433	Üst Jotun Zýrh Parlamasý
+95434	Noel Zýrh Parlamasý
+95435	Gümüþ Kupa Zýrh Parlamasý
+95436	Bronz Kupa Zýrh Parlamasý
+95437	Göksel Siyah Zýrh Parlamasý
+95438	Göksel Mavi Zýrh Parlamasý
+95439	Göksel Pembe Zýrh Parlamasý
+95440	Göksel Yeþil Zýrh Parlamasý
+95441	Göksel Turuncu Zýrh Parlamasý
+95442	Göksel Mor Zýrh Parlamasý
+95443	Göksel Kýrmýzý Zýrh Parlamasý
+95444	Göksel Turkuaz Zýrh Parlamasý
+95445	Göksel Beyaz Zýrh Parlamasý
+95446	Göksel Sarý Zýrh Parlamasý
+95447	Üst Rhae Zýrh Parlamasý
+95448	Üst Beyaz Ejderha Zýrh Parlamasý
+95449	Üst PVP Þampiyonu Zýrh Parlamasý
+95405	Klasik Beyaz Zýrh Parlamasý
+65113	Katký Parþömeni
+65114	Asil Katký
+65110	Tanrýlarýn Muskasý
+65111	Tanrýlarýn Týlsýmý+
+65112	Lonca Enerjisi (%100)
+65120	Gümüþ Geniþletme

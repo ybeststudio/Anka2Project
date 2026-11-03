@@ -98,7 +98,7 @@ class BKOku(ui.ScriptWindow):
 
 	def butonlar(self, func):
 		if self.aktifslot == None:
-			chat.AppendChat(1,"<Sistem> Önce geliþtirmek istediðin beceriyi seç!")
+			chat.AppendChat(1,localeInfo.SKILL_BOOK_SELECT_SKILL)
 			return
 		skillIndexx = player.GetSkillIndex(int(self.aktifslot+1))
 		if func == 1:
@@ -156,14 +156,14 @@ class BKOku(ui.ScriptWindow):
 		skillGrade = player.GetSkillGrade(value+1)
 		if skillGrade == 1:
 			self.aktifslot = value
-			chat.AppendChat(1,"<Sistem> Artýk okumaya baþlayabilirsin!")
+			chat.AppendChat(1,localeInfo.SKILL_BOOK_CAN_READ)
 			for i in xrange(0,6):
 				if i == value:
 					self.skillslot.ActivateSlot(i, wndMgr.COLOR_TYPE_WHITE)
 				else:
 					self.skillslot.DeactivateSlot(i)
 		else:
-			chat.AppendChat(1,"<Sistem> Sadece Master düzeyinde olan becerileri seçebilirsin!")
+			chat.AppendChat(1,localeInfo.SKILL_BOOK_ONLY_MASTER)
 			return
 	
 	def OnPressEscapeKey(self):

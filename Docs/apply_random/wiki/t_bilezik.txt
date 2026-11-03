@@ -1,0 +1,50 @@
+{{TabTable-Sub
+|Icon     = Efsun Nesnesi
+|Title    = [[Bilezikler|<span style="color:#f0d9a2;">Bilezikler</span>]] için 1-5. Bonuslar
+|ColumnA  = Hasar
+|ColumnB  = Direnç
+|ColumnC  = Diğer
+|A =
+*[[Yarı İnsanlara Karşı Güçlü]] '''+%(1, 2, 3, 5, 10)'''
+*[[Şeytanlara Karşı Güçlü]] '''+%(2, 4, 6, 10, 20)'''
+*[[Hayvanlara Karşı Güçlü]] '''+%(2, 4, 6, 10, 20)'''
+*[[Mistiklere Karşı Güçlü]] '''+%(2, 4, 6, 10, 20)'''
+*[[Orklara Karşı Güçlü]] '''+%(2, 4, 6, 10, 20)'''
+*[[Ölümsüzlere Karşı Güçlü]] '''+%(2, 4, 6, 10, 20)'''
+|B =
+*[[Ateş Direnci]] '''+%(2, 4, 6, 10, 15)'''
+*[[Rüzgar Dayanıklılığı]] '''+%(2, 4, 6, 10, 15)'''
+*[[Şimşek Direnci]] '''+%(2, 4, 6, 10, 15)'''
+*[[Büyüye Karşı Dayanıklılık]] '''+%(2, 4, 6, 10, 15)
+|C =
+*[[Max. HP]] '''+(500, 1000, 1500, 2000)'''<br><div style="display:flex; align-items:center; gap:8px;">[[Dosya:Gümüş Bilezik.png|24px|link=]] <span>[[Gümüş Bilezik]] gibi bu bonusu temel olarak taşıyan bileziklere tekrar eklenemez.</span></div>
+*[[Max. SP]] '''+(10, 20, 30, 50, 80)'''<br><div style="display:flex; align-items:center; gap:8px;">[[Dosya:Bakır Bilezik.png|24px|link=]] <span>[[Bakır Bilezik]] gibi bu bonusu temel olarak taşıyan bileziklere tekrar eklenemez.</span></div>
+*[[Delici Vuruş Şansı]] '''+%(1, 2, 3, 5, 10)'''
+*[[Engelleme Nüfuzu]] '''+%(1, 2, 3, 5, 10)'''
+*[[Hasar, HP ile absorbe edilecek]] '''+%(1, 2, 3, 5, 10)'''
+*[[İki Kat Eşya Düşürme Şansı]] '''+%(2, 4, 6, 8, 20)'''
+*[[SP Çalma Şansı]] '''+%(1, 2, 3, 5, 10)'''
+}}
+{{TabTable-Sub
+|Icon     = Kutsama Nesnesi
+|Title    = [[Bilezikler|<span style="color:#f0d9a2;">Bilezikler</span>]] için 6-7. Bonuslar
+|ColumnA  = Hasar
+|ColumnB  = Direnç
+|ColumnC  = Diğer
+|A =
+*[[Saldırı Değeri]] '''+5~50'''
+*[[Büyülü Saldırı Değeri]] '''+5~50'''
+*[[Savaşta Element Gücünü Al|Savaşta (X) saniye Boyunca {Element} Gücünü Al]] '''(1-5) Sn.'''
+**{Ateş, Buz, Toprak, Rüzgar, Şimşek, Karanlık}
+|B =
+*[[Savaşta Element Direnci Al|Savaşta (X) saniye Boyunca {Element} Direnci Al]] '''(1-5) Sn.'''
+**{Ateş, Buz, Toprak, Rüzgar, Şimşek, Karanlık}
+|C =
+*[[Max. HP]] '''+(50~500)'''
+*[[Max. SP]] '''+(5~80)'''
+*[[Zehirleme Şansı]] '''+%(1-5)'''
+*[[Zehre Karşı Koyma]] '''+%(1-5)'''
+*[[Kanama Saldırısı]] '''+%(1-5)'''
+*[[Kanama Saldırılarına Karşı Direnç]] '''+%(1-5)'''
+*[[Hasarı SP Olarak Emer]] '''+%(1-3)'''
+}}

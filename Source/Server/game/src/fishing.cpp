@@ -1,4 +1,9 @@
 #include "stdafx.h"
+#include "../../common/service.h"
+#ifdef ENABLE_GUILD_QUEST
+#include "char.h"
+#include "guild_quest.h"
+#endif
 #include "constants.h"
 #include "fishing.h"
 #include "locale_service.h"
@@ -557,6 +562,9 @@ void Take(fishing_event_info* info, LPCHARACTER ch)
 				if (item_vnum)
 				{
 					FishingSuccess(ch);
+#ifdef ENABLE_GUILD_QUEST
+					GuildQuest_AddProgress(ch, GUILD_QUEST_FISH);
+#endif
 #ifdef ENABLE_FISH_EVENT
 					if(quest::CQuestManager::instance().GetEventFlag("enable_fish_event"))
 					{
@@ -583,6 +591,9 @@ void Take(fishing_event_info* info, LPCHARACTER ch)
 					LPITEM item = ch->AutoGiveItem(item_vnum, 1, -1, false);
 					if (item)
 					{
+#ifdef ENABLE_CHARACTER_STATS
+						ch->SetQuestFlag("stats.fish", ch->GetQuestFlag("stats.fish") + 1);
+#endif
 #ifdef ENABLE_BATTLE_PASS
 						if (!ch->v_counts.empty())
 						{

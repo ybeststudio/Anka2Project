@@ -967,6 +967,10 @@ bool CInstanceBase::Create(const SCreateData& c_rkCreateData)
 	{
 		SetHair(c_rkCreateData.m_dwHair);
 		SetWeapon(c_rkCreateData.m_dwWeapon);
+#ifdef ENABLE_SHINING_SYSTEM
+		for (BYTE i = 0; i < 2; ++i)
+			SetShining(i, c_rkCreateData.m_adwShining[i]);
+#endif
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
 		SetAcce(c_rkCreateData.m_dwAcce);
 #endif
@@ -3346,6 +3350,9 @@ void CInstanceBase::SetArmor(DWORD dwArmor)
 			float fSpecularPower = pItemData->GetSpecularPowerf();
 			SetShape(dwShape, fSpecularPower);
 			__GetRefinedEffect(pItemData);
+#ifdef ENABLE_SHINING_SYSTEM
+			__RefreshShiningEffect(false);
+#endif
 			return;
 		}
 		else
@@ -3483,6 +3490,9 @@ DWORD CInstanceBase::GetWeaponType()
 
 void CInstanceBase::__ClearWeaponRefineEffect()
 {
+#ifdef ENABLE_SHINING_SYSTEM
+	__ClearWeaponShiningEffect();
+#endif
 	if (m_swordRefineEffectRight)
 	{
 		__DetachEffect(m_swordRefineEffectRight);
@@ -3506,8 +3516,109 @@ void CInstanceBase::__ClearWeaponRefineEffect()
 #endif
 }
 
+#ifdef ENABLE_SHINING_SYSTEM
+// Arena2 CInstanceBase::AttachShiningEffect: the glow of the worn shining item (value0 = set) on the weapon / the body
+void CInstanceBase::SetShining(BYTE bSlot, DWORD dwVnum)
+{
+	if (bSlot >= 2 || m_adwShining[bSlot] == dwVnum)
+		return;
+
+	m_adwShining[bSlot] = dwVnum;
+	__RefreshShiningEffect(bSlot == 0);
+}
+
+void CInstanceBase::__RefreshShiningEffect(bool bWeapon)
+{
+	if (bWeapon)
+		__ClearWeaponShiningEffect();
+	else
+		__ClearArmorShiningEffect();
+
+	const DWORD dwShining = m_adwShining[bWeapon ? 0 : 1];
+	CItemData* pShining = NULL;
+	if (!dwShining || IsAffect(AFFECT_INVISIBILITY) || !CItemManager::Instance().GetItemDataPointer(dwShining, &pShining)
+		|| pShining->GetType() != CItemData::ITEM_TYPE_SHINING)
+		return;
+
+	CItemManager& rkItemMgr = CItemManager::Instance();
+	const DWORD dwSet = pShining->GetValue(0);
+	if (!bWeapon)
+	{
+		const char* c_szPath = rkItemMgr.GetShiningEffectPath(dwSet, RaceToSex(GetRace()) ? CItemManager::SHINING_KIND_ARMOR_M : CItemManager::SHINING_KIND_ARMOR_F);
+		if (!c_szPath)
+			c_szPath = rkItemMgr.GetShiningEffectPath(dwSet, CItemManager::SHINING_KIND_ARMOR);
+		if (!c_szPath)
+			return;
+		CEffectManager::Instance().RegisterEffect(c_szPath, false, false);
+		m_armorShiningEffect = m_GraphicThingInstance.AttachEffectByName(0, "Bip01", c_szPath);
+		return;
+	}
+
+	CItemData* pWeapon = NULL;
+	if (!m_awPart[CRaceData::PART_WEAPON] || !rkItemMgr.GetItemDataPointer(m_awPart[CRaceData::PART_WEAPON], &pWeapon))
+		return;
+
+	// weapon costumes keep the weapon type in value3
+	const BYTE bWeaponType = pWeapon->GetType() == CItemData::ITEM_TYPE_COSTUME ? (BYTE) pWeapon->GetValue(3) : pWeapon->GetSubType();
+	BYTE bKind = CItemManager::SHINING_KIND_SWORD;
+	switch (bWeaponType)
+	{
+		case CItemData::WEAPON_TWO_HANDED: bKind = CItemManager::SHINING_KIND_TWOHAND; break;
+		case CItemData::WEAPON_DAGGER: bKind = CItemManager::SHINING_KIND_DAGGER; break;
+		case CItemData::WEAPON_BOW: bKind = CItemManager::SHINING_KIND_BOW; break;
+		case CItemData::WEAPON_BELL: bKind = CItemManager::SHINING_KIND_BELL; break;
+		case CItemData::WEAPON_FAN: bKind = CItemManager::SHINING_KIND_FAN; break;
+	}
+	const char* c_szPath = rkItemMgr.GetShiningEffectPath(dwSet, bKind);
+	if (!c_szPath)
+		c_szPath = rkItemMgr.GetShiningEffectPath(dwSet, CItemManager::SHINING_KIND_SWORD);
+	if (!c_szPath)
+		return;
+
+	// bows on the left hand, daggers (and fans on a mount) on both
+	if (bWeaponType == CItemData::WEAPON_BOW)
+	{
+		__AttachWeaponShiningEffect(c_szPath, CRaceData::PART_WEAPON_LEFT);
+		return;
+	}
+	if (bWeaponType == CItemData::WEAPON_DAGGER || (IsMountingHorse() && bWeaponType == CItemData::WEAPON_FAN))
+		__AttachWeaponShiningEffect(c_szPath, CRaceData::PART_WEAPON_LEFT);
+	__AttachWeaponShiningEffect(c_szPath, CRaceData::PART_WEAPON);
+}
+
+void CInstanceBase::__AttachWeaponShiningEffect(const char* c_szEffectFileName, BYTE bPart)
+{
+	const char* c_szBoneName = NULL;
+	if (!m_GraphicThingInstance.GetAttachingBoneName(bPart, &c_szBoneName) || !c_szBoneName || !*c_szBoneName)
+		return;
+
+	CEffectManager::Instance().RegisterEffect(c_szEffectFileName, false, false);
+	m_weaponShiningEffects[bPart == CRaceData::PART_WEAPON ? 0 : 1] = m_GraphicThingInstance.AttachEffectByName(0, c_szBoneName, c_szEffectFileName);
+}
+
+void CInstanceBase::__ClearWeaponShiningEffect()
+{
+	for (int i = 0; i < 2; ++i)
+	{
+		if (m_weaponShiningEffects[i])
+			__DetachEffect(m_weaponShiningEffects[i]);
+		m_weaponShiningEffects[i] = 0;
+	}
+}
+
+void CInstanceBase::__ClearArmorShiningEffect()
+{
+	if (m_armorShiningEffect)
+		__DetachEffect(m_armorShiningEffect);
+	m_armorShiningEffect = 0;
+}
+#endif
+
 void CInstanceBase::__ClearArmorRefineEffect()
 {
+#ifdef ENABLE_SHINING_SYSTEM
+	__ClearArmorShiningEffect();
+#endif
 	if (m_armorRefineEffect[0])
 	{
 		__DetachEffect(m_armorRefineEffect[0]);
@@ -3958,6 +4069,9 @@ bool CInstanceBase::SetWeapon(DWORD eWeapon)
 			__ClearWeaponRefineEffect();
 #endif
 		__GetRefinedEffect(pItemData);
+#ifdef ENABLE_SHINING_SYSTEM
+		__RefreshShiningEffect(true);
+#endif
 	}
 	else
 		__ClearWeaponRefineEffect();
@@ -4467,6 +4581,11 @@ void CInstanceBase::__Initialize()
 	 m_swordRefineEffectLeft = 0;
 	 m_armorRefineEffect[0] = 0;
 	 m_armorRefineEffect[1] = 0;
+#ifdef ENABLE_SHINING_SYSTEM
+	m_weaponShiningEffects[0] = m_weaponShiningEffects[1] = 0;
+	m_adwShining[0] = m_adwShining[1] = 0;
+	m_armorShiningEffect = 0;
+#endif
 #ifdef ENABLE_TITLE_SYSTEM
 	 m_dwOverHeadSpecialEffect = 0;
 #endif

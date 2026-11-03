@@ -1,0 +1,237 @@
+{{Equipment/Layout
+
+<!-- Type of item - accepted values: Bracelets Necklaces Earrings Belts -->
+|Type = Bracelets
+
+<!-- Type of ore used-->
+|Ore = Sun Jadite
+
+<!-- Level of accessory - accepted values: Level or level interval in ## - ## format -->
+|Level = 105
+
+<!-- Classes that can use this jewellery - accepted values: warrior ; ninja ; shaman ; sura ; 3 (for warrior ninja and sura) ; 4 for all classes-->
+|wearable = 4
+
+<!-- Powershard used to add 6/7 bonus -->
+|Powershard = {{Ti|Lucent Yellow Powershard}}
+
+<!-- Where does this item come from? -->
+|Origin=
+<ul>
+*'''[[NPC]]:''' 
+:*{{Tm|Master Chi}} (Crafted):
+::*{{Ti|Sun Jadite}} 10x
+::*{{Ti|Crude Metal Sheet}} 30x
+::*{{Ti|Tainted Core}} 2x
+::*{{Ti|Gaya|200 Gaya}}
+::*{{Ti|Yang|1.000.000 Yang}}
+*'''[[Boxes]]:''' {{Ti|Labyrinth Chest}}, {{Ti|Perfect Bracelet Chest}}
+</ul>
+
+<!-- Other information -->
+|Other = <br>
+*The crafting method has a 30% success rate. See [[Item Refinement]].
+*Start bonus value is randomly set by system, can either or both be 1 or 2
+
+<!-- upgrade yang costs - numeric value only (no yang tag) ; blank if no costs -->
+|Costs0 = 
+|Costs1 = 250.000
+|Costs2 = 300.000
+|Costs3 = 350.000
+|Costs4 = 400.000
+|Costs5 = 450.000
+|Costs6 = 500.000
+|Costs7 = 550.000
+|Costs8 = 600.000
+|Costs9 = 650.000
+
+<!-- 1st Upgrade Items -->
+|1stUpgitem0 = 
+|1stUpgitem1 = 
+|1stUpgitem2 = 
+|1stUpgitem3 = 
+|1stUpgitem4 = 15x [[File:Crude Metal Sheet.png|link=Crude Metal Sheet]]
+|1stUpgitem5 = 20x [[File:Crude Metal Sheet.png|link=Crude Metal Sheet]]
+|1stUpgitem6 = 25x [[File:Crude Metal Sheet.png|link=Crude Metal Sheet]]
+|1stUpgitem7 = 15x [[File:Forged Steel Sheet.png|link=Forged Steel Sheet]]
+|1stUpgitem8 = 20x [[File:Forged Steel Sheet.png|link=Forged Steel Sheet]]
+|1stUpgitem9 = 25x [[File:Forged Steel Sheet.png|link=Forged Steel Sheet]]
+
+<!-- 2nd Upgrade Items -->
+|2ndUpgitem0 = 
+|2ndUpgitem1 = 
+|2ndUpgitem2 = 
+|2ndUpgitem3 = 
+|2ndUpgitem4 = 5x [[File:Troll Horn.png|link=Troll Horn]]
+|2ndUpgitem5 = 7x [[File:Troll Horn.png|link=Troll Horn]]
+|2ndUpgitem6 = 10x [[File:Troll Horn.png|link=Troll Horn]]
+|2ndUpgitem7 = 5x [[File:Jewellery Steel Sheets.png|link=Jewellery Steel Sheets]]
+|2ndUpgitem8 = 7x [[File:Jewellery Steel Sheets.png|link=Jewellery Steel Sheets]]
+|2ndUpgitem9 = 10x [[File:Jewellery Steel Sheets.png|link=Jewellery Steel Sheets]]
+
+<!-- 3rd Upgrade Items -->
+|3rdUpgitem0 = 
+|3rdUpgitem1 = 
+|3rdUpgitem2 = 
+|3rdUpgitem3 = 
+|3rdUpgitem4 = 
+|3rdUpgitem5 = 
+|3rdUpgitem6 = 
+|3rdUpgitem7 = 1x [[File:White Pearl.png|link=White Pearl]]
+|3rdUpgitem8 = 1x [[File:Blue Pearl.png|link=Blue Pearl]]
+|3rdUpgitem9 = 1x [[File:Blood-Red Pearl.png|link=Blood-Red Pearl]]
+
+<!-- 1st Bonus Name and values, if name too long to fit template fill in Bonus1-Short-->
+|Bonus1-Name = Precision
+|short1 = 
+|Bonus1-0 = +1~2
+|Bonus1-1 = +2~3
+|Bonus1-2 = +3~4
+|Bonus1-3 = +4~5
+|Bonus1-4 = +5~6
+|Bonus1-5 = +6~7
+|Bonus1-6 = +7~8
+|Bonus1-7 = +8~10
+|Bonus1-8 = +9~11
+|Bonus1-9 = +10~14
+
+<!-- 2nd Bonus Name and values, if name too long to fit template fill in Bonus2-Short-->
+|Bonus2-Name = Sung Ma's will (INT)
+|short2 = Sung Ma's (INT)
+|Bonus2-0 = 1~2
+|Bonus2-1 = 3~4
+|Bonus2-2 = 5~6
+|Bonus2-3 = 7~8
+|Bonus2-4 = 9~10
+|Bonus2-5 = 11~12
+|Bonus2-6 = 13~14
+|Bonus2-7 = 15~17
+|Bonus2-8 = 18~20
+|Bonus2-9 = 21~24
+
+<!-- 3rd Bonus Name and values, if name too long to fit template fill in Bonus3-Short-->
+|Bonus3-Name = 
+|short3 = 
+|Bonus3-0 = 
+|Bonus3-1 = 
+|Bonus3-2 = 
+|Bonus3-3 = 
+|Bonus3-4 = 
+|Bonus3-5 = 
+|Bonus3-6 = 
+|Bonus3-7 = 
+|Bonus3-8 = 
+|Bonus3-9 = 
+
+<!-- Value for ore referring to bonus 1 and slot 1 (+0 to +9) -->
+|Verb1-1-0 = +1
+|Verb1-1-1 = +1
+|Verb1-1-2 = +1
+|Verb1-1-3 = +1
+|Verb1-1-4 = +1
+|Verb1-1-5 = +1
+|Verb1-1-6 = +1
+|Verb1-1-7 = +1
+|Verb1-1-8 = +1
+|Verb1-1-9 = +1
+
+<!-- Value for ore referring to bonus 1 and slot 2 (+0 to +9) -->
+|Verb1-2-0 = +1
+|Verb1-2-1 = +1
+|Verb1-2-2 = +1
+|Verb1-2-3 = +1
+|Verb1-2-4 = +1
+|Verb1-2-5 = +1
+|Verb1-2-6 = +1
+|Verb1-2-7 = +1
+|Verb1-2-8 = +1
+|Verb1-2-9 = +1
+
+<!-- Value for ore referring to bonus 1 and slot 3 (+0 to +9) -->
+|Verb1-3-0 = +1
+|Verb1-3-1 = +1
+|Verb1-3-2 = +1
+|Verb1-3-3 = +1
+|Verb1-3-4 = +1
+|Verb1-3-5 = +1
+|Verb1-3-6 = +1
+|Verb1-3-7 = +1~2
+|Verb1-3-8 = +1~2
+|Verb1-3-9 = +2
+
+<!-- Value for ore referring to bonus 2 and slot 1 (+0 to +9) -->
+|Verb2-1-0 = 1
+|Verb2-1-1 = 1
+|Verb2-1-2 = 1
+|Verb2-1-3 = 1
+|Verb2-1-4 = 1
+|Verb2-1-5 = 1
+|Verb2-1-6 = 1
+|Verb2-1-7 = 1
+|Verb2-1-8 = 1~2
+|Verb2-1-9 = 2
+
+<!-- Value for ore referring to bonus 2 and slot 2 (+0 to +9) -->
+|Verb2-2-0 = 1
+|Verb2-2-1 = 1
+|Verb2-2-2 = 1
+|Verb2-2-3 = 1
+|Verb2-2-4 = 1
+|Verb2-2-5 = 1
+|Verb2-2-6 = 1
+|Verb2-2-7 = 1
+|Verb2-2-8 = 1~2
+|Verb2-2-9 = 2
+
+<!-- Value for ore referring to bonus 2 and slot 3 (+0 to +9) -->
+|Verb2-3-0 = 1
+|Verb2-3-1 = 1
+|Verb2-3-2 = 1
+|Verb2-3-3 = 1
+|Verb2-3-4 = 1~2
+|Verb2-3-5 = 3
+|Verb2-3-6 = 3
+|Verb2-3-7 = 3~4
+|Verb2-3-8 = 4
+|Verb2-3-9 = 5
+
+<!-- Value for ore referring to bonus 3 and slot 1 (+0 to +9) -->
+|Verb3-1-0 = 
+|Verb3-1-1 = 
+|Verb3-1-2 = 
+|Verb3-1-3 = 
+|Verb3-1-4 = 
+|Verb3-1-5 = 
+|Verb3-1-6 = 
+|Verb3-1-7 = 
+|Verb3-1-8 = 
+|Verb3-1-9 = 
+
+<!-- Value for ore referring to bonus 3 and slot 2 (+0 to +9) -->
+|Verb3-2-0 = 
+|Verb3-2-1 = 
+|Verb3-2-2 = 
+|Verb3-2-3 = 
+|Verb3-2-4 = 
+|Verb3-2-5 = 
+|Verb3-2-6 = 
+|Verb3-2-7 = 
+|Verb3-2-8 = 
+|Verb3-2-9 = 
+
+<!-- Value for ore referring to bonus 3 and slot 3 (+0 to +9) -->
+|Verb3-3-0 = 
+|Verb3-3-1 = 
+|Verb3-3-2 = 
+|Verb3-3-3 = 
+|Verb3-3-4 = 
+|Verb3-3-5 = 
+|Verb3-3-6 = 
+|Verb3-3-7 = 
+|Verb3-3-8 = 
+|Verb3-3-9 = 
+
+}}
+
+[[de:Sonnenjeditarmband]]
+[[fr:Bracelet jadéite sol.]]

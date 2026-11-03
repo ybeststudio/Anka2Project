@@ -10,6 +10,9 @@ class CAffect
 		DWORD   dwFlag;
 		long	lDuration;
 		long	lSPCost;
+#ifdef ENABLE_AFFECT_CAST_STAT
+		int32_t	lCastStat;	// caster STR / INT when the skill buff was applied, 0 = unknown
+#endif
 #ifdef ENABLE_NINETH_SKILL
 		uint8_t bShieldDuration;
 #endif
@@ -192,6 +195,9 @@ enum EAffectTypes
 	AFFECT_SUNGMA_HP	= 908,
 	AFFECT_SUNGMA_MOVE	= 909,
 	AFFECT_SUNGMA_IMMUNE	= 910,
+#ifdef ENABLE_BONUS_FIX
+	AFFECT_MOUNT_MELEE_MAGIC_BONUS = 920,	// APPLY_MOUNT_MELEE_MAGIC_ATTBONUS_PER: 10 s after mounting
+#endif
 #endif
 	AFFECT_QUEST_START_IDX = 1000
 };

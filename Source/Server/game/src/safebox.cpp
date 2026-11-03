@@ -113,6 +113,9 @@ bool CSafebox::Add(DWORD dwPos, LPITEM pkItem)
 #ifdef ENABLE_SEALBIND_SYSTEM
 	pack.sealbind = pkItem->GetSealDate();
 #endif
+#ifdef ENABLE_APPLY_RANDOM
+	thecore_memcpy(pack.aApplyRandom, pkItem->GetApplyRandoms(), sizeof(pack.aApplyRandom));
+#endif
 
 	m_pkChrOwner->GetDesc()->Packet(&pack, sizeof(pack));
 	sys_log(1, "SAFEBOX: ADD %s %s count %d", m_pkChrOwner->GetName(), pkItem->GetName(), pkItem->GetCount());

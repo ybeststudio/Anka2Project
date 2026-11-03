@@ -1,7 +1,5 @@
 import localeInfo
 
-def _T(name, default):
-	return getattr(localeInfo, name, default)
 import item
 
 EQUIPMENT_START_INDEX = 90
@@ -111,8 +109,8 @@ window = {
 							"y" : 234,
                             "outline": True,
 							"color": 0xFFcabdab,
-							"text": _T("ACTIVATE", "Etkinle\xfetir"),
-							"tooltip_text": _T("BELT_ACTIVATE_TOOLTIP2", "Kemerdeki t\xfcm otomatik iksirleri etkinle\xfetirir"),
+							"text": localeInfo.ACTIVATE,
+							"tooltip_text": localeInfo.BELT_ACTIVATE_TOOLTIP2,
 							"default_image" : "d:/ymir work/ui/game/common/button_middle_norm.png",
 							"over_image" : "d:/ymir work/ui/game/common/button_middle_hover.png",
 							"down_image" : "d:/ymir work/ui/game/common/button_middle_down.png",
@@ -125,7 +123,7 @@ window = {
 							"y" : 230,
                             "outline": True,
 							"color": 0xFFcabdab,
-							"tooltip_text": _T("IKASHOP_SEARCH_SHOP_OPEN_SHOP_BUTTON_TEXT", "Market"),
+							"tooltip_text": localeInfo.IKASHOP_SEARCH_SHOP_OPEN_SHOP_BUTTON_TEXT,
 							"default_image" : DUNGEON_PATH.format("/shop_btn.png"),
 							"over_image" : DUNGEON_PATH.format("/shop_btn.png"),
 							"down_image" : DUNGEON_PATH.format("/shop_btn.png"),
@@ -138,8 +136,8 @@ window = {
 							"y" : 234,
                             "outline": True,
 							"color": 0xFFcabdab,
-							"text": _T("DESACTIVATE", "Devre d\xfd\xfe\xfd b\xfdrak"),
-							"tooltip_text": _T("BELT_DESACTIVATE_TOOLTIP2", "Kemerdeki t\xfcm otomatik iksirleri devre d\xfd\xfe\xfd b\xfdrak\xfdr"),
+							"text": localeInfo.DESACTIVATE,
+							"tooltip_text": localeInfo.BELT_DESACTIVATE_TOOLTIP2,
 							"default_image" : "d:/ymir work/ui/game/common/button_middle_norm.png",
 							"over_image" : "d:/ymir work/ui/game/common/button_middle_hover.png",
 							"down_image" : "d:/ymir work/ui/game/common/button_middle_down.png",

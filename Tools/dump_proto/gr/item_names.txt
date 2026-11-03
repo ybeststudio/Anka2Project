@@ -12204,3 +12204,89 @@ VNUM	LOCALE_NAME
 57106	Tome of Buffi
 57107	Buffi Master Book
 57108	Buffi Master Stone
+95300	Classic Blue Weapon Shining
+95301	Classic Green Weapon Shining
+95302	Classic Orange Weapon Shining
+95303	Classic Red Weapon Shining
+95304	Classic Violet Weapon Shining
+95305	Classic White Weapon Shining
+95306	Dragon Blue Weapon Shining
+95307	Dragon Brown Weapon Shining
+95308	Dragon Green Weapon Shining
+95309	Dragon Orange Weapon Shining
+95310	Dragon Pink Weapon Shining
+95311	Dragon Purple Weapon Shining
+95312	Dragon Red Weapon Shining
+95313	Dragon Turquoise Weapon Shining
+95314	Dragon White Weapon Shining
+95315	Dragon Yellow Weapon Shining
+95316	Discord Weapon Shining
+95317	Stream Weapon Shining
+95318	Halloween Weapon Shining
+95319	Christmas Weapon Shining
+95320	Celestial Black Weapon Shining
+95321	Celestial Blue Weapon Shining
+95322	Celestial Pink Weapon Shining
+95323	Celestial Green Weapon Shining
+95324	Celestial Orange Weapon Shining
+95325	Celestial Violet Weapon Shining
+95326	Celestial Red Weapon Shining
+95327	Celestial Turquoise Weapon Shining
+95328	Celestial White Weapon Shining
+95329	Celestial Yellow Weapon Shining
+95400	Classic Blue Armor Shining
+95401	Classic Green Armor Shining
+95402	Classic Orange Armor Shining
+95403	Classic Red Armor Shining
+95404	Classic Violet Armor Shining
+95406	Dragon Blue Armor Shining
+95407	Dragon Brown Armor Shining
+95408	Dragon Green Armor Shining
+95409	Dragon Orange Armor Shining
+95410	Dragon Pink Armor Shining
+95411	Dragon Purple Armor Shining
+95412	Dragon Red Armor Shining
+95413	Dragon Turquoise Armor Shining
+95414	Dragon White Armor Shining
+95415	Dragon Yellow Armor Shining
+95416	Discord Armor Shining
+95417	Stream Armor Shining
+95418	Crown I Armor Shining
+95419	Crown II Armor Shining
+95420	Crown III Armor Shining
+95421	Egypt Armor Shining
+95422	Halloween Armor Shining
+95423	Top Draenor Armor Shining
+95424	Top Reaper Armor Shining
+95425	Top Golden Dragon Armor Shining
+95426	Top Spider Baroness Armor Shining
+95427	Top Azrael Armor Shining
+95428	Top Beran-Setaou Armor Shining
+95429	Top Meley Armor Shining
+95430	Top Nemere Armor Shining
+95431	Top Razador Armor Shining
+95432	Top Ganesha Armor Shining
+95433	Top Jotun Armor Shining
+95434	Christmas Armor Shining
+95435	Silver Cup Armor Shining
+95436	Bronze Cup Armor Shining
+95437	Celestial Black Armor Shining
+95438	Celestial Blue Armor Shining
+95439	Celestial Pink Armor Shining
+95440	Celestial Green Armor Shining
+95441	Celestial Orange Armor Shining
+95442	Celestial Violet Armor Shining
+95443	Celestial Red Armor Shining
+95444	Celestial Turquoise Armor Shining
+95445	Celestial White Armor Shining
+95446	Celestial Yellow Armor Shining
+95447	Top Rhae Armor Shining
+95448	Top White Dragon Armor Shining
+95449	Top PVP Champion Armor Shining
+95405	Classic White Armor Shining
+65113	Contribution Scroll
+65114	Noble Contribution
+65110	Amulet of Gods
+65111	Amulet of Gods+
+65112	Guild Energy (100%)
+65120	Silver Expansion

@@ -932,7 +932,11 @@ const TApplyInfo aApplyInfo[MAX_APPLY_NUM] =
 	{ POINT_HIT_AUTO_HP_RECOVERY          }, // APPLY_HIT_AUTO_HP_RECOVERY (276)
 	{ POINT_HIT_AUTO_SP_RECOVERY          }, // APPLY_HIT_AUTO_SP_RECOVERY (277)
 	{ POINT_USE_SKILL_COOLTIME_DECREASE_ALL }, // APPLY_USE_SKILL_COOLTIME_DECREASE_ALL (278)
+#ifdef ENABLE_BONUS_FIX
+	{ POINT_NONE                          }, // APPLY_HIT_STONE_ATTBONUS_STONE (279) - 5 s buff, bonus_custom.cpp
+#else
 	{ POINT_ATTBONUS_STONE                }, // APPLY_HIT_STONE_ATTBONUS_STONE (279)
+#endif
 	{ POINT_HIT_STONE_DEF_GRADE_BONUS     }, // APPLY_HIT_STONE_DEF_GRADE_BONUS (280)
 	{ POINT_NONE                          }, // APPLY_KILL_BOSS_ITEM_BONUS (281)
 	{ POINT_NONE                          }, // APPLY_MOB_HIT_MOB_AGGRESSIVE (282)
@@ -945,7 +949,11 @@ const TApplyInfo aApplyInfo[MAX_APPLY_NUM] =
 	{ POINT_NONE                          }, // APPLY_SUNGMA_PER_IMMUNE (289)
 	{ POINT_NONE                          }, // APPLY_IMMUNE_POISON100 (290)
 	{ POINT_NONE                          }, // APPLY_IMMUNE_BLEEDING100 (291)
+#ifdef ENABLE_BONUS_FIX
+	{ POINT_RESIST_MONSTER                }, // APPLY_MONSTER_DEFEND_BONUS (292) = resist against monsters
+#else
 	{ POINT_MONSTER_DEFEND_BONUS          }, // APPLY_MONSTER_DEFEND_BONUS (292)
+#endif
 	{ POINT_NONE                          }, // APPLY_RESERVED_293 (293)
 	{ POINT_NONE                          }, // APPLY_RESERVED_294 (294)
 	{ POINT_NONE                          }, // APPLY_RESERVED_295 (295)

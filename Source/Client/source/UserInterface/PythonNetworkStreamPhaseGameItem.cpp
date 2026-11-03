@@ -1,5 +1,8 @@
 #include "StdAfx.h"
 #include "PythonNetworkStream.h"
+#ifdef ENABLE_APPLY_RANDOM
+#include "PythonPlayer.h"
+#endif
 #include "PythonItem.h"
 #include "PythonShop.h"
 #include "PythonExchange.h"
@@ -102,6 +105,9 @@ bool CPythonNetworkStream::RecvSafeBoxSetPacket()
 #endif
 #ifdef ENABLE_SET_ITEM
 	kItemData.dwSetValue = kItemSet.dwSetValue;
+#endif
+#ifdef ENABLE_APPLY_RANDOM
+	memcpy(kItemData.aApplyRandom, kItemSet.aApplyRandom, sizeof(kItemData.aApplyRandom));
 #endif
 
 	CPythonSafeBox::Instance().SetItemData(kItemSet.Cell.cell, kItemData);
@@ -216,6 +222,9 @@ bool CPythonNetworkStream::RecvMallItemSetPacket()
 #ifdef ENABLE_SET_ITEM
 	kItemData.dwSetValue = kItemSet.dwSetValue;
 #endif
+#ifdef ENABLE_APPLY_RANDOM
+	memcpy(kItemData.aApplyRandom, kItemSet.aApplyRandom, sizeof(kItemData.aApplyRandom));
+#endif
 
 	CPythonSafeBox::Instance().SetMallItemData(kItemSet.Cell.cell, kItemData);
 
@@ -312,6 +321,9 @@ bool CPythonNetworkStream::RecvItemSetPacket2()
 #endif
 
 	IAbstractPlayer& rkPlayer=IAbstractPlayer::GetSingleton();
+#ifdef ENABLE_APPLY_RANDOM
+	memcpy(kItemData.aApplyRandom, packet_item_set.aApplyRandom, sizeof(kItemData.aApplyRandom));
+#endif
 	rkPlayer.SetItemData(packet_item_set.Cell, kItemData);
 
 #ifdef ENABLE_RENEWAL_SWITCHBOT
@@ -361,6 +373,9 @@ bool CPythonNetworkStream::RecvItemUpdatePacket()
 #endif
 #ifdef ENABLE_SET_ITEM
 	rkPlayer.SetItemSetValue(packet_item_update.Cell, packet_item_update.dwSetValue);
+#endif
+#ifdef ENABLE_APPLY_RANDOM
+	CPythonPlayer::Instance().SetItemApplyRandom(packet_item_update.Cell, packet_item_update.aApplyRandom);
 #endif
 
 	__RefreshInventoryWindow();

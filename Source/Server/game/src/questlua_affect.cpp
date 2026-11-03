@@ -285,9 +285,15 @@ namespace quest
 
 		if ( ch != NULL )
 		{
+#ifdef ENABLE_BONUS_FIX
+			int bApply = (int)lua_tonumber(L, 1);
+
+			if ( bApply <= APPLY_NONE || bApply >= MAX_APPLY_NUM ) return 0;
+#else
 			BYTE bApply = (BYTE)lua_tonumber(L, 1);
 
 			if ( bApply >= MAX_APPLY_NUM ) return 0;
+#endif
 
 			bApply = aApplyInfo[bApply].bPointType;
 			long value = (long)lua_tonumber(L, 2);

@@ -23,18 +23,18 @@ TEXT_MAIN_COLOR = "|cffcab5a4"
 # Baerim referansi: GRAPHICS_SKY_DEFAULT, PRESET_01..03, STARRY_NIGHT, PRESET_04..10 (sira ayni).
 # Dosyalar advanced_options_runtime.SKY_FILES ile ayni indekste.
 SKY_PRESETS = (
-	("Varsay\xfdlan", None),
-	("Sabah Sisi", "environment_02.msenv"),
-	("Hafif Bulutlar", "environment_03.msenv"),
-	("Mor Alacakaranl\xfdk", "environment_04.msenv"),
-	("Y\xfdld\xfdzl\xfd Gece", "starry_night.msenv"),
-	("A\xe7\xfdk G\xf6ky\xfcz\xfc", "environment_05.msenv"),
-	("Yaz G\xf6ky\xfcz\xfc", "environment_06.msenv"),
-	("Pembe \xdeafak", "environment_07.msenv"),
-	("Alt\xfdn Alacakaranl\xfdk", "environment_08.msenv"),
-	("Kehribar Ufuk", "environment_09.msenv"),
-	("Derin Mavi", "environment_10.msenv"),
-	("Alt\xfdn I\xfe\xfdk", "environment_11.msenv"),
+	(localeInfo.ADVANCED_OPTIONS_SKY_0, None),
+	(localeInfo.ADVANCED_OPTIONS_SKY_1, "environment_02.msenv"),
+	(localeInfo.ADVANCED_OPTIONS_SKY_2, "environment_03.msenv"),
+	(localeInfo.ADVANCED_OPTIONS_SKY_3, "environment_04.msenv"),
+	(localeInfo.ADVANCED_OPTIONS_SKY_4, "starry_night.msenv"),
+	(localeInfo.ADVANCED_OPTIONS_SKY_5, "environment_05.msenv"),
+	(localeInfo.ADVANCED_OPTIONS_SKY_6, "environment_06.msenv"),
+	(localeInfo.ADVANCED_OPTIONS_SKY_7, "environment_07.msenv"),
+	(localeInfo.ADVANCED_OPTIONS_SKY_8, "environment_08.msenv"),
+	(localeInfo.ADVANCED_OPTIONS_SKY_9, "environment_09.msenv"),
+	(localeInfo.ADVANCED_OPTIONS_SKY_10, "environment_10.msenv"),
+	(localeInfo.ADVANCED_OPTIONS_SKY_11, "environment_11.msenv"),
 )
 
 advanced_options_runtime.Configure(app=app, background=background, systemSetting=systemSetting, snd=snd, constInfo=constInfo, localeInfo=localeInfo, ui=ui, chat=chat, wndMgr=wndMgr)
@@ -82,61 +82,61 @@ option_data = [
 
 CATEGORY_CONFIG = {
 	0: {
-		"title": "Arayüz",
+		"title": localeInfo.ADVANCED_OPTIONS_CATEGORY_0,
 		"groups": [
-			{"id": "keyboard", "name": "Keyboard Settings", "windows": ["keyboard_window"], "hide_titles": ["keyboard_title_img"]},
-			{"id": "chat", "name": "Chat", "windows": ["chat_window"], "hide_titles": ["chat_mode_title_img"]},
-			{"id": "show_hide_interface", "name": "Show/Hide Interface", "windows": ["drop_ui_window", "guideline_window", "system_menu_window", "event_icon_window", "guild_quest_window", "show_guild_join_notification_window"], "hide_titles": ["drop_interface_title_img", "guideline_title_img", "system_menu_title_img", "event_icon_title_img", "guild_quest_title_img", "show_guild_join_notification_title_img"]},
-			{"id": "font_settings", "name": "Font Settings", "windows": ["window_scale_window", "font_change_window"], "hide_titles": ["window_scale_title_img", "font_change_title_img"]},
-			{"id": "whisper_settings", "name": "Whisper Settings", "windows": ["whisper_sender_letter_window"], "hide_titles": ["whisper_sender_letter_title_img"]},
-			{"id": "others", "name": "Others", "windows": ["save_status_window", "small_affect_icon_window"], "hide_titles": ["save_status_title_img", "small_affect_icon_title_img"]},
+			{"id": "keyboard", "name": localeInfo.ADVANCED_OPTIONS_GROUP_KEYBOARD, "windows": ["keyboard_window"], "hide_titles": ["keyboard_title_img"]},
+			{"id": "chat", "name": localeInfo.ADVANCED_OPTIONS_GROUP_CHAT, "windows": ["chat_window"], "hide_titles": ["chat_mode_title_img"]},
+			{"id": "show_hide_interface", "name": localeInfo.ADVANCED_OPTIONS_GROUP_SHOW_HIDE_INTERFACE, "windows": ["drop_ui_window", "guideline_window", "system_menu_window", "event_icon_window", "guild_quest_window", "show_guild_join_notification_window"], "hide_titles": ["drop_interface_title_img", "guideline_title_img", "system_menu_title_img", "event_icon_title_img", "guild_quest_title_img", "show_guild_join_notification_title_img"]},
+			{"id": "font_settings", "name": localeInfo.ADVANCED_OPTIONS_GROUP_FONT_SETTINGS, "windows": ["window_scale_window", "font_change_window"], "hide_titles": ["window_scale_title_img", "font_change_title_img"]},
+			{"id": "whisper_settings", "name": localeInfo.ADVANCED_OPTIONS_GROUP_WHISPER_SETTINGS, "windows": ["whisper_sender_letter_window"], "hide_titles": ["whisper_sender_letter_title_img"]},
+			{"id": "others", "name": localeInfo.ADVANCED_OPTIONS_GROUP_OTHERS, "windows": ["save_status_window", "small_affect_icon_window"], "hide_titles": ["save_status_title_img", "small_affect_icon_title_img"]},
 		]
 	},
 	1: {
-		"title": "Oyun",
+		"title": localeInfo.ADVANCED_OPTIONS_CATEGORY_1,
 		"groups": [
-			{"id": "pvp_mode", "name": "PvP Mode", "windows": ["pvp_mode_window"], "hide_titles": ["pvp_mode_title_img"]},
-			{"id": "block", "name": "Block", "windows": ["block_mode_window"], "hide_titles": ["block_mode_title_img"]},
-			{"id": "name_settings", "name": "Name Settings", "windows": ["names_window", "show_guild_grade_window"], "hide_titles": ["names_title_img", "show_guild_grade_title_img"]},
-			{"id": "damage_settings", "name": "Damage Settings", "windows": ["damage_window"], "hide_titles": ["show_damage_title_img", "damage_title_img"]},
-			{"id": "metinstone_settings", "name": "Metinstone Settings", "windows": ["stone_scale_window", "queue_metin_window", "event_stone_window", "hide_metin_spawns_window"], "hide_titles": ["stone_scale_title_img", "queue_metin_title_img", "event_stone_title_img", "hide_metin_spawns_img"]},
-			{"id": "hide_entities_effects", "name": "Hide Entities / Effects", "windows": ["hide_companion_window", "hide_effects_except_damage_window", "auto_hide_companion_map1_window", "shop_range_window"], "hide_titles": ["hide_companion", "hide_effects_except_damage_title_img", "auto_hide_companion_map1_img", "shop_range_title_img"]},
-			{"id": "notification_settings", "name": "Notification Settings", "windows": ["notification_settings_window", "notification_history_button_window"], "hide_titles": ["notification_settings_title_img", "notification_history_button_title_img"]},
-			{"id": "buffi_settings", "name": "Buffi Ayarları", "windows": ["buffi_settings_window"], "hide_titles": ["buffi_settings"]},
-			{"id": "others", "name": "Others", "windows": ["mining_flash_window", "auto_cape_after_warp_window", "disable_level_up_confirmation_window"], "hide_titles": ["mining_flash_title_img", "auto_cape_after_warp_title_img", "disable_level_up_confirmation_title_img"]},
+			{"id": "pvp_mode", "name": localeInfo.ADVANCED_OPTIONS_GROUP_PVP_MODE, "windows": ["pvp_mode_window"], "hide_titles": ["pvp_mode_title_img"]},
+			{"id": "block", "name": localeInfo.ADVANCED_OPTIONS_GROUP_BLOCK, "windows": ["block_mode_window"], "hide_titles": ["block_mode_title_img"]},
+			{"id": "name_settings", "name": localeInfo.ADVANCED_OPTIONS_GROUP_NAME_SETTINGS, "windows": ["names_window", "show_guild_grade_window"], "hide_titles": ["names_title_img", "show_guild_grade_title_img"]},
+			{"id": "damage_settings", "name": localeInfo.ADVANCED_OPTIONS_GROUP_DAMAGE_SETTINGS, "windows": ["damage_window"], "hide_titles": ["show_damage_title_img", "damage_title_img"]},
+			{"id": "metinstone_settings", "name": localeInfo.ADVANCED_OPTIONS_GROUP_METINSTONE_SETTINGS, "windows": ["stone_scale_window", "queue_metin_window", "event_stone_window", "hide_metin_spawns_window"], "hide_titles": ["stone_scale_title_img", "queue_metin_title_img", "event_stone_title_img", "hide_metin_spawns_img"]},
+			{"id": "hide_entities_effects", "name": localeInfo.ADVANCED_OPTIONS_GROUP_HIDE_ENTITIES_EFFECTS, "windows": ["hide_companion_window", "hide_effects_except_damage_window", "auto_hide_companion_map1_window", "shop_range_window"], "hide_titles": ["hide_companion", "hide_effects_except_damage_title_img", "auto_hide_companion_map1_img", "shop_range_title_img"]},
+			{"id": "notification_settings", "name": localeInfo.ADVANCED_OPTIONS_GROUP_NOTIFICATION_SETTINGS, "windows": ["notification_settings_window", "notification_history_button_window"], "hide_titles": ["notification_settings_title_img", "notification_history_button_title_img"]},
+			{"id": "buffi_settings", "name": localeInfo.ADVANCED_OPTIONS_GROUP_BUFFI_SETTINGS, "windows": ["buffi_settings_window"], "hide_titles": ["buffi_settings"]},
+			{"id": "others", "name": localeInfo.ADVANCED_OPTIONS_GROUP_OTHERS, "windows": ["mining_flash_window", "auto_cape_after_warp_window", "disable_level_up_confirmation_window"], "hide_titles": ["mining_flash_title_img", "auto_cape_after_warp_title_img", "disable_level_up_confirmation_title_img"]},
 		]
 	},
 	2: {
-		"title": "Çevre",
+		"title": localeInfo.ADVANCED_OPTIONS_CATEGORY_2,
 		"groups": [
-			{"id": "graphics_background", "name": "Arka Plan Ayarlar\xfd", "windows": ["anti_aliasing_window", "sharpness_windows", "local_light_window", "specular_reflection_window", "remove_fog_window", "rain_window", "storm_window", "wet_ground_window"], "hide_titles": ["anti_aliasing_title_img", "sharpness_window_img", "local_light_window_img", "specular_reflection_window_img", "remove_fog_window_img", "rain_window_img", "storm_window_img", "wet_ground_window_img"]},
-			{"id": "graphics_shadow", "name": "G\xf6lge Ayarlar\xfd", "windows": ["graphics_level_window", "shadow_options_window", "tree_shadow_window"], "hide_titles": ["graphics_level_img", "shadow_options_title_img", "tree_shadow_window_img"]},
-			{"id": "graphics_trees", "name": "A\xf0a\xe7 Ayarlar\xfd", "windows": ["speedtree_fx_window"], "hide_titles": ["speedtree_fx_window_img"]},
-			{"id": "graphics_water", "name": "Su Ayarlar\xfd", "windows": ["water_reflection_window", "enhanced_water_window", "water_ripple_window", "underwater_window"], "hide_titles": ["water_reflection_window_img", "enhanced_water_window_img", "water_ripple_window_img", "underwater_window_img"]},
-			{"id": "graphics_camera", "name": "Kamera Ayarlar\xfd", "windows": ["fov_windows", "camera_window", "death_cam_window"], "hide_titles": ["death_cam_window_img"]},
-			{"id": "graphics_sky", "name": "G\xf6ky\xfcz\xfc Ayarlar\xfd", "windows": ["sun_rays_window", "shooting_stars_window", "environment_window", "skybox_window"], "hide_titles": ["sun_rays_window_img", "shooting_stars_window_img", "environment_window_img", "skybox_window_img"]},
-			{"id": "graphics_environment", "name": "\xc7evre Ayarlar\xfd", "windows": ["environment_darkness_window", "environment_saturation_window", "environment_color_window", "environment_temperature_window", "environment_contrast_window"], "hide_titles": ["environment_darkness_window_img", "environment_saturation_window_img", "environment_color_window_img", "environment_temperature_window_img", "environment_contrast_window_img"]},
+			{"id": "graphics_background", "name": localeInfo.ADVANCED_OPTIONS_GROUP_GRAPHICS_BACKGROUND, "windows": ["anti_aliasing_window", "sharpness_windows", "local_light_window", "specular_reflection_window", "remove_fog_window", "rain_window", "storm_window", "wet_ground_window"], "hide_titles": ["anti_aliasing_title_img", "sharpness_window_img", "local_light_window_img", "specular_reflection_window_img", "remove_fog_window_img", "rain_window_img", "storm_window_img", "wet_ground_window_img"]},
+			{"id": "graphics_shadow", "name": localeInfo.ADVANCED_OPTIONS_GROUP_GRAPHICS_SHADOW, "windows": ["graphics_level_window", "shadow_options_window", "tree_shadow_window"], "hide_titles": ["graphics_level_img", "shadow_options_title_img", "tree_shadow_window_img"]},
+			{"id": "graphics_trees", "name": localeInfo.ADVANCED_OPTIONS_GROUP_GRAPHICS_TREES, "windows": ["speedtree_fx_window"], "hide_titles": ["speedtree_fx_window_img"]},
+			{"id": "graphics_water", "name": localeInfo.ADVANCED_OPTIONS_GROUP_GRAPHICS_WATER, "windows": ["water_reflection_window", "enhanced_water_window", "water_ripple_window", "underwater_window"], "hide_titles": ["water_reflection_window_img", "enhanced_water_window_img", "water_ripple_window_img", "underwater_window_img"]},
+			{"id": "graphics_camera", "name": localeInfo.ADVANCED_OPTIONS_GROUP_GRAPHICS_CAMERA, "windows": ["fov_windows", "camera_window", "death_cam_window"], "hide_titles": ["death_cam_window_img"]},
+			{"id": "graphics_sky", "name": localeInfo.ADVANCED_OPTIONS_GROUP_GRAPHICS_SKY, "windows": ["sun_rays_window", "shooting_stars_window", "environment_window", "skybox_window"], "hide_titles": ["sun_rays_window_img", "shooting_stars_window_img", "environment_window_img", "skybox_window_img"]},
+			{"id": "graphics_environment", "name": localeInfo.ADVANCED_OPTIONS_GROUP_GRAPHICS_ENVIRONMENT, "windows": ["environment_darkness_window", "environment_saturation_window", "environment_color_window", "environment_temperature_window", "environment_contrast_window"], "hide_titles": ["environment_darkness_window_img", "environment_saturation_window_img", "environment_color_window_img", "environment_temperature_window_img", "environment_contrast_window_img"]},
 		]
 	},
 	3: {
-		"title": "Ses",
+		"title": localeInfo.ADVANCED_OPTIONS_CATEGORY_3,
 		"groups": [
-			{"id": "music_selection", "name": "M\xfczik Se\xe7imi", "windows": ["bgm_window"], "hide_titles": ["bgm_title_img"]},
-			{"id": "sound_volume", "name": "Ses d\xfczeyi", "windows": ["volume_window"], "hide_titles": ["volume_title_img"]},
-			{"id": "sound_categories", "name": "Ses efekti ayr\xfdnt\xfdlar\xfd", "windows": ["sound_categories_window"], "hide_titles": ["sound_categories_title_img"]},
+			{"id": "music_selection", "name": localeInfo.ADVANCED_OPTIONS_GROUP_MUSIC_SELECTION, "windows": ["bgm_window"], "hide_titles": ["bgm_title_img"]},
+			{"id": "sound_volume", "name": localeInfo.ADVANCED_OPTIONS_GROUP_SOUND_VOLUME, "windows": ["volume_window"], "hide_titles": ["volume_title_img"]},
+			{"id": "sound_categories", "name": localeInfo.ADVANCED_OPTIONS_GROUP_SOUND_CATEGORIES, "windows": ["sound_categories_window"], "hide_titles": ["sound_categories_title_img"]},
 		]
 	},
 	4: {
-		"title": "Dil",
+		"title": localeInfo.ADVANCED_OPTIONS_CATEGORY_4,
 		"groups": [
-			{"id": "language_settings", "name": "Client Language", "windows": ["language_window"], "hide_titles": ["lang_mode", "language_title_img"]},
+			{"id": "language_settings", "name": localeInfo.ADVANCED_OPTIONS_GROUP_LANGUAGE_SETTINGS, "windows": ["language_window"], "hide_titles": ["lang_mode", "language_title_img"]},
 		]
 	},
 	5: {
-		"title": "Performance",
+		"title": localeInfo.ADVANCED_OPTIONS_CATEGORY_5,
 		"groups": [
-			{"id": "crowd_performance", "name": "Performans", "windows": ["crowd_performance_window"], "hide_titles": ["crowd_performance_img", "crowd_performance_title_img"]},
-			{"id": "fps_limit", "name": "FPS", "windows": ["fps_limit_window"], "hide_titles": ["fps_limit_img", "fps_limit_title_img"]},
+			{"id": "crowd_performance", "name": localeInfo.ADVANCED_OPTIONS_GROUP_CROWD_PERFORMANCE, "windows": ["crowd_performance_window"], "hide_titles": ["crowd_performance_img", "crowd_performance_title_img"]},
+			{"id": "fps_limit", "name": localeInfo.ADVANCED_OPTIONS_GROUP_FPS_LIMIT, "windows": ["fps_limit_window"], "hide_titles": ["fps_limit_img", "fps_limit_title_img"]},
 		]
 	}
 }
@@ -239,9 +239,6 @@ class AdvancedGameOptionsWindow(ui.BoardWithTitleBar):
 		self.Destroy()
 		self.scrollbar_is_show = False
 		advanced_options_reference.ApplyLocale(app.GetLocalePath().replace("\\", "/").split("/")[-1].lower(), app.GetDefaultCodePage())
-		if app.GetLocalePath().replace("\\", "/").split("/")[-1].lower() == "tr":
-			localeInfo.GAME_OPTION_HIDE_METIN_SPAWNS = "Do\xf0an canavarlar\xfd gizle"
-			localeInfo.GAME_OPTION_HIDE_METIN_SPAWNS_DESC = "Metin ta\xfelar\xfdndan do\xf0an canavarlar\xfd gizle. H\xe2l\xe2 sald\xfdrabilirler."
 		self.__LoadWindow()
 		self.SetTitleName(uiScriptLocale.GAMEOPTION_TITLE)
 		self.last_update_time = time.time()
@@ -326,7 +323,7 @@ class AdvancedGameOptionsWindow(ui.BoardWithTitleBar):
 		self.searchHint.SetPosition(10, 6)
 		self.searchHint.SetFontName("Tahoma:12")
 		self.searchHint.SetPackedFontColor(0xff9f9892)
-		self.searchHint.SetText(getattr(localeInfo, "GAME_OPTION_SEARCH", "Ara.."))
+		self.searchHint.SetText(localeInfo.GAME_OPTION_SEARCH)
 		self.searchHint.Show()
 
 		self.children["filteringEnabled"] = False
@@ -1061,7 +1058,7 @@ class AdvancedGameOptionsWindow(ui.BoardWithTitleBar):
 				SetOptSetting(settingKey, newVal)
 			except Exception as error:
 				dbg.TraceError("Option %s failed: %s" % (settingKey, error))
-				chat.AppendChat(chat.CHAT_TYPE_INFO, "Se\xe7enek uygulanamad\xfd: %s" % settingKey)
+				chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.ADVANCED_OPTIONS_APPLY_FAILED % settingKey)
 				btn.Down() if current else btn.SetUp()
 				return
 			if newVal:
@@ -1099,7 +1096,7 @@ class AdvancedGameOptionsWindow(ui.BoardWithTitleBar):
 						SetOptSetting(settingKey, i)
 					except Exception as error:
 						dbg.TraceError("Option %s failed: %s" % (settingKey, error))
-						chat.AppendChat(chat.CHAT_TYPE_INFO, "Se\xe7enek uygulanamad\xfd: %s" % settingKey)
+						chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.ADVANCED_OPTIONS_APPLY_FAILED % settingKey)
 						return
 					for j, b in enumerate(btnList):
 						if b:
@@ -1294,7 +1291,7 @@ class AdvancedGameOptionsWindow(ui.BoardWithTitleBar):
 					numbered.SetOverVisual(IMG_DIR + "radio_unselected.png")
 					numbered.SetDownVisual(IMG_DIR + "radio_selected.png")
 					numbered.SetSize(110, 12)
-					numbered.SetTextAlignLeft("Numaral\xfd efekt", 25)
+					numbered.SetTextAlignLeft(localeInfo.ADVANCED_OPTIONS_NUMBERED_EFFECT, 25)
 					if numbered.ButtonText:
 						numbered.ButtonText.SetPackedFontColor(0xffcebb98)
 					numbered.Show()
@@ -1470,7 +1467,7 @@ class AdvancedGameOptionsWindow(ui.BoardWithTitleBar):
 				if bgm_file:
 					self.selectMusicFile = bgm_file
 					if musicInfo.fieldMusic != "":
-						self.selectMusicFile.SetText("Metin2 Standart M\xfcz\xfd\xf0i" if musicInfo.fieldMusic == musicInfo.METIN2THEMA else musicInfo.fieldMusic[:MUSIC_FILENAME_MAX_LEN])
+						self.selectMusicFile.SetText(uiScriptLocale.OPTION_MUSIC_DEFAULT_THEMA if musicInfo.fieldMusic == musicInfo.METIN2THEMA else musicInfo.fieldMusic[:MUSIC_FILENAME_MAX_LEN])
 
 				for category in ("hits", "critical", "skills", "movement", "interface", "voices", "monsters"):
 					categorySlider = getOpt("sound_%s_volume_controller" % category)
@@ -2307,7 +2304,7 @@ class AdvancedGameOptionsWindow(ui.BoardWithTitleBar):
 
 	def __OnChangeMusic(self, fileName):
 		if self.selectMusicFile:
-			self.selectMusicFile.SetText("Metin2 Standart M\xfcz\xfd\xf0i" if fileName == uiSelectMusic.DEFAULT_THEMA else fileName[:MUSIC_FILENAME_MAX_LEN])
+			self.selectMusicFile.SetText(uiScriptLocale.OPTION_MUSIC_DEFAULT_THEMA if fileName == uiSelectMusic.DEFAULT_THEMA else fileName[:MUSIC_FILENAME_MAX_LEN])
 		if musicInfo.fieldMusic != "":
 			snd.FadeOutMusic("BGM/" + musicInfo.fieldMusic)
 		if fileName == uiSelectMusic.DEFAULT_THEMA:

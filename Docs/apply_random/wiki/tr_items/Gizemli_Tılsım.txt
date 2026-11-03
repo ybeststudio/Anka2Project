@@ -1,0 +1,115 @@
+{{Ekipman
+
+|Ekipmanisim = Tılsım
+|Seviye = 120
+|Level = 120
+|EldeEdiliş =
+* '''Canavarlar:''' -
+
+* '''Metinler:''' -
+
+* '''Sandıklar:''' -
+
+* '''Görevler:''' -
+
+* '''Diğer:''' [[Gizemli Sunak (YZK)|Gizemli Sunak]]
+*: '''Üretim:''' 
+*:: {{Icon2|Tılsım Özü}} x1 <br> {{Icon2|Gizemli Taş}} x200 <br> {{Icon2|Yang|10.000.000 Yang}} <br> {{Icon2|Gaya|200 Gaya}}
+:::: '''Üretim Şansı:''' %100
+
+* '''Parça Çeşidi:''' {{Icon2|Kutsal Parça (120)}}
+
+|Yang1 = 450.000
+|Yang2 = 530.000
+|Yang3 = 640.000
+|Yang4 = 770.000
+|Yang5 = 920.000
+|Yang6 = 1.110.000
+|Yang7 = 1.330.000
+|Yang8 = 1.600.000
+|Yang9 = 1.920.000
+
+|Upgradeitem-1-0 = -
+|Upgradeitem-1-1 = 30x {{Icon|Gizemli Taş}}
+|Upgradeitem-1-2 = 40x {{Icon|Gizemli Taş}}
+|Upgradeitem-1-3 = 50x {{Icon|Gizemli Taş}}
+|Upgradeitem-1-4 = 60x {{Icon|Gizemli Taş}}
+|Upgradeitem-1-5 = 60x {{Icon|Gizemli Taş}}
+|Upgradeitem-1-6 = 60x {{Icon|Gizemli Taş}}
+|Upgradeitem-1-7 = 100x {{Icon|Gizemli Taş}}
+|Upgradeitem-1-8 = 100x {{Icon|Gizemli Taş}}
+|Upgradeitem-1-9 = 200x {{Icon|Gizemli Taş}}
+
+|Upgradeitem-2-0 = -
+|Upgradeitem-2-1 = 10x {{Icon|İrade Topazı}}
+|Upgradeitem-2-2 = 10x {{Icon|İrade Topazı}}
+|Upgradeitem-2-3 = 10x {{Icon|İrade Topazı}}
+|Upgradeitem-2-4 = 10x {{Icon|İrade Topazı}}
+|Upgradeitem-2-5 = 10x {{Icon|İrade Topazı}}
+|Upgradeitem-2-6 = 10x {{Icon|İrade Topazı}}
+|Upgradeitem-2-7 = 1x {{Icon|Parıltılı Beyaz İnci}}
+|Upgradeitem-2-8 = 1x {{Icon|Parıltılı Mavi İnci}}
+|Upgradeitem-2-9 = 1x {{Icon|Parıltılı Kankırmızı İnci}}
+
+|Upgradeitem-3-0 = -
+|Upgradeitem-3-1 = 1x {{Icon|Tılsım Özü}}
+|Upgradeitem-3-2 = 2x {{Icon|Tılsım Özü}}
+|Upgradeitem-3-3 = 3x {{Icon|Tılsım Özü}}
+|Upgradeitem-3-4 = 4x {{Icon|Tılsım Özü}}
+|Upgradeitem-3-5 = 5x {{Icon|Tılsım Özü}}
+|Upgradeitem-3-6 = 6x {{Icon|Tılsım Özü}}
+|Upgradeitem-3-7 = 7x {{Icon|Tılsım Özü}}
+|Upgradeitem-3-8 = 8x {{Icon|Tılsım Özü}}
+|Upgradeitem-3-9 = 9x {{Icon|Tılsım Özü}}
+
+|Upgradeitem-4-0 = -
+|Upgradeitem-4-1 = 1x {{Icon|Gizemli Tılsım}} +0
+|Upgradeitem-4-2 = 1x {{Icon|Gizemli Tılsım}} +0
+|Upgradeitem-4-3 = 1x {{Icon|Gizemli Tılsım}} +0
+|Upgradeitem-4-4 = 1x {{Icon|Gizemli Tılsım}} +0
+|Upgradeitem-4-5 = 1x {{Icon|Gizemli Tılsım}} +0
+|Upgradeitem-4-6 = 1x {{Icon|Gizemli Tılsım}} +0
+|Upgradeitem-4-7 = 1x {{Icon|Gizemli Tılsım}} +0
+|Upgradeitem-4-8 = 1x {{Icon|Gizemli Tılsım}} +0
+|Upgradeitem-4-9 = 1x {{Icon|Gizemli Tılsım}} +0
+
+|Bonus1 = SungMa İradesi (Tesadüfi)
+|Bonus1-0 = <font color=yellow>1</font>&nbsp;-&nbsp;<font color=orange>2</font>
+|Bonus1-1 = <font color=yellow>1</font>&nbsp;-&nbsp;<font color=orange>3</font>
+|Bonus1-2 = <font color=yellow>3</font>&nbsp;-&nbsp;<font color=orange>4</font>
+|Bonus1-3 = <font color=yellow>5</font>&nbsp;-&nbsp;<font color=orange>6</font>
+|Bonus1-4 = <font color=yellow>7</font>&nbsp;-&nbsp;<font color=orange>8</font>
+|Bonus1-5 = <font color=yellow>9</font>&nbsp;-&nbsp;<font color=orange>10</font>
+|Bonus1-6 = <font color=yellow>11</font>&nbsp;-&nbsp;<font color=orange>13</font>
+|Bonus1-7 = <font color=yellow>14</font>&nbsp;-&nbsp;<font color=orange>16</font>
+|Bonus1-8 = <font color=yellow>17</font>&nbsp;-&nbsp;<font color=orange>19</font>
+|Bonus1-9 = <font color=yellow>21</font>&nbsp;-&nbsp;<font color=orange>24</font>
+
+|Bonus2 = Element Gücü
+|Bonus2-0 = <font color=yellow>1%</font>&nbsp;-&nbsp;<font color=orange>30%</font>
+|Bonus2-1 = <font color=yellow>1%</font>&nbsp;-&nbsp;<font color=orange>31%</font>
+|Bonus2-2 = <font color=yellow>2%</font>&nbsp;-&nbsp;<font color=orange>32%</font>
+|Bonus2-3 = <font color=yellow>3%</font>&nbsp;-&nbsp;<font color=orange>33%</font>
+|Bonus2-4 = <font color=yellow>4%</font>&nbsp;-&nbsp;<font color=orange>34%</font>
+|Bonus2-5 = <font color=yellow>5%</font>&nbsp;-&nbsp;<font color=orange>36%</font>
+|Bonus2-6 = <font color=yellow>6%</font>&nbsp;-&nbsp;<font color=orange>59%</font>
+|Bonus2-7 = <font color=yellow>7%</font>&nbsp;-&nbsp;<font color=orange>62%</font>
+|Bonus2-8 = <font color=yellow>8%</font>&nbsp;-&nbsp;<font color=orange>65%</font>
+|Bonus2-9 = <font color=yellow>9%</font>&nbsp;-&nbsp;<font color=orange>69%</font>
+}}
+{{Tılsım Bonusları}}
+<noinclude>
+[[ae:تعويذة غامضة]]
+[[cz:Tajemný talisman]]
+[[de:Mysteriöser Talisman]]
+[[en:Mysterious Talisman]]
+[[es:Talismán misterioso]]
+[[fr:Talisman mystérieux]]
+[[gr:Μυστηριώδες Φυλαχτό]]
+[[hu:Titokzatos talizmán]]
+[[it:Talismano misterioso]]
+[[nl:Mysterieuze Talisman]]
+[[pl:Tajemniczy Talizman]]
+[[pt:Talismã Misterioso]]
+[[ro:Talisman Misterios]]
+</noinclude>

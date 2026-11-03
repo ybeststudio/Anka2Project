@@ -815,7 +815,11 @@ DWORD CPythonPlayer::GetItemMetinSocket(TItemPos Cell, DWORD dwMetinSocketIndex)
 	return GetItemData(Cell)->alSockets[dwMetinSocketIndex];
 }
 
+#ifdef ENABLE_BONUS_FIX
+void CPythonPlayer::GetItemAttribute(TItemPos Cell, DWORD dwAttrSlotIndex, WORD * pbyType, short * psValue)
+#else
 void CPythonPlayer::GetItemAttribute(TItemPos Cell, DWORD dwAttrSlotIndex, BYTE * pbyType, short * psValue)
+#endif
 {
 	*pbyType = 0;
 	*psValue = 0;
@@ -853,7 +857,30 @@ void CPythonPlayer::SetItemMetinSocket(TItemPos Cell, DWORD dwMetinSocketIndex, 
 	(const_cast <TItemData *>(GetItemData(Cell)))->alSockets[dwMetinSocketIndex] = dwMetinNumber;
 }
 
+#ifdef ENABLE_APPLY_RANDOM
+void CPythonPlayer::SetItemApplyRandom(TItemPos Cell, const TPlayerItemAttribute* pApply)
+{
+	if (!Cell.IsValidCell() || !pApply)
+		return;
+	memcpy((const_cast <TItemData *>(GetItemData(Cell)))->aApplyRandom, pApply, sizeof(TItemData::aApplyRandom));
+}
+
+void CPythonPlayer::GetItemApplyRandom(TItemPos Cell, DWORD dwIndex, WORD* pwType, short* psValue)
+{
+	*pwType = 0;
+	*psValue = 0;
+	if (!Cell.IsValidCell() || dwIndex >= 3)
+		return;
+	*pwType = GetItemData(Cell)->aApplyRandom[dwIndex].bType;
+	*psValue = GetItemData(Cell)->aApplyRandom[dwIndex].sValue;
+}
+
+#endif
+#ifdef ENABLE_BONUS_FIX
+void CPythonPlayer::SetItemAttribute(TItemPos Cell, DWORD dwAttrIndex, WORD byType, short sValue)
+#else
 void CPythonPlayer::SetItemAttribute(TItemPos Cell, DWORD dwAttrIndex, BYTE byType, short sValue)
+#endif
 {
 	if (!Cell.IsValidCell())
 		return;

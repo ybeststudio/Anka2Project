@@ -132,6 +132,14 @@ void CItemCache::OnFlush()
 					p->aAttr[6].bType, p->aAttr[6].sValue);
 		}
 
+#ifdef ENABLE_APPLY_RANDOM
+		iLen += snprintf(szColumns + iLen, sizeof(szColumns) - iLen,
+				", randomtype0, randomvalue0, randomrow0, randomtype1, randomvalue1, randomrow1, randomtype2, randomvalue2, randomrow2");
+		iValueLen += snprintf(szValues + iValueLen, sizeof(szValues) - iValueLen, ", %d, %d, %d, %d, %d, %d, %d, %d, %d",
+				p->aApplyRandom[0].bType, p->aApplyRandom[0].sValue, p->abApplyRandomRow[0],
+				p->aApplyRandom[1].bType, p->aApplyRandom[1].sValue, p->abApplyRandomRow[1],
+				p->aApplyRandom[2].bType, p->aApplyRandom[2].sValue, p->abApplyRandomRow[2]);
+#endif
 		char szItemQuery[QUERY_MAX_LEN + QUERY_MAX_LEN];
 		snprintf(szItemQuery, sizeof(szItemQuery), "REPLACE INTO item%s (%s) VALUES(%s)", GetTablePostfix(), szColumns, szValues);
 

@@ -66,6 +66,20 @@ class CItemManager : public CSingleton<CItemManager>
 		bool LoadItemTable(const char *c_szFileName);
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
 		bool LoadItemScale(const char *c_szFileName);
+#ifdef ENABLE_SHINING_SYSTEM
+		// shining set (ITEM_SHINING value0) + kind (weapon type / armor) -> effect file, locale/common/shining_effect.txt
+		enum EShiningEffectKind { SHINING_KIND_SWORD, SHINING_KIND_TWOHAND, SHINING_KIND_DAGGER, SHINING_KIND_BOW,
+			SHINING_KIND_BELL, SHINING_KIND_FAN, SHINING_KIND_ARMOR, SHINING_KIND_ARMOR_M, SHINING_KIND_ARMOR_F, SHINING_KIND_MAX };
+		bool LoadShiningEffect(const char* c_szFileName);
+		const char* GetShiningEffectPath(DWORD dwSet, BYTE bKind) const
+		{
+			std::unordered_map<DWORD, std::string>::const_iterator it = m_shiningEffectMap.find(dwSet * SHINING_KIND_MAX + bKind);
+			return it == m_shiningEffectMap.end() ? NULL : it->second.c_str();
+		}
+	private:
+		std::unordered_map<DWORD, std::string> m_shiningEffectMap;
+	public:
+#endif
 #endif
 #ifdef ENABLE_AURA_COSTUME_SYSTEM
 		bool LoadAuraScale(const char *c_szFileName);

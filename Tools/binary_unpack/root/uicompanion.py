@@ -30,21 +30,21 @@ BUFFI_DURATION_MAX = 30 * 24 * 60 * 60
 # Buffi skill tooltip (reference skilldesc.txt + SUPPORT_SKILL_AMOUNT_DESC_*):
 # (name, name G, name P, description, condition 1, condition 2, value line)
 BUFFI_SKILL_TOOLTIP = (
-	("Kutsama", "Cennet", "Ejderha", "Koruyucu bir \xe7ember olu\xfeturur.", "Buff | Kendine uyguland\xfd\xf0\xfdnda bonus", "Yak\xfdn d\xf6v\xfc\xfe sald\xfdr\xfdlar\xfdna kar\xfe\xfd diren\xe7", "Yak\xfdn d\xf6v\xfc\xfe sald\xfdr\xfdlar\xfdna kar\xfe\xfd diren\xe7: %d%%"),
-	("Yans\xfdtmak", "Yans\xfdtan Su", "Kristal Ayna", "Koruyucu bir yans\xfdt\xfdc\xfd daire olu\xfeturur.", "Buff | Kendine uyguland\xfd\xf0\xfdnda bonus", "Hasar\xfd sald\xfdrgana geri yans\xfdt\xfdr", "Yans\xfdyan yak\xfdn d\xf6v\xfc\xfe hasar\xfd: %d%%"),
-	("Ejderhan\xfdn Yard\xfdm\xfd", "Ejderhan\xfdn Deste\xf0i", "Ejderha G\xfcc\xfc", "Sizin veya bir grup \xfcyesinin sald\xfdr\xfds\xfdn\xfd g\xfc\xe7lendirir.", "Buff | Kendine uyguland\xfd\xf0\xfdnda bonus", "Kritik vuru\xfe \xfeans\xfdn\xfd art\xfdr\xfdr", "Kritik vuru\xfe \xfeans\xfd: %d%%"),
-	("\xc7abukluk", "\xc7eviklik", "R\xfczgar H\xfdz\xfd", "R\xfczgar kadar h\xfdzl\xfd ko\xfe.", "Hareket ve b\xfcy\xfc h\xfdz\xfdn\xfd art\xfdr\xfdr", "Kendine at\xfdld\xfd\xf0\xfdnda bonus", "Hareket h\xfdz\xfd: %d%%"),
-	("Sald\xfdr\xfd Art\xfd\xfe\xfd", "Destek Sald\xfdr\xfds\xfd", "G\xfc\xe7lendirilmi\xfe Sald\xfdr\xfd", "Bir orta\xf0\xfd g\xfc\xe7lendirmek.", "Sald\xfdr\xfd de\xf0erini art\xfdr\xfdr", "Grup \xfcyeleri \xfczerinde kullan\xfdlabilir", "Sald\xfdr\xfd G\xfcc\xfc: +%d"),
+	(localeInfo.BUFFI_SKILL_1_NAME, localeInfo.BUFFI_SKILL_1_NAME_G, localeInfo.BUFFI_SKILL_1_NAME_P, localeInfo.BUFFI_SKILL_1_DESC, localeInfo.BUFFI_SKILL_COND_SELF_BUFF, localeInfo.BUFFI_SKILL_1_COND, localeInfo.BUFFI_SKILL_1_VALUE),
+	(localeInfo.BUFFI_SKILL_2_NAME, localeInfo.BUFFI_SKILL_2_NAME_G, localeInfo.BUFFI_SKILL_2_NAME_P, localeInfo.BUFFI_SKILL_2_DESC, localeInfo.BUFFI_SKILL_COND_SELF_BUFF, localeInfo.BUFFI_SKILL_2_COND, localeInfo.BUFFI_SKILL_2_VALUE),
+	(localeInfo.BUFFI_SKILL_3_NAME, localeInfo.BUFFI_SKILL_3_NAME_G, localeInfo.BUFFI_SKILL_3_NAME_P, localeInfo.BUFFI_SKILL_3_DESC, localeInfo.BUFFI_SKILL_COND_SELF_BUFF, localeInfo.BUFFI_SKILL_3_COND, localeInfo.BUFFI_SKILL_3_VALUE),
+	(localeInfo.BUFFI_SKILL_4_NAME, localeInfo.BUFFI_SKILL_4_NAME_G, localeInfo.BUFFI_SKILL_4_NAME_P, localeInfo.BUFFI_SKILL_4_DESC, localeInfo.BUFFI_SKILL_4_COND, localeInfo.BUFFI_SKILL_4_COND_SELF, localeInfo.BUFFI_SKILL_4_VALUE),
+	(localeInfo.BUFFI_SKILL_5_NAME, localeInfo.BUFFI_SKILL_5_NAME_G, localeInfo.BUFFI_SKILL_5_NAME_P, localeInfo.BUFFI_SKILL_5_DESC, localeInfo.BUFFI_SKILL_5_COND, localeInfo.BUFFI_SKILL_5_COND_PARTY, localeInfo.BUFFI_SKILL_5_VALUE),
 )
-BUFFI_INT_POWERED = "INT taraf\xfdndan g\xfc\xe7lendirildi"
-BUFFI_GRADE_SUFFIX = ("", " Master", " Grand Master", " Perfect Master")
+BUFFI_INT_POWERED = localeInfo.BUFFI_INT_POWERED
+BUFFI_GRADE_SUFFIX = ("", localeInfo.BUFFI_GRADE_MASTER, localeInfo.BUFFI_GRADE_GRAND_MASTER, localeInfo.BUFFI_GRADE_PERFECT_MASTER)
 # reference tooltip value lines (Swiftness also shows the casting speed)
 BUFFI_SKILL_VALUE = (
-	("Yak\xfdn d\xf6v\xfc\xfe sald\xfdr\xfdlar\xfdna kar\xfe\xfd diren\xe7: %d%%",),
-	("Yans\xfdyan yak\xfdn d\xf6v\xfc\xfe hasar\xfd: %d%%",),
-	("Kritik Vuru\xfe \xdeans\xfd: %d%%",),
-	("Hareket H\xfdz\xfd: %d%%", "B\xfcy\xfc H\xfdz\xfd: %d%%",),
-	("Sald\xfdr\xfd G\xfcc\xfc: +%d",),
+	(localeInfo.BUFFI_SKILL_1_VALUE,),
+	(localeInfo.BUFFI_SKILL_2_VALUE,),
+	(localeInfo.BUFFI_SKILL_3_VALUE_TOOLTIP,),
+	(localeInfo.BUFFI_SKILL_4_VALUE_TOOLTIP, localeInfo.BUFFI_SKILL_4_CAST_VALUE_TOOLTIP,),
+	(localeInfo.BUFFI_SKILL_5_VALUE,),
 )
 # reference tooltip colours
 BUFFI_TT_WHITE = 0xffffffff
@@ -58,8 +58,6 @@ BONUS_ROW_HEIGHT = 27
 BONUS_VISIBLE_ROWS = 2
 
 
-def _T(name, default):
-	return getattr(localeInfo, name, default)
 
 
 def _SkillGrade(level):
@@ -255,7 +253,7 @@ class BuffiEvolutionWindow(ui.BoardWithTitleBar):
 		self.SetSize(self.WIDTH, self.HEIGHT)
 		self.AddFlag("movable")
 		self.AddFlag("float")
-		self.SetTitleName(_T("SUPPORT_TITLE_EVOLVE", "Buffi Evrimi"))
+		self.SetTitleName(localeInfo.SUPPORT_TITLE_EVOLVE)
 		self.SetCloseEvent(ui.__mem_func__(self.Close))
 
 		header = self.__Image(self, "header_bg.png", 8, 32)
@@ -280,11 +278,11 @@ class BuffiEvolutionWindow(ui.BoardWithTitleBar):
 		self.slot = slot
 
 		costTitle = self.__Image(self, "cost_title_bg.png", 17, 230)
-		self.__Text(costTitle, "Geli\xfetirme Fiyat\xfd", 92, 3)
+		self.__Text(costTitle, localeInfo.COMPANION_UPGRADE_PRICE, 92, 3)
 		cost = self.__Image(self, "cost_bg.png", 17, 252)
 		self.priceText = self.__Text(cost, "", 92, 1)
 		chance = self.__Image(self, "bg_chance_success.png", 17, 272)
-		self.__Text(chance, _T("COMPANION_EVOLUTION_CANNOT_FAIL", "\xddyile\xfetirme ba\xfear\xfds\xfdz olamaz"), 92, 3)
+		self.__Text(chance, localeInfo.COMPANION_EVOLUTION_CANNOT_FAIL, 92, 3)
 
 		btn = ui.Button()
 		btn.SetParent(self)
@@ -292,7 +290,7 @@ class BuffiEvolutionWindow(ui.BoardWithTitleBar):
 		btn.SetOverVisual("d:/ymir work/ui/public/large_button_02.sub")
 		btn.SetDownVisual("d:/ymir work/ui/public/large_button_03.sub")
 		btn.SetPosition((self.WIDTH - 88) / 2, 300)
-		btn.SetText(_T("PET_BTN_EVOLVE", "Evrim"))
+		btn.SetText(localeInfo.PET_BTN_EVOLVE)
 		btn.SetEvent(ui.__mem_func__(self.__OnClickEvolve))
 		btn.Show()
 		self.evolveButton = btn
@@ -357,8 +355,8 @@ class BuffiEvolutionWindow(ui.BoardWithTitleBar):
 		import uiCommon
 		self.CloseQuestionDialog()
 		dlg = uiCommon.QuestionDialog2()
-		dlg.SetText1(_T("MOUNT_EVOLVE_CONFIRMATION_1", "Geli\xfeime devam etmek istedi\xf0inizden emin misiniz?"))
-		dlg.SetText2(_T("MOUNT_EVOLVE_CONFIRMATION_2", "Evrim i\xe7in kullan\xfdlan itemler kaybolacak ve kurtar\xfdlamaz"))
+		dlg.SetText1(localeInfo.MOUNT_EVOLVE_CONFIRMATION_1)
+		dlg.SetText2(localeInfo.MOUNT_EVOLVE_CONFIRMATION_2)
 		dlg.SetAcceptEvent(ui.__mem_func__(self.__SendUpgradeEvolution))
 		dlg.SetCancelEvent(ui.__mem_func__(self.CloseQuestionDialog))
 		dlg.Open()
@@ -494,7 +492,7 @@ class CompanionWindow(ui.Window):
 		board.SetPosition(30, 0)
 		board.AddFlag("attach")
 		board.SetCloseEvent(ui.__mem_func__(self.Close))
-		board.SetTitleName(_T("PET_INFORMATION_TITLE", "Yolda\xfe"))
+		board.SetTitleName(localeInfo.PET_INFORMATION_TITLE)
 		board.Show()
 		self.board = board
 
@@ -553,12 +551,12 @@ class CompanionWindow(ui.Window):
 		expHover.Show()
 		self.keep.append(expHover)
 
-		c["evolve_btn"] = self.__Button(win, "evolve", 135, 95, _T("PET_BTN_EVOLVE", "Evrim"), ui.__mem_func__(self.OnClickEvolutionBuffi))
-		c["duration_btn"] = self.__Button(win, "duration", 135, 126, _T("SUPPORT_DURATION_BUTTON", "S\xfcre"), ui.__mem_func__(self.OnClickDurationBuffi))
+		c["evolve_btn"] = self.__Button(win, "evolve", 135, 95, localeInfo.PET_BTN_EVOLVE, ui.__mem_func__(self.OnClickEvolutionBuffi))
+		c["duration_btn"] = self.__Button(win, "duration", 135, 126, localeInfo.SUPPORT_DURATION_BUTTON, ui.__mem_func__(self.OnClickDurationBuffi))
 
 		# Ore header + slots | Duration header + gauge
-		c["subheader_bg_2"] = self.__Subheader(win, _T("ORE_NAME", "cevher"), 4, 156)
-		c["subheader_bg_3"] = self.__Subheader(win, _T("PET_INFORMATION_DURATION", "S\xfcre"), 135, 156)
+		c["subheader_bg_2"] = self.__Subheader(win, localeInfo.ORE_NAME, 4, 156)
+		c["subheader_bg_3"] = self.__Subheader(win, localeInfo.PET_INFORMATION_DURATION, 135, 156)
 		c["runes_bg"] = self.__Image(win, COMPANION_PATH.format("/details_bg.png"), 5, 180)
 		c["duration_bg"] = self.__Image(win, COMPANION_PATH.format("/details_bg.png"), 136, 180)
 
@@ -626,12 +624,12 @@ class CompanionWindow(ui.Window):
 
 		# Bonus list (SUPPORT_SKILL_AMOUNT_DESC_*), two rows visible with a scrollbar
 		self.bonusDesc = (
-			(0, _T("SUPPORT_SKILL_AMOUNT_DESC_94", "Yak\xfdn d\xf6v\xfc\xfe sald\xfdr\xfdlar\xfdna kar\xfe\xfd diren\xe7: %s"), "%d%%"),
-			(1, _T("SUPPORT_SKILL_AMOUNT_DESC_95", "Yans\xfdyan yak\xfdn d\xf6v\xfc\xfe hasar\xfd: %s"), "%d%%"),
-			(2, _T("SUPPORT_SKILL_AMOUNT_DESC_96", "Kritik Vuru\xfe \xdeans\xfd: %s"), "%d%%"),
-			(3, _T("SUPPORT_SKILL_AMOUNT_DESC_110", "Hareket h\xfdz\xfd: %s"), "%d%%"),
-			(4, _T("SUPPORT_SKILL_AMOUNT_DESC_111", "Sald\xfdr\xfd G\xfcc\xfc: +%s"), "+%d"),
-			(5, _T("SUPPORT_SKILL_AMOUNT_DESC_110_B", "B\xfcy\xfc H\xfdz\xfd: %s"), "%d%%"),
+			(0, localeInfo.SUPPORT_SKILL_AMOUNT_DESC_94, "%d%%"),
+			(1, localeInfo.SUPPORT_SKILL_AMOUNT_DESC_95, "%d%%"),
+			(2, localeInfo.SUPPORT_SKILL_AMOUNT_DESC_96, "%d%%"),
+			(3, localeInfo.SUPPORT_SKILL_AMOUNT_DESC_110, "%d%%"),
+			(4, localeInfo.SUPPORT_SKILL_AMOUNT_DESC_111, "+%d"),
+			(5, localeInfo.SUPPORT_SKILL_AMOUNT_DESC_110_B, "%d%%"),
 		)
 		listWin = ui.Window()
 		listWin.SetParent(win)
@@ -660,7 +658,7 @@ class CompanionWindow(ui.Window):
 		c["bonus_scroll"] = scroll
 
 		# Costume visibility toggles (body / hair / weapon / sash)
-		names = (("V\xfccut", 0), ("Sa\xe7", 1), ("Silah", 2), ("Ku\xfeak", 3))
+		names = ((localeInfo.COMPANION_COSTUME_BODY, 0), (localeInfo.COMPANION_COSTUME_HAIR, 1), (localeInfo.COMPANION_COSTUME_WEAPON, 2), (localeInfo.COMPANION_COSTUME_SASH, 3))
 		c["costume_visibility"] = []
 		hidden = getattr(constInfo, "BUFFI_COSTUME_HIDDEN_STATES", (0, 0, 0, 0))
 		for label, idx in names:
@@ -687,7 +685,7 @@ class CompanionWindow(ui.Window):
 		notb.SetSize(PET_WIDTH - 16, PET_HEIGHT - 104)
 		notb.Hide()
 		c["not_buffi"] = notb
-		c["not_buffi_text"] = self.__Text(notb, _T("BUFFI_NO_SPAWN", "Aktif buffi'niz yok"), (PET_WIDTH - 16) / 2, (PET_HEIGHT - 104) / 2 - 6)
+		c["not_buffi_text"] = self.__Text(notb, localeInfo.BUFFI_NO_SPAWN, (PET_WIDTH - 16) / 2, (PET_HEIGHT - 104) / 2 - 6)
 
 		self.children["buffi"] = c
 		self.__RefreshBonusList()
@@ -829,14 +827,14 @@ class CompanionWindow(ui.Window):
 		remain = self.__GetRemainDuration()
 		if remain < 0:
 			c["duration_full"].SetPercentage(1, 1)
-			c["duration_text"].SetText(_T("BUFFI_DURATION_PERM", "Kal\xfdc\xfd"))
+			c["duration_text"].SetText(localeInfo.BUFFI_DURATION_PERM)
 			return
 		c["duration_full"].SetPercentage(min(remain, BUFFI_DURATION_MAX), BUFFI_DURATION_MAX)
 		c["duration_text"].SetText("%s / 30g (%d%%)" % (_FormatTime(remain), remain * 100 / BUFFI_DURATION_MAX))
 
 	def UpdateBuffiSkill(self):
 		c = self.children["buffi"]
-		c["header_3"].SetText("%s [%d]" % (_T("SUPPORT_TITLE_SKILL", "Beceriler"), self.buffiSkillPts))
+		c["header_3"].SetText("%s [%d]" % (localeInfo.SUPPORT_TITLE_SKILL, self.buffiSkillPts))
 		grid = c["buffi_skill"]
 		for i in xrange(5):
 			level = self.buffiSkillPower[i]
@@ -926,11 +924,11 @@ class CompanionWindow(ui.Window):
 		if not getattr(app, "ENABLE_BUFFI_EVOLUTION", 0):
 			return
 		if not self.buffiSummoned:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "\xd6nce Buffi'nizi \xe7a\xf0\xfdr\xfdn.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.BUFFI_SUMMON_FIRST)
 			return
 		evo = self.buffiInfo[4]
 		if evo >= BUFFI_MAX_EVOLUTION:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "Buffi'niz daha fazla evrimle\xfeemez.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.BUFFI_MAX_EVOLUTION_REACHED)
 			return
 		if not self.evolutionWnd:
 			self.evolutionWnd = BuffiEvolutionWindow(self)
@@ -1005,18 +1003,18 @@ class CompanionWindow(ui.Window):
 		v = self.__GetRuneRemain(slot)
 		if v == 0:
 			return
-		self.__ShowLines(("%s +3 %s" % (_T("ORE_NAME", "cevher"), _T("BUFFI_INT_TABLE_INTELLIGENCE", "Zeka")), _T("BUFFI_DURATION_PERM", "Kal\xfdc\xfd") if v < 0 else _FormatTime(v), _T("BUFFI_ORE_REMOVE_HINT", "\xc7\xfdkarmak i\xe7in t\xfdkla")))
+		self.__ShowLines(("%s +3 %s" % (localeInfo.ORE_NAME, localeInfo.BUFFI_INT_TABLE_INTELLIGENCE), localeInfo.BUFFI_DURATION_PERM if v < 0 else _FormatTime(v), localeInfo.BUFFI_ORE_REMOVE_HINT))
 
 	def __OverInIntInfo(self):
 		# reference: title + two column table (Evrim | Zeka)
 		t = self.toolTip
 		t.ClearToolTip()
 		t.toolTipWidth = 240
-		t.AppendTextLine(_T("BUFFI_INT_TOOLTIP", "Buffi'nin zekas\xfd evrim ge\xe7irdik\xe7e artacakt\xfdr"))
+		t.AppendTextLine(localeInfo.BUFFI_INT_TOOLTIP)
 		t.AppendSpace(4)
-		stages = (_T("BUFFI_INT_STAGE_DEFAULT", "Varsay\xfdlan"), _T("BUFFI_INT_STAGE_1", "Evrim 1 (Seviye 55)"),
-			_T("BUFFI_INT_STAGE_2", "Evrim 2 (Seviye 75)"), _T("BUFFI_INT_STAGE_3", "Evrim 3 (Seviye 90)"))
-		rows = [(_T("BUFFI_INT_TABLE_EVOLUTION", "Evrim"), _T("BUFFI_INT_TABLE_INTELLIGENCE", "Zeka"))]
+		stages = (localeInfo.BUFFI_INT_STAGE_DEFAULT, localeInfo.BUFFI_INT_STAGE_1,
+			localeInfo.BUFFI_INT_STAGE_2, localeInfo.BUFFI_INT_STAGE_3)
+		rows = [(localeInfo.BUFFI_INT_TABLE_EVOLUTION, localeInfo.BUFFI_INT_TABLE_INTELLIGENCE)]
 		for i in xrange(4):
 			rows.append((stages[i], str(BUFFI_INT_STAGES[i])))
 

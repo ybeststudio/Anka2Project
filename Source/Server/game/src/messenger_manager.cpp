@@ -13,6 +13,9 @@
 #include "questmanager.h"
 
 #include "../../common/service.h"
+#ifdef ENABLE_MESSENGER_DETAILS
+#include "messenger_details.h"
+#endif
 
 MessengerManager::MessengerManager()
 {
@@ -913,6 +916,10 @@ void MessengerManager::SendLogin(MessengerManager::keyA account, MessengerManage
 	d->BufferedPacket(&pack, sizeof(TPacketGCMessenger));
 	d->BufferedPacket(&bLen, sizeof(BYTE));
 	d->Packet(companion.c_str(), companion.size());
+
+#ifdef ENABLE_MESSENGER_DETAILS
+	MessengerDetails_OnFriendLogin(account.c_str(), companion.c_str());
+#endif
 }
 
 void MessengerManager::SendLogout(MessengerManager::keyA account, MessengerManager::keyA companion)

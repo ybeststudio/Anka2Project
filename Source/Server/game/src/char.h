@@ -1966,6 +1966,17 @@ class CHARACTER : public CEntity, public CFSM, public CHorseRider
 		TPlayerSkill* m_pSkillLevels;
 		std::unordered_map<BYTE, int> m_SkillDamageBonus;
 		std::map<int, TSkillUseInfo> m_SkillUseInfo;
+#ifdef ENABLE_BONUS_FIX
+		std::unordered_map<WORD, int> m_mapCustomApply;	// APPLY_* without a POINT_* (bonus_custom.cpp)
+
+	public:
+		int GetCustomApply(WORD wApply) const { auto it = m_mapCustomApply.find(wApply); return it == m_mapCustomApply.end() ? 0 : it->second; }
+		void AddCustomApply(WORD wApply, int iVal) { m_mapCustomApply[wApply] += iVal; }
+		void ClearCustomApply() { m_mapCustomApply.clear(); }
+		int GetSkillDamageBonusPct(DWORD dwVnum) const { auto it = m_SkillDamageBonus.find((BYTE) dwVnum); return it == m_SkillDamageBonus.end() ? 0 : it->second; }
+
+	protected:
+#endif
 
 	public:
 		void AssignTriggers(const TMobTable * table);

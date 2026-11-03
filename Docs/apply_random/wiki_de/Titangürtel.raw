@@ -1,0 +1,223 @@
+{{Ausrüstung/Layout
+
+<!-- Typ des Gegenstands [Kette, Armband, Ohrring, Schuhe, Schild, Helm] -->
+|Art = Gürtel
+
+<!-- Benötigtes Level des Gegenstands -->
+|Level = 120
+
+<!-- Gebräuchliche Abkürzung für den Gegenstand -->
+|Abkürzung = 
+
+<!-- Klassen, die den Gegenstand benutzen können, getrennt durch Komma und verlinkt -->
+|Klassen = Krieger, Ninja, Sura, Schamane, Lykaner
+
+<!-- Kaufpreis beim NPC, sofern nicht käuflich bitte frei lassen -->
+|Kaufpreis =
+
+<!-- Jegliche Herkunft des Gegenstands -->
+|Herkunft =
+*'''Metins:''' -
+*'''Monster:''' -
+*'''Truhen:''' [[SungMa-Schatztruhe]]
+*'''Quest:''' [[Der Stoff, aus dem Legenden sind]]
+*'''Sonstiges:''' -
+:*'''Möglichkeit zur Herstellung:'''
+::Aus 30x {{Icon2|Titanplättchen}}, 5x {{Icon2|Schimm. blutrote Perle}}, 5x {{Icon2|Schimm. blaue Perle}}, 5x {{Icon2|Schimm. weiße Perle}}, {{Icon2|Gaya|100 Gaya}} und {{Icon2|Yang|10.000.000 Yang}} bei [[Meister Chi]] herstellbar.
+:* Die Chance auf Erfolg bei der Gegenstandsherstellung beträgt 30%.
+
+<!-- Sonstige Anmerkungen zum Gegenstand -->
+|Sonstiges =
+
+|Kosten1 = 450.000
+|Kosten2 = 530.000
+|Kosten3 = 640.000
+|Kosten4 = 770.000
+|Kosten5 = 920.000
+|Kosten6 = 1.100.000
+|Kosten7 = 1.330.000
+|Kosten8 = 1.600.000
+|Kosten9 = 1.920.000
+
+|Upgradeitem-1-1 = 10x {{icon|Titanplättchen}}
+|Upgradeitem-1-2 = 20x {{icon|Titanplättchen}}
+|Upgradeitem-1-3 = 30x {{icon|Titanplättchen}}
+|Upgradeitem-1-4 = 40x {{icon|Titanplättchen}}
+|Upgradeitem-1-5 = 50x {{icon|Titanplättchen}}
+|Upgradeitem-1-6 = 50x {{icon|Titanplättchen}}
+|Upgradeitem-1-7 = 50x {{icon|Titanplättchen}}
+|Upgradeitem-1-8 = 50x {{icon|Titanplättchen}}
+|Upgradeitem-1-9 = 50x {{icon|Titanplättchen}}
+
+|Upgradeitem-2-5 = 3x {{icon|Festes Seil+}}
+|Upgradeitem-2-6 = 4x {{icon|Festes Seil+}}
+|Upgradeitem-2-7 = 5x {{icon|Festes Seil+}}
+|Upgradeitem-2-8 = 5x {{icon|Festes Seil+}}
+|Upgradeitem-2-9 = 5x {{icon|Festes Seil+}}
+
+|Upgradeitem-3-5 = 3x {{icon|Fester Knoten+}}
+|Upgradeitem-3-6 = 4x {{icon|Fester Knoten+}}
+|Upgradeitem-3-7 = 5x {{icon|Fester Knoten+}}
+|Upgradeitem-3-8 = 5x {{icon|Fester Knoten+}}
+|Upgradeitem-3-9 = 5x {{icon|Fester Knoten+}}
+
+<!-- Name des ersten Bonus, Abkürzung für zweiten Bonus und Werte auf den Stufen -->
+|Bonus1 = Verteidigung
+|Bonus1-Abk = Verteidigung
+|Bonus1-0 = <font color=yellow>15</font>&nbsp;-&nbsp;<font color=orange>19</font>
+|Bonus1-1 = <font color=yellow>17</font>&nbsp;-&nbsp;<font color=orange>21</font>
+|Bonus1-2 = <font color=yellow>19</font>&nbsp;-&nbsp;<font color=orange>23</font>
+|Bonus1-3 = <font color=yellow>23</font>&nbsp;-&nbsp;<font color=orange>27</font>
+|Bonus1-4 = <font color=yellow>27</font>&nbsp;-&nbsp;<font color=orange>31</font>
+|Bonus1-5 = <font color=yellow>31</font>&nbsp;-&nbsp;<font color=orange>35</font>
+|Bonus1-6 = <font color=yellow>35</font>&nbsp;-&nbsp;<font color=orange>39</font>
+|Bonus1-7 = <font color=yellow>39</font>&nbsp;-&nbsp;<font color=orange>43</font>
+|Bonus1-8 = <font color=yellow>45</font>&nbsp;-&nbsp;<font color=orange>49</font>
+|Bonus1-9 = <font color=yellow>55</font>&nbsp;-&nbsp;<font color=orange>59</font>
+
+|Tränkeslots-0 = 2
+|Tränkeslots-1 = 2
+|Tränkeslots-2 = 4
+|Tränkeslots-3 = 6
+|Tränkeslots-4 = 9
+|Tränkeslots-5 = 12
+|Tränkeslots-6 = 16
+|Tränkeslots-7 = 20
+|Tränkeslots-8 = 25
+|Tränkeslots-9 = 30
+
+<!-- Name des einfügbaren Edelsteins -->
+|Edelstein = Rotflammenstein
+
+<!-- Verbesserungen durch eingefügte Edelsteine für Bonus 1 und Slot 1 (+0 bis +9) -->
+|Verb2-1-0 = +1%
+|Verb2-1-1 = +1%
+|Verb2-1-2 = +1%
+|Verb2-1-3 = +1%
+|Verb2-1-4 = +1%
+|Verb2-1-5 = +1%
+|Verb2-1-6 = +1%
+|Verb2-1-7 = +1%
+|Verb2-1-8 = +1%
+|Verb2-1-9 = +1%
+
+<!-- Verbesserungen durch eingefügte Edelsteine für Bonus 1 und Slot 2 (+0 bis +9) -->
+|Verb2-2-0 = +1%
+|Verb2-2-1 = +1%
+|Verb2-2-2 = +1%
+|Verb2-2-3 = +1%
+|Verb2-2-4 = +1%
+|Verb2-2-5 = +1%
+|Verb2-2-6 = +1%
+|Verb2-2-7 = +1%
+|Verb2-2-8 = +1%
+|Verb2-2-9 = +1%
+
+<!-- Verbesserungen durch eingefügte Edelsteine für Bonus 1 und Slot 3 (+0 bis +9) -->
+|Verb2-3-0 = +1%
+|Verb2-3-1 = +1%
+|Verb2-3-2 = +1%
+|Verb2-3-3 = +1%
+|Verb2-3-4 = +1%
+|Verb2-3-5 = +1%
+|Verb2-3-6 = +1%
+|Verb2-3-7 = +1%
+|Verb2-3-8 = +1%
+|Verb2-3-9 = +1%
+
+<!-- Name des zweiten Bonus, Abkürzung für zweiten Bonus und Werte auf den Stufen -->
+|Bonus2 = 1 zufälliger Bonus
+|Bonus2-Abk = Zufälliger Bonus
+|Bonus2-0 = 
+|Bonus2-1 = 
+|Bonus2-2 = 
+|Bonus2-3 = 
+|Bonus2-4 = 
+|Bonus2-5 = 
+|Bonus2-6 = 
+|Bonus2-7 = 
+|Bonus2-8 = 
+|Bonus2-9 = 
+}}
+
+== Mögliche Standard Boni ==
+Folgende Boni können als Zufallsbonus auf dem Gegenstand vorhanden sein:
+<div style="overflow-x: auto;">
+{| width="100%" style="font-size:0.95em; line-height:1em; "
+| valign="top" style="border:1px solid {{Tabellenfarbe/Border}};" |
+<div style="background:{{Tabellenfarbe/Background}}; border-bottom:1px solid {{Tabellenfarbe/Border}}; padding:2px; margin:1px; font-weight:bold; text-align:left; font-size:100%; color: {{Tabellenfarbe/Schrift}};">1. Bonusslot </div>
+
+{|
+!  
+! width="62px" style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"| +0
+! width="62px" style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"| +1
+! width="62px" style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"| +2
+! width="62px" style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"| +3
+! width="62px" style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"| +4
+! width="62px" style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"| +5
+! width="62px" style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"| +6
+! width="62px" style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"| +7
+! width="62px" style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"| +8
+! width="62px" style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"| +9
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"|
+
+'''[[Stark gegen Monster]] :'''
+||1%||1%||1%||2%||2%<br>3%||3%||3%<br>4%||4%<br>5%||5%<br>6%||7%<br>8%
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"|
+
+'''[[Abwehr gegen Krieger|Abwehrchance gegen Kriegerangriffe]] :'''
+||1%||1%||1%<br>2%||2%||2%<br>3%||3%||3%<br>4%||4%<br>5%||5%<br>6%||7%<br>8%
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"|
+
+'''[[Abwehr gegen Ninja|Abwehrchance gegen Ninjaangriffe]] :'''
+||1%||1%||1%<br>2%||2%||2%<br>3%||3%||3%<br>4%||4%<br>5%||5%<br>6%||7%<br>8%
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"|
+
+'''[[Abwehr gegen Schamanen|Abwehrchance gegen Schamanenangriffe]] :'''
+||1%||1%||1%<br>2%||2%||2%<br>3%||3%||3%<br>4%||4%<br>5%||5%<br>6%||7%<br>8%
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"|
+
+'''[[Abwehr gegen Sura|Abwehrchance gegen Suraangriffe]] :'''
+||1%||1%||1%<br>2%||2%||2%<br>3%||3%||3%<br>4%||4%<br>5%||5%<br>6%||7%<br>8%
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"|
+
+'''[[Abwehr gegen Lykaner|Abwehrchance gegen Lykaner]] :'''
+||1%||1%||1%<br>2%||2%||2%<br>3%||3%||3%<br>4%||4%<br>5%||5%<br>6%||7%<br>8%
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"|
+
+'''[[TP|Max. TP]] :'''
+||+100<br>+130||+130<br>+150||+150<br>+180||+150<br>+200||+200<br>+250||+250<br>+300||+300<br>+400||+400<br>+500||+500<br>+1.000||+1.200<br>+1.500
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"|
+
+'''[[MP|Max. MP]] :'''
+||+50<br>+80||+80<br>+100||+100<br>+120||+120<br>+150||+150<br>+180||+180<br>+200||+200<br>+250||+250<br>+300||+300<br>+800||+800<br>+1.200
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"|
+
+'''[[Chance auf EXP-Bonus]] :'''
+||1%||1%||1%<br>2%||2%||2%<br>3%||3%||3%<br>4%||4%<br>5%||5%<br>6%||7%<br>8%
+
+|- align="center"
+|style="font-size:0.95em; line-height:1em; border:1px solid {{Tabellenfarbe/Border}};"|
+
+'''[[Chance, eine doppelte Menge Yang fallen zu lassen|Chance, eine doppelte Menge Yang fallen zu lassen.]] :'''
+||1%||1%||1%<br>2%||2%||2%<br>3%||3%||3%<br>4%||4%<br>5%||5%<br>6%||7%<br>8%
+|}
+|}
+</div>

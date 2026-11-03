@@ -1,6 +1,9 @@
 #include "stdafx.h"
 #include "utils.h"
 #include "config.h"
+#ifdef ENABLE_BONUS_FIX
+#include "bonus_custom.h"
+#endif
 #include "desc.h"
 #include "char.h"
 #include "char_manager.h"
@@ -320,13 +323,21 @@ float CalcAttackRating(const CHARACTER* pkAttacker, const CHARACTER* pkVictim, b
 		const auto attacker_lv = pkAttacker->GetLevel();
 
 		const auto victim_dx = pkVictim->GetPolymorphPoint(POINT_DX);
+#ifdef ENABLE_BONUS_FIX
+		const auto victim_lv = pkVictim->GetLevel();
+#else
 		const auto victim_lv = pkAttacker->GetLevel();
+#endif
 
 		iARSrc = MIN(90, (attacker_dx * 4 + attacker_lv * 2) / 6);
 		iERSrc = MIN(90, (victim_dx * 4 + victim_lv * 2) / 6);
 	}
 
+#ifdef ENABLE_BONUS_FIX
+	const float fAR = static_cast<float>(iARSrc + 210.0f) / 300.0f + BonusCustom::GetHitPct(pkAttacker) / 100.0f; // + "Precision"
+#else
 	const float fAR = static_cast<float>(iARSrc + 210.0f) / 300.0f; // fAR = 0.7 ~ 1.0
+#endif
 
 	if (bIgnoreTargetRating)
 		return fAR;
@@ -361,12 +372,20 @@ int CalcAttBonus(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, int iAtk)
 		iAtk = iAtk * (100 + iReduceDamagePct) / 100;
 	}
 
+#ifdef ENABLE_BONUS_FIX
+	if (pkAttacker->IsNPC() && (pkVictim->IsPC()
+#ifdef ENABLE_BOT_PLAYER
+		|| pkVictim->IsBotCharacter()
+#endif
+		))
+#else
 	if (pkAttacker->IsNPC() && pkVictim->IsPC()
 #ifdef ENABLE_BOT_PLAYER
 		|| pkVictim->IsBotCharacter()
 		// && !pkVictim->IsBotCharacter()
 #endif
 		)
+#endif
 	{
 		iAtk = (iAtk * CHARACTER_MANAGER::instance().GetMobDamageRate(pkAttacker)) / 100;
 	}
@@ -400,16 +419,51 @@ int CalcAttBonus(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, int iAtk)
 			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_DESERT)) / 100;
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_TREE))
 			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_TREE)) / 100;
+#ifdef ENABLE_BONUS_FIX
+
+		if (pkVictim->IsRaceFlag(RACE_FLAG_CZ))
+			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_CZ)) / 100;
+#else
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_CZ))
 			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_CZ)) / 100;
+#endif
 		if (pkVictim->IsMonster())
 			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_MONSTER)) / 100;
+#ifdef ENABLE_BONUS_FIX
+		if (pkVictim->IsRaceFlag(RACE_FLAG_ANIMAL))
+			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_ANIMAL) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_ANIMAL) / 100)) / 100;
+		else if (pkVictim->IsRaceFlag(RACE_FLAG_UNDEAD))
+			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_UNDEAD) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_UNDEAD) / 100)) / 100;
+		else if (pkVictim->IsRaceFlag(RACE_FLAG_DEVIL))
+			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_DEVIL) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_DEVIL) / 100)) / 100;
+		else if (pkVictim->IsRaceFlag(RACE_FLAG_HUMAN))
+			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_HUMAN) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_HUMAN) / 100)) / 100;
+		else if (pkVictim->IsRaceFlag(RACE_FLAG_ORC))
+			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_ORC) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_ORC) / 100)) / 100;
+		else if (pkVictim->IsRaceFlag(RACE_FLAG_MILGYO))
+			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_MILGYO) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_MILGYO) / 100)) / 100;
+		else if (pkVictim->IsRaceFlag(RACE_FLAG_INSECT))
+			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_INSECT) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_INSECT) / 100)) / 100;
+		else if (pkVictim->IsRaceFlag(RACE_FLAG_DESERT))
+			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_DESERT) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_DESERT) / 100)) / 100;
+		if (pkVictim->IsRaceFlag(RACE_FLAG_CZ))
+			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_CZ) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_CZ) / 100)) / 100;
+		if (pkVictim->IsMonster())
+			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_MONSTER) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_MONSTER) / 100)) / 100;
+		if (pkVictim->IsStone())
+			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_STONE) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_STONE) / 100)) / 100;
+#endif
 #ifdef ENABLE_NEW_BONUS_SYSTEM
 		if (pkVictim->IsStone())
 			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_STONE)) / 100;
 		if (pkVictim->GetMobRank() >= MOB_RANK_BOSS)
 			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_BOSS)) / 100;
+#ifdef ENABLE_BONUS_FIX
+		if (pkVictim->IsRaceFlag(RACE_FLAG_ATT_ELEC | RACE_FLAG_ATT_FIRE | RACE_FLAG_ATT_ICE | RACE_FLAG_ATT_WIND | RACE_FLAG_ATT_EARTH | RACE_FLAG_ATT_DARK))
+			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_ELEMENTS)) / 100;
+#else
 		iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_ELEMENTS)) / 100;
+#endif
 #endif
 	}
 	else if (pkVictim->IsPC()
@@ -462,6 +516,14 @@ int CalcAttBonus(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, int iAtk)
 		iAtk -= (iAtk * pkVictim->GetPoint(POINT_ENCHANT_CHARACTERS)) / 150;
 #endif
 
+#ifdef ENABLE_BONUS_FIX
+		if (pkVictim->IsPC()
+#ifdef ENABLE_BOT_PLAYER
+			|| pkVictim->IsBotCharacter()
+#endif
+			)
+			iAtk -= (iAtk * (pkVictim->GetPoint(POINT_RESIST_HUMAN) * (100 + pkVictim->GetPoint(POINT_RESIST_PER_HUMAN)) / 100)) / 100;
+#endif
 		switch (pkAttacker->GetJob())
 		{
 			case JOB_WARRIOR:
@@ -494,29 +556,88 @@ int CalcAttBonus(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, int iAtk)
 	// Resistance is applied to the value corresponding to x%
 	// of the damage caused by a monster's elemental attack.
 
+#ifdef ENABLE_BONUS_FIX
+	if (pkAttacker->IsNPC() && (pkVictim->IsPC()
+#ifdef ENABLE_BOT_PLAYER
+		|| pkVictim->IsBotCharacter()
+#endif
+		))
+#else
 	if (pkAttacker->IsNPC() && pkVictim->IsPC()
 #ifdef ENABLE_BOT_PLAYER
 		|| pkVictim->IsBotCharacter()
 #endif
 		)
+#endif
 	{
 		if (pkAttacker->IsRaceFlag(RACE_FLAG_ATT_ELEC))
+#ifdef ENABLE_BONUS_FIX
+			iAtk -= (iAtk * 30 * (pkVictim->GetPoint(POINT_RESIST_ELEC) * (100 + pkVictim->GetPoint(POINT_RESIST_PER_ELEC)) / 100)) / 10000;
+#else
 			iAtk -= (iAtk * 30 * pkVictim->GetPoint(POINT_RESIST_ELEC)) / 10000;
+#endif
 		else if (pkAttacker->IsRaceFlag(RACE_FLAG_ATT_FIRE))
+#ifdef ENABLE_BONUS_FIX
+			iAtk -= (iAtk * 30 * (pkVictim->GetPoint(POINT_RESIST_FIRE) * (100 + pkVictim->GetPoint(POINT_RESIST_PER_FIRE)) / 100)) / 10000;
+#else
 			iAtk -= (iAtk * 30 * pkVictim->GetPoint(POINT_RESIST_FIRE)) / 10000;
+#endif
 		else if (pkAttacker->IsRaceFlag(RACE_FLAG_ATT_ICE))
+#ifdef ENABLE_BONUS_FIX
+			iAtk -= (iAtk * 30 * (pkVictim->GetPoint(POINT_RESIST_ICE) * (100 + pkVictim->GetPoint(POINT_RESIST_PER_ICE)) / 100)) / 10000;
+#else
 			iAtk -= (iAtk * 30 * pkVictim->GetPoint(POINT_RESIST_ICE)) / 10000;
+#endif
 		else if (pkAttacker->IsRaceFlag(RACE_FLAG_ATT_WIND))
+#ifdef ENABLE_BONUS_FIX
+			iAtk -= (iAtk * 30 * (pkVictim->GetPoint(POINT_RESIST_WIND) * (100 + pkVictim->GetPoint(POINT_RESIST_PER_WIND)) / 100)) / 10000;
+#else
 			iAtk -= (iAtk * 30 * pkVictim->GetPoint(POINT_RESIST_WIND)) / 10000;
+#endif
 		else if (pkAttacker->IsRaceFlag(RACE_FLAG_ATT_EARTH))
+#ifdef ENABLE_BONUS_FIX
+			iAtk -= (iAtk * 30 * (pkVictim->GetPoint(POINT_RESIST_EARTH) * (100 + pkVictim->GetPoint(POINT_RESIST_PER_EARTH)) / 100)) / 10000;
+#else
 			iAtk -= (iAtk * 30 * pkVictim->GetPoint(POINT_RESIST_EARTH)) / 10000;
+#endif
 		else if (pkAttacker->IsRaceFlag(RACE_FLAG_ATT_DARK))
+#ifdef ENABLE_BONUS_FIX
+			iAtk -= (iAtk * 30 * (pkVictim->GetPoint(POINT_RESIST_DARK) * (100 + pkVictim->GetPoint(POINT_RESIST_PER_DARK)) / 100)) / 10000;
+#else
 			iAtk -= (iAtk * 30 * pkVictim->GetPoint(POINT_RESIST_DARK)) / 10000;
+#endif
 #ifdef ENABLE_NEW_BONUS_SYSTEM
 		iAtk -= (iAtk * 30 * pkVictim->GetPoint(POINT_RESIST_MONSTER)) / 10000;
+#ifdef ENABLE_BONUS_FIX
+		if (pkAttacker->IsRaceFlag(RACE_FLAG_ATT_ELEC | RACE_FLAG_ATT_FIRE | RACE_FLAG_ATT_ICE | RACE_FLAG_ATT_WIND | RACE_FLAG_ATT_EARTH | RACE_FLAG_ATT_DARK))
+			iAtk -= (iAtk * 30 * pkVictim->GetPoint(POINT_ENCHANT_ELEMENTS)) / 10000;
+		if (pkAttacker->IsRaceFlag(RACE_FLAG_HUMAN))
+			iAtk -= (iAtk * (pkVictim->GetPoint(POINT_RESIST_HUMAN) * (100 + pkVictim->GetPoint(POINT_RESIST_PER_HUMAN)) / 100)) / 100;
+#endif
 #endif
 	}
 
+#ifdef ENABLE_BONUS_FIX
+	if ((pkAttacker->IsPC()
+#ifdef ENABLE_BOT_PLAYER
+		|| pkAttacker->IsBotCharacter()
+#endif
+		) && pkVictim->IsNPC())
+	{
+		if (pkVictim->IsRaceFlag(RACE_FLAG_ATT_ELEC))
+			iAtk += (iAtk * 30 * (pkAttacker->GetPoint(POINT_ENCHANT_ELECT) * (100 + pkAttacker->GetPoint(POINT_ENCHANT_PER_ELECT)) / 100)) / 10000;
+		else if (pkVictim->IsRaceFlag(RACE_FLAG_ATT_FIRE))
+			iAtk += (iAtk * 30 * (pkAttacker->GetPoint(POINT_ENCHANT_FIRE) * (100 + pkAttacker->GetPoint(POINT_ENCHANT_PER_FIRE)) / 100)) / 10000;
+		else if (pkVictim->IsRaceFlag(RACE_FLAG_ATT_ICE))
+			iAtk += (iAtk * 30 * (pkAttacker->GetPoint(POINT_ENCHANT_ICE) * (100 + pkAttacker->GetPoint(POINT_ENCHANT_PER_ICE)) / 100)) / 10000;
+		else if (pkVictim->IsRaceFlag(RACE_FLAG_ATT_WIND))
+			iAtk += (iAtk * 30 * (pkAttacker->GetPoint(POINT_ENCHANT_WIND) * (100 + pkAttacker->GetPoint(POINT_ENCHANT_PER_WIND)) / 100)) / 10000;
+		else if (pkVictim->IsRaceFlag(RACE_FLAG_ATT_EARTH))
+			iAtk += (iAtk * 30 * (pkAttacker->GetPoint(POINT_ENCHANT_EARTH) * (100 + pkAttacker->GetPoint(POINT_ENCHANT_PER_EARTH)) / 100)) / 10000;
+		else if (pkVictim->IsRaceFlag(RACE_FLAG_ATT_DARK))
+			iAtk += (iAtk * 30 * (pkAttacker->GetPoint(POINT_ENCHANT_DARK) * (100 + pkAttacker->GetPoint(POINT_ENCHANT_PER_DARK)) / 100)) / 10000;
+	}
+#else
 	if (pkAttacker->IsNPC() && pkVictim->IsPC())
 	{
 		if (pkVictim->IsRaceFlag(RACE_FLAG_ATT_ELEC))
@@ -532,7 +653,11 @@ int CalcAttBonus(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, int iAtk)
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_ATT_DARK))
 			iAtk += (iAtk * 30 * pkAttacker->GetPoint(POINT_ENCHANT_DARK)) / 10000;
 	}
+#endif
 
+#ifdef ENABLE_BONUS_FIX
+	iAtk += (iAtk * BonusCustom::GetAttBonusPct(pkAttacker, pkVictim)) / 100;
+#endif
 	return iAtk;
 }
 
@@ -815,7 +940,11 @@ int CalcArrowDamage(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, LPITEM pkBow, 
 	int iDef = 0;
 
 	if (!bIgnoreDefense)
+#ifdef ENABLE_BONUS_FIX
+		iDef = (pkVictim->GetPoint(POINT_DEF_GRADE) * (100 + pkVictim->GetPoint(POINT_DEF_BONUS)) / 100);
+#else
 		iDef = (pkVictim->GetPoint(POINT_DEF_GRADE) * (100 + pkAttacker->GetPoint(POINT_DEF_BONUS)) / 100);
+#endif
 
 	if (pkAttacker->IsNPC())
 		iAtk = static_cast<int>(iAtk * pkAttacker->GetMobDamageMultiply());
@@ -866,12 +995,21 @@ void NormalAttackAffect(LPCHARACTER pkAttacker, LPCHARACTER pkVictim)
 
 
 	int iStunDuration = 2;
+#ifdef ENABLE_BONUS_FIX
+	if ((pkAttacker->IsPC()
+#ifdef ENABLE_BOT_PLAYER
+		|| pkAttacker->IsBotCharacter()
+#endif
+		) && !pkVictim->IsPC())
+		iStunDuration = 4;
+#else
 	if (pkAttacker->IsPC()
 #ifdef ENABLE_BOT_PLAYER
 		|| pkAttacker->IsBotCharacter()
 #endif
 		&& !pkVictim->IsPC())
 		iStunDuration = 4;
+#endif
 
 	AttackAffect(pkAttacker, pkVictim, POINT_STUN_PCT, IMMUNE_STUN, AFFECT_STUN, POINT_NONE, 0, AFF_STUN, iStunDuration, "STUN");
 	AttackAffect(pkAttacker, pkVictim, POINT_SLOW_PCT, IMMUNE_SLOW, AFFECT_SLOW, POINT_MOV_SPEED, -30, AFF_SLOW, 20, "SLOW");
@@ -900,27 +1038,51 @@ int battle_hit(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, int& iRetDam)
 		{
 #ifdef ENABLE_NEW_BONUS_SYSTEM
 			case WEAPON_SWORD:
+#ifdef ENABLE_BONUS_FIX
+				iDam = iDam * (100 - (pkVictim->GetPoint(POINT_RESIST_SWORD) - pkAttacker->GetPoint(POINT_ATTBONUS_SWORD))) / 100;
+#else
 				iDam = iDam * (100 - (pkVictim->GetPoint(POINT_RESIST_SWORD) - pkVictim->GetPoint(POINT_ATTBONUS_SWORD))) / 100;
+#endif
 				break;
 
 			case WEAPON_TWO_HANDED:
+#ifdef ENABLE_BONUS_FIX
+				iDam = iDam * (100 - (pkVictim->GetPoint(POINT_RESIST_TWOHAND) - pkAttacker->GetPoint(POINT_ATTBONUS_TWOHAND))) / 100;
+#else
 				iDam = iDam * (100 - (pkVictim->GetPoint(POINT_RESIST_TWOHAND) - pkVictim->GetPoint(POINT_ATTBONUS_TWOHAND))) / 100;
+#endif
 				break;
 
 			case WEAPON_DAGGER:
+#ifdef ENABLE_BONUS_FIX
+				iDam = iDam * (100 - (pkVictim->GetPoint(POINT_RESIST_DAGGER) - pkAttacker->GetPoint(POINT_ATTBONUS_DAGGER))) / 100;
+#else
 				iDam = iDam * (100 - (pkVictim->GetPoint(POINT_RESIST_DAGGER) - pkVictim->GetPoint(POINT_ATTBONUS_DAGGER))) / 100;
+#endif
 				break;
 
 			case WEAPON_BELL:
+#ifdef ENABLE_BONUS_FIX
+				iDam = iDam * (100 - (pkVictim->GetPoint(POINT_RESIST_BELL) - pkAttacker->GetPoint(POINT_ATTBONUS_BELL))) / 100;
+#else
 				iDam = iDam * (100 - (pkVictim->GetPoint(POINT_RESIST_BELL) - pkVictim->GetPoint(POINT_ATTBONUS_BELL))) / 100;
+#endif
 				break;
 
 			case WEAPON_FAN:
+#ifdef ENABLE_BONUS_FIX
+				iDam = iDam * (100 - (pkVictim->GetPoint(POINT_RESIST_FAN) - pkAttacker->GetPoint(POINT_ATTBONUS_FAN))) / 100;
+#else
 				iDam = iDam * (100 - (pkVictim->GetPoint(POINT_RESIST_FAN) - pkVictim->GetPoint(POINT_ATTBONUS_FAN))) / 100;
+#endif
 				break;
 
 			case WEAPON_BOW:
+#ifdef ENABLE_BONUS_FIX
+				iDam = iDam * (100 - (pkVictim->GetPoint(POINT_RESIST_BOW) - pkAttacker->GetPoint(POINT_ATTBONUS_BOW))) / 100;
+#else
 				iDam = iDam * (100 - (pkVictim->GetPoint(POINT_RESIST_BOW) - pkVictim->GetPoint(POINT_ATTBONUS_BOW))) / 100;
+#endif
 				break;
 #ifdef ENABLE_WOLFMAN_CHARACTER
 			case WEAPON_CLAW:

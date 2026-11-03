@@ -1,0 +1,190 @@
+{{Weapon/LayoutV2
+
+<!-- Type of weapon ; accepted values: sword, sura-sword, 2handed, dagger, bow, bell, fan, claw -->
+|Type = dagger
+
+<!-- Level of weapon - accepted values: Level or level interval in ## - ## format -->
+|Level = 
+|ChampLevel = 6
+
+<!-- Classes that can use this weapon accepted values are warrior ; ninja ; shaman ; sura ; lycan ; 3 (for warrior ninja and sura) ; leave blank for all classes-->
+|wearable = ninja
+
+<!-- number of sockets for spirit stones - numeric value only -->
+|Sockets = 3
+
+<!-- Powershard used to add 6/7 bonus -->
+|Powershard = {{Ti|Moonshimmer Fragment}}
+
+<!-- Origin of weapon (remove whatever is not used) -->
+|Origin =
+<ul>
+*'''[[NPC]]:''' {{Tm|Master Chi}} (Crafted):
+:*{{Ti|Moonlight Lunatic Shard}} 8x
+:*{{Ti|Prayer of Exorcism}}
+:*{{Ti|Moonlight Gemstone}}
+:*{{Ti|Cobalt}} 10x
+:*{{Ti|Dark Weapon Fragment}} 5x
+:*{{Ti|Gaya|300 Gaya}}
+:*{{Ti|Yang|20.000.000 Yang}}
+</ul>
+
+
+<!-- Other information -->
+|Other = The crafting method has a 50% success. See also: [[Item Refinement]]
+<br>
+*Up to 3 default bonuses are added, marked with a <span style="color:#3400FF">blue color</span>
+*All default bonuses and values are randomized chosen by system
+*Below you'll find a table with all possible bonuses as well as the min-max values
+*When changing the 1-5 bonuses, it is possible to have the same bonus as default
+
+<!-- Maximum upgrade level (only required beyond +9) -->
+|MaxUpgrade = 15
+
+<!-- Upgrade yang costs - numeric value only (no yang tag) ; blank if no costs -->
+|Costs0 = 
+|Costs1 = 1.125.000
+|Costs2 = 1.350.000
+|Costs3 = 1.620.000
+|Costs4 = 1.950.000
+|Costs5 = 2.325.000
+|Costs6 = 2.775.000
+|Costs7 = 3.375.000
+|Costs8 = 3.975.000
+|Costs9 = 4.800.000
+|Costs10 = 5.775.000
+|Costs11 = 6.900.000
+|Costs12 = 8.325.000
+|Costs13 = 9.975.000
+|Costs14 = 12.000.000
+|Costs15 = 14.400.000
+
+<!-- 1st Upgrade Items -->
+|1stUpgitem0 = 
+|1stUpgitem1 = 10x [[File:Hungering Soul.png|link=Hungering Soul]]
+|1stUpgitem2 = 10x [[File:Hungering Soul.png|link=Hungering Soul]]
+|1stUpgitem3 = 10x [[File:Hungering Soul.png|link=Hungering Soul]]
+|1stUpgitem4 = 10x [[File:Hungering Soul.png|link=Hungering Soul]]
+|1stUpgitem5 = 10x [[File:Hungering Soul.png|link=Hungering Soul]]
+|1stUpgitem6 = 10x [[File:Hungering Soul.png|link=Hungering Soul]]
+|1stUpgitem7 = 30x [[File:Warrior's Helm Fragment.png|link=Warrior's Helm Fragment]]
+|1stUpgitem8 = 40x [[File:Warrior's Helm Fragment.png|link=Warrior's Helm Fragment]]
+|1stUpgitem9 = 50x [[File:Warrior's Helm Fragment.png|link=Warrior's Helm Fragment]]
+|1stUpgitem10 = 50x [[File:Lunatic Shard.png|link=Lunatic Shard]]
+|1stUpgitem11 = 60x [[File:Lunatic Shard.png|link=Lunatic Shard]]
+|1stUpgitem12 = 70x [[File:Lunatic Shard.png|link=Lunatic Shard]]
+|1stUpgitem13 = 80x [[File:Lunatic Shard.png|link=Lunatic Shard]]
+|1stUpgitem14 = 90x [[File:Lunatic Shard.png|link=Lunatic Shard]]
+|1stUpgitem15 = 100x [[File:Lunatic Shard.png|link=Lunatic Shard]]
+
+<!-- 2nd Upgrade Items -->
+|2ndUpgitem0 = 
+|2ndUpgitem1 = 5x [[File:Moonshine Chest.png|link=Moonshine Chest]]
+|2ndUpgitem2 = 5x [[File:Moonshine Chest.png|link=Moonshine Chest]]
+|2ndUpgitem3 = 5x [[File:Thorn Bowl.png|link=Thorn Bowl]]
+|2ndUpgitem4 = 10x [[File:Thorn Bowl.png|link=Thorn Bowl]]
+|2ndUpgitem5 = 15x [[File:Thorn Bowl.png|link=Thorn Bowl]]
+|2ndUpgitem6 = 5x [[File:Cobalt.png|link=Cobalt]]
+|2ndUpgitem7 = 5x [[File:Blackhorn.png|link=Blackhorn]]
+|2ndUpgitem8 = 7x [[File:Blackhorn.png|link=Blackhorn]]
+|2ndUpgitem9 = 10x [[File:Blackhorn.png|link=Blackhorn]]
+|2ndUpgitem10 = 5x [[File:Agate.png|link=Agate]]
+|2ndUpgitem11 = 5x [[File:Titanium Dioxide.png|link=Titanium Dioxide]]
+|2ndUpgitem12 = 5x [[File:Moonstone.png|link=Moonstone]]
+|2ndUpgitem13 = 10x [[File:Agate.png|link=Agate]]
+|2ndUpgitem14 = 5x [[File:Titanium Dioxide.png|link=Titanium Dioxide]]
+|2ndUpgitem15 = 5x [[File:Moonstone.png|link=Moonstone]]
+
+<!-- 3rd Upgrade Items -->
+|3rdUpgitem0 = 
+|3rdUpgitem1 = 
+|3rdUpgitem2 = 5x [[File:Shim. Blood-Red Pearl.png|link=Shim. Blood-Red Pearl]]
+|3rdUpgitem3 = 5x [[File:Shimmering Blue Pearl.png|link=Shimmering Blue Pearl]]
+|3rdUpgitem4 = 3x [[File:Shimmering White Pearl.png|link=Shimmering White Pearl]]
+|3rdUpgitem5 = 2x [[File:Cursed Hair.png|link=Cursed Hair]]
+|3rdUpgitem6 = 2x [[File:Cursed Hair.png|link=Cursed Hair]]
+|3rdUpgitem7 = 2x [[File:Cursed Chain.png|link=Cursed Chain]]
+|3rdUpgitem8 = 3x [[File:Cursed Chain.png|link=Cursed Chain]]
+|3rdUpgitem9 = 3x [[File:Cursed Chain.png|link=Cursed Chain]]
+|3rdUpgitem10 = 1x [[File:Aamon's Lavish Chest.png|link=Aamon's Lavish Chest]]
+|3rdUpgitem11 = 1x [[File:Aamon's Lavish Chest.png|link=Aamon's Lavish Chest]]
+|3rdUpgitem12 = 1x [[File:Aamon's Lavish Chest.png|link=Aamon's Lavish Chest]]
+|3rdUpgitem13 = 1x [[File:Aamon's Lavish Chest.png|link=Aamon's Lavish Chest]]
+|3rdUpgitem14 = 2x [[File:Aamon's Lavish Chest.png|link=Aamon's Lavish Chest]]
+|3rdUpgitem15 = 3x [[File:Aamon's Lavish Chest.png|link=Aamon's Lavish Chest]]
+
+<!-- Attack Value -->
+|AVMinLow0 = 177
+|AVMinLow1 = 206
+|AVMinLow2 = 214
+|AVMinLow3 = 231
+|AVMinLow4 = 248
+|AVMinLow5 = 281
+|AVMinLow6 = 330
+|AVMinLow7 = 400
+|AVMinLow8 = 488
+|AVMinLow9 = 661
+|AVMinLow10 = 715
+|AVMinLow11 = 740
+|AVMinLow12 = 764
+|AVMinLow13 = 789
+|AVMinLow14 = 814
+|AVMinLow15 = 858
+
+|AVMinHigh0 = 201
+|AVMinHigh1 = 229
+|AVMinHigh2 = 238
+|AVMinHigh3 = 255
+|AVMinHigh4 = 272
+|AVMinHigh5 = 305
+|AVMinHigh6 = 354
+|AVMinHigh7 = 424
+|AVMinHigh8 = 512
+|AVMinHigh9 = 685
+|AVMinHigh10 = 739
+|AVMinHigh11 = 764
+|AVMinHigh12 = 788
+|AVMinHigh13 = 813
+|AVMinHigh14 = 838
+|AVMinHigh15 = 882
+
+|AVMaxLow0 = 220
+|AVMaxLow1 = 248
+|AVMaxLow2 = 257
+|AVMaxLow3 = 274
+|AVMaxLow4 = 291
+|AVMaxLow5 = 324
+|AVMaxLow6 = 373
+|AVMaxLow7 = 443
+|AVMaxLow8 = 531
+|AVMaxLow9 = 704
+|AVMaxLow10 = 758
+|AVMaxLow11 = 783
+|AVMaxLow12 = 807
+|AVMaxLow13 = 832
+|AVMaxLow14 = 857
+|AVMaxLow15 = 901
+
+|AVMaxHigh0 = 241
+|AVMaxHigh1 = 269
+|AVMaxHigh2 = 278
+|AVMaxHigh3 = 295
+|AVMaxHigh4 = 312
+|AVMaxHigh5 = 345
+|AVMaxHigh6 = 394
+|AVMaxHigh7 = 464
+|AVMaxHigh8 = 552
+|AVMaxHigh9 = 725
+|AVMaxHigh10 = 779
+|AVMaxHigh11 = 804
+|AVMaxHigh12 = 828
+|AVMaxHigh13 = 853
+|AVMaxHigh14 = 878
+|AVMaxHigh15 = 922
+
+}}
+
+[[de:Mondschein-Dolch]]
+[[fr:Dague du clair de lune]]
+[[pt:Adaga do Luar]]
+[[tr:Ay Işığı Hançeri]]

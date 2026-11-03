@@ -8,6 +8,45 @@
 
 #include "../../common/service.h"
 
+#ifdef ENABLE_BRAVE_CAPE_RENEWAL
+ACMD(do_brave_cape);
+#endif
+#ifdef ENABLE_ANKA2_GLOBAL_CHAT
+ACMD(do_anka_global);
+#endif
+#ifdef ENABLE_WHISPER_GUILD_INVITE
+ACMD(do_anka_guild_invite);
+#endif
+#ifdef ENABLE_WHISPER_PLAYER_INFO
+ACMD(do_anka_whisper_info);
+#endif
+#ifdef ENABLE_WHISPER_OFFLINE_MESSAGE
+ACMD(do_anka_offline_msg);
+#endif
+#if defined(ENABLE_WHISPER_OPEN_SHOP) && defined(ENABLE_RENEWAL_OFFLINESHOP)
+ACMD(do_anka_open_shop);
+#endif
+#ifdef ENABLE_GUILD_APPLICATION
+ACMD(do_guild_app);
+#ifdef ENABLE_GUILD_SHOP
+ACMD(do_guild_shop);
+#endif
+#ifdef ENABLE_GUILD_SKILL_TREE
+ACMD(do_guild_skill);
+#endif
+#ifdef ENABLE_GUILD_QUEST
+ACMD(do_guild_quest);
+ACMD(do_guild_quest_reward);
+#endif
+#ifdef ENABLE_GUILD_DONATION
+ACMD(do_guild_donate);
+ACMD(do_guild_donation_info);
+ACMD(do_guild_whisper);
+#endif
+#endif
+#ifdef ENABLE_CHARACTER_STATS
+ACMD(do_character_stats);
+#endif
 #ifdef ENABLE_AUTO_CAPE_SYSTEM
 ACMD(do_auto_cape);
 #endif
@@ -453,6 +492,45 @@ ACMD(do_ranking_subcategory);
 struct command_info cmd_info[] =
 {
 	{ "!RESERVED!",						NULL,							0,						POS_DEAD,			GM_IMPLEMENTOR	},
+#ifdef ENABLE_BRAVE_CAPE_RENEWAL
+	{ "brave_cape", do_brave_cape, 0, POS_DEAD, GM_PLAYER },
+#endif
+#ifdef ENABLE_ANKA2_GLOBAL_CHAT
+	{ "anka_global", do_anka_global, 0, POS_DEAD, GM_PLAYER },
+#endif
+#ifdef ENABLE_WHISPER_GUILD_INVITE
+	{ "anka_guild_invite", do_anka_guild_invite, 0, POS_DEAD, GM_PLAYER },
+#endif
+#ifdef ENABLE_WHISPER_PLAYER_INFO
+	{ "anka_whisper_info", do_anka_whisper_info, 0, POS_DEAD, GM_PLAYER },
+#endif
+#ifdef ENABLE_WHISPER_OFFLINE_MESSAGE
+	{ "anka_offline_msg", do_anka_offline_msg, 0, POS_DEAD, GM_PLAYER },
+#endif
+#if defined(ENABLE_WHISPER_OPEN_SHOP) && defined(ENABLE_RENEWAL_OFFLINESHOP)
+	{ "anka_open_shop", do_anka_open_shop, 0, POS_DEAD, GM_PLAYER },
+#endif
+#ifdef ENABLE_GUILD_APPLICATION
+	{ "guild_app", do_guild_app, 0, POS_DEAD, GM_PLAYER },
+#ifdef ENABLE_GUILD_SHOP
+	{ "guild_shop", do_guild_shop, 0, POS_DEAD, GM_PLAYER },
+#endif
+#ifdef ENABLE_GUILD_SKILL_TREE
+	{ "guild_skill", do_guild_skill, 0, POS_DEAD, GM_PLAYER },
+#endif
+#ifdef ENABLE_GUILD_QUEST
+	{ "guild_quest", do_guild_quest, 0, POS_DEAD, GM_PLAYER },
+	{ "get_guild_quest_reward", do_guild_quest_reward, 0, POS_DEAD, GM_PLAYER },
+#endif
+#ifdef ENABLE_GUILD_DONATION
+	{ "donate_to_guild", do_guild_donate, 0, POS_DEAD, GM_PLAYER },
+	{ "guild_donation_info", do_guild_donation_info, 0, POS_DEAD, GM_PLAYER },
+	{ "guild_whisper", do_guild_whisper, 0, POS_DEAD, GM_PLAYER },
+#endif
+#endif
+#ifdef ENABLE_CHARACTER_STATS
+	{ "character_stats", do_character_stats, 0, POS_DEAD, GM_PLAYER },
+#endif
 #ifdef ENABLE_AUTO_CAPE_SYSTEM
 	{ "auto_cape", do_auto_cape, 0, POS_DEAD, GM_PLAYER },
 #endif

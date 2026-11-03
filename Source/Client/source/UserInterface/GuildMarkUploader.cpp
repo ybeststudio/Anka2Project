@@ -1,9 +1,18 @@
 #include "StdAfx.h"
 #include "GuildMarkUploader.h"
 #include "Packet.h"
+#ifdef ENABLE_GUILD_MARK_PNG
+#include <wincodec.h>
+#include <wrl/client.h>
+#pragma comment(lib, "windowscodecs.lib")
+using Microsoft::WRL::ComPtr;
+#endif
 
 CGuildMarkUploader::CGuildMarkUploader()
  : m_pbySymbolBuf(nullptr)
+#ifdef ENABLE_GUILD_MARK_PNG
+ , m_isMarkSent(false)
+#endif
 {
 	SetRecvBufferSize(1024);
 	SetSendBufferSize(1024);
@@ -30,8 +39,65 @@ bool CGuildMarkUploader::__Save(const char *c_szFileName)
 	return true;
 }
 
+#ifdef ENABLE_GUILD_MARK_PNG
+// DevIL is built with IL_NO_PNG: WIC decodes the file instead
+bool CGuildMarkUploader::__LoadPng(const char *c_szFileName, UINT* peError)
+{
+	*peError=ERROR_LOAD;
+
+	WCHAR wszFileName[MAX_PATH];
+	if (!MultiByteToWideChar(CP_ACP, 0, c_szFileName, -1, wszFileName, MAX_PATH))
+		return false;
+
+	ComPtr<IWICImagingFactory> pkFactory;
+	HRESULT hr = CoCreateInstance(CLSID_WICImagingFactory, NULL, CLSCTX_INPROC_SERVER, IID_PPV_ARGS(&pkFactory));
+	if (CO_E_NOTINITIALIZED == hr)
+	{
+		CoInitialize(NULL);
+		hr = CoCreateInstance(CLSID_WICImagingFactory, NULL, CLSCTX_INPROC_SERVER, IID_PPV_ARGS(&pkFactory));
+	}
+	if (FAILED(hr))
+		return false;
+
+	ComPtr<IWICBitmapDecoder> pkDecoder;
+	ComPtr<IWICBitmapFrameDecode> pkFrame;
+	UINT uWidth, uHeight;
+	if (FAILED(pkFactory->CreateDecoderFromFilename(wszFileName, NULL, GENERIC_READ, WICDecodeMetadataCacheOnDemand, &pkDecoder))
+		|| FAILED(pkDecoder->GetFrame(0, &pkFrame))
+		|| FAILED(pkFrame->GetSize(&uWidth, &uHeight)))
+		return false;
+
+	if (uWidth!=SGuildMark::WIDTH)
+	{
+		*peError=ERROR_WIDTH;
+		return false;
+	}
+
+	if (uHeight!=SGuildMark::HEIGHT)
+	{
+		*peError=ERROR_HEIGHT;
+		return false;
+	}
+
+	ComPtr<IWICFormatConverter> pkConverter;
+	if (FAILED(pkFactory->CreateFormatConverter(&pkConverter))
+		|| FAILED(pkConverter->Initialize(pkFrame.Get(), GUID_WICPixelFormat32bppBGRA, WICBitmapDitherTypeNone, NULL, 0.0, WICBitmapPaletteTypeCustom))
+		|| FAILED(pkConverter->CopyPixels(NULL, SGuildMark::WIDTH * 4, sizeof(m_kMark.m_apxBuf), (BYTE*)m_kMark.m_apxBuf)))
+		return false;
+
+	return true;
+}
+#endif
+
 bool CGuildMarkUploader::__Load(const char *c_szFileName, UINT* peError)
 {
+#ifdef ENABLE_GUILD_MARK_PNG
+	// DevIL here reads neither png nor jpg: WIC decodes everything but tga
+	const char* c_szExt = strrchr(c_szFileName, '.');
+	if (!c_szExt || 0 != _stricmp(c_szExt, ".tga"))
+		return __LoadPng(c_szFileName, peError);
+#endif
+
 	ILuint uImg;
 	ilGenImages(1, &uImg);
 	ilBindImage(uImg);
@@ -114,6 +180,14 @@ bool CGuildMarkUploader::Connect(const CNetworkAddress& c_rkNetAddr, DWORD dwHan
 	SetRecvBufferSize(1024);
 	SetSendBufferSize(1024);
 
+#ifdef ENABLE_GUILD_MARK_PNG
+	m_isMarkSent = false;
+
+	// an open connection sends the mark buffer: an empty one makes the server delete the mark
+	if (!__Load(c_szFileName, peError))
+		return false;
+#endif
+
 	if (!CNetworkStream::Connect(c_rkNetAddr))
 	{
 		*peError = ERROR_CONNECT;
@@ -125,8 +199,10 @@ bool CGuildMarkUploader::Connect(const CNetworkAddress& c_rkNetAddr, DWORD dwHan
 	m_dwRandomKey = dwRandomKey;
 	m_dwGuildID = dwGuildID;
 
+#ifndef ENABLE_GUILD_MARK_PNG
 	if (!__Load(c_szFileName, peError))
 		return false;
+#endif
 
 	return true;
 }
@@ -257,6 +333,12 @@ bool CGuildMarkUploader::__SendMarkPacket()
 
 	if (!Send(sizeof(kPacketMarkUpload), &kPacketMarkUpload))
 		return false;
+
+#ifdef ENABLE_GUILD_MARK_PNG
+	// flush now so the download that follows finds the mark already saved
+	CNetworkStream::__SendInternalBuffer();
+	m_isMarkSent = true;
+#endif
 
 	return true;
 }

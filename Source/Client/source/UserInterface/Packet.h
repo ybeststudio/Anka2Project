@@ -1801,6 +1801,9 @@ typedef struct packet_char_additional_info
 #ifdef ENABLE_GROWTH_PET_SYSTEM
 	BYTE bCharacterSize;
 #endif
+#ifdef ENABLE_SHINING_SYSTEM
+	DWORD adwShining[2];	// WEAR_SHINING_WEAPON, WEAR_SHINING_ARMOR
+#endif
 } TPacketGCCharacterAdditionalInfo;
 
 typedef struct packet_add_char
@@ -1887,6 +1890,9 @@ typedef struct packet_update_char
 #endif
 #ifdef ENABLE_GUILD_LEADER_TEXTAIL
 	BYTE dwGuildLeader;
+#endif
+#ifdef ENABLE_SHINING_SYSTEM
+	DWORD adwShining[2];
 #endif
 } TPacketGCCharacterUpdate;
 
@@ -2462,6 +2468,9 @@ typedef struct packet_set_item2
 #ifdef ENABLE_SEALBIND_SYSTEM
 	long sealbind;
 #endif
+#ifdef ENABLE_APPLY_RANDOM
+	TPlayerItemAttribute aApplyRandom[3];
+#endif
 } TPacketGCItemSet2;
 
 typedef struct packet_item_del
@@ -2503,6 +2512,9 @@ typedef struct packet_update_item
 #endif
 #ifdef ENABLE_SEALBIND_SYSTEM
 	long sealbind;
+#endif
+#ifdef ENABLE_APPLY_RANDOM
+	TPlayerItemAttribute aApplyRandom[3];
 #endif
 } TPacketGCItemUpdate;
 
@@ -3041,10 +3053,16 @@ enum
 #endif
 };
 
+#ifdef ENABLE_GUILD_GRADE_RENEWAL
+typedef WORD TGuildAuthFlag;
+#else
+typedef BYTE TGuildAuthFlag;
+#endif
+
 typedef struct packet_guild_sub_grade
 {
 	char grade_name[GUILD_GRADE_NAME_MAX_LEN+1];
-	BYTE auth_flag;
+	TGuildAuthFlag auth_flag;
 } TPacketGCGuildSubGrade;
 
 typedef struct packet_guild_sub_member
@@ -3533,6 +3551,9 @@ typedef struct packet_affect_add
 {
 	BYTE bHeader;
 	TPacketAffectElement elem;
+#ifdef ENABLE_AFFECT_CAST_STAT
+	int32_t lCastStat;
+#endif
 } TPacketGCAffectAdd;
 
 typedef struct packet_affect_remove

@@ -19,6 +19,10 @@ import guild
 
 import ui
 import uiWhisper
+if app.ENABLE_WHISPER_MESSENGER:
+	import uiWhisperMessenger
+if app.ENABLE_GUILD_APPLICATION:
+	import uiGuildApplication
 import uiPointReset
 import uiShop
 import uiExchange
@@ -107,6 +111,7 @@ if app.ENABLE_GROWTH_PET_SYSTEM:
 	import uiPetInfo
 import uiCompanion
 import uiSkillUpgrade
+import uiAutoCape
 
 if app.ENABLE_RENEWAL_TELEPORT_SYSTEM:
 	import uiTeleport
@@ -248,6 +253,7 @@ class Interface(object):
 		self.wndExpandedTaskBar = None
 		self.wndCompanion = None
 		self.wndSkillUpgrade = None
+		self.wndBraveCape = None
 		self.wndChat = None
 		self.wndMessenger = None
 		self.wndMiniMap = None
@@ -384,14 +390,22 @@ class Interface(object):
 			self.wndExpandedMoney = uiTaskBar.ExpandedMoneyTaskBar()
 	
 	def __MakeMessengerWindow(self):
-		self.wndMessenger = uiMessenger.MessengerWindow()
+		if app.ENABLE_MESSENGER_DETAILS:
+			import uiMessengerRenewal
+			self.wndMessenger = uiMessengerRenewal.MessengerWindow()
+		else:
+			self.wndMessenger = uiMessenger.MessengerWindow()
 
 		from _weakref import proxy
 		self.wndMessenger.SetWhisperButtonEvent(lambda n,i=proxy(self):i.OpenWhisperDialog(n))
 		self.wndMessenger.SetGuildButtonEvent(ui.__mem_func__(self.ToggleGuildWindow))
 
 	def __MakeGuildWindow(self):
-		self.wndGuild = uiGuild.GuildWindow()
+		if app.ENABLE_GUILD_RENEWAL_BAERIM:
+			import uiGuildRenewal
+			self.wndGuild = uiGuildRenewal.GuildWindow()
+		else:
+			self.wndGuild = uiGuild.GuildWindow()
 
 	def __MakeChatWindow(self):
 		wndChat = uiChat.ChatWindow()
@@ -500,6 +514,43 @@ class Interface(object):
 			self.dlgRefineNew.CheckRefine(isFail)
 
 	def __MakeWindows(self):
+		if app.ENABLE_WHISPER_MESSENGER:
+			# a failure here must not stop the rest of the windows from being made
+			try:
+				self.wndWhisperMessenger = uiWhisperMessenger.WhisperMessenger()
+				self.wndWhisperMessenger.BindInterface(self)
+				self.wndWhisperMessenger.Hide()
+				self.wndMessengerButton = uiWhisper.WhisperButton()
+				self.wndMessengerButton.SetUpVisual("d:/ymir work/ui/game/whisper/mp_close.png")
+				self.wndMessengerButton.SetOverVisual("d:/ymir work/ui/game/whisper/mp_open.png")
+				self.wndMessengerButton.SetDownVisual("d:/ymir work/ui/game/whisper/mp_open.png")
+				self.wndMessengerButton.SetToolTipText("[MESSENGER]")
+				self.wndMessengerButton.ToolTipText.SetHorizontalAlignCenter()
+				self.wndMessengerButton.SetEvent(ui.__mem_func__(self.__OnClickMessengerButton))
+				self.messengerQuickCloseTip = uiToolTip.ToolTip()
+				self.messengerQuickCloseTip.AutoAppendTextLine(localeInfo.WHISPER_TOOLTIP_CLOSE_SHORTCUT)
+				self.messengerQuickCloseTip.AlignHorizonalCenter()
+				self.messengerQuickCloseTip.Hide()
+				self.wndMessengerButton.SetHoverEvent(ui.__mem_func__(self.ShowMessengerQuickCloseTip), ui.__mem_func__(self.HideMessengerQuickCloseTip))
+				self.wndMessengerButton.badge = uiWhisperMessenger.UnreadBadge(self.wndMessengerButton)
+				if not constInfo.MESSENGER_BUTTON_CLOSED:	# Ctrl + click hid it until the next message (kept over warps)
+					self.wndMessengerButton.Show()
+			except:
+				import dbg, traceback
+				dbg.TraceError("WhisperMessenger init failed: " + traceback.format_exc())
+				self.wndWhisperMessenger = None
+
+		if app.ENABLE_GUILD_APPLICATION:
+			try:
+				self.wndGuildApplication = uiGuildApplication.GuildApplicationWindow()
+				self.wndGuildJoinNotification = uiGuildApplication.GuildJoinNotification()
+				uiGuildApplication.g_interface = self
+			except:
+				import dbg, traceback
+				dbg.TraceError("GuildApplication init failed: " + traceback.format_exc())
+				self.wndGuildApplication = None
+				self.wndGuildJoinNotification = None
+
 		wndCharacter = uiCharacter.CharacterWindow()
 
 		wndInventory = uiInventory.InventoryWindow()
@@ -596,6 +647,11 @@ class Interface(object):
 			self.wndSkillUpgrade = uiSkillUpgrade.SkillUpgradeWindow()
 			self.wndSkillUpgrade.BindInterface(self)
 			self.wndSkillUpgrade.Hide()
+
+		if getattr(app, "ENABLE_BRAVE_CAPE_RENEWAL", 0):
+			self.wndBraveCape = uiAutoCape.BraveCapeWindow()
+			self.wndBraveCape.BindInterface(self)
+			self.wndBraveCape.Hide()
 
 		if app.ENABLE_RENEWAL_TELEPORT_SYSTEM:
 			self.wndWarpWindow = uiTeleport.TeleportWindow()
@@ -877,6 +933,8 @@ class Interface(object):
 		self.questButtonList = []
 		self.whisperButtonList = []
 		self.whisperDialogDict = {}
+		if app.ENABLE_WHISPER_MESSENGER:
+			self.__ArrangeWhisperButton()	# [MESSENGER] envelope needs the button list first
 
 		if app.ENABLE_ZODIAC_MISSION:
 			self.__Make12ziTimerWindow()
@@ -1391,6 +1449,10 @@ class Interface(object):
 			self.wndSkillUpgrade.Destroy()
 			self.wndSkillUpgrade = None
 
+		if self.wndBraveCape:
+			self.wndBraveCape.Destroy()
+			self.wndBraveCape = None
+
 		if app.ENABLE_RENEWAL_TELEPORT_SYSTEM:
 			if self.wndWarpWindow:
 				self.wndWarpWindow.Destroy()
@@ -1431,6 +1493,22 @@ class Interface(object):
 			btn.SetEvent(0)
 		for dlg in self.whisperDialogDict.itervalues():
 			dlg.Destroy()
+		if app.ENABLE_WHISPER_MESSENGER and getattr(self, "wndWhisperMessenger", None):
+			self.wndWhisperMessenger.Destroy()
+			self.wndWhisperMessenger.Hide()
+			self.wndWhisperMessenger = None
+		if app.ENABLE_WHISPER_MESSENGER and getattr(self, "wndMessengerButton", None):
+			self.wndMessengerButton.SetEvent(0)
+			self.wndMessengerButton.Hide()
+			self.wndMessengerButton = None
+		if app.ENABLE_GUILD_APPLICATION:
+			if getattr(self, "wndGuildApplication", None):
+				self.wndGuildApplication.Destroy()
+				self.wndGuildApplication = None
+			if getattr(self, "wndGuildJoinNotification", None):
+				self.wndGuildJoinNotification.Hide()
+				self.wndGuildJoinNotification = None
+			uiGuildApplication.g_interface = None
 		for brd in self.guildScoreBoardDict.itervalues():
 			brd.Destroy()
 		for dlg in self.equipmentDialogDict.itervalues():
@@ -2404,6 +2482,19 @@ class Interface(object):
 	def GetSkillUpgradeWnd(self):
 		return self.wndSkillUpgrade
 
+	# Brave Cape (reference Baerim uiAutoCape.BraveCapeWindow, GameWindow.SetBraveCapeStatus)
+	def ToggleBraveCapeWindow(self):
+		if self.wndBraveCape and False == player.IsObserverMode():
+			self.wndBraveCape.Toggle()
+
+	def SetBraveCapeStatus(self, status):
+		if self.wndBraveCape:
+			self.wndBraveCape.SetStatus(status)
+
+	def OnBraveCapeMapLoaded(self):
+		if self.wndBraveCape:
+			self.wndBraveCape.OnMapLoaded()
+
 	def SetSkillUpgradeInfo(self, *args):
 		if self.wndSkillUpgrade:
 			self.wndSkillUpgrade.SetUpgradeInfo(*args)
@@ -2473,11 +2564,38 @@ class Interface(object):
 		if not self.wndGuild.IsShow():
 			if self.wndGuild.CanOpen():
 				self.wndGuild.Open()
+			elif app.ENABLE_GUILD_APPLICATION and getattr(self, "wndGuildApplication", None):
+				self.ToggleGuildApplication()	# reference: the guild key opens "Lonca Basvurusu" without a guild
 			else:
 				chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.GUILD_YOU_DO_NOT_JOIN)
 		else:
 			self.wndGuild.OverOutItem()
 			self.wndGuild.Hide()
+
+	if app.ENABLE_GUILD_APPLICATION:
+		def GetGuildApplicationWnd(self):
+			return getattr(self, "wndGuildApplication", None)
+
+		def GetGuildJoinNotificationWnd(self):
+			return getattr(self, "wndGuildJoinNotification", None)
+
+		def ToggleGuildApplication(self, mode = 0):
+			wnd = self.GetGuildApplicationWnd()
+			if not wnd:
+				return
+			if wnd.IsShow():
+				wnd.Close()
+			else:
+				wnd.Open(mode)
+
+		def OpenGuildJoinNotification(self, guildID, guildName, description):
+			import advanced_options_runtime
+			wnd = self.GetGuildJoinNotificationWnd()
+			if not wnd or guild.IsGuildEnable():
+				return
+			if not advanced_options_runtime.Get("show_guild_join_notification", True):
+				return
+			wnd.Open(guildID, guildName, description)
 
 	def ToggleChatLogWindow(self):
 		if self.wndChatLog.IsShow():
@@ -2805,6 +2923,9 @@ class Interface(object):
 		if self.wndCompanion:
 			hideWindows += self.wndCompanion,
 
+		if self.wndBraveCape:
+			hideWindows += self.wndBraveCape,
+
 		if app.ENABLE_RENEWAL_TELEPORT_SYSTEM:
 			if self.wndWarpWindow:
 				hideWindows += self.wndWarpWindow,
@@ -3085,7 +3206,150 @@ class Interface(object):
 	def __InitWhisper(self):
 		chat.InitWhisper(self)
 
+	if app.ENABLE_WHISPER_MESSENGER:
+		def __GetWhisperMessenger(self):
+			return getattr(self, "wndWhisperMessenger", None)
+
+		def PrepareGuildWhisper(self, name, line):
+			"""Guild whisper mark of the server: remembers the sender, returns the line without the mark."""
+			if uiWhisperMessenger.GUILD_WHISPER_MARK not in line:
+				return line
+			messenger = self.__GetWhisperMessenger()
+			if messenger:
+				messenger.SetGuildSender(name)
+			return line.replace(uiWhisperMessenger.GUILD_WHISPER_MARK, " : ", 1)
+
+		def RecvWhisperMessenger(self, name, line, isSystem = FALSE):
+			"""Every whisper line (incoming, system, error, guild) ends up in the messenger window."""
+			messenger = self.__GetWhisperMessenger()
+			if not messenger:
+				return
+			if messenger.IsExcluded(name):	# the [WIKI] pseudo whisper is not used with the messenger
+				return
+			isOpen = messenger.RecvWhisperLine(name, line, isSystem)
+			if self.IsGameMasterName(name):
+				messenger.SetGameMaster(name)
+			self.RefreshMessengerButton()
+			if isOpen or isSystem or name == "[Guild]" or messenger.IsMuted(name):	# pinned guild / muted: no envelope
+				return
+			self.__ReopenMessengerButton()
+			if name.startswith("[") or messenger.IsGuildSender(name):
+				# system senders ([Biolog] ...) and guild whispers get their own blinking envelope under [MESSENGER]
+				btn = self.__FindWhisperButton(name)
+				if 0 == btn:
+					btn = self.__MakeSystemWhisperButton(name)
+				btn.Flash()
+			else:
+				chat.AppendChat(chat.CHAT_TYPE_NOTICE, localeInfo.RECEIVE_MESSAGE % (name))
+			if app.ENABLE_BLINK_ALERT:
+				app.FlashApplication()
+
+		def HandleWhisperNotLogon(self, name):
+			messenger = self.__GetWhisperMessenger()
+			return messenger and messenger.OnWhisperNotLogon(name)
+
+		def RecvOfflineWhisper(self, sender, sentAt, text):
+			messenger = self.__GetWhisperMessenger()
+			if not messenger:
+				return
+			isOpen = messenger.RecvOfflineMessage(sender, sentAt, text)
+			self.RefreshMessengerButton()
+			if not isOpen:
+				self.__ReopenMessengerButton()
+				chat.AppendChat(chat.CHAT_TYPE_NOTICE, localeInfo.RECEIVE_MESSAGE % (sender))
+
+		def RecvOfflineWhisperResult(self, result, name):
+			messenger = self.__GetWhisperMessenger()
+			if messenger:
+				messenger.OnOfflineMessageResult(result, name)
+
+		def RefreshMessengerButton(self):
+			button = getattr(self, "wndMessengerButton", None)
+			messenger = self.__GetWhisperMessenger()
+			if button and messenger:
+				button.badge.SetUnread(messenger.GetTotalUnreadCount())
+
+		def ShowMessengerQuickCloseTip(self):
+			tip = getattr(self, "messengerQuickCloseTip", None)
+			if tip:
+				tip.ShowToolTip()
+				tip.SetTop()
+
+		def HideMessengerQuickCloseTip(self):
+			tip = getattr(self, "messengerQuickCloseTip", None)
+			if tip:
+				tip.HideToolTip()
+
+		def __IsCtrlPressed(self):
+			return app.IsPressed(app.DIK_LCONTROL) or app.IsPressed(app.DIK_RCONTROL)
+
+		def __OnClickMessengerButton(self):
+			# Ctrl + click: quick close = everything read (reference "Hizli kapatma")
+			self.HideMessengerQuickCloseTip()
+			messenger = self.__GetWhisperMessenger()
+			if messenger and self.__IsCtrlPressed():
+				# reference quick close: the whole [MESSENGER] envelope goes away until a new message arrives
+				messenger.MarkAllRead()
+				for btn in list(self.whisperButtonList):
+					btn.Hide()
+					self.__DestroyWhisperButton(btn)
+				if messenger.IsShow():
+					messenger.Close()
+				self.RefreshMessengerButton()
+				constInfo.MESSENGER_BUTTON_CLOSED = True
+				self.wndMessengerButton.Hide()
+				return
+			self.ToggleWhisperMessenger()
+
+		def __ReopenMessengerButton(self):
+			button = getattr(self, "wndMessengerButton", None)
+			if button and constInfo.MESSENGER_BUTTON_CLOSED:
+				constInfo.MESSENGER_BUTTON_CLOSED = False
+				button.Show()
+
+		def __MakeSystemWhisperButton(self, name):
+			button = uiWhisperMessenger.SystemWhisperButton(name)
+			button.SetEvent(ui.__mem_func__(self.ShowWhisperDialog), button)
+			button.SetHoverEvent(ui.__mem_func__(self.ShowMessengerQuickCloseTip), ui.__mem_func__(self.HideMessengerQuickCloseTip))
+			button.Show()
+			self.whisperButtonList.insert(0, button)
+			self.__ArrangeWhisperButton()
+			return button
+
+		def RecvGlobalChat(self, payload):
+			messenger = self.__GetWhisperMessenger()
+			if messenger:
+				messenger.RecvGlobalChat(payload)
+
+		def RecvWhisperPlayerInfo(self, name, found, empire, race, online, guildName):
+			messenger = self.__GetWhisperMessenger()
+			if messenger:
+				messenger.SetConversationInfo(name, found, empire, race, online, guildName)
+
+		def RecvGlobalChatCooldown(self, seconds):
+			messenger = self.__GetWhisperMessenger()
+			if messenger:
+				messenger.RecvGlobalCooldown(seconds)
+
+		def OnWhisperConversationRead(self, name):
+			btn = self.__FindWhisperButton(name)
+			if 0 != btn:
+				btn.Hide()
+				self.__DestroyWhisperButton(btn)
+				self.HideMessengerQuickCloseTip()
+			self.RefreshMessengerButton()
+
+		def ToggleWhisperMessenger(self):
+			messenger = self.__GetWhisperMessenger()
+			if messenger:
+				messenger.Toggle()
+
 	def OpenWhisperDialogWithoutTarget(self):
+		if app.ENABLE_WHISPER_MESSENGER and self.__GetWhisperMessenger():
+			self.wndWhisperMessenger.Open()
+			self.wndWhisperMessenger.OpenNewConversation()
+			return
+
 		if not self.dlgWhisperWithoutTarget:
 			dlgWhisper = uiWhisper.WhisperDialog(self.MinimizeWhisperDialog, self.CloseWhisperDialog)
 			dlgWhisper.BindInterface(self)
@@ -3129,6 +3393,10 @@ class Interface(object):
 					btn.countryID = country
 
 	def OpenWhisperDialog(self, name):
+		if app.ENABLE_WHISPER_MESSENGER and self.__GetWhisperMessenger():
+			self.wndWhisperMessenger.Open(name)
+			return
+
 		if not self.whisperDialogDict.has_key(name):
 			dlg = self.__MakeWhisperDialog(name)
 			dlg.OpenWithTarget(name)
@@ -3169,6 +3437,17 @@ class Interface(object):
 		if app.ENABLE_WIKI_SYSTEM and btn.name == "[W?K?]":
 			self.__DestroyWhisperButton(btn)
 			self.OpenWikiWindow()
+			return
+
+		if app.ENABLE_WHISPER_MESSENGER and self.__GetWhisperMessenger():
+			name = btn.name
+			btn.Hide()
+			self.__DestroyWhisperButton(btn)
+			self.HideMessengerQuickCloseTip()
+			if self.__IsCtrlPressed():	# Ctrl + click closes the envelope without opening it
+				self.wndWhisperMessenger.MarkRead(name)
+				return
+			self.wndWhisperMessenger.Open(name)
 			return
 
 		try:
@@ -3218,9 +3497,15 @@ class Interface(object):
 		yCount = (screenHeight - 330) / 63
 
 		count = 0
+		yShift = 0
+		if app.ENABLE_WHISPER_MESSENGER and getattr(self, "wndMessengerButton", None):
+			# fixed [MESSENGER] envelope sits on the second slot (where the [WIKI] envelope used to show), 30 px higher
+			yShift = -30
+			self.wndMessengerButton.SetPosition(xPos, yPos + 63 + yShift)
+			count = 2
 		for button in self.whisperButtonList:
 
-			button.SetPosition(xPos + (int(count/yCount) * -50), yPos + (count%yCount * 63))
+			button.SetPosition(xPos + (int(count/yCount) * -50), yPos + (count%yCount * 63) + yShift)
 			count += 1
 
 	def __FindWhisperButton(self, name):
@@ -3289,10 +3574,14 @@ class Interface(object):
 	def HideAllWhisperButton(self):
 		for btn in self.whisperButtonList:
 			btn.Hide()
+		if app.ENABLE_WHISPER_MESSENGER and getattr(self, "wndMessengerButton", None):
+			self.wndMessengerButton.Hide()
 
 	def ShowAllWhisperButton(self):
 		for btn in self.whisperButtonList:
 			btn.Show()
+		if app.ENABLE_WHISPER_MESSENGER and getattr(self, "wndMessengerButton", None) and not constInfo.MESSENGER_BUTTON_CLOSED:
+			self.wndMessengerButton.Show()
 
 	if app.ENABLE_HIDE_COSTUME_SYSTEM:
 		def RefreshVisibleCostume(self):
@@ -3823,6 +4112,8 @@ class Interface(object):
 					self.wndInventoryNew.BindWikiWindow(self.wndWiki)
 
 		def RecvReadWiki(self):
+			if app.ENABLE_WHISPER_MESSENGER:
+				return	# [WIKI] envelope replaced by [MESSENGER]
 			name = "[W?K?]"
 			if not self.whisperDialogDict.has_key(name):
 				btn = self.__FindWhisperButton(name)

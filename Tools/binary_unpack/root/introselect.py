@@ -296,6 +296,7 @@ class SelectCharacterWindow(ui.Window):
 		net.SetPhaseWindow(net.PHASE_WINDOW_SELECT, 0)
 
 	def Open(self):
+		constInfo.MESSENGER_BUTTON_CLOSED = False	# a new login / character brings the [MESSENGER] envelope back
 		if constInfo.SELECT_CHARACTER_ROTATION == TRUE:
 			self.Rotation = 0
 

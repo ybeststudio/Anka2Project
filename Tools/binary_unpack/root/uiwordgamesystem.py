@@ -120,22 +120,22 @@ class WordGameWindow(ui.ScriptWindow):
 
 			if 30216 == attachedItemIndex and 0 == selectedSlotPos:
 				constInfo.itemword1 = 1
-				chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> (M) harfi slota baþarýlý þekilde yerleþtirildi.")
+				chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.WORD_GAME_LETTER_PLACED % "M")
 			elif 30213 == attachedItemIndex and 1 == selectedSlotPos:
 				constInfo.itemword2 = 1
-				chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> (E) harfi slota baþarýlý þekilde yerleþtirildi.")
+				chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.WORD_GAME_LETTER_PLACED % "E")
 			elif 30219 == attachedItemIndex and 2 == selectedSlotPos:
 				constInfo.itemword3 = 1
-				chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> (T) harfi slota baþarýlý þekilde yerleþtirildi.")
+				chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.WORD_GAME_LETTER_PLACED % "T")
 			elif 30214 == attachedItemIndex and 3 == selectedSlotPos:
 				constInfo.itemword4 = 1
-				chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> (I) harfi slota baþarýlý þekilde yerleþtirildi.")
+				chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.WORD_GAME_LETTER_PLACED % "I")
 			elif 30217 == attachedItemIndex and 4 == selectedSlotPos:
 				constInfo.itemword5 = 1
-				chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> (N) harfi slota baþarýlý þekilde yerleþtirildi.")
+				chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.WORD_GAME_LETTER_PLACED % "N")
 			elif 30210 == attachedItemIndex and 5 == selectedSlotPos:
 				constInfo.itemword6 = 1
-				chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> (2) harfi slota baþarýlý þekilde yerleþtirildi.")
+				chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.WORD_GAME_LETTER_PLACED % "2")
 		
 			if player.SLOT_TYPE_INVENTORY == attachedSlotType and not attachedSlotPos in self.arryfeed:
 				itemCount = player.GetItemCount(attachedSlotPos)
@@ -155,27 +155,27 @@ class WordGameWindow(ui.ScriptWindow):
 		
 	def SendWordButton(self):
 		if constInfo.itemword1 == 0:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> (M) Harfi slot üzerinde bulunmuyor.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.WORD_GAME_LETTER_MISSING % "M")
 			return
 			
 		if constInfo.itemword2 == 0:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> (E) Harfi slot üzerinde bulunmuyor.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.WORD_GAME_LETTER_MISSING % "E")
 			return
 			
 		if constInfo.itemword3 == 0:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> (T) Harfi slot üzerinde bulunmuyor.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.WORD_GAME_LETTER_MISSING % "T")
 			return
 			
 		if constInfo.itemword4 == 0:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> (I) Harfi slot üzerinde bulunmuyor.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.WORD_GAME_LETTER_MISSING % "I")
 			return
 			
 		if constInfo.itemword5 == 0:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> (N) Harfi slot üzerinde bulunmuyor.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.WORD_GAME_LETTER_MISSING % "N")
 			return
 			
 		if constInfo.itemword6 == 0:
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "<Sistem> (2) Harfi slot üzerinde bulunmuyor.")
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.WORD_GAME_LETTER_MISSING % "2")
 			return
 
 		net.SendChatPacket("/wordgamestart")
