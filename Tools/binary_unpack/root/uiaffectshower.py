@@ -1733,7 +1733,7 @@ class AffectShower(ui.Window):
 		# reference (Baerim AffectShower.__ArrangeImageList): rows from AFFECT_ROW_DICT, the horse /
 		# love point / farm icons open row 1, each row is a stable sort by order
 		special = []
-		if app.ENABLE_GUILD_RENEWAL_BAERIM and guild.IsGuildEnable():
+		if app.ENABLE_GUILD_WINDOW_RENEWAL and guild.IsGuildEnable():
 			if not self.benedictionImage:
 				self.benedictionImage = BenedictionImage()
 				self.benedictionImage.SetParent(self)

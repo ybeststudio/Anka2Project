@@ -2434,7 +2434,7 @@ bool CPythonNetworkStream::RecvShopPacket()
 
 					struct packet_shop_item* item = &pPackTab->items[0];
 					
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 					for (int j = 0; j < SHOP_EX_ITEM_MAX_NUM; j++)
 #else
 					for (BYTE j = 0; j < SHOP_HOST_ITEM_MAX_NUM; j++)

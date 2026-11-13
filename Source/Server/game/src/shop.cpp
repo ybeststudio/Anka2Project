@@ -201,13 +201,13 @@ void CShop::SetShopItems(TShopItemTable* pTable, BYTE bItemCount)
 }
 
 #ifdef ENABLE_GOLD_LIMIT
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 long long CShop::Buy(LPCHARACTER ch, WORD pos)
 #else
 long long CShop::Buy(LPCHARACTER ch, BYTE pos)
 #endif
 #else
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 int CShop::Buy(LPCHARACTER ch, WORD pos)
 #else
 int CShop::Buy(LPCHARACTER ch, BYTE pos)

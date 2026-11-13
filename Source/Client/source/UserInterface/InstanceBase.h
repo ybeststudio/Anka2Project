@@ -1148,7 +1148,7 @@ class CInstanceBase
 
 		// ETC
 		CActorInstance& GetGraphicThingInstanceRef();
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 		void AttachHorseSaddle() { __AttachHorseSaddle(); }	// preview: MountHorse does not seat the rider by itself
 #endif
 		CActorInstance* GetGraphicThingInstancePtr();

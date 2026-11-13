@@ -1738,7 +1738,7 @@ int CInputMain::Shop(LPCHARACTER ch, const char * data, size_t uiBytes)
 
 		case SHOP_SUBHEADER_CG_BUY:
 			{
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 				// [count BYTE][pos WORD]: ShopEx positions go up to tabs x 80
 				if (uiBytes < sizeof(BYTE) + sizeof(WORD))
 					return -1;

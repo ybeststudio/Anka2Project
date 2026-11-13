@@ -3683,30 +3683,30 @@ void initapp()
 #else
 	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_GRADE_RENEWAL", 0);
 #endif
-#ifdef ENABLE_GUILD_RENEWAL_BAERIM
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_RENEWAL_BAERIM", 1);
+#ifdef ENABLE_GUILD_WINDOW_RENEWAL
+	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_WINDOW_RENEWAL", 1);
 #else
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_RENEWAL_BAERIM", 0);
+	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_WINDOW_RENEWAL", 0);
 #endif
-#ifdef ENABLE_LOGIN_RENEWAL_BAERIM
-	PyModule_AddIntConstant(poModule, "ENABLE_LOGIN_RENEWAL_BAERIM", 1);
+#ifdef ENABLE_LOGIN_WINDOW_RENEWAL
+	PyModule_AddIntConstant(poModule, "ENABLE_LOGIN_WINDOW_RENEWAL", 1);
 #else
-	PyModule_AddIntConstant(poModule, "ENABLE_LOGIN_RENEWAL_BAERIM", 0);
+	PyModule_AddIntConstant(poModule, "ENABLE_LOGIN_WINDOW_RENEWAL", 0);
 #endif
-#ifdef ENABLE_CREATE_RENEWAL_BAERIM
-	PyModule_AddIntConstant(poModule, "ENABLE_CREATE_RENEWAL_BAERIM", 1);
+#ifdef ENABLE_CHARACTER_CREATE_RENEWAL
+	PyModule_AddIntConstant(poModule, "ENABLE_CHARACTER_CREATE_RENEWAL", 1);
 #else
-	PyModule_AddIntConstant(poModule, "ENABLE_CREATE_RENEWAL_BAERIM", 0);
+	PyModule_AddIntConstant(poModule, "ENABLE_CHARACTER_CREATE_RENEWAL", 0);
 #endif
-#ifdef ENABLE_LOADING_RENEWAL_BAERIM
-	PyModule_AddIntConstant(poModule, "ENABLE_LOADING_RENEWAL_BAERIM", 1);
+#ifdef ENABLE_LOADING_SCREEN_RENEWAL
+	PyModule_AddIntConstant(poModule, "ENABLE_LOADING_SCREEN_RENEWAL", 1);
 #else
-	PyModule_AddIntConstant(poModule, "ENABLE_LOADING_RENEWAL_BAERIM", 0);
+	PyModule_AddIntConstant(poModule, "ENABLE_LOADING_SCREEN_RENEWAL", 0);
 #endif
-#ifdef ENABLE_TELEPORT_BAERIM
-	PyModule_AddIntConstant(poModule, "ENABLE_TELEPORT_BAERIM", 1);
+#ifdef ENABLE_TELEPORT_MAP_WINDOW
+	PyModule_AddIntConstant(poModule, "ENABLE_TELEPORT_MAP_WINDOW", 1);
 #else
-	PyModule_AddIntConstant(poModule, "ENABLE_TELEPORT_BAERIM", 0);
+	PyModule_AddIntConstant(poModule, "ENABLE_TELEPORT_MAP_WINDOW", 0);
 #endif
 #ifdef ENABLE_DAMAGE_TRACE
 	PyModule_AddIntConstant(poModule, "ENABLE_DAMAGE_TRACE", 1);
@@ -3725,15 +3725,15 @@ void initapp()
 #else
 	PyModule_AddIntConstant(poModule, "ENABLE_MOKOKO_SYSTEM", 0);
 #endif
-#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
-	PyModule_AddIntConstant(poModule, "ENABLE_DUNGEON_WINDOW_BAERIM", 1);
+#ifdef ENABLE_DUNGEON_INFO_WINDOW
+	PyModule_AddIntConstant(poModule, "ENABLE_DUNGEON_INFO_WINDOW", 1);
 #else
-	PyModule_AddIntConstant(poModule, "ENABLE_DUNGEON_WINDOW_BAERIM", 0);
+	PyModule_AddIntConstant(poModule, "ENABLE_DUNGEON_INFO_WINDOW", 0);
 #endif
-#ifdef ENABLE_SHOP_TABS_BAERIM
-	PyModule_AddIntConstant(poModule, "ENABLE_SHOP_TABS_BAERIM", 1);
+#ifdef ENABLE_NPC_SHOP_TABS
+	PyModule_AddIntConstant(poModule, "ENABLE_NPC_SHOP_TABS", 1);
 #else
-	PyModule_AddIntConstant(poModule, "ENABLE_SHOP_TABS_BAERIM", 0);
+	PyModule_AddIntConstant(poModule, "ENABLE_NPC_SHOP_TABS", 0);
 #endif
 #ifdef ENABLE_DUNGEON_LIMIT_RENEWAL
 	PyModule_AddIntConstant(poModule, "ENABLE_DUNGEON_LIMIT_RENEWAL", 1);
@@ -3757,10 +3757,10 @@ void initapp()
 #else
 	PyModule_AddIntConstant(poModule, "ENABLE_WARDROBE_SYSTEM", 0);
 #endif
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
-	PyModule_AddIntConstant(poModule, "ENABLE_COSTUME_SHOP_BAERIM", 1);
+#ifdef ENABLE_COSTUME_SHOP
+	PyModule_AddIntConstant(poModule, "ENABLE_COSTUME_SHOP", 1);
 #else
-	PyModule_AddIntConstant(poModule, "ENABLE_COSTUME_SHOP_BAERIM", 0);
+	PyModule_AddIntConstant(poModule, "ENABLE_COSTUME_SHOP", 0);
 #endif
 #ifdef ENABLE_GLOBAL_RANKING
 	PyModule_AddIntConstant(poModule, "ENABLE_GLOBAL_RANKING", 1);
@@ -3773,15 +3773,15 @@ void initapp()
 #else
 	PyModule_AddIntConstant(poModule, "ENABLE_COUNTRY_FLAG", 0);
 #endif
-#ifdef ENABLE_SELECT_RENEWAL_BAERIM
-	PyModule_AddIntConstant(poModule, "ENABLE_SELECT_RENEWAL_BAERIM", 1);
+#ifdef ENABLE_CHARACTER_SELECT_RENEWAL
+	PyModule_AddIntConstant(poModule, "ENABLE_CHARACTER_SELECT_RENEWAL", 1);
 #else
-	PyModule_AddIntConstant(poModule, "ENABLE_SELECT_RENEWAL_BAERIM", 0);
+	PyModule_AddIntConstant(poModule, "ENABLE_CHARACTER_SELECT_RENEWAL", 0);
 #endif
-#ifdef ENABLE_EMPIRE_RENEWAL_BAERIM
-	PyModule_AddIntConstant(poModule, "ENABLE_EMPIRE_RENEWAL_BAERIM", 1);
+#ifdef ENABLE_EMPIRE_SELECT_RENEWAL
+	PyModule_AddIntConstant(poModule, "ENABLE_EMPIRE_SELECT_RENEWAL", 1);
 #else
-	PyModule_AddIntConstant(poModule, "ENABLE_EMPIRE_RENEWAL_BAERIM", 0);
+	PyModule_AddIntConstant(poModule, "ENABLE_EMPIRE_SELECT_RENEWAL", 0);
 #endif
 #ifdef ENABLE_BRAVE_CAPE_RENEWAL
 	PyModule_AddIntConstant(poModule, "ENABLE_BRAVE_CAPE_RENEWAL", 1);

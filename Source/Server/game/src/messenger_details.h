@@ -1,3 +1,10 @@
+/*********************************************************************
+ * File Name : messenger_details.cpp
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 04-11-2026  
+ */
+
 #pragma once
 
 #include "../../common/service.h"

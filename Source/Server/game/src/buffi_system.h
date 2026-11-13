@@ -1,3 +1,10 @@
+/*********************************************************************
+ * File Name : buffi_system.h
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 24-10-2026  
+ */
+
 #ifndef __INC_BUFFI_SYSTEM_H__
 #define __INC_BUFFI_SYSTEM_H__
 

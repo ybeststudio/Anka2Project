@@ -1,3 +1,10 @@
+/*********************************************************************
+ * File Name : global_ranking.h
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 07-11-2026  
+ */
+
 #pragma once
 #include "../../common/service.h"
 

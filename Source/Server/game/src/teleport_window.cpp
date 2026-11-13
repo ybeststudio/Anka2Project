@@ -1,7 +1,14 @@
+/*********************************************************************
+ * File Name : teleport_window.cpp
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 03-11-2026  
+ */
+
 #include "stdafx.h"
 #include "../../common/service.h"
 
-#ifdef ENABLE_TELEPORT_BAERIM
+#ifdef ENABLE_TELEPORT_MAP_WINDOW
 #include "utils.h"
 #include "config.h"
 #include "char.h"

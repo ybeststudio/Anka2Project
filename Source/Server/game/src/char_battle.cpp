@@ -43,7 +43,7 @@
 #include "../../common/service.h"
 #ifdef ENABLE_GUILD_QUEST
 #include "guild_quest.h"
-#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#ifdef ENABLE_DUNGEON_INFO_WINDOW
 #include "dungeon_window.h"
 #endif
 #ifdef ENABLE_GLOBAL_RANKING
@@ -1657,7 +1657,7 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 #ifdef ENABLE_GLOBAL_RANKING
 	GlobalRanking_OnDead(this, pkKiller);
 #endif
-#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#ifdef ENABLE_DUNGEON_INFO_WINDOW
 	DungeonWindow_OnBossDead(this);
 #endif
 
@@ -3646,7 +3646,7 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 #ifdef ENABLE_GLOBAL_RANKING
 		GlobalRanking_OnHit(pAttacker, this, dam);
 #endif
-#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#ifdef ENABLE_DUNGEON_INFO_WINDOW
 		DungeonWindow_OnBossHit(pAttacker, this, dam);
 #endif
 

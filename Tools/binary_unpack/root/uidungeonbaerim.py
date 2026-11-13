@@ -12,7 +12,7 @@ import constInfo
 import localeInfo
 import uiToolTip
 import uiDungeonTrack
-if app.ENABLE_TELEPORT_BAERIM:
+if app.ENABLE_TELEPORT_MAP_WINDOW:
 	import uiTeleportBaerim
 
 # Baerim uiTeleport dungeon page (Cython) rebuilt from its runtime dump (Reference/pydump_runtime/dungeonprobe):
@@ -333,8 +333,8 @@ class DungeonWindow(ui.Window):
 		self.resetButton.SetEvent(ui.__mem_func__(self.__ResetHidden))
 		self.BindToolTip(self.resetButton, localeInfo.DUNGEON_WINDOW_RESET_HIDDEN)
 
-		# page tabs: teleport map and dungeons (without ENABLE_TELEPORT_BAERIM the map tab opens the old teleport window)
-		if app.ENABLE_TELEPORT_BAERIM:
+		# page tabs: teleport map and dungeons (without ENABLE_TELEPORT_MAP_WINDOW the map tab opens the old teleport window)
+		if app.ENABLE_TELEPORT_MAP_WINDOW:
 			self.mapTab = ui.RadioButton()
 			self.mapTab.SetParent(self)
 			self.mapTab.SetPosition(0, 30)
@@ -354,7 +354,7 @@ class DungeonWindow(ui.Window):
 		self.dungeonTab.SetOverVisual(DUNGEON_PATH % "btn_dungeon_hover.png")
 		self.dungeonTab.SetDownVisual(DUNGEON_PATH % "btn_dungeon_select.png")
 		self.dungeonTab.Down()
-		if app.ENABLE_TELEPORT_BAERIM:
+		if app.ENABLE_TELEPORT_MAP_WINDOW:
 			self.dungeonTab.SetEvent(ui.__mem_func__(self.SetPage), "DUNGEON")
 		self.dungeonTab.Show()
 		self.BindToolTip(self.dungeonTab, localeInfo.DUNGEON_WINDOW_TAB_DUNGEON)
@@ -382,7 +382,7 @@ class DungeonWindow(ui.Window):
 
 		self.__BuildRightPanel()
 
-		if app.ENABLE_TELEPORT_BAERIM:
+		if app.ENABLE_TELEPORT_MAP_WINDOW:
 			# Baerim teleportBg: board (8, 30) -> window (38, 30), covers the board inside
 			self.mapPage = uiTeleportBaerim.TeleportMapPage(self)
 			self.mapPage.SetParent(self)
@@ -792,7 +792,7 @@ class DungeonWindow(ui.Window):
 	def __KeepMapOnTop(self):
 		# the ticket icons are rebuilt on every refresh after the map page was created, so they draw over it
 		# (SetTop only reorders float windows): hide them while the map tab is open
-		if app.ENABLE_TELEPORT_BAERIM and self.mapPage and self.page == "MAP":
+		if app.ENABLE_TELEPORT_MAP_WINDOW and self.mapPage and self.page == "MAP":
 			for icon in self.ticketIcons:
 				icon.Hide()
 
@@ -823,12 +823,12 @@ class DungeonWindow(ui.Window):
 		self.Refresh()
 		self.Show()
 		self.SetTop()
-		if app.ENABLE_TELEPORT_BAERIM:
+		if app.ENABLE_TELEPORT_MAP_WINDOW:
 			self.SetPage(page or self.page)
 
 	def SetPage(self, page):
 		# Baerim: the map tab draws over the dungeon page (same window, title follows the tab)
-		if not app.ENABLE_TELEPORT_BAERIM or not self.mapPage:
+		if not app.ENABLE_TELEPORT_MAP_WINDOW or not self.mapPage:
 			return
 		self.page = page
 		if page == "MAP":

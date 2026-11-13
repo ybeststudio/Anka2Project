@@ -1,3 +1,10 @@
+/*********************************************************************
+ * File Name : buffi_system.cpp
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 24-10-2026  
+ */
+
 #include "stdafx.h"
 #include "../../common/service.h"
 

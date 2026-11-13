@@ -1,3 +1,10 @@
+/*********************************************************************
+ * File Name : bonus_custom.h
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 01-11-2026  
+ */
+
 #pragma once
 
 #ifdef ENABLE_BONUS_FIX

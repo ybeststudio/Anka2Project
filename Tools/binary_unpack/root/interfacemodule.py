@@ -126,7 +126,7 @@ if app.ENABLE_DUNGEON_INFO:
 
 if app.__DUNGEON_INFO__:
 	import uiDungeonTrack
-	if app.ENABLE_DUNGEON_WINDOW_BAERIM:
+	if app.ENABLE_DUNGEON_INFO_WINDOW:
 		import uiDungeonBaerim
 
 if app.ENABLE_RENEWAL_SPECIAL_CHAT:
@@ -198,7 +198,7 @@ if app.ENABLE_RANKING:
 	import uiranking
 if app.ENABLE_GLOBAL_RANKING:
 	import uiglobalranking
-if app.ENABLE_COSTUME_SHOP_BAERIM:
+if app.ENABLE_COSTUME_SHOP:
 	import uicostumeshop
 if getattr(app, "ENABLE_WARDROBE_SYSTEM", 0):
 	import uiwardrobe
@@ -357,7 +357,7 @@ class Interface(object):
 		if app.ENABLE_RANKING:
 			self.wndRanking = None
 
-		if app.ENABLE_COSTUME_SHOP_BAERIM:
+		if app.ENABLE_COSTUME_SHOP:
 			self.wndCostumeShop = None
 
 		if getattr(app, "ENABLE_WARDROBE_SYSTEM", 0):
@@ -412,7 +412,7 @@ class Interface(object):
 		self.wndMessenger.SetGuildButtonEvent(ui.__mem_func__(self.ToggleGuildWindow))
 
 	def __MakeGuildWindow(self):
-		if app.ENABLE_GUILD_RENEWAL_BAERIM:
+		if app.ENABLE_GUILD_WINDOW_RENEWAL:
 			import uiGuildRenewal
 			self.wndGuild = uiGuildRenewal.GuildWindow()
 		else:
@@ -1351,7 +1351,7 @@ class Interface(object):
 				self.wndRanking.Destroy()
 				del self.wndRanking
 
-		if app.ENABLE_COSTUME_SHOP_BAERIM:
+		if app.ENABLE_COSTUME_SHOP:
 			if self.wndCostumeShop:
 				self.wndCostumeShop.Destroy()
 			self.wndCostumeShop = None
@@ -3812,7 +3812,7 @@ class Interface(object):
 			if self.wndWardrobe:
 				self.wndWardrobe.OnResult(action, result)
 
-	if app.ENABLE_COSTUME_SHOP_BAERIM:
+	if app.ENABLE_COSTUME_SHOP:
 		def __GetCostumeShop(self):
 			if not self.wndCostumeShop:
 				self.wndCostumeShop = uicostumeshop.CostumeShopWindow()
@@ -4329,7 +4329,7 @@ class Interface(object):
 
 	if app.ENABLE_RENEWAL_TELEPORT_SYSTEM:
 		def OpenWarpWindow(self):
-			if app.ENABLE_TELEPORT_BAERIM and app.ENABLE_DUNGEON_WINDOW_BAERIM:
+			if app.ENABLE_TELEPORT_MAP_WINDOW and app.ENABLE_DUNGEON_INFO_WINDOW:
 				# Baerim: the teleport map is the first tab of the dungeon window
 				if self.wndDungeonTrack == None:
 					self.wndDungeonTrack = uiDungeonBaerim.DungeonWindow()
@@ -4466,7 +4466,7 @@ class Interface(object):
 
 		def OpenDungeonInfo(self):
 			try:
-				if app.ENABLE_DUNGEON_WINDOW_BAERIM:
+				if app.ENABLE_DUNGEON_INFO_WINDOW:
 					if self.wndDungeonTrack == None:
 						self.wndDungeonTrack = uiDungeonBaerim.DungeonWindow()
 					if self.wndDungeonTrack.IsShow():
@@ -4506,7 +4506,7 @@ class Interface(object):
 							dungeonData[bossIdx]["server_completed"] = int(dungeonSplitData[2])
 							dungeonData[bossIdx]["server_fastest"] = int(dungeonSplitData[3])
 							dungeonData[bossIdx]["server_damage"] = int(dungeonSplitData[4])
-							# ENABLE_DUNGEON_WINDOW_BAERIM: dps|daily used|daily limit|server average|server best|seconds to the daily reset
+							# ENABLE_DUNGEON_INFO_WINDOW: dps|daily used|daily limit|server average|server best|seconds to the daily reset
 							if len(dungeonSplitData) >= 11:
 								dungeonData[bossIdx]["server_dps"] = int(dungeonSplitData[5])
 								dungeonData[bossIdx]["current_daily_limit"] = int(dungeonSplitData[6])
@@ -4521,7 +4521,7 @@ class Interface(object):
 			if self.wndDungeonManager == None:
 				self.wndDungeonManager = uiDungeonTrack.DungeonManager()
 			if self.wndDungeonTrack == None:
-				if app.ENABLE_DUNGEON_WINDOW_BAERIM:
+				if app.ENABLE_DUNGEON_INFO_WINDOW:
 					self.wndDungeonTrack = uiDungeonBaerim.DungeonWindow()
 				else:
 					self.wndDungeonTrack = uiDungeonTrack.DungeonTrack()

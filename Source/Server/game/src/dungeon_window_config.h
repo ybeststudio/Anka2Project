@@ -1,3 +1,10 @@
+/*********************************************************************
+ * File Name : dungeon_window_config.h
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 05-11-2026  
+ */
+
 // { boss race, instance base map, daily limit, warp x, warp y } - Arena2 dungeons, warp = entry NPC position + 2 m
 	{ 5163,	45,	12,	406100,	875900 },	// monkeydungeon_zone
 	{ 6756,	391,	6,	40300,	2074900 },	// serpenttemple_zone

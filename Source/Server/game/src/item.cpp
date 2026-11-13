@@ -1649,7 +1649,7 @@ long CItem::GetValue(DWORD idx)
 DWORD CItem::GetMountSkinVnum()
 {
 	DWORD dwVnum = GetValue(1);
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 	// the official costume mounts (and the Baerim costume shop mounts) keep the mount mob in APPLY_MOUNT, value1 is 0
 	if (!dwVnum && GetProto())
 	{

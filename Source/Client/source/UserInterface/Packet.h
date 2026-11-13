@@ -686,7 +686,7 @@ enum
 	QUICKSLOT_MAX_NUM = 36,
 
 	SHOP_HOST_ITEM_MAX_NUM = 40,
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 	SHOP_EX_ITEM_MAX_NUM = 80,		// slots of one ShopEx tab (10 columns x 8 rows)
 #endif
 
@@ -2592,7 +2592,7 @@ typedef struct packet_shop_start_ex
 	{
 		char name[SHOP_TAB_NAME_MAX];
 		BYTE coin_type;
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 		packet_shop_item items[SHOP_EX_ITEM_MAX_NUM];
 #else
 		packet_shop_item items[SHOP_HOST_ITEM_MAX_NUM];

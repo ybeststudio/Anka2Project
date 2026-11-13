@@ -243,29 +243,29 @@
 #define ENABLE_MESSENGER_DETAILS							// Baerim friend list window (uiMessengerRenewal): categories, search, favorites, member cards; server "MessengerInfo"
 #define ENABLE_GUILD_GRADE_RENEWAL							// Baerim grade dialog: 9 authorities (WORD authority flag), must match the server define
 #define ENABLE_GUILD_MARK_PNG								// Lonca logosu .png yukleme (DevIL IL_NO_PNG, D3DX ile cozulur)
-#define ENABLE_GUILD_RENEWAL_BAERIM							// Baerim guild window (uiGuildRenewal): info / member pages, blessings, co leaders; old GF pages only without it
-#define ENABLE_LOGIN_RENEWAL_BAERIM							// Baerim login screen (introLoginBaerim): side board, 6 saved accounts, channel list, language flags
-#define ENABLE_CREATE_RENEWAL_BAERIM						// Baerim character create screen (introCreateBaerim): class slots, paged job description, render window
+#define ENABLE_GUILD_WINDOW_RENEWAL							// Renewed guild window (uiGuildRenewal): info / member pages, blessings, co leaders; old GF pages only without it
+#define ENABLE_LOGIN_WINDOW_RENEWAL							// Renewed login screen (introLoginBaerim): side board, 6 saved accounts, channel list, language flags
+#define ENABLE_CHARACTER_CREATE_RENEWAL						// Renewed character create screen (introCreateBaerim): class slots, paged job description, render window
 #define ENABLE_PCBLOCKER_FLAT_ALPHA							// Baerim: kamera ile karakter arasindaki nesne esit saydam cizilir (resmi PCBlockerAlpha.dds deligi yerine)
 #define PCBLOCKER_FLAT_ALPHA				48				// 0-255
-#define ENABLE_TELEPORT_BAERIM								// Baerim Isinlanma harita sayfasi (uiTeleportBaerim): zindan penceresinin ilk sekmesi, /teleport_map <tpIdx>
+#define ENABLE_TELEPORT_MAP_WINDOW								// Isinlanma harita sayfasi (uiTeleportBaerim): zindan penceresinin ilk sekmesi, /teleport_map <tpIdx>
 #define ENABLE_DAMAGE_TRACE								// Baerim "Hasar Takibi" penceresi (uiTrackDamage), server define ile ayni
 #define ENABLE_TARGET_DROP_CHANCE							// Hedef "?" panosu (Baerim): drop satirlarinda gercek dusme sansi (ppm) -> nadirlik etiketi, server define ile ayni
 #define ENABLE_MOKOKO_SYSTEM								// Baerim Mokoko tohumlari (uiMokokoRewards): sayac, harita ilerlemesi, odul penceresi, server define ile ayni
 #define ENABLE_MOUNT_ATTACK_FIX								// Baerim: 58000 "At" (20101) ve listede olmayan kostum binekler uzerinde saldiri acik
-#define ENABLE_DUNGEON_WINDOW_BAERIM						// Baerim dungeon window (uiTeleport dungeon page), replaces the uiDungeonTrack window
-#define ENABLE_SHOP_TABS_BAERIM								// Baerim tabbed NPC shop (uiShop): ShopEx tab of 80 slots (10 columns), WORD buy position, must match the server define
+#define ENABLE_DUNGEON_INFO_WINDOW						// Dungeon info window (uiTeleport dungeon page), replaces the uiDungeonTrack window
+#define ENABLE_NPC_SHOP_TABS								// Tabbed NPC shop (uiShop): ShopEx tab of 80 slots (10 columns), WORD buy position, must match the server define
 #define ENABLE_DUNGEON_LIMIT_RENEWAL						// Baerim dungeon daily limit: PC (computer) limit + weekly stack, app.GetPCIdentity, must match the server define
 #define ENABLE_ACCE_SKIN_SYSTEM								// sash skins (Baerim wings / sash looks): COSTUME_ACCE_SKIN worn in WEAR_COSTUME_ACCE_SKIN (39), must match the server define
 #define ENABLE_PET_EXP_BONUS								// Baerim pet items: APPLY_PET_EXP_BONUS (339) "Evcil hayvan EXP bonusu", must match the server define
 #define ENABLE_TIME_BONUS_COSTUME							// Baerim costume bonus time (socket 2 = end, 99 = permanent), must match the server define
 #define ENABLE_WARDROBE_SYSTEM								// Baerim wardrobe (uiWardrobe): WARDROBE item window (20, 4500 cells), /wardrobe protocol, must match the server define
-#define ENABLE_COSTUME_SHOP_BAERIM							// Baerim costume shop (uiCostumeShop): NPC 9393, coupons 90020-90022, chat command protocol, must match the server define
+#define ENABLE_COSTUME_SHOP							// Costume shop (uiCostumeShop): NPC 9393, coupons 90020-90022, chat command protocol, must match the server define
 #define ENABLE_GLOBAL_RANKING								// Baerim global ranking window (uiRanking): /global_rank _load, must match the server define
 #define ENABLE_COUNTRY_FLAG									// Baerim country flag per character (uiCountryFlag): picked on character select, must match the server define
-#define ENABLE_LOADING_RENEWAL_BAERIM						// Baerim loading screen (introLoadingBaerim): random full screen background, fades out over the map
-#define ENABLE_SELECT_RENEWAL_BAERIM						// Baerim character select screen (introSelectBaerim): 4 slots + page arrows, job description, slot tooltip
-#define ENABLE_EMPIRE_RENEWAL_BAERIM						// Baerim empire select screen (introEmpireBaerim): atlas with fading empire areas, name board
+#define ENABLE_LOADING_SCREEN_RENEWAL						// Renewed loading screen (introLoadingBaerim): random full screen background, fades out over the map
+#define ENABLE_CHARACTER_SELECT_RENEWAL						// Renewed character select screen (introSelectBaerim): 4 slots + page arrows, job description, slot tooltip
+#define ENABLE_EMPIRE_SELECT_RENEWAL						// Renewed empire select screen (introEmpireBaerim): atlas with fading empire areas, name board
 #define ENABLE_AFFECT_CAST_STAT								// Skill buff affects carry the caster STR / INT (affect tooltip "INT on activation")
 #define ENABLE_EFFECT_MODEL_ITEM							// Baerim: item_list model ".mse" = the item is an effect (weapon on the hand bones, wing / sash skin on the sash bone)
 #define ENABLE_COSTUME_GLOW_TABLE							// Baerim locale/common/shiningtable.txt: costume / weapon vnum -> glow effects (.mse) on the body / weapon

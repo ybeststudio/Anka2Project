@@ -133,7 +133,7 @@ PyObject *renderTargetSetMount(PyObject *poSelf, PyObject *poArgs)
 		if (target->IsReady())
 		{
 			target->GetModel()->MountHorse(iItemVnum);
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 			// MountHorse only switches the motion mode: seat the rider on the saddle and play the riding wait motion
 			target->GetModel()->AttachHorseSaddle();
 			target->GetModel()->Refresh(CRaceMotionData::NAME_WAIT, true);
@@ -404,7 +404,7 @@ PyObject *renderSetZoom(PyObject *poSelf, PyObject *poArgs)
 	return Py_BuildNone();
 }
 
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 #include "PythonSkill.h"
 // renderTarget.UseSkill(index, skillVnum, grade): plays the skill motion (and its effects) on the preview model
 PyObject *renderTargetUseSkill(PyObject *poSelf, PyObject *poArgs)
@@ -505,7 +505,7 @@ void initRenderTarget()
 		{"Zoom", renderZoomCamera, METH_VARARGS },
 		{"SetZoom", renderSetZoom, METH_VARARGS },
 		{"SetScale", renderSetScale, METH_VARARGS },
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 		{"UseSkill", renderTargetUseSkill, METH_VARARGS },
 		{"SetShining", renderTargetSetShining, METH_VARARGS },
 		{"CopyMainAffects", renderTargetCopyMainAffects, METH_VARARGS },

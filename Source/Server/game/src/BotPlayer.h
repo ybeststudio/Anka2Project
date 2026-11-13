@@ -1,3 +1,10 @@
+/*********************************************************************
+ * File Name : BotPlayer.h
+ * Author    : BestStudio
+ * Version   : 2.1.1
+ * Date      : 03-11-2025  
+ */
+
 #pragma once
 
 #include <memory>

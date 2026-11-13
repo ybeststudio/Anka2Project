@@ -1,7 +1,14 @@
+/*********************************************************************
+ * File Name : dungeon_window.cpp
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 05-11-2026  
+ */
+
 #include "stdafx.h"
 #include "../../common/service.h"
 
-#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#ifdef ENABLE_DUNGEON_INFO_WINDOW
 #include <tuple>
 #include "utils.h"
 #include "config.h"
@@ -14,7 +21,7 @@
 #include "locale_service.h"
 #include "dungeon_window.h"
 
-// Baerim dungeon window (reference uiTeleport dungeon page / dungeonData):
+// Dungeon info window (reference uiTeleport dungeon page / dungeonData):
 // - best boss DPS per player (quest flag dungeon.<boss>_dps); completed / fastest come from the Arena2 quests
 // - daily entry limit, counted when a player enters a new instance of the dungeon, reset at midnight
 // - server average / best run time of all players

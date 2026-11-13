@@ -82,7 +82,7 @@ bool CShopEx::AddGuest(LPCHARACTER ch,DWORD owner_vid, bool bOtherEmpire)
 
 	pack2.owner_vid = owner_vid;
 	pack2.shop_tab_count = m_vec_shopTabs.size();
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 	// 80 slot tabs: up to ~36 KB, more than the old fixed stack buffer
 	std::vector<char> tempBuffer(sizeof(TPacketGCShopStartEx::TSubPacketShopTab) * MAX(1, (int)m_vec_shopTabs.size()));
 	char* temp = &tempBuffer[0];
@@ -98,7 +98,7 @@ bool CShopEx::AddGuest(LPCHARACTER ch,DWORD owner_vid, bool bOtherEmpire)
 		pack_tab.coin_type = shop_tab.coinType;
 		memcpy(pack_tab.name, shop_tab.name.c_str(), SHOP_TAB_NAME_MAX);
 
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 		const TShopItemTable* tabItems = shop_tab.itemsEx;
 		for (int i = 0; i < SHOP_EX_ITEM_MAX_NUM; i++)
 #else
@@ -145,7 +145,7 @@ bool CShopEx::AddGuest(LPCHARACTER ch,DWORD owner_vid, bool bOtherEmpire)
 	return true;
 }
 
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 #ifdef ENABLE_GOLD_LIMIT
 long long CShopEx::Buy(LPCHARACTER ch, WORD pos)
 #else
@@ -185,7 +185,7 @@ int CShopEx::Buy(LPCHARACTER ch, BYTE pos)
 		return SHOP_SUBHEADER_GC_END;
 
 	TShopTableEx& shopTab = m_vec_shopTabs[tabIdx];
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 	TShopItemTable& r_item = shopTab.itemsEx[slotPos];
 	if (!r_item.vnum)
 		return SHOP_SUBHEADER_GC_INVALID_POS;

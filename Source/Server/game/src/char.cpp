@@ -89,7 +89,7 @@
 
 #ifdef ENABLE_DUNGEON_INFO
 	#include "dungeon_info.h"
-#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#ifdef ENABLE_DUNGEON_INFO_WINDOW
 #include "dungeon_window.h"
 #ifdef ENABLE_WARDROBE_SYSTEM
 #include "wardrobe.h"
@@ -12788,7 +12788,7 @@ void CHARACTER::SendDungeonCooldown(DWORD bossIdx)
 		cmd += std::to_string(bossIdx);
 		cmd += "|";
 
-#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#ifdef ENABLE_DUNGEON_INFO_WINDOW
 		// a name with a dot is the whole flag (SungMahi: dungeonManager.sungMahiTime), else <quest>.cooldown
 		cmd += std::to_string(GetQuestFlagSpecial(strchr(it->second.second.c_str(), '.') ? "%s" : "%s.cooldown", it->second.second.c_str()) - time(0));
 #else
@@ -12803,7 +12803,7 @@ void CHARACTER::SendDungeonCooldown(DWORD bossIdx)
 		cmd += "|";
 
 		cmd += std::to_string(GetQuestFlagSpecial("dungeon.%u_damage", bossIdx));
-#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#ifdef ENABLE_DUNGEON_INFO_WINDOW
 		cmd += DungeonWindow_ExtraInfo(this, bossIdx);
 #endif
 		cmd += "#";

@@ -137,7 +137,7 @@ enum eAnkaDefines {
 #define ENABLE_KILL_STATISTICS						// Resmi ile neredeyse ayný yeni bonus panosu;
 #define ENABLE_AURA_COSTUME_SYSTEM					// Aura kostüm sistemini etkinleþtir;
 #define ENABLE_RENEWAL_TELEPORT_SYSTEM				// Yeni ýþýnlanma sistemini etkinleþtir;
-#define ENABLE_TELEPORT_BAERIM						// Baerim Isinlanma harita penceresi: /teleport_map <tpIdx>, locale/<locale>/teleport_points.txt
+#define ENABLE_TELEPORT_MAP_WINDOW						// Isinlanma harita penceresi: /teleport_map <tpIdx>, locale/<locale>/teleport_points.txt
 #define ENABLE_MOKOKO_SYSTEM						// Baerim Mokoko tohumlari: NPC 9101, karakter basi toplama + odul penceresi, locale/<locale>/mokoko_*.txt
 #define ENABLE_FULL_SKILL_OFFICIAL_LEVELS			// /full_set, /all_skill_master: kombo 2, balikcilik 0, diller M1, at cagirma 10, at becerileri M1 (resmi seviyeler, P degil)
 #define ENABLE_ITEM_TIME_SOCKET_FIX					// Sureli silah/zirh (orn. 79501 Ok Cantasi): soket 0 bitis zamani, metin tasi sanilmaz ("cannot find table by vnum")
@@ -320,15 +320,15 @@ enum eAnkaDefines {
 #define ENABLE_COUNTRY_FLAG							// Baerim ulke bayragi: karakter basina bayrak (player.country_flag), secim ekraninda degistirilir
 #define ENABLE_GUILD_SHOP							// Lonca Magazasi ve bagis/beceri gecmisi (reference Baerim guild.json shop): /guild_shop buy|log
 #define ENABLE_ARENA2_DUNGEONS						// Arena2 (BesTPro) zindan quest'leri: d.notice("metin") / d.notice(harita, "metin")
-#define ENABLE_SHOP_TABS_BAERIM						// Baerim sekmeli NPC dukkanlari: ShopEx sekmesi 80 slot (10 sutun), WORD satin alma pozisyonu; istemcide de ayni define
+#define ENABLE_NPC_SHOP_TABS						// Sekmeli NPC dukkanlari: ShopEx sekmesi 80 slot (10 sutun), WORD satin alma pozisyonu; istemcide de ayni define
 #define ENABLE_DUNGEON_LIMIT_RENEWAL				// Baerim zindan gunluk limiti: PC (bilgisayar) limiti + haftalik birikim; istemcide de ayni define
-#define ENABLE_DUNGEON_WINDOW_BAERIM				// Baerim Zindanlar penceresi: tamamlama/sure/DPS, gunluk limit, /dungeon_info enter (dungeon_window.cpp)
+#define ENABLE_DUNGEON_INFO_WINDOW				// Zindanlar penceresi: tamamlama/sure/DPS, gunluk limit, /dungeon_info enter (dungeon_window.cpp)
 #define ENABLE_ACCE_SKIN_SYSTEM						// Kusak gorunumu (Baerim kanat / kusak skin): COSTUME_ACCE_SKIN, WEAR_COSTUME_ACCE_SKIN (39), PART_ACCE gorunumun modeli
 #define ENABLE_PET_EXP_BONUS						// Baerim pet itemleri: APPLY_PET_EXP_BONUS (339) = takili pet / pet kostumu, buyume petinin mob EXP'sini % artirir
 #define ENABLE_TIME_BONUS_COSTUME					// Baerim kostum bonus suresi: kostum efsunlari sadece sure varken calisir (socket2 = bitis, 99 = suresiz), 55320-55327 iksirleri
 #define ENABLE_WARDROBE_AUTO_STORE					// Baerim gardirop envanteri: gelen / cikarilan kostumler gardiroba gider, depodan kusanma, OpenWardrobeInventory
 #define ENABLE_WARDROBE_SYSTEM						// Gardirop (reference Baerim uiWardrobe): WARDROBE item window (4500), katalog, gorunum, kombinler, /wardrobe
-#define ENABLE_COSTUME_SHOP_BAERIM					// Kostum Magazasi (reference Baerim uiCostumeShop): NPC 9393, costume_shop.txt, kupon 90020-90022, /costume_shop _buy
+#define ENABLE_COSTUME_SHOP					// Kostum Magazasi (uiCostumeShop): NPC 9393, costume_shop.txt, kupon 90020-90022, /costume_shop _buy
 #define ENABLE_GLOBAL_RANKING						// Kuresel Siralama (reference Baerim uiRanking): /global_rank _load, haftalik tablo global_ranking
 #define ENABLE_GUILD_QUEST							// Lonca Gorevleri (reference Baerim guild.json quest): /guild_quest info|start|abort|rank, /get_guild_quest_reward
 #define ENABLE_GUILD_DONATION						// Lonca Altini/Gumusu, Lonca Bagisi ve Lonca Fisiltisi (reference Baerim DonationGoldWindow, SendWhisperGuild)
@@ -375,7 +375,7 @@ enum eAnkaDefines {
 #define ENABLE_FIX_SWAP_ITEM						// Slot uyuþmazlýðý nedeniyle ekipman deðiþtirilememesi sorununu giderir.
 #define ENABLE_RELOAD_COMMAND_ALL_CORES  			// Reload komutunun tüm core’lara P2P üzerinden senkron þekilde iletilmesini saðlar.
 #define ENABLE_ITEM_DUPE_FIX 						// Eþya iþlemlerinde oluþan senkronizasyon ve zamanlama hatalarýndan kaynaklý çoðaltma açýklarýný düzeltir.
-#define ENABLE_EXPLOIT_AUDIT_FIX					// 2026-11-08 dupe/exploit denetimi: DS arit + ticaret, switchbot ticaret, kanal degistirmede pencere kontrolu, yigin kusanma, hizli satista ruh bagi
+#define ENABLE_EXPLOIT_AUDIT_FIX					// Dupe/exploit denetimi: DS arit + ticaret, switchbot ticaret, kanal degistirmede pencere kontrolu, yigin kusanma, hizli satista ruh bagi
 #define ENABLE_FIX_EXP_DROP_STONES 					// Metin (Stone) yaratýklarýndan EXP düþme hesaplamalarýnda oluþan hatalarý giderir.
 #define ENABLE_MULTI_AFFIX_APPLY_SYSTEM 			// Tek iþlemde birden fazla efsun (bonus) eklenmesini saðlar.
 #define ENABLE_REGEN_RENEWAL 						// Regen event’lerinin baþlatýlma zamanýný sabitleyerek rastgele gecikmeleri ortadan kaldýrýr ve daha tutarlý spawn döngüsü saðlar.

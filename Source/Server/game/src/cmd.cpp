@@ -36,13 +36,13 @@ ACMD(do_guild_skill);
 #endif
 #ifdef ENABLE_GUILD_QUEST
 ACMD(do_guild_quest);
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 ACMD(do_costume_shop);
 #ifdef ENABLE_WARDROBE_SYSTEM
 ACMD(do_wardrobe);
 #endif
 #endif
-#ifdef ENABLE_TELEPORT_BAERIM
+#ifdef ENABLE_TELEPORT_MAP_WINDOW
 ACMD(do_teleport_map);
 #endif
 #ifdef ENABLE_DAMAGE_TRACE
@@ -541,13 +541,13 @@ struct command_info cmd_info[] =
 #endif
 #ifdef ENABLE_GUILD_QUEST
 	{ "guild_quest", do_guild_quest, 0, POS_DEAD, GM_PLAYER },
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 	{ "costume_shop", do_costume_shop, 0, POS_DEAD, GM_PLAYER },
 #ifdef ENABLE_WARDROBE_SYSTEM
 	{ "wardrobe", do_wardrobe, 0, POS_DEAD, GM_PLAYER },
 #endif
 #endif
-#ifdef ENABLE_TELEPORT_BAERIM
+#ifdef ENABLE_TELEPORT_MAP_WINDOW
 	{ "teleport_map", do_teleport_map, 0, POS_DEAD, GM_PLAYER },
 #endif
 #ifdef ENABLE_DAMAGE_TRACE

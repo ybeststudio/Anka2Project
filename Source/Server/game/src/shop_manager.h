@@ -27,7 +27,7 @@ public:
 	bool	StartShopping(LPCHARACTER pkChr, LPCHARACTER pkShopKeeper, int iShopVnum = 0);
 	void	StopShopping(LPCHARACTER ch);
 
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 	void	Buy(LPCHARACTER ch, WORD pos);
 #else
 	void	Buy(LPCHARACTER ch, BYTE pos);

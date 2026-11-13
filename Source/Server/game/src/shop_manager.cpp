@@ -133,7 +133,7 @@ bool CShopManager::InitializeShopEX(TShopTable* table, int size)
 			return false;
 		}
 
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 		// the tabs come from player.shopex: width x 8 slots in itemsEx (Baerim: the weapon shop grid has 10 columns),
 		// the old 5 x 9 = 45 grid overflowed items[40]
 		shopTable.width = (table->dwNPCVnum == 9001) ? 10 : 5;
@@ -161,7 +161,7 @@ bool CShopManager::InitializeShopEX(TShopTable* table, int size)
 			}
 
 			grid.Put(iPos, 1, item_table->bSize);
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 			shopTable.itemsEx[iPos] = table->items[j];
 #else
 			shopTable.items[iPos] = table->items[j];
@@ -347,7 +347,7 @@ void CShopManager::StopShopping(LPCHARACTER ch)
 	sys_log(0, "SHOP: END: %s", ch->GetName());
 }
 
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 void CShopManager::Buy(LPCHARACTER ch, WORD pos)
 #else
 void CShopManager::Buy(LPCHARACTER ch, BYTE pos)
@@ -569,7 +569,7 @@ bool ConvertToShopItemTable(IN CGroupNode* pNode, OUT TShopTableEx& shopTable)
 
 	int itemGroupSize = pItemGroup->GetRowCount();
 	std::vector <TShopItemTable> shopItems(itemGroupSize);
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 	// grid columns of the tab (Baerim: 5, weapon shop 10), 8 rows
 	int iWidth = 5;
 	pNode->GetValue("width", 0, iWidth);
@@ -622,7 +622,7 @@ bool ConvertToShopItemTable(IN CGroupNode* pNode, OUT TShopTableEx& shopTable)
 		std::sort(shopItems.rbegin(), shopItems.rend(), CompareShopItemName);
 	}
 
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 	// the tab is width x 8 slots (the old 5 x 9 = 45 grid overflowed items[40])
 	CGrid grid = CGrid(shopTable.width, 8);
 	memset(&shopTable.itemsEx[0], 0, sizeof(shopTable.itemsEx));
@@ -643,7 +643,7 @@ bool ConvertToShopItemTable(IN CGroupNode* pNode, OUT TShopTableEx& shopTable)
 		}
 
 		iPos = grid.FindBlank(1, item_table->bSize);
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 		if (iPos < 0)
 		{
 			sys_err("group %s: no room for vnum(%d) in the %dx8 grid", pNode->GetNodeName().c_str(), shopItems[i].vnum, shopTable.width);

@@ -1,8 +1,15 @@
+/*********************************************************************
+ * File Name : costume_shop.h
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 06-11-2026  
+ */
+
 #pragma once
 #include "../../common/service.h"
 #include <vector>
 
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 // Costume shop (reference Baerim uiCostumeShop / costumeshop module).
 // Entries come from locale/<locale>/costume_shop.txt:
 //	id	category	vnum	costume_coupons	mount_coupons	pet_coupons	start_time	end_time

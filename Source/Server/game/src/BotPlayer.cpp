@@ -1,3 +1,10 @@
+/*********************************************************************
+ * File Name : BotPlayer.cpp
+ * Author    : BestStudio
+ * Version   : 2.1.1
+ * Date      : 03-11-2025  
+ */
+
 #include "stdafx.h"
 
 #ifdef ENABLE_BOT_PLAYER

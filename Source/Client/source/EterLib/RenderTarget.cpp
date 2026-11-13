@@ -43,13 +43,13 @@ CRenderTarget::CRenderTarget(const DWORD width, const DWORD height) :
 
 	f_zoom = 0.0f;
 	m_renderTargetTexture = std::move(pTex);
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 	m_dwTextureWidth = width;
 	m_dwTextureHeight = height;
 #endif
 }
 
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 bool CRenderTarget::SetTransparent()
 {
 	auto pTex = std::make_unique<CGraphicRenderTargetTexture>();
@@ -142,7 +142,7 @@ void CRenderTarget::SelectModel(const int index, bool isFromScale)
 			m_v3Eye.y = -(fRaceHeight * 8.9f);
 			m_v3Eye.z = 0.0f;
 			m_v3Target.z = fRaceHeight / 2.0f;
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 			// GetHeight is only the extent; a model floating above the ground (flying pets) is centred once it is posed
 			m_iCenterOnBoundBox = 3;
 #endif
@@ -263,7 +263,7 @@ void CRenderTarget::RenderModel()
 	if (m_bShowModel)
 	{
 		m_pModel->Update();
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 		if (m_iCenterOnBoundBox > 0 && --m_iCenterOnBoundBox == 0)
 		{
 			D3DXVECTOR3 v3Min, v3Max;
@@ -277,7 +277,7 @@ void CRenderTarget::RenderModel()
 		}
 #endif
 		m_pModel->Render();
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 		// effects attached to the model (refine glow, shining, skill buffs) are drawn into the preview as well
 		m_pModel->GetGraphicThingInstanceRef().RenderAllAttachingEffectWiki();
 #endif

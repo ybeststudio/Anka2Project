@@ -1,6 +1,13 @@
+/*********************************************************************
+ * File Name : teleport_window.h
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 03-11-2026  
+ */
+
 #pragma once
 
-#ifdef ENABLE_TELEPORT_BAERIM
+#ifdef ENABLE_TELEPORT_MAP_WINDOW
 // Baerim teleport map window (uiTeleport, first tab of the dungeon window): /teleport_map <tpIdx>
 // Points come from locale/<locale>/teleport_points.txt: tpIdx x y minLevel maxLevel yang. The client never sends a position.
 enum ETeleportMapResult

@@ -596,7 +596,7 @@ extern void SendOfflineWhisperMessages(LPCHARACTER ch);
 #endif
 #ifdef ENABLE_GUILD_QUEST
 #include "guild_quest.h"
-#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#ifdef ENABLE_DUNGEON_INFO_WINDOW
 #include "dungeon_window.h"
 #endif
 #endif
@@ -719,7 +719,7 @@ void CInputLogin::Entergame(LPDESC d, const char * data)
 	ch->StartSaveEvent();
 	ch->StartRecoveryEvent();
 	ch->StartCheckSpeedHackEvent();
-#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#ifdef ENABLE_DUNGEON_INFO_WINDOW
 	DungeonWindow_OnEnterGame(ch);
 #endif
 #ifdef __DUNGEON_INFO__

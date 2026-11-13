@@ -233,7 +233,7 @@ SERVER3_CHANNEL_DICT = {
 }
 
 # Baerim login lists six channels
-if app.ENABLE_LOGIN_RENEWAL_BAERIM:
+if app.ENABLE_LOGIN_WINDOW_RENEWAL:
 	for ch in xrange(3, 7):
 		SERVER2_CHANNEL_DICT[ch] = {
 			"key" : 20 + ch,

@@ -43,7 +43,7 @@ const char *CPythonShop::GetTabName(BYTE tabIdx)
 	return m_aShoptabs[tabIdx].name.c_str();
 }
 
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 #define SHOP_TAB_SLOTS SHOP_EX_ITEM_MAX_NUM		// index = tab * 80 + slot (a plain shop is tab 0)
 #else
 #define SHOP_TAB_SLOTS SHOP_HOST_ITEM_MAX_NUM
@@ -954,7 +954,7 @@ void initshop()
 	PyObject *poModule = Py_InitModule("shop", s_methods);
 
 	PyModule_AddIntConstant(poModule, "SHOP_SLOT_COUNT", SHOP_HOST_ITEM_MAX_NUM);
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 	PyModule_AddIntConstant(poModule, "SHOP_EX_SLOT_COUNT", SHOP_EX_ITEM_MAX_NUM);
 #endif
 	PyModule_AddIntConstant(poModule, "SHOP_COIN_TYPE_GOLD", SHOP_COIN_TYPE_GOLD);

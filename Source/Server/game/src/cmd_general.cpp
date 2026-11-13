@@ -10,7 +10,7 @@
 #include "desc_client.h"
 #include "desc_manager.h"
 #include "char.h"
-#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#ifdef ENABLE_DUNGEON_INFO_WINDOW
 #include "dungeon_window.h"
 #endif
 #include "char_manager.h"
@@ -5021,7 +5021,7 @@ ACMD(do_dungeon_info)
 			return;
 		CHARACTER_MANAGER::Instance().SendDungeonRank(ch, mobIdx, rankIdx);
 	}
-#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#ifdef ENABLE_DUNGEON_INFO_WINDOW
 	else if (vecArgs[1] == "enter" || vecArgs[1] == "test" || vecArgs[1] == "stat_rank" || vecArgs[1] == "missions"
 		|| vecArgs[1] == "mission_claim" || vecArgs[1] == "mission_reload" || vecArgs[1] == "pc_id")
 		DungeonWindow_Command(ch, vecArgs);
@@ -8249,7 +8249,7 @@ ACMD(do_guild_quest_reward)
 }
 #endif
 
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 #include "costume_shop.h"
 ACMD(do_costume_shop)
 {
@@ -8265,7 +8265,7 @@ ACMD(do_wardrobe)
 #endif
 #endif
 
-#ifdef ENABLE_TELEPORT_BAERIM
+#ifdef ENABLE_TELEPORT_MAP_WINDOW
 #include "teleport_window.h"
 ACMD(do_teleport_map)
 {

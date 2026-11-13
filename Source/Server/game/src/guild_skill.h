@@ -1,3 +1,10 @@
+/*********************************************************************
+ * File Name : guild_skill.h
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 09-11-2026  
+ */
+
 #pragma once
 #include "../../common/service.h"
 

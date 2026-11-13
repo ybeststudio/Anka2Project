@@ -66,7 +66,7 @@ def SplitDescription(desc, limit):
 	return lines
 
 # Baerim tooltip: the model preview is always shown inside the tooltip (no "hold Ctrl" line)
-INLINE_MODEL_PREVIEW = getattr(app, "ENABLE_COSTUME_SHOP_BAERIM", 0)
+INLINE_MODEL_PREVIEW = getattr(app, "ENABLE_COSTUME_SHOP", 0)
 INLINE_PREVIEW_WIDTH = 170
 INLINE_PREVIEW_HEIGHT = 220
 INLINE_PREVIEW_BACKGROUND = "d:/ymir work/ui/game/render/render_target.png"	# Baerim preview background

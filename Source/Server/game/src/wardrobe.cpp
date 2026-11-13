@@ -1,3 +1,10 @@
+/*********************************************************************
+ * File Name : wardrobe.cpp
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 02-11-2026  
+ */
+
 #include "stdafx.h"
 #include "../../common/service.h"
 

@@ -1,3 +1,10 @@
+/*********************************************************************
+ * File Name : bonus_custom.cpp
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 01-11-2026  
+ */
+
 #include "stdafx.h"
 #include "../../common/service.h"
 

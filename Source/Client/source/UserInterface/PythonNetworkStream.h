@@ -208,7 +208,7 @@ class CPythonNetworkStream : public CNetworkStream, public CSingleton<CPythonNet
 
 		// Shop
 		bool SendShopEndPacket();
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 		bool SendShopBuyPacket(WORD wPos);
 #else
 		bool SendShopBuyPacket(BYTE byCount);

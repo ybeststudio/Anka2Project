@@ -1,7 +1,14 @@
+/*********************************************************************
+ * File Name : costume_shop.cpp
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 06-11-2026  
+ */
+
 #include "stdafx.h"
 #include "../../common/service.h"
 
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 #include "utils.h"
 #include "config.h"
 #include "char.h"

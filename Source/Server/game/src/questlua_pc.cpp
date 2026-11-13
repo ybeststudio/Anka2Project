@@ -4849,7 +4849,7 @@ teleport_area:
 	}
 #endif
 
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 	int pc_open_costume_shop(lua_State* L)
 	{
 		CQuestManager& q = CQuestManager::instance();
@@ -4913,7 +4913,7 @@ teleport_area:
 			{ "get_leadership",									pc_get_leadership						},
 			{ "getqf",											pc_get_quest_flag						},
 			{ "setqf",											pc_set_quest_flag						},
-#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#ifdef ENABLE_COSTUME_SHOP
 			{ "open_costume_shop",								pc_open_costume_shop					},
 #endif
 			{ "delqf",											pc_del_quest_flag						},

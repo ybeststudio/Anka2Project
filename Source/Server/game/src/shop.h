@@ -58,13 +58,13 @@ class CShop
 		void	RemoveAllGuests();
 
 #ifdef ENABLE_GOLD_LIMIT
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 		virtual long long	Buy(LPCHARACTER ch, WORD pos);
 #else
 		virtual long long	Buy(LPCHARACTER ch, BYTE pos);
 #endif
 #else
-#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_NPC_SHOP_TABS
 		virtual int	Buy(LPCHARACTER ch, WORD pos);
 #else
 		virtual int	Buy(LPCHARACTER ch, BYTE pos);

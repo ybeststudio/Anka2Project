@@ -1,3 +1,10 @@
+/*********************************************************************
+ * File Name : item_apply_random_table.cpp
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 05-11-2026  
+ */
+
 #include "stdafx.h"
 #include "../../common/service.h"
 

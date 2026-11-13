@@ -1,3 +1,10 @@
+/*********************************************************************
+ * File Name : mokoko.h
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 10-11-2026  
+ */
+
 #pragma once
 
 #ifdef ENABLE_MOKOKO_SYSTEM

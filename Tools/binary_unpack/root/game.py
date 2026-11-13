@@ -529,7 +529,7 @@ class GameWindow(ui.ScriptWindow):
 			if self.interface:
 				self.interface.OpenRanking()
 
-	if app.ENABLE_TELEPORT_BAERIM:
+	if app.ENABLE_TELEPORT_MAP_WINDOW:
 		def __TeleportMapResult(self, result, tpIdx):
 			import uiTeleportBaerim
 			uiTeleportBaerim.ShowResult(int(result), int(tpIdx))
@@ -571,7 +571,7 @@ class GameWindow(ui.ScriptWindow):
 			import uiMokokoRewards
 			uiMokokoRewards.OnRewardResult(result, rewardID)
 
-	if app.ENABLE_DUNGEON_WINDOW_BAERIM:
+	if app.ENABLE_DUNGEON_INFO_WINDOW:
 		# DungeonWindowResult <code> <boss>: answer to /dungeon_info enter|test
 		def __DungeonWindowResult(self, result, bossIdx):
 			import uiDungeonBaerim
@@ -643,7 +643,7 @@ class GameWindow(ui.ScriptWindow):
 		def __WardrobeProgress(self, costumes, level, totalExp, expInLevel, expPerLevel):
 			self.__WardrobeCommand("OnProgress", costumes, level, totalExp, expInLevel, expPerLevel)
 
-	if app.ENABLE_COSTUME_SHOP_BAERIM:
+	if app.ENABLE_COSTUME_SHOP:
 		# CostumeShopClear / CostumeShopAdd <id,cat,vnum,c1,c2,c3,start,end;...> / CostumeShopOpen <server time> / CostumeShopResult <code>
 		def __CostumeShopClear(self):
 			if self.interface:
@@ -2653,7 +2653,7 @@ class GameWindow(ui.ScriptWindow):
 
 	# "Lonca Bagisi" / "Lonca Fisiltisi" (server ENABLE_GUILD_DONATION)
 	def __GetBaerimGuildWnd(self):
-		if app.ENABLE_GUILD_RENEWAL_BAERIM and self.interface:
+		if app.ENABLE_GUILD_WINDOW_RENEWAL and self.interface:
 			return self.interface.wndGuild
 		return None
 
@@ -3163,7 +3163,7 @@ class GameWindow(ui.ScriptWindow):
 
 		if app.ENABLE_RENEWAL_TELEPORT_SYSTEM:
 			serverCommandList["OpenWarpWindow"] = self.__OpenWarpWindow
-		if app.ENABLE_TELEPORT_BAERIM:
+		if app.ENABLE_TELEPORT_MAP_WINDOW:
 			serverCommandList["TeleportMapResult"] = self.__TeleportMapResult
 		if app.ENABLE_DAMAGE_TRACE:
 			serverCommandList["DamageTraceBegin"] = self.__DamageTraceBegin
@@ -3193,13 +3193,13 @@ class GameWindow(ui.ScriptWindow):
 			serverCommandList["WardrobeProgress"] = self.__WardrobeProgress
 			serverCommandList["OpenWardrobeInventory"] = self.__WardrobeOpenInventory
 
-		if app.ENABLE_COSTUME_SHOP_BAERIM:
+		if app.ENABLE_COSTUME_SHOP:
 			serverCommandList["CostumeShopClear"] = self.__CostumeShopClear
 			serverCommandList["CostumeShopAdd"] = self.__CostumeShopAdd
 			serverCommandList["CostumeShopOpen"] = self.__CostumeShopOpen
 			serverCommandList["CostumeShopResult"] = self.__CostumeShopResult
 
-		if app.ENABLE_DUNGEON_WINDOW_BAERIM:
+		if app.ENABLE_DUNGEON_INFO_WINDOW:
 			serverCommandList["DungeonWindowResult"] = self.__DungeonWindowResult
 			serverCommandList["DungeonStatRank"] = self.__DungeonStatRank
 			serverCommandList["DungeonMissionData"] = self.__DungeonMissionData

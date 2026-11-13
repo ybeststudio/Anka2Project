@@ -1,3 +1,10 @@
+/*********************************************************************
+ * File Name : damage_trace.h
+ * Author    : BestStudio
+ * Version   : 1.0.0
+ * Date      : 10-11-2026  
+ */
+
 #pragma once
 
 // Baerim "Hasar Takibi" (damage tracker): records the steps of the damage formula for one real hit of a player

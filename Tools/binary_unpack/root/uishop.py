@@ -22,7 +22,7 @@ import uiScriptLocale
 if app.ENABLE_SHOP_REPURCHASE:
 	import uiShopRepurchase
 
-if app.ENABLE_SHOP_TABS_BAERIM:
+if app.ENABLE_NPC_SHOP_TABS:
 	# Baerim uiShop.ShopDialog (runtime dump Reference/pydump_runtime/shopprobe): window 350x331 (wide 510x331), left box with
 	# category buttons 161x38 every 40 px, item grid at (180, 34) 5x8 or 10x8, "Satin Al" / "Sat" 67x24 at y 295
 	SHOP_PATH = "d:/ymir work/ui/game/shop/%s"
@@ -62,7 +62,7 @@ class ShopDialog(ui.ScriptWindow):
 		ui.ScriptWindow.__del__(self)
 
 	def __GetRealIndex(self, i):
-		if app.ENABLE_SHOP_TABS_BAERIM and getattr(self, "bmActive", False):
+		if app.ENABLE_NPC_SHOP_TABS and getattr(self, "bmActive", False):
 			return self.tabIdx * shop.SHOP_EX_SLOT_COUNT + i
 		return self.tabIdx * shop.SHOP_SLOT_COUNT + i
 
@@ -72,7 +72,7 @@ class ShopDialog(ui.ScriptWindow):
 		setItemID = self.itemSlotWindow.SetItemSlot
 
 		slotCount = shop.SHOP_SLOT_COUNT
-		if app.ENABLE_SHOP_TABS_BAERIM and getattr(self, "bmActive", False):
+		if app.ENABLE_NPC_SHOP_TABS and getattr(self, "bmActive", False):
 			slotCount = self.bmWidth * SHOP_GRID_ROWS
 		for i in xrange(slotCount):
 			idx = self.__GetRealIndex(i)
@@ -164,12 +164,12 @@ class ShopDialog(ui.ScriptWindow):
 		self.tabIdx = 0
 		self.coinType = shop.SHOP_COIN_TYPE_GOLD
 
-		if app.ENABLE_SHOP_TABS_BAERIM:
+		if app.ENABLE_NPC_SHOP_TABS:
 			self.__BuildBaerim()
 
 		self.Refresh()
 
-	if app.ENABLE_SHOP_TABS_BAERIM:
+	if app.ENABLE_NPC_SHOP_TABS:
 		def __BuildBaerim(self):
 			self.bmActive = False
 			self.bmWidth = 5
@@ -438,9 +438,9 @@ class ShopDialog(ui.ScriptWindow):
 
 		self.tabIdx = 0
 
-		if app.ENABLE_SHOP_TABS_BAERIM:
+		if app.ENABLE_NPC_SHOP_TABS:
 			self.__LeaveBaerim()
-		if app.ENABLE_SHOP_TABS_BAERIM and not isPrivateShop:
+		if app.ENABLE_NPC_SHOP_TABS and not isPrivateShop:
 			self.__EnterBaerim(vid)
 		elif app.ENABLE_RENEWAL_SHOPEX:
 			if isPrivateShop:
@@ -482,7 +482,7 @@ class ShopDialog(ui.ScriptWindow):
 		self.SetTop()
 
 		if app.ENABLE_SHOP_REPURCHASE:
-			if isPrivateShop or (app.ENABLE_SHOP_TABS_BAERIM and self.bmActive):
+			if isPrivateShop or (app.ENABLE_NPC_SHOP_TABS and self.bmActive):
 				if self.__repurchase_shop_button:
 					self.__repurchase_shop_button.Hide()
 			else:
