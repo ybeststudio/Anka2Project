@@ -7,6 +7,9 @@
 #include "config.h"
 #include "char.h"
 #include "char_manager.h"
+#ifdef ENABLE_GLOBAL_RANKING
+#include "global_ranking.h"
+#endif
 #include "item_manager.h"
 #include "desc.h"
 #include "desc_client.h"
@@ -52,6 +55,10 @@
 #include "guild.h"
 #include "guild_skill.h"
 #endif
+#endif
+
+#ifdef ENABLE_WARDROBE_AUTO_STORE
+#include "wardrobe.h"
 #endif
 
 #ifdef ENABLE_QUEEN_NETHIS
@@ -354,6 +361,15 @@ LPITEM CHARACTER::GetItem(TItemPos Cell) const
 	return NULL;
 }
 
+#ifdef ENABLE_WARDROBE_SYSTEM
+LPITEM CHARACTER::GetWardrobeItem(WORD wCell) const
+{
+	if (wCell >= WARDROBE_MAX_NUM || !m_pItemStorage)
+		return NULL;
+	return ItemStorage().pWardrobeItems[wCell];
+}
+#endif
+
 #ifdef ENABLE_PICKUP_ITEM_EFFECT
 void CHARACTER::SetItem(TItemPos Cell, LPITEM pItem, bool bHighlight)
 #else
@@ -513,6 +529,21 @@ void CHARACTER::SetItem(TItemPos Cell, LPITEM pItem)
 	break;
 #endif
 
+#ifdef ENABLE_WARDROBE_SYSTEM
+	case WARDROBE:
+	{
+		if (wCell >= WARDROBE_MAX_NUM)
+		{
+			sys_err("CHARACTER::SetItem: invalid wardrobe item cell %d", wCell);
+			return;
+		}
+		if (pItem && ItemStorage().pWardrobeItems[wCell])
+			return;
+		ItemStorage().pWardrobeItems[wCell] = pItem;
+	}
+	break;
+#endif
+
 	default:
 		sys_err ("Invalid Inventory type %d", window_type);
 		return;
@@ -611,6 +642,11 @@ void CHARACTER::SetItem(TItemPos Cell, LPITEM pItem)
 				pItem->SetWindow(SWITCHBOT);
 				break;
 #endif
+#ifdef ENABLE_WARDROBE_SYSTEM
+			case WARDROBE:
+				pItem->SetWindow(WARDROBE);
+				break;
+#endif
 		}
 	}
 }
@@ -687,6 +723,20 @@ void CHARACTER::ClearItem()
 			M2_DESTROY_ITEM(item);
 		}
 	}
+
+#ifdef ENABLE_WARDROBE_SYSTEM
+	for (i = 0; i < WARDROBE_MAX_NUM; ++i)
+	{
+		if ((item = GetWardrobeItem(i)))
+		{
+			item->SetSkipSave(true);
+			ITEM_MANAGER::instance().FlushDelayedSave(item);
+
+			item->RemoveFromCharacter();
+			M2_DESTROY_ITEM(item);
+		}
+	}
+#endif
 
 #ifdef ENABLE_RENEWAL_SWITCHBOT
 	for (i = 0; i < SWITCHBOT_SLOT_COUNT; ++i)
@@ -1423,6 +1473,9 @@ void NotifyRefineSuccess(LPCHARACTER ch, LPITEM item, const char* way)
 	if (NULL != ch && item != NULL)
 	{
 		ch->ChatPacket(CHAT_TYPE_COMMAND, "RefineSuceeded");
+#ifdef ENABLE_GLOBAL_RANKING
+		GlobalRanking_Add(ch, GLOBAL_RANK_REFINE_SUCCESS);
+#endif
 
 		LogManager::instance().RefineLog(ch->GetPlayerID(), item->GetName(), item->GetID(), item->GetRefineLevel(), 1, way);
 	}
@@ -1433,6 +1486,9 @@ void NotifyRefineFail(LPCHARACTER ch, LPITEM item, const char* way, int success 
 	if (NULL != ch && NULL != item)
 	{
 		ch->ChatPacket(CHAT_TYPE_COMMAND, "RefineFailed");
+#ifdef ENABLE_GLOBAL_RANKING
+		GlobalRanking_Add(ch, GLOBAL_RANK_REFINE_FAIL);
+#endif
 
 		LogManager::instance().RefineLog(ch->GetPlayerID(), item->GetName(), item->GetID(), item->GetRefineLevel(), success, way);
 	}
@@ -2729,6 +2785,41 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot use this in the duel arena."));
 		return false;
 	}
+
+#ifdef ENABLE_TIME_BONUS_COSTUME
+	// Baerim "Kostum Bonus Suresi" (55320-55323, 55327): dragged onto a costume, adds value0 seconds of bonus time
+	if ((item->GetVnum() >= 55320 && item->GetVnum() <= 55323) || item->GetVnum() == 55327)
+	{
+		LPITEM pkCostume = NULL;
+		if (!IsValidItemPosition(DestCell) || !(pkCostume = GetItem(DestCell)))
+		{
+			ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Drag the bonus time onto a costume."));
+			return false;
+		}
+		if (pkCostume == item || pkCostume->IsExchanging() || !pkCostume->IsCostumeBonusTimeItem())
+		{
+			ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The bonus time can only be added to a costume."));
+			return false;
+		}
+		long lExpire = pkCostume->GetSocket(COSTUME_BONUS_EXPIRE_SOCKET);
+		if (lExpire == COSTUME_BONUS_PERMANENT_EXPIRE_TIME)
+		{
+			ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The bonuses of this costume are permanent."));
+			return false;
+		}
+		const long lNow = get_global_time();
+		lExpire = MAX(lExpire, lNow) + item->GetValue(0);
+		pkCostume->SetSocket(COSTUME_BONUS_EXPIRE_SOCKET, lExpire);
+		item->SetCount(item->GetCount() - 1);
+		if (pkCostume->IsEquipped())
+		{
+			ComputePoints();
+			PointsPacket();
+		}
+		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The bonus time of the costume was extended."));
+		return true;
+	}
+#endif
 
 	// @fixme402 (IsLoadedAffect to block affect hacking)
 	if (!IsLoadedAffect())
@@ -6463,6 +6554,9 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 											item2->ChangeAttrCostumeHair();
 										else
 											item2->ChangeAttrCostume();
+#ifdef ENABLE_GLOBAL_RANKING
+										GlobalRanking_Add(this, GLOBAL_RANK_SWITCH_COSTUME);
+#endif
 
 										item->SetCount(item->GetCount() - 1);
 										ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have changed the upgrade."));
@@ -6689,6 +6783,9 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 										}
 										item2->ChangeAttribute();
 									}
+#ifdef ENABLE_GLOBAL_RANKING
+									GlobalRanking_Add(this, GLOBAL_RANK_SWITCH_ITEM);
+#endif
 
 									ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have changed the upgrade."));
 
@@ -8024,6 +8121,12 @@ bool CHARACTER::SellItem(TItemPos Cell)
 	if (IS_SET(item->GetAntiFlag(), ITEM_ANTIFLAG_SELL))
 		return false;
 
+#if defined(ENABLE_EXPLOIT_AUDIT_FIX) && defined(ENABLE_SEALBIND_SYSTEM)
+	// same rule as the NPC shop sell (CShopManager::Sell): soul bound items are not sold
+	if (item->IsSealed())
+		return false;
+#endif
+
 	if (quest::CQuestManager::instance().GetPCForce(GetPlayerID())->IsRunning() == true)
 		return false;
 
@@ -8963,6 +9066,9 @@ bool CHARACTER::PickupItem(DWORD dwVID)
 				char szHint[32 + 1];
 				snprintf(szHint, sizeof(szHint), "%s %u %u", item->GetName(), item->GetCount(), item->GetOriginalVnum());
 				LogManager::instance().ItemLog(this, item, "GET", szHint);
+#ifdef ENABLE_WARDROBE_AUTO_STORE
+				Wardrobe_StoreFromInventory(this, item);
+#endif
 #ifdef ENABLE_RENEWAL_SPECIAL_CHAT
 				SendPickupItemPacket(item->GetVnum());
 #else
@@ -9104,6 +9210,9 @@ bool CHARACTER::PickupItem(DWORD dwVID)
 			char szHint[32+1];
 			snprintf(szHint, sizeof(szHint), "%s %u %u", item->GetName(), item->GetCount(), item->GetOriginalVnum());
 			LogManager::instance().ItemLog(owner, item, "GET", szHint);
+#ifdef ENABLE_WARDROBE_AUTO_STORE
+			Wardrobe_StoreFromInventory(owner, item);
+#endif
 
 			if (owner == this)
 #ifdef ENABLE_RENEWAL_SPECIAL_CHAT
@@ -9278,6 +9387,10 @@ bool CHARACTER::UnequipItem(LPITEM item)
 	if (false == CanUnequipNow(item))
 		return false;
 
+#ifdef ENABLE_WARDROBE_AUTO_STORE
+	const int iWardrobeCell = Wardrobe_AutoStoreCell(this, item);	// Baerim: the costume goes back into the wardrobe storage
+#endif
+
 	if (item->IsDragonSoul())
 		pos = GetEmptyDragonSoulInventory(item);
 #ifdef ENABLE_SPECIAL_INVENTORY
@@ -9309,6 +9422,18 @@ bool CHARACTER::UnequipItem(LPITEM item)
 #endif
 
 	item->RemoveFromCharacter();
+#ifdef ENABLE_WARDROBE_AUTO_STORE
+	if (iWardrobeCell >= 0)
+	{
+#ifdef ENABLE_PICKUP_ITEM_EFFECT
+		item->AddToCharacter(this, TItemPos(WARDROBE, iWardrobeCell), false);
+#else
+		item->AddToCharacter(this, TItemPos(WARDROBE, iWardrobeCell));
+#endif
+		Wardrobe_OnUnequipStored(this, item);
+	}
+	else
+#endif
 	if (item->IsDragonSoul())
 		item->AddToCharacter(this, TItemPos(DRAGON_SOUL_INVENTORY, pos));
 #ifdef ENABLE_SPECIAL_INVENTORY
@@ -9423,6 +9548,24 @@ bool CHARACTER::EquipItem(LPITEM item, int iCandidateCell)
 #endif
 
 	// Fix
+#ifdef ENABLE_EXPLOIT_AUDIT_FIX
+	// one piece of a stack goes on only into a free slot; a failed equip gives the piece back (it was an orphan item and a lost unit)
+	if (item->GetCount() > 1 && !GetWear(iWearCell))
+	{
+		LPITEM item2 = ITEM_MANAGER::instance().CreateItem(item->GetVnum(), 1);
+		if (!item2)
+			return false;
+		if (!item2->EquipTo(this, iWearCell))
+		{
+			M2_DESTROY_ITEM(item2);
+			return false;
+		}
+		item->SetCount(item->GetCount() - 1);
+
+		if (iWearCell == 8)
+			return false;
+	}
+#else
 	if (item->GetCount() > 1)
 	{
 		item->SetCount(item->GetCount() - 1);
@@ -9432,6 +9575,7 @@ bool CHARACTER::EquipItem(LPITEM item, int iCandidateCell)
 		if (iWearCell == 8)
 			return false;
 	}
+#endif
 
 	DWORD dwCurTime = get_dword_time();
 
@@ -9520,10 +9664,12 @@ bool CHARACTER::EquipItem(LPITEM item, int iCandidateCell)
 		else
 		{
 			BYTE bOldCell = item->GetCell();
+			const BYTE bOldWindow = item->GetWindow();
 
 			if (item->EquipTo(this, iWearCell))
 			{
-				SyncQuickslot(QUICKSLOT_TYPE_ITEM, bOldCell, iWearCell);
+				if (bOldWindow == INVENTORY)	// an item from another window (wardrobe) has no inventory quickslot
+					SyncQuickslot(QUICKSLOT_TYPE_ITEM, bOldCell, iWearCell);
 			}
 		}
 	}
@@ -10131,6 +10277,11 @@ void CHARACTER::AutoGiveItem(LPITEM item, bool longOwnerShip)
 		sys_err ("item %d 's owner exists!", item->GetID());
 		return;
 	}
+
+#ifdef ENABLE_WARDROBE_AUTO_STORE
+	if (Wardrobe_StoreNewItem(this, item))
+		return;
+#endif
 
 #ifdef ENABLE_AUTOMATIC_PICK_UP_SYSTEM
 #ifdef ENABLE_STACK_LIMIT
@@ -10975,38 +11126,6 @@ bool CHARACTER::CanReceiveItem(LPCHARACTER from, LPITEM item) const
 				return false;
 			}
 			break;
-#ifdef ENABLE_RIDING_EXTENDED
-		case 20149:
-		case 20150:
-		case 20151:
-			if (item->GetVnum() == ITEM_REVIVE_HORSE_4)
-			{
-				if (!IsDead())
-				{
-					from->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Monkey Herbs cannot be fed to living horses. It is used to revive dead horses."));
-					return false;
-				}
-				return true;
-			}
-			else if (item->GetVnum() == ITEM_HORSE_FOOD_4)
-			{
-				if (IsDead())
-				{
-					from->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot feed a dead Horse."));
-					return false;
-				}
-	
-				// At Doyduðunda Beslenmesini Engelleyin
-				unsigned char horselevel = from->GetHorseLevel();
-				if (from->GetHorseHealth() >= c_aHorseStat[horselevel].iMaxHealth)
-				{
-					from->ChatPacket (CHAT_TYPE_INFO, LC_TEXT("Your horse's health has reached the maximum, you cannot feed it any more.."));
-					return false;
-				}
-				return true;
-			}
-			break;
-#endif
 	}
 
 	{
@@ -11149,25 +11268,6 @@ void CHARACTER::ReceiveItem(LPCHARACTER from, LPITEM item)
 			}
 			break;
 
-#ifdef ENABLE_RIDING_EXTENDED
-		case 20149:
-		case 20150:
-		case 20151:
-			if (item->GetVnum() == ITEM_REVIVE_HORSE_4)
-			{
-				from->ReviveHorse();
-				item->SetCount(item->GetCount() - 1);
-				from->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You fed the Horse with Herbs."));
-			}
-			else if (item->GetVnum() == ITEM_HORSE_FOOD_4)
-			{
-				from->FeedHorse();
-				from->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have fed the Horse."));
-				item->SetCount(item->GetCount() - 1);
-				EffectPacket(SE_HPUP_RED);
-			}
-			break;
-#endif
 
 		default:
 			sys_log(0, "TakeItem %s %d %s", from->GetName(), GetRaceNum(), item->GetName());
@@ -11833,6 +11933,20 @@ bool CHARACTER::CanEquipNow(const LPITEM item, const TItemPos& srcCell, const TI
 #endif
 
 #ifdef ENABLE_MOUNT_PET_SKIN
+#ifdef ENABLE_MOUNT_SKIN_SWAP_FIX
+	// Baerim: the mount costume changes the look at once, also while riding (RefreshMountLook mounts again)
+	if (item->IsCostumePetSkin() && !CanChangeCostumePetSkin())
+	{
+		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You can change your pet costume again in a moment."));
+		return false;
+	}
+
+	if (item->IsCostumeMountSkin() && !CanChangeCostumeMountSkin())
+	{
+		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You can change your mount costume again in a moment."));
+		return false;
+	}
+#else
 	if (item->IsCostumePetSkin() && !CanChangeCostumePetSkin())
 	{
 		LocaleChatPacket(CHAT_TYPE_INFO, 496, "");
@@ -11850,6 +11964,7 @@ bool CHARACTER::CanEquipNow(const LPITEM item, const TItemPos& srcCell, const TI
 		LocaleChatPacket(CHAT_TYPE_INFO, 496, "");
 		return false;
 	}
+#endif
 #endif
 
 	if (item->GetType() == ITEM_RING) // Fix
@@ -11928,6 +12043,20 @@ bool CHARACTER::CanUnequipNow(const LPITEM item, const TItemPos & srcCell, const
 	}
 
 #ifdef ENABLE_MOUNT_PET_SKIN
+#ifdef ENABLE_MOUNT_SKIN_SWAP_FIX
+	// Baerim: the mount costume changes the look at once, also while riding (RefreshMountLook mounts again)
+	if (item->IsCostumePetSkin() && !CanChangeCostumePetSkin())
+	{
+		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You can change your pet costume again in a moment."));
+		return false;
+	}
+
+	if (item->IsCostumeMountSkin() && !CanChangeCostumeMountSkin())
+	{
+		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You can change your mount costume again in a moment."));
+		return false;
+	}
+#else
 	if (item->IsCostumePetSkin() && !CanChangeCostumePetSkin())
 	{
 		LocaleChatPacket(CHAT_TYPE_INFO, 496, "");
@@ -11945,6 +12074,7 @@ bool CHARACTER::CanUnequipNow(const LPITEM item, const TItemPos & srcCell, const
 		LocaleChatPacket(CHAT_TYPE_INFO, 496, "");
 		return false;
 	}
+#endif
 #endif
 
 	return true;

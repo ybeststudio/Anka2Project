@@ -300,6 +300,8 @@ void GuildDonation_AddGold(CGuild* guild, int gold)
 
 bool GuildDonation_TakeGold(CGuild* guild, int gold)
 {
+	if (gold < 0)
+		return false;	// a negative amount would add coins
 	std::unique_ptr<SQLMsg> pMsg(DBManager::instance().DirectQuery(
 		"UPDATE guild_donation_coin SET gold = gold - %d WHERE guild_id = %u AND gold >= %d", gold, guild->GetID(), gold));
 	if (pMsg->Get()->uiAffectedRows == 0)
@@ -313,6 +315,8 @@ bool GuildDonation_TakeGold(CGuild* guild, int gold)
 
 bool GuildDonation_TakeSilver(LPCHARACTER ch, int silver)
 {
+	if (silver < 0)
+		return false;	// a negative amount would add coins
 	std::unique_ptr<SQLMsg> pMsg(DBManager::instance().DirectQuery(
 		"UPDATE guild_donation_member SET silver = silver - %d WHERE pid = %u AND silver >= %d", silver, ch->GetPlayerID(), silver));
 	if (pMsg->Get()->uiAffectedRows == 0)

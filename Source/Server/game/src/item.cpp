@@ -32,6 +32,9 @@
 #ifdef ENABLE_PET_SYSTEM
 	#include "PetSystem.h"
 #endif
+#ifdef ENABLE_WARDROBE_AUTO_STORE
+#include "wardrobe.h"
+#endif
 
 CItem::CItem(DWORD dwVnum)
 	: m_dwVnum(dwVnum), m_bWindow(0), m_dwID(0), m_bEquipped(false), m_dwVID(0), m_wCell(0), m_dwCount(0), m_lFlag(0), m_dwLastOwnerPID(0),
@@ -47,6 +50,9 @@ CItem::CItem(DWORD dwVnum)
 #endif
 #ifdef ENABLE_SET_ITEM
 	, m_dwSetValue(0)
+#endif
+#ifdef ENABLE_TIME_BONUS_COSTUME
+	, m_bCostumeBonusApplied(false), m_pkCostumeBonusExpireEvent(NULL)
 #endif
 {
 	memset( &m_alSockets, 0, sizeof(m_alSockets) );
@@ -84,6 +90,10 @@ void CItem::Initialize()
 	m_pkRealTimeExpireEvent = NULL;
 
 	m_pkAccessorySocketExpireEvent = NULL;
+#ifdef ENABLE_TIME_BONUS_COSTUME
+	m_bCostumeBonusApplied = false;
+	m_pkCostumeBonusExpireEvent = NULL;
+#endif
 
 	m_bSkipSave = false;
 	m_bIsChangingAttr = false;
@@ -107,6 +117,9 @@ void CItem::Destroy()
 	event_cancel(&m_pkAccessorySocketExpireEvent);
 #ifdef ENABLE_AURA_COSTUME_SYSTEM
 	event_cancel(&m_pkAuraBoostSocketExpireEvent);
+#endif
+#ifdef ENABLE_TIME_BONUS_COSTUME
+	event_cancel(&m_pkCostumeBonusExpireEvent);
 #endif
 
 	CEntity::Destroy();
@@ -389,6 +402,15 @@ LPITEM CItem::RemoveFromCharacter()
 				}
 			}
 #endif
+#ifdef ENABLE_WARDROBE_SYSTEM
+			else if (m_bWindow == WARDROBE)
+			{
+				if (m_wCell >= WARDROBE_MAX_NUM)
+					sys_err("CItem::RemoveFromCharacter: pos >= WARDROBE_MAX_NUM");
+				else
+					pOwner->SetItem(TItemPos(WARDROBE, m_wCell), NULL);
+			}
+#endif
 			else
 			{
 				TItemPos cell(INVENTORY, m_wCell);
@@ -427,6 +449,15 @@ bool CItem::AddToCharacter(LPCHARACTER ch, TItemPos Cell)
 {
 	assert(GetSectree() == NULL);
 	assert(m_pOwner == NULL);
+#ifdef ENABLE_WARDROBE_AUTO_STORE
+	// every way into the main inventory (trade, shop, safebox, mall, taking off ...): costumes go into the wardrobe storage
+	if (INVENTORY == Cell.window_type && Cell.cell < INVENTORY_MAX_NUM)
+	{
+		const int iWardrobeCell = Wardrobe_RedirectCell(ch, this);
+		if (iWardrobeCell >= 0)
+			Cell = TItemPos(WARDROBE, iWardrobeCell);
+	}
+#endif
 	WORD pos = Cell.cell;
 	BYTE window_type = Cell.window_type;
 
@@ -454,6 +485,16 @@ bool CItem::AddToCharacter(LPCHARACTER ch, TItemPos Cell)
 		if (m_wCell >= SWITCHBOT_SLOT_COUNT)
 		{
 			sys_err("CItem::AddToCharacter:switchbot cell overflow: %s to %s cell %d", m_pProto->szName, ch->GetName(), m_wCell);
+			return false;
+		}
+	}
+#endif
+#ifdef ENABLE_WARDROBE_SYSTEM
+	else if (WARDROBE == window_type)
+	{
+		if (pos >= WARDROBE_MAX_NUM)
+		{
+			sys_err("CItem::AddToCharacter: wardrobe cell overflow: %s to %s cell %d", m_pProto->szName, ch->GetName(), pos);
 			return false;
 		}
 	}
@@ -675,6 +716,10 @@ int CItem::FindEquipCell(LPCHARACTER ch, int iCandidateCell)
 		else if (GetSubType() == COSTUME_PET)
 			return WEAR_COSTUME_PET;
 #endif
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+		else if (GetSubType() == COSTUME_ACCE_SKIN)
+			return WEAR_COSTUME_ACCE_SKIN;
+#endif
 #ifdef ENABLE_AURA_COSTUME_SYSTEM
 		else if (GetSubType() == COSTUME_AURA)
 			return WEAR_COSTUME_AURA;
@@ -791,10 +836,23 @@ void CItem::ModifyPoints(bool bAdd)
 	{
 		if (m_pProto->bType == ITEM_WEAPON || m_pProto->bType == ITEM_ARMOR)
 		{
+#ifdef ENABLE_ITEM_TIME_SOCKET_FIX
+			// a time-limited weapon / armour keeps its expiry time in socket 0, not a metin stone
+			bool bTimeSocket = false;
+			for (int iLimit = 0; iLimit < ITEM_LIMIT_MAX_NUM; ++iLimit)
+			{
+				if (LIMIT_REAL_TIME == m_pProto->aLimits[iLimit].bType || LIMIT_REAL_TIME_START_FIRST_USE == m_pProto->aLimits[iLimit].bType)
+					bTimeSocket = true;
+			}
+#endif
 			for (int i = 0; i < ITEM_SOCKET_MAX_NUM; ++i)
 			{
 				DWORD dwVnum;
 
+#ifdef ENABLE_ITEM_TIME_SOCKET_FIX
+				if (bTimeSocket && i == 0)
+					continue;
+#endif
 				if ((dwVnum = GetSocket(i)) <= 2)
 					continue;
 
@@ -983,7 +1041,19 @@ void CItem::ModifyPoints(bool bAdd)
 	}
 #endif
 
+#ifdef ENABLE_TIME_BONUS_COSTUME
+	if (bAdd)
+	{
+		m_bCostumeBonusApplied = IsCostumeBonusActive();
+		if (m_bCostumeBonusApplied && IsCostumeBonusTimeItem())
+			StartCostumeBonusExpireEvent();
+	}
+	const bool bApplyAttributes = IsCostumeBonusTimeItem() ? m_bCostumeBonusApplied : true;	// removal mirrors what was added
+#else
+	const bool bApplyAttributes = true;
+#endif
 	if (true == CItemVnumHelper::IsRamadanMoonRing(GetVnum()) || true == CItemVnumHelper::IsHalloweenCandy(GetVnum()) || true == CItemVnumHelper::IsHappinessRing(GetVnum()) || true == CItemVnumHelper::IsLovePendant(GetVnum())) {}
+	else if (!bApplyAttributes) {}
 	else
 	{
 		for (int i = 0; i < ITEM_ATTRIBUTE_MAX_NUM; ++i)
@@ -1183,7 +1253,31 @@ void CItem::ModifyPoints(bool bAdd)
 						toSetValue += ACCE_EFFECT_VNUM;
 
 					toSetValue = (true == bAdd) ? toSetValue : 0;
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+					// a worn sash skin keeps its look; the sash only adds / removes its glow
+					if (LPITEM pSkin = m_pOwner->GetWear(WEAR_COSTUME_ACCE_SKIN))
+					{
+						toSetValue = pSkin->GetVnum() - ACCE_BASE_VNUM;
+						if (bAdd && GetSocket(ACCE_ABSORPTION_SOCKET) >= ACCE_EFFECT_FROM_ABS)
+							toSetValue += ACCE_EFFECT_VNUM;
+					}
+#endif
 					toSetPart = PART_ACCE;
+				}
+#endif
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+				else if (GetSubType() == COSTUME_ACCE_SKIN)
+				{
+					// sash skin: PART_ACCE shows the skin model (with the glow of the worn sash); without it the sash comes back
+					toSetPart = PART_ACCE;
+					LPITEM pAcce = m_pOwner->GetWear(WEAR_COSTUME_ACCE);
+					const bool bGlow = pAcce && pAcce->GetSocket(ACCE_ABSORPTION_SOCKET) >= ACCE_EFFECT_FROM_ABS;
+					if (bAdd)
+						toSetValue = GetVnum() - ACCE_BASE_VNUM;
+					else
+						toSetValue = pAcce ? pAcce->GetVnum() - ACCE_BASE_VNUM : 0;
+					if (toSetValue && bGlow)
+						toSetValue += ACCE_EFFECT_VNUM;
 				}
 #endif
 
@@ -1550,6 +1644,25 @@ long CItem::GetValue(DWORD idx)
 	assert(idx < ITEM_VALUES_MAX_NUM);
 	return GetProto()->alValues[idx];
 }
+
+#ifdef ENABLE_MOUNT_PET_SKIN
+DWORD CItem::GetMountSkinVnum()
+{
+	DWORD dwVnum = GetValue(1);
+#ifdef ENABLE_COSTUME_SHOP_BAERIM
+	// the official costume mounts (and the Baerim costume shop mounts) keep the mount mob in APPLY_MOUNT, value1 is 0
+	if (!dwVnum && GetProto())
+	{
+		for (int i = 0; i < ITEM_APPLY_MAX_NUM; ++i)
+		{
+			if (GetProto()->aApplies[i].bType == APPLY_MOUNT && GetProto()->aApplies[i].lValue > 0)
+				return GetProto()->aApplies[i].lValue;
+		}
+	}
+#endif
+	return dwVnum;
+}
+#endif
 
 void CItem::SetExchanging(bool bOn)
 {
@@ -2000,6 +2113,73 @@ EVENTFUNC(real_time_expire_event)
 
 	return PASSES_PER_SEC(1);
 }
+
+#ifdef ENABLE_TIME_BONUS_COSTUME
+bool CItem::IsCostumeBonusTimeItem() const
+{
+	if (m_pProto->bType != ITEM_COSTUME)
+		return false;
+	switch (m_pProto->bSubType)
+	{
+		case COSTUME_BODY:
+		case COSTUME_HAIR:
+#ifdef ENABLE_WEAPON_COSTUME_SYSTEM
+		case COSTUME_WEAPON:
+#endif
+#ifdef ENABLE_MOUNT_PET_SKIN
+		case COSTUME_MOUNT:
+		case COSTUME_PET:
+#endif
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+		case COSTUME_ACCE_SKIN:
+#endif
+			return true;
+	}
+	return false;
+}
+
+bool CItem::IsCostumeBonusActive() const
+{
+	if (!IsCostumeBonusTimeItem())
+		return true;
+	const long lExpire = m_alSockets[COSTUME_BONUS_EXPIRE_SOCKET];
+	return lExpire == COSTUME_BONUS_PERMANENT_EXPIRE_TIME || lExpire > get_global_time();
+}
+
+EVENTFUNC(costume_bonus_expire_event)
+{
+	const item_vid_event_info* info = reinterpret_cast<const item_vid_event_info*>(event->info);
+	if (!info)
+		return 0;
+	LPITEM item = ITEM_MANAGER::instance().FindByVID(info->item_vid);
+	if (!item)
+		return 0;
+	item->ClearCostumeBonusExpireEvent();
+	// the bonus time ended (or was extended): the owner's points are computed again (ModifyPoints checks the time)
+	LPCHARACTER owner = item->GetOwner();
+	if (owner && item->IsEquipped())
+	{
+		owner->ComputePoints();
+		owner->PointsPacket();
+	}
+	return 0;
+}
+
+void CItem::StartCostumeBonusExpireEvent()
+{
+	if (m_pkCostumeBonusExpireEvent)
+		return;
+	const long lExpire = m_alSockets[COSTUME_BONUS_EXPIRE_SOCKET];
+	if (lExpire == COSTUME_BONUS_PERMANENT_EXPIRE_TIME)
+		return;
+	const long lLeft = lExpire - get_global_time();
+	if (lLeft <= 0)
+		return;
+	item_vid_event_info* info = AllocEventInfo<item_vid_event_info>();
+	info->item_vid = GetVID();
+	m_pkCostumeBonusExpireEvent = event_create(costume_bonus_expire_event, info, PASSES_PER_SEC(MIN(lLeft + 1, 60L * 60 * 24)));	// at most a day, then checked again
+}
+#endif
 
 void CItem::StartRealTimeExpireEvent()
 {

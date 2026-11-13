@@ -53,37 +53,6 @@ void CPythonNetworkStream::SetSelectPhase()
 
 void CPythonNetworkStream::SelectPhase()
 {
-	// While the player looks at the character list, load the map-independent effect textures
-	// and shaders a few milliseconds per frame, so entering the game skips that work.
-	{
-		static bool s_bSharedGraphicsPreloaded = false;
-		if (!s_bSharedGraphicsPreloaded)
-		{
-			s_bSharedGraphicsPreloaded = CMapOutdoor::PreloadSharedGraphicsStep(CPythonSystem::Instance().GetGraphicsLevel(), 8);
-		}
-		else
-		{
-			// Then the building models around each character's position.
-			static bool s_bMapQueued = false;
-			static bool s_bMapPreloaded = false;
-			CPythonBackground& rkBG = CPythonBackground::Instance();
-			// (m_bSimplePlayerInfo is never set; wait until the character list itself has arrived)
-			if (!s_bMapQueued)
-			{
-				for (const TSimplePlayerInformation& rkInfo : m_akSimplePlayerInfo)
-				{
-					if (rkInfo.dwID && rkInfo.x > 0 && rkInfo.y > 0)
-					{
-						rkBG.QueueSelectScreenMapPreload(rkInfo.x, rkInfo.y);
-						s_bMapQueued = true;
-					}
-				}
-			}
-			if (s_bMapQueued && !s_bMapPreloaded && rkBG.SelectScreenMapPreloadStep(12))
-				s_bMapPreloaded = true;
-		}
-	}
-
 	TPacketHeader header;
 
 	if (!CheckPacket (&header))
@@ -280,6 +249,30 @@ bool CPythonNetworkStream::SendChangeNamePacket (BYTE index, const char* name)
 
 	return SendSequence();
 }
+
+#ifdef ENABLE_COUNTRY_FLAG
+bool CPythonNetworkStream::SendChangeCountryFlagPacket(BYTE index, const char* flag)
+{
+	if (index >= PLAYER_PER_ACCOUNT4)
+		return false;
+
+	TPacketCGChangeCountryFlag packet;
+	packet.header = HEADER_CG_CHANGE_COUNTRY_FLAG;
+	packet.index = index;
+	strncpy(packet.flag, flag, COUNTRY_FLAG_MAX_LEN);
+	packet.flag[COUNTRY_FLAG_MAX_LEN] = '\0';
+
+	if (!Send(sizeof(packet), &packet))
+	{
+		Tracen("Failed to SendChangeCountryFlagPacket");
+		return false;
+	}
+
+	// the server answers nothing: keep the slot list in step for the select screen
+	strncpy(m_akSimplePlayerInfo[index].szCountryFlag, packet.flag, sizeof(m_akSimplePlayerInfo[index].szCountryFlag));
+	return SendSequence();
+}
+#endif
 
 bool CPythonNetworkStream::__RecvPlayerCreateSuccessPacket()
 {

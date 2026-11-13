@@ -213,7 +213,11 @@ void CClientManager::RESULT_LOGIN_BY_KEY(CPeer * peer, SQLMsg * msg)
 #ifdef ENABLE_AURA_COSTUME_SYSTEM
 			"part_aura, "
 #endif
-			"x, y, map_index, skill_group, change_name, UNIX_TIMESTAMP(last_play) FROM player%s WHERE account_id=%u",
+			"x, y, map_index, skill_group, change_name, UNIX_TIMESTAMP(last_play) "
+#ifdef ENABLE_COUNTRY_FLAG
+			", country_flag "
+#endif
+			"FROM player%s WHERE account_id=%u",
 			GetTablePostfix(), info->pAccountTable->id);
 
 	CDBManager::instance().ReturnQuery(szQuery, QID_LOGIN, peer->GetHandle(), info);
@@ -284,6 +288,26 @@ static DWORD GetLastPlayTime(DWORD id)
 	return 0;
 }
 
+#ifdef ENABLE_COUNTRY_FLAG
+// the player cache (TPlayerTable) does not carry the flag
+static void GetCountryFlag(DWORD id, char * flag, size_t size)
+{
+	*flag = ' ';
+
+	char query[96];
+	snprintf(query, sizeof(query), "SELECT country_flag FROM player%s WHERE id = %u", GetTablePostfix(), id);
+	std::unique_ptr<SQLMsg> pMsg(CDBManager::instance().DirectQuery(query, SQL_PLAYER));
+
+	SQLResult* sResult = pMsg->Get();
+	if (sResult && sResult->uiNumRows && sResult->pSQLResult)
+	{
+		MYSQL_ROW row = mysql_fetch_row(sResult->pSQLResult);
+		if (row[0])
+			strlcpy(flag, row[0], size);
+	}
+}
+#endif
+
 void CreateAccountPlayerDataFromRes(MYSQL_RES * pRes, TAccountTable * pkTab)
 {
 	if (!pRes)
@@ -343,6 +367,9 @@ void CreateAccountPlayerDataFromRes(MYSQL_RES * pRes, TAccountTable * pkTab)
 					pkTab->players[j].skill_group	= pt->skill_group;
 					pkTab->players[j].bChangeName = 0;
 					pkTab->players[j].last_play = GetLastPlayTime(player_id);
+#ifdef ENABLE_COUNTRY_FLAG
+					GetCountryFlag(player_id, pkTab->players[j].szCountryFlag, sizeof(pkTab->players[j].szCountryFlag));
+#endif
 				}
 				else
 				{
@@ -412,6 +439,10 @@ void CreateAccountPlayerDataFromRes(MYSQL_RES * pRes, TAccountTable * pkTab)
 					str_to_number(pkTab->players[j].skill_group, row[col++]);
 					str_to_number(pkTab->players[j].bChangeName, row[col++]);
 					str_to_number(pkTab->players[j].last_play, row[col++]);
+#ifdef ENABLE_COUNTRY_FLAG
+					strlcpy(pkTab->players[j].szCountryFlag, row[col] ? row[col] : "", sizeof(pkTab->players[j].szCountryFlag));
+					++col;
+#endif
 				}
 
 				sys_log(0, "%s %lu %lu hair %u",
@@ -477,7 +508,11 @@ void CClientManager::RESULT_LOGIN(CPeer * peer, SQLMsg * msg)
 #ifdef ENABLE_AURA_COSTUME_SYSTEM
 					"part_aura, "
 #endif
-					"x, y, map_index, skill_group, change_name, UNIX_TIMESTAMP(last_play) FROM player%s WHERE account_id=%u",
+					"x, y, map_index, skill_group, change_name, UNIX_TIMESTAMP(last_play) "
+#ifdef ENABLE_COUNTRY_FLAG
+			", country_flag "
+#endif
+			"FROM player%s WHERE account_id=%u",
 					GetTablePostfix(), info->pAccountTable->id);
 
 			CDBManager::instance().ReturnQuery(queryStr, QID_LOGIN, peer->GetHandle(), info);
@@ -563,6 +598,19 @@ void CClientManager::QUERY_LOGOUT(CPeer * peer, DWORD dwHandle,const char * data
 			sys_log(0, "LOGOUT %s ", packet->login);
 	}
 }
+
+#ifdef ENABLE_COUNTRY_FLAG
+void CClientManager::QUERY_CHANGE_COUNTRY_FLAG(TPacketGDChangeCountryFlag * p)
+{
+	// the game checked the code: "" or two letters a-z
+	char flag[COUNTRY_FLAG_MAX_LEN + 1];
+	strlcpy(flag, p->flag, sizeof(flag));
+
+	char queryStr[QUERY_MAX_LEN];
+	snprintf(queryStr, sizeof(queryStr), "UPDATE player%s SET country_flag='%s' WHERE id=%u", GetTablePostfix(), flag, p->pid);
+	std::unique_ptr<SQLMsg> pMsg(CDBManager::instance().DirectQuery(queryStr, SQL_PLAYER));
+}
+#endif
 
 void CClientManager::QUERY_CHANGE_NAME(CPeer * peer, DWORD dwHandle, TPacketGDChangeName * p)
 {

@@ -113,9 +113,8 @@ class InventoryWindowPotions(ui.ScriptWindow):
 			slotNumber = item.BELT_INVENTORY_SLOT_START + i
 
 			itemCount = getItemCount(slotNumber)
-			if not app.ENABLE_SLOT_CHAR_ENLARGEMENT:
-				if itemCount <= 1:
-					itemCount = 0
+			if itemCount <= 1:	# count 1 is never drawn (also with ENABLE_SLOT_CHAR_ENLARGEMENT)
+				itemCount = 0
 
 			itemVnum = getItemVNum(slotNumber)
 			# GridTable start_index kullanýyor, bu yüzden global slot numarasýný (slotNumber) kullan
@@ -286,7 +285,7 @@ class BeltInventoryWindow(ui.ScriptWindow):
 			slotNumber = item.BELT_INVENTORY_SLOT_START + i
 			itemVnum = player.GetItemIndex(slotNumber)
 			itemCount = player.GetItemCount(slotNumber)
-			if not app.ENABLE_SLOT_CHAR_ENLARGEMENT and itemCount <= 1:
+			if itemCount <= 1:	# count 1 is never drawn (also with ENABLE_SLOT_CHAR_ENLARGEMENT)
 				itemCount = 0
 			self.wndSlot.SetItemSlot(slotNumber, itemVnum, itemCount)
 
@@ -402,7 +401,10 @@ class InventoryWindowButtons(ui.ScriptWindow):
 			self.inventory.ShowSoonMessage()
 
 	def OpenWardrobe(self):
-		if self.inventory:
+		interface = self.inventory and getattr(self.inventory, "interface", None)
+		if getattr(app, "ENABLE_WARDROBE_SYSTEM", 0) and interface and hasattr(interface, "ToggleWardrobeWindow"):
+			interface.ToggleWardrobeWindow()
+		elif self.inventory:
 			self.inventory.ShowSoonMessage()
 
 
@@ -998,8 +1000,7 @@ class InventoryWindow(ui.ScriptWindow):
 				self.wndItem.ClearSlot(i)
 				continue
 			elif 1 == itemCount:
-				if not app.ENABLE_SLOT_CHAR_ENLARGEMENT:
-					itemCount = 0
+				itemCount = 0
 
 			itemVnum = getItemVNum(slotNumber)
 			setItemVNum(i, itemVnum, itemCount)
@@ -1099,11 +1100,13 @@ class InventoryWindow(ui.ScriptWindow):
 			slotNumber = player.EQUIPMENT_SLOT_START + i
 			itemCount = getItemCount(slotNumber)
 
-			if not app.ENABLE_SLOT_CHAR_ENLARGEMENT:
-				if itemCount <= 1:
-					itemCount = 0
+			if itemCount <= 1:	# count 1 is never drawn (also with ENABLE_SLOT_CHAR_ENLARGEMENT)
+				itemCount = 0
 
 			setItemVNum(slotNumber, getItemVNum(slotNumber), itemCount)
+			# the mount / growth pet wear slots sit in the companion panel (Baerim layout)
+			setItemVNum2(slotNumber, getItemVNum(slotNumber), itemCount)
+			setItemVNum3(slotNumber, getItemVNum(slotNumber), itemCount)
 
 			if app.ENABLE_CHANGE_LOOK_SYSTEM:
 				if not player.GetChangeLookVnum(player.EQUIPMENT, slotNumber) == 0:
@@ -1116,9 +1119,8 @@ class InventoryWindow(ui.ScriptWindow):
 				slotNumber = player.NEW_EQUIPMENT_SLOT_START + i
 				itemCount = getItemCount(slotNumber)
 
-				if not app.ENABLE_SLOT_CHAR_ENLARGEMENT:
-					if itemCount <= 1:
-						itemCount = 0
+				if itemCount <= 1:	# count 1 is never drawn (also with ENABLE_SLOT_CHAR_ENLARGEMENT)
+					itemCount = 0
 
 				setItemVNum(slotNumber, getItemVNum(slotNumber), itemCount)
 				setItemVNum2(slotNumber, getItemVNum(slotNumber), itemCount)
@@ -1130,6 +1132,11 @@ class InventoryWindow(ui.ScriptWindow):
 			setItemVNum(slotNumber, getItemVNum(slotNumber), 0)	# reference: the sash sits in the equipment panel
 			setItemVNum2(slotNumber, getItemVNum(slotNumber), 0)
 			setItemVNum3(slotNumber, getItemVNum(slotNumber), 0)
+			if getattr(app, "ENABLE_TIME_BONUS_COSTUME", 0):
+				if self.__IsCostumeBonusExpired(player.EQUIPMENT, slotNumber):
+					self.wndCostume.DisableSlot(slotNumber)
+				else:
+					self.wndCostume.EnableSlot(slotNumber)
 
 			if app.ENABLE_CHANGE_LOOK_SYSTEM:
 				if not player.GetChangeLookVnum(player.EQUIPMENT, slotNumber) == 0:
@@ -1269,6 +1276,28 @@ class InventoryWindow(ui.ScriptWindow):
 		self.searchText = self.__SearchKey(self.searchEdit.GetText().strip())
 		self.ApplyInventorySearch()
 
+	COSTUME_BONUS_TIME_POTIONS = (55320, 55321, 55322, 55323, 55327)
+	COSTUME_BONUS_TIME_SUBTYPES = ("COSTUME_TYPE_BODY", "COSTUME_TYPE_HAIR", "COSTUME_TYPE_WEAPON", "COSTUME_TYPE_MOUNT", "COSTUME_TYPE_PET", "COSTUME_TYPE_ACCE_SKIN")
+
+	def __IsCostumeBonusTimeVnum(self, vnum):
+		if not vnum:
+			return False
+		item.SelectItem(vnum)
+		if item.GetItemType() != item.ITEM_TYPE_COSTUME:
+			return False
+		return item.GetItemSubType() in [getattr(item, name) for name in self.COSTUME_BONUS_TIME_SUBTYPES if hasattr(item, name)]
+
+	def __IsCostumeBonusExpired(self, window, slotPos):
+		# Baerim: a costume with bonuses whose bonus time ended is shown red (its bonuses do not work)
+		if not getattr(app, "ENABLE_TIME_BONUS_COSTUME", 0):
+			return False
+		if not self.__IsCostumeBonusTimeVnum(player.GetItemIndex(window, slotPos)):
+			return False
+		if not [i for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM) if player.GetItemAttribute(window, slotPos, i)[0]]:
+			return False
+		expire = player.GetItemMetinSocket(window, slotPos, 2)
+		return expire != 99 and expire <= app.GetGlobalTimeStamp()
+
 	def ApplyInventorySearch(self):
 		if not getattr(self, "wndItem", None):
 			return
@@ -1276,7 +1305,10 @@ class InventoryWindow(ui.ScriptWindow):
 		for i in xrange(player.INVENTORY_PAGE_SIZE):
 			vnum = player.GetItemIndex(self.__InventoryLocalSlotPosToGlobalSlotPos(i))
 			if not text or not vnum:
-				self.wndItem.EnableSlot(i)
+				if vnum and self.__IsCostumeBonusExpired(player.INVENTORY, self.__InventoryLocalSlotPosToGlobalSlotPos(i)):
+					self.wndItem.DisableSlot(i)
+				else:
+					self.wndItem.EnableSlot(i)
 				continue
 			item.SelectItem(vnum)
 			if text in self.__SearchKey(item.GetItemName()):
@@ -1865,6 +1897,8 @@ class InventoryWindow(ui.ScriptWindow):
 		self.ShowToolTip(overSlotPos)
 
 	def __IsUsableItemToItem(self, srcItemVNum, srcSlotPos):
+		if getattr(app, "ENABLE_TIME_BONUS_COSTUME", 0) and srcItemVNum in self.COSTUME_BONUS_TIME_POTIONS:
+			return TRUE
 		if app.ENABLE_GEM_CONVERTER and srcItemVNum == item.ITEM_VNUM_GEM_CONVERTER:
 			return TRUE
 		elif item.IsRefineScroll(srcItemVNum):
@@ -1901,6 +1935,9 @@ class InventoryWindow(ui.ScriptWindow):
 	def __CanUseSrcItemToDstItem(self, srcItemVNum, srcSlotPos, dstSlotPos):
 		if srcSlotPos == dstSlotPos and not item.IsMetin(srcItemVNum):
 			return FALSE
+
+		elif getattr(app, "ENABLE_TIME_BONUS_COSTUME", 0) and srcItemVNum in self.COSTUME_BONUS_TIME_POTIONS:
+			return self.__IsCostumeBonusTimeVnum(player.GetItemIndex(dstSlotPos))
 
 		elif app.ENABLE_GEM_CONVERTER and srcItemVNum == item.ITEM_VNUM_GEM_CONVERTER:
 			if player.GetItemIndex(dstSlotPos) == item.ITEM_VNUM_GEM_STONE:

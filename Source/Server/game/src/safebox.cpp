@@ -256,11 +256,22 @@ bool CSafebox::MoveItem(BYTE bCell, BYTE bDestCell, BYTE count)
 			count = MIN(200 - item2->GetCount(), count);
 #endif
 
-			if (item->GetCount() >= count)
-				Remove(bCell);
+			// FIX: the source was always removed (">=" is always true here), so a partial merge deleted the rest of the stack
+			// and a drop onto a full stack (count 0) deleted the whole item
+			if (count <= 0)
+				return false;
 
-			item->SetCount(item->GetCount() - count);
-			item2->SetCount(item2->GetCount() + count);
+			if (item->GetCount() == count)
+			{
+				Remove(bCell);
+				item2->SetCount(item2->GetCount() + count);
+				M2_DESTROY_ITEM(item);
+			}
+			else
+			{
+				item->SetCount(item->GetCount() - count);
+				item2->SetCount(item2->GetCount() + count);
+			}
 
 			sys_log(1, "SAFEBOX: STACK %s %d -> %d %s count %d", m_pkChrOwner->GetName(), bCell, bDestCell, item2->GetName(), item2->GetCount());
 			return true;

@@ -176,6 +176,14 @@ enum EShiningSubTypes
 };
 #endif
 
+#ifdef ENABLE_TIME_BONUS_COSTUME
+enum ECostumeBonusTime
+{
+	COSTUME_BONUS_EXPIRE_SOCKET			= 2,	// unix time the costume bonuses end (Baerim socket 3; costumes do not use socket 2 here)
+	COSTUME_BONUS_PERMANENT_EXPIRE_TIME	= 99,	// never ends
+};
+#endif
+
 enum ECostumeSubTypes
 {
 	COSTUME_BODY = ARMOR_BODY,
@@ -192,6 +200,9 @@ enum ECostumeSubTypes
 #endif
 #ifdef ENABLE_AURA_COSTUME_SYSTEM
 	COSTUME_AURA,
+#endif
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+	COSTUME_ACCE_SKIN,		// 7: sash skin, only changes how the worn sash looks
 #endif
 	COSTUME_NUM_TYPES,
 };

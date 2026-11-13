@@ -49,6 +49,7 @@ const int ITEM_BROKEN_METIN_VNUM = 28960;
 #include "shop.h"
 #include "shop_manager.h"
 #endif
+#include "costume_shop.h"
 
 namespace quest
 {
@@ -4848,6 +4849,18 @@ teleport_area:
 	}
 #endif
 
+#ifdef ENABLE_COSTUME_SHOP_BAERIM
+	int pc_open_costume_shop(lua_State* L)
+	{
+		CQuestManager& q = CQuestManager::instance();
+		LPCHARACTER ch = q.GetCurrentCharacterPtr();
+		LPCHARACTER npc = q.GetCurrentNPCCharacterPtr();
+		if (ch && npc)
+			CostumeShop_Open(ch, npc);
+		return 0;
+	}
+#endif
+
 	void RegisterPCFunctionTable()
 	{
 		luaL_reg pc_functions[] =
@@ -4900,6 +4913,9 @@ teleport_area:
 			{ "get_leadership",									pc_get_leadership						},
 			{ "getqf",											pc_get_quest_flag						},
 			{ "setqf",											pc_set_quest_flag						},
+#ifdef ENABLE_COSTUME_SHOP_BAERIM
+			{ "open_costume_shop",								pc_open_costume_shop					},
+#endif
 			{ "delqf",											pc_del_quest_flag						},
 			{ "getf",											pc_get_another_quest_flag				},
 			{ "setf",											pc_set_another_quest_flag				},

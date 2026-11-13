@@ -254,10 +254,6 @@ class CMainPacketHeaderMap : public CNetworkPacketHeaderMap
 			Set(HEADER_GC_HUNTING_UPDATE, CNetworkPacketHeaderMap::TPacketType(sizeof(TPacketGCUpdateHunting), STATIC_SIZE_PACKET));
 			Set(HEADER_GC_HUNTING_RECIVE_RAND_ITEMS, CNetworkPacketHeaderMap::TPacketType(sizeof(TPacketGCReciveRandomItems), STATIC_SIZE_PACKET));
 #endif
-#ifdef ENABLE_RIDING_EXTENDED
-			Set(HEADER_GC_MOUNT_UP_GRADE, CNetworkPacketHeaderMap::TPacketType(sizeof(TPacketGCMountUpGrade), STATIC_SIZE_PACKET));
-			Set(HEADER_GC_MOUNT_UP_GRADE_CHAT, CNetworkPacketHeaderMap::TPacketType(sizeof(TPacketGCMountUpGradeChat), STATIC_SIZE_PACKET));
-#endif
 #ifdef ENABLE_DUNGEON_INFO
 			Set(HEADER_GC_DUNGEON_INFO_SYSTEM,	CNetworkPacketHeaderMap::TPacketType(sizeof(TPacketGCDungeonInfoReceive), STATIC_SIZE_PACKET));
 #endif
@@ -614,6 +610,11 @@ const char* CPythonNetworkStream::GetAccountCharacterSlotDataz (UINT iSlot, UINT
 		case ACCOUNT_CHARACTER_SLOT_GUILD_NAME:
 			return m_astrGuildName[iSlot].c_str();
 			break;
+#ifdef ENABLE_COUNTRY_FLAG
+		case ACCOUNT_CHARACTER_SLOT_COUNTRY_FLAG:
+			return rkSimplePlayerInfo.szCountryFlag;
+			break;
+#endif
 	}
 	return sc_szEmpty;
 }

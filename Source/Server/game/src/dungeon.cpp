@@ -1179,6 +1179,40 @@ namespace
 	};
 }
 
+#ifdef ENABLE_ARENA2_DUNGEONS
+// Arena2 dungeon quests send their notices as plain (Turkish) text
+namespace
+{
+	struct FNoticeText
+	{
+		const char* m_psz;
+		FNoticeText(const char* psz) : m_psz(psz) {}
+
+		void operator() (LPENTITY ent)
+		{
+			if (!ent->IsType(ENTITY_CHARACTER))
+				return;
+			LPCHARACTER ch = (LPCHARACTER) ent;
+			if (ch->IsPC())
+			{
+				ch->ChatPacket(CHAT_TYPE_COMMAND, "OptionNoticeNext dungeon");
+				ch->ChatPacket(CHAT_TYPE_NOTICE, "%s", m_psz);
+			}
+		}
+	};
+}
+
+void CDungeon::NoticeText(const char* msg)
+{
+	LPSECTREE_MAP pMap = SECTREE_MANAGER::instance().GetMap(m_lMapIndex);
+	if (!pMap || !msg)
+		return;
+
+	FNoticeText f(msg);
+	pMap->for_each(f);
+}
+#endif
+
 void CDungeon::Notice(DWORD id, const char* msg, bool big)
 {
 	sys_log(0, "XXX Dungeon Notice %p %s", this, msg);

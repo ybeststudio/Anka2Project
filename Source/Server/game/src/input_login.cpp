@@ -42,6 +42,12 @@
 #ifdef ENABLE_RENEWAL_SWITCHBOT
 	#include "switchbot_manager.h"
 #endif
+#ifdef ENABLE_WARDROBE_SYSTEM
+	#include "wardrobe.h"
+#ifdef ENABLE_MOKOKO_SYSTEM
+#include "mokoko.h"
+#endif
+#endif
 
 #ifdef ENABLE_RENEWAL_OFFLINESHOP
 	#include "offlineshop_manager.h"
@@ -244,6 +250,40 @@ void CInputLogin::ChangeName(LPDESC d, const char * data)
 	strlcpy(pdb.name, p->name, sizeof(pdb.name));
 	db_clientdesc->DBPacket(HEADER_GD_CHANGE_NAME, d->GetHandle(), &pdb, sizeof(TPacketGDChangeName));
 }
+
+#ifdef ENABLE_COUNTRY_FLAG
+// Character select: the player picks the flag shown next to the name (Baerim uiCountryFlag)
+void CInputLogin::ChangeCountryFlag(LPDESC d, const char * data)
+{
+	if (!d)
+		return;
+
+	const TPacketCGChangeCountryFlag * p = (const TPacketCGChangeCountryFlag *) data;
+	TAccountTable & r = d->GetAccountTable();
+
+	if (!r.id || p->index >= PLAYER_PER_ACCOUNT || !r.players[p->index].dwID)
+		return;
+
+	char flag[COUNTRY_FLAG_MAX_LEN + 1];
+	strlcpy(flag, p->flag, sizeof(flag));
+
+	// "" clears it, anything else must be two lower case letters (also keeps the query safe)
+	const size_t len = strlen(flag);
+	if (len != 0 && len != COUNTRY_FLAG_MAX_LEN)
+		return;
+
+	for (size_t i = 0; i < len; ++i)
+		if (flag[i] < 'a' || flag[i] > 'z')
+			return;
+
+	strlcpy(r.players[p->index].szCountryFlag, flag, sizeof(r.players[p->index].szCountryFlag));
+
+	TPacketGDChangeCountryFlag pdb;
+	pdb.pid = r.players[p->index].dwID;
+	strlcpy(pdb.flag, flag, sizeof(pdb.flag));
+	db_clientdesc->DBPacket(HEADER_GD_CHANGE_COUNTRY_FLAG, d->GetHandle(), &pdb, sizeof(pdb));
+}
+#endif
 
 void CInputLogin::CharacterSelect(LPDESC d, const char * data)
 {
@@ -556,6 +596,9 @@ extern void SendOfflineWhisperMessages(LPCHARACTER ch);
 #endif
 #ifdef ENABLE_GUILD_QUEST
 #include "guild_quest.h"
+#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#include "dungeon_window.h"
+#endif
 #endif
 #ifdef ENABLE_GUILD_APPLICATION
 #include "guild_application.h"
@@ -662,10 +705,12 @@ void CInputLogin::Entergame(LPDESC d, const char * data)
 
 	sys_log(0, "ENTERGAME: %s %dx%dx%d %s map_index %d", ch->GetName(), ch->GetX(), ch->GetY(), ch->GetZ(), d->GetHostName(), ch->GetMapIndex());
 
+#ifndef ENABLE_CLASSIC_HORSE_REMOVED
 	if (ch->GetHorseLevel() > 0)
 	{
 		ch->EnterHorse();
 	}
+#endif
 
 	// Start of playtime recording
 	ch->ResetPlayTime();
@@ -674,6 +719,9 @@ void CInputLogin::Entergame(LPDESC d, const char * data)
 	ch->StartSaveEvent();
 	ch->StartRecoveryEvent();
 	ch->StartCheckSpeedHackEvent();
+#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+	DungeonWindow_OnEnterGame(ch);
+#endif
 #ifdef __DUNGEON_INFO__
 	ch->SendDungeonCooldown(0);
 #endif
@@ -935,6 +983,13 @@ void CInputLogin::Entergame(LPDESC d, const char * data)
 
 #ifdef ENABLE_RENEWAL_SWITCHBOT
 	CSwitchbotManager::Instance().EnterGame(ch);
+#endif
+
+#ifdef ENABLE_WARDROBE_SYSTEM
+	Wardrobe_OnLogin(ch);
+#endif
+#ifdef ENABLE_MOKOKO_SYSTEM
+	Mokoko_OnLogin(ch);
 #endif
 
 #ifdef ENABLE_WHISPER_OFFLINE_MESSAGE
@@ -1333,6 +1388,12 @@ int CInputLogin::Analyze(LPDESC d, BYTE bHeader, const char * c_pData)
 		case HEADER_CG_CHANGE_NAME:
 			ChangeName(d, c_pData);
 			break;
+
+#ifdef ENABLE_COUNTRY_FLAG
+		case HEADER_CG_CHANGE_COUNTRY_FLAG:
+			ChangeCountryFlag(d, c_pData);
+			break;
+#endif
 
 		// @fixme120
 		case HEADER_CG_ITEM_USE:

@@ -364,6 +364,18 @@ void CInputDB::PlayerLoad(LPDESC d, const char * data)
 	ch->SetPlayerProto(pTab);
 	ch->SetEmpire(d->GetEmpire());
 
+#ifdef ENABLE_COUNTRY_FLAG
+	{
+		const TAccountTable & r = d->GetAccountTable();
+		for (int i = 0; i < PLAYER_PER_ACCOUNT; ++i)
+			if (r.players[i].dwID == pTab->id)
+			{
+				ch->SetCountryFlag(r.players[i].szCountryFlag);
+				break;
+			}
+	}
+#endif
+
 #ifdef ENABLE_COINS_INVENTORY
 	long long coins = ch->GetCoins();
 	ch->SetCoins(coins);
@@ -383,6 +395,9 @@ void CInputDB::PlayerLoad(LPDESC d, const char * data)
 		p.bChannel = g_bChannel;
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
 		p.bLanguage = ch->GetLanguage();
+#endif
+#ifdef ENABLE_COUNTRY_FLAG
+		strlcpy(p.szCountryFlag, ch->GetCountryFlag(), sizeof(p.szCountryFlag));
 #endif
 
 		P2P_MANAGER::instance().Send(&p, sizeof(TPacketGGLogin));
@@ -1560,7 +1575,11 @@ void CInputDB::ItemLoad(LPDESC d, const char * c_pData)
 #endif
 
 		if ((p->window == INVENTORY && ch->GetInventoryItem(p->pos)) ||
-				(p->window == EQUIPMENT && ch->GetWear(p->pos)))
+				(p->window == EQUIPMENT && ch->GetWear(p->pos))
+#ifdef ENABLE_WARDROBE_SYSTEM
+				|| (p->window == WARDROBE && (p->pos >= WARDROBE_MAX_NUM || ch->GetWardrobeItem(p->pos)))
+#endif
+				)
 		{
 			sys_log(0, "ITEM_RESTORE: %s %s", ch->GetName(), item->GetName());
 			v.push_back(item);
@@ -1573,6 +1592,9 @@ void CInputDB::ItemLoad(LPDESC d, const char * c_pData)
 				case DRAGON_SOUL_INVENTORY:
 #ifdef ENABLE_RENEWAL_SWITCHBOT
 				case SWITCHBOT:
+#endif
+#ifdef ENABLE_WARDROBE_SYSTEM
+				case WARDROBE:
 #endif
 #ifdef ENABLE_SPECIAL_INVENTORY
 				case SKILL_BOOK_INVENTORY:

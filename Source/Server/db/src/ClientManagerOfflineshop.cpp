@@ -62,6 +62,10 @@ bool CClientManager::InitializeOfflineShop()
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 				iLen+=snprintf(szQuery+iLen, sizeof(szQuery)-iLen, ",transmutation");
 #endif
+#ifdef ENABLE_OFFLINESHOP_APPLY_RANDOM
+				for (int j = 0; j < ITEM_APPLY_MAX_NUM; j++)
+					iLen+=snprintf(szQuery+iLen, sizeof(szQuery)-iLen, ",randomtype%d,randomvalue%d,randomrow%d", j, j, j);
+#endif
 				iLen+=snprintf(szQuery+iLen, sizeof(szQuery)-iLen, " FROM player.offline_shop_item WHERE owner_id = %u", offlineshop->owner_id);
 				std::unique_ptr<SQLMsg> pMsg2(CDBManager::instance().DirectQuery(szQuery));
 				int cur = 0;
@@ -93,6 +97,14 @@ bool CClientManager::InitializeOfflineShop()
 						strlcpy(item.szBuyerName, row_item[cur++], sizeof(item.szBuyerName));
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 						str_to_number(item.transmutation, row_item[cur++]);
+#endif
+#ifdef ENABLE_OFFLINESHOP_APPLY_RANDOM
+						for (int j = 0; j < ITEM_APPLY_MAX_NUM; j++)
+						{
+							str_to_number(item.aApplyRandom[j].bType, row_item[cur++]);
+							str_to_number(item.aApplyRandom[j].sValue, row_item[cur++]);
+							str_to_number(item.abApplyRandomRow[j], row_item[cur++]);
+						}
 #endif
 					}
 				}
@@ -202,6 +214,13 @@ void CClientManager::CreateOfflineShop(TOfflineShop* p)
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 		iLen += snprintf(szColumns + iLen, sizeof(szColumns) - iLen, ",transmutation");
 		iUpdateLen += snprintf(szValues + iUpdateLen, sizeof(szValues) - iUpdateLen, ",%d", offlineshop->items[i].transmutation);
+#endif
+#ifdef ENABLE_OFFLINESHOP_APPLY_RANDOM
+		for (int j = 0; j < ITEM_APPLY_MAX_NUM; ++j)
+		{
+			iLen += snprintf(szColumns + iLen, sizeof(szColumns) - iLen, ",randomtype%d,randomvalue%d,randomrow%d", j, j, j);
+			iUpdateLen += snprintf(szValues + iUpdateLen, sizeof(szValues) - iUpdateLen, ",%d,%d,%d", offlineshop->items[i].aApplyRandom[j].bType, offlineshop->items[i].aApplyRandom[j].sValue, offlineshop->items[i].abApplyRandomRow[j]);
+		}
 #endif
 
 		iLen += snprintf(szColumns + iLen, sizeof(szColumns) - iLen, ",ownername");
@@ -333,6 +352,13 @@ void CClientManager::AddItem(OFFLINE_SHOP_ITEM* item)
 	iLen += snprintf(szColumns + iLen, sizeof(szColumns) - iLen, ",transmutation");
 	iUpdateLen += snprintf(szValues + iUpdateLen, sizeof(szValues) - iUpdateLen, ",%d", newitem.transmutation);
 #endif
+#ifdef ENABLE_OFFLINESHOP_APPLY_RANDOM
+	for (int j = 0; j < ITEM_APPLY_MAX_NUM; ++j)
+	{
+		iLen += snprintf(szColumns + iLen, sizeof(szColumns) - iLen, ",randomtype%d,randomvalue%d,randomrow%d", j, j, j);
+		iUpdateLen += snprintf(szValues + iUpdateLen, sizeof(szValues) - iUpdateLen, ",%d,%d,%d", newitem.aApplyRandom[j].bType, newitem.aApplyRandom[j].sValue, newitem.abApplyRandomRow[j]);
+	}
+#endif
 	iLen += snprintf(szColumns + iLen, sizeof(szColumns) - iLen, ",ownername");
 	iUpdateLen += snprintf(szValues + iUpdateLen, sizeof(szValues) - iUpdateLen, ",'%s'", newitem.szOwnerName);
 	snprintf(szQuery, sizeof(szQuery), "INSERT INTO player.offline_shop_item (%s) VALUES (%s)", szColumns, szValues);
@@ -354,6 +380,14 @@ void CClientManager::BuyItem(TOfflineShopBuy* buyItem)
 	if (it == m_Offlineshop.end())
 	{
 		InsertImportLog("TRY_BUY_BUT_NOT_EXIST_SHOP", NULL, buyItem->customer_id, buyItem->customer_name, NULL);
+#ifdef ENABLE_EXPLOIT_AUDIT_FIX
+		{
+			shop_buy n;
+			n.subheader = BUY_ITEM_REFUND;
+			thecore_memcpy(&n.buyItem, buyItem, sizeof(n.buyItem));
+			ForwardPacket(HEADER_DG_OFFLINESHOP, &n, sizeof(shop_buy));
+		}
+#endif
 		return;
 	}
 
@@ -363,6 +397,14 @@ void CClientManager::BuyItem(TOfflineShopBuy* buyItem)
 	if (item.vnum == 0 || item.status != 0 || item.id != buyItem->item.id || item.price != buyItem->item.price)
 	{
 		InsertImportLog("TRY_BUY_BUT_ALREADY_SELLED", it->second, buyItem->customer_id, buyItem->customer_name, &item);
+#ifdef ENABLE_EXPLOIT_AUDIT_FIX
+		{
+			shop_buy n;
+			n.subheader = BUY_ITEM_REFUND;
+			thecore_memcpy(&n.buyItem, buyItem, sizeof(n.buyItem));
+			ForwardPacket(HEADER_DG_OFFLINESHOP, &n, sizeof(shop_buy));
+		}
+#endif
 		return;
 	}
 

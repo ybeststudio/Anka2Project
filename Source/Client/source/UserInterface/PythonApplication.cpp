@@ -1073,6 +1073,21 @@ bool LoadLocaleData(const char *localePath)
 			Tracenf("LoadLocaleData: error while loading %s.", szShiningEffect);
 	}
 #endif
+#ifdef ENABLE_COSTUME_GLOW_TABLE
+	{
+		char szGlowTable[256];
+		snprintf(szGlowTable, sizeof(szGlowTable), "%s/shiningtable.txt", localePathCommon);
+		if (!rkItemMgr.LoadCostumeGlowTable(szGlowTable))
+			Tracenf("LoadLocaleData: error while loading %s.", szGlowTable);
+	}
+#endif
+#ifdef ENABLE_EFFECT_MODEL_ITEM
+	{
+		char szBoneTable[256];
+		snprintf(szBoneTable, sizeof(szBoneTable), "%s/effect_model_bone.txt", localePathCommon);
+		rkItemMgr.LoadEffectModelBone(szBoneTable);	// optional
+	}
+#endif
 
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
 	if (!rkItemMgr.LoadItemScale(szItemScale))

@@ -593,6 +593,10 @@ const TItemData * CPythonPlayer::GetItemData(TItemPos Cell) const
 	case SWITCHBOT:
 		return &m_playerStatus.aSwitchbotItem[Cell.cell];
 #endif
+#ifdef ENABLE_WARDROBE_SYSTEM
+	case WARDROBE:
+		return &m_playerStatus.aWardrobeItem[Cell.cell];
+#endif
 
 	#ifdef ENABLE_SHOP_REPURCHASE
 	case SHOP_REPURCHASE:
@@ -618,6 +622,9 @@ void CPythonPlayer::SetItemData(TItemPos Cell, const TItemData & c_rkItemInst)
 		}
 	}
 
+#ifdef ENABLE_WARDROBE_SYSTEM
+	++m_dwItemRevision;
+#endif
 	switch (Cell.window_type)
 	{
 	case INVENTORY:
@@ -632,6 +639,11 @@ void CPythonPlayer::SetItemData(TItemPos Cell, const TItemData & c_rkItemInst)
 #ifdef ENABLE_RENEWAL_SWITCHBOT
 	case SWITCHBOT:
 		m_playerStatus.aSwitchbotItem[Cell.cell] = c_rkItemInst;
+		break;
+#endif
+#ifdef ENABLE_WARDROBE_SYSTEM
+	case WARDROBE:
+		m_playerStatus.aWardrobeItem[Cell.cell] = c_rkItemInst;
 		break;
 #endif
 

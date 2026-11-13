@@ -730,37 +730,6 @@ PyObject *guildGetMarkIndexByMarkID(PyObject *poSelf, PyObject *poArgs)
 	return Py_BuildValue("i", markID % CGuildMarkImage::MARK_TOTAL_COUNT);
 }
 
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-PyObject* guildGetWarRecode(PyObject* poSelf, PyObject* poArgs)
-{
-	return Py_BuildValue("iiii", 0, 0, 0, 0);
-}
-
-PyObject* guildGetGuildLadderRanking(PyObject* poSelf, PyObject* poArgs)
-{
-	return Py_BuildValue("ii", 0, 0);
-}
-
-PyObject* guildGetBaseInfoBankGold(PyObject* poSelf, PyObject* poArgs)
-{
-	CPythonGuild::TGuildInfo& rGuildInfo = CPythonGuild::Instance().GetGuildInfoRef();
-#if defined(ENABLE_GUILDRENEWAL_SYSTEM) && defined(ENABLE_GUILDSTORAGE_SYSTEM)
-	return Py_BuildValue("iss", rGuildInfo.dwGuildMoney, rGuildInfo.goldCheckout, rGuildInfo.itemCheckout);
-#else
-	return Py_BuildValue("iss", rGuildInfo.dwGuildMoney, " ", " ");
-#endif
-}
-
-PyObject* guildGetBaseInfo(PyObject* poSelf, PyObject* poArgs)
-{
-	return Py_BuildValue("i", 0);
-}
-
-PyObject* guildGetbuildingInfo(PyObject* poSelf, PyObject* poArgs)
-{
-	return Py_BuildValue("iiii", 0, 0, 0, 0);
-}
-#endif
 
 void initguild()
 {
@@ -817,13 +786,6 @@ void initguild()
 		// Guild
 		{ "Destroy",						guildDestroy,						METH_VARARGS },
 
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-		{ "GetWarRecode",					guildGetWarRecode,					METH_VARARGS },
-		{ "GetGuildLadderRanking",			guildGetGuildLadderRanking,			METH_VARARGS },
-		{ "GetBaseInfoBankGold",			guildGetBaseInfoBankGold,			METH_VARARGS },
-		{ "GetBaseInfo",					guildGetBaseInfo,					METH_VARARGS },
-		{ "GetbuildingInfo",				guildGetbuildingInfo,				METH_VARARGS },
-#endif
 
 		{ nullptr, nullptr },
 	};
@@ -833,10 +795,6 @@ void initguild()
 	PyModule_AddIntConstant(poModule, "AUTH_REMOVE_MEMBER", GUILD_AUTH_REMOVE_MEMBER);
 	PyModule_AddIntConstant(poModule, "AUTH_NOTICE", GUILD_AUTH_NOTICE);
 	PyModule_AddIntConstant(poModule, "AUTH_SKILL", GUILD_AUTH_SKILL);
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-	PyModule_AddIntConstant(poModule, "AUTH_WAR", GUILD_AUTH_WAR);
-	PyModule_AddIntConstant(poModule, "AUTH_BANK", GUILD_AUTH_BANK);
-#endif
 
 	PyModule_AddIntConstant(poModule, "ENEMY_GUILD_SLOT_MAX_COUNT", CPythonGuild::ENEMY_GUILD_SLOT_MAX_COUNT);
 }

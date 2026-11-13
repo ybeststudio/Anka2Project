@@ -4,9 +4,7 @@
 #include "constants.h"
 #include "cmd.h"
 
-#if !defined(ENABLE_RIDING_EXTENDED)
 const int HORSE_MAX_LEVEL = 30;
-#endif
 
 struct THorseStat
 {

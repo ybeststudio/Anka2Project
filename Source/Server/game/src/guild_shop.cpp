@@ -88,10 +88,14 @@ namespace
 			return;
 
 		const SGuildShopItem& entry = list[index];
-		if (buyCount < 1 || buyCount * entry.count > GUILD_SHOP_MAX_STACK)
+		// 64 bit: a huge client count must not wrap the stack / price check (free silver + item flood)
+		if (buyCount < 1 || entry.count < 1 || (long long)buyCount * entry.count > GUILD_SHOP_MAX_STACK)
 			return;
 
-		const int price = entry.price * buyCount;
+		const long long llPrice = (long long)entry.price * buyCount;
+		if (llPrice < 0 || llPrice > 2147483647LL)
+			return;
+		const int price = (int)llPrice;
 		if (guild->GetLevel() < entry.level)
 		{
 			SendResult(ch, GUILD_SHOP_LOCKED);

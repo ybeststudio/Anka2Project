@@ -835,7 +835,11 @@ class QuestDialog(ui.ScriptWindow):
 	# END_OF_QUEST_IMAGE
 
 	def OnSize(self, width, height):
+		if app.ENABLE_QUEST_WIDTH_EXPANSION:
+			# say_size() widths are for the 350 px board; the expanded board (and its line cut limit) is twice as wide
+			width = width * 2
 		self.board.SetSize(width, height)
+		self.board.UpdateRect()	# keep it centred (attach/center align is only applied on UpdateRect)
 
 	def OnTitleImage(self, filename):
 		img = ui.ImageBox("TOP_MOST")

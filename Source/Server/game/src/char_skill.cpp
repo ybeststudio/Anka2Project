@@ -2357,8 +2357,19 @@ int CHARACTER::ComputeSkill(DWORD dwVnum, LPCHARACTER pkVictim, BYTE bSkillLevel
 		return BATTLE_NONE;
 	}
 
-	if (pkSk->dwTargetRange && DISTANCE_SQRT(GetX() - pkVictim->GetX(), GetY() - pkVictim->GetY()) >= pkSk->dwTargetRange + 50)
+#ifdef ENABLE_HORSE_SKILL_RANGE_FIX
+	// while galloping the server position trails the client; measured misses were 360-955 units away (limit 350)
+	const DWORD dwRangeSlack = (pkSk->dwType == SKILL_TYPE_HORSE && IsRiding()) ? 700 : 0;
+#else
+	const DWORD dwRangeSlack = 0;
+#endif
+	if (pkSk->dwTargetRange && DISTANCE_SQRT(GetX() - pkVictim->GetX(), GetY() - pkVictim->GetY()) >= pkSk->dwTargetRange + 50 + dwRangeSlack)
 	{
+#ifdef DEBUG_HORSE_SKILL_HITS
+		if (dwVnum >= 137 && dwVnum <= 140)
+			sys_log(0, "HORSE_SKILL_DROP %s skill %u: too far (%ld > %u)", GetName(), dwVnum,
+				(long)DISTANCE_SQRT(GetX() - pkVictim->GetX(), GetY() - pkVictim->GetY()), pkSk->dwTargetRange + 50);
+#endif
 		if (test_server)
 			sys_log(0, "ComputeSkill: Victim too far, skill %d : %s to %s (distance %u limit %u)",
 					dwVnum,
@@ -4679,11 +4690,6 @@ eMountType GetMountLevelByVnum(DWORD dwMountVnum, bool IsNew) // updated to 2014
 		case 20107: // normal military horse (no guild)
 		case 20108: // normal military horse (guild member)
 		case 20109: // normal military horse (guild master)
-#ifdef ENABLE_RIDING_EXTENDED
-		case 20149: // normal military horse (no guild)
-		case 20150: // normal military horse (guild member)
-		case 20151: // normal military horse (guild master)
-#endif
 			if (IsNew)
 				return MOUNT_TYPE_NONE;
 		// @fixme116 end

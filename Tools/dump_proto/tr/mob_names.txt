@@ -1705,14 +1705,14 @@ VNUM	LOCALE_NAME
 8644	SungMa Ýstila Portalý
 8645	SungMa Ýstila Portalý
 8646	SungMa Ýstila Portalý
-9001	Silah Satýcýsý
+9001	Silahçý
 9002	Zýrh Satýcýsý
-9003	Satýcý
+9003	Genel Maðaza
 9004	Olay Yardýmcýsý
 9005	Depocu
 9006	Yaþlý Kadýn
 9007	Silah Satýcýsý
-9008	Zýrh Satýcýsý
+9008	Kuyumcu
 9009	Balýkçý
 9010	Genel Depocu Helen
 9011	Evlenme Tasarýmcýsý
@@ -1720,7 +1720,7 @@ VNUM	LOCALE_NAME
 9013	Yanýlsama tüccarý
 9014	Satýcý
 9100	Fýrtýna çiçeði
-9101	Güç çiçeði
+9101	Sevimli Mokoko
 9102	Ateþ güç çiçeði
 9103	Buz güç çiçeði
 9104	Þimþek güç çiçeði
@@ -2091,11 +2091,11 @@ VNUM	LOCALE_NAME
 10987	Placeholder
 10988	Placeholder
 11000	Köy Gardiyaný
-11001	Savaþ Sorumlusu
-11002	Köy Gardiyaný
-11003	Savaþ Sorumlusu
+11001	Savaþ kâhyasý
+11002	Gardiyan
+11003	Savaþ kâhyasý
 11004	Köy Gardiyaný
-11005	Savaþ Sorumlusu
+11005	Savaþ kâhyasý
 11100	Köy Gardiyaný
 11101	Savaþ Sorumlusu
 11102	Köy Gardiyaný
@@ -2386,7 +2386,7 @@ VNUM	LOCALE_NAME
 20026	Ji-Ryu
 20027	Gillian
 20028	Mirinenin Erkek Kardeþi
-20029	Midilli
+20029	At
 20030	At
 20031	Noel Baba
 20032	Noel Aðacý
@@ -2474,7 +2474,7 @@ VNUM	LOCALE_NAME
 20131	Yýl dönümü flamasý 5
 20132	Yýl dönümü flamasý 6
 20133	Yýl dönümü flamasý 7
-20134	Güneþ flamasý
+20134	Güneþ Afiþi
 20135	Noel Flamasý
 20139	Lonca flamasý (eflatun)
 20140	Lonca flam. (mavi/yeþil)
@@ -2675,7 +2675,7 @@ VNUM	LOCALE_NAME
 20411	Orman Kaþifi
 20412	Orman Bekçileri Lideri
 20413	Kawuco
-20414	Andastra
+20414	Andastre
 20415	Portal
 20416	Sam Pumpkin
 20417	Okey Masasý
@@ -3165,3 +3165,174 @@ VNUM	LOCALE_NAME
 60007	Çaðrý yardýmcýsý
 34900	Buffi
 34901	Buffi
+6311	Ochao Muhafýzý
+899	Tiger Tüccarý
+6228	Dragon Watcher Idall
+6230	Dragon Statue
+6605	Uyanmýþ Nemere
+6606	Uyanmýþ Razador
+9015	Dümen
+9016	Koruma Kalkaný
+9018	Hidra Sandýðý
+9035	Keþiþ Milbon
+9566	Mutant Arý
+9571	Mutant Yýlan
+9577	Mutant Akrep
+9578	Yanan Ejderha
+9773	zodiac
+9774	zodiac
+9775	zodiac
+9776	zodiac
+9777	zodiac
+9778	zodiac
+9779	zodiac
+9780	zodiac
+9781	zodiac
+9782	zodiac
+9783	zodiac
+9837	hidra
+9838	hidra
+9860	1
+9861	2
+9862	3
+9863	4
+9864	5
+9865	6
+9866	7
+9867	8
+9868	9
+9869	10
+9870	11
+9871	12
+9500	Merchant
+9501	Turn Sung Mahi
+9502	Sung Mahi
+9503	Hell Tower Demon Stone
+9504	Suflet Impietrit Turn
+9505	Tower's Bowman
+9507	Little White Huashin
+9440	Kule Nekromantý (Karanlýk)
+9441	Kule Katili (Karanlýk)
+9442	Kule Büyük Ustasý (Karanlýk)
+9443	Kule Çýlgýn Savaþçýsý (Karanlýk)
+9444	Kule Büyücüsü (Karanlýk)
+9445	Kule Kurdu (Karanlýk)
+9446	Kule Dövüþçüsü (Karanlýk)
+9450	Kule Nekromantý (Ateþ)
+9451	Kule Katili (Ateþ)
+9452	Kule Büyük Ustasý (Ateþ)
+9453	Kule Çýlgýn Savaþçýsý (Ateþ)
+9454	Kule Büyücüsü (Ateþ)
+9455	Kule Kurdu (Ateþ)
+9456	Kule Dövüþçüsü (Ateþ)
+9460	Kule Nekromantý (Buz)
+9461	Kule Katili (Buz)
+9462	Kule Büyük Ustasý (Buz)
+9463	Kule Çýlgýn Savaþçýsý (Buz)
+9464	Kule Büyücüsü (Buz)
+9465	Kule Kurdu (Buz)
+9466	Kule Dövüþçüsü (Buz)
+9470	Kule Nekromantý (Þimþek)
+9471	Kule Katili (Þimþek)
+9472	Kule Büyük Ustasý (Þimþek)
+9473	Kule Çýlgýn Savaþçýsý (Þimþek)
+9474	Kule Büyücüsü (Þimþek)
+9475	Kule Kurdu (Þimþek)
+9476	Kule Dövüþçüsü (Þimþek)
+9480	Kule Nekromantý (Rüzgar)
+9481	Kule Katili (Rüzgar)
+9482	Kule Büyük Ustasý (Rüzgar)
+9483	Kule Çýlgýn Savaþçýsý (Rüzgar)
+9484	Kule Büyücüsü (Rüzgar)
+9485	Kule Kurdu (Rüzgar)
+9486	Kule Dövüþçüsü (Rüzgar)
+9490	Kule Nekromantý (Toprak)
+9491	Kule Katili (Toprak)
+9492	Kule Büyük Ustasý (Toprak)
+9493	Kule Çýlgýn Savaþçýsý (Toprak)
+9494	Kule Büyücüsü (Toprak)
+9495	Kule Kurdu (Toprak)
+9496	Kule Dövüþçüsü (Toprak)
+9393	Kostüm Terzisi
+9477	Zýrhlý Manken
+20905	Abis Savaþçýsý
+20955	White Samurai Mount
+20956	Green Phantom Mount
+20958	Black Sakura Mount
+20959	Imperial Paladin Mount
+34240	Boneca Ambalabu
+34241	Cappuccino Assassino
+34242	Tralalelo Tralala
+34243	Tung Tung
+34244	Vecna
+34248	Black Sakura Pet
+34249	Imperial Paladin Pet
+34250	Bebek Vahþi Uzman
+34251	Bebek Siyah Ork
+34252	Bebek Ölüm Meleði
+34253	Bebek Alev Kral
+34254	Bebek Kaplumbaða
+34255	Bebek Buz Cadýsý
+34256	Bebek Jotun
+34257	Bebek Dokuz Kuyruk
+34258	Bebek Barones
+34259	Bebek Kraliçe Örümcek
+34260	Bebek Tartaros
+34261	Bebek Sarý Kaplan Hayaleti
+34262	Ballerina Cappuccina
+34263	Bombardiro Crocodilo
+34264	Paytak Yüzbaþý
+34265	Demagorgon
+34266	Küçük Siyah Çelikli Savaþçý
+34267	Küçük Siyah Rüzgar Þaman
+34268	MC Ping
+34269	Salamino Pinguino
+20960	Ay Bekçisi
+20961	Fýrtýna Ruhu
+20962	Hayalet Qilin
+20963	Bambu Gardiyaný
+20964	Altýn Binek
+20965	Kara Binek
+20966	Yabani Binek
+20967	Saf Melek Bineði
+20968	Cehennem Hükümdarý Bineði
+20969	Beyaz Hayalet Bineði
+20970	Gelgitli Yaz Bineði
+20971	Altýn Azrail Bineði
+20972	Cehennem Tohumu Bineði
+20973	Kýzýl Hýrsýz Bineði
+20974	Beyaz Altýn Binek
+20975	Genç Büyücü Evcil Bineði
+20976	Sakura Çölü Bineði
+20977	Obsidyen Ejderha Bineði
+20978	Gök Muhafýzý Bineði
+20979	Kiraz Çiçeði Bineði
+20980	Siyah Çiçek Bineði
+20981	Astral Þovalye Bineði
+20982	Karanlýk Simbiyot Bineði
+20983	Beyaz Çelik Bineði
+20984	Kýrmýzý Korku Bineði
+20985	Buzul Hwang Bineði
+30350	Kostümlü Savaþçý
+30351	Kostümlü Sura
+30352	Kostümlü Ninja
+30353	Kostümlü Þaman
+30354	Kostümlü Savaþçý
+30355	Kostümlü Sura
+30356	Kostümlü Ninja
+30357	Kostümlü Þaman
+34270	Saf Melek Evcil Hayvaný
+34271	Beyaz Hayalet Evcil Hayvaný
+34272	Gelgitli Yaz Evcil Hayvaný
+34273	Altýn Azrail Evcil Hayvaný
+34274	Cehennem Tohumu Evcil Hayvaný
+34275	Kýzýl Hýrsýz Evcil Hayvaný
+34276	Beyaz Altýn Evcil Hayvaný
+34277	Genç Büyücü Evcil Hayvaný
+34278	Sakura Çölü Evcil Hayvaný
+34279	Obsidyen Ejderha Evcil Hayvaný
+34280	Gök Muhafýzý Evcil Hayvaný
+34281	Karanlýk Simbiyot Peti
+34282	Beyaz Çelik Peti
+34283	Altýn Evcil Hayvan
+34284	Kara Evcil Hayvan

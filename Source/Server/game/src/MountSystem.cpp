@@ -89,14 +89,27 @@ bool CMountActor::Mount(LPITEM mountItem)
 		m_pkOwner->StopRiding();
 	Unmount();
 
+#ifdef ENABLE_MOUNT_PERMANENT_DURATION_FIX
+	// socket0 is the expiry of a timed mount; a permanent mount (58000 "At") keeps 0 -> the old formula gave a negative duration
+	const long lMountExpire = mountItem->GetSocket(0);
+	const long lMountDuration = lMountExpire > get_global_time() ? lMountExpire - get_global_time() : INFINITE_AFFECT_DURATION;
+	m_pkOwner->AddAffect(AFFECT_MOUNT, POINT_MOUNT, m_dwVnum, AFF_NONE, lMountDuration, 0, true);
+#else
 	m_pkOwner->AddAffect(AFFECT_MOUNT, POINT_MOUNT, m_dwVnum, AFF_NONE, (DWORD)mountItem->GetSocket(0) - time(0), 0, true);
+#endif
 
 	for (int i = 0; i < ITEM_APPLY_MAX_NUM; ++i)
 	{
 		if (mountItem->GetProto()->aApplies[i].bType == APPLY_NONE)
 			continue;
 
-		m_pkOwner->AddAffect(AFFECT_MOUNT_BONUS, aApplyInfo[mountItem->GetProto()->aApplies[i].bType].bPointType, mountItem->GetProto()->aApplies[i].lValue, AFF_NONE, (DWORD)mountItem->GetSocket(0) - time(0), 0, false);
+		m_pkOwner->AddAffect(AFFECT_MOUNT_BONUS, aApplyInfo[mountItem->GetProto()->aApplies[i].bType].bPointType, mountItem->GetProto()->aApplies[i].lValue, AFF_NONE,
+#ifdef ENABLE_MOUNT_PERMANENT_DURATION_FIX
+			lMountDuration,
+#else
+			(DWORD)mountItem->GetSocket(0) - time(0),
+#endif
+			0, false);
 	}
 
 	return m_pkOwner->GetMountVnum() == m_dwVnum;
@@ -403,6 +416,21 @@ void CMountSystem::DeleteMount(CMountActor* mountActor)
 	sys_err("[CMountSystem::DeleteMount] Can't find mountActor(0x%x) on my list(size: %d) ", mountActor, m_mountActorMap.size());
 }
 
+#ifdef ENABLE_MOUNT_SKIN_SWAP_FIX
+void CMountSystem::ClearAll()
+{
+	for (TMountActorMap::iterator it = m_mountActorMap.begin(); it != m_mountActorMap.end(); ++it)
+	{
+		CMountActor* actor = it->second;
+		if (!actor)
+			continue;
+		if (m_pkOwner && m_pkOwner->GetMountVnum() == it->first)
+			actor->Unmount();
+		actor->Unsummon();
+	}
+}
+#endif
+
 void CMountSystem::Unsummon(DWORD vnum, bool bDeleteFromList)
 {
 	CMountActor* actor = this->GetByVnum(vnum);
@@ -479,14 +507,26 @@ void CMountSystem::Unmount(DWORD mobVnum)
 
 	if (!mountActor)
 	{
+#ifdef ENABLE_MOUNT_HIDE_ON_DISMOUNT
+		// riding after a warp: the affect came back with the character, the actor did not
+		if (m_pkOwner && m_pkOwner->GetMountVnum())
+		{
+			m_pkOwner->RemoveAffect(AFFECT_MOUNT);
+			m_pkOwner->RemoveAffect(AFFECT_MOUNT_BONUS);
+			m_pkOwner->MountVnum(0);
+			return;
+		}
+#endif
 		sys_err("[CMountSystem::Mount] Null Pointer (mountActor)");
 		return;
 	}
 
+#ifndef ENABLE_MOUNT_HIDE_ON_DISMOUNT
 	if(LPITEM pSummonItem = m_pkOwner->GetWear(WEAR_MOUNT))
 	{
 		this->Summon(mobVnum, pSummonItem, false);
 	}
+#endif
 
 	mountActor->Unmount();
 }

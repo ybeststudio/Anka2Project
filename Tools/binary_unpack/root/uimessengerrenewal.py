@@ -211,7 +211,8 @@ class MemberSlot(object):
 		self.charImage = self.__Image(content, DEFAULT_RACE_IMAGE)
 		self.text = self.__Text(content)
 		self.statusText = self.__Text(content)
-		self.languageFlag = ui.ImageBox()
+		# expanded: the list view (SetInsideRender) clips only expanded images and text, a plain ImageBox spilled out
+		self.languageFlag = ui.ExpandedImageBox()
 		self.languageFlag.SetParent(content)
 		self.languageFlag.AddFlag("not_pick")
 

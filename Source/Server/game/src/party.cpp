@@ -964,7 +964,16 @@ void CParty::SendMessage(LPCHARACTER ch, BYTE bMsg, DWORD dwArg1, DWORD dwArg2)
 
 					if ((pkChr = rMember.pCharacter) && ch != pkChr)
 					{
+#ifdef ENABLE_MOB_GROUP_INSTANT_AGGRO
+						// an idle group member only gets its victim set here and reacted on its next (idle, 1-5 s) state pulse;
+						// start the fight right away so the whole group turns on the attacker at once
+						const bool bWasIdle = !pkChr->IsPC() && NULL == pkChr->GetVictim();
+#endif
 						pkChr->UpdateAggrPoint(victim, DAMAGE_TYPE_SPECIAL, dwArg1);
+#ifdef ENABLE_MOB_GROUP_INSTANT_AGGRO
+						if (bWasIdle && pkChr->CanBeginFight())
+							pkChr->BeginFight(victim);
+#endif
 					}
 				}
 			}

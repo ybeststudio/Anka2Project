@@ -65,6 +65,23 @@ def SplitDescription(desc, limit):
 
 	return lines
 
+# Baerim tooltip: the model preview is always shown inside the tooltip (no "hold Ctrl" line)
+INLINE_MODEL_PREVIEW = getattr(app, "ENABLE_COSTUME_SHOP_BAERIM", 0)
+INLINE_PREVIEW_WIDTH = 170
+INLINE_PREVIEW_HEIGHT = 220
+INLINE_PREVIEW_BACKGROUND = "d:/ymir work/ui/game/render/render_target.png"	# Baerim preview background
+INLINE_PREVIEW_SCALE = 0.85		# same framing as the costume shop preview (front view, whole body)
+INLINE_PREVIEW_EYE_DISTANCE = -1500.0	# camera: level with the chest, further back than the default (0, -1000, 600)
+INLINE_PREVIEW_EYE_HEIGHT = 110.0
+INLINE_PREVIEW_TARGET_HEIGHT = 95.0
+# mounts / pets: the render target fits the camera to the model height (also flying pets); scale < 1 = further away (Baerim framing)
+INLINE_MOUNT_SCALE = 0.55
+INLINE_MOUNT_PITCH = 20.0		# a little from above
+INLINE_MOUNT_YAW = 35.0			# and slightly from the side
+INLINE_PET_SCALE = 0.65			# pets: straight front view like the character
+EMPTY_COSTUME_BONUS_COUNT = 3	# Baerim: one "[Bonus Yok]" line per empty costume attribute
+EMPTY_COSTUME_BONUS_COLOR = 0xffc1c1c1
+
 class ToolTip(ui.ThinBoard):
 
 	TOOL_TIP_WIDTH = 190
@@ -262,10 +279,6 @@ class ToolTip(ui.ThinBoard):
 			self.ResizeToolTipText(textWidth, self.toolTipHeight)
 			return textLine
 
-	if app.ENABLE_GUILDRENEWAL_SYSTEM:	#ENABLE_WIKI_SYSTEM
-		def SetThinBoardSize(self, width, height = 12) :
-			self.toolTipWidth = width 
-			self.toolTipHeight = height
 
 	def SetThinBoardSize(self, width, height = 12) :
 		self.toolTipWidth = width 
@@ -341,6 +354,51 @@ class ToolTip(ui.ThinBoard):
 		self.ResizeToolTip()
 		if not app.ENABLE_SHOP_REPURCHASE:
 			self.AlignTextLineHorizonalCenter()
+
+	# a single line with |E icon|e emojis (Baerim: "[Ctrl] + [mouse] - Hizli kapatma"): the emoji images of a TextLine are
+	# drawn from the unaligned start of the line (the CTRL icon lands on the text), so the line is split into image and
+	# text pieces placed side by side, left to right, with equal margins
+	def SetIconTextLine(self, text):
+		import re
+		self.ClearToolTip()
+		self.iconTextParts = []
+		for (index, part) in enumerate(re.split(r"\|E(.+?)\|e", text)):
+			if index % 2:
+				image = ui.ImageBox()
+				image.SetParent(self)
+				image.LoadImage("icon/%s.png" % part)
+				image.Show()
+				self.iconTextParts.append(image)
+			elif part.strip():
+				line = ui.TextLine()
+				line.SetParent(self)
+				line.SetFontName(self.defFontName)
+				line.SetPackedFontColor(self.FONT_COLOR)
+				line.SetOutline()
+				line.SetText(part.strip())
+				line.Show()
+				self.iconTextParts.append(line)
+		self.childrenList.extend(self.iconTextParts)
+		self.toolTipHeight += 18
+		self.FitIconTextLine()
+
+	def FitIconTextLine(self):
+		parts = getattr(self, "iconTextParts", None)
+		if not parts:
+			return
+		gap = 4
+		x = 20
+		top = 10
+		for part in parts:
+			if isinstance(part, ui.TextLine):
+				(width, height) = part.GetTextSize()
+				part.SetPosition(x, top + 1)
+			else:
+				width = part.GetWidth()
+				part.SetPosition(x, top)
+			x += width + gap
+		self.toolTipWidth = x - gap + 20
+		self.ResizeToolTip()
 
 	def ResizeToolTip(self):
 		height = self.TOOL_TIP_HEIGHT + self.toolTipHeight
@@ -840,6 +898,8 @@ class ItemToolTip(ToolTip):
 		item.APPLY_RANDOM : lambda v: None,
 		item.APPLY_MOUNT : lambda v: None,
 	}
+	if hasattr(item, "APPLY_PET_EXP_BONUS"):
+		AFFECT_DICT[item.APPLY_PET_EXP_BONUS] = lambda v: localeInfo.TOOLTIP_APPLY_PET_EXP_BONUS % v
 
 	if app.ENABLE_NEW_BONUS_SYSTEM:
 		AFFECT_DICT.update({
@@ -1003,7 +1063,7 @@ class ItemToolTip(ToolTip):
 			
 			try:
 				if self.itemVnum > 0:
-					isCtrlPressed = app.IsPressed(app.DIK_LCONTROL)
+					isCtrlPressed = 1 if INLINE_MODEL_PREVIEW else app.IsPressed(app.DIK_LCONTROL)
 					if isCtrlPressed != constInfo.enable_item_preview:
 						constInfo.enable_item_preview = isCtrlPressed
 						if isCtrlPressed:
@@ -1422,8 +1482,11 @@ class ItemToolTip(ToolTip):
 		else:
 			self.AddItemData(itemVnum, metinSlot, attrSlot)
 
-	def SetItemToolTip(self, itemVnum):
+	def SetItemToolTip(self, itemVnum, minWidth = 0):
 		self.ClearToolTip()
+		if minWidth:	# e.g. the costume shop: wide enough for the shortcut table and the offer period line
+			self.toolTipWidth = max(self.toolTipWidth, minWidth)
+			self.ResizeToolTip()
 		metinSlot = []
 		for i in xrange(player.METIN_SOCKET_MAX_NUM):
 			metinSlot.append(0)
@@ -1884,6 +1947,61 @@ class ItemToolTip(ToolTip):
 		if magicDefencePower > 0:
 			self.AppendTextLine(localeInfo.TOOLTIP_ITEM_MAGIC_DEF_POWER % magicDefencePower, self.GetChangeTextLineColor(magicDefencePower))
 
+	# Baerim costume bonus time (ENABLE_TIME_BONUS_COSTUME): the bonuses work while socket 2 holds a future time (99 = permanent)
+	COSTUME_BONUS_EXPIRE_SOCKET = 2
+	COSTUME_BONUS_PERMANENT_EXPIRE_TIME = 99
+	COSTUME_BONUS_TIME_SUBTYPES = ("COSTUME_TYPE_BODY", "COSTUME_TYPE_HAIR", "COSTUME_TYPE_WEAPON", "COSTUME_TYPE_MOUNT", "COSTUME_TYPE_PET", "COSTUME_TYPE_ACCE_SKIN")
+
+	def __IsCostumeBonusTimeTooltipItem(self, itemType, itemSubType, slotIndex, metinSlot):
+		if not getattr(app, "ENABLE_TIME_BONUS_COSTUME", 0) or slotIndex < 0 or not metinSlot or len(metinSlot) <= self.COSTUME_BONUS_EXPIRE_SOCKET:
+			return False
+		if itemType != item.ITEM_TYPE_COSTUME:
+			return False
+		return itemSubType in [getattr(item, name) for name in self.COSTUME_BONUS_TIME_SUBTYPES if hasattr(item, name)]
+
+	def __GetCostumeBonusTimeText(self, expire):
+		if expire == self.COSTUME_BONUS_PERMANENT_EXPIRE_TIME:
+			return (localeInfo.COSTUME_BONUS_TIME_PERMANENT, self.NORMAL_COLOR)
+		left = expire - app.GetGlobalTimeStamp()
+		if left <= 0:
+			return (localeInfo.TOOLTIP_BONUS_TIME_EXPIRED, self.NEGATIVE_COLOR)
+		return (localeInfo.SecondToDHM(left), self.NORMAL_COLOR)
+
+	def __AppendCostumeBonusTimeAttributeLine(self, text, color, timeText, timeColor):
+		# bonus on the left, its time on the right (Baerim)
+		for (value, valueColor, right) in ((text, color, False), (timeText, timeColor, True)):
+			textLine = ui.TextLine()
+			textLine.SetParent(self)
+			textLine.SetFontName(self.defFontName)
+			textLine.SetPackedFontColor(valueColor)
+			textLine.SetText(value)
+			textLine.SetOutline()
+			textLine.SetFeather(FALSE)
+			if right:
+				textLine.SetPosition(self.toolTipWidth - 10, self.toolTipHeight)
+				textLine.SetHorizontalAlignRight()
+			else:
+				textLine.SetPosition(10, self.toolTipHeight)
+			textLine.Show()
+			self.childrenList.append(textLine)
+		self.toolTipHeight += self.TEXT_LINE_HEIGHT
+		self.ResizeToolTip()
+
+	def __AppendCostumeAttributes(self, attrSlot, metinSlot, slotIndex, itemType, itemSubType):
+		if not self.__IsCostumeBonusTimeTooltipItem(itemType, itemSubType, slotIndex, metinSlot):
+			self.__AppendAttributeInformation(attrSlot)
+			return
+		(timeText, timeColor) = self.__GetCostumeBonusTimeText(metinSlot[self.COSTUME_BONUS_EXPIRE_SOCKET])
+		if not attrSlot:
+			return
+		for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+			(type, value) = attrSlot[i]
+			if 0 == value:
+				continue
+			affectString = self.__GetAffectString(type, value)
+			if affectString:
+				self.__AppendCostumeBonusTimeAttributeLine(affectString, self.__GetAttributeColor(i, value), timeText, timeColor)
+
 	def __AppendAttributeInformation(self, attrSlot, itemAbsChance = 0):
 		if 0 != attrSlot:
 			for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
@@ -2197,7 +2315,12 @@ class ItemToolTip(ToolTip):
 					isCostumeAura = item.COSTUME_TYPE_AURA == itemSubType
 
 		self.__AdjustMaxWidth(attrSlot, itemDesc)
+		if self.__IsCostumeBonusTimeTooltipItem(itemType, itemSubType, slotIndex, metinSlot) and self.toolTipWidth < 300:
+			self.toolTipWidth = 300
+			self.ResizeToolTip()
 		self.__SetItemTitle(itemVnum, metinSlot, attrSlot)
+		if getattr(self, "showEmptyCostumeBonus", False):
+			self.__AppendCostumeTypeLine(itemType, itemSubType)
 
 		if item.ITEM_TYPE_GROWTH_PET == itemType and app.ENABLE_GROWTH_PET_SYSTEM:
 			if item.PET_UPBRINGING == itemSubType:
@@ -2263,7 +2386,7 @@ class ItemToolTip(ToolTip):
 
 		if app.ENABLE_RENDER_TARGET:
 			self.__ModelPreviewClose()
-			constInfo.enable_item_preview = app.IsPressed(app.DIK_LCONTROL)
+			constInfo.enable_item_preview = 1 if INLINE_MODEL_PREVIEW else app.IsPressed(app.DIK_LCONTROL)
 
 		### Hair Preview Image ###
 		if self.__IsHair(itemVnum):
@@ -2429,13 +2552,25 @@ class ItemToolTip(ToolTip):
 
 					self.__AppendAttributeInformation(attrSlot, metinSlot[acce.ABSORPTION_SOCKET])
 				else:
-					self.__AppendAttributeInformation(attrSlot)
+					self.__AppendCostumeAttributes(attrSlot, metinSlot, slotIndex, itemType, itemSubType)
 			else:
-				self.__AppendAttributeInformation(attrSlot)
+				self.__AppendCostumeAttributes(attrSlot, metinSlot, slotIndex, itemType, itemSubType)
 
 			if app.ENABLE_CHANGE_LOOK_SYSTEM:
 				if item.GetItemSubType() == item.COSTUME_TYPE_BODY:
 					self.AppendChangeLookInformation(window_type, slotIndex)
+
+			if getattr(self, "showEmptyCostumeBonus", False) and itemSubType != getattr(item, "COSTUME_TYPE_MOUNT", -1):
+				usedAttr = 0
+				if attrSlot:
+					usedAttr = len([a for a in attrSlot if a and a[0]])
+				isTimeItem = self.__IsCostumeBonusTimeTooltipItem(itemType, itemSubType, slotIndex, metinSlot)
+				for i in xrange(max(0, EMPTY_COSTUME_BONUS_COUNT - usedAttr)):
+					if isTimeItem:
+						(timeText, timeColor) = self.__GetCostumeBonusTimeText(metinSlot[self.COSTUME_BONUS_EXPIRE_SOCKET])
+						self.__AppendCostumeBonusTimeAttributeLine(localeInfo.COSTUME_SHOP_NO_BONUS, EMPTY_COSTUME_BONUS_COLOR, timeText, timeColor)
+					else:
+						self.AppendTextLine(localeInfo.COSTUME_SHOP_NO_BONUS, EMPTY_COSTUME_BONUS_COLOR)
 
 			self.AppendWearableInformation()
 
@@ -2454,12 +2589,18 @@ class ItemToolTip(ToolTip):
 
 			if app.ENABLE_RENDER_TARGET:
 				if item.COSTUME_TYPE_BODY == itemSubType or item.COSTUME_TYPE_WEAPON == itemSubType or item.COSTUME_TYPE_HAIR == itemSubType or \
-					item.COSTUME_TYPE_ACCE == itemSubType or item.COSTUME_TYPE_AURA == itemSubType or item.COSTUME_TYPE_MOUNT == itemSubType or item.COSTUME_TYPE_PET == itemSubType:
+					item.COSTUME_TYPE_ACCE == itemSubType or item.COSTUME_TYPE_AURA == itemSubType or item.COSTUME_TYPE_MOUNT == itemSubType or item.COSTUME_TYPE_PET == itemSubType or \
+					(app.ENABLE_ACCE_SKIN_SYSTEM and item.COSTUME_TYPE_ACCE_SKIN == itemSubType):
 					if constInfo.enable_item_preview == 1:
 						self.__ModelPreview(itemVnum, 0)
 					else:
 						self.AppendEmojiRenderInfo()
 		# END_ITEM_TYPE_COSTUME
+
+		elif app.ENABLE_RENDER_TARGET and INLINE_MODEL_PREVIEW and itemType == getattr(item, "ITEM_TYPE_SHINING", -1):
+			# shining glow: the character with its own weapon / armour and the glow on it (Baerim)
+			if constInfo.enable_item_preview == 1:
+				self.__ModelPreview(itemVnum, 0)
 
 		## Rod ##
 		elif item.ITEM_TYPE_ROD == itemType:
@@ -2751,19 +2892,20 @@ class ItemToolTip(ToolTip):
 				else:
 					self.AppendMallItemLastTime(metinSlot[0], item.GetLimitValue(1))
 
+			# Baerim mount (58000 "At"): level, horse speed, base bonus, two bonus slots
+			self.AppendSpace(5)
+			self.AppendTextLine(localeInfo.MOUNT_TOOLTIP_LEVEL.format(max(1, metinSlot[1] if metinSlot else 0)), self.NORMAL_COLOR)
+			self.AppendTextLine(localeInfo.MOUNT_HORSE_SPEED.format(0), self.NORMAL_COLOR)
 			self.AppendSpace(5)
 			for g in xrange(item.ITEM_APPLY_MAX_NUM):
 				(affectType, affectValue) = item.GetAffect(g)
 				affectString = self.__GetAffectString(affectType, affectValue)
 				if affectString:
-					affectColor = self.GetChangeTextLineColor(affectValue)
-					self.AppendTextLine(affectString, affectColor)
-
-			if app.ENABLE_RENDER_TARGET:
-				if constInfo.enable_item_preview == 1:
-					self.__ModelPreview(itemVnum, 0)
-				else:
-					self.AppendEmojiRenderInfo()
+					self.AppendTextLine(affectString, self.POSITIVE_COLOR)
+			for i in xrange(2):
+				(attrType, attrValue) = attrSlot[i] if attrSlot and len(attrSlot) > i else (0, 0)
+				attrString = self.__GetAffectString(attrType, attrValue) if attrType else None
+				self.AppendTextLine(attrString if attrString else localeInfo.NOBONUS, self.POSITIVE_COLOR if attrString else self.NORMAL_COLOR)
 		# END_ITEM_TYPE_MOUNT
 
 		elif item.ITEM_TYPE_PET == itemType and app.ENABLE_PET_SYSTEM:
@@ -2881,7 +3023,7 @@ class ItemToolTip(ToolTip):
 							else:
 								self.AppendTextLine(localeInfo.NumberToMoneyString(itemPrice), self.SPECIAL_TITLE_COLOR)
 
-		if window_type != player.INVENTORY and chr.IsGameMaster(player.GetMainCharacterIndex()):
+		if window_type != player.INVENTORY and chr.IsGameMaster(player.GetMainCharacterIndex()) and not getattr(self, "showEmptyCostumeBonus", False):	# not in the Baerim wardrobe / costume shop style
 			self.AppendSpace(5)
 			self.AppendTextLine("VNUM: {}".format(itemVnum), 0xFFf863ff)
 			self.AppendSpace(3)
@@ -3227,23 +3369,29 @@ class ItemToolTip(ToolTip):
 			self.ResizeToolTip()
 
 	def __AppendHairIcon(self, itemVnum):
+		imagePath = ""
+		if self.__IsOldHair(itemVnum):
+			imagePath = "d:/ymir work/item/quest/" + str(itemVnum) + ".tga"
+		elif self.__IsNewHair3(itemVnum):
+			imagePath = "icon/hair/%d.sub" % (itemVnum)
+		elif self.__IsNewHair(itemVnum):
+			if itemVnum > 74520 and itemVnum < 74751:
+				imagePath = "icon/hair/%d.sub" % (itemVnum)
+			else:
+				imagePath = "d:/ymir work/item/quest/" + str(itemVnum-1000) + ".tga"
+		elif self.__IsNewHair2(itemVnum):
+			imagePath = "icon/hair/%d.sub" % (itemVnum)
+		elif self.__IsCostumeHair(itemVnum):
+			imagePath = "icon/hair/%d.sub" % (itemVnum - 100000)
+
+		# hairs without a preview image (e.g. imported Baerim costume hairs) are shown without one, like in Baerim
+		if not imagePath or not app.IsExistFile(imagePath):
+			return
+
 		itemImage = ui.ImageBox()
 		itemImage.SetParent(self)
 		itemImage.Show()
-
-		if self.__IsOldHair(itemVnum):
-			itemImage.LoadImage("d:/ymir work/item/quest/" + str(itemVnum) + ".tga")
-		elif self.__IsNewHair3(itemVnum):
-			itemImage.LoadImage("icon/hair/%d.sub" % (itemVnum))
-		elif self.__IsNewHair(itemVnum):
-			if itemVnum > 74520 and itemVnum < 74751:
-				itemImage.LoadImage("icon/hair/%d.sub" % (itemVnum))
-			else:
-				itemImage.LoadImage("d:/ymir work/item/quest/" + str(itemVnum-1000) + ".tga")
-		elif self.__IsNewHair2(itemVnum):
-			itemImage.LoadImage("icon/hair/%d.sub" % (itemVnum))
-		elif self.__IsCostumeHair(itemVnum):
-			itemImage.LoadImage("icon/hair/%d.sub" % (itemVnum - 100000))
+		itemImage.LoadImage(imagePath)
 
 		itemImage.SetPosition(itemImage.GetWidth()/2, self.toolTipHeight)
 
@@ -3273,7 +3421,68 @@ class ItemToolTip(ToolTip):
 			self.ResizeToolTip()
 
 	if app.ENABLE_RENDER_TARGET:
+		def __InlineMobCamera(self, sideView):
+			# keep the camera SelectModel computed from the model height (level, whole model); SetScale re-selects the model
+			if sideView:
+				renderTarget.SetScale(self.ModelPreviewRenderIndex, INLINE_MOUNT_SCALE)
+				renderTarget.RotateEyeAroundTarget(self.ModelPreviewRenderIndex, INLINE_MOUNT_PITCH, INLINE_MOUNT_YAW)
+			else:
+				renderTarget.SetScale(self.ModelPreviewRenderIndex, INLINE_PET_SCALE)
+				renderTarget.RotateEyeAroundTarget(self.ModelPreviewRenderIndex, 0.0, 0.0)
+
+		def AppendPendingModelPreview(self):
+			pending = getattr(self, "pendingModelPreview", None)
+			self.pendingModelPreview = None
+			if pending:
+				self.deferModelPreview = False
+				self.__ModelPreview(pending[0], pending[1])
+				self.deferModelPreview = True
+
+		PREVIEW_JOB_FLAGS = ("ITEM_ANTIFLAG_WARRIOR", "ITEM_ANTIFLAG_ASSASSIN", "ITEM_ANTIFLAG_SURA", "ITEM_ANTIFLAG_SHAMAN", "ITEM_ANTIFLAG_WOLFMAN")
+		PREVIEW_MALE_RACES = (0, 5, 2, 7, 8)
+		PREVIEW_FEMALE_RACES = (4, 1, 6, 3, 8)
+
+		def __PreviewJobOfRace(self, race):
+			return 4 if race == 8 else race % 4
+
+		def __PreviewFitsJob(self, job):
+			flag = getattr(item, self.PREVIEW_JOB_FLAGS[job], 0)
+			return not (flag and item.IsAntiFlag(flag))
+
+		def __PreviewRaceForItem(self, itemVnum, race):
+			# race of the character when its class can wear the item, else the first class that can (same gender if possible)
+			item.SelectItem(itemVnum)
+			job = self.__PreviewJobOfRace(race)
+			if self.__PreviewFitsJob(job):
+				return race
+			isMale = race in self.PREVIEW_MALE_RACES and race != 8 or race == 8
+			if item.IsAntiFlag(item.ITEM_ANTIFLAG_MALE):
+				isMale = False
+			elif item.IsAntiFlag(item.ITEM_ANTIFLAG_FEMALE):
+				isMale = True
+			for otherJob in xrange(len(self.PREVIEW_JOB_FLAGS)):
+				if otherJob == 4 and (not getattr(item, "ITEM_ANTIFLAG_WOLFMAN", 0) or not isMale):
+					continue
+				if self.__PreviewFitsJob(otherJob):
+					return (self.PREVIEW_MALE_RACES if isMale else self.PREVIEW_FEMALE_RACES)[otherJob]
+			return race
+
+		def __PreviewArmorForRace(self, race):
+			worn = player.GetItemIndex(item.COSTUME_SLOT_BODY)
+			if not worn:
+				return 0
+			item.SelectItem(worn)
+			if not self.__PreviewFitsJob(self.__PreviewJobOfRace(race)):
+				return 0
+			isMale = race in (0, 5, 2, 7, 8)
+			if (isMale and item.IsAntiFlag(item.ITEM_ANTIFLAG_MALE)) or (not isMale and item.IsAntiFlag(item.ITEM_ANTIFLAG_FEMALE)):
+				return 0
+			return worn
+
 		def __ModelPreview(self, itemVnum, mode):
+			if INLINE_MODEL_PREVIEW and getattr(self, "deferModelPreview", False):
+				self.pendingModelPreview = (itemVnum, mode)
+				return
 			# Eðer zaten açýksa kapat
 			if self.ModelPreviewBoard:
 				self.__ModelPreviewClose()
@@ -3285,18 +3494,39 @@ class ItemToolTip(ToolTip):
 			if self.ModelPreviewRenderIndex is None or self.ModelPreviewRenderIndex < 0:
 				return  # Render target oluþturulamadý
 			
-			self.ModelPreviewBoard = ui.ThinBoard()
-			self.ModelPreviewBoard.SetParent(self)
-			self.ModelPreviewBoard.SetSize(200, 240)
-			self.ModelPreviewBoard.SetPosition(-202, 0)
-			self.ModelPreviewBoard.Show()
+			if INLINE_MODEL_PREVIEW:
+				# inside the tooltip, centred under the lines added so far (Baerim)
+				if self.toolTipWidth < INLINE_PREVIEW_WIDTH + 20:
+					self.toolTipWidth = INLINE_PREVIEW_WIDTH + 20
+					self.AlignHorizonalCenter()
+				self.AppendSpace(5)
+				self.ModelPreviewBoard = ui.Window()
+				self.ModelPreviewBoard.SetParent(self)
+				self.ModelPreviewBoard.SetSize(INLINE_PREVIEW_WIDTH, INLINE_PREVIEW_HEIGHT)
+				self.ModelPreviewBoard.SetPosition((self.toolTipWidth - INLINE_PREVIEW_WIDTH) / 2, self.toolTipHeight)
+				self.ModelPreviewBoard.Show()
+				self.toolTipHeight += INLINE_PREVIEW_HEIGHT + 5
+				self.ResizeToolTip()
 
-			self.ModelPreview = ui.RenderTarget()
-			self.ModelPreview.SetParent(self.ModelPreviewBoard)
-			self.ModelPreview.SetSize(190, 210)
-			self.ModelPreview.SetPosition(5, 22)
-			self.ModelPreview.SetRenderTarget(self.ModelPreviewRenderIndex)
-			self.ModelPreview.Show()
+				self.ModelPreview = ui.RenderTarget()
+				self.ModelPreview.SetParent(self.ModelPreviewBoard)
+				self.ModelPreview.SetSize(INLINE_PREVIEW_WIDTH, INLINE_PREVIEW_HEIGHT)
+				self.ModelPreview.SetPosition(0, 0)
+				self.ModelPreview.SetRenderTarget(self.ModelPreviewRenderIndex)
+				self.ModelPreview.Show()
+			else:
+				self.ModelPreviewBoard = ui.ThinBoard()
+				self.ModelPreviewBoard.SetParent(self)
+				self.ModelPreviewBoard.SetSize(200, 240)
+				self.ModelPreviewBoard.SetPosition(-202, 0)
+				self.ModelPreviewBoard.Show()
+
+				self.ModelPreview = ui.RenderTarget()
+				self.ModelPreview.SetParent(self.ModelPreviewBoard)
+				self.ModelPreview.SetSize(190, 210)
+				self.ModelPreview.SetPosition(5, 22)
+				self.ModelPreview.SetRenderTarget(self.ModelPreviewRenderIndex)
+				self.ModelPreview.Show()
 
 			self.ModelPreviewText = ui.TextLine()
 			self.ModelPreviewText.SetParent(self.ModelPreviewBoard)
@@ -3308,10 +3538,13 @@ class ItemToolTip(ToolTip):
 			self.ModelPreviewText.SetFeather(False)
 			self.ModelPreviewText.SetWindowHorizontalAlignCenter()
 			self.ModelPreviewText.SetHorizontalAlignCenter()
-			self.ModelPreviewText.Show()
+			if INLINE_MODEL_PREVIEW:
+				self.ModelPreviewText.Hide()
+			else:
+				self.ModelPreviewText.Show()
 
 			try:
-				renderTarget.SetBackground(self.ModelPreviewRenderIndex, "d:/ymir work/ui/game/myshop_deco/model_view_bg.sub")
+				renderTarget.SetBackground(self.ModelPreviewRenderIndex, INLINE_PREVIEW_BACKGROUND if INLINE_MODEL_PREVIEW else "d:/ymir work/ui/game/myshop_deco/model_view_bg.sub")
 				renderTarget.SetRotation(self.ModelPreviewRenderIndex, FALSE)
 				renderTarget.SetScale(self.ModelPreviewRenderIndex, 0.3)
 				renderTarget.ResetModel(self.ModelPreviewRenderIndex)
@@ -3320,9 +3553,12 @@ class ItemToolTip(ToolTip):
 					# NPC/Mount/Pet için
 					renderTarget.SelectModel(self.ModelPreviewRenderIndex, itemVnum)
 					renderTarget.SetVisibility(self.ModelPreviewRenderIndex, TRUE)
-					# NPC/Mount/Pet için kamera açýsý (kuþ bakýþý yerine daha yakýn)
-					renderTarget.SetModelV3Eye(self.ModelPreviewRenderIndex, 0.0, -800.0, 400.0)
-					renderTarget.SetModelV3Target(self.ModelPreviewRenderIndex, 0.0, 0.0, 50.0)
+					if INLINE_MODEL_PREVIEW:
+						self.__InlineMobCamera(FALSE)
+					else:
+						# NPC/Mount/Pet için kamera açýsý (kuþ bakýþý yerine daha yakýn)
+						renderTarget.SetModelV3Eye(self.ModelPreviewRenderIndex, 0.0, -800.0, 400.0)
+						renderTarget.SetModelV3Target(self.ModelPreviewRenderIndex, 0.0, 0.0, 50.0)
 				else:
 					# Item için
 					item.SelectItem(itemVnum)
@@ -3331,7 +3567,7 @@ class ItemToolTip(ToolTip):
 					
 					isArmor = ((item.ITEM_TYPE_ARMOR == itemType and itemSubType == item.ARMOR_BODY) or (item.ITEM_TYPE_COSTUME == itemType and itemSubType == item.COSTUME_TYPE_BODY))
 					isWeapon = ((item.ITEM_TYPE_WEAPON == itemType and itemSubType != item.WEAPON_ARROW) or (item.ITEM_TYPE_COSTUME == itemType and itemSubType == item.COSTUME_TYPE_WEAPON))
-					isAcce = ((item.ITEM_TYPE_COSTUME == itemType and itemSubType == item.COSTUME_TYPE_ACCE))
+					isAcce = ((item.ITEM_TYPE_COSTUME == itemType and (itemSubType == item.COSTUME_TYPE_ACCE or (app.ENABLE_ACCE_SKIN_SYSTEM and itemSubType == item.COSTUME_TYPE_ACCE_SKIN))))
 					isHair = (item.ITEM_TYPE_COSTUME == itemType and itemSubType == item.COSTUME_TYPE_HAIR)
 					isAura = (item.ITEM_TYPE_COSTUME == itemType and itemSubType == item.COSTUME_TYPE_AURA)
 					isMount = (item.ITEM_TYPE_MOUNT == itemType)
@@ -3434,6 +3670,12 @@ class ItemToolTip(ToolTip):
 							if itemSubType == item.COSTUME_TYPE_MOUNT:
 								# Costume mount için - önce GetValue(0) dene
 								modelVnum = item.GetValue(0)
+								# Anka2 costume mounts keep the mount mob in APPLY_MOUNT
+								for applyIndex in xrange(item.ITEM_APPLY_MAX_NUM):
+									(applyType, applyValue) = item.GetAffect(applyIndex)
+									if applyType == item.APPLY_MOUNT and applyValue:
+										modelVnum = applyValue
+										break
 								if modelVnum == 0 or modelVnum == itemVnum:
 									# Eðer GetValue(0) 0 ise, itemVnum'dan 85000 çýkar
 									modelVnum = itemVnum - 85000
@@ -3454,12 +3696,37 @@ class ItemToolTip(ToolTip):
 							renderTarget.ResetModel(self.ModelPreviewRenderIndex)
 							renderTarget.SelectModel(self.ModelPreviewRenderIndex, modelVnum)
 							renderTarget.SetVisibility(self.ModelPreviewRenderIndex, TRUE)
+							if INLINE_MODEL_PREVIEW:
+								self.__InlineMobCamera(isMount or isStandingMount)
 							# Mount/Pet için kamera açýsý (kuþ bakýþý yerine daha yakýn)
-							renderTarget.SetModelV3Eye(self.ModelPreviewRenderIndex, 0.0, -800.0, 400.0)
-							renderTarget.SetModelV3Target(self.ModelPreviewRenderIndex, 0.0, 0.0, 50.0)
+							if not INLINE_MODEL_PREVIEW:
+								renderTarget.SetModelV3Eye(self.ModelPreviewRenderIndex, 0.0, -800.0, 400.0)
+								renderTarget.SetModelV3Target(self.ModelPreviewRenderIndex, 0.0, 0.0, 50.0)
 					else:
 						# PC modeli için race seç ve item'larý set et
 						playerRace = player.GetRace()
+						itemOnly = INLINE_MODEL_PREVIEW and getattr(self, "previewItemOnly", False) and isArmor
+						if itemOnly:
+							# wardrobe catalog (Baerim): only this item, on the character's class with the gender of the item
+							# the class that can wear the item (own class first), then the gender of the item
+							fitRace = self.__PreviewRaceForItem(itemVnum, playerRace)
+							item.SelectItem(itemVnum)
+							job = self.__PreviewJobOfRace(fitRace)
+							isMale = fitRace in self.PREVIEW_MALE_RACES
+							if item.IsAntiFlag(item.ITEM_ANTIFLAG_MALE):
+								isMale = False
+							elif item.IsAntiFlag(item.ITEM_ANTIFLAG_FEMALE):
+								isMale = True
+							if job == 4 and not isMale:
+								job = 0
+							playerRace = (self.PREVIEW_MALE_RACES if isMale else self.PREVIEW_FEMALE_RACES)[job]
+							item.SelectItem(itemVnum)
+						otherClass = False
+						if INLINE_MODEL_PREVIEW and getattr(self, "previewItemOnly", False) and not itemOnly:
+							fitRace = self.__PreviewRaceForItem(itemVnum, playerRace)
+							otherClass = (fitRace != playerRace)
+							playerRace = fitRace
+							item.SelectItem(itemVnum)
 						
 						# Aura costume item'ý gösterilirken, önce mevcut aura'yý temizle
 						if isAura:
@@ -3468,34 +3735,70 @@ class ItemToolTip(ToolTip):
 						
 						renderTarget.SelectModel(self.ModelPreviewRenderIndex, playerRace)
 						renderTarget.SetVisibility(self.ModelPreviewRenderIndex, TRUE)
-						# PC için kamera açýsý (kuþ bakýþý yerine daha yakýn ve önden)
-						renderTarget.SetModelV3Eye(self.ModelPreviewRenderIndex, 0.0, -1000.0, 600.0)
-						renderTarget.SetModelV3Target(self.ModelPreviewRenderIndex, 0.0, 0.0, 95.0)
+						if INLINE_MODEL_PREVIEW:
+							# Baerim: straight front view from a bit further back (after SetScale, which resets the camera)
+							renderTarget.SetScale(self.ModelPreviewRenderIndex, INLINE_PREVIEW_SCALE)
+							renderTarget.RotateEyeAroundTarget(self.ModelPreviewRenderIndex, 0.0, 0.0)
+							renderTarget.SetModelV3Eye(self.ModelPreviewRenderIndex, 0.0, INLINE_PREVIEW_EYE_DISTANCE, INLINE_PREVIEW_EYE_HEIGHT)
+							renderTarget.SetModelV3Target(self.ModelPreviewRenderIndex, 0.0, 0.0, INLINE_PREVIEW_TARGET_HEIGHT)
+						else:
+							# PC için kamera açýsý (kuþ bakýþý yerine daha yakýn ve önden)
+							renderTarget.SetModelV3Eye(self.ModelPreviewRenderIndex, 0.0, -1000.0, 600.0)
+							renderTarget.SetModelV3Target(self.ModelPreviewRenderIndex, 0.0, 0.0, 95.0)
 						
 						# Aura costume item'ý gösterilirken, diðer item'larý da set et
 						# Aura'yý en son set etmek yerine, önce diðer item'larý set edip sonra aura'yý set ediyoruz
 						# Böylece aura diðer item'lar set edildikten sonra da görünür kalýr
 						
 						# Weapon set et
-						renderTarget.SetWeapon(self.ModelPreviewRenderIndex, itemVnum if isWeapon else 0)
+						if itemOnly or otherClass:
+							renderTarget.SetWeapon(self.ModelPreviewRenderIndex, itemVnum if isWeapon else 0)
+						elif INLINE_MODEL_PREVIEW:
+							renderTarget.SetWeapon(self.ModelPreviewRenderIndex, itemVnum if isWeapon else player.GetMainCharacterPart(1))
+						else:
+							renderTarget.SetWeapon(self.ModelPreviewRenderIndex, itemVnum if isWeapon else 0)
 						
 						# Hair set et
 						if isHair:
 							renderTarget.SetHair(self.ModelPreviewRenderIndex, itemVnum, FALSE)
+						elif itemOnly or otherClass:
+							renderTarget.SetHair(self.ModelPreviewRenderIndex, 0, TRUE)
 						else:
 							renderTarget.SetHair(self.ModelPreviewRenderIndex, player.GetMainCharacterPart(4), TRUE)
-						
-						# Acce set et
-						if isAcce:
-							renderTarget.SetAcce(self.ModelPreviewRenderIndex, itemVnum - 85000)
-						else:
-							renderTarget.SetAcce(self.ModelPreviewRenderIndex, player.GetMainCharacterPart(5))
 						
 						# Armor set et
 						if isArmor:
 							renderTarget.SetArmor(self.ModelPreviewRenderIndex, itemVnum)
+						elif itemOnly:
+							renderTarget.SetArmor(self.ModelPreviewRenderIndex, 0)
+						elif otherClass:
+							# the worn costume when that class can wear it (Baerim: same coat on the other class)
+							renderTarget.SetArmor(self.ModelPreviewRenderIndex, self.__PreviewArmorForRace(playerRace))
+							item.SelectItem(itemVnum)
 						else:
-							renderTarget.SetArmor(self.ModelPreviewRenderIndex, player.GetMainCharacterPart(0))
+							if INLINE_MODEL_PREVIEW:
+								# PART_MAIN is never filled on the instance: the worn costume body, else the armour
+								wornArmor = player.GetItemIndex(item.COSTUME_SLOT_BODY) or player.GetItemIndex(item.EQUIPMENT_BODY)
+								renderTarget.SetArmor(self.ModelPreviewRenderIndex, wornArmor)
+							else:
+								renderTarget.SetArmor(self.ModelPreviewRenderIndex, player.GetMainCharacterPart(0))
+						
+						# Acce set et (after the armour: ChangeArmor re-applies the sash from the part data and would drop it)
+						if isAcce:
+							renderTarget.SetAcce(self.ModelPreviewRenderIndex, itemVnum - 85000)
+						elif itemOnly:
+							renderTarget.SetAcce(self.ModelPreviewRenderIndex, 0)
+						else:
+							ownAcce = player.GetMainCharacterPart(5)	# the part data holds the vnum, SetAcce wants vnum - 85000
+							renderTarget.SetAcce(self.ModelPreviewRenderIndex, ownAcce - 85000 if ownAcce >= 85000 else ownAcce)
+
+						if INLINE_MODEL_PREVIEW and hasattr(item, "ITEM_TYPE_SHINING"):
+							# glows last (ChangeArmor rebuilds the model): the shown shining item, else what the character wears
+							isShiningItem = (itemType == item.ITEM_TYPE_SHINING)
+							weaponShining = itemVnum if isShiningItem and itemSubType == item.SHINING_WEAPON else (0 if itemOnly else player.GetItemIndex(item.SHINING_SLOT_WEAPON))
+							armorShining = itemVnum if isShiningItem and itemSubType == item.SHINING_ARMOR else (0 if itemOnly else player.GetItemIndex(item.SHINING_SLOT_ARMOR))
+							renderTarget.SetShining(self.ModelPreviewRenderIndex, 0, weaponShining)
+							renderTarget.SetShining(self.ModelPreviewRenderIndex, 1, armorShining)
 						
 						# Aura için - PC modeli üzerinde aura göster (EN SON SET ET)
 						# Önce mevcut aura'yý temizle (çift aura görünmesini önlemek için)
@@ -3516,6 +3819,7 @@ class ItemToolTip(ToolTip):
 				dbg.TraceError("__ModelPreview error: %s" % str(e))
 
 		def __ModelPreviewClose(self):
+			self.pendingModelPreview = None
 			if self.ModelPreviewBoard:
 				self.ModelPreviewBoard.Hide()
 				if self.ModelPreview:
@@ -3676,6 +3980,26 @@ class ItemToolTip(ToolTip):
 				color = self.GetLimitTextLineColor(player.GetStatus(player.LEVEL), limitValue)
 				self.AppendTextLine(localeInfo.TOOLTIP_ITEM_LIMIT_LEVEL % (limitValue), color)
 
+	def __AppendCostumeTypeLine(self, itemType, itemSubType):
+		# Baerim: yellow "Kostumler: <type>" line under the title
+		key = None
+		if item.ITEM_TYPE_COSTUME == itemType:
+			key = {
+				item.COSTUME_TYPE_BODY : "WARDROBE_TOOLTIP_TYPE_BODY",
+				item.COSTUME_TYPE_HAIR : "WARDROBE_TOOLTIP_TYPE_HAIR",
+				getattr(item, "COSTUME_TYPE_WEAPON", -1) : "WARDROBE_TOOLTIP_TYPE_WEAPON",
+				getattr(item, "COSTUME_TYPE_MOUNT", -2) : "WARDROBE_TOOLTIP_TYPE_MOUNT",
+				getattr(item, "COSTUME_TYPE_PET", -3) : "WARDROBE_TOOLTIP_TYPE_PET",
+				getattr(item, "COSTUME_TYPE_ACCE", -4) : "WARDROBE_TOOLTIP_TYPE_ACCE",
+				getattr(item, "COSTUME_TYPE_ACCE_SKIN", -5) : "WARDROBE_TOOLTIP_TYPE_ACCE",
+			}.get(itemSubType)
+		elif getattr(item, "ITEM_TYPE_PET", -1) == itemType:
+			key = "WARDROBE_TOOLTIP_TYPE_PET"
+		elif getattr(item, "ITEM_TYPE_SHINING", -1) == itemType:
+			key = "WARDROBE_TOOLTIP_TYPE_SHINING"
+		if key and hasattr(localeInfo, key):
+			self.AppendTextLine(localeInfo.WARDROBE_TOOLTIP_TYPE % getattr(localeInfo, key), 0xffffc700)
+
 	def __GetAffectString(self, affectType, affectValue):
 		if 0 == affectType or affectType in (item.APPLY_RANDOM, item.APPLY_MOUNT):
 			return None
@@ -3776,7 +4100,23 @@ class ItemToolTip(ToolTip):
 			textLine = self.AppendTextLine(localeInfo.FOR_MALE, self.NORMAL_COLOR, TRUE)
 			textLine.SetFeather()
 
+	# Baerim: the restrictions as icons (icon/emoji/anti_*.tga) in one line, in the wardrobe / costume shop style tooltips
+	ANTIFLAG_ICONS = (
+		("ITEM_ANTIFLAG_MYSHOP", "emoji/anti_shop"),
+		("ITEM_ANTIFLAG_SAFEBOX", "emoji/anti_safebox"),
+		("ITEM_ANTIFLAG_SELL", "emoji/anti_sell"),
+		("ITEM_ANTIFLAG_DROP", "emoji/anti_drop"),
+	)
+
+	def __AppendAntiFlagIcons(self):
+		icons = ["|E%s|e" % path for (flag, path) in self.ANTIFLAG_ICONS if getattr(item, flag, 0) and item.IsAntiFlag(getattr(item, flag))]
+		if icons:
+			self.AppendTextLine(" ".join(icons))
+
 	def AppendAntiFlagInformation(self):
+		if getattr(self, "showEmptyCostumeBonus", False):
+			self.__AppendAntiFlagIcons()
+			return
 		antiFlagDict = {
 			localeInfo.TOOLTIP_ANTIDROP: item.IsAntiFlag(item.ITEM_ANTIFLAG_DROP),
 			localeInfo.TOOLTIP_ANTISELL: item.IsAntiFlag(item.ITEM_ANTIFLAG_SELL),
@@ -4101,6 +4441,8 @@ class ItemToolTip(ToolTip):
 			self.AppendTextLine(localeInfo.TOOLTIP_FISH_LEN % (float(size) / 100.0), self.NORMAL_COLOR)
 
 	def AppendUniqueItemLastTime(self, restMin):
+		if getattr(self, "hideItemTime", False):
+			return		# wardrobe looks (Baerim): no remaining time
 		if app.ENABLE_ATTENDANCE_EVENT:
 			if self.isAttendanceRewardItem:
 				return
@@ -4110,6 +4452,8 @@ class ItemToolTip(ToolTip):
 			self.AppendTextLine(localeInfo.LEFT_TIME + " : " + localeInfo.RTSecondToDHMS(restSecond), self.NORMAL_COLOR)
 
 	def AppendMallItemLastTime(self, endTime, getLimit):
+		if getattr(self, "hideItemTime", False):
+			return		# wardrobe looks (Baerim): no remaining time
 		if app.ENABLE_ATTENDANCE_EVENT:
 			if self.isAttendanceRewardItem:
 				return
@@ -4143,6 +4487,8 @@ class ItemToolTip(ToolTip):
 		return timeTextLine
 
 	def AppendTimerBasedOnWearLastTime(self, metinSlot, getLimit):
+		if getattr(self, "hideItemTime", False):
+			return		# wardrobe looks (Baerim): no remaining time
 		if app.ENABLE_ATTENDANCE_EVENT:
 			if self.isAttendanceRewardItem:
 				return
@@ -4162,6 +4508,8 @@ class ItemToolTip(ToolTip):
 			return
 
 	def AppendRealTimeStartFirstUseLastTime(self, item, metinSlot, limitIndex, getLimit):
+		if getattr(self, "hideItemTime", False):
+			return		# wardrobe looks (Baerim): no remaining time
 		if app.ENABLE_ATTENDANCE_EVENT:
 			if self.isAttendanceRewardItem:
 				return
@@ -4612,10 +4960,7 @@ class SkillToolTip(ToolTip):
 
 		elif player.SKILL_INDEX_RIDING == skillIndex:
 			slotIndex = player.GetSkillSlotIndex(skillIndex)
-			if app.ENABLE_RIDING_EXTENDED:
-				self.AppendSupportSkillDefaultData(skillIndex, skillGrade, skillLevel, player.HORSE_MAX_LEVEL)
-			else:
-				self.AppendSupportSkillDefaultData(skillIndex, skillGrade, skillLevel, 30)
+			self.AppendSupportSkillDefaultData(skillIndex, skillGrade, skillLevel, 30)
 
 		elif player.SKILL_INDEX_SUMMON == skillIndex:
 			maxLevel = 10

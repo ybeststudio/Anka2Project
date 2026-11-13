@@ -54,6 +54,9 @@ class CInstanceBase
 			BYTE m_bLanguage;
 			BYTE m_bLanguage2;
 #endif
+#ifdef ENABLE_COUNTRY_FLAG
+			char m_szCountryFlag[COUNTRY_FLAG_MAX_LEN + 1];
+#endif
 #ifdef ENABLE_SKILL_COLOR_SYSTEM
 			DWORD m_dwSkillColor[ESkillColorLength::MAX_SKILL_COUNT + MAX_BUFF_COUNT][ESkillColorLength::MAX_EFFECT_COUNT];
 #endif
@@ -842,6 +845,10 @@ class CInstanceBase
 		void SetLanguage2(BYTE bLang) { m_bLanguage2 = bLang; }
 		BYTE GetLanguage2() { return m_bLanguage2; }
 #endif
+#ifdef ENABLE_COUNTRY_FLAG
+		void SetCountryFlag(const char* c_szFlag) { strncpy(m_szCountryFlag, c_szFlag, COUNTRY_FLAG_MAX_LEN); m_szCountryFlag[COUNTRY_FLAG_MAX_LEN] = 0; }
+		const char* GetCountryFlag() const { return m_szCountryFlag; }
+#endif
 #ifdef ENABLE_SKILL_COLOR_SYSTEM
 		void ChangeSkillColor(const DWORD * dwSkillColor);
 #endif
@@ -1141,6 +1148,9 @@ class CInstanceBase
 
 		// ETC
 		CActorInstance& GetGraphicThingInstanceRef();
+#ifdef ENABLE_COSTUME_SHOP_BAERIM
+		void AttachHorseSaddle() { __AttachHorseSaddle(); }	// preview: MountHorse does not seat the rider by itself
+#endif
 		CActorInstance* GetGraphicThingInstancePtr();
 
 		bool __Background_IsWaterPixelPosition(const TPixelPosition& c_rkPPos);
@@ -1298,6 +1308,9 @@ class CInstanceBase
 		BYTE m_bLanguage;
 		BYTE m_bLanguage2;
 #endif
+#ifdef ENABLE_COUNTRY_FLAG
+		char m_szCountryFlag[COUNTRY_FLAG_MAX_LEN + 1];
+#endif
 #ifdef ENABLE_SKILL_COLOR_SYSTEM
 		DWORD *m_dwSkillColor[ESkillColorLength::MAX_SKILL_COUNT + MAX_BUFF_COUNT][ESkillColorLength::MAX_EFFECT_COUNT];
 #endif
@@ -1398,6 +1411,14 @@ class CInstanceBase
 		DWORD m_weaponShiningEffects[2];
 		DWORD m_armorShiningEffect;
 #endif
+#ifdef ENABLE_COSTUME_GLOW_TABLE
+		DWORD m_dwCostumeGlowArmor;			// armor / costume vnum shown on the body
+		DWORD m_adwCostumeGlowArmor[4];		// attached glow effects
+		DWORD m_adwCostumeGlowWeapon[4];
+		DWORD m_dwWeaponGlowRetryTime;		// re-attach the weapon effect once after the character is created (warp)
+		void __RefreshCostumeGlow(bool bWeapon);
+		DWORD __AttachCostumeGlow(const char* c_szEffect, BYTE bPart);
+#endif
 #ifdef ENABLE_TITLE_SYSTEM
 		DWORD m_dwOverHeadSpecialEffect;
 #endif
@@ -1409,6 +1430,9 @@ class CInstanceBase
 
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
 		DWORD m_dwAcceEffect;
+#ifdef ENABLE_EFFECT_MODEL_ITEM
+		DWORD m_dwAcceModelEffect;	// sash skin / wing that is an effect (.mse model)
+#endif
 #endif
 
 		struct SMoveAfterFunc

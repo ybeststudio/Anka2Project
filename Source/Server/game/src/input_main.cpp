@@ -65,9 +65,6 @@
 	#include "BotPlayer.h"
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-	#include "mount_up_grade.h"
-#endif
 
 #ifdef ENABLE_DUNGEON_INFO
 	#include "dungeon_info.h"
@@ -124,7 +121,15 @@ void CInputMain::TargetInfoLoad(LPCHARACTER ch, const char* c_pData)
         return;
 #endif
 
-	if ((m_pkChrTarget->IsMonster() || m_pkChrTarget->IsStone()) && ITEM_MANAGER::instance().CreateDropItemVector(m_pkChrTarget, ch, s_vec_item))
+#ifdef ENABLE_TARGET_DROP_CHANCE
+	static std::vector<DWORD> s_vec_chance;
+	s_vec_chance.clear();
+#endif
+	if ((m_pkChrTarget->IsMonster() || m_pkChrTarget->IsStone()) && ITEM_MANAGER::instance().CreateDropItemVector(m_pkChrTarget, ch, s_vec_item
+#ifdef ENABLE_TARGET_DROP_CHANCE
+		, &s_vec_chance
+#endif
+		))
 	{
 		for(std::vector<std::pair<int,int> >::const_iterator iter = s_vec_item.begin(); iter != s_vec_item.end();++iter)
 		{
@@ -132,6 +137,12 @@ void CInputMain::TargetInfoLoad(LPCHARACTER ch, const char* c_pData)
 			pInfo.race = m_pkChrTarget->GetRaceNum();
 			pInfo.dwVnum = iter->first;
 			pInfo.count = iter->second;
+#ifdef ENABLE_TARGET_DROP_CHANCE
+			{
+				const size_t uiIndex = iter - s_vec_item.begin();
+				pInfo.dwChance = uiIndex < s_vec_chance.size() ? s_vec_chance[uiIndex] : 0;
+			}
+#endif
 			ch->GetDesc()->Packet(&pInfo, sizeof(TPacketGCTargetInfo));
 		}
 	}
@@ -921,6 +932,11 @@ int CInputMain::Chat(LPCHARACTER ch, const char * data, size_t uiBytes)
 		snprintf(szLocaleName, sizeof(szLocaleName), "|Eflag/%s|e", get_locale(ch->GetCountryFlagFromGMList(1)));
 	else if (ch->IsGM() && ch->GetCountryFlagFromGMList(2) != 0 && ch->GetCountryFlagFromGMList(2) < LOCALE_MAX_NUM)
 		snprintf(szLocaleName, sizeof(szLocaleName), "|Eflag/%s|e |Eflag/%s|e", get_locale(ch->GetCountryFlagFromGMList(1)), get_locale(ch->GetCountryFlagFromGMList(2)));
+#ifdef ENABLE_COUNTRY_FLAG
+	// the country picked on character select replaces the language flag (emoji/flag has every country)
+	else if (*ch->GetCountryFlag())
+		snprintf(szLocaleName, sizeof(szLocaleName), "|Eflag/%s|e ", ch->GetCountryFlag());
+#endif
 	else
 		snprintf(szLocaleName, sizeof(szLocaleName), "|Eflag/%s|e ", get_locale(ch->GetLanguage()));
 #endif
@@ -932,6 +948,19 @@ int CInputMain::Chat(LPCHARACTER ch, const char * data, size_t uiBytes)
 		case 2: strEmpireFlagToken = "|Eempire/chunjo|e "; break;
 		case 3: strEmpireFlagToken = "|Eempire/jinno|e "; break;
 	}
+
+#if defined(ENABLE_COUNTRY_FLAG) && defined(ENABLE_MULTI_LANGUAGE_SYSTEM)
+	// the tokens end with a space and the formats below add another one: Baerim keeps a single space
+	// between the flag, the empire emblem and the name
+	{
+		size_t len = strlen(szLocaleName);
+		while (len && szLocaleName[len - 1] == ' ')
+			szLocaleName[--len] = '\0';
+
+		while (!strEmpireFlagToken.empty() && strEmpireFlagToken[strEmpireFlagToken.size() - 1] == ' ')
+			strEmpireFlagToken.erase(strEmpireFlagToken.size() - 1);
+	}
+#endif
 
 	if (ch->GetGMLevel() != GM_PLAYER)
 	{
@@ -1709,6 +1738,16 @@ int CInputMain::Shop(LPCHARACTER ch, const char * data, size_t uiBytes)
 
 		case SHOP_SUBHEADER_CG_BUY:
 			{
+#ifdef ENABLE_SHOP_TABS_BAERIM
+				// [count BYTE][pos WORD]: ShopEx positions go up to tabs x 80
+				if (uiBytes < sizeof(BYTE) + sizeof(WORD))
+					return -1;
+
+				WORD wPos = *(WORD*)(c_pData + 1);
+				sys_log(1, "INPUT: %s SHOP: BUY %d", ch->GetName(), wPos);
+				CShopManager::instance().Buy(ch, wPos);
+				return (sizeof(BYTE) + sizeof(WORD));
+#else
 				if (uiBytes < sizeof(BYTE) + sizeof(BYTE))
 					return -1;
 
@@ -1716,6 +1755,7 @@ int CInputMain::Shop(LPCHARACTER ch, const char * data, size_t uiBytes)
 				sys_log(1, "INPUT: %s SHOP: BUY %d", ch->GetName(), bPos);
 				CShopManager::instance().Buy(ch, bPos);
 				return (sizeof(BYTE) + sizeof(BYTE));
+#endif
 			}
 
 		case SHOP_SUBHEADER_CG_SELL:
@@ -2372,6 +2412,10 @@ void CInputMain::Attack(LPCHARACTER ch, const BYTE header, const char* data)
 	{
 		if (false == ch->CanUseSkill(type->type))
 		{
+#ifdef DEBUG_HORSE_SKILL_HITS
+			if (type->type >= 137 && type->type <= 140)
+				sys_log(0, "HORSE_SKILL_DROP %s skill %u: CanUseSkill false", ch->GetName(), type->type);
+#endif
 			return;
 		}
 
@@ -2448,6 +2492,10 @@ void CInputMain::Attack(LPCHARACTER ch, const BYTE header, const char* data)
 				{
 					if (false == ch->CheckSkillHitCount(packMelee->bType, victim->GetVID()))
 					{
+#ifdef DEBUG_HORSE_SKILL_HITS
+						if (packMelee->bType >= 137 && packMelee->bType <= 140)
+							sys_log(0, "HORSE_SKILL_DROP %s skill %u: hit count (target %s)", ch->GetName(), packMelee->bType, victim->GetName());
+#endif
 						return;
 					}
 				}
@@ -4232,35 +4280,6 @@ void CInputMain::Acce(LPCHARACTER pkChar, const char* c_pData)
 }
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-void CInputMain::MountUpGrade(LPCHARACTER ch, const char* c_pData)
-{
-	if (!ch)
-	{
-		sys_err("CInputMain::MountUpGrade - Unknown identifier)");
-		return;
-	}
-	
-	const auto* p = reinterpret_cast<const TPacketCGMountUpGrade*>(c_pData);
-	
-	if (!p) return;
-	
-	switch (p->iSubHeader)
-	{
-	case CMountUpGrade::EMountUpGradeCGSubheaderType::SUBHEADER_CG_MOUNT_UP_GRADE_EXP:
-		CMountUpGrade::Instance().SetExp(ch);
-		break;
-	
-	case CMountUpGrade::EMountUpGradeCGSubheaderType::SUBHEADER_CG_MOUNT_UP_GRADE_LEVEL_UP:
-		CMountUpGrade::Instance().SetLevel(ch);
-		break;
-	
-	default:
-		sys_err("Unknown iSubHeader (Name: %s) - (iSubHeader: %d)", ch->GetName(), p->iSubHeader);
-		return;
-	}
-}
-#endif
 
 #ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
 void CInputMain::ItemNewAttributes(LPCHARACTER ch, const char* pcData)
@@ -4584,6 +4603,11 @@ int CInputMain::Analyze(LPDESC d, BYTE bHeader, const char * c_pData)
 		case HEADER_CG_DRAGON_SOUL_REFINE:
 			{
 				TPacketCGDragonSoulRefine* p = reinterpret_cast <TPacketCGDragonSoulRefine*>((void*)c_pData);
+#ifdef ENABLE_EXPLOIT_AUDIT_FIX
+				// a stone put into a trade could be refined (destroyed) while the trade still pointed at it
+				if (p->bSubType != DS_SUB_HEADER_CLOSE && (ch->GetExchange() || ch->GetMyShop() || ch->GetShopOwner() || ch->IsOpenSafebox()))
+					break;
+#endif
 				switch(p->bSubType)
 				{
 				case DS_SUB_HEADER_CLOSE:
@@ -4790,11 +4814,6 @@ int CInputMain::Analyze(LPDESC d, BYTE bHeader, const char * c_pData)
 			break;
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-		case HEADER_CG_MOUNT_UP_GRADE:
-			MountUpGrade(ch, c_pData);
-			break;
-#endif
 
 #ifdef ENABLE_DUNGEON_INFO
 		case HEADER_CG_DUNGEON_INFO_SYSTEM:
@@ -4942,6 +4961,9 @@ void CInputMain::WhisperDetails(LPCHARACTER ch, const char* c_pData)
 	strncpy(GCWhisperDetails.name, CGWhisperDetails->name, sizeof(GCWhisperDetails.name) - 1);
 
 	BYTE bLanguage = LOCALE_DEFAULT;
+#ifdef ENABLE_COUNTRY_FLAG
+	memset(GCWhisperDetails.szCountryFlag, 0, sizeof(GCWhisperDetails.szCountryFlag));
+#endif
 
 	LPCHARACTER pkChr = CHARACTER_MANAGER::instance().FindPC(CGWhisperDetails->name);
 
@@ -4955,12 +4977,18 @@ void CInputMain::WhisperDetails(LPCHARACTER ch, const char* c_pData)
 			pkDesc = pkCCI->pkDesc;
 			if (pkDesc)
 				bLanguage = pkCCI->bLanguage;
+#ifdef ENABLE_COUNTRY_FLAG
+			strlcpy(GCWhisperDetails.szCountryFlag, pkCCI->szCountryFlag, sizeof(GCWhisperDetails.szCountryFlag));
+#endif
 		}
 	}
 	else
 	{
 		if (pkChr->GetDesc())
 			bLanguage = pkChr->GetDesc()->GetLanguage();
+#ifdef ENABLE_COUNTRY_FLAG
+		strlcpy(GCWhisperDetails.szCountryFlag, pkChr->GetCountryFlag(), sizeof(GCWhisperDetails.szCountryFlag));
+#endif
 	}
 
 	GCWhisperDetails.bLanguage = bLanguage;
@@ -5565,6 +5593,10 @@ int CInputMain::ReciveHuntingAction(LPCHARACTER ch, const char* c_pData)
 			{
 
 				if (ch->GetLevel() < ch->GetQuestFlag("hunting_system.level"))
+					return 0;
+
+				// SECURITY: no mission after the last one (THuntingMissions / THuntingRewardItem bounds)
+				if (ch->GetQuestFlag("hunting_system.level") > HUNTING_MISSION_COUNT)
 					return 0;
 
 				// SECURITY: type THuntingMissions[..][2] icin sadece 0/1 olabilir (OOB crash)

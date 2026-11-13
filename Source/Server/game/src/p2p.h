@@ -18,6 +18,9 @@ typedef struct _CCI
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
 	BYTE	bLanguage;
 #endif
+#ifdef ENABLE_COUNTRY_FLAG
+	char	szCountryFlag[COUNTRY_FLAG_MAX_LEN + 1];
+#endif
 
 	LPDESC	pkDesc;
 } CCI;

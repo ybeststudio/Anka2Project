@@ -482,9 +482,41 @@ bool CGraphicThingInstance::SetMotion(DWORD dwMotionKey, float blendTime, int lo
 	SetMotionPointer.m_loopCount = loopCount;
 	SetMotionPointer.m_speedRatio = speedRatio;
 
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+	for (size_t i = 0; i < m_LODControllerVector.size(); ++i)
+	{
+		if (i < 32 && (m_dwOwnMotionPartFlag & (1 << i)))
+			continue;
+		SetMotionPointer(m_LODControllerVector[i]);
+	}
+#else
 	std::for_each(m_LODControllerVector.begin(), m_LODControllerVector.end(), SetMotionPointer);
+#endif
 	return true;
 }
+
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+void CGraphicThingInstance::SetPartOwnMotion(DWORD dwPart, CGraphicThing * pModelThing)
+{
+	if (dwPart >= 32 || dwPart >= m_LODControllerVector.size())
+		return;
+
+	if (!pModelThing || pModelThing->GetMotionCount() <= 0 || !pModelThing->CheckMotionIndex(0))
+	{
+		m_dwOwnMotionPartFlag &= ~(1 << dwPart);
+		return;
+	}
+
+	m_dwOwnMotionPartFlag |= (1 << dwPart);
+
+	CGrannyLODController::FSetMotionPointer SetMotionPointer;
+	SetMotionPointer.m_pMotion = pModelThing->GetMotionPointer(0);
+	SetMotionPointer.m_blendTime = 0.0f;
+	SetMotionPointer.m_loopCount = 0;	// endless
+	SetMotionPointer.m_speedRatio = 1.0f;
+	SetMotionPointer(m_LODControllerVector[dwPart]);
+}
+#endif
 
 bool CGraphicThingInstance::ChangeMotion(DWORD dwMotionKey, int loopCount, float speedRatio)
 {
@@ -506,7 +538,16 @@ bool CGraphicThingInstance::ChangeMotion(DWORD dwMotionKey, int loopCount, float
 	ChangeMotionPointer.m_loopCount = loopCount;
 	ChangeMotionPointer.m_speedRatio = speedRatio;
 
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+	for (size_t i = 0; i < m_LODControllerVector.size(); ++i)
+	{
+		if (i < 32 && (m_dwOwnMotionPartFlag & (1 << i)))
+			continue;
+		ChangeMotionPointer(m_LODControllerVector[i]);
+	}
+#else
 	std::for_each(m_LODControllerVector.begin(), m_LODControllerVector.end(), ChangeMotionPointer);
+#endif
 	return true;
 }
 

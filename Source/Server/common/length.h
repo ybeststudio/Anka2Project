@@ -23,6 +23,9 @@ enum EMisc
 	PLAYER_PER_ACCOUNT						= 5,
 	ACCOUNT_STATUS_MAX_LEN					= 8,
 	CHARACTER_NAME_MAX_LEN					= 48,
+#ifdef ENABLE_COUNTRY_FLAG
+	COUNTRY_FLAG_MAX_LEN					= 2,
+#endif
 
 #ifdef ENABLE_RENEWAL_OFFLINESHOP
 	OFFLINE_SHOP_HOST_ITEM_MAX_NUM			= 80,
@@ -42,6 +45,9 @@ enum EMisc
 	GUILD_NAME_MAX_LEN						= 12,
 
 	SHOP_HOST_ITEM_MAX_NUM					= 40,
+#ifdef ENABLE_SHOP_TABS_BAERIM
+	SHOP_EX_ITEM_MAX_NUM					= 80,	// slots of one ShopEx tab: 10 columns x 8 rows (Baerim weapon shop)
+#endif
 	SHOP_GUEST_ITEM_MAX_NUM 				= 18,
 	SHOP_PRICELIST_MAX_NUM					= 40,
 #ifdef ENABLE_EMOTICONS_SYSTEM
@@ -74,9 +80,6 @@ enum EMisc
 	SKILLBOOK_DELAY_MIN						= 64800,
 	SKILLBOOK_DELAY_MAX						= 108000,
 	SKILL_MAX_LEVEL							= 40,
-#ifdef ENABLE_RIDING_EXTENDED
-	HORSE_MAX_LEVEL 						= 40,
-#endif
 
 	APPLY_NAME_MAX_LEN						= 32,
 	EVENT_FLAG_NAME_MAX_LEN					= 32,
@@ -165,6 +168,31 @@ enum EMisc
 	ITEM_FISH_EVENT_BOX_SPECIAL	= 25107,
 #endif
 };
+
+#ifdef ENABLE_WARDROBE_SYSTEM
+enum EWardrobeValues
+{
+	WARDROBE_MAX_NUM = 4500,			// storage cells (Baerim STORAGE_CAPACITY)
+	WARDROBE_LOOK_COUNT = 9,			// body, hair, mount, sash, weapon, sash skin, pet, shining weapon, shining armor
+	WARDROBE_OUTFIT_MAX = 15,
+	WARDROBE_OUTFIT_NAME_MAX = 48,		// bytes
+	WARDROBE_EXP_PER_COSTUME = 100,
+	WARDROBE_EXP_PER_LEVEL = 1000,
+};
+
+enum EWardrobeLookSlots
+{
+	WARDROBE_LOOK_BODY,
+	WARDROBE_LOOK_HAIR,
+	WARDROBE_LOOK_MOUNT,
+	WARDROBE_LOOK_ACCE,
+	WARDROBE_LOOK_WEAPON,
+	WARDROBE_LOOK_ACCE_SKIN,
+	WARDROBE_LOOK_PET,
+	WARDROBE_LOOK_SHINING_WEAPON,
+	WARDROBE_LOOK_SHINING_ARMOR,
+};
+#endif
 
 #ifdef ENABLE_RENEWAL_SWITCHBOT
 enum SwitchbotValues
@@ -889,6 +917,7 @@ enum EApplyTypes
 	APPLY_ATTBONUS_MEDI_PVM                                 = 336,
 	APPLY_ATTBONUS_PVM_STR                                  = 337,
 	APPLY_ATTBONUS_PVM_BERSERKER                            = 338,
+	APPLY_PET_EXP_BONUS                                     = 339,	// ENABLE_PET_EXP_BONUS (no point: read from the worn pet items)
 
 	MAX_APPLY_NUM = 350,
 };
@@ -932,6 +961,9 @@ enum EWindows
 	AURA_REFINE,
 #endif
 	GROUND,
+#ifdef ENABLE_WARDROBE_SYSTEM
+	WARDROBE = 20,			// fixed (same in the client): player.item `window` enum member 20 is 'WARDROBE' (the number is stored)
+#endif
 };
 
 enum EMobSizes

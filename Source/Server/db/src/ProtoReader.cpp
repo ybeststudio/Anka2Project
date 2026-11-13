@@ -331,6 +331,9 @@ int32_t get_Item_SubType_Value(uint32_t type_value, const string &inputString)
 #ifdef ENABLE_AURA_COSTUME_SYSTEM
 		,"COSTUME_AURA"
 #endif
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+		,"COSTUME_ACCE_SKIN"
+#endif
 	};
 
 	subtypes[ITEM_DS] =
@@ -1041,6 +1044,7 @@ int32_t get_Item_ApplyType_Value(const string &inputString)
 		"APPLY_ATTBONUS_MEDI_PVM",
 		"APPLY_ATTBONUS_PVM_STR",
 		"APPLY_ATTBONUS_PVM_BERSERKER",
+		"APPLY_PET_EXP_BONUS",
 	};
 
 	int32_t retInt = -1;

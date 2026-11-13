@@ -9,6 +9,24 @@
 #include "ItemAwardManager.h"
 #include "Cache.h"
 
+#ifdef ENABLE_RENEWAL_SWITCHBOT
+// the game stores item.window as its EWindows number (window+0 when read): SWITCHBOT (7) and BELT_INVENTORY (6)
+// are other members of the SQL enum, so a filter by enum names never loaded switchbot / belt items again
+static const char* GetPlayerItemWindowList()
+{
+	static char s_szList[64];
+	if (!*s_szList)
+	{
+#ifdef ENABLE_WARDROBE_SYSTEM
+		snprintf(s_szList, sizeof(s_szList), "%d,%d,%d,%d,%d,%d", INVENTORY, EQUIPMENT, DRAGON_SOUL_INVENTORY, BELT_INVENTORY, SWITCHBOT, WARDROBE);
+#else
+		snprintf(s_szList, sizeof(s_szList), "%d,%d,%d,%d,%d", INVENTORY, EQUIPMENT, DRAGON_SOUL_INVENTORY, BELT_INVENTORY, SWITCHBOT);
+#endif
+	}
+	return s_szList;
+}
+#endif
+
 extern int g_test_server;
 extern int g_log;
 
@@ -201,10 +219,6 @@ size_t CreatePlayerSaveQuery(char * pszQuery, size_t querySize, TPlayerTable * p
 			"inventory_4 = %d, "
 			"inventory_5 = %d, "
 #endif
-#ifdef ENABLE_RIDING_EXTENDED
-			"mount_up_grade_exp = %d, "
-			"mount_up_grade_fail = %d, "
-#endif
 #ifdef ENABLE_SOUL_ROULETTE_SYSTEM
 			"soul = %d, "
 			"soulre = %d, "
@@ -326,10 +340,6 @@ size_t CreatePlayerSaveQuery(char * pszQuery, size_t querySize, TPlayerTable * p
 		,pkTab->inventory_unlock[3]
 		,pkTab->inventory_unlock[4]
 		,pkTab->inventory_unlock[5]
-#endif
-#ifdef ENABLE_RIDING_EXTENDED
-		,pkTab->mount_up_grade_exp
-		,pkTab->mount_up_grade_fail
 #endif
 #ifdef ENABLE_SOUL_ROULETTE_SYSTEM
 		,pkTab->soul
@@ -638,11 +648,11 @@ void CClientManager::QUERY_PLAYER_LOAD(CPeer * peer, DWORD dwHandle, TPlayerLoad
 				"FROM item%s "
 
 #ifdef ENABLE_RENEWAL_SWITCHBOT
-				"WHERE owner_id=%d AND (`window` in ('INVENTORY','EQUIPMENT','DRAGON_SOUL_INVENTORY','BELT_INVENTORY','SWITCHBOT'))",
+				"WHERE owner_id=%d AND (`window`+0 in (%s))",
 #else
 				"WHERE owner_id=%d AND (`window` in ('INVENTORY','EQUIPMENT','DRAGON_SOUL_INVENTORY','BELT_INVENTORY'))",
 #endif
-				GetTablePostfix(), pTab->id);
+				GetTablePostfix(), pTab->id, GetPlayerItemWindowList());
 
 			CDBManager::instance().ReturnQuery(szQuery, QID_ITEM, peer->GetHandle(), new ClientHandleInfo(dwHandle, pTab->id));
 			snprintf(szQuery, sizeof(szQuery), "SELECT dwPID, szName, szState, lValue FROM quest%s WHERE dwPID=%d", GetTablePostfix(), pTab->id);
@@ -740,10 +750,6 @@ void CClientManager::QUERY_PLAYER_LOAD(CPeer * peer, DWORD dwHandle, TPlayerLoad
 				",inventory_4 "
 				",inventory_5 "
 #endif
-#ifdef ENABLE_RIDING_EXTENDED
-				",mount_up_grade_exp "
-				",mount_up_grade_fail "
-#endif
 #ifdef ENABLE_SOUL_ROULETTE_SYSTEM
 				",soul "
 				",soulre "
@@ -829,11 +835,11 @@ void CClientManager::QUERY_PLAYER_LOAD(CPeer * peer, DWORD dwHandle, TPlayerLoad
 				"FROM item%s "
 
 #ifdef ENABLE_RENEWAL_SWITCHBOT
-				"WHERE owner_id=%d AND (`window` in ('INVENTORY','EQUIPMENT','DRAGON_SOUL_INVENTORY','BELT_INVENTORY','SWITCHBOT'))",
+				"WHERE owner_id=%d AND (`window`+0 in (%s))",
 #else
 				"WHERE owner_id=%d AND (`window` in ('INVENTORY','EQUIPMENT','DRAGON_SOUL_INVENTORY','BELT_INVENTORY'))",
 #endif
-				GetTablePostfix(), packet->player_id);
+				GetTablePostfix(), packet->player_id, GetPlayerItemWindowList());
 
 		CDBManager::instance().ReturnQuery(queryStr, QID_ITEM, peer->GetHandle(), new ClientHandleInfo(dwHandle, packet->player_id));
 
@@ -1039,10 +1045,6 @@ bool CreatePlayerTableFromRes(MYSQL_RES * res, TPlayerTable * pkTab)
 	str_to_number(pkTab->inventory_unlock[5], row[col++]);
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-	str_to_number(pkTab->mount_up_grade_exp, row[col++]);
-	str_to_number(pkTab->mount_up_grade_fail, row[col++]);
-#endif
 
 #ifdef ENABLE_SOUL_ROULETTE_SYSTEM
 	str_to_number(pkTab->soul, row[col++]);
@@ -1794,7 +1796,7 @@ void CClientManager::__RESULT_PLAYER_DELETE(CPeer *peer, SQLMsg* msg)
 		delete CDBManager::instance().DirectQuery(queryStr);
 
 #ifdef ENABLE_RENEWAL_SWITCHBOT
-		snprintf(queryStr, sizeof(queryStr), "DELETE FROM item%s WHERE owner_id=%d AND (`window` in ('INVENTORY','EQUIPMENT','DRAGON_SOUL_INVENTORY','BELT_INVENTORY','SWITCHBOT'))", GetTablePostfix(), pi->player_id);
+		snprintf(queryStr, sizeof(queryStr), "DELETE FROM item%s WHERE owner_id=%d AND (`window`+0 in (%s))", GetTablePostfix(), pi->player_id, GetPlayerItemWindowList());
 #else
 		snprintf(queryStr, sizeof(queryStr), "DELETE FROM item%s WHERE owner_id=%d AND (`window` in ('INVENTORY','EQUIPMENT','DRAGON_SOUL_INVENTORY','BELT_INVENTORY'))", GetTablePostfix(), pi->player_id);
 #endif

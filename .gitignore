@@ -164,3 +164,9 @@ Source/**/*.pch
 CLAUDE.md
 AGENTS.md
 Docs/*_reference_*.md
+
+# never publish: credentials (root copy) and the third-party admin panel
+/Bilgi.txt
+/Yönetim Paneli/
+# AudioLib build intermediates (54 MB .pch)
+Source/Client/source/AudioLib/Release/

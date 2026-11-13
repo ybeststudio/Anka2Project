@@ -64,6 +64,9 @@ struct SNetworkActorData
 	BYTE m_bLanguage;
 	BYTE m_bLanguage2;
 #endif
+#ifdef ENABLE_COUNTRY_FLAG
+	char m_szCountryFlag[COUNTRY_FLAG_MAX_LEN + 1];
+#endif
 
 #ifdef ENABLE_SKILL_COLOR_SYSTEM
 	DWORD m_dwSkillColor[ESkillColorLength::MAX_SKILL_COUNT + MAX_BUFF_COUNT][ESkillColorLength::MAX_EFFECT_COUNT];

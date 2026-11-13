@@ -27,7 +27,11 @@ public:
 	bool	StartShopping(LPCHARACTER pkChr, LPCHARACTER pkShopKeeper, int iShopVnum = 0);
 	void	StopShopping(LPCHARACTER ch);
 
+#ifdef ENABLE_SHOP_TABS_BAERIM
+	void	Buy(LPCHARACTER ch, WORD pos);
+#else
 	void	Buy(LPCHARACTER ch, BYTE pos);
+#endif
 #ifdef ENABLE_STACK_LIMIT
 	void	Sell(LPCHARACTER ch, BYTE bCell, WORD bCount=0);
 #else

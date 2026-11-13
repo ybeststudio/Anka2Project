@@ -198,6 +198,9 @@ class CPythonPlayer : public CSingleton<CPythonPlayer>, public IAbstractPlayer
 #ifdef ENABLE_RENEWAL_SWITCHBOT
 			TItemData			aSwitchbotItem[SWITCHBOT_SLOT_COUNT];
 #endif
+#ifdef ENABLE_WARDROBE_SYSTEM
+			TItemData			aWardrobeItem[c_Wardrobe_Count];
+#endif
 			TQuickSlot			aQuickSlot[QUICKSLOT_MAX_NUM];
 			TSkillInstance		aSkill[SKILL_MAX_NUM];
 #ifdef ENABLE_GOLD_LIMIT
@@ -816,6 +819,12 @@ class CPythonPlayer : public CSingleton<CPythonPlayer>, public IAbstractPlayer
 		float m_fCmrRotSpd;
 
 		TPlayerStatus m_playerStatus;
+#ifdef ENABLE_WARDROBE_SYSTEM
+	public:
+		DWORD GetItemRevision() const { return m_dwItemRevision; }
+	protected:
+		DWORD m_dwItemRevision = 1;	// changes whenever an item slot changes (wardrobe owned / storage views)
+#endif
 
 		UINT m_iComboOld;
 		DWORD m_dwVIDReserved;

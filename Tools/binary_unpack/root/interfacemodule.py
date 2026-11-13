@@ -101,8 +101,6 @@ if app.ENABLE_ITEMSHOP:
 if app.ENABLE_AURA_COSTUME_SYSTEM:
 	import uiAura
 
-if app.ENABLE_GUILDBANK_LOG:
-	import uiGuildBank
 	
 if app.ENABLE_FISH_GAME:
 	import uiFishGame
@@ -128,6 +126,8 @@ if app.ENABLE_DUNGEON_INFO:
 
 if app.__DUNGEON_INFO__:
 	import uiDungeonTrack
+	if app.ENABLE_DUNGEON_WINDOW_BAERIM:
+		import uiDungeonBaerim
 
 if app.ENABLE_RENEWAL_SPECIAL_CHAT:
 	import uiSpecialChat
@@ -141,8 +141,6 @@ if app.ENABLE_MOVE_COSTUME_ACCE_ATTR:
 if app.ENABLE_HUNTING_SYSTEM:
 	import uiHunting
 
-if app.ENABLE_RIDING_EXTENDED:
-	import uiMountUpGrade
 
 if app.__AUTO_HUNT__:
 	import uiAutoHunt
@@ -198,6 +196,12 @@ if app.ENABLE_BATTLE_PASS:
 
 if app.ENABLE_RANKING:
 	import uiranking
+if app.ENABLE_GLOBAL_RANKING:
+	import uiglobalranking
+if app.ENABLE_COSTUME_SHOP_BAERIM:
+	import uicostumeshop
+if getattr(app, "ENABLE_WARDROBE_SYSTEM", 0):
+	import uiwardrobe
 
 IsQBHide = 0
 class Interface(object):
@@ -321,8 +325,6 @@ class Interface(object):
 			self.wndSafebox = None
 			self.dlgRefineNew = None
 
-		if app.ENABLE_RIDING_EXTENDED:
-			self.wndMountUpGrade = None
 
 		if app.ENABLE_FISH_GAME:
 			self.wndFishGame = None
@@ -354,6 +356,15 @@ class Interface(object):
 
 		if app.ENABLE_RANKING:
 			self.wndRanking = None
+
+		if app.ENABLE_COSTUME_SHOP_BAERIM:
+			self.wndCostumeShop = None
+
+		if getattr(app, "ENABLE_WARDROBE_SYSTEM", 0):
+			self.wndWardrobe = None
+			self.wardrobeController = uiwardrobe.WardrobeController()
+			self.wardrobeController.SetChangeEvent(self.__OnWardrobeChanged)
+			self.wardrobeController.resultEvent = self.__OnWardrobeResult
 
 		self.listGMName = {}
 		self.wndQuestWindow = {}
@@ -528,8 +539,7 @@ class Interface(object):
 				self.wndMessengerButton.ToolTipText.SetHorizontalAlignCenter()
 				self.wndMessengerButton.SetEvent(ui.__mem_func__(self.__OnClickMessengerButton))
 				self.messengerQuickCloseTip = uiToolTip.ToolTip()
-				self.messengerQuickCloseTip.AutoAppendTextLine(localeInfo.WHISPER_TOOLTIP_CLOSE_SHORTCUT)
-				self.messengerQuickCloseTip.AlignHorizonalCenter()
+				self.messengerQuickCloseTip.SetIconTextLine(localeInfo.WHISPER_TOOLTIP_CLOSE_SHORTCUT)
 				self.messengerQuickCloseTip.Hide()
 				self.wndMessengerButton.SetHoverEvent(ui.__mem_func__(self.ShowMessengerQuickCloseTip), ui.__mem_func__(self.HideMessengerQuickCloseTip))
 				self.wndMessengerButton.badge = uiWhisperMessenger.UnreadBadge(self.wndMessengerButton)
@@ -576,8 +586,6 @@ class Interface(object):
 		wndChatLog.BindInterface(self)
 
 
-		if app.ENABLE_GUILDBANK_LOG:
-			self.wndGuildBank = uiGuildBank.GuildBankLogDialog()
 
 		self.wndCharacter = wndCharacter
 		self.wndInventory = wndInventory
@@ -597,8 +605,6 @@ class Interface(object):
 		if app.ENABLE_SUNG_MAHI_TOWER:
 			self.wndSungMahiWindow = uiSungMahi.SungMahiWindow()
 
-		if app.ENABLE_RIDING_EXTENDED:
-			self.wndMountUpGrade = uiMountUpGrade.MountUpGradeWindow()
 
 		if app.ENABLE_GUILD_RANK_SYSTEM:
 			self.wndGuildRanking = uiGuildRanking.GuildRankingDialog()
@@ -664,7 +670,9 @@ class Interface(object):
 		if app.ENABLE_BIOLOGIST_SYSTEM:
 			self.wndBiyologWindow = uiBiyolog.BiyologWindow()
 
-		if app.ENABLE_RANKING:
+		if app.ENABLE_GLOBAL_RANKING:
+			self.wndRanking = uiglobalranking.RankingWindow()
+		elif app.ENABLE_RANKING:
 			self.wndRanking = uiranking.RankingWindow()
 
 	def __MakeDialogs(self):
@@ -714,8 +722,7 @@ class Interface(object):
 		self.whisper_tooltip = None
 		if app.ENABLE_WHISPER_CLOSE_SHORTCUT:
 			self.whisper_tooltip = uiToolTip.ToolTip()
-			self.whisper_tooltip.AutoAppendTextLine(localeInfo.WHISPER_TOOLTIP_CLOSE_SHORTCUT)
-			self.whisper_tooltip.AlignHorizonalCenter()
+			self.whisper_tooltip.SetIconTextLine(localeInfo.WHISPER_TOOLTIP_CLOSE_SHORTCUT)
 			self.whisper_tooltip.Hide()
 
 		self.privateShopBuilder = uiPrivateShopBuilder.PrivateShopBuilder()
@@ -958,8 +965,6 @@ class Interface(object):
 		self.wndCubeResult.SetItemToolTip(self.tooltipItem)
 
 
-		if app.ENABLE_GUILDBANK_LOG:
-			self.wndGuildBank.SetItemToolTip(self.tooltipItem)
 
 		# ITEM_MALL
 		self.wndMall.SetItemToolTip(self.tooltipItem)
@@ -1346,6 +1351,20 @@ class Interface(object):
 				self.wndRanking.Destroy()
 				del self.wndRanking
 
+		if app.ENABLE_COSTUME_SHOP_BAERIM:
+			if self.wndCostumeShop:
+				self.wndCostumeShop.Destroy()
+			self.wndCostumeShop = None
+
+		if getattr(app, "ENABLE_WARDROBE_SYSTEM", 0):
+			if self.wndWardrobe:
+				self.wndWardrobe.Destroy()
+			self.wndWardrobe = None
+			if self.wardrobeController:
+				self.wardrobeController.SetChangeEvent(None)
+				self.wardrobeController.resultEvent = None
+			self.wardrobeController = None
+
 		if app.ENABLE_RESP_SYSTEM:
 			if self.wndResp:
 				self.wndResp.Destroy()
@@ -1359,10 +1378,6 @@ class Interface(object):
 			if self.wndAcceAbsorption:
 				self.wndAcceAbsorption.Destroy()
 
-		if app.ENABLE_GUILDBANK_LOG:
-			if self.wndGuildBank:
-				self.wndGuildBank.Destroy()
-				self.wndGuildBank.Close()
 
 		if app.ENABLE_VIEW_CHEST_DROP:
 			if self.dlgChestDrop:
@@ -1470,10 +1485,6 @@ class Interface(object):
 				del self.wndItemCombination
 				self.wndItemCombination = None
 
-		if app.ENABLE_RIDING_EXTENDED:
-			if self.wndMountUpGrade:
-				self.wndMountUpGrade.Destroy()
-				del self.wndMountUpGrade
 
 		if app.ENABLE_COLLECT_WINDOW:
 			if self.wndCollectWindow:
@@ -1595,8 +1606,6 @@ class Interface(object):
 			if self.wndSpecialInventory:
 				del self.wndSpecialInventory
 
-		if app.ENABLE_GUILDBANK_LOG:
-			del self.wndGuildBank
 
 		if app.ENABLE_MINI_GAME_OKEY:
 			del self.wndCardsInfo
@@ -1818,18 +1827,6 @@ class Interface(object):
 	def RefreshGuildGradePage(self):
 		self.wndGuild.RefreshGuildGradePage()
 
-	if app.ENABLE_GUILDRENEWAL_SYSTEM:
-		## guild_renewal
-		def RefreshGuildBaseInfoPage(self):
-			self.wndGuild.RefreshGuildBaseInfoPage()
-
-		## GuildBaseInfoBankGold
-		def RefreshGuildBaseInfoPageBankGold(self):
-			self.wndGuild.RefreshGuildBaseInfoPageBankGold()
-
-		## guild_renewal_war
-		def RefreshGuildWarInfoPage(self):
-			self.wndGuild.RefreshGuildWarInfoPage()
 
 	def DeleteGuild(self):
 		self.wndMessenger.ClearGuildMember()
@@ -1969,11 +1966,6 @@ class Interface(object):
 	def RefreshSafeboxMoney(self):
 		self.wndSafebox.RefreshSafeboxMoney()
 
-	if app.ENABLE_GUILDRENEWAL_SYSTEM:
-		def OpenGuildScoreWindow(self):
-			import chat
-			chat.AppendChat(chat.CHAT_TYPE_INFO, "OpenGuildScoreWindow")
-			self.wndGuild.OpenGuildScoreWindow()
 
 	def CommandCloseSafebox(self):
 		if app.ENABLE_SPECIAL_INVENTORY:
@@ -2033,8 +2025,6 @@ class Interface(object):
 		guildWarScoreBoard = uiGuild.GuildWarScoreBoard()
 		guildWarScoreBoard.Open(guildSelf, guildOpp)
 		guildWarScoreBoard.Show()
-		if app.ENABLE_GUILDRENEWAL_SYSTEM:
-			self.wndGuild.GuildWarOppGuildNameSetting(guildSelf, guildOpp)
 		self.guildScoreBoardDict[uiGuild.GetGVGKey(guildSelf, guildOpp)] = guildWarScoreBoard
 
 	def OnEndGuildWar(self, guildSelf, guildOpp):
@@ -2058,25 +2048,13 @@ class Interface(object):
 		self.guildScoreBoardDict[key].UpdateMemberCount(gulidID1, memberCount1, guildID2, memberCount2)
 	# END_OF_GUILDWAR_MEMBER_COUNT
 
-	if app.ENABLE_GUILDRENEWAL_SYSTEM:
-		def OnRecvGuildWarPoint(self, gainGuildID, opponentGuildID, point, winpoint):
-			key = uiGuild.GetGVGKey(gainGuildID, opponentGuildID)
-			if not self.guildScoreBoardDict.has_key(key):
-				return
+	def OnRecvGuildWarPoint(self, gainGuildID, opponentGuildID, point):
+		key = uiGuild.GetGVGKey(gainGuildID, opponentGuildID)
+		if not self.guildScoreBoardDict.has_key(key):
+			return
 
-			guildBoard = self.guildScoreBoardDict[key]
-			guildBoard.SetScore(gainGuildID, opponentGuildID, point)
-			import chat
-			chat.AppendChat(1, "OnRecvGuildWarPoint - winpoint %d" % (winpoint))
-			self.wndGuild.GuildWarScoreSetting(gainGuildID, opponentGuildID, point, winpoint)
-	else:
-		def OnRecvGuildWarPoint(self, gainGuildID, opponentGuildID, point):
-			key = uiGuild.GetGVGKey(gainGuildID, opponentGuildID)
-			if not self.guildScoreBoardDict.has_key(key):
-				return
-
-			guildBoard = self.guildScoreBoardDict[key]
-			guildBoard.SetScore(gainGuildID, opponentGuildID, point)
+		guildBoard = self.guildScoreBoardDict[key]
+		guildBoard.SetScore(gainGuildID, opponentGuildID, point)
 
 	## PK Mode
 	def OnChangePKMode(self):
@@ -2115,7 +2093,7 @@ class Interface(object):
 			if self.wnd12ziReward:
 				self.wnd12ziReward.Show()
 
-		if app.ENABLE_RANKING:
+		if app.ENABLE_RANKING and not app.ENABLE_GLOBAL_RANKING:
 			if self.wndRanking:
 				self.wndRanking.Open()
 
@@ -2176,9 +2154,6 @@ class Interface(object):
 			if self.wndSungMahiWindow:
 				self.wndSungMahiWindow.Hide()
 
-		if app.ENABLE_RIDING_EXTENDED:
-			if self.wndMountUpGrade:
-				self.wndMountUpGrade.Hide()
 
 		if app.ENABLE_RESP_SYSTEM:
 			if self.wndResp:
@@ -2553,13 +2528,6 @@ class Interface(object):
 		return self.wndCompanion.GetBuffiSkillsCooldown() if self.wndCompanion else []
 
 	def ToggleGuildWindow(self):
-		if app.ENABLE_SECOND_GUILDRENEWAL_SYSTEM and app.ENABLE_GUILD_REQUEST:
-			if not self.wndGuild.CanOpen():
-				if self.wndGuild.GuildListDialogIsShow():
-					self.wndGuild.CloseGuildListDialog()
-				else:
-					self.wndGuild.OpenGuildListDialog()
-				return
 
 		if not self.wndGuild.IsShow():
 			if self.wndGuild.CanOpen():
@@ -2846,17 +2814,7 @@ class Interface(object):
 				board.Refresh(iAct)
 			self.wndInventory.RefreshBagSlotWindow()
 
-	if app.ENABLE_GUILDBANK_LOG:
-		def OpenGuildBankInfo(self):
-			self.wndGuildBank.Show()
 
-		def GuildBankLogInfoRefresh(self):
-			self.wndGuildBank.RefreshGuildBankInfo()
-
-	if app.ENABLE_GUILDRENEWAL_SYSTEM and app.ENABLE_GUILD_DONATE_ATTENDANCE:
-		def GuildDonateInfoRefresh(self):
-			guildDonateBoard = uiGuild.DonateGuildDialog()
-			guildDonateBoard.RefreshGuildDonateInfo()
 
 	if app.ENABLE_RESP_SYSTEM:
 		def OpenRespWindow(self):
@@ -2902,8 +2860,6 @@ class Interface(object):
 		if app.ENABLE_COLLECTIONS_SYSTEM:
 			hideWindows += self.wndCollections,
 
-		if app.ENABLE_RIDING_EXTENDED and self.wndMountUpGrade:
-			hideWindows += self.wndMountUpGrade,
 
 		if app.ENABLE_RESP_SYSTEM and self.wndResp:
 			hideWindows += self.wndResp,
@@ -2986,12 +2942,8 @@ class Interface(object):
 			else:
 				self.wndCollections.Show()
 
-	if app.ENABLE_GUILDRENEWAL_SYSTEM:
-		def BINARY_SetObserverMode(self, flag, isbuttonshow):
-			self.wndGameButton.SetObserverMode(flag,isbuttonshow)
-	else:
-		def BINARY_SetObserverMode(self, flag):
-			self.wndGameButton.SetObserverMode(flag)
+	def BINARY_SetObserverMode(self, flag):
+		self.wndGameButton.SetObserverMode(flag)
 
 	# ACCESSORY_REFINE_ADD_METIN_STONE
 	def BINARY_OpenSelectItemWindow(self):
@@ -3272,6 +3224,7 @@ class Interface(object):
 		def ShowMessengerQuickCloseTip(self):
 			tip = getattr(self, "messengerQuickCloseTip", None)
 			if tip:
+				tip.FitIconTextLine()
 				tip.ShowToolTip()
 				tip.SetTop()
 
@@ -3384,7 +3337,10 @@ class Interface(object):
 		self.__CheckGameMaster(name)
 
 	if app.ENABLE_EXTENDED_WHISPER_DETAILS and app.ENABLE_MULTI_LANGUAGE_SYSTEM:
-		def RecieveWhisperDetails(self, name, country):
+		def RecieveWhisperDetails(self, name, country, countryFlag = ""):
+			if app.ENABLE_COUNTRY_FLAG and self.wndWhisperMessenger:
+				self.wndWhisperMessenger.SetCountryFlag(name, countryFlag)
+
 			if self.whisperDialogDict.has_key(name):
 				self.whisperDialogDict[name].SetCountryFlag(country)
 			else:
@@ -3528,6 +3484,7 @@ class Interface(object):
 
 	def ShowWhisperToolTip(self):
 		if app.ENABLE_WHISPER_CLOSE_SHORTCUT and self.whisper_tooltip:
+			self.whisper_tooltip.FitIconTextLine()
 			self.whisper_tooltip.SetTop()
 			self.whisper_tooltip.Show()
 
@@ -3826,6 +3783,60 @@ class Interface(object):
 			if self.wndRanking:
 				self.wndRanking.Open()
 
+	if getattr(app, "ENABLE_WARDROBE_SYSTEM", 0):
+		def GetWardrobeController(self):
+			return self.wardrobeController
+
+		def ToggleWardrobeWindow(self):
+			if not self.wardrobeController:
+				return
+			if not self.wndWardrobe:
+				self.wndWardrobe = uiwardrobe.WardrobeWindow(self.wardrobeController, self)
+			if self.wndWardrobe.IsShow():
+				self.wndWardrobe.Close()
+			else:
+				self.wndWardrobe.Open()
+
+		def OpenWardrobeInventory(self, lookSlot = -1):
+			if not self.wardrobeController:
+				return
+			if not self.wndWardrobe:
+				self.wndWardrobe = uiwardrobe.WardrobeWindow(self.wardrobeController, self)
+			self.wndWardrobe.OpenInventory(lookSlot)
+
+		def __OnWardrobeChanged(self, what):
+			if self.wndWardrobe and self.wndWardrobe.IsShow():
+				self.wndWardrobe.OnControllerChanged(what)
+
+		def __OnWardrobeResult(self, action, result):
+			if self.wndWardrobe:
+				self.wndWardrobe.OnResult(action, result)
+
+	if app.ENABLE_COSTUME_SHOP_BAERIM:
+		def __GetCostumeShop(self):
+			if not self.wndCostumeShop:
+				self.wndCostumeShop = uicostumeshop.CostumeShopWindow()
+				self.wndCostumeShop.SetInterface(self)
+			return self.wndCostumeShop
+
+		def CostumeShopClear(self):
+			self.__GetCostumeShop().ClearEntries()
+
+		def CostumeShopAdd(self, data):
+			self.__GetCostumeShop().AddEntries(data)
+
+		def CostumeShopOpen(self, serverTime):
+			self.__GetCostumeShop().Open(serverTime)
+
+		def CostumeShopResult(self, result):
+			if self.wndCostumeShop:
+				self.wndCostumeShop.OnResult(result)
+
+	if app.ENABLE_GLOBAL_RANKING:
+		def LoadRankData(self, page, timeIdx, category, secondsToReset, ownValue, rankCmd):
+			if self.wndRanking:
+				self.wndRanking.LoadRankData(page, timeIdx, category, secondsToReset, ownValue, rankCmd)
+
 		def RankingClearData(self):
 			if self.wndRanking:
 				self.wndRanking.ClearData()
@@ -4096,6 +4107,17 @@ class Interface(object):
 					self.wndWiki.Open()
 				self.wndWiki.SearchItem(itemVnum)
 
+		def SearchWikiForMob(self, mobVnum):
+			# target board "W" button (Baerim): open the wiki on the monster page
+			if not mobVnum:
+				return
+			if self.wndWiki == None:
+				self.__MakeWiki()
+			if self.wndWiki:
+				if not self.wndWiki.IsShow():
+					self.wndWiki.Open()
+				self.wndWiki.ShowItemInfo(mobVnum, 1)
+
 		def OpenWikiWindow(self):
 			if self.wndWiki == None:
 				self.__MakeWiki()
@@ -4307,6 +4329,15 @@ class Interface(object):
 
 	if app.ENABLE_RENEWAL_TELEPORT_SYSTEM:
 		def OpenWarpWindow(self):
+			if app.ENABLE_TELEPORT_BAERIM and app.ENABLE_DUNGEON_WINDOW_BAERIM:
+				# Baerim: the teleport map is the first tab of the dungeon window
+				if self.wndDungeonTrack == None:
+					self.wndDungeonTrack = uiDungeonBaerim.DungeonWindow()
+				if self.wndDungeonTrack.IsShow() and self.wndDungeonTrack.GetPage() == "MAP":
+					self.wndDungeonTrack.Close()
+				else:
+					self.wndDungeonTrack.Open("MAP")
+				return
 			if self.wndWarpWindow.IsShow():
 				self.wndWarpWindow.Close()
 			else:
@@ -4385,23 +4416,6 @@ class Interface(object):
 			return None
 		return self.uiAffectshower.GetAffectData(affect_type)
 
-	if app.ENABLE_SECOND_GUILDRENEWAL_SYSTEM:
-		if app.ENABLE_GUILD_REQUEST:
-			def RefreshGuildRankingList(self, issearch):
-				if self.wndGuild:
-					self.wndGuild.RefreshGuildRankingList(issearch)
-
-			def CloseGuildRankWindow(self):
-				if self.wndGuild:
-					self.wndGuild.CloseGuildListDialog()
-
-		def ShowGuildWarButton(self):
-			if self.wndGameButton:
-				self.wndGameButton.ShowGuildWarButton()
-
-		def HideGuildWarButton(self):
-			if self.wndGameButton:
-				self.wndGameButton.HideGuildWarButton()
 
 	if app.ENABLE_HUNTING_SYSTEM:
 		def ToggleHuntingWindow(self):
@@ -4441,13 +4455,6 @@ class Interface(object):
 			if self.wndHuntingSelect:
 				self.wndHuntingSelect.SetRandomItemTable(item_vnum, item_count)
 
-	if app.ENABLE_RIDING_EXTENDED:
-		def MountUpGradeWindow(self):
-			if not player.IsObserverMode():
-				if not self.wndMountUpGrade.IsShow():
-					self.wndMountUpGrade.Open()
-				else:
-					self.wndMountUpGrade.Close()
 
 	if app.__DUNGEON_INFO__:
 		def DungeonInfoQuestIdx(self, questIdx):
@@ -4459,6 +4466,14 @@ class Interface(object):
 
 		def OpenDungeonInfo(self):
 			try:
+				if app.ENABLE_DUNGEON_WINDOW_BAERIM:
+					if self.wndDungeonTrack == None:
+						self.wndDungeonTrack = uiDungeonBaerim.DungeonWindow()
+					if self.wndDungeonTrack.IsShow():
+						self.wndDungeonTrack.Close()
+					else:
+						self.wndDungeonTrack.Open()
+					return
 				if self.wndDungeonTrack == None:
 					self.wndDungeonTrack = uiDungeonTrack.DungeonTrack()
 				if self.wndDungeonTrack.IsShow():
@@ -4482,7 +4497,7 @@ class Interface(object):
 				dungeonList = data[:len(data)-1].split("#")
 				for dungeonInfo in dungeonList:
 					dungeonSplitData = dungeonInfo.split("|")
-					if len(dungeonSplitData) == 5:
+					if len(dungeonSplitData) >= 5:
 						bossIdx = int(dungeonSplitData[0])
 						if dungeonData.has_key(bossIdx):
 							if dungeonData[bossIdx]["server_cooldown"] != app.GetGlobalTimeStamp() + int(dungeonSplitData[1]):
@@ -4491,10 +4506,25 @@ class Interface(object):
 							dungeonData[bossIdx]["server_completed"] = int(dungeonSplitData[2])
 							dungeonData[bossIdx]["server_fastest"] = int(dungeonSplitData[3])
 							dungeonData[bossIdx]["server_damage"] = int(dungeonSplitData[4])
+							# ENABLE_DUNGEON_WINDOW_BAERIM: dps|daily used|daily limit|server average|server best|seconds to the daily reset
+							if len(dungeonSplitData) >= 11:
+								dungeonData[bossIdx]["server_dps"] = int(dungeonSplitData[5])
+								dungeonData[bossIdx]["current_daily_limit"] = int(dungeonSplitData[6])
+								dungeonData[bossIdx]["daily_limit"] = int(dungeonSplitData[7])
+								dungeonData[bossIdx]["server_average_fastest"] = int(dungeonSplitData[8])
+								dungeonData[bossIdx]["server_best_fastest"] = int(dungeonSplitData[9])
+								dungeonData[bossIdx]["server_daily_reset"] = app.GetGlobalTimeStamp() + int(dungeonSplitData[10])
+							# ENABLE_DUNGEON_LIMIT_RENEWAL: pc used today|weekly stack
+							if len(dungeonSplitData) >= 13:
+								dungeonData[bossIdx]["current_daily_limit_pc"] = int(dungeonSplitData[11])
+								dungeonData[bossIdx]["daily_stack"] = int(dungeonSplitData[12])
 			if self.wndDungeonManager == None:
 				self.wndDungeonManager = uiDungeonTrack.DungeonManager()
 			if self.wndDungeonTrack == None:
-				self.wndDungeonTrack = uiDungeonTrack.DungeonTrack()
+				if app.ENABLE_DUNGEON_WINDOW_BAERIM:
+					self.wndDungeonTrack = uiDungeonBaerim.DungeonWindow()
+				else:
+					self.wndDungeonTrack = uiDungeonTrack.DungeonTrack()
 			self.wndDungeonTrack.Refresh()
 
 		def LoadServerData(self, mobIdx, rankIdx, cmd):

@@ -27,6 +27,7 @@
 #include "log.h"
 #include "questmanager.h"
 #include "db.h"
+#include "damage_trace.h"
 
 #ifdef ENABLE_ULTIMATE_REGEN
 	#include "new_mob_timer.h"
@@ -359,7 +360,7 @@ int CalcAttBonus(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, int iAtk)
 		&& !pkVictim->IsBotCharacter()
 #endif
 		)
-		iAtk += pkAttacker->GetMarriageBonus(UNIQUE_ITEM_MARRIAGE_ATTACK_BONUS);
+		{ iAtk += pkAttacker->GetMarriageBonus(UNIQUE_ITEM_MARRIAGE_ATTACK_BONUS); DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "MARRIAGE", iAtk); }
 
 	// Does not apply to PvP
 	if (!pkAttacker->IsPC()
@@ -398,71 +399,71 @@ int CalcAttBonus(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, int iAtk)
 		*/
 
 		if (pkVictim->IsRaceFlag(RACE_FLAG_ANIMAL))
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_ANIMAL)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_ANIMAL)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_ANIMAL", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_UNDEAD))
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_UNDEAD)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_UNDEAD)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_UNDEAD", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_DEVIL))
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_DEVIL)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_DEVIL)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_DEVIL", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_HUMAN))
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_HUMAN)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_HUMAN)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_HUMAN", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_ORC))
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_ORC)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_ORC)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_ORC", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_MILGYO))
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_MILGYO)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_MILGYO)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_MILGYO", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_INSECT))
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_INSECT)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_INSECT)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_INSECT", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_FIRE))
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_FIRE)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_FIRE)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_FIRE", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_ICE))
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_ICE)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_ICE)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_ICE", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_DESERT))
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_DESERT)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_DESERT)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_DESERT", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_TREE))
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_TREE)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_TREE)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_TREE", iAtk); }
 #ifdef ENABLE_BONUS_FIX
 
 		if (pkVictim->IsRaceFlag(RACE_FLAG_CZ))
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_CZ)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_CZ)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_CZ", iAtk); }
 #else
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_CZ))
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_CZ)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_CZ)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_CZ", iAtk); }
 #endif
 		if (pkVictim->IsMonster())
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_MONSTER)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_MONSTER)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_MONSTER", iAtk); }
 #ifdef ENABLE_BONUS_FIX
 		if (pkVictim->IsRaceFlag(RACE_FLAG_ANIMAL))
-			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_ANIMAL) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_ANIMAL) / 100)) / 100;
+			{ iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_ANIMAL) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_ANIMAL) / 100)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_ANIMAL", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_UNDEAD))
-			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_UNDEAD) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_UNDEAD) / 100)) / 100;
+			{ iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_UNDEAD) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_UNDEAD) / 100)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_UNDEAD", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_DEVIL))
-			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_DEVIL) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_DEVIL) / 100)) / 100;
+			{ iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_DEVIL) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_DEVIL) / 100)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_DEVIL", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_HUMAN))
-			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_HUMAN) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_HUMAN) / 100)) / 100;
+			{ iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_HUMAN) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_HUMAN) / 100)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_HUMAN", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_ORC))
-			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_ORC) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_ORC) / 100)) / 100;
+			{ iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_ORC) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_ORC) / 100)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_ORC", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_MILGYO))
-			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_MILGYO) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_MILGYO) / 100)) / 100;
+			{ iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_MILGYO) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_MILGYO) / 100)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_MILGYO", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_INSECT))
-			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_INSECT) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_INSECT) / 100)) / 100;
+			{ iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_INSECT) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_INSECT) / 100)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_INSECT", iAtk); }
 		else if (pkVictim->IsRaceFlag(RACE_FLAG_DESERT))
-			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_DESERT) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_DESERT) / 100)) / 100;
+			{ iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_DESERT) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_DESERT) / 100)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_DESERT", iAtk); }
 		if (pkVictim->IsRaceFlag(RACE_FLAG_CZ))
-			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_CZ) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_CZ) / 100)) / 100;
+			{ iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_CZ) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_CZ) / 100)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_CZ", iAtk); }
 		if (pkVictim->IsMonster())
-			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_MONSTER) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_MONSTER) / 100)) / 100;
+			{ iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_MONSTER) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_MONSTER) / 100)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_MONSTER", iAtk); }
 		if (pkVictim->IsStone())
-			iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_STONE) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_STONE) / 100)) / 100;
+			{ iAtk += (iAtk * (pkAttacker->GetPoint(POINT_ATTBONUS_STONE) * pkAttacker->GetPoint(POINT_ATTBONUS_PER_STONE) / 100)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_STONE", iAtk); }
 #endif
 #ifdef ENABLE_NEW_BONUS_SYSTEM
 		if (pkVictim->IsStone())
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_STONE)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_STONE)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_STONE", iAtk); }
 		if (pkVictim->GetMobRank() >= MOB_RANK_BOSS)
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_BOSS)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_BOSS)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_BOSS", iAtk); }
 #ifdef ENABLE_BONUS_FIX
 		if (pkVictim->IsRaceFlag(RACE_FLAG_ATT_ELEC | RACE_FLAG_ATT_FIRE | RACE_FLAG_ATT_ICE | RACE_FLAG_ATT_WIND | RACE_FLAG_ATT_EARTH | RACE_FLAG_ATT_DARK))
-			iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_ELEMENTS)) / 100;
+			{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_ELEMENTS)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_ELEMENTS", iAtk); }
 #else
-		iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_ELEMENTS)) / 100;
+		{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_ELEMENTS)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_ELEMENTS", iAtk); }
 #endif
 #endif
 	}
@@ -472,32 +473,32 @@ int CalcAttBonus(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, int iAtk)
 #endif
 		)
 	{
-		iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_HUMAN)) / 100;
+		{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_HUMAN)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_HUMAN", iAtk); }
 #ifdef ENABLE_NEW_BONUS_SYSTEM
-		iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_CHARACTERS)) / 100;
+		{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_CHARACTERS)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_CHARACTERS", iAtk); }
 #endif
 
 		switch (pkVictim->GetJob())
 		{
 			case JOB_WARRIOR:
-				iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_WARRIOR)) / 100;
+				{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_WARRIOR)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_WARRIOR", iAtk); }
 				break;
 
 			case JOB_ASSASSIN:
-				iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_ASSASSIN)) / 100;
+				{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_ASSASSIN)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_ASSASSIN", iAtk); }
 				break;
 
 			case JOB_SURA:
-				iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_SURA)) / 100;
+				{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_SURA)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_SURA", iAtk); }
 				break;
 
 			case JOB_SHAMAN:
-				iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_SHAMAN)) / 100;
+				{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_SHAMAN)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_SHAMAN", iAtk); }
 				break;
 
 #ifdef ENABLE_WOLFMAN_CHARACTER
 			case JOB_WOLFMAN:
-				iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_WOLFMAN)) / 100;
+				{ iAtk += (iAtk * pkAttacker->GetPoint(POINT_ATTBONUS_WOLFMAN)) / 100; DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTBONUS_WOLFMAN", iAtk); }
 				break;
 #endif
 
@@ -781,6 +782,15 @@ int CalcMeleeDamage(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, bool bIgnoreDe
 	}
 	iAtk = static_cast<int>(iAtk * fAR);
 	iAtk += pkAttacker->GetLevel() * 2; // and add again
+#ifdef ENABLE_DAMAGE_TRACE
+	if (DamageTrace::IsActive(pkAttacker, pkVictim))
+	{
+		const long long llAttack = pkAttacker->GetPoint(POINT_ATT_GRADE) + ((pkAttacker->IsPC() && pkVictim->IsPvM()) ? pkAttacker->GetPoint(POINT_ATTBONUS_PVM_STR) : 0);
+		DamageTrace::Step(pkAttacker, pkVictim, "ATTACK", llAttack);
+		DamageTrace::Step(pkAttacker, pkVictim, "WEAPON", llAttack + iDam);
+		DamageTrace::Step(pkAttacker, pkVictim, "ACCURACY", iAtk);
+	}
+#endif
 
 	if (pWeapon)
 	{
@@ -789,8 +799,10 @@ int CalcMeleeDamage(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, bool bIgnoreDe
 		// 2004.11.12.myevan.TESTSERVER_SHOW_ATTACKINFO
 		DEBUG_iDamBonus = pWeapon->GetValue(5) * 2;
 	}
+	DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "REFINE", iAtk);
 
 	iAtk += pkAttacker->GetPoint(POINT_PARTY_ATTACKER_BONUS); // party attacker role bonus
+	DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "PARTY", iAtk);
 	if (pkAttacker->IsPC() && pkVictim->IsPvM())
 	{
 		iAtk = (int)(iAtk * (100 + (pkAttacker->GetPoint(POINT_ATT_BONUS) + pkAttacker->GetPoint(POINT_MELEE_MAGIC_ATT_BONUS_PER) + pkAttacker->GetPoint(POINT_ATTBONUS_PVM_BERSERKER))) / 100);
@@ -800,6 +812,7 @@ int CalcMeleeDamage(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, bool bIgnoreDe
 		iAtk = (int)(iAtk * (100 + (pkAttacker->GetPoint(POINT_ATT_BONUS) + pkAttacker->GetPoint(POINT_MELEE_MAGIC_ATT_BONUS_PER))) / 100);
 	}
 
+	DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTACK_PERCENT", iAtk);
 	iAtk = CalcAttBonus(pkAttacker, pkVictim, iAtk);
 
 	int iDef = 0;
@@ -816,6 +829,7 @@ int CalcMeleeDamage(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, bool bIgnoreDe
 		iAtk = static_cast<int>(iAtk * pkAttacker->GetMobDamageMultiply());
 
 	iDam = MAX(0, iAtk - iDef);
+	DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "DEFENSE", iDam);
 
 	if (test_server)
 	{
@@ -879,7 +893,15 @@ int CalcMeleeDamage(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, bool bIgnoreDe
 		pkVictim->ChatPacket(CHAT_TYPE_TALKING, "%s", szMeleeAttack);
 	}
 
+#ifdef ENABLE_DAMAGE_TRACE
+	{
+		const int iBattleDam = CalcBattleDamage(iDam, pkAttacker->GetLevel(), pkVictim->GetLevel());
+		DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "MINIMUM", iBattleDam);
+		return iBattleDam;
+	}
+#else
 	return CalcBattleDamage(iDam, pkAttacker->GetLevel(), pkVictim->GetLevel());
+#endif
 }
 
 int CalcArrowDamage(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, LPITEM pkBow, LPITEM pkArrow, bool bIgnoreDefense)
@@ -921,11 +943,26 @@ int CalcArrowDamage(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, LPITEM pkBow, 
 	}
 	iAtk = static_cast<int>(iAtk * fAR);
 	iAtk += pkAttacker->GetLevel() * 2; // and add again
+#ifdef ENABLE_DAMAGE_TRACE
+	const bool bDamageTrace = !bIgnoreDefense && DamageTrace::IsActive(pkAttacker, pkVictim);
+	if (bDamageTrace)
+	{
+		const long long llAttack = pkAttacker->GetPoint(POINT_ATT_GRADE) + ((pkAttacker->IsPC() && pkVictim->IsPvM()) ? pkAttacker->GetPoint(POINT_ATTBONUS_PVM_STR) : 0);
+		DamageTrace::Step(pkAttacker, pkVictim, "ATTACK", llAttack);
+		DamageTrace::Step(pkAttacker, pkVictim, "WEAPON", llAttack + iDam);
+		DamageTrace::Step(pkAttacker, pkVictim, "ACCURACY", iAtk);
+	}
+#define ARROW_TRACE_STEP(key, value) do { if (bDamageTrace) DamageTrace::Step(pkAttacker, pkVictim, (key), (long long) (value)); } while (0)
+#else
+#define ARROW_TRACE_STEP(key, value) do { } while (0)
+#endif
 
 	// Refine Grade
 	iAtk += pkBow->GetValue(5) * 2;
+	ARROW_TRACE_STEP("REFINE", iAtk);
 
 	iAtk += pkAttacker->GetPoint(POINT_PARTY_ATTACKER_BONUS);
+	ARROW_TRACE_STEP("PARTY", iAtk);
 	if (pkAttacker->IsPC() && pkVictim->IsPvM())
 	{
 		iAtk = (int)(iAtk * (100 + (pkAttacker->GetPoint(POINT_ATT_BONUS) + pkAttacker->GetPoint(POINT_MELEE_MAGIC_ATT_BONUS_PER) + pkAttacker->GetPoint(POINT_ATTBONUS_PVM_BERSERKER))) / 100);
@@ -935,6 +972,7 @@ int CalcArrowDamage(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, LPITEM pkBow, 
 		iAtk = (int)(iAtk * (100 + (pkAttacker->GetPoint(POINT_ATT_BONUS) + pkAttacker->GetPoint(POINT_MELEE_MAGIC_ATT_BONUS_PER))) / 100);
 	}
 
+	ARROW_TRACE_STEP("ATTACK_PERCENT", iAtk);
 	iAtk = CalcAttBonus(pkAttacker, pkVictim, iAtk);
 
 	int iDef = 0;
@@ -950,10 +988,13 @@ int CalcArrowDamage(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, LPITEM pkBow, 
 		iAtk = static_cast<int>(iAtk * pkAttacker->GetMobDamageMultiply());
 
 	iDam = MAX(0, iAtk - iDef);
+	ARROW_TRACE_STEP("DEFENSE", iDam);
 
 	int iPureDam = iDam;
 
 	iPureDam = (iPureDam * iPercent) / 100;
+	ARROW_TRACE_STEP("DISTANCE", iPureDam);
+#undef ARROW_TRACE_STEP
 
 	if (test_server)
 	{
@@ -1129,10 +1170,12 @@ int battle_hit(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, int& iRetDam)
 #endif
 		}
 
+	DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "WEAPON_RESIST", iDam);
 	float attMul = pkAttacker->GetAttMul();
 	float tempIDam = iDam;
 
 	iDam = attMul * tempIDam + 0.5f;
+	DAMAGE_TRACE_STEP(pkAttacker, pkVictim, "ATTACK_MULTIPLIER", iDam);
 
 	iRetDam = iDam;
 

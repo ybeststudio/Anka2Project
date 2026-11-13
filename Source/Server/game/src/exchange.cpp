@@ -142,6 +142,12 @@ bool CHARACTER::ExchangeStart(LPCHARACTER victim)
 #endif
 
 	if (IsOpenSafebox() || GetShopOwner() || GetMyShop() || IsCubeOpen()
+#ifdef ENABLE_EXPLOIT_AUDIT_FIX
+		|| NULL != DragonSoul_RefineWindow_GetOpener()
+#ifdef ENABLE_ACCE_COSTUME_SYSTEM
+		|| IsAcceOpened()
+#endif
+#endif
 #ifdef ENABLE_AURA_COSTUME_SYSTEM
 		|| IsAuraRefineWindowOpen()
 #endif
@@ -155,6 +161,12 @@ bool CHARACTER::ExchangeStart(LPCHARACTER victim)
 	}
 
 	if (victim->IsOpenSafebox() || victim->GetShopOwner() || victim->GetMyShop() || victim->IsCubeOpen()
+#ifdef ENABLE_EXPLOIT_AUDIT_FIX
+		|| NULL != victim->DragonSoul_RefineWindow_GetOpener()
+#ifdef ENABLE_ACCE_COSTUME_SYSTEM
+		|| victim->IsAcceOpened()
+#endif
+#endif
 #ifdef ENABLE_AURA_COSTUME_SYSTEM
 		|| victim->IsAuraRefineWindowOpen()
 #endif
@@ -262,6 +274,12 @@ bool CExchange::AddItem(TItemPos item_pos, BYTE display_pos)
 	{
 		return false;
 	}
+
+#if defined(ENABLE_EXPLOIT_AUDIT_FIX) && defined(ENABLE_RENEWAL_SWITCHBOT)
+	// an item in the switchbot keeps being rerolled while the trade is open
+	if (item_pos.window_type == SWITCHBOT)
+		return false;
+#endif
 
 #ifdef ENABLE_SEALBIND_SYSTEM
 	if (item->IsSealed())

@@ -1843,6 +1843,10 @@ void initItem()
 
 	PyModule_AddIntConstant(poModule, "COSTUME_SLOT_START", c_Costume_Slot_Start);
 	PyModule_AddIntConstant(poModule, "COSTUME_SLOT_COUNT", c_Costume_Slot_Count);
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+	PyModule_AddIntConstant(poModule, "COSTUME_TYPE_ACCE_SKIN", CItemData::COSTUME_ACCE_SKIN);
+	PyModule_AddIntConstant(poModule, "COSTUME_SLOT_ACCE_SKIN", c_Equipment_Start + CItemData::WEAR_COSTUME_ACCE_SKIN);
+#endif
 #ifdef ENABLE_SHINING_SYSTEM
 	PyModule_AddIntConstant(poModule, "ITEM_TYPE_SHINING", CItemData::ITEM_TYPE_SHINING);
 	PyModule_AddIntConstant(poModule, "SHINING_WEAPON", CItemData::SHINING_WEAPON);
@@ -2358,6 +2362,9 @@ void initItem()
 	PyModule_AddIntConstant(poModule, "APPLY_ATTBONUS_MEDI_PVM", CItemData::APPLY_ATTBONUS_MEDI_PVM);
 	PyModule_AddIntConstant(poModule, "APPLY_ATTBONUS_PVM_STR", CItemData::APPLY_ATTBONUS_PVM_STR);
 	PyModule_AddIntConstant(poModule, "APPLY_ATTBONUS_PVM_BERSERKER", CItemData::APPLY_ATTBONUS_PVM_BERSERKER);
+#ifdef ENABLE_PET_EXP_BONUS
+	PyModule_AddIntConstant(poModule, "APPLY_PET_EXP_BONUS", CItemData::APPLY_PET_EXP_BONUS);
+#endif
 
 
 #ifdef ENABLE_COLLECTIONS_SYSTEM
@@ -2424,9 +2431,6 @@ void initItem()
 	PyModule_AddIntConstant(poModule, "E_SEAL_DATE_DEFAULT_TIMESTAMP", CItemData::E_SEAL_DATE_DEFAULT_TIMESTAMP);
 #endif
 
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-	PyModule_AddIntConstant(poModule, "GUILD_SLOT_START_INDEX",			210);
-#endif
 
 	PyModule_AddIntConstant(poModule, "ITEM_TYPE_MEDIUM", 36);
 #ifdef ENABLE_MOVE_COSTUME_ACCE_ATTR

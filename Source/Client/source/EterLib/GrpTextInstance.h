@@ -13,7 +13,7 @@
 	#include "GrpImageInstance.h"
 #endif
 
-#ifdef ENABLE_EMOTICONS_SYSTEM
+#if defined(ENABLE_EMOTICONS_SYSTEM) || defined(ENABLE_COUNTRY_FLAG)
 	#include "GrpExpandedImageInstance.h"
 #endif
 
@@ -148,10 +148,20 @@ class CGraphicTextInstance
 		{
 			short x;
 			CGraphicImageInstance *pInstance;
+#ifdef ENABLE_COUNTRY_FLAG
+			bool bExpanded;		// pInstance is a CGraphicExpandedImageInstance drawn at fScale
+			float fScale;
+			float fYOffset;
+#endif
 
 			SEmoji() : x(0)
 			{
 				pInstance = nullptr;
+#ifdef ENABLE_COUNTRY_FLAG
+				bExpanded = false;
+				fScale = 1.0f;
+				fYOffset = 0.0f;
+#endif
 			}
 		};
 #endif

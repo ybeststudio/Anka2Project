@@ -414,6 +414,67 @@ void CItemManager::Destroy()
 
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
 #ifdef ENABLE_SHINING_SYSTEM
+#ifdef ENABLE_EFFECT_MODEL_ITEM
+bool CItemManager::LoadEffectModelBone(const char* c_szFileName)
+{
+	const VOID* pvData;
+	CMappedFile kFile;
+	if (!CEterPackManager::Instance().Get(kFile, c_szFileName, &pvData))
+		return false;
+
+	CMemoryTextFileLoader textFileLoader;
+	textFileLoader.Bind(kFile.Size(), pvData);
+
+	m_effectModelBoneMap.clear();
+	CTokenVector TokenVector;
+	for (DWORD i = 0; i < textFileLoader.GetLineCount(); ++i)
+	{
+		if (!textFileLoader.SplitLine(i, &TokenVector, "\t") || TokenVector.size() < 2 || TokenVector[0].empty() || TokenVector[0][0] == '#')
+			continue;
+		std::string strBone = TokenVector[1];
+		strBone.erase(std::remove(strBone.begin(), strBone.end(), '"'), strBone.end());
+		const DWORD dwVnum = strtoul(TokenVector[0].c_str(), NULL, 10);
+		if (dwVnum && !strBone.empty())
+			m_effectModelBoneMap[dwVnum] = strBone;
+	}
+	return true;
+}
+#endif
+
+#ifdef ENABLE_COSTUME_GLOW_TABLE
+bool CItemManager::LoadCostumeGlowTable(const char* c_szFileName)
+{
+	const VOID* pvData;
+	CMappedFile kFile;
+	if (!CEterPackManager::Instance().Get(kFile, c_szFileName, &pvData))
+		return false;
+
+	CMemoryTextFileLoader textFileLoader;
+	textFileLoader.Bind(kFile.Size(), pvData);
+
+	m_costumeGlowMap.clear();
+	CTokenVector TokenVector;
+	for (DWORD i = 0; i < textFileLoader.GetLineCount(); ++i)
+	{
+		if (!textFileLoader.SplitLine(i, &TokenVector, "\t") || TokenVector.size() < 2 || TokenVector[0].empty() || TokenVector[0][0] == '#')
+			continue;
+
+		const DWORD dwVnum = strtoul(TokenVector[0].c_str(), NULL, 10);
+		if (!dwVnum)
+			continue;
+		std::vector<std::string>& rPaths = m_costumeGlowMap[dwVnum];
+		for (size_t t = 1; t < TokenVector.size(); ++t)
+		{
+			std::string strPath = TokenVector[t];
+			strPath.erase(std::remove(strPath.begin(), strPath.end(), '"'), strPath.end());
+			if (!strPath.empty())
+				rPaths.push_back(strPath);
+		}
+	}
+	return true;
+}
+#endif
+
 bool CItemManager::LoadShiningEffect(const char* c_szFileName)
 {
 	const VOID* pvData;

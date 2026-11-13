@@ -1341,6 +1341,12 @@ void CHARACTER::StateHorse()
 
 	m_dwStateDuration = STATE_DURATION;
 
+#ifdef ENABLE_MOUNT_HORSE_RACE_FIX
+	// a mount of the mount system (58000 "At" = race 20101) has no rider: CMountActor follows the owner
+	if (IsMount())
+		return;
+#endif
+
 	LPCHARACTER victim = GetRider();
 
 	// ! no // if there is no target, the summoner will clear me directly

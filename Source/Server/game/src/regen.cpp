@@ -9,6 +9,13 @@
 #include "dungeon.h"
 #ifdef ENABLE_RESP_SYSTEM
 	#include "resp_manager.h"
+
+// direction 0: random, 1..8: 45 degree steps, 9..80 (ENABLE_REGEN_FINE_DIRECTION): (direction - 9) * 5 degrees
+#ifdef ENABLE_REGEN_FINE_DIRECTION
+#define REGEN_ROTATION(dir) ((dir) == 0 ? number(0, 7) * 45 : ((dir) >= 9 ? ((dir) - 9) * 5 : ((dir) - 1) * 45))
+#else
+#define REGEN_ROTATION(dir) ((dir) == 0 ? number(0, 7) * 45 : ((dir) - 1) * 45)
+#endif
 size_t m_regenId = 0;
 #endif
 LPREGEN	regen_list = NULL;
@@ -300,7 +307,7 @@ static void regen_spawn_dungeon(LPREGEN regen, LPDUNGEON pDungeon, bool bOnce)
 					regen->sy,
 					regen->z_section,
 					false,
-					regen->direction == 0 ? number(0, 7) * 45 : (regen->direction - 1) * 45);
+					REGEN_ROTATION(regen->direction));
 
 			if (ch)
 			{
@@ -374,7 +381,7 @@ static void regen_spawn(LPREGEN regen, bool bOnce)
 					regen->sy,
 					regen->z_section,
 					false,
-					regen->direction == 0 ? number(0, 7) * 45 : (regen->direction - 1) * 45);
+					REGEN_ROTATION(regen->direction));
 
 			if (ch)
 				++regen->count;

@@ -16,7 +16,7 @@
 
 enum eAnkaDefines {
 	//DEFINES						//VALUE				//AÇIKLAMA											// VARSAYILAN
-	CONQUEROR_MAX_LEVEL				= 30,				// Maksimum þampiyon seviyesi							// 30		[ENABLE_YOHARA_SYSTEM]
+	CONQUEROR_MAX_LEVEL				= 30,				// Maksimum þampiyon seviyesi						// 30		[ENABLE_YOHARA_SYSTEM]
 	DROPABLE_GOLD_LIMIT				= 100000,			// Düþürülebilir altýn limiti						// 1000
 	SB_NEED_EXP						= 20000,			// Becerikitabý için gereken deneyim				// 20000
 	SB_C_NEED_EXP					= 20000,			// 9. beceriler için gereken deneyim				// 20000
@@ -34,6 +34,12 @@ enum eAnkaDefines {
 #define ENABLE_RENEWAL_CUBE							// Yenileme küp sistemini etkinleþtir;
 #define ENABLE_MOUNT_SYSTEM							// Binek sistemi etkinleþtir;
 #define ENABLE_MOUNT_PET_SKIN						// Binek ve pet için skin etkinleþtir;
+#define ENABLE_MOUNT_SKIN_SWAP_FIX					// Binek kostumu takilip cikarilinca aktif binek dogru kaldirilir, dogru gorunumle yeniden cagrilir/binilir
+#define ENABLE_MOUNT_HORSE_RACE_FIX					// Binek sistemi at irklarini (20101-20109) cagirinca StateHorse binicisiz atini silmesin
+#define ENABLE_MOUNT_PERMANENT_DURATION_FIX			// Kalici binekte (socket0 = 0) binek etkisi negatif sureyle aninda bitmesin, sinirsiz olsun
+#define ENABLE_MOUNT_ATTACK_FIX						// Binek sistemiyle binilince resmi saldiri-binek listesi uygulanmaz (Baerim: her binekte saldiri)
+#define ENABLE_MOUNT_HIDE_ON_DISMOUNT				// Baerim: binek sadece binilince gorunur, inince gizlenir (takip etmez)
+#define ENABLE_CLASSIC_HORSE_REMOVED				// Eski at sistemi kapali: at gorevleri/komutlari, giriste at cagirma, /ride at dali
 #define ENABLE_MOB_DROP_INFO						// Mob ve taþ düþürme penceresini etkinleþtir;
 #define ENABLE_SHOW_MOB_INFO						// Mob seviyesi ve saldýrganlýk bilgisini etkinleþtir;
 #define ENABLE_RENEWAL_QUEST						// Resmi sunucularla ayný yeni görev sayfasý;
@@ -131,26 +137,39 @@ enum eAnkaDefines {
 #define ENABLE_KILL_STATISTICS						// Resmi ile neredeyse ayný yeni bonus panosu;
 #define ENABLE_AURA_COSTUME_SYSTEM					// Aura kostüm sistemini etkinleþtir;
 #define ENABLE_RENEWAL_TELEPORT_SYSTEM				// Yeni ýþýnlanma sistemini etkinleþtir;
+#define ENABLE_TELEPORT_BAERIM						// Baerim Isinlanma harita penceresi: /teleport_map <tpIdx>, locale/<locale>/teleport_points.txt
+#define ENABLE_MOKOKO_SYSTEM						// Baerim Mokoko tohumlari: NPC 9101, karakter basi toplama + odul penceresi, locale/<locale>/mokoko_*.txt
+#define ENABLE_FULL_SKILL_OFFICIAL_LEVELS			// /full_set, /all_skill_master: kombo 2, balikcilik 0, diller M1, at cagirma 10, at becerileri M1 (resmi seviyeler, P degil)
+#define ENABLE_ITEM_TIME_SOCKET_FIX					// Sureli silah/zirh (orn. 79501 Ok Cantasi): soket 0 bitis zamani, metin tasi sanilmaz ("cannot find table by vnum")
+#define ENABLE_DAMAGE_TRACE							// Baerim "Hasar Takibi": izlenen hedefe vurusta hasar formulu adimlari (DamageTraceBegin/Row/End)
+#define ENABLE_TARGET_DROP_CHANCE					// Hedef "?" panosu (Baerim): her drop satirina gercek dusme sansi (ppm) -> istemcide nadirlik etiketi
+#define ENABLE_METIN_DAMAGE_CAP						// Metin taslari: tek vurusta en fazla max HP / 10 hasar (Baerim "Maks. Hasar")
+#define ENABLE_HORSE_SKILL_RANGE_FIX				// Binekliyken at becerileri (137-140): menzile +700 pay (sunucu konumu dortnalda geride kalir, vuruslar "too far" ile dusuyordu)
+#define ENABLE_MOB_GROUP_INSTANT_AGGRO				// Grup canavarlari: biri hasar alinca bostaki diger uyeler aninda saldiriya gecer (state pulse beklemez)
+// #define DEBUG_HORSE_SKILL_HITS					// GECICI (kapali): at becerisi (137-140) vuruslari neden dusuyor, syslog "HORSE_SKILL_DROP"
+#define ENABLE_REGEN_FINE_DIRECTION					// npc/regen dir 9..80 = (dir-9)*5 derece (Baerim koy NPC yonleri)
 #define ENABLE_INVENTORY_EXPANSION_SYSTEM			// Resmi gibi envanter geniþletme sistemini etkinleþtir;
 #define ENABLE_GM_INV_EFFECT         				// Resmi GM /inv efekt güncellemesi
-#define ENABLE_RIDING_EXTENDED         				// Resmi At seviyesi geniþletildi
 #define ENABLE_BOT_PLAYER							// Sahte oyuncu sistemi
-#define ENABLE_BUFFI_SYSTEM						// Buffi (destek saman) sistemi
-#ifdef ENABLE_BUFFI_SYSTEM
-	#define ENABLE_BUFFI_EVOLUTION					// Buffi evrimi (Lv 55/75/90, malzeme + yang)
-	#define ENABLE_BUFFI_SKILL_BOOK					// Buffi beceri kitaplari (M -> G kitap, G -> P ruh tasi)
-	#define ENABLE_BUFFI_GROWTH						// Buffi gelisimi: max Lv 120 (3. evrimden sonra), pet usulu exp, seviyeye gore zirh/yelpaze
-	#define ENABLE_BUFFI_CHANGE_SEX					// Buffi cinsiyet degistirme tilsimi
-#endif
+#define ENABLE_BUFFI_SYSTEM							// Buffi (destek saman) sistemi
+	#ifdef ENABLE_BUFFI_SYSTEM
+		#define ENABLE_BUFFI_EVOLUTION				// Buffi evrimi (Lv 55/75/90, malzeme + yang)
+		#define ENABLE_BUFFI_SKILL_BOOK				// Buffi beceri kitaplari (M -> G kitap, G -> P ruh tasi)
+		#define ENABLE_BUFFI_GROWTH					// Buffi gelisimi: max Lv 120 (3. evrimden sonra), pet usulu exp, seviyeye gore zirh/yelpaze
+		#define ENABLE_BUFFI_CHANGE_SEX				// Buffi cinsiyet degistirme tilsimi
+	#endif
 #define ENABLE_SKILL_UPGRADE						// Beceri Yukseltici (/upgrade_skill): kitap / ruh tasi okuma, 71001 / 71094 / 70102
 #define ENABLE_APPLY_RANDOM							// Resmi rastgele temel bonus (APPLY_RANDOM): apply_random_table.txt, item.random* kolonlari
+#if defined(ENABLE_RENEWAL_OFFLINESHOP) && defined(ENABLE_APPLY_RANDOM)
+	#define ENABLE_OFFLINESHOP_APPLY_RANDOM			// offline shop keeps APPLY_RANDOM (offline_shop_item.random* columns): take back / buy no longer rerolls it
+#endif
 #define ENABLE_BONUS_FIX							// Bonus duzeltmeleri: saklanmayan POINT'ler, savas okuyuculari, BYTE kesilmesi, drop
 #define ENABLE_STANDING_MOUNT						// Ayakta kullanýlan binek sistemini etkinleþtir	
 	#ifdef ENABLE_STANDING_MOUNT	
-		#define STANDING_MOUNT_VNUM_1 40003 			// Turbo Sörf Tahtasý
-		#define STANDING_MOUNT_VNUM_2 40004 			// Wukong'un Fýrtýnasý
-		#define STANDING_MOUNT_VNUM_3 40005 			// Wukong'un Gürlemesi
-		#define SURFBOARD STANDING_MOUNT_VNUM_1 		// Eski sistemlerle uyumluluk için alias
+		#define STANDING_MOUNT_VNUM_1 40003 		// Turbo Sörf Tahtasý
+		#define STANDING_MOUNT_VNUM_2 40004 		// Wukong'un Fýrtýnasý
+		#define STANDING_MOUNT_VNUM_3 40005 		// Wukong'un Gürlemesi
+		#define SURFBOARD STANDING_MOUNT_VNUM_1 	// Eski sistemlerle uyumluluk için alias
 		#define IS_STANDING_MOUNT_VNUM(v) ((v)==STANDING_MOUNT_VNUM_1 || (v)==STANDING_MOUNT_VNUM_2 || (v)==STANDING_MOUNT_VNUM_3)
 	#endif
 #define ENABLE_HUNTING_SYSTEM						// Avcýlýk görev sistemini etkinleþtir;
@@ -189,7 +208,6 @@ enum eAnkaDefines {
 	#ifdef ENABLE_DUNGEON_RENEWAL_SYSTEM
 		#define ENABLE_DUNGEON_INFO           		// Zindanla ilgili detaylý bilgi (harita, süre, ödüller) gösterim desteðini saðlar
 		#define __DUNGEON_INFO__             		// Yeni tip zindan bilgisi patron mekaniklerini aktif eder
-		#define ENABLE_NEW_DUNGEON_LIB       		// Zindan iþlevleri için yeni kütüphane/alt sistem kullanýmýna geçirir
 		#define ENABLE_TRACK_WINDOW          		// Zindan takibi için özel UI/pencere (track window) desteðini etkinleþtirir
 		#define ENABLE_ULTIMATE_REGEN        		// Geliþmiþ/alternatif "ultimate" regen algoritmasýný devreye alýr
 	#endif
@@ -268,6 +286,79 @@ enum eAnkaDefines {
 #define ENABLE_STATUS_UP_RENEWAL					// Hýzlý statü sistemi etkinleþtir;
 #define ENABLE_TITLE_SYSTEM							// Resmi Ünvan Sistemi etkinleþtirir;
 
+/* === ifdef-audit: definesiz eklenmis custom sistemler icin merkezi define'lar (hepsi ON; davranis degismez) === */
+#define ENABLE_DRAGON_LAIR_RENEWAL_IMMUNE			// Dragon Lair v17.3 yeni baginsizlik blogu (char_battle)
+#define ENABLE_PCSHOP_GOLD_OVERFLOW_FIX				// PC-shop satici altin tasma kontrolu (shop.cpp)
+#define ENABLE_SHOP_STACK_MERGE						// Satin alinan istiflenebilir esyalarin mevcut yigina eklenmesi (shop/shopEx)
+#define ENABLE_SHOP_REMOVE_ALL_GUESTS				// CShop::RemoveAllGuests (shop.cpp)
+#define ENABLE_ITEM_ATTR_CHANGE_LOG					// SET_ATTR/SET_FORCE_ATTR degisiklik loglama (item_attribute)
+#define ENABLE_QUEST_ITEM_FUNCTIONS					// questlua_item ozel item accessor fonksiyonlari
+#define ENABLE_CHANGE_SEX_QUEST						// questlua_pc pc.change_sex_degisemen
+#define ENABLE_GET_COSTUME_QUEST					// questlua_pc pc.get_costume
+#define ENABLE_BLOCK_EXP							// questlua_pc _block_exp/_unblock_exp/_getexp_blocked
+#define ENABLE_QUEST_MYSQL_QUERY					// questlua_game game.mysql_query
+#define ENABLE_BIG_MAP_NOTICE						// questlua_global big_map_notice
+#define ENABLE_NPC_IS_STONE							// questlua_npc npc.is_stone
+#define ENABLE_PARTY_MEMBER_COUNT					// questlua_party party.get_member_count
+#define ENABLE_CHARACTER_STATS						// Karakter detay paneli istatistikleri: zindan / balik / maden sayaclari (stats.*)
+#define ENABLE_WHISPER_OFFLINE_MESSAGE				// Messenger offline message: /anka_offline_msg <name> <text> (500.000 Yang), delivered on login
+	#ifdef ENABLE_WHISPER_OFFLINE_MESSAGE
+		#define WHISPER_OFFLINE_MESSAGE_COST	500000
+	#endif
+#define ENABLE_WHISPER_PLAYER_INFO					// Messenger header: /anka_whisper_info <name> -> "AnkaWhisperInfo name found empire race online guild"
+#define ENABLE_WHISPER_OPEN_SHOP					// Messenger header: /anka_open_shop <name> opens the player's offline shop
+#define ENABLE_WHISPER_GUILD_INVITE					// Messenger header button: /anka_guild_invite <name> (same core), CGuild::Invite
+#define ENABLE_ANKA2_GLOBAL_CHAT					// Messenger "Anka2 Global" channel: /anka_global <text>, relayed over GG shout to every core
+	#ifdef ENABLE_ANKA2_GLOBAL_CHAT
+		#define ANKA2_GLOBAL_CHAT_EMPIRE		254		// TPacketGGShout::bEmpire marker of a global chat line
+		#define ANKA2_GLOBAL_CHAT_MIN_LEVEL	15
+		#define ANKA2_GLOBAL_CHAT_COOLDOWN	60000		// ms between two messages of one character (reference: 60 s)
+		#define ANKA2_GLOBAL_CHAT_MAX_LEN	200
+	#endif
+#define ENABLE_GUILD_GRADE_RENEWAL					// Baerim Rutbe Ayarlari: 9 yetki (WORD yetki alani), varsayilan Rank2-RankN adlari
+#define ENABLE_GUILD_SKILL_TREE						// Lonca Beceri Agaci (reference Baerim guild.json skill): /guild_skill info|donate|up|activate|recharge
+#define ENABLE_COUNTRY_FLAG							// Baerim ulke bayragi: karakter basina bayrak (player.country_flag), secim ekraninda degistirilir
+#define ENABLE_GUILD_SHOP							// Lonca Magazasi ve bagis/beceri gecmisi (reference Baerim guild.json shop): /guild_shop buy|log
+#define ENABLE_ARENA2_DUNGEONS						// Arena2 (BesTPro) zindan quest'leri: d.notice("metin") / d.notice(harita, "metin")
+#define ENABLE_SHOP_TABS_BAERIM						// Baerim sekmeli NPC dukkanlari: ShopEx sekmesi 80 slot (10 sutun), WORD satin alma pozisyonu; istemcide de ayni define
+#define ENABLE_DUNGEON_LIMIT_RENEWAL				// Baerim zindan gunluk limiti: PC (bilgisayar) limiti + haftalik birikim; istemcide de ayni define
+#define ENABLE_DUNGEON_WINDOW_BAERIM				// Baerim Zindanlar penceresi: tamamlama/sure/DPS, gunluk limit, /dungeon_info enter (dungeon_window.cpp)
+#define ENABLE_ACCE_SKIN_SYSTEM						// Kusak gorunumu (Baerim kanat / kusak skin): COSTUME_ACCE_SKIN, WEAR_COSTUME_ACCE_SKIN (39), PART_ACCE gorunumun modeli
+#define ENABLE_PET_EXP_BONUS						// Baerim pet itemleri: APPLY_PET_EXP_BONUS (339) = takili pet / pet kostumu, buyume petinin mob EXP'sini % artirir
+#define ENABLE_TIME_BONUS_COSTUME					// Baerim kostum bonus suresi: kostum efsunlari sadece sure varken calisir (socket2 = bitis, 99 = suresiz), 55320-55327 iksirleri
+#define ENABLE_WARDROBE_AUTO_STORE					// Baerim gardirop envanteri: gelen / cikarilan kostumler gardiroba gider, depodan kusanma, OpenWardrobeInventory
+#define ENABLE_WARDROBE_SYSTEM						// Gardirop (reference Baerim uiWardrobe): WARDROBE item window (4500), katalog, gorunum, kombinler, /wardrobe
+#define ENABLE_COSTUME_SHOP_BAERIM					// Kostum Magazasi (reference Baerim uiCostumeShop): NPC 9393, costume_shop.txt, kupon 90020-90022, /costume_shop _buy
+#define ENABLE_GLOBAL_RANKING						// Kuresel Siralama (reference Baerim uiRanking): /global_rank _load, haftalik tablo global_ranking
+#define ENABLE_GUILD_QUEST							// Lonca Gorevleri (reference Baerim guild.json quest): /guild_quest info|start|abort|rank, /get_guild_quest_reward
+#define ENABLE_GUILD_DONATION						// Lonca Altini/Gumusu, Lonca Bagisi ve Lonca Fisiltisi (reference Baerim DonationGoldWindow, SendWhisperGuild)
+	#ifdef ENABLE_GUILD_DONATION
+		#define GUILD_DONATION_SCROLL_PRICE			100000	// reference Katki Parsomeni
+		#define GUILD_DONATION_SCROLL_DAILY_LIMIT	20
+		#define GUILD_DONATION_DAILY_CHUNK			30
+		#define GUILD_WHISPER_PRICE					2		// reference PRICE_WHISPER
+		#define GUILD_WHISPER_SENDER_MAX_LEN		24
+		#define GUILD_WHISPER_TEXT_MAX_LEN			110
+	#endif
+#define ENABLE_GUILD_APPLICATION							// Lonca Basvurusu (reference Baerim uiGuildApplication): /guild_app list|apply|withdraw|requests|approve|reject|status|lang|minlevel|desc + Guild_JoinNotify
+		#ifdef ENABLE_GUILD_APPLICATION
+		#define GUILD_APPLICATION_CACHE_MS			60000	// guild settings cache (other cores' changes show up after this)
+		#define GUILD_APPLICATION_LIST_DELAY_MS		3000	// reference CLICK_LIMIT_TIME
+		#define GUILD_APPLICATION_DESC_MAX_LEN		100		// reference DESCRIPTION_MAX_LEN
+		#define GUILD_APPLICATION_LANG_MAX			11		// reference LANGUAGE_ORDER (ALL .. TR)
+		#define GUILD_APPLICATION_NOTIFY_MIN_LEVEL	10		// guildless players from this level get the sliding join notification
+		#define GUILD_APPLICATION_NOTIFY_FIRST		180		// s after login
+		#define GUILD_APPLICATION_NOTIFY_INTERVAL	1800	// s between two notifications
+	#endif
+#define ENABLE_MESSENGER_DETAILS						// Messenger cards (reference Baerim uiMessenger): "MessengerInfo" level / race / channel / map / last seen of friends and guild members
+#define ENABLE_AFFECT_COMBAT_TIMER						// Dew / dragon god potion time only runs in combat (reference "Iksir zamani yalnizca savasta calisir")
+#define ENABLE_AFFECT_CAST_STAT							// Skill buff affect: caster STR/INT at cast time sent to the client (affect tooltip "INT on activation")
+#define ENABLE_SHINING_SYSTEM							// Parilti itemlari (ITEM_SHINING): silah / kostum parlamasi, WEAR_SHINING_WEAPON / ARMOR
+#define ENABLE_BRAVE_CAPE_RENEWAL						// Baerim uiAutoCape.BraveCapeWindow: /brave_cape active <sn> <menzil> | deactive
+#define ENABLE_AUTO_CAPE_SYSTEM							// cmd_general auto-cape / advanced_options.cape_*
+#define ENABLE_CONFIRM_LEVELUP							// cmd_general do_confirm_levelup
+/* === ifdef-audit end === */
+
 /*** KRÝTÝK HATA, ÇÖKME VE AÇIK DÜZELTMELERÝ (CRASH / CORE / BUG / EXPLOIT / LEAK) ***/
 #define __FIX_TIMER_EVENT__ 						// Timer event (zamanlayýcý) gecikme ve tetiklenme hatalarýný düzeltir
 #define __FIX_SECONDARY_SKILL__ 					// Ýkincil skill (secondary skill) kullaným ve hesaplama hatalarýný düzeltir
@@ -284,6 +375,7 @@ enum eAnkaDefines {
 #define ENABLE_FIX_SWAP_ITEM						// Slot uyuþmazlýðý nedeniyle ekipman deðiþtirilememesi sorununu giderir.
 #define ENABLE_RELOAD_COMMAND_ALL_CORES  			// Reload komutunun tüm core’lara P2P üzerinden senkron þekilde iletilmesini saðlar.
 #define ENABLE_ITEM_DUPE_FIX 						// Eþya iþlemlerinde oluþan senkronizasyon ve zamanlama hatalarýndan kaynaklý çoðaltma açýklarýný düzeltir.
+#define ENABLE_EXPLOIT_AUDIT_FIX					// 2026-11-08 dupe/exploit denetimi: DS arit + ticaret, switchbot ticaret, kanal degistirmede pencere kontrolu, yigin kusanma, hizli satista ruh bagi
 #define ENABLE_FIX_EXP_DROP_STONES 					// Metin (Stone) yaratýklarýndan EXP düþme hesaplamalarýnda oluþan hatalarý giderir.
 #define ENABLE_MULTI_AFFIX_APPLY_SYSTEM 			// Tek iþlemde birden fazla efsun (bonus) eklenmesini saðlar.
 #define ENABLE_REGEN_RENEWAL 						// Regen event’lerinin baþlatýlma zamanýný sabitleyerek rastgele gecikmeleri ortadan kaldýrýr ve daha tutarlý spawn döngüsü saðlar.
@@ -325,7 +417,6 @@ enum eAnkaDefines {
 #define ENABLE_HORSE_SPAWN_EXPLOIT_FIX				// At çaðýrma / horse spawn ile yapýlan exploit ve kötüye kullanýmlarý engeller
 #define ENABLE_HP_SP_ABSORB_ORB_FIX					// HP-SP absorb orb eþyalarýnýn yanlýþ çalýþmasý veya deðer bug’ýný düzeltir
 #define ENABLE_HP_SP_STEAL_FIX						// HP-SP çalma (lifesteal / manasteal) hesaplama ve uygulama hatalarýný giderir
-#define ENABLE_SOCKET_STONE_MASS_DELETE_FIX			// Ýstiflenmiþ taþlarýn tek seferde yanlýþlýkla toplu silinmesini engeller
 #define ENABLE_WARP_HP_LOSS_FIX						// Iþýnlanýnca (warp) HP düþmesi / can kaybý yaþanmasý sorununu düzeltir
 #define ENABLE_ITEM_SWAP_FIX						// Ýki item arasýnda slot deðiþtirirken oluþan item swap bug’ýný düzeltir
 #define ENABLE_CHARACTER_NAME_HACK_FIX				// Karakter ismi üzerinden yapýlan hile / exploit giriþimlerini engeller
@@ -356,92 +447,10 @@ enum eAnkaDefines {
 #define ENABLE_EXP_GROUP_FIX  						// Grup EXP daðýtýmýnýn yalnýzca parti lideri tarafýndan yapýlmasýný saðlar.
 #define ENABLE_FISHING_TIME_INC  					// Balýkçýlýk bekleme süresini düþürerek daha hýzlý balýk tutmayý saðlar.
 #define ENABLE_DISABLE_EMPIRE_DAMAGE_BONUS			// Baþka bir imparatorluktan geliyorsanýz, hasar %10 azalýr.
-#define ENABLE_STONES_STACKFIX  					// Ýstiflenen taþlarýn refine sýrasýnda yanlýþ silinmesini ve dupe oluþmasýný önler.
 #define ENABLE_ITEM_AWARD_FIX  						// Ödül öðesi iþlemlerinde veri kalýntýlarýndan kaynaklý hatalarý önler.
 #define ENABLE_SKILL_COOLDOWN_CHECK  				// Skill kullanýmýnda server-side cooldown ve spam kontrolü saðlar.
 #define ENABLE_SAFE_LEVEL_CHANGE_FIX  				// Seviye deðiþiminde PointChange senkronizasyon hatalarýný ve exploit riskini önler.
 /*** KRÝTÝK HATA, ÇÖKME VE AÇIK DÜZELTMELERÝ (CRASH / CORE / BUG / EXPLOIT / LEAK) ***/
-
-
-/* === ifdef-audit: definesiz eklenmis custom sistemler icin merkezi define'lar (hepsi ON; davranis degismez) === */
-#define ENABLE_DRAGON_LAIR_RENEWAL_IMMUNE		// Dragon Lair v17.3 yeni baginsizlik blogu (char_battle)
-#define ENABLE_PCSHOP_GOLD_OVERFLOW_FIX			// PC-shop satici altin tasma kontrolu (shop.cpp)
-#define ENABLE_SHOP_STACK_MERGE					// Satin alinan istiflenebilir esyalarin mevcut yigina eklenmesi (shop/shopEx)
-#define ENABLE_SHOP_REMOVE_ALL_GUESTS			// CShop::RemoveAllGuests (shop.cpp)
-#define ENABLE_ITEM_ATTR_CHANGE_LOG				// SET_ATTR/SET_FORCE_ATTR degisiklik loglama (item_attribute)
-#define ENABLE_QUEST_ITEM_FUNCTIONS				// questlua_item ozel item accessor fonksiyonlari
-#define ENABLE_CHANGE_SEX_QUEST					// questlua_pc pc.change_sex_degisemen
-#define ENABLE_GET_COSTUME_QUEST				// questlua_pc pc.get_costume
-#define ENABLE_BLOCK_EXP						// questlua_pc _block_exp/_unblock_exp/_getexp_blocked
-#define ENABLE_QUEST_MYSQL_QUERY				// questlua_game game.mysql_query
-#define ENABLE_BIG_MAP_NOTICE					// questlua_global big_map_notice
-#define ENABLE_NPC_IS_STONE						// questlua_npc npc.is_stone
-#define ENABLE_PARTY_MEMBER_COUNT				// questlua_party party.get_member_count
-#define ENABLE_CHARACTER_STATS					// Karakter detay paneli istatistikleri: zindan / balik / maden sayaclari (stats.*)
-#define ENABLE_WHISPER_OFFLINE_MESSAGE			// Messenger offline message: /anka_offline_msg <name> <text> (500.000 Yang), delivered on login
-#ifdef ENABLE_WHISPER_OFFLINE_MESSAGE
-#	define WHISPER_OFFLINE_MESSAGE_COST	500000
-#endif
-#define ENABLE_WHISPER_PLAYER_INFO				// Messenger header: /anka_whisper_info <name> -> "AnkaWhisperInfo name found empire race online guild"
-#define ENABLE_WHISPER_OPEN_SHOP				// Messenger header: /anka_open_shop <name> opens the player's offline shop
-#define ENABLE_WHISPER_GUILD_INVITE				// Messenger header button: /anka_guild_invite <name> (same core), CGuild::Invite
-#define ENABLE_ANKA2_GLOBAL_CHAT				// Messenger "Anka2 Global" channel: /anka_global <text>, relayed over GG shout to every core
-#ifdef ENABLE_ANKA2_GLOBAL_CHAT
-#	define ANKA2_GLOBAL_CHAT_EMPIRE		254		// TPacketGGShout::bEmpire marker of a global chat line
-#	define ANKA2_GLOBAL_CHAT_MIN_LEVEL	15
-#	define ANKA2_GLOBAL_CHAT_COOLDOWN	60000	// ms between two messages of one character (reference: 60 s)
-#	define ANKA2_GLOBAL_CHAT_MAX_LEN	200
-#endif
-#define ENABLE_GUILD_GRADE_RENEWAL				// Baerim Rutbe Ayarlari: 9 yetki (WORD yetki alani), varsayilan Rank2-RankN adlari
-#define ENABLE_GUILD_SKILL_TREE					// Lonca Beceri Agaci (reference Baerim guild.json skill): /guild_skill info|donate|up|activate|recharge
-#define ENABLE_GUILD_SHOP						// Lonca Magazasi ve bagis/beceri gecmisi (reference Baerim guild.json shop): /guild_shop buy|log
-#define ENABLE_GUILD_QUEST						// Lonca Gorevleri (reference Baerim guild.json quest): /guild_quest info|start|abort|rank, /get_guild_quest_reward
-#define ENABLE_GUILD_DONATION					// Lonca Altini/Gumusu, Lonca Bagisi ve Lonca Fisiltisi (reference Baerim DonationGoldWindow, SendWhisperGuild)
-#ifdef ENABLE_GUILD_DONATION
-#	define GUILD_DONATION_SCROLL_PRICE			100000	// reference Katki Parsomeni
-#	define GUILD_DONATION_SCROLL_DAILY_LIMIT	20
-#	define GUILD_DONATION_DAILY_CHUNK			30
-#	define GUILD_WHISPER_PRICE					2		// reference PRICE_WHISPER
-#	define GUILD_WHISPER_SENDER_MAX_LEN			24
-#	define GUILD_WHISPER_TEXT_MAX_LEN			110
-#endif
-#define ENABLE_GUILD_APPLICATION				// Lonca Basvurusu (reference Baerim uiGuildApplication): /guild_app list|apply|withdraw|requests|approve|reject|status|lang|minlevel|desc + Guild_JoinNotify
-#ifdef ENABLE_GUILD_APPLICATION
-#	define GUILD_APPLICATION_CACHE_MS			60000	// guild settings cache (other cores' changes show up after this)
-#	define GUILD_APPLICATION_LIST_DELAY_MS		3000	// reference CLICK_LIMIT_TIME
-#	define GUILD_APPLICATION_DESC_MAX_LEN		100		// reference DESCRIPTION_MAX_LEN
-#	define GUILD_APPLICATION_LANG_MAX			11		// reference LANGUAGE_ORDER (ALL .. TR)
-#	define GUILD_APPLICATION_NOTIFY_MIN_LEVEL	10		// guildless players from this level get the sliding join notification
-#	define GUILD_APPLICATION_NOTIFY_FIRST		180		// s after login
-#	define GUILD_APPLICATION_NOTIFY_INTERVAL	1800	// s between two notifications
-#endif
-#define ENABLE_MESSENGER_DETAILS				// Messenger cards (reference Baerim uiMessenger): "MessengerInfo" level / race / channel / map / last seen of friends and guild members
-#define ENABLE_AFFECT_COMBAT_TIMER				// Dew / dragon god potion time only runs in combat (reference "Iksir zamani yalnizca savasta calisir")
-#define ENABLE_AFFECT_CAST_STAT					// Skill buff affect: caster STR/INT at cast time sent to the client (affect tooltip "INT on activation")
-#define ENABLE_SHINING_SYSTEM					// Parilti itemlari (ITEM_SHINING): silah / kostum parlamasi, WEAR_SHINING_WEAPON / ARMOR
-#define ENABLE_BRAVE_CAPE_RENEWAL				// Baerim uiAutoCape.BraveCapeWindow: /brave_cape active <sn> <menzil> | deactive
-#define ENABLE_AUTO_CAPE_SYSTEM					// cmd_general auto-cape / advanced_options.cape_*
-#define ENABLE_CONFIRM_LEVELUP					// cmd_general do_confirm_levelup
-/* === ifdef-audit end === */
-/*** TAMAMLANMAMIÞ SÝSTEMLER (YAKINDA) ***/
-#define ENABLE_GUILDRENEWAL_SYSTEM					// Geliþmiþ resmi gibi lonca altyapýsý için çekirdek yenileme sistemi
-	#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-		#define ENABLE_USE_MONEY_FROM_GUILD			// Lonca Parasý ile ödeme yapmayý etkinleþtirir
-		#define ENABLE_NEW_WAR_OPTIONS				// Tur, puan ve süre bazlý modern lonca savaþý seçenekleri
-		#define ENABLE_EXTENDED_GUILD_LEVEL			// Lonca seviye kapasitesinin 30'a çýkarýlmasý
-		//#define ENABLE_MEDAL_OF_HONOR				// Lonca ekonomisi için yeni para birimi (Onur Madalyasý)
-		#define ENABLE_GUILD_DONATE_ATTENDANCE		// Günlük lonca baðýþý ve katýlým takip sistemi
-		#define ENABLE_GUILD_WAR_SCORE				// Lonca savaþ istatistiklerinin detaylý skor ekraný
-		#define ENABLE_GUILD_LAND_INFO				// Lonca arazilerine ait detaylý bilgi arayüzü
-		#define ENABLE_GUILDBANK_LOG				// Lonca banka ve iþlem kayýtlarýnýn günlük sistemi
-		#define ENABLE_GUILDBANK_EXTENDED_LOGS		// Geniþletilmiþ günlükler için Log.cpp baðlantýsý
-		#define ENABLE_EXTENDED_RENEWAL_FEATURES	// Lonca lideri devri ve arazi silme yönetimi gibi ek yenileme özellikleri
-		#define ENABLE_COLEADER_WAR_PRIVILEGES		// Lider çevrimdýþý olduðunda, Yardýmcý Lider lider ile ayný yetkilere sahip olur
-		#define ENABLE_GUILDWAR_BUTTON				// Arayüzde Lonca Savaþý eriþim düðmesini aktif eder
-		//#define ENABLE_GUILD_RANKING				// Loncalar arasý sýralama sistemi (tam entegre edilmediði için kapalý)
-		//#define ENABLE_GUILDSTORAGE_SYSTEM        // Loncanýn ortak deposu: üyelerin paylaþýmlý eþya deposu sistemi
-	#endif
-/*** TAMAMLANMAMIÞ SÝSTEMLER (YAKINDA) ***/
 
 /*
 #@GENEL

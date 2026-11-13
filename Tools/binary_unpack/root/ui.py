@@ -5029,7 +5029,7 @@ class ThinBoard(Window):
 	CORNER_HEIGHT = 16
 	LINE_WIDTH = 16
 	LINE_HEIGHT = 16
-	BOARD_COLOR = grp.GenerateColor(0.0, 0.0, 0.0, 0.45)
+	BOARD_COLOR = grp.GenerateColor(0.0, 0.0, 0.0, 130.0 / 255.0)	# Baerim ThinBoard.BOARD_COLOR 0x82000000
 
 	LT = 0
 	LB = 1
@@ -5043,8 +5043,9 @@ class ThinBoard(Window):
 	def __init__(self, layer = "UI"):
 		Window.__init__(self, layer)
 
-		CornerFileNames = [ "d:/ymir work/ui/pattern/thinboardnew/ThinBoard_Corner_"+dir+".tga" for dir in ["LeftTop","LeftBottom","RightTop","RightBottom"] ]
-		LineFileNames = [ "d:/ymir work/ui/pattern/thinboardnew/ThinBoard_Line_"+dir+".tga" for dir in ["Left","Right","Top","Bottom"] ]
+		# Baerim frame used game-wide: square corners, black outline + light inner line (was the bevelled thinboardnew set)
+		CornerFileNames = [ "d:/ymir work/ui/pattern/new_thinboard_second/ThinBoard_Corner_"+dir+".tga" for dir in ["LeftTop","LeftBottom","RightTop","RightBottom"] ]
+		LineFileNames = [ "d:/ymir work/ui/pattern/new_thinboard_second/ThinBoard_Line_"+dir+".tga" for dir in ["Left","Right","Top","Bottom"] ]
 
 		self.Corners = []
 		for fileName in CornerFileNames:

@@ -139,7 +139,7 @@ CPPFILE =	affect.cpp\
 			growth_pet.cpp\
 			guild_manager.cpp\
 			guild_war.cpp\
-			guild.cpp			guild_application.cpp guild_donation.cpp guild_quest.cpp guild_skill.cpp guild_shop.cpp\
+			guild.cpp			guild_application.cpp guild_donation.cpp guild_quest.cpp guild_skill.cpp global_ranking.cpp costume_shop.cpp wardrobe.cpp teleport_window.cpp mokoko.cpp damage_trace.cpp dungeon_window.cpp guild_shop.cpp\
 			messenger_details.cpp\
 			halloween.cpp\
 			horsename_manager.cpp\

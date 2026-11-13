@@ -60,48 +60,6 @@ sys.stderr = TraceErrorFile()
 import marshal
 import imp
 
-# Bytecode cache for pack scripts. Every module and uiscript used to be compile()d from source
-# on each launch (~1.4 s of the "select -> in game" wait). The key is a CRC + length of the
-# source text, so a patched .py always recompiles; unchanged ones are loaded with marshal.
-# Absolute: the engine chdir()s while loading data, which broke a relative path.
-_CODE_CACHE_DIR = os.path.join(os.getcwd(), 'cache', 'pyc')
-_CODE_CACHE_ERROR_REPORTED = 0
-
-def _cached_compile(source, filename):
-	try:
-		import binascii
-		key = '%08x_%d' % (binascii.crc32(source) & 0xffffffff, len(source))
-		# _chr: prototype.py rebinds 'chr' to the game module in this shared namespace
-		safe = filename.replace('/', '_').replace(_chr(92), '_').replace(':', '_')
-		path = os.path.join(_CODE_CACHE_DIR, '%s.%s.bin' % (safe, key))
-	except:
-		return compile(source, filename, 'exec')
-
-	try:
-		f = open(path, 'rb')
-		try:
-			if f.read(4) == imp.get_magic():
-				code = marshal.loads(f.read())
-				return code
-		finally:
-			f.close()
-	except:
-		pass
-
-	code = compile(source, filename, 'exec')
-	try:
-		if not os.path.isdir(_CODE_CACHE_DIR):
-			os.makedirs(_CODE_CACHE_DIR)
-		f = open(path, 'wb')
-		try:
-			f.write(imp.get_magic())
-			f.write(marshal.dumps(code))
-		finally:
-			f.close()
-	except:
-		pass
-	return code
-
 class pack_file_iterator(object):
 	def __init__(self, packfile):
 		self.pack_file = packfile
@@ -187,7 +145,7 @@ def __pack_import(name,globals=None,locals=None,fromlist=None, level=-1):
 	if pack.Exist(filename):
 		dbg.Trace('importing from pack %s\\n' % name)
 
-		newmodule = _process_result(_cached_compile(pack_file(filename,'r').read(),filename),name)
+		newmodule = _process_result(compile(pack_file(filename,'r').read(),filename,'exec'),name)
 
 		module_do(newmodule)
 		return newmodule
@@ -247,7 +205,7 @@ class PythonExecutioner:
 
 	def __LoadTextFile__(kPESelf, sFileName): 
 		sText=pack_open(sFileName,'r').read() 
-		return _cached_compile(sText, sFileName) 
+		return compile(sText, sFileName, 'exec') 
 
 	def __LoadCompiledFile__(kPESelf, sFileName): 
 		kFile=pack_open(sFileName)

@@ -5,6 +5,7 @@
 #include "utils.h"
 #include "config.h"
 #include "shop.h"
+
 #include "desc.h"
 #include "desc_manager.h"
 #include "char.h"
@@ -18,6 +19,18 @@
 #include "questmanager.h"
 #include "mob_manager.h"
 #include "locale_service.h"
+
+#ifdef ENABLE_SHOP_STACK_MERGE
+namespace
+{
+	// a bought item fully merged into existing stacks is destroyed only after the buy logged it (it was used after M2_DESTROY_ITEM)
+	struct SShopMergedItemGuard
+	{
+		LPITEM item = nullptr;
+		~SShopMergedItemGuard() { if (item) M2_DESTROY_ITEM(item); }
+	};
+}
+#endif
 
 /* ------------------------------------------------------------------------------------ */
 CShop::CShop() : m_dwVnum(0), m_dwNPCVnum(0), m_pkPC(NULL)
@@ -188,11 +201,22 @@ void CShop::SetShopItems(TShopItemTable* pTable, BYTE bItemCount)
 }
 
 #ifdef ENABLE_GOLD_LIMIT
+#ifdef ENABLE_SHOP_TABS_BAERIM
+long long CShop::Buy(LPCHARACTER ch, WORD pos)
+#else
 long long CShop::Buy(LPCHARACTER ch, BYTE pos)
+#endif
+#else
+#ifdef ENABLE_SHOP_TABS_BAERIM
+int CShop::Buy(LPCHARACTER ch, WORD pos)
 #else
 int CShop::Buy(LPCHARACTER ch, BYTE pos)
 #endif
+#endif
 {
+#ifdef ENABLE_SHOP_STACK_MERGE
+	SShopMergedItemGuard kMergedItem;
+#endif
 	if (pos >= m_itemVector.size())
 	{
 		sys_log(0, "Shop::Buy : invalid position %d : %s", pos, ch->GetName());
@@ -412,7 +436,7 @@ int CShop::Buy(LPCHARACTER ch, BYTE pos)
 			if (bCount > 0)
 				item->AddToCharacter(ch, TItemPos(INVENTORY, iEmptyPos));
 			else
-				M2_DESTROY_ITEM(item);
+				kMergedItem.item = item;
 		}
 
 		ITEM_MANAGER::instance().FlushDelayedSave(item);
@@ -493,7 +517,7 @@ int CShop::Buy(LPCHARACTER ch, BYTE pos)
 			if (bCount > 0)
 				item->AddToCharacter(ch, TItemPos(INVENTORY, iEmptyPos));
 			else
-				M2_DESTROY_ITEM(item);
+				kMergedItem.item = item;
 		}
 
 		ITEM_MANAGER::instance().FlushDelayedSave(item);

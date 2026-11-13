@@ -399,6 +399,8 @@ bool CPVPManager::CanAttack(LPCHARACTER pkChr, LPCHARACTER pkVictim)
 	}
 
 
+#ifndef ENABLE_MOUNT_ATTACK_FIX
+	// old horse grade / official mount whitelist: removed, Baerim lets every mount attack
 	if( true == pkChr->IsHorseRiding() )
 	{
 		if( pkChr->GetHorseLevel() > 0 && 1 == pkChr->GetHorseGrade() )
@@ -512,6 +514,7 @@ bool CPVPManager::CanAttack(LPCHARACTER pkChr, LPCHARACTER pkVictim)
 				return false;
 		}
 	}
+#endif
 
 	if (pkVictim->IsNPC() || pkChr->IsNPC())
 	{

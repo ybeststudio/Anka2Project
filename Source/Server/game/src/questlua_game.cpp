@@ -20,9 +20,6 @@
 	#include "changelook.h"
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-	#include "mount_up_grade.h"
-#endif
 
 #ifdef ENABLE_EVENT_SYSTEM
 	#include "auto_event_list.h"
@@ -341,21 +338,6 @@ namespace quest
 	}
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-	int game_open_mount_up_grade(lua_State* L)
-	{
-		const LPCHARACTER ch = CQuestManager::instance().GetCurrentCharacterPtr();
-		if (nullptr == ch)
-		{
-			sys_err("game_open_mount_up_grade ERROR");
-			return 0;
-		}
-
-		CMountUpGrade::Instance().OpenMountUpGrade(ch);
-
-		return 0;
-	}
-#endif
 
 	int game_web_mall(lua_State* L)
 	{
@@ -471,9 +453,6 @@ namespace quest
 #endif
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 			{ "open_transmutation",						game_open_transmutation						},
-#endif
-#ifdef ENABLE_RIDING_EXTENDED
-			{ "open_mount_up_grade", 					game_open_mount_up_grade					},
 #endif
 #ifdef ENABLE_ZODIAC_MISSION
 			{ "open_zodiac", 							game_open_zodiac 							},

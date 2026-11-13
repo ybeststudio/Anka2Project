@@ -10419,6 +10419,11 @@ VNUM	LOCALE_NAME
 55067	Riding (Precision)
 55070	Horse Skill Chest
 55100	Divine Protein Bites
+55320	Costume Bonus Time (3d)
+55321	Costume Bonus Time (7d)
+55322	Costume Bonus Time (14d)
+55323	Costume Bonus Time (30d)
+55327	Costume Bonus Time (PvP)
 55400	Mystery Box
 55401	Monkey Egg
 55402	Spider Egg
@@ -12290,3 +12295,703 @@ VNUM	LOCALE_NAME
 65111	Amulet of Gods+
 65112	Guild Energy (100%)
 65120	Silver Expansion
+90020	Costume Voucher
+90021	Mount Voucher
+90022	Pet Voucher
+40240	Baerim Blade
+40241	Baerim Dagger
+40242	Baerim Bow
+40243	Baerim Glaive
+40244	Baerim Bel
+40245	Baerim Fan
+40246	Baerim Sura
+40247	BombWork Blade
+40248	BombWork Dagger
+40249	BombWork Bow
+40250	BombWork Glaive
+40251	BombWork Bell
+40252	BombWork Fan
+40253	BombWork Sura
+40254	White Samurai Blade
+40255	White Samurai Dagger
+40256	White Samurai Bow
+40257	White Samurai Glaive
+40258	White Samurai Bell
+40259	White Samurai Fan
+40260	Green Phantom Blade
+40261	Green Phantom Dagger
+40262	Green Phantom Bow
+40263	Green Phantom Glaive
+40264	Green Phantom Bell
+40265	Green Phantom Fan
+40266	Black Sakura Blade
+40267	Black Sakura Dagger
+40268	Black Sakura Bow
+40269	Black Sakura Glaive
+40270	Black Sakura Bell
+40271	Black Sakura Fan
+40272	Imperial Paladin Blade
+40273	Imperial Paladin Dagger
+40274	Imperial Paladin Bow
+40275	Imperial Paladin Glaive
+40276	Imperial Paladin Bell
+40277	Imperial Paladin Fan
+42099	White Samurai Costume (m)
+42100	White Samurai Costume (f)
+42101	Green Phantom Costume (m)
+42102	Green Phantom Costume (f)
+42113	Black Sakura Costume (m)
+42114	Black Sakura Costume (f)
+42115	Imperial Paladin Costume (m)
+42116	Imperial Paladin Costume (f)
+45692	Cowhorn Helm (M)
+45693	Cowhorn Helm (F)
+45776	White Samurai Hair (m)
+45777	White Samurai Hair (f)
+45778	Green Phantom Hair (m)
+45779	Green Phantom Hair (f)
+45790	Black Sakura Hair (m)
+45791	Black Sakura Hair (f)
+45792	Imperial Paladin Hair (m)
+45793	Imperial Paladin Hair (f)
+52121	Samsara Dragon
+52122	Manny
+52123	Ellie
+52126	Lava Cave Lizard
+52127	Ice Cave Lizard
+52128	Magma Dragon
+52214	White Samurai Mount
+52215	Green Phantom Mount
+52217	Black Sakura Mount
+52218	Imperial Paladin Mount
+53381	Boneca Ambalabu
+53382	Cappuccino Assassino
+53389	Tralalelo Tralala
+53390	Tung Tung
+53391	Vecna
+53416	Black Sakura Pet
+53417	Imperial Paladin Pet
+86065	Snow Sentinel Sash
+86068	Divine Wings
+86069	Hellfire Wings
+86070	Crystal Wing
+86071	Nobori Wings
+86072	Rogue Wings
+86073	Flame Wings
+86075	Glacial Viking Sash
+86076	Wolf Stalker Sash
+86080	Christmas Knight Sash
+86081	Winter Reindeer Sash
+86082	Polar Suit Sash
+86143	White Samurai Wing
+86144	Green Phantom Wing
+86146	Black Sakura Wing
+86147	Imperial Paladin Wing
+86152	Sash skin (pirate)
+53500	Frank
+53504	Jiangshi Jnr
+53524	Baby Bestial Captain
+53525	Baby Black Orc
+53557	Baby Death Reaper
+53604	Baby Flame King
+53660	Baby Giant Turtle
+53661	Baby Ice Witch
+53671	Baby Jotun
+53672	Baby Ninetail
+53673	Baby Spider Baroness
+53674	Baby Spider Queen
+53675	Baby Tartaros
+53676	Baby Yellow Tiger
+53677	Ballerina Cappuccina
+53678	Bombardiro Crocodilo
+53679	Captain Waddle
+53680	Demagorgog
+53681	Little Black Steel Warrior
+53682	Little Black Wind Shaman
+53683	Mc Ping
+53684	Salamino Pinguino
+41928	Moon Warden Costume (m)
+41929	Moon Warden Costume (f)
+41970	Argentina Jersey
+41971	Argentina Jersey
+41972	Belgium Jersey
+41973	Belgium Jersey
+41986	Germany Jersey
+41987	Germany Jersey
+41988	Italy Jersey
+41989	Italy Jersey
+41990	Mexico Jersey
+41991	Mexico Jersey
+41992	Poland Jersey
+41993	Poland Jersey
+41994	Portugal Jersey
+41995	Portugal Jersey
+41996	Romania Jersey
+41997	Romania Jersey
+41998	Spain Jersey
+41999	Spain Jersey
+42000	Turkey Jersey
+42001	Turkey Jersey
+42011	Moonshade Costume (m)
+42012	Moonshade Costume (f)
+42013	Pure Angel Costume (m)
+42014	Pure Angel Costume (f)
+42015	Ghost Samurai Costume (m)
+42016	Ghost Samurai Costume (f)
+42017	Inferno Monarch Costume (m)
+42018	Inferno Monarch Costume (f)
+42019	Spring Spirit Costume (m)
+42020	Spring Spirit Costume (f)
+42021	White Phantom Costume (M)
+42022	White Phantom Costume (F)
+42023	Summer Tide Costume (m)
+42024	Summer Tide Costume (f)
+42025	Goldazrael Costume (m)
+42026	Goldazrael Costume (f)
+42027	Hellboy Costume (m)
+42028	Hellboy Costume (f)
+42029	Red Rogue Costume (m)
+42030	Red Rogue Costume (f)
+42031	White Gold Costume (m)
+42032	White Gold Costume (f)
+42035	Wizard's scholar Costume (m)
+42036	Wizard's scholar Costume (f)
+42037	Sakura Desert Costume (m)
+42038	Sakura Desert Costume (f)
+42039	Wizard's scholar Costume (m)
+42040	Wizard's scholar Costume (f)
+42043	Crimson Ascendant Costume (m)
+42044	Crimson Ascendant Costume (f)
+42045	Amethyst Sovereign Costume (m)
+42046	Amethyst Sovereign Costume (f)
+42047	Azure Warden Costume (m)
+42048	Azure Warden Costume (f)
+42049	Obsidian Dragon Costume (m)
+42050	Obsidian Dragon Costume (f)
+42051	Cherry Blossom Costume (m)
+42052	Cherry Blossom Costume (f)
+42053	Black Blossom Costume (m)
+42054	Black Blossom Costume (f)
+42055	Blue Warrior Costume (m)
+42056	Blue Warrior Costume (f)
+42057	Red Warrior Costume (m)
+42058	Red Warrior Costume (f)
+42061	Astral Knight Costume (m)
+42062	Astral Knight Costume (f)
+42063	Dark Symbiote Costume (m)
+42064	Dark Symbiote Costume (f)
+42067	Haunted Vanguard Costume (m)
+42068	Haunted Vanguard Costume (f)
+42069	GhostBusters Costume (m)
+42070	GhostBusters Costume (f)
+42075	Halloween Dread Costume (m)
+42076	Halloween Dread Costume (f)
+42077	White Steel Costume (m)
+42078	White Steel Costume (f)
+42081	Red Fear Costume (m)
+42082	Red Fear Costume (f)
+42083	Frost Hwangs Costume (m)
+42084	Frost Hwangs Costume (f)
+45668	Moon Warden hair (m)
+45669	Moon Warden hair (f)
+45714	Spring Spirit Hair (m)
+45715	Spring Spirit Hair (f)
+45716	White Phantom Hair (M)
+45717	White Phantom Hair (F)
+45730	Wizard's scholar Hair (m)
+45731	Wizard's scholar Hair (f)
+45732	Sakura Desert Hair (m)
+45733	Sakura Desert Hair (f)
+45734	Wizard's scholar Hair (m)
+45735	Wizard's scholar Hair (f)
+45738	Crimson Ascendant Hair (m)
+45739	Crimson Ascendant Hair (f)
+45740	Amethyst Sovereign Hair (m)
+45741	Amethyst Sovereign Hair (f)
+45742	Obsidian Dragon Hair (m)
+45743	Obsidian Dragon Hair (f)
+45744	Azure Warden Hair (m)
+45745	Azure Warden Hair (f)
+45746	Cherry Blossom Hair (m)
+45747	Cherry Blossom Hair (f)
+45748	Black Blossom Hair (m)
+45749	Black Blossom Hair (f)
+45750	Blue Warrior Hair (m)
+45751	Blue Warrior Hair (f)
+45752	Red Warrior Hair (m)
+45753	Red Warrior Hair (f)
+45756	Astral Knight Hair (m)
+45757	Astral Knight Hair (f)
+45758	Dark Symbiote Hair (m)
+45759	Dark Symbiote Hair (f)
+45760	Haunted Vanguard Hair (m)
+45761	Haunted Vanguard Hair (f)
+45762	GhostBusters Hair (m)
+45763	GhostBusters Hair (f)
+45768	Halloween Dread Hair (m)
+45769	Halloween Dread Hair (f)
+45770	White Steel Hair (m)
+45771	White Steel Hair (f)
+45772	Red Fear Hair (m)
+45773	Red Fear Hair (f)
+45774	Frost Hwangs Hair (m)
+45775	Frost Hwangs Hair (f)
+52151	Moon Warden
+52162	Storm Spirit
+52167	Phantom Quilin
+52170	Bamboo guardian
+52173	Golden Mount
+52174	Black Mount
+52176	Wild Mount
+52178	Pure Angel Mount
+52179	Inferno Monarch Mount
+52181	White Phantom Mount
+52182	Summer Tide Mount
+52183	Goldazrael Mount
+52184	Hellboy Mount
+52185	Red Rogue Mount
+52186	White Gold Mount
+52190	Wizard's scholar Mount
+52191	Sakura Desert Mount
+52194	Obsidian Dragon Mount
+52195	Azure Warden Mount
+52196	Cherry Blossom Mount
+52197	Black Blossom Mount
+52200	Astral Knight Mount
+52203	Dark Symbiote Mount
+52211	White Steel Mount
+52212	Red Fear Mount
+52213	Frost Hwangs Mount
+53394	Pure Angel Pet
+53395	White Phantom Pet
+53396	Summer Tide Pet
+53397	Goldazrael Pet
+53398	Hellboy Pet
+53399	Red Rogue Pet
+53400	White Gold Pet
+53402	Wizard's scholar Pet
+53403	Sakura Desert Pet
+53406	Obsidian Dragon Pet
+53407	Azure Warden Pet
+53408	Dark Symbiote Pet
+53414	White Steel Pet
+40278	Burning Knight Blade
+40279	Burning Knight Dagger
+40280	Burning Knight Bow
+40281	Burning Knight Glaive
+40282	Burning Knight Gong
+40283	Burning Knight Fan
+40284	Burning Knight Sura
+40285	Frozen Knight Blade
+40286	Frozen Knight Dagger
+40287	Frozen Knight Bow
+40288	Frozen Knight Glaive
+40289	Frozen Knight Gong
+40290	Frozen Knight Fan
+40291	Frozen Knight Sura
+40292	Storm Spirit Blade
+40293	Storm Spirit Dagger
+40294	Storm Spirit Bow
+40295	Storm Spirit Glaive
+40296	Storm Spirit Gong
+40297	Storm Spirit Fan
+40298	Storm Spirit Sura
+40299	Moon Warden Blade
+40300	Moon Warden Dagger
+40301	Moon Warden Bow
+40302	Moon Warden Glaive
+40303	Moon Warden Gong
+40304	Moon Warden Fan
+40305	Moon Warden Sura
+40306	Yin-Yang Blade
+40307	Yin-Yang Dagger
+40308	Yin-Yang Bow
+40309	Yin-Yang Glaive
+40310	Yin-Yang Gong
+40311	Yin-Yang Fan
+40312	Bamboo guardian Blade
+40313	Bamboo guardian Dagger
+40314	Bamboo guardian Bow
+40315	Bamboo guardian Glaive
+40316	Bamboo guardian Gong
+40317	Bamboo guardian Fan
+40318	Bamboo guardian Sura
+40319	Baryt Blade
+40320	Baryt Dagger
+40321	Baryt Bow
+40322	Baryt Glaive
+40323	Baryt Bell
+40324	Baryt Fan
+40325	Baryt Sura
+40326	Yin-Yang Blade
+40327	Yin-Yang Dagger
+40328	Yin-Yang Bow
+40329	Yin-Yang Glaive
+40330	Yin-Yang Bell
+40331	Yin-Yang Fan
+40332	Yin-Yang Sura
+40333	Golden Blade
+40334	Golden Dagger
+40335	Golden Bow
+40336	Golden Glaive
+40337	Golden Bell
+40338	Golden Fan
+40339	Golden Sura
+40340	Black Blade
+40341	Black Dagger
+40342	Black Bow
+40343	Black Glaive
+40344	Black Bell
+40345	Black Fan
+40346	Black Sura
+40347	Frozen Netherworld Blade
+40348	Frozen Netherworld Dagger
+40349	Frozen Netherworld Bow
+40350	Frozen Netherworld Glaive
+40351	Frozen Netherworld Bell
+40352	Frozen Netherworld Fan
+40353	Frozen Netherworld Sura
+40354	Goldar Blade
+40355	Goldar Dagger
+40356	Goldar Bow
+40357	Goldar Glaive
+40358	Goldar Bell
+40359	Goldar Fan
+40360	Goldar Sura
+40361	Moonshade Blade
+40362	Moonshade Dagger
+40363	Moonshade Bow
+40364	Moonshade Glaive
+40365	Moonshade Bell
+40366	Moonshade Fan
+40367	Moonshade Sura
+40368	Pure Angel Blade
+40369	Pure Angel Dagger
+40370	Pure Angel Bow
+40371	Pure Angel Glaive
+40372	Pure Angel Bell
+40373	Pure Angel Fan
+40374	Pure Angel Sura
+40375	Ghost Samurai Blade
+40376	Ghost Samurai Dagger
+40377	Ghost Samurai Bow
+40378	Ghost Samurai Glaive
+40379	Ghost Samurai Bell
+40380	Ghost Samurai Fan
+40381	Ghost Samurai Sura
+40382	Inferno Monarch Blade
+40383	Inferno Monarch Dagger
+40384	Inferno Monarch Bow
+40385	Inferno Monarch Glaive
+40386	Inferno Monarch Bell
+40387	Inferno Monarch Fan
+40388	Inferno Monarch Sura
+40389	Spring Spirit Blade
+40390	Spring Spirit Dagger
+40391	Spring Spirit Bow
+40392	Spring Spirit Glaive
+40393	Spring Spirit Bell
+40394	Spring Spirit Fan
+40395	Spring Spirit Sura
+40396	White Phantom Blade
+40397	White Phantom Dagger
+40398	White Phantom Bow
+40399	White Phantom Glaive
+40400	White Phantom Bell
+40401	White Phantom Fan
+40402	White Phantom Sura
+40403	Summer Tide Blade
+40404	Summer Tide Dagger
+40405	Summer Tide Bow
+40406	Summer Tide Glaive
+40407	Summer Tide Bell
+40408	Summer Tide Fan
+40409	Summer Tide Sura
+40410	Goldazrael Blade
+40411	Goldazrael Dagger
+40412	Goldazrael Bow
+40413	Goldazrael Glaive
+40414	Goldazrael Bell
+40415	Goldazrael Fan
+40416	Goldazrael Sura
+40417	Hellboy Blade
+40418	Hellboy Dagger
+40419	Hellboy Bow
+40420	Hellboy Glaive
+40421	Hellboy Bell
+40422	Hellboy Fan
+40423	Hellboy Sura
+40424	Red Rogue Blade
+40425	Red Rogue Dagger
+40426	Red Rogue Bow
+40427	Red Rogue Glaive
+40428	Red Rogue Bell
+40429	Red Rogue Fan
+40430	Red Rogue Sura
+40431	White Gold Blade
+40432	White Gold Dagger
+40433	White Gold Bow
+40434	White Gold Glaive
+40435	White Gold Bell
+40436	White Gold Fan
+40437	White Gold Sura
+40438	Wizard's scholar Blade
+40439	Wizard's scholar Dagger
+40440	Wizard's scholar Bow
+40441	Wizard's scholar Glaive
+40442	Wizard's scholar Bell
+40443	Wizard's scholar Fan
+40444	Wizard's scholar Sura
+40445	Sakura Desert Blade
+40446	Sakura Desert Dagger
+40447	Sakura Desert Bow
+40448	Sakura Desert Glaive
+40449	Sakura Desert Bell
+40450	Sakura Desert Fan
+40451	Wizard's scholar Blade
+40452	Wizard's scholar Dagger
+40453	Wizard's scholar Bow
+40454	Wizard's scholar Glaive
+40455	Wizard's scholar Bell
+40456	Wizard's scholar Fan
+40457	Wizard's scholar Sura
+40458	Crimson Ascendant Blade
+40459	Crimson Ascendant Dagger
+40460	Crimson Ascendant Bow
+40461	Crimson Ascendant Glaive
+40462	Crimson Ascendant Bell
+40463	Crimson Ascendant Fan
+40464	Crimson Ascendant Sura
+40465	Amethyst Sovereign Blade
+40466	Amethyst Sovereign Dagger
+40467	Amethyst Sovereign Bow
+40468	Amethyst Sovereign Glaive
+40469	Amethyst Sovereign Bell
+40470	Amethyst Sovereign Fan
+40471	Amethyst Sovereign Sura
+40472	Obsidian Dragon Blade
+40473	Obsidian Dragon Dagger
+40474	Obsidian Dragon Bow
+40475	Obsidian Dragon Glaive
+40476	Obsidian Dragon Bell
+40477	Obsidian Dragon Fan
+40478	Obsidian Dragon Sura
+40479	Azure Warden Blade
+40480	Azure Warden Dagger
+40481	Azure Warden Bow
+40482	Azure Warden Glaive
+40483	Azure Warden Bell
+40484	Azure Warden Fan
+40485	Cherry Blossom Blade
+40486	Cherry Blossom Dagger
+40487	Cherry Blossom Bow
+40488	Cherry Blossom Glaive
+40489	Cherry Blossom Bell
+40490	Cherry Blossom Fan
+40491	Cherry Blossom Sura
+40492	Black Blossom Blade
+40493	Black Blossom Dagger
+40494	Black Blossom Bow
+40495	Black Blossom Glaive
+40496	Black Blossom Bell
+40497	Black Blossom Fan
+40498	Black Blossom Sura
+40499	Blue Warrior Blade
+40500	Blue Warrior Dagger
+40501	Blue Warrior Bow
+40502	Blue Warrior Glaive
+40503	Blue Warrior Bell
+40504	Blue Warrior Fan
+40505	Blue Warrior Sura
+40506	Red Warrior Blade
+40507	Red Warrior Dagger
+40508	Red Warrior Bow
+40509	Red Warrior Glaive
+40510	Red Warrior Bell
+40511	Red Warrior Fan
+40512	Red Warrior Sura
+40513	Astral Knight Blade
+40514	Astral Knight Dagger
+40515	Astral Knight Bow
+40516	Astral Knight Glaive
+40517	Astral Knight Bell
+40518	Astral Knight Fan
+40519	Astral Knight Sura
+40520	Dark Symbiote Blade
+40521	Dark Symbiote Dagger
+40522	Dark Symbiote Bow
+40523	Dark Symbiote Glaive
+40524	Dark Symbiote Bell
+40525	Dark Symbiote Fan
+40526	Dark Symbiote Sura
+40527	Haunted Vanguard Blade
+40528	Haunted Vanguard Dagger
+40529	Haunted Vanguard Bow
+40530	Haunted Vanguard Glaive
+40531	Haunted Vanguard Bell
+40532	Haunted Vanguard Fan
+40533	Haunted Vanguard Sura
+40534	GhostBusters Blade
+40535	GhostBusters Dagger
+40536	GhostBusters Bow
+40537	GhostBusters Glaive
+40538	GhostBusters Bell
+40539	GhostBusters Fan
+40540	GhostBusters Pickaxe
+40541	Halloween Dread Blade
+40542	Halloween Dread Dagger
+40543	Halloween Dread Bow
+40544	Halloween Dread Glaive
+40545	Halloween Dread Bell
+40546	Halloween Dread Fan
+40547	White Steel Blade
+40548	White Steel Dagger
+40549	White Steel Bow
+40550	White Steel Glaive
+40551	White Steel Bell
+40552	White Steel Fan
+40553	Red Fear Blade
+40554	Red Fear Dagger
+40555	Red Fear Bow
+40556	Red Fear Glaive
+40557	Red Fear Bell
+40558	Red Fear Fan
+40559	Frost Hwangs Blade
+40560	Frost Hwangs Dagger
+40561	Frost Hwangs Bow
+40562	Frost Hwangs Glaive
+40563	Frost Hwangs Bell
+40564	Frost Hwangs Fan
+40565	Frost Hwangs Sura
+86066	Burning Knight Sash
+86067	Frozen Knight Sash
+86074	Storm Spirit Sash
+86079	Moon Warden Sash
+86086	Yin-Yang Sash
+86088	Bamboo guardian Sash
+86096	Golden Hwang Sash
+86097	Black Hwang Sash
+86098	Frozen Netherworld Sash
+86099	Goldar Sash
+86100	Moonshade Wing
+86101	Pure Angel Wing
+86102	Ghost Samurai Wing
+86103	Inferno Monarch Wing
+86104	Spring Spirit Wing
+86105	Black Wing
+86110	White Wing
+86112	White Phantom Wing
+86113	Summer Tide Wing
+86114	Goldazrael Wing
+86115	Hellboy Wing
+86116	Red Rogue Wing
+86117	White Gold Wing
+86119	Wizard's scholar Wing
+86120	Sakura Desert Wing
+86121	Wizard's scholar Wing
+86123	Amethyst Sovereign Wing
+86124	Obsidian Dragon Wing
+86125	Azure Warden Wing
+86126	Crimson Ascendant Wing
+86127	Cherry Blossom Wing
+86128	Black Blossom Wing
+86129	Blue Warrior Wing
+86130	Red Warrior Wing
+86132	Astral Knight Wing
+86133	Dark Symbiote Wing
+86135	Haunted Vanguard Wing
+86136	GhostBusters Wing
+86139	Halloween Dread Wing
+86140	White Steel Wing
+86141	Red Fear Wing
+86142	Frost Hwangs Wing
+42200	Burning Knight Costume (m)
+42201	Burning Knight Costume (f)
+42202	Frozen Knight Costume (m)
+42203	Frozen Knight Costume (f)
+42204	Storm Spirit Costume (m)
+42205	Storm Spirit Costume (f)
+42206	Yin-Yang Costume (m)
+42207	Yin-Yang Costume (f)
+42208	Bamboo guardian Costume (m)
+42209	Bamboo guardian Costume (f)
+42210	Moovelous Suit (M)
+42211	Moovelous Suit (F)
+42212	Baerim Jersey (M)
+42213	Baerim Jersey (F)
+42214	Hwang Costume
+42215	Red Hwang Costume
+42216	Zin-Hwang Costume
+42217	San-Hwang Costume
+42218	Golden Hwang Costume (M)
+42219	Golden Hwang Costume (F)
+42220	Black Hwang Costume (M)
+42221	Black Hwang Costume (F)
+42222	Frozen Netherworld Costume (M)
+42223	Frozen Netherworld Costume (F)
+42224	Goldar Costume
+42225	Bosnia Jersey
+42226	Bosnia Jersey
+42227	Brazil Jersey
+42228	Brazil Jersey
+42229	Czech Republic Jersey
+42230	Czech Republic Jersey
+42231	Egypt Jersey
+42232	Egypt Jersey
+42233	England Jersey
+42234	England Jersey
+42235	France Jersey
+42236	France Jersey
+42260	Abyss Warrior Costume (m)
+42261	Abyss Warrior Costume (f)
+45900	Burning Knight hair (m)
+45901	Burning Knight hair (f)
+45902	Frozen Knight hair (m)
+45903	Frozen Knight hair (f)
+45904	Storm Spirit hair (m)
+45905	Storm Spirit hair (f)
+45906	Yin-Yang hair (m)
+45907	Yin-Yang hair (f)
+45908	Bamboo guardian hair (m)
+45909	Bamboo guardian hair (f)
+45910	Baerim Hair (M)
+45911	Baerim Hair (F)
+45912	Golden Hwang Hair (M)
+45913	Golden Hwang Hair (F)
+45914	Black Hwang Hair (M)
+45915	Black Hwang Hair (F)
+45916	Frozen Netherworld Hair (M)
+45917	Frozen Netherworld Hair (F)
+45918	Goldar Hair (M)
+45919	Goldar Hair (F)
+45920	Moonshade Hair (m)
+45921	Moonshade Hair (f)
+45922	Pure Angel Hair (m)
+45923	Pure Angel Hair (f)
+45924	Ghost Samurai Hair (m)
+45925	Ghost Samurai Hair (f)
+45926	Inferno Monarch Hair (m)
+45927	Inferno Monarch Hair (f)
+45928	Summer Tide Hair (m)
+45929	Summer Tide Hair (f)
+45930	Goldazrael Hair (m)
+45931	Goldazrael Hair (f)
+45932	Hellboy Hair (m)
+45933	Hellboy Hair (f)
+45934	Red Rogue Hair (m)
+45935	Red Rogue Hair (f)
+45936	White Gold Hair (m)
+45937	White Gold Hair (f)
+45960	Polar Warden Hair (m)
+52300	Nirvana Dragon
+53700	Golden Pet
+53701	Black Pet
+58000	Horse
+77090	Abyss Sword
+77091	Abyss Dagger
+77092	Abyss Bow
+77093	Abyss Greatsword
+77094	Abyss Bell
+77095	Abyss Fan
+77096	Dark Warrior Sura
+86084	Abyss Sash

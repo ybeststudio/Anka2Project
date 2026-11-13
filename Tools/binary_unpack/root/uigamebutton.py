@@ -9,17 +9,12 @@ import ui
 import constInfo
 import uiBeginnerEvent
 
-if app.ENABLE_SECOND_GUILDRENEWAL_SYSTEM:
-	import uiCommon
-	import localeInfo
 
 class GameButtonWindow(ui.ScriptWindow):
 	def __init__(self):
 		ui.ScriptWindow.__init__(self)
 		self.beginnerPopup = None
 		self.__LoadWindow("UIScript/gamewindow.py")
-		if app.ENABLE_SECOND_GUILDRENEWAL_SYSTEM:
-			self.popup = None
 
 	def __del__(self):
 		ui.ScriptWindow.__del__(self)
@@ -50,9 +45,6 @@ class GameButtonWindow(ui.ScriptWindow):
 				#"BATTLEPASSPREMIUM" : self.GetChild("BattlePassPremium"),##ENABLE_BATTLE_PASS
 			}
 
-			if app.ENABLE_SECOND_GUILDRENEWAL_SYSTEM:
-				self.gameButtonDict["GUILDWAR"] = self.GetChild("GuildWarButton")
-				self.gameButtonDict["GUILDWAR"].SetEvent(ui.__mem_func__(self.__RequestGuildWarEnter))
 
 			self.gameButtonDict["EXIT_OBSERVER"].SetEvent(ui.__mem_func__(self.__OnClickExitObserver))
 			#if app.ENABLE_BATTLE_PASS:
@@ -83,37 +75,9 @@ class GameButtonWindow(ui.ScriptWindow):
 		self.gameButtonDict["BEGINNER"].SetEvent(ui.__mem_func__(self.__OnClickBeginner))
 		self.gameButtonDict["BEGINNER"].Show()
 		self.gameButtonDict["NOTIFICATION_HISTORY"].Show()
-		if app.ENABLE_GUILDRENEWAL_SYSTEM:
-			self.SetObserverMode(player.IsObserverMode(),True)
-		else:
-			self.SetObserverMode(player.IsObserverMode())
+		self.SetObserverMode(player.IsObserverMode())
 		return TRUE
 
-	if app.ENABLE_SECOND_GUILDRENEWAL_SYSTEM:
-		def __RequestGuildWarEnter(self):
-			questionDialog = uiCommon.QuestionDialog()
-			questionDialog.SetText(localeInfo.GAME_GUILDWAR_NOW_JOIN)
-			questionDialog.SetAcceptEvent(ui.__mem_func__(self.AcceptGuildWarEnter))
-			questionDialog.SetCancelEvent(ui.__mem_func__(self.ClosePopUpDialog))
-			questionDialog.Open()
-			self.popup = questionDialog
-
-		def AcceptGuildWarEnter(self):
-			m2netm2g.SendChatPacket("/guildwar_request_enter")
-			if self.popup:
-				self.popup.Close()
-			self.popup = None
-
-		def ClosePopUpDialog(self):
-			if self.popup:
-				self.popup.Close()
-			self.popup = None
-
-		def ShowGuildWarButton(self):
-			self.gameButtonDict["GUILDWAR"].Show()
-
-		def HideGuildWarButton(self):
-			self.gameButtonDict["GUILDWAR"].Hide()
 
 	def Destroy(self):
 		if self.beginnerPopup:
@@ -125,8 +89,6 @@ class GameButtonWindow(ui.ScriptWindow):
 
 		self.gameButtonDict={}
 
-		if app.ENABLE_SECOND_GUILDRENEWAL_SYSTEM:
-			self.popup = None
 
 	def __OnClickBeginner(self):
 		if self.beginnerPopup is None:
@@ -216,19 +178,11 @@ class GameButtonWindow(ui.ScriptWindow):
 		for btn in self.gameButtonDict.values():
 			btn.Hide()
 
-	if app.ENABLE_GUILDRENEWAL_SYSTEM:
-		def SetObserverMode(self, isEnable, isButtonShow):
-			if isButtonShow:
-				if isEnable:
-					self.gameButtonDict["EXIT_OBSERVER"].Show()
-				else:
-					self.gameButtonDict["EXIT_OBSERVER"].Hide()
-	else:
-		def SetObserverMode(self, isEnable):
-			if isEnable:
-				self.gameButtonDict["EXIT_OBSERVER"].Show()
-			else:
-				self.gameButtonDict["EXIT_OBSERVER"].Hide()
+	def SetObserverMode(self, isEnable):
+		if isEnable:
+			self.gameButtonDict["EXIT_OBSERVER"].Show()
+		else:
+			self.gameButtonDict["EXIT_OBSERVER"].Hide()
 
 	#if app.ENABLE_BATTLE_PASS:
 	#	def __OnClickBattlePass(self):

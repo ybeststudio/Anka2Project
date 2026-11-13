@@ -325,6 +325,9 @@ class CClientManager : public CNetBase, public singleton<CClientManager>
 		void QUERY_RELOAD_PROTO();
 
 		void QUERY_CHANGE_NAME(CPeer * peer, DWORD dwHandle, TPacketGDChangeName * p);
+#ifdef ENABLE_COUNTRY_FLAG
+		void QUERY_CHANGE_COUNTRY_FLAG(TPacketGDChangeCountryFlag * p);
+#endif
 		void GetPlayerFromRes(TPlayerTable * player_table, MYSQL_RES* res);
 
 		void QUERY_LOGIN_KEY(CPeer * pkPeer, TPacketGDLoginKey * p);

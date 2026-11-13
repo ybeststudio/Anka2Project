@@ -89,6 +89,9 @@ class CInputLogin : public CInputProcessor
 		int GuildSymbolUpload(LPDESC d, const char* c_pData, size_t uiBytes);
 		void GuildSymbolCRC(LPDESC d, const char* c_pData);
 		void ChangeName(LPDESC d, const char * data);
+#ifdef ENABLE_COUNTRY_FLAG
+		void ChangeCountryFlag(LPDESC d, const char * data);
+#endif
 };
 
 class CInputMain : public CInputProcessor
@@ -263,9 +266,6 @@ class CInputMain : public CInputProcessor
 		int ReciveHuntingAction(LPCHARACTER ch, const char* c_pData);
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-		void MountUpGrade(LPCHARACTER ch, const char* c_pData);
-#endif
 
 #ifdef ENABLE_DUNGEON_INFO
 		void DungeonInfoSend(LPCHARACTER ch, const char * data);

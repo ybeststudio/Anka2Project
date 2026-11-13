@@ -19,7 +19,7 @@
 	#endif
 
 /* === ifdef-audit: definesiz eklenmis custom paket sistemi (ON) === */
-#define ENABLE_LEFT_SEAT_SYSTEM					// Sandalyeden kalkma / AFK sit-timer paketi (Packet.h)
+#define ENABLE_LEFT_SEAT_SYSTEM								// Sandalyeden kalkma / AFK sit-timer paketi (Packet.h)
 /* === ifdef-audit end === */
 
 #define ENABLE_FOG_FIX										// Resmi 16.2 sürümünden sis düzeltmesi;
@@ -232,24 +232,48 @@
 	#endif
 #define ENABLE_CLIP_MASKING                     			// Resmi sürümdeki clip masking (görsel kırpma) özelliğini etkinleştir
 #define ENABLE_UTF8_ENCODING                    			// Client’ta UTF-8 kodlamasını ana kodlama olarak etkinleştir (Windows-1254)
-#define ENABLE_BUFFI_SYSTEM							// Buffi (destek þamaný): beceri paketi + kostüm parçalarý
+#define ENABLE_BUFFI_SYSTEM									// Buffi (destek þamaný): beceri paketi + kostüm parçalarý
 	#ifdef ENABLE_BUFFI_SYSTEM
-		#define ENABLE_BUFFI_EVOLUTION					// Buffi evolution window
-		#define ENABLE_BUFFI_SKILL_BOOK					// Buffi skill books / soul stones
-		#define ENABLE_BUFFI_CHANGE_SEX					// Buffi sex change talisman
+		#define ENABLE_BUFFI_EVOLUTION						// Buffi evolution window
+		#define ENABLE_BUFFI_SKILL_BOOK						// Buffi skill books / soul stones
+		#define ENABLE_BUFFI_CHANGE_SEX						// Buffi sex change talisman
 	#endif
 #define ENABLE_WHISPER_MESSENGER							// Baerim style messenger window (uiWhisperMessenger): conversation list, chat bubbles, Anka2 Global channel
 #define ENABLE_GUILD_APPLICATION							// Baerim "Lonca Basvurusu" window + sliding guild join notification (uiGuildApplication), server /guild_app
 #define ENABLE_MESSENGER_DETAILS							// Baerim friend list window (uiMessengerRenewal): categories, search, favorites, member cards; server "MessengerInfo"
 #define ENABLE_GUILD_GRADE_RENEWAL							// Baerim grade dialog: 9 authorities (WORD authority flag), must match the server define
 #define ENABLE_GUILD_MARK_PNG								// Lonca logosu .png yukleme (DevIL IL_NO_PNG, D3DX ile cozulur)
-#define ENABLE_GUILD_RENEWAL_BAERIM						// Baerim guild window (uiGuildRenewal): info / member pages, blessings, co leaders; old GF pages only without it
-#define ENABLE_AFFECT_CAST_STAT							// Skill buff affects carry the caster STR / INT (affect tooltip "INT on activation")
+#define ENABLE_GUILD_RENEWAL_BAERIM							// Baerim guild window (uiGuildRenewal): info / member pages, blessings, co leaders; old GF pages only without it
+#define ENABLE_LOGIN_RENEWAL_BAERIM							// Baerim login screen (introLoginBaerim): side board, 6 saved accounts, channel list, language flags
+#define ENABLE_CREATE_RENEWAL_BAERIM						// Baerim character create screen (introCreateBaerim): class slots, paged job description, render window
+#define ENABLE_PCBLOCKER_FLAT_ALPHA							// Baerim: kamera ile karakter arasindaki nesne esit saydam cizilir (resmi PCBlockerAlpha.dds deligi yerine)
+#define PCBLOCKER_FLAT_ALPHA				48				// 0-255
+#define ENABLE_TELEPORT_BAERIM								// Baerim Isinlanma harita sayfasi (uiTeleportBaerim): zindan penceresinin ilk sekmesi, /teleport_map <tpIdx>
+#define ENABLE_DAMAGE_TRACE								// Baerim "Hasar Takibi" penceresi (uiTrackDamage), server define ile ayni
+#define ENABLE_TARGET_DROP_CHANCE							// Hedef "?" panosu (Baerim): drop satirlarinda gercek dusme sansi (ppm) -> nadirlik etiketi, server define ile ayni
+#define ENABLE_MOKOKO_SYSTEM								// Baerim Mokoko tohumlari (uiMokokoRewards): sayac, harita ilerlemesi, odul penceresi, server define ile ayni
+#define ENABLE_MOUNT_ATTACK_FIX								// Baerim: 58000 "At" (20101) ve listede olmayan kostum binekler uzerinde saldiri acik
+#define ENABLE_DUNGEON_WINDOW_BAERIM						// Baerim dungeon window (uiTeleport dungeon page), replaces the uiDungeonTrack window
+#define ENABLE_SHOP_TABS_BAERIM								// Baerim tabbed NPC shop (uiShop): ShopEx tab of 80 slots (10 columns), WORD buy position, must match the server define
+#define ENABLE_DUNGEON_LIMIT_RENEWAL						// Baerim dungeon daily limit: PC (computer) limit + weekly stack, app.GetPCIdentity, must match the server define
+#define ENABLE_ACCE_SKIN_SYSTEM								// sash skins (Baerim wings / sash looks): COSTUME_ACCE_SKIN worn in WEAR_COSTUME_ACCE_SKIN (39), must match the server define
+#define ENABLE_PET_EXP_BONUS								// Baerim pet items: APPLY_PET_EXP_BONUS (339) "Evcil hayvan EXP bonusu", must match the server define
+#define ENABLE_TIME_BONUS_COSTUME							// Baerim costume bonus time (socket 2 = end, 99 = permanent), must match the server define
+#define ENABLE_WARDROBE_SYSTEM								// Baerim wardrobe (uiWardrobe): WARDROBE item window (20, 4500 cells), /wardrobe protocol, must match the server define
+#define ENABLE_COSTUME_SHOP_BAERIM							// Baerim costume shop (uiCostumeShop): NPC 9393, coupons 90020-90022, chat command protocol, must match the server define
+#define ENABLE_GLOBAL_RANKING								// Baerim global ranking window (uiRanking): /global_rank _load, must match the server define
+#define ENABLE_COUNTRY_FLAG									// Baerim country flag per character (uiCountryFlag): picked on character select, must match the server define
+#define ENABLE_LOADING_RENEWAL_BAERIM						// Baerim loading screen (introLoadingBaerim): random full screen background, fades out over the map
+#define ENABLE_SELECT_RENEWAL_BAERIM						// Baerim character select screen (introSelectBaerim): 4 slots + page arrows, job description, slot tooltip
+#define ENABLE_EMPIRE_RENEWAL_BAERIM						// Baerim empire select screen (introEmpireBaerim): atlas with fading empire areas, name board
+#define ENABLE_AFFECT_CAST_STAT								// Skill buff affects carry the caster STR / INT (affect tooltip "INT on activation")
+#define ENABLE_EFFECT_MODEL_ITEM							// Baerim: item_list model ".mse" = the item is an effect (weapon on the hand bones, wing / sash skin on the sash bone)
+#define ENABLE_COSTUME_GLOW_TABLE							// Baerim locale/common/shiningtable.txt: costume / weapon vnum -> glow effects (.mse) on the body / weapon
 #define ENABLE_SHINING_SYSTEM								// Shining items (ITEM_SHINING): weapon / costume glow sets, locale/common/shining_effect.txt
-#define ENABLE_BRAVE_CAPE_RENEWAL						// Brave Cape window (Baerim uiAutoCape.BraveCapeWindow, /brave_cape)
-#define ENABLE_SKILL_UPGRADE							// Skill Upgrader window (/upgrade_skill)
-#define ENABLE_APPLY_RANDOM							// Official random base bonuses (APPLY_RANDOM) in item packets / tooltips
-#define ENABLE_BONUS_FIX								// Bonus page: APPLY -> POINT for every bonus the server stores
+#define ENABLE_BRAVE_CAPE_RENEWAL							// Brave Cape window (Baerim uiAutoCape.BraveCapeWindow, /brave_cape)
+#define ENABLE_SKILL_UPGRADE								// Skill Upgrader window (/upgrade_skill)
+#define ENABLE_APPLY_RANDOM									// Official random base bonuses (APPLY_RANDOM) in item packets / tooltips
+#define ENABLE_BONUS_FIX									// Bonus page: APPLY -> POINT for every bonus the server stores
 #define ENABLE_NPC_WEAR_ITEM                    			// NPC’lerin eşya giyebilmesini etkinleştir
 #define ENABLE_HUNTING_SYSTEM                   			// Özgün görevlerle avcılık (hunting) sistemini etkinleştir
 #define ENABLE_EMOTICONS_SYSTEM                 			// Sohbet ve fısılda (whisper) emoji sistemini etkinleştir
@@ -264,7 +288,7 @@
 #define ENABLE_INVENTORY_EXPANSION_SYSTEM       			// Resmi sürümdeki envanter genişletme sistemini etkinleştir
 #define ENABLE_SEALBIND_SYSTEM								// Resmi ruha baglama / muhurleme sistemi
 #define ENABLE_UN_SEAL_SCROLL_PLUS							// Ruh Bagi Ayirma Parssomeni+ sistemi
-//#define ENABLE_MORE_FPS										// FPS sınırı yükseltme
+//#define ENABLE_MORE_FPS									// FPS sınırı yükseltme
 #define ENABLE_GM_INV_EFFECT         						// Resmi GM /inv efekt güncellemesi
 #define ENABLE_MINIMAP_SMOOTH_ZOOM             				// Minimap yumuşak yakınlaştırma sistemi
 #define ENABLE_OFFICAL_FEATURES								// Resmi özellikleri etkinleştir
@@ -278,7 +302,6 @@
 		#define STANDING_MOUNT_VNUM_3 40005 				// Wukong'un Gürlemesi
 		#define SURFBOARD STANDING_MOUNT_VNUM_1 			// Eski sistemlerle uyumluluk için alias
 	#endif
-#define ENABLE_RIDING_EXTENDED 								// Resmi At seviyesi genişletildi
 #define ENABLE_SPIRIT_STONE_READING							// Ruh Taşı Okuma sistemi
 #define ENABLE_SKILL_BOOK_READING							// Beceri Kitabı Okuma sistemi
 #define __AUTO_HUNT__										// Otomatik Av sistemi
@@ -391,27 +414,6 @@
 		#define ENABLE_SOCCER_BALL_EVENT					// Futbol Topu etkinliğini ve ilgili oyun mekaniklerini aktif eder
 		#define ENABLE_WORD_GAME_EVENT						// Kelime oyunu etkinliğini aktif eder
 	#endif
-/*** TAMAMLANMAMIŞ SİSTEMLER (YAKINDA) ***/
-#define ENABLE_GUILDRENEWAL_SYSTEM							// Gelişmiş Resmi gibi lonca altyapısı için çekirdek yenileme sistemi
-	#ifdef ENABLE_GUILDRENEWAL_SYSTEM	
-		#define ENABLE_GUILD_MARK_RENEWAL					// Lonca logo (mark) yükleme ve güncelleme iş akışını etkinleştirir
-		#define ENABLE_SECOND_GUILDRENEWAL_SYSTEM			// Ek modüllerle genişletilmiş ikinci lonca yenileme katmanı
-		#define ENABLE_NEW_WAR_OPTIONS						// Tur, puan ve süre bazlı modern lonca savaşı seçenekleri
-		#define ENABLE_EXTENDED_GUILD_LEVEL					// Lonca seviye kapasitesinin 30'a çıkarılması
-		//#define ENABLE_MEDAL_OF_HONOR						// Lonca ekonomisi için yeni para birimi (Onur Madalyası)
-		#define ENABLE_GUILD_DONATE_ATTENDANCE				// Günlük lonca bağışı ve katılım takip sistemi
-		#define ENABLE_GUILD_WAR_SCORE						// Lonca savaş istatistiklerinin detaylı skor ekranı
-		#define ENABLE_GUILD_LAND_INFO						// Lonca arazilerine ait detaylı bilgi arayüzü
-		#define ENABLE_GUILDBANK_LOG						// Lonca banka ve işlem kayıtlarının günlük sistemi
-		#define ENABLE_EXTENDED_RENEWAL_FEATURES			// Lonca lideri devri ve arazi silme yönetimi gibi ek yenileme özellikleri
-		#define ENABLE_GUILDWAR_BUTTON						// Arayüzde Lonca Savaşı erişim düğmesini aktif eder
-		//#define ENABLE_GUILD_REQUEST						// Lonca istek/başvuru altyapısı (eksik modüller nedeniyle devre dışı)
-		#define ENABLE_NEW_WORLD_GUILDRENEWAL				// Gelişmiş lonca yenileme/güncelleme sistemi (sunucu tarafı eksik modüller)
-		//#define ENABLE_GUILD_RANKING						// Loncalar arası sıralama sistemi (tam entegre edilmediği için kapalı)
-		//#define ENABLE_GUILDSTORAGE_SYSTEM     			// Loncanın ortak deposu: üyelerin paylaşımlı eşya deposu sistemi
-	#endif
-/*** TAMAMLANMAMIŞ SİSTEMLER (YAKINDA) ***/
-
 /*** GRAFİK AYARLARI & DÜZELTMELER***/
 #define ANK_SYSTEM_GRAPHICS
 #ifdef ANK_SYSTEM_GRAPHICS

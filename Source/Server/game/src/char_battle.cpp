@@ -43,6 +43,13 @@
 #include "../../common/service.h"
 #ifdef ENABLE_GUILD_QUEST
 #include "guild_quest.h"
+#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#include "dungeon_window.h"
+#endif
+#ifdef ENABLE_GLOBAL_RANKING
+#include "global_ranking.h"
+#include "damage_trace.h"
+#endif
 #endif
 #ifdef ENABLE_BUFFI_SYSTEM
 #include "buffi_system.h"
@@ -250,7 +257,13 @@ bool CHARACTER::Attack(LPCHARACTER pkVictim, BYTE bType)
 		)
 	{
 		if (IS_SPEED_HACK(this, pkVictim, dwCurrentTime))
+		{
+#ifdef DEBUG_HORSE_SKILL_HITS
+			if (bType >= 137 && bType <= 140)
+				sys_log(0, "HORSE_SKILL_DROP %s skill %u: speed hack check (target %s)", GetName(), bType, pkVictim->GetName());
+#endif
 			return false;
+		}
 
 		if (bType == 0 && dwCurrentTime < GetSkipComboAttackByTime())
 			return false;
@@ -273,6 +286,10 @@ bool CHARACTER::Attack(LPCHARACTER pkVictim, BYTE bType)
 		// Ama saldýrý sýrasýnda rezervasyon kontrolü yapmýyoruz, damage iþlemesi için
 		CHARACTER_MANAGER::instance().ReserveTarget(dwTargetVID, dwPlayerPID);
 	}
+#endif
+
+#ifdef ENABLE_DAMAGE_TRACE
+	DamageTrace::FHitScope damageTraceScope(this, pkVictim, bType);
 #endif
 
 	pkVictim->SetSyncOwner(this);
@@ -327,6 +344,10 @@ bool CHARACTER::Attack(LPCHARACTER pkVictim, BYTE bType)
 		{
 			if (dwCurrentTime - m_dwLastSkillTime > 1500)
 			{
+#ifdef DEBUG_HORSE_SKILL_HITS
+				if (bType >= 137 && bType <= 140)
+					sys_log(0, "HORSE_SKILL_DROP %s skill %u: %u ms after skill use (> 1500)", GetName(), bType, dwCurrentTime - m_dwLastSkillTime);
+#endif
 				sys_log(1, "HACK: Too long skill using term. Name(%s) PID(%u) delta(%u)",
 					GetName(), GetPlayerID(), (dwCurrentTime - m_dwLastSkillTime));
 				return false;
@@ -335,6 +356,11 @@ bool CHARACTER::Attack(LPCHARACTER pkVictim, BYTE bType)
 
 		sys_log(1, "Attack call ComputeSkill %d %s", bType, pkVictim ? pkVictim->GetName() : "");
 		iRet = ComputeSkill(bType, pkVictim);
+#ifdef DEBUG_HORSE_SKILL_HITS
+		if (bType >= 137 && bType <= 140)
+			sys_log(0, "HORSE_SKILL_HIT %s skill %u -> %s ret %d dist %d", GetName(), bType, pkVictim->GetName(), iRet,
+				DISTANCE_APPROX(GetX() - pkVictim->GetX(), GetY() - pkVictim->GetY()));
+#endif
 	}
 
 	//if (test_server && IsPC())
@@ -1628,6 +1654,13 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 		}
 	}
 
+#ifdef ENABLE_GLOBAL_RANKING
+	GlobalRanking_OnDead(this, pkKiller);
+#endif
+#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+	DungeonWindow_OnBossDead(this);
+#endif
+
 #ifdef ENABLE_RANKING
 	if ((IsPC()))
 	{
@@ -2565,6 +2598,7 @@ void CHARACTER::SendDamagePacket(LPCHARACTER pAttacker, int Damage, BYTE DamageF
 */
 bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // returns true if dead
 {
+	DAMAGE_TRACE_STEP(pAttacker, this, "INPUT", dam);
 #ifdef ENABLE_CONQUEROR_LEVEL	
 	if(IsAffectFlag(AFF_CHUNWOON_MOOJUK))
 	{
@@ -2809,6 +2843,7 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 					IsCritical = true;
 					dam *= 2;
 					EffectPacket(SE_CRITICAL);
+					DAMAGE_TRACE_STEP(pAttacker, this, "CRITICAL", dam);
 
 					if (IsAffectFlag(AFF_MANASHIELD))
 					{
@@ -2863,6 +2898,7 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 
 					dam += GetPoint(POINT_DEF_GRADE) * (100 + GetPoint(POINT_DEF_BONUS)) / 100;
 					EffectPacket(SE_PENETRATE);
+					DAMAGE_TRACE_STEP(pAttacker, this, "PENETRATE", dam);
 
 					if (IsAffectFlag(AFF_MANASHIELD))
 					{
@@ -2920,6 +2956,7 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 
 		if (IsAffectFlag(AFF_HOSIN))
 			dam = dam * (100 - GetPoint(POINT_RESIST_NORMAL_DAMAGE)) / 100;
+		DAMAGE_TRACE_STEP(pAttacker, this, "RULES", dam);
 
 		//
 		// Apply attacker attribute
@@ -2961,6 +2998,7 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 					IsCritical = true;
 					dam *= 2;
 					EffectPacket(SE_CRITICAL);
+					DAMAGE_TRACE_STEP(pAttacker, this, "CRITICAL", dam);
 				}
 			}
 
@@ -2998,6 +3036,7 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 						ChatPacket(CHAT_TYPE_INFO, "Additional Stabbing Weapon Damage %d", GetPoint(POINT_DEF_GRADE) * (100 + GetPoint(POINT_DEF_BONUS)) / 100);
 					dam += GetPoint(POINT_DEF_GRADE) * (100 + GetPoint(POINT_DEF_BONUS)) / 100;
 					EffectPacket(SE_PENETRATE);
+					DAMAGE_TRACE_STEP(pAttacker, this, "PENETRATE", dam);
 				}
 			}
 
@@ -3206,11 +3245,14 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 		default:
 			break;
 	}
+	DAMAGE_TRACE_STEP(pAttacker, this, (type == DAMAGE_TYPE_NORMAL || type == DAMAGE_TYPE_NORMAL_RANGE) ? "NORMAL_HIT" : "SKILL_BONUS", dam);
 
 #ifdef ENABLE_BONUS_FIX
 	if (GetPoint(POINT_MORE_THEN_HP90_DAMAGE_REDUCE) > 0 && (long long) GetHP() * 100 >= (long long) GetMaxHP() * 90)
 		dam = dam * (100 - MIN(99, GetPoint(POINT_MORE_THEN_HP90_DAMAGE_REDUCE))) / 100;
 #endif
+
+	DAMAGE_TRACE_STEP(pAttacker, this, "RULES", dam);
 
 	//
 	// Mana Shield (Black God Guardian)
@@ -3374,6 +3416,15 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 		int iDmgPct = CHARACTER_MANAGER::instance().GetUserDamageRate(pAttacker);
 		dam = dam * iDmgPct / 100;
 	}
+
+	DAMAGE_TRACE_STEP(pAttacker, this, "SERVER_RATE", dam);
+
+#ifdef ENABLE_METIN_DAMAGE_CAP
+	// Baerim: a single hit on a metin stone deals at most max HP / 10 ("Maks. Hasar" on the target info board)
+	if (IsStone() && pAttacker && GetMaxHP() > 0)
+		dam = MIN(dam, MAX(1, GetMaxHP() / 10));
+	DAMAGE_TRACE_STEP(pAttacker, this, "METIN_CAP", dam);
+#endif
 
 	// STONE SKIN: Damage reduced by half
 	if (IsMonster() && IsStoneSkinner())
@@ -3572,6 +3623,12 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 #endif
 	}
 
+	DAMAGE_TRACE_STEP(pAttacker, this, "RULES", dam);
+#ifdef ENABLE_DAMAGE_TRACE
+	if (DamageTrace::IsActive(pAttacker, this))
+		DamageTrace::Final(pAttacker, this, dam, cannot_dead ? 0 : MIN(dam, MAX(0, GetHP())));
+#endif
+
 	//
 	// !!!!!!!!! The actual HP reduction part !!!!!!!!!
 	//
@@ -3585,6 +3642,13 @@ bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) // retu
 		else
 #endif
 			PointChange(POINT_HP, -dam, false);
+
+#ifdef ENABLE_GLOBAL_RANKING
+		GlobalRanking_OnHit(pAttacker, this, dam);
+#endif
+#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+		DungeonWindow_OnBossHit(pAttacker, this, dam);
+#endif
 
 #ifdef ENABLE_DUNGEON_INFO
 		if (GetMapIndex() >= 10000){
@@ -3801,6 +3865,21 @@ static void GiveExp(LPCHARACTER from, LPCHARACTER to, int iExp)
 #ifdef ENABLE_GROWTH_PET_SYSTEM
 	if (to->GetActiveGrowthPet())
 	{
+#ifdef ENABLE_PET_EXP_BONUS
+		// Baerim: "Evcil hayvan EXP bonusu" of the worn pet / pet costume items
+		int iPetExpBonus = 0;
+		for (int iWear : { (int) WEAR_PET, (int) WEAR_COSTUME_PET })
+		{
+			LPITEM pPetItem = to->GetWear(iWear);
+			if (!pPetItem)
+				continue;
+			for (int i = 0; i < ITEM_APPLY_MAX_NUM; ++i)
+				if (pPetItem->GetProto()->aApplies[i].bType == APPLY_PET_EXP_BONUS)
+					iPetExpBonus += pPetItem->GetProto()->aApplies[i].lValue;
+		}
+		if (iPetExpBonus > 0)
+			iBaseExp += iBaseExp * iPetExpBonus / 100;
+#endif
 		to->GetActiveGrowthPet()->RewardEXP(EXP_TYPE_MOB, iBaseExp);
 		from->CreateFly(FLY_EXP, to->GetActiveGrowthPet()->GetGrowthPet());
 	}
@@ -4234,6 +4313,10 @@ class CFuncShoot
 
 			LPITEM pkBow, pkArrow;
 
+#ifdef ENABLE_DAMAGE_TRACE
+			DamageTrace::FHitScope damageTraceScope(m_me, pkVictim, m_bType == 0 ? (BYTE) DamageTrace::HIT_ARROW : m_bType);
+#endif
+
 			switch (m_bType)
 			{
 				case 0: // normal bow
@@ -4275,6 +4358,7 @@ class CFuncShoot
 						DWORD dwCurrentTime = get_dword_time();
 						if (IS_SPEED_HACK(m_me, pkVictim, dwCurrentTime))
 							iDam = 0;
+						DAMAGE_TRACE_STEP(m_me, pkVictim, "RULES", iDam);
 					}
 					else
 						iDam = CalcMeleeDamage(m_me, pkVictim);
@@ -4287,6 +4371,7 @@ class CFuncShoot
 #else
 					iDam = iDam * (100 - pkVictim->GetPoint(POINT_RESIST_BOW)) / 100;
 #endif
+					DAMAGE_TRACE_STEP(m_me, pkVictim, "WEAPON_RESIST", iDam);
 
 					//sys_log(0, "%s arrow %s dam %d", m_me->GetName(), pkVictim->GetName(), iDam);
 

@@ -57,10 +57,6 @@ import debugInfo
 import stringCommander
 import event
 
-# if app.ENABLE_GUILDRENEWAL_SYSTEM:
-	# import uiGuildPopup
-	# import uiGuildBank
-
 if app.ENABLE_RENEWAL_OFFLINESHOP:
 	import uiOfflineShopBuilder
 	import shop
@@ -162,6 +158,8 @@ class GameWindow(ui.ScriptWindow):
 
 		self.targetBoard = uiTarget.TargetBoard()
 		self.targetBoard.SetWhisperEvent(ui.__mem_func__(self.interface.OpenWhisperDialog))
+		if app.ENABLE_WIKI_SYSTEM:
+			self.targetBoard.SetWikiEvent(ui.__mem_func__(self.interface.SearchWikiForMob))
 		self.targetBoard.Hide()
 
 		self.console = consoleModule.ConsoleWindow()
@@ -320,6 +318,10 @@ class GameWindow(ui.ScriptWindow):
 
 		net.SendEnterGamePacket()
 
+		if app.ENABLE_DUNGEON_LIMIT_RENEWAL:
+			# computer identity for the dungeon PC daily limit (a hash, see app.GetPCIdentity)
+			net.SendChatPacket("/dungeon_info pc_id %s" % app.GetPCIdentity())
+
 		if app.ENABLE_DEFENSAWESHIP:
 			if background.GetCurrentMapName() == "defensawe_hydra":
 				self.__ShipMastHPShow()
@@ -345,6 +347,10 @@ class GameWindow(ui.ScriptWindow):
 			import advanced_options_runtime
 			advanced_options_runtime.Configure(game=None)
 		self.Hide()
+
+		if app.ENABLE_MOKOKO_SYSTEM:
+			import uiMokokoRewards
+			uiMokokoRewards.Destroy()
 
 		if app.ENABLE_AUTO_CLEAR_WHEN_LOGOUT:
 			if app.__AUTO_HUNT__:
@@ -523,6 +529,144 @@ class GameWindow(ui.ScriptWindow):
 			if self.interface:
 				self.interface.OpenRanking()
 
+	if app.ENABLE_TELEPORT_BAERIM:
+		def __TeleportMapResult(self, result, tpIdx):
+			import uiTeleportBaerim
+			uiTeleportBaerim.ShowResult(int(result), int(tpIdx))
+
+	if app.ENABLE_DAMAGE_TRACE:
+		# Baerim "Hasar Takibi" (server damage_trace.cpp): one recorded hit = Begin, Row x N, End
+		def __DamageTraceBegin(self, request, vid, hitType, count):
+			self.targetBoard.OnDamageTraceBegin(int(request), int(vid), int(hitType), int(count))
+
+		def __DamageTraceRow(self, request, index, key, before, after):
+			self.targetBoard.OnDamageTraceRow(int(request), int(index), key, long(before), long(after))
+
+		def __DamageTraceEnd(self, request, displayed, hpLoss):
+			self.targetBoard.OnDamageTraceEnd(int(request), int(displayed), int(hpLoss))
+
+	if app.ENABLE_MOKOKO_SYSTEM:
+		# Mokoko seeds: MokokoData / MokokoFound / MokokoRewards* / MokokoRewardResult (server mokoko.cpp)
+		def __MokokoData(self, found, total, pending, regions = ""):
+			import uiMokokoRewards
+			uiMokokoRewards.OnData(found, total, pending, regions)
+
+		def __MokokoFound(self, found, total, region, regionFound, regionTotal, pending = "0"):
+			import uiMokokoRewards
+			uiMokokoRewards.OnFound(found, total, region, regionFound, regionTotal, pending)
+
+		def __MokokoRewardsBegin(self, found, total):
+			import uiMokokoRewards
+			uiMokokoRewards.OnRewardsBegin(found, total)
+
+		def __MokokoRewardEntry(self, rewardID, rewardType, required, claimed, items = ""):
+			import uiMokokoRewards
+			uiMokokoRewards.OnRewardEntry(rewardID, rewardType, required, claimed, items)
+
+		def __MokokoRewardsEnd(self, pending):
+			import uiMokokoRewards
+			uiMokokoRewards.OnRewardsEnd(pending)
+
+		def __MokokoRewardResult(self, result, rewardID):
+			import uiMokokoRewards
+			uiMokokoRewards.OnRewardResult(result, rewardID)
+
+	if app.ENABLE_DUNGEON_WINDOW_BAERIM:
+		# DungeonWindowResult <code> <boss>: answer to /dungeon_info enter|test
+		def __DungeonWindowResult(self, result, bossIdx):
+			import uiDungeonBaerim
+			uiDungeonBaerim.ShowResult(int(result), int(bossIdx))
+
+		# Zindan Istatistikleri: DungeonStatRank <boss> <rank> <race> <rows>, DungeonMissionData, DungeonMissionResult
+		def __DungeonStatWindow(self):
+			if self.interface and getattr(self.interface, "wndDungeonTrack", None):
+				return self.interface.wndDungeonTrack
+			return None
+
+		def __DungeonStatRank(self, bossIdx, rankIdx, raceIdx, data):
+			window = self.__DungeonStatWindow()
+			if window:
+				window.OnStatRank(bossIdx, rankIdx, raceIdx, data)
+
+		def __DungeonMissionData(self, bossIdx, fastest, dps, completed, claimedMask, data):
+			window = self.__DungeonStatWindow()
+			if window:
+				window.OnMissionData(bossIdx, fastest, dps, completed, claimedMask, data)
+
+		def __DungeonMissionResult(self, result, bossIdx, no):
+			window = self.__DungeonStatWindow()
+			if window:
+				window.OnMissionResult(result, bossIdx, no)
+
+	if getattr(app, "ENABLE_WARDROBE_SYSTEM", 0):
+		# Wardrobe* server commands -> the wardrobe controller of the interface (uiwardrobe.WardrobeController)
+		def __WardrobeCommand(self, method, *args):
+			controller = self.interface.GetWardrobeController() if self.interface else None
+			if controller:
+				getattr(controller, method)(*args)
+
+		def __WardrobeCatalogBegin(self, serial, rows):
+			self.__WardrobeCommand("OnCatalogBegin", serial, rows)
+
+		def __WardrobeCatalogCat(self, serial, categoryId, key):
+			self.__WardrobeCommand("OnCatalogCategory", serial, categoryId, key)
+
+		def __WardrobeCatalogRows(self, serial, data):
+			self.__WardrobeCommand("OnCatalogRows", serial, data)
+
+		def __WardrobeCatalogEnd(self, serial):
+			self.__WardrobeCommand("OnCatalogEnd", serial)
+
+		def __WardrobeOutfitsBegin(self, serial, count, remembered, applied):
+			self.__WardrobeCommand("OnOutfitsBegin", serial, count, remembered, applied)
+
+		# stringCommander passes only the named arguments (no *args): the 9 looks are listed one by one
+		def __WardrobeOutfitRow(self, serial, slot, revision, nameHex, l0, l1, l2, l3, l4, l5, l6, l7, l8):
+			self.__WardrobeCommand("OnOutfitRow", serial, slot, revision, nameHex, l0, l1, l2, l3, l4, l5, l6, l7, l8)
+
+		def __WardrobeOutfitsEnd(self, serial):
+			self.__WardrobeCommand("OnOutfitsEnd", serial)
+
+		def __WardrobeResult(self, serial, code):
+			self.__WardrobeCommand("OnResult", serial, code)
+
+		def __WardrobeAppearance(self, l0, l1, l2, l3, l4, l5, l6, l7, l8):
+			self.__WardrobeCommand("OnAppearance", l0, l1, l2, l3, l4, l5, l6, l7, l8)
+
+		def __WardrobeOpenInventory(self, lookSlot):
+			if self.interface:
+				try:
+					self.interface.OpenWardrobeInventory(int(lookSlot))
+				except ValueError:
+					self.interface.OpenWardrobeInventory()
+
+		def __WardrobeProgress(self, costumes, level, totalExp, expInLevel, expPerLevel):
+			self.__WardrobeCommand("OnProgress", costumes, level, totalExp, expInLevel, expPerLevel)
+
+	if app.ENABLE_COSTUME_SHOP_BAERIM:
+		# CostumeShopClear / CostumeShopAdd <id,cat,vnum,c1,c2,c3,start,end;...> / CostumeShopOpen <server time> / CostumeShopResult <code>
+		def __CostumeShopClear(self):
+			if self.interface:
+				self.interface.CostumeShopClear()
+
+		def __CostumeShopAdd(self, data):
+			if self.interface:
+				self.interface.CostumeShopAdd(data)
+
+		def __CostumeShopOpen(self, serverTime):
+			if self.interface:
+				self.interface.CostumeShopOpen(int(serverTime))
+
+		def __CostumeShopResult(self, result):
+			if self.interface:
+				self.interface.CostumeShopResult(int(result))
+
+	if app.ENABLE_GLOBAL_RANKING:
+		# LoadRankData <page> <time> <category> <seconds to reset> <own value> <rows | empty>
+		def __LoadRankData(self, page, timeIdx, category, secondsToReset, ownValue, rankCmd):
+			if self.interface:
+				self.interface.LoadRankData(int(page), int(timeIdx), int(category), int(secondsToReset), long(ownValue), rankCmd)
+
 		def RankingClearData(self):
 			if self.interface:
 				self.interface.RankingClearData()
@@ -671,17 +815,11 @@ class GameWindow(ui.ScriptWindow):
 		onClickKeyDict[app.DIK_LCONTROL] = lambda: self.HideMouseImage()
 		onClickKeyDict[app.DIK_LSHIFT] = lambda: self.__SetQuickSlotMode()
 
-		#if app.ENABLE_GUILDRENEWAL_SYSTEM:
-		#	onClickKeyDict[app.DIK_TAB] = lambda: self.__PressTabKey()
-
 		if app.ENABLE_RANKING:
 			onPressKeyDict[app.DIK_J] = lambda : self.interface.OpenRanking()
 
 		self.onClickKeyDict=onClickKeyDict
 
-	if app.ENABLE_GUILDRENEWAL_SYSTEM:
-		def __PressTabKey(self):
-			self.interface.OpenGuildScoreWindow()
 
 	def __PressNumKey(self,num):
 		if app.IsPressed(app.DIK_LCONTROL) or app.IsPressed(app.DIK_RCONTROL):
@@ -713,21 +851,23 @@ class GameWindow(ui.ScriptWindow):
 							break
 	def	__PressHKey(self):
 		if app.IsPressed(app.DIK_LCONTROL) or app.IsPressed(app.DIK_RCONTROL):
-			net.SendChatPacket("/user_horse_ride")
+			net.SendChatPacket("/ride")	# Baerim: mount / dismount
 		else:
 			if app.ENABLE_WIKI_SYSTEM:
 				self.interface.OpenWikiWindow()
 
 	def	__PressBKey(self):
 		if app.IsPressed(app.DIK_LCONTROL) or app.IsPressed(app.DIK_RCONTROL):
-			net.SendChatPacket("/user_horse_back")
+			# Baerim: take the worn mount off
+			if player.GetItemIndex(item.EQUIPMENT_MOUNT):
+				net.SendItemUsePacket(item.EQUIPMENT_MOUNT)
 		else:
 			state = "EMOTICON"
 			self.interface.ToggleCharacterWindow(state)
 
 	def	__PressFKey(self):
 		if app.IsPressed(app.DIK_LCONTROL) or app.IsPressed(app.DIK_RCONTROL):
-			net.SendChatPacket("/user_horse_feed")
+			pass	# old horse system removed (Baerim mount: Ctrl+G)
 		else:
 			app.ZoomCamera(app.CAMERA_TO_POSITIVE)
 
@@ -971,15 +1111,6 @@ class GameWindow(ui.ScriptWindow):
 	def RefreshGuildGradePage(self):
 		self.interface.RefreshGuildGradePage()
 
-	if app.ENABLE_GUILDRENEWAL_SYSTEM:
-		def RefreshGuildBaseInfoPage(self):
-			self.interface.RefreshGuildBaseInfoPage()
-
-		def RefreshGuildBaseInfoPageBankGold(self):
-			self.interface.RefreshGuildBaseInfoPageBankGold()
-
-		def RefreshGuildWarInfoPage(self):
-			self.interface.RefreshGuildWarInfoPage()
 
 	def OnBlockMode(self, mode):
 		self.interface.OnBlockMode(mode)
@@ -1454,16 +1585,7 @@ class GameWindow(ui.ScriptWindow):
 	# END_OF_ITEM_MALL
 
 	## Guild
-	if app.ENABLE_GUILDBANK_LOG:
-		def OpenGuildBankInfo(self):
-			self.interface.OpenGuildBankInfo()
 
-		def GuildBankLogInfoRefresh(self):
-			self.interface.GuildBankLogInfoRefresh()
-
-	if app.ENABLE_GUILDRENEWAL_SYSTEM and app.ENABLE_GUILD_DONATE_ATTENDANCE:
-		def GuildDonateInfoRefresh(self):
-			self.interface.GuildDonateInfoRefresh()
 
 	def RecvGuildInviteQuestion(self, guildID, guildName):
 		import advanced_option_notifications
@@ -1491,24 +1613,6 @@ class GameWindow(ui.ScriptWindow):
 	def DeleteGuild(self):
 		self.interface.DeleteGuild()
 
-	# if app.ENABLE_GUILDRENEWAL_SYSTEM:
-		# def SetGuildWarType(self, index):
-			# self.interface.SetGuildWarType(index)
-
-		# def OpenGuildBankWindow(self, size):
-			# self.interface.OpenGuildBankWindow(size)
-
-		# def OpenGuildGoldInOutWindow(self, inout):
-			# self.interface.OpenGuildGoldInOutWindow(inout)
-
-		# def RefreshGuildBank(self):
-			# self.interface.RefreshGuildBank()
-
-		# def RefreshGuildBankInfo(self):
-			# self.interface.RefreshGuildBankInfo()
-
-		# def OpenGuildBankInfo(self):
-			# self.interface.OpenGuildBankInfo()
 
 	## Clock
 	def ShowClock(self, second):
@@ -2269,7 +2373,8 @@ class GameWindow(ui.ScriptWindow):
 	# END_OF_WEDDING
 
 	if app.ENABLE_MOB_DROP_INFO:
-		def BINARY_AddTargetMonsterDropInfo(self, raceNum, itemVnum, itemCount):
+		def BINARY_AddTargetMonsterDropInfo(self, raceNum, itemVnum, itemCount, chance = 0):
+			# chance: drop chance in 1/1,000,000 (ENABLE_TARGET_DROP_CHANCE), shown as a rarity label on the "?" board
 			if not raceNum in uiTarget.MONSTER_INFO_DATA:
 				uiTarget.MONSTER_INFO_DATA.update({raceNum : {}})
 				uiTarget.MONSTER_INFO_DATA[raceNum].update({"items" : []})
@@ -2288,6 +2393,7 @@ class GameWindow(ui.ScriptWindow):
 					if curItem.has_key("vnum_list") and curItem["vnum_list"][0] / 10 * 10 == itemVnum / 10 * 10:
 						if not (itemVnum in curItem["vnum_list"]):
 							curItem["vnum_list"].append(itemVnum)
+						curItem["chance"] = max(curItem.get("chance", 0), chance)
 						return
 				elif isMetin:
 					if curItem.has_key("vnum_list"):
@@ -2295,15 +2401,17 @@ class GameWindow(ui.ScriptWindow):
 					if curItem.has_key("vnum_list") and (baseVnum - baseVnum%1000) == (itemVnum - itemVnum%1000):
 						if not (itemVnum in curItem["vnum_list"]):
 							curItem["vnum_list"].append(itemVnum)
+						curItem["chance"] = max(curItem.get("chance", 0), chance)
 						return
 				else:
 					if curItem.has_key("vnum") and curItem["vnum"] == itemVnum and curItem["count"] == itemCount:
+						curItem["chance"] = max(curItem.get("chance", 0), chance)
 						return
 
 			if isUpgradeable or isMetin:
-				curList.append({"vnum_list":[itemVnum], "count":itemCount})
+				curList.append({"vnum_list":[itemVnum], "count":itemCount, "chance":chance})
 			else:
-				curList.append({"vnum":itemVnum, "count":itemCount})
+				curList.append({"vnum":itemVnum, "count":itemCount, "chance":chance})
 
 		def BINARY_RefreshTargetMonsterDropInfo(self, raceNum):
 			self.targetBoard.RefreshMonsterInfoBoard()
@@ -2697,9 +2805,10 @@ class GameWindow(ui.ScriptWindow):
 			import uiGuildApplication
 			self.interface.OpenGuildJoinNotification(int(GID), name.replace("\x1f", " "), uiGuildApplication.Decode(desc))
 
-	def ServerCommand_MessengerInfo(self, group, name, level, race, channel, mapIndex, lastSeen):
+	def ServerCommand_MessengerInfo(self, group, name, level, race, channel, mapIndex, lastSeen, countryFlag = "-"):
 		if app.ENABLE_MESSENGER_DETAILS and self.interface and self.interface.wndMessenger:
 			if hasattr(self.interface.wndMessenger, "OnMemberInfo"):
+				# countryFlag (ENABLE_COUNTRY_FLAG): Baerim shows no flag in the friend / guild list
 				self.interface.wndMessenger.OnMemberInfo(int(group), name, int(level), int(race), int(channel), int(mapIndex), int(lastSeen))
 
 	def AnkaGlobalCooldown(self, seconds):
@@ -2799,9 +2908,9 @@ class GameWindow(ui.ScriptWindow):
 			self.interface.bigBoardControl.SetTip(message)
 
 	if app.ENABLE_EXTENDED_WHISPER_DETAILS and app.ENABLE_MULTI_LANGUAGE_SYSTEM:
-		def BINARY_RecieveWhisperDetails(self, name, country):
+		def BINARY_RecieveWhisperDetails(self, name, country, countryFlag = ""):
 			if self.interface:
-				self.interface.RecieveWhisperDetails(name, country)
+				self.interface.RecieveWhisperDetails(name, country, countryFlag)
 
 	def BINARY_AppendNotifyMessage(self, type):
 		if not type in localeInfo.NOTIFY_MESSAGE:
@@ -2830,43 +2939,23 @@ class GameWindow(ui.ScriptWindow):
 	def BINARY_GuildWar_OnSendDeclare(self, guildID):
 		pass
 
-	if app.ENABLE_GUILDRENEWAL_SYSTEM:
-		def BINARY_GuildWar_OnRecvDeclare(self, guildID, warType, winType, ScoreType, TimeType):
-			mainCharacterName = player.GetMainCharacterName()
-			masterName = guild.GetGuildMasterName()
-			if mainCharacterName == masterName:
-				self.__GuildWar_OpenAskDialog(guildID, warType, winType, ScoreType, TimeType)
+	def BINARY_GuildWar_OnRecvDeclare(self, guildID, warType):
+		mainCharacterName = player.GetMainCharacterName()
+		masterName = guild.GetGuildMasterName()
+		if mainCharacterName == masterName:
+			self.__GuildWar_OpenAskDialog(guildID, warType)
 
-		def BINARY_GuildWar_OnRecvPoint(self, gainGuildID, opponentGuildID, point, winpoint):
-			self.interface.OnRecvGuildWarPoint(gainGuildID, opponentGuildID, point, winpoint)
-	else:
-		def BINARY_GuildWar_OnRecvDeclare(self, guildID, warType):
-			mainCharacterName = player.GetMainCharacterName()
-			masterName = guild.GetGuildMasterName()
-			if mainCharacterName == masterName:
-				self.__GuildWar_OpenAskDialog(guildID, warType)
-
-		def BINARY_GuildWar_OnRecvPoint(self, gainGuildID, opponentGuildID, point):
-			self.interface.OnRecvGuildWarPoint(gainGuildID, opponentGuildID, point)
+	def BINARY_GuildWar_OnRecvPoint(self, gainGuildID, opponentGuildID, point):
+		self.interface.OnRecvGuildWarPoint(gainGuildID, opponentGuildID, point)
 
 	def BINARY_GuildWar_OnStart(self, guildSelf, guildOpp):
 		self.interface.OnStartGuildWar(guildSelf, guildOpp)
 
 	def BINARY_GuildWar_OnEnd(self, guildSelf, guildOpp):
 		self.interface.OnEndGuildWar(guildSelf, guildOpp)
-		if app.ENABLE_SECOND_GUILDRENEWAL_SYSTEM:
-			if self.guildWarQuestionDialog:
-				self.__GuildWar_CloseAskDialog()
 
-	if app.ENABLE_GUILDRENEWAL_SYSTEM:
-		def BINARY_BettingGuildWar_SetObserverMode(self, isEnable, isButtonShow=None):
-			# Eðer isButtonShow verilmemiþse varsayýlan olarak True kullan
-			if isButtonShow is None:
-				isButtonShow = True
-			self.interface.BINARY_SetObserverMode(isEnable, isButtonShow)
-	else:
-		def BINARY_BettingGuildWar_SetObserverMode(self, isEnable):
-			self.interface.BINARY_SetObserverMode(isEnable)
+	def BINARY_BettingGuildWar_SetObserverMode(self, isEnable):
+		self.interface.BINARY_SetObserverMode(isEnable)
 
 	def BINARY_BettingGuildWar_UpdateObserverCount(self, observerCount):
 		self.interface.wndMiniMap.UpdateObserverCount(observerCount)
@@ -2881,39 +2970,21 @@ class GameWindow(ui.ScriptWindow):
 		self.interface.UpdateMemberCount(guildID1, memberCount1, guildID2, memberCount2)
 		self.interface.wndMiniMap.UpdateObserverCount(observerCount)
 
-	if app.ENABLE_GUILDRENEWAL_SYSTEM:
-		def __GuildWar_OpenAskDialog(self, guildID, warType, winType, ScoreType, TimeType):
-			guildName = guild.GetGuildName(guildID)
+	def __GuildWar_OpenAskDialog(self, guildID, warType):
+		guildName = guild.GetGuildName(guildID)
 
-			# REMOVED_GUILD_BUG_FIX
-			if "Noname" == guildName:
-				return
-			# END_OF_REMOVED_GUILD_BUG_FIX
+		# REMOVED_GUILD_BUG_FIX
+		if "Noname" == guildName:
+			return
+		# END_OF_REMOVED_GUILD_BUG_FIX
 
-			import uiGuild
-			questionDialog = uiGuild.AcceptGuildWarDialog()
-			questionDialog.SAFE_SetAcceptEvent(self.__GuildWar_OnAccept)
-			questionDialog.SAFE_SetCancelEvent(self.__GuildWar_OnDecline)
-			## [guild_renewal_war]
-			questionDialog.Open(guildName, warType, winType, ScoreType, TimeType)
+		import uiGuild
+		questionDialog = uiGuild.AcceptGuildWarDialog()
+		questionDialog.SAFE_SetAcceptEvent(self.__GuildWar_OnAccept)
+		questionDialog.SAFE_SetCancelEvent(self.__GuildWar_OnDecline)
+		questionDialog.Open(guildName, warType)
 
-			self.guildWarQuestionDialog = questionDialog
-	else:
-		def __GuildWar_OpenAskDialog(self, guildID, warType):
-			guildName = guild.GetGuildName(guildID)
-
-			# REMOVED_GUILD_BUG_FIX
-			if "Noname" == guildName:
-				return
-			# END_OF_REMOVED_GUILD_BUG_FIX
-
-			import uiGuild
-			questionDialog = uiGuild.AcceptGuildWarDialog()
-			questionDialog.SAFE_SetAcceptEvent(self.__GuildWar_OnAccept)
-			questionDialog.SAFE_SetCancelEvent(self.__GuildWar_OnDecline)
-			questionDialog.Open(guildName, warType)
-
-			self.guildWarQuestionDialog = questionDialog
+		self.guildWarQuestionDialog = questionDialog
 
 	def __GuildWar_CloseAskDialog(self):
 		self.guildWarQuestionDialog.Close()
@@ -3092,6 +3163,47 @@ class GameWindow(ui.ScriptWindow):
 
 		if app.ENABLE_RENEWAL_TELEPORT_SYSTEM:
 			serverCommandList["OpenWarpWindow"] = self.__OpenWarpWindow
+		if app.ENABLE_TELEPORT_BAERIM:
+			serverCommandList["TeleportMapResult"] = self.__TeleportMapResult
+		if app.ENABLE_DAMAGE_TRACE:
+			serverCommandList["DamageTraceBegin"] = self.__DamageTraceBegin
+			serverCommandList["DamageTraceRow"] = self.__DamageTraceRow
+			serverCommandList["DamageTraceEnd"] = self.__DamageTraceEnd
+		if app.ENABLE_MOKOKO_SYSTEM:
+			serverCommandList["MokokoData"] = self.__MokokoData
+			serverCommandList["MokokoFound"] = self.__MokokoFound
+			serverCommandList["MokokoRewardsBegin"] = self.__MokokoRewardsBegin
+			serverCommandList["MokokoRewardEntry"] = self.__MokokoRewardEntry
+			serverCommandList["MokokoRewardsEnd"] = self.__MokokoRewardsEnd
+			serverCommandList["MokokoRewardResult"] = self.__MokokoRewardResult
+
+		if app.ENABLE_GLOBAL_RANKING:
+			serverCommandList["LoadRankData"] = self.__LoadRankData
+
+		if getattr(app, "ENABLE_WARDROBE_SYSTEM", 0):
+			serverCommandList["WardrobeCatalogBegin"] = self.__WardrobeCatalogBegin
+			serverCommandList["WardrobeCatalogCat"] = self.__WardrobeCatalogCat
+			serverCommandList["WardrobeCatalogRows"] = self.__WardrobeCatalogRows
+			serverCommandList["WardrobeCatalogEnd"] = self.__WardrobeCatalogEnd
+			serverCommandList["WardrobeOutfitsBegin"] = self.__WardrobeOutfitsBegin
+			serverCommandList["WardrobeOutfitRow"] = self.__WardrobeOutfitRow
+			serverCommandList["WardrobeOutfitsEnd"] = self.__WardrobeOutfitsEnd
+			serverCommandList["WardrobeResult"] = self.__WardrobeResult
+			serverCommandList["WardrobeAppearance"] = self.__WardrobeAppearance
+			serverCommandList["WardrobeProgress"] = self.__WardrobeProgress
+			serverCommandList["OpenWardrobeInventory"] = self.__WardrobeOpenInventory
+
+		if app.ENABLE_COSTUME_SHOP_BAERIM:
+			serverCommandList["CostumeShopClear"] = self.__CostumeShopClear
+			serverCommandList["CostumeShopAdd"] = self.__CostumeShopAdd
+			serverCommandList["CostumeShopOpen"] = self.__CostumeShopOpen
+			serverCommandList["CostumeShopResult"] = self.__CostumeShopResult
+
+		if app.ENABLE_DUNGEON_WINDOW_BAERIM:
+			serverCommandList["DungeonWindowResult"] = self.__DungeonWindowResult
+			serverCommandList["DungeonStatRank"] = self.__DungeonStatRank
+			serverCommandList["DungeonMissionData"] = self.__DungeonMissionData
+			serverCommandList["DungeonMissionResult"] = self.__DungeonMissionResult
 
 		if app.ENABLE_TITLE_SYSTEM:
 			serverCommandList["TitleSyncReset"] = self.__TitleSystemSyncReset
@@ -3105,10 +3217,6 @@ class GameWindow(ui.ScriptWindow):
 			serverCommandList["RECV_CollectionRefresh"] = self.__RecvCollectionRefresh
 			serverCommandList["RECV_CollectionIncrease"] = self.__RecvCollectionIncrease
 
-		if app.ENABLE_SECOND_GUILDRENEWAL_SYSTEM and app.ENABLE_GUILD_REQUEST:
-			serverCommandList["clear_guildranking"] = self.__ClearGuildRanking
-			serverCommandList["clear_applicant"] = self.__ClearApplicant
-			serverCommandList["clear_applicantguild"] = self.__ClearApplicantGuild
 
 		if app.ENABLE_REMOTE_SHOP_SYSTEM:
 			serverCommandList["openremoteshop"] = self.OpenRemoteShop
@@ -3134,8 +3242,6 @@ class GameWindow(ui.ScriptWindow):
 		if app.ENABLE_SPIRIT_STONE_READING:
 			serverCommandList["ruhtasiekranac"] = self.ruhcac
 
-		if app.ENABLE_SECOND_GUILDRENEWAL_SYSTEM:
-			serverCommandList["guild_war"] = self.__Check_Guild_War
 
 		if app.ENABLE_SKILL_BOOK_READING:
 			serverCommandList["bkekranac"] = self.bkac
@@ -3400,23 +3506,7 @@ class GameWindow(ui.ScriptWindow):
 					if len(second_list) == 2:
 						constInfo.SetFlag("%d_cooldown"%int(second_list[0]),int(second_list[1])+app.GetGlobalTimeStamp())
 
-	if app.ENABLE_SECOND_GUILDRENEWAL_SYSTEM:
-		def __Check_Guild_War(self, enable):
-			if self.interface:
-				if int(enable) == 1:
-					self.interface.ShowGuildWarButton()
-				else:
-					self.interface.HideGuildWarButton()
 
-	if app.ENABLE_SECOND_GUILDRENEWAL_SYSTEM and app.ENABLE_GUILD_REQUEST:
-		def __ClearGuildRanking(self):
-			guild.ClearGuildRanking()
-
-		def __ClearApplicant(self):
-			guild.ClearApplicant()
-
-		def __ClearApplicantGuild(self):
-			guild.ClearApplicantGuild()
 
 	if app.ENABLE_DUNGEON_INFO:
 		def OpenTableDungeonInfo(self):
@@ -4131,10 +4221,6 @@ class GameWindow(ui.ScriptWindow):
 								if gui.IsChild("EXPGauge_0%d" % j):
 									gui.GetChild("EXPGauge_0%d" % j).SetDiffuseColor(201, 160, 51, 1)
 
-	if app.ENABLE_SECOND_GUILDRENEWAL_SYSTEM and app.ENABLE_GUILD_REQUEST:
-		def RefreshGuildRankingList(self, issearch):
-			if self.interface:
-				self.interface.RefreshGuildRankingList(issearch)
 
 	if app.ENABLE_RENEWAL_SPECIAL_CHAT:
 		def OnPickItem(self, item):
@@ -4433,10 +4519,6 @@ class GameWindow(ui.ScriptWindow):
 			if constInfo.HUNTING_MAIN_UI_SHOW == 0:
 				constInfo.HUNTING_BUTTON_FLASH = 1
 
-	if app.ENABLE_RIDING_EXTENDED:
-		def OpenMountUpGrade(self):
-			if self.interface:
-				self.interface.MountUpGradeWindow()
 
 	if app.ENABLE_BIOLOGIST_SYSTEM:
 		def __BiyologMission(self, mission, missionState, givenCount, needCount, remainingTime):

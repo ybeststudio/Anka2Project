@@ -131,7 +131,14 @@ PyObject *renderTargetSetMount(PyObject *poSelf, PyObject *poArgs)
 	if (target)
 	{
 		if (target->IsReady())
+		{
 			target->GetModel()->MountHorse(iItemVnum);
+#ifdef ENABLE_COSTUME_SHOP_BAERIM
+			// MountHorse only switches the motion mode: seat the rider on the saddle and play the riding wait motion
+			target->GetModel()->AttachHorseSaddle();
+			target->GetModel()->Refresh(CRaceMotionData::NAME_WAIT, true);
+#endif
+		}
 	}
 	return Py_BuildNone();
 }
@@ -397,6 +404,78 @@ PyObject *renderSetZoom(PyObject *poSelf, PyObject *poArgs)
 	return Py_BuildNone();
 }
 
+#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#include "PythonSkill.h"
+// renderTarget.UseSkill(index, skillVnum, grade): plays the skill motion (and its effects) on the preview model
+PyObject *renderTargetUseSkill(PyObject *poSelf, PyObject *poArgs)
+{
+	int iIndex, iSkill, iGrade;
+	if (!PyTuple_GetInteger(poArgs, 0, &iIndex) || !PyTuple_GetInteger(poArgs, 1, &iSkill) || !PyTuple_GetInteger(poArgs, 2, &iGrade))
+		return Py_BadArgument();
+
+	const std::shared_ptr<CRenderTarget> target = CRenderTargetManager::Instance().GetRenderTarget(iIndex);
+	if (!target || !target->IsReady())
+		return Py_BuildNone();
+
+	CPythonSkill::SSkillData *pSkillData;
+	if (!CPythonSkill::Instance().GetSkillData(iSkill, &pSkillData) || pSkillData->IsNoMotion())
+		return Py_BuildNone();
+
+	target->GetModel()->NEW_UseSkill(iSkill, pSkillData->GetSkillMotionIndex(iGrade), 1, false);
+	return Py_BuildNone();
+}
+
+// renderTarget.SetShining(index, slot 0 weapon / 1 armor, vnum): glow of an ITEM_SHINING item on the preview model
+PyObject *renderTargetSetShining(PyObject *poSelf, PyObject *poArgs)
+{
+	int iIndex, iSlot, iVnum;
+	if (!PyTuple_GetInteger(poArgs, 0, &iIndex) || !PyTuple_GetInteger(poArgs, 1, &iSlot) || !PyTuple_GetInteger(poArgs, 2, &iVnum))
+		return Py_BadArgument();
+
+	const std::shared_ptr<CRenderTarget> target = CRenderTargetManager::Instance().GetRenderTarget(iIndex);
+	if (target && target->IsReady())
+		target->GetModel()->SetShining(static_cast<BYTE>(iSlot), static_cast<DWORD>(iVnum));
+	return Py_BuildNone();
+}
+
+// renderTarget.SetTransparent(index): see-through preview (no background, alpha texture)
+PyObject *renderTargetSetTransparent(PyObject *poSelf, PyObject *poArgs)
+{
+	int iIndex;
+	if (!PyTuple_GetInteger(poArgs, 0, &iIndex))
+		return Py_BadArgument();
+
+	const std::shared_ptr<CRenderTarget> target = CRenderTargetManager::Instance().GetRenderTarget(iIndex);
+	if (target)
+		target->SetTransparent();
+	return Py_BuildNone();
+}
+
+// renderTarget.CopyMainAffects(index): keeps the visible affects (active skill buffs) of the preview model equal to the own character
+PyObject *renderTargetCopyMainAffects(PyObject *poSelf, PyObject *poArgs)
+{
+	int iIndex;
+	if (!PyTuple_GetInteger(poArgs, 0, &iIndex))
+		return Py_BadArgument();
+
+	const std::shared_ptr<CRenderTarget> target = CRenderTargetManager::Instance().GetRenderTarget(iIndex);
+	CInstanceBase* pMain = CPythonCharacterManager::Instance().GetMainInstancePtr();
+	if (!target || !target->IsReady() || !pMain)
+		return Py_BuildNone();
+
+	// SetAffectFlagContainer attaches / detaches only the effects that differ from the model's current flags
+	CAffectFlagContainer kFlags;
+	for (UINT eAffect = 0; eAffect < CInstanceBase::AFFECT_NUM; ++eAffect)
+	{
+		if (eAffect != CInstanceBase::AFFECT_INVISIBILITY && pMain->IsAffect(eAffect))
+			kFlags.Set(eAffect, true);
+	}
+	target->GetModel()->SetAffectFlagContainer(kFlags);
+	return Py_BuildNone();
+}
+#endif
+
+
 void initRenderTarget()
 {
 	static PyMethodDef s_methods[] =
@@ -426,6 +505,12 @@ void initRenderTarget()
 		{"Zoom", renderZoomCamera, METH_VARARGS },
 		{"SetZoom", renderSetZoom, METH_VARARGS },
 		{"SetScale", renderSetScale, METH_VARARGS },
+#ifdef ENABLE_COSTUME_SHOP_BAERIM
+		{"UseSkill", renderTargetUseSkill, METH_VARARGS },
+		{"SetShining", renderTargetSetShining, METH_VARARGS },
+		{"CopyMainAffects", renderTargetCopyMainAffects, METH_VARARGS },
+		{"SetTransparent", renderTargetSetTransparent, METH_VARARGS },
+#endif
 		{"RotateEyeAroundTarget", renderRotateEyeAroundTarget, METH_VARARGS },
 
 		{nullptr, nullptr, 0},

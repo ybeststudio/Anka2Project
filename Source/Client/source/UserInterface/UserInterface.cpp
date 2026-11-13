@@ -452,9 +452,6 @@ bool RunMainScript(CPythonLauncher& pyLauncher, const char *lpCmdLine)
 #ifdef ENABLE_OFFLINESHOP_SEARCH_SYSTEM
 	initprivateShopSearch();
 #endif
-#ifdef ENABLE_RIDING_EXTENDED
-	initmountupgrade();
-#endif
 #ifdef ENABLE_DUNGEON_INFO
 	intdungeoninfo();
 #endif

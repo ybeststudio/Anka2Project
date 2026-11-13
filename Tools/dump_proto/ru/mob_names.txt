@@ -1720,7 +1720,7 @@ VNUM	LOCALE_NAME
 9013	Торговка иллюзиями
 9014	Торговка
 9100	Цветок бури
-9101	Цветок мощи
+9101	Mokoko
 9102	Цветок мощи (огонь)
 9103	Цветок мощи (лед)
 9104	Цветок мощи (молния)
@@ -3165,3 +3165,174 @@ VNUM	LOCALE_NAME
 60007	Помощник по призыву
 34900	Buffi
 34901	Buffi
+6311	Ochao Bodyguard
+899	Tiger Shop
+6228	Flame Guardian
+6230	Dragon Statue
+6605	Nemere Infernal
+6606	Razador Infernal
+9015	Helm
+9016	Force Field
+9018	Hydra Chest
+9035	Monk Milbon
+9566	Mutant Bee
+9571	Mutant Snake
+9577	Mutant Scorpion
+9578	Burning Dragon
+9773	Zodiac Tritonicic Wizard
+9774	Zodiac Tritonicic Hunter
+9775	Zodiac Tritonicic Usturac
+9776	Zodiac Red Thief Amazon
+9777	Zodiac Red Thief Assassin
+9778	Zodiac Red Thief Magician
+9779	Zodiac Red Thief Executioner
+9780	Zodiac Black General
+9781	Zodiac Crab Warrior
+9782	Zodiac Scorpion Marksman
+9783	Zodiac Shrimp Soldier
+9837	You Officer
+9838	Zodiac
+9860	Hai Portal
+9861	Xu Portal
+9862	You Portal
+9863	Shen Portal
+9864	Wei Portal
+9865	Wu Portal
+9866	Si Portal
+9867	Chen Portal
+9868	Mao Portal
+9869	Yin Portal
+9870	Chou Portal
+9871	Zi Portal
+9500	Merchant
+9501	Turn Sung Mahi
+9502	Sung Mahi
+9503	Hell Tower Demon Stone
+9504	Suflet Impietrit Turn
+9505	Tower's Bowman
+9507	Little White Huashin
+9440	Tower Necromant(Darkness)
+9441	Tower Slayer(Darkness)
+9442	Tower Grand Master(Darkness)
+9443	Tower Berserker(Darkness)
+9444	Tower Warlock(Darkness)
+9445	Tower Wolf(Darkness)
+9446	Tower Brusier(Darkness)
+9450	Tower Necromant(Fire)
+9451	Tower Slayer(Fire)
+9452	Tower Grand Master(Fire)
+9453	Tower Berserker(Fire)
+9454	Tower Warlock(Fire)
+9455	Tower Wolf(Fire)
+9456	Tower Brusier(Fire)
+9460	Tower Necromant(Ice)
+9461	Tower Slayer(Ice)
+9462	Tower Grand Master(Ice)
+9463	Tower Berserker(Ice)
+9464	Tower Warlock(Ice)
+9465	Tower Wolf(Ice)
+9466	Tower Brusier(Ice)
+9470	Tower Necromant(Lightning)
+9471	Tower Slayer(Lightning)
+9472	Tower Grand Master(Lightning)
+9473	Tower Berserker(Lightning)
+9474	Tower Warlock(Lightning)
+9475	Tower Wolf(Lightning)
+9476	Tower Brusier(Lightning)
+9480	Tower Necromant(Wind)
+9481	Tower Slayer(Wind)
+9482	Tower Grand Master(Wind)
+9483	Tower Berserker(Wind)
+9484	Tower Warlock(Wind)
+9485	Tower Wolf(Wind)
+9486	Tower Brusier(Wind)
+9490	Tower Necromant(Earth)
+9491	Tower Slayer(Earth)
+9492	Tower Grand Master(Earth)
+9493	Tower Berserker(Earth)
+9494	Tower Warlock(Earth)
+9495	Tower Wolf(Earth)
+9496	Tower Brusier(Earth)
+9393	Costume Tailor
+9477	Armor Dummy
+20905	Abyss Warrior
+20955	White Samurai Mount
+20956	Green Phantom Mount
+20958	Black Sakura Mount
+20959	Imperial Paladin Mount
+34240	Dark Symbiote Pet
+34241	Ghost Rider Pet
+34242	Haunted Vanguard Pet
+34243	Prism Gold Pet
+34244	Golden Desert Pet
+34248	Black Sakura Pet
+34249	Imperial Paladin Pet
+34250	Bebek Vah?i Uzman
+34251	Bebek Siyah Ork
+34252	Bebek ?l?m Mele?i
+34253	Bebek Alev Kral
+34254	Bebek Kaplumba?a
+34255	Bebek Buz Cad?s?
+34256	Bebek Jotun
+34257	Bebek Dokuz Kuyruk
+34258	Bebek Barones
+34259	Bebek Krali?e ?r?mcek
+34260	Bebek Tartaros
+34261	Bebek Sar? Kaplan Hayaleti
+34262	Ballerina Cappuccina
+34263	Bombardiro Crocodilo
+34264	Paytak Y?zba??
+34265	Demagorgon
+34266	K???k Siyah ?elikli Sava???
+34267	K???k Siyah R?zgar ?aman
+34268	MC Ping
+34269	Salamino Pinguino
+20960	Ay Bek?isi
+20961	F?rt?na Ruhu
+20962	Hayalet Qilin
+20963	Bambu Gardiyan?
+20964	Alt?n Binek
+20965	Kara Binek
+20966	Yabani Binek
+20967	Saf Melek Bine?i
+20968	Cehennem H?k?mdar? Bine?i
+20969	Beyaz Hayalet Bine?i
+20970	Gelgitli Yaz Bine?i
+20971	Alt?n Azrail Bine?i
+20972	Cehennem Tohumu Bine?i
+20973	K?z?l H?rs?z Bine?i
+20974	Beyaz Alt?n Binek
+20975	Gen? B?y?c? Evcil Bine?i
+20976	Sakura ??l? Bine?i
+20977	Obsidyen Ejderha Bine?i
+20978	G?k Muhaf?z? Bine?i
+20979	Kiraz ?i?e?i Bine?i
+20980	Siyah ?i?ek Bine?i
+20981	Astral ?ovalye Bine?i
+20982	Karanl?k Simbiyot Bine?i
+20983	Beyaz ?elik Bine?i
+20984	K?rm?z? Korku Bine?i
+20985	Buzul Hwang Bine?i
+30350	Costumed Warrior
+30351	Costumed Sura
+30352	Costumed Ninja
+30353	Costumed Shaman
+30354	Costumed Warrior
+30355	Costumed Sura
+30356	Costumed Ninja
+30357	Costumed Shaman
+34270	Saf Melek Evcil Hayvan?
+34271	Beyaz Hayalet Evcil Hayvan?
+34272	Gelgitli Yaz Evcil Hayvan?
+34273	Alt?n Azrail Evcil Hayvan?
+34274	Cehennem Tohumu Evcil Hayvan?
+34275	K?z?l H?rs?z Evcil Hayvan?
+34276	Beyaz Alt?n Evcil Hayvan?
+34277	Gen? B?y?c? Evcil Hayvan?
+34278	Sakura ??l? Evcil Hayvan?
+34279	Obsidyen Ejderha Evcil Hayvan?
+34280	G?k Muhaf?z? Evcil Hayvan?
+34281	Karanl?k Simbiyot Peti
+34282	Beyaz ?elik Peti
+34283	Alt?n Evcil Hayvan
+34284	Kara Evcil Hayvan

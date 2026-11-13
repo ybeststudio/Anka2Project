@@ -148,6 +148,10 @@ CActorInstance* CInstanceBase::SHORSE::GetActorPtr()
 
 UINT CInstanceBase::SHORSE::GetLevel()
 {
+#ifdef ENABLE_MOUNT_ATTACK_FIX
+	// the old horse levels are gone (Baerim mount system): every mount counts as a full level mount
+	return m_pkActor ? 3 : 0;
+#endif
 	if (m_pkActor)
 	{
 		DWORD mount = m_pkActor->GetRace();
@@ -167,11 +171,6 @@ UINT CInstanceBase::SHORSE::GetLevel()
 			case 20107:
 			case 20108:
 			case 20109:
-#ifdef ENABLE_RIDING_EXTENDED
-			case 20149:
-			case 20150:
-			case 20151:
-#endif
 			case 20110:
 			case 20111:
 			case 20112:
@@ -348,10 +347,7 @@ bool CInstanceBase::SHORSE::CanUseSkill()
 
 bool CInstanceBase::SHORSE::CanAttack()
 {
-	if (IsMounting())
-		if (GetLevel()<=1)
-			return false;
-
+	// Baerim mount system: attacking is allowed on every mount
 	return true;
 }
 
@@ -967,6 +963,9 @@ bool CInstanceBase::Create(const SCreateData& c_rkCreateData)
 	{
 		SetHair(c_rkCreateData.m_dwHair);
 		SetWeapon(c_rkCreateData.m_dwWeapon);
+#ifdef ENABLE_COSTUME_GLOW_TABLE
+		m_dwWeaponGlowRetryTime = ELTimer_GetMSec() + 1000;
+#endif
 #ifdef ENABLE_SHINING_SYSTEM
 		for (BYTE i = 0; i < 2; ++i)
 			SetShining(i, c_rkCreateData.m_adwShining[i]);
@@ -980,6 +979,9 @@ bool CInstanceBase::Create(const SCreateData& c_rkCreateData)
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
 		SetLanguage(c_rkCreateData.m_bLanguage);
 		SetLanguage2(c_rkCreateData.m_bLanguage2);
+#endif
+#ifdef ENABLE_COUNTRY_FLAG
+		SetCountryFlag(c_rkCreateData.m_szCountryFlag);
 #endif
 #ifdef ENABLE_SKILL_COLOR_SYSTEM
 		ChangeSkillColor(*c_rkCreateData.m_dwSkillColor);
@@ -1268,6 +1270,20 @@ bool CInstanceBase::SetRace(DWORD eRace)
 
 	if (!m_GraphicThingInstance.SetRace(eRace))
 		return false;
+
+#ifdef ENABLE_SHINING_SYSTEM
+	// SetRace destroyed every attached effect: forget their ids (they would detach reused ids later)
+	m_weaponShiningEffects[0] = m_weaponShiningEffects[1] = 0;
+	m_armorShiningEffect = 0;
+#endif
+#ifdef ENABLE_COSTUME_GLOW_TABLE
+	memset(m_adwCostumeGlowArmor, 0, sizeof(m_adwCostumeGlowArmor));
+	memset(m_adwCostumeGlowWeapon, 0, sizeof(m_adwCostumeGlowWeapon));
+	m_dwWeaponGlowRetryTime = 0;
+#endif
+#ifdef ENABLE_EFFECT_MODEL_ITEM
+	m_dwAcceModelEffect = 0;
+#endif
 
 	if (!__FindRaceType(m_dwRace, &m_eRaceType))
 		m_eRaceType=CActorInstance::TYPE_PC;
@@ -2227,6 +2243,14 @@ int g_iAccumulationTime = 0;
 
 void CInstanceBase::Update()
 {
+#ifdef ENABLE_COSTUME_GLOW_TABLE
+	if (m_dwWeaponGlowRetryTime && ELTimer_GetMSec() >= m_dwWeaponGlowRetryTime)
+	{
+		m_dwWeaponGlowRetryTime = 0;
+		if (m_awPart[CRaceData::PART_WEAPON])
+			__RefreshCostumeGlow(true);
+	}
+#endif
     const auto& options = CPythonSystem::Instance();
     auto* mainActor = CPythonCharacterManager::Instance().GetMainInstancePtr();
     const bool otherPlayer = IsPC() && !__IsMainInstance() && mainActor;
@@ -3341,6 +3365,21 @@ void CInstanceBase::ChangeHair(DWORD eHair)
 
 void CInstanceBase::SetArmor(DWORD dwArmor)
 {
+#ifdef ENABLE_COSTUME_GLOW_TABLE
+	m_dwCostumeGlowArmor = dwArmor;
+	struct SGlowRefresh
+	{
+		CInstanceBase* p;
+		~SGlowRefresh()	// after the shape is set, on every return path
+		{
+			p->__RefreshCostumeGlow(false);
+			// a new body shape drops the effects on the weapon bones (an effect weapon vanished after a warp,
+			// when the update packet changed the armor right after the character was created)
+			if (p->m_awPart[CRaceData::PART_WEAPON])
+				p->__RefreshCostumeGlow(true);
+		}
+	} glowRefresh = { this };
+#endif
 	DWORD dwShape;
 	if (__ArmorVnumToShape(dwArmor, &dwShape))
 	{
@@ -3397,6 +3436,11 @@ bool CInstanceBase::SetAcce(DWORD dwAcce)
 		return false;
 
 	ClearAcceEffect();
+#ifdef ENABLE_EFFECT_MODEL_ITEM
+	if (m_dwAcceModelEffect)
+		__DetachEffect(m_dwAcceModelEffect);
+	m_dwAcceModelEffect = 0;
+#endif
 
 	float fSpecular = 65.0f;
 
@@ -3424,6 +3468,22 @@ bool CInstanceBase::SetAcce(DWORD dwAcce)
 		return true;
 	}
 
+#ifdef ENABLE_EFFECT_MODEL_ITEM
+	if (pItemData->IsEffectModel())
+	{
+		// Baerim effect wings: no model, the effect sits on the sash bone
+		m_GraphicThingInstance.AttachAcce(nullptr, 0.0f);
+		if (!IsAffect(AFFECT_INVISIBILITY))
+		{
+			// each effect wing is made for its own bone (effect_model_bone.txt, default the root "Bip01")
+			const char* c_szEffect = pItemData->GetEffectModelFileName();
+			CEffectManager::Instance().RegisterEffect(c_szEffect, false, false);
+			m_dwAcceModelEffect = m_GraphicThingInstance.AttachEffectByName(0, CItemManager::Instance().GetEffectModelBone(dwAcce), c_szEffect);
+		}
+		m_awPart[CRaceData::PART_ACCE] = dwAcce;
+		return true;
+	}
+#endif
 	m_GraphicThingInstance.AttachAcce(pItemData, fSpecular);
 
 	BYTE bRace = (BYTE)GetRace();
@@ -3611,6 +3671,73 @@ void CInstanceBase::__ClearArmorShiningEffect()
 	if (m_armorShiningEffect)
 		__DetachEffect(m_armorShiningEffect);
 	m_armorShiningEffect = 0;
+}
+#endif
+
+#ifdef ENABLE_COSTUME_GLOW_TABLE
+DWORD CInstanceBase::__AttachCostumeGlow(const char* c_szEffect, BYTE bPart)
+{
+	const char* c_szBoneName = "Bip01";
+	if (bPart != CRaceData::PART_MAIN && (!m_GraphicThingInstance.GetAttachingBoneName(bPart, &c_szBoneName) || !c_szBoneName || !*c_szBoneName))
+		return 0;
+	CEffectManager::Instance().RegisterEffect(c_szEffect, false, false);
+	return m_GraphicThingInstance.AttachEffectByName(0, c_szBoneName, c_szEffect);
+}
+
+// Baerim shiningtable.txt: the glow of the costume / weapon look itself (also the wardrobe looks and the previews)
+void CInstanceBase::__RefreshCostumeGlow(bool bWeapon)
+{
+	DWORD* adwEffect = bWeapon ? m_adwCostumeGlowWeapon : m_adwCostumeGlowArmor;
+	for (int i = 0; i < 4; ++i)
+	{
+		if (adwEffect[i])
+			__DetachEffect(adwEffect[i]);
+		adwEffect[i] = 0;
+	}
+	if (IsAffect(AFFECT_INVISIBILITY))
+		return;
+
+	CItemManager& rkItemMgr = CItemManager::Instance();
+	const DWORD dwVnum = bWeapon ? m_awPart[CRaceData::PART_WEAPON] : m_dwCostumeGlowArmor;
+	const std::vector<std::string>* pTable = dwVnum ? rkItemMgr.GetCostumeGlow(dwVnum) : NULL;
+	std::vector<std::string> vecPaths;
+#ifdef ENABLE_EFFECT_MODEL_ITEM
+	CItemData* pModelItem = NULL;
+	if (bWeapon && dwVnum && rkItemMgr.GetItemDataPointer(dwVnum, &pModelItem) && pModelItem->IsEffectModel())
+		vecPaths.push_back(pModelItem->GetEffectModelFileName());	// Baerim effect weapon: the weapon itself
+#endif
+	if (pTable)
+		vecPaths.insert(vecPaths.end(), pTable->begin(), pTable->end());
+	if (vecPaths.empty())
+		return;
+	const std::vector<std::string>* pPaths = &vecPaths;
+
+	int n = 0;
+	if (!bWeapon)
+	{
+		for (size_t i = 0; i < pPaths->size() && n < 4; ++i)
+			adwEffect[n++] = __AttachCostumeGlow((*pPaths)[i].c_str(), CRaceData::PART_MAIN);
+		return;
+	}
+
+	CItemData* pWeapon = NULL;
+	if (!rkItemMgr.GetItemDataPointer(dwVnum, &pWeapon))
+		return;
+	const BYTE bWeaponType = pWeapon->GetType() == CItemData::ITEM_TYPE_COSTUME ? (BYTE) pWeapon->GetValue(3) : pWeapon->GetSubType();
+	for (size_t i = 0; i < pPaths->size() && n < 4; ++i)
+	{
+		const char* c_szPath = (*pPaths)[i].c_str();
+		// bows on the left hand, daggers (and fans on a mount) on both
+		if (bWeaponType == CItemData::WEAPON_BOW)
+		{
+			adwEffect[n++] = __AttachCostumeGlow(c_szPath, CRaceData::PART_WEAPON_LEFT);
+			continue;
+		}
+		if ((bWeaponType == CItemData::WEAPON_DAGGER || (IsMountingHorse() && bWeaponType == CItemData::WEAPON_FAN)) && n < 4)
+			adwEffect[n++] = __AttachCostumeGlow(c_szPath, CRaceData::PART_WEAPON_LEFT);
+		if (n < 4)
+			adwEffect[n++] = __AttachCostumeGlow(c_szPath, CRaceData::PART_WEAPON);
+	}
 }
 #endif
 
@@ -4059,6 +4186,9 @@ bool CInstanceBase::SetWeapon(DWORD eWeapon)
 
 	m_GraphicThingInstance.AttachWeapon(eWeapon);
 	m_awPart[CRaceData::PART_WEAPON] = eWeapon;
+#ifdef ENABLE_COSTUME_GLOW_TABLE
+	__RefreshCostumeGlow(true);
+#endif
 
 	//Weapon Effect
 	CItemData * pItemData;
@@ -4518,6 +4648,9 @@ void CInstanceBase::__Assassin_Initialize()
 void CInstanceBase::__Initialize()
 {
     m_optionQueueIndex=0;
+#ifdef ENABLE_COUNTRY_FLAG
+	m_szCountryFlag[0] = 0;
+#endif
 	__Warrior_Initialize();
 #ifdef ENABLE_PVP_BALANCE
 	__Assassin_Initialize();
@@ -4585,6 +4718,15 @@ void CInstanceBase::__Initialize()
 	m_weaponShiningEffects[0] = m_weaponShiningEffects[1] = 0;
 	m_adwShining[0] = m_adwShining[1] = 0;
 	m_armorShiningEffect = 0;
+#endif
+#ifdef ENABLE_EFFECT_MODEL_ITEM
+	m_dwAcceModelEffect = 0;
+#endif
+#ifdef ENABLE_COSTUME_GLOW_TABLE
+	m_dwCostumeGlowArmor = 0;
+	memset(m_adwCostumeGlowArmor, 0, sizeof(m_adwCostumeGlowArmor));
+	memset(m_adwCostumeGlowWeapon, 0, sizeof(m_adwCostumeGlowWeapon));
+	m_dwWeaponGlowRetryTime = 0;
 #endif
 #ifdef ENABLE_TITLE_SYSTEM
 	 m_dwOverHeadSpecialEffect = 0;

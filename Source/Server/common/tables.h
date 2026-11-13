@@ -112,6 +112,9 @@ enum
 	HEADER_GD_GROWTH_PET_SAVE						= 147,
 	HEADER_GD_GROWTH_PET_DELETE						= 148,
 #endif
+#ifdef ENABLE_COUNTRY_FLAG
+	HEADER_GD_CHANGE_COUNTRY_FLAG					= 149,
+#endif
 
 #ifdef ENABLE_RANKING
 	// RANKING_SYSTEM
@@ -271,6 +274,9 @@ typedef struct SSimplePlayer
 	WORD wPort;
 	BYTE skill_group;
 	DWORD last_play;
+#ifdef ENABLE_COUNTRY_FLAG
+	char szCountryFlag[COUNTRY_FLAG_MAX_LEN + 1];	// lower case ISO code, "" = none
+#endif
 } TSimplePlayer;
 
 typedef struct SAccountTable
@@ -456,10 +462,6 @@ typedef struct SPlayerTable
 	DWORD inventory_unlock[UNLOCK_INVENTORY_MAX];
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-	uint32_t mount_up_grade_exp;
-	uint8_t mount_up_grade_fail;
-#endif
 
 #ifdef ENABLE_FISH_EVENT
 	DWORD	fishEventUseCount;
@@ -1075,6 +1077,14 @@ typedef struct SPacketGDChangeName
 	char name[CHARACTER_NAME_MAX_LEN + 1];
 } TPacketGDChangeName;
 
+#ifdef ENABLE_COUNTRY_FLAG
+typedef struct SPacketGDChangeCountryFlag
+{
+	DWORD pid;
+	char flag[COUNTRY_FLAG_MAX_LEN + 1];
+} TPacketGDChangeCountryFlag;
+#endif
+
 typedef struct SPacketDGChangeName
 {
 	DWORD pid;
@@ -1650,6 +1660,10 @@ typedef struct offline_shop_item
 	DWORD transmutation;
 #endif
 	char szOwnerName[CHARACTER_NAME_MAX_LEN+1];
+#ifdef ENABLE_OFFLINESHOP_APPLY_RANDOM
+	TPlayerItemAttribute aApplyRandom[ITEM_APPLY_MAX_NUM];
+	BYTE abApplyRandomRow[ITEM_APPLY_MAX_NUM];
+#endif
 } OFFLINE_SHOP_ITEM;
 
 typedef struct ShopLog
@@ -1744,6 +1758,9 @@ enum {
 	TIME_DONE,
 	GET_BACK_ITEM,
 	ADD_TIME,
+#ifdef ENABLE_EXPLOIT_AUDIT_FIX
+	BUY_ITEM_REFUND,	// db -> game: the buy was rejected, give the buyer the gold back
+#endif
 };
 
 struct shop_decoration

@@ -71,6 +71,30 @@ class CItemManager : public CSingleton<CItemManager>
 		enum EShiningEffectKind { SHINING_KIND_SWORD, SHINING_KIND_TWOHAND, SHINING_KIND_DAGGER, SHINING_KIND_BOW,
 			SHINING_KIND_BELL, SHINING_KIND_FAN, SHINING_KIND_ARMOR, SHINING_KIND_ARMOR_M, SHINING_KIND_ARMOR_F, SHINING_KIND_MAX };
 		bool LoadShiningEffect(const char* c_szFileName);
+#ifdef ENABLE_COSTUME_GLOW_TABLE
+		// Baerim shiningtable.txt: vnum "effect" ["effect"]
+		bool LoadCostumeGlowTable(const char* c_szFileName);
+#ifdef ENABLE_EFFECT_MODEL_ITEM
+		// effect model items (.mse): bone the effect is made for, locale/common/effect_model_bone.txt (vnum	bone), default "Bip01"
+		bool LoadEffectModelBone(const char* c_szFileName);
+		const char* GetEffectModelBone(DWORD dwVnum) const
+		{
+			std::unordered_map<DWORD, std::string>::const_iterator it = m_effectModelBoneMap.find(dwVnum);
+			return it == m_effectModelBoneMap.end() ? "Bip01" : it->second.c_str();
+		}
+	private:
+		std::unordered_map<DWORD, std::string> m_effectModelBoneMap;
+	public:
+#endif
+		const std::vector<std::string>* GetCostumeGlow(DWORD dwVnum) const
+		{
+			std::unordered_map<DWORD, std::vector<std::string> >::const_iterator it = m_costumeGlowMap.find(dwVnum);
+			return it == m_costumeGlowMap.end() ? NULL : &it->second;
+		}
+	private:
+		std::unordered_map<DWORD, std::vector<std::string> > m_costumeGlowMap;
+	public:
+#endif
 		const char* GetShiningEffectPath(DWORD dwSet, BYTE bKind) const
 		{
 			std::unordered_map<DWORD, std::string>::const_iterator it = m_shiningEffectMap.find(dwSet * SHINING_KIND_MAX + bKind);

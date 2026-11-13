@@ -10419,6 +10419,11 @@ VNUM	LOCALE_NAME
 55067	Reiten (Präzision)
 55070	Tr. d. Pferde-Fertigkeit
 55100	Göttlicher Proteinhappen
+55320	Kostüm Bonuszeit (3d)
+55321	Kostüm Bonuszeit (7d)
+55322	Kostüm Bonuszeit (14d)
+55323	Kostüm Bonuszeit (30d)
+55327	Kostüm Bonuszeit (PvP)
 55400	Zufallskiste
 55401	Affenei
 55402	Spinnenei
@@ -12290,3 +12295,703 @@ VNUM	LOCALE_NAME
 65111	Amulet of Gods+
 65112	Guild Energy (100%)
 65120	Silver Expansion
+90020	Costume Voucher
+90021	Mount Voucher
+90022	Pet Voucher
+40240	Baerim Blade
+40241	Baerim Dagger
+40242	Baerim Bow
+40243	Baerim Glaive
+40244	Baerim Bel
+40245	Baerim Fan
+40246	Baerim Sura
+40247	BombWork Blade
+40248	BombWork Dagger
+40249	BombWork Bow
+40250	BombWork Glaive
+40251	BombWork Bell
+40252	BombWork Fan
+40253	BombWork Sura
+40254	White Samurai Blade
+40255	White Samurai Dagger
+40256	White Samurai Bow
+40257	White Samurai Glaive
+40258	White Samurai Bell
+40259	White Samurai Fan
+40260	Green Phantom Blade
+40261	Green Phantom Dagger
+40262	Green Phantom Bow
+40263	Green Phantom Glaive
+40264	Green Phantom Bell
+40265	Green Phantom Fan
+40266	Black Sakura Blade
+40267	Black Sakura Dagger
+40268	Black Sakura Bow
+40269	Black Sakura Glaive
+40270	Black Sakura Bell
+40271	Black Sakura Fan
+40272	Imperial Paladin Blade
+40273	Imperial Paladin Dagger
+40274	Imperial Paladin Bow
+40275	Imperial Paladin Glaive
+40276	Imperial Paladin Bell
+40277	Imperial Paladin Fan
+42099	White Samurai Costume (m)
+42100	White Samurai Costume (f)
+42101	Green Phantom Costume (m)
+42102	Green Phantom Costume (f)
+42113	Black Sakura Costume (m)
+42114	Black Sakura Costume (f)
+42115	Imperial Paladin Costume (m)
+42116	Imperial Paladin Costume (f)
+45692	Cowhorn Helm (M)
+45693	Cowhorn Helm (F)
+45776	White Samurai Hair (m)
+45777	White Samurai Hair (f)
+45778	Green Phantom Hair (m)
+45779	Green Phantom Hair (f)
+45790	Black Sakura Hair (m)
+45791	Black Sakura Hair (f)
+45792	Imperial Paladin Hair (m)
+45793	Imperial Paladin Hair (f)
+52121	Samsara Dragon
+52122	Manny
+52123	Ellie
+52126	Lava Cave Lizard
+52127	Ice Cave Lizard
+52128	Magma Dragon
+52214	White Samurai Mount
+52215	Green Phantom Mount
+52217	Black Sakura Mount
+52218	Imperial Paladin Mount
+53381	Boneca Ambalabu
+53382	Cappuccino Assassino
+53389	Tralalelo Tralala
+53390	Tung Tung
+53391	Vecna
+53416	Black Sakura Pet
+53417	Imperial Paladin Pet
+86065	Snow Sentinel Sash
+86068	Divine Wings
+86069	Hellfire Wings
+86070	Crystal Wing
+86071	Nobori Wings
+86072	Rogue Wings
+86073	Flame Wings
+86075	Glacial Viking Sash
+86076	Wolf Stalker Sash
+86080	Christmas Knight Sash
+86081	Winter Reindeer Sash
+86082	Polar Suit Sash
+86143	White Samurai Wing
+86144	Green Phantom Wing
+86146	Black Sakura Wing
+86147	Imperial Paladin Wing
+86152	Sash skin (pirate)
+53500	Frank
+53504	Jiangshi Jnr
+53524	Baby Bestial Captain
+53525	Baby Black Orc
+53557	Baby Death Reaper
+53604	Baby Flame King
+53660	Baby Giant Turtle
+53661	Baby Ice Witch
+53671	Baby Jotun
+53672	Baby Ninetail
+53673	Baby Spider Baroness
+53674	Baby Spider Queen
+53675	Baby Tartaros
+53676	Baby Yellow Tiger
+53677	Ballerina Cappuccina
+53678	Bombardiro Crocodilo
+53679	Captain Waddle
+53680	Demagorgog
+53681	Little Black Steel Warrior
+53682	Little Black Wind Shaman
+53683	Mc Ping
+53684	Salamino Pinguino
+41928	Mondwächter Kostüm (m)
+41929	Mondwächter Kostüm (w)
+41970	Argentinien Trikot (M)
+41971	Argentinien Trikot (W)
+41972	Belgien Trikot (M)
+41973	Belgien Trikot (W)
+41986	Deutschland Trikot (M)
+41987	Deutschland Trikot (W)
+41988	Italien Trikot (M)
+41989	Italien Trikot (W)
+41990	Mexiko Trikot (M)
+41991	Mexiko Trikot (W)
+41992	Polen Trikot (M)
+41993	Polen Trikot (W)
+41994	Portugal Trikot (M)
+41995	Portugal Trikot (W)
+41996	Rumänien Trikot (M)
+41997	Rumänien Trikot (W)
+41998	Spanien Trikot (M)
+41999	Spanien Trikot (W)
+42000	Türkei Trikot (M)
+42001	Türkei Trikot (W)
+42011	Mondschatten Kostüm (M)
+42012	Mondschatten Kostüm (W)
+42013	Himmlisches Engelskostüm (M)
+42014	Himmlisches Engelskostüm (W)
+42015	Geistsamurai Kostüm (M)
+42016	Geistsamurai Kostüm (W)
+42017	Infernomonarch Kostüm (M)
+42018	Infernomonarch Kostüm (W)
+42019	Frühlingsgeist Kostüm (M)
+42020	Frühlingsgeist Kostüm (W)
+42021	Weißes Phantom Kostüm (M)
+42022	Weißes Phantom Kostüm (W)
+42023	Sommerzeit Kostüm (M)
+42024	Sommerzeit Kostüm (W)
+42025	Goldenes Azrael Kostüm (M)
+42026	Goldenes Azrael Kostüm (W)
+42027	Hellboy Kostüm (M)
+42028	Hellboy Costume (W)
+42029	Rotes Schurkenkostüm (M)
+42030	Rotes Schurkenkostüm (W)
+42031	Weißgold Kostüm (M)
+42032	Weißgold Kostüm (W)
+42035	Zauberlehrling-Kostüm (m)
+42036	Zauberlehrling-Kostüm (w)
+42037	Sakura-Wüstenkostüm (m)
+42038	Sakura-Wüstenkostüm (w)
+42039	Zauberlehrling-Kostüm (m)
+42040	Zauberlehrling-Kostüm (w)
+42043	Purpurrotes Herrscherkostüm (m)
+42044	Purpurrotes Herrscherkostüm (w)
+42045	Amethyst-Fürstenkostüm (m)
+42046	Amethyst-Fürstenkostüm (w)
+42047	Azurwächter-Kostüm (m)
+42048	Azurwächter-Kostüm (w)
+42049	Obsidiandrachen-Kostüm (m)
+42050	Obsidiandrachen-Kostüm (w)
+42051	Kirschblüten-Kostüm (m)
+42052	Kirschblüten-Kostüm (w)
+42053	Schwarzblüten-Kostüm (m)
+42054	Schwarzblüten-Kostüm (m)
+42055	Schwarzblüten-Kostüm (m)
+42056	Schwarzblüten-Kostüm (w)
+42057	Rotes-Kriegerkostüm (m)
+42058	Rotes-Kriegerkostüm (w)
+42061	Astral Knight Costume (m)
+42062	Astral Knight Costume (f)
+42063	Dark Symbiote Costume (m)
+42064	Dark Symbiote Costume (f)
+42067	Haunted Vanguard Costume (m)
+42068	Haunted Vanguard Costume (f)
+42069	GhostBusters Costume (m)
+42070	GhostBusters Costume (f)
+42075	Halloween Dread Costume (m)
+42076	Halloween Dread Costume (f)
+42077	White Steel Costume (m)
+42078	White Steel Costume (f)
+42081	Red Fear Costume (m)
+42082	Red Fear Costume (f)
+42083	Frost Hwangs Costume (m)
+42084	Frost Hwangs Costume (f)
+45668	Mondwächter Frisur (m)
+45669	Mondwächter Frisur (w)
+45714	Frühlingsgeist Frisur (M)
+45715	Frühlingsgeist Frisur (W)
+45716	Weiße Phantom Frisur (M)
+45717	Weiße Phantom Frisur (W)
+45730	Zauberlehrling-Frisur (m)
+45731	Zauberlehrling-Frisur (w)
+45732	Sakura-Wüstenfrisur (m)
+45733	Sakura-Wüstenfrisur (w)
+45734	Zauberlehrling-Frisur (m)
+45735	Zauberlehrling-Frisur (w)
+45738	Purpurrote Herrscherfrisur (m)
+45739	Purpurrote Herrscherfrisur (w)
+45740	Amethyst-Fürstenfrisur (m)
+45741	Amethyst-Fürstenfrisur (w)
+45742	Obsidiandrachen-Frisur (m)
+45743	Obsidiandrachen-Frisur (w)
+45744	Azurwächter-Frisur (m)
+45745	Azurwächter-Frisur (w)
+45746	Kirschblüten-Frisur (m)
+45747	Kirschblüten-Frisur (w)
+45748	Schwarzblüten-Frisur (m)
+45749	Schwarzblüten-Frisur (w)
+45750	Blaue-Kriegerfrisur (m)
+45751	Blaue-Kriegerfrisur (w)
+45752	Rote-Kriegerfrisur (m)
+45753	Rote-Kriegerfrisur (w)
+45756	Astral Knight Hair (m)
+45757	Astral Knight Hair (f)
+45758	Dark Symbiote Hair (m)
+45759	Dark Symbiote Hair (f)
+45760	Haunted Vanguard Hair (m)
+45761	Haunted Vanguard Hair (f)
+45762	GhostBusters Hair (m)
+45763	GhostBusters Hair (f)
+45768	Halloween Dread Hair (m)
+45769	Halloween Dread Hair (f)
+45770	White Steel Hair (m)
+45771	White Steel Hair (f)
+45772	Red Fear Hair (m)
+45773	Red Fear Hair (f)
+45774	Frost Hwangs Hair (m)
+45775	Frost Hwangs Hair (f)
+52151	Mondwächter
+52162	Sturmgeist
+52167	Phantom Qilin
+52170	Bambuswächter
+52173	Goldenes Reittier
+52174	Schwarzes Reittier
+52176	Wildes Reittier
+52178	Himmlisches Engelsreittier
+52179	Infernomonarch Reittier
+52181	Weißes Phantom Reittier
+52182	Sommerzeit Reittier
+52183	Goldenes Azrael Reittier
+52184	Hellboy Reittier
+52185	Rotes Schurkenreittier
+52186	Weißgold Reittier
+52190	Zauberlehrling-Reittier
+52191	Sakura-Wüstenreittier
+52194	Obsidiandrachen-Reittier
+52195	Azurwächter-Reittier
+52196	Kirschblüten-Reittier
+52197	Schwarzblüten-Reittier
+52200	Astral Knight Mount
+52203	Dark Symbiote Mount
+52211	White Steel Mount
+52212	Red Fear Mount
+52213	Frost Hwangs Mount
+53394	Himmlisches Engelspet
+53395	Weißes Phantom Pet
+53396	Sommerzeit Pet
+53397	Goldenes Azrael Pet
+53398	Hellboy Pet
+53399	Rotes Schurkenpet
+53400	Weißgold Pet
+53402	Zauberlehrling-Haustier
+53403	Sakura-Wüstenhaustier
+53406	Obsidiandrachen-Haustier
+53407	Azurwächter-Haustier
+53408	Dark Symbiote Pet
+53414	White Steel Pet
+40278	Klinge des Brennenden Ritters
+40279	Dolche des Brennenden Ritters
+40280	Bogen des Brennenden Ritters
+40281	Glefe des Brennenden Ritters
+40282	Glocke des Brennenden Ritters
+40283	Fächer des Brennenden Ritters
+40284	Brennender Soldat Sura
+40285	Klinge des Gefrorenen Ritters
+40286	Dolche des Gefrorenen Ritters
+40287	Bogen des Gefrorenen Ritters
+40288	Glefe des Gefrorenen Ritters
+40289	Glocke des Gefrorenen Ritters
+40290	Fächer des Gefrorenen Ritters
+40291	Gefrorener Soldat Sura
+40292	Sturmgeist Klinge
+40293	Sturmgeist Dolche
+40294	Sturmgeist Bogen
+40295	Sturmgeist Glefe
+40296	Sturmgeist Glocke
+40297	Sturmgeist Fächer
+40298	Sturmgeist Sura
+40299	Mondwächter Klinge
+40300	Mondwächter Dolche
+40301	Mondwächter Bogen
+40302	Mondwächter Glefe
+40303	Mondwächter Glocke
+40304	Mondwächter Fächer
+40305	Mondwächter Sura
+40306	Yin-Yang Klinge
+40307	Yin-Yang Dolche
+40308	Yin-Yang Bogen
+40309	Yin-Yang Glefe
+40310	Yin-Yang Glocke
+40311	Yin-Yang Fächer
+40312	Bambuswächter Klinge
+40313	Bambuswächter Dolche
+40314	Bambuswächter Bogen
+40315	Bambuswächter Glefe
+40316	Bambuswächter Glocke
+40317	Bambuswächter Fächer
+40318	Bambuswächter Sura
+40319	Barytschwert
+40320	Barytdolche
+40321	Barytbogen
+40322	Barytglefe
+40323	Barytglocke
+40324	Barytfächer
+40325	Barytklinge
+40326	Yin-Yang Schwert
+40327	Yin-Yang Dolche
+40328	Yin-Yang Bogen
+40329	Yin-Yang Glefe
+40330	Yin-Yang Glocke
+40331	Yin-Yang Fächer
+40332	Yin-Yang Klinge
+40333	Goldenes Schwert
+40334	Goldene Dolche
+40335	Goldener Bogen
+40336	Goldene Glefe
+40337	Goldene Glocke
+40338	Goldener Fächer
+40339	Goldene Klinge
+40340	Schwarzes Schwert
+40341	Schwarze Dolche
+40342	Schwarzer Bogen
+40343	Schwarze Glefe
+40344	Schwarze Glocke
+40345	Schwarzer Fächer
+40346	Schwarze Klinge
+40347	Gefrorenes Unterweltenschwert
+40348	Gefrorene Unterweltendolche
+40349	Gefrorener Unterweltenbogen
+40350	Gefrorene Unterweltenglefe
+40351	Gefrorene Unterweltenglocke
+40352	Gefrorener Unterweltenfächer
+40353	Gefrorene Unterweltenklinge
+40354	Goldar Schwert
+40355	Goldar Dolche
+40356	Goldar Bogen
+40357	Goldar Glefe
+40358	Goldar Glocke
+40359	Goldar Fächer
+40360	Goldar Klinge
+40361	Mondschatten Schwert
+40362	Mondschatten Dolche
+40363	Mondschatten Bogen
+40364	Mondschatten Glefe
+40365	Mondschatten Glocke
+40366	Mondschatten Fächer
+40367	Mondschatten Klinge
+40368	Himmlisches Engelsschwert
+40369	Himmlische Engelsdolche
+40370	Himmlischer Engelsbogen
+40371	Himmlische Engelsglefe
+40372	Himmlische Engelsglocke
+40373	Himmlischer Engelsfächer
+40374	Himmlische Engelsklinge
+40375	Geistsamurai Schwert
+40376	Geistsamurai Dolche
+40377	Geistsamurai Bogen
+40378	Geistsamurai Glefe
+40379	Geistsamurai Glocke
+40380	Geistsamurai Fächer
+40381	Geistsamurai Klinge
+40382	Infernomonarch Schwert
+40383	Infernomonarch Dolche
+40384	Infernomonarch Bogen
+40385	Infernomonarch Glefe
+40386	Infernomonarch Glocke
+40387	Infernomonarch Fächer
+40388	Infernomonarch Klinge
+40389	Frühlingsgeist Schwert
+40390	Frühlingsgeist Dolche
+40391	Frühlingsgeist Bogen
+40392	Frühlingsgeist Glefe
+40393	Frühlingsgeist Glocke
+40394	Frühlingsgeist Fächer
+40395	Frühlingsgeist Klinge
+40396	Weißes Phantom Schwert
+40397	Weiße Phantom Dolche
+40398	Weißer Phantom Bogen
+40399	Weiße Phantom Glefe
+40400	Weiße Phantom Glocke
+40401	Weißer Phantom Fächer
+40402	Weiße Phantom Klinge
+40403	Sommerzeit Schwert
+40404	Sommerzeit Dolche
+40405	Sommerzeit Bogen
+40406	Sommerzeit Glefe
+40407	Sommerzeit Glocke
+40408	Sommerzeit Fächer
+40409	Sommerzeit Klinge
+40410	Goldenes Azraelschwert
+40411	Goldene Azraeldolche
+40412	Goldener Azraelbogen
+40413	Goldene Azraelglefe
+40414	Goldene Azraelglocke
+40415	Goldener Azraelfächer
+40416	Goldene Azraelklinge
+40417	Hellboy Schwert
+40418	Hellboy Dolche
+40419	Hellboy Bogen
+40420	Hellboy Glefe
+40421	Hellboy Glocke
+40422	Hellboy Fächer
+40423	Hellboy Klinge
+40424	Rotes Schurkenschwert
+40425	Rote Schurkendolche
+40426	Roter Schurkenbogen
+40427	Rote Schurkenglefe
+40428	Rote Schurkenglocke
+40429	Roter Schurkenfächer
+40430	Rote Schurkenklinge
+40431	Weißgold Schwert
+40432	Weißgold Dolche
+40433	Weißgold Bogen
+40434	Weißgold Glefe
+40435	Weißgold Glocke
+40436	Weißgold Fächer
+40437	Weißgold Klinge
+40438	Zauberlehrling-Klinge
+40439	Zauberlehrling-Dolche
+40440	Zauberlehrling-Bogen
+40441	Zauberlehrling-Glefe
+40442	Zauberlehrling-Glocke
+40443	Zauberlehrling-Fächer
+40444	Zauberlehrling-Sura
+40445	Sakura-Wüstenklinge
+40446	Sakura-Wüstendolche
+40447	Sakura-Wüstenbogen
+40448	Sakura-Wüstenglefe
+40449	Sakura-Wüstenglocke
+40450	Sakura-Wüstenfächer
+40451	Zauberlehrling-Klinge
+40452	Zauberlehrling-Dolche
+40453	Zauberlehrling-Bogen
+40454	Zauberlehrling-Glefe
+40455	Zauberlehrling-Glocke
+40456	Zauberlehrling-Fächer
+40457	Zauberlehrling-Sura
+40458	Purpurrote Herrscherklinge
+40459	Purpurrote Herrscherdolche
+40460	Purpurroter Herrscherbogen
+40461	Purpurrote Herrscherglefe
+40462	Purpurrote Herrscherglocke
+40463	Purpurroter Herrscherfächer
+40464	Purpurroter Herrschersura
+40465	Amethyst-Fürstenklinge
+40466	Amethyst-Fürstendolche
+40467	Amethyst-Fürstenbogen
+40468	Amethyst-Fürstenglefe
+40469	Amethyst-Fürstenglocke
+40470	Amethyst-Fürstenfächer
+40471	Amethyst-Fürstensura
+40472	Obsidiandrachen-Klinge
+40473	Obsidiandrachen-Dolche
+40474	Obsidiandrachen-Bogen
+40475	Obsidiandrachen-Glefe
+40476	Obsidiandrachen-Glocke
+40477	Obsidiandrachen-Fächer
+40478	Obsidiandrachen-Sura
+40479	Azurwächter-Klinge
+40480	Azurwächter-Dolche
+40481	Azurwächter-Bogen
+40482	Azurwächter-Glefe
+40483	Azurwächter-Glocke
+40484	Azurwächter-Fächer
+40485	Kirschblüten-Klinge
+40486	Kirschblüten-Dolche
+40487	Kirschblüten-Bogen
+40488	Kirschblüten-Glefe
+40489	Kirschblüten-Glocke
+40490	Kirschblüten-Fächer
+40491	Kirschblüten-Sura
+40492	Schwarzblüten-Klinge
+40493	Schwarzblüten-Dolche
+40494	Schwarzblüten-Bogen
+40495	Schwarzblüten-Glefe
+40496	Schwarzblüten-Glocke
+40497	Schwarzblüten-Fächer
+40498	Schwarzblüten-Sura
+40499	Blaue-Kriegerklinge
+40500	Blaue-Kriegerdolche
+40501	Blauer-Kriegerbogen
+40502	Blaue-Kriegerglefe
+40503	Blaue-Kriegerglocke
+40504	Blauer-Kriegerfächer
+40505	Blauer-Kriegersura
+40506	Rote-Kriegerklinge
+40507	Rote-Kriegerdolche
+40508	Roter-Kriegerbogen
+40509	Rote-Kriegerglefe
+40510	Rote-Kriegerglocke
+40511	Roter-Kriegerfächer
+40512	Roter-Kriegersura
+40513	Astral Knight Blade
+40514	Astral Knight Dagger
+40515	Astral Knight Bow
+40516	Astral Knight Glaive
+40517	Astral Knight Bell
+40518	Astral Knight Fan
+40519	Astral Knight Sura
+40520	Dark Symbiote Blade
+40521	Dark Symbiote Dagger
+40522	Dark Symbiote Bow
+40523	Dark Symbiote Glaive
+40524	Dark Symbiote Bell
+40525	Dark Symbiote Fan
+40526	Dark Symbiote Sura
+40527	Haunted Vanguard Blade
+40528	Haunted Vanguard Dagger
+40529	Haunted Vanguard Bow
+40530	Haunted Vanguard Glaive
+40531	Haunted Vanguard Bell
+40532	Haunted Vanguard Fan
+40533	Haunted Vanguard Sura
+40534	GhostBusters Blade
+40535	GhostBusters Dagger
+40536	GhostBusters Bow
+40537	GhostBusters Glaive
+40538	GhostBusters Bell
+40539	GhostBusters Fan
+40540	GhostBusters Pickaxe
+40541	Halloween Dread Blade
+40542	Halloween Dread Dagger
+40543	Halloween Dread Bow
+40544	Halloween Dread Glaive
+40545	Halloween Dread Bell
+40546	Halloween Dread Fan
+40547	White Steel Blade
+40548	White Steel Dagger
+40549	White Steel Bow
+40550	White Steel Glaive
+40551	White Steel Bell
+40552	White Steel Fan
+40553	Red Fear Blade
+40554	Red Fear Dagger
+40555	Red Fear Bow
+40556	Red Fear Glaive
+40557	Red Fear Bell
+40558	Red Fear Fan
+40559	Frost Hwangs Blade
+40560	Frost Hwangs Dagger
+40561	Frost Hwangs Bow
+40562	Frost Hwangs Glaive
+40563	Frost Hwangs Bell
+40564	Frost Hwangs Fan
+40565	Frost Hwangs Sura
+86066	Brennender Ritter Schulterband
+86067	Gefrorener Ritter Schulterband
+86074	Sturmgeist Flügel
+86079	Mondwächter Schulterband
+86086	Yin-Yang Flügel
+86088	Bambuswächter Schulterband
+86096	Goldenes Hwang Schulterband
+86097	Schwarzes Hwang Schulterband
+86098	Gefrorenes Unterwelten Schulterband
+86099	Goldar Schulterband
+86100	Mondschatten Flügel
+86101	Himmlische Engelsflügel
+86102	Geistsamurai Flügel
+86103	Infernomonarch Flügel
+86104	Frühlingsgeist Flügel
+86105	Schwarze Flügel
+86110	Weiße Flügel
+86112	Weiße Phantom Flügel
+86113	Sommerzeit Flügel
+86114	Goldene Azraelflügel
+86115	Hellboy Flügel
+86116	Rote Schurkenflügel
+86117	Weißgold Flügel
+86119	Zauberlehrling-Flügel
+86120	Sakura-Wüstenflügel
+86121	Zauberlehrling-Flügel
+86123	Amethyst-Fürstenflügel
+86124	Obsidiandrachen-Flügel
+86125	Azurwächter-Flügel
+86126	Purpurrote Herrscherflügel
+86127	Kirschblüten-Flügel
+86128	Schwarzblüten-Flügel
+86129	Blaue-Kriegerflügel
+86130	Rote-Kriegerflügel
+86132	Astral Knight Wing
+86133	Dark Symbiote Wing
+86135	Haunted Vanguard Wing
+86136	GhostBusters Wing
+86139	Halloween Dread Wing
+86140	White Steel Wing
+86141	Red Fear Wing
+86142	Frost Hwangs Wing
+42200	Brennender Ritter Kostüm (M)
+42201	Brennender Ritter Kostüm (W)
+42202	Gefrorener Ritter Kostüm (M)
+42203	Gefrorener Ritter Kostüm (W)
+42204	Sturmgeist Kostüm (m)
+42205	Sturmgeist Kostüm (w)
+42206	Yin-Yang Kostüm (m)
+42207	Yin-Yang Kostüm (w)
+42208	Bambuswächter Kostüm (m)
+42209	Bambuswächter Kostüm (w)
+42210	Kuhler Anzug (m)
+42211	Kuhler Anzug (w)
+42212	Baerim Trikot (M)
+42213	Baerim Trikot (W)
+42214	Hwang Kostüm
+42215	Rotes Hwang Kostüm 
+42216	Zin-Hwang Kostüm
+42217	San-Hwang Kostüm 
+42218	Goldenes Hwang Kostüm (M)
+42219	Goldenes Hwang Kostüm (W)
+42220	Schwarzes Hwang Kostüm (M)
+42221	Schwarzes Hwang Kostüm (W)
+42222	Gefrorenes Unterweltkostüm (M)
+42223	Gefrorenes Unterweltkostüm (W)
+42224	Goldar Kostüm
+42225	Bosnien Trikot (M)
+42226	Bosnien Trikot (W)
+42227	Brasilien Trikot (M)
+42228	Brasilien Trikot (W)
+42229	Tschechien Trikot (M)
+42230	Tschechien Trikot (W)
+42231	Ägypten Trikot (M)
+42232	Ägypten Trikot (W)
+42233	England Trikot (M)
+42234	England Trikot (W)
+42235	Frankreich Trikot (M)
+42236	Frankreich Trikot (W)
+42260	Abyss Warrior Costume (m)
+42261	Abyss Warrior Costume (f)
+45900	Brennender Ritter Frisur (M)
+45901	Brennender Ritter Frisur (W)
+45902	Gefrorener Ritter Frisur (M)
+45903	Gefrorener Ritter Frisur (W)
+45904	Sturmgeist Frisur (m)
+45905	Sturmgeist Frisur (w)
+45906	Yin-Yang Frisur (m)
+45907	Yin-Yang Frisur (w)
+45908	Bambuswächter Frisur (m)
+45909	Bambuswächter Frisur (w)
+45910	Baerim Frisur (M)
+45911	Baerim Frisur (W)
+45912	Goldene Hwang Frisur (M)
+45913	Goldene Hwang Frisur (W)
+45914	Schwarze Hwang Frisur (M)
+45915	Schwarze Hwang Frisur (W)
+45916	Gefrorene Unterwelten Frisur (M)
+45917	Gefrorene Unterwelten Frisur (W)
+45918	Goldar Frisur (M)
+45919	Goldar Frisur (W)
+45920	Mondschatten Frisur (M)
+45921	Mondschatten Frisur (W)
+45922	Himmlische Engelsfrisur (M)
+45923	Himmlische Engelsfrisur (W)
+45924	Geistsamurai Frisur (M)
+45925	Geistsamurai Frisur (W)
+45926	Infernomonarch Frisur (M)
+45927	Infernomonarch Frisur (W)
+45928	Sommerzeit Frisur (M)
+45929	Sommerzeit Frisur (W)
+45930	Goldene Azrael Frisur (M)
+45931	Goldene Azrael Frisur (W)
+45932	Hellboy Frisur (M)
+45933	Hellboy Frisur (W)
+45934	Rote Schurkenfrisur (M)
+45935	Rote Schurkenfrisur (W)
+45936	Weißgold Frisur (M)
+45937	Weißgold Frisur (W)
+45960	Polar Warden Hair (m)
+52300	Tapferer Moa
+53700	Goldenes Pet
+53701	Schwarzes Pet
+58000	Horse
+77090	Abyss Sword
+77091	Abyss Dagger
+77092	Abyss Bow
+77093	Abyss Greatsword
+77094	Abyss Bell
+77095	Abyss Fan
+77096	Dark Warrior Sura
+86084	Abyss Sash

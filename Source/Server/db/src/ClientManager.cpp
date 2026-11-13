@@ -2474,6 +2474,12 @@ void CClientManager::ProcessPackets(CPeer * peer)
 				QUERY_CHANGE_NAME(peer, dwHandle, (TPacketGDChangeName *) data);
 				break;
 
+#ifdef ENABLE_COUNTRY_FLAG
+			case HEADER_GD_CHANGE_COUNTRY_FLAG:
+				QUERY_CHANGE_COUNTRY_FLAG((TPacketGDChangeCountryFlag *) data);
+				break;
+#endif
+
 			case HEADER_GD_AUTH_LOGIN:
 				QUERY_AUTH_LOGIN(peer, dwHandle, (TPacketGDAuthLogin *) data);
 				break;

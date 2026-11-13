@@ -177,6 +177,11 @@ void CGraphicTextInstance::Update()
 			SEmoji & rEmo = *itor;
 			if (rEmo.pInstance)
 			{
+#ifdef ENABLE_COUNTRY_FLAG
+				if (rEmo.bExpanded)
+					CGraphicExpandedImageInstance::Delete(static_cast<CGraphicExpandedImageInstance*>(rEmo.pInstance));
+				else
+#endif
 				CGraphicImageInstance::Delete(rEmo.pInstance);
 				rEmo.pInstance = nullptr;
 			}
@@ -496,17 +501,81 @@ void CGraphicTextInstance::Update()
 #else
 						_snprintf(szPath, sizeof(szPath), "d:/ymir work/ui/game/emoji/%s.tga", retBuf);
 #endif
+#ifdef ENABLE_COUNTRY_FLAG
+						// |Eflag/<code>|e: Baerim's own country flag (24x24, flag 24x16 inside) scaled down in code
+						// one flag set in Vegas' format (language_system/flags/<code>.png, 33x20 full bleed) drawn at
+						// 16x12 like Vegas' chat flags, next to the 16x12 empire emblem: same box, same line
+						bool bCountryFlag = false;
+						float fEmojiScaleX = 16.0f / 33.0f;
+						float fEmojiScaleY = 12.0f / 20.0f;
+						float fEmojiYOffset = 0.0f;
+						if (strncmp(retBuf, "flag/", 5) == 0 && strlen(retBuf) == 7)
+						{
+							char szFlagPath[255];
+							_snprintf(szFlagPath, sizeof(szFlagPath), "d:/ymir work/ui/language_system/flags/%s.png", retBuf + 5);
+							if (CResourceManager::Instance().IsFileExist(szFlagPath))
+							{
+								strncpy(szPath, szFlagPath, sizeof(szPath) - 1);
+								szPath[sizeof(szPath) - 1] = '\0';
+								bCountryFlag = true;
+							}
+						}
+						// the empire emblem next to it (16x12) is drawn as wide as the flag, like Baerim
+						else if (strncmp(retBuf, "empire/", 7) == 0)
+						{
+							// the 16x12 emblem has a faded 1 px rim, so it looked smaller than the flag: draw it 18x14
+							// (visible part ~16x12 like the flag) with its centre on the flag's centre
+							bCountryFlag = true;
+							fEmojiScaleX = 18.0f / 16.0f;
+							fEmojiScaleY = 14.0f / 12.0f;
+							fEmojiYOffset = 3.4f;
+						}
+#endif
 						if (CResourceManager::Instance().IsFileExist(szPath))
 						{
 							CGraphicImage * pImage = (CGraphicImage *)CResourceManager::Instance().GetResourcePointer(szPath);
-							kEmoji.pInstance = CGraphicImageInstance::New();
-							kEmoji.pInstance->SetImagePointer(pImage);
+							int iEmojiWidth = pImage->GetWidth();
+#ifdef ENABLE_COUNTRY_FLAG
+							if (bCountryFlag)
+							{
+								CGraphicExpandedImageInstance* pFlag = CGraphicExpandedImageInstance::New();
+								pFlag->SetImagePointer(pImage);
+								pFlag->SetScale(fEmojiScaleX, fEmojiScaleY);
+								kEmoji.pInstance = pFlag;
+								kEmoji.bExpanded = true;
+								kEmoji.fScale = fEmojiScaleY;	// vertical centring
+								kEmoji.fYOffset = fEmojiYOffset;
+								iEmojiWidth = int(pImage->GetWidth() * fEmojiScaleX + 0.5f);
+							}
+							else
+#endif
+							{
+								kEmoji.pInstance = CGraphicImageInstance::New();
+								kEmoji.pInstance->SetImagePointer(pImage);
+							}
 							m_emojiVector.push_back(kEmoji);
 							memset(&kEmoji, 0, sizeof(SEmoji));
-							for (int i = 0; i < pImage->GetWidth() / (pSpaceInfo->width-1); ++i)
-								x += __DrawCharacter(pFontTexture, dataCodePage, ' ', dwColor);
-							if (pImage->GetWidth() % (pSpaceInfo->width - 1) > 1)
-								x += __DrawCharacter(pFontTexture, dataCodePage, ' ', dwColor);
+#ifdef ENABLE_COUNTRY_FLAG
+							kEmoji.fScale = 1.0f;
+#endif
+#ifdef ENABLE_COUNTRY_FLAG
+							// flag / emblem: the text after it is placed by these spaces, so they must stay;
+							// use as many as come closest to the drawn width (the rule below left ~7 px, Baerim ~3)
+							if (bCountryFlag)
+							{
+								const int iSpaceAdvance = max(1, (int)pSpaceInfo->advance);
+								const int iSpaceCount = (iEmojiWidth + iSpaceAdvance / 2) / iSpaceAdvance;
+								for (int i = 0; i < iSpaceCount; ++i)
+									x += __DrawCharacter(pFontTexture, dataCodePage, ' ', dwColor);
+							}
+							else
+#endif
+							{
+								for (int i = 0; i < iEmojiWidth / (pSpaceInfo->width-1); ++i)
+									x += __DrawCharacter(pFontTexture, dataCodePage, ' ', dwColor);
+								if (iEmojiWidth % (pSpaceInfo->width - 1) > 1)
+									x += __DrawCharacter(pFontTexture, dataCodePage, ' ', dwColor);
+							}
 						}
 						emojiStep = 0;
 						emojiBuffer = L"";
@@ -2070,7 +2139,11 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 			SEmoji & rEmo = *itor;
 			if (rEmo.pInstance)
 			{
+#ifdef ENABLE_COUNTRY_FLAG
+				rEmo.pInstance->SetPosition(fStanX + rEmo.x, (fStanY + 7.0) - (rEmo.pInstance->GetHeight() * rEmo.fScale / 2) + rEmo.fYOffset);
+#else
 				rEmo.pInstance->SetPosition(fStanX + rEmo.x, (fStanY + 7.0) - (rEmo.pInstance->GetHeight() / 2));
+#endif
 #ifdef ENABLE_CLIP_MASKING
 				rEmo.pInstance->Render(pClipRect);
 #else
@@ -2585,6 +2658,11 @@ void CGraphicTextInstance::Destroy()
 			SEmoji & rEmo = *itor;
 			if (rEmo.pInstance)
 			{
+#ifdef ENABLE_COUNTRY_FLAG
+				if (rEmo.bExpanded)
+					CGraphicExpandedImageInstance::Delete(static_cast<CGraphicExpandedImageInstance*>(rEmo.pInstance));
+				else
+#endif
 				CGraphicImageInstance::Delete(rEmo.pInstance);
 				rEmo.pInstance = nullptr;
 			}

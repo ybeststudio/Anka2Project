@@ -673,6 +673,9 @@ struct TCharacterItemStorage
 #endif
 	LPITEM pDSItems[DRAGON_SOUL_INVENTORY_MAX_NUM];
 	WORD wDSItemGrid[DRAGON_SOUL_INVENTORY_MAX_NUM];
+#ifdef ENABLE_WARDROBE_SYSTEM
+	LPITEM pWardrobeItems[WARDROBE_MAX_NUM];	// one item per cell, no grid (Baerim wardrobe storage)
+#endif
 };
 
 #define TRIGGERPARAM LPCHARACTER ch, LPCHARACTER causer
@@ -1261,6 +1264,14 @@ class CHARACTER : public CEntity, public CFSM, public CHorseRider
 		BYTE GetCountryFlagFromGMList(BYTE bFlag, const char* TargetName = "", bool bMessenger = false);
 #endif
 
+#ifdef ENABLE_COUNTRY_FLAG
+		const char* GetCountryFlag() const { return m_szCountryFlag; }
+		void SetCountryFlag(const char* c_szFlag) { strlcpy(m_szCountryFlag, c_szFlag, sizeof(m_szCountryFlag)); }
+	protected:
+		char m_szCountryFlag[COUNTRY_FLAG_MAX_LEN + 1];	// picked on character select (account table)
+	public:
+#endif
+
 	protected:
 		void ClearSync();
 
@@ -1424,6 +1435,11 @@ class CHARACTER : public CEntity, public CFSM, public CHorseRider
 #endif
 		LPITEM GetItem(TItemPos Cell) const;
 		LPITEM GetInventoryItem(WORD wCell) const;
+#ifdef ENABLE_WARDROBE_SYSTEM
+		// the wardrobe storage is reachable only through /wardrobe (GetItem never returns it)
+		LPITEM GetWardrobeItem(WORD wCell) const;
+		WORD GetVisualPart(BYTE bPartPos) const;
+#endif
 
 #ifdef ENABLE_SPECIAL_INVENTORY
 		LPITEM GetSkillBookInventoryItem(WORD wCell) const;
@@ -3187,18 +3203,6 @@ class CHARACTER : public CEntity, public CFSM, public CHorseRider
 		int GetRandomExp(DWORD missionLevel);
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-	public:
-		void SetMountUpGradeExp(uint32_t exp) { m_mount_up_grade_exp = exp; }
-		uint32_t GetMountUpGradeExp() const { return m_mount_up_grade_exp; }
-
-		void SetMountUpGradeFail(uint8_t fail) { m_mount_up_grade_fail = fail; }
-		uint8_t IsMountUpGradeFail() const { return m_mount_up_grade_fail; }
-
-	protected:
-		uint32_t m_mount_up_grade_exp;
-		uint8_t m_mount_up_grade_fail;
-#endif
 
 #ifdef ENABLE_SPIRIT_STONE_READING
 	public:

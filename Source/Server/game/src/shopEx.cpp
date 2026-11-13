@@ -20,7 +20,20 @@
 #include "locale_service.h"
 #include "desc_client.h"
 #include "shopEx.h"
+
 #include "group_text_parse_tree.h"
+
+#ifdef ENABLE_SHOP_STACK_MERGE
+namespace
+{
+	// a bought item fully merged into existing stacks is destroyed only after the buy logged it (it was used after M2_DESTROY_ITEM)
+	struct SShopExMergedItemGuard
+	{
+		LPITEM item = nullptr;
+		~SShopExMergedItemGuard() { if (item) M2_DESTROY_ITEM(item); }
+	};
+}
+#endif
 
 bool CShopEx::Create(DWORD dwVnum, DWORD dwNPCVnum)
 {
@@ -69,7 +82,13 @@ bool CShopEx::AddGuest(LPCHARACTER ch,DWORD owner_vid, bool bOtherEmpire)
 
 	pack2.owner_vid = owner_vid;
 	pack2.shop_tab_count = m_vec_shopTabs.size();
+#ifdef ENABLE_SHOP_TABS_BAERIM
+	// 80 slot tabs: up to ~36 KB, more than the old fixed stack buffer
+	std::vector<char> tempBuffer(sizeof(TPacketGCShopStartEx::TSubPacketShopTab) * MAX(1, (int)m_vec_shopTabs.size()));
+	char* temp = &tempBuffer[0];
+#else
 	char temp[8096 * 3];
+#endif
 	char* buf = &temp[0];
 	size_t size = 0;
 	for (itertype(m_vec_shopTabs) it = m_vec_shopTabs.begin(); it != m_vec_shopTabs.end(); it++)
@@ -79,17 +98,23 @@ bool CShopEx::AddGuest(LPCHARACTER ch,DWORD owner_vid, bool bOtherEmpire)
 		pack_tab.coin_type = shop_tab.coinType;
 		memcpy(pack_tab.name, shop_tab.name.c_str(), SHOP_TAB_NAME_MAX);
 
+#ifdef ENABLE_SHOP_TABS_BAERIM
+		const TShopItemTable* tabItems = shop_tab.itemsEx;
+		for (int i = 0; i < SHOP_EX_ITEM_MAX_NUM; i++)
+#else
+		const TShopItemTable* tabItems = shop_tab.items;
 		for (BYTE i = 0; i < SHOP_HOST_ITEM_MAX_NUM; i++)
+#endif
 		{
-			pack_tab.items[i].vnum = shop_tab.items[i].vnum;
-			pack_tab.items[i].count = shop_tab.items[i].count;
+			pack_tab.items[i].vnum = tabItems[i].vnum;
+			pack_tab.items[i].count = tabItems[i].count;
 #ifdef ENABLE_RENEWAL_SHOPEX
-			pack_tab.items[i].price_type = shop_tab.items[i].price_type;
-			pack_tab.items[i].price_vnum = shop_tab.items[i].price_vnum;
-			pack_tab.items[i].price = shop_tab.items[i].price;
+			pack_tab.items[i].price_type = tabItems[i].price_type;
+			pack_tab.items[i].price_vnum = tabItems[i].price_vnum;
+			pack_tab.items[i].price = tabItems[i].price;
 
-			thecore_memcpy(pack_tab.items[i].aAttr, shop_tab.items[i].aAttr, sizeof(pack_tab.items[i].aAttr));
-			thecore_memcpy(pack_tab.items[i].alSockets, shop_tab.items[i].alSockets, sizeof(pack_tab.items[i].alSockets));
+			thecore_memcpy(pack_tab.items[i].aAttr, tabItems[i].aAttr, sizeof(pack_tab.items[i].aAttr));
+			thecore_memcpy(pack_tab.items[i].alSockets, tabItems[i].alSockets, sizeof(pack_tab.items[i].alSockets));
 #else
 			switch (shop_tab.coinType)
 			{
@@ -120,14 +145,32 @@ bool CShopEx::AddGuest(LPCHARACTER ch,DWORD owner_vid, bool bOtherEmpire)
 	return true;
 }
 
+#ifdef ENABLE_SHOP_TABS_BAERIM
+#ifdef ENABLE_GOLD_LIMIT
+long long CShopEx::Buy(LPCHARACTER ch, WORD pos)
+#else
+int CShopEx::Buy(LPCHARACTER ch, WORD pos)
+#endif
+{
+#ifdef ENABLE_SHOP_STACK_MERGE
+	SShopExMergedItemGuard kMergedItem;
+#endif
+	// pos = tab * SHOP_EX_ITEM_MAX_NUM + slot
+	BYTE tabIdx = pos / SHOP_EX_ITEM_MAX_NUM;
+	BYTE slotPos = pos % SHOP_EX_ITEM_MAX_NUM;
+#else
 #ifdef ENABLE_GOLD_LIMIT
 long long CShopEx::Buy(LPCHARACTER ch, BYTE pos)
 #else
 int CShopEx::Buy(LPCHARACTER ch, BYTE pos)
 #endif
 {
+#ifdef ENABLE_SHOP_STACK_MERGE
+	SShopExMergedItemGuard kMergedItem;
+#endif
 	BYTE tabIdx = pos / SHOP_HOST_ITEM_MAX_NUM;
 	BYTE slotPos = pos % SHOP_HOST_ITEM_MAX_NUM;
+#endif
 	if (tabIdx >= GetTabCount())
 	{
 		sys_log(0, "ShopEx::Buy : invalid position %d : %s", pos, ch->GetName());
@@ -142,7 +185,13 @@ int CShopEx::Buy(LPCHARACTER ch, BYTE pos)
 		return SHOP_SUBHEADER_GC_END;
 
 	TShopTableEx& shopTab = m_vec_shopTabs[tabIdx];
+#ifdef ENABLE_SHOP_TABS_BAERIM
+	TShopItemTable& r_item = shopTab.itemsEx[slotPos];
+	if (!r_item.vnum)
+		return SHOP_SUBHEADER_GC_INVALID_POS;
+#else
 	TShopItemTable& r_item = shopTab.items[slotPos];
+#endif
 
 	if (r_item.price < 0)
 	{
@@ -264,7 +313,7 @@ int CShopEx::Buy(LPCHARACTER ch, BYTE pos)
 	switch (r_item.price_type)
 	{
 		case SHOPEX_GOLD:
-			ch->PointChange(POINT_GOLD, -static_cast<int>(dwPrice), false);
+			ch->PointChange(POINT_GOLD, -dwPrice, false);	// 64 bit: an int cast turned prices > 2^31 into a gold gain
 			break;
 
 		case SHOPEX_COINS:
@@ -276,7 +325,7 @@ int CShopEx::Buy(LPCHARACTER ch, BYTE pos)
 			break;
 
 		case SHOPEX_EXP:
-			ch->PointChange(POINT_EXP, -static_cast<int>(dwPrice), false);
+			ch->PointChange(POINT_EXP, -dwPrice, false);
 	}
 	{
 		item->SetAttributes(r_item.aAttr);
@@ -349,7 +398,7 @@ int CShopEx::Buy(LPCHARACTER ch, BYTE pos)
 			if (bCount > 0)
 				item->AddToCharacter(ch, TItemPos(INVENTORY, iEmptyPos));
 			else
-				M2_DESTROY_ITEM(item);
+				kMergedItem.item = item;
 		}
 	else if (item->IsUpgradeItem())
 		{
@@ -399,7 +448,7 @@ int CShopEx::Buy(LPCHARACTER ch, BYTE pos)
 			if (bCount > 0)
 				item->AddToCharacter(ch, TItemPos(INVENTORY, iEmptyPos));
 			else
-				M2_DESTROY_ITEM(item);
+				kMergedItem.item = item;
 		}
 	else if (item->IsStone())
 		{
@@ -449,7 +498,7 @@ int CShopEx::Buy(LPCHARACTER ch, BYTE pos)
 			if (bCount > 0)
 				item->AddToCharacter(ch, TItemPos(INVENTORY, iEmptyPos));
 			else
-				M2_DESTROY_ITEM(item);
+				kMergedItem.item = item;
 		}
 	else if (item->IsGiftBox())
 		{
@@ -499,7 +548,7 @@ int CShopEx::Buy(LPCHARACTER ch, BYTE pos)
 			if (bCount > 0)
 				item->AddToCharacter(ch, TItemPos(INVENTORY, iEmptyPos));
 			else
-				M2_DESTROY_ITEM(item);
+				kMergedItem.item = item;
 		}
 	else if (item->IsChanger())
 		{
@@ -549,7 +598,7 @@ int CShopEx::Buy(LPCHARACTER ch, BYTE pos)
 			if (bCount > 0)
 				item->AddToCharacter(ch, TItemPos(INVENTORY, iEmptyPos));
 			else
-				M2_DESTROY_ITEM(item);
+				kMergedItem.item = item;
 		}
 #endif
 	else
@@ -602,7 +651,7 @@ int CShopEx::Buy(LPCHARACTER ch, BYTE pos)
 			if (bCount > 0)
 				item->AddToCharacter(ch, TItemPos(INVENTORY, iEmptyPos));
 			else
-				M2_DESTROY_ITEM(item);
+				kMergedItem.item = item;
 		}
 
 	ITEM_MANAGER::instance().FlushDelayedSave(item);

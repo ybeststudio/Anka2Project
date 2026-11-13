@@ -58,6 +58,7 @@ enum
 {
 	POINT_MAX_NUM = 255,
 	CHARACTER_NAME_MAX_LEN = 48,
+	COUNTRY_FLAG_MAX_LEN = 2,
 	PLAYER_NAME_MAX_LEN = 12,
 };
 
@@ -119,9 +120,6 @@ void initWiki();
 #endif
 #ifdef ENABLE_OFFLINESHOP_SEARCH_SYSTEM
 void initprivateShopSearch();
-#endif
-#ifdef ENABLE_RIDING_EXTENDED
-void initmountupgrade();
 #endif
 #ifdef ENABLE_DUNGEON_INFO
 void intdungeoninfo();

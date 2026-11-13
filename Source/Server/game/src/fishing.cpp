@@ -3,6 +3,9 @@
 #ifdef ENABLE_GUILD_QUEST
 #include "char.h"
 #include "guild_quest.h"
+#ifdef ENABLE_GLOBAL_RANKING
+#include "global_ranking.h"
+#endif
 #endif
 #include "constants.h"
 #include "fishing.h"
@@ -616,6 +619,10 @@ void Take(fishing_event_info* info, LPCHARACTER ch)
 								}
 							}
 						}
+#endif
+#ifdef ENABLE_GLOBAL_RANKING
+						if (item->GetType() == ITEM_FISH)
+							GlobalRanking_Add(ch, GLOBAL_RANK_FISH);
 #endif
 #ifdef ENABLE_RANKING
 						if ((item->GetType() == ITEM_FISH) || (item->GetType() == ITEM_MATERIAL) || (item->GetType() == ITEM_GIFTBOX) || (item->GetVnum() == 60315))

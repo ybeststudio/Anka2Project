@@ -10419,6 +10419,11 @@ VNUM	LOCALE_NAME
 55067	Cãlãrie (Precizie)
 55070	Cufãr Abilitãþi Cal
 55100	Doze Proteine Divine
+55320	Costum Bonus Timp (3z)
+55321	Costum Bonus Timp (7z)
+55322	Costum Bonus Timp (14z)
+55323	Costum Bonus Timp (30z)
+55327	Costum Bonus Timp (PvP)
 55400	Cutie Misterioasã
 55401	Ou de Maimuþã
 55402	Ou de Pãianjen
@@ -12290,3 +12295,703 @@ VNUM	LOCALE_NAME
 65111	Amulet of Gods+
 65112	Guild Energy (100%)
 65120	Silver Expansion
+90020	Costume Voucher
+90021	Mount Voucher
+90022	Pet Voucher
+40240	Baerim Blade
+40241	Baerim Dagger
+40242	Baerim Bow
+40243	Baerim Glaive
+40244	Baerim Bel
+40245	Baerim Fan
+40246	Baerim Sura
+40247	BombWork Blade
+40248	BombWork Dagger
+40249	BombWork Bow
+40250	BombWork Glaive
+40251	BombWork Bell
+40252	BombWork Fan
+40253	BombWork Sura
+40254	White Samurai Blade
+40255	White Samurai Dagger
+40256	White Samurai Bow
+40257	White Samurai Glaive
+40258	White Samurai Bell
+40259	White Samurai Fan
+40260	Green Phantom Blade
+40261	Green Phantom Dagger
+40262	Green Phantom Bow
+40263	Green Phantom Glaive
+40264	Green Phantom Bell
+40265	Green Phantom Fan
+40266	Black Sakura Blade
+40267	Black Sakura Dagger
+40268	Black Sakura Bow
+40269	Black Sakura Glaive
+40270	Black Sakura Bell
+40271	Black Sakura Fan
+40272	Imperial Paladin Blade
+40273	Imperial Paladin Dagger
+40274	Imperial Paladin Bow
+40275	Imperial Paladin Glaive
+40276	Imperial Paladin Bell
+40277	Imperial Paladin Fan
+42099	White Samurai Costume (m)
+42100	White Samurai Costume (f)
+42101	Green Phantom Costume (m)
+42102	Green Phantom Costume (f)
+42113	Black Sakura Costume (m)
+42114	Black Sakura Costume (f)
+42115	Imperial Paladin Costume (m)
+42116	Imperial Paladin Costume (f)
+45692	Cowhorn Helm (M)
+45693	Cowhorn Helm (F)
+45776	White Samurai Hair (m)
+45777	White Samurai Hair (f)
+45778	Green Phantom Hair (m)
+45779	Green Phantom Hair (f)
+45790	Black Sakura Hair (m)
+45791	Black Sakura Hair (f)
+45792	Imperial Paladin Hair (m)
+45793	Imperial Paladin Hair (f)
+52121	Samsara Dragon
+52122	Manny
+52123	Ellie
+52126	Lava Cave Lizard
+52127	Ice Cave Lizard
+52128	Magma Dragon
+52214	White Samurai Mount
+52215	Green Phantom Mount
+52217	Black Sakura Mount
+52218	Imperial Paladin Mount
+53381	Boneca Ambalabu
+53382	Cappuccino Assassino
+53389	Tralalelo Tralala
+53390	Tung Tung
+53391	Vecna
+53416	Black Sakura Pet
+53417	Imperial Paladin Pet
+86065	Snow Sentinel Sash
+86068	Divine Wings
+86069	Hellfire Wings
+86070	Crystal Wing
+86071	Nobori Wings
+86072	Rogue Wings
+86073	Flame Wings
+86075	Glacial Viking Sash
+86076	Wolf Stalker Sash
+86080	Christmas Knight Sash
+86081	Winter Reindeer Sash
+86082	Polar Suit Sash
+86143	White Samurai Wing
+86144	Green Phantom Wing
+86146	Black Sakura Wing
+86147	Imperial Paladin Wing
+86152	Sash skin (pirate)
+53500	Frank
+53504	Jiangshi Jnr
+53524	Baby Bestial Captain
+53525	Baby Black Orc
+53557	Baby Death Reaper
+53604	Baby Flame King
+53660	Baby Giant Turtle
+53661	Baby Ice Witch
+53671	Baby Jotun
+53672	Baby Ninetail
+53673	Baby Spider Baroness
+53674	Baby Spider Queen
+53675	Baby Tartaros
+53676	Baby Yellow Tiger
+53677	Ballerina Cappuccina
+53678	Bombardiro Crocodilo
+53679	Captain Waddle
+53680	Demagorgog
+53681	Little Black Steel Warrior
+53682	Little Black Wind Shaman
+53683	Mc Ping
+53684	Salamino Pinguino
+41928	Costum Garda Lunii (m)
+41929	Costum Garda Lunii (f)
+41970	Costum Argentina
+41971	Costum Argentina
+41972	Costum Belgia
+41973	Costum Belgia
+41986	Costum Germania
+41987	Costum Germania
+41988	Costum Italia
+41989	Costum Italia
+41990	Costum Mexic
+41991	Costum Mexic
+41992	Costum Polonia
+41993	Costum Polonia
+41994	Costum Portugalia
+41995	Costum Portugalia
+41996	Costum Romania
+41997	Costum Romania
+41998	Costum Spania
+41999	Costum Spania
+42000	Costum Turcia
+42001	Costum Turcia
+42011	Costum umbra lunii (m)
+42012	Costum umbra lunii (f)
+42013	Costum inger pur (m)
+42014	Costum inger pur (f)
+42015	Costum samurai fantoma (m)
+42016	Costum samurai fantoma (f)
+42017	Costum monarh infernal (m)
+42018	Costum monarh infernal (f)
+42019	Costum spiritul primaverii (m)
+42020	Costum spiritul primaverii (f)
+42021	Costum fantoma alba (m)
+42022	Costum fantoma alba (f)
+42023	Costum mareea verii (m)
+42024	Costum mareea verii (f)
+42025	Costum Goldazrael (m)
+42026	Costum Goldazrael (f)
+42027	Costum Hellboy (M)
+42028	Costum Hellboy (F)
+42029	Costum de bandit rosu (m)
+42030	 Costum de bandit rosu (f)
+42031	Costum aur alb (m)
+42032	 Costum aur alb (f)
+42035	Costum de invatacel vrajitor (m)
+42036	Costum de invatacel vrajitor (f)
+42037	Sihastru Sakura (m)
+42038	 Sihastru Sakura (f)
+42039	Costum de invatacel vrajitor (m)
+42040	Costum de invatacel vrajitor (f 
+42043	Costum stacojiu ascendent (m)
+42044	Costum stacojiu ascendent (f)
+42045	Costum suveran de ametist (m)
+42046	Costum suveran de ametist (f)
+42047	Costum gardian de azur (m)
+42048	Costum gardian de azur (f)
+42049	Costum dragon de obsidian (m)
+42050	Costum dragon de obsidian (f)
+42051	Costum de cires inflorit (m)
+42052	Costum de cires inflorit (f)
+42053	Costum floare neagra (m)
+42054	Costum floare neagra (f)
+42055	Costum albastru de razboinic (m)
+42056	Costum albastru de razboinic (f)
+42057	Costum rosu de razboinic (m)
+42058	Costum rosu de razboinic (f)
+42061	Astral Knight Costume (m)
+42062	Astral Knight Costume (f)
+42063	Dark Symbiote Costume (m)
+42064	Dark Symbiote Costume (f)
+42067	Haunted Vanguard Costume (m)
+42068	Haunted Vanguard Costume (f)
+42069	GhostBusters Costume (m)
+42070	GhostBusters Costume (f)
+42075	Halloween Dread Costume (m)
+42076	Halloween Dread Costume (f)
+42077	White Steel Costume (m)
+42078	White Steel Costume (f)
+42081	Red Fear Costume (m)
+42082	Red Fear Costume (f)
+42083	Frost Hwangs Costume (m)
+42084	Frost Hwangs Costume (f)
+45668	Frizura Garda Lunii (m)
+45669	Frizura Garda Lunii (f)
+45714	Frizura spiritul primaverii (m)
+45715	Frizura spiritul primaverii (f)
+45716	Frizura fantoma alba (m)
+45717	Frizura fantoma alba (f)
+45730	Freza de invatacel  vrajitor (m)
+45731	Freza de invatacel  vrajitor (f)
+45732	Freza Sakura (m)
+45733	Freza Sakura (f)
+45734	Freza de invatacel  vrajitor (m)
+45735	Freza de invatacel  vrajitor (f)
+45738	Freza ascendent stacojie (m)
+45739	Freza ascendent stacojie (f)
+45740	Freza suveran de ametist (m)
+45741	Freza suveran de ametist (f)
+45742	Freza dragon de obsidian (m)
+45743	Freza dragon de obsidian (f)
+45744	Freza gardian de azur (m)
+45745	Freza gardian de azur (f)
+45746	Freza de cires inflorit (m)
+45747	Freza de cires inflorit (f)
+45748	Freza floare neagra (m)
+45749	Freza floare neagra (f)
+45750	Freza albastra de razboinic (m)
+45751	Freza albastra de razboinic (f)
+45752	Freza rosie de razboinic (m)
+45753	Freza rosie de razboinic (f)
+45756	Astral Knight Hair (m)
+45757	Astral Knight Hair (f)
+45758	Dark Symbiote Hair (m)
+45759	Dark Symbiote Hair (f)
+45760	Haunted Vanguard Hair (m)
+45761	Haunted Vanguard Hair (f)
+45762	GhostBusters Hair (m)
+45763	GhostBusters Hair (f)
+45768	Halloween Dread Hair (m)
+45769	Halloween Dread Hair (f)
+45770	White Steel Hair (m)
+45771	White Steel Hair (f)
+45772	Red Fear Hair (m)
+45773	Red Fear Hair (f)
+45774	Frost Hwangs Hair (m)
+45775	Frost Hwangs Hair (f)
+52151	Garda Lunii
+52162	Spiritul Furtunii
+52167	Fantoma Quilin
+52170	Gardian de Bambus
+52173	Mount Auriu
+52174	Mount Negru
+52176	Mount Salbatic
+52178	Mount inger pur
+52179	Mount monarh infernal
+52181	Mount fantoma alba
+52182	Mount mareea verii
+52183	Mount Azrael auriu
+52184	Mount Hellboy
+52185	Mount bandit rosu
+52186	Mount din aur alb
+52190	Mount invatacel vrajitor
+52191	Mount Sakura
+52194	Mount dragon de obsidian
+52195	Mount gardian de azur
+52196	Mount cires inflorit
+52197	Mount floare neagra
+52200	Astral Knight Mount
+52203	Dark Symbiote Mount
+52211	White Steel Mount
+52212	Red Fear Mount
+52213	Frost Hwangs Mount
+53394	Pet inger pur
+53395	Pet fantoma alba
+53396	Pet mareea verii
+53397	Pet Azrael Auriu
+53398	Pet Hellboy
+53399	Pet bandit rosu
+53400	Pet din aur alb
+53402	Pet invatacel vrajitor
+53403	Pet Sakura
+53406	Pet dragon de obsidian
+53407	Pet gardian de azur
+53408	Dark Symbiote Pet
+53414	White Steel Pet
+40278	Sabie Cavaler Inflacarat
+40279	Pumnal Cavaler Inflacarat
+40280	Arc Cavaler Inflacarat
+40281	Glefa Cavaler Inflacarat
+40282	Clopot Cavaler Inflacarat
+40283	Evantai Cavaler Inflacarat
+40284	Lama Cavaler Inflacarat
+40285	Sabie Cavaler Inghetat
+40286	Pumnal Cavaler Inghetat
+40287	Arc Cavaler Inghetat
+40288	Glefa Cavaler Inghetat
+40289	Clopot Cavaler Inghetat
+40290	Evantai Cavaler Inghetat
+40291	Lama Cavaler Inghetat
+40292	Sabie Spiritul Furtunii 
+40293	Pumnal Spiritul Furtunii
+40294	Arc Spiritul Furtunii
+40295	Glefa Spiritul Furtunii
+40296	Clopot Spiritul Furtunii
+40297	Evantai Spiritul Furtunii
+40298	Lama Spiritul Furtunii
+40299	Sabie Garda Lunii
+40300	Pumnal Garda Lunii
+40301	Arc Garda Lunii
+40302	Glefa Garda Lunii
+40303	Clopot Garda Lunii
+40304	Evantai Garda Lunii
+40305	Lama Garda Lunii
+40306	Sabie Yin-Yang
+40307	Pumnal Yin-Yang
+40308	Arc Yin-Yang
+40309	Glefa Yin-Yang
+40310	Clopot Yin-Yang
+40311	Evantai Yin-Yang
+40312	Sabie Gardian de Bambus
+40313	Pumnal Gardian de Bambus
+40314	Arc Gardian de Bambus
+40315	Glefa Gardian de Bambus
+40316	Clopot Gardian de Bambus
+40317	Evantai Gardian de Bambus
+40318	Lama Gardian de Bambus
+40319	Sabie Baryt
+40320	Pumnal Baryt
+40321	Arc Baryt
+40322	Glefa Baryt
+40323	Clopot Baryt
+40324	Evantai Baryt
+40325	Sura Baryt
+40326	Sabie Yin-Yang
+40327	Pumnal Yin-Yang
+40328	Arc Yin-Yang
+40329	Glefa Yin-Yang
+40330	Clopot Yin-Yang
+40331	Evantai Yin-Yang
+40332	Sura Yin-Yang
+40333	Sabie Aurie
+40334	Pumnal Auriu
+40335	Arc Auriu
+40336	Glefa Aurie
+40337	Clopot Auriu
+40338	Evantai Auriu
+40339	Sura Auriu
+40340	Sabie Neagra
+40341	Pumnal Negru
+40342	Arc Negru
+40343	Glefa Neagra
+40344	Clopot Negru
+40345	Evantai Negru
+40346	Sura Negru
+40347	Sabie Lumea de Dincolo Inghetata
+40348	Pumnal Lumea de Dincolo Inghetat
+40349	Arc Lumea de Dincolo Inghetat
+40350	Glefa Lumea de Dincolo Inghetata
+40351	Clopot Lumea de Dincolo Inghetat
+40352	Evantai Lumea de Dincolo Inghetat
+40353	Sura Lumea de Dincolo Inghetat
+40354	Sabie Goldar
+40355	Pumnal Goldar
+40356	Arc Goldar
+40357	Glefa Goldar
+40358	Clopot Goldar
+40359	Evantai Goldar
+40360	Sura Goldar
+40361	Lama umbra lunii
+40362	Pumnal umbra lunii
+40363	Arc umbra lunii
+40364	Glefa umbra lunii
+40365	Clopot umbra lunii
+40366	Evantai umbra lunii
+40367	Sura umbra lunii
+40368	Lama inger pur
+40369	Pumnal inger pur
+40370	Arc inger pur
+40371	Glefa inger pur
+40372	Clopot inger pur
+40373	Evantai inger pur
+40374	Sura inger pur
+40375	Lama samurai fantoma
+40376	Pumnal samurai fantoma
+40377	Arc samurai fantoma
+40378	Glefa samurai fantoma
+40379	Clopot samurai fantoma
+40380	Evantai samurai fantoma
+40381	Sura samurai fantoma
+40382	Lama monarh infernal
+40383	Pumnal monarh infernal
+40384	Arc monarh infernal
+40385	Glefa monarh infernal
+40386	Clopot monarh infernal
+40387	Evantai monarh infernal
+40388	Sura monarh infernal
+40389	Lama spiritul primaverii
+40390	Pumnal spiritul primaverii
+40391	Arc spiritul primaverii
+40392	Glefa spiritul primaverii
+40393	Clopot spiritul primaverii
+40394	Evantai spiritul primaverii
+40395	Sura spiritul primaverii
+40396	Lama fantoma alba
+40397	Pumnal fantoma alba
+40398	Arc fantoma alba
+40399	Glefa fantoma alba
+40400	Clopot fantoma alba
+40401	Evantai fantoma alba
+40402	Sura fantoma alba
+40403	Lama mareea verii
+40404	Pumnal mareea verii
+40405	Arc mareea verii
+40406	Glefa mareea verii
+40407	Clopot mareea verii
+40408	Evantai mareea verii
+40409	Sura mareea verii
+40410	Lama Azrael auriu
+40411	Pumnal Azrael auriu
+40412	Arc Azrael auriu
+40413	Glefa Azrael auriu
+40414	Clopot Azrael auriu
+40415	Evantai Azrael auriu
+40416	Sura Azrael auriu
+40417	Lama Hellboy
+40418	Pumnal Hellboy
+40419	Arc Hellboy
+40420	Glefa Hellboy
+40421	Clopot Hellboy
+40422	Evantai Hellboy
+40423	Sura Hellboy
+40424	Lama de bandit rosu
+40425	Pumnal de bandit rosu
+40426	Arc de bandit rosu
+40427	Glefa de bandit rosu
+40428	Clopot de bandit rosu
+40429	Evantai de bandit rosu
+40430	Sura de bandit rosu
+40431	Lama din aur alb
+40432	Pumnal din aur alb
+40433	Arc din aur alb
+40434	Glefa din aur alb
+40435	Clopot din aur alb
+40436	Evantai din aur alb
+40437	Sura din aur alb
+40438	Lama de invatacel vrajitor
+40439	Pumnal de invatacel vrajitor
+40440	Arc de invatacel vrajitor
+40441	Glefa de invatacel vrajitor
+40442	Clopot de invatacel vrajitor
+40443	Evantai de invatacel vrajitor
+40444	Sura de invatacel vrajitor
+40445	Lama Sakura
+40446	Pumnal Sakura
+40447	Arc Sakura
+40448	Glefa Sakura
+40449	Clopot Sakura
+40450	Evantai Sakura
+40451	Lama de invatacel vrajitor
+40452	Pumnal de invatacel vrajitor
+40453	Arc de invatacel vrajitor
+40454	Glefa de invatacel vrajitor
+40455	Clopot de invatacel vrajitor
+40456	Evantai de invatacel vrajitor
+40457	Sura de invatacel vrajitor
+40458	Lama ascendenta stacojiu
+40459	Pumnal ascendent stacojiu
+40460	Arc ascendent stacojiu
+40461	Glefa ascendenta stacojiu
+40462	Clopot ascendent stacojiu
+40463	Evantai ascendent stacojiu
+40464	Sura ascendent stacojiu
+40465	Lama suveran de ametist
+40466	Pumnal suveran de ametist
+40467	Arc suveran de ametist
+40468	Glefa suveran de ametist 
+40469	Clopot suveran de ametist
+40470	Evantai suveran de ametist
+40471	Sura suveran de ametist
+40472	Lama dragon de obsidian
+40473	Pumnal dragon de obsidian
+40474	Arc dragon de obsidian
+40475	Glefa dragon de obsidian
+40476	Clopot dragon de obsidian
+40477	Evantai dragon de obsidian 
+40478	Sura dragon de obsidian
+40479	Lama gardian de azur
+40480	Pumnal gardian de azur
+40481	Arc gardian de azur
+40482	Glefa gardian de azur
+40483	Clopot gardian de azur
+40484	Evantai gardian de azur
+40485	Lama cires inflorit
+40486	Pumnal cires inflorit
+40487	Arc cires inflorit
+40488	Glefa cires inflorit
+40489	Clopot cires inflorit
+40490	Evantai cires inflorit
+40491	Sura cires inflorit
+40492	Lama floare neagra
+40493	Pumnal floare neagra
+40494	Arc floare neagra
+40495	Glefa floare neagra
+40496	Clopot floare neagra
+40497	Evantai floare neagra
+40498	Sura floare neagra
+40499	Lama albastra de razboinic
+40500	Pumnal albastru de razboinic
+40501	Arc albastru de razboinic
+40502	Glefa albastra de razboinic
+40503	Clopot albastru de razboinic
+40504	Evantai albastru de razboinic
+40505	Sura albastru de razboinic
+40506	Lama rosie de razboinic
+40507	Pumnal rosu de razboinic
+40508	Arc rosu de razboinic
+40509	Glefa rosie de razboinic
+40510	Clopot rosu de razboinic
+40511	Evantai rosu de razboinic
+40512	Sura rosu de razboinic
+40513	Astral Knight Blade
+40514	Astral Knight Dagger
+40515	Astral Knight Bow
+40516	Astral Knight Glaive
+40517	Astral Knight Bell
+40518	Astral Knight Fan
+40519	Astral Knight Sura
+40520	Dark Symbiote Blade
+40521	Dark Symbiote Dagger
+40522	Dark Symbiote Bow
+40523	Dark Symbiote Glaive
+40524	Dark Symbiote Bell
+40525	Dark Symbiote Fan
+40526	Dark Symbiote Sura
+40527	Haunted Vanguard Blade
+40528	Haunted Vanguard Dagger
+40529	Haunted Vanguard Bow
+40530	Haunted Vanguard Glaive
+40531	Haunted Vanguard Bell
+40532	Haunted Vanguard Fan
+40533	Haunted Vanguard Sura
+40534	GhostBusters Blade
+40535	GhostBusters Dagger
+40536	GhostBusters Bow
+40537	GhostBusters Glaive
+40538	GhostBusters Bell
+40539	GhostBusters Fan
+40540	GhostBusters Pickaxe
+40541	Halloween Dread Blade
+40542	Halloween Dread Dagger
+40543	Halloween Dread Bow
+40544	Halloween Dread Glaive
+40545	Halloween Dread Bell
+40546	Halloween Dread Fan
+40547	White Steel Blade
+40548	White Steel Dagger
+40549	White Steel Bow
+40550	White Steel Glaive
+40551	White Steel Bell
+40552	White Steel Fan
+40553	Red Fear Blade
+40554	Red Fear Dagger
+40555	Red Fear Bow
+40556	Red Fear Glaive
+40557	Red Fear Bell
+40558	Red Fear Fan
+40559	Frost Hwangs Blade
+40560	Frost Hwangs Dagger
+40561	Frost Hwangs Bow
+40562	Frost Hwangs Glaive
+40563	Frost Hwangs Bell
+40564	Frost Hwangs Fan
+40565	Frost Hwangs Sura
+86066	Esarfa Cavaler Inflacarat
+86067	Esarfa Cavaler Inghetat
+86074	Esarfa Spiritul Furtunii
+86079	Esarfa Garda Lunii
+86086	Esarfa Yin-Yang
+86088	Esarfa Gardian de Bambus
+86096	Esarfa Hwang Aurie
+86097	Esarfa Hwang Neagra
+86098	Esarfa Lumea de Dincolo Inghetata
+86099	Esarfa Godlar
+86100	Aripi umbra lunii
+86101	Aripi inger pur
+86102	Aripi samurai fantoma
+86103	Aripi monarh infernal
+86104	Aripi spiritul primaverii
+86105	Aripi negre
+86110	Aripi albe
+86112	Aripi fantoma alba
+86113	Aripi mareea verii
+86114	Aripi Azrael auriu
+86115	Aripi Hellboy
+86116	Aripi de bandit rosu
+86117	Aripi din aur alb
+86119	Aripi invatacel vrajitor
+86120	Aripi Sakura
+86121	 Aripi invatacel vrajitor
+86123	Aripi suveran de ametist
+86124	Aripi dragon de obsidian
+86125	Aripi gardian de azur
+86126	Aripi ascendent stacojiu
+86127	Aripi cires inflorit
+86128	Aripi floare neagra
+86129	Aripi razboinic albastru
+86130	Aripi razboinic rosu
+86132	Astral Knight Wing
+86133	Dark Symbiote Wing
+86135	Haunted Vanguard Wing
+86136	GhostBusters Wing
+86139	Halloween Dread Wing
+86140	White Steel Wing
+86141	Red Fear Wing
+86142	Frost Hwangs Wing
+42200	Costum Cavaler inflacarat (m)
+42201	Costum Cavaler inflacarat (f)
+42202	Costum Cavaler inghetat (m)
+42203	Costum Cavaler inghetat (f)
+42204	Costum Spiritul Furtunii (m)
+42205	Costum Spiritul Furtunii (f)
+42206	Costum Yin-Yang (m)
+42207	Costum Yin-Yang (f)
+42208	Costum Gardian de Bambus (m)
+42209	Costum Gardian de Bambus (f)
+42210	Costum Moovelous (M)
+42211	Costum Moovelous (F)
+42212	Tricou Baerim (M)
+42213	Tricou Baerim (F)
+42214	Costum Hwang
+42215	Costum Hwang Rosu
+42216	Costum Zin-Hwang
+42217	Costum San-Hwang
+42218	Costum Hwang Auriu (m)
+42219	Costum Hwang Auriu (f)
+42220	Costum Hwang Negru (m)
+42221	Costum Hwang Negru (f)
+42222	Costumul Lumii de Dincolo Inghetate (m)
+42223	Costumul Lumii de Dincolo Inghetate (f)
+42224	Costum Auriu
+42225	Costum Bosnia
+42226	Costum Bosnia
+42227	Costum Brazilia
+42228	Costum Brazilia
+42229	Costum Cehia
+42230	Costum Cehia
+42231	Costum Egipt
+42232	Costum Egipt
+42233	Costum Anglia
+42234	Costum Anglia
+42235	Costum Franta
+42236	Costum Franta
+42260	Abyss Warrior Costume (m)
+42261	Abyss Warrior Costume (f)
+45900	Frizura Cavaler Inflacarat (m)
+45901	Frizura Cavaler Inflacarat (f)
+45902	Frizura Cavaler Inghetat (m)
+45903	Frizura Cavaler Inghetat (f)
+45904	Frizura Spiritul Furtunii (m)
+45905	Frizura Spiritul Furtunii (f)
+45906	Frizura Yin Yang (m)
+45907	Frizura Yin Yang (f)
+45908	Frizura Gardian de Bambus (m)
+45909	Frizura Gardian de Bambus (f)
+45910	Freza Baerim (M)
+45911	Freza Baerim (F)
+45912	Frizura Hwang Aurie (m)
+45913	Frizura Hwang Aurie (f)
+45914	Frizura Hwang Neagra (m)
+45915	Frizura Hwang Neagra (f)
+45916	Frizura Lumea de Dincolo Inghetata (m)
+45917	Frizura Lumea de Dincolo Inghetata (f)
+45918	Frizura Aurie (m)
+45919	Frizura Aurie (f)
+45920	Frizura umbra lunii (m)
+45921	Frizura umbra lunii (f)
+45922	Frizura inger pur (m)
+45923	Frizura inger pur (f)
+45924	Frizura samurai fantoma (m)
+45925	Frizura samurai fantoma (f)
+45926	Frizura monarh infernal (m)
+45927	Frizura monarh infernal (f)
+45928	Frizura mareea verii (m)
+45929	Frizura mareea verii (f)
+45930	Freza Azrael auriu (m)
+45931	Freza Azrael auriu (f)
+45932	Freza Hellboy (m)
+45933	Freza Hellboy (f)
+45934	Freza de bandit rosu (m)
+45935	Freza de bandit rosu (f)
+45936	Freza din aur alb (m)
+45937	Freza din aur alb (f)
+45960	Polar Warden Hair (m)
+52300	Moa Curajos
+53700	Pet Auriu
+53701	Pet Negru
+58000	Horse
+77090	Abyss Sword
+77091	Abyss Dagger
+77092	Abyss Bow
+77093	Abyss Greatsword
+77094	Abyss Bell
+77095	Abyss Fan
+77096	Dark Warrior Sura
+86084	Abyss Sash

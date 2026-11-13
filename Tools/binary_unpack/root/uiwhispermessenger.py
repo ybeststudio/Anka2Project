@@ -25,6 +25,9 @@ GUILD_NAME = "[Guild]"
 GUILD_WHISPER_MARK = " : [[GW]]"	# server guild_donation.cpp: whisper sent to the whole guild, read only conversation
 FACE_IMAGES = ("warrior_m", "assassin_w", "sura_m", "shaman_w", "warrior_w", "assassin_m", "sura_w", "shaman_m", "wolfman_m")
 EMPIRE_FLAG_PATH = "d:/ymir work/ui/game/guild_application/empire_%d.png"	# reference WHISPER_EMPIRE_FLAG_PATH
+COUNTRY_FLAG_PATH = "d:/ymir work/ui/language_system/flags/%s.png"	# 33x20 (Vegas' format), drawn 16x12 like the name tail
+COUNTRY_FLAG_SCALE_X = 16.0 / 33.0
+COUNTRY_FLAG_SCALE_Y = 12.0 / 20.0
 INFO_REFRESH_INTERVAL = 20			# reference WHISPER_INFO_REFRESH_INTERVAL
 GUILD_TAG_COLOR = 0xff7fd4ff
 OFFLINE_NAME_COLOR = 0xff9a9a9a
@@ -680,6 +683,13 @@ class WhisperMessenger(ui.BoardWithTitleBar):
 		self.headerIcon.Show()
 		self.headerFlag = _MakeImage(self, EMPIRE_FLAG_PATH % 1, RIGHT_X + 42, PANEL_Y + 15)
 		self.headerFlag.Hide()
+		self.headerCountry = ui.ExpandedImageBox()
+		self.headerCountry.SetParent(self)
+		self.headerCountry.AddFlag("not_pick")
+		self.headerCountry.LoadImage(COUNTRY_FLAG_PATH % "tr")
+		self.headerCountry.SetScale(COUNTRY_FLAG_SCALE_X, COUNTRY_FLAG_SCALE_Y)
+		self.headerCountry.Hide()
+		self.countryFlags = {}		# name -> country code from the whisper details packet
 		self.headerName = _MakeText(self, "", RIGHT_X + 44, PANEL_Y + 14, 0xffffffff, "Tahoma:14b")
 		self.headerGuild = _MakeText(self, "", RIGHT_X + 44, PANEL_Y + 14, GUILD_TAG_COLOR, "Tahoma:14b")
 		self.conversationInfo = {}	# name -> (found, empire, race, online, guild, requestTime)
@@ -1323,6 +1333,21 @@ class WhisperMessenger(ui.BoardWithTitleBar):
 			return
 		self.conversationInfo[name] = (info or (0, 0, -1, 0, "-", 0))[:5] + (now,)
 		net.SendChatPacket("/anka_whisper_info " + name)
+		if app.ENABLE_COUNTRY_FLAG and name not in (GLOBAL_NAME, GUILD_NAME):
+			net.SendWhisperDetails(name)
+
+	def SetCountryFlag(self, name, countryFlag):
+		self.countryFlags[name] = countryFlag
+		if name == self.current:
+			self.__RefreshHeader()
+
+	def __IsShowCountryFlag(self):
+		# the same game option hides the flags in the name tails
+		try:
+			import advanced_options_runtime
+			return advanced_options_runtime.Get("show_country_flag", True)
+		except:
+			return True
 
 	def SetConversationInfo(self, name, found, empire, race, online, guildName):
 		self.conversationInfo[name] = (found, empire, race, online, guildName, _Now())
@@ -1336,6 +1361,7 @@ class WhisperMessenger(ui.BoardWithTitleBar):
 		conv = self.conversations.get(name, {"gm" : FALSE})
 		self.headerIcon.SetScale(1.0, 1.0)
 		self.headerFlag.Hide()
+		self.headerCountry.Hide()
 		self.headerGuild.SetText("")
 		nameColor = CARD_NAME_COLOR
 		if name == GLOBAL_NAME:
@@ -1355,6 +1381,11 @@ class WhisperMessenger(ui.BoardWithTitleBar):
 			if info and info[0] and 1 <= info[1] <= 3:
 				self.headerFlag.LoadImage(EMPIRE_FLAG_PATH % info[1])
 				self.headerFlag.Show()
+			countryFlag = self.countryFlags.get(name, "")
+			if countryFlag and self.__IsShowCountryFlag():
+				self.headerCountry.LoadImage(COUNTRY_FLAG_PATH % countryFlag)
+				self.headerCountry.SetScale(COUNTRY_FLAG_SCALE_X, COUNTRY_FLAG_SCALE_Y)
+				self.headerCountry.Show()
 			if info and info[0] and not info[3]:
 				nameColor = OFFLINE_NAME_COLOR
 			if info and info[4] and info[4] != "-":
@@ -1363,6 +1394,9 @@ class WhisperMessenger(ui.BoardWithTitleBar):
 		if self.headerFlag.IsShow():
 			self.headerFlag.SetPosition(x, PANEL_Y + 15)
 			x += self.headerFlag.GetWidth() + 6
+		if self.headerCountry.IsShow():
+			self.headerCountry.SetPosition(x, PANEL_Y + 18)
+			x += 16 + 6
 		self.headerName.SetPosition(x, PANEL_Y + 14)
 		self.headerName.SetPackedFontColor(nameColor)
 		self.headerName.SetText(self.__Title(name, TRUE))

@@ -157,6 +157,9 @@ class CItemData
 #ifdef ENABLE_AURA_COSTUME_SYSTEM
 			COSTUME_AURA,				//5
 #endif
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+			COSTUME_ACCE_SKIN,			// 7, server item_length.h
+#endif
 			COSTUME_NUM_TYPES,
 		};
 
@@ -456,6 +459,9 @@ class CItemData
 #endif
 #ifdef ENABLE_PASSIVE_SYSTEM
 			WEAR_PASSIVE,			// 32
+#endif
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+			WEAR_COSTUME_ACCE_SKIN = 39,	// server length.h
 #endif
 #ifdef ENABLE_SHINING_SYSTEM
 			WEAR_SHINING_WEAPON = 40,	// server length.h
@@ -847,6 +853,7 @@ class CItemData
 			APPLY_ATTBONUS_MEDI_PVM                                 = 336,
 			APPLY_ATTBONUS_PVM_STR                                  = 337,
 			APPLY_ATTBONUS_PVM_BERSERKER                            = 338,
+			APPLY_PET_EXP_BONUS                                     = 339,	// ENABLE_PET_EXP_BONUS
 
 			MAX_APPLY_NUM = 350,
 		};
@@ -918,6 +925,14 @@ class CItemData
 		void SetDescription(const std::string& c_rstDesc);
 
 		CGraphicThing *GetModelThing();
+#ifdef ENABLE_EFFECT_MODEL_ITEM
+		bool IsEffectModel() const
+		{
+			const size_t n = m_strModelFileName.size();
+			return n > 4 && (m_strModelFileName.compare(n - 4, 4, ".mse") == 0 || m_strModelFileName.compare(n - 4, 4, ".MSE") == 0);
+		}
+		const char* GetEffectModelFileName() const { return m_strModelFileName.c_str(); }
+#endif
 		CGraphicThing *GetSubModelThing();
 		CGraphicThing *GetDropModelThing();
 		CGraphicSubImage *GetIconImage();

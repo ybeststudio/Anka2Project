@@ -24,6 +24,7 @@
 #define ENABLE_AVG_PVM
 #define ENABLE_PASSIVE_SYSTEM
 #define ENABLE_SHINING_SYSTEM
+#define ENABLE_ACCE_SKIN_SYSTEM
 #define ENABLE_TITLE_SYSTEM
 
 using namespace std;
@@ -412,6 +413,9 @@ int get_Item_SubType_Value(int type_value, string inputString)
 #endif
 #ifdef ENABLE_AURA_COSTUME_SYSTEM
 		,"COSTUME_AURA"
+#endif
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+		,"COSTUME_ACCE_SKIN"
 #endif
 	};
 
@@ -1120,6 +1124,7 @@ int get_Item_ApplyType_Value(const string &inputString)
 		"APPLY_ATTBONUS_MEDI_PVM",
 		"APPLY_ATTBONUS_PVM_STR",
 		"APPLY_ATTBONUS_PVM_BERSERKER",
+		"APPLY_PET_EXP_BONUS",
 	};
 
 	int32_t retInt = -1;

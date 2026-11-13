@@ -3,6 +3,9 @@
 #ifdef ENABLE_GUILD_QUEST
 #include "char.h"
 #include "guild_quest.h"
+#ifdef ENABLE_GLOBAL_RANKING
+#include "global_ranking.h"
+#endif
 #endif
 #include "mining.h"
 #include "char.h"
@@ -388,6 +391,9 @@ namespace mining
 #endif
 #ifdef ENABLE_GUILD_QUEST
 			GuildQuest_AddProgress(ch, GUILD_QUEST_FISH);
+#endif
+#ifdef ENABLE_GLOBAL_RANKING
+			GlobalRanking_Add(ch, GLOBAL_RANK_MINING);
 #endif
 			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The mining has been successful."));
 		}

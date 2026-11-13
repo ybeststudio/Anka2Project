@@ -520,6 +520,59 @@ PyObject *appGetGlobalTime(PyObject *poSelf, PyObject *poArgs)
 	return Py_BuildValue("i", CPythonApplication::Instance().GetServerTime());
 }
 
+#ifdef ENABLE_DUNGEON_LIMIT_RENEWAL
+// computer identity for the dungeon PC daily limit: a hash of the Windows MachineGuid and the system volume serial
+// (only the hash leaves the computer)
+PyObject *appGetPCIdentity(PyObject *poSelf, PyObject *poArgs)
+{
+	static std::string s_identity;
+	if (s_identity.empty())
+	{
+		std::string source;
+
+		HKEY hKey = nullptr;
+		if (RegOpenKeyExA(HKEY_LOCAL_MACHINE, "SOFTWARE\\Microsoft\\Cryptography", 0, KEY_READ | KEY_WOW64_64KEY, &hKey) == ERROR_SUCCESS)
+		{
+			char szGuid[128] = {};
+			DWORD dwSize = sizeof(szGuid) - 1;
+			DWORD dwType = 0;
+			if (RegQueryValueExA(hKey, "MachineGuid", nullptr, &dwType, reinterpret_cast<LPBYTE>(szGuid), &dwSize) == ERROR_SUCCESS && dwType == REG_SZ)
+				source += szGuid;
+			RegCloseKey(hKey);
+		}
+
+		char szWindows[MAX_PATH] = {};
+		if (GetWindowsDirectoryA(szWindows, MAX_PATH) >= 3)
+		{
+			char szRoot[4] = { szWindows[0], ':', '\\', 0 };
+			DWORD dwSerial = 0;
+			if (GetVolumeInformationA(szRoot, nullptr, 0, &dwSerial, nullptr, nullptr, nullptr, 0))
+				source += "|" + std::to_string(dwSerial);
+		}
+
+		if (source.empty())
+		{
+			char szName[MAX_COMPUTERNAME_LENGTH + 1] = {};
+			DWORD dwLen = MAX_COMPUTERNAME_LENGTH + 1;
+			GetComputerNameA(szName, &dwLen);
+			source = szName;
+		}
+
+		// two FNV-1a 64 bit hashes with different seeds -> 32 hex characters
+		unsigned long long h1 = 1469598103934665603ULL, h2 = 1099511628211ULL * 31ULL;
+		for (unsigned char c : source)
+		{
+			h1 = (h1 ^ c) * 1099511628211ULL;
+			h2 = (h2 ^ (c + 0x5b)) * 1099511628211ULL;
+		}
+		char szHex[33];
+		snprintf(szHex, sizeof(szHex), "%016llx%016llx", h1, h2);
+		s_identity = szHex;
+	}
+	return Py_BuildValue("s", s_identity.c_str());
+}
+#endif
+
 PyObject *appGetGlobalTimeStamp(PyObject *poSelf, PyObject *poArgs)
 {
 	return Py_BuildValue("i", CPythonApplication::Instance().GetServerTimeStamp());
@@ -1428,6 +1481,9 @@ void initapp()
 		{ "GetTime",					appGetTime,						METH_VARARGS },
 		{ "GetGlobalTime",				appGetGlobalTime,				METH_VARARGS },
 		{ "GetGlobalTimeStamp",			appGetGlobalTimeStamp,			METH_VARARGS },
+#ifdef ENABLE_DUNGEON_LIMIT_RENEWAL
+		{ "GetPCIdentity",				appGetPCIdentity,				METH_VARARGS },
+#endif
 		{ "GetUpdateFPS",				appGetUpdateFPS,				METH_VARARGS },
 		{ "GetRenderFPS",				appGetRenderFPS,				METH_VARARGS },
 		{ "RotateCamera",				appRotateCamera,				METH_VARARGS },
@@ -3122,11 +3178,6 @@ void initapp()
 	PyModule_AddIntConstant(poModule, "ENABLE_ATLAS_SCALE", 0);
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-	PyModule_AddIntConstant(poModule, "ENABLE_RIDING_EXTENDED", 1);
-#else
-	PyModule_AddIntConstant(poModule, "ENABLE_RIDING_EXTENDED", 0);
-#endif
 
 #ifdef ENABLE_SKILL_BOOK_READING
 	PyModule_AddIntConstant(poModule, "ENABLE_SKILL_BOOK_READING",	1);
@@ -3152,108 +3203,6 @@ void initapp()
 	PyModule_AddIntConstant(poModule, "ENABLE_AUTO_SELL_SYSTEM", 0);
 #endif
 
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILDRENEWAL_SYSTEM", 1);
-	#ifdef ENABLE_SECOND_GUILDRENEWAL_SYSTEM
-	PyModule_AddIntConstant(poModule, "ENABLE_SECOND_GUILDRENEWAL_SYSTEM", 1);
-	#else
-	PyModule_AddIntConstant(poModule, "ENABLE_SECOND_GUILDRENEWAL_SYSTEM", 0);
-	#endif
-
-	#ifdef ENABLE_GUILD_MARK_RENEWAL
-		PyModule_AddIntConstant(poModule, "ENABLE_GUILD_MARK_RENEWAL", 1);
-	#else
-		PyModule_AddIntConstant(poModule, "ENABLE_GUILD_MARK_RENEWAL", 0);
-	#endif
-
-	#ifdef ENABLE_EXTENDED_GUILD_LEVEL
-	PyModule_AddIntConstant(poModule, "ENABLE_EXTENDED_GUILD_LEVEL", 1);
-	#else
-	PyModule_AddIntConstant(poModule, "ENABLE_EXTENDED_GUILD_LEVEL", 0);
-	#endif
-
-	#ifdef ENABLE_MEDAL_OF_HONOR
-	PyModule_AddIntConstant(poModule, "ENABLE_MEDAL_OF_HONOR", 1);
-	#else
-	PyModule_AddIntConstant(poModule, "ENABLE_MEDAL_OF_HONOR", 0);
-	#endif
-	#ifdef ENABLE_GUILD_DONATE_ATTENDANCE
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_DONATE_ATTENDANCE", 1);
-	#else
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_DONATE_ATTENDANCE", 0);
-	#endif
-
-	#ifdef ENABLE_GUILD_WAR_SCORE
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_WAR_SCORE", 1);
-	#else
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_WAR_SCORE", 0);
-	#endif
-	#ifdef ENABLE_GUILD_LAND_INFO
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_LAND_INFO", 1);
-	#else
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_LAND_INFO", 0);
-	#endif
-	#ifdef ENABLE_GUILDBANK_LOG
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILDBANK_LOG", 1);
-	#else
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILDBANK_LOG", 0);
-	#endif
-
-	#ifdef ENABLE_NEW_WORLD_GUILDRENEWAL
-	PyModule_AddIntConstant(poModule, "ENABLE_NEW_WORLD_GUILDRENEWAL", 1);
-	#else
-	PyModule_AddIntConstant(poModule, "ENABLE_NEW_WORLD_GUILDRENEWAL", 0);
-	#endif
-
-	#ifdef ENABLE_GUILD_REQUEST
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_REQUEST", 1);
-	#else
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_REQUEST", 0);
-	#endif
-#else
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILDRENEWAL_SYSTEM", 0);
-	#ifndef ENABLE_SECOND_GUILDRENEWAL_SYSTEM
-	PyModule_AddIntConstant(poModule, "ENABLE_SECOND_GUILDRENEWAL_SYSTEM", 0);
-	#endif
-
-	#ifndef ENABLE_EXTENDED_GUILD_LEVEL
-	PyModule_AddIntConstant(poModule, "ENABLE_EXTENDED_GUILD_LEVEL", 0);
-	#endif
-
-	#ifndef ENABLE_MEDAL_OF_HONOR
-	PyModule_AddIntConstant(poModule, "ENABLE_MEDAL_OF_HONOR", 0);
-	#endif
-
-	#ifndef ENABLE_GUILD_DONATE_ATTENDANCE
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_DONATE_ATTENDANCE", 0);
-	#endif
-
-	#ifndef ENABLE_GUILD_WAR_SCORE
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_WAR_SCORE", 0);
-	#endif
-
-	#ifndef ENABLE_GUILD_LAND_INFO
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_LAND_INFO", 0);
-	#endif
-
-	#ifndef ENABLE_GUILDBANK_LOG
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILDBANK_LOG", 0);
-	#endif
-
-	#ifndef ENABLE_NEW_WORLD_GUILDRENEWAL
-	PyModule_AddIntConstant(poModule, "ENABLE_NEW_WORLD_GUILDRENEWAL", 0);
-	#endif
-
-	#ifndef ENABLE_GUILD_REQUEST
-	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_REQUEST", 0);
-	#endif
-
-	#ifdef ENABLE_GUILDSTORAGE_SYSTEM
-		PyModule_AddIntConstant(poModule, "ENABLE_GUILDSTORAGE_SYSTEM", 1);
-	#else
-		PyModule_AddIntConstant(poModule, "ENABLE_GUILDSTORAGE_SYSTEM", 0);
-	#endif
-#endif
 
 #ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
 	PyModule_AddIntConstant(poModule, "ENABLE_STYLE_ATTRIBUTE_SYSTEM", 1);
@@ -3738,6 +3687,101 @@ void initapp()
 	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_RENEWAL_BAERIM", 1);
 #else
 	PyModule_AddIntConstant(poModule, "ENABLE_GUILD_RENEWAL_BAERIM", 0);
+#endif
+#ifdef ENABLE_LOGIN_RENEWAL_BAERIM
+	PyModule_AddIntConstant(poModule, "ENABLE_LOGIN_RENEWAL_BAERIM", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_LOGIN_RENEWAL_BAERIM", 0);
+#endif
+#ifdef ENABLE_CREATE_RENEWAL_BAERIM
+	PyModule_AddIntConstant(poModule, "ENABLE_CREATE_RENEWAL_BAERIM", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_CREATE_RENEWAL_BAERIM", 0);
+#endif
+#ifdef ENABLE_LOADING_RENEWAL_BAERIM
+	PyModule_AddIntConstant(poModule, "ENABLE_LOADING_RENEWAL_BAERIM", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_LOADING_RENEWAL_BAERIM", 0);
+#endif
+#ifdef ENABLE_TELEPORT_BAERIM
+	PyModule_AddIntConstant(poModule, "ENABLE_TELEPORT_BAERIM", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_TELEPORT_BAERIM", 0);
+#endif
+#ifdef ENABLE_DAMAGE_TRACE
+	PyModule_AddIntConstant(poModule, "ENABLE_DAMAGE_TRACE", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_DAMAGE_TRACE", 0);
+#endif
+
+#ifdef ENABLE_TARGET_DROP_CHANCE
+	PyModule_AddIntConstant(poModule, "ENABLE_TARGET_DROP_CHANCE", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_TARGET_DROP_CHANCE", 0);
+#endif
+
+#ifdef ENABLE_MOKOKO_SYSTEM
+	PyModule_AddIntConstant(poModule, "ENABLE_MOKOKO_SYSTEM", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_MOKOKO_SYSTEM", 0);
+#endif
+#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+	PyModule_AddIntConstant(poModule, "ENABLE_DUNGEON_WINDOW_BAERIM", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_DUNGEON_WINDOW_BAERIM", 0);
+#endif
+#ifdef ENABLE_SHOP_TABS_BAERIM
+	PyModule_AddIntConstant(poModule, "ENABLE_SHOP_TABS_BAERIM", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_SHOP_TABS_BAERIM", 0);
+#endif
+#ifdef ENABLE_DUNGEON_LIMIT_RENEWAL
+	PyModule_AddIntConstant(poModule, "ENABLE_DUNGEON_LIMIT_RENEWAL", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_DUNGEON_LIMIT_RENEWAL", 0);
+#endif
+
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+	PyModule_AddIntConstant(poModule, "ENABLE_ACCE_SKIN_SYSTEM", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_ACCE_SKIN_SYSTEM", 0);
+#endif
+
+#ifdef ENABLE_TIME_BONUS_COSTUME
+	PyModule_AddIntConstant(poModule, "ENABLE_TIME_BONUS_COSTUME", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_TIME_BONUS_COSTUME", 0);
+#endif
+#ifdef ENABLE_WARDROBE_SYSTEM
+	PyModule_AddIntConstant(poModule, "ENABLE_WARDROBE_SYSTEM", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_WARDROBE_SYSTEM", 0);
+#endif
+#ifdef ENABLE_COSTUME_SHOP_BAERIM
+	PyModule_AddIntConstant(poModule, "ENABLE_COSTUME_SHOP_BAERIM", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_COSTUME_SHOP_BAERIM", 0);
+#endif
+#ifdef ENABLE_GLOBAL_RANKING
+	PyModule_AddIntConstant(poModule, "ENABLE_GLOBAL_RANKING", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_GLOBAL_RANKING", 0);
+#endif
+
+#ifdef ENABLE_COUNTRY_FLAG
+	PyModule_AddIntConstant(poModule, "ENABLE_COUNTRY_FLAG", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_COUNTRY_FLAG", 0);
+#endif
+#ifdef ENABLE_SELECT_RENEWAL_BAERIM
+	PyModule_AddIntConstant(poModule, "ENABLE_SELECT_RENEWAL_BAERIM", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_SELECT_RENEWAL_BAERIM", 0);
+#endif
+#ifdef ENABLE_EMPIRE_RENEWAL_BAERIM
+	PyModule_AddIntConstant(poModule, "ENABLE_EMPIRE_RENEWAL_BAERIM", 1);
+#else
+	PyModule_AddIntConstant(poModule, "ENABLE_EMPIRE_RENEWAL_BAERIM", 0);
 #endif
 #ifdef ENABLE_BRAVE_CAPE_RENEWAL
 	PyModule_AddIntConstant(poModule, "ENABLE_BRAVE_CAPE_RENEWAL", 1);

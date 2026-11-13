@@ -305,6 +305,17 @@ class CItem : public CEntity
 		bool IsRideItem();
 		bool IsRamadanRing();
 
+#ifdef ENABLE_TIME_BONUS_COSTUME
+		bool IsCostumeBonusTimeItem() const;		// costume whose bonuses need bonus time (Baerim)
+		bool IsCostumeBonusActive() const;		// not a time costume, permanent or time left
+		void StartCostumeBonusExpireEvent();
+		void ClearCostumeBonusExpireEvent() { m_pkCostumeBonusExpireEvent = NULL; }
+	private:
+		bool m_bCostumeBonusApplied;			// the bonuses were added by ModifyPoints (removed the same way)
+		LPEVENT m_pkCostumeBonusExpireEvent;
+	public:
+#endif
+
 		void ClearMountAttributeAndAffect();
 		bool IsNewMountItem();
 
@@ -319,6 +330,7 @@ class CItem : public CEntity
 #ifdef ENABLE_MOUNT_PET_SKIN
 		bool IsCostumeMountSkin();
 		bool IsCostumePetSkin();
+		DWORD GetMountSkinVnum();	// mob shown by a costume mount: value1, else the APPLY_MOUNT value (official 52xxx costume mounts)
 #endif
 
 #ifdef ENABLE_PENDANT_SYSTEM

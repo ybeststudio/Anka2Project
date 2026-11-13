@@ -589,6 +589,9 @@ namespace quest
 				pPC = GetPC(pc);
 			}
 
+#ifndef ENABLE_ARENA2_DUNGEONS
+			// the generic kill / party kill handlers already ran above: this ran every `when kill` twice
+			// (double notices, double counters, server timers registered twice -> dungeon stages skipped)
 			if (m_mapNPC[QUEST_NO_NPC].OnKill(*pPC))
 				return;
 
@@ -597,6 +600,7 @@ namespace quest
 				m_pCurrentPartyMember = ch;
 				m_mapNPC[QUEST_NO_NPC].OnPartyKill(*GetPC(leader->GetPlayerID()));
 			}
+#endif
 		}
 		else
 			sys_err("QUEST: no such pc id : %d", pc);
@@ -1934,6 +1938,10 @@ namespace quest
 		if (m_mapServerTimer.find(make_pair(name, arg)) != m_mapServerTimer.end())
 		{
 			sys_err("already registered server timer name:%s arg:%u", name.c_str(), arg);
+#ifdef ENABLE_ARENA2_DUNGEONS
+			// the new event is already scheduled and nothing could cancel it later: drop it here
+			event_cancel(&event);
+#endif
 			return;
 		}
 		m_mapServerTimer.insert(make_pair(make_pair(name, arg), event));

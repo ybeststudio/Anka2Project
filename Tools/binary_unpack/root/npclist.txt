@@ -2876,7 +2876,7 @@
 9005	hotel_grandfa
 9006	hotel_grandma
 9007	arms
-9008	defence
+9008	defence_blue
 9009	sailor
 9010	goods_02
 9011	bank_02
@@ -3534,7 +3534,7 @@
 20131	flag_1
 20132	flag_2
 20133	flag_3
-20134	flag_d_03
+20134	flag_d_guild
 20135	flag_d_05
 20138	flag_d_02
 20142	plechi_easter2024_mount8
@@ -4455,3 +4455,96 @@
 4690	guild_battle_boss
 10985	warp_blue
 40003	hoverboard
+9393	plechi_aj_guard
+0	plechi_aj_guard	plechito_ancient_jungle\plechi_aj_guard
+
+20955	mount_samurai
+20956	mount_greenphantom
+20958	black_sakura_mount
+20959	imperial_paladin_mount
+34240	plechi_brainrot_boneca
+34241	plechi_brainrot_capuccino
+34242	plechi_brainrot_tralalelo
+34243	plechi_brainrot_tungtung
+34244	plechi_vecna_pet
+34248	black_sakura_pet
+34249	imperial_paladin_pet
+34250	plechi_ogpet_captain
+34251	plechi_ogpet_blackorc
+34252	plechi_ogpet_reaper
+34253	plechi_ogpet_flameking
+34254	plechi_ogpet_turtle
+34255	plechi_ogpet_icewitch
+34256	plechi_ogpet_jotun
+34257	plechi_ogpet_ninetail
+34258	plechi_ogpet_spiderking
+34259	plechi_ogpet_spiderqueen
+34260	plechi_ogpet_tartaros
+34261	plechi_ogpet_yellowtiger
+34262	plechi_brainrot_ballerina
+34263	plechi_brainrot_crocodilo
+34264	plechi_sum25_pet13
+0	plechi_sum25_pet13	plechito_summer2025_pets\plechi_sum25_pet13
+34265	plechi_demagorgog_pet
+34266	plechi_ogpet_66warrior
+34267	plechi_ogpet_66shaman
+34268	plechi_sum25_pet15
+0	plechi_sum25_pet15	plechito_summer2025_pets\plechi_sum25_pet15
+34269	plechi_brainrot_salamino
+20960	plechi_e2025_mount8
+0	plechi_e2025_mount8	plechito_easter2025_mounts\plechi_e2025_mount8
+20961	plechi_thunderspirit_mount
+20962	plechi_yyp_mount
+20963	plechi_panda_mount
+20964	sama_white_gold_lion
+0	sama_lion	sama_mounts\sama_lion
+20965	sama_black2_silver_lion
+0	sama_black2_silver_lion	sama_mounts\sama_lion
+20966	plechi_wild_mount01
+20967	ridack_angelunicorn
+20968	plechi_infm_mount
+20969	white_phantom_mount
+20970	summer_2026_mount
+20971	goldazrael_mount
+20972	hellboy_mount
+20973	red_rogue_mount
+20974	white_gold_mount
+20975	plechi_school2026_mount
+20976	mount_sakuradesert
+20977	obsidian_dragon_mount
+20978	azure_warden_mount
+20979	sakura_alpaca
+0	sakura_alpaca	npc_mount\sakura_alpaca
+20980	black_blossom_mount
+20981	astral_knight_mount
+20982	plechi_h2026_mount1
+0	plechi_h2026_mount1	plechito_halloween2026_mounts\plechi_h2026_mount1
+20983	0503mount_white
+20984	mount_redfear
+20985	1110mount_frost
+34270	ridack_pureangelpet
+34271	white_phantom_pet
+34272	summer_2026_pet
+34273	goldazrael_pet
+34274	hellboy_pet
+34275	red_rogue_pet
+34276	white_gold_pet
+34277	plechi_school2026_pet
+34278	pet_sakuradesert
+34279	obsidian_dragon_pet
+34280	azure_warden_pet
+34281	plechi_h2026_pet1
+0	plechi_h2026_pet1	plechito_halloween2026_pets\plechi_h2026_pet1
+34282	0503pet_white
+34283	white_gold_lion_young
+0	sama_lion_young	sama_pets\sama_lion_young
+34284	black2_silver_lion_young
+0	black2_silver_lion_young	sama_pets\sama_lion_young
+0	sama_white_gold_lion	sama_mounts\sama_lion
+0	white_gold_lion_young	sama_pets\sama_lion_young
+9101	ridack_herbdrop
+0	defence_blue	defence
+0	flag_d_guild	flag_d
+9477	armor_dummy
+0	plechi_sum2025_mount2	plechito_summer2025_mounts\plechi_sum2025_mount2
+20905	plechi_sum2025_mount2

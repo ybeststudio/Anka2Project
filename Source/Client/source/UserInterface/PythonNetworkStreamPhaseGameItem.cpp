@@ -575,7 +575,11 @@ bool CPythonNetworkStream::SendShopEndPacket()
 	return SendSequence();
 }
 
+#ifdef ENABLE_SHOP_TABS_BAERIM
+bool CPythonNetworkStream::SendShopBuyPacket(WORD bPos)
+#else
 bool CPythonNetworkStream::SendShopBuyPacket(BYTE bPos)
+#endif
 {
 	if (!__CanActMainInstance())
 		return true;
@@ -597,7 +601,7 @@ bool CPythonNetworkStream::SendShopBuyPacket(BYTE bPos)
 		return false;
 	}
 
-	if (!Send(sizeof(BYTE), &bPos))
+	if (!Send(sizeof(bPos), &bPos))	// a WORD with ENABLE_SHOP_TABS_BAERIM (ShopEx tab * 80 + slot)
 	{
 		Tracef("SendShopBuyPacket Error\n");
 		return false;

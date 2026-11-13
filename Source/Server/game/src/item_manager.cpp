@@ -853,12 +853,39 @@ void ITEM_MANAGER::FindItemMonster(LPCHARACTER ch, std::string name_item)
 #endif
 
 #if defined(ENABLE_MOB_DROP_INFO) | defined(ENABLE_RESP_SYSTEM)
-bool ITEM_MANAGER::CreateDropItemVector(LPCHARACTER pkChr, LPCHARACTER pkKiller, std::vector<std::pair<int,int> > & vec_item)
+bool ITEM_MANAGER::CreateDropItemVector(LPCHARACTER pkChr, LPCHARACTER pkKiller, std::vector<std::pair<int,int> > & vec_item
+#ifdef ENABLE_TARGET_DROP_CHANCE
+	, std::vector<DWORD>* pvec_chance
+#endif
+	)
 {
 	if (pkChr->IsPolymorphed() || pkChr->IsPC())
 	{
 		return false;
 	}
+
+#ifdef ENABLE_TARGET_DROP_CHANCE
+	// the same rolls as CreateDropItem, turned into a chance in 1/1,000,000 (premium, bonuses and level delta included)
+	int iChanceDelta = 100, iChanceRange = 4000000;
+	if (!GetDropPct(pkChr, pkKiller, iChanceDelta, iChanceRange))
+	{
+		iChanceDelta = 100;
+		iChanceRange = 4000000;
+	}
+	struct FChance
+	{
+		static DWORD Ppm(long long llPercent, long long llRange)
+		{
+			if (llRange <= 0 || llPercent <= 0)
+				return 0;
+			const long long v = llPercent * 1000000LL / llRange;
+			return (DWORD) MIN(v, 1000000LL);
+		}
+	};
+#define DROP_CHANCE_PUSH(value) do { if (pvec_chance) pvec_chance->push_back(value); } while (0)
+#else
+#define DROP_CHANCE_PUSH(value) do { } while (0)
+#endif
 
 	int iLevel = pkKiller->GetLevel();
 
@@ -887,6 +914,7 @@ bool ITEM_MANAGER::CreateDropItemVector(LPCHARACTER pkChr, LPCHARACTER pkKiller,
 		}
 
 		vec_item.push_back(std::make_pair(c_rInfo.m_dwVnum, 1));
+		DROP_CHANCE_PUSH(FChance::Ppm((long long) c_rInfo.m_iPercent * iChanceDelta / 100, iChanceRange));
 	}
 
 	{
@@ -900,6 +928,7 @@ bool ITEM_MANAGER::CreateDropItemVector(LPCHARACTER pkChr, LPCHARACTER pkKiller,
 			for (DWORD i = 0; i < v.size(); ++i)
 			{
 				vec_item.push_back(std::make_pair(v[i].dwVnum, v[i].iCount));
+				DROP_CHANCE_PUSH(FChance::Ppm((long long) v[i].dwPct * iChanceDelta / 100, iChanceRange));
 			}
 		}
 	}
@@ -916,8 +945,15 @@ bool ITEM_MANAGER::CreateDropItemVector(LPCHARACTER pkChr, LPCHARACTER pkKiller,
 			if (pGroup && !pGroup->IsEmpty())
 			{
 				auto vec_items = pGroup->GetVector();
+#ifdef ENABLE_TARGET_DROP_CHANCE
+				const DWORD dwGroupPpm = pGroup->GetKillPerDrop() > 0 ? FChance::Ppm(40000LL * iChanceDelta / pGroup->GetKillPerDrop(), iChanceRange) : 0;
+				size_t uiIndex = 0;
+#endif
 				for(auto &x : vec_items)
+				{
 					vec_item.push_back(std::make_pair(x.first,x.second));
+					DROP_CHANCE_PUSH((DWORD) ((long long) dwGroupPpm * pGroup->GetItemSharePpm(uiIndex++) / 1000000LL));
+				}
 			}
 		}
 	}
@@ -937,6 +973,7 @@ bool ITEM_MANAGER::CreateDropItemVector(LPCHARACTER pkChr, LPCHARACTER pkKiller,
 				{
 					DWORD dwVnum = v[i].dwVNum;
 					vec_item.push_back(std::make_pair(dwVnum, v[i].iCount));
+					DROP_CHANCE_PUSH(FChance::Ppm(v[i].dwPct, 1000000));
 				}
 			}
 		}
@@ -949,6 +986,7 @@ bool ITEM_MANAGER::CreateDropItemVector(LPCHARACTER pkChr, LPCHARACTER pkKiller,
 		if (it != m_map_dwEtcItemDropProb.end())
 		{
 			vec_item.push_back(std::make_pair(pkChr->GetMobDropItemVnum(), 1));
+			DROP_CHANCE_PUSH(FChance::Ppm((long long) it->second * iChanceDelta / 100, iChanceRange));
 		}
 	}
 
@@ -957,8 +995,10 @@ bool ITEM_MANAGER::CreateDropItemVector(LPCHARACTER pkChr, LPCHARACTER pkKiller,
 		if (pkChr->GetDropMetinStoneVnum())
 		{
 			vec_item.push_back(std::make_pair(pkChr->GetDropMetinStoneVnum(), 1));
+			DROP_CHANCE_PUSH(FChance::Ppm((long long) pkChr->GetDropMetinStonePct() * iChanceDelta * 400, iChanceRange));
 		}
 	}
+#undef DROP_CHANCE_PUSH
 
 	return vec_item.size();
 }

@@ -50,6 +50,9 @@ void P2P_MANAGER::Boot(LPDESC d)
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
 		p.bLanguage = ch->GetLanguage();
 #endif
+#ifdef ENABLE_COUNTRY_FLAG
+		strlcpy(p.szCountryFlag, ch->GetCountryFlag(), sizeof(p.szCountryFlag));
+#endif
 
 		d->Packet(&p, sizeof(p));
 	}
@@ -151,6 +154,9 @@ void P2P_MANAGER::Login(LPDESC d, const TPacketGGLogin * p)
 		pkCCI->bEmpire = p->bEmpire;
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
 		pkCCI->bLanguage = p->bLanguage;
+#endif
+#ifdef ENABLE_COUNTRY_FLAG
+		strlcpy(pkCCI->szCountryFlag, p->szCountryFlag, sizeof(pkCCI->szCountryFlag));
 #endif
 
 		if (p->bChannel == g_bChannel)

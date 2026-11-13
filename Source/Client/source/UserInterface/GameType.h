@@ -91,9 +91,6 @@ const DWORD c_Equipment_Shield 	= c_Equipment_Start + CItemData::WEAR_SHIELD;
 #endif
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-const int HORSE_MAX_LEVEL = 40;
-#endif
 
 #ifdef ENABLE_SKILL_COLOR_SYSTEM
 enum ESkillColorLength
@@ -236,6 +233,9 @@ const DWORD c_DragonSoul_Equip_Reserved_Count = c_DragonSoul_Equip_Slot_Max * 3;
 
 const DWORD c_DragonSoul_Inventory_Start = 0;
 const DWORD c_DragonSoul_Inventory_Box_Size = 32;
+#ifdef ENABLE_WARDROBE_SYSTEM
+const DWORD c_Wardrobe_Count = 4500;	// wardrobe storage cells (server WARDROBE_MAX_NUM)
+#endif
 const DWORD c_DragonSoul_Inventory_Count = CItemData::DS_SLOT_NUM_TYPES * DRAGON_SOUL_GRADE_MAX * c_DragonSoul_Inventory_Box_Size;
 const DWORD c_DragonSoul_Inventory_End = c_DragonSoul_Inventory_Start + c_DragonSoul_Inventory_Count;
 
@@ -369,6 +369,9 @@ enum EWindows
 	PET_FEED,
 #endif
 	GROUND,
+#ifdef ENABLE_WARDROBE_SYSTEM
+	WARDROBE = 20,				// fixed, same as the server
+#endif
 #ifdef ENABLE_SHOP_REPURCHASE
 	SHOP_REPURCHASE = 28,
 #endif
@@ -509,6 +512,12 @@ typedef struct SItemPos
 #ifdef ENABLE_RENEWAL_SWITCHBOT
 			case SWITCHBOT:
 				return cell < SWITCHBOT_SLOT_COUNT;
+				break;
+#endif
+
+#ifdef ENABLE_WARDROBE_SYSTEM
+			case WARDROBE:
+				return cell < c_Wardrobe_Count;
 				break;
 #endif
 

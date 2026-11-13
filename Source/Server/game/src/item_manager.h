@@ -220,6 +220,17 @@ class CMobItemGroup
 			return m_vecItems[GetOneIndex()];
 		}
 
+#ifdef ENABLE_TARGET_DROP_CHANCE
+		// share of item i in the kill group, in 1/1,000,000
+		DWORD GetItemSharePpm(size_t i) const
+		{
+			if (i >= m_vecProbs.size() || m_vecProbs.back() <= 0)
+				return 0;
+			const long long part = m_vecProbs[i] - (i ? m_vecProbs[i - 1] : 0);
+			return (DWORD) (part * 1000000LL / m_vecProbs.back());
+		}
+#endif
+
 #if defined(ENABLE_MOB_DROP_INFO) | defined(ENABLE_RESP_SYSTEM)
 		std::vector<std::pair<int,int>> GetVector()
 		{
@@ -435,7 +446,11 @@ class ITEM_MANAGER : public singleton<ITEM_MANAGER>
 #endif
 
 #ifdef ENABLE_MOB_DROP_INFO
-		bool			CreateDropItemVector(LPCHARACTER pkChr, LPCHARACTER pkKiller, std::vector<std::pair<int,int> > & vec_item);
+		bool			CreateDropItemVector(LPCHARACTER pkChr, LPCHARACTER pkKiller, std::vector<std::pair<int,int> > & vec_item
+#ifdef ENABLE_TARGET_DROP_CHANCE
+							, std::vector<DWORD>* pvec_chance = NULL
+#endif
+							);
 #endif
 
 		bool			ReadCommonDropItemFile(const char * c_pszFileName);

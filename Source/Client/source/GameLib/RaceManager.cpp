@@ -198,6 +198,9 @@ CRaceData* CRaceManager::__LoadRaceData(DWORD dwRaceIndex)
 
 	std::vector <std::string> vec_stFullPathName;
 	__GetRaceResourcePathes(dwRaceIndex, vec_stFullPathName);
+#ifdef ENABLE_EFFECT_MODEL_ITEM
+	vec_stFullPathName.emplace_back("season2/monster/");	// Baerim costume mounts / pets live there (last: the official folders keep their priority)
+#endif
 
 	CRaceData * pRaceData = CRaceData::New();
 	pRaceData->SetRace(dwRaceIndex);

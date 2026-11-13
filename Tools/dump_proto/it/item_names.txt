@@ -10419,6 +10419,11 @@ VNUM	LOCALE_NAME
 55067	Cavalca: precis.
 55070	B. Abilità del cavallo
 55100	Boccone proteico divino
+55320	Tempo Bonus Costume (3g)
+55321	Tempo Bonus Costume (7g)
+55322	Tempo Bonus Costume (14g)
+55323	Tempo Bonus Costume (30g)
+55327	Tempo Bonus Costume (PvP)
 55400	Cassa casuale
 55401	Uovo di scimmia
 55402	Uovo di ragno
@@ -12290,3 +12295,703 @@ VNUM	LOCALE_NAME
 65111	Amulet of Gods+
 65112	Guild Energy (100%)
 65120	Silver Expansion
+90020	Costume Voucher
+90021	Mount Voucher
+90022	Pet Voucher
+40240	Baerim Blade
+40241	Baerim Dagger
+40242	Baerim Bow
+40243	Baerim Glaive
+40244	Baerim Bel
+40245	Baerim Fan
+40246	Baerim Sura
+40247	BombWork Blade
+40248	BombWork Dagger
+40249	BombWork Bow
+40250	BombWork Glaive
+40251	BombWork Bell
+40252	BombWork Fan
+40253	BombWork Sura
+40254	White Samurai Blade
+40255	White Samurai Dagger
+40256	White Samurai Bow
+40257	White Samurai Glaive
+40258	White Samurai Bell
+40259	White Samurai Fan
+40260	Green Phantom Blade
+40261	Green Phantom Dagger
+40262	Green Phantom Bow
+40263	Green Phantom Glaive
+40264	Green Phantom Bell
+40265	Green Phantom Fan
+40266	Black Sakura Blade
+40267	Black Sakura Dagger
+40268	Black Sakura Bow
+40269	Black Sakura Glaive
+40270	Black Sakura Bell
+40271	Black Sakura Fan
+40272	Imperial Paladin Blade
+40273	Imperial Paladin Dagger
+40274	Imperial Paladin Bow
+40275	Imperial Paladin Glaive
+40276	Imperial Paladin Bell
+40277	Imperial Paladin Fan
+42099	White Samurai Costume (m)
+42100	White Samurai Costume (f)
+42101	Green Phantom Costume (m)
+42102	Green Phantom Costume (f)
+42113	Black Sakura Costume (m)
+42114	Black Sakura Costume (f)
+42115	Imperial Paladin Costume (m)
+42116	Imperial Paladin Costume (f)
+45692	Cowhorn Helm (M)
+45693	Cowhorn Helm (F)
+45776	White Samurai Hair (m)
+45777	White Samurai Hair (f)
+45778	Green Phantom Hair (m)
+45779	Green Phantom Hair (f)
+45790	Black Sakura Hair (m)
+45791	Black Sakura Hair (f)
+45792	Imperial Paladin Hair (m)
+45793	Imperial Paladin Hair (f)
+52121	Samsara Dragon
+52122	Manny
+52123	Ellie
+52126	Lava Cave Lizard
+52127	Ice Cave Lizard
+52128	Magma Dragon
+52214	White Samurai Mount
+52215	Green Phantom Mount
+52217	Black Sakura Mount
+52218	Imperial Paladin Mount
+53381	Boneca Ambalabu
+53382	Cappuccino Assassino
+53389	Tralalelo Tralala
+53390	Tung Tung
+53391	Vecna
+53416	Black Sakura Pet
+53417	Imperial Paladin Pet
+86065	Snow Sentinel Sash
+86068	Divine Wings
+86069	Hellfire Wings
+86070	Crystal Wing
+86071	Nobori Wings
+86072	Rogue Wings
+86073	Flame Wings
+86075	Glacial Viking Sash
+86076	Wolf Stalker Sash
+86080	Christmas Knight Sash
+86081	Winter Reindeer Sash
+86082	Polar Suit Sash
+86143	White Samurai Wing
+86144	Green Phantom Wing
+86146	Black Sakura Wing
+86147	Imperial Paladin Wing
+86152	Sash skin (pirate)
+53500	Frank
+53504	Jiangshi Jnr
+53524	Baby Bestial Captain
+53525	Baby Black Orc
+53557	Baby Death Reaper
+53604	Baby Flame King
+53660	Baby Giant Turtle
+53661	Baby Ice Witch
+53671	Baby Jotun
+53672	Baby Ninetail
+53673	Baby Spider Baroness
+53674	Baby Spider Queen
+53675	Baby Tartaros
+53676	Baby Yellow Tiger
+53677	Ballerina Cappuccina
+53678	Bombardiro Crocodilo
+53679	Captain Waddle
+53680	Demagorgog
+53681	Little Black Steel Warrior
+53682	Little Black Wind Shaman
+53683	Mc Ping
+53684	Salamino Pinguino
+41928	Costume Guardiano Lunare (m)
+41929	Costume Guardiano Lunare (f)
+41970	Maglia dell'Argentina
+41971	Maglia dell'Argentina
+41972	Maglia del Belgio
+41973	Maglia del Belgio
+41986	Maglia della Germania
+41987	Maglia della Germania
+41988	Maglia dell'Italia
+41989	Maglia dell'Italia
+41990	Maglia del Messico
+41991	Maglia del Messico
+41992	Maglia della Polonia
+41993	Maglia della Polonia
+41994	Maglia del Portogallo
+41995	Maglia del Portogallo
+41996	Maglia della Romania
+41997	Maglia della Romania
+41998	Maglia della Spagna
+41999	Maglia della Spagna
+42000	Maglia della Turchia
+42001	Maglia della Turchia
+42011	Costume Ombra Lunare (m)
+42012	Costume Ombra Lunare (f)
+42013	Costume Angelo Puro (m)
+42014	Costume Angelo Puro (f)
+42015	Costume Samurai Fantasma (m)
+42016	Costume Samurai Fantasma (f)
+42017	Costume Monarca Infernale (m)
+42018	Costume Monarca Infernale (f)
+42019	Costume Spirito della Primavera (m)
+42020	Costume Spirito della Primavera (f)
+42021	Costume Fantasma Bianco (M)
+42022	Costume Fantasma Bianco (F)
+42023	Costume Marea Estiva (m)
+42024	Costume Marea Estiva (f)
+42025	Costume Goldazrael (m)
+42026	Costume Goldazrael (f)
+42027	Costume Hellboy (m)
+42028	Costume Hellboy (f)
+42029	Costume Red Rogue (m)
+42030	Costume Red Rogue (f)
+42031	Costume Oro Bianco (m)
+42032	Costume Oro Bianco (f)
+42035	Costume da studioso di magia (m)
+42036	Costume da studiosa di magia (f)
+42037	Costume Deserto dei Sakura (m)
+42038	Costume Deserto dei Sakura (f)
+42039	Costume Studioso del Mago (m)
+42040	Costume Studioso del Mago (f)
+42043	Costume dell'Ascendente Cremisi (m)
+42044	Costume dell'Ascendente Cremisi (f)
+42045	Costume del Sovrano d'Ametista (m)
+42046	Costume del Sovrano d'Ametista (f)
+42047	Costume del Guardiano Azzurro (m)
+42048	Costume del Guardiano Azzurro (f)
+42049	Costume del Drago d'Ossidiana (m)
+42050	Costume del Drago d'Ossidiana (f)
+42051	Costume dei Fiori di Ciliegio (m)
+42052	Costume dei Fiori di Ciliegio (f)
+42053	Costume Fiore Nero (m)
+42054	Costume Fiore Nero (f)
+42055	Costume Guerriero Blu (m)
+42056	Costume Guerriero Blu (f)
+42057	Costume Guerriero Rosso (m)
+42058	Costume Guerriero Rosso (f)
+42061	Costume Cavaliere Astrale (m)
+42062	Costume Cavaliere Astrale (f)
+42063	Costume Simbionte Oscuro (m)
+42064	Costume Simbionte Oscuro (f)
+42067	Costume Avanguardia Infestata (m)
+42068	Costume Avanguardia Infestata (f)
+42069	Costume Ghostbusters (m)
+42070	Costume Ghostbusters (f)
+42075	Costume Terrore di Halloween (m)
+42076	Costume Terrore di Halloween (f)
+42077	Costume Acciaio Bianco (m)
+42078	Costume Acciaio Bianco (f)
+42081	Costume Paura Rossa (m)
+42082	Costume Paura Rossa (f)
+42083	Costume Hwang di Ghiaccio (m)
+42084	Costume Hwang di Ghiaccio (f)
+45668	Capelli Guardiano Lunare (m)
+45669	Capelli Guardiano Lunare (f)
+45714	Capelli Spirito della Primavera (m)
+45715	Capelli Spirito della Primavera (f)
+45716	Capelli Fantasma Bianco (M)
+45717	Capelli Fantasma Bianco (F)
+45730	Capelli dello studioso di magia (m)
+45731	Capelli dalla studiosa di magia (f)
+45732	Capigliatura Deserto dei Sakura (m)
+45733	Capigliatura Deserto dei Sakura (f)
+45734	Capigliatura Studioso del Mago (m)
+45735	Capigliatura Studioso del Mago (f)
+45738	Capigliatura dell'Ascendente Cremisi (m)
+45739	Capigliatura dell'Ascendente Cremisi (f)
+45740	Capigliatura del Sovrano d'Ametista (m)
+45741	Capigliatura del Sovrano d'Ametista (f)
+45742	Capigliatura del Drago d'Ossidiana (m)
+45743	Capigliatura del Drago d'Ossidiana (f)
+45744	Capigliatura del Guardiano Azzurro (m)
+45745	Capigliatura del Guardiano Azzurro (f)
+45746	Capigliatura dei Fiori di Ciliegio (m)
+45747	Capigliatura dei Fiori di Ciliegio (f)
+45748	Capigliatura Fiore Nero (m)
+45749	Capigliatura Fiore Nero (f)
+45750	Pettinatura Guerriero Blu (m)
+45751	Pettinatura Guerriero Blu (f)
+45752	Pettinatura Guerriero Rosso (m)
+45753	Pettinatura Guerriero Rosso (f)
+45756	Capelli Cavaliere Astrale (m)
+45757	Capelli Cavaliere Astrale (f)
+45758	Capelli Simbionte Oscuro (m)
+45759	Capelli Simbionte Oscuro (f)
+45760	Capelli Avanguardia Infestata (m)
+45761	Capelli Avanguardia Infestata (f)
+45762	Capelli Ghostbusters (m)
+45763	Capelli Ghostbusters (f)
+45768	Acconciatura Terrore di Halloween (m)
+45769	Acconciatura Terrore di Halloween (f)
+45770	Acconciatura Acciaio Bianco (m)
+45771	Acconciatura Acciaio Bianco (f)
+45772	Acconciatura Paura Rossa (m)
+45773	Acconciatura Paura Rossa (f)
+45774	Acconciatura Hwang di Ghiaccio (m)
+45775	Acconciatura Hwang di Ghiaccio (f)
+52151	Guardiano Lunare
+52162	Spirito della Tempesta
+52167	Qilin Spettrale
+52170	Guardiano di Bambù
+52173	Cavalcatura Dorata
+52174	Cavalcatura Nera
+52176	Cavalcatura Selvaggia
+52178	Cavalcatura Angelo Puro
+52179	Cavalcatura Monarca Infernale
+52181	Cavalcatura Fantasma Bianco
+52182	Cavalcatura Marea Estiva
+52183	Cavalcatura Goldazrael
+52184	Cavalcatura Hellboy
+52185	Cavalcatura Red Rogue
+52186	Cavalcatura Oro Bianco
+52190	Cavalcatura dello studioso di magia
+52191	Cavalcatura Deserto dei Sakura
+52194	Cavalcatura del Drago d'Ossidiana
+52195	Cavalcatura del Guardiano Azzurro
+52196	Mount dei Fiori di Ciliegio
+52197	Cavalcatura Fiore Nero
+52200	Cavalcatura Cavaliere Astrale
+52203	Cavalcatura Simbionte Oscuro
+52211	Cavalcatura Acciaio Bianco
+52212	Cavalcatura Paura Rossa
+52213	Cavalcatura Hwang di Ghiaccio
+53394	Pet Angelo Puro
+53395	Pet Fantasma Bianco
+53396	Pet Marea Estiva
+53397	Cucciolo Goldazrael
+53398	Cucciolo Hellboy
+53399	Cucciolo Red Rogue
+53400	Cucciolo Oro Bianco
+53402	Pet dello studioso di magia
+53403	Pet Deserto dei Sakura
+53406	Pet del Drago d'Ossidiana
+53407	Pet del Guardiano Azzurro
+53408	Pet Simbionte Oscuro
+53414	Pet Acciaio Bianco
+40278	Spada Cavaliere Ardente
+40279	Pugnale Cavaliere Ardente
+40280	Arco Cavaliere Ardente
+40281	Spadone Cavaliere Ardente
+40282	Campana Cavaliere Ardente
+40283	Ventaglio Cavaliere Ardente
+40284	Spada Cavaliere Ardente
+40285	Spada Cavaliere Gelato
+40286	Pugnale Cavaliere Gelato
+40287	Arco Cavaliere Gelato
+40288	Spadone Cavaliere Gelato
+40289	Campana Cavaliere Gelato
+40290	Ventaglio Cavaliere Gelato
+40291	Spada Cavaliere Gelato
+40292	Lama Spirito della Tempesta
+40293	Pugnale Spirito della Tempesta
+40294	Arco Spirito della Tempesta
+40295	Glaive Spirito della Tempesta
+40296	Campana Spirito della Tempesta
+40297	Ventaglio Spirito della Tempesta
+40298	Sura Spirito della Tempesta
+40299	Lama Guardiano della Luna
+40300	Pugnale Guardiano della Luna
+40301	Arco Guardiano della Luna
+40302	Glaive Guardiano della Luna
+40303	Campana Guardiano della Luna
+40304	Campana Guardiano della Luna
+40305	Sura Guardiano della Luna
+40306	Lama Yin-Yang
+40307	Pugnale Yin-Yang
+40308	Arco Yin-Yang
+40309	Glaive Yin-Yang
+40310	Campana Yin-Yang
+40311	Ventaglio Yin-Yang
+40312	Lama Guardiano di Bambù
+40313	Pugnale Guardiano di Bambù
+40314	Arco Guardiano di Bambù
+40315	Glaive Guardiano di Bambù
+40316	Campana Guardiano di Bambù
+40317	Ventaglio Guardiano di Bambù
+40318	Sura Guardiano di Bambù
+40319	Lama Baryt
+40320	Pugnale Baryt
+40321	Arco Baryt
+40322	Gladio Baryt
+40323	Campana Baryt
+40324	Ventaglio Baryt
+40325	Sura Baryt
+40326	Lama Yin-Yang
+40327	Pugnale Yin-Yang
+40328	Arco Yin-Yang
+40329	Gladio Yin-Yang
+40330	Campana Yin-Yang
+40331	Ventaglio Yin-Yang
+40332	Sura Yin-Yang
+40333	Lama Dorata
+40334	Pugnale Dorato
+40335	Arco Dorato
+40336	Gladio Dorato
+40337	Campana Dorata
+40338	Ventaglio Dorato
+40339	Sura Dorato
+40340	Lama Nera
+40341	Pugnale Nero
+40342	Arco Nero
+40343	Gladio Nero
+40344	Campana Nera
+40345	Ventaglio Nero
+40346	Sura Nero
+40347	Lama Inferi Gelati
+40348	Pugnale Inferi Gelati
+40349	Arco Inferi Gelati
+40350	Gladio Inferi Gelati
+40351	Campana Inferi Gelati
+40352	Ventaglio Inferi Gelati
+40353	Sura Inferi Gelati
+40354	Lama Goldar
+40355	Pugnale Goldar
+40356	Arco Goldar
+40357	Gladio Goldar
+40358	Campana Goldar
+40359	Ventaglio Goldar
+40360	Sura Goldar
+40361	Lama Ombra Lunare
+40362	Pugnale Ombra Lunare
+40363	Arco Ombra Lunare
+40364	Gladio Ombra Lunare
+40365	Campana Ombra Lunare
+40366	Ventaglio Ombra Lunare
+40367	Sura Ombra Lunare
+40368	Lama Angelo Puro
+40369	Pugnale Angelo Puro
+40370	Arco Angelo Puro
+40371	Gladio Angelo Puro
+40372	Campana Angelo Puro
+40373	Ventaglio Angelo Puro
+40374	Sura Angelo Puro
+40375	Lama Samurai Fantasma
+40376	Pugnale Samurai Fantasma
+40377	Arco Samurai Fantasma
+40378	Gladio Samurai Fantasma
+40379	Campana Samurai Fantasma
+40380	Ventaglio Samurai Fantasma
+40381	Sura Samurai Fantasma
+40382	Lama Monarca Infernale
+40383	Pugnale Monarca Infernale
+40384	Arco Monarca Infernale
+40385	Gladio Monarca Infernale
+40386	Campana Monarca Infernale
+40387	Ventaglio Monarca Infernale
+40388	Sura Monarca Infernale
+40389	Lama Spirito della Primavera
+40390	Pugnale Spirito della Primavera
+40391	Arco Spirito della Primavera
+40392	Gladio Spirito della Primavera
+40393	Campana Spirito della Primavera
+40394	Ventaglio Spirito della Primavera
+40395	Sura Spirito della Primavera
+40396	Lama Fantasma Bianco
+40397	Pugnale Fantasma Bianco
+40398	Arco Fantasma Bianco
+40399	Gladio Fantasma Bianco
+40400	Campana Fantasma Bianca
+40401	Ventaglio Fantasma Bianco
+40402	Sura Fantasma Bianco
+40403	Lama Marea Estiva
+40404	Pugnale Marea Estiva
+40405	Arco Marea Estiva
+40406	Gladio Marea Estiva
+40407	Campana Marea Estiva
+40408	Ventaglio Marea Estiva
+40409	Sura Marea Estiva
+40410	Spada Goldazrael
+40411	Pugnale Goldazrael
+40412	Arco Goldazrael
+40413	Spadone Goldazrael
+40414	Campana Goldazrael
+40415	Ventaglio Goldazrael
+40416	Sura Goldazrael
+40417	Spada Hellboy
+40418	Pugnale Hellboy
+40419	Arco Hellboy
+40420	Spadone Hellboy
+40421	Campana Hellboy
+40422	Ventaglio Hellboy
+40423	Sura Hellboy
+40424	Spada Red Rogue
+40425	Pugnale Red Rogue
+40426	Arco Red Rogue
+40427	Spadone Red Rogue
+40428	Campana Red Rogue
+40429	Ventaglio Red Rogue
+40430	Sura Red Rogue
+40431	Spada Oro Bianco
+40432	Pugnale Oro Bianco
+40433	Arco Oro Bianco
+40434	Spadone Oro Bianco
+40435	Campana Oro Bianco
+40436	Ventaglio Oro Bianco
+40437	Sura Oro Bianco
+40438	Lama dello studioso di magia
+40439	pugnali dello studioso di magia
+40440	Arco dello studioso di magia
+40441	Spadone dello studioso di magia
+40442	Campana dello studioso di magia
+40443	Ventaglio dello studioso di magia
+40444	Sura studioso di magia
+40445	Lama Deserto dei Sakura
+40446	Pugnale Deserto dei Sakura
+40447	Arco Deserto dei Sakura
+40448	Falcione Deserto dei Sakura
+40449	Campana Deserto dei Sakura
+40450	Ventaglio Deserto dei Sakura
+40451	Lama Studioso del Mago
+40452	Pugnale Studioso del Mago
+40453	Arco Studioso del Mago
+40454	Falcione Studioso del Mago
+40455	Campana Studioso del Mago
+40456	Ventaglio Studioso del Mago
+40457	Sura Studioso del Mago
+40458	Lama dell'Ascendente Cremisi
+40459	Pugnale dell'Ascendente Cremisi
+40460	Arco dell'Ascendente Cremisi
+40461	Falcione dell'Ascendente Cremisi
+40462	Campana dell'Ascendente Cremisi
+40463	Ventaglio dell'Ascendente Cremisi
+40464	Sura dell'Ascendente Cremisi
+40465	Lama del Sovrano d'Ametista
+40466	Pugnale del Sovrano d'Ametista
+40467	Arco del Sovrano d'Ametista
+40468	Falcione del Sovrano d'Ametista
+40469	Campana del Sovrano d'Ametista
+40470	Ventaglio del Sovrano d'Ametista
+40471	Sura del Sovrano d'Ametista
+40472	Lama del Drago d'Ossidiana
+40473	Pugnale del Drago d'Ossidiana
+40474	Arco del Drago d'Ossidiana
+40475	Falcione del Drago d'Ossidiana
+40476	Campana del Drago d'Ossidiana
+40477	Ventaglio del Drago d'Ossidiana
+40478	Sura del Drago d'Ossidiana
+40479	Lama del Guardiano Azzurro
+40480	Pugnale del Guardiano Azzurro
+40481	Arco del Guardiano Azzurro
+40482	Falcione del Guardiano Azzurro
+40483	Campana del Guardiano Azzurro
+40484	Ventaglio del Guardiano Azzurro
+40485	Lama dei Fiori di Ciliegio
+40486	Pugnale dei Fiori di Ciliegio
+40487	Arco dei Fiori di Ciliegio
+40488	Falcione dei Fiori di Ciliegio
+40489	Campana dei Fiori di Ciliegio
+40490	Ventaglio dei Fiori di Ciliegio
+40491	Sura dei Fiori di Ciliegio
+40492	Spada Fiore Nero
+40493	Pugnale Fiore Nero
+40494	Arco Fiore Nero
+40495	Spadone Fiore Nero
+40496	Campana Fiore Nero
+40497	Ventaglio Fiore Nero
+40498	Artiglio Fiore Nero
+40499	Lama Guerriero Blu
+40500	Pugnale Guerriero Blu
+40501	Arco Guerriero Blu
+40502	Spada a due mani Guerriero Blu
+40503	Campana Guerriero Blu
+40504	Ventaglio Guerriero Blu
+40505	Spada Sura Guerriero Blu
+40506	Lama Guerriero Rosso
+40507	Pugnale Guerriero Rosso
+40508	Arco Guerriero Rosso
+40509	Spada a due mani Guerriero Rosso
+40510	Campana Guerriero Rosso
+40511	Ventaglio Guerriero Rosso
+40512	Spada Sura Guerriero Rosso
+40513	Spada Cavaliere Astrale
+40514	Pugnale Cavaliere Astrale
+40515	Arco Cavaliere Astrale
+40516	Glaive Cavaliere Astrale
+40517	Campana Cavaliere Astrale
+40518	Ventaglio Cavaliere Astrale
+40519	Spada Sura Cavaliere Astrale
+40520	Spada Simbionte Oscuro
+40521	Pugnale Simbionte Oscuro
+40522	Arco Simbionte Oscuro
+40523	Glaive Simbionte Oscuro
+40524	Campana Simbionte Oscuro
+40525	Ventaglio Simbionte Oscuro
+40526	Spada Sura Simbionte Oscuro
+40527	Spada Avanguardia Infestata
+40528	Pugnale Avanguardia Infestata
+40529	Arco Avanguardia Infestata
+40530	Glaive Avanguardia Infestata
+40531	Campana Avanguardia Infestata
+40532	Ventaglio Avanguardia Infestata
+40533	Spada Sura Avanguardia Infestata
+40534	Spada Ghostbusters
+40535	Pugnale Ghostbusters
+40536	Arco Ghostbusters
+40537	Glaive Ghostbusters
+40538	Campana Ghostbusters
+40539	Ventaglio Ghostbusters
+40540	Piccone Ghostbusters
+40541	Spada Terrore di Halloween
+40542	Pugnale Terrore di Halloween
+40543	Arco Terrore di Halloween
+40544	Glaive Terrore di Halloween
+40545	Campana Terrore di Halloween
+40546	Ventaglio Terrore di Halloween
+40547	Spada Acciaio Bianco
+40548	Pugnale Acciaio Bianco
+40549	Arco Acciaio Bianco
+40550	Glaive Acciaio Bianco
+40551	Campana Acciaio Bianco
+40552	Ventaglio Acciaio Bianco
+40553	Spada Paura Rossa
+40554	Pugnale Paura Rossa
+40555	Arco Paura Rossa
+40556	Glaive Paura Rossa
+40557	Campana Paura Rossa
+40558	Ventaglio Paura Rossa
+40559	Spada Hwang di Ghiaccio
+40560	Pugnale Hwang di Ghiaccio
+40561	Arco Hwang di Ghiaccio
+40562	Glaive Hwang di Ghiaccio
+40563	Campana Hwang di Ghiaccio
+40564	Ventaglio Hwang di Ghiaccio
+40565	Spada Sura Hwang di Ghiaccio
+86066	Stola Cavaliere Ardente
+86067	Stola Cavaliere Gelato
+86074	Stola Spirito della Tempesta
+86079	Stola Guardiano della Luna
+86086	Stola Yin-Yang
+86088	Stola Guardiano di Bambù
+86096	Stola Hwang Dorata
+86097	Stola Hwang Nera
+86098	Stola Inferi Gelati
+86099	Stola Goldar
+86100	Ala Ombra Lunare
+86101	Ala Angelo Puro
+86102	Ala Samurai Fantasma
+86103	Ala Monarca Infernale
+86104	Ala Spirito della Primavera
+86105	Ala Nera
+86110	Ala Bianca
+86112	Ala Fantasma Bianca
+86113	Ala Marea Estiva
+86114	Ala Goldazrael
+86115	Ala Hellboy
+86116	Ala Red Rogue
+86117	Ala Oro Bianco
+86119	Ali dello studioso di magia
+86120	Ali Deserto dei Sakura
+86121	Ali Studioso del Mago
+86123	Ali del Sovrano d'Ametista
+86124	Ali del Drago d'Ossidiana
+86125	Ali del Guardiano Azzurro
+86126	Ali dell'Ascendente Cremisi
+86127	Ali dei Fiori di Ciliegio
+86128	Ali Fiore Nero
+86129	Ala Guerriero Blu
+86130	Ala Guerriero Rosso
+86132	Ala Cavaliere Astrale
+86133	Ala Simbionte Oscuro
+86135	Ala Avanguardia Infestata
+86136	Ala Ghostbusters
+86139	Ali Terrore di Halloween
+86140	Ali Acciaio Bianco
+86141	Ali Paura Rossa
+86142	Ali Hwang di Ghiaccio
+42200	Costume Cavaliere Ardente (M)
+42201	Costume Cavaliere Ardente (F)
+42202	Costume Cavaliere Gelato (M)
+42203	Costume Cavaliere Gelato (F)
+42204	Costume Spirito della Tempesta (m)
+42205	Costume Spirito della Tempesta (f)
+42206	Costume Yin-Yang (m)
+42207	Costume Yin-Yang (f)
+42208	Costume Guardiano di Bambù (m)
+42209	Costume Guardiano di Bambù (f)
+42210	Tuta Moovelous (M)
+42211	Tuta Moovelous (f)
+42212	Maglia Baerim (M)
+42213	Glaive Baerim
+42214	Costume Hwang
+42215	Costume Hwang Rosso
+42216	Costume Zin-Hwang
+42217	Costume San-Hwang
+42218	Costume Hwang Dorato (M)
+42219	Costume Hwang Dorato (F)
+42220	Costume Hwang Nero (M)
+42221	Costume Hwang Nero (F)
+42222	Costume Inferi Gelati (M)
+42223	Costume Inferi Gelati (F)
+42224	Costume Goldar
+42225	Maglia della Bosnia
+42226	Maglia della Bosnia
+42227	Maglia del Brasile
+42228	Maglia del Brasile
+42229	Maglia della Repubblica Ceca
+42230	Maglia della Repubblica Ceca
+42231	Maglia dell'Egitto
+42232	Maglia dell'Egitto
+42233	Maglia dell'Inghilterra
+42234	Maglia dell'Inghilterra
+42235	Maglia della Francia
+42236	Maglia della Francia
+42260	Abyss Warrior Costume (m)
+42261	Abyss Warrior Costume (f)
+45900	Capelli Cavaliere Ardente (M)
+45901	Capelli Cavaliere Ardente (F)
+45902	Capelli Cavaliere Gelato (M)
+45903	Capelli Cavaliere Gelato (F)
+45904	Capelli Spirito della Tempesta (m)
+45905	Capelli Spirito della Tempesta (f)
+45906	Capelli Yin-Yang (m)
+45907	Capelli Yin-Yang (f)
+45908	Capelli Guardiano di Bambù (m)
+45909	Capelli Guardiana di Bambù (f)
+45910	Capelli Baerim (M)
+45911	Capelli Baerim (M)
+45912	Capelli Hwang Dorati (M)
+45913	Capelli Hwang Dorati (F)
+45914	Capelli Hwang Neri (M)
+45915	Capelli Hwang Neri (F)
+45916	Capelli Inferi Gelati (M)
+45917	Capelli Inferi Gelati (F)
+45918	Capelli Goldar (M)
+45919	Capelli Goldar (F)
+45920	Capelli Ombra Lunare (m)
+45921	Capelli Ombra Lunare (f)
+45922	Capelli Angelo Puro (m)
+45923	Capelli Angelo Puro (f)
+45924	Capelli Samurai Fantasma (m)
+45925	Capelli Samurai Fantasma (f)
+45926	Capelli Monarca Infernale (m)
+45927	Capelli Monarca Infernale (f)
+45928	Capelli Marea Estiva (m)
+45929	Capelli Marea Estiva (f)
+45930	Capigliatura Goldazrael (m)
+45931	Capigliatura Goldazrael (f)
+45932	Capigliatura Hellboy (m)
+45933	Capigliatura Hellboy (f)
+45934	Capigliatura Red Rogue (m)
+45935	Capigliatura Red Rogue (f)
+45936	Capigliatura Oro Bianco (m)
+45937	Capigliatura Oro Bianco (f)
+45960	Polar Warden Hair (m)
+52300	Moa coraggioso
+53700	Pet Dorato
+53701	Pet Nero
+58000	Horse
+77090	Abyss Sword
+77091	Abyss Dagger
+77092	Abyss Bow
+77093	Abyss Greatsword
+77094	Abyss Bell
+77095	Abyss Fan
+77096	Dark Warrior Sura
+86084	Abyss Sash

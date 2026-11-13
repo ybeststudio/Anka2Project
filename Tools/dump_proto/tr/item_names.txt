@@ -10419,6 +10419,11 @@ VNUM	LOCALE_NAME
 55067	Binicilik (Tamlýk)
 55070	At becerisi sandýðý
 55100	Tanrýsal Protein Lokmasý
+55320	Kostüm Bonus Süresi (3g)
+55321	Kostüm Bonus Süresi (7g)
+55322	Kostüm Bonus Süresi (14g)
+55323	Kostüm Bonus Süresi (30g)
+55327	Kostüm Bonus Süresi (PvP)
 55400	Rastgele sandýðý
 55401	Maymun Yumurtasý
 55402	Örümcek Yumurtasý
@@ -12290,3 +12295,703 @@ VNUM	LOCALE_NAME
 65111	Tanrýlarýn Týlsýmý+
 65112	Lonca Enerjisi (%100)
 65120	Gümüþ Geniþletme
+90020	Kostüm Kuponu
+90021	Binek Kuponu
+90022	Evcil Hayvan Kuponu
+40240	Baerim Kýlýcý
+40241	Baerim Hançeri
+40242	Baerim Yayý
+40243	Baerim Palasý
+40244	Baerim Çaný
+40245	Baerim Yelpazesi
+40246	Baerim Sura
+40247	BombWork Kýlýcý
+40248	BombWork Hançeri
+40249	BombWork Yayý
+40250	BombWork Palasý
+40251	BombWork Çaný
+40252	BombWork Yelpazesi
+40253	BombWork Sura
+40254	White Samurai Blade
+40255	White Samurai Dagger
+40256	White Samurai Bow
+40257	White Samurai Glaive
+40258	White Samurai Bell
+40259	White Samurai Fan
+40260	Green Phantom Blade
+40261	Green Phantom Dagger
+40262	Green Phantom Bow
+40263	Green Phantom Glaive
+40264	Green Phantom Bell
+40265	Green Phantom Fan
+40266	Black Sakura Blade
+40267	Black Sakura Dagger
+40268	Black Sakura Bow
+40269	Black Sakura Glaive
+40270	Black Sakura Bell
+40271	Black Sakura Fan
+40272	Imperial Paladin Blade
+40273	Imperial Paladin Dagger
+40274	Imperial Paladin Bow
+40275	Imperial Paladin Glaive
+40276	Imperial Paladin Bell
+40277	Imperial Paladin Fan
+42099	White Samurai Costume (m)
+42100	White Samurai Costume (f)
+42101	Green Phantom Costume (m)
+42102	Green Phantom Costume (f)
+42113	Black Sakura Costume (m)
+42114	Black Sakura Costume (f)
+42115	Imperial Paladin Costume (m)
+42116	Imperial Paladin Costume (f)
+45692	Ýnek Boynuzlu Miðfer (E)
+45693	Ýnek Boynuzlu Miðfer (K)
+45776	White Samurai Hair (m)
+45777	White Samurai Hair (f)
+45778	Green Phantom Hair (m)
+45779	Green Phantom Hair (f)
+45790	Black Sakura Hair (m)
+45791	Black Sakura Hair (f)
+45792	Imperial Paladin Hair (m)
+45793	Imperial Paladin Hair (f)
+52121	Samsara Ejderi
+52122	Manu
+52123	Ellie
+52126	Lav Maðarasý Kertenkelesi
+52127	Buz Maðarasý Kertenkelesi
+52128	Magma Ejderhasý
+52214	White Samurai Mount
+52215	Green Phantom Mount
+52217	Black Sakura Mount
+52218	Imperial Paladin Mount
+53381	Boneca Ambalabu
+53382	Cappuccino Assassino
+53389	Tralalelo Tralala
+53390	Tung Tung
+53391	Vecna
+53416	Black Sakura Pet
+53417	Imperial Paladin Pet
+86065	Kar Nöbetçisi Kuþaðý
+86068	Kutsal Kanatlar
+86069	Cehennem Ateþi Kanatlarý
+86070	Kristal Kanat
+86071	Nobori Kanatlarý
+86072	Hain Kanat
+86073	Alev Kanatlarý
+86075	Buzul Viking Kuþaðý
+86076	Kurt Avcýsý Kuþaðý
+86080	Noel Þövalye Kuþaðý
+86081	Kýþ Geyiði Kuþaðý
+86082	Kutup Takýmý Kuþaðý
+86143	White Samurai Wing
+86144	Green Phantom Wing
+86146	Black Sakura Wing
+86147	Imperial Paladin Wing
+86152	Maliyet. d'étole nadir (korsan)
+53500	Frank
+53504	Genç Jiangshi
+53524	Yavru Vahþi Yüzbaþý
+53525	Yavru Siyah Ork
+53557	Yavru Ölüm Meleði
+53604	Yavru Alev Kral
+53660	Yavru Kaplumbaða
+53661	Yavru Buz Cadýsý
+53671	Yavru Jotun
+53672	Yavru Dokuz Kuyruk
+53673	Yavru Barones
+53674	Yavru Kraliçe Örümcek
+53675	Yavru Tartaros
+53676	Yavru Sarý Kaplan Hayaleti
+53677	Ballerina Cappuccina
+53678	Bombardiro Crocodilo
+53679	Paytak Yüzbaþý
+53680	Demogorgon
+53681	Yavru Siyah Çelikli Savaþçý
+53682	Yavru Siyah Rüzgarlý Þaman
+53683	MC Ping
+53684	Salamino Pinguino
+41928	Ay Bekçisi Kostümü (e)
+41929	Ay Bekçisi Kostümü (k)
+41970	Arjantin Formasý (E)
+41971	Arjantin Formasý (K)
+41972	Belçika Formasý (E)
+41973	Belçika Formasý (K)
+41986	Almanya Formasý (E)
+41987	Almanya Formasý (K)
+41988	Ýtalya Formasý (E)
+41989	Ýtalya Formasý (K)
+41990	Meksika Formasý (E)
+41991	Meksika Formasý (K)
+41992	Polonya Formasý (E)
+41993	Polonya Formasý (K)
+41994	Portekiz Formasý (E)
+41995	Portekiz Formasý (K)
+41996	Romanya Formasý (E)
+41997	Romanya Formasý (K)
+41998	Ýspanya Formasý (E)
+41999	Ýspanya Formasý (K)
+42000	Türkiye Formasý (E)
+42001	Türkiye Formasý (K)
+42011	Ayýþýðý Kostümü (E)
+42012	Ayýþýðý Kostümü (K)
+42013	Saf Melek Kostümü (E)
+42014	Saf Melek Kostümü (K)
+42015	Hayalet Samuray Kostümü (E)
+42016	Hayalet Samuray Kostümü (K)
+42017	Cehennem Hükümdarý Kostümü (E)
+42018	Cehennem Hükümdarý Kostümü (K)
+42019	Bahar Ruhu Kostümü (E)
+42020	Bahar Ruhu Kostümü (K)
+42021	Beyaz Hayalet Kostümü (E)
+42022	Beyaz Hayalet Kostümü (K)
+42023	Dalgalý Yaz Kostümü (E)
+42024	Dalgalý Yaz Kostümü (K)
+42025	Altýn Azrail Kostümü (E)
+42026	Altýn Azrail Kostümü (K)
+42027	Cehennem Tohumu Kostümü (E)
+42028	Cehennem Tohumu Kostümü (K)
+42029	Kýzýl Hýrsýz Kostümü (E)
+42030	Kýzýl Hýrsýz Kostümü (K)
+42031	Beyaz Altýn Kostüm (E)
+42032	Beyaz Altýn Kostüm (K)
+42035	Genç Büyücü Cübbesi (e)
+42036	Genç Cadý Cübbesi (K)
+42037	Sakura Çölü Kostümü (E)
+42038	Sakura Çölü Kostümü (K)
+42039	Büyücü Bilgini Kostümü (E)
+42040	Büyücü Bilgini Kostümü (K)
+42043	Kýzýl Yükselmiþlerin Kostümü (e)
+42044	Kýzýl Yükselmiþlerin Kostümü (k)
+42045	Ametist Hükümdar Kostümü (e)
+42046	Ametist Hükümdar Kostümü (k)
+42047	Gök Mavisi Muhafýz Kostümü (e)
+42048	Gök Mavisi Muhafýz Kostümü (k)
+42049	Obsidyen Ejderha Kostümü (e)
+42050	Obsidyen Ejderha Kostümü (k)
+42051	Kiraz Çiçeði Kostümü (e)
+42052	Kiraz Çiçeði Kostümü (k)
+42053	Siyah Çiçek Kostümü (e)
+42054	Siyah Çiçek Kostümü (k)
+42055	Mavi Savaþçý Kostümü (e)
+42056	Mavi Savaþçý Kostümü (k)
+42057	Kýrmýzý Savaþçý Kostümü (e)
+42058	Kýrmýzý Savaþçý Kostümü (k)
+42061	Astral Þovalye Kostümü (e)
+42062	Astral Þovalye Kostümü (k)
+42063	Karanlýk Simbiyot Kostümü (e)
+42064	Karanlýk Simbiyot Kostümü (k)
+42067	Lanetli Öncü Kostümü (e)
+42068	Lanetli Öncü Kostümü (k)
+42069	Hayalet Avcýsý Kostümü (e)
+42070	Hayalet Avcýsý Kostümü (k)
+42075	Cadýlar Bayramý Dehþeti Kostümü (e)
+42076	Cadýlar Bayramý Dehþeti Kostümü (k)
+42077	Beyaz Çelik Kostümü (e)
+42078	Beyaz Çelik Kostümü (k)
+42081	Kýrmýzý Korku Kostümü (e)
+42082	Kýrmýzý Korku Kostümü (k)
+42083	Buzul Hwang Kostümü (e)
+42084	Buzul Hwang Kostümü (k)
+45668	Ay Bekçisi Saçý (e)
+45669	Ay Bekçisi Saçý (k)
+45714	Bahar Ruhu Saçý (E)
+45715	Bahar Ruhu Saçý (K)
+45716	Beyaz Hayalet Saçý (E)
+45717	Beyaz Hayalet Saçý (K)
+45730	Genç Büyücü Cübbesi (k)
+45731	Genç Cadý Saçý (k)
+45732	Sakura Çölü Saçý(E)
+45733	Sakura Çölü Saçý (K)
+45734	Büyücü Bilgini Saçý (E)
+45735	Büyücü Bilgini Saçý (K)
+45738	Kýzýl Yükselmiþlerin Saçý (e)
+45739	Kýzýl Yükselmiþlerin Saçý (k)
+45740	Ametist Hükümdar Saçý(e)
+45741	Ametist Hükümdar Saçý (k)
+45742	Obsidyen Ejder Saçý (e)
+45743	Obsidyen Ejder Saçý (k)
+45744	Gök Mavisi Muhafýz Saçý (e)
+45745	Gök Mavisi Muhafýz Saçý (k)
+45746	Kiraz Çiçeði Saçý (e)
+45747	Kiraz Çiçeði Saçý (k)
+45748	Siyah Çiçek Saçý (e)
+45749	Siyah Çiçek Saçý (k)
+45750	Mavi Savaþçý Saçý (e)
+45751	Mavi Savaþçý Saçý (k)
+45752	Kýrmýzý Savaþçý Saçý (e)
+45753	Kýrmýzý Savaþçý Saçý (k)
+45756	Astral Þovalye Saçý (e)
+45757	Astral Þovalye Saçý (k)
+45758	Karanlýk Simbiyot Saçý (e)
+45759	Karanlýk Simbiyot Saçý (k)
+45760	Lanetli Öncü Saçý (e)
+45761	Lanetli Öncü Saçý (k)
+45762	Hayalet Avcýsý Saç Stili (e)
+45763	Hayalet Avcýsý Saç Stili (k)
+45768	Cadýlar Bayramý Dehþeti Saçý (e)
+45769	Cadýlar Bayramý Dehþeti Saçý (k)
+45770	Beyaz Çelik Saçý (e)
+45771	Beyaz Çelik Saçý (k)
+45772	Kýrmýzý Korku Saçý (e)
+45773	Kýrmýzý Korku Saçý (k)
+45774	Buzul Hwang Saçý (e)
+45775	Buzul Hwang Saçý (k)
+52151	Ay Bekçisi
+52162	Fýrtýna Ruhu
+52167	Hayalet Qilin
+52170	Bambu Muhafýzý
+52173	Altýn Aslan
+52174	Kara Aslan
+52176	Yabani Binek
+52178	Saf Melek Bineði
+52179	Cehennem Hükümdarý Bineði
+52181	Beyaz Hayalet Bineði
+52182	Gelgitli Yaz Bineði
+52183	Altýn Azrail Bineði
+52184	Cehennem Tohumu Bineði
+52185	Kýzýl Hýrsýz Bineði
+52186	Beyaz Altýn Binek
+52190	Genç Büyücü Bineði
+52191	Sakura Çölü Bineði
+52194	Obsidyen Ejder Bineði
+52195	Gök Mavisi Muhafýz Bineði
+52196	Kiraz Çiçeði Bineði
+52197	Siyah Çiçek Bineði
+52200	Astral Þovalye Bineði
+52203	Karanlýk Simbiyot Bineði
+52211	Beyaz Çelik Bineði
+52212	Kýrmýzý Korku Bineði
+52213	Buzul Hwang Bineði
+53394	Saf Melek Evcil Hayvaný
+53395	Beyaz Hayalet Evcil Hayvaný
+53396	Gelgitli Yaz Evcil Hayvaný
+53397	Altýn Azrail Evcil Hayvaný
+53398	Cehennem Tohumu Evcil Hayvaný
+53399	Kýzýl Hýrsýz Evcil Hayvaný
+53400	Beyaz Altýn Evcil Hayvaný
+53402	Genç Büyücü Evcil Hayvaný
+53403	Sakura Çölü Evcil Hayvaný
+53406	Obsidyen Ejder Evcil Hayvaný
+53407	Gök Mavisi Muhafýz Evcil Hayvaný
+53408	Karanlýk Simbiyot Peti
+53414	Beyaz Çelik Peti
+40278	Yanan Þövalye Kýlýcý
+40279	Yanan Þövalye Hançeri
+40280	Yanan Þövalye Yayý
+40281	Yanan Þövalye Mýzraðý
+40282	Yanan Þövalye çan
+40283	Yanan Þövalye Yelpaze
+40284	Yanan Þövalye Sura
+40285	Donmuþ Þövalye Kýlýcý
+40286	Donmuþ Þövalye Hançeri
+40287	Donmuþ Þövalye Yayý
+40288	Donmuþ Þövalye Mýzraðý
+40289	Donmuþ Þövalye çan
+40290	Donmuþ Þövalye Yelpaze
+40291	Donmuþ Þövalye Sura
+40292	Fýrtýna Ruhu Kýlýcý
+40293	Fýrtýna Ruhu Hançer
+40294	Fýrtýna Ruhu Yayý
+40295	Fýrtýna Ruhu Mýzraðý
+40296	Fýrtýna Ruhu çan
+40297	Fýrtýna Ruhu Yelpaze
+40298	Fýrtýna Ruhu Sura
+40299	Ay Bekçisi Kýlýcý
+40300	Ay Bekçisi Hançeri
+40301	Ay Bekçisi Yayý
+40302	Ay Bekçisi Palasý
+40303	Ay Bekçisi Çaný
+40304	Ay Bekçisi Yelpazesi
+40305	Ay Bekçisi Sura'sý
+40306	Yin-Yang Kýlýcý
+40307	Yin-Yang Hançeri
+40308	Yin-Yang Yayý
+40309	Yin-Yang Palasý
+40310	Yin-Yang Çaný
+40311	Yin-Yang Yelpazesi
+40312	Bambu Muhafýzý Kýlýcý
+40313	Bambu Muhafýzý Hançeri
+40314	Bambu Muhafýzý Yayý
+40315	Bambu Muhafýzý Palasý
+40316	Bambu Muhafýzý Çaný
+40317	Bambu Muhafýzý Yelpazesi
+40318	Bambu Muhafýzý Sura'sý
+40319	Barit Kýlýç
+40320	Barit Hançer
+40321	Barit Yay
+40322	Barit Palasý
+40323	Barit Çan
+40324	Barit Yelpaze
+40325	Barit Sura
+40326	Yin-Yang Kýlýcý
+40327	Yin-Yang Hançeri
+40328	Yin-Yang Yayý
+40329	Yin-Yang Palasý
+40330	Yin-Yang Çaný
+40331	Yin-Yang Yelpazesi
+40332	Yin-Yang Sura
+40333	Altýn Kýlýç
+40334	Altýn Hançer
+40335	Altýn Yay
+40336	Altýn Palasý
+40337	Altýn Çan
+40338	Altýn Yelpaze
+40339	Altýn Sura
+40340	Siyah Kýlýç
+40341	Siyah Hançer
+40342	Siyah Yay
+40343	Siyah Palasý
+40344	Siyah Çan
+40345	Siyah Yelpaze
+40346	Siyah Sura
+40347	Donmuþ Yeraltý Dünyasý Kýlýcý
+40348	Donmuþ Yeraltý Dünyasý Hançer
+40349	Donmuþ Yeraltý Dünyasý Yayý
+40350	Donmuþ Yeraltý Dünyasý Mýzraðý
+40351	Donmuþ Yeraltý Dünyasý Çaný
+40352	Donmuþ Yeraltý Dünyasý Yelpazesi
+40353	Donmuþ Yeraltý Dünyasý Jileti
+40354	Goldar Kýlýcý
+40355	Goldar Hançeri
+40356	Goldar Yayý
+40357	Goldar Palasý
+40358	Goldar Çaný
+40359	Goldar Yelpazesi
+40360	Goldar Sura
+40361	Ayýþýðý Kýlýcý
+40362	Ayýþýðý Hançeri
+40363	Ayýþýðý Yayý
+40364	Ayýþýðý Mýzraðý
+40365	Ayýþýðý Çaný
+40366	Ayýþýðý Yelpazesi
+40367	Ayýþýðý Jileti
+40368	Saf Melek Kýlýcý
+40369	Saf Melek Hançeri
+40370	Saf Melek Yayý
+40371	Saf Melek Palasý
+40372	Saf Melek Çaný
+40373	Saf Melek Yelpazesi
+40374	Saf Melek Sura
+40375	Hayalet Samuray Kýlýcý
+40376	Hayalet Samuray Hançeri
+40377	Hayalet Samuray Yayý
+40378	Hayalet Samuray Palasý
+40379	Hayalet Samuray Çaný
+40380	Hayalet Samuray Yelpazesi
+40381	Hayalet Samuray Sura
+40382	Cehennem Hükümdarý Kýlýcý
+40383	Cehennem Hükümdarý Hançeri
+40384	Cehennem Hükümdarý Yayý
+40385	Cehennem Hükümdarý Mýzraðý
+40386	Cehennem Hükümdarý Çaný
+40387	Cehennem Hükümdarý Yelpazesi
+40388	Cehennem Hükümdarý Jileti
+40389	Bahar Ruhu Kýlýcý
+40390	Bahar Ruhu Hançeri
+40391	Bahar Ruhu Yayý
+40392	Bahar Ruhu Mýzraðý
+40393	Bahar Ruhu Çaný
+40394	Bahar Ruhu Yelpazesi
+40395	Bahar Ruhu Jileti
+40396	Beyaz Hayalet Kýlýcý
+40397	Beyaz Hayalet Hançeri
+40398	Beyaz Hayalet Yayý
+40399	Beyaz Hayalet Mýzraðý
+40400	Beyaz Hayalet Çaný
+40401	Beyaz Hayalet Yelpazesi
+40402	Beyaz Hayalet Jileti
+40403	Gelgitli Yaz Kýlýcý
+40404	Gelgitli Yaz Hançeri
+40405	Gelgitli Yaz Yayý
+40406	Gelgitli Yaz Mýzraðý
+40407	Gelgitli Yaz Çaný
+40408	Gelgitli Yaz Yelpazesi
+40409	Gelgitli Yaz Jileti
+40410	Altýn Azrail Kýlýcý
+40411	Altýn Azrail Hançeri
+40412	Altýn Azrail Yayý
+40413	Altýn Azrail Mýzraðý
+40414	Altýn Azrail Çaný
+40415	Altýn Azrail Yelpazesi
+40416	Altýn Azrail Jileti
+40417	Cehennem Tohumu Kýlýcý
+40418	Cehennem Tohumu Hançeri
+40419	Cehennem Tohumu Yayý
+40420	Cehennem Tohumu Mýzraðý
+40421	Cehennem Tohumu Çaný
+40422	Cehennem Tohumu Yelpazesi
+40423	Cehennem Tohumu Jileti
+40424	Kýzýl Hýrsýz Kýlýcý
+40425	Kýzýl Hýrsýz Hançeri
+40426	Kýzýl Hýrsýz Yayý
+40427	Kýzýl Hýrsýz Mýzraðý
+40428	Kýzýl Hýrsýz Çaný
+40429	Kýzýl Hýrsýz Yelpazesi
+40430	Kýzýl Hýrsýz Jileti
+40431	Beyaz Altýn Kýlýç
+40432	Beyaz Altýn Hançer
+40433	Beyaz Altýn Yay
+40434	Beyaz Altýn Mýzrak
+40435	Beyaz Altýn Çan
+40436	Beyaz Altýn Yelpaze
+40437	Beyaz Altýn Jilet
+40438	Genç Büyücü Kýlýcý
+40439	Genç Büyücü Hançeri
+40440	Genç Büyücü Yayý
+40441	Genç Büyücü Mýzraðý
+40442	Genç Büyücü Çaný
+40443	Genç Büyücü Yelpazesi
+40444	Genç Büyücü Jileti (Sura)
+40445	Sakura Çölü Kýlýcý
+40446	Sakura Çölü Hançeri
+40447	Sakura Çölü Yayý
+40448	Sakura Çölü Mýzraðý
+40449	Sakura Çölü Çaný
+40450	Sakura Çölü Yelpazesi
+40451	Büyücü Bilgini Kýlýcý
+40452	Büyücü Bilgini Hançeri
+40453	Büyücü Bilgini Yayý
+40454	Büyücü Bilgini Palasý
+40455	Büyücü Bilgini Çaný
+40456	Büyücü Bilgini Yelpazesi
+40457	Genç Büyücü Kýlýcý (Sura)
+40458	Kýzýl Yükselmiþlerin Kýlýcý
+40459	Kýzýl Yükselmiþlerin Hançeri
+40460	Kýzýl Yükselmiþlerin Yayý
+40461	Kýzýl Yükselmiþlerin Mýzraðý
+40462	Kýzýl Yükselmiþlerin Çaný
+40463	Kýzýl Yükselmiþlerin Yelpazesi
+40464	Kýzýl Yükselmiþlerin Kýlýcý (Sura)
+40465	Ametist Hükümdar Kýlýcý
+40466	Ametist Hükümdar Hançeri
+40467	Ametist Hükümdar Yayý
+40468	Ametist Hükümdar Pala
+40469	Ametist Hükümdar Çaný
+40470	Ametist Hükümdar Yelpazesi
+40471	Ametist Hükümdar Sura Kýlýcý
+40472	Obsidyen Ejderha Kýlýcý
+40473	Obsidyen Ejderha Hançeri
+40474	Obsidyen Ejderha Yayý
+40475	Obsidyen Ejderha Palasý
+40476	Obsidyen Ejderha Çaný
+40477	Obsidyen Ejderha Yelpazesi
+40478	Obsidyen Ejderha Sura Kýlýcý
+40479	Gök Muhafýzý Kýlýcý
+40480	Gök Muhafýzý Hançeri
+40481	Gök Muhafýzý Yayý
+40482	Gök Muhafýzý Palasý
+40483	Gök Muhafýzý Çaný
+40484	Gök Muhafýzý Yelpazesi
+40485	Kiraz Çiçeði Kýlýcý
+40486	Kiraz Çiçeði Hançeri
+40487	Kiraz Çiçeði Yayý
+40488	Kiraz Çiçeði Palasý
+40489	Kiraz Çiçeði Çaný
+40490	Kiraz Çiçeði Yelpazesi
+40491	Kiraz Çiçeði Sura Kýlýcý
+40492	Siyah Çiçek Kýlýcý
+40493	Siyah Çiçek Hançeri
+40494	Siyah Çiçek Yayý
+40495	Siyah Çiçek Palasý
+40496	Siyah Çiçek Çaný
+40497	Siyah Çiçek Yelpazesi
+40498	Siyah Çiçek Sura Kýlýcý
+40499	Mavi Savaþçý Kýlýcý
+40500	Mavi Savaþçý Hançeri
+40501	Mavi Savaþçý Yayý
+40502	Mavi Savaþçý Palasý
+40503	Mavi Savaþçý Çaný
+40504	Mavi Savaþçý Yelpazesi
+40505	Mavi Savaþçý Sura Kýlýcý
+40506	Kýrmýzý Savaþçý Kýlýcý
+40507	Kýrmýzý Savaþçý Hançeri
+40508	Kýrmýzý Savaþçý Yayý
+40509	Kýrmýzý Savaþçý Palasý
+40510	Kýrmýzý Savaþçý Çaný
+40511	Kýrmýzý Savaþçý Yelpazesi
+40512	Kýrmýzý Savaþçý Sura Kýlýcý
+40513	Astral Þovalye Kýlýcý
+40514	Astral Þovalye Hançeri
+40515	Astral Þovalye Yayý
+40516	Astral Þovalye Palasý
+40517	Astral Þovalye Çaný
+40518	Astral Þovalye Yelpazesi
+40519	Astral Þovalye Sura Kýlýcý
+40520	Karanlýk Simbiyot Kýlýcý
+40521	Karanlýk Simbiyot Hançeri
+40522	Karanlýk Simbiyot Yayý
+40523	Karanlýk Simbiyot Palasý
+40524	Karanlýk Simbiyot Çaný
+40525	Karanlýk Simbiyot Yelpazesi
+40526	Karanlýk Simbiyot Sura Kýlýcý
+40527	Lanetli Öncü Kýlýcý
+40528	Lanetli Öncü Hançeri
+40529	Lanetli Öncü Yayý
+40530	Lanetli Öncü Palasý
+40531	Lanetli Öncü Çaný
+40532	Lanetli Öncü Yelpazesi
+40533	Lanetli Öncü Sura Kýlýcý
+40534	Hayalet Avcýsý Kýlýcý
+40535	Hayalet Avcýsý Býçaðý
+40536	Hayalet Avcýsý Yayý
+40537	Hayalet Avcýsý Palasý
+40538	Hayalet Avcýsý Çaný
+40539	Hayalet Avcýsý Yelpazesi
+40540	Hayalet Avcýsý Kazmasý
+40541	Cadýlar Bayramý Dehþeti Kýlýcý
+40542	Cadýlar Bayramý Dehþeti Hançeri
+40543	Cadýlar Bayramý Dehþeti Yayý
+40544	Cadýlar Bayramý Dehþeti Palasý
+40545	Cadýlar Bayramý Dehþeti Çaný
+40546	Cadýlar Bayramý Dehþeti Yelpazesi
+40547	Beyaz Çelik Kýlýcý
+40548	Beyaz Çelik Hançeri
+40549	Beyaz Çelik Yayý
+40550	Beyaz Çelik Palasý
+40551	Beyaz Çelik Çaný
+40552	Beyaz Çelik Yelpazesi
+40553	Kýrmýzý Korku Kýlýcý
+40554	Kýrmýzý Korku Hançeri
+40555	Kýrmýzý Korku Yayý
+40556	Kýrmýzý Korku Palasý
+40557	Kýrmýzý Korku Çaný
+40558	Kýrmýzý Korku Yelpazesi
+40559	Buzul Hwang Kýlýcý
+40560	Buzul Hwang Hançeri
+40561	Buzul Hwang Yayý
+40562	Buzul Hwang Palasý
+40563	Buzul Hwang Çaný
+40564	Buzul Hwang Yelpazesi
+40565	Buzul Hwang Sura Kýlýcý
+86066	Yanan Þövalye Kuþaðý
+86067	Donmuþ Þövalye Kuþaðý
+86074	Fýrtýna Ruhu Kuþaðý
+86079	Ay Bekçisi Kuþaðý
+86086	Yin-Yang Kuþaðý
+86088	Bambu Muhafýzý Kuþaðý
+86096	Altýn Kraliyet Kuþaðý
+86097	Siyah Kraliyet Kuþaðý
+86098	Donmuþ Yeraltý Dünyasý Kuþaðý
+86099	Goldar Kuþaðý
+86100	Ayýþýðý Kanatlarý
+86101	Saf Melek Kanadý
+86102	Hayalet Samuray Kanadý
+86103	Cehennem Hükümdarý Kanatlarý
+86104	Bahar Ruhu Kanatlarý
+86105	Siyah Kanat
+86110	Beyaz Kanat
+86112	Beyaz Hayalet Kanatlarý
+86113	Gelgitli Yaz Kanatlarý
+86114	Altýn Azrail Kanadý
+86115	Cehennem Tohumu Kanadý
+86116	Kýzýl Hýrsýz Kanadý
+86117	Beyaz Altýn Kanat
+86119	Genç Büyücü Kanatlarý
+86120	Sakura Çölü Kanatlarý
+86121	Büyücü Bilgini Kanatlarý
+86123	Ametist Hükümdar Kanadý
+86124	Obsidyen Ejderha Kanadý
+86125	Gök Muhafýzý Kanadý
+86126	Kýzýl Yükselen Kanat
+86127	Kiraz Çiçeði Kanadý
+86128	Siyah Çiçek Kanadý
+86129	Mavi Savaþçý Kanadý
+86130	Kýrmýzý Savaþçý Kanadý
+86132	Astral Þovalye Kanadý
+86133	Karanlýk Simbiyot Kanadý
+86135	Lanetli Öncü Kanadý
+86136	Hayalet Avcýsý Kanadý
+86139	Cadýlar Bayramý Dehþeti Kanadý
+86140	Beyaz Çelik Kanatý
+86141	Kýzýl Dehþet Kanadý
+86142	Buzul Hwang Kanadý
+42200	Yanan Þövalye Kostümü (Erkek)
+42201	Yanan Þövalye Kostümü (Kadýn)
+42202	Donmuþ Þövalye Kostümü (Erkek)
+42203	Donmuþ Þövalye Kostümü (Kadýn)
+42204	Fýrtýna Ruhu Kostümü (Erkek)
+42205	Fýrtýna Ruhu Kostümü (Kadýn)
+42206	Yin-Yang Kostümü (e)
+42207	Yin-Yang Kostümü (k)
+42208	Bambu Muhafýzý Kostümü (e)
+42209	Bambu Muhafýzý Kostümü (k)
+42210	Moovelous Takýmý (E)
+42211	Moovelous Takýmý (K)
+42212	Baerim Formasý (E)
+42213	Baerim Formasý (K)
+42214	Hwang Kostümü
+42215	Kýrmýzý Hwang Kostümü
+42216	Zin-Hwang Kostümü
+42217	San-Hwang Kostümü
+42218	Altýn Hwang Kostümü (E)
+42219	Altýn Hwang Kostümü (K)
+42220	Siyah Hwang Kostümü (E)
+42221	Siyah Hwang Kostümü (K)
+42222	Donmuþ Yeraltý Dünyasý Kostümü (E)
+42223	Donmuþ Yeraltý Dünyasý Kostümü (K)
+42224	Yaldýzlý Çelik Kostümü
+42225	Bosna Formasý (E)
+42226	Bosna Formasý (K)
+42227	Brezilya Formasý (E)
+42228	Brezilya Formasý (K)
+42229	Çek Cumhuriyeti Formasý (E)
+42230	Çek Cumhuriyeti Formasý (K)
+42231	Mýsýr Formasý (E)
+42232	Mýsýr Formasý (K)
+42233	Ýngiltere Formasý (E)
+42234	Ýngiltere Formasý (K)
+42235	Fransa Formasý (E)
+42236	Fransa Formasý (K)
+42260	Abyss Savaþçýsý Kostümü (E)
+42261	Abyss Savaþçýsý Kostümü (K)
+45900	Yanan Þövalye Saçý (Erkek)
+45901	Yanan Þövalye Saçý (Kadýn)
+45902	Donmuþ Þövalye Saçý (Erkek)
+45903	Donmuþ Þövalye Saçý (Kadýn)
+45904	Fýrtýna Ruhu Saçý (Erkek)
+45905	Fýrtýna Ruhu Saçý (Kadýn)
+45906	Yin-Yang Saçý (e)
+45907	Yin-Yang Saçý (k)
+45908	Bambu Muhafýzý Saçý (e)
+45909	Bambu Muhafýzý Saçý (k)
+45910	Baerim Saçý (E)
+45911	Baerim Saçý (K)
+45912	Altýn Hwang Saçý (E)
+45913	Altýn Hwang Saçý (K)
+45914	Siyah Hwang Saçý (E)
+45915	Siyah Hwang Saçý (K)
+45916	Donmuþ Yeraltý Dünyasý Saçý (E)
+45917	Donmuþ Yeraltý Dünyasý Saçý (K)
+45918	Yaldýzlý Saç (E)
+45919	Yaldýzlý Saç (K)
+45920	Ayýþýðý Saçý (E)
+45921	Ayýþýðý Saçý (K)
+45922	Saf Melek Saçý (E)
+45923	Saf Melek Saçý (K)
+45924	Hayalet Samuray Saçý (E)
+45925	Hayalet Samuray Saçý (K)
+45926	Cehennem Hükümdarý Saçý (E)
+45927	Cehennem Hükümdarý Saçý (K)
+45928	Gelgitli Yaz Saçý (E)
+45929	Gelgitli Yaz Saçý (K)
+45930	Altýn Azrail Saçý (E)
+45931	Altýn Azrail Saçý (K)
+45932	Cehennem Tohumu Saçý (E)
+45933	Cehennem Tohumu Saçý (K)
+45934	Kýzýl Hýrsýz Saçý (E)
+45935	Kýzýl Hýrsýz Saçý (K)
+45936	Beyaz Altýn Saç (E)
+45937	Beyaz Altýn Saç (K)
+45960	Kutup Bekçisi Saçý (Erkek)
+52300	Cesur Moa
+53700	Altýn Evcil Hayvan
+53701	Kara Evcil Hayvan
+58000	At
+77090	Abyss Kýlýcý
+77091	Abyss Hançeri
+77092	Abyss Yayý
+77093	Abyss Mýzraðý
+77094	Abyss Çaný
+77095	Abyss Yelpazesi
+77096	Karanlýk Savaþçý Sura
+86084	Abyss Kuþaðý

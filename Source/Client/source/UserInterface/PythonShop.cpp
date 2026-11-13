@@ -43,27 +43,33 @@ const char *CPythonShop::GetTabName(BYTE tabIdx)
 	return m_aShoptabs[tabIdx].name.c_str();
 }
 
+#ifdef ENABLE_SHOP_TABS_BAERIM
+#define SHOP_TAB_SLOTS SHOP_EX_ITEM_MAX_NUM		// index = tab * 80 + slot (a plain shop is tab 0)
+#else
+#define SHOP_TAB_SLOTS SHOP_HOST_ITEM_MAX_NUM
+#endif
+
 void CPythonShop::SetItemData(DWORD dwIndex, const TShopItemData & c_rShopItemData)
 {
-	BYTE tabIdx = dwIndex / SHOP_HOST_ITEM_MAX_NUM;
-	DWORD dwSlotPos = dwIndex % SHOP_HOST_ITEM_MAX_NUM;
+	BYTE tabIdx = dwIndex / SHOP_TAB_SLOTS;
+	DWORD dwSlotPos = dwIndex % SHOP_TAB_SLOTS;
 
 	SetItemData(tabIdx, dwSlotPos, c_rShopItemData);
 }
 
 BOOL CPythonShop::GetItemData(DWORD dwIndex, const TShopItemData ** c_ppItemData)
 {
-	BYTE tabIdx = dwIndex / SHOP_HOST_ITEM_MAX_NUM;
-	DWORD dwSlotPos = dwIndex % SHOP_HOST_ITEM_MAX_NUM;
+	BYTE tabIdx = dwIndex / SHOP_TAB_SLOTS;
+	DWORD dwSlotPos = dwIndex % SHOP_TAB_SLOTS;
 
 	return GetItemData(tabIdx, dwSlotPos, c_ppItemData);
 }
 
 void CPythonShop::SetItemData(BYTE tabIdx, DWORD dwSlotPos, const TShopItemData & c_rShopItemData)
 {
-	if (tabIdx >= SHOP_TAB_COUNT_MAX || dwSlotPos >= SHOP_HOST_ITEM_MAX_NUM)
+	if (tabIdx >= SHOP_TAB_COUNT_MAX || dwSlotPos >= SHOP_TAB_SLOTS)
 	{
-		TraceError("Out of Index. tabIdx(%d) must be less than %d. dwSlotPos(%d) must be less than %d", tabIdx, SHOP_TAB_COUNT_MAX, dwSlotPos, SHOP_HOST_ITEM_MAX_NUM);
+		TraceError("Out of Index. tabIdx(%d) must be less than %d. dwSlotPos(%d) must be less than %d", tabIdx, SHOP_TAB_COUNT_MAX, dwSlotPos, SHOP_TAB_SLOTS);
 		return;
 	}
 
@@ -72,9 +78,9 @@ void CPythonShop::SetItemData(BYTE tabIdx, DWORD dwSlotPos, const TShopItemData 
 
 BOOL CPythonShop::GetItemData(BYTE tabIdx, DWORD dwSlotPos, const TShopItemData ** c_ppItemData)
 {
-	if (tabIdx >= SHOP_TAB_COUNT_MAX || dwSlotPos >= SHOP_HOST_ITEM_MAX_NUM)
+	if (tabIdx >= SHOP_TAB_COUNT_MAX || dwSlotPos >= SHOP_TAB_SLOTS)
 	{
-		TraceError("Out of Index. tabIdx(%d) must be less than %d. dwSlotPos(%d) must be less than %d", tabIdx, SHOP_TAB_COUNT_MAX, dwSlotPos, SHOP_HOST_ITEM_MAX_NUM);
+		TraceError("Out of Index. tabIdx(%d) must be less than %d. dwSlotPos(%d) must be less than %d", tabIdx, SHOP_TAB_COUNT_MAX, dwSlotPos, SHOP_TAB_SLOTS);
 		return FALSE;
 	}
 
@@ -190,7 +196,7 @@ void CPythonShop::Clear()
 	m_bTabCount = 1;
 
 	for (int i = 0; i < SHOP_TAB_COUNT_MAX; i++)
-		memset (m_aShoptabs[i].items, 0, sizeof(TShopItemData) * SHOP_HOST_ITEM_MAX_NUM);
+		memset (m_aShoptabs[i].items, 0, sizeof(m_aShoptabs[i].items));
 
 #ifdef ENABLE_RENEWAL_OFFLINESHOP
 	ClearOfflineShopStock();
@@ -948,6 +954,9 @@ void initshop()
 	PyObject *poModule = Py_InitModule("shop", s_methods);
 
 	PyModule_AddIntConstant(poModule, "SHOP_SLOT_COUNT", SHOP_HOST_ITEM_MAX_NUM);
+#ifdef ENABLE_SHOP_TABS_BAERIM
+	PyModule_AddIntConstant(poModule, "SHOP_EX_SLOT_COUNT", SHOP_EX_ITEM_MAX_NUM);
+#endif
 	PyModule_AddIntConstant(poModule, "SHOP_COIN_TYPE_GOLD", SHOP_COIN_TYPE_GOLD);
 	PyModule_AddIntConstant(poModule, "SHOP_COIN_TYPE_SECONDARY_COIN", SHOP_COIN_TYPE_SECONDARY_COIN);
 #ifdef ENABLE_RENEWAL_SHOPEX

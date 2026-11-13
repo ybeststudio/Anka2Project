@@ -156,20 +156,29 @@ class MainStream(object):
 		if constInfo.ENABLE_UI_DEBUG_WINDOW:
 			self.SetPhaseWindow(DebugWindow(self))
 		else:
-			import introLogin
+			if app.ENABLE_LOGIN_RENEWAL_BAERIM:
+				import introLoginBaerim as introLogin
+			else:
+				import introLogin
 			self.SetPhaseWindow(introLogin.LoginWindow(self))
 
 	def SameLogin_SetLoginPhase(self):
 		net.Disconnect()
 
-		import introLogin
+		if app.ENABLE_LOGIN_RENEWAL_BAERIM:
+			import introLoginBaerim as introLogin
+		else:
+			import introLogin
 		introInst = introLogin.LoginWindow(self)
 		self.SetPhaseWindow(introInst)
 		introInst.SameLogin_OpenUI()
 
 	def SetSelectEmpirePhase(self):
 		try:
-			import introEmpire
+			if app.ENABLE_EMPIRE_RENEWAL_BAERIM:
+				import introEmpireBaerim as introEmpire
+			else:
+				import introEmpire
 			self.SetPhaseWindow(introEmpire.SelectEmpireWindow(self))
 		except:
 			import exception
@@ -177,7 +186,10 @@ class MainStream(object):
 
 	def SetReselectEmpirePhase(self):
 		try:
-			import introEmpire
+			if app.ENABLE_EMPIRE_RENEWAL_BAERIM:
+				import introEmpireBaerim as introEmpire
+			else:
+				import introEmpire
 			self.SetPhaseWindow(introEmpire.ReselectEmpireWindow(self))
 		except:
 			import exception
@@ -185,8 +197,14 @@ class MainStream(object):
 
 	def SetSelectCharacterPhase(self):
 		try:
-			localeInfo.LoadLocaleData()
-			import introSelect
+			# protos and skill table only change with the language (interfacemodule reloads them itself)
+			if not app.ENABLE_CREATE_RENEWAL_BAERIM or not self.__dict__.get("isLocaleDataLoaded"):
+				localeInfo.LoadLocaleData()
+				self.isLocaleDataLoaded = TRUE
+			if app.ENABLE_SELECT_RENEWAL_BAERIM:
+				import introSelectBaerim as introSelect
+			else:
+				import introSelect
 			self.popupWindow.Close()
 			self.SetPhaseWindow(introSelect.SelectCharacterWindow(self))
 		except:
@@ -195,13 +213,21 @@ class MainStream(object):
 
 	def SetCreateCharacterPhase(self):
 		try:
-			import introCreate
+			if app.ENABLE_CREATE_RENEWAL_BAERIM:
+				import introCreateBaerim as introCreate
+			else:
+				import introCreate
 			self.SetPhaseWindow(introCreate.CreateCharacterWindow(self))
 		except:
 			import exception
 			exception.Abort("networkModule.SetCreateCharacterPhase")
 
 	def SetLoadingPhase(self, isWarp = FALSE):
+		if app.ENABLE_LOADING_RENEWAL_BAERIM:
+			import introLoadingBaerim
+			self.SetPhaseWindow(introLoadingBaerim.LoadingWindow(self, isWarp))
+			return
+
 		try:
 			class LoadingWindow(ui.Window):
 				def __init__(self, stream, isWarp = FALSE):
@@ -224,6 +250,9 @@ class MainStream(object):
 			import game
 			self.popupWindow.Close()
 			self.SetPhaseWindow(game.GameWindow(self))
+			if app.ENABLE_LOADING_RENEWAL_BAERIM:
+				import introLoadingBaerim
+				introLoadingBaerim.CloseLogo()
 		except:
 			raise
 			import exception

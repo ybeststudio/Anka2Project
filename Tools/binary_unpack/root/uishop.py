@@ -17,9 +17,32 @@ import uiCommon
 import mouseModule
 import localeInfo
 import constInfo
+import uiScriptLocale
 
 if app.ENABLE_SHOP_REPURCHASE:
 	import uiShopRepurchase
+
+if app.ENABLE_SHOP_TABS_BAERIM:
+	# Baerim uiShop.ShopDialog (runtime dump Reference/pydump_runtime/shopprobe): window 350x331 (wide 510x331), left box with
+	# category buttons 161x38 every 40 px, item grid at (180, 34) 5x8 or 10x8, "Satin Al" / "Sat" 67x24 at y 295
+	SHOP_PATH = "d:/ymir work/ui/game/shop/%s"
+	SHOP_TAB_TEXT_COLOR = 0xffcabdab
+	SHOP_GRID_ROWS = 8
+	SHOP_WIDE_NPC = { 9001 : 10 }		# Baerim SHOP_SIZE: the weapon shop grid has 10 columns (server: Width 10)
+	# server tab name -> (localeInfo key, shop/icons/<n>.png)
+	SHOP_TABS = {
+		"SWORD" : ("SHOP_TAB_SWORD", 2), "TWO_HANDED" : ("SHOP_TAB_TWO_HANDED", 2), "DAGGER" : ("SHOP_TAB_DAGGER", 2),
+		"BOW" : ("SHOP_TAB_BOW", 2), "BELL" : ("SHOP_TAB_BELL", 2), "FAN" : ("SHOP_TAB_FAN", 2),
+		"WARRIOR" : ("SHOP_TAB_WARRIOR", 1), "SURA" : ("SHOP_TAB_SURA", 1), "NINJA" : ("SHOP_TAB_NINJA", 1),
+		"SHAMAN" : ("SHOP_TAB_SHAMAN", 1), "SHIELD" : ("SHOP_TAB_SHIELD", 4),
+		"BRACELET" : ("SHOP_TAB_BRACELET", 3), "NECKLACE" : ("SHOP_TAB_NECKLACE", 3), "EARRINGS" : ("SHOP_TAB_EARRINGS", 3),
+		"SHOES" : ("SHOP_TAB_SHOES", 7),
+		"FORGEWORK" : ("SHOP_TAB_FORGEWORK", 9), "ADVANCED_FORGEWORK" : ("SHOP_TAB_ADVANCED_FORGEWORK", 9),
+		"GENERAL" : ("SHOP_TAB_GENERAL", 8), "MINER_SHOP" : ("SHOP_TAB_MINER_SHOP", 16), "COSMETIC" : ("SHOP_TAB_COSMETIC", 8),
+		"THEODAWAN_ACCE" : ("SHOP_TAB_THEODAWAN_ACCE", 8),
+	}
+	SHOP_TAB_DEFAULT = ("SHOP_TAB_GENERAL", 8)		# shops without a tab name (database shops)
+	SHOP_TAB_MAX = 7
 
 class ShopDialog(ui.ScriptWindow):
 	def __init__(self):
@@ -39,6 +62,8 @@ class ShopDialog(ui.ScriptWindow):
 		ui.ScriptWindow.__del__(self)
 
 	def __GetRealIndex(self, i):
+		if app.ENABLE_SHOP_TABS_BAERIM and getattr(self, "bmActive", False):
+			return self.tabIdx * shop.SHOP_EX_SLOT_COUNT + i
 		return self.tabIdx * shop.SHOP_SLOT_COUNT + i
 
 	def Refresh(self):
@@ -46,13 +71,15 @@ class ShopDialog(ui.ScriptWindow):
 		getItemCount = shop.GetItemCount
 		setItemID = self.itemSlotWindow.SetItemSlot
 
-		for i in xrange(shop.SHOP_SLOT_COUNT):
+		slotCount = shop.SHOP_SLOT_COUNT
+		if app.ENABLE_SHOP_TABS_BAERIM and getattr(self, "bmActive", False):
+			slotCount = self.bmWidth * SHOP_GRID_ROWS
+		for i in xrange(slotCount):
 			idx = self.__GetRealIndex(i)
 			itemCount = getItemCount(idx)
 
-			if not app.ENABLE_SLOT_CHAR_ENLARGEMENT:
-				if itemCount <= 1:
-					itemCount = 0
+			if itemCount <= 1:	# count 1 is never drawn (also with ENABLE_SLOT_CHAR_ENLARGEMENT)
+				itemCount = 0
 			setItemID(i, getItemID(idx), itemCount)
 
 			# if app.ENABLE_CHANGE_LOOK_SYSTEM:
@@ -137,7 +164,162 @@ class ShopDialog(ui.ScriptWindow):
 		self.tabIdx = 0
 		self.coinType = shop.SHOP_COIN_TYPE_GOLD
 
+		if app.ENABLE_SHOP_TABS_BAERIM:
+			self.__BuildBaerim()
+
 		self.Refresh()
+
+	if app.ENABLE_SHOP_TABS_BAERIM:
+		def __BuildBaerim(self):
+			self.bmActive = False
+			self.bmWidth = 5
+			self.gfBoard = self.GetChild("board")
+			self.gfTitleName = self.GetChild("TitleName")
+			self.gfItemSlot = self.itemSlotWindow
+			self.gfBtnBuy = self.btnBuy
+			self.gfBtnSell = self.btnSell
+			self.gfSize = (self.GetWidth(), self.GetHeight())
+			self.gfPos = self.GetLocalPosition()
+			self.bmParts = []
+
+			self.bmBox = ui.ImageBox()
+			self.bmBox.SetParent(self)
+			self.bmBox.LoadImage(SHOP_PATH % "box.png")
+			self.bmBox.SetPosition(3, 29)
+			self.bmBox.AddFlag("not_pick")
+			self.bmParts.append(self.bmBox)
+
+			self.bmGrids = {}
+			for width in (5, 10):
+				grid = ui.GridSlotWindow()
+				grid.SetParent(self)
+				grid.SetPosition(180, 34)
+				grid.ArrangeSlot(0, width, SHOP_GRID_ROWS, 32, 32, 0, 0)
+				wndMgr.SetSlotBaseImage(grid.hWnd, "d:/ymir work/ui/public/Slot_Base.sub", 1.0, 1.0, 1.0, 1.0)
+				grid.SetSlotStyle(wndMgr.SLOT_STYLE_NONE)
+				grid.SAFE_SetButtonEvent("LEFT", "EMPTY", self.SelectEmptySlot)
+				grid.SAFE_SetButtonEvent("LEFT", "EXIST", self.SelectItemSlot)
+				grid.SAFE_SetButtonEvent("RIGHT", "EXIST", self.UnselectItemSlot)
+				grid.SetOverInItemEvent(ui.__mem_func__(self.OverInItem))
+				grid.SetOverOutItemEvent(ui.__mem_func__(self.OverOutItem))
+				self.bmGrids[width] = grid
+				self.bmParts.append(grid)
+
+			# category tabs: plain buttons whose selected look is drawn here (see uiDungeonStat: the RadioButton of this
+			# client does not keep its pressed look)
+			self.bmTabs = []
+			for i in xrange(SHOP_TAB_MAX):
+				tab = ui.Button()
+				tab.SetParent(self)
+				tab.SetPosition(10, 35 + 40 * i)
+				tab.SetEvent(ui.__mem_func__(self.__OnClickBaerimTab), i)
+				icon = ui.ImageBox()
+				icon.SetParent(tab)
+				icon.SetPosition(10, 9)
+				icon.AddFlag("not_pick")
+				icon.Show()
+				text = ui.TextLine()
+				text.SetParent(tab)
+				text.SetPosition(50, 19)
+				text.SetVerticalAlignCenter()
+				text.SetPackedFontColor(SHOP_TAB_TEXT_COLOR)
+				text.AddFlag("not_pick")
+				text.Show()
+				tab.icon = icon
+				tab.text = text
+				self.bmTabs.append(tab)
+				self.bmParts.append(tab)
+
+			self.bmBtnBuy = ui.ToggleButton()
+			self.bmBtnSell = ui.ToggleButton()
+			for (button, text) in ((self.bmBtnBuy, uiScriptLocale.SHOP_BUY), (self.bmBtnSell, uiScriptLocale.SHOP_SELL)):
+				button.SetParent(self)
+				button.SetUpVisual(SHOP_PATH % "btn_normal.png")
+				button.SetOverVisual(SHOP_PATH % "btn_hover.png")
+				button.SetDownVisual(SHOP_PATH % "btn_select.png")
+				button.SetText(text)
+				self.bmParts.append(button)
+			self.bmBtnBuy.SetToggleUpEvent(ui.__mem_func__(self.CancelShopping))
+			self.bmBtnBuy.SetToggleDownEvent(ui.__mem_func__(self.OnBuy))
+			self.bmBtnSell.SetToggleUpEvent(ui.__mem_func__(self.CancelShopping))
+			self.bmBtnSell.SetToggleDownEvent(ui.__mem_func__(self.OnSell))
+
+			for part in self.bmParts:
+				part.Hide()
+
+		def __EnterBaerim(self, vid):
+			width = SHOP_WIDE_NPC.get(chr.GetVirtualNumber(vid), 5)
+			(w, h) = (350 if width == 5 else 510, 331)
+			self.bmActive = True
+			self.bmWidth = width
+
+			self.SetSize(w, h)
+			self.gfBoard.SetSize(w, h)
+			self.titleBar.SetWidth(w - 15)
+			self.gfTitleName.SetPosition((w - 15) / 2, 4)
+			self.SetPosition(wndMgr.GetScreenWidth() - 216 - w, self.gfPos[1])
+
+			self.gfItemSlot.Hide()
+			self.gfBtnBuy.Hide()
+			self.gfBtnSell.Hide()
+			self.btnClose.Hide()
+			self.__HideMiddleTabs()
+			self.__HideSmallTabs()
+			if app.ENABLE_SHOP_REPURCHASE and self.__repurchase_shop_button:
+				self.__repurchase_shop_button.Hide()
+
+			self.itemSlotWindow = self.bmGrids[width]
+			self.btnBuy = self.bmBtnBuy
+			self.btnSell = self.bmBtnSell
+			self.bmBox.Show()
+			for (gridWidth, grid) in self.bmGrids.items():
+				if gridWidth == width:
+					grid.Show()
+				else:
+					grid.Hide()
+
+			buyX = 186 if width == 5 else 270
+			self.bmBtnBuy.SetPosition(buyX, 295)
+			self.bmBtnSell.SetPosition(buyX + 79, 295)
+			self.bmBtnBuy.Show()
+			self.bmBtnSell.Show()
+
+			tabCount = max(1, min(SHOP_TAB_MAX, shop.GetTabCount()))
+			for (i, tab) in enumerate(self.bmTabs):
+				if i >= tabCount:
+					tab.Hide()
+					continue
+				(key, icon) = SHOP_TABS.get(shop.GetTabName(i) or "", SHOP_TAB_DEFAULT)
+				tab.text.SetText(getattr(localeInfo, key, shop.GetTabName(i) or ""))
+				tab.icon.LoadImage(SHOP_PATH % ("icons/%d.png" % icon))
+				tab.Show()
+			self.__OnClickBaerimTab(0)
+
+		def __LeaveBaerim(self):
+			if not getattr(self, "bmActive", False):
+				return
+			self.bmActive = False
+			for part in self.bmParts:
+				part.Hide()
+			self.itemSlotWindow = self.gfItemSlot
+			self.btnBuy = self.gfBtnBuy
+			self.btnSell = self.gfBtnSell
+			(w, h) = self.gfSize
+			self.SetSize(w, h)
+			self.gfBoard.SetSize(w, h)
+			self.titleBar.SetWidth(w - 15)
+			self.gfTitleName.SetPosition((w - 15) / 2, 4)
+			self.SetPosition(self.gfPos[0], self.gfPos[1])
+			self.gfItemSlot.Show()
+
+		def __OnClickBaerimTab(self, idx):
+			for (i, tab) in enumerate(self.bmTabs):
+				image = "btn_cat_select.png" if i == idx else "btn_cat_norm.png"
+				tab.SetUpVisual(SHOP_PATH % image)
+				tab.SetOverVisual(SHOP_PATH % ("btn_cat_select.png" if i == idx else "btn_cat_hover.png"))
+				tab.SetDownVisual(SHOP_PATH % "btn_cat_select.png")
+			self.tabIdx = idx
+			self.Refresh()
 
 	def __ShowBuySellButton(self):
 		self.btnBuy.Hide()
@@ -256,7 +438,11 @@ class ShopDialog(ui.ScriptWindow):
 
 		self.tabIdx = 0
 
-		if app.ENABLE_RENEWAL_SHOPEX:
+		if app.ENABLE_SHOP_TABS_BAERIM:
+			self.__LeaveBaerim()
+		if app.ENABLE_SHOP_TABS_BAERIM and not isPrivateShop:
+			self.__EnterBaerim(vid)
+		elif app.ENABLE_RENEWAL_SHOPEX:
 			if isPrivateShop:
 				self.__HideMiddleTabs()
 				self.__HideSmallTabs()
@@ -296,7 +482,7 @@ class ShopDialog(ui.ScriptWindow):
 		self.SetTop()
 
 		if app.ENABLE_SHOP_REPURCHASE:
-			if isPrivateShop:
+			if isPrivateShop or (app.ENABLE_SHOP_TABS_BAERIM and self.bmActive):
 				if self.__repurchase_shop_button:
 					self.__repurchase_shop_button.Hide()
 			else:
@@ -335,7 +521,7 @@ class ShopDialog(ui.ScriptWindow):
 		self.Hide()
 
 	def GetIndexFromSlotPos(self, slotPos):
-		return self.tabIdx * shop.SHOP_SLOT_COUNT + slotPos
+		return self.__GetRealIndex(slotPos)
 
 	def OnClickTabButton(self, idx):
 		self.tabIdx = idx

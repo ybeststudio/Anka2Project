@@ -261,9 +261,6 @@ enum PacketHeaderCG
     HEADER_CG_AUTO_SELL_REMOVE 					= 202,
     HEADER_CG_AUTO_SELL_STATUS 					= 203,
 #endif
-#ifdef ENABLE_RIDING_EXTENDED
-	HEADER_CG_MOUNT_UP_GRADE 					= 204,
-#endif
 	//HEADER_CG_EMPTY							= 203,
 	//HEADER_CG_EMPTY							= 204,
 	HEADER_CG_DRAGON_SOUL_REFINE				= 205,
@@ -286,7 +283,11 @@ enum PacketHeaderCG
 	//HEADER_CG_EMPTY							= 219,
 	//HEADER_CG_EMPTY							= 220,
 	//HEADER_CG_EMPTY							= 221,
+#ifdef ENABLE_COUNTRY_FLAG
+	HEADER_CG_CHANGE_COUNTRY_FLAG				= 222,
+#else
 	//HEADER_CG_EMPTY							= 222,
+#endif
 	//HEADER_CG_EMPTY							= 223,
 	//HEADER_CG_EMPTY							= 224,
 	//HEADER_CG_EMPTY							= 225,
@@ -523,10 +524,6 @@ enum PacketHeaderGC
 #endif
 	//HEADER_GC_EMPTY							= 153,
 	//HEADER_GC_EMPTY							= 154,
-#ifdef ENABLE_RIDING_EXTENDED
-	HEADER_GC_MOUNT_UP_GRADE 					= 155,
-	HEADER_GC_MOUNT_UP_GRADE_CHAT 				= 156,
-#endif
 #ifdef ENABLE_COLLECT_WINDOW
 	HEADER_GC_COLLECT 							= 157,
 #endif
@@ -689,6 +686,9 @@ enum
 	QUICKSLOT_MAX_NUM = 36,
 
 	SHOP_HOST_ITEM_MAX_NUM = 40,
+#ifdef ENABLE_SHOP_TABS_BAERIM
+	SHOP_EX_ITEM_MAX_NUM = 80,		// slots of one ShopEx tab (10 columns x 8 rows)
+#endif
 
 	METIN_SOCKET_COUNT = 6,
 
@@ -1519,6 +1519,15 @@ typedef struct SPacketCGChangeName
 	char name[CHARACTER_NAME_MAX_LEN+1];
 } TPacketCGChangeName;
 
+#ifdef ENABLE_COUNTRY_FLAG
+typedef struct SPacketCGChangeCountryFlag
+{
+	BYTE header;
+	BYTE index;
+	char flag[COUNTRY_FLAG_MAX_LEN + 1];
+} TPacketCGChangeCountryFlag;
+#endif
+
 typedef struct command_crc_report
 {
 	BYTE header;
@@ -1660,6 +1669,9 @@ typedef struct SSimplePlayerInformation
 	WORD wPort;
 	BYTE bySkillGroup;
 	DWORD dwLastPlay;
+#ifdef ENABLE_COUNTRY_FLAG
+	char szCountryFlag[COUNTRY_FLAG_MAX_LEN + 1];	// lower case ISO code, "" = none
+#endif
 } TSimplePlayerInformation;
 
 typedef struct packet_login_success3
@@ -1803,6 +1815,9 @@ typedef struct packet_char_additional_info
 #endif
 #ifdef ENABLE_SHINING_SYSTEM
 	DWORD adwShining[2];	// WEAR_SHINING_WEAPON, WEAR_SHINING_ARMOR
+#endif
+#ifdef ENABLE_COUNTRY_FLAG
+	char szCountryFlag[COUNTRY_FLAG_MAX_LEN + 1];	// shown in the name tail, "" = language flag
 #endif
 } TPacketGCCharacterAdditionalInfo;
 
@@ -2577,7 +2592,11 @@ typedef struct packet_shop_start_ex
 	{
 		char name[SHOP_TAB_NAME_MAX];
 		BYTE coin_type;
+#ifdef ENABLE_SHOP_TABS_BAERIM
+		packet_shop_item items[SHOP_EX_ITEM_MAX_NUM];
+#else
 		packet_shop_item items[SHOP_HOST_ITEM_MAX_NUM];
+#endif
 	} TSubPacketShopTab;
 
 	DWORD owner_vid;
@@ -3047,10 +3066,6 @@ enum
 	GUILD_AUTH_REMOVE_MEMBER	= (1 << 1),
 	GUILD_AUTH_NOTICE			= (1 << 2),
 	GUILD_AUTH_SKILL			= (1 << 3),
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-	GUILD_AUTH_WAR				= (1 << 4),
-	GUILD_AUTH_BANK				= (1 << 5),
-#endif
 };
 
 #ifdef ENABLE_GUILD_GRADE_RENEWAL
@@ -3774,6 +3789,9 @@ typedef struct SPacketGCWhisperDetails
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
 	BYTE bLanguage;
 #endif
+#ifdef ENABLE_COUNTRY_FLAG
+	char szCountryFlag[COUNTRY_FLAG_MAX_LEN + 1];	// "" = show the language flag
+#endif
 } TPacketGCWhisperDetails;
 #endif
 
@@ -3955,6 +3973,9 @@ typedef struct packet_target_info
 	BYTE count;
 #endif
 
+#ifdef ENABLE_TARGET_DROP_CHANCE
+	DWORD dwChance;		// drop chance for this player in 1/1,000,000
+#endif
 } TPacketGCTargetInfo;
 
 typedef struct packet_target_info_load
@@ -4491,29 +4512,6 @@ typedef struct SPacketGCReciveRandomItems
 } TPacketGCReciveRandomItems;
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-typedef struct SPacketCGMountUpGrade
-{
-	uint8_t header;
-	uint8_t iSubHeader;
-} TPacketCGMountUpGrade;
-
-typedef struct SPacketGCMountUpGrade
-{
-	uint8_t header;
-	uint8_t subheader;
-	uint8_t horse_level;
-	uint8_t is_fail;
-	uint32_t existing_exp;
-} TPacketGCMountUpGrade;
-
-typedef struct SPacketGCMountUpGradeChat
-{
-	uint8_t header;
-	uint8_t type;
-	uint16_t value;
-} TPacketGCMountUpGradeChat;
-#endif
 
 #ifdef ENABLE_AUTO_SELL_SYSTEM
 typedef struct command_auto_sell_add

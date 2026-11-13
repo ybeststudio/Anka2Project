@@ -11,9 +11,10 @@ EQUIPMENT_START_INDEX = player.EQUIPMENT_SLOT_START
 def _SLOT(name, wear):
 	return getattr(item, name, EQUIPMENT_START_INDEX + wear)
 
-# Anka2 items: mounts are COSTUME_MOUNT costumes, pets are ITEM_PET (WEAR_PET) -> the reference mount / pet slots show them
-COMPANION_MOUNT = item.COSTUME_SLOT_MOUNT
-COSTUME_MOUNT = item.EQUIPMENT_MOUNT
+# Baerim: the mount (ITEM_MOUNT 58000 "At", WEAR_MOUNT) sits in the companion slot, the mount costume
+# (COSTUME_MOUNT, look only) in the costume slot next to it
+COMPANION_MOUNT = item.EQUIPMENT_MOUNT
+COSTUME_MOUNT = item.COSTUME_SLOT_MOUNT
 COSTUME_PET = item.COSTUME_SLOT_PET
 COMPANION_BUFFI = _SLOT("COMPANION_BUFFI", 33)
 COMPANION_BUFFI_ARMOR = _SLOT("COMPANION_BUFFI_ARMOR", 34)

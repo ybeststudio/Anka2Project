@@ -36,6 +36,27 @@ ACMD(do_guild_skill);
 #endif
 #ifdef ENABLE_GUILD_QUEST
 ACMD(do_guild_quest);
+#ifdef ENABLE_COSTUME_SHOP_BAERIM
+ACMD(do_costume_shop);
+#ifdef ENABLE_WARDROBE_SYSTEM
+ACMD(do_wardrobe);
+#endif
+#endif
+#ifdef ENABLE_TELEPORT_BAERIM
+ACMD(do_teleport_map);
+#endif
+#ifdef ENABLE_DAMAGE_TRACE
+ACMD(do_damage_trace);
+#endif
+#ifdef ENABLE_MOKOKO_SYSTEM
+ACMD(do_mokoko_info);
+ACMD(do_mokoko_rewards);
+ACMD(do_mokoko_claim);
+ACMD(do_mokoko_reload);
+#endif
+#ifdef ENABLE_GLOBAL_RANKING
+ACMD(do_global_rank);
+#endif
 ACMD(do_guild_quest_reward);
 #endif
 #ifdef ENABLE_GUILD_DONATION
@@ -520,6 +541,27 @@ struct command_info cmd_info[] =
 #endif
 #ifdef ENABLE_GUILD_QUEST
 	{ "guild_quest", do_guild_quest, 0, POS_DEAD, GM_PLAYER },
+#ifdef ENABLE_COSTUME_SHOP_BAERIM
+	{ "costume_shop", do_costume_shop, 0, POS_DEAD, GM_PLAYER },
+#ifdef ENABLE_WARDROBE_SYSTEM
+	{ "wardrobe", do_wardrobe, 0, POS_DEAD, GM_PLAYER },
+#endif
+#endif
+#ifdef ENABLE_TELEPORT_BAERIM
+	{ "teleport_map", do_teleport_map, 0, POS_DEAD, GM_PLAYER },
+#endif
+#ifdef ENABLE_DAMAGE_TRACE
+	{ "damage_trace", do_damage_trace, 0, POS_DEAD, GM_PLAYER },
+#endif
+#ifdef ENABLE_MOKOKO_SYSTEM
+	{ "mokoko_info", do_mokoko_info, 0, POS_DEAD, GM_PLAYER },
+	{ "mokoko_rewards", do_mokoko_rewards, 0, POS_DEAD, GM_PLAYER },
+	{ "mokoko_claim", do_mokoko_claim, 0, POS_DEAD, GM_PLAYER },
+	{ "mokoko_reload", do_mokoko_reload, 0, POS_DEAD, GM_IMPLEMENTOR },
+#endif
+#ifdef ENABLE_GLOBAL_RANKING
+	{ "global_rank", do_global_rank, 0, POS_DEAD, GM_PLAYER },
+#endif
 	{ "get_guild_quest_reward", do_guild_quest_reward, 0, POS_DEAD, GM_PLAYER },
 #endif
 #ifdef ENABLE_GUILD_DONATION
@@ -738,12 +780,24 @@ struct command_info cmd_info[] =
 	{ "clear_land",						do_clear_land,					0,						POS_DEAD,			GM_HIGH_WIZARD	},
 	{ "affect_remove",					do_affect_remove,				0,						POS_DEAD,			GM_LOW_WIZARD	},
 
+#ifndef ENABLE_CLASSIC_HORSE_REMOVED
 	{ "horse_state",					do_horse_state,					0,						POS_DEAD,			GM_HIGH_WIZARD	},
+#endif
+#ifndef ENABLE_CLASSIC_HORSE_REMOVED
 	{ "horse_level",					do_horse_level,					0,						POS_DEAD,			GM_HIGH_WIZARD	},
+#endif
+#ifndef ENABLE_CLASSIC_HORSE_REMOVED
 	{ "horse_ride",						do_horse_ride,					0,						POS_DEAD,			GM_HIGH_WIZARD	},
+#endif
+#ifndef ENABLE_CLASSIC_HORSE_REMOVED
 	{ "horse_summon",					do_horse_summon,				0,						POS_DEAD,			GM_HIGH_WIZARD	},
+#endif
+#ifndef ENABLE_CLASSIC_HORSE_REMOVED
 	{ "horse_unsummon",					do_horse_unsummon,				0,						POS_DEAD,			GM_HIGH_WIZARD	},
+#endif
+#ifndef ENABLE_CLASSIC_HORSE_REMOVED
 	{ "horse_set_stat",					do_horse_set_stat,				0,						POS_DEAD,			GM_HIGH_WIZARD	},
+#endif
 
 	{ "emotion_allow",					do_emotion_allow,				0,						POS_FIGHTING,		GM_PLAYER		},
 	{ "kiss",							do_emotion,						0,						POS_FIGHTING,		GM_PLAYER		},
@@ -800,9 +854,15 @@ struct command_info cmd_info[] =
 	{ "add_attr",						do_add_attr,					0,						POS_DEAD,			GM_IMPLEMENTOR	},
 	{ "add_socket",						do_add_socket,					0,						POS_DEAD,			GM_IMPLEMENTOR	},
 
+#ifndef ENABLE_CLASSIC_HORSE_REMOVED
 	{ "user_horse_ride",				do_user_horse_ride,				0,						POS_FISHING,		GM_PLAYER		},
+#endif
+#ifndef ENABLE_CLASSIC_HORSE_REMOVED
 	{ "user_horse_back",				do_user_horse_back,				0,						POS_FISHING,		GM_PLAYER		},
+#endif
+#ifndef ENABLE_CLASSIC_HORSE_REMOVED
 	{ "user_horse_feed",				do_user_horse_feed,				0,						POS_FISHING,		GM_PLAYER		},
+#endif
 
 	{ "show_arena_list",				do_show_arena_list,				0,						POS_DEAD,			GM_LOW_WIZARD	},
 	{ "end_all_duel",					do_end_all_duel,				0,						POS_DEAD,			GM_LOW_WIZARD	},
@@ -1145,15 +1205,25 @@ void interpret_command(LPCHARACTER ch, const char * argument, size_t len)
 	size_t cmdlen;
 	line = first_cmd(new_line, cmd, sizeof(cmd), &cmdlen);
 
+	// an exact name wins over a prefix: "/war" was taken by "wardrobe", "/safebox" by "safebox_close"
 	for (icmd = 1; *cmd_info[icmd].command != '\n'; ++icmd)
 	{
-		if (cmd_info[icmd].command_pointer == do_cmd)
+		if (!strcmp(cmd_info[icmd].command, cmd))
+			break;
+	}
+
+	if (*cmd_info[icmd].command == '\n')
+	{
+		for (icmd = 1; *cmd_info[icmd].command != '\n'; ++icmd)
 		{
-			if (!strcmp(cmd_info[icmd].command, cmd))
+			if (cmd_info[icmd].command_pointer == do_cmd)
+			{
+				if (!strcmp(cmd_info[icmd].command, cmd))
+					break;
+			}
+			else if (!strncmp(cmd_info[icmd].command, cmd, cmdlen))
 				break;
 		}
-		else if (!strncmp(cmd_info[icmd].command, cmd, cmdlen))
-			break;
 	}
 
 	if (ch->GetPosition() < cmd_info[icmd].minimum_position)

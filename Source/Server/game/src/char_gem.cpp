@@ -90,8 +90,8 @@ bool CHARACTER::CheckItemsFull()
 
 	if ((fp = fopen(file_name, "r")) == 0)
 		return false;
-	else
-		return true;
+	fclose(fp);	// FIX(fd leak): the handle stayed open on every gem market action
+	return true;
 }
 
 void CHARACTER::ClearGemMarket()

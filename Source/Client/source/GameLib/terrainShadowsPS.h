@@ -26,7 +26,7 @@ float3 LightSpecular : register(c9);
 float textureDiffusePower : register(c10);
 float SpecularLight : register(c11);
 float terrainLightMultiply : register(c14);
-float alphaOverride : register(c15);
+float alphaOverride : register(c21);	// c15 is overwritten by the point light intensity in the same pass
 float isSnow : register(c16);
 float uv : register(c17);
 float textureSpecularPower : register(c18);
@@ -127,7 +127,9 @@ float4 main(PS_INPUT input) : SV_TARGET
     // --- STABLE HIGH-RESOLUTION DIFFUSE SAMPLE ---
     float4 Color = tex2D(DiffuseTexture, baseUV);
     float calculatedAlpha = tex2D(SplatTexture, input.UV2).a;
-    Color.a = min(1.0f, calculatedAlpha * 1.5f);
+    // the first splat of a patch is the opaque base (alphaOverride = 1, like the fixed function path with the alpha
+    // stage disabled): without it a patch whose splats do not cover it fully left holes in the terrain (Orc Valley tower)
+    Color.a = (alphaOverride > 0.5f) ? 1.0f : min(1.0f, calculatedAlpha * 1.5f);
 
     // --- ULTRA-STABLE 3D WORLD NORMAL MAPPING ---
     float3 N_geom = normalize(input.Normal);

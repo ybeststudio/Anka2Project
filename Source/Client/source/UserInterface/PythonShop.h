@@ -125,7 +125,11 @@ class CPythonShop : public CSingleton<CPythonShop>
 			}
 			BYTE coinType;
 			std::string name;
+#ifdef ENABLE_SHOP_TABS_BAERIM
+			TShopItemData items[SHOP_EX_ITEM_MAX_NUM];
+#else
 			TShopItemData items[SHOP_HOST_ITEM_MAX_NUM];
+#endif
 		};
 		
 		BYTE m_bTabCount;

@@ -4299,6 +4299,24 @@ ACMD (do_all_skill_master)
 			}
 		}
 	}
+#ifdef ENABLE_FULL_SKILL_OFFICIAL_LEVELS
+	// these skills never reach Perfect Master in the official game: keep their official levels (M1 = 20)
+	static const struct { DWORD dwVnum; BYTE bLevel; } s_officialLevels[] =
+	{
+		{ SKILL_COMBO,					2	},
+		{ SKILL_CREATE,					0	},	// fishing: no points in the official game
+		{ SKILL_LANGUAGE1,				20	},
+		{ SKILL_LANGUAGE2,				20	},
+		{ SKILL_LANGUAGE3,				20	},
+		{ SKILL_HORSE_SUMMON,			10	},
+		{ SKILL_HORSE_WILDATTACK,		20	},
+		{ SKILL_HORSE_CHARGE,			20	},
+		{ SKILL_HORSE_ESCAPE,			20	},
+		{ SKILL_HORSE_WILDATTACK_RANGE,	20	},
+	};
+	for (size_t i = 0; i < sizeof(s_officialLevels) / sizeof(s_officialLevels[0]); ++i)
+		ch->SetSkillLevel(s_officialLevels[i].dwVnum, s_officialLevels[i].bLevel);
+#endif
 	ch->ComputePoints();
 	ch->SkillLevelPacket();
 }

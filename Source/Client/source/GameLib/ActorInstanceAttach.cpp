@@ -628,6 +628,9 @@ void CActorInstance::AttachAcce(CItemData * pItemData, float fSpecular)
 {
 	if (!pItemData)
 	{
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+		SetPartOwnMotion(CRaceData::PART_ACCE, nullptr);
+#endif
 		RegisterModelThing(CRaceData::PART_ACCE, nullptr);
 		SetModelInstance(CRaceData::PART_ACCE, CRaceData::PART_ACCE, 0);
 		RefreshActorInstance();
@@ -637,6 +640,10 @@ void CActorInstance::AttachAcce(CItemData * pItemData, float fSpecular)
 	RegisterModelThing(CRaceData::PART_ACCE, pItemData->GetModelThing());
 	SetModelInstance(CRaceData::PART_ACCE, CRaceData::PART_ACCE, 0);
 	AttachModelInstance(CRaceData::PART_MAIN, "Bip01 Spine2", CRaceData::PART_ACCE);
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+	// animated sash skins (Baerim wings): the model's own animation loops
+	SetPartOwnMotion(CRaceData::PART_ACCE, pItemData->GetModelThing());
+#endif
 
 	if (fSpecular > 0.0f)
 	{

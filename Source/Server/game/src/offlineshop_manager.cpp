@@ -393,6 +393,10 @@ void COfflineShopManager::AddItem(LPCHARACTER ch, BYTE bDisplayPos, TItemPos bPo
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 	item.transmutation = pkItem->GetTransmutationVnum();
 #endif
+#ifdef ENABLE_OFFLINESHOP_APPLY_RANDOM
+	thecore_memcpy(item.aApplyRandom, pkItem->GetApplyRandoms(), sizeof(item.aApplyRandom));
+	thecore_memcpy(item.abApplyRandomRow, pkItem->GetApplyRandomRows(), sizeof(item.abApplyRandomRow));
+#endif
 
 	strlcpy(item.szOwnerName, ch->GetName(), sizeof(item.szOwnerName));
 	pkItem->RemoveFromCharacter();
@@ -430,6 +434,14 @@ void COfflineShopManager::RemoveItemReal(OFFLINE_SHOP_ITEM* item)
 				pItem->SetSockets(item->alSockets);
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 				pItem->SetTransmutationVnum(item->transmutation);
+#endif
+#ifdef ENABLE_OFFLINESHOP_APPLY_RANDOM
+				// rows listed before the random columns existed hold zeros: keep the new roll for those
+				if (item->aApplyRandom[0].bType || item->aApplyRandom[1].bType || item->aApplyRandom[2].bType)
+				{
+					pItem->SetApplyRandoms(item->aApplyRandom, item->abApplyRandomRow);
+					pItem->Save();
+				}
 #endif
 				pItem->UpdatePacket();
 			}
@@ -551,11 +563,41 @@ void COfflineShopManager::BuyItemReal(TOfflineShopBuy* item)
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 			pItem->SetTransmutationVnum(item->item.transmutation);
 #endif
+#ifdef ENABLE_OFFLINESHOP_APPLY_RANDOM
+			// rows listed before the random columns existed hold zeros: keep the new roll for those
+			if (item->item.aApplyRandom[0].bType || item->item.aApplyRandom[1].bType || item->item.aApplyRandom[2].bType)
+			{
+				pItem->SetApplyRandoms(item->item.aApplyRandom, item->item.abApplyRandomRow);
+				pItem->Save();
+			}
+#endif
 			pItem->UpdatePacket();
 			SendReturnPacket(ch, SHOP_SUBHEADER_GC_OK);
 		}
 	}
 }
+
+#ifdef ENABLE_EXPLOIT_AUDIT_FIX
+void COfflineShopManager::RefundBuyReal(TOfflineShopBuy* item)
+{
+	LPOFFLINESHOP pkOfflineShop = FindOfflineShopPID(item->item.owner_id);
+	if (pkOfflineShop && item->item.pos < OFFLINE_SHOP_HOST_ITEM_MAX_NUM)
+	{
+		OFFLINE_SHOP_ITEM& slot = pkOfflineShop->m_data.items[item->item.pos];
+		if (slot.status == OFFLINE_SHOP_ITEM_STATUS_PENDING && slot.id == item->item.id)
+			slot.status = 0;
+	}
+
+	// every core gets the packet: only the buyer's core pays back
+	LPCHARACTER ch = CHARACTER_MANAGER::Instance().FindByPID(item->customer_id);
+	if (!ch || !ch->GetDesc() || item->item.price <= 0)
+		return;
+
+	ch->PointChange(POINT_GOLD, item->item.price);
+	SendReturnPacket(ch, SHOP_SUBHEADER_GC_SOLD_OUT);
+	sys_log(0, "OFFLINESHOP_REFUND: %s %lld (item %u vnum %u)", ch->GetName(), item->item.price, item->item.id, item->item.vnum);
+}
+#endif
 
 void COfflineShopManager::Buy(LPCHARACTER ch, DWORD vid, BYTE pos)
 {
@@ -633,6 +675,9 @@ void COfflineShopManager::Buy(LPCHARACTER ch, DWORD vid, BYTE pos)
 	}
 
 	ch->PointChange(POINT_GOLD, -item.price);
+#ifdef ENABLE_EXPLOIT_AUDIT_FIX
+	item.status = OFFLINE_SHOP_ITEM_STATUS_PENDING;	// a second click before the DB answer gets "sold out", not a second payment
+#endif
 
 	shop_buy n;
 	n.subheader = BUY_ITEM;
@@ -1053,6 +1098,10 @@ void COfflineShopManager::OpenMyOfflineShop(LPCHARACTER ch, const char* c_pszSig
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 		item.transmutation = pkItem->GetTransmutationVnum();
 #endif
+#ifdef ENABLE_OFFLINESHOP_APPLY_RANDOM
+		thecore_memcpy(item.aApplyRandom, pkItem->GetApplyRandoms(), sizeof(item.aApplyRandom));
+		thecore_memcpy(item.abApplyRandomRow, pkItem->GetApplyRandomRows(), sizeof(item.abApplyRandomRow));
+#endif
 		strlcpy(item.szOwnerName, ch->GetName(), sizeof(item.szOwnerName));
 		strlcpy(item.szBuyerName, "NONAME", sizeof(item.szBuyerName));
 		pkItem->RemoveFromCharacter();
@@ -1209,6 +1258,14 @@ void COfflineShopManager::GetBackItemReal(TOfflineShopBackItem* ch)
 #ifdef ENABLE_CHANGE_LOOK_SYSTEM
 				pItem->SetTransmutationVnum(ch->items[i].transmutation);
 #endif
+#ifdef ENABLE_OFFLINESHOP_APPLY_RANDOM
+				// rows listed before the random columns existed hold zeros: keep the new roll for those
+				if (ch->items[i].aApplyRandom[0].bType || ch->items[i].aApplyRandom[1].bType || ch->items[i].aApplyRandom[2].bType)
+				{
+					pItem->SetApplyRandoms(ch->items[i].aApplyRandom, ch->items[i].abApplyRandomRow);
+					pItem->Save();
+				}
+#endif
 				pItem->UpdatePacket();
 
 				sys_log(0, "GetBackItemReal: %s item vnum %d count %d price %lld", t->GetName(),pItem->GetVnum(), pItem->GetCount(), ch->items[i].price);
@@ -1328,6 +1385,16 @@ void COfflineShopManager::RecvPackets(const char* data)
 				BuyItemReal(&p->buyItem);
 		}
 		break;
+
+#ifdef ENABLE_EXPLOIT_AUDIT_FIX
+		case BUY_ITEM_REFUND:
+		{
+			shop_buy* p = (shop_buy*)data;
+			if (p)
+				RefundBuyReal(&p->buyItem);
+		}
+		break;
+#endif
 
 		case WITHDRAW_MONEY:
 		{

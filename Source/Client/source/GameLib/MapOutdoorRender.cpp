@@ -408,7 +408,9 @@ struct FRenderPCBlocker
 				return;
 			}
 		}
+#ifndef ENABLE_PCBLOCKER_FLAT_ALPHA
 		STATEMANAGER.SetTextureStageState(1, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
+#endif
 
 		pInstance->RenderPCBlocker();
 	}
@@ -721,7 +723,35 @@ void CMapOutdoor::RenderPCBlocker()
     D3DPERF_BeginEvent(D3DCOLOR_ARGB(255, 50, 50, 0), L"** CMapOutdoor::RenderPCBlocker **");
 #endif
 
-#ifndef WORLD_EDITOR
+#if !defined(WORLD_EDITOR) && defined(ENABLE_PCBLOCKER_FLAT_ALPHA)
+	// Baerim: an object between the camera and the character is drawn evenly see-through (constant alpha)
+	// instead of the official PCBlockerAlpha.dds hole projected around the character
+	if (m_PCBlockerVector.size() != 0)
+	{
+		STATEMANAGER.SaveRenderState(D3DRS_ALPHABLENDENABLE, TRUE);
+		STATEMANAGER.SaveRenderState(D3DRS_SRCBLEND, D3DBLEND_SRCALPHA);
+		STATEMANAGER.SaveRenderState(D3DRS_DESTBLEND, D3DBLEND_INVSRCALPHA);
+		STATEMANAGER.SaveRenderState(D3DRS_ZWRITEENABLE, FALSE);
+		STATEMANAGER.SaveRenderState(D3DRS_TEXTUREFACTOR, D3DCOLOR_ARGB(PCBLOCKER_FLAT_ALPHA, 255, 255, 255));
+		STATEMANAGER.SetTextureStageState(0, D3DTSS_COLORARG1, D3DTA_TEXTURE);
+		STATEMANAGER.SetTextureStageState(0, D3DTSS_COLORARG2, D3DTA_CURRENT);
+		STATEMANAGER.SetTextureStageState(0, D3DTSS_COLOROP, D3DTOP_MODULATE);
+		STATEMANAGER.SetTextureStageState(0, D3DTSS_ALPHAARG1, D3DTA_TFACTOR);
+		STATEMANAGER.SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
+		STATEMANAGER.SetTextureStageState(1, D3DTSS_COLOROP, D3DTOP_DISABLE);
+		STATEMANAGER.SetTextureStageState(1, D3DTSS_ALPHAOP, D3DTOP_DISABLE);
+		STATEMANAGER.SetTexture(1, nullptr);
+
+		std::for_each(m_PCBlockerVector.begin(), m_PCBlockerVector.end(), FRenderPCBlocker());
+
+		STATEMANAGER.SetTextureStageState(0, D3DTSS_ALPHAARG1, D3DTA_TEXTURE);
+		STATEMANAGER.RestoreRenderState(D3DRS_TEXTUREFACTOR);
+		STATEMANAGER.RestoreRenderState(D3DRS_ZWRITEENABLE);
+		STATEMANAGER.RestoreRenderState(D3DRS_DESTBLEND);
+		STATEMANAGER.RestoreRenderState(D3DRS_SRCBLEND);
+		STATEMANAGER.RestoreRenderState(D3DRS_ALPHABLENDENABLE);
+	}
+#elif !defined(WORLD_EDITOR)
 	// PCBlocker
 	if (m_PCBlockerVector.size() != 0)
 	{

@@ -20,6 +20,9 @@ class CDungeon
 		IdType GetId() const { return m_id; }
 
 		void Notice(DWORD id, const char* msg, bool big = false);
+#ifdef ENABLE_ARENA2_DUNGEONS
+		void NoticeText(const char* msg);
+#endif
 
 		void JoinParty(LPPARTY pParty);
 		void QuitParty(LPPARTY pParty);

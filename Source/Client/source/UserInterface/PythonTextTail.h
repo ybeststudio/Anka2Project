@@ -24,6 +24,9 @@ class CPythonTextTail : public CSingleton<CPythonTextTail>
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
 			CGraphicImageInstance* pLanguageInstance;
 			CGraphicImageInstance* pLanguageInstance2;
+#ifdef ENABLE_COUNTRY_FLAG
+			bool bLanguageScaled;	// pLanguageInstance is a scaled CGraphicExpandedImageInstance (country flag)
+#endif
 #endif
 #ifdef ENABLE_SHOW_MOB_INFO
 			CGraphicTextInstance* pAIFlagTextInstance;

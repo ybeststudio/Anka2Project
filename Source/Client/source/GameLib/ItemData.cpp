@@ -180,6 +180,11 @@ void CItemData::SetDefaultItemData(const char *c_szIconFileName, const char *c_s
 void CItemData::__LoadFiles()
 {
 	// Model File Name
+#ifdef ENABLE_EFFECT_MODEL_ITEM
+	if (IsEffectModel())
+		m_pModelThing = NULL;	// an effect, not a model (attached by CInstanceBase)
+	else
+#endif
 	if (!m_strModelFileName.empty())
 		m_pModelThing = (CGraphicThing *)CResourceManager::Instance().GetResourcePointer(m_strModelFileName.c_str());
 

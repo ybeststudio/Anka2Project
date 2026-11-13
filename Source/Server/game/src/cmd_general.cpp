@@ -10,6 +10,9 @@
 #include "desc_client.h"
 #include "desc_manager.h"
 #include "char.h"
+#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#include "dungeon_window.h"
+#endif
 #include "char_manager.h"
 #include "motion.h"
 #include "packet.h"
@@ -1464,6 +1467,14 @@ EVENTFUNC(change_channel_event)
 	{
 		ch->m_pkChangeChannelEvent = NULL;
 
+#ifdef ENABLE_EXPLOIT_AUDIT_FIX
+		// a trade / shop / safebox opened during the countdown: no channel change with an item window open
+		if (!ch->CanWarp() || !ch->CanHandleItem())
+		{
+			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Close all windows and wait a few seconds before changing the channel."));
+			return 0;
+		}
+#endif
 		ch->ChangeChannel(info->channel_number);
 	
 		return 0;
@@ -2525,7 +2536,7 @@ ACMD(do_unmount)
 			return;
 
 #ifdef ENABLE_MOUNT_PET_SKIN
-		DWORD mobVnum = mountSkinItem ? mountSkinItem->GetValue(1) : mount->GetValue(1);
+		DWORD mobVnum = mountSkinItem ? mountSkinItem->GetMountSkinVnum() : mount->GetValue(1);
 #else
 		DWORD mobVnum = mount->GetValue(1);
 #endif
@@ -3250,7 +3261,7 @@ ACMD(do_ride)
 			return;
 
 #ifdef ENABLE_MOUNT_PET_SKIN
-		DWORD mobVnum = mountSkinItem ? mountSkinItem->GetValue(1) : mount->GetValue(1);
+		DWORD mobVnum = mountSkinItem ? mountSkinItem->GetMountSkinVnum() : mount->GetValue(1);
 #else
 		DWORD mobVnum = mount->GetValue(1);
 #endif
@@ -3264,6 +3275,11 @@ ACMD(do_ride)
 		}
 		else
 		{
+#ifdef ENABLE_MOUNT_HIDE_ON_DISMOUNT
+			// the mount is hidden while not riding: call it and mount at once
+			if (mountSystem->CountSummoned() == 0)
+				mountSystem->Summon(mobVnum, mount, false);
+#endif
 			if(mountSystem->CountSummoned() == 1)
 			{
 				mountSystem->Mount(mobVnum, mount);
@@ -3272,6 +3288,11 @@ ACMD(do_ride)
 		
 		return;
 	}
+#endif
+
+#ifdef ENABLE_CLASSIC_HORSE_REMOVED
+	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have no active mount."));
+	return;
 #endif
 
 	if (ch->IsHorseRiding())
@@ -5000,6 +5021,11 @@ ACMD(do_dungeon_info)
 			return;
 		CHARACTER_MANAGER::Instance().SendDungeonRank(ch, mobIdx, rankIdx);
 	}
+#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+	else if (vecArgs[1] == "enter" || vecArgs[1] == "test" || vecArgs[1] == "stat_rank" || vecArgs[1] == "missions"
+		|| vecArgs[1] == "mission_claim" || vecArgs[1] == "mission_reload" || vecArgs[1] == "pc_id")
+		DungeonWindow_Command(ch, vecArgs);
+#endif
 	else if (vecArgs[1] == "test_cooldown" && ch->IsGM())
 	{
 		ch->SetQuestFlag("jotun.cooldown", time(0) + 90);
@@ -8220,6 +8246,69 @@ ACMD(do_guild_quest)
 ACMD(do_guild_quest_reward)
 {
 	GuildQuest_Reward(ch);
+}
+#endif
+
+#ifdef ENABLE_COSTUME_SHOP_BAERIM
+#include "costume_shop.h"
+ACMD(do_costume_shop)
+{
+	CostumeShop_Command(ch, argument);
+}
+
+#ifdef ENABLE_WARDROBE_SYSTEM
+#include "wardrobe.h"
+ACMD(do_wardrobe)
+{
+	Wardrobe_Command(ch, argument);
+}
+#endif
+#endif
+
+#ifdef ENABLE_TELEPORT_BAERIM
+#include "teleport_window.h"
+ACMD(do_teleport_map)
+{
+	TeleportMap_Command(ch, argument);
+}
+#endif
+
+#ifdef ENABLE_DAMAGE_TRACE
+#include "damage_trace.h"
+ACMD(do_damage_trace)
+{
+	DamageTrace::Request(ch, argument);
+}
+#endif
+
+#ifdef ENABLE_MOKOKO_SYSTEM
+#include "mokoko.h"
+ACMD(do_mokoko_info)
+{
+	Mokoko_Command(ch, "info", argument);
+}
+
+ACMD(do_mokoko_rewards)
+{
+	Mokoko_Command(ch, "rewards", argument);
+}
+
+ACMD(do_mokoko_claim)
+{
+	Mokoko_Command(ch, "claim", argument);
+}
+
+ACMD(do_mokoko_reload)
+{
+	Mokoko_Command(ch, "reload", argument);
+}
+#endif
+
+#ifdef ENABLE_GLOBAL_RANKING
+#include "global_ranking.h"
+ACMD(do_global_rank)
+{
+	GlobalRanking_Command(ch, argument);
 }
 #endif
 

@@ -89,6 +89,15 @@
 
 #ifdef ENABLE_DUNGEON_INFO
 	#include "dungeon_info.h"
+#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+#include "dungeon_window.h"
+#ifdef ENABLE_WARDROBE_SYSTEM
+#include "wardrobe.h"
+#ifdef ENABLE_MOKOKO_SYSTEM
+#include "mokoko.h"
+#endif
+#endif
+#endif
 #endif
 
 #ifdef ENABLE_WHITE_DRAGON
@@ -379,6 +388,9 @@ void CHARACTER::Initialize()
 
 	m_iKillerModePulse = 0;
 	m_bPKMode = PK_MODE_PEACE;
+#ifdef ENABLE_COUNTRY_FLAG
+	m_szCountryFlag[0] = '\0';
+#endif
 
 	m_dwQuestNPCVID = 0;
 	m_dwQuestByVnum = 0;
@@ -402,10 +414,6 @@ void CHARACTER::Initialize()
 	m_chHorse = NULL;
 	m_chRider = NULL;
 
-#ifdef ENABLE_RIDING_EXTENDED
-	m_mount_up_grade_exp = 0;
-	m_mount_up_grade_fail = 0;
-#endif
 
 #ifdef ENABLE_SPIRIT_STONE_READING
 	m_dwRuhSureFlag = 0;
@@ -962,6 +970,14 @@ void CHARACTER::Destroy()
 	if (IsPC())
 		SaveAutoSellItemsToJson();
 #endif
+#ifdef ENABLE_WARDROBE_SYSTEM
+	if (IsPC())
+		Wardrobe_OnDestroy(this);
+#endif
+#ifdef ENABLE_MOKOKO_SYSTEM
+	if (IsPC())
+		Mokoko_OnDestroy(this);
+#endif
 	delete m_pItemStorage;
 	m_pItemStorage = nullptr;
 }
@@ -1277,6 +1293,11 @@ void CHARACTER::EncodeInsertPacket(LPENTITY entity)
 		return;
 
 	LPCHARACTER ch = (LPCHARACTER) entity;
+#ifdef ENABLE_MOKOKO_SYSTEM
+	// a Mokoko seed this character already collected is never shown to it again
+	if (Mokoko_IsHiddenFor(this, ch))
+		return;
+#endif
 	ch->SendGuildName(GetGuild());
 
 	TPacketGCCharacterAdd pack;
@@ -1344,19 +1365,34 @@ void CHARACTER::EncodeInsertPacket(LPENTITY entity)
 		addPacket.header = HEADER_GC_CHAR_ADDITIONAL_INFO;
 		addPacket.dwVID = m_vid;
 
+#ifdef ENABLE_WARDROBE_SYSTEM
+		addPacket.awPart[CHR_EQUIPPART_ARMOR] = GetVisualPart(PART_MAIN);
+		addPacket.awPart[CHR_EQUIPPART_WEAPON] = GetVisualPart(PART_WEAPON);
+		addPacket.awPart[CHR_EQUIPPART_HEAD] = GetPart(PART_HEAD);
+		addPacket.awPart[CHR_EQUIPPART_HAIR] = GetVisualPart(PART_HAIR);
+#else
 		addPacket.awPart[CHR_EQUIPPART_ARMOR] = GetPart(PART_MAIN);
 		addPacket.awPart[CHR_EQUIPPART_WEAPON] = GetPart(PART_WEAPON);
 		addPacket.awPart[CHR_EQUIPPART_HEAD] = GetPart(PART_HEAD);
 		addPacket.awPart[CHR_EQUIPPART_HAIR] = GetPart(PART_HAIR);
+#endif
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
+#ifdef ENABLE_WARDROBE_SYSTEM
+		addPacket.awPart[CHR_EQUIPPART_ACCE] = GetVisualPart(PART_ACCE);
+#else
 		addPacket.awPart[CHR_EQUIPPART_ACCE] = GetPart(PART_ACCE);
+#endif
 #endif
 #ifdef ENABLE_AURA_COSTUME_SYSTEM
 		addPacket.awPart[CHR_EQUIPPART_AURA] = GetPart(PART_AURA);
 #endif
 
 		addPacket.bPKMode = m_bPKMode;
+#ifdef ENABLE_WARDROBE_SYSTEM
+		addPacket.dwMountVnum = Wardrobe_VisualMountVnum(this, GetMountVnum());
+#else
 		addPacket.dwMountVnum = GetMountVnum();
+#endif
 		addPacket.bEmpire = m_bEmpire;
 		addPacket.dwLevel = 0;
 		addPacket.dwGuildID = 0;
@@ -1456,6 +1492,9 @@ void CHARACTER::EncodeInsertPacket(LPENTITY entity)
 			}
 
 			addPacket.sAlignment = m_iAlignment / 10;
+#ifdef ENABLE_COUNTRY_FLAG
+			strlcpy(addPacket.szCountryFlag, m_szCountryFlag, sizeof(addPacket.szCountryFlag));
+#endif
 		}
 
 #ifdef ENABLE_SHINING_SYSTEM
@@ -1463,6 +1502,9 @@ void CHARACTER::EncodeInsertPacket(LPENTITY entity)
 		{
 			LPITEM pkShining = IsPC() ? GetWear(WEAR_SHINING_WEAPON + i) : NULL;
 			addPacket.adwShining[i] = pkShining ? pkShining->GetVnum() : 0;
+#ifdef ENABLE_WARDROBE_SYSTEM
+			addPacket.adwShining[i] = Wardrobe_VisualShining(this, i, addPacket.adwShining[i]);
+#endif
 		}
 #endif
 		d->Packet(&addPacket, sizeof(TPacketGCCharacterAdditionalInfo));
@@ -1598,12 +1640,23 @@ void CHARACTER::UpdatePacket()
 	pack.header = HEADER_GC_CHARACTER_UPDATE;
 	pack.dwVID = m_vid;
 
+#ifdef ENABLE_WARDROBE_SYSTEM
+	pack.awPart[CHR_EQUIPPART_ARMOR] = GetVisualPart(PART_MAIN);
+	pack.awPart[CHR_EQUIPPART_WEAPON] = GetVisualPart(PART_WEAPON);
+	pack.awPart[CHR_EQUIPPART_HEAD] = GetPart(PART_HEAD);
+	pack.awPart[CHR_EQUIPPART_HAIR] = GetVisualPart(PART_HAIR);
+#else
 	pack.awPart[CHR_EQUIPPART_ARMOR] = GetPart(PART_MAIN);
 	pack.awPart[CHR_EQUIPPART_WEAPON] = GetPart(PART_WEAPON);
 	pack.awPart[CHR_EQUIPPART_HEAD] = GetPart(PART_HEAD);
 	pack.awPart[CHR_EQUIPPART_HAIR] = GetPart(PART_HAIR);
+#endif
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
+#ifdef ENABLE_WARDROBE_SYSTEM
+	pack.awPart[CHR_EQUIPPART_ACCE] = GetVisualPart(PART_ACCE);
+#else
 	pack.awPart[CHR_EQUIPPART_ACCE] = GetPart(PART_ACCE);
+#endif
 #endif
 #ifdef ENABLE_AURA_COSTUME_SYSTEM
 	pack.awPart[CHR_EQUIPPART_AURA] = GetPart(PART_AURA);
@@ -1645,7 +1698,11 @@ void CHARACTER::UpdatePacket()
 	if (GetGuild())
 		pack.dwGuildID = GetGuild()->GetID();
 
+#ifdef ENABLE_WARDROBE_SYSTEM
+	pack.dwMountVnum	= Wardrobe_VisualMountVnum(this, GetMountVnum());
+#else
 	pack.dwMountVnum	= GetMountVnum();
+#endif
 
 #ifdef ENABLE_GUILD_LEADER_TEXTAIL
 	CGuild* pGuild = this->GetGuild();
@@ -1669,6 +1726,9 @@ void CHARACTER::UpdatePacket()
 	{
 		LPITEM pkShining = IsPC() ? GetWear(WEAR_SHINING_WEAPON + i) : NULL;
 		pack.adwShining[i] = pkShining ? pkShining->GetVnum() : 0;
+#ifdef ENABLE_WARDROBE_SYSTEM
+		pack.adwShining[i] = Wardrobe_VisualShining(this, i, pack.adwShining[i]);
+#endif
 	}
 #endif
 
@@ -1816,10 +1876,6 @@ void CHARACTER::CreatePlayerProto(TPlayerTable & tab)
 	tab.skill_group	= m_points.skill_group;
 #ifdef ENABLE_ANTI_EXP
 	tab.anti_exp 	= GetAntiExp();
-#endif
-#ifdef ENABLE_RIDING_EXTENDED
-	tab.mount_up_grade_exp = GetMountUpGradeExp();
-	tab.mount_up_grade_fail = IsMountUpGradeFail();
 #endif
 #ifdef ENABLE_GAYA_SYSTEM
 	tab.gem 		= GetGem();
@@ -2705,10 +2761,6 @@ void CHARACTER::SetPlayerProto(const TPlayerTable * t)
 		SetUnlockSlotsW(t->inventory_unlock[i],i);
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-	SetMountUpGradeExp(t->mount_up_grade_exp);
-	SetMountUpGradeFail(t->mount_up_grade_fail);
-#endif
 
 #ifdef ENABLE_SPIRIT_STONE_READING
 	m_dwRuhSureFlag = 0;
@@ -2946,11 +2998,6 @@ void CHARACTER::SetProto(const CMob * pkMob)
 			GetRaceNum() == 20107 ||
 			GetRaceNum() == 20108 ||
 			GetRaceNum() == 20109
-#ifdef ENABLE_RIDING_EXTENDED
-			|| GetRaceNum() == 20149
-			|| GetRaceNum() == 20150
-			|| GetRaceNum() == 20151
-#endif
 	  )
 	{
 		m_stateIdle.Set(this, &CHARACTER::BeginStateEmpty, &CHARACTER::StateHorse, &CHARACTER::EndStateEmpty);
@@ -5951,6 +5998,11 @@ void CHARACTER::ApplyPoint (WORD bApplyType, int iVal)
 			}
 			break;
 
+#ifdef ENABLE_PET_EXP_BONUS
+		case APPLY_PET_EXP_BONUS:
+			break;	// no point: read from the worn pet items when the growth pet gets EXP
+#endif
+
 		default:
 			if (bApplyType < MAX_APPLY_NUM && aApplyInfo[bApplyType].bPointType != POINT_NONE)
 			{
@@ -7294,6 +7346,11 @@ void CHARACTER::OnClick(LPCHARACTER pkChrCauser)
 	DWORD vid = GetVID();
 	sys_log(0, "OnClick %s[vnum %d ServerUniqueID %d, pid %d] by %s", GetName(), GetRaceNum(), vid, GetPlayerID(), pkChrCauser->GetName());
 
+#ifdef ENABLE_MOKOKO_SYSTEM
+	if (Mokoko_OnClick(pkChrCauser, this))
+		return;
+#endif
+
 	{
 		if (pkChrCauser->GetMyShop() && pkChrCauser != this)
 		{
@@ -7682,11 +7739,6 @@ void CHARACTER::SetTarget(LPCHARACTER pkChrTarget)
 					m_pkChrTarget->GetRaceNum() == 20107 ||
 					m_pkChrTarget->GetRaceNum() == 20108 ||
 					m_pkChrTarget->GetRaceNum() == 20109
-#ifdef ENABLE_RIDING_EXTENDED
-					|| m_pkChrTarget->GetRaceNum() == 20149
-					|| m_pkChrTarget->GetRaceNum() == 20150
-					|| m_pkChrTarget->GetRaceNum() == 20151
-#endif
 			  )
 			{
 				LPCHARACTER owner = m_pkChrTarget->GetVictim();
@@ -7974,6 +8026,9 @@ void CHARACTER::WarpEnd()
 		p.bChannel = g_bChannel;
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
 		p.bLanguage = GetLanguage();
+#endif
+#ifdef ENABLE_COUNTRY_FLAG
+		strlcpy(p.szCountryFlag, m_szCountryFlag, sizeof(p.szCountryFlag));
 #endif
 
 		P2P_MANAGER::instance().Send(&p, sizeof(TPacketGGLogin));
@@ -10249,7 +10304,7 @@ void CHARACTER::MountSummon(LPITEM mountItem)
 
 #ifdef ENABLE_MOUNT_PET_SKIN
 	if (mountSkinItem)
-		mobVnum = mountSkinItem->GetValue(1);
+		mobVnum = mountSkinItem->GetMountSkinVnum();
 	else
 		mobVnum = mountItem->GetValue(1);
 #else
@@ -10263,7 +10318,11 @@ void CHARACTER::MountSummon(LPITEM mountItem)
 	if (GetHorse())
 		HorseSummon(false);
 
+#ifdef ENABLE_MOUNT_HIDE_ON_DISMOUNT
+	(void) mobVnum;	// the mount shows only while riding (Ctrl+G calls it)
+#else
 	mountSystem->Summon(mobVnum, mountItem, false);
+#endif
 }
 
 void CHARACTER::MountUnsummon(LPITEM mountItem)
@@ -10279,7 +10338,7 @@ void CHARACTER::MountUnsummon(LPITEM mountItem)
 
 #ifdef ENABLE_MOUNT_PET_SKIN
 	if (mountSkinItem)
-		mobVnum = mountSkinItem->GetValue(1);
+		mobVnum = mountSkinItem->GetMountSkinVnum();
 	else
 		mobVnum = mountItem->GetValue(1);
 #else
@@ -10290,7 +10349,12 @@ void CHARACTER::MountUnsummon(LPITEM mountItem)
 	if (GetMountVnum() == mobVnum)
 		mountSystem->Unmount(mobVnum);
 
+#ifdef ENABLE_MOUNT_HIDE_ON_DISMOUNT
+	if (mountSystem->GetByVnum(mobVnum))
+		mountSystem->Unsummon(mobVnum);
+#else
 	mountSystem->Unsummon(mobVnum);
+#endif
 }
 
 void CHARACTER::CheckMount()
@@ -10307,7 +10371,7 @@ void CHARACTER::CheckMount()
 
 #ifdef ENABLE_MOUNT_PET_SKIN
 	if (mountSkinItem)
-		mobVnum = mountSkinItem->GetValue(1);
+		mobVnum = mountSkinItem->GetMountSkinVnum();
 	else
 		mobVnum = mountItem->GetValue(1);
 #else
@@ -10315,10 +10379,14 @@ void CHARACTER::CheckMount()
 		mobVnum = mountItem->GetValue(1);
 #endif
 
+#ifndef ENABLE_MOUNT_HIDE_ON_DISMOUNT
 	if(mountSystem->CountSummoned() == 0)
 	{
 		mountSystem->Summon(mobVnum, mountItem, false);
 	}
+#else
+	(void) mobVnum;
+#endif
 }
 
 bool CHARACTER::IsRidingMount()
@@ -10347,6 +10415,9 @@ void CHARACTER::PetSummon(LPITEM petItem)
 		mobVnum = petSkinItem->GetValue(1);
 	else
 		mobVnum = petItem->GetValue(1) ? petItem->GetValue(1) : petItem->GetValue(0);
+#ifdef ENABLE_WARDROBE_SYSTEM
+	mobVnum = Wardrobe_VisualPetMob(this, mobVnum);
+#endif
 #else
 	if(petItem->GetValue(1) != 0)
 		mobVnum = petItem->GetValue(1);
@@ -10373,6 +10444,9 @@ void CHARACTER::PetUnsummon(LPITEM petItem)
 		mobVnum = petSkinItem->GetValue(1);
 	else
 		mobVnum = petItem->GetValue(1) ? petItem->GetValue(1) : petItem->GetValue(0);
+#ifdef ENABLE_WARDROBE_SYSTEM
+	mobVnum = Wardrobe_VisualPetMob(this, mobVnum);
+#endif
 #else
 	if(petItem->GetValue(1) != 0)
 		mobVnum = petItem->GetValue(1);
@@ -10403,6 +10477,9 @@ void CHARACTER::CheckPet()
 		mobVnum = petSkinItem->GetValue(1);
 	else
 		mobVnum = petItem->GetValue(1) ? petItem->GetValue(1) : petItem->GetValue(0);
+#ifdef ENABLE_WARDROBE_SYSTEM
+	mobVnum = Wardrobe_VisualPetMob(this, mobVnum);
+#endif
 #else
 	if(petItem->GetValue(1) != 0)
 		mobVnum = petItem->GetValue(1);
@@ -10634,17 +10711,63 @@ bool CHARACTER::IsAllowedMapIndex(int mapindex)
 #ifdef ENABLE_MOUNT_PET_SKIN
 bool CHARACTER::CanChangeCostumeMountSkin()
 {
+#ifdef ENABLE_MOUNT_SKIN_SWAP_FIX
+	return (thecore_pulse() - GetLastChangeCostumeMountSkinTime() > PASSES_PER_SEC(1));	// only against click spam
+#else
 	return (thecore_pulse() - GetLastChangeCostumeMountSkinTime() > PASSES_PER_SEC(5));
+#endif
 }
 
 bool CHARACTER::CanChangeCostumePetSkin()
 {
+#ifdef ENABLE_MOUNT_SKIN_SWAP_FIX
+	return (thecore_pulse() - GetLastChangeCostumePetSkinTime() > PASSES_PER_SEC(1));
+#else
 	return (thecore_pulse() - GetLastChangeCostumePetSkinTime() > PASSES_PER_SEC(5));
+#endif
 }
+
+#ifdef ENABLE_MOUNT_SKIN_SWAP_FIX
+// the mount costume changed: drop the actor of the old look (base or old costume), then summon (and mount again,
+// when the character was riding) with the look of the costume that stays worn
+static void RefreshMountLook(LPCHARACTER ch, LPITEM pkRemovedSkin)
+{
+	CMountSystem* mountSystem = ch->GetMountSystem();
+	LPITEM mountItem = ch->GetWear(WEAR_MOUNT);
+	if (!mountSystem || !mountItem)
+		return;
+
+	const bool bWasRiding = ch->GetMountVnum() != 0;
+	mountSystem->ClearAll();
+
+	DWORD dwVnum = mountItem->GetValue(1);
+	LPITEM skin = ch->GetWear(WEAR_COSTUME_MOUNT);
+	if (skin && skin != pkRemovedSkin && skin->GetMountSkinVnum())
+		dwVnum = skin->GetMountSkinVnum();
+	if (!dwVnum)
+		return;
+
+	if (ch->GetMapIndex() == 113 || CArenaManager::instance().IsArenaMap(ch->GetMapIndex()))
+		return;
+
+#ifdef ENABLE_MOUNT_HIDE_ON_DISMOUNT
+	if (!bWasRiding)
+		return;	// not riding: the mount stays hidden, the new look shows on the next ride
+#endif
+	mountSystem->Summon(dwVnum, mountItem, false);
+	if (bWasRiding)
+		mountSystem->Mount(dwVnum, mountItem);
+}
+#endif
 
 void CHARACTER::EquipCostumeMountSkin()
 {
 	if (!IsRidingMount()) return;
+#ifdef ENABLE_MOUNT_SKIN_SWAP_FIX
+	RefreshMountLook(this, NULL);
+	UpdateChangeCostumeMountSkinTime();
+	return;
+#endif
 
 	CMountSystem* mountSystem = GetMountSystem();
 	LPITEM mountItem = GetWear(WEAR_MOUNT);
@@ -10663,11 +10786,16 @@ void CHARACTER::EquipCostumeMountSkin()
 void CHARACTER::RemoveCostumeMountSkin(LPITEM mountSkin)
 {
 	if (!IsRidingMount()) return;
+#ifdef ENABLE_MOUNT_SKIN_SWAP_FIX
+	// no cooldown stamp on removal: a swap (wardrobe / drag) is "take off + put on" in one step
+	RefreshMountLook(this, mountSkin);
+	return;
+#endif
 
 	CMountSystem* mountSystem = GetMountSystem();
 	if (!mountSystem || !mountSkin) return;
 
-	DWORD mobVnum = mountSkin->GetValue(1);
+	DWORD mobVnum = mountSkin->GetMountSkinVnum();
 
 	if (GetMountVnum() == mobVnum)
 		mountSystem->Unmount(mobVnum);
@@ -12660,7 +12788,12 @@ void CHARACTER::SendDungeonCooldown(DWORD bossIdx)
 		cmd += std::to_string(bossIdx);
 		cmd += "|";
 
+#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+		// a name with a dot is the whole flag (SungMahi: dungeonManager.sungMahiTime), else <quest>.cooldown
+		cmd += std::to_string(GetQuestFlagSpecial(strchr(it->second.second.c_str(), '.') ? "%s" : "%s.cooldown", it->second.second.c_str()) - time(0));
+#else
 		cmd += std::to_string(GetQuestFlagSpecial("%s.cooldown", it->second.second.c_str()) - time(0));
+#endif
 		cmd += "|";
 
 		cmd += std::to_string(GetQuestFlagSpecial("dungeon.%u_completed", bossIdx));
@@ -12670,6 +12803,9 @@ void CHARACTER::SendDungeonCooldown(DWORD bossIdx)
 		cmd += "|";
 
 		cmd += std::to_string(GetQuestFlagSpecial("dungeon.%u_damage", bossIdx));
+#ifdef ENABLE_DUNGEON_WINDOW_BAERIM
+		cmd += DungeonWindow_ExtraInfo(this, bossIdx);
+#endif
 		cmd += "#";
 	}
 	if (cmd == "")

@@ -1,4 +1,5 @@
 #include "StdAfx.h"
+#include <set>
 #include "PythonPlayer.h"
 #include "PythonCharacterManager.h"
 #include "InstanceBase.h"
@@ -901,6 +902,58 @@ PyObject *playerSendClickItemPacket(PyObject *poSelf, PyObject *poArgs)
 	CPythonPlayer::Instance().SendClickItemPacket(ivid);
 	return Py_BuildNone();
 }
+
+#ifdef ENABLE_WARDROBE_SYSTEM
+// occupied wardrobe storage cells
+PyObject* playerGetWardrobeCells(PyObject* poSelf, PyObject* poArgs)
+{
+	CPythonPlayer& rkPlayer = CPythonPlayer::Instance();
+	PyObject* poList = PyList_New(0);
+	for (DWORD i = 0; i < c_Wardrobe_Count; ++i)
+	{
+		const TItemData* p = rkPlayer.GetItemData(TItemPos(WARDROBE, i));
+		if (p && p->vnum)
+		{
+			PyObject* poCell = PyInt_FromLong(i);
+			PyList_Append(poList, poCell);
+			Py_DECREF(poCell);
+		}
+	}
+	return poList;
+}
+
+PyObject* playerGetWardrobeInventoryRevision(PyObject* poSelf, PyObject* poArgs)
+{
+	return Py_BuildValue("i", CPythonPlayer::Instance().GetItemRevision());
+}
+
+// every item vnum of the inventory (also equipment / special inventories) and of the wardrobe storage
+PyObject* playerGetOwnedCostumeVnums(PyObject* poSelf, PyObject* poArgs)
+{
+	CPythonPlayer& rkPlayer = CPythonPlayer::Instance();
+	std::set<DWORD> setVnum;
+	for (DWORD i = 0; i < c_Inventory_Count; ++i)
+	{
+		const TItemData* p = rkPlayer.GetItemData(TItemPos(INVENTORY, i));
+		if (p && p->vnum)
+			setVnum.insert(p->vnum);
+	}
+	for (DWORD i = 0; i < c_Wardrobe_Count; ++i)
+	{
+		const TItemData* p = rkPlayer.GetItemData(TItemPos(WARDROBE, i));
+		if (p && p->vnum)
+			setVnum.insert(p->vnum);
+	}
+	PyObject* poList = PyList_New(0);
+	for (DWORD dwVnum : setVnum)
+	{
+		PyObject* poVnum = PyInt_FromLong(dwVnum);
+		PyList_Append(poList, poVnum);
+		Py_DECREF(poVnum);
+	}
+	return poList;
+}
+#endif
 
 PyObject *playerGetItemIndex(PyObject *poSelf, PyObject *poArgs)
 {
@@ -3951,6 +4004,11 @@ void initPlayer()
 		{ "DisableToggleSkill", playerDisableToggleSkill, METH_VARARGS },
 
 		{ "GetItemIndex", playerGetItemIndex, METH_VARARGS },
+#ifdef ENABLE_WARDROBE_SYSTEM
+		{ "GetWardrobeCells", playerGetWardrobeCells, METH_VARARGS },
+		{ "GetWardrobeInventoryRevision", playerGetWardrobeInventoryRevision, METH_VARARGS },
+		{ "GetOwnedCostumeVnums", playerGetOwnedCostumeVnums, METH_VARARGS },
+#endif
 		{ "GetItemFlags", playerGetItemFlags, METH_VARARGS },
 		{ "GetItemCount", playerGetItemCount, METH_VARARGS },
 		{ "GetItemCountByVnum", playerGetItemCountByVnum, METH_VARARGS },
@@ -4409,6 +4467,10 @@ void initPlayer()
 	PyModule_AddIntConstant(poModule, "DRAGON_SOUL_INVENTORY",				DRAGON_SOUL_INVENTORY);
 	PyModule_AddIntConstant(poModule, "BELT_INVENTORY", BELT_INVENTORY);
 	PyModule_AddIntConstant(poModule, "GROUND",								GROUND);
+#ifdef ENABLE_WARDROBE_SYSTEM
+	PyModule_AddIntConstant(poModule, "WARDROBE", WARDROBE);
+	PyModule_AddIntConstant(poModule, "WARDROBE_SLOT_COUNT", c_Wardrobe_Count);
+#endif
 #ifdef ENABLE_RENEWAL_SWITCHBOT
 	PyModule_AddIntConstant(poModule, "SWITCHBOT", SWITCHBOT);
 	PyModule_AddIntConstant(poModule, "SLOT_TYPE_SWITCHBOT", SLOT_TYPE_SWITCHBOT);
@@ -4595,9 +4657,6 @@ void initPlayer()
 	PyModule_AddIntConstant(poModule, "AUTOMATIC_PICK_UP_ACTIVATE", AUTOMATIC_PICK_UP_ACTIVATE);
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-	PyModule_AddIntConstant(poModule, "HORSE_MAX_LEVEL", HORSE_MAX_LEVEL);
-#endif
 
 #ifdef ENABLE_SLOT_MARKING_SYSTEM
 	PyModule_AddIntConstant(poModule, "ON_TOP_WND_NONE", ON_TOP_WND_NONE);

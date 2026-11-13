@@ -67,6 +67,9 @@ class CPythonNetworkStream : public CNetworkStream, public CSingleton<CPythonNet
 #endif
 			ACCOUNT_CHARACTER_SLOT_LAST_PLAYTIME,
 			ACCOUNT_CHARACTER_SLOT_MAPINDEX,
+#ifdef ENABLE_COUNTRY_FLAG
+			ACCOUNT_CHARACTER_SLOT_COUNTRY_FLAG,
+#endif
 #ifdef ENABLE_CONQUEROR_LEVEL
 			ACCOUNT_CHARACTER_SLOT_CONQUEROR_LEVEL,
 			ACCOUNT_CHARACTER_SLOT_SUNGMA_ST,
@@ -205,7 +208,11 @@ class CPythonNetworkStream : public CNetworkStream, public CSingleton<CPythonNet
 
 		// Shop
 		bool SendShopEndPacket();
+#ifdef ENABLE_SHOP_TABS_BAERIM
+		bool SendShopBuyPacket(WORD wPos);
+#else
 		bool SendShopBuyPacket(BYTE byCount);
+#endif
 		bool SendShopSellPacket(BYTE bySlot);
 #ifdef ENABLE_STACK_LIMIT
 		bool SendShopSellPacketNew(BYTE bySlot, WORD byCount);
@@ -488,6 +495,9 @@ class CPythonNetworkStream : public CNetworkStream, public CSingleton<CPythonNet
 		bool SendSelectEmpirePacket(DWORD dwEmpireID);
 		bool SendSelectCharacterPacket(BYTE account_Index);
 		bool SendChangeNamePacket(BYTE index, const char *name);
+#ifdef ENABLE_COUNTRY_FLAG
+		bool SendChangeCountryFlagPacket(BYTE index, const char *flag);
+#endif
 		bool SendCreateCharacterPacket(BYTE index, const char *name, BYTE job, BYTE shape, BYTE byStat1, BYTE byStat2, BYTE byStat3, BYTE byStat4);
 		bool SendDestroyCharacterPacket(BYTE index, const char *szPrivateCode);
 
@@ -597,15 +607,8 @@ class CPythonNetworkStream : public CNetworkStream, public CSingleton<CPythonNet
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
 		void __RefreshAcceWindow();
 #endif
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-		void __RefreshGuildBank();
-		void __RefreshGuildBankInfo();
-#endif
 		void __RefreshGuildBaseInfoPage();
 		void __RefreshGuildBaseInfoPageBankGold();
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-		void __RefreshGuildWarInfoPage();
-#endif
 #ifdef ENABLE_OFFLINESHOP_SEARCH_SYSTEM
 		void __RefreshShopSearchWindow();
 #endif
@@ -962,15 +965,8 @@ class CPythonNetworkStream : public CNetworkStream, public CSingleton<CPythonNet
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
 		bool m_isRefreshAcceWnd;
 #endif
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-		bool m_isRefreshGuildBank;
-		bool m_isRefreshGuildBankInfo;
-#endif
 		bool m_isRefreshGuildBaseInfoPage;
 		bool m_isRefreshGuildBaseInfoPageBankGold;
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-		bool m_isRefreshGuildWarInfoPage;
-#endif
 		bool m_bIsLeftSeatLogOutState;
 #ifdef ENABLE_OFFLINESHOP_SEARCH_SYSTEM
 		bool m_isRefreshShopSearchWnd;
@@ -1132,10 +1128,4 @@ class CPythonNetworkStream : public CNetworkStream, public CSingleton<CPythonNet
 		bool RecvPetAttrChangeResult();
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-public:
-	bool MountUpGrade(const uint8_t iSubHeader);
-	bool RecvMountUpGrade();
-	bool RecvMountUpGradeChat();
-#endif
 };

@@ -232,6 +232,18 @@ SERVER3_CHANNEL_DICT = {
 	},
 }
 
+# Baerim login lists six channels
+if app.ENABLE_LOGIN_RENEWAL_BAERIM:
+	for ch in xrange(3, 7):
+		SERVER2_CHANNEL_DICT[ch] = {
+			"key" : 20 + ch,
+			"name" : "CH%d   " % ch,
+			"ip" : SRV2["host"],
+			"tcp_port" : 30001 + ch * 100,
+			"udp_port" : 30001 + ch * 100,
+			"state" : STATE_NONE,
+		}
+
 REGION_NAME_DICT = {
 	0 : SRV1["name"],
 }

@@ -111,6 +111,10 @@ class CGraphicThingInstance : public CGraphicObjectInstance
 
 		bool		SetMotion(DWORD dwMotionKey, float blendTime = 0.0f, int loopCount = 0, float speedRatio=1.0f);
 		bool		ChangeMotion(DWORD dwMotionKey, int loopCount = 0, float speedRatio=1.0f);
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+		// a part whose model has its own animation (e.g. flapping wings) loops it and ignores the character motions
+		void		SetPartOwnMotion(DWORD dwPart, CGraphicThing * pModelThing);
+#endif
 		bool		Intersect(float * pu, float * pv, float * pt);
 		void		GetBoundBox(D3DXVECTOR3 * vtMin, D3DXVECTOR3 * vtMax);
 		BOOL		GetBoundBox(DWORD dwModelInstanceIndex, D3DXVECTOR3 * vtMin, D3DXVECTOR3 * vtMax);
@@ -149,6 +153,9 @@ class CGraphicThingInstance : public CGraphicObjectInstance
 		D3DXVECTOR3								m_v3Min, m_v3Max;
 
 		std::vector<CGrannyLODController *> m_LODControllerVector;
+#ifdef ENABLE_ACCE_SKIN_SYSTEM
+		DWORD		m_dwOwnMotionPartFlag = 0;
+#endif
 		std::vector<TModelThingSet> m_modelThingSetVector;
 		std::map<DWORD, CGraphicThing::TRef *> m_roMotionThingMap;
 

@@ -1,3 +1,11 @@
+defensawe_hydra	358400	0	2	2
+metin2_map_snake_temple_01	0	2038400	3	3
+metin2_map_snake_temple_02	76800	2038400	3	3
+metin2_map_smhdungeon_01	921600	614400	1	1
+metin2_map_smhdungeon_02	947200	614400	2	2
+metin2_map_whitedragoncave_01	998400	1203200	6	6
+metin2_map_whitedragoncave_02	1152000	1203200	3	3
+metin2_map_whitedragoncave_boss	1228800	1203200	2	2
 gm_guild_build	83200	0	1	1
 map_a2	256000	665600	6	6
 map_b2	102400	51200	6	6

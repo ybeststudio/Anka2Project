@@ -273,13 +273,10 @@ static void read_string (LexState *LS, int del, SemInfo *seminfo) {
   while (LS->current != del) {
     checkbuffer(LS, l);
 
-	  unsigned char b_current = (unsigned char)LS->current;
-	  if (b_current & 0x80)
-	  {
-		  save_and_next(LS, l);
-		  save_and_next(LS, l);
-	  }
-	  else
+	  /* Anka2: the double byte (Korean/Chinese) branch read a high byte together with the next byte, so a
+	     single byte Turkish (cp1254) letter right before the closing quote swallowed the quote
+	     ("Maymun Zindaný" -> unfinished string). High bytes are ordinary characters now. */
+	  int b_current = LS->current;
 	  {
 		  switch (b_current) {
       case EOZ:

@@ -46,7 +46,16 @@ class CRenderTarget
 		bool IsShow() { return m_visible; }
 
 		void SetZoom(bool bZoom);
+#ifdef ENABLE_COSTUME_SHOP_BAERIM
+		// recreates the texture with an alpha channel: without a background the cleared parts stay see-through
+		bool SetTransparent();
+#endif
 	private:
+#ifdef ENABLE_COSTUME_SHOP_BAERIM
+		DWORD m_dwTextureWidth = 0;
+		DWORD m_dwTextureHeight = 0;
+		int m_iCenterOnBoundBox = 0;	// frames left to centre the camera on the posed model (flying pets)
+#endif
 		std::unique_ptr<CInstanceBase> m_pModel;
 		std::unique_ptr<CGraphicImageInstance> m_background;
 		std::unique_ptr<CGraphicRenderTargetTexture> m_renderTargetTexture;

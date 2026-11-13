@@ -108,6 +108,9 @@ void SNetworkActorData::__copy__(const SNetworkActorData& src)
 	m_bLanguage = src.m_bLanguage;
 	m_bLanguage2 = src.m_bLanguage2;
 #endif
+#ifdef ENABLE_COUNTRY_FLAG
+	memcpy(m_szCountryFlag, src.m_szCountryFlag, sizeof(m_szCountryFlag));
+#endif
 
 #ifdef ENABLE_SKILL_COLOR_SYSTEM
 	memcpy(m_dwSkillColor, src.m_dwSkillColor, sizeof(m_dwSkillColor));
@@ -164,6 +167,9 @@ SNetworkActorData::SNetworkActorData()
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
 	m_bLanguage = 0;
 	m_bLanguage2 = 0;
+#endif
+#ifdef ENABLE_COUNTRY_FLAG
+	m_szCountryFlag[0] = 0;
 #endif
 
 #ifdef ENABLE_SKILL_COLOR_SYSTEM
@@ -435,6 +441,9 @@ CInstanceBase* CNetworkActorManager::__AppendCharacterManagerActor(SNetworkActor
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
 	kCreateData.m_bLanguage = rkNetActorData.m_bLanguage;
 	kCreateData.m_bLanguage2 = rkNetActorData.m_bLanguage2;
+#endif
+#ifdef ENABLE_COUNTRY_FLAG
+	memcpy(kCreateData.m_szCountryFlag, rkNetActorData.m_szCountryFlag, sizeof(kCreateData.m_szCountryFlag));
 #endif
 
 #ifdef ENABLE_SKILL_COLOR_SYSTEM

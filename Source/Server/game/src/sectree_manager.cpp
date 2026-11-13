@@ -16,6 +16,10 @@
 #include "buffer_manager.h"
 #include "packet.h"
 #include "start_position.h"
+#include "../../common/service.h"
+#ifdef ENABLE_MOKOKO_SYSTEM
+#include "mokoko.h"
+#endif
 #ifdef ENABLE_CONQUEROR_LEVEL
 	#include "affect.h"
 #endif
@@ -808,6 +812,10 @@ int SECTREE_MANAGER::Build(const char * c_pszListFileName, const char* c_pszMapB
 
 			snprintf(szFilename, sizeof(szFilename), "%s/%s/stone.txt", c_pszMapBasePath, szMapName);
 			regen_load(szFilename, setting.iIndex, setting.iBaseX, setting.iBaseY);
+
+#ifdef ENABLE_MOKOKO_SYSTEM
+			Mokoko_SpawnMap(setting.iIndex, setting.iBaseX, setting.iBaseY);
+#endif
 
 			snprintf(szFilename, sizeof(szFilename), "%s/%s/dungeon.txt", c_pszMapBasePath, szMapName);
 			LoadDungeon(iIndex, szFilename);

@@ -181,6 +181,9 @@ CPacketInfoCG::CPacketInfoCG()
 
 	Set(HEADER_CG_REFINE,							sizeof(TPacketCGRefine),					"Refine");
 	Set(HEADER_CG_CHANGE_NAME,						sizeof(TPacketCGChangeName),				"ChangeName");
+#ifdef ENABLE_COUNTRY_FLAG
+	Set(HEADER_CG_CHANGE_COUNTRY_FLAG,				sizeof(TPacketCGChangeCountryFlag),			"ChangeCountryFlag");
+#endif
 
 	Set(HEADER_CG_PONG,								sizeof(BYTE),								"Pong");
 	Set(HEADER_CG_MALL_CHECKOUT,					sizeof(TPacketCGSafeboxCheckout),			"MallCheckout");
@@ -278,9 +281,6 @@ CPacketInfoCG::CPacketInfoCG()
 	Set(HEADER_CG_SEND_HUNTING_ACTION,				sizeof(TPacketGCHuntingAction),				"ReciveHuntingAction");
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-	Set(HEADER_CG_MOUNT_UP_GRADE,					sizeof(TPacketCGMountUpGrade), 				"MountUpGrade");
-#endif
 
 #ifdef ENABLE_STYLE_ATTRIBUTE_SYSTEM
 	Set(HEADER_CG_ITEM_USE_NEW_ATTRIBUTE, 			sizeof(TPacketCGItemNewAttribute), 			"UseItemNewAttributes");

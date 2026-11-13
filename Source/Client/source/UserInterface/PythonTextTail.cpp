@@ -7,6 +7,7 @@
 #include "Locale.h"
 #include "MarkManager.h"
 #include "PythonApplication.h"
+#include "../EterLib/GrpExpandedImageInstance.h"
 #include <vector>
 #include <algorithm>
 
@@ -15,6 +16,23 @@
 #endif
 
 const D3DXCOLOR c_TextTail_Player_Color = D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f);
+#ifdef ENABLE_COUNTRY_FLAG
+// language_system/flags/<code>.png (33x20, Vegas' format) drawn 16x12 like the old language flags
+const float c_fTextTailCountryFlagScaleX = 16.0f / 33.0f;
+const float c_fTextTailCountryFlagScaleY = 12.0f / 20.0f;
+
+static float __GetLanguageFlagWidth(CGraphicImageInstance* pInstance, bool bScaled)
+{
+	// +2: the flag fills its box edge to edge and stuck to the level text
+	return bScaled ? 16.0f + 2.0f : float(pInstance->GetWidth());
+}
+
+// 12 px tall like the language flags it replaces
+static float __GetLanguageFlagTop(bool bScaled)
+{
+	return 11.0f;
+}
+#endif
 const D3DXCOLOR c_TextTail_Monster_Color = D3DXCOLOR(1.0f, 0.0f, 0.0f, 1.0f);
 const D3DXCOLOR c_TextTail_Item_Color = D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f);
 const D3DXCOLOR c_TextTail_Chat_Color = D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f);
@@ -132,7 +150,11 @@ static void ComputeCharacterTextTailBounds(CPythonTextTail::TTextTail* pTextTail
 
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
 			if (pTextTail->pLanguageInstance && CPythonSystem::Instance().GetAdvancedOption("show_country_flag",1))
+				#ifdef ENABLE_COUNTRY_FLAG
+				left -= (__GetLanguageFlagWidth(pTextTail->pLanguageInstance, pTextTail->bLanguageScaled) + 16.0f);
+#else
 				left -= (float(pTextTail->pLanguageInstance->GetWidth()) + 16.0f);
+#endif
 			if (pTextTail->pLanguageInstance2 && CPythonSystem::Instance().GetAdvancedOption("show_country_flag",1))
 				left -= (float(pTextTail->pLanguageInstance2->GetWidth()) + 20.0f);
 #endif
@@ -146,7 +168,11 @@ static void ComputeCharacterTextTailBounds(CPythonTextTail::TTextTail* pTextTail
 
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
 		if (pTextTail->pLanguageInstance && CPythonSystem::Instance().GetAdvancedOption("show_country_flag",1))
+			#ifdef ENABLE_COUNTRY_FLAG
+			left -= (__GetLanguageFlagWidth(pTextTail->pLanguageInstance, pTextTail->bLanguageScaled) + 12.0f);
+#else
 			left -= (float(pTextTail->pLanguageInstance->GetWidth()) + 12.0f);
+#endif
 		if (pTextTail->pLanguageInstance2 && CPythonSystem::Instance().GetAdvancedOption("show_country_flag",1))
 			left -= (float(pTextTail->pLanguageInstance2->GetWidth()) + 22.0f);
 #endif
@@ -391,7 +417,11 @@ void CPythonTextTail::ArrangeTextTail()
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
 				if (pLanguageInstance)
 				{
+					#ifdef ENABLE_COUNTRY_FLAG
+					pLanguageInstance->SetPosition(pTextTail->x - (iNameWidth / 2) - iTitleWidth - iLevelWidth - __GetLanguageFlagWidth(pLanguageInstance, pTextTail->bLanguageScaled) - 16.0f, pTextTail->y - __GetLanguageFlagTop(pTextTail->bLanguageScaled));
+#else
 					pLanguageInstance->SetPosition(pTextTail->x - (iNameWidth / 2) - iTitleWidth - iLevelWidth - pLanguageInstance->GetWidth() - 16.0f, pTextTail->y - 11.0f);
+#endif
 				}
 
 				if (pLanguageInstance2)
@@ -410,14 +440,20 @@ void CPythonTextTail::ArrangeTextTail()
 			pLevel->Update();
 
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
+#ifdef ENABLE_COUNTRY_FLAG
+			// same 6 px flag-to-level gap as the titled branch above (12 / 34 left it 2 px wider without a title)
+			const float fFlagGap = 10.0f;
+#else
+			const float fFlagGap = 12.0f;
+#endif
 			if (pLanguageInstance)
 			{
-				pLanguageInstance->SetPosition(pTextTail->x - (iNameWidth / 2) - iLevelWidth - pLanguageInstance->GetWidth() - 12.0f, pTextTail->y - 11.0f);
+				pLanguageInstance->SetPosition(pTextTail->x - (iNameWidth / 2) - iLevelWidth - __GetLanguageFlagWidth(pLanguageInstance, pTextTail->bLanguageScaled) - fFlagGap, pTextTail->y - __GetLanguageFlagTop(pTextTail->bLanguageScaled));
 			}
 
 			if (pLanguageInstance2)
 			{
-				pLanguageInstance2->SetPosition(pTextTail->x - (iNameWidth / 2) - iLevelWidth - pLanguageInstance2->GetWidth() - 34.0f, pTextTail->y - 11.0f);
+				pLanguageInstance2->SetPosition(pTextTail->x - (iNameWidth / 2) - iLevelWidth - pLanguageInstance2->GetWidth() - fFlagGap - 22.0f, pTextTail->y - 11.0f);
 			}
 #endif
 		}
@@ -820,6 +856,9 @@ void CPythonTextTail::RegisterCharacterTextTail(DWORD dwGuildID, DWORD dwVirtual
 	pTextTail->pLanguageInstance = nullptr;
 	pTextTail->pLanguageInstance2 = nullptr;
 #endif
+#ifdef ENABLE_COUNTRY_FLAG
+	pTextTail->bLanguageScaled = false;
+#endif
 #ifdef ENABLE_SHOW_MOB_INFO
 	pTextTail->pAIFlagTextInstance = nullptr;
 #endif
@@ -873,7 +912,11 @@ void CPythonTextTail::RegisterCharacterTextTail(DWORD dwGuildID, DWORD dwVirtual
 	if (!prLanguage)
 	{
 		BYTE bLanguage = pCharacterInstance->GetLanguage();
+#ifdef ENABLE_COUNTRY_FLAG
+		if (pCharacterInstance->IsPC() && (bLanguage || *pCharacterInstance->GetCountryFlag()))
+#else
 		if(pCharacterInstance->IsPC() && bLanguage)
+#endif
 		{
 			std::string langName = "en";
 
@@ -895,6 +938,28 @@ void CPythonTextTail::RegisterCharacterTextTail(DWORD dwGuildID, DWORD dwVirtual
 
 			char szFileName[256];
 			snprintf(szFileName, sizeof(szFileName), "d:/ymir work/ui/game/emoji/flag/%s.tga", langName.c_str());
+#ifdef ENABLE_COUNTRY_FLAG
+			// the country picked on character select: Baerim's own flag scaled in code to the language flag width
+			if (*pCharacterInstance->GetCountryFlag())
+			{
+				char szCountryFile[256];
+				snprintf(szCountryFile, sizeof(szCountryFile), "d:/ymir work/ui/language_system/flags/%s.png", pCharacterInstance->GetCountryFlag());
+				if (CResourceManager::Instance().IsFileExist(szCountryFile))
+				{
+					CGraphicImage* pCountryImage = (CGraphicImage*)CResourceManager::Instance().GetResourcePointer(szCountryFile);
+					if (pCountryImage)
+					{
+						CGraphicExpandedImageInstance* pCountry = CGraphicExpandedImageInstance::New();
+						pCountry->SetImagePointer(pCountryImage);
+						pCountry->SetScale(c_fTextTailCountryFlagScaleX, c_fTextTailCountryFlagScaleY);
+						prLanguage = pCountry;
+						pTextTail->bLanguageScaled = true;
+					}
+				}
+			}
+
+			if (!prLanguage)
+#endif
 
 			if (CResourceManager::Instance().IsFileExist(szFileName))
 			{
@@ -1276,6 +1341,9 @@ CPythonTextTail::TTextTail* CPythonTextTail::RegisterTextTail(DWORD dwVirtualID,
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
 	pTextTail->pLanguageInstance = nullptr;
 	pTextTail->pLanguageInstance2 = nullptr;
+#endif
+#ifdef ENABLE_COUNTRY_FLAG
+	pTextTail->bLanguageScaled = false;
 #endif
 #ifdef ENABLE_SHOW_MOB_INFO
 	pTextTail->pAIFlagTextInstance = nullptr;

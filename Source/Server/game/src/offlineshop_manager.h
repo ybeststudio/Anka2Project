@@ -34,6 +34,10 @@ class COfflineShopManager : public singleton<COfflineShopManager>
 
 		void RemoveItem(LPCHARACTER ch, BYTE bPos);
 		void RemoveItemReal(OFFLINE_SHOP_ITEM* item);
+#ifdef ENABLE_EXPLOIT_AUDIT_FIX
+		void RefundBuyReal(TOfflineShopBuy* item);
+		enum { OFFLINE_SHOP_ITEM_STATUS_PENDING = 2 };
+#endif
 
 		void ShopLogRemove(LPCHARACTER ch);
 		void ShopLogRemoveReal(DWORD ch);

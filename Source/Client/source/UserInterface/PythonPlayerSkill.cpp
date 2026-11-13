@@ -465,6 +465,7 @@ bool CPythonPlayer::__CanUseSkill()
 	if (IsObserverMode())
 		return false;
 
+#ifndef ENABLE_MOUNT_ATTACK_FIX	// old horse riding skill requirement (horse system removed)
 	// Fix me
 #if defined(ENABLE_CONQUEROR_LEVEL) && defined(ENABLE_STANDING_MOUNT)
 	// Standing mount üzerindeyken skill grade kontrolünü atla
@@ -475,6 +476,7 @@ bool CPythonPlayer::__CanUseSkill()
 	{
 		return false;
 	}
+#endif
 
 	return pkInstMain->CanUseSkill();
 }

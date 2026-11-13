@@ -47,9 +47,6 @@
 	#endif
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-	#include "PythonMountUpGrade.h"
-#endif
 
 #ifdef ENABLE_EVENT_SYSTEM
 	#include "PythonGameEvents.h"
@@ -166,17 +163,6 @@ void CPythonNetworkStream::__RefreshAcceWindow()
 }
 #endif
 
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-void CPythonNetworkStream::__RefreshGuildBank()
-{
-	m_isRefreshGuildBank = true;
-}
-
-void CPythonNetworkStream::__RefreshGuildBankInfo()
-{
-	m_isRefreshGuildBankInfo = true;
-}
-#endif
 
 void CPythonNetworkStream::__RefreshGuildBaseInfoPage()
 {
@@ -188,12 +174,6 @@ void CPythonNetworkStream::__RefreshGuildBaseInfoPageBankGold()
 	m_isRefreshGuildBaseInfoPageBankGold = true;
 }
 
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-void CPythonNetworkStream::__RefreshGuildWarInfoPage()
-{
-	m_isRefreshGuildWarInfoPage = true;
-}
-#endif
 
 void CPythonNetworkStream::__SetGuildID(DWORD id)
 {
@@ -908,15 +888,6 @@ void CPythonNetworkStream::GamePhase()
 				break;
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-			case HEADER_GC_MOUNT_UP_GRADE:
-				ret = RecvMountUpGrade();
-				break;
-
-			case HEADER_GC_MOUNT_UP_GRADE_CHAT:
-				ret = RecvMountUpGradeChat();
-				break;
-#endif
 
 #ifdef ENABLE_DUNGEON_INFO
 			case HEADER_GC_DUNGEON_INFO_SYSTEM:
@@ -1071,21 +1042,6 @@ void CPythonNetworkStream::GamePhase()
 	}
 #endif
 
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-	if (m_isRefreshGuildBank)
-	{
-		m_isRefreshGuildBank = false;
-		PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "RefreshGuildBank", Py_BuildValue("()"));
-		s_nextRefreshTime = curTime + 300;
-	}
-
-	if (m_isRefreshGuildBankInfo)
-	{
-		m_isRefreshGuildBankInfo = false;
-		PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "RefreshGuildBankInfo", Py_BuildValue("()"));
-		s_nextRefreshTime = curTime + 300;
-	}
-#endif
 
 	if (m_isRefreshGuildBaseInfoPage)
 	{
@@ -1101,14 +1057,6 @@ void CPythonNetworkStream::GamePhase()
 		s_nextRefreshTime = curTime + 300;
 	}
 
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-	if (m_isRefreshGuildWarInfoPage)
-	{
-		m_isRefreshGuildWarInfoPage = false;
-		PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "RefreshGuildWarInfoPage", Py_BuildValue("()"));
-		s_nextRefreshTime = curTime + 300;
-	}
-#endif
 
 #ifdef ENABLE_OFFLINESHOP_SEARCH_SYSTEM
 	if (m_isRefreshShopSearchWnd)
@@ -1142,15 +1090,8 @@ void CPythonNetworkStream::__InitializeGamePhase()
 #ifdef ENABLE_ACCE_COSTUME_SYSTEM
 	m_isRefreshAcceWnd = false;
 #endif
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-	m_isRefreshGuildBank = false;
-	m_isRefreshGuildBankInfo = false;
-#endif
 	m_isRefreshGuildBaseInfoPage = false;
 	m_isRefreshGuildBaseInfoPageBankGold = false;
-#ifdef ENABLE_GUILDRENEWAL_SYSTEM
-	m_isRefreshGuildWarInfoPage = false;
-#endif
 	m_bIsLeftSeatLogOutState = false;
 
 	m_EmoticonStringVector.clear();
@@ -2493,7 +2434,11 @@ bool CPythonNetworkStream::RecvShopPacket()
 
 					struct packet_shop_item* item = &pPackTab->items[0];
 					
+#ifdef ENABLE_SHOP_TABS_BAERIM
+					for (int j = 0; j < SHOP_EX_ITEM_MAX_NUM; j++)
+#else
 					for (BYTE j = 0; j < SHOP_HOST_ITEM_MAX_NUM; j++)
+#endif
 					{
 						TShopItemData* itemData = (item + j);
 						CPythonShop::Instance().SetItemData(i, j, *itemData);
@@ -3489,8 +3434,13 @@ bool CPythonNetworkStream::RecvTargetInfoPacket()
 		{
 			if (pInstTarget->IsEnemy() || pInstTarget->IsStone())
 			{
+#ifdef ENABLE_TARGET_DROP_CHANCE
+				PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "BINARY_AddTargetMonsterDropInfo",
+					Py_BuildValue("(iiii)", pInfoTargetPacket.race, pInfoTargetPacket.dwVnum, pInfoTargetPacket.count, pInfoTargetPacket.dwChance));
+#else
 				PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "BINARY_AddTargetMonsterDropInfo",
 					Py_BuildValue("(iii)", pInfoTargetPacket.race, pInfoTargetPacket.dwVnum, pInfoTargetPacket.count));
+#endif
 				PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "BINARY_RefreshTargetMonsterDropInfo", Py_BuildValue("(i)", pInfoTargetPacket.race));
 			}
 			else
@@ -5708,7 +5658,12 @@ bool CPythonNetworkStream::RecvWhisperDetails()
 		return false;
 
 #ifdef ENABLE_MULTI_LANGUAGE_SYSTEM
+#ifdef ENABLE_COUNTRY_FLAG
+	packet.szCountryFlag[COUNTRY_FLAG_MAX_LEN] = 0;
+	PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "BINARY_RecieveWhisperDetails", Py_BuildValue("(sis)", packet.name, packet.bLanguage, packet.szCountryFlag));
+#else
 	PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "BINARY_RecieveWhisperDetails", Py_BuildValue("(si)", packet.name, packet.bLanguage));
+#endif
 #else
 	PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "BINARY_RecieveWhisperDetails", Py_BuildValue("(s)", packet.name));
 #endif
@@ -8011,74 +7966,6 @@ bool CPythonNetworkStream::RecvHuntingRandomItems()
 }
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-bool CPythonNetworkStream::MountUpGrade(const uint8_t iSubHeader)
-{
-	if (!__CanActMainInstance())
-		return true;
-
-	TPacketCGMountUpGrade p =
-	{
-		static_cast<uint8_t>(HEADER_CG_MOUNT_UP_GRADE),
-		static_cast<uint8_t>(iSubHeader),
-	};
-
-	if (!Send(sizeof(p), &p))
-	{
-		Tracen("CPythonNetworkStream::MountUpGrade Error");
-		return false;
-	}
-
-	return SendSequence();
-}
-
-bool CPythonNetworkStream::RecvMountUpGrade()
-{
-	TPacketGCMountUpGrade p;
-	if (!Recv(sizeof(p), &p))
-	{
-		Tracen("RecvOpenMountUpGrade Error");
-		return false;
-	}
-
-	CPythonMountUpGrade::Instance().SetHorseLevel(p.horse_level);
-	CPythonMountUpGrade::Instance().SetMountUpGradeFail(p.is_fail);
-	CPythonMountUpGrade::Instance().SetMountUpGradeExistingExp(p.existing_exp);
-
-	switch (p.subheader)
-	{
-		case CPythonMountUpGrade::EMountUpGradeGCSubheaderType::SUBHEADER_GC_MOUNT_UP_GRADE_OPEN:
-			PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "OpenMountUpGrade", Py_BuildValue("()"));
-			break;
-
-		case CPythonMountUpGrade::EMountUpGradeGCSubheaderType::SUBHEADER_GC_MOUNT_UP_GRADE_REFRESH:
-			CPythonMountUpGrade::Instance().Refresh();
-			break;
-
-		default:
-		{
-			TraceError("CPythonNetworkStream::RecvMountUpGrade invalid subHeader: %d", p.subheader);
-			break;
-		}
-	}
-
-	return true;
-}
-
-bool CPythonNetworkStream::RecvMountUpGradeChat()
-{
-	TPacketGCMountUpGradeChat p;
-	if (!Recv(sizeof(p), &p))
-	{
-		Tracen("RecvMountUpGradeChat Error");
-		return false;
-	}
-
-	CPythonMountUpGrade::Instance().Chat(p.type, p.value);
-
-	return true;
-}
-#endif
 
 #ifdef ENABLE_ATTENDANCE_EVENT
 bool CPythonNetworkStream::RecvHitCountInfo()

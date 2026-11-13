@@ -1609,6 +1609,7 @@ void CGuild::LevelChange(DWORD pid, BYTE level)
 
 	pack.header = HEADER_GC_GUILD;
 #ifdef ENABLE_LEVEL_INT
+	pack.subheader = GUILD_SUBHEADER_GC_LIST;	// was set only after the packet had been written: garbage subheader -> client skipped the body -> stream desync on level change
 	pack.size = sizeof(TPacketGCGuild);
 	pack.size += sizeof(TGuildMemberPacketData);
 #endif

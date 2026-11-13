@@ -519,7 +519,7 @@ void CMapOutdoor::__HardwareTransformPatch_RenderPatchSplat(long patchnum, WORD 
 				alphaOverride[0] = 1.0;
 				isFirst = false;
 			}
-			STATEMANAGER.SetPixelShaderConstant(15, alphaOverride, 1);
+			STATEMANAGER.SetPixelShaderConstant(21, alphaOverride, 1);	// c15 is taken by reducePointLightIntensity below
 
 			// Light space
 			STATEMANAGER.SetVertexShaderConstant(8, &m_MatLightViewProj, 4);

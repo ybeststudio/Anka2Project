@@ -369,11 +369,7 @@ bool CHARACTER::CanUseHorseSkill()
 {
 	if (IsRiding())
 	{
-#ifdef ENABLE_RIDING_EXTENDED
-		if (GetHorseGrade() >= 3)
-#else
 		if (GetHorseGrade() == 3)
-#endif
 			return true;
 		else
 			return false;

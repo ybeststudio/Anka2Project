@@ -10419,6 +10419,11 @@ VNUM	LOCALE_NAME
 55067	Jazda Konna (Precyzja)
 55070	S. Umiejêtnoœci Konnych
 55100	Boska Od¿ywka
+55320	Czas Bonusu Kostiumu (3d)
+55321	Czas Bonusu Kostiumu (7d)
+55322	Czas Bonusu Kostiumu (14d)
+55323	Czas Bonusu Kostiumu (30d)
+55327	Czas Bonusu Kostiumu (PvP)
 55400	Losowa Skrzynka
 55401	Jajo Ma³piszona
 55402	Jajo Paj¹ka
@@ -12290,3 +12295,703 @@ VNUM	LOCALE_NAME
 65111	Amulet of Gods+
 65112	Guild Energy (100%)
 65120	Silver Expansion
+90020	Costume Voucher
+90021	Mount Voucher
+90022	Pet Voucher
+40240	Baerim Blade
+40241	Baerim Dagger
+40242	Baerim Bow
+40243	Baerim Glaive
+40244	Baerim Bel
+40245	Baerim Fan
+40246	Baerim Sura
+40247	BombWork Blade
+40248	BombWork Dagger
+40249	BombWork Bow
+40250	BombWork Glaive
+40251	BombWork Bell
+40252	BombWork Fan
+40253	BombWork Sura
+40254	White Samurai Blade
+40255	White Samurai Dagger
+40256	White Samurai Bow
+40257	White Samurai Glaive
+40258	White Samurai Bell
+40259	White Samurai Fan
+40260	Green Phantom Blade
+40261	Green Phantom Dagger
+40262	Green Phantom Bow
+40263	Green Phantom Glaive
+40264	Green Phantom Bell
+40265	Green Phantom Fan
+40266	Black Sakura Blade
+40267	Black Sakura Dagger
+40268	Black Sakura Bow
+40269	Black Sakura Glaive
+40270	Black Sakura Bell
+40271	Black Sakura Fan
+40272	Imperial Paladin Blade
+40273	Imperial Paladin Dagger
+40274	Imperial Paladin Bow
+40275	Imperial Paladin Glaive
+40276	Imperial Paladin Bell
+40277	Imperial Paladin Fan
+42099	White Samurai Costume (m)
+42100	White Samurai Costume (f)
+42101	Green Phantom Costume (m)
+42102	Green Phantom Costume (f)
+42113	Black Sakura Costume (m)
+42114	Black Sakura Costume (f)
+42115	Imperial Paladin Costume (m)
+42116	Imperial Paladin Costume (f)
+45692	Cowhorn Helm (M)
+45693	Cowhorn Helm (F)
+45776	White Samurai Hair (m)
+45777	White Samurai Hair (f)
+45778	Green Phantom Hair (m)
+45779	Green Phantom Hair (f)
+45790	Black Sakura Hair (m)
+45791	Black Sakura Hair (f)
+45792	Imperial Paladin Hair (m)
+45793	Imperial Paladin Hair (f)
+52121	Samsara Dragon
+52122	Manny
+52123	Ellie
+52126	Lava Cave Lizard
+52127	Ice Cave Lizard
+52128	Magma Dragon
+52214	White Samurai Mount
+52215	Green Phantom Mount
+52217	Black Sakura Mount
+52218	Imperial Paladin Mount
+53381	Boneca Ambalabu
+53382	Cappuccino Assassino
+53389	Tralalelo Tralala
+53390	Tung Tung
+53391	Vecna
+53416	Black Sakura Pet
+53417	Imperial Paladin Pet
+86065	Snow Sentinel Sash
+86068	Divine Wings
+86069	Hellfire Wings
+86070	Crystal Wing
+86071	Nobori Wings
+86072	Rogue Wings
+86073	Flame Wings
+86075	Glacial Viking Sash
+86076	Wolf Stalker Sash
+86080	Christmas Knight Sash
+86081	Winter Reindeer Sash
+86082	Polar Suit Sash
+86143	White Samurai Wing
+86144	Green Phantom Wing
+86146	Black Sakura Wing
+86147	Imperial Paladin Wing
+86152	Sash skin (pirate)
+53500	Frank
+53504	Jiangshi Jnr
+53524	Baby Bestial Captain
+53525	Baby Black Orc
+53557	Baby Death Reaper
+53604	Baby Flame King
+53660	Baby Giant Turtle
+53661	Baby Ice Witch
+53671	Baby Jotun
+53672	Baby Ninetail
+53673	Baby Spider Baroness
+53674	Baby Spider Queen
+53675	Baby Tartaros
+53676	Baby Yellow Tiger
+53677	Ballerina Cappuccina
+53678	Bombardiro Crocodilo
+53679	Captain Waddle
+53680	Demagorgog
+53681	Little Black Steel Warrior
+53682	Little Black Wind Shaman
+53683	Mc Ping
+53684	Salamino Pinguino
+41928	Kostium Ksiê¿ycowego Stra¿nika (m)
+41929	Kostium Ksiê¿ycowego Stra¿nika (k)
+41970	Koszulka Argentyny
+41971	Koszulka Argentyny
+41972	Koszulka Belgii
+41973	Koszulka Belgii
+41986	Koszulka Niemiec
+41987	Koszulka Niemiec
+41988	Koszulka W³och
+41989	Koszulka W³och
+41990	Koszulka Meksyku
+41991	Koszulka Meksyku
+41992	Koszulka Polski
+41993	Koszulka Polski
+41994	Koszulka Portugalii
+41995	Koszulka Portugalii
+41996	Koszulka Rumunii
+41997	Koszulka Rumunii
+41998	Koszulka Hiszpanii
+41999	Koszulka Hiszpanii
+42000	Koszulka Turcji
+42001	Koszulka Turcji
+42011	Kostium Cienia Ksiê¿yca (M)
+42012	Kostium Cienia Ksiê¿yca (K)
+42013	Kostium Czystego Anio³a (M)
+42014	Kostium Czystego Anio³a (K)
+42015	Kostium Duchowego Samuraja (M)
+42016	Kostium Duchowego Samuraja (K)
+42017	Kostium Monarchy Inferno (M)
+42018	Kostium Monarchy Inferno (K)
+42019	Kostium Ducha Wiosny (M)
+42020	Kostium Ducha Wiosny (K)
+42021	Kostium Bia³ego Phantoma (M)
+42022	Kostium Bia³ego Phantoma (K)
+42023	Kostium Letniego Przyp³ywu (M)
+42024	Kostium Letniego Przyp³ywu (K)
+42025	Kostium Z³otego Azraela (M)
+42026	Kostium Z³otego Azraela (K)
+42027	Kostium Hellboya (M)
+42028	Kostium Hellboya (K)
+42029	Kostium Czerwonego £otra (M)
+42030	Kostium Czerwonego £otra (K)
+42031	Kostium Bia³ego Z³ota (M)
+42032	Kostium Bia³ego Z³ota (K)
+42035	Kostium Uczonego Czarodzieja (M)
+42036	Kostium Uczonego Czarodzieja (K)
+42037	Kostium Pustyni Sakury (M)
+42038	Kostium Pustyni Sakury (K)
+42039	Kostium Uczonego Czarodzieja (M)
+42040	Kostium Uczonego Czarodzieja (K)
+42043	Kostium Karmazynowego Wstêpuj¹cego (M)
+42044	Kostium Karmazynowego Wstêpuj¹cego (K)
+42045	Kostium Ametystowego W³adcy (M)
+42046	Kostium Ametystowego W³adcy (K)
+42047	Kostium B³êkitnego Stra¿nika (M)
+42048	Kostium B³êkitnego Stra¿nika (K)
+42049	Kostium Obsydianowego Smoka (M)
+42050	Kostium Obsydianowego Smoka (K)
+42051	Kostium Kwiatu Wiœni (M)
+42052	Kostium Kwiatu Wiœni (K)
+42053	Kostium Czarnego Kwiatu (M)
+42054	Kostium Czarnego Kwiatu (K)
+42055	Kostium Niebieskiego Wojownika (M)
+42056	Kostium Niebieskiego Wojownika (K)
+42057	Kostium Czerwonego Wojownika (M)
+42058	Kostium Czerwonego Wojownika (K)
+42061	Astral Knight Costume (m)
+42062	Astral Knight Costume (f)
+42063	Dark Symbiote Costume (m)
+42064	Dark Symbiote Costume (f)
+42067	Haunted Vanguard Costume (m)
+42068	Haunted Vanguard Costume (f)
+42069	GhostBusters Costume (m)
+42070	GhostBusters Costume (f)
+42075	Halloween Dread Costume (m)
+42076	Halloween Dread Costume (f)
+42077	White Steel Costume (m)
+42078	White Steel Costume (f)
+42081	Red Fear Costume (m)
+42082	Red Fear Costume (f)
+42083	Frost Hwangs Costume (m)
+42084	Frost Hwangs Costume (f)
+45668	W³osy Ksiê¿ycowego Stra¿nika (m)
+45669	W³osy Ksiê¿ycowego Stra¿nika (k)
+45714	W³osy Ducha Wiosny (M)
+45715	W³osy Ducha Wiosny (K)
+45716	W³osy Bia³ego Phantoma (M)
+45717	W³osy Bia³ego Phantoma (K)
+45730	Fryzura Uczonego Czarodzieja (M)
+45731	Fryzura Uczonego Czarodzieja (K)
+45732	Fryzura Pustyni Sakury (M)
+45733	Fryzura Pustyni Sakury (K)
+45734	Fryzura Uczonego Czarodzieja (M)
+45735	Fryzura Uczonego Czarodzieja (K)
+45738	Fryzura Karmazynowego Wstêpuj¹cego (M)
+45739	Fryzura Karmazynowego Wstêpuj¹cego (K)
+45740	Fryzura Ametystowego W³adcy (M)
+45741	Fryzura Ametystowego W³adcy (K)
+45742	Fryzura Obsydianowego Smoka (M)
+45743	Fryzura Obsydianowego Smoka (K)
+45744	Fryzura B³êkitnego Stra¿nika (M)
+45745	Fryzura B³êkitnego Stra¿nika (K)
+45746	Fryzura Kwiatu Wiœni (M)
+45747	Fryzura Kwiatu Wiœni (K)
+45748	Fryzura Czarnego Kwiatu (M)
+45749	Fryzura Czarnego Kwiatu (K)
+45750	Fryzura Niebieskiego Wojownika (M)
+45751	Fryzura Niebieskiego Wojownika (K)
+45752	Fryzura Czerwonego Wojownika (M)
+45753	Fryzura Czerwonego Wojownika (K)
+45756	Astral Knight Hair (m)
+45757	Astral Knight Hair (f)
+45758	Dark Symbiote Hair (m)
+45759	Dark Symbiote Hair (f)
+45760	Haunted Vanguard Hair (m)
+45761	Haunted Vanguard Hair (f)
+45762	GhostBusters Hair (m)
+45763	GhostBusters Hair (f)
+45768	Halloween Dread Hair (m)
+45769	Halloween Dread Hair (f)
+45770	White Steel Hair (m)
+45771	White Steel Hair (f)
+45772	Red Fear Hair (m)
+45773	Red Fear Hair (f)
+45774	Frost Hwangs Hair (m)
+45775	Frost Hwangs Hair (f)
+52151	Ksiê¿ycowy Stra¿nik
+52162	Duch Burzy
+52167	Fantomatyczny Qilin
+52170	Stra¿nik Bambusu
+52173	Z³oty Wierzchowiec
+52174	Czarny Wierzchowiec
+52176	Dziki Wierzchowiec
+52178	Wierzchowiec Czystego Anio³a
+52179	Wierzchowiec Monarchy Inferno
+52181	Wierzchowiec Bia³ego Phantoma
+52182	Wierzchowiec Letniego Przyp³ywu
+52183	Wierzchowiec Z³otego Azraela
+52184	Wierzchowiec Hellboya
+52185	Wierzchowiec Czerwonego £otra
+52186	Wierzchowiec Bia³ego Z³ota
+52190	Wierzchowiec Uczonego Czarodzieja
+52191	Wierzchowiec Pustyni Sakury
+52194	Wierzchowiec Obsydianowego Smoka
+52195	Wierzchowiec B³êkitnego Stra¿nika
+52196	Wierzchowiec Kwiatu Wiœni
+52197	Wierzchowiec Czarnego Kwiatu
+52200	Astral Knight Mount
+52203	Dark Symbiote Mount
+52211	White Steel Mount
+52212	Red Fear Mount
+52213	Frost Hwangs Mount
+53394	Pet Czystego Anio³a
+53395	Pet Bia³ego Phantoma
+53396	Pet Letniego Przyp³ywu
+53397	Pet Z³otego Azraela
+53398	Pet Hellboya
+53399	Pet Czerwonego £otra
+53400	Pet Bia³ego Z³ota
+53402	Pet Uczonego Czarodzieja
+53403	Pet Pustyni Sakury
+53406	Pet Obsydianowego Smoka
+53407	Pet B³êkitnego Stra¿nika
+53408	Dark Symbiote Pet
+53414	White Steel Pet
+40278	Ostrze P³on¹cego Rycerza
+40279	Sztylet P³on¹cego Rycerza
+40280	£uk P³on¹cego Rycerza
+40281	Glewia P³on¹cego Rycerza
+40282	Dzwon P³on¹cego Rycerza
+40283	Wachlarz P³on¹cego Rycerza
+40284	Sura P³on¹cego Rycerza
+40285	Ostrze Zamarzniêtego Rycerza
+40286	Sztylet Zamarzniêtego Rycerza
+40287	£uk Zamarzniêtego Rycerza
+40288	Glewia Zamarzniêtego Rycerza
+40289	Dzwon Zamarzniêtego Rycerza
+40290	Wachlarz Zamarzniêtego Rycerza
+40291	Sura Zamarzniêtego Rycerza
+40292	Ostrze Ducha Burzy
+40293	Sztylet Ducha Burzy
+40294	£uk Ducha Burzy
+40295	Glewia Ducha Burzy
+40296	Dzwon Ducha Burzy
+40297	Wachlarz Ducha Burzy
+40298	Sura Ducha Burzy
+40299	Ostrze Ksiê¿ycowego Stra¿nika
+40300	Sztylet Ksiê¿ycowego Stra¿nika
+40301	£uk Ksiê¿ycowego Stra¿nika
+40302	Glewia Ksiê¿ycowego Stra¿nika
+40303	Dzwon Ksiê¿ycowego Stra¿nika
+40304	Wachlarz Ksiê¿ycowego Stra¿nika
+40305	Sura Ksiê¿ycowego Stra¿nika
+40306	Ostrze Yin-Yang
+40307	Sztylet Yin-Yang
+40308	£uk Yin-Yang
+40309	Glewia Yin-Yang
+40310	Dzwon Yin-Yang
+40311	Wachlarz Yin-Yang
+40312	Ostrze Stra¿nika Bambusu
+40313	Sztylet Stra¿nika Bambusu
+40314	£uk Stra¿nika Bambusu
+40315	Glewia Stra¿nika Bambusu
+40316	Dzwon Stra¿nika Bambusu
+40317	Wachlarz Stra¿nika Bambusu
+40318	Sura Stra¿nika Bambusu
+40319	Ostrze Baryt
+40320	Sztylet Baryt
+40321	£uk Baryt
+40322	Glewia Baryt
+40323	Dzwon Baryt
+40324	Wachlarz Baryt
+40325	Sura Baryt
+40326	Ostrze Yin-Yang
+40327	Sztylet Yin-Yang
+40328	£uk Yin-Yang
+40329	Glewia Yin-Yang
+40330	Dzwon Yin-Yang
+40331	Wachlarz Yin-Yang
+40332	Yin-Yang Sura
+40333	Z³ote Ostrze
+40334	Z³oty Sztylet
+40335	Z³oty £uk
+40336	Z³ota Glaive
+40337	Z³oty Dzwon
+40338	Z³oty Wachlarz
+40339	Z³ota Sura
+40340	Czarne Ostrze
+40341	Czarny Sztylet
+40342	Czarny £uk
+40343	Czarny Glaive
+40344	Czarny Dzwon
+40345	Czarny Wachlarz
+40346	Czarna Sura
+40347	Ostrze Zamarzniêtych Podziemii
+40348	Sztylet Zamarzniêtych Podziemii
+40349	£uk Zamarzniêtych Podziemii
+40350	Glewia Zamarzniêtych Podziemii
+40351	Dzwon Zamarzniêtych Podziemii
+40352	Wachlarz Zamarzniêtych Podziemii
+40353	Sura Zamarzniêtych Podziemii
+40354	Goldar Ostrze
+40355	Goldar Sztylet
+40356	Goldar £uk
+40357	Goldar Glaive
+40358	Goldar Dzwon
+40359	Goldar Wachlarz
+40360	Goldar Sura
+40361	Ostrze Cienia Ksiê¿yca
+40362	Sztylet Cienia Ksiê¿yca
+40363	£uk Cienia Ksiê¿yca
+40364	Glaive Cienia Ksiê¿yca
+40365	Dzwon Cienia Ksiê¿yca
+40366	Wachlarz Cienia Ksiê¿yca
+40367	Sura Cienia Ksiê¿yca
+40368	Ostrze Czystego Anio³a
+40369	Sztylet Czystego Anio³a
+40370	£uk Czystego Anio³a
+40371	Glaive Czystego Anio³a
+40372	Dzwon Czystego Anio³a
+40373	Wachlarz Czystego Anio³a
+40374	Sura Czystego Anio³a
+40375	Ostrze Duchowego Samuraja
+40376	Sztylet Duchowego Samuraja
+40377	£uk Duchowego Samuraja
+40378	Glaive Duchowego Samuraja
+40379	Dzwon Duchowego Samuraja
+40380	Wachlarz Duchowego Samuraja
+40381	Sura Duchowego Samuraja
+40382	Ostrze Monarchy Inferno
+40383	Sztylet Monarchy Inferno
+40384	£uk Monarchy Inferno
+40385	Glaive Monarchy Inferno
+40386	Dzwon Monarchy Inferno
+40387	Wachlarz Monarchy Inferno
+40388	Sura Monarchy Inferno
+40389	Ostrze Ducha Wiosny
+40390	Sztylet Ducha Wiosny
+40391	£uk Ducha Wiosny
+40392	Glaive Ducha Wiosny
+40393	Dzwon Ducha Wiosny
+40394	Wachlarz Ducha Wiosny
+40395	Sura Ducha Wiosny
+40396	Ostrze Bia³ego Phantoma
+40397	Sztylet Bia³ego Phantoma
+40398	£uk Bia³ego Phantoma
+40399	Glaive Bia³ego Phantoma
+40400	Dzwon Bia³ego Phantoma
+40401	Wachlarz Bia³ego Phantoma
+40402	Sura Bia³ego Phantoma
+40403	Ostrze Letniego Przyp³ywu
+40404	Sztylet Letniego Przyp³ywu
+40405	£uk Letniego Przyp³ywu
+40406	Glaive Letniego Przyp³ywu
+40407	Dzwon Letniego Przyp³ywu
+40408	Wachlarz Letniego Przyp³ywu
+40409	Sura Letniego Przyp³ywu
+40410	Ostrze Z³otego Azraela
+40411	Sztylet Z³otego Azraela
+40412	£uk Z³otego Azraela
+40413	Glaive Z³otego Azraela
+40414	Dzwon Z³otego Azraela
+40415	Wachlarz Z³otego Azraela
+40416	Sura Z³otego Azraela
+40417	Ostrze Hellboya
+40418	Sztylet Hellboya
+40419	£uk Hellboya
+40420	Glaive Hellboy
+40421	Dzwon Hellboya
+40422	Wachlarz Hellboya
+40423	Sura Hellboya
+40424	Ostrze Czerwonego £otra
+40425	Sztylet Czerwonego £otra
+40426	£uk Czerwonego £otra
+40427	Glaive Czerwonego £otra
+40428	Dzwon Czerwonego £otra
+40429	Wachlarz Czerwonego £otra
+40430	Sura Czerwonego £otra
+40431	Ostrze Bia³ego Z³ota
+40432	Sztylet Bia³ego Z³ota
+40433	£uk Bia³ego Z³ota
+40434	Glaive Bia³ego Z³ota
+40435	Dzwon Bia³ego Z³ota
+40436	Wachlarz Bia³ego Z³ota
+40437	Sura Bia³ego Z³ota
+40438	Miecz Uczonego Czarodzieja
+40439	Sztylet Uczonego Czarodzieja
+40440	£uk Uczonego Czarodzieja
+40441	Glewia Uczonego Czarodzieja
+40442	Dzwon Uczonego Czarodzieja
+40443	Wachlarz Uczonego Czarodzieja
+40444	Ostrze Sury Uczonego Czarodzieja
+40445	Miecz Pustyni Sakury
+40446	Sztylet Pustyni Sakury
+40447	£uk Pustyni Sakury
+40448	Glewia Pustyni Sakury
+40449	Dzwon Pustyni Sakury
+40450	Wachlarz Pustyni Sakury
+40451	Miecz Uczonego Czarodzieja
+40452	Sztylet Uczonego Czarodzieja
+40453	£uk Uczonego Czarodzieja
+40454	Glewia Uczonego Czarodzieja
+40455	Dzwon Uczonego Czarodzieja
+40456	Wachlarz Uczonego Czarodzieja
+40457	Ostrze Sury Uczonego Czarodzieja
+40458	Miecz Karmazynowego Wstêpuj¹cego
+40459	Sztylet Karmazynowego Wstêpuj¹cego
+40460	£uk Karmazynowego Wstêpuj¹cego
+40461	Glewia Karmazynowego Wstêpuj¹cego
+40462	Dzwon Karmazynowego Wstêpuj¹cego
+40463	Wachlarz Karmazynowego Wstêpuj¹cego
+40464	Ostrze Sury Karmazynowego Wstêpuj¹cego
+40465	Miecz Ametystowego W³adcy
+40466	Sztylet Ametystowego W³adcy
+40467	£uk Ametystowego W³adcy
+40468	Glewia Ametystowego W³adcy
+40469	Dzwon Ametystowego W³adcy
+40470	Wachlarz Ametystowego W³adcy
+40471	Ostrze Sury Ametystowego W³adcy
+40472	Miecz Obsydianowego Smoka
+40473	Sztylet Obsydianowego Smoka
+40474	£uk Obsydianowego Smoka
+40475	Glewia Obsydianowego Smoka
+40476	Dzwon Obsydianowego Smoka
+40477	Wachlarz Obsydianowego Smoka
+40478	Ostrze Sury Obsydianowego Smoka
+40479	Miecz B³êkitnego Stra¿nika
+40480	Sztylet B³êkitnego Stra¿nika
+40481	£uk B³êkitnego Stra¿nika
+40482	Glewia B³êkitnego Stra¿nika
+40483	Dzwon B³êkitnego Stra¿nika
+40484	Wachlarz B³êkitnego Stra¿nika
+40485	Miecz Kwiatu Wiœni
+40486	Sztylet Kwiatu Wiœni
+40487	£uk Kwiatu Wiœni
+40488	Glewia Kwiatu Wiœni
+40489	Dzwon Kwiatu Wiœni
+40490	Wachlarz Kwiatu Wiœni
+40491	Ostrze Sury Kwiatu Wiœni
+40492	Ostrze Czarnego Kwiatu
+40493	Sztylet Czarnego Kwiatu
+40494	£uk Czarnego Kwiatu
+40495	Glewia Czarnego Kwiatu
+40496	Dzwon Czarnego Kwiatu
+40497	Wachlarz Czarnego Kwiatu
+40498	Sura Czarnego Kwiatu
+40499	Ostrze Niebieskiego Wojownika
+40500	Sztylet Niebieskiego Wojownika
+40501	£uk Niebieskiego Wojownika
+40502	Glewia Niebieskiego Wojownika
+40503	Dzwon Niebieskiego Wojownika
+40504	Wachlarz Niebieskiego Wojownika
+40505	Sura Niebieskiego Wojownika
+40506	Ostrze Czerwonego Wojownika
+40507	Sztylet Czerwonego Wojownika
+40508	£uk Czerwonego Wojownika
+40509	Glewia Czerwonego Wojownika
+40510	Dzwon Czerwonego Wojownika
+40511	Wachlarz Czerwonego Wojownika
+40512	Sura Czerwonego Wojownika
+40513	Astral Knight Blade
+40514	Astral Knight Dagger
+40515	Astral Knight Bow
+40516	Astral Knight Glaive
+40517	Astral Knight Bell
+40518	Astral Knight Fan
+40519	Astral Knight Sura
+40520	Dark Symbiote Blade
+40521	Dark Symbiote Dagger
+40522	Dark Symbiote Bow
+40523	Dark Symbiote Glaive
+40524	Dark Symbiote Bell
+40525	Dark Symbiote Fan
+40526	Dark Symbiote Sura
+40527	Haunted Vanguard Blade
+40528	Haunted Vanguard Dagger
+40529	Haunted Vanguard Bow
+40530	Haunted Vanguard Glaive
+40531	Haunted Vanguard Bell
+40532	Haunted Vanguard Fan
+40533	Haunted Vanguard Sura
+40534	GhostBusters Blade
+40535	GhostBusters Dagger
+40536	GhostBusters Bow
+40537	GhostBusters Glaive
+40538	GhostBusters Bell
+40539	GhostBusters Fan
+40540	GhostBusters Pickaxe
+40541	Halloween Dread Blade
+40542	Halloween Dread Dagger
+40543	Halloween Dread Bow
+40544	Halloween Dread Glaive
+40545	Halloween Dread Bell
+40546	Halloween Dread Fan
+40547	White Steel Blade
+40548	White Steel Dagger
+40549	White Steel Bow
+40550	White Steel Glaive
+40551	White Steel Bell
+40552	White Steel Fan
+40553	Red Fear Blade
+40554	Red Fear Dagger
+40555	Red Fear Bow
+40556	Red Fear Glaive
+40557	Red Fear Bell
+40558	Red Fear Fan
+40559	Frost Hwangs Blade
+40560	Frost Hwangs Dagger
+40561	Frost Hwangs Bow
+40562	Frost Hwangs Glaive
+40563	Frost Hwangs Bell
+40564	Frost Hwangs Fan
+40565	Frost Hwangs Sura
+86066	Szarfa P³on¹cego Rycerza
+86067	Szarfa Zamarzniêtego Rycerza
+86074	Szarfa Ducha Burzy
+86079	Szarfa Ksiê¿ycowego Stra¿nika
+86086	Szarfa Yin-Yang
+86088	Szarfa Stra¿nika Bambusu
+86096	Z³ota Hwang Szarfa
+86097	Czarna Hwang Szarfa
+86098	Szarfa Zamarzniêtych Podziemii
+86099	Goldar Szarfa
+86100	Skrzyd³a Cienia Ksiê¿yca
+86101	Skrzyd³a Czystego Anio³a
+86102	Skrzyd³a Duchowego Samuraja
+86103	Skrzyd³a Monarchy Inferno
+86104	Skrzyd³a Ducha Wiosny
+86105	Czarne Skrzyd³a
+86110	Bia³e Skrzyd³a
+86112	Skrzyd³a Bia³ego Phantoma
+86113	Skrzyd³a Letniego Przyp³ywu
+86114	Skrzyd³a Goldazrael
+86115	Skrzyd³a Hellboy
+86116	Skrzyd³a Czerwonego £otra
+86117	Skrzyd³a Bia³ego Z³ota
+86119	Skrzyd³a Uczonego Czarodzieja
+86120	Skrzyd³a Pustyni Sakury
+86121	Skrzyd³a Uczonego Czarodzieja
+86123	Skrzyd³a Ametystowego W³adcy
+86124	Skrzyd³a Obsydianowego Smoka
+86125	Skrzyd³a B³êkitnego Stra¿nika
+86126	Skrzyd³a Karmazynowego Wstêpuj¹cego
+86127	Skrzyd³a Kwiatu Wiœni
+86128	Skrzyd³a Czarnego Kwiatu
+86129	Skrzyd³a Niebieskiego Wojownika
+86130	Skrzyd³a Czerwonego Wojownika
+86132	Astral Knight Wing
+86133	Dark Symbiote Wing
+86135	Haunted Vanguard Wing
+86136	GhostBusters Wing
+86139	Halloween Dread Wing
+86140	White Steel Wing
+86141	Red Fear Wing
+86142	Frost Hwangs Wing
+42200	Kostium P³on¹cego Rycerza (m)
+42201	Kostium P³on¹cego Rycerza (k)
+42202	Kostium Zamarzniêtego Rycerza (m)
+42203	Kostium Zamarzniêtego Rycerza (k)
+42204	Kostium Ducha Burzy (m)
+42205	Kostium Ducha Burzy (k)
+42206	Kostium Yin-Yang (m)
+42207	Kostium Yin-Yang (k)
+42208	Kostium Stra¿nika Bambusu (m)
+42209	Kostium Stra¿nika Bambusu (k)
+42210	Krowi Garnitur (m)
+42211	Krowi Garnitur (k)
+42212	Baerim Jersey (M)
+42213	Baerim Jersey (K)
+42214	Hwang
+42215	Czerwony Hwang
+42216	Zin-Hwang
+42217	San-Hwang
+42218	Z³oty Hwang (M)
+42219	Z³oty Hwang (K)
+42220	Czarny Hwang (M)
+42221	Czarny Hwang (K)
+42222	Kostium Zamarzniêtych Podziemii (M)
+42223	Kostium Zamarzniêtych Podziemii (K)
+42224	Goldar Kostium
+42225	Koszulka Boœni
+42226	Koszulka Boœni
+42227	Koszulka Brazylii
+42228	Koszulka Brazylii
+42229	Koszulka Czech
+42230	Koszulka Czech
+42231	Koszulka Egiptu
+42232	Koszulka Egiptu
+42233	Koszulka Anglii
+42234	Koszulka Anglii
+42235	Koszulka Francji
+42236	Koszulka Francji
+42260	Abyss Warrior Costume (m)
+42261	Abyss Warrior Costume (f)
+45900	W³osy P³on¹cego Rycerza (m)
+45901	W³osy P³on¹cego Rycerza (k)
+45902	W³osy Zamarzniêtego Rycerza (m)
+45903	W³osy Zamarzniêtego Rycerza (k)
+45904	W³osy Ducha Burzy (m)
+45905	W³osy Ducha Burzy (k)
+45906	W³osy Yin-Yang (m)
+45907	W³osy Yin-Yang (k)
+45908	W³osy Stra¿nika Bambusu (m)
+45909	W³osy Stra¿nika Bambusu (k)
+45910	Baerim W³osy (M)
+45911	Baerim W³osy (K)
+45912	Z³oty Hwang Fryzura (M)
+45913	Z³oty Hwang Fryzura (K)
+45914	Czarny Hwang Fryzura (M)
+45915	Czarny Hwang Fryzura (K)
+45916	Zamarzniête Podziemia Fryzura (M)
+45917	Zamarzniête Podziemia Fryzura (K)
+45918	Goldar Fryzura (M)
+45919	Goldar Fryzura (K)
+45920	W³osy Cienia Ksiê¿yca (M)
+45921	W³osy Cienia Ksiê¿yca (K)
+45922	W³osy Czystego Anio³a (M)
+45923	W³osy Czystego Anio³a (K)
+45924	W³osy Duchowego Samuraja (M)
+45925	W³osy Duchowego Samuraja (K)
+45926	W³osy Monarchy Inferno (M)
+45927	W³osy Monarchy Inferno (K)
+45928	W³osy Letniego Przyp³ywu (M)
+45929	W³osy Letniego Przyp³ywu (K)
+45930	W³osy Z³otego Azraela (M)
+45931	W³osy Z³otego Azraela (K)
+45932	W³osy Hellboya (M)
+45933	W³osy Hellboya (K)
+45934	W³osy Czerwonego £otra (M)
+45935	W³osy Czerwonego £otra (K)
+45936	W³osy Bia³ego Z³ota (M)
+45937	W³osy Bia³ego Z³ota (K)
+45960	Polar Warden Hair (m)
+52300	Chrobry Moa
+53700	Z³oty Pet
+53701	Czarny Pet
+58000	Horse
+77090	Abyss Sword
+77091	Abyss Dagger
+77092	Abyss Bow
+77093	Abyss Greatsword
+77094	Abyss Bell
+77095	Abyss Fan
+77096	Dark Warrior Sura
+86084	Abyss Sash

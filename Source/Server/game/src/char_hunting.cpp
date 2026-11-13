@@ -147,6 +147,8 @@ void CHARACTER::UpdateHuntingMission(DWORD dwMonsterVnum)
 
 	int iLevel = GetQuestFlag("hunting_system.level");
 	int iType = GetQuestFlag("hunting_system.type");
+	if (iLevel < 0 || iLevel > HUNTING_MISSION_COUNT || iType < 0 || iType > 1)
+		return;	// SECURITY: THuntingMissions bounds
 
 	if (GetLevel() >= GetQuestFlag("hunting_system.level") and THuntingMissions[iLevel][iType][0] == dwMonsterVnum and THuntingMissions[iLevel][iType][1] > GetQuestFlag("hunting_system.count"))
 	{
@@ -167,6 +169,9 @@ void CHARACTER::UpdateHuntingMission(DWORD dwMonsterVnum)
 
 void CHARACTER::ReciveHuntingRewards()
 {
+	// SECURITY: only a finished mission (rewards cached by UpdateHuntingMission) can be claimed, else spamming the claim skipped levels
+	if (GetQuestFlag("hunting_system.reward_cached") != 1 || GetQuestFlag("hunting_system.is_active") != 1)
+		return;
 	if (GetQuestFlag("hunting_system.reward_race") != 0) { 
 		int item_vnum = GetQuestFlag("hunting_system.reward_race");
 		int item_count = GetQuestFlag("hunting_system.reward_race_count");
@@ -175,6 +180,8 @@ void CHARACTER::ReciveHuntingRewards()
 			item_count = 1;
 
 		LPITEM RaceItem = ITEM_MANAGER::instance().CreateItem(item_vnum, item_count, 0, false);
+		if (!RaceItem)
+			return;
 
 		int cell = GetEmptyInventory(RaceItem->GetSize());
 		if (cell != -1)

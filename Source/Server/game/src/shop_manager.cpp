@@ -133,7 +133,16 @@ bool CShopManager::InitializeShopEX(TShopTable* table, int size)
 			return false;
 		}
 
+#ifdef ENABLE_SHOP_TABS_BAERIM
+		// the tabs come from player.shopex: width x 8 slots in itemsEx (Baerim: the weapon shop grid has 10 columns),
+		// the old 5 x 9 = 45 grid overflowed items[40]
+		shopTable.width = (table->dwNPCVnum == 9001) ? 10 : 5;
+		shopTable.byItemCount = 0;	// was never initialised before being counted up below
+		CGrid grid(shopTable.width, 8);
+		memset(&shopTable.itemsEx[0], 0, sizeof(shopTable.itemsEx));
+#else
 		CGrid grid(5, 9);
+#endif
 
 		memset(&shopTable.items[0], 0, sizeof(shopTable.items));
 
@@ -152,7 +161,11 @@ bool CShopManager::InitializeShopEX(TShopTable* table, int size)
 			}
 
 			grid.Put(iPos, 1, item_table->bSize);
+#ifdef ENABLE_SHOP_TABS_BAERIM
+			shopTable.itemsEx[iPos] = table->items[j];
+#else
 			shopTable.items[iPos] = table->items[j];
+#endif
 			shopTable.byItemCount++;
 		}
 		if (m_map_pkShopByNPCVnum.find(table->dwNPCVnum) != m_map_pkShopByNPCVnum.end())
@@ -334,7 +347,11 @@ void CShopManager::StopShopping(LPCHARACTER ch)
 	sys_log(0, "SHOP: END: %s", ch->GetName());
 }
 
+#ifdef ENABLE_SHOP_TABS_BAERIM
+void CShopManager::Buy(LPCHARACTER ch, WORD pos)
+#else
 void CShopManager::Buy(LPCHARACTER ch, BYTE pos)
+#endif
 {
 	if (!ch->GetShop())
 		return;
@@ -552,7 +569,20 @@ bool ConvertToShopItemTable(IN CGroupNode* pNode, OUT TShopTableEx& shopTable)
 
 	int itemGroupSize = pItemGroup->GetRowCount();
 	std::vector <TShopItemTable> shopItems(itemGroupSize);
+#ifdef ENABLE_SHOP_TABS_BAERIM
+	// grid columns of the tab (Baerim: 5, weapon shop 10), 8 rows
+	int iWidth = 5;
+	pNode->GetValue("width", 0, iWidth);
+	shopTable.width = (BYTE)MINMAX(1, iWidth, SHOP_EX_ITEM_MAX_NUM / 8);
+	if (itemGroupSize > shopTable.width * 8)
+	{
+		sys_err("count(%d) of rows of group items of group %s must not exceed %d", itemGroupSize, pNode->GetNodeName().c_str(), shopTable.width * 8);
+		return false;
+	}
+	if (false)
+#else
 	if (itemGroupSize >= SHOP_HOST_ITEM_MAX_NUM)
+#endif
 	{
 		sys_err("count(%d) of rows of group items of group %s must be smaller than %d", itemGroupSize, pNode->GetNodeName().c_str(), SHOP_HOST_ITEM_MAX_NUM);
 		return false;
@@ -592,7 +622,13 @@ bool ConvertToShopItemTable(IN CGroupNode* pNode, OUT TShopTableEx& shopTable)
 		std::sort(shopItems.rbegin(), shopItems.rend(), CompareShopItemName);
 	}
 
+#ifdef ENABLE_SHOP_TABS_BAERIM
+	// the tab is width x 8 slots (the old 5 x 9 = 45 grid overflowed items[40])
+	CGrid grid = CGrid(shopTable.width, 8);
+	memset(&shopTable.itemsEx[0], 0, sizeof(shopTable.itemsEx));
+#else
 	CGrid grid = CGrid(5, 9);
+#endif
 	int iPos;
 
 	memset(&shopTable.items[0], 0, sizeof(shopTable.items));
@@ -607,9 +643,19 @@ bool ConvertToShopItemTable(IN CGroupNode* pNode, OUT TShopTableEx& shopTable)
 		}
 
 		iPos = grid.FindBlank(1, item_table->bSize);
+#ifdef ENABLE_SHOP_TABS_BAERIM
+		if (iPos < 0)
+		{
+			sys_err("group %s: no room for vnum(%d) in the %dx8 grid", pNode->GetNodeName().c_str(), shopItems[i].vnum, shopTable.width);
+			return false;
+		}
+		grid.Put(iPos, 1, item_table->bSize);
+		shopTable.itemsEx[iPos] = shopItems[i];
+#else
 
 		grid.Put(iPos, 1, item_table->bSize);
 		shopTable.items[iPos] = shopItems[i];
+#endif
 	}
 
 	shopTable.byItemCount = shopItems.size();

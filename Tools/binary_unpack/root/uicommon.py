@@ -910,30 +910,6 @@ class OnlinePopup(ui.BorderB):
 				self.isActiveSlideOut = FALSE
 				self.Close()
 
-if app.ENABLE_RIDING_EXTENDED:
-	class MountUpGradeDialog(QuestionDialog):
-		def __init__(self):
-			QuestionDialog.__init__(self)
-			self.__CreateDialog()
-	
-		def __del__(self):
-			QuestionDialog.__del__(self)
-	
-		def __CreateDialog(self):
-			pyScrLoader = ui.PythonScriptLoader()
-			pyScrLoader.LoadScriptFile(self, "uiscript/mount_up_grade_dialog.py")
-	
-			self.board = self.GetChild("board")
-			self.textLine1 = self.GetChild("message1")
-			self.textLine2 = self.GetChild("message2")
-			self.acceptButton = self.GetChild("accept")
-			self.cancelButton = self.GetChild("cancel")
-	
-		def SetText1(self, text):
-			self.textLine1.SetText(text)
-	
-		def SetText2(self, text):
-			self.textLine2.SetText(text)
 
 if app.ENABLE_EVENT_SYSTEM:
 	class EventInformationDialog(ui.ScriptWindow):

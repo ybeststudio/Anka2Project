@@ -270,6 +270,10 @@ bool CPythonNetworkStream::RecvCharacterAdditionalInfo()
 		kNetActorData.m_bLanguage = chrInfoPacket.bLanguage;
 		kNetActorData.m_bLanguage2 = chrInfoPacket.bLanguage2;
 #endif
+#ifdef ENABLE_COUNTRY_FLAG
+		strncpy(kNetActorData.m_szCountryFlag, chrInfoPacket.szCountryFlag, COUNTRY_FLAG_MAX_LEN);
+		kNetActorData.m_szCountryFlag[COUNTRY_FLAG_MAX_LEN] = 0;
+#endif
 
 #ifdef ENABLE_SKILL_COLOR_SYSTEM
 		memcpy(kNetActorData.m_dwSkillColor, chrInfoPacket.dwSkillColor, sizeof(kNetActorData.m_dwSkillColor));

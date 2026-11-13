@@ -229,27 +229,3 @@ window = {
 	],
 }
 
-if app.ENABLE_SECOND_GUILDRENEWAL_SYSTEM:
-	window["children"] = window["children"] + [
-			{ 
-				"name":"GuildWarButton", 
-				"type" : "button", 
-				"x" : SCREEN_WIDTH-50-32,
-				"y" : SCREEN_HEIGHT-240,
-				"default_image" : "d:/ymir work/ui/game/windows/btn_bigplus_up.sub",
-				"over_image" : "d:/ymir work/ui/game/windows/btn_bigplus_over.sub",
-				"down_image" : "d:/ymir work/ui/game/windows/btn_bigplus_down.sub",
-	
-				"children" : 
-				(
-					{ 
-						"name":"GuildWarButtonName", 
-						"type":"text", 
-						"x": 16, 
-						"y": 40, 
-						"text": uiScriptLocale.GAME_GUILD_WAR_JOIN, 
-						"r":1.0, "g":1.0, "b":1.0, "a":1.0, 
-						"text_horizontal_align":"center" 
-					},	
-				),
-			},]

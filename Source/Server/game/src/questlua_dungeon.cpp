@@ -14,6 +14,9 @@
 #include "../../common/service.h"
 #ifdef ENABLE_GUILD_QUEST
 #include "guild_quest.h"
+#ifdef ENABLE_GLOBAL_RANKING
+#include "global_ranking.h"
+#endif
 #endif
 
 #ifdef ENABLE_DUNGEON_INFO
@@ -39,6 +42,21 @@ namespace quest
 {
 	int dungeon_notice(lua_State* L)
 	{
+#ifdef ENABLE_ARENA2_DUNGEONS
+		// d.notice("text"): current dungeon; d.notice(map_index, "text"): that dungeon (Arena2 quests)
+		if (lua_type(L, 1) == LUA_TSTRING)
+		{
+			if (LPDUNGEON pDungeon = CQuestManager::instance().GetCurrentDungeon())
+				pDungeon->NoticeText(lua_tostring(L, 1));
+			return 0;
+		}
+		if (lua_isnumber(L, 1) && lua_type(L, 2) == LUA_TSTRING && lua_gettop(L) == 2)
+		{
+			if (LPDUNGEON pDungeon = CDungeonManager::instance().FindByMapIndex((int32_t)lua_tonumber(L, 1)))
+				pDungeon->NoticeText(lua_tostring(L, 2));
+			return 0;
+		}
+#endif
 		if (!lua_isnumber(L, 1) || !lua_isnumber(L, 2) || !lua_isstring(L, 3))
 			return 0;
 
@@ -1981,6 +1999,9 @@ namespace quest
 				if (pChar->IsPC())
 				{
 					pChar->SetQuestFlag(flag.c_str(), pChar->GetQuestFlag(flag.c_str()) + value);
+#ifdef ENABLE_GLOBAL_RANKING
+					GlobalRanking_Add(pChar, GLOBAL_RANK_DUNGEON);
+#endif
 #ifdef ENABLE_GUILD_QUEST
 					GuildQuest_AddProgress(pChar, GUILD_QUEST_DUNGEON);
 #endif

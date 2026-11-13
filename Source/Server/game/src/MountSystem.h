@@ -80,6 +80,9 @@ class CMountSystem
 
 		void DeleteMount(DWORD mobVnum);
 		void DeleteMount(CMountActor* mountActor);
+#ifdef ENABLE_MOUNT_SKIN_SWAP_FIX
+		void ClearAll();	// dismount and unsummon every actor (whatever look it had)
+#endif
 
 	private:
 		TMountActorMap m_mountActorMap;

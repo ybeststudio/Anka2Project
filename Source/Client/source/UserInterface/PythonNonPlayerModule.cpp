@@ -305,6 +305,24 @@ PyObject *nonplayerGetMonsterMaxHP(PyObject *poSelf, PyObject *poArgs)
 }
 #endif
 
+#ifdef ENABLE_TARGET_DROP_CHANCE
+// target info board (Baerim): (def, regenCycle, regenPercent, criticalPct, penetratePct, maxHP, level, isStone, raceFlag)
+PyObject *nonplayerGetMonsterTargetInfo(PyObject *poSelf, PyObject *poArgs)
+{
+	int race;
+	if (!PyTuple_GetInteger(poArgs, 0, &race))
+		return Py_BuildException();
+
+	const CPythonNonPlayer::TMobTable * pTable = CPythonNonPlayer::Instance().GetTable(race);
+	if (!pTable)
+		return Py_BuildValue("(iiiiiiiii)", 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
+	return Py_BuildValue("(iiiiiiiii)", pTable->wDef, pTable->bRegenCycle, pTable->bRegenPercent,
+		pTable->cEnchants[CPythonNonPlayer::MOB_ENCHANT_CRITICAL], pTable->cEnchants[CPythonNonPlayer::MOB_ENCHANT_PENETRATE],
+		pTable->dwMaxHP, pTable->bLevel, pTable->bType == 2 ? 1 : 0, pTable->dwRaceFlag);
+}
+#endif
+
 void initNonPlayer()
 {
 	static PyMethodDef s_methods[] =
@@ -339,6 +357,10 @@ void initNonPlayer()
 		{ "IsMonsterStone",				nonplayerIsMonsterStone,			METH_VARARGS },
 		{ "GetMonsterResist",			nonplayerGetMonsterResist,			METH_VARARGS },
 		{ "GetMonsterMaxHP",			nonplayerGetMonsterMaxHP,			METH_VARARGS },
+#endif
+
+#ifdef ENABLE_TARGET_DROP_CHANCE
+		{ "GetMonsterTargetInfo",		nonplayerGetMonsterTargetInfo,		METH_VARARGS },
 #endif
 
 		{ "LoadNonPlayerData",			nonplayerLoadNonPlayerData,			METH_VARARGS },

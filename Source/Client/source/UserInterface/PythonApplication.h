@@ -81,9 +81,6 @@
 	#include "PythonPrivateShopSearch.h"
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED)
-	#include "PythonMountUpGrade.h"
-#endif
 
 #ifdef ENABLE_DUNGEON_INFO
 	#include "PythonDungeonInfo.h"
@@ -471,9 +468,6 @@ class CPythonApplication : public CMSApplication, public CInputKeyboard, public 
 		CPythonPrivateShopSearch m_pyPrivateShopSearch;
 #endif
 
-#ifdef ENABLE_RIDING_EXTENDED
-		CPythonMountUpGrade m_pyMountUpGrade;
-#endif
 
 #ifdef ENABLE_DUNGEON_INFO
 		CPythonDungeonInfo 			m_pyDungeonInfo;

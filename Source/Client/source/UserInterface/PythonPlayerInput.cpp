@@ -793,6 +793,7 @@ bool CPythonPlayer::__CanAttack()
 	if (!pkInstMain)
 		return false;
 
+#ifndef ENABLE_MOUNT_ATTACK_FIX
 	// Fix me
 #ifdef ENABLE_CONQUEROR_LEVEL
 	if (pkInstMain->IsMountingHorse() && pkInstMain->IsNewMount() && (GetSkillGrade(107) < 1 && GetSkillLevel(107) < 11))
@@ -802,6 +803,7 @@ bool CPythonPlayer::__CanAttack()
 	{
 		return false;
 	}
+#endif
 
 	return pkInstMain->CanAttack();
 }

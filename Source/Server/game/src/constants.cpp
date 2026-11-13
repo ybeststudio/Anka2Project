@@ -2433,6 +2433,8 @@ TValueName c_aApplyTypeNames[] =
 	{ "APPLY_ATTBONUS_PVM_STR",	APPLY_ATTBONUS_PVM_STR	},
 	{ "ATTBONUS_PVM_BERSERKER",	APPLY_ATTBONUS_PVM_BERSERKER	},
 	{ "APPLY_ATTBONUS_PVM_BERSERKER",	APPLY_ATTBONUS_PVM_BERSERKER	},
+	{ "PET_EXP_BONUS",	APPLY_PET_EXP_BONUS	},
+	{ "APPLY_PET_EXP_BONUS",	APPLY_PET_EXP_BONUS	},
 	{ NULL,	0	}
 };
 
@@ -2452,22 +2454,26 @@ long FN_get_apply_type(const char* apply_type_string)
 #ifdef __DUNGEON_INFO__
 const std::map<DWORD, std::pair<std::pair<BYTE, BYTE>, std::string>> m_mapDungeonList = {
 	//bossIdx, {{minLvl, maxLvl}, questName},
-	{1093, {{40, 95}, "deviltower_zone"}},
-	{5127, {{50, 90}, "monkeydungeon_zone"}},
-	{2092, {{70, 90}, "spiderdungeon3_zone"}},
-	{2493, {{70, 105}, "dragonlair_zone"}},
-	{2598, {{80, 105}, "devilcatacomb_zone"}},
-	{6091, {{90, 120}, "flamedungeon_zone"}},
-	{6191, {{90, 120}, "snowdungeon_zone"}},
+	// Arena2 dungeons (quest_tr/_arena2dungeons): bossIdx = the race their Dungeon.Complete writes completed/fastest to,
+	// questName = data["dungeon_name"]["quest"], the cooldown flag <questName>.cooldown
+	{5163, {{50, 90}, "monkeydungeon_zone"}},
+	{6756, {{120, 120}, "serpenttemple_zone"}},
+	{2092, {{60, 90}, "spiderdungeon3_zone"}},
+	{1093, {{75, 90}, "deviltower_zone"}},
+	{2598, {{75, 105}, "devilcatacomb_zone"}},
+	{2493, {{75, 105}, "dragonlair_zone"}},
+	{6091, {{90, 105}, "flamedungeon_zone"}},
+	{6606, {{120, 120}, "rxrazador_zone"}},
+	{6191, {{90, 105}, "snowdungeon_zone"}},
+	{6605, {{120, 120}, "rxnemere_zone"}},
 	{6192, {{105, 120}, "erebus_zone"}},
-	{9018, {{105, 120}, "ShipDefense"}},
+	{6500, {{120, 120}, "akzadurlair_zone"}},
+	{9838, {{106, 120}, "zodiactemple_zone"}},
+	{6791, {{120, 120}, "alastor_zone"}},
+	{6790, {{120, 120}, "alastorhard_zone"}},
 	{20442, {{110, 120}, "MeleyDungeon"}},
-	{4042, {{55, 80}, "nightMare_zone"}},
-	{4031, {{115, 120}, "duratusDungeon_zone"}},
-	{9838, {{105, 120}, "zodiactemple_zone"}},
-	{6500, {{110, 120}, "akzadurlair_zone"}},
-	{6756, {{120, 120}, "serpent_zone"}},
-	{6790, {{120, 120}, "rxdragonlair_zone"}},
+	{9018, {{100, 120}, "ShipDefense"}},
+	{9501, {{100, 120}, "dungeonManager.sungMahiTime"}},	// SungMahi (sungMahi_manager): key = lobby NPC, cooldown flag dungeonManager.sungMahiTime
 };
 #endif
 

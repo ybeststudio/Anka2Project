@@ -307,17 +307,4 @@ window = {
 	),
 }
 
-if app.ENABLE_GUILD_DONATE_ATTENDANCE:
-	window["children"] = window["children"] + (
-		## Donate Button
-		{
-			"name" : "DonateButton",
-			"type" : "button",
-			"x" : 127 + PLUS_LEFT_WITDH,
-			"y" : 100,
-			"default_image" : BUTTON_ROOT+"OfferButton00.sub",
-			"over_image" : BUTTON_ROOT+"OfferButton01.sub",
-			"down_image" : BUTTON_ROOT+"OfferButton02.sub",
-		},
-	)
 	
